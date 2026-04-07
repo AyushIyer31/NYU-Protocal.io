@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CustomNerd — Local Document Analysis</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="container">
+        <a href="index.html"><img id="site-logo" class="logo" alt="CustomNerd Logo"></a>
+        <div style="padding: 24px;"></div>
+        <h2 id="site-tagline"></h2>
+        <p class="disclaimer"></p>
+
+        <div class="input-container home-form-container">
+            <div class="form-block">
+                <label for="question" class="form-label">What should the system check?</label>
+                <input type="text" id="question" placeholder="Example: Check whether this lease complies with the uploaded housing code.">
+                <p class="field-help">Describe the review you want to run. This is sent as <code>user_query</code>.</p>
+            </div>
+
+            <div class="upload-grid">
+                <div class="upload-card">
+                    <div class="upload-card-header">
+                        <i class="fas fa-folder-open"></i>
+                        <div>
+                            <h3>Context documents</h3>
+                            <p>Upload one or more laws, regulations, policies, or other governing documents.</p>
+                        </div>
+                    </div>
+                    <input type="file" id="context-files" multiple class="visually-hidden">
+                    <div class="file-upload-area" onclick="document.getElementById('context-files').click()">
+                        <div class="file-upload-icon"><i class="fas fa-file-upload" style="color:white"></i></div>
+                        <span class="file-upload-button">Choose context files</span>
+                        <span class="upload-copy">Accepted: PDF, TXT, HTML, JSON, CSV, and similar text files.</span>
+                    </div>
+                    <div id="context-files-list" class="file-list empty-state">No context files selected yet.</div>
+                </div>
+
+                <div class="upload-card">
+                    <div class="upload-card-header">
+                        <i class="fas fa-file-alt"></i>
+                        <div>
+                            <h3>Target document</h3>
+                            <p>Upload the single document you want analyzed against the context set.</p>
+                        </div>
+                    </div>
+                    <input type="file" id="target-file" class="visually-hidden">
+                    <div class="file-upload-area" onclick="document.getElementById('target-file').click()">
+                        <div class="file-upload-icon"><i class="fas fa-file-circle-check" style="color:white"></i></div>
+                        <span class="file-upload-button">Choose target file</span>
+                        <span class="upload-copy">This is sent as <code>target_file</code> to the backend.</span>
+                    </div>
+                    <div id="target-file-list" class="file-list empty-state">No target file selected yet.</div>
+                </div>
+            </div>
+
+            <div class="submit-row">
+                <button id="submit" type="button">Run Analysis</button>
+            </div>
+        </div>
+
+        <div id="results" class="hidden">
+            <div id="progress-log" class="progress-log"></div>
+            <div id="analysis-output" class="analysis-output"></div>
+            <div id="run-metadata" class="run-metadata"></div>
+        </div>
+
+        <div class="button-container">
+            <button id="generate-pdf-button" class="hidden">
+                <i class="fas fa-download"></i> Download Answer as PDF
+            </button>
+        </div>
+    </div>
+
+    <script src="env.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
