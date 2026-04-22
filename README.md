@@ -5,7 +5,7 @@
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-green.svg)](https://fastapi.tiangolo.com/)
 [![Ollama](https://img.shields.io/badge/Ollama-local%20LLM-blueviolet.svg)](https://ollama.com/)
 
-CustomNerd is a **fully local**, privacy-first document analysis system. Upload context documents (regulations, policies, standards) and a target document, then let a local Ollama LLM evaluate how well the target aligns with the context — using a multi-step agentic pipeline.
+CustomNerd is a **fully local**, privacy-first document analysis system. Upload context documents (regulations, policies, standards) and a target document, then let a local Ollama LLM evaluate how well the target aligns with the context. By default it runs a multi-step **agentic** pipeline, and it can also run in a **prompt-based** single-pass mode.
 
 **No data leaves your machine.** All inference runs locally via Ollama.
 
@@ -14,10 +14,12 @@ CustomNerd is a **fully local**, privacy-first document analysis system. Upload 
 1. **Upload context documents** — laws, regulations, policies, standards, or any governing documents that define requirements.
 2. **Upload a target document** — the specific document you want evaluated against the context.
 3. **Describe your query** — tell the system what to check (e.g., "Does this interconnection agreement comply with the uploaded FERC regulations?").
-4. The system runs a **3-step agentic pipeline**:
-   - **Step 1 — Summarize**: Produces a concise summary of the target document.
-   - **Step 2 — Evaluate**: For each of the top-k retrieved context chunks, asks the LLM a focused question: "Does the target comply with this specific requirement?" Each chunk gets its own LLM call with a simple STATUS / ISSUE / EVIDENCE / EXPLANATION format.
-   - **Step 3 — Synthesize**: Takes all individual findings and writes a final verdict with key issues and recommendations.
+4. Choose an **execution strategy**:
+   - **Agentic** (default): Runs a 3-step pipeline.
+     - **Step 1 — Summarize**: Produces a concise summary of the target document.
+     - **Step 2 — Evaluate**: For each of the top-k retrieved context chunks, asks the LLM a focused question: "Does the target comply with this specific requirement?" Each chunk gets its own LLM call with a simple STATUS / ISSUE / EVIDENCE / EXPLANATION format.
+     - **Step 3 — Synthesize**: Takes all individual findings and writes a final verdict with key issues and recommendations.
+   - **Prompt-based**: Sends the target document plus the retrieved context chunks in one consolidated prompt and asks the model for a structured report in a single call.
 5. Results are rendered in a styled report with color-coded compliance badges, evidence quotes, and a metadata sidebar.
 
 ## First Planned Use Case
@@ -76,28 +78,42 @@ This starts:
 1. Type a question in the text field (e.g., "Check if this agreement complies with the uploaded regulations").
 2. Upload one or more **context documents** (the rules/regulations/policies).
 3. Upload a single **target document** (the document to evaluate).
-4. Click **Run Analysis** and watch the agentic pipeline progress in real time.
+4. Click **Run Analysis** and watch the selected analysis flow progress in real time.
+
+### Running Prompt-Based Instead Of Agentic
+
+1. Start the app with `python3 run.py`.
+2. In the UI, change **Execution strategy** from `Agentic` to `Prompt-based`.
+3. Upload context and target documents as usual.
+4. Click **Run Analysis**.
+
+If you want prompt-based mode to be the default for your local install, set `EXECUTION_STRATEGY=prompt_based` in `customnerd-backend/variables.env`.
 
 ### Configuration
 
-Edit `customnerd-backend/variables.env` to change the Ollama model or base URL:
+Edit `customnerd-backend/variables.env` to change the Ollama model, base URL, or default execution strategy:
 
 ```env
 LLM=ollama
 OLLAMA_MODEL=llama3.2
 OLLAMA_BASE_URL=http://localhost:11434
+EXECUTION_STRATEGY=agentic
 ```
 
 Larger models (e.g., `llama3.1:8b`, `qwen3:8b`) produce more detailed analysis but require more RAM and are slower.
+
+Execution strategy options:
+- `agentic`: default multi-call summarize/evaluate/synthesize workflow
+- `prompt_based`: single-call workflow that relies on one consolidated prompt
 
 ## Project Structure
 
 ```
 customnerd-backend/
   main.py                 # FastAPI app — endpoints, SSE streaming, background processing
-  helper_functions.py     # Text extraction, chunking, TF-IDF retrieval, agentic analysis
+  helper_functions.py     # Text extraction, chunking, TF-IDF retrieval, agentic + prompt-based analysis
   ollama_executions.py    # Ollama client wrapper with retry logic
-  variables.env           # Environment config (model, base URL)
+  variables.env           # Environment config (model, base URL, execution strategy)
 
 customnerd-website/
   index.html              # Single-page UI for document upload and analysis
@@ -118,7 +134,7 @@ requirements.txt          # Python dependencies (11 packages)
 | `GET` | `/health` | Health check (Ollama reachability, storage status) |
 | `GET` | `/sse?session_id=...` | Server-Sent Events stream for a processing session |
 | `POST` | `/process_local_rag_analysis` | Main analysis endpoint — accepts query, context files, target file |
-| `GET` | `/fetch_backend_mode` | Returns current backend mode info |
+| `GET` | `/fetch_backend_mode` | Returns backend mode info and available execution strategies |
 | `GET` | `/ollama_status` | Ollama server status and available models |
 
 ## Analysis Pipeline Detail
@@ -138,6 +154,13 @@ TF-IDF vectorization (unigrams + bigrams) with cosine similarity. The user query
 3. **Synthesize** — one LLM call that reads all findings and writes a final verdict, key issues, and recommendations
 
 This multi-call approach works well even with small models (3B parameters) because each call is focused and simple.
+
+### Prompt-Based Analysis (single LLM call)
+1. Retrieve the top-k most relevant context chunks.
+2. Build one prompt containing the user question, target document, and retrieved context.
+3. Ask the model for a structured JSON report in a single response.
+
+This path is simpler and can be useful when you want a faster, less orchestrated workflow, though it is generally less controlled than the agentic pipeline.
 
 ### Streaming
 Progress updates for every pipeline step are streamed to the frontend via SSE in real time.

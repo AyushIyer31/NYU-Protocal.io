@@ -22,6 +22,15 @@
                 <p class="field-help">Describe the review you want to run. This is sent as <code>user_query</code>.</p>
             </div>
 
+            <div class="form-block">
+                <label for="execution-strategy" class="form-label">Execution strategy</label>
+                <select id="execution-strategy">
+                    <option value="agentic">Agentic (default)</option>
+                    <option value="prompt_based">Prompt-based</option>
+                </select>
+                <p class="field-help">Agentic runs the multi-step pipeline. Prompt-based sends the retrieved context and target to the model in one consolidated prompt.</p>
+            </div>
+
             <div class="upload-grid">
                 <div class="upload-card">
                     <div class="upload-card-header">

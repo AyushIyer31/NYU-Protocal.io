@@ -3,7 +3,7 @@ window.env = {
         SITE_NAME: "CustomNerd",
         SITE_LOGO: "assets/custom_nerd_default_logo.png",
         SITE_ICON: "📄",
-        SITE_TAGLINE: "Local AI document analysis — upload context documents and a target document, then let Ollama evaluate compliance.",
+        SITE_TAGLINE: "Local AI document analysis with agentic and prompt-based execution modes.",
         DISCLAIMER: "This tool performs local document analysis using Ollama. No data leaves your machine. Results should be reviewed by a qualified professional.",
         QUESTION_PLACEHOLDER: "Example: Check whether this interconnection agreement complies with the uploaded regulations.",
         STYLES: {

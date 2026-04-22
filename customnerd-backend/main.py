@@ -25,6 +25,8 @@ from helper_functions import (
     analyze_target_with_ollama,
     ensure_session_dirs,
     check_ollama_health,
+    get_default_execution_strategy,
+    normalize_execution_strategy,
 )
 
 logging.basicConfig(level=logging.INFO)
@@ -136,6 +138,7 @@ async def process_local_rag_analysis(
     context_files: List[UploadFile] = File(...),
     target_file: UploadFile = File(...),
     analysis_mode: str = Form("compliance"),
+    execution_strategy: str = Form(get_default_execution_strategy()),
     top_k: int = Form(8),
     chunk_size: int = Form(1200),
     chunk_overlap: int = Form(200),
@@ -169,6 +172,7 @@ async def process_local_rag_analysis(
         target_file_metadata,
         {
             "analysis_mode": analysis_mode,
+            "execution_strategy": normalize_execution_strategy(execution_strategy),
             "top_k": top_k,
             "chunk_size": chunk_size,
             "chunk_overlap": chunk_overlap,
@@ -234,12 +238,17 @@ def process_local_rag_logic(
             top_k=options.get("top_k", 8),
         )
 
-        _thread_safe_send_update(session_id, "Starting agentic analysis pipeline...")
+        execution_strategy = normalize_execution_strategy(options.get("execution_strategy"))
+        if execution_strategy == "prompt_based":
+            _thread_safe_send_update(session_id, "Starting prompt-based analysis...")
+        else:
+            _thread_safe_send_update(session_id, "Starting agentic analysis pipeline...")
         final_output = analyze_target_with_ollama(
             user_query=user_query,
             target_text=target_text,
             retrieved_chunks=retrieved_chunks,
             analysis_mode=options.get("analysis_mode", "compliance"),
+            execution_strategy=execution_strategy,
             on_progress=lambda msg: _thread_safe_send_update(session_id, msg),
         )
 
@@ -248,6 +257,7 @@ def process_local_rag_logic(
         result = {
             "session_id": session_id,
             "analysis_mode": options.get("analysis_mode", "compliance"),
+            "execution_strategy": execution_strategy,
             "target_file": target_file_metadata["filename"],
             "context_files": [x["filename"] for x in context_file_metadata],
             "retrieved_chunk_count": len(retrieved_chunks),
@@ -270,6 +280,8 @@ def process_local_rag_logic(
 async def fetch_backend_mode():
     return {
         "mode": "local_ollama_rag",
+        "default_execution_strategy": get_default_execution_strategy(),
+        "available_execution_strategies": ["agentic", "prompt_based"],
         "external_search_enabled": False,
         "providers": ["ollama"],
         "data_leaves_machine": False,

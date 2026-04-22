@@ -47,6 +47,14 @@ function markdownToHtml(text) {
     return "<p>" + html + "</p>";
 }
 
+function humanizeExecutionStrategy(strategy) {
+    const map = {
+        agentic: "Agentic",
+        prompt_based: "Prompt-based",
+    };
+    return map[strategy] || strategy || "Unknown";
+}
+
 // ------------------------------
 // Progress log
 // ------------------------------
@@ -220,7 +228,8 @@ function renderAnalysisResult(result) {
     // --- Metadata sidebar ---
     if (meta) {
         meta.innerHTML = `
-            <div class="meta-item"><i class="fas fa-cog"></i> <strong>Mode:</strong> ${escapeHtml(result.analysis_mode || "compliance")}</div>
+            <div class="meta-item"><i class="fas fa-cog"></i> <strong>Analysis:</strong> ${escapeHtml(result.analysis_mode || "compliance")}</div>
+            <div class="meta-item"><i class="fas fa-sitemap"></i> <strong>Execution:</strong> ${escapeHtml(humanizeExecutionStrategy(result.execution_strategy || "agentic"))}</div>
             <div class="meta-item"><i class="fas fa-file"></i> <strong>Target:</strong> ${escapeHtml(result.target_file || "Unknown")}</div>
             <div class="meta-item"><i class="fas fa-folder"></i> <strong>Context:</strong> ${escapeHtml((result.context_files || []).join(", "))}</div>
             <div class="meta-item"><i class="fas fa-cubes"></i> <strong>Chunks:</strong> ${result.retrieved_chunk_count ?? "?"}</div>
@@ -357,10 +366,17 @@ function generatePDF() {
 // ------------------------------
 // Backend communication
 // ------------------------------
-async function startLocalAnalysis({ userQuery, contextFiles, targetFile, analysisMode = "compliance" }) {
+async function startLocalAnalysis({
+    userQuery,
+    contextFiles,
+    targetFile,
+    analysisMode = "compliance",
+    executionStrategy = "agentic",
+}) {
     const formData = new FormData();
     formData.append("user_query", userQuery);
     formData.append("analysis_mode", analysisMode);
+    formData.append("execution_strategy", executionStrategy);
     for (const file of contextFiles) formData.append("context_files", file);
     formData.append("target_file", targetFile);
 
@@ -404,6 +420,7 @@ async function handleSubmit() {
     const question = $("question")?.value?.trim() || "";
     const contextFiles = Array.from($("context-files")?.files || []);
     const targetFile = $("target-file")?.files?.[0] || null;
+    const executionStrategy = $("execution-strategy")?.value || "agentic";
 
     resetUI();
     triggerSubmitAnimation();
@@ -421,6 +438,7 @@ async function handleSubmit() {
             contextFiles,
             targetFile,
             analysisMode: "compliance",
+            executionStrategy,
         });
 
         appendProgressLine(`Session started: ${sessionId}`);
@@ -442,6 +460,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const submitButton = $("submit");
     const generatePdfButton = $("generate-pdf-button");
     const disclaimerEl = document.querySelector(".disclaimer");
+    const executionStrategySelect = $("execution-strategy");
 
     document.title = window.env.FRONTEND_FLOW.SITE_NAME;
     const logoEl = $("site-logo");
@@ -453,6 +472,17 @@ document.addEventListener("DOMContentLoaded", function () {
     document.body.style.backgroundColor = window.env.FRONTEND_FLOW.STYLES.BACKGROUND_COLOR;
     document.body.style.fontFamily = window.env.FRONTEND_FLOW.STYLES.FONT_FAMILY;
     if (submitButton) submitButton.style.backgroundColor = window.env.FRONTEND_FLOW.STYLES.SUBMIT_BUTTON_BG;
+
+    fetch(`${baseURL}/fetch_backend_mode`)
+        .then((response) => response.json())
+        .then((backendMode) => {
+            if (executionStrategySelect && backendMode?.default_execution_strategy) {
+                executionStrategySelect.value = backendMode.default_execution_strategy;
+            }
+        })
+        .catch((error) => {
+            console.warn("Could not fetch backend mode:", error);
+        });
 
     initializeFileInputs();
 

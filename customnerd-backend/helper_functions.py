@@ -31,6 +31,7 @@ load_dotenv("variables.env", override=True)
 DEFAULT_CHUNK_SIZE = 1200
 DEFAULT_CHUNK_OVERLAP = 200
 DEFAULT_TOP_K = 8
+DEFAULT_EXECUTION_STRATEGY = "agentic"
 
 LOCAL_ANALYSIS_SYSTEM_PROMPT = """
 You are a careful legal/compliance analysis assistant running entirely locally.
@@ -64,6 +65,53 @@ Return valid JSON with this exact schema:
         }
       ],
       "recommendation": "specific next step"
+    }
+  ],
+  "gaps": ["missing info or ambiguity 1"],
+  "notes": ["additional grounded note 1"]
+}
+""".strip()
+
+PROMPT_BASED_ANALYSIS_SYSTEM_PROMPT = """
+You are a careful legal/compliance analysis assistant running entirely locally.
+
+You will receive:
+- the user's analysis request
+- the target document text
+- retrieved context passages from governing documents
+
+Your job:
+1. Analyze the target against the retrieved context in a single pass.
+2. Be explicit about uncertainty and missing information.
+3. Ground every finding in quoted evidence from both the target and the context.
+4. Do not invent requirements not present in the supplied materials.
+5. Return valid JSON only.
+
+Return JSON with this exact schema:
+{
+  "summary": "3-5 sentence summary of the target document",
+  "synthesis": "final report with overall verdict, key issues, and recommendations",
+  "overall_risk": "low|medium|high|unclear",
+  "status_counts": {
+    "compliant": 0,
+    "non_compliant": 0,
+    "unclear": 0
+  },
+  "findings": [
+    {
+      "issue": "short issue label",
+      "status": "compliant|non_compliant|unclear",
+      "risk_level": "low|medium|high|unclear",
+      "explanation": "plain-English explanation",
+      "recommendation": "specific next step",
+      "target_evidence": ["quote or excerpt from target"],
+      "context_evidence": [
+        {
+          "source_file": "filename",
+          "chunk_id": "chunk identifier",
+          "quote": "supporting quote"
+        }
+      ]
     }
   ],
   "gaps": ["missing info or ambiguity 1"],
@@ -413,6 +461,26 @@ def truncate_text(text: str, max_chars: int) -> str:
     return text[:max_chars].rstrip() + "\n...[truncated]"
 
 
+def get_default_execution_strategy() -> str:
+    strategy = (os.getenv("EXECUTION_STRATEGY", DEFAULT_EXECUTION_STRATEGY) or "").strip().lower()
+    if strategy in {"prompt", "prompt_based", "single_prompt"}:
+        return "prompt_based"
+    return DEFAULT_EXECUTION_STRATEGY
+
+
+def normalize_execution_strategy(value: Optional[str]) -> str:
+    normalized = (value or "").strip().lower().replace("-", "_").replace(" ", "_")
+    aliases = {
+        "agentic": "agentic",
+        "multi_step": "agentic",
+        "pipeline": "agentic",
+        "prompt": "prompt_based",
+        "prompt_based": "prompt_based",
+        "single_prompt": "prompt_based",
+    }
+    return aliases.get(normalized, get_default_execution_strategy())
+
+
 def format_retrieved_chunks_for_prompt(retrieved_chunks: List[Dict[str, Any]]) -> str:
     """
     Render retrieved chunks into a prompt-friendly block.
@@ -431,6 +499,79 @@ def format_retrieved_chunks_for_prompt(retrieved_chunks: List[Dict[str, Any]]) -
         )
 
     return "\n\n---\n\n".join(formatted)
+
+
+def _normalize_prompt_based_result(parsed: Dict[str, Any]) -> Dict[str, Any]:
+    findings = parsed.get("findings")
+    if not isinstance(findings, list):
+        findings = []
+
+    normalized_findings: List[Dict[str, Any]] = []
+    compliant_count = 0
+    non_compliant_count = 0
+    unclear_count = 0
+
+    for finding in findings:
+        if not isinstance(finding, dict):
+            continue
+
+        status = str(finding.get("status", "unclear")).strip().lower()
+        if status not in {"compliant", "non_compliant", "unclear"}:
+            if status in {"non-compliant", "noncompliant"}:
+                status = "non_compliant"
+            else:
+                status = "unclear"
+
+        if status == "compliant":
+            compliant_count += 1
+        elif status == "non_compliant":
+            non_compliant_count += 1
+        else:
+            unclear_count += 1
+
+        context_evidence = finding.get("context_evidence")
+        if not isinstance(context_evidence, list):
+            context_evidence = []
+
+        normalized_findings.append({
+            "issue": finding.get("issue", "Untitled finding"),
+            "status": status,
+            "risk_level": finding.get("risk_level", "unclear"),
+            "explanation": finding.get("explanation", ""),
+            "recommendation": finding.get("recommendation", ""),
+            "target_evidence": finding.get("target_evidence", []),
+            "context_evidence": [
+                {
+                    "source_file": item.get("source_file", ""),
+                    "chunk_id": item.get("chunk_id", ""),
+                    "quote": item.get("quote", ""),
+                }
+                for item in context_evidence
+                if isinstance(item, dict)
+            ],
+        })
+
+    status_counts = parsed.get("status_counts")
+    if not isinstance(status_counts, dict):
+        status_counts = {
+            "compliant": compliant_count,
+            "non_compliant": non_compliant_count,
+            "unclear": unclear_count,
+        }
+
+    return {
+        "summary": parsed.get("summary", ""),
+        "synthesis": parsed.get("synthesis", ""),
+        "overall_risk": parsed.get("overall_risk", "unclear"),
+        "status_counts": {
+            "compliant": _safe_int(status_counts.get("compliant", compliant_count), compliant_count),
+            "non_compliant": _safe_int(status_counts.get("non_compliant", non_compliant_count), non_compliant_count),
+            "unclear": _safe_int(status_counts.get("unclear", unclear_count), unclear_count),
+        },
+        "findings": normalized_findings,
+        "gaps": parsed.get("gaps", []) if isinstance(parsed.get("gaps"), list) else [],
+        "notes": parsed.get("notes", []) if isinstance(parsed.get("notes"), list) else [],
+    }
 
 
 def _agent_summarize_target(target_text: str) -> str:
@@ -554,11 +695,52 @@ def _agent_synthesize(
     return raw.strip() if raw else "Could not generate final synthesis."
 
 
+def _prompt_based_analyze_target(
+    user_query: str,
+    target_text: str,
+    retrieved_chunks: List[Dict[str, Any]],
+) -> Dict[str, Any]:
+    target_excerpt = truncate_text(target_text, 12000)
+    context_block = format_retrieved_chunks_for_prompt(retrieved_chunks[:12])
+
+    raw = _retryable_ollama_call(
+        messages=[
+            {"role": "system", "content": PROMPT_BASED_ANALYSIS_SYSTEM_PROMPT},
+            {"role": "user", "content": (
+                f"USER QUESTION:\n{user_query}\n\n"
+                f"TARGET DOCUMENT:\n{target_excerpt}\n\n"
+                f"RETRIEVED CONTEXT PASSAGES:\n{context_block}"
+            )},
+        ],
+        temperature=0.1,
+        response_format={"type": "json_object"},
+    )
+
+    parsed = _safe_json_loads(raw)
+    if not parsed:
+        return {
+            "summary": "Prompt-based analysis could not be parsed.",
+            "synthesis": raw.strip() if raw else "Prompt-based analysis did not return usable output.",
+            "overall_risk": "unclear",
+            "status_counts": {
+                "compliant": 0,
+                "non_compliant": 0,
+                "unclear": 0,
+            },
+            "findings": [],
+            "gaps": ["The model response could not be parsed as valid JSON."],
+            "notes": [],
+        }
+
+    return _normalize_prompt_based_result(parsed)
+
+
 def analyze_target_with_ollama(
     user_query: str,
     target_text: str,
     retrieved_chunks: List[Dict[str, Any]],
     analysis_mode: str = "compliance",
+    execution_strategy: str = DEFAULT_EXECUTION_STRATEGY,
     on_progress=None,
 ) -> Dict[str, Any]:
     """
@@ -574,6 +756,18 @@ def analyze_target_with_ollama(
     def _progress(msg):
         if on_progress:
             on_progress(msg)
+
+    execution_strategy = normalize_execution_strategy(execution_strategy)
+
+    if execution_strategy == "prompt_based":
+        _progress("Prompt-based analysis: assembling single-pass prompt...")
+        result = _prompt_based_analyze_target(
+            user_query=user_query,
+            target_text=target_text,
+            retrieved_chunks=retrieved_chunks,
+        )
+        _progress("Prompt-based analysis complete.")
+        return result
 
     # Step 1: Summarize target
     _progress("Agent step 1/3: Summarizing target document...")
@@ -678,3 +872,8 @@ def check_ollama_health() -> Dict[str, Any]:
             "error": str(exc),
             "models": [],
         }
+    def _safe_int(value: Any, fallback: int) -> int:
+        try:
+            return int(value)
+        except (TypeError, ValueError):
+            return fallback

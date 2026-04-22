@@ -689,7 +689,7 @@ body.warning-visible #container {
     }
 }
 
-textarea, input[type="text"] {
+textarea, input[type="text"], select {
     width: 100%;
     align-items: center;
     padding: 15px;
@@ -698,6 +698,11 @@ textarea, input[type="text"] {
     border-radius: 8px;
     resize: none;
     font-size: 16px;
+}
+
+#execution-strategy {
+    background: rgba(255, 255, 255, 0.92);
+    color: #1a202c;
 }
 
 
