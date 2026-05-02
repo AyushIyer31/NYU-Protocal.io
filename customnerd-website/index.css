@@ -1701,3 +1701,212 @@ h2 {
         flex-direction: column;
     }
 }
+
+/* ---- Custom prompts panel ---- */
+.prompts-card {
+    background: rgba(255, 255, 255, 0.55);
+    border: 1px solid rgba(0, 123, 255, 0.18);
+    border-radius: 20px;
+    padding: 22px;
+    box-shadow: 0 8px 24px rgba(0, 123, 255, 0.06);
+    text-align: left;
+}
+
+.prompts-card-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.prompts-card-header i {
+    font-size: 18px;
+    margin-top: 4px;
+    color: var(--accent-text-color, #007bff);
+}
+
+.prompts-card-header h3 {
+    margin: 0 0 6px 0;
+    font-size: 18px;
+    color: var(--text-color, #1a202c);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.prompts-card-header p {
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.5;
+    color: var(--text-color, #4a5568);
+    opacity: 0.85;
+}
+
+.optional-tag {
+    font-size: 11px;
+    font-weight: 500;
+    color: #718096;
+    background: rgba(0, 0, 0, 0.06);
+    border-radius: 999px;
+    padding: 2px 8px;
+    letter-spacing: 0.2px;
+    text-transform: uppercase;
+}
+
+.prompt-input-row {
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+    margin-bottom: 14px;
+}
+
+.prompt-input-row textarea {
+    flex: 1;
+    resize: vertical;
+    min-height: 52px;
+    font-size: 14px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    padding: 10px 14px;
+    background: rgba(255, 255, 255, 0.85);
+    color: #1a202c;
+    font-family: inherit;
+    margin-bottom: 0;
+}
+
+.prompt-input-row textarea:focus {
+    outline: none;
+    border-color: rgba(0, 123, 255, 0.4);
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.1);
+}
+
+.prompt-input-row button {
+    white-space: nowrap;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    height: 52px;
+}
+
+.prompt-input-row button:hover {
+    background: #0056b3;
+    transform: translateY(-1px);
+}
+
+.prompt-or-divider {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 10px 0 14px 0;
+    color: #718096;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.prompt-or-divider::before,
+.prompt-or-divider::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.prompt-file-area {
+    padding: 18px 24px !important;
+    margin: 0 0 16px 0 !important;
+}
+
+.prompt-list {
+    margin-top: 16px;
+    background: rgba(255, 255, 255, 0.7);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.prompt-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px;
+    background: rgba(0, 123, 255, 0.05);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+    font-size: 13px;
+    color: #4a5568;
+}
+
+.prompt-list-header button {
+    background: none;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 8px;
+    padding: 4px 10px;
+    font-size: 12px;
+    color: #718096;
+    cursor: pointer;
+    transition: all 0.15s;
+}
+
+.prompt-list-header button:hover {
+    background: rgba(220, 38, 38, 0.06);
+    border-color: rgba(220, 38, 38, 0.3);
+    color: #c53030;
+}
+
+.prompt-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.prompt-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px 16px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    font-size: 13.5px;
+    color: #2d3748;
+    line-height: 1.5;
+}
+
+.prompt-item:last-child {
+    border-bottom: none;
+}
+
+.prompt-item-number {
+    font-weight: 700;
+    color: #007bff;
+    font-size: 12px;
+    min-width: 20px;
+    margin-top: 2px;
+}
+
+.prompt-item-text {
+    flex: 1;
+}
+
+.prompt-item-remove {
+    background: none;
+    border: none;
+    color: #a0aec0;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 2px 4px;
+    border-radius: 4px;
+    transition: all 0.15s;
+    margin-top: 1px;
+    flex-shrink: 0;
+}
+
+.prompt-item-remove:hover {
+    color: #c53030;
+    background: rgba(220, 38, 38, 0.06);
+}

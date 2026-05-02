@@ -142,6 +142,7 @@ async def process_local_rag_analysis(
     top_k: int = Form(8),
     chunk_size: int = Form(1200),
     chunk_overlap: int = Form(200),
+    custom_prompts: Optional[str] = Form(None),
 ):
     if not context_files:
         raise HTTPException(status_code=400, detail="At least one context file is required.")
@@ -165,6 +166,15 @@ async def process_local_rag_analysis(
         "content": target_content,
     }
 
+    parsed_prompts = []
+    if custom_prompts:
+        try:
+            parsed_prompts = json.loads(custom_prompts)
+            if not isinstance(parsed_prompts, list):
+                parsed_prompts = []
+        except Exception:
+            parsed_prompts = []
+
     background_tasks.add_task(
         process_local_rag_logic,
         user_query,
@@ -176,6 +186,7 @@ async def process_local_rag_analysis(
             "top_k": top_k,
             "chunk_size": chunk_size,
             "chunk_overlap": chunk_overlap,
+            "custom_prompts": parsed_prompts,
         },
         unique_id,
     )
@@ -239,8 +250,12 @@ def process_local_rag_logic(
         )
 
         execution_strategy = normalize_execution_strategy(options.get("execution_strategy"))
+        custom_prompts = options.get("custom_prompts") or []
         if execution_strategy == "prompt_based":
-            _thread_safe_send_update(session_id, "Starting prompt-based analysis...")
+            if custom_prompts:
+                _thread_safe_send_update(session_id, f"Starting prompt-based analysis with {len(custom_prompts)} custom prompt(s)...")
+            else:
+                _thread_safe_send_update(session_id, "Starting prompt-based analysis...")
         else:
             _thread_safe_send_update(session_id, "Starting agentic analysis pipeline...")
         final_output = analyze_target_with_ollama(
@@ -249,6 +264,7 @@ def process_local_rag_logic(
             retrieved_chunks=retrieved_chunks,
             analysis_mode=options.get("analysis_mode", "compliance"),
             execution_strategy=execution_strategy,
+            custom_prompts=custom_prompts,
             on_progress=lambda msg: _thread_safe_send_update(session_id, msg),
         )
 

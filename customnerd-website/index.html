@@ -31,6 +31,41 @@
                 <p class="field-help">Agentic runs the multi-step pipeline. Prompt-based sends the retrieved context and target to the model in one consolidated prompt.</p>
             </div>
 
+            <!-- Custom prompts panel — only visible when prompt_based is selected -->
+            <div id="custom-prompts-section" class="hidden">
+                <div class="prompts-card">
+                    <div class="prompts-card-header">
+                        <i class="fas fa-list-check"></i>
+                        <div>
+                            <h3>Custom analysis prompts <span class="optional-tag">optional</span></h3>
+                            <p>Define specific checks to run against your document. Each prompt is evaluated independently. Leave empty to use the default single-pass analysis.</p>
+                        </div>
+                    </div>
+
+                    <div class="prompt-input-row">
+                        <textarea id="prompt-input" rows="2" placeholder="e.g. Check that all voltage and frequency tolerances reference an explicit numeric standard"></textarea>
+                        <button id="add-prompt-btn" type="button"><i class="fas fa-plus"></i> Add</button>
+                    </div>
+
+                    <div class="prompt-or-divider"><span>or upload a prompts file</span></div>
+
+                    <input type="file" id="prompts-file" accept=".txt,.json" class="visually-hidden">
+                    <div class="file-upload-area prompt-file-area" onclick="document.getElementById('prompts-file').click()">
+                        <div class="file-upload-icon" style="width:36px;height:36px;"><i class="fas fa-file-lines" style="color:white;font-size:14px;"></i></div>
+                        <span class="file-upload-button" style="font-size:13px;padding:9px 18px;">Choose prompts file</span>
+                        <span class="upload-copy">.txt (one prompt per line) or .json (array of strings)</span>
+                    </div>
+
+                    <div id="prompt-list" class="prompt-list hidden">
+                        <div class="prompt-list-header">
+                            <span><strong id="prompt-count">0</strong> prompt(s) will be run</span>
+                            <button id="clear-prompts-btn" type="button">Clear all</button>
+                        </div>
+                        <ul id="prompt-items"></ul>
+                    </div>
+                </div>
+            </div>
+
             <div class="upload-grid">
                 <div class="upload-card">
                     <div class="upload-card-header">

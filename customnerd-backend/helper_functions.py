@@ -72,6 +72,36 @@ Return valid JSON with this exact schema:
 }
 """.strip()
 
+CUSTOM_PROMPT_SYSTEM_PROMPT = """
+You are a document analysis assistant running entirely locally.
+
+You will receive:
+- A specific check to perform (the user's prompt)
+- The target document text
+- Retrieved context passages from governing documents
+
+Your job: evaluate the target document against the specific check provided.
+Be explicit about uncertainty. Quote evidence from both the target and the context.
+Do not invent requirements not present in the supplied materials.
+
+Return valid JSON with this exact schema:
+{
+  "issue": "short label summarizing what was checked",
+  "status": "compliant|non_compliant|unclear",
+  "risk_level": "low|medium|high|unclear",
+  "explanation": "2-4 sentence plain-English explanation of your finding",
+  "recommendation": "specific next step if action is needed, or empty string",
+  "target_evidence": ["relevant quote or excerpt from the target document"],
+  "context_evidence": [
+    {
+      "source_file": "filename",
+      "chunk_id": "chunk identifier",
+      "quote": "supporting quote from context passage"
+    }
+  ]
+}
+""".strip()
+
 PROMPT_BASED_ANALYSIS_SYSTEM_PROMPT = """
 You are a careful legal/compliance analysis assistant running entirely locally.
 
@@ -695,11 +725,122 @@ def _agent_synthesize(
     return raw.strip() if raw else "Could not generate final synthesis."
 
 
+def _run_single_custom_prompt(
+    custom_prompt: str,
+    target_text: str,
+    retrieved_chunks: List[Dict[str, Any]],
+) -> Dict[str, Any]:
+    """Run one user-supplied prompt against the target document and context."""
+    target_excerpt = truncate_text(target_text, 8000)
+    context_block = format_retrieved_chunks_for_prompt(retrieved_chunks[:8])
+
+    raw = _retryable_ollama_call(
+        messages=[
+            {"role": "system", "content": CUSTOM_PROMPT_SYSTEM_PROMPT},
+            {"role": "user", "content": (
+                f"CHECK TO PERFORM:\n{custom_prompt}\n\n"
+                f"TARGET DOCUMENT:\n{target_excerpt}\n\n"
+                f"RETRIEVED CONTEXT PASSAGES:\n{context_block}"
+            )},
+        ],
+        temperature=0.1,
+        response_format={"type": "json_object"},
+    )
+
+    parsed = _safe_json_loads(raw)
+    if not parsed:
+        return {
+            "issue": custom_prompt[:100],
+            "status": "unclear",
+            "risk_level": "unclear",
+            "explanation": "Could not parse a structured response for this prompt.",
+            "recommendation": "",
+            "target_evidence": [],
+            "context_evidence": [],
+        }
+
+    status = str(parsed.get("status", "unclear")).strip().lower()
+    if status not in {"compliant", "non_compliant", "unclear"}:
+        status = "non_compliant" if "non" in status else "unclear"
+
+    context_evidence = parsed.get("context_evidence", [])
+    if not isinstance(context_evidence, list):
+        context_evidence = []
+
+    return {
+        "issue": parsed.get("issue") or custom_prompt[:100],
+        "status": status,
+        "risk_level": parsed.get("risk_level", "unclear"),
+        "explanation": parsed.get("explanation", ""),
+        "recommendation": parsed.get("recommendation", ""),
+        "target_evidence": parsed.get("target_evidence", []) if isinstance(parsed.get("target_evidence"), list) else [],
+        "context_evidence": [
+            {
+                "source_file": item.get("source_file", ""),
+                "chunk_id": item.get("chunk_id", ""),
+                "quote": item.get("quote", ""),
+            }
+            for item in context_evidence
+            if isinstance(item, dict)
+        ],
+    }
+
+
 def _prompt_based_analyze_target(
     user_query: str,
     target_text: str,
     retrieved_chunks: List[Dict[str, Any]],
+    custom_prompts: Optional[List[str]] = None,
+    on_progress=None,
 ) -> Dict[str, Any]:
+    def _progress(msg):
+        if on_progress:
+            on_progress(msg)
+
+    if custom_prompts:
+        findings = []
+        total = len(custom_prompts)
+        for i, prompt in enumerate(custom_prompts, 1):
+            _progress(f"Running custom prompt {i}/{total}: {prompt[:70]}...")
+            finding = _run_single_custom_prompt(
+                custom_prompt=prompt,
+                target_text=target_text,
+                retrieved_chunks=retrieved_chunks,
+            )
+            findings.append(finding)
+            _progress(f"  Prompt {i} result: {finding['status']} — {finding['issue'][:60]}")
+
+        compliant = sum(1 for f in findings if f["status"] == "compliant")
+        non_compliant = sum(1 for f in findings if f["status"] == "non_compliant")
+        unclear = sum(1 for f in findings if f["status"] == "unclear")
+
+        if non_compliant > 0:
+            overall_risk = "high"
+        elif unclear > compliant:
+            overall_risk = "medium"
+        else:
+            overall_risk = "low"
+
+        issue_labels = [f["issue"] for f in findings if f["status"] == "non_compliant"]
+        synthesis_parts = [f"Ran {total} custom prompt(s): {compliant} compliant, {non_compliant} non-compliant, {unclear} unclear."]
+        if issue_labels:
+            synthesis_parts.append("Issues: " + "; ".join(issue_labels[:5]) + ("..." if len(issue_labels) > 5 else "."))
+
+        return {
+            "summary": f"Custom prompt-based analysis using {total} user-defined check(s).",
+            "synthesis": " ".join(synthesis_parts),
+            "overall_risk": overall_risk,
+            "status_counts": {
+                "compliant": compliant,
+                "non_compliant": non_compliant,
+                "unclear": unclear,
+            },
+            "findings": findings,
+            "gaps": [],
+            "notes": [f"Analysis driven by {total} custom prompt(s) provided by the user."],
+        }
+
+    # Default single-pass (no custom prompts)
     target_excerpt = truncate_text(target_text, 12000)
     context_block = format_retrieved_chunks_for_prompt(retrieved_chunks[:12])
 
@@ -741,6 +882,7 @@ def analyze_target_with_ollama(
     retrieved_chunks: List[Dict[str, Any]],
     analysis_mode: str = "compliance",
     execution_strategy: str = DEFAULT_EXECUTION_STRATEGY,
+    custom_prompts: Optional[List[str]] = None,
     on_progress=None,
 ) -> Dict[str, Any]:
     """
@@ -760,11 +902,13 @@ def analyze_target_with_ollama(
     execution_strategy = normalize_execution_strategy(execution_strategy)
 
     if execution_strategy == "prompt_based":
-        _progress("Prompt-based analysis: assembling single-pass prompt...")
+        _progress("Prompt-based analysis: assembling prompt...")
         result = _prompt_based_analyze_target(
             user_query=user_query,
             target_text=target_text,
             retrieved_chunks=retrieved_chunks,
+            custom_prompts=custom_prompts or [],
+            on_progress=on_progress,
         )
         _progress("Prompt-based analysis complete.")
         return result

@@ -245,6 +245,129 @@ function renderAnalysisResult(result) {
 }
 
 // ------------------------------
+// Custom prompts management
+// ------------------------------
+const customPrompts = [];
+
+function toggleCustomPromptsSection() {
+    const strategy = $("execution-strategy")?.value;
+    const section = $("custom-prompts-section");
+    if (!section) return;
+    if (strategy === "prompt_based") {
+        section.classList.remove("hidden");
+    } else {
+        section.classList.add("hidden");
+    }
+}
+
+function renderPromptList() {
+    const listEl = $("prompt-list");
+    const itemsEl = $("prompt-items");
+    const countEl = $("prompt-count");
+    if (!listEl || !itemsEl || !countEl) return;
+
+    if (customPrompts.length === 0) {
+        listEl.classList.add("hidden");
+        return;
+    }
+
+    listEl.classList.remove("hidden");
+    countEl.textContent = customPrompts.length;
+    itemsEl.innerHTML = customPrompts
+        .map((p, i) => `
+            <li class="prompt-item">
+                <span class="prompt-item-number">${i + 1}.</span>
+                <span class="prompt-item-text">${escapeHtml(p)}</span>
+                <button class="prompt-item-remove" title="Remove" onclick="removePrompt(${i})">
+                    <i class="fas fa-times"></i>
+                </button>
+            </li>
+        `)
+        .join("");
+}
+
+function addPrompt(text) {
+    const trimmed = (text || "").trim();
+    if (!trimmed) return false;
+    customPrompts.push(trimmed);
+    renderPromptList();
+    return true;
+}
+
+function removePrompt(index) {
+    customPrompts.splice(index, 1);
+    renderPromptList();
+}
+
+function clearPrompts() {
+    customPrompts.length = 0;
+    renderPromptList();
+}
+
+async function parsePromptsFile(file) {
+    const text = await file.text();
+    let parsed = [];
+
+    if (file.name.endsWith(".json")) {
+        try {
+            const json = JSON.parse(text);
+            if (Array.isArray(json)) {
+                parsed = json.filter((x) => typeof x === "string" && x.trim());
+            } else {
+                appendProgressLine("Prompts file: JSON must be an array of strings.");
+                return;
+            }
+        } catch {
+            appendProgressLine("Prompts file: could not parse JSON.");
+            return;
+        }
+    } else {
+        // .txt — one prompt per non-empty line
+        parsed = text.split("\n").map((l) => l.trim()).filter(Boolean);
+    }
+
+    if (parsed.length === 0) {
+        appendProgressLine("Prompts file: no prompts found.");
+        return;
+    }
+
+    parsed.forEach((p) => customPrompts.push(p));
+    renderPromptList();
+}
+
+function initializePromptsPanel() {
+    const addBtn = $("add-prompt-btn");
+    const promptInput = $("prompt-input");
+    const clearBtn = $("clear-prompts-btn");
+    const promptsFile = $("prompts-file");
+
+    if (addBtn && promptInput) {
+        addBtn.addEventListener("click", () => {
+            if (addPrompt(promptInput.value)) promptInput.value = "";
+        });
+        promptInput.addEventListener("keydown", (e) => {
+            if (e.key === "Enter" && !e.shiftKey) {
+                e.preventDefault();
+                if (addPrompt(promptInput.value)) promptInput.value = "";
+            }
+        });
+    }
+
+    if (clearBtn) {
+        clearBtn.addEventListener("click", clearPrompts);
+    }
+
+    if (promptsFile) {
+        promptsFile.addEventListener("change", async () => {
+            if (promptsFile.files?.[0]) {
+                await parsePromptsFile(promptsFile.files[0]);
+                promptsFile.value = "";
+            }
+        });
+    }
+}
+
+// ------------------------------
 // File upload display
 // ------------------------------
 function updateFileList(inputEl, listEl) {
@@ -372,6 +495,7 @@ async function startLocalAnalysis({
     targetFile,
     analysisMode = "compliance",
     executionStrategy = "agentic",
+    prompts = [],
 }) {
     const formData = new FormData();
     formData.append("user_query", userQuery);
@@ -379,6 +503,9 @@ async function startLocalAnalysis({
     formData.append("execution_strategy", executionStrategy);
     for (const file of contextFiles) formData.append("context_files", file);
     formData.append("target_file", targetFile);
+    if (prompts.length > 0) {
+        formData.append("custom_prompts", JSON.stringify(prompts));
+    }
 
     const response = await fetch(`${baseURL}/process_local_rag_analysis`, {
         method: "POST",
@@ -433,12 +560,14 @@ async function handleSubmit() {
     appendProgressLine("Connecting to backend...");
 
     try {
+        const promptsToSend = executionStrategy === "prompt_based" ? [...customPrompts] : [];
         const { session_id: sessionId } = await startLocalAnalysis({
             userQuery: question,
             contextFiles,
             targetFile,
             analysisMode: "compliance",
             executionStrategy,
+            prompts: promptsToSend,
         });
 
         appendProgressLine(`Session started: ${sessionId}`);
@@ -485,6 +614,12 @@ document.addEventListener("DOMContentLoaded", function () {
         });
 
     initializeFileInputs();
+    initializePromptsPanel();
+    toggleCustomPromptsSection();
+
+    if (executionStrategySelect) {
+        executionStrategySelect.addEventListener("change", toggleCustomPromptsSection);
+    }
 
     const updateSubmitState = () => {
         const hasText = (questionInput?.value || "").trim().length > 0;
