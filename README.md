@@ -140,16 +140,6 @@ Check that the agreement defines a Point of Interconnection with enough detail (
 
 Check that force majeure provisions clearly state whether they excuse payment obligations or only performance obligations.
 ```
-
-### Sample Prompts File
-
-A sample prompts file for NY interconnection agreements is included at:
-```
-sample-docs/sample-prompts-interconnection-ny.txt
-```
-
-It contains 15 checks covering voltage specifications, POI definition, milestone schedules, curtailment rights, financial security, metering, force majeure, and more.
-
 ---
 
 ## Agentic vs. Prompt-Based: Comparison
