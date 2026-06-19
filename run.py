@@ -12,8 +12,8 @@ from pathlib import Path
 
 BACKEND_DIR = Path(__file__).resolve().parent / "customnerd-backend"
 FRONTEND_DIR = Path(__file__).resolve().parent / "customnerd-website"
-BACKEND_PORT = 8000
-FRONTEND_PORT = 8080
+BACKEND_PORT = 8001
+FRONTEND_PORT = 5555
 
 
 def check_ollama():
@@ -45,9 +45,9 @@ def main():
     )
 
     time.sleep(2)
-    url = f"http://localhost:{FRONTEND_PORT}"
+    url = f"http://localhost:{FRONTEND_PORT}/chat.html"
     print(f"\n  Backend:  http://localhost:{BACKEND_PORT}")
-    print(f"  Frontend: {url}\n")
+    print(f"  Chat UI:  {url}\n")
 
     try:
         webbrowser.open(url)

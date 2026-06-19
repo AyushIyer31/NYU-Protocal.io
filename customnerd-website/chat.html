@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>protocols.io Assistant</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f5f6fa;
+      color: #1a1a2e;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e0e0e0;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    header h1 {
+      font-size: 18px;
+      font-weight: 600;
+      color: #1a1a2e;
+    }
+
+    header span.badge {
+      font-size: 12px;
+      background: #eef2ff;
+      color: #4361ee;
+      border-radius: 12px;
+      padding: 3px 10px;
+      font-weight: 500;
+    }
+
+    #chat-container {
+      flex: 1;
+      overflow-y: auto;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-width: 860px;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    .message {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .message.user .bubble {
+      background: #4361ee;
+      color: #fff;
+      align-self: flex-end;
+      border-radius: 18px 18px 4px 18px;
+      padding: 12px 16px;
+      max-width: 70%;
+      font-size: 15px;
+      line-height: 1.5;
+    }
+
+    .message.assistant .bubble {
+      background: #fff;
+      border: 1px solid #e0e0e0;
+      border-radius: 18px 18px 18px 4px;
+      padding: 16px;
+      max-width: 100%;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .explanation {
+      font-size: 14px;
+      color: #444;
+      line-height: 1.7;
+      margin-bottom: 14px;
+      padding: 12px 14px;
+      background: #f0f4ff;
+      border-left: 3px solid #4361ee;
+      border-radius: 0 8px 8px 0;
+    }
+
+    .results-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .protocol-card {
+      border: 1px solid #e0e0e0;
+      border-radius: 10px;
+      padding: 14px 16px;
+      background: #fafafa;
+      transition: border-color 0.15s;
+    }
+
+    .protocol-card:hover { border-color: #4361ee; }
+
+    .protocol-card .rank {
+      font-size: 11px;
+      font-weight: 700;
+      color: #4361ee;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 4px;
+    }
+
+    .protocol-card .title {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 6px;
+    }
+
+    .protocol-card .title a {
+      color: #1a1a2e;
+      text-decoration: none;
+    }
+
+    .protocol-card .title a:hover { color: #4361ee; text-decoration: underline; }
+
+    .protocol-card .desc {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 8px;
+      line-height: 1.5;
+    }
+
+    .protocol-card .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      font-size: 12px;
+      color: #777;
+    }
+
+    .protocol-card .meta .tag {
+      background: #eef2ff;
+      color: #4361ee;
+      border-radius: 10px;
+      padding: 2px 8px;
+      font-weight: 500;
+    }
+
+    .protocol-card .score-bar {
+      height: 3px;
+      background: #e0e0e0;
+      border-radius: 2px;
+      margin-top: 10px;
+      overflow: hidden;
+    }
+
+    .protocol-card .score-bar .fill {
+      height: 100%;
+      background: #4361ee;
+      border-radius: 2px;
+    }
+
+    .thinking {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #888;
+      font-size: 14px;
+      padding: 8px 0;
+    }
+
+    .dot-anim span {
+      display: inline-block;
+      width: 6px; height: 6px;
+      background: #4361ee;
+      border-radius: 50%;
+      animation: bounce 1.2s infinite;
+    }
+    .dot-anim span:nth-child(2) { animation-delay: 0.2s; }
+    .dot-anim span:nth-child(3) { animation-delay: 0.4s; }
+
+    @keyframes bounce {
+      0%, 80%, 100% { transform: translateY(0); opacity: 0.4; }
+      40% { transform: translateY(-6px); opacity: 1; }
+    }
+
+    #input-area {
+      background: #fff;
+      border-top: 1px solid #e0e0e0;
+      padding: 16px 24px;
+    }
+
+    #input-row {
+      display: flex;
+      gap: 10px;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    #query-input {
+      flex: 1;
+      border: 1.5px solid #d0d5e8;
+      border-radius: 24px;
+      padding: 12px 20px;
+      font-size: 15px;
+      outline: none;
+      transition: border-color 0.15s;
+      font-family: inherit;
+    }
+
+    #query-input:focus { border-color: #4361ee; }
+
+    #send-btn {
+      background: #4361ee;
+      color: #fff;
+      border: none;
+      border-radius: 24px;
+      padding: 12px 24px;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.15s;
+      font-family: inherit;
+      white-space: nowrap;
+    }
+
+    #send-btn:hover { background: #3451d1; }
+    #send-btn:disabled { background: #b0bbf0; cursor: not-allowed; }
+
+    .hint {
+      font-size: 12px;
+      color: #aaa;
+      text-align: center;
+      margin-top: 8px;
+    }
+
+    .empty-state {
+      text-align: center;
+      color: #aaa;
+      margin: auto;
+      padding: 40px;
+    }
+
+    .empty-state h2 { font-size: 22px; font-weight: 600; color: #555; margin-bottom: 10px; }
+    .empty-state p { font-size: 14px; line-height: 1.7; }
+
+    .example-queries {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      justify-content: center;
+      margin-top: 18px;
+    }
+
+    .example-queries button {
+      background: #fff;
+      border: 1px solid #d0d5e8;
+      border-radius: 20px;
+      padding: 8px 16px;
+      font-size: 13px;
+      color: #555;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.15s;
+    }
+
+    .example-queries button:hover {
+      background: #eef2ff;
+      border-color: #4361ee;
+      color: #4361ee;
+    }
+
+    .error-bubble {
+      background: #fff3f3;
+      border: 1px solid #ffb3b3;
+      color: #c0392b;
+      border-radius: 8px;
+      padding: 12px 16px;
+      font-size: 14px;
+    }
+
+    /* Clarification bubble — styled slightly differently to stand out */
+    .clarification-bubble {
+      background: #fffbea;
+      border: 1px solid #f0c040;
+      border-left: 3px solid #f0c040;
+      border-radius: 0 8px 8px 0;
+      padding: 12px 16px;
+      font-size: 14px;
+      color: #5a4a00;
+      line-height: 1.6;
+    }
+
+    /* Expanded queries shown as small tags below the explanation */
+    .expanded-queries {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #888;
+    }
+
+    .expanded-queries span {
+      display: inline-block;
+      background: #f0f4ff;
+      border: 1px solid #d0d5e8;
+      border-radius: 10px;
+      padding: 2px 10px;
+      margin: 3px 3px 0 0;
+      color: #4361ee;
+      font-size: 11px;
+    }
+
+    .expanded-queries .label {
+      background: none;
+      border: none;
+      color: #aaa;
+      padding: 2px 4px 2px 0;
+      font-style: italic;
+    }
+
+    /* Feedback section shown after search results */
+    .feedback-section {
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .feedback-section p {
+      font-size: 13px;
+      color: #666;
+      margin-bottom: 8px;
+    }
+
+    .feedback-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .feedback-btn {
+      background: #fff;
+      border: 1px solid #d0d5e8;
+      border-radius: 16px;
+      padding: 5px 12px;
+      font-size: 12px;
+      color: #4361ee;
+      cursor: pointer;
+      font-family: inherit;
+      transition: all 0.15s;
+    }
+
+    .feedback-btn:hover {
+      background: #eef2ff;
+      border-color: #4361ee;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>protocols.io Assistant</h1>
+  <span class="badge" id="index-badge">Loading index...</span>
+</header>
+
+<div id="chat-container">
+  <div class="empty-state" id="empty-state">
+    <h2>Find the right protocol</h2>
+    <p>Describe what experiment you need to run.<br>The assistant will find the most relevant protocols from protocols.io.</p>
+    <div class="example-queries">
+      <button onclick="useExample(this)">RNA extraction from plant tissue</button>
+      <button onclick="useExample(this)">PCR protocol for gene cloning</button>
+      <button onclick="useExample(this)">western blot for protein detection</button>
+      <button onclick="useExample(this)">CRISPR gene editing in mammalian cells</button>
+      <button onclick="useExample(this)">arabidopsis transformation protocol</button>
+      <button onclick="useExample(this)">cell viability assay</button>
+    </div>
+  </div>
+</div>
+
+<div id="input-area">
+  <div id="input-row">
+    <input
+      id="query-input"
+      type="text"
+      placeholder="e.g. RNA extraction from plant leaves..."
+      autocomplete="off"
+    />
+    <button id="send-btn" onclick="sendQuery()">Search</button>
+  </div>
+  <p class="hint">Press Enter to search &nbsp;·&nbsp; Searching <span id="protocol-count">...</span> protocols</p>
+</div>
+
+<script>
+  const BACKEND = 'http://localhost:8001';
+
+  // Tracks whether the next query should skip the clarification check
+  // (set to true after the assistant asks a clarification question)
+  let skipClarification = false;
+
+  // Remembers the last successfully searched query for feedback prefill
+  let lastSearchQuery = '';
+
+  // -------------------------------------------------------------------------
+  // Startup: health check and protocol count
+  // -------------------------------------------------------------------------
+
+  async function checkHealth() {
+    try {
+      const r = await fetch(`${BACKEND}/health`);
+      const data = await r.json();
+      if (data.status === 'healthy' || data.status === 'degraded') {
+        document.getElementById('index-badge').textContent = 'Connected';
+      }
+    } catch {
+      document.getElementById('index-badge').textContent = 'Backend offline';
+      document.getElementById('index-badge').style.background = '#fff0f0';
+      document.getElementById('index-badge').style.color = '#c0392b';
+    }
+  }
+
+  async function updateProtocolCount() {
+    try {
+      const r = await fetch(`${BACKEND}/chat`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ query: 'PCR', top_k: 1, explain: false, skip_clarification: true }),
+      });
+      if (r.ok) {
+        const data = await r.json();
+        const count = data.total_protocols_indexed || 0;
+        document.getElementById('protocol-count').textContent = count.toLocaleString();
+        document.getElementById('index-badge').textContent = `${count.toLocaleString()} protocols indexed`;
+      }
+    } catch {}
+  }
+
+  checkHealth();
+  updateProtocolCount();
+
+  document.getElementById('query-input').addEventListener('keydown', e => {
+    if (e.key === 'Enter' && !e.shiftKey) sendQuery();
+  });
+
+  function useExample(btn) {
+    document.getElementById('query-input').value = btn.textContent;
+    sendQuery();
+  }
+
+  // -------------------------------------------------------------------------
+  // DOM helpers
+  // -------------------------------------------------------------------------
+
+  function appendMessage(role, html) {
+    const emptyState = document.getElementById('empty-state');
+    if (emptyState) emptyState.remove();
+    const container = document.getElementById('chat-container');
+    const msg = document.createElement('div');
+    msg.className = `message ${role}`;
+    msg.innerHTML = html;
+    container.appendChild(msg);
+    container.scrollTop = container.scrollHeight;
+    return msg;
+  }
+
+  function escapeHtml(str) {
+    return (str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  // -------------------------------------------------------------------------
+  // Feedback: pre-fill the input with a narrowing prompt
+  // -------------------------------------------------------------------------
+
+  function handleFeedback(optionType) {
+    const input = document.getElementById('query-input');
+    const prefixes = {
+      'organism':   lastSearchQuery + ' in ',
+      'technique':  lastSearchQuery + ' using ',
+      'sample':     lastSearchQuery + ' from ',
+      'goal':       lastSearchQuery + ' for ',
+    };
+    input.value = prefixes[optionType] || lastSearchQuery + ' ';
+    input.focus();
+    input.setSelectionRange(input.value.length, input.value.length);
+    // The user will complete the sentence and submit — skip clarification check
+    skipClarification = true;
+  }
+
+  // -------------------------------------------------------------------------
+  // Main send function
+  // -------------------------------------------------------------------------
+
+  async function sendQuery() {
+    const input = document.getElementById('query-input');
+    const btn = document.getElementById('send-btn');
+    const query = input.value.trim();
+    if (!query) return;
+
+    input.value = '';
+    btn.disabled = true;
+
+    // Capture the flag for this request, then reset it
+    const skipThisTime = skipClarification;
+    skipClarification = false;
+
+    appendMessage('user', `<div class="bubble">${escapeHtml(query)}</div>`);
+
+    const thinkingMsg = appendMessage('assistant', `
+      <div class="bubble">
+        <div class="thinking">
+          <div class="dot-anim"><span></span><span></span><span></span></div>
+          <span>Thinking...</span>
+        </div>
+      </div>
+    `);
+
+    try {
+      const resp = await fetch(`${BACKEND}/chat`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          query,
+          top_k: 5,
+          explain: true,
+          skip_clarification: skipThisTime,
+        }),
+      });
+
+      thinkingMsg.remove();
+
+      if (!resp.ok) {
+        const err = await resp.json().catch(() => ({}));
+        appendMessage('assistant', `<div class="bubble"><div class="error-bubble">Error: ${escapeHtml(err.detail || resp.statusText)}</div></div>`);
+        return;
+      }
+
+      const data = await resp.json();
+
+      // -- Chitchat --
+      if (data.intent === 'chitchat') {
+        appendMessage('assistant', `<div class="bubble">${escapeHtml(data.reply || '')}</div>`);
+        return;
+      }
+
+      // -- Clarification needed --
+      if (data.intent === 'clarification') {
+        skipClarification = true; // next message from user should skip re-clarification
+        appendMessage('assistant', `
+          <div class="bubble">
+            <div class="clarification-bubble">
+              ${escapeHtml(data.reply || '')}
+            </div>
+          </div>
+        `);
+        return;
+      }
+
+      // -- Search results --
+      lastSearchQuery = query;
+
+      let html = '<div class="bubble">';
+
+      // LLM explanation (only shown when Ollama is running)
+      if (data.explanation) {
+        html += `<div class="explanation">${escapeHtml(data.explanation)}</div>`;
+      }
+
+      // Expanded queries used for this search
+      if (data.expanded_queries && data.expanded_queries.length > 1) {
+        const tags = data.expanded_queries
+          .map(q => `<span>${escapeHtml(q)}</span>`)
+          .join('');
+        html += `
+          <div class="expanded-queries">
+            <span class="label">Also searched:</span>${tags}
+          </div>
+        `;
+      }
+
+      // Protocol result cards
+      html += '<div class="results-grid" style="margin-top:12px;">';
+      const maxScore = data.results[0]?.combined_score || data.results[0]?.score || 1;
+
+      data.results.forEach((r, i) => {
+        const displayScore = r.combined_score ?? r.score ?? 0;
+        const scorePercent = Math.round((displayScore / maxScore) * 100);
+        const authorsText = (r.authors || []).slice(0, 2).join(', ')
+          + (r.authors && r.authors.length > 2 ? ' et al.' : '');
+        const keywords = (r.keywords || []).slice(0, 4)
+          .map(k => `<span class="tag">${escapeHtml(k)}</span>`).join('');
+        // Prefer the backend's ready-to-click url (DOI-preferred, always resolves).
+        // Fall back to building a /view/ link only if url is absent.
+        const link = r.url
+          ? r.url
+          : (r.uri ? `https://www.protocols.io/view/${r.uri}` : 'https://www.protocols.io');
+        const matchBadge = r.match_count > 1
+          ? `<span class="tag" style="background:#e8f5e9;color:#2e7d32;">matched ${r.match_count} queries</span>`
+          : '';
+        const penaltyBadge = r.relevance_penalty < 0.5
+          ? `<span class="tag" style="background:#fff3e0;color:#e65100;">low relevance</span>`
+          : '';
+        const reqBadge = r.required_terms && r.required_terms.length
+          ? `<span class="tag" style="background:#f3e5f5;color:#6a1b9a;">must: ${r.required_terms.join(' + ')}</span>`
+          : '';
+
+        html += `
+          <div class="protocol-card">
+            <div class="rank">Match #${i + 1}</div>
+            <div class="title">
+              <a href="${escapeHtml(link)}" target="_blank" rel="noopener">${escapeHtml(r.title || 'Untitled Protocol')}</a>
+            </div>
+            ${r.description ? `<div class="desc">${escapeHtml(r.description.slice(0, 200))}${r.description.length > 200 ? '…' : ''}</div>` : ''}
+            <div class="meta">
+              ${authorsText ? `<span>👤 ${escapeHtml(authorsText)}</span>` : ''}
+              ${r.doi ? `<span>DOI: ${escapeHtml(r.doi)}</span>` : ''}
+              ${keywords}
+              ${matchBadge}
+              ${penaltyBadge}
+              ${reqBadge}
+            </div>
+            <div class="score-bar"><div class="fill" style="width:${scorePercent}%"></div></div>
+          </div>
+        `;
+      });
+
+      html += '</div>';
+
+      // Feedback section
+      if (data.feedback_prompt) {
+        html += `
+          <div class="feedback-section">
+            <p>${escapeHtml(data.feedback_prompt)}</p>
+            <div class="feedback-buttons">
+              <button class="feedback-btn" onclick="handleFeedback('organism')">Narrow by organism</button>
+              <button class="feedback-btn" onclick="handleFeedback('technique')">Narrow by technique</button>
+              <button class="feedback-btn" onclick="handleFeedback('sample')">Narrow by sample type</button>
+              <button class="feedback-btn" onclick="handleFeedback('goal')">Narrow by goal</button>
+            </div>
+          </div>
+        `;
+      }
+
+      html += '</div>';
+      appendMessage('assistant', html);
+
+    } catch (e) {
+      thinkingMsg.remove();
+      appendMessage('assistant', `<div class="bubble"><div class="error-bubble">Could not reach the backend. Is it running?<br><code>python run.py</code></div></div>`);
+    } finally {
+      btn.disabled = false;
+      input.focus();
+    }
+  }
+</script>
+
+</body>
+</html>

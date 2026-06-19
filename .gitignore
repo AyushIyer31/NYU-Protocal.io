@@ -11,3 +11,10 @@ build/
 storage/
 logs/
 *.log
+
+# Secrets — never commit. Use variables.env.example as the template.
+variables.env
+customnerd-backend/variables.env
+
+# Local-only artifacts
+data/protocols_index.backup.json

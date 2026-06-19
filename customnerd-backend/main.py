@@ -28,6 +28,16 @@ from helper_functions import (
     get_default_execution_strategy,
     normalize_execution_strategy,
 )
+from protocol_rag import (
+    build_protocol_index, search_protocols, explain_matches, classify_intent,
+    is_vague_query, get_clarification_question, expand_query, multi_search_protocols,
+)
+from claude_client import is_available as claude_is_available
+from concept_expansion import (
+    extract_concepts, expand_concepts, build_search_probes, generate_sentence_variants,
+)
+from protocolsio_client import multi_probe_search
+from protocol_ranker import rank_protocols
 
 logging.basicConfig(level=logging.INFO)
 
@@ -35,6 +45,10 @@ app = FastAPI()
 update_queues: Dict[str, asyncio.Queue] = {}
 main_loop: Optional[asyncio.AbstractEventLoop] = None
 executor = ThreadPoolExecutor()
+
+# Protocol RAG index — built once at startup
+PROTOCOL_INDEX: Optional[Dict[str, Any]] = None
+PROTOCOLS_DATA_DIR = Path("../data/protocols")
 
 app.add_middleware(
     CORSMiddleware,
@@ -54,10 +68,180 @@ class LocalRAGAnalysisResponse(BaseModel):
 
 @app.on_event("startup")
 async def startup_event():
-    global main_loop
+    global main_loop, PROTOCOL_INDEX
     main_loop = asyncio.get_event_loop()
     SESSIONS_DIR.mkdir(parents=True, exist_ok=True)
+
+    if PROTOCOLS_DATA_DIR.exists():
+        try:
+            loop = asyncio.get_event_loop()
+            PROTOCOL_INDEX = await loop.run_in_executor(
+                executor, build_protocol_index, PROTOCOLS_DATA_DIR
+            )
+            count = len(PROTOCOL_INDEX["protocols"])
+            logging.info(f"Protocol index ready: {count} protocols loaded.")
+        except Exception as e:
+            logging.warning(f"Could not build protocol index: {e}")
+    else:
+        logging.warning(f"Protocol data dir not found: {PROTOCOLS_DATA_DIR}. Run fetch_protocols.py first.")
+
     logging.info("Local Ollama RAG backend started.")
+
+
+class ChatRequest(BaseModel):
+    query: str
+    top_k: int = 5
+    explain: bool = True
+    # Set True when the user is responding to a clarification question,
+    # so we don't ask for clarification a second time.
+    skip_clarification: bool = False
+    # "live"  -> concept-expansion pipeline against the live protocols.io API
+    # "local" -> legacy TF-IDF search over the cached protocol index
+    search_mode: str = "live"
+
+
+def run_live_expansion_search(query: str, top_k: int) -> Dict[str, Any]:
+    """
+    Concept-expansion search against the live protocols.io API.
+
+    extract concepts -> expand each with grounded synonyms (NCBI/Europe PMC,
+    Ollama/static fallback) -> fire short probes -> merge -> multi-signal re-rank.
+    Returns results plus the intermediate concepts/expansions/probes for display.
+    """
+    concepts = extract_concepts(query)
+    expansions = expand_concepts(concepts, use_external=True)
+    probes = build_search_probes(concepts, expansions, max_probes=10)
+    sentence_variants = generate_sentence_variants(concepts, expansions)
+    merged, hit_map, probe_totals = multi_probe_search(probes, per_probe=6, cap=50)
+    ranked = rank_protocols(concepts, expansions, merged, hit_map, top_k=top_k)
+    return {
+        "results": ranked,
+        "concepts": concepts,
+        "expansions": expansions,
+        "probes": probes,
+        "probe_totals": probe_totals,
+        "sentence_variants": sentence_variants,
+    }
+
+
+@app.post("/chat")
+async def chat(req: ChatRequest):
+    """
+    Main chatbot endpoint with clarification, multi-query expansion, and re-ranking.
+
+    Flow:
+      1. Classify intent (chitchat vs. protocol search).
+      2. If the query is vague and clarification hasn't been skipped, ask a follow-up.
+      3. Expand the query into 3-5 related variants.
+      4. Run TF-IDF search on all variants, merge and re-rank results.
+      5. Optionally generate a plain-English explanation via the local LLM.
+      6. Return results with a feedback prompt.
+    """
+    # Live mode searches protocols.io directly and does not need the local index;
+    # only the legacy TF-IDF ("local") mode requires it.
+    if req.search_mode == "local" and not PROTOCOL_INDEX:
+        raise HTTPException(status_code=503, detail="Protocol index not loaded. Run fetch_protocols.py first.")
+
+    if not req.query or not req.query.strip():
+        raise HTTPException(status_code=400, detail="Query cannot be empty.")
+
+    query = req.query.strip()
+    loop = asyncio.get_event_loop()
+    total_indexed = len(PROTOCOL_INDEX["protocols"]) if PROTOCOL_INDEX else 0
+
+    # Step 1: Check for vague queries BEFORE intent classification.
+    # Vague lab terms (e.g. "overexpression", "PCR") may not contain the keywords
+    # that the chitchat classifier uses, so they'd be wrongly dismissed as chitchat.
+    # Catching them here means they always get a clarification question instead.
+    if not req.skip_clarification and is_vague_query(query):
+        clarification = get_clarification_question(query)
+        return {
+            "query": query,
+            "intent": "clarification",
+            "reply": clarification,
+            "results": [],
+            "explanation": "",
+            "expanded_queries": [],
+            "feedback_prompt": None,
+            "feedback_options": [],
+            "total_protocols_indexed": total_indexed,
+        }
+
+    # Step 2: Classify intent — chitchat vs. protocol search
+    intent = await loop.run_in_executor(executor, classify_intent, query)
+    if intent["intent"] == "chitchat":
+        return {
+            "query": query,
+            "intent": "chitchat",
+            "reply": intent["reply"],
+            "results": [],
+            "explanation": "",
+            "expanded_queries": [],
+            "feedback_prompt": None,
+            "feedback_options": [],
+            "total_protocols_indexed": total_indexed,
+        }
+
+    # Steps 3-4: search. Either the live concept-expansion pipeline (default) or
+    # the legacy local TF-IDF pipeline.
+    concepts: Dict[str, Any] = {}
+    expansions: Dict[str, List[str]] = {}
+    sentence_variants: List[str] = []
+    if req.search_mode == "live":
+        try:
+            live = await loop.run_in_executor(executor, run_live_expansion_search, query, req.top_k)
+            results = live["results"]
+            concepts = live["concepts"]
+            expansions = live["expansions"]
+            expanded = live["probes"]
+            sentence_variants = live["sentence_variants"]
+            logging.info(f"Live search '{query}': {len(expanded)} probes -> {len(results)} ranked results")
+        except Exception as e:
+            logging.warning(f"Live search failed ({e}); falling back to local index.")
+            if not PROTOCOL_INDEX:
+                raise HTTPException(status_code=503, detail=f"Live search failed and no local index: {e}")
+            expanded = await loop.run_in_executor(executor, expand_query, query)
+            results = await loop.run_in_executor(
+                executor, multi_search_protocols, PROTOCOL_INDEX, expanded, req.top_k
+            )
+    else:
+        # Step 3: Expand the query into multiple related search variants
+        expanded = await loop.run_in_executor(executor, expand_query, query)
+        logging.info(f"Expanded '{query}' into {len(expanded)} queries: {expanded}")
+        # Step 4: Multi-query search — search all variants, merge, and re-rank
+        results = await loop.run_in_executor(
+            executor, multi_search_protocols, PROTOCOL_INDEX, expanded, req.top_k
+        )
+
+    # Step 5: Optionally explain the top results using the local LLM.
+    # Skip entirely when Ollama is unreachable — otherwise explain_matches would
+    # spend ~15s on doomed retries and stall the request.
+    explanation = ""
+    if req.explain and results and claude_is_available():
+        explanation = await loop.run_in_executor(
+            executor, explain_matches, query, results[:3]
+        )
+
+    return {
+        "query": query,
+        "intent": "search",
+        "reply": None,
+        "explanation": explanation,
+        "results": results,
+        "expanded_queries": expanded,
+        "concepts": concepts,
+        "expansions": expansions,
+        "sentence_variants": sentence_variants,
+        "search_mode": req.search_mode,
+        "feedback_prompt": "Were these results relevant? I can help narrow the search.",
+        "feedback_options": [
+            "Narrow by organism (e.g. plant, human, mouse)",
+            "Narrow by technique (e.g. qPCR, western blot, CRISPR)",
+            "Narrow by sample type (e.g. tissue, cell line, bacteria)",
+            "Narrow by experimental goal (e.g. extraction, detection, quantification)",
+        ],
+        "total_protocols_indexed": total_indexed,
+    }
 
 
 @app.get("/")
@@ -66,6 +250,7 @@ async def root():
         "message": "Local Ollama RAG backend is running.",
         "routes": [
             "/health",
+            "/chat",
             "/sse",
             "/process_local_rag_analysis",
         ],

@@ -253,6 +253,61 @@ Progress updates for every pipeline step — including per-prompt progress — a
 
 **"Ollama client not initialized" error**: Your `openai` package version is incompatible with your installed `httpx`. Fix it by running `pip install "openai>=1.52.0"`.
 
+---
+
+## Protocols.io Chatbot (NYU Project)
+
+This section documents the **protocol search assistant** built on top of CustomNerd for the NYU research project with Prof. Shasha. The goal is to let bench scientists find lab protocols on protocols.io using natural language.
+
+### How to run the chatbot
+
+```bash
+# 1. Fetch and cache protocols (only needs to run once; resumable)
+python3 fetch_protocols.py
+
+# 2. Start backend + frontend
+python3 run.py
+# Opens http://localhost:5555/chat.html automatically
+```
+
+Ollama is optional. If installed and running (`ollama serve`), the system will generate plain-English explanations of why protocols match. Without Ollama, search still works fully — explanations are just skipped.
+
+### How TF-IDF search works
+
+Each cached protocol (title, description, guidelines, steps, materials, keywords) is converted to a single text blob and indexed with scikit-learn's `TfidfVectorizer`. At query time, the user's query is vectorized and compared to every protocol using cosine similarity. The top-k highest-scoring protocols are returned.
+
+**Why TF-IDF is limited:**
+TF-IDF is keyword-based — it matches on exact or near-exact words. If the user says "isolate messenger RNA" but the protocol title says "mRNA extraction", the scores will be low because the words don't overlap. It does not understand meaning, only vocabulary.
+
+### How the clarification layer helps
+
+Before searching, the chatbot checks whether the query is too vague to produce good results (e.g. "PCR", "overexpression", "cell culture"). If it is, the chatbot asks one targeted follow-up question instead of returning weak results. For example:
+
+> User: "I want to test overexpression"
+> Assistant: "Do you mean gene overexpression, protein overexpression, or overexpression in a specific system (e.g. mammalian cells, plants, bacteria)?"
+
+This is implemented as a rule-based check in `protocol_rag.py` (`is_vague_query`, `get_clarification_question`).
+
+### How multiple query generation improves search
+
+After a valid query is received, the system expands it into 3–5 related search variants using synonym substitution (e.g. extraction → isolation → purification) or, when Ollama is running, by asking the LLM to rephrase. All variants are searched against the TF-IDF index and the results are merged.
+
+**Re-ranking formula:**
+```
+combined_score = best_tfidf_score + 0.05 × (number of query variants that matched − 1)
+```
+
+Protocols that appear across multiple query variants get a small frequency bonus, which rewards broad relevance over narrow keyword coincidence.
+
+### What still needs improvement
+
+- **Semantic search**: Replace or augment TF-IDF with sentence-transformer embeddings so that meaning-level matches (not just vocabulary matches) are found.
+- **Dataset coverage**: 962 protocols is a small slice of protocols.io. A more principled crawl strategy is needed.
+- **Multi-turn conversation memory**: Each query is currently stateless. Future work should let users say "filter those to plant-based ones" referencing prior results.
+- **Feedback loop learning**: Clicks on feedback buttons do not yet update the ranking model. User signals could eventually improve result quality.
+
+---
+
 ## License
 
 MIT License — see [LICENSE](LICENSE) for details.
