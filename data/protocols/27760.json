@@ -1,0 +1,37 @@
+{
+  "id": 27760,
+  "title": "Gene knockout",
+  "uri": "gene-knockout-7cqhivw",
+  "doi": "dx.doi.org/10.17504/protocols.io.7cqhivw",
+  "description": "{\"blocks\":[{\"key\":\"eir6f\",\"text\":\"We use this protocol to knock out pykF in E.coli ΔpfkA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"4ii1a\",\"text\":\"Please read the protocol carefully before doing the experiment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"dtk16\",\"text\":\"UV light is harmful, please use it carefully. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3ut3o\",\"text\":\"Wear gloves when doing experiments and wear masks if necessary\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"6ojk3\",\"text\":\"E. coli ΔpfkA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4p7k3\",\"text\":\"pCas9 plasmid\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8b5ku\",\"text\":\"LB medium\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"a9nfs\",\"text\":\"Sterilized 10% glycerol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"bdnsl\",\"text\":\"glycerol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4r3o0\",\"text\":\"1mM IPTG\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8d3hi\",\"text\":\"Kan\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"95e4o\",\"text\":\"Str\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4ui74\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Transfer the pCas9 plasmid into the recipient E. coli ΔpfkA (Kana resistance, temperature sensitive).",
+    "Preparation of pCas9 /ΔpfkA competent cells:",
+    "Add 200 μL of bacterial solution to 100 mL of LB medium, incubate at 30℃, 200 rpm for about 12 h, Add 2% to LB medium, add 0.5% of arabinose at a final concentration after 0.5 hours of culture;",
+    "Incubate at 30℃ for about 2~2.5 h, until the OD600 is about 0.55-0.6, then take it out and let it stand on ice for 30 min;",
+    "Collect cells at 4200 rpm for 10 min in a 4℃ refrigerated centrifuge;",
+    "Resuspend the cells gentlely with 10 ml of pre-cooled and sterilized 10% glycerol on ice.",
+    "Repeat steps 2.3 and 2.4 three times, using 10 mL of pre-cooled and sterilized 10% glycerol for the first two washes. The last time it was resuspended with 0.5 mL of glycerol.",
+    "Dispense in 100 μL/tube into a pre-cooled centrifuge tube, It can be used for electroporation or immediately placed in a -80℃ refrigerator. . The bacteria can be stored at -80℃ for half a year.",
+    "Prepare target segment: Clone upstream and downstream sequences of pykF by PCR to about 500 bp each, Then connect upstream and downstream homology arms together by overlap.",
+    "pTarget-pykF vector construction(Str resistance): Download the pykF gene sequence, Find the appropriate gRNA affinity site and replace 1961 to 1980 bases of the pTarget plasmid by digestion and ligation or overlap.",
+    "Electroporation:",
+    "Add &gt;200ng target fragment and &gt;40ng pTarget-pykF plasmid to 100μL competent cells on ice for 10~30 min, The plasmid and the ligation product should not exceed 5μL;",
+    "UV-sterilize the washed and dried 2 mm electroporation cuvette for 20 min and pre-cooled on ice, then quickly transfer the competent cells to the bottom of the electroporation cuvette;",
+    "Dry the outer wall of the cup. Immediately after the electric shock, add 900~1000μL of 37 °C preheated LB medium, mix gently, transfer to a 1.5 mL centrifuge tube, shake at 30 ° C, 150 rpm, 45 ~ 60 min, then apply an appropriate amount of bacterial solution to the plate containing Kan and Str.",
+    "Knockout verification: Primers were designed at 700-1000 bp upstream and downstream of the pykF in the genome to perform colony PCR validation on clones on the plates.",
+    "pTarget-pykF elimination: Take the correct clone, add 1mM IPTG at 30℃for 12 h , streak to isolate the monoclone. The clones were tested for the presence of Str resistance, Clones with pTarget eliminated is not resistant to str. The pCas9 plasmid can be eliminated by incubation at 37℃.",
+    "Strains that retain the pCas9 plasmid can be used to knock out other genes."
+  ],
+  "authors": [
+    "宏亮 董"
+  ],
+  "creator": "宏亮 董",
+  "published_on": 1568455503,
+  "created_on": 1568453779,
+  "keywords": []
+}

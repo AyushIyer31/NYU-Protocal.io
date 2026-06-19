@@ -1,0 +1,30 @@
+{
+  "id": 61456,
+  "title": "Measurement of bacterial dry weight",
+  "uri": "measurement-of-bacterial-dry-weight-b79qrr5w",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygxzn44v8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"csvbq\",\"text\":\"Protocol to measure the biomass content of bacterial cultures, by measuring their dry weight after evaporation of water.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"58l6j\",\"text\":\"M9 worm buffer:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"30ddp\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"bmad1\",\"text\":\"LB broth: BD  244620 (or equivalent)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"35fio\",\"text\":\"Spectrophotometer: Jenway 7200, Cole-Parmer, Staffordshire, UK (or equivalent)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4q30u\",\"text\":\"High accuracy scale (resolution of 0.0001 g or better)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4eb0u\",\"text\":\"Oven\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"88jhu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e175f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"protocols\",\"mutability\":\"IMMUTABLE\",\"data\":{\"id\":64446,\"title\":\"Preparation of M9 worm buffer\",\"title_html\":\"\\u003cp\\u003ePreparation of M9 worm buffer\\u003c/p\\u003e\",\"load_collapsed\":true,\"uri\":\"preparation-of-m9-worm-buffer-ca66shhe\",\"type_id\":1,\"image\":{\"source\":\"https://www.protocols.io/img/default_protocol.png\",\"webp_source\":null,\"placeholder\":\"https://www.protocols.io/img/default_protocol.png\",\"webp_placeholder\":null},\"guid\":\"0EB49D10EA2511ECB5E28F8CF792DDB9\",\"creator\":{\"name\":\"Alfonso Pérez Escudero\",\"first_name\":\"\",\"last_name\":\"\",\"affiliation\":null,\"affiliation_url\":null,\"username\":\"alfonso--prez-escudero\",\"link\":null,\"user_image_file\":{\"guid\":\"00000000000000000000000000000001\",\"file_name\":\"avatar.png\",\"url\":\"https://www.protocols.io/img/avatars/001.png\",\"mime\":\"image/png\",\"size\":0,\"width\":100,\"height\":100,\"avg_color\":\"\",\"scan_status\":0,\"created_at\":0}},\"stats\":{\"number_of_steps\":0},\"protocol_image_file\":{\"guid\":\"00000000000000000000000000000001\",\"file_name\":\"avatar.png\",\"url\":\"https://www.protocols.io/img/default_protocol.png\",\"mime\":\"image/png\",\"size\":0,\"width\":400,\"height\":400,\"avg_color\":\"\",\"scan_status\":0,\"created_at\":0}}}}}",
+  "steps": [
+    "Inoculate one or two colonies of bacteria into 5 mL LB in a closed 50-mL Falcon tube. Incubate with orbital shaking 300 rpm, 22 °C, 1 day",
+    "Inoculate 20 microliters of the culture prepared in step #1 into 200 mL of LB, in a 1 L flask. Cover flask with aluminium foil, and incubate for 24 hours with orbital shaking 200 rpm, 22 °C, 1 day",
+    "Wash culture resulting from step #2 in M9 worm buffer 2 times. For each wash: Transfer the culture to 50-mL Falcon tubes, centrifuge 5000 x g, 4 °C, 5 minutes , remove supernatant and resuspend pellet in M9 worm buffer. After the last wash, resuspend in M9 worm buffer up to 5.5 mL.",
+    "Measure optical density of the resulting bacterial suspension.",
+    "Add 5 mL of each bacterial suspension to each glass vial. Also, prepare an extra glass vial with 5 mL of M9 worm buffer.",
+    "Leave glass vials with bacterial suspension and M9 in an oven at 90 °C for 24:00:00 Note: In our experience, 24 hours are enough for all water to evaporate completely. You can check this by repeating step # 8 at different times, until the weights stabilize.",
+    "Weigh again the glass vials, which now contain the solid residue from the bacterial cultures. The weight of the vials may increase slightly over time from the moment you take them from the oven, as they acquire humidity from the air. To control for this as much as possible, take them out one by one, and wait for a fixed amount of time so that they cool down before weighing (usually 1 minute is enough).",
+    "Compute density of dry weight at OD=1 as ((wb - wbt) - (wm - wmt))/(OD*V), where - wb is the weight of the tube with the dried bacterial residue (measured in step #8) - wbt is the weight of the same tube, but clean (measured in step #3) - wm is the weight of the tube with the dried M9 residue (measured in step #8) - wmt is the weight of the same tube, but clean (measured in step #3) - OD is the optical density of the bacterial suspension (measured in step #5) - V is the volume that was added to the vials in step #6 (5 mL)",
+    "Take clean glass vials, and put them into an oven at 90 C for at least 2 hours, in order to ensure that they are completely dry. Then, weigh each vial separately in a high-accuracy scale (resolution of 0.0001 g or better)"
+  ],
+  "authors": [
+    "Alfonso Pérez Escudero",
+    "Gabriel Madirolas"
+  ],
+  "creator": "Alfonso Pérez Escudero",
+  "published_on": 1655022080,
+  "created_on": 1650984548,
+  "keywords": []
+}

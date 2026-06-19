@@ -1,0 +1,42 @@
+{
+  "id": 37137,
+  "title": "Validation of Selected RNA Extraction Method",
+  "uri": "validation-of-selected-rna-extraction-method-bghrjt56",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"670mr\",\"text\":\"The technique RT-qPCR for viral RNA detection is the current worldwide strategy used for early detection of the novel coronavirus SARS-CoV-2. RNA extraction is a key pre-analytical step in RT-qPCR, often achieved using commercial kits. However, the magnitude of the COVID-19 pandemic is causing disruptions to the global supply chains used by many diagnostic laboratories to procure the commercial kits required for RNA extraction. Shortage in these essential reagents is even more acute in developing countries with no means to produce kits locally. We sought to find an alternative procedure to replace commercial kits using common reagents found in molecular biology laboratories. Here we report a method for RNA extraction that takes about 40 min to complete ten samples, and is not more laborious than current commercial RNA extraction kits. We demonstrate that this method can be used to process nasopharyngeal swab samples and yields RT-qPCR results comparable to those obtained with commercial kits. Most importantly, this procedure can be easily implemented in any molecular diagnostic laboratory. Frequent testing is crucial for individual patient management as well as for public health decision making in this pandemic. Implementation of this method could maintain crucial testing going despite commercial kit shortages. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"4g030\",\"text\":\"Please refer to the Safety Data Sheets (SDS) for health and environmental hazards. Obtain all necessary approvals from relevant Ethics Committees. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"kI4sC\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"vO079\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"b5usr\",\"text\":\"Biological samples \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":18},{\"style\":\"bold\",\"offset\":0,\"length\":18}],\"entityRanges\":[],\"data\":[]},{\"key\":\"fvui1\",\"text\":\"Obtain saliva samples from 50 suspected coronavirus infected patients. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5u1b4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ciage\",\"text\":\"Validating RNA extraction methods \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":34},{\"style\":\"bold\",\"offset\":0,\"length\":34}],\"entityRanges\":[],\"data\":[]},{\"key\":\"41t3c\",\"text\":\"High Pure viral RNA extraction kit (Roche) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"e9b0s\",\"text\":\"One-Step RT-qPCR kit \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ekome\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8j8hs\",\"text\":\"Machines required\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":17},{\"style\":\"italic\",\"offset\":0,\"length\":17}],\"entityRanges\":[],\"data\":[]},{\"key\":\"f13ir\",\"text\":\"Step-One thermal cycler (Applied Biosystems)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8b4cd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":437233,\"guid\":\"4256F9AC341F11EE9D4302C0B41BC903\",\"name\":\"High Pure Viral RNA Kit\",\"mol_weight\":0,\"sku\":\"11858882001\",\"url\":\"https://www.lifescience.roche.com/en_us/products/high-pure-viral-rna-kit.html\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":66,\"name\":\"Roche\",\"link\":\"http://www.roche.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Obtain nasopharyngeal swabs in Universal Transport Medium (UTM) from 50 patients that attend outpatient services at Red Salud UC-CHRISTUS (Santiago, Chile) because of suspected coronavirus infection. Two types of biological samples were used: For preliminary evaluation of the RNA extraction methods, use saliva samples obtained from two asymptomatic volunteers. (This protocol can be found here: Preliminary Evaluation of RNA Extraction Methods ) For validation of the RNA extraction method selected, use nasopharyngeal swabs in Universal Transport Medium (UTM). Saliva is routinely collected for the initial assessment of viral infection.",
+    "Extract RNA from the 50 nasopharyngeal swabs using High Pure viral RNA extraction kit (Roche) according to instructions provided by the manufacturer. This RNA extraction method is considered as the gold standard for comparison purposes, and it is based in capture of RNA using columns with silica filters.",
+    "Perform RT-qPCR using Taqman probes and primers recommended by the CDC, and using the following steps: CDC. Research Use Only 2019-Novel Coronavirus (2019-nCoV) Real-time RT-PCR Primer and Probe Information. https://www.cdc.gov/coronavirus/2019-ncov/lab/rt-pcr-panel-primer-probes.html",
+    "Perform a one-step RT-qPCR reaction in a Step-One thermal cycler (Applied Biosystems).",
+    "Amplify two viral targets: the nucleocapsid viral proteins N1 and N2.",
+    "Additionally, amplify the RNAse P target as a quality control measure for the extraction method and to corroborate the absence of PCR-inhibitors in the sample.",
+    "Required cutoff points for Ct values (Cycle Threshold) to decide whether a result is COVID-19 positive or negative are specified by the CDC as follows: To report a positive result, both viral targets N1 and N2 must be CT&lt;40. To report a negative result, both viral targets must be CT≥40. If one of the viral targets is CT&lt;40 and the other is CT≥40, the result must be reported as undetermined . The RNAse P target must be CT≤35."
+  ],
+  "authors": [
+    "Ariel Cerda",
+    "Catalina Ibarra-Henriquez",
+    "Valentina Sebastian",
+    "Grace Armijo",
+    "Liliana Lamig",
+    "Carolina Miranda",
+    "Marcela Lagos",
+    "Sandra Solari",
+    "Ana María Guzmán",
+    "Teresa Quiroga",
+    "Susan Hitschfeld",
+    "Eleodoro Riveras",
+    "Marcela Ferres",
+    "Rodrigo A. Gutiérrez",
+    "Patricia García",
+    "Aniela Wozniak"
+  ],
+  "creator": "Catalina Ibarra-Henriquez",
+  "published_on": 1591231956,
+  "created_on": 1589738278,
+  "keywords": []
+}

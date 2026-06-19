@@ -1,0 +1,42 @@
+{
+  "id": 123609,
+  "title": "Western Blot ",
+  "uri": "western-blot-d4xz8xp6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlk96p6v5r/v2",
+  "description": "{\"blocks\":[{\"key\":\"o92g\",\"text\":\"Western Blot using the iBind Automated Western Systems\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"avmo\",\"text\":\"10x RIPA buffer ( Millipore 20-188)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":35}],\"data\":{}},{\"key\":\"d8g03\",\"text\":\"Protease inhibitor cocktail (AbCAM, ab271306) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":27}],\"data\":{}},{\"key\":\"ae6sg\",\"text\":\"Qubit Protein BR Assay kit (A50668)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":35}],\"data\":{}},{\"key\":\"8fvne\",\"text\":\"Qubit4\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":3,\"offset\":0,\"length\":6}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"6DE73BA02AD14330A1882DC60380A5AD\",\"url\":\"https://www.emdmillipore.com/US/en/product/RIPA-Lysis-Buffer-10X,MM_NF-20-188\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"00ACDBFB6F3D4191AA78B83E56B85663\",\"url\":\"https://www.abcam.com/en-us/products/reagents/protease-inhibitor-cocktail-100x-ab271306\"}},\"2\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"3ED9FACDD73D4B37B11442C10F6147C4\",\"url\":\"https://www.thermofisher.com/order/catalog/product/A50668\"}},\"3\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"1B442D2973C04AB3AAF98B642DB9B997\",\"url\":\"https://www.fishersci.com/shop/products/qubit-4-fluorometer-wifi/Q33238?gclid=Cj0KCQiA1p28BhCBARIsADP9HrN81Uvj2C4-pQotNc13iXUOQ6GqnuIyUt-BKOelYB95ep3MlR0HtzMaAg8PEALw_wcB\\u0026ef_id=Cj0KCQiA1p28BhCBARIsADP9HrN81Uvj2C4-pQotNc13iXUOQ6GqnuIyUt-BKOelYB95ep3MlR0HtzMaAg8PEALw_wcB:G:s\\u0026ppc_id=PLA_goog_21375072684_165156526522_Q33238__702451848955_4834694975796792485\\u0026ev_chn=shop\\u0026s_kwcid=AL!4428!3!702451848955!!!g!2312183778933!\\u0026gad_source=1\"}}}}",
+  "steps": [
+    "This protocol is written for a 6-well plate, please adjust the medium/buffer volume based on plate size.",
+    "Aspirate the medium in the wells and wash once with pre-cold DPBS. Add 1 mL of cold DPBS to each well, and collect the cells with cell lifter.",
+    "Centrifuge the tubes at 300g for 5 minutes. Discard the supernatant. If the WB is not performed immediately, the pellet can be stored at -80°C.",
+    "Prepare 1x RIPA buffer to lysis the cells. Use 10x RIPA buffer (Millipore 20-188) to prepare 1X RIPA buffer (2mL RIPA buffer + 18mL H2O).",
+    "Add protease inhibitor cocktail (1x RIPA buffer + Protease inhibitor cocktail (1:100). At this step, 1x RIPA buffer with inhibitor can be aliquoted and frozen down at -20°C.",
+    "Add 100 ul RIPA buffer to the cell pellet and re-suspend the cells. Leave the RIPA lysate on ice for 30 minutes. Pipetting to mix every 10 minutes until the lysate is clear.",
+    "Centrifuge the lysate for 10 minutes at 15000g at 4°C (important that it is done at 4°C). Transfer the supernatant to a new 1.5mL Eppendorf tube. Make sure that the step is performed on ice. The supernatant will be your samples for the Western Blot.",
+    "At this step, cell lysis can be stored at -80°C for long-term storage.",
+    "Use the Qubit Protein BR Assay kit (A50668) and Qubit4 to measure the protein concentration. In the 0.5mL Qubit Invitrogen tubes, prepare a Blank, Standard 1, Standard 2, and samples according to the following, ensuring that the order added is Sample (or Standard),, followed by the BR buffer, followed by the kit reagent: Blank: Add 170uL of BR buffer + 30uL of Reagent Standard 1: Add 20uL of S1 + 150uL BR Buffer + 30uL Reagent Standard 2: Add 20uL of S2 + 150uL BR Buffer + 30uL Reagent Sample: Add 2uL of Sample + 168uL of BR Buffer + 30uL of Reagant",
+    "Vortex each of the blank, standards, and samples, and leave at room temperature for 10 minutes. Measure the protein concentration.",
+    "In a separate 1.5mL Eppendorf tube, prepare a 1:9 ratio of 4x Laemmli Sample Buffer to 2-mercaptoethanol. Prepare enough for 34uL of this mix per sample.",
+    "Add 34uL of the loading mix to 100uL of lysis sample, and boil the samples for 3-5 minutes. At this point, prior to boiling, samples can be stored long-term at -80°C.",
+    "After boiling samples, prepare 1X running buffer: mix 100mL of 10X Tris/Glycine/SDS Buffer with 900mL of Milli-Q water.",
+    "Prepare mini-protein TGX stain-free gels (4-20%), in the BIO-RAD running cassette, and add running buffer.",
+    "Load samples onto wells depending on protein concentration (up to 20uL/well). Add 8uL of loading marker dye to each end.",
+    "Run the gel at 100V for 10 minutes, and then at 150V for 30-40 minutes.",
+    "Transfer gel to PVDF membrane using the Trans-Blot Turbo Mini 0.2 um PVDF Transfer Packs. Transfer for 30 minutes.",
+    "After the transfer, membranes are placed in iBind buffer. If alpha-synuclein and pS129-alpha-synuclein are to be blotted, fix the membrane with 4% PFA in PBS for 10 minutes and wash with PBS for 30 minutes before blotting.",
+    "Following transfer, prepare 1X iBind Solution by adding: 300uL of 100X Additive + 6mL iBind 5X buffer + 23.7mL H2O to a 50mL falcon tube.",
+    "Prepare primary antibodies, secondary antibodies and washing buffer according to iBind kit protocol. Add them to iBind Automated Western Systems and run overnight.",
+    "Detect the signal with Max Western ECL and image with Biorad ChemiDoc Imaging system"
+  ],
+  "authors": [
+    "Chelsie Steele",
+    "Yujie Fan"
+  ],
+  "creator": "Chelsie Steele",
+  "published_on": 1740763281,
+  "created_on": 1740761147,
+  "keywords": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": 98212,
+  "title": "BAF_Protocol_008 Metabolomics: Soluble Metabolite Extraction",
+  "uri": "baf-protocol-008-metabolomics-soluble-metabolite-e-db6c2raw",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvmex5ng3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"5v2lm\",\"text\":\"This is a standard metabolite sample prep using chloroform/methanol and keeping the soluble (aqueous) phase. This method will produce a clean sample free of most lipids and very hydrophobic molecules. The samples are ready for MS analysis or storage dry at -80C.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"fsjup\",\"text\":\"Make sure some type of normalization is considered before starting - dry weight, cell number, etc - so equal amounts of material can be injected into the MS. This can be done by counting the same number of cells into each sample tube or weighing the same amount of tissue/stool into each tube or if larger differences you may adjust the extraction volume to account of the differences.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"clo99\",\"text\":\"Microtubes 1.5 mL - SEAL-RITE® 1.5 ML MICROCENTRIFUGE TUBES color: natural, USA Scientific\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"50sof\",\"text\":\"Reinforced tubes 2 mL- with screw caps and O-rings,  Fisherbrand™, White/Opaque, part number 5-340-162.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1485q\",\"text\":\"Stainless steel balls - OMNI International 2.4mm Metal Bead Media 500g SKU 19-640\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1i1um\",\"text\":\"Pipette tips - Fisherbrand™, yellow, part number: 02-681-151.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"elfmo\",\"text\":\"Water - Fisher chemical, W64, Optima LC/MS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f96bp\",\"text\":\"FA - Fisher chemical, A117-50, Formic Acid, Optima LC/MS \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4vr5o\",\"text\":\"Methanol - Fisher chemical, A456-212, Methanol, Optima LC/MS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fsl9i\",\"text\":\"Chloroform - Millipore sigma, CX1050P-1, Chloroform, HPLC grade\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6fte2\",\"text\":\"2 to 20 µL Micropipette - Gilson™ F144056MT\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"26q6d\",\"text\":\"20 to 200 µL Micropipette - Gilson™ F144058MT\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"j90u\",\"text\":\"100 to 1000 µL Micropipette - Gilson™ F144059MT\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c1n4f\",\"text\":\"VWR Analog Vortex mixer - CAT No: 58816-121\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f9jn\",\"text\":\"Thermo Scientific™ integrated Speedvac Concentrator CAT No: SPD1030-115\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"esvbh\",\"text\":\"Eppendorf 5415D Digital Centrifuge \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6k51o\",\"text\":\"Thermo Scientific™ Thermal Mixer with blocks, Block, 24 x 2.0mL microtubes, CAT No: 13687713\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6uvhr\",\"text\":\"Fisherbrand™ bead Mill 24 homogenizer CAT No: 15-340-163\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"am595\",\"text\":\"Autosampler vials - SureSTART™ 6ERV11-03PPC Vial 0.3mL CLR PP SNP CON\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"44e5f\",\"text\":\"Vial caps - SureSTART™ 6ARC11ST1OR Cap snap 11mm orange polyethylene \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6jdsp\",\"text\":\"\\n\\t\\n\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9kftv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "To each sample containing 100 uL add 750 µL of -20°C cold Chloroform:methanol (2:1) mixture and vortex",
+    "Shake tubes vigorously for 30 min at 4°C in temperature temperature-controlled thermal shaker",
+    "Add 400 µL of water, shake vigorously, and centrifuge for 10 min at 10000 rpm for phase separation.",
+    "Recover the top aq. methanolic phase as metabolite mixture and transfer to Eppendorf tube.",
+    "Dry the soluble metabolite samples under vacuum for 3-4 h. Store at -80°C until ready for LC-MS(/MS) analysis.",
+    "*Note: save the lower phase if you need to extract lipids. Go for BAF_Protocol_009.",
+    "Before running, reconstitute samples in 100 µL of 0.1% Formic acid in water containing 100X diluted Metabolomics QReSS heavy labeled standards. (https://www.isotope.com/userfiles/files/assetLibrary/MET_RSCH_QReSS.pdf)",
+    "Prepare a QC sample with 10 µL of each sample and transfer 50 uL of each sample to autosampler vials",
+    "Injection volume of each sample: 10 µL",
+    "Place the sample into reinforced tubes: frozen tissue slice or lyophilized stools. For cell pellets: mix well with 50-100 uL of water transfer solution and suspended cells to reinforced tubes.",
+    "To each sample add 5 stainless steel balls, 750 µL of -20 C cold Chloroform:methanol (2:1) mixture",
+    "Disrupt cells/tissues with Fisher Bead Mill 24 (speed: 5m/s, time: 20 sec, number of cycle: 3, dwell/pause between runs: 10 sec)",
+    "Follow steps #2 to #9."
+  ],
+  "authors": [
+    "Nicholas Sherman"
+  ],
+  "creator": "Nicholas Sherman",
+  "published_on": 1713556377,
+  "created_on": 1713197290,
+  "keywords": []
+}

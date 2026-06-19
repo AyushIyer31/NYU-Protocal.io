@@ -1,0 +1,31 @@
+{
+  "id": 103602,
+  "title": "Agrobacterium-Mediated Transient Expression in Nicotiana benthamiana Leaves",
+  "uri": "agrobacterium-mediated-transient-expression-in-nic-dhes33ee",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzj7prlx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"2bj4q\",\"text\":\"This procedure outlines the Agrobacterium infiltration of tobacco leaves for the transient expression of fluorescently labeled proteins.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"dcjvr\",\"text\":\"n/a\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"b82hc\",\"text\":\"n/a\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"5nhig\",\"text\":\"n/a\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"2vcuq\",\"text\":\"Infiltration medium: 10 mM MgCl2, 10 mM MES (pH 5.6). Autoclave for 20 min. Add acetosyringone immediately before using it         to a final concentration of 200 μM.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":21},{\"style\":\"italic\",\"offset\":0,\"length\":21},{\"style\":\"sub\",\"offset\":31,\"length\":1}],\"entityRanges\":[{\"key\":0,\"offset\":123,\"length\":1},{\"key\":1,\"offset\":125,\"length\":1},{\"key\":2,\"offset\":127,\"length\":1},{\"key\":3,\"offset\":129,\"length\":1}],\"data\":{}},{\"key\":\"b64r0\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":4545,\"guid\":\"41072CA0341F11EE9D4302C0B41BC903\",\"name\":\"MgCl2\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":160,\"name\":\"Applied Biosystems (ThermoFisher Scientific)\",\"link\":\"http://home.appliedbiosystems.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":3782,\"guid\":\"410631C5341F11EE9D4302C0B41BC903\",\"name\":\"20X MES Buffer\",\"mol_weight\":0,\"sku\":\"NP0002\",\"url\":\"https://www.thermofisher.com/order/catalog/product/NP0002\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":95,\"name\":\"Thermo Fisher Scientific\",\"link\":\"https://www.thermofisher.com/us/en/home.html\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":347806,\"guid\":\"424C7BE6341F11EE9D4302C0B41BC903\",\"name\":\"Acetosyringone\",\"mol_weight\":0,\"sku\":\"2478-38-8\",\"url\":\"http://-\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":17,\"name\":\"Merck MilliporeSigma (Sigma-Aldrich)\",\"link\":\"http://sigmaaldrich.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"3\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":6679,\"guid\":\"410A48DB341F11EE9D4302C0B41BC903\",\"name\":\"1g Rifampicin USP Grade\",\"mol_weight\":822.96,\"sku\":\"RC-191\",\"url\":\"https://www.gbiosciences.com/Rifampicin\\r\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":105,\"name\":\"G-Biosciences\",\"link\":\"http://www.gbiosciences.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Refresh bacteria containing the construct of interest from glycerol stock on agar YEP (or any other bacterial media such as LB) medium with an appropriate antibiotic . Incubate at 28°C for two days. If A. tumefaciens GV3101 is used add rifampicin .",
+    "Inoculate 5 mL of liquid YEP medium with appropriate antibiotic in a test tube. Grow at 28°C for 24 hours with shaking at 250-300 rpm. Be sure to grow bacterial strain with p19 as a silencing inhibitor as well!",
+    "Measure the OD 600 using 100 µL of bacterial culture.",
+    "Calculate the culture volume needed for an OD 600 of 0.2 - 0.5 per construct for a 4 mL total volume of Infiltration medium. 4 mL are used for test spot infiltration. The specific OD 600 to use depends on howwell expressed your construct is in N. benth , the general range is 0.1 – 0.5. Use an OD 600 of 0.3 for P19.(I use 0.3 for all constructs and it works well).",
+    "Pipette the appropriate volume of each strain together in 2 mL tubes.",
+    "Centrifuge combined bacteria at 8000× g for 2 min at room temperature. Carefully remove all supernatant.",
+    "Add 200 mM acetosyringone to the Infiltration medium at a 1:1000 ratio. Note: acetosyringone is light-sensitive, keep out of light until ready for use.",
+    "Add 2 mL of infiltration medium with acetosyringone to each pellet, and resuspend. Leave in the dark at room temperature for 1–2 hrs (or even longer but not overnight).",
+    "Infiltrate 4-week-old N. benthamiana (pre-flowering) leaf using 1 mL syringe.",
+    "Grow plants for 2-3 days after infiltration (up to 5 days, depending on expression level of constructs).",
+    "Punch 1 cm leaf discs from leaves and observe under the microscope to visualize the fluorescence."
+  ],
+  "authors": [
+    "Maryam Rahmati Ishka"
+  ],
+  "creator": "Maryam Rahmati Ishka",
+  "published_on": 1721259603,
+  "created_on": 1721234004,
+  "keywords": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": 21983,
+  "title": "Comparative Ct method quantification (2-ΔCt method).",
+  "uri": "comparative-ct-method-quantification-2-ct-method-zp7f5rn",
+  "doi": "dx.doi.org/10.17504/protocols.io.zp7f5rn",
+  "description": "{\"blocks\":[{\"key\":\"11anh\",\"text\":\"For the evaluation of the expression level of each miRNA was used the Ct (threshold cycle) method quantification. The threshold cycle (Ct) is defined as the PCR cycle at which the fluorescent signal of the reporter dye crosses an arbitrarily placed threshold. This method allows to quantify  the absolute expression of each miRNAs in each sample analyzed and then to calculate the different expression of each miRNA in sample versus the controls.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "For each sample is obtained an amplification curve in which the Ct is inversely proportional to the initial sample quantity;",
+    "Normalize the data to an internal control and calculate DCt = (Ct gene of interest - Ct internal control);",
+    "Calculate 2- ΔCt value that is the measure of the microRNA expression level in each sample analyzed.",
+    "Calculate DDCt= [(Ct gene of interest-Ct internal control) sample A] – [(Ct gene of interest-Ct internal control) sample B];",
+    "Calculate 2- ΔΔCt value that is the measure of the microRNA expression in each sample analyzed compared with control sample."
+  ],
+  "authors": [
+    "Barbara Rizzacasa",
+    "Elena Morini",
+    "Ruggiero Mango",
+    "Chiara Vancheri",
+    "Simone Budassi",
+    "Gianluca Massaro",
+    "Sara Maletta",
+    "Massimiliano Macrini",
+    "Silvio D’Annibale",
+    "Francesco Romeo",
+    "Giuseppe Novelli",
+    "Francesca Amati"
+  ],
+  "creator": "Francesca Amati",
+  "published_on": 1557245162,
+  "created_on": 1554208401,
+  "keywords": []
+}

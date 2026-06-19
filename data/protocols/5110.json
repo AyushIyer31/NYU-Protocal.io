@@ -1,0 +1,27 @@
+{
+  "id": 5110,
+  "title": "Complete Yeast Protein Extraction",
+  "uri": "complete-yeast-protein-extraction-g8wbzxe",
+  "doi": "dx.doi.org/10.17504/protocols.io.g8wbzxe",
+  "description": "{\"blocks\":[{\"key\":\"92f2k\",\"text\":\"This protocol is suitable for rapidly generating extracts of fungal cells for gel electrophoresis or western blots. It was optimised for complete extraction of difficult-to-solubilise proteins. This protocol was originally described in von der Haar 2007.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":236,\"length\":17}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"D487ADA19A0B4F1798E6F93283C56F4F\",\"url\":\"http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0001078\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"37pli\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"o5q7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"6oldj\",\"text\":\"The extraction buffer is strongly alkaline. Additional protective equipment (gloves and goggles) should be worn while handling this buffer.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Prepare the basic solutions: Extraction Buffer: 0.1 M NaOH, 0.05 M EDTA, 2% SDS (Note: before use, this buffer is supplemented with 2% 2-mercaptoethanol. With 2-ME the shelf life is several hours, without 2-ME the shelf life of this solution is ~ 1 week). Caution: This buffer is strongly alkaline and additional protective equipment (gloves and goggles) should be worn while preparing and handling it. Neutralisation Buffer: 4 M acetic acid in water. Neat acetic acid is 11 M in concentration. Loading buffer: 0.25 M Tris-HCl pH 6.8, 50% glycerol, 0.05% bromophenolblue.",
+    "Harvest 10 8 yeast cells (about 5 oD 600 units of logarithmically growing yeast) by centrifuging in a microcentrifuge at max speed for 1 minute. Completely remove the supernatant.",
+    "Pre-heat a heating block to 96°C. The extraction works efficiently for most proteins at temperatures of 80°C or above.",
+    "Freshly supplement 1 ml of extraction buffer with 20 μl 2-mercaptoethanol (scale this up for more than 5 extractions). Resuspend the pelleted yeast cells in 200 μl of the supplemented extraction buffer. Incubate the resuspended cells at 96°C fo 10 minutes.",
+    "Add 5 μl of neutralisaton buffer, vortex the cells.",
+    "Add 50 μl of loading buffer, vortex again.",
+    "The extract is now ready to be loaded onto SDS-PAGE gels. Clearing by centrifugation can be done but is not required, and loadig the uncleared (but well resuspended) cell slurry into the pockets of the gel aids extraction."
+  ],
+  "authors": [
+    "Tobias von der Haar"
+  ],
+  "creator": "Tobias von der Haar",
+  "published_on": 1488731034,
+  "created_on": 1487620975,
+  "keywords": []
+}

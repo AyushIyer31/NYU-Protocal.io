@@ -1,0 +1,24 @@
+{
+  "id": 51443,
+  "title": "Mitogenome Assembly with GetOrganelle",
+  "uri": "mitogenome-assembly-with-getorganelle-bwgtpbwn",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l24zq3g1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"2dqul\",\"text\":\"Basic instructions for assembling mitogenomes with the GetOrganelle Program\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "This protocol includes instructions for a conda install of GetOrganelle, which requires that you have Anaconda or Miniconda already installed on your system. Detailed installation information and additional installation options for various systems can be found here: https://github.com/Kinggerm/GetOrganelle and here: https://github.com/Kinggerm/GetOrganelle/wiki https://github.com/Kinggerm/GetOrganelle/wiki Before installation, activate your python environment (example code below for python3 environment): conda activate python3",
+    "Install GetOrganelle with the following code: conda install -c bioconda getorganelle You may need to install updates, be sure to say yes (type y and hit enter) when prompted to update any conda-related programs. Printout of successful installation of GetOrganelle (for reference).",
+    "Next we need to download and initialize the database of your preferred organelle genome type. Options include: embplant_pt, embplant_mt, embplant_nr, fungus_mt, fungus_nr, animal_mt, and/or other_pt For animal mitochondrial genomes, use animal_mt : get_organelle_config.py --add animal_mt If you would like to download and initialize multiple organelle genome types, you can list them after the --add command above, separated by spaces. Printout of successful initialization (for reference). Note that working directories will be different on your system.",
+    "If you have trouble with the above command (connection to GitHub fails) try a few times more, as the problem generally resolves itself. If you&#39;re still having trouble, you can download the repository manually, as in Option 2 available here: https://github.com/Kinggerm/GetOrganelle/wiki/Initialization#default-directory"
+  ],
+  "authors": [
+    "Dakota Betz"
+  ],
+  "creator": "Dakota Betz",
+  "published_on": 1750265386,
+  "created_on": 1625851716,
+  "keywords": []
+}

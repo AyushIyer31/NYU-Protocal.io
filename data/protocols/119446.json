@@ -1,0 +1,24 @@
+{
+  "id": 119446,
+  "title": "Protocol for Gibson Assembly (NEBuilder® HiFi DNA Assembly)",
+  "uri": "protocol-for-gibson-assembly-nebuilder-hifi-dna-as-dyvw7w7e",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ld8m48v5b/v2",
+  "description": "{\"blocks\":[{\"key\":\"errnd\",\"text\":\"Procedure for cloning using Gibson Assembly NEBuilder‱ HiFi DNA Assembly Master Mix\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":53,\"length\":1}],\"entityRanges\":[{\"key\":0,\"offset\":53,\"length\":1}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"D0FCF6EDE10011EFB1D40A58A9FEAC02\",\"name\":\":registered:\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "1. Digest Vector with Restriction Enzymes: 2. Incubate for 03:00:00 at 37 °C . 3. Add 10 µL of 6x loading buffer to reaction 4. Make 1% low melt-agarose gel. a) Mix 1 g of Agar with 100 mL of TAE Buffer. b) Microwave to boil agarose and let cool until you can touch bottle, but gel is not solid. c) Add 1.5 µL of EtBr to agarose and pour into DNA gel mold with 10 well comb. d) Let gel solidify. 5. Load 60 µL of reaction into well of gel 6. Run gel for 00:45:00 at 120V. 7. Visualize band with UV light and cut out section of gel with band and place in 1.5 mL tube. 8. Purify Band from gel with QIAquick Gel Extraction kit (Qiagen, 28704) a) Weigh gel fragment in 1.5 mL tube (this will be volume with 100mg gel = 100uL) b) Add 3 volumes of Buffer QG to 1 volume gel. c) Incubate at 50 °C for 00:10:00 . Vortex every 2-3 min to help break up gel. d) Add 1 gel volume of isopropanol to the sample and mix. e) Place Qiaquick column into collection tube and add sample mixture to column. f) Let incubate for 00:01:00 . g) Centrifuge for 00:01:00 at max speed at Room temperature. Discard Flowthrough. h) Add 750 µL of PE buffer to column. i) Centrifuge for 00:01:00 at max speed at Room temperature. Discard Flowthrough. j) Centrifuge for 00:01:00 at max speed at Room temperature to dry column. k) Place column into new labeled 1.5 mL tube and add 35 µL of NF H 2 0. l) Centrifuge for 00:01:00 at max speed at Room temperature to elute DNA. m) Measure DNA concentration with the Nanodrop. n) Vector Concentration:",
+    "1. Set up PCR Reaction: 2. Run PCR Conditions: a) 95 °C 00:02:00 b) 95 °C 00:00:30 c) 60 °C 00:00:30 d) 72 °C 00:02:00 e) Repeat step 2-4 35 times f) 72 °C 00:10:00 g) 4 °C hold 3. After reaction, take 5 µL of product and add 1 µL of gel loading buffer and run on 1% agarose gel to make sure there is a correct PCR product. 4. Add 5 µL of Cutsmart buffer and 1 µL of DpnI to the reaction and incubate at 37 °C for 00:05:00 . 5. Purify Band from gel with QIAquick Gel Extraction kit (Qiagen, 28704) a) Add 135 µL of Buffer QG to 45 µL PCR reaction. b) Add 45 µL of isopropanol to the sample and mix. c) Place Qiaquick column into collection tube and add sample mixture to column. d) Let incubate for 00:01:00 . e) Centrifuge for 00:01:00 at max speed at Room temperature. Discard Flowthrough. f) Add 750 µL of PE buffer to column. g) Centrifuge for 00:01:00 at max speed at Room temperature. Discard Flowthrough. h) Centrifuge for 00:01:00 at max speed at Room temperature to dry column. i) Place column into new labeled 1.5 mL tube and add 35 µL of NF H 2 0. j) Centrifuge for 00:01:00 at max speed at Room temperature to elute DNA. k) Measure DNA concentration with the Nanodrop. l) PCR Product Concentration:",
+    "1. Calculate the molar ratios of Vector and PCR product used a) https://nebiocalculator.neb.com/#!/ligation b) I usually use 1 vector: 2 PCR ratio 2. Mix A B C D E F G 1 Component Length of DNA (bp) Molar ratio ng of DNA Volume of 50ng/ul solution 2 Vector 3015 1 50 1 ul 3 PCR Fragment 500 2 16.58 0.33 ul 4 H20 8.67 ul 3. Incubate for 01:00:00 at 50 °C . 4. Transform Product into E. coli a) Add 2 µL of product to 50 µL of TOP10 cells. b) Incubate for 00:20:00 on ice. c) Heat shock bacteria in 42 °C waterbath for 00:01:00 . d) Incubate on Ice for 00:03:00 . e) Add 100 µL of SOC media and shake in warm room for 01:00:00 . f) Plate bacteria onto LB-Antibiotic Plate. And incubate overnight in 37 °C warm room.",
+    "Gibson Assembly technology uses homologous recombination to assemble adjacent DNA fragments that share end-terminal homology. The optimal length of the homologous fragment ends region depends on the number and length of the fragments in the assembly reaction."
+  ],
+  "authors": [
+    "Carolina Lopez"
+  ],
+  "creator": "Carolina Lopez",
+  "published_on": 1738457939,
+  "created_on": 1738457817,
+  "keywords": []
+}

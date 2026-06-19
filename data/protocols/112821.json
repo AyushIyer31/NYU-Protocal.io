@@ -1,0 +1,29 @@
+{
+  "id": 112821,
+  "title": "Bulk RNA-seq and data analysis",
+  "uri": "bulk-rna-seq-and-data-analysis-dsev6be6",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewov1d46pvr2/v1",
+  "description": "{\"blocks\":[{\"key\":\"f2gc5\",\"text\":\"Bulk RNA-seq and data analysis\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Isolate total RNA from three biological replicates per sample of iPSC-derived neurons (treated for 24 hours), astrocytes, and microglia (treated for 6 hours) using the RNeasy Mini Kit (Cat. number 74106, QIAGEN, Germany) according to the manufacturer’s instructions.",
+    "Enrich mRNA via poly(A) selection. (Done by GENEWIZ GmbH- Leipzig, Germany)",
+    "Perform sequencing on the Illumina NovaSeq platform (Illumina, CA, USA) to generate 150 bp paired-end reads.(Done by GENEWIZ GmbH- Leipzig, Germany)",
+    "Prepare cDNA libraries using strand-specific RNA-seq with poly(A) selection (Illumina, CA, USA). (Done by GENEWIZ GmbH- Leipzig, Germany)",
+    "Perform differential gene expression analysis with DESeq2 (version 1.44.0, RRID: SCR_015687) to normalize counts and identify differentially expressed genes (DEGs)",
+    "Conduct functional enrichment analysis of DEGs (fold change &gt; 2; Benjamini‒Hochberg FDR &lt; 0.05) using ShinyGO (version 0.80, http://bioinformatics.sdstate.edu/go/ , RRID: SCR_019213).",
+    "Filter data to assess statistical significance (FDR &lt; 0.05).",
+    "Generate Venn diagrams of DEGs shared between iPSC-derived neurons, astrocytes, and microglia using Draw Venn Diagram ( https://bioinformatics.psb.ugent.be/webtools/Venn/ ).",
+    "Data of the study were deposited into GEO under accession number GSE274283."
+  ],
+  "authors": [
+    "Maria Jose Perez J."
+  ],
+  "creator": "Federico Bertoli",
+  "published_on": 1738603434,
+  "created_on": 1732635469,
+  "keywords": []
+}

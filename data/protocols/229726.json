@@ -1,0 +1,36 @@
+{
+  "id": 229726,
+  "title": "Expression, purification, and characterization of VPS13C",
+  "uri": "expression-purification-and-characterization-of-vp-hcj6b2urf",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vz92d4gx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"fwuty\",\"text\":\"VPS13C is a ER-lysosome contact site protein that is thought to transport lipids between the two organellar membranes and important for lysosomal membrane damage repair. We employed structure-function analysis of purified VPS13C and uncovered novel regulatory mechanisms. This protocol details the method for expressing and purifying the human full-length VPS13C from Expi293F cells as well as structural characterization by negative-stain electron microscopy (EM). Procedures were similarly applied to the expression, purification, and in vitro characterization of other VPS13C mutants.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":537,\"length\":8}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"amogf\",\"text\":\"As the protein yield is low, handle procedures with care.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"6g2ce\",\"text\":\"Uranyl acetate solution is radioactive and requests special handling on a bench specifically for radioactive materials.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"dqsyf\",\"text\":\"Expi293F cells (RRID:CVCL_D615) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"350j4\",\"text\":\"Expifectamine (Cat. #A14525, Gibco)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"97ge4\",\"text\":\"anti-FLAG M2 resin (Cat. #A2220, Millipore-Sigma)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b3je2\",\"text\":\"FLAG peptide (Cat. #A6002, Apex Bio)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Transfect 200 mL Expi293F cells at 2.4–2.8 × 10^6 cells/mL with 200 μg plasmid encoding full-length VPS13C or mutant constructs using Expifectamine. Add the manufacturer-supplied enhancers 18 h after transfection.",
+    "Harvest cells 48 h after transfection, flash-freeze in liquid nitrogen, and store at −80°C.",
+    "Thaw cells at room temperature and resuspend in 20 mL buffer A (500 mM NaCl, 50 mM HEPES pH 7.8, 10% glycerol, 1 mM TCEP) supplemented with 1× protease inhibitor cocktail.",
+    "Lyse cells by three freeze–thaw cycles between liquid nitrogen and a room-temperature water bath, then homogenize with a Dounce homogenizer.",
+    "Clarify the lysate by centrifugation at 27,143 × g for 30 min in a JA-20 rotor.",
+    "Incubate the supernatant with 100 μL anti-FLAG M2 resin for 2 h at 4°C.",
+    "Wash the resin twice with 15 mL buffer A, then incubate the resin overnight in buffer A supplemented with 1 mM freshly made ATP and 2 mM MgCl 2 to remove chaperones. 4 °C Overnight",
+    "Wash the resin twice more with buffer A and elute bound protein with buffer A containing 0.25 mg/mL FLAG peptide in five sequential 100 μL incubations of 20–30 min each. Pool the eluates. Purified VPS13C-3xFLAG",
+    "Load the pooled eluates onto a Superose 6 10/300 column pre-equilibrated with buffer B (200 mM NaCl, 50 mM HEPES pH 7.2, 6% glycerol, 1 mM TCEP). For structural analysis of full-length VPS13C, perform size-exclusion chromatography in buffer C (200 mM NaCl, 50 mM HEPES pH 7.2, 1 mM TCEP), then collect and concentrate peak fractions.",
+    "Perform particle picking and 2D classification in CryoSPARC.",
+    "Acquire images on an FEI Tecnai T12 transmission electron microscope at 120 kV and 52,000× nominal magnification, corresponding to 2.14 Å/pixel at the specimen level. Representative negative stain EM image",
+    "Blot the sample and stain with three to five sequential 5 μL drops of 2% uranyl acetate, allowing the final drop to incubate for 30 s before blotting to dryness.",
+    "Apply 5–7 μL protein sample diluted to 50-100 nanomolar (nM) to the grid and incubate for 30 s.",
+    "Glow-discharge 400-mesh carbon-coated copper grids for 35 s at 25 mA.",
+    "Culture Expi293F cells in 8% CO 2 with orbital shaking at 125 rpm, following the manufacturer’s instructions (Thermo Scientific, MAN0007814)."
+  ],
+  "authors": [
+    "Dazhi Li",
+    "Karin Reinisch"
+  ],
+  "creator": "Dazhi Li",
+  "published_on": 1780434160,
+  "created_on": 1760404811,
+  "keywords": []
+}

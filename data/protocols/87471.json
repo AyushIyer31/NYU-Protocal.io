@@ -1,0 +1,32 @@
+{
+  "id": 87471,
+  "title": "Gibson Assembly Cloning ",
+  "uri": "gibson-assembly-cloning-cznpx5dn",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2lyjwyqlx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"92db\",\"text\":\"Gibson assembly requires a vector backbone and one or more inserts that have been PCR amplified. The inserts should have 15-20 base pairs of overlap at ligation sites, so primers used to amplify the inserts should contain a tail overhang with this homology. The vector backbone should be linear.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"13n4u\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"csnc1\",\"text\":\"A Gibson reaction uses a master mix that can be homemade or commercially purchased. Add the appropriate amount of master mix, then your vector and insert at 2-3 fold molar excess for a 20 µl reaction. Exact ratios will need to be optimized based on the size of your vector and inserts and how many inserts you have. Incubate this reaction at 50°C for 60 minutes. Then transform this reaction into DH5 alpha (or competent cell of choice) and plate on LB agar with appropriate antibiotic.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1i487\",\"text\":\"\\n\\n\\n\\n\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"4v51g\",\"text\":\"PEG-8000                             \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"enpfm\",\"text\":\"Tris-HCl pH 7.5            \\nMgCl2                                \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":32,\"length\":33}],\"entityRanges\":[],\"data\":{}},{\"key\":\"cekmo\",\"text\":\"DTT                                   \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6j1pn\",\"text\":\"dNTPs [NEB, N0447S]       \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ahg88\",\"text\":\"NAD                                     \\n10U/µl T5 exonuclease [NEB, M0663S]\\n2U/µl Phusion polymerase [Thermo, F530S]\\n40U/µl Taq Ligase [NEB, M0208S]\\nSterile water\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":116,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"a9qkj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2i7qv\",\"text\":\"Competent cells (DH5α) [Thermo, 18258012]\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"17knl\",\"text\":\"PCR machine\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6jjcj\",\"text\":\"LB, LB agar\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4qgsn\",\"text\":\"antibiotic of choice\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Make 5 ml of 5x reaction buffer",
+    "Prepare master mix",
+    "25% PEG-8000 1.25 g 500 mM Tris-HCl pH 7.52.5 ml 50 mM MgCl 2 0.25 ml of 1M 50 mM DTT 0.25 ml of 1M 1 mM each dNTPs 0.05 ml each of 100mM 5 mM NAD 0.5 ml of 50 mM",
+    "Use master mix as 1.5x. Snapfreeze in 15 µL aliquots and store at -80 °C .",
+    "Master Mix 320 µl 5X Reaction Buffer (above) 0.64 µl 10U/µl T5 exonuclease 20 µl2U/µl Phusion 160 µl40U/µl Taq Ligase 700 µlWater",
+    "Prepare linearized vector backbone by restriction enzyme digestion or PCR amplification.",
+    "Prepare inserts by PCR amplification. Ensure that each insert has 15-20 base pairs of overlap with other inserts/vector at ligation sites, added by primer design.",
+    "Take a 15 ul aliquot of 1.5x Gibson master mix on ice. Add 50-100 ng of vector with 2-3 fold molar excess of PCR inserts, and sterile water if necessary, to make total reaction volume up to 20 µL l.",
+    "Mix well and let incubate in PCR machine for 01:00:00 at 50 °C",
+    "After incubation is complete, transform into competent cells (DH5α) and plate onto LB agar with appropriate antibiotic. Let this grow at 37 °C Overnight .",
+    "Pick a single colony to grow in 5 ml LB culture at 37 °C Overnight and purify plasmid to check sequencing."
+  ],
+  "authors": [
+    "Claire Chiang",
+    "Suzanne R Pfeffer"
+  ],
+  "creator": "Suzanne R Pfeffer",
+  "published_on": 1694110678,
+  "created_on": 1694045308,
+  "keywords": []
+}

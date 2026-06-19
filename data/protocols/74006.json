@@ -1,0 +1,35 @@
+{
+  "id": 74006,
+  "title": "Determining biofilm growth amount (absorbance) ",
+  "uri": "determining-biofilm-growth-amount-absorbance-ckhwut7e",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj8x95gk5/v2",
+  "description": "{\"blocks\":[{\"key\":\"a1md4\",\"text\":\"This protocol describes a method to determine the growth amount of biofilm at the early stage of biofilm formation by measuring absorbance. Here we use our own engineered bacteria, and it requires induction of IPTG and cultured with silver ion. You may use a different kind of bacteria and different culturing medium.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"ef9vv\",\"text\":\"(Optional) IPTG, silver nitrate, Escherichia coli, LB broth medium.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":33,\"length\":16}],\"entityRanges\":[],\"data\":[]},{\"key\":\"a993v\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7mt8o\",\"text\":\"Droppers, forceps, flasks with caps, 50 mL centrifuge tubes, MBBR carrier K1, oven, 1X phosphate-buffered saline (PBS), centrifuge, spectrometer.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Escherichia coli grown overnight was diluted by LB to OD600=0.4-0.6.",
+    "IPTG was added to cell culture to 1mM IPTG finally, and incubated 3h at 171 rpm, 37℃ in orbital shaking incubator.",
+    "Preparing several 100mL flasks by filling the flasks with MBBR carrier K1. Autoclave all the flasks and dry them in an oven at 60s℃. Prepare 3 flasks for each day and each sample (to minimize accidental error), so you may have, for example, 3 flasks for experiment and you want to test for 5 counts. This will eventually cost you 15 flasks in total. The number of carriers that put into the 100mL flask should be at least 30. Prepare more in case of inadequacy when measuring.",
+    "Cells cultures and silver nitrate (to 6μM) solution were mixed in advance. Add the mixture into each bottle. Conduct this step in a biological safety cabinet in case the culture is polluted.",
+    "Incubate all bottles in a biochemical incubator at 37 °C .",
+    "At the day of measuring the absorbance, take the flasks to be tested out from incubator.",
+    "Using a pair of forceps, carefully pick out the carriers that has not been submerged into the culture and discard. These carriers should be discarded into a vessel with cap for the convenience of autoclaving.",
+    "Randomly pick five carriers out from culturing flask and put into a 50 mL centrifuge tube. Label this tube as &#34;Washing tube&#34;. Try to get rid of the culture inside the holes of carriers by drying them out with paper tissues as they will interrupt the absorbance in the following steps.",
+    "Wash these five carriers using 1X phosphate-buffered saline (PBS) for three times. Collect all eluents. The following description is a step-by-step introduction of washing procedure: Add 15 mL 1X PBS into the 50 mL centrifuge tube with carriers. Cap the tube and shake it vigorously. Carefully pour the eluents out into a new 50 mL centrifuge tube. Label this tube as &#34;Eluent&#34; Repeat these steps for three steps.",
+    "Use a dropper, add 2-3 mL 1X PBS into the Washing tube. Cap the tube and rinse every corner of the inside wall of tube using the PBS added by rotating the tube. Collecting the eluents by pouring these PBS into Eluent tube. Repeat these steps for three to five times. This step will collect almost all remained bacteria inside the Washing tube.",
+    "Centrifuge the Eluent tube at 10000 rpm, Room temperature, 10 minutes .",
+    "Discard all supernatants. You may use a pipette to collect the last few supernatants left at the bottom of the tube.",
+    "Add 3 µL 1X PBS into Eluent tube. Resuspend the pellet.",
+    "Measure the absorbance of the liquid go to step #13 at OD600. Record the absorbance.",
+    "Repeat steps from Step 7 to Step 14 for three times. Calculate the mean value for the three measurements. A growing curve of biofilm can be generated from the data collected."
+  ],
+  "authors": [
+    "An.Huang"
+  ],
+  "creator": "An.Huang",
+  "published_on": 1671090006,
+  "created_on": 1671080769,
+  "keywords": []
+}

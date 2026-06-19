@@ -1,0 +1,39 @@
+{
+  "id": 233198,
+  "title": "Single-Cell Scanning Electron Microscopy (SEM)",
+  "uri": "single-cell-scanning-electron-microscopy-sem-hfynb3pvf",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vz9pp2gx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"f493e\",\"text\":\"We present an approach for preparation of single cells for scanning electron microscopy to study uncultivated microbial eukaryotes. Our approach for single-cell scanning electron microscopy preparation involves building a small container, referred to as the “SEM baskets”, designed to house single cells during the fixation, dehydration, and critical point drying, while minimizing cell resuspension and loss during liquid exchanges. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"bq4fn\",\"text\":\"The exact concentrations of reagents and length of time for each of the following steps can be adjusted as needed for the organisms of interest. Larger organisms and those with a cell wall or pellicle may require longer incubation periods.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"7q2dr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"309r6\",\"text\":\"1000 µL pipette tips\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ch7uh\",\"text\":\"Dissecting forceps\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3258t\",\"text\":\"Silicone sealant \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2ohdl\",\"text\":\"Isopore membrane filters\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"69djs\",\"text\":\"Glutaraldehyde\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ecsrj\",\"text\":\"PIPES\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6hg2p\",\"text\":\"HEPES\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"acqt\",\"text\":\"MgCl2\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":4,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"2991g\",\"text\":\"Osmium tetroxide\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5cpgo\",\"text\":\"Sucrose\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c7fhn\",\"text\":\"Single-edged razor \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9obrb\",\"text\":\"24-well-platee\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare baskets to contain cells by removing the tapered ends of 1,000 μL pipette tips, leaving 1.5 cm at the blunt end of each pipette tip.",
+    "Coat the edge of the pipette tip end in waterproof silicone sealant and attach it to an Isopore membrane filter (Millipore Sigma) with an appropriate pore size for the organism of interest.",
+    "Allow the baskets to sit exposed to air for 12-24 hrs (or however long specified by the manufacturer) to allow the silicone sealant to cure.",
+    "We recommend using membranes with a pore size of &gt;2 μm to ensure proper liquid exchange occurs during washing steps. Use a minimal amount of silicone so that only the edges of the basket contain silicone while ensuring that the silicone evenly coats the basket edge, creating a seal between the basket and the membrane.",
+    "Place SEM baskets inside a 24-well plate. Process only 4-6 SEM baskets at a time to leave the majority of the wells in the plate available for the washing steps.",
+    "Fill each basket approximately halfway with the fixative solution (typically a buffer like PHEM containing 2.5% glutaraldehyde; Montanaro et al., 2016). Add the fixative solution to the well outside of the basket until it is about halfway up the side of the basket to prevent the liquid level from dropping inside of the basket. Place individual cells for SEM directly inside of the baskets.",
+    "This step must be performed inside of a fume hood. Fill the baskets (and the well containing each basket) approximately halfway with 1% osmium tetroxide for post-fixation. Allow cells to fix for ~10-20 min at room temperature",
+    "Allow fixation to occur for 20-90 min at the temperature of the environment from which the cells were isolated.",
+    "Following fixation, wash cells contained within baskets three times using a wash solution (e.g., distilled water, filtered seawater or a buffer).",
+    "Washes are performed by removing the basket from the well and placing it on a clean paper towel. The paper towel will draw liquid through the membrane, reducing the fluid level inside the basket. As liquid drains out of the basket, use a transfer pipette to add the new liquid/solution to the basket until a full exchange occurs. Then place the basket into a new well containing the next solution (e.g., wash solution, distilled water, or ethanol) and incubate for 5 min for every wash to ensure adequate liquid exchange.",
+    "Wash the cells within baskets three times in a wash solution (e.g., distilled water, filtered seawater or a buffer.",
+    "Wash cells three times in distilled water.",
+    "Dehydrate cells using a graded ethanol series (30%, 50%, 70%, 85%, 90%, 95%) using the same technique that was used to wash the cells following fixation.",
+    "Optional stopping point: Fixed cells can be stored long term in 70% ethanol if required.",
+    "Wash cells in 100% ethanol three times prior to critical point drying to ensure adequate dehydration of samples. Baskets can be placed directly into a critical point dryer. Dried membranes can then be mounted on aluminum stubs using adhesive tabs, and the pipette tip part of the baskets can be removed before sputter coating"
+  ],
+  "authors": [
+    "Maia Palka",
+    "Kevin Wakeman",
+    "Eunji Park",
+    "Gordon Lax",
+    "Brian Leander"
+  ],
+  "creator": "Maia Palka",
+  "published_on": 1764219731,
+  "created_on": 1763758497,
+  "keywords": []
+}

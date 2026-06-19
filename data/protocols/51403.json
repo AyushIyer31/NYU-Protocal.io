@@ -1,0 +1,39 @@
+{
+  "id": 51403,
+  "title": "Relative quantification of mRNA transcript levels by qPCR",
+  "uri": "relative-quantification-of-mrna-transcript-levels-bwfjpbkn",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egnz12qg5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"dq0vb\",\"text\":\"This method describes isolation of RNA from cultured cells, generation of cDNA, and relative quantification of transcript levels by qPCR.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"8j3o0\",\"text\":\"Solutions to prepare:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":21}],\"entityRanges\":[],\"data\":{}},{\"key\":\"aqgjd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"73kkl\",\"text\":\"DMEM solution: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":14}],\"entityRanges\":[],\"data\":{}},{\"key\":\"9s42g\",\"text\":\"        FBS  10%    Penicillin  100 U/ml    Streptomycin  100 mg/ml    L-glutamine  2 mM  \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":90}],\"data\":{}},{\"key\":\"ek6qd\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"1_0\":\"\",\"1_1\":\"\",\"2_0\":\"\",\"2_1\":\"\",\"3_0\":\"\",\"3_1\":\"\"},\"colTitles\":[],\"colWidths\":[200,194],\"data\":[[\"FBS\",\"10%\"],[\"Penicillin\",\"100 U/ml\"],[\"Streptomycin\",\"100 mg/ml\"],[\"L-glutamine\",\"2 mM\"]],\"guid\":\"617A7008E00811EBA3380A58A9FEAC02\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":[],\"printData\":[[\"FBS\",\"10%\"],[\"Penicillin\",\"100 U/ml\"],[\"Streptomycin\",\"100 mg/ml\"],[\"L-glutamine\",\"2 mM\"]],\"rowHeights\":[]}}}}",
+  "steps": [
+    "Culture the HeLa-M cells at 37 °C in 5% CO 2 and DMEM containing 10% FBS, 100 U/ml penicillin, 100 mg/mL streptomycin, and 2 millimolar (mM) L-glutamine (all from Gibco).",
+    "For any given experiment, plate the cells at such density so as to be approximately 90% confluent at the time of lysis.",
+    "For experiments using siRNA, transfect 60 pmols of the indicated siRNA using 6 µL Lipofectamine RNAiMax (ThermoFisher) in Opti-MEM (Gibco) per well according to manufacturer protocol. Lyse the cells 72:00:00 after siRNA transfection.",
+    "Aspirate media from cells and rinse cells with PBS On ice .",
+    "Isolate RNA using RNeasy Micro Plus kit (Qiagen) according to manufacturer’s protocol.",
+    "Generate cDNA from 1 µg purified RNA using iScript cDNA synthesis Kit (Bio-Rad) according to manufacturer’s protocol.",
+    "Dilute the iScript reaction to a total of 400 µL Sterile Water (American Bio).",
+    "Combine 10 µL SYBR Green Master Mix (BioRad) with 6.78 µL Sterile Water (American Bio) per sample.",
+    "Combine 16.78 µL diluted SYBR Green Master Mix with 0.61 µL each of 10 micromolar (µM) forward and reverse primers per sample. Pipette this mixture into wells of 96-well qPCR plate. Perform at least two technical replicates for each sample.",
+    "Pipette 2 µL of diluted RNA from step 7 in well with SYBR Green Master Mix.",
+    "Cover plate with Optical Adhesive Covers (Applied Biosystems).",
+    "Spin down plate in table top centrifuge.",
+    "Run qPCR in CFX96 Real-Time System (BioRad) using the following protocol: %s %s 95 ˚C 3 min 95 ˚C 10 sec Repeat 39x 55 ˚C 10 sec 72˚C 30 sec 95 ˚C 10 sec 65 ˚C 5 sec 95 ˚C 5 sec",
+    "Subtract the housekeeping gene (b-actin) mean threshhold cycle (Ct) values from transcript of interest mean Ct values to calculate ΔCt.",
+    "Subtract the ΔCt of the control sample from each sample ΔCt to calculate the ΔΔCt value.",
+    "Calculate relative expression using the 2 −ΔΔCt method."
+  ],
+  "authors": [
+    "Will Hancock-Cerutti",
+    "Zheng Wu",
+    "Gerald S. Shadel",
+    "Pietro De Camilli"
+  ],
+  "creator": "William Hancock-Cerutti",
+  "published_on": 1650258630,
+  "created_on": 1625760894,
+  "keywords": []
+}

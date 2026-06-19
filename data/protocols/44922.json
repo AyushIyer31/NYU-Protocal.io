@@ -1,0 +1,34 @@
+{
+  "id": 44922,
+  "title": "qPercerus",
+  "uri": "qpercerus-bp42mqye",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp42mqye",
+  "description": "{\"blocks\":[{\"key\":\"30n30\",\"text\":\"Protocol for qPercerus SARS-CoV-2 Test (attached document is giving more details). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8o62s\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8rmu3\",\"text\":\"Final product will be a commercial kit that is consisting of four components (lysis buffer, primer/probe mix identification, primer/probe mix confirmation, qPCR master mix). The initial test for SARS-CoV-2 is the identification assay (FAM assay for S gene with HEX assay as internal control) for patient screening. The confirmation assay (FAM assay for Orf3a with HEX assay as internal control) is used to re-evaluate the results.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"baad7\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"aigtm\",\"text\":\"     qPercerus Lysis/Extraction Buffer        qPercerus Primer-Probes   Identification Assay        qPercerus Primer-Probes   Confirmation Assay        qPercerus qPCR Mastermix   \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":179}],\"data\":[]},{\"key\":\"14v9d\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"1_0\":\"\",\"2_0\":\"\",\"3_0\":\"\"},\"colWidths\":[200],\"data\":[[\"  qPercerus Lysis/Extraction Buffer  \"],[\"  qPercerus Primer-Probes\\n  Identification Assay  \"],[\"  qPercerus Primer-Probes\\n  Confirmation Assay  \"],[\"qPercerus qPCR Mastermix\"]],\"guid\":\"21371C83F20B11EA92F30A58A9FEAC2A\",\"legend\":\"\",\"mergeCells\":[],\"rowHeights\":[23,23,23,23],\"show_headers\":true}}}}",
+  "steps": [
+    "Add 200 µL, Lysis Buffer to reaction tube",
+    "Add Nasopharyngeal or Throat Swab to Lysis Buffer and swivel for 00:00:10 to lysate and inactivate virus. Remove and discard the Swab afterwards. If Nasopharyngeal and Throat Swab are available from the same patient, the sensitivity can be increased by using both in one qPercerus reaction.",
+    "Briefly vortex and incubate at Room temperature for 00:10:00 Sample is stable in Lysis Buffer for up to 48:00:00 at Room temperature allowing for storage and transport.",
+    "Mix RT-qPCR Master Mix for first Identification Assay with 10% surplus and distribute on suitable qPCR microtiter plate: 10 µL, ID Primer/Probe Mix per reaction 5 µL, Master Mix per reaction",
+    "Add virus lysate to each well on qPCR microtiter plate: 10 µL, Virus Lysate",
+    "Briefly spin down qPCR microtiter plate 1000 x g, Room temperature, 30 seconds",
+    "Run One-Step RT-qPCR with the following temperature protocol: 50 °C 00:10:00, reverse transcription 95 °C 00:03:00, RT Inactivation/ Polymerase activation For 45 cycles : 95 °C 00:00:10 60 °C 00:00:30, aquiring on FAM and HEX FAM channel detects SARS-CoV-2 related fluorescence HEX channel detects human Internal Control related fluorescence",
+    "Evaluate Cqs of HEX channel for swab validity: Cq of HEX &lt;30 sample valid for analysis Cq of HEX &gt;30 inconclusive -&gt; perform Confirmation Assay for validation Evaluate Cqs of FAM channel for SARS-CoV-2 presence: Cq of FAM &lt;35 positive for SARS-CoV-2 40 &gt; Cq of FAM &gt;35 inconclusive -&gt; perform Confirmation Assay for validation Cq of FAM &gt;40 or NA negative for SARS-CoV-2 If national testing regulations demand validation of positive SARS-CoV-2 presence on an independent target sequence, perform Confirmation Assay for Cq of FAM &lt;35 .",
+    "Mix RT-qPCR Master Mix for first Confirmation Assay with 10% surplus and distribute on suitable qPCR microtiter plate: 10 µL, CONF Primer/Probe Mix per reaction 5 µL, Master Mix per reaction",
+    "Add virus lysate to each well on qPCR microtiter plate: 10 µL, Virus Lysate",
+    "Briefly spin down qPCR microtiter plate 1000 x g, Room temperature, 30 seconds",
+    "Run One-Step RT-qPCR with the following temperature protocol: 50 °C 00:10:00, reverse transcription 95 °C 00:03:00, RT Inactivation/ Polymerase activation For 45 cycles : 95 °C 00:00:10 60 °C 00:00:30, aquiring on FAM and HEX FAM channel detects SARS-CoV-2 related fluorescence Cy5 channel detects human Internal Control related fluorescence",
+    "Evaluate Cqs of HEX channel for swab validity: Cq of HEX &lt;30 sample valid for analysis Cq of HEX &gt;30 sample invalid, repeat sampling of Evaluate Cqs of HEX channel for SARS-CoV-2 presence: Cq of FAM &lt;40 positive for SARS-CoV-2 Cq of FAM &gt;40 or NA negative for SARS-CoV-2"
+  ],
+  "authors": [
+    "Robert P Loewe",
+    "Benedikt Kirchner"
+  ],
+  "creator": "Benedikt Kirchner",
+  "published_on": 1607019490,
+  "created_on": 1606395542,
+  "keywords": []
+}

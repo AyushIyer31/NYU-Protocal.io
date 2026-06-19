@@ -1,0 +1,25 @@
+{
+  "id": 98428,
+  "title": "Parse Evercode WT v2 -- University of Minnesota TMCs",
+  "uri": "parse-evercode-wt-v2-university-of-minnesota-tmcs-dcc42syw",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gpz8rplzp/v2",
+  "description": "{\"blocks\":[{\"key\":\"8fsfo\",\"text\":\"Combinatorial barcoding is an instrument-free method used to generate single-cell and single-nucleus RNA-sequencing libraries. Outlined here are the methods used to isolate single-nuclei from frozen tissue; to fix nuclei following isolation; to ligate nuclei-specific barcodes to transcript cDNA by iteratively splitting and pooling nuclei suspensions between multiple 96-well plates via the Evercode WT system; and to prepare barcoded cDNA for sequencing by synthesis (SBS). The following protocol has been adapted from protocols developed by 10x Genomics, Parse Biosciences, and Illumina to be used at the University of Minnesota TMCs in collaboration with the University of Minnesota Genomics Center. These protocols are owned by their respective companies and are subject to periodic revision.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dugb6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "CG000505_Rev-A.pdf",
+    "Evercode_Fixation_v2.1.1.pdf",
+    "Evercode_WT_Mini_v2.2.1.pdf Sequence with the read format 66,8,8,86 Sequencers used at UMN Genomics Center: Illumina NextSeq 2000 Illumina NovaSeq 6000 Illumina NovaSeq X Plus",
+    "BCL data from Illumina sequencer is demultiplexed and converted into FASTQ format using bcl2fastq version 2.20.0. Multiplexed FASTQ files were split by sample using a script provided by Parse Biosciences (parse_fastq_sep_groups.py, v0.4)."
+  ],
+  "authors": [
+    "Laura J Niedernhofer",
+    "David A Bernlohr"
+  ],
+  "creator": "Allie Abdellatif",
+  "published_on": 1713463864,
+  "created_on": 1713463568,
+  "keywords": []
+}

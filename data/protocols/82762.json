@@ -1,0 +1,34 @@
+{
+  "id": 82762,
+  "title": "Blood Sample collection and PBMC isolation JAGUAR.v4",
+  "uri": "blood-sample-collection-and-pbmc-isolation-jaguar-cu3iwyke",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvwjx4zlmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"esiaq\",\"text\":\"AIM: This protocol aims to isolate and cryopreserve PBMC from healthy donors from JAGUAR sites for multimodal single cell analysis and blood for DNA extraction for genotyping.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"8taqg\",\"text\":\"coolcell must be at room temperature\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"eajai\",\"text\":\"Reagents:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4burm\",\"text\":\"RPMI 1640 (Gibco, cat#22400-089)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8067r\",\"text\":\"Washing media (RPMI 1% serum, 1% Lglu Lonza, Cat. #BE17-605E/U1, 1%Pen/Strep ThermoFisher, Cat. #15140122)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2e8qj\",\"text\":\"Isopropanol (if using Mr.Frosty, Sigma-Aldrich, cat nº C1562-1EA) or Coolcell\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2feh1\",\"text\":\"Serum (FBS) Sigma, Cat#F7524-500ml\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3drng\",\"text\":\"2X Freezer media (each 1mL contains 800 μL RPMI and 200 μL DMSO (20%))\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d3bld\",\"text\":\"Cryovial (V7634)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ou8j\",\"text\":\"BD Vacutainer CPT (CPT tube) Cat# 362753\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"51taj\",\"text\":\"DMSO (Sigma)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e610t\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ep8d\",\"text\":\"Equipment:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1vid7\",\"text\":\"Mr. Frosty or CoolCell (CLS432001-1EA)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ec7u\",\"text\":\"Centrifuge (refrigerated swinging bucket centrifuge, e.g. Beckman Coulter Allegra X-12R)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"201jq\",\"text\":\"Ultra freezer (-80 oC freezer)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4av0o\",\"text\":\"Liquid Nitrogen tank (LN2)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ehg3l\",\"text\":\"Sterile Pasteur pipette (E1414-0310)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":25,\"length\":10}],\"data\":{}},{\"key\":\"5bjqh\",\"text\":\"15 mL Falcon tube (CLS430052)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"emkat\",\"text\":\"2D barcode labels (Ziath)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"6B316B63119A11EEACBF0A58A9FEAC02\",\"url\":\"https://www.starlabgroup.com/GB-en/product/3-0-ml-graduated-pasteur-pipette-sterile-e1414-0310.html\"}}}}",
+  "steps": [
+    "Collect blood (21g needle) into the tube using the standard technique for CPT tube (3 tubes per donor). After collection, store tubes upright at room temperature (RT, 18-25oC) for up to 2hr (if longer times are required keep tubes on ice until processing). Work with human samples carries a risk of contamination. Needles and other sharps may expose workers to bloodborne pathogens. Consult healthy and safety personnel before using this protocol.",
+    "Centrifuge for 5 min at 300 RCF. Aspirate as much supernatant as possible without disturbing the cell pellet. Resuspend pellets in 500 μl of 100% FCS and transfer all to a cryovial.",
+    "Collect an extra 1-2mL of blood in an EDTA blood collection tube and transfer blood to a cryotube labeled with a 2D barcode for DNA extraction (whole genome sequencing) and store at -80 until processing",
+    "Centrifuge CPT tubes at 1500g RT for 30 minutes (break and acceleration at 5)",
+    "Add 2mL washing media to the CPT tube to wash remaining cells and transfer to the same tube above, bring volume to 10 mL. Cap tube. Mix cells by inverting the tube slowly 5 times.",
+    "Centrifuge for 5 min at 300 RCF. Tip off supernatant without disturbing the cell pellet.",
+    "Add washing media to bring volume to 10 mL. Cap tube. Resuspend cells gently with a pipette",
+    "Count cell numbers and viability using Trypan Blue (dilution 1:2) in a Neubauer chamber CRITICAL: add 2D barcode stickers to the cryotubes while tube are at room temperature.",
+    "Combine 500 μl 2X Freezer media (dropwise) with the cells in cryovial and gently pipette to mix. Place the cryovial into the Mr. Frosty (or CoolCell) and transfer to -80 oC as soon as possible.",
+    "CRITICAL: cell viability will be directly correlated to the time cells spend in the presence of DMSO - the quicker the better",
+    "After 24 hrs, move cryovials into liquid Nitrogen tanks until shipping, record date of liquid nitrogen transfer",
+    "After centrifugation, pipette to remove approximately half of the plasma (stored in a new tube at -80C) without disturbing the cell layer. Collect the cell layer with a Pasteur Pipette and transfer it to a 15 mL Falcon tube with a cap. *Collection of cells immediately following centrifugation will yield the best results."
+  ],
+  "authors": [
+    "Carla Jones",
+    "Gosia Trynka",
+    "Pablo Romagnoli"
+  ],
+  "creator": "Carla Jones",
+  "published_on": 1687782615,
+  "created_on": 1685651529,
+  "keywords": []
+}

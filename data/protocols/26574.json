@@ -1,0 +1,33 @@
+{
+  "id": 26574,
+  "title": "RNA isolation from suspended animal cells, cDNA library construction, and RNA-Seq for gene expression analysis",
+  "uri": "rna-isolation-from-suspended-animal-cells-cdna-lib-57ng9me",
+  "doi": "dx.doi.org/10.17504/protocols.io.57ng9me",
+  "description": "{\"blocks\":[{\"key\":\"b3enk\",\"text\":\"This protocol is for RNA Isolation from suspended Chinese hamster ovary (CHO) cells. Wash cells once in 1× PBS and isolate RNA using Qiashredder columns and the RNeasy mini kit. In the case of RNA-Seq, which reveals the presence and quantity of RNA in a biological sample at any moment, it is necessary to consider that gene expression responds over a short time interval (several seconds to a few minutes) in many organisms. Therefore, to isolate RNA that accurately reflects the transcriptome at the point of harvest, raw biological samples should be processed by lysing and homogenizing in RNA lysis buffer containing guanidine thiocyanate (buffer RLT, RNA lysis buffer, QIAGEN) as soon as possible (within 15 minutes, if possible).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Cells Maintenance",
+    "CHO-S cells were grown in 20 ml of Gibco CD-CHO medium (Thermo Fisher Scientific, Waltham, MA, USA) containing 400 µL of 200 mM L-Alanyl-L-glutamine (final concentration: 4 mM; Sigma-Aldrich, St. Louis, MI, USA) and 40 µL of Gibco Anti-Clumping Agent (final concentration, 0.2% (v/v); Thermo Fisher Scientific) in a 125 mL flask. The flask was shaken (120 rpm) at 37 °C in a humidified 5% CO 2 atmosphere.",
+    "Determination of total and viable cell numbers was performed with Vi-Cell XR Cell Viability Analyzer (Beckman Coulter, Fullerton, CA, USA) and CellProfiler software. The images obtained from Vi-Cell XR were analyzed and total and viable cell numbers were counted using the CellProfiler pipeline.",
+    "Harvesting samples To isolate RNA that accurately reflects the transcriptome at the point of harvest, cells should be processed by lysing and homogenizing in RNA lysis buffer containing guanidine thiocyanate (buffer RLT, RNA lysis buffer, QIAGEN) as soon as possible (within 15 minutes, if possible).",
+    "The medium containing the suspended CHO cells (400,000 cells) was transferred from the cell culture flask to 1.5 mL centrifuge tubes.",
+    "Each centrifuge tube was centrifuged for 5 min at 300 × g and all supernatant was removed.",
+    "An aliquot of 200 µL of Gibco PBS (1×, calcium and magnesium-free, pH 7.2; Thermo Fisher Scientific) was added to the cell pellet and pipetted up and down five times to resuspend thoroughly.",
+    "The centrifuge tube was centrifuged for 5 min at 300 × g and all supernatant was removed. The centrifuge tube was flicked to loosen the cell pellet from the bottom.",
+    "An aliquot of 350 µL of the buffer RLT (RNA lysis buffer; QIAGEN), which contains containing guanidine thiocyanate, was added to the pellet and pipetted up and down five times to mix thoroughly.",
+    "The entire cell suspension was immediately loaded onto a QIAshredder spin column (QIAGEN) and homogenized by centrifugation for 2 min in a microcentrifuge at maximum speed. The resultant homogenized lysate was kept at −80 °C until RNA extraction.",
+    "RNA isolation, cDNA library construction, and RNA-Seq",
+    "Total RNA isolation was performed using an RNeasy mini kit (QIAGEN) according to the manufacturer&#39;s protocol.",
+    "The quality of total RNA was assessed by RIN values using the Agilent 2200 TapeStation (Agilent Technologies, Santa Clara, CA, USA) and sequenced on an Illumina NextSeq 500 platform with 75-bp single-end reads according to the manufacturer&#39;s protocol."
+  ],
+  "authors": [
+    "Tomoko Matsuda"
+  ],
+  "creator": "Tomoko Matsuda",
+  "published_on": 1617439059,
+  "created_on": 1565055582,
+  "keywords": []
+}

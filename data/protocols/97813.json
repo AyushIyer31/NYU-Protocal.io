@@ -1,0 +1,27 @@
+{
+  "id": 97813,
+  "title": "STEPanizer calibration",
+  "uri": "stepanizer-calibration-dbrv2m66",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gpz8k5lzp/v1",
+  "description": "{\"blocks\":[{\"key\":\"4rihh\",\"text\":\"STEPanizer is a software designed for the stereological evaluation of digital images acquired from microscopes and macroscopic devices. It allows the application of the most essential stereological parameters, such as volume, surface, length, and number. The user must configure a test system that is projected onto the digital image to be analyzed. Counting is made by the observer and computed into the software, which then tabulates the data and exports it to Excel. The operator must enter the stereological formulas into Excel to obtain the result. STEPanizer is helpful because it standardizes the creation of test systems. However, before all that, the primary step is to calibrate the software to obtain proper data.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"1s6v5\",\"text\":\"Java must be installed (https://www.java.com/download/).\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":24,\"length\":30}],\"data\":{}},{\"key\":\"8lnh9\",\"text\":\"An image of the micrometer object acquired in the same magnification as the images to be analyzed is required.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"395A0A8DF14511EF8F150A58A9FEAC02\",\"url\":\"https://www.java.com/download/\"}}}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"105ss\",\"text\":\"Micrometer object digital image\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"95mtr\",\"text\":\"Computer\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"af8kd\",\"text\":\"Java (https://www.java.com/download/)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":6,\"length\":30}],\"data\":{}},{\"key\":\"1g5iu\",\"text\":\"STEPanizer (https://www.stepanizer.com/)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":12,\"length\":27}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"3389C848F14A11EF9C2D0A58A9FEAC02\",\"url\":\"https://www.java.com/download/\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"3389C878F14A11EF9C2D0A58A9FEAC02\",\"url\":\"https://www.stepanizer.com/\"}}}}",
+  "steps": [
+    "Click on &#34;browse&#34; and open the image of the micrometer object (#1)",
+    "Click on &#34;scale&#34; (#2).",
+    "On the &#34;input field&#34; enter the desired value (#3).",
+    "Click on the image and drag the mouse to draw a line of the size that corresponds to the value entered (#4). Draw a large line. For instance, instead of 100 μm, draw a 500 μm line as in the example; Ruler marks are thick in higher magnification. Thus, when drawing the line, position its ends at the center of each ruler mark or at the beginning.",
+    "Click on &#34;scale ok&#34; (#5).",
+    "Calibration will be shown in the &#34;info field&#34; #6 (in the example, 1 pixel = 1.0916 μm). The test system dimensions will also be displayed in the &#34;info field&#34; #6, based on the test system settings you configured on &#34;test system properties&#34; (#7). The calibration and test system properties are saved when the program is closed. Thus, always check the info field (#6) before analyzing a new set of images. Always perform a new calibration when changing the image source (e.g., new objective or new microscope). Click &#34;reset all &amp; close!&#34; to delete the calibration. It will also delete the test system settings."
+  ],
+  "authors": [
+    "Leidyanne Hernandez",
+    "Caroline Fernandes-Santos"
+  ],
+  "creator": "Caroline Fernandes-Santos",
+  "published_on": 1740372178,
+  "created_on": 1712270967,
+  "keywords": []
+}

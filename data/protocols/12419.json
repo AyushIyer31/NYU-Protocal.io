@@ -1,0 +1,32 @@
+{
+  "id": 12419,
+  "title": "AMPureXP purification",
+  "uri": "ampurexp-purification-qdbds2n",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l2wy3l1y9/v1",
+  "description": "{\"blocks\":[{\"key\":\"2gvmb\",\"text\":\"PCR-product purification with AMPureXP solution.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aprie\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8m6ru\",\"text\":\"From the manual:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ans11\",\"text\":\"\\\"The Agencourt AMPure XP system is a highly efficient, easily automated PCR purification system that delivers superior-quality DNA with no salt carryover. Requiring no centrifugation or filtration, Agencourt AMPure XP can be easily used in manual and automated 96- or 384-well formats.\\\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2tg57\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"565v4\",\"text\":\"High recovery of amplicons greater than 100 bp\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fd3ap\",\"text\":\"Efficient removal of unincorporated dNTPs, primers, primer dimers, salts and other contaminants\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"atuhp\",\"text\":\"Stable PCR products post-cleanup: No PCR degradation after storage at 4° C for seven days\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1bqo2\",\"text\":\"Efficient recovery of double-stranded and single-stranded DNA templates\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d8svm\",\"text\":\"Consistent recovery throughout the kit’s 12-month shelf life\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b446b\",\"text\":\"Faster manual and automated processing as compared to traditional post-PCR cleanup methods\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"12hl2\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"61s94\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"4oje9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"8utkg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"BdTlT\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"Wqg58\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":120194,\"guid\":\"41995484341F11EE9D4302C0B41BC903\",\"name\":\"Agencourt AMPure XP\",\"mol_weight\":0,\"sku\":\"A63880\",\"url\":\"https://www.beckmancoulter.com/wsrportal/wsrportal.portal?_nfpb=true\\u0026_windowLabel=UCM_RENDERER\\u0026_urlType=render\\u0026wlpUCM_RENDERER_path=%252Fwsr%252Fresearch-and-discovery%252Fproducts-and-services%252Fnucleic-acid-sample-preparation%252Fagencourt-ampure-xp-pc\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":32,\"name\":\"Beckman Coulter\",\"link\":\"https://www.beckmancoulter.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Shake the Agencourt AMPureXP bottle to fully resuspend magnetic particles.",
+    "Add sample Vol µL × 1.8 (or less i.e. 0.8) of the Agencourt AMPure XP solution. Pipette mix 10 times, or vortex a few seconds.",
+    "Incubate at room temperature for 5 minutes. 00:05:00",
+    "Place the reaction plate/tube onto an Agencourt SPRIPlate Super Magnet Plate for 2 minutes to separate beads from solution. 00:02:00",
+    "Aspirate the supernatant from the reaction plate/tube and discard.",
+    "Dispense 200 µL of 70% ethanol and incubate at room temperature for at least 30 seconds. Aspirate out the ethanol and discard. Repeat for a total of two washes. undetermined, 70% ethanol 00:00:30",
+    "Leave plate to dry for ca. 15-20 min. at room temperature. 00:15:00",
+    "Add at 40 µL elution buffer (10 mM Tris buffer, no TE!!) Volume can be lower, in the past even 20µL worked, but then it is harder to get the purified sample out of the plate/tube. Pipette mix 10 times or vortex a few seconds. undetermined, elution buffer",
+    "Incubate at room temperature for 2 minutes. 00:02:00",
+    "Place the reaction plate onto an Agencourt SPRIPlate Super Magnet Plate for 1 minute to seperate beads from solution. 00:01:00",
+    "Transfer purified product to a fresh plate or PCR tube (better than 1.5mL tubes, as you can use a multichannel pipette for quantification!)."
+  ],
+  "authors": [
+    "Eva Petrova",
+    "Roey Angel"
+  ],
+  "creator": "Eva Petrova",
+  "published_on": 1727372643,
+  "created_on": 1527154117,
+  "keywords": []
+}

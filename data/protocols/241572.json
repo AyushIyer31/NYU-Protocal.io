@@ -1,0 +1,38 @@
+{
+  "id": 241572,
+  "title": "SEAP reporter assay for assessing NF-κB inhibition by TGF-β1/PD-L1 fusion protein",
+  "uri": "seap-reporter-assay-for-assessing-nf-b-inhibition-hp6cb5rax",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6e38rgqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"ggog\",\"text\":\"This protocol describes a secreted embryonic alkaline phosphatase (SEAP)–based reporter assay to evaluate NF-κB pathway inhibition mediated by a TGF-β1/PD-L1 fusion protein. Human TLR2 Reporter HEK 293 cells are stably modified to express the PD-1 receptor and used as a cellular model to assess downstream NF-κB activation following Toll-like receptor 2 stimulation. NF-κB signaling is induced using graded dilutions of Mycobacteria-containing Freund’s Complete Adjuvant, and pathway activity is quantified via SEAP secretion into the culture medium. Treatment with the TGF-β1/PD-L1 fusion protein is compared against antibody-blocked and untreated controls to determine receptor-dependent inhibition of NF-κB activation. This assay provides a reproducible and modular framework for mechanistic validation of immunomodulatory proteins affecting inflammatory signaling pathways.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"en3rg\",\"text\":\"This protocol uses Human TLR2 Reporter HEK 293 Cells from InvivoGen, lipofected stably with pCMV3-PD1 to express the PD-1 receptor. Please contact the author regarding inquiries on how to reconstitute the PD-1 protein in these cells or different eukaryotic cell models.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"eefj3\",\"text\":\"This assay is sensitive to the presence of endotoxins. Before performing the experiment, ensure first that your culture is not contaminated and your reagents are endotoxin-free.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Perform immunofluorescence (IF) analysis using anti-TGFBR1 and anti-PD1 antibodies. Note that you can use FITC-conjugated antibodies (direct) or premix the primary antibodies with FITC-conjugated secondary antibodies in 1:1 ratio (indirect)",
+    "Harvest 1 x10 6 cells and collect by centrifugation 500 x g, 25 °C, 5 minutes",
+    "Resuspend the cell pellet in 100 µL of PBS, repeat go to step #1.1 once",
+    "Add 100 µL of staining buffer and resuspend the cells well by pipetting A B 1 Reagent Amount needed 2 Bovine serum albumin (BSA) 0.05% (w/v) 3 FITC-labelled antibody 1:100 (antibody:buffer ratio) 4 PBS Fill to 100 uL Composition of staining buffer",
+    "Incubated at 4 °C for 00:30:00 in the dark with constant shaking. Note that over-exposure to light may photobleach FITC signal",
+    "Wash the cells in 5 mL PBS-T, twice. A B 1 Reagent Amount needed 2 Tween-20 0.01% (w/v) 3 PBS 5 mL Composition of PBS-T buffer",
+    "Collect the cells by centrifugation 500 x g, 25 °C, 3 minutes and resuspend the cells in 25 µL of PBS with or without 0.5 μg/mL of Hoechst 33342. Incubate for 00:05:00 at room temperature",
+    "Wash the cells once with 5 mL PBS and resuspend to a final volume 100 µL of PBS",
+    "Aliquot desired amount and dispense to poly-L-lysine coated slides, incubate in the dark for at least 00:01:00 prior to visualization under a fluorescence microscope",
+    "Seed 1x10 5 cells in a 96-well plate, each well should not exceed 200 µL",
+    "After 24:00:00 , replace the medium with same volume of HEK Blue Detection Medium InvivoGen",
+    "Challenge the cells with an increasing dilution of Mycobacteria -containing Imject&trade; Freund's Complete Adjuvant (FCA) Thermo Fisher Catalog #77140 A B 1 Set-up Dilution 2 1 1:100 3 2 1:1,000 4 3 1:10,000 5 4 1:50,000 6 5 1:100,000 7 Control None (PBS only) Dilution reactions for the experiment Note: Consider the number of replicates in your assays",
+    "Divide the set-up into fusion protein-treated, antibody-blocked, and untreated reactions. For this protocol, the inhibition of NF-κB activation by the TGF-β1/PD-L1 (TP) fusion protein is determined. Note that you can use a different immunomodulating protein or molecule for this assay. A B 1 Reaction Purpose 2 TP-treated Assess the direct effect of receptor binding of TP with receptors in NF-κB activation 3 Antibody-blocked Identify the consequences of blocking the receptors of TP in NF-κB activation 4 Untreated Serves as control SEAP reporter assay set-up; TP = TGF-β1/PD-L1 fusion protein",
+    "For TP-treated cells, add 50 ng/mL of fusion protein to the wells",
+    "For antibody-blocked cell, add 1 ug/mL of either anti-TGFBR1 and anti-PD1 antibodies, incubate for 00:15:00 , then add 50 ng/mL of fusion protein to the wells",
+    "For untreated cells, add the same volume of PBS to the wells",
+    "Culture the cells as usual for 24:00:00",
+    "Check the culture plate for color development, image the plate and then read the optical density (OD) at 620-655 nm on a plate reader"
+  ],
+  "authors": [
+    "Marvin De los Santos"
+  ],
+  "creator": "Marvin De los Santos",
+  "published_on": 1769515993,
+  "created_on": 1769440756,
+  "keywords": []
+}

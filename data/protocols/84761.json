@@ -1,0 +1,25 @@
+{
+  "id": 84761,
+  "title": "RT-PCR amplification for the discrimination between wild type and mutation alleles in SARS-CoV-2 genomes from wastewater",
+  "uri": "rt-pcr-amplification-for-the-discrimination-betwee-cwzzxf76",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gp3ww1vzp/v1",
+  "description": "{\"blocks\":[{\"key\":\"7tlrh\",\"text\":\"This protocol describes the procedure of RT-PCR for the allelic discrimination between wild type and mutation alleles in specific positions of the SARS-CoV-2 genome. Starting with isolated RNA from SARS-CoV-2 positive wastewater samples, this workflow combines Applied Biosystems TaqMan SNP Genotyping Assays with a one-step RT-PCR reaction to detect whether there are known SARS-CoV-2 mutations present in the wastewater samples.\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5c4v1\",\"text\":\"\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"21om4\",\"text\":\"Sequence-specific forward and reverse primers amplify the target sequence region in each mutation assay. The reverse primer also primes reverse transcription of the SARS-CoV-2 genomic RNA sequences. Each mutation assay includes two TaqMan minor groove binder probes with nonfluorescent quenchers: one VIC dye labelled probe to detect the reference sequence and one FAM dye labelled probe to detect the mutation sequence.\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"fv3v5\",\"text\":\"Wipe bench surfaces with RNAse Away and keep working environment clean. Maintain the RNA samples on ice, and prepare the RT-PCR mixture on ice. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"c0j2q\",\"text\":\"TaqPath 1-Step RT-qPCR Master Mix CG, ThermoFisher Scientific, Catalog A15299\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cf38m\",\"text\":\"AcroMterix SARS-CoV-2 Control, ThermoFisher Scientific, Catalog 954519\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ddgr\",\"text\":\"Mutation Assay: S.G339D.GGT.GAT, ThermoFisher Scientific, Catalog CV47VRX\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"an82m\",\"text\":\"Mutation Assay: S.Q493R.CAA.CGA, ThermoFisher Scientific, Catalog CVH49P2\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7nfup\",\"text\":\"Mutation Assay: S.L452R.CTG.CGG, ThermoFisher Scientific, Catalog CVAAAAD\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"48fh8\",\"text\":\"Mutation Assay: S.T547K.ACA.AAA, ThermoFisher Scientific, Catalog CVYMJGA\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"abce7\",\"text\":\"Mutation Assay: M.D3N.GAT.AAT, ThermoFisher Scientific, Catalog CVAAAAK\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a3203\",\"text\":\"Mutation Assay: ORF7b.L11F.TTG.TTT, ThermoFisher Scientifc, Catalog CVCE3VH\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare the amplification mixture as follows: Reagent Concentration in the reaction 1 TaqPath 1-Step RT-qPCR Master Mix CG (4X) 1X 2 Mutation assay (40X) 2X 3 DNAse/RNAse free water up to 15 µL To the 15 μl of reaction mix, add 5 μl of wastewater RNA sample, or no-template control (DNAse/RNAse free water), or a wild-type AcroMetrix Coronavirus 2019 (COVID-19) RNA control, to complete 20 μl of reaction volume.",
+    "Thermocycling conditions Step Temperature (ºC) Time No. Cycles 1 Reverse transcription 45 15' 2 Taq polymerase activation 95 2' 3 Denaturation 95 15'' 45 4 Annealing 58 45'' 5 Post-read 60 30' Set the detection module for FAM and VIC labelled probes.",
+    "The allelic discrimination results can be graphed on a scatter plot contrasting reporter dye florescence ( i.e. , allele X versus allele Y), and analyzed with the QuantStudio Design and Analysis Software, using the genotyping analysis module with real-time data."
+  ],
+  "authors": [
+    "Ana C Reis",
+    "Daniela Pinto",
+    "Mónica V. Cunha"
+  ],
+  "creator": "Daniela Pinto",
+  "published_on": 1688999225,
+  "created_on": 1688980145,
+  "keywords": []
+}

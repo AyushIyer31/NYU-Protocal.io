@@ -1,0 +1,31 @@
+{
+  "id": 230356,
+  "title": "In Situ Pull-down Protein Interaction Analysis",
+  "uri": "in-situ-pull-down-protein-interaction-analysis-hc7ub2znx",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx4qjzl8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"e0fld\",\"text\":\"An in situ His-tag pull-down assay to test direct interactions between C1q, BAI1, and p32 demonstrates direct binding of C1q–BAI1, C1q–p32, and BAI1–p32, and that C1q-BAI1-p32 can be pulled down as a complex. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":3,\"length\":7}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"cegok\",\"text\":\"- His-tag recombinant human BAI1 (SinoBiological, 4969-BA)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"yeukd\",\"text\":\"- His-tag p32 (SinoBiological, 11874-H08E)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"uegyi\",\"text\":\"- Magnetic beads (Invitrogen, 10103D)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dppc2\",\"text\":\"- Purified human C1q (MyBioSource, MBS147305)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ym2pl\",\"text\":\"- Recombinant untagged human p32 (LSBio, LS-G3375-20)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"wromo\",\"text\":\"- Binding/wash buffer (50 mM sodium phosphate, 300 mM NaCl, 0.01% Tween-20)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jajte\",\"text\":\"- Pulldown buffer (3.25 mM sodium phosphate, 70 mM NaCl, 0.01% Tween-20)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7cua5\",\"text\":\"- His-elution buffer (300 mM imidazole, 50 mM sodium phosphate, 300 mM NaCl, 0.005% Tween-20)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Dissolve 5 µg of His-tag recombinant human BAI1 (SinoBiological, 4969-BA) and His-tag p32 (SinoBiological, 11874-H08E) in 1x binding/wash buffer (50 mM sodium phosphate, 300 mM NaCl, 0.01% Tween-20).",
+    "For each pull-down, immobilize the bait proteins on 2 mg of magnetic beads (Invitrogen, 10103D) in Eppendorf tube(s) by incubating on a rocker for 10 minutes at room temperature (RT).",
+    "Place tubes on a magnet (Invitrogen, 12321D) to separate beads from the buffer.",
+    "Collect the buffer containing excess bait for Western blot validation.",
+    "Wash the beads four times with 1x binding/wash buffer to remove any remaining excess bait protein.",
+    "Dissolve 5 µg of purified human C1q (MyBioSource, MBS147305) and recombinant untagged human p32 (LSBio, LS-G3375-20) in 1x pulldown buffer (3.25 mM sodium phosphate, 70 mM NaCl, 0.01% Tween-20).",
+    "Incubate the single prey proteins or combination of the prey proteins with the magnetic bead-immobilized bait in the Eppendorf tube(s) on a rocker for 15 minutes at RT.",
+    "Use a magnet to separate the beads and wash four times with 1x binding/wash buffer to remove unbound prey proteins.",
+    "Elute the bound prey and bait using his-elution buffer (300 mM imidazole, 50 mM sodium phosphate, 300 mM NaCl, 0.005% Tween-20).",
+    "Analyze the eluted samples using Western blotting to confirm interactions."
+  ],
+  "authors": [
+    "Katja Piltti",
+    "Zeina Elrachid"
+  ],
+  "creator": "Katja Piltti",
+  "published_on": 1761154036,
+  "created_on": 1761024285,
+  "keywords": []
+}

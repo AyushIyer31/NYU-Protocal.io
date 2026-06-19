@@ -1,0 +1,35 @@
+{
+  "id": 121652,
+  "title": "Metabolite Identification in Candida albicans",
+  "uri": "metabolite-identification-in-candida-albicans-d22u8gew",
+  "doi": "dx.doi.org/10.1038/protex.2015.038",
+  "description": "{\"blocks\":[{\"key\":\"uufsv\",\"text\":\"Considerable effort has been made  in the past  decade to unravel biological networks like protein-protein interaction. Various kinds of metabolite including small metabolites comprise a vast majority of cellular component. Hence a technique that identifies endogenous protein-metabolite interaction can reveal extensive roles of metabolites in regulation of protein activities. \\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"z1lea\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"n5tx5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ozuqq\",\"text\":\"Several studies that feature on biological networks utilize Saccharomyces cerevisiae as the model organism. The pathogenic yeast Candida albicans remains understudied till date. We describe a new methodology that helps in identifying metabolites bound to proteins in vivo in Candida albicans. The technique employs yeast based Tandem Affinity Purification followed by methanol extraction and subsequent identification of the metabolite by UPLC- coupled ESI Mass Spectrometry.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Suspend frozen yeast cell pellets from 500-ml cultures in 5 ml lysis solution (200 mM ammonium acetate, 1× Complete protease inhibitor cocktail [Roche], and 1 mM EGTA).",
+    "Add glass beads (Sigma) equal amount to that of pellet to facilitate cell lysis by vortexing for 15 cycles (1 min of vortexing and 1 min of resting on ice), followed by centrifugation at 13,400 × g for 30 min.",
+    "Subject the supernatants to TAP as described by Rao et al. in 2013 with some modifications.",
+    "In the first round of purification, incubate cell lysates with 50 ul of anti-FLAG M2 agarose (Sigma) for 2 h at 4°C.",
+    "Perform a second round of purification with Ni-nitrilotriacetic acid (NTA) agarose (Qiagen) for 1 h at 4°C.",
+    "Wash the beads once for 5 min in 300 mM ammonium acetate and once for 5 min in 150 mM ammonium acetate.",
+    "To extract the protein-bound metabolites, add 60 ul of pure methanol to the beads twice, and incubate the beads at room temperature for 10 min.",
+    "Immediately transfer the methanol extract to a Waters Max Recovery glass vial and analyse by mass spectrometry.",
+    "Boil the beads in 50 ul of 1× SDS sample buffer for 5 min, and analyse 15 ul of the supernatant on a 12% SDS-PAGE gel, followed by a silver staining reagent (Bio-Rad).",
+    "The mass spectrometry system used in this study comprised an Acquity ultraperformance liquid chromatograph (UPLC) system and a Synapt G2 mass spectrometer equipped with an electrospray ionization (ESI) probe (Waters Co., Milford, MA). For each run, load 10 μl of metabolite extract onto a C18 column using a binary solvent gradient of 5% to 95% methanol in water for 12 min and 95% methanol for another 5 min. Keep The collection mass range 100 to 1,200 m/z in profile scan mode to avoid missing uncommon mass adducts. Keep the probe and source temperatures 500°C and 130°C, respectively. Process the data though MarkerLynx software, version 4.1 (Waters Co., Milford, MA).",
+    "None",
+    "N-Acetylglucosamine (GlcNAc)-Inducible Gene GIG2 Is a Novel Component of GlcNAc Metabolism in Candida albicans by S. Ghosh, K. Hanumantha Rao, N. S. Bhavesh, G. Das, V. P. Dwivedi, and A. Datta https://dx.doi.org/10.1128/EC.00244-13",
+    "Figure 1. Flow Diagram Metabolite Extraction from a native purified protein Flow Diagram depicting the protocol at a glance. Figure 2. Figure1 Purified Protein and Identification of Extracted Metabolite (A) After two rounds of purification and extraction in methanol, the beads were boiled and were resolved on SDS-PAGE to check for the presence ofpurified Gig2. (B) LC plots of the small metabolites extracted from a protein (Gig2) (green) and the negative control (untagged) (red). Peak intensity is plottedagainst the retention times (in minutes) of corresponding mass spectra. All traces were smoothed by the Savitzky-Golay method using two passes with a windowsize of three scans. (C) Combined average mass spectra of the 9.02- to 10.020-min region. The mass of the Gig2-bound small metabolite is given along with itschemical identity. The peak mass (in atomic mass units) is shown along the x axis and the peak intensity (expressed as a percentage) along the y axis."
+  ],
+  "authors": [
+    "Asis Datta",
+    "Swagata Ghosh",
+    "Hanumantha Rao Kongara"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1433265942,
+  "created_on": 1433265942,
+  "keywords": []
+}

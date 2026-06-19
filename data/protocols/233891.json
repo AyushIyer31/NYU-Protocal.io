@@ -1,0 +1,42 @@
+{
+  "id": 233891,
+  "title": "GST tagged recombinant protein expression and purification with thrombin cleavage",
+  "uri": "gst-tagged-recombinant-protein-expression-and-puri-hgnbb3vap",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l21d53g1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"5ma76\",\"text\":\"A protocol to purify GST tagged recombinant proteins from E. Coli\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":58,\"length\":7}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"eebqk\",\"text\":\"Thrombin (MW 37kDa), Sigma # T-6884: 10 U of thrombin used to cleave 1 mg of fusion protein at 4 degrees overnight.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"gi8tl\",\"text\":\"Glutathione Agarose, Sigma# G4510\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"syqkv\",\"text\":\"1 X Thrombin buffer: 20 mM Tris pH 7.6, 100mM NaCl, 5mM MgCL2,2mM CaCl2, 10% glycerol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Transform construct of interest into BL21 GOLD DE3 competent cells.",
+    "Pick single colonies the next morning and incubate (37C, shaking) in 1ml LB with proper antibiotic as a starter culture.",
+    "Add the starter culture to 50 ml LB with antibiotic at the end of the day, grow overnight (37C, shaking).",
+    "The next morning, add the 50ml culture to 2L LB with antibiotic.",
+    "Incubate the culture for 2-3 hours (37C, shaking), check the absorbance periodically. When the culture reaches 0.6-0.8 at OD600, add IPTG (0.4mM final concentration).",
+    "Grow for another 3 hours and spin down for 30 min 3000 rcf, 4 °C, . Store the pellet at -80C.",
+    "Thaw and resuspend the pellets in thrombin buffer (20 mM Tris pH 7.6, 100mM NaCl, 5mM MgCL2,2mM CaCl2, 10% glycerol) with 1mM DTT and protease inhibitor.",
+    "Pass the resuspended pellets through an 18G syringe.",
+    "Mechanically lyse the cells using a cell disruptor. Take care to keep the samples on ice as much as possible.",
+    "Spin the lysate down for 30 min 20000 rcf, 4 °C, and save supernatant.",
+    "Wash GST-agarose beads 2X in thrombin buffer and then add the supernatant to the beads.",
+    "Incubate the beads for 2 hours at 4C.",
+    "Wash 3X with buffer (No protease inhibitor).",
+    "Transfer to 1.5ml tube.",
+    "Save some beads before cutting GST-tag.",
+    "Add Thrombin protease (500ul buffer+10ul (10 Unit) Thrombin for 500ul beads) and let it cut overnight in the cold room spinning slowly.",
+    "Next morning separate supernatant (elution1).",
+    "Add another 500ul buffer, mix it, separate supernatant (elution2).",
+    "Span Freeze proteins in small aliquot.",
+    "Run protein gel for Coomassie stain."
+  ],
+  "authors": [
+    "Devin Fuller",
+    "Shanta Nag",
+    "Thomas Melia"
+  ],
+  "creator": "Devin M. Fuller",
+  "published_on": 1765312949,
+  "created_on": 1764602892,
+  "keywords": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": 17448,
+  "title": "Transient CRISPR-Cas9 Coupled with Electroporation Protocol",
+  "uri": "transient-crispr-cas9-coupled-with-electroporation-vage2bw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l64x2kvqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"naqc\",\"text\":\"Transient CRISPR-Cas9 transformation of Cryptococcus neoformans.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4dslu\",\"text\":\"References\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"9jrtb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"78efm\",\"text\":\"1. Lin, X., et al., Generation of stable mutants and targeted gene deletion strains in Cryptococcus neoformans through electroporation. Med Mycol, 2015. 53(3): p. 225-234.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":153,\"length\":2}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4vrar\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"80h2o\",\"text\":\"2. Fan, Y. and X. Lin, Multiple applications of a transient CRISPR-Cas9 coupled with electroporation (TRACE) system in the Cryptococcus neoformans species complex. Genetics, 2018. \\n \\n \\n \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"emlq1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"a74o1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "PCR amplification of CAS9, sgRNA, your construct. CAS9: Use plasmid pXL1-CAS9-HYG as template with primers CAS9-F and CAS9-R. (6985 bp) sgRNA: U6P and sgRNA scaffold U6pPromoteris PCR amplified using serotype Dgenomic DNA astemplate with primers U6P-F and GOI-sgRNA-R. ~295 bp SgRNA scaffold is PCR amplified using pYF515 astemplate with primers GOI- sgRNA-F and sgRNA-R. ~108 bp sgRNA construct is PCR amplified using above two PCR product sastemplate with primers U6P-F and sgRNA-R. ~383 bp",
+    "Mix 2 µg your construct DNA, 100 ng sgRNA, and 170 ng CAS9 in an Eppendorf tube.",
+    "Vacuum dry the DNA and elute in 5 µL DNAse/RNAse free water. Notes: use the combination of 2 μg construct DNA, 1 μg CAS9 DNA, and 700 ng sgRNA can increase the transformation efficiency, but low dose is sufficient to obtain transformants.",
+    "Inoculate recipient strain in 5 mL YPD liquid medium, culture overnight at 30 °C with shaking at 250 rpm.",
+    "Use the overnight culture to inoculate 100 mL fresh YPD medium at an initial inoculum of OD600=0.2. Grow the cells for additional 04:00:00 to 05:00:00 until the cell density reached OD600 between 0.6-1.0. From this step on, everything on ice and centrifugation at 4 °C",
+    "Collect cells by centrifugation at 3200g for 00:05:00 at 4 °C .",
+    "Wash cells with ice-cold water (EB Buffer instead of water in 2015 paper). (wash 1/2)",
+    "Suspend cells in 10 mL ice-cold EB buffer (10 mM Tris-HCl, pH 7.5, 1mM MgCl 2 , 270 mM Sucrose) with 1mM DTT.",
+    "Incubate the cells on ice for an hour ( 01:00:00 ). (30 to 60 mins in 2015 paper)",
+    "(Optional) Wash cells with 10 mL ice-cold EB buffer once (2015 paper).",
+    "Collect the cells by centrifugation and resuspend in 250 µL EB buffer.",
+    "Mix 45 µL cells with 5 µL DNA mix from step 2 in a pre-cooled 2 mm gap electroporation cuvette.",
+    "Transform the DNA by electroporation using the BioRad gene pulser with settings of 0.45 kV, 125 μF, 600 Ω. (If using an Eppendorf multiporator, use the bacterial mode with V=2 kV with τ optimized for 5 ms)",
+    "Suspend electroporated cells in 1 mL of YPD medium and culture at 30 °C for 02:00:00 ( 01:30:00 in 2015 paper) before plating onto the appropriate selective agar medium.",
+    "Wash cells with ice-cold water (EB Buffer instead of water in 2015 paper). (wash 2/2)"
+  ],
+  "authors": [
+    "Amy Gladfelter"
+  ],
+  "creator": "Amy Gladfelter",
+  "published_on": 1685643518,
+  "created_on": 1541205036,
+  "keywords": []
+}

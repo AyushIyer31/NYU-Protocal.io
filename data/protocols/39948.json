@@ -1,0 +1,29 @@
+{
+  "id": 39948,
+  "title": "Reverse transcription with SuperScript VI VILO",
+  "uri": "reverse-transcription-with-superscript-vi-vilo-bi9kkh4w",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"4idcm\",\"text\":\"This protocol is from Invitrogen.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5v5dk\",\"text\":\" https://www.thermofisher.com/order/catalog/product/11766050#/11766050\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":1,\"length\":69}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"D99CE6ACD53011EABEB00A58A9FEAC2A\",\"url\":\"https://www.thermofisher.com/order/catalog/product/11766050#/11766050\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"UpQi4\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"ghLFu\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":211339,\"guid\":\"41B8BC48341F11EE9D4302C0B41BC903\",\"name\":\"SuperScript\\u0026trade; IV VILO\\u0026trade; Master Mix with ezDNase\\u0026trade; Enzyme\",\"mol_weight\":0,\"sku\":\"11766500\",\"url\":\"https://www.thermofisher.com/order/catalog/product/11766500\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Check for DNA contamination in RNA by performing PCR with universal primers (16S or 18S) (see PCR protocol). Doing the PCR first will help avoid unnecessary DNase use and wasting RNA. OR Proceed directly to DNase treatment without initial check.",
+    "Gently mix and incubate samples at 37 °C for 00:05:00 . Briefly spin down and place on ice.",
+    "Prepare reverse transcription reactions on ice. Add the following to the 10µl DNase reactions above, or if no DNase treatment was performed, prepare the following in empty PCR tubes. Each sample should have 1x RT and 1x no RT reaction. RT and no RT reactions should use the same amount of template RNA. RT: 4 µL Superscript IV Master Mix 10 µL, DNase reaction OR up to 12 µL, of template RNA (aim for 1000 - 1500ng RNA) nuclease free water to final volume of 20µl No RT controls: 4 µL Superscript IV no RT control 10 µL, DNase reaction OR up to 12 µL, of template RNA (aim for 1000 - 1500ng RNA) nuclease free water to final volume of 20µl",
+    "For samples with DNA contamination On ice, prepare 2x DNase reactions for each sample. One reaction will be used for reverse transcription (RT) and the other for the no reverse transcription control (no RT). The no RT control is used to check for DNA contamination. RT and no RT reactions should use the same amount of template RNA. 1 µL, 10x ezDNase Buffer 1 µL, ezDNase enzyme up to 8 µL, template RNA (aim for 1000 - 1500ng RNA) nuclease free water to final volume of 10µl",
+    "Incubate RT and no RT reactions following the settings below (7.1). This can be performed in a thermocycler.",
+    "cDNA can be used directly in PCR or qPCR. Store at -20 °C for short term storage or -80 °C for long term storage.",
+    "After closing PCR tubes, briefly spin down samples.",
+    "Incubate at 25 °C for 00:10:00 (anneal primers) 50 °C for 00:10:00 (reverse transcription) 85 °C for 00:05:00 (enzyme inactivation)",
+    "Tip: After RT is performed (Step 7), if DNA contamination is observed in the no RT control and DNase treatment was performed, try repeating the protocol with 2x DNase treatments. After the initial incubation at 37°C, add 1µl 10x ezDNase Buffer and 1µl ezDNase enzyme. Incubate again at 37°C for 5 minutes."
+  ],
+  "authors": [
+    "Molly A Moynihan"
+  ],
+  "creator": "Molly A Moynihan",
+  "published_on": 1607429290,
+  "created_on": 1596367901,
+  "keywords": []
+}

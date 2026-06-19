@@ -1,0 +1,40 @@
+{
+  "id": 122897,
+  "title": "HeLa quality control sample preparation for MS-based proteomics\n",
+  "uri": "hela-quality-control-sample-preparation-for-ms-bas-d39r8r56",
+  "doi": "dx.doi.org/10.21203/rs.3.pex-2155/v1",
+  "description": "{\"blocks\":[{\"key\":\"w4uzv\",\"text\":\"Cell lysis and digestion protocol of HeLa cell line for quality control measurments of mass spectrometry-based proteomics measurments.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"udzng\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"jwa82\",\"text\":\"In solution digest of human proteome sample for HeLa quality control runs of mass-spectrometers used at Novo Nordisk Foundation Center for Protein Research. The protocol has no specific author and is adapted by individual researchsers at the institute.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ox90b\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"bvx1m\",\"text\":\"6M Guanidine Hydrochloride (MW: 95.53g/mol) – 5.73g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9p6xl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ahqu9\",\"text\":\"5mM TCEP (stock: 0.5M) – 100x – 100ul\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3chyf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"nud0b\",\"text\":\"10mM CAA (stock: 550mM) – 55x – 182ul\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"anu79\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cx9i4\",\"text\":\"100mM Tris pH 8.0 (stock 1M) – 10x – 1ml\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mo9mv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"i6qty\",\"text\":\"2ml of Bradford\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"beznx\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare 10ml Lysis buffer fresh 6M Guanidine Hydrochloride (MW: 95.53g/mol) – 5.73g 5mM TCEP (stock: 0.5M) – 100x – 100ul 10mM CAA (stock: 550mM) – 55x – 182ul 100mM Tris pH 8.0 (stock 1M) – 10x – 1ml Water ~ 5ml",
+    "Heat lysis buffer to 99°C",
+    "IF STARTING FROM PELLET – SKIP STEP 4 and 5.",
+    "Aspirate media completely from the plate",
+    "Wash with 10 ml of PBS twice",
+    "Add 1000ul lysis buffer (and scrape cells off the plate) and collect in a 15 ml falcon tube",
+    "Heat lysate at 99°C for 10min in the heating block while shaking",
+    "Sonicate with microtip probe for 2min with pulses of 1sec ON, 1sec OFF at an amplitude of 50%.",
+    "Prepare protein standards in the range 0, 1, 2, 4 and 8ug/ml using BSA",
+    "Mix 1ml of Bradford and the appropriate volume of BSA (stock: 1mg/ml)",
+    "Mix 1ml of Bradford and 1ul of your protein sample",
+    "Prepare a blank sample with 1ul lysis buffer",
+    "Vortex the samples gently and incubate for 5min",
+    "Measure the absorbance at 595nm for the standards and the sample",
+    "Calculate the protein concentration by plotting a standard curve of the absorbance vs. protein sample concentration",
+    "Digest lysate with LysC: protein ratio 1:100 (w/w) (stock: 0.5ug/ul) and incubate shaking at 25°C for 60min (O/N) ( 5000ug = 100ul )",
+    "Dilute to minimum 2M Guanidine hydrochloride with 25mM Tris pH 8.5 (40x from stock)",
+    "Digest with trypsin: protein ratio 1:100 (w/w) (stock: 0.5ug/ul) and incubate at 37°C shaking O/N at 300rpm ( 5000ug = 100ul )",
+    "Stop the digest by quenching with TFA (pH should be reduced to ~2 by adding 1/10 volume of 10% TFA) Check with pH strip (NB: chemical hood!!)",
+    "Upconcentrate on Sep-Pak"
+  ],
+  "authors": [
+    "Henry Webel"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1684758159,
+  "created_on": 1684758159,
+  "keywords": []
+}

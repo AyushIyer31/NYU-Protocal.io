@@ -1,0 +1,38 @@
+{
+  "id": 28121,
+  "title": "DNA quantification using the Quantus fluorometer ",
+  "uri": "dna-quantification-using-the-quantus-fluorometer-7pzhmp6",
+  "doi": "dx.doi.org/10.17504/protocols.io.7pzhmp6",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"gvkW2\",\"text\":\"STEP MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"0sdNE\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":42947,\"guid\":\"413011E5341F11EE9D4302C0B41BC903\",\"name\":\"QuantiFluor(R) ONE dsDNA System, 500rxn\",\"mol_weight\":0,\"sku\":\"E4870\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":23,\"name\":\"Promega\",\"link\":\"http://www.promega.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Set up the required number of 0.5 mL tubes for the number of DNA samples to be quantified. Use only thin-wall, clear, 0.5mL PCR tubes such as Axygen #PCR-05-C",
+    "Label the tubes on the lids, avoid marking the sides of the tube as this could interfere with the sample reading.",
+    "Add 199 µL ONE dsDNA dye solution to each tube.",
+    "Add 1 µL of each user sample to the appropriate tube. Use a P2 pipette for highest accuracy.",
+    "Mix each sample vigorously by vortexing for 00:00:05 and pulse centrifuge to collect the liquid.",
+    "Allow all tubes to incubate at room temperature for 00:02:00 before proceeding.",
+    "On the Home screen of the Quantus Fluorometer, select `Protocol`, then select `ONE DNA` as the assay type. If you have already performed a calibration for the selected assay you can continue, there is no need to perform repeat calibrations when using ONE DNA pre diluted dye solution. If you want to use the previous calibration, skip to step 11. Otherwise, continue with step 9.",
+    "Set up two 0.5 mL tubes for the calibration and label them &#39;Blank&#39; and &#39;Standard&#39;",
+    "Mix the Lambda DNA standard 400 ng/µL standard by pipetting then add 1 µL to one of the standard tube.",
+    "Selection &#39;Calibrate&#39; then &#39;ONE DNA&#39; then place the blank sample in the reader then select &#39;Read Blank&#39;. Now place the standard in the reader and select &#39;Read Std&#39;.",
+    "On the home screen navigate to &#39;Sample Volume&#39; and set it to 1 µL then &#39;Units&#39; and set it to ng/µL.",
+    "Load the first sample into the reader and close the lid. The sample concentration is automatically read when you close the lid.",
+    "Repeat step 16 until all samples have been read.",
+    "The value displayed on the screen is the dsDNA concentration in ng/µL, carefully record all results in a spreadsheet or laboratory notebook.",
+    "Remove Lambda DNA 400 ng/µL standard from the freezer and leave on ice to thaw. Remove ONE dsDNA dye solution from the fridge and allow to come to room temperature. QuantiFluor(R) ONE dsDNA System, 500rxn Promega Catalog #E4870",
+    "Add 200 µL ONE dsDNA Dye solution to each tube.",
+    "Mix each sample vigorously by vortexing for 00:00:05 and pulse centrifuge to collect the liquid.",
+    "Allow both tubes to incubate at room temperature for 00:02:00 before proceeding."
+  ],
+  "authors": [
+    "Josh Quick"
+  ],
+  "creator": "Josh Quick",
+  "published_on": 1599581164,
+  "created_on": 1569488919,
+  "keywords": []
+}

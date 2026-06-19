@@ -1,0 +1,37 @@
+{
+  "id": 30333,
+  "title": "mRNA Synthesis and Transfection",
+  "uri": "mrna-synthesis-and-transfection-9u5h6y6",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"p4td\",\"text\":\"This protocol explains the mRNA synthesis and transfection of lines ND1014, N1, and ND27760 from Synthetic mRNAs Drive Highly Efficient iPS Cell Differentiation to Dopaminergic Neurons. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":97,\"length\":87}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9pm2\",\"text\":\"Please follow the National Institutes of Health guidelines.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"1htmj\",\"text\":\"Obtain approval to work with human stem cells from an appropriate Institutional Review Board. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"34f3k\",\"text\":\"Please refer to the Safety Data Sheets (SDS) for safety and environmental hazards. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"yhd5y\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"xaXPI\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"TOlii\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"XyyDe\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":2190,\"guid\":\"4103E6EA341F11EE9D4302C0B41BC903\",\"name\":\"HiScribe T7 ARCA mRNA Kit - 20 rxns\",\"mol_weight\":0,\"sku\":\"E2065S\",\"url\":\"https://www.neb.com/E2065\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":244250,\"guid\":\"4206C733341F11EE9D4302C0B41BC903\",\"name\":\"MEGAclear\\u0026trade; Transcription Clean-Up Kit\",\"mol_weight\":0,\"sku\":\"AM1908\",\"url\":\"https://www.thermofisher.com/order/catalog/product/AM1908\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":256403,\"guid\":\"42258CF1341F11EE9D4302C0B41BC903\",\"name\":\"Lipofectamine\\u0026trade; MessengerMAX\\u0026trade; Transfection Reagent\",\"mol_weight\":0,\"sku\":\"LMRNA001\",\"url\":\"https://www.thermofisher.com/order/catalog/product/LMRNA001\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Clone coding sequence of Atoh1 into a vector containing the T7 promoter and poly(A) tail for in vitro transcription.",
+    "Clone coding sequence of Ngn2 into a vector containing the T7 promoter and poly(A) tail for in vitro transcription.",
+    "Linearize Atoh1 and Ngn2 vectors.",
+    "Subject linearized Atoh1 and Ngn2 vectors to mRNA synthesis using the HiScribe T7 ARCA mRNA Kit.",
+    "Purify mRNAs using the MEGAclear Transcription Clean‐Up Kit.",
+    "Transfect using a cationic lipid (e.g. Stem-In).",
+    "For each well of a 12-well plate, incubate 0.25 µg, mRNA with 1.5 µL, lipid in 50 µL, PBS for 00:15:00 .",
+    "Add DNA:lipid complexes to cells."
+  ],
+  "authors": [
+    "Yingchao Xue",
+    "Xiping Zhan",
+    "Shisheng Sun",
+    "Senthilkumar S. Karuppagounder",
+    "Shuli Xia",
+    "Valina L Dawson",
+    "Ted M Dawson",
+    "John Laterra",
+    "Jianmin Zhang",
+    "Mingyao Ying"
+  ],
+  "creator": "Anita Broellochs",
+  "published_on": 1600288166,
+  "created_on": 1574892460,
+  "keywords": []
+}

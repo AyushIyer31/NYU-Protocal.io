@@ -1,0 +1,33 @@
+{
+  "id": 119833,
+  "title": "Crystallisation of Enterovirus D68 3C protease apo structure and fragment screen in space group P212121 (PDB code 8CNX)",
+  "uri": "crystallisation-of-enterovirus-d68-3c-protease-apo-dy9z7z76",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ldm6jnl5b/v2",
+  "description": "{\"blocks\":[{\"key\":\"9rjvo\",\"text\":\"The crystallization protocol and buffer conditions used to obtain Enterovirus D68 3C protease crystals. The crystal structure was depostited to RCSB PDB with code 8CNX. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":163,\"length\":4}],\"data\":{}},{\"key\":\"6vm3b\",\"text\":\"In this new version we added the Addgene ID and the protein expression and purification protocol. This construct gave us a crystal form suitable for fragment screen and initial compound soaking.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"A5EB9BF6AA1E4501A308E38963B1A44B\",\"url\":\"https://www.rcsb.org/structure/8CNX\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"f7voj\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"bhqod\",\"text\":\"SwissCI 3 lens crystallization plates https://swissci.com/product/3-lens-crystallisation-plate/\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":38,\"length\":57}],\"data\":{}},{\"key\":\"cupb6\",\"text\":\"1 M Tris-HCl pH 8.14\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"am85e\",\"text\":\"1 M Ammonium acetate\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9qm37\",\"text\":\"50% w/v PEG 3350\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":965622,\"guid\":\"C118BF9EAC864FD8A8496E7ABBCDB755\",\"name\":\"EV-D68 3C protease; aliases: Enterovirus A71 3C protease, non cleavable C-term 6xHis tag\",\"mol_weight\":0,\"sku\":\"(Plasmid #204817)\",\"url\":\"http://\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":6,\"name\":\"addgene\",\"link\":\"http://www.addgene.org\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/6.png\",\"placeholder\":\"/img/vendors/6.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"ACCED8A84DC311EE80FB0A58A9FEAC02\",\"url\":\"https://swissci.com/product/3-lens-crystallisation-plate\"}}}}",
+  "steps": [
+    "Protein and buffer requirements: 32 µL 1 millimolar (mM) Sample 2.88 mL, Crystallization screen 16 µL Sample seeds, dilution 1:100 000",
+    "Dispense 30 µL, Crystallisation screen into SwissCI 3 lens plate reservoir wells using a 100 µl multi-channel pipette. Dispense 100 nL 1 millimolar (mM) Sample to each lens using the SPT mosquito. Dispense 200 nL, Crystallisation screen to each lens using the SPT mosquito. Dispense 50 nL, Seeds to each lens using the SPT mosquito. Drop ratio: 1:2:05 ratio (100 nl Sample : 200 nl reservoir solution: 50 nl seeds) Final drop volume: 350 nl",
+    "Crystallisation screen composition: 0.1 M Tris-HCl (pH 8.14) 0.2 M Ammonium acetate 25% w/v PEG 3350 Stock solutions used: 1 M Tris-HCl adjusted to pH 8.14 with HCl 1 M Ammonium acetate 50% w/v PEG 3350 The crystallisation screen can be stored in a duran bottle or aliquoted into 96 deep well block for easy dispensing into SwissCI 3 lens plates. For long term storage keep the Crystallisation screen in the fridge at 4°C.",
+    "Crystal form after ~12 h. The crystals reach their maximum size after 24 h and most of the precipitant has gone. Crystals typically form either as single crystals or in small clusters containng 4-6 crystals in a flower-like arrangement. Upon mounting a gentle nudge dissociates the cluster. Morphology: typically thin rectangles with pointed ends. Size: ~100 μm in length and ~50 μm in width, depth of the crystals is ~10 μm Appearance : glass shard. Average resolution: 1.5 Å Space group: P2 1 2 1 2 1 Unit cell: 42.82 Å, 62.53 Å, 147.36 Å 90.00°, 90.00°, 90.00° An example of a drop containing EV D68 3C protease crystals.",
+    "Incubate at 20 °C for 24:00:00, h in Formulatrix Rock Imager. Imaging Schedule : The first images are taken after 12 h and the imaging schedule follows a Fibonacci sequence of days for further collections.",
+    "Prepare seed stock: 1: 100 000 dilution Sample seeds",
+    "Small scale protein purification and expression protocols used for this assay EV-D68 3C protease; aliases: Enterovirus A71 3C protease, non cleavable C-term 6xHis tag addgene Catalog #(Plasmid #204817) Enterovirus D68 3C protease small scale expression and purification protocol by korvus.wang",
+    "Formulatrix Rock Imager (or incubator of choice) SPT mosquito P100 multi-channel pipette SwissCI 3 lens plate",
+    "Final condition idenitified: 20% DMSO, 2hr 30mins using the protocol bellow. XChem solvent test by Peter Marples",
+    "20% fragment/compound, 2hr 30mins using the protocol bellow. XChem crystallographic fragment screening by Peter Marples"
+  ],
+  "authors": [
+    "Ryan Lithgo",
+    "Peter Marples",
+    "Lizbé Koekemoer",
+    "Daren Fearon"
+  ],
+  "creator": "Lizbé Koekemoer",
+  "published_on": 1745576935,
+  "created_on": 1739013929,
+  "keywords": []
+}

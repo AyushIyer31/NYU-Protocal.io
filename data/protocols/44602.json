@@ -1,0 +1,25 @@
+{
+  "id": 44602,
+  "title": "Quantitative real-time PCR for the four Lactobacillus species",
+  "uri": "quantitative-real-time-pcr-for-the-four-lactobacil-bps2mnge",
+  "doi": "dx.doi.org/10.17504/protocols.io.bps2mnge",
+  "description": "{\"blocks\":[{\"key\":\"3s0r0\",\"text\":\"Quantitative Real-time Polymerase Chain Reaction(qPCR) for the four Lactobacillus species, including L.crispatus, L.gasseri, L.iners, L.jensenii.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":68,\"length\":13},{\"style\":\"italic\",\"offset\":101,\"length\":44}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "The primers for the four Lactobacillus species used in this study were performed as Backer et al. (2007). Pick some vaginal DNA samples at random, and perform PCR reactions using these four sets of primers, respectively. Then use electrophoresis to identify the PCR products, and purify the final PCR product by gel extraction kit.",
+    "Use the pEASYR-T1 Cloning Kit ( https://www.transgenbiotech.com/cloning_vector.html ) to construct the four corresponding plasmids and identify them by sanger sequencing, respectively. After DNA quantification using Qubit Fluorometer (Life Technologies), dilute the plasmids with ddH 2 O by serial tenfold dilution into 6 concentration gradients as serial standards. The copies of standards (copies/μl)= (DNA concentration/ (number of base pairs*324))*6*10 14 . The number of plasmid base pairs (bp) of L.iners , L jensenii , L. crispatus and L. gasseri are 4082, 4013, 4082, 4251.",
+    "Use SYBR Premix Ex Taq GC (TAKARA) to conduct the qPCR. The reaction mixture contains 10 μl of 2×SYBR Premix Ex Taq GC, 0.2 μM forward primer, 0.2 μM reverse primer, 1.6 μl of DNA sample and 8.2 μl ddH 2 O to make up the final reaction volume of 20 μl. Each reaction is run in triplicate.",
+    "Use the StepOnePlus Real-time PCR System (Life Technologies) to conduct the qPCR. The condition of qPCR amplification is followed as Table above. The standard curve range of amplification efficiency for the qPCR is from 90 to 110%, and linearity values is ≥0.99. In case the result was not in the range of the standard curve, the samples are diluted tenfold and analyzed in triplicate again. The average log10 copies/ml are expressed as per 1 ml urine sample.",
+    "Then transfer all the final reaction volumes into a 96-well plate. The DNA templates in each plate contain urine samples, corresponding serial standards and negative controls (ddH 2 O)."
+  ],
+  "authors": [
+    "Chen Chen"
+  ],
+  "creator": "Lilan Hao",
+  "published_on": 1605604664,
+  "created_on": 1605602568,
+  "keywords": []
+}

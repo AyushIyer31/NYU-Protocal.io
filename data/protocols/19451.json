@@ -1,0 +1,28 @@
+{
+  "id": 19451,
+  "title": "Detection of Human Rhinovirus by PCR following Sanger Sequencing",
+  "uri": "detection-of-human-rhinovirus-by-pcr-following-san-w83fhyn",
+  "doi": "dx.doi.org/10.17504/protocols.io.w83fhyn",
+  "description": "{\"blocks\":[{\"key\":\"9c0v8\",\"text\":\"Reference for the method and primer sequences\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2ajab\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5nlte\",\"text\":\"“Lee W.-M., Lemanske R. F., Evans M., Vang F., Pappas T. E., Gangnon R., Jackson D. and Gern J. E.. 2012. Human Rhinovirus Species and Season of Infection Determine Illness Severity. American Journal of Respiratory and Critical Care Medicine. Submitted.”\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2g88\",\"text\":\"“Lee W.-M., Kiesner C., Pappas T., Lee I., Grindle K., Jartti T., Jakiela B., Lemanske R.F., Shult P.A., Gern J.E. 2007. A diverse group of previously unrecognized human rhinoviruses are common causes of respiratory illnesses in infants. PLoS ONE 2:e966.”\\n\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"2e5eo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"fvtci\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"21r59\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"oap0\",\"text\":\"Forward primer:\\nBF1 = mixture of 25 uM of B1, B2 and B3:\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":15}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5gdom\",\"text\":\"HRV-B1    5' - CAAGCACTTCTGTTTCCCC - 3'\\nHRV-B2    5' - CAAGCACTTCTGTTACCCC - 3'\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8edan\",\"text\":\"HRV-B3    5' - CAAGCACTTCTGTCTCCCC - 3'\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"26j8b\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dqis5\",\"text\":\"Reverse primer:\\nFR2:  5' - ACGGACACCCAAAGTAG - 3'\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":15}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5fe37\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c6nan\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7rrpr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cnlte\",\"text\":\"References\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"2g5k1\",\"text\":\"“Lee W.-M., Lemanske R. F., Evans M., Vang F., Pappas T. E., Gangnon R., Jackson D. and Gern J. E.. 2012. Human Rhinovirus Species and Season of Infection Determine Illness Severity. American Journal of Respiratory and Critical Care Medicine. Submitted.”\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"g6pj\",\"text\":\"“Lee W.-M., Kiesner C., Pappas T., Lee I., Grindle K., Jartti T., Jakiela B., Lemanske R.F., Shult P.A., Gern J.E. 2007. A diverse group of previously unrecognized human rhinoviruses are common causes of respiratory illnesses in infants. PLoS ONE 2:e966.”\\n\\n\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare the PCR reaction using 3ul of random cDNA; 10pM of the mixture of forward primers (B1, B2 and B3) and 10pM of the FR2 reverse primer.",
+    "Run a Touch-down PCR following the cycling conditions suggested by the polymerase manufacturer although varying the annealing temperature from 68C to 52C (decreasing 2C after 2 cycles).",
+    "Purify 5ul of the product from the first PCR using “ExoSAP-IT Express PCR Cleanup Reagent” (Thermo) and manufacturer’s protocol.",
+    "Prepare again the PCR reaction using 3ul of purified amplicon; 10pM of the mixture of forward primers (B1, B2 and B3) and 10pM of the FR2 reverse primer.",
+    "The PCR cycling conditions should be set as suggested by the polymerase manufacturer, but this time the annealing temperature keeps set as 52C.",
+    "Purify 10ul of the product from the second PCR using ExoSAP-IT and manufacturer’s protocol.",
+    "Use this purified amplicon in a Sanger sequencing with the FR2 reverse primer only.",
+    "Analyze the chromatogram and use the nucleotide sequence to search in a database as BLAST."
+  ],
+  "authors": [
+    "Talita B Gagliardi"
+  ],
+  "creator": "Talita B Gagliardi",
+  "published_on": 1559664365,
+  "created_on": 1547758969,
+  "keywords": []
+}

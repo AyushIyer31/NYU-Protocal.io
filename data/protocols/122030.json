@@ -1,0 +1,31 @@
+{
+  "id": 122030,
+  "title": "External Ground and Reference Strategy for Simultaneous EEG and Neuropixels Recordings",
+  "uri": "external-ground-and-reference-strategy-for-simulta-d3en8jde",
+  "doi": "dx.doi.org/10.17504/protocols.io.261gerbmjl47/v1",
+  "description": "{\"blocks\":[{\"key\":\"av9cf\",\"text\":\"This protocol describes the referencing and grounding strategy to record EEG and Neuropixels data from a head-fixed mouse in-vivo. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"evfdh\",\"text\":\"To record EEG and Neuropixels data from a head-fixed mouse in-vivo, it is necessary to first perform the \\\"EEG Array and Headframe Implant Surgery\\\" followed by the \\\"Burr Hole Craniotomies Through EEG\\\". Both protocols are linked in this collection.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"ckfq2\",\"text\":\"Use caution when operating the soldering iron to avoid burns.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"cren0\",\"text\":\" Tools and Supplies:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":1,\"length\":19}],\"entityRanges\":[],\"data\":{}},{\"key\":\"749dq\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"7ph3t\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ebc7e\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"esjoq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3rm5d\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"MUTABLE\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"0_2\":\"\",\"1_0\":\"\",\"1_1\":\"\",\"1_2\":\"\",\"2_0\":\"\",\"2_1\":\"\",\"2_2\":\"\",\"3_0\":\"\",\"3_1\":\"\",\"3_2\":\"\",\"4_0\":\"\",\"4_1\":\"\",\"4_2\":\"\"},\"colTitles\":[\"Item\",\"Supplier/Manufacturer \",\"Part Number\"],\"colWidths\":[179,\"219\",\"164\"],\"data\":[[\"Neuropixels 1.0 probe\",\"IMEC\",\"PRB_1_4_0480_1\"],[\"Solder wire\",\"Weller\",\"T0051388399\"],[\"Soldering iron and accessories\",\"Weller\",\"WESD51\\u0026nbsp;\"],[\"Benchtop Smoke Absorber\",\"Weller\",\"WSA350\"],[\"32 or 34 AWG stranded, PTFE-coated wire\",\"DigiKey\",\"\\t\\n2451/34RD-100-ND\"]],\"guid\":\"A05C4CD19F68452AA495BE0F5623A82D\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"Neuropixels 1.0 probe\",\"IMEC\",\"PRB_1_4_0480_1\"],[\"Solder wire\",\"Weller\",\"T0051388399\"],[\"Soldering iron and accessories\",\"Weller\",\"WESD51\\u0026nbsp;\"],[\"Benchtop Smoke Absorber\",\"Weller\",\"WSA350\"],[\"32 or 34 AWG stranded, PTFE-coated wire\",\"DigiKey\",\"\\t\\n2451/34RD-100-ND\"]],\"rowHeights\":[23,23,23,23,23]}}}}",
+  "steps": [
+    "Solder a separate wire (32-34 AWG stranded Silver-Plated Copper, PTFE-coated wire) to each side of the flex cable on the Neuropixels probe. This allows for a separate ground and reference, rather than shorting them together.",
+    "If using multiple Neuropixels probes, short ground wires from all the Neuropixels probes together. Connect the shorted wires to a screw attached to the skull of the mouse (see &#34;EEG Array and Headframe Implant Surgery&#34; protocol for details). EEG Array and Headframe Implant Surgery by Lydia C. Marks",
+    "The final result will be the following: 1. Ground wires of the EEG array and all Neuropixels probes are shorted and connected to skull screw 1. 2. Reference wires of all Neuropixels probes are shorted and connected to skull screw 2. 3. Reference wire of the EEG array is connected to skull screw 3. To remove potential sources of noise, try these tips: short the headframe of the mouse and the stage to ground (skull screw 1). plug the amplifiers of the different recording devices into the same ground to minimize ground loops.",
+    "Thread the wire through the hole in the middle of the solder pad. Solder wire to solder pad. Do not exceed 660 °F for the soldering temperature as this could damage the components on the Neuropixels probe.",
+    "Ensure a good connection is made between the wire and the solder pad. A bad connection can cause noise in the signal from the Neuropixels probes. See references tab for the Neuropixels manual. Photo of Neuropixels flex cables with black ground wire soldered to the left flex cable and pink reference wire soldered to the right flex cable.",
+    "When you launch OpenEphys and load the Neuropixels PXI plugin, ensure that &#34;Ext&#34; is selected for all Neuropixels probes you are using. Screenshot of the OpenEphys user interface. Red circle shows where to select &#34;Ext&#34; option for reference.",
+    "If using multiple Neuropixels probes, short all reference wires for the Neuropixels probes together. Connect the shorted reference wires to another skull screw. Do not short the reference wire of the Neuropixels probe with the reference wire of the EEG array.",
+    "Connect the ground wires from the Neuropixels probes to the ground wire of the EEG array. In this way, all of the grounds are shorted to 1 skull screw.",
+    "Connect the EEG reference wire to the final skull screw."
+  ],
+  "authors": [
+    "Lydia C. Marks",
+    "Leslie D. Claar",
+    "Irene Rembado"
+  ],
+  "creator": "Lydia C. Marks",
+  "published_on": 1743525469,
+  "created_on": 1739993498,
+  "keywords": []
+}

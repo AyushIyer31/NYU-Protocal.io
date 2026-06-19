@@ -1,0 +1,34 @@
+{
+  "id": 28130,
+  "title": "Protein purification strep-tag on gravity column ",
+  "uri": "protein-purification-strep-tag-on-gravity-column-7qahmse",
+  "doi": "dx.doi.org/10.17504/protocols.io.7qahmse",
+  "description": "{\"blocks\":[{\"key\":\"4cjtr\",\"text\":\"Protein purification of a protein with a strep-tag on a gravity column. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"43dn5\",\"text\":\"After lysis, sample should be kept on gel as much as possible \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"9pjm7\",\"text\":\"Have performed Protein expression using E. coli strain BL21DE3 by Robert Hooftman \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"5l1pl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"Regm7\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"JgUvw\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"sev8l\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"cncn0\",\"text\":\"50 % Strep-Tactinsepharose solution \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3jqq3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":2715,\"guid\":\"4104B54A341F11EE9D4302C0B41BC903\",\"name\":\"MilliQ water\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":119459,\"guid\":\"419866DB341F11EE9D4302C0B41BC903\",\"name\":\"Roche Complete Protease Inhibitor EDTA-Free tablets \",\"mol_weight\":0,\"sku\":\"5056489001\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":17,\"name\":\"Merck MilliporeSigma (Sigma-Aldrich)\",\"link\":\"http://sigmaaldrich.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Place post-induction culture from Protein expression using E. coli strain BL21DE3 on ice",
+    "Centrifuge culture at 5000xg for 00:10:00 at 4 °C",
+    "The pellet is resuspended in 1 mL buffer W per 100 mL cell culture containing one crushed cOmplete mini tablet.",
+    "Buffer W: 100 mM Tris-HCl (pH 8.0) 150 mM NaCl 1 mM EDTA Buffer E: 100 mM Tris-HCl (pH 8.0) 150 mM NaCl 1 mM EDTA 2.5 mM biotin",
+    "The cells are sonificated (VS70 T rod, 25% 1 sec on 2 sec off for 00:05:00 . On ice water). For small amounts use the MS72 rod. From this point be very sure to keep the cells on ice as much as possible.",
+    "The cell extract is centrifuged for 00:45:00 at 30 000 g.",
+    "The supernatant is collected and filtered first with 0.45 um filter and then with 0,22 um filter. If there are small sample volumes: add 3 mL buffer W.",
+    "Fill centrifuge Column with 200-300 μL Strep- Tactinsepharose (so 400-600 μL 50% suspension). This is your CV.",
+    "Equilibrate with 3 Column bed Volume (CV) of Buffer W.",
+    "Load 10 CV of cell free extract on the column",
+    "Wash the resin 5 times by 1 CV of buffer W Collect this in Eppendorf tubes per 1 CV. Apply 2 µL of the first washing fraction and 8 µL of each subsequent fraction to an analytical SDS-PAGE.",
+    "Apply 0.5 CV of Buffer E on column 6 times to elute the protein of interest 8 μl samples of each fraction can be used for SDS-PAGE analysis. Most of the purified Strep-tag® II fusion protein usually elutes in the 2nd to 5th fraction.",
+    "Determine protein concentration flow through on nanodrop with the molecular weight and extinction coefficient",
+    "Run on an appropriate SDS-page gel"
+  ],
+  "authors": [
+    "Cleo B."
+  ],
+  "creator": "Cleo B.",
+  "published_on": 1569498652,
+  "created_on": 1569496585,
+  "keywords": []
+}

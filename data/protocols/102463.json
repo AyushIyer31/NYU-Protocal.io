@@ -1,0 +1,32 @@
+{
+  "id": 102463,
+  "title": "Immunofluorescence staining on larval and adult Drosophila gonads",
+  "uri": "immunofluorescence-staining-on-larval-and-adult-dr-dga73shn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvjnd7ngk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"446cr\",\"text\":\"Immunofluorescence staining protocol for Drosophila gonads\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":41,\"length\":11}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"bcl4j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"c51gc\",\"text\":\"All steps are done with gentle rotation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"8fbrd\",\"text\":\"1x PBS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c0krr\",\"text\":\"0.3% PBTx (0.3% Triton-X in PBS) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a5i81\",\"text\":\"1% PBTx (1% Triton-X in PBS) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"570g6\",\"text\":\"Paraformaldehyde or formaldehyde \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7d6nr\",\"text\":\"Normal serum (usually NGS)  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"434b8\",\"text\":\"Primary antibodies\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7k6bf\",\"text\":\"Secondary antibodies\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"p2d2\",\"text\":\"DAPI\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Dissect tissue in 1x PBS. Transfer to a 1.5 mL tube containing 1x PBS . If it is a quick dissection (&lt;20 mins), no ice needed. If more time is needed, keep samples on ice.",
+    "Remove PBS and add fixative. Fix in 4% paraformaldehyde in 0.3% PBTx for 20 min RT with gentle rotation. 500 uL fixative = 125 uL of 16% paraformaldehyde + 375 uL 0.3% PBTx",
+    "Aspirate the fixative and wash twice for 10 min in 1% PBTx . Not getting rid of fix will affect your immunostaining.",
+    "Aspirate the supernatant and block/permeabilize for at least 2 hours in 1% PBTx + 5% normal serum, or overnight at 4°C. 1 mL block solution = 50 uL NGS + 950 uL 1% PBTx",
+    "Primary antibodies are diluted in 0.3% PBTx + 5% normal serum and incubate for 1 hour at RT or overnight at 4°C. Overnight will give better staining. Primary antibody mix in 0.3% PBTx + 15 uL NGS (300 uL total)",
+    "Remove the primary antibody mix and wash in 0.3% PBTx three times for 20 min at RT.",
+    "Wash in 0.3% PBTx + 5% normal serum twice for 30 min at RT. 1 mL wash solution = 50 uL NGS + 950 uL 0.3% PBTx",
+    "Secondary antibodies are diluted in 0.3% PBTx + 5% normal serum and incubated for ~2 hours at RT or overnight at 4°C. Keep tubes covered from light.",
+    "Aspirate the supernatant and add 500 uL DAPI to each tube. Incubate for 10 min at RT. Keep tubes covered from light.",
+    "Aspirate the supernatant and wash in 0.3% PBTx three times for 20 min at RT.",
+    "Aspirate the supernatant and wash in PBS for 10 min at RT.",
+    "Store in PBS at 4°C or proceed with mounting. Keep tubes covered from light."
+  ],
+  "authors": [
+    "Samantha Goetting"
+  ],
+  "creator": "Samantha Goetting",
+  "published_on": 1719442938,
+  "created_on": 1719416315,
+  "keywords": []
+}

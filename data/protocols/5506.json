@@ -1,0 +1,39 @@
+{
+  "id": 5506,
+  "title": "Method for electroporation of Isochrysis galbana CCMP1323",
+  "uri": "method-for-electroporation-of-isochrysis-galbana-c-hmab42e",
+  "doi": "dx.doi.org/10.17504/protocols.io.hmab42e",
+  "description": "{\"blocks\":[{\"key\":\"90upk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4v381\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"d9cc8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"f19d5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Grow I. galbana cells to 10^6 cells/ml (usually takes 1 week) in 50% salinity F/2.",
+    "Prepare electroporation buffer - ensure final pH is 7.2 500mM NaCl5mM KCl5mM CaCl220mM HEPES200mM mannitol200mM sorbitol Filter sterilise (short term) or autoclave.",
+    "Remember to include a control (no DNA) sample. Add another sample if you want to calculate transformation efficiency",
+    "Spin down 100 ml of cells at 3000 rpm for 3 minutes, remove supernatant",
+    "Wash with 350µl of electroporation buffer",
+    "Spin down again at 3000rpm for 3 minutes, remove supernatant",
+    "Resuspend in 350 µl and count cells",
+    "Add DNA construct to cells then aliquot cells into a 4 mm wide sterile electroporation cuvette",
+    "Immediately take cells to the electroporator",
+    "Set electroporator to:a.HVb.1800Vc.Pulse length: 50µSd.Pulses: 02e.Interval: 01 sf.Polarity: unipolar",
+    "Put cuvette in holder and press start",
+    "Record voltage and time settings afterwards",
+    "Immediately add 1ml of 50% salinity F/2 to cuvettes and place them in 18˚C incubator with light to allow them to recover for 2-4 hours. Take an aliquot of a control to check cell counts post electroporation.",
+    "Aliquot equal amount of samples into a 24 well tissue culture plate or tube and keep overnight in 18˚C incubator with light, dividing them into sufficient numbers to carry out replicates or different antibiotic concentrations. Do the same to your no DNA control. Always ensure you have a no NTC control (test sample) and an NTC control (no DNA control sample)",
+    "Next day, add NTC to your cultures to a final concentration of 150µg/ml. The NTC is kept at a stock concentration of 100mg/ml so approximately 3µl NTC/2ml of media.",
+    "Incubate at 18˚C with light and check every 4 days, taking aliquots to check for counts. It took approximately 7 weeks for substantial growth to be seen at 150µg/ml of NTC. There should be no growth in no DNA control with NTC, but growth in no DNA control grown without NTC. There should be growth in test sample without NTC and hopefully with NTC.",
+    "Prepare high concentration of plasmid DNA to allow for at least 2µg of DNA to be electroporated per sample in no more than 5 µl volume."
+  ],
+  "authors": [
+    "Glen Wheeler",
+    " Rowena Stern",
+    " Cecilia Balesteri"
+  ],
+  "creator": "Glen Wheeler",
+  "published_on": 1492537132,
+  "created_on": 1491500731,
+  "keywords": []
+}

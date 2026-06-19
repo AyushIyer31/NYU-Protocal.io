@@ -1,0 +1,33 @@
+{
+  "id": 110083,
+  "title": "Measuring lysosomal exocytosis by Flow cytometry",
+  "uri": "measuring-lysosomal-exocytosis-by-flow-cytometry-dprb5m2n",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ld8oyxv5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"cc17q\",\"text\":\"Protocol for measuring lysosomal exocytosis by flow cytometry. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"eitm\",\"text\":\"Staining buffer:  5% FCS in PBS (filtered)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":16}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1jv15\",\"text\":\"Blocking buffer: 5% FCS in PBS containing FcR block at 1:100 dilution (Anti-Mouse CD16/CD32; BD Biosciences Cat# 553141, RRID:AB_394656)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":16}],\"entityRanges\":[],\"data\":{}},{\"key\":\"8fger\",\"text\":\"Antibody staining solution: Dilute 0.5 ul anti-mouse-LAMP1-AF647 (Rat-anti-mouse-LAMP-1-AF647\\n(BioLegend Cat# 121610, RRID:AB_571990) ) in 25 ul staining buffer per sample. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":27}],\"entityRanges\":[],\"data\":{}},{\"key\":\"2knqc\",\"text\":\"Viability stain: eg Fixable Viability Dye eFluor-450, # 65-0863-18, eBioscience\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":16}],\"entityRanges\":[],\"data\":{}},{\"key\":\"etmr2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Seed cells as required and stimulate to induce exocytosis. Prepare ~ 5x10^5 cells per sample.",
+    "Detach cells. Keep all samples on ice from now on.",
+    "Pellet cells.",
+    "Resuspend in 75 ul blocking buffer (5% FCS in PBS - optional: containing FcR blocker) and incubate for 10 min on ice.",
+    "Add 25 ul anti-LAMP1-AF647 antibody staining solution containing 0.5 ul antibody and incubate for 30 min on ice. Protect from light.",
+    "Add 300 ul PBS and pellet cells.",
+    "Resuspend cells in 100 ul dead/live staining solution and incubate for 10 min on ice. Protect from light.",
+    "Add 300 ul PBS and pellet cells.",
+    "Resuspend cells in 300 ul 2 % PFA/PBS.",
+    "Acquire 10&#39;000 events per sample.",
+    "After removing doublets, analyse the mean and medium LAMP1 fluorescence intensity in the live cell gate.",
+    "Dead/live single-colour control To prepare a live/dead single stain control, heat half of the sample at 65 °C for 00:10:00 min. Put back on ice immediately, mix with non-heat treated cells and stain as above. LAMP1 single-colour control Remove part of the stimulated samples and omit dead/live stain."
+  ],
+  "authors": [
+    "Susanne Herbst",
+    "Patrick Lewis"
+  ],
+  "creator": "Susanne Herbst",
+  "published_on": 1736552137,
+  "created_on": 1729096301,
+  "keywords": []
+}

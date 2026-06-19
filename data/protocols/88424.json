@@ -1,0 +1,34 @@
+{
+  "id": 88424,
+  "title": "JHM-MSMP Muscle Flow Cytometry",
+  "uri": "jhm-msmp-muscle-flow-cytometry-c2kgyctw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg3xqwqg25/v2",
+  "description": "{\"blocks\":[{\"key\":\"58ooj\",\"text\":\"Muscle flow cytometry\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Prepare viability dye solution for 100 μL / well to be stained. Dilute stock dyes in PBS.",
+    "Spin down plate at 400g for 5 min at 4°C or room temp.",
+    "Resuspend cells in 100μL of appropriate viability dye solution or 100μL of PBS for Unstained samples, all non-viability single-color controls (SCCs), and the viability fluorescence minus one (FMO) control.",
+    "Incubate cells in viability solution for 30 min on ice. Cover plate with foil to protect samples from light.",
+    "During incubation, make the antibody cocktails for the “all stain” master mix (to stain samples and all-stained control) as well as any FMOs or SCCs you may be running. FMOs &amp; SCCs can be prepared in 8-tube PCR strips. All antibody mixes should be prepared in a concentrated stain buffer: Fc Block (BioLegend) + Monocyte Block (BioLegend) + Brilliant Stain Buffer (BD Biosciences). Then just before staining cells, use flow wash buffer to bring all stain mixes to correct volume to stain all samples and controls. Flow wash buffer: 1X PBS w/o Ca 2+ or Mg 2+ (Gibco 14190-144), 1% w/v bovine serum albumin (Sigma A9647), 1 mM EDTA pH 8.0 (Invitrogen 15575-038). A suggested panel for staining stromal, immune, and vascular cells is included: %s %s Fluorophores​ Marker​ Dilution BV421​ CD31​ 1:400 BV605​ CD45​ 1:150 BV711 CD11b 1:300 ​ ​ AF488 ​ CD3 1:200 ​ ​ tdTomato​ p16​ N/A PE-Cy7​ F4/80 1:250 ​ ​ AF647 CD146 1:2000 AF700​ CD29​ 1:100 eFlour780​ Viability 1:1000",
+    "Following incubation in viability buffer, wash cells twice using flow wash buffer. Centrifuge at 400g for 5 minutes at 4°C or room temp. between each wash.",
+    "After final wash, resuspend cells in 100μL of the “All Stain” master mix or in the appropriate volume of the FMO &amp; SCC antibody cocktails.",
+    "Incubate cells in antibody staining cocktail on ice for 45 min. Cover plate with foil to protect samples from light.",
+    "Following incubation, wash cells twice, as before, using flow wash buffer.",
+    "After 2nd wash, resuspend all samples and controls in 100μL of FluoroFix Buffer (BioLegend). Incubate for 15 minutes at room temperature. Cover plate with foil to protect samples from light. Note: If performing cell sorting, do not fix cells. Proceed instead with standard protocols for your specific cell sorter.",
+    "Wash cells twice after incubation using flow wash buffer.",
+    "After final wash, resuspend samples and controls in the 200μL volume of flow wash buffer. Cover the plate with foil and store at 4°C overnight.",
+    "Before acquiring samples on the Attune NXT cytometer, centrifuge and resuspend them in the appropriate volume of PBS.",
+    "Analyze samples on Attune NXT cytometer. Voltages for FSC, SSC, and all dyes should be set using unstained and single-color controls (SCCs). Tip: The tdTomato signal in the mouse quadriceps is bright, and the voltage will likely need to be turned down to prevent the signal from going off-scale. If sorting for RNAseq, cells are sorted into RLT Plus Buffer (Qiagen) and stored at -80C until library preparation."
+  ],
+  "authors": [
+    "ccherry"
+  ],
+  "creator": "ccherry",
+  "published_on": 1695752451,
+  "created_on": 1695752214,
+  "keywords": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": 80981,
+  "title": "IHC_cFOS+Parvalbumin",
+  "uri": "ihc-cfos-parvalbumin-ctbvwin6",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbyb9yvpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"fkpmo\",\"text\":\"Immunohistochemistry protocol for c-FOS and Parvalbumin co-staining of mouse brain tissue slices (30 microns thick).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"81t4q\",\"text\":\"All shaker incubations are done at 200 rpm speed.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Antigen Retrieval Remove PBS from wells. Add 500ul 0.3% citrate buffer into each well.",
+    "Incubate at RT on shaker for 30 min Incubate at 65 °C for 45 min Cool down on the bench for 20 min",
+    "3X PBS Washes",
+    "Remove citrate buffer from wells and replace with 500ul 1X PBS (or use a dropper pipette and fill the well halfway)",
+    "Incubate at RT on shaker for 15 min go to step #2.1",
+    "Block Non-Specific Signal Make enough: 10% NGS (Vector Labs, #S-1000-20) in 0.3% triton-X PBS for all samples (500ul per well)",
+    "Remove PBS and replace with blocking reagent 500ul per well.",
+    "Incubate on shaker RT for 60min.",
+    "Primary Antibody Make enough: mouse anti-parv (1:1000, Sigma-Aldrich, #P3088) and rabbi anti-cfos (1:1000, cell Signaling, #2250S) in 1% NGS (Vector Labs, #S-1000-20) in 0.3% triton-X PBS",
+    "Replace the blocking reagent with primary antibody mix, 500 ul per well, and incubate at 4 °C Overnight",
+    "DAY 2 3X PBS Washes",
+    "Remove primary Ab mix from wells and replace with 500ul 1X PBS (or use a dropper pipette and fill the well halfway)",
+    "Incubate at RT on shaker for 15 min go to step #5.1",
+    "Secondary Antibody Make enough: goat anti-mouse AF-555 (1:500, Invitrogen, #A-21422) and biotin goat anti-rabbit (1:1000, Vector Labs, #PK-6101) in 1% NGS (Vector Labs, #S-1000-20) in 0.3% triton-X PBS",
+    "Remove PBS from wells and replace with 500ul Secondary antibody mix. Cover with aluminum foil. Note: secondary antibodies are light sensitive, so from this point on the plate MUST be covered from light as much as possible. Incubate at RT on shaker for 120 min.",
+    "3X PBS washes as described in Step 5 and 5.1 with the plate covered go to step #5",
+    "Tertiary Antibody (for cFOS only) make enough: AF-488 streptavidin conjugated (1:1000, Thermo Fisher, #S11223) in 1% NGS (Vector Labs, #S-1000-20) in 0.3% triton-X PBS",
+    "Replace PBS in wells with 500uL of tertiary antibody solution, cover the plate with aluminum foil, and incubate at RT on shaker for 120 min.",
+    "3X PBS washes as described in step 5 and 5.1 with the plated covered go to step #5",
+    "Mounting with medium with and without DAPI"
+  ],
+  "authors": [
+    "Bilge Buyukdemirtas"
+  ],
+  "creator": "Bilge Buyukdemirtas",
+  "published_on": 1682376933,
+  "created_on": 1682365845,
+  "keywords": []
+}

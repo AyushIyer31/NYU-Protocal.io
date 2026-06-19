@@ -1,0 +1,43 @@
+{
+  "id": 67219,
+  "title": "Multiplex PCR Assay for Clade-typing Salmonella Enteritidis",
+  "uri": "multiplex-pcr-assay-for-clade-typing-salmonella-en-cdvts66n",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l2ok1jv1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"7qu1j\",\"text\":\"Salmonella Enteritidis is one of the most commonly reported serovars of non-typhoidal Salmonella causing human disease and is responsible for both gastroenteritis and invasive non-typhoidal Salmonella (iNTS) disease worldwide. Whole-genome sequence (WGS) comparison of Salmonella Enteritidis isolates from across the world have identified three distinct clades, named Global Epidemic, Central/East African and West African, all of which have been implicated in epidemics: the Global Epidemic clade was linked to poultry-associated gastroenteritis, while the two African clades were related to iNTS disease. Despite the recognition of different Salmonella Enteritidis clades, the distribution and epidemiology of these clades across Africa is poorly understood because currently identification of these clades requires whole genome sequencing capacity. Here, we developed a sensitive, time- and cost-effective real-time PCR assay capable of differentiating between the Salmonella Enteritidis clades to facilitate surveillance and to inform public health response.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":10},{\"style\":\"italic\",\"offset\":269,\"length\":11},{\"style\":\"italic\",\"offset\":644,\"length\":10},{\"style\":\"italic\",\"offset\":968,\"length\":11}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"7aq02\",\"text\":\"In respect of the phyletic structure of S. Enteritidis, we have designed primers to distinguish three clades and an outlier cluster in a single reaction. These are henceforth denoted “Regional” and “Clade”. The purpose of the Regional (African or Global classification) and Clade (Global Epidemic, Global Outlier, East or West African classification) assays is to further classify S. Enteritidis isolates to better understand the transmission and epidemiology of each S. Enteritidis clade. The Regional and Clade assays described here are limited to previously confirmed S. Enteritidis isolates.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b3fgc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eur61\",\"text\":\"References:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":11}],\"entityRanges\":[],\"data\":{}},{\"key\":\"ahd7m\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vlbu\",\"text\":\"1. Page AJ, Cummins CA, Hunt M, Wong VK, Reuter S, Holden MTG, et al. Roary: rapid large\\u0002scale prokaryote pan genome analysis. Bioinformatics. 2015 Nov 15;31(22):3691–3. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cua0g\",\"text\":\"2. Rutledge RG, Co C. Mathematics of quantitative kinetic PCR and the application of standard curves.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Select twelve Salmonella Enteritidis isolates that represent the Global Epidemic, Outlier, East African and West African clades (three biological replicates per clade) predicted by the hierBAPS (hierarchical Bayesian Analysis of Population Structure) algorithm. Distinct Salmonella Enteritidis lineages associated with enterocolitis in high-income settings and invasive disease in low-income settings.. Nature genetics.",
+    "Streak the twelve selected Salmonella Enteritidis isolates on 5% blood agar (Diagnostic Media Products, Johannesburg, South Africa) plates and incubate Overnight in an IN 750 incubator (Memmert, Schwabach, Germany) at 37 °C .",
+    "Pick single colonies from the blood agar plates and resuspend in 400 µL of 10X TE buffer ( 800 mL distilled water, 2.92 g Tris, 15.76 g EDTA ( pH 8 )) in 2 mL Safe-Lock tubes (Eppendorf, Hamburg, Germany).",
+    "Preform a genomic DNA extraction using the QIAamp DNA Mini Kit (QIAGEN, Hilden, Germany) according to the manufacturer’s recommendations.",
+    "Analyse the annotated whole genome sequences for the twelve selected Salmonella Enteritidis isolates using ROARY v.3.11.2, to identify genes that can uniquely distinguish the geographical region (Global, which includes the Global and Outlier clade, and African, which includes the East and West African clades) and each clade Roary: rapid large-scale prokaryote pan genome analysis.. Bioinformatics (Oxford, England).",
+    "Use EnteroBase v1.1.3 (accessible online: https://enterobase.warwick.ac.uk/species/senterica/search_strains) Multi locus sequence query to confirm in silico that the selected genes can classify sequenced Salmonella Enteritidis isolates into clades based on the presence and absence of the selected genes.",
+    "Design primer and probe sets using the online PrimerQuest tool (Integrated DNA Technology; accessible online: https://eu.idtdna.com/pages/tools/primerquest) using sequences from the selected genes.",
+    "Prepare primer and probe sets according to the manufacturer’s recommendations.",
+    "Dilute primer and probe sets to a concentration of 20 millimolar (mM) using nuclease-free water (Ambion, ThermoFisher Scientific, California, USA).",
+    "Create two master mixes, one with the primer and probe sets for the Regional assay (to distinguish between the Global and African regions) and one with the primer and probe sets for the Clade assay (to distinguish between the Global Epidemic, Global Outlier, East and West African).",
+    "In a 96-well reaction plate (Applied Biosystems, ThermoFisher Scientific, California, USA), place 25 µL of TaqMan Gene Expression Master Mix (ThermoFisher Scientific, California, USA), 17.8 µL of nuclease-free water (Ambion, ThermoFisher Scientific, California, USA), 3 µL of the relevant Master Mix (depending on whether the Regional/ Clade assay is preformed) and 1.2 µL of DNA template in each well.",
+    "Seal the reaction plate with MicroAmp® Optical Adhesive Film (Applied Biosystems, Life TechnologiesTM, California, USA) and centrifuged at 15000 rpm, , for 00:01:00 using an AllegraTM X-22R Centriuge (Beckman CoulterTM, California, USA) to ensure all reagents are concentrated at the bottom of the wells.",
+    "Load the reaction plate into a 7500 Real Time PCR System (Applied Biosystems, Life TechnologiesTM, California, USA) and set up using the following reaction conditions: 50 °C for 00:02:00 , followed by 95 °C for 00:10:00 and 40 cycles of 95 °C for 00:00:15 , 60 °C for 00:00:30 and 72 °C for 00:00:30 .",
+    "Preform 10-fold serial dilutions on the genomic DNA from two control panel Salmonella Enteritidis isolates that together contain all the target genes.",
+    "Quantify the DNA concentrations spectroscopically using a NanoDrop 1000 Spectrophotometer (ThermoFisher Scientific, California, USA).",
+    "Set up a real-time PCR assay as described above.",
+    "Determine the limit of detection by assessing the DNA concentration yielding the highest Ct (cycle threshold) value under 30 cycles.",
+    "Calculate the linear range for the Ct values of the Regional- and Clade-typing assays using the CORREL function in Microsoft Excel 2010.",
+    "Plot a calibration curve (depicting the change in cycle threshold value with the change in log DNA concentration) and calculate the amplification efficiency (PCR efficiency = 10-1/slope – 1) Mathematical model of real-time PCR kinetics.. Biotechnology and bioengineering."
+  ],
+  "authors": [
+    "Sarah Gallichan",
+    "Blanca M. Perez-Sepulveda",
+    "Nicholas A. Feasey",
+    "Jay C. D. Hinton",
+    "Anthony M. Smith"
+  ],
+  "creator": "Sarah Gallichan",
+  "published_on": 1658924503,
+  "created_on": 1658389836,
+  "keywords": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": 79775,
+  "title": "Gcase co-immunoprecipitation",
+  "uri": "gcase-co-immunoprecipitation-cr57v89n",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn2ompg5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"92qtc\",\"text\":\"We developed this protocol to identify protein-protein interactions between the enzyme glucocerebrosidase (GCase) and other proteins in human iPSC-derived Neural Precursor Cells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"2vicr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5gf9q\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"cg4hf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1ffdh\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"6mr8h\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7r6id\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"ak8hn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"42a4n\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":3,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"al2ob\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":236455,\"guid\":\"41F349DE341F11EE9D4302C0B41BC903\",\"name\":\"Pierce\\u0026trade; IP Lysis Buffer\",\"mol_weight\":0,\"sku\":\"87787\",\"url\":\"https://www.thermofisher.com/order/catalog/product/87787\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":242141,\"guid\":\"42019D33341F11EE9D4302C0B41BC903\",\"name\":\"Pierce Protease and Phosphatase Inhibitor Mini Tablets\",\"mol_weight\":0,\"sku\":\"A32959\",\"url\":\"https://www.thermofisher.com/order/catalog/product/A32959\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":236807,\"guid\":\"41F42BFC341F11EE9D4302C0B41BC903\",\"name\":\"Pierce\\u0026trade; Crosslink Magnetic IP/Co-IP Kit\",\"mol_weight\":0,\"sku\":\"88805\",\"url\":\"https://www.thermofisher.com/order/catalog/product/88805\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}},\"3\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":182866,\"guid\":\"41AA8DFF341F11EE9D4302C0B41BC903\",\"name\":\"Pierce Protein A/G Magnetic Beads\",\"mol_weight\":0,\"sku\":\"88802\",\"url\":\"https://www.thermofisher.com/order/catalog/product/88802\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":95,\"name\":\"Thermo Fisher Scientific\",\"link\":\"https://www.thermofisher.com/us/en/home.html\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Wash cells 1X with phosphate-buffered saline (PBS, Sigma‒Aldrich) and detach using Accutase.",
+    "Pellet the cell suspension at 280 rcf, 23 °C, 5 minutes .",
+    "Lyse the pellets in IP/lysis buffer (Thermo Fisher, #87787) supplemented with a protease/phosphatase inhibitor cocktail (Pierce, #A32959).",
+    "Carry out coimmunoprecipitation using the Thermo Fisher Pierce Crosslink Magnetic IP/Co-IP Kit (#88805) according to the manufacturer´s instructions:",
+    "Prewash 25 µL of Pierce protein A/G magnetic beads (Thermo Fisher, #88802-3) twice with 1X Modified Coupling Buffer and incubate with 10 µg of GBA MaxPab polyclonal rabbit antibody (Abnova) or normal rabbit IgG (Covalab, #pab01004-P) on a rotating wheel Overnight at 4 °C .",
+    "The following day, crosslink the antibody to the beads with a 0.25 millimolar (mM) DSS solution for 01:00:00 on a rotating wheel at Room temperature .",
+    "Incubate crosslinked magnetic beads Overnight with a total of 7 mg of protein for each lysate.",
+    "Elute Coimmunoprecipitated proteins from the beads with 60 µL of the kit-provided Elution buffer pH 2.0 (Pierce, #88805) and neutralize with 6 µL of Neutralization Buffer provided with the kit.",
+    "Prepare samples for Western blotting by adding 5x Lane buffer +10% DTT 1 Molarity (M) to a final concentration of 1X. Each western blot input sample loaded corresponds to a total of 50 µg of protein. Each western blot CoIP sample loaded corresponded to the total of each elution product ( 66 µL )."
+  ],
+  "authors": [
+    "michela.deleidi",
+    "Federico Bertoli",
+    "Maria Jose Perez J.",
+    "Hariam Raji"
+  ],
+  "creator": "Federico Bertoli",
+  "published_on": 1680200713,
+  "created_on": 1680199805,
+  "keywords": []
+}

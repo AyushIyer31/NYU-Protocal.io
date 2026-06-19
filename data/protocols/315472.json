@@ -1,0 +1,37 @@
+{
+  "id": 315472,
+  "title": "Semi-automated quantification of microglial CD68 and Iba1 immunohistochemistry signal in mouse brain slices",
+  "uri": "semi-automated-quantification-of-microglial-cd68-a-jybqcpsmx",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6j6zzvqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"tvrdf\",\"text\":\"Standardized procedure for semi-automated detection and quantification of CD68 and Iba1 in floating brain sections, using image acquisition, AI-based segmentation, and downstream data analysis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"k9pii\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"91k35\",\"text\":\"A GA3 macro in NIS-Elements (Nikon imaging software) is an analysis script that automates image processing and quantitative measurements. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9s5ot\",\"text\":\"All GA3 macros necessary for this protocol are available here: https://github.com/Louis-EricTrudeau/Trudeau-lab/tree/main/Mukherjee-2026/GA3\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":63,\"length\":77}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"4AA6234943FD11F19A3B0A58A9FEAC02\",\"url\":\"https://github.com/Louis-EricTrudeau/Trudeau-lab/tree/main/Mukherjee-2026/GA3\"}}}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"hmofh\",\"text\":\"- Slide scanner (Zeiss AxioScan 7)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5itcv\",\"text\":\"- Analysis Workstation\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"kh8b2\",\"text\":\"- Zen software (Zeiss)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6qwqr\",\"text\":\"- NIS-Elements Advance Research software (Nikon) with GA3 pipelines Jobs (https://github.com/Louis-EricTrudeau/Trudeau-lab/tree/main/Mukherjee-2026/GA3), and Batch Deconvolution\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":74,\"length\":77}],\"data\":{}},{\"key\":\"ixwav\",\"text\":\"- GraphPad Prism\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"etc1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"0A952D0F43FD11F1BEA10A58A9FEAC02\",\"url\":\"https://github.com/Louis-EricTrudeau/Trudeau-lab/tree/main/Mukherjee-2026/GA3\"}}}}",
+  "steps": [
+    "Verify accuracy of each step visually after AI processing or batch macro analysis.",
+    "Convert images to TIFF format in batch using Zen software. Processing - Batch Batch Method: OME TIFF-Export Method Parameters: see Figure 1 Figure 1",
+    "When sectionning the mouse brain in 40 µm coronal sections, collect one 40 µm coronal section out of every six for immunohistochemistry. Perform immunohistochemistry labeling for DAPI, Iba1, CD68, and TH (tyrosine hydroxylase) using appropriate primary and secondary antibodies.",
+    "All the images were deconvolved with the Automatic function in BatchDeconvolution 6.10 NIS software.",
+    "Perform automated quantification using the GA3 &#34; Iba1_and_CD68_-_only_EDF &#34; on NIS-Elements software.",
+    "Import data into GraphPad Prism and generate plots.",
+    "Convert images to ND2 file format for analysis in NIS software (Nikon). If necessary, remove out-of-focus planes from each Z-stack. Retain at least 15 planes per Z-stack and ensure that all images contain the same number of planes.",
+    "Acquire images using laser excitation of 405, 488, 546 and 647nm. Scan sections to obtain 20 Z-stacks with Z-steps of 1µm, using a 40x objective.",
+    "Define regions of interest (ROI) per hemisphere from a pre-scan at 5x. Three striatal coronal slices were selected per brain: - The first slice was chosen at the level where the corpus callosum from both hemispheres was nearly touching. - The second slice was selected at the level where the anterior commissure formed a straight line. - The third slice included the hippocampus. Capture reference screenshots of selected regions.",
+    "Order the data from the csv file in Excel.",
+    "Train the segmentation AI on NIS-Elements software to detect and count the microglia as described here .",
+    "Set all the tresholds and filters on multiple representative images.",
+    "Link the generated AI within the GA3.",
+    "Perform the automated quantification."
+  ],
+  "authors": [
+    "Amandine Even",
+    "Alex Tchung",
+    "Nicolas Giguère",
+    "louis-eric.trudeau Trudeau"
+  ],
+  "creator": "Amandine Even",
+  "published_on": 1778159821,
+  "created_on": 1776800590,
+  "keywords": []
+}

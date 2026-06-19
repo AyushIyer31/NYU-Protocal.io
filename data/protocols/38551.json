@@ -1,0 +1,29 @@
+{
+  "id": 38551,
+  "title": "FCMPASS - Importing fcs files ",
+  "uri": "fcmpass-importing-fcs-files-bhvxj67n",
+  "doi": "dx.doi.org/10.17504/protocols.io.bhvxj67n",
+  "description": "{\"blocks\":[{\"key\":\"b4shq\",\"text\":\"This protocol outlines the steps required to import fcs files for calibration using the FCMPASS software. This is one of a number of protocols in the pipeline for performing small particle calibration using the fcmpass software package.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"b9tcu\",\"text\":\"FCMPASS software can be accessed at https://nanopass.ccr.cancer.gov.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Once a dataset has been created click the ‘Begin Calibration’ button.",
+    "Import fcs files by selecting the ‘+’ icon next to the ‘Files to calibrate’ table.",
+    "In the new window navigate to the folder containing the fcs files you wish to calibrate and select ‘OK’.",
+    "The fcs files and related metadata will now be imported.",
+    "If the folder contains fcs files that you do not wish to be calibrated, select them and click the ‘–‘icon. The metadata related to the remaining files will then be reprocessed.",
+    "The parameters e.g. SSC-H, SSC-A that are available in further steps of the software are those that are common to all the loaded fcs files. If files that are loaded do not have any common parameter names a selection will not be available in these steps.",
+    "Under the ‘Sample Type’ column all loaded files by default are listed as ‘Sample’. For the relevant files these can be adjusted to ‘SSC Calibration’ or ‘FL Calibration’ depending on what the sample was used for.",
+    "Once completed select ‘Next’."
+  ],
+  "authors": [
+    "Joshua A Welsh",
+    "Jennifer Jones"
+  ],
+  "creator": "Jennifer Jones",
+  "published_on": 1596442293,
+  "created_on": 1593039984,
+  "keywords": []
+}

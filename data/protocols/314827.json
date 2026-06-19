@@ -1,0 +1,39 @@
+{
+  "id": 314827,
+  "title": "Purification of 3xFLAG-ATG2A from Expi293 Cells",
+  "uri": "purification-of-3xflag-atg2a-from-expi293-cells-jxpjcpmkp",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn5onqg5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"98gag\",\"text\":\"Protocol is largely the same as, \\\"Purification of the NLRP1-DPP9 Complex from Expi293F Cells\\\", with some small changes due to protocol differences in the Melia lab.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"b7h1f\",\"text\":\"Cells should be \\u003e95 % viable and doubling every 24 hr. Mantain cells with constant shaking at 100 RPM, 37°C, 5% CO2. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":114,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"9i6be\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7hkda\",\"text\":\"Need maxi-prepped DNA, ideally using an endotoxin-free kit. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"8Ihiu\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"u8IXS\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"6KRqh\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"yBvNu\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"50cts\",\"text\":\"vented PETG flasks (Thermo Scientific, Nalgene; 4115-0500)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":210688,\"guid\":\"41B79723341F11EE9D4302C0B41BC903\",\"name\":\"Opti-MEM\\u0026trade; I Reduced Serum Medium, no phenol red\",\"mol_weight\":0,\"sku\":\"11058021\",\"url\":\"https://www.thermofisher.com/order/catalog/product/11058021\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":240849,\"guid\":\"41FE4D0A341F11EE9D4302C0B41BC903\",\"name\":\"Expi293\\u0026trade; Expression Medium\",\"mol_weight\":0,\"sku\":\"A1435101\",\"url\":\"https://www.thermofisher.com/order/catalog/product/A1435101\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":240889,\"guid\":\"41FE6B32341F11EE9D4302C0B41BC903\",\"name\":\"Expi293F\\u0026trade; Cells\",\"mol_weight\":0,\"sku\":\"A14527\",\"url\":\"https://www.thermofisher.com/order/catalog/product/A14527\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Grow Expi293F cells (ThermoFisher, A14527) in Expi293™ Expression Medium (ThermoFisher, A1435101) to 2-3 million cells/mL at the desired culture volume, such as 100 mL. Choose the appropriate flask for the desired volume of cell culture to ensure appropriate gas exchange. If cells are grown slightly above 3 million cells/mL (up to 6 million cells/mL), dilute to 3 million cells/mL using fresh medium day-of. Otherwise, dilute below 1.5 million cells/mL and try again another day. Put cells back in the incubator once prepared, for now. Note that these cells require an orbital shaker to keep them in solution. Cells should be &gt;95 % viable (e.g. with trypan blue, Thermofisher 15250061) and doubling every 24 h.",
+    "Warm Opti-MEM to RT. In the hood, transfer RT Opti-MEM 100 mL, per 1L cells to a small sterile, autoclaved flask. For smaller culture volumes, falcon tubes can be used.",
+    "Transfer endotoxin-free DNA encoding pCMV 3xFLAG-ATG2A into the Opti-MEM flask. Swirl to mix.",
+    "Add polyethylenimine (PEI, 300 µL, per 100 mL cells at 1 mg/mL or 1.5 mL, per 1L cells at 2 mg/mL ). Swirl to mix. Incubate in the hood 30-45 min 00:30:00 . See the following resource for preparing PEI: https://www.addgene.org/protocols/transfection/",
+    "In the cell culture hood, slowly pour Opti-MEM-DNA-PEI mixture into the flask containing cells (from step 1) while gently shaking. Return flask to the incubator, and incubate 18:00:00 .",
+    "Add sterile-filtered valproic acid (VPA, 700 uL per 100 mL.of cells, 500 mM, prepared from Sigma P4543) into the flask with the transfected cells. This step boosts protein production. Return to the shaker for 48-72 hrs.",
+    "Harvest cells by centrifugation 2000 rpm, 4 °C, 20 minutes . Discard the supernatant. The resulting pellet can be stored at -80C until protein purification. Sterile technique is no longer required. Note that a ring of dead cells will be present in a rim of the upper flask.",
+    "Resuspend the cell pellets in 10 mL of pre-chilled purification buffer A (500 mM NaCl, 20 mM HEPES, pH: 8.0, 10% glycerol, 1 mM TCEP), supplemented with 1x EDTA-free protease inhibitor cocktail (Roche; 11873580001) per 100 mL of cells.",
+    "Lyse the cells by subjecting the pellet resuspensions to 6 freeze/thaw cycles in liquid nitrogen.",
+    "Clarify the lysates by centrifugation at 18,500 x G for 30 min.",
+    "Transfer the supernatants to the columns and incubate under mild agitation for 2 hours at 4 °C",
+    "Prepare affinity columns by washing 150 μL of anti-Flag M2 agarose resin per 100 mL of cells with buffer A.",
+    "Pass the lysate through the gravity filtration column and then use four column volumes of buffer A to wash the beads.",
+    "Incubate the beads with 2.5 mM ATP and 5 mM Mg2+ in buffer A overnight at 4 °C to remove chaperones.",
+    "Wash the columns two more times with buffer A.",
+    "Elute the protein using buffer A supplemented with 50 μL of 1 mg/mL 3x-Flag (DYKDDDDK) peptide (ApexBio Technology; A6001) per 100 mL of initial culture volume.",
+    "Determine protein concentration against a BSA standard curve by Coomassie staining prior to subsequent assays.",
+    "Flash freeze the protein samples in liquid nitrogen for storage at -80 °C."
+  ],
+  "authors": [
+    "Devin Fuller",
+    "Thomas Melia"
+  ],
+  "creator": "Devin M. Fuller",
+  "published_on": 1778526890,
+  "created_on": 1775823374,
+  "keywords": []
+}

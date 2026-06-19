@@ -1,0 +1,37 @@
+{
+  "id": 111499,
+  "title": "Molecular testing for crop viruses (School Genetics Club)",
+  "uri": "molecular-testing-for-crop-viruses-school-genetics-dq5j5y4n",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn9xnql5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"l06n\",\"text\":\"This describes a protocol that can be carried out in a classroom environment for educational purposes. It enables students to get hands-on practice of running a PCR to identify if an insect has a virus. Control material can be provided along with unknown samples for testing. A primer set targeting an aphid gene is also provided to help the students reduce false negatives (for example due to extraction failures, or PCR inhibitors being present in the sample). This can be carried out as a simplex PCR reaction (testing one primer at a time), and once evaluated, students can investigate how they might reduce workload and move to a multiplex PCR reaction (where the control gene and virus are amplified simultaneously).  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1tp3r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1cu6s\",\"text\":\"The students will be provided with eight samples that need to be tested to determine if they are positive or negative for the sample. They will also be provided with positive and negative controls to run with each batch of samples. The students should first test the samples with primers targeting the virus and compile the results. They then should test the samples with the primers targeting an aphid gene to make sure all samples are OK and amplify a product as expected. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2c6io\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b9pha\",\"text\":\"The details on the sequence of the virus targeted can be found in  OQ686648  and further information on the source of this data can be found here.  The students should try and locate the sequence of the primers used in the assay or use the virus genome to design new primers for a PCR assay. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":67,\"length\":8},{\"key\":1,\"offset\":141,\"length\":4}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"D5373B89934A4534A3595150EA13924B\",\"url\":\"https://www.ncbi.nlm.nih.gov/nuccore/OQ686648.1/\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"CDD12F775F6D45A3876E7DEE22FE317A\",\"url\":\"https://www.scienceopen.com/hosted-document?doi=10.15212/ijafr-2023-0110\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Identify the templates you want to use as input for your PCR amplification - these will consist of: samples you want to test for yellow dwarf virus (these will be labelled US01, US02, ... etc) positive controls (representing virus infected aphids to help the researcher know that their protocol worked, these will be labelled PC-MAV), a negative control (representing virus free aphids to help the researcher ensure that PCR amplification will not show a product for the virus when an aphid is not infected, this will be labelled NC-SA), and a no template control (this has no template DNA available for amplification by PCR and helps the researcher ensure that their reagents are free from contamination, it is labelled as NTC).",
+    "Identify the primers you want to use in the test and thaw on ice. The following table shows the primer details that can be used to identify if an aphid has the virus BYDV-MAV. There is also primers that target a gene in the aphid (GAPDH gene) and this can be used as a control to make sure your extraction worked (so help to reduce false negatives). The choice of primers to use will depend on your target assay and each primer is provided as a working solution at 10 micromolar (µM) . Primers: %s %s Each PCR will require a forward and reverse primer: if testing for the virus then you can use MAV-For and MAV-Rev, if amplifying the aphid gene GAPDH then you can use GAPDH-SA-For and GAPDH-SA-Rev",
+    "Identify the remaining ingredients required to run the PCR and place on ice - (i) the enzyme master mix to carry out the amplification, and (ii) molecular biology grade water. The enzyme master mix is called Classic Taq++ (Tonobo) and this contains Taq polymerase (to amplify the DNA), dNTPs (nucleotide building blocks used during amplification), and buffers. This is supplied in a 2X concentration (so for example, to get 1X in a final reaction of 25 µL you would need to add 12.5 µL of Classic Taq++).",
+    "Identify the total number of reactions that will be carried out (this is the number of test sample plus the controls) and select appropriate plastics that will be used to prepare and hold reactions during the PCR.",
+    "Each reaction needs to be prepared according to the following recipe: %s %s The reactions should be prepared in PCR strips, individual PCR tubes, or PCR plates (be sure to label or record plate position so you know what template/sample was in what tube or well).",
+    "Place the reactions in a thermo cycler and run the following PCR cycle: 95 °C 00:01:00 followed by 40 cycles of 95 °C 00:00:15 60 °C 00:00:15 72 °C 00:00:15 and a final elongation step of 72 °C 00:03:00",
+    "Once the PCR cycle is finished then place the reactions on ice until gel electrophoresis. Note: the completed reactions can be placed in the freezer until ready to move to gel electrophoresis.",
+    "Prepare a 1.2 percent TBE agarose gel according to standard protocol.",
+    "Use 5 µL of PCR product together with 5 µL of water and 2 µL of 6X loading buffer.",
+    "Load the samples into the gel alongside a 100 bp DNA ladder for time appropriate for voltage and gel size.",
+    "Prepare a 3X GelGreen staining solution and place the gel into solution (for example in an old lunch/take-away box) with gentle agitation for approximately 00:30:00 .",
+    "Image the gels with a blue light transilluminator.",
+    "Identify the ingredients you need to carry out visualisation of your PCR products, (i) running buffer, (ii) agarose gel, (iii) DNA ladder, (iv) GelGreen or equivalent, (v) blue light transilluminator."
+  ],
+  "authors": [
+    "Maximilian Schughart",
+    "Tracey Mason",
+    "Stephen Byrne",
+    "Louise McNamara",
+    "Marta Niedzicka"
+  ],
+  "creator": "Stephen Byrne",
+  "published_on": 1773205912,
+  "created_on": 1730715616,
+  "keywords": []
+}

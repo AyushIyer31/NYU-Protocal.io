@@ -1,0 +1,33 @@
+{
+  "id": 125757,
+  "title": "Immunofluorescence staining",
+  "uri": "immunofluorescence-staining-d6259gg6",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbnpz3gpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"dcaos\",\"text\":\"H3K9me3/S10p (R20236, nsJ Bioreagents, San Diego, USA)  is an epigenetic modification to the DNA packaging protein Histone H3 involved in regulation of senescence. H3K9me3/S10p was detected by immunofluorescence assays. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":59,\"length\":105}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"fjl78\",\"text\":\"The primary antibody rabbit anti-sheep Recombinant H3K9me3/S10p (R20236) was acquired from nsJ Bioreagents (San Diego, USA). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9k8jn\",\"text\":\"µ-Slide 18 Well polymer bottom slides (81816, ibidi GmBH, Gräfelfing Germany)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bu3io\",\"text\":\"primary antibody rabbit anti-sheep Recombinant H3K9me3/S10p (R20236, nsJ Bioreagents, San Diego, USA)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2d1cq\",\"text\":\"goat anti-rabbit Alexa Fluor 488\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "The cells were washed three times with warm PBS +/+ (Mg2+/Ca2+) and fixed with 4% formol for 10 min at room temperature.",
+    "The fixed cells were washed twice and then blocked with Blocking Buffer I (10% FCS, 1% BSA, 0.1%Triton X100 in PBS +/+ (Mg2+/Ca2+)) for 1h 30 min at room temperature.",
+    "The cells were incubated overnight at 4 o C with primary antibody rabbit anti-sheep Recombinant H3K9me3/S10p (R20236, nsJ Bioreagents, San Diego, USA) in Blocking Buffer II (5% FCS, 0.5% BSA, 0.1% Triton X100 in PBS +/+ (Mg2+/Ca2+)).",
+    "The cells were washed with warm PBS+/+ (Mg2+/Ca2+) and incubated with goat anti-rabbit Alexa Fluor 488 1:600 for 1 h in the dark.",
+    "The cells were washed three times. VectaShield mounting medium with DAPI (50011, ibidi GmBH, Gräfelfing Germany) was used and the slides were stored at 4 °C.",
+    "For comparison purposes, microscope settings and image acquisition parameters were kept unaltered throughout parallel documentation procedures. Negative controls were performed in the absence of the primary antibodies.",
+    "The obtained six independent images were exported to Image J 1.37c software (NIH, Bethesda, MD, USA) for quantification analysis.",
+    "Regions of interest (ROIs) outlining complete individual nucleus were done automatically. Following assignment the DAPI channel was thresholded using the Otsu method (Otsu N (1979) Threshold Selection Method from Gray-Level Histograms) and only foci points within the ROI mask were analysed.",
+    "The computed analysis of the six individual images was expressed as number of foci present normalized by number of nucleus for each experimental condition and by percentage of area occupied within the nucleus by the foci.",
+    "Observations were made using a Zeiss Observer. Six independent images were acquired per condition."
+  ],
+  "authors": [
+    "Karyna Tarasova",
+    "Sinan Gültekin",
+    "iris.gerner Gerner",
+    "Florien Jenner"
+  ],
+  "creator": "Karyna Tarasova",
+  "published_on": 1743446573,
+  "created_on": 1743425412,
+  "keywords": []
+}

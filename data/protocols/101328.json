@@ -1,0 +1,30 @@
+{
+  "id": 101328,
+  "title": "Cluster Counting",
+  "uri": "cluster-counting-de7q3hmw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl8224rl2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"a3vj6\",\"text\":\"Used for counting clusters labeled for pSer129 alpha-synuclein in mouse upper gastrointestinal tract (intestine). Sections should be stained, mounted, and imaged with high resolution (2048 x 2048 scanning).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Stain structures for pSer129 and scan with high-resolution (pixel size of 6.25µm).",
+    "Import the images into ImageJ.",
+    "Adjust signal intensity to a standardized threshold of 95%. (All thresholds, exposure settings, and laser intensities were applied consistently across all scans).",
+    "Convert to grayscale.",
+    "Employ the &#34;Process - Binary - Convert to Mask&#34; function. The mask function can be determined using the default method against a black background.",
+    "Apply a watershed filter to select clusters with similar distribution.",
+    "Execute the &#34;Analyze Particles&#34; function. Size range: 0 to infinity Display and summarize results. This will extract all clusters including their coordinates and areas.",
+    "To extract clusters with a size equal to or smaller than 1 pixel (6.25µm²) and clusters identified as artifacts (&gt;15000 µm²), use the Excel COUNTIF function, count the number of small clusters (6.25 to 50 pixels), medium-sized clusters (50 to 200 pixels), and large clusters (&gt;200 pixels).",
+    "Determine relative density of clusters for the amount of tissue area analyzed."
+  ],
+  "authors": [
+    "daniel.dautan daniel",
+    "Per Svenningsson"
+  ],
+  "creator": "Jacquelyn Haytayan",
+  "published_on": 1720819110,
+  "created_on": 1717682394,
+  "keywords": []
+}

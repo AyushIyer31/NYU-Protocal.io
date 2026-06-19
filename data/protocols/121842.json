@@ -1,0 +1,42 @@
+{
+  "id": 121842,
+  "title": "Enrichment of extracellular vesicles using Millipore membrane filters followed by isolation of exosomal RNA from serum or plasma using the Qiagen miRNeasy Micro kit",
+  "uri": "enrichment-of-extracellular-vesicles-using-millipo-d28s8hwe",
+  "doi": "dx.doi.org/10.1038/protex.2017.075",
+  "description": "{\"blocks\":[{\"key\":\"wfkno\",\"text\":\"This protocol describes how to isolate exosomal RNA from serum/plasma by using Millipore membrane filters for exosomal enrichment followed by the Qiagen miRNeasy Micro kit for RNA isolation. It supercedes an earlier protocol (http://dx.doi.org/10.1038/protex.2015.110). The new protocol is based on our experience vetting the original protocol in multiple labs. The major change is an increase in input volume of biofluid from 200 µL to 500 µL. We found that the larger input volume led to more reproducible amounts of RNA isolation across multiple experiments. We have also included footnotes to explain changes we made to manufacturers' protocols, and observations that were made while carrying out the protocols.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"nmstr\",\"text\":\"Extracellular RNAs (exRNAs) have been found to play an important role in intercellular communication in the body. exRNAs are present in biofluids, in complexes with lipoproteins and ribonucleoproteins, and in extracellular vesicles such as exosomes and microvesicles. Further study and characterization of exRNAs and their carriers could lead to identification of new biomarkers and have potential for development of novel therapeutics.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"lxs5v\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fvcd3\",\"text\":\"Qiagen miRNeasy micro kit (217084)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"h5lox\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"av3gl\",\"text\":\"Chloroform (Sigma-Aldrich – 319988) \\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"kf4lp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"zirjk\",\"text\":\"100% ethanol (Koptec – V1016)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"0v0wg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vhwa5\",\"text\":\"70% ethanol \\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"xi89x\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c9l5x\",\"text\":\"RNase-free water (Ambion – AM9937)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"utkmf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"upgjh\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"nwrfk\",\"text\":\"AU-0.5 filter, 0.5mL, 10kDa MWCO (EMD Millipore – UFC501024)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"20leg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lghsm\",\"text\":\"Microfuge\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"p9vgu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4dtlf\",\"text\":\"1.5 mL Microfuge tubes\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lgubo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mnu2t\",\"text\":\"Vortexer\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"l2qft\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ebaun\",\"text\":\"Phase lock gel tubes, 2 mL (VWR – 10847-802)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"y0fhq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"xeeev\",\"text\":\"Centrifuge with swinging bucket rotors\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Add 500 µL PBS to the AU-0.5 filter, cap, and centrifuge for 10 minutes at 14,000 x g.",
+    "Reverse the device and centrifuge for 2 minutes at 1000 x g to remove the residual PBS from the filter.",
+    "Aspirate PBS from the collection tube.",
+    "Transfer 500 µL sample to the AU-0.5 filter and cap the device.",
+    "Centrifuge for 30 minutes at 14,000 x g. There should be ~15 µL sample remaining in the upper chamber.",
+    "Remove device from the centrifuge and empty the collection tube.",
+    "Add 0.5 mL PBS to the filter device and gently pipette sample multiple times to mix.",
+    "Centrifuge for 30 minutes at 14,000 x g.",
+    "Place filter upside down in a fresh microcentrifuge tube.",
+    "Centrifuge for 2 minutes at 2000 x g 1 to transfer the sample to the collection tube. Discard filter.",
+    "Add 700 µL Qiazol sample in the collection tube and isolate RNA using the miRNeasy micro kit (starting from step 3).",
+    "1 The manufacturer’s protocol suggests spinning at 1000 x g.",
+    "The authors declare no competing financial interests."
+  ],
+  "authors": [
+    "Xandra O. Breakefield",
+    "Roopali Gandhi",
+    "Anil K. Sood",
+    "Leonora Balaj",
+    "Justyna Filant",
+    "Parham Nejad",
+    "Anu Paul",
+    "Srimeenakshi Srinivasan",
+    "Xuan Zhang",
+    "Louise C. Laurent"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1497624738,
+  "created_on": 1497624738,
+  "keywords": []
+}

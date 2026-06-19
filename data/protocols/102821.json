@@ -1,0 +1,32 @@
+{
+  "id": 102821,
+  "title": "Immunofluorescence for adherent cells",
+  "uri": "immunofluorescence-for-adherent-cells-dgnd3va6",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewov19z5olr2/v1",
+  "description": "{\"blocks\":[{\"key\":\"c1qjk\",\"text\":\"This protocol describes a method to perform immunostaining for adherent cells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"8fufk\",\"text\":\"Cells should be cultured and handled following all local biosafety regulations.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"7pm7b\",\"text\":\"This protocol describes a method to perform immunofluorescence on adherent cells on coverslips. It can also be used for immunocytochemistry by changing the secondary antibodies and also adjusted for cells growing on plastic. This protocol has been verified for use with both cell line cells and primary cells, like neurons.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"dbuln\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"8fgi2\",\"text\":\"Inverted tweezers (like Roboz RS-5020)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bd9l1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5evaj\",\"text\":\"Consumables\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":11}],\"entityRanges\":[],\"data\":{}},{\"key\":\"a76qb\",\"text\":\"PBS (Sigma Aldrich P3813) supplemented with 0.01 % sodium azide (Sigma Aldrich S-8032)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"sue5\",\"text\":\"4 % PFA in PBS solution (Thermo Scientific J19943-K2)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8d799\",\"text\":\"NH4Cl (Sigma Aldrich A4514)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":2,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3d6t1\",\"text\":\"Triton X-100 (Sigma Aldrich T8787)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3n42i\",\"text\":\"BSA (Sigma Aldrich A4503)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"rsrt\",\"text\":\"Parafilm (Electron Microscopy Sciences 70990)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dr2in\",\"text\":\"Glass slides (VWR 16004-368)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2cp77\",\"text\":\"Prolong Diamond mountant (Thermo Scientific P36970)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9ei0l\",\"text\":\"Clear nail polish\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Fix cells with 4 % (v/v) PFA in PBS for 00:10:00 . Note: Discard PFA in a special container and not in the drain.",
+    "Quench PFA by using a 50 millimolar (mM) NH 4 Cl solution in PBS for 00:10:00 .",
+    "Permeabilize cells with 0.25 % (v/v) Triton X-100 in PBS for 00:10:00 .",
+    "Block with 4 % (v/v) BSA in PBS for 01:00:00 . Note: At this step the protocol can be paused. Blocking can also be done overnight. Other blocking solutions can be used, such as goat or donkey serum matching with the species of the secondary antibodies used.",
+    "Incubate primary antibodies in 4 % (v/v) BSA in PBS for 01:00:00 . For adherent cells on glass coverslips, the antibody solution is drop seeded on parafilm and the coverslip is placed upside down on the antibody solution using the inverted tweezers. For the 22x22 mm coverslips, 100 ul of antibody solution is sufficient for the whole coverslip to be incubated with antibody. For cells growing on plastic the antibody solution can be added in the well/dish.",
+    "Wash cells with PBS for 00:05:00 three times.",
+    "Incubate secondary antibodies in 4 % (v/v) BSA in PBS for 01:00:00 . For immunofluorescence, we usually use Alexa dye secondary antibodies (Thermo Scientific) at a 1:500 dilution.",
+    "Wash cells with PBS for 00:05:00 three times.",
+    "Wash cells with ddH 2 O to remove excess salt and protein crystals. For cells on coverslips, the coverslips are dipped into a beaker with ddH 2 O four times and excess ddH 2 O is removed by touching the edge of the coverslips on absorbent paper.",
+    "Add the coverslip on a glass slide that has been previously drop seeded with Prolong Diamond mountant. Place coverslips inverted and avoid trapping any air in the process. Allow to air dry overnight in a dark environment. For the 22x22 mm coverslips, 50 ul of mountant is sufficient. Pipette mountant with a cut tip to avoid bubbles.",
+    "Seal the coverslips the next day using clear nail polish."
+  ],
+  "authors": [
+    "Alexandros C Kokotos",
+    "Tim Ryan"
+  ],
+  "creator": "Alexandros C Kokotos",
+  "published_on": 1720025695,
+  "created_on": 1720018415,
+  "keywords": []
+}

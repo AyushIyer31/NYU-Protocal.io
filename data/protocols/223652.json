@@ -1,0 +1,32 @@
+{
+  "id": 223652,
+  "title": "Peripheral Blood Sample Processing, RNA Extraction, and qRT-PCR for GRα and GRβ Quantification in NSCLC Patients",
+  "uri": "peripheral-blood-sample-processing-rna-extraction-g6ncbzdax",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl889p7l2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"j3vgy\",\"text\":\"This protocol outlines the step-by-step methodology for peripheral blood collection, buffy coat isolation, RNA extraction, cDNA synthesis, and quantitative real-time PCR (qRT-PCR) to measure GRα and GRβ expression in non-small cell lung cancer (NSCLC) patients undergoing pemetrexed treatment. It includes detailed instructions for sample processing using Ficoll density gradient centrifugation, RNA quality control, cDNA synthesis conditions, and qRT-PCR execution using SYBR Green chemistry. This standardized procedure enables reproducible quantification of gene expression levels from clinical blood specimens.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"xa7up\",\"text\":\"This protocol provides standardized procedures for peripheral blood collection, RNA extraction, and qRT-PCR analysis. Users should ensure compliance with institutional biosafety and ethical requirements before performing the protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"b601c\",\"text\":\"Before starting this protocol, ensure that:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"68dk9\",\"text\":\"1. Institutional Review Board (IRB) approval for working with human peripheral blood samples has been obtained.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dtiim\",\"text\":\"2. All required materials, reagents, and equipment for blood processing, RNA extraction, and qRT-PCR are prepared and calibrated.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lv79\",\"text\":\"3. RNase-free work conditions are established, including cleaned benches, sterilized tools, and use of RNase-free consumables.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2cvt1\",\"text\":\"4. Personal protective equipment (PPE) such as lab coat, gloves, and face protection is available and used throughout.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3f1dt\",\"text\":\"5. Sample labeling, documentation templates, and storage conditions (4°C for short-term, –80°C for long-term) are prepared and verified.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"3mj64\",\"text\":\"Handle human blood samples under biosafety level-2 (BSL-2) conditions and follow appropriate PPE and waste disposal procedures.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Collect 5 mL of peripheral blood in sterile EDTA-K2 tubes during routine follow-up visits.",
+    "Keep samples at 4°C and process within 2 hours to ensure RNA integrity.",
+    "Perform leukocyte separation using Ficoll density gradient centrifugation: Layer blood diluted with PBS (1:1) over Ficoll in 15 mL conical tubes and centrifuge at 400 × g for 20 minutes at room temperature with brake off.",
+    "Collect the buffy coat layer using a sterile pipette and transfer to RNase-free tubes. Store immediately at −80°C until RNA extraction.",
+    "Extract total RNA using RNeasy Midi Kit (Qiagen, Cat# 74104) according to the manufacturer’s instructions. Elute RNA in 100 μL RNase-free water.",
+    "Assess RNA quantity and purity using NanoDrop ND-1000 spectrophotometer by recording A260, A260/A280, and A260/A230 ratios.",
+    "Evaluate RNA integrity by 1% agarose gel electrophoresis in 1× TAE buffer stained with SYBR Green II RNA stain. Confirm presence of 28S and 18S bands.",
+    "Synthesize cDNA from 1 μg of total RNA using RevertAid First Strand cDNA Synthesis Kit (Thermo Fisher, Cat# K1622) following the thermal profile: 65°C for 5 min, 42°C for 60 min, 70°C for 5 min.",
+    "Perform qRT-PCR using LightCycler 96 system (Roche) and Maxima SYBR Green/ROX qPCR Master Mix (Thermo Fisher, Cat# K0221).",
+    "Include technical duplicates for each sample and non-template control (NTC).",
+    "Use beta-actin (ACTB) as the housekeeping gene.",
+    "Calculate relative expression using 2 −ΔCT me thod. Report normalized GRα and GRβ expression levels."
+  ],
+  "authors": [
+    "Bahareh Forouzani-Haghighi"
+  ],
+  "creator": "Bahareh Forouzani-Haghighi",
+  "published_on": 1763366582,
+  "created_on": 1753858547,
+  "keywords": []
+}

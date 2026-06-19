@@ -1,0 +1,25 @@
+{
+  "id": 47288,
+  "title": "Modified Zhen et al. SARS-CoV-2 Spike-Gene qRT-PCR assay for highly sensitive detection of the HV69/70 deletion",
+  "uri": "modified-zhen-et-al-sars-cov-2-spike-gene-qrt-pcr-bseynbfw",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"c2ncs\",\"text\":\"The SARS-CoV-2 B.1.1.7 lineage (British variant) features a number of hallmark mutations, which can be used for screening by conventional Taqman RT-PCR. A recently published highly sensitive diagnostic assay by Zhen et al. (J Mol Diagn, 2020) is coincidentally well suited to detect the HV69/70 deletion as its probe is located right on top of the mutation. In a sample with B.1.1.7 lineage, the assay returns a completely flat amplification curve, representing an assay drop-out phenomenon similar to what can be observed with the Thermo Fischer Taqpath test. We created a second Taqman prove (Probe-2) using locked nucleic acid technology to specifically target the same region including the deletion. In this way, the assay can be used (i.e. as part of a typing panel or multiplex) to detect the HV69/70-deletion in order to screen for different SARS-CoV-2 variants. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Modified Primer/Probe set based on Zhen et al., (J Mol Diagn, 2020): (5&#39; - 3&#39;) A B 1 S-gene fwd TCAACTCAGGACTTGTTCTTAC 2 S-gene rev TGGTAGGACAGGGTTATCAAAC 3 S-gene P-1 FAM-TGGTCCCAGAGACATGTATAGCAT-BHQ1 4 S-gene P-2 (new) Yak-TGGTCCCAG(+A)(+G)AT(+A)GC(+A)T-BHQ1 Yak, YakimaYellow. +X, locked nucleic acid. Primers and Probes were custom made and ordered from TIB MOL (Berlin, Germany) and Ella Biotech (Martinsried, Germany)",
+    "Prepare a 4x primer/probe stock (500µL, for 100 reactions) Oligo stock conc. [µM] final conc. [nM] add volume to stock 1 S-gene fwd 100 400 8 2 S-gene rev 100 400 8 3 S-gene P-1 100 100 2 4 S-gene P-2 100 100 2 5 PCR-grade water - - 482",
+    "Prepare RT-qPCR reaction-mix (100 reactions, final volume 1500µL). For this example, &#34;RNA process control kit&#34; (Roche) is used as one-step RT-PCR master. Reagent add volume [µL] 1 5x Roche one-step RNA process control master 400 2 200x Roche one-step RNA process control RT-Enzyme 10 3 4x primer/probe stock 500 4 PCR-grade water 590",
+    "Add 5µL of sample RNA extract to 15µL of RT-qPCR reaction-mix per well in a 96-well PCR-plate. A z480 analyzer (Roche) was used to run the reaction according to the following protocol: Step temperature duration cycles 1 RT 50°C 30 minutes 2 Denature 95°C 15 minutes 3 Cycle - anneal 60°C 30 seconds | 4 Cycle - denature 95°C 5 seconds 45",
+    "Possible outcomes: Channel (Probe) HV69/70 WT (non-B.1.1.7) Del-HV69/70 (B.1.1.7 and others) 1 FAM (Probe-1) strong signal negative 2 YAK (Probe-2) weak signal strong signal Exemplary amplification curves and results of a clinical sample set using the protocol described above: a) Amplification curves as displayed by the LightCycler480 software. A 10-fold dilution series of SARS-CoV-2 strain HH-1 (HV69/70 wild type) and a clinical isolate positive for del-HV69/70 (B.1.1.7) was prepared and subjected to testing with the dual-probe assay. Signals of Probe-1 (original by Zhen et al.) can be detected in the 480/510-channel (label: FAM-BHQ1). Signals of Probe-2 (modified for del-HV69/70) can be detected in the 540/580-channel (label: Yak-BHQ1). Probe-2 generates weak signals in wild type samples, which can be manually eliminated by fit-points analysis and a positive control. b) A total of 96 clinical samples were subjected to the dual-probe assays. 48 samples were positive for SARS-CoV-2 (predetermined by cobas SARS-CoV-2 IVD assay or inhouse methods), 6 of which were of the B.1.1.7 lineage and harbouring a del-HV69/70 mutation. The dual-probe assay correctly identified all clinical samples. Notably, the 6 B.1.1.7 samples would have been missed by the original assay (including only Probe-1). Detection of the HV69/70 is not sufficient to confirm SARS-CoV-2 B.1.1.7 lineage in clinical samples. Screening for N501Y and P681H SNPs can be used to increase confidence prior to NGS."
+  ],
+  "authors": [
+    "d.noerz"
+  ],
+  "creator": "d.noerz",
+  "published_on": 1613640852,
+  "created_on": 1613380280,
+  "keywords": []
+}

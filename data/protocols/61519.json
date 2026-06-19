@@ -1,0 +1,43 @@
+{
+  "id": 61519,
+  "title": "An optimized protocol for flow virometry (FVM)-based detection and enumeration of T4 bacteriophage",
+  "uri": "an-optimized-protocol-for-flow-virometry-fvm-based-b8bprsmn",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"devl9\",\"text\":\"Flow virometry can support advanced water treatment and reuse by delivering near real-time information about viral water quality. Realizing the full potential of this technique, requires rigorous sample-preparation protocols as well as objective, automated methods for expediting and improving FVM data analysis. Below, we present an optimized sample-preparation protocol for FVM-based detection and enumeration of T4 bacteriophage, an environmentally relevant viral surrogate. The protocol, which was rigorously optimized using a fractional factorial experimental design, blends and improves on existing protocols developed using a traditional “pipeline”-style optimization approach. As use of FVM for viral water-quality assessment expands, we recommend that this protocol be used to validate instrument performance prior to and alongside application of FVM on environmental samples. Widespread adoption of a consistent, optimized analytical approach will engender confidence in FVM data and will facilitate cross-laboratory comparisons.\\n\\n\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Propagate T4 and host from freeze-dried specimens. The bacteriophage T4 and its host Escherichia coli (Migula) Castellani and Chalmers can be ordered from the American Type Culture Collection (ATCC; product nos. 11303-B4 and 11303, respectively) and propagated from freeze-dried specimens according to ATCC instructions (attached). 11303-B4 Product Sheet - Escherichia coli bacteriophage T4.pdf 11303 Product Sheet - Escherichia coli (Migula) Castellani and Chalmers.pdf",
+    "Use propagated T4 and host to prepare purified, high-titer T4 stock for FVM. The protocol explicated here is based on Bonilla et al. (2016) [see citation below]. Bonilla N, Rojas MI, Netto Flores Cruz G, Hung SH, Rohwer F, Barr JJ (2016). Phage on tap-a quick and efficient protocol for the preparation of bacteriophage laboratory stocks.. PeerJ. https://doi.org/10.7717/peerj.2261",
+    "Aliquot propagated specimens and store at -80 °C 200 µL volumes are appropriate for downstream applications described in this protocol. Host should be stored as a solution containing 25 % volume glyglycerol; phage should be stored untreated.",
+    "Incubate propagated host Overnight in approximately 25 mL of nutrient broth ( ATCC Medium 129.pdf )) at 80 rpm, 37 °C, .",
+    "Spike approximately 20 mL of the overnight host culture into 250 mL of nutrient broth (again ATCC Medium 129). Incubate at 80 rpm, 37 °C, 1 hour .",
+    "Spike approximately 200 µL of propagated T4 into the broth solution from step 2.2. Incubate at 80 rpm, 37 °C, 5 hours . Omit T4 spike if prepraring negative control. Following incubation, mixture may be stored overnight at 4 °C .",
+    "Aliquot mixture from Step 2.3 into 5–6 sterile conical tubes. Centrifuge tubes 3200 rcf, °C, 20 minutes to sediment bacterial debris.",
+    "Using a serological pipette and being careful not to disturb the pellet, reserve each supernatant.",
+    "Syringe-filter the supernatants at 0.2 µm into fresh sterile conical tubes.",
+    "Lyse remaining bacteria by adding 10 % volume chloroform to each tube and incubating for 00:10:00 at Room temperature . Chloroform is toxic if swallowed or inhaled. Use caution and appropriate technique (including glass or otherwise solvent-resistant pipette tips) while handling.",
+    "Centrifuge tubes 3200 rcf, °C, 5 minutes to collect chloroform.",
+    "Using a serological pipette and being careful to avoid the chloroform interface, reserve and combine the supernatants.",
+    "Transfer 15 mL of supernatant at a time to the upper reservoir of a 100 kDa Amicon Ultra-15 Centrifugal Filter Unit Merck Millipore (EMD Millipore) Catalog #UFC910024 . Concentrate by centrifuging 3200 rcf, °C, 5 minutes . Reserve the retentate. The same Amicon device may be reused to concentrate additional volumes of supernatant. When the filter begins to clog, transfer the contents of the upper reservoir into a fresh device and continue.",
+    "Perform the wash step. Add 15 mL of Tris-EDTA (TE) buffer [1x] into the upper reservoir of the Amicon device containing the final retentate. Centrifuge 3200 rcf, °C, 5 minutes and reserve the retentate.",
+    "Dilute retentate 100x in TE buffer to obtain working stocks, aliquot ( 100 µL volumes are appropriate for downstream applications described in this protocol), and store at -80 °C . Before using the purified, high-titer stock for downstream applications, we recommend checking the titer through plate-based culturing, qPCR, or similar.",
+    "Prepare sample for FVM analysis.",
+    "Dilute sample in TE buffer to achieve an FCM analysis rate of about 10 2 –10 3 events/sec. The dilution factor will depend on (i) the estimated titer of the sample, and (ii) the instrument-specific analysis settings used.",
+    "Prepare working stock of SYBR dye. SYBR Green I ( SYBR Green I Thermo Fisher Scientific Catalog #S7563 () is recommended if the species of interest are exclusively DNA viruses; SYBR Gold ( SYBR Gold Thermo Scientific Catalog #S-11494 ) is recommended otherwise. Prepare working stocks by diluting the concentrated stock in dimethylsulfoxide (DMSO) Merck MilliporeSigma (Sigma-Aldrich) s such that the final concentration of stain once added to the sample is 5 x 10- 5 the sample volume. Working stocks may be stored in aliquots at -20 °C and thawed in the dark immediately prior to use. The SYBR fluorescent dyes are photosensitive; work quickly when preparing the working stocks to minimize exposure to light.",
+    "Add glutaraladehyde to the sample at a final concentration of 0.5 % volume and incubate at 4 °C for 00:15:00 . Diluted, glutaraldehyde-treated samples may be stored at -80 °C prior to analysis. Avoid repeated freeze-thaw cycles to avoid compromising sample integrity.",
+    "Stain the sample. Add either SYBR Green I or SYBR Gold (depending on whether the species of interest include both DNA and RNA viruses) to the glutaraldehyde-treated sample at 5 x 10 -5 sample volume and incubate in the dark at 50 °C for at least 00:01:00 . Sample should be analyzed as soon as possible after the staining is complete.",
+    "The staining protocol explicated above is designed to be compatible with sample analysis via FVM on a wide variety of flow cytometers. Below, we provide settings for sample analysis on a NovoCyte 2070V coupled with a NovoSampler Pro autosampler (Agilent). In adapting these settings to other instrumentation, the key components to retain are (1) a slow flow rate, and (2) rinses in between each sample to thoroughly flush the fluidics.",
+    "Settings for sample analysis. Collect data using the 488 nm (blue) laser as well as the FSC, SSC, and FITC (530 ± 30 nm) lasers. Analyze a 10-mL volume of each sample was using the lowest instrument flowrate (5 mL/min) and a FITC = 800 threshold. The analysis may be performed with or without instrument mixing of the sample prior to analysis.",
+    "Settings for rinses. Flush fluidics in between each sample by running 150 mL of 1x NovoClean solution (Agilent) followed by 150 mL of MQ water through the sample intake port (SIP) at the highest instrument flowrate (120 mL/min)."
+  ],
+  "authors": [
+    "Hannah Safford"
+  ],
+  "creator": "Hannah Safford",
+  "published_on": 1651255458,
+  "created_on": 1651060826,
+  "keywords": []
+}

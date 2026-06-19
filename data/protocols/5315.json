@@ -1,0 +1,28 @@
+{
+  "id": 5315,
+  "title": "Cloned Genomic Library using Illumina Adapters",
+  "uri": "cloned-genomic-library-using-illumina-adapters-hfbb3in",
+  "doi": "dx.doi.org/10.17504/protocols.io.hfbb3in",
+  "description": "{\"blocks\":[{\"key\":\"dro5g\",\"text\":\"A protocol to create a genomic library (2-5 kb insert size) to screen for genomic regions functioning as centromeres. Uses the NEBNext Illumina library prep kit from NEB to add adapters to fragments and then the fragments can be efficiently assembled into a vector containing homology to the adapter sequences using Gibson Assembly.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"erqqo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"em8ea\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"5ahfs\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "To prepare 2-5 kb inserts, use the red miniTUBE according to the Covaris instructions. We used 200 µL of 70 ng/µL DNA.",
+    "Use NEBNext Ultra II kit. The user is referred to https://www.neb.com/protocols/2015/09/16/protocol-for-use-with-nebnext-ultra-ii-dna-library-prep-kit-for-illumina-e7645 Fragmented DNA: 50 µL NEB Ultra II End Prep enzyme mix: 3 µL NEB Ultra II End Prep reaction buffer: 7 µL Pipet up and down with P200 10x Set up PCR machine for following cycle: Incubate 30 min at 20 C Incubate 30 min at 65 C Hold at 4C until ready to proceed.",
+    "End Prep Reaction from step 2: 60 ul Ligation master mix: 30 ul (note, be careful pipeting viscous solution) ligation enhancer 1 ul Adapter (undiluted) 2.5 ul Pipet up and down with P200 10x Set up PCR machine for following cycle with no heated lid: 20 C for 15 min Add 3 ul USER enzyme mix well. incubate 15 min at 37 C, lid at 50 C.",
+    "Add 15 ul Ampure XP beads Pipet up and down 10x wit P200 Incubate 5 min at Room Temp Incubate 5 min on Magnet Wash beads 2x with 200 ul fresh 80% ethanol (keeping tubes on magnetic stand), 30 sec per wash. Spin briefly on centrifuge and remove remaining ethanol from bottom of tube with pipet Replace tubes on stand Air dry on stand with cap open (5 min) Add 23 ul elution buffer (Qiagen buffer EB = 10 mM Tris, pH 8) Mix well, incubate 5 min room temp. Replace on magnet, incubate 5 min. Remove 20 ul to new tube.",
+    "Use PCR reagents from kit: DNA: 15 ul Q5 master mix 25 ul Index primer 1: 5 ul Universal primer 5 ul Cycle: 98 C, 30 sec 8 cycles of (98 C, 10sec), (65 C 2.5 min) 65 C, 5 min 4 C, hold",
+    "Follow Step 4 cleanup procedure with the following modifications Add 40 ul Ampure XP beads to 50 ul PCR reaction Follow the rest of the protocol from step 4 and elute in 20 ul elution buffer.",
+    "After adapter ligation, the DNA fragments should have the following sequences at the ends: 5&#39;-CAAGCAGAAGACGGCATACGAGATCGTGATGTGACTGGAGTTCAGACGTGTGCTCTTCCGATC- -N2000-5000N- -GATCGGAAGAGCGTCGTGTAGGGAAAGAGTGTAGATCTCGGTGGTCGCCGTATCATT-3&#39; The simplest way to design primers for a vector that will assemble the adapter-ligated fragments into a vector is to use a sequence analysis program (Benchling, etc), paste the above sequence into the vector sequence at the designed place, and design vector primers with ~30-bp overlaps to the above sequence. After designing primers, amplify the vector, treat with DpnI to remove any vector template, and clean up the reaction with Ampure beads as in step 6.",
+    "The cleaned up library can now be assembled into the cleaned up vector. Try a small amount to start with. Add ~20 fmole each component (vector and insert) in a tube with an equal volume of 2x Gibson Assembly Mix (NEB). Assemble for 1 hr at 50 C. Transform suitable E. coli strain with 1 ul of the assembly. Use highly electrocompetent E. coli (I use Epi300 from Epicentre). Count colonies and calculate how much the assembly/transformation must be scaled up so that you can achieve the number of library colonies required for your application. Test 10-20 colonies from the preliminary library by colony PCR to make sure they have the proper size insert and that empty vectors are low."
+  ],
+  "authors": [
+    "Philip D. Weyman"
+  ],
+  "creator": "Philip D Weyman",
+  "published_on": 1490725606,
+  "created_on": 1490397131,
+  "keywords": []
+}

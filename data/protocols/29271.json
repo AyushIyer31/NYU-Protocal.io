@@ -1,0 +1,31 @@
+{
+  "id": 29271,
+  "title": "Steps for Building an Open Source EI-MS Mass Spectral Library for GC-MS -based Metabolomics",
+  "uri": "steps-for-building-an-open-source-ei-ms-mass-spect-8txhwpn",
+  "doi": "dx.doi.org/10.17504/protocols.io.8txhwpn",
+  "description": "{\"blocks\":[{\"key\":\"6serq\",\"text\":\"The objective of this protocol is to provide a set of instructions/ steps to guide ANY NEW USER to generate an open source EI-MS mass spectral library to aid in interpretation of GC-EI-MS spectral data for metabolomics research. Users need to appreciate and acknowledge the efforts of developers who have helped build and released their EI-MS spectral data and associated meta-data for free use and distribution from Mass Bank of North America (MoNA),  RIKEN, GOLM Metabolome Database, Cayman, SWGDRUG, and NIST among others. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "MoNA- Mass bank of North America: https://mona.fiehnlab.ucdavis.edu/downloads RTX5 Fiehnlib (1,118 spectra) GC-MS Spectra (15,114 spectra) ReSpect (6,374 spectra) HMDB (8,540 spectra) MetaboBASE (1,254 spectra)",
+    "From individual open source libraries download all the &#34;.msp&#34; or “.txt” files. Save them locally somewhere in a new folder. The names and links of the available open source spectral / retention time EI-MS libraries are:",
+    "RIKEN EI-MS Spectra : http://prime.psc.riken.jp/Metabolomics_Software/MS-DIAL/index.html Fiehn BinBase DB (Rtx5-Sil MS, predicted Kovats RI, 1021 records) RIKEN DB (Rtx5-Sil MS, Kovats RI, 241 records) Kazusa DB (Rtx5-Sil MS, Kovats RI, 273 records) GL-Science DB (InertCap 5MS-NP, Kovats RI, 494 records) Osaka Univ. DB (CPSil-8CB, Kovats RI, 430 records) Fiehn BinBase DB (Rtx5-Sil MS, FAMEs RI, 1021 records) RIKEN DB (Rtx5-Sil MS, predicted Fiehn RI, 241 records) Kazusa DB (Rtx5-Sil MS, predicted Fiehn RI, 273 records) GL-Science DB (InertCap 5MS-NP, predicted Fiehn RI, 494 records) Osaka Univ. DB (CPSil-8CB, predicted Fiehn RI, 430 records)",
+    "Cayman Spectral Library ( 70eV EI mass spectral data of hundreds of Cayman Chemical&#39;s emerging forensic drug standards): https://www.caymanchem.com/forensics/publications/csl Needs registration and then one can download these spectra for free.",
+    "GOLM Metabolome Database ( mass spectral reference library from biological specimens) : http://gmd.mpimp-golm.mpg.de/download/ (several options available depending on the column-type (VAR5/ MDN35) and RI marker used: FAME or Alkane mixes)",
+    "SWGDRUG MS Library Version 3.6 (October 19, 2019): http://www.swgdrug.org/ms.htm 3160 spectra",
+    "NIST , USA offers several EI-MS spectra for free as well: https://chemdata.nist.gov/dokuwiki/doku.php?id=chemdata:start NIST 17 GC Method / Retention Index MS Library - Extensive collection of GC retention indices with method information",
+    "Copy these spectral information from the open .msp files one by one and copy out to &#34;YOUR NAME Library&#34; and let it keep growing. Just copy entire text files one after the other sequentially into a single .msp file.",
+    "Now open, multiple .txt Notepad files and keep dragging the individual .msp files into these .txt files.",
+    "Now, open a notepad (.txt) file (do not save!) and drag one of these (any!) .msp library file onto this file and now save it as &#34;YOUR NAME Library&#34; (no file extension needed) just as it is (then it automatically is saved as .msp file format and you can scroll through to see the format/ style.",
+    "That&#39;s it, “YOUR NAME GC-EI-MS” open source library is ready to go and be used for MS-DIAL spectral matching for spectra and/ RI or can be added to your AMDIS (NIST, USA) search as well."
+  ],
+  "authors": [
+    "Biswapriya Misra"
+  ],
+  "creator": "Biswapriya Misra",
+  "published_on": 1572298303,
+  "created_on": 1572296754,
+  "keywords": []
+}

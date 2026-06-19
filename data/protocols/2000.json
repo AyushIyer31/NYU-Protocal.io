@@ -1,0 +1,24 @@
+{
+  "id": 2000,
+  "title": "MetaVelvet : An extension of Velvet assembler to de novo metagenome assembly from short sequence reads",
+  "uri": "MetaVelvet-An-extension-of-Velvet-assembler-to-de-d7q9mv",
+  "doi": "dx.doi.org/10.17504/protocols.io.d7q9mv",
+  "description": "{\"blocks\":[{\"key\":\"3l0nt\",\"text\":\"Motivation: An important step of \\\"metagenomics\\\" analysis is the assembly of multiple genomes from mixed sequence reads of multiple species in a microbial community. Most conventional pipelines employ a single-genome assembler with carefully optimized parameters and post-process the resulting scaffolds to correct assembly errors. Limitations of the use of a single-genome assembler for de novo metagenome assembly are that highly conserved sequences shared between different species often causes chimera contigs, and sequences of highly abundant species are likely mis-identified as repeats in a single genome.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":12},{\"style\":\"italic\",\"offset\":387,\"length\":7}],\"entityRanges\":[],\"data\":[]},{\"key\":\"47a11\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"e2g6d\",\"text\":\"Methods:We modified and extended a single-genome and de Bruijn-graph based assembler, Velvet, for de novo metagenome assembly. Our fundamental ideas are first decomposing de Bruijn graph constructed from mixed short reads into individual sub-graphs and second building scaffolds based on every decomposed de Bruijn sub-graph as isolate species genome.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8},{\"style\":\"italic\",\"offset\":98,\"length\":8}],\"entityRanges\":[{\"key\":0,\"offset\":86,\"length\":6}],\"data\":[]},{\"key\":\"16oim\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dj3ec\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":[]},{\"key\":\"85go7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"A10CD63158E4406AB926613BD4CCFFB0\",\"url\":\"http://www.ebi.ac.uk/~zerbino/velvet/\"}},\"1\":{\"type\":\"imageblock\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"73D509081E8743629C89D7A994818675\",\"height\":null,\"is_video\":false,\"mime\":null,\"original_name\":\"fig1.png\",\"placeholder\":\"https://content.protocols.io/bnmc2w6.png\",\"source\":\"https://content.protocols.io/bnmc2w6.png\",\"width\":null}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"1hnle\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"ub4f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"ejkvi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [],
+  "authors": [
+    "Afiahayati ",
+    " Sato K",
+    " Namiki T",
+    " Hachiya T",
+    " Tanaka H",
+    " Sakakibara Y."
+  ],
+  "creator": "Bonnie L Hurwitz",
+  "published_on": 1452788505,
+  "created_on": 1447703787,
+  "keywords": []
+}

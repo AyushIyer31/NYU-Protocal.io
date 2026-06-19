@@ -1,0 +1,36 @@
+{
+  "id": 11167,
+  "title": "Evaluation of normalized miRNA expression in Formalin-Fixed Paraffin-Embedded (FFPE) tissue",
+  "uri": "evaluation-of-normalized-mirna-expression-in-forma-n57dg9n",
+  "doi": "dx.doi.org/10.17504/protocols.io.n57dg9n",
+  "description": "{\"blocks\":[{\"key\":\"81ig9\",\"text\":\"This protocol is provided to synthesize single-stranded cDNA from total RNA samples using the TaqMan® MicroRNA Reverse Transcription Kit and quantification of miRNA using the comparative Cycle threshold (Ct) method. Endogenous controls are used to normalize the expression levels of target miRNAs by correcting differences in the amount of cDNA loaded into the PCR reactions. An appropriate constitutively expressed endogenous control must be selected.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"49rbv\",\"text\":\"For the optimal performance of the TaqMan MicroRNA Reverse Transcription Kit and of the TaqMan MicroRNA Assays, use RNA with the following characteristics:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7o66p\",\"text\":\"Free of inhibitors of reverse transcription and PCR,\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"c94tn\",\"text\":\"Dissolved in PCR-compatible buffer;\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6umc1\",\"text\":\"Free of RNase activity;\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7r2hp\",\"text\":\"Allow the kit components to thaw on ice.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"6mnk8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"7rnqu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Prepare the RT master mix by scaling the volumes listed below to the desired number of RT reactions: %s %s",
+    "Mix gently. Centrifuge to bring solution to the bottom of the tube.",
+    "Place the RT master mix on ice until you prepare the microRNA reaction.",
+    "Combine RT master mix with total RNA and RT primer from each assay set into the corresponding RT reaction tube: %s %s Note: We use 10 ng of total RNA per reaction.",
+    "Seal the tube and mix gently. Centrifuge to bring solution to the bottom of the tube.",
+    "Incubate the tube on ice for 5 min and keep on ice until you are ready to load the thermal cycler: %s %s 00:05:00",
+    "Note: Prepare the reactions on ice. Prepare 17.67 μL of the PCR master mix/water mixture per 20-μL PCR reaction into a eppendorf tube (the PCR reaction tube). Scale the volumes listed below to the appropriate number of RT reactions: %s %s",
+    "Mix gently. Centrifuge to bring solution to the bottom of the tube.",
+    "Add 1.0 μL of 20✕ TaqMan MicroRNA Assay mix into the PCR Reaction tube for appropriate number of RT reactions .",
+    "Dispense 18.67 μL PCR mix for each cDNA that has to be tested in 96-well PCR reaction plate.",
+    "Add 1.33 μL of cDNA from the RT reaction tube into each well of the PCR reaction plate.",
+    "Seal the plate with an optical adhesive cover, then centrifuge the plate briefly to spin down the contents and eliminate any air bubbles.",
+    "Insert the reaction plate into the instrument and start the Thermal cycling reaction as follow: %s %s",
+    "Calculate the difference between the Ct of miRNA target and the Ct of the endogenous control miRNA = ΔCt .",
+    "Calculate the normalized miRNA expression level as 2 –ΔCt . Note: it is recommended to analyzed cDNA sample in triplicate. In this case the mean Ct of miRNA target and of the endogenous control miRNA must be calculated before step 14. Note: to normalized miRNA expression we suggest the use of microRNA such as miR-191 instead of small RNA."
+  ],
+  "authors": [
+    "Alessandra Bisagni",
+    "Stefania Croci."
+  ],
+  "creator": "Alessandra Bisagni",
+  "published_on": 1522422839,
+  "created_on": 1522407297,
+  "keywords": []
+}

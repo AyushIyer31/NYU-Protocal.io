@@ -1,0 +1,32 @@
+{
+  "id": 226466,
+  "title": "Chemical transformation of plasmid into E. coli competent cells",
+  "uri": "chemical-transformation-of-plasmid-into-e-coli-com-g9eabz3af",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgqp675vk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"7nevs\",\"text\":\"From hundreds of transformations, I have optimized this method for the transformation of supercoiled DNA into E. coli using the heat shock method. This is meant as a general guideline, but it is what I have found to work best for my lab. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"3pu76\",\"text\":\"This is meant to be a general protocol for cells prepared using a modified version of the Hanahan method. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"64nop\",\"text\":\"Understand that the total time of this procedure is 1+ day due to the overnight incubation step. Plan the experiment ahead of time!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"a4219\",\"text\":\"1. E. coli competent cells (50 uL) - found in -80ºC\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":3,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"f0s2r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4d25i\",\"text\":\"2. Plasmid for transformation - found in -20ºC\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"968i7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7085q\",\"text\":\"3. SOC media - found in -20ºC\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"boqau\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"74o8j\",\"text\":\"4. 42ºC water bath and 37ºC shaker\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c9v7o\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1ant3\",\"text\":\"5. LB agar plate with antibiotic\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Thaw the competent cells and plasmid on ice for ~10 minutes.",
+    "Add 10-100 ng of plasmid (typically 1-5 uL) to the competent cells. Gently flick the tube to mix the cells and DNA. DO NOT vortex or pipette to mix.",
+    "Allow the cells to sit on ice for 30 minutes.",
+    "Transfer the cells back to ice and allow them to sit for 2 minutes. After 2 minutes, open the caps of the tubes and add 250 uL pre-warmed SOC media to the cells. Allow the tubes to sit with caps open for about a minute.",
+    "After 30 minutes, put cells in foam rack and place in 42ºC water bath for EXACTLY 45 seconds. Do not shake the cells in the bath, and do not exceed 45 seconds. This step is crucial.",
+    "Tightly close the lids to the tubes. Take some tape, and tape the tubes horizontally to the 37ºC shaker incubator. Allow them to shake at 37ºC for 1 hour. This allows for the cells to recover from heat shock.",
+    "Pipette the required volume of cells on the LB agar plate with the correct antibiotics for your cell strain. Use a sterile glass spreader to uniformly distribute the cells.",
+    "During this time, take your LB agar plate(s) and place upside down in the 37ºC incubator.",
+    "After the incubation, bring the pre-warmed plates and cells back to the bench. If the plates have excess moisture, use an aspirator to remove the liquid by tilting plate to the side. DO NOT touch the agar with the aspirator.",
+    "A few minutes before the next step, take an aliquot of SOC media and place in the 37ºC water bath.",
+    "Allow the plate to sit at room temperature for about 10 minutes in order to absorb the liquid. Then, place plates upside down in the 37ºC incubator and leave overnight.",
+    "The required volume of cells is highly variable depending on cell strain, plasmid type, and plasmid amount. As a general guideline, I recommend the following: - BL21 (DE3) cells = 80-100 uL - Rosetta or Rosetta2 (DE3) cells = 150 uL - BL21 (DE3) with pBirA = 100 uL - DH5𝛼 = 20 uL or just perform a streak using inoculation loop. These cells tend to grow a lawn."
+  ],
+  "authors": [
+    "Ainsley Lederer"
+  ],
+  "creator": "Ainsley Lederer",
+  "published_on": 1757058458,
+  "created_on": 1756997688,
+  "keywords": []
+}

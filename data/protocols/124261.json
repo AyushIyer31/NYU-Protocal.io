@@ -1,0 +1,36 @@
+{
+  "id": 124261,
+  "title": "[MDC_Alternative_2D_hiPSC-CM_diff] hiPSC Cardiomyocyte differentiation",
+  "uri": "mdc-alternative-2d-hipsc-cm-diff-hipsc-cardiomyoc-d5kd84s6",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn9p8yl5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"45ssq\",\"text\":\"This protocol outlines a small molecules based, 2D differentiation method for generating high-purity human induced pluripotent stem cell-derived cardiomyocytes (hiPSC-CMs). Optimized for reproducibility across hiPSC lines, the procedure achieves robust cardiac differentiation through sequential modulation of Wnt signaling, yielding functional beating cardiomyocytes by days 7–10.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Coating of culture vessels (Geltrex, Laminin-511, etc.) according to optimize protocol for hiPSC",
+    "Passage hiPSCs as single cells using Accutase or 1x TrypLE after 1x PBS(-) wash",
+    "Day 0 (Priming): Change the medium to 2 mL /well of Cardiac: priming medium (RPMI 1640 + B27 Minus Insulin + CHIR-99021). Use a CHIR concentration between 5-10 micromolar (µM) depending on the individual hiPSC line.",
+    "Day 1: Add 4 mL basal Differentiation medium/well (B27-minus insulin, w/o CHIR-99021) without removing the previous Cardiac: priming medium.",
+    "Day 3 (Induction): Remove the basal Differentiation medium and add 4 mL of Cardiac: induction medium/well (RPMI 1640 + B27 Minus Insulin + IWR-1-endo). Use 5 micromolar (µM) IWR-1-endo for our iPSC.",
+    "Day 5: Add 4 mL basal Differentiation medium/well (B27-minus insulin, w/o IWR-1-endo) without removing the previous Cardiac: induction medium.",
+    "Day 7: Remove Differentiation medium and replace with 2-3 mL Maintenance medium (RPMI 1640 + B27)",
+    "Days 9-12 (Optional Lactate Selection): If desired, perform metabolic selection. Replace Maintenance medium with 2 mL Lactate Selection medium/well (RPMI 1640 w/o glucose + CDM3 supplement + Sodium DL-lactate 50 µL ). Check for cell death and replace Lactate Selection medium as needed. After 24:00:00 , revert to Maintenance medium if a high proportion of beating hPSC-CMs is observed.",
+    "Days 15-21: Perform media changes 3-5 mL every 24:00:00 to 48:00:00 with Maintenance medium depends on the color (yellowish: metabolites such as lactate) of medium. hiPSC-CMs (d20, 1 day Lactate selection) Yield: 146.2 Mio from 18 wells of 6-well plate",
+    "Seed hiPSCs on Matrix-coated 6-well plates at a density of 4x10^5 cells/well in E8 medium supplemented with 10 micromolar (µM) ROCK inhibitor for the first 24:00:00 .",
+    "Incubate in a hypoxia incubator ( 5 %, CO2 , 5 %, O2 , 37 °C ).",
+    "Change the medium to E8 without ROCK inhibitor after 24:00:00 , and continue daily media changes until the cell density reaches 90-95 % (approximately 3-4 days). *Never reach full confluency hiPSC in E8 (day4) before differentiation, 90% confluency",
+    "Ensure that all steps are performed with sterile techniques.Optimize CHIR concentration (5-10 µM) for each cell line.Be gentle during cell resuspension to avoid osmotic shock and shear stress.",
+    "Day 8: Remove Maintenance medium and replace with 2-3 mL Maintenance medium (RPMI 1640 + B27) Beating cells should be observed around days 7-10.",
+    "Days 9-14: Change Maintenance medium 3 mL every 48:00:00 ."
+  ],
+  "authors": [
+    "Yuichiro Ueda",
+    "Carolin Genehr"
+  ],
+  "creator": "Yuichiro Ueda",
+  "published_on": 1748876684,
+  "created_on": 1741786382,
+  "keywords": []
+}

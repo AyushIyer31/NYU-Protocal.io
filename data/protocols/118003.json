@@ -1,0 +1,31 @@
+{
+  "id": 118003,
+  "title": "Sample preparation protocol for Mass Spectrometry Analysis",
+  "uri": "sample-preparation-protocol-for-mass-spectrometry-dxgt7jwn",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn9ekql5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"7mklk\",\"text\":\"This protocol outlines a detailed workflow for protein extraction, quantification, reduction, alkylation, precipitation, and enzymatic digestion (trypsinolysis). This protocol will generate protein samples suitable for further proteomic analyses using mass spectrometry. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"4dcql\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5kn5n\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"c6ldg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"image\",\"mutability\":\"IMMUTABLE\",\"data\":{\"height\":163,\"id\":534274,\"is_video\":false,\"legend\":\"{\\\"blocks\\\":null,\\\"entityMap\\\":null}\",\"mime\":\"image/png\",\"originalFile\":{},\"original_name\":\"image.png\",\"placeholder\":\"https://protocols-files.s3.amazonaws.com/files/sj2dckcm7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\\u0026X-Amz-Credential=AKIAWFTFYUBUZ2U2JGOS%2F20260529%2Fus-east-1%2Fs3%2Faws4_request\\u0026X-Amz-Date=20260529T044519Z\\u0026X-Amz-Expires=604800\\u0026X-Amz-SignedHeaders=host\\u0026X-Amz-Signature=4f3acc2313c5da36d6f3dc9ad827957adafb6a121a51337cadedf28bff8b5fde\",\"source\":\"https://protocols-files.s3.amazonaws.com/files/sj2cckcm7.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\\u0026X-Amz-Credential=AKIAWFTFYUBUZ2U2JGOS%2F20260529%2Fus-east-1%2Fs3%2Faws4_request\\u0026X-Amz-Date=20260529T044519Z\\u0026X-Amz-Expires=604800\\u0026X-Amz-SignedHeaders=host\\u0026X-Amz-Signature=0fbf64b9a45548e89f152ca1be795d358d57949072d69d44f4178302e5a0e886\",\"type\":1,\"width\":550}}}}",
+  "steps": [
+    "Protein extraction If necessary, wash cells with 1 mL of PBS 1X Centrifuge samples at 10,000 rpm for 10 minutes and discard the supernatant Add 50 µL of guanidine hydrochloride to small pellets and 100 µL to larger pellets Perform ultrasonication on the samples (pulse 1, amplitude 20%) for three cycles of 10seconds each and place the samples on ice between each cycle Centrifuge samples at 10,000 rpm for 10 minutes Collect supernatants and store at -20°C",
+    "Solutions to prepare",
+    "Protein dosage In a 96 well plate: Prepare the standard curve with different dilutions of the BgG in triplicates: Dilute the samples if necessary Add 2 µL of samples and 23 µL of water to each well, in triplicates Add 225 µL of diluted Bradford reagent to each well Measure the absorbance at 595 nm Plot the OD values and the standard protein concentrations Determine protein concentration of samples (multiply by the dilution factor) by using thestandard curve",
+    "Reduction Collect 50 µg of proteins and adjust the volume with guanidine hydrochloride to reachthe volume of the least concentrated sample Add 1 µL of Dithioerythritol for 20 µL of sample Vortex briefly and incubate for 20 minutes at 56°C and 450 rpm",
+    "Alkylation Add 1 µL of Iodoacetamide for 21 µL of sample Vortex briefly and incubate for 30 minutes at room temperature, in the dark",
+    "Protein precipitation Dilute samples 2X with MS water Add 4 times the sample volume of cold acetone to each sample Incubate for a minimum of 1 hour at -20°C (overnight is recommended for better proteinprecipitation) Centrifuge at 13,000 rpm for 20 minutes at 4°C Discard the supernatant and let the residual acetone evaporate for maximum 10 minutes.",
+    "Trypsinolysis Prepare a trypsin solution of 0.05 µg/µL with the NH 4 HCO 3 buffer(50mM) Add 20 µL (1 µg) of trypsin to digest 50 µg of proteins (avoid making bubbles) Incubate overnight at 37°C at 450 rpm Stop trypsinolysis with 5 µL of a 0.5% formic acid solution Keep the samples at -80°C for long-term stotage and -20°C for short-term storage Before injection, centrifuge the samples at 13,000 rpm for 20 minutes to pellet any remaining residues"
+  ],
+  "authors": [
+    "Manon Gilson",
+    "Guillaume Bayon-Vicente",
+    "Simone Krings",
+    "Ruddy Wattiez",
+    "Baptiste Leroy"
+  ],
+  "creator": "Manon Gilson",
+  "published_on": 1768902045,
+  "created_on": 1736438104,
+  "keywords": []
+}

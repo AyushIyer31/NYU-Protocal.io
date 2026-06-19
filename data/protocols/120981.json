@@ -1,0 +1,39 @@
+{
+  "id": 120981,
+  "title": "QPCR",
+  "uri": "qpcr-d2dv8a66",
+  "doi": "dx.doi.org/10.1038/nprot.2007.70",
+  "description": "{\"blocks\":[{\"key\":\"mrutp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"rxqro\",\"text\":\"This protocol was used in the above Nature Immunology paper.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":36,\"length\":17}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"byubm\",\"text\":\"10X TAQ Buffer (Stratagene 200435)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1eef7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4wnn8\",\"text\":\"Fluoroscein (Bio-Rad 1708780)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"txxqy\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"wz3st\",\"text\":\"SYBR Green (Bio-Rad)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"x7lcb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"xjmlk\",\"text\":\"Bio-Rad 96 well PCR plates (2239441)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Mix below reagents in a 1.5 mL conical and vortex (good for 96 Q-PCR reactions) 10X TAQ buffer- 300 μL DI water- 2.45 mL 10 μM Fluoroscein (in DMSO) - 1.5 μL (5nM) 1500X SYBR Green-3 μL this will need to be titrated each new batch ordered 10mM dNTPs -40 μL (125 μM) Taq polymerase (made by tech-200 μL)- this will have to be titrated each new batch that is made",
+    "In a given Q-PCR plate, there are typically at least two different primers used- one primer that will act as a loading control for cDNA levels (L32 or actin) and the experimental primer against the gene of choice (Dlgh1, galectin-1, etc.). Each primer will be run in a separate reaction. Each reaction should be run in either duplicate or triplicate. Thus, if you have 10 experimental conditions with 2 primers run in triplicate you will have 60 separate PCR reactions. Keep this in mind when calculating the amount of master mix and primers to add.",
+    "You must run samples of known cDNA concentrations to calibrate the machine. This must be done each time you run a Q-PCR plate. This is done by making 3 or 4 -10 fold serial dilutions of one unmanipulated cDNA sample (Make these fresh each time). I usually will take 1 μL of a control sample cDNA and add 9 μL of DI water (10 fold dilution- volume 10 μL), then take 1 μL of the 10 fold dilution and add 9 μL of DI water (100 fold dilution-volume 10 μL), repeat this one more time to make a 1000 fold dilution. The primer I use for these reactions is L32, but one can use your experimental primer as well (Dlgh1, galectin etc). The primer you choose should amplify approximately within the same range as your experimental primer. While L32 is good for Dlgh1, 18s is not. I prefer L32 to calibrate the machine because it most often gives me a slope within the -3.2 or -3.4 range and there is enough of it in a given sample to be diluted 1000 fold and still be amplified. This calibration is essential to allowing you to quantify the relative amount of cDNA, this step instructs the machine as to what a 10 fold dilution looks like and it will compare your experimental samples to these control samples.",
+    "When calculating the amount of master mix and primer to add to the L32 reaction (or actin or 18S control reaction of your choosing) remember to include calibration samples (usually four) in duplicate (add 8) or triplicate (add 12).",
+    "The master mix is now divided into 1.5mL eppendorf tubes with each eppy containing a different primer",
+    "In a 1.5 mL eppy place 28.13 μL/ rxn (triplicate (84.4 μL of master mix) or duplicate (56.3 μL of master mix)- remember calibration samples",
+    "Add 0.6 μL/rxn of each primer (duplicate-1.2 μL or triplicate-1.8 μL)-remember calibration sample",
+    "Using the backside of a large rack (8 X12) that can hold 0.8mL eppy. Use a 0.8mL eppy for every experimental condition with each primer. For instance, if you 10 experimental conditions with 2 different primers you will need 20 -0.8mL eppys (+ 4 more for the calibration samples) for a total of 24 0.8 mL eppys",
+    "in each 0.8mL eppy dispense 88 μL (triplicate) or 58 μL (duplicate) of the master mix combined with primer",
+    "Add 2 μL of the appropriate cDNA reaction to bring the volume to 90 μl (triplicate) or 60 μL (duplicate) to each eppy. Mix well",
+    "Obtain a 96 well plate- Add 25 μl of each sample to a well. (Each eppy should then equal 2 (duplicate) or 3 (triplicate) wells).",
+    "Cover the plate with a seal. Take care not to place ungloved figures all over plate seal. Keep this as clean as possible.",
+    "Spin briefly to settle contents of each well to the bottom and place in Icycler Q-PCR machine from Bio-RAD.",
+    "Subtract PCR baseline",
+    "First look at Standard curve- the slope should be between -3.0 to -3.6 with an optimum around -3.3. You can play with this value by deleting samples from the calibration group that are included in this calculation. Start by getting rid of one dilution (I usually start with 1:1000 dilution) Continuing doing this until you get a slope that is within this range.",
+    "Look at the melt curve for each primer. Each primer should only amplify one PCR product and should thus yield only one melt curve. If you see multiple curves from the same sample, you cannot trust this sample and it should not be included in the analysis.",
+    "One you have done this from the standard curve menu you can copy the raw numbers into excel by clicking the upper left most box (this should highlight all the numbers in black) and hold down ctrl c, go to excel and hold down ctrl v to paste it in excel.",
+    "The raw numbers to use are SQ mean. Your experimental numbers should be normalized to your loading control (L32). Standard deviation is calculated for you and is in the next column labeled SQ STD DEV.",
+    "&lt;a href=&#34;https://dx.doi.org/10.1038/ni1422 &#34;&gt;Scaffold protein Dlgh1 coordinates alternative p38 kinase activation, directing T cell receptor signals toward NFAT but not NFkappa-B transcription factors by Round, J.L. et al. published in Nature Immunology on 25 Jan, 2007 https://dx.doi.org/10.1038/ni1422"
+  ],
+  "authors": [
+    "June Round"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1170061277,
+  "created_on": 1170061277,
+  "keywords": []
+}

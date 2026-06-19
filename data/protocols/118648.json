@@ -1,0 +1,35 @@
+{
+  "id": 118648,
+  "title": "CYToF Staining",
+  "uri": "cytof-staining-dx4y7qxw",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn69nml5d/v2",
+  "description": "{\"blocks\":[{\"key\":\"5rg0u\",\"text\":\"CYToF has significantly advanced immunophenotyping, especially in exploratory settings where comprehensive characterization of immune populations is necessary but sample sizes are limited. It is a powerful tool for single-cell immunological assays, particularly for the detailed and simultaneous analysis of diverse immune cell populations. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"68sco\",\"text\":\"By using metal isotopes instead of fluorescent labels, mass cytometry eliminates the spectral overlap issues seen in optical flow cytometry, allowing robust analysis of around 60 individual parameters simultaneously. The technique involves increased complexity in the design, execution, and interpretation of experiments.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "PFA Fixation: Add 100 uL of 16% PFA per 1 mL of media and incubate cells for 10 minutes at room temperature. Wash with 4mL of CSM 2x Pellet the cells by centrifugation at 600xg for 5 min. Store fixed cells in 1mL of CSM at -80C",
+    "Barcoding protocol: Transfer cells to cluster tube (if not already). Wash 1x with cold PBS, spin 5’ 600G 4C, aspirate, vortex to re-suspend pellet. Wash 1x with 1mL cold PBS-S, spin 5’ 600G 4C, aspirate, vortex to re-suspend pellet. Cut barcode plate cover to expose only the barcode wells to be used (keep cover on until ready to pipette) *The next 3 steps must be completed quickly to prevent weak/uneven staining of the barcoding metals* Using a multichannel pipette, remove 100 μL cold PBS-S from reservoir, add to the corresponding barcode wells on the barcoding plate &amp; pipette up and down several times. Transfer the 100 uL of now PBS-S + Barcode to the corresponding sample tubes, mix up &amp; down several times (final sample + barcode volume ~180 uL) (we skip the step where we add an additional 100 uL PBS to make 280 uL) Use a multichannel pipette to repeat for all samples to be barcoded, then let incubate 15’ at RT in dark. After 15 minutes, add 700 uL CSM to quench, Spin 5’ 600G 4C, aspirate, then wash 1X with 1 mL CSM. Aspirate &amp; re-suspend cell pellets by vortex. For each cluster tube, add 100 μL CSM, then adjust pipette volume to collect the entire volume (~160 μL), and deposit into a FACS tube (use larger tube if total cell number in pooled sample is large). Repeat for each sample to pool all barcoded cells into the FACS tube for staining.",
+    "Surface staining 100 uL total staining. Bring volume to 55 uL. Add 5 ul of FC block ( human ) and incubate for 10’ at RT in the shaker/ Make surface antibody cocktail (~40 uL total) and add to cells (100 ul total). Incubate for 30’ at RT in the shaker. Wash cells with 4 mL of CSM 600xg for 5 minutes.",
+    "Permeabilization step: During the permeabilization step, selecting the appropriate buffer it&#39;s crucial, as it can significantly impact the staining results and, consequently, the interpretation of your results. Methanol is often selected for its efficiency and simplicity. However, when staining with antibodies for transcription factors and some nuclear proteins, the Foxp3 Transcription Factor Staining Buffer Set (eBioscience TM #00-5523-00) is recommended. Permeabilization with Methanol Add 1mL of 4oC ice old 100% methanol (dropwise while vortexing) Incubate for 10’ on ice. Add 3mL of CSM. Pellet at 600xg for 5 min. Wash more 2 times. Vortex the pellet and add the panel to a final volume of 100ul (1x test) Permeabilization with Foxp3 Staining Buffer 1. Follow the instructions of the manufacturer.",
+    "Intracellular staining Filter the intracellular antibody cocktails before adding to the cells. 10,000g 1 minute Prewet with csm (if volume is not too small. 20 ul is very little) Add the intracellular staining Incubate for 30’ at RT. Add 3mL of CSM. Pellet at 600xg for 5 min.",
+    "DNA intercalator Iridium Intercalator: DNA1/DNA2 = Ir191/Ir192 For preparing Iridium DNA intercalator: 1.Prepare 5x the DNA intercalator solution: DNA intercalator working solution Add 1ml of DNA intercalator solution to each tube and mix and incubate either 00:30:00 at Room temperature to run at cytof at same day or overnight at 4°C . You can also store in fridge for ~ a week in the intercalation solution",
+    "Day of CyToF run 1. wash 1x CSM and 2x Water and run on CyTOF. 600xg/5min Dilute EQ beads 1:10 in ddH2O and add 1 mL of diluted beads per 1 million cells. Usually, we add 1.5ml of water/beads per tube and run 500ul in one push at cytof. It is enough to visualize the titration. If you thing you need more, run another push and concatenate the data afterwards. OR Long-term Storage you Wash with 3ml CMS and spin down 600g/5min , resuspend in CSM+10% DMSO, and put right the way in -80oC. You can keep it there for months if needed. Once ready, thaw and wash 1 time with CSM and 2 times with ddH2O and then acquire, 600g/5min",
+    "Paraformaldehyde (PFA) 16% (Electron Microscopy Sciences – catalog number 15710) Cisplatin Cell-ID‱ Cisplatin-198Pt—100 µL (#201198standard biotools) 1x Low-Barium PBS BSA Sodium Azide Cell Suspension Media (CSM) Foxp3 / Transcription Factor Staining Buffer Set (eBioscience TM #00-5523-00)",
+    "Cisplatin-198Pt Preparation 100mM stock Cisplatin-198Pt is stored at -20 °C Prepare 0.5uM working stock solution of Cisplatin-198Pt by carrying out two dilution 1. add 1ul of 100mM Cisplatin-198Pt stock + 199ul of Low-Barium PBS = 0.5mM (500uM) Cisplatin-198Pt 2. add 1ul of 0.5mM (500uM) Cisplatin-198Pt + 999ul of Low-Barium PBS = 0.005mM (0.5uM) Cisplatin-198Pt For final live/dead cell staining with PBMCs is 0.025uM Cisplatin-198Pt/1million cell suspension. Cisplatin concentration used does not reach saturation. So 0.5uM is plenty for 1-10 million cells. Cisplatin staining intensity increases with cell size (monocytes population is greater than lymphocyte population), neurons greater than astrocytes than microglial. Cisplatin binds covalently to any proteins in the dead/dying cells. A B C D E 1 Stock (mM) dilution 1 Working Conc (uM) dilution 2 Final (uM) 2 100 0.005 500 0.001 0.5 Cisplatin Concentrations",
+    "Cell Suspension Media (CSM) 1 L of 1x Low-Barium PBS 5g of BSA 200 mg of sodium azide Mix ingredients in appropriate container Filter using 2x 500 mL vacuum filter unit"
+  ],
+  "authors": [
+    "Meelad Amouzgar",
+    "Patricia Favaro",
+    "Daniel Ho",
+    "Trevor Bruce",
+    "Kausalia Vijayaragavan",
+    "Sean Bendall"
+  ],
+  "creator": "Kausalia Vijayaragavan",
+  "published_on": 1737139258,
+  "created_on": 1737138354,
+  "keywords": []
+}

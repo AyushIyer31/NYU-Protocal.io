@@ -1,0 +1,41 @@
+{
+  "id": 84191,
+  "title": "Nanodrop Lite (Shared Equipment Lab)",
+  "uri": "nanodrop-lite-shared-equipment-lab-cwf7xbrn",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"edaec\",\"text\":\"How to use the Nanodrop Lite.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"2patv\",\"text\":\"A 1-2 μl sample is pipetted directly onto the lower pedestal. A fiber optic cable (the source fiber) is embedded within the lower pedestal while a receiving fiber is imbedded in the upper pedestal and the arm. Light emitted from the LEDs traverses the sample and absorbance is measured using a silicon photodiode.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"4ug69\",\"text\":\"It is best to use a precision pipettor (0-2 μl) with precision tips to ensure that sufficient sample (1-2 μl) is delivered. Lower precision pipettors (0-10 μl and larger) are not as good at delivering 1 μl volumes to the lower pedestal. If the user is unsure about the sample characteristics or pipettor accuracy, a 2 μl sample volume is recommended.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2ggor\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cdodl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Open arm or push any button to wake instrument. Using the bottle of deionized water, slightly wet a Kimwipe and clean the lower and upper pedestal (metal prongs). Although 1 μl volumes are usually sufficient for most sample measurements, increasing the sample size to 2 µL will ensure proper column formation for samples with reduced surface tension. This is particularly true when working with protein samples which may contain detergents. Such samples do not &#34;bead&#34; on the pedestal but tend to spread across the measurement surface. To ensure that a liquid column forms in the gap between the upper and lower pedestals, a 2 µL volume is indicated for such samples.",
+    "Select the appropriate application from the Home screen (DNA or RNA). For DNA measurements, select either the dsDNA or ssDNA assay.",
+    "Following the on-screen instructions, establish a blank by pipetting 2 µL of the blanking buffer (RO or elution solution your DNA is in) onto the bottom pedestal, lower arm and press Blank . Confirm that blank and sample buffer are the same pH and ionic strength. Some buffer components absorb in the UV range, therefore, it is critical to blank the instrument with the same solution (buffer from the same bottle if possible) in which the sample is suspended.",
+    "When measurement is complete, raise the arm and wipe the buffer from both the upper and lower pedestals using a dry laboratory wipe.",
+    "Measure sample by pipetting 2 µL of sample onto the bottom pedestal, lower arm and press Measure . Confirm that the sample is not too dilute or too concentrated. Analyzing samples at or near the detection limit will result in variable measurements. Sample measurement screen",
+    "Nucleic acid concentration ranges: %s %s ABC1Sample Type LowerLower Detection LimitUpper Detection Limit2dsDNA4.0 ng/ul1500 ng/ul3ssDNA2.6 ng/ul990 ng/ul4RNA3.2 ng/ul1200 ng/ul Direct nucleic acid concentration measurements assume a purified sample as all absorbance at 260 nm is included in the calculation of the nucleic acid concentration. Carryover of nucleotides, primers, purifying reagents, and cell material into the measured nucleic acid sample will overestimate the nucleic acid concentration. For nucleic acid quantification, the Beer-Lambert equation is modified to use a conversion factor with units of ng-cm/μl.",
+    "Select measurement type:",
+    "Select Protein from the Home screen.",
+    "Select the appropriate assay type: 1A/cm=1mg/ml, IgG, or BSA.",
+    "Following the on-screen instructions, establish a blank by pipetting 2 µL of the blanking buffer onto the bottom pedestal, lower arm and press Blank . Protein samples, especially those containing detergents, are subject to bubble formation. Extra care is required while pipetting onto the pedestal to ensure bubbles are not present into the light path of the spectrophotometer. Protein samples may contain detergents and such samples do not &#34;bead&#34; on the pedestal but tend to spread across the measurement surface. To ensure that a liquid column forms in the gap between the upper and lower pedestals, a 2 μl volume is indicated for such samples.",
+    "When measurement is complete, raise the arm and wipe the buffer from both the upper and lower pedestals using a dry laboratory wipe.",
+    "Confirm Blank by pipetting a fresh aliquot of blanking buffer onto the bottom pedestal, lower the arm and press Blank .",
+    "When measurement is complete, raise the arm and wipe the buffer both the upper and lower pedestals using a dry laboratory wipe.",
+    "Measure sample by pipetting 2 µL of sample onto the bottom pedestal, lower arm and press Measure .",
+    "Wipe the upper and lower pedestals using a dry laboratory wipe and the instrument is ready to measure the next sample.",
+    "Protein concentration detection limits A B C 1 ExtinctionCoefficient LowerDetection Limit UpperDetection Limit 2 1Abs=1 mg/ml 0.08 mg/ml 30 mg/ml 3 BSA 0.12 mg/ml 45 mg/ml 4 IgG 0.06 mg/ml 21 mg/ml Proteins, unlike nucleic acids, exhibit considerable diversity. The Protein A280 application is indicated for purified proteins that contain Trp, Tyr residues or Cys-Cys disulphide bonds and exhibit absorbance at 280 nm. The Protein A280 application measures sample absorbance at 280 nm (A280) and calculates the concentration (mg/ml) using the selected extinction coefficient. The Protein A280 application does not require generation of a standard curve. The NanoDrop Lite should be used to measure the concentration of purified protein samples. Direct protein concentration measurements assume a highly purified sample as all absorbance at 280 nm is included in the calculation of the protein concentration. Carryover of starting materials, purifying reagents, and cell material into the measured protein sample will result in an artificially high protein concentration.",
+    "Wipe the upper and lower pedestals using a dry laboratory wipe and the instrument is ready to measure the next sample.",
+    "Heat high molecular weight DNA samples to 55 °C and gently vortex before measurement. Due to the small volumes required by the NanoDrop Lite, it is important to ensure that the sample being measured is homogeneous. Field experience has shown that samples containing large molecules such as genomic or lambda DNA are particularly susceptible to heterogeneity.",
+    "The resultant A260/A280 ratio for the nucleic acid being studied will be approximately equal to the weighted average of the A260/A280 ratios for the four nucleotides present. It is important to note that the generally accepted ratios of 1.8 and 2.0 for DNA and RNA are “rules of thumb.” The actual ratio will depend on the composition of the nucleic acid. RNA will typically have a higher A260/A280 ratio due to the higher ratio of Uracil compared to that of Thymine.",
+    "When measurement is complete, raise the arm and wipe the buffer from both the upper and lower pedestals using a dry laboratory wipe.",
+    "Confirm Blank by pipetting a fresh aliquot of blanking buffer onto the bottom pedestal, lower the arm and press Blank ."
+  ],
+  "authors": [
+    "Nimalka M Weerasuriya"
+  ],
+  "creator": "Nimalka Weerasuriya",
+  "published_on": 1687976778,
+  "created_on": 1687976624,
+  "keywords": []
+}

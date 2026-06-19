@@ -1,0 +1,30 @@
+{
+  "id": 318551,
+  "title": "Mapping of heart tissue using Visium Spatial Gene Expression for FFPE",
+  "uri": "mapping-of-heart-tissue-using-visium-spatial-gene-j3bxcqipp",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egnpxbpv5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"cf89f\",\"text\":\"We describe a validated workflow for spatially mapping gene expression in formalin-fixed paraffin-embedded (FFPE) human heart tissue using the 10x Genomics Visium Spatial Gene Expression Reagent Kit for FFPE (CG000407, Rev D). Whole-transcriptome probe hybridization enables precise mRNA localization within intact cardiac tissue architecture, supporting studies of cardiac biology, fibrosis, ischemia, and cardiomyopathy. This protocol complies with SenNet Consortium data submission requirements.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4eenn\",\"text\":\"Tissue collection may only proceed with prior approval from the user’s Institutional Ethics Board (IEB) or an equivalent ethics committee.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Tissue quality assessment %s %s",
+    "Sectioning (per CG000408 Rev D) %s %s",
+    "Library QC &amp; Sequencing %s %s Sequencing Configuration • Read 1: 28 cycles | Read 2S: 50 cycles | Index i7: 10 cycles | Index i5: 10 cycles • Platform: Illumina NovaSeq 6000, NextSeq 2000, or equivalent • Minimum depth: 25,000 readsper tissue-covered spot",
+    "Data Processing • Process FASTQs with Space Ranger (spaceranger count) using GRCh38 and the Visium FFPE probe set. • Confirm spatial barcode–image alignment via Loupe Browser or Space Ranger HTML summary. • Archive raw FASTQs and Space Ranger outputs (filtered_feature_bc_matrix/, spatial/, tissue_positions.csv).",
+    "Sample preparation",
+    "Library Construction (CG000407 Rev D) Follow CG000407 precisely for all reagent volumes, incubation times, and thermocycler programs. 3.1 Probe Hybridization %s %s 3.2 Probe Ligation %s %s 3.3 Probe Release &amp; Extension %s %s 3.4 PCRAmplification &amp; Indexing %s %s",
+    "Deparaffinization, H&amp;E, Imaging &amp; Decrosslinking (per CG000409 Rev D) NOTE: Run all steps on a test slide first. Capture brightfield TIFF image before decrosslinking — required for Space Ranger alignment. %s %s"
+  ],
+  "authors": [
+    "Natalia-Del Pilar Vanegas",
+    "Lorena Rosas",
+    "Ana L. Mora",
+    "mauricio.rojas"
+  ],
+  "creator": "Lorena Rosas",
+  "published_on": 1780591850,
+  "created_on": 1780585032,
+  "keywords": []
+}

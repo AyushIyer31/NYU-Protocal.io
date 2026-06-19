@@ -1,0 +1,39 @@
+{
+  "id": 120859,
+  "title": "Immunolabeling of endogenous proteins for fluorescence microscopy in cultured mammalian cells",
+  "uri": "immunolabeling-of-endogenous-proteins-for-fluoresc-dz93798n",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ldr1xxg5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"knwn2\",\"text\":\"This protocol details the detection of endogenous proteins by immunofluorescence. This is our standard protocol for imaging endogenous proteins associated with mitochondria and other membrane-bound organelles.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"b6r9u\",\"text\":\"Introduction\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":12}],\"entityRanges\":[],\"data\":{}},{\"key\":\"bpf36\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dgcbc\",\"text\":\"This protocol provides detailed instructions for detection of endogenous proteins in fixed cells by immunofluorescence (Immunofluorescence Assay/IFA). The protocol results in a fluorescent sample, to be visualized using a high-resolution fluorescence confocal microscope. Target proteins appear as distinct signals corresponding to the fluorophore-conjugated secondary antibodies, allowing the spatial analysis of subcellular structures, protein interactions, and nucleic acids.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"cas5y\",\"text\":\"Proliferating cancer cell line or fibroblasts at 40% confluency\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mni0v\",\"text\":\"1X Phosphate-buffered saline (PBS), pH 7.4\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"imigs\",\"text\":\"Fixative: 4% Paraformaldehyde in PBS, pH 7.4\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qpetw\",\"text\":\"Quenching Solution: 1M Glycine in PBS, pH 7.4\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"rm41v\",\"text\":\"Permeabilization Solution: 0.1% Triton-X 100 in PBS, pH 7.4\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bavea\",\"text\":\"Blocking Solution: 0.1% Tween in 1X TBS + 1% BSA (Bovine Serum Albumin)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5jlfj\",\"text\":\"Glass bottom poly-D-lysine-coated dishes (P35GC-1.5-14-C, MatTek)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qbscx\",\"text\":\"Primary antibody (specific to the target protein)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"svuac\",\"text\":\"Secondary antibody conjugated to fluorophore of choice\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare the sample by plating cells in 2 mL of media at a 20% density in a glass bottom poly-D-lysine-coated dish (P35GC-1.5-14-C, MatTek).",
+    "Grow cells for 24:00:00 until they reach a confluency of approximately 40%.",
+    "Aspirate media and fix the cells with 2 mL of pre-warmed 4% PFA in PBS.",
+    "Incubate for 00:20:00 at Room temperature on a shaker gently rotating.",
+    "Quench the reaction by adding 200 µL of 1M glycine in PBS to the fixed sample and incubate for 00:01:00 at Room temperature .",
+    "Aspirate the quenched fixative and wash the sample once with PBS.",
+    "Add 2 mL of 0.1% Triton X-100 in PBS and incubate for 00:10:00 at Room temperature on a shaker to permeabilize the sample.",
+    "Aspirate permeabilized solution and wash sample once with PBS.",
+    "Add 2 mL of blocking buffer (1% BSA + 0.1% Tween in 1X TBS) with a 00:10:00 incubation at Room temperature on a shaker.",
+    "Aspirate blocking buffer and add a freshly prepared 2 mL primary antibody dilution (typically a 1:1000 dilution) made in blocking buffer.",
+    "Incubate the sample Overnight at 4 °C in the dark.",
+    "Aspirate the primary antibody solution and wash the sample once with 2 mL of blocking buffer.",
+    "Aspirate wash and add 2 mL of freshly prepared secondary antibody dilution (typically at a 1:2000 dilution) with a 00:10:00 incubation at Room temperature on a shaker in the dark.",
+    "Aspirate the secondary antibody solution and wash the sample with 2 mL of blocking buffer with a 00:10:00 incubation at Room temperature on a shaker.",
+    "Remove wash and cover sample with 2 mL PBS.",
+    "Proceed with fluorescence microscopy.",
+    "Samples may be stored at 4 °C protected from light for up to 72:00:00 ; bring dishes to Room temperature before imaging."
+  ],
+  "authors": [
+    "Ahmad Shami",
+    "Hera Saqub",
+    "Samantha C Lewis"
+  ],
+  "creator": "Samantha C Lewis",
+  "published_on": 1740519556,
+  "created_on": 1739864708,
+  "keywords": []
+}

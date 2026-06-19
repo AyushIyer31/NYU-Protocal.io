@@ -1,0 +1,36 @@
+{
+  "id": 223835,
+  "title": "KAPP-Sen TMC: Xenium - Cell DIVE - H&E",
+  "uri": "kapp-sen-tmc-xenium-cell-dive-h-amp-e-g6t3bzeqp",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ld6zj7g5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"67hq4\",\"text\":\"This protocol describes tissue section preparation, in situ spatial transcriptomic analysis, antibody-based imaging and H\\u0026E staining of tissue sections using an integrated workflow. Standardized procedures were followed for tissue processing, slide preparation, and staining to ensure consistency and quality. Modifications were applied where appropriate to optimize sample integrity. The 10x Genomics Xenium platform was employed for high-resolution spatial gene expression profiling, enabling detailed molecular characterization of tissue architecture.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Block QC and sectioning according to CG000578 Rev E .",
+    "Deparaffinization and decrosslinking is performed according to CG000580 Rev C or E . Temperature and duration were as default in the protocol.",
+    "Materials: 1X PBS, pH 7.4 (Gibco; 10010023, ThermoFisher Scientific) Glycerol (G5516, Sigma Aldrich) DI water or Milli-Q water Antigen retrieval buffer (pH9, Abcam ab93684) SuperBlock Blocking Buffer (37580; ThermoFisher Scientific) Antibody diluent (ab64211; Abcam) Hydrogen peroxide, 30% (H1009-500ML; Sigma) 0.5M Sodium bicarbonate (NaHCO3) (pH= 10.9-11.3) Antigen retrieval chamber (BioSB TintoRetriever)",
+    "All slides are H&amp;E stained according to CG000613 Rev B .",
+    "Post sectioning, all slides are baked at 42°C for 3 hours.",
+    "Probe Hybridization, Ligation &amp; Amplification CG000582 Rev F or G were followed.",
+    "Xenium Analyzer is used according to CG000584 Rev E, F or G were followed.",
+    "Tissue preparation: Retrieve the Xenium slides containing the FFPE tissue Wash the slides three times in 1X PBS for 5 min each Place the slides in a copln jar filled with Tris-EDTA Antigen Retrieval Solution (pH 9.0) and loosely cover the jar with aluminum foil to prevent evaporation of the solution Place the jar in the BioSB TintoRetriever (or any other pressure cooker) containing enough water to cover the foot of the coplin jar Close the TitoRetriever and incubate at 95C (low pressure) for 20 min After the TintoRetriever beeps to signal completion of 20 min, switch it off and let it de-pressurize After depressurization, retrieve the coplin jar and leave it open on the bench till it cools to room temperature Wash the slides in 1X PBS for 5 min Permeabilize the tissue by incubating in PBS + 0.3% TX-100 for 10 min Wash the slides in 1X PBS for 5 min Incubate the slides with SuperBlock solution (ThermoFisher) and incubate for 1 hr at RT Wash the slides in 1X PBS for 5 min Label the nuclei by incubating with DAPI solution (1mg/ml) for 10 min at RT. Wash the slides in 1X PBS for 5 min Install the slides into the ClickWell Mount slides by adding 2 ml of mounting medium (50% glycerol in PBS) into the ClickWell chamber",
+    "ROI selection and autofluorescence recording: Select tissue ROIs on the acquisition software and image the slides without antibodies to record the first background/autofluorescence round",
+    "Acquisition of mIF image using Cell DIVE imager: The Mx Workflow and Cell DIVE acquisition software will be used to set up the imaging protocol and acquire images. Create the protocol appropriate for the study and create a batch by adding slides to be imaged.",
+    "Dye inactivation: After completing biomarker imaging, retrieve the ClickWells containing the slides Wash the slides three times with 2 ml 1X PBS for 5 min each. Hold the slides in the last PBS was while preparing the dye inactivation solution Prepare the dye inactivation solution with the formula: 10 ml dye inactivation solution = 7 ml MilliQ water + 2 ml 0.5M sodium bicarbonate solution + 1 ml 30% hydrogen peroxide. Prepare the solution fresh prior to each use and add the hydrogen peroxide immediately prior to adding the solution to tissue Remove the PBS and add 2 ml of dye inactivation solution. Incubate for 15 min at RT Wash the slides in 2 ml 1X PBS for 5 min Add 2 ml DAPI solution and incubate for 2 min Wash the slides in 2 ml 1X PBS for 5 min Mount slides by adding 2 ml of mounting medium. Slides are ready for imaging. After imaging, return to Step x for the next cycle of antibody hybridization Repeat this process till the final cycle of biomarker imaging is complete.",
+    "Antibody hybridization and biomarker image acquisition: Wash the slides three times with 2 ml 1X PBS for 5 min each Prepare the antibody staining mix by adding the appropriate amount of antibody into antibody diluent to achieve the optimized dilution for each antibody in the cycle. Final volume of the staining mix (antibody + diluent) should be 350 ml for each slide. Centrifuge the mixture at 2,000 g for 60 sec to remove the antibody aggregates. Add the staining mix to each slide and incubate in the dark at RT for 1 hr After incubation, wash the slides three times with 2 ml 1X PBS for 5 min each Add 2 ml DAPI solution and incubate for 2 min Wash the slides with 2 ml 1X PBS for 5 min Mount slides by adding 2 ml of mounting medium. Slides are ready for imaging. Advance the workflow on the Mx Workflow software and load the ClickWell into the Cell Dive image to begin biomarker imaging."
+  ],
+  "authors": [
+    "Emily Soja",
+    "Shruti Bhargava",
+    "Santhosh Sivajothi",
+    "William F Flynn",
+    "Elise T Courtois"
+  ],
+  "creator": "Sergii Domanskyi",
+  "published_on": 1754606399,
+  "created_on": 1753988202,
+  "keywords": []
+}

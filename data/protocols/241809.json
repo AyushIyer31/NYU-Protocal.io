@@ -1,0 +1,39 @@
+{
+  "id": 241809,
+  "title": "1 Step RT- QPCR ",
+  "uri": "1-step-rt-qpcr-hqdrb5s57",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbo5enlpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"chnkf\",\"text\":\"description of how to do a 1 step rt qpcr \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "All RNA was extracted using the following protocol as described in our paper dx.doi.org/10.17504/protocols.io.81wgbr95qlpk/v1",
+    "Use RNase-free technique throughout. Decide your multiplex groups (up to 4 targets per well, including GAPDH), making sure fluorophores do not overlap. Thaw master mix, probes, and RNA on ice. Mix gently and quick-spin.",
+    "Measure RNA concentration for each sample.",
+    "Dilute each RNA sample with nuclease-free water so all samples have the same concentration (so that 2 µL gives the same RNA input for every sample)",
+    "Keep normalized RNA on ice",
+    "Create a plate map: List each sample. For each probe set/condition, assign 2 technical replicates per sample. Total wells = samples × conditions × replicate",
+    "Label your 384-well plate orientation and corresponding wells",
+    "For each multiplex condition (each “probe set”), make a probe mix so pipetting is consistent.In a labeled tube for Probe Set 1, combine the probes for that multiplex (up to 4 probes).Repeat for Probe Set 2, 3, and 4",
+    "Make one “reaction mix” per probe set that contains everything except RNA. Per well (10 µL total): 5.0 µL IDT PrimeTime One-Step RT-qPCR Master Mix 0.5 µL of each probe (up to 4 probes total; 2.0 µL max probe volume) Nuclease-free water to bring the non-RNA volume to 8.0 µL RNA will be 2.0 µL added later",
+    "For each probe set, calculate number of reactions needed: (number of wells for that probe set) × (1.1 or 1.2) to account for pipetting loss",
+    "In a chilled tube, combine for that probe set: PrimeTime One-Step RT-qPCR Master Mix (5 µL × number of reactions) Probe mix components (0.5 µL each probe × number of reactions) Nuclease-free water to reach 8 µL per reaction",
+    "Mix gently by pipetting, then quick-spin. Keep mixes on ice and protected from light.",
+    "Add 8.0 µL of the appropriate probe-set reaction mix into each assigned well of the 384-well plate. Add 2.0 µL of the corresponding normalized RNA sample into each well.",
+    "For no-template controls (NTCs), add 2.0 µL nuclease-free water instead of RNA. Seal the plate with an optical seal. Quick-spin the plate (brief spin) to remove bubbles and collect liquid at the bottom.",
+    "Load the plate into the Bio-Rad CFX Opus 384. Set up the run as a one-step RT-qPCR multiplex assay: Assign fluorophores/channels matching your probes. Confirm plate type (384-well) and reaction volume (10 µL). Use the cycling program recommended by IDT for PrimeTime One-Step RT-qPCR Master Mix Start the run.",
+    "After the run, verify amplification curves and baseline/threshold settings",
+    "Confirm NTCs show no amplification.",
+    "Export Cq values and analyze using your preferred method"
+  ],
+  "authors": [
+    "Chelsie Steele",
+    "Yujie Fan"
+  ],
+  "creator": "Chelsie Steele",
+  "published_on": 1769800130,
+  "created_on": 1769706291,
+  "keywords": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": 97999,
+  "title": "Protocol for Nuclei/ Cell Isolation and 10X Genomics Fixed RNA profiling for Human Skeletal Muscle",
+  "uri": "protocol-for-nuclei-cell-isolation-and-10x-genomic-dbxp2pmn",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn68z6l5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"41sfj\",\"text\":\"This is the 10X Genomics protocol to fix, dissociate, and profile RNA from human skeletal muscle tissue. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"53h78\",\"text\":\"This protocol needs prior approval by the users' institutional review board (IRB) or equivalent ethics committee(s).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"caf0o\",\"text\":\"Refers to the various protocol documents for a complete list of the materials required.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ah7lm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7gs92\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "The protocol CG000553 REV B was used to fix, dissociate, and isolate cells/nuclei from frozen human skeletal muscle with the following modifications: 1) 1 mg / mL of Liberase TH was used for dissociation at Step 2b, Page 6. 2) Two extra &#34;spin only&#34; (i.e., steps 3 and 4 ) of the Octodissociator protocol were run for each sample due to the presence of intact/ large tissue pieces at the end of the run at Step 2c, Page 6. 3) Counts were performed using the Cellaca PLX Automated Cell counter (PN: PLX-SYS1) and ViaStain AOPI staining solution (PN: CS2-0106-5mL) at Step 2i on page 6. https://www.10xgenomics.com/support/single-cell-gene-expression-flex/documentation/steps/sample-prep/tissue-fixation-and-dissociation-for-chromium-single-cell-gene-expression-flex",
+    "The protocol CG000527 Rev E was used to generate gene expression libraries from fixed cell/nuclei suspension inputs. https://www.10xgenomics.com/support/single-cell-gene-expression-flex/documentation/steps/library-prep/chromium-single-cell-gene-expression-flex-reagent-kits-for-multiplexed-samples Samples were multiplexed in batches of 16 using the user guide CG000565. https://www.10xgenomics.com/support/single-cell-gene-expression-flex/documentation/steps/library-prep/chromium-single-cell-gene-expression-flex-reagent-kits-for-multiplexed-samples"
+  ],
+  "authors": [
+    "Nicolas Martin"
+  ],
+  "creator": "Nicolas Martin",
+  "published_on": 1712848197,
+  "created_on": 1712705628,
+  "keywords": []
+}

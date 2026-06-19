@@ -1,0 +1,31 @@
+{
+  "id": 45879,
+  "title": "Detection of marbled crayfish Procambarus fallax",
+  "uri": "detection-of-marbled-crayfish-procambarus-fallax-bq2xmyfn",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g78199lwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"beuk9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3ock6\",\"text\":\"Taqman QPCR assay for marbled crayfish Procambarus fallax\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":39,\"length\":18}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fjj25\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5d1v4\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b0ag8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7gljp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9f9ia\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4icls\",\"text\":\"Handling high concentration of positive controls was performed in a post-PCR room which is physically separated from the pre-PCR room to avoid contamination. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"37amg\",\"text\":\"Always add your samples first and seal them before adding the serial dilutions of positive control (standard) at the end.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"56p9p\",\"text\":\"Laboratory work space and equipment were sterilized by UV-light and DNase solution and 70% ethanol. Filter pipet tips were used in all steps of the laboratory work.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"c22jg\",\"text\":\" Negative controls of DNase/RNase free water were used in each qPCR assay.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"8ih2o\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c4k5o\",\"text\":\"UltraPure\\u0026trade; DEPC-treated WaterThermo FisherCatalog #10813012\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7tu3j\",\"text\":\"TaqMan™ Environmental Master Mix 2.0 https://www.thermofisher.com/order/catalog/product/4396838#/4396838\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":37,\"length\":67}],\"data\":{}},{\"key\":\"b7sdk\",\"text\":\"Interbal control http://www.primerdesign.co.uk/assets/files/internal_control_handbook_dna.pdf?timestamp=1504081027\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":17,\"length\":97}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"89EBDDFB49E111EBA9620A58A9FEAC2A\",\"url\":\"https://www.thermofisher.com/order/catalog/product/4396838#/4396838\"}},\"1\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"57244870445611EB90930A58A9FEAC2A\",\"url\":\"http://www.primerdesign.co.uk/assets/files/internal_control_handbook_dna.pdf?timestamp=1504081027\"}}}}",
+  "steps": [
+    "A tissue of marbled crayfish was extracted with DNeasy blood and tissue extraction kit https://www.qiagen.com/us/shop/pcr/dneasy-blood-and-tissue-kit/ The quality of DNA was checked by nanodrop.",
+    "Primers %s %s",
+    "2 µL Standard dilution DNA of marbled crayfish was serially diluted from 1e 2 -1e -4 for qPCR experiment.",
+    "PCR mixture %s %s",
+    "- °C Amplification conditions A B C D 1 Step Time Temp (℃) 2 Preheat 5 min 50 3 Enzyme activation 10 min 95 4 50 cycles Denaturation 30 s 95 5 Extention and Data collection 1 min 60",
+    "qPCR was performed in BioRad qPCR machine CFX96. Analysis of the results was done by CFX maestro software https://www.bio-rad.com/en-se/product/cfx-maestro-software-for-cfx-real-time-pcr-instruments?ID=OKZP7E15 02:30:00",
+    "Internal PCR control The Cq value obtained with the internal control will vary significantly depending on the extraction efficiency, the quantity of DNA added to the PCR reaction and the individual machine settings. Cq values of 27±3 are within the normal range. When amplifying sample with a high genome copy number, the internal extraction control may not produce an amplification plot. This does not invalidate the test and should be interpreted as a positive experimental result.",
+    "Primer validation DNA of related crayfish species were tested to ensure primers specificity. %s %s",
+    "Internal control: http://www.primerdesign.co.uk/assets/files/internal_control_handbook_dna.pdf?timestamp=1469446474"
+  ],
+  "authors": [
+    "Alexander Eiler",
+    "Eivind Stensrud",
+    "Omneya Osman"
+  ],
+  "creator": "Omneya Osman",
+  "published_on": 1738604607,
+  "created_on": 1609163497,
+  "keywords": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": 44521,
+  "title": "Generation of Combinatorial CRISPR Libraries",
+  "uri": "generation-of-combinatorial-crispr-libraries-bpqhmmt6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bpqhmmt6",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "This protocol is a step by step protocol based on the method originally described by: Vidigal, J.A. &amp; Ventura, A. Rapid and efficient one-step generation of paired gRNA CRISPR-Cas9 libraries. Nature Communications 6 , 8083 (2015). Throughout: All PCR clean-ups done with Monarch PCR &amp; DNA cleanup kit https://www.neb.com/products/t1030-monarch-pcr-dna-cleanup-kit-5-ug All gels run with Sybr green, not ethidium bromide, and no gels exposed to UV light to avoid DNA damage.",
+    "Backbone digestion and preparation (lenti-guide puro) Digest 5-10ug of your vector of choice: lenti-guide puro 10ug (Addgene #52963) 10X buffer 3.1 10ul BsmBI 10000 U/ml 8ul H20 to 100ul Incubate @ 55°C overnight Dephosphorylation https://www.neb.com/protocols/1/01/01/vector-dephosphorylation-protocol 49ul of digestion Antartic phosphatase 5ul Antartic phosphatase buffer 10X 6ul 37C for 45’ Then 5’ 80C Then 4C Gel purification: take the 8.3kb band.",
+    "PCR amplification of oligonucleotides Supplied by TWIST bioscience Diluted library to final concentration of 0.0045ng/ul Do 14xPCR – each PCR 50ul https://www.neb.com/protocols/1/01/01/pcr-protocol-m0530 %s %s 14x Oligo 14 HF phusion buffer 140 dNTP 14 F primer 17.5 R primer 17.5 Phusion HF polymerase 7 H2O 490 700 PCR program a.98C 30’ i.98 10’’ ii.68 C o 35’ iii.72 C 30’’16X b.72C 10’ c.4C 4ever PCR cleanup and elute in 30ul Digestion of pdonor_SU6 Digest 5ug of pDonor_sU6 (plasmid #741) with Bbs I Plasmid 5ug Buffer 2.1 10X 5ul Enzyme BbsI 10000 U/ml3ul H20 up to50ul total For 37C for three hours Gel purification: take the 415bp band Gibson Ligation https://www.neb.com/products/t1030-monarch-pcr-dna-cleanup-kit-5-ug Donor fragment 405ng Oligo amplicon 432ng 2xGibson MM 30 ul (NEBuilder® HiFi DNA Assembly Master Mix, E2621S) H2O to 60 ul Incubate @ 50°C for 2hours Nuclease Digestion http://www.epibio.com/enzymes/nucleases-glycosylases-dna-binding-proteins/dna-exonucleases/plasmid-safe-atp-dependent-dnase?details Add to each Gibson reaction 10x Plasmid Safe Buffer 9 ul ATP (25mM) 9 ul Plasmid Safe nuclease 3 ul H2O 9 ul àincubate @ 37°C for 1h Clean up using PCR purification kit and elute in 50ul water Digestion of Gibson product Digest with Bbs I DNA 50ul Buffer 2.1 6ul Bbs I 4ul Incubate @ 37°C for 2.5h Run digestion on 2.5% gel and cut ~480 bp band Gel extract and elute the completed insert in 30ul Ligation https://www.neb.com/products/m2200-quick-ligation-kit Neb Quick ligation kit; M2200S; scale up as appropriate %s %s 1 to 3 Volumes Digested&amp;purified lenti-guide puro 25ng 1.25ul sgRNA insert BbsI purified X 1ul ligase buffer 5ul 5ul Ligase 0.5ul 0.5ul H2O to 10.5ul 2.75 Incubated at 25C for 15minutes (thermocycler) Prior to library creation controls done with vector only (lentiguide puro) to assess background. For library used final volume of 300ul for ligation PCR purification and elution in 30ulwater(for library)",
+    "Transformation https://www.neb.com/products/c3020-neb-10-beta-electrocompetent-e-coli 25ul bacteria/2.5ul ligation product/transformation; electroporated as per website protocol. 10 electroporations. 1hour in pre-warmed SOC shaking. Plated at dilutions (1:1000; 1:10000) onto warmed ampicillin plates. The remainder inoculated into ampicillin containing LB broth 3 litres at 100ug/ml and shaken at 225rpm/37C overnight. Following morning pooled spun down in Avanti centrifuge (6000g for 10 minutes) Bacterial pellet processed using maxi/mega prep (Qiagen) ~1.5g bacteria/mega prep"
+  ],
+  "authors": [
+    "David Adams",
+    "Nicky Thompson. nt4@sanger.ac.uk."
+  ],
+  "creator": "David Adams",
+  "published_on": 1605373963,
+  "created_on": 1605363301,
+  "keywords": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": 70255,
+  "title": "Nucleoside analysis with liquid chromatography–tandem mass spectrometry (LC–MS/MS) ",
+  "uri": "nucleoside-analysis-with-liquid-chromatography-tan-cguptwvn",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g7yrq1gwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"akrrh\",\"text\":\"This protocol details the detection of modified nucleosides using LC–MS/MS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Perform online separation of nucleoside mixtures using a liquid chromatography (LC) setup paired to a mass spectrometer. The gradient described here was not optimized. We used this approach to crudely survey the elution profile of our analytes of interest. The injection volume and analyte concentrations were also not optimized and realistically can be reduced several fold in subsequent runs. Nucleosides of interest eluted within the first 5–7 min, providing a reasonable starting point for future gradient optimization.",
+    "Acquire data using a mass spectrometer capable of MS/MS experiments (we used a Thermo LTQ Orbitrap XL outfitted with an API source, below are recommended settings). These experiments can also be run on qToF-type instruments to yield similar high-resolution data but parameters will need to be adjusted accordingly. These experiments can also be run on triple quadrupole and ion trap instruments — however, doing so will yield low-resolution data.",
+    "Convert Thermo .raw files obtained after tandem mass spectrometry analysis to .mgf format using MSConvert 3.0.22031 (a component of the Proteowizard open source mass spectrometry bioinformatics software package) under generic default presets for .mgf file extraction.",
+    "Use the Jupyter notebook linked below to identify candidate nucleosides based on .mgf files extracted during the previous step. We manually inspected mass spectrometry data and noticed a consistent pattern of −116 m/z differences between probable nucleoside precursor ions and their most prominent fragmentation product ions, suggesting a pattern of deoxyribose neutral mass loss during fragmentation. Based on this pattern, we wrote Python scripts in the following Jupyter notebooks to automate nucleoside identification within our accurate mass high resolution dataset. Our GitHub repository with &#34;nucleoside finder&#34; script is available here: https://github.com/Arcadia-Science/nucleoside-finder/tree/v1.0",
+    "Acquire data in positive mode with lock-mass enabled (targets: 391.284290, 413.266230).",
+    "Adjust MS1 scan settings to target ions in the 200–800 m/z range at 100,000 resolution selecting for charge states +1 and +2 for MS/MS.",
+    "Follow each MS1 scan with 7 data-dependent MS2 scans collected also at 100,000 resolution. Set ion isolation window at 4 m/z.",
+    "Activate ions by CID at NCE of 35% with a minimum signal threshold of 3e4.",
+    "Enable dynamic exclusion with a maximum repeat count of three times within 30 s with an exclusion duration of 30 s.",
+    "Prepare 20 µL of nucleoside digest containing approximately 1 µg of nucleoside mixture. Inject 10 µL of digest per run.",
+    "Separate nucleosides using a C18 column and binary solvent gradient of HPLC-grade water + 0.1% formic acid (A) and acetonitrile + 0.1% formic acid (B).",
+    "Create a chromatography method using the following 30 min gradient as a guide: 0–0.5% B over 2 min 0.5–30% B over 4 min 30–95% B over 0.5 min Hold at 95% B for 4 min 95–0.5% B over 0.5 min Hold at 0.5% B over 19 min This gradient has not been optimized.",
+    "Set LC flow rate at 150 µL/min. We used an Agilent 1100 quaternary LC system.",
+    "Enable column heater at a constant 45 °C."
+  ],
+  "authors": [
+    "Peter Thuy-Boun"
+  ],
+  "creator": "Arcadia Science",
+  "published_on": 1671239190,
+  "created_on": 1663620503,
+  "keywords": []
+}

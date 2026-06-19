@@ -1,0 +1,30 @@
+{
+  "id": 114640,
+  "title": "Measurement of ATP13A4 ATPase activity using ADP-Glo Max Assay",
+  "uri": "measurement-of-atp13a4-atpase-activity-using-adp-g-dt7q6rmw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5qpvo9kxdv4o/v1",
+  "description": "{\"blocks\":[{\"key\":\"82juh\",\"text\":\"This protocol describes a luminescence-based ADP-Glo Max assay (Promega) to measure the ATPase activity of ATP13A4 by detecting the rate of ATP hydrolysis. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"f50se\",\"text\":\"Allow ADP-Glo Max Assay components to reach room temperature before use!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"1vpvo\",\"text\":\"ADP-Glo Max Assay (Cat# V7002; Promega)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5idc\",\"text\":\"Purified ATP13A4 (100 ng per reaction)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"71oa8\",\"text\":\"Putrescine (Cat# P7505; Sigma-Aldrich)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4c214\",\"text\":\"Spermidine (Cat# S2626; Sigma-Aldrich)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"esck2\",\"text\":\"Spermine (Cat# 85590; Sigma-Aldrich)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2jg3u\",\"text\":\"MgCl₂ hexahydrate (Cat# M2670; Sigma-Aldrich)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8egbr\",\"text\":\"KCl (Cat# P9541; Sigma-Aldrich)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"39bno\",\"text\":\"MOPS (Cat# A1076.1000; VWR)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3s49d\",\"text\":\"KOH (Cat# 221473; Sigma-Aldrich)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2a21q\",\"text\":\"Dithiothreitol (DTT; Cat# A2948.0025; VWR)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bqb1b\",\"text\":\"n-Dodecyl-β-D-maltoside (DDM; Cat# 1758-1350; Inalco)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7jgs3\",\"text\":\"Synergy H1 microplate reader (Biotek)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"nfpf\",\"text\":\"GraphPad Prism Software\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare a 25 µl reaction mixture containing: 100 ng purified ATP13A4, 11 mM MgCl 2 , 100 mM KCl, 50 mM MOPS-KOH (pH 7), 1 mM DTT, 0,001% (wt/vol) DDM, and desired polyamine concentrations.",
+    "Incubate the mixture 37 °C for 00:05:00 .",
+    "Add ATP to a final concentration of 5 millimolar (mM) to initiate the reaction.",
+    "Incubate the mixture for 01:00:00 at 37 °C .",
+    "Following this, incubate the reaction for 01:00:00 at Room temperature .",
+    "Add 25 µL of ADP-Glo reagent to each reaction and incubate for 01:00:00 at Room temperature .",
+    "Add 50 µL of ADP-Glo Max Detection Reagent to each reaction and incubate for 01:00:00 in the dark at Room temperature . Protect samples from light during incubation with ADP-Glo Max Detection Reagent.",
+    "Measure luminescence using a compatible microplate reader ( e.g. Synergy H1 microplate reader; Biotek).",
+    "Analyze the luminescence data using GraphPad Prism Software. Perform curve fitting to evaluate ATPase activity."
+  ],
+  "authors": [
+    "Sarah van Veen",
+    "Peter Vangheluwe"
+  ],
+  "creator": "Sarah van Veen",
+  "published_on": 1776252960,
+  "created_on": 1733812337,
+  "keywords": []
+}

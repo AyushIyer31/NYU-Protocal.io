@@ -1,0 +1,36 @@
+{
+  "id": 95136,
+  "title": "Mitochondrial DNA base editing in HEK293T cells",
+  "uri": "mitochondrial-dna-base-editing-in-hek293t-cells-c858zy9w",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvm3rnol3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"a20eb\",\"text\":\"This protocol is for the transfection of mitochondrial-targeted DddA-derived cytosine base editors (DdCBE), and their subsequent selection, in HEK293T cells. This uses a dual plasmid system, where a ‘left’ and ‘right’ DdCBE are needed for editing. Enrichment of cells with both DdCBE halves is achieved by separate drug selection for the left and right plasmids.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"6cno7\",\"text\":\"HEK293 cells (ATCC, CRL-3216) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8pe6o\",\"text\":\"HEK media\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8l09p\",\"text\":\"DMEM DMEM (Gibco, 11965092) \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2c7p5\",\"text\":\"10% FBS (R\\u0026D Systems S11150)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4avvi\",\"text\":\"No antibiotics\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8egrn\",\"text\":\"DdCBE plasmids:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3plmp\",\"text\":\"•\\tLeft/left-dead (blastR) and Right (PuroR)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4sulf\",\"text\":\"Lipofectamine 3000 reagents (ThermoFisher, L3000008)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f5tv3\",\"text\":\"Opti-Mem I reduced serum medium (ThermoFisher, 31985070)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d5ulq\",\"text\":\"12-well tissue culture plates (Corning, 353043)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3j710\",\"text\":\"Blasticidin (ThermoFisher, A1113903)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"al1ud\",\"text\":\"Puromycin (ThermoFisher, A1113803)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Plating of HEK293T ATCC Catalog #CRL-3216",
+    "The day before transfection, trypsinize and count the cells.",
+    "In a Falcon® 12-well Clear Flat Bottom TC-treated Multiwell Cell Culture Plate, with Lid, Individually Wr Corning Catalog #353043 , plate 150000 cells per well in 1 mL per well of complete HEK media ( DMEM, high glucose Thermo Fisher Scientific Catalog #11965092 with 10 % volume Fetal Bovine Serum (FBS) ATCC Catalog #30-2020 without antibiotics). Antibiotics can reduce transfection efficiency and were thus omitted.",
+    "Transfection of DdCBE Plasmids",
+    "For each well of cells to be transfected, dilute 3 µL of Lipofectamine™ 3000 Transfection Reagent Thermo Fisher Scientific Catalog #L3000008 into 50 µL (total volume) of Opti-MEM™ I Reduced Serum Medium Thermo Fisher Scientific Catalog #31985070 and mix well.",
+    "In a separate tube, for each well of cells to be transfected, dilute 2 µg of each DdCBE plasmid Left DdCBE Plasmid addgene Catalog #179682 or Left Dead (inactive) DdCBE Plasmid addgene Catalog #179683 with Right DdCBE Plasmid addgene Catalog #179686 that had been modified to include PuroR marker (left and right, for total of 4 µg plasmid DNA (pDNA)) The DdCBE plasmids used were obtained from Addgene, which included left (Addgene #179682) and right (Addgene #179686) DdCBE plasmids for editing, and a left dead (i.e.inactive) DdCBE plasmid (Addgene #179683) used with the right as a control. For this protocol, the right DdCBE plasmid was modified by replacing the BSD gene with PuroR to enable dual selection. Please see the associated publication for more plasmid details. into 50 µL (total volume) of Opti-MEM™ I Reduced Serum Medium Thermo Fisher Scientific Catalog #31985070 . Then add 8 µL P3000 Reagent from Lipofectamine™ 3000 Transfection Reagent Thermo Fisher Scientific Catalog #L3000008 (a 2:1 ratio to DNA) directly to the diluted pDNA. Mix well.",
+    "Add the diluted pDNA solution in P3000 reagent (from 2.2) to diluted Lipofectamine™ 3000 Transfection Reagent Thermo Fisher Scientific Catalog #L3000008 (from 2.1), mix, and incubate for 00:15:00 min at room temperature.",
+    "Discard the old medium in the well. Add 1 mL complete HEK media ( DMEM, high glucose Thermo Fisher Scientific Catalog #11965092 with 10 % volume Fetal Bovine Serum (FBS) ATCC Catalog #30-2020 without antibiotics) to each tube, mix well, and add to the corresponding well. Do this step well by well. Incubate the cells at 37 °C in a 5% CO 2 tissue culture incubator.",
+    "Wait for cells to attach Overnight at 37 °C in a 5% CO 2 tissue culture incubator.",
+    "Selection of the Transfected Cells",
+    "18:00:00 hrs later, replace the medium with complete HEK media ( DMEM, high glucose Thermo Fisher Scientific Catalog #11965092 with 10 % volume Fetal Bovine Serum (FBS) ATCC Catalog #30-2020 without antibiotics) containing up to 5 ug/mL of Blasticidin S HCl (10 mg/mL) Thermo Fisher Catalog #A1113903 and 1 ug/mL of Puromycin Dihydrochloride Thermo Fisher Catalog #A1113803",
+    "Continue selection for 10-14 days and replace the medium every 2 days with complete HEK media containing Blasticidin S HCl (10 mg/mL) Thermo Fisher Catalog #A1113903 and Puromycin Dihydrochloride Thermo Fisher Catalog #A1113803 . Ensure drug selection is not finished until all the control untransfected cells are dead. Passage the cells to a larger well-size or flask if needed.",
+    "Once selection is finished, maintain the cells in complete HEK media ( DMEM, high glucose Thermo Fisher Scientific Catalog #11965092 with 10 % volume Fetal Bovine Serum (FBS) ATCC Catalog #30-2020 without antibiotics) for at least 2 days before performing any experiments."
+  ],
+  "authors": [
+    "Nicole Lake",
+    "Kaiyue Ma",
+    "Justin Cohen",
+    "Monkol Lek"
+  ],
+  "creator": "Justin Cohen",
+  "published_on": 1713812176,
+  "created_on": 1707769074,
+  "keywords": []
+}

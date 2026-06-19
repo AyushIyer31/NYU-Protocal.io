@@ -1,0 +1,31 @@
+{
+  "id": 71070,
+  "title": "Nanopore sequencing data analysis using Microsoft Azure cloud computing service",
+  "uri": "nanopore-sequencing-data-analysis-using-microsoft-chm6t49e",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v9dj7pg3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"afigp\",\"text\":\"This protocol provides instruction to set up the analytic pipeline to process raw data from Oxford Nanopore Sequencing. This pipeline leverages the computing resources available in Microsoft Azure cloud server as well as hospital site at Fiona Stanley Hospital. The raw data in FAST5 format would be converted to FASTQ format, demultiplexed, renamed to appropriate sample ID and filtered based on pre-determined quality threshold. The QC plots would also be generated for ongoing monitoring purposes of sequencing output and quality. The entire data flow from the hospital premise to the cloud and vice versa is completely automated and secured. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Load the multiplexed HLA library pool consisting of 48 individuals onto a MinION flow cell. The data is acquired using MinKNOW software for 16 hours using default settings. MinION (Sequencer, Oxford Nanopore Technologies, MinION 1B / MinION 1C) 16:00:00",
+    "The raw FAST5 files are stored in a local folder on the MinION-connected PC. MinION-connected PC (Computer, Dell, N/A, Intel® Core™ i&-7700K CPU @ 4.20Ghz, 32 GB RAM, 64-bit operating system and GPU driver NVIDIA GTX 1080 Ti)",
+    "The input files are automatically uploaded by the Loome Integrate agent into a container in an Azure blob storage account, deployed within the PathWest Azure subscription. The files are uploaded using Transport Layer Security (TLS), and are encrypted at rest using 256-bit AES encryption. AzCopy upload azcopy copy --recursive Command to upload data to Azure using the AzCopy command-line tool (https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10).",
+    "Azure Batch automatically deploys a GPU-enabled Virtual Machine (VM) for basecalling, de-multiplexing, quality trimming and QC overview using the following commands. Guppy basecaller guppy_basecaller --input_path XX --save_path XX --flowcell FLO-MIN111 --kit SQK-109 --device cuda:0 01:07:10, (representative runtime) Guppy barcoder guppy_barcoder --input_path XX --save_path XX --config configuration.cfg --device cuda:0 --records_per_fastq 0 --trim_barcodes 00:03:06, (representative runtime) Concatenate & rename file cd /each_barcode_foldercat *.fastq > barcodeXX.fastq 00:00:30, (representative runtime) NanoFilt cat barcodeXX.fastq | NanoFilt –q 7 –l 500 > barcodeXX_sampleID.fastq 00:05:39, (representative runtime)",
+    "The Loome Integrate agent detects that the sequencing job has been completed when it finds a file named &#34;final_summary_&lt;GUID&gt;.txt&#34;, and then triggers a new job to deploy the necessary resources and to start the processing steps using the Azure Batch service. Loome Integrate BizData Pty Ltd",
+    "Loome communicates with the Azure Batch service and tells it to run the analysis using a Docker container that is automatically pulled by Azure Batch from a private Azure Container Registry in PathWest&#39;s Azure subscription. Azure Batch service Microsoft",
+    "When each of the VMs was running, the input data is copied into their local disk for faster processing, run the analyses, and then copied the results back into blob storage so that the VMs could be deleted when processing had been completed. Loome Integrate, in coordination with Azure Batch, orchestrates these steps. AzCopy download azcopy copy --recursive Command to download data from Azure using the AzCopy command-line tool (https://learn.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10). AzCopy upload azcopy copy --recursive",
+    "Loome Integrate detects the completion of all tasks in the Azure Batch job and sends an email to notify that the analysis has been successfully completed or to report an error. Loome Integrate BizData Pty Ltd",
+    "If the analysis has been successfully completed, the Loome Integrate agent downloads the results in FASTQ format into the MinION-connected PC. Loome Integrate BizData Pty Ltd AzCopy download azcopy copy --recursive",
+    "The demultiplexed FASTQ file is analysed by a commercial HLA allele assignment software, GenDX NGSengine. NGSengine GenDX The HLA alleles are curated by laboratory staff for accuracy and suitability to reporting.",
+    "An automation agent for Loome Integrate runs on the MinION-connected PC and checks for new FAST5 files every 30 minutes. Loome Integrate BizData Pty Ltd"
+  ],
+  "authors": [
+    "Linh Truong"
+  ],
+  "creator": "Linh Truong",
+  "published_on": 1666197445,
+  "created_on": 1665388650,
+  "keywords": []
+}

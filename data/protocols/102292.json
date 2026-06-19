@@ -1,0 +1,30 @@
+{
+  "id": 102292,
+  "title": "On-bead digestion under denaturing conditions",
+  "uri": "on-bead-digestion-under-denaturing-conditions-df5u3q6w",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg32kypv25/v1",
+  "description": "{\"blocks\":[{\"key\":\"bi065\",\"text\":\"On-bead digestion is used for mass spectrometry to streamline the sample preparation process, reducing sample loss and contamination risks. It allows for efficient protein digestion directly on the solid support, enhancing peptide recovery and improving the sensitivity and accuracy of mass spectrometry analysis by minimizing handling steps and ensuring more consistent results.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"88efa\",\"text\":\"Perform all steps at   .\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":21,\"length\":1}],\"data\":{}},{\"key\":\"a7e3v\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"temperature\",\"mutability\":\"MUTABLE\",\"data\":{\"error_temperature\":false,\"guid\":\"\",\"id\":0,\"label\":\"\",\"scientificNotation\":false,\"temperature\":\"\",\"unit\":32}}}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"e3erf\",\"text\":\"In this procedure all steps are done at    to reduce unwanted denaturization of amino acid side-chains by denaturing agents. Never heat your sample.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":125,\"length\":23}],\"entityRanges\":[{\"key\":0,\"offset\":40,\"length\":1}],\"data\":{}},{\"key\":\"crdhs\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"temperature\",\"mutability\":\"MUTABLE\",\"data\":{\"error_temperature\":false,\"guid\":\"\",\"id\":0,\"label\":\"\",\"scientificNotation\":false,\"temperature\":\"\",\"unit\":32}}}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"eeaor\",\"text\":\"Buffers:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5sb64\",\"text\":\"Denaturation buffer: 8M urea in 50 mM ABC. (For membrane proteins use 7M urea/2M thiourea).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9pqm9\",\"text\":\"Digestion buffer: 50 mM ABC (ammonium bicarbonate) in water, pH 8. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9fgr7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5bc19\",\"text\":\"Reagents: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3muhn\",\"text\":\"DTT: 1 M  in 50 mM ABC.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"61a5s\",\"text\":\"IAA: 1M in 50 mM ABC\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8311j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8ns70\",\"text\":\"Enzymes:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"bnu96\",\"text\":\"LysC: 1 µg/ µL in 0.1% TFA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a8fad\",\"text\":\"Trypsin: 1 µg/ µL in 0.1% TFA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Add 1 µL of 1 Molarity (M), DTT per 10 µL of sample volume and incubate for 30 min at Room temperature . Shake at 1200 rpm.",
+    "When the samples arrive isolate beads from the purification buffer using a magnetic tube rack. Allow 5 minutes of incubation and remove purification buffer.",
+    "Resuspend the beads in three times the original bead volume using denaturation buffer",
+    "Add 1 µL of 1 Molarity (M), IAA per 10 µL of sample volume and incubate for 30 min at Room temperature . Shake at 1200 rpm in the dark.",
+    "Add 1 µg of LysC solution per 50 µg of protein and incubate for at least 3-4 hours at Room temperature .",
+    "Dilute sample with 5x digestion buffer.",
+    "Add 4 µg of trypsin per 50 µg of protein and incubate O/N at 37 °C . The trypsin and the LysC digestion steps are interchangeable, however, trypsin does not work in high urea concentrations, and dilution of the sample is needed before adding trypsin.",
+    "Separate beds from supernatant by using a magnetic tube rack (allow 5 min for all the beads to stick to the side of the tube). Collect supernatant into a new Eppendorf tube.",
+    "Stop the digestion by acidifying the sample to pH &lt; 2.5 with 10 % TFA, to a final % of 1%.",
+    "Proceed to load the sample onto equilibrated C18 StageTips (samples can stay in the fridge until the tips are equilibrated)."
+  ],
+  "authors": [
+    "Cristina CARDENAL PERALTA"
+  ],
+  "creator": "Cristina CARDENAL PERALTA",
+  "published_on": 1761307274,
+  "created_on": 1719221593,
+  "keywords": []
+}

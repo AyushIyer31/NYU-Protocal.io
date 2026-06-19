@@ -1,0 +1,30 @@
+{
+  "id": 229372,
+  "title": "Denaturing On-bead Digestion for LC-MS/MS",
+  "uri": "denaturing-on-bead-digestion-for-lc-ms-ms-hb84b2ryx",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6zp91gqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"i5lo8\",\"text\":\"\\nA denaturing on-bead digestion for protein purification after pull-down using magnetic beads. The protocol is compatible with the cell membrane-permeable Ez-link NHS-SS-Biotin (ThermoScientific, PI21441) labeling and cell membrane-permeable DSP  (ThermoScientific, PI22586). Step-by-step instructions for the pull-down are available in \\\"Co-Immunoprecipitation/Pull-Down of C1q-Interacting Intracellular Proteins/Protein Complexes for Unbiased Forward Screen Using NanoLC-MS/MS\\\"-protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"els88\",\"text\":\"1. Wash beads with HPLC grade H2O and remove the supernatant.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"nv1xy\",\"text\":\"2. Add 1 bed volume of 2M urea with 25 mM ammonium bicarbonate in water to the magnetic beads with protein.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qpxor\",\"text\":\"   Note: Bed volume refers to the volume of the resin or magnetic beads. For example, if you have 100 µL of a 50% slurry, the bed volume is 50 µL once settled.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"npdue\",\"text\":\"3. Add Dithiothreitol (DTT) to a final concentration of 2 mM and incubate for 15 minutes at 37°C.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"nyksf\",\"text\":\"4. Add iodoacetamide to a final concentration of 4 mM and incubate for 30 minutes in the dark at room temperature.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"llzfb\",\"text\":\"5. Add DTT to a final concentration of 2 mM and incubate for 15 minutes at 37°C to quench.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"wwxyb\",\"text\":\"6. Add 1 bed volume of 25 mM ammonium bicarbonate to dilute the urea to a final concentration of 1M.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"hynwe\",\"text\":\"7. Add trypsin to a final concentration of 20 ng/µL. Incubate at 37°C for 8 hours to overnight. *Dissolved in 50 mM acetic acid.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6nszu\",\"text\":\"8. Add formic acid to 0.1% to stop the digestion.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"iqkki\",\"text\":\"9. Collect the supernatant from the beads for a c18 cleanup.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"y51my\",\"text\":\"- HPLC grade H2O (Fisher Scientific, Cat# W5-4)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"j46cv\",\"text\":\"- 2M urea (Fisher Scientific, Cat# BP169-500)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1ons6\",\"text\":\"- Ammonium bicarbonate (Sigma-Aldrich, Cat# 09830)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"u7ccq\",\"text\":\"- Dithiothreitol (DTT) (Fisher Scientific, Cat# BP172-25)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5r4vq\",\"text\":\"- Iodoacetamide (Sigma-Aldrich, Cat# I6125)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"u9fio\",\"text\":\"- Trypsin (Fisher Scientific, Cat# PRV5111)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"wxyf9\",\"text\":\"- 50 mM acetic acid (Millipore-Sigma, Cat# 5330010050)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5acdx\",\"text\":\"- Formic acid (Fisher Scientific, Cat# 60-006-17)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Wash beads with HPLC-grade H2O (Fisher Scientific, Cat# W5-4) and remove the supernatant.",
+    "Add 1 bed volume of 2M urea (Fisher Scientific, Cat# BP169-500) with 25 mM ammonium bicarbonate (Sigma-Aldrich, Cat# 09830) in water to the magnetic beads with protein. Note: Bed volume refers to the volume of the resin or magnetic beads. For example, if you have 100 µL of a 50% slurry, the bed volume is 50 µL once settled.",
+    "Add Dithiothreitol (DTT) (Fisher Scientific, Cat# BP172-25) to a final concentration of 2 mM and incubate for 15 minutes at 37°C.",
+    "Add iodoacetamide (Sigma-Aldrich, Cat# I6125) to a final concentration of 4 mM and incubate for 30 minutes in the dark at room temperature.",
+    "Add DTT to a final concentration of 2 mM and incubate for 15 minutes at 37°C to quench.",
+    "Add 1 bed volume of 25 mM ammonium bicarbonate to dilute the urea to a final concentration of 1M.",
+    "Add trypsin* (Fisher Scientific, Cat# PRV5111) to a final concentration of 20 ng/µL. Incubate at 37°C for 8 hours to overnight. *Dissolved in 50 mM acetic acid (Millipore-Sigma, Cat# 5330010050).",
+    "Add formic acid (Fisher Scientific, Cat# 60-006-17) to 0.1% to stop the digestion.",
+    "Collect the supernatant from the beads for a C18 cleanup. See Sample Desalting Using OMIX C18 Tips for LC-MC-protocol for details."
+  ],
+  "authors": [
+    "Katja Piltti",
+    "Clinton Yu"
+  ],
+  "creator": "Katja Piltti",
+  "published_on": 1761153454,
+  "created_on": 1759959440,
+  "keywords": []
+}

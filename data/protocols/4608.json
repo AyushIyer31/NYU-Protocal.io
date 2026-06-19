@@ -1,0 +1,34 @@
+{
+  "id": 4608,
+  "title": "Genomic DNA extraction and PCR",
+  "uri": "genomic-dna-extraction-and-pcr-gq8bvzw",
+  "doi": "dx.doi.org/10.17504/protocols.io.gq8bvzw",
+  "description": "{\"blocks\":[{\"key\":\"489i\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"fp5mg\",\"text\":\"Example of two PCR'd gDNA extracts, one from a nucleofected cell and one from an unzapped control, saw heteroduplexing in the edited sample and tried to get rid of it by reconditioning and/or adding more polymerase.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"bskef\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":[]},{\"key\":\"18afa\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"955l9\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"imageblock\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"D6BC3CF43EB84D2FABC6D0026028ED75\",\"height\":null,\"is_video\":false,\"mime\":null,\"original_name\":\"pic1.jpg\",\"placeholder\":\"https://content.protocols.io/4cc75n.jpg\",\"source\":\"https://content.protocols.io/4cc75n.jpg\",\"width\":null}},\"1\":{\"type\":\"imageblock\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"59971ABB4BE54C1C9BAC2B51F10E96F9\",\"height\":null,\"is_video\":false,\"mime\":null,\"original_name\":\"pic2.jpg\",\"placeholder\":\"https://content.protocols.io/4ec75n.jpg\",\"source\":\"https://content.protocols.io/4ec75n.jpg\",\"width\":null}}}}",
+  "before_start": "{\"blocks\":[{\"key\":\"3eith\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"8c83j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Count cells The amount of cells per µL of QuickExtract is flexible, depending on desired application. For assessment of editing outcomes (e.g. from pools of cells edited with the Cas9 RNP using our other protocols), use sufficient cells to paint in accurate picture from a single PCR (&gt;1000 cells per PCR, ideally, in &lt;5 µL extract).",
+    "Determine volume of cells and volume of QuickExtract DNA extraction solution needed to achieve concentration of 500K cells per 200 µL QE solution (2500 cells per µL)",
+    "Spin down appropriate volume of cells: 300xg, 10 minutes 00:10:00",
+    "Resuspend in appropriate volume of QE solution, transfer to 1.5mL tubes",
+    "Pre-heat a heating block to 65°C",
+    "Vortex samples thoroughly for 15 seconds each. 00:00:15",
+    "Heat samples on block (65°C) for 6 minutes 00:06:00",
+    "Take samples off block, pre-heat block to 98°C (It’s very important for block to reach this temperature! Not enough heat can lead to a failed extraction.)",
+    "Vortex samples again, 15 seconds each. 00:00:15",
+    "Heat samples on block (98°C) for 2 minutes. 00:02:00",
+    "Mix for 1rxn %s %s uL component 29 H2O 10 5x Q5 Reaction Buffer (NEB) 1 10mM dNTPs 2.5 10uM Forward Primer 2.5 10uM Reverse Primer 0.5 Q5 DNA polymerase (NEB 2U/uL) 5 extract DNA run PCR: 1.98C 30s 2.98C 10s 3.66C 30s 4. 72C 20s 5. #2-4, 27 cycles 6.72C 2min* *This final extenstion time may not be necessary for our short amplicons, and might be contributing to unwanted re-annealing and heteroduplexing. The products of this initial PCR often contain heteroduplexes that can interfere with downstream analysis. To get rid of heteroduplexes, we use a &#34;reconditioning&#34; step (see next.)",
+    "The products of this initial PCR often contain heteroduplexes that can interfere with downstream analysis. To get rid of heteroduplexes, we use a &#34;reconditioning&#34; step (see next.)",
+    "Reconditioning PCR This is essentially a 10-fold dilution of the initial PCR products in more master mix. Mix for 1rxn %s %s uL component 29 H2O 10 5x Q5 Reaction Buffer (NEB) 1 10mM dNTPs 2.5 10uM Forward Primer 2.5 10uM Reverse Primer 1.0* Q5 DNA polymerase (NEB 2U/uL) 5 INITIAL PCR PRODUCT *0.5uL is fine too, but we have seen that using double the concentration of polymerase in the reconditioning master mix helps to further eliminate heteroduplexing. run PCR: 1.98C 30s 2.98C 10s 3.66C 30s 4. 72C 20s 5. #2-4, 27 cycles no final extension",
+    "Gel: Add 1-2 µL 6X Purple Loading Dye to 5µL of reconditioned PCR pdt, run on either 2% agarose or 4-20% TBE acrylamide (to confirm successful elimination of heteroduplexes) at 180V for ~40 minutes. 00:40:00"
+  ],
+  "authors": [
+    "Mark Dewitt & Julia Wong"
+  ],
+  "creator": "Jacob E Corn",
+  "published_on": 1546420855,
+  "created_on": 1481578320,
+  "keywords": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": 28935,
+  "title": "Cell Counting",
+  "uri": "cell-counting-8hfht3n",
+  "doi": "dx.doi.org/10.17504/protocols.io.8hfht3n",
+  "description": "{\"blocks\":[{\"key\":\"dgatr\",\"text\":\"Bacterial concentration can be measured by several methods. One of them is turbidity. Turbidity, or light scattering, is measured in a spectrophotometer such as a Spectronic 20. This method has the advantage of being the quickest method at the lab bench.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"6ed5p\",\"text\":\"Check all working surfaces and materials are clean before start\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"d09fn\",\"text\":\"Please note: Be sure to wear gloves during this procedure, to avoid getting culture on your hands while transferring liquid from tubes. Lab coat is also required. If a laminar flow cabinet is available, it is recommended for this procedure.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"24h8j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"g9vi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"1nkfo\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":[]},{\"key\":\"dqfoc\",\"text\":\"Turbid broth culture of E. coli\",\"type\":\"unordered-list-item\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6a789\",\"text\":\"Tryptic soy broth (TSB)\",\"type\":\"unordered-list-item\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4hopd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"bo1j9\",\"text\":\"Lab equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":13}],\"entityRanges\":[],\"data\":[]},{\"key\":\"3ubu5\",\"text\":\"21 clean culture tubes (they do not need to be sterile)\",\"type\":\"unordered-list-item\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"e7l7i\",\"text\":\"Clean spectrophotometer cuvettes\",\"type\":\"unordered-list-item\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3snr5\",\"text\":\"10-1000 ml pipets\",\"type\":\"unordered-list-item\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3p4o4\",\"text\":\"Pipump\",\"type\":\"unordered-list-item\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6gjnm\",\"text\":\"Vortex mixer\",\"type\":\"unordered-list-item\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3afpd\",\"text\":\"Spectrophotometer\",\"type\":\"unordered-list-item\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Turn on the spectrophotometer and set the wavelength to 425 nm. Let it warm up for at least 15 min.",
+    "Label the culture tubes 1 – 21. Using different pipets, add turbid E. coli culture and TSB to each tube in the volumes shown in the table.",
+    "Mix each tube thoroughly by vortexing for 1 – 2 sec with a vortex mixer.",
+    "With no tube in the spectrophotometer, set the 0%T setting.",
+    "Transfer 3 – 4 ml of broth from tube 21 (TSB with no E. coli) to the spectrophotometer cuvette, carefully wipe the outside of the tube with a kimwipe, place the tube in the machine, and set the 100%T setting (blank the spectrophotometer). Switch the spectrophotometer setting to “Absorbance.”",
+    "Remove the cuvette and pour the broth back into tube 21. Carefully drain the last few drops from the lip of the cuvette into a kimwipe. Put the contaminated kimwipe in the biohazard bag.",
+    "Starting with tube #20 and going backwards to tube #1, repeat steps 5-6.",
+    "Transfer the data to a Microsoft Excel spreadsheet. The spreadsheet should contain the following columns: volume of E. coli culture, volume of broth, dilution factor, and measured absorbance.",
+    "In the spreadsheet, create an X-Y scatter plot of dilution factor vs absorbance. * Please note: All charts must be added as separate sheets in the workbook, not pasted into the worksheet with the data columns.",
+    "Add a second order polynomial trendline to the plot, and set the options on the trendline to show the equation and the correlation coefficient.",
+    "From the plot, identify the range in which absorbance is proportional to bacterial concentration. Create a second plot, plotting only the linear range of dilution factor vs absorbance.",
+    "Add a linear trendline to the second plot, and set the options for the trendline to show the equation and the correlation coefficient."
+  ],
+  "authors": [
+    "Laura Sánchez"
+  ],
+  "creator": "Manuela De Las Casas",
+  "published_on": 1571577341,
+  "created_on": 1571576899,
+  "keywords": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": 3247,
+  "title": "Sytoxgreen staining (DNA stain, for flow cytometry)",
+  "uri": "Sytoxgreen-staining-DNA-stain-for-flow-cytometry-fepbjdn",
+  "doi": "dx.doi.org/10.17504/protocols.io.fepbjdn",
+  "description": "{\"blocks\":[{\"key\":\"11bjh\",\"text\":\"Amalgam from various places.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"b9kov\",\"text\":\"All spins are at 6000 rcf 1min RT. You will need 50mM sodium citrate buffer (~7.2 pH), a 5mM solution of sytoxgreen in DMSO, RNAseA (100mg/ml), and ProteinaseK (20mg/ml) solutions.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"7dbnk\",\"text\":\"This protcol is designed/re-optimized for staining 5e6 cells. However, sytoxgreen is supposed to be fairly robust to cell number changes, so variation from this should be tolerated (see Haase and Reed 2002). Remember, PBS messes with Sytoxgreen staining.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"10anf\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3oq5i\",\"text\":\"Perform an Ethanol fix in whatever condition you want. The following assumes that cells are be in 70% etOH and at -20C. You of course need to count the density of these fixed cells to proceed.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":11,\"length\":11}],\"entityRanges\":[{\"key\":0,\"offset\":11,\"length\":11}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"523B262C4F434EB4957A9F65E0180D87\",\"url\":\"https://wikis.nyu.edu/display/greshamlab/Ethanol+fix\"}}}}",
+  "warning": "{\"blocks\":[{\"key\":\"7sn9c\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Spin down 5e6 cells in an eppendorf.",
+    "Aspirate ALL of the etOH. R/S in 1ml of citrate buffer. Spin.",
+    "Aspirate. R/S in 200ul of 250ug/ml RNAseA in citrate buffer. Leave at 50C heatblock for one hour.",
+    "Add 20ul of 20mg/ml ProteinaseK. Continue incubation for one hour (do not cut short without re-optimizing!). Spin.",
+    "Aspirate and R/S in 1ml citrate buffer. Spin.",
+    "Aspirate and R/S in 1ml citrate buffer. Sonicate standard settings (5s on/off, power 10), put on ice.",
+    "Put 200ul of this cell suspension onto 200ul of 2uM Sytoxgreen in citrate buffer. Mix.",
+    "Flow in the Accuri flow cytometer. Expected results, for budding yeast cells fixed during exponential growth in YPD: Want quantification?"
+  ],
+  "authors": [
+    "Darach Miller"
+  ],
+  "creator": "Darach Miller",
+  "published_on": 1469565334,
+  "created_on": 1469475329,
+  "keywords": []
+}

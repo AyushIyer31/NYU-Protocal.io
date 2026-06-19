@@ -1,0 +1,23 @@
+{
+  "id": 12404,
+  "title": "qPCR quantification of methanogens using general mcrA primers",
+  "uri": "qpcr-quantification-of-methanogens-using-general-m-qcudsww",
+  "doi": "dx.doi.org/10.17504/protocols.io.qcudsww",
+  "description": "{\"blocks\":[{\"key\":\"4absh\",\"text\":\"General mcrA primers for quantifying methanogens using a SYBR Green-based assay.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":8,\"length\":4}],\"entityRanges\":[],\"data\":[]},{\"key\":\"do8n0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2g9c2\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":[]},{\"key\":\"6kgtg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"806c\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"68jgh\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":[]},{\"key\":\"2r826\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4qrh0\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":[]},{\"key\":\"ckd87\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ctdoe\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"0_2\":\"\",\"0_3\":\"\",\"1_0\":\"\",\"1_1\":\"\",\"1_2\":\"\",\"1_3\":\"\",\"2_0\":\"\",\"2_1\":\"\",\"2_2\":\"\",\"2_3\":\"\"},\"colWidths\":[50,50,50,50],\"data\":[[\"Name\",\"Direction\",\"Sequence\",\"Citation\"],[\"mlas_mod\",\"Fwd\",\"GGY GGT GTM GGD TTC ACM CAR TA\",\"Angel et al., 2011\"],[\"mcrA_rev\",\"Rev\",\"CGT TCA TBG CGT AGT TVG GRT AGT\",\"Steinberg and Regan, 2008\"]],\"guid\":\"5AE74DE0A41811EAAD119BECD6D63660\",\"legend\":\"\",\"mergeCells\":[],\"rowHeights\":[23,23,23],\"show_headers\":true}},\"1\":{\"type\":\"citation\",\"mutability\":\"\",\"data\":{\"guid\":\"495F0B48341F11EE9D4302C0B41BC903\",\"title\":\"Phylogenetic comparison of the methanogenic communities from an acidic, oligotrophic fen and an anaerobic digester treating municipal wastewater sludge\",\"protocol_guid\":\"\",\"journal\":\"Applied and Environmental Microbiology\",\"date\":\"2008-11-01T16:03:00Z\",\"created_on\":\"2026-02-10T22:33:37Z\",\"doi\":\"10.1128/AEM.00553-08\",\"authors\":\"Steinberg L M, Regen J M\",\"can_edit\":false}},\"2\":{\"type\":\"citation\",\"mutability\":\"\",\"data\":{\"guid\":\"495F0B9D341F11EE9D4302C0B41BC903\",\"title\":\"Activation of methanogenesis in arid biological soil crusts despite the presence of oxygen.\",\"protocol_guid\":\"\",\"journal\":\"PloS one\",\"date\":\"2011-01-01T00:00:00Z\",\"created_on\":\"2026-02-10T22:33:37Z\",\"doi\":\"https://doi.org/10.1371/journal.pone.0020453\",\"authors\":\"Angel R, Matthies D, Conrad R\",\"can_edit\":false}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"dnued\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"7vnu2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"91kpn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "%s %s Reagent Final conc. 1 tube (25μl) plate (25μl x 100) PCR H2O 2.85 285 ReadyMix (Sigma) 1x 12.5 1250 MgCl2 (25mM) 3.5 mM 3.5 350 BSA (50μg/μl) 0.8 μg/μl 0.4 40 FITC (1:1000) 0.25 25 mlas-mod (25μM) 0.25 μM 0.25 25 mrcA-rev (25μM) 0.25 μM 0.25 25 Template 5 5 x 100 * Different master mixes vary in concentration of MgCl 2 and the amount should be adjusted accordingly",
+    "1. 94 ◦ C – 5′ 2. x 40 { a. 95 ◦ C – 30′′ b. 57 ◦ C – 45′′ c. 72 ◦ C – 30′′ d. 84°C - 10&#39;&#39; take a snapshot } 3. Melt curve: 75°C – 94.8°C –6’’. Increase by 0.2°C"
+  ],
+  "authors": [
+    "Roey Angel",
+    "Eva Petrova"
+  ],
+  "creator": "Eva Petrova",
+  "published_on": 1598970901,
+  "created_on": 1527153323,
+  "keywords": []
+}

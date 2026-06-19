@@ -1,0 +1,32 @@
+{
+  "id": 123771,
+  "title": "Immunofluorescence Staining for Assessing pUb(Ser65) Accumulation in iNeurons",
+  "uri": "immunofluorescence-staining-for-assessing-pub-ser6-d4438yyn",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2ly6okpgx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"5m82d\",\"text\":\"Protocol for the imaging and analysis of iNeurons with anti-pUb(Ser65) immunofluorescence in order to measure PINK1-dependent mitophagy initiation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"bnhh0\",\"text\":\"10x Phosphate Buffered Saline (Fisher Scientific, 10649743)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bg3u4\",\"text\":\"Heat-inactivated foetal bovine serum (FBS) (Gibco, A5256801)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"coear\",\"text\":\"10% w/v Triton-X-100 (Sigma, 93443)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"82ou4\",\"text\":\"rabbit anti-pUb(Ser65) IgG (Cell Signaling Technology, Cat# 62802, RRID:AB_2799632)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"52i6g\",\"text\":\"mouse anti-TOM20 IgG2a (Santa Cruz Biotechnology, Cat# sc-17764, RRID:AB_628381)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1n98j\",\"text\":\"chicken anti-MAP2 IgY (Millipore Cat# AB5543, RRID:AB_571049)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e9gmo\",\"text\":\"goat anti-rabbit IgG (H+L) Alexa Fluor 488 (Thermo Fisher Scientific Cat# A-11008, RRID:AB_143165)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3p3rl\",\"text\":\"goat anti-mouse IgG (H+L) Alexa Fluor 568 (Thermo Fisher Scientific Cat# A-11004, RRID:AB_2534072)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2q4cm\",\"text\":\"goat anti-chicken IgY (H+L) Alexa Fluor 647 (Thermo Fisher Scientific Cat# A-21449, RRID:AB_2535866).\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d6qgf\",\"text\":\"Hoechst 33342 Solution (20 mM) (Thermo Fisher Scientific Cat# 62249) \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "iNeuron culture and formaldehyde fixation described in &#34;iNeuron Differentiation and Culture in N2B27 vs BrainPhys for Immunofluorescence and Biochemistry Assessments of Mitophagy&#34; ( https://www.protocols.io/private/E5851436F8F111EF86990A58A9FEAC02 ).",
+    "Wash fixed iNeuron cultures in Revvity 96-well Phenoplates twice with 100 µL of PBS. Note: cultures are very delicate and utmost care and steady liquid additions is required throughout the whole staining procedure in order to prevent detachment of iNeurons from culture dish en masse.",
+    "Incubate fixed iNeurons in blocking and permeabilisation solution ( 10 % (v/v) FBS, 0.25 % (w/v) , 1x PBS) for 01:00:00 at Room temperature . 50 µL per well of Revvity Phenoplate 96-well.",
+    "Prepare primary antibody dilution in blocking solution ( 10 % (v/v) FBS, 1x PBS). 50 µL will be required for each well of a Revvity Phenoplate 96-well. 1:1000 rabbit anti-pUb(Ser65) IgG 1:1000 mouse anti-TOM20 IgG2a 1:5000 chicken anti-MAP2 IgY",
+    "Remove blocking and permeabilisation solution from cells and add 50 µL of primary antibody dilution prepared in go to step #1.6 to each well of fixed iNeurons. Incubate for 02:00:00 at Room temperature .",
+    "Remove primary antibody dilution and wash wells 3x with 100 µL of PBS.",
+    "Prepare secondary antibody and Hoechst nuclear counterstain dilution in blocking solution ( 10 % (v/v) FBS, 1x PBS). 50 µL will be required for each well of a Revvity Phenoplate 96-well. 1:2000 goat anti-rabbit IgG (H+L) Alexa Fluor 488 1:2000 goat anti-mouse IgG (H+L) Alexa Fluor 568 1:2000 goat anti-chicken IgY (H+L) Alexa Fluor 647 10 µM Hoechst 33342",
+    "Remove PBS wash from cells and add 50 µL of secondary antibody with Hoechst dilution prepared in go to step #1.6 to each well of fixed iNeurons. Incubate for 02:00:00 at Room temperature .",
+    "Remove secondary antibody with hoechst dilution and wash wells 3x with 100 µL of PBS. Keep cells incubated in 100 µL of PBS for imaging.",
+    "Imaging Parameters on Opera Phenix: Use 40x objective In confocal mode do a z-stack 1µm thick slices Sequentially detect the 4x fluoroscent signals Adjust pixel dwell time to give good signal but avoiding saturation Hoechst 33342: Excitation 375nm laser, Emission 435-515nm Alexa Fluor 488: Excitation 488nm laser, Emission 500-550nm Alexa Fluor 568: Excitation 561nm laser, Emission 570-630nm Alexa Fluor 647: Excitation 640nm laser, Emission 650-760nm I usually do 6x fields per well and will take ~1.5hr to image 60-wells",
+    "Using the columbus software the following is a useful analysis strategy for pUb(Ser65) accumulation in iNeurons: Using max intensity project Define MAP2+ area of each imaging field based on the intensity of Alexa Fluor 647 (MAP2 Secondary antibody) Measure Alexa Fluor 488 (pUb(Ser65) secondary antibody) mean intensity in the MAP2+ area of each field. Report the mean intensity of all fields within a well. Average the mean well intensities across technical replicate wells"
+  ],
+  "authors": [
+    "Benjamin O'Callaghan",
+    "Helene Plun-Favreau"
+  ],
+  "creator": "Benjamin O'Callaghan",
+  "published_on": 1741804693,
+  "created_on": 1741096117,
+  "keywords": []
+}

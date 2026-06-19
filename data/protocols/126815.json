@@ -1,0 +1,40 @@
+{
+  "id": 126815,
+  "title": "MSK KO-village scRNA-seq",
+  "uri": "msk-ko-village-scrna-seq-d7379qrn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvjd6x5vk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"el6np\",\"text\":\"Protocol for labeling KO hPSC lines for pooled differentiation (KO-village) followed by scRNA-seq\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Mutant and WT hESCs were maintained in Essential 8 (E8) medium (Thermo Fisher Scientific, A1517001) on vitronectin (Thermo Fisher Scientific, A14700) pre-coated plates at 37 °C with 5% CO2. The Rho-associated protein kinase (ROCK) inhibitor Y-27632 (10 μM; Selleck Chemicals, S1049) was added to the E8 medium the first day after passaging or thawing of hESCs. Cells were regularly confirmed to be mycoplasma-free by the Memorial Sloan Kettering Cancer Center (MSKCC) Antibody &amp; Bioresource Core Facility.",
+    "Clonal mutants were generated using HUES8 and H1 iCas9 hESC lines. Most mutant clones have been previously described and are listed in the supplementary table. In brief, for gene knockout lines, a single gRNA targeting an exon was used to induce frameshift mutations. For enhancer deletion lines, a pair of gRNAs flanking the enhancer region was employed to excise the entire enhancer. crRNAs and tracrRNA were ordered from IDT (Alt-R® CRISPR-Cas9 crRNA and #1072532) and added at a 15 nM final concentration. RNA molecules were transiently transfected into hESCs using Lipofectamine RNAiMAX (Thermo, 13778100) following manufacturer’s instructions. Cas9 expression was induced with 2 μg/ml doxycycline one day prior to transfection, the day of transfection, and one day after transfection. ~3 days after transfection, hESCs were dissociated to single cells using TrypLE Select (Thermo Fisher Scientific, 12563029), and 500–1000 cells were plated into one 100-mm tissue culture dish with 10 ml E8 media supplemented with 10 μM ROCK inhibitor Y-27632 (Selleck Chemicals, S1049) for colony formation. After 7-10 days of expansion, single colonies were picked into 96-well plate. Genomic DNA was extracted using the QIAGEN Blood &amp; Cell Culture DNA Kit (QIAGEN, 13362) for genotyping. Details of the gRNA target sequences, PCR primers, and mutation sequences can be found in the supplementary table.",
+    "Individual GFP-barcode plasmids were cloned from the LARRY barcode library (Addgene #140024) and then transfected to 293T cells to produce lentivirus. Each mutant clone was then infected with a unique barcode lentivirus, targeting an infection efficiency of 20–40% GFP positivity. Three days after infection, GFP+ cells were sorted, expanded in E8 medium, and cryopreserved. To enable downstream single-cell RNA-seq (ScRNA-seq) multiplexing, all barcoded mutant clones were organized into 11 ‘villages’ and cryopreserved. Each village consisted of 5-13 clones, with equal number of cells contributed by each clone. Each clone was only included in one village.",
+    "hESCs were seeded at a density of 2.1 × 105 cells/cm2 on matrigel-coated plates in E8 medium with 10 μM Y-27632. After 24 hours, cells were washed with PBS and differentiated following previously described protocol with some modifications (1).",
+    "During stage 1-4, cells were cultured on 12-well plate with daily medium change. At the end of stage 4, cells were dissociated with TRIPLE. ~6 × 106 cells were resuspended in 6 ml S5 medium and transferred into a single well of ultra-low attachment 6-well plates (Corning, 3471). The plate was incubated on an orbital shaker at 100 rpm. To support cell survival, 10 μM Y-27632 was added to S5 medium on the transfer day. During stage 5, the medium was changed daily, and during stage 6, it was changed every other day.",
+    "Stage 1 (3 d): S1/2 medium supplemented with 100 ng ml−1 Activin A (Bon Opus Biosciences) and 5 μM CHIR99021 (04-0004-10, Stemgent) for 1 d. S1/2 medium supplemented with 100 ng/ml Activin A for the next 2 d.",
+    "Stage 2 (2 d): S1/2 medium supplemented with 50 ng/ml KGF (AF-100-19, PeproTech) and 0.25 mM vitamin C (VitC) (Sigma-Aldrich, A4544).",
+    "Stage 3 (2 d): S3/4 medium supplemented with 50 ng ml−1 KGF, 0.25 mM VitC and 1 μM retinoic acid (R2625, MilliporeSigma).",
+    "Stage 4 (4 d): S3/4 medium supplemented with 50 ng ml−1 KGF, 0.1 μM retinoic acid, 200 nM LDN (Stemgent, 04-0019), 0.25 μM SANT-1 (Sigma, S4572), 0.25 mM VitC and 200 nM TPB (EMD Millipore, 565740).",
+    "Stage 5 (7 d): S5 medium supplemented with 10 µM ALK5i II (Cayman Chemical Company, 14794-5), 0.1 μM retinoic acid, 0.25 μM SANT-1, 0.25 mM VitC, 1 µM T3 (Sigma-Aldrich, T6397), 10 mg ml−1 Heparin (Sigma-Aldrich, H3149) and 1 µM γ-Secretase Inhibitor XXI (EMD Millipore, 565790).",
+    "Stage 6 (14 d): ESFM medium",
+    "The base differentiation medium formulations used in each stage were as follows.",
+    "S1/2 medium: 500 ml MCDB 131 (15-100-CV, Cellgro) supplemented with 2 ml 45% glucose (G7528, MilliporeSigma), 0.75 g sodium bicarbonate (S5761, MilliporeSigma), 2.5 g BSA (68700, Proliant), 5.1 ml GlutaMAX (35050079, Invitrogen).",
+    "S3/4 medium: 500 ml MCDB 131 supplemented with 0.52 ml 45% glucose, 0.877 g sodium bicarbonate, 10 g BSA, 2.5 ml ITS-X (Life Technologies, 51500056), 5.2 ml GlutaMAX.",
+    "S5 medium: 500 ml MCDB 131 supplemented with 4 ml 45% glucose, 0.877 g sodium bicarbonate, 10 g BSA, 2.5 ml ITS-X, 5.2 ml GlutaMAX.",
+    "ESFM medium: 500 ml MCDB 131 supplemented with 0.52 ml 45% glucose, 10.5 g BSA, 5.2 ml GlutaMAX, 5.2 ml NEAA (Invitrogen, 11140050), 1 mM ZnSO4 (MilliporeSigma, 108883), 523 ml Trace Elements A (Corning, 25-021-CI), 523 ml Trace Elements B (Corning, 25-022-CI), 10 mg ml−1 Heparin.",
+    "One day before differentiation, the 11 mutant villages and 3 wild-type (WT) barcoded clones were counted and pooled together, with equal cell contributions from each clone. To ensure efficient islet differentiation, GFP+ barcoded cell pools (11 mutant villages and 3 WT clones) were mixed with GFP negative (GFP–) H1 WT cells at a 30:70 ratio for seeding and differentiation. During differentiation, cells were collected and cryopreserved in Bambanker cell freezing medium (Fujifilm, 302-14681) at the following time points: day -1 (one day before differentiation), day 3 (stage 1), 7 (stage 3), 11 (stage 4) and 18 (stage 5).",
+    "On the day of scRNA-seq library preparation, frozen cells were thawed in 37°C and resuspended in PBS with 2% BSA. GFP+ cells were then sorted out and loaded on Chromium Controller with a targeted collection of 30,000 cells per reaction following the manufacturer’s instructions (10x Genomics Chromium Single Cell 3′ Reagent Kit v3.1 User Guide). cDNA libraries and targeted barcode libraries were generated separately using 10ul cDNA each. cDNA libraries were made under manufacturer’s instructions and targeted LARRY barcode libraries were amplified using specific primers (F: CTACACGACGCTCTTCCGATCT; R: GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCTtaaccgttgctaggagagaccataT). Both cDNA and targeted libraries were sequenced on NovaSeq 6000 platform following the manufacturer’s guidelines.",
+    "H1 and HUES8 WT clones were each infected with 12 different LARRY barcodes and cultured separately. During differentiation, WT cells were collected and cryopreserved in Bambanker cell freezing medium at the following time points: day -1, 3, 5, 7, 9, 10, 11, 12, 14, 16, 18, 26. Each time point corresponded to a unique barcode. The cDNA and targeted libraries were then generated and sequenced as described above."
+  ],
+  "authors": [
+    "Dingyu Liu",
+    "Danwei Huangfu"
+  ],
+  "creator": "Danwei Huangfu",
+  "published_on": 1744830590,
+  "created_on": 1744829648,
+  "keywords": []
+}

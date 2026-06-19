@@ -1,0 +1,43 @@
+{
+  "id": 71931,
+  "title": "Western Blot",
+  "uri": "western-blot-cig3ubyn",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g7y428gwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"4i1il\",\"text\":\"Western Blot Protocol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Prepare the appropriate amount of RIPA buffer with Protease and Phosphatases Inhibitor Cocktail (Roche) and maintain On ice",
+    "Collect cells/organoids in PBS On ice in an eppendorf and spin down 500 rpm, 4 °C, 5 minutes",
+    "Add appopriate amount of lysis buffers (1:50 v/v proportion between cell pellet and lysis buffer) to the pellet and pipette up and down",
+    "For organoid samples use an homogeniser",
+    "Incubate samples for 00:30:00 On ice . Spinning every 00:10:00",
+    "Centrifuge at 15000 x g, , for 00:10:00 at 4 °C and collect the supernatant in a new tube.",
+    "If SDS fraction is desired, add 2 Mass / % volume SDS to RIPA buffer and resuspend pellet from step 5.",
+    "Sonicate the sample a 3 times for 00:00:10 to ensure fragmentation of genomic DNA released during lysis and consequently reduce viscosity",
+    "Quantify protein concentration.",
+    "Mix 20-30 µg of protein with Laemmli&#39;s loading buffer",
+    "Denaturate the proteins by incubation at 95 °C for 00:05:00 , spin briefly before loading",
+    "Load pre-cast gel into Western Bloat apparatus and fill with Running Buffer (BioRad).",
+    "Load samples and protein ladder into gels, Run the gel at 120V for 00:45:00 to ensure protein separation.",
+    "Transfer proteins into a PVDF membrane (previously activated with methanol and hydrated in ddH2O)",
+    "Remove membrane from transfer and place into a box with blocking buffer: 5% BSA In TBS-T (20mM Tris-HCl, 150mM NaCL pH8, 0.1% Tween20). Block for 01:00:00",
+    "If alpha-synuclein is to be blotted, fix the membrane with 4% PFA in PBS for 00:30:00 prior to blocking",
+    "Once blocked, sequentially probe the membrane for antibody staining and detection. Antibody dilution might need optimization.",
+    "Prepare primary antibody in 5% BSA in TBS-T and left incubating Overnight at 4 °C",
+    "Wash membranes 3x 00:10:00 in TBS-T and then incubated for 01:00:00 at Room temperature with the appropriate HPR-tagged secondary antibody.",
+    "Membrane was washed 3x 00:10:00 in TBS-T",
+    "Mix EZ-ECL solution 1:1 (v/v) and incubate on the membrane for 00:01:00",
+    "Image membranes using a Licor Odyssey Chemioluminescence Imager."
+  ],
+  "authors": [
+    "Elena Coccia",
+    "gustavo.parfitt Parfitt"
+  ],
+  "creator": "Elena Coccia",
+  "published_on": 1667941067,
+  "created_on": 1666901861,
+  "keywords": []
+}

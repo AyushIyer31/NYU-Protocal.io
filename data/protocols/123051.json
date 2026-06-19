@@ -1,0 +1,32 @@
+{
+  "id": 123051,
+  "title": "Phagocytosis of antigen-coated beads or malaria parasites using neutrophils\n",
+  "uri": "strong-phagocytosis-of-antigen-coated-beads-or-ma-d4ej8tcn",
+  "doi": "dx.doi.org/10.21203/rs.3.pex-2511/v1",
+  "description": "{\"blocks\":[{\"key\":\"kcckh\",\"text\":\"Antibodies can opsonise pathogens and promote opsonic phagocytosis by immune cells (e.g. neutrophils, monocytes, macrophages). High levels of antibodies capable of inducing opsonic phagocytosis have been associated with protective immunity in several diseases, including malaria. This protocol measures phagocytosis by neutrophils of either antibody-opsonised P. falciparum merozoites or antigen-coated beads. This approach is valuable to assess the role of antibodies in in immunity to malaria, either naturally acquired or vaccine-induced. Antigen-coated beads can be a useful alternative to using whole malaria parasites (or other organisms), and also have the advantage of enabling assays that quantify activity with specific antigenic targets. These assays can be used with a range of different malaria parasite stages including, merozoites, sporozoites, and infected erythrocytes. This protocol describes the use of neutrophils as the phagocyte, but can be adapted to use monocytes and macrophages, or phagocytic cell lines such as THP-1.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"kjiui\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"cmg07\",\"text\":\"Reagents and equipment:\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":23}],\"entityRanges\":[],\"data\":{}},{\"key\":\"af69\",\"text\":\"96 well plates\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"72vh8\",\"text\":\"CO2 incubator at 37°C\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2gp92\",\"text\":\"Antigen-coated fluorescent beads (5x107 beads/mL) (e.g. 2.0 µm Amine-Modified Polystyrene microspheres (Sigma L9529-1ML) coupled with antigen)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3k496\",\"text\":\"If using whole malaria parasites, refer to other protocols for isolation and preparation of merozoites, sporozoites, and infected erythrocytes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7c5a2\",\"text\":\"RPMI-10% FCS-2.5% HS: RPMI-1640 with 10% fetal calf serum and 2.5% human serum\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9jif1\",\"text\":\"RPMI-1640\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d90he\",\"text\":\"2% Paraformaldehyde (PFA)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c11mg\",\"text\":\"Isolated neutrophils are required for phagocytosis (see other protocols for isolation of neutrophils).\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "To each well, add 20 µL of beads and 2 µL of serum/antibodies diluted to the desired concentration. Incubate in the dark at room temperature to allow opsonisation to occur.",
+    "Perform neutrophil isolation as described in “Neutrophil Isolation” protocol.",
+    "Adjust neutrophil concentration to 5x105 cells/mL in RPMI-10%FCS-2.5% HS. Leave on ice for 30 min.",
+    "Add 150 µL of RPMI-1640 to each well of opsonised beads. Centrifuge plate at 400 x g for 5 min at room temperature. Discard the supernatant. Repeat for a total of 3 washes.",
+    "Add 100 µL of RPMI-10% FCS-2.5% HS to each well, resuspend the beads and transfer 50 µL per well to another plate to make duplicates.",
+    "Add 100 µL of neutrophils to each well and mix with the beads.",
+    "Incubate the plate at 37°C in a CO2 incubator for 20 min while phagocytosis occurs.",
+    "Centrifuge the plate at 300 x g at 4°C for 4 min to stop phagocytosis.",
+    "Fix cells with 100 µL of 2% PFA prior to analysis using flow cytometry.",
+    "Phagocytosis index is defined as the percentage of neutrophils positive for labelled beads or parasites. Depending on the nature of the cells used in the assays, specific labelling of neutrophils can be used to distinguish neutrophils from other cells, or evaluate different sub-sets or phenotypes.",
+    "Mechanisms and targets of Fcγ-receptor mediated immunity to malaria sporozoites by Gaoqian Feng, Bruce D. Wines, Liriye Kurtovic, Jo-Anne Chan, Philippe Boeuf, Vanessa Mollard, Anton Cozijnsen, Damien R. Drew, Rob J. Center, Daniel L. Marshall, Sandra Chishimba, Geoffrey I. McFadden, Arlene E. Dent, Kiprotich Chelimo, Michelle J. Boyle, James W. Kazura, P. Mark Hogarth, James G. Beeson published in Nature Communications on 19 Mar, 2021 https://dx.doi.org/10.1038/s41467-021-21998-4 Opsonic phagocytosis of Plasmodium falciparummerozoites: mechanism in human immunity and a correlate of protection against malaria by Faith HA Osier, Gaoqian Feng, Michelle J Boyle, Christine Langer, Jingling Zhou, Jack S Richards, Fiona J McCallum, Linda Reiling, Anthony Jaworowski, Robin F Anders, Kevin Marsh, James G Beeson published in BMC Medicine on 02 Jul, 2014 https://dx.doi.org/10.1186/1741-7015-12-108"
+  ],
+  "authors": [
+    "Gaoqian Feng",
+    "James Beeson"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1704444064,
+  "created_on": 1704444064,
+  "keywords": []
+}

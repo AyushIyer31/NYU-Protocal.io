@@ -1,0 +1,29 @@
+{
+  "id": 99087,
+  "title": "RNA extraction from milk for HPAI surveillance",
+  "uri": "rna-extraction-from-milk-for-hpai-surveillance-dczp2x5n",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvjn6obgk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"cr4m5\",\"text\":\"This is an RNA extraction method that isolates HPAI RNA segments from commercially-available milk samples. The protocol involves processing with a MagMax RNA extraction kit on a Kingfisher instrument. Then, the samples are concentrated using a Zymo Clean and Concentrate kit. The total RNA yields should be suitable for performing qPCR. After trying other methods involving centrifugation, filtration, and trizol, we determined this method to be the easiest and most effective. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"88dbh\",\"text\":\"Performing this protocol with unpasteurized milk from an infected cow might expose the user to active flu virus. Please use pasteurized samples or take appropriate precautions.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"4fhk1\",\"text\":\"MagMax Wastewater Ultra x96 kit\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3k8ds\",\"text\":\"Zymo RNA Clean and Concentrator-5 kit\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4rv94\",\"text\":\"ThermoFisher TurboDNase kit\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2g1g4\",\"text\":\"Heat block\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"55hfm\",\"text\":\"Lab plasticware\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8cugt\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Use the MagMax Wastewater Ultra x96 kit 1 (or comparable magnetic bead isolation kit 2-5 ) on the ThermoFisher Kingfisher Apex (or comparable instrument). For each sample, load 400 uL of pasteurized milk or heavy whipping cream into the binding plate.",
+    "Elute in 50 uL of elution solution or nuclease-free water.",
+    "Use a Zymo RNA Clean and Concentrator-5 kit 7 to clean and concentrate the sample. Elute this into 30 uL final volume of nuclease-free water for downstream analysis.",
+    "Take 200 uL forward into the DNase treatment. Using ThermoFisher TurboDNase, combine 200 uL of pooled eluate, 22 uL 10X TurboDNase buffer, and 2 uL TurboDNase.",
+    "Pool the eluate from 6 extraction replicates of the same sample.",
+    "Incubate at 37 C for 30 minutes."
+  ],
+  "authors": [
+    "Andrew Lail",
+    "William C. Vuyk",
+    "David O'Connor",
+    "Isla Emmen"
+  ],
+  "creator": "Andrew Lail",
+  "published_on": 1715382561,
+  "created_on": 1714600315,
+  "keywords": []
+}

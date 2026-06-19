@@ -1,0 +1,43 @@
+{
+  "id": 79952,
+  "title": "Autofluorescence Microscopy Data Acquisition",
+  "uri": "autofluorescence-microscopy-data-acquisition-csbqwamw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl8jozdg2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"7oum0\",\"text\":\"Scope:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ce3mt\",\"text\":\"Obtain autofluorescence microscopy images of tissues.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4p2uc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ef0l1\",\"text\":\"Expected Outcome:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"u94d\",\"text\":\"An RGB autofluorescence microscopy image of the tissue section that enables visualization of tissue morphology as well as registration and correlation of different imaging modalities on a pixel by pixel basis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"eiuh0\",\"text\":\"Carefully handle slides with gloves.  Finger prints and dust on slide can alter final image.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"77mb\",\"text\":\"Zeiss AxioScan Slide Scanner\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3s09d\",\"text\":\"Slide Adapters for Scanner\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "If sectioned tissue is frozen, return to room temperature (~20 o C) within a vacuum desiccator (~30 min), otherwise proceed directly to step 2.",
+    "Place microscope slide within adapter and insert into the Zeiss AxioScan Z1 Slide Scanner. Be sure to orient the slide with the label facing downward in the adapter. For registration with IMS, match the orientation of the slides within the Zeiss adapter and the Bruker two-slide holder.",
+    "Press &#39;Start Scan&#39; to begin image acquisition. The method will automatically begin generating by a focus map of the imaging region using the following parameters:",
+    "The method will acquire a tiled brightfield and autofluorescence image using the following channel parameters: DAPI (blue, reference channel) ~50-90% LED light source ~20 ms exposure time EGFP (ex. 450-490 nm; em. 500-550, green) ~50-90% LED light source ~60 ms exposure time DsRed (ex. 538-562 nm; em. 570-640, red) ~50-90% LED light source ~250 ms exposure time",
+    "Resulting czi files can be visualized using Zen or QuPath softwares.",
+    "If desired, images can be exported via Zen software under the Processing tab using the Image Export method in formats including Tiff, PNG, and JPEG.",
+    "Open Zeiss Zen software",
+    "Change the file storage location to the appropriate local folder",
+    "Name each slide with the date, donor, and modality information",
+    "Select appropriate scan profile template (e.g. HuBMAP-preAF_10x-LED-latest.czspf)",
+    "Perform a preview scan of each slide",
+    "Define the imaging region that includes the tissue using the Tissue Detection Wizard. This can be found using the gear icon on the right of the Scan Profile selection for each slide. Outline the imaging region area using the polygon, square, circle, or spline tool.",
+    "This is expected to generate microscopy images that allow for untargeted visualization of tissue morphology. Autofluorescence microscopy image of human kidney tissue",
+    "Coarse focusing of the tissue is performed using the following parameters: EGFP filter set (peak emission 509 nm) as focus reference channel ~4 ms exposure time ~50-90% LED light source Software autofocus Default quality Full search Coarse sampling Z-positions from 3900um to 4300um using ~14.24 µm step size Coarse focus is performed with ~8 support points. Note that exposure times, light source energy, and number of support points may vary based upon tissue type, age of LED light source, and tissue section size and quality.",
+    "Fine focusing of the tissue is performed using the following parameters: EGFP filter set (peak emission 509 nm) as focus reference channel ~4 ms exposure time ~50-90% LED light source Software autofocus Default quality Full search Medium sampling Z-range of 30um using ~7.12 µm step size. Fine focus is performed with ~6 support points. Note that exposure times, light source energy, and number of support points may vary based upon tissue type, age of LED light source, and tissue section size and quality."
+  ],
+  "authors": [
+    "Angela R.S. Kruse",
+    "Heath Patterson",
+    "Jamie Allen",
+    "Katerina V Djambazova",
+    "Maya Brewer",
+    "Elizabeth Neumann",
+    "Mark De Caestecker",
+    "Danielle Gutierrez",
+    "Jeff Spraggins"
+  ],
+  "creator": "Angela R.S. Kruse",
+  "published_on": 1680705656,
+  "created_on": 1680556356,
+  "keywords": []
+}

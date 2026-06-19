@@ -1,0 +1,31 @@
+{
+  "id": 90731,
+  "title": "Isothermal Titration Calorimetry of the Rubicon RH domain and Rab7",
+  "uri": "isothermal-titration-calorimetry-of-the-rubicon-rh-c4ujywun",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g7pwd3gwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"ec41t\",\"text\":\"1:1 binding of Rubicon and Rab7\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "On day prior to experiment, codialyze both binding partners to use in the the same beaker.",
+    "Prepare 2 L of 50 mM HEPES 7.5, 150 mM NaCl, 10 mM TCEP, and degas thoroughly at room temperature under vacuum with stir bar agitation, then chill in fridge until ready for dialysis.",
+    "Calculate sufficient protein for the assay: for a single run, want ~ 100 uL of 1 mM Rab7, and ~500 uL of 100 uM MBP-RUBCN RH domain. Samples can be more dilute, but should have enough total mass of protein to concentrate down later.",
+    "In seperate dialysis bags, dispense purified Rab7 and RUBCN RH. Clip the ends of the dialysis bags twice, and place both dialysis bags in a 2 L beaker of the degassed and chilled dialysis buffer.",
+    "Incubate for 24 H",
+    "After dialysis has completed, recover the protein samples and concentrate down to 1 mM for Rab7 and 100 uM for Rubicon. Spin protein samples at max speed on a tabletop centrifuge in order to pellet any protein aggregates, and allow protein samples to come to room temperature on a benchtop. Samples are now ready for ITC. Note, changes in sample temperature can encourage the evolution of bubbles, which severely damages the quality of your ITC run. Make sure centrifuges are pre-warmed to room temperature, and keep all samples on benchtop rather than in ice bucket until ITC runs are completed.",
+    "In a Malvern PEAQ-ITC, set the resting temperature to room temperature, here ~ 22 C",
+    "Prepare for run by loading the chamber with ~ 300 uL of the Rubicon RH stock, and follow the automated syringe loading protocol to load the syringe with ~75 uL of the Rab7 stock. Gently",
+    "Used the following parameters for this run, though changes can be made to suit your particular experiment Reference power :41.9 uW Temperature: 25 C Stir speed: 750 rpm Initial delay: 60 sec Injection parameters: 13 injections, 3 uL each, 6 second duration, spaced by 150 sec. Initial inject was 0.4 uL with a duration of 00.8 sec, and not included in the analysis Initiate run. Make sure that power baseline nears the reference power during the equilibration phase. If it does not, it is highly likely that a bubble was introduced, and the run should be aborted and the chamber reset.",
+    "Open the native Malvern analysis software and visually inspect the automatically fitted baselines for quality.",
+    "Generate curve of best fit using the software and export. Inspect c-value of curve, and ensure that it falls within 10-100 in order to get an accurate KD determination."
+  ],
+  "authors": [
+    "Dan Tudorica"
+  ],
+  "creator": "Dan Tudorica",
+  "published_on": 1709785328,
+  "created_on": 1699555736,
+  "keywords": []
+}

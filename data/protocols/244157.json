@@ -1,0 +1,32 @@
+{
+  "id": 244157,
+  "title": "Asymmetric PCR for ssDNA Template Generation",
+  "uri": "asymmetric-pcr-for-ssdna-template-generation-hsn5b6dg7",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbok3ylpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"8ns11\",\"text\":\"This protocol describes a specialized PCR approach to generate high-purity single-stranded DNA (ssDNA) templates, ranging from 120 to 1000 bp, for use in enzymatic activity assays. Unlike standard PCR, which uses equal concentrations of primers to produce double-stranded DNA (dsDNA), this method employs an unequal primer ratio—typically 50:1—to favor the linear amplification of a single strand once the limiting primer is exhausted. The protocol is optimized for high-fidelity polymerases like Q5, though it is adaptable to other systems provided the unequal primer concentrations and extended cycling (80 cycles) are maintained to ensure the depletion of the limiting primer. Final product quality is verified via gel electrophoresis to ensure the absence of dsDNA contamination, which can otherwise lead to inaccurate downstream measurements.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Asymmetric PCR uses an unbalanced primer ratio (typically 50:1 forward:reverse) to preferentially amplify one strand after the limiting primer is exhausted. This produces predominantly single-stranded DNA products (120–1000 bp) and is specifically designed to minimize dsDNA contamination. ssDNA can be used for downstream applications such as polymerase activity assay templates.",
+    "Template DNA: 100 ng dsDNA Forward Primer: 100 uM stock Reverse Primer: 10 uM stock Master Mix: NEBNext Q5 Hot Start HiFi PCR Master Mix - 50 rxns New England Biolabs Catalog #M0543S Nuclease-Free Water Gel extraction kit or PCR cleanup kit For optimal results, ensure your target template is between 120–1000 bp. Lengths exceeding 1000 bp or falling below 120 bp are not recommended for this specific protocol.",
+    "Prepare an assymetric PCR master mix with unequal ratio of forward to reverse primers. %s %s The defining feature of this reaction is the unequal ratio of forward to reverse primers, which allows for the exponential amplification of dsDNA followed by the linear accumulation of the desired ssDNA strand. 50:1 ratio of forward and reverse primers works well for most templates; can adjust from 20:1 to 100:1 if needed",
+    "Method 1 (High Purity) Run products on a 1% agarose gel. Excise the specific ssDNA band and perform gel extraction. Figure: Asymmetric PCR validation. Analysis of PCR products with different forward : reverse primer ratios on 1% agarose gel. Lane M: Meridian Bioscience 1 kb Hyper Ladder; Lane (+): mCherry dsDNA template; Lanes 1–4: decreasing reverse primer concentration, with the red arrow indicating ssDNA formation. Once the number of cycles are optimized for ensuring ssDNA is formed, the PCR product can be PCR Mix purified instead of running on a gel. See Method 2 (Rapid).",
+    "Set up the PCR thermocycling protocol on your thermocycler. This is structured as an initial denaturation at 98°C for 30 seconds, followed by 60-90 cycles of 98°C for 10 s, primer-specific annealing temperature for 20 s, and 72°C with extension time calculated at 30 s per kb of template length. A final extension at 72°C for 2 min completes the program. %s %s The important feature of the thermocycling protocol is to have between 60-100 cycles - the more cycles, higher is the number of ssdNA formed. You can start with 80 cycles and increase to 100 if ssDNA yield is low. However, for optimisation it is recommended to test from 60 to 90 cycles and track the ssDNA formed in a 2% agarose gel.",
+    "Before using the template in assays, heat to 90°C for 10 min and immediately place on ice for 2 min to reduce secondary structures.",
+    "Method 2 (Rapid) Run a cycle-optimization gel (60–90 cycles). Select the minimum cycles where the dsDNA band disappears, then perform standard PCR cleanup."
+  ],
+  "authors": [
+    "Aishwarya Venkatramani",
+    "Sulay  Vora",
+    "Nicole Wojtania",
+    "Charlotte Cameron-Hamilton",
+    "Kah Yao Cheong",
+    "Jennifer Molloy"
+  ],
+  "creator": "Aishwarya Venkatramani",
+  "published_on": 1773142439,
+  "created_on": 1772199565,
+  "keywords": []
+}

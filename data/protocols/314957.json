@@ -1,0 +1,35 @@
+{
+  "id": 314957,
+  "title": "Bulk RNA-seq Protocol for Astrocytes",
+  "uri": "bulk-rna-seq-protocol-for-astrocytes-jxtmcpnk7",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbj8eyvpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"cvtd7\",\"text\":\"This protocol aims to extract total RNA from astrocytes for subsequent bulk RNA sequencing, enabling the analysis of gene expression profiles.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"3fgjq\",\"text\":\"Handle all reagents and samples with care to avoid exposure to harmful substances. Use appropriate personal protective equipment (PPE) including gloves and lab coats.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"8h34s\",\"text\":\"TrypLE Express (Enzyme for cell dissociation) - 10 mL\\nPBS (Phosphate Buffered Saline) (Ice-cold solution for cell collection) - 50 mL\\nRLT Lysis Buffer (Qiagen RNeasy kit component) - 1 mL\\nQiagen RNeasy Kit (RNA extraction kit) - 1 kit\\nLiquid Nitrogen (For cell freezing) - As needed\\n\\nReagents:\\nEnzyme TrypLE Express - A recombinant enzyme for cell dissociation\\nBuffer RLT Lysis Buffer - Buffer for lysing cells to extract RNA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Extract total RNA using the Qiagen RNeasy kit.",
+    "Add 300µL of RLT lysis buffer to the pelleted cells",
+    "Quantify RNA using a Nanodrop or similar device and assess RNA quality",
+    "Submit 1 µg of total RNA to Azenta/GENEWIZ for library preparation and sequencing.",
+    "2. Scrape cells directly into ice-cold PBS (50 mL).",
+    "Remove media from 2D astrocyte cultures.",
+    "Discard the supernatant.",
+    "Centrifuge the scraped cells at 1,000 × g for 5 minutes at 4 °C.",
+    "Proceed with the Qiagen RNeasy kit protocol for RNA following the manufacturer&#39;s instructions",
+    "polyA selection for mRNA enrichment",
+    "Standard Illumina-compatible library preparation, single indexing",
+    "Illlumina HiSeq platform. Paired-end, 150 bp reads",
+    "Pseudo-align FASTQ files to reference genome GRCh38.p13 using kallisto",
+    "Differential expression analysis with edgeR in R (v2023.12.0+369)",
+    "Visualization and functional enrichment with ggplot2 and clusterProfiler"
+  ],
+  "authors": [
+    "Elena Coccia"
+  ],
+  "creator": "Elena Coccia",
+  "published_on": 1776119699,
+  "created_on": 1776119011,
+  "keywords": []
+}

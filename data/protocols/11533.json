@@ -1,0 +1,29 @@
+{
+  "id": 11533,
+  "title": "ALLPATHS-LG Genome Assembly and Hi-C mapping strategy",
+  "uri": "allpaths-lg-genome-assembly-and-hi-c-mapping-strat-phmdj46",
+  "doi": "dx.doi.org/10.17504/protocols.io.phmdj46",
+  "description": "{\"blocks\":[{\"key\":\"3h9s2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"ff5c2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"7vnav\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"eeql3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "ALLPATHS-LG r52488 Linux Centos 6",
+    "NGS QC Toolkit 2.3.3 Linux Centos 6 FastUniq 1.1 Linux Centos",
+    "Bowtie 2.2.9 Linux Centos 6 Picard 2.7 Linux Centos 6",
+    "SSPACE 1 Linux Centos 6",
+    "GapFiller 1.11 Linux Centos 6 GapCloser 1.12 Linux Centos 6",
+    "HiC-Pro 2.8.0_devel Linux Centos 6",
+    "3D-DNA pipeline 170123 Linux Centos 6",
+    "Juicerbox 1.5.2 Linux Centos 6",
+    "Lastz 1.02.00 Linux Centos 6 Circos 0.69 Linux Centos 6"
+  ],
+  "authors": [
+    "Hansheng Zhao"
+  ],
+  "creator": "Hansheng Zhao",
+  "published_on": 1523876506,
+  "created_on": 1523874970,
+  "keywords": []
+}

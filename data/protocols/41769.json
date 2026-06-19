@@ -1,0 +1,29 @@
+{
+  "id": 41769,
+  "title": "FLASH amp",
+  "uri": "flash-amp-bk2hkyb6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bk2hkyb6",
+  "description": "{\"blocks\":[{\"key\":\"9484u\",\"text\":\"FLASH amp is a method that allows for room temperature detection and amplification of a viral RNA sequence of interest submitted as part of the Xprize competition. The main components of the reaction are not included here and are given generic names such as enzyme X as they are currently not protected under IP. The steps outlined with tubes labeled with the generic names would allow any lab to reproduce the method. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3fcjj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"agd4q\",\"text\":\"Version 1 of this method outlines the protocol for a fluorescence-based readout that can be used with a qPCR machine or TECAN style plate reader. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7a1l6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3gfe5\",\"text\":\"Version 2 (to be released shortly) will be a colorimetric readout that can be assessed by eye. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8kbs7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8lj1c\",\"text\":\"The outlined protocol assumes the user performing this in a laboratory setting will setup  reactions in a clean room and analyze results in a seperate post-amplification room. In addition, since our amplification is rapid and at room temperature, care but be taken to add ligand to the master mix quickly and the reactions be sealed. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"l3nFF\",\"text\":\"STEP MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"8KKu6\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"DwQ9z\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":733,\"guid\":\"4101CFAA341F11EE9D4302C0B41BC903\",\"name\":\"Pyrophosphatase, Inorganic (E.coli) - 50 units\",\"mol_weight\":0,\"sku\":\"M0361L\",\"url\":\"https://www.neb.com/M0361\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":582878,\"guid\":\"42643C6E341F11EE9D4302C0B41BC903\",\"name\":\"Corning® Low Volume 384-well Black Flat Bottom Polystyrene \",\"mol_weight\":0,\"sku\":\"3821BC\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Resuspend freeze dried master mix 1 with 7.04 µL of water",
+    "Add 0.3 µL Pyrophosphatase, Inorganic (E.coli) - 50 units New England Biolabs Catalog #M0361L",
+    "Add 0.5 µL Undisclosed enzyme Z",
+    "Add 0.5 µL Undisclosed Enzyme Y",
+    "Add 0.13 µL Undisclosed Enzyme X",
+    "Resuspend freeze dried master mix 2 in 1 µL water and add to above",
+    "Put mix in Corning® Low Volume 384-well Black Flat Bottom Polystyrene Contributed by users Catalog #3821BC Add 0.5 µL of sample and seal plate. A large master mix of the above components can be mixed and aliquoted into wells.",
+    "Place plate in TECAN plate reader. SPARK (Microwell plate reader, TECAN, SPARK, https://www.tecan.com/blog/spark-multimode-microplate-reader-for-high-performance-cell-based-fluorescence-assays ) Set gain to 120, excitation 480 and emission 550. A qPCR machine can also be used. Collect data at T= 30 min. Data can also be collected every 1s for 30 min to monitor kinetics of reaction in the particular plate reader being used if not TECAN SPARK reader. Fluorescence values of &gt;4000 are positive and &lt;4000 are negative.",
+    "Sample should be collected 1 hour after any food is consumed. 10 minutes before collection rinse mouth well with water. Collect passive drool or pooled salive below tongue into collection tube."
+  ],
+  "authors": [
+    "eesha.sharma.phd"
+  ],
+  "creator": "eesha.sharma.phd",
+  "published_on": 1599537162,
+  "created_on": 1599529834,
+  "keywords": []
+}

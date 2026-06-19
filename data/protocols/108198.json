@@ -1,0 +1,39 @@
+{
+  "id": 108198,
+  "title": "Pan-Cancer Analysis of the Prognostic and Immunological Roles of SHP-1/ptpn6",
+  "uri": "pan-cancer-analysis-of-the-prognostic-and-immunolo-dmwe47be",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzjdpxlx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"39ab3\",\"text\":\"In this paper, we present a comprehensive analysis of ptpn6 across various cancers using multiple online databases, such as TIMER, GEPIA2, and cBioPortal, for differential expression, survival prognosis, immune infiltration, genetic alterations,  epigenetic alterations, and functional state evaluations. We expect to reveal significant correlations between ptpn6 expression and clinical outcomes, as well as its association with immune cell infiltration and biological pathways, to provide insight into presenting a potential prognosis biomarker and immunotherapy target. Additionally, this analysis aims to highlight the heterogeneity of ptpn6 across different cancer types to help understand its role in tumorigenesis and development.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":54,\"length\":5},{\"style\":\"italic\",\"offset\":358,\"length\":5},{\"style\":\"italic\",\"offset\":639,\"length\":6}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9dbnv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Differential expression analysis The Tumor Immune Estimation Resource (TIMER) 2.0 (http://timer.cistrome.org/) is an online website used to investigate the pan-cancer analysis of gene expression or correlation, and immune infiltration 1 . Difference of ptpn6 expression between tumors and adjacent normal tissues can be obtained through the “Gene_DE” module of TIMER2. The results were validated using Gene Expression Profiling Interactive Analysis 2 (GEPIA2) database (http://gepia2.cancer-pku.cn/). The expression of p tpn6 in different pathological stages of cancers was also obtained by GEPIA2 2 .",
+    "Survival prognosis analysis The heatmaps of overall survival (OS) and disease-free survival (DFS) of ptpn6 in all TCGA tumors were acquired through GEPIA2. The corresponding survival plots with their 95% confidence interval, p value and hazard ratio (HR) can be obtained by the Kaplan-Meier plotter database (https://kmplot.com/analysis/) 3 . To evaluate the expression of ptpn6 in predicting the prognosis of cancer patients, ROC analysis was conducted using the pROC package in R language (version 4.2.2).",
+    "Immune infiltration analysis The correlation between ptpn6 expression and immune infiltration in pan-cancer was investigated using TIMER (https://cistrome.shinyapps.io/timer/) 4 . The tumor purity, B cells, CD8+ T cells, CD4+ T cells, macrophages, neutrophils and dendritic cells were selected. The results were visualized as scatter plots. Heatmaps and scatter plots of the correlation between ptpn6 expression and cancer associated fibroblasts (CAFs) were generated through TIMER2 5 .",
+    "Enrichment analysis Enrichment analysis helps to discover novel biological functions, genotype- phenotype relationships and disease mechanisms. Experimentally determined SHP-1-binding proteins can be obtained through the STRING database (https://string-db.org/), by the following parameters: minimum required interaction score[low confidence (0.150)], meaning of network edges (evidence), maximum number of interactors to show (no more than 50 interactors in 1st shell), and active interaction sources (experiments) 6 . The top 100 ptpn6 -related genes, were obtained by GEPIA2 and the top five genes were selected to draw the correlation scatter plot with ptpn6 . The heat map between the selected genes and different types of tumors can be acquired through TIMER2. In addition, the intersection analysis of SHP-1-binding proteins and ptpn6 -related genes was conducted using Jvenn (https://bioinformatics.psb.ugent.be/webtools/Venn/) 7 . These two sets of data were also combined for Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analysis 8-10 and Gene Ontology (GO) analysis. The functional annotation data were obtained through the Database for Annotation, Visualization, and Integrated Discovery (DAVID, https://david.ncifcrf.gov/) and enriched pathways were visualized via bioinformatic (https://www.bioinformatics.com.cn/).",
+    "Relevance of ptpn6 across 14 functional states in distinct cancers Single-cell RNA sequencing (scRNA-seq) can help researchers understand the functional specificity of cancer cells. CancerSEA (http://biocc.hrbmu.edu.cn/CancerSEA/) is a database for functional states of cancer cells at single-cell level, including angiogenesis, apoptosis, cell cycle, differentiation, DNA damage, DNA repair, EMT, hypoxia, inflammation, invasion, metastasis, proliferation, quiescence, and stemness 11 . The functional state of ptpn6 in multiple cancers was explored using CancerSEA. Correlations between ptpn6 expression and functional states in different single-cell datasets were filtered by a correlation strength &gt;0.3 and the p value &lt; 0.05.",
+    "Genetic alteration analysis The cBioPortal (http://www.cbioportal.org), a comprehensive database of cancer genomics datasets 12 , is applied to the analysis of ptpn6 genetic alteration. We explored the copy number alteration (CNA) and mutation status of ptpn6 across all TCGA tumors using cBioPortal. The results of the alteration frequency, mutation type and CNA in various cancers were derived from the ‘Cancer Types Summary’ module. The OS, DFS, progression free survival (PFS), and disease free survival (DSS) of patients with ptpn6 genetic altered were also obtained from cBioPortal.",
+    "Analysis of the methylation and phosphorylation of ptpn6 UALCAN performed protein expression analysis from the clinical proteomic tumor analysis consortium (CPTAC) dataset and the International Cancer Proteogenome Consortium (ICPC) datasets 13 . The methylation and phosphorylation levels of ptpn6 between different cancers and normal tissues was investigated by UALCAN database (http://ualcan.path.uab.edu/analysis.html).",
+    "Immunohistochemistry (IHC) Staining Human Protein Atlas (HPA) (https://www.proteinatlas.org/) is a database of proteins in human organs, tissues and cells based on multiple omics approaches 14 , 15 . To analyze the differential expression of ptpn6 at the protein level, the expression of ptpn6 proteins (SHP-1) in tumor tissues and their corresponding normal tissues was downloaded from HPA and analyzed. Furthermore, the IHC images of some typical immune markers were also acquired from HPA.",
+    "Statistical analysis Alterations in ptpn6 expression levels in cancer and normal tissues were estimated using two sets of t-tests. The Kaplan-Meier curve and Cox regression model were used for survival analyses in this study. The Hazard Ratio was calculated by the Cox regression model. The correlation expression analysis between the two variables was analyzed using Spearman’s or Pearson’s test. P -value&lt; 0.05 was considered statistically significant."
+  ],
+  "authors": [
+    "Ping Cui",
+    "Jie Lian",
+    "Yang Liu",
+    "Dongsheng Zhang",
+    "Yao Lin",
+    "Lili Lu",
+    "Li Ye",
+    "Hui Chen",
+    "Sanqi An",
+    "Jiegang Huang",
+    "Hao Liang"
+  ],
+  "creator": "Ping Cui",
+  "published_on": 1727275211,
+  "created_on": 1727114898,
+  "keywords": []
+}

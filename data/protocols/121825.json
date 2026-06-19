@@ -1,0 +1,33 @@
+{
+  "id": 121825,
+  "title": "MATQ-seq protocol",
+  "uri": "matq-seq-protocol-d2798hr6",
+  "doi": "dx.doi.org/10.1038/protex.2016.088",
+  "description": "{\"blocks\":[{\"key\":\"ayew8\",\"text\":\"Quantification of transcriptional variations in single cells, particularly of the same cell population, is currently still limited by both the sensitivity and the technical noise of single-cell RNA-seq assays. We report a single-cell RNA-seq method -- Multiple Annealing and dC-Tailing based Quantitative single-cell RNA-seq (MATQ-seq) -- that achieves high sensitivity and low technical noise.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Lysis solution: 0.2% Triton-X (Sigma) in DEPC H 2 O 1μL 0.1mM DTT (Life Technologies) 0.05μL RnaseOUT (Life Technologies) 0.05μL Primer mix 0.4μL (PAGE purified from IDT; GAT27dT 1.5uM, GAT275N3G 5uM, GAT275N3T 5uM) 10Mm each dNTP 0.1μL Pipette single cell in lysis solution, briefly centrifuge, then put on PCR block 72ºC 3min, then quickly put on ice for at least 1min.",
+    "Add RT mix containing: 5X RT buffer (Life Technologies) 0.8μL 0.1mM DTT 0.2μL RnaseOUT 0.1μL Superscript III (Life Technologies) 0.15μL Rnase-free H 2 O 1.15μL Mix well by pipetting with low retention tips Run following program: 10 cycles of 8ºC 12s 15ºC 45s 20ºC 45s 30ºC 30s 42ºC 2min 50ºC 3min End cycles 50ºC 15min 4 ºC Forever",
+    "50ºC 1min Add 0.2μL T4 DNA polymerase (New England Biolabs) at 37ºC, mix well 37ºC 40min 75ºC 20min 37ºC 40min 80ºC 20min 4 ºC Forever",
+    "Add 0.1μL RnaseH (New England Biolabs), 0.1μL RnaseI (New England Biolabs), mix well 37ºC 15min 72ºC 15min 4 ºC Forever",
+    "make following TdT mix: 10X TdT buffer (New England Biolabs) 0.4μL 100mM dCTP (Life Technologies) 0.4μL TdT terminal transferase (New England Biolabs) 0.1μL H 2 O 3.1μL Add the TdT mix into sample, mix well 37ºC 15min 72ºC 15min 4 ºC Forever",
+    "Make following 2nd stand mix: 10X Thermopol (New England Biolabs) 1.5μL dNTP (10uM each) 1.25μL 10uM GAT21 6n3G pimer 1.25μL H 2 O 12μL Add the mix into sample, heat the block to 95ºC 1min 48ºC hold, add Deepvent exo- DNA polymerase (New England Biolabs) 0.4μL, mix well 10 cycles of 48ºC 20s 72ºC 1min End cycles 72ºC 2min 4 ºC Forever",
+    "10X Thermopol Buffer 13μL 100uM GAT27 primer 0.8μL 10mM each dNTP 3μL PCR grade water 116μL Deepvent exo- DNA polymerase 3μL Split into 4 PCR tubes 95ºC 30s 24 cycles of 95 ºC 15s 62 ºC 20s 72 ºC 2min End cycles 72 ºC 5min 4 ºC Forever Use Qiagen PCR purification kit to purify the end product",
+    "(For better cluster identification during sequencing) 200ng of amplified cDNA 10X Thermopol buffer 5μL dNTP 1.25μL 100Mm 3NGAT24 primer 0.25μL Deepvent exo- DNA polymerase 1μL Add H 2 O to total 50 μL 95ºC 30s 20 cycles of 62 ºC 20s 72 ºC 1 min End cycles 72 ºC 3min 95ºC 30s 20 cycles of 62 ºC 20s 72 ºC 1 min End cycles 72 ºC 3min 4 ºC Forever Use 1.2X Ampure XP beads (60 μL) to purify",
+    "(Integrated DNA Technologies, PAGE purified): GAT27dT: GTG AGT GAT GGT TGA GGA TGT GTG GAG NNNNN TTTTTTTTTTTTTTTTTTTT GAT27 5N3G: GTG AGT GAT GGT TGA GGA TGT GTG GAG NNNNN GGG GAT27 5N3T: GTG AGT GAT GGT TGA GGA TGT GTG GAG NNNNN TTT GAT21 6N3G: GAT GGT TGA GGA TGT GTG GAG NNNNNN GGG GAT27 PCR: GTG AGT GAT GGT TGA GGA TGT GTG GAG 3NGAT24: NNN AGT GAT GGT TGA GGA TGT GTG GAG",
+    "N/A",
+    "Effective detection of variation in single-cell transcriptomes using MATQ-seq by Kuanwei Sheng, Wenjian Cao, Yichi Niu, Qing Deng, and Chenghang Zong published in Nature Methods on 28 Feb, 2017 https://dx.doi.org/10.1038/nmeth.4145",
+    "Supplement_0.Docx MATQ seq single cell transcriptome protocol Zong Lab"
+  ],
+  "authors": [
+    "Chenghang (Chuck) Zong",
+    "Kuanwei Sheng"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1488297426,
+  "created_on": 1488297426,
+  "keywords": []
+}

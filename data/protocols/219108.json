@@ -1,0 +1,34 @@
+{
+  "id": 219108,
+  "title": "Nikon Automated Microscopy: Calcium Imaging of cultured cells with a single wavelength calcium indicator (e.g. Fluo-4)",
+  "uri": "nikon-automated-microscopy-calcium-imaging-of-cult-gz8cbx9sx",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygxqd7ov8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"1gkvt\",\"text\":\"This JOB was created in NIS-Elements version 6.10.01, and is designed to image live monolayer-cultured cells (e.g. Cardiomyocytes) stained with a calcium indicator dye such as Fluo-4 using a wide-field microscopy. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9nhtp\",\"text\":\"The JOB will take multiple timelapse recordings at high framerate from different positions within the well. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"90bp9\",\"text\":\"This protocol requires a camera capable of high framerate acquisition, and a frame out timing signal (e.g. Hamamatsu Flash 4.0 camera)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4fpso\",\"text\":\"This protocol requires a TTL IO output from the camera to a NIDAQ breakout box, connected to a PCIE card. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5qfgd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4dr2d\",\"text\":\"These are necessary to allow the precise frame timings from the camera to be saved.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Place chamber slide on microscope stage, select an objective for imaging at the required magnification. Typically a 20x Air objective will give a sweet spot for magnification and brightness. Immersion media objectives are desirable for greater than 20x magnification, however an objective heater may be necessary to maintain temperature of cells.",
+    "Run JOB File",
+    "Preheat the stage/cage incubator to 37°C 1 - 2 hours ahead of imaging",
+    "Flush the incubation chamber with CO 2 10-20 minutes ahead of imaging. Ensure the correct holder is used for the incubation chamber, and that there are no large openings for CO 2 to escape from the chamber",
+    "Set acquisition parameters for excitation light intensity Recommended at least 100FPS for Calcium imaging in cardiomyocytes, an exposure of 10ms or less is required.",
+    "Crop the camera sensor to a smaller region of interest (ROI) to achieve higher framerates. Cropping height with increase framerate, cropping in width will not increase framerate. The smaller the ROI, the faster the framerate (FPS seen during the live-view in the bottom left corner) Acquisition menu",
+    "Navigate to the centre of your well and focus on your sample",
+    "Optional: Search for the perfect focus system (PFS) offset and activate PFS This will stabilise the microscope against thermal fluctuations, and maintain focus across the sample.",
+    "Import JOB definition - as below Multipoint Calcium Imaging.bin Nikon Automated Microscopy: Import a JOB .bin file into JOBs Explorer by Mark Rigby",
+    "Set which channel you want to image in E.g. For Fluo-4, you would choose the Green channel on your Nikon microscope",
+    "Set the number of timelapse recordings to capture according to experimental requirements / size of well",
+    "Set the duration of each individual recording",
+    "Press Run",
+    "Ensure the sample is still in focus, then press done to start acquisition."
+  ],
+  "authors": [
+    "Akihiro Suto"
+  ],
+  "creator": "Akihiro Suto",
+  "published_on": 1779166148,
+  "created_on": 1748521380,
+  "keywords": []
+}

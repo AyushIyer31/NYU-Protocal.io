@@ -1,0 +1,37 @@
+{
+  "id": 20466,
+  "title": "iPSC Restriction Digest: For Screening Edited Clones",
+  "uri": "ipsc-restriction-digest-for-screening-edited-clone-x8sfrwe",
+  "doi": "dx.doi.org/10.17504/protocols.io.x8sfrwe",
+  "description": "{\"blocks\":[{\"key\":\"4i1bo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"f9r6j\",\"text\":\"This protocols is part of the Screening Edited iPSC Clones collection. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":30,\"length\":39}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"BEBD27F0340111E9A58D6132AAED8016\",\"url\":\"https://www.protocols.io/view/untitled-collection-yazfsf6/protocols\"}}}}",
+  "before_start": "{\"blocks\":[{\"key\":\"6m0s2\",\"text\":\"Identify the appropriate enzyme for the cell line/mutation in question.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4n2a8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c7gkc\",\"text\":\"        a. A mutation or correction may either introduce or destroy a cut site.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bm3pe\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"559du\",\"text\":\"                 i. We recommend a screening strategy where the editing event introduces a new enzyme cut site as this tends to be more specific\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ei9fc\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"esacm\",\"text\":\"                 ii. An editing event that destroys an enzyme cut site can be used but tends to result in a high rate of false positives.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"am0hj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dd1u7\",\"text\":\"If no cut sites exist for mutation/correction in question, T7 assay should be performed.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"227k8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fjduf\",\"text\":\"After confirming the presence of the appropriate sized PCR product, you can move on to performing a restriction digest.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"fgu81\",\"text\":\"Please refer to the SDS (Safety Data Sheet) for information about hazards, and to obtain advice on safety precautions.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"JJU6v\",\"text\":\"STEP MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"bxEob\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":4441,\"guid\":\"410708FF341F11EE9D4302C0B41BC903\",\"name\":\"CutSmart Buffer - 5.0 ml\",\"mol_weight\":0,\"sku\":\"B7204S\",\"url\":\"https://www.neb.com/B7204\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Prepare the following reagents in a strip cap tube with the previously identified enzyme. %s %s CutSmart Buffer - 5.0 ml New England Biolabs Catalog #B7204S",
+    "Incubate reaction at temperature ideal for the enzyme being used (e.g. 37°C , 42°C, 25°C, etc.)",
+    "Incubate at appropriate temperature for 2-3 hours. 02:00:00",
+    "Run the enzyme reaction on a gel to visualize product.",
+    "To make the gel, combine an appropriate amount of Agarose, TBE and Ethidium Bromide using the following guidelines. a. The 2% gel will be cast in one of the following ways: %s %s b. Combine Agarose and TBE in an appropriately sized flask and microwave until Agarose is completely dissolved. Swirl intermittently during heating. c. Once completely dissolved add appropriate amount of Ethidium Bromide to flask and swirl until dispersed evenly.",
+    "Pour gel from flask into casting tray (be sure to add appropriate amount of combs to casting tray).",
+    "Let sit for 30-40 minutes, or until firm. 00:30:00",
+    "Place gel cast into the gel rig apparatus.",
+    "Load samples.",
+    "Load 50 bp ladder.",
+    "Place lid on gel rig apparatus.",
+    "Run gel at 150 volts for 01:30:00 (checking at 01:00:00 to ensure samples have not run too far or off the gel).",
+    "Turn off gel rig apparatus and remove cast.",
+    "Blot off excess TBE from cast.",
+    "Analyze gel images and select potentially edited clones based on banding patterns."
+  ],
+  "authors": [
+    "Celeste M M. Karch",
+    "Rita Martinez",
+    "Jacob Marsh"
+  ],
+  "creator": "Celeste M M. Karch",
+  "published_on": 1551229110,
+  "created_on": 1550418815,
+  "keywords": []
+}

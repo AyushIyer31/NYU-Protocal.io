@@ -1,0 +1,32 @@
+{
+  "id": 27877,
+  "title": "High Resolution Imaging Mass Spectrometry Analysis using Bruker Daltonics Platforms",
+  "uri": "high-resolution-imaging-mass-spectrometry-analysis-7gdhjs6",
+  "doi": "dx.doi.org/10.17504/protocols.io.7gdhjs6",
+  "description": "{\"blocks\":[{\"key\":\"3s3cm\",\"text\":\"Scope:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"96bnm\",\"text\":\"Acquire 10 μm spatial resolution imaging mass spectrometry (IMS) datasets of ~ 5mm2  regions of tissue.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":82,\"length\":3}],\"entityRanges\":[],\"data\":[]},{\"key\":\"b1tqh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8ecmk\",\"text\":\"Expected Outcome:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"cr1nj\",\"text\":\"A series of ion images that can be used to visualize the distribution of lipids localizing to physiological regions within the human kidney.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"cn8e9\",\"text\":\"Prepare tissue by following protocols for sectioning and matrix application.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"89dpb\",\"text\":\"Slide Adapter for Instrument\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"bhsip\",\"text\":\"Bruker MALDI timsTOF Flex\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9slhp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Scann a 3200 dpi image of the matrix coated tissue section in the MTP slide adapter 2 with sufficient contrast to visualize the tissue boundaries.",
+    "Choose a method that has &#34;height correct&#34; initiated upon sample docking.",
+    "While the height correct profile is being generated, open FlexImaging and follow the prompts to designate sample file name, method, pitch, scanned image of the slide, etc.",
+    "Once the height correct profile has been generated, train the target position with three teaching points following the instructions within FlexImaging.",
+    "Draw a measurement region around the tissue for IMS analysis.",
+    "Go to an area off of the tissue and ensure the focus of the laser is adequate for 10 μm spatial resolution imaging.",
+    "Start the acquisition.",
+    "Insert the slide adapter plate into the instrument airlock. Then press &#34;load.&#34;"
+  ],
+  "authors": [
+    "Elizabeth Neumann",
+    "Jamie Allen",
+    "David Anderson",
+    "Danielle Gutierrez",
+    "Jeff Spraggins"
+  ],
+  "creator": "Jamie Allen",
+  "published_on": 1568997077,
+  "created_on": 1568825537,
+  "keywords": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": 123732,
+  "title": "Harvesting cells for single-cell RNA-sequencing",
+  "uri": "harvesting-cells-for-single-cell-rna-sequencing-d43u8ynw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygxwjbov8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"51hrm\",\"text\":\"Protocol for extracting samples from mouse lung tissue and then harvesting cells to be used in scRNA-seq. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"3ikj5\",\"text\":\"Research involving animals must be conducted according to internationally-accepted standards and should always have prior approval from the users' Institutional Animal Care and Use Committee (IACUC) or equivalent ethics committee. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Mice were euthanized with Pentobarbital sodium Merck MilliporeSigma (Sigma-Aldrich) Catalog #Y0002194 (CAS: 57-33-0)",
+    "The chest cavity was opened and lungs were perfused through the right ventricle with 10 mL HBSS Gibco - Thermo Fisher Scientific Catalog #14060040",
+    "The lungs were removed and, using a 30 g needle, infused with 1 mL Dispase Corning Catalog #354235 with deoxyribonuclease I (DNase I, 100 U/ml) Merck MilliporeSigma (Sigma-Aldrich) Catalog #D 4263",
+    "The lungs were incubated at room temperature with gentle agitation for 00:45:00",
+    "The lungs were gently teased into small ( 1-2 mm ) fragments",
+    "The lungs were incubated in a digestion buffer for another 00:15:00",
+    "The resulting suspension was passed through a 70 µm cell strainer and washed with DMEM supplemented with 5% FBS",
+    "The resulting suspension was pelleted by centrifugation",
+    "Erythrocytes were lysed using BD Pharm Lyse BD Biosciences Catalog #555899",
+    "The resulting single-cell suspension was kept in DMEM Invitrogen - Thermo Fisher and Fetal Bovine Serum (FBS) ATCC Catalog #30-2020 and passed through a 40 mm cell strainer (Falcon, 352340, https://ecatalog.corning.com/life-sciences/b2c/US/en/Cell-Culture/Cell-Culture-Accessories/Cell-Strainers/Falcon%C2%AE-Cell-Strainers/p/352340 ) two times",
+    "Cells were counted using a K2 Fluorescent Cell Counter (Cell Counter, Cellometer, CMT-K2-MX-150, https://www.revvity.com/ie-en/product/cellometer-k2-bundle-w-matrix-software-cmt-k2-mx-150 ) with nucleic acid binding dyes Acridine orange Fisher Scientific Catalog #AC423340010 to calculate total number of nucleated cells and Propidium iodide Contributed by users to count dead cells"
+  ],
+  "authors": [
+    "Alexander Misharin"
+  ],
+  "creator": "Luisa Cusick",
+  "published_on": 1741115249,
+  "created_on": 1741040611,
+  "keywords": []
+}

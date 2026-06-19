@@ -1,0 +1,27 @@
+{
+  "id": 4668,
+  "title": "Primer design for assembly-based cloning",
+  "uri": "primer-design-for-assembly-based-cloning-gs4bwgw",
+  "doi": "dx.doi.org/10.17504/protocols.io.gs4bwgw",
+  "description": "{\"blocks\":[{\"key\":\"9jpkc\",\"text\":\"This protocol summarizes the process of primer design for assembly-based cloning methods, such as Gibson or AQUA-cloning. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9qqii\",\"text\":\"Well-designed primers are necessary for efficient cloning of any kind. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9civb\",\"text\":\"This protocol can also be used to design primers for overlap extension PCR of linear fragments. Alternatively, overhangs can also include restriction sites for restriction/ligation based cloning.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4i2gl\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9ncdf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"f77p8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"1npci\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "a Black arrows: Annealing part of primer. Dotted lines: overhang part of primer (color coded).",
+    "Create in silico vector maps for template and target vectors using SnapGene or a similar tool.",
+    "18-21 bp in length, 40-60 % GC-content, T m = 55-65 °C. T m - values of two primer pairs (annealing part) should not differ by more than 3 °C. Single nucleotide repeats of four or more should be avoided when possible. A 3&#39;-GC-clamp (1 or more G&#39;s or C&#39;s at the 3&#39;-end of the primer) can be beneficial for annealing.",
+    "16-32 bp in length - the longer, the better! 40-60 % GC-content (total primer) For Tm &gt;72 °C, an annealing temperature of 72 °C can be used.",
+    "Check primers for Tm, hairpin structures and primer dimers using online tool of choice (but stick with the same one after that, e.g. http://eu.idtdna.com/calc/analyzer) Hairpin structures: Check the Tm of the structure. It should be lower than the annealing temperature used in the PCR reaction. Primer dimers: Recommended ΔG is -9 kcal/mol or more positive values. However, for primers containing palindromic sequences, such as restriction sites, a more negative ΔG is not uncommon. These primers can still work.",
+    "Before ordering, make sure your primers bind in the template you plan on using.",
+    "After PCR, fragments should be separated using gel-electrophoresis and extracted using a kit of choice. This minimizes contamination with template backbones that could yield false-positive clones."
+  ],
+  "authors": [
+    "Anna Behle"
+  ],
+  "creator": "Anna Behle",
+  "published_on": 1482158076,
+  "created_on": 1482140273,
+  "keywords": []
+}

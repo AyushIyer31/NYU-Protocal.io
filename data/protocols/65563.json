@@ -1,0 +1,30 @@
+{
+  "id": 65563,
+  "title": "Nucleofection and single-cell cloning of CRISPR KO clones",
+  "uri": "nucleofection-and-single-cell-cloning-of-crispr-ko-cb93sr8n",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj61wwlk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"fgp6m\",\"text\":\"This protocol describes the process of nucleofection of sgRNA in PX458 plasmid into a mouse cancer cell line and subsequent flow sorting of single cells based on GFP fluorescence.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"fegjr\",\"text\":\" If the cell line is new and nucleofection conditions are not known, it is best to determine the optimal nucleofection solutions/condition. Use nucleofection optimisation kit from Lonza:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lhs4\",\"text\":\"https://bioscience.lonza.com/lonza_bs/GB/en/Transfection/p/000000000000191670/Cell-Line-Optimization-Nucleofector%E2%84%A2-Kit-for-Nucleofector%E2%84%A2-Device\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":159}],\"data\":{}},{\"key\":\"d953v\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e597\",\"text\":\"Ideally, for optimisation use the plasmid that will be used for the experiment instead of the plasmid provided with the optimisation kit, as it is small (~ 3kb) and might show high nucleofection efficiency, which will not be as high if CRISPR plasmid is used (~8kb). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"2674D7E7F73511ECB1830A58A9FEAC02\",\"url\":\"https://bioscience.lonza.com/lonza_bs/GB/en/Transfection/p/000000000000191670/Cell-Line-Optimization-Nucleofector%E2%84%A2-Kit-for-Nucleofector%E2%84%A2-Device\"}}}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Following sgRNA cloning into PX458 plasmid (Cas9-2A-GFP), the plasmid can be introduced into the cells by nucleofection. I use Nucleofector 2b device.",
+    "Trypsinise cells on 70-90% 10 cm plate. Count and spin down 1.5-2 x 10^6 cells per reaction (3 min, 1200 rpm). Switch on the Nucleofector device and set to the predetermined programme. Make sure to plate some spare cells in a separate plate to use as an ‘unstained control’ for FACS later",
+    "Prepare Nucleofector solution (82 uL of nucleofection solution + 18 uL of supplement per reaction). Keep at RT.",
+    "Transfer the cell/DNA suspension into the bottom of the cuvette (without air bubbles). Close the cap",
+    "Add DNA to the prepared mix (2.5 ug per reaction). Use highly-concentrated DNA prep. Try not to exceed 120 uL total reaction volume Add Nucleofection solution with DNA to each pellet individually and mix gently. Avoid leaving the cells in the nucleofection solution for too long",
+    "Use program T-030 (for PDA530Met cells). This was determined by using Nucleofection optimisation kit. It would require an optimisation step to determine optimal conditions for another cell line. Insert cuvette with cell/DNA suspension into holder and apply the selected programme",
+    "After nucleofection, add 500 uL of complete medium to the cuvette and gently transfer the sample to a 10 cm dish using supplied pipettes. Top up with warm medium",
+    "Change medium 24 h later",
+    "Flow sort 24 h later (48 h after nucleofection). FACS sorting details: Use 100 um nozzle, add Hoechst or DAPI (1-10 ug/mL final) to the samples and have an unstained control and Hoechst only. Take an aliquot of nucleofected cells to use as a GFP-only single stain control. Aliquot 200 uL media into 96-well plates and keep warm in the incubator. Prepare 3-4 plates per sample (this will depend on the viability of each cell line after the sort, but is generally a good starting point). I usually get 15-30 single-cell clones per plate. Sort single live GFP+ cells into the wells. Also sort 100 or more cells into one well to use as a polyclonal population and a control of viability after the sort.",
+    "The presence of GFP at flow sort does not necessarily mean successful editing. The polyclonal population might contain unedited wild-type cells. I tend to use single-cell KO clones, but that carries a risk of clonal heterogeneity, so would need testing multiple clones. Some papers derive single cell clones, confirm the presence of a KO, and then pool 4-5 of these clones to use as a polyclonal population in-vivo. I use non-edited clones as controls, but you can also make a separate non-targeting sgRNA control. It is good to check for any GFP expression after the clones are expanded, just to confirm no genomic integration of the plasmid has taken place. I haven’t seen that given there is no selection involved in the process, and the transiently-nucleofected plasmid is lost over time."
+  ],
+  "authors": [
+    "Goran Tomic"
+  ],
+  "creator": "Goran Tomic",
+  "published_on": 1656457034,
+  "created_on": 1656455997,
+  "keywords": []
+}

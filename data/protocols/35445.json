@@ -1,0 +1,31 @@
+{
+  "id": 35445,
+  "title": "Sorbitol washing complex homogenate for improved DNA extractions",
+  "uri": "sorbitol-washing-complex-homogenate-for-improved-d-beuvjew6",
+  "doi": "dx.doi.org/10.17504/protocols.io.beuvjew6",
+  "description": "{\"blocks\":[{\"key\":\"7dah0\",\"text\":\"The extraction of pure DNA can be challenging due to the presence of sugars, oils and other endogenous chemicals present within biological samples. This is particularly true for many plants and fungi due to the presence of secondary metabolites such as polyphenols and polysaccharides. Polyphenols within the cytosol can become irreversibly DNA-bound after cell lysis and polysaccharides can co-precipitate with DNA during the extraction. Sorbitol is an osmotically active sugar alcohol and washing homogenate with sorbitol before cell lysis has been shown to significantly improve the purity of DNA extractions. Sorbitol does not pass cell membranes and likely acts by drawing the cytosol out of the cell. Therefore polyphenols and polyscacharides would be removed.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"beca6\",\"text\":\"This protocol is based on the following publication. When citing, please also note the original publication below.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"58kpd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6q9vm\",\"text\":\"Inglis, P., Pappas, M.d.C., Resende, L. and Grattapaglia, D. (2018). Fast and inexpensive protocols for consistent extraction of high quality DNA and RNA from challenging plant and fungal samples for high-throughput SNP genotyping and sequencing applications. PLOS ONE 13, 1-14.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":60},{\"style\":\"bold\",\"offset\":269,\"length\":2}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"dokc\",\"text\":\"Dithiothreitol (DTT) or β-Mercaptoethanol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3o2j5\",\"text\":\"EDTA pH 8\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"c36bi\",\"text\":\"Milli-Q water (MQW)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2g7rh\",\"text\":\"PVP 40,000\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"17vbf\",\"text\":\"D-Sorbitol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4mdti\",\"text\":\"Tris-HCl pH 8\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare sorbitol wash solution. Approximately 2x volume of tube capacity will be used per sample. Sample tissue should not exceed 33% of tube capacity. To prepare a 500 mL solution: %s %s Store at 4°C for up to 6 months. DTT or β-Mercaptoethanol will be added freshly when used (below).",
+    "Grind tissue to a fine powder, keep frozen with liquid nitrogen.",
+    "Fill the tube capacity with an excess of sorbitol wash solution.",
+    "Add DTT, approximate final concentration of 1 mM. Add 0.15 mg DTT per 1 mL of sorbitol wash. A tiny scoop of powder is sufficient. DTT MW = 154.253. Alternatively add 1% β-Mercaptoethanol (v/v). Add 10 µL of β-Mercaptoethanol per 1 mL of sorbitol wash.",
+    "Shake, invert and vortex to mix thoroughly. Ensure tissue is in suspension.",
+    "Centrifuge at 5,000 rcf for 5 min at room temperature. Limited based on tubes rupturing if they contain ball bearings. Can also be reduced to 2,500 rcf.",
+    "Carefully decant the supernatant. Remove as much of the wash solution as possible without losing the pellet. Supernatant should appear slightly cloudy or discoloured light yellow or brown.",
+    "If the supernatant was turbid, viscous or had dark discolouration, repeat the sorbitol wash.",
+    "If homogenate is not in a tube (i.e. mortar and pestle), transfer to an appropriate sized tube. Homogenate should not exceed 33% of tube capacity.",
+    "Proceed to a DNA extraction method of choice by adding lysis buffer to the pellet. Continue protocol as normal."
+  ],
+  "authors": [
+    "Ashley Jones",
+    "Benjamin Schwessinger"
+  ],
+  "creator": "Ashley Jones",
+  "published_on": 1589958648,
+  "created_on": 1586417040,
+  "keywords": []
+}

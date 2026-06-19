@@ -1,0 +1,30 @@
+{
+  "id": 88524,
+  "title": "Overlap PCR",
+  "uri": "overlap-pcr-c2pkydkw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6x8zrlqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"2ome6\",\"text\":\"2023 NUS-Singapore iGEM team followed this protocol to combine DNA fragments with overlapping regions, thereby reducing the number of fragments used in the Gibson Assembly and thus, improving the success rate of the Gibson Assembly. These overlapping regions are created during the PCR procedures by designing forward and reverse primers for each fragment to contain overlapping sequences.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"1nfdr\",\"text\":\"This protocol outlines a general method for combining two DNA fragments with overlapping regions through overlap PCR. The number of fragments to be overlapped can be increased by adjusting the volume ratio between each DNA fragment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"3t4bq\",\"text\":\"Proper lab PPE must be worn at all times.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"fg74p\",\"text\":\"KOD OneTM PCR Master Mix (Blue)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2sg60\",\"text\":\"DNA fragments\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8q37o\",\"text\":\"DI Water\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Determine the volume ratio for each DNA fragment required in the reaction to calculate the appropriate volume for each DNA fragment. The final sample volume is 47 µL , with 25 µL being the KOD OneTM PCR Master Mix (Blue). Therefore, the remaining volume ( 22 µL ) will be allocated to the gene fragments and DI Water for topping it up. *This calculation requires the fragment size and the concentration of the target DNA fragments.",
+    "Divide the bigger fragment size by the smaller fragment size to get the volume ratio of the DNA fragment with the bigger fragment size.",
+    "Divide the concentration of the bigger fragment by the answer obtained in the previous step.",
+    "Divide the number obtained by the concentration of the smaller fragment to get the volume ratio of the DNA fragment with the smaller fragment size.",
+    "The volume ratio of each fragment may be adjusted to reach the final sample volume of 47 µL (DI water will be used to top up the remaining volume).",
+    "Make the 47 µL PCR sample by adding the following into a PCR tube: Item Volume 1 KOD OneTM PCR Master Mix (Blue) 25μL 2 DNA Fragment 1 From Calculation 3 DNA Fragment 2 From Calculation 4 DI Water Top up the solution to 47μL",
+    "Place the PCR tube into the Thermal Cycler and set the conditions to: Purpose Temperature Duration Remarks 1 Denaturation 98°C 10s 2 Annealing 65°C 5s 3 Extension 68°C 10s 10s per every 1kb 4 Go to Step 1, repeat the cycle 15 / 20 times 5 Extension 68°C 5 minutes Time to add primers 6 Finish 12°C Infinite Loop \u0000",
+    "After adding the primers, cancel the previous run protocol immediately and reset the conditions of the Thermal Cycler to: Purpose Temperature Duration Remarks 1 Denaturation 98°C 10s 2 Annealing 65°C 5s 3 Extension 68°C 10s 10s per every 1kb 4 Go to Step 1, repeat the cycle 20 / 25 times 5 Extension 68°C 5 minutes Time to add primers 6 Finish 12°C Infinite Loop \u0000",
+    "In Step 5 of the above condition, the &#34;Extension&#34; step, quickly add 1.5 µL of each primer into the PCR tube before the 5-minute duration is completed. After Step 3, the 2 DNA fragments should have already been combined together. To amplify this combined gene, 2 primers are required. One of the primers should bind to the 5&#39; end of the combined gene, while another primer should bind to the 3&#39; end of the combined gene.",
+    "Proceeds to the gel electrophoresis to isolate the combined gene fragment."
+  ],
+  "authors": [
+    "NUS iGEM"
+  ],
+  "creator": "NUS iGEM",
+  "published_on": 1695928564,
+  "created_on": 1695887738,
+  "keywords": []
+}

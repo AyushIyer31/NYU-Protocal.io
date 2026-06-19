@@ -1,0 +1,43 @@
+{
+  "id": 90725,
+  "title": "Expression and Purification of RH proteins via MBP affinity tag",
+  "uri": "expression-and-purification-of-rh-proteins-via-mbp-c4udyws6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlko6nwv5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"1otdb\",\"text\":\"Affinity purification followed by size exclusion chromatography.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Transform relevant bacterial expression constructs of the Rubicon/ Pacer RH domains into BL21 start (DE3) E. coli expressing MBP or GST fusions. Expression constructs should be in pET-based, IPTG-inducible expression vectors. Select colonies via antibiotic screening, and pick individual colonies. Grow 20 mL of overnight culture in LB + selection antibiotic. Allow to grow overnight. Prepare 4 L of LB + 150 µM ZnCl2",
+    "The following day, dilute the 20 mL of culture in 4 L of LB 150 µM ZnCl2, and grow at 37 C until OD600 = 0.55, with shaking. Set a different incubator to 18 C at the start of the growth so that it&#39;s ready to go.",
+    "Check OD by retrieving 1 mL of culture using a pipette, and measure absorbance on cuvette spectrophotometer. Blank using a cuvette of clean LB.",
+    "When OD600 = 0.55, chill the cultures in an ice bath for 15 minutes in order to bring cultures down to room temperature.",
+    "Add IPTG to a final concentration of 350 µM.",
+    "Move culture flasks to the 18 C shaking incubator, and allow to express for 16-20 H at 18C",
+    "The next day, harvest cells via centrifugation at ~4,000 g in 1 L bottles. Pour off supernatant, and either freeze pellet for later purification, or continue to purify directly",
+    "Prepare 2 L of purification buffer consisting of 50 mM HEPES 7.5, 150 mM NaCl, 2 mM MgCl2, and 10 mM TCEP. Degas 1 L by filtering the solution, then placing under vacuum with stir bar agitation at room temperature for 1 H. This will be the running buffer for size exclusion. From the other liter, take a 200 mL portion and add a tablet of cOmplete protease inhibitor cocktail (Roche).",
+    "Rigorously resuspend cells in the buffer + protease inhibitors, then transfer to a metal beaker and place in an ice bucket. Typically ~100-200 mL of buffer is sufficient",
+    "Move ice bucket with resuspended cells to a sonicator in order to lyse cells, then sonicate with a duty cycle of 1.5 seconds on, 0.7 seconds off for 10 minutes total. Periodically check the solution and allow time to cool if solution appears to be warming up. Stir solution periodically to promote cooling.",
+    "Clear lysate via centrifugation at 34,500 x g for 1 H at 4 C",
+    "Prepare column by settling 5 mL of amylose resin (NEB) in a gravity column. Wash resin with buffer rigorously.",
+    "Resuspend resin in lysate, and allow to flow through x2. Collect samples for SDS-PAGE before and after running through lysate (1 uL usually suffices).",
+    "Wash column with ~ 100 mL of buffer total. Monitor protein content of washes using a bradford assay, and stop when wash fractions show no protein. Collect sample of last wash fraction for SDS-PAGE.",
+    "Prepare an elution buffer by dissolving 20 mM maltose in the purification buffer. Gently apply buffer to top of resin bed to elute bound protein. Continue eluting until bradford assay shows no additional protein. Collect SDS-PAGE samples from elution",
+    "Concentrate protein elutions down to 500 uL in amicon spin concentrators, then spin concentrated samples at max speed on a tabletop centrifuge in order to clear any precipitates in preparation for size exclusion.",
+    "Prepare a Superdex 75 Increase 10/300 GL size-exclusion column (Cytiva) by washing with 24 mL of the degassed running buffer. Always used degassed running buffer.",
+    "Load concentrated and cleared protein sample into a 500 uL sample loop",
+    "Inject protein sample onto column, and run at a low flow rate (~0.2 mL/min). Low flow rates and small sample volumes will maximize resolution of this method. Collect 0.5 mL fractions.",
+    "Determine peak fractions from A280 trace on size-exclusion, run SDS-PAGE on those fractions.",
+    "Pool pure protein fractions, concentrate to ~100 µM protein, then snap freeze in liquid nitrogen before store at -80 C",
+    "Run SDS-PAGE including samples from lysate, flowthrough, final wash, elution, and peak size-exclusion fractions.",
+    "Rab7 purification follows the exact same protocol with some small differences: 1. Rab7 constructs should be GST tagged with TEV protease cleavage sequence, so use Glutathione sepharose resin instead (NEB) 2. Affinity purification buffer should be supplemented with 2 mM MgCl2, and can be lower in TCEP (~2 mM) 3. LB does not need to have 150 µM ZnCl2 4. Elute Rab7 using 10 mM reduced glutathione added to purification buffer instead of maltose. 5. Add TEV Protease to the elution fractions and incubate overnight at 4C prior to size exclusion. Recommended 1:20 ratio of protease to Rab7 by mass. Pass cleaved protein over ~10 mL of hispur Ni-NTA resin in order to remove protease and cleaved GST from solution prior to concentrated cleaved protein and loading onto size-exclusion column."
+  ],
+  "authors": [
+    "Dan Tudorica"
+  ],
+  "creator": "Dan Tudorica",
+  "published_on": 1709785330,
+  "created_on": 1699553222,
+  "keywords": []
+}

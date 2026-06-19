@@ -1,0 +1,27 @@
+{
+  "id": 318987,
+  "title": "The application of a novel Cas12a nuclease aligned CRISPR system in Ulva prolifera",
+  "uri": "the-application-of-a-novel-cas12a-nuclease-aligned-j3rjcqm4p",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj5rwxgk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"yzmbu\",\"text\":\"The protocol describes a novel CRISPR Cas12a-aligned gene-editing system in the green seaweed Ulva prolifera. It has 3 main steps: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7p24e\",\"text\":\"1. Gamete induction and collection by phototaxis. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a5jrv\",\"text\":\"2. CRISPR genome editing RNP assembly and delivery by modified Polyethene Glycol (PEG) 4000 system. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fiasl\",\"text\":\"3. Mutant screening by 2-fluoroadenine (2-FA).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"xvmq3\",\"text\":\"Sorbitol (TCI S0065)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"rxpp8\",\"text\":\"0.5M Tris-HCl pH 7.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qul9t\",\"text\":\"1M CaCl2\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vihq7\",\"text\":\"PEG 4000 (Wako)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qk81n\",\"text\":\"PEG 8000 (MPbio)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"v6cng\",\"text\":\"2-Fluoroadenine (TCI F0647)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"kxnsi\",\"text\":\"EnGen sgRNA Synthesis Kit (NEB #E3322S),\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"sowd0\",\"text\":\"Monarch RNA Clean up Kit (NEB #T2040)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"wab0t\",\"text\":\"Cas9 Nuclease (NEB #M0646T)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aypxa\",\"text\":\"crRNA (IDT)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"rqil7\",\"text\":\"ST8\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1hfok\",\"text\":\"AsCas12a (IDT 1081068)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"kgos4\",\"text\":\"Distilled water\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare the Low Salinity Buffer: Sorbitol 1.822 g Distilled water 8.7 mL 1x PES medium 1 mL 0.5M Tris-HCl pH 7.5 200 µL 1M CaCl2 100 µL",
+    "The gametes are collected by phototactic migration after cells are obtained by centrifugation at 5,000 g for 5 min at 20°C. Finally, resuspend thoroughly in Low Salinity Buffer at a density of 1.0×10^^4 per µL.",
+    "For CRISPR/Cas9 Genome Editing: Mix 1 µL crRNA+1 µL tracrRNA and incubate at 95°C for 5 min as the synthetic sgRNA. After cooling down, Cas9 proteins are added to the synthetic sgRNA and incubated at 37°C for 5-10 min to make the CRISPR RNP complexes.",
+    "For CRISPR/AsCas12a and ST8 Genome Editing: Mix 1 µL dissolved crRNA with AsCas12a/ST8 (3.34 µmol/µL), then incubate at room temperature for 10-20 min as the CRISPR RNP complexes.",
+    "Prepare the Transformation Buffers: 40% PEG 4000: PEG 4000 4 g Distilled water 10 mL 40% PEG 4000 with CaCl2: PEG 4000 4 g Distilled water 9.7 mL 0.5M Tris-HCl pH 7.5 200 µL 1M CaCl2 100 µL Final concentration: 10mM Tris-HCl pH 7.5, 10mM CaCl2, 40% PEG 4000. 60% PEG 4000: PEG 4000 6 g Distilled water 10 mL 40% PEG 8000: PEG 8000 4 g Distilled water 10 mL 60% PEG 8000: PEG 8000 6 g Distilled water 10 mL Prepare the reaction as following: Gametes 100 µL 60% PEG or UTB2 (Prefer 60% PEG) 100 µL CRISPR RNP complex 2.5 µL Gently mix the reagents and incubate at room temperature for 30 min. Centrifuge at 5,000 × g for 5 min and remove the supernatant. Wash the gametes with filtered seawater and centrifuge at 5,000 g for 5 min to obtain the pellet. Resuspend the pellet in 1/2 PES and add to a 60 mm dish. Incubate the dish at 20°C in the dark for 36-48 hours before 2-FA treatment.",
+    "The 1/2 PES medium was removed, and the selection medium (10 uM 2-FA) was added to the dish and cultured for 2-3 weeks; change the selection medium every week. Transfer the 2-FA-resistant thalli to 1/2 PES medium for the following experiments and change the medium every week."
+  ],
+  "authors": [
+    "Zheng Qin",
+    "Toshiki Uji"
+  ],
+  "creator": "Zheng Qin",
+  "published_on": 1781290796,
+  "created_on": 1781196435,
+  "keywords": []
+}

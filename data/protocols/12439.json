@@ -1,0 +1,34 @@
+{
+  "id": 12439,
+  "title": "Ethanol precipitation of small DNA fragments",
+  "uri": "ethanol-precipitation-of-small-dna-fragments-qdxds7n",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj7jnvk5w/v1",
+  "description": "{\"blocks\":[{\"key\":\"8c7hq\",\"text\":\"This protocol is for a simple ethanol precipitation of small fragments and/or small amounts of DNA. Note that this protocol simply concentrates your sample and removes enough salts/enzymes for ligation to be successful. All DNA fragments from your digest will still be present in your pellet.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fr8ub\",\"text\":\" See here for a discussion of theory behind ethanol precipitation of DNA fragments.\\n \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":5,\"length\":4}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"E55231BF9DE84577826356911731C8C2\",\"url\":\"http://www.protocol-online.org/biology-forums/posts/20466.html\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"ft74o\",\"text\":\"3M Sodium Acetate, 0.11M MgCl2 pH 5.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":37},{\"style\":\"sub\",\"offset\":29,\"length\":1}],\"entityRanges\":[],\"data\":[]},{\"key\":\"e4v2m\",\"text\":\"24.6 g sodium acetate\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dk1oc\",\"text\":\"0.952g MgCl2 anhydrous\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":11,\"length\":1}],\"entityRanges\":[],\"data\":[]},{\"key\":\"5c2fu\",\"text\":\"Dissolve in about 60 ml DDW Adjust pH with glacial acetic acid (\\u003e8 ml), Dilute to 100 ml with DDW and filter sterilize.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8turb\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"2fovr\",\"text\":\"Absolute Ethanol (100% = 200 proof) at -80o C\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":42,\"length\":1}],\"entityRanges\":[],\"data\":[]},{\"key\":\"bg7es\",\"text\":\"70% ethanol at -80o C (don’t cool ethanol for too long or water will freeze)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":18,\"length\":2}],\"entityRanges\":[],\"data\":[]},{\"key\":\"c419c\",\"text\":\"Tabletop centrifuge\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2i8nc\",\"text\":\"-80°C freezer\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"as58l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"pCt0H\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"TDvfd\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":120484,\"guid\":\"4199B474341F11EE9D4302C0B41BC903\",\"name\":\"Pellet Paint® NF Co-Precipitant\",\"mol_weight\":0,\"sku\":\"70748-3\",\"url\":\"https://www.sigmaaldrich.com/catalog/product/mm/70748?lang=en\\u0026region=CZ\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":17,\"name\":\"Merck MilliporeSigma (Sigma-Aldrich)\",\"link\":\"http://sigmaaldrich.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Transfer the sample to 1.5 mL eppendorf tube.",
+    "Adjust the salt conc. of the sample to 0.3M sodium acetate and 0.01M MgCl 2. 0.3 , sodium acetate 0.01 , MgCl2",
+    "Add 1 µl of Pellet Paint NF. undetermined, Pellet Paint NF Pellet Paint® NF Co-Precipitant Merck MilliporeSigma (Sigma-Aldrich) Catalog #70748-3",
+    "Add 1 µl of non labeled genomic DNA e.g. from E.coli (this acts as a carrier and increases precipitation yield). undetermined, genomic DNA (E.coli)",
+    "Add 2 volumes cold absolute ethanol to sample.",
+    "Incubate 2-3 hr at -80°C. The long incubation time is critical for small fragments. Undetermined 02:00:00",
+    "Centrifuge for 30 minutes at 0°C at maximum speed (generally &gt;10000 g at least). CENTRIFUGE max. speed Undetermined 00:30:00",
+    "Remove supernatant.",
+    "Wash with 750-1000 μL cold 70% ethanol. Another critical step for small fragments under 200 base pairs. Washing involves adding the ethanol and inverting several times. undetermined, cold 70% ethanol",
+    "Centrifuge for 30 minutes at 0°C at maximum speed (generally &gt;10000 g at least). CENTRIFUGE max. speed Undetermined 00:30:00",
+    "Repeat washing procedure and centrifuge again. go to step #9",
+    "Let air dry on benchtop.",
+    "Resuspend in an appropriate volume of H 2 O."
+  ],
+  "authors": [
+    "Eva Petrova",
+    "Roey Angel"
+  ],
+  "creator": "Eva Petrova",
+  "published_on": 1726512062,
+  "created_on": 1527154914,
+  "keywords": []
+}

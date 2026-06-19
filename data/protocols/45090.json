@@ -1,0 +1,27 @@
+{
+  "id": 45090,
+  "title": "HuBMAP TMC-Florida/Zurich Light Sheet Fluorescence Microscopy Modality Overview",
+  "uri": "hubmap-tmc-florida-zurich-light-sheet-fluorescence-bqaamsae",
+  "doi": "dx.doi.org/10.17504/protocols.io.bqaamsae",
+  "description": "{\"blocks\":[{\"key\":\"61p2v\",\"text\":\"This protocol is an overview of all of  the protocols currently in use for the Light Sheet Fluorescence Microscopy modality at HubMAP Tissue Mapping Center,TMC-Florida/Zurich.  It includes protocols.io links to each of the individual protocols that make up this project workflow, from processing tissue and  imaging the samples, to uploading the final data to the HuBMAP HIVE.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9vluc\",\"text\":\"This workflow protocol may be interupted at any point. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"76agf\",\"text\":\"Repeated runs on the same sample do not require employing the entire protocol sequence.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"723i9\",\"text\":\"Confirm sample ID information at the start of each step.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"c0phi\",\"text\":\"Follow all safety guidelines provided with individual links within this protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"86s7m\",\"text\":\"Required materials are provided within each linked protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Process donor organs into samples for analysis. Lymph Node: dx.doi.org/10.17504/protocols.io.bbgnijve Thymus: dx.doi.org/10.17504/protocols.io.bbgmiju6 Spleen: dx.doi.org/10.17504/protocols.io.bc3kiykw",
+    "Register organ donor, organs received and common coordinate region information in the HuBMAP UUID generator at https://uuid.hubmapconsortium.org .",
+    "Clear tissue using Clarity protocol: https://www.protocols.io/view/tissue-clearing-using-clarity-method-bppimmke",
+    "Immunostaining of cleared tissue (large volume): https://www.protocols.io/view/large-volume-immunostaining-for-cleared-samples-bprtmm6n",
+    "Image acquistion using Light Sheet Fluorescence Microsopy: https://www.protocols.io/view/light-sheet-fluorescence-microscopy-image-acquisit-bprsmm6e"
+  ],
+  "authors": [
+    "Jerelyn Nick",
+    "Marda Jorgensen",
+    "Seth Currlin"
+  ],
+  "creator": "Jerelyn Nick",
+  "published_on": 1607115005,
+  "created_on": 1606839333,
+  "keywords": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": 229915,
+  "title": "qRT-PCR (SYBR Green)",
+  "uri": "qrt-pcr-sybr-green-hcr3b2v8p",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvjebxwgk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"asqll\",\"text\":\"Quantitative reverse-transcription PCR (qRT-PCR) to measure relative gene expression using TRIzol RNA extraction, PrimeScript‱ RT Master Mix, and SYBR‱ Green on a 96-well real-time instrument (e.g., StepOnePlus‱). Analysis by 2^-ΔΔCT with melt-curve confirmation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":125,\"length\":1},{\"key\":1,\"offset\":150,\"length\":1},{\"key\":2,\"offset\":210,\"length\":1}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"50AE2376A9F311F09F220A58A9FEAC02\",\"name\":\":tm:\"}},\"1\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"50AE23A9A9F311F09F220A58A9FEAC02\",\"name\":\":tm:\"}},\"2\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"50AE23D6A9F311F09F220A58A9FEAC02\",\"name\":\":tm:\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"29l31\",\"text\":\"Pause Points:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":13}],\"entityRanges\":[],\"data\":{}},{\"key\":\"59u4o\",\"text\":\"- RNA stable at −80 °C.\\n- cDNA stable at −20 °C.\\n- Pre-run plate: keep on ice.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4kb14\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4c69d\",\"text\":\"Troubleshooting:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":16}],\"entityRanges\":[],\"data\":{}},{\"key\":\"860u8\",\"text\":\"- Low RNA yield: ensure clean separation, avoid overdrying.\\n- Multiple melt peaks: increase annealing temp, redesign primers.\\n- High variability: mix reagents well, centrifuge plate.\\n- NTC amplification: replace reagents, check contamination.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5rtj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8jh1f\",\"text\":\"Record Keeping:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":15}],\"entityRanges\":[],\"data\":{}},{\"key\":\"e8c1t\",\"text\":\"Record RNA purity, input amounts, primer sequences, plate map, run file, and ΔΔCT calculations.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"c6jdh\",\"text\":\"- Pre-cool a centrifuge to 4 °C.\\n- Thaw reagents on ice; mix and briefly spin.\\n- Design primers (amplicon 70–200 bp; Tm ~60 °C when possible).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"8cics\",\"text\":\"- Work RNase-free (gloves, RNase-free plastics).\\n- TRIzol‱, chloroform, and isopropanol are hazardous—use in a fume hood.\\n- Keep samples on ice unless otherwise specified.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":57,\"length\":1}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"3A31E663A9F311F0BD070A58A9FEAC02\",\"name\":\":tm:\"}}}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"eiegk\",\"text\":\"Instruments: NanoDrop, PCR thermal cycler, real-time PCR system (96-well), plate centrifuge.\\nConsumables: Pipettes/tips, RNase-free tubes, 96-well qPCR plates, optical seals.\\nReagents: TRIzol‱ Reagent; chloroform; isopropanol; 70% ethanol (RNase-free); RNase-free water; PrimeScript‱ RT Master Mix (TAKARA RR036A); SYBR‱ Green Universal Master Mix (Applied Biosystems 4309155); forward/reverse primers.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":191,\"length\":1},{\"key\":1,\"offset\":282,\"length\":1},{\"key\":2,\"offset\":319,\"length\":1}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"49BB6DE3A9F311F09F220A58A9FEAC02\",\"name\":\":tm:\"}},\"1\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"49BB6E19A9F311F09F220A58A9FEAC02\",\"name\":\":tm:\"}},\"2\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"49BB6E5DA9F311F09F220A58A9FEAC02\",\"name\":\":tm:\"}}}}",
+  "steps": [
+    "Lyse/Homogenize: Add 1 mL TRIzol per 50–100 mg tissue or 5–10×10^6 cells. Homogenize thoroughly; incubate 5 min at RT.",
+    "Phase Separation: Add 0.2 mL chloroform per 1 mL TRIzol, vortex 10 s, incubate 10 min at RT. Centrifuge 12,000×g, 10 min, 4 °C. Transfer aqueous phase.",
+    "RNA Precipitation: Add 0.5 mL isopropanol per 1 mL TRIzol, invert gently, incubate 10 min RT. Centrifuge 12,000×g, 10 min, 4 °C.",
+    "Wash: Wash pellet 3× with 70% ethanol, centrifuge each time. Air-dry 30 min RT.",
+    "Resuspend &amp; QC: Dissolve in 50 µL RNase-free water, measure purity (A260/A280 &gt; 1.8). Store at −80 °C.",
+    "Reaction (20 µL): 1 µg RNA, 4 µL 5× PrimeScript RT Mix, water to 20 µL. Program: 37 °C 15 min, 85 °C 5 s, 4 °C hold. Dilute to 100 µL, store at −20 °C.",
+    "Reaction mix (10 µL): 5 µL SYBR Mix, 1 µL cDNA, 0.5 µL primers each, 3 µL water. Set up triplicates, NTCs. Seal, centrifuge plate.",
+    "Option A (Tm ≥ 60 °C): 50 °C 2 min; 95 °C 2 min; 40× (95 °C 15 s, 60 °C 1 min). Option B (Tm &lt; 60 °C): 50 °C 2 min; 95 °C 2 min; 40× (95 °C 15 s, 55–60 °C 15 s, 72 °C 1 min). Melt Curve: 95 °C 15 s; 60 °C 1 min; slow ramp to 95 °C.",
+    "Export CT values.",
+    "ΔCT = CT(target) − CT(housekeeping).",
+    "ΔΔCT = ΔCT(experimental) − ΔCT(control).",
+    "Expression = 2^-ΔΔCT.",
+    "5. Confirm single melt peak. Plot in Prism."
+  ],
+  "authors": [
+    "Armin Bayati",
+    "Yuhang Zhao"
+  ],
+  "creator": "Jackson Schumacher",
+  "published_on": 1760552457,
+  "created_on": 1760551877,
+  "keywords": []
+}

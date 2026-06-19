@@ -1,0 +1,33 @@
+{
+  "id": 124931,
+  "title": "Pre-MALDI Autofluorescence Microscopy of Lung Tissues",
+  "uri": "pre-maldi-autofluorescence-microscopy-of-lung-tiss-d59b892n",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g75z23lwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"7jq53\",\"text\":\"Obtain autofluorescence microscopy images of lung tissue sections. This will produce an RGB plus brightfield image of each tissue section that enables visualization of tissue morphology, and these images can be co-registered with additional imaging modalities. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"6j9f1\",\"text\":\"Carefully handle all slides with gloves\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"4hflb\",\"text\":\"Zeiss Axio Zoom Microscope\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "If tissue-mounted slides are frozen, allow them to equilibrate to room temperature (~20 ℃) before opening the vacuum-sealed bag (~30 min); otherwise, proceed directly to step 2.",
+    "Place the microscope slide(s) onto the stage of the Zeiss Axio Zoom Microscope",
+    "Open Zeiss Zen software",
+    "Set up the method for acquiring autofluorescence (RGB-channels) and transmitted light images Magnification: 100 x Objective: PalnNeoFluar Z 2.3x Blue: Chroma DAPI (ex. 353 nm, em. 465 nm) Light Source Intensity: 100% Exposure time: 350 ms - Captures NAD(P)H excitation present in cells and elastin in the extracellular matrix Green: Chroma GFP (ex. 488 nm, em. 509 nm) Light Source Intensity: 100% Exposure time: 500 ms - Captures Flavins in metabolically active zones (increased in the vasculature) Red: Chroma DSRED (ex. 545 nm, em. 572 nm) Light Source Intensity: 100% Exposure time: 1300 ms - Captures lipopigments often found in muscle Transmitted Light: Light Source Intensity: 100% Exposure time: 1450 ms - General morphological assessment of the tissue",
+    "Define imaging regions to include each individual tissue section within a single region",
+    "Perform manual focus adjustment at ~6 &#39;support points&#39; per tissue section",
+    "Press &#39;Start Scan&#39; to begin image acquisition. The microscope will automatically scan each tissue section and interpolate the focus between support points",
+    "Switch to the green channel, press &#39;Live Scan&#39;, and perform focus adjustments at each support point",
+    "Export each image region as a Tiff and PNG using Zen (The .czi files can be visualized using Zen or QuPath software)",
+    "The method will acquire a tiled brightfield and (auto)fluorescence image.",
+    "Under the processing tab use the &#39;Split Scenes&#39; method to create individual .czi files for each region",
+    "Under the processing tab, use the &#39;Image export&#39; method to export as a Tiff and PNG Resize: 50%"
+  ],
+  "authors": [
+    "Brittney Gorman",
+    "Christopher R Anderton"
+  ],
+  "creator": "Brittney Gorman",
+  "published_on": 1760116376,
+  "created_on": 1742861693,
+  "keywords": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": 37005,
+  "title": "A single cell RNA sequencing protocol for the pig colon",
+  "uri": "a-single-cell-rna-sequencing-protocol-for-the-pig-bgdmjs46",
+  "doi": "dx.doi.org/10.17504/protocols.io.bgdmjs46",
+  "description": "{\"blocks\":[{\"key\":\"894cg\",\"text\":\"\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"98r9k\",\"text\":\"Purpose: The advent of single-cell RNA sequencing (scRNA-seq) provides unprecedented opportunities for exploring gene expression profile at the single-cell level. Currently, scRNA-seq has become a favorable choice for studying the key biological questions of cell heterogeneity, since bulk RNA-seq mainly reflects the averaged gene expression across thousands of cells. The pig is a relevant experimental model due to its similarity to the human in nutrition, physiology and metabolic process, particularly in the enteric nervous system (ENS). However, up to date, no scRNA-seq protocol has been developed and applied on pig colon tissue. Here, we develop a protocol to prepare the cell suspensions from the outer smooth muscle layers along with the myenteric plexus with a minimum of artificial induction in transcriptional changes during single-cell dissociation and faithfully investigate gene expression in specific cell types using 10x Genomics scRNA-seq.  Methods: Theproximal (pC), transverse (tC) and distal colon (dC) were dissected from two adult Yucatan minipigs. The outer smooth muscle layers along with the myenteric plexus were peeled off from the underlying tissue using forceps. After cell suspension preparation, parts of cell suspensions from pC were subjected to RNA extraction, cDNA library construction and RNA sequencing on Hiseq3000 platform to verify the effects of Actinomycin D (ActD) application on transcriptional changes. After fluorescence-activated cell sorting (FACS) for isolation of live cells, cell suspensions from pC, tC and dC were used for 10x Genomics scRNA-seq on an Illumina NextSeq 500 Sequencer. The data were analyzed using Python 3.7.4 and R 3.6.2. Results: (i) Immediate-early genes (IEGs) are rapidly and transiently induced by various cellular stimuli including synaptic activity. Therefore, they are good markers showing if the transcriptional profiling changes during single-cell dissociation.  The sequencing data showed that there were 131 IEGs in pig transcriptome. Of them, 127 IEGs showed remarkably reduced induction with ActD application. This means that ActD application minimizes artificially induced transcriptional changes during single-cell dissociation and thus enables faithful characterization of baseline transcriptional profiles; (ii)  The single-cell data were obtained from 2,091 cells in pC, 1,903 cells in tC and 3,918 cells in dC, sequenced to a depth of about 1,400 median genes per cell. Principal component analysis (PCA) was first carried out to reduce dimensionality. Based on the PCA output, non-linear dimensional reduction techniques, such as UMAP, were used to visualize and explore the datasets. Each point in UMAP depicts a single cell, colored according to cluster designation. There were 10 distinct major cell clusters found in muscularis externa of pC, tC and dC. The clusters in all three segments comprised fibroblasts (Fibro), neurons(Neu), endothelial cells (Endo), T cells (T), smooth muscle cells (Muscle), interstitial cells of Cajal (ICC), macrophages (Macro), monocytes (Mono), B cells (B) and glial cells (Glial).\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8},{\"style\":\"bold\",\"offset\":962,\"length\":9},{\"style\":\"bold\",\"offset\":1696,\"length\":9}],\"entityRanges\":[],\"data\":[]},{\"key\":\"f0dg5\",\"text\":\"\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [],
+  "authors": [
+    "Tao Li",
+    "Pu-Qing Yuan",
+    "Yvette Tache"
+  ],
+  "creator": "Pu-Qing Yuan",
+  "published_on": 1589417916,
+  "created_on": 1589415988,
+  "keywords": []
+}

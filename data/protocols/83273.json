@@ -1,0 +1,41 @@
+{
+  "id": 83273,
+  "title": "EXPRESSION AND PURIFICATION OF HUMAN p62 (HIS-TEV-mCherry-p62)",
+  "uri": "expression-and-purification-of-human-p62-his-tev-m-cvjhw4j6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlkob61v5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"e8usi\",\"text\":\"This protocol describes how to express and purify human p62 tagged N-terminally with HIS and TEV. The expression is performed with E. coli Rosetta pLysS cells. The protein is purified via a HisTrap column and gel filtration (SEC). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":131,\"length\":8}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"auqgt\",\"text\":\"Lysis Buffer:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":13}],\"entityRanges\":[],\"data\":{}},{\"key\":\"8l0h2\",\"text\":\"25 mM HEPES pH 7.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"au908\",\"text\":\"150 mM NaCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5tqn2\",\"text\":\"25 mM Imidazole\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5ng9d\",\"text\":\"2 mM MgCl2\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"91mc6\",\"text\":\"Freshly added: 2 mM β-Mercaptoethanol, Roche Protease Inhibitor (Merck, #5056489001), DNAse I (Sigma, #DN25-1G)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d2iv0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9r8r2\",\"text\":\"HisTrap Buffer A (filtered, degassed):\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":38}],\"entityRanges\":[],\"data\":{}},{\"key\":\"c1mq2\",\"text\":\"25 mM HEPES pH 7.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5gm6n\",\"text\":\"500 mM NaCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d511p\",\"text\":\"25 mM Imidazole\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a0fp\",\"text\":\"Freshly added: 2 mM β-Mercaptoethanol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"660fi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a8h2h\",\"text\":\"HisTrap Buffer B (filtered, degassed):\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":38}],\"entityRanges\":[],\"data\":{}},{\"key\":\"b29rk\",\"text\":\"25 mM HEPES pH 7.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d0rh0\",\"text\":\"500 mM NaCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aade0\",\"text\":\"400 mM Imidazole\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6kmk3\",\"text\":\"Freshly added: 2 mM β-Mercaptoethanol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"drhd0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4or6\",\"text\":\"SEC Buffer (filtered, degassed):\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":32}],\"entityRanges\":[],\"data\":{}},{\"key\":\"nc7a\",\"text\":\"25 mM HEPES pH 7.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ass0q\",\"text\":\"500 mM NaCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fmit8\",\"text\":\"Freshly added: 1 mM DTT\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"5o79n\",\"text\":\"E. coli Rosetta (DE3) pLysS cells\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1h69b\",\"text\":\"LB medium with antibiotics: 50 μl/ml ampicillin and 34 μl/ml chloramphenicol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3dso3\",\"text\":\"IPTG (Isopropyl-β-D-thiogalactopyranosid)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8v06g\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b8cid\",\"text\":\"Columns/Resin:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":14}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3ih8m\",\"text\":\"HisTrap HP column, 1 x 5 ml (Cytiva, #17524802)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fvg1b\",\"text\":\"Superdex 200 Increase 10/300 GL column (Cytiva, #28990946)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Grow E. coli Rosetta pLysS cells in 8 L Luria broth medium at 37 °C until an OD 600 nm of 0.8 is reached.",
+    "Induce protein expression with 150 micromolar (µM) IPTG for 05:00:00 at 25 °C .",
+    "Centrifuge cells at 3000 rcf, 4 °C , 00:15:00",
+    "Aspirate media and resuspend pellet in 10 mL Lysis Buffer",
+    "Flash freeze sample in liquid nitrogen",
+    "Store at -80 °C until use.",
+    "Thaw sample at 37 °C",
+    "Sonicate sample 5 cycles at 65% power for 00:00:30",
+    "Centrifuge sample 140,000 rcf at 4 °C for 00:30:00",
+    "Repeat sonication for a total of three times",
+    "Equilibrate a HisTrap HP column (GE Healthcare) with 5 column volumes of water and 5 of HisTrap Buffer A",
+    "During centrifugation perform equilibration",
+    "Filter the supernatant through 0.2 µm syringe filter",
+    "Load sample onto the equilibrated HisTrap column at 4 °C",
+    "Elute protein via a stepwise imidazole gradient using HisTrap Buffers A and B and elution steps: 25 mM, 62.5 mM, 118.75 mM, 148.75 mM, 212.mM, 306.25 mM and 400 mM imidazole",
+    "Add 100 µg to 150 µg TEV protease to pooled protein-containing fractions and incubate Overnight at 4 °C to cleave.",
+    "Concentrate resulting protein with a 30 kDa MWCO concentrator (Millipore) to between .5 mL and 1 mL",
+    "Apply protein to a Superdex 200 Increase 10/300 column (Cytiva) pre-equilibrated with SEC Buffer.",
+    "Freeze purified protein in liquid nitrogen and store at -80 °C",
+    "Protein purity can be determined by SDS PAGE analysis"
+  ],
+  "authors": [
+    "Gabriele Zaffagnini",
+    "Elisabeth Holzer"
+  ],
+  "creator": "OLIVIA HARDING",
+  "published_on": 1690815771,
+  "created_on": 1686596536,
+  "keywords": []
+}

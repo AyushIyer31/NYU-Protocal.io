@@ -1,0 +1,35 @@
+{
+  "id": 110749,
+  "title": "Mouse PBMC Isolation",
+  "uri": "mouse-pbmc-isolation-dqd55s86",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlk9bo6v5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"hnj0\",\"text\":\"This protocol describes the process of isolating peripheral mononuclear blood cells (PBMCs) from the blood of a mouse via ACK lysis. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"34p9c\",\"text\":\"Remove Ammonium-Chloride-Potassium lysis buffer from fridge and fast temp centrifuge to 4 degrees celsius.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"f1fd\",\"text\":\"When working with Isoflurane work in a chemical safety hood. Wear appropriate PPE and use caution around sharps.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"emgg0\",\"text\":\"Centrifuge that can be cooled to 4-degree Celsius\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"s8db\",\"text\":\"Isoflurane \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e840k\",\"text\":\"Forceps\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6js15\",\"text\":\"Hemostat \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2vvfn\",\"text\":\"Scissors \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"djh5j\",\"text\":\"1ml syringe\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ghlv\",\"text\":\"Monoject Blood Collection Tube Glycerine Coated Lavender Stopper, EDTA (K3) 0.06 mL 7.5% Solution, 3 mL Draw, 10.25 mm x 64 mm (8881311248)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cpn8j\",\"text\":\"15ml tubes \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5ulcv\",\"text\":\"Ammonium-Chloride-Potassium (ACK) lysis buffer \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7rcf7\",\"text\":\"GilbicoTM HBSS -calcium/-magnesium/-phenol red (Fisher, 14175103)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":7,\"length\":3}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3tktg\",\"text\":\"1.5ml tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Anesthetize mouse with isoflurane. Keep animal under isoflurane (we put kim wipe that have some isoflurane on them in a 50ml conical and keep the mouse’s head in the 50ml conical) and open the abdomen at the sternum.",
+    "Open up the sternum and make some later cuts to expose all of the diaphragm. Be careful not to cut other organs.",
+    "Cut the diaphragm, being careful not to cut the lungs or heart behind it. Cut the lateral sides of the ribs cage and fold up to expose the heart. Keep the ribs folded back by clamping them down with a hemostat.",
+    "Cut the right atrium of the heart and collect blood that pools into the cavity with the 1ml syringe and immediately add to vacutainer with EDTA; flick tube or invert to mix and prevent clotting. Each mouse usually gives ~300ul of blood (range 100ul-700ul/mouse)",
+    "Transfer blood into a 15ml conical on ice. a) For flow cytometry transfer 250uL of blood b) For RNA extraction transfer all blood collected",
+    "Add 5mL of ACK lysis buffer to blood samples in 15ml tubes and vortex briefly",
+    "Incubate 5 minutes on ice. Red blood cell lysis is complete when the solution goes from opaque to translucent.",
+    "Quench lysis with 5mLs of 1XHBSS (-/-) bringing total volume up to 10mLs.",
+    "Centrifuge 15ml tubes at 4 degree for 5 minutes at 350xg.",
+    "After the 15mL tubes are done spinning, assess the pellet color. If the pellet is white no further lysis is needed.",
+    "If the pellet if red then you will need to repeat the ACK lysis step once more. To do so aspirate off supernatant and resuspend cell pellet with 1ml of ACK lysis and incubate for 1 minute on ice and then quench with 5mls of HBSS (-/-). Centrifuge sample after incubation at 4 degree for 5 minutes at 350xg.",
+    "Carefully place samples on ice to not disrupt the pellet and aspirate off supernatant, can leave up to 300ul of supernatant to make sure the pellet is not disrupted",
+    "Add 5ml of 1X HBSS (-/-) to each tube and gently resuspend cells for wash (do not vortex, flick or hand pipet to resuspend)",
+    "Centrifuge samples 4 degrees Celsius, 5 minutes, at 350xg",
+    "Remove supernatant and resuspend cells according to downstream protocol."
+  ],
+  "authors": [
+    "Malu G Tansey"
+  ],
+  "creator": "Janna Jernigan Posey",
+  "published_on": 1729708708,
+  "created_on": 1729707340,
+  "keywords": []
+}

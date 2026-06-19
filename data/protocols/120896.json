@@ -1,0 +1,28 @@
+{
+  "id": 120896,
+  "title": "Microarray analysis of highly purified human decidual NK cells",
+  "uri": "microarray-analysis-of-highly-purified-human-decid-d2a88ahw",
+  "doi": "dx.doi.org/10.1038/nprot.2006.197",
+  "description": "{\"blocks\":[{\"key\":\"cb9hz\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"c30ft\",\"text\":\"Description of gene array analysis and normalization\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Perform microarray analysis on highly purified CD56brightCD16- decidual NK (dNK) cells pooled from health elective 1st trimester elective terminations (6-10 weeks).",
+    "Subsequently, pool each purified subset from all donors and use to obtain a total RNA extract.",
+    "Verify the quality of total RNA used and the cRNA that was prepared afterwards, by using an Agilent Bioanalyzer.",
+    "Confirm that the cRNA samples were fragmented to uniform size before continuing with sample labeling and hybridization procedures.",
+    "Perform gene expression profiling on the dNK subset by using a CodeLinkTM Uniset Human 20K I Bioarray.",
+    "Hybridize the labeled cRNA samples in duplicate to enhance the significance of the hybridization intensities and to eliminate random noise especially from probe sets at the borderline of expression.",
+    "Use the global normalization (total intensity normalization) method for the data obtained from the Amersham array. Calculate the mean intensities for each array (Mi, i 1, 2, . . . . , n) and use to calculate the mean intensity across the arrays (Ma). The scale factors (Fi, i 1,2, . . . . , n) can be calculated for each array as Ma/Mi. The normalized intensities for each array can be calculated by multiplying scale factors by their measured intensities. This classical normalization method scales the individual intensities so that the mean intensities are the same across all arrays, and we applied to the data by an in-house developed program. Transcripts that demonstrate differences greater than 2-fold in duplicate analysis of the same NK sample examined should be excluded from the analysis. The raw intensity data should be normalized after exclusion of such genes. Additionally, 20 should be set to be the minimal normalized hybridization intensity value (in other words, all intensities below 20 should be brought up to this value). This was decided after observing that a set of more than 10 transcripts (e.g., CD20, CD4, CTLA4, etc.), known to be absent in NK cells and/or in human cells, showed hybridization intensity values below this threshold. Reproducibility of the gene expression data can be assessed by plotting gene expression levels from each of the two replicate experiments. Linear correlation coefficient for the plot should be above 0.98 (data not shown). This observation provides a justification to average normalized hybridization intensity values for dNK sample replicate experiments, and to use these values for estimating gene expression patterns.",
+    "Decidual NK cells regulate key developmental processes at the human fetal-maternal interface by Hanna, J. et al. published in Nature Medicine on 09 Jun, 2006 https://dx.doi.org/10.1038/nm1452"
+  ],
+  "authors": [
+    "Ofer Mandelboim"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1154926140,
+  "created_on": 1154926140,
+  "keywords": []
+}

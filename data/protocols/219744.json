@@ -1,0 +1,29 @@
+{
+  "id": 219744,
+  "title": "3D Isotropic large-volume high-resolution enhanced FIB-SEM pipeline",
+  "uri": "3d-isotropic-large-volume-high-resolution-enhanced-g2t8byerx",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg3wj7ev25/v1",
+  "description": "{\"blocks\":[{\"key\":\"9ut04\",\"text\":\"This protocol outlines the 3D isotropic, large-volume, high-resolution enhanced Focused Ion Beam Scanning Electron Microscopy (eFIB-SEM) pipeline, including sample preparation, image acquisition, and data registration of Epon-embedded cultured cells, with precise targeting guided by correlative fluorescence microscopy and X-ray tomography.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Enhanced FIB-SEM Sample Preparation",
+    "Enhanced FIB-SEM Imaging Acquisition",
+    "The vertical sample post was then trimmed to a small block containing the Region of Interest (ROI), with dimensions of 80 µm in width (perpendicular to the ion beam) and 75 µm in depth (in the ion beam direction). A 20 µm-thick of Durcupan layer was preserved at the sample front to serve as a “self-healing” layer, mitigating the milling artifacts. Precise ROI targeting and trimming were achieved using overlay images from light fluorescence microscopy and X-ray tomography data acquired with a Zeiss Versa XRM-620. The detailed approach was previously described by Pang &amp; Xu 2023.",
+    "To enhance conductivity, thin layers of conductive material—10 nm of gold followed by 40 nm of carbon—were deposited onto the trimmed sample using a Leica EM ACE600 coater.",
+    "The FIB-SEM prepared sample was imaged using a customized enhanced FIB-SEM microscope (Xu et al., 2017 and Xu et al., 2021). The images were acquired using a 500 pA current SEM probe at 0.7 keV. The scan rate was 400 kHz, with a 2-nm pixel along x and y axes. A 2-nm z-step was achieved by ~5 seconds of milling with a 15-nA Ga+ beam at 30 kV. A total volume of 12 × 6 × 12 µm³ was acquired over 8 days at a rate of 1 minute per frame.",
+    "One Epon-embedded cultured cell sample of RPE-1 cells, was mounted onto the top ofa 1 mm copper stud using Durcupan, ensuring optimal charge dissipation by maintaining contact between the heavy metal-stained sample and the copper stud.",
+    "Image Registration and Alignment",
+    "The raw image stack was aligned using a SIFT based MATLAB script ( https://github.com/cshanxu/Enhanced_FIB-SEM/tree/main/Matlab ) and binned 2-to-1 along x, y, and z axes to create a final dataset with 4 × 4 × 4 nm³ voxels, which can be viewed in any arbitrary orientations."
+  ],
+  "authors": [
+    "Song Pang",
+    "C. Shan Xu"
+  ],
+  "creator": "Song Pang",
+  "published_on": 1753109026,
+  "created_on": 1749234042,
+  "keywords": []
+}

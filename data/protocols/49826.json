@@ -1,0 +1,41 @@
+{
+  "id": 49826,
+  "title": "Protein interaction network analysis for Mendelian diseases",
+  "uri": "protein-interaction-network-analysis-for-mendelian-buwanxae",
+  "doi": "dx.doi.org/10.17504/protocols.io.buwanxae",
+  "description": "{\"blocks\":[{\"key\":\"dq0ch\",\"text\":\"This protocol describes the steps to use experimentally validated human data to create a protein-protein interaction network (PPIN) based on disease causative genes. Network analysis (combination of topological functional analyses) will lead to the identification of biological processes relevant for disease and disease endophenotypes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Select the protein products of genes relevant for disease (seeds).",
+    "Use the selected seeds as input to query the PINOT webtool (Tomkins et al., 2020) [ http://www.reading.ac.uk/bioinf/PINOT/PINOT_form.html ] or any other webtool that retrieves protein interactions from literature.",
+    "Screen the PPIs (protein-protein interactions) provided from PINOT to remove PPIs with a final score &lt;3.",
+    "Score each node in the network based on the number of seeds to which it connects.",
+    "Select all nodes interacting with more than one seed.",
+    "Extract a subnetwork composed of the nodes selected in step 5. and all the connected seeds.",
+    "Evaluate the functions associated with the PPIN using Gene Ontology terminology (Biological Processes [BPs] and Cellular Components [CCs] Gene Ontology [GO] annotations).",
+    "Group the enriched BP and CC GO terms by semantic similarity into semantic classes.",
+    "Remove the GO terms classified in the semantic classes “general” and “metabolism” as they refer to GO terms that provide limited functional specificity to the analysis.",
+    "Cluster the semantic classes into functional blocks and location blocks, respectively.",
+    "Evaluate the consistency of the results using 3 independent online tools, g:Profiler (RRID:SCR_006809)[ https://biit.cs.ut.ee/gprofiler/gost ], Gene Ontology using Panther’s tool (RRID:SCR_004869) [ http://pantherdb.org/ ] and WebGestalt ( RRID:SCR_006786) [ http://www.webgestalt.org/ ].",
+    "In order to compare functional enrichment profiles, retrieved for different parts of the network, reduce data dimension for example conducting Principal Component Analysis (PCA) through R (RRID:SCR_001905, v. 4.0.2) using the prcomp() function of the stats package.",
+    "Conduct the hierarchical clustering using the hclust() function (R stats package) using Euclidean as a distance measure for row clustering.",
+    "Choose the best fit for the number of clusters derived from Hierarchical clustering based on the Silhouette method (Rousseeuw, 1987) and the Multiscale bootstrap resampling method (Suzuki and Shimodaira, 2006) (R package “pvclust”)."
+  ],
+  "authors": [
+    "Nikoleta Vavouraki",
+    "James E. Tomkins",
+    "Eleanna Kara",
+    "Henry Houlden",
+    "John Hardy",
+    "Marcus J. Tindall",
+    "Patrick A. Lewis",
+    "Claudia Manzoni"
+  ],
+  "creator": "c.manzoni",
+  "published_on": 1623331302,
+  "created_on": 1620699163,
+  "keywords": []
+}

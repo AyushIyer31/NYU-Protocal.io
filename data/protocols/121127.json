@@ -1,0 +1,36 @@
+{
+  "id": 121127,
+  "title": "Counting marine microbes with Guava Easy-Cyte 96 well plate reading flow cytometer",
+  "uri": "counting-marine-microbes-with-guava-easy-cyte-96-w-d2if8cbn",
+  "doi": "dx.doi.org/10.1038/nprot.2008.29",
+  "description": "{\"blocks\":[{\"key\":\"r7go7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"uja4w\",\"text\":\"The Guava Easy-Cyte flow cytometer accepts 96 well plates containing stained cells in liquid media and reports the cells/ml for each well in Excel format (csv file). Marine microbes stained with SYBR-Grn I in natural seawater can be counted within approximately 5% error at densities of 1.0E4 to 5.5E5 cells per ml. With exceptional care, cell cultures can be reliably detected but not accurately counted down to 2E3 cells per ml. At densities above 5.5E5, cells must be diluted for accurate counting. There are a few critical adaptations to the manufacturer's operating instructions that must be made relating to use of seawater media for extremely small SAR11 cells. Neutral pH detergent must be used for cleaning or salts will precipitate and foul the fluid pump of the cytometer. Stain concentration must be higher than recommended and made fresh daily, voltage must be higher than recommended, and rinse tubes must be changed daily. Also, freeze/thaw cycles of SYBR-Grn I stock should be kept to a minimum, so it is wise to aloquot stocks upon purchase and receipt.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"ctnma\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"ni1pc\",\"text\":\"SYBR-Grn I Nucleic Acid Stain\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qqyfy\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"p9yti\",\"text\":\"TE Buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9k8f1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qydlv\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"wolll\",\"text\":\"Guava Easy-Cyte Plate Reading Flow Cytometer\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ptejo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"le3wk\",\"text\":\"Approved 96-well microtiter plate\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vaga4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ojirx\",\"text\":\"Repeating pipette\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qluif\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"304hx\",\"text\":\"Sterile hood\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare SYBR-Grn I stain by completely thawing an aliquot of stock and diluting 1:20 with clean TE buffer.",
+    "Transfer 198 microliters of cells from culturing containers into a manufacturer-approved 96-well microtiter plate in a sterile hood.",
+    "Pipette 2 microliters of 1:20 SYBR-Grn I diluted stock into each well of the microtiter plate.",
+    "Cover the microtiter plate and let stain for 60 min. in the dark.",
+    "Make a worklist for acquiring data on the Guava, as described by the manufacturer.",
+    "Start the worklist and load the microtiter plate into the Guava, taking care that the plate is properly located in the tray.",
+    "Adjust settings on the green channel to 716 volts with a threshold of 8-10 and gating from just over 10 to just over 100.",
+    "Acquire data, consult log, and review the results.",
+    "Regate or dilute and recount any wells that were too concentrated, improperly stained, or dirty.",
+    "Transfer csv file from run to jump drive and copy to PC.",
+    "Step 1. Insufficient stain will require long stain times; excess stain will result in too much noise. Step 2. A non-approved microtiter plate will cause broken flow cell tips at over $100. Step 3. Stain that has been thawed more than 5-7 times will give poor results. Step 4. Insufficient stain time will result in insufficient signal. Step 5. Don&#39;t forget to put in the dilution factor for a well if the cells were diluted, or the reported cell density will be off by the dilution factor. Step 6. If the microtiter plate is improperly located, the flow cell tip will break. Step 7. If signal cannot be separated from noise, cleanliness, stain time, voltage, and thresholds must all be double-checked and compensated for.",
+    "2 hours",
+    "Step 7 is critical. All aspects of the procedure come together here. Properly stained cells can only be accurately counted with the correct settings in a clean machine.",
+    "See Figure 1.",
+    "SAR11 marine bacteria require exogenous reduced sulphur for growth by H. James Tripp, Joshua B. Kitner, Michael S. Schwalbach, John W. H. Dacey, Larry J. Wilhelm &amp; Stephen J. Giovannoni published in Nature on 31 Jan, 2008 https://dx.doi.org/10.1038/nature06776",
+    "Figure 1. Histogram with gating and threshold set properly for properly stained cells in a clean machine. The large red peak repesents the green light signal from cells. The pink line segment flanking the peak is the gating band for cells. A small amount of background noise appears to the left of the red peak. The vertical dotted line represents the location of the threshold"
+  ],
+  "authors": [
+    "H. James Tripp"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1205832578,
+  "created_on": 1205832578,
+  "keywords": []
+}

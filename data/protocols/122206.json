@@ -1,0 +1,38 @@
+{
+  "id": 122206,
+  "title": "Isotopic tracing with carbon-13 in primary hepatocytes\n",
+  "uri": "isotopic-tracing-with-carbon-13-in-primary-hepatoc-d3j68kre",
+  "doi": "dx.doi.org/10.21203/rs.2.11917/v1",
+  "description": "{\"blocks\":[{\"key\":\"remok\",\"text\":\"Isotopic labeling is commonly applied for investigating intracellular metabolism. The general workflow is to first introduce isotopically-labeled metabolites into the culture medium, then at defined time points wash and harvest cells, process samples for metabolomics analysis, and analyze the samples for isotopic enrichment in specified metabolite pools. Here we apply this technique to primary hepatocytes from mice. We introduce either 13C5 glutamine or 13C6 glucose at the typical media concentrations, 1:1 replacing the 12C version with 13C version. Cells are harvested at 0 and 30 min after isotope introduction, metabolites are extracted and then analyzed by GC-MS and LC-MS. The resulting data are used to compare relative 13C isotopic labeling in metabolites between different genetic mutants. This strategy is not suitable for directly quantifying metabolic flux (i.e., Metabolic flux analysis), but is useful for describing relative metabolic flux between two models. The expected time to complete is ~3-5 days. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"xi73w\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Plate primary hepatocytes at 900,000 cells per 35 mm collagen-coated plate. There should be one plate of cells per experimental group (e.g., 0 min vs. 30 min, 13 C-glucose vs. 13 C-glutamine, wild type cells vs. knockout cell line).",
+    "2 hr prior to isotope labeling, change media to experimental pre-media (10% FBS, 1% penicillin/streptomycin/glutamine in Delbecco’s Modified Eagle Medium (DMEM). Note, this step is to equilibrate the cells to the same nutrient conditions that they will experience during the labeling step (i.e. fresh media concentrations, vs. spent media concentrations). Thus, when the label is added, the cells will be in a similar state to what they were before isotope additions.",
+    "At start of isotope incubation, change media to media containing either 13 C glucose or 13 C glutamine, with same final concentrations of metabolites as the pre-media.",
+    "At end of isotopic incubation period (0 min or 30 min), remove media by suction and add liquid nitrogen to plate to snap-freeze. Store plates at -80 o C until metabolite extraction.",
+    "For metabolite extraction: Prepare extraction solvent (7:2:1 Methanol:Water:Chorlorform, MS-grade reagents) and chill on ice.",
+    "Add 500 uL for extraction solvent to a cell plate, on ice, scrape with a cell scraper to lyse cells.",
+    "Transfer extract to clean 1.5 mL microcentrifuge tube and keep on ice for 5 min",
+    "Centrifuge extracts at 10,000 x g for 10 min at 4 o C to precipitate protein.",
+    "Transfer 150 uL of extract to autosampler vial with glass insert for downstream GC-MS analysis, and transfer 100 uL of extract to an autosampler vial with glass insert for downstream LC-MS analysis.",
+    "Dry extracts by vacuum centrifugation (~1 hr).",
+    "For GC-MS analysis, add 25 uL of 20 mg/mL methoxyamine hydrochloride in pyridine was added to dried extract and incubated at 20C for 90 min.",
+    "Next add 25 uL of MSTFA and incubate for 30 min at 37 o C.",
+    "Cool samples to room temperature and inject on GC-Orbitrap with the following settings: 1 µL of sample, split 1:10, was injected onto a TraceGOLD TG-5SilMS GC column (cat. no. 26096-1420, Thermo Scientific). Hold temperature at 50 o C for 1 min, then ramp to 320 o C at a rate of 11 o C/min, then hold at 320 o C for 4.40 min. Collect spectra by positive electron-impact (EI)-Orbitrap with full scan of 50-650 m/z range.",
+    "For acyl-carnitine analysis, add 50 µL of solvent containing 98% Mobile Phase A (5 mM Ammonium acetate, pH 6.8) and 2% Mobile phase B (5 mM Ammonium acetate, 95% acetonitrile, pH 6.8).",
+    "Analyze sample by LC-MS with the following parameters: inject 10 uL onto Water’s Acquity UPLC CSH C18 Column (2.1 mm x 100 mm) with a 5 mm VanGuard Pre-Column and use 14 min gradient: 2% B for 1 min (0.4 mL/min), increase to 95% B over next 7 min (0.4 mL/min), hold at 95% B for 2 min, decrease to 2%B over next 1 min, then equilibrate at 2% B for 3 min. Collect MS spectra with positive ion mode electrospray ionization (ESI) with full scan MS1 (150-1000 Th) collected at 17,000 resolving power (at 400 m/z) for 0-14 min and top-2 data dependent MS2 scans with stepped normalized collision energy (20-40%).",
+    "For data analysis, quantify metabolites and their isotopic distributes with Thermo’s Tracefinder application.",
+    "Acetyl-CoA flux regulates the proteome and acetyl-proteome to maintain intracellular metabolic crosstalk by Inca A. Dieterich, Alexis J. Lawton, Yajing Peng, Qing Yu, Timothy W. Rhoads, Katherine A. Overmyer, Yusi Cui, Eric A. Armstrong, Porsha R. Howell, Maggie S. Burhans, Lingjun Li, John M. Denu, Joshua J. Coon, Rozalyn M. Anderson, Luigi Puglielli published in Nature Communications on 02 Sep, 2019 https://dx.doi.org/10.1038/s41467-019-11945-9",
+    "Protocol_table1.Docx"
+  ],
+  "authors": [
+    "Katherine A Overmyer"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1574255422,
+  "created_on": 1574255422,
+  "keywords": []
+}

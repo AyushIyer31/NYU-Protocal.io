@@ -1,0 +1,34 @@
+{
+  "id": 91848,
+  "title": "Immunofluorescence of ATP13A2 and CD63",
+  "uri": "immunofluorescence-of-atp13a2-and-cd63-c5xgy7jw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6xy3klqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"b67on\",\"text\":\"This protocol describes the seeding, fixation and staining of samples for immunofluorescent visualization of ATP13A2 and CD63. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"2uclh\",\"text\":\"4% paraformaldehyde (Thermo Fisher Scientific): J61899\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qfvs\",\"text\":\"BSA (Roth): 8076.4\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fglsd\",\"text\":\"Saponin (Sigma): S-2149\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"blqv7\",\"text\":\"anti-ATP13A2 (Sigma): A3361\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"81sfk\",\"text\":\"anti-CD63 (ExBio): 11-343-C100\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4q7re\",\"text\":\"alexa-488 goat anti-rabbit IgG (Invitrogen): R37116\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cjj43\",\"text\":\"alexa-594 goat anti-mouse IgG (Invitrogen): A11005\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e58n8\",\"text\":\"DAPI (Sigma): D9542\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8nm4\",\"text\":\"FluorSave (Merck): 345789-20ml\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Seed cells: 75 000 cells/well (SH-SY5Y) in a 12-well plate with coverslips. Allow the cells to attach and grow for 48:00:00 .",
+    "Wash the cells with ice-cold PBS.",
+    "Wash the cells twice with ice-cold PBS.",
+    "Permeabilization and blocking with a mixture of 5% BSA (Roth) and 0.5% saponin (Sigma) (diluted in PBS) (referred to as blocking buffer) for 01:00:00 on a shaker.",
+    "Incubate with primary antibody (anti-ATP13A2, A3361, Sigma; anti-CD63, 11-343-C100, ExBio) (diluted 1/200 in blocking buffer) for 02:00:00 (40 µl antibody mixture is sufficient per coverslip in a wet chamber).",
+    "Incubate the samples in secondary antibody (alexa-488 goat anti-rabbit IgG R37116, Invitrogen; alexa-594 goat anti-mouse IgG, A11005, Invitrogen) (diluted 1/1000 in blocking buffer) for 00:30:00 on a shaker.",
+    "Incubate the samples in 200 ng/ml DAPI (D9542, Sigma) for 00:15:00 .",
+    "Mount the samples with FluorSave (345789-20ml, Merck).",
+    "Fix the cells with 4% paraformaldehyde 00:30:00 at 37 °C.",
+    "Wash with DPBS for 00:05:00 on a shaker, repeat this step 3x.",
+    "Wash with DPBS for 00:05:00 on a shaker, repeat this step 3x.",
+    "Wash with DPBS for 00:05:00 on a shaker, repeat this step 3x.",
+    "Acquire images using a LSM880 microscope (Zeiss) with a 63x objective and Airyscan detector."
+  ],
+  "authors": [
+    "Stephanie Vrijsen",
+    "Peter Vangheluwe"
+  ],
+  "creator": "Stephanie Vrijsen",
+  "published_on": 1720510412,
+  "created_on": 1701795091,
+  "keywords": []
+}

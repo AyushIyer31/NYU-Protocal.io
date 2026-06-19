@@ -1,0 +1,34 @@
+{
+  "id": 228168,
+  "title": "Cell Cycle Analysis by Flow Cytometry",
+  "uri": "cell-cycle-analysis-by-flow-cytometry-ha3gb2gjx",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg3176el25/v1",
+  "description": "{\"blocks\":[{\"key\":\"9d73b\",\"text\":\"Cell Cycle Analysis by Flow Cytometry\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Dissociate iPSC-derived cells using Accutase and resuspend cells in PBS.",
+    "Stain cells with Hoechst 33342 at 2.5 µg/mL for 30 minutes at 37°C.",
+    "Wash cells with PBS",
+    "Incubate cells with Zombie NIR viability dye at 1:1000 dilution in PBS to exclude dead cells",
+    "Wash cells with PBS.",
+    "Resuspend cells in PBS containing 2% fetal bovine serum (FBS).",
+    "Transfer cells into 5 mL round-bottom tubes for acquisition",
+    "Perform flow cytometry on a Sony ID7000‱ spectral cell analyzer (Sony Biotechnology, USA) at a maximum event rate of 200 events per second.",
+    "Analyze acquired data using the cell cycle analysis module in FlowJo‱ software (BD Biosciences).",
+    "Apply the Watson (Pragmatic) model for cell cycle quantification.",
+    "Distinguish G1, S, and G2/M phases based on Hoechst signal intensity (G1 in red, S in light gray, G2/M in blue).",
+    "Visualize model fitting by overlaying the model sum (dark gray) and actual signal distribution (black line).",
+    "Constrain parameters by setting Peak 1 to &#34;n&#34; and constraining Peak 2 to match the coefficient of variation (CV) of the G1 peak.",
+    "Select the final model based on achieving a low root mean square deviation (RMSD) value."
+  ],
+  "authors": [
+    "Maria Jose Perez J."
+  ],
+  "creator": "Federico Bertoli",
+  "published_on": 1759150120,
+  "created_on": 1758810994,
+  "keywords": []
+}

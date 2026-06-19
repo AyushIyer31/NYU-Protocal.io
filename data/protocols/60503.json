@@ -1,0 +1,35 @@
+{
+  "id": 60503,
+  "title": "FQ-LAMP Assay for Detection of CoV2 in Clinical Nasal Swabs",
+  "uri": "fq-lamp-assay-for-detection-of-cov2-in-clinical-na-b7bxripn",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn74bpv5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"5mu35\",\"text\":\"COVID-19 is a public health challenge requiring rapid testing for detecting infections and transmission. Nucleic acid amplification tests (NAAT) targeting SARS-CoV-2 (CoV2) are used to detect CoV2 in clinical samples.Real-time reverse transcription-quantitative PCR (RT-qPCR) is the standard NAAT for CoV2, although Reverse Transcription Loop-mediated isothermal amplification (RT-LAMP) is used in diagnostics. We show a sequence-specific RT-LAMP-based NAAT assay that is finished within 30 min using minimally processed clinical nasal swab samples and describe a fluorescent-quenched RT-LAMP assay (FQ-LAMP) using labeled primers and a quencher oligo. This assay can achieve rapid (30 min) and sensitive (1000 PFU/ml) fluorescent detection of CoV2 (WA1/2020), B.1.1.7 (Alpha), and variants of concern Delta (B.1.617.2) and Omicron (B.1.1.529) in nasal samples.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"1lb1k\",\"text\":\"1.  WarmStart LAMP Kit (DNA \\u0026 RNA)   New England Biolabs (E1700)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fs7ng\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2de3u\",\"text\":\" 2.  Oligo Primers and detection from IDT\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2k12g\",\"text\":\"     COVID-F3      TGGCTACTACCGAAGAGCT        COVID-B3      TGCAGCATTGTTAGCAGGAT        COVID-LoopF      GCCATTTTACTTTCTAGAGTCAGGT        COVID-FLB      [6FAM]ACTGAGGGAGCCTTGAATAC        COVID-FIP   (F1c)      GACGAATTCGTGGTGGTGA        COVID-FIP   (F2)      TCTGGCCCAGTTCCTAGGTAGT        COVID-BIP   (B1c)      CGGGTGCCAATGTGATCT        COVID-BIP   (B2)      AGACGGCATCATATGGGTTGCA        COVID-QLB      GCTCCCTCAGT[IBHQ]   \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":425}],\"data\":{}},{\"key\":\"5afcl\",\"text\":\" 3.  Molecular grade deionized water\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"euv90\",\"text\":\" 4.  Proteinase K Molecular Grade  New England Biolabs  (P8107S)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aa3k2\",\"text\":\" 5. Guanidine-HCL   Sigma \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bc71r\",\"text\":\" 6. EDTA  Sigma\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bgi2a\",\"text\":\" 7. Triton X-100 detergent  Sigma\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7svng\",\"text\":\" 8. Tris-HCL pH 7.5  Sigma\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"MUTABLE\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"1_0\":\"\",\"1_1\":\"\",\"2_0\":\"\",\"2_1\":\"\",\"3_0\":\"\",\"3_1\":\"\",\"4_0\":\"\",\"4_1\":\"\",\"5_0\":\"\",\"5_1\":\"\",\"6_0\":\"\",\"6_1\":\"\",\"7_0\":\"\",\"7_1\":\"\",\"8_0\":\"\",\"8_1\":\"\"},\"colTitles\":[],\"colWidths\":[131,171],\"data\":[[\"  COVID-F3  \",\"  TGGCTACTACCGAAGAGCT  \"],[\"  COVID-B3  \",\"  TGCAGCATTGTTAGCAGGAT  \"],[\"  COVID-LoopF  \",\"  GCCATTTTACTTTCTAGAGTCAGGT  \"],[\"  COVID-FLB  \",\"  \\u003cb style=\\\"mso-bidi-font-weight:normal\\\"\\u003e[6FAM]\\u003c/b\\u003eACTGAGGGAGCCTTGAATAC  \"],[\"  COVID-FIP\\n  (F1c)  \",\"  GACGAATTCGTGGTGGTGA  \"],[\"  COVID-FIP\\n  (F2)  \",\"  TCTGGCCCAGTTCCTAGGTAGT  \"],[\"  COVID-BIP\\n  (B1c)  \",\"  CGGGTGCCAATGTGATCT  \"],[\"  COVID-BIP\\n  (B2)  \",\"  AGACGGCATCATATGGGTTGCA  \"],[\"  COVID-QLB  \",\"  GCTCCCTCAGT\\u003cb style=\\\"mso-bidi-font-weight:normal\\\"\\u003e[IBHQ]\\u003c/b\\u003e  \"]],\"guid\":\"7710FDBDB74F11EC94F60A58A9FEAC02\",\"isJexcelDataFormat\":true,\"legend\":{\"blocks\":[{\"data\":{},\"depth\":0,\"entityRanges\":[],\"inlineStyleRanges\":[],\"key\":\"4v1ai\",\"text\":\"Primers 5' - 3' from IDT\",\"type\":\"unstyled\"}],\"entityMap\":{}},\"mergeCells\":[],\"printData\":[[\"  COVID-F3  \",\"  TGGCTACTACCGAAGAGCT  \"],[\"  COVID-B3  \",\"  TGCAGCATTGTTAGCAGGAT  \"],[\"  COVID-LoopF  \",\"  GCCATTTTACTTTCTAGAGTCAGGT  \"],[\"  COVID-FLB  \",\"  \\u003cb style=\\\"mso-bidi-font-weight:normal\\\"\\u003e[6FAM]\\u003c/b\\u003eACTGAGGGAGCCTTGAATAC  \"],[\"  COVID-FIP\\n  (F1c)  \",\"  GACGAATTCGTGGTGGTGA  \"],[\"  COVID-FIP\\n  (F2)  \",\"  TCTGGCCCAGTTCCTAGGTAGT  \"],[\"  COVID-BIP\\n  (B1c)  \",\"  CGGGTGCCAATGTGATCT  \"],[\"  COVID-BIP\\n  (B2)  \",\"  AGACGGCATCATATGGGTTGCA  \"],[\"  COVID-QLB  \",\"  GCTCCCTCAGT\\u003cb style=\\\"mso-bidi-font-weight:normal\\\"\\u003e[IBHQ]\\u003c/b\\u003e  \"]],\"rowHeights\":[]}}}}",
+  "steps": [
+    "mix 20ul of clinical swab material with 20 ul of SPS buffer containing Proteinase K.",
+    "Incubate at 37C for 15 minutes, then 95C for 5 minutes",
+    "Sample is ready to use in FQ-LAMP at 2ul / 25ul reaction",
+    "Determine the number of 25ul FQ-LAMP reactions needed and add 10%",
+    "Mix the following in clean tube per 25ul FQ-LAMP reaction",
+    "2X WarmStart LAMP reagent 12.5ul 10X Detection Oligo/Primer Mix 2.5ul deionized water 8ul",
+    "Dispense 23ul of FQ-LAMP master mix to each required wells of a 96 well PCR plate",
+    "Add 2ul of prepared sample in SPS buffer per assay",
+    "Centrifuge the plate to settle all contents and seal the plate with appropriate cover material.",
+    "Set up the real time machine to measure fluorescence in the FAM channel.",
+    "Set up the real time machine amplification program: HOLD 65C / 30 minutes HOLD 25C / 30 seconds measure fluorescence",
+    "Record results"
+  ],
+  "authors": [
+    "Les Jones",
+    "Hemant K. Naikare",
+    "Yung-Yi C. Mosley",
+    "and Ralph A. Tripp"
+  ],
+  "creator": "Les Les Jones",
+  "published_on": 1649432492,
+  "created_on": 1649429404,
+  "keywords": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": 97061,
+  "title": "Correlated light-electron microscopy (CLEM) and cryo-focused ion beam (FIB) milling",
+  "uri": "correlated-light-electron-microscopy-clem-and-cryo-da2d2ga6",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gpzexjlzp/v1",
+  "description": "{\"blocks\":[{\"key\":\"fb391\",\"text\":\"Aggregation of proteins containing expanded polyglutamine (polyQ) repeats is the cytopathologic hallmark of a group of dominantly inherited neurodegenerative diseases, including Huntington's disease (HD). Huntingtin (Htt), the disease protein of HD, forms amyloid-like fibrils by liquid-to-solid phase transition. Macroautophagy has been proposed to clear polyQ aggregates, but the efficiency of aggrephagy is limited. Here, we used cryo-electron tomography to visualize the interactions of autophagosomes with polyQ aggregates in cultured cells in situ. We found that an amorphous aggregate phase exists next to the radially organized polyQ fibrils. Autophagosomes preferentially engulfed this amorphous material, mediated by interactions between the autophagy receptor p62/SQSTM1 and the non-fibrillar aggregate surface. In contrast, amyloid fibrils excluded p62 and evaded clearance, resulting in trapping of autophagic structures. These results suggest that the limited efficiency of autophagy in clearing polyQ aggregates is due to the inability of autophagosomes to interact productively with the non-deformable, fibrillar disease aggregates.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":546,\"length\":7}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Vitrified sample on autogrids were loaded onto a cryo-confocal LM set up (Leica SP8) equipped with a 50X/0.9 NA objective (Leica Objective), metal halide light source (EL6000), air-cooled detector (DFC900GT), a cryo-stage (-195 °C), and two HyD detectors.",
+    "The sample was kept in liquid nitrogen vapor, following a similar workflow. Avoid keeping sample in instrument for extended time due to high ice contamination. Best to finish a grid within 30 minutes.",
+    "Cryo-confocal z-stacks (step size 500 nm, x-y pixel size 85 nm) were taken with pin hole = 1,and a 9 μm depth with the LAS X Navigator software, using 488 and 552 nm laser excitation for GFP and RFP tagged proteins, respectively, also picking up signals from the auto-fluorescent Dynabeads. Depending on target size, the depth and increment of the scan could be changed for optimization.",
+    "To improve signal clarity, image stacks were de-convoluted and restored with Huygens Essential software (Scientific Volume Imaging) to remove noise.",
+    "The stack was then imported into the 3Dcorrelation software (Arnold et al., 2016) and re-sliced into cubic voxels.",
+    "For preparing the lamella (150-250 nm), autogrids were mounted into a Quanta dual-beam 3DFIB/scanning electron microscope (Thermo) equipped with a transfer shuttle system (PP3000T, Quorum) at &lt; −180 °C throughout milling.",
+    "To protect the milling front of the lamella, gaseous organometallic platinum was sprayed ontothe sample on the cryo-stage using a gas injection system. The duration of the gas spray varies between instruments.",
+    "To target the cell for milling, the grid square was correlated with the cryo-confocal fluorescencez-stack using the 3Dcorrelation software. The target was imaged and correlated iteratively with the z-stack throughout milling for accuracy. One can check for accuracy by correlating the SEM image with the fluorescence image if the fluorescent target is large.",
+    "The 12-15 μm wide lamellas were generated using a Gallium FIB at 30 kV with a 20° stage angle in threeconsecutive steps. The more distant region (&gt;2 μm) above and below the target was rough milled with a higher current of 500 pA, followed by fine milling to a ~800 nm lamella using a current of 100 pA.",
+    "A final polishing of the lamella to thickness of 150-250 nm was carried out with a 30-50 pA current. Lamella final thickness was estimated with SEM at 3 keV, for a lack of overcharging."
+  ],
+  "authors": [
+    "Dorothy zhao"
+  ],
+  "creator": "Dorothy zhao",
+  "published_on": 1711029557,
+  "created_on": 1711024069,
+  "keywords": []
+}

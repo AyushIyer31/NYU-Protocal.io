@@ -1,0 +1,30 @@
+{
+  "id": 106,
+  "title": "Immunoprecipitation / coimmunoiprecipitation (IP / Co-IP) {biochemistry}",
+  "uri": "Immunoprecipitation-coimmunoiprecipitation-IP-Co-I-b88sud",
+  "doi": "dx.doi.org/10.17504/protocols.io.ccisud",
+  "description": "{\"blocks\":[{\"key\":\"5flrd\",\"text\":\"For purifying proteins from mammalian cells for analysis by western blot.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"39l52\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"1iujr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"e8h2f\",\"text\":\"numbers of cells and amounts of reagents are approximate - must be determined empirically based on cell type, protein abundance, strength of antibody etc\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Plate cells in fresh media. For adherent cells, allow to settle. Cell numbers usually between 10^6 and 10^7 per condition.",
+    "Treat cells based on experimental conditions.",
+    "*All future steps should be done in a cold room (4 deg C) or on ice* Wash cells with cold PBS.",
+    "Lyse cells in at least 150uL lysis buffer. Use cell scraper for adherent cells. Typical lysis buffer for IP: - 150mM NaCl - 50mM Tris pH 7.4 - 10% glycerol - 1% Triton-X 100 Add protease inhibitors fresh each time. Salt and detergent concentrations can be adjusted depending on strength of antibody and protein interactions. Higher salt is more stringent. For co-IP, 0.1% triton or 1% NP-40 can be used (NP-40 is a more mild detergent than triton)",
+    "Spin lysates @ max in microfuge for 15 min to pellet cell debris 00:15:00",
+    "Transfer cleared lysates to new tubes. Set aside at least 10uL as &#34;input&#34; sample for later analysis. Store inputs @ -20 dec C.",
+    "Add IP antibody to cleared lysates (~ 0.1 - 1ug / sample). Incubate w/end-over-end rotation over night @ 4 deg C 16:00:00",
+    "Equilibrate protein G-agarose beads by washing 2x with lysis buffer. Bring up to 50/50 slurry with lysis buffer (eg. if you have 200uL of packed beads, add 200uL of lysis buffer for 400uL of slurry) *Notes:* - Spin in microfuge @ 1000 rpm for 30 sec to pellet beads (do not spin @ max or you may crush the beads). - When pipetting beads, cut the end of the tip to increase size and allow easier pipetting.",
+    "Add 40uL bead slurry to each IP. Incubate in the cold w/rotation for 1 hour undetermined 01:00:00",
+    "Spin down IPs @ 1000rpm for 30 sec. Set aside supernatant for analysis (this is the &#34;flow through&#34; sample). Protein(s) of interest should now be bound to beads.",
+    "Wash beads 3x with lysis buffer.",
+    "Add 40uL of 2x Laemmli SDS sample buffer to each sample. After sample buffer is added, IPs may be frozen Boil sample 5min before running on western blot, but do not boil then freeze. undetermined"
+  ],
+  "authors": [],
+  "creator": "Kevin Bonham",
+  "published_on": 1398612227,
+  "created_on": 1398612227,
+  "keywords": []
+}

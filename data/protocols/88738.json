@@ -1,0 +1,31 @@
+{
+  "id": 88738,
+  "title": "m6A visualization/immunofluorescence of DamID",
+  "uri": "m6a-visualization-immunofluorescence-of-damid-c2wayfae",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvwdz6zlmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"5mbut\",\"text\":\"Used for visualizing Dam activity by immunofluorescence in mammalian cells. This protocol stains N-6 methyladenosine (m6A) modified DNA by immunofluorescence while preserving other epitopes, avoiding harsh denaturation steps like heat or chemical treatments.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"4m2ch\",\"text\":\"100% MeOH\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fddu5\",\"text\":\"PBS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"18nk4\",\"text\":\"BSA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"63t5i\",\"text\":\"TritonX-100\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4chtk\",\"text\":\"Sodium azide\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5tmq0\",\"text\":\"DpnI (NEB #r0176)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"12jge\",\"text\":\"CutSmart buffer (NEB #b7204)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"33bk\",\"text\":\"Rabbit anti-m6A (Synaptic #202 003)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5rg5g\",\"text\":\"Secondary antibody\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Fix cells in 100% MeOH for 10 min at -20 °C",
+    "Block, and RNase treat in 2 ug/mL RNase A in blocking buffer (3% BSA, 0.04% TritonX-100, 0.02% sodium azide in PBS) at 37 °C for 30 min",
+    "Wash cells 2x in PBS for 5 min at room temperature",
+    "Digest in 50 U/mL DpnI (NEB #r0176) in 1x CutSmart buffer for 30 min at 37 °C",
+    "Permeabilize cells in 2% TritonX-100 in PBS for 10 min at room temperature",
+    "Wash 3x in PBS for 5 min at room temperature",
+    "Incubate cells in rabbit-anti-m6A (Synaptic, #202 003) diluted 1:500 in PBS for 30 min at room temperature in a humidified chamber",
+    "Wash 3x in PBS for 5 min at room temperature",
+    "Incubate cells in anti-rabbit, AlexaFluor conjugated antibody in blocking buffer, diluted according to manufacturer&#39;s suggestion, for 30 min at room temperature in a humidified chamber in the dark",
+    "Proceed with further immunofluorescence steps and/or DNA staining and mount cells"
+  ],
+  "authors": [
+    "Lucian Dipeso",
+    "Emily Hatch"
+  ],
+  "creator": "Lucian Dipeso",
+  "published_on": 1696366145,
+  "created_on": 1696354016,
+  "keywords": []
+}

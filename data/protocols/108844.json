@@ -1,0 +1,39 @@
+{
+  "id": 108844,
+  "title": "Immunofluorescence of endolysosomal markers in human iNeurons ",
+  "uri": "immunofluorescence-of-endolysosomal-markers-in-hum-dnik5ccw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg32zrpv25/v1",
+  "description": "{\"blocks\":[{\"key\":\"36paa\",\"text\":\"Human induced cortical-like neurons (iNeurons) with endogenously tagged 3xFLAG-EEA1 and TMEM192-3xHA can be used to isolate endosomes and lysosomes, using Endo-IP and Lyso-IP, respectively.  Here, we present an immunofluorescence protocol to assess the extent of colocalization between tagged and untagged EEA1 and TMEM192 and markers of the endolysosomal system in iNeurons.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d0jt1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Coat 24W glass-bottomed dishes with Matrigel.",
+    "Seed iNeurons on desired day of differentiation onto Matrigel-coated glass-bottomed dishes.",
+    "Pre-warm 8% paraformaldehyde (PFA) (dilute 16% PFA stock to 8% with PBS) and pre-warm PBS.",
+    "Fix iNeurons by adding a volume of 8% PFA equal to the volume of media in the well such that the final concentration of PFA is 4%. Incubate at 37 °C for 00:20:00 .",
+    "Permabilize cells by adding 0.5% Triton X-100 in PBS at Room temperature for 00:20:00 to 00:30:00 .",
+    "Block cells with blocking solution (3% BSA and 0.1% Triton X-100 in PBS) at Room temperature for 01:00:00 .",
+    "Gently remove fixation solution, and dispose of hazardous waste appropriately. Wash cells once with pre-warmed PBS, and likewise dispose of this hazardous waste wash solution appropriately.",
+    "Gently remove blocking solution and add appropriate primary antibody solution (primary antibody at 1:100-1:200, depending on the antibody in blocking solution). Incubate in primary antibody solution at 4 °C for 12:00:00 to 16:00:00 .",
+    "Gently remove primary antibody solution, and gently wash three times with washing solution (0.02% Tween-20 in PBS), where each wash is at Room temperature for 00:05:00 .",
+    "Incubate in secondary antibody solution (Alexa Fluor-conjugated secondary antibodies at 1:400 in blocking solution) at Room temperature for 01:00:00 .",
+    "Gently remove secondary antibody solution and wash once with washing solution.",
+    "Stain nuclei with DAPI solution (1ug/mL final concentration DAPI in PBS) at Room temperature for 00:10:00 .",
+    "Gently removed DAPI solution and gently wash three times with washing solution, where each wash is at Room temperature for 00:05:00 .",
+    "After final wash, store sample in PBS at 4 °C until micrsocopy analysis.",
+    "Image cells on a confocal microscope using a 100x oil objective.",
+    "Calculate Mander’s correlation coefficients between two channels with BIOP JACoP plugin in Fiji using the segmented images from the previous step and the Yen thresholding.",
+    "Use Fiji/ImageJ software to display z-series as maximum intensity projections, then segment images for neuronal soma using CellProfiler Image Analysis Software."
+  ],
+  "authors": [
+    "Frances V Hundley",
+    "Miguel A. Gonzalez-Lozano",
+    "Harper JW"
+  ],
+  "creator": "Frances V Hundley",
+  "published_on": 1728925997,
+  "created_on": 1727874975,
+  "keywords": []
+}

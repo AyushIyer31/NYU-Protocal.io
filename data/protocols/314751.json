@@ -1,0 +1,27 @@
+{
+  "id": 314751,
+  "title": "Flow Cytometry Protocol for Human PD-L1 (CD274) Detection Using Research-Grade Anti-PD-L1 Antibodies",
+  "uri": "flow-cytometry-protocol-for-human-pd-l1-cd274-dete-jxk7cpkzp",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn5owyg5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"a4cav\",\"text\":\"This protocol describes a standard surface staining procedure for detecting PD-L1 (CD274/B7-H1) expression on human cells by flow cytometry. PD-L1 is a key immune checkpoint molecule widely studied in immuno-oncology research. This protocol has been optimized for use with abinScience research-grade anti-human PD-L1 monoclonal antibodies and is applicable to cultured cell lines, PBMCs, and dissociated tumor samples.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"3s1du\",\"text\":\"The use of human PBMCs and tumor tissue samples in this protocol requires prior approval from the users' Institutional Ethics Board (IRB) or equivalent ethics committee. Researchers must ensure compliance with all applicable institutional and national regulations governing the use of human biological materials.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"bqpod\",\"text\":\"Prepare FACS buffer, viability dye, and Fc block reagent in advance. Ensure flow cytometer is calibrated with appropriate compensation controls before acquisition.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"9fch8\",\"text\":\"Paraformaldehyde is toxic. Handle fixation buffer in a chemical fume hood and wear appropriate PPE. Sodium azide in FACS buffer is hazardous — do not dispose down the drain.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Cell Preparation 1. Harvest cells. For adherent cells, use Accutase to avoid cleaving surface antigens. For suspension cells, collect directly. 2. Wash once with PBS, centrifuge at 300 × g for 5 minutes. 3. Resuspend cells in FACS buffer (PBS + 2% FBS + 0.05% sodium azide) at 1 × 10⁷ cells/mL. 4. Aliquot 100 μL (1 × 10⁶ cells) per well into a 96-well V-bottom plate. Note: For tumor-derived samples, prepare a single-cell suspension using enzymatic digestion and filter through a 70 μm cell strainer before proceeding.",
+    "Viability Staining 1. Centrifuge plate at 300 × g for 5 minutes, discard supernatant. 2. Resuspend cells in 100 μL PBS containing viability dye (per manufacturer&#39;s instructions). 3. Incubate at room temperature for 15 minutes, protected from light. 4. Wash once with FACS buffer.",
+    "Fc Blocking 1. Resuspend cells in 50 μL FACS buffer containing Fc block (5 μL per test). 2. Incubate at room temperature for 10 minutes. 3. Do NOT wash. Proceed directly to antibody staining.",
+    "Primary Antibody Staining 1. Add anti-PD-L1 antibody to each well. Recommended starting concentration: 1-10 μg/mL. Titration is recommended for optimal signal-to-noise ratio. Recommended antibodies (abinScience):- Research Grade Atezolizumab (Cat# HV974016): https://www.abinscience.com/product/71/1388.html- Research Grade Durvalumab (Cat# HV974026): https://www.abinscience.com/product/71/1396.html- Research Grade Avelumab (Cat# HV974036): https://www.abinscience.com/product/71/2246.html 2. Include the following controls: unstained control, isotype control (matched host species and isotype), and FMO (Fluorescence Minus One) control. 3. Incubate on ice for 30 minutes, protected from light. 4. Wash twice with 200 μL FACS buffer, centrifuge at 300 × g for 5 minutes.",
+    "Secondary Antibody Staining (if unconjugated primary) 1. Resuspend cells in 100 μL FACS buffer containing fluorochrome-conjugated secondary antibody (e.g., AF488 anti-human IgG Fc) at the recommended dilution. 2. Incubate on ice for 20–30 minutes, protected from light. 3. Wash twice with 200 μL FACS buffer. Note: If using a directly conjugated primary antibody, skip this step.",
+    "Fixation and Acquisition 1. Resuspend cells in 200 μL fixation buffer (2% paraformaldehyde in PBS). 2. Incubate at room temperature for 15 minutes. 3. Wash once with FACS buffer and resuspend in 200 μL FACS buffer. 4. Acquire on flow cytometer within 24 hours. 5. Collect a minimum of 10,000 events in the live cell gate for analysis.",
+    "Data Analysis and Gating Strategy 1. FSC-A vs SSC-A: gate on intact cells (exclude debris). 2. FSC-A vs FSC-H: gate on singlets. 3. Viability dye vs FSC-A: gate on live cells. 4. PD-L1 fluorescence vs FSC-A: determine PD-L1-positive population. Report percent PD-L1-positive cells and Median Fluorescence Intensity (MFI) relative to isotype or FMO control."
+  ],
+  "authors": [
+    "QI Cheng"
+  ],
+  "creator": "abinScience cheng",
+  "published_on": 1775717133,
+  "created_on": 1775704543,
+  "keywords": []
+}

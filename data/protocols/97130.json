@@ -1,0 +1,24 @@
+{
+  "id": 97130,
+  "title": "Data-Independent Acquisition (DIA) Data Processing using Spectronaut/directDIA (Biognosys): Whole Proteome Analysis of Human Whole Lung Tissue",
+  "uri": "data-independent-acquisition-dia-data-processing-u-da4i2gue",
+  "doi": "dx.doi.org/10.17504/protocols.io.261ge5p8og47/v1",
+  "description": "{\"blocks\":[{\"key\":\"cep0s\",\"text\":\"Proteolytic peptide measurement of Human whole lung tissue using Liquid Chromatography-Tandem Mass Spectrometry (LC-MS/MS) Acquisition by Data-Independent Acquisition (DIA) on an Orbitrap Eclipse Tribrid Mass Spectrometer for peptide/protein identification and quantification by processing DIA data using Spectronaut software.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"65v14\",\"text\":\"Spectronaut software (version 17.6.230428.55965; Biognosys)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Search the DIA data with Spectronaut using the spectral library-free directDIAalgorithm against a Human UniProt-SwissProt proteome database ( https://www.uniprot.org/proteomes ), applying the settings described in Table 1 . Table 1. Settings for the data-independent acquisition data processing with Spectronaut/directDIA"
+  ],
+  "authors": [
+    "Joanna Bons",
+    "J P Rose",
+    "M A Watson",
+    "B Schilling"
+  ],
+  "creator": "M A Watson",
+  "published_on": 1711127458,
+  "created_on": 1711087865,
+  "keywords": []
+}

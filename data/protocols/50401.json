@@ -1,0 +1,26 @@
+{
+  "id": 50401,
+  "title": "RT–PCR protocol for the detection ORF1 11288–11296 deletion (NSP6 106-108del) in SARS-CoV-2 genome",
+  "uri": "rt-pcr-protocol-for-the-detection-orf1-11288-11296-bvf9n3r6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bvf9n3r6",
+  "description": "{\"blocks\":[{\"key\":\"5lvos\",\"text\":\"ORF1 deletion is observed in some new SARS-CoV-2 lineages and is lineage defining for B.1.1.7 and P.1. Biological effect of this mutation is still unknown. Developed RT-PCR was tested on numerous samples of lineages B.1.1.7, B.1.351, P.1 (validated by sequencing) and samples without this mutation with no false-postive results.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c25k7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bdghf\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"aj7dv\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4jvus\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"image\",\"mutability\":\"\",\"data\":{\"guid\":\"62C6D48B341F11EE9D4302C0B41BC903\",\"height\":31,\"is_video\":false,\"legend\":\"{\\\"blocks\\\":null,\\\"entityMap\\\":null}\",\"mime\":\"image/png\",\"nestedSelector\":null,\"original_name\":\"orf1del oligos.png\",\"placeholder\":\"https://content.protocols.io/files/f2uybkgn7.jpg\",\"shadow\":false,\"source\":\"https://content.protocols.io/files/f2uwbkgn7.jpg\",\"webp_placeholder\":\"https://s3.amazonaws.com/protocols-files/files/f2uxbkgn7.webp\",\"webp_source\":\"https://content.protocols.io/files/f2uvbkgn7.webp\",\"width\":550}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Order oligonucleotides with following sequences: %s %s Name Sequence (5’ – 3’) ORF1-del-F GGTTGGATATGGTTGATACTAGTTTGAAG ORF1-del-R TGTCAAGACATTCATAAGTGTCCACA ORF1-del-P Cy5.5-ACTGTGTTATGTATGCATCAGCTGTAGTGTTACTAATCC-BHQ3 %s %s 2X RT-PCR Buffer 12.5 μl 25X RT-PCR Enzyme Mix 1 μl ORF1-del primers 600 nM each ORF1-del probe 400 nM RNA template 5 μl Nuclease-free water to 25 μl",
+    "Briefly vortex and centrifuge reagents before use. Prepare the PCR reaction mixture following the specifications below: %s %s 2X RT-PCR Buffer 12.5 μl 25X RT-PCR Enzyme Mix 1 μl ORF1-del primers 600 nM each ORF1-del probe 400 nM RNA template 5 μl Nuclease-free water to 25 μl Use SARS-CoV-2 positive samples as the template. In the case of screening of unknown samples use multiplex RT-PCR with some oligonucleotides for detection SARS-CoV-2 as a control reaction. This primer set for SARS-CoV-2 detection can be added to the test without decrease of sensitivity of the ORF1 deletion test: %s %s Name Sequence (5’ – 3’) 2-SARS-CoV-2-ORF-1-F AGAGCTATGAATTGCAGAC 2-SARS-CoV-2-ORF-1-R GGGAAATACAAAATTTGGACA 2-SARS-CoV-2-ORF-1-P FAM-AATTGGCAAAGAAATTTGACACCTTCA-BHQ-1 %s %s Name Sequence (5’ – 3’) 2-SARS-CoV-2-ORF-1-F AGAGCTATGAATTGCAGAC 2-SARS-CoV-2-ORF-1-R GGGAAATACAAAATTTGGACA 2-SARS-CoV-2-ORF-1-P FAM-AATTGGCAAAGAAATTTGACACCTTCA-BHQ-1",
+    "Perform the amplification in a general thermocycler with appropriate temperature profile: Read plate at the annealing and elongation step. Developed PCR was validated for Bio-Rad CFX96, but is believed to work well at any thermocycler.",
+    "Interprete the results: detection of fluorescence probe “ORF1-del-P” (Cy5 channel in our case) means presence of ORF deletion 11288–11296"
+  ],
+  "authors": [
+    "Nikita Yolshin",
+    "Artem Fadeev",
+    "Andrey Komissarov"
+  ],
+  "creator": "Nikita Yolshin",
+  "published_on": 1638272012,
+  "created_on": 1622573962,
+  "keywords": []
+}

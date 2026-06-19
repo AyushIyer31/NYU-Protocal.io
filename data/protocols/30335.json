@@ -1,0 +1,37 @@
+{
+  "id": 30335,
+  "title": "iPSC Differentiation",
+  "uri": "ipsc-differentiation-9u7h6zn",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"cd8bd\",\"text\":\"This protocol explains the iPSC differentiation of lines ND1014, N1, and ND27760 from Synthetic mRNAs Drive Highly Efficient iPS Cell Differentiation to Dopaminergic Neurons. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"e25ov\",\"text\":\"Obtain approval to work with human stem cells from an appropriate Institutional Review Board. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"f1ds1\",\"text\":\"Please refer to the Safety Data Sheets (SDS) for safety and environmental hazards. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"s7IiJ\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"xdpi0\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"bTAP0\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"kpQio\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"9dPGI\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":3,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":121020,\"guid\":\"419A731A341F11EE9D4302C0B41BC903\",\"name\":\"mTeSR™1 500 mL Kit\\r\",\"mol_weight\":0,\"sku\":\"5850\",\"url\":\"https://www.stemcell.com/products/mtesr1.html\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":82,\"name\":\"STEMCELL Technologies Inc.\",\"link\":\"http://www.stemcell.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":204164,\"guid\":\"41ACDD81341F11EE9D4302C0B41BC903\",\"name\":\"ACCUTASE™\",\"mol_weight\":0,\"sku\":\"07920\",\"url\":\"https://www.stemcell.com/products/accutase.html\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":82,\"name\":\"STEMCELL Technologies Inc.\",\"link\":\"http://www.stemcell.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":256554,\"guid\":\"4225F8CB341F11EE9D4302C0B41BC903\",\"name\":\"MTT (3-(4,5-Dimethylthiazol-2-yl)-2,5-Diphenyltetrazolium Bromide)\",\"mol_weight\":0,\"sku\":\"M6494\",\"url\":\"https://www.thermofisher.com/order/catalog/product/M6494\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}},\"3\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":347603,\"guid\":\"424BFC2F341F11EE9D4302C0B41BC903\",\"name\":\"Corning® Matrigel® Growth Factor Reduced (GFR) Basement Membrane Matrix\",\"mol_weight\":0,\"sku\":\"356231\",\"url\":\"https://www.corning.com/worldwide/en/products/life-sciences/keymatch/matrigel-356231.html\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":40,\"name\":\"Corning\",\"link\":\"https://www.corning.com/worldwide/en.html\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Plate iPSCs at a density of 1.5 × 10 5 cells per cm 2 in a 12‐well plate pre-coated with growth-factor-reduced Matrigel. Culture medium should be changed daily, and gradually shifted from mTeSR1 to N2 (Thermo Fisher Scientific) in 3 days. The medium also contains 100 nanogram per milliliter (ng/mL), SHH , 100 nanogram per milliliter (ng/mL), FGF8b , and 10 micromolar (µM), DAPT .",
+    "Transfect iPSCs with A-SA mRNA for 3 days, changing media daily.",
+    "Transfect iPSCs with N-SA mRNA for 1 day.",
+    "Dissociate cells using Accutase.",
+    "Cells can also be cryopreserved in medium containing 40% neurobasal medium with B27 supplement, 50% fetal bovine serum and 10% DMSO.",
+    "Change media after 48 hours to remove unattached cells followed by half change every 3–4 days during in vitro maturation.",
+    "Detect cell proliferation and death analysis using MTT and LDH kits, respectively.",
+    "Replate with neuron medium in poly‐d‐lysine/laminin‐coated plates at the density of 1 × 10 5 cells per cm 2 . Neuron medium contains: neurobasal medium with B27 supplement, 10 nanogram per milliliter (ng/mL), BDNF , 10 nanogram per milliliter (ng/mL), GDNF , 1 nanogram per milliliter (ng/mL), TGFβ‐3 , 0.1 millimolar (mM), cAMP , 0.2 millimolar (mM), ascorbic acid , and 10 micromolar (µM), DAPT ."
+  ],
+  "authors": [
+    "Yingchao Xue",
+    "Xiping Zhan",
+    "Shisheng Sun",
+    "Senthilkumar S. Karuppagounder",
+    "Shuli Xia",
+    "Valina L Dawson",
+    "Ted M Dawson",
+    "John Laterra",
+    "Jianmin Zhang",
+    "Mingyao Ying"
+  ],
+  "creator": "Anita Broellochs",
+  "published_on": 1600288167,
+  "created_on": 1574893711,
+  "keywords": []
+}

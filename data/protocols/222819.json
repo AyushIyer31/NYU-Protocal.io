@@ -1,0 +1,43 @@
+{
+  "id": 222819,
+  "title": "Ultrastructural analysis of cultured neurons using TEM",
+  "uri": "ultrastructural-analysis-of-cultured-neurons-using-g5ubby6sp",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l218k4g1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"2881g\",\"text\":\"This protocol describes the sample preparation, imaging and image quantification for transmission electron microscopy (TEM) of neuronal cultures. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"uyctf\",\"text\":\"- 2% FA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vjo8e\",\"text\":\"- 2% GA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ukfix\",\"text\":\"- 0.1 M NaCac buffer pH 7.4\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dmmv0\",\"text\":\"- Reduced 1% OsO4\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":16,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"urjb3\",\"text\":\"- 1.5% potassium ferrocyanide\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d7bt3\",\"text\":\"- Mq (Milli-Q water)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"yocg8\",\"text\":\"- 2% Uranyl Acetate (aq)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"iilmj\",\"text\":\"- EtOH (50%, 60%, 70%, 90%, 100%)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"p9hye\",\"text\":\"- EPON or LX112 resin\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ong0n\",\"text\":\"- Beem capsules\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"uz1a4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Fix neurons with 2% glutaraldehyde (Electron Microscopy Sciences, 16210) diluted in 0.1 M sodium cacodylate (Sigma-Aldrich, C0250) buffer pH 7.4, at room temperature for 20 min",
+    "Wash 2 x 3 min with 0.1 M sodium cacodylate buffer",
+    "Osmicate using 1% Osmium tetroxide (v/v, Electron Microscopy Sciences, 19100) reduced with 1.5% potassium ferrocyanide (v/v, Electron Microscopy Sciences, 25154-10) in Biowave using the following settings: MW 80 W, 2 min ON – 2 min OFF – 2 min ON, Vac: on",
+    "Repeat osmication step using 1% Osmium tetroxide (v/v, Electron Microscopy Sciences, 19100) reduced with 1.5% potassium ferrocyanide (v/v, Electron Microscopy Sciences, 25154-10) in Biowave using the following settings: MW 80 W, 2 min ON – 2 min OFF – 2 min ON, Vac: on",
+    "Wash 1 x Milli-q water in Biowave using the following settings: MW 250 W, 40 s, VAC: off",
+    "Contrast using 2% Uranyl Acetate (aq, Electron Microscopy Sciences, Cat. no. 22400) diluted in Milli-q in Biowave using the following settings: MW 150 W, 1 min ON – 1 min OFF – 1 min ON, VAC: on",
+    "Dehydrate in 50% EtOH at room temperature for 1 min in fume cupboard",
+    "Dehydrate in 60% EtOH at room temperature for 1 min in fume cupboard",
+    "Dehydrate in 70% EtOH at room temperature for 1 min in fume cupboard",
+    "Dehydrate in 90% EtOH at room temperature for 1 min in fume cupboard",
+    "Dehydrate twice 100% EtOH at room temperature for 1 min in fume cupboard",
+    "Embed cells in 1:1 (v/v) of 100% EtOH:EPON (Electron Microscopy Sciences, 14120 for neurons grown on glass coverslips or glass-bottom dishes) or LX-112 resin (Ladd, 21210 - LX 112 for neurons grown on plastic dishes) in Biowave using the following settings: MW 250 W 3 min, VAC: on",
+    "Embed cells twice in 100% EPON or LX-112 resin in Biowave using the following settings: MW 250 W 3 min, VAC: on",
+    "Place a beem capsule filled with Epon or LX-112 upside down on top of the cells",
+    "Polymerise resin at 60°C for 48 h",
+    "Image samples with a transmission electron microscope (such as JEOL USA, Inc. model 1101 and 1400) equipped with cooled charge-coupled device camera (Olympus; Morada CCD Camera). For the quantification of presynaptic vesicle numbers, endosomal numbers and size, and presynaptic size, and mitochondrial size and subcellular localisation, as well as for imaging the ultrastructure of ERGIC, Golci complex and endoplasmic reticulum, EM images are acquired randomly (i.e an image is taken when an organelle or region of interest is identified).",
+    "Number of synaptic vesicles and endosomes is counted from electron micrographs using Adobe Photoshop (Adobe, 22.4.3 release) Count Tool and related to the presynaptic area (µm 2 ) which are manually segmented and measured using ImageJ/Fiji ( https://imagej.nih.gov/ij/ ) measure tool. Same tool is also used to measure the size of endosomes (µm 2 ). Vesicles with sectional area ≤0.003 µm 2 are classified as synaptic vesicles, and those &gt;0.003 µm 2 as endosomes. Presynapses are identified as rounded structures enriched with synaptic vesicles, typically positioned adjacent to postsynaptic densities and connected to axons.",
+    "Mitochondrial size is measured using Fiji/ ImageJ measure tool and assigned to either axons (i.e. elongated structures often containing microtubules, presynaptic connections, and having a diameter &gt;200 nm), presynapses (as described above) or soma (i.e. the region of a neuron that includes the cell body of cell soma and dendrite(s), but excludes the axon, and often has a visible nucleus and postsynaptic densities). The subcellular location of mitochondria is calculated by counting the number of mitochondrial cross-sections per presynapses. It is worth noting that this quantification does not present the absolute presynaptic numbers of presynaptic mitochondria, as the EM sections only capture a thin section of the synapse (e.g. elongated mitochondria could span the sections multiple times) but the quantification rather reflects the overall mitochondrial presence in the presynapses.",
+    "Quantification of number of presynaptic glycogen deposits is done using Adobe Photoshop CountTool.",
+    "Trim 1 mm x 1 mm pyramid, and thin section (80-90 nm) samples using an ultramicrotome (such as Leica Biosystems, UC6FCS)",
+    "The quantification of the number of HRP-containing synaptic vesicles and endosomes is quantified with Adobe Photoshop Count Tool, and the size (sectional area, µm 2 ) of the HRP-stained endosomes is quantified manually using ImageJ/Fiji.",
+    "For HRP-analysis, images are acquired when HRP signal is observed.",
+    "For secretory pathway organelle analysis, somatic area of neurons is selected for imaging."
+  ],
+  "authors": [
+    "Merja Joensuu"
+  ],
+  "creator": "Merja Joensuu",
+  "published_on": 1753109328,
+  "created_on": 1752907009,
+  "keywords": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": 122632,
+  "title": "Cell culture protocol for sc-Tiling: High-resolution characterization of gene function using single-cell CRISPR tiling\n",
+  "uri": "cell-culture-protocol-for-sc-tiling-high-resolutio-d3zg8p3w",
+  "doi": "dx.doi.org/10.21203/rs.3.pex-1544/v1",
+  "description": "{\"blocks\":[{\"key\":\"hlond\",\"text\":\"Identification of novel functional domains and characterization of detailed regulatory mechanisms in cancer-driving genes is critical for advanced cancer therapy. Here, we present the cell culture protocol for “sc-Tiling,” which integrates a CRISPR gene-tiling screen with 10X Genomics single-cell RNAseq (sc-RNAseq) workflow.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"q2vhk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"rybva\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"an3an\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"s4ts7\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"sd93v\",\"text\":\"LentiCas9-Blast (Addgene; #52962) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"l66rx\",\"text\":\"Blasticidin S (Gibco; A1113903)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"kjk8g\",\"text\":\"Puromycin (Gibco; A1113803)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mmvh8\",\"text\":\"psPAX2 (Addgene; #12260)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lfmxh\",\"text\":\"pMD2.G (Addgene; #12259)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9oucw\",\"text\":\"HEK293 cells (ATCC; CRL1573)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"oka1q\",\"text\":\"Fetal Bovine Serum (FBS) (Omega Scientific; FB-02)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dpvmu\",\"text\":\"Penicillin-Streptomycin (Gibco; 15140-122)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"omhrw\",\"text\":\"GlutaMAX (Gibco; 35-050-061)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"tykry\",\"text\":\"Plasmocin (InvivoGen; NC9886956)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ulfyp\",\"text\":\"10X GEM v3.1 kit (10X Genomics; PN-1000121)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mvxi4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"g9kfm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"meqg2\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"wwfmi\",\"text\":\"Standard tissue culture equipment including a tissue culture room, a CO2 incubator, a biosafety cabinet, and a cell centrifuge are required.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"xmzvx\",\"text\":\"Chromium Controller (10X Genomics; PN-120223)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"exp1i\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Blasticidin (Blast) for LentiCas9-Blast selection: titration range 0, 0.625, 1.25, 2.5, 5, 10, 20, 40 ug/ml final x 3-5 days, find the minimal killing dose.",
+    "Puromycin (Puro) for sgRNA library selection: titration range 0, 0.05, 0.1, 0.2, 0.5, 1, 2, 4 ug/ml final x 2-3 days, find the minimal killing dose.",
+    "We use LentiCas9-Blast stably transduced cells for a constitutive spCas9 expression. We suggest single cloning these cells and identify monoclonal Cas9 + cells that exert the best CRISPR editing activity for the CRISPR library screen. For this, we developed a “self-inactivation RFP system” for a flow cytometric assay to select the best CRISPR editing clones.",
+    "Transduce the cells with LentiCas9-Blast at ~15-20% infection. Blasticidin selects for 3-5 days.",
+    "Single cloning by seeding the cells in Blast-medium in 96-well-plates x 3, each contains 300, 100, and 30 cells in the plate.",
+    "Select wells that contain monoclonal cells and expand the culture. It typically takes 2 – 4 weeks to expand from a single cell to get enough cells for frozen stocks and the functional test.",
+    "Test the CRISPR editing efficiency of each monoclonal Cas9-expressing cell using the sgRNA targeting RFP (sgRFP; 5’-GTCACCACATACGAAGACGG-3’). Select the best CRISPR editing clones for CRISPR screens.",
+    "Make library virus using HEK293 cells in P100 dishes. We suggest making 10 dishes of virus per 1,000 sgRNA constructs in the library for a typical one condition, 1,000x coverage, triplicated screen. The real dish # of viral production required for the screen depends on the infection potential of the target cells, and the screen designs such as coverage-fold, # of replicates, # of conditions (e.g., drug treatments, etc.). A pilot culture to calculate the required viral amount is highly recommended.",
+    "Day 1: Seed HEK293 cells at 3.4 x 10 6 cells per P100 dish in DMEM medium with 10% FBS, penicillin (100 units/ml), streptomycin (100 μg/ml), and plasmocin (5 μg/ml).",
+    "Day 2: Transfect the HEK293 cells with a mixture of pPAX2 plasmid: pMD2 plasmid: CRISPR library plasmid = 5.6 μg: 5.6 μg: 5.6 μg (Total DNA = 17 μg).",
+    "Day 3: Replace medium 18-24 h after transfection.",
+    "Day 5: Harvest the viral containing supernatant from the HEK293 cultures. Spin at 2,000 g x 10 min to remove the cell debris. Aliquot the viral supernatant and store @ -80℃.",
+    "Setup a viral titration in a 12-well plate scale. Typical seeding density: 1 – 2 million cells per 12-well. Titrate the virus with a 2-fold gradience. Each well contains 10ug/mL polybrene (final concentration).",
+    "Read the RFP+ cell % at 48hr post-infection. Identify the well with 15 – 20 % RFP + % (this will be the titer for the real screen). Using this condition, we expect to have ~ 90% of the infected cells receiving only one sgRNA construct.",
+    "Transduce the Cas9-expressing cells with the sgRNA library virus using the condition for 15 – 20 % RFP + infection and add puromycin 24hr post-infection (and maintain puromycin during the whole course of the screen).",
+    "After 24hr in puromycin, check the RFP + % (usually expect to reach &gt; 60% RFP + after 24hr puromycin treatment). This is the START of the test screen culture.",
+    "Seed cells in the culture conditions for the screen. If planning for a drug response screen, use this Pilot test culture to titrate for the drug concentrations as needed.",
+    "Use the pilot library test culture to determine the large-scale screen culture protocol (days, seeding density, drug conditions…). Calculate the reagents required for the large-scale screen culture (virus, medium, compounds, FBS, cytokines, etc.) to ensure sufficient materials to complete the screen.",
+    "Transduced at 15 – 20% RFP + as previously titrated.",
+    "Initial sgRNA library infection needs to get 1,000x coverage to get enough cells to start. Example for a 1,000 sgRNA library: Start from 10 million cells per replicate at 15~20% infection rate. Expecting at least 1 million independently infected RFP + cells.",
+    "Add puromycin 24hr after infection.",
+    "At the defined time point (e.g., day 3 post-transduction), submit freshly harvested screen cells for 10X Chromium single-cell isolation using the 10X GEM v3.1 kit.",
+    "10.1038/s41467-021-24324-0"
+  ],
+  "authors": [
+    "Chun-Wei David Chen"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1670243176,
+  "created_on": 1670243176,
+  "keywords": []
+}

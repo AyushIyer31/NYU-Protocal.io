@@ -1,0 +1,35 @@
+{
+  "id": 76683,
+  "title": "High Spatial Resolution MALDI Imaging Mass Spectrometry Data Acquisition",
+  "uri": "high-spatial-resolution-maldi-imaging-mass-spectro-cn5jvg4n",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ldpq99l5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"1qtal\",\"text\":\"This protocol provides the workflow and instrument parameters for setting up a MALDI imaging mass spectrometry experiment on a Bruker timsTOF Flex instrument. This protocol is intended for 10µm spatial resolution imaging of lipids (m/z 400 - 2000) in positive and negative ionization mode data acquisition in qTOF mode of operation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":232,\"length\":3}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"5f69d\",\"text\":\"Agilent ESI-L Tune Mix (Agilent Technologies, Santa Clara, CA)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Place slides in a MTP 2-slide holder. Scan slides using flatbed scanner, allowing for sufficient contrast to visualize the tissue boundary. Ensure the slides have fiducials. Fiducials are markings on the slide that can be used as reference points for teaching the slides (Step 4).",
+    "Use the FlexImaging software to load the optical image of the slides. Teach the target position with three teaching points. Check the accuracy of the teaching by moving the stage to a fourth location.",
+    "Calibrate the TOF with an external calibration using red phosphorus. Proceed if all calibration points are &lt;1ppm standard deviation error and the calibration score is &gt;99%. Red phosphorus is commonly used to perform calibration, however Agilent ESI-L Tune Mix can also be used for electrospray ionization. List of Red Phosphorus Mass Calibration Peaks %s %s Positive mode Negative mode 278.7633 278.7644 402.6583 402.6594 464.6058 464.6069 526.5534 526.5545 650.4484 650.4495 774.3435 774.3445 898.2385 898.2396 960.1860 960.1870 1022.1335 1022.1346 1146.0286 1146.0297 1393.8187 1393.8198 1517.7137 1517.7148 1641.6088 1641.6099 1765.5038 1765.5049 1889.3989 1889.4000",
+    "Select desired tissue measurement region. Start data acquisition in the FlexImaging software.",
+    "Load the 2-slide holder in the instrument. Open timsControl software and select appropriate MALDI IMS data acquisition method. Generate target profile by ensuring &#34;Use Target Profile&#34; is enabled. Check the height at a few different locations on the slide and ensure the difference is &lt;10 µm. Example Positive/Negative Ionization Mode Parameters for 10µm MALDI IMS: m/z 400 - 2000 Laser Power: 35 - 45%, Frequency: 10 000 Hz Shots: 100 - 150 per pixel Spot size: 10 µm with Beam scanning function disabled Source temperature: ~50 o C"
+  ],
+  "authors": [
+    "Katerina V Djambazova",
+    "Angela R.S. Kruse",
+    "Jamie Allen",
+    "allison.b.esselman ",
+    "Madeline E. Colley",
+    "David Anderson",
+    "Ali Zahraei",
+    "Olof Isberg",
+    "Melissa Farrow",
+    "Jeff Spraggins",
+    "Martin Dufrense"
+  ],
+  "creator": "Katerina V Djambazova",
+  "published_on": 1681137808,
+  "created_on": 1675877796,
+  "keywords": []
+}

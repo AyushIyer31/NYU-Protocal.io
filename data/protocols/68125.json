@@ -1,0 +1,41 @@
+{
+  "id": 68125,
+  "title": "Generation of CRISPR constructs",
+  "uri": "generation-of-crispr-constructs-cer5td86",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlkkzo6l5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"82v0k\",\"text\":\"This protocol details the procedure of generation of CRISPR constructs.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"hqpc\",\"text\":\"Buffers and reagents:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":21}],\"entityRanges\":[],\"data\":{}},{\"key\":\"amn87\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cp5dm\",\"text\":\"  \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":1}],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"92iso\",\"text\":\"Qiagen miniprep kit (Qiagen, #28104)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"i1j4\",\"text\":\"  \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"cr2m7\",\"text\":\"  \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"42it5\",\"text\":\"  \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":3,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"8sa6h\",\"text\":\"NEB® 5-alpha Competent E. coli (NEB #C2987)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3eu5v\",\"text\":\"Growth broth: a mixture of LB broth and Super broth with 1:1 ratio\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":14}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fsest\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2os3o\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":78098,\"guid\":\"415DC494341F11EE9D4302C0B41BC903\",\"name\":\"pSpCas9(BB)-2A-GFP (PX458)\",\"mol_weight\":0,\"sku\":\"48138\",\"url\":\"https://www.addgene.org/48138/\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":6,\"name\":\"addgene\",\"link\":\"http://www.addgene.org\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/6.png\",\"placeholder\":\"/img/vendors/6.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":956770,\"guid\":\"43734F0C341F11EE9D4302C0B41BC903\",\"name\":\"BbsI\",\"mol_weight\":0,\"sku\":\"3539\",\"url\":\"https://www.neb.uk.com/products/neb-catalogue/restriction-enzymes/bbsi-hf-lt;sup-gt;-amp;reg;-lt;-sup-gt;\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":754,\"name\":\"NEB\",\"link\":\"https://international.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":4809,\"guid\":\"4107B16A341F11EE9D4302C0B41BC903\",\"name\":\"Alkaline Phosphatase, Calf Intestinal (CIP)\",\"mol_weight\":0,\"sku\":\"M0290\",\"url\":\"https://www.neb.com/products/m0290-alkaline-phosphatase-calf-intestinal-cip\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}},\"3\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":2095,\"guid\":\"4103C79F341F11EE9D4302C0B41BC903\",\"name\":\"NEBuilder HiFi DNA Assembly Master Mix - 10 rxns\",\"mol_weight\":0,\"sku\":\"E2621S\",\"url\":\"https://www.neb.com/E2621\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Designing gRNAs using https://chopchop.cbu.uib.no. I prefer this website because it also gives you the primer sequences for sequencing analysis.",
+    "Choose the top-ranking gRNA sequences that target the earliest exon possible. Make sure that the targeted exon is shared between the isoforms (check on https://asia.ensembl.org/index.html). If the protein is too big or it’s not possible to choose a target common in all the isoforms, you can use two different gRNAs.",
+    "Click on the chosen target sequence, another window with all the information related to this gRNA sequence will appear. In this window, you can also find a table with primer pairs to amplify the targeted region for sequencing analysis. You can copy and paste these sequences into a word document and order them. If no primers appear, go back to “Primers” tab from step one and change the parameters.",
+    "Copy the target sequence without the PAM into the highlighted region of the below sequence: ATCTTGTGGAAAGGACGAAACACCG Copy the target sequence without the PAM here GTTTTAGAGCTAGAAATAGCAAGTT.",
+    "“Target”: Put in the gene name/“In”: choose the species. For human cell lines, I choose “Homo sapiens (hg38/GRCh38)/“Using”: for knockout I choose “CRISPR/Cas9”/“For”: I choose “knock-out”.",
+    "Do not change anything in “General” tab. Make sure in “target specific region of gene”, “Coding region” is chosen.",
+    "In the “Cas9” tab, make sure you choose “No requirements” for “5’ requirements for sgRNA” and tick “I intend to replace the leading nucleotides with “GG”” (3 options of the “Sef-complementarity (Thyme et al.)” should be ticked).",
+    "Click “Find target sites”.",
+    "In “Primers” tab, I choose product size from 200 to 500 and minimum distance from primer to target site at least 100.",
+    "Order the above sequence as a primer for Gibson assembly.",
+    "Preparing cut pSpCas9(BB)-2A-GFP:",
+    "Dilute the primer from steps 4 and 5 to the final concentration of 0.8 micromolar (µM) (1/125 dilution of the 100 micromolar (µM) stock). Set up a Gibson assembly reaction as following: 1 µL of the diluted primers 1 µL of BbsI-linearised pSpCas9(BB)-2A-GFP 2 µL of HiFi DNA Assembly Master Mix Incubate at 50 °C for 02:00:00 .",
+    "Transform 1.8 µL of the mix from step 7 (the rest can be stored at -20 °C as a backup in case the transformation does not result in any colonies) using 10 µL of the NEB® 5-alpha Competent E. coli cells with manufacturer’s instructions. Note: The cells come in with bigger volume so make sure you make 10 l aliquots upon thawing out.",
+    "The next day, pick up a few colonies and set up overnight cultures in growth broth.",
+    "Miniprep the cultures to purify plasmids and send them for sequencing using this primer (5’ GCTCACCTCGACCATGGTAAT 3’).",
+    "Once sequenced verified, the CRISPR constructs are now ready to be used for transfection.",
+    "Cut the vector with BbsI: 10 µg of vectors 2 µL of BbsI 3 µL of NEBuffer™ r1.1 Add sterile milliQ water to 30 µL Incubate for 6-8 hours at 37 °C",
+    "Run the reaction on a 0.5 % DNA agarose gel.",
+    "Heat de-activate at 60 °C for 00:05:00 .",
+    "After that, add 1 µL of CIP and incubate for no longer than 01:00:00 .",
+    "Extract the cut vector, determine the concentration, dilute it to 10 ng/µl and aliquot to 1 µL aliquots and store at -20 °C ."
+  ],
+  "authors": [
+    "Thanh Ngoc Nguyen"
+  ],
+  "creator": "nguyen.tha",
+  "published_on": 1684925639,
+  "created_on": 1659517139,
+  "keywords": []
+}

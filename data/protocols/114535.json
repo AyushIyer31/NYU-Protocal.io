@@ -1,0 +1,41 @@
+{
+  "id": 114535,
+  "title": "Fluorescence immunohistochemistry",
+  "uri": "fluorescence-immunohistochemistry-dt4f6qtn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ldrmd8g5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"ck25e\",\"text\":\"This protocol describes the procedure for immunohistochemistry detected by fluorescence used in the Seifert Lab. It assumes a starting sample of a paraffin-embedded tissue section.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Deparaffinize slides to 100% Ethanol Contributed by users by a series of: 2 washes of 00:05:00 each with 2X Xylene Fisher Scientific Catalog #X3P-1GAL 2 washes of 00:02:00 each with 100% Ethanol Contributed by users",
+    "Rehydrate to ddH 2 O by a series of: 00:03:00 wash with 90% Ethanol 00:01:00 wash with 70% Ethanol 2 washes of 00:01:00 each with ddH 2 O",
+    "(SKIP IF FROZEN) Perform retrieval, optimized for antigen and treatment For a first run, can try heat + citrate buffer pH 6, heat + DAKO high pH 9, proteinase K *After heat, transfer directly to ddH 2 O to cool before proceeding to first wash with TBS **For matrix proteins, try 2&#39; proteinase K",
+    "Wash for 00:05:00 with Tris-buffered saline (TBS), 1x solution Fisher Scientific Catalog #BP24721",
+    "Block for at least 00:30:00 at Room temperature in 15 μL/mL appropriate serum in TBS The serum is typically whatever the secondary antibody was raised in; for multiple labeling, use a 50:50 mixture of the two sera",
+    "(SKIP IF NOT AMPLIFYING SECONDARY ANTIBODY) Avidin/Biotin Block",
+    "Block with avidin for 00:15:00 at Room temperature",
+    "Wash for 00:05:00 in TBS",
+    "Block with biotin for 00:15:00 at Room temperature",
+    "Wash for 00:05:00 in TBS",
+    "Incubate with primary antibody or control in 15 μL/mL serum in TBS Overnight at 4 °C in a humidity box The preferred control is IgG at the same concentration as the primary antibody, but otherwise just leave out the primary antibody",
+    "Wash for 00:05:00 in TBS",
+    "Incubate with secondary antibody (biotinylated secondary to the species of the primary) at 1:400 in 15 μL/mL serum in TBS for 00:30:00 at Room temperature 1:400 is usually a good dilution, but this can be reduced if background is too high",
+    "Wash for 00:05:00 in TBS",
+    "Incubate with desired AlexaFluor-conjugated secondary antibody at 1:400 in TBS (without serum) for 00:30:00 at Room temperature",
+    "Wash for 00:05:00 in TBS",
+    "Wash for 00:05:00 in ddH 2 O",
+    "Incubate with 1 μg/mL Hoechst 33342 Cell Signaling Technology Catalog #4082 for 00:05:00 at Room temperature",
+    "Wash with ddH 2 O",
+    "Stand slide at an angle and allow to drip-dry for a few minutes",
+    "Cover slip If using Prolong Gold Thermo Fisher Scientific Catalog #P36930 can cover slip when a bit wet"
+  ],
+  "authors": [
+    "Ashley Seifert"
+  ],
+  "creator": "Ashley Seifert",
+  "published_on": 1733756039,
+  "created_on": 1733512350,
+  "keywords": []
+}

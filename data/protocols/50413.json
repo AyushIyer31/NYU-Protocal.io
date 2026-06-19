@@ -1,0 +1,36 @@
+{
+  "id": 50413,
+  "title": "Cell culture, transfection and imaging",
+  "uri": "cell-culture-transfection-and-imaging-bvgmn3u6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bvgmn3u6",
+  "description": "{\"blocks\":[{\"key\":\"crd6m\",\"text\":\"This protocol details the general preparation of cells for imaging and also for imaging experiments involving cellular hypotonic shock and cytosolic Ca2+ changes as they were performed in https://doi.org/10.1083/jcb.202010004.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":188,\"length\":37}],\"data\":{}},{\"key\":\"646g1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"4276AA98C61011EB90790A58A9FEAC02\",\"url\":\"https://doi.org/10.1083/jcb.202010004\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"5qrg9\",\"text\":\"  \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"ccdd2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3krg3\",\"text\":\"DMEM:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":5}],\"entityRanges\":[],\"data\":{}},{\"key\":\"bh194\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"14u78\",\"text\":\"      FBS  10%    Sodium pyruvate  1 mM    Penicillin  100 U/ml    Streptomycin  100 mg/mL    L-glutamine  2 mM  \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":113}],\"data\":{}},{\"key\":\"3i7a4\",\"text\":\"Live-cell imaging solution (Life Technologies)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bjtmu\",\"text\":\"Thapsigargin (Life Technologies) \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8j4un\",\"text\":\"BAPTA-AM (Thermo Fisher Scientific)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":76245,\"guid\":\"415B055D341F11EE9D4302C0B41BC903\",\"name\":\"CMV-R-GECO1.2\",\"mol_weight\":0,\"sku\":\"45494\",\"url\":\"https://www.addgene.org/45494/\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":6,\"name\":\"addgene\",\"link\":\"http://www.addgene.org\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/6.png\",\"placeholder\":\"/img/vendors/6.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"tables\",\"mutability\":\"\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"1_0\":\"\",\"1_1\":\"\",\"2_0\":\"\",\"2_1\":\"\",\"3_0\":\"\",\"3_1\":\"\",\"4_0\":\"\",\"4_1\":\"\"},\"colTitles\":[\"\",\"\"],\"colWidths\":[\"131\",\"186\"],\"data\":[[\"FBS\",\"10%\"],[\"Sodium pyruvate\",\"1 mM\"],[\"Penicillin\",\"100 U/ml\"],[\"Streptomycin\",\"100 mg/mL\"],[\"L-glutamine\",\"2 mM\"]],\"guid\":\"7548433AC36E11EB9AAA0A58A9FEAC02\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"FBS\",\"10%\"],[\"Sodium pyruvate\",\"1 mM\"],[\"Penicillin\",\"100 U/ml\"],[\"Streptomycin\",\"100 mg/mL\"],[\"L-glutamine\",\"2 mM\"]],\"rowHeights\":[23,23,23,23,23]}}}}",
+  "steps": [
+    "Culture the COS-7 or HeLa (ATCC) cells at 37 °C and 5% CO2 in DMEM containing 10% FBS, 1 millimolar (mM) sodium pyruvate, 100 U/ml penicillin, 100 mg/mL streptomycin and 2 millimolar (mM) L-glutamine (all from Gibco). Note : For general maintenance, when cells reached 80-90% confluency, they were deattached from the dish with Trypsin and diluted 1:20 in a new dish.",
+    "For imaging experiments, seed the cells on glass-bottomed dishes (MatTek) at a concentration of 75x10 3 cells per dish and transfect transiently after 06:00:00 using FuGene HD (Promega).",
+    "Image the cells for 36-48 hours after transfection.",
+    "Just before imaging, remove the growth medium and replace with pre-warmed live-cell imaging solution (Life Technologies).",
+    "Perform all live-cell imaging at 37 °C and 5% CO 2 .",
+    "Perform spinning-disk confocal microscopy using an Andor Dragonfly system equipped with a plan apochromat objective (63×, 1.4 NA, oil) and a Zyla scientific CMOS camera.",
+    "Identify the cells to be imaged by scanning the dish.",
+    "Once a field of view with transfected cells is found, start the acquisition (generally use a rate of 12 frames/minutes).",
+    "Replace the live-cell imaging solution with pre-warmed distilled water. Suggestion : Minimal volume of live cell imaging media is placed in the dish to allow removal with a pipette in one single step. On the contrary, maximal volume of distilled water is added to allow the highest dilution of leftover ions in the dish. Warning : If media exchange is to be performed by hand, extreme care should be taken not to move the dish during the process. If substantial amount of live cell imaging media needs to be left in the dish to prevent movements during the aspiration procedure, a further media replacement step could be implemented to achieve maximal hypotonic shock.",
+    "Cytosolic Ca2+ was monitored by the intensity of the RFP genetically encoded Ca2+ indicator for optical imaging (R-GECO; plasmid was a gift from R. Campbell, University of Alberta, Edmonton, AB, Canada; Addgene catalog no. 45494) Once a field of view with transfected cells is found, start the acquisition (generally use a rate of 0.5 Hz).",
+    "To acutely increase cytosolic Ca2+, add Thapsigargin (Life Technologies) to a final concentration of 2 micromolar (µM) . Note : Live-cell imaging solution (Life Technologies) contains 1.8 millimolar (mM) Ca 2+ .",
+    "Allow cells to recover for 00:10:00 .",
+    "To decrease cytosolic Ca2+, add EGTA and BAPTA-AM (Thermo Fisher Scientific) to the medium to a final concentration of 4 millimolar (mM) and 10 micromolar (µM) , respectively.",
+    "Image the cells for 00:10:00 , then stop the acquisition."
+  ],
+  "authors": [
+    "Marianna Leonzino",
+    "Andrés Guillén-Samander",
+    "Pietro De Camilli"
+  ],
+  "creator": "Andrés Guillén-Samander",
+  "published_on": 1629216887,
+  "created_on": 1622614528,
+  "keywords": []
+}

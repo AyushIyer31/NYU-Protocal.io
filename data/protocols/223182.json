@@ -1,0 +1,38 @@
+{
+  "id": 223182,
+  "title": "Spatial Workshop - Jupyter Notebook Login",
+  "uri": "spatial-workshop-jupyter-notebook-login-g57nby9mf",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"2huan\",\"text\":\"Log in instructions for the URMC Genomics Research Center summer spatial transcriptomics workshop.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Go to https://jupyter.circ.rochester.edu/",
+    "Log in to https://ood.urmc-sh.rochester.edu/",
+    "If you have access to Bluehive, please log in using the &#34;Logging in via Bluehive&#34; method. Otherwise, please log in via Open On-Demand. Jupyter Notebook is a common development environment for working within Python. For the purposes of this workshop, we&#39;ve prepared a setting in which all of your required packages are already installed. This guide is intended to get you loaded and ready for the workshop.",
+    "Set the partition to interactive, CPU&#39;s to 2, Memory to 8GB.",
+    "Once the session has spawned, select and open the notebook within Jupyter",
+    "Copy the blank notebook to your home directory wget https://grcweb.circ.rochester.edu/pickup/250728155436-17128/Spatial_template_blank.ipynb",
+    "Change the Kernal to &#34;clong_squidpy (3.10.17)&#34; Within the drop down menu",
+    "Log into Bluehive via ssh or an interactive session. This is only a temporary session for the purposes of copying the notebook.",
+    "Select the &#34;Jupyter Notebook&#34; app",
+    "Select &#34;2&#34; for number of cores, &#34;Extreme&#34; for the data size, and 6 hours for the number of hours. Click Launch",
+    "Once the session starts, click into the host",
+    "Copy the Kernel from our GRC_Workshop folder cp -R /mnt/nfs/GRC/GRC_Workshop/Spatial_pt2/Spatial_Kernel ~/.local/share/jupyter/kernels/",
+    "Log into the terminal using your URMC-AD login",
+    "Run the following within the command prompt mkdir -p ~/.local/share/jupyter/kernels",
+    "Go back to your session window and press the Jupyter Lab button.",
+    "Create a new Python_Spatial Notebook",
+    "To make sure you have the right Kernel loaded, check the top right. As a test, you can type in &#34;import squidpy as sq&#34; and press the play button. You should get some warnings, but this code block should otherwise finish.",
+    "Copy the Notebook template from our GRC_Workshop folder as well cp -R /mnt/nfs/GRC/GRC_Workshop/Spatial_pt2/Spatial_template_blank.ipynb ~/"
+  ],
+  "authors": [
+    "Cameron Baker"
+  ],
+  "creator": "Cameron Baker",
+  "published_on": 1753732698,
+  "created_on": 1753370298,
+  "keywords": []
+}

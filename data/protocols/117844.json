@@ -1,0 +1,41 @@
+{
+  "id": 117844,
+  "title": "Immunostaining Mouse Tissue ",
+  "uri": "immunostaining-mouse-tissue-dxbu7inw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg3q7ypv25/v1",
+  "description": "{\"blocks\":[{\"key\":\"7oe78\",\"text\":\"This protocol describes immunohistochemical and immunoctyochemical methods to analyze protein expression in mouse brain. In the protocol, we describe the fixation of tissue or cultured neurons, the immunostaining procedure, and collecting images for analysis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"bh3nr\",\"text\":\"Buffers, Reagents, Materials \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":29},{\"style\":\"bold\",\"offset\":0,\"length\":29}],\"entityRanges\":[],\"data\":{}},{\"key\":\"tque\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8r8rg\",\"text\":\"4% paraformaldehyde (diluted from ) in 1X DPBS \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":33,\"length\":1}],\"data\":{}},{\"key\":\"eei5f\",\"text\":\"1X DPBS\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2tn94\",\"text\":\"0.1 % Triton X-100 in DPBS\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"74lsq\",\"text\":\"Blocking Buffer: Normal Donkey Serum -Jackson Immune Research Labs - Cat No NC9624464\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2fubd\",\"text\":\"DAPI  - ThermoFisher Cat No D1306\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":27,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"b36o7\",\"text\":\"Prolonged Diamond Antifade Mountant - ThermoFisher Cat No P36965\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":57,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4vmj6\",\"text\":\"Appropriate primary and fluorophore-conjugated secondary antibodies\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"18ibk\",\"text\":\"Microscope slides\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dv46i\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":221483,\"guid\":\"41CDFBC3341F11EE9D4302C0B41BC903\",\"name\":\"Pierce\\u0026trade; 16% Formaldehyde (w/v), Methanol-free\",\"mol_weight\":0,\"sku\":\"28908\",\"url\":\"https://www.thermofisher.com/order/catalog/product/28908\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Wash samples three times for 10 minutes at Room temperature in 1X DPBS + 0.1% Triton X-100 on a rocker",
+    "Block and permeabilize for 2 hours at Room temperature in 1X DPBS containing 4% normal goat serum (NGS) and 0.1% Triton X-100 on a rocker",
+    "Incubate in primary antibody overnight at 4 °C",
+    "Prepare primary antibody solution by diluting antibody at desired concentration in 1X DPBS containing 2% NGS and 0.1% Triton X-100",
+    "Wash samples three times for 10 minutes at Room temperature in 1X DPBS+ 0.1% Triton X-100 on a rocker",
+    "Prepare secondary antibody solution by diluting antibody at 1:1000 in 1X DPBS containing 2% NGS and 0.1% Triton X-100",
+    "Incubate in secondary antibody for 2 hours at 4 °C in the dark",
+    "Wash samples three times for 10 minutes at Room temperature in 1X PBS + 0.1% Triton X-100 on a rocker",
+    "Mount free floating slices onto a slide. For all sample types, mount using Prolonged Diamond Antifade Mountant",
+    "Collect images of fixed tissue using a microscope: For high resolution: use Leica DMi8 Inverted Microscope with Spinning Disk",
+    "Store samples at 4 °C for short-term storage or -20 °C for long-term storage",
+    "Once slices are collected, IHC is performed on free-floating sections in cold 1X DPBS with 5% Azide",
+    "Tissue can be kept in long-term storage at -80 °C ; when ready for IHC, slice 100 μm sections using a cryostat (Leica CM3050 S) Cryostat (Leica, Cryostat, https://www.leicabiosystems.com/histology-equipment/cryostats/ )",
+    "Incubate Overnight at 4 °C in 30% sucrose in PBS",
+    "Incubate Overnight at 4 °C in 4% PFA in PBS",
+    "Dissect out brain or wanted tissue into 15 mL tube containing cold 4% PFA in PBS",
+    "Using a perfusion pump, pierce needle into left ventricle and sever the right atrium; immediately begin perfusing cold 1X PBS followed by 4% paraformaldehyde (PFA) in PBS",
+    "Anesthetize mouse, pin onto dissection tray and open chest cavity",
+    "Add DAPI 1:1000 to free floating samples for 10 minutes",
+    "Wash samples two times for 10 minutes at RT in 1X DPBS + 0.1% Triton X-100 on a rocker"
+  ],
+  "authors": [
+    "Chelsie Steele",
+    "Yujie Fan"
+  ],
+  "creator": "Chelsie Steele",
+  "published_on": 1739727912,
+  "created_on": 1736286858,
+  "keywords": []
+}

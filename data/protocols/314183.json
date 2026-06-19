@@ -1,0 +1,34 @@
+{
+  "id": 314183,
+  "title": "Multiplex PCR-based method for whole-genome sequencing of measles virus from wastewater",
+  "uri": "multiplex-pcr-based-method-for-whole-genome-sequen-jw3fcpgjp",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"emumo\",\"text\":\"The protocol relies on multiplex PCR to generate overlapping amplicons spanning the full measles virus genome, enabling efficient enrichment of MeV genetic material from low-input and degraded RNA. Amplified products are compatible with Illumina sequencing workflows and support high genome coverage suitable for molecular epidemiology and phylogenetic analysis. This protocol has been optimized for sensitivity and reproducibility using wastewater samples and can be completed within 1-2 days.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"2fgis\",\"text\":\"SuperScript IV Reverse Transcriptase (Thermo Fisher Scientific)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3dhvl\",\"text\":\"Q5 High-Fidelity 2X Master Mix (New England Biolabs)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ev89h\",\"text\":\"Nuclease-free water\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5769j\",\"text\":\"Thermal cycler\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"94vd0\",\"text\":\"Ice\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1k2l0\",\"text\":\"200µL PCR plate or tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dm2mr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Wastewater samples can be processed for virus concentration and nucleic acid extraction using a previously published protocol https://www.protocols.io/print/enrichment-of-intact-virus-from-wastewater-using-d-hqy3b5xyp . Briefly, samples are subjected to a virus enrichment step to enrich viral particles from the wastewater matrix using magnetic beads, followed by extraction of total nucleic acids using a a magnetic beads-based method. The procedure is optimized to maximize recovery of viral RNA while minimizing the impact of environmental inhibitors commonly present in wastewater.",
+    "Prepare the RNA-primer mix by adding the following components to a 200 µL PCR reaction tube. A B 1 Reaction component/ reagent Volume (µL) 2 50µM random Haxamers 1 3 10mM dNTPs mix (10mM each) 1 4 Template RNA 11",
+    "Briefly vortex and centrifuge the reaction components/ reagents.",
+    "Heat the RNA-primer mix at 65 °C for 00:05:00 in a thermocycler, and thereafter incubate on ice for at least 00:01:00",
+    "Add the following components to a 200µL PCR reaction tube. A B 1 Reaction component/ reagent Volume (µL) 2 5× SSIV Buffer 4 3 100mM DTT 1 4 Ribonuclease inhibitor 1 5 SuperScript IV reverse Transcriptase 1 The 5× SSIV buffer is essentially composed of salts. It must be pre-warmed and mixed thoroughly before use.",
+    "Cap the tube, mix, and then briefly centrifuge its components.",
+    "Incubate the reaction components using the following conditions on a thermal cycler. A B 1 Time Temperature (°C) 2 10 23 3 10 52.5 4 10 80 5 ∞ 4",
+    "The multiplex PCR panel for measles virus amplicon sequencing consist of two primer pools that amplify the virus genome and can be accessed at https://labs.primalscheme.com/detail/artic-measles/400/v1.0.0/ . Prepare two master mixes in separate PCR tubes for Pools 1 and 2 as follows: A B 1 Reaction component/ reagent Volume (µL) 2 Q5 High-Fidelity 2× Master Mix 12.5 3 Pool 1 or 2 Primer Mix (10µM) 7.3 4 cDNA 3 5 Nuclease-free water 2.2 Amplify the cDNA using the following thermal cycling profile: A B C D 1 Step Time Temperature (°C) No. of cycles 2 Polymerase activation 30 sec 98 - 3 Denaturation 15 sec 98 45 4 Annealing 5 min 65 5 Extension ∞ 4 -",
+    "Combine amplicons from Pool 1 and Pool 2, then verify the presence of ~400 bp fragments using gel electrophoresis"
+  ],
+  "authors": [
+    "Sipho Gwala",
+    "Natasha Singh",
+    "Victor Mabasa",
+    "Joshua Levy",
+    "Kerrigan  McCarthy",
+    "Mukhlid Yousif"
+  ],
+  "creator": "Sipho Gwala",
+  "published_on": 1774967188,
+  "created_on": 1774954697,
+  "keywords": []
+}

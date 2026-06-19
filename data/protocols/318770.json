@@ -1,0 +1,31 @@
+{
+  "id": 318770,
+  "title": "Using FileZilla to deposit data on MetaboLights",
+  "uri": "using-filezilla-to-deposit-data-on-metabolights-j3iscqkef",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"8l2j\",\"text\":\"A straightforward FTP-based data deposition workflow for MetaboLights using FileZilla.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7267f\",\"text\":\"This protocol describes the step-by-step procedure (site setup, authentication, directory navigation, transferring files) to upload metabolomics data to the MetaboLights repository.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6vv0\",\"text\":\"By following this protocol, users can deposit their raw and processed datasets into MetaboLights.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"63f2e\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ei2p5\",\"text\":\"MetaboLights documentation: https://www.ebi.ac.uk/metabolights/editor/guides/Files/Upload\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":28,\"length\":61}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"57D5C514363C11F088C10A58A9FEAC02\",\"url\":\"https://www.ebi.ac.uk/metabolights/editor/guides/Files/Upload\"}}}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"fedkv\",\"text\":\"Check that you have a MetaboLights account and that you are listed as an author with modification access in the repository you want to upload data to.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"brs1v\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"89na0\",\"text\":\"A computer or server with a Windows, MacOS or Linux distribution, with internet access. An admin account might be needed to install FileZilla if it's not already installed.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Go to https://filezilla-project.org/download.php?show_all=1 and choose the installer for your system. Caution is advised with the FileZilla website if you don&#39;t use the link above. The green ‘click here’ buttons lead to a file containing ads that might be flagged by antivirus software. WinSCP ( https://winscp.net/ ) is another excellent file transfer tool that can also be used.",
+    "When you want to upload data on MetaboLights (for example to upload an Assay file, bellow) click on the upload button You will get the following menu opening Choose &#34;Private FTP Upload&#34;",
+    "Install the software",
+    "A new window will open with your connection information Those information will be used to connect to the MetaboLights server, to upload your files there",
+    "Enter the information in FileZilla using the following mapping Then click on &#34;Quickconnect&#34;, you are now connected to the MetaboLights servers and a list of directories should have appeared on the right side of the window",
+    "Go to the folder of your study in MetaboLights by copy/pasting the &#34;Remote folder&#34; information into the field bellow. Press &#34;Enter&#34; on your keyboard.",
+    "From there, use the left panel (green bellow) of the software to navigate to the folder on your computer containing the files you want to transfer.",
+    "To transfer files just drag and drop them in the right part of the software (blue)",
+    "Success! The file has been transferred",
+    "Depending if you uploaded Metadata or Data files, click on the corresponding button in the &#34;Files&#34; tab to synchronise your data and have them on you Metabolights interface",
+    "Open the FileZilla software and locate where the connection information must be entered (purple box). FileZilla contains two main panes: the red box shows the files on your local computer, while the cyan box shows the files on the remote computer (in our case, the MetaboLights server once you are connected)."
+  ],
+  "authors": [
+    "Sylvain Prigent"
+  ],
+  "creator": "Sylvain Prigent",
+  "published_on": 1781027275,
+  "created_on": 1781019528,
+  "keywords": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": 51433,
+  "title": "Detection of Cryptosporidium in stool samples by Taq-Man qPCR",
+  "uri": "detection-of-cryptosporidium-in-stool-samples-by-t-bwghpbt6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bwghpbt6",
+  "description": "{\"blocks\":[{\"key\":\"9e6gf\",\"text\":\"Detection of Cryptosporidium parvum and/or Cryptosporidium hominis from fecal samples by qPCR.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Combine the following for a single qPCR sample (9μl per sample). Scale accordingly for number of samples and technical replicates: 5 μl 10 x Luna Universal Probe qPCR Master Mix 0.25 μl 10 μM Forward Primer (ATGACGGGTAACGGGGAAT) 0.25 μl 10 μM Reverse Primer (CCAATTACAAAACCAAAAAGTCC) 1μl 1 μM Probe ([FAM]CGCGCCTGCTGCCTTCCTTAGATG[BHQ1]) 2.5μl Ultrapure water",
+    "Load mastermix in 96-well PCR plate using a multichannel pipette. Add 1μl extracted DNA to corresponding wells. Keep a detailed plate map of which wells contain standard curve DNA, sample DNA, positive control DNA, no DNA control.",
+    "Spin plate in a centrifuge at low speed to make sure the samples are at the bottom of the well.",
+    "Run qPCR cycling as described for Luna Universal qPCR Mixture. Make sure qPCR machine is measuring FAM at the correct cycle:",
+    "95°C - 3 minutes",
+    "Repeat 40x: 95°C - 10 seconds 60°C - 30 seconds (record FAM in this step)",
+    "Follow protocol from Quick-DNA Fecal/Soil Microbe Miniprep Kit from Zymo Research to extract total genomic DNA from stool sample (both standard curve samples and experimental samples). Stool samples (0.1 g) should be thoroughly vortexed in lysis buffer and then subjected to five freeze-thaw cycles prior to DNA extraction.",
+    "To 100 mg of fecal material (known to not be infected with Cryptosporidium), spike in a known number of Cryptosporidium parvum.",
+    "Calculate delta Ct values for samples that contain the standard curve. Using Microsoft excel (or a similar graphing program) plot the delta Ct values on the Y-axis and the number of oocysts/g on the x-axis. Use the analysis tools to determine the linear equation of your standard curve samples.",
+    "Use the equation determined from your standard control samples, you can estimate the number of oocysts/g in your experimental samples. Y = delta Ct value for experimental sample Solve for X = oocysts/g for your experimental sample"
+  ],
+  "authors": [
+    "botchiesenyo"
+  ],
+  "creator": "mcpawlowic",
+  "published_on": 1641572228,
+  "created_on": 1625824272,
+  "keywords": []
+}

@@ -1,0 +1,38 @@
+{
+  "id": 56692,
+  "title": "Electroporation transformation of Ostreococcus tauri",
+  "uri": "electroporation-transformation-of-ostreococcus-tau-b3kuqkww",
+  "doi": "dx.doi.org/10.17504/protocols.io.b3kuqkww",
+  "description": "{\"blocks\":[{\"key\":\"rept\",\"text\":\"The protocol describes steps for electroporation transformation of Ostreococcus taurii. This protocol is a direct version of published transformation protocol, https://dx.doi.org/10.3791/4074 by van Ooijen et al. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":67,\"length\":21}],\"entityRanges\":[{\"key\":0,\"offset\":160,\"length\":31}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"CD2F412985DD11EC99D00A58A9FEAC02\",\"url\":\"https://dx.doi.org/10.3791/4074\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"cehsm\",\"text\":\"Use caution while handling boiling LMP agarose.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dakkg\",\"text\":\"Follow biosafety guidelines to handle transgenic Ostreococcus \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":49,\"length\":12}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Culture Ostreococcus taurii cells in K-media. The protocol used to prepare K-media is dx.doi.org/10.17504/protocols.io.brv7m69n",
+    "Sub-culture Ostreococcus taurii cells in K-media at 1% dilution every 10 days and grow in a plant growth chamber under constant light and a Lee Moonlight Blue filter 183 ( http://www.leefilters.com/lighting/colour-details.html#183&amp;filter=cf ). Keep light intensity at 20 μmol m-2 s-1 and temperature at 23 °C . Shake the every 1 to 3 days to reduce aggregation.",
+    "Collect 50mL cells for each transformation at a a cell density of 20-30 x 10^6 mL-1, about 7 days after subculturing. Count approximate cell density using a haemocytometer at 40x magnification.",
+    "Prepare DNA by using the Qiagen midi prep kit to obtain 5 µg of pure plasmid DNA in a concentration of 1 µg/µL in sterile deionized water. Digest product with an appropriate single cutter restriction enzyme to linearize the plasmid. Purify through ethanol precipitation or PCR purification kit. Re-suspend or elute the linearized plasmid in appropriate amount of sterile deionized water. For midi-prep, it is best to start inoculating the bacterial culture containing the desired plasmid two days before electroporation.",
+    "Prepare microcentrifuge tubes containing 5 µg linearized plasmid DNA for each transformation. A control with no DNA is necessary for transformation. Keep these tubes on ice, together with a 2 mm electroporation cuvette for each transformation. The plasmid volume should not exceed 10 % (v/v) of the transformation mix.",
+    "Prepare 1 Molarity (M) solution of Sorbitol in ddH2O and add 0.1 % (v/v) pluronic acid F68. Filter sterilize this solution. Prepare 2.2 ml of resuspension buffer for each transformation.",
+    "Add pluronic acid F68 to the cells up to a final concentration of 0.1 % (v/v) . Centrifuge the cells for 00:10:00 at 8000 x g, 10 °C, in a 50 mL tube. Pipette up and down to re-suspend the cells in 1 mL solution of resuspension buffer and transfer to a microcentrifuge tube. Centrifuge the tube for 00:10:00 at 8000 x g, 10 °C, . Repeat this wash.",
+    "Resuspend each final pellet in 40 µL of resuspension buffer. After resuspension, add 40 µL of cells to each tube of linearized DNA. Keep linearized plasmid on ice while mixing gently with a pipette, and transfer to an electroporation cuvette. Use a cut tip or 1000 µL tip to avoid damaging the cells.",
+    "Electroporate the cells using the following electroporation parameters, Gene Pulser Xcell Electroporation Systems (Electroporator, Biorad, 1652660, https://www.bio-rad.com/en-ca/sku/1652660-gene-pulser-xcell-total-system?ID=1652660 , https://s3.amazonaws.com/protocols-files/private/724e3eeddfd109fa5bf5a1bd6e3488d65941e11d17962d3e1f78efc6fab5026c/cehkh4ve.jpg ) Voltage: 6 kV cm-1 (since we are using 2 mm cuvette, the voltage setting would be 1200 V) Resistance: 600 Ω Capacitance: 25 μF",
+    "Incubate cells in cuvettes at Room temperature for 00:10:00 . Prepare T25 tissue culture flasks by adding 30 mL of fresh K-media and labeling each. Take 1 mL of K-media out of a flask and add it to the corresponding cuvette, making sure to pipette up and down carefully to move the globule of cells into the correct flask. Make sure not to disturb the cell globule.",
+    "Place cells in the plant growth chamber for 01:00:00 to 02:00:00 to allow them to recover. Re-suspend by shaking flasks, making sure no clumps are visible. Let cultures recover overnight in the growth chamber.",
+    "Autoclave 2.1 Mass Percent LMP agarose in ddH2O and keep at 65 °C to 90 °C , under constant stirring. For each transformation reaction, prepare 8x 55 mm diameter petri dishes and 8x 15 mL tubes. Each tube should contain 9 mL of K-media and 2 mg/mL G418. 2.1% LMP agarose can be prepared in advance. Make sure to bring it to the desired temperature before staring the experiment.",
+    "Take the cells from the growth chamber into a sterile flow hood. Add 1 mL of LMP agarose to each of the 15 mL tubes with 9 mL K-media, close and mix by inverting. Mix 0.5 mL of transformed cells and quickly pour it into a 55 2 mL mm diameter plate. Repeat for the remaining tubes. If the LMP agarose solidifies or the temperature drops below 65 deg C, reheat the LMP agarose and continue with including the cells.",
+    "Allow agarose to set by leaving plates open inside the flow hood for 01:00:00 , then close the plates. Place the plates in large square Petri dishes, with four plates per square dish. Parafilm seal the square plates and carefully set the plates in the growth chamber. Care should be taken to avoid breaking the agarose.",
+    "The transformation plates should host colonies within 2 to 3 weeks. Pick up colonies using a 200 µL pipette with tips cut off.",
+    "Use a 24 well plate to transfer cell 24-50 colonies from each transformation into 2 mL of K-mdeia with 2 mg/mL G418 each. Parafilm seal the plates and place in the growth chamber.",
+    "After a week, transfer 100 uL of each well into 2 mL of fresh K-mdeia with 2 mg/mL G418 into another 24 well plate and grown for a week. Use colony PCR to analyze stable integration of the plasmid DNA. Transformation efficiency is around 300 CFU/ug plasmid Representative gel image showing DNA bands for positive Ostreococcus transformants."
+  ],
+  "authors": [
+    "Anbarasu Karthikaichamy",
+    "Shikha Adhikari"
+  ],
+  "creator": "Anbarasu Karthikaichamy",
+  "published_on": 1644003431,
+  "created_on": 1641591846,
+  "keywords": []
+}

@@ -1,0 +1,38 @@
+{
+  "id": 220534,
+  "title": "Image-iT™ LIVE Green Caspase Apoptosis Detection ",
+  "uri": "image-it-live-green-caspase-apoptosis-detection-g3kwbykxf",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvrqb5blmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"27cee\",\"text\":\"This protocol describes a fluorescence-based method to detect apoptosis in cultured cells using the FLICA‱ reagent, which covalently binds active caspases. Cells are cultured in black, clear-bottom 96-well plates suitable for high-content imaging. The assay includes live-cell incubation with FLICA‱, optional nuclear staining with Hoechst 33342, and subsequent washing steps. Depending on the experimental goals, cells can either be imaged live or processed for immunofluorescence analysis by fixation, permeabilization, and antibody staining. The protocol concludes with imaging and quantification of apoptotic signals, allowing for flexible integration with multi-channel fluorescence microscopy and image analysis pipelines.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":105,\"length\":1},{\"key\":1,\"offset\":298,\"length\":1}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"ACAD55E24C7011F094360A58A9FEAC02\",\"name\":\":tm:\"}},\"1\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"ACAD56194C7011F094360A58A9FEAC02\",\"name\":\":tm:\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Culture cells in a black, clear-bottom 96-well plate suitable for fluorescence imaging.",
+    "Allow cells to reach appropriate confluency before staining.",
+    "Prepare FLICA Reagent Working Solution: Dilute 30X FLICA™ reagent (prepared as per kit instructions) 1:30 in cell culture medium. Mix thoroughly.",
+    "Prepare Hoechst 33342 Staining Solution: Dilute Hoechst 33342 1:1,000 in 100 µL of culture medium per well.",
+    "Incubation: Add enough FLICA solution to cover the cells (100 µL per well for a 96well plate).",
+    "Rinse: Remove the FLICA solution. Gently rinse cells once with fresh culture medium.",
+    "Incubate 60 minutes under standard culture conditions, protected from light.",
+    "Stain: Add to each well and incubate for 2–10 minutes under standard culture conditions, protected from light.",
+    "Wash Cells Wash cells twice with 1X wash buffer (prepared according to kit instructions).",
+    "Fix cells with 4% paraformaldehyde (PFA) for 15 minutes at room temperature.",
+    "Wash with PBS.",
+    "Permeabilization and Blocking: Incubate with 0.1% Triton X-100 in PBS containing 5% Normal Donkey Serum (NDS) for 1 hour at room temperature.",
+    "Primary Antibody Incubation: Incubate with primary antibody (diluted in blocking buffer) overnight at 4°C.",
+    "Wash 3x with PBS.",
+    "Secondary Antibody Incubation: Incubate with fluorescent secondary antibody for 2 hours at room temperature.",
+    "Wash 3x with PBS.",
+    "Image cells directly in the 96-well plate using a fluorescence microscope. Use appropriate filter sets to detect FLICA™, Hoechst, and any antibody-based fluorophores.",
+    "Analyze fluorescence intensity using an image analysis software (e.g., ImageJ, CellProfiler). Quantify: FLICA signal for apoptotic cells. Hoechst for total nuclei count. (Optional) Antibody signal for additional markers."
+  ],
+  "authors": [
+    "Elena Coccia"
+  ],
+  "creator": "Elena Coccia",
+  "published_on": 1751321671,
+  "created_on": 1750268202,
+  "keywords": []
+}

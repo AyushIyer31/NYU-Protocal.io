@@ -1,0 +1,26 @@
+{
+  "id": 114508,
+  "title": "Mouse CGRm39 tdTomato Trace Alignment",
+  "uri": "mouse-cgrm39-tdtomato-trace-alignment-dt3k6qkw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygxw3bzv8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"ft2ht\",\"text\":\"This pipeline is modification of standard STARsolo pipeline to enable cell lineage tracing. Here we start with Mouse genome reference CRCm39 and Gencode M27 gene annotation. For lineage tracing, cells were annotated based on expression of transcripts mapping to either the 871bp region overlapping the 3x SV40 polyA or the 1kb region overlapping the bGH polyA following the tdTomato coding sequence. These regions which are labeled site A/B were chosen because of the higher sequencing depth. A simple call procedure can be used to annotate a cell as ‘Traced’ if \\u003e50% of transcripts from Site B, the recombined allele. \\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "The STARsolo algorithm is used as a fast, memory-efficient alternative to 10x Genomics CellRanger.STARsolo directly aligns raw sequencing reads from scRNA-seq data to the human reference genome. Like CellRanger, STARsolo performs: Barcode and UMI (Unique Molecular Identifier) extraction: Identifies cell barcodes and UMIs from the raw sequencing reads.Read alignment: Reads are aligned to the genome using STAR.Transcript quantification: Assigns reads to genes based on the alignment to compute gene expression per cell.Gene-cell matrix generation: Produces a matrix similar to CellRanger&#39;s output, containing gene expression counts across cells. Achieving CellRanger v3.0 Output: To match the output of CellRanger v3.0, specific parameters are set within the STARsolo command, particularly:--soloType CB_UMI_Simple: Defines the type of input for the barcodes and UMIs.--soloCBwhitelist: Uses the 10x Genomics whitelist to ensure correct identification of valid barcodes.--soloUMIdedup: UMI deduplication is set to handle potential PCR artifacts by counting each transcript only once per UMI.--soloFeatures: This is set to generate gene expression matrices, capturing standard features like gene and transcript annotations.--soloCellFilter EmptyDrops_CRPost-Processing:Once the alignment and quantification are completed, the resulting gene-cell matrix is further processed using SoupX to remove ambient RNAs",
+    "We need to add the tdTomato construct sequence to the GRCm39 reference genome. The fasta file is available in the files section cat tdTomato-no-ROSA26.fasta GRCm39.genome.fa &gt; GRCm39.genome.tdTomato.fa",
+    "We need to add features for this sequence. We create 2 features SiteA 871bp region overlapping the 3x SV40 polyA and Site B 1kb region overlapping the bGH polyA following the tdTomato coding sequence. these sites can be appended to the Gene Annotation GTF cat gencode.vM27.annotation.gtf features.gtf &gt; gencode.vM27.annotation_Tdtomato.gtf",
+    "Create a STAR reference STAR --runThreadN 20 \\ --runMode genomeGenerate \\ --genomeDir mm39_tdTomato_STAR \\ --genomeFastaFiles GRCm39.genome.tdTomato.fa \\ --sjdbGTFfile gencode.vM27.annotation_Tdtomato.gtf \\ --sjdbOverhang 100",
+    "By adding in the Site A/B features these will be counted and present in the count matrix. SiteA would have counts from the un-recombined allele and SiteB from the recombined allele. A simple ratio of SiteB/SiteA+SiteB can be used to define a cutoff to determine a &#34;traced&#34;."
+  ],
+  "authors": [
+    "Michael Morley",
+    "Joseph.Planer "
+  ],
+  "creator": "Michael Morley",
+  "published_on": 1733510245,
+  "created_on": 1733501957,
+  "keywords": []
+}

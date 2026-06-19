@@ -1,0 +1,41 @@
+{
+  "id": 225319,
+  "title": "TRT/SDS Sol/Insol Fractionation for Lysate prep from Mouse Brains",
+  "uri": "trt-sds-sol-insol-fractionation-for-lysate-prep-fr-g8afbzsbp",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l21qoqg1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"bihqe\",\"text\":\"This protocol describes a sequential detergent-based fractionation method for mouse brain tissue. Homogenized samples are sonicated, with aliquots reserved as total lysate. Stepwise extraction with Triton X-100 and SDS yields soluble and insoluble protein fractions, while remaining pellets may be saved for formic acid extraction. Protein concentrations are determined by BCA assay, and fractions are stored at −80 °C for downstream biochemical analysis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"d7sac\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"p2qee\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"4j9rj\",\"text\":\"- Keep samples on dry ice until ready and perform homogenization/processing on ice to minimize proteolysis; add protease and phosphatase inhibitors to lysis buffer.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"94ma6\",\"text\":\"- SDS will precipitate out of Lysis Buffer when cold; gently warming for a few seconds may be necessary to re-dissolve.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"pm6qu\",\"text\":\"- Rinse and dry tissue grinder between samples (two water changes then 70% ethanol) to avoid cross-contamination.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"rjxvw\",\"text\":\"- 2 mL and 1.5 mL Eppendorf tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mo49r\",\"text\":\"- Dry ice\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5whqq\",\"text\":\"- Lysis Buffer: 50 mM Tris-HCl, pH 7.4; 175 mM NaCl; 5 mM EDTA (add protease and phosphatase inhibitors)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":12}],\"entityRanges\":[],\"data\":{}},{\"key\":\"qsobe\",\"text\":\"- Protease and phosphatase inhibitors\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bobsr\",\"text\":\"- Motorized tissue grinder\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"coocm\",\"text\":\"- Triton X-100 (to make final concentration 1%; e.g., 10 µl of 10% Triton X-100 to 100 µl homogenate; example: 50 µl of 10% Triton to 500 µl brain homogenate)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"crwlr\",\"text\":\"- SDS (to make final concentration 0.1%; e.g., 1 µl of 10% SDS to 100 µl homogenate)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8ywrp\",\"text\":\"- Kimwipe\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"grbdc\",\"text\":\"- 70% ethanol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1e7ha\",\"text\":\"- Sonicator (able to sonicate 10 sec on ice; example setting ‘8’ for 10 sec)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"orbuo\",\"text\":\"- Centrifuge capable of 15,000 × g at 4°C\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"l9h43\",\"text\":\"- Reagents/equipment for BCA protein assay\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ahx2j\",\"text\":\"- Tubes for aliquoting and -80°C freezer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jesom\",\"text\":\"- (Optional) formic acid for subsequent formic acid fractionation\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Weigh sample and put in a 2 mL Eppendorf tube. Keep tubes on dry ice until ready.",
+    "Add Lysis Buffer (1 ml per 100 mg) with protease and phosphatase inhibitors, allow the sample to thaw briefly, and homogenize using motorized tissue grinder at a medium speed to avoid excess frothing. Place homogenized samples on ice",
+    "Use ½ volume of lysis buffer to homogenize, transfer to new 1.5 mL Eppendorf tube on ice, add remaining ½ volume of lysis buffer to original tube and homogenize again to rinse off the tissue grinder and move to the Eppendorf tube",
+    "Rinse the tissue grinder well between samples by operating in two changes of water, followed by 70% ethanol, and dry with a Kimwipe.",
+    "Sonicate for 10 seconds on ice (use setting ‘8’ for 10 sec).",
+    "Set aside 100 µl and mark as “total lysate”.",
+    "Add Triton X-100 to a final concentration of 1% (10 µl of 10% Tx-100 to 100 µl homogenate).",
+    "Add SDS to a final concentration of 0.1% (1 µl of 10% SDS to 100 µl homogenate).",
+    "Incubate samples for 30 minutes on ice, then BCA/Make samples and freeze at -80°C.",
+    "Add Triton X-100 to a final concentration of 1% (e.g., 50 µl of 10% Triton to 500 µl brain homogenate).",
+    "Incubate samples for 30 minutes on ice.",
+    "Centrifuge at 15,000 × g for 60 minutes at 4°C.",
+    "Carefully remove supernatant to a fresh tube. This is the “Triton soluble fraction”.",
+    "Resuspend the pellet in Lysis Buffer + 2% SDS (200 µl per pellet) with protease and phosphatase inhibitors and sonicate for 10 seconds Note: SDS will precipitate out of Lysis Buffer when cold; gently warming for a few seconds may be necessary to re-dissolve.",
+    "Centrifuge at 15,000 × g for 10 minutes and carefully remove supernatant to a fresh tube. This is the “SDS soluble fraction”.",
+    "STOP here and save pellet at -80°C for formic acid fractionation.",
+    "Determine protein concentration using BCA assay.",
+    "Aliquot each fraction into several tubes to minimize freeze‑thawing and store at -80°C."
+  ],
+  "authors": [
+    "Kasandra Scholz",
+    "Mary Gannon",
+    "Bing Wang",
+    "Talene Yacoubian"
+  ],
+  "creator": "Jhodi Webster",
+  "published_on": 1756459126,
+  "created_on": 1756046264,
+  "keywords": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": 76247,
+  "title": "Nuclei isolation from frozen human brain samples for snRNA-seq",
+  "uri": "nuclei-isolation-from-frozen-human-brain-samples-f-cnpxvdpn",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlkk9ydl5r/v2",
+  "description": "{\"blocks\":[{\"key\":\"48rq\",\"text\":\"Protocol to isolate nuclei from snap-frozen human brain samples for sn-RNAseq\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"7n51l\",\"text\":\"Sectioned or finely chopped frozen human tissue (10-30 mg).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5e3b\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"66pnq\",\"text\":\"Solutions (Detailed recipes here)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":33}],\"entityRanges\":[{\"key\":0,\"offset\":28,\"length\":4}],\"data\":[]},{\"key\":\"3q28g\",\"text\":\"Lysis Buffer (LB, 4ml/sample)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":14,\"length\":2}],\"entityRanges\":[],\"data\":[]},{\"key\":\"bj752\",\"text\":\"Wash and Resuspension Buffer (WRB, 7ml/sample)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":30,\"length\":3}],\"entityRanges\":[],\"data\":[]},{\"key\":\"7p2a5\",\"text\":\"Sucrose Buffer (11ml/sample)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"1b0eu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"flqo4\",\"text\":\"2000U of RNAse inhibitor/sample\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"8F273E00E34E11EB87914DE964B646C4\",\"url\":\"https://docs.google.com/spreadsheets/d/1xLOY0Qx6AFJc44yVsj36V9lNGjd0-Bj8vMnH-1hVHJc/edit?usp=sharing\"}}}}",
+  "steps": [
+    "Check if the Rotor SW32Ti rotor is at 4°C",
+    "Clean your work area (bench and pipettes) with RNAse Zap.",
+    "Add RNAse inhibitor (Sigma cat.# 3335402001 ) to lysis buffer (LB) and wash and resuspension buffer (WRB) to a final concentration of 0.2U/ul.",
+    "Put LB and sucrose solutions on ice; also label the glass dounce homogenizer (Thomas Scientific; Catalog # 3431D76; size A) and the centrifuge tubes (Beckman Coulter cat.# 355631) and put them on ice.",
+    "Cut the tip of a p1000 pipette tip. Use it to add 1ml of LB in the sample eppendorf, pipette-mixing the LB-sample mix thoroughly.",
+    "Transfer the LB-sample mix to a labelled glass dounce homogenizer . Add 2ml of LB, bringing the total volume in the douncer to 3mL. On ice You can add 1ml of LB to the sample eppendorf to collect any remaining tissue.",
+    "Dounce tissue on ice with 10-15 strokes or until no chunks of tissue are visible. On ice",
+    "Transfer homogenized tissue in LB into a labeled thick wall ultracentrifuge tube on ice (Beckman Coulter; 355631). On ice",
+    "Carefully pipette 9 mL of Sucrose solution to the bottom of the tube containing LB. Be careful not to introduce bubbles: Aspirate 10ml with a serological pipette and dispense 9ml. You should see two clearly separated phases: sucrose on the bottom and a cloudy homogenate on top. On ice",
+    "When you are done with all samples weigh them and bring to the same weight by adding LB.",
+    "Load the samples to SW32Ti rotor (needs to be swing bucket). If using less than 6 samples still balance with empty buckets. 107163 rcf, 4 °C, 2 hours 30 minutes, 24400 RPM on SW32Ti Rotor",
+    "After the spin, transfer samples on ice and carefully remove the supernatant using a P200 tip cut at an angle and vacuum. Make sure not to touch the bottom (stick to the wall and tilt the tube), but remove all the liquid. Carefully pipette 200uL of WRB on the bottom. Wait 20 min on ice.",
+    "Meanwhile, transfer materials to the tissue culture room. Prepare eppendorf tubes with 10ul of DAPI for each sample.",
+    "Add 800ul of WRB (for a total of 1ml of WRB)and resuspend cells. On ice Pipette mix thoroughly the nuclei suspension for 2 minutes using a P200",
+    "Filter twice using Miltenyi Pre-separation filters (30um). (130-041-407)",
+    "Add 10ul of each filtered sample to 10ul of DAPI. Count nuclei in each sample using a hemocytometer. You should have at least 30,000 nuclei/sample 1mg of human cortex typically yields ~10 4 nuclei",
+    "Centrifuge nuclei using a swing bucket rotor 500 rcf, 4 °C, 10 minutes",
+    "Resuspend nuclei at 1,000 nuclei/ul. Pipette mix thoroughly the nuclei suspension for 2 minutes using a P200. Confirm the cell concentration in the hemocytometer. If clumps of nuclei are still observed, pipette mix for one more minute.",
+    "Load 16,500 nuclei/10x well to aim for a 10k nuclei recovery"
+  ],
+  "authors": [
+    "Marcos Nascimento"
+  ],
+  "creator": "Marcos Nascimento",
+  "published_on": 1675291920,
+  "created_on": 1675291800,
+  "keywords": []
+}

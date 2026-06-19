@@ -1,0 +1,26 @@
+{
+  "id": 189166,
+  "title": "Post-Xenium H&E staining and imaging protocol",
+  "uri": "post-xenium-h-amp-e-staining-and-imaging-protocol-f4ynbqxvf",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgqep6xgk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"2cc9g\",\"text\":\"We describe the process we followed for H\\u0026E imaging following the Xenium Spatial Transcriptomics assay.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "10x_CG000613_Demonstrated_Protocol_Xenium_H_EStaining_RevB.pdf We used the guide provided by 10x Genomics for staining following a Xenium assay. Link: https://cdn.10xgenomics.com/image/upload/v1704391942/support-documents/10x_CG000613_Demonstrated_Protocol_Xenium_H_EStaining_RevB.pdf",
+    "After coverslipping and drying, image slides at 40X in brightfield.",
+    "parse_ndpi.py After the images are captured, split images from TMA using imaging software or code. We used a Python script to split serial sections of each .ndpi image corresponding to different slides. Sample code is attached."
+  ],
+  "authors": [
+    "Joanna Bi",
+    "Chenchen Zhu",
+    "Thomas Karathanos",
+    "Rongduo Han"
+  ],
+  "creator": "Thomas Karathanos",
+  "published_on": 1745854313,
+  "created_on": 1745852760,
+  "keywords": []
+}

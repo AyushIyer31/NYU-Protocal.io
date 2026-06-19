@@ -1,0 +1,36 @@
+{
+  "id": 88515,
+  "title": "Cryo-EM Grid preparation",
+  "uri": "cryo-em-grid-preparation-c2pbydin",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj3dexlk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"a4vde\",\"text\":\"This protocol details Cryo-EM grid preparation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9ukti\",\"text\":\"Materials\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6hv0t\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e4t9b\",\"text\":\"PI3KC3-C1~RAB1A sample with n-Octyl-β-D-Glucopyranoside (OG) at a final concentration of 0.05%\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a7osa\",\"text\":\"QUANTIFOIL R 2/1 mesh Cu 300 holey carbon grids\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"13jb0\",\"text\":\"Vitrobot cryo-plunger (Thermo Fisher Scientific)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"339rv\",\"text\":\"Cryo-EM microscope (300 kV Titan Krios with X-FEG and energy filter)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"29lta\",\"text\":\"K3 Summit direct electron detector (Gatan)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"39lvc\",\"text\":\"SerialEM software\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2dfpk\",\"text\":\"Liquid nitrogen\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4hb7q\",\"text\":\"Humidity control system\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Freshly glow-discharge the QUANTIFOIL R 2/1 mesh Cu 300 holey carbon grids using a glow-discharge system (PELCO easiGlow) at 25 mA current for 00:01:00 .",
+    "Mix the PI3KC3-C1~RAB1A sample with 0.05% n-Octyl-β-D-Glucopyranoside (OG) to achieve the desired final concentration.",
+    "Apply a small volume (typically 3-4 µL ) of the sample onto the glow-discharged side of the grids.",
+    "Load the grids with the sample into the Vitrobot cryo-plunger.",
+    "Set the Vitrobot to the following conditions:",
+    "Maintain 100% humidity inside the chamber.",
+    "Set the temperature to 4 °C .",
+    "Wait for 00:00:03 .",
+    "Blot using a blotting force of -15 (may need calibration depending on your particular instrument) .",
+    "Prepare the Cryo-EM microscope (300 kV Titan Krios) for data acquisition.",
+    "Used X-FEG and an energy filter set to 20 eV.",
+    "Use SerialEM software for automated data collection.",
+    "Set the following parameters for data collection: Magnification: 81,000x. Super-resolution pixel size: 0.525 Å. Defocus range: -0.8 to -2.2 micrometers. Collect 50-frame image stacks.",
+    "Initiate the data collection process using the specified parameters.",
+    "Monitor the data acquisition progress and ensure that the images are being recorded.",
+    "Each movie has a cumulative electron dose of 50 e/Å²."
+  ],
+  "authors": [
+    "Annan SI Cook"
+  ],
+  "creator": "Annan SI Cook",
+  "published_on": 1696107411,
+  "created_on": 1695386166,
+  "keywords": []
+}

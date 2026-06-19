@@ -1,0 +1,42 @@
+{
+  "id": 53090,
+  "title": "eDNA extraction: phenol-chloroform-isoamyl alcohol DNA purification from filters stored in Longmire buffer",
+  "uri": "edna-extraction-phenol-chloroform-isoamyl-alcohol-bx4apqse",
+  "doi": "dx.doi.org/10.17504/protocols.io.bx4apqse",
+  "description": "{\"blocks\":[{\"key\":\"bk9vh\",\"text\":\"This is an organic DNA extraction method for filters preserved in 2 ml of Longmire buffer that uses a phase lock to allow easy decanting of the aqueous layer instead of pipetting.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"5bugt\",\"text\":\"To make TlowE: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"73acf\",\"text\":\"To make 50 ml\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3g3ub\",\"text\":\"1. 500 µl of 1 M Tris-HCL, pH 8.0\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"804dp\",\"text\":\"2. 10 µl of 0.5 M EDTA, pH8.0\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6dp9h\",\"text\":\"3. up to 50 ml of nuclease free H2O\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"eou0e\",\"text\":\"Phenol and Chloroform are very corrosive and irritant chemicals. Always perform these extractions in fume hoods, wear a lab coat, safety glasses, nitrile gloves and any other safety equipment. Also, always use resistant plasticware Please refer to Safety Datasheets for more information. Phenol is volatile and can burn your skin and damage your eyes. Chloroform can make you faint and can even be lethal\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"3ujiq\",\"text\":\"\\tproteinase k 20 mg ml-1\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":23,\"length\":2}],\"entityRanges\":[],\"data\":{}},{\"key\":\"bb33n\",\"text\":\"\\tDow Corning high vacuum grease 5.3 oz \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"79jnf\",\"text\":\"\\tPhenol-chloroform-isoamyl (25:24:1)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8tje9\",\"text\":\"\\tChloroform:isoamyl 24:1\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2blpl\",\"text\":\"\\tIsopropyl\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d0es8\",\"text\":\"\\tEthanol (95%)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aqgjg\",\"text\":\"\\t5 ml LoBind tubes Eppendorf\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1fnba\",\"text\":\"\\tPipettes and tips (5 ml, 1 ml, 200 µl)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8uqdq\",\"text\":\"\\t1.5 ml LoBind tubes Eppendorf\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1n8sb\",\"text\":\"\\tZymo One-Step inhibitor removal plates\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"26b13\",\"text\":\"\\tIncubator\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1663m\",\"text\":\"\\tCentrifuge with a rotor with capacity for 5 ml tubes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"scog\",\"text\":\"\\tTube racks (5 ml, 2 ml)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"75erq\",\"text\":\"\\tTube squeezing tool and sterile 15 ml syringes with wings or rings for grease dispensing\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4bska\",\"text\":\"\\tLaboratory chemical fume hood or biosafety cabinet\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"64r9g\",\"text\":\"\\t5 M NaCl\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ci7s9\",\"text\":\"\\tTlowE (Tris-HCl, EDTA, H2O)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "heat-shockFilters in 2 ml of Longmire buffer at 95C for 5&#39; and then allow samples to cool to room temperature",
+    "digestionadd 100 µl proteinase K (final concentration 1 mg ml-1)",
+    "incubation56C at 120 rpm for 2h",
+    "phase lock set upadd ca. 800 µl of vacuum grease with a syringe onto the wall of the tube of the 5 ml tube",
+    "PCI (25:24:1)add 2 ml of phenol-chloroform-isoamyl (25:24:1) pH 8",
+    "centrifugationshake well and spin 13.3 x g for 5&#39; at 4C",
+    "phase lock set upplace ca. 800 µl of vacuum grease in 2 sets of empty tubes for CI. (These can be prefilled for convenience)",
+    "centrifugationshake and spin 13.3 x g for 5&#39; at 4C",
+    "CIadd 2.2 ml of chloroform:isoamyl 24:1 and decant aqueous layer from step 9",
+    "centrifugationshake and spin 13.3 x g for 5&#39; at 4C",
+    "Isopropanoladd 2 ml of isopropanol (can be prefilled for convenience), add 80 µl of 5M NaCl and decant aqueous layer from step 11",
+    "mixinginvert several times",
+    "precipitationovernight (or 2 h) at room temperature",
+    "centrifugationspin 13.3 x g for 30&#39; at 4C",
+    "wash x2pour liquid off slowly and add 800 µl of ice cold 70% EtOH",
+    "centrifugationshake and spin 13.3 x g for 5&#39; at 4C and repeat wash",
+    "dryingpour liquid off slowly and allow tubes to dry for 1 h or until dry",
+    "resuspensiononce they are dry, resuspend in 100 µl TE buffer (warm - 37C)",
+    "storagestore in the freezer (-20-80 C)",
+    "CI add 2.2 ml of chloroform:isoamyl 24:1 and decant aqueous layer from step 6. Important: only add the chloroform just before use (while the tubes with PCI are in the centrifuge) so it does not affect the phase lock if grease is at the bottom."
+  ],
+  "authors": [
+    "Ana Ramón-Laca",
+    "Abigail Wells",
+    "Linda Park"
+  ],
+  "creator": "Ana Ramón-Laca",
+  "published_on": 1631142023,
+  "created_on": 1631138096,
+  "keywords": []
+}

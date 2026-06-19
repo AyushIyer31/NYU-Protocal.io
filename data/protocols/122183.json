@@ -1,0 +1,39 @@
+{
+  "id": 122183,
+  "title": "Assigning scRNA-seq data to known and de novo cell types using CellAssign\n",
+  "uri": "assigning-scrna-seq-data-to-known-and-em-de-novo-e-d3jf8kjn",
+  "doi": "dx.doi.org/10.21203/rs.2.10442/v1",
+  "description": "{\"blocks\":[{\"key\":\"8xkmi\",\"text\":\"Assigning cells to known or de-novo cell types is an important step in the analysis of single-cell RNA-sequencing (scRNA-seq) data. This protocol outlines how to use the CellAssign R package to accomplish this.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ie2jc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"a2i4d\",\"text\":\"Assigning cells to known or de-novo cell types is an important step in the analysis of single-cell RNA-sequencing (scRNA-seq) data. CellAssign is a recently published statistical model that models the over-expression of a set of marker genes for each pre-specified cell type. CellAssign then computes a probability that each cell is of a given cell type, or is of an “unknown” cell type (does not reflect the expected expression of any of the specified cell types). These assignments can then be used to (i) study the cell type composition of each sample, (ii) focus in on a given cell type for further analysis (e.g. unsupervised clustering), or (iii) remove nuisance cell types.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qxaf2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"8mxtl\",\"text\":\"Software:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7yxyv\",\"text\":\"R computing environment (\\u003e version 3.5)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"i5ia0\",\"text\":\"The devtools R package\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"gapes\",\"text\":\"The cellassign R package (https://github.com/Irrationone/cellassign)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":26,\"length\":41}],\"data\":{}},{\"key\":\"szvlp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qq83n\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"42D1351AEF0E11EF9E6E0A58A9FEAC02\",\"url\":\"https://github.com/Irrationone/cellassign\"}}}}",
+  "steps": [
+    "install.packages(&#34;tensorflow&#34;) tensorflow::install_tensorflow()",
+    "devtools::install_github( &#34;Irrationone/cellassig n&#34;) and load by calling library(cellassign)",
+    "https://bioconductor.org/packages/release/bioc/html/SingleCellExperiment.html We will assume this object is “sce”. In rowData(sce) should be fields “ID”, corresponding to ensembl gene ID, and “Symbol”, corresponding to HGNC symbol.",
+    "sce &lt;- computeSumFactors(sce)",
+    "This is in the form of a list, where the names of the list are the cell types and the contents are marker genes for the cell types. An example can be found in the CellAssign package by calling data(example TME markers). As a simple example, we can create one for T cells and epithelial cells: marker list &lt;- list(t cells = c(“PTPRC”, “CD2”), epithelial = “EPCAM”) Note that there is no requirement marker genes should be mutually exclusive or not expressed in other cell types.",
+    "marker_mat &lt;- marker_list_to_mat(marker_list) Optional: an “unknown” cell type may be included by passing include other = TRUE to marker list to mat",
+    "mm &lt;- match(rownames(marker_mat), rowData(sce)$Symbol)",
+    "sce_marker &lt;- sce[mm,]",
+    "fit &lt;- cellassign(exprs obj = sce marker, marker_gene_info = marker_mat, s = sizeFactors(sce_marker)) Note that covariates can be included at this point by passing an argument named “x” to cellassign. For more information see the vignette below.",
+    "print(fit$cell_type)",
+    "print(fit$mle_params) This includes the cell assignment probabilities in fit$mle_params$gamma",
+    "https://irrationone.github.io/cellassign/introduction-to-cellassign.html",
+    "Common errors include: Including cells in the SingleCellExperiment or gene expression matrix passed to “cellassign” that have no counts remaining, after subsetting to marker genes only. Not subsetting to marker genes only, ie passing a full SingleCellExperiment with all genes to “cellassign”. The marker matrix and expression data passed to cellassign should be for marker genes only.",
+    "Time end-to-end for a beginner user should be around 2 hours.",
+    "The resulting object returned by “cellassign” includes cell type assignments and maximum likelihood parameter estimates. This is in the form of a “cellassign_fit” object. This allows users to perform useful downstream analyses such as correlating cell type composition with phenotypes or further unsupervised analysis on cell subsets.",
+    "S.P.S. is a founder, shareholder, and consultant of Contextual Genomics Inc.",
+    "Probabilistic cell-type assignment of single-cell RNA-seq for tumor microenvironment profiling by Allen W. Zhang, Ciara O’Flanagan, Elizabeth A. Chavez, Jamie L. P. Lim, Nicholas Ceglia, Andrew McPherson, Matt Wiens, Pascale Walters, Tim Chan, Brittany Hewitson, Daniel Lai, Anja Mottok, Clementine Sarkozy, Lauren Chong, Tomohiro Aoki, Xuehai Wang, Andrew P Weng, Jessica N. McAlpine, Samuel Aparicio, Christian Steidl, Kieran R. Campbell, Sohrab P. Shah published in Nature Methods on 09 Sep, 2019 https://dx.doi.org/10.1038/s41592-019-0529-1"
+  ],
+  "authors": [
+    "Allen W Zhang",
+    "Kieran R Campbell",
+    "Sohrab P Shah"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1574256143,
+  "created_on": 1574256143,
+  "keywords": []
+}

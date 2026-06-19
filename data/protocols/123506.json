@@ -1,0 +1,43 @@
+{
+  "id": 123506,
+  "title": "Preparation of 1,5-DAN Hydrochloride Matrix and Deposition using an HTX M5 sprayer for MALDI Mass Spectrometry Imaging of ATP",
+  "uri": "preparation-of-1-5-dan-hydrochloride-matrix-and-de-d4us8wwe",
+  "doi": "dx.doi.org/10.17504/protocols.io.261gerywol47/v1",
+  "description": "{\"blocks\":[{\"key\":\"d2mre\",\"text\":\"This protocol details the necessary steps for preparing 1,5-diaminonapthalene hydrochloride matrix and spraying onto tissues sections for analysis by MALDI Mass Spectrometry Imaging\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"31leq\",\"text\":\"Please ensure that all procedures are Risk Assessed and that all local chemical handling guidelines are followed. Some of the chemicals used in this protocol are hazardous and users should make themselves aware of these risks and the appropriate handling and safety measures. Always ensure that appropriate PPE is worn in the laboratory environment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"2k1q6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"cte8s\",\"text\":\"Health and Safety:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9cnbo\",\"text\":\"Safety glasses or goggles, proper gloves, and a lab coat required. The area should be adequately vented and a lab mat placed underneath all solutions.\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"faq3l\",\"text\":\"2. Warning: 1,5-diaminonaphthalene is a category 2 carcinogen.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"58kf6\",\"text\":\"Specialist Equipment: HTX M5 Sprayer, HTX Imaging\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "The hydrochloride derivative of 1,5-diaminonapthalene must be freshly prepared.",
+    "Amounts can be adjusted as required, but the following is suitable for 10mL: 500 µL of 1M Hydrochloric Acid Contributed by users and 4 mL of water Contributed by users were sequentially added to 39.5 mg of 1,5-diaminonapthalene.",
+    "Vortex and Sonicate until completely dissolved",
+    "Add 4.5 mL Ethanol P212121 Catalog #BE-BDH1156",
+    "Use immediately for matrix spraying. Do not store, always make a fresh solution.",
+    "Remove slides from the freezer and place in a vacuum desiccator for 00:30:00",
+    "Scan for autofluorescence on Zeiss Axio Scanner (or similar instrument).",
+    "There are a number of exisiting protocols that describe the HTX M5 sprayer setup (see citation below). The sprayer has a 5mL loop for holding matrix, so you must ensure that you prepare in excess of 5mL of the necessary solution (as in section 1 of this protocol). Angela R.S. Kruse, Martin Dufrense, Jamie Allen, Danielle Gutierrez, Jeff Spraggins. Deposition of matrix using an M5 TM sprayer for high resolution MALDI analysis. protocols.io. https://protocols.io/view/deposition-of-matrix-using-an-m5-tm-sprayer-for-hi-b9wyr7fw",
+    "Increase the Nitrogen gas flow to 10 psi, turn on the power supply to the pump, turn on the power supply to the HTX M5 sprayer unit and initialise control via the laptop.",
+    "Ensure that the pump is properly purged and flush the sample loop (with the valve in the LOAD position) with at least 10 mL of 100% methanol Contributed by users",
+    "Switch the valve to the SPRAY position and allow the pump to flush the line and sprayer-head for 00:10:00 at 0.25mL/min. On completion of this step the sprayer is ready-to-use.",
+    "In the HTX control software select an appropriate 1,5-DAN HCl specific method; this includes the following parameters: 1350mm/min Nozzle Velocity 40 °C Nozzle Temperature 70 °C Heated Block Temperature 0.150 mL/min Flow Rate 1.5 mm Track Spacing &#34;CC&#34; Pattern 40 mm Nozzle Height 0 sec drying time 5 passes",
+    "With the Injection Valve in the LOAD position, fill the entire loop with the matrix solution prepared in Section 1. Carefully watch the transparent tubing on the loop outlet line to determine when the loop is full and free of any air bubbles introduced.",
+    "Run the selected method from the HTX control software. It will ask you to ensure that you have loaded the matrix (Step 10) and switch the valve to the SPRAY position; do this and confirm in the software. The sprayer will then proceed to spray the sample.",
+    "Place the slide onto the base plate of the HTX sprayer and tape down to prevent it being moved about by the nitrogen gas from the Nozzle during spraying.",
+    "When the run has finished, the software will prompt you to switch the valve to the LOAD position and click continue. The software will show an estimation of the volume of matrix used and the amount remaining if additional slides need spraying.",
+    "Remove the slide from the HTX sprayer and place in a slide box. For optimal results data acquisition should be preformed immediately.",
+    "Set the nozzle and block temperature to 25 °C",
+    "Flush the sample loop (in the LOAD position) with a minimum of 20 mL 100% methanol Contributed by users",
+    "Flush the line and nozzle (in the SPRAY position) with 5 mL 100% methanol Contributed by users - 0.500 mL/min for 00:10:00",
+    "Wipe down the stage and drain with 100% methanol Contributed by users",
+    "Dispose of all chemicals and solvent waste in an appropriate manner.",
+    "Shut down the software. Turn off the power to the HTX sprayer, and to the pump. Turn off the nitrogen gas flow."
+  ],
+  "authors": [
+    "Andrew Bottrill"
+  ],
+  "creator": "Andrew R Bottrill",
+  "published_on": 1740676570,
+  "created_on": 1740654120,
+  "keywords": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": 315885,
+  "title": "GenomeTrakr WGS Protocol Collection and Workflow for MiSeq",
+  "uri": "genometrakr-wgs-protocol-collection-and-workflow-f-jyqmcpvu7",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4bwyjvo5/v6",
+  "description": "{\"blocks\":[{\"key\":\"ei2va\",\"text\":\"Here we have created a collection of all the protocols used for WGS using the MiSeq, in order, from sample extraction to NCBI submission. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2f3fr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7d9e7\",\"text\":\"This collection has three sections:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":35}],\"entityRanges\":[],\"data\":{}},{\"key\":\"d8daj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9p44a\",\"text\":\"Section 1: WGS Wet lab workflow for Illumina MiSeq\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":50}],\"entityRanges\":[],\"data\":{}},{\"key\":\"e47um\",\"text\":\"Section 2: Dry lab workflow for sequence QC and NCBI submission - Direct Submission\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":83}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7289t\",\"text\":\"Section 3: Dry lab workflow for sequence QC and NCBI submission - PulseNet labs\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":79}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1kpbr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"epsds\",\"text\":\"Version history: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":17}],\"entityRanges\":[],\"data\":{}},{\"key\":\"8tbn6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1a8mi\",\"text\":\"V6: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":4}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3hlea\",\"text\":\"Steps 15 and 16 - Direct links added for protocols referenced in these steps.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a3gmc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a3ft8\",\"text\":\"V5:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":3}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4vkj2\",\"text\":\"Links to protocols updated with latest version\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9170r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b23td\",\"text\":\"V4:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":3}],\"entityRanges\":[],\"data\":{}},{\"key\":\"djahh\",\"text\":\"Links to protocols updated with latest version, and\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"arjof\",\"text\":\"Step 13 - Removed protocol \\\"Populating NCBI template for submissions using BioNumerics\\\", and replaced with protocol \\\"Populating metadata templates for NCBI submissions using PulseNet 2.0\\\"\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7t0oc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"86des\",\"text\":\"V3: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":4}],\"entityRanges\":[],\"data\":{}},{\"key\":\"52g0m\",\"text\":\"Links to protocols updated with latest version,\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"88u0b\",\"text\":\"Added new protocol: DNA Extraction from Inoculated Broth for WGS using the Maxwell RSC Cultured Cells DNA Kit,\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2ljj6\",\"text\":\"Added new protocol: Querying for Bacterial Pathogen Genomic Data at NCBI.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "DNA Extraction - Manual Manual DNA Extraction using Qiagen DNeasy Blood and Tissue Kit by Julie Haendiges",
+    "DNA Quantification DNA Quantification using the Qubit Fluorometer by Julie Haendiges",
+    "Library Preparation Illumina DNA Prep (M) Tagmentation Library Preparation for use on an Illumina MiSeq Sequencer by Julie Haendiges",
+    "Sequencing Procedure for Operation and Maintenance of the Illumina MiSeq for Whole Genome Sequencing by Julie Haendiges",
+    "The following protocols are also included in a Springer Methods book chapter collection: A Comprehensive Guide to Quality Assessment and Data Submission for Genomic Surveillance of Enteric Pathogens V.4",
+    "Check sequence quality: Quality control assessment for microbial genomes: GalaxyTrakr MicroRunQC workflow by Ruth Timme",
+    "Populate BioSample AND SRA metadata templates: Guidance for populating and validating GenomeTrakr metadata templates (BioSample and SRA) by Ruth Timme",
+    "Submit sequence and metadata to NCBI: NCBI submission protocol for microbial pathogen surveillance by Ruth Timme",
+    "Update, retract, or replace your submissions at NCBI: NCBI Bacterial Pathogen Data Curation Protocol: SOP for Editing GenomeTrakr Submissions by Ruth Timme",
+    "Check sequence quality: Follow the CDC&#39;s guidance for assessing QC in PulseNet 2.0",
+    "Populate NCBI template: Populating metadata templates for NCBI submissions using PulseNet 2.0 by Maria Balkey",
+    "Submit sequence and metadata to NCBI: Follow the CDC&#39;s guidance for NCBI submissions through PulseNet 2.0.",
+    "Update, retract, or replace these records in NCBI databases, if necessary: NCBI Bacterial Pathogen Data Curation Protocol: SOP for Editing GenomeTrakr Submissions by Ruth Timme",
+    "Querying data at NCBI Querying for Bacterial Pathogen Genomic Data at NCBI by Maria Balkey",
+    "Query data at NCBI Querying for Bacterial Pathogen Genomic Data at NCBI by Maria Balkey",
+    "DNA Extraction - Automated DNA Extraction from Inoculated Broth for WGS using the Maxwell RSC Cultured Cells DNA Kit by Julie Haendiges"
+  ],
+  "authors": [
+    "Tina Pfefer",
+    "Julie Haendiges",
+    "Maria Balkey",
+    "Candace Hope Bias",
+    "Ruth Timme"
+  ],
+  "creator": "Tina Pfefer",
+  "published_on": 1777396936,
+  "created_on": 1777395846,
+  "keywords": []
+}

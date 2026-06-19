@@ -1,0 +1,27 @@
+{
+  "id": 316994,
+  "title": "Detection of FLAG ULK1 and Endogenous ATG13 Interaction",
+  "uri": "detection-of-flag-ulk1-and-endogenous-atg13-intera-jztacp6if",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v9qqrml3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"c71nk\",\"text\":\"To detect the interaction between FLAG ULK1 and endogenous ATG13 using affinity pulldown assays.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"37hhv\",\"text\":\"Wear gloves and goggles when handling reagents and samples. Follow institutional safety protocols for handling biological materials and hazardous reagents.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"ba1ub\",\"text\":\"NP-40 Lysis Buffer (1% NP-40, 150 mM NaCl, 50 mM Tris-HCl, pH 7.4) - 10 mL\\nProtease Inhibitor Cocktail (1X solution (e.g., Roche Complete)) - 1 mL\\nPhosphatase Inhibitor Cocktail (1X solution (e.g., Sigma)) - 1 mL\\nAnti-FLAG M2 Affinity Beads (30 μL per sample (MRC-PPU)) - 30 μL\\n2X LDS Sample Buffer (Life Technologies, #NP0007) - 40 μL\\nDTT (1 mM final concentration) - 1 μL\\nBeta-Mercaptoethanol (1 μL) - 1 μL\\nSpin-X® Column (Sigma, #CLS8162) - 1 unit\\n\\nReagents:\\nBuffer NP-40 Lysis Buffer - A non-ionic detergent used for cell lysis.\\nInhibitor Protease Inhibitor Cocktail - Prevents proteolytic degradation of proteins.\\nInhibitor Phosphatase Inhibitor Cocktail - Prevents dephosphorylation of proteins.\\nReagent DTT - Reducing agent used in protein analysis.\\nReagent Beta-Mercaptoethanol - Reducing agent used in protein analysis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Collect cell lysates using NP-40 lysis buffer supplemented with protease and phosphatase inhibitors.",
+    "1. Wash cells with cold PBS (1 mL per well). 2. Add 200 μL of NP-40 lysis buffer supplemented with 1 mL of protease inhibitor cocktail and 1 mL of phosphatase inhibitor cocktail to each well. 3. Incubate on ice for 30 minutes, vortexing every 10 minutes. 4. Centrifuge at 14,000 rpm for 10 minutes at 4°C to collect supernatant.",
+    "Perform FLAG pulldown using anti-FLAG M2 affinity beads.",
+    "1. Transfer 0.6 mg of cell lysate to a clean tube. 2. Add 30 μL of anti-FLAG M2 affinity beads. 3. Incubate for 4 hours at 4°C with end-over-end rotation (25 rpm).",
+    "1. Centrifuge the tube at 1,000 g for 1 minute to pellet beads. 2. Remove supernatant and wash beads three times with 1 mL of NP-40 lysis buffer.",
+    "1. Resuspend beads in 40 μL of 2X LDS buffer, 1 mM DTT, and 1 μL of beta-mercaptoethanol. 2. Heat at 95°C for 5 minutes to elute proteins.",
+    "1. Pass the eluate through a Spin-X® column to separate beads from the eluted proteins."
+  ],
+  "authors": [
+    "Yongjia Duan"
+  ],
+  "creator": "Yongjia Duan",
+  "published_on": 1778692636,
+  "created_on": 1778692583,
+  "keywords": []
+}

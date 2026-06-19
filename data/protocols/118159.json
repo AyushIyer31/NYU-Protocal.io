@@ -1,0 +1,32 @@
+{
+  "id": 118159,
+  "title": "RT-qPCR (cell lines)",
+  "uri": "rt-qpcr-cell-lines-dxmp7k5n",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ldrq98g5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"7pa49\",\"text\":\"This protocol describes the use of RT-qPCR to assess msAtp13a4 mRNA expression following lentiviral knockdown in C8-D1A cells. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"5ocn6\",\"text\":\"Follow institutional guidelines for the disposal of biological and chemical waste.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"efumo\",\"text\":\"Cells with modulated ATP13A4 expression (e.g. C8-D1A cells with Atp13a4 knockdown)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":39}],\"entityRanges\":[],\"data\":{}},{\"key\":\"c6i9m\",\"text\":\"NucleoSpin RNA Plus Kit (Macherey-Nagel, Cat# 740984.250)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":23}],\"entityRanges\":[],\"data\":{}},{\"key\":\"aa6d5\",\"text\":\"High-Capacity cDNA Reverse Transcription Kit (Applied Biosystems‱, Cat# 4374966)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":44}],\"entityRanges\":[{\"key\":0,\"offset\":64,\"length\":1}],\"data\":{}},{\"key\":\"3nq9v\",\"text\":\"SYBR Green qPCR Master Mix (Thermo Fisher or equivalent)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":26}],\"entityRanges\":[],\"data\":{}},{\"key\":\"eoa55\",\"text\":\"Nanodrop Spectrophotometer (Thermo Fisher)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":26}],\"entityRanges\":[],\"data\":{}},{\"key\":\"qv7d\",\"text\":\"Light Cycler (Roche)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":12}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1c0ak\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6pa8i\",\"text\":\"Primers (custom synthesized):\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"223s5\",\"text\":\"msAtp13a4:\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4fmp7\",\"text\":\"Forward (F): 5’-CCAGCATGCTTTACTCAATG-3’\",\"type\":\"unordered-list-item\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c0q3i\",\"text\":\"Reverse (R): 5’-GAAGATGGATCCAATGAGAC-3’\",\"type\":\"unordered-list-item\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dper6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9rs4b\",\"text\":\"msGapdh:\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7fh96\",\"text\":\"Forward (F): 5’-TGTGTCCGTCGTGGATCTGA-3’\",\"type\":\"unordered-list-item\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f3t3k\",\"text\":\"Reverse (R): 5’-CCTGCTTCACCACCTTCTTGA-3’\",\"type\":\"unordered-list-item\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1v22\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"33foa\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"DA16BAF2D16D11EFB8810A58A9FEAC02\",\"name\":\":tm:\"}}}}",
+  "steps": [
+    "Harvest 1.0 × 10⁶ cells from C8-D1A cultures.",
+    "Measure RNA concentration and purity using a Nanodrop spectrophotometer.",
+    "Extract total RNA using the NucleoSpin RNA Plus Kit according to the manufacturer&#39;s protocol.",
+    "Reverse transcribe 1 μg of RNA into cDNA using the High-Capacity cDNA Reverse Transcription Kit, following the manufacturer&#39;s instructions.",
+    "Prepare the qPCR reaction mix (per well): 10 μl SYBR Green qPCR Master Mix 1 μl forward primer (5 μM) 1 μl reverse primer (5 μM) 5 μl cDNA template (diluted 1:10 in nuclease-free water) 3 μl nuclease-free water",
+    "Prepare reactions in duplicate for each target and reference gene.",
+    "Perform amplification using a Light Cycler with the following thermal cycling conditions: Initial denaturation: 95 °C for 10 min 50 cycles: 95 °C for 10 s, 55 °C for 30 s, 95 °C for 1 min, 55 °C for 1 min",
+    "Include a melting curve analysis from 55 °C to 95 °C.",
+    "Record the mean Cq values for all reactions.",
+    "Normalize target gene expression (Atp13a4) to the reference gene (Gapdh) using the ΔΔCq method."
+  ],
+  "authors": [
+    "Sarah van Veen",
+    "Joris Van Asselberghs",
+    "Peter Vangheluwe"
+  ],
+  "creator": "Sarah van Veen",
+  "published_on": 1776256687,
+  "created_on": 1736745521,
+  "keywords": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": 101370,
+  "title": "Tracing complex nerve endings with Neurolucida 360",
+  "uri": "tracing-complex-nerve-endings-with-neurolucida-360-de823hye",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v92294l3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"f2onl\",\"text\":\"This protocol describes the tracing of nerve endings labelled with an appropriate marker that fills the entirety of the axon and its terminal structure. In this example, a subset of rat sensory neurons was transfected with the adeno-associated virus AAV-PHP.S, which contained a TdTomato tag. The signal of this TdTomato was enhanced with immunohistochemistry to enable complete visualisation of nerve endings in tissue, which could then be traced in Neurolucida 360.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"ecfk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b22fi\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"bnjtn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"42i4s\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"5kmdm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"software\",\"mutability\":\"IMMUTABLE\",\"data\":{\"id\":848,\"guid\":\"49F85CD9341F11EE9D4302C0B41BC903\",\"name\":\"Neurolucida 360\",\"version\":\"\",\"os_name\":\"\",\"os_version\":\"\",\"developer\":\"MicroBrightField Bioscience\",\"repository\":\"\",\"link\":\"https://www.mbfbioscience.com/neurolucida360\",\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"software\",\"mutability\":\"IMMUTABLE\",\"data\":{\"id\":1356,\"guid\":\"49F8ED8F341F11EE9D4302C0B41BC903\",\"name\":\"MicroFile+ (RRID: SCR_018724)\",\"version\":\"\",\"os_name\":\"\",\"os_version\":\"\",\"developer\":\"MBF Bioscience\",\"repository\":\"\",\"link\":\"\",\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "With a confocal microscope, image the nerve ending with at least 40x magnification and Nyquist sampling in XYZ. Use tile scans to completely capture the entire nerve ending. If tile scanning was used, stitch the image into a single image.",
+    "Convert the image stack to JPEG2000 (JPX) using Microfile+ . MicroFile+ (RRID: SCR_018724) MBF Bioscience",
+    "Open the JPEG2000 file in Neurolucida 360 . Neurolucida 360 MicroBrightField Bioscience",
+    "Thoughout all the subsequent Steps, save progress. This will prompt a saving of the JPEG2000 (if display settings were altered) and the saving of a data file. Choose .XML as the file type for saving the data file. Keep the .XML in the same file location as the associated JPEG2000.",
+    "Open the 3D Environment to view the dataset in 3D.",
+    "In the top right-hand menu, click on Subvolume .",
+    "Move the Subvolume to the desired start region of the nerve ending.",
+    "Click View Subvolume to view only the region selected.",
+    "Using the channel in which the AAV-PHP.S fluorescence was acquired, start the tracing by clicking on Tree in the right-hand side panel. Select User-guided and under the User-guided Tracing Options select Rayburst Crawl as the Method .",
+    "Move the cursor onto the desired axon to be traced in the Subvolume image stack, a small circle should appear on the axon of approximately the same diameter as the nerve ending. This is the starting point of the tracing. Left click to start tracing.",
+    "Move the cursor along the nerve ending. A string of circles of the axon diameter should follow the cursor, these are individual points of the nerve ending tracing. Go as far as possible without the points deviating from the axon. Left click to confirm points, current position will become the new start position. Right click ends the tracing after positions are established.",
+    "For branches, hover the cursor over the branch point of the currently traced nerve ending until a 3D point is highlighted. This can only be done after ending a tracing with a Right Click .",
+    "Left click on the branch point to start a connected branch, and continue tracing like in Step 11.",
+    "When the tracing approaches the edge of the Subvolume region, the Subvolume region will automatically shift in the direction of the tracing to allow for seamless tracing of nerve endings without the need to view the entire image stack. Continue tracing until the end of all the nerve endings, adding branches where necessary."
+  ],
+  "authors": [
+    "John-Paul Fuller-Jackson",
+    "Peregrine B Osborne",
+    "Janet R Keast"
+  ],
+  "creator": "John-Paul Fuller-Jackson",
+  "published_on": 1734651894,
+  "created_on": 1717712840,
+  "keywords": []
+}

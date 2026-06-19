@@ -1,0 +1,26 @@
+{
+  "id": 103082,
+  "title": "Immunofluorescence and confocal microscopy",
+  "uri": "immunofluorescence-and-confocal-microscopy-dgwi3xce",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvr8p1olmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"1sve0\",\"text\":\"This protocol details the process of immunofluorescence and confocal microscopy.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"14r2g\",\"text\":\"28906, Thermo Fisher Scientific  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":31,\"length\":1}],\"data\":{}},{\"key\":\"172c9\",\"text\":\"0.1% (v/v) Triton X-100 (9002-93-1, Sigma-Aldrich)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dihgg\",\"text\":\"5% (v/v) BSA (9048-46-8, Sigma-Aldrich)  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":39,\"length\":1}],\"data\":{}},{\"key\":\"7kjlj\",\"text\":\"DAPI Fluoromount-G mounting medium (0100-20, Southern Biotech)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":916645,\"guid\":\"426CF5C1341F11EE9D4302C0B41BC903\",\"name\":\"Pierce™ 16% Formaldehyde (w/v) Methanol-free\",\"mol_weight\":0,\"sku\":\"28906\",\"url\":\"https://www.thermofisher.com/order/catalog/product/28906#/28906\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":95,\"name\":\"Thermo Fisher Scientific\",\"link\":\"https://www.thermofisher.com/us/en/home.html\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":956862,\"guid\":\"43738868341F11EE9D4302C0B41BC903\",\"name\":\"Bovine Serum Albumin [BSA]\",\"mol_weight\":0,\"sku\":\"9048-46-8\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":31,\"name\":\"Fisher Scientific\",\"link\":\"https://www.fishersci.com/us/en/home.html\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Seed the cells on glass coverslips (12 mm #1.5) at a concentration of 100.000 cells/well, and after treatment with Rapalog for the indicated time, fix in 4% paraformaldehyde (28906, Thermo Fisher Scientific) for 00:10:00 at Room temperature .",
+    "After washing with PBS, permeabilize the cells with 0.1% (v/v) Triton X-100 (9002-93-1, Sigma-Aldrich) in PBS for 00:05:00 .",
+    "Perform the blocking with blocking buffer (5% (v/v) BSA (9048-46-8, Sigma-Aldrich) and 0.05% (v/v) Triton X-100 diluted in PBS) for 01:00:00 at Room temperature .",
+    "Dilute the primary and secondary antibodies in blocking buffer and incubate for 01:00:00 at Room temperature with three PBS washing steps in between.",
+    "Mount the cells on microscopy slides in DAPI Fluoromount-G mounting medium (0100-20, Southern Biotech), which stains the nuclei, and store at 4 °C until use.",
+    "Perform the confocal microscopy with a Zeiss LSM700 laser scanning confocal microscopy with Plan-Apochromat 40×/1.30 Oil DIC, WD 0.21 mm objective."
+  ],
+  "authors": [
+    "Elias Adriaenssens"
+  ],
+  "creator": "Elias Adriaenssens",
+  "published_on": 1724913768,
+  "created_on": 1719963984,
+  "keywords": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": 117980,
+  "title": "Astrocyte morphology assessment in astrocyte-neuron co-cultures",
+  "uri": "astrocyte-morphology-assessment-in-astrocyte-neuro-dxf47jqw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygxwobdv8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"2uhdf\",\"text\":\"This protocol outlines the process for analyzing astrocyte morphology in astrocyte-neuron co-cultures using immunostaining and Sholl analysis. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"bsv7d\",\"text\":\"Maintain sterility and avoid contamination during all steps.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eo2q6\",\"text\":\"Follow institutional guidelines for the disposal of biological and chemical waste.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"9gung\",\"text\":\"DPBS (GIBCO, Cat# 14190144) \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ee8bc\",\"text\":\"normal goat serum (NGS; Thermo Fisher, Cat# 01-6201) \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5r9rj\",\"text\":\"Triton X-100 Surfact-Amps Detergent Solution (Thermo Fisher, Cat# 28314)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"atrqs\",\"text\":\"VECTASHIELD Antifade Mounting Medium with DAPI (Vector Laboratories, Cat# H-1200-10)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bv0lm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9tdvr\",\"text\":\"Antibodies\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"e8j3g\",\"text\":\"chicken anti-GFP (1:1,000 dilution; Aves Labs, Cat# GFP-1020, RRID:AB_10000240) \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"24r2l\",\"text\":\"rabbit anti-GFAP (1:2,000 dilution; Agilent, Cat# Z0334, RRID:AB_10013382) \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9rtui\",\"text\":\"Alexa Fluor 488 goat anti-chicken IgY(H+L) (1:1,000 dilution; Thermo Fisher, Cat# A-11039, RRID:AB_2534096)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"89abk\",\"text\":\"Alexa Fluor 594 goat anti-rabbit IgG(H+L) (1:1,000 dilution; Thermo Fisher, Cat# A-11037, RRID:AB_2534095)  \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Block coverslips in a blocking buffer containing 50% normal goat serum (NGS) and 0.4% Triton X-100 for 00:30:00 at Room temperature .",
+    "Incubate samples Overnight at 4 °C in primary antibodies diluted in blocking buffer containing 10% NGS. Validate antibody specificity and optimize staining conditions for reproducibility.",
+    "Incubate coverslips in Alexa Fluor conjugated secondary antibodies for 02:00:00 at Room temperature .",
+    "Remove secondary antibody and wash coverslips three times with DPBS.",
+    "Mount coverslips onto glass slides using Vectashield mounting media containing DAPI.",
+    "Seal coverslips with nail polish.",
+    "Image coverslips using a Keyence BZ-X800 microscope at 40x magnification in red, green, and/or DAPI channels using a CCD camera.",
+    "Analyze astrocyte morphological complexity using FIJI with the Sholl analysis plugin (https://github.com/Eroglu-Lab/In-Vitro-Sholl). Ensure analysis is performed on healthy astrocytes with strong expression of fluorescent markers and single, non-overlapping nuclei (DAPI stain).",
+    "Conduct statistical analyses using custom code in R (https://github.com/Eroglu-Lab/In-Vitro-Sholl).",
+    "Use a mixed-effect model with Tukey post-test for Sholl analysis to evaluate differences between experimental conditions, treating variability per experiment as a random effect.",
+    "Verify the health of astrocyte-neuron co-cultures by ensuring the peak number of astrocyte intersections is ≥ 25 in the control condition.",
+    "Document the exact number of independent experiments and cells analyzed in the figure legend for each experiment.",
+    "Wash coverslips 3 times with DPBS.",
+    "Fix astrocyte-neuron co-cultures on glass coverslips on Day in Vitro 12 (DIV 12) with warm 4% paraformaldehyde (PFA) for 00:07:00 at Room temperature .",
+    "Remove primary antibody and wash coverslips three times with DPBS."
+  ],
+  "authors": [
+    "Shiyi Wang",
+    "Sarah van Veen"
+  ],
+  "creator": "Sarah van Veen",
+  "published_on": 1776755996,
+  "created_on": 1736420147,
+  "keywords": []
+}

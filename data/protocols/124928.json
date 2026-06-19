@@ -1,0 +1,34 @@
+{
+  "id": 124928,
+  "title": "Variant painting via fluorescence",
+  "uri": "variant-painting-via-fluorescence-d58889zw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl8erydl2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"eabla\",\"text\":\"High-throughput imaging platform to assay the impact of coding variation on protein localization. Proteins are fused to mNeonGreen for visualization, alongside additional cellular compartments including the nucleus, mitochondria, actin, golgi, and plasma membrane. This protocol is adapted from Variant Painting via immunofluorescence and Cell Painting Protocol v3.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"uto6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Seed 1.2x10 4 HEK293T cells/well in 96-well plate, 100 µL per well. Media is high glucose DMEM supplemented with 10% FBS, 1% pepenicillin-streptomycin. Incubate Overnight at 37 °C , 5% CO 2 . Harvest a sample of HEK293T cells for mycoplasma testing. If performing same-day transfection, double the seeding density and allow cells to adhere for ~4 hrs.",
+    "Prepare packaging master mix: 1. 50 ng /well psPAX2 2. 5 ng /well pVSV-G 3. Top up to 10 µL /well with OptiMEM",
+    "Prepare transfection reagent master mix: 1. 9.4 µL /well OptiMEM 2. 0.6 µL /well TransIT-LT1 Transfection Reagent",
+    "Prepare 96-well transfection complexes: 1. Add 10 µL /well molecular grade water 2. Add 3.33 µL /well lentiviral expression plasmid (normalized to 15 ng/uL) 3. Add 10 µL /well packaging master mix 4. Add 10 µL /well reagent master mix Incubate at room temperature 00:30:00 .",
+    "Transfer transfection complexes to seeded HEK293T cells. Incubate 48:00:00 at 37 °C , 5% CO 2 . Make sure to monitor EGFP transfection control for transfection efficiency.",
+    "Seed 1000 U2OS cells/well, 40 µL /well in 384-well black optically clear flat-bottom PhenoPlates. McCoy&#39;s 5A m Test before edia is supplemented with 10 ug/mL polybrene + 10% FBS + 1% penicillin-streptomycin. Allow cells to adhere for 01:00:00 at room temperature before incubating at 37 °C , 5% CO 2 for 03:00:00 . Harvest a sample of U2OS cells for mycoplasma testing. Test before Day 8.",
+    "Perform Spinfection: 1. Add 6 µL virus /well 2. Spin plates at 1200 x g, 37 °C, 30 minutes 3. Incubate 48:00:00 at 37 °C , 5% CO 2 .",
+    "Prepare 1.5 ug/mL puromycin in McCoy&#39;s 5A media supplemented with 10% FBS + 1% penicillin-streptomycin. 1. Flick media out of 384-well imaging plates into a bleach bucket. 2. Add 30 µL puromycin media /well 3. Incubate 48:00:00 at 37 °C , 5% CO 2 . Make sure to monitor untransduced (EGFP transfection) control for complete selection",
+    "Stain live cells with MitoTracker DeepRed: 1. Dilute MitoTracker DeepRed to 500 nanomolar (nM) in McCoy&#39;s 5A + 10% FBS + 1% penicillin-streptomycin. 2. Flick off media from imaging plates. 3. Add 20 µL /well of prepared MitoTracker media. 4. Incubate 01:00:00 at 37 °C , 5% CO 2 .",
+    "Fix cells: 1. Dilute 32% Paraformaldehyde to 4% in McCoy&#39;s 5A + 10% FBS + 1% penicillin-streptomycin. 2. Flick off media from imaging plates. 3. Add 20 µL /well of diluted PFA. 4. Wrap plates in foil to protect from light. 5. Incubate 00:15:00 - 00:30:00 at room temperature. 6. Wash with plate washer 4x with 1xHBSS, including final aspiration. If you are not staining &amp; imaging the same day, do not include the final apsiration. Instead leave ~ 50 µL of HBSS behind and store plates at 4 °C wrapped in foil.",
+    "Prepare your blocking &amp; permeabilization buffer: 0.1%Triton-X(vol/vol) + 1% BSA (wt/vol) in 1xHBSS.",
+    "Prepare your staining solution. Dilute the following dyes in your blocking &amp; permeabilization buffer: 1. Spin down all dyes 2. Dilute Phalloidin AlexaFluor 568 to 8.25 nM 3. Dilute Hoechst 33342 to 1 ug/mL 4. Dilute WGA AlexaFluor 555 to 1.5 ug/mL",
+    "Stain cells: 1. Flick off media from imaging plates. 2. Add 20 µL /well of staining solution. 3. Centrifuge 500 x g, °C, 1 minute to remove bubbles. 5. Wrap plates in foil to protect from light. Incubate 00:30:00 at room temperature. 6. Wash with plate washer 4x with 1xHBSS, excluding final aspiration t leave ~ 50 µL /well.",
+    "Image: Confocal images are captured on a PerkinElmer Opera Phenix microscope with the following conditions: 1. 20x water objective 2. Single plane 3. 384-wells, 9 fields 4. Separate Channels: Channel Excitation Emission Exposure Power 1 DNA 405 435-480 100 ms 60% 2 Protein 488 500-550 60 ms 30% 3 AGP 561 571-596 60 ms 30% 4 Mitochondria 640 760 20 ms 20%"
+  ],
+  "authors": [
+    "Chloe Reno"
+  ],
+  "creator": "Chloe Reno",
+  "published_on": 1742892002,
+  "created_on": 1742853168,
+  "keywords": []
+}

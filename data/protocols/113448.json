@@ -1,0 +1,30 @@
+{
+  "id": 113448,
+  "title": "Bulk RNAseq extraction",
+  "uri": "bulk-rnaseq-extraction-ds2g6gbw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6d1okvqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"8tfgr\",\"text\":\"RNA extraction from frozen brain using Qiagen's RNeasy Lipid Tissue Mini kit.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"ahj3m\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ak9l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5idsq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eg2df\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"b21u1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"IMMUTABLE\",\"data\":{\"cellsMeta\":{},\"colTitles\":[\"Reagent\",\"Manufacturer\",\"Cat no.\"],\"colWidths\":[100,100,100],\"data\":[[\"RNeasy Lipid Tissue Mini \",\"Qiagen\",\"74804\"],[\"Chloroform\",\"Millipore Sigma\",\"C2432\"],[\"Pure Ethanol\",\"Millipore Sigma\",\"E7023\"],[\"Qubit RNA Broad Range kit\",\"Thermo Fisher Scientific \",\"Q10210\"],[\"TissueRuptor II \",\"Qiagen\",\"9002755\"],[\"TissueRuptor II  probes\",\"Qiagen\",\"990890\"],[\"RNase Zap\",\"Thermo Fisher Scientific \",\"AM9780\"],[\"RNase-Free DNase set\",\"Qiagen\",\"79254\"]],\"guid\":\"E3E4CBA03D294280808F746A5D222DA3\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"RNeasy Lipid Tissue Mini \",\"Qiagen\",\"74804\"],[\"Chloroform\",\"Millipore Sigma\",\"C2432\"],[\"Pure Ethanol\",\"Millipore Sigma\",\"E7023\"],[\"Qubit RNA Broad Range kit\",\"Thermo Fisher Scientific \",\"Q10210\"],[\"TissueRuptor II \",\"Qiagen\",\"9002755\"],[\"TissueRuptor II  probes\",\"Qiagen\",\"990890\"],[\"RNase Zap\",\"Thermo Fisher Scientific \",\"AM9780\"],[\"RNase-Free DNase set\",\"Qiagen\",\"79254\"]],\"rowHeights\":[23,23,23,23,23,23,23,23]}}}}",
+  "steps": [
+    "Manually cut 40-50mg of frozen brain tissue on dry ice. Weigh and place back in -80 °C freezer until ready for extraction. Note: do not let tissue thaw. Keep frozen at all times.",
+    "Using the Qiagen RNeasy Lipid Tissue Mini kit, prepare reagents and materials for extraction in a chemical hood. Note: use an RNase free environment and clean with RNase Zap.",
+    "Follow extraction steps outlined in Qiagen RNeasy Lipid Tissue Mini kit using the Tissue Ruptor II to homogenize frozen brain tissue.",
+    "Using the Qubit RNA Broad Range assay kit, measure the concentration of extracted RNA using 2 µL of sample.",
+    "Aliquot desired amount of sample to continue with for sequencing ( >500 ng ) .",
+    "Snap freeze each RNA sample with liquid nitrogen and store in -80 °C freezer indefinitely.",
+    "Optional: sequence with Illumina&#39;s TruSeq stranded riboreduced total RNA at the recommended 50M reads/sample.",
+    "Include on column DNase digestion step. Note: keep extracted RNA on wet ice."
+  ],
+  "authors": [
+    "Kimberly Paquette",
+    "Andrew Pyman",
+    "Jose Bras"
+  ],
+  "creator": "Kimberly Paquette",
+  "published_on": 1733175780,
+  "created_on": 1733171253,
+  "keywords": []
+}

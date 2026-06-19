@@ -1,0 +1,31 @@
+{
+  "id": 89960,
+  "title": "Cryo-EM sample preparation for full length LRRK2(I2020T):MLi-2/GZD-824-E11 DARPin complex",
+  "uri": "cryo-em-sample-preparation-for-full-length-lrrk2-i-c34gyqtw",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvm35n9l3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"2ti55\",\"text\":\"Guide for cryo-EM grid preparation of FL-LRRK2 bound to Type-I/Type-II inhibitors\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"f92ru\",\"text\":\"Before starting cryo-EM grid preparation section: Set up Vitrobot at 95% humidity and 4C. Put new paper blot\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"ajv2l\",\"text\":\"Handle liquid nitrogen with gloves and face shields equipped all the time. Handle liquid ethane with face shields all the time.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d6he\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"b023l\",\"text\":\"Vitrobot (Thermo Fisher Scientific)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "His6-Z-TEV-LRRK2 was expressed and purified as described in a previous protocol LRRK1 expression and purification by Robert Fagiewicz",
+    "Prepare LRRK2 buffer. Keep it at 4ºC.20 millimolar (mM) HEPES pH=7.4150 millimolar (mM) NaCl2.5 millimolar (mM) MgCl220 micromolar (µM) GDP0.5 millimolar (mM) TCEP",
+    "Spin down purified LRRK2 (10000 rcf, 4°C, 10 minutes). Leave protein on ice afterward. For the best result, keep protein on ice and reduce the amount of time between spinningand freezing cryo-EM samples.",
+    "Thaw E11 DARPin and spin it down. Measure its concentration.",
+    "Dilute inhibitors (diluted in 100% DMSO) to an intermediate desired concentration using LRRK2 buffer.",
+    "Based on the initial and final LRRK2 concentration, calculate the necessary volume of E11 DARPin to get a proportional ratio LRRK2:E11 DARPin 1:1.25 in the sample. After that, add either MLi-2 or GZD-824. Dilute to your final desired LRRK2 concentration using LRRK2 buffer (150 mM NaCl). In our samples, final concentrations were: 5 uM LRRK2 6.25 uM E11 DARPin Either MLi-2 or GZD-824 at a final concentration 20 uM and 40 uM, respectively.",
+    "Incubate 10 minutes at RT. Afterward, keep it on ice until grid preparation.",
+    "We used UltraAuFoil Holey Gold 2/2 200 mesh grids and plasma cleaning them in the Solarus II (Gatan) using the QuantiFoil Au preset.",
+    "Apply 3 to 3.5 microliters (µl) of sample and plunge freeze. We used aVitrobot (FEI) to blot away excess sample and plunge freeze in ethane liquid. (Inour case, we use 4 seconds as a time blot as 20 sec as a wait time and 4 as a blot force, but theseparameters are slightly different from one Vitrobot to another. I would trywith the Vitrobot parameters already tested in your machine first).",
+    "Store grids in liquid nitrogen until ready for imaging"
+  ],
+  "authors": [
+    "Marta Sanz Murillo",
+    "Amalia Villagran Suarez"
+  ],
+  "creator": "Marta Sanz Murillo",
+  "published_on": 1698355256,
+  "created_on": 1698347586,
+  "keywords": []
+}

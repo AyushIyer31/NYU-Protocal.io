@@ -1,0 +1,41 @@
+{
+  "id": 318543,
+  "title": "Bundibugyo ebolavirus qPCR Taqman singleplex assay",
+  "uri": "bundibugyo-ebolavirus-qpcr-taqman-singleplex-assay-j3bpcqimp",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l2x5mpv1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"99ofj\",\"text\":\"In May 2026, an outbreak of Bundibugyo ebolavirus (BDBV) in the Democratic Republic of the Congo was declared a Public Health Emergency of International Concern by the World Health Organization, underscoring the need for reliable, rapidly deployable diagnostic tools. Here, we present the development and analytical validation of reverse-transcriptase quantitative PCR (RT-qPCR) assays designed for sensitive and specific BDBV detection. We developed and evaluated three assay formats: a singleplex TaqMan assay, a duplex TaqMan assay incorporating a human internal control, and a singleplex SYBR assay to reduce dependence on probe availability during outbreak response. We evaluated assay performance using synthetic RNA gene fragments, whole viral RNA, and contrived clinical samples. Both TaqMan assays achieved a 95% limit of detection (LOD95) of 5 copies/reaction, while the SYBR Green assay achieved an LOD95 of 50 copies/reaction. In addition, the assays accurately detected BDBV viral RNA and did not detect Zaire ebolavirus or Sudan ebolavirus viral RNA under the conditions tested. By making the assay protocols and resources openly available through protocols.io, this assay set provides a flexible and accessible molecular detection tool for BDBV surveillance, research, and outbreak response.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"8lb0p\",\"text\":\"Patient blood/serum/plasma collection and testing for this protocol requires prior approval by the users' Institutional Ethics Board or equivalent ethics committee.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"bvmxg\",\"text\":\"- Any One-Step RT-qPCR kit should be compatible with the below protocol. If using a different kit than the one listed, be sure to first validate a standard curve before running patient samples. The protocol/cycling conditions may need to be updated to be compatible with the available kit.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"em4ig\",\"text\":\"- The assay should be compatible with any chosen fluorophore. Ensure you choose a fluorophore compatible with the qPCR machine you are using.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"oepvc\",\"text\":\"- This protocol requires nucleic acid extraction from plasma prior to running the qPCR. While the protocol is validated for extracted plasma, extraction from whole blood or serum will likely be compatible. A test to check for PCR inhibition should be done before using a sample matrix other than plasma.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"oeymm\",\"text\":\"- Luna® Probe One-Step RT-qPCR Kit (No ROX) Protocol (NEB# E3007)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8kmt\",\"text\":\"- General lab plastics (qPCR plates, microcentrifuge tubes, etc.)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"py70d\",\"text\":\"- Primers and probe:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"athuk\",\"text\":\"\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"46fr7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fu3lc\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"2gp0d\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vnzce\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"MUTABLE\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"0_2\":\"\",\"0_3\":\"\",\"1_0\":\"\",\"1_1\":\"\",\"1_2\":\"\",\"1_3\":\"\",\"2_0\":\"\",\"2_1\":\"\",\"2_2\":\"\",\"2_3\":\"\",\"3_0\":\"\",\"3_1\":\"\",\"3_2\":\"\",\"3_3\":\"\",\"4_0\":\"\",\"4_1\":\"\",\"4_2\":\"\",\"4_3\":\"\"},\"colTitles\":[],\"colWidths\":[],\"data\":[[\"Name\",\"Sequence (5' \\u0026gt; 3')\",\"Fluorophore\",\"Final Assay Concentration (nM)\"],[\"Bundi_FP\",\"TAACTCATCCACAGACCCCA\",\"-\",\"400\"],[\"Bundi_RP\",\"GATGGCGCCGAAACTATAGA\",\"-\",\"400\"],[\"Bundi_P\",\"CTCACATATCCTAAGGTTGGGCTCC\",\"FAM\",\"200\"],[\"Bundi_gblock\",\"gaaatTAATACGACTCACTATAgggTACCTAACCTACACGTCTACGCTTTCCTTGGATCTCACAAGGTACCGAGAGAATGAGTTAATTTATGATAACAATCCGTTAAAAGGTGGACTTAATTGCAACCTATCCTTTGATAATCCACTTTTCAAGGGCCAAAGGCTCAATATCATAGAGGAGGATTTGATTAGATTTCCTCATCTATCTGGGTGGGAACTTGCGAAAACCATCATTCAGTCCATTATCTCAGACAGCAATAACTCATCCACAGACCCCATTAGCAGTGGAGAAACACGATCATTCACAACTCACTTTCTCACATATCCTAAGGTTGGGCTCCTCTATAGTTTCGGCGCCATCGTGAGTTATTACTTAGGGAATACCATTATTAGGACCAAAAAGCTAGACCTCAGTCATTTTATGTATTACTTAACAACTCAAATCCATAATTTGCCACATCGCTCGTTGAGGATACTTAAGCCCACCTTTAAACATGTTAGTGTGATATCAAGACTAATGAGTAT\",\"-\",\"-\"]],\"guid\":\"B3AF4B11F0214DDDA6FFBE2AB3F2430F\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":[],\"printData\":[[\"Name\",\"Sequence (5' \\u0026gt; 3')\",\"Fluorophore\",\"Final Assay Concentration (nM)\"],[\"Bundi_FP\",\"TAACTCATCCACAGACCCCA\",\"-\",\"400\"],[\"Bundi_RP\",\"GATGGCGCCGAAACTATAGA\",\"-\",\"400\"],[\"Bundi_P\",\"CTCACATATCCTAAGGTTGGGCTCC\",\"FAM\",\"200\"],[\"Bundi_gblock\",\"gaaatTAATACGACTCACTATAgggTACCTAACCTACACGTCTACGCTTTCCTTGGATCTCACAAGGTACCGAGAGAATGAGTTAATTTATGATAACAATCCGTTAAAAGGTGGACTTAATTGCAACCTATCCTTTGATAATCCACTTTTCAAGGGCCAAAGGCTCAATATCATAGAGGAGGATTTGATTAGATTTCCTCATCTATCTGGGTGGGAACTTGCGAAAACCATCATTCAGTCCATTATCTCAGACAGCAATAACTCATCCACAGACCCCATTAGCAGTGGAGAAACACGATCATTCACAACTCACTTTCTCACATATCCTAAGGTTGGGCTCCTCTATAGTTTCGGCGCCATCGTGAGTTATTACTTAGGGAATACCATTATTAGGACCAAAAAGCTAGACCTCAGTCATTTTATGTATTACTTAACAACTCAAATCCATAATTTGCCACATCGCTCGTTGAGGATACTTAAGCCCACCTTTAAACATGTTAGTGTGATATCAAGACTAATGAGTAT\",\"-\",\"-\"]],\"rowHeights\":[]}}}}",
+  "steps": [
+    "Thaw qPCR mastermix, primers, and probes at room temperature. After components are thawed, briefly mix by inversion or gentle vortexing. Briefly centrifuge or flick the tube to collect liquid at the bottom before opening the tubes.",
+    "Prepare 10µM stocks of the forward primer, reverse primer, and probe if not previously completed.",
+    "Prepare enough mastermix according to the table below. The table accounts for plating triplicate 10µL reactions per sample and includes overage. If running a standard curve, ensure these are included in the sample count. Minimally, run a positive control and a no template control (NTC) per plate.",
+    "Gently mix mastermix and spin down to ensure uniformity. Aliquot 32.4µL of mastermix per well in a 96-well plate according to the number of samples being run.",
+    "Pipette 3.6µL of extracted plasma (or positive control material or water for an NTC).",
+    "Gently vortex and spin down plate.",
+    "Pipette triplicate 10µL reactions into a 96-well or 384-well plate. Seal plate with an optical seal compatible with the qPCR machine being used.",
+    "Briefly spin plate to collect liquid at the bottom.",
+    "Program the qPCR machine according to the following:",
+    "Reaction volume: 10µL",
+    "Fluorophore: FAM",
+    "Ensure there is a plate read step at the end of each extension cycle",
+    "Cycling conditions:",
+    "%s %s",
+    "%s %s"
+  ],
+  "authors": [
+    "Elyse Stachler",
+    "Kyle McMahon",
+    "Stella Nielsen",
+    "Hannah Knoll",
+    "Colby Wilkason",
+    "Al Ozonoff",
+    "Pardis Sabeti"
+  ],
+  "creator": "Elyse Stachler",
+  "published_on": 1781185330,
+  "created_on": 1780578928,
+  "keywords": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": 17032,
+  "title": "Golden Gate Cloning LVL 1",
+  "uri": "golden-gate-cloning-lvl-1-uvgew3w",
+  "doi": "dx.doi.org/10.17504/protocols.io.uvgew3w",
+  "description": "{\"blocks\":[{\"key\":\"6btoe\",\"text\":\"This protocol refers to LVL 1 cloning with the Marburg Collection\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"btmqt\",\"text\":\"This protocol refers to LVL 1 cloning with the Marburg Collection\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"8ek21\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"don40\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"KIU7s\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"UECPp\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"w428f\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"u1hz6\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"jt5cF\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":3,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":1118,\"guid\":\"410250E2341F11EE9D4302C0B41BC903\",\"name\":\"T7 DNA Ligase - 100,000 units\",\"mol_weight\":0,\"sku\":\"M0318S\",\"url\":\"https://www.neb.com/M0318\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":119551,\"guid\":\"4198847C341F11EE9D4302C0B41BC903\",\"name\":\"nuclease free water\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":125417,\"guid\":\"419F4A02341F11EE9D4302C0B41BC903\",\"name\":\"BsaI-HFv2\",\"mol_weight\":0,\"sku\":\"\\nR3733L\",\"url\":\"https://www.neb.com/R3733\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}},\"3\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":128004,\"guid\":\"41A29881341F11EE9D4302C0B41BC903\",\"name\":\"10X NEB T4 DNA ligase buffer\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Add 1 µL, 37.5 ng of 5’Connector plasmide.",
+    "Add 1 µL, 37.5 ng of Promoter plasmide.",
+    "Add 1 µL, 37.5 ng of RBS plasmide.",
+    "Add 1 µL, 37.5 ng of CDS plasmide.",
+    "Add 1 µL, 37.5 ng of Terminator plasmide.",
+    "Add 1 µL, 37.5 ng of 3’Connector plasmide.",
+    "Add 1 µL, 37.5 ng of ORI plasmide.",
+    "Add 1 µL, 37.5 ng of Antibiotic Resistance plasmide.",
+    "Add 0.5 µL BsaI.",
+    "Add 0.5 µL T4-Ligase.",
+    "Add 1 µL T4-Ligase Buffer",
+    "60 Cycles of 2min 37°C / 5min 16°C",
+    "60 min. 60°C.",
+    "10min. 80°C.",
+    "Hold 20°C.",
+    "Transform 5µl of Golden Gate Mix into V. natriegens"
+  ],
+  "authors": [
+    "Daniel Marchal"
+  ],
+  "creator": "Daniel Marchal",
+  "published_on": 1540114738,
+  "created_on": 1540114442,
+  "keywords": []
+}

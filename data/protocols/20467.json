@@ -1,0 +1,28 @@
+{
+  "id": 20467,
+  "title": "Sanger Sequencing",
+  "uri": "sanger-sequencing-x8tfrwn",
+  "doi": "dx.doi.org/10.17504/protocols.io.x8tfrwn",
+  "description": "{\"blocks\":[{\"key\":\"12oqp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"cs5o\",\"text\":\"This protocols is part of the Screening Edited iPSC Clones collection. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":30,\"length\":39}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"BEBD27F0340111E9A58D6132AAED8016\",\"url\":\"https://www.protocols.io/view/untitled-collection-yazfsf6/protocols\"}}}}",
+  "before_start": "{\"blocks\":[{\"key\":\"98hm7\",\"text\":\"After identifying iPSC clones with the appropriate banding pattern, gDNA from iPSC clones of interest should be sequenced in order to confirm genotype. To do this, set up a sequencing reaction as outlined below.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6osau\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"af7sh\",\"text\":\"Perform PCR on gDNA using the following TouchDown Protocol (50μL reaction). The PCR amplicon size should be between 300-400 bp. The primers used for the RFLP screening can also be used for Sanger Sequencing.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"3daio\",\"text\":\"Please refer to the SDS (Safety Data Sheet) for information about hazards, and to obtain advice on safety precautions.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Set up PCR on ice, add reagents in desired order (however it is best to add the polymerase and gDNA last). %s %s %s %s",
+    "Run 15 µL of each sample on a 2% gel to determine presence of PCR product.",
+    "Run product on gel at 150 V for 01:30:00 .",
+    "Image gel.",
+    "Save image.",
+    "After confirming the presence of PCR product, move on to sequencing reaction protocol below: %s %s Send out a Forward and a Reverse for each sample."
+  ],
+  "authors": [
+    "Celeste M M. Karch",
+    "Rita Martinez",
+    "Jacob Marsh"
+  ],
+  "creator": "Celeste M M. Karch",
+  "published_on": 1551229135,
+  "created_on": 1550419896,
+  "keywords": []
+}

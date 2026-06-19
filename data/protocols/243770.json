@@ -1,0 +1,40 @@
+{
+  "id": 243770,
+  "title": "hiPSC-iAstro SOX9 NFIB Induction",
+  "uri": "hipsc-iastro-sox9-nfib-induction-hsa2b6agf",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v9bodml3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"dcnt6\",\"text\":\"Direct induction of astrocytes from hiPSCs using transcription factor induction\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"orotn\",\"text\":\"1. Doxycycline: 25 mg/mL dissolved in water (10000x stock). Sterilize with a 0.22 μm filter and store at -20°C. Protect from light.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cpd2m\",\"text\":\"2. CNTF: Reconstitute at 10 μg/ml in sterile 10 mM sodium phosphate containing 0.1% BSA. Aliquot and store at -20°C.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6aoyv\",\"text\":\"3. bFGF: Reconstitute at 1 mg/ml in sterile 5mM Tris, pH 7.6 containing 0.1% BSA. Aliquot and store at -20°C.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"uxrax\",\"text\":\"4. BMP4: Reconstitute at 10 μg/ml in sterile 4 mM HCl containing 0.1% BSA. Aliquot and store at -20°C.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dtbai\",\"text\":\"5. dbcAMP: Reconstitute at 100 mg/ml in sterile water. Aliquot and store at -20°C. Protect from light.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b2cxe\",\"text\":\"6. N-acetyl-cysteine: Reconstitute at 50 mg/ml in sterile water. Aliquot and store at -20°C.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vlark\",\"text\":\"7. Heparin-binding EGF-like growth factor: Reconstitute at 50 μg/ml in sterile PBS containing 0.1% BSA. Aliquot and store at -20°C.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"wjjew\",\"text\":\"- DMEM/F-12 (ThermoFisher Scientific, cat. no. 31330038)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"rjxik\",\"text\":\"- Neurobasal (ThermoFisher Scientific, cat. no. 21103049)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4vtyw\",\"text\":\"- FBS (ThermoFisher Scientific, cat. no. 10082147)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qztp1\",\"text\":\"- N2 supplement (ThermoFisher Scientific, cat. no. 17502001)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"woffs\",\"text\":\"- B27 supplement (ThermoFisher Scientific, cat. no. 17504001)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"nf7ko\",\"text\":\"- NEAA (ThermoFisher Scientific, cat. no. 11140035)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"klbvu\",\"text\":\"- Glutamax (ThermoFisher Scientific, cat. no. 35050061)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"csrvx\",\"text\":\"- Sodium Pyruvate (ThermoFisher Scientific, cat. no. 11360070)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vqdm1\",\"text\":\"- bFGF (Peprotech, cat. no. 100-18B)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c5hse\",\"text\":\"- CNTF (Peprotech, cat. no. 450-13)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"p1ota\",\"text\":\"- BMP4 (Peprotech, cat. no. 120-05ET)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qmqq4\",\"text\":\"- dbcAMP (Sigma-Aldrich, cat. no. D0627-25MG)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"n29ui\",\"text\":\"- N-acetyl-cysteine (Sigma-Aldrich, cat. no. A8199-10G)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jlbt3\",\"text\":\"- Heparin-binding EGF-like growth factor (Sigma-Aldrich, cat. no. E4643-50UG)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"wph1s\",\"text\":\"- Polybrene (Sigma-Aldrich, cat. no. TR-1003-G)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lychj\",\"text\":\"- Doxycycline (Sigma-Aldrich, cat. no. D9891-100UG)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"elko1\",\"text\":\"- Accutase (ThermoFisher Scientific, cat. no. A1110501)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lkfwj\",\"text\":\"- Matrigel (Corning, cat. no. 354230)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mk4dt\",\"text\":\"- Rock inhibitor (StemCell Technologies, cat. no. Y-27632)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Day -2: Reagent setup",
+    "Expansion Medium: DMEM/F-12 10% FBS 1% N2 supplement 1% Glutamax",
+    "FGF Medium: Neurobasal 2% B27 supplement 1% NEAA 1% Glutamax 1% FBS 8 ng/ml FGF 5 ng/ml CNTF 10 ng/ml BMP4",
+    "Maturation Medium: 1:1 DMEM/F-12 and Neurobasal 1% N2 1% Sodium Pyruvate 1% Glutamax 5 μg/ml N-acetyl-cysteine 5 ng/ml heparin-binding EGF-like growth factor 10 ng/ml CNTF 10 ng/ml BMP4 500 μg/ml dbcAMP",
+    "Day -1 Dissociate hiPSC with Accutase and incubate 5x10^5^ cells with virus for 1 h.",
+    "Seed in Matrigel-coated 6-well plates with StemFlex containing 10 μM Rock inhibitor",
+    "Spinfect with Sox9 and NfiB virus for 1h at 1000g",
+    "Day 0 Aspirate medium and add 2 ml of fresh StemFlex containing 2.5 μg/ml of Doxycycline per well.",
+    "Days 1 and 2 Aspirate medium and add 2 ml of Expansion Medium containing 2.5 μg/ml of Doxycycline and pertinent antibiotics (for whatever viruses you used).",
+    "Day 3 Aspirate medium and add 2 ml of 3/4 of Expansion Medium and 1/4 of FGF Medium containing 2.5 μg/ml of Doxycycline per well.",
+    "Day 4 Aspirate medium and add 2 ml of 1/2 of Expansion Medium and FGF Medium containing 2.5 μg/ml of Doxycycline per well.",
+    "Day 5 Aspirate medium and add 2 ml of 1/4 of Expansion Medium and 3/4 of FGF Medium containing 2.5 μg/ml of Doxycycline per well.",
+    "Day 6 Aspirate medium and add 2 ml of FGF Medium containing 2.5 μg/ml of Doxycycline.",
+    "Day 7 Dissociate cells with Accutase and pellet at 400g for 5 min.",
+    "Replate cells in Matrigel-coated coverslips, petri dishes or wells according to desired output.",
+    "Day 8 Use the necessary amount of FGF Medium containing 2.5 μg/ml of Doxycycline.",
+    "Aspirate medium and add 1/4 FGF Medium and 3/4 Maturation Medium containing 2.5 μg/ml of Doxycycline.",
+    "Day 10 Aspirate half of the medium and add the same amount of Maturation Medium containing 2.5 μg/ml of Doxycycline.",
+    "From here, change half of the medium every 2-3 days."
+  ],
+  "authors": [
+    "Nadine Schrode",
+    "Kristen Brennand"
+  ],
+  "creator": "Kristen Brennand",
+  "published_on": 1771906494,
+  "created_on": 1771630598,
+  "keywords": []
+}

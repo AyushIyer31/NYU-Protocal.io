@@ -1,0 +1,37 @@
+{
+  "id": 59832,
+  "title": "Yeast Transformation Protocol",
+  "uri": "yeast-transformation-protocol-b6nyrdfw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygxzy6kv8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"7odkg\",\"text\":\"This protocol is based on Gietz, R.D. and R.A. Woods. (2002) TRANSFORMATION OF YEAST BY THE Liac/SS CARRIER DNA/PEG METHOD. Methods in Enzymology 350: 87-96.  Some steps of this protocol are based on information obtained from:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cffgj\",\"text\":\"http://www.umanitoba.ca/faculties/medicine/biochem/gietz/\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"269ne\",\"text\":\"This protocol is generalized and not to be considered optimal for all strains, conditions, and applications.  Some aspects of this protocol may have to be modified significantly to suit your particular needs.  It works for simple transformation, targeting in yeast, GAP repair, and multi-plasmid transformations for two-hybrid.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"h3hi\",\"text\":\"Media and Solutions:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":20}],\"entityRanges\":[],\"data\":{}},{\"key\":\"djh78\",\"text\":\"YAPD (double for 2xYAPD):\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":25}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5v6r2\",\"text\":\"10g of BactoYeast extract\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jeeb\",\"text\":\"20g of BactoPeptone\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cebhj\",\"text\":\"20g Dextrose\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5gh9r\",\"text\":\"100mg adenine hemisulfate\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cgd6u\",\"text\":\"q.s. to 1000ml with water.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"34ab9\",\"text\":\"Autoclave 20min on liquid cycle.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f3d20\",\"text\":\"SC Medium:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"as9r6\",\"text\":\"Selective medium will vary based on strain and application.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"25hoa\",\"text\":\"Salmon sperm:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":13}],\"entityRanges\":[],\"data\":{}},{\"key\":\"ff3lg\",\"text\":\"2mg/ml in TE.  Sigma D1626.  Make 100ml in a flask using a magnetic stirrer.  Takes 2-4 hours to dissolve.  Aliquot in 1.5ml tubes (1ml/tube).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c3uq\",\"text\":\"PEG 3500 w/v:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":13}],\"entityRanges\":[],\"data\":{}},{\"key\":\"dgau8\",\"text\":\"Place 50gm of polyethylene glycol, MW 3350 (Sigma) in a 150 ml glass beaker and add 35 ml of ddH20.  Stir for 1-2hrs with a magnetic stirring bar until dissolved. q.s. to 100 ml and keep stirring for at least 10min to mix.   Filter using a 0.45 um filter and aliquot in 15ml conicals (10ml each) and store at RT.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"42iel\",\"text\":\"LiAc:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":5}],\"entityRanges\":[],\"data\":{}},{\"key\":\"8i3oe\",\"text\":\"1.0M Lithium Acetate.  No need to pH.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Streak or patch yeast on YAPD for 24-48hrs. Can also use yeast from older plates (3 months? at 4 deg) if efficiency is not an issue and the strain cooperates.",
+    "Inoculate 2 x 3-5ml cultures in 2xYAPD or SC media (15ml snap cap tubes) from the fresh streak and incubate O/N 30 deg, 200rpm. SC media may need to be seeded more heavily (or more tubes may be required).",
+    "Pre-warm 50ml 2xYAPD to 30deg in 500ml flask (at least 10min). Turn on 42deg water bath(takes 30min or more).",
+    "Dilute O/N culture 1:10 in water and take an OD at 600nm. Use 2xYAPD (or YAPD or SC when appropriate) diluted 1:10 in water as a blank. The diluted culture will usually have an OD of between 0.1 and 1.0.",
+    "Dilute culture to approximately 0.1 OD in 50 ml pre-warmed 2xYAPD and incubate 3-6hrs until OD reaches 1.0 (or close). Yeast grown rates vary so be prepared to wait. It usually takes 5-6 hours but can take quite a bit longer",
+    "Pellet 3000rpm, 10min at RT in RT6000 or similar centrifuge",
+    "While spinning yeast, boil salmon sperm DNA 5 min with boiling cap and chill on ice. Use 3-4 times (storing at -20) and get a new tube. Do not boil over and over again.",
+    "Resuspend in 1ml ddH2O and transfer to 1.5ml tube.",
+    "Vortex 1min or until yeast are in suspension (no clumps).",
+    "Pellet at max speed, 30sec, RT and resuspend in 1ml ddH2O by vortexing as before. 100ul will be used for eacPh transformation so there are enough yeast for 10 transformations.",
+    "Transfer 100 ul of yeast to a separate 1.5ml tube for each transformation and pellet at max speed, 30sec, RT and remove supernatant.",
+    "For each transformation make up the following (master mix or separately): 240ul of PEG 3500 w/v 36ul of 1.0M LiAc 50ul of 2mg/ml salmon sperm DNA 34ul or your plasmid(s) + water (1ul of bacterial miniprep DNA is plenty) 360ul TOTAL",
+    "Add the transformation mix(es) to the yeast pellets from step #9 and vortex 1min or until yeast are in suspension (no clumps).",
+    "Place yeast at 42 deg for 40min. For best efficiency the optimal shock time needs to be determined empirically and can vary from 10min to 60min. For simple single selection plasmid transformation 20-30min usually works fine.",
+    "Pellet at max speed, 30 sec, RT and remove transformation mix.",
+    "Add 1ml ddH2O and use a 1ml pipet tip to stir the cells into solution. If necessary, pipet the yeast up and down very gently.",
+    "Plate 200ul on appropriate 100mm or 150mm selective plates and grow 3-4 days at 30deg. *Instead of 1ml in step 14 you can also resuspend the yeast in 400ul and plate the entire amount on one 150mm plate if you desire."
+  ],
+  "authors": [
+    "Sudhir Nayak"
+  ],
+  "creator": "Zain Aldean Bader",
+  "published_on": 1648260149,
+  "created_on": 1648100781,
+  "keywords": []
+}

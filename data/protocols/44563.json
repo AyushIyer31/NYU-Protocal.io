@@ -1,0 +1,29 @@
+{
+  "id": 44563,
+  "title": "Large Volume Immunostaining for Cleared Samples",
+  "uri": "large-volume-immunostaining-for-cleared-samples-bprtmm6n",
+  "doi": "dx.doi.org/10.17504/protocols.io.bprtmm6n",
+  "description": "{\"blocks\":[{\"key\":\"6ljri\",\"text\":\"This is a guide for immunostaining CLARITY-processed samples. dx.doi.org/10.17504/protocols.io.8jihuke\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":62,\"length\":40}],\"entityRanges\":[{\"key\":0,\"offset\":62,\"length\":40}],\"data\":{}},{\"key\":\"1akde\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6bck5\",\"text\":\"These steps are meant to be a guide for immunostaining large samples and should be optimized to suit your particular tissues and reagents. Large tissue volumes and dense tissue types will require longer incubation and wash times. The parameters suggested below are for a piece of human tissue (thymus, spleen, or lymph node) approximately 5 mm3 in size.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":343,\"length\":2}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6e0j1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5lhsj\",\"text\":\"A useful link: http://wiki.claritytechniques.org/index.php/Immunostaining \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"3FC8FE9C17B911EB9FFD0A58A9FEAC2A\",\"url\":\"https://dx.doi.org/10.17504/protocols.io.8jihuke\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"fnido\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"copn6\",\"text\":\"Ensure the tissue is sufficiently transparent for your imaging requirements. If the sample has not been successfully cleared then subsequent imaging will be difficult due to regions retaining light-obscuring lipids. Samples should be imaged prior to immunostaining to confirm adequate clearing, particularly among excitation/emission settings intended for later use. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"2tssl\",\"text\":\"Solutions:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dmokf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6jvhm\",\"text\":\"Wash buffer (PBST): 1x phosphate buffered saline (PBS), 0.5% Triton X-100, pH 7.4; at least 20x volume of tissue.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"cug0a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"59pdt\",\"text\":\"Blocking buffer: 1x PBS, 1% horse serum, 0.5% Triton-X 100, 0.05% Tween-20, pH 7.4; at least 10x volume of tissue.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2i3ut\",\"text\":\"oAnother serum type should be used based on the secondary antibody.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6co5e\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2hsiu\",\"text\":\"Staining buffer: 1x PBS, 0.5% Triton X-100, 0.05% Tween-20, pH 7.4; at least 10x volume of tissue.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Wash out residual clearing solution Three washes in PBST, 24 hours each, 37ºC with gentle agitation. Large wash volumes are best, a 50 ml conical tube with 50 ml fresh PBST is recommended for each wash step.",
+    "Nonspecific Epitope Blocking Blocking buffer incubation: three days, 37ºC with gentle agitation. Blocking buffer volume should be at least 5 volumes greater than tissue volume. Note: Serum type should be used based on the secondary antibody host species.",
+    "Primary Antibody Incubation 1:100 dilution (~10 ug/mL) in Staining Buffer. Primary antibody incubation: five days, 37ºC with gentle agitation; then two days, 4ºC with gentle agitation. For best results a large volume for primary antibody incubation is recommended however. A 5 ml total volume for antibody staining is recommended for a 5 mm 3 piece of tissue.",
+    "Wash out Primary Antibody Three washes, 24 hours each, at 37ºC with gentle agitation.",
+    "Secondary Antibody Incubation 1:200 dilution (~5 ug/mL) in Staining Buffer. Secondary antibody incubation: five days at 37ºC with gentle agitation; two days at 4ºC with gentle agitation. Note: Protect samples from light.",
+    "Wash out Secondary Antibody Three washes, 24 hours each, at 37ºC with gentle agitation. Note: Protect samples from light.",
+    "Prepare for 3D Imaging or Storage Prepare for imaging or store samples in washing buffer (PBST) at 4ºC. For 3D imaging guide, see: https://dx.doi.org/10.17504/protocols.io.begajbse"
+  ],
+  "authors": [
+    "Seth Currlin",
+    "Marda Jorgensen",
+    "Jerelyn Nick"
+  ],
+  "creator": "Seth Currlin",
+  "published_on": 1607020399,
+  "created_on": 1605544128,
+  "keywords": []
+}

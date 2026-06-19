@@ -1,0 +1,40 @@
+{
+  "id": 219694,
+  "title": "Protein Digestion and Mass Spectrometry Analysis",
+  "uri": "protein-digestion-and-mass-spectrometry-analysis-g2snbyedf",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v9o67qv3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"27ukk\",\"text\":\"This protocol describes ...\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "The beads were resuspended in 80 μL of 2M Urea, 50 mM ammonium bicarbonate (ABC) and treated with DL-dithiothreitol (DTT) (final concentration 1 mM) for 30 minutes at 37°C with shaking at 1100 rpm on a Thermomixer (Thermo Fisher).",
+    "After incubation, an additional 500 ng of trypsin was added to the sample, followed by a 2-hour incubation at 37°C at 1150 rpm.",
+    "Briefly, the stage tips were conditioned with sequential additions of:",
+    "After conditioning, the acidified peptide digest was loaded onto the stage tip, and the stationary phase was washed with 100 μL 0.1% formic acid (FA) twice.",
+    "Peptides were eluted with 50 μL 70% ACN/0.1% FA twice.",
+    "Peptides were separated on a 25 cm column with a 75 μm diameter and 1.7 μm particle size, composed of C18 stationary phase (IonOpticks Aurora 3 1801220) using a gradient from 2% to 35% Buffer B over 90 minutes",
+    "MS data were acquired on a TimsTOF HT (Bruker) with a Captive Spray source (Bruker) using a data-independent acquisition PASEF method (dia-PASEF). The mass range was set from 100 to 1700 m/z, and the ion mobility range from 0.60 V.s/cm2 (collision energy 20 eV) to 1.6 V.s/cm2 (collision energy 59 eV), a ramp time of 100 ms, and an accumulation time of 100 ms. The dia-PASEF settings included a mass range of 400.0 to 1201.0 Da, mobility range 0.60-1.60, and an estimated cycle time of 1.80 seconds. The dia-PASEF windows were set with a mass width of 26.00 Da, mass overlap 1.00 Da, and 32 mass steps per cycle.",
+    "Raw data files were processed using Spectronaut version 17.4 (Biognosys) and searched with the PULSAR search engine against the Homo sapiens UniProt protein database (226,953 entries, downloaded on 2022/09/23). Cysteine carbamidomethylation was set as fixed modifications, while methionine oxidation, acetylation of the protein N-terminus, and deamidation (NQ) were defined as variable modifications. A maximum of two trypsin missed cleavages was allowed.",
+    "Searches used a reversed sequence decoy strategy to control the peptide false discovery rate (FDR), with a 1% FDR threshold for identification. An unpaired t-test was used to calculate p-values for differential analysis, and volcano plots were generated based on log2 fold change and q-value (multiple testing corrected p-value). A q-value of ≤0.05 was considered the statistically significant cut-off.",
+    "Free cysteine residues were alkylated with 2-iodoacetamide (IAA) (final concentration 3.67 mM) for 45 minutes at 25°C with shaking at 1100 rpm in the dark.",
+    "The reaction was quenched using DTT (final concentration 3.67 mM), and LysC (750 ng) was added, followed by incubation for 1h at 37°C at 1150 rpm.",
+    "Trypsin (750 ng) was added, and the mixture was incubated for 16 hours at 37°C with shaking at 1150 rpm.",
+    "Eluted peptides were dried under vacuum in a Speed-Vac centrifuge, reconstituted in 12 μL of 0.1% FA, sonicated and transferred to an autosampler vial.",
+    "The digest was then acidified to pH &lt;3 by adding 50% trifluoroacetic acid (TFA), and the peptides were desalted on C18 stage tips (Empore C18 extraction disks).",
+    "i) 100 μL methanol,",
+    "ii) 100 μL 70% acetonitrile (ACN)/0.1% TFA,",
+    "iii) 100 μL 0.1% TFA twice.",
+    "Peptide yield was quantified using a NanoDrop (Thermo Fisher).",
+    "This was followed by an increase to 95% Buffer B for 7 minutes (Buffer A: 0.1% FA in HPLC-grade water; Buffer B: 99.9% ACN, 0.1% FA) with a flow rate of 300 nL/min on a NanoElute2 system (Bruker)."
+  ],
+  "authors": [
+    "Mara monetti",
+    "Zhuoning Li"
+  ],
+  "creator": "Michael G Hanna",
+  "published_on": 1753108648,
+  "created_on": 1749169040,
+  "keywords": []
+}

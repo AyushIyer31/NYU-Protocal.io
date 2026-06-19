@@ -1,0 +1,36 @@
+{
+  "id": 226473,
+  "title": "Small-scale test expression of recombinant protein in E. coli",
+  "uri": "small-scale-test-expression-of-recombinant-protein-g9ehbz3b7",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlkydkdg5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"7igpm\",\"text\":\"This procedure is meant to be used for the small scale test production of recombinant protein in E. coli before scaling up to larger volumes. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":97,\"length\":7}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"1601h\",\"text\":\"Ni-binding buffer (for resuspension):\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":37}],\"entityRanges\":[],\"data\":{}},{\"key\":\"ftqsa\",\"text\":\"50 mM Tris-HCl pH 7.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bpqbp\",\"text\":\"100 mM NaCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8ovo7\",\"text\":\"10% glycerol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"78tfm\",\"text\":\"5 mM beta-mercaptoethanol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4lbd0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Take LB agar plates with transformed E. coli. Select a single colony and add to 4 mL LB media with antibiotic. Place tube in 37 °C shaker.",
+    "Shake tubes until media becomes cloudy, typically 03:00:00, (2-3 hours) depending on cell strain.",
+    "Take 500 µL of cells and add to 500 µL of 50% glycerol solution (so final of 25% glycerol). Store this at -80ºC. The purpose of creating a glycerol stock at this step is to be able to use this exact colony of cells again in the future if the results are good! Each colony on a plate originated from a single E. coli . Yes, theoretically all colonies which grow on the antibiotic plate should act the same, but there are other factors at play that can affect the efficiency of protein production. So, if you plan to scale-up your protein production after the test expression, it is best to use the same stock of cells.",
+    "It is convenient to keep 1000x stocks of antibiotics in the freezer. A B C D 1 Antibiotic 1000X Concentration 1X Concentration Solvent 2 Ampicillin 100 mg/mL 100 ug/mL water 3 Kanamycin 50 mg/mL 50 ug/mL water 4 Chloramphenicol 34 mg/mL 34 ug/mL ethanol",
+    "Take 1 mL of cells and put in a microcentrifuge tube. Centrifuge 14000 rpm, 4 °C, , 1 minutes . Aspirate the media completely and store the pellet at -20 °C until day 2. This is your control, uninduced sample.",
+    "Add 2.5 µL of 1000X IPTG to the tube. IPTG concentration may vary depending on protein you are trying to express, but 0.5 millimolar (mM) final (0.5M stock) is a good starting point.",
+    "Reduce temperature of shaker to 18 °C and put tubes back in. Allow tubes to shake in incubator overnight.",
+    "Take tubes from shaker. Pipette 1 mL of cells into a microcentrifuge tube and centrifuge 14000 rpm, 4 °C, for 1 minute. Aspirate media completely. This is your induced sample.",
+    "Place both uninduced and induced pellet samples on ice. Add 400 µL resuspension buffer. We use Ni-binding buffer (recipe in materials). Pipette to resuspend each pellet.",
+    "Sonicate each cell suspension. For QSonica sonicator, use the smallest tip. The settings are: 1.5 minutes, 03 s on, 08 s off, 30% amplitude.",
+    "After all tubes have been sonicated, take 15 µL of each sample and label as &#34;uninduced total&#34; and &#34;induced total&#34;. This represents all soluble and insoluble protein.",
+    "Each cycle takes about 5 minutes. Make sure that the sonicator tip is submerged in the cell suspension, but not pressed against the side of the tube.",
+    "Spin cells down at 14000 rpm, 4 °C, for 00:10:00 . Take 15 uL of the supernatant, and label as &#34;uninduced soluble&#34; and &#34;induced soluble&#34;. This represents the fraction of protein that is soluble in your buffer.",
+    "Add 5 µL 4X Laemmli sample dye to each tube. Place tubes in 95 °C heat block for 2 minutes. Load samples onto SDS-PAGE gel and analyze by Coomassie staining.",
+    "What would the ideal result be? Ideally, you will see non-specific proteins in the uninduced samples, both total and soluble. In your induced samples, you will hopefully see a thick band at the expected MW for your recombinant protein in both the total and soluble samples. If you do not see your target protein, or if you see protein only in the induced total fraction, it indicates a solubility/expression issue that should be addressed before you scale up your protein production!"
+  ],
+  "authors": [
+    "Ainsley Lederer",
+    "Prem Shrestha"
+  ],
+  "creator": "Ainsley Lederer",
+  "published_on": 1763753176,
+  "created_on": 1757000834,
+  "keywords": []
+}

@@ -1,0 +1,38 @@
+{
+  "id": 106891,
+  "title": "Endo H/ PNGase F Assay for JESS Automated Western Blot ",
+  "uri": "endo-h-pngase-f-assay-for-jess-automated-western-b-dkmj4u4n",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l2qzyjl1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"a0qq0\",\"text\":\"This protocol details an optimized Endo H and PNGase F digestion assay that produces samples that can be run with the JESS Automated Western Blot System. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"6ptqv\",\"text\":\"10X Glycoprotein Denaturing Buffer (NEB, Catalog# B0701S)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c5ddb\",\"text\":\"10X GlycoBuffer 3 (NEB, Catalog# B0701S)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bfr7q\",\"text\":\"10X GlycoBuffer 2 (NEB, Catalog# B0701S)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"96f6q\",\"text\":\"10% NP-40 (NEB, Catalog# B0701S)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2nof5\",\"text\":\"EndoH (NEB, Catalog# P0703S)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cc290\",\"text\":\"PNGase F (NEB, Catalog# P0704S)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"58k7c\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ds5m4\",\"text\":\"10K Amicon Ultra Centrifugal Filter (Millipore, UFC5010BK)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "In an eppendorf tube, add 40 µg protein, 2 µL 10X Glycoprotein Denaturing Buffer, and water for a total reaction volume of 20 µL . Mix well.",
+    "Denature glycoprotein by heating reaction at 100 °C for 00:10:00 .",
+    "Split reaction volume into 2 eppendorf tubes with 10 uL in each tube. One tube will be used for the EndoH reaction, while the other will be used for the PNGaseF reaction.",
+    "Add the following to one reaction tube from step 3: 2 µL 10X GlycoBuffer 3, 2 µL Endo H, 6 µL water. Total volume will be 20 µL .",
+    "Mix gently.",
+    "Incubate reaction at 37 °C for 01:00:00",
+    "Add the following to the second reaction tube from step 3: 2 µL 10X GlycoBuffer 2, 2 µL NP-40, 6 µL water, 1 µL PNGaseF. Total volume will be 21 µL .",
+    "Mix gently.",
+    "Incubate reaction at 37 °C for 01:00:00 .",
+    "Add 480 µL and 479 µL of 0.1X Sample Buffer (Bio-Techne) to the Endo H and PNGaseF reaction tubes respectively to make the final volume 500 µL .",
+    "Add all 500 µL of each reaction to a 10K Amicon Ultra Centrifugal Filter",
+    "Spin at 14000 x g, °C, for 00:20:00 . You will recover a final volume of 20 µL , and the protein concentration recovered will be ~ 1 mg/mL .",
+    "Add 4 parts of the washed Endo H/ PNGaseF sample from step 12 with 1 part of 5X Fluorescent Master Mix (Bio-Techne).",
+    "Vortex to mix",
+    "Incubate sample at 95 °C for 00:05:00 .",
+    "Load into JESS microplate (Bio-techne) to be detected by the Automated Western Blot System."
+  ],
+  "authors": [
+    "Charis Ma",
+    "Yu Chen",
+    "sidranse"
+  ],
+  "creator": "Charis Ma",
+  "published_on": 1725433759,
+  "created_on": 1725385484,
+  "keywords": []
+}

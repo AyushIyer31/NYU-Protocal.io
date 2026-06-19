@@ -1,0 +1,30 @@
+{
+  "id": 224298,
+  "title": "Quantification of microscopy-based bead assay (Cellpose)",
+  "uri": "quantification-of-microscopy-based-bead-assay-cell-g7aibzicf",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vz9b6rgx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"257js\",\"text\":\"The script automatically identifies individual beads and extracts signal intensities by drawing line profiles across bead surfaces, calculating the difference between the minimum and maximum gray values along each line. Bead segmentation was performed using Cellpose (Stringer et al., 2021), which had been trained specifically to recognize beads in our imaging setup. The source code is available at https://www.maxperutzlabs.ac.at/research/facilities/biooptics-light-microscopy (GUV Profiler).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":401,\"length\":78}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"A97AEFE672B511F086200A58A9FEAC02\",\"url\":\"https://www.maxperutzlabs.ac.at/research/facilities/biooptics-light-microscopy\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Multichannel input images were separated into individual TIFF files for each channel and processed using Cellpose (Python environment; Stringer et al., 2021) for segmentation.",
+    "The labeled outputs from Cellpose were then reassembled into multichannel images.",
+    "Circular regions of interest (ROIs) were fitted to the segmented beads. From each bead center, a predefined number of 20 line profiles were automatically drawn, extending radially beyond the ROI boundary.",
+    "These line profiles captured fluorescence intensity from the bead center to the surrounding inter-bead space, allowing precise quantification of the signal at the bead rim.",
+    "To avoid overlap with neighboring beads, a combined ROI encompassing all segmented beads was used to limit line profile extension.",
+    "All AI-generated segmentations and line profiles were manually inspected to identify missing beads, misclassified structures, or inaccurate profile placements.",
+    "For each bead, a mean fluorescence intensity and standard deviation were calculated based on its 20 line profiles.",
+    "Beads with a standard deviation equal to or exceeding 50% of the mean value were either excluded or reviewed manually for correction.",
+    "When comparing across experiments, relative intensities were calculated by normalizing each bead&#39;s mean intensity to the average bead intensity of the control condition .",
+    "Final data were plotted and analyzed using GraphPad PRISM for statistical evaluation."
+  ],
+  "authors": [
+    "Elisabeth Holzer"
+  ],
+  "creator": "Elisabeth Holzer",
+  "published_on": 1781615858,
+  "created_on": 1754478095,
+  "keywords": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": 68486,
+  "title": "cDNA Library Preparation for scRNA-seq of Human Meniscus (10x Genomics) ",
+  "uri": "cdna-library-preparation-for-scrna-seq-of-human-me-ce5etg3e",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvwkw32vmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"q61k\",\"text\":\"Samples are processed using V2 barcoding chemistry kits of 10x Genomics. For each run, 10,000 cells from individual donors are labeled with distinct oligo-barcoded antibodies (cell hashing), enabling us to pool samples from both conditions on each 10X Genomics run and reduce batch effects. All samples from a given experiment are processed in parallel in the same thermal cycler. The 10x user guide can be found https://assets.ctfassets.net/an68im79xiti/1C16trEdzy1Folq5xbOijE/7e6fb1f504e130bd561d898384da99d9/CG000315_ChromiumNextGEMSingleCell3-_GeneExpression_v3.1_DualIndex__RevB.pdf and is also an attached document.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":413,\"length\":174}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"91FC6872C71C11ECB7380A58A9FEAC02\",\"url\":\"https://assets.ctfassets.net/an68im79xiti/1C16trEdzy1Folq5xbOijE/7e6fb1f504e130bd561d898384da99d9/CG000315_ChromiumNextGEMSingleCell3-_GeneExpression_v3.1_DualIndex__RevB.pdf\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"251ub\",\"text\":\"Chromium Next GEM Single Cell 3’ GEM Kit v3.1, 16 rxns PN-1000123 \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"76uih\",\"text\":\"Library Construction Kit, 16 rxns PN-1000190 \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"behdn\",\"text\":\"Chromium Next GEM Single Cell 3’ Gel Bead Kit v3.1, 16 rxns PN-1000122\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"co05v\",\"text\":\"Dynabeads™ MyOne™ SILANE PN-2000048\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7tha2\",\"text\":\"Chromium Next GEM Chip G Single Cell Kit, 16 rxns PN-1000127\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1b6f5\",\"text\":\"Dual Index Kit TT Set A, 96 rxns PN-1000215\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4cq56\",\"text\":\"BD Hu Single Cell Sample Multiplexing Kit cat# 633781\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Single cells are isolated from human knee menicus using doi dx.doi.org/10.17504/protocols.io.n2bvj6k7blk5/v1 .",
+    "Single cell suspensions are multiplexed and converted to barcoded scRNAseq libraries using the Chromium Single Cell 3’ Library, Gel Bead and Chip Kit (10x Genomics), and the BD™ Hu Single Cell Sample Multiplexing Kit . Chromium Next GEM Single Cell 3’ Reagent Kits v3.1 (Dual Index) User Guide https://assets.ctfassets.net/an68im79xiti/1C16trEdzy1Folq5xbOijE/7e6fb1f504e130bd561d898384da99d9/CG000315_ChromiumNextGEMSingleCell3-_GeneExpression_v3.1_DualIndex__RevB.pdf",
+    "Libraries are sequenced on an Illumina NextSeq2000 sequencer targeting 20,000-25,000 reads per cell."
+  ],
+  "authors": [
+    "molmer ",
+    "Martin Lotz",
+    "Tony Mondala",
+    "Steven Head"
+  ],
+  "creator": "Merissa Olmer",
+  "published_on": 1661280270,
+  "created_on": 1660169439,
+  "keywords": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": 45429,
+  "title": "Bicinchoninic acid Acid Protein Concentration measurement ",
+  "uri": "bicinchoninic-acid-acid-protein-concentration-meas-bqkvmuw6",
+  "doi": "",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"cu5kn\",\"text\":\"CuSO4 and Bicinchonic Acid Solution for the “Working Reagent”, \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":4,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1uesq\",\"text\":\"PBS as diluent, \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ir3l\",\"text\":\"Clear plastic flat bottom 96 well plate\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"egq79\",\"text\":\"Experimental samples with protein concentration somewhere between 2 mg/mL and 0.02 mg/mL\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7h6s\",\"text\":\"37 Deg celsius shaking incubator\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bksut\",\"text\":\"UV-Vis plate reader \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Thaw the samples on ice.",
+    "Prepare standards using Pierce Protein Standard-2mg/ml, 1 mg/mL, 0.5 mg/mL, 0.25 mg/mL, 0.125 mg/mL, 0.062 mg/mL, 0.031 mg/mL, 0.016 mg/mL, 0 mg/mL",
+    "Organize your well plate and draw a map on the lid. Group your standards and each dilution of your experimental standards to simplify the analysis.",
+    "Make dilutions depending on the amount of protein expected. For BioID samples, measure lysate and 1/5 dilution in lysis buffer, by loading 25ul of each sample dilution into 2 wells. Label the lid to indicate where each sample and dilution is found",
+    "Load 25 ul of each standard into 2 wells. Label the lid again.",
+    "Prepare the “Working Reagent” immediately before use by mixing CuSO4 and the Bicinchonic Acid Solution in a 1:50 ratio (need 200ul per sample or standard).",
+    "Add 200ul of Working Reagent into each well. Use a multichannel pipet to quickly add the reagent to all wells containing sample or standard.",
+    "Begin the lag-time, a 15 min incubation of the microplate at 37oC with shaking",
+    "Read the absorbance at 562nm on plate reader (ProteinQuant_BCA) C:/Program Files/Molecular Devices…/Protein Quant/BCA.ppr (SoftMax Pro 5.2 rev C) Analysis",
+    "Graph the standards with the absorbance on the x-axis and the concentration on the y-axis. Standards with absorbance greater than 1.5 should not be used in the standard curve as the light signal is extremely low and overly noisy.",
+    "Fit standards data to a line using the trendline in excel or similar program. The min and max absorbance represent the bounds for signal allowable for your unknown standards. Although a polynomial fit could be used to fit the non-linear portions of a standard curve, this 9-point curve doesn’t adequately constrain higher order polynomials so it is better to reduce the range of the curve and focus on the linear region.",
+    "Using the parameters from the linear regression calculate a concentration for each unknown (x should be absorbance). If multiple dilutions of the unknown are within the bounds of the standard curve these readings should be averaged together unless there is evidence that the measurement was done incorrectly i.e. replicates are extremely different."
+  ],
+  "authors": [
+    "JCPrice"
+  ],
+  "creator": "JCPrice",
+  "published_on": 1607641875,
+  "created_on": 1607634928,
+  "keywords": []
+}

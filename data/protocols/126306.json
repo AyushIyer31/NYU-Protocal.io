@@ -1,0 +1,27 @@
+{
+  "id": 126306,
+  "title": "NU Auxin Induced protein degradation",
+  "uri": "nu-auxin-induced-protein-degradation-d7ka9kse",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"fjvh3\",\"text\":\"IAA allows OsTir to recognize and target AID(degron)-tagged proteins for degradation. If IAA is depleted, protein expression will return, as regulated by endogenous mechanisms. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"crv6i\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5rpac\",\"text\":\"Induction may be performed with either IAA, 5-Ph-IAA, or 5-Ad-IAA. \\u003e90% protein depletion is typically observed within an hour.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"9npvr\",\"text\":\"IAA is only effective for the full length 68 AA degron\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"brpav\",\"text\":\"**Degradation for 22 Amino Acid nanodegron-tagged proteions requires 5-Ph-IAA (synthetic)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"6480v\",\"text\":\"1. 3-Indoleacetic acid (IAA): Sigma I2886-5G (*do not use for nanodegron)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e76tj\",\"text\":\"   OR\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5vdaq\",\"text\":\"   5-Ph-IAA: MedChem Express, HY-134653 (similar efficacy to IAA at a lower dose)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2p3aj\",\"text\":\"   OR\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2g52o\",\"text\":\"  5-Ad-IAA: TCI Chemicals A3390-10MG\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5efor\",\"text\":\"2. DMSO\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"efhrn\",\"text\":\"3. Cell line expressing OsTir and degron-tagged protein of interest\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3nd0e\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare induction agent stock, either IAA or 5-Ph-IAA a. 3-Indoleacetic acid (IAA) (Sigma I2886-5G) *Effective for full length 68 AA degron only. Prepare as a 1 M stock in DMSO b. 5-Ph-IAA (MedChem Express, HY-134653):5-Ph-IAA is efficient as IAA at a much lower dose. Prepare as a 1mM stock in DMSO. c. 5-Ad-IAA (TCI Chemicals A3390-10MG) Prepare as a 1mM stock in DMSO. d. Stock may be repared fresh or frozen at -20°C for 1 year or -80°C for 2 years",
+    "Treat cells (density: 1 million KOLF2.2J cells per well of 6-well-plate) with 500 uM IAA* or 1uM 5-Ph-IAA*/5-Ad-IAA or DMSO (Control). * Optimal concentration should be determined for each experimental system. &gt;90% protein suppression is typically observed within 1 hour.",
+    "Verify depletion by protein-directed methods (Western blot, IF) with gene-specific or anti-3x-flag antibodies.",
+    "Repeat treatment daily to maintain protein loss."
+  ],
+  "authors": [
+    "De Xing",
+    "Ozlem Neyisci",
+    "Tao Bai",
+    "Mazhar Adli"
+  ],
+  "creator": "Gina Kirsammer",
+  "published_on": 1746044637,
+  "created_on": 1744054370,
+  "keywords": []
+}

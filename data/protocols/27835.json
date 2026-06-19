@@ -1,0 +1,33 @@
+{
+  "id": 27835,
+  "title": "Autofluorescence Microscopy Data Acquisition",
+  "uri": "autofluorescence-microscopy-data-acquisition-7e3hjgn",
+  "doi": "dx.doi.org/10.17504/protocols.io.7e3hjgn",
+  "description": "{\"blocks\":[{\"key\":\"7oum0\",\"text\":\"Scope:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ce3mt\",\"text\":\"Obtain autofluorescence microscopy images of tissues.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4p2uc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ef0l1\",\"text\":\"Expected Outcome:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"u94d\",\"text\":\"An RGB autofluorescence microscopy image of the tissue section that enables registration and correlation of different imaging modalities on a pixel by pixel basis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"eiuh0\",\"text\":\"Carefully handle slides with gloves.  Finger prints and dust on slide can alter final image.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"77mb\",\"text\":\"Zeiss AxioScan Slide Scanner\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3s09d\",\"text\":\"Slide Adapters for Scanner\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "If sectioned tissue is frozen, return to room temperature (~20 o C) within a vacuum desiccator (~30 min), otherwise proceed directly to step 2.",
+    "Place microscope slide within adapter and insert into the Zeiss AxioScan Slide Scanner",
+    "Perform coarse focusing of the tissue using: DAPI filter set (ex. 335-383 nm; em. 420-470 nm, blue) Lamp power (~90%) and moderate exposure times (~150 ms)",
+    "Perform fine focusing of the tissue using the following to build a focus map: DAPI (blue) GFP (ex. 450-490 nm; em. 500-550, green) DsRed (ex. 538-562 nm; em. 570-640, red) Lamp power (~90%) and moderate exposure times (~150 ms)",
+    "Define the imaging region that includes the tissue.",
+    "Acquire autofluorescence image.",
+    "Export autofluorescence image as an OME-TIF with the following options: &#34;BigTIFF&#34; &#34;Use Tiles&#34; &#34;Compress&#34; &#34;Convert to 8 Bit&#34; Alternatively, other image file types, such as &#34;BigTIFF&#34; and &#34;pngs&#34; can also be useful, depending on the application."
+  ],
+  "authors": [
+    "Elizabeth Neumann",
+    "Heath Patterson",
+    "Jamie Allen",
+    "Maya Brewer",
+    "Mark De Caestecker",
+    "Danielle Gutierrez",
+    "Jeff Spraggins"
+  ],
+  "creator": "Jamie Allen",
+  "published_on": 1568996180,
+  "created_on": 1568759246,
+  "keywords": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": 89827,
+  "title": "Quick guide to use EPU for Cryo-em data collection",
+  "uri": "quick-guide-to-use-epu-for-cryo-em-data-collection-c3ybypsn",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn3m5ql5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"88jq7\",\"text\":\"This quick guide provides key minimal steps for preparing the Microscope/EPU for single-particle data collection\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"apkhs\",\"text\":\"Please note that this guide might be slightly different for each microscope and facility. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"bkdi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"l6ue\",\"text\":\"Check the following before the session is started:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cp5bp\",\"text\":\"Microscope LN2 tank at least 20% full.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3cm07\",\"text\":\"Smart EPU Software.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8q7g0\",\"text\":\"Carbon cross-grid inside the microscope for alignments. \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"asonu\",\"text\":\"\\n\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"d6ptl\",\"text\":\"Handle liquid nitrogen with gloves and face shields equipped all the time\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Load samples into the microscope. Slot 1 is reversed for the carbon cross-grid which is used for alignments. To load, add grids into the cassette at LN2 temperatures and transfer into the NanoCab filled with LN2. Transfer NanoCab into the microscope, load grids and remove the NanoCab. When loading grids, make sure the clip side faces opposite from the direction of loading, this prevents lose-clip grids from falling inside the microscope. Check NanoCab after loading grids. If the cassette is present, add more LN2 and try to load again. If cassette is not loading, contact your facility manager for assistance.",
+    "Do inventory of grids using TEMUI when temperatures &lt;~100Kelvin, indicated by the switch of color from red to green.",
+    "While inventory is going, go to an empty hole in the carbon-cross grid using the Preparation Tab on EPU. Acquire image using the atlas magnification to visualize an empty hole and move to that area using right click and pressing “move here” or “move/acquire”.",
+    "Switch to data acquisition magnification using the Preparation Tab on EPU and load the preferred magnification, press SET to send it to the microscope. Magnification and pixel size will vary depending on the microscope and camera.",
+    "In the same Tab press Measure to check the dose and change it to your preferred dose. If the dose is off, re-center the beam at the data acquisition magnification using TEMUI, by opening the column valves to see the beam while centering. Once centered measure the dose again. Our preferred dose is 50-55 e/Å 2 .",
+    "Skip this step if the microscope does not have an energy filter. Go to the program &#34;Sherpa&#34; and select the Energy Filter tab. Press Center (Zero loss) followed by isochromaticity measure . If values are off during this step, contact the facility manager for assistance.",
+    "Go back to the Autofunction Tab in EPU and select Autostigmate in Thon ring magnification . Followed by Autocoma on the same magnification.",
+    "Using TEMUI, put it the objective lens and redo Autostigmate in Thon ring magnification .",
+    "Go to EPU, select the Atlas Tab and start atlas collection.",
+    "Once Atlas was collected, go to the EPU Tab and set up your session selecting the type of grid and type of acquisition. Accurate mode will yield ~40-50 micrographs/hour compared to Faster mode at ~150-300 micrographs/hour. For gold grids, both holey carbon and holey gold work.",
+    "To set up collection select squares from the atlas in square selection task .",
+    "Once squares are selected, go to hole selection task and press auto-eucentric on the first square. After auto-eucentric, press measure holes and measure the holes on the square. (measuring the holes only has to be done once). Use the selection brush to remove areas that will not be collected. Continue auto-eucentric and brush selection with the next squares.",
+    "Move to hole that will not be used for collection and select the Template definition task, and add focus, drift outside the hole and target inside the hole. Depending on the microscope, you could add more than 1 target per hole. This is also dependent on the ice-thickness of your sample. Check template using the Template execution task .",
+    "Go to Automated Acquistion task and start collection.",
+    "Move to an area that is not broken using the atlas magnification in the Preparation Tab. Select the Autofunction Tab and select Beam alignment by beam tilt in the hole eucentric height magnification . Followed by Autofocus in autofocus magnification ."
+  ],
+  "authors": [
+    "Marta Sanz Murillo",
+    "Amalia Villagran Suarez"
+  ],
+  "creator": "Amalia Villagran Suarez",
+  "published_on": 1698254523,
+  "created_on": 1698167120,
+  "keywords": []
+}

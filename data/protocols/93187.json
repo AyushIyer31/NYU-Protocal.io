@@ -1,0 +1,37 @@
+{
+  "id": 93187,
+  "title": "TAB-PAINT imaging of alpha-synuclein fibrils using Nile Red",
+  "uri": "tab-paint-imaging-of-alpha-synuclein-fibrils-using-c69bzh2n",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj31mwlk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"21iiu\",\"text\":\"This is a protocol for the preparation of a sample of alpha-synuclein fibrils on a PLL-coated cover glass for TAB-PAINT imaging with Nile Red. This protocol was used to generate the data shown in Figure 3 of the following publication:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":196,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3jtcq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8t89u\",\"text\":\"Bruggeman et al., POLCAM: Instant molecular orientation microscopy for the life sciences. bioRxiv 2023.02.07.527479 (Feb 2023), doi: https://doi.org/10.1101/2023.02.07.527479\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":10,\"length\":8},{\"style\":\"italic\",\"offset\":97,\"length\":1},{\"style\":\"bold\",\"offset\":121,\"length\":4}],\"entityRanges\":[{\"key\":0,\"offset\":133,\"length\":41}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"3734C9D6AEFB11EEAB870A58A9FEAC02\",\"url\":\"https://doi.org/10.1101/2023.02.07.527479\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Prepare alpha-synuclein fibrils by diluting alpha-synuclein monomer 70 micromolar (µM) in PBS (with 0.01% NaN 3 ) and incubating at 37 °C in a shaker (200 rpm) for over 24:00:00 . You can store the fibrils at 4 °C for later use.",
+    "Argon plasma clean cover glass (VWR collection, 631-0124) for 00:30:00 in a plasma cleaner (Expanded Plasma Cleaner, PDC-002, Harrick Plasma).",
+    "In the meantime: Filter phosphate-buffered saline (PBS) using a 0.02 μm syringe filter (6809-1102, Whatman). Dilute Nile Red in filtered PBS to a concentration of 1 nanomolar (nM) If you purchase Nile Red in solid form, we recommend preparing a 1 mM solution of Nile Red in DMSO and freezing small aliquots for later use. For each experiment, always use a new aliquot of Nile Red to prepare the 1 nM dilution, as the dye doesn&#39;t store well at low concentrations.",
+    "Create a PLL-coated sample well on the cover glass:",
+    "Add fluorescent beads for lateral drift correction:",
+    "Use a pipet to remove the excess PBS from the well, add 50 µL of alpha-synuclein fibrils and pipet up and down a few times in each corner of the sample well and wait for 00:05:00 A 1:2 dilution of the fibrils is usually a good starting point, i.e. a 35 mM equivalent monomer concentration.",
+    "Create a sample well on the cleaned cover glass by sticking a frame-seal slide chamber (9x9 mm, SLF0201, Bio-rad) on the glass.",
+    "Pipet 70 µL of 0.01% PLL (0.01% poly-L-lysine solution, P4707, Sigma-Aldrich) into the well and wait for 00:15:00 . The PLL will coat the surface of the cover glass. Always use a freshly thawed aliquot of PLL. You can aliquot the PLL and store it in a -80 °C freezer.",
+    "Use a pipet to remove the excess PLL from the well and immediately replace it with 70 µL of filtered PBS.",
+    "Use a pipet to remove the excess filtered PBS from the well and replace with 70 µL filtered PBS. Gently pipet up and down in the corners of the well. Repeat this step 2 more times.",
+    "Remove the excess PBS from the well using a pipet.",
+    "Using a pipet, add 50 µL of 0.1 µm diameter TetraSpeck Microspheres (0.1 µm, fluorescent blue/green/orange/dark red, T7279, Invitrogen) into the well. The concentration of TetraSpeck Microspheres (0.1 µm, fluorescent blue/green/orange/dark red, T7279, Invitrogen) will vary between batches from the vendor. You will likely need to test out a few dilutions to find the concentration that results in the right amount of microspheres per field of view.",
+    "Gently pipet up and down a few times and wait for 00:05:00 .",
+    "Use a pipet to remove the excess solution from the well and replace with 70 µL filtered PBS. Gently pipet up and down in the corners of the well. Repeat this step 2 more times.",
+    "Remove excess solution using a pipet and add 50 µL of filtered PBS to the well.",
+    "Remove excess solution again and replace by 50 µL of 1 nanomolar (nM) Nile Red.",
+    "Image the sample straight away and make sure it doesn&#39;t dry out during imaging."
+  ],
+  "authors": [
+    "Ezra Bruggeman"
+  ],
+  "creator": "Ezra Bruggeman",
+  "published_on": 1715266906,
+  "created_on": 1704821033,
+  "keywords": []
+}

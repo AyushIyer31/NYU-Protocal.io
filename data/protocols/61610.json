@@ -1,0 +1,35 @@
+{
+  "id": 61610,
+  "title": "Preparation of Triton X-100 soluble and insoluble fractions of SH-SY5Y cells",
+  "uri": "preparation-of-triton-x-100-soluble-and-insoluble-b8eirtce",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvr6p1ovmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"3tpn7\",\"text\":\"SH-SY5Y cells are trypsinised and lysed in 1% (v/v) Triton X 100, 50 mM Tris, pH 7.5, 750 mM NaCl, 5 mM EDTA, 4 units RQ1 RNase-free DNase (Promega), protease and phosphatase inhibitor mix (Halt) on ice for 15 minutes. The lysate is passed through a 23G needle and pelleted at 17,000 x g for 30 minutes at 4°C. Triton X 100 soluble fraction is collected and protein concentration measured using the BCA protein assay. Insoluble pellets are resuspended in 2% (w/v) SDS, 8 M urea, 10 mM Tris, pH 7.5, 4 units RQ1 RNase-free DNase, protease and phosphatase inhibitor mix and incubated for 15 minutes at room temperature. Debris is removed by centrifugation at 17,000 x g for 30 minutes at 4°C. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":286,\"length\":1},{\"style\":\"italic\",\"offset\":666,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"fpp73\",\"text\":\"Lab coat and glove should be worn at all times.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"35e0i\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"egcai\",\"text\":\"SDS has acute toxicity inhaled or ingested and can cause serious eye damage. SDS powder should be dispensed in fume hood in to pre-weighed falcon tube. Close lid and weigh tube. Then return to hood and place in beaker and add required volume of H20. Mix in fume hood. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":246,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"dpj5a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2qja\",\"text\":\"Phosphatase and protease inhibitors are harmful if swallowed.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "The detergent Triton X-100 is a good general purpose detergent for preparing lysates. However, it cannot solubilise lipid rafts, proteins that have aggregated and become insoluble, or lyse nuclei. Therefore to investigate insoluble proteins (e.g. a-synuclein that has taken on insoluble/aggregating forms) or proteins that are in the nucleus (e.g. transcription factors such as TFEB) you need to solubilise material with the chaotropic reagent urea and the anionic detergent sodium dodecyl sulfate (SDS). Cell pellets are prepared as normal and can be used either fresh or following storage in the freezer. Cells are first lysed in TX-100 and then centrifuged, yielding soluble proteins in the supernatant. The pellet containing nuclei, cell debris, insoluble proteins are then solubilised in urea-SDS. Both fractions are then separated by SDS-PAGE and then western blotted for protein(s) of interest.",
+    "Triton X-100 buffer: 50 mM Tris, pH 7.5 750 mM NaCl 5 mM EDTA 1% (v/v) Triton X-100 Stored in fridge. Phosphatase and protease inhibitors, DNase added fresh on day. Urea-SDS buffer: 10 mM Tris, pH 7.5 8 M urea 2% (w/v) SDS Stored at room temperature as urea and SDS come out of solution at low temperatures. DNase added fresh on day. N.B. See safety instructions below for preparing SDS and urea. Urea is endothermic and will feel cold. A large amount of urea is required so be careful how much water you resuspend in as too much will affect concentration. Need to mix for a while to get urea in to solution.",
+    "Prepare dry cell pellet from harvesting 1 x confluent 10 cm plate of cells.",
+    "Lyse cell pellet in 250 uL Triton X-100 buffer, supplemented with 1X protease and 1X phosphatase inhibitor cocktails. Also add 10% (v/v) RQ1 DNase buffer and 4 units DNase per sample (Promega). Example: For 1 sample: 225 uL TX-100 buffer, 25 uL DNase buffer, 5 uL DNase, 2.5 uL protease/phosphatase inhibitors. Note: Calculate how much of the lysis buffer you need for your samples and make a master mix. Cool on ice.",
+    "Suspend cells in appropriate volume and keep on ice for 5 minutes, followed by vortexting.",
+    "Keep cells at room temperature for 10 minutes, vortexting every 5 minutes. Note: Cells are often very gloopy. Break up this DNA using a 23 G needle and 1 mL syringe until no longer a sticky/gloopy solution.",
+    "Centrifuge at 17, 000 x g in table top centrifuge at 4 °C for 30 minutes.",
+    "Carefully remove all the supernatant in to a fresh tube and store on ice. Note: the pellet containing insoluble protein and nuclei can come loose from bottom of tube. If so briefly centrifuge at 17, 000 x g for 1 min to get pellet back at bottom",
+    "Resuspend pellet in 25 uL urea-SDS solution. Example: For 1 sample: 25 uL urea-SDS, 2.5 uL DNase buffer, 2 uL DNase.",
+    "Sonicate samples in water bath for 1 minute and then incubate at room temperature for 15 mins and then centrifuge as above. Generally no pellet is visible. Check that lysate is not gloopy. If so, add more (4 uL) DNase and incubate at room temp until no longer gloopy.",
+    "Measure protein concentration in TX-100 soluble fraction. Urea SDS fractions interfere with the BCA reaction and cannot be measured reliably.",
+    "Prepare samples for SDS-PAGE as normal with 4X loading buffer and 1X reducing agent. Heat at 70 °C for 10 minutes. Check sample is not gloopy otherwise will not be able to load gel. If so either add less sample, or add more DNase to initial TX-100 lysate to fully degrade contaminating DNA.",
+    "Prepare same volume for urea SDS fraction as TX-100. However, do not heat as this causes degradation of protein. Check sample not gloopy.",
+    "Load sample on NuPAGE gels and proceed as normal. Urea SDS samples will run slightly differently than TX-100 samples"
+  ],
+  "authors": [
+    "Laura Smith",
+    "Matthew Gegg"
+  ],
+  "creator": "Laura Smith",
+  "published_on": 1653305174,
+  "created_on": 1651156850,
+  "keywords": []
+}

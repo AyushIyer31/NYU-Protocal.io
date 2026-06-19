@@ -1,0 +1,36 @@
+{
+  "id": 106024,
+  "title": "Isolated Brain Mitochondria Respiration protocol",
+  "uri": "isolated-brain-mitochondria-respiration-protocol-djsg4nbw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l62z4zgqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"u22b\",\"text\":\"Brain Mitochondria Respiration protocol. Assay developed by Dr. Linsey Stiles at the UCLA Metabolomics\\nCenter, David Geffen School of Medicine at the University of California, Los Angeles, CA, USA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "The day prior to the Seahorse assay, a Seahorse cartridge needs to be hydrated overnight.",
+    "Load 20 µL per port in the Seahorse cartridge with a multichannel pipet",
+    "Prepare the compounds in MAS to be loaded into the Seahorse cartridge ports. Final concentrations in the well were: a. 4 mM ADP b. 3 µM oligomycin c. 4 µM FCCP d. 2 µM rotenone and antimycin A",
+    "The prepared Seahorse cartridge needs to be calibrated prior to loading the sample plate.",
+    "1. Prepare template with plate map and running program. An example of an isolated mitochondria running protocol: %s %s",
+    "2. Start the Seahorse Run",
+    "3. Load the cartridge for calibration",
+    "1. Prepare mitochondria sample dilutions based on the protein concentration of each sample",
+    "a. Samples preparation includes 10X substrate, isolated mitochondria, and MAS Buffer for the desired number of wells",
+    "2. Load 20µL of the mitochondria sample per well of the XF96 microplate",
+    "3. Centrifuge the plate at 2,100 x g for 5 minutes",
+    "4. Stop the centrifugation without a break",
+    "5. Add 130 of MAS per well after centrifugation",
+    "6. Load the Seahorse plate into the instrument",
+    "All isolated brain mitochondria samples are prepared in Mitochondrial Respiration Buffer (MAS) prepared with containing:220 mM mannitol, 70 mM sucrose, 5 mM KH 2 PO 4 , 5 mM MgCl 2 ,2 mM HEPES, 1 mM EGTA, and 0.1% (w/v) fatty acid-free BSA."
+  ],
+  "authors": [
+    "Livia Hecke Morais",
+    "Linsey Stiles"
+  ],
+  "creator": "Livia Hecke Morais",
+  "published_on": 1724196802,
+  "created_on": 1724176607,
+  "keywords": []
+}

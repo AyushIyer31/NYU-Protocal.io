@@ -1,0 +1,33 @@
+{
+  "id": 224878,
+  "title": "DNA Quantification using the Qubit Fluorometer",
+  "uri": "dna-quantification-using-the-qubit-fluorometer-g7unbznvf",
+  "doi": "dx.doi.org/10.17504/protocols.io.261gekdeyg47/v1",
+  "description": "{\"blocks\":[{\"key\":\"4h9pd\",\"text\":\"Step by step guide to utilising the QubitTM dsDNA HS (High Sensitivity) Assay Kit for dsDNA quantification. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":41,\"length\":2}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"1osdb\",\"text\":\"This protocol utilises the QubitTM dsDNA HS assay on the QubitTM 4 Fluorometer. The QubitTM 3.0 Fluorometer is also compatible with this protocol. If utilising the QubitTM Flex, the protocol will differ slightly in reading the standards and samples, and the respective tubes utilised, but the same working solution can be made.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":32,\"length\":2},{\"style\":\"sup\",\"offset\":62,\"length\":2},{\"style\":\"sup\",\"offset\":89,\"length\":2},{\"style\":\"sup\",\"offset\":169,\"length\":2}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"gvkW2\",\"text\":\"Equipment:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10},{\"style\":\"italic\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"9sevc\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"7ubko\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4oqai\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4qo60\",\"text\":\"Consumables and Reagents:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":25},{\"style\":\"italic\",\"offset\":0,\"length\":25}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ah0q\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"esfb7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"al9sh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"IMMUTABLE\",\"data\":{\"cellsMeta\":{\"0\":{\"0\":\"C\"},\"1\":{\"0\":\"_\"},\"2\":{\"0\":\"1\"},\"A_1\":{\"className\":\" \"},\"B_1\":{\"className\":\" \"},\"C_1\":{\"className\":\" \"}},\"colTitles\":[\"Equipment\",\"Supplier\",\"Catalogue Number\"],\"colWidths\":[\"258\",\"187\",\"149\"],\"data\":[[\"Qubit™ 4 Fluorometer\",\"ThermoFisher Scientific\",\"Q33226\"],[\"Vortex\",\"\",\"\"],[\"Microcentrifuge\",\"\",\"\"]],\"guid\":\"DD9B82435CD644208EBA2F91527CA5A2\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"Qubit™ 4 Fluorometer\",\"ThermoFisher Scientific\",\"Q33226\"],[\"Vortex\",\"\",\"\"],[\"Microcentrifuge\",\"\",\"\"]],\"rowHeights\":[23,23,23]}},\"1\":{\"type\":\"tables\",\"mutability\":\"IMMUTABLE\",\"data\":{\"cellsMeta\":{},\"colTitles\":[\"Consumables/Reagent\",\"Supplier\",\"Catalogue Number\"],\"colWidths\":[\"258\",\"186\",\"149\"],\"data\":[[\"Qubit™ dsDNA Quantification Assay\",\"ThermoFisher Scientific\",\"Q32851/Q32854\"],[\"Qubit™ Assay Tubes\",\"ThermoFisher Scientific\",\"Q32856\"]],\"guid\":\"B1107E62868C4A77AD970DBF04F35C09\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"Qubit™ dsDNA Quantification Assay\",\"ThermoFisher Scientific\",\"Q32851/Q32854\"],[\"Qubit™ Assay Tubes\",\"ThermoFisher Scientific\",\"Q32856\"]],\"rowHeights\":[23,23]}}}}",
+  "steps": [
+    "Insert the tube containing Standard #1 into the sample chamber, close the lid, and then press Read standard. When the reading is complete, remove Standard #1. The instrument displays the results on the Read standard screen.",
+    "Repeat the previous step but utilise Standard #2.",
+    "Once calibrated, any samples utilising the calibrated Qubit TM working solution can be ran. Select the sample volume ( 1 µL ) and units (ng/μL). Insert a sample tube into the sample chamber, close the lid, and then press Read tube.",
+    "When the reading is complete (~ 00:00:03 ) remove the sample tube. The instrument displays the results on the assay screen. The top value is the concentration of the original sample. The bottom value is the dilution concentration.",
+    "Set up two Qubit TM 0.5 mL tubes for calibration, labelling them &#39;Standard #1&#39; and &#39;Standard #2&#39; on the lid. Avoid labelling the tubes on the side as this may interfere with the instrument readings.",
+    "Add 10 µL of each Qubit TM standard to the appropriate tube. Ensure the Qubit TM standards have been sufficiently vortexed before use.",
+    "On the Home screen of the Qubit TM Fluorometer select the dsDNA High Sensitivity as the assay type. Next, calibrate the instrument by reading the standards.",
+    "Remove the Qubit TM Standards from the fridge and allow to come to room temperature. The Qubit TM dsDNA HS Assay delivers optimal performance when all solutions are at room temperature ( 22 °C – 28 °C ).",
+    "Add 190 µL of Qubit TM working solution to each of the tubes used for standards.",
+    "Add 199 µL Qubit TM working solution to the a new Qubit TM sample tube and add 1 µL of your sample to the appropriate tube.",
+    "Vortex all Qubit TM tubes for 00:00:03 , then spin them down. Allow all tubes to incubate at room temperature for 00:02:00 .",
+    "Prepare the Qubit TM working solution in a fresh tube by diluting the Qubit TM dsDNA HS Reagent 1:200 in Qubit TM dsDNA HS Buffer. Each standard tube requires 190 µL of Qubit TM working solution, and each sample tube requires 199 µL . Prepare sufficient Qubit TM working solution to accommodate all standards and samples. Qubit TM dsDNA HS Buffer and Qubit TM dsDNA HS Reagent can be stored at the room temperature but the Qubit TM dsDNA HS Reagent should be protected from light.",
+    "Repeat for any remaining samples."
+  ],
+  "authors": [
+    "Josh Quick"
+  ],
+  "creator": "Mia Weaver",
+  "published_on": 1757058583,
+  "created_on": 1755523395,
+  "keywords": []
+}

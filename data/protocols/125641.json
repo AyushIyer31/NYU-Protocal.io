@@ -1,0 +1,40 @@
+{
+  "id": 125641,
+  "title": "Cell viability using PrestoBlue HS",
+  "uri": "cell-viability-using-prestoblue-hs-d6xh9fj6",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4z7k2vo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"c7fh6\",\"text\":\"This protocol measures the viability of cells cultured in 2D.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"5n7bd\",\"text\":\"KPC A219\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"85df6\",\"text\":\"iMEF \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4mvga\",\"text\":\"DMEM/F-12 culture medium (Gibco 21331-020) with FBS , 1%\\nL-Glutamine and 1% Penicillin/Streptomycin\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"78b1v\",\"text\":\"DPBS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1pc2q\",\"text\":\"Trypsin EDTA 0,05%\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2e3s0\",\"text\":\"96-well plate for culture bottom F\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d3tol\",\"text\":\"PrestoBlue HS Cell Viability Reagent (Invitrogen P50200)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4bimf\",\"text\":\"Aluminium\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4lm0l\",\"text\":\"Opaque 96-well plate for reading (Perkin Elmer Optiplate\\n96-F blake Polystyrene 6005270)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ch9jb\",\"text\":\"Fluorescence reader (Horiba Fluoromax-4)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Cells shouldnot be confluent the day of test. They should be in exponentiel phase of growth.At confluency, cells may lower their metabolic rate. So before experiment, theappropriate cell density should be determined.",
+    "- Warm the complete DMEM/F12 medium at 37°C",
+    "- Under biosafety hood, aspirate the medium in 75cm² flask",
+    "-Add 5 ml of DPBS to rinse the cell and aspirate the PBS",
+    "- Add 2 ml of trypsin EDTA 0,05% and incubate at 37°C for 5 minutes. Verify that cells were detached from the flask wall. Add 10 ml of medium and flush 3 times to separate cells",
+    "-Take 20 µl of cells of each cell line and count",
+    "-Prepare cell suspension to have 4000 cells in 100 µl for drug incubation for 24 hoursand 2000 cells in 100µl for 72 hours",
+    "- Dispense 100 µl in each well of 96-well plate",
+    "- Place the 96-well plates in incubator at 37°C, 5% CO 2",
+    "- prepare solution to have 0-50-100-200 nM of Gemcitabine",
+    "- Aspirate the medium in 96-well plate",
+    "- Dispense 100µl of differents solution",
+    "-Incubate for 24 to 72 hours at 37°C, 5% CO 2",
+    "Warm PrestoBlue HS Cell Viability Reagent to room temperature",
+    "Aspirate the medium in each well",
+    "Add 90 µl of fresh medium in each well",
+    "Add 10 µl per well of PrestoBlue HS Cell Viability Reagent",
+    "Place the 96-well plate in incubator at 37°C, 5% CO2 for 1 hour",
+    "Transfer medium of each well in a opaque black 96-well plate",
+    "Record fluorescence on plate reader (Enter value of emission (560nm) and excitation (590nm) wavelenght)"
+  ],
+  "authors": [
+    "Jacqueline Ngo-Reymond"
+  ],
+  "creator": "magali perier",
+  "published_on": 1743175030,
+  "created_on": 1743166212,
+  "keywords": []
+}

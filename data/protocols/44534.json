@@ -1,0 +1,23 @@
+{
+  "id": 44534,
+  "title": "CuPCR SARS-Cov-2    ",
+  "uri": "cupcr-sars-cov-2-bpqwmmxe",
+  "doi": "dx.doi.org/10.17504/protocols.io.bpqwmmxe",
+  "description": "{\"blocks\":[{\"key\":\"1jii\",\"text\":\"RNA based diagnostic test of different human samples (nasopharyngeal swabs, saliva) to detect SARS-Cov-2. The test requires RNA/DNA extraction and a follow-up RT-PCR (reverse transcriptase polymerase chain reaction). The test covers the N-gene and RdRp-gene and covers a human control as well. The human control safeguards the validity of sample taking and test procedure. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c2bai\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"t7oc\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "00:30:00 RNA / DNA extraction Kingfisher Flex 96 (RNA / DNA extraktor, Thermo Fisher Scientific, 5400630, RNA/DNA extraktor processing up to 96 samples in a single run.) 100µl eluation buffer (e.g. water) containing RNA / DNA from the sample",
+    "01:20:00 RT-PCR Prepare mastermix: 5µl of primer mix + 5µl of enzyme mix (per sample) Put mastermix and sample into PCR tube: 10µl of mastermix + 10µl of sample (eluate) Select (or program) RT-PCR protocol: □ 2 minutes 50 °C □ 2 minutes 95 °C □ 45 cycles: 5 seconds 95 °C 1 minute 60 °C Scan □ 25°C for hold Load samples and start PCR Analyse amplification curves: Human control: ct &lt; 34 --&gt; valid N-gene SARS-Cov-2: ct &gt; 0 --&gt; positive RdRp-gene SARS-Cov-2: ct &gt; 0 --&gt; positive qTower3 (Realtime PCR, Analytic Jena, 844-00563-2) Amplification curves for: human control, N-gene of SARS-Cov-2, RdRp-gene of SARS-Cov-2"
+  ],
+  "authors": [
+    "B Ronacher",
+    "Christoph Reschreiter"
+  ],
+  "creator": "Christoph Reschreiter",
+  "published_on": 1608031843,
+  "created_on": 1605453725,
+  "keywords": []
+}

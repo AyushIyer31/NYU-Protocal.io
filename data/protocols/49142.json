@@ -1,0 +1,40 @@
+{
+  "id": 49142,
+  "title": "Plant RNA extractions using TRI reagent",
+  "uri": "plant-rna-extractions-using-tri-reagent-bt8wnrxe",
+  "doi": "dx.doi.org/10.17504/protocols.io.bt8wnrxe",
+  "description": "{\"blocks\":[{\"key\":\"2oglj\",\"text\":\"Extraction of total RNA from plant tissue using TRI reagent.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"fk2i0\",\"text\":\"TRI reagent and chloroform are hazardous - handle with care, operate in fume hood, wear vinly gloves and safety glasses.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"b9t4g\",\"text\":\"Ensure benches and equipment are RNase free.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"c7god\",\"text\":\"TRI reagent - hazardous\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3o0t7\",\"text\":\"Chloroform - hazardous\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6754n\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7cqh6\",\"text\":\"Ensure you read SDS documents (attached) and organise appropriate waste vessels (fume hood).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"fbskq\",\"text\":\"TRI reagent\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8r45\",\"text\":\"Chloroform (or chloroform : IAA [24:1])\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ech6c\",\"text\":\"Isopropanol (or 5 M LiCl)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fr9na\",\"text\":\"75 % Ethanol\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8gb27\",\"text\":\"Nuclease-free H2O (e.g. 0.01% DEPC-treated H20)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":15,\"length\":1},{\"style\":\"sub\",\"offset\":44,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"8eslq\",\"text\":\"2 mL safe-lock Eppendorf tubes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ft48s\",\"text\":\"Tissue lyser\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c6cpk\",\"text\":\"Nuclease-free 10 mM TRIS-Cl (pH 6.5), 0.1 mM EDTA\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Collect 50-100 mg of plant tissue and freeze immediately in liquid N 2 .",
+    "Invert each tube by hand ~20x and incubate at room temperature for 5 minutes (DO NOT vortex samples as it may result in RNA degradation).",
+    "Centrifuge at 14,000 rcf for 10 minutes at 4°C.",
+    "Repeat steps 4 and 5 (approx. 400 µL). Note, if you are observing buffer and salt carryover in your purified RNA (high 230 nm absorbance), reduce volume of upper-phase recovered. Alternatively, replace chloroform (step 3) with chloroform : IAA (24:1).",
+    "Add equal volume ice-cold 100% isopropanol, then mix by inverting tubes ~20x by hand. Note, if you want to avoid capturing shorter RNA molecules (small RNAs, degradation intermediates), replace Isopropanol with 5 M LiCl (room temperature).",
+    "Centrifuge samples at 14,000 rcf for 20 minutes at 4°C.",
+    "Add 1 mL of 75 % ethanol and invert tube ~10x.",
+    "Remove supernatant (careful, pellet often becomes dislodged at this step).",
+    "Air-dry pellet at room temperature for 5 minutes.",
+    "If pellet is not dissolving straight away, incubate in buffer at room temperature for 5 minutes then resuspend by pipetting.",
+    "Visualise approx. 50 - 100 ng of purified RNA for each sample on a semi-denaturing 1% agarose TBE gel.",
+    "Grind tissue to fine powder under liquid N 2 using tissue lyser or mortar + pestle, then immediately add 1 mL TRI reagent (1 mL per 100 mg tissue). Note, achieving a fine grind is critical to high yields of intact RNA.",
+    "Transfer the upper aqueous phase to a new microfuge tube (approx. 600 µL).",
+    "Incubate at -20°C for 1 hour. Alternatively, incubate O/N for small RNA precipitation or higher yields.",
+    "Add of chloroform (200 µL per mL TRI reagent), cap tubes, shake vigorously (by hand) at room temperature for 15 seconds (solution should become cloudy), then incubate at room temperature for 3 minutes.",
+    "Remove the supernatant. Note, you should observe a white pellet at this step, a yellow pellet is indicative of buffer carryover and you may need to do an additional clean-up.",
+    "Centrifuge samples at 7, 500 rcf for 5 minutes at room temperature.",
+    "Resuspend pellet in 25 - 100 µL of RNase-free (e.g. 0.01% DEPC-treated) buffer, depending on expected yield and desired concentration. Buffer = water or 10 mM TRIS-Cl (pH 6.5), 0.1 mM EDTA."
+  ],
+  "authors": [
+    "Peter Crisp",
+    "Diep R R Ganguly",
+    "Aaron ABS Smith"
+  ],
+  "creator": "Diep R R Ganguly",
+  "published_on": 1618455209,
+  "created_on": 1618453356,
+  "keywords": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": 235612,
+  "title": "Immunofluorescence staining and confocal microscopy in cultured cells",
+  "uri": "immunofluorescence-staining-and-confocal-microscop-hib4b4aqx",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvm177nv3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"ofilv\",\"text\":\"This protocol describes immunofluorescence staining and confocal microscopy in lentivirally transduced cultured cells, including fixation, permeabilization, antibody staining, and mounting for fluorescence imaging.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"gqzjy\",\"text\":\"- Antibody dilutions and incubation times may require optimization depending on antibody performance.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bpwfc\",\"text\":\"- Avoid drying samples during staining and wash steps.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"uo6zy\",\"text\":\"- PLA experiments should follow the manufacturer’s protocol exactly.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"5rthw\",\"text\":\"- Perform all staining steps at room temperature unless otherwise indicated.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ntewi\",\"text\":\"- Prepare all buffers fresh or thaw on the day of use.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mqkxo\",\"text\":\"- Protect samples from light after secondary antibody incubation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"hkaxj\",\"text\":\"- Use appropriate biosafety precautions when handling paraformaldehyde.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"b28ut\",\"text\":\"Lab-Tek II Chamber 8-well slides (Thermo Fisher Scientific, 154534)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3adko\",\"text\":\"Alexa Fluor 647-conjugated anti-Rabbit IgG (Thermo Fisher Scientific, A-31573)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"42gso\",\"text\":\"Alexa Fluor 488-conjugated anti-Mouse IgG (Thermo Fisher Scientific, A-11001)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bl1c8\",\"text\":\"Triton X-100 (Millipore Sigma, X100-500ML)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"328b7\",\"text\":\"4% paraformaldehyde (Thermo Fisher Scientific, J61899-AK)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8d1oj\",\"text\":\"ProLongTM Diamond Antifade Mountant containing DAPI (Thermo Fisher Scientific, P36971) \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5e2cr\",\"text\":\"glass coverslips (Fisher Scientific, 12541032CA)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Seed lentivirally transduced cells onto Lab-Tek II Chamber 8-well slides (Thermo Fisher Scientific, 154534).",
+    "Incubate cells for 24 h to reach 40–60% confluency at the time of fixation.",
+    "Rinse cells three times with PBS.",
+    "Fix cells with 4% paraformaldehyde for 15 min at room temperature.",
+    "Wash cells three times with PBS.",
+    "Permeabilize cells with 0.5% Triton X-100 in PBS for 5 min at room temperature.",
+    "Wash cells three times with PBS using gentle agitation.",
+    "Block cells with 3% BSA and 0.1% Tween-20 in PBS for 1 h at room temperature.",
+    "Dilute primary antibodies in 1% BSA and 0.1% Tween-20 in PBS.",
+    "Incubate cells with primary antibodies for 2 h at room temperature.",
+    "Dilute secondary antibodies in 1% BSA and 0.1% Tween-20 in PBS : - Alexa Fluor 647–conjugated anti-Rabbit IgG (1:1000; Thermo Fisher Scientific, A-31573) - Alexa Fluor 488–conjugated anti-Mouse IgG (1:1000; Thermo Fisher Scientific, A-11001)",
+    "Incubate cells with secondary antibodies for 1.5 h at room temperature, protected from light.",
+    "Wash cells three times with PBS.",
+    "Mount cells with ProLong Diamond Antifade Mountant containing DAPI (Thermo Fisher Scientific, P36971).",
+    "Cover samples with glass coverslips (Fisher Scientific, 12541032CA).",
+    "Cure mounted slides at room temperature, protected from light, for at least 24 h before sealing with nail polish.",
+    "Acquire images using confocal microscopy under appropriate laser and detector settings.",
+    "Perform the proximity ligation assay (PLA) according to the manufacturer’s instructions (Sigma Aldrich, DUO92101)."
+  ],
+  "authors": [
+    "Xin Xu",
+    "Magnus Lam"
+  ],
+  "creator": "Xin Xu",
+  "published_on": 1766722762,
+  "created_on": 1766370764,
+  "keywords": []
+}

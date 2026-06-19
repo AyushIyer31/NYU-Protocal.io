@@ -1,0 +1,42 @@
+{
+  "id": 229812,
+  "title": "Human coronary nuclear isolation protocol",
+  "uri": "human-coronary-nuclear-isolation-protocol-hcnub2vex",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvmbqd5g3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"8msje\",\"text\":\"This protocol outlines a streamlined method for isolating high-quality nuclei from human coronary tissue for downstream single-nucleus applications. The approach ensures efficient lysis, removal of debris, and preservation of nuclear integrity, yielding clean nuclei suitable for FACS and 10x Genomics capture.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"jte5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Nuclear buffer (Premade and stored at 4C) 500mL H20 1mL NaCl (5M) for final concentration 10mM 1.5mL MgCl (1M) for final concentration 3mM 5mL Tris-HCI (1M) for final concentration 10mM",
+    "10% BSA 10% BSA solution (Sigma-Aldrich, A1595-50ML)",
+    "Lysis buffer (1mL) 1uL NP-40 (1:1000) for final concentration 0.1% 10uL 10% BSA (1:100) 2uL 5% Digitonin (1:1000) 1uL Spermidine (500 mM stock) for final concentration 0.5mM 1uL Spermine (150 mM stock) for final concentration 0.15mM 25uL Protector RNase Inhibitor (40 U/uL stock) for final concentration 1 U/uL",
+    "1x nuclei buffer (1mL) 950uL H2O 10uL 10% BSA 50uL 20x nuclei buffer from 10x kit",
+    "Wash buffer (1mL) 975uL Nuclei buffer 10uL 10% BSA 25uL Protector RNase Inhibitor (40 U/uL stock) for final concentration 1 U/uL",
+    "Cut a 30-40mg piece of tissue on a clean metal block cooled to freezing temp over dry ice. Keep sectioned and weighed tissue in 1.5ml Lo Bind tube on dry ice until ready to proceed. NOTE: Large pieces of tissue &gt;60mg will likely be underlysed and block the filters.",
+    "Remove supernatant and add 150uL of &#34;10x nuclei buffer&#34; without disturbing the pellet.",
+    "Proceed to 10X capture.",
+    "Resuspend in 7-30uL of 1x nuclei buffer.",
+    "Centrifuge nuclei at 500xg for 5min at 4C and remove all supernatant (buffer exchange)",
+    "Place on ice, add 500uL of lysis buffer and finely mince tissue with small iris scissors (4 min). Timing can be adjusted depending on tissue size, for 30-40mg this was sufficient.",
+    "Centrifuge nuclei at 500xg for 10min at 4C",
+    "Filter through 70um strainer into new 1.5uL Lo Bind tube coated with BSA. May need gentle centrifugation to move lysate through filter.",
+    "Gently vortex and rest on ice for 5 min with intermittent vortexing.",
+    "Stop excess lysis by diluting in 500uL of wash buffer and proceed with filtering steps.",
+    "Repeat filtering through 10um strainer into new 1.5uL Lo Bind tube coated with BSA.",
+    "Discard strainer and add 500uL of wash buffer to further dilute detergent.",
+    "FACS sorting prior to capture aim for at least 200k nuclei total and resuspend in ~500uL of chilled Wash Buffer (w/ BSA).",
+    "Access nuclei quality and count with Trypan blue."
+  ],
+  "authors": [
+    "Daniel Yuhang Li",
+    "João Pinho Monteiro",
+    "João Pinho Monteiro",
+    "Daniel Yuhang Li"
+  ],
+  "creator": "Quanyi Zhao",
+  "published_on": 1760597447,
+  "created_on": 1760458572,
+  "keywords": []
+}

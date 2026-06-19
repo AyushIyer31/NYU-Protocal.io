@@ -1,0 +1,31 @@
+{
+  "id": 88660,
+  "title": "Flow cytometry-based measurement of trafficking of Golgi to the lysosome via autophagy V3",
+  "uri": "flow-cytometry-based-measurement-of-trafficking-of-c2tuyenw",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvm3y8nl3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"ecfjb\",\"text\":\"Protocol for flow cytometry-based measurement of Golgi trafficking to lysosomes via autophagy using Keima-YIPF3/4 reporters in HEK293 cells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"e2kvt\",\"text\":\"EBSS (Sigma- Aldrich Cat#E3024). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ent8d\",\"text\":\"Dulbecco’s MEM (DMEM), high glucose, pyruvate (Gibco / Invitrogen, 11995) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2noo7\",\"text\":\"Keima-YIPF4 (Addgene #XXX) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e0fvl\",\"text\":\"Keima-YIPF3 (Addgene #XXX) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cmnfv\",\"text\":\"Trypsin (Sigma, #T4049)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bqid\",\"text\":\"BafA, Cayman Chemicals (#88899-55-2)\\nPBS; Phosphate buffered saline: ThermoFisher (#14040133)\\nDMEM, high glucose, HEPES, no phenol red (#21063029)\\n\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "pLenti vectors expressing either Keima-YIPF4, Keima-YIPF3, or GALNT2-Keima were packaged in 293T cells and the lentivirus was used to infect WT or FIP200-/- HEK293 cells (for Keima-YIPF3 and Keima-YIPF4). GALNT2-Keima was used to infect WT, FIP200-/- and DKO (YIPF3-/-, YIPF4-/-) HEK293 cells. To create stable cell lines, infected cells are selected in 1 µg/mL of puromycin for 48 hours, followed by 48 hours of recovery.",
+    "Wash HEK293 cells expressing Keima-YIPF3, Keima-YIPF4, or GALNT2-Keima with 1x PBS",
+    "Add Trypsin to cells for 5 min and incubate at 37°C to dissociate cells from plastic well",
+    "Resuspend cells in 1 mL DMEM media",
+    "Count cells",
+    "Seed appropriate number of cells into 96-well, 48-well, or 24-well plates.",
+    "Culture cells and analyze for Keima flux with cells &lt;70% confluent. In some cases, induction of flux via nutrient stress is analyzed. The cells were washed twice with PBS and resuspended in DMEM or EBSS to initiate nutrient stress for the indicated time period 12-16 hours, typically).",
+    "After treatment/starvation, cells were treated with trypsin and quenched with Phenol red free-DMEM. Cells were filtered through a cell strainer cap tube.",
+    "Use dual-excitation (405nm for ph7 and 561nm for pH3) and collect in 620 nm range using an Attune NxT (Thermo Fisher). Analyze at least 10,000 single, healthy cells. Calculate of acidic:neutral mt-Keima ratio on a per-cell basis in FlowJo Software and plotted using GraphPad Prism. Optional: include BafA-treated sample (3 hours prior to analysis), to use as normalization for sample set in genotype. Otherwise, fed control samples can be used."
+  ],
+  "authors": [
+    "Harper JW",
+    "Kelsey Hickey",
+    "sharan_swarup"
+  ],
+  "creator": "Kelsey Hickey",
+  "published_on": 1696260316,
+  "created_on": 1696256108,
+  "keywords": []
+}

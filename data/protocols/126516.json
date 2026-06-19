@@ -1,0 +1,36 @@
+{
+  "id": 126516,
+  "title": "Exploring Sexual Dimorphism and Genetic Variability in Cutaneous Microhemodynamics in BALB/c, C57BL/6J, and KM Mice",
+  "uri": "exploring-sexual-dimorphism-and-genetic-variabilit-d7su9new",
+  "doi": "dx.doi.org/10.17504/protocols.io.5qpvooyw7v4o/v1",
+  "description": "{\"blocks\":[{\"key\":\"cchd7\",\"text\":\"In this study, we investigated the correlation between cutaneous microhemodynamics and skin function in mice of different sex and strain, combining with metabolomics to better understand the potential regulative mechanisms that leading to the differences.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "A BP-2010A non-invasive sphygmomanometer (Softron Biotechnology, Beijing, China) was utilized to determine blood pressure as well as heart rate. Mice were acclimated within a containment device on a thermoregulatory platform maintained at 37°C (TMC-213, Softron Biotechnology). Following a 5-min acclimation period, an occlusion cuff was applied to the tail and connected to the BP98-RCP-M sensor (Softron Biotechnology). Heart rate, systolic, diastolic, and mean arterial pressures were recorded three times to ensure consistency of the measurements.",
+    "Following induction with 1.5 % pentobarbital anesthesia, the dorsal skin of the mice was prepared. Skin pH and temperature were measured using skin pH meter (Model Y98109, Jinan Changcun Electronic Technology, China). Skin hydration and elasticity were evaluated with a skin moisture tester (M-6602, Fuhengtong Technology, Shenzhen, China), providing skin&#39;s barrier integrity and moisture retention capabilities. To analyze the thermal properties of the skin, we utilized laser Doppler contrast imaging with a MoorO 2 Flo device (Moor Instruments, UK), allowing for the assessment of microhemodynamics, while infrared thermal imaging (HM-TPH21PrO-3AGF, Hikmicro Sensing Technology, Hangzhou, China) enabled the capture of surface temperature differentials.",
+    "To analyze dermal microcirculation, specimens were prepared by applying a gentle depilatory cream, minimizing skin irritation. Following fur removal, a 30-min acclimation period was permitted to allow microhemodynamics to stabilize. Data acquisition was conducted using Moor VMS-LDF2 system (MoorInstruments, Axminster, UK). Anesthesia was induced with 1.5 % pentobarbital sodium at a dosage of 0.15-0.2 ml per 20 g body weight. The VP4 probe of the VMS-LDF2 system was positioned on the exposed dorsal dermis at three distinct anatomical sites, each monitored for 60 sec. The system measures cutaneous blood flow by capturing backscattered photons from the skin, which are analyzed to quantify microhemodynamics.",
+    "Skin specimens were fixed in 10 % neutral buffered formalin for 24 h to preserve morphological integrity. Subsequent processing involved dehydration through a graded ethanol series, xylene clearing, and paraffin embedding. For HE staining, 4 μm sections were deparaffinized in xylene and rehydrated through descending ethanol to water. Nuclei were subjected to hematoxylin staining for 3 min, followed by differentiation in 0.3% acid-alcohol for 10 sec, and subsequently blued using 0.2% ammonia water for 30 sec. Cytoplasmic and extracellular matrix components were counterstained with eosin for 1 min. Following dehydration, clearing, and mounting with a resinous medium, microvascular histological architecture was analyzed under a light microscope (Leica Microsystems), while microvascular density (MVD) was quantified manually. For IHC, after antigen retrieval, sections were treated with methanolic H 2 O 2 for 30 min to quench endogenous peroxide activity, then blocked with 3 % bovine serum albumin for 30 min. Primary antibodies (anti-CD31 from Santa Cruz Biotechnology, anti-ERβ and anti-ERα from Abcam, each at a 1: 25 dilution) were incubated overnight at 4°C. After washes, sections were treated with horseradish peroxidase-conjugated secondary antibodies for 1 h, developed using 0.05 % DAB and 0.01 % H 2 O 2 , then dehydrated and mounted. Immunostaining of CD31 and Erα, ERβ was evaluated with a light microscope (Leica Microsystems) and quantified using ImageJ (version 1.8.0, National Institutes of Health, Bethesda, MD, USA).",
+    "To elucidate the physiological processes underpinning cutaneous microhemodynamics, we employed wavelet transform analysis on the laser Doppler data by decomposing of microhemodynamic signals into time-frequency domains, each associated with specific physiological activities: endothelial function mediated by nitric oxide (0.005-0.0095 Hz and 0.0095-0.04 Hz), neurogenic control (0.04-0.15 Hz), myogenic responses (0.15-0.4 Hz), respiratory cycles (0.4-2.0 Hz), and cardiac rhythms (2.0-5.0 Hz). Utilizing the Morlet wavelet, we conducted our analysis within a continuous Gaussian window, thereby enabling the identification and averaging of wavelet coefficients to quantify spectral amplitudes. Spectral scalograms were subsequently constructed.",
+    "The sera were separated and subsequently subjected to targeted metabolomics analysis using liquid chromatography-tandem mass spectrometry (LC-MS/MS). Chromatographic separation was carried out on a Phenomenex Kinetex C18 column (1.7 µm, 100 mm × 2.1 mm i.d.) using a dual-phase mobile system. Phase A comprised acetonitrile/water (30: 70, v/v) with 0.04 % acetic acid, and Phase B consisted of acetonitrile/isopropanol (50: 50, v/v) with 0.04 % acetic acid. The gradient elution began at an A/B ratio of 95: 5 (v/v) for the initial minute, remained at these conditions until 1 min, shifted gradually to 10: 90 (v/v) by 10 min, and was maintained until 12.5 min. A rapid re-equilibration to 95: 5 (v/v) was achieved between 12.6 and 15 min. The flow rate was maintained at 0.35 mL/min at 40°C, with an injection volume of 5 µL. Mass spectrometric detection was conducted in the positive electrospray ionization (ESI) mode. The source was set to a temperature of 550°C with an ion spray voltage of 5,500 V and a curtain gas pressure of 35 psi. The triple quadrupole system was used to scan and detect each ion pair, with optimization of the declustering potential (DP) and collision energy (CE) for each transition to ensure sensitive and specific quantification. Principal component analysis (PCA) was employed to assess overall metabolite variation across samples, while individual metabolite differences were evaluated using t-tests and one-way ANOVA."
+  ],
+  "authors": [
+    "Wang Yingyu",
+    "Yuan Li",
+    "Weiqi Liu",
+    "Bing Wang",
+    "Mengting Xu",
+    "Bingwei Li",
+    "Qin Ouyang",
+    "Hao Ling",
+    "Xu Zhang",
+    "Mingming Liu",
+    "Ruijuan Xiu"
+  ],
+  "creator": "Wang Yingyu",
+  "published_on": 1744315755,
+  "created_on": 1744288048,
+  "keywords": []
+}

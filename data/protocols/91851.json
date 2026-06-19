@@ -1,0 +1,43 @@
+{
+  "id": 91851,
+  "title": "RNA collection, cDNA conversion and qPCR (SH-SY5Y cells)",
+  "uri": "rna-collection-cdna-conversion-and-qpcr-sh-sy5y-ce-c5xjy7kn",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn3ymzl5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"4j1d9\",\"text\":\"This protocol describes the isolation of RNA from SH-SY5Y cells and the subsequent conversion to cDNA for qPCR. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"88d7d\",\"text\":\"NucleoSpin RNA plus kit: 740984.50, Macherey-Nagel\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3l1jh\",\"text\":\"High-Capacity cDNA Revers Transcription Kit: 4368814, Thermo Fisher Scientific\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4fgru\",\"text\":\"SYBR Green master mix: 04707516001, Roche\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Cells were seeded in 10 cm dishes and used for collection when reaching 70-80% confluency. ( e.g. 3 million cells for collection after 48:00:00 )",
+    "Convert RNA to cDNA using the High-Capacity cDNA Reverse Transcription Kit (4368814, Thermo Fisher Scientific).",
+    "Scrape and collect cells in PBS(-/-).",
+    "Spin down cells (450xg, 00:05:00 ).",
+    "Wash with PBS(-/-).",
+    "Remove medium.",
+    "Wash once with PBS (-/-).",
+    "Spin down cells (450xg, 00:05:00 ).",
+    "Remove supernatant.",
+    "Isolate RNA following the instructions of the NucleoSpin RNA Plus kit (740984.50, Macherey-Nagel). ! Use a separate, desinfected area to isolate RNA. Use filter tips and dedicated pipets for RNA work.",
+    "Determine the concentration and the purity of the isolated RNA using a Nanodrop spectrometer.",
+    "Prepare a 2x Mastermix: %s %s Volume (µl) Component 2 µl RT buffer 0,8 µl dNTPs (100 µM) 2 µl random primers (10x) 1 µl Multiscribe transcriptase (10u/µl) 4,2 µl AD",
+    "Prepare 5 µg RNA in 20 µl total volume (dilute with RNase free water).",
+    "Add 10 µl of the mastermix to 10 µl of the RNA dilution.",
+    "Perform a quick vortex and spin down using a table-top centrifuge.",
+    "Start program for RNA to cDNA conversion: %s %s Step 1 Step 2 Step 3 Step 4 Temp (°C) 25 37 85 4 Time 10 min 120 min 5 sec ∞",
+    "Prepare a ten-fold dilution of the cDNA samples in duplicates (5 µl cDNA per well). Include a negative control where the cDNA is exchanged by an equivalent volume of water.",
+    "Prepare a master mix containing per sample: 10 µl SYBR Green master mix (Roche) 1 µl of 5 µM forward primer 1 µl of 5 µM reverse primer 3 µl water",
+    "Add 15 µl of the master mix to each well.",
+    "Prepare a serial dilution of the sample that you choose as standard (1/5, 1/25, 1/125, 1/625, 1/3125). Include water as a negative control. Pipet in duplo in a 96-well plate (5 µl per well).",
+    "Start the qPCR reaction: 95 °C for 00:10:00 50 cycles at 95 °C for 00:00:10 55 °C for 00:00:30 95 °C for 00:01:00 Determine a melting curve from 55 to 95 °C.",
+    "Cover plate with a film and spin samples down."
+  ],
+  "authors": [
+    "Stephanie Vrijsen",
+    "Peter Vangheluwe"
+  ],
+  "creator": "Stephanie Vrijsen",
+  "published_on": 1720510319,
+  "created_on": 1701797729,
+  "keywords": []
+}

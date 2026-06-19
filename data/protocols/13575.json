@@ -1,0 +1,25 @@
+{
+  "id": 13575,
+  "title": "Orientia tsutsugamushi real-time PCR",
+  "uri": "orientia-tsutsugamushi-real-time-pcr-rhfd33n",
+  "doi": "dx.doi.org/10.17504/protocols.io.rhfd33n",
+  "description": "{\"blocks\":[{\"key\":\"eddnb\",\"text\":\"A real-time PCR to detect Orientia tsutsugamushi DNA. This method has been adapted from a publication by Jiang et al 2004, and  the oligonucleotides have been modified and a different PCR kit used.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"68f83\",\"text\":\"If using a different brand or model of real-time thermocycler, check the concentration of ROX is adequate.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3ku2o\",\"text\":\"Method assumes the user is familiar with the thermocycler and software used to run the protocol.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"c14km\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"9q5al\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"MGBrS\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"mgmhP\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":3526,\"guid\":\"4105BD6A341F11EE9D4302C0B41BC903\",\"name\":\"SensiFAST™ Probe Lo-ROX Kit\",\"mol_weight\":0,\"sku\":\"BIO-84002\",\"url\":\"http://www.bioline.com/us/sensifast-probe-lo-rox-kit.html\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":121,\"name\":\"Bioline\",\"link\":\"http://www.bioline.com/us/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "%s %s",
+    "Assay has been used on both a Rotor-Gene 6000 / Rotor-Gene Q 5-plex using 100-place rotor discs. Total reaction volume is 20µL. Prepare sufficient for number of reaction plus a &#39;dead volume&#39; usually 2 extra. Adjust as necessary if using a robotic dispenser. %s %s 1 SensiFAST probe Lo-ROX mix 2X, Bioline, BIO-84020 Dispense 15µL to each reaction well. Add 5µL of template, extracted DNA, controls or NTC (nuclease-free water). Total reaction volume is 20µL",
+    "The assay has been optimised and validated for the Rotor-Gene 6000 and Rotor-Gene Q thermocyclers. PCR %s %s *Florescence acquisition step",
+    "The definition used for a satisfactory positive result from a real-time fluorogenic PCR should include each of the following: A sigmoidal curve – the trace travels horizontally, curves upward, continues in an exponential rise and followed by a curve towards a horizontal plateau phase A suitable level of fluorescence intensity as measured in comparison to a positive control (y-axis) A defined threshold (C T ) value which the fluorescent curve has clearly exceeded (Fig.1 arrow) and which sits early in the log-linear phase and is &lt;40 cycles A flat or non-sigmoidal curve or a curve that crosses the threshold with a C T value &gt;40 cycles is considered a negative result NTCs should not produce a curve a Figure 1 . Examples of satisfactory sigmoidal amplification curve shape when considering an assay’s fluorescent signal output. The crossing point or threshold cycle (C T ) is indicated (yellow arrow); it is the value at which fluorescence levels surpass a predefined (usually set during validation, or arbitrary) threshold level as shown in this normalized linear scale depiction. LP-log-linear phase of signal generated during the exponential part of the PCR amplification; TP-a slowing of the amplification and accompanying fluorescence signal marks the transition phase; PP-the plateau phase is reached when there is little or no increase in fluorescent signal despite continued cycling."
+  ],
+  "authors": [
+    "Judy A Northill",
+    "Ian M Mackay"
+  ],
+  "creator": "Judy A Northill",
+  "published_on": 1530685223,
+  "created_on": 1530679118,
+  "keywords": []
+}

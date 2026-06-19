@@ -1,0 +1,42 @@
+{
+  "id": 9218,
+  "title": "One-pot ligation protocol for Oxford Nanopore libraries",
+  "uri": "one-pot-ligation-protocol-for-oxford-nanopore-libr-k9acz2e",
+  "doi": "dx.doi.org/10.17504/protocols.io.k9acz2e",
+  "description": "{\"blocks\":[{\"key\":\"9aqp3\",\"text\":\"This is our ‘one-pot ligation’ protocol for Oxford Nanopore ligation libraries. It benefits from increased recovery of library and faster preparation time by using the Ultra II ligation module in conjunction with the Ultra II end repair/dA-tailing module therefore removing a clean-up step. It can be used with or without the optional FFPE DNA repair step which shoudl help to improve read-lengths in nicked DNA. The incubation times given here are sufficient to generate high quality libraries in under one hour. In the past we have cut these times in half without noticably impacting performance but we will leave this up to you.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"465lg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"8afek\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"5i5vf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"6vYdA\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"UknEI\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"IPgzy\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"JBpCh\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"pWbxx\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":3,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"w8kf1\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":4,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":2192,\"guid\":\"4103E78D341F11EE9D4302C0B41BC903\",\"name\":\"NEBNext FFPE DNA Repair Mix - 96 rxns\",\"mol_weight\":0,\"sku\":\"M6630L\",\"url\":\"https://www.neb.com/M6630\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":2366,\"guid\":\"41042231341F11EE9D4302C0B41BC903\",\"name\":\"Agencourt AmPure XP beads\",\"mol_weight\":0,\"sku\":\"A63880\",\"url\":\"https://www.beckmancoulter.com/wsrportal/wsrportal.portal?_nfpb=true\\u0026_windowLabel=UCM_RENDERER\\u0026_urlType=render\\u0026wlpUCM_RENDERER_page=itemDetails\\u0026wlpUCM_RENDERER_itemNumber=A63880#2/10//0/25/1/0/asc/2/A63880///0/1//0/\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":46618,\"guid\":\"4132E633341F11EE9D4302C0B41BC903\",\"name\":\"NEBNext Ultra II End Repair/dA-Tailing Module - 96 rxns\",\"mol_weight\":0,\"sku\":\"E7546L\",\"url\":\"https://www.neb.com/E7546\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}},\"3\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":46621,\"guid\":\"4132E72C341F11EE9D4302C0B41BC903\",\"name\":\"NEBNext Ultra II Ligation Module - 96 rxns\",\"mol_weight\":0,\"sku\":\"E7595L\",\"url\":\"https://www.neb.com/E7595\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}},\"4\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":119726,\"guid\":\"4198BDFB341F11EE9D4302C0B41BC903\",\"name\":\"Ligation Sequencing Kit 1D\",\"mol_weight\":0,\"sku\":\"SQK-LSK108\",\"url\":\"https://store.nanoporetech.com/catalog/product/view/id/118/s/ligation-sequencing-kit-1d/category/28/\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Set up either the following end-prep reaction: %s %s Or to include FFPE DNA repair set up the following combined reaction: %s %s",
+    "Incubate at RT for 10 minutes. 00:10:00 Undetermined",
+    "Then incubate at 65°C for 10 minutes. 00:10:00 Undetermined",
+    "Place on ice for 30 seconds. 00:00:30",
+    "Add the following directly to the previous reaction: %s %s",
+    "Incubate at RT for 20 minutes. 00:20:00 Undetermined",
+    "Add 45.5 μl Ampure XP beads. undetermined, Ampure XP beads",
+    "Incubate at room temperature for 10 minutes. 00:10:00 Undetermined",
+    "Spin down briefly and place on a magnetic rack until solution clears.",
+    "Taking care to avoid the pellet remove the supernatant.",
+    "Add 150 μl ABB and resuspend by gently flicking (wash 1/2). undetermined, ABB",
+    "Spin down briefly and place on a magnetic rack until solution clears (wash 1/2).",
+    "Taking care to avoid the pellet remove the supernatant (wash 1/2).",
+    "Add 150 μl ABB and resuspend by flicking (wash 2/2). undetermined, ABB",
+    "Spin down briefly and place on a magnetic rack until solution clears (wash 2/2).",
+    "Taking care to avoid the pellet remove the supernatant (wash 2/2).",
+    "Spin down again and remove all residual ABB with a P10 pipette.",
+    "Add 12 μl ELB and resuspend beads by flicking. undetermined, ELB",
+    "Incubate at RT for 10 minutes. 00:10:00",
+    "Spin down briefly and place on a magnetic rack until solution clears.",
+    "In a new tube prepare library dilution for sequencing: %s %s N.B. I would generally include LLB unless working with HMW DNA, which can cause them to clump, or if I plan to flush/reload the flowcell, in which case they would get flushed out anyway.",
+    "Mix by gently flicking before removing 1 µl to assess concentration by Qubit (wait until beads have settled before measuring). undetermined, Library Expected recovery is 50-80% of starting material, lower recovery is indicative of presence of short fragments or inaccurate quantification of the input material. Loading insufficient library into a flowcell will significantly impact yield."
+  ],
+  "authors": [
+    "Josh Quick"
+  ],
+  "creator": "Josh Quick",
+  "published_on": 1515666572,
+  "created_on": 1513184332,
+  "keywords": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": 11416,
+  "title": "Primer design protocol for qPCR primers when testing the natural variation in expression",
+  "uri": "primer-design-protocol-for-qpcr-primers-when-testi-pdydi7w",
+  "doi": "dx.doi.org/10.17504/protocols.io.pdydi7w",
+  "description": "{\"blocks\":[{\"key\":\"ejlkr\",\"text\":\"How to design primers for qPCR when testing the expression in different Arabidopsis accessions. A simple protocol - suggestions welcome. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"bcqp3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"2s8jp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"8e9d6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "If you have multiple splice variants of your gene check @ TAIR which gene models were observed (Gene specific website under “protein data”) and use most commonly observed splice variant observed for your primer designing",
+    "Make sure to write down the positions of nucleotides flanking the intron in your CDS",
+    "At General Settings - “Primer Tm” = 58 / 60 / 58 ; “max Tm diff.” = 2 ; “Primer GC%” = 40 / 50 / 60 ; At Advanced Settings - “Max Poly-X” = 4 ; “Max Self Complementarity” = 4; “Max 3’ Self Complementarity” = 2; “GC clamp” = 1, “Product Size&#39; = 70-100-150",
+    "Preferentially pick primers of which the product is spanning the intron sequence (the location of which you wrote down at step 5), but that the primer sequences themselves are NOT overlapping the intron/exon boundary. Preferentially chose primers that are closest to 5’ end of your CDS sequence, as they are going to be closest to polyA tail. If the primers are designed too far into 3’ end the chances are that you are not going to get any signal due to poor cDNA synthesis. FYI – if you go back &amp; forth in one window at Primer3PLUS and design multiple primers for multiple target genes the settings will be saved!",
+    "If significant alignment is found with other than your target gene using BOTH primers then go back to step 8 and pick other primer pair",
+    "The sequences of the accessions are constantly added.",
+    "As soon as you enter the sequence the search function will tell you the number of the occurrence of the sequence in the window you are currently in =&gt; make sure that the number is matching the number of selected accession sequenced. Make sure to reverse-compliment the rev. primers before searching the sequence (http://www.bioinformatics.org/sms/rev_comp.html ). If the primer annealing site is not found in all accessions selected go back to step 8 and select new primers."
+  ],
+  "authors": [
+    "Magdalena M Julkowska"
+  ],
+  "creator": "Magdalena M Julkowska",
+  "published_on": 1523528469,
+  "created_on": 1523523675,
+  "keywords": []
+}

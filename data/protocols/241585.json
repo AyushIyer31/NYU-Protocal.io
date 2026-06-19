@@ -1,0 +1,42 @@
+{
+  "id": 241585,
+  "title": "Immunofluorescence Staining of Free-Floating Brain Sections",
+  "uri": "immunofluorescence-staining-of-free-floating-brain-hp6rb5rd7",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gp1oy8gzp/v1",
+  "description": "{\"blocks\":[{\"key\":\"dagd4\",\"text\":\"Three-dimensional reconstruction and image analysis were performed using Imaris (Bitplane). Surface rendering was conducted using the Surfaces module, with parameters optimized empirically to maximize biological specificity while minimizing non-specific background signal. In Imaris, the surface detail parameter defines the minimum spatial scale of intensity variations used to generate surfaces, with larger values producing smoother surfaces by excluding fine, small-scale fluctuations. The background subtraction diameter defines the diameter of the largest spherical structure used to estimate and remove local background fluorescence, thereby suppressing diffuse signal at spatial scales larger than the specified value. All surface parameters were applied uniformly across samples and experimental groups.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"ngior\",\"text\":\"Confocal images were acquired using a Zeiss LSM 800 microscope equipped with a 63× objective, using a 1.1× digital zoom. Images were collected at a voxel size of 0.094 μm × 0.094 μm × 0.3 μm.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"bd8q6\",\"text\":\"- Phosphate-buffered saline (PBS)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"0xn4h\",\"text\":\"- PBST (PBS containing 0.1% Tween-20)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"uxsgp\",\"text\":\"- Low-pH citrate buffer (pH 6.0)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"wim3d\",\"text\":\"- 0.1% SDS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5noc0\",\"text\":\"- Blocking buffer (0.5% fish gelatin, 10% goat serum, 3% bovine serum albumin (BSA), 0.1% Triton X-100)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ngpvi\",\"text\":\"- Primary antibodies: BIN1 (Proteintech, 1:200), parvalbumin (PV, 1:1000), NeuN (1:1000)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vhe4c\",\"text\":\"- Fluorescent secondary antibodies\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fwr3f\",\"text\":\"- DAPI (1:1000)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lxuo7\",\"text\":\"- TrueVIEW® Autofluorescence Quenching Solution (Vector Laboratories, SP-8400-15)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"amirr\",\"text\":\"- ProLong™ Glass Antifade Mountant (Thermo Fisher Scientific)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "For BIN1, surface rendering was optimized to detect discrete BIN1 puncta, which are typically submicron in size and spatially restricted. Empirical testing indicated that smaller surface detail values increased inclusion of diffuse background signal, including low-level fluorescence detected in Nestin-Cre–positive cells, which are not expected to express BIN1. Therefore, a larger surface detail parameter (0.6 μm) was selected to restrict detection to puncta consistent with the expected size of BIN1 signal and to suppress smaller, non-specific intensity fluctuations. In addition, a background subtraction diameter of 3 μm was applied to remove local diffuse cytoplasmic background while preserving compact BIN1 puncta.",
+    "For NeuN and parvalbumin (PV) channels, surface rendering parameters were optimized to specifically segment the neuronal soma and nucleus, rather than fine neuritic processes or diffuse neuropil signal. The expected diameter of neuronal nuclei and soma ranges up to approximately 10–12 μm, and therefore a background subtraction diameter of 12 μm was selected to match the physical scale of these structures. A smaller surface detail parameter (0.5 μm) preserved soma-localized signal while effectively excluding surrounding background fluorescence.",
+    "To visualize BIN1 signal within defined neuronal populations, a masking approach was used to restrict BIN1 fluorescence to the three-dimensional volume of NeuN- or PV-positive neurons. Masking was performed in Imaris using the following steps:",
+    "Due to the high density of NeuN-positive neurons, rendering all detected cells within a single field resulted in excessive surface overlap and reduced visualization clarity. Therefore, a representative subset of NeuN-positive neurons was selected for three-dimensional visualization. An analogous 3D rendering and masking approach was used for PV-positive neurons, in which PV-rendered surfaces defined a PV-specific bounding box, and BIN1 fluorescence was visualized within the PV-defined volume, enabling cell-type–specific assessment of BIN1 localization in PV interneurons. Rendered surfaces and masked channels were used for three-dimensional visualization.",
+    "Generate NeuN or PV surfaces",
+    "Surpass View → Add New Surfaces",
+    "Select NeuN or PV channel",
+    "Apply surface detail and background subtraction parameters as described above",
+    "Complete surface creation",
+    "Create masked BIN1 channel",
+    "Surpass View → Add New Channel → Mask Channe",
+    "Input channel: BIN1",
+    "Mask source: NeuN or PV surface",
+    "Voxels outside surface: Set to 0",
+    "Voxels inside surface: Retain original intensity",
+    "Generate masked BIN1 channel",
+    "Visualize BIN1 within NeuN or PV neurons",
+    "Use the masked BIN1 channel for visualization",
+    "Generate BIN1 surfaces from the masked channel using the same BIN1 parameters (surface detail 0.6 μm; background subtraction 3 μm)",
+    "This approach ensured that BIN1 visualization was restricted to signal located within the three-dimensional boundaries of NeuN- or PV-positive neurons, enabling accurate assessment of cell-type–specific BIN1 localization."
+  ],
+  "authors": [
+    "Aanishaa Jhaldiyal",
+    "M. Natalie Davis",
+    "Aanishaa Jhaldiyal"
+  ],
+  "creator": "M. Natalie Davis",
+  "published_on": 1774034331,
+  "created_on": 1769451608,
+  "keywords": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": 17672,
+  "title": "Bounce PCR",
+  "uri": "bounce-pcr-vhge33w",
+  "doi": "dx.doi.org/10.17504/protocols.io.vhge33w",
+  "description": "{\"blocks\":[{\"key\":\"5k2ro\",\"text\":\"Bounce PCR: optimisation free PCR for synthetic biology cloning applications.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"36d8c\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"af2sm\",\"text\":\"Synthetic biology projects require the cloning of multiple DNA components, and increasingly this is done though in-vitro gene synthesis. This remains an expensive alternative to traditional cloning by PCR. However, PCR often requires time-consuming optimisation. Bounce PCR is a largely optimisation-free PCR method suitable for the rapid cloning of multiple targets. Bounce PCR is a modified version of Touchdown PCR that takes advantage of primer-extension sequences -commonly used in molecular cloning – to successfully amplify most DNA fragments without time consuming optimisation. Touchdown (and related methods) employ a sequential lowering of the annealing temperature over successive cycles to minimise non-specific primer-binding during the early amplification cycles, but maximise amplification efficiency in later cycles when the target amplicon is more abundant (Don et al. 1991; Rowther et al. 2012). However, the lower annealing temperature in later cycles may still allow for non-specific amplification. Bounce PCR takes advantage of the increased primer melting temperature caused by the addition to the template of primer-extension sequences (for example: restriction enzyme recognition sites, Gateway recombination sites, or vector overlaps for Gibson cloning) to maintain the specificity in later cycles- without sacrificing efficiency- by increasing the annealing temperature again after an initial round of touchdown.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7b4b4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2bgd8\",\"text\":\"Don, R. H., Cox, P. T., Wainwright, B. J., Baker, K., \\u0026 Mattick, J. S. (1991). 'Touchdown' PCR to circumvent spurious priming during gene amplification. Nucleic acids research, 19(14), 4008. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":153,\"length\":22},{\"style\":\"italic\",\"offset\":177,\"length\":2}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5klsv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aeo3n\",\"text\":\"Rowther, F. B., Kardooni, H., \\u0026 Warr, T. (2012). TOUCH-UP gradient amplification method. Journal of biomolecular techniques : JBT, 23(1), 1-3. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":89,\"length\":40},{\"style\":\"italic\",\"offset\":131,\"length\":2}],\"entityRanges\":[],\"data\":{}},{\"key\":\"9trn8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"ep074\",\"text\":\"This protocol describes only the thermal cycling parameters of the PCR, and should work with your preferred DNA polymerase and protocol for setting up the reaction mixture. The advantage of Bounce PCR relies on the presence of primer-extension sequences, if your primers are an exact match to your template, without 5’ extension sequences, then it is unlikely to offer an advantage over standard Touchdown PCR.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"anh9l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"db1gi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"etqpj\",\"text\":\"PCR mixture in suitable reaction tube.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d55sc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8a29n\",\"text\":\"Thermal cycler.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "94 °C for 00:02:00",
+    "94 °C for 00:00:30",
+    "%s %s",
+    "72 °C for 00:01:00, per kb of target length",
+    "Repeat steps 2-4 for 40 cycles, varying the temperature of step 3 as described go to step #2",
+    "72 °C for 00:06:00"
+  ],
+  "authors": [
+    "Sam Mugford",
+    "Saskia Hogenhout"
+  ],
+  "creator": "Sam Mugford",
+  "published_on": 1542355468,
+  "created_on": 1541788113,
+  "keywords": []
+}

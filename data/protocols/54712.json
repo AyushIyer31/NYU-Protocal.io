@@ -1,0 +1,32 @@
+{
+  "id": 54712,
+  "title": "CHEM 584--Cloning sgRNA Sequences into lentiCRISPRv2",
+  "uri": "chem-584-cloning-sgrna-sequences-into-lenticrisprv-bznyp5fw",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"8g4rd\",\"text\":\"This protocol describes how to clone your chosen sgRNA sequence into the lentiCRISPRv2 plasmid. A method to validate your cloning is also included here.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Design and order sgRNA sequence oligonucleotides based on your previously identified target sequences. Oligo 1: 5&#39;-CACCGNNNNNNNNNNNNNNNNNNNN Oligo 2: 3&#39;- CNNNNNNNNNNNNNNNNNNNNCAAA Important Note: Do not include the NGG PAM in your designed oligonucleotides",
+    "Digest 2 µg of lentiCRISPRv2 plasmid with BsmBI overnight at 55°C: Set up the following reaction: 2.5 µl 10X NEB r3.1 Buffer x µl ddH 2 O to make up 25 µl final volume 1 µl BsmBI 2 µg lentiCRISPRv2 plasmid* *Add the plasmid last, into the reaction mixture, pipette gently to mix and spin briefly.",
+    "Use the Zymoclean Gel DNA Recovery kit to gel purify the digested plasmid. A ~2 kb filler piece should be present on the gel. Only purify the larger band. Leave the ~2 kb band.",
+    "Suspend the oligonucleotides at 100 µM in autoclaved ddH 2 O",
+    "Set up annealing reaction: 2 µl Oligo 1 2 µL Oligo 2 2 µl 10X T4 Ligation Buffer (NEB) 14 µl ddH 2 O",
+    "Anneal the oligonucleotides in a thermocycler: 95°C for 5 min Ramp temperature down to 25°C at 5°C/min",
+    "Dilute annealed oligonucleotides 1:200 with autoclaved ddH 2 O (1 µl annealed oligo pair + 199 µl water).",
+    "Set up the ligation reaction and incubate at 16°C overnight (with the 2X Instant Stick End Master Mix, you may be able to significantly shorten this incubation). x µl digested plasmid (50 ng) 1 µl diluted oligonucleotide duplex 6 µl 2X Instant Sticky End Master Mix x µl ddH2O to make a final volume of 12 µl",
+    "Add up to 5 µl of your ligation reaction into NEB STBL Mix &amp; Go component cells following the Mix &amp; Go Competent Cell protocol. Plate your cells on Amp/Carb plates.",
+    "Use the Colony PCR protocol to screen for the presence of cloned oligo pairs using the 2X TaqDog Master Mix. Run 10-20 µl of your PCR products on a 0.8% agarose gel. Use the 100 bp ladder for your gel. Primers (provided): lentiCRISPRv2 For: GTGGAAAGGACGAAACACCG lentiCRISPRv2 Rev: CTAGGCACCGGATCAATTGC Expected amplicon for positive clones = 248 bp",
+    "Prepare overnight cultures for positive clones. Purify plasmid from overnight cultures using the Zymo Plasmid Miniprep-Classic protocol.",
+    "Send plasmid for Sanger Sequencing (Eton Biotechnology). Sequencing primer: hU6-F: GAGGGCCTATTTCCCATGATT"
+  ],
+  "authors": [
+    "Ken Christensen"
+  ],
+  "creator": "Ken Christensen",
+  "published_on": 1635866286,
+  "created_on": 1635794915,
+  "keywords": []
+}

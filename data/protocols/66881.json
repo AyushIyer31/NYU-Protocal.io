@@ -1,0 +1,30 @@
+{
+  "id": 66881,
+  "title": "Fluorescence size exclusion chromatography (FSEC) from ATP13A2 microsomes",
+  "uri": "fluorescence-size-exclusion-chromatography-fsec-fr-cdi9s4h6",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgb6bpolpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"3jhvg\",\"text\":\"Using fluorescence size exclusion chromatography (FSEC) to analyze ATP13A2 expression in microsomes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"f10ua\",\"text\":\"Lysis Buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"588ek\",\"text\":\"50 mM Tris pH 7.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"84nv\",\"text\":\"200 mM NaCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7cj8i\",\"text\":\"1 mM EDTA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6qib3\",\"text\":\"1 mM DTT\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bq4km\",\"text\":\"10% glycerol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"o1og\",\"text\":\"Plus protease inhibitors (5 µg/mL aprotinin, 5 µg/mL leupeptin, 1 µg/mL pepstatin A, and 2 mM PMSF)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e5aou\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5rn7e\",\"text\":\"Running Buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9p5kf\",\"text\":\"25 mM Tris pH 7.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fn5e0\",\"text\":\"100 mM NaCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8523o\",\"text\":\"1 mM EDTA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"569re\",\"text\":\"0.03% DDM/ 0.006% CHS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Thaw 100 μg microsomes on ice",
+    "Resuspend microsomes in Lysis Buffer and final volume 1% DDM/0.2% CHS (1X pellet, 3X Lysis Buffer, 1X 5% DDM/1% CHS) at 4 °C",
+    "DDM: n-dodecyl-β-D-maltopyranoside (Anatrace)",
+    "CHS: cholesteryl hemisuccinate (Anatrace)",
+    "Solubilize by rotating end-over-end for 2 h at 4C",
+    "Clarify lysate by spinning at 17000 x g, 4 °C, 1 hour",
+    "Equilibrate Superose 6 column, connected to an HPLC system, with Running Buffer",
+    "Inject 85 uL of lysate into HPLC",
+    "Monitor elution of GFP-tagged ATP13A2 constructs using a fluorometer (λex= 475 nm; λem= 510 nm; with a fixed gain) connected to the system"
+  ],
+  "authors": [
+    "Sue Sim",
+    "eunyong_park"
+  ],
+  "creator": "Sue Sim",
+  "published_on": 1658275886,
+  "created_on": 1658025596,
+  "keywords": []
+}

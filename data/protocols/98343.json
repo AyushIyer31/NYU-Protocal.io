@@ -1,0 +1,41 @@
+{
+  "id": 98343,
+  "title": "Cloning using the NEB Q5® Site-Directed Mutagenesis Kit",
+  "uri": "cloning-using-the-neb-q5-site-directed-mutagenesis-dcaf2sbn",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l2q8zpl1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"ed9b3\",\"text\":\"NEB Q5 metagenesis \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"4j15t\",\"text\":\"Template DNA (see specific protocols for the plasmid)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":14,\"length\":38}],\"entityRanges\":[],\"data\":{}},{\"key\":\"kgck\",\"text\":\"0.2 mL PCR tubes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cerle\",\"text\":\"Q5® Site-Directed Mutagenesis Kit (NEB, #E0554S)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f5g01\",\"text\":\"Q5 Hot Start High-Fidelity 2X Master Mix (New England BioLabs, #M0494S)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8fbbe\",\"text\":\"Forward and reverse primers (see specific protocols for the sequences)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":29,\"length\":40}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3jee8\",\"text\":\"Bio-Rad T100 Thermocycler\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cvgd8\",\"text\":\"MAX Efficiency DH5α competent E. coli cells (Thermo Fisher Scientific, #18258012)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":30,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5ki87\",\"text\":\"SOC Medium (Thermo Fisher Scientific, #15544034)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8a15m\",\"text\":\"Miller's LB Broth (Corning, #46-050-CM)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9mfe\",\"text\":\"14 mL falcon tube (Corning, #352059)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1k8rf\",\"text\":\"Carbenicillin, disodium salt (Invitrogen, #10177-012)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"flfhh\",\"text\":\"QIAprep Spin Miniprep Kit (Qiagen, #27104)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"49qn7\",\"text\":\"NanoDrop Eight Spectrophotometer (ThermoFisher)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Combine the following reagents in a clean 0.2 mL PCR tube: A B C 1 Volume Final CONC. 2 PCR Product 1 µL 3 2X KLD Reaction Buffer 5 µL 1X 4 10X KLD Enzyme Mix 1 µL 1X 5 Nuclease-free water 3 µL Reagents for kinase, ligase, and Dpn1 (KLD) treatment (&#34;KLD mixture&#34;).",
+    "Thaw a tube of Invitrogen 5-alpha Competent E. coli cells ( 50 µL ) on ice.",
+    "Add 5 mL of liquid LB to a 14 mL falcon tube and add 100 mg/mL of carbenicillin.",
+    "Centrifuge the liquid LB Overnight culture at 2800 x g, , for 00:10:00 at 4 °C",
+    "Combine the following reagents in a thin-walled 0.2 mL PCR tube. A B C 1 25 µL RXN Final CONC. 2 Q5 Hot Start High-Fidelity 2X Master-Mix 12.5 µL 1X 3 10 µM Forward Primer 1.25 µL 0.5 µM 4 10 µM Reverse Primer 1.25 µL 0.5 µM 5 Template DNA (25 ng/µL) 1 µL 25 ng 6 Nuclease-free water 9.0 µL Amounts for PCR reaction Link to NEB site-directed mutagenesis primer design tool: https://nebasechanger.neb.com/",
+    "Mix reagents completely by pipetting up and down, then transfer to a thermocycler.",
+    "Perform the following cycling conditions: 00:00:30 01:17:20 00:02:00 A B C 1 Step TEMP Time 2 Initial denaturation 98°C 30 seconds 3 25 cycles 98°C 10 seconds 4 58°C 30 seconds 5 72°C 4 minutes 6 Final extension 72°C 2 minutes 7 Hold 4°C Thermocycling conditions for routine PCR.",
+    "Mix well by pipetting up and down and incubate at room temperature for 00:30:00 NOTE: This 30 minute incubation is different from what is on the NEB website. On the website, they say to incubate the KLD mixture for 5 minutes, but our lab has found this to result in no colony growth on the plate. Troubleshooting with NEB customer service led us to trying an increased KLD reaction time of 30 minutes, which was successful.",
+    "Add 5 µL of the KLD mixture from Step 4 to the tube of thawed cells. Carefully flick the tube 4-5 times to mix. Do not vortex.",
+    "Place the mixture on ice for 00:30:00",
+    "Heat shock at 42 °C for 00:00:30",
+    "Place on ice for 00:05:00",
+    "Pipette 500 µL of room temperature SOC medium into the mixture.",
+    "Incubate at 37 °C with shaking at 250 rpm, 37 °C, 1 hour",
+    "Mix the cells thoroughly by flicking the tube and inverting, then spread 50 µL onto a selection plate and incubate overnight at 37 °C .",
+    "Using a sterile pipette tip, select 5 colonies from each plate transformed and drop the tips into their own tubes with LB + carbenicillin.",
+    "Cap the falcon tubes loosely and incubate at 37 °C for between 12:00:00 and 18:00:00 in a shaking incubator.",
+    "For long term storage of the bacteria, create a glycerol stock for each tube and store in -80 °C To create a glycerol stock: Prepare glycerol: 1:1 v/v glycerol:ddH2O Pipette 500 µL of glycerol into a cryo vial Pipette 500 µL of overnight inoculation into the vial and pipette up and down to mix",
+    "Check for growth, which is indicated by a cloudy haze in the media.",
+    "Purify the plasmid DNA using the QIAprep Spin Miniprep Kit Qiagen Catalog #27104",
+    "Quantify the plasmid DNA using the NanoDrop Eight Spectrophotometer (ThermoFisher)."
+  ],
+  "authors": [
+    "Jailyn Izu"
+  ],
+  "creator": "Jailyn Izu",
+  "published_on": 1749048477,
+  "created_on": 1713367688,
+  "keywords": []
+}

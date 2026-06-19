@@ -1,0 +1,29 @@
+{
+  "id": 9706,
+  "title": "Gene expression - MQRT-PCR",
+  "uri": "gene-expression-mqrt-pcr-mqic5ue",
+  "doi": "dx.doi.org/10.17504/protocols.io.mqic5ue",
+  "description": "{\"blocks\":[{\"key\":\"d7g8h\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"6c86g\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"20kgb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"fh034\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Blood samples were collected from the radiotherapy treated cancer patients in PAXGene tubes according to the manufacturer&#39;s protocol (Qiagen, PreAnalytiX GmbH, Hilden, Germany). The tubes were kept at RT for 2 hr before being frozen at -20 °C. RNA was extracted from the samples using the PAXGene Blood miRNA Kit (Qiagen, PreAnalytiX GmbH, Hilden, Germany) according to the manufacturer’s protocol.",
+    "RNA quantity was assessed by Nanodrop ND2000 using 1ul RNA (Nanodrop, Wilmington, USA). RNA quality was assessed by RIN values produced by Tapestation 2200 using 1ul RNA mixed with 4ul Screentape Buffer (Agilent Technologies, CA, USA).",
+    "Reverse transcriptase reactions were performed using High Capacity cDNA Reverse transcription kit (Applied Biosystems, FosterCity, CA, USA) according to the manufacturer ’ s protocol with 350 ng of total RNA.",
+    "Multiplex quantitative RT-PCR reactions were run in triplicate using PerfeCTa® MultiPlex qPCR SuperMix (Quanta Biosciences, Inc. Gaithersburg, MD, USA) at a final concentration of 1X and with primer and probe sets for target genes at a final concentration of 300 nM concentration each. 3 ′ 6-Carboxyfluorescein (FAM), 6-Hexachlorofluorescein (HEX), Texas Red and CY5 (all from Eurogentec Ltd, Fawley, Hampshire, UK) were used as fluorochrome reporters for the hydrolysis probes analysed in multiplexed reactions with between 2 and 4 genes per run including the control. %s %s",
+    "Samples were run along a standard curve curves obtained by serial dilution of PCR-amplified DNA fragments of each gene. The linear dynamic range of the standard curves covering six orders of magnitude (serial dilution from 3.2 x 10-4 to 8.2 x 10-10).",
+    "Multiplex quantitative RT-PCR Real-time PCR was performed using Rotor-Gene Q (Qiagen, Hilden, Germany). Cycling parameters were 2 min at 95°C, then 45 cycles of 10 s at 95°C and 60 s at 60°C.",
+    "Data were collected and analyzed by Rotor-Gene Q Series Software. Gene target Ct (cycle threshold) values were normalized to a Hypoxanthine-Guanine phosphoribosyltransferase 1 (HPRT1) internal control.",
+    "Ct values were converted to transcript quantity using standard curves. PCR efficiencies between 93% and 103% for each gene with R2 &gt; 0.998. Relative gene expression levels after irradiation were determined relative to unexposed controls."
+  ],
+  "authors": [
+    "Grainne O'Brien",
+    "Ales Tichy"
+  ],
+  "creator": "Ales Tichy",
+  "published_on": 1521394965,
+  "created_on": 1516270407,
+  "keywords": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": 9999,
+  "title": "Gibson assembly",
+  "uri": "gibson-assembly-mzpc75n",
+  "doi": "dx.doi.org/10.17504/protocols.io.mzpc75n",
+  "description": "{\"blocks\":[{\"key\":\"16sel\",\"text\":\"Gibson is a PCR-based multi-fragment assembly technique. So whether PCR works has large impacts on final product.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4k50o\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"915fh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"b7ifk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"O91ie\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"gbvst\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":980,\"guid\":\"4102233A341F11EE9D4302C0B41BC903\",\"name\":\"Gibson Assembly Master Mix - 10 rxns\",\"mol_weight\":0,\"sku\":\"E2611S\",\"url\":\"https://www.neb.com/E2611\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "a",
+    "Construct a complete map of insert in the desired destination vectors in Snapgene or Ape.",
+    "Identify the connection region between inserts and vector.",
+    "Design primer for amplifying insert and vectors. Target melting temperature Tm set to 60 or higher.",
+    "Order primers A, B, C and D. Notes: A has two parts. Starting from 5’, the overhang is the reverse complement of Rev primer of backbone, and the primer region is a standard primer to amplify insert (Fwd primer of insert). B is same and has reverse complement of backbone Fwd primer followed by standard Rev primer of insert. So primer A= Backbone Rev primer (rev complement)+ Insert Fwd primer Primer B= Backbone Fwd primer (rev complement)+ Insert Rev primer Primer C is reverse complement of A. Primer D is reverse complement of B.",
+    "For more fragment to assemble, increase number of primers correspondingly.",
+    "Amplify insert with A and B primers. Amplify backbone with C and D primers. Use 25 or 50 uL reaction volume. Use DMSO or nested/ touchdown PCR if necessary.",
+    "Add 0.25 uL DpnI and incubate at 37 C for 1hr (or longer depending on your paranoid) to remove template.",
+    "Run a gel to verify the size of PCR product.",
+    "Use PCR cleanup or Gel extraction to get clean product.",
+    "Quantify the concentration by Nanodrop",
+    "For 2 or 3 fragments assembly, use 0.02-0.5 pmols of DNA. For more fragments, use 0.2-1.0 pmols. pmols=(weight in ng) x 1000 / (base pairs x 650 daltons)",
+    "Put insert and vectors into reaction and add DI water to 10 uL.",
+    "Add 10 uL 2X Gibson Master mix.",
+    "Incubate at 50 C for 15-60 minutes depending on the fragments number. 2-3 fragments use 15 mins. 4-6 use 60 mins.",
+    "Store in -20 C.",
+    "Mix 1 uL of reaction and 10 uL of competent cells, do not vortex. Keep on ice for 30 mins.",
+    "Heat shock in 42 C water bath for 45 sec.",
+    "Keep on ice for 5 mins.",
+    "Add 300 uL SOC (pre-warm to Room temperature). Put in 250 rpm shaker in 37 C for 1hr.",
+    "Use 50-100 uL of recovered solution to plate out depending on copy number and plate size.",
+    "Harvest colony next day and pick single colony for liquid culture in corresponding antibiotics.",
+    "Sequencing and digestion to verify the assembly."
+  ],
+  "authors": [
+    "Ruihong Wang"
+  ],
+  "creator": "Ruihong Wang",
+  "published_on": 1518728105,
+  "created_on": 1517605954,
+  "keywords": []
+}

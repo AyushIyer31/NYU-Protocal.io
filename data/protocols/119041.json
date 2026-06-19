@@ -1,0 +1,31 @@
+{
+  "id": 119041,
+  "title": "Quantifying cell viability via LDH cytotoxicity assay",
+  "uri": "quantifying-cell-viability-via-ldh-cytotoxicity-as-dyg97tz6",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4wd62vo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"dten5\",\"text\":\"This protocol describes a procedure to assess the cytotoxicity of in vitro treatments by measuring the level of lactate dehydrogenase (LDH) in cell culture supernatants via an enzyme activity assay. LDH is a cytosolic enzyme released into the supernatant upon cell lysis. This protocol uses the Abcam LDH assay kit (ab102526), which measures the increase in NADH produced by the released LDH enzyme over time.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":66,\"length\":8}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"1denv\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"b579\",\"text\":\"Black 96-well microtiter plate\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dr8s9\",\"text\":\"Plate reader\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"17r8n\",\"text\":\"1.5 mL microcentrifuge tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f2n\",\"text\":\"15 mL centrifuge tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1hah4\",\"text\":\"Cell culture supernatants (analyte)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":966212,\"guid\":\"08109C327C5A4A128290C4E800CCC188\",\"name\":\"LDH Assay Kit (Cytotoxicity)\",\"mol_weight\":0,\"sku\":\"ab65393\",\"url\":\"https://www.abcam.com/en-us/products/assay-kits/ldh-assay-kit-cytotoxicity-ab65393?utm_source=google\\u0026utm_medium=cpc\\u0026gad_source=1\\u0026gclid=CjwKCAiAkc28BhB0EiwAM001TTMpSIWs8yzt5Qtouo17gXWMjM1gohJo6hyPcEyYF7SMQY2f7yoBThoCNQ0QAvD_BwE\\u0026gclsrc=aw.ds\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":22,\"name\":\"Abcam\",\"link\":\"http://www.abcam.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "This protocol uses the LDH Assay Kit (Cytotoxicity) Abcam Catalog #ab65393 . If you&#39;ve already prepared kit reagents, skip to &#34;Standard and substrate preparation.&#34;",
+    "Reconstitute NADH standard in 0.4 mL ultrapure water to generate a 1.25 millimolar (mM) solution. Aliquot in 100 µL aliquots. Store remaining aliquots at -20 °C for future use.",
+    "Reconstitute recombinant LDH positive control in 200 µL LDH assay buffer. Aliquot in 20 µL aliquots. Store remaining aliquots at -20 °C for future use.",
+    "Reconstitute substrate mix in 1.1 mL ultrapure water. Allow to mix for ≥ 00:10:00 , vortexing intermittently. Aliquot in 185 µL aliquots. Store remaining aliquots at -20 °C for future use.",
+    "Thaw LDH positive control on ice. Dilute entire aliquot to 200 µL in LDH assay buffer.",
+    "Thaw 1.25 millimolar (mM) NADH standard aliquot on ice. Prepare standards as follows: %s %s",
+    "Thaw LDH substrate aliquot on ice. Dilute 25× substrate to 1× in LDH assay buffer. Vortex to mix. Prepare ≥ 50 µL reaction mix per reaction (not including blank).",
+    "Analyze samples in technical triplicate. For each sample, prepare appropriate dilutions in LDH assay buffer in appropriate wells of a black, 96-well microtiter plate such that each well has a total volume of 50 µL . Depending on assay setup, you may need to optimize supernatant dilution factor. As an absorbance assay, the dynamic range of the LDH assay is limited. Ideally, the detected concentrations of NADH (which we use to calculate LDH activity) should fall within the range of the standards (50–250 µM). You may need to dilute analyte samples to achieve this. In our hands, we found that no dilution was necessary for samples that didn&#39;t have significant supernatant LDH activity (i.e., when treatment had little impact on viability). For samples with significant LDH activity, a 5× dilution was generally appropriate. When testing unknown samples, we recommend analyzing both 1× and 5× dilutions.",
+    "Add 50 µL of reaction mix to all wells except the blank.",
+    "Measure absorbance at 450 nm on plate reader set to 37 °C in kinetic mode, taking readings every 00:00:00 for a total of 00:30:00 .",
+    "Add standards (prepared in step 6) and controls to appropriate wells. Standards and controls are detailed in the following table: %s %s"
+  ],
+  "authors": [
+    "Justin Donnelly"
+  ],
+  "creator": "Arcadia Science",
+  "published_on": 1741117492,
+  "created_on": 1737732325,
+  "keywords": []
+}

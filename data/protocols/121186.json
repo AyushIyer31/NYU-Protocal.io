@@ -1,0 +1,40 @@
+{
+  "id": 121186,
+  "title": "The electrophoretic mobility shift assay (EMSA)",
+  "uri": "the-electrophoretic-mobility-shift-assay-emsa-d2ka8cse",
+  "doi": "dx.doi.org/10.1038/nprot.2009.13",
+  "description": "{\"blocks\":[{\"key\":\"70mwx\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"fiovm\",\"text\":\"The electrophoretic mobility shift assay (EMSA), also known as “gel shift assay”, is used to examine the binding parameters and relative affinities of protein and DNA interactions.  We produced recombinant CCA1 protein and tested its binding affinity for the promoter fragments that contain CBS (AAAAATCT) or evening element (EE, AAAATATCT)1 using a modified procedure adopted from published protocols2,3.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":340,\"length\":1},{\"style\":\"sup\",\"offset\":401,\"length\":3}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Amplify a CCA1 full-length cDNA from A. thaliana (Ler) cDNA using AccuPrime™ Pfx DNA Polymerase (Invitrogen) using the primer pair (recombinant sites lower case) attB1-CCA1-F-XhoI: 5’-ggggacaagtttgtacaaaaaagcaggctCCCTCGAGATGGAGACAAATTCGTCT-3’ and CCA1-R-Avr2-attB2: 5’-ggggaccactttgtacaagaaagctgggtCCCCTAGGTCATGTGGAAGCTTGAGTTTC-3’.",
+    "Clean the PCR products using PureLink™ PCR Purification Kit (Invitrogen).",
+    "Use one-tube method to clone CCA1 into pET-300/NT-Dest (Invitrogen), confirm by colony PCR, and validate the insert by sequencing.",
+    "Transform the recombinant expression vector into Escherichia coli Rosetta-gami B competent cells (Novagen, Madison, WI) and validate the insert by sequencing.",
+    "Inoculate a 25 ml seed culture (25 ml LB in a 250 ml flask) with one colony, grow overnight at 37°C (note: the culture is saturated).",
+    "Add 12.5 ml of the seed culture to 500 ml of LB in a 1 L flask; Grow the culture at 37°C until the O.D. reading is ~0.85; Quickly chill the flask on ice to 25°C and add IPTG at a final concentration of 1 mM; Grow the cells at 25-30°C for 16 hours.",
+    "Harvest the cells and purify the recombinant CCA1 (rCCA1) protein using the ProBond Purification System (Invitrogen) protocol and Ni-NTA Agarose (Invitrogen) (note: perform all steps at 4°C or on ice).",
+    "Confirm protein purity on SDS-PAGE gel, and protein quantity using Bradford assay and Western blot analysis.",
+    "Design ~25 bp oligonucleotides (oligos, top and bottom) based on the location of the evening elements in the promoter regions of the respective genes (GWD3, At5g26570; DPE1, At5g64860; PORA, At5g54190; PORB, At4g27440; and TOC1, At5g61380).",
+    "End-label the probes using Polynucleotide kinase, 30 pmol of oligos, and 2 µCi [γ-32P] ATP in a 10 µl reaction; Incubate the reaction at 37°C for 3 hours and terminate the reaction by heating at 95°C for 3 minutes; Spin down while still hot, then combine the top and bottom strands in one tube and allow to cool to room temperature slowly to anneal the two strands (~30 min) (note: 150 µCi [γ-32P] ATP should be used for stronger probe).",
+    "Label a low molecular weight DNA ladder (New England Biolabs) with polynucleotide kinase and 2 µCi [γ-32P] ATP; Add 1 µl of 10X DNA loading dye to each sample.",
+    "Load the oligos and ladder on a 12% polyacrylamide gel (30% acrylamide, 20x20 cm), skipping a lane between each probe, and run at 200V for one hour in 0.5X TBE, until the purple dye reaches 3/4 of the distance from the top of the gel; Wrap the gel in plastic wrap, place it in a cassette, and expose to film for 15 min; Develop the film, place the film under the gel, and cut out bands in the gel from the same location as shown on the film.",
+    "Place each probe in a microcentrifuge tube with 250 µl of TE, crush the gel against the side of the tube with a pipette tip, and incubate at 65°C overnight; Spin down, transfer the supernatant to a fresh tube, and discard gel; Probes should read 3-4K on the 10X setting on a Ludlum model 3 Geiger counter.",
+    "To prepare the cold probe, combine equimolar amounts of top and bottom strand in a tube, boil for 5 min, and let cool to room temperature on bench.",
+    "5X Binding Buffer: 100 mM Hepes (pH 7.2), 160 mM KCl, 0.5 mM EDTA (pH 8), 50% Glycerol, 350 ng/µl BSA, 40 ng/µl poly(dI-dC), 12.5 mM DTT.",
+    "In a microcentrifuge tube, combine 10 fmoles of rCCA1 protein, 10 fmoles 32P-labeled probes, 2.5 µl of 5X binding buffer, and the appropriate amount (1-50X) of competing cold probe, if necessary; Increase the final volume to 25 µl with water; Incubate the samples at room temperature for 15 minutes (note: If competing cold probes are used, add cold probes immediately after adding hot probes to prevent competition resulting from increased time instead of increased concentration).",
+    "Pour a 6% polyacrylamide gel (20X20 cm) and pre-run the gel for 1 hour at 200V; Add 2.5 µl of 10X DNA loading dye to the samples, load the samples, and run the gel for 1 hour at 200V, until the purple dye is 2/3 the distance from the top of the gel.",
+    "Dry the gel onto filter a paper and expose it to an X-ray film overnight or to a Phosphor Storage screen for 1-4 hours.",
+    "Altered circadian rhythms regulate growth vigor in hybrids and allopolyploids by Zhongfu Ni, Eun-Deok Kim, Misook Ha, Erika Lackey, Jianxin Liu, Yirong Zhang, Qixin Sun &amp; Z. Jeffrey Chen published in Nature on 06 Oct, 2008 https://dx.doi.org/10.1038/nature07523"
+  ],
+  "authors": [
+    "Erika Lackey",
+    "Z. Jeffrey Chen"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1231409534,
+  "created_on": 1231409534,
+  "keywords": []
+}

@@ -1,0 +1,42 @@
+{
+  "id": 80191,
+  "title": "Untargeted IMS Tentative Identification Lipidomics",
+  "uri": "untargeted-ims-tentative-identification-lipidomics-csi7wchn",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l27j7qg1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"6tijg\",\"text\":\"The purpose of this protocol is to generate tentative annotations for lipids detected using IMS. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Following pre-processing, tentative identification is performed using an in-house developed annotation software - annotine.",
+    "Generate an average mass spectrum of the dataset (in profile mode).",
+    "Scale the mass spectrum between 0 and 1, and peak-pick its profile to retrieve a list of m/z features (commonly 100s to 1000s).",
+    "Filter the peak list to retain only peaks that have a relative intensity above 0.001 (sensitive mode) or 0.01 (standard mode). Peaks whose intensity value falls below this threshold are removed.",
+    "( optional ) De-isotope the peak list to remove M+1, M+2, … and other potential isotopes from further consideration.",
+    "Generate an internal database on the basis of a user-supplied list of molecular species databases and a set of user-supplied expected adduct types: Databases: a. coreMetabolome, LMSD, SHexCer, HMDB5 b. (optional) a local LC-MS database Adducts: a. Positive mode: [M+H]+, [M+Na]+, [M+K]+ b. Negative mode: [M-H]-, [M-CH3]- coreMetabolome5 is retrieved from metaspace ( https://metaspace2020.eu/help ); LMSD database is retrieved from LipidMaps ( https://www.lipidmaps.org/databases ); HMDB5 database is retrieved from HMDB ( https://hmdb.ca/downloads ); SHexCer is a manually curated list, and an LC-MS database can be (optionally) included if prior LC-MS experiments have been conducted.",
+    "Perform tentative identification by comparing the peak list with the built database of species and adduct combinations. If a peak is within a ±5 ppm window of an annotation in the database, that annotation is assigned to that peak. This process is repeated until each peak has been compared to the database.",
+    "Evaluate each tentative annotation using metrics.",
+    "( optional ) To reduce the number of unlikely annotations, calculate a false discovery rate (FDR) for every tentative identification. Annotations can be filtered based on the FDR (or any other) score.",
+    "( optional ) If LC-MS results are available (see LC-MS/MS lipidomics protocol below), associate these directly with the annotine results. This allows immediate highlighting of which tentative identifications have also been observed by LC-MS/MS, increasing the confidence of the identification. Bulk Untargeted LC-MS/MS Lipidomics by Madeline E. Colley"
+  ],
+  "authors": [
+    "Lukasz Migas",
+    "Madeline E. Colley",
+    "Katerina V Djambazova",
+    "Martin Dufresne",
+    "Angela R.S. Kruse",
+    "David Anderson",
+    "Olof Isberg",
+    "Jamie Allen",
+    "Ali Zahraei",
+    "Melissa Farrow",
+    "Jeff Spraggins",
+    "Raf Van De Plas",
+    "Martin Dufrense"
+  ],
+  "creator": "Angela R.S. Kruse",
+  "published_on": 1681241666,
+  "created_on": 1680902940,
+  "keywords": []
+}

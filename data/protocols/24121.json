@@ -1,0 +1,37 @@
+{
+  "id": 24121,
+  "title": "Mammalian Cell Culture: Freezing",
+  "uri": "mammalian-cell-culture-freezing-3szgnf6",
+  "doi": "dx.doi.org/10.17504/protocols.io.3szgnf6",
+  "description": "{\"blocks\":[{\"key\":\"4su3a\",\"text\":\"This protocol describes how to freeze cells that are being cultured in a tissue culture flask (T-75 or T-25).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"e39c4\",\"text\":\"Gloves must be worn at all times.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eqrb0\",\"text\":\"Perform all tasks within biosafety cabinet.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2evtl\",\"text\":\"Anything entering biosafety cabinet must be generously sprayed with 70% ethanol (even you).\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"rqlt\",\"text\":\"When finished, wipe biosafety cabinet with 70% ethanol, and UV for at least 15 minutes.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"ahfdp\",\"text\":\"Warm cell culture media, DPBS, and Trypsin-EDTA (and possibly FBS) in   water bath.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":70,\"length\":1}],\"data\":{}},{\"key\":\"efnst\",\"text\":\"Wash waste beaker with soap and warm water, then dry with paper towel.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ct4bh\",\"text\":\"Expose serological pipet tips, centrifuge tube, and waste beaker to UV for at least  .\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":84,\"length\":1}],\"data\":{}},{\"key\":\"dp8nu\",\"text\":\"Make label for cryovial with cell line, passage number, and date; affix to cryovial before UV.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3rc86\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"temperature\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"0CEA619087B811E9956C55E8FEF94C40\",\"id\":0,\"label\":\"\",\"protocol_name\":\"untitled protocol\",\"temperature\":\"37\",\"unit\":10}},\"1\":{\"type\":\"duration\",\"mutability\":\"MUTABLE\",\"data\":{\"duration\":900,\"guid\":\"2578D98087B811E9956C55E8FEF94C40\",\"id\":0,\"label\":\"\",\"protocol_name\":\"untitled protocol\"}}}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9jdf0\",\"text\":\"Cell culture media (at least 4 mL for T-75 or 1 mL for T-25)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1bqqi\",\"text\":\"Fetal Bovine Serum (FBS)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8jb1e\",\"text\":\"DPBS\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"75h40\",\"text\":\"Trypsin-EDTA\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"805ao\",\"text\":\"Dimethylsulfoxide (DMSO)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"k7pk\",\"text\":\"15 mL centrifuge tube\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6pjvp\",\"text\":\"Cyrovial(s)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Remove media from flask.",
+    "Using serological pipet, add 4 mL DPBS to flask [ 1 mL for T-25].",
+    "Using serological pipet, remove DPBS and dispose into waste beaker.",
+    "Repeat the above 2 steps, for a total of 2 washes.",
+    "Add 4 mL warmed Trypsin-EDTA to flask [ 1 mL for T-25].",
+    "Wait for cells to detach.",
+    "Add 4 mL warmed cell culture media to flask to neutralize Trypsin-EDTA [ 1 mL for T-25]",
+    "Using a serological pipet, transfer cell suspension into 15 mL centrifuge tube.",
+    "Centrifuge cell suspension at for 00:03:00 .",
+    "Remove bulk of supernatant with serological pipet.",
+    "Remove remaining supernatant with 1000 μL pipette. For small cell pellets, it is best to leave a little supernatant to avoid disturbing the pellet.",
+    "Add 950 µL of either FBS or cell culture media and allow to sit for 00:01:00 to make resuspension easier. Some researchers prefer to use FBS as a freezing medium while others prefer whole media.",
+    "Gently pipette mix cell pellet until resuspended.",
+    "Add 50 µL DMSO to cell suspension. 5% DMSO solution prevents ice crystals from forming in the liquid, minimizing cell rupture during freezing.",
+    "Place cryovial in deep freezer cell vial container.",
+    "Allow at least 04:00:00 in deep freezer before transferring cryovial to liquid nitrogen tank. This prevents too rapidly freezing, which may cause cell rupture.",
+    "Update Lab Frozen Storage Inventory to reflect the new cell vial."
+  ],
+  "authors": [
+    "Kenneth Schackart"
+  ],
+  "creator": "Kenneth Schackart",
+  "published_on": 1559772549,
+  "created_on": 1559755919,
+  "keywords": []
+}

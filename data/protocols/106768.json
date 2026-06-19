@@ -1,0 +1,43 @@
+{
+  "id": 106768,
+  "title": "QuPath to SCiLS instructions",
+  "uri": "qupath-to-scils-instructions-dkhq4t5w",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg32nq1v25/v1",
+  "description": "{\"blocks\":[{\"key\":\"2g02p\",\"text\":\"Matrix-assisted laser desorption/ionization mass spectrometry imaging (MALDI-MSI) is an analytical technique which provides the molecular composition directly from cells, tissues and organs. To provide biological context for these molecular maps acquired with MALDI-MSI histology or immunofluorescence is performed on the same or an adjacent tissue section. Methods for alignment, segmentation, and data analysis are required to extract molecular data from various regions within the MALDI images. We have developed a workflow to combine QuPath data and MALDI-MSI data in SCiLS. This data can be then exported to R for statistical analysis to study upregulation/downregulation of certain cell types at the areas of interest. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2odtp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5o0e6\",\"text\":\"QuPath is an open-source software for digital pathology and whole slide image analysis. It allows for the annotation of tissue functional units and immunofluorescence stains. SCiLS (Bruker) is software for analyzing mass spectrometry imaging data. By combining QuPath segmentations with MALDI-MSI results, we are able to obtain the molecular composition of specific tissue functional units or immunofluorescence signals. It is also possible to combine metabolite annotations obtained from the open-source annotation platform METASPACE. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"atpp8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dm9s3\",\"text\":\"Part 1 QuPath to SCiLS (instructions on QuPath): \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7a2hp\",\"text\":\"The process of the tissue annotation according to the immunofluorescence channel or by manual selection of tissue functional units in QuPath, as well as the export of this data into a file that can be recognized by SCiLS.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f4aj6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ak146\",\"text\":\"Part 2 QuPath to SCiLS (instructions on SCiLS): \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aimc4\",\"text\":\"The process of importing the data from QuPath (annotated tissue functional units or areas of interest) and METASPACE annotations (annotated molecules from mass spectrometry images) to SCiLS, as well as the alignment of images from mass spectrometry and microscopy in SCiLS. This will allow for the further export of all the data from SCiLS to the R (SCiLS API) where statistical analysis can be performed to compare the molecular abundances in segmented regions.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"f513h\",\"text\":\"Install QuPath\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Install QuPathtoSCiLS extension",
+    "Open QuPath Find file &#34;QuPathToSCiLS-1.4.jar&#34;. My pathway is: C:\\Program Files\\SCiLS\\SCiLS Lab\\QuPathPlugin",
+    "Drag the QuPathToSCiLS-1.4.jar file onto the running QuPath window",
+    "If QuPath displays a message that the extensions directory is not specified accept the default or specify a different location.",
+    "There should now be two entries “Export annotations to SCiLS Lab” and “Import annotations from SCiLS Lab” under QuPath Extensions: If the entry does not show up restart QuPath.",
+    "Annotate files in QuPath either using tools to annotate such as magic wand (for example, when annotating H&amp;E tissue) Magic wand or using thresholding for channels (for example, when have cyclic IF on the tissues)",
+    "Note (if using stained tissue): This icon will allow to see all channels as shown below To get rid of background, channel min value can be varied (usually ~ 10% of the max is a good setting)",
+    "Thresholding: Classify &gt;Pixel classification &gt; Create thresholder The following window will show up: Test different resolutions and select the suitable one (it must show the selected areas in yellow), choose the right channel, prefilter-Gaussian and smoothing sigma 0 settings are kept at all times (they are the best), threshold-select the value based on what you got for channel min at 2.1, Above threshold - your channel, below threshold - Ignore*, classifier name - name of your channel Then after this window was filled out, press: Create Objects &gt; in the new window at the drop-down menu select either full image or all annotations (if selected only specific area of the tissue for the annotations) &gt; at the next window press &#34;OK&#34; (Note: minimum object size can be changed from 0 to a pixel size IF those are not necessary for thresholding, then it will only mark cells larger than a size you have entered) The annotation can be now checked here: Important tip: When choosing resolution of your annotation, to make sure your file can be exported, try to use the lowest resolution that yet produces good results of annotation",
+    "After completing all annotations, go to Extensions &gt; Export annotations to SCiLS lab Save file",
+    "Open SCiLS lab (Premium) Press New FIle",
+    "Import/choose ImzML file Press Next",
+    "Page &#34;Mass axis settings&#34; must appear Check: bin size (it must match the bin size indicated in Metaspace -&gt; dataset overview -&gt; m/z tolerance (ppm) value will indicate the bin size. If the value is not the same as in Metaspace, unselect automatic and adjust this value Change: constant type must be MRMS (Fourier - transform) Press Next, then Import, name new SCiLS file, press save, press open imported file",
+    "Press File -&gt; open -&gt; choose the new created file from a previous step -&gt; press open",
+    "Press File -&gt; Import -&gt; choose Region SCiLS Exchange Format -&gt; choose here your annotated in QuPath file",
+    "The window with two pictures imported must appear – one from MSI and from QuPath (note: it will not appear annotated here) Press Next It should now redirect to Image Co-registration page (provides instruction on the right side of the window) After they are well aligned, press Next (good alignment is very important for precise results)",
+    "It will ask to select all needed regions from the list of annotation we have made in QuPath (usually need to select all of them) Important: check the box &#34;select new region&#34; -&gt; name it Press Finish (now the annotations of channels or anything is imported and appear in regions section of the main window)",
+    "Press File -&gt; Attribute Editor -&gt; Press &#34;Settings&#34; icon Select &#34;Use as a region&#34; for your annotations Close",
+    "Press File -&gt; Import -&gt; Feature list from file (flexImaging, MetaboSpace, SCiLS, CSV, TLST) Choose file (for example, file imported from Metaspace as CSV) -&gt; Open Select m/z column and Name column -&gt; press Import",
+    "Go to Feature list at the right side of the screen (At the bottom of the Visualization tabs) Choose your file that you imported (for example, csv from Metaspace) -&gt; press the globe icon",
+    "Finally, the data now can be found at Ion Images",
+    "Now that all data is gathered at SCiLS lab, the statistical analysis can be done in R (code provided, follow the instructions provided in the code)"
+  ],
+  "authors": [
+    "Naina Beishembieva",
+    "Brittney Gorman",
+    "Christopher R Anderton"
+  ],
+  "creator": "Naina Beishembieva",
+  "published_on": 1728490030,
+  "created_on": 1725046389,
+  "keywords": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 110315,
+  "title": "Protein Immunoprecipitation (IP) from HEK293 Cells or iNeurons",
+  "uri": "protein-immunoprecipitation-ip-from-hek293-cells-o-dpyj5pun",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvjn5zpgk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"27qsq\",\"text\":\"This protocol described the methods used to isolate HA-tagged or endogenous proteins by co-IP followed by downstream analysis by mass spectrometry. The protocol uses extracts from either HEK293 cells or induced neurons derived from ES cells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"a3nqm\",\"text\":\"Pierce Anti-HA Magnetic Beads (Thermo Scientific, 88837)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fca0c\",\"text\":\"n-Dodecyl β-D-maltoside (DDM, Gold Biotechnologies, DDM5)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ovf9\",\"text\":\"protease inhibitor cocktail (Roche, 4906845001)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6gikl\",\"text\":\"Anti-FLAG M2 Magnetic Beads (Sigma Millipore, M8823)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9l4pl\",\"text\":\"anti-TMEM230 (Origene, TA504888)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cvp1s\",\"text\":\"Pierce Protein A/G magnetic beads (Thermo Scientific, 88802)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1c4m1\",\"text\":\"Laemmli buffer [4% SDS, 20% glycerol, 0.004% bromphenol blue, 0.125M Tris-Cl, pH 6.8, 10% 2-mercaptoethanol (or DTT) (add immediately before use)]\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9oh2p\",\"text\":\"Triethylammonium bicarbonate buffer (TEAB, Sigma-Aldrich, T7408)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare protein extracts from a 10 cm culture dish of HEK293 cells or a 15 cm dish of iNeurons for each replicate.",
+    "Extract proteins by incubating the cell lysate for 1 hour at 4°C in rotation.",
+    "Centrifuge the lysate at 20,000 x g for 20 minutes at 4°C. Repeat this centrifugation step to ensure complete clarification of the supernatant.",
+    "Collect the supernatant and incubate with magnetic beads depending on the protein tag: For HA-tag, 15 μL α-HA magnetic beads (Pierce) for 2 hours at 4°C. For Flag-tag, 25 μL α-Flag magnetic beads (Sigma) for 2 hours at 4°C. For endogenous antibodies, add 5 μg of the antibody to the supernatant and incubate overnight at 4°C before proceeding to bead incubation. Incubate with 15μL magnetic A/G for 2 hours at 4°C. In this example, antibodies against TMEM230 are used.",
+    "Separate the beads from the solution using a magnetic stand.",
+    "Wash the beads four times with 1 mL washing buffer containing 0.1% DDM, 25 mM HEPES (pH 7.4), and 150 mM NaCl.",
+    "Elute the bound proteins from the beads by adding 30 μL of either: 1.5X Laemmli buffer for immunoblotting 1.5X S-Trap lysis buffer (7.5% SDS, 150 mM Triethylammonium bicarbonate or TEAB, pH 8.5) for mass spectrometry (MS) analysis.",
+    "Collect cells directly in lysis buffer containing 0.5% n-Dodecyl β-D-maltoside (DDM), 25 mM HEPES (pH 7.4), 150 mM NaCl, and a protease inhibitor cocktail."
+  ],
+  "authors": [
+    "Miguel A. Gonzalez-Lozano",
+    "Harper JW"
+  ],
+  "creator": "Harper JW",
+  "published_on": 1743186681,
+  "created_on": 1729267694,
+  "keywords": []
+}

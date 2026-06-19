@@ -1,0 +1,23 @@
+{
+  "id": 27928,
+  "title": "PCR",
+  "uri": "pcr-7hyhj7w",
+  "doi": "dx.doi.org/10.17504/protocols.io.7hyhj7w",
+  "description": "",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"13hfh\",\"text\":\"Synthesize primers in advance.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"7mj3l\",\"text\":\"Please wear gloves for the experiment,  don't try to touch the lid after PCR program initiation. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"141b5\",\"text\":\"2×high Taq Master Mix\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"fnv2j\",\"text\":\"ddH2O\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":3,\"length\":1}],\"entityRanges\":[],\"data\":[]},{\"key\":\"9r90q\",\"text\":\"Template\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3t7jn\",\"text\":\"F/R Primer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"erspr\",\"text\":\"Bio-rad S1000TM Thermo Cycler.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Set up a small box with ice, put DNA and 2×high Taq Master Mix into it before going into the Bio-rad S1000TM thermocycler cycler.Set up a small box with ice, put DNA and 2×high Taq Master Mix into it before going into the Bio-rad S1000TM Thermo Cycler.",
+    "Add the following reagent to a PCR tube.(50 μl). %s %s 2×high Taq Master Mix (Enzyme) 25 μl Template 2 μl Forward Primer (10 μM) 2 μl Reverse Primer (10 μM) 2 μl ddH2O 19 μl",
+    "Program the thermocycler as follows: %s %s 98℃ 5 min 98℃ 15 s Tm-4℃ 15 s 72℃ （5-10s）× (1 kb) 72℃ 5 min 4℃ forever"
+  ],
+  "authors": [
+    "宏亮 董"
+  ],
+  "creator": "宏亮 董",
+  "published_on": 1568948556,
+  "created_on": 1568945261,
+  "keywords": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": 52334,
+  "title": "Bulk RNA sequencing (mRNA seq)",
+  "uri": "bulk-rna-sequencing-mrna-seq-bxcnpive",
+  "doi": "dx.doi.org/10.17504/protocols.io.bxcnpive",
+  "description": "{\"blocks\":[{\"key\":\"81l30\",\"text\":\"Bulk RNA sequencing (RNA-seq) is a quantitative method used to interrogate the transcriptome of a biological sample at a given point in time. This protocol describes a method for generating bulk RNA-seq libraries from human islet material. This method also allows for isolation of genomic DNA, which can be used for additional assays such as whole genome bisulphite sequencing.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":377}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6t76g\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a57ef\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"be97t\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"7ifck\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"notes\",\"mutability\":\"\",\"data\":{\"blocks\":[{\"data\":{},\"depth\":0,\"entityRanges\":[],\"inlineStyleRanges\":[{\"length\":30,\"offset\":0,\"style\":\"bold\"}],\"key\":\"2jvhc\",\"text\":\"Date modified: August 12, 2021\",\"type\":\"unstyled\"}],\"entityMap\":{}}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "1. 250,000 to 500,000 cells for use in Qiagen DNA/RNA AllPrep kit : for &gt;500,000 cells, use DNA/RNA Universal AllPrep kit; for &lt;500,000 cells, use Qiagen DNA/RNA AllPrep Micro kit. a. Centrifuge cells, then carefully remove all supernatant by aspiration. b. Loosen pellet by flicking and add RLT Plus buffer (prepared with Beta-mercaptoethanol) &lt; 5 x 10 6 cells, 350 µL 5 x 10 6 – 1 x 10 7 cells, 600 µL 2. Pipet the lysate directly into a QIAshredder spin column and centrifuge for 2 min at maximum speed. 3. Continue with AllPrep protocol, or snap freeze and store at -80 °C for future use.",
+    "1. All recent samples (using 750pg input) were processed using Takara Pico kit with Total RNA-Seq Kit v2 2. All samples prior to 2020 (used 100ng input) were processed using Illumina TruSeq Stranded Total RNA Library prep Gold Note: The cells go through the All Prep kit to get RNA and then utilized for bulk RNA-seq processing. From this preparation, we also acquire DNA which is used for Whole Genome Bisulphide Sequencing (WGBS)."
+  ],
+  "authors": [
+    "Klaus H. Kaestner Lab",
+    "Suzanne Shapira"
+  ],
+  "creator": "Lili Liang",
+  "published_on": 1629117847,
+  "created_on": 1628875394,
+  "keywords": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": 50015,
+  "title": "Fluo-4 Calcium Imaging",
+  "uri": "fluo-4-calcium-imaging-bu37nyrn",
+  "doi": "dx.doi.org/10.17504/protocols.io.bu37nyrn",
+  "description": "{\"blocks\":[{\"key\":\"b3mag\",\"text\":\"This protocol details the measurement of the firing activity of cultured iPSC derived neurons. This procedure is used to prepare cultured neurons for Calcium imaging.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"2l1bt\",\"text\":\"Materials:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5chvl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7d6kg\",\"text\":\"96 well plate with differentiated neurons.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1ac0m\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"49g1n\",\"text\":\"Reagents:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5krhm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eid4l\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"f790i\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"14d3g\",\"text\":\"DPBS \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ds5t3\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aqsfd\",\"text\":\"Reagent Reference Mol weight(mg/mmol)Solvent [Stock mM] [Working conc. µM] MediumFluo-4-AM F14201 1096.95 DMSO 1 5 Neurobasal\",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":125}],\"data\":{}},{\"key\":\"bmifl\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8lfe\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c07i8\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":211974,\"guid\":\"41B9CB6D341F11EE9D4302C0B41BC903\",\"name\":\"Neurobasal\\u0026trade; Medium, minus phenol red\",\"mol_weight\":0,\"sku\":\"12348017\",\"url\":\"https://www.thermofisher.com/order/catalog/product/12348017\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":252821,\"guid\":\"421C98C6341F11EE9D4302C0B41BC903\",\"name\":\"Fluo-4, AM, cell permeant\",\"mol_weight\":0,\"sku\":\"F14201\",\"url\":\"https://www.thermofisher.com/order/catalog/product/F14201\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"tables\",\"mutability\":\"\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"0_2\":\"\",\"0_3\":\"\",\"0_4\":\"\",\"0_5\":\"\",\"0_6\":\"\",\"1_0\":\"\",\"1_1\":\"\",\"1_2\":\"\",\"1_3\":\"\",\"1_4\":\"\",\"1_5\":\"\",\"1_6\":\"\",\"A_1\":{\"className\":\"_dt-bold\"},\"B_1\":{\"className\":\"_dt-bold\"},\"C_1\":{\"className\":\"_dt-bold\"},\"D_1\":{\"className\":\"_dt-bold\"},\"E_1\":{\"className\":\"_dt-bold\"},\"F_1\":{\"className\":\"_dt-bold\"},\"G_1\":{\"className\":\"_dt-bold\"}},\"colTitles\":[\"\",\"\",\"\",\"\",\"\",\"\",\"\"],\"colWidths\":[\"75.66666793823242\",100,\"96\",\"57\",100,100,100],\"data\":[[\"Reagent \",\"Reference \",\"Mol weight (mg/mmol)\",\"Solvent \",\"[Stock mM] \",\"[Working conc. µM] \",\"Medium\"],[\"Fluo-4-AM \",\"F14201 \",\"1096.95 \",\"DMSO \",\"1 \",\"5 \",\"Neurobasal\"]],\"guid\":\"EC517232B71B11EB95E60A58A9FEAC02\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"Reagent \",\"Reference \",\"Mol weight (mg/mmol)\",\"Solvent \",\"[Stock mM] \",\"[Working conc. µM] \",\"Medium\"],[\"Fluo-4-AM \",\"F14201 \",\"1096.95 \",\"DMSO \",\"1 \",\"5 \",\"Neurobasal\"]],\"rowHeights\":[23,23]}}}}",
+  "steps": [
+    "Prepare 1 millimolar (mM) Fluo-4 stock solution by adding 45 µL of DMSO to vial.",
+    "Prepare 5 µL aliquots of 1 millimolar (mM) Fluo-4 stock in PCR Eppendorf tubes and store them at -20 °C .",
+    "Take one 5 µL aliquot of 1 millimolar (mM) Fluo-4 and transfer to 995 µL of neurobasal medium (work at low light).",
+    "Transfer medium from selected wells of the 96 well plate with differentiated neurons to an Eppendorf tube.",
+    "Wash well by adding 150 µL of neurobasal medium, be careful not to detach of perturb the neurons.",
+    "Repeat the washing step 1 more time.",
+    "Add 120 µL of Fluo-4 AM [ 5 micromolar (µM) in neurobasal medium] into wells.",
+    "Incubate for 00:20:00 .",
+    "Remove the neurobasal medium with Fluo-4 AM, by transferring it to a waste container.",
+    "Wash well by adding 150 µL of neurobasal medium, be careful not to detach of perturb the neuron.",
+    "Remove the neurobasal medium to waste.",
+    "Add the old differentiation medium to the same well you took them from.",
+    "Incubate for 00:10:00 .",
+    "Acquire time lapse images in Nikon microscope using the Fluo-4 Calcium imaging acquisition protocol."
+  ],
+  "authors": [
+    "Edinson Lucumi Moreno"
+  ],
+  "creator": "hendersa",
+  "published_on": 1629398633,
+  "created_on": 1621261167,
+  "keywords": []
+}

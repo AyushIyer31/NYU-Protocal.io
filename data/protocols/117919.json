@@ -1,0 +1,27 @@
+{
+  "id": 117919,
+  "title": "CRISPR inhibition (CRISPRi) in hiPSCs",
+  "uri": "crispr-inhibition-crispri-in-hipscs-dxd77i9n",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l29ezqv1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"37s5a\",\"text\":\"This protocol describes how to perform CRISPRi in hiPSCs \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "To design the silencing of the expression of the desired genomic target in hiPSCs, the protocol detailed in Johansson et al., 2022 was adapted. Single guide sequences were designed to recognise DNA regions near the transcription start site (TSS) of the chosen locus according to the GPP Portal (Broad Institute) .",
+    "The guide sequences were cloned into a deadCas9-KRAB-T2A-GFP lentiviral backbone, pLV hU6-sgRNA hUbC-dCas9-KRAB-T2a-GFP, a gift from Charles Gersbach ( Addgene plasmid #71237 RRID:Addgene_71237 ), using annealed oligos and the BsmBI cloning site. To see the detailed protocol for the gRNA cloning, see CRISPR gRNAs cloning protocol .",
+    "Lentiviral vectors were produced from the plasmids according to the protocol published by Zufferey et al., 1997. Briefly, HEK293T cells were grown to a confluency of 70 – 90% for lentiviral production. Third-generation packaging and envelope vectors (pMDL, psRev, and pMD2G) together with Polyethyleneimine (PEI Polysciences PN 23966, in DPBS (GIBCO) were used in conjunction with the lentiviral plasmids previously generated. The lentivirus was harvested 2 days after transfection. The media was collected, filtered and centrifuged at 25000 x g, 4 °C, for 01:30:00 . The supernatant was removed from the tubes and the virus was resuspended in PBS and left at 4 °C . The resulting lentivirus was aliquoted and stored at 80 °C .",
+    "The iPSCs were then transduced with MOI 10 of LacZ control and two DNA-targeting gRNAs, which led to three separate conditions: LacZ control-, CRISPRi g1-, and CRISPRi g2- transduced cells. ! It is important to design at least 2 gRNAs for the desired target sequence to minimise off-target effects.",
+    "If targeting a unique genomic sequence, the gRNAs efficiency can be validated using standard quantitative real-time RT-PCR. Briefly, total RNA was first extracted using the miniRNeasy kit (QIAGEN), and cDNA was generated using the Maxima First Strand cDNA Synthesis Kit (Thermo Scientific). Quantitative qPCR was performed using SYBR Green I master (Roche) on a LightCycler 480 (Roche). The 2-ΔΔCt method was used to normalise expression to control, relative to housekeeping genes GAPDH and B-ACTIN expression.",
+    "To select the successfully transduced cells expressing the vector we leveraged the GFP gene expressed by the employed vector as follows. 7 days post transduction, cells were detached with Accutase (75 ml/cm 2 ; GIBCO), resuspended in iPS media (StemMACS iPS-Brew XF and 0.5% penicillin/streptomycin (GIBCO)) containing RY27632 (10 μM) and Draq7 (1:1000) and strained with a 70μm filter. Gating parameters were determined by side and forward scatter to eliminate debris and aggregated cells. The GFP-positive gates were set using untransduced iPSCs. The sorting gates and strategies were validated via reanalysis of sorted cells (&gt; 95% purity cut-off). 200.000 GFP-positive/Draq7-negative cells were collected per sample, spun down at 400g for 5 min and resuspended in iPS media containing RY27632 (10 μM) and either expanded or frozen down for further use."
+  ],
+  "authors": [
+    "anita.adami",
+    "Laura Castilla-Vallmanya"
+  ],
+  "creator": "Anita Adami",
+  "published_on": 1736360287,
+  "created_on": 1736342244,
+  "keywords": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": 28873,
+  "title": "E. coli and B. subtilis Colony PCR",
+  "uri": "e-coli-and-b-subtilis-colony-pcr-8fhhtj6",
+  "doi": "dx.doi.org/10.17504/protocols.io.8fhhtj6",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Prepare a PCR master mix for 9 reactions, as follows: %s %s 1x Reaction (Volume; µL)9x Reactions (Volume; µL)Sterile MilliQ Water872Red Taq 2x Master Mix(1.5 mM MgCl2)1090F Primer (10 µM)19R Primer (10 µM)19Total Volume20180",
+    "Aliquot 20 µL of the master mix in 8 tubes of a PCR strip.",
+    "Transfer cells from a single colony (8 in total) using a sterile P2 pipette tip or inoculating loop",
+    "Run thermocycler using the following program (extension for 1.5 kb insert): %s %s StepTemp (°C)Time (mm:ss)Purpose1953:00Initial Denaturation25 cycles of Steps 2 to 4:2950:20Denaturation3570:30Annealing4721:00Extension5725:00Final Extension64∞Storage Extension time may vary depending on insert size",
+    "Run samples on a gel at 80-150 V until the dye line is approximately 75-80% of the way down the gel. A typical run time is about 1-1.5 hours, depending on the gel concentration and voltage."
+  ],
+  "authors": [
+    "Igem Dusseldorf"
+  ],
+  "creator": "Igem Dusseldorf",
+  "published_on": 1571413106,
+  "created_on": 1571409424,
+  "keywords": []
+}

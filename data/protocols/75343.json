@@ -1,0 +1,25 @@
+{
+  "id": 75343,
+  "title": "High Throughput Ligand Interaction Profiler ",
+  "uri": "high-throughput-ligand-interaction-profiler-cmtpu6mn",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l27njqg1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"4qq3f\",\"text\":\"High Throughput Ligand Interaction Profiler (HT-LIP) is a web-based tool that runs on Google Colab, which allows users to predict ligand-protein interactions. HT-LIP can be used to screen large chemical libraries for potential drug candidates and can also provide  insights into potential ligand-protein interactions and identifies the interacting residues. HT-LIP can be useful in identifying potential binding sites and key residues for ligand-protein interactions, which can aid in drug discovery and protein-ligand interaction studies.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "In your Google Drive home directory, create a new folder called “data”. Inside this folder, add 3 files. (a) protein: in PDB format (b) ligand: in SDF format (c) reference ligand: in PDB format For example, the data folder created here, have files with the following names : (a) protein: 5Y15.pdb (b) ligand: compounds_for_ml.sdf (c) reference: reference_ligand.pdb",
+    "Click on the URL provided below to get started. URL: Google Colab Notebook Now, you will be directed towards the Google Colab Notebook. Towards the LHS side of the notebook, from the “files” section, click on the “mount drive” option. Then, a cell will be created, run the cell. Then click on “Run Anyway” and select “Connect to Google Drive” and give access. Now from the “drive” option, check whether the “data” folder created in the above step is seen in “MyDrive”.",
+    "Below are the seven steps that need to be followed in order to get the Protein-Ligands Interactions. Step 1: Install RDKit software RDKit is an open source Chemoinformatics &amp; Machine Learning Software. It provides tools for different kinds of similarity search. To install RDKit, click on the run cell option beside the show code(in blue). In a few seconds RDKit will be installed. Step 2: Install dependencies Click on the run cell option beside the show code(in blue) to install the dependencies(libraries). The required libraries will be installed in a few seconds. Step 3: Load protein(in PDB format) The protein used here is 5Y15. To upload your protein of interest, change “5Y15” to that protein name in the “folder_name” section. Now run the cell. Step 4: Print smiles format Change “compounds_for_ml” to your ligand name in the “folder_name” and &#34;sdf&#34; section. Now run the cell. Here ligands are converted from SDF to SMILES format. The smiles format will be printed. Step 5: Load ligands(in SDF format) Change “compounds_for_ml” to your ligand name in the “folder_name” section(same as step 4). Run the cell. Following output will be obtained. Step 6: Load reference(in PDB format) Change “reference_ligand” to your ligand name in the “folder_name” section. Now run the cell. Following output will be obtained. Step 7: Download excel format for the interactions Download the excel file by running the cell. The downloaded excel file will be saved in the file section(LHS of colab notebook). Bouysset C, Fiorucci S. . J Cheminform 13 , 72 (2021). https://doi.org/10.1186/s13321-021-00548-6"
+  ],
+  "authors": [
+    "Akshay Uttarkar",
+    "Shreya Girish",
+    "Vidya Niranjan"
+  ],
+  "creator": "Vidya Niranjan",
+  "published_on": 1677172424,
+  "created_on": 1673851043,
+  "keywords": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": 99848,
+  "title": "BAF_Protocol_010 Metabolomics LC-MS(/MS): Vanquish UPLC and Orbitrap ID-X",
+  "uri": "baf-protocol-010-metabolomics-lc-ms-ms-vanquish-up-ddrg253w",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l629ddgqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"4jp7f\",\"text\":\"This protocol is the basic LC and MS running parameters for metabolite runs. The samples typically have fewer components (ions) than proteomics so the gradients are shorter and most molecules are singly charged. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"8oc8v\",\"text\":\"These are our general settings as a starting point for untargeted metabolomics experiments. Specific adjustments need to be made to meet specific samples or type of data required.\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"a3c7c\",\"text\":\"Thermo Orbitrap ID-X - FETD1-10001\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2uba1\",\"text\":\"Thermo Vanquish\\nDuo UHPLC \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d8pi1\",\"text\":\"Waters ACQUITY UHPLC BEH C18 1.7 um, 2.1 x 150 mm -\\n186002353\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"afcsg\",\"text\":\"Thermo Optima 0.1% FA (formic acid) in water -  LS118-4\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dcnnv\",\"text\":\"Thermo Optima Methanol - A456-212\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5e8pu\",\"text\":\"Thermo Autosampler\\nvials 0.25 mL – 14-823-136\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"76vbj\",\"text\":\"Thermo Orange\\ncaps – 14-823-380\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vic\",\"text\":\"Fisherbrand Standard Pipette Tips (200 uL - Yellow) – 53503-065\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6bcpb\",\"text\":\"Cambridge Isotope Laboratories QRESS heavy labeled standards -  MSK-QRESS-KIT\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Suspend dried metabolite extracted samples with 100 µL of 0.1% Formic acid in water containing 100X diluted Metabolomics QRESS heavy labeled standards.",
+    "Vortex, microfuge for 00:15:00 at max speed, and take off 50 µL into autosampler vial (do not touch bottom of tube).",
+    "Make sure there is no air in the bottom of the vial, carefully add the vial into the autosampler of the UPLC Vanquish system.",
+    "In the sequence setup view of the Xcalibur software include each sample in a row filling with: file name, sample ID, folder directory to save results, directory for the acquisition method, vial position and injection volume. Normally use 20% of sample.",
+    "Speed limits: draw speed 1 uL/s; dispense speed 1 uL/s. Injection wash parameters: Wash mode: both; Wash time: 10.0s; Wash speed: 10.0 uL/s.Column temperature: 30 °C Run time: 00:15:00 Solvents: %A1: Water, 0.1%FA. %A2: Methanol, 0.1% FA. Upper limit pressure: 1500 bar Flow = 0.250 ml/min Equilibration: -3min, 0% B, curve = 5. Gradient (all steps curve = 5): 0 min 5%B; 8 min50% B; 8-9 min 98% B; 9-13 98% B; 13-13.1min 0%B; 13.1-15 min 95%B.",
+    "Ion Source Type: H-ESI Spray Voltage Positive 3500V Spray Voltage Negative 2500V Ion Transfer Tube Temperature 275 °C , Sheath gas 35, Aux Gas 7, Sweep gas 2, Vaporizer Temp 320 °C Default charge state: 1",
+    "Scan 67-1000 m/z, resolution 60K, Quadrupole isolation: True, normalized AGC 25%, RF lens 35%, Max. Inj. Time 50ms, 1 microscan, Data Type Profile, Polarity Positive or Negative (create two methods one for Positive acquistion and another for Negative acquisition)",
+    "Min intensity 2E4, Dynamic exclusion - 1 time, 2.5s, 10ppm, isolation 1.5 m/z, resolution 15K, HCD NCE stepped 20, 35, 50%, Max. Inj. Time 25ms, normalized AGC 25%, 1 microscan, Data Type Centroid."
+  ],
+  "authors": [
+    "Nicholas Sherman"
+  ],
+  "creator": "Nicholas Sherman",
+  "published_on": 1717085177,
+  "created_on": 1715784833,
+  "keywords": []
+}

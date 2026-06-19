@@ -1,0 +1,37 @@
+{
+  "id": 238193,
+  "title": "Immunohistochemistry and immunofluorescence protocols",
+  "uri": "immunohistochemistry-and-immunofluorescence-protoc-hkurb4wv7",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewov1ko5kgr2/v1",
+  "description": "{\"blocks\":[{\"key\":\"bb00m\",\"text\":\"A detailed description for immunohistochemistry (IHC) and immunofluorescence (IF) experiments. The expected results can clearly demonstrate the indicated proteins and their phosphorylation levels, such as NPRL2 and pS235/236-S6.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Formalin-fixed paraffin-embedded specimens or organoids are cut into 5-10 μm thick sections.",
+    "The sections are deparaffinized, rehydrated, and blocked with 3% H 2 O 2 for 15 min.",
+    "Tissue sections are permeabilized with PBS-T (containing 0.25% Triton X-100) for 30 minutes and blocked with 5% goat serum in PBS for 60 minutes.",
+    "To remove melanin in immunohistochemistry of melanoma tumor tissues, sections are emersed in 0.5% permanganate potassium solution at 55°C for 3 minutes, then treated with 1% oxalic acid solution for 3 cycles of 30 seconds followed by water rinse for 1 minute.",
+    "Tissue antigens are retrieved by heating the sections in a pressure cooker for 150 sec.",
+    "After cooling to room temperature, each section is incubated with primary antibody at 4°C overnight, and then with goat secondary antibody against rabbit and mouse immunoglobulins (DAKO).",
+    "For visualization, 1-5% 3,3&#39;-diaminobenzidine tetrahydrochloride is used as a chromogen.",
+    "After washing with water, the sections are counterstained with hematoxylin.",
+    "Negative control slides with the primary antibody replaced with phosphate-buffered saline (PBS) are included.",
+    "All immunostained sections are independently evaluated by two pathologists blinded to the patients&#39; clinical status, with interobserver discrepancy being less than 10%. In the case of discrepancy, a consensus interpretation is reached with a third pathologist.",
+    "The quantification method is based on cell number counting, or multiplicative index of the average staining intensity (score 0-3) and extent of staining (score 0, 0%; 1, 0-25%; 2, 25-50%; 3, 50-75%; 4, 75-100%) in the cores (such as pS6 IHC score), yielding a staining index ranging from 0 (no staining) to 12 (extremely extensive, extremely strong staining).",
+    "Primary antibodies are diluted in TBS-T (containing 0.1% Tween-20) (dilution 1: 25~200) and incubated at 4°C overnight, followed by incubation with appropriate secondary antibodies",
+    "Coverslips are mounted on slides using anti-fade mounting medium with DAPI.",
+    "Images are acquired with a ZEISS 880 Microscope.",
+    "For multiple-immunofluorescence for samples array, Opal 7-color Manual IHC Kit (NEL801001KT, PerkinElmer) is used and performed according to manufactures instructions.",
+    "Fluorescence signal s were detected by Vectra Polaris Automated Quantitative Pathology Imaging System(PerkinElmer) and the data was analyzed by StrataQuest (ver. 7.0.1.176, TissueGnostics).",
+    "Pearson&#39;s correlation in cells were quantified by the Coloc2 plugins in ImageJ (ver. 1.53q)."
+  ],
+  "authors": [
+    "Junyu Xiang"
+  ],
+  "creator": "Junyu Xiang",
+  "published_on": 1767889497,
+  "created_on": 1767858136,
+  "keywords": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": 85310,
+  "title": "Co-immunoprecipitation using GFP-trap",
+  "uri": "co-immunoprecipitation-using-gfp-trap-cxi6xkhe",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvr36o2vmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"3p019\",\"text\":\"Here, we describe performing co-immunoprecipitation experiments in HEK293 cells using GFP-trap beads\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "See &#34;Protocol: HEK293 cell culture for co-immunoprecipitation experiments&#34; for preceding culture and transfection. For the present study, HEK cells were transfected with EGFP-tagged bait proteins. Prey proteins were either endogenous or transfected with HA- or SNAP-tags.",
+    "Prepare wash buffer: A B 1 Tris-HCl pH 7.5 10 mM 2 NaCl 150 mM 3 EDTA 0.5 mM 4 Triton-X (optional) 0.4% Triton-X should be included for prey proteins where appreciable non-specific binding is observed in the EGFP vector condition.",
+    "Prepare lysis buffer. Lysis buffer composition differed for experiments needing lambda phosphatase treatment",
+    "Lysis buffer for non-lambda phosphatase experiment: A B 1 Tris-HCl pH 7.5 10 mM 2 NaCl 150 mM 3 EDTA 0.5 mM 4 NP-40 0.5% 5 PMSF 1 mM 6 TAME 0.01 mg/mL 7 Leupeptin 0.01 mg/mL 8 Pepstatin A 0.001 mg/mL",
+    "Lysis buffer compatible with lambda phosphatase experiment: A B 1 1x NEBuffer for Protein MettaloPhosphatases (New England BioLabs) 1x 2 NP-40 0.5% 3 Leupeptin 0.01 mg/mL 4 ddH2O To desired volume",
+    "24 hours after transfection, wash HEK cells twice in ice-cold PBS and lyse in appropriate lysis buffer. Use 600 µL lysis buffer per experimental condition (pooled across the three 10cm dishes).",
+    "Clarify lysates at 10 x g at 4 degrees C for 10 minutes",
+    "Wash 25 µL GFP-trap beads per experimental condition in 500 µL wash buffer, in low protein binding Eppendorf tubes under rotating agitation. For large protein complexes, GFP-Trap Magnetic Particles M-270 should be used instead of GFP-Trap Magnetic Agarose beads",
+    "Equilbrate beads in lysis buffer for 5 min at 4 degrees C under rotating agitation",
+    "Incubate beads with clarified lysate (or lambda phosphatase-treated lysate) for 1 hour at 4 degrees C under rotating agitation",
+    "For lambda phosphatase experiments: add 60 µL of 10 mM MnCl 2 and 24 µL lambda phosphatase (2,400 units; New England BioLabs) for a final reaction volume of 600 µL per experimental condition. For conditions that are lambda phosphatase-negative, add 24 µL ddH 2 O instead",
+    "Wash beads three times for 5 min in wash buffer at 4 degrees C under rotating agitation",
+    "Incubate at 30 degrees C for 30 minutes",
+    "Resuspend beads in 60 µL denaturing buffer, and boil for 10 minutes to release bound protein"
+  ],
+  "authors": [
+    "Dan Dou",
+    "Erika Holzbaur"
+  ],
+  "creator": "Dan Dou",
+  "published_on": 1690300609,
+  "created_on": 1689887986,
+  "keywords": []
+}

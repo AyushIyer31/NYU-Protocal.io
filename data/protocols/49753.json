@@ -1,0 +1,41 @@
+{
+  "id": 49753,
+  "title": " SYBR green RT-PCR assay  for the surveillance of SARS-CoV-2 variants of concern",
+  "uri": "sybr-green-rt-pcr-assay-for-the-surveillance-of-s-butznwp6",
+  "doi": "dx.doi.org/10.17504/protocols.io.butznwp6",
+  "description": "{\"blocks\":[{\"key\":\"24uqq\",\"text\":\"The emergence of SARS-CoV-2 variants with multiple shared mutations has been described to be more transmissible and could affect COVID-19 morbidity and mortality. Some of these variants, known as B.1.1.7 (originally described in the United Kingdom), B1.351 (originally described in South Africa), and P.1 (originally described in Brazil) have rapidly become dominant within their countries and require a vigorous public health response. Whole Genomic sequencing remains the gold standard method to identify the SARS-CoV-2 variant, even though this approach is laborious, time-consuming, and expensive. Here, we have developed a fast and simple SYBR green-based real-time RT-PCR assay that identifies a distinct signature affecting the Non-Structural Protein 6 (NSP6), a nine-nucleotides deletion leading to amino acid losses: Δ106S, Δ107G, and Δ108F. This NSP6 signature is present in the variants of concern (VOC) described above (B.1.1.7; B1.351; P.1) and has not been detected in other SARS-CoV-2 lineages. The new version has corrections made on the master mix and authorship. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"11aee\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8c9b3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"bou1c\",\"text\":\"Go Taq 1-step RT-qPCR System (Promega) A2060\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"461hc\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":[]},{\"key\":\"61kg6\",\"text\":\"Nuclease-free water\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3kcko\",\"text\":\"Primers \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5irfi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9taco\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":[]},{\"key\":\"h03i\",\"text\":\"Positive controls: (1) SARS-CoV-2 RNA from virus culture of the Brazilian variant P2  and (2) SARS-CoV-2 RNA from virus culture of the Brazilian variant P1. The SARS-CoV-2 RNA was kindly provided by the Respiratory Virus and Measles Laboratory – IOC (LVRS-IOC).\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"224iq\",\"text\":\"Applied Biosystems™ 7500 Real-Time PCR Systems (Thermo Fischer Scientific)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dgjtd\",\"text\":\"\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"caili\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8quuf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8ae40\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"file\",\"mutability\":\"\",\"data\":{\"forceSelection\":true,\"guid\":\"91BA17E8342A11EEAFD10A58A9FEAC02\",\"nestedSelector\":null,\"original_name\":\"GoTaq OneStep RT qPCR System Quick Protocol FB127.pdf\",\"placeholder\":\"\",\"raw_source\":\"\",\"source\":\"https://content.protocols.io/files/dfegbjtu7.pdf\"}},\"1\":{\"type\":\"tables\",\"mutability\":\"\",\"data\":{\"cellsMeta\":[],\"colTitles\":[\"\",\"\"],\"colWidths\":[100,\"247\"],\"data\":[[\"\",\"NSP6: ΔS106; ΔG107 e ΔF108 \"],[\"Primer name\",\"Sequence\"],[\"Forward\",\"5' -TGGTTGGATATGGTTGATACTAGTT-3'\"],[\"Reverse\",\"5'-AGCTGATGCATACATAACACAGT-3'\"]],\"guid\":\"3B9412A09ED311EBB7D9E360C0B2E626\",\"isJexcelDataFormat\":true,\"legend\":{\"blocks\":[{\"data\":[],\"depth\":0,\"entityRanges\":[],\"inlineStyleRanges\":[],\"key\":\"psl0\",\"text\":\"Primers details\",\"type\":\"unstyled\"}],\"entityMap\":[]},\"mergeCells\":[],\"printData\":[[\"\",\"NSP6: ΔS106; ΔG107 e ΔF108 \"],[\"Primer name\",\"Sequence\"],[\"Forward\",\"5' -TGGTTGGATATGGTTGATACTAGTT-3'\"],[\"Reverse\",\"5'-AGCTGATGCATACATAACACAGT-3'\"]],\"rowHeights\":[23,23,23,23]}}}}",
+  "steps": [
+    "Briefly vortex and centrifuge reagents before use.",
+    "Prepare 10 µM working stocks of the primers.",
+    "Thaw the GoTaq® qPCR Master Mix (Promega), Nuclease-Free Water, and primers working stocks.",
+    "Use the 10 µM working stocks to prepare the mix, containing: A B C D 1 2 Volume (per reaction) final concentration 3 GoTaq® qPCR Master Mix, 2X 7.5 µl 1x 4 GoScript™ RT Mix for 1-Step RT-qPCR (50X) 0.3 µl 1x 5 Primer Forward 0.15 µl 0.1 µM 6 Primer Reverse 0.15 µl 0.1 µM 7 Nuclease-free water 1.9 µl 8",
+    "Add 10µl to each weel or PCR tube.",
+    "Add 5 µl of RNA from positive controls 1 and positive control 2 to the correspondent well or PCR tube. Add 5 µl nuclease-free water to the negative control well or PCR tube. Mix by pipetting.",
+    "Add 5µl of extracted RNA (unknown sample) to the designated wells and mix by pipetting.",
+    "Seal plates and tubes.",
+    "Run the PCR with the following cycler conditions 7500 Real Time PCR System (ABI, 4351104) Real-Time",
+    "Data Evaluation Blue - mutant ΔS106; ΔG107 e ΔF108 Green - wild type Results Interpretation: %s %s"
+  ],
+  "authors": [
+    "Pedro Cardoso",
+    "Fernando do Couto Motta",
+    "Marilda Agudo Mendonça Teixeira de Siqueira",
+    "Daniela Tupy de Godoy",
+    "Rodrigo Brindeiro",
+    "Monica Barcellos Arruda",
+    "Elisabete Andrade",
+    "Marisa Ribeiro",
+    "Marcela Fontana-Maurell",
+    "Elaine Costa",
+    "Daniele Rocha",
+    "Patricia Alvarez"
+  ],
+  "creator": "Patricia Alvarez",
+  "published_on": 1620766325,
+  "created_on": 1620397414,
+  "keywords": []
+}

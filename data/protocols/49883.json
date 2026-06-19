@@ -1,0 +1,42 @@
+{
+  "id": 49883,
+  "title": "DNBSEQ-T7RS Sequencing protocol",
+  "uri": "dnbseq-t7rs-sequencing-protocol-bux3nxqn",
+  "doi": "dx.doi.org/10.17504/protocols.io.bux3nxqn",
+  "description": "{\"blocks\":[{\"key\":\"v29i\",\"text\":\"DNBSEQ-T7 is a high throughput sequencer developed by MGI (part of BGI Group). It can generate 1-6Tb of high quality data per day, for a wide range of applications including Whole Genome Sequencing,  Deep Exome Sequencing, Epigenome Sequencing, Transcriptome Sequencing, and targeted panel projects. Powered by DNBSEQTM Technology, DNBSEQ-T7 makes sequencing more efficient and productive with advances in biochemical, fluidics, and optical systems.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":317,\"length\":2}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Make DNB: use reagents from the DNB Making Kit and DNA library from user to make DNBs (DNA nanoballs) .",
+    "Load DNB: load DNBs onto the flow cell using reagents from the DNB Load Reagent Kit via the MGIDL-T7RS loader.",
+    "Prepare sequencing reagent kit: inspect, thaw the reagent kit and then add the required reagents, as well as fill the pure water container.",
+    "Load the Reagent Cartridge",
+    "Open the reagent compartment door and clean the inner walls with a clean microfiber wiper or lint-free paper moistened with laboratory-grade water. Keep the compartment clean and dry.",
+    "Place the sequencing cartridge into the upper low-temperature compartment and place the washing cartridge into the lower room-temperature compartment.",
+    "Close the doors of both the low-temperature compartment and room-temperature compartment, and then close the door of the reagent compartment. (see Figure 4-1):",
+    "Enter Sequencing Interface: Enter the user name &#34;user&#34; and password &#34;123&#34;, click &#34;Log in&#34; to enter the main interface (see Figure 5-1)",
+    "Load the flow cell",
+    "Select A/B/C/D respectively according to the sequencing requirements. Click on “Sequencing” and select “New run” (see Figure 6-1)",
+    "Clean the loaded flow cell with a dust remover to ensure no visible dust is on the surface and back of the flow cell. Put the flow cell on the flow cell drive, and tap the flow cell drive control button to withdraw the flow cell drive. (see Figure 6-2):",
+    "Sequencing Parameters",
+    "The RFID reader can automatically read the ID information on the sequencing cartridge, washing cartridge and flow cell and display the information in the corresponding text box. If the reader fails, the information can be entered manually",
+    "Click on the “▼” behind the “Recipe” field. Select the appropriate sequencing recipe in the drop-down menu. If a customized recipe is required, select “Customize” in the drop-down menu to enter this into the interface.",
+    "Click on the “▼” in the red box and select the corresponding barcode sequence. If a customized barcode sequence is required, selected the inputted barcode sequence. Select whether split barcode and Dual barcode（stLFR FCL PE100 just select split barcode).",
+    "Click on the “Advanced settings” to enter the interface. Users can select whether the primer is “customized primer” and whether to perform “Auto wash”.",
+    "Review parameters: Click “Next” to review the parameters and ensure that all information is correct.",
+    "Start Sequencing",
+    "After confirming that all the information is correct, click “Start” and select “Yes”",
+    "When the screen appears as shown in Figure 9-1, the sequencing has started.",
+    "During sequencing, click on the “Sequencing information” interface and the selection of “Auto wash” can be changed.",
+    "When the screen appears as shown in Figure 9-2, the sequencing and wash process for this run are completed."
+  ],
+  "authors": [
+    "Hongfang Zhang"
+  ],
+  "creator": "Hongfang Zhang",
+  "published_on": 1622185461,
+  "created_on": 1620819402,
+  "keywords": []
+}

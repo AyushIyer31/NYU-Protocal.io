@@ -1,0 +1,32 @@
+{
+  "id": 15204,
+  "title": "Transformation of Phaeodactylum tricornutum by electroporation",
+  "uri": "transformation-of-phaeodactylum-tricornutum-by-ele-s4cegsw",
+  "doi": "dx.doi.org/10.17504/protocols.io.s4cegsw",
+  "description": "{\"blocks\":[{\"key\":\"45dln\",\"text\":\"Successful transformation of Phaeodactylum tricornutum (CMP632) by electroporation was achieved based on a modified version of Zhang \\u0026 Hu (2014). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":29,\"length\":26}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"b5lo0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"9ge2o\",\"text\":\"Materials needed for transformation                                                  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2oqqe\",\"text\":\"375 mM Sorbitol, filter sterilize and store at -20°C.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9t7v8\",\"text\":\"Plasmid DNA --\\u003e linearize with ScaI at 37°C (5’…AGT|ACT… 3’) (3’…TCA|TGA…5’)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ec2dh\",\"text\":\"Salmon sperm dna--\\u003e  denature the DNA by boiling for 1 minute, then place on ice\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3stms\",\"text\":\"f/2 medium + Si\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"eshk\",\"text\":\"solid medium (50% ASW containing f/2 nutrients, 1.2% agar + zeocin 75 µg/ml)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"ak27m\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "P. tricornutum (CCMP632) cells were grown axenically in f/2 + Si medium at 22°C and illuminated with 75 μmol photons m − 2 s − 1 , 12L:12D. For growth on solid medium, cultures were grown on 50% ASW containing f/2 nutrients, 1.2% agar.",
+    "pPha-T1/eGFP : carries the bleomycin-resistant gene ( sh ble ) under the fcpB promoter and eGFP gene ( egfp ) under the fcpA promoter. Kindly provided by Peter Kroth. pPhaT1 GenBank accession : AF219942, [Zaslavskaia et al. (2000). Transformation of the diatom Phaeodactylum tricornutum (Bacillariophyceae) with a variety of selectable marker and reporter genes. Journal of Phycology , 36 , 379-386]",
+    "Digest ~6 µg of pPha-T1/eGFP with ScaI for 2.5 hours. Then purify linearized plasmid (i.e. Macherey-Nagel Nucleo-Spin gel and PCR clean-up kit).",
+    "Grow P. tricornutum to a cell density of 5 × 10 6 cells/ml.",
+    "Harvest a total of 2 × 10 8 cells by centrifuging at 1500 g for 10 min at 4°C. Remove medium.",
+    "Chill a 0.2 cm electroporation cuvette on ice.",
+    "Wash cells three times with 1 ml 375 mM sorbitol (sterile and ice cold). If needed, spin between washes at 1500 g for 1-2 mins at 4°C. Before third wash, transfer cells to a 1.5 mL microcentrifuge tube, perform final sorbitol wash and then resuspend washed cells in 100 μl 375 mM sorbitol to a final density of 2 × 10 9 cells/ml.",
+    "Mix 100 μl aliquot of resuspended cells with 4 μg (0.2 μg/μl) of linearized plasmid DNA and 40 μg (10 μg/μl) of denatured salmon sperm DNA.",
+    "Incubate cells/linearized plasmid/salmon sperm DNA mixture on ice for 10 min, then transfer to the 0.2 cm electroporation cuvette.",
+    "Adjust Electroporation System to exponential decay and set the following parameters: 500 V field strength 25 μF capacitance 400 Ohm shunt resistance",
+    "After electroporation, immediately transfer cells to 15-ml conical Falcon tubes containing 10 ml f/2 medium. Allow cells to recover by incubating in low light (~ 30 μmol photons m − 2 s −1 ) for 24 hours before adding antibiotic selection. Incubate under normal culturing conditions for 24 hours then collect cells by centrifuging at 1500 g for 10 min and resuspending cells in 0.6 ml f/2 medium. Plate serial dilutions onto solid medium containing 75 μg/ml zeocin.",
+    "Colonies should start appearring after about 12-14 days."
+  ],
+  "authors": [
+    "Gina Filloramo"
+  ],
+  "creator": "Gina Filloramo",
+  "published_on": 1535548179,
+  "created_on": 1535544913,
+  "keywords": []
+}

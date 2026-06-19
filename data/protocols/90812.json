@@ -1,0 +1,27 @@
+{
+  "id": 90812,
+  "title": "Electron microscopy (EM) and quantification",
+  "uri": "electron-microscopy-em-and-quantification-c4w4yxgw",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvm3zm6l3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"fugfr\",\"text\":\"Electron microscopy (EM) and quantification\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Hippocampal neurons were plated at a density of60,000 cells/cm 2 . DIV-3 neurons were infected with lentivirusescarrying α-syn tagged at the C-terminus to mScarlet, or mScarlet alone(multiplicity of infection or MOI=2.5). The transduced neurons were cultured tomaturity (DIV17-DIV21) before imaging. The ~100 % infection efficiency of themScarlet-tagged constructs was confirmed before using the coverslip for EMexperiments.",
+    "EM embedding protocol for monolayer cultured cells was performedon ice. The coverslips were fixed in 2 % glutaraldehyde and in 0.1 M sodiumcacodylate (SC buffer) buffer for at least 60min at 4 °C, washed 3 min with 0.1M SC buffer (5 times), and postfixed in 1% osmium tetroxide (OsO4) diluted in0.1 M SC buffer for 30 min to 1hr.",
+    "The coverslips were then washed for 3 min (5times) with 0.1 M SC buffer, followed by a water rinse, sequential ethanoldehydration (20%, 50%, 70%, 90%, 2x100%) 1min each, and subsequent incubationwith dry acetone for 1 min at room temperature (2 times).",
+    "The samples were then incubated with a Durcupan:Acetone solution (50:50%) for 1hr in rotation,followed by incubation with 100% Durcupan for 1 hr (2 times). The cells werethen embedded using foil plates along with wood sticks in the embedding oven(overnight incubation).",
+    "60 nm ultrathin sections were cut with a diamond knifeand mounted on 300 mesh grids. Grids were post-stained with 2% of uranylacetate for 5 min and lead for 1 min. JEOL 1400 Electron Microscopy and Gatandigital Camera were used to obtain images.",
+    "For quantification of inter-vesicular (IV) distances between vesicles, weconsidered all the vesicles in the synapse encompassing 1µmx1µm. To mark eachvesicle, a line was drawn across the center of the vesicle, recording itsdiameter and its position.",
+    "These parameters were then fed into our algorithm on MATLAB (RRID:SCR_001622)( http://www.mathworks.com/products/matlab/), which gave the output of IV distancesfor a particular image. The IV distance for all images per condition was pooledtogether. This algorithm is available upon request."
+  ],
+  "authors": [
+    "Leonardo A Parra-Rivas"
+  ],
+  "creator": "Leonardo A Parra-Rivas",
+  "published_on": 1699785365,
+  "created_on": 1699784922,
+  "keywords": []
+}

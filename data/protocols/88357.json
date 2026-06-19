@@ -1,0 +1,40 @@
+{
+  "id": 88357,
+  "title": "Protocol for abscisic acid (ABA) extraction from plant seeds",
+  "uri": "protocol-for-abscisic-acid-aba-extraction-from-pla-c2idyca6",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbxnnqlpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"io0c\",\"text\":\"The plant hormone abscisic acid (ABA) regulates seed dormancy and germination. Here, we present a protocol for ABA extraction from plant seeds. We describe necessary steps required for preparation and extraction, followed by liquid chromatography-mass spectrometry (LC-MS/MS) analysis for ABA quantification.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9o22i\",\"text\":\"\\n\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4fq6s\",\"text\":\"Author Contributions\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":20}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3bot\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bogl7\",\"text\":\"S.A.-B. and J.Y.W. conceived the project. J.Y.W., and L.B. conducted experiments. \\nL.B., J.Y.W., and S. A.-B. wrote, reviewed, and edited the protocol. \\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2pmb3\",\"text\":\"Competing interests\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":19}],\"entityRanges\":[],\"data\":{}},{\"key\":\"epftl\",\"text\":\"\\nThe authors declare no competing interests.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"44o71\",\"text\":\"To prepare before to start:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":26}],\"entityRanges\":[],\"data\":{}},{\"key\":\"70sme\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5s078\",\"text\":\"Prepare   of working solution per sample: 100% Methanol spiked with   D6-ABA stock solution.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":8,\"length\":1},{\"key\":1,\"offset\":68,\"length\":1}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"amount\",\"mutability\":\"MUTABLE\",\"data\":{\"amount\":\"2\",\"error\":false,\"guid\":\"\",\"id\":0,\"label\":\"\",\"scientificNotation\":false,\"unit\":2}},\"1\":{\"type\":\"amount\",\"mutability\":\"MUTABLE\",\"data\":{\"amount\":\"1\",\"error\":false,\"guid\":\"\",\"id\":0,\"label\":\"\",\"scientificNotation\":false,\"unit\":1800}}}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"5johc\",\"text\":\"List of equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":17}],\"entityRanges\":[],\"data\":{}},{\"key\":\"22o0s\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8hrqm\",\"text\":\"Calibrated balance, \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f5etr\",\"text\":\"Grinder (Mixer Mill MM 400, RETSCH‱), \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":34,\"length\":1}],\"data\":{}},{\"key\":\"enu81\",\"text\":\"Sonicator (Branson 5510R-DTH Ultrasonic machine), \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"chn5e\",\"text\":\"ultra-centrifuge (Centrifuge 5424 R, EppendorfTM), \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"698te\",\"text\":\"speedVac (Concentrator Plus, EppendorfTM), \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ads6t\",\"text\":\"0.2 um filter (Non-Sterile Syringe Filter 13 mm; WhatmanTM UnifloTM), \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6megi\",\"text\":\"0.1 mL Micro-insert clear glass tube (fisher scientific), \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"193d7\",\"text\":\"1.5 mL LCMS vial.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"0A682DFB591E11EE95520A58A9FEAC02\",\"name\":\":registered:\"}}}}",
+  "steps": [
+    "Grind 7-8 seeds in a Safe-Lock 2.0 mL Eppendorf tube with 3-4 beads for 00:01:00 – frequency 25-26 Hz.",
+    "Weight 100 mg fine powder of ground seeds.",
+    "Add 1 mL of Standard solution in each tube.",
+    "Sonicate the samples for 00:15:00 .",
+    "Centrifuge for 14000 rpm, , 5 minutes , then transfer the supernatant to a new 2 mL Eppendorf tube.",
+    "Add another 1 mL of Standard solution.",
+    "Sonicate 00:15:00 .",
+    "Centrifuge for 14000 rpm, , 5 minutes .",
+    "Transfer the supernatant ( 2 mL ) to a 2 mL Eppendorf tube.",
+    "Dry the supernatant under vacuum by speedVac for 02:00:00 .",
+    "After evaporating the solvent, either keep the extracted samples at -20 °C or proceed to the next step.",
+    "Re-dissolve the final extract in 120 µL of acetonitrile : water [25:75 (v/v)] followed by 00:01:00 sonication.",
+    "Filter the re-suspended solution through a 0.22 µm filter into 0.1 mL micro-insert 29x5.7 mm clear glass tubes with inserted vials.",
+    "Tap the bottle to remove any bubbles.",
+    "ABA quantification is performed by LC-MS/MS using a UHPLC-Triple-Stage Quadrupole Mass Spectrometer (Thermo Scientific Altis) machine.",
+    "Chromatographic separation is achieved on the Hypersil GOLD C18 Selectivity HPLC Columns (150 × 4.6 mm; 3 μm; fisher scientific) with mobile phases consisting of water (A) and acetonitrile (B), both containing 0.1% formic acid, and the following linear gradient (flow rate, 0.5 mL/min): 0–10 min, 15%–100 % B, follow it by washing with 100 % B for 00:05:00 and equilibration with 15 % B for 00:02:00 .",
+    "Inject 10 µL of sample, maintain the column temperature at 35 °C for each run.",
+    "Set the MS parameters of Thermo ScientificTM AltisTM as follows: negative mode, ion source of H-ESI, ion spray voltage of 3000 V, sheath gas of 40 arbitrary units, aux gas of 15 arbitrary units, sweep gas of 0 arbitrary units, ion transfer tube gas temperature of 350 °C , vaporizer temperature of 350 °C , collision energy of 20 eV, CID gas of 2 mTorr, and full width at half maximum (FWHM) 0.4 Da of Q1/Q3 mass. The characteristic Multiple Reaction Monitoring (MRM) transitions (precursor ion → product ion) were the characteristic MRM transitions (precursor ion → product ion) were 263.2 → 153.1 for ABA; 269.2 → 159.1 for D6-ABA."
+  ],
+  "authors": [
+    "Jian You Wang",
+    "Lamis Berqdar",
+    "Salim Al-Babili"
+  ],
+  "creator": "Lamis Berqdar",
+  "published_on": 1695712024,
+  "created_on": 1695369283,
+  "keywords": []
+}

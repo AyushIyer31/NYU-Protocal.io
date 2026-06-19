@@ -1,0 +1,42 @@
+{
+  "id": 55885,
+  "title": "DNA Extraction from Bacteriophages",
+  "uri": "dna-extraction-from-bacteriophages-b2tmqek6",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"3d4nn\",\"text\":\"DNA/RNA extraction is performed using the QIAamp® Viral RNA Mini kit from Qiagen without the addition of carrier RNA to the AVL buffer and an additional nuclease step prior to extraction. The nuclease step is introduced to degrade any DNA/RNA that may be in the sample after the virome extraction protocol (dx.doi.org/10.17504/protocols.io.b2qaqdse) has been performed. Please note that even though the kit is a viral RNA extraction kit, viral DNA will also be extracted.\\n\\n\\n\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":42,\"length\":39}],\"entityRanges\":[{\"key\":0,\"offset\":307,\"length\":41}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"FA1BAC905C2111EC9AA60A58A9FEAC02\",\"url\":\"https://dx.doi.org/10.17504/protocols.io.b2qaqdse\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"8pic0\",\"text\":\"Before beginning this protocol, ensure that wash buffers have been properly diluted with ethanol and that the centrifuge is available and not chilled as low temperatures may impede ethanol evaporation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2jjqn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"175l1\",\"text\":\"Note that, unlike when using the kit directly, carrier RNA should not be added to the AVL buffer.\\n\\nThe Pierce Universal nuclease should be diluted 100 times (ie. by mixing 1 uL nuclease with 99 uL SM buffer/sterile water)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"21eja\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"49okq\",\"text\":\"Wear gloves when performing this protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"aq9eb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "For each sample, pipet 1 µL 100x diluted Pierce Universal Nuclease (2.5units/uL) to an empty 1.5 mL tube.",
+    "Transfer 140 µL of each sample from the outer chamber of the CentrisArt filter tube to the tube and mix by pipetting",
+    "Incubate for at least 00:03:00 at room temperature.",
+    "Add 540 µL AVL buffer to inactivate nucleases and lyse phage heads. Mix by pipetting or pulse vortexing.",
+    "Incubate 00:10:00 at room temperature",
+    "Add 560 µL absolute ethanol. Mix thoroughly by pulse vortexing.",
+    "Transfer 630 µL of the sample to a spin column",
+    "Briefly centrifuge samples with a microcentrifuge",
+    "Centrifuge 6000 x g, 21 °C, 1 minute or until all liquid has passed through the filter.",
+    "Change the collection tube and go to step #10 until all of the sample has passed through the filter.",
+    "Add 500 µL AW1 wash buffer to each spin column.",
+    "Centrifuge 6000 x g, 21 °C, 1 minute or until all liquid has passed through the filter",
+    "Add 500 µL AW2 wash buffer to each spin column.",
+    "Centrifuge 20000 x g, 21 °C, 3 minutes or until all liquid has passed through the filter.",
+    "Change the collection tube, then centrifuge 20000 x g, 21 °C, 1 minute to dry the membrane.",
+    "Place the spin column in a new RNAse-free 1.5 mL tube.",
+    "Incubate at room temperature for at least 00:01:00 .",
+    "Centrifuge 6000 x g, 21 °C, 1 minute",
+    "Discard the spin column and store eluate at -80 °C",
+    "Change gloves.",
+    "Briefly centrifuge samples with a microcentrifuge.",
+    "Add 30 µL AVE elution buffer directly onto the filter membrane in the spin column."
+  ],
+  "authors": [
+    "Frej Larsen"
+  ],
+  "creator": "Frej Larsen",
+  "published_on": 1639407678,
+  "created_on": 1639404269,
+  "keywords": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": 68267,
+  "title": "Image Visualization and Proteoform Assignment of MALDI-MSI from LCMS Experimental Databases",
+  "uri": "image-visualization-and-proteoform-assignment-of-m-cewjtfcn",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l2ode3v1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"b68cl\",\"text\":\"Scope:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"42bt\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d1ho3\",\"text\":\"The protocol describes a workflow for processing mass spectrometry imaging (MSI) data of high resolution intact proteins/proteoforms by MALDI. It involves the visualization and image generation using commercial software and also peak annotation using open source code.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bcn30\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7le93\",\"text\":\"Expected Outcomes:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ahcv0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"39vb3\",\"text\":\"Tabular output of matched proteoforms, as well as a trelliscope display of overlaid isotopic distributions allowing for the annotation of high-resolution accurate mass distributions of proteoforms.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"co23u\",\"text\":\"Both MALDI imaging and TDP by LCMS/MS needs to be completed and processed per other outlined protocols, packages need to be ready to use on desktop or laptop as well.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "The .xml file from the MALDI source registering pixel coordinates is renamed to that of the .RAW file generated from the instrument, both files are then transferred to a separate imaging workstation after being backed up to an internal database.",
+    "Proteoforms are visualized from the most abundant isotopologue, the monoisotopic mass from the centroid of this peak is used for determining the mass error of the annotated proteoform.",
+    "Next, the ProteoMatch tool is utilized to calculate and match isotoping profiles to spectra. Below is a general description of the pipeline: Required: Calculate molecular formulas and mass shifts with calculate_molform() Optional: Filter noisy peaks and the peak MZ range with filter_peaks() Required: Match reference isotope profiles to experimental data with match_proteoform_to_ms1(). Protein sequences without PTMs are accepted as well. Optional: Visualize results with plot_Ms1Match() or proteomatch_trelliscope(). ProteoMatch https://github.com/PNNL-HubMAP-Proteoform-Suite/ProteoMatch David Degnan Note: This utilizes spatially resolved LCM-TDP obtained via LCMS/MS, input files for experimental databases are outlined in other protocols and need to be processed prior to completing this annotation. A main pipeline function called run_proteomatch() can be used, and requires three files, which are all described below: A proteoform .csv file (see section 4.1) A .mzML file (see section 4.2) A .xlsx settings file (see section 4.3)",
+    "Prepare a .csv proteoform file with a “Proteoform” and “Protein” (any string). Proteoform annotation generally follow the ProForma convention. ProForma: A Standard Proteoform Notation.. Journal of Proteome Research. Post-translation modifications (PTMs) can be annotated either by name (UniMod definition) or mass shifts. An example proteoform annotation: &#34;M.(S)[Acetyl]GRGKGGKGLGKGGAKRHRK(VLRDNIQGITKPAIRRLAR)[28.0315]RGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTAMDVVYALKRQGRTLYGFGG.&#34; &#34;M.(S)[Acetyl]GRGKGGKGLGKGG &#34;M.(S)[Acetyl]GRGKGGKGLGKGGAKRHRK(VLRDNIQGITKPAIRRLAR)[28.0315]RGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTAMDVVYALKRQGRTLYGFGG.&#34; AKRHRK(VLRDNIQGITKPAIRRLAR)[28.0315]RGGVKRISGLIYEETRGVLKVFLENVIRDAVTYTEHAKRKTVTAMDVVYALKRQGRTLYGFGG.&#34;, The periods are marking the starting and ending residues of the protoeform, which is used by TopPIC. The residues left to the first period and right to the second period (if any) are removed in the formula generation. Custom definition can be created by updating the backend glossary on github (ProteoMatch/inst/extdata/Unimod.csv) or by submitting an issue request on the github page.",
+    "The last parameter in the run_proteomatch() function is to indicate the output directory. Note that the main pipeline function run_proteomatch() will execute only if the correct files are added.",
+    "These files are then imported into SCiLS Lab Pro (v.2021c) for preliminary visualization.",
+    "Binning parameters within other versions have been noted to alter isotopic distributions and over- or under-bin peaks over the broad mass range, automatic parameters within 2021c were found to be ideal in most cases, as the peak width within these analyses change over the broad range of mass-to-charge values.",
+    "Prepare a. mzML file by converting the .RAW with MSConvert and the `peak picking -1` flag enabled.",
+    "A .xlsx settings file will also need to be provided. For a template, see github (ProteoMatch/inst/extdata/Defaults.xlsx).",
+    "For consistency, peak lists are imported into SCiLS Lab to export a .imzML for ingestion.",
+    "As the pipeline runs, the following files will be generated: a .csv with molecular formulas, a .csv with filtered peaks, a .csv with matched peaks, and the trelliscope display of best matches (Pearson Correlation &gt;= 0.7). This value can be modified in the settings .xlsx file row “CorrelationMinimum.” Further details about each of the functions can be explored in the R documentation or by exploring the ProteoMatch vignettes (using the Vignettes() function)."
+  ],
+  "authors": [
+    "David J Degnan",
+    "Kevin J Zemaitis",
+    "Dusan Velickovic",
+    "Mowei Zhou",
+    "Ljiljana.PasaTolic"
+  ],
+  "creator": "Kevin J Zemaitis",
+  "published_on": 1660283456,
+  "created_on": 1659724288,
+  "keywords": []
+}

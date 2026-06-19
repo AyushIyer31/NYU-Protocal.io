@@ -1,0 +1,29 @@
+{
+  "id": 102307,
+  "title": "FASP-IP",
+  "uri": "fasp-ip-df6b3ran",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g7156kgwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"1sdu4\",\"text\":\"The Filter-Aided Sample Preparation (FASP) protocol enables efficient protein digestion and cleanup using membrane filters, eliminating detergents and contaminants prior to mass spectrometry. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4se6r\",\"text\":\"Ensure all liquid has passed through the filter before proceeding to the next step.The membrane should remain visibly moist — it must have a wet sheen but never be completely dry. Drying can cause protein loss, membrane damage, or reduced recovery during subsequent washes and digestion steps.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"49kqh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"db0m\",\"text\":\"ABC must be made fresh the same day of the experiment. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"acm3u\",\"text\":\"Urea will precipitate if exposed to high temperatures and prevent carbamylation\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"a505a\",\"text\":\"Solutions: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":11}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ja0k\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dhdu9\",\"text\":\"DTT solution: 25 mM DTT in 50 mM ABC.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"15vfb\",\"text\":\"Precipitation buffer: 8M urea in 50 mM ABC\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"58r4m\",\"text\":\"IAA solution: 55 mM IAA in 8M urea in 50 mM ABC. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9iq99\",\"text\":\"ABC solution: 50 mM ABC\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"67l8j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"42g6j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"59de3\",\"text\":\"Materials:\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1p61p\",\"text\":\"FASP tubes: VN01H22 Sartorius\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fhct5\",\"text\":\"\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6u727\",\"text\":\"\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"85tf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Add DTT solution to the sample for a final concentration of 25 mM. Incubate at 80ºC for 15 min.",
+    "Wait for the sample to cool down. Add urea to the sample to have a final concentration of 8M. This can be either directly adding the urea powder to the solution, or diluting 5x with 8M urea in 50 mM ABC.",
+    "Spin sample through a 30k spin column until all the liquid goes through the filter, 15000r cf for 15.",
+    "Add 100 µL of 55 mM IAA to the column. Incubate at Room temperature for 20 min in the dark.",
+    "Spin through column at 15000 rcf for 15min.",
+    "Wash with 100 µL of 8 M urea in ABC. Spin through column at 15000 rcf for 15-20 min.",
+    "Wash twice with 100 µL of ABC. Spin through column at 15000 rcf for 15min.",
+    "Make trypsin solution by adding 20 µL of 0.1 % TFA to a trypsin vial. Add 980 µL of ABC.",
+    "Place column into a new tube and add 100 µL of freshly prepared trypsin solution. Wrap the top of the tubes wit parafilm and incubate at 37 ºC O/N. Use a wet paper towel underneath the Eppendorf rack to minimise evaporation."
+  ],
+  "authors": [
+    "Cristina CARDENAL PERALTA"
+  ],
+  "creator": "Cristina CARDENAL PERALTA",
+  "published_on": 1761307255,
+  "created_on": 1719236786,
+  "keywords": []
+}

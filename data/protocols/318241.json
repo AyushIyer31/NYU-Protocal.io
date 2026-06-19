@@ -1,0 +1,32 @@
+{
+  "id": 318241,
+  "title": "CRISPRa screen analysis to identify CCRs associated with DE genes",
+  "uri": "crispra-screen-analysis-to-identify-ccrs-associate-j2z9cqf97",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4mex2lo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"316l8\",\"text\":\"To identify and validate competent chromatin regions (CCRs) of the GATA6, EOMES, SOX17, and MIXL1 gene using a CRISPR activation (CRISPRa) screening approach in human embryonic stem cells (hESCs).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "To identify the competent chromatin regions (CCRs) associated with GATA6, EOMES, SOX17, and MIXL1, the gRNA sequencing reads for the positive (i.e., cells expressing any of the 4 genes after CRISPRa interrogation) and NGS obtained the negative FACS-sorted fraction, and the following analysis was performed for each gene, respectively.",
+    "First, off-target gRNAs were filtered out using CRISPOR, as previously reported.",
+    "For each replicate, after adding pseudocount=1000 to the read counts, log fold change values between the positive and the negative sorted fractions were calculated as described below (&#34; Read count normalization and computing fold changes &#34;). See the Method section of Pulecio 2026 Functional chromatin signatures premark future lineage-specific enhancers.",
+    "For this analysis, the log fold change values of individual gRNAs were used instead of the moving average; in other words, window i is the ith gRNA, and the notation in &#34; Calculating the moving average &#34; holds for N=1. See the Method section of Pulecio 2026 Functional chromatin signatures premark future lineage-specific enhancers.",
+    "Then, the significance and reproducibility of each gRNA were quantified as described in &#34; Quantifying significance and reproducibility &#34;. See the Method section of Pulecio 2026 Functional chromatin signatures premark future lineage-specific enhancers.",
+    "Significant gRNAs were selected based on their significance in each replicate and reproducibility between the replicates: gRNA i is discarded if Z_i^Ι &lt; 1 or Z_i^ΙΙ &lt; 1 or IDR_i &gt; 0.05.",
+    "We defined a genomic region for each group of nearby significant gRNAs, extended until there were none closer than 100bp.",
+    "Finally, we identified CCRs by extending the resulting regions by 150bp around the center and merging the overlapping regions.",
+    "We identified non-CCRs by subtracting the CCRs from the differential ATAC peaks between the ESC and DE stages that were targeted by the screen: ATAC peaks and parts of the ATAC peaks that did not overlap CCRs and were longer than 150bp were considered non-CCRs.",
+    "gRNA enrichment for each interrogated region and the final list of CCRs and non-CCRs are provided in Tables S2 and S3. See the supplemental material section of Pulecio 2026 Functional chromatin signatures premark future lineage-specific enhancers."
+  ],
+  "authors": [
+    "Julian Pulecio",
+    "Michael Beer",
+    "Danwei Huangfu"
+  ],
+  "creator": "Gary Yang",
+  "published_on": 1781657716,
+  "created_on": 1780195550,
+  "keywords": []
+}

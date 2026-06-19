@@ -1,0 +1,35 @@
+{
+  "id": 51054,
+  "title": "Chemically Competent Cell Preparation [Calcium Chloride Method]",
+  "uri": "chemically-competent-cell-preparation-calcium-chlo-bv4nn8ve",
+  "doi": "dx.doi.org/10.17504/protocols.io.261ge4k8dv47/v1",
+  "description": "{\"blocks\":[{\"key\":\"1odek\",\"text\":\"This protocol is a low-cost approach for preparing competent cells using 0.1M CaCl2 solution which is useful in cases where commercial competent cells are unaffordable, it is challenging to receive products on dry ice or you do not have an ultra low temperature freezer.\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":82,\"length\":2}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"dqvkr\",\"text\":\"Maintain aseptic technique at all point during this experiment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"852ed\",\"text\":\"Disinfect your bench and pipettes using bleach or 70% isopropanol solution \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"dkdh3\",\"text\":\"Keep materials for this experiment cold as much as possible in situations where you're not using a cold centrifuge\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"1i4n5\",\"text\":\"0.1M ice cold CaCl2 Solution \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":18,\"length\":2},{\"style\":\"sub\",\"offset\":28,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"a0jcq\",\"text\":\"Sterile microcentrifuge tubes\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":0,\"length\":29}],\"entityRanges\":[],\"data\":{}},{\"key\":\"9d8vb\",\"text\":\"Pipettes\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"c8ul\",\"text\":\"LB broth\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6jtda\",\"text\":\"LB agar\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":0,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"99ucd\",\"text\":\"Cold centrifuge (4 deg Celsius) \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1r595\",\"text\":\"E. coli \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Plate an innoculum of Escherichia coli (e.g. BL21(DE3), JM109) glycerol stock on LB agar without antibiotics. Addgene. Streaking and Isolating Bacteria on an LB Agar Plate. https://www.addgene.org/protocols/streak-plate/ There are no antibiotics in the culture, so it will be prone to contamination. Use good aseptic technique at all times! Source: CDC Public Health Image Library via Wikimedia Commons , in the Public Domain",
+    "Pick and transfer a discrete single colony of E. coli into 10 ml LB broth using a sterile innoculation loop or toothpick.",
+    "Sub-culture the overnight culture by adding 500 µL into 50 mL LB broth (i.e. a 1:100 diution) and shake at 140 rpm, 37 °C, 2 hours",
+    "Keep the culture On ice and only mix gently while harvesting the cells, avoid vigorous shaking.",
+    "Pipette 1 mL culture into a 1.5 mL microcentrifuge tube and centrifuge at 8000 rpm, 4 °C, 5 minutes . If you have a centrifuge that can fit larger tubes, this will speed up the process and avoid multiple steps of pipetting and centrifugation. It is important to keep the cells close to °C during this step and all subsequent steps. If you do not have a refrigerated centrifuge, you can try: putting the rotor in the fridge or freezer prior to use putting the whole centrifuge in a cold room or walk-in fridge keeping centrifugation time to the minimum needed to form a pellet that is compact enough not to break apart while you discard the supernatant.",
+    "After each centrifugation, discard the supernatant making sure not to dislodge the cell pellets and repeat previous step as needed to harvest more cells. If using 1.5 mL tubes, we recommend repeating 3-5 times.",
+    "Resuspend the harvested cells in 1 mL ice cold 0.1 Molarity (M) calcium chloride (CaCl 2 ) solution.",
+    "Incubate On ice for 00:30:00",
+    "Centrifuge to pellet the cells at 8000 rpm, 4 °C, 5 minutes",
+    "Finally, gently resuspend the cells in 500 µL ice cold 0.1 Molarity (M) calcium chloride (CaCl 2 ) solution. You can also supplement the CaCl 2 solution with 15 % v/v glycerol if you wish to store the cells at -80 °C . They should then remain competent for at least 1 year. If you do not add glycerol, you must use the cells immediately. Competent cells are not generally stable at -20 °C",
+    "Pipette 50 µL into sterile, ice-cold 1.5 mL microcentrifuge tubes to use immediately for transformation or for storage at -80 °C . It is good practice to quantify the transformation efficiency of your competent cells each time you make a batch by transforming them with a known amount (say 1 µL of 50 ng/µL) of plasmid that contains a positive selection marker and counting the number of transformant colonies. This will help track any discrepancies and ensure you get consistent results.",
+    "Incubate the culture overnight in a shaker incubator at 140 rpm, 37 °C, 12 hours",
+    "Incubate the plate 37 °C Overnight Invert the plate(s) downward when incubating overnight. This is to prevent condensed water in the plates flooding the LB agar and smearing your growing bacteria.",
+    "Monitor OD 600 every 30 min using a photometer or McFarland Standards until OD 600 = 0.3 Take particular care when aspirating the culture that it does not get contaminated as your media does not contain antibiotics. Aspirate over a Bunsen burner or in a microbiological safety cabinet or use other measures to ensure excellent aseptic technique."
+  ],
+  "authors": [
+    "Harry Akligoh",
+    "Jennifer Molloy"
+  ],
+  "creator": "Harry Akligoh",
+  "published_on": 1648601236,
+  "created_on": 1624625530,
+  "keywords": []
+}

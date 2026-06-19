@@ -1,0 +1,30 @@
+{
+  "id": 65125,
+  "title": "BTI plant phenotyping system: Raspi computer and image collection",
+  "uri": "bti-plant-phenotyping-system-raspi-computer-and-im-cbudsns6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlkk156l5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"9386j\",\"text\":\"Instructions on how to set up automated synching between Raspberry Pi operated PhenoRig and the server through WiFi connections \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Here, we download the archived RaspiOS to support the camera mode of Raspi camera. Then we used an image installer (eg: Etcher ) to install the system into a micro-SD card.",
+    "Please use a router to set up the internet (WIFI). Here we use the LINKSYS app as an example to show the necessary configuration : For example : Log in to the system using the following ID and password:",
+    "To provide easy access to check information on each raspi. Please use ssh proxy to connect each raspi computer to your PC and working server. Here, we use the WinSCP to connect the device. Download the WinSCP: https://winscp.net/eng/index.php",
+    "Check the devices connected to the internet by checking the &#34; Local Network &#34; icon under the &#34; Status &#34; tab. Further, click the &#34; DHCP Client Table&#34; to check each device. NOTE: Please make sure that the &#34; Client name&#34; on LINKSYS matched the &#34;HostName&#34; of Raspi computer.",
+    "Connect Raspi to PC Click &#34;New Sites&#34; and manually create the address as follows. Please make sure the Host Name and Port Number match the record from the step above and click Login to reach the connection.",
+    "Connect Raspi to the SERVER Using any existing users of SERVER in lab to login first. For example, use the Raspis user ID to log in. ( If using SSH command: ssh -p 12345 Raspis@***.***.***.**) To log in to specific Raspi, use the ssh command to log in as same as the IP address and port number above. For instance, to connect RaspiR with SERVER ssh -p 9005 pi@***.***.***.**",
+    "Using ssh command to transfer files by crontab Please install &#34;sshpass&#34; first using the following link: https://gist.github.com/arunoda/7790979 IMPORTANT!: Please use the ssh command to connect from host to client, as well as the client to host from two sides (As known as a handshake). Otherwise, the &#34; sshpass &#34; fails to transfer files. Using RaspiR as an example: Login to VAHS first and type in: ssh -p 9005 pi@.***.**.** Login to raspiR then and type in: ssh -p 14817 Raspis@***.***.***.***",
+    "The code is used to launch each new experiment and realize the data transfer from each Raspi Computer to VASH server for storage. Config the raspi computer file and folder (For example): ### Create an image factory for each Raspi (Using R as example) mkdir /home/pi/Documents/raspiR_image_factory ### Create a text file with raspi password included nano /home/pi/Documents/raspiR_image_factory Log in to vash and launch the setup code: ### Reach the setup code: bash /mnt/Knives/image_factory/new_experiment.sh",
+    "If this is a new device, please use a monitor (or screen) to connect the Raspi computer and finish up the initial setup as follows: Enter a new name in the hostname field and click Ok. For lab internal use, please set up the &#34;Hostname&#34; using the raspi device number and the same password for each device. For example: Hostname: RaspiR Password: ****** Remember to enable the camera under the Raspberry Pi Configuration panel, as well as SSH transfer and I2C function :",
+    "Match the &#34;IPv4 address&#34; of the connected devices to the port setup page. For instance, the &#34;To IP address&#34; of &#34;raspiN&#34; should be manually updated as same as the IPv4 address&#34; listed in step above."
+  ],
+  "authors": [
+    "Li'ang Yu"
+  ],
+  "creator": "Li'ang Yu",
+  "published_on": 1709307247,
+  "created_on": 1655926321,
+  "keywords": []
+}

@@ -1,0 +1,21 @@
+{
+  "id": 4635,
+  "title": "Soapdenovo Genome assembly",
+  "uri": "soapdenovo-genome-assembly-gr3bv8n",
+  "doi": "dx.doi.org/10.17504/protocols.io.gr3bv8n",
+  "description": "{\"blocks\":[{\"key\":\"4fes1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"bf63l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"bgn3i\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"7f4sc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Soapdenovo contig assembly SOAPdenovo 63mer_V1.06 LINUX Filter and error corrected reads SOAPdenovo-63mer-V1.06_0718 pregraph -s $CFG -K 63 -o $PREFIX -p 16 SOAPdenovo-63mer-V1.06_0718 contig -g $PREFIX -M 2 SOAPdenovo-63mer-V1.06_0718 pregraph -s $CFG -K 63 -o $PREFIX -p 16 SOAPdenovo-63mer-V1.06_0718 contig -g $PREFIX -M 2 Contig fasta",
+    "Soapdenovo contig assembly SOAPdenovo 63mer_V1.06 LINUX Contig fasta, filter and error corrected reads SOAPdenovo-63mer-V1.06_0718 map -s $CFG -k 63 -g $PREFIX -p 16SOAPdenovo-63mer-V1.06_0718 scaff -g $PREFIX -p 16 SOAPdenovo-63mer-V1.06_0718 map -s $CFG -k 63 -g $PREFIX -p 16 SOAPdenovo-63mer-V1.06_0718 scaff -g $PREFIX -p 16 Scaffold fasta",
+    "Raw reads filtering by in-house programs. Filter by the quality, duplication and correct errors based on kmer frequency count. The open-source version programs are on the website http://soap.genomics.org.cn/soapdenovo.html. Fastq Filter and error corrected reads"
+  ],
+  "authors": [],
+  "creator": "Haoxiang Lin",
+  "published_on": 1498097117,
+  "created_on": 1481780655,
+  "keywords": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": 100061,
+  "title": "BAF_Protocol_011 Metabolomics: Database Search MS-DIAL and Analysis using Metaboanalyst 6.0",
+  "uri": "baf-protocol-011-metabolomics-database-search-ms-d-ddx527q6",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gpzj1jlzp/v1",
+  "description": "{\"blocks\":[{\"key\":\"bm8vp\",\"text\":\"These steps represent a starting point for analysis of metabolomics data. Other data analysis and/or packages may be used.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"8sjv2\",\"text\":\"Raw files.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fsosd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"crnnn\",\"text\":\"MS-DIAL Software: https://systemsomicslab.github.io/compms/msdial/main.html\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":18,\"length\":57}],\"data\":{}},{\"key\":\"81kqu\",\"text\":\"Databases: https://systemsomicslab.github.io/compms/msdial/main.html#MSP\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":11,\"length\":61}],\"data\":{}},{\"key\":\"u3ku\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7leld\",\"text\":\"MetaboAnalyst 6.0 online tool: https://www.metaboanalyst.ca/MetaboAnalyst/home.xhtml\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":31,\"length\":53}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"68FDDE94148411EF92370A58A9FEAC02\",\"url\":\"https://systemsomicslab.github.io/compms/msdial/main.html\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"BD24A008148411EF92370A58A9FEAC02\",\"url\":\"https://systemsomicslab.github.io/compms/msdial/main.html#MSP\"}},\"2\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"7C75945416CA11EF8B840A58A9FEAC02\",\"url\":\"https://www.metaboanalyst.ca/MetaboAnalyst/home.xhtml\"}}}}",
+  "steps": [
+    "Thermo RAW files are organized in two folders - one for all positive mode raw files and another for all negative mode raw files. These files will be loaded into MS-DIAL in two separate searches. Download MSP library files for Positive and Negative mode and save them in a folder in the computer you are using to perform the searches.",
+    "Open MS-DIAL",
+    "Click File -&gt; New project",
+    "Project file path: Browse the folder with Positive or Negative raw files Ionization type: Soft ionization (LC-MSMS) Separation type: Chromatography (LC) MS method type: Conventional LC/MS or data dependent MS/MS Data type: MS1 Profile, MS/MS Centroid Ion mode: Positive or Negative Target omics: Metabolomics Click &#34;Next&#34;",
+    "Analysis file path: browse to the folder with raw files, select all the apply for the search. Should include at least 3 blanks and 3 QC runs. Choose the file type for each sample (Blank, QC, sample) Class ID - add short group names for each replicate without adding numbers among replicates.",
+    "Data collection tab Mass accuracy: MS1 tolerance 0.01 Da, MS2 tolerance 0.025 Da - Advanced: Data collection parameters: retention time begin 0 min, retention time end 15 min, MS1 range begin 50 Da, MS1 range end 1000 Da, MSMS range begin 50 Da, MSMS range end 1000 Da, Isotope recognition: max charge number 2.",
+    "Peak Detection tab Peak detection parameters: minimum peak height 10000 amplitude, mass slice 0.1 Da - Advanced: Smoothing method: linear weighted moving average Smoothing level: 3 scan Minimum peak width: 5 scan",
+    "MS2Dec tab Deconvolution parameters: sigma window value 0.5, MS2 abundance cut off 10 amplitude. - Advanced: Check Exclude after precursor ion Keep the isotope ions until 0.5 Da Check Keep the isotopic ions w/o MS2Dec",
+    "Identification tab MSP file and MS/MS identification setting: add MSP file downloaded Positive or Negative depending on the data that you loaded in the step 04. Retention time tolerance: 100 min, Accurate mass tolerance (MS1) 0.01 Da, Accurate mass tolerance MS/MS 0.05, Identification score cut off 80%. - Advanced: add txt file of an in-house library Positive or Negative depending on the data that you loaded in the step 04. Retention time tolerance: 0.1 min, Accurate mass tolerance 0.01 Da, Identification score cut off 85%. Check only report the top hit",
+    "Adduct tab Check [M+H]+ Check [M+H-H2O]+ Check [2M+H]+",
+    "Alignment tab Alignment parameters settings: Under result name add a name for the alignment file, reference file choose one of the QC runs, retention time tolerance 0.05 min, MS1 tolerance 0.015 Da - Advanced: Check remove feature based on blank information Check keep &#34;reference matched&#34; metabolite features Check keep &#39;&#39;suggested (w/o MS2)&#34; metabolite features Check keep removable features and assign the tag Check Gap filling by compulsion",
+    "At the bottom Check together with Alignment Click &#34;Finish&#34; --&gt; processing will start. Once the search is finished, click on the name of the file that is showing at the Alignment Navigator Click Export - Alignment result, choose a folder to save the file, check remove features from blank, and export. Data can be loaded into Excel/R or any other software environment for further data analysis.",
+    "Data Analysis: load data into Excel, filter out: m/z match FALSE and identifcations named w/o MS2. Combine postive and negative identifications removing redundancy and save as txt file. Load the combined non-redundant data into R or the online MetaboAnalyst 6.0 tool.",
+    "MetaboAnalyst 6.0 --&gt; statistical analysis Upload .txt data as peak intensities (check file format), no data filtering, Sample normalization: normalization by median, Data transformation: Log transformation (base 10), no Data Scaling. At this point there are distinct analyses that can be done, the following is provided by our core as a first-step analysis: Chemometrics analysis: PCA, PLS-DA with importance measures using VIP. Univariate analysis: fold change and t-test -&gt; volcano plot (two groups comparisons). Clustering analysis: heatmap."
+  ],
+  "authors": [
+    "Nicholas Sherman"
+  ],
+  "creator": "Nicholas Sherman",
+  "published_on": 1717085543,
+  "created_on": 1715974301,
+  "keywords": []
+}

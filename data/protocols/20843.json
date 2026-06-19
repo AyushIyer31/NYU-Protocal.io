@@ -1,0 +1,33 @@
+{
+  "id": 20843,
+  "title": "UC Davis - Gut Microbiome Analysis (454-10K reads)",
+  "uri": "uc-davis-gut-microbiome-analysis-454-10k-reads-ykjfuun",
+  "doi": "dx.doi.org/10.17504/protocols.io.ykjfuun",
+  "description": "{\"blocks\":[{\"key\":\"fm4e4\",\"text\":\"Summary: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1h943\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bqsro\",\"text\":\"The work of Gordon and colleagues (i.e., Nature. 2006 Dec 21;444(7122):1027-31) has shown that obesity can result in marked shifts in the gut microbiome in mice and other models including humans. While the role of the microbiome remains to be fully elucidated, the gut microbiota can no longer be ignored as a potentially important factor when assessing metabolic phenotype. This service involves 16S gene variable region (V1-V3 or V3-V4 directed primers) sequencing by Titanium 454 (10,000 avg seq read depth) of feces, cecal, or other GI contents. Sequences can be processed through a bioinformatics pipeline (Qiime) to taxonomically classify them and to assess alpha and beta diversity of the community. In addition, Principal Components Analysis (PCA) or partial least squares- discriminant analysis (PLS-DA) can leverage variances in the relative microbial abundances to better understand how specific microbes contribute to separation by group. Correlational analyses can identify which variables of host metadata associate with specific microbes. The Core’s gut microbiome assay will employ this approach to uncover unique microbiota fingerprints in test mice. One caveat is that with fecal samples, patterns are only a surrogate for actual gut microbiota patterns, and may not exactly reflect the intestinal populations.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":397,\"length\":152}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"7uh5o\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"492t5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"bocin\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"9tlh6\",\"text\":\"Reagent/Material\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":16}],\"entityRanges\":[],\"data\":{}},{\"key\":\"bmsh4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"139bp\",\"text\":\"•  Tweezers\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1ngcj\",\"text\":\"•  Disinfectant solution (70% isopropanol or 70% ethanol)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2fms0\",\"text\":\"•  Labeled pre-weighed 1.5 ml tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6lumd\",\"text\":\"•  Gloves\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ajquq\",\"text\":\"•  Small weigh boats\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"25luc\",\"text\":\"•  Measuring cup/beaker for food weight measurements\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bclml\",\"text\":\"•  Large beaker for mouse weight measurements\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6vkt6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Mice are singly housed in clean cages with fresh food and water and low bedding.",
+    "Weigh mouse and “food-in” (grams of rodent diet provided at start of experiment).",
+    "Save several pellets of rodent diet for analysis (e.g., for energy or macronutrient content)-Store at 4ºC in airtight container.",
+    "At 24h, weigh mouse and “food –out” (grams of rodent diet remaining)",
+    "At the end of 48h collection period, weigh mouse and “food-out”.",
+    "Swap out the cage bottoms with new clean bottoms, replace feeder insert/water bottle and returnanimals to housing system.",
+    "For each cage, carefully inspect and remove each piece of bedding using tweezers to collect allfeces. Inspect each pellet of feces to assure that there is no spilled food or fibers of hair or bedding attached. If significant food spillage is found in cage bottom, weigh in pre-tared weigh boat to add back to food measurement.",
+    "Place feces in labeled pre-weighed 1.5 ml tube.",
+    "Weigh tubes and record weight.",
+    "Subtract this value from original tube weight to determine fecal “wet” weight.",
+    "After collection, fecal samples are stored at -80C until analysis.",
+    "Samples will be shipped/delivered on dry ice to UCDavis MBP to coordinate 16S DNA ampliconsequencing and analysis. Samples should be delivered/shipped to: Mouse Biology ProgramC/O UC Davis MMPC University of California2795 Second Street, Suite 400 Davis, CA 95618 530-757-3333 Please include MBP/MMPC project # in reference section on package documentation and send the FedEx/UPS tracking number information to : mmpc-bodyc@ucdavis.edu Note: It is not critical to perform food intake measurements during this collection time but it is beneficial for analysis/QC.",
+    "Data collected: Microbial community structure (differences in gut microbe population prevalence) Correlation of results with metabolic phenotype/diet variables"
+  ],
+  "authors": [
+    "Trina Knotts"
+  ],
+  "creator": "Lili Liang",
+  "published_on": 1557853107,
+  "created_on": 1551203233,
+  "keywords": []
+}

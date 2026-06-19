@@ -1,0 +1,28 @@
+{
+  "id": 28747,
+  "title": "Reverse transcription of RNA to cDNA",
+  "uri": "reverse-transcription-of-rna-to-cdna-8bjhskn",
+  "doi": "dx.doi.org/10.17504/protocols.io.8bjhskn",
+  "description": "{\"blocks\":[{\"key\":\"7qjvj\",\"text\":\"Synthesizing cDNA (for qPCR)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"82c9j\",\"text\":\"Always work with gloves and safety gear and work on ice\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"6ch00\",\"text\":\"100 ng RNA\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ad4lv\",\"text\":\"40x yellow sample buffer (from DyNAmo Color Flash Kit)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"79ccb\",\"text\":\"random hexamer primers\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"et77\",\"text\":\"5x RT-buffer\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"b24d5\",\"text\":\"dNTP Mix (10 mM of each nucleotide)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"27chb\",\"text\":\"RevertAid Reverse Transcriptase\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7b11t\",\"text\":\"You will require 100 ng for RT and 100 ng for -RT control (include a -RT control for each sample!)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":98}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "33,25 µL 40x yellow sample buffer + 966,75 µL H2O optional: This was used to be able to see the pipetting scheme for qPCR more easily",
+    "In PCR stripes, pipet in the following order: 100 ng template RNA 1 µL random hexamer primers RNase-free H2O to 13 µL volume",
+    "Prepare a Mastermix of the following reagents: 4 µL 5x RT-buffer 2 µL dNTP Mix (10 mM of each nucleotide) 1 µL RevertAid Reverse Transcriptase",
+    "Add 7 µL Mastermix to each reaction",
+    "For your -RT control, pipet 100 ng RNA in PCR stripes, leave out buffer and everything, just add H2O to a final volume of 20 µL. Mark as -RT so you can distinguish it from your actual cDNA!",
+    "PCR protocol: %s %s",
+    "Add 60 µL 1,33 x yellow sample buffer to each reaction optional: This was used to be able to see the pipetting scheme for qPCR more easily",
+    "cDNA can be stored at 4 ˚C for a short time, otherwise, freeze at -20 ˚C"
+  ],
+  "authors": [
+    "Igem Dusseldorf"
+  ],
+  "creator": "Igem Dusseldorf",
+  "published_on": 1571255406,
+  "created_on": 1571249987,
+  "keywords": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": 94442,
+  "title": "Live tracking of multiple mice in a neuromelanin-inducing PD model over several weeks",
+  "uri": "live-tracking-of-multiple-mice-in-a-neuromelanin-i-c8giztue",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgq3z25lk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"2g79i\",\"text\":\" The Live Mouse Tracker (LMT) system is engineered for long-term, automated tracking and behavioral analysis of mice, integrating machine learning, computer vision, and RFID technology for simultaneous monitoring of multiple subjects. Specifically designed for the research community, LMT offers a Python-based framework for in-depth data analysis and is adept at facilitating studies involving mouse vocalizations. This cost-effective, DIY system is compatible with Windows OS and is tailored for tracking mouse behavior. Currently employed in our studies, LMT is pivotal in observing behavioral shifts across various domains such as arousal-resting, social interaction, and motor functions in a Neuromelanin-accumulating early-stage Parkinson’s Disease model utilizing the tyrosinase approach.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"8j2a2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"geographic\",\"mutability\":\"MUTABLE\",\"data\":{\"error\":false,\"guid\":\"\",\"id\":0,\"value\":\"\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"4g8fj\",\"text\":\"RFID chip: https://chiphandel.de/produkt/rfid-tierchip-mini-de-laendercode-276/\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":11,\"length\":68}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"DE90FA2FC00E11EEAABF0A58A9FEAC02\",\"url\":\"https://chiphandel.de/produkt/rfid-tierchip-mini-de-laendercode-276\"}}}}",
+  "steps": [
+    "Anesthetizing the Mouse : Anesthetize the mouse in the isofluorane induction chamber. Monitor the mouse to ensure it is properly anesthetized and does not feel pain. Implantation Site Preparation : Gently clean and disinfect the area of the belly where the RFID probe will be implanted. Implanting the RFID Probe : The RFID comes with a provided single-use injector. Carefully insert the injector at the predetermined site in the belly. Gently push the probe into place subcutaneously. Finishing the Procedure : Withdraw the injector and ensure the probe is properly placed. Using your thumb and index fingers, move the RFID probe away from the injection site. Apply antiseptic to the implantation site if necessary. Post-Procedure Care : Monitor the mouse as it recovers from anesthesia. Provide appropriate care and monitor for any signs of infection or complications.",
+    "Open Provide fresh bedding, food, and water in the LMT arena. Make sure that the C: drive has enough space. Consider about 70GB per week of recording. Adjust the dark/light controller according to your animal&#39;s cycle.",
+    "Open the LMT software and activate the option &#34;calibrate&#34; Adjust the arena position to fit the depicted area on the screen. Make sure that all the corners are properly aligned and the floor arena green dots are in green. Close the LMT software. Open the LMT software and activate the option &#34;Live mouse Tracker&#34; In the GUI choose the number of mice you will place for recordings (1-4). Rename your experiment as needed. Start the recordings",
+    "Stop the recordings from the GUI. Remove the mice and place them back in their home cage. Transfer your data to the D: drive and delete it from C: one. Clean up the arena and empty the water bottle.",
+    "Data analysis and pipelines can be found at https://github.com/fdechaumont/lmt-analysis"
+  ],
+  "authors": [
+    "Cristian González-Cabrera",
+    "Matthias Prigge"
+  ],
+  "creator": "Team Prigge",
+  "published_on": 1706711019,
+  "created_on": 1706685075,
+  "keywords": []
+}

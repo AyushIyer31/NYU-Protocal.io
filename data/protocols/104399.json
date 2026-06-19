@@ -1,0 +1,37 @@
+{
+  "id": 104399,
+  "title": "Genotyping for specific genomic insertions with Cas12a ssDNA cleavage",
+  "uri": "genotyping-for-specific-genomic-insertions-with-ca-dh7p39mn",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn6n2pl5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"4bos1\",\"text\":\"Based on the DETECTR assay, this protocol screens for precise genomic insertions by programming a CRISPR RNA (crRNA) to direct LbCas12a to recognize an amplified genomic locus. This sensitive assay enables the detection of low frequency targets (limit of detection ~0.1-1%) in a plate-based format for high throughput screening. The protocol begins by seeding each well of a 96-well plate with clones or small populations of cells that have been genomically edited. After growing cells to saturation, genomic DNA is rapidly extracted with a buffer that is compatible for direct use in PCR reactions. LbCas12a is directly added to the PCR reaction to detect the presence of specific sequences from the amplified locus. Upon binding to the dsDNA target, LbCas12a can indiscriminately cleave single-stranded DNA (ssDNA). The conjugation of a fluorophore and quencher dye to an ssDNA substrate produces a fluorogenic probe to detect the LbCas12a nuclease activity that depends on dsDNA target recognition. A fluorogenic ssDNA probe is commercially available as a DNase Alert Substrate from Integrated DNA Technologies. This protocol was adapted by David Booth and his Lab at UCSF with special input from Fredrick Leon and Jesus Espinoza-Esparza, building on foundational work from Vicki Deng to optimally extract genomic DNA and to perform plate-based screens. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":13,\"length\":13}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"108C20A789BA4F6FAAB87A37CF1144EA\",\"url\":\"https://www.science.org/doi/10.1126/science.aar6245\"}}}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"6gb37\",\"text\":\"1. Validate all primers targeting the edited genomic locus prior to conducting any genome editing. Establish your melt temperature and cycles to make amplicons, confirming that your primer only amplify the desired locus and not any off-targets.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"osml\",\"text\":\"2. Perform genome editing with your preferred protocol. We use this one for S. rosetta:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a4jn5\",\"text\":\"dx.doi.org/10.17504/protocols.io.j8nlk86o5l5r/v1\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":48}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"B0EF5BBD698B11EFB48C0A58A9FEAC02\",\"url\":\"https://dx.doi.org/10.17504/protocols.io.j8nlk86o5l5r/v1\"}}}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "24:00:00 after transfection count the cell density using a haemocytometer",
+    "Dilute cells to a density of 45 cells/ml in a 50 mL conical tube.",
+    "Once cells have grown to saturation, remove 12 µL, of cells from each well and then transfer that volume into each well of the PCR plate containing DNAzol direct. We recommend using a 96-channel pipette: https://www.integra-biosciences.com/united-states/en/electronic-pipettes/mini96",
+    "Seal plate with foil lid, vortex, and briefly centrifuge liquid to bottom of wells.",
+    "Heat DNAzol plates at 80 °C, for 10 min.",
+    "In a fresh PCR plate, aliquot 2 µL, of extracted DNA into each will. This is the PCR template.",
+    "Aliquot 23 µL, of PCR Master Mix into each well of the PCR plate containing templates. Ensure master mix does not contain any dyes, which will interfere with final output. We generally use Promega GoTaq Master Mix-Colorless: https://www.promega.com/products/pcr/taq-polymerase/gotaq-master-mixes/?catNum=M7133",
+    "Seal plate with foil lid, tap to mix (DO NOT VORTEX!), briefly centrifuge, and cycle as predetermined for your primer set.",
+    "As your PCR is finishing , prepare 20 µL, 10 µM Cas12a RNP : 13 µL, water 2 µL, NEBuffer r2.1 (10x stock) 5 µL, crRNA (12.5 µM final concentration from a 100 µM stock) 2 µL, LbCas12a (10 µM final concentration from a 100 µM stock) LbCas12a NEB: https://www.neb.com/en-us/products/m0653-engen-lba-cas12a-cpf1 crRNA Sequences: •Targeting premature termination sequences (PTS): UAAUUUCUACUAAGUGUAGAUuuuaauuaaauaaanrrngg •Targeting ALFA tag sequence: UAAUUUCUACUAAGUGUAGAUgacucgaggaagagcuccgg",
+    "And then prepare, 600 µL, 6x Master Mix per plate: 486 µL, water 60 µL, NEBuffer r2.1 (10x stock) 18 µL, LbCas12a RNP (300 nM final concentration from the 10 µM stock prepared above) 36 µL, DNase Alert Substrate (300 nM final concentration from a 5 µM stock) DNase Alert Substrate purchased from Integrated DNA Technologies (IDT): https://www.idtdna.com/pages/products/reagents-and-kits/nuclease-detection-and-control",
+    "After the PCR has completed amplifying the target sequence, dispense 5 µL, of 6x Master Mix into each well of the 96-well plate.",
+    "Firmly cover PCR plate, gently mix, and lightly centrifuge to collect the liquid at the bottom of the well.",
+    "Replace PCR cover with an optically clear film cover and place plate in the qPCR instrument (or fluorescent plate reader if the plate is compatible).",
+    "Plate 100 µL, of diluted cells into each well of several 96-well plates, increasing the number of plates if the expected editing efficiency is low. Distributing 100 µl of cells at a concentration of 45 cells/ml will result in a population in each well being seeding by 4-5 cells. If you expect that the mutant cell will result in a growth defect, consider lowering the starting concentration of cells and screening more plates, so the wild-type cells do not out compete a mutant with a growth defect.",
+    "Aliquot 36 µL, DNAzol Direct into each well of a 96-well PCR plate. DNAzol Direct: 60% (w/v) PEG 200 adjust to pH 13.3-13.7 with ~20 mM potassium hydroxide Note: It is important to test a range of pH values to establish the optimal pH for your own use",
+    "Read the fluorescence signal in the channel for VIC (Ex 526 nm / Em 543 nm). On our own QuantStudio3 qPCR machine, high-confidence hits will have fluorescence values &gt;100,000 units. We recommend determining your limit of detection by titrating purified PCR products with the target sequence against amplicons that lack the target sequence, thereby maintaining a constant amount of dsDNA while varying the frequency of the target sequence",
+    "Incubate the plate for 01:00:00 at 37 °C . Lightly centrifuge the plate afterwards to collect the liquid at the bottom."
+  ],
+  "authors": [
+    "David Booth"
+  ],
+  "creator": "David Booth",
+  "published_on": 1725323464,
+  "created_on": 1722465012,
+  "keywords": []
+}

@@ -1,0 +1,41 @@
+{
+  "id": 225561,
+  "title": "Workflow for Protein Structure Prediction, Refinement, and Validation",
+  "uri": "workflow-for-protein-structure-prediction-refineme-g8hzbzt77",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gpmz2dgzp/v1",
+  "description": "{\"blocks\":[{\"key\":\"20h06\",\"text\":\"This protocol provides a reproducible computational workflow for protein structure prediction using a combination of freely available software, open-source pipelines, and specialized protein structure prediction services. The protocol covers sequence preparation, structure generation, refinement, validation, and downstream applications such as docking and epitope mapping. This workflow is intended for researchers in structural biology, immunology, bioinformatics, and drug discovery who require reliable approaches for modeling protein structures when crystallographic or cryo-EM data are not available.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":183,\"length\":37}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"9C118326BD174306A99EDA28A3887580\",\"url\":\"https://biointelix.com/protein-structure-prediction-services/\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"7duk7\",\"text\":\"Input Data\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"687st\",\"text\":\"Protein sequence in FASTA format (single-letter amino acid code).\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2s5vp\",\"text\":\"Metadata: UniProt accession number, domain annotations, organism of origin.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3mn12\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"30vrg\",\"text\":\"Software and Tools\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ccgbj\",\"text\":\"Primary prediction: AlphaFold2 (local installation) or ColabFold (cloud-based).\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":18}],\"entityRanges\":[],\"data\":{}},{\"key\":\"cqp28\",\"text\":\"Alternative approaches: I-TASSER, Phyre2, SwissSidechain.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":22}],\"entityRanges\":[],\"data\":{}},{\"key\":\"b2tlb\",\"text\":\"Refinement: GalaxyRefine, ModRefiner.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3mlr4\",\"text\":\"Validation: ProSA-web, PDBsum, MolProbity.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6knvj\",\"text\":\"Docking/interaction analysis: PyDockWEB, HADDOCK.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":28}],\"entityRanges\":[],\"data\":{}},{\"key\":\"d87tl\",\"text\":\"Optional commercial support: Specialized protein structure prediction services providing expert-guided modeling and validation.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":27},{\"style\":\"bold\",\"offset\":41,\"length\":37}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Sequence Preparation (30–60 min)",
+    "Retrieve protein sequence from UniProt or NCBI in FASTA format.",
+    "Inspect the sequence for non-standard residues, signal peptides, or tags. Tip : Remove signal peptides using SignalP if the modeling target is the mature protein.",
+    "For multi-domain proteins, split the sequence into predicted domains using Pfam or InterPro.",
+    "Primary Protein Structure Prediction (6–24 h depending on size)",
+    "AlphaFold2/ColabFold Input the full sequence. Set number of recycles = 3–6 for improved accuracy. Enable template search (MMseqs2 or PDB70 database). Output: 5 ranked models with confidence scores (pLDDT).",
+    "Alternative approaches Use I-TASSER or Phyre2 when AlphaFold2 fails for low-complexity regions. Generate comparative models if homologous structures are available.",
+    "Protein Structure Prediction Services Submit the sequence to a professional modeling provider if large-scale computing resources are unavailable. Services often deliver optimized models, quality metrics, and optional docking simulations.",
+    "Model Refinement (2–6 h)",
+    "Select top models based on: pLDDT score &gt; 70 (high confidence). Predicted TM-score &gt; 0.5 (correct topology).",
+    "Refine structure using GalaxyRefine: Input predicted PDB file. Generate up to 5 refined models. Compare RMSD and MolProbity scores.",
+    "Optional: Run ModRefiner for atomic-level energy minimization.",
+    "Model Validation (2–4 h)",
+    "Stereochemistry: PDBsum for Ramachandran plot and hydrogen bond networks. MolProbity for clash score and rotamer outliers.",
+    "Global quality assessment: ProSA-web: Z-score comparison with experimentally determined structures. ERRAT for non-bonded atomic interactions.",
+    "Consensus evaluation: Compare refined models and select the one with the highest structural consistency.",
+    "Functional Annotation and Downstream Applications (variable)",
+    "Ligand docking: Use PyDockWEB or AutoDock Vina to simulate protein–ligand interactions. Analyze binding energy and interface residues.",
+    "Protein–protein docking: HADDOCK for macromolecular interactions. Identify key interface regions.",
+    "Epitope mapping (for vaccine research): Predict linear and conformational epitopes using ElliPro or Discotope. Validate predicted epitopes on refined protein models.",
+    "Comparative analysis: Align predicted model to homologous crystal structures for benchmarking. Notes and Recommendations Computational resources : Full-length proteins &gt;1000 aa may require GPUs and high-memory servers. Domain-based modeling can reduce complexity. Disordered regions : Low-confidence predictions (pLDDT &lt; 50) often correspond to intrinsically disordered segments; interpret with caution. Multi-conformation proteins : Ensemble modeling provides insights into functional flexibility. Professional services : Researchers without bioinformatics expertise may rely on protein structure prediction services , which offer curated pipelines, expert validation, and consulting for specific projects. Expected Outcomes Generation of reliable 3D protein models. Validated structures with stereochemical quality and global metrics. Application-ready models for docking, epitope mapping, or rational drug design."
+  ],
+  "authors": [
+    "Marco Palma"
+  ],
+  "creator": "vriskone",
+  "published_on": 1756282655,
+  "created_on": 1756236303,
+  "keywords": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": 224294,
+  "title": "Manual Quantification of Microscopy-Based Bead Assays",
+  "uri": "manual-quantification-of-microscopy-based-bead-ass-g7aebzibf",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v95d7zl3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"bmd5t\",\"text\":\"This protocol details the description of Manual Quantification of Microscopy-Based Bead Assays.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Perform manual quantification for microscopy-based bead assays in which weak fluorescence signals could not be reliably quantified using AI-based image analysis.",
+    "Open images using Fiji (ImageJ) .",
+    "Select r egions without beads to measure background intensity. The size of the region of interest (ROI) keep consistent across all measurements within one experiment.",
+    "Measure the total intensity of the full image.",
+    "Subtract background intensity from the total image intensity. All measurements from one replicate were then normalized to the maximum value (set to 100%) . Plot the resulting values and subject to statistical evaluation using GraphPad PRISM software .",
+    "For experiments involving two fluorescence channels (e.g., green signal for bait protein and red for prey protein):",
+    "Measure the background and total signal separately for each channel .",
+    "For each channel, subtract background from the total intensity of the image.",
+    "Use the bait channel (present in all conditions) to normalize the signal of the prey: (normalized prey signal) ÷ (normalized bait signal).",
+    "Use the maximum value across all replicates to normalize to 100%. Plot the resulting values and subject to statistical evaluation using GraphPad PRISM software ."
+  ],
+  "authors": [
+    "Elisabeth Holzer"
+  ],
+  "creator": "Elisabeth Holzer",
+  "published_on": 1781621091,
+  "created_on": 1754478744,
+  "keywords": []
+}

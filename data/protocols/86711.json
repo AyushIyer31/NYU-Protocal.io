@@ -1,0 +1,33 @@
+{
+  "id": 86711,
+  "title": "51Cr Release Cytotoxicity Assay for murine CAR T cells",
+  "uri": "51cr-release-cytotoxicity-assay-for-murine-car-t-c-cywxxxfn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ldmm2ol5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"8v72o\",\"text\":\"A standard cell-based assay to assess the function of murine CAR T cells, which we regularly perform at the end of the process of generating CAR T cells (see \\\"Retroviral transduction of primary murine CD8 T cells\\\").\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "For each adherent tumor cell line, plate 5x10 5 cells / 3mL (previously growing in log phase) in one 6-well-plate well; Incubate cells for ~3hr to rest.",
+    "In the Hot Lab , label the target cells with 50 μL 51 Cr (vial &lt;1wk old), 100μL (1-2wk old), or 150μL (&gt;2wk old). Place in Hot Lab incubator overnight. Overnight chromium incorporation is often sufficient, but the duration may vary depending on the cell line. If the positive control (soap-killed cells) endpoint values are inadequate, the length of time can be adjusted.",
+    "From each transduced T cell culture, remove 9x10 5 cells, wash with fresh mouse T cell media (mTCM) for 6min at 400rcf, and resuspend in 3mL mTCM. mTCM is prepared by combining the following: 1000 mL RPMI1640 (with 25mM HEPES) 100 mL FBS (heat inactivated) 10 mL Sodium pyruvate (1mM) 1 mL HEPES (1M) 10 mL Pen/Strep 100 mL b-mercaptoethanol 0.5M Filter with 0.22mm",
+    "Begin processing the target cells. To remove extracellular 51Cr, briefly wash the adherent lines with 5mL Cell Dissociation Buffer (0.5mM EDTA in PBS). Repeat the wash. Dispose the 51Cr-containing media appropriately. Non-enzymatic dissociation is a critical step for preserving cell-surface antigen.",
+    "In triplicates, transfer 150μL (4.5x10 4 effector cells) to U-bottom 96-well-plate wells (in columns 1, 2, 3). Pipet mTCM (100uL/wel) into the remainder of the row (4-12); prepare 3 serial dilutions (1:3) by pipetting 50uL to the respective 100uL volumes. This would assess cell killing for one CAR T cell culture against one target. Scale up as needed by seeding additional rows.",
+    "Example layout: Desired E:T ratios are 30:1 [3x10 4 :1x10 3 ], 10:1, ~3:1, and ~1:1",
+    "Count the cells using a hemocytometer. Adjust volume to 1E4 cells / mL mTCM. Transfer 100μL (1E3 target cells) to each well on the respective half of the plate already containing 100uL of effector CAR-T cells.",
+    "To dissociate target cells, add 3mL Cell Dissociation Buffer to each well, incubate at 37C for 10-15 mins. Add 3mL mTCM; centrifuge at 400rcf for 4min.",
+    "Finally, transfer 100μL target cells to an extra row. Add 100μL of soap (NP40+Trypan blue) to generate a positive control. Add 100μL mTCM to generate a negative control.",
+    "Centrifuge plate at 800rpm for 3mins; incubate at 37C for 24 hours.",
+    "Harvest 30uL supernatant from each plate; carefully transfer onto respective Luma plate wells. Dry the plate completely for ~24 hours.",
+    "Acquire data on the plate scintillation counter per respective protocol."
+  ],
+  "authors": [
+    "Tamer B Shabaneh",
+    "Andrew R Stevens"
+  ],
+  "creator": "Tamer B Shabaneh",
+  "published_on": 1692601355,
+  "created_on": 1692504878,
+  "keywords": []
+}

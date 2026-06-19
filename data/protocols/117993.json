@@ -1,0 +1,32 @@
+{
+  "id": 117993,
+  "title": "Western Blot - Frozen cell pellets",
+  "uri": "western-blot-frozen-cell-pellets-dxgh7jt6",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewov1d562vr2/v1",
+  "description": "{\"blocks\":[{\"key\":\"bakoo\",\"text\":\"This protocol describes how to extract protein from frozen pellets and how to perform a western blot for protein detection.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Thaw the cell pellets On ice .",
+    "Prepare gel samples: Mix the appropriate amount of sample with 4x loading dye (LDS), 10x reducing agent and water. Boil the samples for 00:05:00 at 95 °C . Spin briefly.",
+    "Add RIPA buffer supplemented with protease inhibitors, vortex well and lyse the cells on ice for 00:30:00 . (For a 200,000 cells pellet use 40 µL of lysis buffer, scale up or down accordingly)",
+    "Centrifuge at 12.000 rpm, 4 °C, for 00:20:00",
+    "Carefully transfer the supernatant to a new tube. Store the protein lysate at -80 °C or continue with the steps in the Western Blot section.",
+    "Run the gel: Load the boiled samples in a pre-made 4-12% Tris-glycine SDS-PAGE gel. Load a well with a prestained ladder. Run at 200V in 1x MES SDS running buffet for 00:45:00 at Room temperature .",
+    "Transfer to membrane: Transfer the proteins to a PVDF membrane using the Transblot-Turbo Transfer system (BioRad) following manufacturer&#39;s instructions. Check the ladder has transferred well to the membrane.",
+    "Blocking: Cut the membrane if the size of the proteins to be detected is different enough. Place the membrane in a cuvette making sure the protein side is facing up. Briefly rinse the membrane with Tris-buffer saline with 0,1% Tween (TBST). Block with 5% skimmed milk-TBST for 01:00:00 at Room temperature or Overnight at 4 °C .",
+    "Antibody incubation: Dilute primary antibody in 5% skimmed milk-TBST. Incubate on a shaker Overnight at 4 °C . For abundant targets, incubate for 01:00:00 at Room temperature . Briefly rinse the membrane with TBST. Wash three times with TBST on a shaker for 00:10:00 at Room temperature . Dilute species-appropriate HRP-conjugated secondary antibody in 5% skimmed milk-TBST. Incubate on a shaker for 01:00:00 at Room temperature . From this point, protect the membrane from light. Briefly rinse the membrane with TBST. Wash three times with TBST on a shaker for 00:10:00 at Room temperature . Wash once with TBS on a shaker for 00:05:00 at Room temperature . NOTE: If using an HRP-conjugated primary antibody, wash thrice and image (skip the secondary antibody step).",
+    "Detection: Prepare the detection reagent following manufacturer&#39;s instructions. Incubate on a shaker for following manufacturer&#39;s instructions. Image with chemiluminescence using an appropriate imager.",
+    "Stripping: Use a commercial stripping buffer as per instruction. Briefly rinse the membrane with TBST. Repeat blocking, antibody incubation and detection of the new target (usually the loading control). NOTE: A large proportion of the protein will be lost during the stripping step. Always blot the most abundant target last."
+  ],
+  "authors": [
+    "Anita Adami",
+    "Laura Castilla-Vallmanya"
+  ],
+  "creator": "Laura Castilla-Vallmanya",
+  "published_on": 1736459199,
+  "created_on": 1736429878,
+  "keywords": []
+}

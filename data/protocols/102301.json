@@ -1,0 +1,35 @@
+{
+  "id": 102301,
+  "title": "FASP-No IP",
+  "uri": "fasp-no-ip-df553q86",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlk8d26l5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"fpfq8\",\"text\":\"The Filter-Aided Sample Preparation (FASP) protocol enables efficient protein digestion and clean-up using membrane filters, eliminating detergents and contaminants prior to mass spectrometry. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"30ni8\",\"text\":\"Ensure all liquid has passed through the filter before proceeding to the next step.The membrane should remain visibly moist — it must have a wet sheen but never be completely dry. Drying can cause protein loss, membrane damage, or reduced recovery during subsequent washes and digestion steps.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":141,\"length\":9}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"bvr1i\",\"text\":\"Always avoid urea \\u003e 40 °C (prevents carbamylation).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"4h6c8\",\"text\":\"Buffers:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"9flg7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2mvf9\",\"text\":\"Precipitation buffer: 8M urea in 50 mM ABC\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"be9l3\",\"text\":\"DTT solution: 10 mM DTT in 8M urea in 50 mM ABC\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7vbqj\",\"text\":\"IAA solution: 55 mM IAA in 8M urea in 50 mM ABC\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3q27n\",\"text\":\"ABC: 50 mM of ammonium bicarbonate\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8gjvk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"15q9h\",\"text\":\"Materials:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"432qj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eac79\",\"text\":\"FASP tubes: VN01H22 Sartorius\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"59fd3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2bjgh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a9v8s\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Combine 30 µg worth of protein with 150 µL of precipitation buffer in the filter unit.",
+    "Spin at 15000 rcf for 15 min",
+    "Add 200 µL of precipitation buffer to the filter unit. Spin at 15000 rcf for 15 min.",
+    "If the sample was lysed without DTT, add 100 µL of DTT solution. Incubate at Room temperature for 20min.",
+    "Add 100 µL of IAA solution. Incubate in the dark for 20 min.",
+    "Spin at 15000 rcf for 15 min.",
+    "Add 100 µL of 50 mM ABC to filter, spin at 15000 rcf for 15 min. These washes serve the purpose of eliminating urea from the sample, as trypsin is not active in high urea concentrations.",
+    "Repeat previous step 2 times. (If the sample was lysed with SDS, increase the number of washes by two or three).",
+    "Transfer the filter unit to a new collection tube. Label both tube and filter.",
+    "Add 20 µL of 0.1 % TFA to the trypsin vial, then add 980 µL of ABC.",
+    "Add 100 µL of the newly made trypsin solution to each filter unit. Incubate O/N at 37 ºC. Wrap each tube with parafilm and put a wet paper towel underneath the rack to ensure the incubation environment remains moist.",
+    "Add 20 µL of 10 % TFA to acidify the samples. Proceed to StageTips",
+    "Collect filtrate by spinning at 15000rcf for 15 minutes.",
+    "Add 100ul of ABC and spin again for 15 min at 15000 rcf. Collect again.",
+    "Add 100 µL of precipitation buffer to filter, spin at 15000 rcf for 15 min."
+  ],
+  "authors": [
+    "Cristina CARDENAL PERALTA"
+  ],
+  "creator": "Cristina CARDENAL PERALTA",
+  "published_on": 1761307260,
+  "created_on": 1719231134,
+  "keywords": []
+}

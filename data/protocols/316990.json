@@ -1,0 +1,31 @@
+{
+  "id": 316990,
+  "title": "Detection of ATG13-WIPI3 Interaction in Stable Cell Lines",
+  "uri": "detection-of-atg13-wipi3-interaction-in-stable-cel-jzs6cp6hf",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgqxxnxlk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"9i5pg\",\"text\":\"To detect the interaction of ATG13 with WIPI3 in various stable cell lines using co-immunoprecipitation (Co-IP) and subsequent analysis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"dad9v\",\"text\":\"Use gloves and goggles when handling reagents and biological materials. Dispose of all waste according to institutional biosafety guidelines.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"97a79\",\"text\":\"10 cm culture dishes (Sterile, tissue culture treated) - 4\\nCo-IP lysis buffer (Pre-chilled, 50 mM Tris-HCl, pH 7.5, 200 mM NaCl, 10 mM EDTA, 5% glycerol, 1% NP-40) - 50 mL\\nEBSS (Earle's Balanced Salt Solution) - 50 mL\\nSDS loading buffer (2× concentration) - 10 mL\\nLipofectamine 2000 (Transfection reagent (Thermo Fisher, cat. #11668019)) - 20 μL\\npCAG-TSF-GFP-WIPI3 (Plasmid for transfection) - 10 μg\\nPierce™ Anti-HA Magnetic Beads (For immunoprecipitation (Thermo, 88836)) - 100 μL\\n\\nReagents:\\nBuffer Co-IP lysis buffer - Buffer for cell lysis and protein extraction\\nBuffer SDS loading buffer - Buffer for protein denaturation\\nProtease Inhibitor Protease inhibitor cocktail - Inhibits protease activity during lysis\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Seed ATG13-KO+Halo-LC3, ATG13-KO+Halo-LC3+HA-ATG13-WT, and ATG13-KO+Halo-LC3+HA-ATG13-(HF|DD) stable cell lines into 10 cm dishes at a density of 1 × 10⁵ cells/mL.",
+    "Transfect cells with 10 μg of pCAG-TSF-GFP-WIPI3 plasmid using Lipofectamine 2000 at a DNA:lipid ratio of 1:2.",
+    "Replace the medium with fresh medium 2 hours before treatment with EBSS for 1 hour.",
+    "Harvest cells using pre-chilled Co-IP lysis buffer.",
+    "Add 1 mL of Co-IP lysis buffer to the cell pellet and incubate on ice for 1 hour.",
+    "Centrifuge at 13,000 × g for 10 minutes at 4°C. Save 1/20 of the supernatant as input.",
+    "Incubate the remaining supernatant with 100 μL of Pierce™ Anti-HA Magnetic Beads at 4°C overnight.",
+    "Wash the bead-protein complexes five times with Co-IP lysis buffer, 10 minutes per wash.",
+    "Elute bound proteins by boiling in 2× SDS loading buffer for 10 minutes.",
+    "Resolve the eluted proteins by SDS-PAGE.",
+    "Load 10 μL of eluted fractions onto a 15% polyacrylamide gel and run the gel according to standard protocols."
+  ],
+  "authors": [
+    "Yongjia Duan"
+  ],
+  "creator": "Yongjia Duan",
+  "published_on": 1778692334,
+  "created_on": 1778692191,
+  "keywords": []
+}

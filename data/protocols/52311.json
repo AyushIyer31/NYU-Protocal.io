@@ -1,0 +1,30 @@
+{
+  "id": 52311,
+  "title": "Protocol for RNA isolation and RT‐PCR confirmation for Neomycin gene expression in transformed Bodo saltans",
+  "uri": "protocol-for-rna-isolation-and-rt-pcr-confirmation-bxbxpipn",
+  "doi": "dx.doi.org/10.17504/protocols.io.bxbxpipn",
+  "description": "{\"blocks\":[{\"key\":\"17sut\",\"text\":\"Developing transfection protocol for Bodo saltans, using SaCas9/sgRNA ribonucleoprotein (RNP) complex in conjunction with DNA repair template to disrupt the Paraflagellar rod 2 gene (BsPFR2) and increase the efficiency of targeted homologous recombination when a repair template DNA is provided. The exogenous repair template is double stranded DNA and it consists of eGFP fused with the drug selection gene nptII/neo and flanked by 500 bp of the untranslated regions (UTRs) upstream and downstream of the targeted BsPFR2 as homologous repair arms.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":37,\"length\":12},{\"style\":\"italic\",\"offset\":183,\"length\":6},{\"style\":\"italic\",\"offset\":368,\"length\":4},{\"style\":\"italic\",\"offset\":408,\"length\":10},{\"style\":\"italic\",\"offset\":515,\"length\":6}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3i7u3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "-Total RNA was isolated from 4 months old transformed clones and wild type Bodo saltans cultures using the Quick-RNA Miniprep Kit (Zymo Research) according to the manufacturer’s instructions.",
+    "-RNA underwent two rounds of DNAse treatments. First, we performed an on-column DNAse digestion, following the protocol of the Quick-RNA Miniprep Kit (Zymo Research). Second, DNAse digestion was performed on the purified RNA using gDNA wipeout buffer and the QuantiTect Reverse Transcription Kit (Qiagen, Germany), in the following 14 µl reaction: 2 µl of gDNA wipeout buffer 7x, 6 µl of RNA, and 6 µl of RNase-free water.",
+    "-cDNA was synthesized using the QuantiTect Reverse Transcription Kit (Qiagen, Germany) according to the manufacturer’s instructions, the RT Primer Mix and the 5X Quantiscript RT buffer were mixed in 1:4 ratio in a 20 µl reaction that included 14 µl of RNA template (post-DNA elimination).",
+    "-cDNA was then amplified in a 25 µl PCR reaction, with primers targeting the Neomycin gene; the Neo F primer (5’-CGCTTGGGTGGAGAGGCTATTCGGCTATGAC 3’) and Neo R primer (5’-TCCACCATGATATTCGGCAAGCAGGCATC -3’).",
+    "-Control PCR reactions was performed using RNA template without the RT to verify the absence of the DNA from the transformed B. saltans cell.",
+    "-PCR products were visualized by gel electrophoresis, with purified plasmid as a positive control for the PCR. Amplified PCR products at the expected size of 550-pb were documented (Figure 1).",
+    "Figure 1: Agarose gel electrophoresis image showing the RT-PCR results confirming the Neomycin gene expression in Bodo saltans transformants at the expected size of 550- bp. (L) L= 100 bp Ladder(New England Biolabs); lanes (1) Neomycin expression profile in B. saltans cells transformed with eGFP-Neo-PFRplasmid; (2) Control reaction using the same extracted RNA from transfected B. saltans without the RT step toverify the absence of DNA after the DNase treatments(3) Wild-type RT-PCR confirm the absence of the Neomycin expression in wild type samples (4) Control reaction using the same extracted RNA from wild-type B. saltans without the RT step toverify the absence of DNA after the DNase treatments (4) PCR positive PCR control using the eGFP-Neo-PFR plasmid DNA; (5) PCR negative control. Forward and reverse PCR primers targeting the Neomycin gene are published in Faktorová et al. (2020). The PCR products were visualized under UV light using 1% agarose gel."
+  ],
+  "authors": [
+    "Fatma Gomaa",
+    "Zhu-Hong Li",
+    "Roberto Docampo",
+    "Virginia Edgcomb"
+  ],
+  "creator": "Fatma Gomaa",
+  "published_on": 1628794544,
+  "created_on": 1628794056,
+  "keywords": []
+}

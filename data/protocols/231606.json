@@ -1,0 +1,26 @@
+{
+  "id": 231606,
+  "title": "Midbrain organoid dissociation for Single-cell transcriptome library preparation and sequencing",
+  "uri": "midbrain-organoid-dissociation-for-single-cell-tra-heewb3bff",
+  "doi": "dx.doi.org/10.17504/protocols.io.261gek7odg47/v1",
+  "description": "{\"blocks\":[{\"key\":\"602l3\",\"text\":\"This protocol describes the enzymatic dissociation of midbrain organoids into single-cell suspensions, preparation of 10x Genomics scRNA-seq libraries, and high-depth sequencing on an Illumina NovaSeq platform.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"h9emr\",\"text\":\"iPSC-derived midbrain organoids were dissociated into single-cell suspensions using a Worthington Papain Dissociation System kit according to manufacturer’s instructions. Organoids were minced and incubated with 2.5 mL papain/DNAase solution on an orbital shaker for 30 min at 37 °C. Organoid suspensions were triturated using scalpels and 1 mL low-attachment pipette tips and then incubated on an orbital shaker for 20 min at 37 °C twice. After enzyme inactivation, the cell suspensions were filtered with a 40-µm cell strainer. The final cell suspension was centrifuged at 300×g for 7 min, and the cell pellet was resuspended in PBS-0.04% BSA at a final concentration of 1000 cells/µL, ensuring that more than 95% of the cells were viable. scRNA-Seq libraries were generated with the 10X Chromium Next GEM Single Cell 3’ Reagent Kit v3.1 according to the manufacturer’s instructions. Libraries were pooled and subjected to paired-end sequencing on the Illumina NovaSeq X platform with a sequencing depth of 300 million reads per library.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"yffj4\",\"text\":\"Worthington Papain Dissociation System kit (Worthington Biochemical), 2.5 mL papain/DNAase solution, scalpel, 1 mL low-attachment pipette tips, 40-µm cell strainer, PBS-0.04% BSA, 10X Chromium Next GEM Single Cell 3’ Reagent Kit v3.1 (Cat. number 1000128, 10x Genomics), Illumina NovaSeq X platform (SP Flow Cell, Illumina)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Dissociate iPSC-derived midbrain organoids into single-cell suspensions using a Worthington Papain Dissociation System kit according to manufacturer’s instructions.",
+    "Mince individual organoids using scalpels and incubate with 2.5 mL papain/DNAase solution on an orbital shaker for 30 min at 37 °C.",
+    "After 30 min at 37 °C, triturate organoid suspensions using 1 mL low-attachment pipette tips, then incubate on an orbital shaker for another 20 min at 37 °C.",
+    "After enzyme inactivation using the inhibition solution, filter the cell suspensions with a 40-µm cell strainer. Centrifuge the final cell suspension at 300×g for 7 min, and resuspend the cell pellet in PBS-0.04% BSA at a final concentration of 1000 cells/µL, ensuring that more than 95% of the cells are viable.",
+    "scRNA-Seq libraries were generated with the 10X Chromium Next GEM Single Cell 3’ ReagentKit v3.1 (Cat. number 1000128, 10x Genomics, Pleasanton, CA, USA) according tothe manufacturer’s instructions. Libraries were pooled and subjected topaired-end sequencing on the Illumina NovaSeq X platform (SP Flow Cell,Illumina) with a sequencing depth of 300 million reads per library."
+  ],
+  "authors": [
+    "Hariam Raji",
+    "michela.deleidi"
+  ],
+  "creator": "Hariam Raji",
+  "published_on": 1763375365,
+  "created_on": 1762363827,
+  "keywords": []
+}

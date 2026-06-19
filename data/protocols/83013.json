@@ -1,0 +1,37 @@
+{
+  "id": 83013,
+  "title": "Microscopy-based bead protein-protein interaction assay",
+  "uri": "microscopy-based-bead-protein-protein-interaction-cvbdw2i6",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gp3erpvzp/v1",
+  "description": "{\"blocks\":[{\"key\":\"f6mi6\",\"text\":\"This protocol describes how to perform microscopy-based bead protein-protein interaction assay with GST- or mCherry-tagged proteins as baits and fluorescently-tagged proteins as preys. The protocol requires to have purified proteins and allows to monitor protein-protein interaction in an equilibrium state. The fluorescent signal can be quantified.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"eg000\",\"text\":\"Experiment should be repeated at least three times for statistical analysis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"fmig4\",\"text\":\"SEC Buffer:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":11}],\"entityRanges\":[],\"data\":{}},{\"key\":\"f9kdd\",\"text\":\"25 mM HEPES pH 7.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d7r00\",\"text\":\"150 mM NaCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6nn15\",\"text\":\"Freshly added: 1 mM DTT\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4mqbv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2k9kl\",\"text\":\"Purify tagged bait and prey proteins\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"kmer\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"54vta\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"protocols\",\"mutability\":\"IMMUTABLE\",\"data\":{\"id\":83006,\"title\":\"EXPRESSION AND PURIFICATION OF HUMAN NEMO (GST-GFP-NEMO)\",\"title_html\":\"EXPRESSION AND PURIFICATION OF HUMAN NEMO (GST-GFP-NEMO)\",\"load_collapsed\":true,\"uri\":\"expression-and-purification-of-human-nemo-gst-gfp-cva6w2he\",\"type_id\":1,\"image\":{\"source\":\"https://www.protocols.io/img/default_protocol.png\",\"webp_source\":null,\"placeholder\":\"https://www.protocols.io/img/default_protocol.png\",\"webp_placeholder\":null},\"guid\":\"E5B11D60054B11EEBF94D164CA237311\",\"creator\":{\"name\":\"OLIVIA HARDING\",\"first_name\":\"\",\"last_name\":\"\",\"affiliation\":\"Children's Hospital of Philadelphia\",\"affiliation_url\":null,\"username\":\"olivia--harding\",\"link\":null,\"user_image_file\":{\"guid\":\"00000000000000000000000000000001\",\"file_name\":\"avatar.png\",\"url\":\"https://www.protocols.io/img/avatars/001.png\",\"mime\":\"image/png\",\"size\":0,\"width\":100,\"height\":100,\"avg_color\":\"\",\"scan_status\":0,\"created_at\":0}},\"stats\":{\"number_of_steps\":23},\"protocol_image_file\":{\"guid\":\"00000000000000000000000000000001\",\"file_name\":\"avatar.png\",\"url\":\"https://www.protocols.io/img/default_protocol.png\",\"mime\":\"image/png\",\"size\":0,\"width\":400,\"height\":400,\"avg_color\":\"\",\"scan_status\":0,\"created_at\":0}}}}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"brq8j\",\"text\":\"Glutathione Sepharose 4B (Cytiva)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"99kas\",\"text\":\" RFP-Trap Agarose beads (ChromoTek) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cn950\",\"text\":\" 384-well glass-bottom microplate (Greiner Bio-One)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9f64f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6cr7f\",\"text\":\"confocal microscope\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7a1th\",\"text\":\"ImageJ software\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Equilibrate 20 µL Glutathione Sepharose 4B or RFP-Trap Agarose beads with 200 µL SEC buffer Prepare these bead equilibrations for each condition.",
+    "Incubate equilibrated beads with GST- or mCherry-tagged bait protein for a final concentration of 5 micromolar (µM) in SEC buffer for 01:00:00 at 4 °C with gentle rotation.",
+    "Centrifuge beads at 3000 rcf for 00:02:00 at 4 °C",
+    "Remove the supernatant and wash beads with 200 µL SEC buffer",
+    "Repeat for a total of 2 washes, then discard buffer",
+    "Add 20 µL SEC buffer to achieve a beads:buffer ratio of 1:1",
+    "Pipette prey proteins into the wells of a 384-well glass-bottom microplate (Greiner Bio-One) A volume of at least 20 µL should be used to cover the bottom of the well Prey concentration should be 0.1 micromolar (µM) to 1 micromolar (µM) , but should be adjusted depending on the strength of the interaction Different preys should be conjugated to different fluorophores",
+    "Pipette 1 µL of bait-coated beads into each well",
+    "Incubate the plate for 00:30:00 in the dark at Room temperature",
+    "Use a microscope configured to detect fluorescent signal (e.g. Zeiss LSM 700 confocal microscope equipped with Plan-Apochromat 20X/0.8 objective)",
+    "Acquire fluorescent images in the middle section of the beads and collect more than one image for each well",
+    "Also acquire bright field images for each field",
+    "Draw several lines across each bead in the fluorescent channel and measure the intensity along the lines",
+    "Record the maximum intensity for each bead",
+    "For background correction, measure the average intensity of a rectangular ROI that covers an area of each field of view with no beads",
+    "Subtract the average intensity of the background ROI from each bead maximum in that field",
+    "Calculate the average of the background-corrected maximum intensities of beads for each sample"
+  ],
+  "authors": [
+    "Elisabeth Holzer"
+  ],
+  "creator": "OLIVIA HARDING",
+  "published_on": 1690815886,
+  "created_on": 1686155360,
+  "keywords": []
+}

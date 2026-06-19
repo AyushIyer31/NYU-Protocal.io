@@ -1,0 +1,27 @@
+{
+  "id": 106703,
+  "title": "Miniscope calcium imaging data acquisition of cortical activity in non-human primates (NHPs)",
+  "uri": "miniscope-calcium-imaging-data-acquisition-of-cort-dkfp4tmn",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn612pl5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"7soq1\",\"text\":\"The protocol describes head-mounted miniscope calcium imaging data acquisition for NHPs.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"f0n1k\",\"text\":\"Introduction:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":13}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7jq6d\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5tljs\",\"text\":\"In recent years, calcium imaging has become a standard technique in experiments utilizing rodent experimentation and is now also becoming useful in primate research.  The size of the primate brain precludes the use of this technique to monitor deep brain structures in monkeys, and the relatively low density and substantial brain movement between experiments in NHPs complicate this research.  Nevertheless, the ability to follow an indicator of activity in multiple simultaneously recorded and genetically defined neurons with sub-second time resolution is highly attractive and bound to lead to important scientific insights.  Below, we briefly describe the essential steps in our laboratory’s calcium imaging experiments. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ogm6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f2nc3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"fkl2a\",\"text\":\"Materials:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"cou1l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4m6lp\",\"text\":\"Primate chair\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6of1n\",\"text\":\"Miniscope (nVista3.0, Inscopix, CA, USA)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"29htc\",\"text\":\"Thermoplastic molded helmet (CIVCO medical solutions)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"11gbi\",\"text\":\"IDAS data acquisition software (Inscopix, CA, USA)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "The ability to image calcium transients requires prior placement of a GRIN lens assembly (as detailed in a separate protocol dx.doi.org/10.17504/protocols.io.e6nvw15w2lmk/v1 ).",
+    "Calcium imaging starts several weeks after the cortical implantation of the GRIN lens assembly and injection of a virus solution [for example, the authors have used a solution containing a 1:1 mixture of AAV5-TRE-GCAMP6f (9.05x10e13 gc/ml) and AAV5-ThyStTA (5.13x10e13 gc/ml)] 9 to 48 days post lens implantation surgery. We image calcium transients at least twice weekly.",
+    "After completion of the recording session (which may include ‘spontaneous’ periods as well as periods during which the animal is performing a task), save the data for later analysis. Subsequently, disconnect the miniscope from the GRIN lens assembly, the cover of the GRIN lens assembly is re-placed and fastened in place, and the head of the animal is released from the restraint.",
+    "Following head fixation, remove the protective cover of the GRIN lens assembly, and connect a miniscope (in our experiments, an nVista3.0 instrument; Inscopix, CA, USA) to the GRIN lens assembly.",
+    "At the beginning of the calcium imaging session, the animal is seated in a primate chair, and restrict its head movements (either through the use of a head fixation bolt or through the use of a thermoplastic helmet).",
+    "Collect calcium transient data then in the cortical region of interest (for example, the primary motor cortex, M1) using the miniscope. When using the Inscopix hardware, imaging and recording control the parameters using their IDAS data acquisition software. We typically use a frame rate of 10 Hz, an LED power setting of 0.6-0.8, and a sensor gain of 7-8. Adjust the electronic focus to a focal plane demonstrating calcium transients. Alignment of frames, and, thus, identification of neurons, across several days is helped by also visualizing non-neuron frame elements (such as blood vessels)."
+  ],
+  "authors": [
+    "Adriana Galvan",
+    "Thomas Wichmann"
+  ],
+  "creator": "Johnson Agniswamy",
+  "published_on": 1724970356,
+  "created_on": 1724837454,
+  "keywords": []
+}

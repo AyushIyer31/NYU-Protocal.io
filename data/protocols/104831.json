@@ -1,0 +1,43 @@
+{
+  "id": 104831,
+  "title": "Immunofluorescence for detection of ALFA-tag in S. rosetta ",
+  "uri": "immunofluorescence-for-detection-of-alfa-tag-in-s-dik74czn",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl85k38l2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"ef46h\",\"text\":\"Immunofluorescence (IF) allows for the visualization of protein localization in fixed-cell samples. This protocol builds upon commonly used IF methods, with a focus on retaining and minimally damaging S. rosetta's collar and flagella. It also introduces a new permeabilization buffer composed of LICOR Intercept blocking buffer for greater anti-ALFA tag nanobody specificity and signal. This protocol has been optimized for IF with the ALFA tag, but works well for common antibodies, such as DM1A and phalloidan.  This protocol was developed with essential input from Flora Rutaganira and Alain Garcia de las Bayones\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":201,\"length\":10}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Pipette 50 µL of 10 mg/mL, Poly-D-Lysine onto the glass bottom of a glass-bottomed 96 well plate and incubate for 00:15:00 at Room temperature . Poly-D-Lysine Hydrobromide Fisher Scientific Catalog #ICN10269410 (CAS: 27964-99-4) clear bottomed 96 well plates MP Biomedicals Catalog #102694",
+    "Remove the excess liquid and add 50 µL, filtered Synthetic Seawater (SSW) . Repeat twice more for a total of 3 washes. Synthetic Seawater ASTM D 1141 Ricca Chemical Company Catalog #8363",
+    "Gently pipette 50 µL, cells onto the surface of the glass. Use a wide-bore pipette tip (or cut a 1000 µl pipette tip) to decrease shear forces on cells. Let the cells settle on the surface for 00:15:00 .",
+    "Gently apply 50 µL, PFA fix buffer and incubate for 00:05:00 How to gently apply buffers henceforth. 1. Using gel loading pipette tips only, slowly pipette 50 µl of buffer on the left side of the well. 2. Afterwards, slowly remove 50 µl from the right side of the dish. 3. ALWAYS leave the cells covered in the remaining 50 µl of liquid. 4. All steps are performed at Room temperature .",
+    "Gently apply 50 µL, PFA/Tween fix buffer and incubate for 00:05:00",
+    "Gently apply 50 µL, glycine wash buffer and proceed immediately to permeabilization",
+    "Gently apply 50 µL, PermB-meOH buffer and incubate for 00:15:00",
+    "Gently apply 50 µL, diluted antibodies . Repeat one more for a total of 2 applications to ensure the antibodies are not too dilute. Incubate for 01:00:00 Cover the plate/samples during this incubation to minimize photobleaching.",
+    "Gently apply 50 µL, PEM . Repeat one more for a total of 2 applications to properly wash the cells of unbound antibodies.",
+    "With the cells in PEM buffer, proceed to imaging.",
+    "Seed cells at 10,000 cells/mL 24 hours hours in advance and grow at 22 °C",
+    "On the day of imaging, gently concentrate cells by centrifugation at 500 x g, 22 °C, 5 minutes",
+    "Carefully remove supernatant with a pipette, leaving the last 50-100 µL Leaving behind some supernatant is because the cell pellet is very delicate after the light spin and may not be visible.",
+    "Gently swirl the remaining supernatant and cells to resuspend the pellet. Do NOT vortex.",
+    "Assemble The following buffers, and use all at room temperate PFA fix buffer: Fixes the cells initially A B 1 100 μL 10x CSB 2 187.5 μL 16% paraformaldehyde 3 250 μL 60% (w/v) sucrose 4 462.5 μL water 5 1 mL total This buffer is made fresh each time",
+    "PermB buffer: Permeabilization buffer without methanol for washing cells and diluting antibodies %s %s",
+    "PermB-meOH buffer: Permeabilizes the cells with a higher Tween concentration and methanol %s %s INTERCEPT blocking buffer, PBS LI-COR Catalog #927-70001",
+    "Gycline wash buffer : Quenches the remaining PFA from the previous fixation steps %s %s",
+    "PFA/Tween fix buffer: Continues the fixation process and the Tween addition very gently permeabilizes cells %s %s",
+    "PEM buffer : For washing cells of excess antibodies and matching the reflective index of water immersion objectives %s %s",
+    "Gently apply 50 µL, PermB buffer Use PermB buffer WITHOUT antibodies, as this is only a wash step.",
+    "During the incubation, dilute antibodies in PermB buffer A B C D E F G 1 Antigen Source Ex nm Em nm [Stock] [Final] Dilution 2 alpha-Tubulin Mouse (DM1A) 0.5 mg/ml 10 µg/ml 1/500 3 Rosetteless Rabbit UNK UNK 1/400 4 Mouse IgG Recombinant Nanobody 568 603 1/500 5 Rabbit IgG Recombinant Nanobody 647 665 6 DNA dye POPO-1 434 456 0.1 mM 0.1 µM 1/1000 7 F-Actin Phalloidin 488 518 200 U/ml 0.8 U/ml 1/250 8 ALFA tag Recombinant Nanobody 650 670 5 µM 20 nM 1/250 Henceforth keep the sample in the dark to protect from photobleaching!"
+  ],
+  "authors": [
+    "Fredrick leon",
+    "David Booth"
+  ],
+  "creator": "David Booth",
+  "published_on": 1725323788,
+  "created_on": 1722968967,
+  "keywords": []
+}

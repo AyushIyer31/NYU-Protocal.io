@@ -1,0 +1,30 @@
+{
+  "id": 36536,
+  "title": "Electrophysiological recording of electrically-evoked compound action potentials",
+  "uri": "electrophysiological-recording-of-electrically-evo-bfwyjpfw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bfwyjpfw",
+  "description": "{\"blocks\":[{\"key\":\"6qau3\",\"text\":\"Recording electrically-evoked compound action potentials (ECAPs) is performed to confirm that the electrode array is appropriately placed along the nerve. Recording ECAPS also allows confirmation that electrical stimulation is above neural threshold i.e. that electrical stimulation activates neural activity. The procedure is performed under anesthesia (immediately post-surgery) or in awake animals, and the procedure should incorporate all local requirements for standards of animal experimentation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"4eQM7\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"hJoOw\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"2ERo6\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"M0plS\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"lJl5A\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":3,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":415474,\"guid\":\"4255DAB6341F11EE9D4302C0B41BC903\",\"name\":\"Stimulator\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"http://repository.bionicsinstitute.org:8080/bitstream/123456789/356/1/2018_Senn_Focusedelectrical.pdf\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":980,\"name\":\"Bionics Institute\",\"link\":\"http://www.bionicsinstitute.org/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":415475,\"guid\":\"4255DB08341F11EE9D4302C0B41BC903\",\"name\":\"Isolated Differential Amplifier with active probe\",\"mol_weight\":0,\"sku\":\"ISO-80\",\"url\":\"https://www.wpiinc.com/iso-80-isolated-differential-amplifier-with-active-probe\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":261,\"name\":\"World Precision Instruments\",\"link\":\"https://www.wpiinc.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":415476,\"guid\":\"4255DB5A341F11EE9D4302C0B41BC903\",\"name\":\"National Instruments data acquisition device\",\"mol_weight\":0,\"sku\":\"USB-6210\",\"url\":\"https://www.ni.com/pdf/manuals/375194d.pdf\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":981,\"name\":\"National Instruments\",\"link\":\"https://www.ni.com/en-au.html\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"3\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":415477,\"guid\":\"4255DBAB341F11EE9D4302C0B41BC903\",\"name\":\"Igor Pro-8\",\"mol_weight\":0,\"sku\":\"8.04\",\"url\":\"https://www.wavemetrics.com/downloads/current/Igor%20Pro%208\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":982,\"name\":\"Wavemetrics, Inc\",\"link\":\"https://www.wavemetrics.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "This procedure is performed immediately following implantation surgery or in awake, unrestrained animals. The electrical impedance of the array are tested using a custom stimulation to assess any open or short circuiting of wires. Senn, P., R. K. Shepherd, and J. B. Fallon. Focused electrical stimulation using a single current source. Journal of Neural Engineering.. http://10.1088/1741-2552/aad0a",
+    "Measure the impedance of each electrode using biphasic current pulses passed between the electrode of interest and all other implanted electrodes. Measure the peak voltage at the end of the first phase (Vtotal) of the current pulse following delivery of a 25 ms per phase current pulse and current of 931 mA.",
+    "If all electrodes are functional, connect a pair of electrodes to the stimulator and a pair of electrodes to the electrophysiological recording equipment",
+    "Record ECAPs similar to that described in: Anti-inflammatory Effects of Abdominal Vagus Nerve Stimulation on Experimental Intestinal Inflammation. Frontiers in Neuroscience.",
+    "Generate electrically-evoked compound action potentials (ECAPs) using bipolar stimulation and recording electrode configuration.",
+    "Make two sets of evoked electrophysiological recordings (averaged from a total of 50 responses).",
+    "Make recordings at currents from 0 to 2 mA in 0.1 mA steps using a biphasic pulse (width = 200 ms, 50 ms interphase gap) presented at a rate of 10 pulses per second.",
+    "Sample recordings at a rate of 100 kHz and filter (high pass: 200 Hz; low pass: 2000 Hz; voltage gain 10 3 )",
+    "The electrically-evoked neural response threshold was defined as the minimum stimulus intensity producing a response amplitude of at least 0.1 mV"
+  ],
+  "authors": [
+    "James B Fallon",
+    "Sophie Payne"
+  ],
+  "creator": "Sophie Payne",
+  "published_on": 1603237452,
+  "created_on": 1588553960,
+  "keywords": []
+}

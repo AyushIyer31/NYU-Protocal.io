@@ -1,0 +1,33 @@
+{
+  "id": 244196,
+  "title": "RNAscope In Situ Hybridization, Imaging, and Quantification",
+  "uri": "rnascope-in-situ-hybridization-imaging-and-quantif-hsqcb6dsx",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6eyj5gqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"0u8qo\",\"text\":\"To validate gene expression differences identified by single nucleus RNA sequencing, RNA in situ hybridization was performed using the RNAscope Multiplex Fluorescent v2 Assay (Advanced Cell Diagnostics, Inc., Newark, CA, USA). Human brain tissue from the prefrontal cortex of either PD or controls was flash frozen and stored at -80°C. Prior to performing the assay, frozen tissue was embedded in OCT and sectioned at 10μm using cryostat. RNAscope in situ hybridization was performed according to the manufacturer’s protocol. Briefly, fresh frozen sections were fixed in 10% neutral buffered formalin for 1 hour at room temperature, then sequentially dehydrated in 50% ethanol, 70% ethanol, 100% ethanol, and 100% ethanol for 5 minutes each at room temperature. Tissue sections were pretreated with hydrogen peroxide and protease to block endogenous peroxidase activity and optimally permeabilize the sections. Target RNAscope probes, such as EPHA6, CBLN2, PLCG2 and HSP90AA1, were hybridized to tissue sections, signal was amplified, and fluorescent dyes of Opal Dye 570 or 650 were applied. Positive control RNAscope probes for human POLR2S, PPIB, UBC, and HPRT-1 and a negative control probe for Bacillus subtilis DapB were used to ensure detection of target RNA signals and a lack of non-specific probe binding. All tissue sections were counterstained with DAPI. Images were captured using a Leica SP8 motorized staging confocal microscope with a 20x lens (Leica #506517). Confocal imaging settings were kept constant between healthy controls and PD. RNA expression was quantified using QuPath, by detecting the cells using DAPI channel, identifying and measuring probe channel signals, and calculating estimated spot count per cell for the entire cryosection. RNA expression in human brain sections from PD patients was compared to that in healthy control human brains in approximately 10,000 nuclei from each tissue section, and statistical significance was determined using Student’s t-test.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Flash freeze human brain tissue from the prefrontal cortex of either PD or controls and store at -80°C.",
+    "Embed frozen tissue in OCT and section at 10μm using a cryostat.",
+    "Fix fresh frozen sections in 10% neutral buffered formalin for 1 hour at room temperature.",
+    "Sequentially dehydrate sections in 50% ethanol, 70% ethanol, 100% ethanol, and 100% ethanol for 5 minutes each at room temperature.",
+    "Pretreat tissue sections with hydrogen peroxide and protease to block endogenous peroxidase activity and optimally permeabilize the sections.",
+    "Hybridize target RNAscope probes, such as EPHA6, CBLN2, PLCG2, and HSP90AA1, to tissue sections.",
+    "Amplify signal and apply fluorescent dyes of Opal Dye 570 or 650.",
+    "Use positive control RNAscope probes for human POLR2S, PPIB, UBC, and HPRT-1 and a negative control probe for Bacillus subtilis DapB to ensure detection of target RNA signals and a lack of non-specific probe binding.",
+    "Counterstain all tissue sections with DAPI.",
+    "Capture images using a Leica SP8 motorized staging confocal microscope with a 20x lens (Leica #506517).",
+    "Keep confocal imaging settings constant between healthy controls and PD.",
+    "Quantify RNA expression using QuPath by detecting cells using the DAPI channel, identifying and measuring probe channel signals, and calculating estimated spot count per cell for the entire cryosection.",
+    "Compare RNA expression in human brain sections from PD patients to that in healthy control human brains in approximately 10,000 nuclei from each tissue section, and determine statistical significance using Student’s t-test."
+  ],
+  "authors": [
+    "Le Zhang"
+  ],
+  "creator": "Le Zhang",
+  "published_on": 1774473022,
+  "created_on": 1772221923,
+  "keywords": []
+}

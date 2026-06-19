@@ -1,0 +1,39 @@
+{
+  "id": 218201,
+  "title": "JAX_DPC: scRNA sequencing using 10X Chromium Fixed RNA Profiling",
+  "uri": "jax-dpc-scrna-sequencing-using-10x-chromium-fixed-gzbzbx2p7",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlkrpj1v5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"aoa2f\",\"text\":\"This protocol outlines the use of the Chromium Fixed RNA Profiling Reagent Kits (10x Genomics) for single-cell gene expression analysis of multiplexed samples derived from cortical brain organoids, across a three-day consecutive time course.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Chromium Fixed RNA Profiling for Multiplexed Samples",
+    "Fixation of Cells",
+    "Dissociate differentiated iPSCs into single cells",
+    "The reagents and process workflow are described below: https://cdn.10xgenomics.com/image/upload/v1694503892/support-documents/CG000527_ChromiumFixedRNAProfiling_MultiplexedSamples_UserGuide_Rev_E.pdf",
+    "Centrifuge sample at 350 rcf for 5 min at 4°C.",
+    "Add 1 ml Fixation Buffer to the sample pellet and pipette mix 5x.",
+    "Remove the supernatant without disturbing the pellet.",
+    "Incubate for 1 h at room temperature (20°C) or for 16-24 h at 4°C for long term storage.",
+    "Centrifuge at 850 rcf for 5 min at room temperature.",
+    "Remove the supernatant without disturbing the pellet.",
+    "Add 1 ml chilled Quenching Buffer to the sample pellet and pipette mix 5x and keep on ice.",
+    "Determine cell concentration of the fixed sample using AO/PI (acridine orange/propidium iodide) Cell Viability Kit for Luna-FL automated cell counter.",
+    "Thaw Enhancer (10x Genomics PN-2000482) for 10 min at 65°C. Vortex and centrifuge briefly. Keep warm and verify no precipitate before use.",
+    "Add 1 volume pre-warmed Enhancer to fixed sample in Quenching Buffer. Pipette mix.",
+    "Store sample at 4°C for up to 1 week. For long term storage (up to 6 months) also add 50% glycerol for a final concentration of 10% with Quenching buffer and store at -80°C."
+  ],
+  "authors": [
+    "anahita.amiri",
+    "Jessica Grassmann",
+    "grace.frohock Frohock",
+    "Allison McNeilly",
+    "Elise Courtois"
+  ],
+  "creator": "Juliana Alcoforado Diniz",
+  "published_on": 1747216447,
+  "created_on": 1747159780,
+  "keywords": []
+}

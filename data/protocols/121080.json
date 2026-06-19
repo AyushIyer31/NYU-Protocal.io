@@ -1,0 +1,41 @@
+{
+  "id": 121080,
+  "title": "Ubp-M knockdown, RT-PCR and ChIP assays",
+  "uri": "ubp-m-knockdown-rt-pcr-and-chip-assays-d2gy8bxw",
+  "doi": "dx.doi.org/10.1038/nprot.2007.433",
+  "description": "{\"blocks\":[{\"key\":\"egozv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"kjcor\",\"text\":\"Posttranslational histone modifications play important roles in regulating chromatin structure and function. One example of such modifications is histone ubiquitination, which occurs predominately on H2A and H2B. Although the recent identification of the ubiquitin ligase for histone H2A has revealed important roles for H2A ubiquitination in Hox gene silencing as well as in X inactivation, the enzyme(s) involved in H2A deubiquitination and the function of H2A deubiquitination are not known. In order to identify the deubiquitinase for histone H2A, we developed an in vitro deubiquitination assay employing uH2A (ubiquitinated H2A)-containing mononucleosomes as substrates.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"xdzgf\",\"text\":\"Hela cells\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qb8ki\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vqfyk\",\"text\":\"Effectene (Qiagen)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"i6vsj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dob5l\",\"text\":\"puromycin\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"nawqv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"37rbv\",\"text\":\"siRNA oligonucleotides\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"pfrj5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7mxrz\",\"text\":\"lysis buffer [1% SDS, 10 mM EDTA, 50 mM Tris-HCl (pH 8.0), 0.1 mM PMSF, 1 ug/ml aprotinin, 1 ug/ml leupeptin and 1 ug/ml pepstatin A]\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eyog6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lu2p3\",\"text\":\"dilution buffer [1 % Triton X-100, 150 mM NaCl, 2 mM EDTA, 20 mM Tris-HCl (pH 8.0), 0.1 mM PMSF, 1 ug/ml aprotinin, 1 ug/ml leupeptin and 1 ug/ml pepstatin A]\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Ubp-M knock-down cell lines were generated using a vector-based knockdown strategy as previously described (Wang et al., 2004).",
+    "Transfect vectors expressing the hairpin RNAs as listed below into HeLa cells with Effectene (Qiagen).",
+    "Select transfected cells in the presence of 2 ug/ml puromycin.",
+    "Amplify selected clones and analyse the efficiency of Ubp-M knockdown as well as its effect on cellular uH2A levels were analyzed as described (Wang et al., 2004).",
+    "The DNA sequence encoding the stem hairpin RNA for Ubp-M: 5’-ACCAGTGCTTAGAGAACTATCTCTTGAATAGTTCTCTAAGCACTGGT-3’ and 5’-ACCAGTGCTTAGAGAACTATTCAAGAGATAGTTCTCTAAGCACTGGT-3’.",
+    "For transient knockdown, purchase siRNA oligonucleotides against Ubp-M from Invitrogen in a purified, annealed duplex form and transfect into cells as described (Wei et al., 2006). The sequences for these siRNA are as follows:",
+    "siRNA1 5’-CCUCCUGUUCUUACUCUUCAUUUAA-3’ 5’-UUAAAUGAAGAGUAAGAACAGGAGG-3’ and siRNA2 5’-CCGGAAAUCUUAGAUUUGGCUCCUU-3’ 5’-AAGGAGCCAAAUCUAAGAUUUCCGG-3’",
+    "To construct RNAi resistant Ubp-M constructs, introduce a point mutation into targeting siRNA nucleotide acid sequence but without changing the encoded amino acid.",
+    "Perform site-directed mutagenesis as described (Wang et al., 2004).",
+    "Use Primers F1: 5’-AAGGATCCGGAAAGAAACGGACAAAGGGAAAAACTGTTCC-3’ and R1: 5’-TTCTTTTAGGAGCTCCCTGAGTACAGGAGTTTGTGACAA-3’ to amplify the N-terminal portion.",
+    "Use Primers F2: 5’-CAGAACTTGTCACAAACTCCTGTACTCAGGGAGCTCCTAAA-3’ and R2: 5’-GATCTAGATTACAGTATTCTCTCATAAAATAGGAGGTACG-3’ to amplify the C-terminal portion.",
+    "Amplify the full length Ubp-M construct using primers F1 and R2 and inserted into pcDNA3 vector (Invitrogen).",
+    "Verify the mutation by DNA sequencing.",
+    "Perform transfection with Effectene (Qiagen) following the manufacturer’s instruction.",
+    "72 hrs after transfection, seed and transfect cells with the same plasmid again.",
+    "Collect cells six days after the first transfection and analyze by RT-PCR as described (Wei et al., 2006). Primers for RT-PCR amplification: HoxA9: 5’-ACGTGGACTCGTTCCTGCTG-3’ and 5’-AGGTTTAATGCCATAAGGCCG-3’ HoxB1: 5’-TCAGGCGGTTGACAGCTATG-3’ and 5’-ATGCTGCGGAGGATATGGC-3’ HoxC5: 5’-TGTGGGAACTATGGATCGGC-3’ and 5’-ACGGGTAAATCTGTGGCGG-3’ HoxD10: 5’-GATTCCTTGATCAGTGCCTGC-3’ and 5’-GCCGAAATGAGTTTGTTGCG-3’ GAPDH: 5’-ACCACAGTCCATGCCATCAC-3’ and 5’-TCCACCACCCTGTTGCTGTA-3’",
+    "Perform ChIP and double ChIP as described with modifications as the following.",
+    "Lyse cells in lysis buffer [1% SDS, 10 mM EDTA, 50 mM Tris-HCl (pH 8.0), 0.1 mM PMSF, 1 ug/ml aprotinin, 1 ug/ml leupeptin and 1 ug/ml pepstatin A] and dilute 10 times with dilution buffer [1 % Triton X-100, 150 mM NaCl, 2 mM EDTA, 20 mM Tris-HCl (pH 8.0), 0.1 mM PMSF, 1 ug/ml aprotinin, 1 ug/ml leupeptin and 1 ug/ml pepstatin A] for immunoprecipitation.",
+    "Perform PCR reactions with the following primers: A: 5&#39;-CTTCATTCAGCTTTGGGCACGCTT-3&#39; and 5&#39;-GGCCTGGTTGAAACAAGCGTTGAA-3&#39; B: 5’-CCCAGAATGCTGAGGCGCTTTAAT-3’ and 5’-ACCACCACTACCACCATGGAAACT-3’ C: 5’-TGGTTCTTTAATGAGCCGGACCAC-3’ and 5’-TGTTGCCACACACGGGAAGATACT-3’ D: 5’-TGTCCTTCTTGGCCCAGTCAGTTT-3’ and 5’-TAAGAAGCGGCCAAGGTGTCTCTA-3’ E: 5’-TAGAGACACCTTGGCCGCTTCTTA-3’ and 5’-CACGGACAACAGCGACATCTACTA-3’ F: 5’-ATGTCCTTTCCCAACAGCTCTCCT-3’ and 5’-AAATATCCAGGGACGGGAACCTCA-3’ G: 5’-TGGTTGGTGCTTGAGTTGGGAAAC-3’ and 5’-TTGCCTGGGTATTGTTGCATTCCC-3’ H: 5’-TCACCGACAGGCAGGTCAAGATTT-3’ and 5’-TGGATGGATGGATGGATGGATGCT-3’",
+    "In the PCR reaction, include one cycle of 5 min at 95°C followed by 33 cycles of 95°C for 30 sec, 68°C for 30 sec, 72°C for 30 sec for regions A, B, C, E, F and G. For D, use an annealing temperatures of 66°C, and for H, 60°C. Perform all PCR reactions within the range of linear amplification.",
+    "Regulation of cell cycle progression and gene expression by H2A deubiquitination by Joo HY, Zhai L, Yang C, Nie S, Erdjument-Bromage H, Tempst P, Chang C and Wang H published in Nature on 14 Sep, 2007 https://dx.doi.org/10.1038/nature06256"
+  ],
+  "authors": [
+    "Hengbin Wang"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1191824467,
+  "created_on": 1191824467,
+  "keywords": []
+}

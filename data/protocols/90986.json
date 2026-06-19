@@ -1,0 +1,39 @@
+{
+  "id": 90986,
+  "title": "A validated protocol to UV-inactivate SARS-CoV-2 and herpesvirus-infected cells",
+  "uri": "a-validated-protocol-to-uv-inactivate-sars-cov-2-a-c44iyyue",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgb676qlpk/v2",
+  "description": "{\"blocks\":[{\"key\":\"6pj7j\",\"text\":\"Downstream analysis of virus-infected cell samples, such as reverse transcription polymerase chain reaction (RT PCR) or mass spectrometry, often needs to be performed at lower biosafety levels than their actual cultivation, and thus the samples require inactivation before they can be transferred. Common inactivation methods involve chemical crosslinking with formaldehyde or denaturing samples with strong detergents, such as sodium dodecyl sulfate. However, these protocols destroy the protein quaternary structure and prevent the analysis of protein complexes, albeit through different chemical mechanisms. This often leads to studies being performed in over-expression or surrogate model systems. To address this problem, we generated a protocol that achieves the inactivation of infected cells through ultraviolet (UV) irradiation. UV irradiation damages viral genomes and crosslinks nucleic acids to proteins but leaves the overall structure of protein complexes mostly intact. Protein analysis can then be performed from intact cells without biosafety containment. While UV treatment protocols have been established to inactivate diluted viral solutions, a protocol was missing to inactivate crude infected cell lysates, which heavily absorb light. In this work, we develop and validate a UV inactivation protocol for SARS-CoV-2, HSV-1, and HCMV-infected cells. A fluence of 10,000 mJ/cm2 with intermittent mixing was sufficient to completely inactivate infected cells, as demonstrated by the absence of viral replication even after three sequential passages of cells inoculated with the treated material. The herein described protocol should serve as a reference for inactivating cells with these or similar viruses and allow for the analysis of protein quaternary structure from bona fide infected cells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":1395,\"length\":1},{\"style\":\"italic\",\"offset\":1789,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"96ulo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5t7qd\",\"text\":\"The last step in this version contains a supplemental video with extra context and tips, as part of the protocols.io Spotlight series, featuring conversations with protocol authors.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":4,\"length\":9}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"3A92E85483E011EEBA850A58A9FEAC02\",\"url\":\"https://www.protocols.io/view/a-validated-protocol-to-uv-inactivate-sars-cov-2-a-c44iyyue?step=10\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"eb7ka\",\"text\":\"This protocol was validated for 2x106 Vero E6 cells infected with SARS-CoV-2 at MOI 0.01, 5x105 Vero B4 cells infected with HSV-1 at MOI 3, and 2x105 HFF-1 cells infected with HCMV at MOI 3 in an individual 6-well.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":36,\"length\":2},{\"style\":\"sup\",\"offset\":94,\"length\":1},{\"style\":\"sup\",\"offset\":148,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"76ohb\",\"text\":\"Begin with infected cells in a 6-well plate.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"7nnkp\",\"text\":\"Handle infectious materials within the appropriate containment facilities. Use UVP Crosslinkers in accordance with the manufacturer’s guidelines.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"ahdpn\",\"text\":\"phosphate-buffered saline (PBS)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3n9mv\",\"text\":\"Incidin Plus\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bnr0q\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fjqfl\",\"text\":\"infected cells\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"87u7d\",\"text\":\"cell scraper\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5ee2q\",\"text\":\"microcentrifuge tube\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7p834\",\"text\":\"CryoELITE Tissue Vial (Wheaton, #W985100)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9oneu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2kice\",\"text\":\"P1000 micropipette\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5n0hu\",\"text\":\"microcentrifuge\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"39j0t\",\"text\":\"UVP Crosslinker (CL-3000, Analytik Jena)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Wash each well with 1 mL PBS",
+    "Scrape each well (2x10 6 cells) into 1 mL PBS",
+    "Transfer cells into a 1.5 mL tube",
+    "Pellet cells at 16000 x g, 4 °C, 1 minute",
+    "Resuspend cells in 200 μL PBS",
+    "Transfer cells to a tissue vial",
+    "254 nm UV irradiation of vials",
+    "Irradiate vials with 2,500 mJ/cm 2",
+    "Mix the cell solution with a micropipette",
+    "Repeat irradiation 3 additional times for a total of 10,000 mJ/cm 2",
+    "Screw the lids on the vials",
+    "Disinfect the outside of the tissue vials by wiping with Incidin Plus"
+  ],
+  "authors": [
+    "Timothy K. Soh",
+    "Susanne Pfefferle",
+    "Stephanie Wurr",
+    "Ronald von Possel",
+    "Lisa Oestereich",
+    "Toni Rieger",
+    "Maria Rosenthal",
+    "Jens B. Bosse"
+  ],
+  "creator": "Jens B Bosse",
+  "published_on": 1700506924,
+  "created_on": 1700070852,
+  "keywords": []
+}

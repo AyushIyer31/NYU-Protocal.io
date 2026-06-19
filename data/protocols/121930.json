@@ -1,0 +1,38 @@
+{
+  "id": 121930,
+  "title": "Alternative splicing analysis of RNA-seq data using SAJR",
+  "uri": "alternative-splicing-analysis-of-rna-seq-data-usin-d3bi8ike",
+  "doi": "dx.doi.org/10.1038/protex.2018.029",
+  "description": "{\"blocks\":[{\"key\":\"nlxb0\",\"text\":\"Here we describe a fast an efficient protocol for analyzing alternative splicing using SAJR.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"pnujk\",\"text\":\"Here we describe a fast an efficient protocol for analyzing alternative splicing using ‘cutadapt’ [1] to trim reads before alignment with ‘STAR’ [2], subsequent merging of samples using ‘samtools’ [3] and finally analysis of splicing with ‘SAJR’ [4]. We also added annotation of novel splicing events and conversion of SAJR specific ids to standard gene ids using ‘bedtools’ [5] and custom perl scripts.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Trim reads to remove adapter sequences. Example using ‘cutadapt’ and Nextera adapters: cutadapt --trim-n -m 15 -o trimmed.S1 1.fastq.gz -p trimmed.S1 2.fastq.gz -a CTGTCTCTTATACACATCTCCGAGCCCACGAGA -A CTGTCTCTTATACACATCTGACGCTGCCGACGA S1 1.fastq.gz S1 2.fastq.gz",
+    "Align the samples to the genome using ‘STAR.’",
+    "Merge all BAM files into a single BAM file using ‘samtools merge’.",
+    "Convert a GTF reference to an SAJR specific GFF reference using SAJR’s annotation conversion mode.",
+    "Run SAJR in de novo annotation mode to find novel splice-forms using the merged BAM file and the known annotation to produce a novel annotation, novel.gff",
+    "Run SAJR in annotation comparison mode to compare the novel annotation with the known annotation and use get genename from junction comparison.pl to filter the results: get genename from junction comparison.pl sajr.comp &gt; sajr.novel2known.tsv",
+    "Use bedtools and get genename from segment overlap.pl to associate SAJR ids with known gene ids from the reference: bedtools intersect -s -f 1.0 -loj -a novel.gff -b known.gff &gt; novel overlap known.gff get genename from segment overlap.pl novel overlap known.gff &gt; novel2known from overlap.tsv",
+    "Use bedtools and annotate novel segments.pl to annotate novel spliced regions: bedtools intersect -s -f 1.0 -r -loj -a novel.gff -b known.gff &gt; novel_overlap_known_stringent.gff annotate_novel_segments.pl novel_overlap_known_stringent.gff &gt; novel_overlap_known_stringent_novel.tsv",
+    "Run SAJR in count mode for each sample using the novel.gff reference.",
+    "Use the R package part of SAJR to identify alternative splicing, see sajr_analysis.R for an example workflow incorporating annotation of novel spliced regions.",
+    "The whole analysis can be completed within 24 hours for 36 samples with a total of app. 450 mio reads running on 16 cores.",
+    "The expected outcome is a list of significant alternative splicing events with with optional indication of novel splicing patterns.",
+    "The authors declare no conflicting financial interests.",
+    "Splicing factor 1 modulates dietary restriction and TORC1 pathway longevity in C. elegans by Caroline Heintz, Thomas K. Doktor, Anne Lanjuin, Caroline C. Escoubas, Yue Zhang, Heather J. Weir, Sneha Dutta, Carlos Giovanni Silva-García, Gitte H. Bruun, Ianessa Morantte, Gerta Hoxhaj, Brendan D. Manning, Brage S. Andresen, and William B. Mair published in Nature on 31 May, 2017 https://dx.doi.org/10.1038/nature20789",
+    "Supplement_0.Zip Scripts Scripts Zip file containing perl scripts used in the protocol and example R script."
+  ],
+  "authors": [
+    "Thomas Doktor",
+    "Caroline Heintz",
+    "Brage Andresen",
+    "William Mair"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1520852862,
+  "created_on": 1520852862,
+  "keywords": []
+}

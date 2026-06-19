@@ -1,0 +1,35 @@
+{
+  "id": 75491,
+  "title": "Immunoprecipitation from transfected cells",
+  "uri": "immunoprecipitation-from-transfected-cells-cmybu7sn",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l27353g1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"2dqul\",\"text\":\"This protocol provides step by step information on how to perform immunoprecipitation from transfected cells. We normally use this protocol with HEK293FT cells but it can be adopted to other cell types.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"a4k0e\",\"text\":\"Note: All solutions should be ice cold and procedures should be carried out at 4°C or on ice.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":6},{\"style\":\"bold\",\"offset\":79,\"length\":4},{\"style\":\"bold\",\"offset\":86,\"length\":6},{\"style\":\"italic\",\"offset\":0,\"length\":93}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"agc33\",\"text\":\"IP buffer:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6nfde\",\"text\":\"Substances                                      Final conc.                        (/50 ml)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":10},{\"style\":\"UNDERLINE\",\"offset\":48,\"length\":11},{\"style\":\"UNDERLINE\",\"offset\":83,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"8o9us\",\"text\":\"H2O (ice-cold)                                 N/A                                    38.25 ml\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":1,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3upp6\",\"text\":\"1 M Tris-HCl (pH 7.4 at 4°C)         50 mM                               2.5 ml\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7frlt\",\"text\":\"4 M NaCl                                          300 mM                             3.75 ml\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d6jq5\",\"text\":\"10% (w/v) Triton X-100                  1%                                       5 ml\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e27ig\",\"text\":\"add fresh Protease Inhibitors\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7quek\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"be48v\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eocm7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Drain medium and gently wash cells once with ice-cold PBS (0.5ml for mw6; 1 ml for 6-cm dish; 3 ml for 10-cm dish).",
+    "Use a gentle stream to dislodge cells with PBS.",
+    "Centrifuge the tube at 3000 x g for 1 min and discard the supernatant.",
+    "Resuspend pellet of cells with 500 μl of ice-cold IP buffer",
+    "Lyse the cells by sonication: 3 times 10’’/30% on ice, waiting 1 minute in between for the lysate to cool down",
+    "Incubate the whole cell lysate on an end-to-end rocker at 4°C/30’ to solubilize the membrane proteins.",
+    "Spin down at 14,000 x g for 10 minutes at 4°C to pellet debris and genomic DNA, save the supernatant.",
+    "Save 75 µl, Cell Lysate (CL) and add 25 µl of SB4X",
+    "Mix total proteins (equal amounts for each sample) with 10-20 µl of Protein G beads and 2 µg of specific antibody. Note: wash Protein G Beads 3 times with PBS to remove ethanol present in the storage buffer. Let equilibrate in IP buffer for minute before use.",
+    "Incubate on an end-to-end rocker at 4°C/overnight",
+    "Separate the beads and save 75 µl of Flow Through (FT) and add 2 µl of SB4X",
+    "10. Wash beads 3 times with 1 ml of IP buffer",
+    "11. Elute with 50 µl of SB1X (IP)",
+    "12. Warm samples at 42°C/10’ (membrane proteins would start to aggregate at higher temperature).",
+    "13. Load 10 µl of each sample per well for SDS-PAGE"
+  ],
+  "authors": [
+    "Cesare Orlandi"
+  ],
+  "creator": "Cesare Orlandi",
+  "published_on": 1674070406,
+  "created_on": 1674067475,
+  "keywords": []
+}

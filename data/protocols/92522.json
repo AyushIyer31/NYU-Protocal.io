@@ -1,0 +1,28 @@
+{
+  "id": 92522,
+  "title": "Immunohistochemistry data processing",
+  "uri": "immunohistochemistry-data-processing-c6kizcue",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v9p5omg3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"322qa\",\"text\":\"This protocol has been used for high throughput quantification of immunohistochemistry data of mouse brain sections\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"ah6q8\",\"text\":\"1. Zeiss AxioScan.Z1 slide scanning microscope system (Carl Zeiss Inc., Thornwood, NY, USA) with a Plan-Apochromat 20x/0.8 objective lens.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4e99i\",\"text\":\"2. Hamamatsu Orca flash 4.0 camera\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1fnjr\",\"text\":\"3. The Zeiss ZEN blue 2.3 software\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"32v7q\",\"text\":\"4. MediaCybernetics’ Image-Pro 11 software package (Rockville, MD, USA).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Widefield fluorescent images are collected for GFP and DAPI fluorescent channels using a Zeiss AxioScan.Z1 slide scanning microscope system with a Plan-Apochromat 20x/0.8 objective lens.",
+    "All images are acquired using a Hamamatsu Orca flash 4.0 camera with an average tile count of 165 tiles per brain section.",
+    "The Zeiss ZEN blue 2.3 software package was used for collection and stitching of the 2-color (DAPI &amp; GFP) tiled images.",
+    "Widefield fluorescent images are then post-processed using MediaCybernetics’ Image-Pro 11 software package (Rockville, MD, USA).",
+    "Every stitched image is processed using a protocol modified for each antibody. Initially, the image is masked to solely include the tissue in areas of interest.",
+    "Smart Segmentation is used to separate GFP-expressing puncta or fibrils from DAPI-stained nuclei in tissue evaluated with each antibody.",
+    "Threshold segmentation is used for each antibody staining to separate actual signal from background auto-fluorescence.",
+    "The Count/Size function is designed to extract the percent of the tissue sample that stains positive for GFP."
+  ],
+  "authors": [
+    "Tae-Un Han"
+  ],
+  "creator": "Tae-Un Han",
+  "published_on": 1703017244,
+  "created_on": 1703011661,
+  "keywords": []
+}

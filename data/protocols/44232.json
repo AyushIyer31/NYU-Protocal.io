@@ -1,0 +1,38 @@
+{
+  "id": 44232,
+  "title": "Stable transfection of unicellular relative of animals,  Corallochytrium limacisporum, using Lonza Nucleofector",
+  "uri": "stable-transfection-of-unicellular-relative-of-ani-bpfgmjjw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bpfgmjjw",
+  "description": "{\"blocks\":[{\"key\":\"6g039\",\"text\":\"This protocol describes the transfection of Corallochytrium limacisporum, one of the unicellular relatives of animals. The transfection is performed using Lonza Nucleofector System X and reporter cassettes that contain endogenous regulatory elements of C. limacisporum. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":44,\"length\":28},{\"style\":\"italic\",\"offset\":253,\"length\":16}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4fnhd\",\"text\":\"Keeps cells on ice during the whole procedure \\u0026 all reagents must be ice-cold\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"80gbv\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"295lt\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"frcki\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"6b1o6\",\"text\":\"Main materials:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"csqqf\",\"text\":\"P3 PrimaryCell 4D-Nucleofector Kit S (32 rxn) Kit Catalog# H3V4XP-5032\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"97mgg\",\"text\":\"pUC19 carrier plasmid\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6d3gj\",\"text\":\"highly concentrated reporter construct \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"evfc4\",\"text\":\"1XPBS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7qncl\",\"text\":\"Marine Broth\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4b438\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4qls9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Inoculate 100 μl of C. limacisporum culture in 5ml of Marine Broth in 25cm 2 flask. Keep at 23°C air incubator for two days.",
+    "Scrape gently and count cells to reach 1.5E6 cells / condition using hemocytometer If there are more conditions, it is recommended to pull the cells together to get more visible pellet",
+    "Spin down the cells at 1500xg for 5&#39; Discard the supernatant.",
+    "Wash the pellet with an ice-cold 1XPBS (100 μl / condition) Spin down and discard the supernatant.",
+    "Transfer the mix (cells + DNA plasmid) into a strip (from the manufacture kit) Do it carefully &amp; without creating bubbles Final volume: 20-25 μl",
+    "Insert into Lonza nucelofection system and apply code: EN - 138",
+    "After transfection, immediately add 80 μl of Marine Broth medium (MB) to a well Mix up and down",
+    "Check for positive cells 24 - 48h post-transfection using fluorescent microscopy",
+    "Replace 500 μl of medium with fresh MB that contains 300 μg/ml of puromycin Increase of mCherry-positive cells can be observed over time.",
+    "Add DNA mix to the cell pellet",
+    "Mix DNA plasmids: 10 μg of an reporter plasmid + 20 μg carrier DNA (pUC19) It is recommended that plasmid is highly concentrated (2-5 μg/ul) to avoid final buffer dilution with the DNA solution Our plasmid contains mCherry coding sequence &amp; resistance to puromycin gene ( pac ) under constitutive promoter: actin (Addgene: #104446) or tubulin (Addgene#129560) Note: 10 μg of reporter plasmids guarantees the highest efficiency, however a successful transfection can be also obtained with 5 and 1μg of the plasmid",
+    "Transfer DNA mix to 20 μl of ice-cold P3 buffer It is recommended not to keep the cells in P3 buffer for too long",
+    "Transfer to 12-well plate (NUNC) that contains 1 ml of growth medium (MB) and incubate overnight"
+  ],
+  "authors": [
+    "Aleksandra Kozyczkowska",
+    "Sebastián R. Najle",
+    "Eduard Ocaña-Pallarès",
+    "Cristina Aresté",
+    "Iñaki Ruiz-Trillo",
+    "Elena Casacuberta"
+  ],
+  "creator": "Aleksandra Kozyczkowska",
+  "published_on": 1605028707,
+  "created_on": 1604598720,
+  "keywords": []
+}

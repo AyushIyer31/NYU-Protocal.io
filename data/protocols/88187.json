@@ -1,0 +1,38 @@
+{
+  "id": 88187,
+  "title": "MSI-Explorer - a napari plug-in for biochemical annotation of mass spectrometry imaging data",
+  "uri": "msi-explorer-a-napari-plug-in-for-biochemical-anno-c2c3yayn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj3dyplk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"7fimp\",\"text\":\"Mass spectrometry imaging (MSI) provides label-free localization of hundreds of biochemicals — metabolites, lipids, exposomes, drugs and peptides — from single cells to tissue sections. This capability has opened up unprecedented opportunities in diagnosis and pathophysiology understanding of diseases such as cancers, diabetes, neurodegenerative, and metabolic disorders. However, MSI analysis is not supported by the napari ecosystem, which has left out the growing spatial metabolomics community from taking advantage of napari’s powerful visualization and image analysis capabilities.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"61q4f\",\"text\":\"The MSI-Explorer, a napari plug-in is a powerful tool designed for targeted biochemical annotations in MSI data. This user manual provides a comprehensive guide on how to install, use, and explore the functionalities of the plug-in within the napari platform. It covers data import, visualization, mean intensity calculation, region of interest (ROI) analysis, annotation with selected database and pre-processing such as noise reduction and normalization. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"sb11\",\"text\":\"The imzML and .ibd files are needed. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ahe7m\",\"text\":\"It is recommended to be centroid data.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3nlch\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"297j6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "In anaconda prompt, create the environment by typing this. conda create -y -n napari-env -c conda-forge python=3.9 In this case, “napari-env” is the name of the environment. Any name can be given.",
+    "Then, activate the environment. conda activate napri-env",
+    "Install napari by using this commend. pip install &#34;napari[all]&#34;",
+    "You can install MSI-Explorer via pip : pip install MSI-Explorer MSI-Explorer https://www.napari-hub.org/plugins/MSI-Explorer",
+    "When installation finished, it is ready to use napari. Just type napari and napari window will pop up. Choose the MSI-Explorer plug in.",
+    "1. Select imzml file using &#34;Load imzML&#34;. 2. Metadata can be checked by &#34;View Metadata&#34;.",
+    "Calculating mean intensity To calculate the mean spectrum, click on “Show true mean spectrum”. Show image to see the image view (Or it will automatically change.) To export as .csv file, click “Export spectrum data”. To save the spectrum plot, click &#34;Export spectrum plot&#34;. To export as .csv file, click “Export spectrum data”.",
+    "Calculating mean intensity of selected m/z value: In order to check only one m/z value, zoom-in the spectrum plot. The figure will be as shown as below. In order to see that, the display mode should be &#34;Multi&#34;. The data can be exported as .csv file by using &#34;Show true mean spectrum&#34;.",
+    "To select the ROI, click on &#34;Select ROI or mean spectrum&#34;. Adjust the brush size and label color. You can fill the area by using paint icon. Then click on the &#34;Calculate ROI mean spectrum&#34;. You can export as .csv file by using &#34;Export spectrum data&#34;. If one m/z is needed, just zoom-in the spectrum plot window and export. Before selecting the second ROI, remove the first selected area by using eraser or label 0.",
+    "To use the database search, click on &#34;Select&#34; and a pop-up window will appear. Then, click on &#34; Metabolite_database_ver 1 &#34; which is build-in database and &#34;Confirm&#34;. 1. For instance, type 191 and the theoretical mass and its name will appear. 2. The user can select the range of the m/z value for the display image.",
+    "The pre-processing capabilities of MSI-Explorer enhance data quality and prepare MSI data for downstream analysis. Follow these steps for pre-processing:",
+    "Normalization The normalization methods that the user can apply are Total ion current (TIC) Root mean square (RMS) Medium Reference peak",
+    "Noise reduction The level of noise reduction is shown by percentage. The user can adjust the number depending on their experiment needed."
+  ],
+  "authors": [
+    "Nay Min Min Thaw Saw",
+    "Lennart Kowitz",
+    "Peter Lampen",
+    "Karl W Smith",
+    "Jianxu Chen",
+    "PRASAD PHAPALE"
+  ],
+  "creator": "Nay Min Min Thaw Saw",
+  "published_on": 1696844226,
+  "created_on": 1695365435,
+  "keywords": []
+}

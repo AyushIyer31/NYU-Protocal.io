@@ -1,0 +1,37 @@
+{
+  "id": 242969,
+  "title": "Toxicity Testing of Compounds in Galleria mellonella Larvae",
+  "uri": "toxicity-testing-of-compounds-in-galleria-mellonel-hrhzb5377",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewov1k7wkgr2/v1",
+  "description": "{\"blocks\":[{\"key\":\"9qfh1\",\"text\":\"This protocol describes a method for toxicity screening of chemical compounds, nanoparticles, or microbial metabolites using Galleria mellonella larvae. The procedure utilizes 7th instar larvae injected with test compounds via the last proleg, followed by survival monitoring over 72 hours. With a sample size of 10+ larvae per treatment group, this assay allows for statistically strong, rapid, low-cost preliminary toxicity screening in an invertebrate model that shares key physiological similarities with mammals. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":125,\"length\":19}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"77td8\",\"text\":\"Dose volume: Do not exceed 10–20 µl per larva to avoid mechanical damage.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":12}],\"entityRanges\":[],\"data\":{}},{\"key\":\"bbg0s\",\"text\":\"Vehicle toxicity: Always include vehicle control; DMSO \\u003e10% can be toxic.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":17}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fd2fd\",\"text\":\"Larvae quality: Use only healthy, active larvae of similar size.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":15}],\"entityRanges\":[],\"data\":{}},{\"key\":\"51dgt\",\"text\":\"Sterility: Work aseptically to avoid infection-related death.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"efrqg\",\"text\":\"Replicates: Repeat experiment at least 3 times independently for statistical power (total n=30 per group across replicates).\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":11}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"7eoi7\",\"text\":\"Follow institutional guidelines for invertebrate use. Euthanize larvae by freezing at -20°C for 2 h after experiment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"6e3bg\",\"text\":\"Galleria mellonella larvae: 7th instar larvae (≈300 mg each, cream-colored, active). Minimum 10 larvae per treatment group + 10% extra for selection.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":28}],\"entityRanges\":[],\"data\":{}},{\"key\":\"ce5eg\",\"text\":\"Hamilton syringe (10 µl) with removable needle.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":16}],\"entityRanges\":[],\"data\":{}},{\"key\":\"abtf5\",\"text\":\"6-well cell culture plates (sterile, non-treated).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":26}],\"entityRanges\":[],\"data\":{}},{\"key\":\"916sg\",\"text\":\"Optional: Dissecting microscope or magnifying lamp.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Acclimate larvae at experimental temperature for 24 h before injection. 30 °C, or experimental temp.",
+    "Prepare compound solutions freshly on the day of injection. Filter-sterilize if possible (0.22 µm).",
+    "Assign random 7 th instar larvae to each group to avoid health/size bias.",
+    "Plan groups (n=10-16 larvae per group): Group 0: Optional handling control (to test if larvae survive handling/physical trauma). Group 1: Vehicle control (same solvent used to prepare the compound solutions). Group 2: Positive control (substance known to be toxic with similar mode of action of test compound) Groups 3-X: Test compounds at desired concentrations (e.g., low, medium, high dose, or serial dilutions). Group 1: Negative control (uninjected or vehicle-injected).Group 2: Vehicle control (e.g., PBS with 1% DMSO if used).Group 3: Positive control (e.g., 10 µL of 10% SDS).Groups 4–X: Test compounds at desired concentrations (e.g., low, medium, high dose).",
+    "Surface sterilize each larvae before injection by wiping each larva gently with 70% ethanol and allowing to dry on filter paper.",
+    "Grab a larva by its sides with the thumb and the index fingers and flip it upside down to expose its abdomen.",
+    "Localize the hind-left proleg of the larva and carefully insert the needle of the syringe about 5 mm into the body of the larva.",
+    "Inject the contents of the syringe slowly to prevent any leaking, and remove the syringe.",
+    "Place each individual larva in a well of a 6 or 12-well dish and repeat for all the larvae and conditions.",
+    "Transfer the dishes to an incubator and incubate the larvae for 72+ hours at desired temperature with 12-12 hours illumination cycle. Do not provide food during experiment.",
+    "Prepare a Hamilton syringe with 10 µl of the desired solution.",
+    "Monitor survival at 0, 2, 4, 6, 8, 12, 24, 48, 72 hours post-injection (adjust based on kinetics).",
+    "Monitor health using the Health Score Index points system every 24 hours. Modified from DOI: 10.1080/21505594.2021.1950269 %s %s",
+    "Calculate percent survival per group over time and plot Kaplan–Meier survival curves. This can be done easily in GraphPad Prism.",
+    "Compare groups using log-rank test or Cox proportional hazards (if multiple doses).",
+    "Determine the LD₅₀ using the following formula: LD₅₀ = Log₁₀(xₖ) + (Log₁₀(d) * (0.5 - Σpᵢ)) where: xₖ = Lowest concentration that produces 100% mortality d = Log-interval between doses (10-fold dilutions) Σpᵢ = Sum of the proportions of mortality for all doses up to but not including xₖ",
+    "Plot the average health score vs time. Analyse the data by performing a Repeated Measures ANOVA, and post-hoc tests (Bonferroni or Tukey&#39;s HSD) to determine if the differences are significant."
+  ],
+  "authors": [
+    "Juan Jose Quispe Haro"
+  ],
+  "creator": "Juan Jose Quispe Haro",
+  "published_on": 1770787357,
+  "created_on": 1770718720,
+  "keywords": []
+}

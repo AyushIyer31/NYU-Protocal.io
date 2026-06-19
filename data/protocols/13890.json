@@ -1,0 +1,30 @@
+{
+  "id": 13890,
+  "title": "Metabolomics",
+  "uri": "metabolomics-rtad6ie",
+  "doi": "dx.doi.org/10.17504/protocols.io.rtad6ie",
+  "description": "{\"blocks\":[{\"key\":\"4du92\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"525s1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"1plru\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"e1ba4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Female third instar wandering larvae were weighed, and methanol was added to make up each sample to 20 mg/ ml.",
+    "Metabolites were extracted using an ultrasonic probe (30 s), 1 h incubation at 4° C and then centrifugation to remove particulates",
+    "100 µl aliquots of the supernatant were derivatised [200] before mass spectrometric interrogation with an Agilent GC/MSD system (Agilent Technologies, CA, USA) controlled by Chemstation software.",
+    "The GC inlet temperature was set to 230° C. 1.0 µl of derivatised sample was injected in splitless mode, using helium as a carrier gas at constant-flow of 1.0 ml/ min.",
+    "Chromatographic separation was performed on a 30 m SH-RXi-5Sil MS column (Shimadzu, NSW, Australia) with 0.25 mm internal diameter and 0.25 µm film thickness.",
+    "The oven temperature was programmed at 70° C for 2 min, then ramped at 15° C/ min to 320° C, and held 8 min.",
+    "Electron ionisation mass spectra were recorded at 1.4 scans/ s over the range m/z 50–700. The MSD auxiliary temperature, source temperature, and quadrupole temperature were set to 280° C, 230° C, and 150° C, respectively.",
+    "Analytes were identified using the NIST 2011-Wiley Mass Spectra Library. GC peaks containing mass spectra with a match quality (spectral purity) of more than 70% were considered to be tentatively identified.",
+    "No internal standard was employed. Normalisation was performed by maintaining a constant sample mass per volume.",
+    "Peak areas were log-transformed and statistical analysis used the limma package. Benjamini-Hochberg’s correction was used to control the FDR."
+  ],
+  "authors": [
+    "Wen Aw"
+  ],
+  "creator": "Wen Aw",
+  "published_on": 1541606770,
+  "created_on": 1531979366,
+  "keywords": []
+}

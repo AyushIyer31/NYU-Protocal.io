@@ -1,0 +1,29 @@
+{
+  "id": 243122,
+  "title": "Differentiation of Human Induced Pluripotent Stem Cells into Midbrain Neurons",
+  "uri": "differentiation-of-human-induced-pluripotent-stem-hrnsb55ef",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v9bzmml3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"75np5\",\"text\":\"This protocol aims to differentiate human induced pluripotent stem cells (hiPSCs) into midbrain neurons using a defined media composition and specific growth factors, ensuring high purity and reproducibility for potential applications in transplantation and disease modeling.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"red9\",\"text\":\"Follow standard laboratory safety protocols when handling all reagents and biological materials. Use personal protective equipment (PPE) including gloves, lab coat, and safety goggles.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"8vpa3\",\"text\":\"Geltrex (Growth factor-reduced, 2D matrix for cell culture) \\nLaminin (1 mg/mL stock solution, for coating plates)\\n6-well plates (Tissue culture treated) \\n50 mL conical tubes (Sterile, for media preparation) \\n100 mm plates (Tissue culture treated) \\n\\nReagents:\\nMedia Neurobasal Medium - Basal medium for neuronal culture\\nSupplement Glutamax - Glutamine supplement for cell culture\\nSupplement B27 Supplement - Serum-free supplement for neuronal culture\\nSupplement N2 Supplement - Supplement for neuronal differentiation\\nInhibitor Y-27632 - ROCK inhibitor to enhance cell survival\\nInhibitor LDN193189 - BMP signaling inhibitor\\nInhibitor SB431542 - TGF-β signaling inhibitor\\nAgonist SAG - Sonic Hedgehog pathway activator\\nInhibitor CHIR99021 - GSK-3 inhibitor for WNT signaling\\nGrowth Factor GDNF - Neurotrophic factor for neuronal survival\\nGrowth Factor BDNF - Neurotrophic factor for neuronal differentiation\\nChemical Ascorbic Acid - Antioxidant for neuronal cultures\\nChemical Dibutyryl cAMP - cAMP analog for neuronal differentiation\\nGrowth Factor TGF-β3 - Growth factor for neuronal differentiation\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Dissociate hiPSCs using Accutase and plate them at 400,000 cells / cm 2 on Geltrex-coated plates.",
+    "1. Thaw a vial of hiPSCs and resuspend in 10 mL of culture medium. 2. Centrifuge at 160 g for 3 minutes. 3. Resuspend the pellet in 1 mL of Accutase and incubate at 37°C for 5 minutes. 4. Neutralize with 10 mL of culture medium and centrifuge again at 160 g for 3 minutes. 5. Resuspend in 5 mL of culture medium and plate on Geltrex-coated plates.",
+    "1. Add 10 µM Y-27632 to the culture medium and incubate for 24 hours.",
+    "Induce differentiation by changing the media composition and adding specific growth factors.",
+    "1. Prepare base media: Combine 500 mL Neurobasal medium, 5 mL Glutamax, 5 mL B27, and 5 mL N2 supplement. 2. Supplement with 250 nM LDN193189, 10 µM SB431542, 1 µM SAG, and CHIR at specified concentrations:0.7µM day 0-3, 7.5µM day 4-9, 3µM day 10-11.",
+    "Continue to change the media every 2 days, adjusting CHIR concentrations as specified.",
+    "After day 10, switch to post-patterning maturation media.",
+    "1. Prepare maturation media: Combine base media with 20 ng/mL GDNF, 20 ng/mL BDNF, 0.2 mM ascorbic acid, 0.1 mM dibutyryl cAMP, and 1 ng/mL TGF-β3.",
+    "1. Change to maturation media starting on day 10 and continue for 4 weeks."
+  ],
+  "authors": [
+    "Elena Coccia"
+  ],
+  "creator": "Elena Coccia",
+  "published_on": 1773928144,
+  "created_on": 1770917235,
+  "keywords": []
+}

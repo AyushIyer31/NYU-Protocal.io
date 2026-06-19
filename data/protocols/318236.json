@@ -1,0 +1,30 @@
+{
+  "id": 318236,
+  "title": "CRISPRi Screening for PDX1 Enhancers in Pancreatic Progenitor Cells",
+  "uri": "crispri-screening-for-pdx1-enhancers-in-pancreatic-j2z4cqf8x",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvmdow6v3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"7497r\",\"text\":\"To identify and validate enhancers of the PDX1 gene using a CRISPR interference (CRISPRi) screening approach in human embryonic stem cells (hESCs) differentiated to pancreatic progenitor cells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"17mfp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"3k6te\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "The PDX1 lentiviral library with the regular lenti-gRNA backbone was reverse transduced into 12 million hESC (i)dCas9-KRAB hESCs distributed in 10 x 10 cm plates to reach a MOI =0.3. Cells were reverse transduced in the presence of RI (10 μM) and PS (6 μg/ml).",
+    "Cells were kept under puromycin selection for 4 days, and after one day of recovery with regular E8 media.",
+    "12 million selected cells were seeded into 6-well plates (4x10^5 per well) in VTN-coated plates, grown for 48 hours in E8 medium with Dox.",
+    "After washing with Phosphate Buffered Saline (PBS) w/o Ca2+ &amp; Mg2+, cells were differentiated into Pancreatic Progenitor (PP) cells utilizing a protocol described previously (see hESC differentiation below). Rezania, A., Bruin, J.E., Arora, P., Rubin, A., Batushansky, I., Asadi, A., O&#39;Dwyer, S., Quiskamp, N., Mojibian, M., Albrecht, T., et al. (2014). Reversal of diabetes with insulin-producing cells derived in vitro from human pluripotent stem cells. Nat Biotechnol 32, 1121-1133. 10.1038/nbt.3033.",
+    "Doxycycline treatment was administered throughout the nine-days differentiation process.",
+    "After, cells were stained with LIVE/DEAD reagent and FACS-sorted using FACSaria sorters (BD Biosciences) based on PDX1 expression (reported by GFP expression) by the MSKCC cytometry facility.",
+    "PDX1-positive and PDX1-negative cells were sorted, aiming for a minimum representation = 500x (number of cells with a unique sgRNA).",
+    "Cells were pelleted down and kept at -80 for downstream gRNA sequencing. The screen was performed twice using independent biological replicates."
+  ],
+  "authors": [
+    "Julian Pulecio",
+    "Michael Beer",
+    "Danwei Huangfu"
+  ],
+  "creator": "Gary Yang",
+  "published_on": 1781657708,
+  "created_on": 1780174024,
+  "keywords": []
+}

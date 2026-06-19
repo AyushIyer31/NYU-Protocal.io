@@ -1,0 +1,29 @@
+{
+  "id": 113412,
+  "title": "Stable Cell Line Generation – RAW 264.7",
+  "uri": "stable-cell-line-generation-raw-264-7-dszc6f2w",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvm9nr5l3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"98ef4\",\"text\":\"This protocol details steps taken to create stably expressing cell lines in RAW 264.7 cells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"7p19b\",\"text\":\"DMEM (Thermo Fisher Scientific, 11965-092)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5jhv8\",\"text\":\"FBS (Thermo Fisher Scientific, 16140-071)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"h9a8\",\"text\":\"Penicillin/Streptomycin (Thermo Fisher Scientific, 15140122)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dktet\",\"text\":\"CellStripper (Corning, 356230)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dqo0o\",\"text\":\"Lipofectamine 2000 (Invitrogen, 11668019)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6k1a0\",\"text\":\"FuGene HD (Promega, E2311)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"et20b\",\"text\":\"Opti-Mem (Thermo Fisher Scientific, 31985062)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e04tv\",\"text\":\"Puromycin (Gibco A11138-03)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"19gul\",\"text\":\"Blasticidin (Invivogen ant-bl)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8bdg3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Plate 2.5 x 10^5 RAW 264.7 cells per well in a 6-well dish.",
+    "Transfect cells using Lipofectamine 2000 or FuGene HD. Ensure to use a 1:2 ratio of Piggybac transposon plasmid:gene-of-interest plasmid for a total of 1 uG DNA.",
+    "For Lipofectamine 2000 (HALO-LRRK2): In Tube 1 combine 150 µL Opti-MEM and 8 µL Lipofectamine 2000 then incubate for 00:05:00 . In Tube 2 combine 150 µL Opti-MEM and 1 uG total DNA (see above) then incubate for 00:05:00 . Combine tube 1 and tube 2. Incubate for 00:20:00 . Add drop-wise to 1 well containing 1.7 mL of media.",
+    "Change the media.",
+    "Add media containing selection-specific antibiotics.",
+    "Use Puromycin (3.5 uG/mL) or Blasticidin (10 uG/mL).",
+    "Change the media.",
+    "After cells have recovered from antibiotic selection, plate single cells into 96-well dishes to obtain clonal cell lines. After subculturing, confirm cell lines via immunoblotting."
+  ],
+  "authors": [
+    "Amanda Bentley-DeSousa",
+    "Shawn Ferguson"
+  ],
+  "creator": "Amanda Bentley-DeSousa",
+  "published_on": 1733232396,
+  "created_on": 1733142933,
+  "keywords": []
+}

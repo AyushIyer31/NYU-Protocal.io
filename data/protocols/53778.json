@@ -1,0 +1,40 @@
+{
+  "id": 53778,
+  "title": "Overlap & Gibson ligation",
+  "uri": "overlap-amp-gibson-ligation-byrspv6e",
+  "doi": "dx.doi.org/10.17504/protocols.io.byrspv6e",
+  "description": "{\"blocks\":[{\"key\":\"30bj4\",\"text\":\"This protocol is used to lagate two pieces of DNA together without digesting the fragment with restriction endonucleases.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"3sqkj\",\"text\":\"Set up a small box with ice, put DNA and enzymes on it.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5o69v\",\"text\":\"Prepare the water bath to 37℃ to have Gibson assembly.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"dur8r\",\"text\":\"Please wear gloves for the experiment,  don't try to touch the lid after PCR program initiation. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"ekkd5\",\"text\":\"DNA fragments\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6keg6\",\"text\":\"Primers\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7hmvt\",\"text\":\"ClonExpress II One Step Cloning Kit (Vazyme)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2rv6n\",\"text\":\"2×High Fidelity Master Mix (MCLAB)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3vno7\",\"text\":\"Nanodrop\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2o5f8\",\"text\":\"Thermocycler\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4l6u5\",\"text\":\"Water bath\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9u7mo\",\"text\":\"DdH2O\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bg03f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Ligation of two DNA fragments by using cases below.",
+    "Select an appropriate cloning site on the vector that will be linearized.",
+    "Vector linearization: the linearized vector can be obtained by digesting the circular vector with restriction enzymes or by reverse PCR.",
+    "Amplify the insert DNA fragments with homologous sequences (for homologous recombination) of vector-upstream or -downstream by PCR using high fidelity DNA polymerase.",
+    "Detect DNA concentration of linearized vectors and inserts by Nanodrop.",
+    "Calculation of the amount of vectors: The optimal amount of vector for the recombination with ClonExpress II is 0.03 pmol, while the optimal amount of insert is 0.06 pmol (molar ratio of vector to insertion is 1:2), as roughly calculated as follows: The optimal mass of vector = [0.02 × number of base pairs] ng (0.03 pmol) The optimal mass of insert = [0.04 × number of base pairs] ng (0.06 pmol)",
+    "Dilute linearized vectors and inserts before recombination to make sure the loading accuracy. The volume of each component loaded should be no less than 1 μl.",
+    "Set up the following reaction on ice: A B 1 Linearized Vectors X μl 2 Inserts Y μl 3 5 × CE II Buffer 4 μl 4 Exnase II 2 μl 5 ddH2O Add to 20 μl",
+    "Incubate at 37℃ for 30 min and immediately place the tube at 4℃ or on ice.",
+    "Select an appropriate cloning site on the vector that will be linearized.",
+    "Vector linearization: the linearized vector can be obtained by digesting the circular vector with restriction enzymes or by reverse PCR.",
+    "Amplify the insert DNA fragments with homologous sequences (for homologous recombination) of vector-upstream or -downstream by PCR using high fidelity DNA polymerase.",
+    "Detect DNA concentration of linearized vectors and inserts by Nanodrop.",
+    "Calculation of the amount of vectors: Molar ratio of vector to insertion is 1:1",
+    "Set up the following reaction on ice (50μl): A B 1 Forward Primer (10 μM) 1μl 2 Reverse Primer (10 μM) 1μl 3 Fragment1(vector) X 4 Fragment2(insertion) Y 5 2×High Fidelity Master Mix (MCLAB) 25μl 6 ddH2O Add to 50μl The primer is used to amplify recombinant DNA fragment/circular DNA.",
+    "Program the thermocycler as follows: A B 1 Temperature Time 2 95/98℃ 5 min 3 95/98℃ 30 s 4 Tm-3~5℃ 30 s 5 72℃ 1kb/min 6 72℃ 5~10 min 7 16℃ ∞ Repeat 30 times in 3-5 steps",
+    "Use the palm centrifuge to mix the solution in PCR tube.",
+    "Put the PCR tube into the thermocycler and Run the program.",
+    "Using agarose gel electrophoresis to confirm if correct construct was present.",
+    "Use the palm centrifuge to mix the solution in PCR tube."
+  ],
+  "authors": [
+    "Shuning Guo"
+  ],
+  "creator": "Shuning Guo",
+  "published_on": 1633420737,
+  "created_on": 1633355940,
+  "keywords": []
+}

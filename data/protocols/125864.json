@@ -1,0 +1,38 @@
+{
+  "id": 125864,
+  "title": "Protocol for Recombinant Protein Expression in Escherichia coli (BL21) with Variable Antibiotics",
+  "uri": "protocol-for-recombinant-protein-expression-in-esc-d66g9hbw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5qpvoo579v4o/v1",
+  "description": "{\"blocks\":[{\"key\":\"5w6hd\",\"text\":\"This protocol aims to achieve high-level expression of recombinant proteins in Escherichia coli (BL21) using IPTG induction and optimized growth conditions, with the option to use either Kanamycin or Ampicillin for selection.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"aivmd\",\"text\":\"Handle all reagents and biological materials according to safety guidelines. Wear appropriate personal protective equipment (PPE) including gloves and lab coat. Dispose of all waste according to institutional regulations.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"yc0zn\",\"text\":\"Materials - \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"nyo45\",\"text\":\"E. coli BL21 1 vial\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ace3z\",\"text\":\"Luria-Bertani (LB) medium 1 L liquid, 1 plate\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"kozdk\",\"text\":\"Antibiotic As required\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2ybd4\",\"text\":\"IPTG 1 M stock solution, 5 µL per culture\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ty8as\",\"text\":\"Glycerol 300 µL per culture\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dftlo\",\"text\":\"SDS Sample Buffer 100 µL per sample\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"deldh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ufnjj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"yj82k\",\"text\":\"Reagents - \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bkcbn\",\"text\":\"Pfu DNA polymerase\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"w7ir5\",\"text\":\"dNTP solution\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Thaw E. coli BL21 competent cells on ice.",
+    "Add 1 µg of plasmid DNA to 50 µL of competent cells.",
+    "Incubate on ice for 30 minutes.",
+    "Heat shock at 42°C for 45 seconds.",
+    "Immediately place on ice for 2 minutes.",
+    "Add 950 µL of LB medium and incubate at 37°C for 1 hour with shaking.",
+    "Plate 100 µL of transformed cells on LB agar plates containing either 20 µg/mL Kanamycin or 50 µg/mL Ampicillin.",
+    "Incubate overnight at 37°C.",
+    "Inoculate a single colony into 5 mL of LB medium with the selected antibiotic (Kanamycin or Ampicillin).",
+    "Grow at 37°C with shaking until OD600 reaches 0.4 (approximately 2-3 hours).",
+    "Induce protein expression by adding 5 µL of 1 M IPTG (final concentration 1 mM).",
+    "Continue shaking at 37°C for 3 hours.",
+    "Transfer 1 mL of culture to a microcentrifuge tube.",
+    "Centrifuge at 12,000 g for 2 minutes.",
+    "Discard supernatant and resuspend pellet in 100 µL of 1X SDS sample buffer.",
+    "Heat at 95°C for 5 minutes.",
+    "Load 10 µL of the sample onto an SDS-PAGE gel.",
+    "Run the gel according to standard protocols."
+  ],
+  "authors": [
+    "Tao-Ho Chang"
+  ],
+  "creator": "Tao-Ho Chang",
+  "published_on": 1744597299,
+  "created_on": 1743500336,
+  "keywords": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": 28271,
+  "title": "genotyping_PCR",
+  "uri": "genotyping-pcr-7uphnvn",
+  "doi": "dx.doi.org/10.17504/protocols.io.7uphnvn",
+  "description": "{\"blocks\":[{\"key\":\"fbc82\",\"text\":\"Protocol for doing PCR on single worm lysate. This is a basic protocol that can be adapted according to specific primers and amplicon size.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"NVVPV\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"Bg4NA\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"x2DT4\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":125897,\"guid\":\"419FE552341F11EE9D4302C0B41BC903\",\"name\":\"custom made primers\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":347185,\"guid\":\"424AD76A341F11EE9D4302C0B41BC903\",\"name\":\"Taq PCR Master Mix Kit\",\"mol_weight\":0,\"sku\":\"Cat No./ID: 201443\",\"url\":\"https://www.qiagen.com/gb/products/discovery-and-translational-research/pcr-qpcr/pcr-enzymes-and-kits/end-point-pcr/taq-pcr-master-mix-kit/#orderinginformation\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":25,\"name\":\"Qiagen\",\"link\":\"https://www.qiagen.com/us/products/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Get primers out of freezer or prepare new primers",
+    "If primers are ordered new, resuspend lypholised oligo to 100 micromolar (µM) (== 100 μmol/l). Volume of water (in μl) to add is calculated as Volume =nmol*10 Eg. for primer provided as 28.5nmol, add 285 μl of MQ water",
+    "If diluting from stock primers, make a a primer mix of 10 μM of each the forward and reverse primer. Eg. 80 µL, water + 10 µL, (100 μM) FW primer + 10 µL, (100 μM) REV primer = TOTAL 100 µL, primer mix",
+    "Prepare and label PCR tubes",
+    "Prepare and label master mix eppendorfs",
+    "Get PCR master mix and gDNA out of the freezer. Thaw PCR mix on ice and spin down to collect at the bottom of the tube.",
+    "Assemble reagents in master mix tube in following order: 1. Water 2. Primers 3. Taq PCR master mix",
+    "Precalculate how many reactions are required for each pair of primers. Remember to include a minus-template control and add 1 to the final number to make sure you don&#39;t run out of reagents 1X reaction: 12.5 µL, QIAGEN 2X Taq PCR master mix 2 µL, primer mix 2 µL, genomic DNA 8.5 µL, water 25 µL, TOTAL VOLUME Eg. for 6 reactions, need to prepare (6+1)X reactions",
+    "Dispense 23 µL, PCR mix into each PCR tube",
+    "Add 2 µL, genomic DNA to the PCR tube.",
+    "Close tubes, make sure the lids are firmly sealed, and flick to ensure all liquid is at the bottom of the tube",
+    "Put the PCR tubes in the thermocycler and run with the geno-PCR program Heat lid: 105 °C Initial denaturation: 00:03:00 93 °C 35 cycles: 1. 00:00:30 93 °C 2. 00:00:30 55 °C, adjust temperature according to primers 3. 00:01:00 72 °C, adjust time according to amplicon size. Rule: 1 min per 1kb Final extension: 00:10:00 72 °C Final Hold: 10 °C"
+  ],
+  "authors": [
+    "Ida Barlow"
+  ],
+  "creator": "Ida Barlow",
+  "published_on": 1572968547,
+  "created_on": 1569941053,
+  "keywords": []
+}

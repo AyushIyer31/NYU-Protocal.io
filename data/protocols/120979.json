@@ -1,0 +1,35 @@
+{
+  "id": 120979,
+  "title": "Luciferase assays in OT-1 hybridoma cells",
+  "uri": "luciferase-assays-in-ot-1-hybridoma-cells-d2dt8a6n",
+  "doi": "dx.doi.org/10.1038/nprot.2007.68",
+  "description": "{\"blocks\":[{\"key\":\"o7sxv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"xqcp3\",\"text\":\"This protocol was used in the above Nature Immunology paper.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":36,\"length\":17}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"psilo\",\"text\":\"Firefly Luciferase reporter vector (we have NFAT (K. Siminovitch, Samuel Lunenfeld Research Institute of Medicine), NFkappaB (G. Cheng, UCLA) and AP1 (Panomics, LR0002)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"q86gl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"l8cpq\",\"text\":\"Renilla vector (PRLSV40, Promega)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8ed7p\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"gvywi\",\"text\":\"Electroporation cuvettes (Bio-RAD; 0.4cm ;165-2088)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bm6wj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"kkvsv\",\"text\":\"Complete media \\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8qixq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jtrb0\",\"text\":\"Dual Luciferase kit (Promega; cat no E1910)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "For every transfection use half of a large (175 cm) confluent flask (2 transfections/ flask)",
+    "Collect cells and resuspend in fresh complete media at a volume of 0.5 ml / transfection (example 4 transfections, need 2 confluent large flasks, resuspend in a volume of 2 ml of complete media)",
+    "Place 0.5 ml of cells in one cuvette and place on ice",
+    "For Dlgh1- I usually transfect at least two concentrations (from 1μg-5μg) Luciferase reporter vector = 200 ng Renilla vector= 0.5-1μg",
+    "Mix DNA with cells, ensure that you flick the cuvette a couple of times to mix",
+    "Let sit on ice at least 5 minutes – do not shorten this time- can go up to fifteen minutes",
+    "Electroporate at 240 volts at 960 mF and place 0.5ml of cells immediately into 10 ml of fresh complete media in a small flask. Allow cells to sit in small flask overnight",
+    "Plate 5μg of anti-CD3 and 20μg of anti-CD28/ ml of PBS and aliquot 500μl into each well of a 6 well plate (allow antibody to sit overnight).",
+    "Twenty-four hours post-transfection, place cells in 10 mL of fresh media and take half of the cells (5mL) and put them in the antibody coated 6 well dish to be stimulated overnight. The other half should remain in the flask and will be the unstimulated sample.",
+    "Next day collect cells and spin down, resuspend in 200 μl of Passive Lysis Buffer (Promega) and let sit at room temperature for twenty minutes. Freeze thaw the cells at least once to ensure complete lysis.",
+    "Spin down debris and take 50 μl from each sample of supernantant and place in a 5mL polystyrene round bottom tube (BD 352008).",
+    "Using Program 30 on the luminometer (Cheng lab, UCLA) read luciferase numbers by adding 50 μl of LAR (Luciferase Assay Buffer, contained within Promega kit) immediately add 50 μl of STOP (Stop and glow buffer, Promega) and read in the luminometer again to get Renilla luciferase numbers to use for normalization.",
+    "The first number for each sample is the experimental luciferase number while the second number from each sample should be used as a “loading control” ensuring equal amounts of DNA were added.",
+    "The luciferase number should be divided by the renilla number. This will usually give you a number less than 0, so multiply this number by 10000 (make sure that you multiply each sample by the same number). These are the relative normalized numbers. You can either graph these numbers or calculate fold differences.",
+    "&lt;a href=&#34;https://dx.doi.org/10.1038/ni1422 &#34;&gt;Scaffold protein Dlgh1 coordinates alternative p38 kinase activation, directing T cell receptor signals toward NFAT but not NFkappa-B transcription factors by Round, J.L. et al. published in Nature Immunology on 25 Jan, 2007 https://dx.doi.org/10.1038/ni1422"
+  ],
+  "authors": [
+    "June Round"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1170061020,
+  "created_on": 1170061020,
+  "keywords": []
+}

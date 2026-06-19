@@ -1,0 +1,35 @@
+{
+  "id": 90238,
+  "title": "MTT assay",
+  "uri": "mtt-assay-c4c6ysze",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvwdoqwlmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"93s5d\",\"text\":\"Protocol for MTT cytotoxicity assay on SH-SY5Y cells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"6up71\",\"text\":\"Medium: DMEM/F-12, GlutaMAXTM (ThermoFisher Scientific) + 10% Fetal Bovine Serum (GibcoTM)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":27,\"length\":2},{\"style\":\"sup\",\"offset\":87,\"length\":2}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6m3qp\",\"text\":\"Trypsin-EDTA (0.25%)  (ThermoFisher Scientific)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9h5uj\",\"text\":\"PBS, pH 7.4 (ThermoFisher Scientific)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mt41\",\"text\":\"RPMI medium (ThermoFisher Scientific)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8fauh\",\"text\":\"MTT kit (Abcam)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"blm6s\",\"text\":\"96-well plates, PS, F-bottom (Greiner Bio-One)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2fu7k\",\"text\":\"Plate shaker\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c2m3b\",\"text\":\"Plate reader for absorbance measurement\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Culture human SH-SY5Y cells at 37 °C and 5% CO 2",
+    "Count cells and seed 10000 cells/well",
+    "Incubate at 37 °C and 5% CO 2 for 24 h",
+    "Aspirate medium from cells",
+    "Add in protein solutions",
+    "Place back at 37 °C and 5% CO 2 for 24 h",
+    "Dilute MTT 1:10 in RPMI medium",
+    "Aspirate medium from cells",
+    "Add 100 µL MTT/RPMI solution per well",
+    "Place back at 37 °C and 5% CO 2 for 4 h",
+    "Aspirate medium from cells",
+    "Add 100 µL stop solution per well",
+    "Incubate at 37 °C, 500 rpm on plate shaker",
+    "Read out absorbance at 570 nm on plate reader",
+    "Detach 80–90% confluent cells with Trypsin-EDTA"
+  ],
+  "authors": [
+    "Alexander Röntgen"
+  ],
+  "creator": "Alexander Röntgen",
+  "published_on": 1698833736,
+  "created_on": 1698796807,
+  "keywords": []
+}

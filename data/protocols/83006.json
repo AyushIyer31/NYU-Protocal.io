@@ -1,0 +1,42 @@
+{
+  "id": 83006,
+  "title": "EXPRESSION AND PURIFICATION OF HUMAN NEMO (GST-GFP-NEMO)",
+  "uri": "expression-and-purification-of-human-nemo-gst-gfp-cva6w2he",
+  "doi": "dx.doi.org/10.17504/protocols.io.261gedpojv47/v1",
+  "description": "{\"blocks\":[{\"key\":\"84jf3\",\"text\":\"This protocol describes how to express and purify human NEMO (IKK-γ) tagged N-terminally with GST and EGFP. The expression is performed with E. coli Rosetta pLysS cells. The protein is purified via a GST batch purification and gel filtration (SEC). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":141,\"length\":8}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"cejim\",\"text\":\"Lysis Buffer:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":13}],\"entityRanges\":[],\"data\":{}},{\"key\":\"61lib\",\"text\":\"50 mM HEPES pH 7.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b4ie\",\"text\":\"300 mM NaCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dvtd2\",\"text\":\"2 mM MgCl2\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1lmv5\",\"text\":\"Freshly added: 2 mM β-Mercaptoethanol, Roche Protease Inhibitor (Merck, #5056489001), and DNAse I (Sigma, #DN25-1G)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b2v4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fhc11\",\"text\":\"Wash Buffer 1:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":14}],\"entityRanges\":[],\"data\":{}},{\"key\":\"a0sk8\",\"text\":\"50 mM HEPES pH 7.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2337l\",\"text\":\"300 mM NaCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9b5ms\",\"text\":\"Freshly added: 1 mM DTT\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"evclh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"341hu\",\"text\":\"Wash Buffer 2:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":14}],\"entityRanges\":[],\"data\":{}},{\"key\":\"62tf8\",\"text\":\"50 mM HEPES pH 7.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1umra\",\"text\":\"700 mM NaCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bm5u1\",\"text\":\"Freshly added: 1 mM DTT\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eou7e\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c0mo3\",\"text\":\"SEC Buffer:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":11}],\"entityRanges\":[],\"data\":{}},{\"key\":\"57a4b\",\"text\":\"25 mM HEPES pH 7.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3ffbp\",\"text\":\"150 mM NaCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a702r\",\"text\":\"Freshly added: 1 mM DTT\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3gdfp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"brc8n\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"ailnb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"9i583\",\"text\":\"pGEX-GST-Thrombin-TEV-GFP-NEMO (Addgene ID: 199781)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"85gck\",\"text\":\"E. coli Rosetta (DE3) pLysS cells\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5lmat\",\"text\":\"LB medium with antibiotics: 50 μl/ml ampicillin and 34 μl/ml chloramphenicol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"432sq\",\"text\":\"IPTG (Isopropyl-β-D-thiogalactopyranosid)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3p2tu\",\"text\":\"Thrombin (Serva, #36402.01)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4j2m3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f71gm\",\"text\":\"Columns/Resin:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":14}],\"entityRanges\":[],\"data\":{}},{\"key\":\"b86ri\",\"text\":\"Glutathione Sepharose 4B (Cytiva, #17075605)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"62g5f\",\"text\":\"Superose 6 increase 10/300 column (Cytiva, #17517201)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Grow E. coli Rosetta (DE3) pLysS cells in 2 L LB medium at 37 °C until achieving an OD 600 nm of 0.4.",
+    "Reduce temperature to 18 °C and continue growth to OD 600 nm of 0.8.",
+    "Induce protein expression with 250 micromolar (µM) IPTG and continue growth for ~ 16:00:00 at 18 °C",
+    "Centrifuge the cells at 3000 rcf ( 4 °C , 00:15:00 )",
+    "Aspirate media and resuspend cell pellet in ~ 10 ml of 1X PBS, centrifuge the cells at 3000 rcf ( 4 °C , 00:15:00 ) and take off the supernatant.",
+    "Flash freeze the pellet in liquid nitrogen and store at -80 °C until use.",
+    "Thaw pellet and resuspend in Lysis Buffer with freshly added 2 millimolar (mM) β-Mercaptoethanol, Roche Protease Inhibitor and DNAse I",
+    "Sonicate sample 00:00:30 at 65% power for 5 cycles (Bandelin Sonopuls)",
+    "Centrifuge at 48000 rcf at 4 °C for 00:45:00",
+    "Repeat sonication for a total of 3X",
+    "Incubate the sample on equilibrated beads on a tube roller at 4 °C for 04:00:00",
+    "During this step, equilibrate 3 mL Glutathione Sepharose 4B beads by washing the slurry with water and Wash Buffer 1 (~ 6 ml).",
+    "Filter supernatant after centrifugation through a 0.45 µm syringe filter",
+    "Wash beads 5X with Wash Buffer 1",
+    "Wash beads 1X with Wash Buffer 2 These wash steps remove nonspecific proteins",
+    "Wash beads 2X with Wash Buffer 1 These washes remove high salt concentration",
+    "Cleave the resulting sample to produce GFP-NEMO by incubating with thrombin Overnight at 4 °C",
+    "Centrifuge beads at 3000 rcf for 00:03:00 at 4 °C",
+    "Collect supernatant and filter through .45 µm syringe filter",
+    "Concentrate product to a final volume of 500 µL using a 10 kDa MWCO concentrator",
+    "The concentrated and filtered protein can be applied onto a Superose 6 increase column (10/300 Cytiva) pre-equillibrated with SEC buffer This step can remove contamination and degradation products",
+    "Fractions containing the purified proteins are pooled, concentrated, frozen in liquid nitrogen and stored at - 80°C Protein purity can be determined by SDS PAGE analysis and measurement of protein concentration"
+  ],
+  "authors": [
+    "Elisabeth Holzer"
+  ],
+  "creator": "OLIVIA HARDING",
+  "published_on": 1690815332,
+  "created_on": 1686153423,
+  "keywords": []
+}

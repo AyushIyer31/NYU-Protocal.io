@@ -1,0 +1,28 @@
+{
+  "id": 124321,
+  "title": "Gibson Assembly",
+  "uri": "gibson-assembly-d5m98496",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewov1de6yvr2/v1",
+  "description": "{\"blocks\":[{\"key\":\"mbwj3\",\"text\":\"This protocol details how to clone DNA plasmids by Gibson assembly (New England Biolabs, E2621), an exonuclease-based method to easily assemble DNA in the correct order. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9i5ie\",\"text\":\"  \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"41vvj\",\"text\":\"  \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"6fusr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":4605,\"guid\":\"41073FBB341F11EE9D4302C0B41BC903\",\"name\":\"Wizard SV Gel and PCR Clean-Up System\",\"mol_weight\":0,\"sku\":\"A9281\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":23,\"name\":\"Promega\",\"link\":\"http://www.promega.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":960164,\"guid\":\"437B5C77341F11EE9D4302C0B41BC903\",\"name\":\" NEBuilder HiFi DNA Assembly Master Mix\",\"mol_weight\":0,\"sku\":\"E2621\",\"url\":\"http://\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Prepare the DNA fragments by digestion with restriction enzyme or PCR amplification. DNA fragments can be also synthesized by companies like Twist Bioscience. Ensure that the DNA fragments have overlapping ends of 15-20 base pairs.",
+    "Purify the DNA fragments by agarose gel electrophoresis, followed by excision of the corresponding band and extracting the DNA from the gel piece using a clean-up system like the Wizard SV Gel and PCR Clean-Up System.",
+    "Determine the DNA concentrations with a Nanodrop spectrophotometer.",
+    "For a reaction with 2-3 fragments, prepare the following mixture On ice , Molar ratio vector:insert = 1:2 50 ng of vector (or bigger DNA fragment) + double in pmol of insert(s) + 10 µL NEBuilder HiFi DNA Assembly Master Mix + to 20 µL deionized H 2 O. pmols = (weight in ng) x 1,000 / (base pairs x 650 Daltons) For other number of fragments and other detailed information please refer to, https://www.neb.com/en/protocols/2014/11/26/nebuilder-hifi-dna-assembly-reaction-protocol Other total reaction volume can be set as far as the Master Mix (2x) is diluted to a final concentration of 1x.",
+    "Incubate at 50 °C for 01:00:00 .",
+    "Place the reaction On ice .",
+    "Transform 50 µL of competent bacteria with 2 µL of the Gibson assembly reaction. Use of NEB Stable Competent E. coli (High Efficiency) increases the efficiency of the cloning."
+  ],
+  "authors": [
+    "Patricia Yuste-Checa",
+    "F Ulrich Hartl"
+  ],
+  "creator": "Patricia Yuste-Checa",
+  "published_on": 1742402261,
+  "created_on": 1741677050,
+  "keywords": []
+}

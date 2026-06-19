@@ -1,0 +1,40 @@
+{
+  "id": 9610,
+  "title": "Mammalian non-coding RNA knockout through epigenetic start signature excision",
+  "uri": "mammalian-non-coding-rna-knockout-through-epigenet-mmic44e",
+  "doi": "dx.doi.org/10.17504/protocols.io.mmic44e",
+  "description": "{\"blocks\":[{\"key\":\"2piah\",\"text\":\"This protocol describes how to knockout mammalian non-coding RNA genes through excision of an epigenetic transcriptional start site (TSS) signature. To this end two guideRNAs are cloned onto the pX458 CRISPR vector to induce DNA cleavage right up- and downstream of the TSS element.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"cvqqo\",\"text\":\"The protocol describes how to generate homozygous knockout cell clones. Optionally, successful target DNA excision by the dual guideRNA pX458 construct may be pre-validated by transfection into an easy-to-transfect cell line (e.g. Hek293) and genomic PCR without prior single cell clonal expansion.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"6johk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"5qisf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"ag93r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Identify the gene-proximal H3K4me3 / DNaseI signature using e.g. ENCODE high-throughput sequencing data (https://www.encodeproject.org/search/?type=ReferenceEpigenome) and a suitable genome browser (e.g. IGV, http://software.broadinstitute.org/software/igv/). Alternatively visualize H3K4me3 / DNaseI signatures using an online genome browser (e.g. http://www.ensembl.org/index.html).",
+    "Select guideRNA sequences using available tools (e.g. http://crispr.mit.edu/), cutting right before and after the identified H3K4me3 / DNaseI site, however not inside of the signature to prevent from targeting sequence elements shared by multiple TSS. Select sequences with full-length complementarity to no more than one site in the genome.",
+    "Insert guideRNA sequences into the space-holders labelled “NNN…” of the dual guideRNA cloning cassette (see below) and place a gene synthesis order (e.g. Integrated DNA Technologies): GATCGAGAAGACCTCACCGNNNNNNNNNNNNNNNNNNNNgttttagagctaGAAAtagcaagttaaaataaggctagtccgttatcaacttgaaaaagtggcaccgagtcggtgcTTTTTTACTGATAGACTGGATCTGTTAGAATGAGCCTAGAGGGCCTATTTCCCATGATTCCTTCATATTTGCATATACGATACAAGGCTGTTAGAGAGATAATTGGAATTAATTTGACTGTAAACACAAAGATATTAGTACAAAATACGTGACGTAGAAAGTAATAATTTCTTGGGTAGTTTGCAGTTTTAAAATTATGTTTTAAAATGGACTATCATATGCTTACCGTAACTTGAAAGTATTTCGATTTCTTGGCTTTATATATCTTGTGGAAAGGACGAAACACCGNNNNNNNNNNNNNNNNNNNNGTTTGGGTCTTCGATAGG",
+    "Dissolve 500 ng of the synthetic dual guideRNA cassette in 17.5 µl of water and add 2 µl of restriction buffer and 0.5 µl of BbsI enzyme (Thermo Fisher). Incubate overnight at 37 °C with lid heating in a PCR machine or in an incubation oven.",
+    "Add 80 µl of water, 300 µl ice-cold 30:1 Ethanol / 5 M sodium-acetate, 1 µl Glycoblue (Thermo Fisher) and incubate for 2 hours at – 20 °C.",
+    "Pellet DNA by centrifugation at maximum speed for 5 min using a bench-top centrifuge.",
+    "Wash once with ice-cold 70 % ethanol",
+    "Air-dry and resuspend DNA pellet in 16.5 µl of water.",
+    "Add 2 µl T4 DNA ligase buffer, 0.5 µl of T4 DNA ligase (Thermo Fisher) and 1 µl (20 ng) of BbsI-linearized pX458 vector, (Zhang lab, Addgene # 48138) mix briefly and incubate for 5 min at room-temperature.",
+    "Transform 5 µl of the ligation reaction into competent E. coli cells and grow colonies on ampicillin LB-agar overnight (37 °C). Control-transform 20 ng of BbsI digested vector to confirm complete linearization.",
+    "Pick colonies, mini-prep and send plasmid DNA for Sanger sequencing (primers see below) to confirm dual guideRNA cassette integration. pX458 forward sequencing primer: CTGGCCTTTTGCTCACATGTpX458 reverse sequencing primer: GTCTGCAGAATTGGCGCAC",
+    "Transfect pX458 construct using any transfection method of choice. For cells difficult to transfect we recommend using Lipofectamine 3000 (Thermo Fisher) and spin-lipofection. To this end complex 10 µg of plasmid DNA per 12-well according to the manufacturer’s instructions, add liposomes to the cells and spin the culture-plate at 2000 rpm for 2.5 hours at 37 °C. Afterwards incubate for 48 h at 37 °C in a cell-culture incubator.",
+    "After 48 hours of incubation suspend cells in PBS, 0.1 % FBS and sort single GFP-positive (transfected) cells into each well of a 96-well plate pre-filled with 150 µl of cell-culture medium containing 100 µg / ml Normocin (Invivogen). We use an Aria III cell sorter (BD) with 100 µm nozzle, “single-cell” purity setting, ≤ 1500 events per second and cooling switched off. Avoid using the outer wells of the 96-well plate due to rapid medium evaporation. Add 50-100 µl of fresh medium every 5-6 days until colonies have grown to a sufficient density for transfer into a larger cell-culture well format and further expansion.",
+    "Check knockout-success by genomic PCR. To this end isolate genomic DNA from clonally expanded cells (Nucleospin® tissue kit, Macherey-Nagel) and amplify the proximal gene promoter using primers flanking the guideRNA target sites by PCR. Due to the high template DNA complexity we recommend to use a hot-start polymerase to prevent from primer-dimer formation and supplementation of the PCR reaction with DMSO (2 µl / 50 µl) and MgCl2 (to be titrated).",
+    "Confirm knockout by Sanger sequencing of gel-eluted PCR bands followed by RNA-detection methods such as real-time PCR or Northern-blotting."
+  ],
+  "authors": [
+    "Janga H",
+    "Aznaourova M",
+    "Boldt F",
+    "Damm K",
+    "Grünweller ",
+    "Schulte LN"
+  ],
+  "creator": "Leon Schulte",
+  "published_on": 1518890837,
+  "created_on": 1515946773,
+  "keywords": []
+}

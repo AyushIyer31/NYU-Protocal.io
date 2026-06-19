@@ -1,0 +1,35 @@
+{
+  "id": 33646,
+  "title": "Repetitive element annotation protocol for the eastern banjo frog",
+  "uri": "repetitive-element-annotation-protocol-for-the-eas-bc4niyve",
+  "doi": "dx.doi.org/10.17504/protocols.io.bc4niyve",
+  "description": "{\"blocks\":[{\"key\":\"f5dpj\",\"text\":\"This pipeline is the repetitive element annotation by using homology-based, de novo  predictions and Tandem Repeats Finder to identify repetitive elements in the Limnodynastes dumerilii dumerilii genome assembly.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":76,\"length\":9},{\"style\":\"italic\",\"offset\":162,\"length\":33}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "The following sub-steps are the process for homology-based predictions to identify repetitive elements in the Limnodynastes dumerilii dumerilii genome assembly.",
+    "Identify known repetitive elements by aligning the Limnodynastes dumerilii dumerilii genome sequences against the Repbase-derived RepeatMasker libraries using RepeatMasker (v4.1.0). Use the parameters &#34;-nolow -norna -no is&#34; when running RepeatMasker.",
+    "Identify known repetitive elements by aligning the Limnodynastes dumerilii dumerilii genome sequences against the transposable element protein database using RepeatProteinMask (an application within the RepeatMasker package) Use the parameters &#34;-noLowSimple -pvalue 0.0001 -engine ncbi&#34; when running RepeatProteinMask.",
+    "The following sub-steps are the process for de novo predictions to identify repetitive elements in the Limnodynastes dumerilii dumerilii genome assembly.",
+    "Execute RepeatModeler (v2.0, RRID:SCR_015027) on the Limnodynastes dumerilii dumerilii assembly to build a de novo repeat library for this species.",
+    "Employ RepeatMasker (v4.1.0) to align the Limnodynastes dumerilii dumerilii genome sequences against the de novo library for repetitive element identification.",
+    "Identify tandem repeats in the Limnodynastes dumerilii dumerilii genome assembly by Tandem Repeats Finder (v4.09). Use the parameters &#34;Match=2 Mismatch=7 Delta=7 PM=80 PI=10 Minscore=50 MaxPeriod=2000&#34; when running Tandem Repeats Finder."
+  ],
+  "authors": [
+    "Qiye Li",
+    "Qunfei Guo",
+    "Yang Zhou",
+    "Huishuang Tan",
+    "Terry Bertozzi",
+    "Yuanzhen Zhu",
+    "Ji Li",
+    "Stephen Donnellan",
+    "Guojie Zhang"
+  ],
+  "creator": "Qunfei Guo",
+  "published_on": 1677496138,
+  "created_on": 1582900187,
+  "keywords": []
+}

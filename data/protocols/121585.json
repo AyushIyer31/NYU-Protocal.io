@@ -1,0 +1,37 @@
+{
+  "id": 121585,
+  "title": "Bt-CoV HKU3 PCR/Sequencing Primers",
+  "uri": "bt-cov-hku3-pcr-sequencing-primers-d2yr8fv6",
+  "doi": "dx.doi.org/10.1038/protex.2014.025",
+  "description": "{\"blocks\":[{\"key\":\"f2jz4\",\"text\":\"This protocol details the primers and conditions used for forward and reverse PCR amplification and sequencing of Bt-CoV HKU3 genomes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"iqoqb\",\"text\":\"This protocol details the steps, reagents, and conditions required to sequence Bt-CoV HKU3 genomes in the forward and reverse directions. The protocol begins with the RT-PCR step, assuming that BtCoV HKU3 RNA purified using a standard procedure (i.e., TRIzol extraction) has already been performed.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"r5r7h\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"psphb\",\"text\":\"Invitrogen SuperScript III kit\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lckig\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"hormb\",\"text\":\"dNTPS (10 mM)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lbtha\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"g7zuw\",\"text\":\"Random Hexamers\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"pjjyq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"leupf\",\"text\":\"RNasin (if desired)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"chsbd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lwk7i\",\"text\":\"Thermo Phusion PCR enzyme\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ta32h\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"xdssq\",\"text\":\"Primers (2 mM stock – see Tables 1 and 2)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dvnfa\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"loqy9\",\"text\":\"Agarose\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jkbi3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"khgtc\",\"text\":\"1X TAE Buffer\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ehgxm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3esp4\",\"text\":\"Ethidium Bromide\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"nqoj7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"pybpa\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"u8wr7\",\"text\":\"70ºC water bath\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f9fuq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"27w1u\",\"text\":\"55ºC water bath\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lmrgi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9aoyj\",\"text\":\"Thermal cycler\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "In a 1.5-µL Eppendorf tube, add 1-4 µL RNA and 1 µL Random Hexamers.",
+    "Incubate at 70ºC for 5 min.",
+    "Place reaction briefly on ice and assemble the reverse transcription reaction using the kit-supplied reagents (a master mix can be made if multiple reactions are being run): 4 µL 5X First-Strand Buffer 2 µL DTT 1 µL SuperScript III reverse transcriptase 1 µL dNTPs 1 µL RNasin (if desired) x µL H2O to 20 µL",
+    "Incubate at 55ºC for 45 min to 1 h.",
+    "Inactivate the reverse transcriptase at 70ºC for 15 min. Place reaction on ice after inactivation.",
+    "Proceed with PCR setup.",
+    "Assemble PCR reactions to generate amplicons according to those detailed in Table 3 (for whole-genome sequencing) or with any combination of forward and reverse primers from Tables 1 and 2.",
+    "PCR reaction setup: 2 µL First-strand template 1 µL Forward Primer 1 µL Reverse Primer 5 µL 10X HF Buffer 1 µL dNTPs 0.5 µL Phusion polymerase x µL H2O to 50 µL",
+    "PCR reactions are run under standard PCR conditions: 98ºC 5 min 35 cycles of: 98ºC 15 sec xºC for 30 sec* 72ºC for ~45 sec/kb 72ºC 10 min 8ºC Hold Annealing temperature is primer-dependent, but for most SARS-CoV primers in Tables 1 and 2, annealing temperatures 52-55ºC will work.",
+    "Run PCR products (5 µL/reaction) on a 0.8% agarose/1X TAE gel to verify PCR success.",
+    "Purify PCR products with PCR purification kit of choice (the Qiagen PCR Purification Kit works well).",
+    "PCR products can be diluted to 150-200 µL/reaction to ensure that enough product is present for assembling sequencing reactions.",
+    "Assemble sequencing reactions according to the primer/amplicon combinations outlined in Table 3.",
+    "Reverse transcription: 1-1.5 h PCR: 2-4 h Sequencing: facility-dependent",
+    "Primers have been designed to give clean, single-band PCR products. If multiple bands are detected, alternate annealing temperatures may be required. It may also be possible that alternate bands indicate multiple genome patterns at that locus.",
+    "None.",
+    "Supplement_0.Doc Table 2 Bt-CoV HKU3 Amplicon Primer Sets Supplement_0.Doc Table 1 Bt-CoV HKU3 Sequencing Primers"
+  ],
+  "authors": [
+    "Rachel Graham"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1404988059,
+  "created_on": 1404988059,
+  "keywords": []
+}

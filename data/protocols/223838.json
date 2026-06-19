@@ -1,0 +1,33 @@
+{
+  "id": 223838,
+  "title": "CALCIUM IMAGING PROTOCOL",
+  "uri": "calcium-imaging-protocol-g6t6bzerf",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvw4k22lmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"2mrkd\",\"text\":\"This protocol details Ca2+ imaging to analyze activity in astrocytes of the stratum radiatum of the CA1 region of the mouse hippocampus.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Locate Ca 2+ levels in astrocytes in the stratum radiatum of the CA1 region of the hippocampus are monitored using the Ca 2+ indicator fluo-4.",
+    "Load Astrocytes with the dye by incubating the slices with fluo-4-AM ( 2 micromolar (µM) and 0.01% of pluronic) for 00:45:00 - 01:00:00 at Room temperature (Araque et al. 2002; Kang et al. 1998; Nemani et al. 2010; Nett et al. 2002; Navarrete and Araque 2008).",
+    "This protocol has been proven to be suitable for measuring the calcium activity of astrocytes (Nanclares et al. 2023).",
+    "Briefly, fluo-4-positive cells present typical electrophysiological properties for astrocytes, this is, low input resistance, a quasi-linear voltage–current relationship under voltageclamped conditions, and absence of action potentials.",
+    "On the contrary, recordings from fluo-4-negative cells in the stratum radiatum exhibit typical neuronal characteristics, such as higher input resistances, a non-linear voltage– current curve, and firing of action potentials.",
+    "Additionally, incubate the slices with fluo-4 and sulforhodamine 101 (SR101), a widely used astrocyte marker known to label astrocytes in the hippocampus (Schnell, Hagos, and Hülsmann 2012), provide good co-localization between SR101 and fluo-4-positive cells (Nanclares et al. 2023).",
+    "Perform the recordings in the presence of a cocktail of neurotransmitter receptor antagonists to minimize neuronal contribution to astrocyte Ca 2+ activity (CNQX 20 micromolar (µM) , AP5 50 micromolar (µM) , MPEP 50 micromolar (µM) , LY367385 100 micromolar (µM) , picrotoxin 50 micromolar (µM) , CGP54626 1 micromolar (µM) , atropine 50 micromolar (µM) , CPT 2 micromolar (µM) , suramin 100 micromolar (µM) , flupenthixol 30 micromolar (µM) , AM251 2 micromolar (µM) and TTX 1 micromolar (µM) to block glutamatergic, GABAergic, cholinergic, purinergic, endocannabinoid and dopaminergic transmission).",
+    "Image Astrocytes using a custom-made confocal microscope (Thorlabs).",
+    "Obtain the videos at 512 × 512 resolution with a sampling interval of 00:00:01 .",
+    "Use ImageJ software (NIH) for quantitative fluorescence measurements.",
+    "Estimate Ca 2+ variations as changes in the fluorescence signal over baseline (DF/F0), and cells are considered to show a Ca 2+ event when DF/F0 increases two times the standard deviation of the baseline.",
+    "Quantify the astrocyte Ca 2+ signal as the number of Ca 2+ events per min within 00:10:00 of recording.",
+    "Obtain Astrocyte Ca 2+ events from 5 to 24 astrocytes in the field of view during the recording."
+  ],
+  "authors": [
+    "Carmen Perez De Nanclares"
+  ],
+  "creator": "Jane Balster",
+  "published_on": 1759950744,
+  "created_on": 1753081117,
+  "keywords": []
+}

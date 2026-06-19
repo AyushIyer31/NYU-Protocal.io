@@ -1,0 +1,41 @@
+{
+  "id": 35130,
+  "title": "Protocol for introducing fluorescently labeled CRISPR/Cas9 RNP complex into heterotrophic dinoflagellates",
+  "uri": "protocol-for-introducing-fluorescently-labeled-cri-bei2jcge",
+  "doi": "dx.doi.org/10.17504/protocols.io.bei2jcge",
+  "description": "{\"blocks\":[{\"key\":\"hcv3\",\"text\":\"Introducing CRISPR/Cas9 machinery into the cell as RNP complexes reduces the number of steps necessary to edit the genome, does not require codon optimization or a strong promoter, can result in higher editing efficiencies with fewer off target effects, and has lower risks of cell toxicity (Woo et al., 2015; Liang et al., 2015; Liang et al., 2017; Farboud et al., 2018).  This protocol utilizes IDTs fluorescently labeled tracrRNAs to visually check to see whether the CRISPR/Cas9 RNP molecule can make it into non photosynthetic dinoflagellates.  This protocol serves as a good starting point to evaluate the CRISPR/Cas9 RNP method, the relative transformation efficiency, and can be used to help sort cells that contain the CRISPR/Cas9 RNP molecule from cells that do not.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"f6i99\",\"text\":\"The protocol utilizes Lonza’s SG Cell Line 4D-Nucleofector™ X Kit S and IDTs  Alt-R™CRISPR/Cas9 crRNA and tracrRNA – ATTO™ 550\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"ebf9v\",\"text\":\"Make sure your dinoflagellate culture is healthy and narrow down an antibiotic cocktail that can be used to reduce the growth of bacteria in the culture.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"e1son\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4baj0\",\"text\":\"Check out the IDT application note regarding the Alt-R™ CRISPR/Cas9 tracrRNA – ATTO™ 550\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":14,\"length\":21}],\"entityRanges\":[{\"key\":0,\"offset\":14,\"length\":20}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"AD74940374E111EA87BE0242AC110003\",\"url\":\"https://sfvideo.blob.core.windows.net/sitefinity/docs/default-source/application-note/alt-r-crispr-cas9-tracrrna-atto-550-app-note.pdf?sfvrsn=72b03707_4\"}}}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"qcHkm\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"5XwzU\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":4046,\"guid\":\"410688C6341F11EE9D4302C0B41BC903\",\"name\":\"Lonza Nucleofector 4d\",\"mol_weight\":0,\"sku\":\"AAF-1002X\",\"url\":\"http://www.lonza.com/products-services/bio-research/transfection/nucleofector-devices/4d-nucleofector-system.aspx\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":127,\"name\":\"Lonza\",\"link\":\"http://www.lonza.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Combine 1 uL Alt-R™ CRISPR/Cas9 tracrRNA – ATTO™ 550 (100 uM) + 1 L Alt-R™ CRISPR/Cas9 crRNA (100 uM) + 18 uL IDT Nuclease Free Buffer",
+    "Incubate at 95˚C for 5 minutes, let cool to room temperature on bench",
+    "Meanwhile, combine 2.67 uL Alt-R Cas9 Enzyme (61 uM) + 37.33 uL IDT Nuclease Free Buffer",
+    "Form RNP complex by combining 1-part gRNA (part 1) and 1-part Cas9 (part 3) and let incubate at room temperature for 20 mins.",
+    "Note: the concentrations can and should be adjusted to determine optimal [RNP] and Cas9:gRNA ratios",
+    "Note: RNP complexes can be kept at 4˚C for a month or 5 months at -80˚C",
+    "Concentrate healthy Oxyrrhis marina cells using a flashlight. Make sure that under green light the cells have no background fluorescence (this may require not feeding them for some time)",
+    "Count cell concentration of these healthy cultures using a Sedgewick Rafter Counting Chamber. Goal is to use 200,000 cells/well for electroporation",
+    "Spin down the O. marina cells that are necessary for the experimental set-up (need to include the NPC (no pulse controls) and scrambled gRNA control). Use 2500g for 2.5 mins",
+    "Remove all but 2-5 mL of liquid, being very careful to not disturb the pellet. Transfer gently to 2 mL test tubes",
+    "Centrifuge at 900g for 1 minute and remove all remaining liquid",
+    "Resuspend in electroporation buffer",
+    "For each experimental well use Lonza’s 16.4 uL SG Buffer, Lonza’s 3.6 uL Supplement 1 Solution, and 2uL RNP complex (Step 4)",
+    "Place 22 uL into each well of Lonza’s Nucleocuvette™ 16-well strips very gently and electroporate using desired setting",
+    "Immediately add 80 uL of filtered and autoclaved seawater containing the antibiotic cocktail to limit bacteria growth",
+    "After 20-30 minutes transfer each well to a 24-well culture plate that already contains 1.4 mL of the same seawater described above",
+    "After 1.5-2 hours try to observe the cells for red fluorescence to demonstrate RNP complex uptake under green light",
+    "Continue to observe cells for fluorescence for 3 days (many experiments have shown RNP complexes are mostly degraded after 72 hours)",
+    "Isolate gDNA after ~72 hours and perform T7E1 endonuclease assay to determine gene editing efficiency"
+  ],
+  "authors": [
+    "Brittany N Sprecher",
+    "Huan Zhang",
+    "Senjie Lin"
+  ],
+  "creator": "Brittany N Sprecher",
+  "published_on": 1585877063,
+  "created_on": 1585832128,
+  "keywords": []
+}

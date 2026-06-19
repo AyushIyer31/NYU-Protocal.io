@@ -1,0 +1,31 @@
+{
+  "id": 41447,
+  "title": "Minimization of protein structures using refineD",
+  "uri": "minimization-of-protein-structures-using-refined-bkqfkvtn",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"usgn\",\"text\":\"Sometimes structural issues can be corrected with energy minimization. In this process, the weak interactions are optimized in order to produce a more thermodynamically stable structure. RefineD uses conformational sampling to try to alter homology models or other protein models to form more native like structures. This method can fix small/minor issues in the structure but cannot fix bad or inaccurate starting models. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Navigate to refineD ( http://watson.cse.eng.auburn.edu/refineD/ )",
+    "Upload your structure to the interface.",
+    "Select “conservative” for refinement mode and provide your email. Then press submit. The server takes 24 to 72 hours to run typically. I recommend copying the web address on the run page to make sure you have the information in case the email gets blocked.",
+    "When the results come back, navigate to the page and review the resulting structures. There will be 1 to 5 structures returned each with two statistics. Both statistics indicate the relative change in the refined structure to the structure you submitted. Ideally they will be similar (within 5%), however it is okay if they are not.",
+    "Record the statistics and download the structures. %s %s",
+    "In YASARA, align your refined structures to your starting structure (the model you uploaded in step 2). It helps to color each structure differently to tell the structures apart.",
+    "After alignment, look for how refineD changed the structure by minimization and record areas that changed and if possible describe how minimization changed the structure. Look at side chain packing and position of loops/secondary structure and how these features pack.",
+    "Submit one of your refined structures to Molprobity and assess the structure. MolProbity protocol: https://www.protocols.io/view/analysis-of-protein-structure-using-molprobity-bgmaju2e",
+    "Compare the results before and after refinement to see if some of the problems identified by Molprobity were fixed by energy minimization.",
+    "Name your downloaded structures using the following format: refineD_[#]_[Group_name]_[sequence_name].pdb Replace [Group_name] with your name/group name without the brackets. Replace [sequence_name] with the name of the sequence. Replace the [#] with the refineD structure number.",
+    "Indicate your OSF file location as a link within a note on this step."
+  ],
+  "authors": [
+    "Chris Berndsen"
+  ],
+  "creator": "Chris Berndsen",
+  "published_on": 1599586692,
+  "created_on": 1599077599,
+  "keywords": []
+}

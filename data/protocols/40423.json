@@ -1,0 +1,36 @@
+{
+  "id": 40423,
+  "title": "Quick-n-Dirty electrocompetent E. coli cells",
+  "uri": "quick-n-dirty-electrocompetent-e-coli-cells-bjqfkmtn",
+  "doi": "dx.doi.org/10.17504/protocols.io.bjqfkmtn",
+  "description": "",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"bve24\",\"text\":\"All steps to be conducted at room temperature with room temperature reagents, unless otherwise indicated.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"41oda\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"fh2mf\",\"text\":\"Disclaimer 1: Use at your own risk, this has NO guarantee of working for your specific plasmid, construct or strain. In my hands, it works \\u003e90% of the time with simple, pure plasmid preps and regular, boring E. coli lab strains as recipients.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ank8r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4jmdg\",\"text\":\"Disclaimer 2: These are ready-to-use electrocompetent cells made with water, not suitable for freezing, they will probably die (crystals). I never tried freezing them, but they're so quick to make that I never felt the need to pre-prep them anyway.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"faaqa\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6r9kv\",\"text\":\"Stuff you need:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8id23\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4nc4p\",\"text\":\"Recipient strain streaked out on LB, the fresher the better (e.g. streaked out the evening before and incubated at 37C overnight)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"77pc5\",\"text\":\"plasmid DNA\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5cvnu\",\"text\":\"sterile MilliQ (or ddH2O) water\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2t801\",\"text\":\"liquid LB medium, pre-warmed to 37C\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"eclaa\",\"text\":\"Electroporation cuvettes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2s666\",\"text\":\"1.5 mL Eppendorf tubes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"60cea\",\"text\":\"selective antibiotic plates\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Using a sterile toothpick, pipette tip or similar, pick up some cell material from the agar plate. How much, you ask? So that you have a visible amount on the tip but not more than that (better to have fewer cells than too many). Probably around 2 µL volume of material. I don&#39;t know, I&#39;ve never measured it. A tiny little smidgen!",
+    "Resuspend cell material in 700 µL sterile MilliQ (or ddH2O) water. Vortex for a couple of seconds to resuspend.",
+    "Spin down in benchtop centrifuge at 8&#39;000*g for 3 minutes.",
+    "Remove supernatant, add 700 µL sterile MilliQ (or ddH2O) water. Vortex for a couple of seconds to resuspend.",
+    "Spin down in benchtop centrifuge at 8&#39;000*g for 3 minutes.",
+    "Remove supernatant, add 40 µL sterile MilliQ (or ddH2O) water. Flick tube a couple of times to resuspend (cells are quite fragile at this point, do not pipette up and down, do not vortex, be nice).",
+    "Add your plasmid DNA to the cells and flick tube gently to resuspend. I recommend 2 µL, max. 5 µL of volume. Less is often more, because you don&#39;t want to introduce too much salt and other stuff from your plasmid prep. I usually go for around 2 µL of plasmid prep with appr. 20-50 ng/µL, so adding a total amount of ca. 40-100 ng of plasmid to 40 µL of competent cells.",
+    "Pipette cells+DNA mix into an electroporation cuvette. Gently tap cuvette down on the bench to remove bubbles (check visually that there are no bubbles! they will cause arcing). Say a quick prayer to the universe.",
+    "Zap them! We use 0.1 cm cuvettes from BioRad and zap the cells at 1.8 kV, 200 Ohms and 25 microFd, but preferred settings and cuvette types can vary from lab to lab. If it arcs, sparks or makes a weird popping noise: you have likely killed your cells *sad trumpet sound*. BUT: if you&#39;re feeling lucky, just proceed with the protocol and see if it worked, I have around a 30% success rate with arced samples, which is not terrible.",
+    "Walk back to your bench as fast as you can without dropping the cuvette. Immediately add 1 mL of pre-warmed LB to the cuvette and pipette up and down to resuspend. The quicker you add medium after zapping, the better. Your cells are now happy and you can relax. Unclench your jaw.",
+    "Transfer everything from the cuvette to a 1.5 mL tube and stick them in the 37C shaking incubator to recover for 30 - 60 min. I usually just tape them to the bottom, we don&#39;t have a good tube holder in there. You can sometimes skip this recovery/outgrowth step, e.g. if your selection antibiotic only affects growing cells (e.g. Ampicillin).",
+    "After the recovery period, plate on selective plates: 100 µL of recovered cells 100 µL of recovered cells diluted 1:10 in LB (leave the rest of this dilution on your bench over night, if it didn&#39;t work you can plate this tomorrow)",
+    "Spin down remaining volume of undiluted recovered cells 2 min at 10&#39;000*g, remove most of the supernatant (leave ca. 50-100 µL in tube), resuspend pellet and plate on selective plate.",
+    "Controls: Essential: streak out untransformed strain on selective plate to check for antibiotic sensitivity Optional: after recovery period, dip a sterile pipette tip into your recovered cells and streak out on LB without antibiotics, to check if the cells survived the electroporation.",
+    "Incubate all plates overnight at 37C (or other permissive temperature of your plasmid).",
+    "Next day: look at your empty plates and cry. Just kidding (?), I hope it worked! :) Happy transforming!"
+  ],
+  "authors": [
+    "elisa.granato"
+  ],
+  "creator": "elisa.granato",
+  "published_on": 1597341561,
+  "created_on": 1597340582,
+  "keywords": []
+}

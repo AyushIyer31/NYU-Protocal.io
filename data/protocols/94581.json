@@ -1,0 +1,34 @@
+{
+  "id": 94581,
+  "title": "BAF_Protocol_004 LC-MS(/MS) nLC EASY LC1200 and Orbitrap Exploris 480",
+  "uri": "baf-protocol-004-lc-ms-ms-nlc-easy-lc1200-and-orbi-c8kvzuw6",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbxb63lpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"2u0i5\",\"text\":\"This protocol gives a basic set up with LC (nLC 1200) and Instrument (Thermo Exploris 480) conditions for running proteomics samples with low to moderate complexity. This is what we use and can be adapted by shortening/lengthening gradient or changing MS parameters to fit the sample. We also use this when testing instrument performance with a standard HeLa digest.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"b1uka\",\"text\":\"These are our general settings and can be used as a starting point for most any proteomics experiment. Specific adjustments need to be made to meet specific samples or type of data required.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"4g9ud\",\"text\":\"Thermo Orbitrap Exploris 480 - BRE725533\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4fn8f\",\"text\":\"Thermo Easy Spray Ion Source - ES081\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"517nl\",\"text\":\"Thermo nLC 1200 - LC140\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"37gd9\",\"text\":\"Thermo Acclaim PepMap 100, 75um x 2cm - 164946\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"n54g\",\"text\":\"Thermo Easy Spray 75um x 150mm, 3um particle - ES900\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"42lii\",\"text\":\"Thermo Optima 0.1% FA (formic acid) in water -  LS118-500\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5gppq\",\"text\":\"Thermo Optima 80% ACN (acetonitrile) / 0.1% FA in water - LS122-500\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Suspend digested peptides with 20-40 uL of 0.1% FA.",
+    "Vortex, microfuge for 15 minutes at max speed, and take off 10uL into autosampler vial (do not touch bottom of tube). Use gel loading tip to transfer the volume to autosampler vial to prevent carrying any unsoluble material.",
+    "Make sure there is no air in the bottom of the vial, carefully add the vial into the autosampler of the nLC 1200 system.",
+    "Sample pickup: 5 uL (loop size 20 uL) with a flow of 10 uL/min.",
+    "Scan 375-1500 m/z, resolution 120K, time 60ms, normalized AGC 300%, RF lens 40%, 1 microscan",
+    "Spray Voltage 1700V, Ion Transfer Tube 275C, All gases 0.",
+    "In the sequence setup view of the Xcalibur software include each sample in a row filling with: file name, sample ID, folder directory to save results, directory for the acquisition method, vial position and injection volume. Normally use 10-50% of sample.",
+    "Sample loading: 20 uL, max. pressure 500 bar, no flow defined.",
+    "Gradient: Flow = 300 nl/min 0 min 2%B; 3 min 2% B; 3-105 min 2-25% B; 105-125 25-40% B; 125-126 min 40-95%B; 126-131 min 95%B.",
+    "Pre-column equilibration: 10 uL, max. pressure 500 bar, no flow defined.",
+    "Analytical column equilibration: 8 uL, max. pressure 500 bar, no flow defined.",
+    "Autosampler wash: standard wash with 100 uL of flush volume.",
+    "EASY-spray: column heating on, column temperature: 40°C.",
+    "Min intensity 1E4, Charge +2 to +7, Dynamic exclusion - 1 time, 20s, 10ppm, isotopes, 10 MS2 scans, isolation 2 m/z, resolution 30K, HCD NCE 30%, first mass 100, time 60ms, normalized AGC 30%, 1 microscan."
+  ],
+  "authors": [
+    "Nicholas Sherman"
+  ],
+  "creator": "Nicholas Sherman",
+  "published_on": 1707751934,
+  "created_on": 1706824304,
+  "keywords": []
+}

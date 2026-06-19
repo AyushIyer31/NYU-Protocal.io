@@ -1,0 +1,39 @@
+{
+  "id": 89019,
+  "title": "Plasma/serum sample preparation for untargeted MS-based metabolomic",
+  "uri": "plasma-serum-sample-preparation-for-untargeted-ms-c263yhgn",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"5fq7j\",\"text\":\"The following protocol describes the preparation of serum and plasma samples for non-targeted analysis by mass spectrometry coupled to liquid or gas chromatography, as proposed by the PFEM (MetaboHUB-Clermont).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Thaw the samples according to these conditions depending on the analysis to be carried out : LCMS GCMS 1 Room temperature 4°C overnight Samples thawing conditions",
+    "Extract protein by adding ice-cold methanol to each sample under the following conditions : ULC/MS grade methanol Biosolve Catalog #0013684101BS (CAS: 67-56-1) Matrix Vol MeOH LCMS Vol MeOH GCMS 1 blank NA 200 µL (plasma) 400 µL (serum) 2 plasma 200 µL 200 µL 3 serum 200 µL 400 µL Methanol volume to be added to extract proteins",
+    "Mix and placed the samples at -20 °C for 00:30:00 .",
+    "Centrifuge samples 15493 x g, 4 °C, 10 minutes (Sigma 3-16PK, Fischer Bioblock Scientific). The supernatant is divided into three aliquots. A intermediate pooled QC sample is prepared by mixing 10 µL from each extracted samples (per day or per batch). Sample Type Vol supernatant LCMS (µL) Vol supernatant Plasma GCMS Vol supernatant Serum GCMS (µL) Vol internal standard GCMS (µL) 1 Pool QC 45 200 NA NA 2 Safety 45 200 300 10 3 Sample 45 200 300 10 4 Blank NA 200 (milliQ water) 300 (milliQ water) 10 Distribution of extracted samples",
+    "Store samples for LCMS analysis at -80 °C until further analysis",
+    "Dry samples completely using a EZ2.3 genevac system (Biopharma Technologies France). (Genevac EZ-2, EZ-2, https://www.spscientific.com/Products/Centrifugal_Evaporators___Sample_Concentrators/Genevac/EZ-2_Series/EZ-2_Series/, https://s3.amazonaws.com/pr-journal/7mi2jk6.png ) The following program is used: %s %s Programme HPLCFinal Stage 10 minReduce Odour OffLamp Off",
+    "Derivatisation for GCMS analysis :",
+    "Add 80 µL of BSTFA (1%TMCS) in the mixture and derivatize at 70 °C for 01:00:00",
+    "Dissolve the dry samples in adding 80 µL of methoxylamine solution to each vial.",
+    "Vortex vigorously for 1 min and incube at 37 °C for 24:00:00 (in order to inhibit the cyclization of reducing sugars and the decarboxylation of α-keto acids).",
+    "Waiting a few minutes and transfer 50 µL of derivatized mixture in a glass vial containing 100 µL of heptane prior to injection. Store blank and biological samples at 4 °C until further analysis",
+    "Prepare blank sample for GCMS analysis : add 100 µL of MilliQ water Contributed by users in Eppendorf tube",
+    "Add 100 µL of serum or plasma Sample in Eppendorf tubes.",
+    "Prepare 2 mL of an internal standard solution [13C1]-L-valine ( 0.2 mg/mL ) in MilliQ water Contributed by users , store at -20 °C for GCMS analysis",
+    "Prepare a fresh methoxylamine solution ( 15 mg/mL ) in pyridine. The volume of this solution depends on the number of samples to be analysed ( 80 µL for each samples)",
+    "As well as a sample pool is formed from 10 µL of each extracted and derivatized sample to monitor the drift of the spectrometer during GCMS analysis. Transfer 50 µL of sample pool in a glass vial containing 100 µL of heptane prior to injection, repeat this step 8 times (preprocessing analysis) Store pool samples at 4 °C until further analysis"
+  ],
+  "authors": [
+    "Carole MIGNÉ",
+    "Charlotte JOLY",
+    "Stéphanie DURAND",
+    "Estelle Pujos-Guillot"
+  ],
+  "creator": "Estelle Pujos-Guillot",
+  "published_on": 1726772207,
+  "created_on": 1696859824,
+  "keywords": []
+}

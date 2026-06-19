@@ -1,0 +1,33 @@
+{
+  "id": 104254,
+  "title": "Fiji-based quantification of glial parameters from IHC-stained mouse brain sections",
+  "uri": "fiji-based-quantification-of-glial-parameters-from-dh2638he",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"62u96\",\"text\":\"This protocol provides step-by-step instructions for the quantification of glia phenotypic parameters from mouse brain sections stained by immunohistochemistry using Fiji (Image J2, version 2.14.0). Our standard analysis is performed on formalin fixed, paraffin-embedded sections of 5 micron thickness were stained with Iba1 (microglia) or GFAP (astroctyes). Sections were scanned at 20x resolution using an Axio Scan Z1 Slide Scanner (saved as .czi file) and images were analyzed using this protocol. Specific parameters analyzed: size of cellular body, percent area of signal, average circularity and solidity.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Using the Bio-Formats plugin in Fiji (Image J2, version 2.14.0), choose the file to be quantified and pick the right “Series” to access the scan. The Bio-Formats plugin will load the selected file in an import window with multiple options for viewing, to which “view stack with: Hyperstack” is selected along with “display OME-XML metadata.&#34;",
+    "This opens the scanned image in different “Series”: these series are numbered and are of different resolutions, with the first one being of the highest resolution. Since the images can be upwards of 1GB, making them difficult for some computers to process, Fiji (ImageJ 2) version 2.14.0 offers the possibility of loading these files in lower resolutions. Our standard analysis is performed using &#34;Series 3&#34; scanned files.",
+    "Once loaded , start by cropping the image as needed Note: this is optional as processing the entire image is theoretically possible, but doing so renders subsequent processing times longer.",
+    "Convert the image to RGB: this is necessary for the software to be able to separate different colours (stains). An image loads initially in an 8-bit format.",
+    "Separate the different stains in each image using color deconvolution: this technique is useful to unmix dyes in images where colors mix subtractively (i.e., bright field microscope using histological stains). Note: For brightfield sections, DAB is used to detect the ABC (Avidin-Biotinylated enzyme Complex), which in turn binds to the biotinylated secondary antibody and gives a brownish-coloured deposit. This is subsequently counterstained with H&amp;E before dehydration and mounting. Thus, the filter used in this step to separate stains is titled “H&amp;E and DAB” identified within the task bar.",
+    "Select the area you would like to quantify and/or count from: simply draw a line around the boundaries of an area of interest forming an enclosed geometric shape. The drawn line does not have to be exactly aligned with the boundaries of the particular structure as the differences in area (pixel2) selected and number of particles will be standardized across slides accounted for in the area percent calculation step.",
+    "Subtract the background: the pixel value was set to 50 for all; this helps with depressing background staining so as not to interfere with an accurate count and measurement of particles of interest.",
+    "Set the threshold: this is extremely important as it will be allow the detection of specific signal while omitting background as much as possible without losing specificity. For the sake of consistency, the auto threshold function was used and the MaxEntropy filter was picked, analyzing both microglia and astrocytes. This allows for the automatic choosing of a threshold value based on the variable intensity of staining in each section and thus comparable results.",
+    "Set the measurements: configure the measurements that are deemed helpful for the components or signal of interest – explained above for microglia and astrocytes – before proceeding to analyze particles.",
+    "Analyze particles: the size range in pixels2 was set to 40 – 250 for both microglia and astrocytes. This value range was chosen after a careful process of optimization to be able to include specific immune cell staining but also exclude unspecific/ background signal while limiting the noise in the greyscale that interferes with accurate signal. Also, the body size of microglia and astrocytes reported in literature happens to fall in that range after the conversion to microns – see last section of this protocol for equation to convert from pixels to microns. The “exclude on edges” option was selected to exclude any possible particle count where the lines forming the boundaries of the selected area lie.",
+    "Save the results window along with the detailed description chart showing the individual values of specified parameters onto the device and use for subsequent quantification and plotting.",
+    "Find the scale: the scale should automatically be recorded in the image’s database. Check if that is the case from the text at the top of the image window – the text displays the dimensions of the image. If the image is calibrated, you will see dimensions in both pixels and microns.",
+    "Determine the real value of each pixel in the scanned image: for this, the metadata is required. To access the metadata, open the desired file from scratch and skip any selection required of “Series” upon bypassing the hyper stack. This will unveil the metadata included with the scan but only for Series 1. To convert that to the value of each pixel in Series 3 in microns, the calculation in the Excel sheet below was performed:For 20x scans, from the metadata, 1 pixel = 0. 2203 um for Series 1. Where 112562 pixels (Series 1) / 28140 pixels (Series 3) = 4.000071073205402.So, while each pixel is 0.2203 microns in Series 1, each pixel in Series 3 is 0.2203 x 4.000071073205402 = 0.881215657 microns. Use this conversion – Series 1 and Series 3 exclusive - to determine the size of measured particles in microns in Series 3. For example, if the particle size is 50 pixel2, the actual micron measurement equals 50 x 0.881215657 = 44.06078285 microns."
+  ],
+  "authors": [
+    "Karim Zahr Eddin"
+  ],
+  "creator": "Michaela Lunn",
+  "published_on": 1724436722,
+  "created_on": 1722270743,
+  "keywords": []
+}

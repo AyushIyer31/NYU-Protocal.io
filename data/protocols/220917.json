@@ -1,0 +1,33 @@
+{
+  "id": 220917,
+  "title": "Size-exclusion Chromatography Coupled to Multi-angle Light Scattering (SEC-MALS)",
+  "uri": "size-exclusion-chromatography-coupled-to-multi-ang-g3yvbypw7",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl41mxolo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"qovja\",\"text\":\"Size exclusion chromatography coupled to light scattering (SEC-MALS) is a convenient method to determine the molecular weight of proteins and protein complexes in solution. It exploits the intensity of the isotropic scattering of proteins measured at several angles as a function of their concentration. Accurate measurements of concentration are determined in-line during the experiment by measuring the differential refractive index using an Optilab Refractometer.  Here we describe a generic method for collecting data that can be exploited for diverse proteins in order to understand their size/stoichiometry in solution.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"lbtei\",\"text\":\"1. Consumables\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":14}],\"entityRanges\":[],\"data\":{}},{\"key\":\"8q11e\",\"text\":\"3 or 10 kDa MWCO Amicon Ultra-15 concentrator tube, Merck\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9nc3w\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bcgzj\",\"text\":\"2. Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":11}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7qifs\",\"text\":\"Purified proteins for analysis\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1sund\",\"text\":\"Gel filtration buffer (20 mM Tris pH 8.0 at 4ºC, 150 mM NaCl, 1 mM DTT)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jvo3i\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2rfma\",\"text\":\"3. Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":12}],\"entityRanges\":[],\"data\":{}},{\"key\":\"tyaso\",\"text\":\"FPLC system (i.e., AKTA basic or AKTA purifier, Cytiva)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"581va\",\"text\":\"Size exclusion chromatography column: Superdex 75 10/300 GL (Cytiva)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8t7u8\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"28igp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c62ru\",\"text\":\"MiniDAWN MALS spectrometer (Wyatt)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ovdl\",\"text\":\"Refractometer Optilab rEX (Wyatt)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e1tpb\",\"text\":\"Wyatt Comet sonicator (cleaning device for the flow cell of the MiniDAWN spectrometer)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"741mm\",\"text\":\"PC with the AKTA control software (UNICORN 5.11) and the SEC-MALS control and analysis software (ASTRA 4.9)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"notes\",\"mutability\":\"IMMUTABLE\",\"data\":{\"blocks\":[{\"data\":{},\"depth\":0,\"entityRanges\":[],\"inlineStyleRanges\":[],\"key\":\"743bo\",\"text\":\"Depending on the size of a protein or protein complex a different type of column is recommended, ie. the superdex 200 10/300GL (Cytiva)\",\"type\":\"unstyled\"}],\"entityMap\":{}}}}}",
+  "steps": [
+    "Connect the “miniDAWN” light scattering spectrometer and the refractometer to the FPLC System as indicated in Fig. 1. Figure 1: Setup SEC-MALS. The AKTA purifier is equippedwith a 0.5 ml injection loop and superdex 75 10/300 GL size exclusion column.The column outlet is connected to the MiniDAWN light scattering spectrometerfollowed by a refractometer, which is used to collect information on theprotein concentration.",
+    "Equilibrate column into Gel filtration buffer until signal on detector 2 (90° angle) of the miniDAWN is stable (signal between 0.3 and 0.4 with minimal fluctuations). This can take between 1 to 3 column volumes (1 CV = 24 ml)",
+    "During equilibration, purge cell of refractometer to minimize mismatch.",
+    "To improve signal stabilization, use the “Comet” sonicator. For conducting an experiment, it needs to be switched off.",
+    "Run the FPLC at a flow rate of 0.6 to 0.7 ml/min, maximum system pressure 1.8 MPa.",
+    "Concentrate/dilute protein to approximately 1 mg/ml. The smaller the protein is, the less it scatters. For example, our TMEM55B 80-166 2CysMUT construct has a MW of 9.8 kDa, which is at the lower end of what SLS can be used for. Smaller proteins might not scatter enough to produce a usable signal. For small proteins, higher concentrations help with the signal strength.",
+    "Attach a 0.5 ml injection loop to the FPLC System. Flush with a few ml of gel filtration buffer.",
+    "Load injection loop with the protein or protein complex.",
+    "Check settings of the ASTRA software: - System setup: Flow Rate (i.e., 0.6 ml/min); leave the other parameters unchanged. - Collection Setup: dn/dc (mL/g): 0.185; Collection Duration: 35 ml; Collection interval (sec) 1.",
+    "Start collecting light scattering data using the ASTRA software and set the FPLC software from &#39;load&#39; sample to &#39;inject&#39; directly after another.",
+    "Collect data for an appropriate time to allow proper baselining for analysis.",
+    "Analyze data using ASTRA."
+  ],
+  "authors": [
+    "Dieter Waschbuesch",
+    "Amir Khan"
+  ],
+  "creator": "Dieter Waschbuesch",
+  "published_on": 1751868833,
+  "created_on": 1750782049,
+  "keywords": []
+}

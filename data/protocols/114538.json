@@ -1,0 +1,35 @@
+{
+  "id": 114538,
+  "title": "EdU detection on tissue sections",
+  "uri": "edu-detection-on-tissue-sections-dt4i6que",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvwbdrzvmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"4hkf7\",\"text\":\"This protocol describes the procedure for EdU detection used by the Seifert Lab. It assumes a starting sample of a paraffin-embedded tissue section and refers to the Seifert Lab protocol for fluorescent immunohistochemistry [add link when published].\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"301lu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8n158\",\"text\":\"It is adapted from the procedure described in A. Salic, T.J. Mitchison, A chemical method for fast and sensitive detection of DNA synthesis in vivo, Proc. Natl. Acad. Sci. U.S.A.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":140,\"length\":7},{\"style\":\"italic\",\"offset\":149,\"length\":29}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1f9r7\",\"text\":\"105 (7) 2415-2420, https://doi.org/10.1073/pnas.0712168105 (2008).\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":19,\"length\":39}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"947054AFB40C11EFB5E30A58A9FEAC02\",\"url\":\"https://doi.org/10.1073/pnas.0712168105\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Deparaffinize and rehydrate slides per normal IHC protocol",
+    "If using subsequent antibodies for IHC, perform antigen retrieval",
+    "Rinse slides two times in Tris-buffered saline (TBS), 1x solution Fisher Scientific Catalog #BP24721",
+    "Leave slides in TBS until reaction cocktail is ready",
+    "OPTIONAL Block for 00:05:00 to 00:10:00 in appropriate blocking solution This is not necessary for rodent ear or skin tissue",
+    "Prepare EdU reaction cocktail: A B C 1 Component Volume (μL) Notes 2 2 M Tris, pH 8.5 5 100 mL = 24.2 g 3 50 mM CuSO4 2 1 mL = 7.98 mg 4 0.5 M ascorbic acid 20 1 mL = 88 mg *UNSTABLE AT RT, MAKE FRESH 5 AlexaFluor Azide (0.25 mg/mL) 0.2 0.5 mg in 2 mL DMSO 6 ddH2O 73 7 8 Total Volume: 100 IMPORTANT : use the reaction cocktail within 00:15:00 of preparing Use half the indicated AlexaFluor Azide to reduce background staining (0.1 µL per 100 µL 10 mM EdU = 2.55 mg/mL too much ascorbic acid messes up phalloidin staining 250 nM AlexaFluor azide (AF488) for staining of live cells is 0.45 µL/mL Use half the indicated AlexaFluor Azide to reduce background staining (0.1 µL per 100 µL)",
+    "Remove TBS and blot slides",
+    "Add reaction cocktail to each slide 100 µL to 250 µL usually works well",
+    "Incubate for 00:30:00 at Room temperature protected from light",
+    "Wash slides two times for 00:05:00 each in TBS",
+    "EITHER: Continue with normal fluorescent IHC protocol from blocking step IMPORTANT : keep slides protected from light for all steps to reduce bleaching of EdU signal",
+    "OR : Counterstain nuclei by incubating with 1 μg/mL Hoechst 33342 Contributed by users Catalog #H3570 for 00:05:00",
+    "Rinse 3 times with ddH 2 O",
+    "Mount with Prolong Gold Thermo Fisher Scientific Catalog #P36930"
+  ],
+  "authors": [
+    "Ashley Seifert",
+    "Sarah Calve"
+  ],
+  "creator": "Ashley Seifert",
+  "published_on": 1733517643,
+  "created_on": 1733514743,
+  "keywords": []
+}

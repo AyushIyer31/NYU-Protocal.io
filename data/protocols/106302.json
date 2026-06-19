@@ -1,0 +1,34 @@
+{
+  "id": 106302,
+  "title": "Bleach life-stage synchronization of C. elegans ",
+  "uri": "bleach-life-stage-synchronization-of-c-elegans-dj264qhe",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzj91xlx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"4d103\",\"text\":\"This protocol describes the procedure for synchronizing the life stage of C. elegans worms by bleaching gravid adults so that they release their eggs, which have greater resistance to bleach than hatched worms. This procedure can be useful for eliminating the variable of life stage from downstream experiments, and is also necessary for cryopreservation of this organism.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":74,\"length\":10}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"a1d1c\",\"text\":\"    \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1},{\"key\":1,\"offset\":2,\"length\":1}],\"data\":{}},{\"key\":\"d81om\",\"text\":\"Concentrated bleach\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5i6u2\",\"text\":\"Autoclaved ultrapure water\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"89rnr\",\"text\":\"M9 buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d6t6q\",\"text\":\"15 mL centrifuge tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8gfup\",\"text\":\"NGM(OP50) plates\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f5ts2\",\"text\":\"Clinical centrifuge\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6en1m\",\"text\":\"Tube rocker for 15 mL centrifuge tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"83ke4\",\"text\":\"Dissection scope\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":343,\"guid\":\"41012D0C341F11EE9D4302C0B41BC903\",\"name\":\"Potassium hydroxide\",\"mol_weight\":56.11,\"sku\":\"\",\"url\":\"http://store.p212121.com/potassium-hydroxide-pellets/?utm_source=zappylab.benchtools\\u0026utm_medium=ios\\u0026utm_campaign=p21nov13\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":7,\"name\":\"P212121\",\"link\":\"http://store.p212121.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/7.png\",\"placeholder\":\"/img/vendors/7.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":159717,\"guid\":\"41A549D6341F11EE9D4302C0B41BC903\",\"name\":\"Ethanol 200 Proof\",\"mol_weight\":0,\"sku\":\"2716\",\"url\":\"http://www.deconlabs.com\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":280,\"name\":\"Decon Labs\",\"link\":\"http://deconlabs.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Chunk worms onto at least six NGM (OP50) plates: Dip a spatula in 100% Ethanol 200 Proof Decon Labs Catalog #2716 . Flame-sterilize. Once the flame is extinguished, cut a chunk from the plate with an edge length of ~ 0.5 cm . Select a chunk with several larvae. Transfer this chunk to a new plate under flame, with the worm side facing down.",
+    "Incubate worms for 3–5 days, until there are many gravid adults. Synchronization works best on young adults, which still have many fertilized eggs. The older adults become, the fewer L1s there will be at the end of the protocol.",
+    "Under a flame, add 0.5-1 mL autoclaved water to a plate. Swirl and tilt plate to ensure that water passes over the entirety of the plate, then use a pipette to transfer the water to a sterile 15 mL centrifuge tube. This process should remove the vast majority of worms from the plate.",
+    "Repeat step 3 with remaining plates. The total volume should be below 8 mL .",
+    "Once you&#39;ve transferred the worms, add autoclaved water to the conical tube to a total volume of 8 mL . If synchronizing multiple strains, synchronize one at a time.",
+    "Add 1.2 mL concentrated bleach and 0.6 mL 5 Molarity (M) Potassium hydroxide P212121 . Mix solution by gently inverting.",
+    "Place the tube on a rocker. Monitor under a dissecting microscope to observe lysis of adults and release of fertilized eggs. This process should take 00:04:00 – 00:08:00 . It&#39;s important that you don&#39;t over-bleach the sample. Extended exposure to alkaline-bleach conditions can damage eggs and prevent hatching. In our hands, our most successful bleach treatments were under 5 minutes. For best results, bias to incomplete lysis over excessive lysis.",
+    "Fill tube to 15 mL with autoclaved water.",
+    "Centrifuge in a swinging bucket centrifuge at 768.6 x g, °C, for 00:01:00 – 00:02:00 .",
+    "Decant supernatant. Perform two additional washes with 15 mL autoclaved water.",
+    "Decant supernatant. Perform a third wash with 15 mL M9 buffer.",
+    "Resuspend worms in 1-2 mL M9 buffer. Place on rocker Overnight at 20 °C to allow worms to hatch into L1s. Worms can remain on rocker for an additional day without negative effects.",
+    "Optional: To estimate the concentration of L1s, plate several volumes (e.g., 5 µL , 10 µL , 20 µL ) on plates and count the number of L1 larvae.",
+    "Under a flame, plate desired quantity of worm larvae on desired number of NGM (OP50) plates by pipetting appropriate volume of buffer onto the surface of the plate. Allow buffer to evaporate before returning to incubator."
+  ],
+  "authors": [
+    "Justin Donnelly"
+  ],
+  "creator": "Arcadia Science",
+  "published_on": 1735857016,
+  "created_on": 1724368859,
+  "keywords": []
+}

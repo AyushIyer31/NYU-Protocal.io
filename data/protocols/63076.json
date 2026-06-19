@@ -1,0 +1,41 @@
+{
+  "id": 63076,
+  "title": "In Vivo Electrophysiology (Mouse)",
+  "uri": "in-vivo-electrophysiology-mouse-b9ucr6sw",
+  "doi": "dx.doi.org/10.17504/protocols.io.b9ucr6sw",
+  "description": "{\"blocks\":[{\"key\":\"2fqmn\",\"text\":\"This protocol describes the in vivo electrophysiology method for recording neuronal activity in mice.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Making Optrodes. If you will be combining electrophysiology with optogenetics at the same site, you will need to make an optrode array. This entails affixing an optical fiber-ferrule assembly onto a multi-electrode array.",
+    "Implant surgery. (Refer to the surgery protocol for full surgical details: dx.doi.org/10.17504/protocols.io.n2bvj6qynlk5/v1) For implantation of electrode arrays with or without an attached optical fiber, you will cut three holes: one at the site of the array implant (left side), one in the right frontal area (for a skull screw), and one in the right posterior area (for the ground wire. The site of the array implant will be enlarged by using the drill bit as a machine tool and cutting a rectangular area around the center coordinate, to remove a rectangular piece of skull. Cut the underlying dura carefully with a 32G needle around 3 sides of the rectangle, fold back, cut the remaining side, and remove. Use a sterile swab to remove blood and ACSF from the area prior to implant. After implantation, animals should be returned to their home cages to recover for at least 1 week.",
+    "Habituation. Animals should be scruffed and the electrophysiology headstage connector (itself on a cable attached to an overhead electrical commutator) carefully inserted into the electrode array connector on the mouse’s head. The mouse should then be placed in the open field for 30 minutes at a time, for two days prior to data collection.",
+    "Computer and electrophysiology setup.",
+    "Testing.",
+    "Cleanup. Carefully unplug the mouse and return to its home cage. Transfer and backup data to the server. Wipe the chamber with 80% ethanol.",
+    "Cut 200 micron, 0.39 NA optic fiber (Thorlabs) and thread a piece through a ceramic ferrule with epoxy, such that there is exposed fiber on the bottom (flat) end of the ferrule to at least the desired DV length + 1 mm. When used for optrode arrays, make the fiber the desired DV depth + 3 mm, as it will be angled on the array.",
+    "After the epoxy has dried, the short bit of fiber protruding on the top (rounded) end of the ferrule is broken off and polished using finer and finer polishing paper (Thorlabs). Polishing is achieved by inserting the ferrule-fiber assembly into a ferrule-holder (Thorlabs), tightening it up, and rubbing the top end of the ferrule against the paper in circles or figure-eights.",
+    "Once the ferrule is polished, test it for transmittance by using a 473 nm laser, set to 10 mW output at the end of a patch cable. Insert your ferrule and test the transmittance. If the power meter reads 8 mW, for example, it is an 80% transmittance fiber. If the transmittance is &lt;60%, keep polishing until you achieve 70-100% transmittance. If it is &lt;10% after polishing, it likely is split or cracked, and is unlikely to achieve high transmittance with further polishing.",
+    "Once you have an adequate fiber-ferrule assembly, insert it in a sequence of empty ferrules and sleeves (a ferrule “stick”). On a hard surface (e.g. the plastic cases the arrays arrive in), position two balls of dental wax. On one ball of wax, carefully place the plastic connector of an electrode array (minding that you don’t touch the electrodes themselves to anything) sideways, so the array is approximately horizontal, with the groove for guiding the fiber facing up. Now use the other ball of wax and your ferrule “stick” to position the optical fiber-ferrule assembly over the electrode array, with the fiber tip pointed in the same direction as the electrodes. Maneuver the fiber under a dissecting scope until it slides in the metal groove on the array, and its tip is amidst the tips of the electrodes. The fiber should terminate a little above (0.3-0.5 mm) the tips of the electrodes, but be positioned in the middle of the cross section of the electrodes. This should result in your ceramic ferrule being close to but not touching the electrode array connector (leaving room for the electrical headstage cable and optical patch cable to be connected during recordings).",
+    "Once this position has been achieved, make some 5 minute epoxy in a small weigh boat. Use a 200 uL pipet tip to stir the epoxy, and then drip a small amount of epoxy onto the bottom 1/3 of the ceramic ferrule. The epoxy can cover the bottom of the ceramic ferrule, extending onto the side of the electrode array connector and the metal area with the fiber groove. However, it should never go into the inside of the electrode array connector, nor onto the electrodes themselves (especially the portion that will be intracranial).",
+    "Let the epoxy dry overnight.",
+    "Open the appropriate in vivo electrophysiology (Plexon, Blackrock) and behavioral acquisition (Noldus Ethovision XT, Raspberry Pi) software.",
+    "Attach the mouse to the headstage cable and place in its home cage (top off), adjacent to the behavioral chamber.",
+    "In the in vivo electrophysiology software, begin displaying signals from each of the channels, and adjust the gains and threshold on a per-channel basis to optimize the detection of single units. This is an iterative process.",
+    "Open a behavioral acquisition file (see details in Behavioral Testing protocol), acquire a background image, and set up the detection.",
+    "Place your mouse in the behavioral chamber and optimize the detection.",
+    "Once the settings for the behavior acquisition (eg video) and electrophysiology acquisition have been optimized, start the electrophysiology recording. This file will serve as the master data file, receiving timing input from all other devices (e.g. TTLs from the device controlling the video camera, TTLs from the device controlling the laser, etc). The electrophysiology file name should start with the name of the mouse, and include a suffix representing the experiment date or type.",
+    "Start the device controlling the video camera (Noldus or Raspberry Pi). This device sends TTL pulses to the electrophysiology system for every video frame acquired, for subsequent alignment of behavior and electrophysiology.",
+    "Monitor the mouse to make sure it is able to move freely about the chamber during the recording, and is able to turn the commutator so it does not get caught up in the cables.",
+    "At the end of the main portion of the experiment, stop the video acquisition system, then hit “stop recording” on the electrophysiology system."
+  ],
+  "authors": [
+    "Alexandra Nelson"
+  ],
+  "creator": "Kelsey Barcomb",
+  "published_on": 1658939335,
+  "created_on": 1653339030,
+  "keywords": []
+}

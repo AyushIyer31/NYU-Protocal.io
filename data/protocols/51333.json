@@ -1,0 +1,23 @@
+{
+  "id": 51333,
+  "title": "Single-cell ATAC sequencing",
+  "uri": "single-cell-atac-sequencing-bwddpa26",
+  "doi": "dx.doi.org/10.17504/protocols.io.bwddpa26",
+  "description": "{\"blocks\":[{\"key\":\"i1oa\",\"text\":\"Interrogating cell-type specific chromatin accessibility can reveal cis-regulatory elements linked to downstream gene expression patterns. Assay for Transposase-Accessible Chromatin using Sequencing (ATAC-Seq) is a technique that assays genome-wide chromatin accessibility and can reveal nucleosome positioning patterns, map enhancer and promoter regions, or reveal transcription factor binding sites. Single-cell Assay for Transposase-Accessible Chromatin using Sequencing (scATAC-seq) adapts the bulk ATAC-sequencing protocol to separate individual nuclei and assay chromatin state with single-cell resolution. This technique allows for resolution of gene accessibility patterns within specific pancreatic cell types such as α-cells, β-cells, and acinar cells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":762}],\"entityRanges\":[],\"data\":{}},{\"key\":\"eonpc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bg05c\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8k2os\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"brk6v\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"notes\",\"mutability\":\"\",\"data\":{\"blocks\":[{\"data\":{},\"depth\":0,\"entityRanges\":[],\"inlineStyleRanges\":[{\"length\":31,\"offset\":0,\"style\":\"bold\"}],\"key\":\"7i2r7\",\"text\":\"Date submitted: August 13, 2020\",\"type\":\"unstyled\"}],\"entityMap\":{}}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "1. Transfer handpicked islets (approximately 5,000 IEQs) into 15 mL conical tube. 2. Add 10 mL of 1xPBS w/o Ca2+, Mg2+ ( Rockland, MB-008 ). Centrifuge for 2 min at RT, 180 xg. Aspirate the supernatant. 3. Add 1 mL of warm ( 37 °C ) 0.05% Trypsin ( Invitrogen, 25300054 ) to the islets. Pipette up and down with p1000. 4 . Incubate at 37 °C for 9 min, or until cells are in single cells. Pipette up and down at t=7 min, 4 min, 2 min, 0 min. 5. Stop the trypsin reaction by adding 1 mL of 100% FBS ( Hyclone, SH3091003 ) to the dissociated islets and pass cells through BD FACs tube with strainer top ( Corning 352235 ) 6. Use 1 mL of 100% FBS to rinse the tube and pass through the strainer. 7. Transfer cells to 15 mL conical. Centrifuge 4 min, 400 xg. 8. Remove the supernatant and wash cells with PBS with 10% FBS. Centrifuge for 4 min, 400 xg. 9. Wash the cells with PBS with 10% FBS and centrifuge for 4 min, 400 xg. Remove the supernatant. 10. Count cells using a countess chamber. 11. For the scATACseq, do the final resuspension in 0.04% BSA in PBS as is consistent with the instructions for using fresh cell in the Nuclei Isolation Protocol.",
+    "1. For nuclei isolation the protocol used is: Nuclei Isolation for Single Cell ATAC Sequencing . We target a 5000 nuclei recovery for this protocol. 2. Samples are processed for scATAC seq using Chromium Single Cell ATAC Reagent Kits ."
+  ],
+  "authors": [
+    "Klaus H. Kaestner Lab",
+    "Suzanne Shapira"
+  ],
+  "creator": "Lili Liang",
+  "published_on": 1628783992,
+  "created_on": 1625585673,
+  "keywords": []
+}

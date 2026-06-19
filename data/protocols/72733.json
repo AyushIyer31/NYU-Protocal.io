@@ -1,0 +1,29 @@
+{
+  "id": 72733,
+  "title": "Goga Lab RT-qPCR protocol: QuantStudio6 Machine",
+  "uri": "goga-lab-rt-qpcr-protocol-quantstudio6-machine-ci95uh86",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"55h1\",\"text\":\"Guidelines for preparing RT-qPCR samples for QuantStudio 6 located in HSW7 lab space.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"e2qjt\",\"text\":\"*start with full tip boxes and use tips in coordination with your plate map, so you never get lost\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"bb08d\",\"text\":\"*watch 1uL volumes in the pipet tip like a hawk - major source of variability\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6v5ne\",\"text\":\"*cap and gently vortex your *mixture per primer set* every 12 replicates or so, sometimes things separate\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"4otpu\",\"text\":\"*Thaw on ice (leave time!) and keep all reagents on ice through preparation. Prepare the plate on ice.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5lv66\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"41l47\",\"text\":\"PowerUp SYBR Green Master Mix\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"d8jfm\",\"text\":\"Your generated cDNA samples\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"fhb8u\",\"text\":\"100uM single primer stocks\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Dilute stock IDT primers to 100uM (see note in Guidelines).",
+    "Use &#39;GogaLab-RTqPCR-Preparation&#39; Excel spreadsheet to input your sample number and calculate reagent volumes.",
+    "Mix *total reagent volumes required* (see spreadsheet, green) for DI and PowerUP",
+    "Mix your forward and reverse primer pairs together, to a final dilution of 10uM forward and 10uM reverse. For example, add 10uL each of forward and reverse primers to 80uL PCR-quality DI for 100uL final volume.",
+    "Mix *mixtures per primer set* (blue) volumes together.",
+    "Pipet 1uL diluted cDNA into respective qPCR well, aiming for the sidewall of each respective well.",
+    "Add 19uL *mixture per primer set* into each respective well.",
+    "Seal plate, and spin down 1000rpm for 1 minute. Use bacterial, not tissue culture, centrifuge.",
+    "Load plate into centrifuge and proceed using QuantStudio software suite."
+  ],
+  "authors": [
+    "Jeremy.williams"
+  ],
+  "creator": "Jeremy.williams",
+  "published_on": 1668451611,
+  "created_on": 1668451400,
+  "keywords": []
+}

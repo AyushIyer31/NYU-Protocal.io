@@ -1,0 +1,35 @@
+{
+  "id": 227514,
+  "title": "scRNA-seq of human femoral bone marrow.",
+  "uri": "scrna-seq-of-human-femoral-bone-marrow-hae2b2bgf",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g7nbx8lwz/v2",
+  "description": "{\"blocks\":[{\"key\":\"ib2sb\",\"text\":\"This protocol describes the methods used for collection and single-cell isolation of human femoral bone marrow cells for single-cell RNA sequencing.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"ybeio\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"eo3hb\",\"text\":\"EasySep RBC Depletion Reagent\\t(STEMCELL Technologies, Cat# 18170)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1rigf\",\"text\":\"EasySep Human CD45 Depletion Kit II\\t(STEMCELL Technologies, Cat# 17898)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"boa87\",\"text\":\"EasySep Human CD34 Positive Selection Kit II (STEMCELL Technologies, Cat# 17856)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"k1pi\",\"text\":\"Chromium Next GEM Single Cell 3’ GEM, Library \\u0026 Gel Bead Kit v3.1, 16 rxns\\t(10x Genomics, Cat# PN-1000121)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "After total hip arthroplasty, femoral head tissue was collected from the Anatomic Pathology Lab after screening for avascular necrosis. Samples were cut in 4-8 mm thick coronal sections on a band saw and placed in a 120 mL collection container with 60 mL of chilled medium (3% fetal bovine serum, 0.1 mM L-acetic acid, 2 mM L-Glutamine and 1% penicillin-streptomycin in MEMalpha).",
+    "The specimen was transported on ice to the lab.",
+    "The sample is cut into 1-2 mm^3 pieces using sterilized surgical wire cutters and scissors.",
+    "The minced tissue is weighed and transferred to a 15 mL tube at a volume ratio of 1:2 sample to digestion medium (PBS with 4 mg/mL Dispase II and 2 mg/mL Collagenase I, filtered and pre-warmed) and placed on a 3D-rocker plate in an incubator for 1 hour.",
+    "The liquid portion of the digested sample is poured through a pre-wetted 100 micron cell strainer.",
+    "The remaining digested sample is washed 4 times in culture medium (MEMalpha with 15% fetal bovine serum, 1% penicillin-streptomycin, 0.1 mM L-ascorbic acid and 2 mM L-glutamine) and poured through the 100 micron cell strainer.",
+    "The filtered sample is pelleted at 300 RCF for 10 mins. The supernatant is aspirated, and the sample is resuspended in PBS+2% fetal bovine serum.",
+    "The resuspended sample is pelleted at 300 RCF for 10 mins.",
+    "Single-cell isolation is processed per STEMCELL Technologies’ protocol for RBC depletion (Cat 18170) using the EasySep system.",
+    "After RBC depletion, 20 uL is aliquoted for an unenriched faction. The remaining sample is split for rare cell enrichment using STEMCELL Technologies’ protocols and EasySep system. For a non-hematopoietic cell enrichment, 2/3 rd of the sample is processed with a CD45 depletion (Cat. 17898). For a hematopoietic stem and progenitor cell enrichment, 1/3 rd of the remaining sample is processed with a CD34 selection kit (Cat. 17856).",
+    "Following processing, each fraction is resuspended at a concentration of 1000 cells/uL in PBS with 0.04% BSA and pooled for scRNA-seq using the Chromium Next GEM Single Cell 3&#39; GEM, Library &amp; Gel Bead Kit v3.1 (10x Genomics, Cat. PN-1000121) and processed per 10x Genomics&#39; protocol."
+  ],
+  "authors": [
+    "Kyung J Ahn",
+    "Shovik Bandyopadhyay",
+    "Michael Duffy",
+    "Ling Qin",
+    "Kai Tan"
+  ],
+  "creator": "Kyung J Ahn",
+  "published_on": 1758120186,
+  "created_on": 1758119353,
+  "keywords": []
+}

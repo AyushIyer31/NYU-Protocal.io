@@ -1,0 +1,34 @@
+{
+  "id": 114670,
+  "title": "Nikon Automated Microscopy: Label-free timelapse imaging in well plates with Volume Contrast ",
+  "uri": "nikon-automated-microscopy-label-free-timelapse-im-dt8n6rve",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v9r28qv3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"84c84\",\"text\":\"Brightfield imaging is a label‑free and gentle method for observing cellular growth. However, robust segmentation of cell boundaries in brightfield images remains challenging, particularly when combining brightfield with high‑resolution fluorescence microscopy techniques such as confocal imaging. While methods like differential interference contrast (DIC) and phase contrast can improve visibility of cell boundaries, they introduce optical components and contrast mechanisms that can degrade fluorescence image quality, making them less suitable when high‑quality fluorescence imaging is required.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3iq33\",\"text\":\"Nikon Volume Contrast allows the conversion of a small z-stack in brightfield into a fluorescence-like image which highlights the cell cytoplasm, without the addition of any brightfield contrast techniques. This allows for segmentation of the cytoplasmic compartment of a cell, and may be used to replace cytoplasmic or membrane dyes, thus freeing up an extra fluorescence channel. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4nti3\",\"text\":\"This protocol incorporates a workflow for timelapse imaging in wellplates with volume contrast for live imaging within monolayer cultured cells. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"5qmlu\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"cd53a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dhefe\",\"text\":\"Above is the JOB file to be imported into NIS elements to run this protocol. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1hq88\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3f4os\",\"text\":\"This protocol was developed on the following Nikon Microscope:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"32hb8\",\"text\":\"Nikon Eclipse Ji \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2mtrf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"despi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1g4om\",\"text\":\"Other materials necessary to conduct this protocol:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7eh3k\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fu1fe\",\"text\":\"Imaging grade well-plate (e.g. 96 well-plate) \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e2se1\",\"text\":\"Standard tissue culture wellplates will require long working distance objectives with working distance \\u003e2mm, typically 4x and 10x objectives\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":140}],\"entityRanges\":[],\"data\":{}},{\"key\":\"d19ta\",\"text\":\"PC running NIS elements (Version 5 or higher recommended). \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"47itu\",\"text\":\"NIS elements JOBs module for automated imaging. \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"file\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"7A79D9AF248F11F18C5A0A58A9FEAC02\",\"id\":1198288,\"original_name\":\"Timelapse with Volume Contrast v3.bin\",\"placeholder\":\"https://www.protocols.io/img/extensions/file.png\",\"raw_source\":\"https://protocols-files.s3.amazonaws.com/files/beugschpvp.bin?X-Amz-Algorithm=AWS4-HMAC-SHA256\\u0026X-Amz-Credential=AKIAJYFAX46LHRVQMGOA%2F20260320%2Fus-east-1%2Fs3%2Faws4_request\\u0026X-Amz-Date=20260320T190329Z\\u0026X-Amz-Expires=604800\\u0026X-Amz-SignedHeaders=host\\u0026X-Amz-Signature=504d7fe282e5f91013d311ad3cdcdf69038e49c1050958c6f9d2f8763b3e40cd\",\"size\":7312,\"source\":\"https://content.protocols.io/files/beugschpvp.bin\"}}}}",
+  "steps": [
+    "Open JOBs Explorer, from View Menu (top of screen) &gt; Analysis Controls &gt; JOBs Explorer",
+    "Import .Bin file from this protocol - found in materials or below: Timelapse with Volume Contrast v3.bin For detailed instructions on how to import JOBs .bin files, refer to this protocol: Nikon Automated Microscopy: Import a JOB .bin file into JOBs Explorer by Mark Rigby",
+    "The sample navigation window is available on the left-hand side of the Compact layout In the advanced layout, it can be found under: View (top menu) &gt; Acquisition controls &gt; Sample Navigation in other layouts. Different layouts are shown on the top left of the NIS-Elements window",
+    "Open up sample navigation Sample Navigation Pane",
+    "Select Well plate holder, and the well plate checkbox. Sample navigation plate selection",
+    "Select &#34;Detect&#34; in Sample Navigation Well Plate Tab",
+    "Select the wells to image in the Sample Navigation Wellplate tab",
+    "Choose whether to label the wells of your wellplate Wellplate labelling interface",
+    "In the sample navigation window, press scan. Then, select Custom Job, and choose the previously imported JOB, and scan.",
+    "Select the correct Optical configuration for Brightfield",
+    "Run the JOB",
+    "Select the number of images per well you wish to capture. Note that brightfield illumination can be variable towards the edges of wells, due to a meniscus of water distorting the brightfield light path. Due to this, it is recommended to limit the working area to the centre of the wells.",
+    "Select number of time points and intervals you wish to capture",
+    "Monolayer cells at 20x in brightfield Volume contrast at 20x"
+  ],
+  "authors": [
+    "Akihiro Suto"
+  ],
+  "creator": "Akihiro Suto",
+  "published_on": 1774843347,
+  "created_on": 1733840517,
+  "keywords": []
+}

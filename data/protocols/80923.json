@@ -1,0 +1,39 @@
+{
+  "id": 80923,
+  "title": "DNA extraction and purification from dermatophytes using the Qiagen DNEasy™ UltraClean Microbial kit (Qiagen, 12224-50)",
+  "uri": "dna-extraction-and-purification-from-dermatophytes-cs93wh8n",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g74d79gwz/v2",
+  "description": "{\"blocks\":[{\"key\":\"cilps\",\"text\":\"This protocol describes the steps to extract and purify genomic DNA from dermatophytes (and more specifically from dermatophytes of the genus Trichophyton). The extracted DNA is then quantified by spectrophotometry. The yields obtained by this method are between 5 ng/μL and 30 ng/μL.The genomic DNA obtained by following this procotole is little/not fragmented and therefore compatible with high-throughput genome sequencing applications on the Illumina platform. We used this protocol to extract the sequenced fungal DNA as part of BioProject PRJNA956242.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5lksq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"d3ud\",\"text\":\"Be careful when preparing the medium : work under sterile conditions as much as possible to avoid contaminating the liquid medium. Perform the DNA dosage directly after extraction and not after a freeze/thaw cycle. The NanoDrop 1000 spectrophotometric dosage overestimates the DNA yields. For a more precise dosage, please consider more specific methods. We recommend the Qubit dsDNA HS kit (Thermo Fisher, Q32851). After extraction and quantification, store the DNA at -80°C.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"26qj4\",\"text\":\"Liquid nitrogen is dangerous. Only work with small volumes of nitrogen. Wear the appropriate personal protective equipment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"bn2iq\",\"text\":\"Qiagen DNEasy UltraClean Microbial kit (Qiagen, 12224-50).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5dndg\",\"text\":\"Sabouraud Dextrose Broth (Sigma-Aldrich, S3306)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Dissolve 30 g of Sabouraud dextrose broth Merck MilliporeSigma (Sigma-Aldrich) Catalog #S3306 in 1 L of MilliQ water Contributed by users and let mix on the heated magnetic stirrer for 00:05:00 (temperature and mixing speed knob at mid-step).",
+    "Cover the flask with glass wool and aluminium foil. Autoclave it at 121 °C 121 °C for 00:30:00 .",
+    "After allowing to cool, transfer 25 mL of this medium into a tube. Label the tube with the strain number.",
+    "Using a sterile swab (or a sterile inoculation loop), gently collect the primary culture and dip the swab (or the sterile inoculation loop) into the tube containing the culture medium (prepared in the previous step). Close the tube halfway to allow gas exchange.",
+    "Allow to grow in the incubator at 30 °C until a sufficient flocculate is formed (requires at least 96 hours). Incubation time varies from strain to strain but flocculate should be visible after 5 days. If this is not the case, repeat the cultivation step.",
+    "Using a Pasteur pipette, carefully remove the flocculate from the tube containing the previously cultured dermatophyte strain. Transfer this flocculate to a PowerBead tube containing 0.1mm glass beads, let&#39;s call it primary tube. Add 300 µL of PowerBead solution and 50 µL of SL solution to this tube.",
+    "Cool this tube to -196 °C in liquid nitrogen for 00:01:00 . Then, heat this tube in a water bath at 56 °C for 00:10:00 . Finally, run this tube through the cell disruptor at maximum speed for 00:10:00 . This constitutes 1 cycle of 3 steps. You must repeat this cycle 3 times. The recovered mixture is referred to as primary lysate in the following steps.",
+    "Centrifuge the tube at 10000 x g, °C, for 00:00:30 at room temperature. Gently transfer the supernatant to a clean collection tube (provided in the kit) and discard the PowerBead tube.",
+    "Add 100 µL of IRS solution to the supernatant and vortex for 00:00:10 . Incubate at 4 °C for 00:05:00 .",
+    "After that, centrifuge the tube at 10000 x g, °C, for 00:01:00 at room temperature. Gently transfer the supernatant to a new collection tube and discard the tube containing the pellet.",
+    "Add 900 µL of SB solution to the tube containing the supernatant from the previous step and vortex for 00:00:10 . Load approximately 700 µL of this suspension into a silica membrane chromatography column (provided in the kit).",
+    "Centrifuge the column at 10000 x g, °C, for 00:00:30 at room temperature. Keep the column and discard the flows-through. Repeat until the entire volume from step 11 is loaded into the column.",
+    "Add 300 µL of CB solution into the column and centrifuge it at 10000 x g, °C, for 00:00:30 at room temperature. Keep the column and discard the flows-through.",
+    "Centrifuge the column alone (empty) to remove the last residues of CB solution. The conditions are identical to the previous step : 10000 x g, °C, for 00:00:30 at room temperature.",
+    "Place the column in a new collection tube. Add 50 µL of EB solution to the center of the silica membrane. Let stand for 00:01:00 at room temperature. Let stand for 00:01:00 at room temperature and then centrifuge the column at 10000 x g, °C, for 00:00:30 to elute the DNA.",
+    "Discard the column and keep the flows-though which is the purified DNA. Store DNA at -80 °C to ensure stability.",
+    "To determine the purity and concentration of the DNA, a NanoDrop dosage was performed. For this purpose, a negative control was prepared beforehand. This control will have undergone all the extraction steps but will not contain any material from dermatophytes.",
+    "Launch the computer program and select the &#34;nucleic acid&#34; mode. Make sure the sample deposit spot is clean and dry. If necessary, clean it with the wipes provided for this purpose. Then drop 2 µL of the negative control and click on the &#34;blank&#34; box.",
+    "Proceed in the same way to measure the sample containing the DNA, but click on &#34;measure&#34; instead of &#34;blank&#34;. There is no need to redo a blank between measurements. Please note that the NanoDrop 1000 spectrophotometric dosage overestimates the DNA yields. For a more precise dosage, please consider more specific methods. We recommend the Qubit dsDNA HS kit (Thermo Fisher Q32851)."
+  ],
+  "authors": [
+    "Khalid El Moussaoui"
+  ],
+  "creator": "Khalid El Moussaoui",
+  "published_on": 1682247128,
+  "created_on": 1682183280,
+  "keywords": []
+}

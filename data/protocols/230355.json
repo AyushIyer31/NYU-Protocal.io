@@ -1,0 +1,39 @@
+{
+  "id": 230355,
+  "title": "Sequential Detergent and Salt-based Subcellular Fractionation of Human Neural Stem Cells",
+  "uri": "sequential-detergent-and-salt-based-subcellular-fr-hc7tb2znp",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g7n9o8lwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"cnspc\",\"text\":\"Sequential fractionation of neural stem cells was performed to obtain cytoplasmic, membrane, and nuclear protein fractions for validation of Imagestream, immunocytochemistry, and biotin-enrichment data showing intracellular localization of p32 in human neural stem cells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"mxg5q\",\"text\":\"14. Centrifuge again at 12,000 rcf for 15 minutes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"tuiw8\",\"text\":\"15. Collect the supernatant as the TX-100+ KCl-nuclear protein fraction.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qhwko\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"wiktv\",\"text\":\"Insoluble Protein Fraction:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":27}],\"entityRanges\":[],\"data\":{}},{\"key\":\"ydtqf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ell4k\",\"text\":\"16. Resuspend the final pellet in 20μL of 5X SDS-PAGE sample loading buffer (250mM Tris-HCl, pH 6.8, 10% SDS, 30% glycerol, 10mM DTT, 0.05% bromophenol blue).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"12qmx\",\"text\":\"17. Boil the sample for 5 minutes to denature proteins, preparing them for analysis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ymkmf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"yythu\",\"text\":\"Analysis:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"xsen6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"011rj\",\"text\":\"18. Analyze 10μg of protein from each fraction using Western blot employing antibodies specific to compartment markers, and loading controls.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"6q87o\",\"text\":\"- Cold Dulbecco's Phosphate-Buffered Saline (DPBS without Ca2+/Mg2+)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":60,\"length\":2},{\"style\":\"sup\",\"offset\":65,\"length\":2}],\"entityRanges\":[],\"data\":{}},{\"key\":\"ffdl4\",\"text\":\"- Cell scraper\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7kai7\",\"text\":\"- PBS (0.1 mM Ca²⁺ and 1 mM Mg²⁺)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cncgi\",\"text\":\"- Protease inhibitor (Roche Applied Science, cOmplete ULTRA, 05892970001)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"rlqci\",\"text\":\"- Phosphatase inhibitor (Roche Applied Science, PhosSTOP, 04906837001)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vt6ic\",\"text\":\"- 1 mL syringes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"pkcy1\",\"text\":\"- 27.5 G needle\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"l8y3x\",\"text\":\"- 35Ga needle\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"huvs9\",\"text\":\"- Lysis buffer (50mM Tris-HCl, pH 7.5, 100mM NaCl, 0.5% Triton X-100)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8irnx\",\"text\":\"- 0.5M KCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mgn1x\",\"text\":\"- 5X SDS-PAGE sample loading buffer (250mM Tris-HCl, pH 6.8, 10% SDS, 30% glycerol, 10mM DTT, 0.05% bromophenol blue)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Detach the cells using a cell scraper in 500 μL PBS (0.1 mM Ca²⁺ and 1 mM Mg²⁺) supplemented with protease inhibitor (Roche Applied Science, cOmplete ULTRA, 05892970001) and phosphatase inhibitor (Roche Applied Science, PhosSTOP, 04906837001). Keep on ice to prevent protein degradation.",
+    "Homogenize the detached cells by passing them through a 1 mL syringe fitted with a 27.5 G needle, using 10 up-and-down strokes. This disrupts the plasma membrane, releasing cytoplasmic contents.",
+    "Incubate the homogenate on ice for 10 minutes to ensure complete lysis.",
+    "Centrifuge at 12,000 g for 15 minutes at 4°C. Ensure the centrifuge is pre-cooled.",
+    "Carefully collect the supernatant as the PBS-soluble cytoplasmic protein fraction.",
+    "Resuspend the remaining cell pellet in 500μL of lysis buffer containing 50mM Tris-HCl (pH 7.5), 100mM NaCl, 0.5% Triton X-100, and protease and phosphatase inhibitors. The Triton X-100 helps solubilize membrane proteins.",
+    "Use a 1 mL syringe fitted with a 35 G needle for further disruption, performing 10 additional up-and-down strokes.",
+    "Incubate on ice for 10 minutes followed by centrifugation at 12,000 g for 15 minutes at 4°C.",
+    "Collect the supernatant as the detergent (TX-100)-soluble membrane/subcellular structure protein fraction.",
+    "Resuspend the remaining pellet in 200μL of lysis buffer with 0.5M KCl and protease and phosphatase inhibitors to extract nuclear proteins.",
+    "Incubate on ice for 10 minutes to allow salt to permeabilize the nuclear envelope.",
+    "Centrifuge again at 12,000 g for 15 minutes.",
+    "Collect the supernatant as the TX-100+ KCl-nuclear protein fraction.",
+    "Resuspend the final pellet in 20μL of 5X SDS-PAGE sample loading buffer (250mM Tris-HCl, pH 6.8, 10% SDS, 30% glycerol, 10mM DTT, 0.05% bromophenol blue).",
+    "Boil the sample for 5 minutes to denature proteins, preparing them for analysis.",
+    "Analyze 10μg of protein from each fraction using Western blot employing antibodies specific to compartment markers, and loading controls.",
+    "Wash hNSC twice with cold Dulbecco&#39;s Phosphate-Buffered Saline without Ca 2+ /Mg 2+ (DPBS -/-).",
+    "Culture hNSC on poly-L-ornithine and laminin-coated 6-well plates in growth medium (GM)."
+  ],
+  "authors": [
+    "Katja Piltti",
+    "Francisca Benavente-Perez"
+  ],
+  "creator": "Katja Piltti",
+  "published_on": 1761237708,
+  "created_on": 1761022930,
+  "keywords": []
+}

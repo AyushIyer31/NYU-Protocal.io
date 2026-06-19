@@ -1,0 +1,26 @@
+{
+  "id": 1433,
+  "title": "Re-amplification of CRISPRa and CRISPRi libraries (v1.0)Reference: Genome-Scale CRISPR-Mediated Control of Gene Repression and A",
+  "uri": "Re-amplification-of-CRISPRa-and-CRISPRi-libraries-dmz475",
+  "doi": "dx.doi.org/10.17504/protocols.io.dmz475",
+  "description": "{\"blocks\":[{\"key\":\"3mal8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"di7di\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"7j1j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"dt31k\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Dilute each sub-library to 50 ng/ul in water or EB",
+    "Electroporate the library aPre-chill 01 cm cuvettes, megaX cells, 10% glycerol on ice bFollow the table above for the amounts of sub-library plasmid DNA and MegaX competent cells, mix gently and incubate on ice for 30 min cAdd pre-chilled 10% glycerol to the MageX-library mix for a final 75 ul, transfer the mix to a prechilled 01 cm cuvette dElectroporate at 20 kV, 200 ohms, 25 uF (Gene Pulser Xcell, Bio-rad) eTransfer cells to a culture tube iUse 1 ml pipettes and gel loading tips iiWash cells out gently with 300 ul SOC twice (total 600 ul) fIncubate at 37oC, 250 rpm, 15 hour",
+    "Plate the transformations aPlate all in one large square plate per sub-library, use autoclaved beads bIncubate at 37oC for 18 hours",
+    "Collect all colonies with LB and do one maxiprep per plate, elute in 500 ul EB; an ideal concentration is about 2~3 ug/ul",
+    "To sequence the library, you can PCR the sgRNA region with the following primers (a common 3’ primer, with 2 different 5’ primers for CRISPRa or CRISPRi) •CRISPRi TSS common 3&#39; caagcagaagacggcatacgaCGACTCGGTGCCACTTTTTC •oCRISPRi TSS_1 (TruSeq Index 12 CTTGTA), aatgatacggcgaccaccgaGATCGGAAGAGCACACGTCTGAACTCCAGTCACCTTGTAgcacaaaaggaaactcaccct •oCRISPRi TSS_2 (TruSeq Index 6 GCCAAT) aatgatacggcgaccaccgaGATCGGAAGAGCACACGTCTGAACTCCAGTCACGCCAATgcacaaaaggaaactcaccct aPool sub-libraries proportionally (based on the number of sgRNAs) to have the CRISPRa or CRISPRi library, measure the pooled concentration and dilute it to 400 ng/ul for PCR bRun 3 tubes of 100 ul PCR reactions",
+    "%s %s library 400ng/ul 1 5x Q5 BUFFER 20 5X GC BUFFER 20 dNTPs 10mM 2 Index primer 10uM 2.5 Common Primer 10uM 2.5 Q5 Hotstart polymerase 1 ddH2O 51"
+  ],
+  "authors": [
+    "IGI "
+  ],
+  "creator": "Jacob E Corn",
+  "published_on": 1445548358,
+  "created_on": 1439418129,
+  "keywords": []
+}

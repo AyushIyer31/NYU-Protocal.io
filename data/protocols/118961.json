@@ -1,0 +1,32 @@
+{
+  "id": 118961,
+  "title": "Flow cytometry measurements of lipid peroxidation with C11-Bodipy 581/591",
+  "uri": "flow-cytometry-measurements-of-lipid-peroxidation-dyer7td6",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gp92x1vzp/v1",
+  "description": "{\"blocks\":[{\"key\":\"7p2bt\",\"text\":\"Protocol for staining iPSC-derived neurons for lipid peroxidation measurements using Live/Dead and C11-Bodipy 581/591 dyes, via flow cytometry\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"7ocdf\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1j4oc\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"db7b3\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"MUTABLE\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"0_2\":\"\",\"1_0\":\"\",\"1_1\":\"\",\"1_2\":\"\"},\"colTitles\":[\"\",\"\",\"\"],\"colWidths\":[100,\"110\",100],\"data\":[[\"BODIPY 581/591 C11\",\"Thermo Fisher Scientific\",\"Cat#D3861\"],[\"LIVE/DEAD Blue\",\"Thermi Fisher Scientific\",\"Cat#L23105\"],[\"Accuase\",\"StemCell Technologies\",\"Cat#07922, 07920\"],[\"PBS, pH 7,4\",\"ThermoFisher \",\"Cat# 10010023\"]],\"guid\":\"52EC49602E8F400CBB748B718A0C1D9E\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"BODIPY 581/591 C11\",\"Thermo Fisher Scientific\",\"Cat#D3861\"],[\"LIVE/DEAD Blue\",\"Thermi Fisher Scientific\",\"Cat#L23105\"],[\"Accuase\",\"StemCell Technologies\",\"Cat#07922, 07920\"],[\"PBS, pH 7,4\",\"ThermoFisher \",\"Cat# 10010023\"]],\"rowHeights\":[23,23,23,23]}}}}",
+  "steps": [
+    "Treat iPSC-derived neurons platted in 24-well plates with 300-400 µL of RSL3 in normal culture media for 3 to 5 hours",
+    "Remove the media from the wells and transfer into 1.5ml eppendorf tubes, in order to collect dead cells.",
+    "Add 300 µL of pre-warmed accutase to each well and return plate to the incubator for 00:10:00 to 00:15:00 incubation at 37 °C",
+    "Pippette accutase up and down (carefully not to make bubbles), in order to dissociate the cells into a single cell suspension, and transfer the cells into the appropriate 1.5ml eppendorf tubes.",
+    "Centrifuge cells at 300 x g, 20 °C, 5 minutes",
+    "Aspirate the supernatant without disturbing the pellet.",
+    "Resuspend the cell pellet with 100 µL of Live/Dead Blue (Cat#L23105) diluted in PBS: 0.5 µL per 1 mL of PBS (Note: concentration to be determined for each cell model).",
+    "Place cells in a 37 °C incubator for 00:15:00",
+    "Remove cells from incubator and add 100 µL of C11-Bodipy 2x concentrated to the cells, so the final concentration is 2 micromolar (µM)",
+    "Place cells in a 37 °C incubator for 00:15:00",
+    "Remove samples from the incubator and place in ice. Sample is ready to take to Flow cytometer",
+    "Adjust gates in order to acquire FITC and PE Texas Red in the live, single cell population. Acquire data from at least 10,000 single live cells. To report lipid peroxidation, the ratio of oxidised C11-Bodipy (em: 488nm) over non-oxidised C11-bodipy (em:568nm) was measured and normalised to control population."
+  ],
+  "authors": [
+    "Laura Mahoney"
+  ],
+  "creator": "Laura Mahoney",
+  "published_on": 1737632803,
+  "created_on": 1737629212,
+  "keywords": []
+}

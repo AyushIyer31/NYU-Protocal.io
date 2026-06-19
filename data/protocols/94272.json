@@ -1,0 +1,28 @@
+{
+  "id": 94272,
+  "title": "SOP for Flow cytometry after DSS-induced gut and brain injury",
+  "uri": "sop-for-flow-cytometry-after-dss-induced-gut-and-b-c8a8zshw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6x6zklqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"7jc6v\",\"text\":\"SOP for Flow cytometry after DSS-induced gut and brain injury\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"d8054\",\"text\":\"LIVE/DEAD Fixable Blue stain (ThermoFisher, #L34962) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7pr42\",\"text\":\"1% paraformaldehyde in a phosphate buffer \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fulog\",\"text\":\"negative AbC Total Antibody Compensation Beads (ThermoFisher, #A10497)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3qo08\",\"text\":\"Amine Reactive Compensation Beads (ThermoFisher, #A10346)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bdcmh\",\"text\":\"SPHERO Supra Rainbow particles (Spherotech, Inc., #SRCP-35-2A)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Following isolation of brain and circulating immune cells with magnetic beads, cells were transferred to a V-bottom plate for surface epitope labeling.",
+    "Samples were centrifuged at 300 g for 5min at 4°C, washed once in PBS, re-pelleted, and resuspended in an antibody cocktail containing fluorophore-conjugated antibodies and LIVE/DEAD Fixable Blue stain (ThermoFisher, #L34962) in BD Horizon Brilliant Stain Buffer (BD Biosciences, #563794).",
+    "Cells were incubated with antibodies for 20min at 4°C in the dark before three washes in FACS buffer containing 0.25mM EDTA, 0.01% NaN 3 , and 0.1% BSA in PBS.",
+    "Labeled cells were fixed in 1% paraformaldehyde in a phosphate buffer for 30min at 4°C in the dark.",
+    "Cells were washed three times in FACS buffer and transferred to FACS tubes in FACS buffer for flow cytometry.",
+    "For compensation, 1uL of antibody was added to reactive and negative AbC Total Antibody Compensation Beads (ThermoFisher, #A10497) and 0.5uL of LIVE/DEAD Fixable Blue stain was added to ArC Amine Reactive Compensation Beads (ThermoFisher, #A10346).",
+    "Bead staining occurred at the same time as cell staining and was subjected to the same protocol described above without fixation (e.g., labeled beads remained in FACS buffer while cells were infixative).",
+    "Samples were run on a BD FACSymphony A3,capturing either 100,000 single cells or the entire sample. Laser voltages were set with the assistance of SPHERO Supra Rainbow particles (Spherotech, Inc., #SRCP-35-2A) based on settings optimized during the development of this antibody panel. Compensation controls were calculated to ensure successful channel compensation prior to running samples. Raw files were analyzed using FlowJo (BD Biosciences) v.10.9.0 and gates were drawn with the assistance of fluorescence-minus-one controls."
+  ],
+  "authors": [
+    "Malu G Tansey"
+  ],
+  "creator": "Senthilkumar Karuppagounder",
+  "published_on": 1708992129,
+  "created_on": 1706463874,
+  "keywords": []
+}

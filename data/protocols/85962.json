@@ -1,0 +1,28 @@
+{
+  "id": 85962,
+  "title": "shRNA knockdown",
+  "uri": "shrna-knockdown-cx7ixrke",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvwdjj7lmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"7hlgq\",\"text\":\"This protocol describes a standard procedure to generate a stable cell line for a DNAJC5 knockdown using shRNA. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6468b\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1n3ap\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"2sd1i\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aucj9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7fijk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"40sac\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"5hfp1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"IMMUTABLE\",\"data\":{\"cellsMeta\":{},\"colTitles\":[\"Item\",\"Catalog number\",\"Manufacturer\"],\"colWidths\":[\"211\",\"108\",\"226\"],\"data\":[[\"HEK 293T cells\",\"\",\"Cell Culture Facility, UC Berkeley\"],[\"plKO.1-Hygroplasmids\",\"\",\"\"],[\"DNAJC5-shRNA\",\"\",\"\"],[\"pMD2.G plasmid\",\"\",\"Addgene\"],[\"PsPAX2 plasmid\",\"\",\"Addgene\"],[\"Lenti-X Concentrator\",\"631231\",\"Takara Bio\"],[\"SH-SY5Y cells\",\"\",\"Cell Culture Facility, UC Berkeley\"],[\"Hygromycin B (50 mg/mL)\",\"10687010\",\"Thermo Scientific\"]],\"guid\":\"192FF6B0359F11EE86C50B13555781BB\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"HEK 293T cells\",\"\",\"Cell Culture Facility, UC Berkeley\"],[\"plKO.1-Hygroplasmids\",\"\",\"\"],[\"DNAJC5-shRNA\",\"\",\"\"],[\"pMD2.G plasmid\",\"\",\"Addgene\"],[\"PsPAX2 plasmid\",\"\",\"Addgene\"],[\"Lenti-X Concentrator\",\"631231\",\"Takara Bio\"],[\"SH-SY5Y cells\",\"\",\"Cell Culture Facility, UC Berkeley\"],[\"Hygromycin B (50 mg/mL)\",\"10687010\",\"Thermo Scientific\"]],\"rowHeights\":[23,23,23,23,23,23,23,23]}}}}",
+  "steps": [
+    "plKO.1-Hygroplasmids-containing shRNA targeting DNAJC5 (ccggGCAACCTCAGATGACATTAAACTCGAGTTTAATGTCATCTGAGGTTGCTTTTTG) together with pMD2.G and PsPAX2 were transfected into HEK293T cells to produce lentiviral particles for 72 hr.",
+    "HEK293T cells were plated at a density such that on the day of transfection they are no more than 50% confluent.",
+    "Lentivirus particles were concentrated with Lenti-X Concentrator follow manufacturer protocol (Takara Bio).",
+    "SH-SY5Y cells were transduced by lentivirus before differentiation.",
+    "Three days post transduction, cells were selected with 250 μg/ml hygromycin for 10 days.",
+    "The selected cells were differentiated, and the knockdown was verified with immunoblot."
+  ],
+  "authors": [
+    "wusj",
+    "Nancy C. Hernandez Villegas",
+    "schekman"
+  ],
+  "creator": "Nancy C. Hernandez Villegas",
+  "published_on": 1693025733,
+  "created_on": 1691121463,
+  "keywords": []
+}

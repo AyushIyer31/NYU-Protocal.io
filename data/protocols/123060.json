@@ -1,0 +1,39 @@
+{
+  "id": 123060,
+  "title": "R scripts for user-friendly DESeq2 RNA-seq differential expression analysis\n",
+  "uri": "r-scripts-for-user-friendly-deseq2-rna-seq-differe-d4eu8tew",
+  "doi": "dx.doi.org/10.21203/rs.3.pex-2532/v1",
+  "description": "{\"blocks\":[{\"key\":\"7ksuh\",\"text\":\"An R script for differential expression testing using DESeq2 is provided along with two example text-format input files, one for read counts and one for sample metadata / groupings. The script includes DESeq2 installation commands, instructions for input file preparation (with examples), loading of input files, specifying comparisons of interest generating differential expression statistics output files, and generating PCA coordinate output files. Comments to help with and explain each step are provided in the script. The script is intended to simplify the process of performing simple RNA-seq differential expression analysis for users who are not familiar with coding in R and streamlines the preparation of simple input files to produce output statistics and PCA plots.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"oheev\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Prepare two input files",
+    "A &#39;read counts&#39; file, with 1 row of headers with unique sample names and 1 column with gene names, and the rest of the table filled with read counts data (integer values). This file should be saved as a tab-delimited text file format, which can be specified in the &#39;Save As&#39; dialog in MS Excel and other programs. Avoid special characters in sample IDs (spaces, dashes, periods, etc), except for underscores, and do not name samples using only a number. An example input file is provided in &#39;DESeq2examplereadcounts.txt&#39;.",
+    "A &#39;metadata file&#39; containing sample names and groupings. Scripts are provided for three comparison scenarios:",
+    "i) Simple A vs B comparisons (e.g. treated vs control) Example input file: &#39; DESEq2examplemetadatasimple.txt &#39; The &#39;metadata&#39; file should have sample names corresponding to the &#39;read counts&#39; file down the first column, sample categories (defining the comparison you want to perform) down the second column, with 1 row of headers (&#39;Sample&#39; and &#39;Group&#39; in the example input file). This file should be saved as a tab-delimited text file. Sample names must be in the same order as the read counts file. Avoid special characters in sample names or comparison groups.",
+    "ii) Paired comparisons (e.g. the same individuals before and after treatment) Example input file: &#39; DESEq2examplemetadatapaired.txt &#39; Prepare the file the same way as for the simple A vs B comparison described above in (a), except add a third column with the header &#39;Pairs&#39; containing unique IDs to match the same individuals across the two comparison groups. Do not identify individuals using only numbers. Ensure that all individuals are represented in order in each of the two groups being compared.",
+    "iii) Comparisons controlling for batch effects (e.g. both treated and control samples were collected in two different experiments). Example input file: &#39; DESEq2examplemetadatabatcheffects.txt &#39; Prepare the file the same way as for the simple A vs B comparison described above in (a), except add a third column with the header &#39;Batch&#39; containing unique IDs per sample batch. This will only work if each side of the comparison contains at least one sample from each batch specified.",
+    "The file names in quotes in the script can be changed to match your input files.",
+    "Load the R script in R Studio",
+    "Please be sure to have these versions (or newer) installed: R v4.3.2, RStudio 2023.12.0+369. Both are downloadable for free (currently at https://posit.co/download/rstudio-desktop/)",
+    "Load the provided R script in RStudio (DESeq2script.R)",
+    "Set the working directory to the location where you saved the R script and example files (or your own custom files). You can do this after loading the script by using the top menu in RStudio, selecting &#39;Session&#39; then &#39;Set Working Directory&#39; then &#39;To Source File Location&#39;.",
+    "Run the R script",
+    "Read the comments (starting with #) and run each command individually by highlighting the line and clicking &#39;Run&#39; at the top right of the script window (or by pressing CTRL+Enter in Windows or CMD+Enter in MacOS).",
+    "Description of output files",
+    "The DEseq2 output file (starting with the filename &#39;DESEQoutput&#39; when using the script without modifications) is a plain tab-delimited text file that can be opened in MS Excel or text editors, and contains the following headers: baseMean : The average of the normalized count values for a given gene across all samples, which represents the mean expression level of the gene. log2FoldChange : This is the estimated fold change in gene expression between the two conditions, expressed in log 2 scale. A positive value indicates upregulation while a negative value indicates downregulation (for the first of the two conditions specified in the &#39;contrast&#39; in the script). Users editing the script should double-check that the direction of differential regulation matches the raw data to ensure that the direction of the fold change matches the raw data. Genes with values greater than 1 or less than -1 are two-fold upregulated or downregulated, which can be used as a filter, but it is not strictly necessary. lfcSE (log2FoldChange Standard Error): This represents the standard error of the log2FoldChange estimate. A lower value indicates greater precision in the estimate of the fold change. stat : This is the Wald statistic for the hypothesis test that the log2FoldChange is different from zero. pvalue : This is the unadjusted p-value associated with the Wald test statistic. A lower p-value suggests that the observed difference in gene expression is less likely to be due to random chance. padj (adjusted p-value) : This is the FDR-adjusted p-value adjusted for multiple testing. This is the primary output statistic that should be used to determine significant differential expression, typically at a threshold of, at most, ≤ 0.05.",
+    "The PCA output file ( DESeq_sample_PCA_coordinates.txt ) is a plain tab-delimited text file containing the sample IDs in the first column, and the coordinates for the PC1 values (X-axis) and the PC2 values (Y-axis), and well as the sample grouping data. The variance values for PC1 and PC2 can be recorded from the PCA plot generated within R studio, and the PCA values can be used to replot data in other programs (such as MS Excel or Prism).",
+    "Deseq2script.R DESeq2 R script Deseq2examplereadcounts.Txt Example readcounts file Deseq2examplemetadatasimple.Txt Example metadata file (simple) Deseq2examplemetadatapaired.Txt Example metadata file (paired) Deseq2examplemetadatabatcheffects.Txt Example metadata file (batch effects)"
+  ],
+  "authors": [
+    "Bruce A Rosa",
+    "John Martin",
+    "Makedonka Mitreva"
+  ],
+  "creator": "John Martin",
+  "published_on": 1705670332,
+  "created_on": 1705670332,
+  "keywords": []
+}

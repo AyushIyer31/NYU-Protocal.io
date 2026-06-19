@@ -1,0 +1,35 @@
+{
+  "id": 60073,
+  "title": "Intracellular metabolomics extraction",
+  "uri": "intracellular-metabolomics-extraction-b6whrfb6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlkk985l5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"ce3p2\",\"text\":\"This quench and intracellular extraction are optimal for the analysis of metabolites stable at high temperatures and moderately acidic pH that are rapidly consumed such as pyruvate and acetyl-CoA. It also avoids the use of methanol which can form degradation products with many metabolites of interest. It provides a near-complete extraction of polar and semi-polar metabolites with negligible benefits from re-extraction. It also enables the simultaneous generation of intracellular and extracellular metabolomics samples amenable for stable isotope resolved metabolomics timecourse experiments.  The compound classes extracted are best seen when paired with HILIC chromatography. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9acfu\",\"text\":\"LC/MS grade water (Fisher Cat# W6-4)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e457h\",\"text\":\"LC/MS grade ethanol (Sigma Aldrich Cat# 459828)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1cp8e\",\"text\":\"LC/MS grade formic acid (Fisher Cat# A117-50)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bnqdk\",\"text\":\"50 ml tubes (Falcon Cat# 352020)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e51ts\",\"text\":\"5 ml conical tubes (Fisher Cat# 6302509)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a2g1a\",\"text\":\"Acroprep Advance 96-well filter plate- 1 ml, 0,2 µm GHP membrane (Pall Cat# 616201)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fdelu\",\"text\":\"96-deep well plate (Fisher Cat# 12566120)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"br0bf\",\"text\":\"Nylaflo (Nylon) 47mm membrane 0.45 µm pore size (Pall Cat# 66608)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bdhu2\",\"text\":\"Liquid nitrogen\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8fod9\",\"text\":\"Ice\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fm064\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Harvest cells. The recommended biomass input for mammalian cells is 10 million cells. For bacteria and yeast, 6 relative ODs are recommended.",
+    "Dispense cells onto a 47 mm nylon filter with a 0.2 µm pore size under vacuum in a vacuum filtration assembly. If desired the supernatant may also be collected simultaneously by attaching a 50 ml polypropylene tube to the sand core filter head outlet. Avoid rinsing with fresh media, or water as this can lead to a leaky cell membrane and loss of metabolites.",
+    "Turn off the vacuum and remove the nylon filter using tweezers.",
+    "Coil the filter and insert it into a 5 ml conical tube.",
+    "Place the tube in heating blocks pre-heated to 100 o C for 12 min. The actual temperature of the liquid inside the tube will not exceed 78 o C, which is the boiling point of ethanol.",
+    "Seal the tube and submerge it in liquid nitrogen to quench metabolism. Keep in liquid nitrogen until ready to extract.",
+    "Dispense 3ml of a 75:25, v/v solution of ethanol and water with 0.1M formic acid per sample tube.",
+    "To collect the filtered extracellular fraction disassemble the filter flask assembly, remove the 50 ml conical tube, cap the tube, and store it at 4 o Celsius for immediate analysis or extraction.",
+    "Sonicate the tubes with a probe until a homogeneous mixture is achieved.",
+    "Place the tubes in an ice bath for 60 min for protein precipitation.",
+    "Centrifuge the tubes for 10 min at 4K rpm and 2 o C.",
+    "Transfer the supernatant in 1ml fractions to a PALL 0.2um GHP deep well filter plate with a 96 deep well-receiving plate attached.",
+    "Centrifuge the plate for 10 min at 4K rpm and 2 o C.",
+    "Place the plate in a centrifugal evaporator until dry at 30 o C.",
+    "Immediately prior to analysis re-suspend and reconstitute all the dried sample fractions into a single sample using a single 100 ul volume of solution compatible with the mobile phase used."
+  ],
+  "authors": [
+    "Juan Sanchez"
+  ],
+  "creator": "Juan Sanchez",
+  "published_on": 1648627482,
+  "created_on": 1648619204,
+  "keywords": []
+}

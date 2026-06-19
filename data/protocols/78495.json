@@ -1,0 +1,27 @@
+{
+  "id": 78495,
+  "title": "Economic and easy bacterial and yeast colony PCR with 2x premix Gotaq-Green (Promega) or DreamTaq-Green (Thermo Fisher) ",
+  "uri": "economic-and-easy-bacterial-and-yeast-colony-pcr-w-cqv7vw9n",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2ly74jqlx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"7di6l\",\"text\":\"Slightly modified method Gotaq Promega or DreamTaq (Thermo), economical, quick and ready-to-load. Perfect for yeast genotyping and screening\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":31,\"length\":7},{\"key\":1,\"offset\":52,\"length\":6}],\"data\":{}},{\"key\":\"dt0m5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"42D20830BF3B11EDB92CC3990488B8E9\",\"url\":\"https://www.protocols.io/view/how-to-setup-and-perform-a-pcr-experiment-using-go-rm7vzqd8vx1w/v1\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"5954D1A0BF3B11EDB92CC3990488B8E9\",\"url\":\"https://www.thermofisher.com/order/catalog/product/K1081\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Bacterial colony PCR GoTaq Green Master Mix Promega Catalog #M7122 PCR reactions using ProFlex PCR system, Applied Biosystems. Thermal Cycler",
+    "Yeast colony PCR (S.cerevisiae, Pichia, Candida)",
+    "%s %s Reagent NameInitial Conc.Volume (μL)gotaq green 2x2X6.25oligo 1oligo 210 uM 10 uM 0.75 0.75cell suspension in water1ddH2ON/A3.75TOTAL Volume:12.5 uL %s %s Stage NumberNumber of CyclesStep NumberStep NameTemperatureDuration111Initial Denaturation9810min2301Denaturation9810 sec2Annealing50/5530 sec3Extension721min (depends on the length)311Hold10 Maximum (good quality) PCR product up to ~3kb. The best yield is 0.2kb-2kb pick a colony from agar plate and swirl in sterile water 50-100 µL . From liquid culture, dilute saturated culture 5-10 µL in sterile 50-100 µL water. This is a source for reaction (taking 0.8 µL ). Keep the rest in ice, for re-culture of positively verified clones.",
+    "Load on 1-1.2% agarose gel 8-10 µL and visualise under GelDoc or another UV source.",
+    "Alkaline yeast cells lysis treatment. Pick a yeast colony from agar plate and swirl in sterile 20mM NaOH 50-100 µL . Optionally, a liquid culture or a agar-plate pick colony resusupend in the sterile water or YPD, take small volume (~20uL) and mix with the same volume of 40mM NaOH. 20mM NaOH-cells resuspension incubate 95 °C 00:10:00 and immediately transfer to ice/ 4 °C for at least 00:05:00",
+    "%s %s Reagent NameInitial Conc.Volume (μL)gotaq green 2x2X6.25oligo 1oligo 210 uM 10 uM 0.75 0.75cell suspension in water1ddH2ON/A3.75TOTAL Volume:12.5 uL %s %s ABCD Number of CyclesStep NameTemperatureDuration1Initial Denaturation98oC10min30Denaturation98oC10 secAnnealing50-55oC30 sec1min (depends on the length)72oC1min per 1kb1Hold4-10oChold Maximum PCR product up to ~3kb. The best yield is 0.2kb-2kb Important - annealing 1min30sec",
+    "Load on 1-1.2% agarose gel 8-10 µL and visualise under GelDoc or another UV source."
+  ],
+  "authors": [
+    "Dariusz Abramczyk"
+  ],
+  "creator": "Dariusz Abramczyk",
+  "published_on": 1679070606,
+  "created_on": 1678449413,
+  "keywords": []
+}

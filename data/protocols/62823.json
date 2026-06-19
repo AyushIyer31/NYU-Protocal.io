@@ -1,0 +1,36 @@
+{
+  "id": 62823,
+  "title": "Regulation of mitophagy by the NSL complex underlies genetic risk for Parkinson’s disease: Drosophila Husbandry, Assays and Immunohistochemistry",
+  "uri": "regulation-of-mitophagy-by-the-nsl-complex-underli-b9kfr4tn",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2lyn1dqvx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"ejg5g\",\"text\":\"This protocol describes Drosophila stocks and husbandry, Locomotor and lifespan assays and, Immunohistochemistry and sample preparation in order to assess the role of KAT8/KANSL1 in neuronal survival in vivo.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":178,\"length\":1},{\"style\":\"italic\",\"offset\":200,\"length\":7}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"4354h\",\"text\":\"Drosophila Strains \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":19}],\"entityRanges\":[],\"data\":{}},{\"key\":\"88ldn\",\"text\":\"Bloomington Drosophila Stock Center (RRID:SCR_006457): mof RNAi lines, P{TRiP.JF01701} (RRID:BDSC_31401); and P{TRiP.HMS00537} (RRID:BDSC_58281); nsl1 RNAi lines, P{TRiP.HMJ22458} (RRID:BDSC_58328); the pan-neuronal nSyb-GAL4 driver (RRID:BDSC_51941); and dopaminergic neuron driver (TH-GAL4; RRID:BDSC_8848); and control (lacZ) RNAi P{GD936}v51446) from the Vienna Drosophila Resource Center (RRID:SCR_013805). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":12,\"length\":10},{\"style\":\"italic\",\"offset\":55,\"length\":3},{\"style\":\"italic\",\"offset\":146,\"length\":4},{\"style\":\"italic\",\"offset\":216,\"length\":10},{\"style\":\"italic\",\"offset\":323,\"length\":4},{\"style\":\"italic\",\"offset\":366,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"b48ka\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ds1tk\",\"text\":\"Medium\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":6}],\"entityRanges\":[],\"data\":{}},{\"key\":\"bn32q\",\"text\":\"Agar, cornmeal, molasses, propionic acid and yeast\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Raise flies under standard conditions in a humidified, temperature-controlled incubator with a 12h:12h light:dark cycle at 25 °C , on food consisting of agar, cornmeal, molasses, propionic acid and yeast. The following strains were obtained from the Bloomington Drosophila Stock Center (RRID:SCR_006457): mof RNAi lines, P{TRiP.JF01701} (RRID:BDSC_31401); and P{TRiP.HMS00537} (RRID:BDSC_58281); nsl1 RNAi lines, P{TRiP.HMJ22458} (RRID:BDSC_58328); the pan-neuronal nSyb-GAL4 driver (RRID:BDSC_51941); and dopaminergic neuron driver (TH-GAL4; RRID:BDSC_8848); and control ( lacZ ) RNAi P{GD936}v51446) from the Vienna Drosophila Resource Center (RRID:SCR_013805). All experiments are conducted using male flies.",
+    "Perform the startle induced negative geotaxis (climbing) assay using a counter-current apparatus.",
+    "Place 20-23 males into the first chamber, and tap to the bottom. Give 10 s to climb a 10 cm distance. Repeat this procedure five times (five chambers), and count the number of flies that remain in each chamber.",
+    "Normalize the weighted performance of several group of flies for each genotype to the maximum possible score and expressed as Climbing index as described previously in the manuscript by Greene et al., 2003 . Reference: Greene JC, Whitworth AJ, Kuo I, Andrews LA, Feany MB, Pallanck LJ. Mitochondrial pathology and apoptotic muscle degeneration in Drosophila parkin mutants. Proc Natl Acad Sci . 2003;100(7):4078 LP - 4083. doi:10.1073/pnas.0737556100",
+    "For lifespan experiments, grow flies at low-density under identical conditions as described in Step 1 go to step #1 .",
+    "Collect progeny under very light anaesthesia and keep in tubes of approximately 20 males each, around 50-100 in total.",
+    "Calculate percent survival at the end of the experiment after correcting for any accidental loss.",
+    "Dissect drosophila brains from aged flies and immunostain as previously described in the manuscript by Whitworth et al., 2005 . Reference: Whitworth AJ, Theodore DA, Greene JC, Beneš H, Wes PD, Pallanck LJ. Increased glutathione S -transferase activity rescues dopaminergic neuron loss in a Drosophila model of Parkinson&#39;s disease. Proc Natl Acad Sci . 2005;102(22):8024 LP - 8029. doi:10.1073/pnas.0501078102",
+    "Dissect adult brains in PBS and fix in 4 % (w/v) formaldehyde for 00:30:00 On ice .",
+    "Incubate tissues with anti-tyrosine hydroxylase (Immunostar Inc. #22491), diluted in 0.3 % (v/v) Triton X-100 plus 4 % (v/v) goat serum in PBS for 72:00:00 at 4 °C , then rinse 3 times 00:20:00 with 0.3 % (v/v) Triton X-100 in PBS, and incubate with the appropriate fluorescent secondary antibodies Overnight at 4 °C .",
+    "Wash tissues 2 times in PBS and mount on slides using Prolong Diamond Antifade mounting medium (Thermo Fisher Scientific).",
+    "Image brains with a Zeiss LMS 880 confocal. Count tyrosine hydroxylase-positive neurons under blinded conditions.",
+    "Transfer flies every 2-3 days to fresh medium and record the number of dead flies.",
+    "Permeabilize in 0.3 % (v/v) Triton X-100 for 3 times 00:20:00 .",
+    "Block with 0.3 % (v/v) Triton X-100 plus 4 % (v/v) goat serum in PBS for 04:00:00 at Room temperature ."
+  ],
+  "authors": [
+    "Natalie J. Welsh",
+    "Alexander J. Whitworth"
+  ],
+  "creator": "Benjamin O'Callaghan",
+  "published_on": 1671638793,
+  "created_on": 1652886222,
+  "keywords": []
+}

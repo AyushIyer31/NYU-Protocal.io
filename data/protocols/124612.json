@@ -1,0 +1,40 @@
+{
+  "id": 124612,
+  "title": "CRISPR-Cas9 Screening Protocol for Gene Perturbation Analysis",
+  "uri": "crispr-cas9-screening-protocol-for-gene-perturbati-d5xc87iw",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvmyo9nv3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"c7vsr\",\"text\":\"This protocol describes CRISPR-Cas9 Screening for gene perturbation analysis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"6a380\",\"text\":\"2 mg/ml puromycin\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"17qpa\",\"text\":\"High Pure PCR Template Preparation Kit (Roche # 11796828001)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8vukh\",\"text\":\"Phusion HF DNA polymerase (ThermoFisher Scientific #F-530XL)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2gh81\",\"text\":\"Quant-iT™ PicoGreen™ dsDNA Assay Kit (ThermoFisher Scientific #Q33232)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6sasv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ercbq\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"e7k0s\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1evbq\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"csdd5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"45l79\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"9eopf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":967087,\"guid\":\"44423C17045411F0A7330A58A9FEAC02\",\"name\":\"High Pure PCR Template Preparation Kit\",\"mol_weight\":0,\"sku\":\"11796828001\",\"url\":\"https://lifescience.roche.com/global/en/products/others/high-pure-pcr-template-preparation-kit-3684811.html\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":66,\"name\":\"Roche\",\"link\":\"http://www.roche.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":253042,\"guid\":\"421D2605341F11EE9D4302C0B41BC903\",\"name\":\"Phusion\\u0026trade; High-Fidelity DNA Polymerase (2 U/\\u0026micro;L)\",\"mol_weight\":0,\"sku\":\"F-530XL\",\"url\":\"https://www.thermofisher.com/order/catalog/product/F-530XL\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":262215,\"guid\":\"42344032341F11EE9D4302C0B41BC903\",\"name\":\"Quant-iT\\u0026trade; 1X dsDNA HS Assay\",\"mol_weight\":0,\"sku\":\"Q33232\",\"url\":\"https://www.thermofisher.com/order/catalog/product/Q33232\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Plate 10 x 150 mm of cells at 8 x 10 6 cells per dish in complete growing medium.",
+    "Incubate Overnight .",
+    "Next day, infect cells with human CRISPR Brunello lentiviral pooled library. Four unique sgRNAs (single guide RNAs) per gene, comprising a total of ~76,000 sgRNAs. Incubate Overnight . Doench, J., Fusi, N., Sullender, M. et al..",
+    "The following day, trypsinize cells from all 10 plates, pool and plate into 20 x 150 mm dishes (5 x 10 5 cells per dish) with growing medium containing 2 mg/mL puromycin. Incubate for 72:00:00 .",
+    "Change to regular medium and incubate for 168:00:00 to allow complete editing.",
+    "Trypsinize all 20 plates, pool and determine cell number.",
+    "Plate into 100 x 150 mm dishes (5 x 10 5 cells per dish).",
+    "Infect 50 plates with Ad-rtTA and 50 plates with Ad-MAPL-flag adenovirus at 10 pfu/cell. Incubate for 48:00:00 .",
+    "Change to regular medium and refresh every 2-3 days. For Ad-rtTA, cells reached confluency in 1.5 weeks and for Ad-MAPL-flag, ~3 weeks.",
+    "Harvest cells by trypsinization, pool together all 50 plates, disperse to single cell, and determine cell number.",
+    "Make aliquots of 20 x 10 6 cells and centrifuge for 1000 x g, Room temperature, 5 minutes .",
+    "Remove supernatant and store pellets at -80 °C .",
+    "Isolate genomic DNA using High Pure PCR Template Preparation Kit (Roche #11796828001) as described by the manufacturer.",
+    "Amplify sequences of the gRNA from genomic DNA by PCR using Phusion HF DNA polymerase (ThermoFisher Scientific #F-530XL) using a 2-step amplification adding a unique 6-bp index per sample and sequencing adapter sequences as described in S. Huang et al. (2012) Cell 151, 937-950.",
+    "Quantify using the Quant-iT™ PicoGreen™ dsDNA Assay Kit (ThermoFisher Scientific #Q33232).",
+    "Sequence amplified gDNA using HiSeq2500 System (Illumina).",
+    "Map sequence reads to the library using xcalibr and analyze counts with MAGeCK (version 0.5.8) as described in W. Li et al., (2014) Genome Biol 15, 554.",
+    "Use Robust Rank Aggregation (RRA) algorithm to identify genes whose perturbation (knockout or overexpression) primarily enhanced fitness in the MAPL overexpressing group but not the control group."
+  ],
+  "authors": [
+    "mai.nguyen",
+    "heidi.mcbride",
+    "Sidong Huang"
+  ],
+  "creator": "Lilia Rodriguez",
+  "published_on": 1742374404,
+  "created_on": 1742273391,
+  "keywords": []
+}

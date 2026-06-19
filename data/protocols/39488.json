@@ -1,0 +1,42 @@
+{
+  "id": 39488,
+  "title": "INSPECT sample tracking system",
+  "uri": "inspect-sample-tracking-system-bis8kehw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bis8kehw",
+  "description": "{\"blocks\":[{\"key\":\"asspd\",\"text\":\"A specimen to data tracking tool for SEARCH SARS-CoV-2 tests. The  application is used by SEARCH technicians to track samples as they  proceed through each step within the RT-qPCR testing workflow. The app is  currently hosted here: http://inspect-covid.com/qpcr_records/\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":233,\"length\":38}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"326D7F8ACAD711EA9C520A58A9FEAC2A\",\"url\":\"http://inspect-covid.com/qpcr_records\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"agkkt\",\"text\":\"INSPECT makes certain assumptions about plate format and automation at each step of the workflow :\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"1gs5p\",\"text\":\"1) INSPECT expects 96-well plates for the Sample and RNA extraction steps and 384-well plates for the RT-qPCR reaction steps.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"642jp\",\"text\":\"2) Sample plating is not automated and performed manually. Technicians must follow the prompted order of sample plating to maintain data integrity within INSPECT\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2u5kv\",\"text\":\"3) RNA Extraction, RNA plate compression and RT-qPCR reaction plate preparation are automated using Kingfisher, EpMotion and Mosquito robots / machines. This permits INSPECT to transition well IDs from one plate to another in specific orders as followed by the machines.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"fmt7a\",\"text\":\"4) Only 1 decision review is permitted per plate.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Before starting ensure that the INSPECT system is publicly accessible and that you are registered on the INSPECT user list.",
+    "Freshly received samples can be registered into INSPECT by scanning the 2D sample tube barcode into the system. This is performed in conjunction to the sample extraction and plating step.",
+    "Enter the Lot # of the RNA Lysis buffer being used. The Lot # can also be scanned into the app. Enter the name of the assisting technician (if any). Submission form for recording the RNA lysis buffer lot #",
+    "Start sample plating by using the platemap guides provided by INSPECT.",
+    "Load control samples first. INSPECT assumes that the control samples are being loaded in well A1 and H1. Initial sample plating window. INSPECT prompts user to load the control samples first into wells A1 and H1.",
+    "Scan sample barcode into the provided text area and load sample into the assigned well. Scan sample barcode and load sample into assigned well (B1, in this case) Scan and load samples as guided by INSPECT. If you do not have 94 samples, you can end the sample plating step by clicking on &#34;End Plate&#34;. INSPECT will proceed with the scanned barcodes only.",
+    "Once all samples have been plated, end the sample plating step and proceed to the plate barcode scanning step. INSPECT requires the user to enter the Sample Extraction Plate (SEP) barcode. Additionally, if present, users can enter the Sample Storage Plate (SSP) and Sample Storage Bag (SSB) barcodes as well. SSP, SEP and SSB barcode submission form",
+    "INSPECT will display the number of samples successfully scanned. The live counter will also be updated to reflect the appropriate number of samples in the sample extraction steps.",
+    "INSPECT assumes that the RNA extraction from SEPs is an automated process, performed using Kingfisher or similar robotic machines. Thus, sample barcode scanning is not required. Users must enter the origin SEP and the destination RNA Extraction Plate (REP) barcodes. Only upon entering both will the samples be successfully linked between sample extraction and RNA extraction steps.",
+    "Enter Lot #s of the reagents being used in the RNA Extraction step",
+    "Enter the barcode of the SEP and the barcode of the new REP and proceed with extracting RNA from the samples. Submission Form to assign REP to an existing SEP",
+    "Provided with valid barcodes, INSPECT will link the given REP with the corresponding SEP entered in the form",
+    "INSPECT assumes that the RT-qPCR test is performed on a 384-well plate format. For this purpose, 4x 96-well plates are compressed into a single 384-well plate. Thus, each 384-well RNA Working Plate (RWP) must be linked with 4x 96-well REPs, and the well ID for each sample must be transformed into a 384-well plate format. This process is automated by INSPECT and can be acheived by simply scanning the new RWP and the associated REPs",
+    "Similar to previous steps, each qPCR Reaction Plate (QRP) must be linked to an existing RWP. Since the RWP and the QRP have the same platemap format, the well ID for each sample is carried over from the previous assignment.",
+    "Enter a valid RWP barcode and the new QRP barcode",
+    "After the qPCR reaction has completed, the technician is required to upload the qPCR results file. This can be done using the results submission page. The filename for the results file must be the same as the QRP barcode.",
+    "Once the results are successfully uploaded, INSPECT will make decision calls on each sample (during file upload). These decisions have to be reviewed by a qialified technician. On the Review Results page, enter the barcode of the QRP for which you would like to review thh results. Default results are the same as the decisions made by INSPECT. To change the decisions, use the dropdown menu to select 1 of 4 options : Negative, Positive, Invalid and Inconclusive.",
+    "Once the results for a QRP have been reviewed, the RT-qPCR testing workflow is complete. Users can search for samples and corresponding results through the SEARCH tab. Users can download the results table from the Download link at top-left of the results table"
+  ],
+  "authors": [
+    "Shashank Sathe",
+    "Clarence Mah",
+    "Noorsher Ahmed",
+    "Michelle Franc Ragsac",
+    "John Williams"
+  ],
+  "creator": "Gene W Yeo",
+  "published_on": 1595453338,
+  "created_on": 1595274841,
+  "keywords": []
+}

@@ -1,0 +1,41 @@
+{
+  "id": 94895,
+  "title": "Single-cell RNA-seq",
+  "uri": "single-cell-rna-seq-c8wpzxdn",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2lyjy5mlx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"fmbjd\",\"text\":\"Harvesting and performing single-cell RNA-seq.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Samples were trypsinised or scraped from the culture surface and placed in a 15mL conical tube.",
+    "Tubes were centrifuged at 800g in a refrigerated centrifuge for 5 minutes, and the culture media was decanted.",
+    "The pellet was resuspended in 10mL chilled PBS per tube by pipetting, then centrifuged again using the above parameters before decanting the PBS.",
+    "Pellets were resuspended in 1mL PBS, and 100,000 cells were transferred to a 1.5mL falcon tube.",
+    "These were centrifuged at 1000rpm for 3 minutes at 4°C.",
+    "Cells were resuspended in 20μL chilled DPS.",
+    "180μL chilled 100% methanol was added dropwise to the cells while gently vortexing to prevent cell clumps, before fixing the cells on ice for 15 minutes.",
+    "Between 2400 to 4000 cells were loaded for each sample into a separate channel of a Chromium Chip G for use in the 10X Chromium Controller (cat: PN-1000120).",
+    "The cells were partitioned into nanoliter scale Gel Beads in emulsions (GEMs) and lysed using the 10x Genomics Single Cell 3′ Chip V3.1 GEM, Library and Gel Bead Kit (cat: PN-1000121).",
+    "cDNA synthesis and library construction were performed as per the manufacturer’s instructions.",
+    "The RNA was reversed transcribed and amplified using 12 cycles of PCR.",
+    "Libraries were prepared from 10µL of the cDNA and 13 cycles of amplification. Each library was prepared using Single Index Kit T Set A (cat: PN-1000213) and sequenced on the HiSeq4000 system (Illumina) using 100 bp paired-end run at a depth of 20-50 million reads. Libraries were generated in independent runs for the different samples.",
+    "Reads were aligned to the human reference genome (Ensembl release 93, GRCh38) using Cell Ranger v3.0.2.",
+    "The analysis was carried out using Seurat v3.0 (REF- Butler, 2018 ,Stuart, 2019 #645) following Seurat’s standard workflow.",
+    "Cells expressing fewer than 200 genes were excluded from the subsequent analysis. In addition, we excluded cells with more than 3000 detected genes to remove suspected cell doublets or multiplets.",
+    "Due to the nature of the cells used for this experiment, a 10% cut-off was applied for the percentage of mitochondrial genes expressed to filter out likely apoptotic cells.",
+    "Using default parameters of Seurat, data for each sample were log normalised across cells and the 2000 most highly variable genes identified.",
+    "Using the canonical correlation analysis (‘CCA’) to identify anchors, we integrated the samples using Seurat v 3 (Butler, 2018; Stuart, 2019), followed by regression of the effect of cell cycle and scaling of the data. Dimensional reduction was performed using 50 PCs.",
+    "Clustree v0.4.4 and Seurat&#39;s plots functions were used to visualise the expression of astrocytic and neuronal marker genes across different cluster resolutions.",
+    "A clustering resolution of 0.25 was selected.",
+    "The differentially expressed genes between the clusters of interest were identified using Seurat&#39;s FindMarkers() and the default &#39;Wilcox&#39; test."
+  ],
+  "authors": [
+    "Patricia Lopez Garcia"
+  ],
+  "creator": "Patricia Lopez Garcia",
+  "published_on": 1707429774,
+  "created_on": 1707395420,
+  "keywords": []
+}

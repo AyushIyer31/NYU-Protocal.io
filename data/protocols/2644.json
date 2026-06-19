@@ -1,0 +1,41 @@
+{
+  "id": 2644,
+  "title": "Transformation of supercompetent cells",
+  "uri": "Transformation-of-supercompetent-cells-etubenw",
+  "doi": "dx.doi.org/10.17504/protocols.io.etubenw",
+  "description": "{\"blocks\":[{\"key\":\"28jl9\",\"text\":\"Protocol to prepare E. coli supercompetent cells to transform with plasmid/ligation. This protocol is originally derived from Hanahan, D. (1983) J. Mol. Biol. 166:557-580 with some changes. This version works exceptionally well for cloning PCR products where the number of colonies is not expected to be as high as from some ligations. These cells outperform commercially purchased supercompetent cells in my hands.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":20,\"length\":7}],\"entityRanges\":[{\"key\":0,\"offset\":126,\"length\":44}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"153E0862135C489A888199FF5BEE0C05\",\"url\":\"http://www.ncbi.nlm.nih.gov/pubmed/6345791\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"5cqaa\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"fc2bh\",\"text\":\"Prepare for day 2:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":18}],\"entityRanges\":[],\"data\":[]},{\"key\":\"37ldl\",\"text\":\"42˚C waterbath\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ejs5j\",\"text\":\"37˚C waterbath\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8gtbi\",\"text\":\"prechilled transformation tubes\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"67fmu\",\"text\":\"37˚C SOC\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"eesbl\",\"text\":\"LB amp+ Xgal agar plates\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4110n\",\"text\":\"\\nBuffers\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":1,\"length\":7}],\"entityRanges\":[],\"data\":[]},{\"key\":\"30g7n\",\"text\":\"TFB    Maniatis 1.78\",\"type\":\"header-four\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":20}],\"entityRanges\":[],\"data\":[]},{\"key\":\"8ardb\",\"text\":\" 10mM K-MES (pH 6.2) adjust with KOH\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"f4rt0\",\"text\":\"100mM KCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2kf4i\",\"text\":\"45mM MnCl2 \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"cvg26\",\"text\":\"10mM CaCl2\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8484l\",\"text\":\"3mM HACoCl3 (Haxamine cobalt III chloride)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8bcds\",\"text\":\"filter sterilize and store at 4˚C (lasts a very long time)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"f8ipu\",\"text\":\"\\nSOB\",\"type\":\"header-four\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":1,\"length\":3}],\"entityRanges\":[],\"data\":[]},{\"key\":\"dibfj\",\"text\":\" 2% bacto-tryptone (20gl-1)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":24,\"length\":2}],\"entityRanges\":[],\"data\":[]},{\"key\":\"3pkt5\",\"text\":\"0.5% yeast extract (5gl-1)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":23,\"length\":2}],\"entityRanges\":[],\"data\":[]},{\"key\":\"7nahf\",\"text\":\"10mM NaCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5iveb\",\"text\":\"2.5mM KCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ebg9u\",\"text\":\"10mM MgCl2\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":9,\"length\":1}],\"entityRanges\":[],\"data\":[]},{\"key\":\"ef0p9\",\"text\":\"10mM MgSO4\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":9,\"length\":1}],\"entityRanges\":[],\"data\":[]},{\"key\":\"e6as\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"11dv6\",\"text\":\"SOC is SOB with 20mM glucose\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":3}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"fp9jh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Inoculate two separate 1.5mls of LB medium with Invitrogen (InvαF&#39;) cells. Also include an uninoculated negative control tube. Shake at 250 rpm overnight at 37˚C. 16:00:00 These cells are similar to any E. coli sold for transformation. Inoculation is by scraping a pipette tip over the top of a microfuge tube of frozen glycerol stock and swirling in LB medium. Use two starter cultures in case one doesn&#39;t grow, which is rare but loses you a day. Include a negative control to check for contamination.",
+    "Inoculate with 500ul of overnight E. coli culture two 50ml tubes each containing 25mls of sterile SOB media. Shake at 250 rpm for 4 hours 04:00:00 Use tape to keep tube lids loosely in place, but make sure you don&#39;t seal the tubes, they need air Two replicate 25ml cultures are prepared, if one doesn&#39;t grow you haven&#39;t lost a day",
+    "Ice the tubes of cells for 15 mins 00:15:00",
+    "Pellet cells (approx 5 min spin, approx 3000 rpm) and discard supernatant 00:05:00",
+    "Resuspend each pellet of cells in 8 mls of cold TFB by washing gently, then sucking up and down, with a wide-bore 10ml pipette tip",
+    "Ice the tubes of cells for 15 mins 00:15:00",
+    "Pellet cells (approx 5 min spin, approx 3000 rpm) and discard supernatant 00:05:00",
+    "Resuspend one pellet of cells in 2 mls of cold TFB and use this liquid to resuspend the second pellet. You should now have all cells in a single aliquot of 2mls cold TFB.",
+    "Add 105ul of DMSO swirl and ice for 5 mins. 00:05:00",
+    "Add 80ul of 100mM DTT, swirl, and ice for 10 mins. 00:10:00",
+    "Add 105ul of DMSO swirl and ice for 5 mins. 00:05:00",
+    "Aliquot 180ul of cells into pre-chilled, labelled 5ml polypropylene growth tubes with loose-cap lids. Include positive and negative controls.",
+    "Add ligation DNA to each sample (in ~10ul volume) and ice for 30 mins 00:30:00 Now would be a great time to check the waterbath is at exactly 42C and that you have some warm SOC",
+    "Heat pulse tubes at exactly 42˚C for exactly 90 secs. 00:01:30 Use a floating tube rack that can be moved rapidly between waterbath and ice bucket.",
+    "Ice for 2 mins 00:02:00",
+    "Add 400ul of 37˚C SOC to each tube and incubate at 37˚C for 10 mins 00:10:00",
+    "Incubate a further 45 mins at 37˚C shaking at 225 rpm 00:45:00 Some think this step is unnecessary",
+    "Place tubes in ice to halt growth",
+    "Transfer the cells from each tube to a labelled individual 1.5ml microfuge tube",
+    "Give the microfuge tubes a very short (5 sec) spin to very loosely pellet the cells and then remove and discard 370ul of the supernatant This step increases the cell density, omit this step if you expect a lot of colonies anyway",
+    "Plate 40ul of the cell solution onto LB/ Amp+/ Xgal plates and grow overnight at 37˚C 16:00:00 InvαF&#39; cells do not need IPTG Spread 3 replicate plates with 40ul as redundancy is good"
+  ],
+  "authors": [
+    "Dave Lunt"
+  ],
+  "creator": "Dave H Lunt",
+  "published_on": 1459807457,
+  "created_on": 1459804529,
+  "keywords": []
+}

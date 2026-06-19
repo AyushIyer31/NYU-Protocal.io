@@ -1,0 +1,34 @@
+{
+  "id": 50843,
+  "title": " Evaluating large spontaneous deletions in a bovine cell line selected for bovine viral diarrhea virus resistance - MDBK reads mapping to regions in genome  not shared with CRIB cell line ",
+  "uri": "evaluating-large-spontaneous-deletions-in-a-bovin-bvv3n68n",
+  "doi": "dx.doi.org/10.17504/protocols.io.bvv3n68n",
+  "description": "{\"blocks\":[{\"key\":\"65bqu\",\"text\":\"Bovine viral diarrhea virus (BVDV) entry into bovine cells involves attachment of virions to cellular receptors, internalization, and pH-dependent fusion with endosomal membranes. The primary host receptor for BVDV is CD46; however, the complete set of host factors required for virus entry is unknown. The Madin-Darby bovine kidney (MDBK) cell line is susceptible to BVDV infection, while a derivative cell line (CRIB) is resistant at the level of virus entry. We performed complete genome sequencing of each to identify genomic variation underlying the resistant phenotype with the aim of identifying host factors essential for BVDV entry. Three large compound deletions in the BVDV-resistant CRIB cell line were identified and predicted to disrupt the function or expression of the genesPTPN12,GRID2, andRABGAP1L. However, CRISPR/Cas9 mediated knockout of these genes, individually or in combination, in the parental MDBK cell line did not impact virus entry or replication. Therefore, resistance to BVDV in the CRIB cell line is not due to the apparent spontaneous loss ofPTPN12,GRID2, orRABGAP1Lgene function. Identifying the functional cause of BVDV resistance in the CRIB cell line may require more detailed comparisons of the genomes and epigenomes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":790,\"length\":6},{\"style\":\"italic\",\"offset\":797,\"length\":5},{\"style\":\"italic\",\"offset\":807,\"length\":8},{\"style\":\"italic\",\"offset\":1076,\"length\":6},{\"style\":\"italic\",\"offset\":1083,\"length\":5},{\"style\":\"italic\",\"offset\":1092,\"length\":8}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Cell line library BAM files Illumina libraries of CRIB and MDBK cell lines The library names are LIB14393_Bovine_CRIBcells.Bt_ARS-UCD1.2.realigned.bam LIB14394_Bovine_MDBKcells.Bt_ARS-UCD1.2.realigned.bam check files LIB14393_Bovine_CRIBcells.Bt_ARS-UCD1.2.realigned.bam Check MDBK BAM files samtools flagstat LIB14394_Bovine_MDBKcells.Bt_ARS-UCD1.2.realigned.bam OS X 367878117 + 0 in total (QC-passed reads + QC-failed reads) 0 + 0 secondary 1572651 + 0 supplementary 14182468 + 0 duplicates 363791869 + 0 mapped (98.89% : N/A) 366305466 + 0 paired in sequencing 183152733 + 0 read1 183152733 + 0 read2 348244352 + 0 properly paired (95.07% : N/A) 359573946 + 0 with itself and mate mapped 2645272 + 0 singletons (0.72% : N/A) 10766072 + 0 with mate mapped to a different chr 5380851 + 0 with mate mapped to a different chr (mapQ&gt;=5) BAM file is acceptable LIB14394_Bovine_MDBKcells.Bt_ARS-UCD1.2.realigned.bam Check CRIB samtools flagstat LIB14393_Bovine_CRIBcells.Bt_ARS-UCD1.2.realigned.bam 478473382 + 0 in total (QC-passed reads + QC-failed reads) 0 + 0 secondary 1983826 + 0 supplementary 17840954 + 0 duplicates 469694793 + 0 mapped (98.17% : N/A) 476489556 + 0 paired in sequencing 238244778 + 0 read1 238244778 + 0 read2 451693766 + 0 properly paired (94.80% : N/A) 464266014 + 0 with itself and mate mapped 3444953 + 0 singletons (0.72% : N/A) 11903898 + 0 with mate mapped to a different chr 5382690 + 0 with mate mapped to a different chr (mapQ&gt;=5) BAM file is acceptable",
+    "Convert BAM to BED Convert BAM to BED bamToBed -i LIB14394_Bovine_MDBKcells.Bt_ARS-UCD1.2.realigned.bam > LIB14394_Bovine_MDBKcells.Bt_ARS-UCD1.2.realigned.bed Convert BAM to BED bamToBed -i LIB14393_Bovine_CRIBcells.Bt_ARS-UCD1.2.realigned.bam > LIB14393_Bovine_CRIBcells.Bt_ARS-UCD1.2.realigned.bed",
+    "Required software samtools 1.9 GitHub http://htslib.org/ Bedtools 2.27.1 https://github.com/arq5x/bedtools2 http://quinlanlab.org",
+    "Get RepeatMasked ARS-UCSC2.1 RepeatMasked Bovine Genome features Goto http://genome.ucsc.edu/cgi-bin/hgTables to create RepeatMasked ARS-UCSD2.1 bovine genome Select &#34;Cow&#34; genome and ARS-UCSD 2.1 bovine genome, select &#34;Variation and Repeats&#34; from group and RepeatMasker Track and set other parameters as defined in screenshot above, including outputting to file named ARS-UCD1.2.RepeatMask.bed. Click &#34;get output&#34; Create BED record &#34;Whole Gene&#34; , the click &#34;get BED&#34; BED file of RepeatMasked Regions of ARS-UCSD bovine genome is ARS-UCD1.2.RepeatMask.bed",
+    "Remove features from the MDBK file that intersect with repeats in ARS-UCD1.2.RepeatMask.bed bedtools intersect -a LIB14394_Bovine_MDBKcells.Bt_ARS-UCD1.2.realigned.bed -b ARS-UCD1.2.RepeatMask.bed -v > LIB14394_Bovine_MDBKcells.Bt_ARS-UCD1.2.realigned.RepMask.bed",
+    "Find those features (reads) present in MDBK that do no overlap features (reads) in CRIB Find reads in MDBK mapping to genome absent in CRIB nohup bedtools intersect -a LIB14394_Bovine_MDBKcells.Bt_ARS-UCD1.2.realigned.RepMask.bed -b LIB14393_Bovine_CRIBcells.Bt_ARS-UCD1.2.realigned.bed -v > MDBK+_CRIB-.bed & Output: MDBK+_CRIB-.bed"
+  ],
+  "authors": [
+    "Aspen M Workman",
+    "Michael Heaton",
+    "Dennis A. Webster",
+    "Gregory P Harhay",
+    "Tim Smith",
+    "Shollie M Falkenberg",
+    "Daniel F. Carlson",
+    "Tad S Sonstegard",
+    "ted.kalbfleisch"
+  ],
+  "creator": "Gregory P Harhay",
+  "published_on": 1635951077,
+  "created_on": 1623866149,
+  "keywords": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": 234629,
+  "title": "nanoPOTS LC-MS for spatial single cell proteome (SSCP) analysis ",
+  "uri": "nanopots-lc-ms-for-spatial-single-cell-proteome-ss-hhddb3227",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv5kw2jv1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"1cmep\",\"text\":\"State-of-the-art omics and imaging technologies for transcriptome, epigenome, and proteome measurements at the single-cell level have been successfully demonstrated and integrated into large tissue mapping consortia (e.g., HuBMAP, SenNet). However, current approaches for probing spatial distribution of the proteome typically rely on the use of antibodies, which limits multiplexing and requires a priori knowledge of protein targets. In this protocol, we describe LC-MS workflow for unbiased, deep mapping of the proteome, enabling the characterization of proteins within tissues, including senescent cells and their surrounding microenvironment. Following precise sample collection at high spatial resolution (5–10 μm), collected tissue samples are subjected to nanoscale proteomic processing and analyzed using liquid chromatography coupled to high-resolution mass spectrometry (LC-MS/MS). This approach allows global cellular and subcellular proteomic profiling, supporting the exploration of protein dynamics at organellar scales. Here, we describe the LC-MS steps applied to mouse tissue samples to facilitate unbiased spatial single-cell proteomics (SSCP).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Inject each sample on the in-house assembled nanoPOTS autosampler utilizing an in-house packed SPE column (100 μm i.d., 4 cm, 5 μm, 300 Å C18 material,Phenomenex) for an online sample clean up, and an LC column (50 μm i.d., 25 cm,1.7 μm, 190 Å C18 material, Waters) which is heated to 50 °C using an AgileSleeve column heater (Analytical Sales and services, Inc., Flanders, NJ) for the peptide chromatographic separations. Dissolve samples with Buffer A [0.1% formic acid in water] on the chip, then load peptides on the SPE column and wash the trapped peptides with Buffer A for 5 min. After sample cleaning, separate and elute the peptides at 100 nL/min. A 30-minute linear gradient (from 8% to 22%) ofbuffer B followed by a 9-minute linear gradient (from 22% to 35%) of buffer B was used for separation.",
+    "Perform MS detection on an Orbitrap Lumos Tribrid mass spectrometer (Thermo scientific) with a FAIMSinterface operated in data-dependent acquisition (DDA) mode and a spray voltage of 2.4 kV",
+    "Perform a gas-phase fractionation of the ionized peptides using the FAIMS interface with a 3-stage stepped collision voltage (3-CV) method consisting of -45, -60, and -75 V. For MS1 analysis of the fractionated peptides in the orbitrap, the following parameters were used: mass range (m/z) 350 to 1500, resolution: 120,000, max ion injection time: 500 ms, AGC target: 1E6. Peptide precursor ions with chargestates ranging from +2 to +6 and intensities greater than 1E4 were selected for MS2 analysis. The following parameters were used for MS2 analysis in the ion trap: isolation window: 1.4, HCD Energy: 30% normalized level, max IT: 150 ms, AGC: 2E4.",
+    "Generate a spectral library for a pooled tissue sample by selecting a single collision energy (CV) for each LC-MS run. During these runs, select precursor ions with intensities &gt; 1E4 for MS/MS fragmentation at 30% high HCD and For the pooled tissue samples for generating a spectral library, a single CV was used for each LC-MS run. Precursor ions with intensities &gt; 1E4 were selected for fragmentation by 30% higher-energy collisional dissociation (HCD) and scanned in an Ion trap with an AGC of 2E5 and an IT of 86 ms.",
+    "Match between runs (MBR) and MaxLFQ embedded in the FragPipe (minimum ions:1; minimum scans: 1; m/z tolerance 10 ppm; RT tolerance 0.7 min) was selected for peptide quantifications for the dataset featured here.",
+    "FragPipe (Ver. 21.1) powered by MSFragger (Ver. 4.0) search engine, Philosopher (Ver. 5.1.0) and IonQuant (Ver. 1.10.12 ) can be used used for the raw data processing in conjunction with the appropriate protein fasta.",
+    "C leavage enzyme: strict trypsin, peptide length: 7-50, max missed cleavage: 2, FDR 0.01",
+    "Fixed modification: carbamidomethylation of cysteine / Variable modification: Protein N-terminal acetylation, oxidation of methionine.",
+    "For the mouse example dataset showcased here, the latest version of the Uniprot Mus musculus (Mouse) database was used for a data search and the below FragPipe parameter settings selected."
+  ],
+  "authors": [
+    "Yumi Kwon",
+    "Ljiljana.PasaTolic"
+  ],
+  "creator": "Yumi Kwon",
+  "published_on": 1765327295,
+  "created_on": 1765325618,
+  "keywords": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": 54755,
+  "title": "3’ mRNA-sequencing",
+  "uri": "3-mrna-sequencing-bzqbp5sn",
+  "doi": "dx.doi.org/10.17504/protocols.io.bzqbp5sn",
+  "description": "{\"blocks\":[{\"key\":\"abd0u\",\"text\":\"Protocol for RNAseq used in Yoo et al 2021\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Mice were cervically dislocated and the GI tract was removed.",
+    "1cm of tissue above and below the cecum were dissected and cleaned to represent tissue from the distal SI and proximal colon, respectively.",
+    "Tissue was homogenized in TRIzol (ThermoFisher Scientific, Waltham. MA-Cat. No. 15596018) solution using bead-based homogenizing methods, and total RNA was extracted using chloroform per manufacturer’s instructions.",
+    "The cDNA libraries were prepared using the QuantSeq 3’mRNA-Seq Library Prep Kit FWD for Illumina (Lexogen, Greenland, NH) supplemented with UMI (unique molecular index) as per the manufacturer’s instructions. Briefly, total RNA was reverse transcribed using oligo (dT) primers.",
+    "The second cDNA strand was synthesized by random priming, in a manner that DNA polymerase is efficiently stopped when reaching the next hybridized random primer, so only the fragment closed to the 3’ end gets captured for later indexed adapter ligation and PCR amplification.",
+    "UMIs were incorporated to the first 6 bases of each read, followed by 4 bases of spacer sequences. UMIs are used to eliminate possible PCR duplicates in sequencing datasets and therefore facilitate unbiased gene expression profiling. The basic principle behind the UMI deduplication step is to collapse reads with identical mapping coordinates and UMI sequences. This step helps increase the accuracy of sequencing read counts for downstream analysis of gene expression levels.",
+    "The processed libraries were assessed for its size distribution and concentration using Bioanalyzer High Sensitivity DNA Kit (Agilent Technologies, Santa Clara, CA-Cat. No. 5067-4626 and −4627).",
+    "Pooled libraries were diluted to 2 nM in EB buffer (Qiagen, Hilden, Germany, Cat. No. 19086) and then denatured using the Illumina protocol. The libraries were pooled and diluted to 2 nM using 10 mM Tris-HCl, pH 8.5 and then denatured using the Illumina protocol.",
+    "The denatured libraries were diluted to 10 pM by pre-chilled hybridization buffer and loaded onto an Illumina MiSeq v3 flow cell for 150 cycles using a single-read recipe according to the manufacturer’s instructions. Single-end 75bp reads (max 4.5M reads) were obtained. De-multiplexed sequencing reads were generated using Illumina BaseSpace.",
+    "UMI specific workflows that were developed and distributed by Lexogen were used to extract reads that are free from PCR artifacts (i.e., deduplication).",
+    "First, the umi2index tool was used to add the 6 nucleotide UMI sequence to the identifier of each read and trims the UMI from the start of each read. This generates a new FASTQ file, which is then processed through trimming and alignment.",
+    "Second, after the quality and polyA trimming by BBDuk (Website- https://jgi.doe.gov/data-and-tools/bbtools/bb-tools-user-guide/bbduk-guide/ ) and alignment by HISAT2 (version 2.1.0) ( Kim et al., 2015 ), the mapped reads are collapsed according to the UMI sequence of each read. Reads are collapsed if they have the same mapping coordinates (CIGAR string) and identical UMI sequences. Collapsing reads in this manner removes PCR duplicates.",
+    "Read counts were calculated using HTSeq ( Anders et al., 2015 ) by supplementing Ensembl gene annotation (GRCm38.78).",
+    "Raw read counts were run through ShinySeq to obtain differentially expressed genes and downstream gene ontology analyses ( Sundararajan et al., 2019 )."
+  ],
+  "authors": [
+    "Bryan Yoo",
+    "Jessica Griffiths",
+    "Sarkis Mazmanian"
+  ],
+  "creator": "Jessica Griffiths",
+  "published_on": 1635875897,
+  "created_on": 1635873505,
+  "keywords": []
+}

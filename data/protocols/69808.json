@@ -1,0 +1,36 @@
+{
+  "id": 69808,
+  "title": "simpleISM - A straight forward guide to upgrade from confocal to ISM",
+  "uri": "simpleism-a-straight-forward-guide-to-upgrade-from-cgeqttdw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx9mz4g8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"6012i\",\"text\":\"A hands-on guide to convert a confocal microscopy (here Olympus FluorView 300) into an image scanning microscopy (ISM) using a fast CMOS camera (here Andor Neo) as the detector. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Replace the dichromatic beam splitter slider of the confocal microscope (Supplementary Figure 1) with a custom-made slider that has a mirror at a 45-degree angle to reflect the beam out of the confocal microscope and a hole to let the beam pass and get detected with PMT channel 2. The slider will be used to switch between confocal and ISM.",
+    "Drill a hole in the microscope body to let the beam out of the microscope using the above-mentioned mirror slider (Supplementary Figure 2). Supplementary Figure 2. Yellow line shows the beam path",
+    "Using a mirror slide as a sample, align the reflected laser beam onto the camera (Andor Neo sCMOS camera is used here) by running the Fluoview software in ‘Point’ scan mode. Use a telescope to project the pinhole plane onto the camera.",
+    "On the camera, select the smallest possible region of interest (ROI) (like 12x12) and align the focal spot to the centre of the ROI.",
+    "Intercepting the clock pulses from Fluoview 300 Hardware Optional Step : The Olympus Fluoview 300 laser scanning confocal microscope has two computers, the ‘ power supply unit’ (PSU) and the ‘trigger unit’(TU) (Supplementary Figure 3). To observe the ramp-like scan signal, connect pin 11 and pin 15 of the DB-15HD connector (situated at the back of the TU) to the. On the Fluoview software, set the scan area to ‘512x512’ and zoom to ‘10’. Run the software in ‘XY repeat’ mode. Supplementary Figure 3",
+    "Prepare a subtractor circuit using the circuit diagram shown in Figure 3 in the paper. Use an Arduino Due board and connect it as shown in Supplementary Figure 4. Supplementary Figure 4",
+    "Align the sample to the focus of the objective using the PMT detector channel 2.",
+    "Once the sample comes into focus, set the scan area to ‘512x512’ and zoom setting to ‘10’. Stop the scanning and toggle the switch to ISM and the slider at the mirror position.",
+    "Upload the provided Arduino code. Run the Fluoview software in “XY repeat” mode and acquire the camera images using the settings shown in Table 1 in the paper.",
+    "Once the camera acquisition is done, stop the “XY repeat” mode in the Fluoview software and save the images on the camera in the .fits format.",
+    "Acquire a background image following steps 8 and 9.",
+    "Use the ISM reconstruction code to get the final super-resolved ISM image.",
+    "Supplementary Figure 1"
+  ],
+  "authors": [
+    "Monalisa Goswami",
+    "René Lachmann",
+    "Robert Kretschmer",
+    "Rainer Heintzmann"
+  ],
+  "creator": "Monalisa Goswami",
+  "published_on": 1662992780,
+  "created_on": 1662885976,
+  "keywords": []
+}

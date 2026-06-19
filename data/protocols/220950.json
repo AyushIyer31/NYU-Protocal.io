@@ -1,0 +1,31 @@
+{
+  "id": 220950,
+  "title": "CosMx for FFPE",
+  "uri": "cosmx-for-ffpe-g3zwbyp7f",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl41mrolo5/v2",
+  "description": "{\"blocks\":[{\"key\":\"b6qt4\",\"text\":\"CosMx protocol for FFPE tissue\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "FFPE blocks were sectioned into 5 µm sections using a microtome, placed onto BOND Plus Slides (Leica, SKU S21.2113.A), and dried as instructed prior to use (MAN-10159-02, NanoString). Sections were positioned within the imageable area as defined in the manual.",
+    "Dried sections were stored at 4°C until use.",
+    "Slides were baked at 60°C for 18 hours.",
+    "The FFPE sections were then deparaffinized and subjected to antigen retrieval at 100°C using Bond Epitope Retrieval Solution 2 (Leica, AR9640).",
+    "Incubation frames were assembled on the slides, and sections were permeabilized with Proteinase K at 40°C for 30 minutes, followed by a 5-minute fiducial incubation.",
+    "Post-fixation was carried out using 10% NFB, followed by Tris-Glycine treatment and blocking with NHS-acetate.",
+    "The sections were then incubated overnight with the CosMx Human Universal Cell Characterization Panel, which consists of a 950-target probe panel and 10 controls (NanoString, cat# 121500002).",
+    "After incubation, sections were washed to remove excess probes.",
+    "Cell membranes were then stained using morphology markers including CD298, PanCK, CD45, and CD68 from the CosMx Segmentation and Supplemental Markers Kit (NanoString, cat# 121500020, 121500021, 121500022).",
+    "Prepared slides were loaded onto the CosMx SMI instrument for imaging, following the NanoString manual (MAN-10161-02-1, Software Version 1.1). After pre-scanning each slide, regions of interest (ROIs) were selected as fields of view (FOVs) for further characterization.",
+    "The acquired scan data was then uploaded to NanoString’s cloud-based analysis platform, AtoMx, for downstream processing and analysis."
+  ],
+  "authors": [
+    "Joanna Bi"
+  ],
+  "creator": "Joanna Bi",
+  "published_on": 1750795211,
+  "created_on": 1750795164,
+  "keywords": []
+}

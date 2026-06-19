@@ -1,0 +1,35 @@
+{
+  "id": 114607,
+  "title": "Fluorescently labeled polyamine uptake (via flow cytometry)",
+  "uri": "fluorescently-labeled-polyamine-uptake-via-flow-cy-dt6p6rdn",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g7mpq1gwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"b42hb\",\"text\":\"Assess polyamine uptake capacities of a specific cell line after incubation with fluorescently labeled polyamines and mean fluorescence intensitiy acquisition via flow cytometry. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":159,\"length\":4}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"e7dec\",\"text\":\"Ensure fluorescent materials are protected from light during manipulation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"egkkt\",\"text\":\"\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"aekr9\",\"text\":\"Prepare appropriate dilution of fluorescently labeled polyamine in cell culture medium.\\n\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"h2nh\",\"text\":\"Prepare Flow Cytometry (FC) buffer made of 1% Albumin Fraction V in DPBS (-/-).\\n\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6q7mt\",\"text\":\"Prepare Eppendorf tubes and FC tubes by labeling them and keeping them on ice. \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"dunj1\",\"text\":\"Follow institutional guidelines for the disposal of biological and chemical waste.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"7t31g\",\"text\":\"BODIPY-putrescine (Cat# SCT248, Merck)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"do0ia\",\"text\":\"BODIPY-spermidine (Cat# SCT249, Merck)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cp02f\",\"text\":\"BODIPY-spermine (Cat# SCT250, Merck)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d5og3\",\"text\":\"Bovine Serum Albumin (BSA) Fraction V (Cat# 8076.4, Carl Roth)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fb9fl\",\"text\":\"Dulbecco's Phosphate Buffered Saline without calcium chloride and magnesium chloride (DPBS) (Cat# 14190144, GIBCO)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bs8av\",\"text\":\"TrypLE (Cat# 12604021, GIBCO)\\n\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bs5f7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "The day of the experiment, remove cell culture medium and add fluorescently labeled polyamines to the cells in a final volume of 1000 µL, / well . Concentration and incubation time may vary depending on the cell type. It is recommended to test various incubation times and doses to better understand the kinetics. Keep protected from light.",
+    "Incubate at 37 °C with 5% CO₂ for the desired duration, ensuring protection from light.",
+    "Discard medium.",
+    "Wash with 500 µL, /well DPBS.",
+    "Add 500 µL, /well 1%-Albumin Fraction V in DPBS, collect the cells and transfer in Eppendorf tubes on ice.",
+    "Centrifuge for 00:05:00 at 400 g and 4°C.",
+    "Discard supernatants and resuspend cell pellets in 500 µL 1%-Albumin Fraction V in DPBS, depending on the size of the cell pellet.",
+    "Keep on ice until acquisition at the flow cytometer. Record 10,000 live events per sample.",
+    "Add 200 µL, /well TrypLE. Incubate 00:05:00, at RT protected from light.",
+    "Seed cells in a 12-well plate so they reach 70-80% confluency on the day of the experiment. This protocol is made for a 12 well-plate format. Adaptations need to be done to scale up or down.",
+    "Harvest cells and prepare samples for Flow Cytometry (FC).",
+    "Discard DPBS.",
+    "Filter cell suspension through Nylon filter into FC tubes."
+  ],
+  "authors": [
+    "Sarah van Veen",
+    "Marine Houdou",
+    "Peter Vangheluwe"
+  ],
+  "creator": "Sarah van Veen",
+  "published_on": 1776253304,
+  "created_on": 1733754027,
+  "keywords": []
+}

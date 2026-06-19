@@ -1,0 +1,35 @@
+{
+  "id": 18490,
+  "title": "Long term Cryopreservation of Chloroviruses by Infection of Chlorella",
+  "uri": "long-term-cryopreservation-of-chloroviruses-by-inf-wa2fage",
+  "doi": "dx.doi.org/10.17504/protocols.io.wa2fage",
+  "description": "{\"blocks\":[{\"key\":\"dmq3c\",\"text\":\"Contact Dr. Steven Wilhelm (wilhelm@utk.edu) or Samantha Coy (srose16@vols.utk.edu) for additional information regarding this protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9oras\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"4o2pk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"56tr6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Confirm that the lysate (PBCV-1 in this case) is not contaminated with microbiota (e.g. heterotrophic bacteria) as these will degrade the virus population.",
+    "Perform a plaque assay to determine the plaque forming units (PFU/mL) of the virus to determine the volume required for the desired MOI at which the Chlorella (NC64A) cells will be infected pre-cryopreservation. a",
+    "Grow a stock culture of NC64A for 48:00:00 under continuous light at 25 °C to ~2*10 7 cells/mL at the desired volume.",
+    "Make 30% stocks of DMSO, Ethylene glycol, and L-proline diluted in Milli-Q. Combine all three for a final concentration of 10% each in a clean flask. Aliquot desired volume to each cryovial, set on ice. *You want to have a 50:50 ratio of virus to cryoprotectants (CPAs). I use μ1 mL PBCV-1+NC64A and 1 mL CPAs in cryovials. You can determine the amount of CPAs needed based on the desired amount of cryopreserved host infected virus samples. Sterilize cryoprotectants by filtering through a 0.45 μm filter.",
+    "Infect NC64A with Chlorovirus at a multiplicty of infection (MOI) = ~5.",
+    "Collect samples at the desired time points during the infection cycle in duplicates and add the desired volume of host infected virus to CPAs in cryovials. In our hands, collection of a sample at 240 min post-infection shows the greatest recovery of viable cells (and thus viruses) for PBCV-1 post-crypreservation",
+    "Transfer cryovials directly to a freeze-rate controlled container, such as a Mr. Frosty container filled with isopropanol at -80 °C overnight.",
+    "Transfer samples into a -150 °C freezer until the desired treatment period is over.",
+    "Immerse vials in a 40C water bath and let thaw. Be aware that the infection cycle will continue once thawed, and if it completes, the number of virus in the sample will dramatically increase. This will make it impossible to determine % viability.",
+    "Pellet infected cells at 3700 rpm (~3000G) for 00:10:00 .",
+    "Resuspend pelleted materials in isotonic buffer (e.g. PBS) to the same volume that you started with pre-cryopreservation (volume of host infected with virus + CPAs).",
+    "Always use the &#39;1/3 rule&#39;. That is, infect enough host so that 1/3 of the sample volume (PBCV-1 + NC64A) is left after all of the samples have been collected and aliquoted with CPAs. The 1/3 rule is used to have extra biomass leftover incase you need extra for sampling errors, and to prevent bottle effects in your final samples.",
+    "Perform a plaque assay to determine PFU/mL and viability post-cryopreservation. We assumed that all of the cells were infected at an MOI=5, and that any free virus would be lost during pelleting or inactivated by the cryopreservation process. Thus, the total number of cells in your suspension that you started with would be considered your total population, and the number of cells that produce plaques is considered as the viable virus population. Example calculation: Suppose we had 2.0E+7 cells/ml at the start of the experiment (calculated after infection at an MOI = 5), these were diluted 1:1 with CPAs, and we ended up with 8.35E+6 PFU/mL. We would have to account for the dilution by either dividing the host population by half or multiplying the PFU/ml by 2. ((8.35+6PFU/mL)/(1.0E+7 cells/ml)) * 100 = 83.5%"
+  ],
+  "authors": [
+    "Samantha R Coy",
+    "Alyssa Alsante",
+    "Steven W Wilhelm"
+  ],
+  "creator": "Steven W Wilhelm",
+  "published_on": 1544664020,
+  "created_on": 1544384640,
+  "keywords": []
+}

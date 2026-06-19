@@ -1,0 +1,24 @@
+{
+  "id": 6388,
+  "title": "Site directed mutagenesis by PCR",
+  "uri": "site-directed-mutagenesis-by-pcr-igucbww",
+  "doi": "dx.doi.org/10.17504/protocols.io.igucbww",
+  "description": "{\"blocks\":[{\"key\":\"9vcc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"3fasi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"6g7qu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"dl526\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Design four primers in the following way: a Primer 1 anneals upstream of the region to be mutated Primer 2 anneals downstream of the region to be mutated, in reverse direction, and has a 6 nt mismatch to the target at its 3&#39;-end. Primer 3 anneals downstream of primer 2 (not overlapping with the primer 2 site). Primer M anneals of the site to be mutated, containing the mutation itself and 15 nt on either side of the mutation. If Primers 1, 2 and 3 are designed to anneal to vector sequences 5’ and 3’ of a multiple cloning site, they can be reused for any mutagenesis performed in this vector.",
+    "Perform two PCR reactions with your template DNA: the first with primers 1 and 2, the second with primers M and 3. You should use a proof-reading polymerase that does not append &#39;A&#39; overhangs to the pCR product - if you use Taq polymerase, the nucleotide before the primer annealing site for primer M must be a T (this will allow base-peiring with the A residues appended to PCR products by Taq). Clean up the PCR products by resolbing them on an agarose gel, excising the bands, and using a gel extraction kit to retrieve the DNA.",
+    "Perform the second round PCR, using primers 1 and 3, and ~1 μl each of the two PCR producst from round 1 as template. a In the initial rounds of the PCR, the two product will anneal and the product incorporating the mutation can be extended to full length - this contains annealing sites for both primers 1 and 3, and will be amplified in subsequent rounds. The other strand cannot be extended to full length due to the 3&#39;-end mismatch.",
+    "Use the final PCR product for cloning as for any other PCR product."
+  ],
+  "authors": [
+    "Tobias von der Haar"
+  ],
+  "creator": "Tobias von der Haar",
+  "published_on": 1567603914,
+  "created_on": 1497520796,
+  "keywords": []
+}

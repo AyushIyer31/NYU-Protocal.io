@@ -1,0 +1,27 @@
+{
+  "id": 11229,
+  "title": "Colony PCR with ready-to-load PCR master mix (similar to GoTaq)",
+  "uri": "colony-pcr-with-ready-to-load-pcr-master-mix-simil-n75dhq6",
+  "doi": "dx.doi.org/10.17504/protocols.io.n75dhq6",
+  "description": "{\"blocks\":[{\"key\":\"1rv6p\",\"text\":\"This protocol makes a master mix for PCR that is ready to load into an agarose gel. Useful for colony PCR and related.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"c7dlq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"8adas\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"88dj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "First make these: 40% sucrose with 0.25% xylene cyanol and 0.25% orange G (this is a 5X stock) To make 10 ml: 4g sucrose 25 mg xylene cyanol 25 mg orange G bring to 10 ml with ddH2O Master mix ingredients for 2X: %s %s It can also be useful to make a 1.25X master mix where you only need to add primers and no water, for colony PCR. For 1.25X master mix: %s %s Aliquot to 1ml or less and store aliquots at -20 °C.",
+    "Prepare forward and reverse primers at 2.5 micromolar each in water. Design primers to amplify across the region being tested - typically looking for an insertion by the length of the PCR products. e.g. 1 ml primer mix 25 ul forward primer (100 uM) 25 ul reverse primer (100 uM) 950 ul water",
+    "Combine 2 volumes of 2.5 micromolar primer mix with 8 volumes of 1.25X master mix from above for example, add 200 ul primer mix to 800 ul master mix",
+    "Put 10 ul of PCR master mix with primers into as many PCR tubes as needed",
+    "Mark the colonies you would like to do PCR from by circling and numbering the plate. Colonies must be far enough apart from others that you are able to pick a single colony.",
+    "Put a tip on a 10 microliter pipet set at 7 microliters and touch the tip to a marked colony. Move the tip into the PCR tube and pipet up and down at least 5 times while swirling the tip to move the colony into the PCR tube",
+    "After picking all colonies, run a standard PCR with an elongation time sufficient to extend across your amplicon and load directly onto a gel."
+  ],
+  "authors": [
+    "Stephen Floor"
+  ],
+  "creator": "Stephen Floor",
+  "published_on": 1522779039,
+  "created_on": 1522778934,
+  "keywords": []
+}

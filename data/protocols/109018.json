@@ -1,0 +1,32 @@
+{
+  "id": 109018,
+  "title": "Nested PCR amplification of Salmonella Typhi from extracted wastewater concentrate",
+  "uri": "nested-pcr-amplification-of-salmonella-typhi-from-dnp25dqe",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgqnw3ogk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"1lfqc\",\"text\":\"This standard operating procedure describes nested PCR protocols for the generation of amplicons from V. cholerae and S. typhi.   \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ernpk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4c1n4\",\"text\":\"PCR primers have been sourced from the literature or designed using Geneious, with primer pooling tested to minimise primer-primer interactions. Whilst the first round of PCR may be sufficient alone for detection (and will yield larger amplicons) a second round of PCR has been included to increase sensitivity.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"av34s\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"433lf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dfk0g\",\"text\":\"Cost per sample: £0.90\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":16}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6pom5\",\"text\":\"28 primers required (cost excluded from estimate as primers do not need to be ordered each time)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7cha8\",\"text\":\"Dreamtaq cost per sample: ~£0.45 per sample \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lmt5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"12boh\",\"text\":\"Extra equipment required: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":26}],\"entityRanges\":[],\"data\":{}},{\"key\":\"e7jka\",\"text\":\"thermocycler, vortex, mini centrifuge\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1qvrv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ef69t\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e9k0u\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9t32n\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2dgv6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a34ji\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":255318,\"guid\":\"4222A716341F11EE9D4302C0B41BC903\",\"name\":\"DreamTaq PCR Master Mix (2X)\",\"mol_weight\":0,\"sku\":\"K1071\",\"url\":\"https://www.thermofisher.com/order/catalog/product/K1071\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Workstation Preparation Clean the PCR areas before setting up the reactions; clean room for the master mix and an area for the addition of the template. Clean the working area and pipettors with an approved DNAse inhibitor solution. Clean the Class II biosafety cabinet and pipettes with 70% ethanol and wipe with a paper towel. Place a disposal Dispo-safe “sweetie” jar or bio-bin on the bench.",
+    "%s %s Primer preparation Reconstitute primers to 100 µM using nuclease-free water Create working stocks of 10 µM using nuclease-free water Create 10 µM primer pools G and B by mixing together 10 µL of each primer marked as being part of the pool. Scale up as needed.",
+    "Sample Retrieval Place a rack inside a polystyrene sample box for sample transfer. Remove tube containing the required samples from the -80 °C freezer. Close freezer and polystyrene box. Allow the samples to thaw on ice.",
+    "Round 1 PCR reaction Prepare the following Master mix in a 1.5ml Eppendorf Lobind tube: %s %s Briefly vortex and centrifuge down the master mix and aliquot 20 µL into each PCR tube. Add 5 µL of extracted DNA from each sample to a tube, mix well by pipette and label accordingly. Briefly centrifuge down the PCR mixes and store on ice.",
+    "Amplify using the following cycling conditions: %s %s",
+    "Round 2 PCR reaction Prepare the following Master mix in a 1.5ml Eppendorf Lobind tube: %s %s Briefly vortex and centrifuge down the master mix and aliquot 20 µL into each PCR tube. Add 5 µL of extracted DNA from each sample to a tube, mix well by pipette and label accordingly. Briefly centrifuge down the PCR mixes and store on ice.",
+    "Amplify using the following cycling conditions: %s %s",
+    "Gel electrophoresis bands %s %s"
+  ],
+  "authors": [
+    "Shannon Fitz",
+    "Alex Shaw",
+    "michael Owusu",
+    "Dilip Abraham",
+    "Anton Spadar"
+  ],
+  "creator": "Shannon Fitz",
+  "published_on": 1727989305,
+  "created_on": 1727953202,
+  "keywords": []
+}

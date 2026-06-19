@@ -1,0 +1,40 @@
+{
+  "id": 43118,
+  "title": "3 Pre-imaging Setup for High Resolution AFM in Fluid",
+  "uri": "3-pre-imaging-setup-for-high-resolution-afm-in-flu-bncnmave",
+  "doi": "dx.doi.org/10.17504/protocols.io.bncnmave",
+  "description": "{\"blocks\":[{\"key\":\"a6tdg\",\"text\":\"This is part 3 of the \\\"Atomic Force Microscopy of DNA and DNA-Protein Interactions\\\" collection of protocols.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"12ka2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9mqkd\",\"text\":\"Collection Abstract: Atomic force microscopy (AFM) is a microscopy technique that uses a sharp probe to trace a sample surface at nanometre resolution. For biological applications, one of its key advantages is its ability to visualize substructure of single molecules and molecular complexes in an aqueous environment. Here, we describe the application of AFM to determine the secondary and tertiary structure of surface-bound DNA, and it’s interactions with proteins.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":20}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"61s6c\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"b2or6\",\"text\":\"For hazard information and safety warnings, please refer to the SDS (Safety Data Sheet).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"dsrf7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dve0c\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"adhk6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9vfgb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2srk5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"74l1l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7437t\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3nbvn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"en5rd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3709q\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2udjr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Prior to imaging, soak the chosen cantilever in a petri dish containing isopropanol:ethanol (1:1) for several hours and dry by blotting.",
+    "Ensure cantilevers are totally dry before plasma cleaning in air for 00:00:30 at 10% power (Zepto, Deiner Electronics).",
+    "Mount the plasma-cleaned cantilever in the AFM and align the laser. Leave the AFM to equilibrate in buffer solution, using a clean freshly cleaved mica disc during sample preparation ( see Note 9).",
+    "Exchange the blank mica disc for the sample mica disc. Several variables need to be optimized to record high-resolution images by AFM. These variables include sample preparation, cantilever characteristics and AFM operation. The sample preparations above should yield DNA that is sufficiently bound to the mica substrate to facilitate high-resolution imaging.",
+    "Prepare a DNA sample as described in protocol 1 and protocol 2 , methods 2.1 (&#39;DNA Adsorption Using Divalent Cations&#39;) or 2.2 (&#39;DNA Adsorption Using PLL&#39;) and place the sample in the AFM.",
+    "Select an appropriate cantilever for imaging DNA and place in the fluid cell. Cantilevers with spring constants ≤0.3 N/m are preferable for achieving the highest resolution when using the AFM imaging modes described here -- allowing imaging of DNA at forces &lt;100 pN. A stiffness too high results in reduced force control. To perform high resolution imaging, a sharp tip is required to probe the surface, such that tip-convolution does not dominate small corrugations of the sample surface. A tip radius of ~1 nm can yield images of the secondary structure of DNA while with tip radii larger than 2 nm, secondary structure is harder to resolve ( see Note 28).",
+    "Add 15 µL, imaging buffer to the AFM fluid cell.",
+    "Approach the cantilever manually to within a few hundred micrometers of the sample using the motors by bringing both the sample and the cantilever into focus. Take care to ensure that the cantilever does not crash on the surface . If using an open-loop system (e.g. a MultiMode® 8), a manual approach with the motors can be done in stages by following these steps:",
+    "Adjust the optics (focal plane) such that the cantilever reflection on the sample surface comes into focus.",
+    "Bring the focal plane up and such that the real cantilever comes into focus.",
+    "Set the focal plane in-between the surface and the real cantilever, motor down towards the surface until the real cantilever comes into focus.",
+    "Once the cantilever is immersed in fluid, align the laser on the cantilever for a maximum sum signal on the split photodetector, and zero the deflections by centering the laser spot on the detector.",
+    "Repeat steps 8.1 - 8.3 until the cantilever is within a few hundred micrometers of the sample surface i.e. prior to the point where the real cantilever and it’s reflection on the surface overlap.",
+    "Set the Scan Size to a minimum (i.e. 0-10 nm) to avoid large tip motions over the sample at the start of the measurement. This allows for correction of any parameters which were suboptimal during approach. These parameters can then be adjusted after the approach prior to larger-scale imaging, to avoid damaging the tip.",
+    "Set the approach parameters to achieve a Setpoint that corresponds to aforce of ~200 pN, as can be easily determined in PeakForce Tapping mode ( see Note 18). The PeakForce Frequency should be set to that planned for imaging (8 kHz for the FastScan Bio™, see Note 19). The Feedback Gain should also be kept low during the approach, ~10 (arb).",
+    "Approach the cantilever to the sample ( see Note 20).",
+    "Once approach is complete, check for a true engage: There should be a characteristic force curve (Fig. 3b) No significant change in vertical deflection When you increase the force, the z piezo position should remain stable. Fig. 3 PeakForce Tapping is a widely adopted AFM mode which allows routine imaging in fluid. (a) The cantilever-tip is driven to oscillate sinusoidally (b) at frequencies much lower than its resonant frequency, resulting in intermittent contact with the surface and low lateral tip-sample interactions. The dashed line indicates the position of the cantilever-tip and the diamond indicates the feedback point, set via the Sync Distance New function. (c) The interaction force is minimised and controlled by a continuous feedback loop. Illustrations showing PeakForce Tapping force curves as a function of time and z-position, showing the tip-sample approach (teal) and withdraw (magenta).",
+    "In the event of a false engage, try re-engaging, moving to a different area and/or increase the Engage Setpoint ( see Note 20)."
+  ],
+  "authors": [
+    "Philip J. Haynes",
+    "Kavit H. S. Main",
+    "Alice L Pyne"
+  ],
+  "creator": "Alice L Pyne",
+  "published_on": 1603893869,
+  "created_on": 1602531706,
+  "keywords": []
+}

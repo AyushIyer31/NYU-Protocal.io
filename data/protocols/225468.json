@@ -1,0 +1,42 @@
+{
+  "id": 225468,
+  "title": "MERFISH 2.0 chemistry for FFPE for multiple tissues",
+  "uri": "merfish-2-0-chemistry-for-ffpe-for-multiple-tissue-g8e4bztgx",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg31287l25/v1",
+  "description": "{\"blocks\":[{\"key\":\"ki3d\",\"text\":\"The MERFISH 2.0 assay was performed and provided by Vizgen for FFPE samples to be used in a HuBMAP comparison of spatial transcriptomic platforms on healthy kidney, lung, colon and skin.  The assay was performed with a 500 gene panel designed by the HuBMAP investigative team based on single nuclear RNA seq datasets generated on the respective organs with gene selection intended to give adequate and comparative cell type identification across tissues. This written protocol was provided by the company to reflect the assay as performed on the specific tissue samples assayed at Vizgen between February and April, 2025.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"5lphs\",\"text\":\"Tissue sections were sent to Vizgen for MERFISH 2.0 assay. However results suggested optimization was needed and so tissue blocks were sent to the company for direct sectioning and MERSCOPE assessment.  The protocol provided reflects assay as performed by the manufacturer.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"49auh\",\"text\":\"A total of 500 genes are included in the gene panel used in this protocol. The gene list was sent to Vizgen for gene panel design appropriate for MERFISH 2.0 chemistry (https://portal.vizgen.com/). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":169,\"length\":26}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"E33D9AAAD3E611F0A3060A58A9FEAC02\",\"url\":\"https://portal.vizgen.com\"}}}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"7te1j\",\"text\":\"Materials and Equipment required are reflected in the protocol and in the Vizgen User Manual for MERFISH 2.0 FFPE samples.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "FFPE tissue blocks of human kidney, lung, colon and skin samples were assayed at Vizgen. The samples were sectioned and prepared for single cell spatial transcriptomics analysis using the MERSCOPE platform following the manufacturer’s protocols (91600112_MERSCOPE-FFPE-Tissue-Sample-Preparation-User-Guide_Rev-D and 91600132_MERSCOPE MERFISH 2.0 Sample Prep User Guide_RevA). V2 Chemistry was applied for this study.",
+    "FFPE tissue blocks were oriented and faced by microtome per standard practice with removal of 25-50 micron in order to assure smooth sectioning. For MERFISH 2.0 assay, the blocks were sectioned at 5 µm thickness and transferred onto MERSCOPE Standard Slide V 2.0 (Vizgen, 20400117)",
+    "Slides were air-dried at 55°C for 15 minutes, followed by room-temperature drying for 1-2 hours.",
+    "Tissue sections were then deparaffinized by Deparaffinization Buffer (Vizgen 20300112) at 55°C for 5 minutes twice, and washed with 100% ethanol three times, each 2 minutes, followed by a 2 minute 90% ethanol and a 2 minute 70% ethanol rehydration step.",
+    "Anchoring Pretreatment was performed at room temperature in a humidified chamber using Pre-Anchoring Reaction Buffer (Vizgen 20300113) diluted in Conditioning Buffer (Vizgen 20300116) at 1:20 ratio, and supplemented with Rnase inhibitor for overnight at room temperature to prepare RNA for anchoring.",
+    "Following anchoring pretreatment, tissue slices were then briefly washed with Sample Prep Wash Buffer (Vizgen, 20300001), and Formamide Wash Buffer for 15 min at 37°C (Vizgen, 20300002), and then Anchoring Buffer (PN 20300117) at 37°C for 2 hours.",
+    "The sample was washed with Sample Prep Wash Buffer briefly. RNA was then immobilized in hydrogel via gel embedding by following the protocol described in the user guide (Vizgen, 91600132). Tissue was digested first by following the digestion protocol described in the User Guide (Vizgen, 91600132, RevA), with lung, skin and Kidney samples digested for 2 hours and colon for 6 hours.",
+    "After tissue clearing, the sample was treated with MERSCOPE Photobleacher (Vizgen 10100003) (Human lung for 5 hours, other tissue for 3 hours), washed with Formamide Wash Buffer at 37°C for 30 min",
+    "Slides were then incubated with MERSCOPE Gene Panel Mix V2.0 at 47°C overnight. To avoid diluting the MERSCOPE Gene Panel Mix, the residual solution in dishes and on slides was aspirated and the sample was placed in a humidified chamber.",
+    "The sample slides were assembled into the MERSCOPE Flow Chamber and imaged on the MERSCOPE M1 imaging system (Vizgen 10000001) using MERSCOPE Standard 500 Gene Imaging Kit V 2.0 (Vizgen, 10400169).",
+    "After low-resolution mosaic imaging, the instrument was switched to a high-magnification objective and the automated MERFISH experiment was executed, acquiring high-resolution whole slide images.",
+    "After image acquisition, the MERFISH 2.0 data was processed by MERSCOPE",
+    "Cell segmentation was performed using the Cellpose algorithm, relying on the Cell Boundary staining. Cell Bound (CB) 1 was used for Lung, CB2 for Kidney and CB3 for Colon and Skin, and DAPI nuclear stain.",
+    "The rehydrated tissue sections were incubated with Decrosslinking Buffer (Vizgen 20300115) at 90°C for 15 min and cooled on bench for 5 minutes.",
+    "The decrosslinked tissue sections were then stained for cell boundary using Vizgen’s Cell Boundary Kit (Vizgen 10400118) following Vizgen’s MERFISH 2.0 Sample Preparation User Guide for Sectioned Tissue Samples (Vizgen, 91600132).",
+    "The samples were post-fixed with 4% PFA for 15 minutes, then incubated with Conditioning Buffer (Vizgen20300116) supplemented with RNase inhibitor at room temperature for 15 min.",
+    "The sample was then incubated with Enhancer (Vizgen, 30300491) at 37°C overnight, and washed with Enhancer Wash Buffer (Vizgen, 20300192) at 37°C for 20 minutes, twice.",
+    "The sample was stained with DAPI and Poly T Reagent V2.0 for 15 minutes at room temperature, and washed for 10 minutes with 5 ml of Formamide Wash Buffer",
+    "A fully detailed, step-by-step instruction on the MERFISH sample prep can be found in Vizgen’s MERFISH 2.0 Sample Preparation User Guide for Sectioned Tissue Samples(Vizgen, 91600132).",
+    "Full Instrumentation protocol can be found in MERSCOPE and MERSCOPE Ultra Instrument Guide (Vizgen, 9160001, 91600131).",
+    "Then, tissue was cleared using the Clearing Solution in the MERSCOPE Tissue Sample Prep Kit (Vizgen, 10400194) overnight at 47°C, adding proteinase K at 1:50 dilution, followed by further incubation at 37°C for 2-3 days until the tissue became transparent. Clearing Solution was replaced (Clearing premix + ProK) when necessary."
+  ],
+  "authors": [
+    "Jiang He",
+    "Gloria S Pryhuber"
+  ],
+  "creator": "Gloria S Pryhuber",
+  "published_on": 1765486346,
+  "created_on": 1756143314,
+  "keywords": []
+}

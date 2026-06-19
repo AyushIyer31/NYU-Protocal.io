@@ -1,0 +1,34 @@
+{
+  "id": 86481,
+  "title": "Calculating mitochondrial protein solubility",
+  "uri": "calculating-mitochondrial-protein-solubility-cyprxvm6",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbxx7nlpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"eibca\",\"text\":\"Protocol for generating solubility calculations for mitochondrial proteins from starting 'soluble' and 'insoluble' fraction mass spectrometry data, using MaxQuant and Perseus software pipelines.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Process raw instrument files using MaxQuant (protocol performed with v1.6.17) with the Andromeda search engine, searching against the Uniprot human data base containing reviewed and canonical isoform variants in the FASTA format, with recombinant Ag85A sequence added as a custom entry to the human database",
+    "Set the LC-MS run to &#34;Reporter ion MS&#34;",
+    "Set Trypsin/P cleavage specificity to a maximum of 2 missed cleavages",
+    "Set TMT11-plex labels as isobaric labels with a reporter ion mass tolerance of 0.003 Da",
+    "Set oxidation of methionine and N-terminal acetylation as variable modifications, and carbamidomethylation of cysteine as a fixed modification",
+    "Enable the &#39;Match between runs&#39; option, with an FDR o f`% and mass bin size of 0.0065 Da",
+    "Set minimum unique and razor peptides to 1, and label min ratio count to 2",
+    "Run the MaxQuant analysis",
+    "Extract the proteinGroups.txt table, and normalise the data following the protocols outlined by: D. L. Plubell, P. A. Wilmarth,Y. Zhao, A. M. Fenton, J. Minnier, A. P. Reddy, J. Klimek, X. Yang, L. L.David, N. Pamir, Extended Multiplexing of Tandem Mass Tags (TMT) LabelingReveals Age and High Fat Diet Specific Proteome Changes in Mouse EpididymalAdipose Tissue. Mol Cell Proteomics 16 , 873-890 (2017).",
+    "Average the internal spiked control (Ag85A) intensities across each reporter channel, and use this value to generate a scaling factor for each channel to normalise reporter ion intensities for each protein to the relative starting intensities in each sample at the time of Ag85A addition",
+    "Impute the data into Perseus and remove &#39;only identified by site&#39;, &#39;reverse&#39;, and &#39;potential contamination&#39; identifications",
+    "Filter the clean data according to mitochondrial associated proteins, using a database such as the database found in: I. Kuznetsova, A. Lugmayr, O. Rackham, A. Filipovska, OmicsVolcano: Software for intuitive visualization and interactive exploration of high-throughput biological data. STAR Protocols 2 , 100279 (2021).",
+    "Generate computationally derived &#39;total&#39; fraction intensities by addition of the &#39;soluble&#39; and &#39;insoluble&#39; total fraction intensities",
+    "Calculate the percentage of insoluble protein for each protein by dividing the insoluble protein intensity by the calculated total protein intensity and multiplying the outputted value by 100"
+  ],
+  "authors": [
+    "Louise Uoselis"
+  ],
+  "creator": "Louise Uoselis",
+  "published_on": 1692060589,
+  "created_on": 1692059545,
+  "keywords": []
+}

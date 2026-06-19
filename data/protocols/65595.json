@@ -1,0 +1,25 @@
+{
+  "id": 65595,
+  "title": "Cloning sgRNA in lentiCRISPR v2 plasmid",
+  "uri": "cloning-sgrna-in-lenticrispr-v2-plasmid-cca3ssgn",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2lyn5kpvx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"24ahf\",\"text\":\"This protocol describes cloning procedure for lentiviral vector for fast KO generation in a polyclonal or single-cell derived population. The sgRNA and Cas9 are expressed constitutively. If later injecting the cells into immunocompetent mice,  the cells need to be injected into Cas9-expressing (e.g. Rosa26 Cas9) mice to avoid any immune rejection due to Cas9 expression.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":142,\"length\":43}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"c35r9\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"dcsrm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":81426,\"guid\":\"41626FEF341F11EE9D4302C0B41BC903\",\"name\":\"lentiCRISPR v2\",\"mol_weight\":0,\"sku\":\"52961\",\"url\":\"https://www.addgene.org/52961/\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":6,\"name\":\"addgene\",\"link\":\"http://www.addgene.org\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/6.png\",\"placeholder\":\"/img/vendors/6.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Design sgRNA on Benchling CRISPR tool with sticky ends to insert into lentiCRISPR v2 plasmid (Addgene #52961). Advised to include a non-targeting gRNA as a control.",
+    "Order the oligos from Sigma (dry, suspend in Annealing buffer at 100 uM). Annealing Buffer Composition (1X): 10 mM Tris, pH 7.5 - 8.0, 50 mM NaCl, 1 mM EDTA. Anneal the oligos by mixing equal volumes of 100 uM stock solutions and follow any annealing protocol. I use the following: a. Heat to 95 °C and maintain the temperature for 2 min.b. Cool to 25 °C over 45 min (decrease by 15C every 10 min)c. Cool to 4 °C for temporary storage.",
+    "Digest the vector with BsmBI-v2Vector (1-5 ug), x uLBsmBI-v2, 1 uLNEBuffer™ r3.1 (10x), 1 uLdH20, 1 uLTotal volume, 10 uLIncubate at 37 C 1-16 h, run 1% agarose gel. Gel purify vector backbone (12 kb) and leave out the filler band (2 kb).",
+    "Vector: Insert molar ratios between 1:1 and 1:10 are optimal for single insertions (up to 1:20 for short adaptors). Use https://nebiocalculator.neb.com/#!/ligation to calculate the required molar ratio (use 1:7 to begin with)1. Set up the following reaction in a microcentrifuge tube on ice.(Quick Ligase should be added last) COMPONENT Quick Ligase Reaction Buffer (2X)* 10 uL Vector DNA (12 kb), x uL (50 ng)Annealed oligos (25 uM, find MW to calculate dilution, around 1:380 dilution to make 1 ng/uL from annealed stock), 1 uL Nuclease-free Water, up to 20 uL Quick Ligase, 1 uL *The Quick Ligase Reaction Buffer should be thawed and resuspended at room temperature.2. Gently mix the reaction by pipetting up and down and microfuge briefly.3. Incubate at room temperature (25°C) for 5 minutes.",
+    "Transform the ligated construct into competent cells. Use NEB® Stable Competent E. coli (High Efficiency) for lentiviral plasmid propagation. Recommended for cloning of direct repeats and inverted repeat sequences. Alternatively, use Stbl3 by Thermo. 5 Minute Transformation Protocol for NEB® Stable Competent E. coli (C3040)Remove cells from -80°C freezer and thaw in your hand.Leave the cells on ice. Mix gently and carefully pipette 50 µl of cells into a transformation tube on ice.Add 1–2 µl containing 100 pg–100 ng of plasmid DNA to the cell mixture. Carefully flick the tube 4–5 times to mix cells and DNA.Place the mixture on ice for 2 minutes. Do not mix.Heat shock at exactly 42°C for exactly 30 seconds. Do not mix.Place on ice for 2 minutes. Do not mix.Pipette 950 µl of room temperature NEB 10-beta/Stable Outgrowth Medium into the mixture.Immediately spread 50–100 µl onto a selection plate and incubate overnight at 30°C for 24 hours. N.B. Plasmid selection using antibiotics other than ampicillin require an outgrowth period of 60 minutes at 30°C before plating on selective media. 30°C or 37°C may be used for plate incubation, however 30°C is recommended as some constructs may be unstable at elevated temperatures."
+  ],
+  "authors": [
+    "Goran Tomic"
+  ],
+  "creator": "Goran Tomic",
+  "published_on": 1656496268,
+  "created_on": 1656495838,
+  "keywords": []
+}

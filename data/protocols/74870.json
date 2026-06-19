@@ -1,0 +1,32 @@
+{
+  "id": 74870,
+  "title": "Protocol for staining of urinary cells for flow cytometric analysis",
+  "uri": "protocol-for-staining-of-urinary-cells-for-flow-cy-cmcwu2xe",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v9d79zg3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"eg9du\",\"text\":\"This protocol outlines the specific steps required to stain different cell population in urine samples using fluorescence-labeled antibodies for subsequent flow cytometric analysis. The focus of the protocol is on the T lymphocyte markers and tubular epithelial cell markers (TEC-Panel). This protocol provides detailed instructions for the preparation of the urine samples, blocking and staining procedure and analysis using flow cytometry. The successful implementation of this protocol could help researchers in characterizing immune cell populations and identifying the presence of tubular epithelial cells in urine samples for diagnostic purposes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"b1sog\",\"text\":\"PBE: phosphate-buffered saline (PBS), pH 7.2, 0.2% bovine serum albumin (BSA), and 2 mM ethylenediaminetetraacetic acid (EDTA) \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"etgtu\",\"text\":\"BD Perm/Wash™ buffer 1:10 with distilled water \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c5j5b\",\"text\":\"FcRblock 1:100 with PBE or BD Perm/Wash™ buffer\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8u2kj\",\"text\":\"Rainbow Calibration Particles (8 peaks), 3.0 - 3.4 µm\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Quickly defrost urine sediments in 1 mL PBE and filter into small Falcon tubes using a 30 µl mesh. Flush filter with 9 mL PBE and spin the sample (600xg, 8min, 4°C). Aspirate supernatant.",
+    "Resuspend each sample in 400 µL PBE and divide them into 4 eppis with 100 µL each. Two eppis for T lymphocyte panel (A+B), and two for tubular epithelial cell (TEC) panel (C+D). A and C will serve as FMO/istotype-control and B &amp; D as full stain.",
+    "Add 1 mL PBE to each T-cell eppi and 1 mL Permwash to each TEC eppi. Spin (700xg, 5min, 4°C) and aspirate supernatant.",
+    "Resuspend T-cell samples each in 100µL PBE+1% FcRblock, TEC “control sample” in 120µL Permwash+1% FcR-block for unstained controls and TEC “full sample” in 100µL Permwash+1% FcR-block. Cut off 20µL from sample C and add into separate tube for unstained control.",
+    "Incubate with FcR-block 1:100 for 00:15:00 on ice.",
+    "Prepare the antibody master mix for the corresponding amount of samples to be stained. After preparation add the appropriate amount of antibodies to the corresponding tubes using optimal concentration derived by prior antibody titration.",
+    "Incubate samples 00:15:00 in the dark on ice.",
+    "Add 1 ml PBE to each T-cell sample and 1 ml Permwash to each TEC sample, wash (700xg, 5min, 4°C) and aspirate supernatant (approx. 30µL left after aspiration).",
+    "Depending on size of pellet, resuspend samples with 80-150 µL PBE, transfer total volume of each sample to FACS tube. Resuspend unstained controls in 20-40 µl PBE.",
+    "Prepare additional FACS tube with 1 ml a.d. and 3-5 drops of rainbow beads.",
+    "Set up machine for flow cytometric analysis according to your institutional SOPs. Make sure to carry quality control and optimal analysis speed. We recommend to measure samples at slow or medium with a max. event rate of 4000/sec. Dilute respectively.",
+    "Collect urine samples that have previously been fixed and stored at -80°C. We recommend a maximum of 12 samples per run."
+  ],
+  "authors": [
+    "luka.prskalo"
+  ],
+  "creator": "luka.prskalo",
+  "published_on": 1678029771,
+  "created_on": 1673003376,
+  "keywords": []
+}

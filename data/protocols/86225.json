@@ -1,0 +1,40 @@
+{
+  "id": 86225,
+  "title": "Western blotting using the BioRad Criterion Blotter system",
+  "uri": "western-blotting-using-the-biorad-criterion-blotte-cyfrxtm6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlkowy1v5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"flr6l\",\"text\":\"Protocol for performing an SDS-PAGE Western blot analysis using the BioRad Criterion Blotter system.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Load samples onto a 4-12% Bis-Tris (NuPage) gel with MOPS buffer (ThermoFisher). If using SDS loading dye (with 5% SDS final concentration), all lanes must contain the same volume of sample. Ensure all lanes are filled with 1x SDS loading dye at the same volumes as the sample/marker lanes. If this is not done, samples will spread according to the total sample volume, and the wells will not run evenly.",
+    "Run gels according to the following gradient: 100 V ( 00:10:00 ), 150 V ( 00:10:00 ), 200 V (until the dye front has reached the desired distance – typically ~40 min).",
+    "Cut 1x piece of PVDF (0.45 um), and 2x pieces of Whatman paper per gel, according to the gel dimensions.",
+    "Place the PVDF membrane into methanol for ~ 5 seconds, remove the methanol and wash the membrane three times in distilled water.",
+    "Place the membrane in cold ( 4 °C ) 20% methanol Bis-Tris transfer buffer (Thermofisher)",
+    "Remove the gel from the cassette and place in ice cold 20% methanol Bis-Tris transfer buffer (ThermoFisher)",
+    "Add a frozen ice pack to the Criterion Blotter transfer tank, and fill the tank with cold transfer buffer.",
+    "Soaking each Whatman paper piece in transfer buffer for ~ 5 sec before use, assemble the following transfer stack: 1x Whatman, SDS-PAGE gel, PVDF membrane, 1x Whatman, rolling each layer to prevent bubbles accumulating between pieces",
+    "Place the transfer stack between sponges and secure them in the cassette in the correct orientation, and place the cassette in the transfer tank. If transferring 1 gel, ensure an empty cassette containing only sponges is placed in the second cassette holder in the tank.",
+    "Run the transfer at 100 V for 01:00:00 .",
+    "Remove the membrane from the transfer stack and place into destain (50% methanol/7% acetic acid) for 00:02:00 rocking at Room temperature .",
+    "Wash the membrane 3x in 0.05% v/v Tween/PBS for 00:02:00 rocking at Room temperature .",
+    "Incubate the membrane in 3% w/v milk powder in 0.05% v/v Tween/PBS for 00:20:00 rocking at Room temperature .",
+    "Wash the membrane 3x in 0.05% v/v Tween/PBS for 00:03:00 rocking at Room temperature .",
+    "Place the membrane in the desired primary antibodies made up in 3% w/v BSA in 0.05% v/v Tween/PBS and incubate rocking, either overnight at 4 °C or for 01:00:00 at Room temperature .",
+    "Wash the membrane 3x in 0.05% v/v Tween/PBS for 00:03:00 rocking at Room temperature .",
+    "Place the membrane in the desired secondary antibody in 3% w/v milk powder in 0.05% v/v Tween/PBS for 01:00:00 rocking at Room temperature .",
+    "Wash the membrane 2x in 0.05% v/v Tween/PBS for 00:03:00 rocking at Room temperature .",
+    "Wash the membrane once in PBS for 00:03:00 rocking at Room temperature .",
+    "Incubate the membrane in ECL developing reagent for 00:05:00 , prior to developing the blot using a ChemiDoc Imaging System."
+  ],
+  "authors": [
+    "Louise Uoselis"
+  ],
+  "creator": "Louise Uoselis",
+  "published_on": 1691565076,
+  "created_on": 1691563558,
+  "keywords": []
+}

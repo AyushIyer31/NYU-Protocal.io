@@ -1,0 +1,38 @@
+{
+  "id": 229908,
+  "title": "LysoIP from iPSC-derived mDANs",
+  "uri": "lysoip-from-ipsc-derived-mdans-hcrub2v6x",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx4qpol8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"ejna4\",\"text\":\"This protocol details the steps to pull down lysosomes from iPSC-derived mDANs.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"6r9gu\",\"text\":\"Anti-HA Magnetic Beads, 5mL, supplied at 10mg/mL (Pierce, 88837)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"asgn9\",\"text\":\"Protease and Phosphatase Mini Tablets EDTA free (Pierce, A32959)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"an0nr\",\"text\":\"KPBS Buffer (136 mM KCl, 10 mM KH2PO4, pH 7.25 adjusted with KOH) – HPLC grade chemicals \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":33,\"length\":1},{\"style\":\"sub\",\"offset\":36,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"855f5\",\"text\":\"Lysis Buffer (2% SDS + 50 mM TEAB pH 8.5), diluted from UltraPure SDS Solution, 10%, ThermoFisher Scientific, 15553027, and Triethylammonium bicarbonate buffer, 1.0 M, pH 8.5±0.1, Millipore Sigma, T7408.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4hpdo\",\"text\":\"DynaMag Magnet (ThermoFisher Scientific, 12321D)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1ar7g\",\"text\":\"Motorized Tissue Homogenizer (TH) (Omni, TH115) + 7 mm Soft Tissue Omni Tip‱ Plastic Homogenizing Probes (SKU: 30750)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":75,\"length\":1}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"A3B4CED4A9EA11F09F220A58A9FEAC02\",\"name\":\":tm:\"}}}}",
+  "steps": [
+    "Premake KPBS buffer with protease + phosphatase inhibitors not more than 1 hr before IP",
+    "Homogenize for 3-5 rounds. In each round, run homogenizor for 00:00:10 at max power for and wait for bubbles to disappear before proceeding to the next round. For best efficiency use 15 mL conical tube (not 50 mL) and leave samples on ice while homogenizing.",
+    "Aliquot 150 uL anti-HA Beads in 1.5 mL tubes.",
+    "Wash 3 times with 500 uL and 300 uL of KPBS + protease/phosphatase inhibitors toremove NaN 3 and Tween-20.",
+    "Leave beads in 300 uL of KPBS + protease/phosphatase inhibitors until cellhomogenates are ready.",
+    "Start with 35 x 10 6 iPSC-derived mDANs in a T-175 flask for each technical replicate of Lyso IP",
+    "Wash cells with ice cold DPBS once and aspirate DPBS",
+    "Scrape mDANs off in 10 mL ice cold KPBS buffer and spin down 1000 x g, 4 °C,",
+    "Aspirate KPBS and resuspend the pelleted mDANs in 950 uL of KPBS + protease/phosphatase inhibitors and save 25 uL for Western blot as “input”",
+    "Add 100 µL of Lysis Buffer (2% SDS, 50 mM TEAB pH 8.5) to each technical replicate of LysoIP samples.",
+    "Centrifuge homogenates at 1000 x g, 4 °C, for 2 min to pellet nuclei. The supernatant contains cellular organelles including lysosomes. Note: Supernatant should be cloudy and yellowish if protein concentration is high.",
+    "Wash anti-HA beads with bound organelles 3 times with 1 mL KPBS + Protease/Phosphatase inhibitors.",
+    "Mix pre-washed anti-HA beads in KPBS + inhib with cell homogenates for 00:05:00 on rotor at 4 °C .",
+    "Boil samples for 00:10:00 at 100 °C",
+    "Let samples cool down to room temperature.",
+    "Settle anti-HA beads using magnetic stand and transfer supernatant to a new tube.",
+    "Continue with S-trap protocol to prepare for proteomics analysis."
+  ],
+  "authors": [
+    "Yu Chen",
+    "Chase Chen"
+  ],
+  "creator": "Yu Chen",
+  "published_on": 1776999721,
+  "created_on": 1760547512,
+  "keywords": []
+}

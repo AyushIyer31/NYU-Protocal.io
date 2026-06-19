@@ -1,0 +1,28 @@
+{
+  "id": 6819,
+  "title": "Guava Flow Cytometry Cleaning",
+  "uri": "guava-flow-cytometry-cleaning-iwbcfan",
+  "doi": "dx.doi.org/10.17504/protocols.io.iwbcfan",
+  "description": "{\"blocks\":[{\"key\":\"af8b1\",\"text\":\"Please contact Dr. Steven Wilhelm (wilhelm@utk.edu) for additional information regarding this protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dq7a2\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9q6p3\",\"text\":\"This cleaning protocol is meant to be used when there is an excess of particulate buildup in the FCM. Blockages can be detected by the failure of the FCM to successfully plot data in the scatter plot even though the machine is in the ‘acquire sample’ step. This will be visualized on the scatter plot as either extreme alterations to the forward and side scatter plot (a Etch A Sketch like drawing) or a complete absence of cell populations that should be there otherwise. If blockages are not addressed immediately, counts will be significantly affected because the machine cannot tell when there is a blockage- it will think volume is passing through the flow cell when it isn’t, which will artificially lower your cell counts.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"7qcbb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"ahbii\",\"text\":\"It is extremely important to check the ICF vial for particulates and replace ICF if necessary.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"5td42\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Prior to the first run of the day, run a normal cleaning cycle. If liquid cannot be seen flowing into the waste vial, there is an internal blockage. If this happens, power down the machine, remove the cover plate, and clean the individual silicone tubes coming to and from the pump with heated MQ using a syringe prior to further use.",
+    "After cleaning, begin your run. During the adjust settings stage, make sure that there are no air bubbles coming through the line above the capillary tube.",
+    "Upon completing your run, perform a cleaning cycle immediately. If other users are scheduled within the next 2 hours, leave the machine in capillary shutdown. If not, proceed to step 4.",
+    "Use the beakers labeled &#34;MQ&#34; and &#34;Phosphate Buffer&#34; found in the above cabinet. Aliquot ~10-15 mL of each liquid into their respective beaker. The remaining steps (4-6) are for cleaning the machine at the end of the day.",
+    "Use a microwave to heat these liquids to boiling and use these for the cleaning cycle.",
+    "Place the following in their respective 2 mL tubes for cleaning: 1.) 1.5 mL hot phosphate buffer 2.) 0.1 mL bleach 3.) ICF 4.) ICF 5-8.) Empty 9.) 1.5 mL MQ for cap shutdown 10.) Empty W1.) 1.5 mL hot phosphate buffer W2.) 1.5 mL hot MQ W3.) 1.5 mL hot MQ W4.) 1.5 mL hot phosphate buffer W5.) 1.5 mL hot MQ W6.) 1.5 mL hot MQ The phosphate buffer is better at dissolving salt than the MQ and this layout allows the machine to run the buffer through the lines first, followed by MQ in order to flush everything out of the lines.",
+    "Run another NORMAL cleaning cycle This is necessary because residual phosphate buffer left in the pump or tubes will contribute to salt build up. Again, heat ~10-15 mL of MQ to boiling and use in a NORMAL CLEANING CYCLE.",
+    "Shutdown the machine"
+  ],
+  "authors": [
+    "Steven W Wilhelm"
+  ],
+  "creator": "Steven W Wilhelm",
+  "published_on": 1500048260,
+  "created_on": 1499783793,
+  "keywords": []
+}

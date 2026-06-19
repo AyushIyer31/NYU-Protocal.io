@@ -1,0 +1,35 @@
+{
+  "id": 70896,
+  "title": "Colony PCR",
+  "uri": "colony-pcr-chgqt3vw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l69bnklqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"6581u\",\"text\":\"Colony PCR using the whole organism of bacteria instead of purified DNA template. This simplifies PCR procedure. This protocol helps conduct a simple colony PCR procedure.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"79muu\",\"text\":\"Your LB agar plate with colonies of transformed E. coli, TE solution, PCR buffer, dNTP stock solution, Forward Primer \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6b6s7\",\"text\":\"Reverse Primer, Taq DNA polymerase \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Add 30 µL TE buffer to X+2 1.5ml microcentrifuge tubes each. Label the tubes as &#34;1, 2, 3, ..., X, +, -&#34;. &#34;+&#34; tube means the positive control group and &#34;-&#34; tube means the negative control group.",
+    "Place the tubes in a heating block, heating at 100 °C for 00:05:00 .",
+    "Prepare Master Mix for colony PCR. The recipe for the Master Mix is as follows: Keep all PCR reagents on ice. If you have Y reactions, prepare Master Mix for Y+1 reactions. This means if you have X samples, you need to prepare X+3 reactions for X samples, one positive control, one negative control and another portion in case of pipette inaccuracies.",
+    "Pipette 15 µL from the Master Mix into all X+2 0.2 mL PCR tubes.",
+    "Place the X+2 PCR tubes in Thermocycler. PCR procedure will be set as the following programme: 1 cycle of 95 °C, 2 min 30 cycles of 94 °C, 30 sec 50 °C, 30 sec 72 °C, 2 min Final extension 72 °C, 10 min",
+    "Prepare several sterilized 1.5ml microcentrifuge tubes. If you have X samples to test, prepare X+2 tubes at least. You may prepare more in case you make mistakes.",
+    "Pick several colonies of bacteria from the plate using pipette tips.",
+    "Put the selected colonies into different 15mL centrifuge tubes, each with 5 mL LB broth.",
+    "Incubate in an orbital shaker at 171 rpm, 37 °C, overnight.",
+    "Pipette 30 µL culture from each tube to different agar plates. Spread the culture evenly on the plate.",
+    "Incubate the plates in a biochemical incubator at 37 °C overnight. These steps help obtain adequate (and genetically pure) colonies for testing and research in the future.",
+    "Pick one colony from each plate go to step #5 。 using a sterilized pipette tip and put the colonies into different 1.5ml microcentrifuge tubes numbered &#34;1, 2, 3, ..., X&#34;",
+    "Pipette 5 µL from the colony lysate from tube go to step #9 &#34;1, 2, 3, ..., X&#34; into corresponding 0.2 mL PCR tubes. Add 5 µL plasmid into &#34;+&#34; PCR tube. Add 5 µL ddH 2 O into &#34;-&#34; PCR tube. The plasmid used here is the plasmid transduced previously into the bacteria on the original plate at Step#1. Plasmid transduction using competent cell by An.Huang",
+    "Label X+2 0.2mL PCR tubes as &#34;1, 2, 3, ..., X, +, -&#34;",
+    "When the programme is finished, store the tubes at 4 °C"
+  ],
+  "authors": [
+    "An.Huang"
+  ],
+  "creator": "An.Huang",
+  "published_on": 1665043566,
+  "created_on": 1665024589,
+  "keywords": []
+}

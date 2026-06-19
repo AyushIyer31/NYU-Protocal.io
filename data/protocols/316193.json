@@ -1,0 +1,40 @@
+{
+  "id": 316193,
+  "title": "TaqMan SNP Genotyping for KIF5A variant rs113247976",
+  "uri": "taqman-snp-genotyping-for-kif5a-variant-rs11324797-jyz9cpx97",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"m2ifj\",\"text\":\"Protein KIF5A is a member of the kinesin molecular motor superfamily. KIF5A is of particular interest for neurodegenerative diseases, since the protein is expressed in neurons, is involved in axonal transport, and some single nucleotide variations (SNV) in its gene (KIF5A) are associated with neurodegenerative diseases. One of these SNVs is rs113247976, a cytosine to guanine substitution that causes a missense mutation (p.Pro986Leu) associated with Amyotrophic Lateral Sclerosis risk and progression. This protocol aims to standardize the genotyping of rs113247976 using TaqMan probes in a quantitative PCR (qPCR) approach.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"vqspz\",\"text\":\"Be sure to wear a coat, mask and gloves. Ensure your working station and laminar flow hood are properly clean and decontaminated. Be mindful that TaqMan probes are light sensitive. Avoid unnecessary freeze-thaw cycles.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"vvdbe\",\"text\":\"Genomic DNA extraction was performed on whole blood samples with ethylenediaminetetraacetic acid (EDTA). Samples were stored in cryotubes at -20 °C until processing. The genomic DNA was extracted and purified using a silica-based selective DNA-binding method in the presence of chaotropic salts (PureLink® Genomic DNA Kits (ref. K-1820-02)). DNA concentration was determined by spectrophotometry using Nanodrop® (Thermo Fisher Scientific). Pre-designed probes TaqMan™ SNP Genotyping Assays® (catalog # 4351379) were bought directly from the manufacturer (Applied Biosystems™).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Workflow can be visualized in Figure 1.",
+    "Genomic DNA extraction was performed on whole blood samples with ethylenediaminetetraacetic acid (EDTA). Samples were stored in cryotubes at -20 °C until processing. The genomic DNA was extracted and purified using a silica-based selective DNA-binding method in the presence of chaotropic salts (PureLink® Genomic DNA Kits (ref. K-1820-02)). Manufacturer’s instructions were followed thoroughly for this procedure.",
+    "DNA concentration was determined by spectrophotometry using Nanodrop® (Thermo Fisher Scientific). Determining DNA concentration is important for standardizing DNA concentration in each reaction well, ensuring clustering of similar genotypes during the analysis. The standard DNA concentration for this experiment is 10 ng/µL. Extracted samples whose DNA concentration exceeds this threshold were aliquoted and diluted with DNA-free ultrapure water.",
+    "Pre-designed probes TaqMan™ SNP Genotyping Assays® (catalog # 4351379) were bought directly from the manufacturer (Applied Biosystems™). See Table 1.",
+    "The TaqMan® 2X Genotyping Master Mix solution is ready to use. Its composition includes ultrapure DNA polymerase, deoxyribonucleotide triphosphates (dNTPs), ROX dye (passive reference), and buffer.",
+    "The Reaction Mix solution is composed of the TaqMan® Genotyping Master Mix, 20X Assay Working Stock and ultrapure water. The proportions of each reagent can be seen in Table 2. This Reaction Mix was prepared for 106 reactions, which includes a 10% safety margin recommended by the manufacturer (96 reactions + 10% margin). A volume of 9 µL of the reagent mixture and 1 µL of genomic DNA diluted to 10 ng/µL was dispensed into each well of the reaction plate, totaling 10 µL to fill each of the 96 wells of the optical plate.",
+    "Each plate was used to genotype 93 samples, along with two positive controls, one heterozygous (C/T) and one wild (C/C), and one no-template control (NTC). The Working Mix was prepared and distributed in each reaction well inside a laminar flow hood. Prediluted samples were then pipetted into their respective reaction well. After distributing the samples to all wells, the plate was coated with MicroAmp Optical Caps for 96-well plates.",
+    "The cycling protocol followed the standard conditions provided by the manufacturer of the TaqMan® hydrolysis probes, as detailed in Table 3. We used QuantStudio Design and Analysis Software 2.6.0 to setup the run. See Figure 2 for details on the setup using a QuantStudio 6 Pro.",
+    "Genotyping results were analyzed using QuantStudio Design and Analysis Software. The software can display the results in scatter plots, which show genotype clusters, each occupying a specific position and represented by a unique color. Red indicates samples with the wild-type genotype, C/C, at the lower right quadrant of the plot. Green represents heterozygous samples, C/T, positioned in the upper central region. Blue corresponds to mutant genotypes, T/T, which should appear in the upper left quadrant. Unknown samples are represented as circles, while control samples are denoted by squares as long as they are marked as controls during plate setup in the software. Orange plots indicate samples that failed to amplify, which is expected only for NTC. This visualization method enhances the interpretation of genotyping results and facilitates the assessment of data quality recorded by the software. The expected allelic clustering for rs113247976 is presented in Figure 3.",
+    "The Predesigned TaqMan® SNP Genotyping Assay is 80X or 40X concentrated and must be diluted using ultrapure DNA-free water to 20X Assay Working Stock before use. Ideally, this working solution is aliquoted to prevent early degradation due to freeze-thaw cycles.",
+    "We hereby present our results when applying this technique in samples from our studied population (see Figure 4). We used a QuantStudio 6 Pro for these experiments.",
+    "A B C D 1 Table 1: Context sequence and Assay ID for rs113247976. 2 Gene Variant Context Sequence (VIC/FAM) Assay ID 3 KIF5A rs113247976 AGTGGAGCCACATCTTCTGGCGGCC(C/T) CTTGGCTTCCTACCAGAAGGCCAAC C_155439052_10",
+    "%s %s",
+    "%s %s",
+    "Figure 2: Standard run for rs113247976 genotyping using QuantStudio Design and Analysis Software 2.6.0. It is important to check for the correct selection of the instrument, block size, run mode, analysis module and reaction volume before programming the steps.",
+    "Figure 3: Expected allelic discrimination clustering for the genotyping of rs113247976 . clustering",
+    "Figure 4: Allelic discrimination plot for variant rs113247976 using samples from our study population. One carrier of the mutant allele T was detected in the first experiment (A), while two were found in a later experiment (B). No homozygous carriers of the mutant allele were found."
+  ],
+  "authors": [
+    "Pedro L. de Paiva",
+    "Julia B. Campos",
+    "Rodrigo S. Santos",
+    "Angela A. S. Reis"
+  ],
+  "creator": "Pedro Luiz de Paiva",
+  "published_on": 1777869329,
+  "created_on": 1777688195,
+  "keywords": []
+}

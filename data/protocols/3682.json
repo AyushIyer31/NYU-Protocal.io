@@ -1,0 +1,26 @@
+{
+  "id": 3682,
+  "title": "Plant Protoplast Encapsulation",
+  "uri": "plant-protoplast-encapsulation-fuabnse",
+  "doi": "dx.doi.org/10.17504/protocols.io.fuabnse",
+  "description": "{\"blocks\":[{\"key\":\"2uij0\",\"text\":\"A protocol to encapsulate plant protoplasts using a PDMS microfluidic chip. Work was funded by Cambridge Synthetic Biology Strategic Research Initative (SRI) SynBio Fund.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ck6j7\",\"text\":\"http://www.synbio.cam.ac.uk/synbiofund\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"6mn5e\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"eucmk\",\"text\":\"Prepare protoplasts.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"2i5qu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Gently load plant protoplast suspensions into hamilton gas-tight syringe. Note: we removed the plunger and loaded protoplasts into the top of the syringe rather than withdrawing up through the needle to minimize the possibility of shearing protoplasts",
+    "Load 2.5% wt% Pico-Surf (TM) 1in Novec 7500 into hamilton gas-tight syringe.",
+    "Place the microfluidic device to the stage of bright-field inverted microscope which connects with a high-speed camera.",
+    "Connect the syringes to the corresponding inlets of the microfluidic chip via PTFE microtubing. Load onto Harvard Apparatus, PHD 2000 syringe pump and start infusing. Note: Use flow rates of 300 ul/h for the plant protoplasts suspension, and 500 ul/h for the 2.5% wt% Pico-Surf (TM) 1in Novec 7500 continuous phase. (To get the single plant protoplast in each droplet, it can change the cell density, flow rate of Novec 7500, and flow rate of plant protoplast suspensions. The number of plant protoplasts in each microdroplet follows to Poisson distribution).",
+    "Record the encapsulation videos with the fast camera (PHANTOM MIROEX4) using the manufacturer&#39;s software.",
+    "Image the plant protoplasts in droplets with Andor iXon Ultra 897 camera for fluorescence and bright field images, controlled with the Labview software."
+  ],
+  "authors": [
+    "Dr Ziyi Yu"
+  ],
+  "creator": "Steven J Burgess",
+  "published_on": 1474025595,
+  "created_on": 1474022507,
+  "keywords": []
+}

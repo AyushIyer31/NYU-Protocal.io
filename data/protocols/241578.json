@@ -1,0 +1,24 @@
+{
+  "id": 241578,
+  "title": "10X Genomics 5&#39; scRNA-seq with sgRNA direct capture",
+  "uri": "10x-genomics-5-39-scrna-seq-with-sgrna-direct-capt-hp6ib5rcf",
+  "doi": "dx.doi.org/10.17504/protocols.io.261ge1xe7v47/v1",
+  "description": "{\"blocks\":[{\"key\":\"e1b6\",\"text\":\"This protocol describes 10X Genomics 5’ HT v2 single-cell RNA-seq of neuron mono-culture or co-culture with mouse primary astrocytes with sgRNA direct capture.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"7ukkq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Grow and dissociate neuron and astrocyte monocultures and neuron-astrocyte co-cultures (according to previous protocols Ngn2 neuron differentiation [Ref. 1], and Neuron dissociation [Ref. 2]). For Perturb-seq, two different protocols are used. For high-MOI experiments (i.e., the putative regulatory element (pRE) screens): iPSCs are seeded at 300k-500k/mL for 2mL/well on 6-well plates. Lentivirus expressing the sgRNA library is added at high MOI while cells are in suspension. iPSCs are transitioned to pre-differentiation as detailed in protocol Ngn2 neuron differentiation (Ref. 1) and pre-differentiated and matured as normal. Neurons are dissociated on Day 14 of maturation for scRNA-seq directly. For low-MOI experiments (i.e., the promoter screens): iPSCs are pre-differentiated as normal as detailed in protocol Ngn2 neuron differentiation (Ref. 1). On the day of reseeding (Maturation Day 0), pre-differentiated cells are seeded as detailed in the protocol. Lentivirus expressing the sgRNA library is added at low MOI while cells are in suspension. Neurons are dissociated for Fluorescence Activated Cell Sorting (FACS) first to isolate EGFP+ cells (expressed by lentivirus) before moving on to scRNA-seq.",
+    "For promoter Perturb-seq only: FACS isolate EGFP+ cells on a Sony Cell Sorter SH800Z.",
+    "Perform single-cell RNA-seq: Single cell suspensions are prepared according to the steps above and protocol Neuron dissociation (Ref. 2). Concentrations of single-cell suspensions are adjusted based on post-filtration counts and loaded onto a 10x Genomics Chromium Next GEM 5′ HT v2 Chip N with 5’ CRISPR kit to allow sgRNA capture, following the manufacturer’s protocol (10X Genomics, PN-1000375, PN-1000451). Loading volumes are calculated by assuming effective concentrations ~1.2-fold lower than measured, to target ~20,000 cell recovery per lane with ~20% overloading (e.g., treating a cell suspension concentrated at 1000 cells/µL as 800 cells/µL). Single-cell gene expression and sgRNA expression libraries are prepared using the 10x Genomics Next GEM 5’ HT v2 and 5’ CRISPR kits following the manufacturer’s protocols (10X Genomics, User Guide CG000512 Rev B, PN-1000374, PN-1000375, PN-1000451, PN-1000215). Final sequencing libraries are quality checked based on concentration (Qubit 4 Fluorometer; Qubit dsDNA High Sensitivity Assay Kit, Invitrogen Q32854) and fragment-size distribution (Agilent TapeStation 2200 or 4200; DNA D1000 and D5000 assays, Agilent 5067-5582, 5067-5583, 5067-5588 5067-5589) and are sequenced using Illumina Nextseq 2000, NovaSeq 6000 or NovaSeq X Plus sequencing to target depths of ~5 x 10^4 and ~5 x 10^3 reads/cell for the gene expression and sgRNA expression libraries, respectively."
+  ],
+  "authors": [
+    "Boxun Li",
+    "Charles Gersbach"
+  ],
+  "creator": "Andrea R Daniel",
+  "published_on": 1769637519,
+  "created_on": 1769445452,
+  "keywords": []
+}

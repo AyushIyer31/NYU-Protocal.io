@@ -1,0 +1,27 @@
+{
+  "id": 35298,
+  "title": "Opentrons COVID-19 testing (RT-qPCR path, Station C, 24+3+1 sample special)",
+  "uri": "opentrons-covid-19-testing-rt-qpcr-path-station-c-beqajdse",
+  "doi": "dx.doi.org/10.17504/protocols.io.beqajdse",
+  "description": "{\"blocks\":[{\"key\":\"8o9ol\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9m2o5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"1peuo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"c04ts\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"47gsv\",\"text\":\"\",\"type\":\"header-two\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare the reagent tube rack. In an Opentrons 24 tube rack, place the following reagents from the BP Genomics 2019-nCoV Detection Assay kit, prepared according to the kit&#39;s instructions. Well A1: 1000 µL, Reaction Mix Well B1: 500 µL, Endogenous Control Mix Well B3: 50 µL, nuclease-free water Well D3: 50 µL, standard curve dilution 4 (Positive Control Template diluted to 200 copies per µL, per BP Genomics&#39; instructions) %s %s",
+    "Load the labware into the robot. In Slot 4, an empty, sterile qPCR plate atop an Opentrons 96 well aluminum block atop the Opentrons Temperature Module: Temperature Module with 96 well aluminum block. qPCR plate not shown. In Slot 5, the reagent tube rack, as prepared earlier. In Slot 3, A full, sterile Opentrons 20 µL filter tip rack: In Slot 1, the elution plate. The elution plate (a NEST 96 Well Plate 100 µL PCR Full Skirt ): should have: 27 samples from Station B starting at the top-left corner. Water filling the remaining wells, up to 6 column s. An extra sample in well H12 (bottom-right). %s %s",
+    "Run StationC-24-plus3-plus1-2020-04-09.py on the robot. Operating an OT-2 for COVID-19 testing by Max Marrone",
+    "Clean the OT-2. Cleaning an OT-2 COVID-19 Diagnostic Station by Max Marrone",
+    "Start pre-cooling the Temperature Module to 6 °C .",
+    "Wait for the run to finish.",
+    "Add any additional manually-prepared samples, including their master mix, to empty wells of your choosing on the qPCR plate."
+  ],
+  "authors": [
+    "Max Marrone"
+  ],
+  "creator": "Max Marrone",
+  "published_on": 1586453288,
+  "created_on": 1586213245,
+  "keywords": []
+}

@@ -1,0 +1,38 @@
+{
+  "id": 230218,
+  "title": "Cryo-EM structural determination of VPS13C",
+  "uri": "cryo-em-structural-determination-of-vps13c-hc3ib2ykf",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgqpqpovk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"9ggik\",\"text\":\"VPS13C is a ER-lysosome contact site protein that is thought to transport lipids between the two organellar membranes and important for lysosomal membrane damage repair. We employed structure-function analysis of purified VPS13C and uncovered novel regulatory mechanisms. This protocol describes how we obtained the Cryo-EM map for full-length VPS13C and how we build the structural models for VPS13C.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"fi606\",\"text\":\"The EM reconstructions for the N-terminal part of VPS13C requires tailored mask creation and local refinement.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"7fhmm\",\"text\":\"VPS13C demonstrates preferred orientation on carbon-coated Cryo-EM grids. But the protein yield could not support freezing on standard gold grids.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"13i7e\",\"text\":\"Quantifoil R1.2/1.3 300 mesh gold grids coated with a 2nm continuous carbon film (Cat. # 668-300-AU, Ted Pella).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"asqo8\",\"text\":\"CryoSPARC v4 or above on HPC or workstation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Clean the EM grid using an oxygen/argon plasma in a Gatan Solarus Advanced Plasma System. Quantifoil R1.2/1.3 300 mesh gold grids coated with a 2nm continuous carbon film Ted Pella, Inc. Catalog ## 668-300-AU",
+    "Apply 3.5 μL concentrated VPS13C sample (~0.04 mg/mL) to the grid and incubate for 30 s.",
+    "Blot the grid for 1.5 s at blot force −12 in a Vitrobot Mark IV at 8 °C and 100% humidity, then plunge-freeze in liquid ethane cooled by liquid nitrogen.",
+    "Clip and screen the grids, store selected grids in liquid nitrogen.",
+    "Load pre-screened grids into a Titan Krios transmission electron microscope operated at 300 kV and equipped with a BioQuantum energy filter and K3 direct electron detector.",
+    "Acquire data in SerialEM using super-resolution mode at 0.534 Å/pixel with a defocus range of −2.0 to −2.5 μm. Note that the defocus was selected for better particle picking. A lower defocus range might be used.",
+    "Record each movie for 2.896 s as 50 dose-fractionated frames, corresponding to a total dose of 42.7 e−/Å².",
+    "Perform motion correction and CTF estimation in CryoSPARC. CryoSPARC v4.6.2 Structura Biotechnology Inc. The whole data processing workflow (Strep 9- Strep 18) and the statistics of refined maps.",
+    "Manually curate micrographs and discard poor-quality images.",
+    "Pick particles and extract them for downstream analysis.",
+    "Perform iterative 2D classification to remove junk particles and select good classes.",
+    "Collect 4,140 movies at 0° tilt and 4,914 movies at 25° tilt. This attenuates the preferred orientation problem of the VPS13C sample.",
+    "Generate initial 3D models by ab initio reconstruction.",
+    "Estimate final resolutions using gold-standard FSC at the 0.143 criterion.",
+    "Apply local or focused refinement with masks to improve flexible regions.",
+    "Refine the selected particles by non-uniform refinement.",
+    "Perform heterogeneous refinement to separate particle populations and select the best class."
+  ],
+  "authors": [
+    "Dazhi Li",
+    "Karin Reinisch"
+  ],
+  "creator": "Dazhi Li",
+  "published_on": 1780434163,
+  "created_on": 1760899556,
+  "keywords": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": 35892,
+  "title": "Detection of Sars-Cov2 Using qPCR",
+  "uri": "detection-of-sars-cov2-using-qpcr-bfaujiew",
+  "doi": "dx.doi.org/10.17504/protocols.io.bfaujiew",
+  "description": "{\"blocks\":[{\"key\":\"f2v4u\",\"text\":\"PCR based tests, such as quantitative PCR (qPCR) are the gold standard to test for the novel coronavirus (SARS-Cov2). Many labs regularly use qPCR for their own specific projects. The ability to process samples and detect SARS-Cov2 is not very different from the methods these labs are already intimately familiar with. This protocol outlines the methods that our group is using to detect SARS-Cov2 RNA in human samples. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"640me\",\"text\":\"Prior to testing human samples, dilution series of a control plasmid, such as 2019-nCoV_N_ Positive control template (IDT 10006625), and control RNA such as SARS-Cov2 RNA spike control (ATCC VR-3276T) should be performed to determine the limit of detection of the equipment. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9p1o8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"11tme\",\"text\":\"It is important to note that the 2019-nCoV_N_ Positive control template (IDT 10006625) is a circular plasmid. As such, the plasmid is prone to super-coiling, which can cause the ddPCR to read fewer copies than would be expected.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"bfqbe\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"39t0h\",\"text\":\"Other reverse transcriptase master mixes and qPCR master mixes compatible with the primer/probe-based qPCR can also be used if properly vetted. The user should be sure to properly test that these reagents work in controlled experiments and recalculate amounts of reagents needed in each reaction based on any differences in concentrations between the reagents used this protocol and the reagents available. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"6lifc\",\"text\":\"DNase/RNase free molecular grade water\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6cb6k\",\"text\":\"PCR tube strips (Sterile and DNase/RNase free)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"vlob\",\"text\":\"Microcentrifuge tubes (Sterile and DNase/RNase free)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"cm3l1\",\"text\":\"2x Taqman GEX Master Mix (Fisher, 4369016)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"f950i\",\"text\":\"Superscript IV VILO RT Master Mix (Fisher, 11-755-250)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"96j2o\",\"text\":\"2019-nCoV RUO Kit, primer/probe set for N1, N2, and human RNaseP (IDT 10006713)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"f9ltv\",\"text\":\"2019-nCoV_N_ Positive control template (IDT 10006625)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"e017j\",\"text\":\"SARS-Cov2 RNA spike control (ATCC VR-3276T)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"u7gi\",\"text\":\"White semi-skirted PCR plate (USA Scientific, 1402-9790)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7cmj7\",\"text\":\"Optical plate sealing film (USA Scientific, 2978-2700)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Add 4 µL of Superscript IV VILO Master Mix (Fisher, 11-755-250) to each PCR tube (using PCR strip tubes).",
+    "Add 16ul RNA of RNA to each PCR tube (using PCR strip tubes).",
+    "Gently mix by inversion and briefly centrifuge to collect the liquid at the bottom of the tube.",
+    "Perform cDNA synthesis reaction in a Thermocycler (~30 min. total). •Constant lid temperature of 105ºC. •10 min. at 25ºC. •60 min. at 42ºC. •5 min. 85ºC. • Hold at 4ºC.",
+    "Prepare master mix (written per reaction) •10 µL 2x Taqman GEX Master Mix (Fisher, 4369016). •1 µL 20x Gene Expression Assay Probe. •3 µL DNase/RNase free molecular grade water.",
+    "Dispense 14 µL of master mix into wells of a white semi-skirted PCR plate (USA Scientific, 1402-9790).",
+    "Dispense 6 µL of cDNA into wells of a white semi-skirted PCR plate (USA Scientific, 1402-9790).",
+    "Seal plate with optical plate sealing film (USA Scientific, 2978-2700).",
+    "A human RNaseP, SARS-Cov2 N1, or SARS-Cov2 N2 probe is used in each reaction.",
+    "Transfer plate to a real-time thermocycler. •2 min. at 50ºC •10 min. at 95ºC •40 cycles (15 s 95ºC, 1 min. 60ºC)",
+    "Based on CDC guidelines, only CT values under 35 are valid for the test."
+  ],
+  "authors": [
+    "Joseph Patterson",
+    "Allyson Cole-Strauss",
+    "John Beck",
+    "Caryl Sortwell",
+    "Jack Lipton"
+  ],
+  "creator": "Joseph Patterson",
+  "published_on": 1587416443,
+  "created_on": 1587325435,
+  "keywords": []
+}

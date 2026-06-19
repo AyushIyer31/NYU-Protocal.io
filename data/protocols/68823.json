@@ -1,0 +1,27 @@
+{
+  "id": 68823,
+  "title": "RNA sequencing analysis of transcriptomic responses to vagal nerve stimulation in myenteric ganglia of porcine colon",
+  "uri": "rna-sequencing-analysis-of-transcriptomic-response-cffxtjpn",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2lynmeqvx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"489ii\",\"text\":\"The region-dependent molecular characterization and influences by vagus nerve stimulation (VNS) influences in the porcine ENS has been little investigated so far. We use laser-capture microdissection coupled with bulk RNA sequencing analysis to profile the transcriptomes of myenteric ganglia (MG) from porcine proximal and distal colon and to evaluate discrepancy of the region-specific gene programs in MG after electrical stimulation of the celiac branch of the abdominal vagus nerve in anesthetized porcine.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"2f68s\",\"text\":\"Porcine colonic specimens \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"60sj6\",\"text\":\"OCT (Optimal cutting temperature compound)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eddfb\",\"text\":\"Dry ice\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b79h8\",\"text\":\"LMD-6000 Laser Micro-dissection System\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8okj1\",\"text\":\"Illumina HiSeq 3000 sequencer\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Six castrated male Yucatan minipigs (3 of each controls and 3 with VNS) were fasted for 12 h and anaesthetized. Those with VNS underwent electrical stimulation of the celiac branch of the abdominal vagus nerve (2 Hz, 0.3-4 ms, 5 mA, 10 min) using pulse train.",
+    "The proximal and distal colonic (pC, dC) pecimens with full thickness were collected. All samples were embedded in OCT, snap-frozen in dry ice and stored at -80°C for LCM procedures. A range of 25-40 ganglia/subject were harvested from MG respectively of pC and dC (3 of each control and with VNS) using LMD-6000 Laser Micro-dissection System. Total RNA was extracted for construction of cDNA libraries and sequenced on an Illumina HiSeq 3000 sequencer as 50 base pair single-end reads.",
+    "All of the reads were then aligned to the Sus_scrofa genome using STAR. The differentially expressed gene (DEG) lists were generated using edgeR in conjunction with Limma-Voom. An FDR–adjusted p value threshold of q &lt; 0.05 was used to subset meaningful genes, which were used for pathway enrichment analysis. Enrichment analysis for biological processes (BPs) was performed using g:Profiler.",
+    "The results from g:Profiler were inputted into EnrichmentMap in Cytoscape to visualize the networks of BPs. All annotations of enriched BPs with an FDR p-value cut-off of 0.05.",
+    "WikiPathways of interest were searched from human database and all genes involved in the pathways were downloaded. The genes were matched to the porcine DEG lists that were already matched to the generated high-quality human-porcine ortholog gene list. The resulting WikiPathways-matching DEG lists were searched in the grouped networks of BPs and all terms (BPs) containing the DEG were highlighted.",
+    "The significance (corrected p-value by Benjamini-Hochberg) of the highlighted terms were exported to compute the FDR p-value of the specified WikiPathways using R/harmonicmeanp package. Similarity matrix was generated in R/rrvgo package at default setting using DEG lists from comparison of p-pC-MG and p-pC-ISG in porcine with VNS."
+  ],
+  "authors": [
+    "Tao Li",
+    "Pu-Qing Yuan"
+  ],
+  "creator": "Manmeet Bains",
+  "published_on": 1660776568,
+  "created_on": 1660767143,
+  "keywords": []
+}

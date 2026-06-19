@@ -1,0 +1,37 @@
+{
+  "id": 103678,
+  "title": "Human Fixed Nucleus Isolation for Single-Nucleus Transcriptomic Profiling (10x Genomics)",
+  "uri": "human-fixed-nucleus-isolation-for-single-nucleus-t-dhg633ze",
+  "doi": "dx.doi.org/10.17504/protocols.io.261ge5xqyg47/v1",
+  "description": "{\"blocks\":[{\"key\":\"98euk\",\"text\":\"Protocol for generating suspensions of fixed human nuclei for single-nucleus transcriptomics.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"dgmjf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Equipment Kimble Dounce Kontes tissue-grinder set (DWK 885300-0000) 50 ml Oakridge tubes (#0556214D) // can replace with 50 mL Falcon Tubes 15 mL Falcon tubes (Fisher #352097) 50 mL Falcon tubes (Fisher #352070) 1.5mL LoBind Eppendorf Tubes 70-micron Corning Cell Strainer (#431751) Fire polished glass Pasteur pipettes (VWR #14672-380, polished in an open gas flame down to ~600 micron, 300 micron and 150 micron tip opening sizes) // alternatively can replace with regular pipetting",
+    "Reagents Roche Protector RNase Inhibitor (Millipore Sigma RNAINH-RO) 1M DTT (dithiothreitol, prepare fresh every couple of months and store at -20°C) Ultrapure RNA-se free/ DNA-se free water",
+    "NMDG-Hepes-ACSF NMDG (93 mM) KCl (2.5 mM) NaH 2 PO 4 (1.2 mM) NaHCO 3 (30 mM) HEPES (20 mM) Glucose (25 mM) Bring pH to between 7.3 - 7.4 with 10N HCl and filter sterilize (good for 2 weeks at 4°C). On the morning of tissue preparation add the following components (final concentration): Na-Ascorbate (5 mM) Thiourea (2 mM) Na-pyruvate (3 mM) MgSO 4 (10 mM, prepare 2M stock that is good for 6-months at 4°C) CaCl 2 (1 mM, prepare 2M stock that is good for 6-months at 4°C) Kynurenic acid Na-salt(1 mM)",
+    "Nuclear Buffer Sucrose (320 mM) Tris-HCl (pH=7.4) (10 mM) MgCl 2 (3 mM) NaCl (10 mM) BSA (RNAse free) (0.50%) Kollidon VA64 (1 %) Ultrapure water, fill to 50 mL and 0.22 micron filter sterilize. Morning of run: DTT (dithiothreitol, 1 mM) Roche Protector RNAse Inhibitor (0.1 U/uL)",
+    "Lysis Buffer Nuclear buffer Triton-X100 (0.1%)",
+    "1.8M Sucrose Cushion Sucrose (1.8 M) Tris-HCl (pH=7.4) (10 mM) MgCl 2 (3 mM) NaCl (10 mM) BSA (nuclease free) (0.50%) Kollidon VA64 (1%) Water (ultrapure)Fill to 50 mL Do NOT Filter sterilize!",
+    "1. Prepare solutions and equipment - Prepare 50 mL of NMDG-HEPES-ACSF from pre-prepared stock by adding (Na-Ascorbate, Thiourea, Na-pyruvate, MgSO 4 , CaCl 2 and Kynurenic acid Na-salt) and place on ice. - Prepare Nuclear Buffer (add DTT and RNA-se inhibitor to preprepared solution) and place on ice. - Prepare Lysis Buffer from Nuclear Buffer (add Triton-X100 to 0.1% of final volume) and pipette 0.75 mL into a Kontes tissue grinder. - Prepare 1M sucrose cushion (add DTT and RNA-se inhibitor to preprepared solution) and place on ice. - Pre-cool centrifuge to 4°C. - Place 100 mm dissection dish into a 150 mm dish with dry ice.",
+    "2. Dissect out tissue Place snap frozen brain tissue into 100 mm tissue culture dissection dish on a layer of dry ice in a larger 150 mm dish. Microdissect out desired tissue parts and cut into small 1.5 mm 3 cubicles. Drop the latter into ice-cold NMDG-Hepes-ACSF in 1.5 mL collection tubes on ice.",
+    "3. Generate nuclear suspension - Transfer tissue pieces into the Lysis Buffer in the Kontes tissue grinder. - Apply 5 strokes with the loose pestle followed by 15 strokes with the tight pestle. - Place a 70-micron cell strainer on a 50 mL Falcon tube and pre-wet with 500 μL of Nuclear Buffer. - Add 250 μL of Nuclear Buffer to the tissue grinder. - Mix nuclear suspension in tissue grinder twice with a 600-micron fire polished glass capillary and transfer through the cell strainer. - Wash tissue grinder with 750 μL Nuclear Buffer and transfer again through the cell strainer. - Wash cell strainer with final 750 μL Nuclear Buffer.",
+    "5. Purify nuclei with a sucrose cushion centrifugation - Transfer 12 mL of Sucrose Cushion into a 50 mL Oakridge tube. - Gently layer the nuclear suspension from the previous step on the sucrose cushion (avoid mixing of the layers). - Centrifuge the tubes at 3200g at 4°C for 20 minutes. - After centrifugation, pour out the supernatant by decanting in one smooth motion and drying out the neck of the Oakridge tube with a Kimwipe. - Resuspend the nuclear pellet in 100 μL of ice-cold Nuclear Buffer and mix gently with a 300 micron fire polished Pasteur pipette. - Transfer purified nuclear suspension to a new 15 mL tube on ice.",
+    "4. Spin nuclei down and resuspend in fresh Nuclear Buffer - Spin nuclei down for 5 min at 500g at 4°C in a spin-out rotor. - Remove supernatant and resuspend in fresh 3 mL Nuclear Buffer.",
+    "7. Fix nuclei and proceed with profiling - Remove supernatant and resuspend nuclei in 1mL of Fixation buffer from the 10X fixationof cells &amp; nuclei for Chromium fixed RNA profiling (CG000478) and transfer resuspension to a microcentrifuge tube and incubate for 18hr at 4°C. - Continue with 10x fixation protocol.",
+    "Protocol Outline Figure 1 : Protocol outline with spinal cord as sample central nervous system tissue.",
+    "6. Evaluate debris - Pipette 3 μL of the nuclear suspension on a glass slide and evaluate debris under a brightfield microscope - If there is a lot of debris, add 2ml of Nuclear Buffer to the nuclear suspension and spin nuclei down at500g for 5 min at 4C in a spin-out-rotor."
+  ],
+  "authors": [
+    "Satoshi Ishishita",
+    "Katherin Gabriel",
+    "Seph Palomino",
+    "Allan-Hermann Pool"
+  ],
+  "creator": "Allan-Hermann Pool",
+  "published_on": 1722348103,
+  "created_on": 1721359174,
+  "keywords": []
+}

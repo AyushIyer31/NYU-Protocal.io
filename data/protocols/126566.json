@@ -1,0 +1,42 @@
+{
+  "id": 126566,
+  "title": "Assembly and Use of High Density Silicon Electrophysiology Probes ",
+  "uri": "assembly-and-use-of-high-density-silicon-electroph-d7ue9nte",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgq641ylk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"dsgvv\",\"text\":\"This protocol describes the (1) assembly and (2) use of high-density silicon-based electrophysiological probes in mice. In our lab, this entails use of devices from Cambridge Neurotech, with 3D-printed and machined parts that are used to protect, mount, and secure the device on the mouse's head. Awake-behaving recordings can be made in the behavioral apparatus (eg open field, operant box, other assay) using a variety of recording setups, but here we describe recordings using an Intan-based electrophysiology system.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9o33b\",\"text\":\"Electrophysiological Probe (Cambridge Neurotech)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a401j\",\"text\":\"Probe Casing (Custom, 3D printed)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dg2oh\",\"text\":\"Gold pins\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c7f0e\",\"text\":\"Copper mesh\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9m8bm\",\"text\":\"Coated stainless steel wire\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5k18c\",\"text\":\"\\\"Helper hands\\\" (Coated clip style, to hold components in place)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"959kn\",\"text\":\"Scissors\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6et9q\",\"text\":\"Soldering iron\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3kkup\",\"text\":\"Dental cement\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bav4\",\"text\":\"Small screwdriver for the drive on the electrophysiological probe\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1loc1\",\"text\":\"Headstage cable (SPI connectors)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b0dga\",\"text\":\"Intan Recording System\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"t3vn\",\"text\":\"Video camera that is TTL enabled (eg Basler)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cq6h1\",\"text\":\"Arduino\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9p8ro\",\"text\":\"Computer to run software associated with video capture and Intan system\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6tdo5\",\"text\":\"optional: electrical commutator\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Mounting the Probe to the Casing. Print the probe shuttle and casing using a 3D printer.",
+    "Surgical Implantation. This is described in detail in a separate protocol, Mouse Stereotaxic Surgery, in the same folder.",
+    "Mount the shuttle onto the probe using the appropriate screw. Solder a nut onto the tip of the screw to prevent it from sliding out during probe advancement. Test the shuttle by sliding it back and forth to ensure smooth movement.",
+    "Attach gold electrical pins to the sides of the drive using dental cement, securing both sides of each pin.",
+    "Secure the probe drive to the stereotaxic frame using one of the gold pins. Mount the probe (Cambridge Neurotech) onto helper hands, then insert it into the drive using the stereotax.",
+    "With the probe positioned inside the drive, advance the shuttle until it contacts the back of the probe. Fix the probe to the shuttle using dental cement applied to the sides of the probe. Confirm that the shanks remain fully enclosed in the casing when the shuttle is at its uppermost position.",
+    "Insert the headstage into the casing and secure it with dental cement applied to the sides.",
+    "Carefully tuck the flex cables connecting the probe to the headstage inside the casing for protection.",
+    "Add a protective band (a bent gold pin) at the front of the drive and cement it in place to protect the shuttle.",
+    "Strip the ground and reference wires, twist them together, and solder them.",
+    "Cover the front portion of the casing with copper mesh to protect the probe shanks. Cement the mesh on both sides and solder it to the protective band. Connect the protective band to ground using a wire.",
+    "Cement the ground wire to the back of the drive. The ground can be oriented facing upward or to the side.",
+    "Habituation. Scruff the mouse and carefully insert the electrophysiology connector (attached to anoverhead electrical commutator) into the SPI connector on the mouse’s head. Place the mouse in the open field for 30 minutes. Repeat for two consecutive days prior to data collection.",
+    "Computer and Electrophysiology Setup. Launch in vivo electrophysiology acquisition software (INTAN) and video capture software (IC Capture or BASLER).",
+    "Connect the SPI cable to the probe headstage on the mouse and place the animal in the open field. Allow it to habituate for 5-10 minutes.",
+    "In the INTAN software, load the appropriate configuration for your recording device (16, 32, or 64 channels). Enable digital inputs for TTL pulse acquisition (e.g., from cameras or Arduino).",
+    "Recording Session. Scruff the mouse and carefully insert the electrophysiology connector (attached to an overhead electrical commutator) into the SPI connector on the mouse’s head. Place the mouse in the open field (or other behavioral apparatus). Begin the session by starting the recording in INTAN. Then start the video recordings, verifying that INTAN is correctly receiving TTL pulses from the cameras for synchronization.",
+    "For experimental manipulations (e.g., levodopa or CNO injection), trigger a TTL pulse via the appropriate Arduino to mark the event in the recording.",
+    "Monitor the mouse throughout the session to ensure it can move freely and rotate the commutator without entangling the cables.",
+    "At the end of the session, stop the video recordings first, then stop the INTAN recording.",
+    "Cleanup. Carefully disconnect the SPI cable from the mouse and return the animal to its home cage. Transfer and back up all data to the server. Clean the behavioral chamber using 70% ethanol. If the recording device has a drive, for moving the electrodes, you may wish to drive the probe forward with the small screwdriver at this time."
+  ],
+  "authors": [
+    "Rodrigo Paz",
+    "Alexandra Nelson"
+  ],
+  "creator": "Alexandra Nelson",
+  "published_on": 1744327203,
+  "created_on": 1744325591,
+  "keywords": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": 315475,
+  "title": "Bulk RNA Extraction from Mouse Striatum",
+  "uri": "bulk-rna-extraction-from-mouse-striatum-jybtcpsnp",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn5qrqg5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"dpamw\",\"text\":\"This protocol describes the isolation of total RNA from dissected mouse striatal tissue using the Qiagen RNeasy Mini Kit (Cat. No. 74104) for downstream bulk RNA sequencing analysis. RNA integrity and quality were assessed using an Agilent BioAnalyzer. For each sample, 600 ng of total RNA was used for library preparation and subsequent sequencing at the University of Montreal Genomics Platform.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"feuyn\",\"text\":\"Work in an RNase-free environment throughout the procedure. Always wear gloves. Use only RNase-free tubes, filtered tips, and reagents. Keep tissue frozen until lysis and minimize sample thawing time. Neural tissue is prone to rapid RNA degradation, so efficient processing is important for obtaining high-integrity RNA suitable for sequencing.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5j30m\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9qpnt\",\"text\":\"Quality check in Nanodrop:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":26}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fdm1j\",\"text\":\"For RNA, the commonly accepted purity ranges are:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8nasn\",\"text\":\"260/280: about 1.9 to 2.1. This reflects low protein contamination. For high-quality RNA, values close to 2.0 are generally expected.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"di068\",\"text\":\"260/230: about 2.0 to 2.2. Lower values can suggest contamination from salts, phenol, guanidine, or other extraction carryover.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"77jg4\",\"text\":\"These ratios are useful, but RNA integrity matters as well. A good RIN or BioAnalyzer trace is often more important than a perfectly ideal Nanodrop ratio.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"wumpa\",\"text\":\"Prepare all kit reagents according to the manufacturer’s instructions, including addition of ethanol to wash buffers as required by the kit. Pre-clean the work surface and tools with an RNase decontamination agent. Label all tubes before beginning.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"vg1b6\",\"text\":\"This procedure uses lysis reagents that may be harmful if inhaled or brought into contact with skin or eyes. Follow institutional safety procedures and consult the reagent safety data sheets before use. Wear a lab coat and gloves as needed. Dispose of tissue waste and chemical waste according to institutional biosafety regulations.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"edcbh\",\"text\":\"- Mouse striatal tissue\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"pul8u\",\"text\":\"- RNeasy Mini Kit (Qiagen, Cat. no. 74104)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eaies\",\"text\":\"- Trizol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vntxs\",\"text\":\"- 70% ethanol, RNase-free or molecular biology grade\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7odj9\",\"text\":\"- RNase-free water\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"akjap\",\"text\":\"- RNase-free microcentrifuge tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bunzk\",\"text\":\"- Homogenizer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"hqmwb\",\"text\":\"- Microcentrifuge\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"tdbx8\",\"text\":\"- Pipettes with RNase-free filtered tips\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"kgch2\",\"text\":\"- Ice bucket\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"xyuy9\",\"text\":\"- Nanodrop\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Dissect the striatum from the mouse brain using clean instruments.",
+    "Immediately place each sample into a pre-labeled RNase-free microcentrifuge tube.",
+    "Either proceed directly to extraction or snap freeze tissue and store at -80 °C until use.",
+    "Transfer the sample to a RNeasy spin column placed in a collection tube. ( 700 µL at a time)",
+    "Wash the column using the kit-provided wash buffers (RW1 and RPE) in the sequence and volume specified by the supplier.",
+    "Centrifuge after each wash step as directed by the manufacturer.",
+    "Perform the final dry spin to remove residual wash buffer and ethanol. Critical step: Residual ethanol can interfere with downstream RNA quantification, quality assessment, enzymatic reactions, and library preparation.",
+    "Data collection in Tabular Form (example)",
+    "Add the appropriate volume of Trizol to the striatal tissue. ( 300 µL of Trizol is used for the entire striatum isolated from both hemispheres of the brain)",
+    "Homogenize the tissue thoroughly until the lysate is uniform and no visible fragments remain. Critical step: Incomplete homogenization can reduce yield and clog the column. Brain tissue should be fully disrupted before proceeding.",
+    "Add equal volume of 70% ethanol to the homogenized lysate.",
+    "Mix well by pipetting or gentle inversion until the solution is homogeneous.",
+    "Centrifuge according to the kit&#39;s instructions to allow binding of the RNA to the membrane.",
+    "Discard the flow-through.",
+    "If the full lysate volume exceeds the column capacity, reload the remaining lysate and repeat until all material has passed through the column.",
+    "Transfer the spin column to a clean RNase-free microcentrifuge tube.",
+    "Add RNase-free water ( 30 µL ) directly onto the membrane.",
+    "Incubate for 00:05:00 .",
+    "Centrifuge to elute RNA. Critical point: Purified RNA may be stored temporarily on ice for immediate quality measurements or at -80°C for long-term storage.",
+    "Measure RNA concentration using a Nanodrop.",
+    "Assess RNA quality and integrity using an Agilent BioAnalyzer or other similar instrument.",
+    "RNA with a good RIN (RNA integrity number) can be used for RNA sequencing."
+  ],
+  "authors": [
+    "sriparna.mukherjee",
+    "louis-eric.trudeau Trudeau"
+  ],
+  "creator": "Amandine Even",
+  "published_on": 1777476583,
+  "created_on": 1776802247,
+  "keywords": []
+}

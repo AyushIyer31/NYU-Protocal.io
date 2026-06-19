@@ -1,0 +1,37 @@
+{
+  "id": 85933,
+  "title": "GFP-YIPF3 Immunoprecipitation V2",
+  "uri": "gfp-yipf3-immunoprecipitation-v2-cx6mxrc6",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbxy6qlpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"6ohah\",\"text\":\"This is a protocol for the immunoprecipitation of the Golgi protein YIPF3 that is GFP tagged, and probing for ATG8 protein interactions. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Maintain HEK293 cells in Dulbecco’ Modifies Eagles Medium (DMEM) with 10% fetal bovine serum and optional 1x penicillin-streptomycin.",
+    "Individual clones were subjected to immunoblotting with anti-YIPF4 (Sino Biological 202844-T46), clones lacking the relevant protein were selected for further analysis by Sanger sequencing of the edited alleles.",
+    "For YIPF3/YIPF4 double knock-out, the following sgRNA sequence within the YIPF3 gene was designed and ordered (5’ CCATTTCGGGCGCCGCCCGC 3&#39; ), and cloned into a pX459 vector to create pX459-gRNA-YIPF3-KO. Sequence validate by Sanger sequencing.",
+    "Transfect YIPF4 KO HEK293 cells with the pX459-gRNA-YIPF3-KO using Lipofectamine 3000, and select with 1.2 µg/mL of puromycin for 24-48 hours. Select monoclonal cells by limiting dilution or by cell sorting (SONY SH800S sorter) in 96 well plates.",
+    "Individual clones were subjected to immunoblotting with anti-YIPF4 (Sino Biological 202844-T46) and anti-YIPF3 (Invitrogen PA566621), clones lacking the relevant protein were selected for further analysis by Sanger sequencing of the edited alleles.",
+    "For YIPF3/YIPF4 double knock-out, the following sgRNA sequence was designed and ordered within YIPF3 (5’ GCGTACAAGCTGAAGGCCC 3&#39; ), and cloned into a pX459 vector to create pX459-gRNA-YIPF3-KO.",
+    "For YIPF4 knock-out, the following sgRNA sequences were designed and ordered within YIPF4 (5’ ATCTCGCGGCGACTCCCAAC 3&#39; / 5’ CGGCCTATGCCCCCACTAAC 3&#39; ), and cloned into a pX459 vector to create pX459-gRNA-YIPF4-KO.",
+    "Transfect HEK293 cells with the pX459-gRNA-YIPF4-KO with Lipofectamine 3000, and select with 1.2 µg/mL of puromycin for 24-48 hours. Select monoclonal cells by limiting dilution or by cell sorting (SONY SH800S sorter) in 96 well plates.",
+    "Individual clones were subjected to immunoblotting with anti-YIPF4 (Sino Biological 202844-T46), and clones lacking the relevant protein were selected for further analysis by Sanger sequencing of the edited alleles.",
+    "Transfect YIPF4 KO HEK293 cells with the pX459-gRNA-YIPF3-KO with Lipofectamine 3000, and select with 1.2 µg/mL of puromycin for 24-48 hours. Select monoclonal cells by limiting dilution or by cell sorting (SONY SH800S sorter) in 96 well plates.",
+    "Individual clones were subjected to immunoblotting with anti-YIPF3 (Invitrogen PA566621), and clones lacking the relevant protein were selected for further analysis by Sanger sequencing of the edited alleles.",
+    "DKO (YIPF3/4) HEK293 cells were reconstituted with mCherry-YIPF4 (WT or LIR mutant) and GFP-YIPF3 (WT or LIR mutant) constructs and sorted for equal expression levels. Immunofluorescence was used to confirm proper localization of both YIPF3 and YIPF4",
+    "cells were plated on 10cm plates and grown to 70% confluency. Cells were left untreated or starved using AA withdrawal for 2 hours in the presence of BafA (100nm)",
+    "Cells were washed 2x with cold PBS then lysed in 0.8mL of NP-40 lysis buffer (100mM TRIS pH7.4, 150mM KCL, 0.1% NP-40, 0.5mM EDTA, 1x HALT (Roche) protease inhibitors, phos-STOP tabs)",
+    "1.5mg of protein from each sample was added to 15ul of washed GFP-TRAP beads and incubated for 2 hours while rotating at 4 degrees. Beads were washed 3 times with lysis buffer and eluted in 1x LDS loading dye at 94 degrees for 5 minutes"
+  ],
+  "authors": [
+    "Kelsey Hickey",
+    "Harper JW",
+    "Sharan Sharan Swarup"
+  ],
+  "creator": "Kelsey Hickey",
+  "published_on": 1696447957,
+  "created_on": 1691081267,
+  "keywords": []
+}

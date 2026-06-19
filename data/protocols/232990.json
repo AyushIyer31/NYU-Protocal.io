@@ -1,0 +1,35 @@
+{
+  "id": 232990,
+  "title": "α-Synuclein binding assay to isolated synaptic vesicles",
+  "uri": "synuclein-binding-assay-to-isolated-synaptic-vesi-hfr6b3m9f",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgqp8mxvk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"3v7k6\",\"text\":\"The binding of α-synuclein (α-syn) to synaptic vesicles was assessed by pull-down using C-terminally His-tagged α-syn and Co Dynabeads (10103D, Invitrogen). Synaptic vesicles (SVs) were isolated from mouse brain (LP2 fraction), incubated with recombinant α-syn, and the bound fractions were analyzed by immunoblotting.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"c42n5\",\"text\":\"Co Dynabeads (10103D, Invitrogen)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1tdqf\",\"text\":\"Synaptic vesicles (SVs; LP2 fraction) purified from mouse brain\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3uqvk\",\"text\":\"Reaction buffer: 150 mM KCl, 1 mM MgCl₂, 20 mM HEPES, pH 7.4\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1m5so\",\"text\":\"BSA (A8806, Sigma)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8pj57\",\"text\":\"SHT buffer: 0.3 M sucrose, 1 mM Mg-EGTA, 10 mM HEPES-Tris, pH 7.4\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dcojg\",\"text\":\"Recombinant His-tagged α-synuclein\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"av5q5\",\"text\":\"Wash buffer: 150 mM KCl, 1 mM MgCl₂, 5 mM imidazole, 20 mM HEPES, pH 7.4\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6tadk\",\"text\":\"Elution buffer: 150 mM KCl, 1 mM MgCl₂, 200 mM imidazole, 20 mM HEPES, pH 7.4\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"41tjl\",\"text\":\"Antibody: synaptophysin (mouse monoclonal, 1:1,000; S5768, Sigma-Aldrich)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eeeej\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Resuspend the LP2 fraction in SHT buffer (1mg/mL)",
+    "Incubate purified recombinant His-tagged α-syn (0–25 μg) with 25 μg of LP2 in reaction buffer (total volume 100 μL) for 3 h at room temperature with gentle agitation. Collect a mixture as input for Western blotting analysis.",
+    "12.5 μL per reaction of Co Dynabeads (10103D, Invitrogen) are transferred to a 1.5 mL low-adhesion microcentrifuge tube.",
+    "Add the mixture to the pre-blocked beads and incubate for 15 min at room temperature with gentle rotation.",
+    "Place tubes on a magnetic stand and collect the beads. Wash three times with 1 mL wash buffer.",
+    "Elute bound proteins by incubating beads in 25 μL elution buffer for 15 min at room temperature with gentle rotation.",
+    "Spin briefly at 1,000 × g for 30 s.",
+    "Place on a magnetic stand and collect the eluted fraction.",
+    "Analyze pull-down efficiency by immunoblotting.",
+    "Quantify band intensities using ImageJ.",
+    "Normalize synaptophysin levels in the elution fraction to the input.",
+    "Pre-block Co Dynabeads with 1% BSA in reaction buffer for 30 min at room temperature with gentle rotation. This step reduces nonspecific binding of SVs to the beads.",
+    "Wash the beads three times with 200 μL reaction buffer (150 mM KCl, 1 mM MgCl2, 20 mM HEPES, pH 7.4 ).",
+    "Wash the beads three times with reaction buffer."
+  ],
+  "authors": [
+    "Akio Mori",
+    "Robert Edwards"
+  ],
+  "creator": "Akio Mori",
+  "published_on": 1767997283,
+  "created_on": 1763593078,
+  "keywords": []
+}

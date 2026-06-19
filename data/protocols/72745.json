@@ -1,0 +1,32 @@
+{
+  "id": 72745,
+  "title": "MTT assay",
+  "uri": "mtt-assay-cjahuib6",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewov1oq9ylr2/v1",
+  "description": "{\"blocks\":[{\"key\":\"1jqrd\",\"text\":\"The MTT assay is based on the conversion of MTT (3-[4,5-dimethylthiazol-2-yl]-2,5 diphenyl tetrazolium bromide into purple formazan crystals by LIVINGcells, which determines the mitochondrial activity of these cells. Viable  cells  contain  NADPH-dependent  oxidoreductase  enzymes  which  reduce  MTT  to formazan.1The  insoluble  formazan  crystals  are  dissolved  using  a  solubilization  solution  (e.g.  acidified isopropanol, DMSO) and the resultant coloured solution is quantified by measuring the absorbance at 500-600nm using a multi-plate spectrophotometer. The darker the solution, the greater the number of viable, metabolically  active  cells2.Since for  most  cell  populations,  the  total mitochondrialactivity  would  be proportional to the number of viablecells, this assay is widely used in characterizingthe cytotoxiceffects of drugs or nanoparticleformulationson immortalized cell line or primary cell cultures. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Passage cells which are at 80-90% confluence. Perform the usual trypsinization procedure.",
+    "Seed 15,000 cells well (100uL) in complete DMEM (using 1X DMEM) in a 96 well plate. Make sure to fill the peripheral wells with 100uL of water. Only use the inner 60 wells for test wells. Seed cells in one plate solely for the test concentrations (10 concentrations, sextuplicates). Seed another plate just to keep nanoparticle-only, DMEM-only and negative controls.",
+    "Remove expired media.",
+    "Without any PBS wash, replace the wells with 100uL of nanoparticle-containing media of different concentrations. Use complete medium for this step (more serum-free or reduced serum media)",
+    "Remove ALL media",
+    "Replace with 100uL of complete DMEM + MTT (MTT final concentration = 0.5mg/mL in DMEM)",
+    "Incubate wells with MTT for 02:00:00 at 37 °C",
+    "Remove all media + MTT from wells",
+    "Add 100uL DMSO into all the wells and shake for 00:00:10 at 70rpm on an orbital shaker.",
+    "Place the plates in a microplane reader. Shake the plate using the in-built shaker feature for at least 00:00:45 at 425 cpm (fast) using double orbital shaking method. Following that, take absorbance measurements of wells @ 570nm using a microplane reader",
+    "After adding DMEM +MTT, shake the plates for 00:00:30 at 70rpm on an orbital shaker.",
+    "Incubate for 00:15:00 at 37 °C"
+  ],
+  "authors": [
+    "PMAT0001"
+  ],
+  "creator": "PMAT0001",
+  "published_on": 1668494960,
+  "created_on": 1668493827,
+  "keywords": []
+}

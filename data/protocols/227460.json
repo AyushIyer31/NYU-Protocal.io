@@ -1,0 +1,31 @@
+{
+  "id": 227460,
+  "title": "CRISPR knockout protocol",
+  "uri": "crispr-knockout-protocol-hadcb2a2x",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvmbpr5g3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"34go4\",\"text\":\"This is a protocol used to perform CRISPR knockouts in primary human B cells to be subsequently profiled by single-cell RNA-sequencing. It has been adapted from Synthego and Lonza user manuals. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"eueem\",\"text\":\"- sgRNAs (20uM stock, Synthego)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1oshj\",\"text\":\"- P3 nucleofector solution (Lonza)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"uqryh\",\"text\":\"- Cas9\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ped8o\",\"text\":\"- PBS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"uxtru\",\"text\":\"- Nucleocuvette strips (Lonza)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"km9rd\",\"text\":\"- 24 well flat-bottom tissue culture plates\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Thaw sgRNAs (20uM stock, Synthego) at RT for 15-30 minutes.",
+    "Centrifuge sgRNA stocks for 5min at 1000xg.",
+    "Pre-warm culture media at 37C.",
+    "Add supplement 1 to P3 nucleofector solution (Lonza) at 4.5:1 ratio.",
+    "Assemble ribonucleoprotein (RNP) complexes by adding 60 pmol of sgRNA to 20 pmol of Cas9 diluted in supplemented P3 nucleofector solution (total volume of 20uL). Incubate for 10-60 minutes at room temperature.",
+    "Centrifuge 300,000 cells per nucleofection at 90xg for 10 minutes.",
+    "Remove supernatant and resuspend in 5mL of PBS and centrifuge at 90xg for 10 minutes.",
+    "Remove supernatant and resuspend cells in 5uL of supplemented P3 nucleofector solution per nucleofection.",
+    "Add 5uL of diluted cells to each RNP complex (total volume of 25uL).",
+    "Mix cell-RNP mixture and transfer to Nucleocuvette strips (Lonza). Nucleofect cells with CA-137 pulse code.",
+    "Add 75uL of pre-warmed culture media, mix and transfer cells to 24 well flat-bottom tissue culture plates containing 400uL of pre-warmed culture media."
+  ],
+  "authors": [
+    "Nicholas Pease"
+  ],
+  "creator": "Nicholas Pease",
+  "published_on": 1758101555,
+  "created_on": 1758062018,
+  "keywords": []
+}

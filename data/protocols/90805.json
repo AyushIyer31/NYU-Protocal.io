@@ -1,0 +1,25 @@
+{
+  "id": 90805,
+  "title": "Immunofluorescence and object-based colocalization analysis",
+  "uri": "immunofluorescence-and-object-based-colocalization-c4wvyxe6",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv5xdodg1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"219ck\",\"text\":\"Immunofluorescence and object-based colocalization analysis\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "For immunostaining, DIV17-21 neurons were fixed in 100% ice-cold methanol solutionfor 15 min at room temperature, followed by extraction in 0.1 % Triton X-100for 10 min, blocked in 10% BSA for 1 h at room temperature, and incubatedovernight at 4°Cwith primary antibodies. We found that the methanol fixation was better thanparaformaldehyde fixation for pSer129 α-syn staining.",
+    "For α-syn Ser129 and VAMP2 colocalization analysis in cultured neurons, 5-6 regionsof interest (ROIs) of 200x200 pixels were placed on each image. A total of 26ROIs were used for this analysis.",
+    "Object-based colocalization analysis was doneusing MATLAB (RRID:SCR_001622)( http://www.mathworks.com/products/matlab/). First, automatic puncta detection was done using local maxima. Next, detected puncta are said to have co-localized if the distance between their centers is less than the maximum radius of the twoparticles.",
+    "After washing with 1x PBS, neurons were blocked again for 30 min at room temperature and incubated with secondary antibodies (Alexa Fluor antibodies from Invitrogen(RRID:AB_2633275, RRID:AB_2762824,RRID:AB_2633282) (1:500)for 1 h at room temperature.",
+    "Images were acquired at 40X magnification. Z-stackimages were obtained as previously described , and all images were acquired andprocessed using the MetaMorphMicroscopy Automation and Image Analysis Software (RRID:SCR_002368)( https://www.moleculardevices.com/products/cellular-imaging-systems/acquisition-and-analysis-software/metamorph-microscopy#gref )."
+  ],
+  "authors": [
+    "Leonardo A Parra-Rivas"
+  ],
+  "creator": "Leonardo A Parra-Rivas",
+  "published_on": 1699720050,
+  "created_on": 1699719748,
+  "keywords": []
+}

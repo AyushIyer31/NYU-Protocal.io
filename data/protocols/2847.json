@@ -1,0 +1,34 @@
+{
+  "id": 2847,
+  "title": "Draft genome assembly using parasitic mite population NGS DNA sample from mites extracted from host wound environment",
+  "uri": "Draft-genome-assembly-using-parasitic-mite-populat-ez7bf9n",
+  "doi": "dx.doi.org/10.17504/protocols.io.ez7bf9n",
+  "description": "{\"blocks\":[{\"key\":\"v8tk\",\"text\":\"This protocol is from:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4eerl\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"795ce\",\"text\":\"Mofiz E. et al., Genomic resources and draft reference assemblies of the human and porcine scabies mites, Sarcoptes scabiei var. hominis and var. suis. GigaScience. 2016. DOI: 10.1186/s13742-016-0129-2 http://dx.doi.org/10.1186/s13742-016-0129-2.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":152,\"length\":11}],\"entityRanges\":[{\"key\":0,\"offset\":17,\"length\":133},{\"key\":1,\"offset\":202,\"length\":43}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"1935ED020F92498C82771360E73D7B4E\",\"url\":\"http://dx.doi.org/10.1186/s13742-016-0129-2\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"D178B8E8DFA14634A53E761042D349BB\",\"url\":\"http://dx.doi.org/10.1186/s13742-016-0129-2\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"e2gn6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"faa9a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"7c4ga\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Sequence DNA sample in Illumina HiSeq generating paired-end data. Illumina HiSeq 2500 paired-end sequence data",
+    "Assess read qualities of read files (fastq files) using FASTQC. FASTQC Linux",
+    "Trim fastq read files for adapter and quality (Q&gt;=20). Trim Galore! Linux",
+    "Download host genome (e.g. human hg19). Build Bowtie2 reference index of the host genome. Align adapter and quality trimmed reads to the host reference genome using Bowtie2 (using end-to-end mode and --very-fast parameters). Bowtie2 Linux host genome",
+    "Extract unmapped paired reads using samtools view with -f 12 flag (read unmapped, mate unmapped) SAMtools Linux samtools view Linux",
+    "Assemble paired-end unmapped reads using Platanus assembler (default settings). From the assemblies, filter out scaffolds that are less than 500 bp to get major scaffold assemblies. Platanus Linux",
+    "Download Microbial RefSeq Database from The National Center for Biotechnology Information (NCBI). Align Platanus scaffolds to the database using BLASTN (e-value cutoff 10 -20 ; max_target_seqs 1). Filter for top hits and filter out scaffolds that have more than 80% of their length aligned to bacterial sequences. This gives you the draft assembly. BLASTN Linux Microbial RefSeq Database from The National Center for Biotechno"
+  ],
+  "authors": [
+    "Mofiz E.",
+    " Holt",
+    " D.",
+    " Seemann",
+    " T.",
+    " Currie B.J.",
+    " Fischer K.",
+    " Papenfuss A.T."
+  ],
+  "creator": "Ehtesham Mofiz",
+  "published_on": 1464909038,
+  "created_on": 1464661683,
+  "keywords": []
+}

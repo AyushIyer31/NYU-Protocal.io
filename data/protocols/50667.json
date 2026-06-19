@@ -1,0 +1,35 @@
+{
+  "id": 50667,
+  "title": "Live Follicle Isolation from Human Ovarian Tissue",
+  "uri": "live-follicle-isolation-from-human-ovarian-tissue-bvqjn5un",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l24px4g1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"dlevb\",\"text\":\"This protocol outlines steps to obtain live primordial/primary follicles from fresh or cryopreserved human ovarian cortex. Here, we do not outline steps for removing the ovarian cortex from the organ and slicing 1 mm thick sections, nor do we outline cryopreservation and tissue thawing methods. Tissue is digested enzymatically using Collagenase IA and DNase I then follicles are isolated from the digested tissue first using cell strainers and then by individual collection from the suspension. Note that RBC lysis step may not be necessary if organ was perfused prior to tissue collection.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"bbs7t\",\"text\":\"Supplies for tissue preparation: glass petri dish, disposable #10 surgical blade, DPBS -/- (optional: tissue chopping device for mincing tissue).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aedrc\",\"text\":\"Supplies for digestion: Small spatulas, 70 and 30 μm strainers, 30 and 60 mm petri dishes, conical tubes (1.5, 5, and 15 mL), sterile DPBS +/+ and -/-, BSA (Fisher BP9706), FBS (Fisher 10-082-147), Collagenase IA (Sigma C2674), DNase I (Sigma D4138), wide-bore pipette tips, incubating shaker.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare enzymes: Dilute DNase I stock (2% w/v) to 2 mg/mL by combining 10 μL stock with 90 μL DPBS +/+. Mix well and store on ice for the duration of cell isolation. Collagenase stock at 100 mg/mL should be stored on ice for the duration of cell isolation.",
+    "Pre-weigh an empty 30 mm dish. This will be used to measure the mass of tissue prior to digestion.",
+    "Prepare solutions for digest.",
+    "Prepare Inactivation Solution (15 mL DPBS -/- with 10% FBS). Keep solution on ice for duration of experiment.",
+    "Aliquot 15 mL DPBS +/+ for digest solution. It is crucial that DPBS +/+ be used, as the magnesium and calcium aid in enzymatic digestion. Keep in a bead bath for duration of experiment to keep solution warm.",
+    "Prepare red blood cell (RBC) lysis buffer. Dilute 1 mL RBC lysis buffer stock into 9 mL sterile DI water. Keep solution warm in bead bath for duration of experiment.",
+    "Starting with 1 mm thick pieces of ovarian cortex or medulla, cut all tissue into ~1mm 3 pieces either a) mechanically using a #10 blade in a glass petri dish or b) using a tissue chopper.",
+    "After cutting, move tissue to a cell strainer (any pore size) and rinse tissue with DPBS -/- twice to wash off any media or previous solutions.",
+    "Using a spatula, transfer the cut tissue to the pre-weighed 30 mm petri dish. Weigh tissue in pre-weighed dish to obtain tissue mass. Add 2 mL DPBS +/+ to the dish, then add 20 μL Collagenase IA (stock = 100 mg/mL) and 20 μL diluted DNase I for a solution of 1 mg/mL Collagenase IA and 0.02 mg/mL DNase I in DPBS +/+.",
+    "Place 30 mm dish with tissue in a secondary container and tape down if necessary. Tape dish to shaker and digest for 2 hours at 150 rpm and 37ºC. Tissue pieces should be freely moving in the digest solution to obtain proper enzymatic digestion and leverage mechanical disruption for cell isolation.",
+    "After 2 hours, strain tissue and supernatant through a 70 μm strainer over a 60 mm dish. A 30 μm strainer can also be used to &#34;catch&#34; follicles with diameters ranging from 30-70 μm in the top of the 30 μm cell strainer - backwash the 30 μm strainer with DPBS -/- to collect these follicles. To collect follicles with diameters &gt; 70 μm, you may consider implementing a larger cell strainer (150 μm) and backwashing the 70 μm cell strainer, however this will also yield 70-150 μm tissue fragments remaining from the digest.",
+    "Add 2 mL ice-cold Inactivation Solution to the 60 mm dish of backwashed follicles to halt enzyme activity. Keep follicles in solution on ice and proceed with mechanical follicle collection, sorting, and/or staining.",
+    "Optional RBC Lysis step: If tissue is bloody prior to digest, consider spinning down cell suspension for 5 minutes at 100g at the end of the digest and resuspending in 1X RBC lysis buffer, then incubating at room temperature for 2 minutes to lyse red blood cells."
+  ],
+  "authors": [
+    "Andrea Jones",
+    "Jordan H Machlin",
+    "Ariella Shikanov"
+  ],
+  "creator": "Andrea Jones",
+  "published_on": 1623433894,
+  "created_on": 1623350434,
+  "keywords": []
+}

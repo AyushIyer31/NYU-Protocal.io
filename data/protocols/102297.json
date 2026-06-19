@@ -1,0 +1,31 @@
+{
+  "id": 102297,
+  "title": "StageTip Extraction (in gel digestion)",
+  "uri": "stagetip-extraction-in-gel-digestion-df5z3q76",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlk8d2dl5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"607on\",\"text\":\"Stage tip preparation is a solid-phase extraction technique used for peptide cleanup and desalting before mass spectrometry. It efficiently removes salts and contaminants, improving peptide recovery, signal quality, and overall MS sensitivity.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"etcfv\",\"text\":\"Note: times are suggested and will depend on temperature and construction of C18. If necessary, increase time to ensure no liquid remains above the C18 at each step (but not too long to prevent C18 drying). Empty waste tube when required to ensure C18 tip does not touch flowthrough. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"g0di\",\"text\":\"pH of the sample should be acidic prior to loading it onto the StageTip\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5on4k\",\"text\":\"Centrifugation speed during StageTip processing should not exceed 1200 × g, to avoid membrane collapse and peptide loss. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"340ps\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"4skn3\",\"text\":\"Materials: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":11}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5gtc3\",\"text\":\"Empore Disk C18 (Sigma Aldrich, 66883-U)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9e13d\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7rvi7\",\"text\":\"Buffers:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5sobu\",\"text\":\"0.1 % TFA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8n6gd\",\"text\":\"10 % TFA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"19bb2\",\"text\":\"100 % ACN \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2ls3b\",\"text\":\"80 % ACN in 0.1 % TFA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c0b0b\",\"text\":\"Methanol 100 %\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8p720\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Adjust the pH of the sample by adding 10 % TFA to a final concentration of 1 % in the sample (usually around 20 µL) and 100 uL of 0.1% TFA. Acidifying the sample stops trypsin activity and makes the pH ideal for the peptides to bind onto the StageTips.",
+    "Manually cut the Empore Disk C18. Cut three discs with the homemade plunger. Each disc can harbour 10 ug of protein, bringing the total to 30 ug.",
+    "Insert the cut-out discs from the plunger into a pipette tip. Insert tip into a 1.5 mL tube with a hole in the top. Pierce twice as many eppendorf tubes as samples you need. Set half of them aside.",
+    "Pass 50 µL of methanol through the StageTip. Centrifuge at 1200 rcf for 2 min.",
+    "Pass 70 µL of 0.1 % TFA through the StageTip. Centrifuge at 1200 rcf for 4 min. Make sure that all the liquid has gone through the tip. Swap eppendorfs for clean tubes.",
+    "Pass the sample through the StageTip to bind the peptides (max 150 µL at a time). Centrifuge at 1200 rcf for 5 min. Repeat if necessary. Keep tips in the fridge.",
+    "Wash with 70 µL of 0.1 % TFA. Centrifuge at 1200 rcf for 5 min. Repeat if necessary. Make sure there is no liquid on top of the discs.",
+    "Place the tips in the designated boxes and store at -20 °C",
+    "Cover the gel pieces with 100 µL of 100 % ACN for 5-10 min.",
+    "Transfer the solution into a clean LoBind Eppendorf tube and dry under vacuum centrifugation at 60ºC.",
+    "Resuspend with 100 µL of 0.1 % TFA and pass it through the corresponding StageTips."
+  ],
+  "authors": [
+    "Cristina CARDENAL PERALTA"
+  ],
+  "creator": "Cristina CARDENAL PERALTA",
+  "published_on": 1761566894,
+  "created_on": 1719227123,
+  "keywords": []
+}

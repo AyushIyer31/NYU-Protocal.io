@@ -1,0 +1,37 @@
+{
+  "id": 59401,
+  "title": "Measurement of activity-related impedance changes in porcine subdiaphragmatic nerve",
+  "uri": "measurement-of-activity-related-impedance-changes-b59hq936",
+  "doi": "dx.doi.org/10.17504/protocols.io.b59hq936",
+  "description": "{\"blocks\":[{\"key\":\"32th6\",\"text\":\"This experimental protocol covers the preparation and execution of ex-vivo experiments for the measurement of impedance changes (dZ) of C fibres in porcine subdiaphragmatic nerves (SNs) at the distances from stimulation where the compound nerve activity is fully dispersed. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aokn6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4qmmi\",\"text\":\"MATLAB code for post-processing of the recorded data can be found online in the EIT-lab GitHub repository https://github.com/EIT-team/Overcoming-dispersion-trains .\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":106,\"length\":56}],\"data\":{}},{\"key\":\"c9c5o\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1p2p7\",\"text\":\"This work was supported by NIH SPARC grant no: 1OT2OD026545-01.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"D1B7DF99A2D011EC891F0A58A9FEAC02\",\"url\":\"https://github.com/EIT-team/Overcoming-dispersion-trains\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Prepare nerve Ringer’s solution. Place the glass beaker with 1L of distilled water on the magnetic stirrer, switch the medium speed stirring and put the following ingredients to the water (per 1L): 6.604 g, NaCl , 0.357 g, KCl , 0227 g, CaCl2 , 0.163 g, KH2PO4 , 0.144 g, MgSO4 , 2.1 g, NaHCO3 , 0.901 g, Dextrose .",
+    "Pour the solution into a dedicated reservoir connected with a tissue organ bath perfusion chamber and a peristaltic pump to allow continuous perfusion of the oxygenated solution (using 95 %, Oxygen and 5 %, CO2 ) at the specified temperature of ~30°C achieved using a thermostatic circulator and a cooling unit.",
+    "Place the freshly extracted nerve into the tissue organ bath perfusion chamber filled with freshly prepared continuously oxygenated Ringer’s solution.",
+    "Fabricate the silicone rubber cuffs with six radially arranged electrodes using the method described in (Chapman et al., 2018). In short, the stainless-steel electrodes (0.2x2.3 mm 2 ) embedded into a medical-grade silicone rubber base were fabricated using a laser cutter and coated with PEDOT:pTS providing the lowest contact impedance and phase shift (~ 300Ω and 1.5° at 1 kHz) among the popular coating electrode materials",
+    "Place four previously manufactured cuffs around the nerve so that the first and the last two cuffs are close to each other (~ 3 cm), while the distance between the middle cuffs is around 10 cm at the minimum.",
+    "Connect the cuffs to the amplifier (eg actiChamp) directly or through the breakout board. In the recording software (such as the BrainVision Recorder supplied with the actiChamp amplifier), set the last electrode on the last cuff as the reference electrode. Place the ground electrode of the amplifier (GND) to the Ringer’s solution in the nerve bath. Place another AgCl EEG-type electrode into the nerve bath and connect it to the earthed table for noise reduction.",
+    "Connect the driving electrodes of the stimulating current source (Keithley 6221) to the electrodes on the cuffs used for nerve stimulation (usually first two electrodes on the first cuff) through the breakout board.",
+    "Connect a custom-made Arduino-based triggering system to the stimulating current source for triggering stimulating pulses at the desired pulse width, frequency, and strategy (continuous or trains).",
+    "Check the stimulating current requirements for the studied nerve. For this, continuously stimulate the nerve with 2 Hz 50 µs biphasic pulses starting with 10 mA to elicit compound action potentials (CAPs) of Aδ and C fibres. Record for ~ 10 seconds and check if there are CAPs present. Repeat by sequentiallyincreasing the current to 20 mA, 30 mA etc until short-duration CAPs of fast fibres and longer-duration CAPs of slow C fibres are present and their amplitudes do not increase with increasing the current. If the amplitude of the C-fibre CAP higher than 10 mV cannot be achieved, exclude the nerve from consideration.",
+    "Connect the driving electrodes of the dZ measurement current source (Keithley 6221) to the other two electrodes dedicated for AC injection and dZ measurement (usually last two electrodes on the cuffs 2, 3 or 4).",
+    "To record dZ at the nearest cuff placed at ~3 cm from the stimulating one (cuff 2), attach the driving electrodes of the dZ measurement current source (Keithley 6221) to the last two electrodes of cuff 2. Apply AC of 200-400 µA (1-3 kHz) depending on the thickness of the nerve, so that the boundary voltage recorded by the other electrodes on the cuff is not less than 300 mV (600 mV peak-to-peak). Use continuous stimulation of the nerve with 2 Hz 50 µs pulses with the previously determined amplitude to elicit compound action potentials of C fibres. Record for 10 minutes for further averaging (1200 averages at 2 Hz).",
+    "To record the dispersed dZ further from the stimulus using the cuffs placed at ~15 and 20 cm from the first stimulating cuff, attach the driving electrodes of the dZ measurement current source (Keithley 6221) to the last two electrodes of cuff 3 or cuff 4. Apply AC of 200-400 µA (1-3 kHz) depending on the thickness of the nerve, so that the boundary voltage recorded by the other electrodes on the cuff is not less than 300 mV. Use intermittent stimulation of the nerve with trains by triggering stimulation strategy specified on the Arduino triggering system connected to the stimulating current source (such as 10 Hz trains for 0.6 s, rest for 5 s). Stimulate for 30 minutes for further averaging and signal processing. Repeat the process for the desired AC frequencies and stimulation strategies."
+  ],
+  "authors": [
+    "Ilya Tarotin",
+    "Svetlana Mastitskaya",
+    "Enrico Ravagli",
+    "Justin D Perkins",
+    "David S Holder",
+    "Kirill Aristovich"
+  ],
+  "creator": "Ilya Tarotin",
+  "published_on": 1647178277,
+  "created_on": 1647177754,
+  "keywords": []
+}

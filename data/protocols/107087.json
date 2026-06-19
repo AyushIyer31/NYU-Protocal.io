@@ -1,0 +1,31 @@
+{
+  "id": 107087,
+  "title": "Formation of ventral midbrain Assembloid/Organoids",
+  "uri": "formation-of-ventral-midbrain-assembloid-organoids-dktp4wmn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvjn175gk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"dnhuv\",\"text\":\"Brain organoids are three-dimensional (3D) structures derived from human pluripotent stem cells (hPSCs) that reflect early brain organization. Compared with traditional cell cultures, brain organoids offer a more accurate representation of human brain development and function, rendering them suitable models for neurodevelopmental diseases. In this early pilot to form brain organoids using iPSCs, we focused on verifying a successful approach to form organoids using our vmDA generated from our protocol, optimizing conditions to maintain the organoids (media, feeding schedule) as well as trying to understand the different ways to analyze these formed organoids. This approach also tested the possibility of producing a tri-culture system by adding iPSC-derived microglia into the organoids (composed of neurons and glia), and investigating the interactions between the distinct cell types. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Following Croft Lab edited vmDA protocol ( dx.doi.org/10.17504/protocols.io.yxmvmebdog3p/v1 , ventral midbrain organoids are dissociated at day 33 using the Worthington Kit protocol ( dx.doi.org/10.17504/protocols.io.j8nlk8dbxl5r/v1 ) into single cell suspension",
+    "During the final spin (300 XG for 5 mins) , count cells",
+    "Resuspend cells in ventral midbrain maturation media %s %s",
+    "1X10^3 mDA neurons were added to one well of a 96wp V bottom plate",
+    "For the neuron/microglia cocultures, 1-2K iPSC-derived microglia were seeded into each well (washer protocol)",
+    "Centrifuge V bottom plate 300 X g for 5 mins to allow for cells to pellet and aggregate",
+    "Plate placed in 37C for ~week to allow the assembloids to form, within 1 day post seeding there should be visible aggregates",
+    "For maintenance: Day 33-100 Feed organoids weekly with ½ media change weekly Day 100-430 Feed organoids with ½ media change every other week",
+    "Additional methods to analyze/assess organoid formation/composition and triculture interactions -Lentiviral transduciton and imaging -iPSC reporter lines and imaging",
+    "Use ROCk inhibitor or CEPT for aggregation day 33. Dissociated cryopreserved midbrain organoids cells day 16, day25, day 33, or day 60, can be used to reconstitute organoids, chimeroids, or assembloids Organoids can be maintained intact (without dissociation and reconstitution) at day 33. Unreconstituted assembloids can be seeded with microglia progenitors, which will attach to and enter organoids. Unreconstituted organoids are more heterogenous in size and cell composition on a per organoid basis than those reassembled from a large population of normally heterogenous organoids. We have not observed extremely strong differences between individual organoids before day 33, a tight normal distribution. Organoids fusion is the key driver of size heterogeneity but does not affect cell fate/composition, patterning or, viability, Assembly. Organoids can be reassembled, or seeded with microglia, mature astrocytes, MSNs, or Rapid Synucleinopathy iNeurons, or vascular endothelial cells."
+  ],
+  "authors": [
+    "Regine Tipon",
+    "Gist Gist Croft"
+  ],
+  "creator": "Gist Gist Croft",
+  "published_on": 1725660874,
+  "created_on": 1725660041,
+  "keywords": []
+}

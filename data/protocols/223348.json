@@ -1,0 +1,32 @@
+{
+  "id": 223348,
+  "title": "3D template matching using PyTOM",
+  "uri": "3d-template-matching-using-pytom-g6cubzawx",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6zbw1gqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"17f6f\",\"text\":\"In a recent publication, Lange et al. proposed an 11-spoked wheel model for the mitochondrial prohibitin complex consisting of six PHB1 and five PHB2 subunits built into low resolution density obtained from 11-fold symmetry averaging. The proposed unequal stoichiometry is inherently incompatible with symmetry. The building of an asymmetric molecular model into density obtained by 11-fold symmetry averaging is inherently self-contradictory. This contradiction alone calls the validity of the derived structure into question. Our own data revealed that the complex primarily adopts an asymmetric open conformation in situ. We show that it was the incorrect symmetry imposition on the open conformation that led to the spoked wheel density reported by Lange et al.. Further validation by re-analysis of crosslinking-mass spectrometry data, and a test of in situ template matching all support a larger prohibitin complex architecture. These findings underscore the need for great care in the imposition of symmetry cryo-ET at less than atomistic resolution.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Install PyTOM according to the instructions on the github: https://github.com/SBC-Utrecht/pytom-match-pick",
+    "For suggestions with troubleshooting the software consult the recent publication that validated the software: Chaillet, M. L., Roet, S., Veltkamp, R. C., &amp; Förster, F. (2025). pytom-match-pick: A tophat-transform constraint for automated classification in template matching. Journal of Structural Biology: X , 11, 100125. https://doi.org/10.1016/j.yjsbx.2025.100125",
+    "Identify and import your target protein complex of interest and generate a map using &#39;molmap #X 30&#39; in the ChimeraX command line. Then save your map as a .mrc file in ChimeraX.",
+    "Before running PyTOM, make sure tomograms are generated using the following: Motioncorrect with Motioncorr - prealign with AreTomo - CTF correct with CISTEM - Reconstruct bin5 tomos with AreTomo (Weighted back projection) - Denoise Tomos with tomo3d (EED with Sigma of 0.5 for 10 Iterations) - Membrain segmentation - dilate mask with the particle diameter of segmentation with XMIPP3 to use it as a tomomask.",
+    "Assuming you change the input name to match your template and have the same voxel size, run the following in terminal: pytom_create_template.py -i RealInput.mrc -o RealTemplate.mrc --center --invert -b 60 --output-voxel-size-angstrom 10.5",
+    "Then run the following in terminal: pytom_create_mask.py -b 60 -o RealMask.mrc --voxel-size 10.5 --radius 12 --sigma 1",
+    "Run the following to template match into a selected tomogram: pytom_match_template.py -t RealTemplate.mrc -m RealMask.mrc -v /YOURTOMOGRAMPATH/YOURTOMOGRAM.mrc -d OUTPUTFOLDER/ --particle-diameter 180 -a -60 60 --defocus 3 --amplitude 0.08 --spherical 2.7 --voltage 300 --tomogram-ctf-model phase-flip -g 0 1 --tomogram-mask /YOURTOMOGRAMMASKFOLDER/ --search-z 10 210",
+    "Estimate template match scores using the following: pytom_estimate_roc.py -j OUTPUTFOLDER/XXXX_job.json -n 1000 -r 3 --bins 16",
+    "Extract PyTOM scores using the following and the output recommended score value: pytom_extract_candidates.py -j OUTPUTFOLDER/XXXX_job.json -r 3 --relion5-compat -n 1000 -c X.XX",
+    "Load the scores into FIJI along with the denoised tomogram where you can see your complex of interest and visually inspect the quality of the template matches.",
+    "Create a composite image of the denoised tomogram overlayed with the scores file",
+    "Identify protein complex of interest from the denoised tomogram and perform a linescan through the center of it. Apply the line scan to the scores file overlayed and record the height of the highest peak in the linescan to calculate a relative cross correlation score."
+  ],
+  "authors": [
+    "kevin rose"
+  ],
+  "creator": "kevin rose",
+  "published_on": 1753681181,
+  "created_on": 1753563181,
+  "keywords": []
+}

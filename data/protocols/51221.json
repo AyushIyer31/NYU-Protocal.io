@@ -1,0 +1,38 @@
+{
+  "id": 51221,
+  "title": "AlphaHOR-RES: a method for enriching centromeric DNA",
+  "uri": "alphahor-res-a-method-for-enriching-centromeric-dn-bv9vn966",
+  "doi": "dx.doi.org/10.17504/protocols.io.bv9vn966",
+  "description": "{\"blocks\":[{\"key\":\"b15os\",\"text\":\"Directed Methylation and Long-read sequencing (DiMeLo-seq) can be used to map protein-DNA interactions in repetitive regions, including the centromere. If you plan to use DiMeLo-seq for centromere mapping, then centromere enrichment is a valuable technique to increase the output signal and get more data. AlphaHOR-RES is a method to enrich for centromeres using MscI and AseI restriction digest. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9k27p\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a90uv\",\"text\":\"Refer to \\\"DiMeLo-seq: Directed Methylation with Long-read sequencing\\\" and \\\"pA-Hia5 Protein Expression and Purification\\\" on protocols.io for the rest of the DiMeLo-seq protocol. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"85cij\",\"text\":\"Monarch® High Molecular Weight DNA extraction kit (NEB T3050L)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eumhf\",\"text\":\"Elution buffer/Buffer EB (QIAGEN 19086)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":15,\"length\":9}],\"data\":{}},{\"key\":\"a4gdh\",\"text\":\"NEBuffer 2.1 (NEB B7202S)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dmii6\",\"text\":\"MscI enzyme (NEB R0534S)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b1mk1\",\"text\":\"AseI enzyme (NEB R0526S)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dbgmt\",\"text\":\"Eppendorf DNA LoBind tubes   (Fisher 022431021)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":27,\"length\":1}],\"data\":{}},{\"key\":\"2g8so\",\"text\":\"Qubit dsDNA BR Assay Kit (Fisher Q32850)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eggqs\",\"text\":\"Orange DNA Loading Dye (Fisher R063)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1tjo9\",\"text\":\"Lonza SeaKem Gold agarose (Lonza 50512) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ed5hl\",\"text\":\"SYBRSafe gel stain  (Fisher S33102)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6ljup\",\"text\":\"Scalpel\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bj14r\",\"text\":\"GeneRuler High Range DNA Ladder (Fisher SM1351) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ochv\",\"text\":\"a Zymoclean Large Fragment DNA Recovery Kit (Zymo D4045)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ce80f\",\"text\":\"ONT LSK-109 native library prep kit (ON SQK-LSK109, ON SQK-LSK110)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bl8n3\",\"text\":\"v9.4 MinION flow cell (ON FLO-MIN106D)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"F8B2CC70DAC211EB8B4F215130F9F605\",\"url\":\"https://www.qiagen.com/us/resources/faq?id=d8ef773f-6a37-4993-908b-8bbc7bc5c8d6\\u0026lang=en\"}},\"1\":{\"type\":\"amount\",\"mutability\":\"\",\"data\":{\"amount\":\"1.5\",\"error\":false,\"guid\":\"A7104C20DA9711EBBD630A58A9FEAC02\",\"id\":0,\"label\":\"\",\"scientificNotation\":false,\"unit\":2}}}}",
+  "steps": [
+    "Extract genomic DNA from ~25 million cells using an NEB High Molecular Weight DNA extraction kit with 300 rpm agitation during lysis.",
+    "Elute DNA in 300 μL elution buffer and allow to relax at 4ºC for 2 days. DNA will remain viscous until it is digested.",
+    "Once fully relaxed/solubilized, add 37 μL NEBuffer 2.1, 100 units of MscI, and 100 units of AseI to reach a total volume of 370 μL in a 1.5 mL LoBind Eppendorf tube. Place the reaction on a rotator at 12 rpm and leave overnight at 37ºC.",
+    "Quantify DNA concentration using a Qubit Broad Range DNA kit.",
+    "Mix DNA with orange loading buffer and load onto a 0.3% TAE agarose gel made with Lonza SeaKem Gold agarose and 15 μL SYBRSafe gel stain per 100 mL gel. Load a GeneRuler High Range DNA Ladder in an adjacent lane. To avoid overloading, load no more than 250-300 ng of DNA per mm of lane width. Run gel at 2 V/cm for 1 hour and image over a blue light transilluminator.",
+    "Cut gel to remove fragments smaller than 20 kb. Keep everything larger than 20kb (up to the well itself).",
+    "Purify DNA from the resulting gel slice using a Zymoclean Large Fragment DNA Recovery Kit with the following modifications:",
+    "Melt the gel slice at room temperature on a rotator at 12 rpm.",
+    "Elute DNA from the column twice with elution buffer heated to 70ºC.",
+    "Quantify DNA concentration with a Qubit Broad Range DNA kit.",
+    "Prepare DNA for sequencing using an ONT LSK-109 (multiplexing) or LSK-110 (not multiplexing) native library prep kit. For a more detailed library prep, please refer to &#34;DiMeLo-seq: Directed Methylation with Long-read sequencing&#34; step 12.",
+    "Sequence on a v9.4 MinION flow cell."
+  ],
+  "authors": [
+    "Nicolas Altemose",
+    "Annie Maslan",
+    "Owen Smith",
+    "Kousik Sundararajan",
+    "Rae Brown",
+    "Aaron Straight",
+    "Aaron Streets"
+  ],
+  "creator": "Rae Brown",
+  "published_on": 1627689323,
+  "created_on": 1625161268,
+  "keywords": []
+}

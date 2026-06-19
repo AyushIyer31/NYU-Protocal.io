@@ -1,0 +1,31 @@
+{
+  "id": 69945,
+  "title": "Gene expression analysis by quantitative Real-Time PCR (qPCR)",
+  "uri": "gene-expression-analysis-by-quantitative-real-time-cgiztuf6",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewov1oyz2lr2/v1",
+  "description": "{\"blocks\":[{\"key\":\"5er81\",\"text\":\"Quantitative Real-Time PCR (qPCR)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Perform PCR using the following cycling conditions in a LightCycler® 480 System (Roche): 50˚C for 2min 95˚C for 2min 95˚C for 15s + 60˚C for 1min (x40cycles)",
+    "Using the LightCycler Software obtain the threshold cycles (CT) signals from each samples.",
+    "Perform ΔΔCT-method to analyze the expression data using the endogenous control genes and the reference experimental group.",
+    "Option 1 : TaqMan qPCR",
+    "Prepare Taqman Master mix (ul per well): 5ul: Taqman Gene Expression Master Mix (Applied Biosystems, # 4369016) 0.5ul Taqman Gene Expression Assays",
+    "Add 4.5ul of cDNA per well (10ng cDNA) in technical triplicates to each well of LightCycler 480 Multiwell 384-plate (#4729749001, Roche Diagnostics)",
+    "Option 2 : SYBR qPCR",
+    "Prepare SYBR Master mix (ul per well): 5ul PowerUp SYBR Green Master Mix (#A25776, Applied Biosystem-ThermoFisher) 1ul Primers (Forward and Reverse, diluted in Nuclease-free water at 5µM)",
+    "Add 4ul of cDNA per well (10ng cDNA) in technical triplicates to each well of LightCycler 480 Multiwell 384-plate (#4729749001, Roche Diagnostics)",
+    "Add 6ul of SYBR Master mix to each well with an automatic pipette (Multipette E3, Eppendorf)",
+    "Add 5.5ul of Taqman Master mix to each well with an automatic pipette (Multipette E3, Eppendorf)"
+  ],
+  "authors": [
+    "Miquel Vila"
+  ],
+  "creator": "Núria Peñuelas",
+  "published_on": 1663159049,
+  "created_on": 1663076845,
+  "keywords": []
+}

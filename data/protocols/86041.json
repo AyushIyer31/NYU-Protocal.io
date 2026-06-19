@@ -1,0 +1,37 @@
+{
+  "id": 86041,
+  "title": "Automated Immunohistochemistry Staining",
+  "uri": "automated-immunohistochemistry-staining-cx9zxr76",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4qjz2vo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"7a7ou\",\"text\":\"The protocols describes the steps for automated immunohistochemistry staining using the Ventana Discovery® XT\\nImmunostainer.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d9r44\",\"text\":\"\\n\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"29otk\",\"text\":\"Primary AT8 antibody (Thermo Fisher Scientific, MN1020)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bmig2\",\"text\":\"Antibody diluent solution (Ventana)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9pb9k\",\"text\":\"Ventana Discovery® XT Immunostainer: https://www.medicalexpo.com/prod/roche/product-71020-527513.html\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":37,\"length\":64}],\"data\":{}},{\"key\":\"8ndpq\",\"text\":\"Leica CV5030 automated slide cover-slipping machine\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8t63c\",\"text\":\"100 % ethanol\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cfnkh\",\"text\":\"Oven\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"55o36\",\"text\":\"\\n\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"2C5A8970353111EEAFC70A58A9FEAC02\",\"url\":\"https://www.medicalexpo.com/prod/roche/product-71020-527513.html\"}}}}",
+  "steps": [
+    "Generate tissue sections using standard microtome sectioning protocols.",
+    "Heat tissue dry tissue sections for 01:00:00 at 60 °C",
+    "Prepare primary and secondary antibody solutions as per manufacturer&#39;s protocol - see below for example for AT8.",
+    "Primary AT8 antibody (Thermo Fisher Scientific, MN1020) diluted at 1:100 in antibody diluent solution(Ventana). Secondary anti-mouse antibody (Abcam) diluted at 1:100 in antibody diluent solution (Ventana).",
+    "Perform immunohistochemical staining using the Ventana Discovery® XT Immunostainer – following manufacturers guidelines.",
+    "Print barcoded slide labels corresponding to the correct protocol on the Ventana machine and stick them to the top of each slide following the slide heating.",
+    "Place slides into the Ventana machine and ensure all bulk reagents are sufficiently filled",
+    "Begin the staining protocol.",
+    "Upon completion of the staining, activate the counterstaining step.",
+    "Following counterstaining, remove the slides and wash in soapy water 5x.",
+    "Leave slides in running water for 00:05:00 mins.",
+    "To deparaffinise sections, place slides in 100 % ethanol for 00:05:00 mins, remove and place in separate 100 % ethanol for 00:05:00 mins. Remove from ethanol and place in xylene for 00:05:00 mins, remove and place in separate xylene for 00:05:00 mins",
+    "For cover-slipping of slides following deparaffinisation – use the Leica CV5030 automated slide cover-slipping machine.",
+    "Stained slides digitised on a NanoZoomer S360 scanner (Hamamatsu) – Brightfield scan profile at x40 magnification.",
+    "Upload digitised slides to NZ Connect (1.0.36 (IVD)) slide viewing platform. AT8 staining Alpha-synuclein staining"
+  ],
+  "authors": [
+    "Toby J Curless",
+    "Hemanth Ramesh Nelvagal",
+    "Zane Jaunmuktane"
+  ],
+  "creator": "Toby J Curless",
+  "published_on": 1701976382,
+  "created_on": 1691418418,
+  "keywords": []
+}

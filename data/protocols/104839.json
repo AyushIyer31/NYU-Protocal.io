@@ -1,0 +1,33 @@
+{
+  "id": 104839,
+  "title": "qPCR to measure mRNA expression in S. rosetta",
+  "uri": "qpcr-to-measure-mrna-expression-in-s-rosetta-dimf4c3n",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvjnjongk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"4fitu\",\"text\":\"This protocol tailors common qPCR methods for quantifying transcript abundance in S. rosetta. The protocol covers primer design, synthesis of ssDNA standards, and assembling the qPCR reaction. It builds upon the preferential lysis and cDNA synthesis protocols and links to relevant guides and calculators for ease of use.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":82,\"length\":12}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Search for your gene of interest here https://protists.ensembl.org/Salpingoeca_rosetta_gca_000188695/Info/Index After opening the gene page, click the &#34;Sequence&#34; tab on the left-hand column to display the gene&#39;s exons. From there click download sequence and select &#34;cDNA&#34;. Reference the exon sequences on this page as you design primers or manually annotate exons in the cDNA file downloaded.",
+    "Using the NEB Luna qPCR master mix, set up the following reaction according to the manufacturer, with 3 µL of sample cDNA and of each standard previously made, all in triplicate. Scale accordingly %s %s Luna Universal qPCR Master Mix - 2,500 rxns New England Biolabs Catalog #M3003E",
+    "To begin qPCR primer design, primers must span exon-exon junctions, which should be previously annotated from the step above. A good source on qPCR primer design can be found here https://www.bio-rad.com/en-us/applications-technologies/qpcr-assay-design-optimization?ID=LUSO7RIVK Generally, select 19-20 bp spanning an exon junction, with a GC content of 50-60% and a tm of 50-65°C. The final amplicon should be 75-200 bp, so pick your second primer accordingly, which should also span an exon junction. If your qPCR is to test the effects of a KO mutation, you&#39;ll want the entirety of the amplicon to be downstream of the PTS insertion because transcription will likely read through until the PTS. If the amplicon is before the PTS insert, the qPCR will likely result in no or less of a decrease in expression. qPCR primers must span exon-exon junctions to avoid genomic DNA amplification.",
+    "Amplification validation: Select your qPCR reaction mix (we used NEB luna qPCR master mix), and use cDNA (previously synthesized, protocols for preferential lysis , RNA extraction and cDNA synthesis ) as template, test amplification in the qPCR master mix by following the manufacturer&#39;s protocols. Run the completed reaction on a 1% agarose gel and check that the amplicon is the expected size and that there is only one amplicon. Luna Universal qPCR Master Mix - 2,500 rxns New England Biolabs Catalog #M3003E",
+    "Amplification efficiency: To test the efficiency of amplification, you&#39;ll need to make a standard curve that as closely as possible matches your input material for the final qPCR reaction. In our case, this was ssDNA from cDNA synthesis. Therefore, our standard curve was composed of ssDNA matching the template or antisense strand of our gene since that&#39;s the product of cDNA synthesis.",
+    "ssDNA standard synthesis: ssDNA standards were generated from PCR products amplified from cDNA with a forward primer that was 5’ phosphorylated to promote Lambda exonuclease digestion of that strand and a reverse primer with phosphorothioate bonds between the first four 5’ nucleotides to block digestion. Those PCR products were then digested with Lambda exonuclease following NEB’s protocol. %s %s Lambda Exonuclease - 1,000 units New England Biolabs Catalog #M0262S",
+    "ssDNA standard concentration determination: ssDNA concentrations were determined by Qubit ssDNA Assay Kit by creating a standard curve with the provided standards (0 ng/μl and 20 ng/μl, making serial dilutions of the 20 ng/μl standard to generate the in-between concentrations). 50 µL of standards and digested ssDNA template were placed in a clear bottom 96 well plate and then measured for fluorescence (Ex = 500 nm / Em=540 nm) on a plate reader. Once the sample concentration was determined, DNA copy number determined by this online calculator https://www.thermofisher.com/us/en/home/brands/thermo-scientific/molecular-biology/molecular-biology-learning-center/molecular-biology-resource-library/thermo-scientific-web-tools/dna-copy-number-calculator.html Qubit ssDNA kit Thermo Fisher Scientific Catalog #Q10212",
+    "Standard dilutions: Serially dilute the ssDNA standards from 10 5 to 10 0 copies/µl in a solution with 10 ng/µl of S. rosetta total RNA (after removing mRNAs) to account for any matrix effects.",
+    "Cover the plate with an optically clear cover and then cycle the reactions according to the manufacturer on a qPCR machine (We use an Applied Biosystems Quantstudio 3). Measure fluorescence in the FAM/SYBR Green Channel when using the NEB Luna qPCR Master Mix. %s %s *The melt curve step is optional but is useful to confirm that only a single target was amplified.",
+    "Making S. rosetta total RNA without mRNAs for resuspending qPCR standards: Wild type cells were grown and lysed according to the preferential lysis protocol ,",
+    "The lysate was then purified via the total RNA clean up kit according to the RNA extraction and cDNA synthesis protocol",
+    "Using NEBs magnetic mRNA isolation kit: 1. 50 µL, beads were equilibrated in 200 µL, binding buffer provided in the kit 2. Place the equilibrated beads on a magnet and remove the supernatant 3. Resuspend the beads with 250 µL, total purified RNA and incubate at Room temperature for 00:10:00 4. Place the incubated beads on a magnet, taking and keeping the supernatant. This is total RNA without mRNAs. 5. Spec the total RNA by nanodrop or qubit and dilute in RNase free water to 10 ng/µl. Magnetic mRNA Isolation Kit - 25 isolations New England Biolabs Catalog #S1550S"
+  ],
+  "authors": [
+    "Fredrick leon",
+    "David Booth"
+  ],
+  "creator": "Fredrick leon",
+  "published_on": 1725370137,
+  "created_on": 1722975754,
+  "keywords": []
+}

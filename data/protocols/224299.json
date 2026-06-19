@@ -1,0 +1,25 @@
+{
+  "id": 224299,
+  "title": "Mass spectrometry data comparison and Venn diagram analysis",
+  "uri": "mass-spectrometry-data-comparison-and-venn-diagram-g7ajbzicp",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egnr24ql5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"918jg\",\"text\":\"To assess protein overlap between different mass spectrometry datasets., the datasets were organized in three separate columns in Excel. Using the COUNTIF function, the presence or absence of each protein across the lists was evaluated.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"dqlki\",\"text\":\"Formula Examples (Microsoft Excel):\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":35}],\"entityRanges\":[],\"data\":{}},{\"key\":\"bqh62\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cjoh8\",\"text\":\"Proteins only in column A, not in B or C:\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":41}],\"entityRanges\":[],\"data\":{}},{\"key\":\"2edco\",\"text\":\"     =IF(AND(COUNTIF(B:B, A2)=0, COUNTIF(C:C, A2)=0), 1, 0)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9l2tr\",\"text\":\"Proteins shared between column A and B (regardless of C):\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":57}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6apb\",\"text\":\"     =IF(COUNTIF(B:B, A2)\\u003e0, 1, 0)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cbl6b\",\"text\":\"Proteins shared between column A and B but not in C:\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":52}],\"entityRanges\":[],\"data\":{}},{\"key\":\"f1g0k\",\"text\":\"     =IF(AND(COUNTIF(B:B, A2)\\u003e0, COUNTIF(C:C, A2)=0), 1, 0)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"itid\",\"text\":\"Proteins present in all three columns:\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":38}],\"entityRanges\":[],\"data\":{}},{\"key\":\"12b2u\",\"text\":\"     =IF(AND(COUNTIF(B:B, A2)\\u003e0, COUNTIF(C:C, A2)\\u003e0), A2, \\\"\\\")\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Place each protein list (1000 entries per dataset) in separate columns (e.g., columns A, B, and C).",
+    "Use COUNTIF to determine whether a protein in one column appears in the others.",
+    "Use formulas to assign a binary presence (1) or absence (0) for each protein&#39;s appearance in the other datasets.",
+    "Sum binary values to count in how many datasets each protein is present.",
+    "Use these counts to define overlap sets for Venn diagram plotting."
+  ],
+  "authors": [
+    "Elisabeth Holzer"
+  ],
+  "creator": "Elisabeth Holzer",
+  "published_on": 1781621034,
+  "created_on": 1754477613,
+  "keywords": []
+}

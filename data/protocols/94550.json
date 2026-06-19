@@ -1,0 +1,38 @@
+{
+  "id": 94550,
+  "title": "Genotyping of a candidate variant by PCR and Sanger sequencing",
+  "uri": "genotyping-of-a-candidate-variant-by-pcr-and-sange-c8jwzupe",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzxp32gx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"6da9p\",\"text\":\"This procedure describes a classic process for genotyping a simple SNP or small INDEL by PCR followed by Sanger sequencing, which can be easily analysed. It is used for the validation or invalidation of a candidate variant that has been identified from a whole genome sequence. It combines several steps using online tools and a free downloadable software. It is easy to use, inexpensive and has the advantage of displaying a large number of samples in the same window, aligned simultaneously to a reference sequence. Alleles are detected automatically.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9421f\",\"text\":\"It is also possible to inspect bases that have not been identified as polymorphic by the software, particularly in the case of somatic mosaicism. If so, it is possible to distinguish the two alleles and obtain a rough estimate of the relative allelic proportions.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5om1a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"5rtg0\",\"text\":\"This classic process combines several steps using online tools and a free downloadable software.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"bthqu\",\"text\":\"To set up a genetic test, it is recomended to have acces to an available reference genome.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a479k\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ddg5n\",\"text\":\"As this procedure is designed to describe the validation of a candidate variant, we assume that a candidate mutation has already been identified (i.e. its position in the reference genome and the gene to which it relates).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eje4l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mcqs\",\"text\":\"Download NovoSNP software.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "First select the genome assembly of the species you wish to genotype in a genome browser (e.g. https://genome-euro.ucsc.edu/cgi-bin/hgGateway). Then, select the gene whose DNA you want to retrieve.",
+    "Use the appropriate tool to obtain the DNA sequence in a fasta format (here Menu: View , Submenu: DNA ) and copy-paste the sequence in a text file, with no formatting such as line breaks. This file will be needed for the following steps. It will be your reference sequence. Make sure you name the file correctly so that you can recognise it later, especially if you are working on several genes at once.",
+    "Select the exact position on the chromosome you would like to genotype in the genome browser, and zoom out to obtain a sequence of about 500-600 base pairs around the mutation of interest that is suitable for PCR followed by Sanger sequencing.",
+    "Use the tool mentioned above to obtain the DNA sequence. Then save the selected sequence to a new file and copy and paste the sequence into the online Primer3 software (see references).",
+    "In Primer3 , it is recommended to mark the variant to check that the primers chosen are correctly positioned (at least 70 base pairs on either side of the variant to be genotyped) so that the sequences can be unambiguously read.",
+    "Choose a product size range of 400-600bp. Standard options are sufficient in most cases. - A best choice primer pair with specifications as in the exemple below OLIGO start len tm gc% any 3&#39; seq LEFT PRIMER 55 21 58.94 47.62 8.00 1.00 TCCGCTAATTAGGTCCTGAGARIGHT PRIMER 555 20 60.26 60.00 3.00 0.00 GCTGGTAGGGACACAGAGGASEQUENCE SIZE: 601INCLUDED REGION SIZE: 601PRODUCT SIZE: 501, PAIR ANY COMPL: 4.00, PAIR 3&#39; COMPL: 2.00TARGETS (start, len)*: 331,18 - The sequence of interest, the position of each primer, around the selected variant &gt;&gt;&gt;&gt; indicates the position of primers, ***** indicates the position of variants - Additional oligos",
+    "Make sure you save your selections to the new file you created.",
+    "Order one or more primer pairs from your usual supplier.",
+    "Use a standard PCR kit and follow the manufacturer&#39;s recommendations. Select two DNA samples from the species of interest as positive controls and add a negative control tube (containing water instead of DNA).",
+    "Load PCR products onto a 2% agarose gel with BET in the presence of a size marker. Migrate at 110 Volts for approximately 00:25:00 . The PCR product obtained must be unique and its size must match that predicted by primer3. The expected band must be clearly visible. Example of PCR test",
+    "Perform the PCR using the conditions recommended by PRIMER3. Alternatively, you can use conditions that are accepted as the most common in your laboratory (i.e. considered robust). If these conditions work, you can perform several tests in the same experiment.",
+    "Select the samples to be genotyped: ideally, take 1 to 3 DNA samples corresponding to the different genotypes you expect. For a recessive disease, you will expect - homozygote alternative, which should be affected individuals, - heterozygous witch should be carriers (e. g. parents of cases) - homozygous wild type.",
+    "Perform the PCR using the conditions developed in the previous step in a final volume of at least 35µL to obtain sufficient PCR product for Sanger sequencing in either direction.",
+    "The amplified and gel-checked PCR fragments and primers are then sent to any supplier for Sanger sequencing.",
+    "In NovoSNP (see references), First load the gene reference sequence you prepared in step 2 Then load the files from the Sanger sequencing supplier into NovoSNP and let the software process the files.",
+    "The PCR fragments are aligned to the reference sequence. Novo SNP detects putative SNPs and small INDELs, and provides a quality score for each detected position.",
+    "Find the position to be studied and check that the sequences match the phenotype and the expected genotype perfectly. Three different genotypes are displayed here: homozygous reference, homozygous alternative, and heterozygous.",
+    "If the sequences match the phenotype and the expected genotype perfectly, the mutation and the test are validated. Any new unknown sample can be genotyped using this method. If you are analysing a mosaic animal (i.e. one that carries the mutation in a small proportion of its cells), the software may not annotate the two alleles, but it is possible to distinguish them visually and estimate their relative proportions."
+  ],
+  "authors": [
+    "Cecile Grohs"
+  ],
+  "creator": "Cecile Grohs",
+  "published_on": 1715018813,
+  "created_on": 1706794752,
+  "keywords": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": 110252,
+  "title": "live and fixed cell fluorescence imaging of agDD-GFP aggregation and NRF1 activation",
+  "uri": "live-and-fixed-cell-fluorescence-imaging-of-agdd-g-dpwk5pcw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl823e7l2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"2dqtm\",\"text\":\"This protocol describes methods for visualization of agDD-GFP aggregates and NRF1 by fluorescence imaging and immunofluorescence, respectively.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"fsdbh\",\"text\":\"HeLa-dCas9 cells (Ref 1 and 2) expressing agDD-GFP (Addgene #78289) as described (Ref 3)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"anvuh\",\"text\":\"PBS; Phosphate buffered saline: ThermoFisher (#14040133)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"32tf8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5tmjt\",\"text\":\"Dulbecco’s MEM (DMEM), high glucose, pyruvate (Gibco / Invitrogen, 11995) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"63gut\",\"text\":\"18 or 22 mm-glass coverslips (No. 1.5, 22x22 mm glass diameter, VWR 48366-227)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"214bv\",\"text\":\"\\nFluoroBrite DMEM (Thermo Fisher Scientific A, 1896701)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b5pna\",\"text\":\"NRF1/NFE2L1 (1:1000; abcam, ab238154)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b8gam\",\"text\":\"mounting media (Vectashield H-1000) \\n\\nAlexaFluor 594 Goat anti-Rabbit IgG (Thermo Fisher Catalog # A-11012)\\nHoechst-33342 dye (Thermo Fisher #62249)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "HeLa-dCas9 cells (from Ref 1 and 2) were grown in complete DMEM (Dulbecco’ Modifies Eagles Medium (DMEM) with 10% fetal bovine serum and optional 1% penicillin-streptomycin), with the addition of shield-1 (S1) ligand at a final concentration of 1 μm (MedChem Express, cat # HY-112210) to keep agDD-GFP in a folded form and maintained in a 5% CO 2 incubator at 37 o C. Cells were maintained at &lt;80% confluency throughout the course of experiments.",
+    "Cells in the presence of S1 were plated onto 18 or 22 mm-glass coverslips (No. 1.5, 22x22 mm glass diameter, VWR 48366-227) for imaging. S1 washout was performed as described in Ref 3 using 5 μm FKBP12-F36V in the culture media. The choice of time for the washout will depend on the goals of the experiment but 10 min to 6 h represent the extremes of the time range, typically.",
+    "Cells were then fixed using 4% PFA for 10 min at room temperature.",
+    "Coverslips were then washed 3 times with DPBS + 0.02% tween-20, with the final wash done in the presence of Hoechst33342 dye to mark nuclei, and mounted onto glass slides using mounting media (Vectashield H-1000) and sealed with nail polish.",
+    "The cells were imaged by confocal microscopy using a Yokogawa CSU-W1 spinning disk confocal on a Nikon Ti motorized microscope equipped with a Nikon Plan Apo 100x/1.40 N.A objective lens, and Hamamatsu ORCA-Fusion BT CMOS camera. For the analysis, the equal gamma, brightness, and contrast are applied for each image using FiJi software (FiJi ImageJ V.2.0.0 https://imagej.net/Fiji).",
+    "Cells in the presence of S1 were plated onto 18 or 22 mm-glass coverslips (No. 1.5, 22x22 mm glass diameter, VWR 48366-227) for imaging. S1 washout was performed as described in Ref 3 using 5 μm FKBP12-F36V in the culture media. The choice of time for the washout will depend on the goals of the experiment but 10 min to 6 h represent the extremes of the time range, typically.",
+    "Cells were then fixed using 4% PFA followed by permeabilization with 0.5% Triton-X100.",
+    "Cells were blocked in 3% BSA for 30 minutes, followed by incubation in primary antibodies (e.g. anti-NRF1; 1:200) for 1 hour at room temperature. Cells were washed 3 times with PBS + 0.02% tween-20, followed by incubation in secondary (alexafluor conjugated secondary antibodies such as AlexaFluor 647 Goat anti-Rabbit IgG) for 1 hour at room temperature.",
+    "Coverslips were then washed 3 times with DPBS + 0.02% tween-20 and mounted onto glass slides using mounting media (Vectashield H-1000) and sealed with nail polish.",
+    "The cells were imaged by confocal microscopy. We employ a Yokogawa CSU-W1 spinning disk confocal on a Nikon Ti motorized microscope equipped with a Nikon Plan Apo 100x/1.40 N.A objective lens, and Hamamatsu ORCA-Fusion BT CMOS camera. For the analysis, the equal gamma, brightness, and contrast are applied for each image using FiJi software (FiJi ImageJ V.2.0.0 https://imagej.net/Fiji)",
+    "Cells in the presence of S1 were plated onto glass glass bottom dishes for imaging. S1 washout was performed as described in Ref 3 using 5 μm FKBP12-F36V in the culture media.",
+    "Before imaging, S1 washout is started to begin aggregation in PhenolRed free DMEM. Thencells are imaged using a Yokogawa CSU-W1 spinning disk confocal on a Nikon Ti motorized microscope equipped with a Nikon Plan Apo 100x/1.40 N.A objective lens, and Hamamatsu ORCA-Fusion BT CMOS camera, and a live cell chamber with temperature and carbon dioxide control. For the analysis, the equal gamma, brightness, and contrast were applied for each image using FiJi software (FiJi ImageJ V.2.0.0 https://imagej.net/Fiji)."
+  ],
+  "authors": [
+    "Harper JW",
+    "Kelsey Hickey"
+  ],
+  "creator": "Kelsey Hickey",
+  "published_on": 1729711048,
+  "created_on": 1729191979,
+  "keywords": []
+}

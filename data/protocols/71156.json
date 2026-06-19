@@ -1,0 +1,40 @@
+{
+  "id": 71156,
+  "title": "SDS-PAGE",
+  "uri": "sds-page-chqut5ww",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl85o7dl2w/v2",
+  "description": "{\"blocks\":[{\"key\":\"53b4s\",\"text\":\"SDS-PAGE gels are used to visualize proteins. This protocol describes how to prepare all the buffers required for casting and running SDS-PAGE gels, as well as how to prepare whole cell samples.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "4X Resolving Buffer (1.5 M Tris-HCl, pH 8.8) Add 90.75 g Tris P212121 to 400 mL DI water Titrate the solution with ~18% HCl to pH 8.8 Add water to a final volume of 500 mL Store at 4°C",
+    "4X Stacking Buffer (0.5 M Tris-HCl, pH 6.8) Add 30.25 g Tris P212121 to 400 mL DI water Titrate the solution with ~18% HCl to pH 6.8 Add water to a final volume of 500 mL DI water Store at 4°C",
+    "10X Running Buffer Weigh 30 g Tris Tris P212121 . Weigh 144 g Glycine Contributed by users . Weigh 10 g Sodium Dodecyl Sulfate P212121 SDS. Dissolve in 1000 mL water. pH should read 8.3. No pH adjustments are needed. Dilute to 1X before use. Store at room temperature.",
+    "10% Ammonium Persulfate (w/v) Add 1g of Ammonium persulfate Contributed by users Catalog #A3678 to 10 mL of DI water Store at 4°C",
+    "10% SDS (w/v) Add 10g of Sodium Dodecyl Sulfate P212121 to 100 mL DI water Store at room temperature",
+    "3X Laemmli Buffer 2.4 mL 1 M Tris pH 6.8 3 mL 20% SDS 3 mL glycerol 1.6 mL beta mercaptoethanol a drop of bromophoenol blue",
+    "In an Eppendorf tube combine 0.5 mL 30% Acrylamide: Bisacrylamide (29:1) 0.5 mL DI water 10 µL APS 1 µL TEMED Pipette 200 µL down the right side, and 200 µL down the left side Allow to solidify for 00:05:00",
+    "Resolving Layer This following recipe makes a 12% SDS-PAGE. For optimal resolution of large proteins (25-200 kDa), you should use smaller concentration of acrylamide (8%), and for resolution of small proteins (4-70 kDa), you should use higher percentage of acrylamide (12-15%). You can calculate a recipe for a different gel percentage using https://www.cytographica.com/lab/acryl2.html",
+    "Combine 1.645 mL DI water 1.645 mL 30% Acrylamide: Bisacrylamide (29:1) 1.25 mL 4X Resolving Buffer (1.5 M Tris, pH 8.8) 50 µL 10% SDS 50 µL 10% APS 5 µL TEMED TEMED must be used in a fume hood Add APS just before casting as the gel begins to polymerize immediately after addition of APS.",
+    "Pour into the mold, leaving ~2 cm below where the bottom of the comb will be Cover with a layer of isopropyl alcohol (IPA) Wait 00:20:00 for gel to solidify",
+    "Stacking Layer The stacking layer helps all the proteins get lined up so all proteins enter the resolving layer at the same time",
+    "Dump out any excess IPA Combine 2.6 mL DI water 1 mL 30% Acrylamide: Bisacrylamide (29:1) 1.25 mL Stacking Buffer (0.5 M Tris, pH 6.8) 50 µL 10% SDS 50 µL 10% APS 5 µL TEMED TEMED must be used in the fume hood Add APS just before casting as the gel begins to polymerize immediately after addition of APS.",
+    "Pour into the mold Place the comb Wait 00:15:00 for gel to solidify Move to water storage",
+    "Preparation of Whole Cell Samples for SDS-PAGE analysis Collect whole cell samples before and after induction, and normalize to the cell mass. This allows you to compare the protein expression before and after inducing cells.",
+    "Heat the waterbath or heatblock to 95 °C Read the optical density at 600 nm (OD600) of the cell culture using a photometer. Note: the OD600 reading should be within the linear range of the photometer. If the reading appear to be lower than 0.1 or higher than 0.9 concentrate or dilute the cell sample accordingly in order to ensure the OD reading to fall within the 0.1- 0.9 range. If you dilute or concentrate the sample remember to calculate back the initial concentration (e.g. if you diluted 5 times the initial concentration is y*5, where y is the reading you have obtained from the diluted concentration)",
+    "Calculate the amount of culture to harvest to have a cell pellet equivalent to 1mL of OD600 =1. Calculate the amount of biomass using the formula C i * V i = C f * V f where C stands for &#34;concentration&#34;, V stands for &#34;volume&#34;, i stands for &#34;initial&#34; and f stands for &#34;final&#34;. Therefore: y OD600 * x mL = 1 OD600* 1 mL where y is the OD600 reading and x is the volume to be calculated. Therefore x mL = ( 1 * 1 )/y Transfer the amount of culture as calculated into an appropriate tube and centrifuge it at 7,000 rpm for 00:10:00 in tabletop centrifuge Discard the supernatant",
+    "Transfer 150 µL of 1X Laemmli Sample Buffer in the tube and resuspend the pellet by pipetting. Transfer the tube to the water bath/heatblock, inserting it into the floaters and incubate the tube at 95 °C for 00:05:00 Transfer the tube on ice for 00:01:00 Transfer the tube in a bench-top centrifuge and centrifuge at room temperature at max speed (e.g. 13,000 xg) for 00:05:00 Transfer the supernatant to a final 1.5 microcentrifuge tube. Note: the pellet won&#39;t be visible. Remove the supernatant without touching the bottom of the tube with the pipette tips to avoid carry-over of membranes. This step is necessary to remove membranes and debris that will affect a good quality run of the samples on the SDS-PAGE gel. Load 10 µL of the supernatant on the SDS-PAGE gel. Store the remaining sample at -20 °C .",
+    "Purified Protein Add 2.5 µL of 3X Laemmli Buffer to 7.5 µL of sample Incubate 00:05:00 at 95 °C . Load the sample onto the SDS-PAGE gel.",
+    "Place in gel running box and cover with running buffer If running only one gel, make sure the other side has a dummy gel cassette inserted. Fill the space between the two gels with 1X running buffer. Add 7.5 µL ladder with dye to a well. Add 7.5 - 10 uL samples to wells. Run at 80V until the loading dye reaches the resolving/stacking layer interface. Run at 180V until the loading dye reaches the end of the gel. Remove gel from casing. Place in petri dish and cover with Coomassie blue dye. Allow to stain overnight."
+  ],
+  "authors": [
+    "Anna Bird",
+    "Chiara Gandini"
+  ],
+  "creator": "Anna Bird",
+  "published_on": 1665482524,
+  "created_on": 1665482456,
+  "keywords": []
+}

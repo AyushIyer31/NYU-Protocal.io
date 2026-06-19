@@ -1,0 +1,38 @@
+{
+  "id": 38466,
+  "title": "Quantification of tube topography on micrographs of fluorescent staining of multi-layers cell culture.",
+  "uri": "quantification-of-tube-topography-on-micrographs-o-bhtaj6ie",
+  "doi": "dx.doi.org/10.17504/protocols.io.bhtaj6ie",
+  "description": "{\"blocks\":[{\"key\":\"bflso\",\"text\":\"The induction or inhibition of angiogenesis can be assessed in vitro by the differentiation of endothelial cells. Indeed, these cells are capable of forming structures resembling a capillary network in culture. This approach is known as Endothelial Tube Formation Assay (ETFA).\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"34i57\",\"text\":\"\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"87h8j\",\"text\":\"\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3otat\",\"text\":\"This type of analysis is traditionally performed on a low confluence monolayer of cells to assay the effect of soluble compounds on the formation of tubes. However, the modulation of tube formation by cell-cell interactions requires the co-culture of cells that leads to the creation of a multi-layer micro-tissue. Additionally, the identification of cells in the micro-tissue requires fluorescent staining resulting in discontinuities in the signal.\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"bcuda\",\"text\":\"\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6tji5\",\"text\":\"\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6ttb1\",\"text\":\"The present protocol allows to analyze the topography of tubes on micrographs of fluorescent staining of multi-layers cell culture.\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"apo3l\",\"text\":\"The limit of this method resides in the fact that the 3D organization of the micro-tissue is not reconstructed and, thus, a part of the tube network is not analyzed.\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Install Icy (requires JDK 8+). Icy Windows/MacOS/Linux http://icy.bioimageanalysis.org BioImage Analysis Lab (Institut Pasteur)",
+    "Download the Icy script &#34;ImageJ background subtraction.&#34; (file name: protocolfile-imagej-background-subtraction1) See: http://icy.bioimageanalysis.org/protocol/imagej-background-subtraction/",
+    "Install the Icy plugin &#34;Membrane Filter.&#34; See: http://icy.bioimageanalysis.org/plugin/membrane-filter/",
+    "Install the ImageJ plugin &#34;Luts Macros and Tools Updater.&#34; See: http://image.bio.methods.free.fr/ImageJ/?Luts-Macros-and-Tools-Updater",
+    "Install the ImageJ plugin &#34;Angiogenesis Analyzer for ImageJ.&#34; See: http://image.bio.methods.free.fr/ImageJ/?Angiogenesis-Analyzer-for-ImageJ",
+    "In Icy, open the image to be analyzed.",
+    "Extract the channel of interest (Channel -&gt; Extract -&gt; Channel x). Save the new image as TIFF.",
+    "Subtract the background (Tools -&gt; Protocols -&gt; Load: protocolfile-imagej-background-subtraction1). Settings: Rolling=20. Save the new image as TIFF.",
+    "In ImageJ (in Icy), open the image obtained after preprocessing.",
+    "Enhance the contrast (Process -&gt; Enhance Contrast). Settings: Saturated pixels: 0.0%; Normalize; Equalize histogram.",
+    "Subtract the background (Process -&gt; Subtract Background). Settings: Rolling ball radius: 5.0 pixels; Sliding paraboloid. Save the new image as TIFF.",
+    "In ImageJ (in Icy), open the image obtained after the definition of ROI.",
+    "Start Angiogenesis Analyzer. Settings: select all options except &#34;Suppress isolated elements.&#34; Threshold values: Minimum object size: 10 pixels; Minimum branch size: 25 pixels; Artifactual loop size: 850 pixels; Isolated element size threshold: 50 pixels; Master segment size threshold: 30 pixels; Iteration number (advised 2 to 5): 3 iterations; Show iteration (for single analysis): 3 iterations.",
+    "Apply the Blurred Mask Tool (Angiogenesis Analyzer -&gt; Blurred Mask Tool) to the whole surface of the image.",
+    "Change the color encoding of the image to RGB color (Image -&gt; Type -&gt; RGB color).",
+    "Run the analysis (Angiogenesis Analyzer -&gt; Analyze HUVEC Phase contrast).",
+    "Save the result files (Angiogenesis Analyzer -&gt; Save Current Analysis). Measurements are saved as a tab-separated values file (with &#34;xls&#34; extension) and can be further analyzed in a spreadsheet.",
+    "Reduce the discontinuities and noise on membranes (Plugin -&gt; Membrane Filter). Settings: default parameters. Save the new image as TIFF."
+  ],
+  "authors": [
+    "Bertrand-David Ségard"
+  ],
+  "creator": "Bertrand-David Ségard",
+  "published_on": 1596683941,
+  "created_on": 1592887533,
+  "keywords": []
+}

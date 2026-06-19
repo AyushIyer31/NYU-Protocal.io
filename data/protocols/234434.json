@@ -1,0 +1,36 @@
+{
+  "id": 234434,
+  "title": "Transduction of Microglia-like cells (iMG) with lentivirus",
+  "uri": "transduction-of-microglia-like-cells-img-with-lent-hg7ab3zif",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvrw1xolmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"9ga7b\",\"text\":\"iPSC-derived microglia are an important tool for studying the role of microglia and neuro-immune alterations during development, adulthood, and aging, both in health and disease.  However, microglia are resistant to DNA delivery, so following this protocol, transduction with lentiviruses is facilitated by the SIV-encoded protein Vpx, which degrades SAMHD1, a restriction factor that prevents reverse transcription of lentiviral RNA. Co-delivery of Vpx packaged in virus-like particles (VLPs) leads to ~89% transduction in iMGs, compared with ~4% of iMGLs with lentivirus alone (Dolan, Therrien et al 2023). This protocol is used in combination with the iPSC-derioved microglia protocol  (10.17504/protocols.io.ewov11rw2vr2/v1)\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "This protocol is designed for transduction of microglia at Day 35 of differentiation. Because of this stress, transduced cells need stabilization in the maturation process; therefore, it is recommended to perform desired experiments at final time-point Day 42 instead of Day 40. %s %s",
+    "Day 1: Seed 6 x 10 5 HEK293T cells/well in 6-well plates in DMEM with 10% FBS without antibiotics. Number of cells at plating might need to be adjusted depending on cell growth",
+    "Day 2: Transfection Follow the TransIT ‱ -LT1 transfection protocol for HEK293T cells Warm the TransIT-293 reagent at room temperature and vortex gently before use. Place 250 μl of Opti-MEM Life Technologies Catalog #31985070 per well in a sterile tube. Add 3 μg of plasmid DNA per well to the respective tube (see tables below for details). Pipet gently to mix all the components completely. Add 8 µL of TransIT®-LT1 Transfection Reagent Mirus Bio Catalog #MIR 2304 Reagent to the diluted DNA mixture and pipet gently again. Incubate at room temperature for 00:30:00 . Distribute the complexes to cells in complete growth medium drop-wise, rock the plate and transfer in normoxic incubator (20% O2, 5% CO2, 37 °C ). %s %s %s %s In order to have an efficient transfection, it is important to mix well the reagents both in the tube and in the well.",
+    "Day 3: 18:00:00 after transfection, change media to 2 mL Opti-MEM Life Technologies Catalog #31985070",
+    "Day 4: 24:00:00 to 72:00:00 after transfection collect the virus and concentrate",
+    "Collect virus Harvest viral supernatant and collect in a 15 ml conical tube. Centrifuge viral supernatant at 300 x g, °C, 5 minutes to remove any HEK293T cell in the supernatant. Alternatively, filter through a 0.45 μm filter. Determine the best incubation time post-transfection for each virus type. The optimal incubation time is generally 24–72 hours, but will vary depending on the goal of the experiment, nature of the plasmid used, and cell doubling time.",
+    "Concentrate the virus, if necessary Follow the Lenti-X ‱ Concentrator Protocol for viral concentration Transfer supernatant to a new tube. Add 1/3 of the volume of Lenti-X Concentrator Takara Bio Inc. Catalog #631232 to the viral supernatant and incubate at least 18:00:00 4 °C Concentration of the lentivirus is only required for viruses with large viral genomes. Viruses with small genomes are produced at higher titers and may not need to be concentrated. Vpx particles do not need to be concentrated.",
+    "Day 5: Finalize virus concentration Centrifuge the tubes at 1500 x g, 4 °C, 45 minutes to spin down the lentivirus with Lenti X concentrator. Resuspend the virus in 1/10 th of the original volume with iMG medium or DMEM-F12 medium Gibco - Thermo Fisher Scientific Catalog #31331093 . VPX particles and lentiviruses can be stored frozen at -80 °C . Avoid cycles of thawing and refreezing, so aliquot desired amount of Vpx particles and viruses and only thaw prior using it.",
+    "Lentivirus titration: For efficient microglia transduction, the amount of virus is 53 ng of P24/10,000 cells. In order to determine the virus titer, follow the Lenti-X p24 Rapid Titer Kit User Manual . Vpx cannot be measured by p24 lentivirus assay. In our hands, usually, 10 µl of Vpx/10,000 cells allows robust infection of microglia.",
+    "Transduction is done on iMG at Day 35 of differentiation. If using a multi-well plate, adjust volume across the wells ( 96-well plate to 50ul) so it is equal across the plate. Keep the conditioned media to use on Day 36. Based on the virus titer obtained, calculate the volume needed to have 53 ng P24/10,000 cells + 10ul of Vpx. Combine Vpx particle and lentivirus , gently mixing doing up and down. Add appropriate volume to each well.",
+    "Day 36 of differentiation: 18:00:00 - 20:00:00 after infection Remove media in each well. Add 50 µL of the conditioned medium collected on Day 35 and 50 µL of Mg basal differentiation medium supplemented with Day 30 growth factors (refer to the tables below).",
+    "Day 38, 40: Feed iMG Add 50ul of fresh Mg basal differentiation medium supplemented with Day 30 growth factors",
+    "Day 42: Assess cells All experiments reported in Dolan, Therrien et al. (2023) were performed on day 42, 7 days after transduction. This time point allows iMG to recover after transduction and show normal morphology and transcriptional profile. Timing can vary depending on the experiments."
+  ],
+  "authors": [
+    "Elisa Perciballi",
+    "Saša ereb",
+    "Martine Therrien",
+    "Beth Stevens"
+  ],
+  "creator": "Martine Therrien",
+  "published_on": 1765510246,
+  "created_on": 1765166976,
+  "keywords": []
+}

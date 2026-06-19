@@ -1,0 +1,37 @@
+{
+  "id": 47875,
+  "title": "Real-Time PCR protocol to screen for SARS-COV-2 variants of concern (B.1.1.7, P.1 and B.1.1.35) ",
+  "uri": "real-time-pcr-protocol-to-screen-for-sars-cov-2-va-bszbnf2n",
+  "doi": "dx.doi.org/10.17504/protocols.io.bszbnf2n",
+  "description": "{\"blocks\":[{\"key\":\"6j2gb\",\"text\":\"The recently emerged variants of concern (VOC) B.1.1.7 in UK, B.1.1.35 in South Africa and P.1 in Brazil have increased transmissibility and are rapidly spreading worldwide. These variants have several substitutions that allow them to bypass the immune responses and are up to 10 times more contagious than the previous circulating SARS-COV-2 lineages. While in some regions P.1 predominates (as several estates in Brazil), in other countries B.1.1.7 or B.1.1.35 are most prevalent.  Therefore, real-time surveillance of VOC is the key for rapid public health responses. In this matter, RT-PCR protocols that are capable of detecting VOCs easily and rapidly are needed. We developed and validated a protocol that detect simultaneously the 3 most widespread VOC. Although this protocol does not discriminate among the VOCs, it can reliably detect mixed infection. Importantly, our protocol successfully identified a co-infection by two SARS-COV-2 lineages (P.1 and B.1), confirmed through complete genome sequencing.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"3ijvc\",\"text\":\"This protocol was not set for diagnoses purpose.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"ebfft\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"1mda8\",\"text\":\"Here are the sequences of primers and probes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8095k\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e39gu\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"4uq7p\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c3n31\",\"text\":\"We recommend the 4x TaqMan Fast Virus 1-Step Master Mix (Applied Biosystems)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":17,\"length\":59}],\"entityRanges\":[{\"key\":1,\"offset\":17,\"length\":59}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"\",\"data\":{\"cellsMeta\":{\"A_1\":{\"className\":\"_dt-bold\"},\"B_1\":{\"className\":\"_dt-bold\"},\"C_1\":{\"className\":\"_dt-bold\"}},\"colTitles\":[\"\",\"\",\"\"],\"colWidths\":[100,\"155\",\"328\"],\"data\":[[\"Name\",\"Definition (primer/probe)\",\"sequence\"],[\"NSP6_Forw\",\"primer F\",\"GTGATGCGTATTATGACATGGT\"],[\"NSP6_Rev\",\"primer R\",\"GATTAGTAACACTACAGCTGATGC\"],[\"NSP6_Wild\",\"probe for non-VOC\",\"FAM-TGTCTGGTTTTAAGCTAAAAGACTGTG-BHQ\"],[\"NSP6_Delete\",\"probe that detects VOC\",\"HEX-GGATATGGTTGATACTAGTTTGAAGCT-BHQ\"]],\"guid\":\"2F8E50A07D0011EB8B11F90F2281F580\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"Name\",\"Definition (primer/probe)\",\"sequence\"],[\"NSP6_Forw\",\"primer F\",\"GTGATGCGTATTATGACATGGT\"],[\"NSP6_Rev\",\"primer R\",\"GATTAGTAACACTACAGCTGATGC\"],[\"NSP6_Wild\",\"probe for non-VOC\",\"FAM-TGTCTGGTTTTAAGCTAAAAGACTGTG-BHQ\"],[\"NSP6_Delete\",\"probe that detects VOC\",\"HEX-GGATATGGTTGATACTAGTTTGAAGCT-BHQ\"]],\"rowHeights\":[23,23,23,23,23]}},\"1\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"07BC1CA07D0111EB8B11F90F2281F580\",\"url\":\"https://www.thermofisher.com/order/catalog/product/4444434#/4444434\"}}}}",
+  "steps": [
+    "Reconstitute the oligos/probes to 100uM with TE or nuclease-free water. Vortex briefly and allow to sit for about 2 minutes.",
+    "Prepare 10uM working solutions (primers and probes). Suggestion: if the original concentration is 100uM, add 10ul of the reagents in 90ul of ultrapure nuclease-free water.",
+    "The reaction was not adjusted for multiplex use, so prepare the reactions separately. We recommend running the probes NSP6 Wild and NSP6 Delete in the same plate/experiment for better results.",
+    "Prepare your Master mix as the following (use primers and probes at 10uM) A B C 1 Reagents Volume 1 reaction (ul) x100 2 4x TaqMan Fast Virus 1-Step Master Mix 5 500 3 NSP6_Forw (300nM/reaction) 0.5 50 4 NSP6_Rev (300nM/reaction) 0.5 50 5 Probe (300nM/reaction) 0.5 50 6 RNA 8.5 - 7 Total 15 -",
+    "Add 6.5ul of the mix to each well and 8.5ul of the RNA template. Don&#39;t forget using positive and negative controls.",
+    "In case of bubbles, spin the plate before cycling.",
+    "Run the following cycling at the Real time machine: A B C 1 50°C 2 min 2 95°C 10 min 3 95°C 15 sec 40x 4 60°C 1 min Set the thermocycler for the proper FAM and HEX fluorophores.",
+    "Interpreting results: A B C 1 NSP6_Wild NSP6_Delete Result 2 CT ≤ 38 CT > 39/undetected non- VOC 3 CT > 39 /undetected CT ≤ 38 VOC (B.1.17; P.1 or B.1.1.35) 4 CT ≤ 38 CT ≤ 38 mixed infection 5 CT > 39/undetected CT > 39/undetected invalid/negative"
+  ],
+  "authors": [
+    "Camila M Romano",
+    "Jaqueline Goes de Jesus",
+    "Alvina Clara Felix",
+    "Anderson V de Paula",
+    "Pâmela Andrade",
+    "Franciane M de Oliveira",
+    "Darlan Cândido",
+    "Nuno Faria",
+    "William M  de Souza",
+    "Ester C Sabino"
+  ],
+  "creator": "Camila M Romano",
+  "published_on": 1614884036,
+  "created_on": 1614810949,
+  "keywords": []
+}

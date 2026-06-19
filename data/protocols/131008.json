@@ -1,0 +1,24 @@
+{
+  "id": 131008,
+  "title": "Protocol for performing spatial transcriptomics in engineered human skin constructs using the 10X Genomics Visium Cytassist FFPE pipeline.",
+  "uri": "protocol-for-performing-spatial-transcriptomics-in-eb68barhx",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx75n4l8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"avmd3\",\"text\":\"This protocol describes sample processing with the 10X Genomics Visium Cytassist FFPE pipeline, for the analysis of formalin-fixed paraffin-embedded (FFPE) human engineered skin constructs (HSCs) sections stained with H\\u0026E. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"43fp\",\"text\":\"Depending on the source of cells employed in HSCs, this protocol may require prior approval by the users' Institutional Review Board (IRB) or equivalent ethics committee(s).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "This protocol describes sample processing with the 10X Genomics Visium Cytassist FFPE pipeline, for the analysis of formalin-fixed paraffin-embedded (FFPE) human engineered skin constructs (HSCs) sections stained with H&amp;E.",
+    "Fix the tissue samples - HSCs - in 4% paraformaldehyde (PFA) diluted in phosphate buffered saline (PBS) for 12-16 hours at 2-4 ºC. Wash and dehydrate the samples through progressive immersion in the following solutions at room temperature under agitation: - PBS for 30 minutes (1) - PBS for 30 minutes (2) - RNAse free water for 30 minutes - 50% ethanol (molecular grade) diluted with RNAse free water for 30 minutes - 70% ethanol for at least 2 hours (or longer at 4 ºC - up to 1 month) - 85% ethanol for 30 minutes - 95% ethanol for 45 minutes (1) - 95% ethanol for 60 minutes (2) - 100% ethanol for 30 minutes (1) - 100% ethanol for 45 minutes (2) - 100% ethanol for 60 minutes (3) - 100% xylene for 30 minutes (1) - 100% xylene for 30 minutes (2) Then proceed with sequential immersion in liquid paraffin at 60 ºC: - paraffin for 30 minutes (1) - paraffin for 30 minutes (2) - paraffin for 60 minutes (3) If using different tissues than HSCs, particularly intact human/animal tissue, consider increasing the incubation time indicated above according to the density of the tissue (double the time for intact human skin biopsies). Embed the samples in paraffin block and proceed to sectioning. Section the samples at 5 µm according to the 10X Genomics handbook CG000660 for FFPE blocks (section ) and perform RNA quality analysis. Nexterion H 3-D glass slides (Schott North America Inc #NC0782819) can be used to achieve a permanent tissue immobilization, which is very helpful with collagen-rich tissues such as the skin. Warm up the Nexterion slides at room temperture for 30 minutes before using .",
+    "Deparaffinize the tissue and perform the H&amp;E staining as described in the 10X Genomics handbook (CG000658). Scan the stained tissue section at 400X magnification. We reccomend the Leica Aperio AT2 system for its high throughput performance, with the ability to scan entire tissue sections fitting the Visium HD dimension (6.5 x 6.5 mm) in less than one minute at 400X magnification. After scanning, immediatelly demount the slide bearing the section and proceed to decrosslink as described, or dry and store in the dark at 4 ºC for up to 2 weeks. If the slide will be stored, we reccomend using a vacuum sealed packaging to isolate the slide holder, and include silica gel packs inside to absorb humidity.",
+    "Follow the standard 10X Genomics Visium Cytassist FFPE pipeline according to the 10X Genomics handbooks CG000658 and CG000494."
+  ],
+  "authors": [
+    "Alberto Pappalardo"
+  ],
+  "creator": "Alberto Pappalardo",
+  "published_on": 1745313911,
+  "created_on": 1745083585,
+  "keywords": []
+}

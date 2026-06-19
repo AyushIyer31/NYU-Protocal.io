@@ -1,0 +1,31 @@
+{
+  "id": 88602,
+  "title": "Carver et al., Aged Brain Spatial Profiling  - Immunofluorescence Imaging",
+  "uri": "carver-et-al-aged-brain-spatial-profiling-immunofl-c2r2yd8e",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzx6drgx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"1gsd0\",\"text\":\"This protocol provides the preparation and staining process to perform traditional immunohistochemistry on free-floating mouse brain section used in in Carver et al., \\\"Senescent- and disease-associated microglia are modifiable features of aged brain white matter\\\". The immunostaining process involves unconjugated- or fluorophore-conjugated- primary antibodies and secondary antibodies conjugated to fluorophores. Due to old brain accumulation of lipofuscin granules that autofluoresce, we note that in order to achieve maximal signal, a quenching step is performed to extinguish the autofluorescent noise.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6d12u\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6rjks\",\"text\":\"Sections were cut at 30 μm with a Leica CM3050 S cryostat\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"u7s5\",\"text\":\"Brain slices were incubated in free-floating solutions in 12-well or 24-well plates\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9ottj\",\"text\":\"Imaging was performed with a Nikon Ti2 Eclipse inverted microscope and Orca Fusion BT sCMOS camera.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"6vn4k\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Transfer 30 μm free-floating brain section to well containing 8% donkey serum, 0.1% Triton-X, 0.1% Tween-20 in PBS. Incubate for 2 hours at 25C.",
+    "Remove blocking solution and wash sections thoroughly in cold PBS 5 times for 5 minutes each on shaker",
+    "Dilute stock 40X True Black Plus aqueous (Biotium, catalogue #23014) to 1X in PBS. Incubate sections in 1X True Black Plus for 10 min. Note: any residual detergents may interfere with quenching efficacy",
+    "Remove quenching solution and wash sections thoroughly in cold PBS 5 times for 5 minutes each on shaker",
+    "Stain sections in primary antibody diluted in solution of 8% donkey serum in PBS overnight at 4C on a shaker rotating at 50 rpm. Antibody combinations consist of: rabbit polyclonal anti-IBA1 (Fujifilm Wako, #019-19741, RRID:AB_839504) dilution: 1:500goat polyclonal anti-IBA1 (Abcam, #ab5076, RRID:AB_2224402) dilution: 1:200 rat IgG 2A monoclonal anti-galectin-3 clone eBioM3/38 (Invitrogen, #14-5301-85, RRID:AB_837133) dilution: 1:200goat polyclonal anti-GFAP (Abcam, #ab53554, RRID:AB_880202) dilution: 1:2000 rabbit polyclonal anti-apolipoprotein E clone EPR19392 (Abcam, #ab183597, RRID:AB_2832971) dilution: 1:4000",
+    "Remove antibody solution and wash sections thoroughly in cold PBS 3 times for 5 minutes each on shaker",
+    "Stain sections with donkey-host secondary antibodies conjugated to fluorophores AF488, AF594, or AF647 (Jackson Immunoresearch) for 2 hours at 25C in dark room environment. Antibodies are diluted 1:250 in PBS.",
+    "Remove antibody solution Wash sections thoroughly in cold PBS 3 times for 5 minutes each on shaker",
+    "Mount sections onto Superfrost Plus microscope slides, let dry for 10 min. in dark",
+    "Add Vectashield with DAPI( Vector Laboratories, #H-1200) to slide and cover with a 1.5 glass coverslip",
+    "Image slides with Nikon Ti2 Eclipse Inverted microscope using 10X, 20X, and 40X Plan Apo objectives Detect each fluorophore channel with 8-channel Spectra III light engine and Orca Fusion BT sCMOS camera in Nikon Elements AR software. Illuminate with laser lines of 405, 488, 594, and 647 nm with an image exposure time of 200 ms in 16-bit readout mode. Process fluorescence intensity, colocalization, and morphometry data with Fuji + ImageJ Calculate total corrected cellular fluorescence intensity for each cell from the formula: mean integrated density - (mean local background X cell area)"
+  ],
+  "authors": [
+    "Chase Carver"
+  ],
+  "creator": "Chase Carver",
+  "published_on": 1756281331,
+  "created_on": 1696015591,
+  "keywords": []
+}

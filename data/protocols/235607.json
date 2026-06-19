@@ -1,0 +1,31 @@
+{
+  "id": 235607,
+  "title": "SELECT-based quantification of site-specific m6A modification",
+  "uri": "select-based-quantification-of-site-specific-m6a-m-hibxb4app",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g77rzqgwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"en4pj\",\"text\":\"This protocol describes SELECT (single-base elongation- and ligation-based qPCR amplification) assays for site-specific quantification of m6A RNA modification using total RNA, followed by qPCR-based detection of SELECT products.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"l5ska\",\"text\":\"- Use RNase-free tubes, tips, and reagents throughout.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"rpdfk\",\"text\":\"- Prepare all primer working solutions in nuclease-free water.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ondeq\",\"text\":\"- Thaw enzymes on ice and keep on ice until use.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bw6bw\",\"text\":\"- All centrifugation steps are performed briefly to collect liquid unless otherwise specified.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"gccp3\",\"text\":\"- 40 nM Up primer**\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":17}],\"entityRanges\":[],\"data\":{}},{\"key\":\"dh7s2\",\"text\":\"- 40 nM Down primer**\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":19}],\"entityRanges\":[],\"data\":{}},{\"key\":\"d6zpe\",\"text\":\"- 5 μM dNTPs (NEB, N0447S)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"piq6k\",\"text\":\"- 1x CutSmart buffer (NEB, B7204S)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":18}],\"entityRanges\":[],\"data\":{}},{\"key\":\"lefdh\",\"text\":\"- 0.01 U Bst 2.0 DNA polymerase (NEB, M0537S)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":29}],\"entityRanges\":[],\"data\":{}},{\"key\":\"jub91\",\"text\":\"- 0.5 U SplintR ligase (NEB, M0375S)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":20}],\"entityRanges\":[],\"data\":{}},{\"key\":\"8hocy\",\"text\":\"- 10 nmol ATP (NEB, P0756S)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":11}],\"entityRanges\":[],\"data\":{}},{\"key\":\"m8bqd\",\"text\":\"- SYBR Green Master Mix (Applied Biosystems, A25742)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":21}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare the annealing reaction for each sample by mixing: 500 ng total RNA 40 nM Up primer 40 nM Down primer 5 μM dNTPs (NEB, N0447S) 1x CutSmart buffer (NEB, B7204S) Adjust volume to 17 μL with nuclease-free water.",
+    "Perform primer annealing using the following temperature program: 90°C for 1 min 80°C for 1 min 70°C for 1 min 60°C for 1 min 50°C for 1 min 40°C for 6 min",
+    "Prepare anenzyme mixture containing: 0.01 U Bst 2.0 DNA polymerase (NEB, M0537S) 0.5 U SplintR ligase (NEB, M0375S) 10 nmol ATP (NEB, P0756S)",
+    "Add 3 μL enzyme mixture to each annealed reaction to reach a final volume of 20 μL.",
+    "Incubate reactions using the following program: 40°C for 20 min 80°C for 20 min Hold at 4°C",
+    "Dilute SELECT reaction products five-fold with nuclease-free water.",
+    "Use 2 μL diluted product as template for qPCR amplification using: SELECT common primers SYBR Green Master Mix (Applied Biosystems, A25742)",
+    "Perform qPCR according to the manufacturer’s instructions.",
+    "The abundance of SELECT qPCR products reflects the relative methylation level at the interrogated adenosine site.",
+    "All SELECT assays are performed with at least three independent biological replicates."
+  ],
+  "authors": [
+    "Xin Xu",
+    "Yujuan Wang"
+  ],
+  "creator": "Xin Xu",
+  "published_on": 1766723067,
+  "created_on": 1766365355,
+  "keywords": []
+}

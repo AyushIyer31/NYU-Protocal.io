@@ -1,0 +1,24 @@
+{
+  "id": 64141,
+  "title": "BTI mobile plant phenotyping system: PhenoRig and PhenoCage construction",
+  "uri": "bti-mobile-plant-phenotyping-system-phenorig-and-p-cavmse46",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4b1wrvo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"4ip1q\",\"text\":\"Phenotyping Infrastructures are the basis to enable productive data collection and management.  Here - we describe how we constructed the PhenoRig and PhenoCage, the two cost-effective systems which can be constructed with lightweight materials to realize the high-throughput image collection to phenotype plant growth in a growth chamber or a greenhouse workspace.    \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":138,\"length\":22}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "This protocol is a part of BTI mobile plant phenotyping system ( https://github.com/Leon-Yu0320/BTI-Plant-phenotyping ). In this part, we&#39;ll introduce constructing a set of lightweight phenotyping facilities paired with the phenotying computational pipelines we developed.",
+    "Construction of phenoRig and phenoCage To increase the mobility of phenotyping facilities, lightweight materials such as wood bars and aluminum bars will be recommended. Also, facilities can be disassembled into smaller pieces for storage when anchoring pieces with hexagon socket screws or other types of screws . See two examples below for details: Figure 1 Illustrative demonstration of phenotyping hardware A: The phenoRig for top-view images. The facility was made of wood bars with several pieces anchored by screws. In addition, a plant growth tray is recommended to be fixed at the bottom of the facility to prevent the movement of plants during the experiment. B: The phenoCage for side-view images. The system was made of wood bars with several pieces anchored by screws and glues. Four additional LED light bars are recommended to be placed at the four corners to reduce shadows on plant images.",
+    "Raspberry Pi computers will be anchored to both two facilities. We built the device based on the relative size of Arabidopsis plants and cowpea plants and the sizes of each component used for construction were listed in the following tables. Installations of Raspberry Pi cameras and computers are shown as photos below. Details about construction materials, size, and reference cost can be reached in Table 1 and Table 2 . Figure 2 Example demonstration of phenotyping hardware A: One example of phenoRig with five major components to be constructed B: The illustration of installation of raspberry Pi computer and two cameras on phenoRig C: One example of phenoCage with seven major components to be constructed D: The installation of LED light panels on top of phenoRig hardware E: The configuration of 3-D printed accessories, raspberry Pi computer, LCD screens, and raspberryPi camera on the sidebar of phenoCage"
+  ],
+  "authors": [
+    "Li'ang Yu",
+    "Magdalena M Julkowska"
+  ],
+  "creator": "Li'ang Yu",
+  "published_on": 1675668927,
+  "created_on": 1654612696,
+  "keywords": []
+}

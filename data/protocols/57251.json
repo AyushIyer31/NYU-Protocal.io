@@ -1,0 +1,33 @@
+{
+  "id": 57251,
+  "title": "diDO-IPTL protocol",
+  "uri": "dido-iptl-protocol-b36bqran",
+  "doi": "dx.doi.org/10.17504/protocols.io.b36bqran",
+  "description": "{\"blocks\":[{\"key\":\"ej6pj\",\"text\":\"Isobaric peptide termini labeling (IPTL) is a quantification method which permits relative quantification using quantification points distributed throughout the whole tandem mass spectrometry (MS/MS) spectrum. It is based on the complementary derivatization of peptide termini with different isotopes resulting in isobaric peptides.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9au6t\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"33juh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"d1ldn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Prepare dried MS-grade trypsin, 2ug per sample to be labeled. Note that separate aliquots of dried trypsin must be used for 16 O- and 18 O-labeling.",
+    "Prepare two separate N-methylmorpholine (NMM) and acetic acid O-isotope exchange buffers with 16 O and 18 O (&gt;98%) enriched water. Volume ratio of buffer components is 48.5 H 2 O : 1 NMM : 0.5 acetic acid (pH 7.4). The total volume of buffer to prepare depends on how many peptide samples are to be labeled. The protocol below is for 40µL of O-isotope exchange buffer per sample (~10-20 µg of peptide). For samples with small amounts of peptide, the concentration can be raised by adding only 20µL buffer per sample and halving the volumes of all subsequent reagent additions.",
+    "Redissolve dried trypsin aliquots in their respective O-isotope exchange buffers and transfer 40µl to each tube of dried peptide sample. KEEP TRACK of which tubes received which buffer.",
+    "Parafilm the tops of the tubes and incubate at 37ºC overnight.",
+    "After overnight incubation, add 2µl of 11.3M monochloroacetic acid (prepared in LC-MS grade water) to each peptide tube to lower pH down to 2.6.",
+    "Prepare 16% CH 2 O and CD 2 O formaldehyde solutions, at least 2µl per sample, diluting stocks with LC-MS grade water if necessary.",
+    "Prepare 4.8M NaBH 3 CN in LC-MS water. Tare 1.5mL tube, add a small amount of NaBH 3 CN powder in fume hood, weigh, dissolve.",
+    "Add 2µL of CH 2 O to each 18 O tube and 2µL of CD 2 O to each 16 O tube.",
+    "Add 2µL 4.8M NaBH 3 CN to each tube.",
+    "Mix well and incubate at 45ºC for 1 hr. While waiting, prepare 5M ammonium formate in LC-MS water.",
+    "Add 2µL 5M ammonium formate to each tube and mix well.",
+    "Add 8µL of formic acid to each tube and mix well. Total sample volume is ~56µl. 16 O- and 18 O-labeled samples are ready to be mixed and analyzed by LC-MS."
+  ],
+  "authors": [
+    "Jacob Waldbauer",
+    "Lichun Zhang"
+  ],
+  "creator": "Jacob Waldbauer",
+  "published_on": 1642793866,
+  "created_on": 1642793620,
+  "keywords": []
+}

@@ -1,0 +1,41 @@
+{
+  "id": 93944,
+  "title": "Scientific Protocol for Immunofluorescence Analysis: Dystrophin",
+  "uri": "scientific-protocol-for-immunofluorescence-analysi-c7yyzpxw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg3xo5qg25/v1",
+  "description": "{\"blocks\":[{\"key\":\"6jgk1\",\"text\":\"Paper abstract: CRISPR-Cas9 gene-editing technology has revolutionised the creation of precise and permanent modifications to DNA, enabling the generation of diverse animal models for investigating potential treatments. Here, we provide a protocol for the use of CRISPR-Cas9 to create murine models of Duchenne Muscular Dystrophy (DMD) along with a step-by-step guide for their phenotypic and molecular characterisation. The experimental procedures include CRISPR microinjection of embryos, molecular testing at the DNA, RNA, and protein levels, forelimb grip strength testing, immunostaining and serum creatine kinase (CK) testing. We further provide suggestions for analysis and interpretation of the generated data, as well as the limitations of our approach. These protocols are designed for researchers who intend on generating and using mouse models to study DMD as well as those seeking a detailed framework of phenotyping to contribute to the broader landscape of genetic disorder investigations.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":16}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4l577\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eel7s\",\"text\":\"Protocol summary: Here we detect dystrophin on the muscle membrane of heart and skeletal muscle tissues. These include sections from the heart, tibialis anterior (TA), triceps and quadriceps. Antibodies used for immunofluorescence can be found in the linked publication, in Supplementary Table S3.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":17}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"cvqu6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1utr1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"de255\",\"text\":\"Wear proper PPE (gloves, safety goggles, enclosed shoes and lab coat) and prepare solvents in a chemical fume hood. Dispose used solvents or waste material in an appropriate biohazard waste containers.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"82jo4\",\"text\":\"•\\tSuperfrostTM slides (ThermoFisher)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dlmti\",\"text\":\"•\\tCryostat machine\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"arnbc\",\"text\":\"•\\tPPE (Personal Protective Equipment)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4m61\",\"text\":\"•\\tTriton X-100 (X100, Sigma-Aldrich)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7vnor\",\"text\":\"•\\tPhosphate-buffered saline 1x (PBS)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aoqa\",\"text\":\"•\\tKimwipe Tissues\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"m0re\",\"text\":\"•\\tEppendorf 1.5 or 2 ml tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"12er3\",\"text\":\"•\\tBox (or Esky) and ice\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"acvsi\",\"text\":\"•\\tReadyProbes‱ Hydrophobic Barrier Pap Pen (Abcam)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":13,\"length\":1}],\"data\":{}},{\"key\":\"6p32d\",\"text\":\"•\\tCoverslip\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2ht6p\",\"text\":\"•\\tProLong‱ Gold Antifade Mountant with DNA Stain DAPI (ThermoFisher)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":9,\"length\":1}],\"data\":{}},{\"key\":\"ft2au\",\"text\":\"•\\tReadyProbes‱ Mouse-on-Mouse IgG Blocking Solution (ThermoFisher)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":13,\"length\":1}],\"data\":{}},{\"key\":\"e8tlk\",\"text\":\"•\\tFetal Bovine Serum (Gibco)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"8B25DF80B9AE11EEB4F20A58A9FEAC02\",\"name\":\":tm:\"}},\"1\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"8B25DF80B9AE11EEB4F20A58A9FEAC02\",\"name\":\":tm:\"}},\"2\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"8B25DF80B9AE11EEB4F20A58A9FEAC02\",\"name\":\":tm:\"}}}}",
+  "steps": [
+    "For tissue isolation and freezing of muscle tissues using liquid nitrogen samples snap frozen on gum tragacanth-mounted corkpads, see the previous protocol titled ‘Postmortem Tissue Processing’. The frozen tissues should be stored in the -80°C until ready for sectioning.",
+    "Allow the slides to air dry for 5 minutes to eliminate any residual moisture.",
+    "Ensure the absence of moisture before initiating immunostaining procedures.",
+    "Cover the tissue sections with 4% paraformaldehyde (PFA) or ice-cold methanol and incubate for 15 minutes.",
+    "Aspirate the PFA mixture and wash the tissue sections gently with phosphate-buffered saline (PBS).",
+    "Create a hydrophobic barrier around the tissue sections using a PAP pen.",
+    "Incubate the slides in a permeabilization buffer (0.3% PBS-Triton X-100) for 10 minutes inside a humidified chamber.",
+    "Cover the slides with a blocking solution (0.3% PBS-Tween + 10% fetal bovine serum, FBS) and incubate for at least 1 hour at room temperature.",
+    "Cover the slides with 1x Thermo ReadyProbe MOM solution and incubate for 1 hour at room temperature (use 1 drop in 1.25 mL PBS).",
+    "Wash the slides three times with PBS for 5 minutes each.",
+    "Dilute primary antibodies in blocking solution (e.g., Mandys8 at 1:100). Incubate the slides overnight at 4°C.",
+    "Wash the slides three times with PBS for 5 minutes each.",
+    "Wash the slides three times with PBS for 5 minutes each.",
+    "Mount a coverslip on the slides using a mounting medium such as ProLong™ Gold Antifade Mountant with DNA Stain DAPI",
+    "Allow the slides to air dry in the dark for 1–2 hours.",
+    "Store the slides at either 4°C or -20°C and visualize within 2 weeks.",
+    "Cover the slides with secondary antibodies diluted in blocking buffer (e.g., 1:300 Anti-Mouse 594) for 1 hour at room temperature in the dark. Keep slides in the dark for the remainder of the protocol."
+  ],
+  "authors": [
+    "Jayshen Arudkumar",
+    "Yu C.J. Chey",
+    "Sandra Piltz",
+    "Paul Quinton Thomas",
+    "Fatwa Adikusuma"
+  ],
+  "creator": "Jayshen Arudkumar",
+  "published_on": 1734016593,
+  "created_on": 1705985487,
+  "keywords": []
+}

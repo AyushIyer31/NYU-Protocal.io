@@ -1,0 +1,33 @@
+{
+  "id": 94142,
+  "title": "Immunophenotyping  of the peripheral blood immune cells by flow cytometry",
+  "uri": "immunophenotyping-of-the-peripheral-blood-immune-c-c766zrhe",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgq3zoylk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"d7pf5\",\"text\":\"Protocol for immunophenotyping peripheral blood immune cells \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Deeply anesthetize the animal. Check for no reflexes and slower breathing",
+    "Cut the animal&#39;s thorax and collect peripheral blood from the left ventricle",
+    "Lyse the whole blood with the RBC (1X) solution for 10 minutes at 37°C.",
+    "Upon lysis, wash cells and resuspend in cold PBS for immunophenotyping",
+    "Stain cells surface with FITC-conjugated anti-CD4(1:100, Biolegend), anti-agranulocytes (1:100, Miltenyi biotec), PerCP5.5-conjugated anti-CD8 (1:100, Biolegend) or anti-CD45 (1:100, Biolegend), APC-conjugated anti-CD25 (1:80, Biolegend), PE-conjugated anti-CD45RA (1:100, Biolegend), APC-conjugated anti- CD161 (1:100, Biolegend), PE-Vio770 conjugated anti-CD3 (1:100, REAffinity Miltenyi biotec) and APC-Vio770-conjugated anti-CD11b/c (1:100, REAffinity Miltenyi biotec.) for 15 minutes at 4°C in the dark",
+    "Wash 5 minutes in cold PBS",
+    "Incubate with a fixing solution (1:3) for 15 minutes at room temperature in the dark",
+    "Wash 5 minutes in cold PBS",
+    "Permeabilize cells with Cytofix/Cytoperm (1:10, Biolegend) and then stain them intracellularly with PE-CF594-conjugated anti-FoxP3 (1:50, BD Biosciences) in Cytoperm at room temperature for 30 min",
+    "Acquire cells with an appropriate flow cytometer",
+    "Gate cells on CD45 to identify total leucocytes. Inside this gate, identify granulocytes with their specific marker, monocytes, and myeloid cells as CD11b/c+, T-lymphocytes as CD3+, B-lymphocytes as CD45RA+, and NK cells as CD161+ cells.",
+    "For each analysis, acquire at least 0.5x10^6 live by gating on aqua Live/Dead negative cells and then analyze using Flowjo software (Tree Star)"
+  ],
+  "authors": [
+    "Mariangela Massaro Cenere",
+    "Valerio Chiurchiù"
+  ],
+  "creator": "n.berretta",
+  "published_on": 1706631770,
+  "created_on": 1706188123,
+  "keywords": []
+}

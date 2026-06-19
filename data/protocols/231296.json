@@ -1,0 +1,29 @@
+{
+  "id": 231296,
+  "title": "DS_Type: A framework to detect phenotype-specific co-expression shifts in small-n RNA-seq",
+  "uri": "ds-type-a-framework-to-detect-phenotype-specific-c-hd48b28zx",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6zemdgqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"8rlli\",\"text\":\"This protocol provides an executable workflow to detect phenotype-specific changes in gene–gene co-expression from small-N RNA-seq designs. The procedure reconstructs per-condition correlations, estimates empirical P-values by permutation, and classifies gene pairs into DS1 (gain), DS2 (loss), or DS3 (changed magnitude) relative to paired before/after states (e.g., DMSO → GL24) for each cell line.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":215,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"e2sec\",\"text\":\"Operating system: Linux/macOS/Windows with Rscript available.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"86nit\",\"text\":\"R (≥ 4.2) with packages: data.table, stringr (install commands below).\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6q7dd\",\"text\":\"Source code and toy example: GitHub release/DS_type (https://github.com/telunmai/DS_type)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":53,\"length\":35}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"D6DC2858B6F511F0AD4D0A58A9FEAC02\",\"url\":\"https://github.com/telunmai/DS_type\"}}}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Install R packages install.packages(data.table) install.packages(stringr)",
+    "Load R packages library(data.table) library(stringr)",
+    "Run Step 1 (default settings) Script 1 builds per-group correlation statistics and permutation empirical P -values. Rscript Step1.Correlation_for_DS.R Input file: TPM_matrix_sample.txt (genes × samples, with one gene ID column .) Output file: DS_pairwise_cor_stats.tsv (Build per-group stats (V_, Cor_, P_, empP_)) Notes. A gene pair is evaluable within a group if ≥ 3 valid paired observations. The script sets an internal random seed per permutation replicate to support reproducibility. The number of permutations (B_perm) controls stability of empirical P ; increase for larger datasets.",
+    "Run Step 2 (default settings) Script 2 calls S/NS/NA per condition, derives per-line transitions, and classifies DS1/DS2/DS3 . Rscript Step2.Identify_DS_types.R Input file: DS_pairwise_cor_stats.tsv Output file: DS_types.tsv (Classify DS1/DS2/DS3 from the stats table) Notes. Significant (S): P &lt; 0.005 and emp P &lt; 0.005. Non-significant (NS): P &gt; 0.05 (irrespective of emp P ) NA: any other case",
+    "Results: DS classification For each line’s before → after switch: DS1 (gain): all evaluable “effective” lines switch from NS/NA → S; reference lines remain unchanged (if required). DS2 (loss): all evaluable “effective” lines switch from S → NS/NA; reference lines unchanged (if required). DS3 (changed magnitude): evaluable “effective” lines remain S→S, and the absolute change in correlation magnitude satisfies (default delta_r_thresh is 0.10): Δr= |​∣r after ​∣−∣r before ​∣​| ≥ delta_r_thresh"
+  ],
+  "authors": [
+    "Jung-Chen Su",
+    "Chen-Ling Lee",
+    "Fan-Wei Yang",
+    "Yan-Chih Chen",
+    "Te-Lun Mai*"
+  ],
+  "creator": "MAI Lab",
+  "published_on": 1762165942,
+  "created_on": 1761979836,
+  "keywords": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 88552,
+  "title": "Colony PCR",
+  "uri": "colony-pcr-c2qgydtw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl8pex8g2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"en4pb\",\"text\":\"2023 NUS-Singapore iGEM team followed this protocol to perform preliminary screening of plasmid-containing colonies without the need for overnight cell culture. This screening aimed to confirm the correct assembly of DNA fragments during Gibson Assembly or the presence of target DNA fragments in the plasmid. After obtaining the results of the colony PCR, the team could then decide whether specific colonies required overnight culturing. This would allow them to perform plasmid extraction the next day, obtain the fully assembled plasmid, and send it out for sequencing to confirm the final structure.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"4nsn3\",\"text\":\"Proper lab PPE must be worn at all times.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4tdka\",\"text\":\"Since cells are used in this protocol, a Biosafety Cabinet (BSC) is required to ensure safety.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"6q57m\",\"text\":\"KOD OneTM PCR Master Mix (Blue)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Circle the colony of interest.",
+    "Run a PCR with the setting below: Temperature Duration 1 98°C 10s 2 55°C 5s 3 68°C 1 minute 4 Go to step 1, repeat the cycle 25 times",
+    "After the PCR is complete, proceed to run gel electrophoresis for the samples.",
+    "Prepare the mixture below in a PCR tube, the final volume is 50 µL : Item Volume 1 KOD OneTM PCR Master Mix (Blue) 25uL 2 Forward Primer 1.5uL 3 Reverse Primer 1.5uL 4 DI Water 22uL",
+    "Mix the solution well by vortexing the tubes and then split the solution equally into 5 new PCR tubes (each PCR tube would contain 10 µL of the solution).",
+    "Use an inoculation loop to inoculate some cells from the colony of interest and dunk the inoculation loop into the PCR tube according to the labels.",
+    "After gel electrophoresis is finished, put the agarose gel onto a UV Sample Tray, next, put it into the Gel Doc EZ System, and then run the gel imaging program on the desktop.",
+    "Save the gel image and discard the gel into the biohazard bin.",
+    "Check if the expected band occurs."
+  ],
+  "authors": [
+    "NUS iGEM"
+  ],
+  "creator": "NUS iGEM",
+  "published_on": 1696844356,
+  "created_on": 1695922551,
+  "keywords": []
+}

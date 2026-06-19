@@ -1,0 +1,31 @@
+{
+  "id": 57845,
+  "title": "RNA purification and cDNA synthesis ",
+  "uri": "rna-purification-and-cdna-synthesis-b4qvqvw6",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewov1nnzogr2/v1",
+  "description": "{\"blocks\":[{\"key\":\"akd3b\",\"text\":\"This protocol compiles multiple methods for purifying RNA from an S. rosetta lysate and provides a modified reverse transcriptase protocol to robustly synthesize cDNA from transcripts with higher GC content.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":66,\"length\":10}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Grow enough culture for ~50x10 7 cells. for swimming cultures: seed 40 mL acclimated cells at ~ 8*10^4 cells/ml then culture at 27 °C for 24:00:00 for thecate cultures: seed 100 mL acclimated cells in culture plate then culture at 27 °C for 24:00:00 Number of cells doesn&#39;t necessarily matter. You just want enough cells to extract sufficient nucleic acid from taking in account the loss of yield in subsequent steps.",
+    "Follow preferential lysis protocol",
+    "You can extract total RNA (go to step 3.1) or mRNA (go to step 3.2)",
+    "Trizol LS total RNA extraction Add 3:1 Trizol LS to lysate and incubate for 00:05:00 Add 200 µL chloroform to 750 µL of added Trizol LS and incubate for 00:03:00 Centrifuged sample at 12000 x g, 4 °C, 15 minutes Collect aqueous layer RNA precipitation Add 500 µL cold isopropanol per 750 µL of added Trizol LS to collected aqueous layer and incubate on ice for 00:10:00 Centrifuge sample at 12000 x g, 4 °C, 30 minutes Washed pellet with cold 75% ethanol Centrifuge sample at 7500 x g, 4 °C, 5 minutes Resuspend with 1 millimolar (mM), citrate , pH 6.4 . Measure RNA concentration or RNeasy Cleanup we use the RNeasy MinElute Cleanup Kit 1. Adjust the sample to a volume of\u0001 100 µL 2. Add\u0001 250 µL 96–100% ethanol to the diluted RNA, and mix 3. Transfer the sample ( 700 µL ) to an RNeasy MinElute spin column placed in a 2 ml collection tube. Centrifuge for 8000 x g, Room temperature, 15 seconds . Discard the flow-through. 4. Place the RNeasy MinElute spin column in a new 2 ml collection tube. Add 500 µL Buffer RPE to the spin column. Close the lid gently, and centrifuge for 8000 x g, Room temperature, 15 seconds 5. Add 500 µL of 80% ethanol to the RNeasy MinElute spin column. Close the lid gently, and centrifuge for 8000 x g, Room temperature, 2 minutes 6. Place the RNeasy MinElute spin column in a new 2 ml collection tube. Open the lid of the spin column, and centrifuge at full speed for 00:05:00 . 7. Place the RNeasy MinElute spin column in a new 1.5 ml collection tube. Add 14 µL RNase-free water directly to the center of the spin column membrane. Close the lid gently, and centrifuge for 1 min at full speed to elute the RNA 8. For long-term storage, supplement the RNA with 1 millimolar (mM), sodium citrate , pH 6.4",
+    "mRNA extraction We use the NEB Magnetic mRNA Isolation Kit Equilibrate 100 µL beads with 200 µL binding buffer Add lysate and mix for 00:10:00 Pull down beads with magnet and remove supernatant Add 500 µL Wash Buffer 1 and mix for 00:01:00 Pull down beads with magnet and remove supernatant Repeat step 4-5 Add 500 µL Wash Buffer 2 and mix for 00:01:00 Pull down beads with magnet and remove supernatant Repeat step 7-8 Add 500 µL Low Salt Buffer and mix for 00:01:00 Pull down beads with magnet and remove supernatant Add 20 µL elution buffer (can vary elution volume for desired concentration; can vary elution buffer, we have used Nano-pure water or nylon filtered 10 mM Tris-acetate pH 8.0) Measure mRNA concentration For long-term storage, supplement the RNA with 1 millimolar (mM), sodium citrate , pH 6.4",
+    "We use Invitrogen SuperScript™ IV Reverse Transcriptase kit",
+    "Anneal oligo d(T) 20 primer to RNA sample Assemble the reaction according to this table: A B 1 Component Volume 2 50 µM oligo d(T)20 primer or 2 µM gene-specific reverse primer 1 µl 3 10 mM dNTP mix 1 µl 4 RNA sample (10pg-5µg total RNA or 10pg-500 ng mRNA) up to 11 µl 5 DEPC-treated water or nuclease-free water to 13 µl 2. Mix and incubate reaction at 65 °C for 00:05:00 3. Place on ice for 00:01:00",
+    "Reverse transcription to make cDNA Vortex 5x SSIV Buffer To the annealed RNA templates from go to step #4.1 , add the following components: A B 1 Component Volume 2 5x SSIV Buffer 4 µl 3 100 mM DTT 1 µl 4 RNaseOUT™ Recombinant RNase Inhibitor 1 µl 5 SuperScript IV Reverse Transcriptase (200 U/μL) 1 µl 4. Incubate reaction at 60 °C for 10 minutes (IMPORTANT: reaction temperature is increased from kit instructions to account for higher GC content in some transcripts) 5. Inactivate reaction by incubation at 80 °C or 00:10:00 6. Remove RNA with incubation with 1 µL of RNase H at 37 °C for 00:20:00",
+    "Clone gene of interest with cDNA Use generated cDNA in PCR reaction with gene specific primers. To verify that the RNA purfication and cDNA synthesis was successful, amplify a highly expressed transcript, such as cofillin (PTSG_01554)."
+  ],
+  "authors": [
+    "Vicki Deng",
+    "Fredrick leon",
+    "David Booth"
+  ],
+  "creator": "Vicki Deng",
+  "published_on": 1725369263,
+  "created_on": 1644016940,
+  "keywords": []
+}

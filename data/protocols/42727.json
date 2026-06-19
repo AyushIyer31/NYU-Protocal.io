@@ -1,0 +1,33 @@
+{
+  "id": 42727,
+  "title": "FR-Match: cell type matching for scRNAseq data",
+  "uri": "fr-match-cell-type-matching-for-scrnaseq-data-bmyfk7tn",
+  "doi": "dx.doi.org/10.17504/protocols.io.bmyfk7tn",
+  "description": "{\"blocks\":[{\"key\":\"488uc\",\"text\":\"FR-Match is a supervised cell phenotype matching strategy for cluster-to-cluster cell transcriptome integration across scRNAseq experiments.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8d48f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"1v3mg\",\"text\":\"An R package and Shiny application are provided at https://github.com/JCVenterInstitute/FRmatch.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":51,\"length\":44}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"E72695B2046F11EBB7D70A58A9FEAC2A\",\"url\":\"https://github.com/JCVenterInstitute/FRmatch\"}}}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"9g2vi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"eqsg6\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":[]},{\"key\":\"421i7\",\"text\":\"Require R Shiny package.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"software\",\"mutability\":\"\",\"data\":{\"id\":668,\"guid\":\"49F7F2CD341F11EE9D4302C0B41BC903\",\"name\":\"R programming language\",\"version\":\"3.3.3 of later\",\"os_name\":\"\",\"os_version\":\"\",\"developer\":\"The R Foundation\",\"repository\":\"Comprehensive R Archive Network\",\"link\":\"https://cran.r-project.org/\",\"is_public\":true,\"can_edit\":false}}}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Use the built-in data preparation function to create data objects with required and optional input data elements. Create data objects for experiment 1 (E1) and experiment 2 (E2) dat_E1",
+    "View comparative cell cluster sizes. plot_clusterSize(dat_E1, dat_E2)",
+    "View &#34;barcode&#34; plot for cluster of interest. plot_cluster_by_markers(dat_E1, cluster.name = \"cluster_of_interest\")",
+    "Use wrapper function to perform bi-directional matching.",
+    "Map E1 to E2. rst12",
+    "Map E2 to E1. rst21",
+    "Combine the bi-directional matching results and plot. plot_bi_FRmatch(rst12, rst21)",
+    "Some optional plotting functions to help studying the matching results.",
+    "Plot one-directional matching results. plot_FRmatch(rst12) Plot one-directional matching p-values. plot_FRmatch(rst12, type = \"padj\")",
+    "Minimum spanning tree (MST) plot. MST can be plotted by turning on the plot option in the test function. FR.test(samp1, samp2, plot.MST = TRUE)",
+    "Interactively explore and match scRNAseq cell type clusters with the seamless Shiny app. The Shiny app may serve as a quick start demo with pre-loaded datasets. runShiny()"
+  ],
+  "authors": [
+    "Yun Renee Zhang",
+    "Brian Aevermann",
+    "Richard Scheuermann"
+  ],
+  "creator": "Yun Renee Zhang",
+  "published_on": 1601624448,
+  "created_on": 1601613883,
+  "keywords": []
+}

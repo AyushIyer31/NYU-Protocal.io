@@ -1,0 +1,30 @@
+{
+  "id": 223860,
+  "title": "Dynamic Light Scattering (DLS) Analysis of ATG9A Vesicles",
+  "uri": "dynamic-light-scattering-dls-analysis-of-atg9a-ves-g6uubzewx",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvmbnm5g3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"34atf\",\"text\":\"This protocol details the dynamic light scattering analysis of ATG9A vesicles.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"7hfq6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"41oj2\",\"text\":\" Instrument: DynaPro NanoStar (Wyatt Technology)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":10},{\"style\":\"bold\",\"offset\":13,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"d4fhp\",\"text\":\" Cuvette: Quartz cuvette (compatible with DynaPro NanoStar)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4f41m\",\"text\":\" Software: Dynamics 7.6.1.9 (Wyatt Technology)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"25f82\",\"text\":\" Buffer:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":6}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3f4tp\",\"text\":\"o   HEPES,  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":2,\"length\":1},{\"key\":1,\"offset\":11,\"length\":1}],\"data\":{}},{\"key\":\"ftk14\",\"text\":\"o   NaCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":2,\"length\":1}],\"data\":{}},{\"key\":\"d9ksl\",\"text\":\"o   TCEP\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":3,\"offset\":2,\"length\":1}],\"data\":{}},{\"key\":\"c1nru\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"concentration\",\"mutability\":\"MUTABLE\",\"data\":{\"concentration\":\"20\",\"error_concentration\":false,\"guid\":\"\",\"id\":0,\"label\":\"\",\"scientificNotation\":false,\"unit\":28}},\"1\":{\"type\":\"ph\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"\",\"id\":0,\"number\":\"7.4\"}},\"2\":{\"type\":\"concentration\",\"mutability\":\"MUTABLE\",\"data\":{\"concentration\":\"150\",\"error_concentration\":false,\"guid\":\"\",\"id\":0,\"label\":\"\",\"scientificNotation\":false,\"unit\":28}},\"3\":{\"type\":\"concentration\",\"mutability\":\"MUTABLE\",\"data\":{\"concentration\":\"1\",\"error_concentration\":false,\"guid\":\"\",\"id\":0,\"label\":\"\",\"scientificNotation\":false,\"unit\":28}}}}",
+  "steps": [
+    "Analyze the following conditions:",
+    "Buffer only (negative control).",
+    "MOCK vesicles (isolated from HAP1 wild-type cells not expressing tagged ATG9A).",
+    "ATG9A-containing vesicles (purified preparation).",
+    "Power on the DynaPro NanoStar and allow to equilibrate.",
+    "Load around 50 µL of sample into the quartz cuvette.",
+    "Perform measurements at 25 °C .",
+    "For each sample, acquire 10 consecutive measurements, each consisting of a 5-second acquisition.",
+    "Analyze light scattering data using Dynamics 7.6.1.9 software (Wyatt Technology).",
+    "Use the globular protein model to interpret particle size distributions."
+  ],
+  "authors": [
+    "Elisabeth Holzer"
+  ],
+  "creator": "Elisabeth Holzer",
+  "published_on": 1781620988,
+  "created_on": 1753956225,
+  "keywords": []
+}

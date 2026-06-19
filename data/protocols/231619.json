@@ -1,0 +1,42 @@
+{
+  "id": 231619,
+  "title": "4i (iterative indirect immunofluorescence imaging) PROTOCOL For FFPE slides - Benchmarking project Sennet",
+  "uri": "4i-iterative-indirect-immunofluorescence-imaging-p-hefbb3bip",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l21r8jg1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"qnlp0\",\"text\":\"We present a protocol to generate highly multiplexed spatial data at cellular and subcellular resolutions using iterative indirect immunofluorescence imaging (4i). We describe streamlined steps for using 4i across formalin-fixed paraffin-embedded (FFPE) tissue sections. We detail a procedure for cycling antibody staining and antibody elution. This protocol is adapted from Dr. Hemali Phatnani laboratory that was designed for Frozen section, we adapted and optimized it for FFPE sections by Dr. Ana Catarina Franco and Anthony Lagnado.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"w2aqd\",\"text\":\"For lung: bake tissue for 1h at 56 C (if not already done) to allow better attachment to the slide\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"haqn9\",\"text\":\"Aliquot in fume hood. Weigh chemicals in fume hood.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"ktw60\",\"text\":\"1x PBS, 30% (wt/vol) H2O2, 1M NaOH, Bovine serum albumin (BSA), Alexa Fluor IgG (H + L), DAPI, n-acetylcysteine, 6N HCl, glycine, urea, guanidine HCl, TCEP.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Deparaffinize and hydrate tissue sections through Histoclear 2×5 min (in fume hood), 100% ethanol 2×5 min, 90% ethanol 5 min, 70% ethanol 5 min, distilled water 2×5 min.",
+    "Microwave in 0.01M citrate buffer pH6 at 800 frequency (90% power) for 3 ½ min followed by 450 frequency (50% power) for 10 min (make sure buffer did reach boiling temperature). Citrate buffer 1× working solution 35 mL of citrate buffer 10× 315 mL of distilled water Total volume of 350 mL",
+    "Let slides to cool down in the citrate buffer 20-30 minutes at room temperature (or to cool it faster place on ice until buffer is cold).",
+    "Wash sections in distilled water 2×5 min.",
+    "Wash sections for 5 min PBS on shaker.",
+    "Surround sections with hydrophobic pen and add 4i blocking buffer to flow cell. Incubate for 1 hr RT (first cycle 1h, next cycles 20 min). 4i blocking buffer (5mL) – redo every few days to avoid crystals 1× PBS (3700uL 1× PBS) 1% Bovine serum albumin (BSA) (1mL 5% BSA) 150mM maleimide (300uL 2.5M stock solution) 2.5M maleimide stock solution Dissolve 10g maleimide in 20mL DMSO. Bring to 41mL total volume with DMSO. Make 1mL aliquots and store at -20C.",
+    "Wash sections for 2×5 min PBS on shaker.",
+    "Prepare the Bleaching solution in a 50mL centrifuge tube by combining: 25mL of 1× PBS 4.5mL of 30% (wt/vol) H2O2 (Sigma-Aldrich #216763) 0.8mL of 1M NaOH. Final working solution: 4.5% (w/v) H2O2 and 20mM NaOH in PBS. Adjust volumes of reagents as needed for your experiment. Submerge the slides in the Bleaching solution using the lid of a 6-well plate. Sandwich the 6-well plate between the two LED lamps for 45 minutes at room temperature (1 round only for lung.). NOTE: didn’t work for the skin, for this step was skipped for skin, adapt to your tissue accordingly.",
+    "Wash the tissues four times in 1× PBS for 3-5 minutes per wash.",
+    "Add primary antibody cocktail diluted in conventional blocking buffer to flow cell overnight 4°C (dilution depends on antibody but start with 1:200, works well in general). Conventional blocking buffer (10mL) 1× PBS (8mL PBS) 1% Bovine serum albumin (BSA) (2 mL 5% BSA)",
+    "Wash sections for 2×5 min PBS on shaker.",
+    "Add secondary antibody (1:1000) cocktail diluted in conventional blocking buffer to flow cell for 2h RT(Alexa Fluor IgG (H + L), Thermo Fisher Scientific).",
+    "Wash sections for 5 min PBS on shaker.",
+    "Incubate with DAPI 1:1000 for 10 min RT in PBS.",
+    "Wash sections for 2×5 min PBS on shaker.",
+    "Add 50 μl of imaging buffer to section and carefully place coverslip on top. Wipe excess of liquid around coverslip and make sure coverslip is attached to slide. Imaging buffer (10 mL) Add 1140mg n-acetylcysteine (store at 4°C) to 1.5mL H2O and 6.5mL 1M NaOH. Dissolve and bring pH to 7.5 with 1M NaOH. Bring final volume to 10mL with H2O.",
+    "Conduct epifluorescence imaging.",
+    "Dip sections in a Coplin jar filled with PBS and gently shake to remove coverslip.",
+    "Add elution buffer to sections. Incubate 10 minutes on shaker. Repeat 4×. Elution buffer (20mL) 0.5 M glycine (740mg) 3M urea (3600mg) 3M guanidine HCl (5732mg) Add to 10mL H2O and vortex to dissolve. 70mM TCEP (400mg) added just before use. pH to 2.5 w/ 6N HCl. Weigh chemicals in fume hood.",
+    "Repeat protocol starting with blocking (20 minutes) on step 1."
+  ],
+  "authors": [
+    "Ana Catarina Franco",
+    "Anthony Lagnado",
+    "Joao Passos"
+  ],
+  "creator": "lagnado.anthony",
+  "published_on": 1762425318,
+  "created_on": 1762373044,
+  "keywords": []
+}

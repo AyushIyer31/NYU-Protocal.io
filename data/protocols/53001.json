@@ -1,0 +1,34 @@
+{
+  "id": 53001,
+  "title": "Gibson assembly for 1 insert the easiest way",
+  "uri": "gibson-assembly-for-1-insert-the-easiest-way-bxzhpp36",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"e7rdl\",\"text\":\"This is the easiest way I've found to do Gibson Assembly of 1 insert into a recipient plasmid after many failed attempts.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "This is the easiest way I&#39;ve found to do Gibson Assembly of 1 insert into a recipient plasmid after many failed attempts.",
+    "Design and order primers for insert and vector using Benchling&#39;s Gibson Assembly wizard.",
+    "Forward primer checklist for cloning coding sequences: Kozak sequence before start codon (gccacc) Insert containing start codon is inserted after recipient plasmid promoter but before any reading frames. Reading frames are indicated by green arrows under the sequence when viewed on Benchling. Extra restriction enzyme sites if desired Preserve T7 promoter if using DNA for IVT Reverse primer checklist for cloning coding sequences: Stop codon (tga, taa) Restriction sites if desired",
+    "Reconstitute lyophilized primers at 100uM in 1xTE buffer to make master stock. Make working stocks by diluting to 10uM in nuclease-free water. Using TE for initial reconstitution supposedly improves storage stability but I have not tested this.",
+    "Perform PCR of insert from donor plasmid or DNA fragment using high fidelity polymerase. Use https://tmcalculator.neb.com/#!/main to calculate annealing temperature based only on the Tm of the primer&#39;s complementary region of the template. This step may require optimization. I typically do quadruplicate 50uL PCR reactions per insert to make up for potentially suboptimal yields. Linearize recipient plasmid via restriction digest or PCR with Gibson primers based on how you set the backbone in Benchling. Note : the cheapest hifi polymerase I have had success with is ABM MegaFi. The benefits of using hifi polymerase are: higher thermostability as may be needed during denaturation steps, shorter PCR cycles (insert PCR usually does not take more than 45 min. for 35 cycles), higher specificity and less errors. PCR conditions are typically different from those of standard Taq, however, so optimization should start by making amendments to the manufacturer&#39;s PCR program.",
+    "Digest template by pooling replicate PCR reactions and adding 1uL DpnI per 50uL PCR reaction. Incubate 37C for 1-2h or overnight at RT.",
+    "This step is only necessary if your donor plasmid contains the same antibiotic resistance gene as your recipient plasmid to eliminate carry over without having to perform gel purification. DpnI will only work if the donor plasmid was produced in a Dam+ E. Coli strain, which most cloning strains are.",
+    "Purify DpnI-digested PCR reaction using a silica spin column. Elute with 30uL nuclease-free water or Buffer EB (10mM Tris-HCl pH 8.5). Elute once more by passing the eluate through the column. Check 1uL of the eluate on an agarose gel to ensure presence of insert band. Other bands may be present as products of DpnI digestion but should not affect subsequent steps.",
+    "Quantitate purified insert and linearized vector. Aim to have a molar excess of insert relative to vector in a 10uL total volume after combining them. Subsequently, add 10uL 2x Gibson Assembly master mix. Include a negative control with only the linearized vector. Note : Molar ratios can be calculated here: http://nebiocalculator.neb.com/#!/ligation 2x master mixes for Gibson Assembly are sold by many vendors though they may not refer to it as such since Gibson Assembly is a trademarked term. Look for DNA assembly kits that are meant to assemble DNA fragments with overlapping ends.",
+    "Incubate the assembly reaction for 30 mins at 50C using a PCR machine. Meanwhile, thaw chemically competent E. Coli on ice and put LB agar plates with appropriate antibiotic at 37C to warm up.",
+    "Immediately after incubation, transform 100uL of chemically competent E. Coli, such as DH5alpha, with 1uL of Gibson reaction. Incubate for 30min on ice, heat shock for 30s at 42C, ice for 2 mins, add 900uL warm/room temp. SOC media, spin down 5min at 6000x g, resuspend in 100uL supernatant, and plate all of the bacteria on LB agar with the appropriate antibiotic. Incubate upside down overnight at 37C or at RT for 2 days. Note : I omitted the outgrowth step here as I always skip it when using a recipient plasmid with ampicillin resistance. If using ampicillin resistance, plating on LB agar+Carbenicillin will yield fewer satellite colonies and are more stable when stored at 4C.",
+    "Check plates for colonies. Ideally there will be none or few colonies on the negative control and some or many colonies on the assembly-transformed plates. Pick colonies to expand and miniprep, or send plate for colony sequencing. Sequence using a primer up- or downstream of your inserted sequence to confirm successful assembly. For minipreps, I have only had success with Sanger sequencing when eluting in nuclease-free water, but not Buffer EB (10mM Tris).",
+    "https://openwetware.org/wiki/Janet_B._Matsen:Guide_to_Gibson_Assembly https://www.addgene.org/protocols/pouring-lb-agar-plates/ https://www.addgene.org/protocols/gibson-assembly/",
+    "Low quality Sanger sequencing results can sometimes be salvaged by using tracy to make basecalls from the .ab1 files."
+  ],
+  "authors": [
+    "Zaki Molvi"
+  ],
+  "creator": "Zaki Molvi",
+  "published_on": 1630875565,
+  "created_on": 1630871460,
+  "keywords": []
+}

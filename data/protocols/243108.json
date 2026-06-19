@@ -1,0 +1,43 @@
+{
+  "id": 243108,
+  "title": "Immunofluorescence (IF) Staining Technology",
+  "uri": "immunofluorescence-if-staining-technology-hrncb55ax",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx82mov8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"hhcxk\",\"text\":\"Immunofluorescence (IF) is an optical imaging sample preparation technique widely utilized in biomedical and cell biology research. It enables the detection and localization of specific proteins within cells or tissue sections using fluorophore-labeled antibodies. By combining the high specificity of antigen-antibody recognition with fluorescent labeling, researchers can visualize the distribution and relative abundance of target proteins under a fluorescence microscope. When integrated with advanced imaging modalities such as super-resolution microscopy or Fluorescence Lifetime Imaging Microscopy (FLIM), IF provides exceptionally detailed and intuitive insights into cellular architecture.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"yvxis\",\"text\":\"- Light Sensitivity: Fluorophores are prone to photobleaching. Keep samples shielded from light during and after secondary antibody incubation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":18}],\"entityRanges\":[],\"data\":{}},{\"key\":\"qh3y0\",\"text\":\"- Antibody Optimization: Always titrate primary and secondary antibodies. Excessive concentrations lead to high background, while insufficient concentrations may result in weak signals.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":22}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4gnde\",\"text\":\"- Stringent Washing: Ensure thorough washing. For problematic backgrounds, consider adding a mild surfactant (e.g., 0.1% Tween-20) to the PBS wash buffer.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":18}],\"entityRanges\":[],\"data\":{}},{\"key\":\"encxr\",\"text\":\"- Cross-Reactivity in Multiplexing: When labeling multiple targets, ensure primary antibodies are derived from different host species and secondary antibodies are cross-adsorbed to prevent cross-reactivity.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":33}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"nazuy\",\"text\":\"- Samples: Adherent cells or tissue sections.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"lc1j9\",\"text\":\"- Fixative: 4% Paraformaldehyde (PFA).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"djlgo\",\"text\":\"- Permeabilization Agent: 0.1%–0.5% Triton X-100.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":23}],\"entityRanges\":[],\"data\":{}},{\"key\":\"ii0z9\",\"text\":\"- Buffer: Phosphate-Buffered Saline (PBS).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"nzoke\",\"text\":\"- Blocking Buffer: 5%–10% normal goat serum or 1%–5% BSA (Bovine Serum Albumin).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":16}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4bnjd\",\"text\":\"- Antibodies: Specific primary antibody and fluorophore-conjugated secondary antibody (e.g., Alexa Fluor 488, Alexa Fluor 594).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":11}],\"entityRanges\":[],\"data\":{}},{\"key\":\"r9hoj\",\"text\":\"- Counterstain: DAPI or Hoechst (nuclear stains).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":13}],\"entityRanges\":[],\"data\":{}},{\"key\":\"boqim\",\"text\":\"- Mounting Medium: Anti-fade mounting reagent (e.g., ProLong Gold).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":16}],\"entityRanges\":[],\"data\":{}},{\"key\":\"cvihl\",\"text\":\"- Equipment: Glass slides, coverslips, 6-well plates or glass-bottom dishes, and fluorescence microscopy systems.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":10}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Seed cells onto coverslips or glass-bottom dishes and culture until 50%–70% confluency. Ensure cells are healthy and firmly attached.",
+    "Prepare sections and mount them onto glass slides.",
+    "Aspirate the culture medium and gently wash the sample 2–3 times with PBS.",
+    "Incubate with 4% PFA for 10–20 minutes at room temperature (RT). PFA cross-links intracellular proteins to maintain their spatial distribution.",
+    "Wash 3 times with PBS (5 min each) to thoroughly remove residual fixative.",
+    "Incubate with 0.1%–0.5% Triton X-100 for 10 minutes at RT. This step permeabilizes the cell membrane, allowing antibodies to access intracellular targets.",
+    "Wash 3 times with PBS (5 min each).",
+    "Incubate with blocking buffer (5%–10% serum or 1%–5% BSA) for 30–60 minutes at RT.",
+    "Do not wash after blocking; proceed directly to the next step. Purpose: To minimize non-specific binding and reduce background noise.",
+    "Dilute the primary antibody in blocking buffer (e.g., PBS containing BSA) according to the manufacturer’s recommended concentration (typically 1:100–1:500).",
+    "Apply the antibody solution and incubate at 4°C overnight (or 1–2 hours at RT).",
+    "Wash 3 times with PBS (5 min each) to remove unbound antibodies.",
+    "Dilute the fluorophore-conjugated secondary antibody (typically 1:500–1:1000) in blocking buffer. Perform all subsequent steps in the dark.",
+    "Incubate for 1 hour at RT, protected from light.",
+    "Wash 3 times with PBS (5 min each).",
+    "Incubate with DAPI or Hoechst (1 µg/mL) for 5–10 minutes at RT in the dark.",
+    "Wash 2–3 times with PBS (5 min each).",
+    "Apply a drop of anti-fade mounting medium onto the slide.",
+    "Carefully place the coverslip over the sample, avoiding air bubbles.",
+    "Store slides in the dark at 4°C. Imaging should be performed as soon as possible.",
+    "Visualize signals using appropriate excitation and emission filters.",
+    "For multi-color staining, sequentially capture images for each fluorophore (e.g., Alexa Fluor 488 and 594) to avoid &#34;bleed-through.&#34;",
+    "High-resolution imaging can be further pursued using Laser Scanning Confocal Microscopy (LSCM) or Super-Resolution Microscopy."
+  ],
+  "authors": [
+    "Peizheng Shi"
+  ],
+  "creator": "Peizheng Shi",
+  "published_on": 1770907687,
+  "created_on": 1770904643,
+  "keywords": []
+}

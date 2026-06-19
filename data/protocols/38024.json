@@ -1,0 +1,34 @@
+{
+  "id": 38024,
+  "title": "PMN- 05 Culture of Human PMN - IL-8 production",
+  "uri": "pmn-05-culture-of-human-pmn-il-8-production-bhdgj23w",
+  "doi": "dx.doi.org/10.17504/protocols.io.bhdgj23w",
+  "description": "{\"blocks\":[{\"key\":\"5nco3\",\"text\":\"Adrenergic Modulation of Migration, CD11b and CD18 Expression, ROS and interleukin-8 Production by Human Polymorphonuclear Leukocytes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":134}],\"entityRanges\":[],\"data\":[]},{\"key\":\"ddnaf\",\"text\":\"Angela Scanzano, Laura Schembri, Emanuela Rasini, Alessandra Luini, Jessica Dallatorre, Massimiliano Legnaro, Raffaella Bombelli, Terenzio Congiu, Marco Cosentino, Franca Marino. Inflamm Res. 2015 Feb;64(2):127-35. doi: 10.1007/s00011-014-0791-8. Epub 2015 Jan 6.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"ziEuV\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"TDxky\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"VYKu7\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"2448E\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"iTCGq\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":3,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"fpcdh\",\"text\":\"Instrumentation needed \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":23}],\"entityRanges\":[],\"data\":[]},{\"key\":\"7dh1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"52m6c\",\"text\":\"Sterile and not sterile plastic disposable \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"bi82o\",\"text\":\"Laminar flow hood \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"h2di\",\"text\":\"ELISA plate reader\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":350086,\"guid\":\"42518C1C341F11EE9D4302C0B41BC903\",\"name\":\"RPMI 1640\",\"mol_weight\":0,\"sku\":\"ECM 0495L- 500 ml\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":431,\"name\":\"EuroClone\",\"link\":\"https://www.euroclonegroup.it/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":469665,\"guid\":\"4258036C341F11EE9D4302C0B41BC903\",\"name\":\"Lipopolysaccharides from Escherichia coli O127:B8\",\"mol_weight\":0,\"sku\":\" L3137\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":17,\"name\":\"Merck MilliporeSigma (Sigma-Aldrich)\",\"link\":\"http://sigmaaldrich.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":469666,\"guid\":\"425803BD341F11EE9D4302C0B41BC903\",\"name\":\"N-FORMYL-MET-LEU-PHE (fMLP)\",\"mol_weight\":0,\"sku\":\"F3506\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":17,\"name\":\"Merck MilliporeSigma (Sigma-Aldrich)\",\"link\":\"http://sigmaaldrich.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"3\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":469719,\"guid\":\"42581F95341F11EE9D4302C0B41BC903\",\"name\":\"ELISA Kit for IL-8\",\"mol_weight\":0,\"sku\":\" KHC0081\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":834,\"name\":\"Invitrogen\",\"link\":\"https://www.thermofisher.com/us/en/home/brands/invitrogen.html\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Isolate PMN according either to the protocol &#34;Separation of Human Neutrophils (PMN) from Buffy CoatV.2&#34; or &#34;Separation of Human Neutrophils (PMN) from Whole Blood&#34;.",
+    "Resuspend PMN at 10x10 6 cells/ml in RPMI medium.",
+    "Use a number of tubes according to the experimental plan and to the substances to test.",
+    "Tubes will be prepared to test resting IL-8 production (substances alone) and stimulus-induced production. Add substances before the activation with stimulus (time selected according to the experiental plan) Stimulus: fMLP 0.1 μM or LPS 1 μM or other.",
+    "Incubate PMN at 37 °C for 03:00:00 in a 5 ml tubes for cell culture. Cells will be incubated in resting conditions or in presence of stimulus (point 3-4).",
+    "Centrifuge at 1500 x g, °C, 10 minutes Allegra AVANTI 30 (Centrifuge, Beckman Coulter, Beckman Italy)",
+    "Harvest cell-free supernatant using a pipette and cell pellet (for real-time assay of mRNA for IL-8).",
+    "Store the supernatant and cell pellet at -80°C until the IL-8 Enzyme Linked-ImmunoSorbent Assay (ELISA) and/or real time assay is performed."
+  ],
+  "authors": [
+    "Marco Cosentino",
+    "Elisa Storelli",
+    "Alessandra Luini",
+    "Massimiliano LM Legnaro",
+    "Emanuela Rasini",
+    "Marco Ferrari",
+    "Franca Marino"
+  ],
+  "creator": "Mattia Di Rocco",
+  "published_on": 1594126548,
+  "created_on": 1591793418,
+  "keywords": []
+}

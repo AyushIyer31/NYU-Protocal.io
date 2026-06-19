@@ -1,0 +1,33 @@
+{
+  "id": 222634,
+  "title": "Mass spectrometry analysis with Data Independent Acquisition (DIA)",
+  "uri": "mass-spectrometry-analysis-with-data-independent-a-g5niby5cf",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvrworplmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"dhacv\",\"text\":\"Here we provide a detailed protocol for the Data Independent Acquisition (DIA)-based mass spectrometry (MS) data acquisition method.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Reconstitute dried peptides in MS Buffer (5% acetonitrile, 95% Milli-Q water, with 0.1% formic acid) to a final concentration of 1 µg/µl.",
+    "Biorupt samples (3 cycles, 60sec on, 30sec off).",
+    "For 10 μL sample (1µg/µl) add 0,5 μL iRT peptides (Biognosys, Switzerland)(1:2 diluted), and transfer into LC-vials. Note: To prepare diluted iRT, follow the manufacturer instructions. Note: Samples will be stable for a few days at 4°C.",
+    "Separate peptides in trap/elute mode using the nanoAcquity MClass Ultra-High Performance Liquid Chromatography system (Waters, Waters Corporation, Milford, MA, USA) equipped with a trapping (nanoAcquity Symmetry C18, 5 μm, 180 μm x 20 mm) and an analytical column (Waters nanoEase M/Z C18 HSS T3, 1.7 μm, 75 μm x 250 mm).",
+    "Load 1 µl of the sample (∼1 μg on column) with a constant flow of solvent A at 5 μl/min onto the trapping column. Trapping time is 6 min. Elute peptides via the analytical column with a constant flow of 0.3 μl/min, using a non-linear gradient from 0% to 40% B in 120 min. The total runtime is 145 min, including clean-up and column re-equilibration.",
+    "Nano LC gradient for DIA Analysis: %s %s",
+    "The outlet of the analytical column is coupled directly to a Orbitrap Exploris 480 (Thermo Fisher Scientific, Bremen, Germany) system using the Proxeon nanospray source. Peptides are introduced into the mass spectrometer via a Pico-Tip Emitter 360 μm outer diameter x 20 μm inner diameter, 10 μm tip (New Objective) heated at 300°C, and a spray voltage of 2.2 kV is applied. The capillary temperature is set at 300°C. The radio frequency ion funnel is set to 30%. MS acquisition parameters are set as follows: full scan MS spectra with a mass range of 350–1,650 m/z are acquired in profile mode in the Orbitrap with resolution of 120,000 FWHM. The filling time is set at a maximum of 60 ms with an AGC target of 3x106 ions. DIA scans are acquired with 40 mass window segments of differing widths across the MS1 mass range. The default charge state is set to 3+. %s %s Higher energy collisional dissociation (HCD) fragmentation (stepped normalized collision energy; 25, 27, 30%) is applied and MS/MS spectra are acquired with a resolution of 30,000 FWHM with a fixed first mass of 200 m/z after accumulation of 3x106 ions or after a filling time of 35 ms. Data are acquired in profile mode.",
+    "For data acquisition and processing of the raw data, Xcalibur 4.3 (Thermo) and Tune version 4.0 are used.",
+    "Optional: Spectronaut from Biognosysis is a commercial software. Alternative open-source software such as DIA-NN can be used.",
+    "Raw files are processed using Spectronaut Professional and searched by directDIA search with Pulsar (Biognosys) against the UniProt database with a list of common contaminants appended (247 contaminants, including BSA, Trypsin, human keratins and other), using the default settings. For quantification, the default BGS factory settings are used, except for the following settings: proteotypicity filter = only protein group specific; major group quantity = median peptide quantity; major group top N = OFF; minor group quantity = median precursor quantity; minor group top N = OFF; data filtering = Q-value percentile with fraction = 0.2 and imputing strategy = global imputing; normalization strategy = global normalization; row selection = identified in all runs (complete); modifications (only for BioID) = biotin_K. Differential abundance testing is performed in Spectronaut using a paired t-test between replicates.",
+    "The candidates and protein report tables are exported from Spectronaut and are used for further analysis using R and RStudio server. Exemplary code for data analysis can be found here: https://gitlab.leibniz-fli.de/ori-lab/brainlysoatlas"
+  ],
+  "authors": [
+    "Julia Heiby",
+    "Emilio Cirri",
+    "Alessandro Ori"
+  ],
+  "creator": "Julia C. Heiby",
+  "published_on": 1767983493,
+  "created_on": 1752677514,
+  "keywords": []
+}

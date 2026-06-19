@@ -1,0 +1,33 @@
+{
+  "id": 106297,
+  "title": "Detecting degranulation via hexosaminidase assay",
+  "uri": "detecting-degranulation-via-hexosaminidase-assay-dj2z4qf6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlk8y65l5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"918fm\",\"text\":\"This protocol describes the quantification of hexosaminidase in cell culture supernatants via an enzyme activity assay. You can use hexosaminidase levels to determine whether mast cells or basophils have undergone degranulation. This protocol uses the Cell BioLabs beta-hexosaminidase assay kit (Fisher Scientific (NC1634727).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"372m3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"l3a7\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"bk6na\",\"text\":\"Black 96-well microtiter plate\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1gcdr\",\"text\":\"Plate reader\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cgp2v\",\"text\":\"1.5 mL microcentrifuge tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1cnom\",\"text\":\"15 mL centrifuge tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fajjj\",\"text\":\"Cell culture supernatants (analyte)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":964247,\"guid\":\"233AB9E83C03429FA2254F07237896B0\",\"name\":\"Beta-Hexosaminidase Assay Kit\",\"mol_weight\":0,\"sku\":\"NC1634727\",\"url\":\"https://www.fishersci.com/shop/products/beta-hexo-activity-assay-kit/NC1634727\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":31,\"name\":\"Fisher Scientific\",\"link\":\"https://www.fishersci.com/us/en/home.html\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "This protocol uses the Beta-Hexosaminidase Assay Kit Fisher Scientific Catalog #NC1634727 . If you&#39;ve already prepared kit reagents, skip to &#34;Standard and substrate preparation.&#34;",
+    "Dilute 5× assay buffer to 1× with ultrapure water. Vortex to homogeneity. Store at Room temperature .",
+    "Dilute 10× neutralization buffer to 1× with ultrapure water. Vortex to homogeneity. Store at Room temperature .",
+    "Thaw hexosaminidase positive control and 10× substrate On ice .",
+    "Just prior to use, prepare 35 µL positive control at 5 µg/mL (10-fold dilution) in 1× assay buffer.",
+    "Prepare control solutions as follows: A B C D 1 Control Volume 5 µg/mL hexosaminidase (µL) Volume buffer (µL) Volume per well (µL) 2 500 ng/mL hexosaminidase 17.5 157.5 50 3 250 ng/mL hexosaminidase 8.75 166.25 50 4 125 ng/mL hexosaminidase 4.38 170.62 50 5 0 ng/mL hexosaminidase 0 175 50 6 Blank 0 350 100",
+    "Dilute 10× substrate to 1× in assay buffer. Vortex to mix. Prepare only enough 1× substrate for immediate use ( 50 µL per well, not including blanks).",
+    "Perform assay in technical triplicate.",
+    "Add 50 µL of each sample or control per well to appropriate wells of a black, 96-well microtiter plate (except blank wells, which get 100 µL ).",
+    "Add 50 µL 1× substrate per well to all wells except the blank.",
+    "Incubate at 37 °C for 00:15:00 , protected from light.",
+    "Add 100 µL of 1× neutralization buffer to each well.",
+    "Read each well&#39;s fluorescence at an excitation wavelength of 365 nm and an emission wavelength of 450 nm. DMSO absorbs significantly at 365 nm. If using DMSO, ensure that its concentration is normalized across all samples."
+  ],
+  "authors": [
+    "Justin Donnelly"
+  ],
+  "creator": "Arcadia Science",
+  "published_on": 1741117469,
+  "created_on": 1724362394,
+  "keywords": []
+}

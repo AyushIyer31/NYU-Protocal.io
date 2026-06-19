@@ -1,0 +1,28 @@
+{
+  "id": 90326,
+  "title": "ColabFold Protein Structure Prediction and Membrane Interaction Modeling",
+  "uri": "colabfold-protein-structure-prediction-and-membran-c4fwytpe",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzxod2gx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"fie15\",\"text\":\"ColabFold Protein Structure Prediction and Membrane Interaction Modeling\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Protein structures (WT and phospho-mutant α-syn) were predicted using ColabFold (https://colabfold.mmseqs.com/),which uses MMseqs2 for homology detection and multiple sequence alignment, and AlphaFold2 for simulated protein folding.",
+    "The full-length human α-synuclein isoform 1 sequence (Uniprot, P37840-1) was input into ColabFold with 3 recycles, and the model with the highest overall IDDT was chosen as representative. For modeling of the phospho-mimetic mutant of α-syn, Ser129 was replaced with an aspartate residue before input.",
+    "To model the interaction between α-syn and SV-membranes, an all-atom simulation was set up, which included the previously selected ColabFold protein models and a phospholipid bilayer made up of 1-palmitoyl-2-oleoyl-sn-glycero-3-[phospho-rac-(1-glycerol)] (POPG) spread in the x-y plane. The protein models were introduced as close to the membrane as possible, while ensuring no disruption of the bilayer, and then the simulation box was solvated with TIP3P water molecules, and charge neutralized by the required number of K + and Cl - ions.",
+    "Simulations were conducted using GROMACS v.2021.3 [https:// www.gromacs.org/ (RRID:SCR_014565)] [doi: 10.5281/zenodo.5053201] with a CHARMM36 force field [(RRID:SCR_014892) https:// www.charmm.org/archive/charmm/resources/charmm-force-fields/ ]at a temperature of 310.15K.",
+    "Particle size of the simulations was 618946 and 324399 for wild-type and S129D α-synuclein, respectively. After the simulation setup, energy minimization was performed using the steepest descent minimization algorithm, and the LINCS algorithm [(RRID:SCR_016486) http://www.lincsproject.org/ ] was used to achieve the constraints for hydrogen bonds.",
+    "Equilibration of the system was performed with two steps of NVT with Berendsen temperature coupling used for temperature correction with a time step of 1 femtosecond, followed by four steps of NPT with Berendsen temperature and pressure coupling with a time-step of 1 femtosecond for the first NPT step and 2 femtoseconds for the following three.",
+    "All equilibration steps were run for 125 picoseconds each.The molecular dynamics production run was performed, without any constraints, for approximately 200ns using Nosé-Hoover temperature coupling and Parrinello-Rahman pressure coupling, with a time-step of 2 femtoseconds.",
+    "In the final model, the helicity of each residue is represented as a fraction of time spent either as a component of an α-helical segment of the protein, a 1, or otherwise, a 0. The depth profile of each protein model is represented as the position of each residue with respect to the phosphate head group and is shown as the mean and standard deviation of the last 20 nanoseconds of the production run."
+  ],
+  "authors": [
+    "Leonardo A Parra-Rivas"
+  ],
+  "creator": "Leonardo A Parra-Rivas",
+  "published_on": 1699719281,
+  "created_on": 1698949164,
+  "keywords": []
+}

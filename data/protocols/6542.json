@@ -1,0 +1,32 @@
+{
+  "id": 6542,
+  "title": "UPLC-MS/MS procedures of lipidomics for plasma",
+  "uri": "uplc-ms-ms-procedures-of-lipidomics-for-plasma-imncc5e",
+  "doi": "dx.doi.org/10.17504/protocols.io.imncc5e",
+  "description": "{\"blocks\":[{\"key\":\"snov\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9i87d\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"9mqh8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"ek1nq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Left samples at -20°C for 30 min and thawed at 4°C until no ice was observed in the tubes",
+    "For each sample, take 40 μL plasma in a new 96 well using multichannel adjustable spacer manual pipette, and then add 120 μL precooled isopropanol (IPA) in each well",
+    "Vortexing the 96 well for 1 min and incubated for 10min in room temperature, the mixture was stored overnight in refrigerator at -20°C to improve protein precipitation",
+    "Centrifuged the samples for 20 min at 14,000 g",
+    "Remove the supernatant to a new 96 well, and further diluted with IPA/acetonitrile (ACN)/H 2 O (2:1:1 v:v:v)",
+    "Equal amount of all samples were pooled as QC sample for LC-MS system conditioning and quality control process",
+    "Equilibrate the CSH column with 99% Phase B, set the flow rate at 0.4 mL/min. The initial elution was started from 40% B and was immediately increased by a linear gradient to 43% B for the first 2 min, followed by an increase to 50% B within 0.1 min. Over the next 3.9 min, the gradient was increased to 54% B, and the amount of B was increased to 70% during next 0.1 min. In the final part of the gradient, B was increased to 99% and maintained for 1.9 min. Finally, B was returned to 40% over the next 0.1 min and equilibrated for 1.9 min for the next injection",
+    "Using the sodium formate solution for mass calibration and Leucine enkephalin (MW=555.62) was applied as a lock mass for accurate mass measurements",
+    "Both positive and negative modes were performed and operated in Centroid MS E mode with an acquisition time of 0.2 s per scan. Scan range was set at 50–1,800 Da. The capillary was set at 0.25 kV and 2 kV in positive ion mode and negative ion mode, respectively. And sampling cone voltages were set 40 V in two modes. The source temperature was set to 120°C. The desolvation temperature and gas flow were 500°C and 800 L/h",
+    "Run 10 QC samples to evaluate the LC-MS system and the run samples interspersed with QC in positive mode, then run all sample in negative mode",
+    "Check the reproducibility of QC samples and then analysis the data by Progenesis QI and metaX"
+  ],
+  "authors": [
+    "Chunwei Zeng",
+    " Guixue Hou"
+  ],
+  "creator": "Chunwei Zeng",
+  "published_on": 1500276833,
+  "created_on": 1498463144,
+  "keywords": []
+}

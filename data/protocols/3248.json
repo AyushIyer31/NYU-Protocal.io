@@ -1,0 +1,37 @@
+{
+  "id": 3248,
+  "title": "RNA extraction, small filters",
+  "uri": "RNA-extraction-small-filters-feqbjdw",
+  "doi": "dx.doi.org/10.17504/protocols.io.feqbjdw",
+  "description": "{\"blocks\":[{\"key\":\"5bp20\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"8arv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"anu8q\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"6vrpe\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Collect 5 to 15 e7 cells on a filter. Put filter immediately in a 1.5ml eppendorf, taking care to keep it neat and with the cells smoothly exposed to the center, ie not all wadded up where it&#39;s hard to get cells off the filter. Flash freeze in liquid N2. Store at -80C.",
+    "Take samples a few at a time out of the -80C, and quickly add 400ul TES and then 400ul acid phenol to the filter. Immediately vortex vigorously, then let sit on bench until you&#39;ve got all your samples started to extract.",
+    "Put all samples at 65C on a heatblock, let incubate for ~60min. Vortex occasionally. Every 20min seems to work.",
+    "PREPARE pre-spin the PLG tubes, get chloroform, glycogen, sodium acetate, and etOH reagents ready.",
+    "At end of incubation, vortex again. Remove the filter using a pipette tip (medium sized works) to waste. Put samples on ice for 5min.",
+    "Spin samples 5min max speed, RT.",
+    "Aspirate aqueous layer to a new tube. Add 400ul acid phenol to new tube, and vortex well. Spin 5min max speed RT.",
+    "Aspirate aqueous layer to a new tube. Add 400ul chloroform to new tube, and vortex well. Spin 5min max speed RT. Be very careful not to get any phenol across in this step.",
+    "Aspirate aqueous layer to a pre-spun PLG. Add 400ul chloroform and invert. Spin 5min 16000rcf RT.",
+    "Aspirate aqueous layer to a new tube. Add 10% volume of 3M Na Acetate, and &gt; 10ug of glycogen for carrier (if need be). Add 2 - 2.5 volumes of 100% etOH.",
+    "Incubate this mix on ice for 30min to an hour. Longer is better, 30min is enough. Going below freezing is apparently counter productive, so avoid using -80C except for the initial chill.",
+    "Spin samples at max speed in the 4C centrifuge for 15min.",
+    "Check for pellets, and aspirate the supernatant. Add 500ul 80% etOH, invert a few times to mix gently. Spin 2min max speed RT.",
+    "Aspirate all of the etOH. Quickspin on bench, and aspirate ALL of the etOH.",
+    "Let dry for 10min on the bench.",
+    "Resuspend in ~50ul nuclease-free H_2O. Run sample on nanodrop to check for a 260/280 &gt; 1.7 but preferably ~ 2.2. Check for a 260/230 &gt; 2, preferably 2.4 or 2.5. If 260/230 is high, you should repeat a phenol chloroform and precipitation to get rid of the phenol, being more careful this time.",
+    "PREPARE 1x TES ( 10mM Tris 7.5, 10mM EDTA, 0.5% SDS ), get acid phenol (check color, make sure it&#39;s clear) TES by Darach Miller"
+  ],
+  "authors": [
+    "Darach Miller"
+  ],
+  "creator": "Darach Miller",
+  "published_on": 1469720121,
+  "created_on": 1469475426,
+  "keywords": []
+}

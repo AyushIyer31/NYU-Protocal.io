@@ -1,0 +1,37 @@
+{
+  "id": 68889,
+  "title": "Electron microscopy (EM) analysis of LRRK2-Nanotube assembles",
+  "uri": "electron-microscopy-em-analysis-of-lrrk2-nanotube-cfhztj76",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4bmdzvo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"8ho2v\",\"text\":\"This protocol details methods for the analysis of LRRK2-Nanotube assembles by negative stained EM and Cryo-EM.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"fv7ab\",\"text\":\"Solutions to prepare:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":21}],\"entityRanges\":[],\"data\":{}},{\"key\":\"cobi2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2bpum\",\"text\":\"Low salt buffer:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":16}],\"entityRanges\":[],\"data\":{}},{\"key\":\"a8dua\",\"text\":\"      Low salt buffer    HEPES (7.4)  20mM    NaCl  90mM    MgCl2  2.5mM    Glycerol  7%    DTT  2mM    GDP  20μM  \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":115}],\"data\":{}},{\"key\":\"fct7l\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"MUTABLE\",\"data\":{\"cellsMeta\":{\"0\":{\"0\":\"B\"},\"0_0\":\"\",\"1\":{\"0\":\"_\"},\"1_0\":\"\",\"1_1\":\"\",\"2\":{\"0\":\"1\"},\"2_0\":\"\",\"2_1\":\"\",\"3_0\":\"\",\"3_1\":\"\",\"4_0\":\"\",\"4_1\":\"\",\"5_0\":\"\",\"5_1\":\"\",\"6_0\":\"\",\"6_1\":\"\",\"A_1\":{\"className\":\"_dt-h-left\"},\"A_2\":{\"className\":\"_dt-h-left\"},\"A_3\":{\"className\":\"_dt-h-left\"},\"A_4\":{\"className\":\"_dt-h-left\"},\"A_5\":{\"className\":\"_dt-h-left\"},\"A_6\":{\"className\":\"_dt-h-left\"},\"B_1\":{\"className\":\"_dt-h-left\"},\"B_2\":{\"className\":\"_dt-h-left\"},\"B_3\":{\"className\":\"_dt-h-left\"},\"B_4\":{\"className\":\"_dt-h-left\"},\"B_5\":{\"className\":\"_dt-h-left\"},\"B_6\":{\"className\":\"_dt-h-left\"}},\"colTitles\":[\"\",\"\"],\"colWidths\":[\"174.98958587646484\",100],\"data\":[[\"HEPES (7.4)\",\"20 mM\"],[\"NaCl\",\"90 mM\"],[\"MgCl2\",\"2.5 mM\"],[\"Glycerol\",\"7%\"],[\"DTT\",\"2 mM\"],[\"GDP\",\"20 μM\"]],\"guid\":\"781847C41F9811EDAD140A58A9FEAC02\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"HEPES (7.4)\",\"20 mM\"],[\"NaCl\",\"90 mM\"],[\"MgCl2\",\"2.5 mM\"],[\"Glycerol\",\"7%\"],[\"DTT\",\"2 mM\"],[\"GDP\",\"20 μM\"]],\"rowHeights\":[23,23,23,23,23,23]}}}}",
+  "steps": [
+    "Prepare samples in a PCR tube with 300 nanomolar (nM) LRKK2, 20 micromolar (µM) lipid nanotubes and 1 millimolar (mM) GMPPNP.",
+    "Incubate samples at 37 °C for 00:30:00 .",
+    "Glow-discharge carbon-coated grids (25 mA, 00:00:45 ) during the sample incubation time.",
+    "Place the discharged grids on a piece of parafilm.",
+    "After incubation, apply 6 µL of the samples to the grid and adsorbed on the grid for 00:05:00 at Room temperature .",
+    "Blot the grid with filter paper and stained with 2% uranyl acetate for 00:00:40 .",
+    "Dry the grid with filter paper.",
+    "Collect images using a Talos L 120C TEM microscope at 80 kV with Velox software and a 4k × 4K Ceta CMOS camera (Thermo Fisher Scientific).",
+    "Dialyze freshly purified LRRK2 into the Low salt buffer.",
+    "After dialysis, incubate LRRK2 ( 2 micromolar (µM) ) with the kinase inhibitor MLi-2 ( 5 micromolar (µM) ) for 00:10:00 On ice .",
+    "Add 20 micromolar (µM) lipid nanotubes into the mixture above and further incubate for 01:00:00 at Room temperature in the presence of 1 millimolar (mM) GTP. Note: The total volume of the mixture is 12 µL .",
+    "Glow-discharge C-flat™ holey carbon gold grids (CF-1.2/1.3-3Au) (15mA, 00:00:45 ) during the sample incubation time, then place the discharged grids on a piece of parafilm.",
+    "After incubation, apply 4 µL of the samples to the grid.",
+    "Plunge-freeze sample-loaded grids in liquid ethane-propane mixture using a Vitrobot Mark IV (FEI) with the following parameters: blot force, 0; blot time, 00:00:01 ; wait time, 00:00:30 ; drain time, 00:00:00 ; humidity, 100%.",
+    "Collect cryo-EM micrographs on a Titan Krios transmission electron microscope (Thermo Fisher Scientific) operating at 300 kV, equipped with a post column GIF quantum energy filter and a Gatan K3 Summit DED camera (Gatan, Pleasanton, CA, USA).",
+    "Perform the data collection with the SerialEM software. Record movies in super-resolution mode with a physical pixel size of 1.098 A˚ (super-resolution pixel size is 0.549 A˚) and a defocus range of - 1 µm to - 3 µm . The total dose of ~60.6 e− Å−2 was attained by using a dose rate of ~23.5 e− pixel−1 s−1 across 43 frames for 00:02:00 00:00:58 total exposure time. The initial drift and beam-induced motions was corrected using MotionCor2."
+  ],
+  "authors": [
+    "Xinbo Wang",
+    "Pietro De Camilli"
+  ],
+  "creator": "xinbo.wang",
+  "published_on": 1692994445,
+  "created_on": 1660894760,
+  "keywords": []
+}

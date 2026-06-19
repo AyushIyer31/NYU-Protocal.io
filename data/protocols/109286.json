@@ -1,0 +1,34 @@
+{
+  "id": 109286,
+  "title": "QuPath Immunofluorescence Sequential Slice Analysis: Warpy Extension",
+  "uri": "qupath-immunofluorescence-sequential-slice-analysi-dnye5fte",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvw13n2lmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"39aur\",\"text\":\"This protocol is an application of the Warpy Extension tool to Qupath for the quantification of IF and IHC markers from sequential tissue slices. This protocol builds upon prior work outlining how to quantify singular and co-localizing IHC and IF markers in the liver, in addition to performing this analysis in the context of liver architecture. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":236,\"length\":3},{\"key\":1,\"offset\":244,\"length\":2}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"B6062D10D54540CD805F2184D0836486\",\"url\":\"https://dx.doi.org/10.17504/protocols.io.bs6gnhbw\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"334B52A4CCDC4B92AFCF65CABAE8EDC2\",\"url\":\"http://dx.doi.org/10.17504/protocols.io.e6nvwdmnwlmk/v1\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"3fc2t\",\"text\":\"QuPath v0.4.3\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cjng7\",\"text\":\"QuPath Extension Warpy v0.3.1\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"85c7o\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Download the open-source Warpy image alignment software from https://github.com/BIOP/qupath-extension-warpy . Note: To avoid incompatible features, download the Warpy version that is specific to the version of QuPath previously downloaded. In this protocol, QuPath v0.4.3 and QuPath Extension Warpy v0.3.1 were used.",
+    "Click on File: Project to start a project. Note: A project must be created in order for multiple images to be imported. Tip: Prepare an empty folder with an appropriate folder name prior to starting the project.",
+    "For any downstream quantification, including positive cell detection and marker-specific co-localization, please refer to QuPath Immunofluorescence Cell Detection and Co-localization Protocol . Example visualization of a hepatic portal vein using 4 different markers (VCAM1, CD32, CK7, and HNF4A) on a healthy liver tissue sample. Example visualization of a hepatic portal vein using 4 different markers (VCAM1, CD32, CK7, and HNF4A) on a healthy liver tissue sample, demonstrating the potential of viewing different combinations of markers.",
+    "Unzip the full Warpy installation package to a local folder. Tip: Unzip files to the same local folder as Qupath to avoid plugin issues.",
+    "Drag and drop the .jar file titled &#34;qupath-extension-warpy-version number.jar&#34; to the QuPath window, or click on File: Open , then select the .jar file to add the Warpy extension to Qupath. Note: It should show up on the Extensions tab on QuPath. QuPath Extensions tab showing the successful installation of the Warpy plugin.",
+    "Import the sequential slices to be analyzed by clicking on File: Open . Note: Both slices should be stained with a nuclei stain (e.g. DAPI), as it would be used as the main point of reference and alignment. Tip: Obtaining an H&amp;E scan of the slices would also help in the image alignment process, as key tissue architectural features can be used as a reference for alignment.",
+    "Select View: Brightness/Contrast and select the desired channels for visualization (e.g. DAPI, AF647, AF555) Note: Double click on any channel to change its name and color. Tip: Select complementary colors (e.g. red and green, purple and yellow) for the different channels, as they would be the easiest to distinguish. Table containing the different markers and stain colors selected for this experiment.",
+    "Adjust the brightness and contrast of the image by changing the min and max display values using the slider. Note: To ensure easier visualization in future steps, ensure that the brightness of the first slice matches that of the second slice, individual markers can be adjusted to be hyper-saturated if it helps with the image alignment process. Tip: Refer to marker-specific IHC experiments (e.g. from The Human Protein Atlas) to help visualize expected stain localization and intensity.",
+    "Select and open one of the image files of the sequential slices from the image list, then click on Analyze: Interactive image combiner warpy. Note: The image currently opened and selected will be the top slice on the overlay. Tip: Ensure that the image to be used is opened in the viewer. To do this, double click on the image located in the Image List. QuPath Analyze tab showing the I nteractive image combiner warpy menu option.",
+    "Click on Choose images from project on the pop up window and select the second slice. Image Combiner Warpy pop up window showing its different elements.",
+    "Align the second slice to the first by adjusting its size, rotation and translation using the interactive alignment menu. Move slices by holding down the shift key and dragging on the image. Rotate the image by clicking Rotate Left or Rotate Right . Scale the image by clicking Scale Down or Scale Up . Tip: Adjust the opacity and zoom in closer to notable tissue architecture to aid in image alignment. Image alignment viewer showing the un-aligned sequential slices overlain. Image alignment viewer showing the aligned sequential slices overlain.",
+    "Once image alignment is completed, click Create . A new image file with the full list of markers should be created and can be opened from the Image List . Note: There will be two copies of the nuclei marker (e.g. DAPI) on the list of channels, turn off one of the channels to allow for easier visualization. Tip: Rename and readjust the brightness of each stain once image alignment is complete. QuPath window showing the new overlain image on the image list and the different markers listed on the Brightness &amp; contrast window."
+  ],
+  "authors": [
+    "Patricia Lumanto",
+    "Sonya Macparland",
+    "Diana Nakib"
+  ],
+  "creator": "Patricia Lumanto",
+  "published_on": 1732178549,
+  "created_on": 1728312550,
+  "keywords": []
+}

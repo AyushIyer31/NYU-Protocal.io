@@ -1,0 +1,34 @@
+{
+  "id": 106301,
+  "title": "C. elegans culture and maintenance",
+  "uri": "c-elegans-culture-and-maintenance-dj254qg6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlk8y6wl5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"3evlt\",\"text\":\"This protocol describes the maintenance of C. elegans WT and homozygous strains, as well as a procedure for cryopreservation and revival of this organism.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":43,\"length\":10}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"85uen\",\"text\":\"6 cm Petri dishes with NGM(OP50)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8l0mq\",\"text\":\"Spatula\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f68qt\",\"text\":\"Platinum wire\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"evhlt\",\"text\":\"1X trehalose freezing buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bmah4\",\"text\":\"Cryo-tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4silo\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"9ekep\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":159717,\"guid\":\"41A549D6341F11EE9D4302C0B41BC903\",\"name\":\"Ethanol 200 Proof\",\"mol_weight\":0,\"sku\":\"2716\",\"url\":\"http://www.deconlabs.com\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":280,\"name\":\"Decon Labs\",\"link\":\"http://deconlabs.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Grow worms in Petri dishes on nematode growth medium (NGM) with OP50 E. coli at 20 °C .",
+    "For optimal health, subcultivate worms every 2–4 days.",
+    "Subcultivate via chunking Dip a spatula in 100% Ethanol 200 Proof Decon Labs Catalog #2716 . Flame-sterilize. Once the flame is extinguished, cut a chunk from the plate with an edge length of ~ 0.5 cm . Select a chunk with several larvae. Transfer this chunk to a new plate under flame, with the worm side facing down. If worms are dauer, you can use this same procedure to revive them from the dauer plate.",
+    "Subcultivate via picking Flame-sterilize a platinum wire. Pick up one or more adult worms from plate, taking care to prevent puncturing the NGM. Transfer worms by gently touching the platinum wire to the new plate under flame. Hold the wire in this position for several seconds to allow worms to crawl off. Flame-sterilize the wire before picking additional worms. Repeat 1–4 times, depending on the desired density.",
+    "Return worms to incubator.",
+    "Prepare synchronized L1s via bleach synchronization. See: Bleach life-stage synchronization of C. elegans by Arcadia Science",
+    "Centrifuge on clinical centrifuge at speed 5 for 00:01:00 – 00:02:00 .",
+    "Resuspend worms in 15 mL 1× trehalose freezing buffer. Centrifuge again on clinical centrifuge at speed 5 for 00:01:00 – 00:02:00 .",
+    "Resuspend worms in 3.6 mL 1× trehalose freezing buffer. Mix to ensure worms are dispersed.",
+    "Quickly after resuspension, pipette 1.2 mL into each of three pre-labeled cryotubes.",
+    "Freeze the worms in a Mr. Frosty (or similar) at -80 °C . Keep the container on its side so that worms don&#39;t all sink to the bottom before freezing.",
+    "After several days, retrieve the worms and run a test thaw by scraping some amount of frozen worm and buffer, and transfer to a fresh NGM (OP50) plate.",
+    "Over the following several days, look to see if any worms have revived. If so, you may remove cryotubes from the Mr. Frosty and transfer to long-term storage at -80 °C .",
+    "Once you&#39;ve confirmed successful revival, you can thaw worms as in step 10."
+  ],
+  "authors": [
+    "Justin Donnelly"
+  ],
+  "creator": "Arcadia Science",
+  "published_on": 1735857020,
+  "created_on": 1724367946,
+  "keywords": []
+}

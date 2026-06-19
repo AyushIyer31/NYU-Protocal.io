@@ -1,0 +1,35 @@
+{
+  "id": 103177,
+  "title": "In vivo BioID protein purification",
+  "uri": "in-vivo-bioid-protein-purification-dgzh3x36",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv5r3z6g1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"7ill0\",\"text\":\"In vivo BioID protein purification\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "**Animal Preparation** - Breed genotype-matched animals (wild-type C57BL6 or LRRK2 G2019Ski/ki) to produce single-genotype litters. - For each genotype (WT or G2019S), prepare 6 pups for injection.",
+    "**AAV Injection** - Inject 1 µL of AAVs carrying Astro-Ezrin-BioID (PHP.eB.GfaABC1D-Ezrin WT-BioID2-HA) or Astro-CYTO-BioID (PHP.eB.GfaABC1D-BioID2-HA) bilaterally into the cortex of P0-P2 mouse pups using a Hamilton syringe. - Monitor pups until they recover on a heating pad.",
+    "**Biotin Injection** - At P18, P19, and P20, subcutaneously inject biotin at 24 mg/kg to increase biotinylation efficiency.",
+    "**Tissue Collection** - At P21, remove the cerebral cortices and store at -80°C. - Pool 2 genotype-matched cortices at the time of protein isolation, yielding 3 independent replicates per BioID construct.",
+    "**Protein Purification** - Lyse each cortex in a buffer containing: - 50 mM Tris/HCl, pH 7.5 - 150 mM NaCl - 1 mM EDTA - Protease inhibitor mixture (Roche) - Phosphatase inhibitor mixture (PhosSTOP, Roche) - Add an equal volume of buffer containing: - 50 mM Tris/HCl, pH 7.5 - 150 mM NaCl - 1 mM EDTA - 0.4% SDS - 2% TritonX-100 - 2% deoxycholate - Protease inhibitor mixture - Phosphatase inhibitor mixture",
+    "**Sonication and Centrifugation** - Sonicate samples. - Centrifuge at 15,000 g for 10 minutes. - Ultracentrifuge the supernatant at 100,000 g for 30 minutes at 4°C.",
+    "**Sample Preparation for Protein Binding** - Add SDS detergent to the samples and heat at 45°C for 45 minutes. - Cool on ice.",
+    "**Protein Binding** - Incubate each sample with High-Capacity Streptavidin Agarose beads (ThermoFisher) at 4°C overnight.",
+    "**Bead Washing** - Wash beads serially:",
+    "Twice with a solution containing 2% SDS.",
+    "Twice with a buffer containing 1% TritonX-100, 1% deoxycholate, and 25 mM LiCl.",
+    "Twice with 1 M NaCl.",
+    "Five times with 50 mM ammonium bicarbonate.",
+    "**Protein Elution** - Elute biotinylated proteins attached to the agarose beads in a buffer containing: - 125 mM Tris/HCl, pH 6.8 - 4% SDS - 0.2% β-mercaptoethanol - 20% glycerol - 3 mM biotin - Heat at 60°C for 15 minutes.",
+    "**Downstream Analysis** - Subject the 12 total samples (3 per genotype per construct) to LC-MS/MS and downstream analysis."
+  ],
+  "authors": [
+    "Shiyi Wang"
+  ],
+  "creator": "Shiyi Wang",
+  "published_on": 1720647562,
+  "created_on": 1720646505,
+  "keywords": []
+}

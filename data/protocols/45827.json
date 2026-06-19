@@ -1,0 +1,25 @@
+{
+  "id": 45827,
+  "title": "Mitochondrial genome assembly",
+  "uri": "mitochondrial-genome-assembly-bqzbmx2n",
+  "doi": "dx.doi.org/10.17504/protocols.io.bqzbmx2n",
+  "description": "{\"blocks\":[{\"key\":\"msjo\",\"text\":\"De novo assembly of 49 mustelid whole mitochondrial genomes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Calculate read length of fastq files for each sample and run MitoZ R1=$1 R2=$2 fq1=&#34;$(realpath $R1)&#34;fq2=&#34;$(realpath $R2)&#34; dir=&#34;$(dirname $R1)&#34;fpath=&#34;$(basename $R1)&#34; #get the sample name and the prefix for the output R1 and R2 readssamplename=&#34;$(cut -d&#39;_&#39; -f1 &lt;&lt;&lt; $fpath)&#34; #get the length of the 11th read (in case the first few are a bit short). Method will vary depending if the reads are gzipped or not extension=&#34;${fpath##*.}&#34; fastq_length=150 if [ $extension == &#34;gz&#34; ]; then fastq_length=&#34;$(zcat $fq1 | head -n 42 | sed -n &#39;42p&#39; | wc -c)&#34; else fastq_length=&#34;$(sed -n &#39;42p&#39; $fq1 | wc -c)&#34; fi source samtools-1.10 source mitoz-2.3 source ncbiblast-2.2.27 REF=NC_020638.1_mitochondrial.fasta #run mitzo all srun mitoz all --fastq1 $fq1 --fastq2 $fq2 --fastq_read_length $fastq_length --outprefix $samplename --thread_number 16 --clade Chordata --genetic_code 2 --filter_taxa_method 1 #re-order assembly so all are anchored to a common reference. srun python /ei/software/testing/mitoz/2.3/src/release_MitoZ_v2.3/useful_scripts/Mitogenome_reorder.py -f $samplename.result/work71.mitogenome.fa -r $REF",
+    "Genome alignment. Concatenate the genomes and use ClustalW to align them.",
+    "Rename both the accession name and file name of the genome assemblies, as they&#39;ll all have the same name (work71.mitogenome.fa.reorder) SAMPLE=$1 #the sample nameFASTA=$2 #the path to the assembly dir=&#34;$(dirname $FASTA)&#34; #change any number of upper and lowercase characters, numbers, spaces and = sign to the sampleIDsed -i &#34;s/&gt;[A-Za-z0-9 =]*/&gt;${SAMPLE}/g&#34; &#34;$FASTA&#34; #rename the fasta file from &#39;work71.mitogenome.fa.reorder&#39; to e.g. &#39;euro_S01_mitogenome.fasta&#39;mv $FASTA $dir/$SAMPLE\\_mitogenome.fasta",
+    "Concatenate all of the assemblies find . -name &#34;*_mitogenome.fasta&#34; -exec cat {} \\; -printf &#34;\\n&#34; &gt; all_mtdna_genomes.fasta You may need to visualise the genomes to make sure they&#39;re all the same complement. Reverse complement any genomes as required.",
+    "Align the assemblies and change format to FASTA source clustalw-2.1source emboss-6.6.0 #align the seqencessrun clustalw -ALIGN -INFILE=all_mtdna_genomes.fasta -TYPE=DNA -OUTFILE=all_mtdna_genomes_aligned.aln#reformat to fastasrun seqret -sequence all_mtdna_genomes_aligned.aln -outseq all_mtdna_genomes_aligned.fasta"
+  ],
+  "authors": [
+    "Graham Etherington"
+  ],
+  "creator": "Graham Etherington",
+  "published_on": 1666723679,
+  "created_on": 1608728521,
+  "keywords": []
+}

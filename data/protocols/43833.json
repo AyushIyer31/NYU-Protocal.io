@@ -1,0 +1,31 @@
+{
+  "id": 43833,
+  "title": "TaqMan qPCR assay for detecting Batrachochytrium dendrobatidis (Bd)",
+  "uri": "taqman-qpcr-assay-for-detecting-batrachochytrium-d-bn2zmgf6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bn2zmgf6",
+  "description": "{\"blocks\":[{\"key\":\"9rs7m\",\"text\":\"The fungus Batrachochytrium dendrobatidis (Bd) was first detected in Norway in 2017, and thus indicate the arrival of an invasive black-listed species in the country.  Here we report the details of real time PCR assay which was used to screen for B. dendrobatidis from  water samples collected from different locations in Norway.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"f4pt4\",\"text\":\"Laboratory work space and equipment were sterilised by UV-light and DNase solution and 70% ethanol. Filter pipet tips were used in all steps of the laboratory work.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8p9ev\",\"text\":\" Negative controls of DNase/RNase free water were used in each qPCR assay. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"cum3j\",\"text\":\"Handling high concentration of positive controls was performed in a post-PCR room which is physically separated from the pre-PCR room to avoid contamination. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9ofl3\",\"text\":\"Always add your samples first and seal them before adding the serial dilutions of positive control (standard) at the end.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"f1d12\",\"text\":\"UltraPure™ DEPC-treated Water CATALOG NUMBER10813012\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":44,\"length\":8}],\"data\":[]},{\"key\":\"29p4f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2gt7k\",\"text\":\"SsoAdvanced Universal Probes SupermixBio-rad LaboratoriesCatalog #172-5280\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5hd41\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"665r4\",\"text\":\"Internal control: http://www.primerdesign.co.uk/assets/files/internal_control_handbook_dna.pdf?timestamp=1469446474\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":18,\"length\":97}],\"data\":[]},{\"key\":\"dn08d\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dr88k\",\"text\":\"qPCR strip or qPCR plate \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"73tsf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4ors\",\"text\":\"BioRad qPCR machine CFX96\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"1bh4d\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dsqf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9pm3s\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8olfq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"EABD420E185D11EB9DC00A58A9FEAC2A\",\"url\":\"https://www.thermofisher.com/order/catalog/product/10813012\"}},\"1\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"2FBA151C19CC11EBB41B0A58A9FEAC2A\",\"url\":\"http://www.primerdesign.co.uk/assets/files/internal_control_handbook_dna.pdf?timestamp=1469446474\"}}}}",
+  "steps": [
+    "DNA extraction was performed using Qiagen DNeasy power water sterivex kit. The quality of the extracted DNA was estimated using Nanodrop. Qiagen DNeasy power water sterivex kit: https://www.qiagen.com/se/resources/resourcedetail?id=c5fe7d5f-070a-4ebe-ac04-4bbf05a13e91&amp;lang=en",
+    "A primer set of ITS1-3 Chytr (5’- CCTTGATATAATACAGTGTGCCATATGTC-3 ́), 5.8S Chytr (5’- AGCCAAGAGATCCGTTGTCAAA-3’) and probe Chytr MGB2 (FAM-5’ TTCGGGACGACCC-3’-NFQ- MGB) (Boyel et al. 2004). Internal control: http://www.primerdesign.co.uk/assets/files/internal_control_handbook_dna.pdf?timestamp=1469446474 SsoAdvanced Universal Probes Supermix: https://www.bio-rad.com/webroot/web/pdf/lsr/literature/bulletin-10023650.pdf",
+    "PCR master mix without internal control (IC) %s %s",
+    "A serial dilution of 100, 50, 25, 10, 1, 0.1 and 0.01 genomic equivalents (GE) of the DNA extract of Bd standard was tested and 5 dilutions (100, 25, 10, 1, 0.1 GE) were used for the qPCR assay. Pipette 5 μl of DNA template to reach 20 μl final volume in each well. For negative controls use 5 μl of RNase/DNase free water.",
+    "%s %s",
+    "QPCR was performed on BioRad qPCR machine CFX96. Analysis of the results was done by CFX maestro software https://www.bio-rad.com/en-se/product/cfx-maestro-software-for-cfx-real-time-pcr-instruments?ID=OKZP7E15",
+    "Quantification cycle (Cq) Positive control of 100 genome equivalent is expected to give a signal at Cq value 27. In case of internal control, Cq values of 27±3 are within the normal range. A control sample with IC and water should be evaluated at each qPCR run.",
+    "PCR master mix with IC %s %s"
+  ],
+  "authors": [
+    "Omneya Osman",
+    "Mats Töpel",
+    "Tomas Larsson",
+    "Alexander Eiler"
+  ],
+  "creator": "Omneya Osman",
+  "published_on": 1605795657,
+  "created_on": 1603807573,
+  "keywords": []
+}

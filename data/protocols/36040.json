@@ -1,0 +1,43 @@
+{
+  "id": 36040,
+  "title": "RNA Extraction Protocol for Aurantiochytrium limacinum",
+  "uri": "rna-extraction-protocol-for-aurantiochytrium-limac-bffgjjjw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bffgjjjw",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"degem\",\"text\":\"Take safety precautions when using liquid nitrogen. Make sure to conduct Trizol and chloroform steps in fume hood.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"798jd\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"G1WaC\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"FpK6E\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"zxLqq\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"vfEPl\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":3,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"9Moxv\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":4,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":3408,\"guid\":\"41059798341F11EE9D4302C0B41BC903\",\"name\":\"Liquid Nitrogen\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":4123,\"guid\":\"4106A101341F11EE9D4302C0B41BC903\",\"name\":\"TRIZOL reagent \",\"mol_weight\":0,\"sku\":\"\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":4259,\"guid\":\"4106CDA6341F11EE9D4302C0B41BC903\",\"name\":\"Chloroform\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}},\"3\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":119852,\"guid\":\"4198E782341F11EE9D4302C0B41BC903\",\"name\":\"Monarch Total RNA Miniprep Kit\",\"mol_weight\":0,\"sku\":\"T2010S\",\"url\":\"https://www.neb.com/T2010\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}},\"4\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":182031,\"guid\":\"41A96DFC341F11EE9D4302C0B41BC903\",\"name\":\"Ethanol\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"http://None\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Start a preculture 4 days prior to extraction by inoculating 5 ml of 790 with a colony of Aurantiochytrium limacinum (ATCC MYA-1381). Incubate overnight at 28 C 171 rpm. Use preculture to inoculate 20 ml of 790 in a 250 ml flask. Culture for three days at 28 C, 171 rpm.",
+    "Determine volume of culture needed to reach 5*10^7 cells via cell count.",
+    "Place volume needed into a microcentrifuge tube and centrifuge down at 13000rpm for two minutes at room temperature. Discard supernatant.",
+    "Place pellet in liquid nitrogen for 3-5 minutes.",
+    "Resuspend pellet in 750ul Trizol lysis buffer and incubate on ice for 1 hour and 30 minutes.",
+    "Add 150ul chloroform in fume hood to the pellet and let sit for 2 minutes.",
+    "Vigorously shake the mixture and centrifuge at 13000rpm for 5 minutes at 4C.",
+    "Pipette upper aqueous layer to a sterile microcentrifuge tube on ice.",
+    "Add an equal volume of &gt;95% ethanol to the upper aqueous layer and mix well.",
+    "Use NEB Monarch Total RNA Miniprep Kit from here. All centrifugation steps should be carried out at 16,000rcf.",
+    "Take an RNA purification column and collection tube. Place the mixture (the upper aqueous layer with ethanol) from the microcentrifuge tube to the purification column.",
+    "Centrifuge for 30 seconds and discard flow-through.",
+    "Add 500ul RNA Wash Buffer and spin for 30 seconds. Discard flow-through.",
+    "In a separate RNase-free microcentrifuge tube, combine 5ul DNase 1 provided in the Monarch Kit with 75ul DNase 1 Reaction Buffer. Pipette the mixture directly onto the column matrix.",
+    "Incubate for 15 minutes at room temperature.",
+    "Add 500ul RNA Priming Buffer and spin for 30 seconds. Discard the flow-through.",
+    "Add 500ul RNA Wash Buffer and spin for 30 seconds. Discard the flow-through.",
+    "Add another 500ul RNA Wash Buffer and spin for two minutes . Transfer the column to a new RNase-free microcentrifuge tube.",
+    "Add 30ul of Nuclease-free Water directly to the column matrix and spin for 30 seconds.",
+    "Pipette the flow-through back into the column matrix and spin again for 30 seconds.",
+    "Remove column matrix, close the microcentrifuge tube, and label it. Store the eluted RNA at -20C for short-term storage or at -80C for long-term storage. RNA yields for GPY grown cells are usually around a 1000ng/ul and for 790-grown cells are much lower around 50-100ng/ul. Lower yield for 790 cells are possibly due to excessive cell clumping."
+  ],
+  "authors": [
+    "Michael Horowitz",
+    "Mariana Rius",
+    "Jackie Collier"
+  ],
+  "creator": "Michael Horowitz",
+  "published_on": 1588106090,
+  "created_on": 1587569393,
+  "keywords": []
+}

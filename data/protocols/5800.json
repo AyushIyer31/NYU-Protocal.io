@@ -1,0 +1,31 @@
+{
+  "id": 5800,
+  "title": "Immunofluorescence:  EGFR, ICAM-1 and FAS detection",
+  "uri": "immunofluorescence-egfr-icam-1-and-fas-detection-hwgb7bw",
+  "doi": "dx.doi.org/10.17504/protocols.io.hwgb7bw",
+  "description": "{\"blocks\":[{\"key\":\"929qk\",\"text\":\"This protocol describes methods for detecting cell-surface markers by indirect immunofluorescence after treatment with BiTE®. Cells are analyzed by cellular imaging.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"ub51\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"fjktb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"c945k\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Detection of EGFR, ICAM-1 and FAS by immunofluorescence is multiplexed with the TDCC imaging assay. After incubation with T cells + EGFR BiTE® or BiTE®-activated T cells or cytokines (IFNγ and TNFα), cells are fixed, and molecules are detected by indirect immunofluorescence. Nuclei are counted in the same assay to get cell counts (a measure of cytotoxicity).",
+    "%s %s",
+    "Please refer to TDCC or Bystander TDCC protocols for assay set-up Note: Because target cells can be rapidly killed by BiTE®-activated T cells, shorter incubation times (≤ 24 hours) is recommended",
+    "At the end of the assay, wash and fix cells: Wash cells two times with PBS, and fix with formaldehyde as described in the TDCC imaging assay protocol. Dispose formaldehyde in appropriate chemical waste. Prepare reagents while cells are fixing Wash buffer: PBS + 5% normal goat serum Primary antibody in wash buffer Anti-EGFR used at 1 µg/ml Anti-ICAM-1 used at 5 µg/ml Anti-FAS used at 5 µg/ml Secondary antibody (goat anti-mouse-AlexaFluor® 488) + Hoechst nuclear dye: 5 µg/ml secondary antibody + 5 µg/ml Hoechst in wash buffer. After cells are fixed, wash two times with PBS. Remove PBS and add 50 µl/well primary antibody solution; incubate 1 hour at room temp. Remove primary antibody solution and wash 2X with 100 µl/well wash buffer. Remove wash buffer and add 50 µl/well secondary antibody + Hoechst nuclear dye .solution; incubate 1 hour at room temp. in the dark. Remove secondary antibody/Hoechst solution and wash 1X with 100 µl/well wash buffer. Remove wash buffer and wash 1X with 100 µl/well PBS. Remove PBS wash and add back 100 µl/well PBS. Seal plates and scan on ArrayScan™ (16 x 10X fields) using Target Activation or Spot Detectpr bioapplications. Control wells containing cells +/- treatment are used to set a threshold for AlexaFluor® 488 intensity and % positive cells is determined for each well. Nuclei are counted using with size threshold to exclude any adhering T cells."
+  ],
+  "authors": [
+    "Sandra L. Ross",
+    " Marika Sherman",
+    " Patricia L. McElroy",
+    " Julie A. Lofgren",
+    " Gordon Moody",
+    " Patrick A. Baeuerle",
+    " Angela Coxon",
+    " Tara Arvedson"
+  ],
+  "creator": "Sandra Ross",
+  "published_on": 1495050152,
+  "created_on": 1494374680,
+  "keywords": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": 38554,
+  "title": "FCMPASS - Performing and reporting calibration",
+  "uri": "fcmpass-performing-and-reporting-calibration-bhv2j68e",
+  "doi": "dx.doi.org/10.17504/protocols.io.bhv2j68e",
+  "description": "{\"blocks\":[{\"key\":\"alrg2\",\"text\":\"This protocol outlines the steps required to calculate the calibration parameters and convert fcs files using the FCMPASS software. This is one of a number of protocols in the pipeline for performing small particle calibration using the fcmpass software package.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"3fsgh\",\"text\":\"FCMPASS software can be accessed at https://nanopass.ccr.cancer.gov.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Upon completing fluorescence and/or light scatter calibration steps click the ‘Calibrate’ button.",
+    "The FCMPASS software will now perform fluorescence and light scatter calibration. An FCMPASS export folder will be created in the directory from which the fcs files were imported. This folder will contain calibrated fcs files, a MIFlowCyt-EV report with fields relevant to fluorescence and light scatter calibration complete and supplementary sheets for reproducing the calibration. A calibration output report file will also be generated that contains the relevant figures to support the fluorescence calibration and light scatter calibration that was performed. All of these files should be kept together when shared.",
+    "The remaining fields within the MIFlowCyt-EV report should be completed as recommended in the associated position paper ."
+  ],
+  "authors": [
+    "Joshua A Welsh",
+    "Jennifer Jones"
+  ],
+  "creator": "Jennifer Jones",
+  "published_on": 1596442191,
+  "created_on": 1593040712,
+  "keywords": []
+}

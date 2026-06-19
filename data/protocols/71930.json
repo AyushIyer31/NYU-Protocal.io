@@ -1,0 +1,41 @@
+{
+  "id": 71930,
+  "title": "NanoLuciferase Assay ",
+  "uri": "nanoluciferase-assay-cig2ubye",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"f1o1o\",\"text\":\"Protocol for a luciferase assay to quantify promoter expression in marine bacteria.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"abcg7\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"ecf4p\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":957680,\"guid\":\"43758270341F11EE9D4302C0B41BC903\",\"name\":\"Nano-Glo live Cell Assay System\",\"mol_weight\":0,\"sku\":\"N2011\",\"url\":\"https://www.promega.com/en/products/luciferase-assays/reporter-assays/nano-glo-live-cell-assay-system/?catNum=N2011\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":23,\"name\":\"Promega\",\"link\":\"http://www.promega.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Streak out all strains from frozen stock onto the appropriate antibiotic plates. Including a positive and negative control. Pseudoalteromonas luteoviolacea expressing kanamycin resistant backbone was struck onto NSWT with 300 µg/mL of kanamycin Pseudoalteromonas sp . PS5 expressing kanamycin resistant plamid was struck onto Marine Broth (MB) with 300 µg/mL of kanamycin Wild type marine bacteria were grown on MB only media",
+    "Create sub-culture by inoculating 5 colonies from the plate into a 5 mL tube with appropriate media and antibiotics. Repeat for each strain into a separate 5 mL tube. Biological replicates should be in separate sub-cultures",
+    "Inoculate experimental culture from the sub-culture created in Day 2 with 1:100 dilution of media to sub-culture.",
+    "In 125 mL flask add 25 mL of media and 250 µL of sub-culture. Repeat for each strain and biological replicate into its own flask.",
+    "Take optical density OD 600 measurement right after inoculation to have a time point 0 (T0).",
+    "Continue to take optical density measurements to determine the major growth phases that will be tested in the NanoLuciferase assay. Test 2-3 strains to determine where the OD 600 is at. May need to retest every 30 minutes in the beginning to capture exponential phase. To measure OD 600 : Fill cuvettes in with 1 mL of sample and flick each vial before taking OD 600 measurement",
+    "Prepare luciferase plate by loading blank samples first to see if any of the wells including the blank are showing signal before the start of the assay.",
+    "Prepare mastermix for blanks reactions. Nano-Go Live Cell Assay System Promega Catalog #N2011 4 blanks 2.5 µL of Buffer x 4= 10 µL of Buffer + 0.5 µL of Substrate 17.5 µL of water x 4 = 70 µL 20 µL of blank media per well Run the plate with the blanks making sure to label to results as blanks in the computer software. Always have the machine read the whole plate and not just selected cells that have samples.",
+    "Prepare the sample only plate in a regular 96-well PCR plate. 100 µL of each sample culture laid out the same as the luciferase plate. Keep the layout the same so you can use a multichannel pipette to transfer the samples from the PCR plate to the luciferase plate. Shake or mix each flask before pipetting out the sample so that it is evenly mixed",
+    "Dilute the samples when making the samples plate. Past assays have been successful with the following dilution scheme. Pseudoalteromonas luteoviolacea was diluted in a range of 1:10 to 1:100. Pseudoalteromonas sp . PS5 was diluted in a range of 1:1,000 to 1:100,000. Late stationary and biofilm growth phases showed higher expression and required larger dilutions. Additionally, constitutive promoters required larger dilutions than native promoters. Use serial dilution of 1:100 in a regular 96-well plate first then proceed to do 10-fold dilutions to get to the above dilution levels.",
+    "Prepare the luciferase experimental plate. Use the mastermix reaction template to calculate the amount for your number of samples. i.e. For 72 reactions prep 80 reactions for mastermix 80 x 2.5 µL Buffer/Substrate = 200 µL Buffer + 10 µL Substrate 80 x 17.5 µL MilliQ Water = 1400µL MQ 20 µL of mastermix per well",
+    "Pipette 20 µL of mastermix in each well first.",
+    "Then, pipette 20 µL of sample into luciferase plate with mastermix using a multichannel pipette. Needs to be done as quickly as possible ~1 minute is ideal.",
+    "At each time point that you run the assay measure the optical density to normalize your luciferase data by OD 600 . Fill cuvettes in with 1 mL of sample. Flick each vial to mix before taking OD 600 measurement.",
+    "Incubate at 25ºC shaking at 200 rpm for 24 hours. Plan ahead! Start this step at a time that works best for you to perform the experiments on day 3.",
+    "Take the optical density (OD 600 ) measurement of the sub-cultures with a spectrophotometer to ensure they are in stationary phase.",
+    "Take 1.5ml of sub-culture and transfer into a micro centrifuge tube. Spin down to concentrate bacteria. Spin cultures at 4000g for 10 minutes Remove supernatant and avoid cell pellet",
+    "Resuspend bacterial pellet with 75 µL of liquid media.",
+    "Spot the entire 75 µL onto a single agar plate of the appropriate media and antibiotics. Inoculate plate for 24 hours at 25ºC"
+  ],
+  "authors": [
+    "afedoriouk",
+    "Morgan Farrell",
+    "Nicholas J Shikuma"
+  ],
+  "creator": "Morgan Farrell",
+  "published_on": 1675105392,
+  "created_on": 1666900694,
+  "keywords": []
+}

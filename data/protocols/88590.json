@@ -1,0 +1,41 @@
+{
+  "id": 88590,
+  "title": "Labeling of host immune cells with magnetic nanoparticles",
+  "uri": "labeling-of-host-immune-cells-with-magnetic-nanopa-c2rnyd5e",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgq36z3lk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"673vu\",\"text\":\"This protocol describes a technique to label the innate immune cells of a host squid, known as hemocytes, with commercially available magnetic nanoparticles (i.e., magdots). The goal of this technique is to label the hemocytes so that they could be reintroduced into the host animal and be tracked with downstream applications, such as fluorescence and magnetic particle imaging, or manipulated with techniques such as magnetic tweezers. The labeling technique can be applied to any cell type with phagocytic capabilities.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cs91\",\"text\":\"\\n\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"7go7m\",\"text\":\"Squid Ringer's Solution\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bs5qg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cs534\",\"text\":\"530 mM NaCl, \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6a4rh\",\"text\":\"10 mM KCl,\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8q830\",\"text\":\"25 mM MgCl2, \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":10,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"bchoq\",\"text\":\"10 mM CaCl2 and \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":10,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"45v00\",\"text\":\"10 mM HEPES buffer, \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ep0po\",\"text\":\"pH 7.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bd483\",\"text\":\"_________________________________\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5t6sm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fu4sh\",\"text\":\"Commercially Available MagDots\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"98egs\",\"text\":\"Polyethylene glycol magdots - emit fluorescence at 610 nm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d59ea\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ek3np\",\"text\":\"Note other Magdots available here:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bmcd5\",\"text\":\"https://www.corequantum.com/products/magdot/\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":44}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"DA7D26B45EE711EE955C0A58A9FEAC02\",\"url\":\"https://www.corequantum.com/products/magdot\"}}}}",
+  "steps": [
+    "Collect sample of target immune cells. Here, hemocytes extracted from the bobtail squid Euprymna scolopes were used.",
+    "Using an insulin 1 cc syringe (30 gauge needle) collect hemolymph from the cephalic artery in the bobtail squid as visualized in Collins and Nyholm, 2010. Typically, from an adult animal 200 µL can collected with a single bleeding event. Place the hemolymph in a 1.5 mL centrifuge tube.",
+    "Resuspend the hemocytes by vigorously pipetting the hemolymph 5 to 10 times. Be sure to break up any clumps of cells.",
+    "Distribute the hemolymph into the desired number of 1.5 mL centrifuge tubes based on the experimental design (e.g., four tubes for four conditions).",
+    "Centrifuge the hemocytes at 2000 RCF, 4°C for 15 minutes to pellet the hemocytes.",
+    "For this protocol, polyethylene glycol-coated MagDots that fluoresce at 610 nm from Core Quantum Technologies ( https://www.corequantum.com/ ) was used. Many other types of particles are available as well as other wavelengths and coatings. Note the concentration of the commercial product will vary between purchases. The goal is to have the final concentration of the magdots to be 100 µg/mL, therefore, adjust the volumes accordingly.",
+    "While the hemocytes are being pelleted, remove the total amount of magdots needed for all conditions and experimental treatments and place into a 1.5 mL centrifuge tube. Centrifuge the magdots at 10,000 RCF (or maximum speed) to pellet the magnetic particles and remove the supernatant containing the stabilization buffer that came with the particles. Note: you will likely have to leave a few µL of buffer behind (e.g. between 10 and 20 µL).",
+    "Resuspend the magdots in the total amount of buffer necessary for all samples. In this case, 80 µL of Squid Ringer&#39;s solution (see materials for recipe; Nyholm et al., 2009) was added per sample (e.g. 400 µL of Squid Ringer’s would be required for five samples).",
+    "Break up the magdot pellet with either a bath sonicator for 2 min or by vigorously pipetting until the pellet is dispersed.",
+    "Immediately after the hemocytes have been pelleted, remove cell-free hemolymph leaving only 20 µL (or 20% of the incubation volume if you are not using 100 µL).",
+    "Add the 80 µL of resuspended magdots in Squid Ringer&#39;s solution to each of the prepared tubes containing 20 µL of hemocytes for a final volume of 100 µL. Note the magdot final concentration should be 100 µg/mL.",
+    "For a negative control, add 100 µL of Squid Ringer&#39;s solution with no magdots added.",
+    "Incubate the hemocytes with the magdots overnight (between 12 - 24 h) in the dark at room temperature.",
+    "Following the incubation, resuspend the hemocytes and magdots by pipetting vigorously several times.",
+    "Immediately centrifuge the samples at 500 - 1000 RCF for 15 min to pellet the cells but keeping the free, unincorporated magdots suspended.",
+    "Gently remove the supernatant containing the magdots and discard.",
+    "Rinse the now labeled hemocytes by suspending in 100 - 200 µL of Squid Ringer&#39;s solution and centrifuge for 500 - 1000 RCF for 15 min.",
+    "Repeat the rinsing process 3 to 5 times until there are no magdots visible in the supernatant.",
+    "The labeled hemocytes are now ready for visualization or downstream application.",
+    "Pipette 5 µL of magdots per sample for a final concentration of 10 µg/ 100 µL. A typical labeling experiment would have 10 replicate hemocyte samples, therefore on average 50 µL of magdots are used per experiment."
+  ],
+  "authors": [
+    "Eric J. Koch",
+    "Jamie S Foster"
+  ],
+  "creator": "Jamie S Foster",
+  "published_on": 1711477828,
+  "created_on": 1695998779,
+  "keywords": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": 95917,
+  "title": "16S Gene PCR Amplification and Sanger Sequencing",
+  "uri": "16s-gene-pcr-amplification-and-sanger-sequencing-c9wmz7c6",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4qpxrvo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"6mpbm\",\"text\":\"After genomic DNA (gDNA) has been isolated and quantified, it can be used for many downstream applications. While we will use our genomic DNA samples for whole genome sequencing using Nanopore sequencing technology, we can also use the gDNA to amplify one gene for Sanger sequencing. These different sequencing methods contrast one another: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cins1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fbkdb\",\"text\":\"Table. Comparison of Nanopore and Sanger DNA Sequencing. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8hm7b\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3daqq\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"8ot6c\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"35h1r\",\"text\":\"PCR amplification of 16S\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8lbl\",\"text\":\"We will amplify the bacterial 16S gene, which encodes a subunit of ribosomes. Biologists use this gene to compare evolutionary relationships by sequence similarities and differences to organize biological taxonomies. Polymerase Chain Reaction (PCR) enables scientists to amplify many copies of a gene, and we will target 16S for amplification. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":98,\"length\":42}],\"entityRanges\":[{\"key\":1,\"offset\":98,\"length\":42}],\"data\":{}},{\"key\":\"85lot\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"MUTABLE\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"1_0\":\"\",\"1_1\":\"\",\"2_0\":\"\",\"2_1\":\"\",\"3_0\":\"\",\"3_1\":\"\"},\"colTitles\":[],\"colWidths\":[],\"data\":[[\"Nanopore Sequencing\",\"Sanger Sequencing\"],[\"High Throughput (many genes at once)\",\"Low Throughput (one gene at a time)\"],[\"Sequences gDNA directly\",\"Sequences PCR amplified DNA\"],[\"Ion current base calling\",\"Fluorophore base calling\"]],\"guid\":\"7951B7470BE2473B98C73332ADA7DFBF\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":[],\"printData\":[[\"Nanopore Sequencing\",\"Sanger Sequencing\"],[\"High Throughput (many genes at once)\",\"Low Throughput (one gene at a time)\"],[\"Sequences gDNA directly\",\"Sequences PCR amplified DNA\"],[\"Ion current base calling\",\"Fluorophore base calling\"]],\"rowHeights\":[]}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"1_0\":\"\",\"1_1\":\"\",\"2_0\":\"\",\"2_1\":\"\",\"3_0\":\"\",\"3_1\":\"\"},\"colTitles\":[],\"colWidths\":[],\"data\":[[\"Nanopore Sequencing\",\"Sanger Sequencing\"],[\"High Throughput (many genes at once)\",\"Low Throughput (one gene at a time)\"],[\"Sequences gDNA directly\",\"Sequences PCR amplified DNA\"],[\"Ion current base calling\",\"Fluorophore base calling\"]],\"guid\":\"7951B7470BE2473B98C73332ADA7DFBF\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":[],\"printData\":[[\"Nanopore Sequencing\",\"Sanger Sequencing\"],[\"High Throughput (many genes at once)\",\"Low Throughput (one gene at a time)\"],[\"Sequences gDNA directly\",\"Sequences PCR amplified DNA\"],[\"Ion current base calling\",\"Fluorophore base calling\"]],\"rowHeights\":[],\"url\":\"https://www.nature.com/articles/s41467-019-13036-1\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Polymerase chain reaction - PCR. Created with BioRender. PCR Cycles Diagram indicating the three main steps: denaturation at 95-96°C, annealing at 68°C, and elongation at 72°C. Created with BioRender.com You can learn about this reaction by watching the video “ Polymerase Chain Reaction .” After completing this lab, you will gain the following lab skills: Lab safety and proper personal protective equipment (PPE) Setup of two PCR reactions. Proper use of a thermocycler for PCR.",
+    "Note Before You Begin: Review the protocols and figures below to learn how the 16S PCR will help us amplify regions of this gene. %s %s For each gDNA sample, set up two reactions : one LONG reaction with primers 27fwd + 1492rev one SHORT reaction with 515fwd + 1492rev We will use the Q5 Hot Start High-Fidelity 2X Master Mix - 100 rxns New England Biolabs Catalog #M0494S and primers ordered from IDTA and prepared to be LabReady. Q5 Hot Start High-Fidelity 2X Master Mix - 100 rxns New England Biolabs Catalog #M0494S %s %s Source: Identification of unknown bacterial isolates using Sanger sequencing of the 16S rRNA gene | CHMI services Bacterial 16S Gene Schematic for Amplification and Sanger Sequencing. The structure of the 16S rRNA gene is presented along with the primers and their annealing sites. Created with BioRender.com Thermocycler protocol table. Adapted from NEB Protocol for Q5 2X Hot Start Master Mix.",
+    "To remove the reagents from the PCR and isolate pure DNA for Sanger sequencing, we need to &#34;clean up&#34; our amplified DNA samples. In BIT 295, we use reagents from the QIAquick PCR Purification Kit Qiagen Catalog #28104 Kit.",
+    "Add all 50 µL of the PCR reaction to five volumes ( 250 µL ) PB buffer",
+    "Mix and transfer to pink spin column",
+    "Sample Centrifuge at 10.000 rpm, , 30 seconds",
+    "Remove flow through",
+    "Add 750 µL PE to wash the column. Incubate at RT for 1 minute.",
+    "Centrifuge at 10.000 rpm, , 30 seconds",
+    "Remove the spin column from the collection tube and add to a new wash tube",
+    "Centrifuge at 10.000 rpm, , 30 seconds to remove all ethanol wash",
+    "Remove the spin column from the collection tube and add itto a new collection tube",
+    "Add 50 µL EB to elute. Incubate at RT for 1 minute.",
+    "2 µL Centrifuge at 10.000 rpm, , 30 seconds",
+    "Remove the spin column and throw away",
+    "Quantify 2 µl using the Implen that has been blanked with the elution buffer (EB).",
+    "DNA can be stored at 4 °C or on ice while being used and should be stored long-term at -20 °C",
+    "For Sanger sequencing, start by sending out 20 µL of ~100 ng/µL DNA of your LONG amplicon for three sequencing reactions with all three primers 27fwd, 515 fwd, and 1492rev. Prepare 10 µL a 1:10 dilution of your 100 µM primers.",
+    "If you do not get clear chromatograms to interpret the sequence, next send out your SHORT amplicon for Sanger sequencing with only primers 515fwd and 1992rev. Prepare 10µL a 1:10 dilution of your 100 µM primers. 16S rRNA Sequencing: A PCR-based Technique to Identify Bacterial Species Adapted from: Identification of unknown bacterial isolates using Sanger sequencing of the 16S rRNA gene | CHMI services ."
+  ],
+  "authors": [
+    "Carlos Carlos Goller"
+  ],
+  "creator": "Carlos Carlos Goller",
+  "published_on": 1709165758,
+  "created_on": 1709164662,
+  "keywords": []
+}

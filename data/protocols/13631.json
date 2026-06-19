@@ -1,0 +1,30 @@
+{
+  "id": 13631,
+  "title": "Real time PCR of mouse liver tissue ",
+  "uri": "real-time-pcr-of-mouse-liver-tissue-ri7d4hn",
+  "doi": "dx.doi.org/10.17504/protocols.io.ri7d4hn",
+  "description": "{\"blocks\":[{\"key\":\"7c8m9\",\"text\":\"A real-time PCR to detect RNA in mouse liver tissue. This method has been adapted from a\\npublication by Liu XJ et al 2014, and the oligonucleotides have been modified and a different PCR kit\\nused.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"1hm93\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"53mvq\",\"text\":\"If using a different brand or model of real-time thermocycler, check the concentration of ROX is\\nadequate.\\nMethod assumes the user is familiar with the thermocycler and software used to run the\\nprotocol and with PCR in general.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"2n3ku\",\"text\":\"Don't contaminate cDNA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "%s %s",
+    "Assay has been used on a LightCycler 480 instrument (Roche Diagnostics) using 96-place rotor discs.Total reaction volume is 20μL.Prepare sufficient for number of reaction plus a &#39;dead volume&#39; usually 2 extra. Adjust as necessary if using a robotic dispenser.",
+    "%s %s",
+    "%s %s",
+    "The definition used for a satisfactory positive result from a realtime fluorogenic PCR should include each of the following:",
+    "A sigmoidal curve – the trace travels horizontally, curves upward, continues in an exponential rise and followed by a curve towards a horizontal plateau phase",
+    "A suitable level of fluorescence intensity as measured in comparison to a positive control (y-axis)",
+    "A defined threshold (CT) value which the fluorescent curve has clearly exceeded (Fig.1 arrow) and which sits early in the log-linear phase and is &lt;40 cycles",
+    "A flat or non-sigmoidal curve or a curve that crosses the threshold with a CT value &gt;40 cycles is considered a negative result",
+    "NTCs should not produce a curve"
+  ],
+  "authors": [
+    "Mei Zhao"
+  ],
+  "creator": "Mei Zhao",
+  "published_on": 1530973493,
+  "created_on": 1530967056,
+  "keywords": []
+}

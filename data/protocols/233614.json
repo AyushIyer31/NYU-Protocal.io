@@ -1,0 +1,32 @@
+{
+  "id": 233614,
+  "title": "JAX_DPC: Library preparation using Watchmaker RNA Library Prep Kit with Polaris™ Depletion for Bulk RNAseq",
+  "uri": "jax-dpc-library-preparation-using-watchmaker-rna-l-hgdnb3s5f",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvw43mwlmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"aoa2f\",\"text\":\"This protocol describes the preparation and sequence of libraries for bulk RNAseq with RNA extracted from cortical brain organoids or extra-embryonic derived iPSCs. Herein we use Watchmaker RNA Library Prep Kit with Polaris‱ Depletion for library construction and NovaSeq X Plus from Illumina.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":223,\"length\":1}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"775CC168CB0A11F0B39B0A58A9FEAC02\",\"name\":\":tm:\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "rRNA and Globin depleted RNASeq Library Construction",
+    "NovaSeq X Plus Workflow: 10B Flow Cell",
+    "RNA extraction from cell pellet",
+    "For regular samples use the RNase-Free DNase Set from Qiagen to extract RNA according to the manufacturer’s protocol: https://www.qiagen.com/us/resources/resourcedetail?id=b0ca9e5a-ff87-476e-811b-ff80e4f07b3f&amp;lang=en",
+    "The input parameters process workflow and library construction for the rRNA and Globin depleted RNASeq Library Construction from Watchmaker is described below: https://www.watchmakergenomics.com/rna-ngs-solutions/rna-with-polaris.html Indexes used are IDT for Illumina – TruSeq DNA UD Indexes v2 (96 Indexes, 96 Samples) #20040870 https://www.illumina.com/content/dam/illumina-marketing/documents/products/datasheets/datasheet_truseq_dna_pcr_free_sample_prep.pdf",
+    "The NovaSeq X Plus from Illumina is used for sequencing. Sequencing on this instrument is on a patterned flow cell with two color chemistry (green and blue). Sequencing is on a 10B Flow Cell with 8 lanes and can currently be done in 100 cycles, 200 cycles or 300 cycles. Note that each cycle kit comes with 38 cycles to account for index reads. Each lane yields 1250M reads.",
+    "For samples with lower cell count use the PicoPure‱ RNA Isolation Kit from ThermoFisher Scientific following the protocol below: https://assets.thermofisher.com/TFS-Assets/CSD/manuals/MAN1000651-PicoPureRNAIsolationKit-UG.pdf",
+    "Measure the RNA concentration using DS-11 FX+ Spectrophotometer Fluorometer and proceed for library construction of samples with input of 300ng."
+  ],
+  "authors": [
+    "Christine Goldfarb",
+    "Yongjun Huang",
+    "Jennifer Idol",
+    "chewyee.ngan",
+    "Mark Adams"
+  ],
+  "creator": "Juliana Alcoforado Diniz",
+  "published_on": 1764219457,
+  "created_on": 1764190157,
+  "keywords": []
+}

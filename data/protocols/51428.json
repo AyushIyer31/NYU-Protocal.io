@@ -1,0 +1,42 @@
+{
+  "id": 51428,
+  "title": "Generation of Stable STING-GFP cells using retrovirus",
+  "uri": "generation-of-stable-sting-gfp-cells-using-retrovi-bwgcpbsw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl85xp7l2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"b2scu\",\"text\":\"This method describes the generation of HeLa cells stably expressing STING-GFP using retroviral transduction in order to study the localization of STING under different conditions.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"5h2ld\",\"text\":\"All appropriate biosafety precautions should be observed when handling retrovirus.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"c8onn\",\"text\":\"DNA Reagents:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":13}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7oiml\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7drv0\",\"text\":\"  \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"1t774\",\"text\":\"pEGFP-N1 (Clontech)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8hhqn\",\"text\":\"  \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"57qvt\",\"text\":\"The sequences for the primers used are listed in Table S1 of our manuscript.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5hk5a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5q7j8\",\"text\":\"Solutions to prepare:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":21}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1c1h3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4k1ts\",\"text\":\"DMEM (-P/S) solution: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":21}],\"entityRanges\":[],\"data\":{}},{\"key\":\"bpr5q\",\"text\":\"      FBS  10%    L-glutamine   2 mM  \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":38}],\"data\":{}},{\"key\":\"d14ua\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4kgl9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d3hvc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":952609,\"guid\":\"43699FCE341F11EE9D4302C0B41BC903\",\"name\":\"STING-V1\",\"mol_weight\":0,\"sku\":\"124262\",\"url\":\"https://www.addgene.org/search/catalog/plasmids/?q=124262\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":6,\"name\":\"addgene\",\"link\":\"http://www.addgene.org\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/6.png\",\"placeholder\":\"/img/vendors/6.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":952612,\"guid\":\"4369A0CD341F11EE9D4302C0B41BC903\",\"name\":\"pMXs-IRES-Bsd Retroviral Expression Vector\",\"mol_weight\":0,\"sku\":\"RTV-016\",\"url\":\"https://www.cellbiolabs.com/pmxs-ires-bsd-retroviral-expression-vector\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":401,\"name\":\"Cell Biolabs, Inc\",\"link\":\"https://www.cellbiolabs.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"tables\",\"mutability\":\"\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"1_0\":\"\",\"1_1\":\"\"},\"colTitles\":[\"\",\"\"],\"colWidths\":[\"118\",48],\"data\":[[\"FBS\",\"10%\"],[\"L-glutamine\\u0026nbsp;\",\"2 mM\"]],\"guid\":\"32524FCDE09011EBA3380A58A9FEAC02\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"FBS\",\"10%\"],[\"L-glutamine\\u0026nbsp;\",\"2 mM\"]],\"rowHeights\":[23,23]}}}}",
+  "steps": [
+    "Amplify the coding sequence for human STING using PrimeSTAR GXL DNA polymerase (Takara Bio) according to manufacturer protocol. Primers include a XhoI restriction site at the 5’ end and a SacII restriction site at the 3’ end.",
+    "Purify the amplicon from PCR reaction mixture using a NucleoSpin Gel and PCR Cleanup kit (Macherey-Nagel) and run amplicon in an agarose gel to confirm expected size.",
+    "Digest the hSTING PCR product and pEGFP-N1 plasmid using XhoI and SacII restriction enzymes (New England BioLabs) in CutSmart buffer (New England BioLabs) according to manufacturer protocol.",
+    "Run digested products in an agarose gel to confirm expected size and purify the DNA from gel using a NucleoSpin Gel and PCR Clean-up kit (Macherey-Nagel).",
+    "Ligate the digested hSTING amplicon and linearized pEGFP-N1 backbone using T4 ligase (New England BioLabs) according to manufacturer protocol.",
+    "Transform product of ligation reaction into competent E. coli, and plate on kanamycin resistant agar plates. Incubate at 37 °C for 16:00:00 .",
+    "Pick single bacterial colonies and expand. Grow in 5 mL LB media at 37 °C for 16:00:00 .",
+    "Purify plasmid by Mini-Prep (Qiagen) and sequence.",
+    "Digest the hSTING-EGFP-N1 and pMXs-IRES-Blasticidin Retroviral Vector backbone using XhoI and NotI-HF restriction enzymes (New England BioLabs) in CutSmart buffer (New England BioLabs) according to manufacturer protocol.",
+    "Run digested products in an agarose gel to confirm expected size and purify the DNA from gel using a NucleoSpin Gel and PCR Clean-up kit (Macherey-Nagel)",
+    "Ligate the digested hSTING-EGFP amplicon and linearized pMXs-IRES-Blasticidin Retroviral Vector backbone using T4 ligase (New England BioLabs) according to manufacturer protocol.",
+    "Transform product of ligation reaction into competent E. coli, and plate on kanamycin resistant agar plates. Incubate at 37 °C for 16:00:00 .",
+    "Pick single bacterial colonies and expand. Grow in 5 mL LB media at 37 °C for 16:00:00 .",
+    "Purify plasmid by Mini-Prep or Maxi-Prep (Qiagen) and sequence.",
+    "Plate 5 x 10 6 Plat-A cells (Cell Biolabs) on a 10 cm plate in DMEM (-P/S).",
+    "The following day, transfect cells with 9 µg of pMX-STING-GFP using Fugene HD (Promega).",
+    "At 48:00:00 post-transfection, plate target HeLa cells at 2.5 x 10 5 in DMEM (-P/S) 6 well format.",
+    "At 72:00:00 post-transfection, collect retroviral supernatant into a falcon tube and supplement with 8 μg/ml Polybrene (Millipore).",
+    "Pass supernatant through 0.22 μm filter to remove cellular debris and add to target HeLa cells.",
+    "At 24:00:00 post-transduction, remove retroviral supernatant and replace with fresh DMEM complete.",
+    "At 48:00:00 post-transduction, sort HeLa cells by FACS to enrich for GFP positive cells."
+  ],
+  "authors": [
+    "Will Hancock-Cerutti",
+    "Pietro De Camilli"
+  ],
+  "creator": "William Hancock-Cerutti",
+  "published_on": 1650258655,
+  "created_on": 1625818097,
+  "keywords": []
+}

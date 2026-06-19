@@ -1,0 +1,42 @@
+{
+  "id": 32173,
+  "title": "One-pot native barcoding of amplicons",
+  "uri": "one-pot-native-barcoding-of-amplicons-bbnmimc6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bbnmimc6",
+  "description": "{\"blocks\":[{\"key\":\"qnlk\",\"text\":\"This is a ‘one-pot ligation’ protocol for Oxford Nanopore native barcoded ligation libraries using shearing. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"at5nj\",\"text\":\"Scope:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":6}],\"entityRanges\":[],\"data\":[]},{\"key\":\"5io0u\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"20hqd\",\"text\":\"There has been no evidence of a reduction of performance compared to standard libraries, yet it can be made faster by using the Ultra II ligation module which is compatible with the Ultra II end repair/dA-tailing module removing a clean-up step.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6r4o\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"eoksp\",\"text\":\"The FFPE DNA repair step is optional. If you have the time, we recommend using the double incubation times in bold. If you are in a hurry, the times in italic are a good compromise between speed and efficiency.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":110,\"length\":4},{\"style\":\"italic\",\"offset\":152,\"length\":6}],\"entityRanges\":[],\"data\":[]},{\"key\":\"89bs5\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"bqinf\",\"text\":\"Required:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":[]},{\"key\":\"be1kp\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"72vvo\",\"text\":\"g-TUBEs (optional)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3f7vt\",\"text\":\"SQK-LSK108 1D ligation kit\\nNative barcoding kit\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"710ir\",\"text\":\"Ultra II End Repair/dA-Tailing Module\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"1pj00\",\"text\":\"Ultra II Ligation Module\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"1pk39\",\"text\":\"FFPE DNA Repair Mix (optional)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"asuh6\",\"text\":\"Ampure XP beads\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"cth82\",\"text\":\"80% ethanol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"c04en\",\"text\":\"EB (10 mM Tris-HCl pH 8)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"a72p9\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"diavb\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"eljah\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"dt4lr\",\"text\":\"See SDS (Safety Data Sheet) for safety warnings and hazards.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Set up the following reaction for each sample: Component Volume DNA amplicons 5 µL Nuclease-free water 7.5 µL Ultra II End Prep Reaction Buffer 1.75 µL Ultra II End Prep Enzyme Mix 0.75 µL Total 15 µL",
+    "Incubate at room temperature for 00:10:00 Incubate at 65 °C f for 00:05:00 Incubate on ice for 00:01:00",
+    "Add the following directly to the previous reactions: Component Volume NBXX barcode 2.5 µL Ultra II Ligation Master Mix 17.5 µL Ligation Enhancer 0.5 µL Total 35.5 µL Use one native barcode from the EXP-NBD104 (1-12) or EXP-NBD114 (13-24) per sample. Use from 6 to 24 barcodes in a library, any fewer and there will be insufficient total material to achieve good yields.",
+    "Incubate at room temperature for 00:15:00 Incubate at 70 °C for 00:10:00 Incubate on ice for 00:01:00 The 70°C incubation is to inactivate the DNA ligase to prevent barcode cross-ligation when reactions are pooled in the next step.",
+    "Pool all barcoded fragments together into a new 1.5 ml Eppendorf tube. Amplicon clean-up using SPRI beads by Josh Quick",
+    "Quantify the barcoded amplicon pools using the Quantus Fluorometer using the ONE dsDNA assay. DNA quantification using the Quantus fluorometer by Josh Quick",
+    "Set up the following AMII adapter ligation reaction: Component Volume Barcoded amplicon pools 30 µL NEBNext Quick Ligation Reaction Buffer (5X) 10 µL AMII adapter mix 5 µL Quick T4 DNA Ligase 5 µL Total 50 µL The input of barcoded amplicon pools will depend on the number of barcoded pools and should be between 40 ng (8 barcodes) and 160 ng (24 barcodes).",
+    "Incubate at room temperature for 00:15:00",
+    "Add 50 µL (1:1) of SPRI beads to the sample tube and mix gently by either flicking or pipetting. Vortex SPRI beads thoroughly before use to ensure they are well resuspended, the solution should be a homogenous brown colour.",
+    "Pulse centrifuge to collect all liquid at the bottom of the tube.",
+    "Incubate for 00:05:00 at room temperature.",
+    "Place on magnetic rack and incubate for 00:02:00 or until the beads have pelleted and the supernatant is completely clear.",
+    "Carefully remove and discard the supernatant, being careful not to touch the bead pellet.",
+    "Add 200 µL SFB and resuspend beads completely by pipette mixing. SFB will remove excess adapter without damaging the adapter-protein complexes. Do not use 70% ethanol as in early clean-ups.",
+    "Pulse centrifuge to collect all liquid at the bottom of the tube.",
+    "Remove supernatant and discard.",
+    "Repeat steps 14-16 to perform a second SFB wash.",
+    "Pulse centrifuge and remove any residual SFB. You do not need to allow to air dry with SFB washes.",
+    "Add 15 µL EB and resuspend beads by pipette mixing.",
+    "Incubate at room temperature for 00:02:00 .",
+    "Place on magnetic rack.",
+    "Transfer final library to a new 1.5mL Eppendorf tube."
+  ],
+  "authors": [
+    "Josh Quick"
+  ],
+  "creator": "Josh Quick",
+  "published_on": 1599581164,
+  "created_on": 1579706490,
+  "keywords": []
+}

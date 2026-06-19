@@ -1,0 +1,36 @@
+{
+  "id": 70925,
+  "title": "RNA extraction from E. coli",
+  "uri": "rna-extraction-from-e-coli-chhmt346",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlkw44wl5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"65ejp\",\"text\":\"RNA extraction is a fundamental step in multiple experiments, for example, qPCR. This protocol helps conduct a simple RNA extraction procedure.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"edb7v\",\"text\":\"Buffer LY (added 1% volume of dithiothreitol), Buffer RB, RNA Wash Buffer, DEPC-Treated ddH2O, RNA Columns, DNA Clearance Column, Collection Tubes, 1.5 mL RNase-free microfuge tube, Lysozyme buffer (0.4 mg/mL)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":91,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Grow an overnight bacterial culture in the appropriate media at an appropriate temperature.",
+    "In the following day, take 1 mL from overnight culture and add into 10 mL LB media. Grow until the OD600 reads at 0.6-1.0.",
+    "Harvest 1.5 mL culture (&lt; 5x10%) by centrifugation at 3.000 rpm, , 10 minutes for 10 min in a 1.5 mL microcentrifuge tube.",
+    "Discard all supernatant. You may use a pipette to remove the remaining liquid at the bottom of the tube.",
+    "Resuspend the pellet in 100 µL freshly prepared Elution Buffer (10mM Tris-HCL pH 8.5) containing lysozyme (0.4 mg/mL lysozyme for Gram negative bacteria). Mix by tapping gently.",
+    "Incubate the resuspended pellet at room temperature for 3-5 min for Gram-negative bacteria.",
+    "Add 400 μL Buffer LY. Mix gently.",
+    "Transfer the cleared lysate to a DNA Clearance column pre-inserted in a 2 mL Collection Tube. Centrifuge at 13.000 rpm, , 2 minutes . Discard the DNA Clearance column and save the flow-through.",
+    "Transfer flow-through to the RNA binding column. Add 0.5 volume 100% ethanol to the lysate. For example: 250 μL 100% ethanol for 500 μL.",
+    "Centrifuge at 13000 rpm, , 1 minute . Discard the collection tube with the flow through and put the column back to a new collection tube.",
+    "Add 500 µL Buffer RB to the column and centrifuge at 13.000 rpm, , 30 seconds . Discard the flow-through.",
+    "Add another 500 µL RNA Wash Buffer to the column and centrifuge at 13000 rpm, , 30 seconds . Discard the flow-through. Ethanol should be first added into RNA Wash Buffer before use.",
+    "Add another 500 µL RNA Wash Buffer to the column and centrifuge at 13000 rpm, , 30 seconds . Discard the flow-through and collection tube, put the column into a new collection tube.",
+    "Centrifuge the column at 13000 rpm, , , with the lid open, for another 00:01:00 .",
+    "Place the column to a RNase-free 1.5 mL tube, add 50-100 μL DEPC treated ddH 2 O to the column and centrifuge at 13000 rpm, , 2 minutes . The RNA is in the flow-through.",
+    "Store the RNA solution at -20 °C ."
+  ],
+  "authors": [
+    "An.Huang"
+  ],
+  "creator": "An.Huang",
+  "published_on": 1665167633,
+  "created_on": 1665062708,
+  "keywords": []
+}

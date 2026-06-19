@@ -1,0 +1,42 @@
+{
+  "id": 121398,
+  "title": "Standardized Relative Quantification of Immunofluorescence Tissue Staining",
+  "uri": "standardized-relative-quantification-of-immunofluo-d2sw8efe",
+  "doi": "dx.doi.org/10.1038/protex.2012.008",
+  "description": "{\"blocks\":[{\"key\":\"mk3lm\",\"text\":\"The detection of correlations between the expression levels or sub-cellular localization of different proteins with specific characteristics of human tumors, such as e.g. grade of malignancy, may give important hints of functional associations. Here we describe the method we use for relative quantification of immunofluorescence staining of tumor tissue sections, which allows us to compare between different samples based on objective data. With this strategy we have quantified, for instance, the amounts of nuclear FOXO3a and Beta-Catenin proteins in human colon carcinomas.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"ltpyp\",\"text\":\"Tissue immunohistochemistry is widely used in clinical pathology to characterize and classify tissue samples of patients. However, in many cases this procedure relies on subjective qualitative criteria. \\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"rjniu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"oii5x\",\"text\":\"Here we describe the method we use in our laboratory for relative quantification of immunofluorescence staining of tumor tissue sections, which allow us compare between different samples based on objective data.\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"osp5t\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fho4d\",\"text\":\"As an example, we describe the following protocol for the measurement of nuclear protein contents (Protein X and Protein Y) in paraffin embedded tissue sections.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"i48o3\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"gctr0\",\"text\":\"Standard reagents for immunofluorescent staining of histological sections\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"odmsh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ets76\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"qtuw9\",\"text\":\"• Standard equipment for immunohistochemistry.\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"tqf5w\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aihlf\",\"text\":\"• Standard confocal microscope.\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vteuw\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"upbon\",\"text\":\"• Image J Software: MBF \\\"ImageJ for Microscopy\\\" program (www.macbiophotonics.ca)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Perform a standard immunofluorescent staining of the samples of choice. Stain for a single protein or carry out double immunofluorescence combining suitable secondary antibodies (e.g. Protein X-red, Protein Y-green) and always stain nuclei with DAPI or Hoechst 33342.",
+    "Take standard confocal images (at least five frames for each sample).",
+    "Perform immunofluorescence quantification using ImageJ software as detailed as follows: Define Regions of Interest (ROI, see Fig. 1) using the Polygon or the Freehand selection tool, delimiting tumor tissue from stroma or adjacent regions.",
+    "Split the image into the two or three color channels (RGB Merge/split function) to obtain one image per channel.",
+    "First, to determine the average number of cells present in the previously defined ROI, use the Measure option in the program’s ROI Manager, to assess the integrated density value (IDV) for the blue channel (Hoechst 33342 or DAPI staining).",
+    "Using the Elliptical selection tool mark at least ten representative nuclei, covering the different sizes and intensities throughout the ROI. Then determine the IDV for all the selected nuclei and calculate the mean nucleus value.",
+    "Divide the blue channel IDV by the mean nucleus value. The resulting value corresponds to the average number of cells present in each respective ROI.",
+    "Next, to quantify individual Protein X (red) content per nucleus, open the Image calculator from the Process menu.",
+    "Create a merged image combining the red channel image with the blue channel image using the operator AND. The merged picture shows nuclear localized Protein X.",
+    "Measure the IDV of the respective ROI in this newly created merged image and divide it by the average number of cells calculated before. This represents the Protein X content per nucleus.",
+    "Analogously, repeat this procedure with the green channel image to obtain the Protein Y content per nucleus.",
+    "The same way, to get the Protein X and Y colocalization signal value, use the Image calculator and the AND operator with the previously merged images of red/blue and green/blue channels. Then repeat the division between IDV the particular ROI and the average number of cells.",
+    "Represent the obtained values in scattered plots representing the level of expression for each protein per cell nucleus analyzed, noted as relative units (r. u.) indicating mean and 95% confidence interval.",
+    "Do suitable statistics, such as the non-parametric Kruskal-Wallis test that is used to compare three or more groups of unpaired values that did not follow any particular distribution. Thereby, Dunn’s multiple comparison post-test serves to identify the significance (P value)of differences in the sum of ranks between each pair of groups of values.",
+    "• It is essential for relative quantification to define a good control value to refer to. You may compare values between tumors of different stages or you may choose untreated tissue as a reference. • Make sure to obtain a technically homogenous staining. • In the case of analysis of tumor samples, differentiating tumor tissue from stroma or adjacent tissue is a key step during ROI selection to assure integer results.",
+    "Non declared",
+    "SPROUTY-2 and E-cadherin regulate reciprocally and dictate colon cancer cell tumourigenicity by A Barbáchano, P Ordóñez-Morán, J M García, A Sánchez, F Pereira, M J Larriba, N Martínez, J Hernández, S Landolfi, F Bonilla, H G Pálmer, J M Rojas, and A Muñoz published in Oncogene on 30 Mar, 2012 https://dx.doi.org/10.1038/onc.2010.225",
+    "Figure 1. ROI selection Example of the ROI defined in an image of a immunostained human colon cancer section. Excluded zones such as tumor stroma are delimited by yellow lines.; Red, Protein X; Green, Protein Y Blue, DAPI stained nuclei."
+  ],
+  "authors": [
+    "Stephan Tenbaum",
+    "Héctor . Palmer",
+    "Oriol Arqués",
+    "Irene Chicote",
+    "Isabel Puig"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1333374403,
+  "created_on": 1333374403,
+  "keywords": []
+}

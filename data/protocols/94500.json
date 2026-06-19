@@ -1,0 +1,38 @@
+{
+  "id": 94500,
+  "title": "Chelex-based DNA extraction protocol for insect museum vouchers",
+  "uri": "chelex-based-dna-extraction-protocol-for-insect-mu-c8iczuaw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6x54rlqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"56hof\",\"text\":\"Museum biorepositories preserve precious material for scientific research in several fields such as biodiversity, phylogenetics, population genetics, toxicology, environmental monitoring and pathology.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e9686\",\"text\":\"About half of the 8.7 million described species on Earth are insects and harbor a diverse community of microorganisms representing different association types, such as parasitic, mutualistic, and commensal.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"24h21\",\"text\":\"Voucher specimens may play an important role in tracking insect-microbiome associations.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4bgt8\",\"text\":\"Catalog records and voucher specimens are the primary source for: (1) tracking past associations and inferring evolutionary pathways; (2) documenting associations in no longer accessible collection sites; (3) revising the taxonomic status of the associates; (4) resampling the associations over time when new technologies become available.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"60kjm\",\"text\":\"Here we present a non-destructive, fast, inexpensive, non-toxic protocol for DNA extraction from insect museum specimens with the aim to obtain high quality nucleic acid and sufficient yield for vector-borne pathogens detection, quantification and characterization.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"c8fen\",\"text\":\"    \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1},{\"key\":1,\"offset\":2,\"length\":1}],\"data\":{}},{\"key\":\"6favs\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"121fu\",\"text\":\"    \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":3,\"offset\":0,\"length\":1},{\"key\":4,\"offset\":2,\"length\":1}],\"data\":{}},{\"key\":\"1o5on\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":219496,\"guid\":\"41C870AC341F11EE9D4302C0B41BC903\",\"name\":\"UltraPure\\u0026trade; SDS Solution, 10%\",\"mol_weight\":0,\"sku\":\"24730020\",\"url\":\"https://www.thermofisher.com/order/catalog/product/24730020\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":962830,\"guid\":\"E7405C2FF7564B18BCF4264701E337CF\",\"name\":\"Chelex-100 resin\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"http://\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":41,\"name\":\"Bio-Rad Laboratories\",\"link\":\"http://www.bio-rad.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":126046,\"guid\":\"41A01C2B341F11EE9D4302C0B41BC903\",\"name\":\"95% EtOH\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}},\"3\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":961876,\"guid\":\"D674165B5C92408A95D61F84DD037C88\",\"name\":\"1M Tris-HCl, pH 8.0\",\"mol_weight\":0,\"sku\":\"15568025\",\"url\":\"http://\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":191,\"name\":\"Invitrogen - Thermo Fisher\",\"link\":\"http://www.thermofisher.com/us/en/home/brands/invitrogen.html\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"4\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":2670,\"guid\":\"4104A51B341F11EE9D4302C0B41BC903\",\"name\":\"EDTA (0.5 M), pH 8.0\",\"mol_weight\":0,\"sku\":\"AM9260G\",\"url\":\"https://www.lifetechnologies.com/order/catalog/product/AM9260G\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":11,\"name\":\"Life Technologies\",\"link\":\"http://www.lifetechnologies.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Transfer the the ethanol-preserved Sample on a piece of paper towel to allow the ethanol to evaporate for a few minutes. For dry insect voucher, re-hydrate the Sample in a humidifying chamber Overnight",
+    "Place Sample in a 1.5 mL centrifuge tube containing 500 µL ethanol 90 % (v/v) for 00:02:00 .",
+    "Discard the ethanol and add 500 µL bleach 2.5 % (v/v) (NaOCl - The Clorox Co., Oakland, CA, USA) for 00:05:00 at 7.5 °C . The insect body must be fully immersed in the bleach solution.",
+    "Discard bleach solution and rinse 3 X with 250 µL of sterile water, discard the water each time.",
+    "Pipet 50 µL TES buffer and 2 µL Proteinase K ( 10 mg/mL , Qiagen) into the tube. Prepare TES buffer (Tris-HCl 20 millimolar (mM), pH 8.0 , EDTA 10 millimolar (mM) , SDS 0.5 % (v/v) ) For 10 mL TES add 0.2 mL EDTA 0.5 Molarity (M) , 0.5 mL SDS 10 % (v/v) , 0.2 mL Tris-HCl 1 Molarity (M) , 9.1 mL water (MilliQ)",
+    "Place the Sample into a fresh 1.5 mL centrifuge tube.",
+    "Incubate 55 °C Overnight ;",
+    "Centrifugate the sample for a few seconds to spin down the liquid. With a pipet, transfer 50 µL of the liquid sample into a fresh tube. Store the Sample as appropriate for further morphological studies.",
+    "Place a flask containing a 25 Mass / % volume Chelex 100 suspension on a magnetic agitator and mix.",
+    "Pipet 40 µL of Chelex directly from the agitator into the tube with the sample.",
+    "Incubate the tube at 55 °C for 00:30:00 . Do not shake the tube.",
+    "Gently invert the tube 5 times.",
+    "Allow the solution to cool down to Room temperature .",
+    "Centrifugate at 14000 rpm, °C, for 00:01:00 .",
+    "Transfer the supernatant into a fresh 1.5 mL centrifuge tube. The present protocol do not include toxic chemicals",
+    "Prepare 25 Mass / % volume Chelex 100 suspension. Add 2.5 g Chelex 100 resin into 10 mL water (MilliQ or NANOpure)"
+  ],
+  "authors": [
+    "Morgan Brown",
+    "Sara Ottati",
+    "Valeria Trivellone"
+  ],
+  "creator": "Valeria Trivellone",
+  "published_on": 1736738228,
+  "created_on": 1706726391,
+  "keywords": []
+}

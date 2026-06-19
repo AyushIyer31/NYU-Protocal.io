@@ -1,0 +1,28 @@
+{
+  "id": 232624,
+  "title": "MEA Recording of Electrical Activity in Brain Organoids",
+  "uri": "mea-recording-of-electrical-activity-in-brain-orga-hfeqb3jdx",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6z65zgqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"dv4h9\",\"text\":\"This protocol describes recording spontaneous and pharmacologically modulated activity from brain organoids using a high-density 3D MEA system. Adapt electrode layout, chip type, and software settings to your specific MEA platform. Work gently when transferring organoids to avoid mechanical stress.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "This protocol describes recording spontaneous and pharmacologically modulated activity from brain organoids using a high-density 3D MEA system. Adapt electrode layout, chip type, and software settings to your specific MEA platform. Work quickly but gently when transferring organoids to avoid mechanical stress.",
+    "Change organoid culture medium ~48 hours before recording to stabilize activity. Pre-equilibrate MEA chips and recording chamber with warm culture medium. Turn on the MEA system, heating, and gas control (if available) and allow to stabilize at 37 °C .",
+    "Using a wide-bore pipette tip, gently transfer individual organoids into the MEA recording chamber. Position each organoid so that it contacts the electrode field (for 3D MEAs, ensure good impalement/coverage by the electrode array). Allow organoids to equilibrate for ~10 minutes at 37 °C in the chamber or miniature incubator.",
+    "Baseline recording Start recording spontaneous activity using your MEA software. Suggested settings (adapt to your system): Sampling rate: ~20 kHz per electrode High-pass filter: ~100 Hz for spike detection Record baseline activity for 10 minutes .",
+    "Pharmacological modulation (optional) Carefully add the pharmacological modulator (e.g., 4-AP to a final concentration around 100 µM ) without dislodging the organoids. Continue recording for at least 5 minutes (or longer, depending on experimental design) to capture drug-induced changes in activity.",
+    "Block of action potentials (specificity control) At the end of the experiment, add TTX ( Tetrodotoxin ) to the recording chamber at an effective concentration. Record for several minutes to verify suppression of spiking activity and exclude non-neuronal artifacts.",
+    "Export raw data or use the MEA software’s spike-detection tools. Apply a spike-detection algorithm of choice (e.g., noise-dependent threshold-based or template-based) Validate detected spikes visually and/or with automated quality metrics or AI-based classifiers in BrainWave5 software, 3Brain, if available. Quantify measures such as: Spike rate per electrode Number of active electrodes Burst frequency and duration Network synchrony metrics"
+  ],
+  "authors": [
+    "Hariam Raji",
+    "michela.deleidi"
+  ],
+  "creator": "Hariam Raji",
+  "published_on": 1763375363,
+  "created_on": 1763368822,
+  "keywords": []
+}

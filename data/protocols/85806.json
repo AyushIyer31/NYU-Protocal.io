@@ -1,0 +1,35 @@
+{
+  "id": 85806,
+  "title": "Binding Assay (His-tagged proteins)",
+  "uri": "binding-assay-his-tagged-proteins-cx2nxqde",
+  "doi": "dx.doi.org/10.17504/protocols.io.261gednqdv47/v1",
+  "description": "{\"blocks\":[{\"key\":\"72rqk\",\"text\":\"To assess the binding specificity of tri-specific killer engagers (TriKEs) to their intended target, we utilize a flow cytometry-based binding assay leveraging the 10x polyhistidine (His) tag present on the TriKE construct, as previously described by our lab (see references). This assay enables assessment of TriKE binding efficiency and specificity, providing insights into TriKE-antigen interactions that inform further optimization and functional characterization of these therapeutic molecules.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"admn6\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"al7fu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"image\",\"mutability\":\"IMMUTABLE\",\"data\":{\"height\":385,\"id\":552974,\"is_video\":false,\"legend\":\"{\\\"blocks\\\":[{\\\"key\\\":\\\"7rnaq\\\",\\\"text\\\":\\\"Fig 1. Schematic of the binding assay (figure made in BioRender).\\\",\\\"type\\\":\\\"unstyled\\\",\\\"depth\\\":0,\\\"inlineStyleRanges\\\":[{\\\"style\\\":\\\"bold\\\",\\\"offset\\\":0,\\\"length\\\":65}],\\\"entityRanges\\\":[],\\\"data\\\":{}}],\\\"entityMap\\\":{}}\",\"mime\":\"image/png\",\"originalFile\":{},\"original_name\":\"Untitled (19) (1).png\",\"placeholder\":\"https://protocols-files.s3.amazonaws.com/files/s6arb3ucf.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\\u0026X-Amz-Credential=AKIAWFTFYUBUZ2U2JGOS%2F20260529%2Fus-east-1%2Fs3%2Faws4_request\\u0026X-Amz-Date=20260529T044139Z\\u0026X-Amz-Expires=604800\\u0026X-Amz-SignedHeaders=host\\u0026X-Amz-Signature=aa6fe5f2bcf0ce76064ad14ce9f1eb43929af1ea112394a467ef0a1befad7930\",\"source\":\"https://protocols-files.s3.amazonaws.com/files/s6aqb3ucf.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\\u0026X-Amz-Credential=AKIAWFTFYUBUZ2U2JGOS%2F20260529%2Fus-east-1%2Fs3%2Faws4_request\\u0026X-Amz-Date=20260529T044139Z\\u0026X-Amz-Expires=604800\\u0026X-Amz-SignedHeaders=host\\u0026X-Amz-Signature=a19b2b1b8755dfcbfaf0896293b461594dabb7ec7aea6e2b45da9b329a53855f\",\"type\":1,\"width\":550}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"f3vhf\",\"text\":\"Processed tissue additional controls: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5anhv\",\"text\":\"Fc Receptor Blocking Solution, cat. 422302, BioLegend, (1/100 dilution)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":71}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"99fjp\",\"text\":\"R10: RPMI (Gibco Cat. No. 2240-089) + 10% fetal bovine serum (Gibco Cat. No. 26140079) + 100 U/mL Penicillin and Streptomycin (Gibco Cat. No. 15140122)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cvnsu\",\"text\":\"Flow buffer: 1% human AB serum, 0.5 mM EDTA in PBS\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1ll21\",\"text\":\"PE anti-His tag antibody, cat. 362603, Biolegend\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4272t\",\"text\":\"PE mouse IgG2A Isotype control, cat. 400212, Biolegend         \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"61ges\",\"text\":\"2% paraformaldehyde/PBS\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare a solution of L/D NIR",
+    "Cells are resuspended in R10 at 1.5 million cells/mL, and 200 µL (300k cells) are plated in each well in a U bottom 96 well plate.",
+    "300 x g, °C, 5 minutes The plate is spun in a centrifuge at 300g for 00:05:00 (this is approximately 1200rpm in a large benchtop centrifuge). The supernatant is removed.",
+    "50 µL of 4X histidine(His)-tagged treatments are added to the pellet.",
+    "150 µL of R10 is added. Resuspend.",
+    "Incubate for 00:30:00 at 37°C.",
+    "Cells are stained in 50 µL of flow buffer (1% AB serum, 0.5 mM EDTA in PBS) containing: .05 µL LIVE/DEAD Fixable Near-IR Dead Cell Stain, cat. L34976, ThermoFisher 5 µL PE anti-His Tag Antibody, cat. 362603, Biolegend Note: As controls, untreated cells are stained with the anti-His antibody, and TriKE-treated cells are stained with an isotype control antibody.",
+    "Incubate for 00:20:00 at 4°C. After the incubation, samples are washed twice with flow buffer to remove excess antibody.",
+    "Cells are resuspended in 100 µL of 2% paraformaldehyde/PBS and incubated at room temperature in the dark for 00:10:00 to fix them. Afterwards, wells are topped up to 200 µL with flow buffer and washed once.",
+    "Recommended final concentrations: 0.3 nM, 3 nM, 30 nM for TriKEs and 3 nM, 30 nM and 300 nM for TriKE-PACC.",
+    "Prepare 4X drug in R10.",
+    "After the incubation, samples are washed twice with flow buffer to remove excess, unbound protein.",
+    "Samples are analyzed via flow cytometry.",
+    "Fig. 2: Example gating strategy in FlowJo"
+  ],
+  "authors": [
+    "Terran D Stenger",
+    "Philippa R Kennedy"
+  ],
+  "creator": "Terran D Stenger",
+  "published_on": 1753286055,
+  "created_on": 1690910689,
+  "keywords": []
+}

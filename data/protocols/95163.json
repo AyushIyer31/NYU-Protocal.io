@@ -1,0 +1,31 @@
+{
+  "id": 95163,
+  "title": "Flowcytometry analysis of lysosomal pulldown with anti-TMEM192 magnetic beads from PBMCs",
+  "uri": "flowcytometry-analysis-of-lysosomal-pulldown-with-c863zzgn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj378xlk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"43v6v\",\"text\":\"We describe a method that allows the staining of intact lysosomes using lysotracker for flow cytometry analysis. The analysis can provide a quantitative indication of the level of enrichment of the organelle immunoprecipitation (% of lysososomal+ beads) and can be used as a quality control check for the purity of the immunoprecipitated lysoIPs. Since only a small fraction of the immunoprecipitated material is needed for flow cytometry, this technique can be coupled with other assays, like western blotting or proteomics. While this protocol is focused on the staining and detection of lysosomes, it can be easily modified to analyse different organelles by changing the staining procedure and adjusting the parameters of the cytometer.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lnqo\",\"text\":\"\\n\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "PBMCs (or other cells) Bafilomycin A1 (Enzo LifeScience, BML-CM110-0100) Deep Red Lysotracker (Thermo, L12492) DMSO anti-TMEM192 magnetic beads BSA magnetic beads KPBS Flow cytometry tubes Flow cytometer with APC lasers and filters Water bath",
+    "The following protocol allows the detection and analysis of the lysosomes isolated by immunoprecipitation with anti-TMEM192 magnetic beads from peripheral blood mononuclear cells (PBMCs). Cells were incubated with or without the lysotracker prior to the lysosomal immunoprecipitation. Additionally, PBMCs were treated with the V-ATPase inhibitor Bafilomycin A1, that blocks the acidification of the lysosomes and drastically reduces the signal. We included this step as a further proof of the functionality of the isolated lysosomes, but it can be avoided if unnecessary. This protocol can be adapted to any other cell type. We noticed that TMEM192 beads have a strong autofluorescence signal, particularly in the FITC and mCherry channels. Using a higher excitation wavelength solved this issue. Specifically, we used the Deep Red Lysotracker (max ex 647, max em 668) and used the APC channel for flow cytometry analysis.",
+    "Perform endogenous organelle IP as in dx.doi.org/10.17504/protocols.io.x54v9yp51g3e/v1 (steps 12-33) The IP is normally performed using 50 μl of beads/sample. However, only a small fraction of the beads is analysed (approx 1/200 of initial beads), the rest of the IP can be used for WB or other techniques. The initial amount of beads can also be scaled down. At the end of the IPs, for each of the initial tubes, there should be 2 samples, a TMEM192 IP and a control IP (BSA-beads). Add 400 µL of KPBS to each FACS tube and label them accordingly",
+    "Prepare 1 millimolar (mM) stock of Lysotracker in DMSO, if not already prepared Make 2 μM solution ( 2 µL l of Stock in 1000 µL of buffer) Add dye to a final concentration of 50 nanomolar (nM) (1:40 dilution of 2 μM working solution), into Tube 2 and Tube 4, mix gently and incubate 37 °C 00:30:00 Add the corresponding volume of DMSO into Tube 1 and 3.",
+    "Turn on the cytometer. Prepare windows and gates according to the lysotracker used. LysoTracker™ Deep Red has the excitation at 647nm and emission at 668nm (APC channel) Dilute the samples. We used a dilution of 1/10, by adding 40 µL of stained beads to 400 µL of KPBS into FACS tube. Run the samples on a flow cytometer. On a BD LSR Fortessa we used the following voltages: FSC: 600 SSC: 240 APC: 700",
+    "FlowJo analysis of FCS files Isolate the beads from the debris by gating on the SSC vs FSC plot. Isolate positive beads either on the APC histograms or on the APC vs FSC plot Use the appropriate control to gate for the positive beads (TMEM192 pulldown without tracker)",
+    "Extract PBMCs as outlined in the protocol https://www.protocols.io/view/purification-of-tag-less-lysosomes-from-cells-isol-b5ziq74e (steps1-11) Divide PBMCs into different tubes, according to the experimental design. We divided cells from each donor into 4 tubes. Tube 1: - Baf, - Tracker Tube 2: - Baf, + Tracker Tube 3: + Baf, - Tracker Tube 4: + Baf, + Tracker Leave PBMCs in water bath at 37 °C",
+    "Prepare a 100 micromolar (µM) working stock of Bafilomycin A1 in DMSO. Add Bafilomycin to tube 3 and 4 to a final concentration of 200 nanomolar (nM) Add the same volume of DMSO to tube 1 and 2 Incubate at 37 °C for 04:00:00 in the waterbath, gently mixing cells every 20min to avoid cell attachment Duration and concentration of the Bafilomycin A1 treatment can be tailored according to the specific requirements"
+  ],
+  "authors": [
+    "Enrico Bagnoli",
+    "Karolina Zeneviciute",
+    "Esther Sammler",
+    "Dario R Alessi"
+  ],
+  "creator": "Enrico Bagnoli",
+  "published_on": 1715330607,
+  "created_on": 1707824061,
+  "keywords": []
+}

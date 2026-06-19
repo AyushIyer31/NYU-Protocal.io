@@ -1,0 +1,38 @@
+{
+  "id": 230351,
+  "title": "Co-Immunoprecipitation/Pull-Down of C1q-Interacting Intracellular Proteins/Protein Complexes for Unbiased Forward Screen Using NanoLC-MS/MS",
+  "uri": "co-immunoprecipitation-pull-down-of-c1q-interactin-hc7pb2zmp",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egnrydpl5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"9qmf0\",\"text\":\"Co-immunoprecipitation/pull-down of C1q-interacting intracellular\\nproteins/protein complexes using cell membrane-permeable biotin and crosslinker for an unbiased forward screen using nanoLC-MS/MS.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"eox66\",\"text\":\"- Human C1q (MyBioSource, MBS147305)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"na0po\",\"text\":\"- Zeba spin desalting column (7K MWCO, ThermoFisher Scientific)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ubowq\",\"text\":\"- NHS-SS-Biotin (ThermoScientific, PI21441)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"s5lmn\",\"text\":\"- PBS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ojhdh\",\"text\":\"- BCA analysis kit\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"xr0w2\",\"text\":\"- Poly-L-ornithine and laminin coated 6-well plates\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"49og3\",\"text\":\"- DSP (ThermoScientific, PI22586)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"gcc0z\",\"text\":\"- Pierce IP lysis buffer (ThermoScientific, PI87787)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"idurs\",\"text\":\"- Pierce Streptavidin Magnetic beads (ThermoScientific, PI188816)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lrmne\",\"text\":\"- Protease and phosphatase inhibitors\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Resuspend 1 mg of purified human C1q (MyBioSource, MBS147305) in 1 mL Milli-Q H2O (resulting in 1 mg/mL concentration).",
+    "Buffer exchange 500 µg of C1q to PBS using a Zeba spin desalting column (7K MWCO, ThermoFisher Scientific), following the manufacturer&#39;s instructions.",
+    "Incubate C1q in PBS (1.25 nM) with a 20-fold molar excess (25 nM) of NHS-SS-Biotin using the Ez-link NHS-SS-Biotinylation kit (ThermoScientific, PI21441) for 1 hour at room temperature with agitation.",
+    "Perform a buffer exchange using a Zeba spin desalting column (7K MWCO, ThermoFisher Scientific) to achieve a final volume of 500 µL.",
+    "Use a 10 µL aliquot (1:30 dilution) for BCA analysis to determine C1q protein concentration.",
+    "Expect a recovery of 60-80% of the original C1q amount after biotinylation.",
+    "Analyze an aliquot of biotinylated C1q by Western blot to confirm successful biotinylation.",
+    "Grow hNSC as a monolayer on poly-L-ornithine and laminin coated 6-well plates until 80% confluence.",
+    "Wash the cells three times with PBS (pH 7.2).",
+    "Add 200 nM of biotinylated C1q (bait) or an equal volume of growth medium (non-treated control) to the cells.",
+    "Incubate for 15 or 30 minutes at room temperature.",
+    "Wash cells three times with PBS (pH 7.2) and add 2 mM cell-permeable DSP on the cells (ThermoScientific, PI22586) for 30 minutes at room temperature.",
+    "Quench the reaction with three 5-minute washes of 25 mM Tris in PBS.",
+    "Lyse cells using Pierce IP lysis buffer (ThermoScientific, PI87787), supplemented with protease and phosphatase inhibitors, on ice.",
+    "Centrifuge lysates at 13,000g for 10 minutes at 4°C.",
+    "Incubate supernatants with washed Pierce Streptavidin Magnetic beads (ThermoScientific, PI188816) for 1 hour under slow, low-speed rotation at room temperature.",
+    "Wash to remove non-specific binding partners.",
+    "See the “Denaturing On-bead Digestion for LC-MS/MS”-protocol compatible with this crosslinking method for next steps."
+  ],
+  "authors": [
+    "Katja Piltti"
+  ],
+  "creator": "Katja Piltti",
+  "published_on": 1761153291,
+  "created_on": 1761021645,
+  "keywords": []
+}

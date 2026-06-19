@@ -1,0 +1,38 @@
+{
+  "id": 28132,
+  "title": "Protein Purification strep-tag FPLC ",
+  "uri": "protein-purification-strep-tag-fplc-7qchmsw",
+  "doi": "dx.doi.org/10.17504/protocols.io.7qchmsw",
+  "description": "{\"blocks\":[{\"key\":\"5u85n\",\"text\":\"Protein purification of proteins containing a strep-tag using FPLC. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"aeg4n\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"cklkj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4c8d3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"19ipm\",\"text\":\"Necessary: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"86k7j\",\"text\":\"Have performed Protein expression using E. coli strain BL21DE3\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4jgqo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6rmuv\",\"text\":\"To continue see: Protein gel sample preparation V2. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"1huft\",\"text\":\"\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4v5qb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"uQI1h\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"LjMm6\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"tyDXm\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":42004,\"guid\":\"412EB510341F11EE9D4302C0B41BC903\",\"name\":\"MilliQ Water\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":119459,\"guid\":\"419866DB341F11EE9D4302C0B41BC903\",\"name\":\"Roche Complete Protease Inhibitor EDTA-Free tablets \",\"mol_weight\":0,\"sku\":\"5056489001\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":17,\"name\":\"Merck MilliporeSigma (Sigma-Aldrich)\",\"link\":\"http://sigmaaldrich.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "1 L Buffer W: 100 mM Tris-HCl (pH 8.0) 150 mM NaCl 1 mM EDTA Filter this buffer with a 22 um filter 100 mL Buffer E: 100 mM Tris-HCl (pH 8.0) 150 mM NaCl 1 mM EDTA 2.5 mM desthiobiotin 1L 0.5 M NaOH (filtered with 22 um filter) 1L MQ (filtered with 22 um filter)",
+    "Place post-induction culture from Protein expression using E. coli strain BL21DE3 on ice. For FPLC have 2 L of cell culture.",
+    "Centrifuge culture at 5000xg for 00:10:00 at 4 °C",
+    "The pellet is resuspended in 1 mL buffer W per 100 ml cell culture containing one crushed cOmplete mini tablet for 2 L cell culture.",
+    "The cells are sonificated (VS70 T rod, 25% 1 sec on 2 sec off for 00:05:00 . On ice water). For small amounts use the MS72 rod. From this point be very sure to keep the cells on ice as much as possible.",
+    "The cell extract is centrifuged for 00:45:00 at 30 000 g.",
+    "The supernatant is collected and filtered first with 0.45 um filter and then with 0,22 um filter. If there are small sample volumes: add 3 mL buffer W.",
+    "Connect computer to system",
+    "Set a manual alarm specific for the column you&#39;re using All speeds are dependent on the machine/column that is used",
+    "Wash all pumps with MQ",
+    "Wash the system with MQ (~20 mL)",
+    "Set valve position to waste",
+    "Connect column wet (MQ) with a low flow rate (~1 ml/min) Wash column with MQ Increase flow rate slowly",
+    "Equilibriate column with buffer W Slowly increase flow rate Wait until the conductivity and UV have stabilised",
+    "Wash peristaltic pump with 15 mL MQ Introduce cell lysate in column using the peristaltic pump (connect wet) Story flow through and a bit of lysed cells",
+    "Wash the column with buffer W until the lines stabilize",
+    "Start elution with buffer E Collect all the fractions per 1/1.5 mL Wash until the protein peak has passed Place all the fractions on ice immediately Fractions can be placed on analytical SDS-page gels",
+    "Wash the column with MQ (3 CV) Wash the column with NaOH (3 CV) Wash the column with ethanol (decrease speed before changing to ethanol) (3CV) Wash the system with ethanol"
+  ],
+  "authors": [
+    "Cleo B."
+  ],
+  "creator": "Cleo B.",
+  "published_on": 1569505518,
+  "created_on": 1569502676,
+  "keywords": []
+}

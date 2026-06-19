@@ -1,0 +1,37 @@
+{
+  "id": 220366,
+  "title": "Staggered PFF and Cytokine Treatment in DA Neurons for Confocal, Western Blot, and EM Analysis",
+  "uri": "staggered-pff-and-cytokine-treatment-in-da-neurons-g3fnbyjmf",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl41p3olo5/v2",
+  "description": "{\"blocks\":[{\"key\":\"hrso8\",\"text\":\"This protocol describes the staggered treatment of differentiated dopaminergic (DA) neurons with pre-formed α-synuclein fibrils (PFFs) and either IFN-γ or IL-1β, optimized to promote inclusion formation while minimizing neuronal toxicity. An alternative 'dual hit' treatment protocol adapted from Bayati et al. is also provided for evaluating interventions such as Parkin activation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"e5ufu\",\"text\":\"The staggered treatment improves neuronal survival and inclusion formation. The dual hit approach further incorporates Parkin activator treatment post IFN-γ exposure to assess neuroprotective interventions. The 10-day version allows efficient modeling of inclusion pathology with reduced toxicity.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"xpbwk\",\"text\":\"Differentiated DA neurons on 15-mm coverslips, PFFs (prepared as described in the manuscript), IFN-γ (Thermo Fisher Scientific, PHC4033 or Gibco, 300-02-500UG), IL-1β (Thermo Fisher Scientific, RIL1BI), Parkin Activator AH231 (4 µM final concentration), DMSO (vehicle control), BrainPhys neuronal media (STEMCELL Technologies, 05790), PBS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Administer PFFs at 1 µg/ml in BrainPhys media. Incubate for 48 h.",
+    "Replace with fresh BrainPhys media. Incubate for 72 h.",
+    "Replace media with BrainPhys supplemented with 0.2 µg/ml IFN-γ or PBS control. Incubate for 24 h.",
+    "Replace with fresh BrainPhys media. Collect samples at desired time points:",
+    "6-day neurons: immediately after fresh media change.",
+    "7-day neurons: 24 h later.",
+    "10-day neurons: 72 h after 7-day collection.",
+    "14-day neurons: 8 days after media change on Day 6.",
+    "Administer PFFs at 1 µg/ml in BrainPhys media. Incubate for 24 h.",
+    "Add 0.2 µg/ml IFN-γ (or PBS control) directly into the same media. Continue incubation for another 24 h.",
+    "Collect cells at 48 h total treatment time.",
+    "Administer PFFs at 1 µg/ml in BrainPhys media. Incubate for 48 h.",
+    "Replace with fresh BrainPhys media. Incubate for 72 h.",
+    "Replace media with BrainPhys supplemented with 0.2 µg/ml IFN-γ (Gibco, 300-02-500UG). Incubate for 48 h.",
+    "Following IFN-γ treatment, replace with media containing either 4 µM Parkin Activator (AH231) or DMSO vehicle control. Incubate for 36 h.",
+    "Replace with fresh BrainPhys media. Incubate for 36 h.",
+    "Collect cells for fixation, imaging, quantification, or Western blotting at Day 10 post-initial PFF treatment."
+  ],
+  "authors": [
+    "Armin Bayati"
+  ],
+  "creator": "Jackson Schumacher",
+  "published_on": 1750155077,
+  "created_on": 1750114030,
+  "keywords": []
+}

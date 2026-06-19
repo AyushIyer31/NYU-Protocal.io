@@ -1,0 +1,31 @@
+{
+  "id": 79033,
+  "title": "EdU Immunohistochemistry using Click-it reaction ",
+  "uri": "edu-immunohistochemistry-using-click-it-reaction-crezv3f6",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbyoy1vpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"3rto9\",\"text\":\"This protocol allows users to image histology tissue using basic immunohistochemistry techniques in combination with EdU capture (using the Click-it reaction system).  EdU (5-ethynyl-2′-deoxyuridine) will capture S-phase cells with the thymidine analogue, allowing to take a snap-shot of actively diving cells. In this assay the modified thymidine analogue EdU is efficiently incorporated into newly synthesized DNA and fluorescently labeled with a bright, photostable Alexa Fluor™ dye in a fast, highly-specific click reaction. This fluorescent labeling of proliferating cells is accurate and compatible with antibody methods due to the mild click protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"5i869\",\"text\":\"dU 5-ethynyl-2′-deoxyuridine (200mg/kg/mouse)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"43m66\",\"text\":\"BD Fix/Perm Solution (cat #: 554714)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eda1s\",\"text\":\"30% Sucrose Solution\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6ls8\",\"text\":\"Tissue-Tek O.C.T. Compound (cat#: 4583; Sakura)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b347m\",\"text\":\"Tissue-Tek Base Mold System (Sakura): size will depend on organ of interest\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7n0ns\",\"text\":\"SuperFrost Plus slides (cat #: 12-550-15; Fisher)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bi6ch\",\"text\":\"Click-iT™ EdU Cell Proliferation Kit for Imaging, Alexa Fluor™ 555 dye (cat #: C10338; Thermo): A488, A555, A594, A647 work very well! \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5gqvi\",\"text\":\"Optional: TruStain FcX™ (anti-mouse CD16/32) Antibody (cat#: 101319; Biolegend)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8ln0n\",\"text\":\"Optional: primary/secondary antibody needed for wanted panel\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2p048\",\"text\":\"Optional DAPI\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"abm7n\",\"text\":\"Optional Flouromount G (cat #: 00-4958-02, Thermo)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"k279\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Inject animals with EdU as outlined in animal protocol license (typically by performing an intra-peritoneal injection with 200 mg/kg per mouse).",
+    "Euthanize animal and harvest organ of interest: place tissue in 0.1% BD cytofix/cytoperm fixative (0/N at 4C). Time of euthanasia after EdU injection will vary widely on organ/cell of interest, and age of the animal. For an optimal time window- prior literature should be investigated. For fast proliferating tissues (such as intestinal epithelium or skin), a good starting point will be around 1-4hrs; for developing embryos, 20-30min might be sufficient.",
+    "The following day, place fixed in tissue in 30% Sucrose Solution (allowing the tissue to get dehydrated).",
+    "Embed tissue in Tissue-Tek Base Mold System by orienting the tissue in its optimal configuration in OCT Mounting Media. Freeze tissue on dry ice until OCT turns from a viscous clear compound to a solid white. OCT blocks can be stored at -80C long term (months).",
+    "Section OCT blocks on a cryostat at desired thickness on SuperFrost Plus slides. Tested so far are up to 50um in thickness. If desired, sectioned slides can be stored at -20C long term (months).",
+    "Place tissue slides in humidity chamber, and hydrate tissue sample with PBS.",
+    "Block tissue section using Blocking Buffer (composed with 0.3% Triton, Fc-block, and 1x BD Perm/Wash (+ Fc-block if needed)).",
+    "Stain sample with EdU Click-it reaction solution following the instructions from the manufacturer. EdU staining is extremely bright- 30min will be sufficient to stain efficiently a 25um section. 45min staining is advised for thicker sections. The copper concentrations typically used in traditional click chemistry reactions can affect fluorophores such as GFP, mCherry, R-PE, and R-PE tandem dyes. Highly recommend to 1) stain for EdU before other antibodies (either conjugated-primaries or secondaries), and 2) stain with anti-fluorophore antibodies (such as anti-GFP).",
+    "Wash the samples 3 x 5min with PBS",
+    "Continue staining samples with wanted panel (primary, secondary and/or Nuclear Dye (such as DAPI)). For follow-up quantification (for example: % EdU+ cells), DAPI staining is very much important.",
+    "Mount samples with preferred mounting media (recommended is Fluoromount G)."
+  ],
+  "authors": [
+    "Anita Gola"
+  ],
+  "creator": "Anita Gola",
+  "published_on": 1679305142,
+  "created_on": 1679161157,
+  "keywords": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": 66083,
+  "title": "LRRK2 Immunofluorescent staining ",
+  "uri": "lrrk2-immunofluorescent-staining-ccsbswan",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ldze17v5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"2uo4g\",\"text\":\"Protocol for immunofluorescent staining for LRRK2 in cultured cells using the MJFF2 (c41-2) antibody. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"fri42\",\"text\":\"Reagents:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"872rn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"etmb\",\"text\":\"PBS, pH 7.4: #14190250, ThermoFisher Scientific\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bj2nn\",\"text\":\"4 % (v/v) PFA/PBS: Dilute 16 % Paraformaldehyde Aqueous Solution (#15710, Electron Microscopy Sciences) to 4 % in PBS\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"46grv\",\"text\":\"Ice-cold Methanol (pre-chill at - 20 °C  before use)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9t9c4\",\"text\":\"Blocking and antibody dilution buffer: 5 % (v/v) FCS in PBS\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b1u79\",\"text\":\"anti-LRRK2 antibody:  MJFF2 (c41-2), ab133474, Abcam\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3br36\",\"text\":\"anti-rabbit-Alexa Fluor™ 488: #A-11034, ThermoFisher Scientific or similar\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"85d0\",\"text\":\"DAPI staining solution: 300 nM DAPI in PBS (#D1306, ThermoFisher Scientific or similar)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"es1jv\",\"text\":\"Mounting medium: DAKO Fluorescence Mounting medium, # S3023, Agilent or similar\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3qjn4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bg943\",\"text\":\"Equipment:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eccr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6r9m3\",\"text\":\"Coverslips #1.5 (eg 631-0150, VWR) and slides (eg SuperFrost Plus™, J1800AMNZ, Epredia)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"34h30\",\"text\":\"OR\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"57gfb\",\"text\":\"Optical cell culture plate (eg PhenoPlate 96-well, 6055302, PerkinElmer)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7lj2e\",\"text\":\"a fine pair of tweezers if using coverslips (eg Artis tweezer, style 5-SA, Z742676-1EA, Sigma-Aldrich)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Culture cells as usual on cover slips or in a plate suitable for imaging. If using coverslips, we recommend Ø13 mm for cells cultured in 24-well plates. The MJFF2 (c41-2) antibody only detects concentrated LRRK2. Therefore, controls should be included during the sample preparation to ensure signal specificity. We recommend including a LRRK2 KO or knock down control and a positive control such as 30 min treatment with 1mM LLOMe (H-Leu-Leu-OMe•HBr, 4000725.0001, Bachem) or 50 μM chloroquine (C6628-25G, Sigma-Aldrich).",
+    "Fix cells in 4 % PFA/PBS at 4 °C for 00:15:00 .",
+    "Permeabilise the plasma membrane by incubating samples in ice-cold MeOH for 00:10:00 . This can be done on the bench or the whole plate can be put into the -20 °C freezer. Make sure that samples are always submerged.",
+    "Optional: at this step, coverslips or plates can be stored at 4 °C in PBS. Never allow samples to try out.",
+    "Wash samples once in PBS",
+    "Incubate samples in blocking buffer for 00:20:00 at Room temperature",
+    "Incubate samples in primary antibody solution ( MJFF2 (c41-2) antibody diluted 1:100 in blocking buffer) for 01:00:00 at Room temperature At this step, additional primary antibodies can be added to assess LRRK2 localisation. For lysosomal location in mouse samples, we recommend anti-LAMP1 (#1D4B, Developmental Studies Hybridoma Bank) used at 1:100 dilution. Always control for cross-reactivity.",
+    "Wash samples three times in PBS",
+    "Incubate samples in secondary antibody solution ( eg anti-rabbit-Alexa Fluor™ 488 diluted 1:800 in blocking buffer) for 00:45:00 at Room temperature in the dark If additional primary antibodies were used, also include additional secondary antibodies here (eg anti-rat-Alexa Fluor™ 657).",
+    "Wash samples twice in PBS",
+    "Incubate sample in DAPI staining solution for 00:10:00 at Room temperature in the dark",
+    "Wash samples twice in PBS",
+    "Mount coverslips onto slides using a mounting medium of choice (eg DAKO Fluorescence Mounting medium) and let try at RT in the dark. If using well-plates, add PBS to plates. Keep samples in the dark and store them at 4 °C for short-term storage. Murine bone marrow-derived macrophages were treated with 50 μM chloroquine for 30 min and stained for LRRK2 according to the above protocol. LRRK2 accumulates at the lysosomal membrane in response to chloroquine but is not visible in untreated cells using this staining method."
+  ],
+  "authors": [
+    "Susanne Herbst"
+  ],
+  "creator": "Susanne Herbst",
+  "published_on": 1658740551,
+  "created_on": 1657102579,
+  "keywords": []
+}

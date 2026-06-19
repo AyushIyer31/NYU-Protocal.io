@@ -1,0 +1,29 @@
+{
+  "id": 518,
+  "title": "FMRP 1C3 Western Blot (Millipore MAB2160) post-IP",
+  "uri": "FMRP-1C3-Western-Blot-Millipore-MAB2160-kvav3d",
+  "doi": "dx.doi.org/10.17504/protocols.io.crev3d",
+  "description": "{\"blocks\":[{\"key\":\"41nff\",\"text\":\"Protocol for using Mouse-FMRP antibody follow immunoprecipitation of FMRP using a rabbit antibody such as Abcam #17722\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"7scb7\",\"text\":\"This protocol is still in progress, will be updated periodically. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"26ng7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"aqign\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"ITGPR\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"v3uGK\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"1ChW1\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"s41DW\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":2088,\"guid\":\"4103C532341F11EE9D4302C0B41BC903\",\"name\":\"Goat anti-Mouse light chain-specific antibody (HRP conjugated secondary)\",\"mol_weight\":0,\"sku\":\"115-035-174\",\"url\":\"https://www.jacksonimmuno.com/catalog/products/115-035-174\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":15,\"name\":\"Jackson ImmunoResearch Laboratories, Inc.\",\"link\":\"http://jacksonimmuno.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":2089,\"guid\":\"4103C588341F11EE9D4302C0B41BC903\",\"name\":\"Bovine Serum Albumin (IgG-Free, Protease-Free)\",\"mol_weight\":0,\"sku\":\"001-000-161\",\"url\":\"https://www.jacksonimmuno.com/catalog/products/001-000-161\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":15,\"name\":\"Jackson ImmunoResearch Laboratories, Inc.\",\"link\":\"http://jacksonimmuno.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":2090,\"guid\":\"4103C5E9341F11EE9D4302C0B41BC903\",\"name\":\"Anti-Fragile X Mental Retardation Protein Antibody, clone 1C3\",\"mol_weight\":0,\"sku\":\"MAB2160\",\"url\":\"http://www.emdmillipore.com/US/en/product/,MM_NF-MAB2160?isCountryEMD=yes\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":15,\"name\":\"Jackson ImmunoResearch Laboratories, Inc.\",\"link\":\"http://jacksonimmuno.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Run tris-glycine gel",
+    "Transfer protein to PVDF",
+    "Rinse membrane in 1x TBST",
+    "Block in 5% non-fat milk/TBST for 30 minutes at RT",
+    "Incubate membrane with anti-FMRP 1C3 at 1:4000 at RT for 1hr or O/N at 4C in 5% non-fat milk/1x TBST",
+    "Rinse membrane 5x with 1x TBST over 30 minutes",
+    "Block with 5% IgG-Free, Protease-Free Bovine Serum Albumin in 1x TBST for 30-45 minutes at RT",
+    "Add HRP-conjugated goat-anti-mouse IgG, light-chain specific antibody at 1:10,000",
+    "Incubate for 1hr at RT",
+    "Rinse 5x with 1x TBST over 30 minutes",
+    "Visualize with ECL solution according to manufacturer&#39;s protocol"
+  ],
+  "authors": [],
+  "creator": "Christopher Bartley",
+  "published_on": 1422913270,
+  "created_on": 1422912014,
+  "keywords": []
+}

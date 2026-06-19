@@ -1,0 +1,43 @@
+{
+  "id": 84955,
+  "title": "Cleaning Protocol for Running Bacterial Samples on CytoFLEX S in Tube Mode",
+  "uri": "cleaning-protocol-for-running-bacterial-samples-on-cw73xhqn",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g7p83kgwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"b5q2f\",\"text\":\"The CytoFLEX S analyzer, like most other flow cytometers and cell sorters, was designed to run primarily mammalian cells. The acceptable threshold for carryover generally is \\u003c1% and this can be achieved with no special cleaning protocols between samples when running mammalian cells. However, this does not hold true for bacterial cells. In testing with K-12 E. coli cells, it was found that the carryover between samples was between 2% to nearly 4% without any special cleaning protocol between samples. This level of carryover can interfere with results. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":359,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"73vie\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ae2v0\",\"text\":\"This protocol was tested and developed to reduce carryover for K-12 E. coli  or other bacterial samples to an acceptable threshold as low as .3% (\\u003c1%), to guard against contamination of the instrument which could lead to the formation of biofilms, and to prevent damage to the tube/plate switch mechanism. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":68,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"483vn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4k7lr\",\"text\":\"Between samples, using 25% Bleach is the most effective media to consistently achieve carryover of \\u003c1%.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9nu3r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bq785\",\"text\":\"Please also note 25% bleach is not actually 25% bleach, because the active ingredient in bleach is sodium hypochlorite at a concentration of 5-9%. That makes it 25% of the 5-9% of sodium hypochlorite.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"94cci\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7l2jl\",\"text\":\"25% bleach has been observed to be effective in cleaning both bacterial, yeast, and viral samples, and at the end of such experiments on other flow cytometry and cell sorting instrumentation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9g6t5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e86k4\",\"text\":\"Use of Flow Clean in the absence of bleach when cleaning between samples is possible, but will not consistently achieve the same result, and may result in carryover slightly above the acceptable threshold of \\u003c1%.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"291i2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eiiab\",\"text\":\"Flow Clean is used for an extended period of time during the Daily Clean procedure since this is Beckman Coulter's recommended cleaning agent for this particular step. The duration of the Daily Clean step is extended due to the previously stated observation that it does not produce as consistent of a result between samples as the 25% Bleach when run for the same duration.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"e4hil\",\"text\":\"Prepare 100mL of fresh 25% bleach (75mL of DI+25mL of Bleach=100mL of 25% Bleach). After dilution, do not keep the prepared stock for more than 1 month as it will lose strength over time once exposed to light and air.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"35isi\",\"text\":\"25% Bleach (prepare ~100 mL: 75mL of DI+25mL of Bleach)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"43loa\",\"text\":\"12x75 polypropylene or polystyrene FACS tubes (a suggested item to order for this protocol is BD 352008)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2h23t\",\"text\":\"Beckman Coulter Flow Clean (Product No:A64669)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1rpes\",\"text\":\"DI water from a MilliQ or similar dispenser, 100mL\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "You are now ready to run your next sample.",
+    "Manually backflush 2 times (click the backflush button and let it go through a 3-second cycle; do this 2x)",
+    "Change the flow rate to “Custom” using the radio button and then move the slider to the maximum flow rate position of 240ul/minute",
+    "Set the stopping rules to 30 seconds time using the radio button and typing in the time.",
+    "Fill a fresh tube with between 500uL and 1mL of 25% Bleach",
+    "Press the “Record” Button to run the 25% bleach for 30 seconds.",
+    "Fill a fresh tube with between 500uL and 1mL of DI Water",
+    "Set the stopping rules to 30 seconds time using the radio button and typing in the time",
+    "Press the “Record” Button to run the DI Water for 30 seconds.",
+    "Manually backflush 2 times (click the backflush button and let it go through the 3-second cycle; do this 2x)",
+    "Deselect all other stopping rules.",
+    "Create a new tube in the software and give it a name that you will clearly recognize as a cleaning tube.",
+    "Create a new tube in the software and give it a name that you will clearly recognize as a cleaning tube.",
+    "At the end of the experiment, you may delete all the cleaning tube files within the software by using the &#34;Delete Multiple Tubes&#34; function",
+    "Then discard the two cleaning tubes, do not reuse the same tubes to clean between each sample.",
+    "At the end of your experiment during the “Daily Clean,” instead of running the Beckman Coulter Flow Clean detergent (blue colored cleaning agent) for the standard 5 minutes, run it for 7 minutes by changing the number on the dialog box that appears after you begin the process using the drop-down menu to select “Daily Clean.”",
+    "Place a freshly prepared tube with approximately 3mL of Flow Clean on the tube loader. Click start.",
+    "When the dialog box appears indicating that the Flow Clean step has completed, remove the tube of Flow Clean from the sample loader and discard it.",
+    "Install a freshly prepared tube of approximately 3mL of DI water on the tube loader. Run it for 7 minutes by changing the number on the dialog box.",
+    "Do not abandon the instrument during the cleaning process. Log out of the software completely at the end of your experiment.",
+    "Discard all tubes used for cleaning so that you or someone else who may use the instrument does not accidentally clean with them.",
+    "Wipe down the work area, mouse, and keyboard gently with CaviWipes or 70% Ethanol Spray.",
+    "Change the flow rate back to Slow (10ul/minute) using the radio button."
+  ],
+  "authors": [
+    "Jamie C Tijerina"
+  ],
+  "creator": "Jamie C Tijerina",
+  "published_on": 1689418425,
+  "created_on": 1689228760,
+  "keywords": []
+}

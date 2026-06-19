@@ -1,0 +1,38 @@
+{
+  "id": 53844,
+  "title": "Transformation",
+  "uri": "transformation-bytupwnw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bytupwnw",
+  "description": "{\"blocks\":[{\"key\":\"a4f8o\",\"text\":\"This protocol is used to transform plasmid DNA into competent cells by chemical method or electroporation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"abjmm\",\"text\":\"Do not place the competent cells on the the ice for too long time before start.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"806ah\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ed5um\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"3t7uv\",\"text\":\"Electroporation cuvette\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"76huf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"equipment\",\"mutability\":\"\",\"data\":{\"id\":2126,\"guid\":\"4528662F341F11EE9D4302C0B41BC903\",\"brand\":\"Bio-Rad laboratories\",\"sku\":\"1652100\",\"name\":\"MicroPulser Electroporator\",\"link\":\"\",\"type\":\"Electroporator\",\"specifications\":\"\",\"file\":null,\"image\":null,\"vendor\":{\"id\":41,\"name\":\"Bio-Rad Laboratories\",\"link\":\"http://www.bio-rad.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Choose one transformation method depending on your requirement of transformation efficiency.",
+    "Wash the 0.1 or 0.2 cm electroporation cuvette (store in 75% ethanol)by tap water for one time and ddH2O for two times and dry in the oven.",
+    "Place the electroporation cuvette on the ice and use UV to disinfect for 20 min.",
+    "Mix 25μl electrocompetent cells with 1 to 2 μl of DNA (total DNA concentration less than 10ng/mL, maximum 25ng). Mix well and incubate on ice for ~1 min.",
+    "Set the MicroPulser to &#34;Ec1&#34; when using the 0.1 cm cuvettes. Set it to &#34;Ec2&#34; or &#34;Ec3&#34; when using the 0.2 cm cuventtes.",
+    "Transfer the mixture of cells and DNA to a cold electroporation cuvette and tap the suspension to the bottom. Place the cuvette in the chamber slide. Push the slide into the chamber until the cuvette is seated between the contacts in the base of the chamber. Pulse once.",
+    "Remove the cuvette form the chamber and immediately add 1 ml of SOC medium to the cuvette. Quickly but gently resuspend the cells with a eppendoff. Please transfer the cells to the medium as soon as possible",
+    "Transfer the cell suspension to a 1.5 ml polyproylene microfuge tube and incubate at 37℃ for 1 hour, shaking at 200 rpm. 200 rpm, 37 °C, 1 hour",
+    "Check and record the pulse parameters. The time constant should be close to 5 milliseconds.",
+    "Plate on selective LB or SOB medium and inverted culture for 14~16 hours.",
+    "Thaw the competent cells on the ice for 10 min to let the suspension thaw.",
+    "Mix 100μl competent cells with about 10μl DNA.",
+    "Incubate on ice for ~30 min.",
+    "Add 0.5~1ml LB medium into the mixture of cells and DNA and mix well.",
+    "Incubate at 37℃ for 1 hour, shaking at 200 rpm.",
+    "Plate on selective LB medium.",
+    "Heat shock at 42℃ for 45 seconds in the water bath.",
+    "Incubate on ice for 2~5 min."
+  ],
+  "authors": [
+    "Shuning Guo"
+  ],
+  "creator": "Shuning Guo",
+  "published_on": 1633573602,
+  "created_on": 1633515502,
+  "keywords": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": 93025,
+  "title": "Electrophoretic mobility shift assay (EMSA)",
+  "uri": "electrophoretic-mobility-shift-assay-emsa-c639zgr6",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"5mmob\",\"text\":\"This protocol details an experimental procedure that can be followed to assess the DNA binding activity of a purified protein sample (recombinant yeast Cbf1 used here as example) to different sequences. DNA probes containing the desired sequences are formed by annealing complementary ssDNA oligos. These oligos are ordered from IDT and with 3' 6-FAM tags for imaging.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Create storage stocks by resuspending ssDNA oligos to 100uM (100pmol/ul) in 1x IDTE buffer (10 mM Tris, 0.1 mM EDTA, pH 8.0).",
+    "Create 10uM working stocks from the 100uM storage stocks. For 100uL of working stock:",
+    "Anneal labeled 1 units ssDNA probes to 1/1.2 units unlabeled probes in 100uL reactions. Using Thermocycler, heat reaction mixes to 95⁰C and incubate for ≥2min. Cool to 25⁰C/RT over 45min. Keep duplexed probes in the dark until they are needed. Reagent 1:1 (uL) 1:1.2 (uL) 1 Labeled 10 10 2 Unlabeled 10 12 3 Duplex buffer 80 78",
+    "Place running tank on ice and pre-run TBE native gel (8-20%; stored in backup -20⁰C)at 200V for 60min or until current stabilizes.",
+    "Prepare 100uL of 5x protein (Cbf1) binding buffer: %s %s",
+    "Prepare individual binding reactions (20uL/reaction): %s %s *IMPORTANT: Incubate the binding reactions for 10min at RT prior to adding the duplexed DNA probe. This sequesters general DNA-binding proteins onto competitor DNA (poly dI:dC), minimizing non-specific binding to duplexed probe.",
+    "Incubate at RT in the dark for 50min following the addition of duplexed probe.",
+    "Add 4uL of orange G loading dye to each binding reaction (final volume = 24uL).",
+    "Load 10uL of each binding reaction into well on pre-run TBE gel. Run at 200V for ~30min. Keep on ice and in the dark.",
+    "Image gel using BioRad Chemidoc system in CIEMAS (same machine used for SDS-PAGE). For publication quality images, image with FAM/Cy2 filter using the Typhoon imagerin SANDS 250. Contact Dr. Seok-Yong Lee’s lab for use."
+  ],
+  "authors": [
+    "Olivier Boivin"
+  ],
+  "creator": "Olivier Boivin",
+  "published_on": 1704703690,
+  "created_on": 1704574059,
+  "keywords": []
+}

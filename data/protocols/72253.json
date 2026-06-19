@@ -1,0 +1,40 @@
+{
+  "id": 72253,
+  "title": "Evaluating endocytic rate in cells.",
+  "uri": "evaluating-endocytic-rate-in-cells-cis5ueg6",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv5jjedl1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"f1d20\",\"text\":\"Assess endocytic rate in cells using tagged transferrin (Alexa647) and flow cytometry readout.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"dghvk\",\"text\":\"Make sure to treat the cells in medium without FBS. \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":13,\"length\":6},{\"style\":\"bold\",\"offset\":32,\"length\":18}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"lsf8\",\"text\":\"Prepare cell culture medium without FBS and keep it at 37°C.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5k3nc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cdjg2\",\"text\":\"Prepare Flow Cytometry (FC) buffer made of 1% Albumin Fraction V in DPBS (-/-).\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":23,\"length\":4}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6d84o\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bi4c9\",\"text\":\"Prepare Eppendorf tubes and FC tubes by labeling them and keeping them on ice. \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ehggk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"ekujr\",\"text\":\"0.25% Trypsin-EDTA: Gibco, 25200056\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5acmi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bb3oo\",\"text\":\"Albumin Fraction V: Carl Roth, 8076.4\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1amn8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e4gcc\",\"text\":\"Alexa647-Transferrin: T23366, invitrogen\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"73uqq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bg10\",\"text\":\"Dulbecco's Phosphate Buffered Saline modified without calcium chloride and magnesium chloride (DPBS (-/-)): Gibco, D8537\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6eqfd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2hqpv\",\"text\":\"Endocytosis inhibitors\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7h9jh\",\"text\":\"Dynasore: D7693, Sigma\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3ph6p\",\"text\":\"Genistein: ab120112, Abcam\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ctaq\",\"text\":\"Pitstop 2: SML1169, Sigma\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2lgtl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"737qb\",\"text\":\"TrypLE Express Enzyme: Gibco, 12604021\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e5a5i\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"foj3r\",\"text\":\"Versene Solution: Gibco, 15040\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Seed cells in 12 wellplate that they reach 70-80% confluency the day of the experiment. This protocol is made for a 12 wellplate format. Adaptations need to be done to scale up or down.",
+    "The day of the experiment, remove cell culture medium and pre-treat the cells in medium without FBS in a final volume of 500 µL, /well ), for 00:30:00, at 37°C, 5% CO2 . The different conditions to consider are:",
+    "After pre-treatment, keep the plate on ice (4°C) for 00:15:00 .",
+    "Incubate 00:20:00, 37°C, 5% CO2 .",
+    "Harvest cells and prepare samples for Flow Cytometry (FC).",
+    "No pre-treatment for: blank samples Alexa647-transferrin-only samples. In this case, change cell culture medium to cell culture medium without FBS.",
+    "Pre-treatment with endocytosis inhibitors cocktail made of: 100 µM, Dynasore , 50 µM, Genistein and 50 µM, Pitstop2 .",
+    "Incubate 00:20:00, 4°C (on ice)",
+    "Discard medium.",
+    "Wash with 500 µL, /well Versene or DPBS (-/-).",
+    "Discard Versene or DPBS (-/-).",
+    "Add 200 µL, /well 0.25 % Trypsin or TrypLE. Incubate 00:05:00, at RT .",
+    "Add 500 µL, /well 1 % BSA-DPBS (-/-), collect the cells and transfer in Eppendorf tubes.",
+    "Centrifuge 00:05:00 at 2500 rpm and 4°C.",
+    "Discard supernatants and resuspend cell pellet in 250-500 µL µL 1 % Albumin Fraction V in DPBS (-/-) , depending on the size of the cell pellet. Samples can&#39;t be too concentrated or too diluted to be ran on a flow cytometer. If samples are too concetrated, cells will form clumps, they won&#39;t be single cells anymore and this will damage the flow cytometer. If samples are too diluted, acquisition at the flow cytometer will take very long time.",
+    "Filter cell suspension through Nylon filter into FC tubes.",
+    "Keep on ice until acquisition at the flow cytometer. Record 10,000 live events per sample.",
+    "Add Alexa647-Transferrin at 50 µg, /mL in each well, except for the blank samples . Alexa647-Transferrin is added to each well containing 500µL of either culture medium withtout FBS or pre-treated medium including endocytosis inhibitors in culture medium without FBS."
+  ],
+  "authors": [
+    "Marine Houdou",
+    "Peter Vangheluwe",
+    "Nathalie Jacobs"
+  ],
+  "creator": "Marine Houdou",
+  "published_on": 1669219916,
+  "created_on": 1667488860,
+  "keywords": []
+}

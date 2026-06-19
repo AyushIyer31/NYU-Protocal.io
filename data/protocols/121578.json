@@ -1,0 +1,39 @@
+{
+  "id": 121578,
+  "title": "Quantitative Procedure to Analyze Nuclear β-Catenin Using Immunofluorescence Tissue Staining",
+  "uri": "quantitative-procedure-to-analyze-nuclear-catenin-d2yi8fue",
+  "doi": "dx.doi.org/10.1038/protex.2014.018",
+  "description": "{\"blocks\":[{\"key\":\"zgfou\",\"text\":\"The analysis of the amounts of several proteins, which are found in different sub-cellular compartments, by immunofluorescence can be affected by artifacts that need to be detected and, if possible, corrected. In the case of nuclear β-catenin, its detection is usually affected by the signal obtained from the plasma membrane of the cells (which contain the most abundant pool of the beta-catenin). Here we describe an improved method for relative quantification of nuclear β-catenin amounts in immunofluorescent staining of human colon carcinoma FFPE samples.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"q9ihk\",\"text\":\"Mutations that activate the Wnt signaling pathway are the most common cause of colorectal cancer initiation (1). High nuclear concentrations of β-catenin, the main effector of the canonical Wnt signaling, has been associated with higher stages of the disease and shorter survival of the patients (2). Tissue immunohistochemistry is widely used in clinical pathology to characterize and classify tissue samples of patients. However, in many cases this procedure relies on subjective qualitative criteria. We already described a method for relative quantification of immunofluorescence staining of tumor tissue sections (3). However, in the case of proteins such as β-catenin, that can be located in several sub-cellular compartments (affecting its functions), it is interesting to correctly differentiate each pool. Based on the strategy proposed by Camp RL et al. (4), we have improved our previous procedure using ImageJ software (5) and combining the staining of β-catenin with alpha-catenin, a well characterized interactor that is almost only found in the membrane of the cells (forming a complex with β-catenin and E-Cadherin at the adherent junctions). Staining for both proteins at the same time offer the possibility to distinguish which fluorescent signal comes from the nucleus and which from the plasma membrane. This procedure, which is more accurate than the one we had described before, can be generalized in order to analyze the nuclear amounts of proteins of interest in tissue samples.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"wnkl9\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"mnbcs\",\"text\":\"Standard reagents for immunofluorescent staining of histological sections\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"0c2lp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"koxhw\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"vllqr\",\"text\":\"• Standard equipment for immunohistochemistry.\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ovsxf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"tgxgi\",\"text\":\"• Standard confocal microscope.\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"hxesf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"trpvb\",\"text\":\"• Image J Software: MBF “ImageJ for Microscopy” program (www.macbiophotonics.ca)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Perform a standard double immunofluorescent staining of the samples of choice. Stain β-catenin in red, alpha-catenin in green and counterstain the nuclei with Hoechst 33342.",
+    "Take standard confocal images (at least five frames for each sample).",
+    "Perform immunofluorescence quantification using ImageJ software as detailed as follows:",
+    "Define Regions of Interest (ROI, see Fig. 1) using the Polygon or the Freehand selection tool, delimiting tumor tissue from stroma or adjacent regions.",
+    "Split the image into the three color channels (RGB Merge/split function) to obtain one image per channel.",
+    "To determine the average number of cells present in the previously defined ROI, use the Measure option in the program’s ROI Manager, to assess the integrated density value (IDV) for the blue channel (Hoechst 33342).",
+    "Using the Elliptical selection tool mark at least ten representative nuclei, covering the different sizes and intensities throughout the ROI. Then determine the IDV for all the selected nuclei and calculate the mean nucleus value.",
+    "Divide the blue channel IDV by the mean nucleus value. The resulting value corresponds to the average number of cells present in each respective ROI.",
+    "Next, to avoid quantifying the membrane signal of β-catenin, the signal that colocalize between β- and alpha-catenin is substracted. For that, open the Image calculator from the Process menu and create a new image using the operator Substract (Image1: β-catenin, Image 2: alpha-catenin).",
+    "Create a merged image combining the substracted image with the blue channel image using the operator AND. The merged picture shows nuclear localized β-catenin.",
+    "Measure the IDV of the respective ROI in this newly created merged image and divide it by the average number of cells calculated before. This represents the β-catenin content per nucleus.",
+    "Represent the obtained values in scattered plots representing the level of expression for each protein per cell nucleus analyzed, noted as relative units (r. u.) indicating mean and 95% confidence interval.",
+    "Do suitable statistics, such as the non-parametric Kruskal-Wallis test that is used to compare three or more groups of unpaired values that did not follow any particular distribution. Thereby, Dunn’s multiple comparison post-test serves to identify the significance (P value) of differences in the sum of ranks between each pair of groups of values.",
+    "• Make sure to obtain a technically homogenous staining. • In the case of analysis of tumor samples, differentiating tumor tissue from stroma or adjacent tissue is a key step during ROI selection to assure integer results. • The expression amounts of alpha-catenin can differ between tumor samples, being necessary a slight correction of the laser intensity.",
+    "The authors declare that they have no competing financial interests."
+  ],
+  "authors": [
+    "Oriol Arqués",
+    "Irene Chicote",
+    "Stephan Tenbaum",
+    "Isabel Puig",
+    "Héctor . Palmer"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1401970068,
+  "created_on": 1401970068,
+  "keywords": []
+}

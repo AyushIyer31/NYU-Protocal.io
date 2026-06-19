@@ -1,0 +1,41 @@
+{
+  "id": 58169,
+  "title": "Vagus Nerve Selective Stimulation and EIT recording",
+  "uri": "vagus-nerve-selective-stimulation-and-eit-recordin-b42zqyf6",
+  "doi": "dx.doi.org/10.17504/protocols.io.b42zqyf6",
+  "description": "{\"blocks\":[{\"key\":\"b9tj5\",\"text\":\"This electrophysiology protocol describes the electrical stimulation and measurement steps needed to localize branches and image functional activity in the cervical; vagus nerve of pigs.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"d1vta\",\"text\":\"ScouseTom EIT System: https://doi.org/10.3390/s17020280\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":22,\"length\":33}],\"data\":{}},{\"key\":\"9gn0n\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9ri81\",\"text\":\"EIT/SS nerve cuffs: https://github.com/EIT-team/Electrode-Designs/tree/master/Enrico_Pigs_SS_EIT_Jan2021\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":20,\"length\":84}],\"data\":{}},{\"key\":\"87di9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"31gvs\",\"text\":\"Cuff manufacturing process: https://doi.org/10.1088/1741-2552/aae868\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":28,\"length\":40}],\"data\":{}},{\"key\":\"9t2og\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fracf\",\"text\":\"Laptop or PC, Matlab software \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6b9up\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2k60e\",\"text\":\"Animal surgery facility, physiological readout system with End-Tidal CO2, Blood Pressure, and ECG capabilities.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8evti\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d1993\",\"text\":\"EMG needles and bipolar stimulation cuff for larynx.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"3506657C8DAA11ECA1850A58A9FEAC02\",\"url\":\"https://doi.org/10.3390/s17020280\"}},\"1\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"1DEFBB798DAA11ECA1850A58A9FEAC02\",\"url\":\"https://github.com/EIT-team/Electrode-Designs/tree/master/Enrico_Pigs_SS_EIT_Jan2021\"}},\"2\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"04DF31EC8DAA11ECA1850A58A9FEAC02\",\"url\":\"https://doi.org/10.1088/1741-2552/aae868\"}}}}",
+  "steps": [
+    "Animal (pig) is anaesthetized (Isofluorane) and cervical vagus is exposed through surgery.",
+    "Clean electrodes of the nerve cuffs by dipping into ethanol and then physiological solution (or saline solution).",
+    "Apply nerve cuffs to exposed cervical left vagus and connect to the ScouseTom system.",
+    "Set initial parameters for selective stimulation of the pulmonary branch: suggested 50µs pulse width, 0.4mA pulse amplitude, 20Hz repetition frequency, 30s on / 30s off stimulation. Set animal ventilation setup to spontaneous breathing.",
+    "Run selective stimulation with above parameters and observe ETCO2 response to stimulation (breathing slowdown or complete block) on different electrode pairs.",
+    "Repeat stimulation rounds with increased or decreased pulse amplitude until ETCO2 alteration is localised to one or a few stimulation pairs. Restore mechanical ventilation after completion.",
+    "Set initial parameters for selective stimulation of the recurrent laryngeal branch: suggested 50µs pulse width, 50-100µA pulse amplitude, 20Hz repetition frequency, 5s on / 5s off stimulation. Animal can stay in mechanical ventilation during this phase.",
+    "Run selective stimulation with above parameters and observe EMG needle response to stimulation (activation of larynx shows bursts of activity on EMG recordings) on different electrode pairs.",
+    "Connect stimulator output of ScouseTom to bipolar cuff placed on laryngeal branch. Connect ScouseTom in EIT mode to vagus nerve EIT cuff.",
+    "Switch anaesthetic from isofluorane to α-chloralose and wait 30-40 minutes for settling.",
+    "Set initial parameters for selective stimulation of the recurrent laryngeal branch: suggested 1ms pulse width, 1mA pulse amplitude, 20Hz repetition frequency, 30s on / 30s off stimulation. Animal can stay in mechanical ventilation during this phase.",
+    "Run selective stimulation with above parameters and observe heart rate response to stimulation, computed in real time from peaks in blood pressure or ECG on different electrode pairs.",
+    "Repeat stimulation rounds with increased or decreased pulse amplitude until heart rate change in response to stimulation is localised to just one or a few stimulation pairs.",
+    "Perform spontaneous fast neural EIT with following parameters: - No stimulation - EIT: skip-5 pattern, 200 µA, 6kHz, 10 minutes each injection pair - Recording ECG, blood pressure, End-Tidal CO2 on auxiliary channels of the recording system",
+    "Apply other required electrical interfaces: EMG needles on larynx, bipolar stimulation cuff on recurrent laryngeal branch (approx. 40cm from cervical vagus cuffs).",
+    "Repeat stimulation rounds with increased or decreased pulse amplitude until EMG bursts in response to stimulation are localised to just one or a few stimulation pairs.",
+    "Perform evoked fast neural EIT according to published work with following parameters: - EIT: skip-5 pattern, 200 µA, 6kHz, 15s each injection pair - Stimulation: 50 µs pulse width, 1.2 mA amplitude, 20 Hz repetition during each injection"
+  ],
+  "authors": [
+    "Enrico Ravagli",
+    "Svetlana Mastitskaya",
+    "Nicole Thompson",
+    "Kirill Aristovich",
+    "David Holder"
+  ],
+  "creator": "Enrico Ravagli",
+  "published_on": 1644921932,
+  "created_on": 1644849467,
+  "keywords": []
+}

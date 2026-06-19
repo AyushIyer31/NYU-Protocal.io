@@ -1,0 +1,25 @@
+{
+  "id": 123790,
+  "title": "Single-cell RNA-sequencing data processing",
+  "uri": "single-cell-rna-sequencing-data-processing-d45n8y5e",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgqdxwxvk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"augc\",\"text\":\"This protocol describes the steps used for processing our single cell RNA-sequencing data set. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Align reads (.bcl files) to the mouse reference genome (mm10)",
+    "Analyze data using Seurat’s standard workflow",
+    "Include only cells containing between 200 and 5000 genes and less than 20% mitochondrial RNA",
+    "Using default parameters of Seurat, log normalize data across cells and identify the 1500 most highly variable genes",
+    "Identify cell types by clustering the data using the first 13 principal components and a clustering resolution of 0.3"
+  ],
+  "authors": [
+    "Alexander Misharin"
+  ],
+  "creator": "Luisa Cusick",
+  "published_on": 1741115249,
+  "created_on": 1741107716,
+  "keywords": []
+}

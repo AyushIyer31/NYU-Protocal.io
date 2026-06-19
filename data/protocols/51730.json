@@ -1,0 +1,39 @@
+{
+  "id": 51730,
+  "title": "Eric Vaughn snRNASeq Protocol",
+  "uri": "eric-vaughn-snrnaseq-protocol-bwrspd6e",
+  "doi": "dx.doi.org/10.17504/protocols.io.bwrspd6e",
+  "description": "{\"blocks\":[{\"key\":\"ibr4\",\"text\":\"This protocol is designed to extract single nuclei for sequencing with 10X Genomics technologies.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"80a07\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"frqil\",\"text\":\"Note: For each step, keep tissue/nuclei/reagents/centrifuge on ice/cold to reduce IEG expression and maintain nuclear integrity.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"12uct\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bcclg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"611bc\",\"text\":\"Buffers to prepare:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"40eke\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d6hsr\",\"text\":\"-100mL Lysis Buffer Store @ 4 C:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2lphj\",\"text\":\"98.4mL Nuclease-free water\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9c8ti\",\"text\":\"1mL 1M Tris-HCl (10mM)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cs18q\",\"text\":\"200uL 5M NaCl (10mM)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3naq2\",\"text\":\"300uL 1M MgCl2 (3mM)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":13,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"237ln\",\"text\":\"100uL NonIdet P40 (0.1%)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2air2\",\"text\":\"-PBS w/ 1% BSA and RNAse inhibitor (new batch for each run; enough for 3-4 separate samples):\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fa1ap\",\"text\":\"10mL PBS\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"43dcd\",\"text\":\"100 mg powdered BSA (mix well)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"580md\",\"text\":\"50uL Promega RNasin (40U/uL; final conc: 0.2U/uL)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "After obtaining all tissue, mince tissue 2-3 times until tissue is roughly quartered into .5 2 mm size blocks.",
+    "Dissect out tissue and place into tube with Hibernate A on ice (or if doing only 1-2 dissections, straight into lysis buffer).",
+    "Transfer ~3mL lysis buffer to Potter-Elvehjem Tissue Grinder, 3 mL (manufacturer code 886000-0020).",
+    "Transfer tissue to lysis buffer in tissue grinder.",
+    "Mount pestle to drill and set to 300 rpm.",
+    "In cold room or on ice: gently lower pestle into tube with lysis buffer and tissue a.Dounce approximately 6-10 times (until tissue is adequately homogenized; depends upon the brain region). Final homogenization should be opaque. b.Keep tube stable and allow the tube’s own gravity to pull it down",
+    "Transfer to 15mL tube and centrifuge at ~520 rpm (~50 rcf) for 5 minutes @ 4 C.",
+    "Carefully remove the supernatant and resuspend tissue in 1.5mL PBS w/ 1% BSA. Gently resuspend fully to avoid nuclear clumps, which will be filtered out. a.Optional: Repeat step 8 to wash nuclei. This doesn’t seem to affect sequencing quality much.",
+    "Pass suspension over a 70um filter, then pass this over a 20um MACS Smartstrainer filter (20um alone will clog).",
+    "Add 500uL over the 20um filter.",
+    "Add 1.5uL DAPI to suspension and gently mix. Allow five minutes on ice. a.Optional: if selecting for neurons, add 20uL primary-conjugated NeuN-GFP and swirl on ice for 30 minutes. Spin nuclei at 500rcf for 6 minutes, remove supernatant, and resuspend in 1.5mL PBS BSA.",
+    "Add 20uL PBS w/BSA to a 1.7mL Eppendorf and FACS using 70mm nozzle on four-way purity setting using 88-90 kHz frequency (higher freq = smaller droplets = more concentration)",
+    "Sort until 500,000 events have been sorted a.Alternatively, capture a smaller amount of events and centrifuge at 600 rcf for 6 minutes @ 4C; resuspend in 50-60uL. i.IMPORTANT: Save supernatant and (optionally) test to ensure nuclei have not been lost in centrifugation ii.At higher concentrations, nuclei often aggregate more, so be sure to gently, yet thoroughly resuspend to desired concentration.",
+    "Place 10uL of nuclear suspension in Eppendorf and add 1uL of propidium iodide to it. Lightly mix and add to a Luna automated cell counter slide.",
+    "With the Luna cell counting protocol set to 1.11 dilution, 3uM lowest cell size and max of 15uM, count the nuclei. The ‘dead cell’ count will be your amount of nuclei.",
+    "Your target concentration should be at least 200-300 nuclei per uL, preferably over 500 nuclei.",
+    "Follow the 10X cell-concentration protocol to load your desired amount of nuclei. a.As the 10X output is often too low, as a rule of thumb, always shoot a bit too high, usually adding 26-31uL (max) if you plan to shoot for 7000-8000 nuclei with ~500 nuclei/uL.",
+    "Run 10X single cell protocol"
+  ],
+  "authors": [
+    "Eric Vaughn",
+    "Catherine Dulac"
+  ],
+  "creator": "skvanburen",
+  "published_on": 1635551183,
+  "created_on": 1626797872,
+  "keywords": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": 117791,
+  "title": "MegaWHOOP(MegaPrimer) mutagenesis",
+  "uri": "megawhoop-megaprimer-mutagenesis-dw977h9n",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"de4qm\",\"text\":\"MEGAWHOP (Megaprimer PCR of Whole Plasmid) is a molecular cloning technique. Is wildly used in order to create some mutations in genes. It is a method that shines for the introduction of multiple mutations in one fragment or to replace QuickChange protocol once this one did not work.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"bb2sb\",\"text\":\"Optimize PCR conditions if needed, adjusting primer concentrations or annealing temperatures\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2fgse\",\"text\":\"For larger inserts (\\u003e1 kb), increase the amount of megaprimer and extend elongation times\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"45l4j\",\"text\":\"Always include a negative control (no megaprimer) to assess background\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"68qt0\",\"text\":\"MEGAWHOP efficiency may decrease with increasing insert size; for very large inserts, consider alternative cloning methods\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"8nsh8\",\"text\":\"- Design a primer that includes the mutation desired in the same way you do it for the QuickChange protocol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4redi\",\"text\":\"- For the first PCR, chose the T7forward primer and the mutagenic reverse if the mutation is closer to the begining of the gene or the T7reverse and the mutagenic forward primer if the position to mutate is closer to the terminal part of the gene\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"40lo4\",\"text\":\"Template plasmid (miniprep)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6fip4\",\"text\":\"Platimum Taq Polimerase MM\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f2fil\",\"text\":\"High-fidelity DNA polymerase (e.g., Phusion) MM\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4p1lo\",\"text\":\"DpnI restriction enzyme\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4v80f\",\"text\":\"Competent E. coli cells\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1cq27\",\"text\":\"LB agar plates with appropriate antibiotics\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6gt7v\",\"text\":\"PCR thermal cycler\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"84bjr\",\"text\":\"Gel electrophoresis equipment\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"329io\",\"text\":\"DNA purification kit (GeneJET)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Make sure that you have a primer with the desired mutation and a primer upstream 100-400bp.",
+    "Create the MegaPrimer by running a PCR using the forward upstream primer (T7prom) and the reverse mutagenic primer.",
+    "Confirm that you created a MegaPrimer with an Agarose Gel, searching for a band of 100-400bp",
+    "PCR components: - 1 µL Template DNA from Miniprep - 0.25 µL T7prom primer 50 micromolar (µM) - 0.25 µL Mutagenic reverse Primer 50 micromolar (µM) - 23.5 µL Water - 25 µL Platinum Taq Polimerase MM x2",
+    "PCR steps: - Denature 94 °C 00:02:00 - 30 cycles: - Denature 94 °C 00:00:30 - Annealing 62 °C 00:02:30 - Elongation 72 °C 00:00:20 (Ajust for polimerase and fragment size) - Final Elongation 72 °C 00:05:00",
+    "Purify the PCR product using a GeneJet PCR purification kit or similar. Elute in only 20 µL instead of the normal 50 µL .",
+    "Use the MegaPrimer(purified PCR product) as a primer for the mutagenic PCR against the final target DNA template. Create a control PCR without the MegaPrimer.",
+    "Mutagenic PCR components: - 1 µL Template DNA from Miniprep - 2.5 µL MegaPrimer (previous PCR purified product) - 9 µL Water - 12.5 µL Phusion Pfu Taq Polimerase MM x2",
+    "Mutagenic PCR steps: - Denature 98 °C 00:02:00 - 30 cycles: - Denature 98 °C 00:00:30 - Annealing 62 °C 00:02:30 - Elongation 72 °C 00:04:00 (Ajust for polimerase and primer size) - Final Elongation 72 °C 00:05:00",
+    "Digenstion with DpnI. Add 1 µL DpnI (FastDigest) to each tube and diggest for at least 5-15min.",
+    "Competent Transformation by Miquel Estévez-Gay Transform the DNA into DH5α E.coli cells. Expect more colonies in the sample plates compared to the control plates."
+  ],
+  "authors": [
+    "Miquel Estévez-Gay"
+  ],
+  "creator": "Miquel Estévez-Gay",
+  "published_on": 1736279627,
+  "created_on": 1736246321,
+  "keywords": []
+}

@@ -1,0 +1,42 @@
+{
+  "id": 124144,
+  "title": "Drosophila genomic DNA isolation using NEB Monarch kit",
+  "uri": "drosophila-genomic-dna-isolation-using-neb-monarch-d5gq83vw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l694qklqe/v2",
+  "description": "{\"blocks\":[{\"key\":\"4k6cp\",\"text\":\"Genomic DNA extraction protocol for Drosophila flies, using the Monarch® Genomic DNA Purification Kit from New England Biolabs.  The protocol has been adapted from the manufacturer's protocol \\\"Genomic DNA Purification from Insects\\\" for Drosophila flies and to clarify the order of steps.  Undergraduate students in our lab have found this procedure simple and easy to perform.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":36,\"length\":10},{\"style\":\"italic\",\"offset\":236,\"length\":10}],\"entityRanges\":[{\"key\":0,\"offset\":64,\"length\":37},{\"key\":1,\"offset\":193,\"length\":37}],\"data\":{}},{\"key\":\"8rc9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8s116\",\"text\":\"DNA extracts from this method have worked successfully in standard PCR, high-fidelity PCR (Q5), long PCR (Longamp), droplet-digital PCR (Bio-Rad QX200), and Southern blots.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"D531F321379511ED9A700A58A9FEAC02\",\"url\":\"https://www.neb.com/products/t3010-monarch-genomic-dna-purification-kit\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"29184969379A11ED9A700A58A9FEAC02\",\"url\":\"https://www.neb.com/protocols/2020/02/04/genomic-dna-purification-from-insects\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"5bue\",\"text\":\"Please read the Monarch kit instructions before using this protocol.  The protocol assumes that the user is familiar with these.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eiqbq\",\"text\":\"Note that the samples in liquid phase contain genomic DNA. Take care to not cross-contaminate your samples or the buffer stocks, and use filter tips if possible.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"8snpo\",\"text\":\"If working with a new kit, make sure the enzymes go in the freezer and ethanol gets added to the wash buffer.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"10t4g\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"ei2tv\",\"text\":\"NEB Monarch genomic DNA Purification Kit \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":40}],\"data\":{}},{\"key\":\"4svs7\",\"text\":\"EDTA, 0.5M, 20 µL per sample\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mt4k\",\"text\":\"1.5 mL microcentrifuge tubes, 3 per sample\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4jq6d\",\"text\":\"pestles for microcentrifuge tubes, 1 per sample\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4tu65\",\"text\":\"Heat block or shaking heat block (e.g., Mixer HC, Thermomixer)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ejo7c\",\"text\":\"Microcentrifuge with rotor for 1.5mL tubes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ekal\",\"text\":\"Pipettes and pipet tips\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a2aul\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"FFAF95C0379711ED9276BF976071A1A1\",\"url\":\"https://www.neb.com/products/t3010-monarch-genomic-dna-purification-kit\"}}}}",
+  "steps": [
+    "Pre-heat a heat block or shaking heat block to 56˚C before starting. Prewarm tube(s) of gDNA Elution Buffer in the heat block. For k samples, prewarm at least (k+1) * 100 µL elution buffer.",
+    "For each sample, pipet 20 µL EDTA (0.5M) into the bottom of a 1.5mL tube. Label tubes and place on ice.",
+    "Anaesthetize flies (e.g., with CO 2 ), then sweep flies into the tube. Incubate on ice . For PCR: use 1-5 flies. For Southern blot: use 10-20mg of flies.",
+    "Prepare TLBK master mix: 10 µL Proteinase K + 180 µL Tissue Lysis Buffer per sample. The enzyme is stored at -20˚C.",
+    "For each sample:",
+    "Once all samples have incubated, centrifuge 3 min at maximum speed. Transfer the supernatants to new 1.5mL tubes.",
+    "Add 3 µL RNAse A to each lysate, vortex, then incubate 5min @ 56˚C.",
+    "Once all samples have incubated, add 400 µL gDNA Binding Buffer to each sample. Mix thoroughly by pulse-vortexing for 5-10 seconds.",
+    "Insert gDNA columns in collection tubes and label one per sample.",
+    "Pipet each binding-buffer-mixed sample onto the column matrix, without touching the upper column area.",
+    "Cap and centrifuge twice: first for 3 minutes at 1,000 g, then for 1 minute at max.",
+    "Transfer the column to a clean collection tube. If the column touches the flow-through, re-spin. Pour the flow-through into liquid waste and discard the old collection tube.",
+    "Add 500 µL gDNA Wash Buffer to each column. Cap and invert so that the wash buffer reaches the cap.",
+    "Centrifuge 1 min at max.",
+    "Pipet the flow-through into liquid waste then reinsert the column in the collection tube. Can re-use a dirty tip for this, or a vacuum aspirator.",
+    "Add 500 µL gDNA Wash Buffer then cap. Centrifuge 2 min at max.",
+    "Transfer each column to a clean 1.5mL tube. Do not bend the tube caps!",
+    "Using a clean filter tip for each sample, add 100 µL of warm Elution Buffer directly to the column matrix. [for Southern: use 35 µL]. Incubate at room temperature for 1+ minute.",
+    "Load the centrifuge with the 1.5mL tubes + columns so that the tube caps trail the direction of rotation. Cap the rotor lid and centrifuge for 1 min at max. The DNA is now in the tube, so discard the column. Cap tubes, label them, and store gDNA at -20˚C.",
+    "Grab a clean microtube pestle and grind the flies. For best results, crush the flies between the conical part of the pestle and the conical sidewall of the tube – keep them off the bottom. The goal is to smush all the soft internal organs and get the cells into suspension. Grind until all major bug parts are fragmented (5-40 twists). If a fly gets stuck at the bottom of the tube, the pestle can be used as a piston to pull up the liquid there. Or use a pipet tip.",
+    "Add 190 µL of TLBK to the ground tissue, then vortex immediately and thoroughly so that nothing is stuck to the bottom of the tube.",
+    "Incubate sample in 56˚C heat block for 30 minutes to 3 hours, vortexing every 5-15min (or in shaking heat block at ~1400 RPM). Proceed to grind the next sample."
+  ],
+  "authors": [
+    "David Loehlin"
+  ],
+  "creator": "David Loehlin",
+  "published_on": 1741688809,
+  "created_on": 1741635122,
+  "keywords": []
+}

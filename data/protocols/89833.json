@@ -1,0 +1,33 @@
+{
+  "id": 89833,
+  "title": "Model building and refinement of RCKW and FL-LRRK2 bound to inhibitors ",
+  "uri": "model-building-and-refinement-of-rckw-and-fl-lrrk2-c3yhypt6",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbx5m1lpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"5jkau\",\"text\":\"Protocol to model and refine a PDB against a cryo-EM map.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"3ibk2\",\"text\":\"Install the needed software (Chimera, COOT) and Phenix or Rosetta.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"dub4s\",\"text\":\"ChimeraX1\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":8,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"203vg\",\"text\":\"COOT2,3\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":4,\"length\":3}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3ndst\",\"text\":\"Phenix4\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":6,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"2tler\",\"text\":\"Rosetta5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":7,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Split into domains protein models using Chimera that will be used as a starting point (PDBs 6VP7 and 7LHW for RCKW and FL LRRK2, respectively). Save each domain in a PDB file separately.",
+    "Open maps with the best resolution in Chimera and fit every domain PDB into the map. Save the new position for each PDB domain file.",
+    "Open PDB files in COOT and merge all files. Save a new PDB file with all domains.",
+    "Check all amino acids manually and refine/regularize them against the cryo-EM map. You can find a basic COOT tutorial for cryo-EM here: https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/web/tutorial/Coot-Cryo-EM-basics.html",
+    "You might want to model amino acids not present in your starting point PDBs if you have empty density. To do that: 1. Add residue (Right side, eighth icon from the bottom) 2. Click on the alpha carbon of the last amino acid. 3. Mutate residue (right side, tenth icon from the bottom). It pops up a list with all amino acids. Click on the amino acid you want to add).",
+    "Once you manually checked your model, save it. Then, add your ligand. To do that:",
+    "Open the ligand PDB_Ligand.pdb in Chimera, fit it into the map, and save a new file. Open it in COOT together with your model protein and merge them. Save a new PDB with ligan plus protein.",
+    "Save your ligand in a PDB file. Open Phenix and use elBOW application to generate restrains for your ligand. 1. On the right side, click Ligands &gt; elBOW 2. On elBOW setup, click PDB file with hydrogens and/or CONECT records &gt; OK 3. Click Use simple optimization &gt;OK 4. In geometry file, browse your PDB_ligand.pdb 5. Browse your output directory 6. Type Output file prefix 7. Run the job. If you don&#39;t have a PDB and you have instead a SMILES notation for your ligand, you can generate a PDB and restrains for it by clicking on the step 2 SMILES string option instead",
+    "Refine/Regularize your ligand against the map in COOT. Save your new PDB.",
+    "Refine your model against your map in Phenix or Rosetta:",
+    "In Phenix: 1. Click Cryo-EM &gt; Refinement &gt; Real-Space Refinement 2. Input/Output Tab: 2.a: Type your Job Title 2.b: Add file &gt; PDB_protein+ligand.pdb 2.c: Add file &gt; map.mrc 2.d: Add file &gt; Ligand_restrains.cif 3. Add map resolution 4. In refinement settings Tab: Keep it as default 5. Run the job 6. Once the job is done, open your new PDB_protein+ligand_new.pdb in COOT and check amino acids and restrains. 7. Check Ramachandran plot. Manually correct amino acid outliers and allowed",
+    "In Rosetta: 1. Remove inhibitors and nucleotides from the model. 2. Rosseta/1.3 for refinement. 3. Move map and pdb into your directory 4. Load rosetta using module load rosetta/3.13 5. Once is finished go to COOT, add your ligand and remove all the hydrogens from your structure 5.a: To remove hydrogens in COOT, go to Calculate &gt; Scripting 5.b: Type delete_hydrogens(#) (# is the model)",
+    "Check validation parameters and fix outliers you may have in your PDB. Run a refinement in Phenix or Rosetta (it is an iterative process, so you might have to correct/refine it several times)."
+  ],
+  "authors": [
+    "Marta Sanz Murillo"
+  ],
+  "creator": "Marta Sanz Murillo",
+  "published_on": 1698698875,
+  "created_on": 1698180534,
+  "keywords": []
+}

@@ -1,0 +1,42 @@
+{
+  "id": 242538,
+  "title": "RNA extraction for Kryptoperidinium triquetrum CCAP 1116/3 and Nitzschia laevis UTEX_B_2047",
+  "uri": "rna-extraction-for-kryptoperidinium-triquetrum-cca-hq4ib5yuf",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvwnm67vmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"1dagu\",\"text\":\"A methodology for cell harvesting and RNA extraction from Kryptoperidinium triquetrum CCAP 1116/3 and Nitzschia laevis UTEX_B_2047 for the purposes of RNA-seq.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2c4m7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fep2f\",\"text\":\"The cells of these two species have tough cell walls, which prevent them lysing from the addition of TRIzol alone. Therefore, they require mechanical lysis using a pestle.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"clhqc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6s6fr\",\"text\":\"Combining standard TRIzol phase separation by centrifugation with the Zymo Research Direct-zol RNA Kit in this protocol improves sample purity far greater than using either of these two methods on their own.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"35skt\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"2lng6\",\"text\":\"Cool centrifuges to 4°C.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"9q3eq\",\"text\":\"Read MSDS for all reagents prior to performing protocol and follow appropriate safety precautions. Perform all steps involving opening a tube or container containing TRIzol and chloroform in a fume cupboard wearing appropriate PPE, and be sure to collect and dispose of liquids and consumables contaminated with these reagents according to the department's waste disposal procedures.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"53pnm\",\"text\":\"A Direct-zol RNA Miniprep Kit\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3d1jn\",\"text\":\"TRIzol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d2c79\",\"text\":\"Chloroform\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2k7t9\",\"text\":\"Isopropanol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e4g9k\",\"text\":\"Ethanol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fhsms\",\"text\":\"10 µl, 100 µl and 1000 µl pipettes and corresponding sterile RNase-free filter tips\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bmbvs\",\"text\":\"50 ml centrifuge tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"64nad\",\"text\":\"1.5 ml Eppendorf DNA LoBind Tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"emlq7\",\"text\":\"Sterile disposable pestles compatible with 1.5 mL tubes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"384im\",\"text\":\"Tube racks\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3ei1p\",\"text\":\"Invitrogen UltraPure DNase/RNase-Free Distilled Water\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7onh1\",\"text\":\"Centrifuge with adapter for 1.5 ml tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Take 50 µl aliquot into a sterile 1.5 mL tube that is suitable for use with a pestle grinder. Store remaining 250 µL sample at -20 °C to be processed as needed in the future.",
+    "Pestle grind 50 µl sample for 1 minute to lyse the cells.",
+    "Add 750 µl TRIzol to the lysed sample and mix by pipetting up and down.",
+    "Pellet cell fragments by centrifugation at 12,000 x g for 10 minutes at 4 °C and transfer the supernatant to a new sterile tube.",
+    "Add 0.25 volumes of chloroform per volume of sample (measure sample volume using a pipette) and thoroughly mix by vortexing for 15 seconds.",
+    "Store sample at -20°C",
+    "Analyse samples using Nanodrop to ensure the 260/280 ratio is ~2.0 and the 260/230 ratio is between 2.0 and 2.2.",
+    "Measure concentration of RNA and DNA using Qubit BR assay kits.",
+    "Incubate at room temperature for 10 minutes",
+    "Remove the upper RNA-containing aqueous phase of the sample after phase separation and transfer this to a new sterile tube. Make sure not to pipette too close to the interface to avoid contaminating the sample with DNA. Only very small quantities of RNA are needed for RNA-seq, so no need to try and collect the total aqueous phase, as this will decrease sample quality.",
+    "Centrifuge at 12,000 x g for 15 minutes at 4 °C for phase separation",
+    "Transfer the ethanol and aqueous phase mixture into a Zymo-Spin IICR Column in a Collection Tube and centrifuge at 15 000 x g for 30 seconds. Transfer the column into a new collection tube and discard the flow-through.",
+    "Gently add 0.6 volumes of ethanol to aqueous phase and mix by gentle inversion",
+    "To elute RNA, add 40 μl of DNase/RNase-Free Water directly to the column matrix and centrifuge.",
+    "Add 700 μl RNA Wash Buffer5 to the column and centrifuge at 15 000 x g for for 1 minute to ensure complete removal of the wash buffer. Transfer the column carefully into an RNase-free tube.",
+    "Add 400 μl Direct-zol RNA PreWash to the column and centrifuge at 15 000 x g for 30 seconds. Discard the flow-through and repeat this step.",
+    "DNase I treatment",
+    "Add 400 μl RNA Wash Buffer to the column and centrifuge at 15 000 x g for 30 seconds.",
+    "In an RNase-free tube (not included), add 5 μl DNase I (6 U/μl)*, 75 μl DNA Digestion Buffer and mix by gentle inversion. Add the mix directly to the column matrix.",
+    "Incubate at room temperature (20-30°C) for 15 minutes. Proceed to next step.",
+    "The protocol steps in this section have been directly adapted from the manufacturer&#39;s protocol for the Direct-zol RNA Miniprep kit: https://files.zymoresearch.com/protocols/_r2050_r2051_r2052_r2053_direct-zol_rna_miniprep.pdf"
+  ],
+  "authors": [
+    "Will Lewis",
+    "Ross F. Waller"
+  ],
+  "creator": "Will Lewis",
+  "published_on": 1772038189,
+  "created_on": 1770115403,
+  "keywords": []
+}

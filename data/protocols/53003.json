@@ -1,0 +1,29 @@
+{
+  "id": 53003,
+  "title": "Variant (E484K) ALERT - Ligation-Dependent Loop-Mediated Isothermal Amplification",
+  "uri": "variant-e484k-alert-ligation-dependent-loop-mediat-bxzjpp4n",
+  "doi": "dx.doi.org/10.17504/protocols.io.bxzjpp4n",
+  "description": "{\"blocks\":[{\"key\":\"5i6em\",\"text\":\"A 2-hour, 2-temperature protocol, using RNA templated DNA ligation, for the visual detection of the E484K mutation of concern pertaining to SARS-CoV-2.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7t5lp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dkimo\",\"text\":\"N.B. This is the first version of this protocol, stay tuned for increased sensitivity and multiplexing (A.B.)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Prepare ligation mix to use with previously isolated RNA. A standard Trizol/Chloroform method or column purification method for RNA isolation works well. X1 Ligation mix (multiply for number of samples processed) 2 µL E484K-Donor (100nM) 2 µL E484K-Acceptor (100nM) 1 µL SplintR Buffer (NEB) 0.2 µL SplintR Ligase - 1,250 units New England Biolabs Catalog #M0375S (NEB) 1.8 µL molecular biology grade water add 3 µL RNA per 7 µL of reaction mix for a 10 µL reaction volume",
+    "Incubate at 37 °C for 00:20:00 followed by a 00:20:00 at 65 °C inactivation step.",
+    "Place ligation reactions on ice.",
+    "Prepare LAMP mix. X1 LAMP mix (multiply for number of samples processed) 2.5 µL Isothermal Buffer 1 (NEB) 0.5 µL Magnesium Sulfate (MgSO4) Solution - 6.0 ml New England Biolabs Catalog #B1003S (100mM) 3.5 µL dNTPs (10µM) 0.8 µL FIP (50µM) 0.8 µL BIP (50µM) 0.5 µL F3 (10µM) 0.5 µL B3 (10µM) 0.1 µL SYTO 9 fluorescent nucleic acid stain Life Technologies Catalog #S-34854 (100µM) 1 µL Bst 2.0 WarmStart DNA Polymerase - 8,000 units New England Biolabs Catalog #M0538L 11.8 µL Molecular Biology Grade water add 3 µL of the ligation product from the Ligation step to 22 µL of LAMP mix for a 25 µL reaction.",
+    "Oligonucleotides used for RNA templated DNA ligation using SplintR Ligase - 1,250 units New England Biolabs Catalog #M0375S All sequences shown 5&#39; to 3. Underlined segments are complementary to the target and bold nucleotide is specific to the G&gt;A substitution at position 23012 resulting in the E484K amino acid change. E484K-Donor /5Phos/AACACCATTACAAGCTACGTACATGACATAATCCAAACTCATAAATTCTCGCATTTTAGATCCGTCTCCTTACAGGACACATCATCC E484-Acceptor CATCTCTAACTCTACTAAGACTTCCATTTATCAACAATAGCTGACATGTTCTAGCAGCGACAGGACACACGACAGGAGGAAAGTAACAATTAAAACCTT T",
+    "Oligonucleotides used for Loop-Mediated Isothermal Amplification all sequences shown 5&#39; to 3&#39; FIP CTTTCCTCCTGTCGTGTGTCCTCCATTTATCAACAATAGCTGAC BIP ACCTTTAACACCATTACAAGCTACGACGGATCTAAAATGCGAGAA F3 CATCTCTAACTCTACTAAGACT B3 GGATGATGTGTCCTGTAAGG",
+    "Incubate at 65 °C for 00:50:00",
+    "Visualize reaction tubes over a UV transilluminator. Samples containing a G&gt;A mutation at position 23012 will exhibit fluorescence."
+  ],
+  "authors": [
+    "Ali Bektas",
+    "Anitha Jayaprakash"
+  ],
+  "creator": "Ali Bektas",
+  "published_on": 1631311395,
+  "created_on": 1630876666,
+  "keywords": []
+}
