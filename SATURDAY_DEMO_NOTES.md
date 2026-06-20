@@ -98,8 +98,8 @@ Ollama is optional. If not installed, search works fully — LLM explanations ar
 
 | File | What changed |
 |---|---|
-| `customnerd-backend/protocol_rag.py` | Added `is_vague_query`, `get_clarification_question`, `expand_query`, `multi_search_protocols` |
-| `customnerd-backend/main.py` | Updated `/chat` endpoint to use new functions; added `skip_clarification` field |
-| `customnerd-website/chat.html` | Added clarification bubble, expanded-queries tags, feedback buttons |
+| `protocolsnerd-backend/protocol_rag.py` | Added `is_vague_query`, `get_clarification_question`, `expand_query`, `multi_search_protocols` |
+| `protocolsnerd-backend/main.py` | Updated `/chat` endpoint to use new functions; added `skip_clarification` field |
+| `protocolsnerd-website/chat.html` | Added clarification bubble, expanded-queries tags, feedback buttons |
 | `README.md` | Added "Protocols.io Chatbot" section explaining the system |
 | `SATURDAY_DEMO_NOTES.md` | This file |

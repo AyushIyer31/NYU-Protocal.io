@@ -4,7 +4,7 @@ Benchmark of Prof. Dennis Shasha's three test queries against the live protocols
 
 ## protocols.io search-syntax findings (empirical)
 
-Probed directly against `/api/v3/protocols` (see `customnerd-backend/probe_protocolsio_syntax.py`):
+Probed directly against `/api/v3/protocols` (see `protocolsnerd-backend/probe_protocolsio_syntax.py`):
 
 | Syntax | Supported? | Evidence |
 |---|---|---|

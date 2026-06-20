@@ -1,11 +1,11 @@
-# CustomNerd — Local Agentic Document Analysis
+# ProtocolsNerd — Local Agentic Document Analysis
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![Python Version](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/downloads/)
 [![FastAPI](https://img.shields.io/badge/FastAPI-0.115-green.svg)](https://fastapi.tiangolo.com/)
 [![Ollama](https://img.shields.io/badge/Ollama-local%20LLM-blueviolet.svg)](https://ollama.com/)
 
-CustomNerd is a **fully local**, privacy-first document analysis system. Upload context documents (regulations, policies, standards) and a target document, then let a local Ollama LLM evaluate how well the target aligns with the context. It supports two execution modes: a multi-step **agentic** pipeline and a **prompt-based** mode that runs a set of user-defined checks.
+ProtocolsNerd is a **fully local**, privacy-first document analysis system. Upload context documents (regulations, policies, standards) and a target document, then let a local Ollama LLM evaluate how well the target aligns with the context. It supports two execution modes: a multi-step **agentic** pipeline and a **prompt-based** mode that runs a set of user-defined checks.
 
 **No data leaves your machine.** All inference runs locally via Ollama.
 
@@ -157,7 +157,7 @@ Check that force majeure provisions clearly state whether they excuse payment ob
 
 ## Configuration
 
-Edit `customnerd-backend/variables.env` to change the Ollama model, base URL, or default execution strategy:
+Edit `protocolsnerd-backend/variables.env` to change the Ollama model, base URL, or default execution strategy:
 
 ```env
 LLM=ollama
@@ -177,13 +177,13 @@ Execution strategy options:
 ## Project Structure
 
 ```
-customnerd-backend/
+protocolsnerd-backend/
   main.py                 # FastAPI app — endpoints, SSE streaming, background processing
   helper_functions.py     # Text extraction, chunking, TF-IDF retrieval, agentic + prompt-based analysis
   ollama_executions.py    # Ollama client wrapper with retry logic
   variables.env           # Environment config (model, base URL, execution strategy)
 
-customnerd-website/
+protocolsnerd-website/
   index.html              # Single-page UI for document upload and analysis
   index.js                # Frontend logic — SSE streaming, HTML report rendering, prompt management
   index.css               # Styles — report sections, badges, cards, prompts panel
@@ -257,7 +257,9 @@ Progress updates for every pipeline step — including per-prompt progress — a
 
 ## Protocols.io Chatbot (NYU Project)
 
-This section documents the **protocol search assistant** built on top of CustomNerd for the NYU research project with Prof. Shasha. The goal is to let bench scientists find lab protocols on protocols.io using natural language.
+This section documents the **protocol search assistant** built on top of ProtocolsNerd for the NYU research project with Prof. Shasha. The goal is to let bench scientists find lab protocols on protocols.io using natural language.
+
+For hosted deployment instructions, see [DEPLOYMENT.md](DEPLOYMENT.md). The repo includes `render.yaml` for a Render backend plus Render static frontend, and `netlify.toml` if you want Netlify for the frontend.
 
 ### How to run the chatbot
 

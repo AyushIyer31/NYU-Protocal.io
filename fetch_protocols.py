@@ -10,7 +10,7 @@ Usage:
     python fetch_protocols.py --keywords "RNA extraction" "PCR" "western blot"
     python fetch_protocols.py --max-per-keyword 50 --output-dir data/protocols
 
-Requires PROTOCOLS_IO_TOKEN in customnerd-backend/variables.env (or as env var).
+Requires PROTOCOLS_IO_TOKEN in protocolsnerd-backend/variables.env (or as env var).
 Get a free CLIENT_ACCESS_TOKEN at: https://www.protocols.io/developers
 """
 
@@ -34,7 +34,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(mess
 log = logging.getLogger(__name__)
 
 # Load token from variables.env
-load_dotenv(Path(__file__).parent / "customnerd-backend" / "variables.env", override=False)
+load_dotenv(Path(__file__).parent / "protocolsnerd-backend" / "variables.env", override=False)
 
 API_BASE = "https://www.protocols.io/api/v3"
 RATE_LIMIT_DELAY = 0.65  # ~92 req/min, safely under the 100/min limit
@@ -508,7 +508,7 @@ def _get_token_from_client_credentials(client_id: str, client_secret: str) -> st
 
 def _save_token_to_env(token: str):
     """Write the obtained token back into variables.env so future runs skip this step."""
-    env_path = Path(__file__).parent / "customnerd-backend" / "variables.env"
+    env_path = Path(__file__).parent / "protocolsnerd-backend" / "variables.env"
     text = env_path.read_text(encoding="utf-8")
     if "PROTOCOLS_IO_TOKEN=" in text:
         lines = []
@@ -541,12 +541,12 @@ def _get_token() -> str:
     raise SystemExit(
         "\n[ERROR] No credentials found. Do one of the following:\n\n"
         "  OPTION A — paste your client_id and client_secret (from protocols.io/developers):\n"
-        "    Add to customnerd-backend/variables.env:\n"
+        "    Add to protocolsnerd-backend/variables.env:\n"
         "      PROTOCOLS_IO_CLIENT_ID=your_client_id\n"
         "      PROTOCOLS_IO_CLIENT_SECRET=your_client_secret\n"
         "    Then re-run. The script will fetch and save the token automatically.\n\n"
         "  OPTION B — paste the token directly if you already have it:\n"
-        "    Add to customnerd-backend/variables.env:\n"
+        "    Add to protocolsnerd-backend/variables.env:\n"
         "      PROTOCOLS_IO_TOKEN=your_token_here\n"
     )
 

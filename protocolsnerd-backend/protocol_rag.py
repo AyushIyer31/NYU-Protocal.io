@@ -8,7 +8,7 @@ from typing import Any, Dict, List, Optional
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-import claude_client
+import claude_client as llm_client
 
 log = logging.getLogger(__name__)
 
@@ -150,7 +150,13 @@ def search_protocols(
             "id": p.get("id"),
             "title": p.get("title") or "",
             "uri": p.get("uri") or "",
+            "url": p.get("url") or (f"https://{p.get('doi')}" if p.get("doi") else ""),
             "doi": p.get("doi") or "",
+            "created_on": p.get("created_on"),
+            "published_on": p.get("published_on"),
+            "updated_on": p.get("updated_on"),
+            "step_count": len(p.get("steps") or []),
+            "stats": p.get("stats") or {},
             "description": desc[:400],
             "materials_text": materials[:300],
             "steps_preview": [s for s in (p.get("steps") or []) if s][:3],
@@ -168,12 +174,12 @@ def search_protocols(
 
 def rewrite_query(query: str) -> str:
     """
-    Use Claude to convert a verbose natural language question into compact search terms.
-    Falls back to the original query if the API key is not set.
+    Use the configured local LLM to convert a verbose natural language question
+    into compact search terms. Falls back to the original query when unavailable.
     """
-    if not claude_client.is_available():
+    if not llm_client.is_available():
         return query
-    probes = claude_client.generate_search_queries(query, n_probes=1)
+    probes = llm_client.generate_search_queries(query, n_probes=1)
     rewritten = probes[0] if probes else ""
     if rewritten:
         log.info(f"Query rewritten: '{query}' → '{rewritten}'")
@@ -204,13 +210,13 @@ def _keyword_classify(q: str) -> dict:
 def classify_intent(query: str) -> dict:
     """
     Decide whether a query is a protocol search request or general conversation.
-    Uses Claude API if available, otherwise falls back to keyword heuristic instantly.
+    Uses the configured local LLM if available, otherwise falls back to keyword heuristic instantly.
     Returns {"intent": "search" | "chitchat", "reply": str | None}
     """
     q = query.strip()
-    if not claude_client.is_available():
+    if not llm_client.is_available():
         return _keyword_classify(q)
-    result = claude_client.classify_intent(q)
+    result = llm_client.classify_intent(q)
     return result
 
 
@@ -220,9 +226,9 @@ def classify_intent(query: str) -> dict:
 
 def explain_matches(query: str, results: List[Dict[str, Any]]) -> str:
     """
-    Use Claude to explain which protocols best match the query in plain English.
+    Use the configured local LLM to explain which protocols best match the query.
     """
-    return claude_client.explain_matches(query, results)
+    return llm_client.explain_matches(query, results)
 
 
 # ---------------------------------------------------------------------------
@@ -479,10 +485,10 @@ def _expand_query_rule_based(query: str) -> List[str]:
 
 def _expand_query_with_llm(query: str) -> List[str]:
     """
-    Use Claude to generate 8 alternative search queries.
-    Falls back to rule-based expansion if the API key is not set or call fails.
+    Use the configured local LLM to generate 8 alternative search queries.
+    Falls back to rule-based expansion if the model is unavailable or call fails.
     """
-    candidates = claude_client.generate_search_queries(query, n_probes=8)
+    candidates = llm_client.generate_search_queries(query, n_probes=8)
     if candidates and len(candidates) >= 2:
         return ([query] + candidates)[:10]
     return _expand_query_rule_based(query)
@@ -502,8 +508,8 @@ def expand_query(query: str) -> List[str]:
     # Start with strict-to-loose structural variants
     strict_queries = _generate_strict_to_loose_queries(query)
 
-    # Add synonym/reagent variants using Claude API or rule-based expansion
-    if claude_client.is_available():
+    # Add synonym/reagent variants using local LLM or rule-based expansion
+    if llm_client.is_available():
         expanded = _expand_query_with_llm(query)
     else:
         expanded = _expand_query_rule_based(query)

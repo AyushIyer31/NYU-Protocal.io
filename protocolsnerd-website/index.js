@@ -460,7 +460,7 @@ function generatePDF() {
 
         doc.setFont("helvetica", "bold");
         doc.setFontSize(14);
-        doc.text("CustomNerd Analysis Report", margin, y);
+        doc.text("ProtocolsNerd Analysis Report", margin, y);
         y += 10;
 
         const now = new Date();

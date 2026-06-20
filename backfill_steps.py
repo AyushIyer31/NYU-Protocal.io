@@ -37,7 +37,7 @@ from typing import Any, Dict, List, Optional
 
 from dotenv import load_dotenv
 
-load_dotenv(Path(__file__).parent / "customnerd-backend" / "variables.env", override=False)
+load_dotenv(Path(__file__).parent / "protocolsnerd-backend" / "variables.env", override=False)
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(message)s")
 log = logging.getLogger(__name__)
@@ -67,7 +67,7 @@ def _throttle() -> None:
 def _get_token() -> str:
     token = os.getenv("PROTOCOLS_IO_TOKEN", "").strip().strip('"')
     if not token:
-        raise SystemExit("PROTOCOLS_IO_TOKEN not set in customnerd-backend/variables.env")
+        raise SystemExit("PROTOCOLS_IO_TOKEN not set in protocolsnerd-backend/variables.env")
     return token
 
 

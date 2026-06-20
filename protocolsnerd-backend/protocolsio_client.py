@@ -24,6 +24,7 @@ from __future__ import annotations
 import json
 import logging
 import os
+import ssl
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -31,6 +32,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
+import certifi
 from dotenv import load_dotenv
 
 from protocol_rag import _draftjs_to_text
@@ -45,6 +47,7 @@ BROWSER_UA = (
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
     "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
 )
+SSL_CONTEXT = ssl.create_default_context(cafile=certifi.where())
 
 
 def _token() -> str:
@@ -62,7 +65,7 @@ def _api_get(path: str, params: Dict[str, Any]) -> Dict[str, Any]:
         },
     )
     try:
-        with urllib.request.urlopen(req, timeout=20) as resp:
+        with urllib.request.urlopen(req, timeout=20, context=SSL_CONTEXT) as resp:
             return json.loads(resp.read().decode("utf-8", errors="ignore"))
     except urllib.error.HTTPError as e:
         log.warning(f"protocols.io HTTP {e.code} for {url}: {e.read().decode('utf-8','ignore')[:160]}")
@@ -111,6 +114,11 @@ def _normalize(raw: Dict[str, Any]) -> Dict[str, Any]:
         "uri": slug,           # raw slug (frontends may prepend the /view/ base)
         "url": link,           # ready-to-click link, DOI-preferred
         "doi": doi,
+        "created_on": raw.get("created_on"),
+        "published_on": raw.get("published_on"),
+        "updated_on": raw.get("updated_on"),
+        "step_count": len(raw.get("steps") or []),
+        "stats": raw.get("stats") or {},
         "description": _draftjs_to_text(raw.get("description"))[:600],
         # materials_text and steps_preview are consumed by explain_matches(); keep
         # them present (even if empty) so the explanation path never KeyErrors.
