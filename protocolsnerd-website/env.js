@@ -5,7 +5,10 @@
         window.PROTOCOLSNERD_API_URL ||
         window.PROTOCOLSNERD_BACKEND_URL ||
         (isLocalPage ? null : localStorage.getItem("PROTOCOLSNERD_API_URL")) ||
-        localApiUrl;
+        // Single-container deploys (Cloud Run / HF Spaces / Docker) serve the
+        // frontend from the backend, so default to the page's own origin.
+        // Local pages keep the separate localhost backend.
+        (isLocalPage ? localApiUrl : window.location.origin);
 
     window.env = {
         FRONTEND_FLOW: {

@@ -31,6 +31,7 @@ from helper_functions import (
 from protocol_rag import (
     build_protocol_index, search_protocols, explain_matches, classify_intent,
     is_vague_query, get_clarification_question, expand_query, multi_search_protocols,
+    load_protocol_index,
 )
 from claude_client import analyze_experiment_request, is_available as llm_is_available
 from concept_expansion import (
@@ -65,9 +66,11 @@ update_queues: Dict[str, asyncio.Queue] = {}
 main_loop: Optional[asyncio.AbstractEventLoop] = None
 executor = ThreadPoolExecutor()
 
-# Protocol RAG index — built once at startup
+# Protocol RAG index — loaded once at startup
 PROTOCOL_INDEX: Optional[Dict[str, Any]] = None
 PROTOCOLS_DATA_DIR = Path("../data/protocols")
+# Prebuilt index baked into deploy images by scripts/build_index.py.
+PROTOCOL_INDEX_CACHE = Path("../data/protocol_index.pkl")
 
 app.add_middleware(
     CORSMiddleware,
@@ -91,20 +94,36 @@ async def startup_event():
     main_loop = asyncio.get_event_loop()
     SESSIONS_DIR.mkdir(parents=True, exist_ok=True)
 
-    if PROTOCOLS_DATA_DIR.exists():
+    # Prefer a prebuilt index baked into the image (scripts/build_index.py runs
+    # at Docker build time). Loading a pickle is fast and CPU-light, so it's safe
+    # to do synchronously at startup — the index is ready the moment the server
+    # accepts requests. This avoids Cloud Run's between-request CPU throttling,
+    # which stalls a runtime build and leaves local search permanently 503-ing.
+    if PROTOCOL_INDEX_CACHE.exists():
         try:
-            loop = asyncio.get_event_loop()
-            PROTOCOL_INDEX = await loop.run_in_executor(
-                executor, build_protocol_index, PROTOCOLS_DATA_DIR
-            )
-            count = len(PROTOCOL_INDEX["protocols"])
-            logging.info(f"Protocol index ready: {count} protocols loaded.")
+            PROTOCOL_INDEX = load_protocol_index(PROTOCOL_INDEX_CACHE)
+            logging.info(f"Loaded prebuilt protocol index: {len(PROTOCOL_INDEX['protocols'])} protocols.")
         except Exception as e:
-            logging.warning(f"Could not build protocol index: {e}")
-    else:
+            logging.warning(f"Could not load prebuilt index ({e}); will build at runtime.")
+
+    if PROTOCOL_INDEX is None and PROTOCOLS_DATA_DIR.exists():
+        # Local-dev fallback: no prebuilt pickle, so build in a background thread
+        # (a dev machine has no CPU throttling, so the build completes fine).
+        # Request handlers guard for `PROTOCOL_INDEX is None` until it's ready.
+        def _build_index():
+            global PROTOCOL_INDEX
+            try:
+                PROTOCOL_INDEX = build_protocol_index(PROTOCOLS_DATA_DIR)
+                logging.info(f"Protocol index ready: {len(PROTOCOL_INDEX['protocols'])} protocols loaded.")
+            except Exception as e:
+                logging.warning(f"Could not build protocol index: {e}")
+
+        executor.submit(_build_index)
+        logging.info("No prebuilt index found; building in background.")
+    elif PROTOCOL_INDEX is None:
         logging.warning(f"Protocol data dir not found: {PROTOCOLS_DATA_DIR}. Run fetch_protocols.py first.")
 
-    logging.info("Local Ollama RAG backend started.")
+    logging.info("RAG backend started.")
 
 
 class ChatRequest(BaseModel):
@@ -1000,6 +1019,19 @@ async def fetch_backend_mode():
 @app.get("/ollama_status")
 async def ollama_status():
     return check_ollama_health()
+
+
+# Serve the static frontend from the same origin for single-container deploys
+# (Cloud Run, HF Spaces, Docker). All API routes above are registered first and
+# take precedence; any other path falls through to the static files. The chat
+# UI is at /chat.html. Harmless locally and on the Render split deploy (the
+# frontend is a separate service there, but mounting its files here is fine).
+from fastapi.staticfiles import StaticFiles
+from pathlib import Path as _Path
+
+_FRONTEND_DIR = _Path(__file__).resolve().parent.parent / "protocolsnerd-website"
+if _FRONTEND_DIR.is_dir():
+    app.mount("/", StaticFiles(directory=str(_FRONTEND_DIR), html=True), name="frontend")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,20 @@
+# Keep the image small and portable. NOTE: data/ is intentionally NOT ignored —
+# the protocol corpus must ship inside the image.
+venv/
+nerd_engine_venv/
+**/__pycache__/
+*.pyc
+*.pyo
+.git/
+.DS_Store
+*.log
+logs/
+protocolsnerd-backend/storage/
+data/protocols_index.backup.json
+
+# Secrets — never bake into the image. Provide at runtime instead.
+variables.env
+protocolsnerd-backend/variables.env
+
+# Regenerated inside the image by RUN scripts/build_index.py
+data/protocol_index.pkl

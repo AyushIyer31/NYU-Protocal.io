@@ -102,6 +102,24 @@ def build_protocol_index(data_dir: Path) -> Dict[str, Any]:
     }
 
 
+def save_protocol_index(index: Dict[str, Any], path: Path) -> None:
+    """Pickle a built index so it can be baked into a deploy image."""
+    import pickle
+
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "wb") as f:
+        pickle.dump(index, f, protocol=pickle.HIGHEST_PROTOCOL)
+    log.info(f"Saved protocol index to {path}")
+
+
+def load_protocol_index(path: Path) -> Dict[str, Any]:
+    """Load a prebuilt index. Fast — no TF-IDF fitting, so safe at startup."""
+    import pickle
+
+    with open(path, "rb") as f:
+        return pickle.load(f)
+
+
 # ---------------------------------------------------------------------------
 # Search
 # ---------------------------------------------------------------------------
