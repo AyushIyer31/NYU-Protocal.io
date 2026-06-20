@@ -985,8 +985,23 @@ def analyze_target_with_ollama(
 
 def check_ollama_health() -> Dict[str, Any]:
     """
-    Check whether the local Ollama server appears reachable.
+    Check whether the active LLM provider appears reachable.
+
+    With LLM_PROVIDER=claude (hosted deployments), there is no Ollama to probe —
+    report on the Claude provider instead.
     """
+    from ollama_executions import active_provider, claude_available, _get_claude_model
+
+    if active_provider() == "claude":
+        ok = claude_available()
+        return {
+            "ok": ok,
+            "provider": "claude",
+            "model": _get_claude_model(),
+            "error": None if ok else "ANTHROPIC_API_KEY not set or anthropic package missing",
+            "models": [_get_claude_model()] if ok else [],
+        }
+
     base_url = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434").strip('"').strip()
     if not base_url:
         base_url = "http://localhost:11434"

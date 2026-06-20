@@ -11,10 +11,12 @@ services:
         value: 3.11.9
       - key: EXECUTION_STRATEGY
         value: agentic
-      - key: OLLAMA_MODEL
-        value: llama3.2
-      - key: OLLAMA_BASE_URL
-        value: http://localhost:11434
+      # Hosted deploys use Claude — there is no GPU on a free host to run Ollama.
+      # Local dev keeps Ollama via variables.env (LLM_PROVIDER=ollama).
+      - key: LLM_PROVIDER
+        value: claude
+      - key: CLAUDE_MODEL
+        value: claude-sonnet-4-6
       - key: PROTOCOLS_IO_TOKEN
         sync: false
       - key: ANTHROPIC_API_KEY

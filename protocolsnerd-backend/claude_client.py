@@ -21,7 +21,13 @@ from typing import Any, Dict, List, Optional
 from dotenv import load_dotenv
 
 from biology_intents import INTENT_FAMILIES, SUB_INTENTS
-from ollama_executions import _get_ollama_model, _retryable_ollama_call
+from ollama_executions import (
+    _get_ollama_model,
+    _get_claude_model,
+    _retryable_ollama_call,
+    active_provider,
+    claude_available,
+)
 
 load_dotenv(Path(__file__).parent / "variables.env", override=False)
 
@@ -39,13 +45,13 @@ def _native_ollama_base_url() -> str:
 
 
 def active_model() -> str:
-    return _get_ollama_model()
+    return _get_claude_model() if active_provider() == "claude" else _get_ollama_model()
 
 
 def is_available() -> bool:
-    """True when local Ollama is configured and reachable."""
-    if os.getenv("LLM", "ollama").strip().lower() != "ollama":
-        return False
+    """True when the active LLM provider is configured and reachable."""
+    if active_provider() == "claude":
+        return claude_available()
     try:
         with urllib.request.urlopen(f"{_native_ollama_base_url()}/api/tags", timeout=1.5):
             return True

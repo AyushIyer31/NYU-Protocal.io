@@ -54,6 +54,110 @@ def reinitialize_ollama_client():
 
 
 # ---------------------------------------------------------------------
+# Provider selection (local Ollama vs hosted Claude)
+# ---------------------------------------------------------------------
+#
+# Local development uses Ollama (no API key, runs on the dev machine).
+# Cloud / always-on deployments set LLM_PROVIDER=claude so every LLM call
+# routes to Anthropic instead — there is no GPU on a free host to run
+# Ollama. Every LLM call in the backend funnels through
+# `_retryable_ollama_call`, so this is the only switch point needed.
+
+def active_provider() -> str:
+    """Return "claude" when configured for hosted Claude, else "ollama"."""
+    p = os.getenv("LLM_PROVIDER", os.getenv("LLM", "ollama")).strip('"').strip().lower()
+    return "claude" if p in ("claude", "anthropic") else "ollama"
+
+
+def _get_claude_model() -> str:
+    model = os.getenv("CLAUDE_MODEL", "claude-sonnet-4-6").strip('"').strip()
+    return model if model else "claude-sonnet-4-6"
+
+
+_CLAUDE_MAX_TOKENS = int(os.getenv("CLAUDE_MAX_TOKENS", "4096").strip('"').strip() or "4096")
+
+_claude_client = None
+
+
+def _make_claude_client():
+    """Lazily build an Anthropic client. Returns None if unavailable."""
+    if not os.getenv("ANTHROPIC_API_KEY"):
+        logging.warning("ANTHROPIC_API_KEY not set; Claude provider unavailable.")
+        return None
+    try:
+        import anthropic
+    except ImportError:
+        logging.error("anthropic package not installed. Run: pip install anthropic")
+        return None
+    try:
+        return anthropic.Anthropic()  # reads ANTHROPIC_API_KEY from env
+    except Exception as e:
+        logging.error(f"Failed to create Anthropic client: {e}")
+        return None
+
+
+def claude_available() -> bool:
+    global _claude_client
+    if _claude_client is None:
+        _claude_client = _make_claude_client()
+    return _claude_client is not None
+
+
+def _retryable_claude_call(
+    *,
+    messages,
+    temperature=0.3,  # accepted for signature parity; not sent to Claude
+    top_p=1.0,
+    response_format: Optional[Dict[str, str]] = None,
+) -> str:
+    """
+    Claude equivalent of `_retryable_ollama_call`. Translates the OpenAI-style
+    `messages` list into Anthropic's system + messages shape and returns the
+    response text (or "" on failure).
+    """
+    global _claude_client
+    if _claude_client is None:
+        _claude_client = _make_claude_client()
+    if _claude_client is None:
+        return ""
+
+    # Anthropic takes the system prompt separately from the turn messages.
+    system_parts = [m["content"] for m in messages if m.get("role") == "system"]
+    convo = [
+        {"role": m["role"], "content": m["content"]}
+        for m in messages
+        if m.get("role") in ("user", "assistant")
+    ]
+    system = "\n\n".join(p for p in system_parts if p)
+    if response_format and response_format.get("type") == "json_object":
+        system += "\n\nReturn ONLY a single valid JSON value. No markdown fences, no commentary."
+
+    # Note: Opus 4.8 rejects temperature/top_p (400), so we omit sampling
+    # params entirely — omitting is valid on every Claude model. Thinking is
+    # left off (omitted) for fast, JSON-clean structured replies.
+    for attempt in range(MAX_RETRIES):
+        try:
+            resp = _claude_client.messages.create(
+                model=_get_claude_model(),
+                max_tokens=_CLAUDE_MAX_TOKENS,
+                system=system or "You are a helpful assistant.",
+                messages=convo or [{"role": "user", "content": ""}],
+            )
+            return "".join(b.text for b in resp.content if b.type == "text").strip()
+        except Exception as e:
+            # Retry on transient errors (rate limit / overload / 5xx / network),
+            # give up on the rest.
+            status = getattr(e, "status_code", None)
+            retryable = status in (408, 409, 429, 500, 529) or status is None
+            logging.warning(f"[Claude attempt {attempt + 1}/{MAX_RETRIES}] {e}")
+            if not retryable:
+                break
+            time.sleep(BACKOFF_SECS * (2 ** attempt))
+
+    return ""
+
+
+# ---------------------------------------------------------------------
 # Core API call
 # ---------------------------------------------------------------------
 
@@ -65,9 +169,18 @@ def _retryable_ollama_call(
     response_format: Optional[Dict[str, str]] = None,
 ) -> str:
     """
-    Retry wrapper for local Ollama calls.
+    Retry wrapper for LLM calls. Routes to hosted Claude when
+    LLM_PROVIDER=claude, otherwise to the local Ollama server.
     Returns raw text content or "" on failure.
     """
+    if active_provider() == "claude":
+        return _retryable_claude_call(
+            messages=messages,
+            temperature=temperature,
+            top_p=top_p,
+            response_format=response_format,
+        )
+
     if not client:
         logging.error("Ollama client not initialized.")
         return ""

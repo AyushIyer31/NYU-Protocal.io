@@ -444,6 +444,19 @@
       font-weight: 500;
     }
 
+    .profile-field.optional {
+      border-style: dashed;
+      border-color: #d4d9e6;
+      opacity: 0.8;
+    }
+
+    .profile-field .optional-tag {
+      color: #a0a7b8;
+      font-size: 9px;
+      font-weight: 400;
+      margin-left: 4px;
+    }
+
     .match-explanation {
       background: #fff;
       border: 1px solid #e5e9f3;
@@ -717,12 +730,44 @@
       ['Intent-specific', renderIntentSpecific(profile)],
     ];
 
+    const requiredFieldsByIntent = {
+      gene_modification:             ['Organism', 'Modification type', 'System'],
+      genome_editing:                ['Organism', 'Modification type', 'System'],
+      multiplex_gene_modification:   ['Organism', 'Modification type', 'System', 'Target'],
+      gene_overexpression:           ['Organism', 'Expression type', 'System'],
+      gene_knockdown:                ['Organism', 'Method'],
+      stress_tolerance_assay:        ['Organism', 'Condition', 'Readout'],
+      protein_purification:          ['Target', 'Organism'],
+      pcr_qpcr:                      ['Organism', 'Readout'],
+      transformation:                ['Organism', 'Method'],
+      microscopy:                    ['Organism', 'System'],
+      sequencing_prep:               ['Organism', 'Readout'],
+      cloning:                       ['Organism', 'Target'],
+      mutagenesis:                   ['Organism', 'Modification type'],
+      western_blot:                  ['Organism', 'Target'],
+      immunoprecipitation:           ['Organism', 'Target'],
+      protein_extraction:            ['Organism'],
+      growth_assay:                  ['Organism', 'Readout'],
+      gas_exchange:                  ['Organism'],
+      phenotyping_assay:             ['Organism', 'Readout'],
+      general_protocol_search:       ['Method'],
+    };
+    const alwaysRequired = ['Intent'];
+    const subIntent = profile.sub_intent || intent?.sub_intent || intent?.intent || '';
+    const requiredSet = new Set([
+      ...alwaysRequired,
+      ...(requiredFieldsByIntent[subIntent] || []),
+    ]);
+
     const fields = rows.map(([label, value]) => {
       const shown = value && String(value).trim() ? String(value) : 'not specified';
       const missingClass = shown === 'not specified' ? ' missing' : '';
+      const isOptional = !requiredSet.has(label) && !alwaysRequired.includes(label);
+      const optionalClass = isOptional ? ' optional' : '';
+      const optionalTag = isOptional ? '<span class="optional-tag">(optional)</span>' : '';
       return `
-        <div class="profile-field${missingClass}">
-          <span class="label">${escapeHtml(label)}</span>
+        <div class="profile-field${missingClass}${optionalClass}">
+          <span class="label">${escapeHtml(label)}${optionalTag}</span>
           <span class="value">${escapeHtml(shown)}</span>
         </div>
       `;
