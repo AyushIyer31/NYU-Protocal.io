@@ -37,7 +37,7 @@ import urllib.request
 from collections import Counter
 from typing import Any, Dict, List, Optional
 
-import claude_client
+import claude_client as llm_client
 
 log = logging.getLogger(__name__)
 
@@ -244,7 +244,7 @@ def europepmc_related_terms(term: str, max_terms: int = 4) -> List[str]:
 
 
 def _ollama_synonyms(term: str, max_terms: int = 3) -> List[str]:
-    return claude_client.get_synonyms(term, max_terms)
+    return llm_client.get_synonyms(term, max_terms)
 
 
 # ---------------------------------------------------------------------------
@@ -362,7 +362,7 @@ def expand_concepts(concepts: Dict[str, Any], use_external: bool = True) -> Dict
         concepts.get("molecules", []) + concepts.get("goals", [])
         + concepts.get("methods", []) + concepts.get("actions", [])
     )
-    claude_up = claude_client.is_available() if use_external else False
+    llm_up = llm_client.is_available() if use_external else False
 
     for term in concept_terms:
         if term in expansions:
@@ -372,7 +372,7 @@ def expand_concepts(concepts: Dict[str, Any], use_external: bool = True) -> Dict
         # (e.g. "extraction" -> dental "tooth extraction"). Trust the curated map.
         if use_external and term.lower() not in _GENERIC_METHOD:
             terms += [t for t in europepmc_related_terms(term) if t not in terms]
-        if len(terms) < 2 and claude_up:
+        if len(terms) < 2 and llm_up:
             terms += [t for t in _ollama_synonyms(term) if t not in terms]
         if terms:
             expansions[term] = _dedup_against(terms, term)[:4]
@@ -509,8 +509,8 @@ def generate_sentence_variants(
     query = concepts.get("query", "")
     multiplex = "multiplex" in concepts.get("methods", [])
 
-    # Prefer Claude for fluent rephrasings when API key is available.
-    if claude_client.is_available():
+    # Prefer the local LLM for fluent rephrasings when available.
+    if llm_client.is_available():
         llm = _ollama_sentence_variants(query, max_variants)
         if llm:
             return llm
@@ -598,4 +598,4 @@ def generate_sentence_variants(
 
 
 def _ollama_sentence_variants(query: str, n: int) -> List[str]:
-    return claude_client.get_sentence_variants(query, n)
+    return llm_client.get_sentence_variants(query, n)

@@ -296,6 +296,169 @@
       line-height: 1.6;
     }
 
+    .quick-options {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .quick-option-btn {
+      background: #fff;
+      border: 1px solid #f0c040;
+      border-radius: 16px;
+      color: #5a4a00;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 12px;
+      padding: 6px 12px;
+      transition: all 0.15s;
+    }
+
+    .quick-option-btn:hover {
+      background: #fff4c2;
+    }
+
+    .query-selection-card {
+      background: #f8fbff;
+      border: 1px solid #cbd8f5;
+      border-radius: 8px;
+      margin-top: 12px;
+      padding: 14px;
+    }
+
+    .query-selection-card h3 {
+      color: #263047;
+      font-size: 14px;
+      margin-bottom: 8px;
+    }
+
+    .query-selection-card p {
+      color: #5c6475;
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+
+    .candidate-query-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .candidate-query-row {
+      align-items: center;
+      background: #fff;
+      border: 1px solid #dce3f5;
+      border-radius: 8px;
+      display: flex;
+      gap: 10px;
+      justify-content: space-between;
+      padding: 9px 10px;
+    }
+
+    .candidate-query-text {
+      color: #29324a;
+      font-size: 13px;
+      line-height: 1.4;
+    }
+
+    .candidate-query-btn,
+    .candidate-search-all-btn {
+      background: #4361ee;
+      border: none;
+      border-radius: 14px;
+      color: #fff;
+      cursor: pointer;
+      font-family: inherit;
+      font-size: 12px;
+      font-weight: 600;
+      padding: 6px 12px;
+      white-space: nowrap;
+    }
+
+    .candidate-query-btn.secondary {
+      background: #fff;
+      border: 1px solid #cbd8f5;
+      color: #4361ee;
+    }
+
+    .candidate-edit-row {
+      display: flex;
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .candidate-edit-row input {
+      border: 1px solid #cbd8f5;
+      border-radius: 16px;
+      flex: 1;
+      font-family: inherit;
+      font-size: 13px;
+      padding: 8px 12px;
+    }
+
+    .profile-card {
+      background: #f8fafc;
+      border: 1px solid #dce3f0;
+      border-radius: 8px;
+      margin: 12px 0;
+      padding: 12px;
+    }
+
+    .profile-card h3 {
+      color: #29324a;
+      font-size: 13px;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+
+    .profile-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 7px;
+    }
+
+    .profile-field {
+      background: #fff;
+      border: 1px solid #e5e9f3;
+      border-radius: 6px;
+      padding: 7px 9px;
+    }
+
+    .profile-field .label {
+      color: #7a8399;
+      display: block;
+      font-size: 11px;
+      margin-bottom: 2px;
+    }
+
+    .profile-field .value {
+      color: #263047;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .profile-field.missing .value {
+      color: #a0a7b8;
+      font-weight: 500;
+    }
+
+    .match-explanation {
+      background: #fff;
+      border: 1px solid #e5e9f3;
+      border-radius: 6px;
+      color: #4b5568;
+      font-size: 12px;
+      line-height: 1.5;
+      margin-top: 10px;
+      padding: 8px 10px;
+    }
+
+    .match-explanation strong {
+      color: #29324a;
+    }
+
     /* Expanded queries shown as small tags below the explanation */
     .expanded-queries {
       margin-top: 10px;
@@ -394,15 +557,29 @@
   <p class="hint">Press Enter to search &nbsp;·&nbsp; Searching <span id="protocol-count">...</span> protocols</p>
 </div>
 
+<script src="env.js"></script>
 <script>
-  const BACKEND = 'http://localhost:8001';
+  const BACKEND = (
+    window.PROTOCOLSNERD_API_URL ||
+    window.PROTOCOLSNERD_BACKEND_URL ||
+    window.env?.FRONTEND_FLOW?.API_URL ||
+    'http://localhost:8001'
+  ).replace(/\/+$/, '');
 
-  // Tracks whether the next query should skip the clarification check
-  // (set to true after the assistant asks a clarification question)
+  // Used only for deliberate refinement flows such as feedback buttons.
+  // Clarification answers keep using the profile state instead.
   let skipClarification = false;
 
   // Remembers the last successfully searched query for feedback prefill
   let lastSearchQuery = '';
+
+  // Client-side conversation state for the current experimental goal.
+  let experimentProfile = null;
+  let currentExperimentQuery = '';
+  let latestCandidateQueries = [];
+  let pendingSearchConfirmed = false;
+  let pendingSelectedSearchQuery = '';
+  let pendingSearchAll = false;
 
   // -------------------------------------------------------------------------
   // Startup: health check and protocol count
@@ -413,7 +590,7 @@
       const r = await fetch(`${BACKEND}/health`);
       const data = await r.json();
       if (data.status === 'healthy' || data.status === 'degraded') {
-        document.getElementById('index-badge').textContent = 'Connected';
+        markBackendOnline('Connected');
       }
     } catch {
       document.getElementById('index-badge').textContent = 'Backend offline';
@@ -427,15 +604,29 @@
       const r = await fetch(`${BACKEND}/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ query: 'PCR', top_k: 1, explain: false, skip_clarification: true }),
+        body: JSON.stringify({
+          query: 'PCR',
+          top_k: 1,
+          explain: false,
+          skip_clarification: true,
+          search_mode: 'local',
+        }),
       });
       if (r.ok) {
         const data = await r.json();
         const count = data.total_protocols_indexed || 0;
         document.getElementById('protocol-count').textContent = count.toLocaleString();
-        document.getElementById('index-badge').textContent = `${count.toLocaleString()} protocols indexed`;
+        markBackendOnline(`${count.toLocaleString()} protocols indexed`);
       }
     } catch {}
+  }
+
+  function markBackendOnline(text = 'Connected') {
+    const badge = document.getElementById('index-badge');
+    if (!badge) return;
+    badge.textContent = text;
+    badge.style.background = '#eef2ff';
+    badge.style.color = '#4361ee';
   }
 
   checkHealth();
@@ -446,6 +637,7 @@
   });
 
   function useExample(btn) {
+    resetExperimentState();
     document.getElementById('query-input').value = btn.textContent;
     sendQuery();
   }
@@ -468,6 +660,162 @@
 
   function escapeHtml(str) {
     return (str || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  }
+
+  function escapeAttr(str) {
+    return escapeHtml(str).replace(/"/g, '&quot;');
+  }
+
+  function humanizeProfileValue(value) {
+    if (!value) return value;
+    return String(value).replace(/_/g, ' ');
+  }
+
+  function renderIntentSpecific(profile) {
+    const raw = profile?.intent_specific;
+    if (!raw || typeof raw !== 'object' || Array.isArray(raw)) return '';
+    const parts = Object.entries(raw)
+      .filter(([_, value]) => value !== null && value !== undefined && value !== '' && !(Array.isArray(value) && !value.length))
+      .map(([key, value]) => {
+        const shown = Array.isArray(value) ? value.join(', ') : String(value);
+        return `${humanizeProfileValue(key)}: ${shown}`;
+      });
+    return parts.join('; ');
+  }
+
+  function resetExperimentState() {
+    experimentProfile = null;
+    currentExperimentQuery = '';
+    latestCandidateQueries = [];
+    pendingSearchConfirmed = false;
+    pendingSelectedSearchQuery = '';
+    pendingSearchAll = false;
+    skipClarification = false;
+  }
+
+  function renderExperimentProfile(profile, intent) {
+    if (!profile) return '';
+    const rows = [
+      ['Intent', intent?.label || profile.experimental_method || 'unknown'],
+      ['Intent family', intent?.intent_family_label || humanizeProfileValue(profile.intent_family)],
+      ['Sub-intent', intent?.sub_intent_label || humanizeProfileValue(profile.sub_intent)],
+      ['Organism', profile.organism],
+      ['Sample type', profile.sample_type],
+      ['System', profile.tissue_or_cell_type],
+      ['Target', profile.target],
+      ['Gene/construct', profile.gene_or_construct],
+      ['Modification type', profile.modification_type],
+      ['Method', profile.method || profile.experimental_method],
+      ['Delivery method', profile.delivery_method],
+      ['Expression type', profile.expression_type],
+      ['Readout', profile.readout || profile.readout_assay],
+      ['Condition', profile.condition],
+      ['Timeline', profile.timeline],
+      ['Equipment', Array.isArray(profile.equipment) && profile.equipment.length ? profile.equipment.join(', ') : (Array.isArray(profile.required_equipment) ? profile.required_equipment.join(', ') : profile.required_equipment)],
+      ['Difficulty', profile.difficulty || profile.protocol_difficulty],
+      ['Constraints', Array.isArray(profile.constraints) ? profile.constraints.join(', ') : profile.constraints],
+      ['Intent-specific', renderIntentSpecific(profile)],
+    ];
+
+    const fields = rows.map(([label, value]) => {
+      const shown = value && String(value).trim() ? String(value) : 'not specified';
+      const missingClass = shown === 'not specified' ? ' missing' : '';
+      return `
+        <div class="profile-field${missingClass}">
+          <span class="label">${escapeHtml(label)}</span>
+          <span class="value">${escapeHtml(shown)}</span>
+        </div>
+      `;
+    }).join('');
+
+    return `
+      <div class="profile-card">
+        <h3>Structured experiment profile</h3>
+        <div class="profile-grid">${fields}</div>
+      </div>
+    `;
+  }
+
+  function renderQuickOptions(options) {
+    if (!options || !options.length) return '';
+    return `
+      <div class="quick-options">
+        ${options.map(option => {
+          const encoded = JSON.stringify(option).replace(/"/g, '&quot;');
+          return `
+          <button class="quick-option-btn" onclick="sendQuickAnswer(${encoded})">
+            ${escapeHtml(option)}
+          </button>
+        `;
+        }).join('')}
+      </div>
+    `;
+  }
+
+  function sendQuickAnswer(answer) {
+    const input = document.getElementById('query-input');
+    input.value = answer;
+    sendQuery();
+  }
+
+  function renderQuerySelection(queries) {
+    if (!queries || !queries.length) return '';
+    latestCandidateQueries = queries;
+    const rows = queries.map((query, i) => {
+      const encoded = JSON.stringify(query).replace(/"/g, '&quot;');
+      return `
+        <div class="candidate-query-row">
+          <div class="candidate-query-text">${i + 1}. ${escapeHtml(query)}</div>
+          <button class="candidate-query-btn" onclick="confirmCandidateSearch(${encoded})">Search</button>
+        </div>
+      `;
+    }).join('');
+    const first = escapeAttr(queries[0] || '');
+    return `
+      <div class="query-selection-card">
+        <h3>Suggested search queries</h3>
+        <p>Select one query, edit it, or search all candidates.</p>
+        <div class="candidate-query-list">${rows}</div>
+        <div class="candidate-edit-row">
+          <input id="candidate-query-input" value="${first}" />
+          <button class="candidate-query-btn" onclick="confirmEditedCandidateSearch()">Search edited</button>
+          <button class="candidate-query-btn secondary" onclick="confirmCandidateSearch('', true)">Search all</button>
+        </div>
+      </div>
+    `;
+  }
+
+  function confirmCandidateSearch(query, searchAll = false) {
+    pendingSearchConfirmed = true;
+    pendingSelectedSearchQuery = searchAll ? (latestCandidateQueries[0] || '') : query;
+    pendingSearchAll = Boolean(searchAll);
+    const input = document.getElementById('query-input');
+    input.value = searchAll ? 'Search all suggested queries' : pendingSelectedSearchQuery;
+    sendQuery();
+  }
+
+  function confirmEditedCandidateSearch() {
+    const candidateInput = document.getElementById('candidate-query-input');
+    const edited = candidateInput?.value?.trim() || '';
+    if (!edited) return;
+    confirmCandidateSearch(edited, false);
+  }
+
+  function renderMatchNotes(result) {
+    const parts = [];
+    if (result.why_it_matches) {
+      parts.push(`<div><strong>Why it matches:</strong> ${escapeHtml(result.why_it_matches)}</div>`);
+    }
+    if (result.may_not_fit && result.may_not_fit.length) {
+      parts.push(`<div><strong>May not fit:</strong> ${escapeHtml(result.may_not_fit.join(' '))}</div>`);
+    }
+    if (result.assumptions && result.assumptions.length) {
+      parts.push(`<div><strong>Assumptions:</strong> ${escapeHtml(result.assumptions.join(' '))}</div>`);
+    }
+    if (result.missing_information && result.missing_information.length) {
+      parts.push(`<div><strong>Still missing:</strong> ${escapeHtml(result.missing_information.join(', '))}</div>`);
+    }
+    return parts.length ? `<div class="match-explanation">${parts.join('')}</div>` : '';
   }
 
   // -------------------------------------------------------------------------
@@ -505,6 +853,17 @@
     // Capture the flag for this request, then reset it
     const skipThisTime = skipClarification;
     skipClarification = false;
+    const conversationForRequest = currentExperimentQuery || null;
+    const searchConfirmed = pendingSearchConfirmed;
+    const selectedSearchQuery = pendingSelectedSearchQuery || query;
+    const searchAll = pendingSearchAll;
+    const candidateQueriesForRequest = [...latestCandidateQueries];
+    const payloadQuery = searchConfirmed
+      ? (searchAll ? (candidateQueriesForRequest[0] || selectedSearchQuery) : selectedSearchQuery)
+      : query;
+    pendingSearchConfirmed = false;
+    pendingSelectedSearchQuery = '';
+    pendingSearchAll = false;
 
     appendMessage('user', `<div class="bubble">${escapeHtml(query)}</div>`);
 
@@ -522,10 +881,17 @@
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          query,
+          query: payloadQuery,
           top_k: 5,
           explain: true,
           skip_clarification: skipThisTime,
+          search_mode: 'live',
+          experiment_profile: experimentProfile,
+          conversation_query: conversationForRequest,
+          search_confirmed: searchConfirmed,
+          selected_search_query: selectedSearchQuery,
+          search_all: searchAll,
+          candidate_search_queries: candidateQueriesForRequest,
         }),
       });
 
@@ -538,30 +904,50 @@
       }
 
       const data = await resp.json();
+      markBackendOnline();
+      if (data.experiment_profile) experimentProfile = data.experiment_profile;
+      if (data.conversation_query) currentExperimentQuery = data.conversation_query;
 
       // -- Chitchat --
       if (data.intent === 'chitchat') {
+        latestCandidateQueries = [];
         appendMessage('assistant', `<div class="bubble">${escapeHtml(data.reply || '')}</div>`);
         return;
       }
 
       // -- Clarification needed --
       if (data.intent === 'clarification') {
-        skipClarification = true; // next message from user should skip re-clarification
+        latestCandidateQueries = [];
         appendMessage('assistant', `
           <div class="bubble">
             <div class="clarification-bubble">
               ${escapeHtml(data.reply || '')}
+              ${renderQuickOptions(data.clarification?.options || [])}
             </div>
+            ${renderExperimentProfile(data.experiment_profile, data.experiment_intent)}
+          </div>
+        `);
+        return;
+      }
+
+      // -- Candidate search query selection --
+      if (data.intent === 'query_selection') {
+        latestCandidateQueries = data.candidate_search_queries || [];
+        appendMessage('assistant', `
+          <div class="bubble">
+            ${renderExperimentProfile(data.experiment_profile, data.experiment_intent)}
+            ${renderQuerySelection(latestCandidateQueries)}
           </div>
         `);
         return;
       }
 
       // -- Search results --
-      lastSearchQuery = query;
+      lastSearchQuery = data.search_query || query;
 
       let html = '<div class="bubble">';
+
+      html += renderExperimentProfile(data.experiment_profile, data.experiment_intent);
 
       // LLM explanation (only shown when Ollama is running)
       if (data.explanation) {
@@ -580,12 +966,20 @@
         `;
       }
 
+      if (data.search_query && data.search_query !== query) {
+        html += `
+          <div class="expanded-queries">
+            <span class="label">Structured query:</span><span>${escapeHtml(data.search_query)}</span>
+          </div>
+        `;
+      }
+
       // Protocol result cards
       html += '<div class="results-grid" style="margin-top:12px;">';
-      const maxScore = data.results[0]?.combined_score || data.results[0]?.score || 1;
+      const maxScore = data.results[0]?.profile_score || data.results[0]?.combined_score || data.results[0]?.score || 1;
 
       data.results.forEach((r, i) => {
-        const displayScore = r.combined_score ?? r.score ?? 0;
+        const displayScore = r.profile_score ?? r.combined_score ?? r.score ?? 0;
         const scorePercent = Math.round((displayScore / maxScore) * 100);
         const authorsText = (r.authors || []).slice(0, 2).join(', ')
           + (r.authors && r.authors.length > 2 ? ' et al.' : '');
@@ -621,6 +1015,7 @@
               ${penaltyBadge}
               ${reqBadge}
             </div>
+            ${renderMatchNotes(r)}
             <div class="score-bar"><div class="fill" style="width:${scorePercent}%"></div></div>
           </div>
         `;

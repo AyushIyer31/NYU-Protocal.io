@@ -1,0 +1,33 @@
+services:
+  - type: web
+    name: protocolsnerd-backend
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: cd protocolsnerd-backend && uvicorn main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11.9
+      - key: EXECUTION_STRATEGY
+        value: agentic
+      - key: OLLAMA_MODEL
+        value: llama3.2
+      - key: OLLAMA_BASE_URL
+        value: http://localhost:11434
+      - key: PROTOCOLS_IO_TOKEN
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
+
+  - type: web
+    name: protocolsnerd-frontend
+    runtime: static
+    buildCommand: python3 scripts/write_frontend_env.py
+    staticPublishPath: protocolsnerd-website
+    envVars:
+      - key: PROTOCOLSNERD_API_URL
+        fromService:
+          type: web
+          name: protocolsnerd-backend
+          envVarKey: RENDER_EXTERNAL_URL

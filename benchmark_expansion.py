@@ -25,7 +25,7 @@ import sys
 from pathlib import Path
 
 # Make the backend modules importable
-sys.path.insert(0, str(Path(__file__).parent / "customnerd-backend"))
+sys.path.insert(0, str(Path(__file__).parent / "protocolsnerd-backend"))
 
 from concept_expansion import (  # noqa: E402
     extract_concepts, expand_concepts, build_search_probes,
@@ -102,7 +102,7 @@ def write_report(runs: list, path: Path):
 
     L.append("## protocols.io search-syntax findings (empirical)\n")
     L.append("Probed directly against `/api/v3/protocols` (see "
-             "`customnerd-backend/probe_protocolsio_syntax.py`):\n")
+             "`protocolsnerd-backend/probe_protocolsio_syntax.py`):\n")
     L.append("| Syntax | Supported? | Evidence |")
     L.append("|---|---|---|")
     L.append("| Single keyword | ✅ yes | `rice`→209, `CRISPR`→346, `multiplex`→400 |")

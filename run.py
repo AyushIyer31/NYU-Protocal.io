@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Minimal launcher for the CustomNerd backend + frontend file server.
+Minimal launcher for the ProtocolsNerd backend + frontend file server.
 """
 
 import subprocess
@@ -10,8 +10,10 @@ import time
 import os
 from pathlib import Path
 
-BACKEND_DIR = Path(__file__).resolve().parent / "customnerd-backend"
-FRONTEND_DIR = Path(__file__).resolve().parent / "customnerd-website"
+BACKEND_DIR = Path(__file__).resolve().parent / "protocolsnerd-backend"
+FRONTEND_DIR = Path(__file__).resolve().parent / "protocolsnerd-website"
+VENV_PYTHON = Path(__file__).resolve().parent / "venv" / "bin" / "python"
+PYTHON_EXE = str(VENV_PYTHON) if VENV_PYTHON.exists() else sys.executable
 BACKEND_PORT = 8001
 FRONTEND_PORT = 5555
 
@@ -34,13 +36,13 @@ def main():
 
     # Start the FastAPI backend
     backend_proc = subprocess.Popen(
-        [sys.executable, "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", str(BACKEND_PORT)],
+        [PYTHON_EXE, "-m", "uvicorn", "main:app", "--host", "0.0.0.0", "--port", str(BACKEND_PORT)],
         cwd=str(BACKEND_DIR),
     )
 
     # Start a simple static file server for the frontend
     frontend_proc = subprocess.Popen(
-        [sys.executable, "-m", "http.server", str(FRONTEND_PORT)],
+        [PYTHON_EXE, "-m", "http.server", str(FRONTEND_PORT)],
         cwd=str(FRONTEND_DIR),
     )
 
