@@ -1,0 +1,27 @@
+{
+  "id": 92278,
+  "title": "Guide to Generating International Chemical Identifier (InChI) Label for Isotopically Labelled Compounds",
+  "uri": "guide-to-generating-international-chemical-identif-c6cwzaxe",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzx9nrgx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"99rgt\",\"text\":\"This protocol was written to support the article by Simpson et al., 2024 entitled: MISIP: A data standard for the reuse and reproducibility of any stable isotope probing-derived nucleic acid sequence and experiment. The same guide, with additional screen shots illustrating each step, is provided in Supplementary Information. This guide can be used to generate the MISIP standard field: ‘isotopolog_atom_pos’\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":60,\"length\":6},{\"style\":\"italic\",\"offset\":83,\"length\":132},{\"style\":\"bold\",\"offset\":389,\"length\":19}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "The InChI label is a machine-readable format that specifies the exact position of all atoms in a molecule, including the isotope number (at the end of the label). The label is a stable identifier supported by the IUPAC. The InChI label is the required format to specify the isotopomer of the isotopolog supplied in the isotoplog_atom_pos field. At the time of publication, the following freely available software tools could be used to generate an InChI label using visualizations to guide the appropriate designation of isotopic labeling. The same tools can be used to visualize an InChI label as a molecular structure. We will demonstrate how to obtain an InChI for the commercially available 13 C-labeled L-DOPA (IUPAC: (S)-2-Amino-3-(3,4-dihydroxyphenyl)propanoic acid). Isotopomer of 13 C-labeled L-DOPA (asterisk indicate 13 C atoms)",
+    "In Marvin Sketch, select ‘Import Name’ and specify the IUPAC name for your isotopolog compound. The IUPAC name can be obtained from a PubChem search: &lt; https://pubchem.ncbi.nlm.nih.gov/ &gt;. Select &#39;Import Name&#39; Input the IUPAC name for your compound. L-DOPA is (S)-2-Amino-3-(3,4-dihydroxyphenyl)propanoic acid ( ex. https://pubchem.ncbi.nlm.nih.gov/#query=L-DOPA )",
+    "The molecular structure will be displayed. For each isotopically-labeled atom in your isotopomer, select the atom with your cursor, then select from the ‘Atom’ menu find the ‘Isotope’ panel and chose the correct isotope. The chemical structure of your isotopolog should now appear. Using the Atom menu, select the isotope that occurs at that position in your isotopomer. The isotope will now be shown in your chemical structure.",
+    "Repeat until all atoms are labeled, then select ‘File’ and ‘Save As’ from the menu bar. Save the file as either an MDL SDfile (.sdf) or Tripos SYBYL Molfile (.mol). The correctly labeled isotopomer corresponding with our the isotopolog used in our study.",
+    "Either (1) use the software ‘OpenBabel’, available online HERE to convert the .sdf or .mol to the InChI format, or (2) download the InChI software binaries from the InChI Trust (available for Linux or Windows OS). Start the InChI software using the executable file, then select ‘Open’ and navigate and select the .sdf or .mol file created in Marvin Sketch. The InChI label for your isotopolog will be displayed in the dialogue box beneath the molecular structure. In InChI software, the open .sdf or .mol file created in Step 5, showing the correct InChI label in the box at the bottom: “1S/C9H11NO4/c10-6(9(13)14)3-5-1-2-7(11)8(12)4-5/h1-2,4,6,11-12H,3,10H2,(H,13,14)/t6-/m0/s1/i1+1,2+1,4+1,5+1,7+1,8+1,9+1”",
+    "Double check that all isotopically labeled atoms are correctly assigned in your structure, then copy and paste the InChI into your MISIP data standard spreadsheet.",
+    "Install the Marvin Sketch software developed by Chemaxon &lt;https://chemaxon.com/marvin&gt;.The software is available for non-commercial use under an academic license."
+  ],
+  "authors": [
+    "Roland C. Wilhelm"
+  ],
+  "creator": "Roland C. Wilhelm",
+  "published_on": 1702509178,
+  "created_on": 1702487579,
+  "keywords": []
+}

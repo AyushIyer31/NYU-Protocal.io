@@ -1,0 +1,26 @@
+{
+  "id": 16211,
+  "title": "Hemolysis measurement of plasma/serum samples with Nanodrop ND1000",
+  "uri": "hemolysis-measurement-of-plasma-serum-samples-with-t3teqnn",
+  "doi": "dx.doi.org/10.17504/protocols.io.t3teqnn",
+  "description": "{\"blocks\":[{\"key\":\"3a1k5\",\"text\":\"This protocol describes how to measure hemolysis on plasma or serum samples. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"efuj3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"44hdl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"atlpb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Place: room 120.042, 2 nd floor MRB1 Aliquot 3 ul plasma sample in a separate tube (can be left at room temperature) Open sample arm and clean sample pedestal with an ethanol-dipped swab (dust-free). Swabs are standing next to the machine. Clean the sample pedestal with a dry swab (dust-free).",
+    "start ND-1000 software choose ‘Cell cultures’ change max. absorbance from 0.2 to 2 (rescales the vertical axis) change wavelength (lambda) to 414 nm",
+    "pipet 1 ul water to the sample pedestal, using reverse pipetting to avoid bubbles (use an unused water tube) gently close the sample arm click ‘blank’ to calibrate the machine. If the wave shows peaks, repeat the pipetting and re-blank",
+    "open sample arm and clean pedestal with a dust-free swab (to have a good reference, the first sample we measure is always a water sample) pipet 1 ul water to the sample pedestal, using reverse pipetting to avoid bubbles (use an unused water tube) gently close the sample arm click ‘measure’ to measure water sample",
+    "open sample arm and clean pedestal with a dust-free swab pipet 1 ul plasma sample to the sample pedestal, using reverse pipetting to avoid bubbles gently close the sample arm click ‘measure’ to measure first sample (repeat steps above for other samples) clean sample pedestal and close sample arm",
+    "choose ‘Reports’ &gt; Export Report Table Only and save to USB stick (only Excel table, no full report with wavelength plots)"
+  ],
+  "authors": [
+    "Hetty Helsmoortel"
+  ],
+  "creator": "Anneleen Decock",
+  "published_on": 1597059045,
+  "created_on": 1538123284,
+  "keywords": []
+}

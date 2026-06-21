@@ -1,0 +1,37 @@
+{
+  "id": 86705,
+  "title": "Levodopa-induced dyskinesia mouse model",
+  "uri": "levodopa-induced-dyskinesia-mouse-model-cywrxxd6",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv5xxb5g1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"9ctvv\",\"text\":\"This protocol describes a mouse model of levodopa-induced dyskinesia (LID) and the behavioral assessment of its motor deficits. It includes open field locomotor activity and scoring of abnormal involuntary movements (AIMs).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"703pv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Generate unilaterally high dose 6-OHDA-lesioned mice (protocol linked below): 6-OHDA mouse model of Parkinson&#39;s disease by Beatriz E Nielsen",
+    "3 weeks after 6-OHDA injections, verify unilateral dopamine depletion by assessing forelimb use assymetry in the cylinder test (protocol linked below). Motor behavioral assessment by Beatriz E Nielsen",
+    "Start daily intraperitoneal (i.p.) injections of 2.0 mg/kg of L-DOPA (3,4-dihydroxy-L-phenylalanine) plus 12 mg/kg of benserazide hydrochloride dissolved in sterile saline for 7-8 days. Behavioral motor tests (open field and dyskinesia) are formally conducted in different days at the end of the treatment (days 7 and 8). Acute brain slices for electrophysiology recordings must be prepared 30min – 1 h after the last L-DOPA administration, while mice are still in the dyskinetic period. Contralesional rotations and levodopa-induced dyskinesia (LID) abnormal involuntary movements (AIMs) typically begin within 00:10:00 of injection, last approximately 02:00:00 , and terminate spontaneously.",
+    "Set up behavior room: Place up to four clear plastic cylinders (25.4 cm diameter; 30.5 cm height) with a mat below and an overhead mounted camera (organized in two rows 2x2). Set up lighting minimizing total room light, reducing shadows within the chamber, and ensuring camera is able to detect the mice. Clean each cylinder with 70% ethanol. Turn on camera, adjust zoom and focus. Capture a background video or image before placing the mice in the cylinders. Habituation: Bring mice to the behavior room in their home cages and leave undisturbed for at least 30-40 minutes. No previous habituation to the open field arena is required.",
+    "00:30:00 after last L-DOPA injection, start video recording for another 00:30:00 period.",
+    "Inject i.p. the last dose of L-DOPA and benserazide (day 7 or 8) and place mice into cylinders (one mouse per cylinder).",
+    "Post-hoc analysis: Run tracking EthoVision software to calculate the following parameters: Total distance traveled. Mean velocity. Rotations (threshold: 90-180°, minimum distance traveled: 2 cm). EthoVision (Software, Noldus, RRID:SCR_000441, RRID:SCR_000441, https://www.noldus.com/ethovision-xt )",
+    "Remove mice from cylinders and return them to home cage.",
+    "Clean the cylinders between mice with 70% ethanol and allow to fully dry before starting another group of mice.",
+    "Dyskinesia is assessed using the Abnormal Involuntary Movement score (AIMs) (Cenci and Lundblad, 2007). Cenci MA, Lundblad M. Set up behavior room: Place clear plastic cylinders (25.4 cm diameter; 30.5 cm height) with a mat below. Clean each cylinder with 70% ethanol. Handheld camera (cell phone camera is sufficient). Habituation: Bring mice to the behavior room in their home cages and leave undisturbed for at least 30-40 minutes.",
+    "Place mice into the cylinders (one per cylinder).",
+    "Record 00:01:00 video for each mouse (time= 0 min).",
+    "Inject i.p. the last dose of L-DOPA and benserazide (day 7 or 8) in the first mouse. After 00:01:00 inject the second mouse and so on until all mice are injected (maximum of 20 mice in 20 minutes).",
+    "00:20:00 after the first injection, start 00:01:00 video recording mice following the same order as injections in step 13.",
+    "Repeat step 14 every 00:20:00 for a total period of 02:00:00 (There must be videos recorded for 0 min, 20 min, 40 min, 60 min, 80 min, 100 min and 120 min time points for each mouse).",
+    "Return each mouse to its home cage. Clean cylinders and mats with 70% ethanol.",
+    "Post-hoc analysis: Score for each of the three body segments: axial, limb, and orolingual (ALO) AIMs. The AIM scale ranges from 0 to 4 for each body segment during a 1-minute period. For each segment: 0 = normal movement. 1 = abnormal movement for &lt;50% of the time. 2 = abnormal movement for &gt;50% of the time. 3 = abnormal movement for the entire period that can be interrupted by sensory stimuli (e.g. hitting the cylinder). 4 = continuous abnormal movement, uninterruptible. Take into account that rotations with all four limbs on the floor is not scored as axial dyskinesia. The mouse must be on 2 feet and with its trunk twisted. Total AIM score is calculated as the sum of scores for AOL, being 12 the maximum score in 1 minute.An integrated AIM score can be calculated as the area under the curve (AUC) in a plot of total AIM score vs time for the total duration of the dyskinetic episode (2h)."
+  ],
+  "authors": [
+    "Beatriz E Nielsen"
+  ],
+  "creator": "Beatriz E Nielsen",
+  "published_on": 1698683057,
+  "created_on": 1692485084,
+  "keywords": []
+}

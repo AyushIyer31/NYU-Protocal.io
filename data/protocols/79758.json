@@ -1,0 +1,33 @@
+{
+  "id": 79758,
+  "title": "NGS grade DNA isolation from plant",
+  "uri": "ngs-grade-dna-isolation-from-plant-cr5nv85e",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"au499\",\"text\":\"NGS grade DNA isolation from plant (maize) leaf tissue \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"270vj\",\"text\":\"1. Leaf tissues from 2-week-old seedlings collected from Arabidopsis thaliana, tomato, soybean, sorghum, and maize.\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":57,\"length\":20}],\"entityRanges\":[],\"data\":{}},{\"key\":\"dfjo4\",\"text\":\"2.BBs (Daisy, catalog number: 980060-446)\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2gar5\",\"text\":\"3. Freezer boxes (Fisher Scientific, catalog number: 03-395-465, 100/CTN)\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e17n4\",\"text\":\"4.Eppendorf tubes (Dot Scientific, catalog number: 609-GMT; RA2000-GMT)\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"csq74\",\"text\":\"5. Ethylenediaminetetraacetic acid (EDTA) (Fisher scientific, catalog number: BP2482100)\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"elc6i\",\"text\":\"6. Sodium chloride (NaCl) (Fisher scientific, catalog number: BP358-1)\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"92nki\",\"text\":\"7. Sodium dodecyl sulfate (SDS) (Fisher scientific, catalog number: 28312)\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"99oqj\",\"text\":\"8. Potassium acetate (Fisher scientific, catalog number: A16321.36)\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eu5o6\",\"text\":\"9. Isopropanol (Fisher scientific, catalog number: 040983.M1)\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fsprj\",\"text\":\"10.100% Ethanol (Fisher scientific, catalog number: T038181000)\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5siev\",\"text\":\"11. DNA loading dye (NEB, catalog number: 10816015)\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"12tsu\",\"text\":\"12.100 bp DNA ladder (GOLDBIO catalog number: D003-500)\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ffb2b\",\"text\":\"13.2x PCR Master Mix (syd labs, catalog number: MB067-EQ2G-L)\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"enk0v\",\"text\":\"14. Liquid nitrogen\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5hnb\",\"text\":\"15. Pipettes and tips\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Pre-heat water baths (65°C and 37°C) before beginning the extraction",
+    "Prepare the extraction buffer as follows: 5 mL 1 M Tris, pH 8 (final conc. 100 mM) 2.5 mL 0.5 M EDTA (final conc. 25 mM) 2.5 mL 5 M NaCl (final conc. 250 mM) 0.5 g PVP-40 (final conc. 1% w/v) 40 mL Water",
+    "Grind 100 mg of desiccated leaf tissue into a fine powder using bead beater",
+    "Add 650 μl extraction buffer (EB) and 90 μl 10% SDS directly into each tube and incubate for 30 min at 65 0C while inverting the tubes 3-6 times.",
+    "Add 250 μl KOAc to each tube and mix well by inverting several times. A white precipitate should form immediately.",
+    "Spin for 5-15 minutes at 12,000 rpm at room temperature and then transfer 400-600 μl of the supernatant to a fresh tube.",
+    "It’s recommended to spin again and move the supernatant to a fresh tube if for NGS purposes.",
+    "Add an equal volume of isopropanol to the tube containing the supernatant. It’s recommended to prepare tubes filled with an equal amount of isopropanol in advance. At this point, samples can be left at -20 °C overnight.",
+    "Spin samples for 5 minutes at 10,000 rpm and pour off the supernatant.",
+    "Add 400-500 μl of 70-75% ethanol to each tube, then spin for 5 minutes at 7500 rpm at RT.",
+    "Directly pour off the supernatant and air-dry samples completely. Tubes can either be left with caps opened on a rack at the bench or in a fume hood. It is recommended to put them upside-down on paper towels. This is an important measure to make sure the residual ethanol is gone as it can directly inhibit downstream enzyme activities. It is not recommended to remove liquid residuals with a pipette, as it may increase the chance of cross-contamination or loss of DNA.",
+    "For genotyping, add 100-200 μl nuclease free water into each tube. There is no need to add RNase.",
+    "For NGS purposes, it is important to add RNase, followed by one additional precipitation step (from No. 5 to 12), and to adjust the volume of water for each sample following quantitation to ensure uniformity."
+  ],
+  "authors": [
+    "Anurag Daware"
+  ],
+  "creator": "Anurag Daware",
+  "published_on": 1680189272,
+  "created_on": 1680187399,
+  "keywords": []
+}

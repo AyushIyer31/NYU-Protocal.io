@@ -1,0 +1,32 @@
+{
+  "id": 117455,
+  "title": "NIS-Elements JOB for Well Plate Scanning with Autofocus and Random Point Positioning",
+  "uri": "nis-elements-job-for-well-plate-scanning-with-auto-dwxp7fmn",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g7m32qgwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"1bd4t\",\"text\":\"This JOB was created in NIS-Elements version 5.42.06, and is designed to capture images at random positions within defined wells of a well plate. At each point in each well, the focal position is determined by an autofocus routine.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"5k0jo\",\"text\":\"This JOB was created in NIS-Elements version 5.42.06.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"610hh\",\"text\":\"JOB definition for Well Plate Scanning with Autofocus and Random Point Positioning - to be imported into the NIS-Elements JOBS Explorer:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bkjle\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1f40s\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"7kbar\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"file\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"\",\"id\":539151,\"original_name\":\"Well Plate Scanning - Autofocus.bin\",\"placeholder\":\"https://www.protocols.io/img/extensions/file.png\",\"raw_source\":\"\",\"size\":15230,\"source\":\"https://protocols-files.s3.amazonaws.com/files/sqsrcd75p.bin?X-Amz-Algorithm=AWS4-HMAC-SHA256\\u0026X-Amz-Credential=AKIAWFTFYUBUZ2U2JGOS%2F20260621%2Fus-east-1%2Fs3%2Faws4_request\\u0026X-Amz-Date=20260621T084559Z\\u0026X-Amz-Expires=604800\\u0026X-Amz-SignedHeaders=host\\u0026X-Amz-Signature=1667ddadc9837ff7b31a4044b0713da316f82c8b76d9c1a5c958e992eeda8234\"}}}}",
+  "steps": [
+    "Download the attached JOB definition (see the Materials tab) and import the file into the JOBS Explorer",
+    "Click on the name of the JOB definition in the list and click the green Play icon",
+    "In the JOBS Wizard, first select the Optical Configurations/Experiment Setups that define your Capture Definition",
+    "Define the type of plate that will be imaged",
+    "Select the wells that will be imaged",
+    "Select the Autofocus settings that will be used, including the z-device, imaging criterion and range",
+    "Define the number of random points you wish to image per well - border (and centre) restrictions can also be specified in this step",
+    "Once all Wizard sections are complete, click Run",
+    "When the JOB starts running, you will first be prompted to go Live and focus on your cells/sample in the first well Once this is done, click OK",
+    "The JOB will begin acquiring images in each defined well. If you would like to finish acquiring before images have been captured in all wells, click Finish. If you have made an error during setup and wish to discard all image data from the experiment, click Abort.",
+    "Before running the JOB, please ensure that your well plate of choice has been aligned from the HCA/JOBS menu via the (Re-)Align Well Plate Holder.. wizard."
+  ],
+  "authors": [
+    "Robert Tetley",
+    "Stefan Russo"
+  ],
+  "creator": "Robert Tetley",
+  "published_on": 1741885016,
+  "created_on": 1735638617,
+  "keywords": []
+}

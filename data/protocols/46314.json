@@ -1,0 +1,34 @@
+{
+  "id": 46314,
+  "title": "Site Directed Mutagenesis 2016",
+  "uri": "site-directed-mutagenesis-2016-brgim3ue",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"7u6hn\",\"text\":\"Site--directed Mutagenesis\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"b2noo\",\"text\":\"Primers\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"81tck\",\"text\":\"QuikChange PCR (enzyme from Stratagene)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6e5ut\",\"text\":\"DpnI Digest\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8dkgp\",\"text\":\"Transformation\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"amkus\",\"text\":\"Primers: Design 40-mer primers with mutation in center. Can mutate up to several aa's in a row (make longer primers then). Order the forward and reverse complement.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"9j8u3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9n57k\",\"text\":\"QuikChange PCR (enzyme from Stratagene):\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":40}],\"entityRanges\":[],\"data\":{}},{\"key\":\"50m3a\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"2ukg4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"\",\"data\":{\"cellsMeta\":{},\"colTitles\":[\"\",\"\"],\"colWidths\":[\"205.6666717529297\",\"161\"],\"data\":[[\"Template:\",\"250 ng\"],[\" 10 M fwd primer:\",\"2 L\"],[\" 10 M rev primer:\",\"2 L \"],[\"10x LA Taq or Pfu buffer:\",\"5 L \"],[\"10mM dNTPs:\",\"1 L \"],[\"dH20:\",\"to 49 L \"],[\"LA Taq or Pfu Turbo polymerase:\",\"1 L  (We use LA taq)\"],[\"PCR program:\",\"95ºC - 3 minutes\"],[\"\",\"*95ºC - 30 seconds \"],[\"\",\"*55 ºC - 1 minutes\"],[\"\",\"68 ºC - 2-2.5 min/kb\"],[\"\",\"4ºC - hold\"]],\"guid\":\"1A0A7800569D11EB95360B97C24465BB\",\"isJexcelDataFormat\":true,\"legend\":{\"blocks\":[{\"data\":{},\"depth\":0,\"entityRanges\":[],\"inlineStyleRanges\":[{\"length\":4,\"offset\":0,\"style\":\"bold\"}],\"key\":\"3i4gc\",\"text\":\"Note:\",\"type\":\"unstyled\"},{\"data\":{},\"depth\":0,\"entityRanges\":[],\"inlineStyleRanges\":[],\"key\":\"5qvng\",\"text\":\"1. Newer QuikChange kit says 1 min/kb, but I always still use 2 min/kb and it works well.  \",\"type\":\"unstyled\"},{\"data\":{},\"depth\":0,\"entityRanges\":[],\"inlineStyleRanges\":[],\"key\":\"858b9\",\"text\":\"2. If making two separate mutations with two sets of primers, can try using both sets in one reaction (as well as separately).  I have had this work before and it is much faster.\",\"type\":\"unstyled\"},{\"data\":{},\"depth\":0,\"entityRanges\":[],\"inlineStyleRanges\":[{\"length\":1,\"offset\":1,\"style\":\"bold\"}],\"key\":\"4l0p0\",\"text\":\"* 18x\",\"type\":\"unstyled\"}],\"entityMap\":{}},\"mergeCells\":{},\"printData\":[[\"Template:\",\"250 ng\"],[\" 10 M fwd primer:\",\"2 L\"],[\" 10 M rev primer:\",\"2 L \"],[\"10x LA Taq or Pfu buffer:\",\"5 L \"],[\"10mM dNTPs:\",\"1 L \"],[\"dH20:\",\"to 49 L \"],[\"LA Taq or Pfu Turbo polymerase:\",\"1 L  (We use LA taq)\"],[\"PCR program:\",\"95ºC - 3 minutes\"],[\"\",\"*95ºC - 30 seconds \"],[\"\",\"*55 ºC - 1 minutes\"],[\"\",\"68 ºC - 2-2.5 min/kb\"],[\"\",\"4ºC - hold\"]],\"rowHeights\":[23,23,23,23,23,23,23,23,23,23,23,23]}}}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Transfer PCR to Epp tube.",
+    "Remove 2 L from PCR.",
+    "Add 2 L DpnI enzyme to remaining 48L.",
+    "Incubate 1+ hrs 37ºC (1 st digestion).",
+    "Add another 2 L DpnI enzyme to remaining 48 L (2 nd digestion).",
+    "Use PCR purification kit to purify the 2 nd digestion product. After PCR purification, you will lose around 20% of your product. I always try to concentrate my 2 nd digestion PCR product to a volume of around 40 L before I do the transformation in order to keep the same concentration between the undigested product and the digested product.",
+    "Store at -20 ºC. You can go ahead to do the transformation using the undigested PCR product and the 2 nd digestion product. If you don&#39;t get quite good result after the transformation, such as no significant difference between the undigested one and the 2 nd digestion one, you can do the 3 rd digestion. But when you do the 3 rd digestion, you need to add restriction enzyme buffer 4.",
+    "Make TOP10 electrocompetent cells as usual.",
+    "Transform 1L DpnI-digested plasmid and 1L non-DpnI plasmid as control.",
+    "Plate 1/10, 9/10 on LB + antibiotic plates.",
+    "Should see many more colonies on the -DpnI plate if the digest of the parental unmutated plasmid worked well.",
+    "Streak a minimum of 6.",
+    "Sequence 6.",
+    "Check that the desired mutation is present . the primer region did not get duplicated. Sometimes you will see that somehow the 60-mer of the primer is present in two or more tandem repeats."
+  ],
+  "authors": [
+    "Elizabeth Fozo"
+  ],
+  "creator": "Eadewunm",
+  "published_on": 1610732523,
+  "created_on": 1610643711,
+  "keywords": []
+}

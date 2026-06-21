@@ -1,0 +1,23 @@
+{
+  "id": 112091,
+  "title": "Precision in Quranic Arabic Recitation: Leveraging ASR for Tajweed Mastery",
+  "uri": "precision-in-quranic-arabic-recitation-leveraging-drp355qn",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l298b3v1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"fiun1\",\"text\":\"This protocol describes the use of Automatic Speech Recognition (ASR) to support the mastery of Quranic Arabic recitation according to Tajweed rules. By using ASR and computational techniques such as Hidden Markov Models (HMMs) and \\\"Goodness of Pronunciation\\\" (GOP), this protocol facilitates feedback on pronunciation quality at both segmental and holistic levels. It explores differences between speaker-dependent and speaker-independent ASR for Quranic Arabic, aiming to provide users with an advanced framework for improving recitation accuracy.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"faltg\",\"text\":\"N/A\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"5q385\",\"text\":\"N/A\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"93v64\",\"text\":\"N/A\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"7k3o6\",\"text\":\"1. Hidden Markov Model Toolkit (HTK) - for ASR setup and model training\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":36}],\"entityRanges\":[],\"data\":{}},{\"key\":\"9gapf\",\"text\":\"2. Acoustic Data Samples:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":24}],\"entityRanges\":[],\"data\":{}},{\"key\":\"655ie\",\"text\":\" 2.1. Primary data: Researcher’s voice reciting Chapter 1 of the Quran, sampled at multiple frequencies.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9ks75\",\"text\":\" 2.2 Secondary data: 24 recitations from open sources, formatted and adjusted for ASR input.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9bd0p\",\"text\":\"3. ASR Configuration Files - specifying parameters like sampling frequency, filterbank channels, and MFCC parameters.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":26}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "ASR Training: Word-Level Speaker-Dependent Model: Train on a specific speaker with HMM configurations (8 and 12 states) and GMM components. Word-Level Speaker-Independent Model: Train using a variety of speakers, including frequency adjustments to accommodate variances in pronunciation. Pronunciation Verification: Evaluation of recitation for both segmental errors (using GOP) and holistic scoring, including speech duration, segmentation, and fluency. Experimental Setup: Use of HTK for feature extraction, model training, and configuration adjustments.Testing performed on configurations to optimize accuracy.",
+    "Speaker-Dependent ASR: Expected results with specified MFCC parameters (_E, _0, _D, _A, _Z). Speaker-Independent ASR: Expected results with specified MFCC parameters (_E, _0, _D, _A, _Z).",
+    "The protocol may provide an in-depth framework for implementing ASR in Quranic recitation, offering a valuable assistive tool for Tajweed adherence, particularly beneficial for a diverse audience worldwide."
+  ],
+  "authors": [
+    "Khalid Ahmad Khattak"
+  ],
+  "creator": "Khalid Ahmad Khattak",
+  "published_on": 1731585086,
+  "created_on": 1731569240,
+  "keywords": []
+}

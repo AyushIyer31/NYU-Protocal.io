@@ -1,0 +1,32 @@
+{
+  "id": 101622,
+  "title": "Using the Tecan D300e",
+  "uri": "using-the-tecan-d300e-dfgw3jxe",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v92r1pl3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"budei\",\"text\":\"Using Tecan D300e for serial dilution\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"bc9ha\",\"text\":\"Always wear appropriate PPE for this protocol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"m13n\",\"text\":\"Refer to Manuals and Material Safety Data Sheets for additional safety and handling information.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e3osq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "The manual https://www.tecan.com/hubfs/Knowledgebase/Manuals/D300e/D300e%20Digital%20Dispenser%20Operating%20Manual.pdf Our Tecan D300e inside a PCR hood. Open the D300e software. A blank template will open be default application blank template Toolbar",
+    "Click File, then New File dropdown menu Add the total amount of Fluids (compounds) that you want to test and the amount of deep wells necessary (12 compounds per deep well). How to add fluids and plates adding fluids 2 fluids added",
+    "Select &#34;additional volume&#34; and set it to 800 µL setting additional volume to 800ul",
+    "Select the entire first column, right click, and select titration First row selected Right click menu",
+    "On the titration menu, change the Distribution to 1:3 You will put 1.5x the [desired max] in the Highest concentration box repeat for all fluids Titration set points",
+    "Here is what it will look like then completed: Two fluids set up with a 1:3 dilution series.",
+    "Highlight the entire plate(s), right click and select Normalization and select normalize to highest class volume . Normalization set points",
+    "In order for the Tecan to dispense it needs to have access to the dissolved compounds. To do this we use HP cassettes. For compounds we usually use T8+ cassettes. For DMSO controls we use D4+ cassettes, since they hold a larger volume. Chips on the cassette are not reusable , but you do not have to use an entire cassette at one time. Only use enough chips for your experiment and save the rest of the chips on the cassette for future use. The Tecan will help you with exact information for loading the chips! A box of HP cassettes. A used D4+ HP cassette. All chips on the cassette have been used. A used T8+ cassette. Compound is loaded directly into the pinhole of each chip on the cassette using pipettes. The Tecan will tell you exactly how much is needed.",
+    "Once the protocol is set up, and the first deep well and cassette are loaded, click Run",
+    "Slider Stage Slider stage in position, loaded with a 96-well deep well plate",
+    "Tecan loaded with a T8+ cassette",
+    "These little nodes (insert actual name) on the Tecan will come into contact with the chips of the cassettes. This essentially allows the Tecan to read the information from the protocol you set up and associates each chip with the set compound. This is why the chips are one time use - you have already associated chips with compound information, so the Tecan will not be able to separate the two. It&#39;s important to follow the Tecan&#39;s loading instructions to ensure that the right compound is loaded in the right spot."
+  ],
+  "authors": [
+    "Briana L McGovern"
+  ],
+  "creator": "Briana L McGovern",
+  "published_on": 1742334539,
+  "created_on": 1718134475,
+  "keywords": []
+}

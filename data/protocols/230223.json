@@ -1,0 +1,39 @@
+{
+  "id": 230223,
+  "title": "Complex formation between VPS13C and Rab7",
+  "uri": "complex-formation-between-vps13c-and-rab7-hc3pb2ymp",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2ly4q4qlx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"8v2da\",\"text\":\"VPS13C is a ER-lysosome contact site protein that is thought to transport lipids between the two organellar membranes and important for lysosomal membrane damage repair. We employed structure-function analysis of purified VPS13C and uncovered novel regulatory mechanisms. This protocol details the method to isolate and detect a VPS13C-Rab7 complex formed by pull-down assay and the method to directly form a complex by crosslinking purifying VPS13C and Rab7. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"al6vi\",\"text\":\"GTP (Cat. # G8877, Sigma Aldrich)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ptgb\",\"text\":\"Strep-Tactin XT 4Flow high-capacity resin (Cat. #2-5030-002, IBA)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1nuij\",\"text\":\"D-Biotin (Cat. #BG-00, G-Biosciences) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"oibc\",\"text\":\"Amylose resin (Cat. #E8021, NEB)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ctns2\",\"text\":\"maltose (Cat. #M5895, Sigma Aldrich)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Co-express N-terminally Strep-tagged Rab7A and C-terminally 3xFLAG-tagged VPS13C full-length or mutant constructs in Expi293F cells. For transfection, mix 30 μg Rab7A plasmid and 70 μg VPS13C plasmid in Opti-MEM and Expifectamine and transfect into 100 mL Expi293F cells.",
+    "Lyse cells by three freeze–thaw cycles and clarify the lysate.",
+    "After 48 h, harvest cells and resuspend in 10 mL buffer A (500 mM NaCl, 50 mM HEPES, pH 7.8, 10% glycerol, 1 mM TCEP) supplemented with 1 mM GTP Sodium GTP Merck MilliporeSigma (Sigma-Aldrich) Catalog #G8877 and 2 mM MgCl 2 .",
+    "Elute bound proteins three times in 50 μL buffer A supplemented with 0.5 mg/mL FLAG peptide for FLAG pull-down or 50 mM D-biotin for Strep pull-down, incubating for 00:20:00 for each elution.",
+    "Wash the resin four times with 15 mL buffer A.",
+    "Divide the clarified lysate, using 30% for FLAG pull-down with 50 μL anti-FLAG M2 resin and 70% for Strep pull-down with 50 μL Strep-Tactin XT 4Flow high-capacity resin. Incubate each pull-down for 02:00:00 at 4 °C .",
+    "For the VPS13C-VAB domain alone, detect co-purified protein by anti-FLAG western blot because it is not reliably quantified by Coomassie staining.",
+    "Quantify VPS13C binding by normalizing the intensity of each co-purified VPS13C band to the corresponding Rab7A band, then normalize to the full-length VPS13C control.",
+    "Analyze Strep pull-down eluates by SDS-PAGE. For better separation, resolve Rab7A on 4–20% Tris-glycine gels and co-purified VPS13C on 3–8% Tris-acetate gels.",
+    "Pool the eluates and concentrate to a final volume of 50 μL.",
+    "Transfect and express MBP-TEV-Rab7A-6xHis in Expi293F cells. Lyse cells by three freeze–thaw cycles and clarify the lysate.",
+    "Add 0.1% glutaraldehyde to VPS13C alone, Rab7A alone, or the VPS13C+Rab7A mixture, and incubate for 00:15:00 at Room temperature .",
+    "Mix purified full-length VPS13C-3xFLAG and MBP-Rab7A-6xHis at a 1:10 molar ratio and incubate Overnight at 4 °C .",
+    "Run pooled eluates on a Superose 6 size-exclusion column equilibrated in buffer B (200 mM NaCl, 50 mM HEPES, pH 7.2, 6% glycerol, 1 mM TCEP) to remove maltose.",
+    "Incubate clarified lysate with Amylose resin for 02:00:00 at 4 °C , wash the resin, and elute bound protein with buffer A supplemented with 50 mM maltose.",
+    "Subject all samples to MBP pull-down as described above.",
+    "Quench the cross-linking reaction with 100 mM Tris, pH 8.0, for 00:10:00 at Room temperature .",
+    "Analyze cross-linked VPS13C–Rab7A complexes by SDS-PAGE."
+  ],
+  "authors": [
+    "Dazhi Li",
+    "Karin Reinisch"
+  ],
+  "creator": "Dazhi Li",
+  "published_on": 1780434167,
+  "created_on": 1760902061,
+  "keywords": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": 93870,
+  "title": "Histone extraction HLB protocol",
+  "uri": "histone-extraction-hlb-protocol-c7wnzpde",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v9p49pg3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"f1f6m\",\"text\":\"Protocol to extract histone proteins using a hypotonic lysis buffer for isolation of nuclei prior to acid extraction of histones that is easily amenable to label-free MS owing to the lack of detergents in the lysis buffer.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Start from a dry (snap-frozen) cell pellet",
+    "Add hypotonic lysis buffer (HLB) to cell pellet: 200 µL for 1x10 6 cells and resuspend softly HLB buffer: 10 mM Tris-HCl pH 8.0, 1 mM KCl, 1.5 mM MgCl2 supplemented with 1 mM DTT, 1 mM PMSF, Halt Protease and Phosphatase Inhibitor Cocktail 100x (78440) and phosphatase inhibitor cocktails II and III (P5726 and P0044, Sigma-Aldrich, 1 mL of cocktail for 100 mL of buffer)",
+    "Rotate for 30 min at 4°C to promote lysis of cell membrane (mechanical shear)",
+    "Pellet the nuclei by centrifugation at 10.000g for 10 min at 4°C",
+    "Discard the supernatant",
+    "Resuspend the pellet in 0.4N hydochloric acid (HCl) by soft pipetting until no clumps left in solution by adding 125 µL HCl for 1x10 6 cells (if necessary: vortex)",
+    "Incubate for 30 min in acid on rotator at 4°C to promote lysis of nuclei and solubilization of histones",
+    "Spin down for 10 min at 4°C and 16.000 g",
+    "Transfer supernatant to new Eppendorf (histones are present in the acid since they are alkaline proteins)",
+    "Add, drop by drop, trichloroacetic acid (TCA) until a final concentration of 33% is reached to promote precipitation of histones and invert the tube several times (results in a milky solution)",
+    "Incubate on ice for 30min",
+    "Spin for 10 min at 4°C and 16.000 g to pellet the histones",
+    "Remove the supernatant Be careful: the pellet is not always visible",
+    "Add ice-cold acetone (do not resuspend the pellet) to remove TCA, make sure the pellet is fully covered with acetone",
+    "Spin for 5 min at 4°C and 16000 g",
+    "Remove the supernatant",
+    "Add cold acetone again (do not resuspend the pellet) to remove TCA",
+    "Spin for 5 min at 4°C and 16000 g",
+    "Remove the supernatant",
+    "Resuspend in MilliQ water (50 µl for 1x10 6 cells)",
+    "Transfer 400.000 cells to a new Eppendorf tube for gel-electrophoresis (optionally) If there are still clumps left: Spin for 10 min at 4°C and 16000 g and transfer the supernatant in a fresh Eppendorf",
+    "Vacuum dry the samples (SpeedVac) Store both Eppendorf tubes (for propionylation/digestion and SDS-PAGE) at -20°C or -80°C until further use",
+    "Dry at room temperature for 30 min (until no acetone left) Samples can be stored at -80°C or -20°C until further use (propionylation/digestion) or part of the sample can be prepared to perform sodium dodecyl sulfate polyacrylamide gel electrophoresis (SDS-PAGE)"
+  ],
+  "authors": [
+    "Sigrid Verhelst"
+  ],
+  "creator": "Sigrid Verhelst",
+  "published_on": 1706004024,
+  "created_on": 1705911523,
+  "keywords": []
+}

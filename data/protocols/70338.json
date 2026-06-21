@@ -1,0 +1,26 @@
+{
+  "id": 70338,
+  "title": "Live-cell imaging: Mitochondria membrane potential",
+  "uri": "live-cell-imaging-mitochondria-membrane-potential-cgxatxie",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvwj997lmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"88r2q\",\"text\":\"Mitochondrial membrane potential is the electrogenic potential between the inner membrane and matrix of mitochondria which, in combination with the mitochondrial pH gradient, provides the force to drive protons into mitochondria to generate ATP. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"40v68\",\"text\":\"This protocol presents instructions on how to measure mitochondrial membrane potential in live-cell imaging.   \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Cells were washed 2x with HBSS (Invitrogen)",
+    "They are then incubated w 25 nM tetramethylrhodamine methyl ester (TMRM, Thermo Fisher Scientific) in HBSS for 00:40:00 at Room temperature. TMRM is a lipophilic cationic dye that accumulates within mitochondria in inverse proportion to mitochondrial membrane potential (Δψm) according to the Nernst equation.",
+    "After 40 minutes, confocal microscope imaging is performed in the presence of TMRM (in HBSS); the 560 nm laser was used to excite, and fluorescence was measured above 580 nm.",
+    "Live-cell imaging is performed using a confocal microscope (Zeiss LSM 710 or 880 with an integrated META detection system). For confocal microscopes, illumination intensity is limited to 0.1-0.2% of laser output to prevent phototoxicity, and the pinhole is set to allow optical slice at approximately 1-2 μm. Z-stack images are collected.",
+    "For dynamic TMRM a time-series with 5 second intervals was performed on the same confocal microscopy set up."
+  ],
+  "authors": [
+    "gurvir.virdi",
+    "mineechoi"
+  ],
+  "creator": "gurvir.virdi",
+  "published_on": 1663757502,
+  "created_on": 1663756912,
+  "keywords": []
+}

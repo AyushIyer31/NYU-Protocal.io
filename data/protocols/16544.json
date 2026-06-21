@@ -1,0 +1,26 @@
+{
+  "id": 16544,
+  "title": "Using HLRS Hazel Hen supercomputer",
+  "uri": "using-hlrs-hazel-hen-supercomputer-ud8es9w",
+  "doi": "dx.doi.org/10.17504/protocols.io.ud8es9w",
+  "description": "{\"blocks\":[{\"key\":\"d267b\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"929aa\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7gr3q\",\"text\":\"https://wickie.hlrs.de/platforms/index.php/Cray_XC40\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":52}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"3B3434565F004D8F93E8E1BCA2FC3FED\",\"url\":\"https://wickie.hlrs.de/platforms/index.php/Cray_XC40\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"bfk6k\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"4l2i6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"ci9ug\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Request access to hazel hen via the ID of your project https://www.hlrs.de/solutions-services/academic-users/hlrs-systems-access/ Once the form is submitted (as real paper!), the admin(s) in your project can submit your username, password, IPs etc.",
+    "Try access with ssh ipvuser@hazelhen.hww.de with `ipvuser` being your user name. You&#39;re in! Create a workspace with ws_allocate myWorkspace 60 or go to a workspace your group has set up for you. They are currently found under /lustre/cray/ws8/ws/ cf. https://wickie.hlrs.de/platforms/index.php/Workspace_mechanism",
+    "Now on hazel hen you can get a new ssh key with ssh-keygen and copy the public key ( = the output of cat ~/.ssh/id_rsa.pub ) to all the githubs and gitlabs you&#39;ll need. This will allow you to clone onto the machine.",
+    "Now back on your own computer (any one on the IP list), you can use a reverse ssh tunnel to clone the relevant repos ssh -R 7890:simsgs.informatik.uni-stuttgart.de:22 ipvuser@hazelhen.hww.degit clone ssh://git@localhost:7890/heenemo/combi.git /lustre/cray/ws8/ws/ipvuser-myWorkspace/combi Commandssh -R 7890:simsgs.informatik.uni-stuttgart.de:22 ipvuser@hazelhen.hww.degit clone ssh://git@localhost:7890/heenemo/combi.git /lustre/cray/ws8/ws/ipvuser-myWorkspace/combiCommandssh -R 7890:simsgs.informatik.uni-stuttgart.de:22 ipvuser@hazelhen.hww.degit clone ssh://git@localhost:7890/heenemo/combi.git /lustre/cray/ws8/ws/ipvuser-myWorkspace/combiCommandssh -R 7890:simsgs.informatik.uni-stuttgart.de:22 ipvuser@hazelhen.hww.degit clone ssh://git@localhost:7890/heenemo/combi.git /lustre/cray/ws8/ws/ipvuser-myWorkspace/combiCommandssh -R 7890:simsgs.informatik.uni-stuttgart.de:22 ipvuser@hazelhen.hww.degit clone ssh://git@localhost:7890/heenemo/combi.git /lustre/cray/ws8/ws/ipvuser-myWorkspace/combiCommandssh -R 7890:simsgs.informatik.uni-stuttgart.de:22 ipvuser@hazelhen.hww.degit clone ssh://git@localhost:7890/heenemo/combi.git /lustre/cray/ws8/ws/ipvuser-myWorkspace/combi remember to replace `7890` by a different port for every git remote server!",
+    "From here on, all steps will have to be well documented! Enter your workspace on hazel hen, check out the versions of the code you need. Load all the modules you need, e.g. the gnu compiler suite: module load PrgEnv-gnu You can see the available modules with module avail If your build tools / libraries are not there, install them locally for yourself or request them, cf https://wickie.hlrs.de/platforms/index.php/CRAY_XC40_local_Modules . Usually you will want to link the program dynamically. To do that, set the environment variable: export CRAYPE_LINK_TYPE=dynamic And you&#39;re set to build with your usual toolchain. Document your modules (`module list`) and environment variables (`declare -p`), and all the changes you made to the code - or better still, `git push` them.",
+    "request an interactive job on a MOM node with qsub -I -l nodes=1:ppn=24,walltime=01:00:00 From here, you can submit the job via aprun (not mpirun!), e.g. with a bash script: #! /bin/bash #PBS -N &lt;job_name&gt; #PBS -l nodes=&lt;number_of_nodes&gt;:ppn=24 #PBS -l walltime=00:01:00 cd $PBS_O_WORKDIR # This is the directory where this script and the executable are located. # You can choose any other directory on the lustre file system. export OMP_NUM_THREADS=&lt;nt&gt; &lt;aprun_command&gt; cf https://wickie.hlrs.de/platforms/index.php/CRAY_XC40_Using_the_Batch_System on how exactly this works"
+  ],
+  "authors": [
+    "Theresa Pollinger"
+  ],
+  "creator": "Theresa Pollinger",
+  "published_on": 1538998103,
+  "created_on": 1538997986,
+  "keywords": []
+}

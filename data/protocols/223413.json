@@ -1,0 +1,32 @@
+{
+  "id": 223413,
+  "title": "Systematic Review and Meta‑Analysis of Circulating Biomarkers in Chronic Heart Failure",
+  "uri": "systematic-review-and-meta-analysis-of-circulating-g6evbzbe7",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gpmwnpgzp/v1",
+  "description": "{\"blocks\":[{\"key\":\"bgknh\",\"text\":\"Chronic heart failure (CHF) remains a leading cause of morbidity and mortality globally. Over the past 15 years, multiple circulating biomarkers have been evaluated for their ability to detect early disease, predict outcomes, and stratify risk. Previous meta-analyses have focused on natriuretic peptides and troponins, while galectin‑3, sST2 and circulating miRNAs are emerging as promising adjuncts. This protocol defines a standardized approach to aggregate and synthesize evidence from primary human studies (2010–2025) in CHF populations.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Protocol version: 1.0 Date: 28.07.2025 Corresponding author: diana_ilas@yahoo.com",
+    "Computer with internet access Reference manager (Mendeley) PRISMA 2020 flow diagram template Microsoft Excel and Microsoft Word. Software for meta-analysis (JASP v0.19.3) Access to databases: PubMed, Scopus, Web of Science",
+    "Step 1: Define eligibility criteria Inclusion Population : Adults (≥18 years), diagnosed with chronic heart failure (any EF phenotype) Interventions/Exposure : Measurement of circulating biomarkers: NT‑proBNP, BNP, hs‑cTnI/T, galectin‑3, sST2, miRNAs (e.g. miR‑210‑3p, miR‑1285‑3p) Outcomes : Diagnostic accuracy (e.g. sensitivity/specificity), prognostic outcomes (hazard ratios, odds ratios for all-cause mortality, cardiovascular mortality, hospitalization, LVAD/ transplantation) Study Types : Human observational cohort studies, case–control studies, randomized trials with biomarker substudy, and meta‑analyses/reviews (for context) Time Frame : Published between 1 January 2010 and 31 May 2025 Language : English Exclusion Animal studies or in vitro only Editor letters, commentaries, purely mechanistic basic science without clinical outcome data Acute heart failure studies without stratification of chronic HF patients",
+    "Step 2: Search databases Databases : PubMed/MEDLINE, Scopus, Web of Science Search Terms (Boolean construction for each database):",
+    "Step 3: Selection process Title/Abstract Screening : Two independent reviewers screen all identified records against inclusion criteria Full‑Text Retrieval : Selected abstracts undergo full-text review for eligibility Discrepancies : Resolved by discussion or third reviewer arbitration PRISMA Flowchart : Document screening filters and final study inclusion counts",
+    "Step 4: Data extraction A standardized Microsoft Excel form (or similar) will be used to extract: Author, year, geographical region, sample size, CHF phenotype Biomarkers measured, assay methodology, units and thresholds Outcome measures: HRs, ORs, sensitivity, specificity, AUC, cut‑off values Covariates used in multivariable models",
+    "Step 5: Risk of Bias Assessment Use Newcastle–Ottawa Scale (NOS) for cohort and case–control studies Use QUADAS-2 for diagnostic accuracy studies Each study scored by two independent reviewers; conflicts resolved via consensus",
+    "Step 6: Data Synthesis and Analysis Qualitative : Tabulate study characteristics, biomarker cut-off thresholds, and outcomes Quantitative (Meta-analysis) : Random-effects meta-analysis (e.g. DerSimonian and Laird) to pool HRs or ORs Present forest plots by biomarker group Estimate heterogeneity (I², τ², Q-statistic)",
+    "Step 7: Documentationd and PRISMA compliance Complete PRISMA 2020 flow diagram detailing the identification, screening, eligibility, and inclusion process.",
+    "Database search and deduplication: 1–2 days Screening and full-text retrieval: 3–5 days Data extraction and validation: 5–7 days Analysis and synthesis: 5–10 days",
+    "Any discrepancies during screening or data extraction were resolved by consensus or adjudicated by a third reviewer. Cytokines were grouped by function (pro-inflammatory, immunosuppressive, or regulatory) to guide synthesis. Studies without hazard ratios but providing Kaplan–Meier curves were excluded from meta-analysis but retained for qualitative discussion."
+  ],
+  "authors": [
+    "Diana Gabriela Ilaș",
+    "Sebastian Ciurescu"
+  ],
+  "creator": "Sebastian Ciurescu",
+  "published_on": 1753729358,
+  "created_on": 1753712012,
+  "keywords": []
+}

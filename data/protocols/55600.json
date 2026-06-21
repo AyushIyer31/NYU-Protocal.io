@@ -1,0 +1,32 @@
+{
+  "id": 55600,
+  "title": "Assembly, Annotation, Quantification, and Differential Expression Analysis of Shorea sp. Transcriptome",
+  "uri": "assembly-annotation-quantification-and-differentia-b2iqqcdw",
+  "doi": "dx.doi.org/10.17504/protocols.io.b2iqqcdw",
+  "description": "{\"blocks\":[{\"key\":\"bg7mi\",\"text\":\"Assembly, annotation, and quantification of transcripts from RNA-seq reads of Shorea sp. transcriptome followed by differential expression analysis using open source tools.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":78,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1ihv1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a45f8\",\"text\":\"List of tools:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7uou7\",\"text\":\"Trinity (Home · trinityrnaseq/trinityrnaseq Wiki · GitHub)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":9,\"length\":48}],\"data\":{}},{\"key\":\"1vndf\",\"text\":\"TransDecoder (Home · TransDecoder/TransDecoder Wiki · GitHub)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":14,\"length\":46}],\"data\":{}},{\"key\":\"2s0u3\",\"text\":\"NCBI Blast suite (Download BLAST Software and Databases Documentation (nih.gov))\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":18,\"length\":61}],\"data\":{}},{\"key\":\"100uv\",\"text\":\"InterProScan (Download - InterPro (ebi.ac.uk))\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":3,\"offset\":14,\"length\":31}],\"data\":{}},{\"key\":\"3upef\",\"text\":\"CDHIT suite (CD-HIT Official Website (ucsd.edu))\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":4,\"offset\":13,\"length\":34}],\"data\":{}},{\"key\":\"5lkrt\",\"text\":\"Salmon (Salmon - Salmon 1.6.0 documentation)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":5,\"offset\":8,\"length\":35}],\"data\":{}},{\"key\":\"8n362\",\"text\":\"DESeq2 (Bioconductor - DESeq2)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":6,\"offset\":8,\"length\":21}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"AF07AA85534F11ECA5C40A58A9FEAC02\",\"url\":\"https://github.com/trinityrnaseq/trinityrnaseq/wiki\"}},\"1\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"D5A3741E534F11ECA5C40A58A9FEAC02\",\"url\":\"https://github.com/TransDecoder/TransDecoder/wiki\"}},\"2\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"E81193D0534F11ECA5C40A58A9FEAC02\",\"url\":\"https://blast.ncbi.nlm.nih.gov/Blast.cgi?CMD=Web\\u0026PAGE_TYPE=BlastDocs\\u0026DOC_TYPE=Download\"}},\"3\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"F7635092534F11ECA5C40A58A9FEAC02\",\"url\":\"http://www.ebi.ac.uk/interpro/download\"}},\"4\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"035616CD535011ECA5C40A58A9FEAC02\",\"url\":\"http://weizhong-lab.ucsd.edu/cd-hit\"}},\"5\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"1B7E17D8535011ECA5C40A58A9FEAC02\",\"url\":\"https://salmon.readthedocs.io/en/latest/salmon.html\"}},\"6\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"334EDA59535011ECA5C40A58A9FEAC02\",\"url\":\"http://bioconductor.org/packages/release/bioc/html/DESeq2.html\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Assemble the reads using Trinity assembler Trinity --seqType fq --max_memory 245G --left reads.PAPER1.left.fq --right reads.PAPER1.right.fq --CPU 20 --trimmomatic --monitoring > runPAPER1.log 2>&1 &",
+    "Obtain the assembly statistics $TRINITY_HOME/util/TrinityStats.pl Trinity.fasta > Assembly_stats.txt",
+    "Query the nonredundant nucleotide sequences against A. thaliana proteome blastx -query Trinity_reduced_output.fasta -db Araport11_genes.201606.pep.fasta -evalue 1e-10 -num_threads 33 -max_taget_seqs 1 -outfmt 6 -out blastx_trasncript_aradb_e10.outfmt6",
+    "Query the nonredundant protein sequences against Pfam, PANTHER, GO, and KEGG databases ./interproscan.sh -i Trinity_reduced_output.pep.fasta -t n -appl Pfam,PANTHER -goterms -iprlookup -pa --cpu 30",
+    "Align and estimate transcript abundance using Salmon $TRINITY_HOME/util/align_and_estimate_abundance.pl --transcript Trinity.fasta --seqType fq --samples_file samples_description.txt --est_method salmon --aln_method bowtie2 --thread_count 33 --prep_reference --trinity_mode --coordsort_bam",
+    "Construct matrices of counts and normalized values $TRINITY_HOME/util/abundance_estimates_to_matrix.pl --est_method salmon --out_prefix Paper1_comORF_cdhit_only_c1 --name_sample_by_basedir leaf_1312_rep1/quant.sf leaf_1312_rep2/quant.sf leaf_1404_rep1/quant.sf leaf_1404_rep2/quant.sf leaf_1406_rep1/quant.sf leaf_1406_rep2/quant.sf --gene_trans_map Paper1_comORF_cdhit_only_c1.fasta.gene_trans_map",
+    "Perform pairwise comparison between the time points $TRINITY_HOME/Analysis/DifferentialExpression/run_DE_analysis.pl --matrix quant.sf/gene.counts.matrix --method DESeq2 --samples_file samples_description_DESeq.txt --contrasts contrast_DESeq.txt",
+    "Extract the differentially expressed transcripts at log 2 fold change ≥ 1, FDR &lt; 0.05 $TRINITY_HOME/Analysis/DifferentialExpression/analyze_diff_expr.pl --matrix ../ComORF_cdhit_only_c1.isoform.TMM.EXPR.matrix -C 1 -P 0.05 --samples ../samples_description.txt",
+    "Extract the longest open reading frame (ORF) using TransDecoder TransDecoder.LongOrfs -t Trinity.fasta",
+    "Query the extracted ORFs against Uniprot database using blastp blastp -query transdecoder_dir/longest_orfs.pep -db uniprot_sprot.fasta -max_target_seqs 1 -outfmt 6 \\-evalue 1e-5 -num_threads 10 > blastp.outfmt6",
+    "Predict the single best ORF for each transcript TransDecoder.Predict -t Trinity.fasta --single_best_only --retain_blastp_hits blastp.outfmt6",
+    "Remove highly similar protein sequences using CD-HIT cd-hit -i Trinity_paper1.pep.fasta -o Trinity_paper1_output -T 0 -M 0 -d 0 -c 1 -n 5"
+  ],
+  "authors": [
+    "Ahmad Husaini AHS Suhaimi"
+  ],
+  "creator": "Ahmad Husaini AHS Suhaimi",
+  "published_on": 1638436505,
+  "created_on": 1638433157,
+  "keywords": []
+}

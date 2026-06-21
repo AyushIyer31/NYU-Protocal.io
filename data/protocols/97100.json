@@ -1,0 +1,40 @@
+{
+  "id": 97100,
+  "title": "USDA LTAR Common Experiment measurement: Concentration of carbon and nitrogen in aboveground biomass",
+  "uri": "usda-ltar-common-experiment-measurement-concentrat-da3k2gkw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l62km5gqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"d6pjr\",\"text\":\"The carbon (C) and nitrogen (N) contents within a plant are determined from biomass samples collected following the USDA LTAR Common Experiment measurement: Aboveground biomass protocol. Biomass C and N measurements are critical for developing C and N balances and associated stocks and flows within agroecosystems. For these purposes, the biomass that stays in or leaves the field should undergo analysis for C and N. In addition, ratios of plant biomass C to other nutrients (including N) are valuable for 1) assessing physiological allocation of photosynthate and nutrients and residue quality and 2) defining boundaries of plant growth/physiology, stress response, and production potential and quality for modeling efforts. The recommended method for determining C and N tissue concentrations is high-temperature combustion, which involves high-temperature oxidation (\\u003e1000°C) of a sample in the presence of oxygen, reduction of nitrogen compounds to N2 in a downstream reduction furnace, and measurement of the resulting CO2 and N2 by infrared gas analysis or gas chromatography.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":116,\"length\":60},{\"style\":\"sub\",\"offset\":956,\"length\":1},{\"style\":\"sub\",\"offset\":1028,\"length\":1},{\"style\":\"sub\",\"offset\":1035,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"dm9ip\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Collect plant biomass samples as per the USDA LTAR Common Experiment measurement: Aboveground biomass (Wilke et al., 2024) protocol. Conduct C and N analyses on a ground subsample of a size based on individual instruments and/or the N concentration of the material. More detailed subsampling for C and N concentrations in various plant components is not required and is conducted at the discretion of each site.",
+    "Analyze a portion of the dried subsample (&lt; 1 ug to &gt; 1000 ug; ground to 1 mm) using one of the various high-temperature combustion instruments capable of oxidizing samples at high temperature (&gt;1000 °C), reducing nitrogen oxides, and detecting the resulting CO 2 and N 2 , reported as total %C and %N for each sample. Since productive analysis of minuscule samples is possible, homogenization, careful grinding, and subsampling at earlier steps are critical. Determining an appropriate sample size may be necessary for a given sample type and instrument combination to meet upper and lower detection limits.",
+    "Biomass dry weight from biomass sampling.",
+    "Equation 1. Carbon content based on aboveground biomass dry weight and carbon concentration. kg C ha -1 = Biomass dry weight (Mg ha -1 ) x (%C / 100) x 1000 kg Mg -1",
+    "N fertilizer and/or manure/byproduct source, rate, timing, and application method.",
+    "N inputs via atmospheric deposition and irrigation.",
+    "Equation 2. Nitrogen content based on aboveground biomass dry weight and nitrogen concentration. kg N ha -1 = Biomass dry weight (Mg ha -1 ) x (%N / 100) x 1000 kg Mg -1",
+    "Sollins et al. (1999) recommend the following quality assurance/quality control procedures. Run the following specimens: Two “bypass” samples of high concentration to condition the oxidation and reduction columns in the instrument Two blanks Three standards of known C and N concentrations similar to the expected range of sample concentrations to calibrate the instrument Three to five check standards distributed through a sample run of 50 samples",
+    "If the results are more than 10% above the highest standard, reanalyze the samples using a suitable calibration standard.",
+    "Ideally, and in addition, calibrate among all LTAR instruments by running a set of blind standards.",
+    "Blank and check sample results should be included with reported data.",
+    "The meta-data should include the brand name and model of the instrument, instrument-specific detection limits, accuracy and precision ranges reported by the manufacturer, and the subsample size and combustion temperature used for analyses.",
+    "Will vary with instrument and operator, but in general: Weighing and loading samples into ceramic boats/crucibles or tin cups takes 1-5 minutes per sample. Repacking columns (drying and reduction) requires 2-4 hours per week if instrument use is continuous. Approximately 75 samples can be analyzed in one day.",
+    "Follow the archival methods as described in the aboveground biomass protocol.",
+    "Figure 1. Soybean tissue subsample ground to &lt; 1 mm in an archive container with the lid removed. Photograph by Michel Cavigelli. Figure 2. Leco instrument for the use of high-temperature combustion to measure the C and N contents of samples. Photograph by Michel Cavigelli.",
+    "Send samples to a commercial laboratory or analyze them at an USDA ARS Laboratory (or University Laboratory) if equipment and personnel are available. When choosing a commercial laboratory to send the samples to consider the following factors: 1) precision, accuracy, and detection limits claimed by the lab, 2) whether the lab has a QA/QC program and reports performance data or participates in a verification consortium, and 3) as an additional verification check, whether the lab includes at least one blind check standard for every 25 test samples under analysis. The following protocol details methods for performing laboratory procedures in-house.",
+    "Table 1. Summary of recommendations for measurement of aboveground biomass carbon and nitrogen concentration. %s %s",
+    "Calculate the content of C and N on an area basis using the aboveground biomass dry weight and the concentration (percent) of C and N.",
+    "Concentration of phosphorus, potassium, and sulfur are also recommended based on the aboveground biomass samples; see protocol (Kovar and Fortuna, 2024)."
+  ],
+  "authors": [
+    "Michel A. Cavigelli",
+    "Timothy C. Strickland"
+  ],
+  "creator": "Lori J. Abendroth",
+  "published_on": 1724970750,
+  "created_on": 1704710181,
+  "keywords": []
+}

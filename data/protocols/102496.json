@@ -1,0 +1,27 @@
+{
+  "id": 102496,
+  "title": "PrediKt Study Protocol",
+  "uri": "predikt-study-protocol-dgb83srw",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"4lq6u\",\"text\":\"We strive to build a predictive model to estimate risk of postoperative knee pain in patients undergoing total knee replacement.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Select patients from Zuckerberg San Francisco General Hospital and Trauma Center, specifically looking for patients who underwent total knee arthroplasty. Use inclusion and exclusion criteria to select the sample size of patients in our retrospective cohort.",
+    "Extract the Pua and Sanchez-Santos predictive models from their respective papers by analyzing the results section and odds ratio coefficients. Using each model, fit it against the retrospective patient data as directly as possible, making note of any model variables that cannot be directly mapped to our data.",
+    "Analyze the degree to which the Pua and Sanchez-Santos models accurately predicts our data using C-indices and R2-indices.",
+    "Create an aggregated list of patient demographic and preoperative variables that have been identified as post-TKA PPSP. Analyze our retrospective patient data to determine which of these variables can be accounted for or approximated by the available data.",
+    "Perform a univariable and multivariable logistic regression and determine significant predictors of PPSP. If appropriate, create a nomogram prediction model for PPSP using our regression data, and analyze the accuracy of our model using key measurements (e.g., AUC, Brier score, ROC, sensitivity, specificity).",
+    "Enhance our prediction model using supervised ML techniques (e.g., decision tree, K-nearest neighbor, random forest, support vector machine) and determine the diagnostic accuracy for each of these model optimizations.",
+    "Repeat step 6 with unsupervised ML techniques."
+  ],
+  "authors": [
+    "Calvin Wang"
+  ],
+  "creator": "Calvin Wang",
+  "published_on": 1719480565,
+  "created_on": 1719461437,
+  "keywords": []
+}

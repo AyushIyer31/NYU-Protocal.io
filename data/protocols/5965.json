@@ -1,0 +1,22 @@
+{
+  "id": 5965,
+  "title": "Quantitative assessments of water-use efficiency in Temperate Eurasian Steppe along an aridity gradient",
+  "uri": "quantitative-assessments-of-water-use-efficiency-i-h3mb8k6",
+  "doi": "dx.doi.org/10.17504/protocols.io.h3mb8k6",
+  "description": "{\"blocks\":[{\"key\":\"b3fsb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"7idgt\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"4tb50\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"7o9qo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Aridity Index classification map. The Aridity Index(AI) map is from the Consultative Group for International Agriculture Research (CGIAR) (http://www.csi.cgiar.org).The study region was extract from the global map. According to the original classification, terrestrial ecosystems are classified into 5 levels: hyper-arid (AI &lt; 0.03, HAR), arid (0.03 &lt; AI &lt; 0.20, AR), semi-arid (0.20 &lt; AI &lt; 0.50, SAR), dry and sub-humid (0.50 &lt; AI &lt; 0.65, DSH) and humid (AI &gt; 0.65, HU). However, few HAR areas exist in TES, so we combined that category with AR. Land cover map. MODIS land cover product for 2001 (MOD12Q1, V004, IGBP global vegetation classification, 1km resolution, http://ladsweb.nascom.nasa.gov/data/) was used as model input because it is of high accuracy and has wide usage. LAI. We used a daily step 8km LAI product ( http://www.globalmapping.org/globalLAI/ ) to drive the model. The dataset derived from MODIS and AVHRR based on quantitative fusion algorithm. Daily meteorological data. Daily temperature, precipitation, radiation and specific humidity are required to drive the model. We imported the dataset of Global Meteorological Forcing Dataset for Land Surface Modeling (http://rda.ucar.edu/datasets/ds314.0/). Atmosphere CO 2 data. Monthly atmospheric CO 2 data were collected from Mauna Loa Observatory (MLO), Hawaii (20°N, 156°W) ( http://cdiac.esd.ornl.gov/ftp/trends/co2/maunaloa.co2 ). The atmospheric CO 2 concentration is assumed to be uniform across the region. Soil texture data. Soil texture data were collected from the Global Soil Dataset for use in Earth System Models (GSDE, Available at: http://globalchange.bnu.edu.cn/research/soilw). The study region was extracted from the orignial maps using Arc GIS 10.0.",
+    "When the input data are ready , the model was run to calculate the re NPP and ET, then the regional WUE was calculated as the ratio of NPP to ET.",
+    "The model was run for validation first. The outputs were validated against multi source observations. NPP validation. The NPP results were tested against the field measurement results. The observed data were collected from Eastern Kazakhstan (KS sites), Xinjiang (XJ sites) and Inner Mongolia (IM sites). Each of these sites represents a typical vegetation pattern in the local area. ET validation. Four grassland eddy covariance (EC) sites’ data were used to validate the ET outputs. Three of them are located in Northern Kazakh Steppe and the other one is located in Inner Mongolia. Daily step data of latent energy (LE) with complete meteorological information were used to evaluate the corresponding model results. The data of three Kazakh Steppe sites were collected from the Fluxnet website (http://www.fluxdata.org/) and the data of Inner Mongolia site was offered by Meng Xiangxin and Fu Congbin. We selected the daily data of the EC sites with complete meteorological information needed for model simulation. All data were gap-filled and quality checked before the application.",
+    "The model results of different sub-region including NPP, ET and WUE were separated and analyzed in Arc GIS 10.0 using the &#34;zonal calculation&#34; toolbox and then the statistics were extracted and analyzed in Excel 2010."
+  ],
+  "authors": [],
+  "creator": "Jianlong Li",
+  "published_on": 1503572465,
+  "created_on": 1494922815,
+  "keywords": []
+}

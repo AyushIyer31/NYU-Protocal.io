@@ -1,0 +1,39 @@
+{
+  "id": 8145,
+  "title": "(CVD) risk chart development, evaluation, and validation ",
+  "uri": "cvd-risk-chart-development-evaluation-and-validat-j7rcrm6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j7rcrm6",
+  "description": "{\"blocks\":[{\"key\":\"7ase2\",\"text\":\"In this protocol, we aimed to show the step-by.step procedures used to develop, evaluate and validate (CVD) risk charts.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"ds7v0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"8a4be\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"cfjon\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Definition of endpoint (event/outcome)",
+    "Definition of at-risk population",
+    "Follow-up time",
+    "Literature review Expert-based",
+    "Using Cox proportional hazard regression A broad set of risk factors were independently assessed. The most important risk factors were then hierarchically included in the model based on the higher hazard ratio and significance.",
+    "IF the selected risk factors are not acceptable, go to step #5",
+    "Discrimination (AUROC, Harrell’s C indices) Calibration (Nam-D’Agostino chi-square test) Overall bias (predefined risk threshold for incidence)",
+    "The 10-fold cross-validation Bootstrapping",
+    "Online web-based prediction tool: JavaScript and Bootstrap (PARS example: http://www.prognosis.ir/Pars/) Offline Android app: Android Studio and API level 19 (PARS example: http://www.prognosis.ir/Pars/Android/PARS.zip) Risk chart: Color-coded (CVD) probabilities (PARS example: Manuscript address)"
+  ],
+  "authors": [
+    "Nizal Sarrafzadegan",
+    "Razieh Hassannejad",
+    "Hamid Reza Marateb",
+    "Mohammad Talaei",
+    "Masoumeh Sadeghi",
+    "Hamid Reza Roohafza",
+    "Farzad Masoudkabir",
+    "Shahram OveisGharan",
+    "Marjan Mansourian",
+    "Mohammad Reza Mohebian",
+    "Miquel Angel Mañanas"
+  ],
+  "creator": "Hamid Reza Marateb",
+  "published_on": 1513713087,
+  "created_on": 1507241082,
+  "keywords": []
+}

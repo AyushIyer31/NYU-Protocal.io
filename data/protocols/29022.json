@@ -1,0 +1,35 @@
+{
+  "id": 29022,
+  "title": "A Limit of Densely Connected Convolutional Networks",
+  "uri": "a-limit-of-densely-connected-convolutional-network-8j6hure",
+  "doi": "dx.doi.org/10.17504/protocols.io.8j6hure",
+  "description": "{\"blocks\":[{\"key\":\"arung\",\"text\":\"Residual learning and skip connections can train very deep convolutional networks with a significant performance boost. On this basis, DenseNet proposes a dense connection structure in which each convolutional layer in the network can be directly connected to all the previous layers. Compared with ResNet, this dense structure can reduce the parameter size of the network to a greater extent and enhance the utilization of features. However, this dense structure still has the problem of parameter redundancy. In this paper, the accuracy of image classification is not affected by reducing unnecessary shallow connections in the network and reducing the parameter amount of the model. In this article, the method is referred to as A Limit of Densely Connected Convolutional Networks, or simply LimDenseNet. The method proposed in this paper is simple but effective, the experimental results on the CIFAR-10 and Tiny ImageNet datasets show that although the performance of LimDenseNet and DenseNet is comparable in the shallow network. By increasing the convolutional layers, the decrease range of parameters in the network gradually increases and the classification accuracy also improves. On the Tiny Imagenet, compared with DenseNet, LimDenseNet in layer 264 reduces the number of parameters by 17.40% when the classification error rate is basically the same.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "This protocol requires: anaconda( https://anaconda.org/ ) spyder python ( https://www.python.org/ ) Numpy ( https://numpy.org/ ) tensorflow( https://www.tensorflow.org/ ) cifar10( http://www.cs.toronto.edu/~kriz/cifar.html ) Tiny Imagenet( http://tiny-imagenet.herokuapp.com/ ) We can download tensorflow from anaconda. And download cifar10 from The main steps are the following: dataset preparation, LimDenseNet and DenseNet training.",
+    "Training cifar10 We can download cifar10 from cifar10_download_and_extract.py",
+    "data processing dataset.py",
+    "LimDenseNet: limDenseNet.py DenseNet: denseNet.py",
+    "trainining: train.py solver_cifar.py",
+    "when you training finsh, you can test accracy in test.py And open Anaconda Prompt, enter: tensorboard --logdir &#34;Enter your checkpoint storage address&#34; Then open its output address in the browser,like this:",
+    "Training Tiny Imagenet",
+    "data processing: input_pipe.py",
+    "LimDenseNet: limDenseNet.py DenseNet: denseNet.py",
+    "training: train.py single_layer_nn.py when you training finsh, open Anaconda Prompt, enter: tensorboard --logdir &#34;Enter your checkpoint storage address&#34; Then open its output address in the browser.",
+    "loss function: losses.py",
+    "other related codes: metrics.py",
+    "other related codes: cfg.py ckpt_pb.py"
+  ],
+  "authors": [
+    "Wenkai Huang",
+    "Guanglong Peng",
+    "Xuan Tang"
+  ],
+  "creator": "Peng Guanglong",
+  "published_on": 1781773121,
+  "created_on": 1571709386,
+  "keywords": []
+}

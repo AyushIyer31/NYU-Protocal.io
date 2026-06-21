@@ -1,0 +1,43 @@
+{
+  "id": 316480,
+  "title": "Purification of MBP-fused HTLV-1 Tax (Miura et al. 2026)",
+  "uri": "purification-of-mbp-fused-htlv-1-tax-miura-et-al-2-jza8cp2hx",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"5gj3a\",\"text\":\"This step-by-step protocol (on 27 March 2026, just for my record) is to complement the method described in Miura et al. 2026 to purify MBP-Tax-His and MBP-His-Tax. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "# Purify MBP-fused Tax using corn starch slurry (Kobashigawa et al. 2021) that captures the MBP moiety.",
+    "# Cleave the recombinant protein between MBP and Tax.",
+    "Prepare corn starch slurry according to Kobashigawa et al. 2021. Below is what we normally do for slightly large-scale preparation: Take ~1 g corn starch powder in a 50 mL conical tube and resuspend in ~20 mL Milli-Q water. Place the conical tube in a ~85 °C water bath and incubate for 10 min. Vortex briefly every minute to keep the slurry suspended. Let the slurry cool down. Wash the slurry with plenty of Milli-Q water (requires 2,600xg for 2 min to harvest). Make 50% slurry with water, and store it in the fridge until use.",
+    "Combine the ~10 mL supernatant with the slurry (up to ~2 mL gel volume) equilibrated with Lysis buffer minus protease inhibitors in a 15 mL conical tube. Incubate for ~1.5 hours at 4°C.",
+    "Centrifuge to collect the slurry.",
+    "Wash the slurry with ~10 ml Lysis buffer minus protease inhibitors.",
+    "Incubate the slurry with ~2 ml Lysis buffer containing 100 mM maltose for ~1 hour at 4°C to elute.",
+    "Centrifuge to collect the eluate.",
+    "Add ~4.5 μg/ml HRV 3C and incubate overnight at 4°C.",
+    "# Isolate histidine-tagged Tax from the MBP moiety using Ni-NTA.",
+    "Combine the sample with the Ni-NTA resin (~0.2 mL gel volume) that has been washed with PBS/0.01% Tween20. (PBS/0.01% Tween 20 can be replaced with 50 mM Tris-HCl pH 8.0, 150 mM NaCl, and 0.01% Tween 20 from this step onwards.) Incubate for ~1.5 hours at 4°C.",
+    "Centrifuge to remove the unbound.",
+    "Wash the resin with PBS/0.01% Tween 20 containing 20 mM imidazole.",
+    "Incubate the resin with 200 μL PBS/0.01% Tween 20 containing 400 mM imidazole for ~1 hour at 4°C to elute. (400 mM is an overkill - 200 mM also works.)",
+    "# Remove imidazole using a centrifugal filter.",
+    "Centrifuge the supernatant again at 16,000xg, 10 min, 4°C. Collect supernatant.",
+    "Centrifuge the lysate at 2,100xg, 10 min, 4°C. Collect supernatant.",
+    "Sonicate the bacteria to disrupt the cell wall.",
+    "Resuspend frozen bacterial pellet (harvested from ~50 mL overnight bacterial culture) in 10 mL Lysis buffer.",
+    "Prepare 50 mL Lysis buffer: 50 mM Tris-HCl pH 8.0 400 mM NaCl 10% Glycerol 0.1% Triton X-100 1 mM TCEP Dissolve one tablet of EDTA-free protease inhibitor cocktail (Roche, 04693159001).",
+    "# Lyse the bacteria and clear the lysate.",
+    "Centrifuge to collect the eluate.",
+    "Dilute the HRV 3C-treated sample by 2-fold with 50 mM Tris-HCl pH 8.0 to reduce the concentration of NaCl and maltose."
+  ],
+  "authors": [
+    "Michi Miura"
+  ],
+  "creator": "Michi Miura",
+  "published_on": 1778647665,
+  "created_on": 1778106774,
+  "keywords": []
+}

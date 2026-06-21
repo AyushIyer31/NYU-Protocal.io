@@ -1,0 +1,40 @@
+{
+  "id": 228518,
+  "title": "Multi-Criteria Models Applied to Fall Risk Management in Construction: A Systematic Literature Review",
+  "uri": "multi-criteria-models-applied-to-fall-risk-managem-hbeeb2jbf",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgqpb1yvk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"cbbu9\",\"text\":\"The construction industry records some of the highest accident rates worldwide, with falls from height representing a major cause of fatalities. This study conducted a Systematic Literature Review (SLR), following PRISMA 2020 guidelines, to map and synthesize scientific knowledge on the application of multi-criteria decision-making methods for preventing fall accidents in construction. Searches included publications from 2015 to 2025. After applying inclusion and exclusion criteria, 26 articles were analyzed in depth. Results indicate a shift from traditional, reactive, and subjective approaches toward hybrid and predictive models integrating Fuzzy Logic, Z-Numbers Theory, Bayesian Networks, and Machine Learning techniques. These methods effectively address uncertainty, expert subjectivity, and complex causal relationships among risk factors. The most frequently applied methodologies include Fuzzy Analytic Hierarchy Process (FAHP), Fuzzy Best Worst Method (FBWM), Grey-DEMATEL-ISM-BN, and Adaptive Neuro-Fuzzy Inference System (ANFIS). Their application enhances accuracy in prioritizing risks, identifying key determinants, and designing robust preventive actions. Despite progress, challenges remain regarding replicability, generalization, and reliance on subjective judgment. The main research gap lies in the lack of comprehensive, integrative models for safety management. It is concluded that integrating real-time technological tools with multi-criteria and Fuzzy inference methods represents a promising direction toward proactive risk management systems capable of reducing fall-related accidents in construction.\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":905,\"length\":39},{\"style\":\"italic\",\"offset\":946,\"length\":30},{\"style\":\"italic\",\"offset\":978,\"length\":19},{\"style\":\"italic\",\"offset\":1003,\"length\":45}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "CIMO Criteria: A B 1 Criteria Description 2 CONTEXT Civil construction sites, dynamic and complex environments characterized as high occupational risk. 3 INTERVENTION Application of models, methods, or tools based on multi-criteria analysis and risk matrices for the assessment and management of hazards associated with working at height. 4 MECHANISM Structuring the decision-making process and systematizing risk analysis. 5 OUTCOMES 1. The effective mitigation of risks and, consequently, the reduction in the number and severity of accidents from falls from height.2. The creation of more robust, targeted, and technically justified preventive action plans.3. The identification of gaps and the synthesis of knowledge that validate the need to propose new risk classification models, such as the matrix to be developed in the dissertation. |",
+    "Search String (&#34;construction&#34; OR &#34;building&#34; OR &#34;AEC&#34;) AND (&#34;fall from height&#34; OR &#34;working at height&#34; OR &#34;fall protection&#34;) AND (&#34;risk assessment&#34; OR &#34;risk matrix&#34; OR &#34;multi-criteria decision making&#34;)",
+    "Chosen databases: Engineering Village - https://www.engineeringvillage.com/home.url?redir=t American Society of Civil Engineers - https://www.asce.org/ Science Direct - http://www.sciencedirect.com Web of Science - https://www.webofscience.com/wos/woscc/basic-search Scopus - https://www.scopus.com/home.uri",
+    "Inclusion Criteria: IC1 Publications in Scientific Journals. IC2 Published between 2015 and 2026. IC3 Published in English. Exclusion Criteria: EC1 Duplicate studies in different databases. EC2 Literature review articles, editorials, and book chapters. EC3 Studies from other sectors unrelated to civil construction. EC4 Works that do not address risk at height or typical related accidents. EC5 Research that does not use multi-criteria methods, risk matrices, or statistics applied to safety. EC6 Articles without free public access. Quality Criteria: QC1 Inconsistent or incomplete methodology.",
+    "Quality Criterion Checklist: QC1 Does the study methodology provide, at a minimum, basic information on the following details of the risk model? Analysis Method/Framework used (mandatory) Identified risk criteria and sub-criteria (mandatory) Hierarchical structure of the model (mandatory) Weights, scores, or ranking of each criterion (mandatory) Justification and detailed definition of the criteria (mandatory)",
+    "Perform searches in the databases using a standard search string and applying the inclusion criteria as filters.",
+    "Export the data obtained from the search in .bib and .ris formats, containing the complete metadata.",
+    "Import the .bib and .ris files into the Rayyan platform ( https://www.rayyan.ai/ ) to perform the selection based on the exclusion criteria.",
+    "Identify duplicate files and conduct an initial screening by reading the title, abstract, and keywords to apply the exclusion criteria.",
+    "Perform a full-text reading of the articles selected in the initial screening and then proceed with the final selection, based on an in-depth analysis of the content to apply the eligibility criteria.",
+    "Perform the quality assessment of the articles approved in the content analysis, in order to verify compliance with the quality criteria.",
+    "Perform a manual search in the reference lists of the selected articles to expand the results. The new articles identified will be subjected to the same selection process described in the previous steps.",
+    "Definition of the articles selected for data synthesis and to answer the proposed research questions.",
+    "Guiding SLR Question - CIMO: In the context of civil construction, how does the intervention with multi-criteria methods and risk matrices lead to outcomes such as the mitigation of accidents at height? Secondary questions: What multi-criteria methodologies and types of risk matrices have been most applied in high-risk construction sites to assess activities at height? What criteria and sub-criteria (risk factors) are systematically identified and weighted by these methods to qualify the risk analysis? What evidence does the literature present regarding the effectiveness of these interventions in reducing incidents or improving safety planning? What are the limiting results or gaps identified in the literature that justify the proposition of new models for classification and management of risk at height?",
+    "Extraction of qualitative and quantitative data for grouping and presentation through descriptive statistics.",
+    "Storage of extracted data in Excel spreadsheets and analysis using R Studio software.",
+    "Report the results following the recommendations of the PRISMA statement ( https://www.prisma-statement.org/prisma-2020-checklist ).",
+    "Answer the proposed research questions based on the analyses performed."
+  ],
+  "authors": [
+    "Gabriel Queiroz Moraes Resende",
+    "Bianca Maria Vasconcelos",
+    "Emilia Rahnemay Kohlman Rabbani"
+  ],
+  "creator": "Gabriel Queiroz Moraes Resende",
+  "published_on": 1762294266,
+  "created_on": 1759199949,
+  "keywords": []
+}

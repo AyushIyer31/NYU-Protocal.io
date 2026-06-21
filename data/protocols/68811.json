@@ -1,0 +1,28 @@
+{
+  "id": 68811,
+  "title": "Growth Curve Stress Test",
+  "uri": "growth-curve-stress-test-cffjtjkn",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"c8sna\",\"text\":\"This is one (fairly quantitative and reproducible) way to run a yeast growth study to analyze the effect of a stressor on yeast. It is not the only way! It is also less of a \\\"protocol\\\" and more of a \\\"template\\\" -- it measures the growth of a single yeast strain at one concentration of \\\"chemical X.\\\" Makes sure to adapt it to your own needs!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"bch0k\",\"text\":\"Remember, if you see a difference between the knockout and the wild-type under stress, it could be that the stress is slowing down the knockout strain. However, there's another possible explanation: it could just be that the knockout strain is growing more slowly under all conditions. Hence the no-stress controls.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"6erub\",\"text\":\"Yeast and yeast media are not hazardous. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bt6g6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4dg24\",\"text\":\"However, you may be using a hazardous \\\"chemical X.\\\" Make sure to use appropriate PPE and engineering controls and dispose of it appropriately.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4g9at\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"23eu\",\"text\":\"The yeast we are using are genetically modified. Make sure to inactivate them (by bleach or autoclaving, for example) before disposing of them.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"3d41\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6f7lo\",\"text\":\"Vortexer\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"chl7s\",\"text\":\"Microplate reader (with incubation and shaking)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8sb03\",\"text\":\"Sterile workspace (such as a biosafety cabinet or laminar flow hood)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3u3iq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5cqr0\",\"text\":\"Materials\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"2cbs6\",\"text\":\"Corning COSTAR 96-well clear flat-bottom assay plate\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a252k\",\"text\":\"Wild-type yeast in double-strength synthetic complete media, OD600 ~ 0.1-0.2\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fahho\",\"text\":\"Knockout yeast in double-strength synthetic complete media, OD600 ~ 0.1-0.2\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5a562\",\"text\":\"A solution of Chemical X in water\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "If possible, perform steps 1 and 2 in a sterile environment such as a biosafety cabinet or laminar flow hood. Vortex the yeast culture briefly to resuspend the yeast cells.",
+    "Set up four wells according to the following table: %s %s Well 1Well 2Yeast culture50 µl50 µlChemical X, 100 mM10 µl--Water40 µl50 µl",
+    "Set up the plate reader as follows: Temperature: 30°C Mode: Kinetic Wavelength: 600 nm Interval: 5 minutes Total run time: 24 hours Shake before read: 30 seconds",
+    "Transfer the assay plate to the reader and read for 24 hours.",
+    "Plot each growth curve with the Y axis scale set to &#34;logarithmic.&#34;",
+    "Find the part of the curve that is linear. In this case, I might choose from 250 minutes to 350 minutes.",
+    "Find the OD600 reading at these two times. At 250 minutes, my OD600 is 0.2086; at 350 minutes, my OD600 is 0.3583.",
+    "Compute the doubling time using a bit of math: Where t 1 and t 2 are the start and end times you found in step 2, and q 1 and q 2 are the OD600 at those times. Thus, for my BY4735 strain growing in YPD, the doubling time is 128 minutes."
+  ],
+  "authors": [
+    "Brian Teague"
+  ],
+  "creator": "Brian Teague",
+  "published_on": 1660843878,
+  "created_on": 1660754837,
+  "keywords": []
+}

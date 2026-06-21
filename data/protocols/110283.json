@@ -1,0 +1,32 @@
+{
+  "id": 110283,
+  "title": "Zika virus NS2B-NS3 protease binding assay for  compound screen using grating-coupled interferometry",
+  "uri": "zika-virus-ns2b-ns3-protease-binding-assay-for-com-dpxj5pkn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ld8o79v5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"2n91t\",\"text\":\"This protocol aims to measure kinetic parameters (ka, kd, and KD) for compounds against Zika virus NS2B-NS3 protease using the Creoptix Wave system. Grating coupled interferometry (GCI) is a label-free technique to measure kinetics and affinity for different targets (proteins, small molecules, fragments, etc.) with enhanced sensitivity. The stable attachment of His-tagged NS2B-NS3 protease to the chip surface was achieved through His capture and amine coupling strategy. This immobilization technique provides oriented and active protein immobilization for binding assays and can be applied to different protein targets. Binding analysis was performed with the Repeated Analyte Pulses of Increasing Duration (RAPID) method, which involves the injection of samples at a single concentration with varied association times. Kinetic parameters were obtained from Creoptix Wave software (v 4.5.18).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bkk4u\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"18rd5\",\"text\":\"For each section protocol method the materials are included in detail.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "The NS2B-NS3 protease used in this assay was purified and expressed using the following protocol. Zika Virus NS2B-NS3 protease fusion protein his10-tagged protein expression and purification: large scale 1 L cultures by Michael Fairhead",
+    "ZIKV-NS2B3 protease used in the concentration 25 µg/µL with buffer HBS-P following the protocol bellow. Creoptix Protein Immobilization Protocol: His-tag Capture via EDC/NHS chemistry by Eda Capkin",
+    "Binding assay were performed with RAPID kinetics using the following protocol. The running buffer condition is 1XHBS-P + 2% DMSO and samples were injected at 10 micromolar (µM) for 5 s association and 60 s dissociation at 200 uL/min flow rate. Kinetic assay with waveRAPID grating-coupled interferometry waveCreoptix system by Eda Capkin",
+    "Check the variation and/or similarity of K D values across different subtracted active flow channels (FC2-1, FC3-1, and FC4-1). Kinetic parameters (ka, kd, KD) comparison for a sample (with a low μ M IC50) over subtracted active channels (FC2-1 red, FC3-1 green, and FC4-1 orange) for ZIKV-NS2B-NS3 protease Data Analysis waveRAPID using Creoptix WAVEsystem by Eda Capkin",
+    "If there is a biochemical data (IC 50 ), compare pIC50 values vs pKD values.",
+    "Samples are calculated: 100,000 uM*V1= 10 uM * 200 uL 20 nL is tranfered to 384 well Echo plates (max vol 100 uL). Then, 100 ul 1X HBS-P+2%DMSO added to 384 well Echo pp plate and tranferred to 100 uL containing 384 well plate(max vol 240 uL) for Creoptix."
+  ],
+  "authors": [
+    "Eda Capkin",
+    "korvus.wang",
+    "Xiaomin Ni",
+    "Lizbé Koekemoer",
+    "Warren Thompson",
+    "Frank von Delft",
+    "Mary-Ann Xavier"
+  ],
+  "creator": "Eda Capkin",
+  "published_on": 1740413433,
+  "created_on": 1729241778,
+  "keywords": []
+}

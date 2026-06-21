@@ -1,0 +1,33 @@
+{
+  "id": 7227,
+  "title": "Processing of Pacbio Iso-seq sequences",
+  "uri": "processing-of-pacbio-iso-seq-sequences-ja3cign",
+  "doi": "dx.doi.org/10.17504/protocols.io.ja3cign",
+  "description": "{\"blocks\":[{\"key\":\"1mkim\",\"text\":\"This protocol is to further process the sequences generated from ICE and Quiver.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"en07i\",\"text\":\"Remove of the detected contaminant sequences\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":44}],\"entityRanges\":[],\"data\":[]},{\"key\":\"81hf0\",\"text\":\"If X \\u003e Y, then the sequences were removed. This is done subsequently after each detecting steps, therefore, the dataset number is decreased and its name has changed from step 4 onwards.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"5viqh\",\"text\":\"Raw data from Pacbio Iso-Seq needs to be processed with RS IsoSeq (version 2.3) pipeline.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"77kqh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "To remove the Primer IIA sequence motifs used in library preparations.",
+    "LQ output or non-full length coverage sequences may from rare transcripts or lower coverage sequences. HQ: high quality sequences, LQ, low quality sequences generated from RS IsoSeq pipeline",
+    "To further remove the redundant sequences. The output dataset was hereafter called dataset A",
+    "BLASTn (1e-10) the dataset A against the complete C.arabica chloroplast genome. Accession number: EF044213.1 (processed with CLC genomic workbench)",
+    "BLASTn (1e-10) the dataset B against the N.tabacum and V. vinifera complete mitochondrial genomes (relate species) Accession number: BA000042.1 and FM179380.1 (processed with CLC genomic workbench)",
+    "BLASTn (1e-10) the dataset C against the public available ribosomal genes from C. arabica, C.canephora and C.eugenioides Accession number: AJ224846, EU650386, DQ153609, AF416459, EU650384, EU650385, AF542981, AF542990, JX459583, JX459584, JX459585, JX459586, JX459587, DQ153593, AF542982, DQ423064, DQ153588, DQ153621, AF542986 (processed with CLC genomic workbench)",
+    "BLASTn (1e-10) the dataset D against the reference genomes of virus and viroid Download from NCBI (processed with CLC genomic workbench)",
+    "BLASTn (1e-10) the dataset E against the reference genome of prokaryotes Download from NCBI (processed with CLC genomic workbench)",
+    "BLASTx (1e-10) the dataset F against the fungal proteins Download from NCBI (processed with CLC genomic workbench)",
+    "Significant matches are filtered with bit score (X) ≥ 300 and identity ≥ 80% Processed with CLC genomic workbench",
+    "All the significant matches were confirmed with cloud BLASTn (bit score (Y)) Processed with CLC genomic workbench",
+    "If X &gt; Y, then the sequences should be removed. This is done subsequently after each detecting steps, therefore, the dataset number is decreased and its name has changed from step 4 onwards. Processed with CLC genomic workbench",
+    "Sequence quality was then accessed with the Fasta Statistics through Galaxy/GVL 4.0 Hereafter the dataset was called dataset G"
+  ],
+  "authors": [
+    "Bing Cheng; Agnelo Furtado; Robert Henry"
+  ],
+  "creator": "Robert J Henry",
+  "published_on": 1502409544,
+  "created_on": 1502191133,
+  "keywords": []
+}

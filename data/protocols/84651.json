@@ -1,0 +1,43 @@
+{
+  "id": 84651,
+  "title": "Microscopy-based bead assay",
+  "uri": "microscopy-based-bead-assay-cwwjxfcn",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn38pzl5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"a5tme\",\"text\":\"This protocol describes the microscopy-based bead assay.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"2nhmi\",\"text\":\"Materials\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"b700d\",\"text\":\"Glutathione Sepharose 4B beads (GE Healthcare)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"996ek\",\"text\":\"dH2O\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":2,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"46k7t\",\"text\":\"MgCl2\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":4,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4r5gu\",\"text\":\"FIP200-GFP\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3805o\",\"text\":\"SINTBAD-mCherry\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"acs3k\",\"text\":\"TBK1\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3h6kp\",\"text\":\"SINTBAD-GFP\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cdbiq\",\"text\":\"mCherry-OPTN\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b1fsj\",\"text\":\"Zeiss LSM 700 confocal microscope\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6ivgp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cscl0\",\"text\":\"Bead assay buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":17}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7e1go\",\"text\":\"      Tris-HCl pH 7.4  25 mM    NaCl  150 mM    DTT  1 mM  \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":59}],\"data\":{}},{\"key\":\"bcs28\",\"text\":\"\\n\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"nabp\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e3ufs\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"MUTABLE\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"1_0\":\"\",\"1_1\":\"\",\"2_0\":\"\",\"2_1\":\"\"},\"colTitles\":[\"\",\"\"],\"colWidths\":[\"124\",\"75\"],\"data\":[[\"Tris-HCl pH 7.4\",\"25 mM\"],[\"NaCl\",\"150 mM\"],[\"DTT\",\"1 mM\"]],\"guid\":\"7D2924CE1C9A11EE91900A58A9FEAC02\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"Tris-HCl pH 7.4\",\"25 mM\"],[\"NaCl\",\"150 mM\"],[\"DTT\",\"1 mM\"]],\"rowHeights\":[23,23,23]}}}}",
+  "steps": [
+    "We use Glutathione Sepharose 4B beads (GE Healthcare) to bind GST-tagged bait proteins.",
+    "To this end, wash 20 µL of beads twice with dH 2 O and equilibrate with bead assaybuffer.",
+    "Then, resuspend beads in 40 µL bead assay buffer, to which bait proteins are added at a final concentration of 5 micromolar (µM) .",
+    "Incubate the Beads with the bait proteins for 01:00:00 at 4 °C at a horizontal tube roller.",
+    "Wash the beads three times to remove unbound GST-tagged bait proteins and resuspend in 30 µL bead assay buffer.",
+    "Where needed, also add MgCl 2 and ATP to the buffer to allow the phosphorylation of targets by TBK1 or other kinases.",
+    "Prepare glass-bottom 384-well microplates (Greiner Bio-One) with 20 µL samples containing prey proteins at the concentrations described below and dilute in bead assay buffer, and add 3 µL of beads per well.",
+    "For the experiments in which full-length FIP200-GFP is recruited to GST-4xUb beads in presence of NDP52 and/or SINTBAD-mCherry, use NDP52 at a final concentration of 50 nanomolar (nM) , FIP200-GFP, SINTBAD-mCherry, and TBK1 are used at a final concentration of 100 nanomolar (nM) .",
+    "For recruitment of SINTBAD-GFP to GST-LC3/GABARAP beads, use a final concentration of 200 nanomolar (nM) SINTBAD-GFP.",
+    "For the TBK1-binding competition experiment between OPTN and NAP1, use mCherry-OPTN and GFP-TBK1 at a final concentration of 500 nanomolar (nM) , and use NAP1 from 100 nanomolar (nM) to 10 micromolar (µM) .",
+    "Incubate the beads with the prey proteins for 00:30:00 prior to imaging, with the exception of experiments where full-length FIP200 is recruited, where proteins are co-incubated for 04:00:00 before imaging. For recruitment of autophagy components to GST-LC3/GABARAP beads, proteins are co-incubated for 01:00:00 before imaging.",
+    "Image samples with a Zeiss LSM 700 confocal microscope equipped with Plan Apochromat 20X/0.8 WD 0.55 mm objective. Three biological replicates were performed for each experimental condition.",
+    "For the quantification, we employ an artificial intelligence (AI) script that automaticallyquantifies signal intensities from microscopy images by drawing line profiles across beads andrecording the difference between the minimum and maximum grey values along the lines. The AI was trained to recognize beads employing cellpose [60].",
+    "Processing is composed of two parts, with the first operating in batch mode. Multichannel input images are split into individual TIFF images and passed to cellpose (running in a Python environment).",
+    "The labeled images produced by cellpose are re-assembled into multichannel images.",
+    "Circular regions of interest (ROIs) are fitted to the segmented particles, and a pre-defined number of line profiles (here set to 20) are drawn automatically, starting at the center of the ROI and extendingbeyond the border of the circular ROI.",
+    "This results in line profiles from the center of the bead into the inter-bead space of the well, allowing us to quantify the signal intensities at the rim of the beads.",
+    "To prevent line profiles from protruding into adjacent beads, a combined ROI containing all beads is used.",
+    "Inspect the AI-generated results manually for undetected beads, incorrect line profiles, or false-assigned bead structures.",
+    "For each bead, a mean fluorescence and standard deviation are obtained based on the 20 line profiles per bead.",
+    "Either exclude or subject the beads with standard deviations equal to or greater than half the mean value to manual inspection for correction.",
+    "If needed, correct for inter-experiment variability in absolute values by dividing the mean values for each bead by the average bead intensity of the control condition, to obtain relative values.",
+    "These values are then plotted and subjected to statistical significance calculations."
+  ],
+  "authors": [
+    "Elias Adriaenssens"
+  ],
+  "creator": "Elias Adriaenssens",
+  "published_on": 1695480071,
+  "created_on": 1688715845,
+  "keywords": []
+}

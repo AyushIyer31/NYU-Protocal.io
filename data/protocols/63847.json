@@ -1,0 +1,39 @@
+{
+  "id": 63847,
+  "title": "ROTAROD PROTOCOL",
+  "uri": "rotarod-protocol-cakfsctn",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2lyn2ywvx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"de63d\",\"text\":\"This protocol details the rotarod test.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"5c39\",\"text\":\"Overview\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8},{\"style\":\"italic\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"eep08\",\"text\":\"Run groups of up to 5 animals, in a maximum of 4 groups in a single run of 4 trials (i.e. must have ~15-20 min between trials).\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6hqp1\",\"text\":\"Run 4 trials for every animal each day for 4 days.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dtiem\",\"text\":\"Detailed records should be kept on every experiment, noting date, timing, subject test order, procedural details followed and any relevant observations pertaining to the assay (e.g. specific behavior or procedural errors).\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":222}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"8enij\",\"text\":\"Materials\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7kl8e\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6jftv\",\"text\":\"Rotarod\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Plug in Rotarod, turn on power switch in back.",
+    "Press mode (F1).",
+    "Press Acceleration (F2).",
+    "Set Ramp Duration to 00:05:00 .",
+    "Press ESC.",
+    "Reverse → No.",
+    "Press Alt → Speed and set to a max. of 50 (default is 80).",
+    "Press Forward, and set to a min. speed of 5.",
+    "Press Reset for rotation (without acceleration).",
+    "Place animals of rotating rod by holding their tail (use a gentle sweeping motion to place animal).",
+    "Make sure paddles are up and the time is set at 0 for all animals.",
+    "Press Start. Trial is complete when animal falls onto paddle (press paddle down to stop time if animal does not) or when the animal completes two consecutive rotations (can let animal continue if they recover after one rotation within 6-10 steps). Record the maximum time and number of rotations for each animal. To see data from most recent trial hit ESC ( do not remove paddles before checking date when using this feature ),",
+    "Note : Before pressing reset, clean between each trial by spraying a paper towel with 70% ETOH and letting the rod rotate against it ( do not press down on the rod ). Remove the paddles and clean any animal droppings and urine.",
+    "Place paddles back on Rotarod.",
+    "Press Reset.",
+    "Place next group of animals on rod.",
+    "Flip paddles upward.",
+    "Press Start.",
+    "For each day, calculate the average time and average number of rotations over the 4 trials for each animal."
+  ],
+  "authors": [
+    "Michael Lee"
+  ],
+  "creator": "Jacquelyn Haytayan",
+  "published_on": 1702594396,
+  "created_on": 1654307452,
+  "keywords": []
+}

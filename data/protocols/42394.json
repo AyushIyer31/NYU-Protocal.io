@@ -1,0 +1,28 @@
+{
+  "id": 42394,
+  "title": "Scale-dependent Fractal Analysis (ver. 0.1)",
+  "uri": "scale-dependent-fractal-analysis-ver-0-1-bmm2k48e",
+  "doi": "dx.doi.org/10.17504/protocols.io.bmm2k48e",
+  "description": "{\"blocks\":[{\"key\":\"ee1ig\",\"text\":\"This protocol supports scale-dependent fractal analysis of input geometries by the divider method. Those geometries should be 2D lines (or more precisely, linestrings). For each such geometry, the protocol generates three plots: fractal dimension vs. representative scale, goodness of model fit vs. representative scale, and an example \\\"Richardson plot\\\" of measured length vs. rod length (for a single representative scale).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dv4a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"52lnn\",\"text\":\"This protocol is archived in association with the following preprint:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ckhjn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"b5d7e\",\"text\":\"Schaefer, E. I., Hamilton, C. W., and Neish C. D. (2020), \\\"Reexamining the potential to classify lava flows from the fractality of their margins\\\", Earth and Space Science Open Archive (https://www.essoar.org/).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":185,\"length\":23}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"1937BA7FFDE811EAB5320A58A9FEAC2A\",\"url\":\"https://www.essoar.org\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Create a Python 2.7 environment. In Anaconda, this can be done with the following command (in Anaconda Prompt): conda create --name py2 python=2.7",
+    "Install the packages listed below: numpy scipy matplotlib gdal Note: gdal can be somewhat challenging to install unless explicitly supported by a distribution. At time of writing, Anaconda does so support gdal. In Anaconda, you can use the following commands (in Anaconda Prompt, assuming your environemnt is named py2): activate py2 conda install numpy scipy matplotlib gdal conda install spyder Note: The spyder module is optional, but if installed, supports running the script ( Step 8 ) in the Spyder IDE. This IDE enables easy display of the ouputs, which are all plots.",
+    "Install a Python distribution, if necessary. It must support Python 2.7 and the packages listed in Step 3 . Anaconda is suggested.",
+    "Unzip the code package to a path of your choosing.",
+    "Download the code package: numgeo.zip",
+    "Open FractalScript.py in a Python editor, such as Spyder. This script is located at numgeo/scripts/fractal/FractalScript.py within the code package unzipped in Step 5 . Note that Spyder is distributed with Anaconda.",
+    "Optionally edit the user settings in FractalScript.py. These settings are at the start of the script and end at line 132. Each setting is described by comments within the script. The settings relate to the input data (e.g., shapefiles), the parameters of the fractal analysis (e.g., the number of iterations, the size of the shorest rod), and plotting options (e.g., which representative scale to use for the example Richardson plot). It is not necessary to edit any settings. In that case, the script will analyze an example geometry from the data included in the code package. Those data are the same as those analyzed in the associated preprint (see this protocol&#39;s Abstract).",
+    "Run FractalScript.py. 3 plots are outputted: a plot of effective fractal dimension vs. geometric mean rod length (i.e., one or more fractal scale-spectra) a plot of the coefficient of determination (a measure of goodness of fit) vs. geometric mean rod length an example &#34;Richardson plot&#34;, for a single geometric mean rod length, showing measured length vs. rod length Note that the geometric mean rod length is used as a representative scale, as explained in the associated preprint (see this protocol&#39;s Abstract). Some warnings and/or errors may print to the screen. However, if the plots are outputted, these warnings and/or errors can typically be ignored"
+  ],
+  "authors": [
+    "Ethan I Schaefer"
+  ],
+  "creator": "Ethan I Schaefer",
+  "published_on": 1600979044,
+  "created_on": 1600807293,
+  "keywords": []
+}

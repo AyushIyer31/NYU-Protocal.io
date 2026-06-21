@@ -1,0 +1,31 @@
+{
+  "id": 314600,
+  "title": "Seahorse assay for measuring oxygen consumption rate in iPSC-derived glutamatergic neurons",
+  "uri": "seahorse-assay-for-measuring-oxygen-consumption-ra-jxggcpjtx",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6jw1dvqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"7su3q\",\"text\":\"This protocol describes the measurement of oxygen consumption rate (OCR) in human iPSC-derived glutamatergic neurons (iGLUTs) using the Seahorse XFe24 Analyzer (Agilent). OCR values are normalized to total protein content from cell lysates to account for differences in cell number. The expected outcomes include quantification of basal respiration, ATP production, maximal respiration, and spare respiratory capacity.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"lprxs\",\"text\":\"- XF24 microplates (Agilent, 100777-004)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"gutli\",\"text\":\"- Seahorse XF DMEM (Agilent, 103575-100)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"46fns\",\"text\":\"- Seahorse XF 1.0 M glucose solution (Agilent, 103577-100)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fhw1z\",\"text\":\"- Seahorse XF 100 mM pyruvate solution (Agilent, 103578-100)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dwije\",\"text\":\"- Seahorse XFe24 Analyzer (Agilent)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"wdyu2\",\"text\":\"- Oligomycin A (Sigma-Aldrich, 75351)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qecto\",\"text\":\"- Carbonyl cyanide 4-(trifluoromethoxy) phenylhydrazone (Sigma-Aldrich, C2920)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"rurg9\",\"text\":\"- Rotenone (Sigma-Aldrich, R8875)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2yjxq\",\"text\":\"- Antimycin A (Sigma-Aldrich, A8674)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"zweln\",\"text\":\"- M-PER™ Mammalian Protein Extraction Reagent (ThermoFisher, 78501)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"is0ev\",\"text\":\"- cOmplete™ Mini Protease Inhibitor Cocktail (Sigma-Aldrich, 11836153001)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dqnwv\",\"text\":\"- PhosSTOP™ (Sigma-Aldrich, 4906845001)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vrwez\",\"text\":\"- Pierce™ Dilution-Free™ Rapid Gold BCA Protein Assay (ThermoFisher, A55860)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Seed 1.65x10^5^ Day 5 iPSC-derived glutamatergic neurons (iGLUTs) into each well of a XF24 microplate and continue differentiation until Day 21 for the mitochondrial stress test.",
+    "Prior to the assay, remove most of the culture medium, leaving only 50 µL per well, and add 1000 µL pre-warmed Seahorse XF DMEM supplemented with 25mM glucose and 0.23mM pyruvate.",
+    "Incubate the Seahorse plate at 37 °C in a non-CO2 incubator for 1 hour.",
+    "After the 1-hour incubation, replace the assay medium with 500 µL of fresh assay medium for the Seahorse assay.",
+    "Measure the plate using Seahorse XFe24 Analyzer with the standard Mito Stress Test program. The program includes three sequential injections of mitochondrial inhibitors: 1.5 µM oligomycin, 1.5 µM carbonyl cyanide 4-(trifluoromethoxy) phenylhydrazone, and a mixture of 0.5 µM rotenone and 0.5 µM antimycin A.",
+    "After recording the oxygen consumption rate, lyse the cells with 30 µL of M-PER™ Mammalian Protein Extraction Reagent containing cOmplete™ Mini Protease Inhibitor Cocktail and PhosSTOP™, according to the manufacturer’s instructions.",
+    "Measure total protein concentration using Pierce™ Dilution-Free™ Rapid Gold BCA Protein Assay.",
+    "Normalize oxygen consumption rates to total protein content."
+  ],
+  "authors": [
+    "Tzu-Chieh Huang",
+    "Marisa DeCicco",
+    "Hongying Shen",
+    "Kristen Brennand"
+  ],
+  "creator": "Kristen Brennand",
+  "published_on": 1775584836,
+  "created_on": 1775568537,
+  "keywords": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": 86180,
+  "title": "iNDI Papain Dissociation protocol for iNeurons Version 1",
+  "uri": "indi-papain-dissociation-protocol-for-ineurons-ver-cyecxtaw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx392dg8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"724n0\",\"text\":\"Proteolytic enzymes are widely used in cell dissociation and papain  has proved less damaging with some tissues and neuronal cultures and more effective than other proteases. Here we describe a papain dissociation protocol that has been used on our iPSC-derived neurons for scRNAseq and FACS assays redouts.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"jtsp\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"8tarc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7fp4a\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"bag4k\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fpokp\",\"text\":\"PBS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1it25\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cgjbe\",\"text\":\"PBS-EDTA 0.05mM\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bnpqh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6ja98\",\"text\":\"PBS-0.04% BSA (For scRNAseq cell preparation, if applicable)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6rp0a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c4k12\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":958097,\"guid\":\"4376778D341F11EE9D4302C0B41BC903\",\"name\":\"Papain Dissociation System\",\"mol_weight\":0,\"sku\":\"LK003153\",\"url\":\"https://www.worthington-biochem.com/products/papain-dissociation-system\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":52,\"name\":\"Worthington Biochemical Corporation\",\"link\":\"http://www.worthington-biochem.com/default.html\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":958098,\"guid\":\"437677DE341F11EE9D4302C0B41BC903\",\"name\":\"TrypLE™ Express Enzyme (1X) no phenol red\",\"mol_weight\":0,\"sku\":\"12604013\",\"url\":\"https://www.thermofisher.com/order/catalog/product/12604013?SID=srch-srp-12604013\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":95,\"name\":\"Thermo Fisher Scientific\",\"link\":\"https://www.thermofisher.com/us/en/home.html\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Equilibrate EBSS/phenol red with 95%O 2 :5%CO 2 in incubator for several hours of overnight.",
+    "Reconstitute the Ovomucoid mixture ( Papain inhibitor - PI ) by adding 32 mL of EBSS and allow contents to dissolve. This will yield solution at an effective concentration of 10mg of ovomucoid inhibitor and 10mg of albumin per mL. Reconstitute for the first use, then store 1 mL at 4 °C .",
+    "Papain solution: Add 10 mL of TrypLE™ Express Enzyme (1X), no phenol red to the vial and place it in 37 °C bath for 10 minutes, this vial has 10 units/ml. When working with i3Neurons (WTC11 line), dissolve the papain with 20 mL of TrypLE™ Express Enzyme (1X).",
+    "DNase I vial D2: Add 500ul of EBSS media and mix gently (2000 units/ml).",
+    "Trituration Medium: 30 mL of Neuronal Maturation medium (the same medium used for your differentiation) 30 µL of Rock inhibitor (1x) 1 vial of DNase I",
+    "Papain Inhibitor media: 9 mL of Trituration medium + 1 mL of papain inhibitor.",
+    "Aspirate culture medium and wash gently with PBS (calcium/magnesium free).",
+    "Aspirate PBS and wash 2 times with PBS-0.5mM EDTA",
+    "Aspirate PBS-EDTA and add to one well of 6 well plate 1 mL of Papain solution (10 units/ml) to cells, and incubate at 37 °C for 00:05:00 . Incubation time can vary and go up to 30 minutes and it depends on cell line, confluency and maturation day. Incubation times for i3Neurons (WTC11): Day 7: 3 minutes Day 10: 5 minutes Day 14: 10 minutes",
+    "Aspirate papain solution when the cell bodies have an halo morphology like for and EDTA split. If the incubation is longer (up to 30 minutes) the cells will detach into papain solution, then continue with the next step.",
+    "Add 1 mL of trituration medium per well of a 6-well plate to dissociate cells and pipette medium over the plate up and down to detach cells and dissociate them as single-cell suspension.",
+    "Collect cells into a sterile conical 15 mL tube and adjust volume to 5 mL with PBS or trituration medium.",
+    "Centrifuge cells 00:05:00 at 200 - 300 x g at Room temperature .",
+    "Remove supernatant and resuspend the cell pellet gently with 1 mL of Papain inhibitor medium to wash off the papain.",
+    "Centrifuge cells 00:05:00 at 200 - 300 x g at Room temperature",
+    "Aspirate supernatant and resuspend cell pellet in 1 mL of Neuronal Maturation Medium.",
+    "After resuspending the cell pellet, count cells and use as necessary. For scRNAseq 10X genomics assay resuspend in cold PBS-0.04%BSA. For FACS assay resuspend in cold PBS-0.5mM EDTA."
+  ],
+  "authors": [
+    "Erika Lara Flores",
+    "Joel Reyes",
+    "Mark Cookson",
+    "Michael Ward"
+  ],
+  "creator": "Erika Lara Flores",
+  "published_on": 1691519941,
+  "created_on": 1691519841,
+  "keywords": []
+}

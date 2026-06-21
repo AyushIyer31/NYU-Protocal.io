@@ -1,0 +1,30 @@
+{
+  "id": 5205,
+  "title": "Purification of HMW DNA from Fungi for long read sequencing",
+  "uri": "purification-of-hmw-dna-from-fungi-for-long-read-s-hbvb2n6",
+  "doi": "dx.doi.org/10.17504/protocols.io.hbvb2n6",
+  "description": "{\"blocks\":[{\"key\":\"bo7pg\",\"text\":\"Current long read sequencing, e. g. PacBio and Nanopore, requires high molecular weight (HMW) and highly pure DNA. Many fungal and plant species have high content of polysaccharides and other contaminants that are co-precipitated with DNA during ethanol precipitation. This protocol aims to purify HMW DNA from the DNA solution obtained using Benjamin Schwessinger's protocol (dx.doi.org/10.17504/protocols.io.ewtbfen).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4ahh1\",\"text\":\"The protocol was tested fuccessfully in wheat leaf rust, barley leaf rust, wheat stem rust and myrtle rust.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dcqnu\",\"text\":\"Critcal step to seperate HMW DNA from low molecular weight DNA and other contaminants during ethanol precipitation is to allow cotton-fiber-like HMW DNA to sediment by gravity, while other small molecule DNA and contaminants remain in the supernatant.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"aeghl\",\"text\":\"All steps need gentle pipetting, no vortex.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"5uv8d\",\"text\":\"Reagents required:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":18}],\"entityRanges\":[],\"data\":[]},{\"key\":\"44c6t\",\"text\":\"Pectinase (Sigma P2611)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"eua0f\",\"text\":\"RNAse A (QIAGEN 19101)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"831nb\",\"text\":\"Proteinase K (NEB P8172)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ednp\",\"text\":\"Buffered Phenol:Chlororform:Isoamylalcohol (25:24:1, Sigma P2069)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4ho0d\",\"text\":\"3 M Sodium Acetate pH 5.2\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"c5r3t\",\"text\":\"Isopropanol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5qgm4\",\"text\":\"70% ethanol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"brl2o\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "In 200 µl DNA solution, add 80 µl Pectinase and 1 µl RNAse A, mix by gentle pipetting, leave at 37 °C for 30min to 1 hr.",
+    "Add 2 µl Proteinase K, leave at 37 °C for 15 min.",
+    "Adjust volume to 500 µl with water (it can be done at step 1).",
+    "Add 500 µl Phenol/Chloroform/Isoamylalcohol (P/C/I), invert by hand for 100 times, spin at bench-top centrifuge13000g 10 min, transfer the aqueous phase to a new tube.",
+    "Repeat step 4 for two more times.",
+    "Transfer the aqueous phase to a new tube, labled as 1, measure the volume, usually it will be 400 μl. Add 1/10 volume 3 M Sodium Acetate (pH 5.2) and 1 volume of isopropanol, invert the tube untill see the formation of cotton-fiber-like DNA precipitates. When the cotton-fiber-like DNA sediments at the bottom of the tube (within a few seconds), Tip-off the supernatant to a new tube, labeled as 2. Add 1 ml of 70% ethanol to the tube 1 that has cotton-fiber-like DNA.",
+    "Centrifuge both tubes at 13000g 5 min. Wash the pellet in 1 ml 70% ethanol, spin at 13000g 5 min, remove the supernatant. Repeat this wash two more times.",
+    "After the last wash, spin additional time at 13000g 1 min, pipetting out the ethanol as much as possible, air dry the pellet for less then 5 min.",
+    "Dissolve the pellet of tube 1 in a proper buffer (either TE pH8.0 or 10 mM Tris pH8.0), 200 μl or less (if you want high concentration of DNA), leave it at room temperature for 2 to 3 hr for dissolving, or at 4 °C overnight. Dissolve the pellet of tube 2 in the same buffer but less volume, 50-100 μl.",
+    "Measure the DNA concentration using Qubit and Nanodrop, and check the DNA integrity by running a 0.8% agarose gel with a lambda HindIII ladder as control. The Qubit to Nanodrop ratio for DNA in tube 1 should be &gt;0.5; while DNA in tube 2 should be much lower (&lt;0.05). The gel will review that DNA of tube 1 has high molecular weight; DNA of tube 2 contains smaller molecules."
+  ],
+  "authors": [
+    "Chongmei Dong"
+  ],
+  "creator": "Chongmei Dong",
+  "published_on": 1489210391,
+  "created_on": 1489111756,
+  "keywords": []
+}

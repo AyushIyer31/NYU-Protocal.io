@@ -1,0 +1,31 @@
+{
+  "id": 38296,
+  "title": "Lentiviral_vector_production_with_PEI",
+  "uri": "lentiviral-vector-production-with-pei-bhmyj47w",
+  "doi": "",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"bM0pK\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"r5mkR\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"ebbro\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":480595,\"guid\":\"42586831341F11EE9D4302C0B41BC903\",\"name\":\"PEI MAX - Transfection Grade Linear Polyethylenimine Hydrochloride (MW 40000)\",\"mol_weight\":0,\"sku\":\"NC1038561\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":31,\"name\":\"Fisher Scientific\",\"link\":\"https://www.fishersci.com/us/en/home.html\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "This protocol will require transfecting HEK 293T cells. Make sure you have some 293T cells thawed and growing for at least a couple of days before doing this protocol. Furthermore, prepare stocks of PEI and Diluent if you have not done so already.",
+    "Prepare the mixture in a sterile microcentrifuge tube.",
+    "PEI solution: 1 µg/µL, PEI in H2O. I have used &#34;Polysciences, Inc.Supplier Diversity Partner PEI MAX - Transfection Grade Linear Polyethylenimine Hydrochloride (MW 40,000)&#34; Dissolve PEI in endotoxin-free dH2O that has been heated to approximately 80 °C . Let cool to room temperature. Adjust pH until it reaches pH 7 , filter sterilize (0.22 uM filter), aliquot, and store at -20 °C . A working stock can be kept at 4 °C .",
+    "Diluent solution: 10 millimolar (mM), HEPES , 150 millimolar (mM), NaCl pH 7.05 For 500 mL : Get 445 mL distilled water Add 5 mL, HEPES Add 15 mL 5 Molarity (M), NaCl Filter sterilize (0.22 uM) filter. Surround in foil to protect from light. Store at room temperature.",
+    "If transfecting a 10cm plate (eg. when trying to make larger stocks of lentiviral vectors): Aim for a total volume of Diluent + DNA of 500 µL Add 10.5 µg, total DNA . When using VSV-G, I do a 5:5:1 ratio packaging plasmid, transfer vector, and pMD-VSVG. Add 42 µL, PEI to the diluted DNA mixture. Immediately pipet up and down and / or vortex. Incubate between 00:10:00, (minutes) and 00:15:00, (minutes). Don&#39;t go over 00:20:00, (minutes) . Trypsinize, count, and plate 10 million cells per 10cm plate, in a total volume of 10 mL . After the incubation is over, add the DNA + PEI mixture dropwise to the cells, and return to the incubator.",
+    "The next day (between 12 and 24 hours), replace with fresh media. To increase lentivector concentration of the supernatants, use 6 mL for 10cm plates and 1.5 mL for 6-wells.",
+    "If transfecting an individual 6-well (eg. when trying to test out some lentiviral vectors): Aim for a total volume of Diluent + DNA of 80 µL Add 1.8 µg, total DNA . When using VSV-G, I do a 5:5:1 ratio packaging plasmid, transfer vector, and pMD-VSVG. Add 7 µL, PEI to the diluted DNA mixture. Immediately pipet up and down and / or vortex. Incubate between 00:10:00, (minutes) and 00:15:00, (minutes). Don&#39;t go over 00:20:00, (minutes) . Trypsinize, count, and plate 1.5 million cells per 6-well, in a total volume of 2 mL . After the incubation is over, add the DNA + PEI mixture dropwise to the cells, and return to the incubator.",
+    "Collect media over the next four days and store pooled supernatant at 4 °C . If using a viral envelope protein that is able to enter HEK 293T cells (eg. VSV-G or Ebola virus GP), it may be wise to collect multiple times in one day (Once when entering the lab, and one when going home), as the viral particles will be able to re-enter the producer cells essentially becoming a dead-end product. This may not be as important for viral envelopes with receptors that are not normally expressed in 293T cells (eg. SARS CoV), although its possible that virus stored at 4 °C will still be more stable than virus left at 37 °C .",
+    "The supernatants may still have detached 293T cells floating which may &#34;contaminate&#34; downstream cultures.",
+    "Centrifuge the supernatant at greater than 300 x g, 4 °C, 3 minutes . Filter the supernatant through a 0.45um filter. Aliquot and store the lentivector supernatant at -80 °C ."
+  ],
+  "authors": [
+    "Kenneth Matreyek",
+    "Anna Bruchez"
+  ],
+  "creator": "Kenneth Matreyek",
+  "published_on": 1595539546,
+  "created_on": 1592433863,
+  "keywords": []
+}

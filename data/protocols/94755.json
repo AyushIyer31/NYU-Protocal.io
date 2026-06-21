@@ -1,0 +1,35 @@
+{
+  "id": 94755,
+  "title": "Real-time PCR bacterial DNA detection",
+  "uri": "real-time-pcr-bacterial-dna-detection-c8sbzwan",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g7ped8gwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"91vjv\",\"text\":\"The identification of bacterial species through molecular techniques is faster and more accurate than phenotypic identification. Analysis of the 16S rRNA gene can potentially be applied to identify a large number of bacteria. The use of universal primers designed for the sequence of the 16S rRNA gene, a conserved region among Eubacteria, allows for an initial approach to their identification by amplifying this region and subsequently sequencing the amplified fragment. Most of the time, identification is possible at the species level; however, in some cases, identification is only done at the genus level, thus requiring the use of specific primers for a more comprehensive identification. The primers used in this assay amplify all genera of Eubacteria, except for the genera Rickettsia, Coxiella, and Mycoplasma, as well as genera belonging to the Phyla Spirochaetes and Chlamydiae.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":783,\"length\":10},{\"style\":\"italic\",\"offset\":795,\"length\":8},{\"style\":\"italic\",\"offset\":809,\"length\":10},{\"style\":\"italic\",\"offset\":862,\"length\":13},{\"style\":\"italic\",\"offset\":879,\"length\":10}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"5ig22\",\"text\":\"LABWARE:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"76vuk\",\"text\":\"Eppendorf-type microtubes\\nGlass capillaries for LightCycler 20ul\\nTube racks\\nCalibrated micropipettes (P10 or P20, P200, and P1000)\\nSterile micropipette tips with filters\\nCold block for capillaries\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b2th2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cj8ue\",\"text\":\"REAGENTS:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1tao5\",\"text\":\"Primer 16s F (5' AGA GTT TGA TCM TGG CTC AG 3') (20 uM)\\nPrimer 16s R (5' GTA AGG TTC TKC GCG TTGC 3') (20 uM) (amplify a 972 bp fragment)\\nMgCl2 (25 mM stock solution)\\nLC Fast Start DNA Master SYBR Green (Roche Diagnostics)\\nUltra-pure distilled water free of DNAses and RNAses\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aafka\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8jmsl\",\"text\":\"EQUIPMENT:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"it8\",\"text\":\"Real-time Roche LightCycler thermocycler\\nWorkstation or Class II laminar flow cabinet with Microcentrifuge and UV lamp\\nNucleotide-nucleotide BLAST database - National Centre for Biotechnology Information\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Rehydrate the primers with ultra-pure water free of DNAses and RNAses to obtain a concentration of 100uM. Make a 1/5 dilution to achieve a working concentration of 20uM. Prepare aliquots according to the working volume and freeze at -20°C.",
+    "The kit is stored at -15°C to -25°C and is stable until the expiration date. After preparation, store it at +2°C to +8°C (stable for up to one week).",
+    "The MgCl2 supplied in the LC Fast Start DNA Master SYBR Green Kit is ready to use and should be stored frozen at -20°C. Upon first use, thaw it, prepare aliquots according to the working volume, and store at -20°C.",
+    "The reaction mixture is prepared in a microtube, considering the number of samples to be studied, inhibition controls, positive control, and negative control, based on the following formulation for each reaction: %s %s",
+    "Place in the adapters of the cold block a number of capillaries equal to twice the number of samples (1 capillary per sample and 1 capillary per inhibition control), plus two (one capillary for the negative control and one capillary for the positive control).",
+    "The reaction mixture is prepared in the cleanroom. For each reaction, add 15 ul of the mixture to the top of each 20 ul glass capillary for LightCycler.",
+    "In the negative control, place 5 ul of sterile distilled water free of DNAses and RNAses in the capillary.",
+    "The extracted DNAs are manipulated in the workstation or Class II laminar flow cabinet with a UV lamp. Place 5 ul of each extracted sample into their respective capillaries, taking care not to produce aerosols or pass over the remaining capillaries.",
+    "In the inhibition control, place 4 ul of the sample extract and 1 ul of a known extract.",
+    "The positive control is obtained by adding 5 ul of a known extract to the 15 ul of the mixture.",
+    "Cover the capillaries with their respective caps.",
+    "Place the adapters in the microcentrifuge (maintaining the order) and centrifuge briefly to ensure that the liquid has descended from the top to the interior of the capillary.",
+    "Place the capillaries in the holes of the LightCycler support strictly vertically. The tubes will fall by gravity or, if necessary, gently rotate them. Finally, give a small tap on the top of the capillaries for a complete adjustment.",
+    "Place the tubes in the LightCycler and use the following program: %s %s",
+    "At the end of the program, analyze the amplification curves and the melting curve, expecting the melting temperature of positive samples to be around 89-90°C."
+  ],
+  "authors": [
+    "Rita Macedo"
+  ],
+  "creator": "Pedro Fonseca",
+  "published_on": 1707235295,
+  "created_on": 1707216530,
+  "keywords": []
+}

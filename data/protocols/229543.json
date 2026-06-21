@@ -1,0 +1,26 @@
+{
+  "id": 229543,
+  "title": "N. gonorrhoeae LIN code methodology scripts",
+  "uri": "n-gonorrhoeae-lin-code-methodology-scripts-hcefb2tbp",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l21beqg1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"egju4\",\"text\":\"Research article: https://doi.org/10.7554/eLife.107758.1\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":18,\"length\":38}],\"data\":{}},{\"key\":\"55ob4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9efi2\",\"text\":\"Brief scripts used to run programs referred to in the methodology of the article are described below. Most computationally intensive processes were run through the Oxford University Biomedical Research Computing (BMRC) computing cluster, which uses a linux shell. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"636F1021A64311F091000A58A9FEAC02\",\"url\":\"https://doi.org/10.7554/eLife.107758.1\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "A representative dataset of isolates was first collated from PubMLST. These genomes were exported in gff format, and then re-annotated using prokka https://github.com/tseemann/prokka : for f in $(cat /representative_genomes_filenames.txt); do prokka --outdir ./${f} --cpus 48 --compliant --force --prefix ${f} /output/$f; done",
+    "The output annotated gff format files were input into PIRATE, to characterize the core genome https://github.com/SionBayliss/PIRATE : module load PIRATE/1.0.5 PIRATE -i /prokka_gffs -o /pirate -a -r -t 24",
+    "“Pirate gene families ordered.tsv” was the main output file used this analysis, as it describes each locus across the dataset analysed. The column headed &#34;gene_family&#34; lists each locus. The &#34;number_genomes&#34; column details how many genomes each locus was present in, which was used to calculate the percentage presence. Paralogs were excluded by selecting loci for which the &#34;genomes_containing_duplication&#34; column was 0. Once a preliminary core gene list was defined from this output, the prokka/PIRATE gene names were associated with their corresponding PubMLST gene numbers by cross-checking their start/end positions between the prokka gffs and PubMLST exported gffs. This cross-checking was done using VLOOKUP in Excel.",
+    "FastTree was used to construct approximate maximum-likelihood trees via the galaxy platform https://usegalaxy.eu/root?tool_id=fasttree . For true maximum likelihood trees, RAxML https://github.com/stamatak/standard-RAxML was used as follows: module load RAxML/8.2.12-gompi-2021b-hybrid-avx2 raxmlHPC -m GTRGAMMA -p 619283 -T 48 -N 2 -s 1000alignment.fasta -n 1000tree.nwk ClonalFrameML https://github.com/xavierdidelot/ClonalFrameML was then applied to correct these trees for the effect of recombination: ClonalFrameML 1000tree.nwk 1000alignment.fasta output_prefix",
+    "The Rand index was calculated in R using the package fossil 10.32614/CRAN.package.fossil : #Data should take the form of columns showing correlation between clustering metrics e.g.#column 1: isolate ID | column 2: metric #1 | column 3: metric 2 #convert to vectors vector1&lt;- as.vector(unlist(data$metric_1)) vector2&lt;- as.vector(unlist(data$metric_2)) library(fossil) rand.index(vector1, vector2) adj.rand.index(vector1, vector2) The Silhouette score was calculated using MSTclust, which was run as a java executable in a Linux environment https://gitlab.pasteur.fr/GIPhy/MSTclust : #MSTclust takes a tab separated file of allelic profiles across a set ofloci, and will calculate silhouette index for a give cutoff value (-c) java -jar MSTclust.jar -i unique_profiles.tsv -o unique_profilesOUT_01 -l 1 -p 2- -c 0.01",
+    "LIN code thresholds were tested using a local installation of LIN code, which takes a table of allelic profiles as the input file https://gitlab.pasteur.fr/BEBP/LINcoding : #syntax: # -i refers to a tab separated values file # -t column numbers for the selected identifiers e.g. 1-2, or 1, 5. # -l column numbers for chosen alleles e.g. 3- meaning 3 to all others # -b set of thresholds - percentage of alleles matching. Threshold 100 is obligatory. python LINcoding.py -i LINdataset.txt -t 1-2 -l 3- -b 06,0.12,0.25,0.43,0.62,9.27,24.7,40.15,46.32,54.35,57.44,64.9,100"
+  ],
+  "authors": [
+    "Anastasia Unitt"
+  ],
+  "creator": "Anastasia Unitt",
+  "published_on": 1760348221,
+  "created_on": 1760128342,
+  "keywords": []
+}

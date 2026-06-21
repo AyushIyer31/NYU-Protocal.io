@@ -1,0 +1,34 @@
+{
+  "id": 6891,
+  "title": "Joint time delay and Doppler passive acoustic 3D tracking of bats.",
+  "uri": "joint-time-delay-and-doppler-passive-acoustic-3d-t-iyjcfun",
+  "doi": "dx.doi.org/10.17504/protocols.io.iyjcfun",
+  "description": "{\"blocks\":[{\"key\":\"3i4sm\",\"text\":\"The method described here is from the PLoS ONE paper entitled \\\"Joint time delay and Doppler passive acoustic 3D tracking, applied to studies of bats in natural habitats\\\".\\nThis method detects acoustic events (possible bat calls) and filters them according to their \\nconsistency with each other as well as with extracted kinematics of the bat. This allows to filter out false detections, related to echoes and noise, improves the reconstruction of bats trajectories and allows to study bats behavior.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"c5jpr\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"1ui6\",\"text\":\"This method (with another parameters) can be also potentially applied to the extraction of the trajectory of any fast moving objects, in particular, sound-emitting machinery, such as trajectories of cars before and after accident, and many others.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"e1ddu\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"cepbr\",\"text\":\"This protocol (together with bat-related parameters, such as frequency ranges, intervals between calls, etc) is designed to reproduce the method of Joint time delay and Doppler passive acoustic 3D tracking in a case of tracking bats by an array of 4 ultrasonic microphones.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"8lcm9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"aut6j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"1fpef\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Take 4 Ultrasonic microphones, model SPM0204UD5, manufactured by Knowles acoustics, or any other microphones, able to record the ultrasound in a range, typical for bat species planned to record. Without knowledge of recorded bats, microphones with peak sensitivity between 30 kHz to 60 kHz can be used.",
+    "Construct the antenna able to hold 4 microphones in a pyramidal (regular tetrahedron) configuration with a side 1-2m and attach microphones to their places, oriented towards expected bat location. For SPM0204UD5 microphones, 1.2m antenna was used.",
+    "Install antenna in places where the bat recording is planned, connect microphones to computer and record the &#34;all-record&#34; during time necessary to record the planned number of bats. Note the time of some typical bat appearence.",
+    "Locate the the typical bat recording in the &#34;all-record&#34; and use it to estimate typical noise and typical bat-call signal levels, using Matlab, Audacity or other sound processing software.",
+    "Use Matlab or other script to automatically process the &#34;all-record&#34; and extract short (2-4sec) parts (detected &#34;recordings&#34;) where signal exceeds the average between typical noise and typical signal level. To perform the extraction, the &#34;all-record&#34; should be filtered to leave only frequencies near the peak intensity of bats which are planned to record. If many bats will be recorded, frequencies above 30 kHz can be used to filter out low-frequency noise (insects, cars, etc).",
+    "Depending on antenna size and average interval between bat call, split each detected recording into time-segments dt, containing on average, signal S(t) with 2 to 3 bat calls. If the time-lag between 2 subsequent calls is unknown, assuming time-lag between 60ms and 100ms is possible. Calculate maximum possible TDOA (TDOAmax = antenna size by sound speed). For antenna size 1.2m, TDOAmax is less than 5ms, so that the time-segment length of 185ms will contain 2-3 bat calls on average.",
+    "Calculate amplitude spectral density ASD(t) and spectrogram SG(t) for each time-segment.",
+    "Calculate cross-correlation of S(t), ASD(t) and SG(t) between all pairs of microphones (i,j): xcorr(t)(Si,Sj), xcorr(t)(ASDi,ASDj), xcorr(t)(SGi,SGj)",
+    "Calculate M highest cross-correlation maximums (for recordings with one echo, M=6 proved to work, for recordings in more cluttered or noisy environments M&gt;6 can be tested). Use all M arguments of cross-correlation maximums as the TFDOA(t)-set for the system (5) from the PLoS-ONE paper describing this method. These arguments of maximums of xcorr(t)(Si,Sj), xcorr(t)(ASDi,ASDj), xcorr(t)(SGi,SGj) will be used as, correspondingly, TDOA1j(t), FDOA2j(t) and TDOA3j(t), FDOA3j(t) in the system (5) from the PLoS-ONE paper. The aim is to filter the TFDOA(t)-set to leave a single most consistent TFDOA for each time t (TFDOA(t))",
+    "For each t, among all cross-correlation maximums of TFDOA(t)-set, choose the &#34;most consistent&#34; TFDOA(t), satisfying equations (5) from the PLoS paper the with the smallest residue. The system (5) will be made available when the paper is published in PLoS-ONE.",
+    "Note that the 3rd equation of system (5) (shown separately in equation (6) from the PLoS-ONE paper) connects TFDOA(t) with TFDOA(t+dt) and/or TFDOA(t-dt). Therefore, if for some time-segments t, there is not enough data (not enough cross-correlation maximums, rising above the noise level), use system (5) to reconstruct TFDOA(t) from TFDOA(t+dt) and/or TFDOA(t-dt). Calculate the confidence of such reconstruction using procedure described in subsection &#34;The confidence of reconstruction of missing TDOAs&#34; from the PLoS-ONE paper. The confidence of reconstruction can be used, if necessary, to compare confidences of different reconstructed trajectories.",
+    "Repeat the previous step until, for all t, there is not enough TFDOA(t+dt) and TFDOA(t-dt) to reconstruct TFDOAs(t) using system (5). As a result, the consistent TFDOA is calculated for each time step t.",
+    "Use the calculated TFDOA(t) to calculate bat locations x(t) using optimization methods, such as Levenberg-Marquardt, implemented in Matlab nonlinear least-squares solver"
+  ],
+  "authors": [
+    "Ales Mishchenko",
+    "Herve Glotin"
+  ],
+  "creator": "Ales Mishchenko",
+  "published_on": 1500169225,
+  "created_on": 1500071372,
+  "keywords": []
+}

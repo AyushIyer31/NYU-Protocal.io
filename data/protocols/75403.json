@@ -1,0 +1,29 @@
+{
+  "id": 75403,
+  "title": "Manual de configuración Audiomoth 1.2.0 - Guía de 8+1 pasos",
+  "uri": "manual-de-configuraci-n-audiomoth-1-2-0-gu-a-de-8-cmvju64n",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn2wdqg5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"8dj4p\",\"text\":\"Esta pequeña guía está dedicada a toda persona o institución interesada en incorporar las evaluaciones acústicas pasivas de murciélagos u otro grupo de fauna silvestre (e incluso evaluación de paisaje sonoro) empleando dispositivos Audiomoth en sus planes de trabajo en instrumentos de gestión ambiental. En este manual, se simplifica en un pequeño número de pasos el procedimiento para configurar dispositivos Audiomoths los cuales pueden ser adaptados según las necesidades y objetivos de sus proyectos.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Paso 2 Colocar las tres (3) pilas AA en la parte posterior del Audiomoth 1.2.0.",
+    "Paso 1 Preparar todo el equipamiento necesario para la preparación y configuración considerando los siguientes elementos: 1. Laptop 2. Audiomoth Time App Instalada* 3. Audiomoth Configuration App Instalada* 4. Cable de extremos USB – MicroUSB 5. Tarjeta de memoria microSD (+ adaptador) Clase 10 6. 3 pilas AA 7. Audiomoth 1.2.0 8. Funda o carcasa protectora *: Descarga desde: https://www.openacousticdevices.info/applications",
+    "Paso 3 Colocar la tarjeta de memoria microSD en la ranura asignada del Audiomoth 1.2.0.",
+    "Paso 4 Conectar el Audiomoth 1.2.0 a la Laptop con el cable USB – microUSB (a). Verificar que al momento de la conexión el equipo emita una luz LED verde constante (b) al mismo tiempo que se encuentre el modo USB/OFF (c). De no prender la luz verde con las consideraciones anteriores, reemplazar el cable USB.",
+    "Paso 5 Abrir la aplicación Audiomoth Time App con el dispositivo conectado. Verificar que la ventana muestre la fecha desconfigurada (por lo general 01/01/1970) y los datos de identificación (Device ID), soporte (Firmware) y nivel de batería propio de cada dispositivo. Para configurar la hora y fecha actual, dar click en el botón verde ‘’Set Time’’ (a) y verificar su modificación al tiempo universal actual (b). Finalmente, cerrar la ventana de la aplicación.",
+    "Paso 6 Abrir la aplicación Audiomoth Configuration App con el dispositivo conectado y verificar las características del dispositivo revisadas en el paso anterior. Reconocer las pestañas del panel inferior ‘’Recording Settings’’, ‘’Schedule’’ y ‘’Advanced Settings’’ para la versión 1.5 (versiones recientes incluyen la pestaña ‘’Filtering’’). Proceder con la siguiente secuencia: 1. En la pestaña superior ‘‘File’’, activar la opción ‘’Local Time’’ para asignar la hora local (UTC-5). En las opciones de la pestaña inferior ‘‘Recording Settings’’: 2 . Asignar la tasa de muestreo ‘‘Sampling rate’’ según el objetivo de la evaluación. (384 kHz para registrar murciélagos) 3. Establecer el nivel de ganancia ‘‘Gain’’. (Medium para registrar murciélagos sin saturar las grabaciones) 4. Colocar la duración de grabación de cada archivo generado ‘‘Recording duration’’ y un intervalo de inactividad entre grabaciones ‘’Sleep duration’’. (60s de grabación / 240s de inactividad para evaluación de murciélagos) 5. Activar o desactivar la luz LED. Se recomienda desactivar para reducir el consumo de batería y evitar llamar la atención de transeúntes. Entre las opciones de la pestaña inferior ‘‘Schedule’’: 6. Asignar horario de inicio y final de activaciones de grabaciones y presionar el botón azul ‘‘Add recording period’’. Al hacerlo se actualizará el mensaje de la parte inferior indicando el número de archivos generados, memoria y batería consumida por noche. (18:00 hrs a 06:00 hrs para murciélagos) 7. Finalizar dando click en el botón verde ‘‘Configure Audiomoth’’ y desconectar el equipo.",
+    "Paso 7 Desplazar el switch al modo CUSTOM. El dispositivo está listo para su funcionamiento y empezará a funcionar durante el horario establecido en la configuración.",
+    "Paso 8 Finalmente, previo a la instalación, colocar el Audiomoth cuidadosamente dentro de una funda protectora o carcasa evitando que las pilas se salgan del dispositivo (a). En caso las pilas se muevan, ocurrirá la desconfiguración de la hora y fecha, donde dos luces en simultáneo (rojo y verde) parpadearán en modo CUSTOM (b). De ocurrir lo último, se procederá a reestablecer la fecha en el paso 9.",
+    "Paso 9 En caso las pilas se salgan o agoten luego de haber realizado la configuración correspondiente, se puede reestablecer la hora sin necesidad de volver a conectar el detector a una computadora. Para ello, se debe descargar la aplicación A udiomoth desde Google Play Store en un celular (a). Después de descargarlo, la pantalla de la aplicación mostrará la hora local y tendrá habilitado el botón ‘‘Play Chime’’, el cual se deberá presionar teniendo el celular con volumen alto cerca al micrófono del Audiomoth en modo CUSTOM. Luego de la reproducción del sonido, la fecha y hora local del dispositivo serán reestablecidas y en caso haber configurado con luces LED actividas, se podrá corroborar con la luz verde individual durante periodos de inactividad (b) o luz roja para periodos de grabación (c)."
+  ],
+  "authors": [
+    "Jaime Pacheco"
+  ],
+  "creator": "Jaime Pacheco",
+  "published_on": 1673986928,
+  "created_on": 1673967502,
+  "keywords": []
+}

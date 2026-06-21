@@ -1,0 +1,41 @@
+{
+  "id": 92734,
+  "title": "Counting Cells Using Cellaca MX using AO/PI",
+  "uri": "counting-cells-using-cellaca-mx-using-ao-pi-c6s6zehe",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6xz85lqe/v2",
+  "description": "{\"blocks\":[{\"key\":\"3elfv\",\"text\":\"The purpose of this protocol is provide instructions on how to operate the Cellaca MX cell counter for single cell suspensions and determine viability using AO/PI Staining Solution. You can simultaneously assay up to 24 samples.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"damov\",\"text\":\"Plates for High Speed Cell Counter (Nexcelom CHM24-A100)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4dm1d\",\"text\":\"AO/PI Staining Solution (Nexcelom CS2-0106)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"86bo6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "On the Desktop, double-click the Matrix icon to launch the software. The instrument will run through a startup sequence that includes connecting to the database and initializing all the calibrations.",
+    "Obtain a Nexcelom Counting Plate (12x2 orientation). See image below to determine the loading wells (rows C &amp; G) and mixing wells (rows D &amp; H). Ensure notch is on the upper left side.",
+    "If using a new plate, place a clear sealing film for pcr plates over the entire plate and excise the portion of film that will be used. If using a previously used plate, just excise the portion of film that will be used and leave used wells uncovered.",
+    "Add 25 µL of AO/PI staining solution to the mixing wells (Rows D or H).",
+    "Once well selection is complete, you can expand the Well Names area below the map to see the corresponding well name fields also highlighted in blue. These fields allow you to enter well names or import them from a file to identify samples loaded into each well. To manually enter well names, simply click on each highlighted field individually and type in a name for that well. The Import button allows users to import a previously saved .csv file containing well names. Click the button, navigate to where .csv file is stored, select the file and click Open to load well names. For time course series, the samples names must be identical for each run (using the save csv file will ensure this happens)",
+    "In the Acquire tab &gt; Setup screen displayed upon launch of the software, enter a plate name. If a plate name is not entered, a date/time stamp will be appended to the “New Sample”. Please update the default name to something more meaningful and include your initials (i.e PBMCs_KS_08092023)",
+    "Select an assay from the drop-down and confirm the assay description displayed. Note: It is vital to select an accurate assay because the settings vary for different cell types. The default assays are locked, if you wish to change the settings, you must save it as a new assay by clicking Save As. You can insert a tag to create a time course series for use in custom reporting (i.e cell culture) Only change the dilution factor if necessary",
+    "In the Well Selection area you are required to select the loaded wells in the Well Map. To select individual wells, click to select or de-select accordingly. To select a block of wells, click on a well at the beginning of block and hold button down while dragging mouse to the end of block before releasing button. To select or de-select all wells, click the All Wells icon. Wells are initially highlighted in yellow during selection (e.g., while hovering over or dragging to select a block) and then turn orange when well selection is complete.",
+    "Expand the Reports and Exports area to specify a Location for automatic exports of images/data and generated output files for reports. Click the Browse button and navigate to a folder on your Operating Computer or network to define the default export path. This path will remain as the default in the software until it is manually changed.",
+    "Add 25 µL of cells in suspension directly to mixing wells containing AO/PI. Ensure cell suspensions are properly homogenized by inverting tube or pipetting gently up and down prior to adding to mixing wells.",
+    "Using a multichannel pipette set to 45µl, gently mix stained cell solution by pipetting up and down 10 times.",
+    "Load 50 µL of stained cell solution into designated Loading wells (Rows C or G).",
+    "Click the Eject button in the Header Bar and load plate onto stage taking care to align notched corner of plate with top left corner of stage (i.e., well A1 is positioned in top left corner).",
+    "Click the Load button now available in the Header Bar to retract stage into instrument.",
+    "Confirm setup details and click the Preview button located at the bottom of the Setup screen. The instrument engages its camera for viewing samples and displays the Preview screen. Users can view live images of samples in selected wells, preview available channels for Imaging Mode associated with the assay, adjust instrument focus and confirm fluorescent exposure for each channel.",
+    "Click the Count button at the bottom of the Preview screen. The instrument camera acquires sample images as specified by the selected assay which are then used by the Matrix Software to calculate count results according to defined cell type parameters.",
+    "At the start of count processing, the Navigation Bar status is updated to display the Data tab &gt; Results option.",
+    "As soon as a well is Counted (color changes to purple), you can click on it to display count results below the viewing pane. Count results will be displayed, printed and exported based on report templates defined for the assay.",
+    "Well images displayed can be varied by toggling on/off available channel buttons (displayed across the top of the viewing area of the Well View tab) and enhancing the Zoom magnification (up to 10X).",
+    "To zoom in and out of sample images, move the mouse to hover cursor over the viewing pane and turn the scroll wheel. Current Zoom magnification is displayed in bottom right corner of viewing pane.",
+    "When counting of all wells is complete the scan result will be added to the top of the Results List displayed on the Select screen. In addition, Reports and Exports output files defined for the current assay are automatically stored in the specified location."
+  ],
+  "authors": [
+    "Ksenija Sabic"
+  ],
+  "creator": "Ksenija Sabic",
+  "published_on": 1704394275,
+  "created_on": 1703610467,
+  "keywords": []
+}

@@ -1,0 +1,38 @@
+{
+  "id": 42940,
+  "title": "Creating sci-Space Grids for Spatial Barcoding",
+  "uri": "creating-sci-space-grids-for-spatial-barcoding-bm64k9gw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bm64k9gw",
+  "description": "{\"blocks\":[{\"key\":\"7sf47\",\"text\":\"Sci-Space is a technology for transferring spatially arrayed oligonucleotides onto tissue sections prior to single cell sequencing. The spatially arrayed oligonucleotides are arrayed on thin bed of dried agarose adhered to a glass slide. This protocol describes how to create an agarose backed microscope slide and print oligonucleotides onto these slides.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"pLfwO\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "To prepare nuclease-free agarose, 3% w/v SeaPlaque Agarose Lonza Catalog #50101 (SeaPlaque, Lonza, Bend, OR) was added to deionized water containing 0.1% v/v Diethyl pyrocarbonate Merck MilliporeSigma (Sigma-Aldrich) Catalog #D5758 , incubated 2 hr at room temperature, and autoclaved at 15 psi on liquid cycle for at least 15 min to inactivate the remaining diethyl pyrocarbonate.",
+    "The uniform thickness of the layer of agarose across the slide ( Superfrost&trade; Plus and ColorFrost&trade; Plus Microscope Slides, Superfrost Plus, White Thermo Fisher Catalog #4951PLUS4 ) was patterned using spacers of two stacked 22 x 22 mm, number one thickness (0.15 ± 0.02 mm each) coverslips overhanging either end of the slide.",
+    "Molding of the agarose was performed by pipetting a 300 uL volume of heated agarose solution into the center of the slide and slowly placing a second slide onto the agarose solution avoiding the formation of bubbles. The molding slide was allowed to rest on the cover glass spacers.",
+    "After the agarose had gelled between the two slides (~30-60 min on ice) a razor blade was used to release the exposed edges of the agarose layer from the top, molding slide.",
+    "The two slides were then carefully slid apart and the cover glass spacers were removed. The resulting thin layer of agarose gel was dried onto the bottom slide overnight in a biosafety cabinet.",
+    "All agarose slides were UV-treated for 20-30 min prior to spotting to further protect against nuclease activity.",
+    "Hashing oligonucleotides (oligos) used as spot or sector oligos were designed with the following sequence structure: 5’-GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG-[10bp-barcode sequence]-BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA-3’ (where B is C,G, or T)",
+    "Each well of a series of 18 full 384 well plates and 144 wells of another 384 well plate received a total volume of 20 µL with a final concentration of 15 micromolar (µM) spot oligo and 2.5 micromolar (µM) sector oligo per well (Integrated DNA Technologies, Coralville, IA), and Glycerol Merck MilliporeSigma (Sigma-Aldrich) Catalog #G789-3 0.5 % (v/v) , with or without SYBR Green SYBR&trade; Green I Nucleic Acid Gel Stain, 10,000X concentrate in DMSO Thermo Fisher Catalog #S7585 (final concentration of 5X).",
+    "To achieve a predetermined spotted oligo array layout, each well of the 384-well plates received a specified combination of spot oligo, array oligo, and +/- SYBR green taking into account the pattern in which the spotting pins covered the positions of the grid array and the order in which the plates were spotted from.",
+    "A QArray2 microarray scanner (Genetix, New Milton, Hampshire, GB) was set up with 16 spotting pins arrayed in a 4x4 layout and the slide bed was filled with cast and dried agarose slides with a subset designated for blotting the pins prior to spotting the arrayed transfer slides.",
+    "The spotting height was adjusted to ensure consistent contact of the spotting pins with the transfer slides’ agarose coating.",
+    "The spotting layout was set to 21x21 spots/pin for the 16 pins giving 16 adjacent sectors (4x4) comprised of 441 unique spots in each sector and a total of 7056 spots with unique combinations of spot and sector oligos. Each spot oligo occured 4 or 6 times across the array and never more than once in a sector. The layout of the source plates was optimized to maintain separation between the each spot oligo as they occured in multiple sectors to avoid ambiguous hashing.",
+    "Clips that securely held the tissue section slide and oligo transfer slide together during transfer were designed in SolidWorks v24 (Dassault Systèmes SolidWorks Corp., Waltham, MA). These clips featured a bottom support that spanned the width of the stacked slides and side supports capped with teeth that overhung the top surface of the stacked slides.",
+    "For a stack of one Superfrost Plus microscope slide (Thermofisher) with agarose coating and one Zyagen tissue section slide, internal dimensions of 22.4 mm x 2.6 mm and a tapered overhang of 0.75 mm allowed slides to snap into the clips with a snug fit preventing sliding of one slide across the other. Clip dimensions should be optimized for the specific slides and coatings used for sections and oligo transfer arrays. slide_clip _superfrost+Tanner_slides.STL",
+    "The clips were 3D printed on a Makergear M2 (Makergear, Beachwood, OH) printer using consumer grade poly(lactic acid) plastic filament (Makergear). Final result",
+    "The complete set of ordered hash oligos can be ordered from IDT using the following files -- all_plates_for_ordering.xlsx",
+    "Oligos were ordered from IDT at full yield and reconstituted in IDT Low TE pH 8.0 at a final concentration of 100uM."
+  ],
+  "authors": [
+    "Sanjay Srivatsan",
+    "Mary Regier"
+  ],
+  "creator": "Sanjay Srivatsan",
+  "published_on": 1613230031,
+  "created_on": 1602195646,
+  "keywords": []
+}

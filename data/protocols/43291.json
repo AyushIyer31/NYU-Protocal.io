@@ -1,0 +1,24 @@
+{
+  "id": 43291,
+  "title": "Navigating in UNIX",
+  "uri": "navigating-in-unix-bnh3mb8n",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"htgfe\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"6kaqc\",\"text\":\"Navigating the file system in UNIX via the command line is not intutive at first glance compared to a point and click windows-style interface. However once you understand the heirachical nature of the file system and how to navigate relative to where you are or from the root of teh file system it becomes almost second nature.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bps2f\",\"text\":\"There are 3 basic commands for navigating the filesystem\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dap9t\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"image\",\"mutability\":\"\",\"data\":{\"guid\":\"61BAEF65341F11EE9D4302C0B41BC903\",\"height\":86,\"is_video\":false,\"legend\":\"{\\\"blocks\\\":null,\\\"entityMap\\\":null}\",\"mime\":\"image/png\",\"nestedSelector\":null,\"original_name\":\"GHRU-NIHR-CC.png\",\"placeholder\":\"https://content.protocols.io/private/01a7878d3c622e9c4d27343721a1b5c5559e4cb768b63015146659aa9ec62085/cns4bgvt7.png\",\"shadow\":false,\"source\":\"https://content.protocols.io/private/01a7878d3c622e9c4d27343721a1b5c5559e4cb768b63015146659aa9ec62085/cns4bgvt7.png\",\"width\":550}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Where on earth am I? Present Working Directory pwd Linux Short for &#39;present working directory&#39;. This will show you your current location as an absolute (more on what this means below). For example: /home/anthony/data",
+    "What&#39;s in my current location? List ls Linux Detailed list showing time stamps and permissions ls -l Linux Detailed list showing hidden files beginning with '.' such as the .ssh directory ls -la Linux Detailed list showing the items created most recently at the bottom 'tr' for reverse sort by time ls -ltr Linux",
+    "Get me out of here! Change directory cd Linux This will change your location to the path specified after the cd command. The path can be either absolute or relative. To explain the difference look at the example file tree shown below. An absolute path always starts from the root directory which in UNIX is represented by a / Therefore the absolute path to the data directory of user1 is /home/user1/data The absolute path to the bin directory is /usr/bin Therefore to change directories to these place no matter where you are youcan type cd /home/user1/data or cd /usr/bin respectively. A relative path is a location starting from the current working directory and does not start with a /. If you need to go back up a directory you type .. which stands for up a level into the parent directory. Therefore if you are in the directory /home/user1 to navigate to the data directory you would type cd data to navigate to user2 directory you would type cd ../user2 This navigates up a level in the tree to home and then down into user2 If your present working directory is /usr/bin to navigate to the user 1 documents directory you could use the absolute path cd /home/user1/documents Use the relative path cd ../../home/user1/documents back up to usr then to / and then down into home then user and finally documents. Useful commands cd cd on its own will take you straight to your home directory /home/user1 (/Users/user1 on a mac) cd - This will take you to the directory you were previously in",
+    "References Comprehensive tutorial Cheatsheet"
+  ],
+  "authors": [
+    "Anthony Underwood"
+  ],
+  "creator": "Anthony Underwood",
+  "published_on": 1610470523,
+  "created_on": 1602846312,
+  "keywords": []
+}

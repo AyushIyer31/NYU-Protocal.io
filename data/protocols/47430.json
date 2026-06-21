@@ -1,0 +1,32 @@
+{
+  "id": 47430,
+  "title": "Recan: R-based tool for detection of recombination in viral genomes",
+  "uri": "recan-r-based-tool-for-detection-of-recombination-bsjencje",
+  "doi": "dx.doi.org/10.17504/protocols.io.bsjencje",
+  "description": "{\"blocks\":[{\"key\":\"evn6v\",\"text\":\"Recan is an R version of the Python library that allows the identification of recombination events through construction and exploration of similarity plots based on genetic distances between nucleotide sequences. After porting I validated this package using sequences of viruses with previously identified recombitations. During benchmarking both versions demonstrated the same execution time. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cc2mm\",\"text\":\"To benchmark the packages we selected the same four sets of viral genomes used in the Python version of recan (Babin, 2020). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":110,\"length\":13}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"BB6D265F799D11EBA02E0A58A9FEAC2A\",\"url\":\"https://www.zotero.org/google-docs/?broken=1VahDR\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Calculating average execution time of code using Hepatitis C virus datasets. setwd(\"/path/to/sequences/\")ls",
+    "Calculating average execution time of code using Lumpy Skin Disease Virus datasets. library(seqcombo){ mat",
+    "Calculating average execution time of code using Human Immunodeficiency Virus datasets.",
+    "Calculating average execution time of code using Norovirus datasets. setwd(\"/path/to/sequences/\")ls",
+    "Calculating average execution time of code using Lumpy Skin Disease Virus datasets. setwd(\"/path/to/sequences/\")ls",
+    "Calculating average execution time of code using Human Immunodeficiency Virus datasets. library(seqcombo){ mat",
+    "Calculating average execution time of code using Hepatitis C virus datasets. library(seqcombo){ mat",
+    "Calculating average execution time of code using Norovirus datasets. library(seqcombo){ mat",
+    "Calculating average execution time of code using Hepatitis C virus datasets. from datetime import datetime sim_obj = Simgen(\"/path/to/sequences/hcv.fasta\")sim_obj.get_info()start_time = datetime.now() sim_obj.simgen(window=400, shift=200, pot_rec=1)time_elapsed = datetime.now() - start_time print('Time elapsed (hh:mm:ss.ms) {}'.format(time_elapsed))",
+    "Calculating average execution time of code using Human Immunodeficiency Virus datasets. Each step I run 2 times as a preparatory steps, and then 7 runs used for calculation average time. from datetime import datetime sim_obj = Simgen(\"/path/to/sequences/hiv.fasta\")start_time = datetime.now() sim_obj.simgen(window=400, shift=200, pot_rec=1)time_elapsed = datetime.now() - start_time print('Time elapsed (hh:mm:ss.ms) {}'.format(time_elapsed))",
+    "Calculating average execution time of code using Norovirus datasets. from datetime import datetime sim_obj = Simgen(\"/path/to/sequences/norovirus.fasta\")start_time = datetime.now() sim_obj.simgen(window=400, shift=200, pot_rec=1)time_elapsed = datetime.now() - start_time print('Time elapsed (hh:mm:ss.ms) {}'.format(time_elapsed))",
+    "Calculating average execution time of code using Lumpy Skin Disease Virus datasets. from datetime import datetime sim_obj = Simgen(\"/path/to/sequences/lsdv.fasta\")start_time = datetime.now() sim_obj.simgen(window=400, shift=200, pot_rec=1)time_elapsed = datetime.now() - start_time print('Time elapsed (hh:mm:ss.ms) {}'.format(time_elapsed))"
+  ],
+  "authors": [
+    "Vasily Pavelko"
+  ],
+  "creator": "Vasily Pavelko",
+  "published_on": 1614500579,
+  "created_on": 1613724119,
+  "keywords": []
+}

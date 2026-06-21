@@ -1,0 +1,39 @@
+{
+  "id": 110309,
+  "title": "Blue Native Polyacrylamide Gel Electrophoresis (BN-PAGE) Cofractionation and In-Gel Digestion",
+  "uri": "blue-native-polyacrylamide-gel-electrophoresis-bn-dpyd5ps6",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbzm2ygpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"982vd\",\"text\":\"This protocol is used to isolate protein complexes by blue-native page, a type of native gel.  The source of proteins for separation in this example is early endosomes isolated by Endo-IP (with Flag-tagged EEA1 as an affinity handle).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"ej1a7\",\"text\":\"n-Dodecyl β-D-maltoside (DDM, Gold Biotechnologies, DDM5)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5483b\",\"text\":\"NativeMark Protein Standard (Invitrogen, LC0725)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"epc4e\",\"text\":\"NativePAGE 4-6% Gels (Invitrogen, BN1002BOX)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5sjso\",\"text\":\"tris(2-carboxyethyl)phosphine (TCEP; Gold Biotechnology, 51805-45-9)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dkebp\",\"text\":\"2-chloroacetamide (Sigma-Aldrich, C0267) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9588q\",\"text\":\"trypsin (Promega, V511C) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5i5lv\",\"text\":\"Lys-C (Wako Chemicals, 129-02541)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"944pr\",\"text\":\"KPBS buffer (25 mM KCl, 100 mM potassium phosphate, 150 mM NaCl, pH 7.2)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"86u9o\",\"text\":\"MultiScreen Filter Plates (Sigma Millipore, MSHVN4510)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Generate the sample for analysis, such as a purified organelle (Endo-IP in this case). The relevant protocol for Endo-IP can be found at: https://doi.org/10.17504/protocols.io.ewov14pjyvr2/v2",
+    "Resuspend freshly prepared purified endosomal pellets in 40 μL of KPBS containing 0.5% n-Dodecyl β-D-maltoside (DDM).",
+    "Extract proteins by rotating the mixture for 45 minutes at 4°C.",
+    "Clarify the protein extracts by centrifugation at 20,000 x g for 20 minutes at 4°C.",
+    "Mix the clarified extracts with 10 μL of BN loading buffer, 1 μL of Coomassie G-250 mix, and 0.5 μL of a native molecular weight marker.",
+    "Load the samples onto a 4–16% NativePAGE gel.",
+    "Run the gel at 150 V for 1.5 hours, followed by 250 V for 20 minutes at 4°C.",
+    "Fix the gel in 50% ethanol and 3% phosphoric acid. Reconstitute in water.",
+    "Stain the fixed gel with Coomassie G-250 dye.",
+    "Slice each sample lane from the gel into 48 1-mm slices.",
+    "Transfer the gel slices to a 96-well filter plate for in-gel digestion.",
+    "Reduce the proteins by adding 100 μL of 5 mM tris(2-carboxyethyl)phosphine (TCEP) in 50 mM ammonium bicarbonate and incubate for 30 minutes at 37°C.",
+    "Alkylate the proteins with 20 mM chloroacetamide in 50 mM ammonium bicarbonate for 15 minutes at room temperature.",
+    "Destain with 50% acetonitrile in 50 mM ammonium bicarbonate, and dry in 100% acetonitrile.",
+    "Digest proteins with 0.2 μg Lys-C for 4 hours at 37°C, followed by an overnight incubation with 0.2 μg trypsin.",
+    "Extract the resulting peptides from the gel by increasing concentration of acetonitrile up to 70%.",
+    "Dry the peptide extracts using a SpeedVac concentrator. Reconstitute the dried peptides in a solution containing 5% acetonitrile and 5% formic acid.",
+    "Samples are now ready for liquid chromatography-tandem mass spectrometry (LC-MS/MS)."
+  ],
+  "authors": [
+    "Harper JW",
+    "Miguel A. Gonzalez-Lozano"
+  ],
+  "creator": "Harper JW",
+  "published_on": 1743186696,
+  "created_on": 1729266281,
+  "keywords": []
+}

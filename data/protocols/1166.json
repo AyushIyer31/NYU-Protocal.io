@@ -1,0 +1,34 @@
+{
+  "id": 1166,
+  "title": "FASP Kit Protocol-ORNL Developed for Bacteriophage",
+  "uri": "FASP-Kit-Protocol-ORNL-Developed-for-Bacteriophage-ddn25d",
+  "doi": "dx.doi.org/10.17504/protocols.io.ddn25d",
+  "description": "{\"blocks\":[{\"key\":\"2mpc4\",\"text\":\"Collaborator, Nathan VerBerkmoes (Oak Ridge National Labs), worked with Tucson Marine Phage Lab to develop more sensitive proteomics assays for viral isolates which we are now also using for environmental viral concentrates. A new sample prep method (FASP) was optimized to maximize the signal from our commonly low-protein containing samples, and then run using 2d-LC-MS-MS to maximize detection across the large dynamic range in isolate and environmental samples.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4tmgm\",\"text\":\"This method was optimized for bacteriophage by Kristen Corrier undergraduate research assistant at Oak Ridge National Laboratory (ORNL), Chemical Science Division using the commercial method from Protein Discovery (Knoxville, TN) as a starting point. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"1jdce\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"a3i6k\",\"text\":\"This method was written by Kristen Corrier using the commercial method from Protein Discovery (Knoxville, TN) as a starting point. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"coa3d\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"eepsn\",\"text\":\"Dr. Nathan VerBerkmoes (ORNL, Chemical Science Division) oversaw the optimization process and creation of final method. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"1tf01\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"980s6\",\"text\":\"This method is designed to prepare small quantities (~1-10µg) of isolate bacteriophage or mixed bacterial/bacteriophage communities for shotgun proteomics via 2d-­LC-­MS/MS. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"akib4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"m2m1\",\"text\":\"Please note this method is not effective for large quantities of material (\\u003e100µg), standard solution digest should be used for such samples.  The minimum protein amount needed is estimated to be 500ng but this is highly sample dependent. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4v543\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2dph3\",\"text\":\"The main optimization of this method was to simplify it and greatly reduce the time required.  This current method takes roughly half the amount of time (actually bench time) as the original commercial method, furthermore its now very straightforward to prepare 8, 16, or 24 samples at a time.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"7da0n\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"3utds\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Prepare Urea/SDS Solution. Urea/SDS Solution by Verve Team",
+    "Transfer Urea solution + sample to spin filter. Centrifuge at 14,000 x g for 15 min. 00:15:00",
+    "Add 200µL fresh Urea solution ( no DTT, no SDS ). Centrifuge at 14,000 x g for 15 min. undetermined 00:15:00 Urea Solution by Verve Team",
+    "Discard flow­‐through.",
+    "Add 10µL iodoacetamide solution and 90µL Urea solution (no DTT, no SDS). Vortex for 1 min, then incubate without mixing for 20 min in the dark. 00:20:00 Iodoacetamide Solution by Verve Team",
+    "Centrifuge at 14,000 x g for 10 min. 00:10:00",
+    "Add 100µL Urea solution (no DTT, no SDS). Centrifuge at 14,000 x g for 15 min. Repeat this step twice. 00:15:00",
+    "Discard flow­‐through.",
+    "Add 100µL 50mM ammonium bicarbonate solution (provided with FASP kit). Centrifuge at 14,000 x g for 15 min. 00:15:00",
+    "Transfer filter to new collection tube.",
+    "Add 75µL digestion solution. Vortex briefly. Incubate at 37°C for 4 – 18 hours (NO ROCKING) undetermined 18:00:00 Digestion Solution by Verve Team",
+    "Add 40µL 50mM ammonium bicarbonate solution. Centrifuge at 14,000 x g for 10 min. Repeat this step once. 00:10:00",
+    "Add 50µL 0.5 M sodium chloride solution (provided with FASP kit). Centrifuge at 14,000 x g for 10 min. 00:10:00",
+    "Filtrate contains digested proteins. Add 170µL* H₂O + formic acid. Aliquot (150µL x 2)*, freeze *Volumes may be adjusted. Final filtrate volume = 130µL *Generally two replicates can be obtained from one filter *Sample is now ready for 2d‐LC­‐MS/MS, remember a on-­line desalting step is needed before SCX salt pulses start."
+  ],
+  "authors": [
+    "Nathan VerBerkmoes"
+  ],
+  "creator": "Verve Team",
+  "published_on": 1453406910,
+  "created_on": 1436822658,
+  "keywords": []
+}

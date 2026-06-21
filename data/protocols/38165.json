@@ -1,0 +1,36 @@
+{
+  "id": 38165,
+  "title": "Plate Preparation and Submission (Eurofins)",
+  "uri": "plate-preparation-and-submission-eurofins-bhhvj366",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl47yqjlo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"q8ok\",\"text\":\"This protocol details how to set up a plate for sequence submission, from the initial spreadsheet preparation and sample naming scheme, to physical plate preparation and submission to the eurofins website/shipping.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Log in (lab credentials) to eurofins.genomics.com. Navigate to Plate Sequencing and select Order Now for Standard Plates . Download the Excel spreadsheet by clicking on the icon. Note: Do not use this protocol if submitting samples for sequencing to another company (such as Retrogen). The protocol will differ!",
+    "If applicable: type the Plate Barcode (found on the sticker you will afix to the plate) into the spreadsheet at the top (no hyphen). Also replace the tab name (currently set to &#34;Plate 01&#34;) with the barcode. Select PCR Products for &#34;Sample Type&#34; and Standard for &#34;Advanced Options&#34;. Leave all other settings default. IMPORTANT NOTE: As of 2021, Eurofins no longer requires/provides plate barcodes. If you are sending a single plate, no labeling/sticker on the plate is required. If you are sending multiple plates in the same package, label each with a unique number and make sure the spreadsheet tabs have matching/corresponding labels (e.g. Plate 01 and Plate 02). Print two packing slips to place into each plate&#39;s bag.",
+    "Set primer to Premix for all samples.",
+    "Add sample names in the following format (NO SPACES): The most efficient way to arrange your samples is to keep all of the samples with a single primer together in succession (this way when you prep the plate, you can pipette that primer into all of the appropriate wells in quick succession, followed by the samples associated with each well).",
+    "Your &#34;four letter code&#34; is unique to you and can be any of the following, but please PICK ONE and do not change it once you&#39;ve used it for a plate. It should be the same for every sample/plate belonging to you: first 4 letters of your first name first 4 letters of your last name first 4 letters of your UCSD email Remember that you will have two entries for every PCR product you intend to submit (one for the product + forward primer and one for the product + reverse primer). The above example would have another entry A1234mariHCO on the same plate.",
+    "If you have not done so already, dilute your primers for use on the plate (1:10): use 1 µL, Your Personal Primer Stock and 9 µL, Water for each sample that you have (if you scaled this protocol, amounts should be adjusted for your number of samples to accommondate 1uL of Primer and 9uL of water for each sample). Note that your personal primer stock is already diluted from the original primer stock, but you must dilute again for this step. Plastic plates and strip caps are located in the pull-out drawer to the left of the post-PCR amplification station. You will have separate master mixes (a.k.a. 1:10 dilutions) for each forward and reverse primer you intend to use. For example, if you are sending out several COI PCR products amplified using the universal Folmer LCO/HCO primers, you should prep separate dilutions in 2 different microcentrifuge tubes for each of the corresponding primers (one for LCO and one for HCO).",
+    "Check that you have the appropriate primers (diluted) and samples thawed and mixed prior to starting. Arrange primers and samples (PCR products) so that they match the order of your spreadsheet before starting.",
+    "Pipette 10 uL Diluted Primer into the appropriate wells (check your spreadsheet). Add 5uL of the appropriate PCR Product into each well (one PCR product per well). Note that you will pipette 5uL of each of your PCR products twice: once into a well with the forward primer and once into a well with the reverse primer.",
+    "Print out the plate spreadsheet and bring a copy with you before proceeding to Plate Preparation .",
+    "Make notes as necessary on your printed spreadsheet as you go. If you make a mistake, note it right away. You may have to adjust the remaining spreadsheet layout in order to accommodate an error--if so, add notes to ,ry clear what you did. You can then edit the plate spreadsheet after you&#39;ve finished prepping the plate. To help avoid making mistakes: Open all PCR tubes before adding the product, and close the associated PCR cap immediately after you pipette 5 uL of its product into the correct well.",
+    "Affix strip caps to filled columns in the plate, label the right side of the plate if necessary (see note about plate barcodes in step 2), and put the plate in a plastic bag. Seal and store in the refrigerator (or in the -20°C freezer for long-term storage if not shipping for 2 or more days) until ready to ship. The PCR products/primers will evaporate over time, so do not leave them uncovered too long. Affix strip caps as you go if necessary.",
+    "Revisit your plate spreadsheet with your notes in hand. Make edits to the excel document as needed to accommodate any mistakes or changes that you made during plate preparation.",
+    "Once the plate spreadsheet is complete, upload it to the Eurofins website (use the Browse tool available on the same page as the spreadsheet download -- see step 1 ). The upload will be checked for errors before you can proceed to the next page.",
+    "Eurofins will create a schematic diagram of your plate with associated sample names (hover over the green circles). Spot-check this schematic with your spreadsheet to make sure it is correct.",
+    "Click Submit/add to cart. Keep all options as the defaults. Make sure you&#39;ve selected the lab credit card as the payment option. Make sure that Print Digital Shipping Label is selected whenever it appears.",
+    "Upon checkout, you should be prompted to print the shipping label. Attach the shipping label to the outside of one of the padded envelopes, and place the confirmation (which printed with it) inside the envelope with the plate. Drop off at any UPS location ( don&#39;t forget to ask for a receipt )."
+  ],
+  "authors": [
+    "Dakota Betz"
+  ],
+  "creator": "Marina McCowin",
+  "published_on": 1749844992,
+  "created_on": 1592091413,
+  "keywords": []
+}

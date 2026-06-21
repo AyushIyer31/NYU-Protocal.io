@@ -1,0 +1,28 @@
+{
+  "id": 19114,
+  "title": "Cloning the Class Github Repository",
+  "uri": "cloning-the-class-github-repository-wwiffce",
+  "doi": "dx.doi.org/10.17504/protocols.io.wwiffce",
+  "description": "{\"blocks\":[{\"key\":\"8nmaf\",\"text\":\"We are going to use Github (http://github.com) to share code examples and assignments with you for the class. We set up a master repository that will get updated with assignments as the course progresses. You are going to use the \\\"git clone\\\" command to make your own copy of this repository. You can edit and add your own code to this cloned repository, and then \\\"push\\\" the code back to us so we can run the code and grade your assignments. See the Setting up Github protocol for how to get started with Github.  This protocol focuses on how to make a clone or copy of the class master repo in your own directory on the UA HPC (/rsgrps/bh_class/username). The master repository is available in Github (https://github.com/hurwitzlab/biosys-analytics) on remote server. The \\\"git clone\\\" command copies that existing Git repository to your own directory. This “working copy” is a full-fledged Git repository—has its own history, manages its own files, and is a completely isolated environment from the original repository.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":449,\"length\":26},{\"key\":1,\"offset\":702,\"length\":46}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"D0735C2013AA11E9948EBB5694715D82\",\"url\":\"https://www.protocols.io/view/create-a-class-github-repository-wv2fe8e\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"12AEC876ACF04EB2A173F11A92F7EF67\",\"url\":\"https://github.com/hurwitzlab/biosys-analytics\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"b69v6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"2geu0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"fl8t2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Login to your Github account and choose the &#34;Settings&#34; under your menu. a",
+    "Select the SSH Keys section on the left (1) and then click on &#34;New SSH key&#34; in the upper-right (2). a",
+    "Paste the public key (~/.ssh/id_rsa.pub) from above into the &#34;Key&#34; on the Github site and give the key a title like &#34;UA HPC,&#34; then click on the big green &#34;Add SSH Key&#34; button. a",
+    "Clone your project via SSH. On the UA HPC web portal, go to the &#34;/rsgrps/bh_class/username&#34; directory and clone your version of the biosys-analytics repository. Replace &#34;username&#34; with YOUR username in each of the Unix commands below. $ cd /rsgrps/bh_class/username $ git clone git@github.com:username/biosys-analytics.git",
+    "You should now be able to push/pull from your repo without having to type your Github password.",
+    "Login to the UA HPC web portal. See the protocol if needed.",
+    "Go to the .ssh directory in your home directory and copy the SSH key, using the commands below. $ cd $ cd .ssh $ cat id_rsa.pub copy the public key that you get from the command above."
+  ],
+  "authors": [
+    "Bonnie L Hurwitz",
+    "Ken Youens-Clark"
+  ],
+  "creator": "Bonnie L Hurwitz",
+  "published_on": 1547068923,
+  "created_on": 1546994832,
+  "keywords": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": 79610,
+  "title": "Purification and analysis of SKP1-FBXO7 complexes",
+  "uri": "purification-and-analysis-of-skp1-fbxo7-complexes-cry2v7ye",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvr4z4ogmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"bg732\",\"text\":\"Protocol for the biochemical purification and analysis of SKP1-FBXO7 complexes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"1o2qt\",\"text\":\"Please wear appropriate PE while performing the experiment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5agqg\",\"text\":\"Please familiarise yourself with the laboratory safety rules and guidelines and follow these while performing the experiment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"289m6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"ev6bk\",\"text\":\"Buffer A for size exclusion chromatography (SEC):\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aco8r\",\"text\":\"- 25mM HEPES pH7.5 (KOH)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1mhs5\",\"text\":\"- 150 mM NaCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2dr8v\",\"text\":\"- 1mM DTT\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"38fa4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dnf2j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cgg21\",\"text\":\"TB medium\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Grow E.coli cultures in Terrific Broth (TB) medium at 37°C. At OD600 of 0.8, induce expression with 0.5mM IPTG. Continue growing the E.coli culture for 16h at 18°C.",
+    "Analytical SEC was carried out on an ÄKTApure system (GE Healthcare) equipped with a Superdex 200 Increase 10/300 GL column (Cytiva), in buffer A (25mM HEPES pH7.5 (KOH), 150 mM NaCl, 1mM DTT).",
+    "All constructs were prepared utilizing standard molecular biological techniques and verified by sanger sequencing. The cDNAs coding for HsFbxo7-129-398 and Skp1 preceding a second RBS were cloned into pGEX4T1 as previously described for other substrate receptor/Skp1 complexes (Schulman et al. 2000) (pGEX4T1-TEV-HsFbxo7-129-398/HsSkp1). The cDNA coding for HsPI31-1-151 (with N-terminal TEV cleavable His8-tag) was cloned into pRSF1b (pRSF1b-His8-TEV-HsPI31-1-151). For co-expression of Fbxo7/Skp1/PI31 complexes, both plasmids were co-transformed into E. coli BL21 Rosetta (DE3).",
+    "Pool fractions of interest, aliquoted and snap freeze in liquid N2. Store fractions at -80°C until further usage.",
+    "HsCul1-1-410 was expressed as GST-fusion protein and purified as described previously (Hopf et al., 2022).",
+    "Purify FBXO7/Skp1/PI31 complexes by sequential standard GST- and His-affinity chromatography. Cleave affinity tags by incubation with TEV protease at 4°C for 16h.",
+    "Further purify complexes by preparative size exclusion chromatography (SEC) in buffer A (25mM HEPES pH7.5 (KOH), 150 mM NaCl, 1mM DTT; for details please see next section) on a Superdex 200 Increase 10/300 GL column.",
+    "Apply samples (100 µl at a concentration of 45 µM) on column. Set flow rate to 1 ml/min.",
+    "Preincubate samples at 37°C for 10 min before loading. Samples: HsCul1-1-410, HsFbxo7-129-398/HsSkp1/HsPI31-1-151 HsFbxo7-129-398/HsSkp1/HsPI31-1-151 + HsCul1-410",
+    "Record UV absorbance at 280 nm and collect fractions of 200 µl volume.",
+    "Analyze fractions by SDS-PAGE."
+  ],
+  "authors": [
+    "Frank Adolf",
+    "Brenda A. Schulman"
+  ],
+  "creator": "Felix Kraus",
+  "published_on": 1687437074,
+  "created_on": 1680038820,
+  "keywords": []
+}

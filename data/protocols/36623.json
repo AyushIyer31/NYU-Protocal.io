@@ -1,0 +1,35 @@
+{
+  "id": 36623,
+  "title": "SPARC Cat - Sham Control Chronic Cat 3, Day 14",
+  "uri": "sparc-cat-sham-control-chronic-cat-3-day-14-bfzpjp5n",
+  "doi": "dx.doi.org/10.17504/protocols.io.bfzpjp5n",
+  "description": "{\"blocks\":[{\"key\":\"bdboi\",\"text\":\"This is a procedure for a sham control chronic cat experiment (Day 14) for cystotomy (bladder surgery).  The cystotomy is performed without UroMOCA implantation.  The cat is observed daily and imaged on day 0, 14 and 30 to track changes to the bladder and overall cat health in response to the cystotomy.  This protocol includes urodynamics and imaging for Day 14 in the chronic experiments.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"b00k6\",\"text\":\"1 week before start of experiment - Confirm absence of bladder spasm; healthy cat\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"58hec\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6rp68\",\"text\":\"12 hours before experiment, start fasting the cat\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"cmajs\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"77vvd\",\"text\":\"You must transport the animal chart along with the cat to surgery site.  The veterinary  team will record all relevant data in the chart.  The chart must then go back to the housing site.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"3o7dv\",\"text\":\"Cat - Domestic short-haired cat.  Male or female. 6-24 months; 3.5-5.0kg \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"b3jsf\",\"text\":\"Syringe Pump - Genie Touch; Kent Scientific \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4fh1p\",\"text\":\"Pressure Transducer - Catalog # 503067\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"e7rmj\",\"text\":\"WPI Amplifier - 4 channel transbridge\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2efu6\",\"text\":\"WPI National Instruments multifunction I/O device - NI USB 6259 \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7f9cr\",\"text\":\"National Instruments Laptop with Labview software \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dt81n\",\"text\":\"Tubing - Masterflex L/S Platinum-Cured Silicone Tubing  ID 3/16 \\\"; Cole Parmer \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"1230n\",\"text\":\"BNC cables \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"bl7ag\",\"text\":\"Tubing to catheter - APIS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"579du\",\"text\":\"Laborie Catheter - Argyl Suction Catheter, 3.5 Fr Catalog # 8890703211\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3icbq\",\"text\":\"Covidien Sutures - 4-0 Vicryl Polysorb (Covidien UL212)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4vdiu\",\"text\":\"3-0 Prolene (Ethicon 8762)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"a1jis\",\"text\":\"2-0 Silk Syringe\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"da39d\",\"text\":\"60ml Contrast\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"jp4u\",\"text\":\"Visipaque 320mg/ml\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ebauh\",\"text\":\"Surgilube \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"54n93\",\"text\":\"Surgical instruments\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Transport cat from housing site to surgery site.",
+    "Animal is anesthetized and abdomen is shaved by the vet team. The cat is then moved into the surgery room and attached to monitors by the vet team.",
+    "Drape animal and perform betadine scrub on abdomen and genitals.",
+    "Put surgilube on 3.5Fr catheter and insert into bladder through the urethra. Advance the catheter until resistance is met, then pull back 2-3cm.",
+    "Use gentle suction with syringe to withdraw urine from bladder through the catheter. Measure the volume and save the urine for urinalysis. 20 mL urine removed",
+    "Use 1:5 dilution of contrast to saline to visualize bladder. Fill the bladder with 10 mL contrast and take a single CT image. Add 10 mL more to bladder (total of 20 ml) and take single CT image Take a 3D CT image with 20ml contrast:saline in the bladder",
+    "Empty Bladder",
+    "Performed after cat is transferred from Isoflurane to propofol anesthetic. Fill rate is 2ml saline/minute using syringe pump. Data is recorded using Labview software. Pressure is recorded using an external pressure transducer connected to syringe pump on one end and tubing that leads to the catheter on the other end.",
+    "Fill bladder with saline and record pressure using pressure transducer connected to LabView Fill to 15 mL ;End round 1 urodynamics Tug on catheter after filling to visualize contraction in Labview software",
+    "Empty Bladder",
+    "Fill bladder with saline at 2ml/min",
+    "Fill to 20 mL ; End round 2 urodynamics",
+    "Wait for cat to wake up and return to housing site."
+  ],
+  "authors": [
+    "Brett Hanzlicek",
+    "Anna Rietsch",
+    "Margot Damaser"
+  ],
+  "creator": "Brett Hanzlicek",
+  "published_on": 1621361924,
+  "created_on": 1588695582,
+  "keywords": []
+}

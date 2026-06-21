@@ -1,0 +1,36 @@
+{
+  "id": 103938,
+  "title": "BAF_Protocol_015_ 3-NPH derivatization of short chain fatty acid",
+  "uri": "baf-protocol-015-3-nph-derivatization-of-short-cha-dhra352e",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvw1oz7lmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"8hq85\",\"text\":\"Short Chain Fatty Acid derivitization before MS analysis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"7t9h\",\"text\":\" 3-Nitrophenylhydrazine hydrochloride (3-NPH) --\\u003e Sigma N21804-5G\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e0gm1\",\"text\":\" Butylated hydroxytoluene (BHT) --\\u003e Sigma PHR1117-1g\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1okoq\",\"text\":\" N-(3-Dimethylaminopropyl)-N′-ethylcarbodiimide hydrochloride (ED) --\\u003e Sigma E1769- 5g\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":1,\"length\":1},{\"style\":\"italic\",\"offset\":27,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"bct03\",\"text\":\"Pyridine --\\u003e  Sigma 270970 - 100 mL\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eqms8\",\"text\":\"Valeric acid --\\u003e Sigma 75054-1mL\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9vtan\",\"text\":\"Isovaleric acid --\\u003e Sigma 78651- 1mL\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7rka5\",\"text\":\"Hexanoic acid (caproic acid) --\\u003e Sigma 21529 - 1mL\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4j4qd\",\"text\":\"4-Methylvaleric acid (Isocaproic acid) --\\u003e Sigma 277827 - 1mL\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3jv4b\",\"text\":\"Butyric acid --\\u003e Sigma 19215 - 5 mL\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1nbvv\",\"text\":\"Isobutyric acid --\\u003e  Sigma 46935-U - 500mg\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"blitd\",\"text\":\"Lactic acid --\\u003e Sigma L6661 - 100 mL\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"at4t3\",\"text\":\"Acetic acid --\\u003e Sigma 338826 - 25 mL\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"60vvh\",\"text\":\"Column: Waters ACQUITY UHPLC BEH C18 1.7 um, 2.1 x 150 mm - 186002353\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ivtu\",\"text\":\"Thermo Optima 0.1% FA (formic acid) in water -  LS118-4\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bv2dd\",\"text\":\"Thermo Optima Methanol - A456-212\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dsk4o\",\"text\":\"Thermo Autosampler vials 0.25 mL – 14-823-136\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"40n01\",\"text\":\"Thermo Orange caps – 14-823-380\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3bff\",\"text\":\"Fisherbrand Standard Pipette Tips (200 uL - Yellow) – 2707502\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"di15n\",\"text\":\"Thermo Orbitrap ID-X - FETD1-10001\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7anj3\",\"text\":\"Thermo Vanquish Duo UHPLC \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1cja7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7tuej\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Refer to BAF_Protocol_008 Metabolomics: Soluble Metabolite Extraction for soluble metabolite extraction of a sample of interest and dry the extracted metabolites.",
+    "Prepare a stock solution of each standard at 10 mg/mL in 75% MeOH. Use the stock solution to generate a 1000 ug/mL",
+    "Prepare standard curve: %s %s",
+    "Solubilize metabolite extracts in 100 µL of 75% methanol Add 50 µL of each into a clean new Eppendorf tube",
+    "Reagent powder storage: EDC is stored at -20C, all others are at room temperature. Prepare working solutions on small glass botles.",
+    "7,5% pyridine in 75% methanol. --&gt; add 750 uL in 9.25 mL of 75% methanol.",
+    "150 mM EDC (stored at -20C) in 100% methanol: --&gt; dissolve 28.75 mg in 1 mL methanol.",
+    "2 mg/mL BHT in 100% methanol: --&gt; dissolve 2 mg in 1 mL methanol.",
+    "250 nM 3-NPH solution as derivatization agent in 50% methanol: --&gt; dissolve 47.4 mg of 3-NPH in 1 mL of 50% methanol",
+    "To quench the reaction, add 50 µL of BHT",
+    "To each sample or standard add: 50 µL of 150 mM EDC, 50 µL of 7,5% pyridine, Incubate in thermomixer at 30 ºC",
+    "Add 50 µL of each standard curve level into a clean new Eppendorf tube",
+    "Dilute with 250 µL of water making a total of volume of 500 µL and to achieve 40% methanol at final sample.",
+    "Samples are ready to be analyzed by LC-MS/MS. Use 40% methanol as blank runs.",
+    "Column: Acquity UPLC BEH C-18 1.7 um 2.1 x 150 mm (Waters) Solvent A: 0.1% FA in water Solvent B: 0.1% FA in 90% methanol Flow = 0.250 ml/min. Gradient: 0-1 min 50%B; 1-5 min 70% B; 5-8 min 98% B; 8-13 98% B; 13-13.1 min 15%B.",
+    "Full scan parameter MS1 Res = 120,000 Range = 67-1000 RF Lens = 60 AGC = 25% Max IT (ms)= 50 Polarity = Negative PRM parameters: CE=30 Res: 50,000 Isolation window: 1.5 AGC: 50 MaxIT (ms): 86 Polarity = Negative Targeted masses: Analyze data using Skyline."
+  ],
+  "authors": [
+    "Nicholas Sherman"
+  ],
+  "creator": "Nicholas Sherman",
+  "published_on": 1721831045,
+  "created_on": 1721756142,
+  "keywords": []
+}

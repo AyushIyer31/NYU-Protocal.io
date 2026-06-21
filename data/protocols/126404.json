@@ -1,0 +1,23 @@
+{
+  "id": 126404,
+  "title": "FAMES analysis",
+  "uri": "fames-analysis-d7pc9miw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl8e5b7l2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"4e9np\",\"text\":\"Fatty acid methyl ester (FAMES) analysis was used to measure glucose-derived carbon incorporation into fatty acids in KrasG12D/PEC organoids. Organoids were labeled with [U-¹³C₆] glucose, extracted, derivatized, and analyzed by GC-MS. Quantification was done using internal standards and MetaQuant software, allowing assessment of de novo fatty acid synthesis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":118,\"length\":13}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Cell labeling with [U- 13 C 6 ] glucose was performed as previously descibed 1 with some modification for the organoid cultures. A total of 3x10 5 Kras G12D/PEC cells for each experimental point were plated in 96 96-well plate, in a dome 1:1 of Matrigel (Corning, cat #356231) and DMEM no glucose (Gibco, 11966-025). Organoids were treated and cultured as described above for 3 days. At the start of the labeling period, (t) = 0 h, 4 days after plating in Matrigel, the media was replaced with a growth mediacontaining DMEM no glucose, 1/3 Advanced DMEM/F-12 supplemented with 1 g/L [U- 13 C 6 ] glucose (Sigma-Aldrich). After 24 hours, organoids were harvested with Cell Recovery Solution (Corning, 354253), as described previously 2, 3 . Cells or organoids were extracted with 0.45 ml 1:1 water: methanol plus 0.225 ml chloroform containing 20 µM D31-palmitic acid (Cayman). Samples were driedusing a Speedvac centrifugal evaporator. Blank tubes were included to controlfor contaminant fatty acids in tubes. For quantification, FAMES-37 (Sigma) standards mixture (50 µl) was mixed with 225 µl 200 µM D31-palmitic acid. Varying amounts of this mixture were dispensed and dried. HCl 0.5N in methanol (50 µl) was added to dried samples or standards, and these were heated for 30 min at 60°C, before drying and resuspension (with heating to 60°C) in 50 µl pyridine and transfer to autosampler vials with inserts. GC-MS: Samples and standards were run on a Shimadzu QP2010 Plus GC-MS.Injection volume was 1-2 µl with 1/10 split, injection temperature of 250°C; GC oven temperature was initially 80°C for 3.5 min, rising to 280°C at 10°C/min with a final hold at this temperature for 2 min. GC flow rate with helium carrier gas was 50 cm/s. The GC column used was a 15 m x 0.25 mm x 0.25 µmRXI-5ms (Restek). GC-MS interface temperature was 300°C and (electron impact) ion source temperature was 200°C, with 70 eV/ 70 µA ionization voltage/current. The mass spectrometer was set to scan m/z range 100-500, with varied detector sensitivity. Quantification was done against standard curves constructed in Metaquant 4 , and amounts were adjusted for recovery of the internal standard. Correction for isotopic natural abundance and calculation of acetyl unit (acetyl-CoA) fractional labeling and fatty acid synthesis is done in MS Excel, using raw intensity m/z data ranging between unlabeled and fully labeled ions for palmitic acid and other fatty acids 1 ."
+  ],
+  "authors": [
+    "Laura Antonucci",
+    "David A. Scott",
+    "Michael Karin"
+  ],
+  "creator": "Laura Antonucci",
+  "published_on": 1744162998,
+  "created_on": 1744162153,
+  "keywords": []
+}

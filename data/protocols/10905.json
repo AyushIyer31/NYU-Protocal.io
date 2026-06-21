@@ -1,0 +1,27 @@
+{
+  "id": 10905,
+  "title": "Fluorophore Assessment of Glycosidase Activity",
+  "uri": "fluorophore-assessment-of-glycosidase-activity-nvzde76",
+  "doi": "dx.doi.org/10.17504/protocols.io.nvzde76",
+  "description": "{\"blocks\":[{\"key\":\"930hn\",\"text\":\"Purpose of this protocol is to assess the enzymatic activity of glycosidases using fluorophores conjugated to substrates of interest (such as cellobiose or xylobiose). Once the enzyme of interest cleaves substrate, the fluorophore is released enabling quantification of enzymatic activity.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"d6epr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"6svm6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"f2jbl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Transform your glycosidase of interest in an expression vector under control of the lacpromoter into BL21 DE3 E. coli (refer to transformation protocol for more detail).Grow overnight at 37°C.",
+    "Grow up single colony in 5 mL LB media+antibiotic batch culture at 37°C overnight,shaking.",
+    "Re-seed overnight culture into new media+antibiotic and grow at 37°C until ODreaches 0.5.",
+    "When OD reaches 0.5, induce with 1:1000 0.1M IPTG for 4 hours.",
+    "After 4 hours, transfer 50 uL solution to clear bottom 96 well microplate and add 50uL 200 µM enzyme substrate (CMU-C or CMU-X2) in 1% Triton-X/PotassiumAcetate Buffer. Incubate for 18h hours at 37°C, shaking.",
+    "After 18 hours, use a plate reader to measure excitation at 365 nm and emission at 450nm for a glycosidase of interest,",
+    "Controls for this experiment are empty vector (EV) and LB alone. LB alone serves as abackground control, allowing you to subtract all relative light units from background.You then normalize your enzyme of interest to EV, giving you a fold increase offluorophore release which is directly correlated to enzymatic activity."
+  ],
+  "authors": [
+    "Nicholas Boudreau"
+  ],
+  "creator": "Dalhousie Igem",
+  "published_on": 1521303925,
+  "created_on": 1521303837,
+  "keywords": []
+}

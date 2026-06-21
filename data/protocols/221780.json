@@ -1,0 +1,40 @@
+{
+  "id": 221780,
+  "title": "Meta-analysis of Diagnostic Test Accuracy of Fluid-based Biomarkers in Meningioma",
+  "uri": "meta-analysis-of-diagnostic-test-accuracy-of-fluid-g4tubywnx",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx4mkdl8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"tgyvl\",\"text\":\"Liquid biopsy is a novel, non-invasive method for tumor assessment, yet to be implemented in CNS tumor diagnosis. Meningioma is a typically slow-growing, extra-axial tumor that arises from the arachnoid cap cells of the meninges and represents the most common primary intracranial neoplasm in adults, which is underexplored. This meta-analysis sought to evaluate the current landscape of overall diagnostic value of various liquid biopsy methods in meningioma. Following PRISMA 2020 and PRISMA-DTA extension guidelines, we systematically searched three databases, extracted data for 2×2 contingency tables, assessed methodological quality using QUADAS-2, and performed bivariate meta-analysis with R-based software. A total of 23 studies, from which 27 datasets, with a total number of 3,400 participants, were identified. The pooled overall sensitivity was 0.78 (95% CI: 0.71 – 0.83) and specificity was 0.82 (95% CI: 0.76 – 0.86), with an area under the curve (AUC) of 0.86. Subgroup analysis showed that seroreactivity assays had the highest accuracy (DOR = 67), while emerging technologies like cfDNA methylation showed high potential but were supported by limited data. Critically, we found strong evidence of publication bias (Deeks’ test, p \\u003c 0.001) and our meta-regression revealed that studies with a lower risk of bias reported significantly lower specificity (p = 0.008). While fluid-based biomarkers show good overall accuracy for meningioma diagnosis, the current evidence is compromised by significant heterogeneity and a high risk of bias, suggesting that true performance is likely more modest than reported. Future studies should focus on rigorously designed, prospective validations of key approaches, especially cfDNA methylation and seroreactivity, using appropriate control populations to clarify their clinical utility.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"lrnut\",\"text\":\"To systematically assess the reported accuracy of different fluid-based methodologies applied to meningioma diagnosis from the literature, aiming to establish the current landscape of the diagnostic value of these emerging techniques.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"wys1q\",\"text\":\"Two independent reviewers, C.P.H. and Y.M., conducted a systemic search on PubMed, Google Scholar and EMBASE for eligible studies up until March 2025. The search terms combined Medical Subject Headlines (MeSH) and free-text terms. The detailed search strategy utilized is outlined in Table 1.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "This systematic review and meta-analysis was reported in accordance with the Preferred Reporting Items for Systematic Reviews and Meta-Analyses (PRISMA) 2020 statement and its extension for Diagnostic Test Accuracy studies (PRISMA-DTA). A PRISMA 2020-compliant full-study flow diagram constructed using the PRISMA2020 package for R Statistical Software version 4.5.0.",
+    "Potential articles were independently appraised by the author based on the inclusion and exclusion criteria described below.",
+    "Inclusion criteria:",
+    "(a) human studies;",
+    "(b) study participants include individuals diagnosed with meningioma;",
+    "(c) diagnostic approach utilizing liquid biopsy-based biomarkers;",
+    "(d) studies with a combined sample size of more than 20 participants;",
+    "(e) outcome assessment: acquisition or computability of adequate data such as sensitivity (SEN), specificity (SPE), and absolute numbers of true‐positive (TP), false‐positive (FP), false‐negative (FN), and true‐negative (TN).",
+    "Exclusion criteria:",
+    "(a) animal or in vitro studies;",
+    "(b) studies without sufficient data to build a 2×2 contingency table;",
+    "(c) articles not written in English;",
+    "(d) reviews, meta-analyses, conference abstracts, editorials, letters, case reports, comments, brief surveys, and notes;",
+    "(e) literature with combined sample size of fewer than 20 cases.",
+    "Following the preset criteria, both reviewers independently selected all potentially relevant studies and conducted duplicate exclusion. Subsequently, titles and abstracts were screened to exclude ineligible studies, and remaining full texts were further screened. Data extracted from the finally included studies encompassed details such as first author name, year of publication, country, sample size, control type, liquid biopsy methodologies, targeted biomarkers, cutoff values, AUC, SPE, SEN, TP, FP, FN, and TN, either directly provided or calculable from source data. Discrepancies were resolved through dialogue or, if necessary, by a third reviewer, V.A.",
+    "The quality of each included article was evaluated using the Quality Assessment of Diagnostic Accuracy Studies‐2 tool (QUADAS‐2) by two independent reviewers, C.P.H. and Y.M. This tool comprises four domains assessing the risk of bias (patient selection, index test, gold standard, patient flow and timing) and three applicability domains (patient selection, index test, reference standard). A domain was considered to have a low risk of bias if all key questions were answered “yes”; conversely, any “no” response indicated a high risk of bias. When information was insufficient, the risk of bias was considered unclear. Discrepancies were resolved through discussion between the reviewers, and if consensus was not achieved, V.A. made the final decision. The quality assessment of the included studies was performed using RevMan version 5.4.",
+    "A diagnostic test accuracy meta-analysis was conducted using a random-effects bivariate model to estimate summary sensitivity and specificity and to generate a hierarchical summary receiver operating characteristic (HSROC) curve. Sources of heterogeneity were investigated using subgroup analyses and bivariate meta-regression based on predefined covariates: diagnostic question, methodology, and study quality ratings. Potential publication bias was assessed using Deeks’ funnel plot asymmetry test. The influence of individual studies on the pooled estimates was evaluated using leave-one-out analysis and Baujat plots.",
+    "Statistical analyses were performed using R Statistical Software. The primary analyses were conducted using the mada (v0.5.12) and metafor (v4.8) packages for R."
+  ],
+  "authors": [
+    "Yasminn Meireles",
+    "Carlos Pilotto Heming",
+    "Veronica Aran"
+  ],
+  "creator": "Carlos Eduardo Pilotto Heming",
+  "published_on": 1751869061,
+  "created_on": 1751674430,
+  "keywords": []
+}

@@ -1,0 +1,38 @@
+{
+  "id": 39864,
+  "title": "Preparing Annotated Spectra from MaxQuant Output in xiSpec",
+  "uri": "preparing-annotated-spectra-from-maxquant-output-i-bi6ykhfw",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"cq4b4\",\"text\":\"Annotated spectra can be required to highlight specific features of interest, or for providing in supplementary data in support of peptide and PTM identification/localisation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8irpl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"14f6g\",\"text\":\"This protocol provides a workflow for preparing annotated spectra from MaxQuant output files (evidence.txt, .apl files) in xiSpec.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":123,\"length\":6}],\"data\":[]},{\"key\":\"dm8ak\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dhvh5\",\"text\":\"Example spectra prepared using this workflow:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"gacyr\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"evbkf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"076586A0D26711EABDDE6DB3949A22D2\",\"url\":\"http://spectrumviewer.org\"}},\"1\":{\"type\":\"image\",\"mutability\":\"\",\"data\":{\"guid\":\"61A8D3F0341F11EE9D4302C0B41BC903\",\"height\":197,\"is_video\":false,\"legend\":\"{\\\"blocks\\\":null,\\\"entityMap\\\":null}\",\"mime\":\"image/png\",\"nestedSelector\":null,\"original_name\":\"A(tmt)LEVLPVAPPPEPR_z=3xispec_Svg0.png\",\"placeholder\":\"https://content.protocols.io/public/3c194055ea462660c774b1746b31be1d9e25da0f54d374a673f9a1f11f1aeef7/cf6abe8t7.png\",\"shadow\":false,\"source\":\"https://content.protocols.io/public/3c194055ea462660c774b1746b31be1d9e25da0f54d374a673f9a1f11f1aeef7/cf59be8t7.png\",\"width\":550}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Open the MaxQuant evidence.txt file for the spectra of interest. This is located within the folder of the maxquant output.",
+    "Find the relevent row. Key data are the peptide sequence, z, Rawfile name and MS_MSScanNumber. Other columns may be useful depending on your need (e.g. Score, PIF, PEP).",
+    "Navigate to /combined/andromeda in windows explorer. Note the large number of individual .apl files.",
+    "To merge the individual .apl files to a single file suitable for searching for peak list data open the /combined/andromeda/ folder in the command prompt.",
+    "At the command prompt type: copy *.apl merged.apl merged.apl is your output file and contains the data from all the individual files.",
+    "Open the merged.apl file in a text editor",
+    "Find the peak list for your spectra of interest. For example from rawfile &#39;A&#39;, MSMSscan number 666. Search for: &#39;A Index: 666&#39;",
+    "Select and copy the two columns of numbers below the scan header. Upto but not including the &#39;peaklist end&#39; text. Select from here... ... to here.",
+    "Navigate to xiSpec: spectrumviewer.org",
+    "Click on &#39;upload&#39; and then &#39;Data input - manually upload your spectrum data&#39;",
+    "Add your peptide sequence. Any modifications should be indicated in brackets after the relevent amino acid. for example &#39;XXK(tmt)XX&#39;",
+    "In the row below, select &#39;linear peptide&#39;, type the precursor charge, select the ions of interest (typically b, y), and choose the relevent ppm (20).",
+    "Type in the modification mass for any indicated peptide modifications. For example TMTpro: tmt: 304.2071453354 Adjust the specificity as required. Though note for modifications the software takes this from the positions you have indicated in your peptide sequence. The previous sections should appear as: e.g.",
+    "Add any neutral losses you wish to display. Typically the software will color the relevent ions, but not label these. Neutral losses or other modifications to include are: CH3SOH 63.99828547 MOx H2O 18.01056027 S, T, D, E, CTerm NH3 17.02654493 R, K, N, Q, NTerm",
+    "Click &#39;View Spectrum&#39;",
+    "If you wish to adjust label positions (where they are too closer or overlap), click on the &#39;move labels&#39; options on the upper left.",
+    "Save the file as a .svg by clicking on the down arrow, top left corner. Example annotated spectra from TMTpro-labelled material.",
+    ".svg files can be opened in Inkscape and saved as .pdf. Both .svg and .pdf are vector graphics formats, .pdf can be inserted into latex documents, preserving image readability upon zooming."
+  ],
+  "authors": [
+    "Ed Emmott"
+  ],
+  "creator": "Ed Emmott",
+  "published_on": 1600370806,
+  "created_on": 1596113714,
+  "keywords": []
+}

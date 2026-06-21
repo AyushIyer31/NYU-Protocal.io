@@ -1,0 +1,29 @@
+{
+  "id": 11412,
+  "title": "Chelex DNA isolation for quick plant genotyping",
+  "uri": "chelex-dna-isolation-for-quick-plant-genotyping-pdudi6w",
+  "doi": "dx.doi.org/10.17504/protocols.io.pdudi6w",
+  "description": "{\"blocks\":[{\"key\":\"9nelo\",\"text\":\"Quick and dirty, but very very fast protocol for DNA isolation. It works beautifully if you have plenty of lines to genotype - example T-DNA insertion lines for validation of your favourite gene. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4hcob\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"aovvu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"dngv6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"IXlmL\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"3EKze\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"88iuc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":4487,\"guid\":\"410717BE341F11EE9D4302C0B41BC903\",\"name\":\"Chelex 100\",\"mol_weight\":0,\"sku\":\"C7901-100G\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":17,\"name\":\"Merck MilliporeSigma (Sigma-Aldrich)\",\"link\":\"http://sigmaaldrich.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Grind tissue in liquid N2 (1 leaf should be enough) If you collect the tissue in a tube containing glass beads (1-2 mm diameter) you can put the frozen tissue samples in the tissue grinder. This is by far the most efficient method to gind large quantities of various samples.",
+    "Add 200μl 10% Chelex (in MilliQ)",
+    "Vortex",
+    "Incubate 15min @ 95 degrees in shaker",
+    "Vortex",
+    "Spin 15min @ max RPM",
+    "Use (2μl) supernatant for PCR (optional: transfer supernatant to fresh tube for storage at -20C)",
+    "step 1 94 degrees 4min step 2 94 degrees 45s step 3 50 degrees 45s (try higher temp for more specificity) step 4 72 degrees 1:20min (depending on size insert) step 5 repeat 35x step 3 step 6 72 degrees 10min step 7 16 degrees 10min",
+    "Run 20uL of the PCR product on the 1% agarose gel"
+  ],
+  "authors": [
+    "Magdalena M Julkowska"
+  ],
+  "creator": "Magdalena M Julkowska",
+  "published_on": 1553779665,
+  "created_on": 1523511490,
+  "keywords": []
+}

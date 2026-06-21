@@ -1,0 +1,31 @@
+{
+  "id": 308,
+  "title": "SMARTseq2 day 1",
+  "uri": "SMARTseq2-day-1-b9tuev",
+  "doi": "dx.doi.org/10.17504/protocols.io.ciuuev",
+  "description": "{\"blocks\":[{\"key\":\"23ej0\",\"text\":\"The RT and amplification steps for SMARTseq2, as modified for previously extracted RNA slices.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"2lrgb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"1ph8v\",\"text\":\"Thaw RNA samples on ice, as well as:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"aveel\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"f2ps7\",\"text\":\"* First Strand Buffer (-20º)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"acrsm\",\"text\":\"* DTT (-20º)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"a0e7v\",\"text\":\"* dNTPs (-20º)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7eeqq\",\"text\":\"* oligo dT30VN primer (-20º)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"787ov\",\"text\":\"* Betaine (4º)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2t66m\",\"text\":\"* TSO (-80º)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"bmvpm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Wipe down bench with RNase zap or similar",
+    "Dilute oligo-dT30VN primer by adding 37µL of 100µM primer to 63µL of nuclease free H20",
+    "Prepare RT mix %s %s Reagent Stock Conc Amt/1 Amt/N Final Conc Nuclease Free H20 --- 0.29 FS Buffer 5x 2 1x Betaine 5M 2 1M MgCl2 1M 0.06 6mM TSO 100µM 0.1 1µM DTT 100mM 0.5 5mM Superscript II 200U/µL 0.5 100U RNase OUT 40U/µL 10U Sample ----- ----- (4.3) ---- -----",
+    "Incubate at 72º for 3m, return to ice 00:03:00",
+    "Take 4.3µL of hybridized oligo-dT+RNA and put in strip tubes.",
+    "Add 5.7µL RT mix",
+    "RT %s %s Num Cycle Group Temp Time 1x A 42 90m 10x B 50 2m B 42 2m 1x C 70 15m hold D 4 hold 02:15:00",
+    "Dilute ISPCR primers 1:100",
+    "Prepare PCR preamp mix %s %s Component Stock Amt/1 Amt/N Final Conc (First Strand Rxn) -- 10µL --- ---- KAPA HiFi Hot Start 2x 12.5 1x ISPCR primers 1µM 2.5µL 0.1µM ----- ------ ----- ----- ----- Final Volume 25µL",
+    "Add 15µL PCR preamp mix to 10µL RT",
+    "Preamp PCR 15 cycles is the current recommendation, but there&#39;s enough that I&#39;ll try 13",
+    "Ampure Cleanup. Use 0.6 volumes of beads, so 15µL of beads for the 25µL reaction.",
+    "Resuspend in 15.5µL EB, then measure concentrations using qubit."
+  ],
+  "authors": [],
+  "creator": "Peter Combs",
+  "published_on": 1414522243,
+  "created_on": 1413999323,
+  "keywords": []
+}

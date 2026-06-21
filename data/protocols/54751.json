@@ -1,0 +1,32 @@
+{
+  "id": 54751,
+  "title": "Live, in vivo, imaging (GCaMP6F), Video Processing, and Analysis",
+  "uri": "live-in-vivo-imaging-gcamp6f-video-processing-and-bzp7p5rn",
+  "doi": "dx.doi.org/10.17504/protocols.io.bzp7p5rn",
+  "description": "{\"blocks\":[{\"key\":\"45q7f\",\"text\":\"Protocol for GCaMP6F imaging and analysis in gut neurons used in Yoo et al 2021\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "AAV-PHP.S-CAG-GCaMP6F (10 12 VGs) was delivered systemically to WT C57.",
+    "3-4 weeks after infection, mice were anesthetized with 2% isoflurane on a heating pad (Kent Scientific, Torrington, CT-DCT15) with plastic sleeve covers (Kent Scientific, Torrington, CT-DCT1520P).",
+    "The abdominal cavity was surgically opened to expose the intestines.",
+    "The proximal colon was identified, and this portion was placed on top of a stack of 4-6 glass microscopy slides (depending on size of animal) (VWR, Radnor PA-Cat. No. 48300-026).",
+    "Tissue was secured onto glass slide with a biorthogonal silicon elastomer (Kwik-Sil) (World Precision Instruments, Sarasota, FL-KWIK-SIL), and a glass coverslip.",
+    "Elastomer stiffens within 1 minute of application and coverslip must be held steadily to ensure a flat imaging surface. Anesthetized mouse is placed under an upright confocal microscope (Zeiss LSM 880).",
+    "Using a 10X objective, GCaMP6F fluorescence was taken at 5Hz (1 image every 200ms).",
+    "Periods of movement of tissue and luminal contents is normal during live imaging.",
+    "Cell tracking was performed in 2D by using TrackMate ImageJ plugin ( https://imagej.net/TrackMate ) and fluorescence intensity was recorded from cells.",
+    "Average background was determined by taking the fluorescence of a region of interest that did not contain a cell, over the duration of the video. Background was subtracted from cell fluorescence intensities."
+  ],
+  "authors": [
+    "Bryan Yoo",
+    "Jessica Griffiths",
+    "Sarkis Mazmanian"
+  ],
+  "creator": "Jessica Griffiths",
+  "published_on": 1635871917,
+  "created_on": 1635871196,
+  "keywords": []
+}

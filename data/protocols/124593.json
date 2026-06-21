@@ -1,0 +1,38 @@
+{
+  "id": 124593,
+  "title": "HuBMAP Lung TMC UCSD & URMC Protocol Overall for Multimodal Single Cell/Nucleus Assays ",
+  "uri": "hubmap-lung-tmc-ucsd-amp-urmc-protocol-overall-for-d5wr87d6",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l27qpqg1y/v2",
+  "description": "{\"blocks\":[{\"key\":\"cnrjm\",\"text\":\"This protocol is an overview of the protocols in use for the single nuclear RNA sequencing and ATACseq datasets for HubMAP-Lung Tissue Mapping Center, TMC UCSD / TMC URMC.  It includes protocols.io links to each of the individual protocols that make up this project workflow, from processing tissue, sectioning, H\\u0026E imaging the tissue samples, isolation of nuclei from frozen lung tissue, running of multimodal single cell/nucleus assays.uploading the final data to the HuBMAP HIVE.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6ut42\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9jk29\",\"text\":\"See also: Human Kidney, Urinary Tract, and Lung Cell Type Mapping  Pipeline for the Human Biomolecular Atlas Program (HuBMAP) V.2   dx.doi.org/10.17504/protocols.io.bvvin64e\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":132,\"length\":41}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"D85B33FE741E11ED865E0A58A9FEAC02\",\"url\":\"https://dx.doi.org/10.17504/protocols.io.bvvin64e\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"eeam8\",\"text\":\"Required materials are provided within each linked protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Screen and accept donor organs, gross and preserve the tissues into samples for analysis using the protocols: 602.2 Donor Acceptance Criteria for URMC HTC HuBMAP and LungMAP Inclusion dx.doi.org/10.17504/protocols.io.bjuxknxn 603.3 &amp; 604.5_URMC_HTC_Whole Lung and Lobe Processing dx.doi.org/10.17504/protocols.io.biz7kf9n 611.2 URMC HTC Formalin-Inflated, Paraffin-Embedded Human Lung Tissue dx.doi.org/10.17504/protocols.io.bjttknnn 615.1 URMC HTC Non-Inflated Fresh-Frozen Embedded Lung and Associated Tissue dx.doi.org/10.17504/protocols.io.bjtnknme 615.2 URMC HTC Non-Inflated Fresh-Frozen Embedded Lung and Associated Tissue V2 dx.doi.org/10.17504/protocols.io.rm7vz84k2vx1/v2",
+    "Register via the HuBMAP UUID generator at https://ingest.hubmapconsortium.org/ , the Donor, the Organ Lobe, the Tissue Block, and the set of tissue sections ( 40 micron curls) from that block used in single nuclear isolation. common coordinate region information. Record and keep locally the key for the generated UUIDs.",
+    "Register the Tissue Blocks, just registered in the UUID generator, in the Common Coordinate Framework via the Registration User Interface at https://hubmapconsortium.github.io/ccf-ui/rui/",
+    "Create the cryosections to be used in the single nuclear isolation preparation. Generally placing 10 x 40 micron sections in a single cryovial. 624.1_URMC_HTC_Cryosectioning Non-Inflated Fresh-Frozen Embedded Lung for Nuclear Isolation or Multi-plexed In Situ Hybridization dx.doi.org/10.17504/protocols.io.3byl4j91jlo5/v1",
+    "Approximately every 10th section, make a 10 micron section just before and just after, the set of 40 micron curls. Stain these thinner sections by H&amp;E. 621.1.HTC_H&amp;E Stain (Paraffin or Cryosections) dx.doi.org/10.17504/protocols.io.36wgqjnq3vk5/v1",
+    "Isolate single nuclei from the tissue curls using protocol: Frozen lung tissue dissociation for single-nucleus RNA &amp; Chromatin assays dx.doi.org/10.17504/protocols.io.bh26j8he",
+    "Running of multimodal single cell/nucleus assays. 10X snRNA-seq: dx.doi.org/10.17504/protocols.io.86khzcw 10X snATAC-seq: dx.doi.org/10.17504/protocols.io.bvssn6ee SNARE-Seq2: dx.doi.org/10.17504/protocols.io.bzdsp26e",
+    "To Be Added: 10X Chromium Single Cell Multiome ATAC + Gene Expression MERFISH: dx.doi.org/10.17504/protocols.io.rm7vzjy1rlx1/v1 DARTFISH"
+  ],
+  "authors": [
+    "Gloria S Pryhuber",
+    "Elizabeth Duong",
+    "Blue Lake",
+    "Cory Poole",
+    "Heidie Huyck",
+    "Ravi Misra",
+    "Xin Sun",
+    "Jim Hagood",
+    "Dinh H Diep",
+    "Kun Zhang",
+    "Zoey Zhao"
+  ],
+  "creator": "Gloria S Pryhuber",
+  "published_on": 1742323897,
+  "created_on": 1742323661,
+  "keywords": []
+}

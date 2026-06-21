@@ -1,0 +1,31 @@
+{
+  "id": 124720,
+  "title": "Santa Cruz Reaction (SCR): Adapter-Splint Hybridization",
+  "uri": "santa-cruz-reaction-scr-adapter-splint-hybridizati-d52q88dw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg3ke71v25/v1",
+  "description": "{\"blocks\":[{\"key\":\"503j\",\"text\":\"This protocol describes the preparation and hybridization of P5 and P7 adapter-splint complexes for Santa Cruz Reaction library construction. Following this protocol produces 12µM hybridized P5 and P7 adapter-splint complexes for SCR library build.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d46q0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3d9gu\",\"text\":\"This protocol is based on: Kapp, J. D., Green, R. E., \\u0026 Shapiro, B. (2021). A Fast and Efficient Single-stranded Genomic Library Preparation Method Optimized for Ancient DNA. Journal of Heredity, 112(3), 241-249. https://doi.org/10.1093/jhered/esab012\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":213,\"length\":38}],\"data\":{}},{\"key\":\"cct57\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5d532\",\"text\":\"Always cite the original paper (Kapp et al. 2021) when using this protocol, in addition to citing this protocols.io protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":30}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"172E3F2A0B1F11F09B720A58A9FEAC02\",\"url\":\"https://doi.org/10.1093/jhered/esab012\"}}}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"1d7j7\",\"text\":\"UV-treat aliquots (ddH2O, etc.) for 10 minutes before use.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5b26h\",\"text\":\"Well mix all the reagents before use.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"90b4i\",\"text\":\"Do not UV Eppendorf Tubes/PCR tubes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5fien\",\"text\":\"Clean all surfaces with 5% bleach solution followed by 70% ethanol before and after use.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"avpuo\",\"text\":\"Clean all equipment with 70% ethanol before and after use.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Prepare TE buffer in which to resuspend adapters Store TE buffer at room temperature Reagents: 1M Tris-HCl, pH 8.0 Invitrogen - Thermo Fisher Catalog #15568025 UltraPure™ 0.5M EDTA pH 8.0 Thermo Fisher Scientific Catalog #15575020 Table 1 TE buffer preparation %s %s ComponentCalculationVolume10mM Tris-HCl (1M stock)( \\frac{0.01M \\times 4ml}{1M} = 0.04ml )40µL1mM EDTA (0.5M stock)( \\frac{0.001M \\times 4ml}{0.5M} = 0.008ml )8µLH₂O( 4000µL - 48µL = 3952µL )3952µL Note: Final TE buffer volume depends on required amount per oligo for 100mM (rounded to 4ml for 4 tubes).",
+    "Resuspend all oligos to 100µM using TE buffer. Make sure all the oligos are well mixed by vortexing and mixing by pipetting. Use Table 2 as a template. Before resuspending the oligos, centrifuge the tubes for 30s at maximum speed. This ensures the dry film of oligos is at the bottom of the tube, as sometimes these can come loose and might fall out of the tube when you open it. The volume TE buffer used for resuspension depends on the molar or ng amount of oligo in the tube - this information is usually provided on the tube itself or the accompanying paperwork. Table 2 Oligonucleotides sequences (IDT Format, 5’ → 3’) and the volume of TE required to reach a final concentration of 100 µM. %s %s OligoSequenceSize (bp)Oligo AmtTE for 100mMP5 Adapter/5AmMC12/ACACTCTTTCCCTACACGACGCTCTTCCGATCT33--P5 Splint/5AmMC6/NNNNNNNAGATCGGAAGAGCGTCGTGTAGGGAAAGAGTGT/3AmMO/40--P7 Adapter/5Phos/AGATCGGAAGAGCACACGTCTGAACTCCAGTCAC/3AmMO/34--P7 Splint/5AmMC12/GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCTNNNNNNN/3AmMO/41--",
+    "P7 Adapter-Splint Hybridization: 12µM (50µL) Reagent: 10X T4 RNA Ligase Reaction Buffer - 3.0 ml New England Biolabs Catalog #B0216L Table 4 P7 adapter-splint recipe. %s %s",
+    "Add components from the Adapter Hybridization Recipe to separate 0.2mL PCR tubes (one for P5, one for P7). Ensure proper mixing by pipetting or flicking the tube and spinning down in a minicentrifuge.",
+    "Perform hybridization in a thermocycler with heated lid ( 105 °C ): Adapter-splint hybridization reaction conditions. %s %s",
+    "Store hybridized P5 (12 µM) and P7 (12 µM) adapter stock solutions at -20 °C.",
+    "P5 Adapter-Splint Hybridization: 12µM (50µL) Reagent: 10X T4 RNA Ligase Reaction Buffer - 3.0 ml New England Biolabs Catalog #B0216L Table 3 P5 adapter-splint recipe. %s %s",
+    "Oligo Sequences &amp; Resuspension Note: All oligonucleotides are ordered with HPLC purification conducted by IDT. Note: It is recommended by Kapp et al. (2021) to order two separate batches of each splint oligonucleotide. See oligonucleotide quality control recommendations in section 11 of Kapp et al. (2021) Supplementary Material. The oligonucleotides are usually delivered as a dry film in a 2 mL tube."
+  ],
+  "authors": [
+    "Alba Rey-Iglesia",
+    "Vanssy Li",
+    "Deon de Jager",
+    "Eline Lorenzen"
+  ],
+  "creator": "Vanssy Li",
+  "published_on": 1743681617,
+  "created_on": 1742472251,
+  "keywords": []
+}

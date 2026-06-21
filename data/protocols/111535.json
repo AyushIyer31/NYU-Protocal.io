@@ -1,0 +1,36 @@
+{
+  "id": 111535,
+  "title": "Current clamp recordings",
+  "uri": "current-clamp-recordings-dq6p5zdn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ldr3n8g5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"e3rhd\",\"text\":\"To better understand LRRK2 effects on intrinsic iSPNs adaptations, Drd2-eGFP BAC reporter mice were injected with haloperidol, haloperidol + MLi-2, or vehicle controls for 14 days. Then, we performed whole-cell current-clamp recordings on identified iSPNs in ex vivo striatal slices. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":67,\"length\":10}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Drd2-eGFP mice were treated with either haloperidol or haloperidol plus LRRK2 inhibitor(MLi-2) for 14 days.",
+    "On day 15 or 16, mice were deeply anesthetized on isoflurane (3%) prior to perfusion with ice-cold aCSF containing in (mM): 127 NaCl, 2.5 KCl, 1.25 NaH2PO4, 25 NaHCO3, 20 glucose, 2 CaCl2, and 1 MgCl2.",
+    "Brains were dissected and sectioned on a Leica vibratome (VT1000S) to 300 um thickness.",
+    "Slices were transferred to a holding chamber and incubated at 34°C for 20 minutes prior to recordings.",
+    "Slices were placed in the recording chamber at RT and continually perfused with oxygenated aCSF with 1mM scopolamine to block cholinergic interneuron firing.",
+    "The dorsal striatum was located under a 10x air objective, then switched to a 60x water immersion objective was used to target neurons for recording (Olympus, Tokyo, Japan). Slices were visualized using DIC and a QIClick microscope camera (QImaging, Surrey, Canada). GFP-positive cells were selected using a CoolLED pe4000 system (CoolLED Ltd., Andover,UK).",
+    "Patch electrodes were pulled from borosilicate capillary glass to a resistance of 2.5–6 MΩ. Electrodes were filled with an intracellular solution comprised of (in mM) 135 K-gluconate, 4 KCl, 10 HEPES, 10 Na-phosphocreatine, 4 MgATP, 0.4 Na2GTP, 1 EGTA, 20 µM Alexa 594 (pH 7.28, 298-305 mOsm/L).",
+    "After break-in, cells were held for ~5-10 minutes prior to current clamp recordings.",
+    "Recordings were acquired using a Multiclamp 700B amplifier (Axon Instruments, Union City, CA), digitized at a rate of 20 kHz, and filtered at a rate of 3-4 kHz.",
+    "Five second-long sweeps were acquired using a version of the MATLAB-based (MathWorks, Natick, MA) acquisition suite, ScanImage.",
+    "A series of 500 ms-long current steps from -50 to 300 pA were pseudorandomized. Current steps occurred one second after the start of the sweep,with a 20 ms-long,-20 pA current step added at the end of the sweep to test input resistance throughout the recording.",
+    "Cells with input resistance that changed &gt;10% over the recording were discarded. Sweeps occurred with an inter-sweep interval of 10-20 seconds. A minimum of five sweeps for each current step magnitude was obtained.",
+    "Average firing rate at each current step was determined using custom built MatLab code.",
+    "All values are reported as Hz. Firing rate values were then exported to GraphPad Prism (GraphPad, LaJolla, CA) for data visualization and statistics."
+  ],
+  "authors": [
+    "Chuyu Chen",
+    "Loukia Parisiadou",
+    "Yevgenia Kozorovitskiy"
+  ],
+  "creator": "Chuyu Chen",
+  "published_on": 1730748816,
+  "created_on": 1730743930,
+  "keywords": []
+}

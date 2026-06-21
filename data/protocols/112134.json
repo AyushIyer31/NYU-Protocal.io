@@ -1,0 +1,37 @@
+{
+  "id": 112134,
+  "title": "Genotyping the SNP rs1143634 of the gene Interleukin-1β with Real-Time Polymerase Chain Reaction (PCR) in dengue patients ",
+  "uri": "genotyping-the-snp-rs1143634-of-the-gene-interleuk-drre553e",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvr9ow3vmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"blflf\",\"text\":\"Interleukin 1 (IL-1) plays a role in regulating inflammatory responses and is crucial for both innate and adaptive immunity. The secretion of IL-1β can influence various biochemical, physiological and pathological functions in the body, ranging from polarization towards a Th1 response and intensification of pro-inflammatory mediators in the acute phase, to stimulation of chronic inflammation and carcinogenic potential in some cases. In addition, dengue cases are alarmingly high every year, reaching thousands of cases in Brazil and Latin America.  The increase in severe cases of dengue may be related to genetic factors, such as the SNP rs1143634 (G\\u003eA) in the interleukin 1- Beta (IL-1β) gene. Although synonymous, this SNP can influence the immune response, potentially aggravating the infection. \",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"5tkmd\",\"text\":\"PCR 96- Well Plate (DNASE FREE) \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":20,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"c73m0\",\"text\":\"SEALANT \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1lgaa\",\"text\":\"PIPETTE  (V°: 2/ 10/ 20 MICROLITERS)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4lbst\",\"text\":\"TIP (V°: 2/ 10/ 20 Microliters  DNASE FREE with Filter )\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":32,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4t9o\",\"text\":\"DNA SAMPLE - Extracted and Quantified \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"84or1\",\"text\":\"MASTER MIX (THERMO FISHER)      \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f7euk\",\"text\":\"TAQMAN GENOTYPING ASSAY (THERMO\\nFISHER) \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7r2ti\",\"text\":\"NUCLEASE-FREE WATER\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "GENERAL ASPECTS Definition: The polymerase chain reaction (PCR) is a technique used to detect RNA and DNA, with the test focusing on DNA. This technique, also known as quantitative PCR or quantitative real-time PCR, is a method of simultaneously quantifying and amplifying DNA. Real-time PCR is based on the detection and quantification of a fluorescent compound (during the early stages of PCR), based on the basic principle that the significant increase in the amount of PCR product correlates with the initial amount of the control. This technique requires only 3 picograms of material, which is around 1000 times less genetic material than conventional assays. Objective: Quantify and amplify a specific DNA sequence (SNP IL-1β rs1143634), identifying the presence of the SNP.",
+    "Before starting During the extraction of human DNA, attention must be paid to possible sources of contamination, as well as to the manufacturer&#39;s recommendations. Figure 1 : Extraction of human DNA by PureLink‱ Genomic DNA Mini Kit (Invitrogen), for future genotype detection.",
+    "20240603_162117 (1).mp4 PERSONAL PROTECTIVE EQUIPMENT Nitrile gloves Disposable cloak/sleeved jacket Goggles Surgical mask Gown",
+    "REAGENTS NEEDED PCR 96- Well Plate ( DNA&#39;SE FREE ) SEALANT PIPETTE (V°: 2/ 10/ 20 MICROLITERS) TIP (V°: 2/ 10/ 20 Microliters DNA&#39;SE FREE with Filter ) DNA SAMPLE - Extracted and Quantified MASTER MIX (THERMO FISHER) TAQMAN GENOTYPING ASSAY C___9546517_10 (THERMO FISHER Scientific) NUCLEASE-FREE WATER",
+    "%s %s",
+    "CYCLING PANEL PCR was carried out using Roche&#39;s LightCycler 480 II thermal cycler. Roche&#39;s LightCycler 480 II thermal cycler %s %s",
+    "Equipment: 96-well plate Functions: To carry out the reaction. Note: The plate has a specific barcode, so it cannot be reused.",
+    "Process: Mix each solution well and centrifuge or Multi Mix (Vortex) for up to 1 minute to remove air bubbles.",
+    "Equipment : 96-welloptical plate Functions: Mix the volumes of each reagent in each well of the plate up to the pre-set volume.",
+    "Equipment: Close the plate with the sealant, then centrifuge for another 5 minutes to remove the air bubbles until well homogenized.",
+    "Equipment: Store the plate with the samples for up to 72 hours.",
+    "After identifying the non-conformity, describe it in detail in the laboratory log. Describe the errors and the actions taken to correct them.",
+    "Call technical assistance if the equipment is faulty or out of calibration.",
+    "After real-time PCR, when the curves of each sample are analyzed, the genotypes are recognized as Wild (GG), being those that have not mutated, Heterozygous (GA), with an exchange of nitrogenous bases in one chromosome and finally Mutant (AA) with total exchange. In the Roche thermal cycler they are identified by color, Wild (GG) by blue, Heterozygous (GA) by red and Mutant (AA) by green. This data will be analyzed by statistics using the R studio software. Figure 3: Result after real-time PCR."
+  ],
+  "authors": [
+    "Raquel da Silva Carvalho",
+    "Vanessa Rafaela Milhomen Cruz Leite",
+    "Jéssica arletto de Sousa Barros",
+    "Irmtraut Araci Hoffmann Pfrimer"
+  ],
+  "creator": "Raquel da Silva Carvalho",
+  "published_on": 1742547207,
+  "created_on": 1731612686,
+  "keywords": []
+}

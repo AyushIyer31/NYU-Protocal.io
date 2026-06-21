@@ -1,0 +1,32 @@
+{
+  "id": 119067,
+  "title": "Unveiling Hub Genes and Biological Pathways: A Bioinformatics Analysis of Trauma-Induced Coagulopathy (TIC)",
+  "uri": "unveiling-hub-genes-and-biological-pathways-a-bioi-dyh37t8n",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l29bz4v1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"3d0ne\",\"text\":\"This protocol outlines a bioinformatics approach to identify hub genes and associated pathways in Trauma-Induced Coagulopathy (TIC) using microarray datasets from the GEO database. The methodology includes the identification of differentially expressed genes (DEGs), pathway analysis, and the construction of a Protein-Protein Interaction (PPI) network. The expected results include the identification of key genes and pathways associated with TIC, which could lead to novel biomarkers for its diagnosis and therapeutic targets.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"43db4\",\"text\":\"Materials Required\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5e1hf\",\"text\":\"Microarray Dataset:\\nDataset Name: GSE223245\\nSource: Gene Expression Omnibus (GEO) Database\\nDescription: This dataset includes gene expression data used for the identification of differentially expressed genes (DEGs) associated with trauma-induced coagulopathy (TIC).\\nSoftware and Tools:\\nR (v4.0 or higher): For statistical analysis and DEG identification.\\nBioconductor packages: Used for data preprocessing and DEG analysis (e.g., limma,edgeR).\\nCytoscape (v3.8.2 or higher): For constructing the Protein-Protein Interaction (PPI) network.\\nCytoHubba plugin: To identify hub genes in the PPI network.\\nMCODE plugin: For module detection in the PPI network.\\nCTD (Comparative Toxicogenomics Database): Used for further analysis of gene-disease associations.\\nWeb Tools:\\nDAVID (Database for Annotation, Visualization, and Integrated Discovery): For GO and KEGG pathway enrichment analysis.\\nROC Analysis Software:\\nR (v4.0 or higher): For conducting Receiver Operating Characteristic (ROC) curve analysis to evaluate the diagnostic potential of hub genes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":18},{\"style\":\"bold\",\"offset\":20,\"length\":12},{\"style\":\"bold\",\"offset\":44,\"length\":6},{\"style\":\"bold\",\"offset\":91,\"length\":11},{\"style\":\"bold\",\"offset\":267,\"length\":18},{\"style\":\"bold\",\"offset\":287,\"length\":18},{\"style\":\"bold\",\"offset\":356,\"length\":21},{\"style\":\"bold\",\"offset\":445,\"length\":28},{\"style\":\"bold\",\"offset\":539,\"length\":16},{\"style\":\"bold\",\"offset\":599,\"length\":12},{\"style\":\"bold\",\"offset\":654,\"length\":41},{\"style\":\"bold\",\"offset\":753,\"length\":9},{\"style\":\"bold\",\"offset\":764,\"length\":72},{\"style\":\"bold\",\"offset\":883,\"length\":21},{\"style\":\"bold\",\"offset\":906,\"length\":18}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Data Acquisition Objective : Obtain microarray datasets for analysis. Action : Download the dataset GSE223245 from the Gene Expression Omnibus (GEO) database.",
+    "Identification of Differentially Expressed Genes (DEGs) Objective : Identify the DEGs from the dataset. Action : Process the dataset to extract upregulated and downregulated genes.",
+    "Functional Enrichment Analysis (GO and KEGG) Objective : Perform gene functional enrichment analysis. Action : Conduct Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway analyses on the DEGs.",
+    "Construction of Gene-Concept Network Objective : Establish a relationship between the genes and their functions. Action : Construct a gene-concept network to visualize gene interactions and functions.",
+    "Construction of Protein-Protein Interaction (PPI) Network Objective : Build a PPI network for further analysis. Action : Use CytoHubba, MCODE, and CTD scores to identify hub genes linked to trauma-induced coagulopathy (TIC).",
+    "Identification of Hub Genes Objective : Identify significant hub genes related to TIC. Action : Analyze the PPI network to pinpoint crucial hub genes.",
+    "ROC Analysis of Hub Genes Objective : Evaluate the diagnostic potential of the hub genes. Action : Perform Receiver Operating Characteristic (ROC) analysis on the hub genes to assess their clinical relevance."
+  ],
+  "authors": [
+    "lin gang zhang",
+    "Bo Li",
+    "Jing Liu",
+    "Yanfeng Bian",
+    "Ying Zhou",
+    "Ying Zhou"
+  ],
+  "creator": "lin gang zhang",
+  "published_on": 1737991396,
+  "created_on": 1737812765,
+  "keywords": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": 99677,
+  "title": "NMR Serum Sample Preparation for NMR metabolomics",
+  "uri": "nmr-serum-sample-preparation-for-nmr-metabolomics-ddj524q6",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv5rj6jg1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"k9iv\",\"text\":\"This is a modified protocol to conduct NMR metabolomics for serum samples using methanol extraction. This protocol was originally proposed by: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a1em8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3mu45\",\"text\":\"Nagana Gowda, N.G., Raftery,D.Quantitating Metabolites in Protein Precipitated Serum UsingNMR Spectroscopy. Analytical Chemistry 2014,86 (11),5433–5440.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"euprr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fujui\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9dqq0\",\"text\":\"Frozen samples should be thawed in    cold room or on ice. All sample preparation has to be done in    cold room or on ice. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":35,\"length\":1},{\"key\":1,\"offset\":100,\"length\":1}],\"data\":{}},{\"key\":\"6vjcn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"temperature\",\"mutability\":\"MUTABLE\",\"data\":{\"error_temperature\":false,\"guid\":\"\",\"id\":0,\"label\":\"\",\"scientificNotation\":false,\"temperature\":\"4\",\"unit\":10}},\"1\":{\"type\":\"temperature\",\"mutability\":\"MUTABLE\",\"data\":{\"error_temperature\":false,\"guid\":\"BE1D2C0AB8D311F084F00A58A9FEAC02\",\"id\":0,\"label\":\"\",\"scientificNotation\":false,\"temperature\":\"4\",\"unit\":10}}}}",
+  "before_start": "{\"blocks\":[{\"key\":\"fhuv7\",\"text\":\"Before you start, samples should be randomized and include QA/QC and pooled samples for 2D runs. All tubes should be prelabeled. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"19v0d\",\"text\":\"Chemicals and Reagents \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"281hr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c1li5\",\"text\":\"NaH2PO4, Sodium phosphate monobasic anhydrous\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"65mbu\",\"text\":\"HPO4, Sodium phosphate dibasic\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"46gi3\",\"text\":\"HCl, Hydrochloric acid\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dcrvq\",\"text\":\"NaOH, Sodium hydroxide\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2rcti\",\"text\":\"D2O, Deuteriumoxide, 99.9 atom % D\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6mri6\",\"text\":\"DSS-D6, Sodium 2,2-dimethyl-2-silapentane-5-sulfonate, 98atom % D\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cpe70\",\"text\":\"Methanol\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8v6q2\",\"text\":\"Pooled quality control \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"tohq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6dg9t\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fk5bf\",\"text\":\"alibrated micropipettes (100-µl, 200-µl, and 1000-µl)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4dejv\",\"text\":\"Pipette tips\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5igib\",\"text\":\"Labels\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8634a\",\"text\":\"250-ml volumetric flask\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9d41j\",\"text\":\"Speed-vac concentrator\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bp075\",\"text\":\"Vortex mixer\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fnmbu\",\"text\":\"Eppendorf centriguge\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9r8ok\",\"text\":\"1.5-ml Eppendorf tubes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fcek9\",\"text\":\"5-mm SampleJet NMR tubes (Bruker)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bt6gs\",\"text\":\"Analytical weighing balance\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e5s67\",\"text\":\"pH meter\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "In a 250 ml volumetric flask, dissolve 2321.55 mg of anhydrous NaH 2 PO 4 and 802.25 mg of Na 2 HPO4 in 200 mL of D2O.",
+    "Transfer 580 µL into 5-mm NMR tube",
+    "Centrifuge the samples for 00:00:10",
+    "Vortex the samples for 00:15:00",
+    "Add 600 µL of NMR buffer to each sample to resuspend the pellets",
+    "Thaw the sample on ice or in 4 °C",
+    "Dry the samples in a speed-vac concentrator (time depends on the sample condition) Store the dry pellets in -80 °C if needed",
+    "Transfer the supernatant of each sample to a new tube",
+    "Centrifuge the samples at 16000 rcf for 00:30:00",
+    "Vortex the samples and incubate the samples in -20 °C for 00:20:00",
+    "Aliquot 800 µL of sample",
+    "Add MeOH to samples on ice at a 3:1 methanol-to-sample ratio 750 µL MeOH 250 µL neat sera for pre-challenge samples 1200 µL MeOH 400 µL near sera for post-challenge samples",
+    "Thaw samples on ice or at 4 °C",
+    "Add 833.25 µL of 0.1 DSS-D6 stock solution (1/3 of 1mM DSS when mixed with sample)",
+    "Adjust the pH to pH 7.0 using HCL or NaOH",
+    "Adjust the volume to 250 mL with D 2 O and mix well",
+    "Recheck the pH",
+    "Store the buffer at 4 °C"
+  ],
+  "authors": [
+    "Deanna Lanier",
+    "Mario Uchimiya",
+    "Arthur Edison"
+  ],
+  "creator": "Deanna Lanier",
+  "published_on": 1771554845,
+  "created_on": 1715619798,
+  "keywords": []
+}

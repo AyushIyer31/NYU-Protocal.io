@@ -1,0 +1,39 @@
+{
+  "id": 63010,
+  "title": "Real time-quaking induced conversion assay (RT-QUIC)",
+  "uri": "real-time-quaking-induced-conversion-assay-rt-quic-b9sar6ae",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvr67kpvmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"7ndko\",\"text\":\"Seeded-amplification assay (SAA) method for the detection of pathology-associated aggregation-templating competent forms of alpha-synuclein and other interacting factors.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Place single zirconia bead into each well of the Corning® 384-well Black/Clear Bottom Low Flange Ultra-Low Attachment Microplate Bulk Packed Corning Catalog #4588 BioSpec Products 2.3 mm Zirconia/Silica Beads 1 lb bottle Fisher Scientific Catalog #NC0451999 Tweezers TEDPELLA Catalog #534",
+    "Thaw down a-syn monomer and sonicated fibril aliquots On ice , do not generate bubbles by pipetting",
+    "Measure monomer concentration via Nanodrop Add 3 µL of 10x diluted aliquot in PBS onto nanodrop piedestal; Parameters: other proteins; coefficient extinction: 5.98; MW: 14.4 kDA Perform two measurements and confirm &lt;10% standard error between two measurements If necessary, prepare 20X and 30X dilutions to confirm findings. NanoDrop™ One/OneC Microvolume UV-Vis Spectrophotometer (UV-Vis Spectrophotometer, Thermo Scientific, ND-ONE-W)",
+    "Calculate the volume of monomer need following: 0.3 mg/mL monomer in a reaction mix X 30 µL per well 30 ul (reaction volume) * 3 (replicates) * ____ (different conditions) = _____ul; Dilute the monomer preparation with 1X PBS (Phosphate-buffered saline ) to 2.5 mg/mL in order to filter the protein preparation for a high efficiency",
+    "Use Amicon Ultra-0.5 Centrifugal Filter Unit 24 pack Merck Millipore (EMD Millipore) Catalog #UFC505024 to filter out possible aggregates or HMW contaminates",
+    "Meantime measure concentration of sonicated fibrils: prepare serial dilutions: 2x; 4x; 8x in 3 Molarity (M) Guanidine HCL, volume: 10 µL 250g Guanidine hydrochloride G-Biosciences Catalog #BC85 Add 3 µL onto nanodrop piedestal; Parameters: other proteins; coefficient extinction: 5.98; MW: 14.4 kDA Blank against 3 Molarity (M) Guanidine HCL; Perform two measurements for each dilution and confirm &lt;10% standard error between two measurements NanoDrop™ One UV-Vis Spectrophotometer (spectrophotometer, Thermo Scientific, ND-ONE-W, Sample Volume (Metric): Minimum 1µL; Spectral Bandwidth: ≤1.8 nm (FWHM at Hg 254 nm); System Requirements: Windows™ 8.1 and 10, 64 bit; Voltage: 12 V (DC); Wavelength Range: 190–850 nm, https://www.thermofisher.com/order/catalog/product/ND-ONE-W )",
+    "Measure DLS data for sonicated fibrils Dynamic Light Scattering measurements by andrew.west west",
+    "Prepare serial dilutions of sonicated fibrils: Prepare solution: 1 mg/mL measured PFFs ( 20 µL volume); 1. 10 ug/ml: 10 ul PFFs + 990 ul of PBS; 2. 1000 ng/ml: 10 ul PFFs + 90 ul of PBS; 3. 100 ng/ml: 10 ul PFFs + 90 ul of PBS; 4. 10 ng/ml: 10 ul PFFs + 90 ul of PBS; 5. 1 ng/ml: 10 ul PFFs + 90 ul of PBS; 6. 100 pg/ml: 10 ul PFFs + 90 ul of PBS; 7. 10 pg/ml: 10 ul PFFs + 90 ul of PBS; 8. 1 pg/ml: 10 ul PFFs + 90 ul of PBS; 9. 100 fg/ml: 10 ul PFFs + 90 ul of PBS; 10. 10 fg/ml: 10 ul PFFs + 90 ul of PBS;",
+    "Prepare reaction mix: 0.3 mg/mL monomer in a reaction mix + 10 micromolar (µM) Thioflavin T Merck MilliporeSigma (Sigma-Aldrich) Catalog #T3516 in PBS (account for 10% volume to add) = __ 30 µL reaction * triplicates * sample number (include standard curve of PFFs serial dilutions, 10 reactions in triplicates) [total volume * 0.1% = total volume - (total volume * 0.1%)] - [volume of filtered monomer at __ mg/mL after filter] - [ThT volume] = __ volume of PBS",
+    "Prepare a standard curve using PFFs dilutions from go to step #8 1. 100 ng/ml: 10 ul of #2 (from step 8) + 90 ul of reaction mix; 2. 10 ng/ml: 10 ul of #3 (from step 8) + 90 ul of reaction mix; 3. 1 ng/ml: 10 ul of #4 (from step 8) + 90 ul of reaction mix; 4. 100 pg/ml: 10 ul of #5 (from step 8) + 90 ul of reaction mix; 5. 10 pg/ml: 10 ul of #6 (from step 8) + 90 ul of reaction mix; 6. 1 pg/ml: 10 ul of #7 (from step 8) + 90 ul of reaction mix; 7. 100 fg/ml: 10 ul of #8 (from step 8) + 90 ul of reaction mix; 8. 10 fg/ml: 10 ul of #9 (from step 8) + 90 ul of reaction mix; 9. 1 fg/ml: 10 ul of #10 (from step 8) + 90 ul of reaction mix; 10. PBS: 10 ul of PBS + 90 ul of reaction mix;",
+    "Transfer reaction to the plate: start filling the plate with a standard curve samples (seal the portion with a sealing foil) PCR Plate Heat Seal foil piercable Bio-Rad Laboratories Catalog #1814040 Proceed the experimental samples and cover the whole plate with a sealing foil. Spin down the plate 500 x g, °C, for 00:00:30 Eppendorf™ 022620572 (Microcentrifuges with a plate rotor, Eppendorf, 13-690-003) Example of the plate layout:",
+    "Set up the program on a plate reader Omega - RT-QuIC / PRION Version - Fluorescence Base (BMG Fluostar plate reader, BMG, 0415-102P)",
+    "Finish the experiment once standard curve reached the plateau EXAMPLE: Plateau is reached at7 hours.",
+    "The main advantage of qQuiC analysis is capability to calculate exact amount of fibril forming units in pathological samples relatively to an appropriate standard curve. The approach of calculation FFUs consists of using standard curve with a range of serial dilutions of evaluated ssFibrils spiked in original matrix of the sample. Obtained ThT FL units for each time point and dilution are needed to define an appropriate threshold value needed to define C T values. To find a threshold value we built a program that can find an increase in the rates of changes greater than X present for fluorescence values in each replicate. The program looks at three points at a time and compares the rate of change from the first point to the second point against the second point to the third point. Once it finds the point where the rate of change increases by X present from one jump to the next the program stores that value to calculate the threshold value for each sample at X percent as the cutoff difference in the rates of change. The code loops through all of the replicates &gt;30 times to check every percent threshold for X from 10% to 30% and returns the threshold value that yield the highest R-squared in a standard curve that is made from the mean C T values for each replicate. When threshold value is found C T value for each dilution can be determined as a time when ThT fluorescence reaches to a threshold. If R-square is higher than 0.8 than efficacy of the reaction is enough to be able to calculate FFUs. To define FFUs of experimental samples we applied an extracted equation from linear regression curve. Code for a program https://github.com/west-lab/FibrilOptimization/blob/master/FibrilPaperCode_main.py This step is required to QC the reaction by evaluating the standard curve and finding the Ct values for experimental conditions",
+    "Use mean half-time of the reaction by analyzing the Ct values of the standard curve",
+    "Convert collected data from plate reader into .xlsx type EXAMPLE:",
+    "Extract RFU values for each condition EXAMPLE:",
+    "Use the extracted data to generate a plot or a group analysis via GraphPad"
+  ],
+  "authors": [
+    "andrew.west west",
+    "Arpine Sokratian"
+  ],
+  "creator": "andrew.west west",
+  "published_on": 1705334381,
+  "created_on": 1653256661,
+  "keywords": []
+}

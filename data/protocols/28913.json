@@ -1,0 +1,34 @@
+{
+  "id": 28913,
+  "title": "Plate reader setting",
+  "uri": "plate-reader-setting-8grhtv6",
+  "doi": "dx.doi.org/10.17504/protocols.io.8grhtv6",
+  "description": "{\"blocks\":[{\"key\":\"5plef\",\"text\":\"A brief guideline of setting the plate reader to measure the sfGFP production.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"60b3o\",\"text\":\"This protocol is a supplemental guideline for Toehold functionality test, it is developed based on PerkinElmer VICTOR X3, certain terminologies might vary from different equipments, please check the instruction of your own plate reader when some of the steps are unclear.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2imql\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"akda1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Create a new protocol in PerkinElmer by clicking start wizard in Victor Workstation. Name it as the substance you want to measure. In our case sfGFP, select a folder to save the protocol. Click Next&gt; .",
+    "Select the plate you are using for the measurement, it allows the plate reader to have a default setting of the position of each well according to the plate you chose, we used NUNC 384 . Click Next&gt;.",
+    "Select or create the label we are using for the measurement, the label is usually named as the substance you are testing it gives setting for lamp, filter and counting time for the measurement. Click Label (the fourth icon)on the right navigation bar to add labels and search in Fluorometry tab to see if there is already existing sfGFP label. If yes, choose that label, skip the sub-steps, and click Next&gt; to proceed to step 4.",
+    "Assuming there is no existing sfGFP label, in Fluorometry tab Add a new label, name it sfGFP, click OK.",
+    "Set CW-Lamp Energy : 17000 (depends on excitation wave length) Set CW-Lamp Control : Stabilized Energy Set CW-Lamp Filter : F485 (Excitation filter) Set Emission Filter : F535 Set Emission Aperture : Normal (4mm in diameter) Set Counter position : Bottom Set Counting time : 0.2 s Click OK",
+    "Select the label you just create( sfGFP ) click OK then Next&gt;",
+    "Select the wells you are going to measure, (each time when you start a measurement, check and modify the wells you are measuring). Click Next&gt; . If there is no additional information or description you want to add, click Finish to start the measurement.",
+    "A shaking procedure is recommended to be added before measurement.This step tells how to include shaking.",
+    "In PerkinElmer 2030 Manager interface: Select Protocol editor (third icon on the second tab row), Click Measurement tab, On the right there is a column of events, Click Shake.",
+    "Set Shaking duration : 1.0s Set Shaking speed : Normal Set Shaking diameter : 0.10mm Set Shaking type : Linear Set Repeated operation : No Click OK",
+    "Because we want to shake it before each measurement, select Shake and click the up-pointing arrow on the left make sure it&#39;s on the top of sfGFP label.",
+    "Our PURE expression is carried on in 37 °C , set the temperature to 37 °C",
+    "Wait until the plate reader reaches the desired temperature, click Start icon to start the measurement. Once a protocol is created it can be used for the same measurement next time, but don&#39;t forget to modify the wells you are measuring.",
+    "In PerkinElmer 2030 Manager interface: Select Temperature tab, Turn on Plate heating option, Set target temperature to 37 °C , Click Apply"
+  ],
+  "authors": [
+    "Junyan Qian"
+  ],
+  "creator": "Junyan Qian",
+  "published_on": 1571483929,
+  "created_on": 1571478200,
+  "keywords": []
+}

@@ -1,0 +1,38 @@
+{
+  "id": 105343,
+  "title": "FACS Nuclei Isolation ",
+  "uri": "facs-nuclei-isolation-di474gzn",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l2qbwql1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"r5e9\",\"text\":\"This protocol details the isolation of nuclei from frozen tissue for subsequent single-nuclei sequencing using a droplet-based platform, such as 10X Genomics. The procedure emphasizes maintaining the integrity of nuclei and minimizing RNA degradation, using a series of specialized buffers and careful handling techniques.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Procedure",
+    "Pre-Cooling: Ensure all buffers are cooled to 4 °C before use Pre-cool centrifuge, tubes, well plates, 26-gauge needle, 40 µm cell strainer, and syringe at 4 °C for at least 20 minutes.",
+    "Tissue Dissociation: Transfer the frozen tissue sample to the prepared 6-well plate using 150 µL of ExB buffer. Triturate by pipetting the 1 mL volume slowly up and down using a 1 mL Rainin pipette tip (#30389212) without creating froth or bubbles. Perform 25-30 strokes, pause for 2 minutes, and repeat 4-5 times. Monitor progress; add a fifth pass only if dissociation appears incomplete. Pass the entire volume through a 26-gauge needle twice into the same well.",
+    "Sample Processing: Transfer the extracted sample (~1 mL) into a 50 mL Falcon tube. Add 30 mL of wash buffer to dissociate the nuclei, then split the volume between two pre-coated Falcon tubes (15+ mL each) Centrifuge at 600xg for 10 minutes at 4°C.",
+    "Supernatant Removal: Aspirate the supernatant, leaving 500 µL in each tube. Pool the two samples to obtain 1 mL of nuclei suspension. Filter the sample through a pre-cooled 40 µm cell strainer using gravity only (no pressure) into a new, clean, pre-cooled Falcon tube.",
+    "Staining: Transfer and measure the volume of the filtrate into a pre-cooled 1.5 mL Eppendorf tube. Stain the nuclei by adding DAPI (Thermo, #62248) at a 1:1000 dilution.",
+    "FACS Preparation: Coat a 0.2 mL PCR tube with 5% BSA. Use a chilled 96-well FACS plate (Sony M800 FACSorter) to capture nuclei in the PCR tube. Pre-fill the PCR tube with 20 µL of CDB to cushion the FACS stream/nuclei.",
+    "FACS Sorting: Perform FACS enrichment for singlets using the singlet DAPI peak. Sort at speed 6 with a forward scatter gain of 1% on the DAPI gate. Use the &#34;purity&#34; mode. Avoid spinning down after FACS unless using the gentle spin protocol.",
+    "We FACS on a Sony SH800 sorter, using a 70um chip, with these settings: FACS Settings: Instrument: Sony SH800/SH900 cell sorter Chip: 70 µm chip Gating: Focus on the singlet DAPI peak to enrich for singlet nuclei. DAPI peak: y axis = events, x axis = brilliant violet 421-A DAPI gate on purity mode Sample pressure of 3-6 Cell size on regular Sort rate at 4eps We gate on the singlet DAPI peak:",
+    "Prepare Reagents and Buffers ALL buffers to be cooled to 4 °C before use",
+    "Dissociation Buffer (DB) Preparation : Dissolve these components in ultrapure, nuclease-free water to a final volume of 500 mL 5.83 g, Na2so4 2.615 g, K2SO4 0.905 g, Glucose 1.2 g, HEPES 2.5 mL, MgCl2",
+    "Extraction Buffer (ExB): 15 mL, DB (Dissociation Buffer) 150 mg, Kollidon VA64 150 µL, TX-100 (final concentration 1%) 15 µL, 10% BSA (final concentration 0.01%) RNase inhibitor: 1 tube (Lucigen, 10,000 units)",
+    "Wash Buffer (WB): Prepare 30 mL per sample 30 mL, DB (Dissociation Buffer) 30 µL, 10%BSA 50 µL of RNase inhibitor (Lucigen, 10,000 units)",
+    "FACS Capture Buffer ( CDB): 20 mL, Dissociation Buffer (DB) 20 µL, 10% BSA RNase inhibitor: 1 tube (Lucigen, 10,000 units)",
+    "Prepare: 5% BSA–DB for FACS (Prepare 200 µL, per sample )",
+    "Collection of FACS-Sorted Samples: To ensure the integrity and minimal collection volume of FACS-sorted nuclei, samples are collected in PCR tubes positioned within a chilled (-20°C) 96-well cold block. This setup is essential to maintain nuclei quality and prevent degradation. A suitable cold block can be found here: Eppendorf PCR Coolers.",
+    "1. Volume Measurement: Use a pipette to accurately determine the volume of the collected nuclei suspension in each PCR tube post-FACS. 2. Dilution Preparation: Prepare a 1:10 dilution by combining 18 µL of chilled Dissociation Buffer (DB) with 2 µL of the nuclei suspension in a PCR tube. Mix thoroughly. 3. Counting Nuclei: Load the diluted sample onto a Fuchs-Rosenthal hemocytometer (16 chambers). Visualize using a fluorescent microscope, capturing images under both brightfield and DAPI excitation to ensure debris removal and accurate nuclei identification. Count the nuclei across all 16 large squares for precise concentration determination. Calculate the average nuclei count per square, multiply by 10 (to account for the 1:10 dilution), and then multiply by 5 (the hemocytometer factor) to determine the final nuclei concentration in nuclei/µL.",
+    "For the 10X Genomics v3 workflow, the input volume is 46.6 µL. To maximize data output, the optimal nuclei concentration should be 364 nuclei/µL, translating to an input of approximately 17,000 nuclei per 46.6 µL next gem kit. This protocol provides a meticulous approach to extracting and processing nuclei from frozen tissues, ensuring high-quality samples suitable for droplet-based single-nuclei sequencing."
+  ],
+  "authors": [
+    "Naeem Nadaf"
+  ],
+  "creator": "Emily Finn",
+  "published_on": 1725433738,
+  "created_on": 1723656345,
+  "keywords": []
+}

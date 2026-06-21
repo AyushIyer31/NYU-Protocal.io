@@ -1,0 +1,34 @@
+{
+  "id": 47189,
+  "title": "Protocol for assembling SARS-Cov-2 runs  with s-aligner",
+  "uri": "protocol-for-assembling-sars-cov-2-runs-with-s-ali-bsbvnan6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bsbvnan6",
+  "description": "{\"blocks\":[{\"key\":\"amjfu\",\"text\":\"This is a protocol for using Contignant s-aligner to de-novo assemble SARS-Cov-2 genomes. S-aligner outperforms common open-source software for de novo-assembly of viruses by 110% increased performance.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Index the reads in the run. You can use as input a FASTA file (preferred) or a FASTQ. The file can also be compressed with gzip, having a .gz extension. The script will uncompress the file and pass it to FASTA format if it's a FASTQ file. ./index.sh your_run_id /mnt/c/your_run.fastq.gz",
+    "Assemble ./assemble.sh your-run-id -output alignments 500 > results/your-run-id-500.fa Assemble up to processing 500 reads results/your- run- id-500.fa should have the largest contig bigger than 1.200bp and at least one of the files containing aligned reads to form a contig should look like that:",
+    "Map your reads to a reference genome to see what's going wrong. ./map.sh your-run-id sequences/your-run-id/sra_data.part-71.fa reference.fa 4000 > results/map-your-run-id.fa",
+    "Trim your data and start again. go to step #1",
+    "You should see something like that. Copy the session id to the clipboard. Continue assembling ./assemble.sh your-run-id -sid 61D90743D16026D7 3500 > results/your-run-id-3500.fa You should paste the session id from the clipboard.",
+    "go to step #2 and continue as if the contig length is &gt;1.200bp",
+    "Discard this dataset or look for some tool that can filter your data.",
+    "go to step #1 but index a larger fraction of the dataset. ./index.sh your_run_id /mnt/c/your_run.fastq.gz -n 350000",
+    "go to step #3 increasing the number of reads until you get a satisfactory assembly. ./assemble.sh your-run-id -sid 61D90743D16026D7 6000 > results/your-run-id-6000.fa",
+    "Use QUAST to get statistics. quast.py -R reference_file.fasta results/your-run-id-6000.fa",
+    "Try scaffolding the contigs ./scaffold.sh results/your-run-id-xxxx.fa Then use QUAST with the result quast.py -R reference_file.fasta results/your-run-id-xxxx.fa",
+    "go to step #4",
+    "Congratulations. You are done.",
+    "Congratulations. You are done."
+  ],
+  "authors": [
+    "Juanjo Bermúdez"
+  ],
+  "creator": "Juanjo Bermúdez",
+  "published_on": 1617030938,
+  "created_on": 1613002250,
+  "keywords": []
+}

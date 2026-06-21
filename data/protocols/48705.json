@@ -1,0 +1,28 @@
+{
+  "id": 48705,
+  "title": "Seeking the unicorn",
+  "uri": "seeking-the-unicorn-bts9nnh6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bts9nnh6",
+  "description": "{\"blocks\":[{\"key\":\"fjsh0\",\"text\":\"The task is a two-player game in which players interact with 64 tiles arranged in an 8x8 grid. The grid can either hide a unicorn beneath one of the tiles or else it can be absent from the grid. Either event can occur with equal probability. At the beginning of each round, the computer chooses whether or not there is a unicorn, and if there is one, it randomly chooses a tile---each one having an equal probability of being chosen---and places the unicorn beneath it. Then, players have to guess whether there is a unicorn or if it is absent from the grid by uncovering tiles one at a time, with both players uncovering tiles simultaneously, in order to see what lies beneath them. What tiles have been uncovered and whether there is or not a unicorn is only known to the player that uncovers these tiles. However, in the event that both players uncover the same tile, it changes its color and both players can immediately see this. At any time during the round, each player can make a guess as to whether the unicorn is present or absent from the grid. The other player will know this information and they can use it to inform their own guess. The round ends when both players announce that their guess is a final decision, and then they are shown their individual scores from the round. The score depends on whether the player's guess is correct (32 points) or incorrect (-64 points), subtracting the number of tiles that were uncovered by both players. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Instructions for the experiment On each round, you and your partner will be shown a grid of 64 squares. Your task is to say whether there is a unicorn hiding behind one of these squares or not. Click on a square to see whether there is a unicorn or if the square is empty. At the bottom of the page you will find buttons for saying that the unicorn is present or absent. You can click on the “Submit Final Decision&#34; button when you have made up your mind and want to see the score. On half of the trials there will be a unicorn present somewhere in the grid, and on the other half it will be absent. When you and your partner click on the same square, it will become blue. When your earned points are calculated at the end of each round, then you will get points based on whether you guessed correctly as to the presence of the unicorn, and you will have points deducted based on the number of overlapping squares that you and your partner click on. If you understood this instructions correctly press the &#34;Ok, I am ready for the game!&#34; button to proceed to the game.",
+    "Trials",
+    "Game",
+    "Score",
+    "Debrief We were interested in exploring how the members of the group coordinate with each other when they were given a task. As you were playing the game, maybe you noticed that you and your partner were able to make efficient decisions to improve the score. We wanted to show that the members of a group can coordinate with very simple communication in order to better achieve their task.",
+    "Demographic",
+    "The present task was implemented in the nodeGame platform ( https://nodegame.org/ ) and has to be run in a university computer lab. Each participant has to sit at a sound- and sight-isolated personal computer running a version of the game. The code implementing the game is freely available at https://github.com/Slendercoder/Seeking_the_unicorn"
+  ],
+  "authors": [
+    "Edgar J Andrade-Lotero",
+    "Robert Goldstone"
+  ],
+  "creator": "Edgar J Andrade-Lotero",
+  "published_on": 1617277229,
+  "created_on": 1617123203,
+  "keywords": []
+}

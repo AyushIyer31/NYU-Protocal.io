@@ -1,0 +1,43 @@
+{
+  "id": 104443,
+  "title": "Behavior monitoring of D. melanogaster using ethoscopes",
+  "uri": "behavior-monitoring-of-d-melanogaster-using-ethosc-dh8339yn",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l2qyqjl1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"ui44\",\"text\":\"This protocol describes the practical steps to perform behavioral monitoring using ethoscopes. The cleaning and preparation of glass tubes as well as loading the flies into ethoscopes is outlined.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9s5qe\",\"text\":\"glass tubes: Pyrex glass, PGT5x65, Trikinetics\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"95t00\",\"text\":\"wax: Surgipath Paraplast Plus, 39602004, Leica\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "2. day: take off the wax-food layer at the top, rinse tubes multiple times with water, wash tubes with 75% vinegar in demineralized water to remove scale from the glass tubes and incubate for 2-3h",
+    "please follow publications: Geissmann, Quentin, Luis Garcia Rodriguez, Esteban J. Beckwith, Alice S. French, Arian R.Jamasb, and Giorgio F. Gilestro. 2017. “Ethoscopes: An Open Platform for High-Throughput Ethomics.” PLOS Biology 15 (10): e2003026. https://doi.org/10.1371/journal.pbio.2003026. Geissmann, Quentin, Luis Garcia Rodriguez, Esteban J. Beckwith, and Giorgio F. Gilestro. 2019. “Rethomics: An R Framework to Analyse High-Throughput Behavioural Data.” Edited by Jessica C. Flack. PLOS ONE 14 (1): e0209331. https://doi.org/10.1371/journal.pone.0209331. Gilestro, Giorgio F. 2012. “Video Tracking and Analysis of Sleep in Drosophila Melanogaster.” Nature Protocols 7 (5): 995–1007. https://doi.org/10.1038/nprot.2012.041.",
+    "3. day: wash tubes in 70% EtOH thoroughly, incubate them minimum 1h in EtOH and leave the tube to dry on tissue",
+    "1. day: used glass tubes are cooked in soap-water mix in a big pot for multiple hours and let cool down overnight",
+    "warm up fly food (standard corn meal and molasses food) and pour it in weighing boats (around 1 cm high). Place multiple of the bundles of glass tubes immediatly in the fly food. Ensure that every tube is touching the ground and ensure that in every tube (also the one in the middle of the bundle) the fly food is rising up to about a 1 cm by turning them a bit or moving them slightly up and down.",
+    "group glass tubes in bundles of 10-20 tubes with rubber bands",
+    "let the tubes rest for at least 1h and cover them with tissues to avoid flies landing on/in tubes",
+    "when the fly food has cooled down and is solid, carefully remove the tube bundles by turning them slighly while pulling them from the fly food to avoid loosing the fly food from the tubes",
+    "remove the rubber bands and clean individual tubes thoroughly with tissues from the outside",
+    "seal the cleaned tubes with wax by dipping the end of the tube with fly food in melted wax 0.5 cm deep (not too deep, as it will interfere with the ethoscope arenas), let it solidify a couple of seconds by holding the tubes straight, which allows the wax to form an even drop at the end.",
+    "place the sealed fly food tubes in a humidified box and store it at 4 °C for not more than 2 weeks",
+    "collect and count 1-4 days old flies from the cross reared in a temperature and light-controlled incubatorat 25 °C and 12-hour light-dark cycle",
+    "prepare metadata file: specify the genotype and the location of the genotype (in which ethoscope number and which side of the arena) (arena should be labelled with the same number of the ethoscope to avoid confusion). If you use arena from Fig 3A Geissmann Q et al. (2017) Ethoscopes: An open platform for high-throughput ethomics . PLoS Biol 15(10): e2003026. https://doi.org/10.1371/journal.pbio.2003026 then the side with one dot is number 1-10, the side with 2 dots is 11-20. Do not place the same genotype on both sides but distribute it over multiple ethoscopes, in case an ethoscope fails during the recording.",
+    "next day: load the flies according to the metadata table with a brush into the tubes (check that the tubes are well sealed and don&#39;t have condensation in which the flies can get stuck) and seal the open end with small cotton plugs.",
+    "push the tubes gently into the arena with the food facing to the outside of the arena.",
+    "put the arena in the corresponding ethoscope in incubators at 25 °C with 12:12 light-darkconditions (the same ZT0 as the flies were reared in), double check that all dots on the arena are present and start the ethoscopes.",
+    "Ensure all ethoscopes are working and after a couple of mins are recognizing all the flies",
+    "after 6 days stop the recording and analyse the data",
+    "wash again with demineralized water multiple times"
+  ],
+  "authors": [
+    "Natalie Kaempf",
+    "Jorge S. Valadas",
+    "Antonio Ortega",
+    "Sha Liu",
+    "Patrik Verstreken"
+  ],
+  "creator": "Natalie Kaempf",
+  "published_on": 1724942302,
+  "created_on": 1722519662,
+  "keywords": []
+}

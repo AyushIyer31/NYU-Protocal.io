@@ -1,0 +1,43 @@
+{
+  "id": 92952,
+  "title": "Acute thermal tolerance",
+  "uri": "acute-thermal-tolerance-c6zyzf7w",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl8pxerg2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"8cgaj\",\"text\":\"Understanding the mechanisms that underlie the adaptive response of ectotherms to rising temperatures is key to mitigate the effects of climate change.  We assessed the molecular and physiological processes that differentiate between rainbow trout (Oncorhynchus mykiss) with high and low tolerance to acute thermal stress. To achieve our goal, we used a critical thermal maximum trial in two strains of rainbow trout to elicit loss of equilibrium responses to identify high- and low- tolerance fish. We then compared the hepatic transcriptome profiles of high- and low-tolerance fish relative to untreated controls common to both strains to uncover patterns of differential gene expression and to gain a broad perspective on the interacting gene pathways and functional processes involved.  We observed some of the classic responses to increased temperature (e.g., induction of heat shock proteins) but these responses were not the defining factors that differentiated high and low-tolerance fish. Instead, high-tolerance fish appeared to suppress growth-related functions, enhance certain autophagy components, better regulate neurodegenerative processes, and enhance stress-related protein synthesis, specifically spliceosomal complex activities, mRNA regulation, and protein processing through post-translational processes, relative to low tolerance fish. In contrast, low-tolerance fish had higher transcript diversity and demonstrated elevated developmental, cytoskeletal, and morphogenic, as well as lipid and carbohydrate metabolic processes, relative to high-tolerance fish. Our results suggest that high-tolerance fish engaged in processes that supported the prevention of further damage by enhancing repair pathways, whereas low-tolerance fish were more focused on replacing damaged cells and their structures. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":249,\"length\":19}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Rear embryos in vertical incubating racks at 8°C until approx. 1 week post-hatching",
+    "Move fish to 0.5m tanks according to family until 45 days post-fertilization (dpf). Feed daily and maintain at 8°C with constant aeration with an air stone to maintain oxygen at ~9-10 mg L -1 O 2 . Periodically monitor nitrates and nitrates in the tanks.",
+    "Move 190 fish/family to larger (0.7m) tanks. Continue to maintain temperature at 8°C and oxygen at ~9-10 mg L -1 O 2 until 26 weeks post-fertilization (pf).",
+    "Randomly transfer 6 fish per family into one of 6 pools. Anaesthetize fish using a bath of tricaine methane sulfonate (MS-222), and elastomer tag them to identify them by pool.",
+    "From each pool, select 17-19 fish at random and place into one of eight 315L experimental tanks (61 x 244 x 28 cm), to make sure that each replicate tank has representation from all pools of fish reared in the section above.",
+    "Maintain the fish in 10 ° C for one week, before increasing temperature to 12 ° C for another week. Maintain constant aeration with an air stone to maintain oxygen levels at ~9-10 mg L -1 O 2 . Feed fish daily, and monitor nitrate and nitrite levels.",
+    "Take one fish from each tank at random (n=8) to serve as a control group. Euthanize each in an overdose of MS-222. Remove liver from each fish and store in RNAlater and store at 4°C. Measure wet mass (g) and fork length (mm).",
+    "At the end of the two-week acclimation period, take remaining fish off feed for 72 hours.",
+    "Start the CTM trial by increasing the temperature from 12°C to 24°C at a rate of ~2.7 to 3.4°C hour -1 . Continuously monitor water at source inflow (1 minute intervals) using a computer-controlled system (e.g., Argus electronic system; Argus Controls, Surrey, BC, Canada), which was also used to control the heat exchanger temperature profile.",
+    "Maintain temperature at 24°C for 3 hours.",
+    "Increase temperature from 24 to 25°C over another 1-hour period, and maintain at 25°C for three hours.",
+    "Repeat step 11, increasing by 1°C each time until 99% of the fish have reached loss of equilibrium (LOE).",
+    "Monitor the fish for signs of loss of equilibrium (LOE; to be used as phenotypic score endpoint) continuously throughout the experiment. As fish reach LOE, they will demonstrate a complete loss of ability of a to swim upright (Becker and Genoway 1979). Use a glass rod to prod fish that lose equilibrium to further ensure that they cannot regain equilibrium. If a fish has indeed reached LOE, remove it from its replicate tank and euthanize in an overdose of MS-222 as described above. Record the time taken to reach LOE and temperature at LOE. Identify fish were identified to theirpool by their elastomer tag with a UV light. Freeze fish individually at -20°C so that wet mass and length measurements can be made later. Evaluation of the critical thermal maximum for determining thermal tolerance of freshwater fish. Environmental Biology of Fishes.",
+    "Remove whole livers from RNA later and blot with KimWipes to remove salts before extracting total RNA using the QIAGEN RNeasy Mini Kit (QIAGEN, Toronto, ON, Canada) according to their protocols. Use the RNase-Free DNase Set (QIAGEN, Toronto, ON, Canada) to remove any genomic DNA (gDNA)contamination.",
+    "Designate the first 6 fish to reach LOE in the trial as low-tolerance fish. Sample extra fish to allow for exclusion of very small or very large fish because of the potential effect of mass on thermal tolerance. Scaling of thermal tolerance with body mass and genome size in ectotherms: a comparison between water- and air-breathers..",
+    "Check RNA samples for potential degradation and/or gDNA contamination using a bleach agarose gel made using TAE buffer, as described in Aranda et al. (2012). Heat samples to 85°C in an incubator for 10 minutes, then chill on ice for 3 minutes. Cast a 1.0% w/v agarose gel made with 1X TAE buffer with 1.0% v/v bleach. Run a final 1X concentration RNA sample with 10X DNA loading buffer and run at 100V for 35 minutes. Visualize with UV light. Bleach gel: a simple agarose gel for analyzing RNA quality..",
+    "Assess RNA extracts for quality using the NanoDrop 8000 (Thermo Fisher Scientific,Mississauga, ON, Canada). Re-extract any samples that did not have a 260/280 ratio ≥2.0. Run a subset of the samples was run on the TapeStation 4150 (Agilent Technologies, Mississauga, ON, Canada) for additional quality assurance.",
+    "Assess RNA samples for quality and quantity using a Bioanalyzer 2100 system and Bioanalyzer RNA 6000 Nano assay (Agilent Technologies, Mississauga, ON, Canada). Ensure that each sample has an RNA integrity number &gt;6.5 before sending the samples for Illumina sequencing. f",
+    "Send samples to Génome Québec (GQ; Montreal, QC, Canada) for sample processing. GQ will create mRNA libraries from the total RNA, using the NEBNext Ultra II Directional RNA Library Prep Kit for Illumina (New England Biolabs, Ipswich, MA, USA), according to the manufacturer’s instructions. They will also sequence RNA libraries on a NovaSeq 6000 sequencer as 100bp paired-end reads according to the manufacturer’s protocol.",
+    "All experiments were carried out at the Ontario Aquaculture ResearchCentre (OARC; Elora, ON, Canada) and at the Hagen Aqualab (University of Guelph,ON, Canada) in strict accordance with the Canadian Council for Animal Careguidelines, under a University of Guelph Animal Care Committee approval,protocol #3550."
+  ],
+  "authors": [
+    "Leah A. Turner",
+    "Anne Easton",
+    "Moira M. Ferguson",
+    "Roy G. Danzmann"
+  ],
+  "creator": "Leah A Turner",
+  "published_on": 1725572457,
+  "created_on": 1704377418,
+  "keywords": []
+}

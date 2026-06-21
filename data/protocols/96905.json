@@ -1,0 +1,37 @@
+{
+  "id": 96905,
+  "title": "Cathepsin D assay to verify the retention of lysosomal content",
+  "uri": "cathepsin-d-assay-to-verify-the-retention-of-lysos-davh2e36",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv5r7j5g1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"d8ks5\",\"text\":\"Cathepsin D assay is a fluorescence-based assay that leverage on the activity of cathepsin D, a lysosomal enzyme, to monitor the intactness of lysosome in the cell. Here, we describe a method where we used the measurement of cathepsin D activity to verify the intactness of lysosomes that were isolated from HEK293 cells based on anti-TMEM192 Lyso-IP. Our data showed an increase in the cathepsin D activity of lysosomal fraction when compared with whole cell fraction and Mock-IP fraction, an indication that the lysosomes are intact and viable.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"860nm\",\"text\":\"Materials:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4dta0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3jk7o\",\"text\":\"1. Cell lines\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1b0tf\",\"text\":\"  , RRID:CVCL_0045)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":1,\"length\":1}],\"data\":{}},{\"key\":\"98oor\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1hosl\",\"text\":\"2. Media and Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d1l0g\",\"text\":\" \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"ccfq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1rt3q\",\"text\":\"3. Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"880r8\",\"text\":\"ClarioStar plate reader\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9jt42\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6redu\",\"text\":\"4. Consumables\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e736v\",\"text\":\" \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"5ind2\",\"text\":\"Standard 1ml and 200µl Pipette tips (Greiner bio-one. Catalog# 686271 and 685261 respectively).\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2cknk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":126356,\"guid\":\"41A082AE341F11EE9D4302C0B41BC903\",\"name\":\"HEK293\",\"mol_weight\":0,\"sku\":\"CRL-1573\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":14,\"name\":\"ATCC\",\"link\":\"http://www.atcc.org/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":962471,\"guid\":\"790EA15FE5CE11EEB26B0A58A9FEAC02\",\"name\":\"Cathepsin D Activity Assay Kit (Fluorometric)\",\"mol_weight\":0,\"sku\":\"ab65302\",\"url\":\"https://www.abcam.com/products/assay-kits/cathepsin-d-activity-assay-kit-fluorometric-ab65302.html\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":22,\"name\":\"Abcam\",\"link\":\"http://www.abcam.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":962472,\"guid\":\"790EA1B1E5CE11EEB26B0A58A9FEAC02\",\"name\":\"FLUTAC flat bottom black 96-well plate \",\"mol_weight\":0,\"sku\":\"655076\",\"url\":\"https://www.sigmaaldrich.com/IN/en/product/sigma/gn655076\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":193,\"name\":\"greiner bio-one\",\"link\":\"https://www.gbo.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Seed HEK293 cells in 15cm plates and allow to reach 80-90% confluency.",
+    "Perform Lyso-IP (using anti-TMEM192 beads) and Mock-IP (using BSA coated beads) as previously described in dx.doi.org/10.17504/protocols.io.x54v9yp51g3e/v1",
+    "Add 2 µg of protein from Lyso-IP and whole cell lysate into the wells FLUOTAC flat bottom black 96-well plate. This should be done in duplicate.",
+    "Top up to 50 µL with lysis buffer provided in the kit. Due to little or no protein in the Mock-IP, use equal volume as Lyso-IP sample.",
+    "Prepare Blank sample in duplicate. This should contain only lysis buffer.",
+    "Prepare a reaction master mix for 9 wells: 450 µL reaction buffer (from the kit) per well. 18 µL substrate (from the kit) Although there are 8 wells to be used, however make master mix for 9 wells to account for pipetting error. If performing assays for more samples/replicates, adjust master mix accordingly.",
+    "Add 52 µL of master mix into each well. Gently mix but avoid bubbles. Cover plate with foil to avoid light exposure.",
+    "Start the ClarioStar plate reading machine and initiate the software.",
+    "Set temperature to 37 °C .",
+    "Set reading time to 00:05:00 for 24 cycles. This is total reading time of 02:00:00 .",
+    "Set reading wavelength to Ex/Em = 328 nM / 460 nM .",
+    "Highlight and name the virtual wells, ensuring they correspond with the orientation of the plate.",
+    "Set direction of plate reading.",
+    "Open the plate holder and insert plate. Remember to remove foil covering before inserting the plate into the equipment.",
+    "Close plate holder and run the program.",
+    "After the completion of the run, export data in excel format and analyse it using GraphPad Prism. Figure 1: Cathepsin D activity showed that the purified lysosomes are intact and retain their content. After IP, Measure Cathepsin D activity from 2ug of protein obtained from lysosomal fraction and whole cell fraction while the Mock-IP serves as negative control. N=2"
+  ],
+  "authors": [
+    "Rotimi Y. Fasimoye",
+    "Dario R. Alessi"
+  ],
+  "creator": "Francesca Tonelli",
+  "published_on": 1715264921,
+  "created_on": 1710393321,
+  "keywords": []
+}

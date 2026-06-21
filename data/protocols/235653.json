@@ -1,0 +1,27 @@
+{
+  "id": 235653,
+  "title": "Cell and Nucleus Segmentation in the Aegle Pipeline",
+  "uri": "cell-and-nucleus-segmentation-in-the-aegle-pipelin-hiddb4a27",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv55614v1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"cvgup\",\"text\":\"This protocol documents the computational workflow used to generate cell- and nucleus-level segmentation outputs for HuBMAP Female Reproductive System imaging data. Tissue regions are manually annotated, followed by image preprocessing and automated segmentation using the Aegle pipeline.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "This protocol documents the computational segmentation procedure used to generate cell- and nucleus-level segmentation masks and quantitative cell profiles for HuBMAP Female Reproductive System (FRS) imaging data. The protocol records: how tissue regions are defined, how raw images are preprocessed, how cell and nucleus segmentation is performed, and what artifacts are produced. This protocol is intended for data provenance, reproducibility, and auditability in HuBMAP data submissions. It does not describe algorithmic implementation details beyond what is required to reproduce outputs.",
+    "PurposeDefine biologically relevant tissue regions to restrict downstream processing.Procedure 1. Open the raw .qptiff image in QuPath (v0.6.0). 2. Manually delineate tissue boundaries corresponding to the target organ region. 3. Export annotations as GeoJSON files. Outputs One GeoJSON file per scan defining tissue boundaries. File Naming Convention&lt;sample_id&gt;_&lt;organ&gt;_&lt;region&gt;_&lt;scan_id&gt;.tissue-boundary.geojsonExamples 10RTAMP5_FT_Ampula_Scan1.tissue-boundary.geojson 10RTF5_FT_Fimbriae_Scan1.tissue-boundary.geojson",
+    "Run preprocessingProcedureExecute the preprocessing launcher corresponding to the organ: ```shbash launcher/run_preprocess_ft.shbash launcher/run_preprocess_uterus.shbash launcher/run_preprocess_ovary.sh``` OutputsPreprocessing outputs are written to the same directory as the input image: extras/antibodies.tsv processed_hubmap/manual_polygon_overlay.png Downsampled overview images (.jpg) Tissue-restricted OME-TIFF image (.ome.tiff) These outputs serve as inputs for segmentation.",
+    "Run cell and nucleus segmentationProcedureExecute the segmentation launcher:```bash launcher/run_main_ft.shbash launcher/run_main_uterus.shbash launcher/run_main_ovary.sh```The pipeline: 1. Applies DeepCell Mesmer for initial nucleus and cell boundary prediction. 2. Performs nucleus–cell matching and morphological refinement. 3. Extracts per-cell and per-nucleus quantitative features.",
+    "Software and Resources: Pipeline: Aegle image analysis pipeline GitHub: https://github.com/kimpenn/aegle Annotation Tool: QuPath v0.6.0 Segmentation Model: DeepCell Mesmer (via Aegle) Input Data: PhenoCycler / CODEX whole-slide images (.qptiff) Manually annotated tissue boundaries (.geojson) ⸻",
+    "Generated outputsSegmentation Masks • &lt;exp_id&gt;.cell_matched_mask.segmentations.ome.tiff • &lt;exp_id&gt;.nucleus_matched_mask.segmentations.ome.tiffQuantitative Profiles • cell_overview.csv — per-cell spatial, morphological, and intensity features • nucleus_overview.csv — per-nucleus featuresThese files constitute the final segmentation products submitted to HuBMAP.",
+    "Configure segmentation experiment Purpose Specify channels and parameters for cell and nucleus segmentation.ProcedureSelect the appropriate segmentation configuration: exps/configs/main/preprocess_ft_hb exps/configs/main/preprocess_uterus_hb exps/configs/main/preprocess_ovary_hb exps/configs/main/main_ft_hb exps/configs/main/main_uterus_hb exps/configs/main/main_ovary_hb Configurations define: nuclear and membrane channels, segmentation resolution, post-processing rules, feature extraction settings."
+  ],
+  "authors": [
+    "Da Kuang"
+  ],
+  "creator": "Da Kuang",
+  "published_on": 1766461543,
+  "created_on": 1766421680,
+  "keywords": []
+}

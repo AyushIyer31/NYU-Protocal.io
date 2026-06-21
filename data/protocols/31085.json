@@ -1,0 +1,37 @@
+{
+  "id": 31085,
+  "title": "Image analysis of immediate early gene expression in spinal cord sections",
+  "uri": "image-analysis-of-immediate-early-gene-expression-bakmicu6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bakmicu6",
+  "description": "{\"blocks\":[{\"key\":\"9nd1a\",\"text\":\"This protocol is used for analysing expression pattens of immediate early gene products (e.g., c-Fos) in immunostained transverse sections of spinal cord. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Using Adobe Photoshop (or similar program) open the image of the spinal cord section to create an image mask. Create a new “layer”. Photoshop CC 20.0.0 Adobe",
+    "Paste the mask onto the image for counting. This will add a new layer. Using the &#39;free transform&#39; tool, scale and rotate the mask to align it to the image.",
+    "Right click to access the the &#39;Warp&#39; tool to further align the mask to the image.",
+    ".Export the combined image as a TIFF.",
+    "Open the TIFF file with the overlaid mask with ImageJ (FIJI). FIJI (Image J) NIH",
+    "Set up counting: Plugins -&gt; Analyse -&gt; Cell Counter -&gt; Initialize -&gt; Add",
+    "Select the cell number that corresponds to the region being counted. Each cell number will be a different region. eg Type 1 = Laminae 1",
+    "Click on each cell in the region.",
+    "Repeat for all regions.",
+    "Save the .txt file with the xy coordinates of each cell.",
+    "Open the image chosen for counting neurons and its corresponding image mask. Copy the mask by selecting the whole area of the mask.",
+    "Open the “Window” menu and select “Paths” to pull up the corresponding panel. Select the Magnetic Pen to follow transitions of color and brightness within the image. Draw your vector paths over the image until you have a traced conversion of the paths and shapes within your image. Press Enter when you are done tracing a path to signal the end of the pathway.",
+    "Set the tolerance level for the pathways. Smaller levels make the path adhere tightly to what you’ve traced, while larger levels displays smooth transitions between anchor points in your path.",
+    "Save this mask: in order to maintain a transparent background, save the pathway image as a .png file and select ‘transparency’ during exporting.",
+    "Completed tilescan images are then imported into TissueMaker for 3D reconstruction. Images are ordered, rotated and aligned based on structural landmarks. Reconstructed spinal cords can be visualized in a 3D space using Neurolucida 360. TissueMaker MIcroBrightField bioscience Neurolucida 360 MicroBrightField Bioscience"
+  ],
+  "authors": [
+    "Janet R Keast",
+    "Peregrine B Osborne",
+    "Nicole Wiedmann"
+  ],
+  "creator": "Janet R Keast",
+  "published_on": 1587617094,
+  "created_on": 1576556879,
+  "keywords": []
+}

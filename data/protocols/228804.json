@@ -1,0 +1,40 @@
+{
+  "id": 228804,
+  "title": "Genome Edited (KO) Cell Line Generation – PCR Validation",
+  "uri": "genome-edited-ko-cell-line-generation-pcr-validati-hbpcb2mix",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl88wj6l2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"a8um7\",\"text\":\"This protocol details steps taken to create and PCR validate KO cell lines in RAW 264.7 cells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9eqcb\",\"text\":\"DMEM (Thermo Fisher Scientific, 11965-092)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"82ega\",\"text\":\"FBS (Thermo Fisher Scientific, 16140-071)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8oo52\",\"text\":\"Penicillin/Streptomycin (Thermo Fisher Scientific, 15140122)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5pkjq\",\"text\":\"CellStripper (Corning, 356230)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7hn9m\",\"text\":\"Synthego CRISPR Gene Knockout V2 Mouse Kits\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5p2ti\",\"text\":\"Lipofectamine CRISPRiMAX (ThermoFisher Scientific, CMAX00003)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aemki\",\"text\":\"Cas9 (Synthego CRISPR Gene Knockout V2)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"18mbu\",\"text\":\"Opti-Mem (Thermo Fisher Scientific, 31985062)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Plate 2.5 x 10^5 RAW 264.7 cells per well in a 6-well dish.",
+    "Transfect cells using Lipofectamine CRISPRiMAX, gene specific sgRNAs and recombinant Cas9 (Synthego CRISPR Gene Knockout V2).",
+    "CRISPRiMAX protocol In Tube 1 combine 62.5 µL Opti-MEM, 3.25 µL sgRNA (from 3 uM stock), 2.5 µL Cas9 (from 3 uM stock), and 2.5 µL Cas9+ then incubate for 00:05:00 . In Tube 2 combine 62.5 µL Opti-MEM and 3.75 µL CRISPRMAX then incubate for 00:05:00 . Combine tube 1 and tube 2. Incubate for 00:20:00 . Add drop-wise to 1 well containing 1.8 mL of media.",
+    "Change the media.",
+    "Plate single cells into 96-well dishes to obtain clonal cell lines. After subculturing, confirm cell lines via immunoblotting",
+    "Expand clonal cell lines to 24-well dish (Design primers flanking Cas9 cut sites)",
+    "Dissociate cells from 24-well dish",
+    "Centrifuge Cells 1000 rpm, °C, 3 minutes",
+    "Discard supernatant",
+    "Add 200 µL of Quick Extract to cells",
+    "Vortex sample for 00:00:10",
+    "Incubate sample at 65 °C for 00:06:00",
+    "Vortex sample for 00:00:10",
+    "Incubate sample at 98 °C for 00:02:00",
+    "Run PCR using designed primers",
+    "PCR Reaction Setup GoTaq‱ Green Master Mix, 2X 12.5 µL upstream primer, 10µM 1 µL downstream primer, 10µM 1 µL DNA template 3 µL Nuclease-free water 7.5 µL Total 25 µL",
+    "Thermocycler: Initial denaturation 98 °C 00:02:00 denaturation 98 °C 00:00:30 Annealing 00:00:30 Temp. is determined by primers Extension 72 °C 1 minute per kilobase 30 Cycles Hold 4 °C",
+    "Run PCR reactions on 1% agarose gel 100v for 00:30:00"
+  ],
+  "authors": [
+    "Amanda Bentley-DeSousa",
+    "Devin Clegg",
+    "Shawn Ferguson"
+  ],
+  "creator": "Devin Clegg",
+  "published_on": 1763613398,
+  "created_on": 1759348092,
+  "keywords": []
+}

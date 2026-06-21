@@ -1,0 +1,37 @@
+{
+  "id": 210845,
+  "title": "Reto F1016B",
+  "uri": "reto-f1016b-gr55bv887",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewov1mqyovr2/v1",
+  "description": "{\"blocks\":[{\"key\":\"bh53j\",\"text\":\"En este protocolo describo el procedimiento que seguí para\\nconstruir un circuito equivalente de un supercapacitor en un protoboard\\nutilizando componentes reales proporcionados en el laboratorio. El objetivo\\nprincipal fue observar y registrar experimentalmente el comportamiento del\\nvoltaje en el tiempo durante la carga del supercapacitor. Para ello, conecté un\\nosciloscopio digital al circuito, el cual permitió visualizar la curva de carga\\nen tiempo real y almacenar los datos en una memoria USB. Posteriormente,\\nexporté esta información a formato Excel para su análisis. Esta práctica fue\\nesencial para comparar el comportamiento experimental con el modelo teórico de\\ncarga de un circuito RC, lo que me permitió validar mis predicciones y\\ncomprender mejor las características dinámicas de los supercapacitores.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f76l6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"edeh3\",\"text\":\"In this protocol, I describe the procedure I followed to build an equivalent circuit of a supercapacitor on a protoboard using real components provided in the laboratory. The main objective was to observe and experimentally record the voltage behavior over time during the charging of the supercapacitor. To achieve this, I connected a digital oscilloscope to the circuit, which allowed me to visualize the charging curve in real time and store the data on a USB drive. I later exported this information into Excel format for analysis. This practice was essential to compare the experimental behavior with the theoretical charging model of an RC circuit, which allowed me to validate my predictions and better understand the dynamic characteristics of supercapacitors.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"qst8\",\"text\":\"Protoboard\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9psna\",\"text\":\"supercapacitor\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1na72\",\"text\":\"Resistencias(varias)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5sr5\",\"text\":\"Fuente de voltaje DC\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4fs4\",\"text\":\"Cables de conexión (Jumpers)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4l776\",\"text\":\"Osciloscopio digital\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"342ta\",\"text\":\"Sonda de osciloscopio\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f0fj7\",\"text\":\"Memoria USB\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1hnhb\",\"text\":\"Computadora con Excel o similar\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Preparación del protoboard",
+    "Inserte los componentes pasivos (resistencias y el supercapacitor) según el diagrama de circuito equivalente entregado por el profesor.",
+    "Asegúrate de que las conexiones sean firmes y que no haya cortos circuitos.",
+    "Conexión de la fuente",
+    "Conecta la fuente de voltaje DC al circuito.",
+    "No energices aún el sistema.",
+    "Carga del supercapacitor",
+    "Registro y exportación de datos",
+    "Configuración del osciloscopio",
+    "Una vez finalizado el experimento, retira la memoria USB del osciloscopio.",
+    "Inserta la memoria en una computadora y abre el archivo generado en Excel u otro software compatible.",
+    "Conecta la sonda del canal 1 del osciloscopio en paralelo con el supercapacitor(entre sus dos terminalesI).",
+    "Ajusta la escala de voltaje y tiempo adecuado para visualizar el proceso completo de carga.",
+    "Energiza el circuito conectando la fuente de voltaje.",
+    "El Osciloscopio registrará automáticamente la evolución de voltaje a través del tiempo y guardará los datos en la memoria.",
+    "Inserta una memoria USB en el osciloscopio para registrar los datos automáticamente.",
+    "Revisa la tabla de datos (voltaje-tiempo) y guarda una copia con nombre, fecha y condiciones experimentales."
+  ],
+  "authors": [
+    "Héctor Sepúlveda Báez"
+  ],
+  "creator": "Héctor Sepúlveda Báez",
+  "published_on": 1746429243,
+  "created_on": 1746243951,
+  "keywords": []
+}

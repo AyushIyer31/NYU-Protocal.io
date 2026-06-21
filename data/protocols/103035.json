@@ -1,0 +1,34 @@
+{
+  "id": 103035,
+  "title": "Synapto-iATPSnFR2-miRFP670nano3 analysis",
+  "uri": "synapto-iatpsnfr2-mirfp670nano3-analysis-dgu33wyn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ld8wk9v5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"b66uk\",\"text\":\"This protocol describes how to analyze imaging experiments using Synapto-iATPSnFR2-miRFP670nano3 from primary neurons.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"b2hm0\",\"text\":\"Software\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"33q72\",\"text\":\"Microsoft Excel (https://www.microsoft.com/en-us/microsoft-365/excel, version 2308, RRID:SCR_016137)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":17,\"length\":52}],\"data\":{}},{\"key\":\"3aadi\",\"text\":\"GraphPad Prism (http://www.graphpad.com, version 10.0.2, RRID:SCR_002798) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":16,\"length\":24}],\"data\":{}},{\"key\":\"fa0bf\",\"text\":\"ImageJ (NIH, US, https://imagej.net, version 1.52p, RRID:SCR_003070)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":17,\"length\":19}],\"data\":{}},{\"key\":\"3fn1e\",\"text\":\"Time Series Analyzer plug-in (https://imagej.net/ij/plugins/time-series.html, version 3.0)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":3,\"offset\":30,\"length\":47}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"6F45FD4B3D7111EF92D40A58A9FEAC02\",\"url\":\"https://www.microsoft.com/en-us/microsoft-365/excel,\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"6F45FD4B3D7111EF92D40A58A9FEAC02\",\"url\":\"http://www.graphpad.com,\"}},\"2\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"6F45FD4B3D7111EF92D40A58A9FEAC02\",\"url\":\"https://imagej.net,\"}},\"3\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"6F45FD4B3D7111EF92D40A58A9FEAC02\",\"url\":\"https://imagej.net/ij/plugins/time-series.html,\"}}}}",
+  "steps": [
+    "Open the image stacks to by analyzed with ImageJ by drag and drop.",
+    "Using the far-red miRFP670nano3 channel and blind to the ATPSnFR2 channel, identify nerve terminals by their appearance as fluorescent puncta.",
+    "Place ROIs on the nerve terminals using the Time Series Analyzer plug-in. We usually use ROIs of width and height 6 pixels each, with the pixel size being 400 nm in our images.",
+    "Get the average pixel intensity of each ROI and each image using the &#34;Get Average&#34; function. Save the produced csv results as well as the ROIs selection.",
+    "Similarly place background ROIs surrounding the nerve terminals identified. Save the pixel intensity values and background ROIs selection.",
+    "Open the produced csv files in Microsoft Excel.",
+    "For each time point, subtract the average background fluorescence values from every single nerve terminal fluorescence values.",
+    "For each time point, calculate the ratio of the iATPSnFR2 signal to the miRFP670nano3 signal, for every nerve terminal. This will yield the F ratio for all single nerve terminals. Note: Since the miRFP670nano3 signal remains stable throughout the experiment, the iATPSnFR signal can be also normalized to the initial miRFP670nano3 signal before action potential train, to minimize the noise of the produced traces.",
+    "Calculate the average F ratio of all the nerve terminals of one single neuron.",
+    "The initial F ratio can be used as a reading of the baseline ATP of single cells before the action potential trains.",
+    "The data-set can be further normalized to 1, by dividing F ratio to the initial F ratio values, for each individual cell. This normalization allows to specifically observe ATP kinetics during and after action potential trains and is unaffected by the individual cell baseline ATP.",
+    "The normalized F ratio at the end of the action potential train as well as the recovery of ATP at a later time point can be calculated for all single cells.",
+    "All produced time trace data and subsequent quantifications can be plotted and presented in Graphpad Prism."
+  ],
+  "authors": [
+    "Alexandros C Kokotos",
+    "Tim Ryan"
+  ],
+  "creator": "Alexandros C Kokotos",
+  "published_on": 1720474659,
+  "created_on": 1720470834,
+  "keywords": []
+}

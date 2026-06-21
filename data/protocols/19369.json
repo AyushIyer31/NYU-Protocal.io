@@ -1,0 +1,38 @@
+{
+  "id": 19369,
+  "title": "Epidural stimulation mapping protocol",
+  "uri": "epidural-stimulation-mapping-protocol-w6hfhb6",
+  "doi": "dx.doi.org/10.17504/protocols.io.w6hfhb6",
+  "description": "{\"blocks\":[{\"key\":\"4cnes\",\"text\":\"Current experiments are utilizing epidural stimulation, and the measurement of numerous systems, after either sham transection or full T9 transection. Transected Wistar rats (male and female) are tested after 6 weeks of recovery. Initial mapping experiments have targeted the L6-S1 segment of the spinal cord for epidural stimulation. The testing paradigm subjects this segment of the spinal cord to combinations of frequency (5, 10, 30, 45, 60 Hz) and intensity (50, 75, 100, 150, 300, 500 μA) to determine the most effective stimulus parameters for efficient voiding. Endpoints include: rectal and distal colon pressure activity, external urethral sphincter electromyography (EUS EMG), external anal sphincter electromyography (EAS EMG), bulbospongiosus electromyography in males (bulbo EMG), bladder pressure changes, voiding and drop patterns, volume of voided fluid, and muscle movement thresholds. By recording these responses, and the changes due to stimulation, these experiments will provide insight into the best stimulus parameters to influence bladder activity after spinal cord injury. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"fe90b\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"c68m0\",\"text\":\"Prior to terminal testing procedures, animals are implanted with: a jugular catheter, a tracheal cannula, a bladder catheter, bilateral fine wire electrodes in the External Urethral Sphincter, and a modified Medtronic 5-6-5 array electrode. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"6cvl1\",\"text\":\"Our anesthetic is urethane which a known reproductive hazard. Appropriate PPE should be worn. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"bgman\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "After all relevant surgical procedures have been performed the animal is placed on the specially made surgical platform and all necessary attachments are connected.",
+    "The rat is placed on their ventrum throughout testing. The hindlimbs are taped down to the platform as the electrical stimulation can cause motor movements that may move the animal out of position. The tail is held upright and out of line of sight by a movable arm anchored to the table by a magnet.",
+    "Bilateral fine wire electrodes are implanted into the external anal sphincter, and bulbospongiosus (bulbo) muscle in males, using 27g needles. EAS electrodes are implanted at an oblique angle so as to travel from midline to lateral aspect of the sphincter. Bulbo electrodes are implanted by palpating the bulbospongiosus muscle roughly midway between the scrotum and the prepuce, and inserting the needle transcutaneously into the muscle bilaterally.",
+    "SPR-524 pressure sensors (AD instruments) are inserted into the rectum (2 cm from anal verge) and the distal colon (10 cm from the anal verge) and secured to the base of the tail using tape. These probes have their own control unit which is then fed into our data acquisition unit.",
+    "A perfusion pump in connected to the catheter hub and set to deliver saline at a rate of 0.25 ml per minute. The pump syringe has a pressure sensor attached so that pressures in the bladder can be detected during filling. A 60 ml syringe is used to ensure enough saline for the entire testing procedure.",
+    "All wire electrodes (ground wire, bilateral EUS, bilateral EAS, bilateral Bulbo) are connected to wires fitted with copper duck bill clip connectors. The end of the electrode wire is bared and clipped with the connectors. Only strip as much insulation as necessary for a good hold by the clip as any extra wire with cause noise in the signal. Electrode wires are amplified (AM Systems, 4 channel, differential amplifier) and then sent to the data acquisition unit.",
+    "A balance (Ohaus Scout) is placed underneath the surgical platform to collect voided material and to relay that information to our acquisition computer via RS-232 connector and a Serial Port Data Collect (SPDC) software.",
+    "The animal, perfusion pump, and table are grounded to the electrophysiology cabinet containing the stimulator and associated electrical components.",
+    "Data acquisition unit is a CED 1401 micro 3 system. The software used is Spike 2 version 8.",
+    "Spike 2 is opened and a configuration file is loaded that contains the setup for all of the channels being recorded (EUS, EAS, bulbo, 2 cm probe, 10 cm probe, leaks, stim marker, keyboard input).",
+    "Electrical stimulation equipment is connected to the Medtronic interface which controls the electrode implant. A grass stimulator (S88) with a current isolation unit provides the electrical stimulation.",
+    "Once the animal has all necessary components setup, the acquisition software starts recording. Shortly afterward, the perfusion pump is turned on and bladder pressure begins to rise.",
+    "The animal is allowed to have several fill-void cycles until there is a consistent time in between voids.",
+    "Five baseline periods of activity are collected. A timer is used to ensure 2 minute baseline period measurements.",
+    "After the baseline periods the stimulation is turned on for either: 2 minutes (if fill-void cycle is shorter than 2 minutes or there is a dripping pattern) or until one void occurs (with a longer than 2 minute interval).",
+    "Stimulation parameters are changed after each presentation. Frequency parameter: 5, 10, 30, 45, 60 Hz. Intensity parameter: 50, 75, 100, 150, 300, 500 µA. The frequency-intensity pairings are presented in an increasing fashion. If frequency is varied first, the stimulations would proceed: 5 Hz 50 µA, 10 Hz 50 µA, etc. through all frequency-intensity pairings. If intensity is varied first, the stimulations would proceed: 5 Hz 50 µA, 5 Hz 75 µA, etc. Each stimulation is followed by an off period of 2 minutes to allow for any residual energy to dissipate and the system to return to baseline.",
+    "During this period, data is collected on bowel function (rectal and distal colon), urethral sphincter activity (EUS EMG), bulbospongiosus activity in males (bulbo EMG), external anal sphincter activity (EAS EMG), bladder pressure, when urine is expelled via marker button, exact electrical stimulation markers, volume of urine voided, and any notes made via keyboard input."
+  ],
+  "authors": [
+    "Charles Hubscher",
+    "Robert Hoey"
+  ],
+  "creator": "Robert Hoey",
+  "published_on": 1619116665,
+  "created_on": 1547606789,
+  "keywords": []
+}

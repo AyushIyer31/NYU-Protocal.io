@@ -1,0 +1,33 @@
+{
+  "id": 38016,
+  "title": "A distribution-dependent analysis of open-field test movies",
+  "uri": "a-distribution-dependent-analysis-of-open-field-te-bhc8j2zw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bhc8j2zw",
+  "description": "{\"blocks\":[{\"key\":\"3r0tu\",\"text\":\"Although the open-field test has been widely used, its reliability and compatibility are frequently questioned. Many indicating parameters were introduced for this test; however, they did not take data distributions into consideration. This oversight may have caused the problems mentioned above. Here, an exploratory approach for the analysis of video records of tests of elderly mice was taken that described the distributions using the least number of parameters. The locomotor activity of the animals was separated into two clusters: dash and search. The accelerations found in each of the clusters were distributed normally. The speed and the duration of the clusters exhibited an exponential distribution. Although the exponential model includes a single parameter, an additional parameter that indicated instability of the behaviour was required in many cases for fitting to the data. As this instability parameter exhibited an inverse correlation with speed, the function of the brain that maintained stability would be required for a better performance. According to the distributions, the travel distance, which has been regarded as an important indicator, was not a robust estimator of the animals’ condition.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Animal test Plastic container boxes are used as the open field. Those are available at DIY stores. Choice of the colors is important to obtain enough contrast to the animal. A particular part of the animals can be colored and spotted. Otherwise, the shape of the animals should be separated from the box background in black and white images.",
+    "This is a protocol of open field test for checking activity of animals. Movement of the animals are recorded by a small digital camera, digitized by the Image ( https://imagej.nih.gov/nih-image/ ), and analyzed parametrically on the R ( https://cran.r-project.org/ ).Examples and the basis of analysis are published elsewhere.",
+    "Recording Almost any small digital camera or movie camera can be used. No extra illuminations will be required. Fix the camera with a tripod and take the movie from straight above. Start to record the movie before the animals are put in the box. This will give vacant images, which can be used as the background of images to be subtracted; illumination in the box will have certain unevenness, and this has to be compensated by using the background. The minimum resolution would be enough. The format has to be a changeable one to .avi.",
+    "Digitizing using “the Image”Input the data The Image can read movies recorded in.avi format. The Image stores the movie as a stack of many images, so the size of the movie will become very huge: PCs with large size of RAM are recommended.",
+    "Format changes As many of the digital cameras and movies do not use .avi format, the record format of the movie has to be changed. This could be performed with some freeware, such as XMediaRecord. During this process, the framework of the movie can be cropped. Additionally, the resolution can be reduced. In general, the resolution of digital cameras is too much for the purpose (pixels of ca 150x150 would be enough to cover a 50x50 cm field).",
+    "The ImageImport the movie to the Image The resulted .avi file can be imported into the Image (drag and drop will start the importing). The movie can be recorded as gray scale (this will reduce the size of the image; the whole shape can be recognized in BW images). Select to use stacks. 30 min movie will make a stack of 54,000 images.",
+    "Duplicate the stack Image &gt; duplicate &gt; “duplicate stack” This allows the Image to alter the movie.",
+    "Optional: invert the brightness Edit &gt; Invert This will ease to subtract the background. Black animals on white background should to this process.",
+    "Make an appropriate background Process &gt; Image Calculator &gt; “duplicate stack” The opened stack, without animals or human hands, will be duplicated.",
+    "Subtract the background from the movie Process&gt; Image Calculator “the duplicated movie” “subtract” “the background” The unevenness of the illumination will be removed by this process.",
+    "Binarization To define the shape of animals, the gradation tone of each image is simplified into black and white, emphasizing the edge of the animals in the images. Image &gt; Adjust &gt; Threshold",
+    "Find the position and area of the animal Analyze &gt; Set measurements. Check “Area” “Center of mass” “Display label” Analyze &gt; Analyze particles The “Results” can be saved as a tab-separated text (maybe through Excel).",
+    "Analyze the informationInput to the “R” The tab-separated text can be imported to the R. The R-code is in the appendix. The movement is analyzed on several constant distribution patterns, finding out important parameters. There are several points that requires manual tunings. See the comments in the code."
+  ],
+  "authors": [
+    "Tomokazu Konishi"
+  ],
+  "creator": "Tomokazu Konishi",
+  "published_on": 1591776784,
+  "created_on": 1591767638,
+  "keywords": []
+}

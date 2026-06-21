@@ -1,0 +1,26 @@
+{
+  "id": 68880,
+  "title": "In vitro kinase activity",
+  "uri": "in-vitro-kinase-activity-cfhqtj5w",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygxzr2kv8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"5u6n4\",\"text\":\"This protocol details methods for the in vitro kinase activity testing of purified LRRK2.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":38,\"length\":8}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"ao8gn\",\"text\":\" \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"5an5v\",\"text\":\"Anti-LRRK2 (phospho T1357)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"21hkt\",\"text\":\" \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"fjhpa\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2jvji\",\"text\":\"Solutions to prepare: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":22}],\"entityRanges\":[],\"data\":{}},{\"key\":\"88b41\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8l8ta\",\"text\":\"10x Kinase buffer:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":18}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3ietp\",\"text\":\"      10x Kinase buffer    Tris–HCl (pH7.5)  200mM    MgCl2  75mM     EGTA  1mM   \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":82}],\"data\":{}},{\"key\":\"6r8a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":956915,\"guid\":\"4373AA61341F11EE9D4302C0B41BC903\",\"name\":\"SuperSep Phos-tag Gel\",\"mol_weight\":0,\"sku\":\"195-1799\",\"url\":\"https://labchem-wako.fujifilm.com/us/product/detail/W01W0119-1799.html\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":457,\"name\":\"FUJIFILM Wako Pure Chemical Corporation\",\"link\":\"http://ffwk.fujifilm.co.jp/en/index.html\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":956916,\"guid\":\"4373AAB2341F11EE9D4302C0B41BC903\",\"name\":\"Anti-LRRK2 (phospho T1357) antibody\",\"mol_weight\":0,\"sku\":\"ab270606\",\"url\":\"https://www.abcam.com/lrrk2-phospho-t1357-antibody-mjf-r29-52-ab270606.html?productWallTab=ShowAll\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":22,\"name\":\"Abcam\",\"link\":\"http://www.abcam.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"tables\",\"mutability\":\"MUTABLE\",\"data\":{\"cellsMeta\":{\"0\":{\"0\":\"B\"},\"0_0\":\"\",\"1\":{\"0\":\"_\"},\"1_0\":\"\",\"1_1\":\"\",\"2\":{\"0\":\"1\"},\"2_0\":\"\",\"2_1\":\"\",\"3_0\":\"\",\"3_1\":\"\",\"A_1\":{\"className\":\"_dt-h-left\"},\"A_2\":{\"className\":\"_dt-h-left\"},\"A_3\":{\"className\":\"_dt-h-left\"},\"B_1\":{\"className\":\"_dt-h-left\"},\"B_2\":{\"className\":\"_dt-h-left\"},\"B_3\":{\"className\":\"_dt-h-left\"}},\"colTitles\":[\"\",\"\"],\"colWidths\":[\"186.98958587646484\",100],\"data\":[[\"Tris–HCl (pH 7.5)\",\"200 mM\"],[\"MgCl2\",\"75 mM\"],[\"EGTA\",\"1 mM\"]],\"guid\":\"169FC6161F7E11EDAD140A58A9FEAC02\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"Tris–HCl (pH 7.5)\",\"200 mM\"],[\"MgCl2\",\"75 mM\"],[\"EGTA\",\"1 mM\"]],\"rowHeights\":[23,23,23]}}}}",
+  "steps": [
+    "Set up the reaction mixtures with 1x kinase buffer (diluted from 10x kinase buffer), 200 nanomolar (nM) LRRK2 or 8 µg Rab8 protein, for the reaction group add 1 millimolar (mM) ATP, and for the control add H2O instead, the total volume we used is 40 µL .",
+    "Incubate samples for 02:00:00 at 30 °C .",
+    "Quench reactions through addition of SDS sample loading buffer and heat at 95 °C for 00:10:00 .",
+    "Resolve samples by SDS/PAGE or Phos-tag SDS/PAGE.",
+    "Detect proteins by coomassie blue staining or western blot using antibodies of Rab8 and LRRK2 phospho-specific (pT1357), respectively."
+  ],
+  "authors": [
+    "Xinbo Wang",
+    "Pietro De Camilli"
+  ],
+  "creator": "xinbo.wang",
+  "published_on": 1692994058,
+  "created_on": 1660885557,
+  "keywords": []
+}

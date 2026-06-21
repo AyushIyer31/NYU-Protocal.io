@@ -1,0 +1,43 @@
+{
+  "id": 59159,
+  "title": "Insulin Tolerance Test",
+  "uri": "insulin-tolerance-test-b5zxq77n",
+  "doi": "dx.doi.org/10.17504/protocols.io.b5zxq77n",
+  "description": "{\"blocks\":[{\"key\":\"2tkpr\",\"text\":\"Insulin tolerance tests are a standard and common method for evaluating the insulin sensitivity of an animal.  In this assay, animals are fasted to normalize blood glucose and then challenged by an intraperitoneal injection of insulin.  As glucose is transported into tissues and glucose production is suppressed, glucose levels drop.   A more insulin sensitive animal will have a larger decrease in blood glucose.  This has advantages over a glucose tolerance test which measures both insulin sensitivity and insulin responsiveness.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"cbhms\",\"text\":\"Needle Capping Guidelines\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":25}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"B17B48D09E2811EC8BB2B77E1C5D14E8\",\"url\":\"http://bridgeslab.sph.umich.edu/protocols/index.php/SOP_-_Needle_Capping\"}}}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9p20c\",\"text\":\"Glucometer - AccuChek Advantage\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5n3ld\",\"text\":\"Glucose Test Strips - AccuChek Comfort Curve or equivalent\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bnrm0\",\"text\":\"Scale\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f9cnu\",\"text\":\"Beaker for weighing mice\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"88i15\",\"text\":\"echoMRI if the mice differ in body fat levels (see below)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"p3c0\",\"text\":\"Syringes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5n84d\",\"text\":\"0.1 U/mL humulin in PBS (make as 10uL of 100 U/mL in 10 mL, sterile filtered). This will correspond to 1 U/kg injections. If you are using a higher or lower dose of insulin, add more or less to the 10 mL of PBS, so that injections are 10 uL/g of mass.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f1quf\",\"text\":\"This may need to be adjusted depending on the insulin sensitivity of the mice, and this is based on a normal C57BL/6J mouse on chow.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6a1jn\",\"text\":\"In general for insulin resistant mice, such as those \\u003e40g on a high fat diet or such, increase the dose to 2 or 2.5U/kg.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dinlq\",\"text\":\"In general you want the insulin to decrease blood glucose by about 60-70% in the most responsive of your too group so if your response is \\u003c20% or \\u003e70% change in blood glucose you will probably have to change your dose and retry.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"458pb\",\"text\":\"The insulin is diluted from Humulin R-100 and is purchased through the veterinary staff.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1ginb\",\"text\":\"Timer\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Remove food from mice for about 6h by putting them in a fresh cage. Add do not feed tag to cages, or ideally move cage to procedure room. Try to make sure that the mice are in a quiet, undisturbed temperature-controlled room with the lights on.",
+    "Prepare insulin syringes with 10 uL per g mouse weight (ie for a 30g mouse, 300 uL).",
+    "Typically starve the mice at 8AM and aim to start injections at 2PM",
+    "Prepare a 1 g/10mL solution of glucose in case some animals become hypoglyemic.",
+    "Weigh mice, mark tails if necessary with different colors for rapid identification and take fasting glucose measurement via a tail clip.",
+    "At approximately 1 min intervals, inject anappropriate amount of insulin into intraperitoneal cavity of the mouse.",
+    "Immobilize mouse and restrain tail with one hand.",
+    "Aim needle between the midline and the hip bone.",
+    "At desired intervals (normally 15, 30, 45, 60, 75, 90, 105 and 120 min), take blood glucose measurements from tail vein. If needed re-snip the tail vein. When measuring glucose just lift the tail of the mouse, while leaving it in the cage, rather than removing and restraining the mouse, which can be more stressful.",
+    "If blood glucose drops below 10 mg/dL, or the animal appears catatonic, inject 300 uL of the glucose solution prepared above to rescue the mice and prevent hypoglycmic shock. Ignore the data from this mouse from that point on.",
+    "Insert syringe (do not inject) into cavity.",
+    "Eject syringe.",
+    "Analyze data by both % change from fasting glucose and absolute values. Our preferred outcome is to report fasting glucose levels and report percent change as a figure",
+    "The preferred statistical model is a mixed linear model using the time points as ordinate values and testing for a main effect or an interaction of the treatment/genotype. Use the R lme4 package for this.",
+    "Since most glucose is taken up into non-fat tissues, it can be confounding if you dose based on total body weight, and the two groups differ greatly with respect to the amount of fat mass. A fat mouse and a lean mouse are likely to have very similar fat-free masses, and by giving more insulin to the fatter animal (because body weight is higher) you might make the fatter mouse seem more insulin sensitive, but really its just responding to a larger amount of insulin. In these cases the preferred practice is to measure fat free mass by echoMRI, and then dose animals at approximately 1 U/kg of lean mass for a lean animal or 2.5 U/kg of lean mass for an obese animal.",
+    "You may also want to calculate the initial rate of glucose decline, as a measure of acute insulin response before hypoglycemic adaptations occur.",
+    "First, filter your ITT data to contain only the observations from where animals are in the initial drop of the experiment. This is usually 30-45 minutes, but you should assess this for each ITT yourself.",
+    "You then need to construct a linear model for your data. It should include 1 covariate for every experimental variable (eg, time, genotype, sex, diet, injection). You should also include an interaction variable for time and the variable of interest. This will be the crucial value that you interpret different slopes of the initial drop from.",
+    "After creating the model, you will need to assess the significance of that model. Do this using the anova command in R. This will give you the covariate p values.",
+    "Next, to find the beta estimates, you will need to run the coefficient command in R. This will tell you the actual changes in glucose (mg/dL) for each covariate. The beta coefficient of interest is the one corresponding to the interaction variable you coded in step 2.",
+    "Sample R code new.data.set &lt;-original.data.set%&gt;% filter(time==&#34;0&#34;| time == &#34;15&#34; | time == &#34;30&#34;| time ==&#34;45&#34;) drop.data.lm &lt;- lm (formula = ( glucose ~ time + treatment + time:treatment, data = new.data.set) anova(drop.data.lm) coefficients(drop.data.lm)"
+  ],
+  "authors": [
+    "Dave Bridges",
+    "Molly C Mulcahy",
+    "JeAnna R. Redd"
+  ],
+  "creator": "Dave Bridges",
+  "published_on": 1646681341,
+  "created_on": 1646665735,
+  "keywords": []
+}

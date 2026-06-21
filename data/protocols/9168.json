@@ -1,0 +1,27 @@
+{
+  "id": 9168,
+  "title": "Reads trimming & Quality control & Reads alignment",
+  "uri": "reads-trimming-quality-control-reads-alignment-k7qczmw",
+  "doi": "dx.doi.org/10.17504/protocols.io.k7qczmw",
+  "description": "{\"blocks\":[{\"key\":\"buup1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"cfqdq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"abamm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"8d1j2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "/home/CAM/qlin/RCP1_OX_Transcriptome/fastQC/raw",
+    "/home/CAM/qlin/RCP1_OX_Transcriptome/trimmomatic",
+    "/home/CAM/qlin/RCP1_OX_Transcriptome/fastQC/t1 /home/CAM/qlin/RCP1_OX_Transcriptome/fastQC/t3",
+    "/home/CAM/qlin/RCP1_OX_Transcriptome/STAR/t1 /home/CAM/qlin/RCP1_OX_Transcriptome/STAR/t2 /home/CAM/qlin/RCP1_OX_Transcriptome/STAR/t3 /home/CAM/qlin/RCP1_OX_Transcriptome/STAR/t4 /home/CAM/qlin/RCP1_OX_Transcriptome/STAR/t5",
+    "/home/CAM/qlin/RCP1_OX_Transcriptome/STAR/t1/view* /home/CAM/qlin/RCP1_OX_Transcriptome/STAR/t1/depth* /home/CAM/qlin/RCP1_OX_Transcriptome/STAR/t2/view* /home/CAM/qlin/RCP1_OX_Transcriptome/STAR/t2/depth* /home/CAM/qlin/RCP1_OX_Transcriptome/STAR/t3/view* /home/CAM/qlin/RCP1_OX_Transcriptome/STAR/t3/depth* /home/CAM/qlin/RCP1_OX_Transcriptome/STAR/t4/view* /home/CAM/qlin/RCP1_OX_Transcriptome/STAR/t4/depth* /home/CAM/qlin/RCP1_OX_Transcriptome/STAR/t5/view* /home/CAM/qlin/RCP1_OX_Transcriptome/STAR/t5/depth*",
+    "/home/CAM/qlin/RCP1_OX_Transcriptome/HISAT2/t6",
+    "/home/CAM/qlin/RCP1_OX_Transcriptome/HISAT2/t6/view* /home/CAM/qlin/RCP1_OX_Transcriptome/HISAT2/t6/depth*"
+  ],
+  "authors": [
+    "Qiaoshan Lin"
+  ],
+  "creator": "Qiaoshan Lin",
+  "published_on": 1512943504,
+  "created_on": 1512939408,
+  "keywords": []
+}

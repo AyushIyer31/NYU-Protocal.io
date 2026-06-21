@@ -1,0 +1,34 @@
+{
+  "id": 5328,
+  "title": "Assembly Procedure Applied to TARA Oceans Data (Ex. North Pacific)",
+  "uri": "assembly-procedure-applied-to-tara-oceans-data-ex-hfqb3mw",
+  "doi": "dx.doi.org/10.17504/protocols.io.hfqb3mw",
+  "description": "{\"blocks\":[{\"key\":\"9enlp\",\"text\":\"The workflow applied to Tara Oceans raw sequence data for generating assemblies suitable for genomic binning.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5a1vp\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ev527\",\"text\":\"Used in:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"btobk\",\"text\":\"\\\"290 Metagenome-assembled Genomes from the Mediterranean Sea: Ongoing Effort to Generate Genomes from the Tara Oceans Dataset\\\" - bioRxiv https://doi.org/10.1101/069484\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"d0hvv\",\"text\":\"\\\"Undocumented potential for primary productivity in a globally-distributed bacterial photoautotroph\\\" - submitted\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"ba7gh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"d2qqd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"7qc30\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "wget ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR599/ERR599052/*",
+    "Ex. Sample TARA138 for the prostistan size fraction (0.8-5.0 μm) collected at the mesopelagic (450-m) which consists of 3 sequence libraries: ERR1712000 - 190,613,172 reads ERR1712169 - 48,680,964 reads ERR868467 - 359,731,894 reads Total = 599,026,030 PE reads megahit --presets meta-sensitive -1 ERR1712000_1.fastq.gz,ERR1712169_1.fastq.gz,ERR868467_1.fastq.gz -2 ERR1712000_2.fastq.gz,ERR1712169_2.fastq.gz,ERR868467_2.fastq.gz -o tara138_prot_meso.megahit_asm Megahit is available here:https://github.com/voutcn/megahit 1.0.3 megahit --presets meta-sensitive -1 ERR1712000_1.fastq.gz,ERR1712169_1.fastq.gz,ERR868467_1.fastq.gz -2 ERR1712000_2.fastq.gz,ERR1712169_2.fastq.gz,ERR868467_2.fastq.gz -o tara138_prot_meso.megahit_asm Megahit is available here: https://github.com/voutcn/megahit 1.0.3 Megahit output: 3177295 contigs, total 2172136004 bp, min 200 bp, max 520054 bp, avg 684 bp, N50 746 bp",
+    "15 total assemblies for North Pacific stations",
+    "Generates tara_northpacific_PRIMARY_contigs.fasta cat */*_asm/final.contigs.fa >",
+    "seqmagick convert --min-length 2000 tara_northpacific_PRIMARY_contigs.fasta tara_northpacific_PRIMARY_min2000_contigs.fasta Seqmagick is available here:http://seqmagick.readthedocs.io/en/latest/ 0.6.1 seqmagick convert --min-length 2000 tara_northpacific_PRIMARY_contigs.fasta tara_northpacific_PRIMARY_min2000_contigs.fasta Seqmagick is available here: http://seqmagick.readthedocs.io/en/latest/ 0.6.1 1,231,780 contigs Longest scaffold 1091714 Number of scaffolds &gt; 10K nt 55757 4.5% Number of scaffolds &gt; 100K nt 821 0.1% Mean scaffold size 4099 N50 scaffold length 4081",
+    "Remove contigs that have complete overlaps cd-hit-est -i tara_northpacific_PRIMARY_min2000_contigs.fasta -o tara_northpacific_PRIMARY_min2000_contigs.99.fasta -T 90 -M 500000 -c 0.99 -n 10 CD-HIT is available here:http://weizhong-lab.ucsd.edu/cd-hit/ 4.6 cd-hit-est -i tara_northpacific_PRIMARY_min2000_contigs.fasta -o tara_northpacific_PRIMARY_min2000_contigs.99.fasta -T 90 -M 500000 -c 0.99 -n 10 CD-HIT is available here: http://weizhong-lab.ucsd.edu/cd-hit/ 4.6",
+    "At this point the multiple Megahit assemblie have been sharing the same ID naming scheme. Re-number the contig IDs. We convert ours to read - &#34;MHASMcontig_###&#34; New file name = tara_northpacific_PRIMARY_min2000_contigs.renamed.99.fasta",
+    "END - Elapsed time: 3d 10h 6m 23s Output tara_northpacific_PRIMARY_min2000_contigs.renamed.99.fasta = 104,545 contigs tara_northpacific_PRIMARY_min2000_contigs.renamed.99.singletons.seq = 839,264 contigs",
+    "cat tara_northpacific_PRIMARY_min2000_contigs.renamed.99.fasta tara_northpacific_PRIMARY_min2000_contigs.renamed.99.singletons.seq >",
+    "Build an index file bowtie2-build tara_northpacific_SECONDARY_contigs.fasta tara_northpacific_SECONDARY_contigs.bt_index 2.2.5",
+    "Perform alignment for each sample (site, fraction size, depth) - as used in the assembly AND repeat for each of the 15 datasets Future iterations will then convert SAM files to BAM files bowtie2 -q -1 ERR1712000_1.fastq.gz,ERR1712169_1.fastq.gz,ERR868467_1.fastq.gz -2 ERR1712000_2.fastq.gz,ERR1712169_2.fastq.gz,ERR868467_2.fastq.gz -S tara_northpacific_SECONDARY.tara138_prot_meso.sam -x tara_northpacific_SECONDARY_contigs.bt_index --no-unal -p 50 Bowtie2 is available here:http://bowtie-bio.sourceforge.net/bowtie2/index.shtml bowtie2 -q -1 ERR1712000_1.fastq.gz,ERR1712169_1.fastq.gz,ERR868467_1.fastq.gz -2 ERR1712000_2.fastq.gz,ERR1712169_2.fastq.gz,ERR868467_2.fastq.gz -S tara_northpacific_SECONDARY.tara138_prot_meso.sam -x tara_northpacific_SECONDARY_contigs.bt_index --no-unal -p 50 Bowtie2 is available here: http://bowtie-bio.sourceforge.net/bowtie2/index.shtml 40.80% overall alignment rate",
+    "Convert FASTA format to SAF format, and run featureCounts featureCounts -F SAF -a tara_northpacific_SECONDARY_contigs.saf -o tara_northpacific_SECONDARY.tara138_prot_meso.readcount tara_northpacific_SECONDARY.tara138_prot_meso.sam featureCounts is available here:http://bioinf.wehi.edu.au/featureCounts/ 1.5.0 featureCounts -F SAF -a tara_northpacific_SECONDARY_contigs.saf -o tara_northpacific_SECONDARY.tara138_prot_meso.readcount tara_northpacific_SECONDARY.tara138_prot_meso.sam featureCounts is available here: http://bioinf.wehi.edu.au/featureCounts/ 1.5.0",
+    "seqmagick convert --min-length 7000 tara_northpacific_SECONDARY_contigs.fasta tara_northpacific_SECONDARY_contigs.min7000.fasta",
+    "Using the script in the BinSanity package: Binsanity-profile"
+  ],
+  "authors": [
+    "Benjamin Tully"
+  ],
+  "creator": "Benjamin Tully",
+  "published_on": 1490651434,
+  "created_on": 1490648187,
+  "keywords": []
+}

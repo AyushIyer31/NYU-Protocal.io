@@ -1,0 +1,37 @@
+{
+  "id": 235487,
+  "title": "hPBMCs thawing and plating (no specific down-stream assay)",
+  "uri": "hpbmcs-thawing-and-plating-no-specific-down-stream-hh77b39rp",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj1ow5vk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"8n4dh\",\"text\":\"General protocol for thawing and plating human PBMCs from cyrovials. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"tutks\",\"text\":\"- Water bath at 37 degrees (use on in main lab)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ql9eq\",\"text\":\"- Dry ice\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ib3ei\",\"text\":\"- 1 x 50mL falcon tube per cryovial, with 25mL of thawing media at 37 degrees\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"79h1e\",\"text\":\"- MACs buffer at 37 degrees\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"nmgaw\",\"text\":\"- Thawing media at 37 degrees\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"zajrw\",\"text\":\"- Plating media at 37 degrees\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ebwf\",\"text\":\"- Tissue culture plasticware: 24-well plates, p1000 pipette tips, p20 pipette tips, stripettes, aspirating stripettes, trypan blue, countess slides, eppendorfs\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Retrieve cryovials for plating from Mr W and place on dry ice.",
+    "Make sure you have 1 falcon with thawing media per cryovial ready in the hood, pre-warmed to 37 degrees.",
+    "Place cells in floaty and place in water bath and allow to thaw for approx. 90 seconds.",
+    "Check to see if thawed, a small amount of ice remaining is fine.",
+    "Pour contents of cryovial into falcon containing thawing media.",
+    "Centrifuge falcons at room temp for 10 minutes at 300 x g.",
+    "Aspirate supernatant and resuspend pellet in 10mL MACs buffer – make sure resuspend pellet first in 1mL of warmed MACs with a p1000 pipette to ensure pellet is broken up, then add 9mL MACs with stripette.",
+    "Take 10uL of cell suspension and place in Eppendorf.",
+    "Centrifuge falcons 300 x g 10 mins at room temp.",
+    "Whilst falcons are centrifuging proceed with cell count: mix 10uL of trypan blue with 10uL of cell suspension, place 10uL in both chambers of a countess slide and count using “hPBMC cryo” programme on countess.",
+    "Note cell count per mL (countess accounts for 1:1 trypan blue dilution, so this number is accurate already) and live cell % (aiming for 80+ % viability).",
+    "Calculate volume of plating media needed for each pellet to obtain 1 x 10^6^ cells per mL.",
+    "Example: countess count = 5 x 10^5^ per mL. 5 x 10^5^ x 10 (as cells were in 10mL) = 5 x 10^6^ cells total. Therefore resuspend cells in 5mL for 1 x 10^6^ per mL.",
+    "For each patient sample, plate 500uL of cell suspension per well of a 24-well plate, and plate 1 well per treatment required for experiment. NOTE: This can be adjusted based on downstream assay being used. E.g. flow cytometry = 1 million/mL and plate 500uL in 24 well plate (results in 500,000 per well), whilst RNA needs more cells so plate 2mL in 6 well plate (results in 2 million per well).",
+    "For each patient, label wells with patient ID and treatments.",
+    "Place in incubator for MINIMUM of 2 hours to rest and proceed with downstream assay."
+  ],
+  "authors": [
+    "Rebecca Wallings",
+    "Malu G Tansey"
+  ],
+  "creator": "Janna Jernigan Posey",
+  "published_on": 1766166324,
+  "created_on": 1766165456,
+  "keywords": []
+}

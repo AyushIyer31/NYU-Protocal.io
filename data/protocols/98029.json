@@ -1,0 +1,34 @@
+{
+  "id": 98029,
+  "title": "16S and 18S rRNA mock community construction",
+  "uri": "16s-and-18s-rrna-mock-community-construction-dbym2pu6",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv5r19dg1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"antnj\",\"text\":\"Mock communities are defined mixtures of cells or DNA for methods development, testing, or validation. Here we present mock communities based on previously used 16S and 18S rRNA gene sequences from diverse marine microorganisms. Their use as controls for amplicon sequencing enables detection of biased or aberrant runs.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"ag8qk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bc0l4\",\"text\":\"Stock plasmids containing individual 16S or 18S sequences (see spreadsheet)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bev33\",\"text\":\"PCR reagents: NEB OneTaq 2X Master Mix with Standard Buffer (Cat no. M0482)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mfut\",\"text\":\"PCR and gel clean up kits: Zymo DNA Clean \\u0026 Concentrator (D4013), NucleoSpin Gel and PCR Clean-up XS kit (Cat. no. 740611), Zymoclean Gel DNA Recovery Kit (Cat. no. D4001)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ale3c\",\"text\":\"Qubit dsDNA, High Sensitivity (Q32851 or Q32854)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"et7ur\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a8hel\",\"text\":\"The kits listed here simply describe the ones used for the creation of our mock communities and may be subsituted for others that serve the same role. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Run PCR products on a gel to confirm successful amplification. Most samples are cleaned up with the Zymo DNA Clean-up and Concentrator Kit following the manufacturer&#39;s instructions. Perform the final elution in 50 µL of elution buffer and prepare 1:10 dilutions in 50 µL with molecular-grade H 2 O for the next PCR. 18S Sample 14 (3323) and the archael sequences (6445, 6446, 6447) are gel extracted with either the Macherey-Nagel NucleoSpin Gel and PCR Clean-up XS kit (Cat. no. 740611) or Zymoclean Gel DNA Recovery Kit (Cat. no. D4001)",
+    "Set up PCR reactions as previously described with the following primers and annealing temperatures depending on the sequence type: Type Forward Primer Reverse Primer Annealing Temp (°C) 1 16S Bacteria 27F 1492R 55 2 16S Archaea 20F 1392R 54 3 18S EukA EukB 54 Primer Sequence (5' - 3') 1 27F AGAGTTTGATCMTGGCTCAG 2 1492R TACGGYTACCTTGTTACGACTT 3 20F AGTTTGATCMTGGCTCAG 4 1392R ACGGGCGGTGTGTRC 5 EukA AACCTGGTTGATCCTGCCAGT 6 EukB GATCCTTCTGCAGGTTCACCTAC 27F/1492R: Heuer, Holger, et al. &#34;Analysis of actinomycete communities by specific amplification of genes encoding 16S rRNA and gel-electrophoretic separation in denaturing gradients.&#34; Applied and environmental microbiology 63.8 (1997): 3233-3241. 20F/1392R: Lane, D. J. &#34;16S/23S rRNA sequencing.&#34; Nucleic acid techniques in bacterial systematics (1991). EukA/EukB: Medlin, Linda, et al. &#34;The characterization of enzymatically amplified eukaryotic 16S-like rRNA-coding regions.&#34; Gene 71.2 (1988): 491-499.",
+    "The stock plasmids were synthesized by Twist with the Kan High Copy vector and rehydrated to 40 ng/µL in low-EDTA TE Buffer. Use 1:10 dilutions of the stock plasmids (~4 ng/µL) for the first PCR.",
+    "Set up 25 µL PCR reactions with M13 primers and NEB OneTaq 2X Master Mix with Standard Buffer: Reagent Volume (µL) 1 10 uM M13 Forward Primer 1 2 10 uM M13 Reverse Primer 1 3 Master Mix 12.5 4 Template DNA 1 5 Water 10.5",
+    "Perform clean-ups again with the Zymo DNA Clean-up and Concentrator Kit. Perform the final elution in 50 µL . Here the archael sequences are gel extracted again.",
+    "Quantify the cleaned-up PCR product in duplicate with the Qubit dsDNA High Sensitivity (HS) assay kit.",
+    "Run PCR with the following conditions: Step Temp (°C) Time 1 Initial Denaturation 94 30 seconds 2 25 cycles 94 30 seconds 3 55 1 minute 4 68 2 minutes 5 Final Extension 68 5 minutes",
+    "(optional) Perform sanger sequencing with the second PCR primers for validation. This was performed with the construction of our mock communities.",
+    "Using the recipe spreadsheets, enter the concentrations, prepare dilutions, and mix accordingly. The expected ratios are also included in these spreadsheets. The final mock communities are also then serially diluted to approximately 0.01 ng/µL.",
+    "(optional) Confirm successful amplication following the PCR conditions and primers used for amplicon library prepartion with both the diluted PCR product and mixtures. This was performed with the construction of our mock communities."
+  ],
+  "authors": [
+    "Rob Lampe",
+    "Ariel Rabines",
+    "Bryce Ellman",
+    "Hong Zheng",
+    "Andrew E Allen"
+  ],
+  "creator": "Rob Lampe",
+  "published_on": 1746044667,
+  "created_on": 1712759271,
+  "keywords": []
+}

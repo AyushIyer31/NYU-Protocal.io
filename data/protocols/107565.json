@@ -1,0 +1,28 @@
+{
+  "id": 107565,
+  "title": "LRRK2 PhosphoSens Assay",
+  "uri": "lrrk2-phosphosens-assay-dmam42c6",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbz8qngpk/v2",
+  "description": "{\"blocks\":[{\"key\":\"20d4a\",\"text\":\"With this enzymatic activity assay we were able to determine IC50 values of published inhibitors aswell as newly synthesized compounds that inhibit LRRK2. The assay is based on the in vitro phosphorylation reaction between the enzymatic active LRRK2(RCKW)-construct and the SOX-based substrate peptide (AQT0615 from AssayQuant Technologies).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Pipett a dilution series of eleven concentrations between 15µM and 0.4nM (calculated with an assay volume of 10µL) of the compounds into white 384-well plates (Greiner 781207) as duplicates with an ECHO acoustic dispenser (Labcyte). Pipett a equivalent of DMSO in two wells per compound as 0% (without protein and compound) and 100%(without compound) control.",
+    "Dilute the purified LRRK2 RCKW to 22nM with the reaction buffer (50mM HEPES buffer (pH7.5), 10mM MgCl 2 , 1% glycerol, 1mM DTT, 0.2mg/mL BSA, 0.01% Tween20, 5µM AQT0615) and add 10µL to each well, except the 0% control wells, with a multichannel pipette (Eppendorf). Add 10µL of pure reaction buffer to the 0% control wells.",
+    "Make 10mM, 100µM and 1.6µM stock solutions of the compounds in DMSO.",
+    "Pipett 5nL 100mM ATP stock into each well with the ECHO acoustic dispenser (Labcyte).",
+    "Centrifuge the plates at 1500g n for 2min, before incubating the reaction at room temperature for 4h.",
+    "Measure the fluorescence after 360nm excitation at 487nm emission with a PHERAstar plate reader (BMG Labtech).",
+    "Normalize the response to the average 0% and 100% controls. Calculate the IC 50 values via non-linear regression of the log[inhibitor] vs. the normalized response with GraphPad Prism 8."
+  ],
+  "authors": [
+    "Nicolai D. Raig",
+    "Stefan Knapp"
+  ],
+  "creator": "Nicolai D. Raig",
+  "published_on": 1726211893,
+  "created_on": 1726211279,
+  "keywords": []
+}

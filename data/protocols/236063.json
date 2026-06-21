@@ -1,0 +1,36 @@
+{
+  "id": 236063,
+  "title": "A Systematic Review on Artificial Liver for Implantation",
+  "uri": "a-systematic-review-on-artificial-liver-for-implan-hir7b4d9p",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj1rw5vk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"6nfll\",\"text\":\"Chronic liver disease remains a leading cause of global mortality, yet organ shortages and transplant complications limit the efficacy of orthotopic liver transplantation. While extracorporeal support systems serve as temporary bridges, they fail to restore long-term patient autonomy or replicate complex biosynthetic functions. This systematic review, conducted in accordance with PRISMA 2020 guidelines, evaluates recent advancements in implantable artificial livers (IALs) designed for permanent functional integration. We analyzed 71 eligible studies, assessing cellular sources, fabrication strategies, maturation processes, and functional readiness. Our findings indicate significant progress in stem-cell-derived hepatocytes and bioactive scaffolds, such as decellularized extracellular matrix (dECM). However, a critical technological gap remains in scaling current sub-centimeter prototypes toward clinically relevant volumes (~200 mL). Key engineering challenges include integrating hierarchical vascular networks, requiring primary vessels exceeding 2 mm in diameter for surgical anastomosis, and functional biliary systems to prevent cholestatic injury. Furthermore, while micro-vascularization and protein synthesis are well documented, higher-order functions such as spatial zonation and coordinated metabolic stability remain underreported. Future clinical translation necessitates advancements in multi-cellular patterning, microfluidic-driven maturation, and autologous reprogramming. This review provides a comprehensive roadmap for bridging the gap between biofabricated constructs and organ-scale hepatic replacement, emphasizing the need for standardized functional benchmarks to ensure long-term in vivo success.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Conduct a comprehensive literature search across three electronic databases: Web of Science, PubMed, and Scopus. Use combinations of keywords, including &#39;artificial liver&#39;, &#39;liver tissue engineering&#39;, and &#39;engineered liver&#39;. Restrict search results to original research articles published in English since 2015. Exclude document types such as review articles, meta-analyses, conference abstracts, and proceedings.",
+    "Utilize the following specific search queries for each database:",
+    "Web of Science: TS=(&#34;artificial liver&#34; OR &#34;liver tissue engineering&#34; OR &#34;engineered liver&#34;) AND LA=(English) AND PY=(2015-2025) AND DT=(Article) NOT DT=(Review OR &#34;Meeting Abstract&#34; OR &#34;Editorial Material&#34; OR &#34;Conference Paper&#34; OR &#34;Proceedings Paper&#34; OR &#34;Early Access&#34; OR &#34;Retracted Publication&#34; OR &#34;Book Chapter&#34;)",
+    "PubMed: (&#34;artificial liver&#34;[tw] OR &#34;liver tissue engineering&#34;[tw] OR &#34;engineered liver tissue&#34;[tw]) AND (&#34;2015/01/01&#34;[dp] : &#34;3000&#34;[dp]) AND (english[lang]) AND (journal article[pt]) NOT (review[pt] OR systematic review[pt] OR meta-analysis[pt]) NOT (editorial[pt] OR comment[pt] OR published erratum[pt] OR retracted publication[pt] OR retraction of publication[pt])",
+    "Scopus: TITLE-ABS-KEY(&#34;artificial liver&#34; OR &#34;liver tissue engineering&#34; OR &#34;engineered liver&#34;) AND PUBYEAR &gt; 2014 AND LANGUAGE(&#34;English&#34;) AND DOCTYPE(ar) AND NOT DOCTYPE(re OR cp OR ch OR ed OR no OR or OR rp)",
+    "The initial search yielded 1,422 records (Web of Science: 464, PubMed: 379, Scopus: 579). After removing 780 duplicates, 642 unique titles and abstracts remained for screening. Six independent authors screened these records and excluded 571 articles based on the following criteria: (a) extracorporeal artificial liver support systems; (b) liver-on-a-chip models; (c) cell aggregates or droplets lacking strategies for tissue integration; and (d) cell-free scaffolds seeded with cells post-fabrication.",
+    "Specifically, exclusion criterion (c) was further refined to exclude: (c-1) stem cell aggregates without evaluation of vascularization, and (c-2) hepatic cell aggregates lacking endothelial cell co-culture. Similarly, criterion (d) was specified to exclude: (d-1) stem cell seeding without vascularization analysis, and (d-2) hepatic cell seeding without endothelial cell integration. Ultimately, 71 eligible studies were included in this review. All the excluded studies were independently verified by another author.",
+    "The study selection process is illustrated in the PRISMA flow diagram (Fig. 1).",
+    "Figure 1: The PRISMA flow diagram shows the study selection process."
+  ],
+  "authors": [
+    "Thi Huong Le",
+    "Kinam Hyun",
+    "Nima Tabatabaei Rezaei",
+    "Chanh Trung Nguyen",
+    "Sandra Jessica Hlabano",
+    "Van Phu Le",
+    "Keekyoung Kim",
+    "Kyo-In Koo"
+  ],
+  "creator": "Kyo-In Koo",
+  "published_on": 1767152696,
+  "created_on": 1767135696,
+  "keywords": []
+}

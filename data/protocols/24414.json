@@ -1,0 +1,32 @@
+{
+  "id": 24414,
+  "title": "Cell deposition and drug sensitivity assay",
+  "uri": "cell-deposition-and-drug-sensitivity-assay-336gqre",
+  "doi": "dx.doi.org/10.17504/protocols.io.336gqre",
+  "description": "{\"blocks\":[{\"key\":\"bqu4m\",\"text\":\"This protocol describes how to deposit several cells of S. robusta in droplets on a petri dish, allowing the experimenter to track the growth of approximately single cell isolates with high throughput. This was used to determine drug sensitivity.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":56,\"length\":10}],\"entityRanges\":[],\"data\":[]},{\"key\":\"5g9m2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"b5cid\",\"text\":\"We found that in, liquid culture, S. robusta is sensitive to 10 ug/mL puromycin and 250 ug/mL glyphosate. One caveat to keep in mind is that S. robusta appears more tolerant to antibiotics when grown on agar plates, being insensitive to up to 20 ug/mL of puromycin, for example. We recommend selection in liquid culture.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":34,\"length\":10},{\"style\":\"italic\",\"offset\":141,\"length\":10}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"3tr7g\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"e9e3k\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5p2nt\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"7px3J\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"qJMUf\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"SV6Uo\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"cvwU6\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":203815,\"guid\":\"41AC2B03341F11EE9D4302C0B41BC903\",\"name\":\"Puromycin dihydrochloride\",\"mol_weight\":0,\"sku\":\"P9200\",\"url\":\"https://www.usbio.net/biochemicals/P9200\",\"cas_number\":\"58-58-2\",\"rrid\":\"\",\"vendor\":{\"id\":238,\"name\":\"US Biological\",\"link\":\"https://www.usbio.net/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":203816,\"guid\":\"41AC2B53341F11EE9D4302C0B41BC903\",\"name\":\"Hygromycin B\",\"mol_weight\":0,\"sku\":\"h397\",\"url\":\"https://phytotechlab.com/hygromycin-b.html\",\"cas_number\":\"31282-04-9\",\"rrid\":\"\",\"vendor\":{\"id\":745,\"name\":\"Phytotech Labs\",\"link\":\"http://phytotechlab.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":203817,\"guid\":\"41AC2BA2341F11EE9D4302C0B41BC903\",\"name\":\"Glyphosate\",\"mol_weight\":0,\"sku\":\"g345\",\"url\":\"https://phytotechlab.com/glyphosate.html\",\"cas_number\":\"1071-83-6\",\"rrid\":\"\",\"vendor\":{\"id\":745,\"name\":\"Phytotech Labs\",\"link\":\"http://phytotechlab.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Grow 100 mL volume of cells in a 175 cm2 flask for three to four days, until there is a substantial number of healthy, floating cells",
+    "Stand flask vertically and take a 15 mL volume of the floating culture (so as to not disturb the adherent cells) to measure cell density",
+    "Measure cell density using a hemocytometer. The target concentration for distributing cells is 400-500 floating cells/mL, so dilute as necessary. The volume needed is 2 mL, including any drugs you want to add.",
+    "b.Take the 2 mL, containing the desired number of cells, in an Eppendorf tube.",
+    "Centrifuge using a personal mini-centrifuge for two minutes. At this speed (which I believe is 6000 rpm), many cells remain in the supernatant. Those are the cells we want. Do not disturb any pellet that forms from the centrifugation.",
+    "Using a Pipetteman, withdraw 40µl aliquots from near the top of the Eppendorf tube. Deposit 40µl drops in a 6x8 array in a Petri dish.",
+    "Record the approximate number of cells deposited in each drop.",
+    "In our hands, this is ~4-10 cells per droplet on average",
+    "Wrap petri dish with parafilm and place in incubator",
+    "After three days of treatment, count cell numbers/determine cell viability in each droplet",
+    "Spin cells down at 6000xg to pellet them. Scrape and resuspend in 1 mL"
+  ],
+  "authors": [
+    "Lev Tsypin",
+    "Aaron Turkewitz"
+  ],
+  "creator": "Lev Tsypin",
+  "published_on": 1561428718,
+  "created_on": 1560321003,
+  "keywords": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": 51346,
+  "title": "T4PNK end-healing of RNA samples",
+  "uri": "t4pnk-end-healing-of-rna-samples-bwdspa6e",
+  "doi": "dx.doi.org/10.17504/protocols.io.bwdspa6e",
+  "description": "{\"blocks\":[{\"key\":\"5654h\",\"text\":\"Resolution of 5' and 3' ends of sample RNA prior to library preparation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"cenq6\",\"text\":\"Do not let pellet from ethanol precipitation and wash over dry\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"53ijm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9venp\",\"text\":\"Visually inspect top phase after phase lock tube spin to make sure there is no secondary phase at bottom of RNA phase. If there is, carefully remove top phase and leave bottom phase. This is the organic phase that has leaked into the RNA phase and should be avoided.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"1ch74\",\"text\":\"ACID PHENOL/CHLOROFORM USE SHOULD OCCUR IN SAFETY (FUME) HOOD.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"chnim\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"76i6g\",\"text\":\"5x PNK pH 6.5 buffer \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"br1mb\",\"text\":\"     350 mM Tris–HCl, pH 6.5(Calbiochem; CAS 77-86-1)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6mfuk\",\"text\":\"     50 mM MgCl2(Sigma; M8266-100G)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bdb6k\",\"text\":\"     5 mM dithiothreitol(Sigma; D9779-5G)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"estie\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ed6of\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"534r3\",\"text\":\"Acid-Phenol:Chloroform pH 4.5(ThermoFisher; AM9720)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1e1v1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8iqsg\",\"text\":\"GlycoBlue Coprecipitant(ThermoFisher; AM9515)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1b668\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ceqt6\",\"text\":\"Phase Lock gel heavy tubes, 2 mL(VWR; 10847-802)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b7r7g\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2hac7\",\"text\":\"T4 Polynucleotide Kinase (NEB; M0201S)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"45k6h\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Set up the following reaction components in a sterile PCR tube: 4 μl 5 × PNK pH 6.5 buffer 0.5 μl PNK 0.5 μl RNasin 5 μl Plus-AlkB/Minus-AlkBRNA sample To 20 μL with Nuclease-free Water",
+    "Put reaction at 37C for 30 mins. This can be done in a thermocycler",
+    "Put samples on ice, add to the reaction: 5 μL of 10x PNK reaction buffer (NEB-supplied buffer) 5 μL of 10 mM ATP 1 μL of T4PNK (additional) 1 μL of RNase inhibitor (optional) Up to 50 μL with Nuclease-free Water",
+    "Put reaction at 37°C for 30 min.",
+    "Raise volume of T4PNK-treated RNA samples to 400 μL.",
+    "Collect the solution and add it together with 400μL acid phenol/chloroform to a 2 ml Phase Lock Gel Heavy tube. Mix by inversion in hand for 30 sec.",
+    "Separate the phases by spinning for 5 min at full speed and room temperature.",
+    "Transfer the aqueous layer into a new tube (be careful not to touch the gel matrix with the pipette or remove organic phase that may have not migrated below the gel matrix).",
+    "Precipitate by adding 0.75 μL glycoblue and 40μL 3 M sodium acetate pH 5.5. Mix, then add 1 ml 100% ethanol, mix again, and place at -20°C overnight.",
+    "Centrifuge at 15,000 rpm at 4°C for 20 min. Remove the supernatant and wash the pellet with 500 μL 80% ethanol and vortex for 30 sec. Spin again for 5 min. to pellet RNA again.",
+    "Remove ethanol wash completely (be careful to not remove pellet). Allow to air-dry at room temperature for 10 mins. Remove any excess ethanol in tube with additional pipetting.",
+    "Resuspend the pellet in 5 μL of nuclease-free H2O and transfer to new 0.2 mL RNase-free PCR tube."
+  ],
+  "authors": [
+    "Jonathan Howard"
+  ],
+  "creator": "Jonathan Howard",
+  "published_on": 1625599210,
+  "created_on": 1625598461,
+  "keywords": []
+}

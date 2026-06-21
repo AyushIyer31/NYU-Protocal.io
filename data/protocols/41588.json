@@ -1,0 +1,38 @@
+{
+  "id": 41588,
+  "title": "Fluorescent labeling Bacillus mycoides",
+  "uri": "fluorescent-labeling-bacillus-mycoides-bkuukwww",
+  "doi": "dx.doi.org/10.17504/protocols.io.bkuukwww",
+  "description": "{\"blocks\":[{\"key\":\"95gb2\",\"text\":\"GFP method is performed in bacteria to localize a desired peptide in the bacteria. In this experiment, we are focusing on the Nlp-14a. In the paper written by (Yi,2017) GFP was mutated on a B. mycoides E18 strain to study the plant-interaction studies. In their paper, they constructed a superfolder green fluorescent protein (sfGFP) and red fluorescent protein (mKate2) in the B. mycoides E18 strain. They tracked the GFP- tagged bacterial strain after inoculating in Chinese cabbage plants in a hydroponic system. They noticed that the bacterial strain rapidly attached to the plant during colonization and formed a matrix. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":159,\"length\":10}],\"entityRanges\":[],\"data\":[]},{\"key\":\"7nv17\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2jlmb\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":[]},{\"key\":\"16mhi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"citation\",\"mutability\":\"\",\"data\":{\"guid\":\"495F54BF341F11EE9D4302C0B41BC903\",\"title\":\"Optimized fluorescent proteins for the rhizosphere-associated bacterium Bacillus mycoides with endophytic and biocontrol agent potential\",\"protocol_guid\":\"\",\"journal\":\"Environmental microbiology reports, 10(1), 57-74\",\"date\":\"2017-12-01T07:53:00Z\",\"created_on\":\"2026-02-10T22:33:37Z\",\"doi\":\"10.1111/1758-2229.12607\",\"authors\":\"Yi, Y., Frenzel, E., Spoelder, J., Elzenga, J. T. M., van Elsas, J. D., \\u0026 Kuipers, O. P.\",\"can_edit\":false}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Prepare the B. mycoides strain aliquotes for electroporation.",
+    "Cultivate the bacterial strain overnight in LB broth at 30 °C and at 180 rpm.",
+    "Transfer 1 mL of the overnight culture into 100 mL of LB medium (with 2% [wt/wt] glycine) and incubate it at 30 °C and 180rpm until optical density at 600 nm is 0.4 to 0.7.",
+    "Centrifuge the cells and wash the pellets with increasing concentrations of ice-cold glycerol (2.5%, 5%, and 10%). Resuspend this pellet in precooled electroporation buffer (10% glycerol) and shock freeze in liquid nitrogen.",
+    "Add the library vector DNA in an amount of 2 µg to the cells, and perform electroporation. The settings for electroporation are 2.0 kV, 25 lF and 200 X in a 2-mm cuvette using a Bio Rad Gen Pulser II electroporation system (Bio-Rad).",
+    "Add 1 mL of LB medium and grow the cells for 02:00:00 at 30 °C and 150 rpm for recovery and then plate on LB-Cm4 agar.",
+    "After 24:00:00 of growth at 30 °C , harvest the colonies from the plates and pool in LB medium",
+    "Store the libraries at -80 °C as 15% glycerol stocks.",
+    "Inoculate the B. mycoides strain mKate2mut library in 50 mL of LB-Cm4 and grow at pH 7 or pH 6 to an OD 600 nm of 0.3-0.6.",
+    "B. mycoides has been seen to show extensive cell-chaining and hence a mild sonication step of 4 rounds of 3 X 10 pulses of 1s with an amplitude of 30% can be applied to disassemble the aggregated cells.",
+    "Sort the cells on a flow cytometer at 20 psi using a 70 micromolar (µM) nozzle at a flow rate of 1.0 with the highest sort precision mode (0– 32-0 sort purity mask).",
+    "Using a sequential gating strategy with FCS height versus widths, followed by SCC height versus width, cellular debris, and chained cells can be excluded.",
+    "After FACS sorting, plate the final fluids containing bright cells on LB-Cm4 plates and grown them overnight at 30 °C .",
+    "To separate the brightest variants choose a cutoff of 3% of the brightest event in the first round of cell sorting and 0.3% of the brightest events in the second round of sorting with the light scatter parameters.",
+    "Routinely culture Bacillus strains in Luria-Bertani (LB) medium at 30 °C with aeration at 200 rpm.",
+    "Observe the colonies using a fluorescence microscope. Keep the filter setting for GFP as excitation at 460/480nm and emission at 495/540 nm with a 485 nm dichromatic mirror; for RFP, the filter setting can be kept as excitation at 545/580 nm and emission at 610 nm with a 600 nm dichromatic mirror.",
+    "Calculate the total cell fluorescence the formula is: Corrected total cell fluorescence (CTCF) = Integrated Density – (Area of selected cell x Mean fluorescence of background readings)",
+    "Capture the images on a camera and calculate the intensity of single-cell with Image J software."
+  ],
+  "authors": [
+    "Andreea S"
+  ],
+  "creator": "r.rajadhyaksha",
+  "published_on": 1603542399,
+  "created_on": 1599219860,
+  "keywords": []
+}

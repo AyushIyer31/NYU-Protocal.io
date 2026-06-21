@@ -1,0 +1,31 @@
+{
+  "id": 226375,
+  "title": "PSMtag - Anhydrous Labeling Protocol (50 µg Labeling) V2",
+  "uri": "psmtag-anhydrous-labeling-protocol-50-g-labeling-v-g9bfbz2jp",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg3w5yzv25/v2",
+  "description": "{\"blocks\":[{\"key\":\"3pfjg\",\"text\":\"A water-free (anhydrous) method labeling peptides with PSMtag. Similar methods enable the use of PSMtag as low as 1 to 1 (wt/wt) peptide to tag ratios. What follows is a general protocol for labeling of an 50ug peptide sample using 75ug of PSMtag (1.5X wt/wt), allowing robust labeling efficiency of \\u003e98%. Labeling input can be scaled accordingly.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"5oq9i\",\"text\":\"Key points while scaling up or down:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":36}],\"entityRanges\":[],\"data\":{}},{\"key\":\"ckikt\",\"text\":\"- Maintain Peptide concentrations \\u003e 1 mg/mL\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ciewd\",\"text\":\"- Maintain PSMtag concentrations \\u003e 28.4 mM\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6tktk\",\"text\":\"- DIPEA is calculated to be a 30eq peptide molarity\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2a9a4\",\"text\":\"- All uses of \\\"DMSO\\\" refer to using fresh, anhydrous DMSO\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5afca\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a3ts1\",\"text\":\"Key points while scaling down: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":31}],\"entityRanges\":[],\"data\":{}},{\"key\":\"2g6h1\",\"text\":\"- This protocol has been demonstrated to easily scale down to 8µg peptide input\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"clahd\",\"text\":\"- Recommendations for scaling down further to be determined soon\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"bbfaa\",\"text\":\"Material Preparation:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":21}],\"entityRanges\":[],\"data\":{}},{\"key\":\"f01ib\",\"text\":\"- Use fresh, anhydrous DMSO to dissolve PSMtag and peptides, as traces of water can create undesirable hydrolysis products during the labeling reaction. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9488p\",\"text\":\"- Freeze PSMtag in aliquots at -80ºC to avoid repeated freeze-thaw cycles.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bims6\",\"text\":\"- Solubilizing desalted peptides in TEAB and re-drying helps basify the reaction if previously dried from a formic acid solution.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"dmxze\",\"text\":\"1. PSMtag – 56.7 mM in DMSO (24 µg/µL).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":3,\"length\":6}],\"entityRanges\":[],\"data\":{}},{\"key\":\"ccgdb\",\"text\":\"2. N,N-Diisopropylethylamine (DIPEA) – 5740 M pure (Sigma cat: D125806)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":3,\"length\":25}],\"entityRanges\":[],\"data\":{}},{\"key\":\"rbybs\",\"text\":\"3. Anhydrous DMSO (Sigma cat: 276855)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":3,\"length\":15}],\"entityRanges\":[],\"data\":{}},{\"key\":\"wxnnl\",\"text\":\"4. 1M Triethylammonium Bicarbonate, TEAB (Sigma cat: T7408)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":3,\"length\":31}],\"entityRanges\":[],\"data\":{}},{\"key\":\"sx507\",\"text\":\"5. 0.2 mL PCR tubes (Thermo Fisher cat: E0030124286)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":3,\"length\":16}],\"entityRanges\":[],\"data\":{}},{\"key\":\"qevie\",\"text\":\"6. Hydroxylamine, HA - 50% in water (Sigma cat: 8.14441)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":3,\"length\":13}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "An aliquot of 50 µg of desalted peptide digest is resuspended in 100 µL of 100 mM TEAB and dried to completeness in a 0.2 mL tube for 1 hr under vacuo using a speed-vac.",
+    "Dissolve sample in 3.25 µL of a 436.6 mM DIPEA in DMSO (~30 eq).",
+    "Labeling by PSMtag is initiated by the addition of 3.25 µL of 56.7 mM PSMtag in DMSO (4 eq).",
+    "Pipette and Spin 0.2 mL tube to mix - ensuring all peptide sample is completely dissolved from the tube walls.",
+    "Labeling reaction is incubated at 25 ºC for 2 hrs.",
+    "Reaction is quenched with 1 µL of a 1.8% HA solution in water (v/v) and incubated 25 ºC for 30 min.",
+    "Sample is either stored at -20 ºC or further diluted for LC-MS/MS analysis.",
+    "Bulk PSMtagged peptides can be diluted directly after labeling for low-input analyses. Recommended dilution solvent is 30% acetonitrile, 2% formic acid, and 0.05% DDM (n-dodecyl β-D-maltoside). Final DMSO concentration should be &lt;5%",
+    "If drying samples for storage, it is recommended to reconstitute first with organic solvent (i.e. acetonitrile or DMSO), then dilute with aqueous solutions to reach desired injection conditions (see step 8). It is NOT recommended to reconstitute in entirely aqueous solvent. At least 20% DMSO in water (or ACN) is necessary to solubilize samples."
+  ],
+  "authors": [
+    "Mike Agius",
+    "ssipe ",
+    "Sarah Sipe"
+  ],
+  "creator": "Mike Agius",
+  "published_on": 1756996222,
+  "created_on": 1756928170,
+  "keywords": []
+}

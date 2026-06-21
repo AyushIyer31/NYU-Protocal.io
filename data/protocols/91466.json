@@ -1,0 +1,28 @@
+{
+  "id": 91466,
+  "title": "Open Field Test",
+  "uri": "open-field-test-c5jiy4ke",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgq3yz5lk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"es8s2\",\"text\":\"The Open Field Test is a measure of rodent anxiety-like behavior. The rodent’s natural “anxious” tendency is to spend time in the outer borders of the chamber, close to the walls; this is called thigmotaxis. A rodent exhibiting decreased anxiety will spend more time in the center of the chamber, where it is unprotected by the walls. If only measuring anxiety-like behavior, measure time spent in the outside of the field and time spent in the center of the field (in this case, “center” refers to the 33cmx33cm square shape in the center of the field). You can also use the Open Field Test to look at locomotion (distance traveled and velocity), as well as exploratory behaviors (rearing).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dcedi\",\"text\":\"This protocol is adapted from Tye, et al., 2013 (doi: 10.1038/nature11740) and was originally designed to be used with optogenetic stimulation. If you are performing an Open Field Test without stimulation, you can decrease the time to 10 minutes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"13fh9\",\"text\":\"Materials:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5vecu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b9aka\",\"text\":\"Large open field (opaque white; 55 cm x 55 cm)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b4lgp\",\"text\":\"Ethovision\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8r10d\",\"text\":\"Two USB cameras of the same make and model\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c7r1n\",\"text\":\"70% Ethanol and paper towels\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"51b7f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ks00\",\"text\":\"Optional Materials:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":19}],\"entityRanges\":[],\"data\":{}},{\"key\":\"f47fq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2dfct\",\"text\":\"Prizmatix Blue LED\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cttv5\",\"text\":\"Patch cord\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6odoj\",\"text\":\"Ceramic slip\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4udap\",\"text\":\"Extra cage\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Open Ethovision and apply necessary settings. Duration of the test and External Hardware will vary depending on whether or not you’ll be using optogenetic stimulation.",
+    "If not done already, swab Open Field with 70% Ethanol and let dry.",
+    "Grasp mouse lightly by the middle of the tail and place in center of the Open Field. If utilizing optogenetic stimulation, scruff mouse and apply patch cord to implant with help of ceramic slip. Let mouse recover from scruffing in empty cage for 2-5 minutes, then place mouse in the center of the Open Field.",
+    "Press “Start” in Acquisition window of Ethovision.",
+    "When the animal has finished the test, gently remove it from the Open Field and return it to the homecage. If utilizing optogenetic stimulation, gently remove animal from Open Field and carefully remove patch cord and ceramic slip from mouse’s implant. You do not need to scruff the animal for patch cord removal.",
+    "Clean the Open Field with 70% Ethanol and paper towels, and continue with next animal.",
+    "Compare time in center and time in thigmo between groups, or, if using optogenetic stimulation, compare time in center and time in thigmo across 3 minute periods.",
+    "Assess freezing behavior (time spent frozen and instances of freezing)."
+  ],
+  "authors": [
+    "jillian.seiler "
+  ],
+  "creator": "Jillian Seiler",
+  "published_on": 1701116036,
+  "created_on": 1700645150,
+  "keywords": []
+}

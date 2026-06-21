@@ -1,0 +1,39 @@
+{
+  "id": 234512,
+  "title": "Xenium HuBMAP Lung FFPE Protocol",
+  "uri": "xenium-hubmap-lung-ffpe-protocol-hg9qb3z5x",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvmbdk9g3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"7fg88\",\"text\":\"This protocol reports the HuBMAP-Lung TMC preparation of FFPE processed adult human lung, extrapulmonary airway and artery tissue for Xenium assay, experimentally combined with multiple assay modalities on same and serial sections of large tissue blocks and 3mm core tissue microarrays.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"8kkke\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b9ai9\",\"text\":\"10X Genomics Xenium slides\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dkk1q\",\"text\":\"Gene probe set designed for Xenium chemistry\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cn8bq\",\"text\":\"Formalin fixed paraffin embedded tissue sections\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5s4me\",\"text\":\"Remainder of reagents, materials and instruments are described in detail in attached user guides.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2vq4a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "A Xenium Standalone Custom 480 Gene Panel (APVQUA) was designed for 16 reactions by the HuBMAP-Lung Tissue Mapping Center. Genes were selected based on top lung cell type markers identified in HuBMAP-Lung single nuclear RNAseq ( https://doi.org/10.35079/hbm264.lnrm.443 ) and SNAREseq2 ( https://doi.org/10.35079/hbm985.rsmr.838 ) datasets and preprint https://doi.org/10.1101/2025.05.23.655666 . The Xenium Panel Designer was used to optimize the probe target selection.",
+    "TissuePreparationGuide_Rev_C.pdf The four tissue microarrays and the additional 27 WSI, approximately 1 x 2 cm, FFPE blocks were serially sectioned (5 micron) for use in multiple assay modalities. The fifth section in the serial TMA series and 3rd serial section from the WSI blocks were placed on a Xenium™ slide (Figure 2) and prepared as detailed in the 10X Genomics TissuePreparation Guide (CG000578 Rev C). The TMA block was appropriately sized for the 1x2 cm Xenium™ imaging area. Between 2 and 4 WSI tissue sections were fit into the Xenium™ imaging area of single slides. Figure 2. Multi-Dimension Mapping and Modality Integration Serial Sectioning Plan for A) Tissue Microarrays and B). whole tissue block sections.",
+    "CG000580_Demonstrated_Protocol_Xenium_FFPE_Deparaffinization_Decrosslinking_RevC.pdf Shortly after arrival, the dried Xenium™ slides were deparaffinized and decrosslinked. Details of the procedure are found in according to &#34;10X Genomics Xenium Demonstrated_Protocol (CG000580 RevC)&#34;",
+    "CG000749_XeniumInSitu_GeneExp_CellSegmentation_User_Guide_RevB.pdf The following steps are described in detail in the &#34;Xenium In Situ Gene Expression with Cell Segmentation Staining User Guide (CG000749 Rev B)&#34;",
+    "CG000584_Xenium_Analyzer_UserGuide_RevD.pdf The following steps are described in detail in the &#34;Xenium Analyzer User Guide (CG000584 Rev D)&#34;",
+    "Probe Hydridization",
+    "System Operation Initialize-&gt;Load Slides-&gt;Scan Sample-&gt;Selection Regions-&gt;Run-&gt;Cleanup",
+    "Data Output, Storage, Analysis and Publication During every Xenium™ Analyzer run, image processing, decoding, and secondary analysis are performed real time on-instrument, generating a run-specific data output folder. The data were visualized with Xenium Explorer desktop software. Data were exported to storage folder and uploaded to Globus Directory using HuBMAP schema for file organization prior to submission for standardized analysis and HuBMAP Portal publication. The data were also processed and analyzed by the HuBMAP-Lung TMC investigators for use in hypothesis testing and multi-modality integration.",
+    "Reagent Preparation",
+    "Post Hybridization Wash",
+    "Ligation",
+    "Amplification",
+    "Cell Segmentation",
+    "Autofluorescence Quenching",
+    "Lung, extra-pulmonary airway and extra-pulmonary pulmonary artery samples were selected as BRINDL FFPE processed blocks dx.doi.org/10.17504/protocols.io.kxygxejwdv8j/v3 . Blocks were chosen to represent 9 regions of the lung and extra-pulmonary structures (Figure 1A). The majority of the selected cases had a history consistent with healthy lungs, minimal or no medications, illness or smoking prior to donation. An additional 27 lung tissue blocks were chosen to provide &#34;whole slide tissue image (WSI)&#34;, 2 with clinical history consistent with chronic obstructive pulmonary disease (COPD), 5 with lethal asthma, remainder clinically without lung disease.",
+    "URMC Biorepository for Investigation of Diseases of the Lung (BRINDL) donor organ screening, acceptance, grossing and preservation of tissues into FFPE blocked samples for analysis is outlined in these protocols: 602.2 Donor Acceptance Criteria for URMC HTC HuBMAP and LungMAP Inclusion dx.doi.org/10.17504/protocols.io.bjuxknxn 603.3 &amp; 604.5_URMC_HTC_Whole Lung and Lobe Processing dx.doi.org/10.17504/protocols.io.biz7kf9n 611.2 URMC HTC Formalin-Inflated, Paraffin-Embedded Human Lung Tissue (FFPE) dx.doi.org/10.17504/protocols.io.bjttknnn HuBMAP lung tissue sampling protocol - for dissection of specific levels of airways and processing to FFPE dx.doi.org/10.17504/protocols.io.j8nlk91jdv5r/v1",
+    "Tissue Microarray Preparation: FFPE tissue blocks from specific lung regions from 6 donors (age range 20-59 yo) were selected, cored with 3mm tool and used to make four tissue microarrays using protocol dx.doi.org/10.17504/protocols.io.yxmvmmd46v3p/v2 (Figure 1B). Figure 1A. CT scan of human lung with annotations representing bronchopulmonary segments and expected average airway size. Figure 1B. H&amp;E of representative section of four tissue microarrays created with 3 mm tissue cores of tissue chosen to represent the 9 regions of interest from the whole lung (Figure 1A).",
+    "The tissue sections for Xenium™ assay were dried upright in a drying rack at room temperature until the slide appeared dry and then baked at 42degC x 3 hours and then placed in a desiccator overnight at room temperture. The following day the xenium slides were packed in dry-rite and sent to UCSD for Xenium™ assay."
+  ],
+  "authors": [
+    "Jamie Verheyden",
+    "Gloria S Pryhuber"
+  ],
+  "creator": "Gloria S Pryhuber",
+  "published_on": 1765820984,
+  "created_on": 1765228496,
+  "keywords": []
+}

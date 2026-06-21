@@ -1,0 +1,29 @@
+{
+  "id": 59158,
+  "title": "Preparing Combined Indexed Primer Plates (IDT Ultramers) for the Illumina MiSeq - IDT UDIs",
+  "uri": "preparing-combined-indexed-primer-plates-idt-ultra-b5zwq77e",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvr63wbvmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"dldm5\",\"text\":\"The preparation of diluted combined (F+R) IDT working primer stocks of Illumina UDI primers for use in IMR PCR preps.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"u227\",\"text\":\"The following materials list contains those consumables used specifically at the IMR to complete the present protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c1kg4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6c7ik\",\"text\":\"IDT stock primer DWP\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f25fg\",\"text\":\"Eppendorf (or similar) DWPs\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2p272\",\"text\":\"Microplates sealing film Bio-Rad\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dvui7\",\"text\":\"Tips ClipTip 20\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"csb2c\",\"text\":\"Tips ClipTip 300\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"43ms9\",\"text\":\"UltraPure water\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6sde\",\"text\":\"Reservoirs\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Use our Excel template ( Illumina-IDT-UDI-8bp-customfusionprimers-template.xlsx ) to copy existing 16S/18S/ITS primers or to design your own custom gene primers with the proper Illumina indices and Nextera adapter orientations. We order IDT “Ultramers” for such long primers (~80-90 nt) as their coupling efficiency is one of the highest available (critical for obtaining high proportions of full-length oligos in the mix you obtain). Order the fusion primers at 4 nanomolar (nM) scale in deep-well plates (DWP); there will be 4 x 96-well plates, with one unique Forward primer + one unique Reverse primer combined in each well , arranged as follows: F1R1 Plate (P1) = UDIs 1-96 (ie: i5_1+i7_1 in well A1, i5_2+i7_2 in well A2, etc.) F1R2 Plate (P2) = UDIs 97-192 F2R1 Plate (P3) = UDIs 193-288 F2R2 Plate (P4) = UDIs 289-384",
+    "Once arrived, do a short spin of the plate in case lyophilized material was dislodged, then add 400 µL of PCR-grade water to each well of each plate containing the primers in order to reconstitute them at a concentration of 10 micromolar (µM) (1/10th the typical 100 µM working stock concentration for primers). Mix well by pipetting up and down at least 3 times and seal the plate with Bio-Rad film. Alternatively, the plate is sealed with Bio-Rad film and mixed well by vortexing it on a benchtop vortex for 00:00:30 and then doing a short spin at approx. 500 rpm, °C, 30 seconds . We have found that these primers usually need a significant incubation time for the lyophilized pellets to re-suspend well – we typically leave them overnight at 4 °C before continuing.",
+    "Prepare the combined 1 micromolar (µM) working stock F1R1 Primer Plate by pipetting 228 µL of PCR-grade water into each well of an empty 96-well DWP from a sterile reservoir. Working by column and changing tips each time, transfer 12 µL of reconstituted F1R1 stock primer into each well of each column, mixing well by pipetting. Once complete, the resulting plate will have enough primer for 30 PCR plates (8 µL combined F+R per rxn × 30 = 240 µL). Seal the plate with PCR film and store at -20 °C .",
+    "Prepare the combined 1 micromolar (µM) working stock F1R2 Primer Plate by repeating Step 3, but using the above reconstituted F1R2 stock deep-well primer plate.",
+    "Prepare the combined 1 micromolar (µM) working stock F2R1 Primer Plate by repeating Step 3, but using the above reconstituted F2R1 stock deep-well primer plate.",
+    "Prepare the combined 1 micromolar (µM) working stock F2R2 Primer Plate by repeating Step 3, but using the above reconstituted F2R2 stock deep-well primer plate.",
+    "Once all aliquoting is complete, seal the DWPs with PCR film and archive at -20 °C until new aliquots are required (minimized freeze-thaw cycles).",
+    "Optional: For the generation of 18S V4 amplicons from microbiome samples containing substantial non-target host DNA (ex: human, mouse, etc.), order (ex: from PNA Bio) a custom PNA mammalian blocking primer (elongation arrest in the V4 region) with the sequence: 5’- TCTTAATCATGGCCTCAGTT -3’ (courtesy of Laura Parfrey and Matt Lemay, UBC). Once arrived, prepare an archival stock of 100 micromolar (µM) and a working stock of 10 micromolar (µM) using PCR-grade water."
+  ],
+  "authors": [
+    "André M Comeau",
+    "Alessi Kwawukume"
+  ],
+  "creator": "André M Comeau",
+  "published_on": 1676304033,
+  "created_on": 1646664663,
+  "keywords": []
+}

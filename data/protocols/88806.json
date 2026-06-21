@@ -1,0 +1,29 @@
+{
+  "id": 88806,
+  "title": "Carver et al., Aged Brain Spatial Profiling  - GeoMx",
+  "uri": "carver-et-al-aged-brain-spatial-profiling-geomx-c2yeyfte",
+  "doi": "dx.doi.org/10.17504/protocols.io.261gedwndv47/v2",
+  "description": "{\"blocks\":[{\"key\":\"1gsd0\",\"text\":\"This protocol provides the staining process for GeoMx digital spatial profiling of mouse brain used in in Carver et al., \\\"Senescent- and disease-associated microglia are modifiable features of aged brain white matter\\\". T\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ephjo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6rjks\",\"text\":\"Sections were cut at 5 μm from FFPE blocks.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5519n\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6sg5q\",\"text\":\"Brain slices were adhered to glass slides and stained directly on the surface\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"74bes\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"85a6k\",\"text\":\"The immunostaining process involves unconjugated- or fluorophore-conjugated- primary antibodies and secondary antibodies conjugated to fluorophores. Due to old brain accumulation of lipofuscin granules that autofluoresce, we note that in order to achieve maximal signal, a quenching step is performed to extinguish the autofluorescent noise.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"u7s5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9ottj\",\"text\":\"Transcriptome in situ hybridiazation was performed with the GeoMx Whole Transcriptome Atlas for mouse.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dl4hi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a08u6\",\"text\":\"Sections were imaged and processed on the GeoMx digital spatial profiling machine platform.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "For FFPE sections, follow procedures found in document MAN-10150-03_GeoMx_DSP_Manual_Slide_Prep_User_Manual.pdf including summaries here: 1) Slide Preparation 2) Bake slides 3) Deparaffinize and rehydrate FFPE tissue sections 4) Perform target retrieval 5) Expose RNA targets 6) Postfix: preserve tissue morphology for soft tissues 7) In situ hybridization 8) Perform stringent washes to remove off-target probes At the point in which morphology markers are ready to be applied, follow steps below.",
+    "Dilute stock 40X True Black Plus aqueous (Biotium, catalogue #23014) to 1X in PBS. Incubate sections in 1X True Black Plus for 10 min. Note: any residual detergents may interfere with quenching efficacy",
+    "Remove quenching solution and wash sections thoroughly with cold PBS 5 times for 5 minutes each",
+    "Stain sections in primary antibody solution diluted with GeoMx blocking buffer W Antibody combinations consist of: rabbit polyclonal anti-IBA1 (Fujifilm Wako, #019-19741, RRID:AB_839504) dilution: 1:500 rat IgG 2A monoclonal anti-galectin-3 clone eBioM3/38 preconjugated to eFluor 660 (Invitrogen, #50-5301-82, RRID:AB_11220276) dilution: 1:200goat polyclonal anti-GFAP (Abcam, #ab53554, RRID:AB_880202) dilution: 1:2000 SYTO 83 Orange Fluorescent Nucleic Acid Stain (Invitrogen, #S11364) dilution: 5 μM",
+    "Remove antibody solution and wash sections thoroughly with cold PBS 3 times for 5 minutes each",
+    "Stain sections with donkey-host secondary antibodies conjugated to fluorophores AF488, AF594, or AF647 (Jackson Immunoresearch) for 2 hours at 25C in dark room environment. Antibodies consist of: Donkey anti-rabbit IgG AF488 (1:250) Donkey anti-GFAP IgG AF594 (1:250)",
+    "Remove antibody solution Wash sections thoroughly with cold PBS 3 times for 5 minutes",
+    "Continue with procedure found in document SEV-00087-05_GeoMx-NGS_DSP_Instrument_User_Manual.pdf",
+    "After receiving the images created by GeoMx, set the following segmentation order: 1) IBA1+ , GFAP-, GAL3- 2) GAL3+, IBA1+, GFAP ignore 3) IBA1+, GAL3+, GFAP ignore"
+  ],
+  "authors": [
+    "Chase Carver"
+  ],
+  "creator": "Chase Carver",
+  "published_on": 1756281329,
+  "created_on": 1696439568,
+  "keywords": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 44809,
+  "title": "Recombineering",
+  "uri": "recombineering-bpzhmp36",
+  "doi": "",
+  "description": "",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"laep\",\"text\":\"Template: if you are using pKD4 (kan cassette), you can use 200 ng of DNA for transformation. Plate on Kan 20 ug/mL plates (lower than normal). Pick to Kan 30 plates to verify really resistance. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2k229\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":[]},{\"key\":\"s918\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"93oib\",\"text\":\"Be careful not to overgrow cells: we have seen a decrease in efficiency if the cells start approaching an OD 600 of 0.7 before you induce at 42.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ln5h\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9fbss\",\"text\":\"If you are not using Kan 20 plates, use more DNA, and rescue for 2 hours.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7h493\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ahu43\",\"text\":\"Storing transformation mix: some people find that leaving the mix on the bench overnight increases the number of positive transformants when they plate out the next day.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"notes\",\"mutability\":\"\",\"data\":{\"blocks\":[{\"data\":[],\"depth\":0,\"entityRanges\":[],\"inlineStyleRanges\":[],\"key\":\"1ir2u\",\"text\":\"Dr. Fozo has not had an issue obtaining transformants on Kan 30 initially: only problematic if a weak RBS is driving Kan.\",\"type\":\"unstyled\"}],\"entityMap\":{}}}}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Prepare a PCR product. Typically, 200-600 ng/transformation. See note below. If using a plasmid template, may have to digest using DpnI or another enzyme to remove the additional plasmid",
+    "Following purification, combine PCR products and ethanol precipitate. Resuspend products in water I usually combine 2-4 PCR products into 5 ul and use 2.5 ul for a first recombineering attempt.",
+    "Grow up 25 ml of a strain of choice at 30 or 32 degrees (do NOT use DY330. Use NM400, NM1100, or some such derivative).",
+    "When OD600 approximately 0.4, transfer to 42 degrees shaking water bath for 15 – 20 minutes.",
+    "After 15-20 minutes, place the flask in an icy slurry and swirl. Keep in icy slurry for about 2 minutes.",
+    "Spin at 4 degrees, 10 minutes, 4150 rpm.",
+    "Wash cells with 1 ml cold 10% glycerol at 4 degrees, three times",
+    "Resuspend cells in 100 µL cold 10% glycerol.",
+    "Electroporate: use 50 µL of cells + DNA. Immediately after electroporation, add 950 ul of SOC. Shake at 30 degrees for 1 hour. Plate 1/10 onto one plate, and concentrate the remaining 900 ul and plate to a second plate."
+  ],
+  "authors": [
+    "Elizabeth Fozo"
+  ],
+  "creator": "Eadewunm",
+  "published_on": 1606159936,
+  "created_on": 1606158822,
+  "keywords": []
+}

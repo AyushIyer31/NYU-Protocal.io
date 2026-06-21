@@ -1,0 +1,25 @@
+{
+  "id": 69520,
+  "title": "Processing of Radial K-space DW-MRI Data",
+  "uri": "processing-of-radial-k-space-dw-mri-data-cf5qtq5w",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlkkwj1l5r/v2",
+  "description": "{\"blocks\":[{\"key\":\"9bq4f\",\"text\":\"The protocol includes reconstruction of diffusion weighted images from radial k-space data and using a 3-parameter fit to derive metrics of ADC and kurtosis index.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Image reconstruction Radially acquired diffusion-weighted images (DWIs) are reconstructed using the following steps: Apply zero-order phase correction to each radial spoke using the average phase offset at the center slice of the lowest b-value image Zerofill k-space by a factor of 2 to double field of view Multiply signal of each point by its respective area on a Voronoi diagram of the points (including added zerofill points) in k-space Re-grid each radially defined point to its nearest Cartesian coordinate using its Kaiser-Besel index Apply Fourier transform to now Cartesian-defined k-space This process can be easily done using the DWI Processing resources [ link ] . To use this, place both DWI_shell.ipynb and DWI_processing_functions.py in the same directory (your working directory). The readme.txt file outlines specific file formats, function inputs, and outputs. Quickly, once all files are formatted according to readme.txt , the first cell defines all image and reconstruction parameters: ############## Parameters to change ##################### input_file = &#39;fid&#39; # k-space data # Acquisition data xres_ro = 128 # total readout points stored views = 403 # number of radial views # angl = (math.sqrt(5)-1)/2 * PI # golden angle in radians angl = 2*PI/views # used by Steve Pickup # Image data xres = 96 # actual number of points collected yres = 96 slices = 16 bvalues = 5 b_array = np.array([10,535,1070,1479,2141]) # b-values Each cell should then be run consecutively."
+  ],
+  "authors": [
+    "Miguel Romanello Joaquim",
+    "Hee Kwon Song",
+    "Stephen Pickup",
+    "Mamta Gupta",
+    "Rong Zhou"
+  ],
+  "creator": "Miguel Romanello Joaquim",
+  "published_on": 1662132297,
+  "created_on": 1662128355,
+  "keywords": []
+}

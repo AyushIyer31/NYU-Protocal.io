@@ -1,0 +1,28 @@
+{
+  "id": 85304,
+  "title": "Live-cell imaging for synaptic vesicle precursors in human iNeuron axons",
+  "uri": "live-cell-imaging-for-synaptic-vesicle-precursors-cxiyxkfw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl8p9mdg2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"93n0k\",\"text\":\"Here, we describe procedure and equipment used for live-imaging of synaptic vesicle precursors. This was performed using DIV21 human iPSC-derived excitatory glutamatergic neurons. Equipment and software used varied based on scheduled upgrades to microscopy equipment during the course of this study.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"a8g0n\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"angvp\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"b0frn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"safety\",\"mutability\":\"IMMUTABLE\",\"data\":{\"blocks\":[{\"data\":{},\"depth\":0,\"entityRanges\":[],\"inlineStyleRanges\":[],\"key\":\"47ocg\",\"text\":\"Investigators should be trained and familiar with the confocal microscope to avoid eye damage from lasers.\",\"type\":\"unstyled\"}],\"entityMap\":{}}}}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"1t81s\",\"text\":\"GlutaMAX™ SupplementGibco - Thermo FisherCatalog #35050061  \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"emljl\",\"text\":\"B-27™ Supplement (50X), serum freeGibco - Thermo FisherCatalog #17504044  \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6dv7n\",\"text\":\" Hibernate A low fluorescence media (BrainBits, Cat# HALF)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a9gdc\",\"text\":\"Recombinant Human NT-3peprotechCatalog #450-03  \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"efi1m\",\"text\":\"Recombinant Human/Murine/Rat BDNFpeprotechCatalog #450-02  \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Please refer to &#34;Protocol: Culture and transfection of iPSC-derived neurons for live-imaging of axonal cargoes&#34; for plating and transfection instructions. Image human iNeurons on DIV21, 48-72 hours after transfection with PGK-mScarlet-synaptophysin.",
+    "Replace culture media with low fluorescence imaging media.",
+    "For iNeurons, use Hibernate A medium supplemented with: A B 1 BDNF 10 ng/mL 2 NT-3 10 ng/mL 3 B-27 2%",
+    "Image using spinning disk confocal microscope under 60x magnification (oil immersion objective). See “Materials and Methods” for specific microscopes and cameras used.",
+    "Identify axons of transfected neurons based on morphological parameters. (Boecker et al., 2020; Kaech and Banker, 2006). For example, axons can most reliably be identified by their length and should span over at least 500 µm.",
+    "Identify the neuronal soma and measure ~100-150 µm from the soma. Create an ROI that includes a segment of the axon that is in the same Z plane. Image several frames at this field of view prior to photobleaching. Perform one photobleaching cycle with the 405 nm laser for 3 ms/pixel. Dramatically decreased mScarlet-SYP signal should be observed in the ROI following photobleaching, and entry of mScarlet-SYP+ vesicles into the bleached region should be readily observed.",
+    "Acquire time lapse recordings at a frame rate of 5 frames per second for 00:05:00 . Rapid framerate is preferable due to the high transport speed of SVPs Knowledge of the pixel/micron ratio for the specific objective and camera being used is necessary for accurately measuring distances."
+  ],
+  "authors": [
+    "Dan Dou",
+    "Erika Holzbaur"
+  ],
+  "creator": "Dan Dou",
+  "published_on": 1690300658,
+  "created_on": 1689883251,
+  "keywords": []
+}

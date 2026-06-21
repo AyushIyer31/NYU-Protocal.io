@@ -1,0 +1,36 @@
+{
+  "id": 83655,
+  "title": "A protocol of density measurement of cholinergic innervation in 3D Images of the pig colon with Imaris 9.7 for neuroscientist",
+  "uri": "a-protocol-of-density-measurement-of-cholinergic-i-cvxfw7jn",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g7pry9gwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"c5qg2\",\"text\":\"This protocol describes a step-by-step computational workflow for the density measurement of cholinergic innervation in three-dimensional (3D) images of the pig colonic enteric nervous system (ENS) with Imaris 9.7 for neuroscientist. This workflow will also work on all other gastrointestinal segments from different species. The quantitative analysis of cholinergic innervation in the ENS of gastrointestinal tract is challenging because the nerve fibers are distributed within a 3D space rather than lining on the same plane in each enteric plexus. The traditional way of counting nerve fibers manually via grid-based stereology and histomorphometry is both time consuming and labor intensive (Hunter et al. 2020). We sought to develop a reliable and computerized method to quantify the density of cholinergic innervation in 3D images of the pig colonic ENS generated from z-stack confocal images with whole mount preparation of pig colonic enteric plexuses. Central and peripheral cholinergic innervation was labeled by double-immunolabeling with a novel mouse anti-human peripheral type of choline acetyltransferase (hpChAT) antibody combined with a rabbit anti-the common type of ChAT (cChAT) antibody, a reliable marker of cholinergic neurons in the central nervous system (Bellier et al., 2019). Imaris 9.7 Surfaces Rendering Technology (https://imaris.oxinst.com/products/imaris-for-neuroscientists) was adapted the to automatically create surfaces on cChAT immunoreactive (ir) nerve fibers, hpChAT-ir fibers + somata, and ganglia containing neurons and fibers. The volumes of surface-masked structures were automatically measured using the software Imaris 9.7. The densities were calculated and expressed as percentages of their volumes in ganglion volumes (v/v, %). This approach allows us to directly, objectively and automatically measure the densities of neurons and fibers with less biases due to observer/examiner judgment. It is also faster than counting manually and allows us to quantitate a larger number of samples, increasing statistical accuracy. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Open Imaris 9.7, click Arena&lt;Observe Folder to find the image files.",
+    "In the Observe Folder, double click the images that you wanted to analyze. Imaris automatically transfers the original .lsm format to .ims format.",
+    "Open the image with .ims format.",
+    "Create first surface (Surfaces 1) to contour the ganglion by clicking the ‘Surfaces’ icon.",
+    "Click Surfaces 1 and choose the ‘Skip automatic creation, edit manually’ algorithm to manually construct contours representative of the ganglia of interest. Adjust slice position to draw the representative contours. When finished, click ‘Create Surface’.",
+    "Click ‘Statistics’ icon and choose Detailed&lt;Average Values to find the volume of the areas of interest (volume of contoured the ganglion).",
+    "Create second surface (Surfaces 2) and use the ‘Automatically’ algorithm. Then go to the next step.",
+    "Choose red channel for cChAT immunoreactive fibers from a drop-down menu in ‘Source Channel’. To set up the threshold, choose ‘Background Subtraction (Local Contrast)’ to set the diameter of largest sphere. The diameter can be measured in ‘Slice’ view.",
+    "Use ‘Number of Vessels’ to filter the surfaces until satisfied. If there are some undesired areas that are highlighted, use ‘Cut Surface’ to modify the highlighted sufaces.",
+    "10. When finished, click ‘Statistics’ icon and choose Detailed&lt;Average Values to find the volume of the areas of interest (volume of cChAT immunoreactive fibers).",
+    "11. Create third surface (Surfaces 3) and use the ‘Automatically’ algorithm. Then go to the next step.",
+    "12. Choose green channel for hpChAT immunoreactive fibers+somata from a drop-down menu in ‘Source Channel’. To set up the threshold, choose ‘Background Subtraction (Local Contrast)’ to set the diameter of largest sphere. The diameter can be measured in ‘Slice’ view.",
+    "13. Repeat step 9 and 10.",
+    "14. The 5-6 3D images generated from each plexus per colon segment of each pig were used for the quantitative analysis. The densities of cChAT immunoreactive nerve fibers or hpChAT immunoreactive fibers and somata were calculated and expressed as percentage of their volumes in the contoured volumes of ganglia (v/v, %)."
+  ],
+  "authors": [
+    "Tao Li",
+    "Pu-Qing Yuan",
+    "Yvette Taché"
+  ],
+  "creator": "Pu-Qing Yuan",
+  "published_on": 1687215170,
+  "created_on": 1687203054,
+  "keywords": []
+}

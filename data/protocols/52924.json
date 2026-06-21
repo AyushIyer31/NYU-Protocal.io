@@ -1,0 +1,30 @@
+{
+  "id": 52924,
+  "title": "MicroCT protocols for scanning of embryos and juvenile Hexaplex trunculus",
+  "uri": "microct-protocols-for-scanning-of-embryos-and-juve-bxw4ppgw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bxw4ppgw",
+  "description": "{\"blocks\":[{\"key\":\"721ob\",\"text\":\"Micro-computed tomography (micro-CT) is a high-resolution 3D-imaging  technique which is now increasingly applied in biological studies  focusing on taxonomy and functional morphology. The creation of virtual  representations of specimens can increase availability of otherwise  underexploited and inaccessible samples. This protocol aims to standardise micro-CT scanning procedures for embryos and juveniles of the marine gastropod species Hexaplex trunculus. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":441,\"length\":20}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Anesthetization of embryos and juvenile gastropods with 7% MgCl 2.",
+    "Sample placement inside a plastic white pipette tip without any scanning medium (in the air).",
+    "SkyScan 1172 (micro-computed tomographer (microCT), Bruker, 10L01170, Detail detectability: 10,000h lifetime;Spot size https://www.brukersupport.com/ProductDetail/9196 )",
+    "Scanning parameters for embryos and juvenile Hexaplex trunculus Voltage: 59 kV Current :167 μA Filter: none Pixel size: 2 μm Camera binning: 1 × 1 Exposure time: 325 ms for embryos and 316 ms for juveniles Rotation: 360° for embryos and 180° for juveniles Rotation step: 0.20º for embryos and 0.25° for juveniles Frame averaging: 3 for embryos and 5 for juveniles",
+    "Projection images were reconstructed into cross sections using the SkyScan’s NRecon software (Bruker, Kontich, Belgium)",
+    "Upload projection images",
+    "Perform X-Y alignment",
+    "Reconstruction parameters Smoothing: 2 Ring artifact correction: 20 Beam hardening correction: 59% Attenuation coefficients: 0 - 1.127 for embryos and 0 - 1 for juveniles Save as: 16-bit TIFF images",
+    "Removal of embryos of Hexaplex trunculus from their egg capsules."
+  ],
+  "authors": [
+    "Eva Chatzinikolaou",
+    "Kleoniki Keklikoglou"
+  ],
+  "creator": "Eva Chatzinikolaou",
+  "published_on": 1630652564,
+  "created_on": 1630591175,
+  "keywords": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": 15217,
+  "title": "Transformation of Acanthamoeba castellanii with Qiagen SuperFect reagent",
+  "uri": "transformation-of-acanthamoeba-castellanii-with-qi-s4regv6",
+  "doi": "dx.doi.org/10.17504/protocols.io.s4regv6",
+  "description": "{\"blocks\":[{\"key\":\"cvqvd\",\"text\":\"Transformation of Acanthamoeba castellanii Neff (ATCC-30010) with plasmid DNA can be achieved with a modified version of the protocol described in Peng, Omaruddin, \\u0026 Bateman (2005) using constructs from Bateman (2010). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":18,\"length\":25}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"8m3mi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"75gt0\",\"text\":\"Materials needed:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3hd98\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2f6df\",\"text\":\"PYG medium with additives (0.75% yeast extract, 0.75% proteose peptone, 2 mM KH2PO4, 1 mM MgSO4, 1.5% glucose, 0.1 mM ferric citrate, 0.05 mM CaCl2, 1 μg/mL thiamine, 0.2 μg/mL D-biotin, and 1 ng/mL vitamin B12.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":79,\"length\":1},{\"style\":\"sub\",\"offset\":82,\"length\":1},{\"style\":\"sub\",\"offset\":94,\"length\":1},{\"style\":\"sub\",\"offset\":146,\"length\":1}],\"entityRanges\":[],\"data\":[]},{\"key\":\"59ppc\",\"text\":\"Plasmid DNA\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5npmo\",\"text\":\"Qiagen SuperFect\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"29gn2\",\"text\":\"Encystment medium (20 mM Tris–HCl [pH 8.8], 100 mM KCl, 8 mM MgSO4, 0.4 mM CaCl2, 1 mM NaHCO3)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":65,\"length\":1},{\"style\":\"sub\",\"offset\":79,\"length\":1},{\"style\":\"sub\",\"offset\":92,\"length\":1}],\"entityRanges\":[],\"data\":[]},{\"key\":\"b8l2p\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"dirkg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Per reaction: 5 x 10 5 cells are pelleted by centrifugation at 1000 g for 5 minutes at 4 °C, and resuspended in 500 microlitres of encystment medium (20 mM Tris–HCl [pH 8.8], 100 mM KCl, 8 mM MgSO 4 , 0.4 mM CaCl 2 , 1 mM NaHCO 3 ).",
+    "The cell suspension is added to one well of a six well culture plate.",
+    "4 μg of plasmid DNA in 3 to 6 μL is diluted in 100μL of encystment medium.",
+    "20 μL of Qiagen SuperFect reagent are added to the DNA solution desired for transfection (in this case pGAPDH-EGFP), and mixed by pipetting 5 times.",
+    "The DNA/reagent mixture is incubated for 10 minutes at room temperature.",
+    "600 μL of encystment medium are added to the DNA/reagent mixture and mixed.",
+    "The whole aliquot of DNA/reagent/medium mixture is added to the culture dish well that contains the cells.",
+    "The cells are incubated with DNA and the SuperFect reagent for 3 hours at room temperature.",
+    "The mixture can be pipetted off and replaced with 4 mL of growth (PYG) medium.",
+    "Prior to applying selection, the cells should be allowed to recover for 24 hours in their typical growth conditions.",
+    "Selection at ~20% of the final antibiotic concentration should be applied until growth is observed. This was 10 μg/mL Geneticin (G418) for this experiment. It typically took about a week for sufficient growth to occur, and visually this corresponds to a cell density roughly half that of the peak density achieved during regular culturing. This can be verified with cell counts but visual confirmation seems to be fine.",
+    "Subsequent transfers can make use of the full concentration of antibiotic selection for indefinite maintenance, which in this case is 50 μg/mL Geneticin (G418). If the cells are transferred diligently in 2-3 week intervals (or whichever interval involves transferring at peak density before a lot of encystation occurs), their growth should mirror that of wild-type cells even under continued selection, although sometimes they are slow to take off after a culture transfer.",
+    "A. castellanii Neff (ATCC-30010) cells were grown axenically in PYG medium at room temperature in 75 cm 3 vented tissue culture flasks with no shaking.",
+    "pGAPDH-EGFP : This plasmid contains a bacterial ampicillin resistance gene for propagation, a neomycin resistance gene ( neoR; an aminoglycoside phosphotransferase) is expressed from the TBP promoter, and an EGFP gene is expressed from the GAPDH promoter. pTPBF-EGFP : This plasmid contains a bacterial ampicillin resistance gene for propagation, a neomycin resistance gene ( neoR; an aminoglycoside phosphotransferase) is expressed from the TBP promoter, and an EGFP gene is expressed from the TPBF promoter. These plasmids were provided by the Andrew Roger lab at Dalhousie University who in turn acquired them from the Erik Bateman lab at the University of Vermont. Bateman, E. (2010). Expression plasmids and production of EGFP in stably transfected Acanthamoeba . Protein Expression and Purification, 70 (1), 95. doi: 10.1016/j.pep.2009.10.008"
+  ],
+  "authors": [
+    "Morgan Colp"
+  ],
+  "creator": "Morgan Colp",
+  "published_on": 1535638585,
+  "created_on": 1535569431,
+  "keywords": []
+}

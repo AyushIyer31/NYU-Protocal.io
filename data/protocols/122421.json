@@ -1,0 +1,36 @@
+{
+  "id": 122421,
+  "title": "Great British Intelligence Test Protocol\n",
+  "uri": "great-british-intelligence-test-protocol-d3sv8ne6",
+  "doi": "dx.doi.org/10.21203/rs.3.pex-1085/v1",
+  "description": "{\"blocks\":[{\"key\":\"xyp5f\",\"text\":\"The Great British Intelligence Test is a large scale survey of cognition, wellbeing and behaviour in the general population, primarily focused on the UK. The study is run by Adam Hampshire at Imperial College London in association with BBC2 Horizon, being promoted via BBC media. The study is open to anyone to participate and is run via a custom website, the 'Cognitron', which is hosted on the Amazon EC2. The data collected include a sequence of cognitive tests, designed to measure different human cognitive abilities, a questionnaire, probing social, demographic and economic context, dimensions of mental health, online behaviours, personality, psychiatric traits and clinical conditions.  Data will be analysed to determine the dimensionality, development and sociodemographic distribution if dimensions of intelligence and wellbeing in the UK population. The study is running throughout 2020, with plans to follow people up longitudinally to see how cognition and wellbeing change, including within the context of the Corvid-19 pandemic.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"w5lkc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"xqdyf\",\"text\":\"The Great British Intelligence Test is run via a Cognitron, a custom website that is hosted on the Amazon EC2. This is a cloud based website that is designed to handle demand that can come in large sudden spikes due to high profile mainstream media attention. It can host a variety of studies in parallel. Each study comprises information and consent pages followed by a sequence of cognitive tests and questionnaires. There are also optional results feedback pages. The cognitive tests are all programmed in-house in HTML5 with JavaScript. They are designed based on principles and paradigms from the classic experimental psychology and cognitive neuroscience literature. They are optimised for deployment on practically any common device that can run a modern web browser. This includes desktops, laptops, tablets and smart phones. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dahli\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Participants are navigated from links on mainstream media and news articles to a study landing page on the Cognitron website. https://gbit.cognitron.co.uk",
+    "Participants read the study description and can view data-regulatory information. They then can give informed consent prior to starting the survey.",
+    "The web server creates an anonymous account for the participant. They can click a button at any time to set up a user account that allows them to come back and take part in follow up studies.",
+    "The web server presents the first cognitive test. Each test has its own page of test-specific instructions, alongside an animation of the test being undertaken and a start button.",
+    "Clicking the start button begins the test.",
+    "On completion of a test, data comprising the main summary score, secondary scores, and a raw log of all events, is sent back to the Cognitron server.",
+    "Steps 4-6 are repeated until all of the GBIT sub-tests have been completed.",
+    "Participants are presented with a questionnaire to complete. The exact composition of the questionnaire is updated throughout the year in response to ongoing events and findings of interest.",
+    "Core sub-scales are - Sociodemographics, including age, sex, handedness, first language, country of residence, education level, occupational status, earning range. - Technology use/misuse - Mood self assessment - Lifestyle - Personality (Big5) - Psychiatric traits",
+    "Additional sub scales include - Covid-19 lockdown impact scale - Covid-19 illness questionnaire - Preexisting conditions - Free text responses to pandemic-related questions",
+    "On completion of the questionnaire, participants are presented with a webpage detailing how they performed relative to the general population for each of the tests that they completed.",
+    "Participants who sign up for future studies are recontacted at 3, 6 and 12 months and asked to redo the tests and complete the current questionnaire.",
+    "Participants who indicate clinical conditions and consent for recontact are emailed to provide further condition-specific information.",
+    "Time taken per participant is in the 40-60 minute range. Participants who cannot complete the survey in a single sitting are able to save and return at a later time to complete.",
+    "Participants who are detected as revisiting the website (outside of follow up timepoints) are navigated to a landing page that allows them to try other tests on the Cognitron website.",
+    "The time taken to complete the whole battery of tests plus questionnaire is in the 40-60 minute range."
+  ],
+  "authors": [
+    "Adam Hampshire"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1599066629,
+  "created_on": 1599066629,
+  "keywords": []
+}

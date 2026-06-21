@@ -1,0 +1,40 @@
+{
+  "id": 239100,
+  "title": "Stereotaxic viral injection surgeries for multifiber photometry recordings and optical stimulation of dopamine neurons",
+  "uri": "stereotaxic-viral-injection-surgeries-for-multifib-hmq4b45yx",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6e2nrgqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"7cgn5\",\"text\":\"This protocol outlines the surgical procedures for stereotaxic viral injections of genetically encoded sensors and opsins and chronic optical fiber implantation in the mouse striatum for monitoring acetylcholine and dopamine during spontaneous behavior, unpredicted reward, Pavlovian learning and extinction, and midbrain dopamine neuron optogenetic stimulation.\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"angc5\",\"text\":\"Post-surgical care and recovery procedures ensure animal well-being before experimental data collection.\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9pqb3\",\"text\":\"Equipment:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6dbkr\",\"text\":\"Pulled glass pipette (tip diameter 30-50 μm)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1fc7u\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9s0t1\",\"text\":\"Viral Vectors:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":14}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ea13\",\"text\":\"AAV9-hSyn-ACh3.0 (biohippo, SKU : BHV12400439)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":16}],\"data\":{}},{\"key\":\"bcccm\",\"text\":\"AAV9-hSyn-ACh3.0-mut(Ach4.3-mut) (WZ Biosciences, Cat# YL001004-AV9-PUB)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":32}],\"data\":{}},{\"key\":\"b1ao8\",\"text\":\"pAAV-hSyn-rDA3m (biohippo, SKU# BHV17200699)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":15}],\"data\":{}},{\"key\":\"6b9pb\",\"text\":\"pAAV-CAG-tdTomato (Addgene, Cat#59462-AAV1)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":3,\"offset\":0,\"length\":17}],\"data\":{}},{\"key\":\"8o1li\",\"text\":\"pAAV-EF1a-doublefloxed-hChR2(H134R)-EYFP-WPRE-HGHpA (Addgene, Cat#20298-AAV1)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":4,\"offset\":0,\"length\":51}],\"data\":{}},{\"key\":\"642ns\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"AF0FAE2C73D04545BEE6C9A0B7F9DA5E\",\"url\":\"https://www.ebiohippo.com/raav-hsyn-ach4-3-423011.html\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"273E1974A9C2426BA206C8D023B39D1C\",\"url\":\"https://www.wzbio.com/aavGrab.php?pid=4\\u0026id=4\\u0026cid=90\\u0026page=12\"}},\"2\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"F7D5B126B7AC447DBC55D235189E07FF\",\"url\":\"https://www.ebiohippo.com/raav-hsyn-rda3m.html\"}},\"3\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"19B80C3305D4432FB5C76EB8D71E53DB\",\"url\":\"https://www.addgene.org/59462/\"}},\"4\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"CD651E8D66444F578FF45206E74BC2F7\",\"url\":\"https://www.addgene.org/20298/\"}}}}",
+  "steps": [
+    "Anesthetise mice with isoflurane (3-4%) and place it in a stereotaxic frame (Kopf instruments) on an electric heating pad (Physitemp instruments).",
+    "Administer buprenorphine extended release for pre-operative analgesia (3.25 mg kg-1 subcutaneous, Ethiqa XR).",
+    "Following induction, maintain isoflurane at 1-2% (in 0.8-1 L min -1 pure oxygen) and body temperature at 37°C throughout the surgical procedure.",
+    "Monitoring simultaneous Dopamine and Acetylcholine release:",
+    "Using a pulled glass pipette, pressure-inject the genetically-encoded fluorescent dopamine (DA) GRAB-rDA3m (pAAV-hSyn-rDA3m) and Acetylcholine (ACh) GRAB-ACh3.0 (AAV9-hSyn-ACh3.0) mixed together, into the striatum (right hemisphere) of wild-type mice at ~ 30 separate striatum locations. The striatum locations were chosen to maximize expression around fiber tips (350 nL at each location at a rate of 100 nL/min).",
+    "For control experiments, inject mutant version of the genetically-encoded fluorescent acetycholine (ACh) sensor (AAV9-hSyn-ACh3.0-mut(Ach4.3-mut)) mixed with pAAV-CAG-tdTomato into the striatum of wild-type mice using the same strategy.",
+    "Midbrain optogenetic stimulation experiments with simultaneous Dopamine and Acetylcholine release measurements",
+    "Using a pulled glass pipette, pressure-inject the genetically-encoded fluorescent dopamine (DA) GRAB-rDA3m (pAAV-hSyn-rDA3m) and Acetylcholine (ACh) GRAB-ACh3.0 (AAV9-hSyn-ACh3.0) mixed together, into the striatum of DAT-IRES-cre mice (RRID:IMSR_JAX:006660) at ~ 30 separate striatum locations.",
+    "Three weeks post DA and ACh GRAB sensors viral injections and implants, drill craniotomies through metabond and skull above the midbrain at pre-marked coordinates.",
+    "Inject ChR2 opsin (pAAV-EF1a-doublefloxed-hChR2(H134R)-EYFP-WPRE-HGHpA) into the right SNc and VTA at 3 sites (200 nl/site at a rate of 100nl/min) at the following three coordinates in mm, AP:-3.05, ML:± 0.6, DV: -4.25; AP:-3.15, ML: ± 1.3, DV: -4.1; AP:-3.5, ML: ± 1.15, DV: -4.1.",
+    "Mount the multi-fiber array onto stereotaxic manipulator.",
+    "Remove dura gently, and slowly lower the multi-fiber array into striatum position.",
+    "Seal craniotomy with a thin layer of kwik-Sil (WPI), and secure the multi-fiber array to the skull surface using Metabond (Pakell).",
+    "For midbrain DA optogenetic stimulation experiments, slowly lower a 90 degree 100 µm core mono fiber-optic cannula (MFC_100/125 - 0.66 NA) attached to a zirconia ferrule (Doric) to a depth of -4 mm from the dura at the coordinates in mm, AP: -3.15 mm and ML: ±1.3 mm.",
+    "Seal craniotomy above the midbrain with a thin layer of Kwik-Sil (WPI), and secure the optical fiber to the skull surface using Metabond (Parkell).",
+    "Secure a metal head plate and ring (Atlas Tool and Die Works) to the skull with Metabond, and cover the implant surface with a mixture of Metabond and carbon powder (Sigma Aldrich) to reduce optical artefacts.",
+    "Protect the fiber bundle by a cylindrical plastic tube, extending ~ 1-2 mm above the fiber bundle, and secure around the bundle using a mixture of Metabond and carbon powder.",
+    "Place each mouse in an individual cage with a heating pad and perform post-operative injections of meloxicam (5 mg kg -1 subcutaneous, Covertus) and 1 mL of saline per day subcutaneously for 4 days after surgery.",
+    "Allow them to recover in their cages for at least 2 weeks after surgery."
+  ],
+  "authors": [
+    "Safa Bouabid",
+    "Mark Howe"
+  ],
+  "creator": "Safa Bouabid",
+  "published_on": 1774275224,
+  "created_on": 1769029083,
+  "keywords": []
+}

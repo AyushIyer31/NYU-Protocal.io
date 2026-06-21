@@ -1,0 +1,32 @@
+{
+  "id": 45521,
+  "title": "Measurement of heat production (thermogenesis) in cells using ERthermAC dye_microplate method",
+  "uri": "measurement-of-heat-production-thermogenesis-in-ce-bqprmvm6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bqprmvm6",
+  "description": "",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"e533t\",\"text\":\"lDifferentiate brown/white adipocytes in a black 96-well plate with clear bottom\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b0tkd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2gq6n\",\"text\":\"lPrepare staining medium: 250 nM ERthermAC dye in DMEM-H serum-free medium\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"5vi27\",\"text\":\"lBioTracker ERthermAC Temperature-Sensitive Live Cell Dye (SCT057, Merck)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8e8ao\",\"text\":\"(https://www.merckmillipore.com/TW/zh/product/BioTracker-ERthermAC-Temperature-Sensitive-Live-Cell-Dye,MM_NF-SCT057?ReferrerURL=https%3A%2F%2Fl.facebook.com%2F\\u0026fbclid=IwAR1xNHOYdLL4iTg8IRPS0fHiwa88ZmXFFCu2vYnZTVg4ivkjz3_YKd1AFb8)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":1,\"length\":227}],\"data\":{}},{\"key\":\"di3qj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1745i\",\"text\":\"lPrepare stock solution of ERthermAC dye (1 mM in DMSO)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9i046\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"pa71\",\"text\":\"lBlack 96-well plate with clear bottom\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"898E2D003DD111EB8B380A58A9FEAC2A\",\"url\":\"https://www.merckmillipore.com/TW/zh/product/BioTracker-ERthermAC-Temperature-Sensitive-Live-Cell-Dye,MM_NF-SCT057?ReferrerURL=https%3A%2F%2Fl.facebook.com%2F\\u0026fbclid=IwAR1xNHOYdLL4iTg8IRPS0fHiwa88ZmXFFCu2vYnZTVg4ivkjz3_YKd1AFb8\"}}}}",
+  "steps": [
+    "Wash differentiated adipocytes with PBS twice",
+    "Add 100 μL of staining solution per well of a 96-well plate",
+    "Incubate 37oC for 30~45 min",
+    "Wash with PBS twice",
+    "Add 90 ul of DMEM-H serum-free and phenol red-free medium each well",
+    "Equilibrate plate at 25 oC for 15 min",
+    "Measure 2-3 points of basal red fluorescence (ex/em, 543/590) in a microplate reader",
+    "Add 10 uL of medium or 10 mM CL-316,243 (CL)/forskolin (Fsk) each well (10x dilution, final 1 μM)",
+    "Measure the red fluorescence (ex/em, 543/590) every 5 min up to 1.5 ~ 2 hr",
+    "Calculate the decrease of fluorescence over time after drug treatment"
+  ],
+  "authors": [
+    "Chih-Hao Wang",
+    "Yu-Hua Tseng",
+    "Yu-Hua Tseng"
+  ],
+  "creator": "Chih-Hao Wang",
+  "published_on": 1610037095,
+  "created_on": 1607925521,
+  "keywords": []
+}

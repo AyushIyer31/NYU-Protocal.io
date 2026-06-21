@@ -1,0 +1,39 @@
+{
+  "id": 315907,
+  "title": "mtORF PCR",
+  "uri": "mtorf-pcr-jyrbcpv2p",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g7oexkvwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"78ui5\",\"text\":\"Make mtORF amplicons from 79 samples and one negative control\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":26,\"length\":35}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4j18i\",\"text\":\"Active time: ~1 hour\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"10len\",\"text\":\"PCR time: ~2 hours\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8ii3t\",\"text\":\"Total time: ~3 hours\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"a4h6h\",\"text\":\"Equipment required\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":18}],\"entityRanges\":[],\"data\":{}},{\"key\":\"2e8ud\",\"text\":\"Fine point Sharpie\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e3lo6\",\"text\":\"1.5mL tube rack(s)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dbs8a\",\"text\":\"PCR strip tube rack(s)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"66c87\",\"text\":\"Insulated aluminum tube rack(s)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1glr\",\"text\":\"Vortex\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cahlc\",\"text\":\"Mini spinner with 1.5mL tube and PCR strip tube attachments\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"76q44\",\"text\":\"1000µL pipette\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c8ks5\",\"text\":\"200µL pipette\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3e0fh\",\"text\":\"10µL pipette\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2skk9\",\"text\":\"Five miniPCR thermal cyclers (miniPCR, cat. #QP-1016-16)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9bbj7\",\"text\":\"Laptop with miniPCR software\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8n0p1\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7f5v1\",\"text\":\"Consumable materials (per sample)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":33}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fofm6\",\"text\":\"25µL Taq PCR Master Mix (Qiagen, cat. #201445)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eu4ag\",\"text\":\"21µL molecular grade water\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6a11t\",\"text\":\"1µL 0.1% BSA (FisherSci, cat. #FERB14)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4271o\",\"text\":\"1µL 10µM mtORF forward primer\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"52svr\",\"text\":\"1µL 10µM mtORF reverse primer\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8fhbn\",\"text\":\"1µL extracted DNA\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7k1ae\",\"text\":\"One 10µL pipette tip\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1lcso\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bnaic\",\"text\":\"Consumable materials (per batch)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":32}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7tuec\",\"text\":\"5mL microcentrifuge tube\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"80kfv\",\"text\":\"10 PCR strip tubes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bubtg\",\"text\":\"Four 1000µL pipette tips (for making master mix in Step 6)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eof02\",\"text\":\"Four 200µL pipette tips (for making and aliquoting master mix in Steps 6 \\u0026 8)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Remove 79 samples from the freezer to thaw on the bench",
+    "Remove one aliquot each of Taq PCR Master Mix, molecular grade water, 0.1% BSA, 10µM mtORF forward primer, and 10µM mtORF reverse primer from the freezer to thaw on the bench",
+    "Remove an insulated aluminum tube rack from the freezer and place PCR reagents into the rack once they are fully thawed",
+    "Prepare 10 sets of PCR strip tubes. Label strips with unique ID and mark which tube is first and which is last",
+    "Gently vortex all PCR reagents. Spin down in mini spinner, if necessary",
+    "Add PCR reagents to a 5mL microcentrifuge tube in the following volumes to prepare master mix: 2050µL Taq PCR Master Mix (1025µL x 2) 1722µL molecular grade water (861µL x 2) 82µL 0.1% BSA 82µL 10µM mtORF forward primer 82µL 10µM mtORF reverse primer",
+    "Vortex the 5mL tube for 2 seconds",
+    "Aliquot 49µL master mix into all strip tubes. There should be some leftover at the end",
+    "Add 1µL extracted DNA to each PCR strip tube (or 1µL molecular grade water to negative control). Pipette onto the side of the strip tube to avoid introducing a bubble. Always double check that you are adding the correct sample to the correct strip tube",
+    "Spin the strip tubes down in mini spinner",
+    "Place strip tubes into the thermal cyclers. Record in the lab notebook which strips go into which thermal cycler",
+    "Plug in and power on thermal cyclers",
+    "Open the miniPCR software. Click the “Devices” tab, highlight the desired thermal cycler, and click “Connect” to connect to the thermal cycler",
+    "Click the “Library” tab, highlight the mtORF protocol, and select “Run”. Choose the appropriate thermal cycler, then select “Upload”.",
+    "Note: mtORF protocol is 94ºC for 60s; 40X 94ºC for 30s, 53ºC for 30s, and 72ºC for 75s; and 72ºC for 300s",
+    "Double check that the PCR protocol has started running",
+    "Repeat Steps 13–15 four more times to start the remaining PCR reactions",
+    "Store PCR amplicons in the fridge"
+  ],
+  "authors": [
+    "Jordan Sims",
+    "Francesca Cohn"
+  ],
+  "creator": "Jordan Sims",
+  "published_on": 1778562973,
+  "created_on": 1777407763,
+  "keywords": []
+}

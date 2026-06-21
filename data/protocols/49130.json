@@ -1,0 +1,40 @@
+{
+  "id": 49130,
+  "title": "Cryostat Sectioning of Tissues for 3D Multimodal Molecular Imaging",
+  "uri": "cryostat-sectioning-of-tissues-for-3d-multimodal-m-bt8inrue",
+  "doi": "dx.doi.org/10.17504/protocols.io.bt8inrue",
+  "description": "{\"blocks\":[{\"key\":\"fbcqo\",\"text\":\"Scope: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"bnji\",\"text\":\"Protocol for sectioning flash frozen tissue that can be used for 3D IMS or MxIF experiments.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"fkca\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dtplf\",\"text\":\"Expected Outcome:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"c00k0\",\"text\":\"Serial sections from a tissue that IMS and MxIF can be performed on with subsequent 3D reconstruction\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"3t2cu\",\"text\":\"1. Wear proper PPE: gloves, lab coat, and disposable sleeves.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cplkq\",\"text\":\"2. Properly dispose of blades and other sharps into sharps container and tissue waste into a biohazard bag.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"11pe0\",\"text\":\"3. When finished, clean outer cryostat with approved germicide and inner cryostat with ethanol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"30ho8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"i3rk\",\"text\":\"Note: Since serial sections are required for multimodal analysis, it is critical that the tissues are high-quality and devoid of wrinkles, folds, or damage.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"5glu0\",\"text\":\"1.    Use Biosafety Level 2 precautions when using the cryostat.  The inside of the cryostat is always considered infectious.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"e04fp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"288ck\",\"text\":\"2.    The blades used for cutting are extremely sharp.  Use caution when inserting and removing the blade.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"13di6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"5lbj4\",\"text\":\"1. Cryostat, Leica CM 3050S\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"f29ep\",\"text\":\"2. Optimal Cutting Temperature Polymer (OCT), Fisher SH75-125D\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9t82g\",\"text\":\"3. Cryostat Blades, disposable, high profile, Tissue Tek Accu-Edge, Fisher NC9527669\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ff8q7\",\"text\":\"4. Razor blade, Fisher 12-640\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"h69q\",\"text\":\"5. Sample holder/disc/chuck, Leica 0370 08587\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"f8id2\",\"text\":\"6. Anti-Roll Bar, Glass Insert 70mm, Leica 14047742497\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5pdh5\",\"text\":\"7. Artist's paintbrushes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"d46ml\",\"text\":\"8. Ethyl Alcohol, 200 proof, Pharmco-AAPR 111000200\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"1gv5p\",\"text\":\"9. Contec PREempt RTU Disinfectant Wipes, Fisher 19 039 936\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"1m257\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Set the cryostat temperatures: Internal: -21 o C Object: -10 o C to -20 o C (based on tissue type)",
+    "Carefully remove blade from container and wipe with ethanol and a lint free wipe. Insert blade and lock into place.",
+    "Mount sample onto the cryostat chuck using OCT in the desired orientation. A flat surface can be shaved onto the mounting surface using a razor blade to ensure correct orientation and good adherence.",
+    "The angle of the stage should be adjusted to allow for a less acute passage of the tissue section over the blade as seen in the figure. Acute angles cause the surrounding CMC to fragment and lose structural integrity.",
+    "Trim CMC using larger section increments of 30-50 μm until the tissue becomes visible.",
+    "Before procuring sections for imaging, the blade should be replaced as trimming can cause blade dulling. This will diminish section quality.",
+    "Once the tissue is visible, excess CMC can be removed from around the sample using a precooled razor blade if necessary.",
+    "Adjust the section thickness setting to 10μm.",
+    "Once a desired region for sectioning is reached, ensure the anti-roll bar is positioned appropriately. It must not be too far towards the sample that it scrapes the tissue.",
+    "Once the sectioning becomes reproducible and consistent, obtain the number of desired sections.",
+    "Add subsequent serial sections to the same slide until full for 3D imaging. Take care to record any &#34;lost&#34; sections as they will affect subsequent data reconstruction.",
+    "Manipulate each the section into position on a target surface (slide, ITO slide) using a fine tipped paint brush on the surrounding CMC material. This prevents the contamination or disruption on the tissue.",
+    "Once all sections are added to the slide, invert and gently press a Teflon coated slide onto the tissues to prevent wrinkles. Flat sections thaw mount better than wrinkled sections, which thaw at different rates across the tissue. This can cause tissues to stretch and fold, affecting the morphology and then resulting in artifacts in the imaging data.",
+    "Thaw mount the sections onto the target using heat from your gloved hand. Alternately, use a slide warmer at 20 o C to expedite drying. Once mounted, the section should be air dried immediately before returning the sample to the cryostat or vacuum desiccator. Note: Imaging mass spectrometry analysis requires mounting onto indium tin oxide coated slides. CODEX immunofluorescence analysis requires mounting onto poly-lysine coated coverslips.",
+    "Tissue sections should be stored in a desiccator if undergoing immediate analysis within 24 hours or -80ºC within a vacuum sealed slide holder for longer term storage."
+  ],
+  "authors": [
+    "David Anderson",
+    "Elizabeth Neumann",
+    "Jamie Allen",
+    "Maya Brewer",
+    "Danielle Gutierrez",
+    "Jeff Spraggins"
+  ],
+  "creator": "Jamie Allen",
+  "published_on": 1618502684,
+  "created_on": 1618432870,
+  "keywords": []
+}

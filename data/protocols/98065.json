@@ -1,0 +1,36 @@
+{
+  "id": 98065,
+  "title": "One-pot native barcoding of amplicons v4 (LoCost)",
+  "uri": "one-pot-native-barcoding-of-amplicons-v4-locost-dbzr2p56",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygxebydv8j/v2",
+  "description": "{\"blocks\":[{\"key\":\"9r429\",\"text\":\"This one-pot native barcoding protocol was developed in conjunction with Oxford Nanopore Technologies, New England Biolabs and BCCDC.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"at5nj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"diavb\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"eljah\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"dt4lr\",\"text\":\"See SDS (Safety Data Sheet) for safety warnings and hazards.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "In a new PCR strip-tube/plate set up the following reaction for each sample: %s %s Make a master mix of end-preparation reagents and nuclease-free water and aliquot into strip-tube/plate to improve reproducability.",
+    "Incubate at room temperature for 00:15:00 Incubate at 65 °C f for 00:15:00 Incubate on ice for 00:01:00",
+    "In a new PCR strip-tube/plate set up the following reaction for each sample: %s %s Use one native barcode from the EXP-NBD104 (1-12), EXP-NBD114 (13-24) or EXP-NBD196 per sample. Use 12 or more barcodes per library or there will be insufficient total material to achieve good yields. If processing &lt;11 samples, increase quantities in the above reaction to allow for sufficient materialfor sequencing. For example: if processing 6 samples, double the component volumes for a final reaction volume of 20µL for each sample.",
+    "Incubate at room temperature for 00:20:00 Incubate at 65 °C for 00:10:00 Incubate on ice for 00:01:00 The 65°C incubation is to inactivate the DNA ligase to prevent barcode cross-ligation when reactions are pooled in the next step.",
+    "In a new 1.5 mL Eppendorf tube pool all one-pot barcoding reactions together. If processing &lt;24 samples pool the total volume from all barcodes. if processing 48 samples pool 5 µL from each native barcoding reaction. If processing 96 samples pool 2.5 µL from each native barcoding reaction so as not to exceed a pool volume of 240 µL which would make the clean-up volume too large.",
+    "Add 0.4x volume of SPRI beads to the sample tube and mix gently by either flicking or pipetting. For example add 96 µL SPRI beads to 240 µL pooled one-pot barcoding reactions. 0.4x volume of SPRI is sufficient to bind 400 bp amplicons in the presence of ligation buffer, do not use 1x as this will result in an excessive large bead pellet.",
+    "Mix by vortexing and pulse centrifuge to collect all liquid at the bottom of the tube. Incubate for 00:05:00 at room temperature.",
+    "Place on magnetic rack and incubate for 00:02:00 or until the beads have pelleted and the supernatant is completely clear. Carefully remove and discard the supernatant, being careful not to touch the bead pellet.",
+    "Add 250 µL SFB and resuspend beads completely by pipette mixing. Pulse centrifuge to collect all liquid at the bottom of the tube and place on the magnet. Remove supernatant and discard. SFB will remove excess adapter without damaging the adapter-protein complexes. Do not use 70% ethanol as in early clean-ups.",
+    "Repeat steps 11.9 to perform a second SFB wash. Pulse centrifuge and remove any residual SFB. You do not need to allow to air dry with SFB washes.",
+    "Add 200 µL of room-temperature 70 % volume ethanol to bathe the pellet. Carefully remove and discard ethanol, being careful not to touch the bead pellet. Only perform 1x 70% ethanol wash",
+    "Pulse centrifuge to collect all liquid at the bottom of the tube and carefully remove as much residual ethanol as possible using a P10 pipette.",
+    "With the tube lid open incubate for 00:01:00 or until the pellet loses it&#39;s shine (if the pellet dries completely it will crack and become difficult to resuspend).",
+    "Resuspend pellet in 30 µL 10 millimolar (mM) Tris pH 8.0, mix gently by either flicking or pipetting and incubate for 00:02:00 .",
+    "Place on magnet and transfer sample to a clean 1.5 mL Eppendorf tube ensuring no beads are transferred into this tube."
+  ],
+  "authors": [
+    "Josh Quick",
+    "Lauren Lansdowne"
+  ],
+  "creator": "Josh Quick",
+  "published_on": 1721238836,
+  "created_on": 1712839959,
+  "keywords": []
+}

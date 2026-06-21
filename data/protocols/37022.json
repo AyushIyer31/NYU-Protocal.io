@@ -1,0 +1,33 @@
+{
+  "id": 37022,
+  "title": "Find  Proteins of Unknown Function (PUFs) using Plantannot - Protocol D",
+  "uri": "find-proteins-of-unknown-function-pufs-using-plant-bgd6js9e",
+  "doi": "dx.doi.org/10.17504/protocols.io.bgd6js9e",
+  "description": "{\"blocks\":[{\"key\":\"8gor4\",\"text\":\"The Plantannot software provides several filters and a text search box that allows searching for molecules by its desired annotation features. These filters are needed to obtain PUFs and to try to relate them to abiotic stresses using RNA-seq expression data and co-expression networks. The Filters menu is separated in 8 fields, of those we are going to use only five: “Organism”, “Feature type”, “Orthology”, “Orthologs_coexpression” and “Analyses”. The “Feature Type” filter has three molecule types, from those the polypeptide box is the only that is going to be always checked and the others blank. By using the other 4 remaining filters, 6 protocols were created as examples of different ways to selecting PUFs.  Protocol A: using lack of both homology and protein domain signatures. Protocol B: using lack of homology, presence of domain signatures - trying to select Domains of Unknown Function (DUF) from PFAM, and the text search “Unknown function”.Protocol C: using homology,  lack of protein domain signatures and the text search “Unknown function”. Protocol D-F: same protocols of A-C but using ortholog groups to find homolog proteins with co-expression data related to abiotic stress.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":4,\"length\":11}],\"entityRanges\":[],\"data\":[]},{\"key\":\"7ojlt\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5rkuq\",\"text\":\"Protocol D is intended to find PUFs from organisms whose proteins are not yet public in the NCBI’s “nr” database and have no protein domain signatures found by InterproScan. We will use ortholog groups and co-expression networks to relate proteins to abiotic stresses.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Enter the Plantannot Result&#39;s page, with empty filters and text box search: https://www.machado.cnptia.embrapa.br/plantannot/find/?q= Or you can enter the https://www.machado.cnptia.embrapa.br/plantannot initial page and click on the magnifying glass with the text box empty as well. https://www.machado.cnptia.embrapa.br/plantannot",
+    "Find PUFs from organisms whose proteins are not yet public in the NCBI’s “nr” database and have no protein domain signatures found by InterproScan. We will use ortholog groups and co-expression networks to relate proteins to abiotic stresses. Visualize the &#34;Filters&#34; card on the left of the page from step1: https://www.machado.cnptia.embrapa.br/plantannot/find/?q=",
+    "In the &#34;Organisms&#34; filter, select any organisms (expand the organism&#39;s list using the green arrow) or select all by leaving all boxes empty. We will use Oropetium tomaeum as example. Click &#34;apply&#34; to execute the filter: https://www.machado.cnptia.embrapa.br/plantannot/find/?q=&amp;selected_facets=organism%3AOropetium+thomaeum",
+    "In the &#34;Feature type&#34; filter, select &#34;polypeptide&#34;, and click &#34;apply&#34; to execute the filter: https://www.machado.cnptia.embrapa.br/plantannot/find/?q=&amp;selected_facets=organism%3AOropetium+thomaeum&amp;selected_facets=so_term%3Apolypeptide",
+    "In the Orthology filter, select &#34;orthology&#34;, and click &#34;apply&#34; to execute the filter: https://www.machado.cnptia.embrapa.br/plantannot/find/?q=&amp;selected_facets=organism%3AOropetium+thomaeum&amp;selected_facets=so_term%3Apolypeptide&amp;selected_facets=orthology%3A1",
+    "In the &#34;Orthologs_coexpression&#34; filter, select &#34;co-expression&#34;, and click &#34;apply&#34; to execute the filter: https://www.machado.cnptia.embrapa.br/plantannot/find/?q=&amp;selected_facets=organism%3AOropetium+thomaeum&amp;selected_facets=so_term%3Apolypeptide&amp;selected_facets=orthology%3A1&amp;selected_facets=orthologs_coexpression%3Atrue",
+    "In the &#34;Analyses&#34; filter, select both &#34;no diamond matches&#34; and &#34;no interproscan matches&#34;, and click &#34;apply&#34; to execute the filter: https://www.machado.cnptia.embrapa.br/plantannot/find/?q=&amp;selected_facets=organism%3AOropetium+thomaeum&amp;selected_facets=so_term%3Apolypeptide&amp;selected_facets=orthology%3A1&amp;selected_facets=orthologs_coexpression%3Atrue&amp;selected_facets=analyses%3Ano+diamond+matches&amp;selected_facets=analyses%3Ano+interproscan+matches",
+    "Leave the &#34;Coexpression&#34; filter empty: https://www.machado.cnptia.embrapa.br/plantannot/find/?q=&amp;selected_facets=organism%3AOropetium+thomaeum&amp;selected_facets=so_term%3Apolypeptide&amp;selected_facets=orthology%3A1",
+    "Leave the &#34;Biomaterial&#34; and &#34;Treatment&#34; filters empty: https://www.machado.cnptia.embrapa.br/plantannot/find/?q=&amp;selected_facets=organism%3AOropetium+thomaeum&amp;selected_facets=so_term%3Apolypeptide&amp;selected_facets=orthology%3A1&amp;selected_facets=orthologs_coexpression%3Atrue&amp;selected_facets=analyses%3Ano+diamond+matches&amp;selected_facets=analyses%3Ano+interproscan+matches",
+    "After execution of all filters we will have the following list of filters: https://www.machado.cnptia.embrapa.br/plantannot/find/?q=&amp;selected_facets=organism%3AOropetium+thomaeum&amp;selected_facets=so_term%3Apolypeptide&amp;selected_facets=orthology%3A1&amp;selected_facets=orthologs_coexpression%3Atrue&amp;selected_facets=analyses%3Ano+diamond+matches&amp;selected_facets=analyses%3Ano+interproscan+matches",
+    "Visualize the &#34;Results&#34; card on the center-right of the screen, we will have the resulting list of Oropetium&#39; s PUFs supposedly related to abiotic stress by using orthology and co-expression networks. 10 PUFs were selected: https://www.machado.cnptia.embrapa.br/plantannot/find/?q=&amp;selected_facets=organism%3AOropetium+thomaeum&amp;selected_facets=so_term%3Apolypeptide&amp;selected_facets=orthology%3A1&amp;selected_facets=orthologs_coexpression%3Atrue&amp;selected_facets=analyses%3Ano+diamond+matches&amp;selected_facets=analyses%3Ano+interproscan+matches"
+  ],
+  "authors": [
+    "Marcos Viana",
+    "Adhemar Zerlotini",
+    "Mauricio Mudadu"
+  ],
+  "creator": "Mauricio Mudadu",
+  "published_on": 1590006634,
+  "created_on": 1589456645,
+  "keywords": []
+}

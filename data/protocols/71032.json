@@ -1,0 +1,39 @@
+{
+  "id": 71032,
+  "title": "Fast scan cyclic voltammetry",
+  "uri": "fast-scan-cyclic-voltammetry-chkyt4xw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx9py4g8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"376qm\",\"text\":\"This protocol describes the ex vivo fast-scan cyclic voltammetry (FSCV) technique for detecting dopamine within the dorsal striatum in mice. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Suction a single carbon fiber (7μm diameter, Goodfellow) into a capillary tube (Sutter).",
+    "Load the carbon fiber/capillary tube into a puller (Narishinge), and under the microscope, hand-cut (scalpel blade) fiber tips 30-100μm past the capillary tip.",
+    "Anesthetize mice at postnatal day 90–110 with a ketamine-xylazine mixture.",
+    "Perfuse the mice transcardially with ice-cold artificial cerebrospinal fluid (aCSF )containing the following (in mM): 125 NaCl, 2.5 KCl, 1.25 NaH 2 PO 4 , 2.0 CaCl 2 , 1.0 MgCl 2 , 25 NaHCO 3 , and 12.5 glucose, bubbled continuously with carbogen (95% O 2 and 5% CO 2 ).",
+    "Expose the skull by a caudal to rostral midline incision and gentle remove the brain with a spatula",
+    "Glue the brain to the stage of a vibrating microtome (Leica Instrument) and immerse it in ice cold aCSF.",
+    "Cut parasagittal slices containing the dorsal striatum at a thickness of 240 μm",
+    "Transfer the slices to a holding chamber where there are submerged in aCSF at 37 ºC",
+    "Recording dish with cover stimulating electrode and carbon fiber electrode, Amplifier (Molecular Devices), a digitizer (Molecular Devices), and pClamp (Molecular Devices)",
+    "Before recording, condition the electrodes by running the ramp at 60 Hz for 15 min and 10 Hz for another 15 min. Deliver a voltage ramp to and from 1.2 V (400 V/s) every 100 ms (10 Hz) to detect the oxidation and redox peak for DA.",
+    "Before recording, calibrate the carbon fiber electrode by applying a flow of dopamine diluted in aSCF in known concentrations until dopamine signals are stable",
+    "Dopamine transients are evoked by electrical stimulation delivered through a concentric, bipolar electrode (FHC) placed in the rostrodorsal striatum.",
+    "Use a single electrical pulse ( 300 MA , 0.2 ms ).",
+    "Perforvoltammetricic measurements by sampling at dorsostriatal sites ~200–400 µm ventral and posterior from the forceps minor corpus callosum.",
+    "Take four recordings each site with two-minute intervals between recordings and then averaged as a reported measure.",
+    "The voltammogram and peak oxidative current amplitudes of the dopamine transient are measured. Note: Experiments were rejected when the evoked current did not have the characteristic electrochemical signature of dopamine.",
+    "-Four recordings taken at each site with two-minute intervals between recordings and then averaged as a reported measure. -Considering the slice where the GPe was first evidenced as the most lateral slice. consecutive slices 480 µm apart and medial of this lateral slice should be considered intermediate and medial ones. -The recording order of the slices is randomized to reduce potential recording biases and mitigate possible electrode sensitivity issues. -Electrode sensitivity is to be retested at the end of recordings with a freshly made dopamine stock used for calibration. -Recordings from electrodes with a larger than 10% change from calibrated dopamine solution are subtracted."
+  ],
+  "authors": [
+    "Harry Xenias",
+    "Savio Chan",
+    "Loukia Parisiadou"
+  ],
+  "creator": "divya.darwinarulseeli",
+  "published_on": 1665190246,
+  "created_on": 1665189601,
+  "keywords": []
+}

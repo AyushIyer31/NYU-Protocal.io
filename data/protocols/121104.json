@@ -1,0 +1,38 @@
+{
+  "id": 121104,
+  "title": "Analysis and prediction of antibacterial peptides.",
+  "uri": "analysis-and-prediction-of-antibacterial-peptides-d2hq8b5w",
+  "doi": "dx.doi.org/10.1038/nprot.2007.503",
+  "description": "{\"blocks\":[{\"key\":\"sdpsx\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"ehj4g\",\"text\":\"Increase in the number of bacterial pathogens resistant to conventional antibiotics, with time, has prompted renewed interest in the use of alternative natural microbial inhibitors, antibacterial peptides (a subset of antimicrobial peptides). Antibacterial peptides are an evolutionarily conserved component of the innate immune response and are found among all classes of life i.e. both in vertebrates and invertebrates. These exhibit potent, broad spectrum activity which demonstrates them to be used as potential novel therapeutic agents. The experimental identification and designing of antibacterial peptides is a costly and time consuming affair. Thus, there is a need to develop computational tools for predicting this important class of peptides. So, a novel method AntiBP was developed in order to serve the purpose, which is first of its kind to do this. This method can predict whether a peptide is antibacterial or not with high accuracy.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"kfm8t\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ogmw\",\"text\":\"The server accepts a peptide sequence either in simple single letter amino acid or any standard format. The server requires the user to define the format of the input sequence i.e. whether the sequence is in plain text or FASTA/PIR/EMBL/GENBANK etc. format. The server uses ReadSeq to inter-convert the format of the peptide sequences.  Multiple sequences may be submitted at one time.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"brwqy\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bl70y\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"qx05u\",\"text\":\"User can access and use this web server from any computer (Windows/Linux/Mac) with web browser and Internet connection.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Type the following URL in your web browser &#34;http://www.imtech.res.in/raghava/antibp/&#34;:http://www.imtech.res.in/raghava/antibp. Now a user can choose either to do prediction of antibacterial peptide or map known antibacterial peptides onto his query sequence.",
+    "Click on &#34;Submit&#34; button in menu on the left.",
+    "Now the user is required to fill the submission form as follows: Name of the Peptide sequence: This field is optional.",
+    "Paste your sequence: Paste your query peptide sequence in any of the standard format (FASTA, PIR, EMBL etc.) or amino acid sequence in single little code.",
+    "Or Upload sequence file: User can also upload the peptide sequence directly from a file.",
+    "Terminus: The user shall select a terminus (N, C or N+C) for which the prediction shall be made for.",
+    "Method: The user must also select the method of prediction to be implemented.",
+    "Click the Submit button to get the results.",
+    "Click on “Peptide mapping” button in the menu on the left.",
+    "Paste your peptide sequence in plain single letter amino acid code.",
+    "Enter the similarity cut off percentage on which you want to perform the mapping.",
+    "Click the submit button.",
+    "Antibp predicts the antibacterial peptides of length 15 residues only. So if you provide a peptide longer in length, your peptide would be chopped into overlapping peptides of length 15 and predictions would be done for the resulting peptides. For bug reports please contact us at: raghava@imtech.res.in",
+    "Around 5 seconds for predicting one peptide",
+    "Prediction of antibacterial peptide: It will predict whether a peptide is antibacterial or not. The result is displayed in a tabular format (Figure 1). The table displayed has 4 columns with the peptide sequence in the first column, position of the peptide in second column (in case the query peptide is longer than 15 residues and is chopped for predictions), SVM score in third column and the antibacterial activity in the last column. Peptide mapping: The server also maps known antibacterial peptides on query sequence (Figure 2).",
+    "Figure 1. Table 1 Example of output of AntiBP for antibacterial peptide prediction. Click &#34;here&#34;:http://protocols.nature.com/image/show/820 for a larger version of this image. Figure 2. Example output of AntiBP for peptide mapping. The query peptide here is “RGLLDIVKKVVGAFGSLMSPQ”."
+  ],
+  "authors": [
+    "Sneh Lata",
+    "BK Sharma",
+    "Gajendra PS Raghava"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1194503252,
+  "created_on": 1194503252,
+  "keywords": []
+}

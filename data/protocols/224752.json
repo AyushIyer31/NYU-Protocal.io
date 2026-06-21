@@ -1,0 +1,35 @@
+{
+  "id": 224752,
+  "title": "Dissection scope 3NW - operation",
+  "uri": "dissection-scope-3nw-operation-g7qqbzmvx",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"dj9ff\",\"text\":\"To use the uEye camera of colour and fluorescent images with uEYE and umanager software respectively.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Login to computer Use your normal Crick short username and password",
+    "Start umanager software from desktop icon",
+    "Make sure to select the correct configuration file when prompted MMConfig_uEyeMAN_CURRENT.cfg (in the MM-config folder on the desktop. This will be remembered next time you login)",
+    "Select CameraMode: Mono (greyscale for fluorescence (click on blank box below preset to see options)).",
+    "Select the appropriate filter set and switch ON LED source using the control pad. This is a manual white light LED source which gets appropriately filtered by the fluorescence filters in the turret of the microscope. Select the appropriate filter manually on the microscope. Labels reflect the Leica naming: GFP2 - cyan excitation light DSR - Green excitation light ET CFP - blueish excitation light YFP - Teal excitation light Turn OFF LED when you don&#39;t need it. Make sure camera is set to Mono",
+    "Make sure CameraMode is set to Mono and that the slider on the microscope allows light to the camera port",
+    "Open Multi-D Acq: This will open the main panel for multi channel acquisition.",
+    "Select &#39;Channels&#39; and add &#39;New&#39; as appropriate. You can select Exposure times and pseudo colouring here too. If you want a brightfield overlay you can acquire a BF channel coloured white but you would need the transmitted rather than reflected illumination.",
+    "Select &#39;Save file&#39; Browse to and set a sensible file saving location Choose single file save (one file stack for all channels) Enter file name If you wish you can also add comments which get carried in the metadata of the image",
+    "Aquire image from Multi-D Acq panel Turn ON LED You will be prompted to check the correct filter is in place before each image is acquired Turn OFF LED",
+    "Make sure uManager is closed",
+    "Set up illumination appropriately using the manual settings on the microscope and/or additional external lighting. You should remove one of the filter sets from the microscope to get a proper colour image and that the slider on the microscope allows light to the camera port.",
+    "Go &#39;Live&#39; (top left icon - green) Fit to screen (magnifier - magenta) Adjust exposure as necessary (spanner - cyan)",
+    "Start the uEYE software from the icon on the desktop and choose Optimal colours (simple mode is fine).",
+    "Acquire an image by pressing the save button ((disk - yellow)"
+  ],
+  "authors": [
+    "Donald Bell"
+  ],
+  "creator": "Donald Bell",
+  "published_on": 1781619202,
+  "created_on": 1755248761,
+  "keywords": []
+}

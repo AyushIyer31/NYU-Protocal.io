@@ -1,0 +1,41 @@
+{
+  "id": 92204,
+  "title": "Cas9 enrichment for DiMeLo-sequencing",
+  "uri": "cas9-enrichment-for-dimelo-sequencing-c6akzacw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl8p8n7g2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"9mq8o\",\"text\":\"This protocol builds upon two previously published protocols: this DiMeLo-seq protocol to map protein-DNA interactions at a single molecule level using long-read sequencing and this Cas9 enrichment protocol for Nanopore sequencing to enrich for genomic loci of interest for DiMeLo-sequencing. Some unique features of our protocol include:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":62,\"length\":4},{\"key\":1,\"offset\":177,\"length\":4}],\"data\":{}},{\"key\":\"6er14\",\"text\":\"-using sgRNAs instead of duplexing crRNA and and tracrRNA for Cas9 enrichment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d90a4\",\"text\":\"-Cas9-enrichment of DNA containing methyl-A marks\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5drc6\",\"text\":\"-multiplexing of Cas9-enriched samples\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"614r1\",\"text\":\"-Potential to use \\u003e10 sgRNAs (while we have not tested this, we think our edits to step 4 enable this)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7kpto\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"0F3B0EAB032541E696AFA316E7D5E1FB\",\"url\":\"https://www.protocols.io/view/dimelo-seq-directed-methylation-with-long-read-seq-n2bvjxe4wlk5/v2\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"D8A2F751AF834E4E9F55B1A12477FCCF\",\"url\":\"https://www.protocols.io/view/cas9-enrichment-for-nanopore-sequencing-5qpvondezl4o/v2\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Extract DNA that has been methylated in situ by pA-Hia5 at sites of protein-DNA interactions",
+    "Dephosphorylate DNA isolated in step 3",
+    "This protocol builds upon two previously published protocols: this DiMeLo-seq protocol to map protein-DNA interactions at a single molecule level using long-read sequencing and this Cas9 enrichment protocol for Nanopore sequencing to enrich for genomic loci of interest. Some unique features of our protocol include: -using sgRNAs instead of duplexing crRNA and and tracrRNA for Cas9 enrichment -Cas9-enrichment of DNA containing methyl-A marks -multiplexing of Cas9-enriched samples -Potential to use &gt;10 sgRNAs (while we have not tested this, we think our edits to step 4 enable this)",
+    "Preparing the ribonucleoprotein (RNP) complex for Cas9 enrichment",
+    "Use the NEB Monarch HMW DNA Extraction Kit. Follow protocol for genomic DNA isolation using cell lysis buffer. Include RNase A. Perform lysis with 2000 rpm agitation. We have validated 2000 rpm gives N50 ~50-70 kb but if longer reads are desired we expect 300 rpm would work. Apart from using a different kit, all of the steps for the long fragment DNA extraction are the same as the general protocol. To reiterate, make the following changes to the protocol:",
+    "If fixation was performed, be sure to do the 56°C incubation for lysis for 1 hour (not just 10 minutes) to reverse crosslinks. Agitate for 10 minutes and then keep at 56ºC without agitation for 50 minutes.",
+    "Quantify DNA yield by Qubit dsDNA BR Assay Kit. We need 3-10 ug of high quality DNA in less than 24 uL of 1x TE.",
+    "Designing sgRNAs for Cas9 enrichment",
+    "We use CRISPOR to design sgRNAs to target the loci of interest. We have tested this protocol by cutting with 2 sgRNAs each on either end (so 4 sgRNAs total) of a 10 kb centromeric region.",
+    "Instead of duplexing a crRNA and tracrRNA, we order 1.5 nmol sgRNAs from Synthego , which are resuspended in 15 uL 1x TE for 100 uM.",
+    "For each sgRNA, assemble the RNP complex as follows: 0.4 uL IDT HiFi Cas9 (62 uM) 0.5 uL Synthego sgRNA (100 uM) Assemble each RNP for 30 minutes at room temperature, keep on ice till ready to use",
+    "Prior to adding to dephosphorylated DNA from step 5, pool and dilute the RNPs as follows: 3.6 uL Pooled RNPs (for 4 sgRNAs) 5 uL 10x rCutSmart 41.4 uL water This results in 50 uL of a 100x solution enough for 4-5 samples (10-12 uL/sample)",
+    "In a PCR tube, mix the following: 3 uL 10x rCutSmart buffer 3-10 ug of DNA 3 uL of NEB QuickCIP water up to 27 uL Mix by resuspending with a cut pipet tip",
+    "Incubate at 37 C for 60 mins (dephosphorylation) 80 C for 2 mins (enzyme inactivation) hold at 20 C",
+    "RNP-based cleavage and A-tailing",
+    "To the dephosphorylated DNA, add the following: 12 uL of pooled 100x RNP complex 1 uL of 10 mM dATP 1 uL Taq polymerase Mix by resuspending with a cut pipet tip",
+    "Incubate at: 37 C for 60 minutes (Cas9 cleavage) 72 C for 30 minutes (monoadenylation of cut ends) Hold at 12 C",
+    "Do a cleanup using the Zymogen genomic DNA clean and concentrator following the manufacturer&#39;s protocol. Elute DNA in 30 uL EB that has been pre-heated.",
+    "To 500 ng of each sample, add barcodes from the SQK-LSK 109 kit and 2x TA/ligase mix 38 uL DNA (500 ng) 4 uL barcode 42 uL 2x TA/ligase mix",
+    "Pool samples and do a cleanup using the Zymogen genomic DNA clean and concentrator kit into 65 uL of EB. Proceed with adaptor ligation following ONT protocol."
+  ],
+  "authors": [
+    "Pragya Sidhwani",
+    "Aaron Straight"
+  ],
+  "creator": "Pragya Sidhwani",
+  "published_on": 1718757422,
+  "created_on": 1702404745,
+  "keywords": []
+}

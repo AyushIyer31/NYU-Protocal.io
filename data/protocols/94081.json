@@ -1,0 +1,32 @@
+{
+  "id": 94081,
+  "title": "Quantification of area and optical density of intracellular neuromelanin with Image J",
+  "uri": "quantification-of-area-and-optical-density-of-intr-c749zqz6",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbxer1lpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"7sob3\",\"text\":\"Quantification of area and optical density of intracellular neuromelanin with Image J\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Scan sections using 20x objective (NA=0.8) with pre-set focusing and exposure parameters for optimal NM signal quality with an automated Slide Scanner Olympus (SLIDEVIEW VS200, Tokyo, Japan).",
+    "Acquire SNpc images with Qupath v0.5.0 software",
+    "Upload images at Image J software",
+    "Adjust canvas size at 1596x1198",
+    "Invert image",
+    "With the free hand selections, draft a neuromelanin-pigmented neuron (excluding the nucleus) and measure the optical density (pixel brightness) and the cell area",
+    "With the free hand selections, draft the neuromelanin pigment of the neuron and measure the optical density (pixel brightness) and the neuromelanin-occupied area",
+    "With the free hand selections, draft 15-25 non-pigmented neurons (excluding the nucleus) and measure the optical density and calculate mean",
+    "Normalize (i.e., subtract) the values of the neuromelanin pigmented neuron’s optical density with the mean value of the optical density of the non-pigmented neurons",
+    "Additional: calculate the percentage of occupied area diving the neuromelanin pigment area by the neuron’s area"
+  ],
+  "authors": [
+    "Camille Guillard-Sirieix",
+    "Thais Cuadros",
+    "Miquel Vila"
+  ],
+  "creator": "Miquel Vila",
+  "published_on": 1706119544,
+  "created_on": 1706110571,
+  "keywords": []
+}

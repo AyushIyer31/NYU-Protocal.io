@@ -1,0 +1,41 @@
+{
+  "id": 86144,
+  "title": "HannerLab Qubit Protocol",
+  "uri": "hannerlab-qubit-protocol-cyc8xszw",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"buor4\",\"text\":\"The Qubit can measure the concentration of DNA (in ng/µL).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"evsat\",\"text\":\"\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"do1fd\",\"text\":\"•  Qubit HS (High sensitivity) is used for samples with low traces (0.2-100ng) of DNA (ie. eDNA)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3b2du\",\"text\":\"\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2depl\",\"text\":\"• Qubit BR (Broad range) is used for samples with higher traces of DNA (2-1000ng) (ie. Tissue)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b85t1\",\"text\":\"\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9tv7i\",\"text\":\"•The Qubit uses specially-sized tubes for readings (see materials)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"egcel\",\"text\":\"Tip: These tubes fit perfectly in an empty 1000ul tip box, or on the bottom of most tube racks.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"37mhk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5gav8\",\"text\":\"Make sure to label your Qubit tubes so you know which sample they correspond to when taking the readings. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1h7s5\",\"text\":\"\\n\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"6lrkl\",\"text\":\"- Qubit tubes (cat#: Q32856, Fisher)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ck6o\",\"text\":\"- Qubit HS (cat#: Q33230, Fisher) or BR Kit (cat#: Q33265, Fisher)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5irop\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare Qubit Buffer and Dye mix for the number of samples + 2 (for standards) + 1 extra.",
+    "•Solution will be 199 parts buffer and 1 part dye (e.g., 199uL buffer for every 1uL dye)",
+    "•(# of samples + 3 volumes)",
+    "Vortex buffer-dye mix, then aliquot 198uL buffer-dye mix into each Qubit® tube for each of your samples",
+    "Aliquot 190uL buffer-dye mix into each Qubit® tube for standard 1 &amp; 2",
+    "Pipette 10uL of each standard into its designated Qubit® tube (Standard 1 &amp; 2)",
+    "•The standards are stored in the black fridge near the back of the lab",
+    "•Mix solution with pipette",
+    "Pipette 2uL of each sample into its designated Qubit® tube",
+    "•For detection with low-yield DNA, mix 197ul buffer-dye with 3ul sample instead",
+    "•Mix solution by pipetting up and down up to 10 times.",
+    "Turn on the Qubit® and select &#34;dsDNA High Sensitivity&#34; or &#34;brDNA Broad range&#34;, depending on which kit you used",
+    "Insert Standard 1, close the hatch, and Click &#34;read standard&#34;",
+    "Repeat for Standard 2",
+    "Select “2uL” when asked about sample volume (or 3ul if you used 3) as well as “ng/uL” for concentration units",
+    "Insert the first sample tube, close the hatch, and select “Read Sample”.",
+    "Record concentration",
+    "Repeat for all samples",
+    "Re-measure all samples two more times and take an average of the three values for each sample. Wait 3-10 minutes between each reading. NOTE: If you are getting an &#34;out of range reading&#34; (ie. too low) make sure to shake the tube downwards so that no liquid is trapped at the lid. Consider using a different kit if you are consistently getting out of range values (ie. too low means you should be using the HS kit, too high means you should be using the BR kit). It is normal for values to fluctuate slightly as time progresses as the dye as more time to interact with the DNA in the sample.",
+    "Sometimes by pressing the &#34;read tube&#34; button for too long, you may cancel the reading. Make sure the new reading is not identical to the last. If unsure, read the tube again.",
+    "e.g. for 10 samples the calculation would be (10 + 2 + 1) So your buffer-dye mix will be: 199uL x 13 = 2587uL mixed with 1uL dye x 13 =13uL For a total of 2600ul. Make sure to choose the appropriate tube volume (2ml, 5ml, 20ml) for your buffer-dye mix"
+  ],
+  "authors": [
+    "Kate Lindsay"
+  ],
+  "creator": "h.lab",
+  "published_on": 1691512620,
+  "created_on": 1691507037,
+  "keywords": []
+}

@@ -1,0 +1,42 @@
+{
+  "id": 10576,
+  "title": "ChIP protocol",
+  "uri": "chip-protocol-njqdcmw",
+  "doi": "dx.doi.org/10.17504/protocols.io.njqdcmw",
+  "description": "{\"blocks\":[{\"key\":\"dd32v\",\"text\":\"This is a ChIP protocol for mammalian cells using Millipore ChIP assay kit.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"b0j0o\",\"text\":\"   (Catalog # 17-295\\n Lot # 2135690)\\n \\n \\n \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9lssh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"20dsc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"7q033\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "After passaging 2-3 times, plate cells on 10 cm dishes with appropriate density for them to reach 10^6 cells in two days. Have one control plate just for counting.",
+    "Cross link histones to DNA by adding formaldehyde directly to culture medium to a final concentration of 1% and incubate for 10 minutes at 37°C. (For example, add 270 μL 37% formaldehyde into 10 mL of growthmedium on plate).",
+    "Aspirate medium, removing as much medium as possible. Wash cells twice using ice cold PBS containingprotease inhibitors (1 mM phenylmethylsulfonyl fluoride (PMSF), 1 μg/mL aprotinin and 1 μg/mL pepstatin A).Note: Add protease inhibitors to PBS just prior to use. PMSF has a half-life of approximately 30 minutes inaqueous solutions.",
+    "Scrape cells into conical tube.",
+    "Pellet cells for 4 minutes at 2000 rpm at 4°C. Warm SDS Lysis Buffer (Catalog # 20-163) to room temperatureto dissolve precipitated SDS and add protease inhibitors (inhibitors: 1mM PMSF, 1 μg/mL aprotinin and 1μg/mL pepstatin A).",
+    "Resuspend cell pellet in 200 μL of SDS Lysis Buffer (Catalog # 20-163) and incubate for 10 minutes on ice.",
+    "Sonicate lysate to shear DNA to lengths between 200 and 1000 basepairs being sure to keep samples ice cold(Note: Once sonication conditions have been optimized following steps 1 to 9, proceed to Part B, step 1below).",
+    "Add 8 μL 5 M NaCl (Catalog # 20-159) and reverse crosslinks at 65°C for 4 hours.",
+    "Recover DNA by phenol/chloroform extraction and run sample (example 5 μL, 10 μL and 20 μL samples) in an agarose gel to visualize shearing efficiency. Part B. Experimental protocol. If sonication conditions have been optimized (Part A), complete steps 1 through 7 and continue with the protocolbelow. For a negative/background control, prepare a sample to use as a no-antibody immunoprecipitation control instep 5 below. Additionally, transcriptionally unactivated DNA samples should be prepared as controls for PCR insection II. 10) Centrifuge samples (from part A, step 7) for 10 minutes at 13,000 rpm at 4°C, and transfer the supernatant to anew 2 mL-microcentrifuge tube. Discard pellet.",
+    "Dilute the sonicated cell supernatant 10 fold in ChIP Dilution Buffer (Catalog # 20-153), adding proteaseinhibitors as above. This is done by adding 1800 μl ChIP Dilution Buffer to the 200 μL sonicated cellsupernatant for a final volume of 2 mL in each immunoprecipitation condition. Note: If proceeding to PCR aportion of the diluted cell supernatant 1% (~20 μL) can be kept to quantitate the amount of DNA present indifferent samples at the PCR protocol, Part B, section II, step 6. This sample is considered to be yourinput/starting material material and needs to have the Histone-DNA crosslinks reversed by adding 1 μL of 5 MNaCl and heating at 65°C for 4 hours (see section II, step 3). 28820 Single Oak Drive • Temecula, CA 92590 Technical Support: T: 800 437-7500 • F: 800 437-7502www.millipore.com Page Four of FourCatalog # 17-295Lot # 213569012) To reduce nonspecific background, pre-clear the 2 mL diluted cell supernatant with 75 μL of Protein AAgarose/Salmon Sperm DNA (50% Slurry), (Catalog # 16-157C) for 30 minutes at 4°C with agitation.",
+    "Pellet agarose by brief centrifugation and collect the supernatant fraction.",
+    "Add the immunoprecipitating antibody (the amount will vary per antibody) to the 2 mL supernatant fraction andincubate overnight at 4°C with rotation. For a negative control, perform a no-antibody immunoprecipitation byincubating the supernatant fraction with 60 μL of Protein A Agarose/Salmon Sperm DNA (50% Slurry),(Catalog # 16-157C) for one hour at 4°C with rotation and proceed to step 7.",
+    "Add 60 μL of Protein A Agarose/Salmon Sperm DNA (50% Slurry), (Catalog # 16-157C) for one hour at 4°Cwith rotation to collect the antibody/histone complex.",
+    "Pellet agarose by gentle centrifugation (700 to 1000 rpm at 4°C, ~1min). Carefully remove the supernatant thatcontains unbound, non-specific DNA. Wash the protein A agarose/antibody/histone complex for 3-5 minutes ona rotating platform with 1 mL of each of the buffers listed in the order as given below: 17) a) Low Salt Immune Complex Wash Buffer (Catalog # 20-154), one wash",
+    "b) High Salt Immune Complex Wash Buffer (Catalog # 20-155), one wash",
+    "c) LiCl Immune Complex Wash Buffer (Catalog # 20-156), one wash",
+    "d) TE Buffer (Catalog # 20-157), two washes After step 7 above, the sample is now a protein A/antibody/histone/DNA complex ready for either anImmunoprecipitation/Immunoblot assay (Section I) or Polymerase Chain Reaction (PCR) assay (Section II): Section I. Immunoprecipitation/Immunoblot protocol to detect histone. 1. Following washing of the beads in part B, step 7, immunoprecipitated histones can be analyzed by immunoblotanalysis. Add 25 μL of 1X Laemmli buffer per sample and boil for 10 minutes. Load 20 μL per lane andperform immunoblot procedure as described per appropriate antibody. Section II. PCR protocol to amplify DNA that is bound to the immunoprecipitated histone. 21) Freshly prepare elution buffer (1%SDS, 0.1M NaHCO3).",
+    "Elute the histone complex from the antibody by adding 250 μL elution buffer to the pelleted protein Aagarose/antibody/histone complex from step 7d above. Vortex briefly to mix and incubate at room temperaturefor 15 minutes with rotation. Spin down agarose, and carefully transfer the supernatant fraction (eluate) toanother tube and repeat elution. Combine eluates (total volume = ~500 μL).",
+    "Add 20 μL 5 M NaCl (Catalog # 20-159) to the combined eluates (500 μL) and reverse histone-DNA crosslinksby heating at 65°C for 4 hours. At this step the sample can be stored and –20°C and the protocol continuedthe next day. Note: Include the input/starting material (the sample saved from Part B, step 2, which has had the Histone-DNAcrosslinks reversed by adding 1 μL of 5 M NaCl per 20 μL sample and heating to 65°C for 4 hours) as well as atranscriptionally-unactivated DNA sample as negative and background controls for the PCR reaction.Previously, a 5 μL sample has been used in a nested PCR reaction. However, the amount of sample used perreaction must be determined empirically (e.g., titrate the sample at this step by using 1, 2, 5, or 10 μL per PCRreaction). If PCR results are poor, complete steps 4, 5 and 6 below to purify the DNA sample. NOTE: Handlethe samples carefully; some DNA may be lost during the purification steps.",
+    "Add 10 μL of 0.5 M EDTA (Catalog # 20-158), 20 μL 1 M Tris-HCl, pH 6.5 (Catalog # 20-160) and 2 μL of 10mg/mL Proteinase K to the combined eluates and incubate for one hour at 45°C.",
+    "Recover DNA using ChIP DNA concentrator kit. (Zymo Research).",
+    "Resuspend pellets in an appropriate buffer for PCR or slot-blot reactions. PCR or slot-blot conditions must bedetermined empirically."
+  ],
+  "authors": [
+    "Kseniya Obraztsova"
+  ],
+  "creator": "Kseniya Obraztsova",
+  "published_on": 1527813694,
+  "created_on": 1519846514,
+  "keywords": []
+}

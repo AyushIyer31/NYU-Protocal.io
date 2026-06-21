@@ -1,0 +1,39 @@
+{
+  "id": 243362,
+  "title": "Whole-Brain Axonal Projection Quantification Using ABBA and QuPath",
+  "uri": "whole-brain-axonal-projection-quantification-using-hrwab57af",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvwn2o9vmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"sv2bj\",\"text\":\"This protocol describes whole-brain quantification of axonal projections using atlas-based registration with ABBA [51] followed by fluorescence intensity measurement in QuPath [52]. Brain sections are first aligned to the Allen Mouse Brain Atlas using ABBA to obtain standardized anatomical region boundaries. Fluorescence intensity is then quantified in QuPath and background-corrected. Data are aggregated per animal to avoid pseudoreplication.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"qbdvl\",\"text\":\"- ABBA (Allen Brain Atlas Alignment) [51].\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"sg0au\",\"text\":\"- Allen Mouse Brain Atlas reference.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"hjwph\",\"text\":\"- QuPath (fluorescence analysis mode) [52].\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"zdyf3\",\"text\":\"- Spreadsheet software for aggregation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Import section images into ABBA.",
+    "Align sections to the Allen Mouse Brain Atlas using the ABBA workflow.",
+    "Manually verify alignment quality.",
+    "Export atlas-defined region boundaries or masks for downstream quantification.",
+    "Open registered section images in QuPath.",
+    "Confirm correct pixel calibration.",
+    "Import atlas-derived ROI boundaries if exported from ABBA.",
+    "Use atlas-aligned boundaries to define anatomically consistent ROIs.",
+    "Treat hemispheres separately if hemispheric analysis is required.",
+    "Apply ROI boundaries consistently across animals.",
+    "Define a local background ROI on the same section.",
+    "Select an area without specific axonal labeling.",
+    "Maintain consistent background selection criteria across sections.",
+    "Extract mean fluorescence intensity for each ROI.",
+    "Extract mean intensity for corresponding background ROI.",
+    "Compute background-corrected intensity as: ROI mean - background mean.",
+    "Average corrected values per region per animal.",
+    "Retain hemisphere-specific values if required before final averaging.",
+    "Ensure each animal contributes one value per region."
+  ],
+  "authors": [
+    "Cristian González-Cabrera"
+  ],
+  "creator": "Cristian González-Cabrera",
+  "published_on": 1771249079,
+  "created_on": 1771231780,
+  "keywords": []
+}

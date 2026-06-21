@@ -1,0 +1,27 @@
+{
+  "id": 91803,
+  "title": "Exploring Microbial Diversity with QIIME2",
+  "uri": "exploring-microbial-diversity-with-qiime2-c5v3y68n",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn3y4zl5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"b8hfb\",\"text\":\"This tutorial introduces Qiime2 for non-phylogenetic diversity\\nanalysis, covering core metrics calculation, emphasizing standardized sampling\\ndepth, and using pre-processed feature tables and metadata. It then explores\\nbeta group significance analysis via qiime diversity beta-group-significance,\\ndetailing parameters and introducing pairwise testing. The tutorial concludes\\nwith a concise demonstration of PCoA plot creation using qiime emperor plot,\\nhighlighting input requirements and insights into result interpretation. Users\\nare encouraged to explore the interactive Qiime2 visualization for valuable\\ninsights into microbial community relationships and factors influencing\\ndiversity. Overall, the tutorial serves as a brief yet comprehensive\\nintroduction to Qiime2 for enhanced capabilities in microbiome research.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Title: Exploring MicrobialDiversity with QIIME 2",
+    "Qiime2 (Quantitative Insights Into Microbial Ecology 2) is apowerful bioinformatics platform designed for the analysis of microbialcommunities, particularly from high-throughput sequencing data. Developed bythe Knight Lab, Qiime2 provides a comprehensive suite of tools for processing,analyzing, and visualizing microbiome data. It is an open-source and extensiblesoftware that facilitates reproducible and transparent microbiome research.",
+    "Install Qiime2 in your Condaenvironment. If you are using a MacBook, you can follow the installationinstructions provided on the Qiime2 website. For Windows, consider using avirtual box with a Linux distribution to run Qiime2.",
+    "Navigate to the directory whereyour metadata file and feature table are located using the cd command. Thisdirectory should contain the pre-processed feature table, excluding chimerasand singletons.",
+    "Use the qiime diversitycore-metrics command to calculate diversity metrics. Perform Core Metrics forNon-phylogenetic Diversity Analysis using this command qiime diversity core-metrics \\ --i-tableseq-nochim-biom-table-nosingleton-filtered.qza \\ --p-sampling-depth 12504 \\ --m-metadata-file metadata_fungi.tsv \\ --output-dir core-metrics-results \\ --verbose (Customize the commandby replacing the input and metadata file names. Choose an appropriate samplingdepth based on rarefaction curves and feature table summaries.)",
+    "Use the qiime diversity beta-group-significance command toassess the significance of group differences. qiime diversity beta-group-significance --i-distance-matrix bray_curtis_distance_matrix.qza/ --m-metadata-file metadata_fungi.tsv / --m-metadata-column Source/ --o-visualization bray-curtis-source-sig.qzv / --p-pairwise/ (Customize the command with your distance matrix file, metadatafile, and the column in the metadata file you want to analyze. Consider addingthe --p-pairwise option for pairwise comparisons.)",
+    "Generate a PCoA plot using the qiime emperor plot command. qiime emperror plot -–i-pcoa bray_curtis_pcoa_results.qza --m-metadata-file metadata_fungi.tsv --o-visualization bray_curtis_pcoa_emperor.qzv (You can use other distance matrices like Jaccard. Customize the command with yourspecific PCoA results file and metadata file.plot)"
+  ],
+  "authors": [
+    "Jialin Hu"
+  ],
+  "creator": "Sayada Momotaz Akther",
+  "published_on": 1701815110,
+  "created_on": 1701720252,
+  "keywords": []
+}

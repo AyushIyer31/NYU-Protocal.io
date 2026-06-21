@@ -1,0 +1,31 @@
+{
+  "id": 5009,
+  "title": "Gateway BP recombination of attB tailed PCR products into pDONR/zeo (5 µl assay)",
+  "uri": "gateway-bp-recombination-of-attb-tailed-pcr-produc-g5rby56",
+  "doi": "dx.doi.org/10.17504/protocols.io.g5rby56",
+  "description": "{\"blocks\":[{\"key\":\"6v3h1\",\"text\":\"This is a slightly modified version of Thermo Fisher's gateway BP protocol which uses less enzyme and is therefore more economical.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"7jcs9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"7dap3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"de9he\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "ng of attB PCR product = size of attB tailed PCR product in bp * 0.0165 eg. 778 bp * 0.0165 = 12.9 ng If your purified PCR product has a concentration of 25 ng/ul you would use 0.5 µl in the next step. Your attB PCR product should be purified either by gel purification or with a PCR clean-up kit",
+    "%s %s attB PCR product x µl (as calculated in step 1) pDONR/zeo (150 ng/µl) 0.5 µl TE buffer pH 8.0 to a total volume of 4 µl",
+    "Remove from freezer and vortext for 2 seconds.",
+    "Add 0.5 µl of BP Clonase II enzyme mix and mix well.",
+    "Incubate for 1 hour at room temperature (2-3 hours or overnight for more colonies). 01:00:00",
+    "Add 0.5 µl Proteinase K, mix well and incubate for 10 min at 37°C. 00:10:00",
+    "Combine 1 µl BP product with 50 µl Omnimax 2 competent E.coli cells in 1.5 ml tube.",
+    "00:10:00",
+    "30 seconds at 42°C",
+    "00:02:00",
+    "Add 500 µl SOC.",
+    "1 hour at 37° C at 250 rpm on shaking incubator. 01:00:00",
+    "Plate 20 ul (or more) on LB plates containing 50 ug/ml zeocin and incubate at 37° C over night. I have observed that the older your BP Clonase II enzyme mix is, the more of the BP reaction you need to plate out. You can therefore concentrate your cells by centrifuging at 1000 x g for a couple of minutes, decant most of the supernatant and resuspend the cell pellet in about 50-100 µl of the leftover supernatant. Then plate all of that on the LB + zeocin plate."
+  ],
+  "authors": [],
+  "creator": "Johannes Wolfram JWD Debler",
+  "published_on": 1486452892,
+  "created_on": 1486451020,
+  "keywords": []
+}

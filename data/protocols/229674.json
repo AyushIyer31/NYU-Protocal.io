@@ -1,0 +1,40 @@
+{
+  "id": 229674,
+  "title": "Protocol — DQ™ Red BSA Lysosomal Activity Assay \u0006 HCS Analysis",
+  "uri": "protocol-dq-red-bsa-lysosomal-activity-assay-hcs-a-hciib2ucf",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vz92ergx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"cjhio\",\"text\":\"Functional readout of lysosomal proteolysis using self-quenched DQ™ Red BSA, followed by confocal imaging and spot-based quantification.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"54qcs\",\"text\":\"- Acquire DAPI channel for nuclei and 568-nm channel for DQ-BSA signal (sequential acquisition).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"h0s5h\",\"text\":\"- Use exposure settings similar to LysoTracker® acquisition; avoid saturation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"xcgwg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bxcs0\",\"text\":\"Analysis — Harmony®/Columbus®\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":33}],\"entityRanges\":[],\"data\":{}},{\"key\":\"qqbmv\",\"text\":\"- Find Nuclei on Hoechst channel; adjust thresholds to exclude debris/clumps.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"owcld\",\"text\":\"- Find Cytoplasm using the 568 channel; apply intensity filter 200–100,000 a.u.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"laa2v\",\"text\":\"- Find Spots on the 568 channel for DQ-BSA puncta; set split sensitivity 0.8 and detection sensitivity 0.5 (tune as needed).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8188x\",\"text\":\"- Extract spot intensity metrics and normalise by nuclei count to obtain per-cell measures.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"sv8k8\",\"text\":\"- Export per-well values for statistical analysis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"ydjyf\",\"text\":\"- Prepare DQ-BSA working solution at 10 µg/mL in complete medium (fresh).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fankk\",\"text\":\"- Prepare Hoechst 33342 at 1 µg/mL.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"sua7s\",\"text\":\"PFA is hazardous; use in a fume hood with appropriate PPE. Protect fluorescent probes from light.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"q1tho\",\"text\":\"- DQ™ Red BSA (Life Technologies®, Cat# D12051)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"la3j5\",\"text\":\"- Hoechst 33342 (ThermoFisher Scientific®, Cat# H3570)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"hcsh4\",\"text\":\"- 4% Paraformaldehyde (PFA) in PBS (for fixation)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4gr8x\",\"text\":\"- Complete medium; pre-warmed PBS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bpscu\",\"text\":\"- Imaging plates; Opera Phenix® Plus (RRID:SCR_021100)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"m28it\",\"text\":\"- Harmony® High-Content Imaging \\u0006 Analysis (RRID:SCR_018809)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Add DQ-BSA (final 10 µg/mL) to wells; incubate 37 °C for 1 h.",
+    "Wash gently with warm PBS to remove uninternalised probe.",
+    "Add Hoechst 33342 (final 1 µg/mL) for 5 min at 37 °C; wash with pre-warmed PBS.",
+    "Fix with 4% PFA (e.g., 10–15 min at RT); wash with PBS.",
+    "Objective: 63×; Mode: Confocal.",
+    "Acquire DAPI channel for nuclei and 568-nm channel for DQ-BSA signal (sequential acquisition).",
+    "Use exposure settings similar to LysoTracker® acquisition; avoid saturation.",
+    "Find Nuclei on Hoechst channel; adjust thresholds to exclude debris/clumps.",
+    "Find Cytoplasm using the 568 channel; apply intensity filter 200–100,000 a.u.",
+    "Find Spots on the 568 channel for DQ-BSA puncta; set split sensitivity 0.8 and detection sensitivity 0.5 (tune as needed).",
+    "Extract spot intensity metrics and normalise by nuclei count to obtain per-cell measures.",
+    "Export per-well values for statistical analysis.",
+    "Discrete cytoplasmic puncta with measurable 568-nm fluorescence proportional to proteolytic activity.",
+    "Low signal → confirm probe storage and working concentration; extend incubation to 2 h if needed.",
+    "Diffuse signal → reduce loading concentration or time; verify wash steps."
+  ],
+  "authors": [
+    "Sara Lucas",
+    "Giuseppe Uras",
+    "federico fierli",
+    "Sofia Koletsi",
+    "david chau",
+    "anthony schapira"
+  ],
+  "creator": "Sara Lucas",
+  "published_on": 1760363409,
+  "created_on": 1760363041,
+  "keywords": []
+}

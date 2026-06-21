@@ -1,0 +1,41 @@
+{
+  "id": 52677,
+  "title": "Assaying starvation-induced autophagy in HeLa cells",
+  "uri": "assaying-starvation-induced-autophagy-in-hela-cell-bxpdpmi6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bxpdpmi6",
+  "description": "{\"blocks\":[{\"key\":\"6ka7v\",\"text\":\"A method for assaying starvation-induced autophagy in HeLa cells that have been transfected with Halo-tagged constructs. This protocol was specifically used to investigate the impact of various mutations in the protein WIPI2 on starvation-induced autophagy in cells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"caq19\",\"text\":\"Note: C. Alexander Boecker helped in the development of this protocol. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Culture cells in DMEM (plus 10% FBS, 1% Penicillin/Streptomycin, 1% GlutaMAX) on glass-bottom imaging dishes. Grow until 40-50% confluent.",
+    "Transfect cells 24 hours prior to starvation treatment with 0.75 μg of the appropriate Halo-tagged WIPI2 plasmid using FuGENE transfection reagent per the manufacturer’s protocol.",
+    "Prepare 1x EBSS media with 100nM Bafilomycin A1 (BafA) and 37.5 nM TMRDirect Halo Ligand (Promega).",
+    "Wash cells 2x quickly with 1x EBSS media and incubate for 2 hours (37 o , 5% CO 2 ) in EBSS media containing BafA and TMR Direct Halo Ligand.",
+    "Limit light exposure as much as possible following treatment (Halo ligand is light-sensitive).",
+    "After starvation treatment, aspirate media. Wash cells once quickly in PBS.",
+    "Gently but quickly add ~2mL ice cold MeOH to the cells and fix at -20 o for 10 minutes.",
+    "Remove MeOH and gently add PBS. Wash 3x. Cells can be stored in final PBS wash at 4 o if you do not want to proceed with the protocol today.",
+    "Block cells for 1.5 hours in blocking buffer (PBS with 5% normal goat serum, 1% BSA, 0.05% NaN 3 ).",
+    "Dilute primary LC3 antibody (ab48394) in blocking solution 1 μg/mL. Incubate at room temperature for 1 hour.",
+    "Wash 3x in PBS (5 mins per wash).",
+    "Dilute Alexafluor secondary antibody 1:1000 in blocking media. Incubate at room temperature for 1 hour.",
+    "Wash 1x in PBS for 5 minutes.",
+    "Dilute Hoechst in PBS (4 μg/mL). Put on cells and incubate for 10 mins.",
+    "Wash 3x (5 mins each) in PBS.",
+    "Store in PBS at 4 o . Image within a few days for best results.",
+    "Image at constant laser intensity, exposure time and gain between experimental replicates. Image cells using z-stacks (with a 200 nm interval between images in the z plane) that cover the full volume of the cell based on the nuclear stain.",
+    "Create maximum projections of each channel from each image. In FIJI, create ROIs containing full cells by tracing cells based on the Halo channel.",
+    "Train Ilastik to recognize LC3-positive puncta by training the software on images from each experimental replicate, with at least one image from each condition. Generate simple segmentation images for each of the LC3 images using batch processing.",
+    "In FIJI, use the ROIs generated in step 18 to capture each cell in each image. Place ROIs on the corresponding simple segmentation image of the LC3 channel. Use the Analyze Particles feature to count the number of autophagosomes present in each cell."
+  ],
+  "authors": [
+    "Julia F Riley",
+    "Erika Holzbaur"
+  ],
+  "creator": "Julia F Riley",
+  "published_on": 1656796180,
+  "created_on": 1629828116,
+  "keywords": []
+}

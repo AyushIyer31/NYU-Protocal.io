@@ -1,0 +1,38 @@
+{
+  "id": 2036,
+  "title": "Running VirSorter in iPlant Discovery Environment",
+  "uri": "Running-VirSorter-in-iPlant-Discovery-Environment-d8u9wv",
+  "doi": "dx.doi.org/10.17504/protocols.io.d8u9wv",
+  "description": "{\"blocks\":[{\"key\":\"f4l8n\",\"text\":\"This protocol gives an introduction to running VirSorter in the iPlant Discovery Environment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4lv59\",\"text\":\"See the wiki page of VirSorter for a more complete descripton of the result files:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ciil7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6fisp\",\"text\":\"https://pods.iplantcollaborative.org/wiki/display/DEapps/VIRSorter+1.0.2\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":72}],\"data\":[]},{\"key\":\"4jphs\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"BBAE9F86BC7C43CFBC6ED96F5A22F1A0\",\"url\":\"https://pods.iplantcollaborative.org/wiki/display/DEapps/VIRSorter+1.0.2\"}}}}",
+  "before_start": "{\"blocks\":[{\"key\":\"1n9p5\",\"text\":\"To access VirSorter on iPlant, you will first need to create a (free) account. This can be done at this address: https://user.iplantcollaborative.org/register/\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":113,\"length\":46}],\"data\":[]},{\"key\":\"pgot\",\"text\":\"Help can found at:  https://pods.iplantcollaborative.org/wiki/display/start/Registering+for+and+Managing+your+iPlant+Account\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":19,\"length\":105}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"41854CDBFE254A2F88445D2CC2C6E6F3\",\"url\":\"https://user.iplantcollaborative.org/register/\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"929ED55EA7D14299BE92EF829BA84FD0\",\"url\":\"https://pods.iplantcollaborative.org/wiki/display/start/Registering+for+and+Managing+your+iPlant+Account\"}}}}",
+  "warning": "{\"blocks\":[{\"key\":\"bdjh8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Register an account with iPlant. https://user.iplantcollaborative.org/register/",
+    "Login to the Discovery Environment. https://de.iplantcollaborative.org/de/ The Discovery Environment is the section of iPlant hosting VirSorter.",
+    "Click on the &#34;Data&#34; button on the left. a",
+    "Select a directory to work in. a",
+    "Click on &#34;Upload&#34; to place your data in the current directory. a",
+    "Click on the &#34;Apps&#34; button. a",
+    "Select iVirus category. a",
+    "Select VirSorter. a",
+    "Enter a name and select the output directory for the analysis. a",
+    "Click section 1, select an input file and a database (i.e. with or without viromes). a",
+    "You can also select a fasta file of additional viral sequences and select the &#39;virome decontamination&#39; mode, designed to identify viral sequences in datasets that are mostly viral (as opposed to mining of viral signal in microbial genomes or metagenomes). a This step is optional.",
+    "Click &#34;Launch Analysis&#34; a",
+    "You will be notified when the job is submitted, when the job is running, and when the job is complete. a",
+    "Once the job is completed the output directory will include the main csv output file, listing all sequences detected as viral with their associated category and metrics, alongside the other results files stored into different sub-directories. a",
+    "The file can be opened in iPlant or downloaded for further analysis."
+  ],
+  "authors": [
+    "Simon Roux",
+    " Francois Enault",
+    " Bonnie L. Hurwitz",
+    " Matthew B. Sullivan"
+  ],
+  "creator": "Bonnie L Hurwitz",
+  "published_on": 1452787726,
+  "created_on": 1448299150,
+  "keywords": []
+}

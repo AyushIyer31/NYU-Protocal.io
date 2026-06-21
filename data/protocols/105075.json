@@ -1,0 +1,39 @@
+{
+  "id": 105075,
+  "title": "Mouse Tissue mtDNA Copy Number Protocol",
+  "uri": "mouse-tissue-mtdna-copy-number-protocol-diut4ewn",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn6jwzl5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"4ahjq\",\"text\":\" Mouse Tissue mtDNA Copy Number Protocol developed in the Picard lab at Departments of Psychiatry and Neurology, Robert N Butler Columbia Aging Center, Columbia\\nUniversity Irving Medical Center, New York, NY, USA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "BD Vacutainer Tubes (BD #363083) Tris HCl (Sigma #T3253) Tween 20, 10% (Sigma #P1379) Nuclease free water (Thermofisher Scientific #AM9939) Proteinase K (20 mg/mL) (Thermofisher Scientific #AM2548) Stericup Quick Release-GV Sterile Vacuum Filtration System – 500 mL (Millipore Sigma S2GVU05RE) BrandTech 96-well semi-skirted plate (BrandTech #781375/VWR #10141-434) BrandTech 8-strip domed tube caps (BrandTech #781340/VWR #80087-132) 2x TaqMan Universal MasterMix Fast (LifeTech #4444965) MicroAmp‱ Optical 384-Well Reaction Plate with Barcode (ThermoFisher#4309849) MicroAmp‱Optical Adhesive Film (ThermoFisher #4311971) ValidatedmtDNA/nDNA Primer &amp; Probe sequences (idtDNA.com) Additional consumables not listed here: 1.5 mL Eppendorf tubes, pipette tips as needed.",
+    "Keep everything sterile. The below calculations provide sufficient lysis buffer for1 L of complete lysis buffer, or about 5,000 reactions.",
+    "Tris-HCl (0.38M, pH 8.5) (Sigma #T3253) - 18.168 g of Tris HCl (MW = 157.60 g/mol) in 200 mL of nuclease-free dH 2 O - pH to 8.5 with 5M NaOH (about 12.5 mL, but measure pH continuously) - Note: Accurate pH is critical for proper extraction. Make sure your pH meter has been recently calibrated. - Make up to 300 mL with nuclease-free dH 2 O - Sterile filter Tris-HCl buffer using a SteriCup (Make 6 mL or 12 mL aliquots, depending on if you want to run 1 or 2 plates at once)",
+    "Tween 20, 10% (Sigma #P1379) - 540 mL of ultrapure dH 2 O - 60mL of Tween 20 (wash tip thoroughly or leave in solution) - Sterile filter Tween 10% using a SteriCup (Make 12 mL or 24 mL aliquots, depending on if you want to run 1 or 2 plates at once) NB: Thawing these 10% Tween aliquots can be slow. I recommend using a 37ºC bead bath.",
+    "%s %s",
+    "%s %s",
+    "ddH 2 O (Sterile, nuclease-free) (Thermofisher Scientific #AM9939) (Make 5 mL aliquots or use direct from bottle)",
+    "Proteinase K (20 mg/mL) (Thermofisher Scientific #AM2548) - To be put in fresh from 20 mg/mL (1:100 dilution, final 200 µg/mL) Store aliquots at -30°C",
+    "Lysis for Mouse Tissue Thaw all reagents and prepare lysis buffer as described above. Add 180 μL of lysis buffer in each well of a 96-well semi-skirted plate. We use BrandTech #781375. Supplied in US by VWR #10141-434. Add 20 μL of sample into each well. We recommend one extra well with 200 μL lysis buffer only to use as a “no template control”. Seal wells with 8-strip domed caps. We use BrandTech #781340. Supplied in US by VWR #80087-132. To ensure proper mixing of the sample and buffer, vortex vigorously. To pull the sample/buffer mixture to the bottom of the wells, quickly centrifugeat 1,000g for 10 sec before lysis. Proceed to heat-activated lysis of the samples in a Thermocycler for 16 hours at 55 o C,followed by heat inactivation for 10 minutes at 95 o C.",
+    "o This digested sample can be used directly as template DNA in qPCR for cf-DNA measurements. Before performing qPCR, vortex and centrifuge again the template DNA-containing tube(s)/plate(s) at 1,000g for 10 sec at room temperature. If not using within 24 - 48h, freeze the DNA samples at -80ºC or colder.",
+    "Compute the mean, standard deviation, and coefficient of variation (CV) for the cycle thresholds (Ct) across each triplicate for each sample.",
+    "The average Ct for each sample should be used compute copies/mL.",
+    "If the CV across the 3 triplicates is &gt;2%, check the triplicates to see if any of the wells has a Ct that is &gt;1 unit different from the other two, which could indicate a qPCR failure in that well.",
+    "In the case where amplification has failed in a well, remove the outlier.",
+    "%s %s",
+    "2x TaqMan Universal MasterMix Fast (Life Tech #4444965) MicroAmp ‱ Optical 384-Well Reaction Plate with Barcode (ThermoFisher #4309849) MicroAmp ‱ Optical Adhesive Film (ThermoFisher #4311971) Validated mtDNA/nDNA Primer &amp; Probe sequences (idtDNA.com)",
+    "%s %s",
+    "- Reconstitute primers in appropriate volume of nuclease free water to achieve100 μM stock concentration. - Combine 120 μL each of 100 μM forward and reverse primers with 960 μLnuclease free water to achieve 10 μM working concentration. - Store primers at -30ºC or -80ºC until use. - Reconstitute probe in appropriate volume of nuclease free water toachieve 100 μM stock concentration. - Dilute 100 μM stock probe 20x to achieve 5 μM working concentration. - Store probes at -30 o C or -80 o C until use (avoidfreeze-thaw) and protect probes from light."
+  ],
+  "authors": [
+    "Livia Hecke Morais",
+    "Jack Devine"
+  ],
+  "creator": "Jack Devine",
+  "published_on": 1724311926,
+  "created_on": 1723242810,
+  "keywords": []
+}

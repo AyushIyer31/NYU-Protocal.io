@@ -1,0 +1,31 @@
+{
+  "id": 47094,
+  "title": "Converting microscopy image data and metadata with Microfile+: 2D images into a 3D stack",
+  "uri": "converting-microscopy-image-data-and-metadata-with-br8wm9xe",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"fdiuq\",\"text\":\"Enrich the metadata and FAIRness of microscopy image data by converting into OME-TIFF and/or JPEG2000 format with Microfile+. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "MicroFile+ is a free tool compatible with Windows workstations. Download and install Microfile+ by going to https://www.mbfbioscience.com/microfileplus . Once installed, launch the MicroFile+ application. MicroFile+ (RRID: SCR_018724) MBF Bioscience",
+    "Select Combine 2D images into a 3D stack Images can be converted from image to image, series to image, many channels to multichannel, and series to projection. The appropriate type of conversion will be image data dependent.",
+    "In the Save Format section, choose Both when you are prompted to save your output image as a JPEG2000 , OME TIFF , or Both . Investigators are encouraged to convert SPARC source/primary microscopy image data to JPEG2000 and OME-TIFF formats. The JPX format is a compressed, web streamable version of the source microscopy image data. The OME-TIFF version complies with FAIR data standards by providing a version of the source image that can be viewed by anyone using free tools such as the ImageJ viewer. Both image formats conserve the original metadata from the source image file and enable enrichment of additional metadata to the converted versions.",
+    "For JPEG2000 Compression , select Lossy and enter 40:1 compression. OME-TIFF data is always written using lossless compression (and therefore no selection is available for compression for this format). Because the images in each experiment could be acquired with different imaging devices, cameras, or objectives, the resolution of the images may be different. For each experiment, an appropriate compression level will need to be selected to ensure the compressed JPX images do not contain any artifacts. Artifacts caused by image compression will be most visible in regions of gradient transitions. The original image is likely to have crisp lines at these junctions where the compressed image versions will have a smaller range of color available to represent the gradients. Transitions will appear more pixelated and blurry. This can be severe for some images, making the compressed version uninformative and unrepresentative of the source image. The compression will need to be scaled back for images within that experiment.",
+    "In Advanced options, ensure Enforce required metadata is checked. For SPARC conversions, it is necessary to ensure the required metadata values are provided: Image Name Channel Target Label Pixel size in micrometers in X, Y, and Z Compression",
+    "Click Next .",
+    "Load the original image file(s) into the converter by either a) clicking on the Load files or drag and drop files below button in the upper left corner and browsing to the files or b) dragging and dropping the files into the image selection panel. The image file and conversion result information will populate the table for each file loaded into the converter. Images selected or dragged and dropped together will be combined into one 3D stack. Multiple images or stacks can be created by selecting or dragging and dropping each series of images separately.",
+    "Select an image from the file list by clicking on the filename at the top of the collapsible list of all images included in the conversion for that image. Select Show Metadata to open the metadata generation window.",
+    "Metadata conserved from the original file will populate automatically. To add metadata that is missing or change metadata, either a) input the information manually or b) create an Experiment preset that can be selected and applied (see Converting microscopy image data and metadata with Microfile+ for more information). Metadata is collected and/or added for fields pertaining to the channel(s), device/camera, image, information, objective, and photomultiplier tube (PMT). See definitions for each image metadata element in the Image Metadata Glossary . The status of metadata completion is indicated next to each stack. The green check mark indicates that critical metadata is sufficient. The red X indicates that critical metadata is missing. Click the file name and the critical metadata fields are highlighted in yellow. Pink boxes indicate fields that lack information. Double-click to enter metadata.",
+    "Click Convert to initiate the conversion process. If there is a file with the same name in the output directory, the &#34;File Already Exists&#34; dialog opens. Click yes to proceed and “converted” will be added to the end of the file name to distinguish the new file conversion process.",
+    "Select your destination for image stack(s) after conversion: By default, image stack(s) are saved to the same location as the original(s). To select a different location for all stacks in the window, click the select output button, navigate to the destination folder, and click select folder . To select a different location for individual stacks in the window, click the SAVE button next to the file name, navigate to the destination folder, click open , and click save ."
+  ],
+  "authors": [
+    "Maci Heal"
+  ],
+  "creator": "sbaldwin",
+  "published_on": 1614356453,
+  "created_on": 1612884820,
+  "keywords": []
+}

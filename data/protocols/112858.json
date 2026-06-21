@@ -1,0 +1,43 @@
+{
+  "id": 112858,
+  "title": "16S Data Analysis Protocol",
+  "uri": "16s-data-analysis-protocol-dsf26bqe",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvr9dbpvmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"9nlm6\",\"text\":\"Learn how to upload sequence data into BV-BRC and analyze the results. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "To begin 16S barcoding, library preparation, and Nanopore flow cell priming for sequencing results, please follow the steps described here.",
+    "The protocol was created by Emily Gailey as apart of the NCSU Biotechnology Program and all credits go to her.",
+    "Upon reaching this step, 16S samples should be barcoded, pooled together to achieve a concentration of 50-100 ng, and injected into a PromethION flow cell for sequencing.",
+    "When the sequence is complete, raw sequence reads will be available to download within a results folder.",
+    "Select the &#34;fastq_pass&#34; folder to access successfully run barcodes.",
+    "Based on your specific analysis goal, select and download your files of interest (Our group selected 6 total barcodes for investigation: #1, #3, #5, #7, #9, &amp; #11).",
+    "Download the fastq.gz files. Then, for each barcode, you will want to concatenate the sequences. Read this tutorial to learn how to concatenate files. Concatenate Sequence Files",
+    "Once the desired files are concatenated, visit bv-brc.org and ensure you have an account created.",
+    "Once logged into BV-BRC, select &#34;upload&#34; on the bottom right corner of the screen and select your newly concatenated files. It is important to change the &#34;Upload type&#34; to &#34;Reads&#34; prior to starting the upload.",
+    "After the files are successfully uploaded, under “Tools &amp; Services” at the top toolbar on the BV-BRC homepage select “Taxonomic Classification”.",
+    "Under “Single Read Library” select the barcode file you wish to analyze.",
+    "Click the arrow to move this file into the “Selected Libraries” box.",
+    "Add all barcode files to the same job.",
+    "Adjust the sequencing type to “16S Ribosomal RNA”.",
+    "Select your output folder and output name. Then, click &#34;Submit&#34;!",
+    "Monitor the job progress under “Workspaces &gt; My Jobs”. Five barcodes will likely take ~15 minutes to complete.",
+    "Open the ”My jobs” page. After the job has been completed select the job and then click “View” on the green sidebar.",
+    "Explore the outputs of each individual barcode as well as the alpha and beta diversity comparison files.",
+    "Analysis through the &#34;Sankey&#34; output files will show a phylogenetic tree-style output of the microbial families present in a give barcode/sample. This output allows for analysis of bacteria present, and how closely related certain strains are to one another.",
+    "Analysis using the &#34;Krona&#34; output files gives a pie chart-style report of total diversity present in the barcode/sample. This tool allows for specific percentages of abundance for a given strain of microbe.",
+    "We encourage others to explore the results and outputs of BV-BRC taxonomic runs. Analyze what is present and draw scientific conclusions.",
+    "You have successfully generated 16S barcoded libraries from samples, inserted it into a Nanopore flow cell for sequencing, concatenated files given from our sequencing report, uploaded them into BV-BRC, and observed trends to draw conclusions!",
+    "Congratulations! You are now a metagenomic scientist!"
+  ],
+  "authors": [
+    "Paul McLean"
+  ],
+  "creator": "Paul McLean",
+  "published_on": 1733149133,
+  "created_on": 1732647854,
+  "keywords": []
+}

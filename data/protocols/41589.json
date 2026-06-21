@@ -1,0 +1,34 @@
+{
+  "id": 41589,
+  "title": "Testing safety mechanism",
+  "uri": "testing-safety-mechanism-bkuvkww6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bkuvkww6",
+  "description": "{\"blocks\":[{\"key\":\"9g5ab\",\"text\":\"In order to test the efficiency of the kill switch mechanism,  we plan on performing the following experiments:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"cl01i\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6kvm5\",\"text\":\"Test amino acid autotrophy in vitro\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":35},{\"style\":\"italic\",\"offset\":27,\"length\":8}],\"entityRanges\":[],\"data\":[]},{\"key\":\"7t9dg\",\"text\":\"An overnight culture will be used to inoculate a test culture. The knock out strains will be grown in a medium containing the test amino acid and then transfered to a minimal medium lacking the specific amino acid. Samples of 0.5 ml will be removed every 30 min to test the OD. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5efe4\",\"text\":\"Testing solanine dependency in vitro\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":36},{\"style\":\"italic\",\"offset\":28,\"length\":8}],\"entityRanges\":[],\"data\":[]},{\"key\":\"bq0o3\",\"text\":\"A test culture will be inoculated from the overnight culture. The cells will be grown in LB supplemented with solanine (CONCCCCCC). The cells will be collected, washed and resuspended in LB lacking solanine. Samples of 0.5 ml will be removed every 30 min in order to test OD. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5h07d\",\"text\":\"Testing dependency in soil\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":26}],\"entityRanges\":[],\"data\":[]},{\"key\":\"2upsr\",\"text\":\"The GFP-mutant strains (amino acid auxotrophs and solanine dependent mutants) will be inoculated at the root of the potato plants. The potato plants will be grown and described as above.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Plate mutants on minimal media supplemented with the auxotrophy amino acid or solanine.",
+    "Pick one colony and inoculate 5 mL . Grow B. mycoides Overnight 200 rpm, 30 °C,",
+    "The next day inoculate a working culture ( 30 mL media + 1% overnight culture)",
+    "Grow at 200 rpm, 30 °C, until OD600nm is 0.5",
+    "Collect cells by centrifugation 4000 x g, 4 °C, 10 minutes",
+    "Wash 5 times with growth media (without amino acid) This step may need ajustment. The purpose is to eliminate the dependency molecule from the growth medium",
+    "Resuspend in 30 mL minimal media.",
+    "Divide culture in 2 x 15 mL cultures. Supplement one of them with the required amino acid.",
+    "Incubate both samples at 200 rpm, 30 °C,",
+    "Every 00:30:00 take a 0.5 mL sample and check OD600",
+    "The OD of the sample + amino acid will increase exponentially The other one will remain 0.5",
+    "Grow potato plants in a 40 cm diameter pot.",
+    "Inoculate 5 mL of a GFP-labeled B. mycoides (auxotroph) culture in exponential growing phase (OD600nm=0.5) For a negative control use GFP-labeld B. mycoides. Fluorescent labeling Bacillus mycoides by r.rajadhyaksha",
+    "Take soil samples of control and mutants from: - as close to the root as possible - 10 cm distance fro m root - 20 cm distance from root - 30 cm distance from root - 40 cm distance from root - 50 cm distance from root"
+  ],
+  "authors": [
+    "Andreea S"
+  ],
+  "creator": "a.stan.6",
+  "published_on": 1603542667,
+  "created_on": 1599221027,
+  "keywords": []
+}

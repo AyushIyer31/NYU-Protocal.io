@@ -1,0 +1,39 @@
+{
+  "id": 61607,
+  "title": "Quantitative real-time PCR of mRNA",
+  "uri": "quantitative-real-time-pcr-of-mrna-b8efrtbn",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g74xoqgwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"bqlg3\",\"text\":\"Total RNA was extracted from dry cell pellets using the RNAeasy kit (Qiagen), per manufacturer’s instructions. Concentration and purity of ribonucleic acid (RNA) was determined using the Nanodrop. 600 ng RNA was converted to cDNA with the QuantiTect reverse transcription kit (Qiagen) as per manufacturer’s instructions. Quantitative real-time polymerase chain reaction (PCR) reactions were performed using the QuantiTect SYBR Green kit (Qiagen). To summarise, 2 mL cDNA, 10 mL SYBR Green, 7 mL RNAse free dH2O and 1 mL 20 mM forward and reverse primers was added to each well. A mock mixture using 2 mL RNAse free dH2O instead of cDNA was used as a blank. Primers used (Eurofins Genomics). For the PCR reaction activation was at 95°C for 10 minutes. Following this was 40 cycles of denaturing at 94°C for 15 seconds; annealing at 58°C for 30 seconds and extension at 72°C for 30 seconds. Fold-change in gene expression was calculated using the ΔCT method, based on biological reference samples and glyceraldehyde 3-phoshate dehydrogenase (GAPDH) mRNA levels for normalisation. All results obtained were from the evaluation of two technical duplicates of three independent experiments.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":508,\"length\":1},{\"style\":\"sub\",\"offset\":617,\"length\":1},{\"style\":\"sub\",\"offset\":947,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Protocol adapted from: Matthew E Gegg, Guglielmo Verona, Anthony H V Schapira, Glucocerebrosidase deficiency promotes release of α-synuclein fibrils from cultured neurons, Human Molecular Genetics , Volume 29, Issue 10, 15 May 2020, Pages 1716–1728, https://doi.org/10.1093/hmg/ddaa085",
+    "Total RNA was purified using RNeasy™ (Qiagen, Valencia, CA, USA).",
+    "For cDNA synthesis, 600 ng of total RNA was reverse transcribed using QuantiTect Reverse Transcription Kit (Qiagen).",
+    "Thaw template RNA on ice. Thaw gDNA Wipeout Buffer, Quantiscript® Reverse Transcriptase, Quantiscript RT Buffer, RT Primer Mix and RNase-free water at room temperature (15–25°C). Mix each solution by flicking the tubes. Centrifuge briefly to collect residual liquid from the sides of the tubes, and then keep on ice.",
+    "Concentration and purity of ribonucleic acid (RNA) was determined using the Nanodrop.",
+    "Prepare the genomic DNA elimination reaction on ice. Mix and then keep on ice. Per reaction: - 2 µL gDNA Wipeout Buffer, 7x - x µL Template RNA (add volume required for 600 ng RNA) - Make up to 14 µL with RNase-free water",
+    "Incubate for 2 min at 42°C, then place immediately on ice.",
+    "Prepare the reverse-transcription master mix on ice. Mix and then keep on ice. The reverse-transcription master mix contains all components required for first-strand cDNA synthesis except template RNA. Per reaction make: - 1 µL Quantiscript Reverse Transcriptase - 4 µL Quantiscript RT Buffer, 5x - 1 µL RT Primer Mix",
+    "Add template RNA (14 µl) to each tube containing reverse-transcription master mix. Mix and then store on ice.",
+    "Incubate for 15 min at 42°C.",
+    "Incubate for 3 min at 95°C to inactivate Quantiscript Reverse Transcriptase",
+    "Place the reverse-transcription reactions on ice and proceed directly with real-time PCR. For long-term storage, store reverse-transcription reactions at –20°C.",
+    "Real-time PCR was performed using QuantiTect SYBR green PCR kit (Qiagen). PCR primers were purchased from Qiagen.",
+    "Thaw SYBR green and RNase-free water.",
+    "A 2 µL cDNA to well in 48-well PCR plate.",
+    "Per reaction add 10 µL SYBR Green, 7 µL RNAse free dH 2 O and 1 µL 20 mM forward and reverse primers. A mock mixture using 2 µL RNAse free dH 2 O instead of cDNA was used as a blank.",
+    "Primers were generated using Eurofins Genomics: %s %s Primer Forward Primer Reverse Primer GBA1 TGCTGCTCTCAACATCCTTGCC TAGGTGCGGATGGAGAAGTCAA SNCA GCCAAGGAGGGAGTTGTGGCTGC CTGTTGCCACACCATGCACCACTCC TH GCGGTTCATTGGGCGCAGG CAAACACCTTCACAG CHOP ACCAAGGGAGAACCAGGAAACG TCACCATTCGGTCAATCAGAGC GAPDH GAAGGTGAAGGTCGGAGT GAAGATGGTGATGGGATTTC",
+    "For the PCR reaction activation was at 95°C for 10 minutes. Following this was 40 cycles of denaturing at 94°C for 15 seconds; annealing at 58°C for 30 seconds and extension at 72°C for 30 seconds.",
+    "Fold-change in gene expression was calculated using the ΔC T method, based on biological reference samples and glyceraldehyde 3-phoshate dehydrogenase (GAPDH) mRNA levels for normalisation."
+  ],
+  "authors": [
+    "Laura Smith"
+  ],
+  "creator": "Laura Smith",
+  "published_on": 1653305193,
+  "created_on": 1651153583,
+  "keywords": []
+}

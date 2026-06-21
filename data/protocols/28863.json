@@ -1,0 +1,38 @@
+{
+  "id": 28863,
+  "title": "Mesangial Index Quantification",
+  "uri": "mesangial-index-quantification-8e7hthn",
+  "doi": "dx.doi.org/10.17504/protocols.io.8e7hthn",
+  "description": "{\"blocks\":[{\"key\":\"14kkj\",\"text\":\"Summary: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":[]},{\"key\":\"8p67n\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"cek4g\",\"text\":\"This protocol describes the procedures for quantifying the percent area of the glomerulus that is PAS stained and is expressed as the mesangial index.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"f9d5m\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7qnd4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"59q98\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"qrg7\",\"text\":\"Diabetic Complication:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":22}],\"entityRanges\":[],\"data\":[]},{\"key\":\"b4pp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8mfbe\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"4tc6a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"image\",\"mutability\":\"\",\"data\":{\"guid\":\"615C9C73341F11EE9D4302C0B41BC903\",\"height\":74,\"is_image\":true,\"is_video\":false,\"legend\":\"{\\\"blocks\\\":null,\\\"entityMap\\\":null}\",\"mime\":\"image/jpeg\",\"original_name\":\"n1.JPG\",\"placeholder\":\"\",\"source\":\"https://content.protocols.io/bihy4kcn.jpg\",\"width\":94}}}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"60pa3\",\"text\":\"Pre-Operating Instructions:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":27}],\"entityRanges\":[],\"data\":[]},{\"key\":\"7krkj\",\"text\":\"Camera and Microscope should be calibrated and values loaded into MetaMorph® program\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"brakf\",\"text\":\"Equipment: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":11}],\"entityRanges\":[],\"data\":[]},{\"key\":\"fo670\",\"text\":\"Universal Imaging MetaMorph® Imaging System, Molecular Devices \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"bkn0l\",\"text\":\"Scientific grade digital color CCD camera \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"58bos\",\"text\":\"Microscope and lens\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Using the camera or MetaMorph® software digitize 15 cortical glomeruli per case with a 40 X lens. Glomeruli should be chosen for a similar diameter of maximal size. Save images as uncompressed tiff files.",
+    "Open the glomerulus tiff file in MetaMorph®. Scale the image in such a way that the entire glomerulus can be seen on the screen (50-75%).",
+    "Using the polygon tool carefully outline the glomerular tuft. Double click to close the polygon tool.",
+    "From the tool bar choose Measure, Calibrate Distances and in the Apply window choose the calibration file for the camera from which the image was taken. Then choose Apply .",
+    "The area of the glomerular tuft can then be calculated by choosing Measure from the tool bar and then Region Measurements . Record the glomerulus area displayed.",
+    "To calculate the area that is PAS stained the tuft will have to be removed from the background. Select the outlined tuft and then from the tool bar choose Edit, Duplicate, Image. Close the full size image.",
+    "Size the edited image to150–200%.",
+    "From the tool bar select Measure and Set Color Threshold .",
+    "In the Set Color Threshold window select Set By Example .",
+    "Using Display on the tool bar and Adjust Digital Contrast the color brightness and contrast can be adjusted to best suit thresholding the area of PAS stain.",
+    "Once the image is adjusted use the cursor to choose the area of staining.Continue clicking the cursor over the area until the entire PAS stained area is highlighted. As each pixel is selected every pixel that color is also selected. Care must be taken to ensure that only PAS stained tissue is highlighted. ♦ NOTE: If an area is mistakenly selected selecting Undo Last Click in the Set Color Threshold box will remove the last selection.♦ To clear all selections check the box next to Reset color threshold range on next click in the Set Color Threshold box. The next pixel chosen in the image will clear the screen. Continue selecting pixels.♦ To toggle between the selected and unselected screen, select OFF and Inclusive in the Set Color Threshold box",
+    "Once all the PAS stained area is selected choose Measure and Integrated Morphometry Analysis .",
+    "In the Integrated Morphometry Analysis box under Set Up Parameters For : choose Measuring and then Total Area and then Classifying and Total Area .",
+    "Under Display choose Summary .",
+    "Under Show/Log Data choose Current .",
+    "Now choose Measure and the “area of PAS staining” will be the last cell in the Summary window under Total .",
+    "To close the Integrated Morphometry Analysis box choose Reset Current and then Close .",
+    "The percent of the glomerulus that is PAS stained is calculated as:"
+  ],
+  "authors": [
+    "Frank Brosius"
+  ],
+  "creator": "Lili Liang",
+  "published_on": 1571406310,
+  "created_on": 1571406239,
+  "keywords": []
+}

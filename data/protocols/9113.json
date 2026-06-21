@@ -1,0 +1,27 @@
+{
+  "id": 9113,
+  "title": "Top2 inhibitor sensitivity",
+  "uri": "top2-inhibitor-sensitivity-k5zcy76",
+  "doi": "dx.doi.org/10.17504/protocols.io.k5zcy76",
+  "description": "{\"blocks\":[{\"key\":\"2af2l\",\"text\":\"Protocol for Top2i sensitivity in attached cells in 96-well format. Short term exposure to Top2i (~3 days)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"3l13n\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"9hb9j\",\"text\":\"Using a Tripz doxyrubicin inducible shRNA system that is already in transduced cells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"3sgr3\",\"text\":\"TRPz lenti-vrius is BSL2\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"JXyHn\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"DQBJX\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"iFxpo\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"k0KxS\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":17585,\"guid\":\"41175729341F11EE9D4302C0B41BC903\",\"name\":\"50 mg Doxorubicin HCl\",\"mol_weight\":0,\"sku\":\"orb340472\",\"url\":\"https://www.biorbyt.com/doxorubicin-hcl-orb340472\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":208,\"name\":\"biorbyt\",\"link\":\"https://www.biorbyt.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":18798,\"guid\":\"41192020341F11EE9D4302C0B41BC903\",\"name\":\"500 mg Etoposide\",\"mol_weight\":0,\"sku\":\"orb322762\",\"url\":\"https://www.biorbyt.com/etoposide-21\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":208,\"name\":\"biorbyt\",\"link\":\"https://www.biorbyt.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":117661,\"guid\":\"41948773341F11EE9D4302C0B41BC903\",\"name\":\"Doxycycline Hyclate\",\"mol_weight\":0,\"sku\":\"D-500\",\"url\":\"https://www.goldbio.com/product/3162/doxycycline-hyclate\\r\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":237,\"name\":\"Gold Biotechnology\",\"link\":\"https://www.goldbio.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Plate (2) 6cm dishes at 25% confluency (approx. 500K cells). Let attach overnight",
+    "Add 1000x Doxycyclin to 1 plate of cells with fresh media and induce for 72 hours changing media with fresh doxycyclin daily. Also change media to corresponding non-induced plate 72:00:00",
+    "Split cells at density appropriate for cell type. (eg. 5000k cells/well) in total of 150ul of media per well. Make master mixes of cells/well in 50ml conicals and distribute using multi-channel pipette. Add doxyxyclin to induced samples at 500x Let cells attach overnight 14:00:00",
+    "Dilute Top2i in media 96-well round bottom plate for transfer to plates with cells Dilution in media without Doxycycline so that both cell samples can get Top2i from the same dilutions In our case 2ul of stock concentration of drug (see making stock plate) in 250ul of media (1:125) --&gt; (1:500 when 50uls is added to 150ul already in well. Doxycycline concentration will be diluted in induced samples but was starting with a higher concentration). One row is enough for 1/2 plate. Make multiple rows of dilutions for more plates.",
+    "48:00:00 Incubate cells with Top2i for 2 days",
+    "Dilute cell titer blue 1:2 in PBS Add 20ul of cell titer blue to wells and let sit overnight 14:00:00",
+    "Transfer suppernatant to 384-well black plates for reading Excite at 544nm and emission of 590nm"
+  ],
+  "authors": [
+    "Jacob G Kirkland"
+  ],
+  "creator": "Jacob G Kirkland",
+  "published_on": 1567639203,
+  "created_on": 1512524868,
+  "keywords": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": 4756,
+  "title": "SQK-MAP005 protocol for library preparation for Nanopore sequencing",
+  "uri": "sqk-map005-protocol-for-library-preparation-for-na-gvubw6w",
+  "doi": "dx.doi.org/10.17504/protocols.io.gvubw6w",
+  "description": "{\"blocks\":[{\"key\":\"9i3c0\",\"text\":\"This protocol describes the library preparation for Nanopore sequencing according to the SQK-MAP005 protocol. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"cg0gj\",\"text\":\"It accompanies the GigaScience publication:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":19,\"length\":11}],\"entityRanges\":[],\"data\":[]},{\"key\":\"4je7p\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"166kj\",\"text\":\"Benjamin Istace, et al. (2017) De novo assembly and population genomic survey of natural yeast isolates with the Oxford Nanopore MinION sequencer. GigaScience...\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":147,\"length\":14}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"7f5ed\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"dbqng\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"cphkg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Fragment DNA (2µg for a 8Kb or 6 to 10µg for a 20Kb size) by using Covaris gTube",
+    "Perform PreCR treatment (NEB PreCR® Repair Mix) of fragmented DNA",
+    "The DNA repair reaction was cleaned up with Agencourt AMPure XP beads (1x)",
+    "DNA fragments were End-repaired by using NEBNext® End Repair Module",
+    "The end-repair reaction was cleaned up with Agencourt AMPure XP beads (1x)",
+    "DNA fragments were dA-tailed by using the NEBNext® dA-Tailing Module",
+    "The dA-tail reaction was cleaned up with AMPure beads (1x)",
+    "Nanopore adaptors were ligated to the dA-tailed DNA fragment by using NEB Blunt/TA Ligase Master Mix",
+    "The ligation reaction was cleaned up with His-Tag Dynabeads (1x)"
+  ],
+  "authors": [
+    "Benjamin Istace",
+    " Anne Friedrich",
+    " Léo dAgata",
+    " Sébastien Faye",
+    " Emilie Payen",
+    " Odette Beluche",
+    " Claudia Caradec",
+    " Sabrina Davidas",
+    " Corinne Cruaud",
+    " Gianni Liti",
+    " Arnaud Lemainque",
+    " Stefan Engelen",
+    " Patrick Wincker",
+    " Joseph Schacherer",
+    " Jean-Marc Aury"
+  ],
+  "creator": "Gigascience Database",
+  "published_on": 1483670864,
+  "created_on": 1483084214,
+  "keywords": []
+}

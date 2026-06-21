@@ -1,0 +1,32 @@
+{
+  "id": 96434,
+  "title": "Exp_01 Taza",
+  "uri": "exp-01-taza-daes2bee",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvr31povmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"6a8eq\",\"text\":\"Este experimento consiste en la medición de la temperatura de 250 mL de agua contenida en una taza, desde que el agua se encuentra a una temperatura de 84ºC, hasta llegar a una temperatura ambiente de 22ºC como efecto de la Ley 0 de la Termodinámica. Esto se llevó a cabo a través de sensores de temperatura conectados a un circuito de Arduino, y mediante CoolTerm, fueron capturadas las mediciones de temperatura con respecto al tiempo, cada 6 segundos, para después regristarlas en Excel y Matlab, en donde se graficaron y se obtuvo que el cambio de temperatura sigue un modelo de función exponencial.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"8v1al\",\"text\":\"Para su realización, se debe mantener una temperatura ambiente constante en todo momento. Además, asegurarse de las conexiones de los sensores y su correcto funcionamiento previo a la experimentación.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"dk7qj\",\"text\":\"En la experimentación, tener precaución al verter el agua hirviendo por riesgo a quemaduras.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"7i927\",\"text\":\"Taza de 250 ml (azul marino)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"chjat\",\"text\":\"Agua hirviendo\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4bciq\",\"text\":\"Arduino Uno\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"as4ba\",\"text\":\"Protoboard\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"39k36\",\"text\":\"2 sensores de temperatura DS18B20 \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"99akg\",\"text\":\"Laptop\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"j0dt\",\"text\":\"Cable USB 2.0\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e1c0e\",\"text\":\"6 Jumpers macho-macho\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7qpt6\",\"text\":\"4 Jumpers hembra-hembra\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b8k06\",\"text\":\"2 resistencias de 4600 Ohms\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6l8mp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Armar el siguiente circuito: Circuito Arduino",
+    "Conectar el cable USB 2.0 a la placa de Arduino y a la laptop.",
+    "Hervir agua y con esta vaciar por completo una tasa de 250 mL",
+    "Las mediciones registradas en el archivo .txt obtenidas mediante CoolTerm se pasarán a un archivo Excel, para crear con ellas una tabla, y posteriormente depurarlas.",
+    "En el software de Arduino seleccionar la placa y puertos correspondientes.",
+    "Colocar un sensor de temperatura dentro de la taza, y el otro sensor por fuera de esta, en su asa.",
+    "Configurar CoolTerms para registrar la lectura de datos en un archivo .txt.",
+    "La duración del experimento será hasta que la temperatura del agua alcance el equilibrio térmico con la temperatura ambiente de 22 °C .",
+    "Subir / cargar los programas en Arduino.",
+    "Subir el excel de las mediciones a Matlab, y con ellas generar una gráfica del cambio de temperatura con respecto al tiempo."
+  ],
+  "authors": [
+    "Mayleth Medina Cárdenas",
+    "Estefanía auceda Camacho",
+    "Sofía orga Benítez"
+  ],
+  "creator": "Mayleth Medina Cárdenas",
+  "published_on": 1710150204,
+  "created_on": 1710031257,
+  "keywords": []
+}

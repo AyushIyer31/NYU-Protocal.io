@@ -1,0 +1,30 @@
+{
+  "id": 313337,
+  "title": "Micro-CT scanning for post-implant localization of multi-fiber arrays in mouse striatum",
+  "uri": "micro-ct-scanning-for-post-implant-localization-of-jv8zcn9x7",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgq6955lk5/v2",
+  "description": "{\"blocks\":[{\"key\":\"4pnac\",\"text\":\"We have developed a new micro-fiber array approach capable of chronically measuring and optogenetically manipulating local dynamics across over 100 targeted locations simultaneously in head-fixed and freely moving mice, enabling investigation of cell-type and neurotransmitter-specific signals over arbitrary 3-D volumes . This protocol includes the micro-CT scanning and fiber localization steps. \",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7i036\",\"text\":\"\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dg6il\",\"text\":\"Please contact us (mwhowe@bu.edu) if you are interested in using this technique. \",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"9gbhu\",\"text\":\"Multi-fiber arrays were fabricated and calibrated following the Protocol: Fabrication and calibration of multi-fiber arrays to monitor dopamine release in the mouse striatum. \",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":64,\"length\":109}],\"entityRanges\":[{\"key\":0,\"offset\":64,\"length\":109}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"D874DE88E82F4EDC819576E0275331E7\",\"url\":\"http://10.17504/protocols.io.3byl4z272vo5/v1\"}}}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"2naev\",\"text\":\"SOLUTIONS:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fvlo6\",\"text\":\"Preparing Lugol solution\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":24}],\"entityRanges\":[],\"data\":{}},{\"key\":\"e399m\",\"text\":\"dilute 10mL 100% Lugol’s Solution (Carolina, 10% potassium iodide, 5% iodine) with 30mL deionized water\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d0c16\",\"text\":\"Note: This dilution was chosen to be approximately isotonic to biological tissues.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":82}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Inject mice intraperitoneally with 400-500 mg/kg Euthasol (Covetrus Euthanasia III).",
+    "After perfusion and decapitation, the lower jaw and front of the skull were removed in order to allow diffusion of solution into the brain while still keeping the implant intact.",
+    "Soak brain in 4% paraformaldehyde solution for 24h, rinse three times with 1% PBS, and then transfer to a diluted Lugol’s solution ( see Materials ) to provide tissue contrast for computerized tomography (CT) scanning ( Metscher, B., 2009 ). Initially, samples were soaked in this diluted Lugol’s solution in a foil-wrapped 50mL conical centrifuge tube on an orbital shaker plate for 10-14 days. We have more recently found that using 4 oz specimen cups instead of the 50mL conical centrifuge tubes enables better diffusion of the Lugol’s solution, and adequate contrast can be achieved in three to four days.",
+    "After soaking, rinse skulls three times with 1% PBS, and secure them in a modified centrifuge tube.",
+    "Image the implanted skulls in a micro-CT scanner (Zeiss Xradia Versa 520, a core instrument of the Boston University Micro-CT and X-ray Microscopy Imaging Facility) with the following parameters: 140kV 10W HE1 filter 0.4X objective 2s exposure time 1001 projections 12-micron voxel size",
+    "Register the micro-CT to the Allen Mouse Brain Common Coordinate Framework 3D 10-micron reference atlas ( Wang et al., 2020 ) to bring individual mice into a common coordinate system.",
+    "Perfused transcardially with 20mL 1% phosphate buffered saline (PBS, Fisher), followed by 20mL 4% paraformaldehyde in 1% PBS.",
+    "Identify and map fibers from the recording tip up to the grid. This process was carried out using FIJI ( https://imagej.net/software/fiji/ ) and MATLAB (Mathworks, version 2020b) using a combination of existing MATLAB functions and custom-written functions and GUIs publicly available in the Multifiber Localization repository on GitHub."
+  ],
+  "authors": [
+    "Mai-Anh Vu",
+    "Safa Bouabid",
+    "Mark Howe"
+  ],
+  "creator": "Cláudia C. Mendes",
+  "published_on": 1773664275,
+  "created_on": 1773664035,
+  "keywords": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": 68337,
+  "title": "Washing Protocol for Intact Proteoform MALDI on Human Kidney",
+  "uri": "washing-protocol-for-intact-proteoform-maldi-on-hu-ceyrtfv6",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gpb7qdlzp/v1",
+  "description": "{\"blocks\":[{\"key\":\"66dli\",\"text\":\"Scope:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5hg96\",\"text\":\"A detailed protocol entailing the sample washing protocols developed for human kidney, this includes several timed washing steps for fixing the tissue, removing small molecule interferents, and desalting the tissue surface optimized for use with a Spectroglyph EP-MALDI-2 source mounted on a custom Thermo Scientific UHMR Q Exactive HF Orbitrap.\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1si4d\",\"text\":\"Expected Outcomes:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"58d5p\",\"text\":\"Human kidney slides ready for pre-extraction and/or matrix application.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"fu2kc\",\"text\":\"Prepare   of all necessary solvents for the tissue washing steps and clean Coplin jars prior to use.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":8,\"length\":1}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"amount\",\"mutability\":\"MUTABLE\",\"data\":{\"amount\":\"100\",\"error\":false,\"guid\":\"F2AC0FA416C311ED82440A58A9FEAC02\",\"id\":0,\"label\":\"\",\"scientificNotation\":false,\"unit\":2}}}}",
+  "warning": "{\"blocks\":[{\"key\":\"8nkrv\",\"text\":\"All steps of this protocol working with solvents should be performed within a fume hood as to minimize exposure to fumes from volatile organic solvents.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"eohan\",\"text\":\"Chemicals:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"filcd\",\"text\":\"Ethanol (200 Proof)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c7kg8\",\"text\":\"Nanopure water (LC-MS Grade)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dmq67\",\"text\":\"Chloroform (LC-MS Grade)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2vav0\",\"text\":\"Acetic acid (Glacial, LC-MS Grade)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bv6o6\",\"text\":\"Trifluoroacetic acid (LC-MS Grade)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2icm0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"744vp\",\"text\":\"Equipment:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5li5s\",\"text\":\"Regulated nitrogen gas supply with nozzle\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c17fc\",\"text\":\"Coplin jars\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "While the tissue is within the vacuum desiccator, pour all necessary solvents and solutions into the Coplin jar. These have a volume of approximately 75 mL and to reduce the variability in extraction fill the jars consistently.",
+    "Submerge the tissue section within a Coplin jar filled with a solution of 70% ethanol for 00:00:30",
+    "Prior to submerging the tissue section in solvent and solutions, ensure that the timers are set beforehand. While three timers are not necessary, it vastly improves the process.",
+    "Immediately move the tissue section with tweezers to then next coplin jar containing 100% ethanol for 00:00:30",
+    "After completion of the tissue fixation steps, immediately move the tissue section with tweezers to then next Coplin jar containing Carnoy&#39;s solution for 00:02:00",
+    "Following exposure to Carnoy&#39;s solution, submerge the slide with 100% ethanol for 00:00:30",
+    "After completion of the lipid depletion washes, submerge the tissue sections within nanopure water with 0.2% trifluoroacetic (TFA) acid for 00:00:15",
+    "After exposure to water, submerge the slide within 100% ethanol for 00:00:30",
+    "After the completion of all steps, dry the tissue for 00:00:30 under a diffuse stream of nitrogen, take care to ensure that liquid does not pool within the surface. The tissue section is now prepared for the next steps within the tissue preparation protocol.",
+    "Carnoy&#39;s solution is a 6:3:1 volumetric solution of ethanol: chloroform: glacial acetic acid, while other solutions could be put within plastic staining jars a glass Coplin jar is highly recommended for this and other polar aprotic solvents.",
+    "Note: dipping, agitation, and any movement of the slide within the Coplin jar will dramatically change outcomes of all washes. Tissue is prone to detach from the surface within this step.",
+    "Note: dipping, agitation, and any movement of the slide within the Coplin jar will dramatically change outcomes of all washes. Tissue is prone to detach from the surface within this step.",
+    "Ensure this is a new solution of 100% ethanol not used within previous steps.",
+    "If any metadata is present on the slide written in permanent marker remove it at this time. Take a photo and note within a notebook prior to removal, this is necessary as this will contaminate the Coplin jars within all washes.",
+    "Discard all solvents and solutions properly, and best practice is to use fresh solvents and solutions for subsequent washes."
+  ],
+  "authors": [
+    "Kevin J Zemaitis",
+    "Dusan Velickovic",
+    "Ljiljana.PasaTolic"
+  ],
+  "creator": "Kevin J Zemaitis",
+  "published_on": 1659992840,
+  "created_on": 1659922501,
+  "keywords": []
+}

@@ -1,0 +1,38 @@
+{
+  "id": 80186,
+  "title": "IMS Data Processing",
+  "uri": "ims-data-processing-csi2wcge",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvwjyj9lmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"7ra6g\",\"text\":\"This protocol describes spectral alignment and mass calibration of IMS data beginning with Bruker (.d) raw files. Mass calibration is performed based on several well-characterized lipids. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Extract the content of the Bruker (.d) raw file in pseudo-profile mode and at native spectral resolution into memory or into a format you can calculate within your compute environment of choice. If multiple regions of interest were acquired in the same experiment/file, split these into separate datasets to simplify subsequent analysis.",
+    "Perform spectral alignment (alignment along the m/z axis) on each mass spectrum to bring it in line with the m/z axes of the other spectra in the dataset. During the data acquisition, minor changes to the instrument conditions might affect the alignment of peaks in the mass spectra, resulting in small mass or m/z deviations that need to be corrected.",
+    "Spectral alignment is carried out using the Python msalign package ( https://github.com/lukasz-migas/msalign ).",
+    "Alignment aims to correct systematic shifts along the spectral domain, hence, we automatically select between 6 and 10 peaks from the mass spectrum and perform a linear alignment.",
+    "The automatically selected peaks should be present in the majority of the spectra since they act as anchors from which msalign estimates correction factors. Alternatively, it&#39;s possible to specify theoretical masses, in which case msalign would perform alignment and calibration in one step. The advantage of not specifying theoretical masses is that it is possible that the calibrant species are not present in a large number of pixels, which means that the alignment process would be negatively affected. When dealing with profile mass spectra, mass calibration amounts to relabelling of a single vector of m/z values.",
+    "Create an average mass spectrum of all pixels in the dataset and use it as a basis for mass calibration. Several well-characterized lipids can be used for calibration purposes: Positive mode: m/z 703.575, 732.553, 734.569, 758.569, 760.585, and 782.567 Negative mode: m/z 687.545, 714.508, 722.513, 744.555, 766.539, and 885.549",
+    "Perform mass calibration by fitting multiple linear regression models and using RANdom SAmple Consensus (RANSAC) to randomly resample the list of mass calibrants for each model. Select the calibration model that results in the smallest average ppm error across all calibrant species.",
+    "Calculate total ion current (TIC) normalization factors for each pixel (post-alignment and post-calibration if performed).",
+    "Perform m/z feature selection and annotation. See protocol below: Untargeted IMS Tentative Identification Lipidomics by Angela R.S. Kruse",
+    "For each selected and annotated feature, extract its peak intensity from the mass-aligned, mass-calibrated dataset. Rather than using only the central m/z bin for each peak as the basis for its ion image, ion intensity values are summed/integrated across a narrow 3-5 ppm window centered around the peak apex. This summing process is repeated for each pixel in an ion image.",
+    "Each ion image is ion intensity normalized using the TIC normalization factors calculated previously.",
+    "Export the dataset to an imzML file format using the Python pyimzml library ( https://github.com/lukasz-migas/pyimzML )."
+  ],
+  "authors": [
+    "Lukasz Migas",
+    "Angela R.S. Kruse",
+    "Jamie Allen",
+    "Ellie Pringy",
+    "Melissa Farrow",
+    "Jeff Spraggins",
+    "Raf Van De Plas"
+  ],
+  "creator": "Angela R.S. Kruse",
+  "published_on": 1681241805,
+  "created_on": 1680902028,
+  "keywords": []
+}

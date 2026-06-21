@@ -1,0 +1,25 @@
+{
+  "id": 60018,
+  "title": "SAPAP3 Genotyping Protocol",
+  "uri": "sapap3-genotyping-protocol-b6usrewe",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgq7d7kvk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"9v1b2\",\"text\":\"Protocol for SAPAP3 KO Mouse Model Genotyping from Dr. Lisa Gunaydin's Lab, University of California, San Francisco\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Cut the tails. To cut the tails and mark the animals, keep in mind to: ● cut as little amount of the tail as possible; ● always clean the scissors properly in between animals (EtOH and bleach); ● tattoo the animals at the same time as cutting the tails; ● use iso if needed.",
+    "Digest the tails. Incubate the tails O/N at 55 C (water bath) in 200 ul 1x PBND buffer with Proteinase K at 0.25 mg/ml. Vortex before. 200ul * (54+1) = 11000ul --&gt; 11ml PBND 0.25mg/ml * 11ml = 2.75mg --&gt; 0.00275g Proteinase K PBND (250 ml 1x, stored at 4 C) 2.5 ml 1M TrisHCl pH 8.3 1.125 ml IGEPAL 1.125 ml Tween 20 0.935 g KCl 0.125 g MgCl2.6H20 0.025 g Gelatin Fill remainder with H2O *Gelatin will dissolve only after heated",
+    "Inactivate Proteinase K. After taking the tails out of the bath, see if they are digested. If so, vortex and boil them for 10 min. Vortex again and centrifuge at max speed for 5 min (table top centrifuge, something like 14,000 rpm).",
+    "Run the 1% agarose gel 200 ml TAE 2g agarose 2ul sybr safe gel stain 24ul DNA per well. 5ul DNA ladder before each new line",
+    "PCR reaction. We use the KAPABiosystems HotStart ReadyMix (2x) which contains DNA Polymerase, rxn buffer, dNTPs and MgCl2. Pipette 24 ul of Master Mix into each PCR tube Add 1 ul of DNA from each sample into each tube Sap3 KO F1, Forward primer, 5&#39; - 3&#39;: ATTGGTAGGCAATACCAACAGG Sap3 KO R1, Reverse Primer 5&#39; - 3&#39;: GCAAAGGCTCTTCATATTGTTGG Extra Primer, TKF2: CTTTGTGGTTCTAAGTACTGTGG %s %s 1 rxnMM SAPAP (34 rxns)Primer nameTotal RxnsForward primer134Sap3 KO F134Reverse primer134Sap3 KO R1Extra primer134TKF2Rxn mix12.5425H208.5289DNA 1.0 PCR programSap3 PCR Program for SAPAP3 Genotyping: 1. 95C for 4 minutes 2. 30 times: 94C for 30 seconds 62C for 30 seconds 72C for 60 seconds 3. 72C for 5 minutes 4. 4C hold Expected band lengths: WT: one band at ~147 bp Het: one band at ~147 bp and one band at ~222 bp KO: one band at ~222 bp"
+  ],
+  "authors": [
+    "kajsbr"
+  ],
+  "creator": "kajsbr",
+  "published_on": 1649104576,
+  "created_on": 1648509484,
+  "keywords": []
+}

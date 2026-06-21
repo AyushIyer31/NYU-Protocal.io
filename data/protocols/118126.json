@@ -1,0 +1,25 @@
+{
+  "id": 118126,
+  "title": "Spatial Layout Characteristics of Northern Wei Luoyang: A Spatial Humanities Analysis of the “Record of the Monasteries of Luoyang”",
+  "uri": "spatial-layout-characteristics-of-northern-wei-luo-dxkn7kve",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzk1n4vx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"9i7p5\",\"text\":\"This paper explores the urban spatial structure and social stratification of Northern Wei Dynasty Luoyang City, based on Record of the Monasteries of Luoyang. Adopting a spatial humanities approach, the study integrates quantitative approaches, including the application of geographic information systems (GIS) for spatial analysis and complex network analysis. The findings indicate that the spatial organization of Northern Wei Luoyang was primarily concentrated within and around the inner city. People of different social classes and statuses occupied distinct spaces, forming socially stratified groups. As one moves outward from the city's center, the social rank of these groups decreases. The city's layout is characterized by a single central axis, with multiple spatial divisions, and the west side being associated with higher-status groups. This spatial arrangement was shaped by factors such as geography, urban development, Central Plains rituals, traditional customs, and ethnic diversity. This study enhances our understanding of the spatial layout characteristics of Northern Wei Luoyang. It provides innovative insights and methods for understanding the city’s structure and its implications for other underground historical cities. Furthermore, it provides valuable data and visualizations that could support future preservation and planning efforts for the city.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"f9257\",\"text\":\"Step-by-Step Instructions can be seen at Steps\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"6nulu\",\"text\":\"No Warnings\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"9mm80\",\"text\":\"The digitized Chinese text can be found at:中国哲学书电子化计划（CText）\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":43,\"length\":17}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"95D4A94FD03C11EFA3430A58A9FEAC02\",\"url\":\"https://ctext.org/wiki.pl?if=en\\u0026res=751279\\u0026remap=gb\"}}}}",
+  "steps": [
+    "1.1 The digitized Chinese text can be found at: Chinese Text Project(中国哲学书电子化计划) 1.2Using the Record of the Monasteriesof Luoyang annotation &#34; as the Main Material 1.3Using Record of the Monasteriesof Luoyang by Yi-t’ung Wang for the English translationof terms from the original text.",
+    "3.1 Spatialize functional spatial data and import into GIS to form shp files S4_File. Functional space Data-Shp.zip 3.2Kernel Density Analysis, Mean Centers, Standard Deviation Ellipses, etc. are performed, and the input parameters are described in detail at S5_File. Functional Space Input Parameter-GIS.xlsx 3.3Formation of spatial analysis results and interpretation of the results",
+    "2.1 Labeling using the MARKUS website to facilitate subsequent data processing MARKUS Marked MARKUS files need to be opened using the MARKUS website S2_File. Annotated “Record of the Monasteries of Luoyang”.html 2.2Screening of key text tables with information on functional and event spaces and their location S3_File. Tables of Data source.zip 2.3Utilizing the information of Li Fang recorded in the book, combining with archaeological excavation and other data to recover the base map of Northern Wei Luoyang City",
+    "4.1Using the locations where the starting and ending points of the events in the Luoyang Gazetteer are located as nodes, and the movement of the characters between locations as edges, the network information is filtered 4.2Importing information into Gephi to perform calculations S7_File. Complex Network Files-Gephi.zip 4.3Match the calculated information with the spatial information in a table and import it into GIS S8_File. Complex Network Tables with Position Information-Gephi to GIS.zip 4.4Make complex network diagrams with spatial information in GIS and interpret the results"
+  ],
+  "authors": [
+    "Runfeng Sun",
+    "Wenjia Liu"
+  ],
+  "creator": "Wenjia Liu",
+  "published_on": 1737363657,
+  "created_on": 1736613262,
+  "keywords": []
+}

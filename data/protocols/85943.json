@@ -1,0 +1,32 @@
+{
+  "id": 85943,
+  "title": "Protocol for single cell and single nucleus prep for Cell Pellets/Multiple Myeloma (snRNA & snATAC)",
+  "uri": "protocol-for-single-cell-and-single-nucleus-prep-f-cx6xxrfn",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l227oxl1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"1t3jb\",\"text\":\"Protocol for single cell and single nucleus prep for Cell Pellets/Multiple Myeloma (snRNA \\u0026 snATAC)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "All lysis buffers shouldbe prepared fresh and stored at 4oC. Buffers based on Nuclei Isolation from Mouse Brain Tissue forSingle Cell ATAC Sequencing Protocol from 10X Relevant 10X Protocols: Nuclei Isolation for Single Cell ATACSequencing Nuclei Isolation from Mouse Brain Tissue forSingle Cell ATAC Sequencing Protocol Chromium Single Cell ATAC Reagent Kits UserGuide (v1 Chemistry) Chromium Single Cell 3&#39; Reagent Kits UserGuide (v3.1 Chemistry)",
+    "•Eppendorf DNA LoBind Tubes, 2.0 mL (022431048) •Tips RT-LTS-A-1000µL-/L/S/W-768/8 (30389221) •Flowmi® Cell Strainers, 40 μm, for 1000 uL Pipette Tips (BAH136800040) •Sorvall™ ST 8 Small Benchtop Centrifuge (75007204 - refrigerated) •Thermo Scientific™ Adapters for TX-150 Swinging Bucket Rotors (75-005-743)",
+    "•UltraPure™ 1 M Tris-HCI Buffer, pH 7.5 (Invitrogen, 15567027) •NaCl (5 M), RNase-free (Invitrogen, AM9759) •MgCl2 (1 M) (Invitrogen, AM9530G) •Nonidet P40 Substitute (Sigma, 74385-1L) •MACS BSA Stock Solution (Miltenyi Biotec, 130-091-376) •Phosphate Buffered Saline (1X) (Corning, 21-040-CM) •SUPERase• In™ RNase Inhibitor (20 U/μL) (Invitrogen, AM2696)",
+    "Stock Lysis buffer: Lysis Buffer %s %s Reagent Stock Final 2 mL Tris-HCl (pH 7.4) 1M 10 mM 20 mL NaCl 5M 10 mM 4 mL MgCl2 1M 3 mM 6 mL Nonidet P40 Substitute 10% 0.1% 3 mL Molecular Grade Water - 1.974 mL",
+    "•Keep everything on ice. •Use wide-bore pipette tips for all steps when possible. •Use RNase free reagents and consumables (Use filtered tips). •For centrifugation steps, use swinging rotor bucket at 4°C.",
+    "Lysis Dilution Buffer %s %s Reagent Stock Final 10 mL Tris-HCl (pH 7.4) 1M 10 mM 100 mL NaCl 5M 10 mM 20 mL MgCl2 1M 3 mM 30 mL Molecular Grade Water - 9.85 mL",
+    "0.1X Lysis Buffer %s %s Reagent Stock Final 10 mL 1X Lysis Buffer 1X 0.1X 1 mL Lysis Dilution Buffer 1X 0.9X 9 mL",
+    "Wash buffer: 1X PBS + 2% BSA + 0.2U/ul RNase inhibitor %s %s Reagent Stock Final 10 mL BSA 10% 2% 2 mL PBS 1X 1X 8 mL RNAse Inhibitor 20 U/mL 0.2U/ul 1 mL",
+    "sn-ATAC-Seq submissionbuffer: 1X Nuclei Dilution Buffer. We store aliquots of 20XNuclei Dilution Buffer at -20 o C in aliquots of no more than 25ul/eachtube to minimize freeze/thaw. We make just enough fresh 1X Nuclei DilutionBuffer each time we use it. Add 425 uL Nuclease Free Water.",
+    "Trypan blue (2X) - filtered at 0.22 mm.",
+    "1.Add 5 mL running buffer to tube 2.Thaw aliquot in 37⁰C water bath 3.Spray with 70% EtOH and wipe down 4.Add 1 mL thaw media to each aliquot and transfer to running buffer tube 5.Remove supernatant 6.Re-suspend each in 100 uL of beads and incubate at room temperature for 15 mins 7.Dilute 0.25 mL of 20x binding buffer with 4.75 mL of distilled water 8.Add 500 uL of 1x binding buffer to each tube 9.Run each through the DepleteS selection on the Automacs 10.Toss the positive fractions 11.Pull off 10 uL each from negative fractions to count 12.Proceed downstream with negative fractions, cells still suspended in buffer",
+    "1.Spin down at 400 g for 5 min. Remove supernatant. 2.Resuspend in 1000uL Wash Buffer. 3.Spin down cells at 400 g for 5 min. Remove supernatant. 4.Re-suspend in 200-1000 uL Wash buffer depending on size of the cell pellet with RNase Inhibitor. Count cells at this point – take 10uL of trypan blue and 10uL of sample and determine starting concentration of sample. If there is more than 1500 cells/uL then add more wash buffer and recount. 5.Aliquot cell suspension to load approximately 10,000 cells/ul (refer to 10X 3’ NEXT GEM protocol, Figure 2). Set aside another 50-100 uL of cell suspension for back up. Centrifuge remaining sample at 400g for 8’ at 4°C. 6.While remaining cell suspension is being spun down, load 10X CHIP G (single-cell). After loading chip you have 17 minutes to process remaining sample for sn-ATAC. 7.After spin is finished, re-suspend cells in 500 L of cold lysis buffer. Pipette gently for 25 times (until pellet is fully resuspended). Incubate on ice for 2 min. 8.Add 400 uL Wash Buffer to same tube. 9.Transfer the clear lysis-wash buffer suspension using the 40um flowmi cell strainer into a 2.0 mL tube. Centrifuge sample at 400g for 5’ at 4°C. 10.Once the sample is finished spinning, remove as much supernatant as possible. The pellet should be at the very bottom of tube if using ST8 Centrifuge. Add 7-10uL 1X Nucleus Dilution Buffer (sn-ATAC-Seq submission buffer). Gently resuspend until nuclei are completely re-suspended. Count nuclei at this point – Add 8 uL 1X Nucleus Dilution Buffer to 2 uL of sample and 10 uL of trypan blue. If concentration of nuclei is greater than 3,000 nuclei/uL then proceed with ATAC prep. 11.Continue both 10X protocols accordingly. a.Chromium Single Cell ATAC Reagent Kits User Guide (v1 Chemistry) b.Chromium Single Cell 3&#39; Reagent Kits User Guide (v3.1 Chemistry)"
+  ],
+  "authors": [
+    "Reyka Jayasinghe"
+  ],
+  "creator": "Reyka Jayasinghe",
+  "published_on": 1691087303,
+  "created_on": 1691086301,
+  "keywords": []
+}

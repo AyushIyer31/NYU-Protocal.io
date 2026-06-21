@@ -1,0 +1,37 @@
+{
+  "id": 121628,
+  "title": "RNAseq: mRNA to Illumina library",
+  "uri": "rnaseq-mrna-to-illumina-library-d2z48f8w",
+  "doi": "dx.doi.org/10.1038/protex.2015.013",
+  "description": "{\"blocks\":[{\"key\":\"y1m3u\",\"text\":\"This protocol details the RNAseq sample preparation starting with mRNA and ending with quality control of finished libraries. This protocol was used specifically for virus mRNA samples related to ORFeome lab group.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"2yxrh\",\"text\":\"This protocol details the RNAseq sample preparation starting with mRNA. This is a modification of the TruSeq Stranded mRNA Sample Preparation since the published protocol usually starts with Total RNA instead of mRNA. Protocol also includes assays used for quality control of samples.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"z8qca\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"qnvg9\",\"text\":\"Agilent RNA 6000 Nano Kit (5067-1511)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ggaf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"q3tly\",\"text\":\"Agilent High Sensitivity DNA Kit (5067-4626)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"makux\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vxgfl\",\"text\":\"Illumina Tru Seq Stranded mRNA Kit Set A (RS-122-2101)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"uu6ft\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"pqity\",\"text\":\"Quant-iT™ PicoGreen® dsDNA Assay Kit (P7589)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d9wmq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jsq7g\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"tq9en\",\"text\":\"2100 Electrophoresis Bioanalyzer Instrument (G2939AA)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6dqn0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"s7tfy\",\"text\":\"Fluorescence plate reader\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Assess mRNA using Agilent RNA 6000 Nano kit, assay mRNA Nano (Supplementary 1).",
+    "Best if each mRNA sample run in duplicate so an average mRNA concentration can be used.",
+    "Following procedure requires 10-400ng of mRNA for each sample.",
+    "Proceed with Illumina TruSeq Stranded mRNA Sample Preparation Guide, Low Sample (LS) Protocol (15031047 Revision E).",
+    "Since starting with mRNA, start at page 20 step #12 by adding mix to desired amount of mRNA.",
+    "Illumina recommends having mRNA concentrated into 5 µL or less to start; however, we have had success with using up to 42 µL, equal to 400ng of mRNA.",
+    "Proceed with incubation.",
+    "Since starting with mRNA, without beads, skip page 22 step #2. At step #3 only transfer 17 µL of mRNA/mix and continue protocol as Illumina has written.",
+    "Validate library after complete.",
+    "Assess quantity of dsDNA library using Quant-iT™ PicoGreen® dsDNA Assay Kit (Supplementary 2). Minimum quantity will depend on laboratory/core the library will be submitted to.",
+    "Assess size of library using Agilent High Sensitivity DNA Kit (Supplementary 3). Refer to the Quick Guide. The final product should be approximately 260bp.",
+    "Please refer troubleshooting to applicable commercial company technical support.",
+    "Agilent RNA 6000 Nano-1.5hrs TruSeq Stranded mRNA Prep-9hrs Agilent HS DNA-1.5hrs Picogreen-0.5hrs",
+    "A valid Illumina Library to send for sequencing.",
+    "None",
+    "Supplement_0.Pdf Supplementary 1 Agilent RNA 6000 Nano Quick Guide Agilent RNA 6000 Nano Kit Quick Start Guide-Rev.C. (2013) Available at: http://www.chem.agilent.com/library/usermanuals/Public/G2938-90037 RNA6000Nano QSG.pdf. Supplement_0.Pdf Supplementary 3 Agilent High-Sensitivity DNA Quick Guide Agilent High Sensitivity DNA Kit Quick Start Guide-Rev.C. (2013) Available at: http://www.chem.agilent.com/library/usermanuals/Public/G2938-90322 HighSensitivityDNA QSG.pdf. Supplement_0.Pdf Supplementary 2 Picogreen dsDNA Assay Quant-iT™ PicoGreen ® dsDNA Reagent and Kits-Rev.10-June-2008. (2008) Available at: http://tools.lifetechnologies.com/content/sfs/manuals/mp07581.pdf."
+  ],
+  "authors": [
+    "Marcia Sanders",
+    "Anne Beall"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1423827467,
+  "created_on": 1423827467,
+  "keywords": []
+}

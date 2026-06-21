@@ -1,0 +1,39 @@
+{
+  "id": 117996,
+  "title": "CUT and RUN - Cas9 crosslinked ",
+  "uri": "cut-and-run-cas9-crosslinked-dxgk7juw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6dr5rvqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"stqm\",\"text\":\"This protocols describe how to perform crosslink CUT\\u0026RUN on fresh cells\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Detach cultured cells with Accutase (37 °C incubation for 5 minutes, or until cells completely detach) and resuspend in washing buffer (10% knockout serum [KSR] in iPSBrew). NOTE: For optimal outcome, it is essential to use fresh cells.",
+    "Pellet cell by centrifuging them @ 400 x g, °C, for 00:05:00 .",
+    "Activate ConA-coat magnetic beads (Epicypher) by washing twice in Bead Binding Buffer [20 mM HEPES pH 7.5, 10 mM KCl, 1 mM CaCl, 1 mM MnCl 2 ]. Place on ice until use.",
+    "Centrifuge cells at 600 x g, °C, for 00:03:00 and resuspend the pellet in 1 ml of 0.1% formaldehyde solution to allow light crosslinking. Incubate for 00:01:00 at Room temperature . NOTE: Crosslinking is performed to capture more challenging targets such as Cas9, but it is not needed for the CUT&amp;RUN control samples (e.g. IgG). To perform a regular CUT&amp;RUN, refer to the the standard CUT and RUN protocol: dx.doi.org/10.17504/protocols.io.j8nlkwb8dl5r/v1 CAUTION: Formaldehyde is classified as a carcinogen and can cause respiratory and skin irritation upon exposure. Handle under a chemical hood and with the relevant protection equipment.",
+    "Remove supernatant, and resuspend cells in 800 µL of XL-Wash Buffer (20 mM HEPES pH 7.5; 150 mM NaCl; 0.5 mM spermidine; 1 Roche Complete Protease Inhibitor EDTA-free tablet; 1% Triton X-100; 0.05% SDS - all diluted in dH 2 O).",
+    "Bind nuclei to beads ( 10 µL ) for 00:10:00 at RT with gentle rotation, and then split bead-bound nuclei into three equal volumes (here, corresponding to IgG control and Cas9 antibody treatment).",
+    "Remove wash buffer and resuspend nuclei in 100 µL cold XL-Antibody Buffer (XL-Wash Buffer; 0.05% digitonin; 2 mM EDTA; 1:50 anti-Cas9 antibody). CAUTION: Digitonin is toxic. Gloves should be worn when preparing and working with digitonin.",
+    "On the following day, remove supernatant by placing the sample(s) on a magnetic stand, and resuspend/wash the beads twice in XL-Digitonin Buffer (XL-Wash Buffer + 0.05% digitonin).",
+    "After the final wash, add pA-MNase (final concentration 700 ng/ml) in XL-Digitonin Buffer and incubate with the cells at 4 °C for 01:00:00 . Wash nuclei twice, resuspend in 100 µL XL-Digitonin Buffer, and chill to 0 °C - 2 °C in a metal block sitting on wet ice.",
+    "Stimulate genome cleavage by addition of 2 mM CaCl 2 at 0 ºC for 00:30:00 . Quench the reaction by adding 100 µL 2x Stop Buffer (0.35 M NaCl; 20 mM EDTA; 4 mM EGTA; 0.05%digitonin; 50 ng/ml of RNAse A; 50 ng/ml of glycogen; 10 ng/ml spike in DNA; all diluted in distilled H 2 O) and vortex.",
+    "Place bead-bound nuclei on the magnet stand and collect the supernatant in a new 1.5 ml Eppendorf tube.",
+    "Prepare Illumina sequencing libraries using the Hyperprep kit (KAPA) with unique dual-indexed adapters (KAPA).",
+    "Count cells and harvest 500 000 cells per condition (and antibody). EXAMPLE: If you are running a CRISPRi experiment (CRISPRi gRNA hiPSCs &amp; non-targeting control hiPSCs) and you want to perform a Cas9 CUT&amp;RUN on both conditions, you will harvest 500 000 CRISPRi and 500 000 control hiPSCs. If you are also including CUT&amp;RUN controls (e.g. IgG control), you will need 500 000 per condition, per antibody- in this case: 500 000+500 000 CRISPRi hiPSCs &amp; 500 000+500 000 control hiPSCs.",
+    "Add 125 mM of glycine and centrifuge again at 600 x g, °C, for 00:03:00 .",
+    "Centrifuge cells at 1000 x g, °C, for 00:03:00 and resuspend again in XL-Wash Buffer. Repeat two more centrifugations at 1200 x g, °C, (3 minutes each).",
+    "Incubate Overnight at 4 °C on gentle shake.",
+    "Incubate at 37 °C for 00:30:00 to allow the release of the fragmented chromatin.",
+    "Add 0.09% SDS and 0.22 mg/ml of Proteinase K to reverse the crosslinking.",
+    "Isolate the DNA using NucleuSping PCR Cleanup columns (Macherey-Nagel) and prepare libraries for sequencing."
+  ],
+  "authors": [
+    "anita.adami"
+  ],
+  "creator": "Anita Adami",
+  "published_on": 1736459199,
+  "created_on": 1736431719,
+  "keywords": []
+}

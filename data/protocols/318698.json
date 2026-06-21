@@ -1,0 +1,28 @@
+{
+  "id": 318698,
+  "title": "Chemical profiling for fungal culture extract",
+  "uri": "chemical-profiling-for-fungal-culture-extract-j3gicqjuf",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzwnj8vx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"pqqgs\",\"text\":\"Chemical analysis of fungal culture extracts for metabolomic studies\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"y6avn\",\"text\":\"Dry extract are dissolved to a concentration of 1 mg/mL in methanol LCMS-grade. Injection volume is 2 μL.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"7qrpw\",\"text\":\"Use nitrile gloves, safety goggles and lab coat.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"hwyd3\",\"text\":\"LC-MS-grade Solvents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lbpbz\",\"text\":\"Chromatography system: UHPLC Ultimate 3000™ (Thermo Scientific)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f3gxs\",\"text\":\"Mass spectrometer: Orbitrap FT Q-Exactive Focus™ (Thermo Scientific)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"r8peq\",\"text\":\"Data visualization software: FreeStyle® 1.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Dry extract are dissolved to a concentration of 1 mg/mL in methanol LCMS-grade. Injection volume is 2 μL.",
+    "Column: Phenomenex® Kinetex C8 2,6μm 150x2.1mm (Phenomenex) Column temperature: 40 °C Flow rate: 0.5 mL/min Solvents: A = Water + 0.1% formic acid B = Acetonitrile + 0.1% formic acid Gradient:",
+    "Acquisition mode: Full MS with data-dependent MS/MS acquisition (dd-MS2, Discovery mode) Ionization mode: Electrospray (ESI+) Mass range (m/z): 133.4 – 2000 Da Detection mode: Centroid Full MS settings: Resolution: 70,000 AGC target: 3 × 10^6 Internal calibrant: m/z 144.98215 (Cu(CH3CN)2 + ) dd-MS2 settings: Resolution: 17,500 AGC target: 1 × 10^5 Isolation window: 0.4 Da Normalized collision energies (NCE): 15 / 30 / 40% Dynamic exclusion: 6 s ESI source parameters: Spray voltage: 3 kV Sheath gas flow rate: 75 (arbitrary units) Auxiliary gas pressure: 20 Capillary temperature: 350 °C Heater temperature: 430 °C"
+  ],
+  "authors": [
+    "Clémence ROHÉE",
+    "Alice M.S. Rodrigues",
+    "Yoan FERANDIN",
+    "Emeline HOUEL",
+    "Didier STIEN",
+    "Didier Stien"
+  ],
+  "creator": "Clémence ROHÉE",
+  "published_on": 1781007217,
+  "created_on": 1780930168,
+  "keywords": []
+}

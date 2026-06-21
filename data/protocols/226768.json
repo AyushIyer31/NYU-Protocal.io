@@ -1,0 +1,32 @@
+{
+  "id": 226768,
+  "title": "Transformation of Tn7 insertion elements across strains of Vibrio fischeri",
+  "uri": "transformation-of-tn7-insertion-elements-across-st-g9pqbz5mx",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg31k11l25/v1",
+  "description": "{\"blocks\":[{\"key\":\"7iaa\",\"text\":\"This protocol details how to use pLosTfoX-dependent natural transformation to transform non-canonical strains of Vibrio fischeri with genetic content at the Tn7 insertion of strain ES114.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":113,\"length\":15},{\"style\":\"italic\",\"offset\":159,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"xxwur\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"ghau1\",\"text\":\"Materials needed:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qrmvu\",\"text\":\"1. Culture tubes, e.g., 14-mL Round-Bottom Polystyrene Test Tubes (Falcon)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mpbfg\",\"text\":\"2. Defined minimal medium (DMM) with N-acetylglucosamine (GlcNAc) – [50 mM MgSO4, 10 mM CaCl2, 300 mM NaCl, 10 mM KCl, 0.01 mM FeSO4, 0.33 mM K2HPO4, 50 mM Tris-HCl (pH 7.5), 0.2% GlcNAc]. Store at 4°C, use within 24 hours.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"o1vq2\",\"text\":\"3. Chloramphenicol (cam)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"q9e9l\",\"text\":\"4. 125-mL baffled Erlenmeyer flask\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"itkrs\",\"text\":\"5. LBS medium [1% (w/v) tryptone, 0.5% (w/v) yeast extract, 2% (w/v) NaCl, 50 mM Tris–HCl (pH 7.5)], with 1.5% w/v agar for solid medium\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"m2gtk\",\"text\":\"6. Shaking incubator at 28°C (New Brunswick)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vculg\",\"text\":\"7. Spectrophotometer and cuvettes (Eppendorf)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7gynm\",\"text\":\"8. Genomic DNA (extracted according to manufacturer's instructions, Biosearch Technologies Inc.)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4holb\",\"text\":\"9. LBS + 5.0 µg/mL erythromycin (erm) plates\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Initiate a starter culture by inoculating a Falcon tube containing 2 mL DMM-GlcNAc + 2.5 µg/mL cam with an isolated colony of a V. fischeri strain harboring pLosTfoX. Incubate starter culture overnight (~16 h) at 28°C shaking at 200 rpm.",
+    "Transfer 20 mL DMM + 2.5 µg/mL cam into a 125-mL baffled Erlenmeyer flask and incubate at 28°C to prewarm media.",
+    "Measure the OD 600 of the starter culture. (Note: typically OD 600 = 1.0–1.5)",
+    "Inoculate flask with 1 mL starter culture. Incubate at 28°C shaking at 200 rpm.",
+    "When the turbidity of culture is OD 600 = 0.25, transfer 0.5 mL of the culture to two Falcon tubes. To one tube (experimental), add 0.5 µg genomic DNA substrate. To the other tube (no DNA control), add equivalent volume of vehicle. Gently vortex both tubes and incubate at room temperature statically overnight.",
+    "Add 0.5 mL LBS to each culture tube. Incubate shaking at 28°C.",
+    "After 90 minutes, plate 0.2 mL onto LBS-erm. To assess total viable cell count, perform 10-fold serial dilutions to 10 -7 using 10-µL volumes into 90 µL LBS. Spot 10-µL volumes of 10 -2 –10 -7 onto LBS plate with pre-drawn grids. Incubate plates at 28°C overnight.",
+    "For each sample, calculate the concentration of viable cells and transformants per mL. Calculate the transformation efficiency by dividing concentration of transformants by the concentration of DNA.",
+    "Streak purify ermR colonies onto LBS-erm for further isolation."
+  ],
+  "authors": [
+    "Andrew G. Cecere",
+    "Chris A. Muriel-Mundo",
+    "Derek J. Fisher",
+    "Tim I. Miyashiro"
+  ],
+  "creator": "Tim I Miyashiro",
+  "published_on": 1764565158,
+  "created_on": 1757351540,
+  "keywords": []
+}

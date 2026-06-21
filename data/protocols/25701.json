@@ -1,0 +1,40 @@
+{
+  "id": 25701,
+  "title": "RPA from banana DNA",
+  "uri": "rpa-from-banana-dna-5cdg2s6",
+  "doi": "dx.doi.org/10.17504/protocols.io.5cdg2s6",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9boae\",\"text\":\"nuclease-free water/ double-distilled autoclaved water\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ablgg\",\"text\":\"TE buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"clulq\",\"text\":\"10 mM Tris pH 8.0\",\"type\":\"unordered-list-item\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ajl47\",\"text\":\"1 mM EDTA\",\"type\":\"unordered-list-item\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"45e7v\",\"text\":\"DNA extraction : \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"1n0uh\",\"text\":\"Banana\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"1ih06\",\"text\":\"Dish soap\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4a1rl\",\"text\":\"1g table salt\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8cp6u\",\"text\":\"25 ml pre-chilled (4°C) 90% isopropyl alcohol (rubbing alcohol)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"cvuv7\",\"text\":\"70% ethanol\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7f3j4\",\"text\":\"Primers :\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"eudj3\",\"text\":\"Fwd : 5' CATTCTAATACGACTCACTATAGGGATTATCTGCAAAA AACTACGG 3' \",\"type\":\"unordered-list-item\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"fjulb\",\"text\":\"Rev : 5' TAAAAAGTGCTTCGGTGCAAAATAAGAAACGAT 3'\",\"type\":\"unordered-list-item\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8l3k5\",\"text\":\"Rehydration solution\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9400p\",\"text\":\"1.18 μl rehydration buffer\",\"type\":\"unordered-list-item\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9n9ur\",\"text\":\"0.84 μl 10μM forward primer\",\"type\":\"unordered-list-item\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5m7dt\",\"text\":\"0.84 μl 10μM reverse primer\",\"type\":\"unordered-list-item\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"58tfa\",\"text\":\"1 μl 280 mM magnesium acetate\",\"type\":\"unordered-list-item\",\"depth\":1,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"cgm3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"f6adq\",\"text\":\"2 reaction pellets (included in the kit)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"b8gdp\",\"text\":\"DNA ladder\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"d53ar\",\"text\":\"Loading buffer\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"188m4\",\"text\":\"2% agarose gel\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dkivj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Put chopped banana in a closed ziploc-like bag",
+    "Add diluted 1:10 dish soap solution and 1g table salt to fruits",
+    "Mash it until homogeneous mixture is obtained",
+    "Strain the mixture through a household coffee filter",
+    "Add 25 ml isopropyl alcohol to strained liquid",
+    "Let it sit for 5 min until phase separation",
+    "Collect upper white layer (precipitated DNA) with a toothpick, place it on a new coffee filter and wash it with 70% ethanol",
+    "Pat it dry with paper towels",
+    "Dissolve DNA in 1 ml TE buffer",
+    "Perform a NanoDrop analysis",
+    "Set 1 μl aside; store rest at 4°C",
+    "Prepare the rehydration solution for the RPA %s %s",
+    "Vortex and spin briefly",
+    "Rehydrate 1 RPA reaction pellet in each one of the rehydration solutions",
+    "Pipette up and down to resuspend pellet",
+    "Vortex and spin briefly",
+    "Heat the reaction at 39°C for 20 minutes.",
+    "Run a gel electrophoresis: %s %s Lane123SampleDNA ladderSamplePCR control",
+    "should do a standard DNA purif kit (which we don&#39;t have at the moment) so we&#39;ll try the same purif as we did for the banana DNA"
+  ],
+  "authors": [
+    "Théo Nass",
+    "Luc Gabel"
+  ],
+  "creator": "Théo Nass",
+  "published_on": 1570192491,
+  "created_on": 1562745112,
+  "keywords": []
+}

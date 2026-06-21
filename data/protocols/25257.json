@@ -1,0 +1,24 @@
+{
+  "id": 25257,
+  "title": "Domestication of L0 parts for Loop type IIS (BsaI and SapI)",
+  "uri": "domestication-of-l0-parts-for-loop-type-iis-bsai-a-4whgxb6",
+  "doi": "dx.doi.org/10.17504/protocols.io.4whgxb6",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Domestication of internal BsaI and SapI sites is necessary when a DNA sequence of interest contains an internal BsaI or SapI recognition site. For domestication, overlapping PCR can be used. Briefly, the sequence can be amplified as two separate PCR fragments upstream (fragment 1) and downstream (fragment 2) the recognition site. The enzyme recognition site will form part of the reverse primer of fragment 1 and the forward primer of fragment 2, that will be specially designed with a single nucleotide mismatch to alter the recognition site (taking care to not alter amino acid composition if the region is protein coding). Amplification primers will also contain SapI recognition sites that will allow the two fragments to be ligated together into the pUAP-pe. For example if you need to domesticate the following sequence: 5’-atggcgtcaattagtggatgcgcagctgtgcctttgagc………… ctattccagatt GGTCT-C -agccaatg caactgaagggc …………gattatcacagagggtgatggaaggactatatactaa -3’ (fragment 1: underlined sequence, BsaI recognition sequence: sequence in bold capital letters and fragment 2: italicized sequence), the primers to be designed are Primer1: 5’-ga GCTCTTC gtctcgaatggcgtcaattagtggatgc-3’, Primer2: 5’-ta GCTCTTC g C gacc-aatctggaatag -3’, Primer3: 5’-ga GCTCTTC gtc G c-agccaatg.caactgaagggc-3’, and Primer4: 5’-ta GCTCTTC gtctcaaagcttagtatatagtccttccatc-3’ (SapI recognition sequence: sequence in bold capital letters, common syntax overhangs: underlined sequence and primer mismatch: sequence in bold underlined capital letter). Primer1 and Primer4 are designed according to Level 0 parts primer design."
+  ],
+  "authors": [
+    "Eftychis Frangedakis",
+    "Marta Marta Tomaselli",
+    "Marius Rebmann",
+    "Susana Sauret-Gueto"
+  ],
+  "creator": "Eftychis Frangedakis",
+  "published_on": 1569339544,
+  "created_on": 1561739388,
+  "keywords": []
+}

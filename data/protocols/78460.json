@@ -1,0 +1,25 @@
+{
+  "id": 78460,
+  "title": "Calculating multiplicity of infection (MOI)",
+  "uri": "calculating-multiplicity-of-infection-moi-cqu4vwyw",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvm2b2ng3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"dnfnm\",\"text\":\"This is a simple protocol for the calculations that we routinely do to determine phage multiplicity of infection (MOI) in our experiments.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1s572\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5jpgh\",\"text\":\"It's really important to know what MOI you are using. Ideally, you would perform these quantifications before your experiments such that you have a good ballpark understanding of what your multiplicity of infection is in your experiment. This also allows you to prepare phage dilutions to more precisely hit your target MOI.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dj53f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4hl6s\",\"text\":\"We will also sometimes plate out bacteria and phage day-of using our experimental samples to give us an exact measurement of our MOI based on the culture that we used and to double-check that our phage dilution was correct. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Grow your bacteria to your target OD 600 using the same culture conditions that you will use in your experiments.",
+    "Create a 10-fold dilution series of your bacterial culture. Use glass beads to seed an LB agar plate with 100 µl of the 10 -4 , 10 -5 , 10 -6 , and 10 -7 dilutions of each subculture and incubate overnight. These dilutions typically yield a suitable number of colonies for accurate counting by eye. If they do not, you will need to adjust up or down depending on the exact details of what you are doing. Count colonies the next day, and calculate how many colony-forming units (CFUs) are present in 1 mL of culture. CFU/mL = (# colonies × dilution factor) ÷ 0.1 mL",
+    "Infect 150 µL bacterial culture with 10 µL phage, respectively, from 10-fold dilution series of phage stocks. Aim for dilutions that will give you single countable plaques. Mix with with 3 mL of 0.5% (0.5 g/100 mL) agarose dissolved in LB supplemented with 1 mM MgSO 4 , pour onto LB plates, and incubate at 37 °C overnight. Count plaques the next day, and calculate how many plaque-forming units (PFUs) are present in 1 mL of phage stock. PFU/mL = (# plaques × dilution factor) ÷ 0.01 mL",
+    "In our experiments, we generally aim for an MOI of ~10 to ensure that the majority of cells are infected with phage. However, you will need to determine the MOI appropriate for your experiments based on the biological phenomena you are studying. We also aim to have the phage volume be &lt;= 10% of the bacterial culture volume. So, we might use 500 µl of bacterial culture and 50 µl of phage stock. Again, you will need to determine which volumes are appropriate for your experiment. Here is how we calculate MOI using PFU/mL and CFU/mL. PFU/mL × phage volume in mL = Total PFU CFU/mL × bacterial volume in mL = Total CFU Total PFU ÷ Total CFU = MOI"
+  ],
+  "authors": [
+    "Januka Athukoralage",
+    "Adair Borges"
+  ],
+  "creator": "Arcadia Science",
+  "published_on": 1678827218,
+  "created_on": 1678405926,
+  "keywords": []
+}

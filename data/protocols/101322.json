@@ -1,0 +1,35 @@
+{
+  "id": 101322,
+  "title": "C18 and resuspension (HTP; plate format)",
+  "uri": "c18-and-resuspension-htp-plate-format-de7i3hke",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v92264l3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"4eokn\",\"text\":\"C18 procedure for desalting and depletion of hydrophobic contaminants for whole cell lysates in high throughput, plate format, following sample clean-up. For chromatin enrichment samples or low throughput processing, see alternative protocols. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"516rd\",\"text\":\"Use the benchtop centrifuge with a swing bucket rotor. This is very easily unbalanced, so either split samples in half or create a balance using old C18 tips. Speeds may need to be reduced if centrifuge does not balance.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"dc9it\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"47djl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"322vv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"6046t\",\"text\":\"C18 times are suggested and will depend on temperature and construction of C18. If necessary, increase time to ensure no liquid remains above the C18 at each step (but not too long to prevent drying). Empty plate when required to ensure C18 tip does not touch flowthrough. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"2idv3\",\"text\":\"0.1% TFA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dm0sp\",\"text\":\"10% TFA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e28nl\",\"text\":\"66% MeCN in 0.1% TFA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"126ur\",\"text\":\"Empore Disk C18 (Sigma Aldrich, 66883-U)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Insert 3 C18 discs into a p200 pipette tip using a plunger Can load up to 30ug on these tips",
+    "Wet the tip using 50ul MeCN, centrifuge 250 rcf 2 min",
+    "Stack two p2/p10? empty pipette racks on top of each other on a 0.5ml deep well collection plate. Insert C18 tips into the rack, with additional p200 tips to keep the racks in place.",
+    "Equilibrate using 200ul 0.1% TFA, centrifuge 250 rcf 4 min",
+    "Acidify sample by adding 10% TFA so that the final concentration is 1%",
+    "Load sample to C18, centrifuge at 250 rcf until through",
+    "Wash with 200ul 0.1% TFA, centrifuge at 1000 rcf 5 min",
+    "Assemble racks onto MS plate for elution",
+    "Elute using 25ul 66% MeCN in 0.1% TFA (2 parts MeCN, 1 part 0.1% TFA), centrifuge 250 rcf 3 min",
+    "Dry down samples in vacuum centrifuge (V-AQ setting; make sure fume hood is on and book!) This can be at 30°C to speed up drying, going above this temperature will warp MS plate",
+    "Proceed to sample resuspension or store at 2-8°C",
+    "Resuspend in 0.1% TFA to 0.5ug/ul Concentration depends on how much you want to inject and max injection vol",
+    "Add wash to H12 -&gt; 40ul MeCN, 60ul 0.1% TFA",
+    "Spin down briefly to ensure all liquid is at the bottom of the well and to remove bubbles",
+    "Queue to LC-MS/MS"
+  ],
+  "authors": [
+    "Victoria Munro"
+  ],
+  "creator": "Victoria Munro",
+  "published_on": 1761667912,
+  "created_on": 1717678402,
+  "keywords": []
+}

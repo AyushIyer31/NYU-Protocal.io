@@ -1,0 +1,31 @@
+{
+  "id": 85015,
+  "title": "Updating or using the microgAMBI database to assess the ecological status of marine sediments and water",
+  "uri": "updating-or-using-the-microgambi-database-to-asses-cw9xxh7n",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj3xjnlk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"cnd68\",\"text\":\"Microbes have usually been neglected as indicators to assess the ecological status, under multiple human pressures. Some years ago, a biotic index (microgAMBI) was proposed to assess the ecological status of marine sediments and waters, and it has been tested under different pressures and biogeographical areas. The index is based on the assignation of each taxon to an ecological group (sensitive or not to disturbance), and this list has grown since the database was first published. Here is a protocol to update or use the Taxalist of this database. You can contact the group maintaining the taxa list in microgambi@googlegroups.com.\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":609,\"length\":27}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"5FE8D7FA223E11EE97D70A58A9FEAC02\",\"url\":\"mailto:microgambi@googlegroups.com\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Collect bacterial abundance data (either total, as number of reads, or relative) for each sample or replicate, based on metabarcoding.",
+    "Download the latest microgAMBI taxa list (which should be updated regularly with new taxa and references) available at ‘microgAMBI-taxalist-version-2023-07-05.tsv’ sheet in GigaDB (downloadable from: http://doi.org/10.5524/102422 ).",
+    "Enter abundance data into a spreadsheet available at ‘microgAMBI-template-version-2023-07-05.ods’ (downloadable from GigaDB: http://doi.org/10.5524/102422 ), with rows representing each taxon and columns for each sample name. Make sure there are sufficient columns and rows to accommodate your dataset.",
+    "Paste your data in the space created",
+    "You can use the taxa list from the template or collate your own bacterial taxa names with the taxaID from the MicroAMBI database and the template will select each Ecological Group (EG) from the taxa list and will be included in the corresponding column, for each row.",
+    "Check that columns with number and Ecological Group have correctly identified each taxon, reading from the taxalist sheet. If not, check misspellings or errors.",
+    "For each sample, next calculation are provided: the total number of reads (summing up all reads in each column), the number of taxa (counting the cells in which at least one read is present), and the Shannon Wiener diversity, the number of reads for each Ecological Group (as total number for I and III), and the number of reads of those taxa not assigned or not in the taxa list.",
+    "Immediately below, the template will calculate the percentage of each Ecological Group per sampling station (as I, III and ‘not assigned’).",
+    "In the last section, the template provides: (i) the name of each station included by you; (ii) the percentage of Ecological Groups I and III, after attributing the not assigned taxa to them in proportion to the abundance of the groups I and III in the sample; (iii) the microgAMBI value is calculated for each sample, after the equation MicrogAMBI = ((0 x %EGI) + (6 x %EGIII))/100, with values ranging from 0 to 6 (where 0 represents 100% of sequences assigned to EGI, and 6 represents 100% of sequences assigned to EGIII; also, it is possible to find a value of 7, if no reads are present in the sample); (iv) the ecological status of the sample, using these boundaries between quality classes: 0 &lt; microgAMBI ≤1.2, corresponding to a high ecological status; 1.3 &lt; microgAMBI ≤2.4, to good status, 2.5 &lt; microgAMBI ≤3.6, to moderate status, 3.7 &lt;microgAMBI ≤4.8, to poor status; and 4.9 &lt; microgAMBI ≤6/7 to bad status.",
+    "Check that columns with number and group have identified adequately each taxon, reading from the Taxa list sheet. Compare your results with the percentage of Ecological Group, the microgAMBI values, etc.",
+    "Any corrections or updates to this list can be submitted to Dr Angel Borja ( aborja@azti.es ) or/and themicrogAMBI googlegroup ( microgambi@googlegroups.com , in https://groups.google.com/g/microgambi)."
+  ],
+  "authors": [
+    "ángel borja"
+  ],
+  "creator": "Hongfang Zhang",
+  "published_on": 1691565463,
+  "created_on": 1689335978,
+  "keywords": []
+}

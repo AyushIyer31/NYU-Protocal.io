@@ -1,0 +1,32 @@
+{
+  "id": 119547,
+  "title": "Dengue 2 NS2B-NS3 protease binding assay for  compound screen using grating-coupled interferometry",
+  "uri": "dengue-2-ns2b-ns3-protease-binding-assay-for-compo-dyy37xyn",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2ly6q1pgx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"2n91t\",\"text\":\"This protocol aims to measure kinetic parameters (ka, kd, and KD) for compounds against Dengue virus NS2B-NS3 protease using the Creoptix Wave system. Grating coupled interferometry (GCI) is a label-free technique to measure kinetics and affinity for different targets (proteins, small molecules, fragments, etc.) with enhanced sensitivity. Biotin-tagged NS2B-NS3 protease was captured on the streptavidin chip surface  . This immobilization technique provides oriented and active protein immobilization for binding assays and can be applied to different protein targets. Binding analysis was performed with the Repeated Analyte Pulses of Increasing Duration (RAPID) method, which involves the injection of samples at a single concentration with varied association times. Kinetic parameters were obtained from Creoptix Wave software (v 4.5.18).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bkk4u\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"18rd5\",\"text\":\"For each section protocol method the materials are included in detail.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dbu3j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "The NS2B-NS3 protease used in this assay was purified and expressed using the following protocol using the plasmid Dengue virus serotype 2 NS2B-NS3 protease fusion with non cleavable linker and non cleavable avi-tag addgene Catalog #228649 Dengue Virus Serotype 2 NS2B-NS3 protease fusion protein Avi-tagged (Biotinylated) protein expression and purification: large scale 1 L cultures by Mary-Ann Xavier",
+    "DENV-2 NS2B-NS3 protease used at the concentration 10 µg/µL for 200 s with buffer HBS-P, following the protocol below. Creoptix Protein Immobilization Protocol: Biotin Capture on Streptavidin Chip by Eda Capkin",
+    "Binding assays were performed with RAPID kinetics using the following protocol. The running buffer condition is HBS-P + 2% DMSO and samples were injected at varied concentrations depending on the response at the first trial ( 0.5 micromolar (µM) to 25 micromolar (µM) . The samples were injected for 25 s association and 300 s dissociation at 100 uL/min flow rate. Kinetic assay with waveRAPID grating-coupled interferometry waveCreoptix system by Eda Capkin",
+    "Check the control sample and samples binding response on both the all flow channels (FC1, FC2, FC3, and FC4) and subtracted active flow channels (FC2-1, FC3-1, and FC4-1). Data Analysis waveRAPID using Creoptix WAVEsystem by Eda Capkin",
+    "Samples are calculated: 100,000 uM*V1= 10 uM * 200 uL 20 nL 100,000 uM*V1= 25 uM * 200 uL 50 nL Sample volumes are transferred to 96-well plates. The samples ( at 10 micromolar (µM) and 25 micromolar (µM) )are directly diluted with 200 μL 1X HBS-P+2%DMSO. 0.5 uM and 1 uM samples are diluted from 10 uM intermediate stocks with 1X HBS-P+2%DMSO.",
+    "Check the variation and/or similarity of K D values across different subtracted active flow channels (FC2-1, FC3-1, and FC4-1). Kinetic parameters (ka, kd, KD) comparison for samples over subtracted active channels (FC2-1 red, FC3-1 green, and FC4-1 orange) for DENV-2-NS2B-NS3 protease"
+  ],
+  "authors": [
+    "Eda Capkin",
+    "korvus.wang",
+    "Xiaomin Ni",
+    "Lizbé Koekemoer",
+    "Mary-Ann Xavier",
+    "Warren Thompson",
+    "Frank von Delft"
+  ],
+  "creator": "Eda Capkin",
+  "published_on": 1744725478,
+  "created_on": 1738674854,
+  "keywords": []
+}

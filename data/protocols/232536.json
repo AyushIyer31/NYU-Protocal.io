@@ -1,0 +1,32 @@
+{
+  "id": 232536,
+  "title": "Performance Study on Laser Hydrogen Space Propulsion and Power Generation System",
+  "uri": "performance-study-on-laser-hydrogen-space-propulsi-hfbyb3ipx",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvmb41og3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"tvgq1\",\"text\":\"Thinking about sustainable sources of propulsion in space leads to the inquiry about available power sources and propellants exist there. Scientists recently discover the existence of water on the Moon and Mars which can be used as a propellant in space. Through water electrolysis process hydrogen can be extracted and used as an efficient propellant. On the other hand, laser production can be considered as a sustainable power source in space. This research is focused on laser hydrogen propulsion system performance study. Transient study for hydrogen heat exchanger and nozzle is performed. A 6 kW laser power source is used at mass flow rate 1 g/sec. Thruster nozzle design affects the whole performance which is the main point of concern in this paper. A comparison between two configurations which are convergent divergent nozzle and bell shaped nozzle is conducted. Preliminary results show the enhancement of laser hydrogen thruster performance using bell shaped design by increasing Mach number from about 4 to 7 at same mass flow rate with different nozzle contours. The system can be used as an upper stage rocket engine for space exploration. The system also can be modified as a sustainable power generation engine using kinetic energy from the propellant exhaust to move a turbine. Power generation system can produce about 11.2 kW with same input laser power.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "The concept of laser propulsion rests on basic rocketry theory as well as on some basic and early experimental results. The cost in joules of laser required to launch a kilogram can be computed by the equation: \\( Q_l = \\exp \\left( \\left[ V_f + gT_f \\right] / V_{ex} \\right) \\) where \\( V_{ex} \\) is the propellant exhaust velocity, \\( V_f \\) is the final velocity, \\( g \\) is the gravitational acceleration, and \\( T_f \\) is time to orbit in seconds.",
+    "Performance study of laser propulsion depends on two parameters, momentum coupling coefficient refers to the ability of the laser power system to convert the input laser power to thrust. The momentum coupling coefficient can be defined as \\( C_m = \\left( \\frac{F_{th}}{P_l} \\right) \\).",
+    "The specific ablation energy can be defined as the ratio between the laser power and the propellant mass flow rate. Ablation energy related to input laser source and propellant mass flow rate as given, \\( Q^i = \\left( \\frac{P_l}{m^i} \\right) \\).",
+    "Propellant exhaust velocity can be determined by solving the thruster model and it can be related to both previously mentioned performance parameters as follows, \\( C m Q^i = V {ex} \\).",
+    "Nozzle contour is defined by fourth order polynomial. Known areas (as throat and inlet) and slopes (zero at inlet and exit) can be used to solve polynomial unknowns and define the nozzle equation. Fourth order polynomial is fitted using a simple method to define nozzle contour. \\( y = ax^4 + bx^3 + cx^2 + dx + e \\) And the slope of the curve is the differentiation of the polynomial equation w.r.t x axis: \\( \\frac{dy}{dx} = 4ax^3 + 3bx^2 + 2cx + d \\)",
+    "Two different geometries are considered for laser propulsion system performance study. The first Convergent divergent nozzle (de-Laval nozzle) and bell shaped nozzle as given in figures 1 �2 respectively. Fig. 2 Bell shaped Nozzle",
+    "For a laser hydrogen thruster, input laser power 6000 N, mass flow rate 1 g/sec. Effect of exhaust velocity on the momentum coupling coefficient is shown in figure. Figure 3 shows the increase of the momentum coupling coefficient with the propellant exhaust velocity. The main concern to increase the coupling coefficient of the laser thruster is to increase the propellant exhaust velocity by changing the nozzle contour. Fig. 3 Propellant exhaust velocity vs momentum coupling coefficient",
+    "Figure 4 shows the Mach number distribution along two nozzle types at same boundary conditions. The result shows the dependence on mach number and thus the exhaust velocity on the nozzle contour. Therefore, the momentum coupling coefficient can be enhanced by identifying the adequate nozzle contour. Fig. 4 Mach number along nozzle contour",
+    "Other useful application from laser is power generation in space. Considering hydrogen to be a sustainable working fluid in space extracted from water and using sun laser conversion as a sustainable source of power. Kinetic energy from nozzle exhaust can be used to drive a power generation turbine. The nozzle exit temperature is the turbine inlet temperature (TIT). Increasing hydrogen temperature results in higher turbine power as given in figure 5. Mass flow rate is an effective parameter in increasing the power from turbine as given in figure 6. Figure 5 Turbine power vs working fluid temperature Fig. 6 Turbine power vs mass flow rate",
+    "Transient analysis is done for 1000 seconds duration. Input laser power is 6000 W to heat hydrogen through heat exchanger and mass flow rate is 1 g/sec. The temperature rise of hydrogen is achieved by laser heating through heat exchanger. More clarification for the heat exchanger model is given in references [4, 5]. Hydrogen temperature reaches steady state 900 K after about 2000 seconds. Fig.7 Hydrogen temperature change vs time",
+    "Thrust output from laser thruster is about 4.8 Newton as shown in figure 8. More thrust values can be reached from the same design by increasing the mass flow rate which leads to drop in specific impulse of the thruster. Fig. 8 Thrust change vs time",
+    "Kinetic energy of the propellant can be used for power generation as given in figure 9. More than 11 kW can be achieved from input laser power 6 kW. Fig. 9 Turbine power change vs time"
+  ],
+  "authors": [
+    "Maged Assem Soliman Mossallam"
+  ],
+  "creator": "Maged Assem Soliman Mossallam",
+  "published_on": 1763355327,
+  "created_on": 1763288529,
+  "keywords": []
+}

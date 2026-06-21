@@ -1,0 +1,40 @@
+{
+  "id": 82665,
+  "title": "Confocal imaging and digital image analysis",
+  "uri": "confocal-imaging-and-digital-image-analysis-cuyhwxt6",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4jmxzlo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"a5ggc\",\"text\":\"This protocol describes confocal imaging on a Nikon A1R confocal microscope and digital image analysis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"46r81\",\"text\":\"Apparatus\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"e3vcr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"47oeu\",\"text\":\"Nikon A1R confocal microscope\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"afmel\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e7di5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Turn on the power of laser, microscope, and computer.",
+    "Open the NIS-Elements AR software.",
+    "Set lightpath to Eyepiece to locate brain slice under 10x lens.",
+    "Once the brain slice is located, switch the lighpath to camera.",
+    "Check the pinhole size and make sure it is set to 1.2.",
+    "Check for lasers of interest and make sure they are in use.",
+    "For scanning, set resolution to 256x256 so that you can find the target regions as fast as possible.",
+    "Adjust Z using knob to find slices.",
+    "For the imaging of vGluT2, the immunostaining signals were taken between 5 and 8 µm below the surface of slice using a 100x objective lens with a 0.15 µm interval.",
+    "For the imaging of neuron density, NeuN-ir signals are collected using a 40x objective lens (1024 X1024 pixels; z step = 1 μm).",
+    "Convert the confocal images (.ND2) to imaris images (.ims) using the convert function of imairs.",
+    "Open the images in imaris.",
+    "Add a new filament and skip the automatic creation.",
+    "Select “AutoPath” algorithm method and put your pointer in the “Select” mode.",
+    "Press shift and right click at the beginning of the dendrite of interests.",
+    "Let the algorithm starts quantified in a starting point.",
+    "Move the cursor from the beginning to the end of the dendrite.",
+    "When reach the end of the dendrite, press shift and left click to specify the end of the dendrite, make sure the length of the dendrite is around 20-30 microns.",
+    "Re-construct and quantify the spines manually.",
+    "The spine density = amount of spines/length of dendrite."
+  ],
+  "authors": [
+    "Hong-yuan Chu"
+  ],
+  "creator": "Johnson Agniswamy",
+  "published_on": 1686063569,
+  "created_on": 1685507942,
+  "keywords": []
+}

@@ -1,0 +1,41 @@
+{
+  "id": 44197,
+  "title": "Methanol-based HIV-Flow",
+  "uri": "methanol-based-hiv-flow-bpedmja6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlk4k16g5r/v1",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"a247n\",\"text\":\"- PMA (Sigma, P8139)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8e83l\",\"text\":\"- Ionomycin (Sigma, I9657)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8m24h\",\"text\":\"- ARV: 3TC/Raltegravir\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aqkng\",\"text\":\"- Fixable Viability Stain 510 (ThermoFisher Scientific , L34957)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4piad\",\"text\":\"- p24 KC57-FITC (Beckman Coulter, 6604665) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8hrfi\",\"text\":\"- p24 28B7-APC (MediMabs, MM-0289-APC)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Thaw cryopreserved PBMCs (maximum 2 vials per 50mL tube) from the HIV-infected individuals and uninfected control in FCS (1mL FCS per 50M cells). Centrifuge (1,500rpm, 5min), and discard supernatant. Resuspend the cells in 25mL of cRPMI and count the cells. Centrifuge (1500rpm, 5min), and discard supernatant.",
+    "Proceed to the negative selection of CD4 T cells -According to cell count: a. If more than 50.10 6 cells: Resuspend the pellet with 800µL of MACS Buffer and complete up to a concentration of 50x10 6 cells/mL. b. If 10x10 6 -50x10 6 cells: Resuspend the pellet with 800µL of MACS Buffer -Transfer the cell suspension in a 5mL FACS tube (max of 150M of cells per tube = 3mL). -Add 25µL/mL of cells of Ab cocktail. -Incubate 5 min at RT. -Vortex beads 30s and add 25µL of rapidspheres per mL of cells. -Add MACS buffer up to 3mL. -Place the tube (without the cap) in the BD magnet for 5min. -Pipet cautiously the cells and transfer them to a 15mL tube containing cRPMI up to 10mL. -Centrifuge the cells (5min, 1,500rpm), and discard the supernatant",
+    "Resuspend the cells in 800µL of cRPMI (+ ARV) and count the cells",
+    "Resuspend cells at 2x10 6 cells/mL in cRPMI (+ ARV) and incubate at 37°C 5% CO2.",
+    "Rest the cells for at least 1hour before proceeding to PMA/ionomycin stimulation -If ART-treated individuals: PMA 162nM, Ionomycin 1µg/mL, 24h -If untreated individuals: PMA 25nM, ionomycin 1µg/mL, 18h",
+    "Incubate cells for 18h or 24h (for samples from untreated VS treated individuals, respectively) at 37°C, 5% CO2",
+    "Collect cells in 5mL tubes and wash the wells with cold PBS. Do not exceed 5x10 6 cells per tube.",
+    "Centrifuge at 1,800rpm for 5min.",
+    "Discard the supernatant and resuspend the cells in 200µL of PBS + Live/Dead stain (1µL L/D stain per mL of PBS). Incubate the cells for 25min at RT.",
+    "Wash the cells with 800µL of PBS/FCS2%. Centrifuge (1,800 rpm, 5min). Discard the supernatant.",
+    "Perform the extracellular staining in PBS/FCS2% (final volume = 100µL/tube) (25min, 4°C).",
+    "Wash with 1.8mL of PBS/FCS2%. Centrifuge (1,800rpm, 6min, 4°C ). Discard the supernatant. As soon as the supernatant is discarded, transfer the tubes on ice.",
+    "Vortex the pellet to avoid clumps (keep the tubes on ice!).",
+    "Gently add 1mL of cold methanol to the cells. As soon as methanol is added to each tube, keep the tube on ice. Incubate 15min, on ice.",
+    "Centrifuge at 2100rpm for 5min, 4°C.",
+    "Discard supernatant and wash the cells with 1mL of PBS/FCS2%.",
+    "Centrifuge at 2100rpm for 5min, 4°C.",
+    "Discard supernatant and proceed to intracellular staining in PBS/FCS2% (final volume = 100µL/tube) (45min, RT ). Antibodies P24 KC57 FITC 1/500 P24 28B7 APC (Stock: 25µg in 125µL H20) 1/500 Dilution A: 1.5uL KC57 + 1.5uL p24 28B7 + 12uL PBS/FCS2% Dilution B: 10uL Dilution A + 490uL PBS/FCS2% Do not vortex the antibodies and the mixes (homogenize with 1mL pipette)",
+    "Wash with 1.8mL of PBS/FCS2%. Centrifuge (2,100 rpm, 5min). Discard the supernatant.",
+    "Resuspend cells in the adequate volume of PBS (NO FCS!)."
+  ],
+  "authors": [
+    "Marion Pardons",
+    "Basiel Cole"
+  ],
+  "creator": "Marion Pardons",
+  "published_on": 1613379435,
+  "created_on": 1604498951,
+  "keywords": []
+}

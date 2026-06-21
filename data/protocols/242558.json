@@ -1,0 +1,37 @@
+{
+  "id": 242558,
+  "title": "Cell lysis for preparation of protein extracts for quantitative proteomics - Kryptoperidinium foliaceum, Nitzschia laevis and Symbiodinium sp.",
+  "uri": "cell-lysis-for-preparation-of-protein-extracts-for-hq46b5yzf",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvry7o2gmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"9m7ej\",\"text\":\"This methodology was developed for the lysis of dinoflagellates and diatoms with tough cell walls, using glass-bead sonication in a lysis buffer containing concentrated urea and detergent. This was necessary for strains where sonication without the presence of glass beads was unable to lyse cells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9i0vo\",\"text\":\"Always use HPLC-grade water throughout this protocol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"7v3ti\",\"text\":\"Turn on the Bioruptor to begin cooling the waterbath to 4°C\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3uf05\",\"text\":\"Pre-warm Triton X-100 to 37 °C\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"13q4a\",\"text\":\"Glass beads, acid-washed \\u003c106µm G4646-100G SigmaAldrich\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6cijf\",\"text\":\"Triton X-100\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cf20n\",\"text\":\"HPLC-grade water\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2qjo1\",\"text\":\"Urea\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9f5pn\",\"text\":\"1M Triethylammonium bicarbonate (TEAB) buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6o8a2\",\"text\":\"15 mL tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"38ilp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6n9ds\",\"text\":\"Equipment:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cld5i\",\"text\":\"Diagenode Bioruptor Plus sonication device            \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bls6c\",\"text\":\"MX-T6-S Classic Roller Mixer with 6 Rollers\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"858u6\",\"text\":\"biosan Orbital thermo-shaker TS-100C Smart\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Ensuring glass beads are well-suspended in a buffer containing Triton X-100 is challenging since the Triton X-100 will cause excessive foaming when vortexing, making pipetting of the buffer challenging. Therefore this protocol uses two buffers. Buffer A: Lysis buffer 8M Urea, 1% Triton X-100, 0.1 M TEAB Buffer B: Beads-in-buffer suspension 8M Urea, 0.1 M TEAB, acid-washed &lt;106 µm glass beads",
+    "Combine Urea and 1M TEAB, and top up to the total buffer volume with HPLC-grade water according to this table below, depending on the number of samples being processed. Once these first three components have been combined to the right volume, then the corresponding quantity of glass beads can be added. Then place on roller mixer to keep the beads suspended. %s %s",
+    "Make a 10% dilution of Triton X-100 in HPLC grade water (1 volume of Triton X-100 in 9 volumes of water) For accurate pipetting, Triton X-100 should be pre-warmed to 37 °C to make it less viscous",
+    "Per sample this buffer contains: 96 mg Urea 20 µL 1M TEAB 30 µL 10% Triton X-100 With HPLC-grade water added to make a total volume of 200 µL. However, Urea should be fully dissolved before adding Triton. Therefore use the following protocol steps to prepare the buffer. To make larger volumes for larger numbers of samples, the amounts and volumes of the components have been calculated in the following table. %s %s",
+    "Combine the total amount of Urea and the TEAB in a tube.",
+    "Calculate ~60% of the total volume of the buffer being prepared, and then add this volume of HPLC-grade water to the Urea and TEAB. Vortex to dissolve the Urea.",
+    "Add the total amount 10% Triton X-100 slowly and gentley to avoid foaming",
+    "Add HPLC-grade water to top-up to the total volume of the buffer. Highly precise ratios are not overly critical, and therefore I typically prepare this buffer in a 15 mL tube and use the measurements printed on the side of the tube as a guide when topping up to the final volume with HPLC-grade water.",
+    "Remove cell pellets in 2 mL tubes from -80 °C freezer and put on ice for this step only until buffers are added.",
+    "Place each sample in the bioruptor. Set to the bioruptor to &#34;High&#34; and sonicate for 15 seconds on, 15 seconds off, for 20 cycles (10 minutes total).",
+    "Whilst keeping the glass beads in Buffer B suspended and evenly distributed by using a combination of a roller mixer and a vortex, add 200 µL of this beads-in-buffer suspension to each sample.",
+    "Add 200 µL Buffer A to each cell pellet sample and then place the tube in a orbital shaker and leave for a few minutes to resuspend. I use a biosan orbital thermo-shakerTS-100C Smart set to maximum speed at room temperature.",
+    "Using 200 µL pipette, transfer all the liquid from each sample into a new tube (some beads are likely to be carried over.",
+    "Centrifuge at 16 000 x g for 1 minute to pellet beads and cell fragments.",
+    "Transfer the supernatant to a new tube and store at -20 °C until ready to process for quantitative proteomics using mass spectrometry.",
+    "Pre-cool a centrifuge with adapter for 1.5 mL and 2 mL tubes to 4 °C"
+  ],
+  "authors": [
+    "Will Lewis",
+    "Ross F. Waller"
+  ],
+  "creator": "Will Lewis",
+  "published_on": 1772038822,
+  "created_on": 1770135850,
+  "keywords": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": 57357,
+  "title": "Post-IMS Autofluorescence Microscopy",
+  "uri": "post-ims-autofluorescence-microscopy-b39mqr46",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl47kx2lo5/v2",
+  "description": "{\"blocks\":[{\"key\":\"c6fit\",\"text\":\"Scope: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8tp8i\",\"text\":\"Obtain autofluorescence microscopy images of tissues after IMS analysis\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4sq9p\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9gflg\",\"text\":\"Expected Outcome: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4rng6\",\"text\":\"A brightfield and green autofluorescence microscopy image of the tissue section that enables registration and correlation of different imaging modalities on a pixel by pixel basis. This also allows for visualization and measurement of laser ablation marks to verify IMS spatial resolution. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Place microscope slide within adapter and insert into the Zeiss AxioScan Z1 Slide Scanner. Be sure to orient the slide with the label facing downward in the adapter. For registration with IMS, match the orientation of the slides within the Zeiss adapter and the Bruker two-slide holder.",
+    "Press &#39;Start Scan&#39; to begin image acquisition. The method will automatically begin generating a focus map of the imaging region using the following parameters:",
+    "The method will acquire a tiled brightfield and autofluorescence image using the following channel parameters: EGFP (ex. 450-490 nm; em. 500-550, green) as focus reference channel ~50-90% LED light source ~90 ms exposure time Brightfield (transmitted light) ~0.2% Transmitted light (TL) lamp intensity ~1.004 ms exposure time",
+    "Resulting czi files can be visualized using Zen or QuPath softwares.",
+    "Open Zeiss Zen software",
+    "Change the file storage location to the appropriate local folder",
+    "Select appropriate scan profile template (e.g. HuBMAP-postAF_10x-LED.czspf)",
+    "Name each slide with the date, donor, and modality information",
+    "Perform a preview scan of each slide",
+    "Define the imaging region that includes the tissue using the Tissue Detection Wizard. This can be found using the gear icon on the right of the Scan Profile selection for each slide. Outline the imaging region area using the polygon, square, circle, or spline tool.",
+    "If desired, images can be exported via Zen software under the Processing tab using the Image Export method in formats including Tiff, PNG, and JPEG.",
+    "This is expected to generate brightfield and autofluorescence microscopy images showing the location, size, and shape of laser ablation spots resulting from MALDI IMS Example of post-IMS autofluorescence microscopy image of human kidney tissue Example of post-IMS autofluorescence microscopy image at 40x magnification showing the location and size of laser ablation marks (measurement of laser spot diameter is indicated by red arrows)",
+    "Coarse focusing of the tissue is performed using the following parameters: EGFP filter set (peak emission 509 nm) as focus reference channel ~30 ms exposure time ~50-90% LED light source Software autofocus Default quality Full search Coarse sampling Z-positions from 3700um to 4300um using ~14.24 µm step size Coarse focus is performed with ~8 support points. Note that exposure times, light source energy, and number of support points may vary based upon tissue type, age of LED light source, and tissue section size and quality.",
+    "Fine focusing of the tissue is performed using the following parameters: EGFP filter set (peak emission 509 nm) as focus reference channel ~30 ms exposure time ~50-90% LED light source Software autofocus Default quality Full search Medium sampling Z-range of 30um using ~7.12 µm step size. Fine focus is performed with ~8 support points. Note that exposure times, light source energy, and number of support points may vary based upon tissue type, age of LED light source, and tissue section size and quality."
+  ],
+  "authors": [
+    "Heath Patterson",
+    "Angela R.S. Kruse",
+    "Jamie Allen",
+    "Katerina V Djambazova",
+    "Madeline E. Colley",
+    "Danielle Gutierrez",
+    "Jeff Spraggins"
+  ],
+  "creator": "Jamie Allen",
+  "published_on": 1680719996,
+  "created_on": 1643050612,
+  "keywords": []
+}

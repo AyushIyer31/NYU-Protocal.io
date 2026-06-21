@@ -1,0 +1,24 @@
+{
+  "id": 233803,
+  "title": "TDA-MIT: Raman imaging protocol",
+  "uri": "tda-mit-raman-imaging-protocol-hgjjb3ukp",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egnrddql5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"d7c8s\",\"text\":\"This protocol describes a Raman imaging workflow for spatially profiling biochemical composition in intact tissue sections, using label-free hyperspectral Raman acquisition to capture vibrational signatures of lipids, proteins, and other biomolecules.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"haus\",\"text\":\"This protocol requires prior approval by the users' Institutional Animal Care and Use Committee (IACUC) or equivalent ethics committee.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "A quartz-bottom culture dish was coated with a poly-D-lysine solution. OCT-embedded mouse lung and skin tissues were sectioned into 14 μm slices, then fixed with 4% PFA in PBS for 15 minutes, followed by three washes with PBSR (PBS + RNase Inhibitor).",
+    "A custom built NIR confocal Raman microscopy system was used for Raman data acquisition. The system was equipped with 785 nm wavelength Ti: Sapphire laser (3900S, Spectra Physics) and beam was filtered by a laser line filter (BPF, LL01 785 12.5, Semrock) and redirected to the dual axes galvanometer mirrors. High-speed XY scanning was performed by the galvanometer mirrors (CT 6210, Cambridge Technology) and large area scanning was performed by XY motorized stage (MS-2000, ASI Imaging). A 0.95 NA objective lens (Olympus UPLSAPO40X2 40X/0.95) was used to both focus the laser light onto the sample and to collect the back scattered light. A piezo actuator combined with a differential micrometer (DRV517, Thorlabs) was used to perform the coarse and fine adjustments, respectively, of the sample focus. A flip mirror was placed after the tube lens so that the sample focal plane from the incoherent transmission source can be observed using a video camera with 44 X magnification. The backscattered Raman light from the sample passes through two dichroic mirrors (DM1: Semrock LPD01 785RU 25, DM2: Semrock LPD01 785RU 25×36×1.1) and was collected by a multi-mode fiber (Thorlabs M14L 01). The collected signal was delivered to the imaging spectrograph (Holospec f/1.8i, Kaiser Optical Systems) and detected by a thermoelectric cooled, back illuminated and deep depleted CCD (PIXIS: 100BR_eXcelon, Princeton Instruments). Data acquisition board (PCI 6251, National Instruments) and MATLAB 2022 software (Mathworks) were used to control the system, acquire the data, and analyze the data. Further details on how the confocal Raman measurements were performed are described previously 1 .",
+    "Tissue slices from mouse lung and skin are placed on top of quartz coverslips in the Petri dish with quartz coverslip bottom (SF-S-D12, WakenBtech). The dish is filled with 2mL of PBSR and wrapped by parafilm. . The optical resolution limit of the system is 0.4um, and we used a sampling pixel size of 3um, this corresponds to an effective sampling-limited resolution of approximately 6 µm 2 . Raman field of view is guided by bright field imaging. For each sample, we selected a field of view in the range of approximately 750–1000 µm × 750–1000 µm, resulting in roughly 250–333 × 250–333 spectral measurements (with 3um pixel size)."
+  ],
+  "authors": [
+    "Jeon Woong Kang",
+    "Ke Zhang"
+  ],
+  "creator": "Ke Zhang",
+  "published_on": 1764565241,
+  "created_on": 1764463792,
+  "keywords": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": 234021,
+  "title": "Holographic calibration",
+  "uri": "holographic-calibration-hgsdb3wa7",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewov11rqpvr2/v1",
+  "description": "{\"blocks\":[{\"key\":\"bp3j5\",\"text\":\"This is the standard protocol for 2-photon holographic calibration with In vivo Ultima Bruker microscope through GRIN lens used for Rodrigues-Vaz and Athalye et al, 2025.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"7k3d5\",\"text\":\"-2-photon lasers (imaging and stimulation) and Pockels cell controller were turned on.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"2rov7\",\"text\":\"-Wear appropriate PPE as required by your institution. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"c3p55\",\"text\":\"•\\tFluorescent slide\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3k6jk\",\"text\":\"•\\tDistilled water \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"131rc\",\"text\":\"•\\t2-photon laser scanning microscope with spatial light modulator module (Ultima In Vivo, Bruker)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6jpb6\",\"text\":\"•\\tFemtosecond Ti:saphire laser (Chameleon Vision-S, Coherent)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"632lg\",\"text\":\"•\\tLow repetition photostimulation laser (Monaco 1035-40, Coherent)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Confirm imaging laser and photostimulation laser are aligned with target at objective output.",
+    "Burn single spot and confirm calibration worked. If not, repeat step 4 as many times as necessary.",
+    "Follow PrairieView software’s calibration routine to ensure alignment between photostimulation and imaging lasers: burn spots",
+    "Focus on top of the sample.",
+    "Place fluorescent sample under 16X water-immersion Nikon objective.",
+    "Measure power of stimulation laser at the 16X water-immersion Nikon objective output. This was done at least once at beginning of each cohort."
+  ],
+  "authors": [
+    "Ines Rodrigues-Vaz"
+  ],
+  "creator": "Ines Rodrigues-Vaz",
+  "published_on": 1765493827,
+  "created_on": 1764700053,
+  "keywords": []
+}

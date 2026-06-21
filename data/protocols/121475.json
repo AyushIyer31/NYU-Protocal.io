@@ -1,0 +1,40 @@
+{
+  "id": 121475,
+  "title": "Time-Lapse Video Microscopy for Assessment of Self-Renewal and Division Kinetics",
+  "uri": "time-lapse-video-microscopy-for-assessment-of-self-d2vb8e2n",
+  "doi": "dx.doi.org/10.1038/protex.2013.022",
+  "description": "{\"blocks\":[{\"key\":\"vlrbd\",\"text\":\"Time-lapse video microscopy is a technique that allows one to assess cellular behavior in real-time. Two-dimensional image data is repeatedly collected at distinct time intervals, and a movie is assembled. Applications include assessment of cell migration, division, communication, growth, and death. A unique advantage to time-lapse video microscopy for assessment of these parameters is that data is collected at the single-cell level, allowing one to assess heterogeneity within a mixed population of cells. Therefore, this is particularly advantageous for cancer biology and stem cell biology. In this protocol, we describe the use of time-lapse video microscopy for (1) the real-time monitoring of cell cycle kinetics of heterogeneous populations of cancer cells, and (2) the real-time assessment of symmetric versus asymmetric stem cell division.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"tufru\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"ebwsg\",\"text\":\"Phenol red-free DMEM or other relevant media for cancer cell culture\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1dbib\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"x1cz7\",\"text\":\"Fetal bovine serum\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"x6a1h\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jmloq\",\"text\":\"Cancer cells (primary or cell line) of choice or putative stem cell population\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qhlxk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fqv3d\",\"text\":\"Vacuum gas plasma-treated 100mm tissue-culture plates\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"wzmxk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jkj4l\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"nb1ks\",\"text\":\"Axiovert 200 M fluorescence microscope (Carl Zeiss, Inc.)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"s7hpc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"m2ltu\",\"text\":\"AxioCam MRm camera\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"tqufr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fpvjy\",\"text\":\"Axioversion software v4.6 (Carl Zeiss, Inc.)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mykhe\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"yjftw\",\"text\":\"ImageJ Java-based software (NIH)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"85a5q\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"hh5yh\",\"text\":\"Fluorescence-activated cell sorter (BD Biosciences)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Beginning with heterogeneous population of cancer cells, obtain fresh sorted cancer cell populations immediately after FACS. Keep cells in phenol red-free media.",
+    "In 100mm vacuum gas plasma-treated plates, seed cancer cells at 5-10% confluency.",
+    "Incubate cells at standard culture conditions of 37°C, 5% CO2.",
+    "Allow 4-8 hours for cells to adhere.",
+    "Using AxioCam MRm camera and Axiovert 200 M fluorescence microscope, acquire first image (time point zero) using both brightfield and fluorescence filters.",
+    "Set microscope to acquire images every 10 minutes for a period of 72 hours. Image acquisition intervals will vary based on expected doubling times of cells from particular tissues of origin.",
+    "Assemble movie of individual images using ImageJ Java-based software.",
+    "Analyze cell cycle division kinetics and asymmetric vs. symmetric stem cell division:",
+    "Observe for anaphase in the parent cell to track individual cell divisions. Record the time to first division (doubling time).",
+    "Observe for anaphase in the daughter cells from the original parent cell. Record the time to first division of these daughter cells.",
+    "Determine if there are significant differences in doubling times between the different subsets of cells and between the two daughters from a single parent stem cell from each subset.",
+    "If using a fluorescent reporter-based approach to identify subsets expressing stem cell genes, observe for asymmetric versus symmetric distribution of fluorescence in the daughter cell after division of the parent cell. This may indicate retention or disappearance of stem cell properties in the daughter cells.",
+    "Note for cell death in the daughter cells.",
+    "Critical Steps Steps 5 and 8d: Phenol red in media will interfere with acquisition of fluorescence images. Step 8a and 8b: Note carefully for differences in cell cycle times of daughters. The assignment of a particular doubling time designating symmetric vs. asymmetric division should be based on the particular tissue of origin. For example, a difference in daughter cell cycle lengths of 8 hours may be appropriate for breast cancer cells.",
+    "This assay will take approximately 96 hours.",
+    "Typical mammalian cancer cells divide every 20-24 hours. These cells are rapid cycling, but since they lack self-renewal ability, they will likely cease to divide after five to ten divisions. These individual cells are expected to become senescent with time. This dying process can be seen by real-time visualization and should be noted. On the contrary, stem-like cancer cells are expected to have the longest doubling times and slowest rates of division. These stem-like cells may divide symmetrically or asymmetrically. Under conditions of low confluency and minimal cell-cell contact, it is expected that a high proportion of cells will divide symmetrically, resulting in two identical daughter stem cells, in an effort to repopulate. As confluency increases and cell-cell contact develops, it is expected that there will be an increase in the frequency of asymmetrically dividing cells.",
+    "No conflicting interests.",
+    "Delineation of breast cancer cell hierarchy identifies the subset responsible for dormancy by Shyam A. Patel, Shakti H. Ramkissoon, Margarette Bryan, Lillian F. Pliner, Gabriela Dontu, Prem S. Patel, Sohrab Amiri, Sharon R. Pine, and Pranela Rameshwar published in Scientific Reports on 05 Feb, 2013 https://dx.doi.org/10.1038/srep00906"
+  ],
+  "authors": [
+    "Pranela Rameshwar",
+    "Shyam Patel",
+    "Sharon Pine"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1360598721,
+  "created_on": 1360598721,
+  "keywords": []
+}

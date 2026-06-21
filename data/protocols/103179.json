@@ -1,0 +1,28 @@
+{
+  "id": 103179,
+  "title": "LC-MS/MS Analysis",
+  "uri": "lc-ms-ms-analysis-dgzj3x4n",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g71388gwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"ear12\",\"text\":\"LC-MS/MS Analysis\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "**Sample Injection** - Inject 3 μL of each sample into the MClass UPLC system (Waters Corp).",
+    "**Sample Trapping** - Trap the sample on a Symmetry C18 20 mm × 180 μm trapping column at a flow rate of 5 μL/min with a solvent composition of 99.9/0.1 v/v water/acetonitrile.",
+    "**Analytical Separation** - Perform analytical separation using a 1.8 μm Acquity HSS T3 C18 75 μm × 250 mm column (Waters Corp.). - Use a 90-minute linear gradient of 5 to 30% acetonitrile with 0.1% formic acid at a flow rate of 400 nanoliters/minute (nL/min). - Maintain the column temperature at 55°C.",
+    "**Mass Spectrometry Data Collection** - Perform data collection on the Thermo Orbitrap Fusion Lumos mass spectrometer equipped with a FAIMSPro device via a nanoelectrospray ionization source. - Use three different compensation voltages (-40V, -60V, -80V).",
+    "**Full MS Scan** - Use data-dependent acquisition (DDA) mode for each compensation voltage (CV). - Perform full MS scan from m/z 375 – 1500 with a resolution of 120,000 (@ m/z 200) and a target AGC value of 4e5 ions. - Set the max fill time to 35 ms.",
+    "**MS/MS Scan** - Acquire MS/MS scans with HCD settings of 30% in the linear ion trap in “rapid” mode. - Use a target AGC value of 1e4. - Set the max fill time to 35 ms. - Employ a 20-second dynamic exclusion to increase the depth of coverage.",
+    "**Cycle Time** - Set the total cycle time for each CV to 0.66 seconds. - Set total cycle times to 2 seconds between like full MS scans.",
+    "**Total Analysis Time** - The total analysis cycle time for each sample injection is approximately 2 hours."
+  ],
+  "authors": [
+    "Shiyi Wang"
+  ],
+  "creator": "Shiyi Wang",
+  "published_on": 1720647445,
+  "created_on": 1720646697,
+  "keywords": []
+}

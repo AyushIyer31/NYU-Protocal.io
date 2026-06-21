@@ -1,0 +1,30 @@
+{
+  "id": 226782,
+  "title": "ODGC Genetic Variant  Protocol",
+  "uri": "odgc-genetic-variant-protocol-g9p6bz5rf",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"7mg30\",\"text\":\"The Acute to Chronic Pain Signatures (A2CPS) Consortium seeks to identify predictive biomarkers of chronic pain using a wide variety of modalities. In this protocol, we describe the methods used to procure genotypes of subjects including automated DNA extraction, automated genotype screening, and, finally, analysis in conjunction with custom cluster file generation. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"32jps\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fmih\",\"text\":\"Genotypes were assessed using GSA Beadchips (Illumina #20068345) plus custom content. The final array consists of \\u003e 650,000 multi-ethnic genome-wide content, curated clinical research variants, and quality control (QC) markers plus ~30,000 markers associated with common psychiatric disorders (Illumina Psych Booster), ~500 additional pharmacogenomics (PGx) markers, and 5,000 custom markers selected by the A2CPS Consortium to be of particular interest in the study of chronic pain.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"qy4qq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"ak5zr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"ahajv\",\"text\":\"For all agents listed below, wear protective gloves, protective clothing, eye protection, and face protection, and dispose of contents/container to an approved waste disposal plant.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4fnm1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5ho8e\",\"text\":\"Human blood should be handled using universal precautions. Handle within a biosafety cabinet until lysis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":11}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"dw2jb\",\"text\":\"PaxGene Blood DNA Tube, 2.5 mL (PreAnalytiX #761165)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8vn7j\",\"text\":\"QIAsymphony DSP DNA Midi Kit (Qiagen #937255)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fd7if\",\"text\":\"Qubit dsDNA HS Assay Kit (Invitrogen #Q32854)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bkf2q\",\"text\":\"Nuclease-free water\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4q3uf\",\"text\":\"GSA Beadchips (Illumina #20068345) with custom content\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cj435\",\"text\":\"Infinium HTS Automated Workflow (Illumina)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Draw blood in 2.5 mL PaxGene Blood DNA tube. Store at -80°C until ready to extract.",
+    "Thaw blood samples at room temperature on bench top.",
+    "Prepare QIAsymphony DSP DNA Midi Kit and perform extraction on QIAsymphony instrument as per manufacturer protocol ( EN-QIAsymphony-DNA-Handbook-for-software-version-31-or-lower.pdf , p. 24-26). We use the following parameters: Blood_400_V6_DSP protocol DNABlood400V6DSP-EN.pdf 400 µL sample volume 100 µL elution volume",
+    "Perform Infinium HTS Automated Workflow following manufacturer instructions beginning at chapter 3, step 2: amplification. infinium-hts-assay-reference-guide-15045738-04.pdf",
+    "Dilute DNA 1:10 with nuclease-free water. Quantify DNA with the Qubit dsDNA HS Assay Kit. Qubit_dsDNA_HS_Assay_UG.pdf",
+    "Custom cluster files must be created to process genotype data from Illumina Infinium arrays with custom content. Our custom cluster file was generated following the instructions in the attached technical note using data from Runlists 1-3 in Illumina GenomeStudio v2-0-5-0. custom-cluster-file-cnv-tech-note-770-2017-017.pdf",
+    "Genetic variant data from Runlists 1-3 were processed in Illumina GenomeStudio v2-0-5-0 (attached). Runlists 4+ were processed with Illumina&#39;s DRAGEN Array command line interface v1.0.0 using the custom cluster file previously generated ( GitHub ). genomestudio-genotyping-module-v2-user-guide-11319113-01.pdf",
+    "Dilute DNA samples to a final DNA concentration of 200 ng per 6 uL with nuclease-free water."
+  ],
+  "authors": [
+    "Cayla Mason",
+    "Kathleen Fisch",
+    "Kristen Jepsen"
+  ],
+  "creator": "Cayla Mason",
+  "published_on": 1758150919,
+  "created_on": 1757370129,
+  "keywords": []
+}

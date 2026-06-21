@@ -1,0 +1,25 @@
+{
+  "id": 103191,
+  "title": "Generating pPB-CAG-mCherry-CAAX Plasmid",
+  "uri": "generating-ppb-cag-mcherry-caax-plasmid-dgzx3x7n",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l2q34pl1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"2pqg8\",\"text\":\"Generating pPB-CAG-mCherry-CAAX Plasmid\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "**Obtain Plasmids** - Obtain pPB-CAG-EGFP and pGLAST-PBase plasmids from Dr. Joseph Loturco.",
+    "**Insert mCherry-CAAX into pPB-CAG-EGFP** - Insert mCherry-CAAX between XmaI and NotI restriction sites in pPB-CAG-EGFP to replace EGFP.",
+    "**Insert hU6 Promoter and shRNA into pPB-CAG-mCherry-CAAX** - Amplify a DNA fragment containing hU6 promoter and shRNA from pLKO.1-shRNA using Phusion High-Fidelity DNA Polymerase with primers introducing SpeI restriction sites: - Forward Primer: GGACTAGTCAGGCCCGAAGGAATAGAAG - Reverse Primer: GGACTAGTGCCAAAGTGGATCTCTGCTG - Purify the PCR products and digest them with SpeI.",
+    "**Ligation into pPB-CAG-mCherry-CAAX** - Ligase the purified and SpeI-digested DNA fragment containing hU6 promoter and shRNA into pPB-CAG-mCherry-CAAX at the SpeI restriction site.",
+    "**Confirmation by Analytical Digest and Sequencing** - Perform an analytical digest with EcoRI to confirm the correct orientation of the inserted DNA fragment. - Sequence the plasmid to confirm the accurate insertion of hU6 promoter and shRNA sequences."
+  ],
+  "authors": [
+    "Shiyi Wang"
+  ],
+  "creator": "Shiyi Wang",
+  "published_on": 1720663793,
+  "created_on": 1720657313,
+  "keywords": []
+}

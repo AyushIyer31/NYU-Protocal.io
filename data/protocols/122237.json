@@ -1,0 +1,32 @@
+{
+  "id": 122237,
+  "title": "Unified rational protein engineering with sequence-based deep representation learning\n",
+  "uri": "unified-rational-protein-engineering-with-sequence-d3k58ky6",
+  "doi": "dx.doi.org/10.21203/rs.2.13774/v1",
+  "description": "{\"blocks\":[{\"key\":\"7aqet\",\"text\":\"This protocol describes the computational steps necessary to reproduce the results described in the paper \\\"Unified rational protein engineering with sequence-only deep representation learning\\\" by Alley et al.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":107,\"length\":84}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5dv1p\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"xxpqk\",\"text\":\"Rational protein engineering requires a holistic understanding of protein function. Here, we apply deep learning to unlabelled amino acid sequences to distill the fundamental features of a protein into a statistical representation that is semantically rich and structurally, evolutionarily, and biophysically grounded. We show that the simplest models built on top of this unified representation (UniRep) are broadly applicable and generalize to unseen regions of sequence space. Our data-driven approach reaches near state-of-the-art or superior performance predicting stability of natural and de novo designed proteins as well as quantitative function of molecularly diverse mutants. UniRep further enables two orders of magnitude cost savings in a protein engineering task. Here we provide a protocol for reproducing these results.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":216,\"length\":15},{\"style\":\"italic\",\"offset\":594,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"peyak\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"7rbvm\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"uhgqq\",\"text\":\"No reagents necessary\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vbqti\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"h7w3v\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"sbry6\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"vstqa\",\"text\":\"Preferably, m5.12xlarge or m5.24xlarge AWS instance with Ubuntu Server 18.04 LTS AMI (for example, ami-0f65671a86f061fcd).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mktxd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dnjm9\",\"text\":\"Code and dependencies described under \\\"Requirements\\\" in https://github.com/churchlab/UniRep-analysis\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":56,\"length\":44}],\"data\":{}},{\"key\":\"2cc0k\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"2C0CD503EF1511EF9E6E0A58A9FEAC02\",\"url\":\"https://github.com/churchlab/UniRep-analysis\"}}}}",
+  "steps": [
+    "Clone the repository containing the code with &lt;code&gt;git clone https://github.com/churchlab/UniRep-analysis.git&lt;/code&gt;",
+    "Download and unzip the data using bash commands under &#34;Getting the data&#34; in the repository README",
+    "Reproduce figures and retrain top models by running ipython notebooks and python scripts as described under &#34;Usage&#34; in the repository README",
+    "1. Check that the requirements are in place (see &#34;Requirements&#34; in the repository README) 2. Make sure the path to data folder is correct and accessible 3. Reach out for assistance",
+    "&lt;1 hour for regenerating figures ~7 hours for retraining top models and recomputing metrics",
+    "Detailed description of results available here: https://www.biorxiv.org/content/10.1101/589333v1",
+    "E.C.A., G.K., and S.B. are in the process of pursuing a patent on this technology. S.B. is a former consultant for Flagship Pioneering company VL57. A full list of G.M.C.’s tech transfer, advisory roles, and funding sources can be found on the lab’s website: http://arep.med.harvard.edu/gmc/tech.html",
+    "Unified rational protein engineering with sequence-only deep representation learning by Ethan C. Alley, Grigory Khimulya, Surojit Biswas, Mohammed AlQuraishi, George M. Church https://dx.doi.org/10.1101/589333"
+  ],
+  "authors": [
+    "Ethan Alley",
+    "Grigory Khimulya",
+    "Surojit Biswas",
+    "Mohammed AlQuraishi",
+    "George M. Church"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1574255125,
+  "created_on": 1574255125,
+  "keywords": []
+}

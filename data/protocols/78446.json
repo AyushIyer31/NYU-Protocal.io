@@ -1,0 +1,40 @@
+{
+  "id": 78446,
+  "title": "[Modified] Lake ABPS Protocol - University of Maine",
+  "uri": "modified-lake-abps-protocol-university-of-maine-cqunvwve",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v9d5yzg3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"d35qg\",\"text\":\"A modified version of the Lake ABPS protocol as described in Thomson-Laing et al. 2022\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7sn4a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"12c9c\",\"text\":\"Protocol successful at detecting fish sedDNA collected from lake surface sediments, as well as river sediments during an anadromous fish sea-run migration\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":65,\"length\":7}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "CENTRIFUGE sediment samples at 5250 x g for 00:05:00 DISCARD pore water using a sterile pipette, so only sediment remains",
+    "ADD 10 g of wet sediment to a sterile 50 mL tube ADD 6 mL sodium hydroxide (NaOH, 0.33M) to the sample ADD 3 mL Tris-EDTA (pH 8.0) to the sample",
+    "CENTRIFUGE samples at 5250 x g for 01:00:00 TRANSFER 7.5 mL of supernatant to a new, sterile 50 mL tube",
+    "ADD 7.5 mL Tris-HCl (pH 6.7) ADD 1.5 mL sodium acetate (3M, pH 5.2) ADD 30 mL molecular grade ethanol",
+    "INCUBATE samples at -20 °C for 01:00:00",
+    "CENTRIFUGE sample at 5250 x g for 01:00:00 DISCARD supernatant ALLOW remaining ethanol to evaporate off of concentrated pellet before proceeding to next step",
+    "WEIGH the concentrated pellet and split it into multiple 0.5 g replicates TRANSFER each 0.5 g replicate into a PowerBead Pro Tube",
+    "ADD 800 µL, of Solution CD1 to each PowerBead Pro Tube SECURE PowerBead Pro Tubes horizontally to a Vortex Adapter VORTEX for 00:10:00 ROTATE tubes so caps are oriented in the opposite direction VORTEX for another 00:10:00",
+    "CENTRIFUGE sample at 15000 x g for 00:02:00 TRANSFER all supernatant to a clean 2 mL Microcentrifuge Tube",
+    "ADD 200 µL of Solution CD2 VORTEX briefly to mix",
+    "CENTRIFUGE at 15000 x g for 00:01:00 AVOIDING the pellet, transfer all supernatant to a clean 2 mL Microcentrifuge Tube",
+    "ADD 600 µL of Solution CD3 VORTEX briefly to mix",
+    "LOAD 650 µL of lysate onto an MB spin column CENTRIFUGE at 15000 x g for 00:01:00 DISCARD the liquid flow-through",
+    "REPEAT step 14 to ensure all the lysate has passed through the MB Spin Column CAREFULLY place the MB spin column into a clean 2mL collection tube",
+    "ADD 500 µL of Solution EA to the MB spin column CENTRIFUGE at 15000 x g for 00:01:00 DISCARD the liquid flow-through and place the MB spin column into the same 2 mL Collection Tube",
+    "ADD 500 µL of Solution C5 to the MB spin column CENTRIFUGE at 15000 x g for 00:01:00 DISCARD the liquid flow-through and place the MB Spin Column into a new 2 mL Collection Tube",
+    "CENTRIFUGE at 16000 x g for 00:02:00 CAREFULLY place the MB spin column into a new 2mL Collection Tube",
+    "ADD 50-100 µL of Solution C6 to the center of the white membrane in the MB Spin Column Adjust the amount of Solution C6 added to each replicate so that the final volume, once all replicates are pooled together (step 21), totals 200ul For example, if at Step 8 sample A weighed 1.0g and was split into two 0.5g replicates: A1 and A2. At this step (Step 19), A1 and A2 would each receive 100ul Solution C6, so that when they are pooled together, their total volume is 200ul If sample A was split into three 0.5g replicates (A1, A2, and A3), each would receive approximately 66ul of Solution C6",
+    "CENTRIFUGE at 15000 x g for 00:01:00 DISCARD the MB Spin Column POOL all replicates into a sterile 1.5 mL Microcentrifuge Tube DNA is now ready for downstream applications For best results in qPCR, use ~ 6 µL of extracted DNA template per PCR reaction",
+    "VORTEX sample at max speed for 00:01:00 INCUBATE sample at 65 °C for 00:55:00 ALLOW samples to cool to Room temperature"
+  ],
+  "authors": [
+    "Grayson Huston"
+  ],
+  "creator": "Grayson Huston",
+  "published_on": 1680733782,
+  "created_on": 1678384882,
+  "keywords": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": 7343,
+  "title": "Bioluminescence Resonance Energy Transfer at various ratios of expressed proteins",
+  "uri": "bioluminescence-resonance-energy-transfer-at-vario-jepcjdn",
+  "doi": "dx.doi.org/10.17504/protocols.io.jepcjdn",
+  "description": "{\"blocks\":[{\"key\":\"8l7f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"56rv1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"3q4ci\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"1od0t\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "1. Plate HEK-293T cells in 384 plates with 3000 cells per well in 50 µL of medium 2. Centrifuge plate at 900 g for 1 min. 3. Incubate cells at 37°C, 5%CO2, for 3h.",
+    "1. Prepare a DNA mix with 25 ng of plasmid expressing Nluc-tagged and YFP-tagged protein in 1 µL of DMEM without FBS. Use a 1:1 ratio of plasmid or if specified, range the ratio of plasmids from 2:1 to 1:4 (Nluc:YFP). 2. Mix with 0.15 µL of DuGENE6 (Promega) in 4 µL of DMEM without FBS. 3. Incubate 30 min at room temperature and add gently 5µL to each well.",
+    "Measure direct bioluminescence from the donor (Nluc) and the acceptor (YFP, noted NlucY) using a luminescence plate reader (ex: Wallac 1420 VICTOR 3V multilabel plate reader (PerkinElmer).",
+    "1. The energy transfer between the Nluc and YFP (BRET) is calculated according to the following formulas (2 and 3) and normalized to a YFP-Nluc linked recombinant protein: CF value = NlucY value (prot-Nluc) / Nluc value (prot-Nluc) (2) netBRET = [ NlucY value - ( Nluc value x CF value ) ] / Nluc value (3) 2. A threshold of specific interaction was determined using the mean+3SD of the negative controls within each experiment."
+  ],
+  "authors": [
+    "Benoit Besson",
+    "Florian Sonthonnax",
+    "Magalie Duchateau",
+    "Youcef Ben Khalifa",
+    "Florence Larrous",
+    "Hyeju Eun",
+    "Véronique ourdel",
+    "Mariette Matondo",
+    "Julia Chamot-Rooke",
+    "Regis Grailhe",
+    "Hervé ourhy"
+  ],
+  "creator": "Benoit Besson",
+  "published_on": 1509386826,
+  "created_on": 1502796327,
+  "keywords": []
+}

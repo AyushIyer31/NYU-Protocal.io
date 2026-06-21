@@ -1,0 +1,31 @@
+{
+  "id": 230700,
+  "title": "Rotarod Test",
+  "uri": "rotarod-test-hdikb24cx",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv5r6qjg1b/v3",
+  "description": "{\"blocks\":[{\"key\":\"c6g00\",\"text\":\"Behavioral assay to measure motor impairments, specifically balance and coordination, in mice.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"e5a\",\"text\":\"MedAssociates mouse rotarod equipment\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eir0f\",\"text\":\"computer with rotarod software\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ts2i\",\"text\":\"Papertowels/kimwipes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"af8b2\",\"text\":\"ethanol\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5d9fg\",\"text\":\"water\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5qbq0\",\"text\":\"timer\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Set up rotarod equipment as needed and clean thoroughly (Med Associates 5 Station Rotarod Mouse (ENV-571 o4 ENV-574).",
+    "Turn on rotarod using green button and log into computer. Open software directly from desktop once machine is ON and connected.",
+    "Specify settings: a. Protocol: Increasing speed b. Speed: 4.0- 40 RPM c. File name [EXP NAME].txt i. Important: save file as .txt to then convert to excel once saved. d. Subject ID: animal number",
+    "Place mouse on rotarod—can place up to five animals at a time. Make sure mice are all facing the same direction (i.e. wall, AWAY from experimenter) before starting.",
+    "Press RESET to start. IMPORTANT. IF YOU DO NOT PRESS RESET, THE SPEED SETTINGS WON’T APPLY.",
+    "Record behavior for 5 minutes or until mouse falls. If mouse falls &lt;5s, place back on rod, reset zone using button, and continue recording. If mouse stays static (not walking/running but gripping rod) and spins more than three times, remove and mark as failed trial. a. IMPORTANT: The sensors register when a mouse falls and stops experiment for that zone. You must remove the fallen mouse as quickly as possible so that it doesn’t intercept another zone.",
+    "Place mice back in home cage and leave to rest for one minute before starting next trial. Clean rod in the meantime (within cage, use only water and/or kimwipe. Between cages, clean rod with ethanol andwater).",
+    "Perform five 5-minute (300 second) trials per cage.",
+    "Acclimate mice to room for at least 1 hour.",
+    "Wait 2-3 minutes before starting the next trial."
+  ],
+  "authors": [
+    "Sabina Marciano",
+    "Roberta Marongiu"
+  ],
+  "creator": "Jacquelyn Haytayan",
+  "published_on": 1761322655,
+  "created_on": 1761322542,
+  "keywords": []
+}

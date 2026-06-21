@@ -1,0 +1,28 @@
+{
+  "id": 3885,
+  "title": "ImageJ plate count protocol",
+  "uri": "imagej-plate-count-protocol-f2mbqc6",
+  "doi": "dx.doi.org/10.17504/protocols.io.f2mbqc6",
+  "description": "{\"blocks\":[{\"key\":\"a21t1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"brkcp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"38vj7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"4aa1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Capture Image Using a high-resolution camera set on &#39;Close-up&#39; mode (the setting with the flower a ) take a clear picture of the plate. Name and save the image.",
+    "Open ImageJ a ImageJ MAC OS, Linux, Windows",
+    "Open Image click on File -&gt; Open -&gt; and open the image",
+    "Change image to 8 bit select Image -&gt; Type -&gt; 8 bit a",
+    "Adjust Threshold 1. select Image -&gt; Adjust -&gt; Threshold... a 2. Adjust threshold settings so that just the colonies are highlighted in red. a a 3. Click Apply. This will turn the image into a black and white binary image.",
+    "Apply Watershed select Process -&gt; Binary -&gt; Watershed This will seperate out colonies ahat are touching so they will be counted seperately. a The image must be saved in binary form to apply watershed.",
+    "Count colonies Using the ImageJ tools draw a circle around the coloneis to be counted. a select Analyze -&gt; Analyze Particles a I have not been able to manually seperate out colonies that the watershed does not recognize so the final count is often underestimated.",
+    "Colony count data Summary tab gives total count a"
+  ],
+  "authors": [
+    "Jeric Harper"
+  ],
+  "creator": "Jeric Harper",
+  "published_on": 1476469245,
+  "created_on": 1475771156,
+  "keywords": []
+}

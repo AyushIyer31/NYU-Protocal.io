@@ -1,0 +1,24 @@
+{
+  "id": 4644,
+  "title": "Multiple Alignments and Weblogo",
+  "uri": "multiple-alignments-and-weblogo-gscbwaw",
+  "doi": "dx.doi.org/10.17504/protocols.io.gscbwaw",
+  "description": "{\"blocks\":[{\"key\":\"k7rk\",\"text\":\"This protocol show you how to create a sequence alignment with multiple sequences using CLUSTAL Omega and to futher modify it with Jalview and visualize it with Weblogo.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"6bo92\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"9inhm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"6km2l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Before you can start with the creation of multiple sequence alignments you need to have a FASTA file containing multiple full length sequences. One way to create such a FASTA file is using BLAST. Attached is a protocol for a reciprocal best hit BLAST that creates the FASTA files you need. The Python script csv _to_fasta.py will create FASTA files from the CSV files that are normally produced by the attached protocol. python csv_to_fasta.py Reciprocal Best Hit BLAST by Nicolas M Schmelling",
+    "Once you have the FASTA file with multiple sequences you can start aligning them. The following command will create such an alignment. You need to specify the input and output file name, the seqtype (whether it is protein or nucleotide), and the number of iterations. The output FASTA file can directly be used for the creation for Weblogos or the optional modification with Jalview. Parameter in: Input file name. infmt: Input format. Recommended: FASTA seqtype: Type of sequences in your input file (protein or nucleotide). out: Output file name outfmt: Output format. Recommended: FASTA dealign: Dealignes the sequences before the actual alignment. iter: Number of iterations, i.e. number of sequence alignments that are produced to calculate the average alignment max-guidetree-iteration: Number of iterations to create the guidetree. clustalo --in INPUT_FILE --infmt fasta --seqtype TYPE --dealign --out OUTPUT_FILE --outfmt fasta --iter NUMBER --max-guidetree-iterations NUMBER --force",
+    "You can use Jalview to analyze your alignment with graphical visualization. Jalview provides also a convenient way to slice alignments and remove gaps for a single reference sequence. The following instructions describes how to do it. 1. Open the alignment FASTA file in Jalview. a 2. Choose a reference sequence, right click on it and select Hide Insertion . a 3. Save alignment under a new name. a http://www.jalview.org",
+    "In the last step you want to create a summary visualization of your alignment. Weblogos are a great way to do so, because they create a conservation score for each position. You can use your original alignment or use the modified alignment that you created with Jalview a Upload FASTA file from computer. Choose output format. Vector graphic format is recommended. a If you produce multiple alignments, it is recommended to set a fixed line length. If you choose a non-vector graphic format, it is recommended to set a high resolution, i.e. 300 dpi. http://weblogo.berkeley.edu/logo.cgi"
+  ],
+  "authors": [
+    "Nicolas Schmelling"
+  ],
+  "creator": "Nicolas M Schmelling",
+  "published_on": 1482153168,
+  "created_on": 1481814974,
+  "keywords": []
+}

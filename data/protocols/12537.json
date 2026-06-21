@@ -1,0 +1,42 @@
+{
+  "id": 12537,
+  "title": "Predicting the progression of ophthalmic disease based on slit-lamp images using a deep temporal sequence network",
+  "uri": "predicting-the-progression-of-ophthalmic-disease-b-qgzdtx6",
+  "doi": "dx.doi.org/10.17504/protocols.io.qgzdtx6",
+  "description": "{\"blocks\":[{\"key\":\"7c8dr\",\"text\":\"Ocular images play an essential role in ophthalmology. Current research mainly focus on computer-aided diagnosis using slit-lamp images, however few studies have been done to predict the progression of ophthalmic disease. Therefore by exploring an effective approach of prediction can help to plan treatment strategies and to provide early warning for the patients. In this study, we present an end-to-end temporal sequence network (TempSeq-Net) to automatically predict the progression of ophthalmic diseases based on consecutive slit-lamp images. First, we comprehensively compare six potential combinations of three convolutional neural networks and long short term memory (or recurrent neural network) in terms of effectiveness and efficiency, to obtain the optimal TempSeq-Net model. Second, we analyze the impacts of sequence lengths on model’s performance which help to evaluate their stability and validity and to determine the appropriate range of sequence lengths.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"ecogo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"el3ei\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"486dt\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "This protocol requires libraries: • python (https://www.python.org/) • Caffe - Deep learning framework (http://caffe.berkeleyvision.org/) • Numpy (http://www.numpy.org/)Each library can be verified on the property websites. The main experiment steps are the following: prerequisite libraries, ophthalmic dataset and Temseq-Net code preparation, Temseq-Net models training (using script), Models evaluation (using python script). Install prerequisites (Python, Caffe, Numpy)",
+    "Evaluate the performance of the six potential prediction models The test code is in $ROOT/examples/test • Run 5-6classify_video-alexnet.py to test: in python terminal. Evaluate the performance of the six potential prediction models.",
+    "Train six potential prediction models for ophthalmic disease • Run the run_lstm_alexnet_RGB.sh script to train the lstm-alexnet model cd $ROOT/examples/LSTM-AlexNet sh run_lstm_alexnet_RGB.sh • Run the run_lstm_googlenet_RGB.sh script to train the lstm-googlenet model cd $ROOT/examples/LSTM-GoogLeNet sh run_lstm_googlenet_RGB.sh • Run the run_lstm_resnet_RGB.sh script to train the lstm-resNet model cd $ROOT/examples/LSTM-ResNet sh run_lstm_resnet_RGB.sh Train six potential prediction models for ophthalmic disease.",
+    "Download the pre-trained models • alexnet model:（https://people.eecs.berkeley.edu/~lisa_anne/single_frame_all_layers_hyb_RGB_iter_5000.caffemodel）, put it in $ROOT/examples/LSTM-AlexNet • googlenet model:（https://github.com/BVLC/caffe/tree/master/models/bvlc_googlenet）, put it in $ROOT/examples/LSTM-GoogLeNet • ResNet-50 model:（https://github.com/KaimingHe/deep-residual-networks#models）, put it in $ROOT/examples/LSTM-ResNet Download the pre-trained models.",
+    "Ophthalmic dataset and Temseq-Net code preparation The TempSeq-Net prediction system for ophthalmic disease is developed based on the caffe framework. The ophthalmic sequence dataset and Temseq-Net code: https://github.com/Ophthalmology-CAD/TempSeq-Net. Clone this repository to your folder in the Linux OS (such as Ubuntu 14.04 64bits), let&#39;s refer to it as $ROOT git clone https://github.com/Ophthalmology-CAD/TempSeq-Net.gitCompile the caffe and pycaffe. cd $ROOTmake all make test make runtest make pycaffe Download the ophthalmic sequence datasets and the TempSeq-Net prediction code from https://github.com/Ophthalmology-CAD/TempSeq-Net. And then compile the TemSeq-Net code."
+  ],
+  "authors": [
+    "Jiewei Jiang",
+    "Xiyang Liu",
+    "Lin Liu",
+    "Shuai Wang",
+    "Erping Long",
+    "Haoqing Yang",
+    "Fuqiang Yuan",
+    "Deying Yu",
+    "Kai Zhang",
+    "Liming Wang",
+    "Zhenzhen Liu",
+    "Dongni Wang",
+    "ChangZun Xi",
+    "Zhuoling Lin",
+    "Xiaohang Wu",
+    "Jiangtao Cui",
+    "Mingmin Zhu",
+    "Haotian Lin"
+  ],
+  "creator": "Jiewei Jiang",
+  "published_on": 1533139563,
+  "created_on": 1527389011,
+  "keywords": []
+}

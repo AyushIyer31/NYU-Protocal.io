@@ -1,0 +1,31 @@
+{
+  "id": 85694,
+  "title": "Analysis of immofluorescence images in ImageJ",
+  "uri": "analysis-of-immofluorescence-images-in-imagej-cxw6xphe",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v9py4zg3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"327qc\",\"text\":\"Analysis at a single cell level of images taken on confocal\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Import image into ImageJ as a TIFF file.",
+    "Set scale for Image by going to Analyze --&gt; set scale. Set distance in pixels and unit of length to appropriate values for objective images were collected with.",
+    "Convert image to 8 bit going to Image --&gt; type --&gt; 8 bit.",
+    "Open up ROI manager using Analyser --&gt; tools --&gt; ROI manager.",
+    "Use freehand selection tool to carefully draw around the outline of each cell. For each cell outline add to ROI manager by selecting ADD.",
+    "Set up measurement parameters in Analyse --&gt; set measurements --&gt; select AREA, MIN &amp; MAC GREY AREA, INTEGRATED DENSITY, MEAN GREY VALUE AND LIMIT TO THRESHOLD.",
+    "If a multichannel image convert to composite.",
+    "Go to IMAGE --&gt; ADJUST --&gt; THRESHOLD. From drop down menu select intermodes.",
+    "Use a consistent threshold for all images,set to threshold and in ROI manager select MEASURE.",
+    "Calculate a background fluorescence of each image aquired by drawing 3 ROI not including a cell. Take a measurement of background using the same threshold settings.",
+    "Calculate corrected total cell fluorescence using = integrated density measurement - (cell area * mean average background fluorescence)."
+  ],
+  "authors": [
+    "rachel.bates Bates"
+  ],
+  "creator": "rachel.bates Bates",
+  "published_on": 1700235054,
+  "created_on": 1690756046,
+  "keywords": []
+}

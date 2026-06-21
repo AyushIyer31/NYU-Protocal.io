@@ -1,0 +1,27 @@
+{
+  "id": 44006,
+  "title": "Vivarium Population Spenser: Emigration protocol",
+  "uri": "vivarium-population-spenser-emigration-protocol-bn8emhte",
+  "doi": "dx.doi.org/10.17504/protocols.io.bn8emhte",
+  "description": "{\"blocks\":[{\"key\":\"2b9s3\",\"text\":\"Description of the steps followed by Vivarium Population Spenser library when running the Emigration module. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"1f5ap\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9pg0e\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"95qmr\",\"text\":\"The rates used in the Emigration component are found here:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dg6oa\",\"text\":\"https://github.com/alan-turing-institute/daedalus/blob/develop/persistent_data/Emig_2011_2012_LEEDS2.csvv\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":104}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"2887B26719F011EBB41B0A58A9FEAC2A\",\"url\":\"https://github.com/alan-turing-institute/daedalus/blob/develop/persistent_data/Emig_2011_2012_LEEDS2.csv\"}}}}",
+  "steps": [
+    "For each time step:",
+    "Divide the annual international emigration rates for that local authority by the number of time steps existing in a year.",
+    "Select all individuals in the sample that appear as &#34;alive&#34; and have an associated gender.",
+    "For these individuals, get the emigration rate given their age, gender, ethnicity and location and turn it into a probability.",
+    "Using random sampling and the emigration probability of the individuals, choose which individuals emigrate in that time step.",
+    "Change the status of these individuals from &#34;alive&#34; to &#34;emigrated&#34;. Record the time when they emigrated."
+  ],
+  "authors": [
+    "Camila Rangel Smith",
+    "Kasra Hosseini"
+  ],
+  "creator": "Camila Rangel Smith",
+  "published_on": 1604059166,
+  "created_on": 1603980103,
+  "keywords": []
+}

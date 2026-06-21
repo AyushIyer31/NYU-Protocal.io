@@ -1,0 +1,27 @@
+{
+  "id": 314823,
+  "title": "Measuring catalytic oxygen reduction by purified proteins using a Seahorse XFe96/XF96 Pro Analyzer",
+  "uri": "measuring-catalytic-oxygen-reduction-by-purified-p-jxpfcpmjp",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2lyob1qgx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"ehud\",\"text\":\"This protocol describes a microplate‑based method for measuring oxygen consumption by purified redox enzymes using the Agilent‱ Seahorse XF Analyzer. The workflow outlines how to prepare reagents, load injection ports, initiate reactions, and record oxygen levels during the first measurement cycle after injection.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":126,\"length\":1}],\"data\":{}},{\"key\":\"etdd1\",\"text\":\"The method enables users to quantify catalytic oxygen reduction in vitro or to detect redox‑dependent interactions between purified proteins. When applied correctly, the assay yields a clear, concentration‑dependent decrease in dissolved oxygen following reaction initiation, providing a reproducible readout of enzymatic activity.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"249C54CB34CA11F1A6910A58A9FEAC02\",\"name\":\":tm:\"}}}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"9pto6\",\"text\":\"Hydrate cartridge the day before or set desired instrument operating temperature.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"3tnne\",\"text\":\"Monitor and export Oxygen level as opposed to the default OCR\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"cl05h\",\"text\":\"Agilent‱ Seahorse XFe96/XF Pro Analyzer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":7,\"length\":1}],\"data\":{}},{\"key\":\"5lhjk\",\"text\":\"Agilent‱ Seahorse XFe96/XF Pro sensor cartridge (Agilent, Cat no. 103792-100)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":7,\"length\":1}],\"data\":{}},{\"key\":\"993m1\",\"text\":\"Agilent‱ Seahorse Calibrant solution (Agilent, Cat no. 100840-000)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":7,\"length\":1}],\"data\":{}},{\"key\":\"csuro\",\"text\":\"Agilent‱ Seahorse XF96 microplate (Agilent, Cat no. 103794-100) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":3,\"offset\":7,\"length\":1}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"8806F4CC34CA11F18C5F0A58A9FEAC02\",\"name\":\":tm:\"}},\"1\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"8806F4CC34CA11F18C5F0A58A9FEAC02\",\"name\":\":tm:\"}},\"2\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"8806F4CC34CA11F18C5F0A58A9FEAC02\",\"name\":\":tm:\"}},\"3\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"8806F4CC34CA11F18C5F0A58A9FEAC02\",\"name\":\":tm:\"}}}}",
+  "steps": [
+    "Hydrate a Seahorse XFe96/XF 96 Pro sensor cartidge using a XF calibrant solution according to manufacturers instructions and incubate overnight in the dark. Turn on the instrument and set to the desired operating temperature.",
+    "Load drug port A on the sensor cartridge with 10 uL of reducing agent/reaction initiator at 10X the active concentration",
+    "Perform cartridge calibration step",
+    "Load 90 uL of purified enzyme onto a Seahorse XFe96/XF 96 pro microplate wells, avoid loading the four corner wells that are used for background subtraction.",
+    "Once calibration is finished, load the microplate to begin measurements",
+    "Set up assay protocol: Mix/Measure cycles: minimum duration available, typically 2 minutes on modern instruments Include at least 3 baseline measurement cycles before injecting port A Include at least 3 post injection measurement cycles",
+    "After the run has finished , export per well data set to Oxygen level instead of OCR. Quantify average oxygen level across the last measurement cycle in the baseline prior to injection, and quantify the average oxygen level across the first measurement cycle after injection. Quantify oxygen reduction by: Oxygen reduction = Oxygen level before injection - Oxygen level post injection"
+  ],
+  "authors": [
+    "Erik Lacko"
+  ],
+  "creator": "Erik Lacko",
+  "published_on": 1779104191,
+  "created_on": 1775816793,
+  "keywords": []
+}

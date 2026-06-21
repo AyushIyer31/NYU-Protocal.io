@@ -1,0 +1,33 @@
+{
+  "id": 5147,
+  "title": "T7 Endonuclease Assay",
+  "uri": "t7-endonuclease-assay-g93bz8n",
+  "doi": "dx.doi.org/10.17504/protocols.io.g93bz8n",
+  "description": "{\"blocks\":[{\"key\":\"a795r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"542n6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"eh9mu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"2a7vb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Design genomic DNA primers that are approximatley 18 to 22 basepairs in length and have 45-55% GC content. For best results, use primers with a Tm greater than 55 C. Design primers to yield amplicon length between 400-500 bp. In addition, design primers so that the predicted cleavage site is not in the center of the amplicon and the detection reaction will yield two distinct product bands.",
+    "Spin down cells transfected with CRISPR constructs at 200g for 5 min at 4°C.",
+    "Carefully remove supernatant and wash once with 1XPBS.",
+    "Extract genomic DNA using Epicentre QuickExtract.",
+    "Dilute samples to 40ng/μl.",
+    "Vortex DNA.",
+    "Set up the following components for PCR: %s %s",
+    "For best results, add 5 μl of 360 GC Enhancer per 50μl PCR reaction when amplifying GC rich loci.",
+    "Run PCR reaction with the following conditions: %s %s",
+    "Clean up PCR reaction (Qiagen MiniElute PCR purification Kit). If ~50 ng is present, run 3 μl of PCR product on a 1.5-2% agarose gel. If a single band of expected size is present, proceed to the denaturing and annealing step.",
+    "In a PCR tube put the following: Make two tubes for each DNA sample - one where T7 Endonuclease I is added and one with no T7E1 enzyme. 200 ng DNA 2 uL 10X NEB buffer 2 To19 μl Nuclease-free Water",
+    "Hybridation conditions %s %s",
+    "Add T7 Endonuclease I to one tube for each DNA sample. (Add water to the other tube.) %s %s",
+    "Incubate for 15 minutes at 37 C.",
+    "Run products on 2% agarose gel or 10-20% TBE polyacrylamide gel and a 1X TBE buffer. If the sgRNA created indels in your cells, you should see two small fragments below the wildtype band of 500 bp."
+  ],
+  "authors": [],
+  "creator": "Emily Lingeman",
+  "published_on": 1488498614,
+  "created_on": 1488259407,
+  "keywords": []
+}

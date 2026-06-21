@@ -1,0 +1,41 @@
+{
+  "id": 36085,
+  "title": "Drug Behaviour Imaging on Phenix",
+  "uri": "drug-behaviour-imaging-on-phenix-bfgvjjw6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bfgvjjw6",
+  "description": "{\"blocks\":[{\"key\":\"30lt\",\"text\":\"For imaging drug-treated young adult C. elegans in liquids using the Multiworm tracker. Worms are synchronised by picking L4s, and then the young adults are exposed to drugs for 4 hours prior to imaging for 15 mins in a liquid droplet on a coverslip mounted on a 3.5cm plate.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"7145q\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"c4lub\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"97hi5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"3EcJ0\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"0LA1r\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":127807,\"guid\":\"41A2575D341F11EE9D4302C0B41BC903\",\"name\":\"25mm round coverslip\",\"mol_weight\":0,\"sku\":\"MIC3380\",\"url\":\"https://www.scientificlabs.co.uk/product/MIC3380\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":260,\"name\":\"Scientific Laboratory Supplies Ltd\",\"link\":\"http://www.scientificlabs.co.uk\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "First identify the drugs to be used in the study and ensure that they are correctly labelled and handled.",
+    "Calculate the desired weight and volume of solvent required for the desired concentration if using powdered compounds. Alternatively calculate the desired dilution for liquid compounds. Important point – Ensure that your calculations are 1000 fold higher at this stage as your compound will be diluted when it is added to the plate. E.g. mM for uM active concentration",
+    "Inside a fume hood with an analytical balance weigh out the desired amount of compound into an Eppendorf tube labelled with the compound and the final concentration.",
+    "While still in the fume hood add the desired amount of solvent (eg DMSO) to get the right compound concentration, and close the lid of the Eppendorf tube",
+    "Finally, to ensure the compound is dissolved fully, vortex the Eppendorf tubes (ensuring the lid is firmly in place) at setting 10 for 30 seconds. NOTE: Some compounds require longer vortexing times (especially at higher concentrations) to ensure they completely dissolve. In these instances, repeat until fully dissolved.",
+    "Select the appropriate number of fresh unseeded 35mm NGM plates (no older than 3 days) and inspect to ensure an even level of agar. NOTES: If plates are uneven the images can appear blurry as the different height can result in out of focus patched.Different level of agar indicates that there is a different volume and so the resultant concentration of drug will be affected",
+    "Label the side of each plate with the compound name, compound concentration and the date. See the attached spreadsheet as a template for planning the imaging throughout the day Phenix_template.xlsx",
+    "Inside a flow hood apply 50ul of sterile water to the centre of the agar (this is to help the drug spread over the agar surface where the OP50 will be applied)",
+    "Before this dries apply 3.5ul of your compound solution (ensuring the correct compound and concentration is used).",
+    "Allow to dry in the flow hood with the lids off (this should take around 30 minutes).",
+    "Once dry seed the plates with 50ul OP50 into the centre of each drug plate from the fridge NOTES: Take a falcon tube of OP50 from the fridge and vortex on setting 10 until all the pellet has dissolved and not visible clumps remain in the solution. Dilute the OP50 1:10 in M9 solution Normally when doing this stage, you might have many plates to do, in these instances the ones that were drugged first will probably dry before you have finished. Therefore, check for plates that have dried and replace the lids to ensure that there is no overdrying.",
+    "Leave the plates overnight at room temperature in the dark.",
+    "First identify and label plates in accordance with the experimental Excel template. The plates will now be labelled with the set number and the rig position as well as half having a black dot annotation.",
+    "For each set pick 10 worms from your synchronised plates onto each of the drug plates. This should be completed within 10 minutes for each set to ensure equivalence.",
+    "After 3h 30m has elapsed transfer 10 worms to the drugged imaging plates Leave to accimate o the new plate for 30 mins",
+    "Image for 15 minutes at 25fps with the .hdf5 file format.",
+    "Transfer the files to the server.",
+    "Bleach synchronisation of C. elegans by Ida Barlow",
+    "Making low peptone NGM for imaging plates by Priota Islam",
+    "Refeed L1s to get young adults on the day of tracking"
+  ],
+  "authors": [
+    "Ida Barlow",
+    "Adam Mcdermott-Rouse"
+  ],
+  "creator": "Ida Barlow",
+  "published_on": 1587644250,
+  "created_on": 1587643519,
+  "keywords": []
+}

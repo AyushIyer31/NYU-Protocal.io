@@ -1,0 +1,40 @@
+{
+  "id": 85858,
+  "title": "sample_prep_serum.nan",
+  "uri": "sample-prep-serum-nan-cx4axqse",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvr34epvmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"8mmu6\",\"text\":\"This is a modified protocol for a protein precipitation method for plasma/serum samples. This protocol was originally proposed by:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"66ghs\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"38f2q\",\"text\":\"See also:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"430in\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"a399t\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9u59c\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"2m2uo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"citation\",\"mutability\":\"\",\"data\":{\"guid\":\"49613572341F11EE9D4302C0B41BC903\",\"title\":\"Quantitating metabolites in protein precipitated serum using NMR spectroscopy.\",\"protocol_guid\":\"\",\"journal\":\"Analytical chemistry\",\"date\":\"2014-06-03T00:00:00Z\",\"created_on\":\"2026-02-10T22:33:37Z\",\"doi\":\"https://doi.org/10.1021/ac5005103\",\"authors\":\"Nagana Gowda GA, Raftery D\",\"can_edit\":false}},\"1\":{\"type\":\"citation\",\"mutability\":\"\",\"data\":{\"guid\":\"496139B3341F11EE9D4302C0B41BC903\",\"title\":\"Metabolic profiling, metabolomic and metabonomic procedures for NMR spectroscopy of urine, plasma, serum and tissue extracts.\",\"protocol_guid\":\"\",\"journal\":\"Nature protocols\",\"date\":\"2007-01-01T00:00:00Z\",\"created_on\":\"2026-02-10T22:33:37Z\",\"doi\":\"\",\"authors\":\"Beckonert O, Keun HC, Ebbels TM, Bundy J, Holmes E, Lindon JC, Nicholson JK\",\"can_edit\":false}},\"2\":{\"type\":\"citation\",\"mutability\":\"\",\"data\":{\"guid\":\"496139FE341F11EE9D4302C0B41BC903\",\"title\":\"Analysis of Plasma, Serum, and Whole Blood Metabolites Using 1H NMR Spectroscopy.\",\"protocol_guid\":\"\",\"journal\":\"Methods in molecular biology (Clifton, N.J.)\",\"date\":\"2019-01-01T00:00:00Z\",\"created_on\":\"2026-02-10T22:33:37Z\",\"doi\":\"https://doi.org/10.1007/978-1-4939-9690-2_2\",\"authors\":\"Nagana Gowda GA, Raftery D\",\"can_edit\":false}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"b4iud\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"fk1bo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"b31ck\",\"text\":\"1. Chemicals and reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2jpcq\",\"text\":\"Phosphate buffer in D2O (100 mM, pH 7.4, 1/3 mM DSS-d6)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"br0bo\",\"text\":\"Methanol\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"965mc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1rrua\",\"text\":\"2. Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9n3hm\",\"text\":\"Calibrated micropipettes (100 μL, 200 μL, and 1000 μL)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3hdul\",\"text\":\"Pippette tips\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2r490\",\"text\":\"1.5-mL Eppendorf tubes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"353nj\",\"text\":\"5-mm SampleJet NMR tubes (Bruker)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"buntk\",\"text\":\"Centrifuge\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a3sen\",\"text\":\"Vortex mixer\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dnja8\",\"text\":\"Speed-vac concentrator\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Add 600 µL of 100% cold methanol to 300 µL of samples On ice Use 1.5-mL Eppendorf tubes Keep methanol cold On ice",
+    "Vortex the samples for 00:00:10",
+    "Incubate the samples at -20 °C for 00:20:00",
+    "Centrifuge the samples at 4 °C at 16000 rcf, °C, for 00:30:00",
+    "Transfer the supernatants to new 1.5-mL Eppendorf tubes",
+    "Dry the samples in a speed-vac concentrator Overnight, (time varies depending on the sample condition) Store dried samples at -80 °C until the following step if needed",
+    "Day-2/2",
+    "Thaw the samples On ice or in 4 °C",
+    "Add 600 µL of the phosphate buffer to each sample",
+    "Vortex the samples at 4 °C for 00:10:00",
+    "Centrifuge the samples at 4 °C for 00:00:10",
+    "Thaw samples On ice or at 4 °C",
+    "Transfer 580 µL to 5-mm NMR tubes No stickers/labels on the caps and tubes allowed",
+    "Day-1/2"
+  ],
+  "authors": [
+    "NAN KB",
+    "Mario Uchimiya",
+    "John Glushka",
+    "Christopher Esselman",
+    "Leandro I Ponce",
+    "Laura Morris",
+    "Arthur Edison"
+  ],
+  "creator": "NAN-KB UGA",
+  "published_on": 1691010994,
+  "created_on": 1690986120,
+  "keywords": []
+}

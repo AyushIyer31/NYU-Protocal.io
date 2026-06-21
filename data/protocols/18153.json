@@ -1,0 +1,29 @@
+{
+  "id": 18153,
+  "title": "bright field big patch swarming imaging",
+  "uri": "bright-field-big-patch-swarming-imaging-vyhe7t6",
+  "doi": "dx.doi.org/10.17504/protocols.io.vyhe7t6",
+  "description": "{\"blocks\":[{\"key\":\"depb8\",\"text\":\"For imaging swarming behaviour of 40 young adult C. elegans on a big food patch on agar using the Phoenix multi-worm tracker system. Worms are synchronised by bleaching and refeeding for 72 hours, and then 40 young adult hermaphrodites are transferred by glass pipette onto a 35 mm regular NGM plate for imaging for 20 hours at 25 fps.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"2m2tj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"3ausm\",\"text\":\"Prior to collecting the full dataset, a single batch of OP50 was grown overnight, diluted to OD600 = 0.38, aliquoted for use on each imaging day, and stored at 4°C until use.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"97ee6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "A separate batch of imaging plates is poured exactly seven days before each imaging day and stored at 4°C. Imaging plates are 35 mm Petri dishes containing 3.5 mL low peptone (0.013% Difco Bacto) NGM agar (2% Bio/Agar, BioGene) to limit bacteria growth.",
+    "Bleach synchronise gravid hermaphrodites. Leave on rotator at 20 °C until use.",
+    "Re-feed starved L1 worms onto 3-4 plates using a glass pipette. Incubate at 20 °C. Culture plates are 55 mm Petri dishes containing 15 mL low peptone 0.013% Difco Bacto) NGM agar (2% Bio/Agar, BioGene), and seeded with OP50.",
+    "Forty animals are transferred by a glass pipette onto the imaging plate in a small drop of M9, away from the bacteria lawn.",
+    "Imaging commences immediately following animal transfer in a liquid drop, on a custom-built six-camera rig (the Phoenix) equipped with Dalsa Genie cameras (G2-GM10-T2041). Twenty-hour recordings with red illumination (630 nm LED illumination, CCS Inc.) are taken at 25 Hz using Gecko software (v2.0.3.1), whilst the rig maintain the imaging plates at 20 °C throughout the recording durations.",
+    "Images are segmented in real time by the Gecko software.",
+    "Wash animals off of culture plates with M9 and collect in a 15 mL Falcon tube, wash in M9 twice, and aspire as much supernatent as possible after the last wash.",
+    "The recordings are manually truncated post-acquisition to retain aggregation and swarming dynamics only. The start time is defined as the moment when the liquid dries and the all the worms crawl out from the initial location of the drop, and the end time is when the food is depleted and worms disperse with increased crawling speed.",
+    "The center of an imaging plate is seeded with a single 75 μL spot of cold diluted OP50 (OD=0.38) and allowed to inoculate overnight at room temperature before being used for imaging the next day."
+  ],
+  "authors": [
+    "Serena Ding"
+  ],
+  "creator": "Serena Ding",
+  "published_on": 1552907417,
+  "created_on": 1543430789,
+  "keywords": []
+}

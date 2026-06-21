@@ -1,0 +1,36 @@
+{
+  "id": 225246,
+  "title": "Dynamont",
+  "uri": "dynamont-g776bzrrf",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v9528pl3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"2fdlu\",\"text\":\"This protocol shows the commands used in the Dynamont manuscript to compare the datasets published in\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"64gju\",\"text\":\"zenodo: https://zenodo.org/records/15853348\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":8,\"length\":35}],\"data\":{}},{\"key\":\"2h9hd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"66nip\",\"text\":\"Dynamont is available on\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"786en\",\"text\":\"GitHub: https://github.com/rnajena/dynamont\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":8,\"length\":35}],\"data\":{}},{\"key\":\"fiale\",\"text\":\"Conda: https://anaconda.org/jannessp/dynamont\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":7,\"length\":38}],\"data\":{}},{\"key\":\"b3o2s\",\"text\":\"PyPi: https://pypi.org/project/dynamont/\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":3,\"offset\":6,\"length\":34}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"6647C1B37F3E11F093410A58A9FEAC02\",\"url\":\"https://zenodo.org/records/15853348\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"83F1B8BF7F3E11F093410A58A9FEAC02\",\"url\":\"https://github.com/rnajena/dynamont\"}},\"2\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"9382DF007F3E11F093410A58A9FEAC02\",\"url\":\"https://anaconda.org/jannessp/dynamont\"}},\"3\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"99BE35CE7F3E11F093410A58A9FEAC02\",\"url\":\"https://pypi.org/project/dynamont\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "# Mapping ## preset = splice if RNA and h_sapiens, s_cerevisiae, e_coli, sarscov2 ## preset = lr:hq for DNA R10.4.1 ## preset = map-ont else minimap2 -x -a | samtools view -hbF4 | samtools sort &gt; samtools index",
+    "# converting sequencing summary to tombo format (single fast5) awk -F&#39;\\t&#39; &#39;NR == 1 {print; next} {$1 = $2 &#34;.fast5&#34;; print}&#39; OFS=&#39;\\t&#39; sequencing_summary.txt &gt; tombo_sequencing_summary.txt",
+    "# Basecalling ## explicitely using rna002_70bps_hac\\@v3 for RNA002 data dorado basecaller sup -x cuda:0 &lt;dataset_r10k.pod5&gt; &gt; &lt;dataset_r10k.bam&gt;samtools bam2fq &lt;dataset_r10k.bam&gt; &gt; &lt;dataset_r10k.fastq&gt;dorado summary &lt;dataset_r10k.bam&gt; &gt; sequencing_summary.txt",
+    "# Convert To Other Data Formats blue-crab p2s &lt;dataset_r10k.pod5&gt; -o &lt;dataset_r10k.blow5&gt;pod5 convert to_fast5 &lt;dataset_r10k.pod5&gt; -o fast5/multi_to_single_fast5 -i fast5/ -s single_fast5/",
+    "# Extract 10.000 Random Reads pod5 view &lt;dataset.pod5&gt; --ids --no-header -o all_ids.txtsort --random-sort all_ids.txt | head --lines 10000 &gt; 10k_ids.txtpod5 filter &lt;dataset.pod5&gt; -o &lt;dataset_r10k.pod5&gt; --ids 10k_ids.txt",
+    "# model can be added explicitely, otherwise default pore model is chosen python segment.py --raw &lt;path/to/pod5/dataset_r10k/&gt; --basecalls &lt;dataset_r10k.bam&gt; --mode basic -o &lt;dynamont.csv&gt; --pore &lt;pore&gt;",
+    "# Basecalling with emit moves## explicitely using rna002_70bps_hac\\@v3 for RNA002 data dorado basecaller sup -x cuda:0 --emit-moves &lt;dataset_r10k.pod5&gt; &gt; &lt;dataset_r10k_moves.bam&gt;",
+    "# Extracting moves as segmentation borders python extractDoradoMoves.py &lt;dataset_r10k_moves.bam&gt; -o &lt;dataset_r10k_moves.tsv&gt;",
+    "# Indexing files f5c index --slow5 &lt;dataset_r10k.blow5&gt; &lt;dataset_r10k.fastq&gt;",
+    "# Eventalign## added --rna in case of RNA f5c Eventalign -b &lt;dataset_r10k_mapping.bam&gt; -g &lt;ref.fa&gt; -r &lt;dataset_r10k.fastq&gt; --slow5 &lt;dataset_r10k.blow5&gt; --signal-index --collapse-events --pore &lt;pore&gt; --min-mapq 0 --summary &lt;dataset_r10k_event.sum&gt; &gt; &lt;dataset_r10k_event.tsv&gt;",
+    "# Resquiggle## added --rna in case of RNA f5c Resquiggle --pore &lt;pore&gt; &lt;dataset_r10k.fastq&gt; &lt;dataset_r10k.blow5&gt; &gt; &lt;dataset_r10k_resqu.tsv&gt;",
+    "# Indexing files tombo preprocess annotate_raw_with_fastqs --fast5-basedir single_fast5/ --fastq-filenames &lt;dataset_r10k.fastq&gt; --sequencing-summary-filenames sequencing_summary.txt",
+    "# only executed on RNA002 tombo Resquiggle --q-score 0 --rna single_fast5/ &lt;ref.fa&gt;",
+    "# preset = splice if RNA and h_sapiens, s_cerevisiae, e_coli, sarscov2# preset = lr:hq for DNA R10.4.1# preset = map-ont else dorado basecaller sup -x cuda:0 --reference &lt;ref.fa&gt; --mm2-opts &#34;-x &lt;preset&gt; --secondary=no&#34; --emit-moves &lt;dataset_r10k.pod5&gt; &gt; &lt;mapped_basecalls.bam&gt;samtools view -hbF 2304 &lt;mapped_basecalls.bam&gt; &gt; &lt;primary_mapped_basecalls.bam&gt;uncalled4 align --ref &lt;ref.fa&gt; --reads &lt;dataset_r10k.pod5&gt; --bam-in &lt;primary_mapped_basecalls.bam&gt; --tsv-out &lt;uncalled4_segmentation.tsv&gt; --tsv-cols aln.read_id,dtw --min-aln-length 1"
+  ],
+  "authors": [
+    "Jannes Spangenberg",
+    "Christian Höner zu Siederdissen",
+    "Manja Marz"
+  ],
+  "creator": "Jannes Spangenberg",
+  "published_on": 1755858092,
+  "created_on": 1755855911,
+  "keywords": []
+}

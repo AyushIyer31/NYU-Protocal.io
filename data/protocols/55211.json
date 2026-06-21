@@ -1,0 +1,26 @@
+{
+  "id": 55211,
+  "title": "PRESTO-Tango Assay",
+  "uri": "presto-tango-assay-bz6jp9cn",
+  "doi": "dx.doi.org/10.17504/protocols.io.bz6jp9cn",
+  "description": "{\"blocks\":[{\"key\":\"5t2t7\",\"text\":\"PRESTO-Tango Assay protocol for assessing GPR68 activation by benzodiazepines at acidic pH.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"32uh9\",\"text\":\"Acidic media preparation (modified from Pera et al.): Rehydrate VWR Traceable pH/ORP meter (10539-802) in pH4.0 solution at least 30 minutes before use. Prepare HTLA media pH6.8 and pH7.4. Follow the instructions for 1L of powdered DMEM (Sigma Aldrich D5030) without adding sodium bicarbonate. When the media is fully dissolved add the following components:  1% Penicillin-Streptomycin (Corning, Mt 30-002-CI), 100ug/mL Hygromycin B (Thermo Scientific, 10687010), 10% FBS (Corning, 10687010), 2ug/mL puromycin dichloride (Thermo Scientific, A1113802) , 1mM sodium pyruvate (Thermo Scientific, 11360070), 12.5mM HEPES (Thermo Scientific, 11360070). Aliquot media into separate beakers and adjust the pH using 10N NaOH/HCl. After adjusting the pH sterile filter the media with a MilliporeSigma™ Stericup™ Quick Release-GV Vacuum Filtration System, 500mL, 0.22um pore size (Fisher Scientific, S2GVU05RE).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Day 1: Plated 400,000 HTLA cells/2mL of media in each well of a 6-well dish by bulk preparing 13mL media + 2.6x10^6 HTLA cells",
+    "Day 2: Transfect 500ng GPR68-Tango (Addgene #66371) construct in 5 of the 6 wells using Lipofectamine 3000 (L3000008, Thermo Scientific) according to the Manufacturer&#39;s Instructions. Perform a no cDNA control transfection in the 6th well.",
+    "Detailed transfection: Prepare DNA and lipid tubes (x5.5). DNA tube: 688uL serum-free DMEM media, 22uL P3000 reagent + 500ng GPR68-Tango cDNA. Lipid tube: 688uL serum-free DMEM media, 22uL lipofectamine. Also, prepare a negative control without GPR68-Tango cDNA (DNA tube (x1.5) =188uL serum-free DMEM + 6uL P3000 reagent, Lipid tube (x1.5)=188uL serum-free DMEM + 6uL Lipofectamine). Vortex the tubes, then add the contents of the DNA tube to the corresponding lipid tube dropwise. Incubate for 20 minutes at room temperature, flicking occasionally to mix. Add 2mL fresh complete media per well to the cells in the 6-well dish. Place in the 37C, 5% CO2 incubator, overnight.",
+    "Day 3: Cells were split and counted with a BioRad TC-20 automated cell counter. Re-plated 8,000 transfected cells/30uL pH6.8/pH7.4 media per well onto a white flat bottomed TC-treated Corning 384-well plate (bulk prepare the cells for the number of wells required, for example X10= 80,000 cells in 300uL of media). Place cells in the 37C, 0% CO2 incubator.",
+    "Day 4: A Tecan D300e digital drug dispenser was used to plate the desired drug concentrations using 10mM drug stocks resuspended in DMSO. DMSO concentration was normalized.",
+    "Day 5: Luminescence levels in each well was measured using Promega Bright-Glo Luciferase Assay System (Catalog #E2610) according to the manufacturer&#39;s instructions."
+  ],
+  "authors": [
+    "Abigail Cornwell"
+  ],
+  "creator": "Abigail Cornwell",
+  "published_on": 1637168802,
+  "created_on": 1637168681,
+  "keywords": []
+}

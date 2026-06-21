@@ -1,0 +1,36 @@
+{
+  "id": 99424,
+  "title": "Protocol Normative Gait Data ZHAW Movement Laboratory",
+  "uri": "protocol-normative-gait-data-zhaw-movement-laborat-ddb822rw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l621pzgqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"9snl7\",\"text\":\"This protocol describes the detailed study procedures for the collection of normative gait data for walking at the ZHAW movement laboratory.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Cameras A total of 12 Vicon Vantage cameras were used for data collection. Cameras need to be turned on for warming up at least 30 minutes before system calibration Position of cameras and photocells (indicated with &#34;L&#34;) in the movement laboratory. Cameras 1-8 were wall-mounted, 9-12 were mounted on tripods on the ground.",
+    "Photocells The photocells are placed in the room as shown in the figure above, with a distance of 360 cm between them. Switch on the light barriers before calibrating. A marker is placed on the light barrier to measure the exact distance in the Vicon. This information is used to track the walking speed.",
+    "System Calibration The camera system needs to be calibrated according to the manufacturer&#39;s guidelines. For the Vicon system, guidelines can be found here: https://help.vicon.com/space/Nexus216/11606902/Calibrate+a+Vicon+system",
+    "Palpation of anatomical landmarks Specific markers need to be placed on anatomical landmarks which can be identified with the following instructions: anatomical landmarks instruction for palpation 1 anterior spina iliaca Palpate from distal, medial protrusion. 2 lateral & medial femoral epicondyle Palpate from proximal along the leg to the bony structure, outermost point. Check during flexion/extension movement whether the center of rotation is correct. 3 lateral & medial malleolus Highest point of the malleolus. 4 Posterior spina iliaca Palpate from distal.",
+    "Static Trial For the static trial, place feet parallel. Place the right foot on the line on the floor, with the heel and 2nd toe on the line. After the static trial, the markers are labeled to check that all markers are present.",
+    "Functional Calibration The functional calibration of the hip and knee joint will be performed according to List et al. (2013) The following verbal instruction will be provided: Knee joint &#34;Stand upright. Lift your left/right leg off the floor and move your lower leg back and up to your thigh and back again three times. You can hold on to the chair to help you keep your balance.&#34; Hip joint &#34;Stand upright. Lift your left/right leg off the floor and circle your outstretched leg around your hip three times. The circle should be as large as possible. You can hold on to the chair to help you keep your balance.&#34;",
+    "Dynamic Trails The following verbal instruction will be provided for the walking trials at the specific speeds Self-selected speed &#34;Walk at your usual speed.&#34; Slow speed &#34;Walk at the specified slow speed.&#34; Normal speed &#34;Walk at the specified normal speed.&#34; Fast speed &#34;Walk at the specified fast speed.&#34; To determine the self selected speed, 10 gait tests are carried out. The time of each test is measured and recorded. The mean value is then calculated and the number of trials within ± 5% is determined. The remaining number of attempts is then recorded. To determine the specified speeds, perform gait trials and give feedback if the target speed has been reached. Keep practicing until the target speed has been reached at least twice in succession and the force plate has been hit. In order to hit the force plate, move the starting point that is indicated with a wooden block.",
+    "Labelling of marker trajectories The marker trajectories are labelled in the Vicon Nexus Software (Vicon Motion System, UK). The raw data files of each trial are then imported into Matlab (R2019a, Mathworks, USA) where data are processed and joint angles and gait parameters are calculated based on published formulas.",
+    "Marker placement Retroreflective markers will be attached to the skin of the participant using double-sided tape on the following locations: %s %s",
+    "Information and informed consent Upon arrival of the participant, they will be informed about the study procedures. After signing informed written consent, the detailed inclusion and exclusion criteria will be checked and the final inclusion decision will be made by the investigator. After inclusion, the participant will be asked to change into shorts, male participants will be shirtless, female participants will be asked to wear a (sports)bra. Inclusion criteria: signed informed written consent age between 18 and 70 years body mass index between 18 and 28 kg/m^2 Exclusion criteria: acute or chronic musculoskeletal diseases acute or chronic neurological diseases acute or chronic cardiopulmonal diseases amputation diagnosed scoliosis pregnancy",
+    "Collection of anthropometric data Height (in mm) and mass (in kg) will be recorded with the participant barefoot.",
+    "End of data collection After all data have been collected, the markers are removed from the participant who is then free to change and leave."
+  ],
+  "authors": [
+    "Bettina Sommer",
+    "Christoph Bauer",
+    "Carole Pauli",
+    "Michelle Haas",
+    "Eveline Graf"
+  ],
+  "creator": "Eveline Graf",
+  "published_on": 1716880816,
+  "created_on": 1715158199,
+  "keywords": []
+}

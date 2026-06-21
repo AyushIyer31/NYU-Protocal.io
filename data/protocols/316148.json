@@ -1,0 +1,39 @@
+{
+  "id": 316148,
+  "title": "Qiagen QIAquick Gel Extraction Kit (28704 and 28706), Centrifuge Processing",
+  "uri": "qiagen-qiaquick-gel-extraction-kit-28704-and-28706-jyyucpxwx",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6j555vqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"15r5i\",\"text\":\"This protocol describes the purification of DNA fragments (70 bp – 10 kb) from standard or \\nlow-melt agarose gels in TAE or TBE buffer, and DNA cleanup from enzymatic reactions. \\nSuitable for purification of up to 10 µg of DNA.\\nSource: Qiagen QIAquick Gel Extraction Kit, Cat. No. 28704 and 28706.\\nOfficial Qiagen product page: https://www.qiagen.com/us/products/discovery-and-translational-research/dna-rna-purification/dna-purification/dna-clean-up/qiaquick-gel-extraction-kit/\\nReference protocols.io protocol: Harold Bien, Stony Brook University. \\nhttps://dx.doi.org/10.17504/protocols.io.dt96r5\\nThis protocol corresponds to the \\\"Purify DNA from Agarose Gel Extraction\\\" operation \\non the DAMP Lab Canvas Workflow Designer.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"8tcke\",\"text\":\"- Add ethanol (96–100%) to Buffer PE before use (see bottle label for volume).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aij5f\",\"text\":\"- All centrifugation steps are at 17,900 × g (13,000 rpm) in a tabletop microcentrifuge at room temperature (15–25°C).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5mrjq\",\"text\":\"- Add 1/250 volume pH Indicator I to Buffer PB before use.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"asgdd\",\"text\":\"- Isopropanol (100%) and a heating block or water bath at 50°C are required.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4e4q1\",\"text\":\"- IMPORTANT: Discard flow-through before the final centrifugation step or residual ethanol from Buffer PE will not be fully removed.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c6mga\",\"text\":\"- IMPORTANT: Dispense elution buffer directly onto the center of the QIAquick membrane for complete elution.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"d7cpi\",\"text\":\"Buffer QG\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7q4cr\",\"text\":\"Buffer PE (with ethanol added)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"11shu\",\"text\":\"Buffer EB (10 mM Tris·Cl, pH 8.5)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8oosq\",\"text\":\"Isopropanol (100%)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aqvth\",\"text\":\"3M sodium acetate, pH 5.0\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cpgs4\",\"text\":\"QIAquick spin columns and 2 mL collection tubes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"36p48\",\"text\":\"Clean 1.5 mL microcentrifuge tubes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6f5e6\",\"text\":\"Scalpel\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7o8qp\",\"text\":\"Microcentrifuge (17,900 × g / 13,000 rpm)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3l567\",\"text\":\"Heating block or water bath (50°C)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"h6je\",\"text\":\"Loading Dye (for gel analysis step)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Excise the DNA fragment from the agarose gel with a clean, sharp scalpel.",
+    "Weigh the gel slice in a colorless tube. Maximum amount of gel per column is 400 mg (about 0.4 cm^3 )",
+    "Add 3 volumes of Buffer QG to 1 volume of gel ( 100 mg gel ~ 100 µL ). For &gt;2% agarose gels, add 6 volumes of Buffer QG.",
+    "Incubate at 50 °C for 00:10:00 , or until the gel slice has completely dissolved. Vortex every 2–3 minutes to help dissolve the gel.",
+    "Check the color of the mixture, it should be yellow, similar to Buffer QG without dissolved agarose. If the color is orange or violet, add 10 µL of 3M sodium acetate ( pH 5.0 ) and mix.",
+    "For fragments ≤500 bp or ≥4 kb, add 1 gel volume of isopropanol to the sample and mix to increase yield.",
+    "Place a QIAquick spin column in a provided 2 mL collection tube.",
+    "Apply the sample to the QIAquick column and centrifuge for 1 min at 17,900 × g (13,000 rpm) 13000 rpm, Room temperature, 1 minute . Discard flow-through. The maximum load volume is 800 µL , for larger volumes, load and spin again.",
+    "Return the QIAquick column to the collection tube.",
+    "If the DNA will subsequently be used for sequencing, in vitro transcription, or microinjection, add 500 µL Buffer QG to the column and centrifuge for 1 minute at 17,900 × g 13000 rpm, Room temperature, 1 minute . Discard flow-through.",
+    "Add 750 µL Buffer PE to the QIAquick column.",
+    "For salt-sensitive applications (e.g., sequencing, blunt-ended ligation), let the column stand for 2–5 minutes. 00:02:00 00:05:00",
+    "Centrifuge for 1 minute at 17,900 × g 13000 rpm, Room temperature, 1 minute . Discard flow-through.",
+    "Return the column to the same collection tube and centrifuge for an additional 1 minute at 17,900 × g to remove residual ethanol 13000 rpm, Room temperature, 1 minute .",
+    "Place the QIAquick column in a clean 1.5 mL microcentrifuge tube.",
+    "Add 50 µL Buffer EB (10 mM Tris·Cl, pH 8.5 ) to the center of the QIAquick membrane. For higher DNA concentration, use 30 µL instead. Let the column stand for 00:01:00 .",
+    "Centrifuge for 1 minute at 17,900 × g to elute the purified DNA 13000 rpm, Room temperature, 1 minute . Average eluate volume is 48 µL (from 50 µL input) or 28 µL (from 30 µL input).",
+    "To analyze purified DNA on a gel, add 1 volume of Loading Dye to 5 volumes of purified DNA. Mix by pipetting before loading."
+  ],
+  "authors": [
+    "Arnouv Nayana",
+    "Yizhou Jiang"
+  ],
+  "creator": "Arnouv Nayana",
+  "published_on": 1777621111,
+  "created_on": 1777602456,
+  "keywords": []
+}

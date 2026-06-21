@@ -1,0 +1,36 @@
+{
+  "id": 69418,
+  "title": "B. burgdorferi enrichment from feeding ticks ",
+  "uri": "b-burgdorferi-enrichment-from-feeding-ticks-cf2itqce",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgqjrbovk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"b0f2q\",\"text\":\"Borrelia burgdorferi (Bb), the causative agent of Lyme disease, must adapt to vastly different environments as the bacterium cycles between the tick vector and a vertebrate host. During a bloodmeal, Bb migrates from the tick midgut to the salivary glands and changes its gene expression, priming Bb for vertebrate infection. These tick-specific events are dependent on key transcriptional regulators; however, the full range of transcriptional changes that occur inside of the tick over the course of several days during transmission are technically difficult to capture. We developed an experimental approach to enrich Bb cells from Ixodes ticks during a transmitting bloodmeal to longitudinally define their global transcriptomic landscape. We identified 192 genes that change expression at least twofold over the course of the tick bloodmeal, which were predominantly located on plasmids of the Bb genome. The majority of upregulated genes encode proteins found at the cell envelope or proteins of unknown function, including 45 upregulated outer surface lipoproteins embedded in the unusual protein-rich coat of Bb. The ex vivo Bb transcriptomes provide an important roadmap for investigating key determinants of Bb priming and transmission during the tick stage of its unique transmission cycle.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":20},{\"style\":\"italic\",\"offset\":22,\"length\":2},{\"style\":\"italic\",\"offset\":199,\"length\":2},{\"style\":\"italic\",\"offset\":296,\"length\":2},{\"style\":\"italic\",\"offset\":620,\"length\":2},{\"style\":\"italic\",\"offset\":634,\"length\":7},{\"style\":\"italic\",\"offset\":898,\"length\":3},{\"style\":\"italic\",\"offset\":1116,\"length\":2},{\"style\":\"italic\",\"offset\":1124,\"length\":11},{\"style\":\"italic\",\"offset\":1217,\"length\":3}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"4ntdn\",\"text\":\"Use proper safety precautions for BSL2 agents and ticks.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"3llvc\",\"text\":\"Dounce grinder (Kimble: 885303-0002) with 2 pestles\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ou0c\",\"text\":\"Phosphate Buffered Saline (PBS) (3 mL/sample)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1uduk\",\"text\":\"anti-Bb antibody (Invitrogen: PA1-73004; RRID: AB_1016668) (2 μL/sample)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dct5n\",\"text\":\"Dynabeads Protein G (Invitrogen 10003D) (50 μL/sample)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3dkt0\",\"text\":\"Magnet for 1.5 mL tubes (such as MagJET Separation Rack, 12 x 1.5 mL tube, Thermo Scientific MR02)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5cls3\",\"text\":\"Trizol (Invitrogen 15596018) (1.5 ml/sample)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dm7k8\",\"text\":\"RNase-free non-stick 1.5 ml tubes (such as Invitrogen AM12450)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Add ticks and 500 μL of PBS to the dounce grinder and homogenize using pestle A (large clearance pestle) 10 times up and down.",
+    "Collect ticks for homogenization. We recommend using between 6-14 nymphal ticks depending on day of feeding. Ticks can be washed with water or surface sterilized with 1% bleach before beginning.",
+    "Remove pestle A and homogenize with pestle B (small clearance pestle) 5 times up and down.",
+    "Move homogenate to a 1.5 mL tube and increase the volume to 1 mL with PBS.",
+    "For an input sample: take out 50 μL of the sample and add 500 μL of Trizol. Vortex, incubate for 5 minutes at room temperature and then store at -20 °C until RNA extraction.",
+    "Add 2 μL of anti-Borrelia antibody to 1 ml (or 950 μL) of homogenate and rotate at 4 °C for 00:30:00 .",
+    "[During 30 minute incubation in Step 6] Prepare Dynabeads Protein G by resuspending beads, then add 50 μL per sample to a 1.5 mL tube. Place the tube on a magnet and remove the supernatant. Remove the tube from the magnet and resuspend the beads in 200 μL of PBS.",
+    "After 30 minute incubation in Step 6, place the Dynabeads with PBS on the magnet and remove the supernatant. Add the homogenate + antibody mixture to the beads, resuspend, and rotate at 4 °C for 00:30:00 .",
+    "Place the tube on the magnet and remove the supernatant (the depleted fraction) into a new tube.",
+    "After removing the depleted fraction, wash the beads 2 times with 1 mL of PBS, resuspending the beads each time.",
+    "Place the tube on the magnet, remove the second PBS wash and resuspend the beads in 500 μL Trizol.",
+    "Incubate samples in Trizol for 5 minutes at room temperature before storing at -20 °C until RNA extraction.",
+    "For a depleted sample, centrifuge the depleted fraction at 8000 x g, °C, 7 minutes to pellet the Borrelia and tick cells, remove ~900 μL of supernatant and add 500 μL of Trizol to the pellet."
+  ],
+  "authors": [
+    "Anne Sapiro",
+    "Jenny Zhang",
+    "Beth Hayes",
+    "Seemay Chou"
+  ],
+  "creator": "Anne Sapiro",
+  "published_on": 1667903156,
+  "created_on": 1661969192,
+  "keywords": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": 11669,
+  "title": "Instructions for Planar Area Analysis using CPCe 4.1 Software",
+  "uri": "instructions-for-planar-area-analysis-using-cpce-4-pmvdk66",
+  "doi": "dx.doi.org/10.17504/protocols.io.pmvdk66",
+  "description": "{\"blocks\":[{\"key\":\"2n5ib\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"3o129\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"697a8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"99hhc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Download and save the best quality raw image file from images of the long-term photo-monitoring plots.",
+    "Set zoom factor to 3.50 by zooming into the image before tracing. Left-hand click to begin tracing and move pointer along edges of the image to continue tracing. a. To navigate the image while tracing, use either the scroll bars on the right and bottom of the image or right-click and drag the image. b. Left-click mouse to pause during tracing. To resume tracing, left-click at point that was left off. If a mistake is made during tracking, press the ‘ESC’ key to erase previous tracing. c. Only trace coral colonies that can be clearly identified as Orbicella franksi , with clearly defined edges. Be sure to also trace coral colonies that are only partially visible. Trace around obstacles and dead coral tissue.",
+    "Once a contiguous region of coral surface area has been completely traced, right-click to complete tracing and the area of the region will be automatically calculated. a. Area values and units of traced images are each assigned a number that is displayed in parentheses before the area value. If a mistake is made while tracing an image, type the number in parentheses into the ‘Erase Area’ box on the right hand column to erase the associated traced area. b. Traced areas will be filled in with the ‘Fill Color’.",
+    "Click on the ‘File’ tab in the left hand corner and click ‘Save area (.ara) file. a. Save image file here as a .ara file.",
+    "Enter necessary header data, including: ‘Location’ and &#39;Quad Number&#39;, then press ‘Close’ at the bottom of the dialog box.",
+    "Select ‘Scaling calibration tab’ → ‘Perform image scaling/calibration’ to calibrate image to scale. For accurate calibration, zoom into the image to a zoom factor of 6.00. To zoom in, hold down the ‘Ctrl’ button and left-click the mouse. To zoom out, hold down the ‘Ctrl’ button and right-click the mouse.",
+    "Open up CPCe 4.1 software and click ‘Measurement’ → ‘Area/Measurement Analysis’ and open up the downloaded image file.",
+    "For the two bottom corners of the photo with a known distance apart (261 cm), click on first corner and use the arrow keys to target the exact scale point. Then, click near the second bottom corner and navigate with arrow keys to fine tune again for accuracy. Enter the spanned distance (with proper units) between the markers, and the appropriate scaling resolution will be automatically generated. a. After scaling with careful placement of markers on green points, we assumed each picture displayed 18.800 pixels/cm.",
+    "Repeat area analysis for all Orbicella franksi surface area in image and save image file continually throughout analysis to prevent data from being lost. To save, go to ‘File’ → ‘Save’ → ‘Save area (ara) file in the left hand corner. a. Saving image as a .ara file will allow users to edit area values in the future.",
+    "Another dialog box will appear. Choose the .ara file you want to retrieve area values from in the upper left column. Click “New Excel Workbook” in the lower left of the dialog box and leave the ‘Transect name’ blank. Click ‘Process Files’. Then select ‘.xlsx (Open XML)’ in the pop-up dialog box and click OK. Type the file name and location you’d like to save the Excel file under, and then click OK to finish exporting data to an Excel file.",
+    "Go to ‘File’ → ‘Save’ → ‘Save .ara file(s) to excel’ to begin exporting data into Excel. A dialog box will appear to close any Excel files currently running.",
+    "Go to View Data and record the area per photo and any notes in spreadsheet.",
+    "After all targeted areas have been calculated, ‘Save area (.ara) file’ one more time.",
+    "To perform planar area analysis for new image, click on the ‘File’ tab, click ‘Exit’, and repeat the above steps for the next image file.",
+    "Click the ‘Area/Length Analysis’ tab in the upper left corner. Check the ‘Display area values’ and ‘Use species colors’ boxes on the right hand column. Choose a fill color and trace line color."
+  ],
+  "authors": [
+    "Rebecca Maher"
+  ],
+  "creator": "Rebecca Maher",
+  "published_on": 1529597163,
+  "created_on": 1524246061,
+  "keywords": []
+}

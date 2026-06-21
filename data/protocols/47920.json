@@ -1,0 +1,30 @@
+{
+  "id": 47920,
+  "title": "Iodine staining of starch to determine amylose percentage",
+  "uri": "iodine-staining-of-starch-to-determine-amylose-per-bs2qngdw",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"5k7mk\",\"text\":\"Starch is well known to complex with iodine producing strong absorbance between 500 and 750 nm. Two structures that compose structure, amylose and amylopectin complex with iodine differently resulting in distinct absorption spectra. The staining is blue for amylose, brown for amylopectin, and yellow for soluble polymers of glucose (ex. glycogen).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"tfc7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5g99s\",\"text\":\"Measuring iodine-stained samples at 525 nm and 700 nm allows for the calculation of the percent amylose. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"cvb1e\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"49eul\",\"text\":\"Obtain the starch sample. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"e66dk\",\"text\":\"Wear goggles, gloves, and be careful handling the warmed starch samples. The tops of plastic tubes may pop when handled. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5kaln\",\"text\":\"Be careful not to burn your fingers in the water bath.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"12ajb\",\"text\":\"Iodine solution can stain skin and clothing\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"eakvi\",\"text\":\"Spectrophotometer capable of measuring absorbance between 500 and 750 nm. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6qe56\",\"text\":\"Water\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fvpno\",\"text\":\"Cuvettes (plastic or quartz)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9c8ag\",\"text\":\"A warm water bath at 95 C\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1kpbq\",\"text\":\"0.34% (w/v) I2  and 0.68% (w/v) KI solution (need 1 mL per sample or control)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":13,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Obtain soluble starch or starch granule sample in sterile water",
+    "Warm sample to 95 °C in a water bath for 00:15:00 Starch granules will gelatinize under these conditions. Do not cool the samples otherwise staining may not work efficiently",
+    "Add 20 µL of starch solution to a cuvette. Plastic cuvettes will become stained with iodine solution and cannot be reused.",
+    "Add 980 µL of Iodine solution. Mix by inverting.",
+    "Measure absorbance at 525 nm and 700 nm. Record values in the table. Add more columns for each new sample and edit the column name to indicate the sample. A B 1 Wavelength Absorbance 2 525 nm 3 700 nm",
+    "Add 20 µL of water or whatever buffer the starch is dissolved in to a new cuvette and then add 980 µL of the iodine solution. Mix by inverting.",
+    "Measure absorbance at 525 nm and 700 nm. A B 1 Wavelength Absorbance 2 525 nm 3 700 nm",
+    "Subtract the absorbance of water-iodine measured in Step 7 from the absorbance for the sample(s) containing starch.",
+    "The percentage of the sample that is amylose is determined from the equation below: percent ~amylose = \\frac{3.039 - (7.154 \\times \\frac{OD_{700}}{OD_{525}})}{(3.048 \\times \\frac{OD_{700}}{OD_{525}}) - 19.192}",
+    "Record your calculations in the table below. A B 1 Sample name % amylose 2 3 4"
+  ],
+  "authors": [
+    "Chris Berndsen"
+  ],
+  "creator": "Chris Berndsen",
+  "published_on": 1615339962,
+  "created_on": 1614950139,
+  "keywords": []
+}

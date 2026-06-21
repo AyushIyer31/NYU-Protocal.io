@@ -1,0 +1,32 @@
+{
+  "id": 49344,
+  "title": "Prepare bovine coronavirus (BCoV) solution",
+  "uri": "prepare-bovine-coronavirus-bcov-solution-bue8nthw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bue8nthw",
+  "description": "{\"blocks\":[{\"key\":\"c1g0v\",\"text\":\"Prepare bovine coronavirus (BCoV) solution from vaccine\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":55}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"bbjs1\",\"text\":\"When work is completed, remove equipment and supplies from the cabinet. Wipe the work area with 10% bleach, let stand for 10 min, rinse with water, then with 70% ethanol, and finally with RNAase AWAY.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"9al2j\",\"text\":\"1. Clean the working area and all equipment: wipe down with 70% ethanol and let dry. Then, wipe down using RNase AWAY and let dry. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"fsj7e\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"4jmi1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"f27ij\",\"text\":\"0.6 mL low-bing tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"1hc8r\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":[]},{\"key\":\"4628b\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":[]},{\"key\":\"b5j8t\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":[]},{\"key\":\"21ora\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":670945,\"guid\":\"4266EB17341F11EE9D4302C0B41BC903\",\"name\":\"10X TE pH 8.0\",\"mol_weight\":0,\"sku\":\"MB-007\",\"url\":\"https://rockland-inc.com/Product.aspx?id=40054#:~:text=10X%20TE%20pH%208.0%20Description\\u0026text=TE%20buffer%20is%20a%20commonly,that%20chelates%20cations%20like%20Mg2%2B.\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":495,\"name\":\"ROCKLAND antibodes \\u0026 assays\",\"link\":\"https://rockland-inc.com/Default.aspx\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":615997,\"guid\":\"42659DFC341F11EE9D4302C0B41BC903\",\"name\":\"Bovine coronavirus\",\"mol_weight\":0,\"sku\":\"CALF-GUARD\",\"url\":\"https://www.zoetisus.com/products/beef/calf-guard.aspx\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":474,\"name\":\"Zoetis\",\"link\":\"https://www.zoetisus.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":615998,\"guid\":\"42659E4D341F11EE9D4302C0B41BC903\",\"name\":\"RNeasy PowerMicrobiome Kit\",\"mol_weight\":0,\"sku\":\"26000-50\",\"url\":\"https://www.qiagen.com/us/products/discovery-and-translational-research/dna-rna-purification/rna-purification/microbial-rna/rneasy-powermicrobiome-kit/?clear=true#orderinginformation\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":25,\"name\":\"Qiagen\",\"link\":\"https://www.qiagen.com/us/products/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Resuspend one vial of Bovine coronavirus Zoetis Catalog #CALF-GUARD using 1 to 3 mL of 1xTE buffer. 10X TE pH 8.0 ROCKLAND antibodes & assays Catalog #MB-007",
+    "Gently vortex, avoiding foaming.",
+    "Aliquot 40-200 µL of the BCoV solution into 600 μL low-binding tubes. The volume aliquoted depends on the number of samples that have to be processed at once, to avoid freeze/thaw aliquots more than twice.",
+    "Store the aliquots at -80ºC.",
+    "Thaw on ice a BCoV aliquot",
+    "In duplicate, transfer 5 µL of the BCoV solution into a 2-mL tube containing 500 µL of warmed PM1 buffer solution (provided in RNeasy PowerMicrobiome Kit Qiagen Catalog #26000-50 ) + 5 µL of beta-mercaptoethanol..",
+    "Extract nucleic acids of the duplicates Nucleic acid extraction - RNeasy PowerMicrobiome Kit (Qiagen) by McLellan Lab",
+    "Prepare a serial dilution for each duplicate to obtain the following dilution ratio: 1:1, 1:2, 1:8, 1:32, 1:128, 1:512, 1:2048 Dilutions are performed using nuclease-free water in low-binding tubes.",
+    "Perform absolute quantification of PCR targets with the Droplet Digital PCR. Quantification by Droplet Digital PCR (ddPCR) by McLellan Lab",
+    "Formula to back-calculate the BCoV concentration in the initial solution: CopyPerMicroliterReaction * Reaction Volume / VolumeSample * DilutionFactor*ElutionVolume",
+    "The BCoV solution is ready to use. The titer should be close to ~100,000 copies per microliter. If near 200,000 copies per microliter, the solution will have to be diluted before use."
+  ],
+  "authors": [
+    "Adélaïde Roguet",
+    "Shuchen Feng"
+  ],
+  "creator": "McLellan Lab",
+  "published_on": 1619106901,
+  "created_on": 1619106162,
+  "keywords": []
+}

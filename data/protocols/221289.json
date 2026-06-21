@@ -1,0 +1,26 @@
+{
+  "id": 221289,
+  "title": " Model Context Protocol (MCP) ",
+  "uri": "model-context-protocol-mcp-g4chbyst7",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl46ebzgo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"8u68h\",\"text\":\"The Model Context Protocol (MCP) is a standardized open protocol designed to enable\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2u7vo\",\"text\":\"seamless, secure interaction between AI models and external tools, resources, and systems by\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5tkga\",\"text\":\"managing context across sessions.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"auspr\",\"text\":\"Review and test on a case by case basis\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"af796\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Server Creation Phase ○ Establish MCP servers that expose Tools (functions callable by AI models), Resources (data endpoints), and Prompts (templates guiding tool usage). ○ Register these components with standardized metadata to enable discovery and invocation by clients. ○ Set up secure communication channels and authentication mechanisms to protect resources. (This phase initializes the MCP server lifecycle and prepares it for operation) .",
+    "Client-Server Communication and Session Establishment ● MCP clients (embedded within AI applications or hosts) initiate connections to MCP servers using a defined client-server architecture. ● Clients negotiate capabilities and maintain stateful sessions to preserve context across multiple interactions. ● Communication uses structured JSON-RPC messages over secure transport protocols, ensuring integrity and confidentiality .",
+    "Authentication and Authorization ● Implement user authentication to verify human users (e.g., via OAuth 2.1 with PKCE). ● Authorize AI clients to access specific tools/resources on behalf of users, enforcing fine-grained access control. ● Use well-defined OAuth endpoints (/authorize, /token, and discovery URLs) to manage secure token exchange and session validation .",
+    "Tool Invocation and Context Management ● AI models invoke registered tools via JSON-RPC calls, passing relevant context and parameters. ● MCP servers execute the requested tools and return structured results or error messages. ● Context is managed incrementally, allowing persistent memory and continuity across agent actions, addressing the “disconnected models” problem in AI systems .",
+    "Server Operation and Update Phase ● MCP servers continuously operate, handling multiple client requests, managing sessions, and monitoring security. ● Servers support dynamic updates, including adding/removing tools, updating prompts, and refining security policies without disrupting ongoing sessions. ● Security and privacy risks are actively mitigated through monitoring and protocol enhancements .",
+    "Ecosystem Integration and Extension ● MCP supports integration with diverse AI models, multi-agent systems, and external platforms, enabling interoperability and scalability. ● Extensions include support for streaming responses, multi-modal data, and advanced coordination among agents"
+  ],
+  "authors": [
+    "Paola Di Maio"
+  ],
+  "creator": "Paola Di Maio",
+  "published_on": 1751269303,
+  "created_on": 1751268269,
+  "keywords": []
+}

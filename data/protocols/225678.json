@@ -1,0 +1,27 @@
+{
+  "id": 225678,
+  "title": "Long read variant calling protocol using Sniffles",
+  "uri": "long-read-variant-calling-protocol-using-sniffles-g8mnbzu5f",
+  "doi": "dx.doi.org/10.17504/protocols.io.261gek5bdg47/v1",
+  "description": "{\"blocks\":[{\"key\":\"67tij\",\"text\":\"Abbreviated description of variant calling pipeline for long read whole genome sequencing data.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Long read whole genome sequencing of adenocarcinoma, polyp, and normal samples was conducted.",
+    "SVs were called with Sniffles v2.2 using default parameters along with the --snf tag. Software version URL: https://github.com/fritzsedlazeck/Sniffles/releases/tag/v2.2",
+    "To compare SV calls across the adenocarcinoma, polyp, and normal samples, Sniffles2 VCF SV files were processed through a somatic SV calling workflow with a threshold of 2 supporting reads for SV detection. A variant had to be present in 11% of the reads to be considered a somatic variant.",
+    "The SNF files were merged.",
+    "SVs for the normal, polyp, and adenocarcinoma samples were extracted using the SUPP_VEC function for BCFtools.",
+    "In-depth analysis of specific SVs unique to the adenocarcinoma sample was conducted by visualizing loci with Integrative Genomics Viewer (IGV)."
+  ],
+  "authors": [
+    "Katherine Wang",
+    "Thomas Karathanos"
+  ],
+  "creator": "Thomas Karathanos",
+  "published_on": 1756351440,
+  "created_on": 1756351072,
+  "keywords": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": 130932,
+  "title": "Cytokine Array",
+  "uri": "cytokine-array-eb4ubaqwx",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx75yol8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"bsfba\",\"text\":\"The EMD MILLIPLEX‱ MAP Human Cytokine/Chemokine/Growth Factor Pane A – Immunology Multiplex Assay (Merck Millipore) is employed to simultaneously analyse TNF-α, IL-1β, IL 6, and INFγ with Bead-Based Multiplex Assay using the Luminex‱ technology. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":17,\"length\":1},{\"key\":1,\"offset\":232,\"length\":1}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"109FD7C41B9611F0ABFF0A58A9FEAC02\",\"name\":\":registered:\"}},\"1\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"109FD7DE1B9611F0ABFF0A58A9FEAC02\",\"name\":\":registered:\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4pjo9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Culturesupernatants from non-stimulated and 24-hour LPS-stimulated hMG are collected and stored at -80 ºC for long storage.",
+    "Quality Controls (QC) and Human Cytokine Standard (STD) are prepared with deionized water by serial dilutions as manufacturer’s instructions. Assay Buffer is used for Background or STD 0.",
+    "Wells are filled with 200 μL of Wash Buffer (WB), sealed and mixed at RT for 10 minutes on a Thermomixer Comfort plate shaker (Eppendorf‱) at 500-800 rpm.",
+    "Plate was firmly tap upside down on absorbent paper and 25 μL of each STD and QC with 25 μL of RPMI medium in duplicates. 25 μL of sample with 25 μL of Assay Buffer are added in duplicates. Finally, 25 μL of the mixed antibody-bead preparation is added to every well and incubated at 2-8ºC ON in a plate shaker.",
+    "The day after, well contents are gently removed by firmly attaching plate to a handheld magnet and washed with WB for 3 times.",
+    "Then, 25 μL of Detection Antibodies are added into each well and incubated at RT for 1 hour on a plate shaker.",
+    "After that, 25 μL of Streptavidin-Phycoerythrin are added into each well and incubated at RT for 30 minutes on a plate shaker. Well contents are gently removed with a handheld magnet and washed with WB for 3 times.",
+    "Antibody-beads are resuspended by adding 150 μL of Sheath Fluid to all wells and incubated at RT for 5 minutes on a plate shaker.",
+    "Plate is run on a multiplex system Luminex‱ 200TM (Invitrogen‱). Probe heights of every antibody are adjusted according to Luminex‱ recommended protocols employing the xPONENT‱ software (Luminex‱).",
+    "Mean Fluorescent Intensity of every analyte is analyzed using a 5-parameter logistic or spline curve-fitting method for calculating analyte concentrations in samples."
+  ],
+  "authors": [
+    "Lucas Blasco-Agell",
+    "Meritxell Pons-Espinal",
+    "Antonella Consiglio",
+    "Miquel Vila"
+  ],
+  "creator": "Miquel Vila",
+  "published_on": 1746712560,
+  "created_on": 1744898970,
+  "keywords": []
+}

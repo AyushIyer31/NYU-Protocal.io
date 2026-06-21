@@ -1,0 +1,41 @@
+{
+  "id": 230350,
+  "title": "Enrichment of Cell Surface Proteins Using Biotin",
+  "uri": "enrichment-of-cell-surface-proteins-using-biotin-hc7nb2zmf",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vz9qz4gx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"rgnoj\",\"text\":\"Enrichment of cell surface proteins using biotin was performed to evaluate the effect of C1q on total p32 protein or p32 protein availability on the cell surface. The analysis validates the Imagestream, immunocytochemistry, and sequential detergent and salt-based subcellular fractionation data showing intracellular localization of p32 in human neural stem cells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"uxn3i\",\"text\":\"- Poly-L-ornithine (PLO) coated 6-well plate\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"zggor\",\"text\":\"- MyBioSource C1q (MBS147305)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"horps\",\"text\":\"- EZ-Link™ Sulfo-NHS-SS-Biotin (ThermoScientific, 21331)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jl149\",\"text\":\"- Cold PBS+/+ (with 0.1 mM Ca2+ and 1 mM Mg2+) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":37,\"length\":1},{\"style\":\"bold\",\"offset\":40,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"tksvl\",\"text\":\"- 100mM Glycine in PBS+/+\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fj1mj\",\"text\":\"- RIPA lysis buffer (Sigma-Aldrich, R0278)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fhfuq\",\"text\":\"- Protease inhibitor (Roche Applied Science, cOmplete ULTRA, 05892970001)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qnxdy\",\"text\":\"- Phosphatase inhibitor (Roche Applied Science, PhosSTOP, 04906837001)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cnvnm\",\"text\":\"- Pre-equilibrated streptavidin columns (Thermo Scientific, Streptavidin Agarose Resin, 20347)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cjlvs\",\"text\":\"- 4× SDS-PAGE loading buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"iyo4a\",\"text\":\"- Reducing agent (e.g., DTT or β-mercaptoethanol)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Plate hNSC at 750,000 cells/well in a 6-well plate coated with poly-L-ornithine (PLO) and laminin. Culture for 48 hours in growth medium (GM) prior to biotinylation.",
+    "Treat the cells with 0.1nM, 200nM C1q (MyBioSource, MBS147305), or equivalent volume of GM (non-treated control) for 24 or 48 hours.",
+    "Wash cells three times with cold PBS+/+ (with 0.1 mM Ca2+ and 1 mM Mg2+) at 4°C for 5 minutes each.",
+    "Incubate cells with 1mg/mL EZ-Link™ Sulfo-NHS-SS-Biotin (ThermoScientific, 21331) in cold PBS+/+ for 30 minutes at 4°C.",
+    "Remove biotin solution and immediately add 100mM Glycine in PBS+/+ for 30 minutes to quench non-reacted biotin.",
+    "Wash wells 2× with cold PBS+/+ to remove glycine and residual biotin.",
+    "Add cold RIPA lysis buffer (Sigma-Aldrich, R0278) supplemented with protease inhibitor (Roche Applied Science, cOmplete ULTRA, 05892970001) and phosphatase inhibitor (Roche Applied Science, PhosSTOP, 04906837001); 200 µL/well.",
+    "Use a cell scraper to collect lysate from each well into a prechilled microcentrifuge tube.",
+    "Pass each lysate through a 1 mL syringe fitted with a 27.5 G needle 10× up-and-down strokes. Keep on ice.",
+    "Centrifuge homogenates at 12,000 g for 15 minutes at 4°C.",
+    "Transfer the supernatant (clarified total protein extract) to a new prechilled tube — this is your total lysate.",
+    "Reserve 50µL of each sample for total protein quantification (BCA) and for subsequent western blot of total p32 and β-actin.",
+    "Pre-equilibrate streptavidin columns (Thermo Scientific, Streptavidin Agarose Resin, 20347): Add 600 µL lysis buffer with inhibitors to each streptavidin column and incubate 30 minutes at 4°C (to equilibrate resin). After incubation, centrifuge the columns at 4000 g for 5 minutes and discard the flow-through.",
+    "Combine the remaining total protein extract (approx ~150 µL) with 300 µL additional lysis buffer with inhibitors — final sample volume ≈ 450 µL per sample (or adjust proportionally).",
+    "Add the prepared sample to the pre-equilibrated streptavidin column. Incubate 2 hours at 4°C with continuous gentle end-over-end mixing or rotation to promote binding.",
+    "Remove flow-through: After binding, centrifuge the columns at 4000 g for 5 minutes and discard the flow-through (or save it for analysis — contains unbound proteins).",
+    "Wash resin: Wash the column 2× with lysis buffer (volume per wash depends on column size; e.g., 500–600 µL), and centrifuge each wash at 2000 g for 5 minutes to remove the wash buffer. Discard flow-through (or save as wash fraction if desired).",
+    "Elute biotinylated (surface) proteins: Because Sulfo-NHS-SS-Biotin contains a cleavable disulfide, prepare 20 µL 4× SDS-PAGE loading buffer containing reducing agent (e.g., add DTT to 100–200 mM final or 5% β-mercaptoethanol). Add 20 µL directly to the resin, incubate for 5–10 minutes at room temperature or briefly at 37°C, then centrifuge to collect the eluate. This reduces the disulfide and releases the captured proteins into the loading buffer.",
+    "Alternative: If your columns require boiling for elution, place the column with loading buffer at 95°C for 5 minutes and then centrifuge — but verify compatibility with your streptavidin resin and that the disulfide reduction step is included.",
+    "Prepare samples for Western Blotting."
+  ],
+  "authors": [
+    "Katja Piltti",
+    "Francisca Benavente-Perez"
+  ],
+  "creator": "Katja Piltti",
+  "published_on": 1761237277,
+  "created_on": 1761020594,
+  "keywords": []
+}

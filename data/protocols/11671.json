@@ -1,0 +1,34 @@
+{
+  "id": 11671,
+  "title": "Barnacle Counting Protocol",
+  "uri": "barnacle-counting-protocol-pmxdk7n",
+  "doi": "dx.doi.org/10.17504/protocols.io.pmxdk7n",
+  "description": "{\"blocks\":[{\"key\":\"budbt\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"1fu9f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"cp44e\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"e5ntv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Open ImageJ in Chevron Visualization Lab computer --&gt; Plugins --&gt; Cell Counter.",
+    "In the Cell Counter window, select Type 2 from Counters. Counter Type 1 is not used because the color is not visible on Viz Lab Screen. Counters can be enlarged from initial settings to be visible on Viz Lab Screen.",
+    "Mark all barnacle holes on a single colony.",
+    "Use the Magnifying Glass to zoom in or out if necessary and use the Scrolling tool to scroll around.",
+    "Select Text tool from ImageJ window.",
+    "In the Cell Counter click Initialize.",
+    "In ImageJ window, click File Open to open raw image file.",
+    "Review the image to identity Orbicella franksi colonies by selecting the Magnifying Glass tool from the ImageJ window to zoom in or out.",
+    "Zoom in on the first colony to 200%.",
+    "Once all the barnacles on a single colony have been marked, select Counter Type 3 and scroll to the next colony.",
+    "Click Export Image in Cell Counter window. In ImageJ window, click File --&gt; Save as --&gt; JPEG. Label with PhotoIDvizphoto.",
+    "Click Results in Cell Counter window. In Results window, click File --&gt; Save as marker count. Label with PhotoIDresults to export results.",
+    "For each image, record the barnacle count on paper.",
+    "Repeat with all remaining colonies. If the Counter color is not visible select Type 4 or Type 7 (deep reds). a. We recommend changing counters between colonies to avoid large stretches of barnacle counts (&gt;1000) that can increase the chances of accidental data loss."
+  ],
+  "authors": [
+    "Rebecca Maher"
+  ],
+  "creator": "Rebecca Maher",
+  "published_on": 1529597163,
+  "created_on": 1524250320,
+  "keywords": []
+}

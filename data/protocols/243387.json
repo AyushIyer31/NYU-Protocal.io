@@ -1,0 +1,33 @@
+{
+  "id": 243387,
+  "title": "In Vivo Opto-Tagging and Extracellular Recording (Acute and Chronic)",
+  "uri": "in-vivo-opto-tagging-and-extracellular-recording-a-hrw3b57gp",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj1jqxvk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"xujef\",\"text\":\"This protocol describes in vivo extracellular recordings with opto-tagging of VTA units in acute and chronic configurations. Extracellular data are acquired using the Open Ephys acquisition system with Intan headstages at 30 kHz sampling. Opto-tagging is performed using brief light pulses to identify ChR2- and Chrimson-expressing units, followed by additional stimulation protocols as required.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"vmrvh\",\"text\":\"- Stereotaxic frame and isoflurane anesthesia system for acute experiments.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"78zsj\",\"text\":\"- Acute optrodes: Cambridge Neurotech H3 and H10 (64-channel; 1200 μm recording span).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ponpi\",\"text\":\"- Chronic optrodes: Cambridge Neurotech H8b and H10b (32-channel) with integrated 200 μm fiber (NA 0.39) mounted on a nano-drive.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"10clq\",\"text\":\"- Laser sources for 470 nm (ChR2) and 635 nm (Chrimson) stimulation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"0v29h\",\"text\":\"- Patch cords and commutator as needed.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"odq2a\",\"text\":\"- Synchronization: TTL lines recorded alongside neural data (stimulation TTLs).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "After 4-5 weeks of viral expression, anesthetize the mouse with isoflurane (3-4% induction; 1.0-1.5% maintenance) and secure in a stereotaxic frame.",
+    "Open a small craniotomy over VTA and lower a 64-channel acute optrode (H3 or H10) to VTA (first penetration: AP -3.25 mm, ML +0.50 mm, DV -4.90 mm; tip from bregma).",
+    "Perform 3-4 penetrations per experiment, shifting the entry site by approximately 200 μm (anterior, posterior, medial) while targeting the same depth.",
+    "Connect the probe to an Intan RHD2164 headstage and start acquisition in the Open Ephys GUI at 30 kHz.",
+    "Record a baseline epoch.",
+    "Perform opto-tagging with 1 ms light pulses at 5 Hz delivered as 3 s ON, 10 s OFF (210 pulses total): 470 nm at 15 mW for ChR2-DAT units and 635 nm at 5 mW for Chrimson-tagged VTAPnO units.",
+    "After tagging, deliver continuous 635 nm light (1 s) every 10 s for 3 min to probe pathway recruitment (if included in the experimental plan).",
+    "At the end of the session, transcardially perfuse for histology as required.",
+    "Connect the chronically implanted mouse (optrode with integrated fiber) to the headstage and patch cord.",
+    "For chronic recordings, use an Intan RHD2132 headstage and acquire data in the Open Ephys GUI at 30 kHz.",
+    "Record baseline activity and perform opto-tagging using 1 ms pulses: 470 nm for ChR2-DAT units and 635 nm for Chrimson-tagged VTAPnO units.",
+    "Proceed with the behavioral paradigm as required (See protocol for rotarod forced forward or reverse locomotion)."
+  ],
+  "authors": [
+    "Cristian González-Cabrera",
+    "Matthias Prigge"
+  ],
+  "creator": "Cristian González-Cabrera",
+  "published_on": 1771250211,
+  "created_on": 1771246763,
+  "keywords": []
+}

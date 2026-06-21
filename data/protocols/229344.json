@@ -1,0 +1,36 @@
+{
+  "id": 229344,
+  "title": "Nitrite test with the Griess reagent system",
+  "uri": "nitrite-test-with-the-griess-reagent-system-hb78b2rrx",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg31ypel25/v1",
+  "description": "{\"blocks\":[{\"key\":\"nazqz\",\"text\":\"This protocol describes the procedures for evaluating nitrite levels using the Griess method. The Griess reagent is composed of sulfanilamide, N-1-napthylethylenediamine dihydrochloride (NED) under acidic conditions (phosphoric acid).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9tkr\",\"text\":\"We use a Griess reagent system. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"7aain\",\"text\":\"Verify that the required materials and equipment are available.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"63i5\",\"text\":\"Rodent Guillotine\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8b8f6\",\"text\":\"Phosphate buffer solution\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"em2ne\",\"text\":\"Laboratory centrifuge\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"365ul\",\"text\":\"Micropipette\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"egb0v\",\"text\":\"96-well plate \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4fqv\",\"text\":\"Spectrophotometer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ef788\",\"text\":\"Griess Reagent System from Promega\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Decapitate rats and immediately remove the brains.",
+    "Dissect the brain region of interest and homogenize in 3 ml of ice-cold 0.1 M phosphate buffer solution (PBS), pH 7.4.",
+    "Centrifuge the homogenate at 12,500 rpm (4 °C).",
+    "Collect the supernatant and store it at -70 °C.",
+    "Prepare 1ml of a 100μM nitrite working solution by diluting the supplied 0.1M nitrite standard 1:1,000 in the same buffer used for the test samples.",
+    "Assign 3 adjacent columns (24 wells) of a 96-well plate to generate the nitrite standard reference curve. Add 50μl of the buffer into the wells in rows B–H.",
+    "Dispense 100μl of the 100μM nitrite solution into the 3 wells in row A.",
+    "Carry out 6 serial twofold dilutions (50μl per well) in triplicate down the plate to produce the nitrite standard reference curve (100, 50, 25, 12.5, 6.25, 3.13 and 1.56μM). Discard 50μl from the final dilution (1.56μM). Leave the last set of wells without nitrite (0μM). Note: Each well should contain a final volume of 50μl, covering a concentration range of 0–100μM.",
+    "Add 50 μl of each experimental sample into wells, in triplicate.",
+    "Add 50 μl of Sulfanilamide Solution to all wells (samples and nitrite standard curve).",
+    "Incubate for 10 min at room temperature under diminished light.",
+    "Add 50 μl of NED Solution to each well.",
+    "Incubate for 10 min at room temperature under diminished light. A purple to magenta coloration will appear rapidly.",
+    "Measure absorbance at 540 nm using a spectrophotometer.",
+    "Plot the average absorbance value of each Nitrite Standard concentration as a function of &#34;Y&#34; with nitrite concentration as a function of &#34;X&#34; to create a Nitrite Standard reference curve.",
+    "Calculate each experimental sample&#39;s average absorbance value. By comparing it to the Nitrite Standard reference curve, ascertain its concentration. The results are expressed in μM of NO 2 per mg of protein."
+  ],
+  "authors": [
+    "Mario Alberto Bautista-Carro"
+  ],
+  "creator": "Mario Alberto Bautista-Carro",
+  "published_on": 1768495545,
+  "created_on": 1759943138,
+  "keywords": []
+}

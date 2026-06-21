@@ -1,0 +1,33 @@
+{
+  "id": 99446,
+  "title": "Apomorphine-induced rotations",
+  "uri": "apomorphine-induced-rotations-ddcw22xe",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v92yozl3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"ci5f1\",\"text\":\"To test for 6-OHDA lesion efficiency, rotational behaviors are assessed while mice are under the effects of apomorphine. This test is run during the dark phase of light cycle. Experiments are performed by an examiner blinded to treatment groups. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"ar31r\",\"text\":\"Apomorphine (Sigma Aldrich) dissolved in 0.9% saline/0.1% ascorbate solution\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c92gl\",\"text\":\"40cm x 40cm open field arenas\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"accn1\",\"text\":\"Video camera and Ethovision or similar tracking software\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare apomorphine in 0.9% saline/0.1% ascorbate solution to dose each mouse with 0.25mg/kg via subcutaneous injection. *Note that this solution is light-sensitive and should be shielded from light.",
+    "Weigh mice and habituate to the testing room for at least 1 hour prior to the start of testing.",
+    "Clean open field arenas.",
+    "Test mice in groups based on the number of open field arenas available. Before testing each group, start the tracking software. The trial time should not start until the animals are placed inside the arena.",
+    "For each group, inject each mouse with 0.25 mg/kg apomorphine via subcutaneous injection, and immediately place in the center of the corresponding open field arena. Repeat for the other mice in the same group.",
+    "Set up tracking software on computer to record trials of 00:45:00 starting once an animal is detected within the arena. Using Ethovision, the automatic animal detection with deep learning settings is used to track center to-nose and center to-tail points in the defined arenas.",
+    "Use the video recordings to analyze and count the numbers of rotations &gt;50 degrees clockwise as well as and counterclockwise.",
+    "Run the trial for the 00:45:00 period.",
+    "Remove mice and place back into cages.",
+    "Clean open field arenas, reset the tracking software for the next trial, and repeat steps for the rest of the groups."
+  ],
+  "authors": [
+    "Santiago Unda",
+    "Mihaela Stavarache",
+    "Michael G. Kaplitt",
+    "Roberta Marongiu"
+  ],
+  "creator": "Eileen Ruth Torres",
+  "published_on": 1715370915,
+  "created_on": 1715176697,
+  "keywords": []
+}

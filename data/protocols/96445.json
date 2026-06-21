@@ -1,0 +1,34 @@
+{
+  "id": 96445,
+  "title": "Exp02",
+  "uri": "exp02-dae52bg6",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewov1qez7gr2/v1",
+  "description": "{\"blocks\":[{\"key\":\"brcah\",\"text\":\"En este experimento se buscó analizar el cambio de la temperatura del agua con respecto a la ley cero de la termodinámica, de acuerdo al equilibrio térmico. Se planteó la posibilidad de una variación en el cambio de temperatura por el color del recipiente. Para corroborar dicha teoría, se realizó un experimento donde se colocó agua a tres termos exactamente iguales, pero de distinto color (negro, blanco y plateado) y con ayuda de un arduino uno y sensores de temperatura, se registraron los cambios de temperatura con respecto al tiempo de cada uno de los termos. También, se generó un modelo matemático a prueba y error que concordara lo mejor posible con las mediciones obtenidas. Se generó una gráfica que muestra la temperatura de cada uno de los termos con respecto al tiempo y este modelo para una comparación de estos. Finalmente, puede observarse un cambio en temperatura más lento dentro del termo blanco mientras que las del negro y el plateado son más similares. Asimismo, se calculó la potencia de cada uno de estos donde podemos apreciar que la del termo negro es menor que las otras dos.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"5iu41\",\"text\":\"Para su realización, se debe mantener una temperatura ambiente constante en todo momento. Además, asegurarse de las conexiones de los sensores y su correcto funcionamiento previo a la experimentación.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"bmbfk\",\"text\":\"En la experimentación, tener precaución al verter el agua hirviendo a los termos de colores por riesgo a quemaduras, se recomienda utilizar un embudo en el proceso.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"bktb4\",\"text\":\"3 termos de distintos colores (negro, gris y plateado)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"39k3f\",\"text\":\"Arduino Uno\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ej1ee\",\"text\":\"Protoboard\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"nc6d\",\"text\":\"3 sensores de temperatura DS18B20\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6bu8p\",\"text\":\"Laptop\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6lrrs\",\"text\":\"Cable USB 2.0\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ko6o\",\"text\":\"8 Jumpers macho-macho\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"71dmh\",\"text\":\"6 Jumpers hembra-hembra\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bencj\",\"text\":\"3 resistencias de 4600 Ohms\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b5s3i\",\"text\":\"Termómetro infrarrojo\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Armar el siguiente circuito:",
+    "En el software de Arduino seleccionar la placa y puertos correspondientes.",
+    "Subir / cargar los programas en Arduino.",
+    "Configurar CoolTerms para registrar la lectura de datos en un archivo .txt.",
+    "Conectar el cable USB 2.0 a la placa de Arduino y a la laptop.",
+    "Hervir agua y con esta vaciar 50 mL a cada uno de los termos, con la ayuda de un embudo.",
+    "Colocar un sensor de temperatura dentro de cada termo y asegurarse que esté en el fondo de cada uno.",
+    "La duración del experimento será hasta que la temperatura del agua de los tres termos alcance el equilibrio térmico.",
+    "Las mediciones registradas en el archivo .txt obtenidas mediante CoolTerm se pasarán a un archivo Excel,para crear con ellas una tabla, y posteriormente depurarlas.",
+    "Subir el excel de las mediciones a Matlab, y con ellas generar una gráfica del cambio de temperatura de cada uno de los termos con respecto al tiempo.",
+    "Con el termómetro infrarrojo medir la temperatura ambiente.",
+    "Siguiendo el mismo acomodo, agregar una resistencia, un sensor térmico, y hacer sus respectivas conexiones."
+  ],
+  "authors": [
+    "Mayleth Medina Cárdenas",
+    "Estefanía auceda Camacho",
+    "Sofía orga Benítez"
+  ],
+  "creator": "Mayleth Medina Cárdenas",
+  "published_on": 1710521683,
+  "created_on": 1710044235,
+  "keywords": []
+}

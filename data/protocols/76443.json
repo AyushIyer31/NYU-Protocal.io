@@ -1,0 +1,36 @@
+{
+  "id": 76443,
+  "title": "The annotation pipeline for the genome of a snake",
+  "uri": "the-annotation-pipeline-for-the-genome-of-a-snake-cnv3ve8n",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l27ez4g1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"bee8l\",\"text\":\"Here are detailed methods use for the annotation of various snake genomes. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"a7sqp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"cvpbq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"e1a1a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "1) Run RepeatModeler to build a de novo library based on the input assembled genome sequence. 2) Using the library constructed in step 5 as the database, run RepeatMasker (v. 3.3.0) to find and then classify the repetitive sequences. 2) using parameters &#34;-nolow -no_is -norna -parallel 1&#34;",
+    "Run TRF (v. 4.09), RepeatMasker and RepeatProteinMask (v. 3.3.0) to identify repeats in the genome at DNA and protein level, respectively, by aligning sequences against the Repbase library (v. 17.01). using parameters &#34;-noLowSimple -pvalue 0.0001&#34; when running RepeatProteinMask",
+    "Mask these repetitive regions obtained above (step 4-6) with &#39;N&#39;s. Before gene prediction, mask the TE&#39;s (transposable elements) in the genome.",
+    "Run Augustus (v3.0.3) to de novo predict genes in the repeat-masked genome sequences. using parameters &#34;--species=Ophiophagus_hannah --uniqueGeneId=true --noInFrameStop=true --gff3=on --strand=both&#34; when running Augustus.",
+    "Download the publicly available protein sequences of representative homologous snake species, align these against our masked genome sequences with BLAT, and then based on the BLAT mapping results, GeneWise (v2.4.1 ) is then run to predict the genes.",
+    "Then filter RNA-seq data using Trimmomatic(v0.30). The resulting data is then assembled by Trinity (v2.13.2). PASA(v2.0.2) was finally used to align transcript against the snake genome of interest to obtain gene structures. default parameters",
+    "Integrate the genes predicted in step 4-6 to obtain the consensus gene set using the MAKER pipeline (v3.01.03).",
+    "Map protein sequences of the final gene set to existing databases to identify their functions or motifs, such as SwissProt, TrEMBL, KEGG, InterPro. SwissProt, TrEMBL and KEGG: using BLASTP; Interpro: using InterProScan (v5.52-86.0) with seven different models (Profilescan, blastprodom, HmmSmart, HmmPanther, HmmPfam, FPrintScan and Pattern-Scan)"
+  ],
+  "authors": [
+    "Boyang Liu",
+    "Liangyu Cui",
+    "Zhangwen Deng",
+    "Yue Ma",
+    "Diancheng Yang",
+    "Yanan Gong",
+    "Yanchun Xu",
+    "Shuhui Yang",
+    "Song Huang"
+  ],
+  "creator": "Boyang Liu",
+  "published_on": 1675947669,
+  "created_on": 1675669376,
+  "keywords": []
+}

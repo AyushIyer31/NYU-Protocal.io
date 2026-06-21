@@ -1,0 +1,38 @@
+{
+  "id": 116532,
+  "title": "Absolute Proteome Quantification of Extracellular Proteins",
+  "uri": "absolute-proteome-quantification-of-extracellular-dv2u68ew",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygxwnyov8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"6h4kk\",\"text\":\"To quantify secreted proteins in the culture medium, we described a simple and straightforward protocol for the absolute quantification of extracellular proteins in bacteria. We concentrated extracellular proteins, which are highly diluted in the medium, using StrataClean resin along with a set of standard proteins to determine the extent of the concentration step. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"7oi02\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"24tso\",\"text\":\"- Low-binding tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"78gdq\",\"text\":\"- Centrifuge\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mrsk\",\"text\":\"- Overhead shaker\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"35urm\",\"text\":\"- SpeedVac centrifuge\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4s7re\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2k1mr\",\"text\":\"Common Reagents \\u0026 Buffers\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":25}],\"entityRanges\":[],\"data\":{}},{\"key\":\"33jqr\",\"text\":\"- Tris-EDTA (TE) buffer (10 mM Tris-HCl, 1 mM EDTA, pH 7.5)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4uvta\",\"text\":\"- StrataClean resin (Agilent)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cepul\",\"text\":\"- 37 % HCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bk2kp\",\"text\":\"- Loading buffer (4% (w/v) SDS, 20% (v/v) glycerol, 40 µg/mL bromophenol blue, 125 mM Tris-HCl pH 6.8 with 10% (v/v) β-mercaptoethanol)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"as877\",\"text\":\"- Porcine Trypsin\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"26ech\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3713q\",\"text\":\"Protein Standards\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":17}],\"entityRanges\":[],\"data\":{}},{\"key\":\"pko5\",\"text\":\"- Anchor proteins (e.g. Universal Protein Standards -UPS2- from Sigma)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ncc3\",\"text\":\"- Enrichment standards (described in this protocol)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5vphv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4j2t3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Run the SDS-PAGE gel to the desired time. Lower times are recommended for samples with low complexity and/or highly diluted.",
+    "Load the resin with the bound protein into the gel pocket. After sample loading, add the anchor proteins used for quantification (e.g. UPS2) into the gel pocket on top.",
+    "Resuspend the resin-bound protein in 20 µL loading buffer (consider the gel pocket size to adjust the final volumes, as it will be combined with the anchor proteins in the well). It is recommended to resuspend the dried resin in 2X the original amount to ease the pipetting into the gel as the resin is very viscous. For example, 20 µL initial resin can be divided into 2 eppis with 10 µL each, dried and resuspended in 20 µL loading buffer.",
+    "Pellet by centrifuging at 4 °C an aliquot of the culture to be analysed. 8500 x g, 4 °C, 10 minutes",
+    "Vacuum-dry the resin containing the bound protein.",
+    "Recover the supernatant into a new tube. Low-binding tubes are recommended when preparing proteomics samples.",
+    "Add 20 µL HCl-primed StrataClean resin (Agilent; REF 400714) into the raw supernatant and incubate at 4 °C overnight with overhead shaking. 800 rpm, 4 °C, 16 hours Other protocols (TCA/Acetone precipitation) can be used as they showed comparable efficiency to the one described here. Nonetheless, StrataClean beads reduce the usage of organic solvent",
+    "Centrifuge at maximum speed at 4 °C and discard the supernatant to recover the resin with the bound proteins. Wash the resin with TE buffer and repeat the centrifugation step.",
+    "Add the Enrichment Standards to the raw supernatant. Important! This step is crucial to quantify the total protein in the raw supernatant allowing to estimate the protein binding efficiency. Standards were added based on the supernatant&#39;s protein concentration in a ratio of 1:35 (ng of standard mixture: ng of estimated sample protein). Below is the table of proteins used as standards in our paper. %s %s",
+    "Proceed with Coomassie staining to visualize the eluted protein in the gel lanes.",
+    "Fractionate the gel lanes in squares of 2x2 mm",
+    "Destain the gel with 200 mM ammonium bicarbonate buffer in 30% (vol/vol) acetonitrile with 00:15:00 incubations at 37 °C . Repeat until completely destained.",
+    "Vacuum-dry the destained gel pieces and resuspend them in 2 µg/µL trypsin. Incubate overnight at 37 °C.",
+    "To elute the digested peptides, resuspend the digested gel pieces in MilliQ-water and sonicate for 15 minutes. Centrifuge at maximum speed and transfer the supernatant to a low-binding eppi.",
+    "Vaccum-dry and resuspend in 0.1 % MS-grade acetic acid.",
+    "Proceed with desalting. We recommend ZipTip (Millipore) desalting because of the simplicity of the protocol. Nonetheless, other protocols like StageTipping can be performed.",
+    "Vaccum-dry and resuspend with Buffer A for MS measurement of the samples."
+  ],
+  "authors": [
+    "Borja Ferrero Bordera",
+    "Sandra Maaß"
+  ],
+  "creator": "Borja Ferrero Bordera",
+  "published_on": 1739297977,
+  "created_on": 1734686745,
+  "keywords": []
+}

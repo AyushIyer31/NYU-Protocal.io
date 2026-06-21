@@ -1,0 +1,27 @@
+{
+  "id": 27229,
+  "title": "Gibson Protocol",
+  "uri": "gibson-protocol-6t5heq6",
+  "doi": "dx.doi.org/10.17504/protocols.io.6t5heq6",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Prepare 6 ml of 5X ISO Buffer in a 15 ml falcon tube as follows: 3 ml 1 M Tris-HCl pH 7.5 + 150 ul 2 M MgCl2 + 240 ul 100 mM dNTP mix (25 mM each: dGTP, dCTP, dATP, dTTP) + 300 ul 1 M DTT + 1.5 g PEG-8000 + 300 ul 100 mM NAD + _______dH 2 O to 6 ml Store at -20 C in 320 ml aliquots.",
+    "Prepare 1.2 ml of Gibson assembly master mix as follows: 320 ul 5X ISO Buffer + 0.64 ul 10 u/ml T5 exonuclease* + 20 ul 2 u/ml Phusion polymerase + 160 ul 40 u/ml Taq ligase + _______dH 2 O to 1.2 ml Store at -20 C in 15 ml aliquots. *This is optimized for 20-150 bp sequence homology overlaps",
+    "Thaw a 15 ml aliquot of the Gibson assembly master mix and keep on ice until use.",
+    "Measure the DNA concentration (ng/ml) of each assembly piece.",
+    "Add 100 ng of the linearized vector backbone and equimolar amounts of the other assembly pieces to the thawed 15 ml master mix in a 20 ml total volume assembly reaction mixture as follows: linearized vector backbone (100 ng) + each additional assembly piece (to equimolar with backbone) + 15 ml Gibson assembly master mix + _______dH 2 O to 20 ml",
+    "Incubate the assembly reaction at 50 C for 60 minutes, and then place on ice.",
+    "Transform 5 ml of the assembly reaction into 100 ml of competent E. coli and/or run a diagnostic agarose gel to check for successful assembly."
+  ],
+  "authors": [
+    "N.J. Hillson"
+  ],
+  "creator": "Michael J Fero",
+  "published_on": 1566933134,
+  "created_on": 1566857170,
+  "keywords": []
+}

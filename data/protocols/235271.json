@@ -1,0 +1,38 @@
+{
+  "id": 235271,
+  "title": "UTAG-seq: accurate detection of somatic mutations by single-cell duplex-sequencing",
+  "uri": "utag-seq-accurate-detection-of-somatic-mutations-b-hhzfb373p",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2ly5z8mvx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"4r8pe\",\"text\":\"Here, we developed UTAG-seq, a single-cell duplex-sequencing method that enables comprehensive genome coverage. Applying UTAG-seq to individual human umbilical cord blood cells, we validated the somatic mutation calling accuracy to be \\u003c 10-9. Together, these results demonstrate that UTAG-seq supports highly accurate single-cell somatic mutation detection and will facilitate the characterization of somatic mosaicism across diverse biological contexts.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":239,\"length\":2}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"85obn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Sort single cell/nuclei into individual PCR tube or well. Incubate at 50 °C 03:00:00 75 °C 00:20:00 to perform cell lysis. Lysed cells can be stored at -80 °C .",
+    "Prepare cell lysis buffer (2.5 uL per cell) 0.075 µL UltraPure™ 1M Tris-HCI, pH 8.0 Invitrogen - Thermo Fisher Catalog #15568025 0.01 µL 0.5M EDTA Merck MilliporeSigma (Sigma-Aldrich) Catalog #E7889-100ML 0.05 µL 1 M KCl Thermo Scientific 0.025 µL 10% Triton X-100 solution Merck MilliporeSigma (Sigma-Aldrich) 0.09 µL 10% NP40 Amresco 0.12 µL Protease (20 mg/mL) Qiagen 2.13 µL DEPC-treated water Ambion Catalog #AM9915G",
+    "Prepare 500 µL 2X Annealing buffer. 40 µL UltraPure™ 1M Tris-HCI, pH 8.0 Invitrogen - Thermo Fisher Catalog #15568025 10 µL 5M NaCl Invitrogen - Thermo Fisher Catalog #AM9760G 450 µL DEPC-treated water Ambion Catalog #AM9915G",
+    "Transposon annealing. 20 µL 2X Annealing buffer 10 µL 200 micromolar (µM) ME_REV 10 µL 200 micromolar (µM) T1ME_U Oligonucleotides sequences ME_REV: /5Phos/CTGTCTCTTATACACATCT T1ME_U: TCGUCGGCAGCGUC AGATGTGTAUAAGAGACAG 90 °C 00:05:00 65 °C 00:05:00 Ramp rate 0.1ºC/s 4 °C Hold, Ramp rate 0.1ºC/s",
+    "Custom Tn5 assembly. 20 µL Tn5 transposase, unloaded Diagenode Catalog #C01070010-20 20 µL Annealed transposon mix Incubate at 23 °C 00:30:00 . Add 20 µL Glycerol Merck MilliporeSigma (Sigma-Aldrich) Catalog #G5516-100ML . Mix well and brief centrifuge. Store at -20 °C .",
+    "Prepare tagmentation mix (2.5 uL per cell). 1 µL 5X TB1 Illumina, Inc. 0.5 µL 10 millimolar (mM) MgCl2 0.2 µL U-Tn5 (1:200 diluted) 0.8 µL DEPC-treated water Ambion Catalog #AM9915G Gently mix and briefly spin down. Incubate at 25 °C 00:50:00 37 °C 00:05:00 . Note: the activity of purchased Tn5 transposase may vary between different batches. The goal of this step is to tagment gDNA to an average of ~200 bp fragments. Please adjust the amount of enzyme at this step if needed.",
+    "Tn5 inactivation. Add 1 µL 0.2 Molarity (M) EDTA. Incubate at 50 °C 00:30:00 .",
+    "Gap filling.",
+    "Add 1 µL 0.2 Molarity (M) MgCl2.",
+    "Add 3 µL Sealing mix: 1 µL 10X ThermoPol Buffer New England Biolabs 1 µL dNTP solution mix (10 mM each) New England Biolabs Catalog #N0447 0.1 µL Q5U® Hot Start High-Fidelity DNA Polymerase New England Biolabs Catalog #M0515 0.9 µL DEPC-treated water Ambion Catalog #AM9915G Incubate at 65 °C 00:00:30 . Quench reaction on ice. Add 1 µL 0.1 Molarity (M) EDTA. Mix well and briefly spin down. Incubate at Room temperature 00:05:00 .",
+    "Add 1 µL Thermolabile Proteinase K New England Biolabs Catalog #P8111S . Incubate at 25 °C 02:00:00 20 °C Overnight 55 °C 00:12:00 .",
+    "USER digestion. Add 2 µL USER mix: 0.2 µL 10X ThermoPol Buffer New England Biolabs 0.5 µL Thermolabile USER II Enzyme - 50 units New England Biolabs Catalog #M5508S 1.3 µL 10 micromolar (µM) T2ME_ssDNA Incubate at 37 °C 00:30:00 . Oligonucleotides sequences T2ME_ssDNA: GTCTCGTGGGCTCGG AGATGTGTAT",
+    "Ligation adapter annealing. Add 1 µL MgCl2 mix: 0.3 µL 10X ThermoPol Buffer New England Biolabs 0.5 µL 0.2 Molarity (M) MgCl2 0.2 µL DEPC-treated water Ambion Catalog #AM9915G Incubate at 55 °C 00:05:00 25 °C 00:05:00 Ramp rate 0.1ºC/s.",
+    "Ligation. Add 6 µL Ligation mix: 2.1 µL 10X T4 Ligase buffer NEB 1 µL T4 DNA Ligase New England Biolabs Catalog #M0202L 2.9 µL DEPC-treated water Ambion Catalog #AM9915G Incubate at 25 °C 00:30:00 65 °C 00:10:00 .",
+    "Yield test. Prepare qRT-PCR mix (10 uL per cell): 1 µL 10X ThermoPol Buffer New England Biolabs 0.25 µL 10 micromolar (µM) T1ME 0.25 µL 10 micromolar (µM) T2ME 0.2 µL dNTP solution mix (10 mM each) New England Biolabs Catalog #N0447 0.15 µL Deep Vent DNA Polymerase - 200 units New England Biolabs Catalog #M0258S 0.5 µL Evagreen dye, 20x in water Biotium Catalog ##31000 7.15 µL DEPC-treated water Ambion Catalog #AM9915G 0.5 µL Template. Oligonucleotides sequences T1ME: TCGTCGGCAGCGTC AGATGTGTATAAGAGACAG T2ME: GTCTCGTGGGCTCGG AGATGTGTATAAGAGACAG Perform the following program on a qPCR machine. 94 °C 00:02:00 26 cycles of 94 °C 00:00:20 68 °C 00:00:20 72 °C 00:01:00",
+    "Amplification step 1. Add: 1 µL 0.2 Molarity (M) EDTA 1.2 µL 10 micromolar (µM) T2ME_ssDNA 2.5 µL 10 micromolar (µM) Illumina Nextra i5 index 25 µL NEBNext Ultra II Q5 Master Mix New England Biolabs Catalog #M0544X PCR cycles: 98 °C 00:00:30 11 cycles of 98 °C 00:00:10 63 °C 00:00:30 72 °C 00:01:00 Cycle end 72 °C 00:03:00 Purify with 1.4 X Ampure XP beads Beckman Catalog #A63881 . Elute in 20 µL DEPC-treated water Ambion Catalog #AM9915G .",
+    "Amplification step 2. Add the following reagents to 20 µL purified products. 2.5 µL 10 micromolar (µM) Illumina Nextra i7 index 2.5 µL 10 micromolar (µM) Illumina P5 25 µL NEBNext Ultra II Q5 Master Mix New England Biolabs Catalog #M0544X Oligo sequences: Illumina P5: AATGATACGGCGACCACCGAGA PCR cycles: 98 °C 00:00:30 5 cycles of 98 °C 00:00:10 63 °C 00:00:30 72 °C 00:01:00 Cycle end 72 °C 00:03:00 Purify with 1.4 X Ampure XP beads Beckman Catalog #A63881 . Elute in 20 µL DEPC-treated water Ambion Catalog #AM9915G ."
+  ],
+  "authors": [
+    "Yichi Niu",
+    "Chenghang Chuck Zong"
+  ],
+  "creator": "Yichi Niu",
+  "published_on": 1766729516,
+  "created_on": 1765990655,
+  "keywords": []
+}

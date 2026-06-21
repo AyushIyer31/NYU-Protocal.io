@@ -1,0 +1,38 @@
+{
+  "id": 44701,
+  "title": "Allelic Exchange using pCJK218_1.3.17",
+  "uri": "allelic-exchange-using-pcjk218-1-3-17-bpv5mn86",
+  "doi": "",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Design primers for overlap PCR to create deletion and for sequencing.",
+    "Use overlap PCR to create in-frame deletion. Your deleted gene is flanked by 0.8 kb -1.0 kb upstream and downstream. If there is a gene in one of the flanking regions, that may be toxic when overexpressed, reduce that flanking arm and increase the other.",
+    "1st step PCR. Amplify the left flanking (LF) region and the right flanking (RF) region (use PfuUltraII or the other high fidelity polymerase). Run gel to determine size and quantity (use 2 µL of your PCR reaction).",
+    "2nd step PCR. Amplify full-length fragment. Set up PCR reaction with equal molar amounts of LF and RF regions without adding the outside primer. After 5 cycles add the outside primers and continue for 25 cycles. Confirm amplicon is full length-run 2 µL of PCR reaction. If the amplicon is the correct size, add 1 µL Taq Polymerase to the reaction and incubate for 15 minutes at 72 °C . This will add A’s on the end of your amplicon and you can clone it into pGEMT-Easy. The DNA yields are very low in pCJK218 so you may want to sequence it in pGEMT-Easy and subclone your fragment into pCJK218 after sequencing. If there is a single band, clean up using the Qiagen PCR clean-up kit and use the Zymo column (if the yield is low). If there are multiple bands purify from the gel using Qiagen Gel Extraction kit and Zymo column.",
+    "Clone your fragment into pCJK218 that has been digested and CIP treated. Electroporate into DH5α. Important! Outgrow and plate at 28 °C .",
+    "Check pCJK218_ΔYFG using restriction digest. Confirm pheS gene present by digesting with XmnI (6.922 kb and 0.990 kb). Transform electrocompetent cells, OG1RF or desired host strain with pCJK218_YFG",
+    "Select transformants on BHI, Cm ( 20 µg, /ml ) and X-gal ( 150 µg, /ml ) at 28 °C .",
+    "Restreak 8 blue colonies: BHI, Cm ( 20 µg, /ml ) and X-gal ( 150 µg, /ml ) at 28 °C .",
+    "Continue with 2 colonies that grow the best. Inoculate each one into 5 ml BHI containing Cm 15 and incubate 28 °C , static o/n. Make freezer stocks from overnight cultures.",
+    "Next day, dilute each culture 1:125, 1:250, 1:500 into fresh 5 ml BHI with 15 µg, /ml Cm and grow until culture reaches (OD600=~0.2). Check after 2 hrs. Usually, start cultures around 9:00 am and grow until 1:00 - 2:00 pm (pick the dilution that is closest to ~0.2 after 4-6 hours). Multiple dilutions are set up so one of them will reach an OD600=0.2 pCJK218 grows very slowly.",
+    "Shift incubator to 42 °C for 2.5-3 h to force single-site integration by homologous recombination.",
+    "Following incubation at 42 °C , serially dilute the cells in a 96-well plate and plate on a single BHI plate containing Cm 20 ug/ml and X-gal 150 ug/ml . Use square plates with 10 µL drop dilutions. Incubate at 42 °C .",
+    "Restreak 8 blue colonies from each drop plate onto the same medium. Blue colonies growing at 42 °C are likely to show positive integration clones.",
+    "If you have multiple strains, you may want to streak 2-4 colonies instead of 8 colonies.",
+    "Make freezer stocks from the restreaked colonies (from step 11) by growing o/n cultures in BHI, Cm 15-20 ug/ml , and incubating at 42 °C . Also start o/n cultures from 3 of the colonies (may want to reduce to 1 to 2, if you have multiple strains) in BHI, no selection, and incubate at 28°C. These will be used in step 13.",
+    "Serially passage from overnight cultures another night in BHI with no selection at 28 °C to force the second site recombination event. CK does only one passage-skips this step.",
+    "Following serial passage at 28 °C , the cultures will be plated by serial dilution on MM9YEG plates containing 10 millimolar (mM) p-chloro-phenylalanine and X-gal 150 ug/ml at 37 °C . The recipe for plates is in the pCJK47 detailed protocol.",
+    "The resulting white colonies are screened for the deletion of the target genes by colony PCR. I usually restreak before screening by colony PCR or liquid PCR. If there are no white colonies or all wt alleles, go back to step 12, and start o/n cultures from freezer stocks from 3 (or less depending on the number of strains) colonies not previously used in step 12."
+  ],
+  "authors": [
+    "Elizabeth Fozo"
+  ],
+  "creator": "Eadewunm",
+  "published_on": 1606164773,
+  "created_on": 1605805518,
+  "keywords": []
+}

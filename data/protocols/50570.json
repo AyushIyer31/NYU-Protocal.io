@@ -1,0 +1,34 @@
+{
+  "id": 50570,
+  "title": "Parsing of OAI_DC metadata in OpenRefine from OJS articles",
+  "uri": "parsing-of-oai-dc-metadata-in-openrefine-from-ojs-bvmin44e",
+  "doi": "dx.doi.org/10.17504/protocols.io.bvmin44e",
+  "description": "{\"blocks\":[{\"key\":\"btkav\",\"text\":\"Abstract\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a3fqr\",\"text\":\"Protocols for parsing metadata in OAI_DC format of articles harvested from Open Journal Systems (OJS) in order to create entities in WikiData\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Import the OAI identifiers and generate the baseurl list:",
+    "Import the identifiers following the instructions in the protocol https://www.protocols.io/view/come-importare-identificatori-oai-pmh-in-openrefin-bp7mmrk6",
+    "From the list of imported identifiers, generate the list of baseurl for harvesting the metadata of each item according to the indications given in the protocol &#34; Creare baseurl per harvesting di repository OAI con OpenRefine &#34; N.B. For OAI_DC metadata collection, the metadataPrefix in the url must be=oai_dc",
+    "OpenRefine will create a column containing XML text with the OAI_DC metadata of the article Test the operation of one of the generated URLs by clicking on the link and verifying that it opens a page with OAI_CD metadata in XML format. Es. https://aibstudi.aib.it/oai?verb=GetRecord&amp;metadataPrefix=oai_dc&amp;identifier=oai:ojs.riviste.aib.it:article/11366",
+    "Click on the metadataURL column , select Edit Column &gt; Add Column by retrieving from URLs, calling the new column metadata_oai. Once you have the metadata value for all items, you can move on to parsing",
+    "Metadata Parsing",
+    "Publishing data value.parseXml().select(&#39;record&#39;)[0].select(&#39;metadata&#39;)[0].select(&#39;oai_dc|dc&#39;)[0].select(&#39;dc|source&#39;)[0].ownText() The values exctracted with the previuos grel command usually contain the Journal title (P1433), the Volume, Issue &amp; publication date (P478, P433, P577) and the Pages from/to (P304) in a unique string To extract these single values, divide using the command Edit Column &gt; Split and choosing the appropriate separator (e.g.: &#39;;&#39;) Total number of pages (P1104) From the column obtained by the command Split, derive two more columns (PagStr and PagFin) with the value of the starting page and the value of the ending page. Create a new colonn &#34;NumTotPag (P1104)&#34; based on the PagFin column with the grel command: toNumber(value-cells[&#39;PagStr&#39;].value) + 1",
+    "DOI (P356) value.parseXml().select(&#39;record&#39;)[0].select(&#39;metadata&#39;)[0].select(&#39;oai_dc|dc&#39;)[0].select(&#39;dc|identifier&#39;)[1].ownText()",
+    "Title (P1476) value.parseXml().select(&#39;record&#39;)[0].select(&#39;metadata&#39;)[0].select(&#39;oai_dc|dc&#39;)[0].select(&#39;dc|title&#39;)[0].ownText()",
+    "Authors name and related info Authors data forEach(value.parseXml().select(&#39;record&#39;)[0].select(&#39;metadata&#39;)[0].select(&#39;oai_dc|dc&#39;)[0].select(&#39;dc|creator&#39;) ,v,v.ownText()).join(&#34;|&#34;) Author# inverted form Once you have the values of all authors in the column &#34;Authors data&#34;, derive one column for each name author (&#34;Author#1 inverted form&#34;, &#34;Author#2 inverted form&#34;, etc...) using the command Edit Column &gt; Split and choosing the separator | First name Author# (P735) - Surname Author# (P734) Once you have the values in the column &#34;Author# inverted form&#34;, derive the two columns &#34;First name Author# (P735)&#34; and &#34;Surname Author# (P734)&#34; using the command Edit Column &gt; Split and choosing the separator , Author# (P50) direct form Create the new column with the grel command: cells[&#39;First name Author# (P735)&#39;].value + &#39; &#39; + cells[&#39;Surname Author# (P734)&#39;].value",
+    "Link URL (P2699) value.parseXml().select(&#39;record&#39;)[0].select(&#39;metadata&#39;)[0].select(&#39;oai_dc|dc&#39;)[0].select(&#39;dc|identifier&#39;)[0].ownText() PDF Full text (P953) value.parseXml().select(&#39;record&#39;)[0].select(&#39;metadata&#39;)[0].select(&#39;oai_dc|dc&#39;)[0].select(&#39;dc|relation&#39;)[0].ownText()",
+    "Keyword, per language Once you have the values in a single cell, divide using the command Edit Column &gt; Split and choosing the appropriate separator (e.g.: &#39;|&#39;) KW ita (P921) value.parseXml().select(&#39;record&#39;)[0].select(&#39;metadata&#39;)[0].select(&#39;oai_dc|dc&#39;)[0].select(&#39;dc|subject[xml:lang=&#34;it-IT&#34;]&#39;)[0].ownText() KW eng (P921) value.parseXml().select(&#39;record&#39;)[0].select(&#39;metadata&#39;)[0].select(&#39;oai_dc|dc&#39;)[0].select(&#39;dc|subject[xml:lang=&#34;en-US&#34;]&#39;)[0].ownText()"
+  ],
+  "authors": [
+    "Alessandra Moi",
+    "carlo.bianchini ",
+    "Andrea Marchitelli"
+  ],
+  "creator": "Alessandra Moi",
+  "published_on": 1623780277,
+  "created_on": 1623162722,
+  "keywords": []
+}

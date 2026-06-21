@@ -1,0 +1,25 @@
+{
+  "id": 65604,
+  "title": "Cloning gene of interest into attb plasmid for PhiC31 integration",
+  "uri": "cloning-gene-of-interest-into-attb-plasmid-for-phi-ccbcssiw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl89xy6v2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"60gc5\",\"text\":\"This protocol describes a simple cloning procedure to insert a gene of interest (GOI) into an attb plasmid to use in combination with PhiC31 integration to generate low-copy integrants. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dd9mv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "The vector is generated in-house from the pX28 vector from Addgene ( #46850) . Not available from a repository yet, so synthesise/clone your own based on the sequence provided with this protocol.",
+    "Linearise the attb vector with MfeI and XhoI (purify the backbone). Alternatively , PCR-amplify the backbone using high-fidelity DNA polymerase. I use PrimeSTAR from Takara with excellent results ( https://www.takarabio.com/products/pcr/high-fidelity-pcr/primestar-hs-dna-polymerase ) If worried about introducing any mutations by PCR, sequence the entire plasmid using Plasmidsaurus service.",
+    "Design primers to amplify the GOI to insert into attb plasmid. Use Takara primer design tool to generate primers that overlap with the ends of the vector backbone to achieve seamless cloning using In-Fusion cloning kit ( https://www.takarabio.com/learning-centers/cloning/primer-design-and-other-tools ). Alternatively, use your preferred method for cloning (ligation, Gibson assembly, etc.)",
+    "In-Fusion cloning (if using this method) 3 μL of DNA mix (insert and vector, 200 ng in total) 1 μL of In-Fusion enzyme mix 1 μL dH2O Total volume 5 μL 15 min at 50C",
+    "Transformation protocol: Stellar Competent Cells (Use 14 mL round-bottom tubes) 50 uL of cell suspension + 2.5 uL of DNA mix Incubate on ice for 30 min Heat shock for 45 s at 42 degrees, keep on ice 1-2 min Add 450 uL SOC medium (warmed up to 37 degrees previously) Incubate for 1 h at 37 degrees (30 min is also fine if in a rush) Plate 50 uL on an Amp agar plate Leave in the incubator at 37C Alternatively, use any other competent cells and transformation protocol of choice."
+  ],
+  "authors": [
+    "Goran Tomic"
+  ],
+  "creator": "Goran Tomic",
+  "published_on": 1656501021,
+  "created_on": 1656499106,
+  "keywords": []
+}

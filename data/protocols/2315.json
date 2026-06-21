@@ -1,0 +1,24 @@
+{
+  "id": 2315,
+  "title": "K-mer-based host screening",
+  "uri": "K-mer-based-host-screening-ehjbb4n",
+  "doi": "dx.doi.org/10.17504/protocols.io.ehjbb4n",
+  "description": "{\"blocks\":[{\"key\":\"101il\",\"text\":\"K-mer-based approaches to determining sequence similiarity can be faster than traditional use of BLAST.  This application uses Jellyfish to index host FASTA files, then uses the mode value (default 2) of the number of matching k-mers (default k=20) from the input sequence to determine whether the sequence is similar enough to the host sequence to be rejected.  The output of the app is:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":127,\"length\":9}],\"data\":[]},{\"key\":\"ba20f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ekucg\",\"text\":\"\\\"screened\\\" directory containing the sequences from each file that were found to be dissimlar to the host\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6lidh\",\"text\":\"\\\"rejected\\\" directory containing the sequence from each file that were too similar to the host\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"446oq\",\"text\":\"\\\"jf\\\" directory containing Jellyfish indexes of each \\\"host\\\" file (useful for later runs with other files to skip recreating)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9oome\",\"text\":\"\\\"kmer\\\" directory containing k-mers of query sequences and \\\".loc\\\" file showing the number of \\\".kmer\\\" lines associated to each sequence\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"aqsla\",\"text\":\" Code is freely available at Github.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":29,\"length\":6}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"8D730E5778114095B0B9C95D61F610FF\",\"url\":\"http://www.genome.umd.edu/jellyfish.html\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"F7EB8895EAD04D5B8EC08A68DCBE4F38\",\"url\":\"https://github.com/hurwitzlab/docker-screen-host\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"a8as4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"4m32s\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"9qlh8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Upload your data to the CyVerse Data Store.",
+    "Login to iPlant/CyVerse Discovery Environment . Choose the &#34;Apps&#34; button on the left, then navigate to &#34;Public Apps -&gt; Experimental -&gt; iMicrobe -&gt; Host Screen.&#34;",
+    "Indicate the directory containing the host (reference) sequences and the query files you wish to screen. You can change the k-mer size (default 20) and mode minimum (default 2). Click the &#34;Launch Analysis&#34; and wait for an email indicating that the app has finished. See the &#34;run-screen-host&#34; directory for the files described above."
+  ],
+  "authors": [
+    "Bonnie Hurwitz",
+    " Ken Youens-Clark"
+  ],
+  "creator": "Ken Youens-Clark",
+  "published_on": 1455053001,
+  "created_on": 1454517116,
+  "keywords": []
+}

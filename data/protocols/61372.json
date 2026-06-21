@@ -1,0 +1,31 @@
+{
+  "id": 61372,
+  "title": "Measurement of OD to CFU ratio in bacteria  ",
+  "uri": "measurement-of-od-to-cfu-ratio-in-bacteria-b764rrgw",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"6ti9o\",\"text\":\"A protocol for estimating CFU (colony forming units) to OD (optical density) for many bacterial species at once. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8gc23\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"h8p3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Two days before the experiments: pick one or two colonies from a plate and put them in culture in 5 mL of LB, in a 50mL Falcon. Incubate for 24 hours * . * Shaker 300 rpm, temperature 22,5°C. The tubes are kept closed.",
+    "The day before: transfer 1µL from your tube to a new culture tube * , using a sterile inoculating loop. Incubate for 24 hours. * Again, in 5mL of LB in a 50 mL Falcon. In case more bacteria is needed, we put up to 10 mL of LB (in order to have good shaking). We put the bacteria in two successive cultures to reduce the variability linked to colony picking.",
+    "Measure the optical density (at 600 nm) of your sample * . * Blank with M9. Dilute your sample to get a measure between OD=0.1 and OD=1.",
+    "Prepare your 96 well plate * . * With a multipipette, fill the 9 first columns of wells with 180µL of M9 (using a reservoir). It is advised to have some level of markings on the plate (bacteria species, wells that you will use), both on the lid and under it. Usually, each bacterial species goes on its own line, with each column containing one dilution level. The dilution levels we are interested in usually correspond to columns 2 to 9.",
+    "Perform a serial dilution * in M9. * Using a regular pipette, put 20µL of bacteria in the first well of each row (first column). Now using a multipipette (set on 20µL), here is how to go from column N to column N+1: mix 10-15 times in column N, take 20uL, release it in column N+1, and mix ~5 times. Change the tips between each transfer. Be careful not to blow out liquid when your tips are not in the wells, as you might cross-contaminate everything. Repeat this until column 9.",
+    "Plate the bacteria * on NGM Petri dishes. * We use one dish per species, with four replicates in each. We usually draw a black straight line on the bottom of the petri dish (1-2cm away from the border), as a reference to align the first drop of each row. Using a multipipette, set on 10µL this time, you now take volume from wells 2-9 in each row (so the wells of one species), and dispense it on the dish, without touching the agar. The tip containing the most concentrated bacteria should go above the black line. Do this four times (so that in the dish you have 4 lines of 8 drops).",
+    "In the next few days, control bacterial growth * . * The interesting drops are the most diluted ones where individual colonies can be counted. The bacteria should grow until the colonies are fairly visible, but not fusing together.",
+    "Once all the bacteria have grown (which should be 1-3 days later), count them * in order to compute their original CFU ** . * For each species, choose the two best dilution levels: the colonies should be distinguishable, and contain around 10 bacteria per drop. Then, count the number of colonies for each replicate. ** For each dilution in each bacteria: sum the four counts, and divide it by four to have the average amount of bacteria in 10uL. To have the amount per microliter, divide by ten. Then, take the dilution into account (knowing the first drop is diluted 10 times, the second 100, etc.). The two CFU’s obtained for each bacteria should be similar (within the same order of magnitude).",
+    "Compute the CFU/OD ratio * . * For each bacteria, choose one of the CFU’s (the closest to 10 bacteria / drop), and divide it by the OD of the original culture."
+  ],
+  "authors": [
+    "Gabriel Madirolas",
+    "Alid Al-Asmar",
+    "Alfonso Pérez Escudero"
+  ],
+  "creator": "APE Lab",
+  "published_on": 1652107350,
+  "created_on": 1650888529,
+  "keywords": []
+}

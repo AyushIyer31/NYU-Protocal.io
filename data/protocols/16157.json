@@ -1,0 +1,28 @@
+{
+  "id": 16157,
+  "title": "Morphometry of Ophiothrix (Echinodermata: Ophiuroidea)",
+  "uri": "morphometry-of-ophiothrix-echinodermata-ophiuroide-tz5ep86",
+  "doi": "dx.doi.org/10.17504/protocols.io.tz5ep86",
+  "description": "{\"blocks\":[{\"key\":\"30iut\",\"text\":\"Morphometry of Ophiothrix using PERMANOVA and LDA (Linear Discriminant)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":15,\"length\":11}],\"entityRanges\":[],\"data\":{}},{\"key\":\"bi1hg\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"82oqi\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ehovv\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"6ft5t\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"2cufp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"5deqh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Measurements were taken using an ocular micrometer and through the AxioVision VS program 40.4.8.20 (Carl Zeiss Microscopy, Germany) attached to a ZEISS Discovery V20 stereomicroscope for specimens less than 10 mm disc diameter and with a digital Mitutoyo CD-6 CS caliper for the larger specimens.",
+    "Disc diameter, Radial shield length, Radial shield width, Disc spine, Arm spine, Second arm spine, Oral diameter, Oral shield length, Oral shield width, Adoral shield length, Adoral shield width, Dorsal arm plate length, Dorsal arm plate width, 1 st ventral arm plate length, 1 st Ventral arm plate width, 2 nd ventral arm plate length, 2 nd ventral arm plate width",
+    "A permutational multivariate analysis of variance (PERMANOVA) was conducted (function adonis) and homogeneity of group dispersions (functions betadisper and permutest) were then used to formally test whether morphological characters and dispersion differed between CS (package vegan).",
+    "The linear discriminant analysis (LDA) was applied using the R environment. To avoid multicollinearity among morphological characters a correlation matrix was constructed and the variables that were significantly correlated were removedwith a threshold value of 0.9. To investigate the differences in morphological characters, lda function (package MASS) was used to distinguish the four Ophiothrix CS. The classification rate of each CS was assessed by the “lda” function. The predict function (package STATS) and table function (package BASE) were used to assess the classification based on the linear discriminants and to verify the model error. Visualization was performed using the package ggplot2. Ophiothrix angulata specimens from the type locality (USNM) were predicted by the model to verify the CS to which they were most related."
+  ],
+  "authors": [
+    "Renata Alitto",
+    "Pablo Damian Borges Guilherme",
+    "Michela Borges",
+    "Letícia e Oliveira Dias",
+    "Helena Serrano"
+  ],
+  "creator": "Renata Alitto",
+  "published_on": 1548345964,
+  "created_on": 1538008296,
+  "keywords": []
+}

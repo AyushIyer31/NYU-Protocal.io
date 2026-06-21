@@ -1,0 +1,38 @@
+{
+  "id": 126064,
+  "title": "Brain CABLE analysis",
+  "uri": "brain-cable-analysis-d7cq9ivw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5qpvoo5zdv4o/v1",
+  "description": "{\"blocks\":[{\"key\":\"6tghv\",\"text\":\"This protocol is for using the cytoarchitecture-based link estimation (CABLE) method to infer fiber tracts in the brain by analyzing nuclear/somal anisotropy and spatial arrangement of adjacent cells. This method was developed based on the high-resolution fluorescence imaging data of mouse, marmoset, macaque, and human brains obtained with the serial sectioning-and-clearing, 3D microscopy, semi-automated reconstruction and tracing (SMART) strategy. CABLE effectively resolves intersecting and bending fibers, enhancing structural connectivity mapping of primate brains to the cellular resolution. The method is compatible with other micrometer-resolution imaging datasets, provided the cytoarchitecture is labeled via nuclear or somal staining.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Obtain 3D-reconstructed brain images",
+    "Install OrientationJ in FIji .",
+    "3D imaging with other methods is also applicable, given the spatial resolution is beyond 5 μm.",
+    "We recommend the SMART brain mapping pipeline for obtaining the 3D whole-brain images, with a spatial resolution of 1 μm × 1μm × 2.5μm.",
+    "Convert the image to a single HDF5 file.",
+    "Run the CABLE analysis tool available at: BrainCABLE/CABLE",
+    "(optional) Get the ground-truth virus-labeling axons.",
+    "Open a 2D brain image in Fiji. Navigate to Plugins–OrientationJ–Orientation vector field . DAPI staining of the corpus callosum. Orientation vector field analysis window.",
+    "Configure the structure tensor analysis window and vector field window size based on the scale under analysis.",
+    "(optional) Apply a Gaussian blur with a kernel size of 1 or 2μm for denoising.",
+    "Enable the “overlay” and “show table” options . This will display the local orientation on the image and present quantitation results in a pop-up table. The red lines represent the local directions. Corresponding to the relevant attributes of each line segment."
+  ],
+  "authors": [
+    "Yue Zhang",
+    "Tao Song",
+    "Chao-Yu Yang",
+    "Pengcheng Zhou",
+    "Guo-Qiang Bi",
+    "Yanyang Xiao",
+    "Cirong Liu",
+    "Fang Xu"
+  ],
+  "creator": "Fang Xu",
+  "published_on": 1762250639,
+  "created_on": 1743663364,
+  "keywords": []
+}

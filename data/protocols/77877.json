@@ -1,0 +1,31 @@
+{
+  "id": 77877,
+  "title": "How to make Tol2 mRNA",
+  "uri": "how-to-make-tol2-mrna-cqavvse6",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv5jo94l1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"2f4mp\",\"text\":\"These are instructions to make highly concentrated (\\u003e 1000 ng/µL) Tol2 mRNA. Note, the in-vitro transcription kit (mMESSAGE mMACHINE) is not cheap. 5–6 reactions like the protocol suggests come to ~ 100–120£, so please be thrifty with it.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Find the Tol2 plasmid from the Wilson lab freezer. It is #1151 and is labelled Tol2. The concentration (measured on Qubit) is ~ 690 ng/µL (as of the Eppendorf in 2022). Thaw it.",
+    "We linearise the plasmid using the restriction enzyme NotI HiFi. On ice, prepare 6 reactions in 0.5 mL Eppendorfs. Each reaction is (pipet in this order): Tol2 plasmid 2.9 µL NotI HiFi 2 µL CutSmart buffer 10× 10 µL nuclease-free H2O 91.1 µL Total = 100 µL (Add the enzyme last).",
+    "Place the Eppendorfs in the 37˚C water bath. Incubate for at least 1 hour. Digesting for more than 1 hour may be beneficial (cf. https://international.neb.com/tools-and-resources/usage-guidelines/restriction-endonucleases-survival-in-a-reaction ).",
+    "Clean (remove the enzyme etc.) the reaction using the QIAquick PCR Purification Kit. Similar column-based kits are probably OK. Follow the protocol in the box or online. Use a single column. For the first step (adding 5 volumes of PB buffer): transfer each 3 reactions in a 2 mL Eppendorf to obtain two 2 mL Eppendorfs, each containing 300 µL of reaction. Add 1500 µL (5 volumes) of PB buffer. Vortex and spin down (with the benchtop centrifuge). Add ~ 700 µL on the column and spin down following the kit&#39;s instructions (big centrifuge). Discard flow-through. Repeat until you got all 600 µL of reaction (the two 2 mL Eppendorfs) through the column.",
+    "At the last step of the kit&#39;s protocol, elute in 30 µL nuclease-free H2O. Measure the concentration on the Qubit (dsDNA BR or HS kit). We expect the concentration to be 200–400 ng/µL *. * Logic is: each reaction had ~ 2,000 ng of plasmid (2.9 µL of 690 ng/µL) and we did 6 reactions, so 12,000 ng total. If you lost 0% on the column, you will get 12,000 ng in 30 µL, i.e. 400 ng/µL. If you lost 50% on the column, you will get 6,000 ng in 30 µL, i.e. 200 ng/µL.",
+    "Next step is to turn the linearised Tol2 plasmid (DNA) into mRNA. Find the SP6 mMESSAGE mMACHINE kit. ! Make sure you are using the SP6 version. In my experience, each reaction generates 3,000–4,000 ng mRNA. Therefore, to get ~ 12 µL of &gt; 1,000 ng/µL, you will need at least 3 reactions. This is assuming a good output and losing nothing on the column during clean-up, so I try to do 5–6 reactions for critical injections where I need high integration rate directly in F0 injected embryos. Prepare each reaction on ice in a small 0.5 mL Eppendorf. Each reaction is: 2× NTP/CAP 10 µL 10× reaction buffer 2 µL linearised Tol2 plasmid *** enzyme mix 2 µL nuclease-free H2O *to 20 µL* *** Calculate from the concentration found in the previous step so that you use 1 µg. e.g. I found the concentration to be 343 ng/µL, so I use 2.91 µL here.",
+    "Place the Eppendorfs in the 37˚C water bath. Incubate for 2 hours. There is no benefit in incubating for more than 2 hours (cf. reaction time course: https://www.thermofisher.com/order/catalog/product/AM1340#:~:text=mMESSAGE%20mMACHINE%E2%84%A2%20kits%20are,structure%20at%20the%205&#39;%20end. ). Should be OK if reaction lasts a bit longer if for whatever reason you cannot stop it in time.",
+    "Add 1 µL TURBO DNase in each reaction (included in the kit). This is removes the DNA, i.e. the linearised plasmid. Incubate in the 37˚C water bath for 15 min.",
+    "Clean-up the mRNA using the ZYMO RNA Clean &amp; Concentrator kit. Follow the kit&#39;s instructions. Use a single column. At the end, elute in 13 µL nuclease-free H2O. Add the 13 µL directly on the column&#39;s filter and wait for a few minutes at room temperature. Heating the nuclease-free H2O to 70˚C prior to adding it to the water may also help with retrieving as much as possible mRNA from the column, but I have never tried. (You can always dilute later if you find that the Tol2 mRNA is highly concentrated, so best to elute in a small volume.)",
+    "Measure the concentration on Qubit (BR or HS RNA kit). Qubit can measure low concentrations, so no need to waste precious Tol2 mRNA. You can e.g. dilute 10×: 0.4 µL Tol2 mRNA 3.6 µL nuclease-free H2O and measure that concentration. Just remember to multiply the concentration you find by 10. You are expecting (hoping) &gt; 1,000 ng/µL. For reference, if each of 6 reactions produced 3000 ng and nothing is lost on the column, you would expect ~ 1384 ng/µL (6 × 3000 ng, eluted in 13 µL).",
+    "Aliquot the ~ 13 µL in 3–4 small 0.5 mL Eppendorfs and store in the –80˚C freezer."
+  ],
+  "authors": [
+    "FishFloorUCL "
+  ],
+  "creator": "Francois Kroll",
+  "published_on": 1677689758,
+  "created_on": 1677681075,
+  "keywords": []
+}

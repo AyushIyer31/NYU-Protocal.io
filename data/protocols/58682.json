@@ -1,0 +1,35 @@
+{
+  "id": 58682,
+  "title": "Golden Gate Assembly",
+  "uri": "golden-gate-assembly-b5i2q4ge",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"6fli4\",\"text\":\"Protocol for golden gate assembly of modular plasmids from Yeast Toolkit, Bee Toolkit and Marine Modification Kit platforms.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Streak out the plasmid parts that will be used in the assembly onto LB agar plates with the appropriate antibiotics (Chloramphenicol 100µg/mL for Type 1-7 parts; Kanamycin or Gentamicin 100µg/mL for Type 8 backbone parts). Incubate overnight at 37ºC.",
+    "Inoculate a single colony into 25mL of LB plus antibiotics in the late afternoon/early evening. Incubate overnight at 37ºC while shaking at 200rpm.",
+    "Spin the culture at 5000g for 20 minutes. Remove the supernatant, resuspend the pellet in 1mL water. Perform a plasmid miniprep (Zyppy miniprep or Omega E.Z.N.A. Plasmid Mini Kit II) following the standard kit protocols.",
+    "Measure the Plasmid DNA concentration on a spectrophotometer.",
+    "Perform the Golden Gate Assembly: Dilute backbone plasmid parts and add 10fmol to the reaction Dilute the insert plasmid parts and add to 20fmol of each insert to the reaction Add 2µL T4 Ligase Buffer (Promega) Add 1µL T4 Ligase Add 1µL BsaI-HF_V2 or BsmBI-HF endonuclease Add X water up to a 20µL reaction Follow the reaction protocol listed on the Barrick Lab website: https://barricklab.org/twiki/bin/view/Lab/Old_Golden_Gate_Assembly",
+    "Run the thermocycler program for BsaI/BsmBI as follows: A B C 1 Step Temperature Time 2 1 37/42ºC 5 minutes 3 2 16ºC 5 minutes 4 Cycles 1-2 Repeat 30x 5 3 37/55ºC 10 minutes 6 4 80ºC 10 minutes The thermalcycler program used for this protocol can be found on the Barrick Lab website here , along with other great troubleshooting tips.",
+    "Dilute 2x or electroporate 2µL of the GGA directly into electrocompetent cells (i.e. SM10 pir , S17 pir ). Recover 1+ hours and plate on LB Agar media containing the correct antibiotic concentrations. Incubate at 37ºC overnight.",
+    "Screen colonies for correct insert and perform colony PCR with primers spanning assembly junctions.",
+    "Streak out clones that yield a band onto LB Agar media containing the correct antibiotic concentrations and incubate at 37ºC overnight.",
+    "Inoculate a single colony into 25mL LB broth containing the correct antibiotic concentrations and incubate at 37ºC overnight.",
+    "Store overnight culture in cryovials for long term storage. Add 500µL of culture to 500µL of 50% glycerol and store in -80ºC freezer.",
+    "With remaining culture, Centrifuge at 5000g for 20 minutes. Remove the supernatant, resuspend the pellet in 1mL water. Perform a plasmid miniprep (Zyppy miniprep or Omega E.Z.N.A. Plasmid Mini Kit II) following the standard kit protocol. Elute with water.",
+    "Measure the Plasmid DNA concentration on a spectrophotometer.",
+    "Send the miniprepped plasmid for Sanger or Oxford Nanopore long-read plasmid sequencing to confirm the construct. Store the remaining miniprep for downstream applications (i.e. shuttle into different electrocompetent cell for conjugation)."
+  ],
+  "authors": [
+    "Amanda T Alker",
+    "Nicholas J Shikuma"
+  ],
+  "creator": "Amanda T Alker",
+  "published_on": 1675105603,
+  "created_on": 1645654406,
+  "keywords": []
+}

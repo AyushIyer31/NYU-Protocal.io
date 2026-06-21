@@ -1,0 +1,26 @@
+{
+  "id": 243355,
+  "title": "Open-Field Video Tracking and Locomotion Classification (DeepLabCut Pipeline)",
+  "uri": "open-field-video-tracking-and-locomotion-classific-hrv3b568p",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g7763kgwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"musw0\",\"text\":\"This protocol describes the video tracking and framewise locomotion classification pipeline used for open-field experiments. Videos were tracked in DeepLabCut (DLC) using three body points (nose, back, tail base). Tracks were filtered and smoothed, and each video frame was classified as forward, backward, or sideways locomotion based on the angle between the instantaneous movement vector and the body-axis orientation vector. Outputs were summarized in peri-stimulus time bins for each stimulation bout and exported for downstream analyses.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9wjqo\",\"text\":\"**Critical steps and notes**\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"xlmyu\",\"text\":\"- Use consistent video acquisition settings (30 fps, stable lighting) across sessions.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"oesnv\",\"text\":\"- Maintain the same DLC network and post-processing parameters across conditions.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"i3vjy\",\"text\":\"- The speed gate and angle thresholds strongly affect classification; keep them fixed once defined.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"gftic\",\"text\":\"- Inspect representative sessions visually (overlay tracks) to confirm tracking quality and correct orientation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"teykf\",\"text\":\"**Inputs**\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2hkf7\",\"text\":\"- Overhead open-field video recordings (1080p; 30 fps).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"srjtg\",\"text\":\"- Stimulation timing (bout onset timestamps) to define peri-stimulus windows.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"sedhm\",\"text\":\"- DeepLabCut model trained to detect: nose, back, tail base.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dkep7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"wctna\",\"text\":\"**Software**\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dbbyy\",\"text\":\"- DeepLabCut (DLC).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"0kihv\",\"text\":\"- Python or MATLAB for post-processing of DLC tracks (gap filling, smoothing, vector computations, binning).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Track each video in DeepLabCut using three keypoints: nose, back, tail base. Export x/y coordinates and likelihood values per frame for each keypoint.",
+    "Likelihood filter: retain frames with likelihood p ≥ 0.9 (per keypoint). Gap-fill short dropouts in the coordinate traces (brief missing segments after likelihood filtering). Smooth the coordinate traces using a 6-frame moving average.",
+    "Movement vector (per frame): computed from the framewise displacement of the &#39;back&#39; keypoint. Body-axis orientation vector (per frame): tail base → back (Tailbase-to-Back).",
+    "Only classify frames that exceed a minimum movement threshold (speed gate): ≥ 0.2 units/frame⁻¹, based on the &#39;back&#39; displacement.",
+    "Compute the angle between the movement vector and the body-axis orientation vector for each frame passing the speed gate. Classify frames by angle thresholds: Forward: &lt;60° Backward: �&gt;120° Sideways: 60–120° For sideways frames (60–120°), classify leftward vs rightward using the sign of the 2D cross product between vectors.",
+    "For each stimulation bout, extract a peri-stimulus window from −1 s to +4 s relative to bout onset. Bin the peri-stimulus window into 200 ms bins. Within each bin, compute the proportion of frames classified as forward, backward, and sideways (and optionally left/right sideways). Compute these proportions per trial (per bout), then average within mouse to yield one per-mouse summary per condition."
+  ],
+  "authors": [
+    "Cristian González-Cabrera"
+  ],
+  "creator": "Cristian González-Cabrera",
+  "published_on": 1771249507,
+  "created_on": 1771228354,
+  "keywords": []
+}

@@ -1,0 +1,38 @@
+{
+  "id": 316344,
+  "title": "3DUptake",
+  "uri": "3duptake-jy6ycpzfx",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg3mj9el25/v1",
+  "description": "{\"blocks\":[{\"key\":\"9sfd3\",\"text\":\"Protocol for imaging of cells to quantify cargo uptake using 3Duptake script \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Seed cells in Imaging-compatible tissue culture dishes in appropriate medium at 0.1 M/mL for Overnight at 37˚C and 5% CO 2 . Examples dishes: 35mm glass-bottom dish Glass-bottom chambered slides Glass-bottom imaging plate",
+    "Example cell culture: RAW264.7 ( ATCC ) macrophages are seeded to 35mm glass-bottom MatTek dishes at 0.1 M/mL in RPMI 1640 Medium Thermo Fisher Catalog #21875059 with 10% Fetal Bovine Serum, qualified, heat inactivated, Australia Thermo Fisher Catalog #10100147 and 1% L-Glutamine (200 mM) Thermo Fisher Catalog #25030164 for Overnight .",
+    "Set microscope chamber to 37˚C and 5% CO 2 , and preheat culture medium to 37˚C.",
+    "Set up imaging with an inverted microscope with 60x oil objective, and find focus.",
+    "Mix fluorescent cargo to desired concentration in medium. Keep the mixture warm. - If cargo is dissolved in DMSO, the final DMSO concentration must be below 1% v/v.",
+    "While the dish is on the microscope stage, remove all the medium, then quickly replace with the medium/fluorescent cargo mixture. - In 35mm glass bottom dish, pipette directly onto the glass portion of the dish",
+    "Prepare the medium/fluorescent cargo mixture. To conserve fluorescent cargo, minimum 80µL of medium required for 35mm glass-bottom dish with 14mm glass, or 100µL of medium for 8-chambered slide.",
+    "Wait 1-2 mins for the temperature to stabilise.",
+    "Capture 3D Z-stacks at random positions on the dish within 20mins of incubation.",
+    "Choose the positions randomly, and minimise partial inclusion of the cell on the edge of the field of view.",
+    "Setup FIJI, BIOP, and cellpose for image processing. Installation guide and FIJI batch script can be found Here .",
+    "To fast-track image processing, the image can be converted from proprietary imaging format to .tiff. Batch conversion script can be found Here .",
+    "Import 3DUptake.ijm using FIJI.",
+    "Choose the correct imaging format, input directory, and optimised parameters, then click &#39;OK&#39;",
+    "Parameters need to be optimised for specific cell type. Optimal threshold method and target vesicle size can be tested with example image in FIJI. Optimal cell diameter, cell probability, and flow threshold can be tested in cellpose GUI. Guide on how to use cellpose GUI can be found Here .",
+    "The Log window will update on the status of the batch processing, wait for the process to finish",
+    "The output quantification can be found under /*Input folder*/Output. The output folder contains .csv file for all measurements, and a reference folder, which contains the transcript of the log window, and summary of segmentated image. - Channel 1: cell body - Channel 2: isolated vesicles - Channel 3: Cellpose segmentation"
+  ],
+  "authors": [
+    "Hongyu Shen",
+    "Sylvia Tan"
+  ],
+  "creator": "Stuart Shen",
+  "published_on": 1777965818,
+  "created_on": 1777953513,
+  "keywords": []
+}

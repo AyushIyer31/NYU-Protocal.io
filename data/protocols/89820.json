@@ -1,0 +1,40 @@
+{
+  "id": 89820,
+  "title": "Section 1: Enzymatic DNA Fragmentation (Manually)",
+  "uri": "section-1-enzymatic-dna-fragmentation-manually-c3x4ypqw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg3x3m7g25/v1",
+  "description": "{\"blocks\":[{\"key\":\"7kain\",\"text\":\"This protocol details manual enzymatic DNA Fragmentation prior to Section 2: NGS library preparation for sequencing.\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"8sobq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Group the samples scWGA-products of interest for library preparation based on their size length to require the same fragmentation time. The recommended fragmentation times per amplicon are suggested on Table 1. Table 1 . Recommended fragmentation time based on amplicon size. %s %s scWGA products peak size (bp) Fragmentation Time (min) 400-450 3 450-500 4 500-550 5 550-650 6 650-750 7 750-900 8 1000-1100 10 &gt;10.000 15",
+    "Calculate the amount of input material needed from each scWGA-product to have input of 10-200 ng DNA in a total volume of 7 µL . Note : If possible, use the maximum amount of input DNA available within the recommended range.",
+    "Thaw the vial of 5X SureSelect Fragmentation Buffer On ice , vortex, then keep On ice .",
+    "Thaw a PCR plate cooler @ Room temperature for 00:05:00 .",
+    "Pre-label PCR tubes/strips to be used for the enzymatic DNA fragmentation reaction.",
+    "Place the prelabelled PCR tubes/strips/plate in the PCR plate cooler.",
+    "Dilute 10-200 ng of each scWGA-product with dH 2 O up to a final volume of 7 µL in the PCR tubes/strips. Note : From now on, keep the samples on ice if not stated differently.",
+    "Pre-program a thermal cycler as on Table 2. If required, use a reaction volume setting of 10 µL and lid temperature @ 60-65 °C . Table 2 . Thermal cycler program for Enzymatic Fragmentation (with the heated lid ON). %s %s Step Temperature (oC) Time (min) 1 37 The max need based on Table 1 2 65 5 3 4 hold",
+    "Prepare the appropriate volume of Fragmentation master mix by combining the reagents as on Table 3 in 0.2ml or 1.5 ml tube. Table 3 . Fragmentation master mix. %s %s Reagent 1 reaction 5X SureSelect Fragmentation Buffer 2 μl SureSelect Fragmentation Enzyme 1 μl Total 3 μl",
+    "Mix well by pipetting up and down 20 times or seal the tube and vortex at high speed for 5–10 sec.",
+    "Spin briefly to remove any bubbles and keep On ice .",
+    "Add 3 µL of the Fragmentation master mix to each sample well containing 7 µL of input DNA.",
+    "Mix well by pipetting up and down 20 times or cap the wells and vortex at high speed for 5–10 seconds.",
+    "Spin the samples briefly and place on the PCR plate cooler.",
+    "Place the tubes/strip in the thermal cycler and start the ‘Enzymatic Fragmentation’ program. Note : Place the strips in the thermal cycler in an order to perform the recommended enzymatic fragmentation time based on Table 1. As an example, place first a strip with samples that require 10 min fragmentation and 2 min later a strip with samples that require 8 min fragmentation.",
+    "When the program reaches the 4 °C Hold step, remove the samples from the thermal cycler.",
+    "Add 40 µL of nuclease-free water to each sample and place the samples On ice . Notes . The 50 μl reactions are now ready for NGS sequencing library preparation (Section 2). This is not a stopping point in the workflow, and analysis of the enzymatically fragmented samples is not required prior to library preparation. Moreover, electrophoretic analysis of the fragmented samples may produce misleading results due to the presence of agents that affect DNA fragment migration."
+  ],
+  "authors": [
+    "Ester Kalef-Ezra",
+    "Ben Harvey",
+    "Katherine Roper",
+    "Christos Proukakis"
+  ],
+  "creator": "Ester Kalef-Ezra",
+  "published_on": 1698743579,
+  "created_on": 1696332961,
+  "keywords": []
+}

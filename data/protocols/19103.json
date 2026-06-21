@@ -1,0 +1,23 @@
+{
+  "id": 19103,
+  "title": "Login to UA HPC web-portal",
+  "uri": "login-to-ua-hpc-web-portal-wv7fe9n",
+  "doi": "dx.doi.org/10.17504/protocols.io.wv7fe9n",
+  "description": "{\"blocks\":[{\"key\":\"93hb7\",\"text\":\"This describes the steps involved in logging into the UA High-Performance Computing (HPC) web-portal for the UA Biosystems Analytics class. The instructors should have already given you access to the HPC, if not contact us.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"df7q5\",\"text\":\"This protocol is designed for students at the University of Arizona. Students must have a netid to access the UA high-performance compute cluster for this protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"1hop9\",\"text\":\"You must have received access to the UA high-performance compute cluster by the instructor: Dr. Bonnie Hurwitz\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"9gmg0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Go to the HPC web-portal: https://ood.hpc.arizona.edu/pun/sys/dashboard and login with your UA net-id",
+    "On the top menu bar select &#34;clusters&#34; and &#34;ocelote shell access&#34; from the pull-down list.",
+    "A shell terminal will open for you. You can navigate to the class directory using the &#34;cd&#34; command, and then create your own directory using the &#34;mkdir&#34; command (using YOUR net-id as the name): $ cd /rsgrps/bh_class $ mkdir my-netid"
+  ],
+  "authors": [
+    "Bonnie L Hurwitz"
+  ],
+  "creator": "Bonnie L Hurwitz",
+  "published_on": 1546981287,
+  "created_on": 1546979982,
+  "keywords": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": 225026,
+  "title": "Mitochondrial ROS Analysis",
+  "uri": "mitochondrial-ros-analysis-g7zabzp2f",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vz9x98gx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"gb3od\",\"text\":\"This protocol is used to measure ROS (H2O2) levels in isolated mitochondria.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9xg8v\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"fmf32\",\"text\":\"- Amplex Red Hydrogen Peroxide/Peroxidase Assay Kit (Invitrogen A22188)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bodmg\",\"text\":\"- Mitochondrial respiration buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"r167x\",\"text\":\"- Respiratory substrate solution\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Dilute 30 µg crude mitochondrial preps to 40 µL with mitochondrial respiration buffer.",
+    "Prepare positive (10, 5, 2, 1 and 0.5 µM H 2 O 2 ) and negative (1X mitochondrial respiration buffer) controls.",
+    "Load samples (40 µL/well).",
+    "Prepare a working solution of 100 µM Amplex Red reagent and 0.2 U/mL HRP by mixing the following: 50 µL of 10 mM Amplex Red reagent stock solution 100 µL of 10 U/mL HRP stock solution 4.85 mL of 1X reaction buffer",
+    "Add 50 µL of the working solution into each well.",
+    "Record fluorescence emission at 590 nm (excitation at 560 nm) for 8 min.",
+    "Add 10 µL of respiratory substrate into each well; final concentration is 5 mM pyruvate and 2.5 mM malate.",
+    "Record fluorescence emission at 590 nm (excitation at 560 nm) for 45 min.",
+    "Prepare mitochondrial respiration buffer (100 mL; 120 mM KCl, 5 mM KH 2 PO 4 , 10 mM HEPES, 2 mM MgCl 2 , 1 mM EGTA). 894.6 mg KCl 68.0 mg KH 2 PO 4 238.8 mg HEPES 19.0 mg MgCl 2 38.0 mg EGTA pH 7.2 (adjusted with KOH)",
+    "Prepare 10 mM Amplex Red reagent stock solution.",
+    "Warm up Amplex Red reagent (blue cap) and DMSO (green cap) at RT.",
+    "Immediately before use, add 60 μL of DMSO into a vial of Amplex Red (each vial of Amplex Red is sufficient for 100 assays of 100 μL).",
+    "Prepare 1X reaction buffer by diluting 4 mL of 5X reaction buffer (white cap) with 16 mL of deionized water.",
+    "Make 10 U/mL horseradish peroxidase (HRP) stock solution.",
+    "Reconstitute a vial of HRP (yellow cap) with 1 mL of 1X reaction buffer.",
+    "Prepare 20 mM hydrogen peroxide (H 2 O 2 ) working solution.",
+    "After the assay, aliquot unused HRP stock solution into single-use tubes and store at -20.",
+    "Immediately before use, dilute the ~3% (0.88 M) H 2 O 2 (red cap) into appropriate volume of 1X reactionbuffer to make a 20 mM working solution; exact concentration is on the label.",
+    "Prepare respiratory substrate solution (10 mL; 50 mM pyruvate and 25 mM malate). 55.0 mg pyruvate 33.5 mg malate 10 mL of mitochondrial respiration buffer"
+  ],
+  "authors": [
+    "Szu-Chi Liao",
+    "Ken Nakamura"
+  ],
+  "creator": "Szu-Chi Liao",
+  "published_on": 1760651735,
+  "created_on": 1755651426,
+  "keywords": []
+}

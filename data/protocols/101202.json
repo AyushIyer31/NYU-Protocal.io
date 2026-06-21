@@ -1,0 +1,31 @@
+{
+  "id": 101202,
+  "title": "Imaging- Bright field",
+  "uri": "imaging-bright-field-de3s3gne",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzjj9rlx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"cs3tf\",\"text\":\"Protocol for imaging using Hamamatsu NanoZoomer slide scanner. Sections for analysis should be mounted on slides, stained for appropriate markers, and coverslipped. This protocol is using a Carl Zeiss LSM 880 confocal microcope.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Image slides at 40x magnification.",
+    "Extract individual sections using the NDP.view software ( https://www.hamamatsu.com/eu/en/product/life-science-and-medical-systems/digital-slide-scanner/U12388-01.html ).",
+    "Save images as tiff files.",
+    "Open images from same structures as one single stack using the merge function.",
+    "Using the crop, rotate, and move functions align allimages from the same stack as best as possible. Note: Using 2-3 specificanatomy points to align the structures make the process easier.",
+    "Crop the entire stack at the same dimensions.",
+    "Save each image as a new tiff file (it is recommendedto save it in a new folder).",
+    "Open the imageJ macro provided on Zenodo: https://doi.org/10.5281/zenodo.10822458 . Note: A README is provided at the beginning of the macro in order to convert all images in a 0-255 bit image.",
+    "Save the images as a new tiff file (it is recommended to save itin a new folder).",
+    "Open matlab and run for each structure the protocol provided on the Zenodo: https://doi.org/10.5281/zenodo.10822458 . Note: Follow the information provided on the code to align images."
+  ],
+  "authors": [
+    "daniel.dautan daniel",
+    "Per Svenningsson"
+  ],
+  "creator": "Jacquelyn Haytayan",
+  "published_on": 1721052843,
+  "created_on": 1717525850,
+  "keywords": []
+}

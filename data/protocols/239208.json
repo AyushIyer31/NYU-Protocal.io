@@ -1,0 +1,34 @@
+{
+  "id": 239208,
+  "title": "Leukocyte Isolation and Chemotaxis Assay Using Zymosan-Opsonized Plasma and Agarose Spots",
+  "uri": "leukocyte-isolation-and-chemotaxis-assay-using-zym-hmugb46tx",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx8yykv8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"10qat\",\"text\":\"This protocol describes the isolation of leukocytes from human whole blood, opsonization of targets with zymosan-activated plasma, and assessment of chemotaxis using an agarose spot assay. The method integrates established RBC lysis, zymosan activation, and quantitative image analysis, and can be adapted for studies in immunology and inflammation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"upngj\",\"text\":\"Timing: Total ≈ 4–5 h\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8xtkd\",\"text\":\"Critical: Work at room temperature unless otherwise specified.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"22jpk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"33r1b\",\"text\":\"Critical Points:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ekuqv\",\"text\":\"• Ensure complete RBC lysis; if RBCs persist, repeat step.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"158st\",\"text\":\"• Maintain agarose at 40 °C to prevent premature solidification.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dkqps\",\"text\":\"• Normalize migration to positive control for comparability.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"o673m\",\"text\":\"RBC lysis buffer, HBSS, zymosan (yeast cell walls), low-melt agarose, CPDA-1 blood collection supplies, trypan blue, PBS, distilled water. Equipment: Centrifuge capable of 300–350×g, water bath (40 °C), hemocytometer, microscope with imaging, microscope slides, cover slip.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Add all reagents to ~80 mL distilled water in a clean beaker. Stir until fully dissolved. Bring volume to 100 mL with distilled water. Store at 4 °C for up to 6 months.",
+    "Add all reagents to ~400 mL distilled water. Stir until dissolved. Bring volume to 500 mL with distilled water. Store at 4 °C for up to 1 month.",
+    "Collect whole blood in CPDA-1 tubes. Perform a light centrifugation at (placeholder: 300 × g, 5 min) to separate plasma. Remove plasma and retain red cell pack + buffy coat. Add RBC lysis buffer to the red cell pack at a 1:10 ratio (v/v). Incubate 10 min at room temperature with gentle rocking. Centrifuge at 300 × g for 5 min; discard supernatant. Repeat lysis if RBCs remain visible. Resuspend WBC pellet in HBSS and wash once. Resuspend cells in assay-appropriate medium.",
+    "Mix 1:1 WBC suspension with 0.4% trypan blue. Incubate for 3 min at room temperature. Load 100 µL onto hemocytometer. Count viable (unstained) and non-viable (blue) cells.",
+    "Suspend 20 mg zymosan in 500 µL distilled water. Centrifuge at 300 × g for 5 min; discard supernatant. Wash pellet twice with HBSS (pH 7.4). Resuspend final pellet in 10 mL HBSS. Aliquot 1 mL per tube; centrifuge at 350 × g for 5 min.",
+    "Prepare 0.5% low-gelling agarose in PBS (pH 7.4). Keep melted agarose at 40 °C. Mix 20 µL plasma sample with 180 µL agarose. Spot 10 µL of mixture microscope slide. Place coverslip.",
+    "Add 50 µL WBC suspension (5 × 10^6 cells/mL) in between cover slip and slide. Incubate at 37 °C for 1 h.",
+    "Observe spots under binocular microscope at 40× magnification. Capture images of four quadrants per spot. Analyze in ImageJ: - Subtract background. - Adjust threshold to isolate cells (�3e20 pixels, circularity 0–1). Count migrated cells. Normalize counts to positive control as 100%. (Optional) Measure migration distance from spot edge using coordinate geometry in ImageJ.",
+    "Centrifuge at 300 × g for 5 min; repeat if RBCs remain. Wash leukocytes in HBSS and resuspend for downstream assays.",
+    "Mix 1:1 leukocyte suspension with 0.4% trypan blue. Incubate 3 min at RT. Count cells on hemocytometer; calculate viable cell percentage.",
+    "Suspend 20 mg zymosan in 500 µL distilled water; centrifuge at 300 × g for 5 min. Wash pellet twice with HBSS (pH 7.4). Resuspend pellet in 10 mL HBSS. Aliquot and centrifuge at 350 × g for 5 min.",
+    "Prepare 0.5% agarose in PBS; keep at 40 °C. Mix 20 µL plasma (activated or control) with 180 µL agarose. Spot 10 µL in each well of a 96-well plate; allow to solidify. Add 50 µL leukocyte suspension (5 × 10^6 cells/mL) to each well. Incubate at 37 °C for 1 h.",
+    "Image four quadrants of each spot at 100× magnification. Process images in ImageJ: background subtraction, thresholding, particle counting (�3e20 pixels). Normalize migration counts to positive control (=100%). (Optional) Determine migration distances from spot edge via coordinate geometry.",
+    "• Positive control (zymosan-activated plasma) should yield robust migration (∼100% baseline). • Negative controls (unactivated plasma, buffer) should show minimal cell infiltration. • Distance analyses provide additional metric of chemotactic strength."
+  ],
+  "authors": [
+    "Brian Andrich L. Pollo"
+  ],
+  "creator": "Brian Andrich L. Pollo",
+  "published_on": 1769157632,
+  "created_on": 1769145790,
+  "keywords": []
+}

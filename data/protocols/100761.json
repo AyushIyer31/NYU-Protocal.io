@@ -1,0 +1,37 @@
+{
+  "id": 100761,
+  "title": "Nuclei Isolation for HMBA FACS",
+  "uri": "nuclei-isolation-for-hmba-facs-demz3c76",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx35ywg8j/v3",
+  "description": "{\"blocks\":[{\"key\":\"8ddkp\",\"text\":\"This protocol is for purifying nuclei for downstream 10X sequencing.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4p1hr\",\"text\":\"Keep tissue/nuclei on ice as much as possible.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"f7npt\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"4tghv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Make 3 mL Homogenization Buffer by adding 2.892 mL Nuclear Isolation Media to a 5 mL eppendorf tube. Then add 60 uL protease inhibitor, 30 μL 10% Triton X-100, 15 uL RNase inhibitor, and 3 μL 100 mM DTT.",
+    "Make 50 mL Nuclear Isolation Media by filling a 50 mL steriflip with 43 mL of MilliQ water, 5 mL of 2.5 M sucrose, 1.25 mL 1M KCl, 500 uL 1M Tris, 250 uL 1M MgCl2. Vortex and filter with the vacuum system.(4°C - 2 weeks)",
+    "Make 5 mL Blocking Buffer by adding 4.475 mL 1X PBS, 500 uL 10% BSA, and 25 uL RNase inhibitor to a 5 mL eppendorf tube.",
+    "Make 20 mL 10% Triton X-100 by combining 18 mL MilliQ water with 2 mL Triton X-100 in a 50 mL tube. Vortex and then incubate at room temperature for 20 minutes. Filter it through a 0.22 μm filter with a syringe into a clean 50 mL tube. (4°C - 1 month) For a smaller stock, make 1 mL by combining 900 uL MilliQ water with 100 uL Triton-X 100. Filter with a FlowMi after vortex and incubation.",
+    "Clean dounce, scalpel, and forceps using MilliQ water, ethanol, RNase Zap, then MilliQ again. You can soak the dounce in the RNase Zap while preparing the buffers. The red-tape forceps are for unfixed tissue. Chill the dounce on ice before adding the tissue.",
+    "Place your sample on dry ice. Tare a weigh boat or tube on the scale and weigh your sample.",
+    "Add 1 mL of Homogenization Buffer to the dounce on ice and then drop in the frozen tissue. Homogenize the tissue without creating bubbles. Then add the remaining 2 mL of the Homogenization Buffer and continue to dounce until homogenized.",
+    "Pass all of the nuclei suspension through a 30 um filter.",
+    "Centrifuge at 900 g/rcf for 10 minutes at 4°C. Go to step 11 if you are running controls at FACS, if not skip to step 12.",
+    "After incubation, spin down all of the tubes at 500 g for 5 minutes at 4°C.",
+    "Decant and resuspend in 1 mL blocking buffer. You can add another filtration step here; I use the FlowMis.",
+    "Store tubes on ice until FACS. Bring DAPI stock and Blocking Buffer with you to FACS in case we have to dilute the sample to lower the event count.",
+    "Add 1 uL of 0.1 mg/mL DAPI, a final concentration of 0.1 ug/mL, to each sample and control tube and invert to mix. (Adding more DAPI than necessary is okay.)",
+    "Add 300 uL Blocking Buffer to three FACS tubes and label them A488+, PE+, and Double Negative. We will sort into these.",
+    "Make 1 mL of 0.1 mg/mL DAPI by adding 100 uL of 1 mg/mL DAPI stock to 900 uL of milliQ water. (4C - 1 month)",
+    "If you are running controls at FACS: The amount of Blocking Buffer we will need to resuspend our nuclei pellet with after centrifuging depends on the number of controls we will run. Each control tube will require 50 μL of nuclei suspension, and our sample needs to have 1,000 μL of nuclei suspension left over. In this case we are running two controls. After the homogenate is done centrifuging, discard the supernatant and resuspend the pellet in 1,100 μL of Blocking Buffer. Incubate for 10 minutes on ice. Add 950 μL Blocking Buffer to each of your control tubes. Add 50 μL of nuclei suspension to each control tube. Add the corresponding antibodies to the control tubes: 2 μL NeuN-PE (1/500) to the PE-only control 0.4 μL Olig2-Alexa 488 (1/2500) to the A488-only control Place sample and controls in a rotator placed in the dark at 4°C and incubate for 30 minutes.",
+    "If you are not running controls at FACS: After the homogenate is done centrifuging, discard the supernatant and resuspend the pellet in 1 mL of Blocking Buffer. Transfer the nuclei to a 1 mL tube and incubate for 10 minutes on ice. Add both 2 μL NeuN-PE and 0.4 μL Olig2-Alexa 488 to the sample tube. Place sample in a rotator placed in the dark at 4°C and incubate for 30 minutes."
+  ],
+  "authors": [
+    "Lakme Caceres"
+  ],
+  "creator": "Lakme Caceres",
+  "published_on": 1716918220,
+  "created_on": 1716915987,
+  "keywords": []
+}

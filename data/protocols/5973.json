@@ -1,0 +1,31 @@
+{
+  "id": 5973,
+  "title": "Supernatant Transfer Assay  and Transwell® Assay",
+  "uri": "supernatant-transfer-assay-and-transwell-assay-h3vb8n6",
+  "doi": "dx.doi.org/10.17504/protocols.io.h3vb8n6",
+  "description": "{\"blocks\":[{\"key\":\"dcatv\",\"text\":\"This protocol describes two methods for assessing whether soluble factors alone or a combination of soluble factors and T cells are responsible for bystander killing: (1) Supernatant transfer assays and (2) Transwell® assays.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"46ck8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"2u7it\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"9caad\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "See also Materials list in TDCC protocol. HTS Transwell-96 System, PET membrane Corning #3392 or #3380 1 μm HTS Transwell-96 Well Plate, PC membrane Corning #3387 or #3388 5 μm HTS Transwell-96 receiver plate, tissue culture treated Corning #3382 clear plate HTS Transwell-96 receiver plate, tissue culture treated Corning #3583 black plate, including bottom",
+    "This protocol describes methods to assess the contribution of soluble factors and BiTE® - activated T cells in bystander killing. Two methods are used: (1) Supernatant transfer assays from BiTE®- + T cell-treated target positive cells to target-negative cells and (2) Transwell® assays in which a membrane separates BiTE®- + T cell-treated target-positive cultures from target-negative cultures, restricting movement of T cells but not soluble factors. These assays are modifications of the standard TDCC protocol. Please refer to TDCC protocol for cell treatments and assay set-up.",
+    "For 96-well assays, each well contains a final volume of 200 µl. Plan for setting up cells in separate ViewPlates to allow for: Supernatant transferred directly (medium + cells) Supernatant clarified by centrifugation (medium only) No transfer control 1. Prepare target-positive cells cells: Detach adherent target cells, count and dilute cells (e.g. NUGC-4) in a mixture with T cells at desired E:T ratio (10:1 typically used) in 160 µl, e.g. 10:1 = 10,000 target cells and 100,000 T cells per well Add 40 µl per well of BiTE® dilution or assay medium to plates Add 160 µl per well target cells plus T cell mixture to plates Allow plates to equilibrate for 30 min. at room temperature Incubate at 37°C, 5% CO2 for 48 hours 3. Prepare target-negative cell plates (e.g. SW620) on day of supernatant transfer: Detach adherent target-negative cells, count and dilute cells in a mixture with T cells at desired E:T ratio in 160 µl, e.g. 10:1 = 10,000 target cells and 100,000 T cells per well Add 160 µl target-negative cells plus T cell mixture to a fresh 96-well ViewPlate Allow plates to equilibrate for 30 min. at room temperature Incubate at 37°C, 5% CO2 for 5 hours to allow cells to adhere. 4. Set up supernatant transfer assay: Remove media from target-negative cells by inverting plate and blot edges on paper towel Plate 1: Transfer directly 0.160 ml crude supernatant from target-positive NUGC-4 plate to plate containing target-negative SW620 cells Plate 2: Transfer carefully 0.160 ml clarified supernatant from target-positive NUGC-4 plate to plate containing target-negative SW620 cells. (NUGC-4 plate first centrifuged at 400 x g for 5 min.) Plate 3: No transfer control-add fresh BiTE® dilutions and T cells Incubate at 37°C, 5% CO2 for 48 hours 5. Perform cytotoxicity assay (imaging or CellTiter-Glo® - see TDCC protocol).",
+    "For 96-well transwell assays, each well contains a final volume of 310 µl Bottom receiver plate: 200 µl target-negative (or target-positive for positive control) cells + 35 µl assay medium Top chamber insert: 35 µl 10X BiTE® dilutions + 40 µl target-positive cells/T cell mixture (typically 10:1 E:T ratio) 1. Prepare target cells: Detach adherent target-positive cells, count and dilute to 10,000 cells/well, 200 µl/well. Also, dilute target cells in a mixture with T cells at desired E:T ratio in 40 µl, e.g. 10:1 = 10,000 target cells and 100,000 T cells per well 2. Set up assay: Add 35 µl assay medium to wells in bottom of receiver plate Add 200 µl target-negative (or target-positive for positive control) cells to wells in bottom of receiver plate (10,000 cells/well) Carefully place insert on top of the receiver plate Add 35 µl of BiTE® dilution to top chamber of insert Add 40 µl target-positive cells/T cell mixture to top chamber of insert Allow plates to equilibrate for 30 min. at room temperature Incubate at 37°C, 5% CO2 for 72 hours 3. Perform cytotoxicity assay on the cells in the bottom chambers/receiver plates (imaging or CellTiter-Glo® - see TDCC protocol)."
+  ],
+  "authors": [
+    "Sandra L. Ross",
+    " Marika Sherman",
+    " Patricia L. McElroy",
+    " Julie A. Lofgren",
+    " Gordon Moody",
+    " Patrick A. Baeuerle",
+    " Angela Coxon",
+    " Tara Arvedson"
+  ],
+  "creator": "Sandra Ross",
+  "published_on": 1495050170,
+  "created_on": 1494981407,
+  "keywords": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": 99049,
+  "title": "CosMx SMI Setup and Data Acquisition",
+  "uri": "cosmx-smi-setup-and-data-acquisition-dcyh2xt6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlk8475l5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"djlke\",\"text\":\"This protocol details the CosMx SMI setup and data acquisition.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"8eui8\",\"text\":\"CosMx SMI Instrument User Manual (MAN-10161-02-1 or MAN-10161-03-2, Software Version 1.1, NanoString)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aami1\",\"text\":\"CosMx Flow Cell Assembly Tool\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3i8tj\",\"text\":\"CosMx Data Analysis manual (MAN-10162-02, Software Version 1.1, NanoString)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8h77l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "The setup and scan acquisition for the CosMx SMI instrument were carried out as detailed in the CosMx SMI Instrument User Manual (MAN-10161-02-1 or MAN-10161-03-2, Software Version 1.1, NanoString).",
+    "A new acquisition process was initiated through the CosMx SMI Control Center web interface.",
+    "Prior to insertion into the CosMx Flow Cell Assembly Tool, the slides are carefully dried in the areas surrounding the imaging region. The process involved lowering the tailgate, placing the slide, and then securing it by raising the tailgate.",
+    "After removing the adhesive backing, a new flow cell coverslip was precisely align above the slide&#39;s imaging area. The Assembly Tool&#39;s lid was closed securely to affix the coverslip to the slide, thus creating a functional CosMx flow cell.",
+    "Following the assembly, 2X SSC was gently introduced through one of the flow cell ports to hydrate the tissue section. Subsequent steps included entering the flow cell configuration data into the Control Center interface, which comprised the flow cell&#39;s barcode and the slide&#39;s ID number. The prostate sections underwent scanning with Configuration C for the pre-bleaching profile and Configuration A for the cell segmentation profile. Further details regarding the probe panel, cell segmentation, and supplemental markers were entered into the flow cell configuration data for each section.",
+    "Assembled flow cells/slides, along with Buffer Bottles 1-4, were then loaded into the instrument. Before positioning Bottle 4, catalase and pyranose oxidase enzymes were added.",
+    "The Control Center configuration was verified and following a period of equilibration to Room temperature and the addition of an RNase inhibitor to a designated well in the CosMx imaging tray, the tray was placed in the instrument.",
+    "A pre-run check and a tissue find scan for each tissue section were performed by the instrument.",
+    "After the completion of tissue find scans, rectangular scan areas were delineated around each tissue section for the preview scan.",
+    "The preview scan images facilitated the selection of a contiguous region of fields of view (FOVs) using the grid FOV placement tool, thoroughly covering the tissue areas on each slide.",
+    "FOV selections for each slide were confirmed before initiating the cycling process.",
+    "CosMx scan data were automatically uploaded to NanoString’s cloud-based AtoMx Spatial Analysis Platform during the run, as detailed in the CosMx Data Analysis manual (MAN-10162-02, Software Version 1.1, NanoString). Briefly, upon the completion of the run and the full upload of scan data to AtoMx, a study was created for each CosMx scan. Within AtoMx, pipelines were executed for each study, facilitating the export of data in various formats, such as TileDB arrays and Seurat objects, for in-house analysis."
+  ],
+  "authors": [
+    "Spatial Touchstone"
+  ],
+  "creator": "Spatial Touchstone",
+  "published_on": 1750898404,
+  "created_on": 1714081115,
+  "keywords": []
+}

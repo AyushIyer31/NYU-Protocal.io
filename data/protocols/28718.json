@@ -1,0 +1,30 @@
+{
+  "id": 28718,
+  "title": "Chitin binding assay using chitin magnetic beads (NEB)",
+  "uri": "chitin-binding-assay-using-chitin-magnetic-beads-n-8anhsde",
+  "doi": "dx.doi.org/10.17504/protocols.io.8anhsde",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"UkxXg\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"yHmBM\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"rp6Nj\",\"text\":\"STEP MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"gbmyR\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":618,\"guid\":\"4101A977341F11EE9D4302C0B41BC903\",\"name\":\"Chitin Magnetic Beads - 5 ml\",\"mol_weight\":0,\"sku\":\"E8036S\",\"url\":\"https://www.neb.com/E8036\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":618,\"guid\":\"4101A977341F11EE9D4302C0B41BC903\",\"name\":\"Chitin Magnetic Beads - 5 ml\",\"mol_weight\":0,\"sku\":\"E8036S\",\"url\":\"https://www.neb.com/E8036\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Make the following buffer: 1 X CBD Column Binding Buffer %s %s Tris-HCl 20 mM Adjust pH to 8 using HCl (2,42 g/L) NaCl 500 mM (29,22 g/L) EDTA 1 mM (0,292 g/L) Tween-20 0.05% v/v 500 ul/ 1 L Gently mix the beads solution and resuspend thoroughly. Chitin Magnetic Beads - 5 ml New England Biolabs Catalog #E8036S",
+    "Aliquot 50 ul of beads solution into a 2 ml microfuge tube",
+    "Apply a magnet for 30 seconds to pull the beads to one side. Remove the excess liquid",
+    "Wash the beads 3 times with 500 ul of 1x CBD Column Binding Buffer. Apply magnet and remove the liquid.",
+    "Load 200-500 ul of cell supernatant with the beads. Note: when making dilutions of the supernatant, dilute in CBD Column Binding Buffer.",
+    "Mix thoroughly and incubate for 1 hour at 4°C at constant agitation.",
+    "Apply magnet for 30 seconds and remove supernatant with a pipette. Save the supernatant.",
+    "Wash beads 3 times with 500 ul of 1x CBD Column Binding Buffer. Apply magnet for 30 seconds and pipette off liquid. Save the wash fractions.",
+    "To remove proteins from the beads, boil beads for 5 minutes in 50 ul SDS-Page sample buffer at 95 °C",
+    "Run fractions on a protein gel"
+  ],
+  "authors": [
+    "Robert Hooftman"
+  ],
+  "creator": "Robert Hooftman",
+  "published_on": 1571215312,
+  "created_on": 1571214560,
+  "keywords": []
+}

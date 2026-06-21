@@ -1,0 +1,31 @@
+{
+  "id": 68927,
+  "title": "Wire Hang Test ",
+  "uri": "wire-hang-test-cfi7tkhn",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn7pypv5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"a4rlh\",\"text\":\"This behavioral test is used to assess motor deficits in mouse models of Parkinson's disease.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"1h84f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"c11ct\",\"text\":\"Ring stand x 2\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cesu2\",\"text\":\"2mm wire tied across the two ring stands, length 55cm, height above table 35cm\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dicmb\",\"text\":\"70% ethanol for cleaning\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Hold the mouse by the tail and place it gently so that only its forepaws reaches and holds the wire. As soon as the animal is properly suspended, start the timer. After being released, most animals catch the wire with the four limbs. This is allowed.",
+    "If the mouse reaches one of the ring stands, stop the timer. Record the time. The “reaching” score increases by 1.",
+    "Replace the mouse on the center of the wire and continue testing.",
+    "If the mouse falls, the timer is stopped. The time is recorded and its ”fall” score is decreased by 1.",
+    "The test ends when the timer reaches 180s or if the fall score reaches 0, i.e. the mouse has fallen 10 times.",
+    "Set up the wire across the two ring stands according to the measurements listed in the materials section. Ensure the wire is tightly bound. Note that for the protocol listed below, the &#34;reaching&#34; score starts at 0, while the &#34;fall score&#34; starts at 10.",
+    "Analysis: The final reach and fall scores and measured for all animals tested. A survival curve can also be created using the timestamps for each instance of either the fall or reach score changing.",
+    "Replace the mouse on the center of the wire and continue testing."
+  ],
+  "authors": [
+    "Tae-In Kam",
+    "Roberta Marongiu",
+    "Ted Dawson",
+    "Sabina Marciano"
+  ],
+  "creator": "Jacquelyn Haytayan",
+  "published_on": 1712086484,
+  "created_on": 1660935742,
+  "keywords": []
+}

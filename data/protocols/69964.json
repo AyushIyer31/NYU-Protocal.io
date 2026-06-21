@@ -1,0 +1,39 @@
+{
+  "id": 69964,
+  "title": "IAV H1N1 MDCK Plaque Assay Protocol",
+  "uri": "iav-h1n1-mdck-plaque-assay-protocol-cgjktukw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5qpvornqbv4o/v1",
+  "description": "{\"blocks\":[{\"key\":\"fb3pi\",\"text\":\"This protocol is used to determine the plaque forming units of H1N1 virus in tissue lysates.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"1tu0h\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bu8m9\",\"text\":\"2x MEM (1 bag of powder in 500mL ddH20 + 2.2g sodium bicarb +10mL pen/strep)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"canpn\",\"text\":\"1.2% agarose\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":5,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"jb5k\",\"text\":\"TPCK trypsin (1mg/mL stock aliquoted into eppendorfs and kept in -20) \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"frne2\",\"text\":\"Carnoy’s Solution (3:1 methanol:acetic acid) \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8ejq4\",\"text\":\"Coomassie stain (see Chris’s VSV PA protocol for recipe)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Grow MDCK cells in 6-well plates",
+    "When confluent, proceed with plaque assay. Best day to start is Monday, Tuesday, or Friday to avoid working on the weekend",
+    "Spin homogenate samples at 5.0RPM for 00:10:00 . at 4C, and then prepare serial dilutions from the supernatant. (Lung tissue from 3 days-post-inoculation H1N1-infected mice are best run at 10 4 , 10 5 , 10 6 )",
+    "When the serial dilutions have been prepared, prepare the cell plates.",
+    "Turn off the blower.",
+    "Remove media from plates and wash each plate 2x with plain PBS to remove any trace of FBS. ***The H1N1 plaque assay will not work without this step.",
+    "Add 100uL of diluted sample to each well. Do each dilution in duplicate. For example, on one plate put 10 4 twice, 10 5 twice, and 10 6 twice.",
+    "Shake the plate once the sample has been added to all wells. Put in 37C incubator for 00:15:00 .",
+    "Heat up agarose to melt in the microwave at this step so it is not too hot when it is time to add the overlay.",
+    "When the 15 minutes is up, shake the plate. Repeat incubation for 00:15:00 .",
+    "After 30 minutes total (15 min. after shake), add the overlay. The overlay is one-part 2xMEM and one-part 1.2% agarose AND 0.1ug/mL TPCK trypsin **(see note below) . a. Add 3mL to each well of this overlay. b. Leave the plate in the fumehood until the agarose has solidified and then move to incubator.",
+    "The cells are left in the incubator and fixed on the 3 rd day. For example, if the plaque assay is done on Monday, it is read on Thursday.",
+    "To fix cells, add 1-2mL of Carnoy’s solution to each well and leave in the hood for 90 minutes.",
+    "Next, put the wells under the tap in a strong stream to remove the agarose.",
+    "After all the agarose is removed, dry the plates by patting on paper towel and add 1mL of Coomassie stain to each well and leave for 30-60minutes. The fresher the Coomassie, the better it will stain.",
+    "Count and record the plaques.",
+    "The plates go in biohazard waste bags, the agarose from wells go in a chemical waste bucket, as well as the used Carnoy’s solution and Coomassie go in their respective chemical waste containers.",
+    "** TPCK Trypsin The TPCK trypsin can be toxic to the cells at concentrations that are too high. Standard protocols call for 1ug/mL or even 2mg/mL. I have found 0.10ug/mL to work best so far. Every time a new stock of TPCK trypsin is made from powder, it needs to be titrated to avoid problems. Even if it was made from the same lot/bottle of powder and made the exact same way! Make a big sample and then aliquot into eppendorfs for each run. Then you will titrate this lot, and use the concentration you find best for all the tubes you use in this batch. To titrate, use 3-4 plates of MDCK cells and treat with PBS (all neg control) and use different wells with increasing concentrations of TPCK trypsin (for example 0.10, 0.25, 0.5, 0.75, 1). The concentration that works best without any cell lifting or death is the best concentration to use. You can see that with the increasing concentrations of TPCK trypsin, it is increasingly toxic to the cells and there is cell death and liftoff. Based on this image, 0.25ug/mL is the best concentration and actually 0.10ug/mL would be even better (no death at all). Using virus, no plaques can be identified at 1ug/mL because of the cell death, but plaques can still be identified and reliably counted at 0.25ug/mL."
+  ],
+  "authors": [
+    "Michaela Lunn",
+    "Earl Brown"
+  ],
+  "creator": "Julianna Tomlinson",
+  "published_on": 1753819804,
+  "created_on": 1663090187,
+  "keywords": []
+}

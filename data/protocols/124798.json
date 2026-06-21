@@ -1,0 +1,42 @@
+{
+  "id": 124798,
+  "title": "Clusterin Phospholipid Particles Flotation Assay Using an Optiprep Step Gradient",
+  "uri": "clusterin-phospholipid-particles-flotation-assay-u-d54688ze",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vz6mq4gx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"em0yq\",\"text\":\"This protocol is based on Yeh FL et al. Neuron (2016) and details how to efficiently separate Clusterin phospholipid particles (Clusterin:DMPC) from free Clusterin together with binders by flotation using an Optiprep step density gradient.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"i59g\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7o4n8\",\"text\":\" PBS\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b74h9\",\"text\":\"2% Na-deoxycholate\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dd1sb\",\"text\":\"Trichloroacetic acid\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3b7es\",\"text\":\"acetone\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"po12\",\"text\":\"OptiPrep Density Gradient Medium (Merck, D1556)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1t0d2\",\"text\":\"3.5 mL Thickwall Polycarbonate Tube (349622, Beckman Coulter)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"789hr\",\"text\":\"NuPAGE™ LDS Sample Buffer (4X) buffer (Thermo Fisher Scientific)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6dn0r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e01m4\",\"text\":\"Equipments\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"clt12\",\"text\":\"SW55 Ti rotor (Beckman Coulter)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4r51h\",\"text\":\"Bioruptor sonication bath (Diagenode)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bvm0h\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"759oo\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"7d16e\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"3uknf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8akk0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4565s\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":347778,\"guid\":\"424C72CF341F11EE9D4302C0B41BC903\",\"name\":\"OptiPrep™ Density Gradient Medium\",\"mol_weight\":0,\"sku\":\"D1556)\",\"url\":\"https://www.sigmaaldrich.com/catalog/product/sigma/d1556?lang=en\\u0026region=US\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":17,\"name\":\"Merck MilliporeSigma (Sigma-Aldrich)\",\"link\":\"http://sigmaaldrich.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":967141,\"guid\":\"1F21CF73065511F082780A58A9FEAC02\",\"name\":\"3.5 mL, Open-Top Thickwall Polycarbonate Tube, 13 x 51mm - 25Pk\",\"mol_weight\":0,\"sku\":\"349622\",\"url\":\"https://www.beckman.com/supplies/tubes-and-bottles/open-top-tubes/349622?country=US\\u0026language=en-US\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":32,\"name\":\"Beckman Coulter\",\"link\":\"https://www.beckmancoulter.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Perform the rhodanese aggregation reaction* in the presence of Clusterin or purified Clu:DMPC nanodiscs** at molar ratio D-Rhod:Clu 1:3. * See protocol &#39;Prevention of rhodanese aggregation assay&#39;. ** See &#39;Formation and isolation of Clu-phospholipid particles&#39;. dx.doi.org/10.17504/protocols.io.bp2l6x59zlqe/v1",
+    "Centrifuge the rhodanese aggregation reactions in the presence of Clusterin or Clu:DMPC at 20000 x g, 4 °C, 15 minutes to remove big aggregates. NOTE : Here we use D-Rhodanese, but binding of other Clusterin substrates to Clusterin:DMPC nanodiscs can be tested and isolated using this assay.",
+    "Mix the supernatant with OptiPrep Density Gradient Medium (Merck, D1556, 60% iodixanol) to a final concentration of 36% iodixanol in PBS and final volume of 1 mL in a 3.5 mL Thickwall Polycarbonate Tube (349622, Beckman Coulter).",
+    "Carefully place 1 mL of 24% iodixanol diluted in PBS on top of the 36% iodixanol layer.",
+    "Carefully place 1 mL of PBS as top layer.",
+    "Centrifuge the gradient at 54000 rpm, 4 °C, 3 hours using a SW55 Ti rotor (Beckman Coulter).",
+    "After centrifugation, carefully collect 6 fractions of 0.5 mL .",
+    "Dilute each fraction with 0.5 mL PBS.",
+    "Add 40 µL of 2% Na-deoxycholate and vortex.",
+    "Incubate On ice for 00:15:00 .",
+    "Add 100 µL of 100% Trichloroacetic acid and vortex.",
+    "Incubate On ice for 01:00:00 .",
+    "Centrifuge the samples at 20000 x g, 4 °C, 30 minutes .",
+    "Add 500 µL of ice-cold acetone.",
+    "Vortex or sonicate in a Bioruptor sonication bath (Diagenode) (2 cycles of 00:00:30 on – 00:00:30 off) for faster resuspension.",
+    "Centrifuge at 200000 x g, 4 °C, 10 minutes .",
+    "Air dry the pellets.",
+    "Add 30 µL 300 millimolar (mM) Tris pH 8.8 .",
+    "Incubate On ice for 00:05:00 .",
+    "Add 30 µL NuPAGE™ LDS Sample Buffer (4X) buffer (Thermo Fisher Scientific) containing 100 millimolar (mM) DTT and boil the samples for 00:10:00 .",
+    "Separate the proteins by sodium dodecyl sulfate-polyacrylamide gel electrophoresis (SDS-PAGE) followed by immunoblotting. NOTE : Isolated Clusterin phospholipid particles bound to a substrate can be also used for further experiments like cellular uptake, see Yeh FL et al. Neuron (2016)."
+  ],
+  "authors": [
+    "Patricia Yuste-Checa",
+    "F Ulrich Hartl"
+  ],
+  "creator": "Patricia Yuste-Checa",
+  "published_on": 1743061381,
+  "created_on": 1742470269,
+  "keywords": []
+}

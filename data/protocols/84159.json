@@ -1,0 +1,28 @@
+{
+  "id": 84159,
+  "title": "Rapalog-induced chemical dimerization experiments",
+  "uri": "rapalog-induced-chemical-dimerization-experiments-cwe7xbhn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ldmyynl5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"30j8b\",\"text\":\"This protocol describes Rapalog-induced chemical dimerization experiments.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"5s50a\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"2h710\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1gkp6\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"bbqfu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"306lo\",\"text\":\"LSR Fortessa Cell Analyzer (BD Biosciences)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":959904,\"guid\":\"437AB693341F11EE9D4302C0B41BC903\",\"name\":\"\\tiDimerize™ Inducible Heterodimer System\",\"mol_weight\":0,\"sku\":\"635067\",\"url\":\"https://www.takarabio.com/products/gene-function/idimerize-inducible-protein-interaction-systems/heterodimerization-systems\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1203,\"name\":\"Takara Bio Inc.\",\"link\":\"https://www.takarabio.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "To perform chemical-induced dimerization (CID) experiments we will first establish cell lines expressing the FRB-Fis1 and FKBP-GFP-GOI (FKBP-GFP fused to our gene of interest).",
+    "HeLa cells are consecutively transduced with lentivirus for FRB-Fis1, which also expresses mitochondrially targeted monoKeima (mt-mKeima), and then with FKBP-GFP-GOI. See the lentivirus transduction protocol for further details.",
+    "Analyze the cells by flow cytometry, using the mt-mKeima ratio (561/405) as a readout with an LSR Fortessa Cell Analyzer (BD Biosciences).",
+    "Gate the cells for GFP/mt-mKeima double-positive cells, and collect 10,000 events for this population.",
+    "Analyze data using FlowJo.",
+    "Once cell lines are established, cells are seeded in 6-well plates the day before the experiment (density: 800k per well).",
+    "Induce FKBP-FRB dimerisation by treating the cells with 50 nanomolar (nM) Rapalog A/C hetero-dimerizer rapalog (635057, Takara) for 24:00:00 .",
+    "After 24h, collect cells by trypsinization and take the cells to the FACS facility for mt-mKeima analysis."
+  ],
+  "authors": [
+    "Elias Adriaenssens"
+  ],
+  "creator": "Elias Adriaenssens",
+  "published_on": 1695480249,
+  "created_on": 1687947132,
+  "keywords": []
+}

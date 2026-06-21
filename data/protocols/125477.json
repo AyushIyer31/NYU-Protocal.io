@@ -1,0 +1,35 @@
+{
+  "id": 125477,
+  "title": "Memory and Traces: A study on the virtual interactive method of Reversely Reconstructing Architectural Heritage - the Three Dragon Wall",
+  "uri": "memory-and-traces-a-study-on-the-virtual-interacti-d6sd9ea6",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv5n68jv1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"e1kat\",\"text\":\"The design of this experiment aims at reverse-time reproduction. It revolves around three stages: extracting dynamic patterns from static traces, achieving time-driven through parameterization, and constructing spatiotemporal correlations that are perceptible to users. This process systematically achieves the reverse reproduction of architectural heritage, transforming it from a \\\"static record\\\" to \\\"dynamic deduction\\\" through a technological closed loop of status quo, time-based parameters, and interactive feedback.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Image Data Collection:",
+    "Creating Mode: Inverse modeling of the point cloud is performed using Reality Capture software.",
+    "Data Sorting: This experiment uses 316 tilted photographic images (including UAV aerial images and manually supplemented images) for screening and distortion correction.",
+    "Model Optimization Processing: To address the issues of model volume redundancy, texture misalignment, and UV mapping fragmentation during the modeling process, a multi-stage optimization strategy is employed. First, mesh redundancy and texture misalignment are addressed using topology optimization and texture remapping techniques. Then, wiring reconstruction, face number rationalization, and mapping baking are performed in the Blender software to obtain a regular UV mapping that satisfies the requirements of the reverse time reproduction parameterization method, saved as a .fbx file.",
+    "Parameter Setting: Based on the visual characteristics of the disease, six key parameters are summarised: point-based restoration texture (PBT), platy restoration texture (PRT), linear concave texture (LCT), random protrusion texture (RCT), colour and time.",
+    "Parametric Simulation:",
+    "Virtual Interactive Experience: Using the Pico 4 and VR Scene Inspection, users can adjust time parameters via the controller to achieve an immersive reverse-time reproduction of the Three-Dragon Wall.",
+    "Model texture simulation node group: The model texture simulation node group is a concrete implementation process for linear indentation texture parameters. It consists of three parts: Voronoi texture simulation, image interference, and displacement mapping. The Voronoi texture determines the direction of the linear patterns, image interference controls the final area and size of the lines, and the displacement map governs the depth of the linear texture indentations.",
+    "Point texture simulation node group: Based on the requirements for point-based restoration texture parameters and their refined control parameters, the morphology of the point-like textures is simulated using noise maps. Image interference is employed to constrain the locations where the point-like textures appear, while PBR (Physically Based Rendering) maps are utilized to restore the surface relief of the point-like textures.",
+    "For areas that were completely occluded, manual close-up photography was performed with the iPhone 11, controlling the shooting distance within the range of 0.5-1.2 meters.",
+    "Due to the occlusion caused by the sloping face of the mountain and the surrounding oil pines, a UAV spiral progressive aerial photography strategy was employed. Seven layers of wraparound aerial strips were set up 5-15 meters from the wall to obtain at least 45 effective images.",
+    "A DJI Royal 2 was used to obtain images via tilt photography."
+  ],
+  "authors": [
+    "Feiyun Lai",
+    "Chi Zhang",
+    "Kailing Deng",
+    "Xuesong Yang"
+  ],
+  "creator": "Kailing Deng",
+  "published_on": 1743071380,
+  "created_on": 1743067755,
+  "keywords": []
+}

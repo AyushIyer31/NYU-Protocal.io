@@ -1,0 +1,31 @@
+{
+  "id": 109298,
+  "title": "Preparing C. elegans for image acquisition",
+  "uri": "preparing-c-elegans-for-image-acquisition-dnys5fwe",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzjzr8lx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"3p8ce\",\"text\":\"This protocol describes a procedure to prepare synchronized C. elegans for image-based motility analysis. It describes methods for maturing synchronized L1s to adulthood, transferring them to NGM plates without OP50 for imaging, and acquiring the images on an upright widefield microscope.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":60,\"length\":10}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"fjo68\",\"text\":\"M9 buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"agi74\",\"text\":\"6 cm Petri dishes with NGM(OP50)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b6h4k\",\"text\":\"6 cm Petri dishes with NGM (no OP50)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cv4og\",\"text\":\"15 mL centrifuge tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dtueq\",\"text\":\"Dissection scope\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6jjho\",\"text\":\"Nikon upright widefield microscope with Kinetix sCMOS camera\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Once synchronized worms have hatched into L1 larvae, plate 200-300 µL synchronized worm solution per plate onto NGM (OP50) plates under a flame. If you resuspended worms in 1 mL M9 buffer, this should correspond to ~four plates per strain.",
+    "Cover plates and allow buffer to evaporate. Tap the plate gently to remove any bubbles. This process takes approximately 00:20:00 – 00:30:00 .",
+    "Incubate plates at room temperature for 96:00:00 .",
+    "After incubation, worms on synchronized plates should have matured to young adults. Confirm this using the dissection scope.",
+    "For each strain, detach adults from plates using 0.5 mL sterile M9 buffer per plate under a flame. Swirl and tilt plate to ensure that buffer passes over the entirety of the plate, then use a pipette to transfer the buffer to a sterile 15 mL centrifuge tube. This process should remove the vast majority of worms from the plate.",
+    "Set tube upright in a rack to allow worms to settle under 1 G. This process takes approximately 00:20:00 – 00:30:00 .",
+    "After worms have settled, remove ~half of remaining supernatant.",
+    "Resuspend worms in remaining supernatant, then transfer to a fresh NGM plate without OP50. If there are too many worms for one plate, transfer half of resuspended worms to one plate, then plate an additional NGM plate after 00:15:00 . During buffer evaporation, worms can become &#34;knotted&#34; around each other. This effect is especially pronounced when bubbles are present. To disperse worm knots, it is best to sharply strike the plate against the bench. If necessary, you can also disperse worms by gently prodding them with a flame-sterilized inoculation loop.",
+    "Incubate plates on bench for 01:00:00 to allow worms to habituate.",
+    "Repeat this process with additional strain(s), staggering the replating times to allow for consistent habituation time between strains.",
+    "For each plate, image 25 unique FOVs (if sufficient worms are available) for 30 s each on an upright microscope. Use the widest field of view possible. Image acquisition parameters: 30 s acquisition at 25 fps (40 ms exposure time) Plan Apo D 4×/0.20 Nikon upright widefield microscope with Kinetix sCMOS camera"
+  ],
+  "authors": [
+    "Justin Donnelly"
+  ],
+  "creator": "Arcadia Science",
+  "published_on": 1735857022,
+  "created_on": 1728319042,
+  "keywords": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": 71182,
+  "title": "Evaluation of mtKeima foci in induced neurons (iNeurons)",
+  "uri": "evaluation-of-mtkeima-foci-in-induced-neurons-ineu-chrnt55e",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvr4d7bgmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"53imj\",\"text\":\"Protocol for the evaluation of mtKeima foci in induced neurons (iNeurons)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Day 0: Treat AAVS1-TRE3G-NGN2 cells with Accutase and plate the dissociated cells in matrigel-coated 6-well plates (2x105 cells/well) in ND1 Medium supplemented with Y27632 (10 μM). ND1 Medium: DMEM/F12 N2 (100x) 1x BDNF 10 ng/ml NT3 10 ng/ml NEAA (100X) 1x Laminin 0.2 μg/ml Doxycycline 2 μg/ml",
+    "Day 1: Replace the medium with ND1 Medium.",
+    "Day 2: Replace the medium with ND2 Medium. ND2 Medium Neurobasal medium B27 (50x) 1x GlutaMax (100x) 1x BDNF 10 ng/ml NT3 10 ng/ml Doxycycline 2 μg/ml",
+    "Day 4: Exchange 50% of the medium from each well.",
+    "Day 6: Treat the cells with Accutase and replate the dissociated cells in matrigel-coated",
+    "6-/12-well glass bottom plates (2-4x105 cells/well for 6 wells) in ND2 Medium.",
+    "Day 8 and thereafter: Exchange 50% of the medium from each well every other day. · Doxycycline can be withdrawn on Day.",
+    "Mount glass bottom plate on Yokogawa CSU-W1 spinning disk confocal on a Nikon Eclipse Ti-E motorized microscope. Ensure that the system is equipped with a Tokai Hit stage top incubator and imaging was performed at 37°C, 5% CO2 and 95% humidity.",
+    "Take image stacks using a Nikon Plan Apo 60×/1.40 N.A immersion oil objective lens.",
+    "For ratiometic imaging, mtKeimaXL were excited in sequential manner with a Nikon LUN-F XL solid state laser combiner ([laser line – laser power]: 445 - 80mW, 561 – 65 mW]) using a Semrock Di01-T445/515/561 dichroic mirror. Fluorescence emissions were collected through a Chroma ET605/52m [for 445 nm] and a 568 Chroma ET605/52m [for 561 nm], filters, respectively (Chroma Technologies). Consistent laser intensity and exposure times must be maintained for all samples.",
+    "Perform image quantification was in your tool of choice. Here we will use ImageJ/FiJi and custom-written batch-macros ( https://github.com/harperlaboratory/FBXO7 )",
+    "Divide raw confocal images of mitochondrial targeted mt-mKeimaXL [ex:561/ex:445], resulting in a ratiometic image of only acidic Keima-puncta.",
+    "Subject resulting signals to background subtraction (rolling kernel size 25, sliding paraboloid) and convert into binary objects.",
+    "Use the &#34;Analyze Particles...&#34; command (pixel size exclusion: 0.5-∞, exclude edge objects) to measure foci-abundance and other morphological parameters.",
+    "Save results for each image-stack as .csv files, together with the original ratiometic .tiff file for QC purposes.",
+    "Count number of nuclei for normalization.",
+    "Plot results in your tool of choice for graphing and statistical analysis."
+  ],
+  "authors": [
+    "Felix Kraus"
+  ],
+  "creator": "Felix Kraus",
+  "published_on": 1667229188,
+  "created_on": 1665501252,
+  "keywords": []
+}

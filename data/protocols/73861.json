@@ -1,0 +1,37 @@
+{
+  "id": 73861,
+  "title": "Colorimetric determination of L-lactate in supernatant of cells using LDH activity",
+  "uri": "colorimetric-determination-of-l-lactate-in-superna-ckddus26",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gpj9j5gzp/v1",
+  "description": "{\"blocks\":[{\"key\":\"c5fp2\",\"text\":\"As a product of anaerobic glycolysis L-lactate has shown to be an important indicator of the cellular metabolic status and can be associated with diverse cellular effects. For this reason, L-lactate assay kits are in high demand when metabolic effects need to be examined. Nevertheless, commercially available kits are not affordable if multiple samples must be evaluated. This protocol uses LDH activity to determine the concentration of L-lactate as a product of metabolism in cellular supernatant and is suitable for 96 well-plate format. The protocol provides repeatable results and exhibits an easy and cost-effective alternative for any lab with a microplate absorbance reader capable of measuring millimolar amount of L-lactate in supernatant.\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"315uh\",\"text\":\"Acetic acid (glacial) (Sigma-Aldrich Catalog # A6283)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"27jmp\",\"text\":\"β-Nicotinamide Adenine Dinucleotide Sodium salt (β-NAD) (Sigma-Aldrich Catalog # N0632-1G)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9tgbu\",\"text\":\"Iodonitrotetrazolium Chloride (INT) (Sigma-Aldrich Catalog # I10406-1G)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2uume\",\"text\":\"L-Lactate Dehydrogenase 10 mg in 2mL (L-LDH) (Sigma-Aldrich Catalog # 10127230001)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"nqi8\",\"text\":\"1-Methoxyphenazine methosulfate (1-Methoxy-PMS) (MedChemExpress Catalog # HY-D0937)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7jemn\",\"text\":\"Sodium L-lactate (Sigma-Aldrich Catalog # L-7022)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fvlbo\",\"text\":\"Tris Base (2-amino-2-(hydroxymethyl)-1,3-propandiol (Sigma-Aldrich Catalog # 648310-M)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f62tk\",\"text\":\"flat-bottom 96-well plate \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5oaif\",\"text\":\"Absorbance microplate  reader \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "For L-lactate determination in a 96-well plate preparation of 5 mL of Assay Buffer is necessary: 4250 μL of Tris-Base (0,2 mol/L, pH=8.2) 500 μL of β-NAD 250 μL of INT 1 μL of L-LDH 1,1 μL of 1-Methoxy-PMS",
+    "L-lactate standards with the concentrations of 12, 6, 3, 1,5, 0,75, 0,375 mmol/L are prepared from the Sodium L-lactate stock in RPMI medium or the medium used for cell culture. For a Standard curve with two replicates for each Standard, 150 μL of each one should be prepared.",
+    "0,2 mol/L Tris-Base, pH=8,2 (500 mL) 22 mg/mL β-NAD 10 mg/mL INT dissolved in 67% MeOH 25 mg/mL 1-Methoxy-PMS in DMSO 1 mol/L Sodium L-lactate 1 mol/L acetic acid L-LDH 5 mg/mL stored at 4 ºC β-NAD, INT, 1-Methoxy-PMS and sodium L-lactate dissolutions must be aliquoted and stored at -20 ºC",
+    "Add 50 μL of RPMI medium or the medium used for cell culture to the appropriate wells of a flat-bottom 96-well plate as Blank. (See Table 1 as template). Test all the samples, controls and standards with a minimum of two replicates.",
+    "For the standard curve, add 50 μL of L-lactate Standards to the appropriate wells of the flat-bottom 96-well plate (Table 1).",
+    "For samples, add 50 μL of sample (e.g. supernatant) to the appropriate wells of the flat-bottom 96-well plate (Table 1). (Cell supernatant can be stored in an unsterile 96-well plate at -20°C if it is necessary). It is possible to dilute the samples with medium in case the samples present higher concentrations of L-lactate than the standard curve.",
+    "Add 50 μL of Assay Buffer to the wells.",
+    "Incubate for 1h at room temperature in the dark.",
+    "Add 50 μL of Acetic Acid 1 mol/L to stop the reaction (any bubbles produced by pipetting need to be removed for an exact measurement).",
+    "Read the absorbance at 490 nm-Ref 650 nm with a microplate absorbance reader.",
+    "Subtract the blank from all data points, including standads and samples and then use a curve-fitting sofware to create the standard curve. Calculate the L-lactate concentration of the samples using the standard curve.",
+    "Table 1 Template of a flat-bottom 96-well plate 1 2 3 4 5 6 7 8 9 10 11 12 1 Blank (medium) Sample Sample Sample Sample Sample 2 12 mol/L L-lactate Sample Sample Sample Sample Sample 3 6 mol/L L-lactate Sample Sample Sample Sample Sample 4 3 mol/L L-lactate Sample Sample Sample Sample Sample 5 1,5 mol/L lactate Sample Sample Sample Sample Sample 6 0,75 mol/L L-lactate Sample Sample Sample Sample Sample 7 0,375 mol/L L-lactate Sample Sample Sample Sample Sample 8 Sample Sample Sample Sample Sample",
+    "For measurement in cells incubated with RPMI medium containing sodium pyruvate (1 mmol/L), the enzyme concentration needs to be adjusted to 6 μL of L-LDH, as we experienced enzyme inhibition by pyruvate for low concentrations of L-LDH in this condition. In addition, the absorbance recorded with the microplate reader has to be set to 490 nm without a reference of 650 nm. The remaining steps should be followed according to the procedure described above.",
+    "This is a step-by-step protocol of the assay that was used and described in the following reference: Schmiedeknecht K, Kaufmann A, Bauer S, Venegas Solis F (2022) L-lactate as an indicator for cellular metabolic status: An easy and cost-effective colorimetric L-lactate assay. PLOS ONE 17(7): e0271818. https://doi.org/10.1371/journal.pone.0271818"
+  ],
+  "authors": [
+    "Francisco Venegas Solis",
+    "Kira Schmiedeknecht",
+    "Andreas Kaufmann",
+    "Stefan Bauer"
+  ],
+  "creator": "Francisco Venegas Solis",
+  "published_on": 1675166689,
+  "created_on": 1670840170,
+  "keywords": []
+}

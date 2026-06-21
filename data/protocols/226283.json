@@ -1,0 +1,39 @@
+{
+  "id": 226283,
+  "title": "2-step PCR mixture and conditions (Barcoded-head primers for seqs pooling)",
+  "uri": "2-step-pcr-mixture-and-conditions-barcoded-head-pr-g88jbzzup",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ld6rd7g5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"8nlur\",\"text\":\"PCR mixture and condition (2X SUPERGREEN PCR MASTER MIX)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":56}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Wear glove, clean up the working bench w. 1% bleach",
+    "Prepare 1&#39; PCR master mixutre for head-primers ( prepare 1.2X of solutions for pipetting error if needed ) PCR mixture for head-primers for each reaction %s %s A B C D 1 Component Volume Volume (1.2X) Final conc. 2 2X KAPA HiFi HotStart ReadyMix 12.5 µL 15 μL 1X 3 Forward Primer (10 µM) 0.75 µL 0.9 µL 0.3 μM 4 Forward Primer (10 µM) 0.75 µL 0.9 µL 0.3 μM 5 ddH2O 10 μL 12 µL - 6 Total volume 24 μL 28.8 μL - Negative control ALWAYS NEEDED! For example, if you have 5 PCR reactions to run, prepare master mixture for 6 reactions (5 DNA template + 1 negative control).",
+    "Mix the 1&#39; PCR master mixture gently by pippeting. Quick spin the tube.",
+    "Transfer 24 µL 1&#39; PCR master mixutre in 8-strip PCR tubes.",
+    "Add 1 µL DNA template in 8-strip PCR tubes, resulting in a 25 µL reaction mixture for 1&#39; PCR. Negative control contains only 24 µL master mixture but not DNA template",
+    "Mix the reaction mixture gently by tapping the tubes. Quick spin the tubes.",
+    "Carry out PCR using the following condition: 1&#39; PCR condition for head-primers A B C D 1 Step Temp Sec Cycle 2 Initial denaturation 95 ºC 180 3 Denaturation 95 ºC 30 25 cycles 4 Annealing 60-66 ºC varied (b) 30 5 Extension 72 ºC 180 6 Final extension 72 ºC 420 7 Preservation Preservation 4 ºC ∞ b. Annealing varied, 60-66C is working; Refer to 1&#39; PCR primers for annealing temperature c. 1kb ~ 1min extension; enough time allow full extension of sequence",
+    "Carry out electrophoresis for inspection of DNA products Gel before markdown",
+    "Markdown wells and upload the pictures to the Lab Google drive Marked gel picture go to the Lab Google drive",
+    "Prepare 2&#39; PCR master mixutre for barcoded-primers ( prepare 1.2X of solutions for pipetting error if needed ) PCR mixture for barcoded-primers for each reaction (NO PRIMERs at this point!!) A B C D 1 Component Volume Volume (1.2X) Final conc. 2 ZEJU PCR Master Mix 7.5 µL 9 µL - 3 ddH20 5.55 µL 6.66 µL - 4 Total volume 13.05 µL 15.66 µL - Negative control ALWAYS NEEDED! For example, if you have 5 PCR reactions to run, prepare master mixture for 6 reactions (5 DNA template + 1 negative control).",
+    "Mix the 2&#39; PCR master mixture gently by pippeting. Quick spin the tube.",
+    "Transfer 13.05 µL of the 2&#39; PCR master mixture to 8-strip PCR tubes.",
+    "Add 1.2 µL pre-mixed barcoded-head primers (Forward + Reverse) to each PCR tubes.",
+    "Add 0.75 µL of 1&#39; PCR product as template , resulting in 15 µL reaction mixture for 2&#39; PCR. Negative control contains only 14.25 µL master mixture and premixed barcoded-head primers but not DNA template",
+    "Mix gently by tapping the tubes. Quick spin the tubes.",
+    "Carry out 2&#39; PCR using the following condition: 2&#39; PCR condition for barcoded-head primers A B C D 1 Step Temp Sec Cycle 2 Initial denaturation 98 ºC 30 3 Denaturation 98 ºC 15 12 cycles 4 Annealing 64-68 ºC varied (a) 15 5 Extension 72 ºC 20 (b) 6 Final extension 72 ºC 210 7 Preservation Preservation 4 ºC ∞ a. Annealing varied, 65 C is working based on test on 220531; Refer 2&#39; PCR primers for annealing temperature b. 1kb ~ 1min extension; enough time allow full extension of sequence",
+    "Carry out electrophoresis for inspection of DNA products Gel before markdown",
+    "Markdown wells and upload the pictures to the Lab Google drive Marked gel picture go to the Lab Google drive"
+  ],
+  "authors": [
+    "Yin-Tse Huang",
+    "Tsu-Chun Hung"
+  ],
+  "creator": "Yin-Tse Huang",
+  "published_on": 1756889964,
+  "created_on": 1756862407,
+  "keywords": []
+}

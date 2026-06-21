@@ -1,0 +1,27 @@
+{
+  "id": 95597,
+  "title": "UV Exposure Protocol",
+  "uri": "uv-exposure-protocol-c9kmz4u6",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"758pk\",\"text\":\"A procedure utilising a UV crosslinker to expose isolated DNA to UV radiation with the aim of inducing lesions in the DNA typical of that kind of damage induced by UV.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"4u83t\",\"text\":\"Ultraviolet Crosslinkers are a powerful source of ultraviolet radiation. Even though they are not easily accessible, do not attempt to disengage or override the internal safety interlocks. Exposure to the UV radiation may result. If the UV sources remain on when the door is open, the unit is malfunctioning and use should be discontinued until the unit is serviced. Do not expose unprotected eyes or skin to UV radiation. Always disconnect the UV Crosslinker from its electrical supply before servicing. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"3sh1g\",\"text\":\"Human Genomic DNA - Human Mixed - G3041 1 × 100μg\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"288sl\",\"text\":\"UVP Crosslinker CX-2000\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e4t03\",\"text\":\"Dilution buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"828sa\",\"text\":\"1* Gibson P20 pipette\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dkk5g\",\"text\":\"2 * Wide bore tips\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"757j\",\"text\":\"1 * Sterile petri dish\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fpec4\",\"text\":\"1 * Eppendorf tube\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Pipette 2.2 µL of Sample which has a measured concentration of 227 µg/ml from stock tube to sterile plastic petri dish.",
+    "Dilute material in petri dish with 22.8 µL of buffer to achieve a target of 25 µL of DNA at 20 ng/µl yielding 0.5 µg of DNA. Gently mix but do not agitate vigorously.",
+    "Expose tube to UV light using Crosslinker at 254 nm to exposing the DNA to 800 J/m 2 (80000 μJ/cm 2 ) UVP Crosslinker CX-2000 (UV Crosslinker, UVP, 95-0339-02, 254nm wavelength 8W, https://www.uvp.com/products/lab-equipment/uvp-crosslinker/ , https://s3.amazonaws.com/protocols-files/files/m7z5b7pxf.jpg )",
+    "Place sample in Crosslinker drawer",
+    "Press the ENERGY button, enter the exposure energy of 80000 microjoules/cm 2 as 80 on the keypad. Note: YOUR ENERGY EXPOSURE SETTINGS DISPLAYED MUST BE MULTIPLIED BY 100 to obtain the exposure in microjoules/cm 2 . If settings are correct, push ENTER on the touch pad.",
+    "Press START button to activate crosslinker and wait for cycle to finish.",
+    "Transfer sample to eppendorf tube with pipette."
+  ],
+  "authors": [
+    "Martin O Pollard"
+  ],
+  "creator": "Martin O Pollard",
+  "published_on": 1708618899,
+  "created_on": 1708601069,
+  "keywords": []
+}

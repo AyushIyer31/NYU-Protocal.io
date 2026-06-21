@@ -1,0 +1,40 @@
+{
+  "id": 111579,
+  "title": "Experimental validation for transcoding scheme named R+ in DNA data storage",
+  "uri": "experimental-validation-for-transcoding-scheme-nam-dq735zqn",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g7mr78gwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"fot2g\",\"text\":\"We have developed a universal transcoding scheme named R+ for expanded molecular alphabet and demonstrating the in vitro experimental validation of DNA data storage containing 5-methylcytosine (5mC) from data writing to data reading.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":111,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"a4nei\",\"text\":\"The experimental validation mainly included assembly of 5mC fragments and nanopore sequencing. For more information see the accompanying paper and the following protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Use T4 Polynucleotide Kinase (NEB, CAT#: M0202L) to phosphorylate 108-nt oligonucleotides, followed by an annealing step to form double-stranded DNA with 8nt sticky ends. The phosphorylation and annealing is performed using the following program: 37 °C 02:00:00 95 °C 00:05:00 70 °C 00:30:00 55 °C 00:05:00 37 °C 00:05:00 12 °C 00:00:00, hold",
+    "Prepare pooled barcoded sample with up to 96 unique barcodes for every sample, to then be combined and run together on a MinION R 10.4.1 flow cell.",
+    "Use NEB Blunt/TA Ligase Master Mix (catalogue number M0367) and NEBNext Quick Ligation Modules (catalogue number E6056) containing all the NEB reagents needed for use with the Native Barcoding Kit to perform barcode ligation.",
+    "Ligating three sets of five 108-bp fragments and four 108-bp fragments to form three 540-bp segments and 432-bp segments respectively. The T4 ligation is performed using the following program: 16 °C 18:00:00",
+    "Use T4 DNA ligase (NEB, CAT#: M0202L) to further assembly three 540-bp segments and 432-bp segments respectively. T4 ligation is performed using the following program: 16 °C 18:00:00",
+    "Gel electrophoresis. Agarose 1.5 Mass / % volume Run condition 180 V 01:00:00 The ligation products are purified by gel purifications before usage. The gel purifications are performed using the Freeze N Squeeze DNA Gel Extraction Spin Columns (BIO-RAD, CAT#: 4106139 and NucleoSpin Gel and PCR Clean-up Kit (MACHEREY-NAGEL, CAT#: 740609.250).",
+    "Gel electrophoresis. Agarose gels 3 Mass / % volume Run condition 180 V 01:00:00 The ligation products are then purified by gel purification before usage. The gel purifications are performed using the Freeze N Squeeze DNA Gel Extraction Spin Columns (BIO-RAD, CAT#: 4106139 and NucleoSpin Gel and PCR Clean-up Kit (MACHEREY-NAGEL, CAT#: 740609.250).",
+    "Use EDTA to stop the barcode ligation reaction. Final sequencing library mixture (total 75 µL ): eluted DNA 12 µL sequencing buffer 37.5 µL library beads 25.5 µL",
+    "Load 75 μl of the library mix to the flow cell via the SpotON sample port after the flow cell is initially flushed with priming mix via the priming port.",
+    "Record the raw data in the format of FAST5 using MinKNOW software (Oxford Nanopore Technologies)."
+  ],
+  "authors": [
+    "Deruilin Liu",
+    "Demin Xu",
+    "Liuxin Shi",
+    "Jianyuan Zhang",
+    "Kewei Bi",
+    "Bei Luo",
+    "Chen Liu",
+    "Yuxiang Li",
+    "Guangyi Fan",
+    "Wen Wang",
+    "Zhi Ping"
+  ],
+  "creator": "Deruilin Liu",
+  "published_on": 1733299672,
+  "created_on": 1730797991,
+  "keywords": []
+}

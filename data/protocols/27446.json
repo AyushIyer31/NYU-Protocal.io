@@ -1,0 +1,36 @@
+{
+  "id": 27446,
+  "title": "X2Go Client Set-Up",
+  "uri": "x2go-client-set-up-62whgfe",
+  "doi": "dx.doi.org/10.17504/protocols.io.62whgfe",
+  "description": "{\"blocks\":[{\"key\":\"9fk1f\",\"text\":\"X2Go Client set-up to run Linux from Windows computer (on and off campus). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"d1epc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"55qak\",\"text\":\"Use the following link for more information or help on setting up X2Go Client:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"1qbrg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"cem52\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2bbu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"56sm3\",\"text\":\"https://helpdesk.engr.arizona.edu/support/solutions/articles/33000204314-how-can-i-access-engineering-linux-systems-from-home-\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":126}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"F3989C763A5C4476839B6298482AEB57\",\"url\":\"https://helpdesk.engr.arizona.edu/support/solutions/articles/33000204314-how-can-i-access-engineering-linux-systems-from-home-\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Install X2Go Client from the following site in the section labeled Get X2Go : https://wiki.x2go.org/doku.php . Choose the correct client install based on your type of computer you have (for example, for Windows, you will choose the Windows Installer ).",
+    "Open X2Go Client.",
+    "Select Session in the upper left corner and New Session from the drop-down menu.",
+    "The program will open a new window where you will enter session preferences.",
+    "The main parameters used will be: Host, Login and Session Type . Other parameters can be customized to the user but will not be reviewed in this protocol.",
+    "Type engr-hutchin02g.catnet.arizona.edu in the Host text box.",
+    "Type your University of Arizona username in the Login text box.",
+    "Select MATE for the Session Type .",
+    "Select the Connection tab.",
+    "It is recommended that Connection Speed be set at WAN when you are on campus using the Linux box. If you are working from home, it is recommended to set this to ADSL .",
+    "Select the Input/Output tab.",
+    "It is recommended that you set Display to Custom and set the width and height to 1600x900 . The Fullscreen setting will set your entire screen black while the client is loading and can make other items hard to access.",
+    "Select the Media tab. Have your settings match what is shown below.",
+    "Shared Folders tab can be modified to include a folder to your current desktop for any data collection or protocols you run in the X2Go client. This is useful to avoid the need to email or download files to a drive.",
+    "Once all session preferences have been finalized, click on the session in the right column of the X2Go window.",
+    "A new login dialog box should appear. Type in your password and press enter. Loading up X2Go client will take a few minutes after logging in."
+  ],
+  "authors": [
+    "Laurel Dieckhaus"
+  ],
+  "creator": "Laurel Dieckhaus",
+  "published_on": 1567525753,
+  "created_on": 1567525125,
+  "keywords": []
+}

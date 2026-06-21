@@ -1,0 +1,34 @@
+{
+  "id": 68487,
+  "title": "Single-Cell Isolation of Human Knee Meniscus",
+  "uri": "single-cell-isolation-of-human-knee-meniscus-ce5ftg3n",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj6k7blk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"9qlv\",\"text\":\"This is a protocol that describes the process of isolating single cells from human knee meniscus for scRNA-seq.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"78qud\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b77dk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5ts4a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eghf3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"35nkh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "~1g of tissue from healthy donor knees (Grades 0-1) is collected from the meniscus. For details regarding the tissue harvesting procedure please see dx.doi.org/10.17504/protocols.io.6qpvr614zvmk/v1",
+    "Meniscal tissue is washed with Room temperature Dulbeccos Phosphate Buffered Solution [DPBS] Gibco - Thermo Fisher Scientific Catalog #14190-144 supplemented with 10% Bovine Calf Serum [CS] VWR International (Avantor) Catalog #10158-358 , 1% Antibiotic-Antimycotic 9100x0 [Anti-Anti] Thermo Fisher Scientific Catalog #15240062 and 1% Penicillin-Streptomycin-Glutamine [PSG] Corning Catalog #30-009-CI .",
+    "The tissue is then finely minced with a #21 Feather disposable scalpel, and digested in 20mL DMEM with L-Glutamine 4.5g/L Glucose and Sodium Pyruvate Fisher Scientific Catalog #MT-10-013-CV supplemented with 1% Anti-Anti and 2% Collagenase Type II Worthington Biochemical Corporation Catalog #L5004177 using 100 rpm shaking at 37 °C for 00:30:00 .",
+    "Cells are gently passed through a 100 µm filter into a 50 mL centrifuge tube followed by gentle passage through a 40 µm filter into a fresh 50 mL centrifuge tube.",
+    "Filtered cells are spun down at 1200 rpm for 00:05:00 at Room temperature",
+    "The supernatant is carefully removed, and the remaining cell pellet is delicately resuspended in 10mL of Room temperature DPBS supplemented with 5% CS and 5 mM Ethylenediamine tetraacetic acid [EDTA] Fisher Scientific Catalog #BP120-500 .",
+    "Single cells are spun down at 1200 rpm for 00:05:00 at Room temperature .",
+    "The supernatant is carefully removed, and the remaining cell pellet is delicately resuspended in 10 mL of DPBS supplemented with 0.04% Bovine Serum Albumin [BSA] Fisher Scientific Catalog #9048-46-8 .",
+    "The Invitrogen Countess II FL automated cell counter is used to quantify single cells and determine cell viability. Live cells are determined by trypan blue staining. If &gt;70% cell viability is confirmed, the single cell suspension is diluted to a concentration of 1x10 6 cells/mL for single cell RNA-seq library preparation.",
+    "Carefully remove and collect the collagenase supernatant; the collagenase is reused in subsequent steps.",
+    "Cells are then resuspended in DMEM supplemented with 10% CS, 1% Anti-Anti and 1% PSG and stored at 37 °C .",
+    "Repeat the digestion, spin down and filtration steps for 01:00:00 and then 02:00:00 , for a total of 03:30:00 of digestion.",
+    "Combine all collected cells and spin down at 1200 rpm for 00:05:00 at Room temperature ."
+  ],
+  "authors": [
+    "Hannah Swahn",
+    "Martin Lotz"
+  ],
+  "creator": "Merissa Olmer",
+  "published_on": 1661235198,
+  "created_on": 1660169687,
+  "keywords": []
+}

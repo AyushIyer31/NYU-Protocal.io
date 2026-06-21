@@ -1,0 +1,30 @@
+{
+  "id": 233012,
+  "title": "Lentivirus production",
+  "uri": "lentivirus-production-hfsub3nex",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvmb656g3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"15mtl\",\"text\":\"This protocol describes the production of lentivirus in HEK293T cells for the transduction of primary neuronal cultures.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"43irj\",\"text\":\"Cells\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":5}],\"entityRanges\":[],\"data\":{}},{\"key\":\"b7pod\",\"text\":\"HEK293T cells (early passage) (CRL-3216, ATCC)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"87avl\",\"text\":\"Plasmids\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1rh5u\",\"text\":\"Gene of interest in lentiviral backbone \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"486nj\",\"text\":\"Accessory plasmids: pMDLG/pRRE, pIVS-VSVG, pRSV-Rev\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"63qai\",\"text\":\"Reagents\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7lnak\",\"text\":\"FuGENE transfection reagent (E2311, Promega)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dhlh7\",\"text\":\"Neurobasal medium (21103-049, Gibco)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"37lff\",\"text\":\"Poly-L-lysine for coating 6-well plates (P2636, Sigma-Aldrich)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5bdhb\",\"text\":\"Consumables\",\"type\":\"header-three\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":11}],\"entityRanges\":[],\"data\":{}},{\"key\":\"9kmfn\",\"text\":\"6-well tissue culture plates\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fnmo6\",\"text\":\"0.45 μm filter units\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Coat 6-well plates with poly-L-lysine for 1 h, and wash twice with PBS.",
+    "Seed early-passage (&lt; P10) HEK293T cells onto coated 6-well plates to reach ~70–80% confluency the next day.",
+    "Prepare a DNA mixture per well: a. In 200 μL Opti-MEM, combine: - 1.5 μg plasmid encoding the gene of interest (pFUGW, pJHUG, or pJHUIC) - 0.5 μg each of accessory plasmids (pMDLG/pRRE, pIVS-VSVG, pRSV-Rev) b. Add 12 μL FuGENE HD transfection reagent to the DNA solution. c. Mix gently by vortexing. d. Incubate at room temperature for 10–15 min to allow complex formation.",
+    "Remove HEK cells&#39; medium and replace it with 1.8 mL of fresh medium per well.",
+    "Add the transfection mixture to each well and incubate overnight at 37°C, 5% CO₂.",
+    "The next morning, remove the transfection medium and replace it with 2 mL neurobasal medium or HEK cells&#39; medium per well.",
+    "Incubate cells for 36–48 h to allow virus production.",
+    "Collect the culture medium containing lentivirus. Filter the collected medium through a 0.45 μm filter to remove cellular debris. Use the viral supernatant immediately for neuronal transduction, or aliquot and store at -80°C.",
+    "Add 20–40 μL viral supernatant per cloning ring of primary neuronal culture to achieve efficient transduction."
+  ],
+  "authors": [
+    "Akio Mori",
+    "Robert Edwards"
+  ],
+  "creator": "Akio Mori",
+  "published_on": 1767997424,
+  "created_on": 1763616400,
+  "keywords": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": 19135,
+  "title": "EIT data aquisition in rat sciatic nerve using stimulation of tibial and peroneal branches",
+  "uri": "eit-data-aquisition-in-rat-sciatic-nerve-using-sti-ww7ffhn",
+  "doi": "dx.doi.org/10.17504/protocols.io.ww7ffhn",
+  "description": "{\"blocks\":[{\"key\":\"ca6hj\",\"text\":\"High-level protocol to obtain the EIT imaging dataset and reconstruct images for the paper.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1macb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3nnve\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"a93na\",\"text\":\"Please consult UCL EIT team before attempting the protocol, the complexity of the required hardware and software is such, that the collaboration will be much more effective. It is possible to create customised easy-to-operate systems and software packages which are tailoried for the specific paradigm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"adt00\",\"text\":\"consult UCL EIT team before attempting the protocol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"7irrh\",\"text\":\"Chemicals used during the electrode interface construction are toxic.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Prepare nessesary hardware: UCL EIT system (EIT system, Custom, n/a, Number of channels: up to 256Current frequency range: DC - 20kHzSampling frequency: 100kHzOnboard stimulator, https://github.com/EIT-team/ScouseTom , https://s3.amazonaws.com/pr-journal/bbq6a.png )",
+    "Prepare neural interface: Follow the instructions in teh paper http://iopscience.iop.org/article/10.1088/1741-2552/aae868 Some of the chemical components are toxic Chemical hood cabinet is required",
+    "UCL EIT system https://github.com/EIT-team/ScouseTom/tree/master/src UCL EIT group",
+    "Sprague-Dawley adult male rats weighing 300 to 450g.",
+    "Acess sciatic trunc, common peroneal nerve and tibial nerve following the guide: https://onlinelibrary.wiley.com/doi/full/10.1002/mus.21652 Access to the common peroneal nerve was established through a 2mm lateral incision in biceps femoris near the knee joint.",
+    "Implant the stimulation electrodes on common peroneal and tibial branches (bipolar Ag hook electrodes)",
+    "For all studies, a square biphasic (positive first) constant current temporal waveform was delivered using a balanced current source (Keithley, UK model no 6221) with: 1-3 mA amplitude, 50 μs pulse width, 5Hz frequency (200 ms inter-stimulus time)",
+    "Load and process the data using the following software: UCL LoadData https://github.com/EIT-team/Load_data UCL EIT team",
+    "Anaesthesia is induced with a 5% isoflurane in 100% O2.",
+    "ntubated using a small animal laryngoscope Small animal laryngoscope (Laryngoscope, Custom 3D printed, n/a, https://www.thingiverse.com/thing:148315 , https://s3.amazonaws.com/pr-journal/bbq9a.jpg )",
+    "Arterial and venous access was established through cannulation (BD Insyte/Vialon, Becton, Dickinson U.K. Ltd.) of the right femoral vessels.",
+    "18G cannula and mechanical ventilation is provided, using a Harvard Apparatus Inspira Ventilator (Harvard Apparatus, Ltd, UK), with a 50/50% gas mixture of O2 and air.",
+    "The arterial blood pressure should is monitored (Cardiocap 5, Datex Ohmeda) and the mean arterial pressure (MAP) kept between 90 and 110mmHg using labetalol and adrenaline as necessary.",
+    "Once intravenous access had been established, a constant infusion of propofol is initiated. Monitor the depth with pinch reflex.",
+    "Procedures were performed on a vibration isolated table (Thorlabs Inc., USA) and, throughout experiments, the core body temperature of the rat was controlled with a homeothermic heating unit (Harvard Apparatus, Kent, UK) and maintained at 37⁰C",
+    "Implant the EIT array on main sciatic trunc Experimental design and setup. (a) The EIT array was placed on the main sciatic nerve running in the posterior compartment of the thigh approximately 20 mm distal to the greater sciatic foramen. (b-c) Two stimulating electrode pairs were placed on the tibial and common peroneal nerves. EIT images were recorded during the repeated activity in the sciatic nerve evoked with 5Hz stimulation of each branch at a time.",
+    "Program the EIT system with the following paerameters: EIT_parameters.mat",
+    "Connect stimulator to the tibial stimulation electrode. Collect the data",
+    "Connect stimulator to the common peroneal stimulation electrode. Collect the data",
+    "Forward solution PEITS https://github.com/EIT-team/PEITS UCL EIT team",
+    "Inverse solution and images generation Image Reconstruction https://github.com/EIT-team/Reconstruction UCL EIT team"
+  ],
+  "authors": [
+    "Kirill Aristovich",
+    "Matteo Donega",
+    "David Holder"
+  ],
+  "creator": "Kirill Aristovich",
+  "published_on": 1547231535,
+  "created_on": 1547056920,
+  "keywords": []
+}

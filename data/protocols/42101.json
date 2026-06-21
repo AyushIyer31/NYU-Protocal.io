@@ -1,0 +1,25 @@
+{
+  "id": 42101,
+  "title": "AMAS  to Concatenate Sequences",
+  "uri": "amas-to-concatenate-sequences-bmcvk2w6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlk45ewg5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"aafoo\",\"text\":\"Brief instructions on how to use the AMAS Package to concatenate sequences in the command line. Especially useful if your SequenceMatrix is no longer compatible with your version of Java.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Prerequisites: Python 3 previously installed. Download the AMAS package here: AMAS 1.0 https://pypi.org/project/amas/#files Borowiec, M.L. 2016. AMAS: a fast tool for alignment manipulation and computing of summary statistics. PeerJ 4:e1660. Once downloaded, drag the AMAS folder into your Applications folder. You will need the path to this folder in order to proceed.",
+    "Use the command line to navigate to the folder containing your aligned files (one alignment per gene). Make sure the names for each terminal (sequence) are IDENTICAL for every gene, or the concatenation will not work.",
+    "Use the concat command to concatenate your files: -i indicates the input files you want to concatenate gene1 .fas is your first aligned gene file (drag the file to the terminal to automatically include the path to it) gene2 .fas is your second aligned gene file (drag the file to the terminal to automatically include the path to it) Note: There are two genes listed here, but you can add as many as you want. Simply separate the paths/filenames by spaces. -f indicates the format of your files (in this case fasta, but you can also use nexus, phylip, etc) -d indicates the data type (DNA in most cases, use aa for amino acids) python3 /Applications/amas-1.0/amas/AMAS.py concat -i gene1.fas gene2.fas -f fasta -d dna This will generate two files: &#34;concatenated.out&#34; is your concatenated file. Add the file extension &#34;.fas&#34; so you can open it in AliView or Mesquite to check that it worked (recommend AliView if you&#39;re staying in FASTA format). &#34;partitions.txt&#34; lists the partitions for your new concatenated file Recommendation: rename your output and partitions files so that they are specific to the current analysis you&#39;re running and/or match the input file names (e.g. if you&#39;re running a 6-gene concatenated analysis based on mafft aligned files on July 12, try something like &#34;6mftCCT_Jul12_out.fas&#34; and &#34;6mftCCT_Jul12_partitions.txt&#34;) .",
+    "You can specify the format of the partitions file, depending on the program you want to use. For RAxML: python3 /Applications/amas-1.0/amas/AMAS.py concat -f fasta -d dna -i gene1.fas gene2.fas -u phylip --part-format raxml If you open the partitions file, you can check that it is properly formatted. For RAxML, it should look something like this: DNA, 16S = 1-605 DNA, COX1 = 606-1200 DNA, 28S = 1201-1800",
+    "If you would like to change the output format (something other than FASTA) use the argument -u, as in: python3 /Applications/amas-1.0/amas/AMAS.py concat -i gene1.fas gene2.fas -f fasta -d dna -u phylip"
+  ],
+  "authors": [
+    "Dakota Betz"
+  ],
+  "creator": "Dakota Betz",
+  "published_on": 1750265363,
+  "created_on": 1600107922,
+  "keywords": []
+}

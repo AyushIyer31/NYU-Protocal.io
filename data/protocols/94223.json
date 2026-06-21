@@ -1,0 +1,30 @@
+{
+  "id": 94223,
+  "title": "Y-Maze Protocol",
+  "uri": "y-maze-protocol-c79pzr5n",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2lyjr1mlx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"bjqa1\",\"text\":\"The Y maze is a quick and easy way to evaluate a rodent’s spatial working memory by measuring their ability to effectively explore a Y shape maze. Rodents typically prefer to explore novel arms of the maze, rather than returning to arms they have previously visited. As such, rodents with intact working memory will alternate between all arms of the maze before returning to one they have visited previously.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9k9qh\",\"text\":\"Y maze\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eibsh\",\"text\":\" \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"6rh8j\",\"text\":\"Camera and Noldus EthoVision software\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"100ec\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":126373,\"guid\":\"41A08804341F11EE9D4302C0B41BC903\",\"name\":\"70% EtOH\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Bring mice up to the behavior room to acclimate at least 01:00:00 before testing.",
+    "Clean each maze with 70% ethanol and let dry before beginning each test. Figure 1. Maze set-up.",
+    "Start Ethovision recording before placing rodents in center of maze (if you have multiple Y mazes, you can run cage mates simultaneously).",
+    "Leave the room and record for 8 min before returning animals to their home cage.",
+    "The rodent is considered to have entered an arm when their full body minus their tail is in the arm.",
+    "Percent alternation is defined as the number of spontaneous alternations/the total possible triads. For example in this maze, if the animal enters the arms in this order: B C A C A B, you would score themas having 2 spontaneous alternations (BCA and CAB) out of 4 possible triads (BCA, CAC, ACA, and CAB) or 50% alternation.",
+    "EthoVision software reports number of alternations and max entries to represent the number of possible triads so percent alternation is simply calculated by number of alternations/max entries. Percent alternation for a healthy mouse should be around 70%.",
+    "Controls: Check that max entries or distance traveled does not correlate with percent alternation. Correlation between these two variables suggests that the amount the rodent is moving may be skewing the percent alternation redouts and is no longer accurately reflecting working memory performance."
+  ],
+  "authors": [
+    "Lisa Blackmer-Raynolds",
+    "Ian N Krout",
+    "Tim Sampson"
+  ],
+  "creator": "Ian N Krout",
+  "published_on": 1706293379,
+  "created_on": 1706292737,
+  "keywords": []
+}

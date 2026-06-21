@@ -1,0 +1,34 @@
+{
+  "id": 108578,
+  "title": "Sample preparation and live-cell 3D-SIM imaging of PKmitoRed",
+  "uri": "sample-preparation-and-live-cell-3d-sim-imaging-of-dnaa5aae",
+  "doi": "dx.doi.org/10.17504/protocols.io.261ge5m2og47/v1",
+  "description": "{\"blocks\":[{\"key\":\"dan67\",\"text\":\"Protocol for sample preparation and live-cell 3D-SIM imaging of PKmitoRed.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Wash HeLa TMEM192-3xHA control and / or NPC1, NPC2 mutants with 1xPBS",
+    "Add Trypsin to cells for 5 min and incubate at 37°C to dissociate cells from plastic well",
+    "Resuspend cells in 1 mL DMEM media",
+    "Count cells",
+    "Seed appropriate number of cells into Mattek 35 mm glass bottom dishes. Top up growth media to 2-3ml volume.",
+    "Wash cells twice with 1xPBS and replace with fresh growth media.",
+    "Image cells on DeltaVision OMX v4 using an Olympus 60x / 1.42 Plan Apo oil objective (Olympus, Japan). Record 568 channels using a front-illuminated sCMOS (PCO Photonics, USA) in 512x512px image size mode, 1x binning, 125 nm z-stepping and with 15 raw images taken per z-plane (5 phase-shifts, 3 angles). For live cell imaging, use 285MHz fast mode on sCMOS. Take 1 - 1.5 µm thick z-stacks around the central in focus plane. Keep exposure times and laser power low, to avoid bleaching and damage.",
+    "Reconstruct raw images using CUDA-accelerated 3D-SIM reconstruction code (https://github.com/scopetools/cudasirecon) based on Gustafsson et al. (2008[FK1] ). The Optimal optical transfer function (OTF) was determined via an in-house build software, developed by Talley Lambert from the NIC / CBMF (GitHub: https://github.com/tlambert03/otfsearch, all channels were registered to the 528nm output channel, Wiener filter: 0.002, background: 90).",
+    "Open .dv composite image stacks in Fiji. Select mitochondria with ROI (keep same size across all measurements). Save ROI for running macro on them. Adjust B&amp;C in Fiji and copy images to Illustrator for making figures.",
+    "Use ImageJ macro to measure crisate occupancy.",
+    "Plot the result in the tool of choice for statistical analysis.",
+    "Aspirate DMEM, was twice with 1xPBS and add Galactose-media to the cells. Culture for desired times (for example 24h or 72h)",
+    "Take cells to the microscope. Keep at 37°C until instrument is ready.",
+    "Aspirate growth media and incubate cells with PKmitoRed (1:1000) in growth medium."
+  ],
+  "authors": [
+    "Felix Kraus"
+  ],
+  "creator": "Felix Kraus",
+  "published_on": 1729193139,
+  "created_on": 1727558706,
+  "keywords": []
+}

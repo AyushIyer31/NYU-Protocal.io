@@ -1,0 +1,40 @@
+{
+  "id": 51740,
+  "title": "Nuclear isolation and sequencing for mouse hypothalamus",
+  "uri": "nuclear-isolation-and-sequencing-for-mouse-hypotha-bwr4pd8w",
+  "doi": "dx.doi.org/10.17504/protocols.io.bwr4pd8w",
+  "description": "{\"blocks\":[{\"key\":\"54jhs\",\"text\":\"This protocol is intended for isolation of nuclei from fresh brain tissue in preparation for single-nuclei sequencing library using Chromium Single Cell 3’ Reagent Kits v2 or v3 (10X Genomics). For each step, tissue and reagents were kept on ice or at 4C, to reduce unwanted gene expression due to procedures and maintain nuclear integrity.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9e4jf\",\"text\":\"All tissues and reagents should be kept on ice or at 4C\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Lysis Buffer (100mL, store @ 4 C): 98.4mL Nuclease-free water 1mL 1M Tris-HCl (10mM) 200uL 5M NaCl (10mM) 300uL 1M MgCl 2 (3mM) 100uL NonIdet P40 (0.1%)",
+    "Dissect out and separate anterior and posterior hypothalamic tissue, place in sterile 35 x 10 mm petri dishes with 1 mL Hibernate A (Gibco) on ice;",
+    "Suspension Buffer (10 mL, new batch for each run): 10mL PBS 100 mg powdered BSA (mix well) 50uL Promega RNasin (40U/uL; final conc: 0.2U/uL)",
+    "Mince tissue until roughly quartered into .5 2 mm size blocks. Transfer tissue blocks in Hibernate A to pre-cooled 2.0 mL lysis buffer in Potter-Elvehjem Tissue Grinder (size 3 mL, manufacturer code 886000-0020);",
+    "In cold room, mount pestle to drill and set to 300 rpm, and gently lower pestle into tube with lysis buffer and tissue;",
+    "Dounce approximately 10-12 times (until tissue is adequately homogenized; depends upon the brain region). Keep tube stable and allow the tube’s own gravity to pull it down;",
+    "Transfer to 15mL tube and centrifuge at 500 rcf for 5 minutes @ 4 C. Carefully remove the supernatant and resuspend tissue in 1.5mL PBS w/ 1% BSA. Gently resuspend fully to avoid nuclear clumps;",
+    "(optional)Titrate the suspension 5 times with thin glass pipette to further break down the clumps.",
+    "Prepare 30um MACS Pre-separation filters by rinsing the filter with 500 uL PBS+1% BSA. Discard the flow-through;",
+    "Pass the nuclei suspension over a 30um MACS Pre-separation filter (should not have any clog).",
+    "(optional) Add 500uL PBS w/ 1% BSA over the 30um filter to wash off any nuclei remaining on the filter.",
+    "Keep flow-through on ice or 4C. Add 1.5uL 2mg/mL DAPI to 1.5 -2.0 mL suspension and gently mix. Allow five minutes on ice. Take the suspension to FACS facility.",
+    "Add 40uL PBS w/1% BSA to a 1.7mL Eppendorf tube and run BD Aria sorter using 70mm nozzle on purity setting; Sort all DAPI positive single nuclei in the suspension and centrifuge at 600 rcf for 5 minutes @ 4C;",
+    "Identify a pellet on the wall of the centrifuge tube, then gently and thoroughly resuspend into a final volume of 60-70 uL PBS w/1% BSA.",
+    "Luna cell counting protocol set to 1.11 dilution, and cell size gated between 3um and 15um, count the nuclei.",
+    "Load desired amount of nuclei: a.The expected concentration is 700-1200 nuclei/uL in 65-70 uL PBS+1% BSA buffer. b.For high concentration of nuclei suspension~1200 -1800 nuclei/uL, following the volume chart in 10x protocol should recover ~75% of nuclei number that are targeted. c.Low concentration can be rescued by loading the maximum possible volume of suspension without adding water (~31-34 uL).",
+    "Our hypothalamus single-nuclei sequencing library were prepared using Chromium Single Cell 3’ Reagent Kits v2 (10X Genomics), followed the standard steps described in Chromium Single Cell 3’ Reagent Kits v2 User Guide (Rev B). Libraries were sequenced using Hi-Seq 2500 rapid flow cells with maximum capacity."
+  ],
+  "authors": [
+    "Zhengzheng Sophia   Liang",
+    "Eric Vaughn",
+    "Dhananjay Bambah-Mukku",
+    "Catherine Dulac"
+  ],
+  "creator": "Zhengzheng Sophia   Liang",
+  "published_on": 1633553053,
+  "created_on": 1626814299,
+  "keywords": []
+}

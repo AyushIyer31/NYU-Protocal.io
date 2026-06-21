@@ -1,0 +1,25 @@
+{
+  "id": 71468,
+  "title": "Fura-2 imaging of ionomycin response, with and without R568; a CaSR positive modulator",
+  "uri": "fura-2-imaging-of-ionomycin-response-with-and-with-ch2kt8cw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg39p4zg25/v1",
+  "description": "{\"blocks\":[{\"key\":\"tt10\",\"text\":\"Fura-2 imaging protocol to accompany Kilfeather, Khoo et al., 2023: Single cell spatial transcriptomic and translatomic profiling of dopaminergic neurons in health, ageing and disease\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":68,\"length\":115}],\"entityRanges\":[],\"data\":{}},{\"key\":\"8fnhs\",\"text\":\"\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Prepare Fura-2 AM to 5 mM concentration in calcium-free HBSS supplemented with 20 mM HEPES.",
+    "Dilute Fura-2 AM to the final concentration of 2.5 mM in Neurobasal medium supplemented with B27 and L-glutamine, with DMSO (0.1%) or the CaSR positive modulator R568 (10 mM).",
+    "Incubate iPSC-derived dopaminergic neurons (DAns) in the solution of Fura-2 AM and drug for 1 h at 37°C, 5% CO 2 and then image on a FlexStation 3 Multi-Mode Microplate Reader (Molecular Devices) at 37°C.",
+    "Excite the dye at 340 nm and 380 nm and detect at 510 nm. Image each well every 4 s for 100 s and inject with ionomycin (final concentration 5 mM) after a baseline of 28 s.",
+    "For the analysis, compute the 340/380 ratio, and then subtract the baseline from all the timepoints, to obtain a normalised trace for each well. Find the maximum intensity (peak amplitude) of the normalised trace and calculate the area under the curve (AUC) using the left rectangular approximation method."
+  ],
+  "authors": [
+    "Peter Kilfeather"
+  ],
+  "creator": "Peter Kilfeather",
+  "published_on": 1688999514,
+  "created_on": 1666072767,
+  "keywords": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": 121107,
+  "title": "Prediction of allergenic proteins and mapping of IgE epitopes in allergens",
+  "uri": "prediction-of-allergenic-proteins-and-mapping-of-i-d2ht8b6n",
+  "doi": "dx.doi.org/10.1038/nprot.2007.505",
+  "description": "{\"blocks\":[{\"key\":\"7pgos\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"i2yk5\",\"text\":\"In present era use of genetically modified proteins in foods, therapeutics and biopharmaceuticals is increasing with exponential rate. Thus it is important to predict whether a modified protein allergenic or not.  In 2003, the Codex Alimentarius Commission (Codex) conveyed a panel of international food safety regulators to review the FAO/ WHO 2001 recommendations and recognized the uncertainties associated with the bioinformatics part of the   guidelines. They recommended various tests for examining allergenic behavior of proteins that includes source of gene, sequence similarities with known allergens, stability of protein and IgE bindings. Considering these points in mind a method was developed for predicting allergenic proteins, which is based on various approaches.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"p95na\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"zbnm4\",\"text\":\"Both formatted and non-formated sequences are accepted as input. For formatted sequences the server uses ReadSeq. software which can read most commonly used standard sequence formats including FASTA/PIR/EMBL/GENBANK etc. The user have to specify whether the sequence is in any format or non-formated as raw/plain text (single letter coded amino acid only)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"su1rs\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"gdfp4\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"drrcv\",\"text\":\"User can access and use this web server from any computer (Windows or Linux or Mac) with web browser and Internet connection\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "To run prediction, follow these stepwise instructions.",
+    "Type the following URL address in your web browser &#34; http://www.imtech.res.in/raghava/algpred &#34;",
+    "The user is required to fill the sequence submission form. A brief description of each of the field is as follows: Protein sequence name: This is an optional field. Paste protein sequence in plain or standard format: Paste the query protein sequence in one of the standard format (FASTA, EMBL, PIR etc.) or amino acid sequence only in single letter code. Or Upload sequence file: The user can also upload the query sequence directly from a file. NOTE: Care should be taken that the server accepts input from either of two options, not both. Input sequence format: The user has to select the appropriate format according to the input sequence.",
+    "Users can select one or more approaches at a time in a submission form as mentioned below:",
+    "Mapping of IgE epitopes and PID: The server searches known IgE epitopes in query protein sequence and will assign as allergen if any segment have high similarity with any known epitope. If there is a known epitope(s), then mapping of the epitope(s) is performed in the query sequence. The specificity of this approach is very high but the disadvantage is it has low sensitivity, as not all IgE epitopes of all allergens are known.",
+    "MEME/MAST motif: The input query protein sequence searched in MEME matrices created by using allergen sequences. The specificity of this approach is high with low sensitivity.",
+    "SVM module based on amino acid composition: The SVM module is generated using amino acid composition of protein sequence of allergens and nonallergens. The threshold value used is -0.4. At this value sensitivity and specificity of this method is 88.87% and 81.86% respectively, using fivefold cross-validation.",
+    "SVM module based on dipeptide composition: The SVM module is generated using dipeptide composition of protein sequence of allergens and nonallergens. The threshold value used is -0.2. At this value sensitivity and specificity of this method is 82.78% and 85.00% respectively, using fivefold cross-validation.",
+    "Blast search on allergen representative peptides (ARPs): The query protein sequence search the database of 2890 allergen representative peptides (ARPs), obtained from Bjorklund et al 2005. If there is a hit, then it will assign as allergen and the ARP is shown in the result field. The accuracy of this method is very high with high sensitivity as well as specificity.",
+    "Hybrid approach: The query protein sequence is assign as allergen if any one of the methods (SVM composition based +mapping of IgE epitopes + ARPs BLAST + MEME/MAST) predicts it as allergen.",
+    "Finally click on &#34;Submit&#34; button One Submission filled form is shown in Figure 1",
+    "This server allows users to predict allergens and mapping of IgE epitopes. Server may take time if users choose all the available approaches at one go",
+    "Time taken for prediction depend on length of protein and method used for prediction. Server takes around 50 second in searching IgE epitopes in a protein of 200 amino acids. In case of SVM based model Algpred take around 1 minute for a protein of 200 amino acids. Sever may take long time if hybrid model which combines all modes were used for prediction.",
+    "The server allows users to present results of various approaches in a single HTML output page. It provides comprehensive information about the prediction that includes score, threshold, distance from threshold, Positive Predictive Value (PPV) and Negative Predictive Value (NPV). If the PPV is &gt;80%, then there is a high chance that the protein is a potential allergen. In case of BLAST search, if the query sequence matches with any ARP in the database, then the matched ARP is also shown. AlgPred also allows the mapping of IgE epitopes on allergenic proteins. The output of AlgPred has been shown in Figure 2. A result of hybrid model is shown in Figure 3, which is output of hybrid model.",
+    "Figure 1. Submission form of algpred where sequence is in FASTA format; IgE mapping option is used for prediction. Figure 2. Example output of algpred for &#34;IgE Mapping&#34; option Figure 3. Example output of algpred for hybrid option where all methods are used"
+  ],
+  "authors": [
+    "Sudipto Saha",
+    "Gajendra Raghava"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1195010640,
+  "created_on": 1195010640,
+  "keywords": []
+}

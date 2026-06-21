@@ -1,0 +1,23 @@
+{
+  "id": 2285,
+  "title": "Running \"16sblaster\" at iPlant",
+  "uri": "Running-16sblaster-at-iPlant-egmbbu6",
+  "doi": "dx.doi.org/10.17504/protocols.io.egmbbu6",
+  "description": "{\"blocks\":[{\"key\":\"10r73\",\"text\":\"See upcoming paper by Watts, Hurwitz, Youens-Clark.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9snfc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2s97j\",\"text\":\"Code is freely available at Github.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":28,\"length\":6}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"2E9E83509865463F849B540F4C58555B\",\"url\":\"https://github.com/hurwitzlab/16sblaster\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"37lst\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"3qel2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"bmslu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Go to the 16sblaster app . Alternately, login to the iPlant/CyVerse Discovery Environment. Choose the &#34;Apps&#34; button on the left, then navigate to &#34;Public Apps -&gt; Experimental -&gt; iMicrobe.&#34; Click on the &#34;16sblaster&#34; app. a",
+    "Open the &#39;Required args&#39; section and indicate the directory containing the FASTA files you wish to analyze. You also need to include an accessions mapping file. Samples can be found in directory &#39;/iplant/home/shared/imicrobe/16sblaster&#39; which can be found by choosing the &#39;Data&#39; button on the left, then going to &#39;Community Data -&gt; imicrobe -&gt; 16sblaster&#39;. a You can use the &#39;Options&#39; to change the default values for similarity, etc. a Click on the &#39;Launch Analysis&#39; button and await an email notification of the job&#39;s ending status.",
+    "In the output directory (default &#34;16sblaster-out&#34;), you will find a large number of files used in the analysis. The &#34;ALL_RESULTS.txt&#34; and &#34;SUMMARY.txt&#34; files will be of interest to you. a"
+  ],
+  "authors": [
+    "Ken Youens-Clark"
+  ],
+  "creator": "Ken Youens-Clark",
+  "published_on": 1454517890,
+  "created_on": 1453845182,
+  "keywords": []
+}

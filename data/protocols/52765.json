@@ -1,0 +1,40 @@
+{
+  "id": 52765,
+  "title": "Part 2: Custom QXT",
+  "uri": "part-2-custom-qxt-bxr5pm86",
+  "doi": "dx.doi.org/10.17504/protocols.io.bxr5pm86",
+  "description": "{\"blocks\":[{\"key\":\"4qc0t\",\"text\":\"This protocol details the procedure of Custom QXT.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"dkodd\",\"text\":\"Materials:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"2hfcn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"duemn\",\"text\":\"cDNA\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dpf8m\",\"text\":\"5x TD Buffer\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2r391\",\"text\":\"QXTEnzyme\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8psgo\",\"text\":\"StorageSoln\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d4roi\",\"text\":\"80% EtOH\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"46bli\",\"text\":\"Ampure beads/sample\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "FIRST, IF POSSIBLE: Normalize cDNA samples to 2x the input mass (for 1 ng cDNA input will be 2 ng / 10.13 µL , for the 5 ng input will be 10 ng / 10.13 µL ). Run quants (picogreen) to assess concentration. If normalization was successful, add one volume of water to the samples to bring it back to 1x concentration and continue with 10.16 µL . %s %s 1ng cDNA input: 5ng cDNA input: ❏ INPUT: 1ng cDNA in 10.16uL water ❏ INPUT: 5ng cDNA in 10.16uL water ❏ QXT DILUTION: 1:20 dilution of QXT enzyme:Storage Soln., at least 2uL of dilution/sample ❏ QXT DILUTION: 1:6 dilution of QXT enzyme:Storage Soln., at least 2uL of dilution/sample ❏ MASTER MIX: ❏ MASTER MIX: Reagent 1 rxn (uL) ____rxn Reagent 1 rxn (uL) ____rxn cDNA 10.16 N/A cDNA 10.16 N/A 5x TD Buffer 8.84 5x TD Buffer 8.84 QXTEnzyme 0.1 QXTEnzyme 0.33 StorageSoln 1.9 StorageSoln 1.67 Total: 21 Total: 21",
+    "Place samples in thermocycler on “DNA Fragmentation” program: %s %s Step Temp(C) Time(hh:mm:ss) 1 55 00:10:00 2 4 00:01:00 3 4 Hold",
+    "Add 5 µL 0.2%SDS and 24 µL water/sample. %s %s Reagent 1 rxn (uL) ____rxn (uL) 0.2%SDS 5 H2O 24 Totals: 29",
+    "Seal, vortex, incubate at Room temperature for 00:01:00 .",
+    "%s %s Single cleanup Double SPRI cleanup (experimental) ❏ Vortex beads and incubate @ RT for 30minutes ❏ Vortex beads and equilibrate @ RT for 30minutes ❏ Add 49uL bead mix/sample (1.0x) ❏ 0.5x cleanup (&gt;600bp fragment removal): Add 25uL beads to each 50uL sample, vortex, briefly spin ❏ Seal samples, vortex, briefly spin down ❏ Incubate samples 5 mins @RT ❏ Incubate samples @RT 5 minutes ❏ Add samples to magnet rack, allow solution to clear, save supernatant to new clean tube (optional: save beads) ❏ Put samples on magnet rack, allow to clear, discard supernatant ❏ 0.2x cleanup (removal of &lt;150bp fragments, rounding out total cleanup to 0.7x): Add 10uL bead mix/sample, seal, mix, incubate for 5 mins @RT ❏ Wash 1 with 200uL 80% EtOH ❏ Put samples on magnet rack, allow to clear, discard supernatant ❏ Wash 2 with 200uL 80% EtOH ❏ Wash 1 with 200uL 80% EtOH ❏ Remove last of the EtOH, allow samples to air dry for at least 10 minutes. ❏ Wash 2 with 200uL 80% EtOH ❏ Elute with 24uL H2O, incubate for 2 mins @RT ❏ Remove the last Ethanol and allow samples to air dry for at least 10 minutes ❏ Elute with 24uL H2O, incubate for 2 mins @RT",
+    "Add 24 µL Kapa Hotstart Master Mix/sample.",
+    "Add 1 µL i7 primer and 1 µL i5 indexing primer, or 2 µL from a multiplex plate. NOTE THE USE OF CUSTOM PRIMERS.",
+    "Seal, vortex, briefly spin down samples, put in thermocycler on “Pre-Capture PCR” protocol. %s %s Step Temp(C) Time(hh:mm:ss) 1 68 00:02:00 2 98 00:02:00 3 98 00:00:30 4 57 00:00:30 5 72 00:01:00 6 Return to step 3 13x for 1ng cDNA inputs 11x for 5ng cDNA inputs 7 72 00:05:00 8 4 hold",
+    "Avoid S511 QXT i5 primer. Make sure beads are equilibrated to Room temperature .",
+    "Add 32.5 µL - 35 µL Ampure beads/sample (0.65x-0.7x beads:sample ratio), seal, mix, brief spin.",
+    "Incubate sample/bead mix @ Room temperature for 00:05:00 .",
+    "Move to magnet stand, allow solution to clear, discard supernatant.",
+    "Wash 1 with 200 µL of 80% EtOH.",
+    "Wash 2 with 200 µL of 80% EtOH.",
+    "Elute in 20 µL water. Add water to samples, take off magnet, seal, mix, spin, incubate @ Room temperature for 00:02:00 .",
+    "Transfer samples back to magnet stand, allow to clear, save supernatant in separate, clean tubes.",
+    "REPEAT Ampure bead purification 2 for a total of 2x bead cleanups.",
+    "Evaluate on Tapestation."
+  ],
+  "authors": [
+    "cecilia",
+    "Suzie Alarcon",
+    "Alessandro Sette"
+  ],
+  "creator": "Ngan Kim Tran",
+  "published_on": 1638377808,
+  "created_on": 1630057105,
+  "keywords": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": 233008,
+  "title": "Fluorescence recovery after photobleaching (FRAP) in neuro",
+  "uri": "fluorescence-recovery-after-photobleaching-frap-in-hfsqb3ndx",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx4do4l8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"drmpc\",\"text\":\"This protocol describes a fluorescence recovery after photobleaching (FRAP) assay used to measure the mobility of α-synuclein in synaptic boutons of cultured hippocampal neurons.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"c1btk\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"eut05\",\"text\":\"Tyrode’s buffer: 119 mM NaCl, 2.5 mM KCl, 2 mM CaCl₂, 2 mM MgCl₂, 30 mM glucose, 25 mM HEPES, pH 7.4\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":17}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4jesv\",\"text\":\"D-AP5 (ab120271, abcam)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"428jb\",\"text\":\"CNQX (ab120044, abcam)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"56fo0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9hdhv\",\"text\":\"Consumables\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":11}],\"entityRanges\":[],\"data\":{}},{\"key\":\"cummp\",\"text\":\"Glass-bottom dishes (P35G-1.5-10-C, MatTek)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7i011\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"37hds\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"e256a\",\"text\":\"Nikon CSU-W1 spinning disk confocal microscope with Andor DU-888 EMCCD camera\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9u0m\",\"text\":\"Rapp programmable illumination system\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"83ltd\",\"text\":\"60× oil objective (PlanApo λ, NA 1.40)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bf7pp\",\"text\":\"Temperature and CO₂ controller (37°C, 5% CO₂)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Culture synuclein triple-knockout hippocampal neurons on MatTek glass-bottom dishes.",
+    "At DIV7, transduce neurons with lentivirus encoding human α-synuclein-GFP (α-syn-GFP).",
+    "Maintain the neurons for 14–18 days after transduction.",
+    "Replace culture medium with Tyrode’s buffer with D-AP5 (2-amino-5-phosphonopentanoic acid) and CNQX before imaging.",
+    "Place the dish on the microscope stage and maintain 37°C with 5% CO₂ throughout imaging. Wait for 5-10 minutes until the temperature stabilizes to avoid focal drift during image acquisition.",
+    "Identify α-syn-GFP–positive synaptic boutons using the spinning disk confocal microscope.",
+    "Select a single-pixel ROI within a synaptic bouton for bleaching.",
+    "Photobleach the ROI using a 405 nm laser at 30 mW for 50 ms (no repeat). Immediately begin acquiring fluorescence recovery using 488 nm excitation (5% laser power, 200 ms exposure with an EM gain of 200) for 100 frames (no interval) over 20 seconds using the Andor DU-888 EMCCD camera and Rapp illumination system.",
+    "Using Fiji (NIH), select the bleached synaptic bouton as an ROI and measure the 488 nm fluorescence intensity using the Time Series Analyzer V3 plugin.",
+    "Normalize intensity values as follows: Pre-bleach fluorescence = 100%, Post-bleach fluorescence = 0% Generate fluorescence recovery curves and fit the first 10 s of data with a one-phase exponential model in GraphPad Prism to calculate the recovery time constant (τ). Determine the extent of fluorescence recovery at 20 s after photobleaching to quantify the recovery rate.",
+    "Calibration using a calibration solution (0.01 mg/ml fluorescein for photobleaching calibration). This step is crucial for obtaining consistent results. Ensure you use the same type of glass-bottom dish that will be used for the actual experiment. Optimize the laser focus to ensure a sharp photobleaching spot, thereby avoiding unintended bleaching of adjacent synaptic boutons."
+  ],
+  "authors": [
+    "Akio Mori",
+    "Robert Edwards"
+  ],
+  "creator": "Akio Mori",
+  "published_on": 1767997344,
+  "created_on": 1763613779,
+  "keywords": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": 24779,
+  "title": "96-well Plate Growth Curve Setup",
+  "uri": "96-well-plate-growth-curve-setup-4fjgtkn",
+  "doi": "dx.doi.org/10.17504/protocols.io.4fjgtkn",
+  "description": "{\"blocks\":[{\"key\":\"cm990\",\"text\":\"Generally, growth assays for filamentous fungi have been performed on solid media, either as dilution series or spot tests. However, the solid media environment does not accurately mimic the environment encountered during infection (ie the mammalian lung). Previously, we have developed a methodology to perform liquid growth assays in time for A. fumigatus and other filamentous fungi including analysis via mathematical modelling.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":345,\"length\":13}],\"entityRanges\":[],\"data\":{}},{\"key\":\"72toe\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5m2dd\",\"text\":\"This protocol is designed for Aspergillus species (and other filamentous fungi) to generate growth curves in liquid media in a 96-well plate. This can be done in high-throughput to generate 96 growth curves per run.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":30,\"length\":12}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"ao8kd\",\"text\":\"Spores need to be handled within a Class II cabinet. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Harvest and dilute spores in PBS+0.01% Tween to 4*10 5 spores/mL.",
+    "Aliquot 5 uL of this spore stock per well of a CytoOne 96-well plate (Starlab) non-coated, this will be overlayed with 195 uL of liquid media to a total volume of 200 uL. This equals to 2000 spores (absolute) per well. 1000 spores or 500 spores are possible to use, but result in more variance within replicates.",
+    "In the Manchester Fungal Infection Group we either use a Powerwave X-2 with KC software or a BioTek platereader. Set this up to run for 48:00:00 at 37 °C to measure OD 600 every 10 minutes. Take a blank reading before running the plate and preheat the machine. Run your experiment. This will result in a &#34;growth curve&#34;. Extract or manipulate the data to look like attached (txt file format).",
+    "Fill the space between the wells with either media or H 2 O. This will avoid an &#34;edge effect&#34;, where the wells around the edge of the plate show increased growth compared to other wells.",
+    "Cover the 96 well plate with a breathable cover to allow gas exchange.",
+    "See our next protocol for analysis."
+  ],
+  "authors": [
+    "Norman Van Rhijn",
+    "Panagiotis Papastamoulis",
+    "Takanori Furukawa",
+    "Magnus Rattray",
+    "Elaine Bignell",
+    "Mike Bromley"
+  ],
+  "creator": "Norman Van Rhijn",
+  "published_on": 1566313358,
+  "created_on": 1561028556,
+  "keywords": []
+}

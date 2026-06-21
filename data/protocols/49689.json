@@ -1,0 +1,37 @@
+{
+  "id": 49689,
+  "title": "Dynamic Glucose-Stimulated Insulin Secretion using Biorep Perifusion Machine (ver peri4.2) - Human or Mouse Islets",
+  "uri": "dynamic-glucose-stimulated-insulin-secretion-using-burznv76",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4kdqzvo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"choh0\",\"text\":\"General protocol for Dynamic Glucose-Stimulated Insulin Secretion using Biorep Perifusion Machine - Human or Mouse Islets.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"5koil\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"46kp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"ahub0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"ufrd\",\"text\":\"Penicillin-Streptomycin- Gibco 15140122\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5knvq\",\"text\":\"RPMI 1640- Gibco 11875\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"avbb\",\"text\":\"DMEM- Gibco 11885\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4n2t\",\"text\":\"FBS (Canadian origin)- Gibco 12483-020\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2kcc3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"561pv\",\"text\":\"Sodium Chloride- Fisher Scientific BP358-212\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"kpm4\",\"text\":\"Potassium Chloride- Sigma Aldrich P9541\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"djhgv\",\"text\":\"Calcium Chloride- Sigma Aldrich C4901\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"caad3\",\"text\":\"Magnesium Chloride Hexahydrate- EMD millipore MX0045\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e193j\",\"text\":\"HEPES- Fisher BP310-500\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"82g5f\",\"text\":\"Sodium bicarbonate- Sigma Aldrich S5761\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6nmtc\",\"text\":\"Bovine serum albumin- Sigma Aldrich A7906\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"k2ur\",\"text\":\"D Glucose- Sigma Aldrich G8270\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c7lt9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5ejh2\",\"text\":\"Biorep perifusion machine (ver peri4.2)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6lk9s\",\"text\":\"Deep well 96 well plates Fisher 12-565-606 or Greiner Bio-One  780280FD \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6to15\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c0vhm\",\"text\":\"Alpco stellux human Insulin ELISA: 80-INSHU-CH10\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1lp0p\",\"text\":\"Alpco stellux Rodent Insulin ELISA: 80-INSMR-CH01                \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b355g\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6rrdb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "For human islets: Pick human islets of similar size and shape into Human Islet Culture Media until as close as possible to 100% purity. Human Islet Culture Media A B 1 500mL DMEM (5mM glucose) Gibco 11885 2 50 mL FBS Canadian Origin Gibco 12483-020 3 5 mL Penicillin- Streptomycin Gibco 15140-122",
+    "For mouse islets : Isolate mouse islets as described in Mouse Islet Isolation protocol. Pick the isolated mouse islets into Mouse Islet Culture Media (&gt;90% islet purity). Mouse Islet Culture Media %s %s",
+    "For human and mouse islets: Culture islets, up to 250 islets in 2 mL of media, in a 35mm non-treated culture dish, overnight in incubator at 37°C, 5% CO2.",
+    "Acid Ethanol for islet content collection %s %s",
+    "KRBH solution to be made fresh on day of perifusion: A B C 1 mM Final per 100mL total volume 2 NaCl 115 5.75 mL (2M stock) 3 KCl 5 500 µL (1M stock) 4 CaCl2 2.5 250 µL (1M stock) 5 MgCl2 1 100 µL (1M stock) 6 HEPES 10 1 mL (1M stock) 7 NaHCO3 24 0.2g 8 BSA 0.1% w/v 0.1g Mix chemicals listed in the above table in milliQ water (approximately 80 mL ). Warm KRBH solution to 37 °C (approximately 30min to1 hour). Once solution is warm, pH to 7.4 with NaOH and bring volume to 100 mL . KRBH should be kept at 37 °C for the duration of the experiment.",
+    "Add glucose and/or additional compounds as required.",
+    "Set up the chambers and perifusion machine according to Biorep instructions.",
+    "Set the protocol with glucose and experimental conditions (high KCl, inhibitors etc) and frequency of collection as needed using a flow rate of 100 μL/min for all steps. Set step 1 of the perifusion protocol to total 30 min. The number of replicates will vary based on number of lanes and plate orientation. This is a pre-incubation step that should fill one 96 well plate. The perfusate from this step will be discarded.",
+    "Prime the perifusion machine.",
+    "Load islets into each chamber. The number of islets will vary by experiment and sensitivity of ELISA.",
+    "Run a 30 min pre-incubation as previously set (step 1 of perifusion machine protocol) and discard the perfusate.",
+    "Continue to run the perifusion protocol, collecting samples into a clean deep well plate(s).",
+    "Upon completion of perifusion protocol, seal the place deep well plates at store at -20 °C until ELISA .",
+    "To collect insulin content, run the chambers dry, so islets are on the filter paper but no liquid remains. Place the filter paper with islets into a 1.5 mL tube with 500 μL of acid ethanol. Store at -20 °C until ELISA",
+    "Samples are assayed for Insulin using Alpco Stellux human or mouse insulin ELISA. Vortex insulin content samples and dilute 1:400 prior to assay."
+  ],
+  "authors": [
+    "Aliya F Spigelman",
+    "Jocelyn E Manning Fox",
+    "Patrick E Macdonald"
+  ],
+  "creator": "Aliya F Spigelman",
+  "published_on": 1685513008,
+  "created_on": 1620227192,
+  "keywords": []
+}

@@ -1,0 +1,42 @@
+{
+  "id": 70154,
+  "title": "fastANI analysis protocol",
+  "uri": "fastani-analysis-protocol-cgritv4e",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"9t6q7\",\"text\":\"this is the protocol to conduct ani analysis between groups of genomes using fastANI and produce the heatmap figure in R using the pheatmap package\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "mkdir analysis query_genomes reference_genomes Create directories mkdir analysis query_genomes, reference_genomes create dirs for each of analysis, query genomes and reference genomes",
+    "move to query dir move to query genomes dir cd query_genomes change dir to query_genomes",
+    "For this there there needs to be two files, one listing query genomes and one listing reference genomes, each with a single filename per line. Suggested names for these files = query_list.txt, reference_list.txt",
+    "Copy query_list.txt cp XXXXXXXX/query_list.txt . Copy query_list.txt to query_genomes dir, where XXXXXXXX is location of query_list.txt",
+    "link query genomes to query_genomes dir while read i; do ln -s YYYYYYYY/${i} .;done loop through query_list.txt and link each query genomes to query_genomes dir. YYYYYYYY is the location of the genome fasta files",
+    "Create directory structure and link files",
+    "move to reference dir move to reference genomes dir cd ../reference_genomes change dir to reference_genomes dir",
+    "Copy reference_list.txt cp ZZZZZZZZ/reference_list.txt . Copy reference_list.txt to reference_genomes dir, where ZZZZZZZZ is location of reference_list.txt",
+    "link reference genomes to reference_genomes dir while read i; do ln -s YYYYYYYY/${i} .;done loop through reference_list.txt and link each reference genomes to reference_genomes dir. YYYYYYYY is the location of the genome fasta files",
+    "create reference genome list ls *fasta > ref_list.txt create reference and query genome list files for fastANI input",
+    "check soft links and remove bad links check softlinks and remove any that don't work find . -xtype l | xargs rm check softlinks and remove any that don't work",
+    "check softlinks and remove any that don't work find . -xtype l | xargs rm",
+    "create query genome list ls *fasta > query_list.txt",
+    "move to analysis dir cd ../analysis move to directory to be used for the analysis step",
+    "softlink all necessary files to analysis directory ln -s ../reference_genomes/ref_list.txt .ln -s ../reference_genomes/*fasta .ln -s ../query_genomes/query_list.txt .ln -s ../query_genomes/query_list.txt . softlink all necessary files to the analysis directory to be used in the fastANI analysis",
+    "Perform fastANI analysis fastANI --rl reflist.txt --ql querylist.txt --matrix -o fastANI_out perform the fastANI analysis of the query genomes vs the reference genomes-rl specifies reference list of genomes-ql specifies query genome list-matrix outputs a bottom half triangular matrix of results-o specifies output file prefixthis step can also be submitted to job queue on HPC cluster.",
+    "reformat fastANI output git clone https://github.com/jh288/fastANI_reformatter.git the output of fastANI is not in a suitable format to produce figure but this is addressed with a simple script available from github",
+    "reformat fastANI output for figure prep fastANI_reformater.pl fastANI_out > fastANI_out_reformat.tab reformat fastANI output for use in the R package pheatmap to create the figure",
+    "produce heatmap figure in R",
+    "edit matrix tab file sed 's/.fasta//g' fastANI_out_reformat.tab > fastANI_out_reformat_ed.tabsed -i 's/_/ /g' fastANI_out_reformat_ed.tab remove \".fasta\" and substitute spaces for underscores in taxa names",
+    "produce heatmap in R ##load librarieslibrary(\"pheatmap\")library(\"RColorBrewer\")##load matrix into dataframeb1 r code to produce heatmap of fastANI results."
+  ],
+  "authors": [
+    "james Harrison",
+    "David J Studholme"
+  ],
+  "creator": "james Harrison",
+  "published_on": 1663954167,
+  "created_on": 1663350099,
+  "keywords": []
+}

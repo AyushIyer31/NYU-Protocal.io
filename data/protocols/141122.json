@@ -1,0 +1,40 @@
+{
+  "id": 141122,
+  "title": " On bead digest prior to mass spec",
+  "uri": "on-bead-digest-prior-to-mass-spec-em3abc8if",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvrkdy3lmk/v2",
+  "description": "{\"blocks\":[{\"key\":\"9sb1g\",\"text\":\"This protocol was generated from an internal electronic lab notebook and contains experiment specific notes, for example, sample-specific volumes and incubation times. Due to the automatic generation process it might also contain errors and should be interpreted cautiously. An updated protocols will still be uploaded.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"1bpnc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"bf9i\",\"text\":\"This protocol was generated from an internal electronic lab notebook and contains experiment specific notes, for example, sample-specific volumes and incubation times. Due to the automatic generation process it might also contain errors and should be interpreted cautiously. An updated protocols will still be uploaded.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"956a5\",\"text\":\"urea\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9p42c\",\"text\":\"ammonium bicarbonate\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4m0n6\",\"text\":\"LysC (mass spectrometry grade, FUJIFILM Wako chemicals) \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cmh2p\",\"text\":\"trypsin (Trypsin Gold, Promega) \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4oqva\",\"text\":\"dithiothreitol\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"egvhb\",\"text\":\"iodoacetamide \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ig4s\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Add 50 µL of ABC and transfer beads to new 0.2 mL PCR tube and remove buffer Axygen.",
+    "Add appropriate volume of 2 Molarity (M) urea 50 millimolar (mM) ABC. Here we added 30 µL .",
+    "Add 150 ng LysC/Trypsin (1:1 Mix) and incubate 01:30:00 at Room temperature . Here we added 1.5 µL .",
+    "Transfer supernatant to new 0.2 µL PCR tube. Here, the total volume becomes: 31.5 µL .",
+    "Rinse beads with 30 µL 1 Molarity (M) urea 50 millimolar (mM) ABC, combine* 30 µL , sum: 61.5 µL . Optional: 2nd transfer to get rid of all beads.",
+    "Reduction: 10 millimolar (mM) DTT (aliquot 0.25 Molarity (M) ) 00:30:00 Room temperature . Here we added 2.4 µL .",
+    "Alkylation: 20 Molarity (M) IAA (500mM stock = 0.092 g/mL ) 00:30:00 Room temperature in the dark. Here, we added 2.4 µL .",
+    "Quench IAA with half amount of DTT used in step 3 and incubate for 00:10:00 at Room temperature . We added 1.2 µL .",
+    "Dilute to 1 Molarity (M) urea with 50 millimolar (mM) ABC. We added 30 µL , which gave rise to a total sum of: 97.5 µL .",
+    "Add 150 ng LysC/Trypsin (1:1 Mix) and incubate at 37 °C Overnight . For us here, this meant 1.5 µL .",
+    "Acidify sample to final concentration of 0.5% TFA (from 10%). For us this was 4.5 µL .",
+    "Desalt: Load the peptides on a C18 STAGEtip. 3-5 plugs depending on protein amount, 3 plugs for max. 20µg.",
+    "Equilibrate:",
+    "100 µL 100% MeOH, spin 2000 rpm, °C, 3 minutes .",
+    "Load sample: spin 1700 rpm, °C, .",
+    "Wash: 100 µL 0.1% TFA -&gt; keep flow through (FT) and wash together.",
+    "Elute: 2x 30 µL 60% ACN, 0.1% TFA in PCR tube.",
+    "100 µL 0.1% TFA, spin 2000 rpm, °C, 3 minutes .",
+    "100 µL 80% ACN, 0.1% TFA, spin 2000 rpm, °C, 3 minutes .",
+    "Speedvac to remove ACN and take up sample in 20 µL 0.1% TFA 2% ACN."
+  ],
+  "authors": [
+    "Elias Adriaenssens"
+  ],
+  "creator": "Elias Adriaenssens",
+  "published_on": 1745434696,
+  "created_on": 1745434385,
+  "keywords": []
+}

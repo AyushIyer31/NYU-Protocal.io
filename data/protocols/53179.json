@@ -1,0 +1,40 @@
+{
+  "id": 53179,
+  "title": "Install WSL and VSCode on Windows 10 ",
+  "uri": "install-wsl-and-vscode-on-windows-10-bx63prgn",
+  "doi": "dx.doi.org/10.17504/protocols.io.bx63prgn",
+  "description": "{\"blocks\":[{\"key\":\"3lp75\",\"text\":\"This protocol describes how to install Ubuntu, WSL, and connect to WSL with VS Code on Windows 10. By the end you should have a working version of Ubuntu and WSL. VS Code will be able to work with your Ubuntu installation. You will also have Python3 since Ubuntu comes packaged with it.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"o6q0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dg0fk\",\"text\":\"Most of the information presented here is given in the attached Microsoft Docs link.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4vag3\",\"text\":\"This protocol only pertains to machines running Windows 10. Your results may vary for other Windows operating systems.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"8p7vh\",\"text\":\"To update to WSL 2, you must be running Windows 10.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"79abd\",\"text\":\"For x64 systems: Version 1903 or higher, with Build 18362 or higher.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":17,\"length\":12},{\"style\":\"bold\",\"offset\":46,\"length\":11}],\"entityRanges\":[],\"data\":{}},{\"key\":\"8dd20\",\"text\":\"For ARM64 systems: Version 2004 or higher, with Build 19041 or higher.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":19,\"length\":12},{\"style\":\"bold\",\"offset\":48,\"length\":11}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7cgp\",\"text\":\"Builds lower than 18362 do not support WSL 2. Use the Windows Update Assistant to update your version of Windows.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":54,\"length\":24}],\"data\":{}},{\"key\":\"4pm7i\",\"text\":\"To check your version and build number, select Windows logo key + R, type winver, select OK. Update to the latest Windows version in the Settings menu.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":47,\"length\":20},{\"style\":\"bold\",\"offset\":74,\"length\":6},{\"style\":\"bold\",\"offset\":89,\"length\":2}],\"entityRanges\":[{\"key\":1,\"offset\":93,\"length\":36}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"2596B93C14E811ECAE050A58A9FEAC02\",\"url\":\"https://www.microsoft.com/software-download/windows10\"}},\"1\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"2596B97014E811ECAE050A58A9FEAC02\",\"url\":\"ms-settings:windowsupdate\"}}}}",
+  "warning": "{\"blocks\":[{\"key\":\"69vph\",\"text\":\"Getting WSL and Python running smoothly on windows can be frustrating, take a break before you want to beak something.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"5pk4c\",\"text\":\"Windows 10 machine\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Go to the Microsoft Store and install a version of Ubuntu. Hit Windows key, type &#34;Store&#34;, select Microsoft Store. Search for Ubuntu. Installing a version that ends with LTS means it is Long term stable . I recommend one of those versions.",
+    "Open Windows Powershell as Administrator. To run as Administrator, you can hit the Windows key, search for powershell, and on the right select &#34;Run as Administrator&#34;. This allows you to make changes to your system.",
+    "In Powershell, enter the following command to enable WSL: dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart",
+    "In Powershell, enter the following to enable virtualization: dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart",
+    "Download the Linux kernel update package: https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi Run the package.",
+    "Restart your machine to make the changes take effect.",
+    "Open Powershell as administrator and run: wsl --set-default-version 2",
+    "Open Ubuntu by hitting the Windows key, and type &#34;Ubuntu&#34;, and open it. If an Ubuntu window opens but is quickly closed, continue to the next step. If Ubuntu opens properly, go to step 13 to set up VS Code.",
+    "If WSL has failed to open by briefly flashing and then closing, it means your machine is still blocking virtualization. This must be resolved by entering BIOS. How to do this varies by laptop type. It will generally involve shutting the machine off, powering it on, and while it boots you need to hit a certain key to pause boot up. Search the web for &#34;How to enter BIOS &lt;insert computer name here&gt;&#34; You will not be able to see this protocol in BIOS, so open this page on another device.",
+    "Once in BIOS, use the arrow keys to navigate the menus and search for any settings regarding &#34;virtualization&#34; and enable them. This may be something like &#34;Virtualization Technology&#34;. Refer to the menu at the bottom of the BIOS screen for instructions on how to navigate, change settings, and save changes.",
+    "Save the changes you have made to the BIOS settings and restart.",
+    "Try starting Ubuntu again. If it still gets closed, hit the Windows key, type features, and select &#34;Turn Windows features on or off&#34;. If there is the feature &#34;Windows Hypervisor Platform&#34;, enable that. Also make sure that &#34;Virtual Machine Platform&#34; and &#34;Windows Subsystem for Linux&#34; are enabled.",
+    "Install Visual Studio Code. https://code.visualstudio.com/download Open it once installed.",
+    "Open the Extensions tab by clicking on the icon with 4 squares (3 together, 1 detached). Screen capture of sidebar, with Extensions highlighted",
+    "Search for &#34;Remote - WSL&#34; and install it. You will now have a green square in the bottom left corner of VS Code. This is how you access WSL from VS Code. Displaying no current remote connection",
+    "Click the green square in the bottom left corner. Under the search bar at the top a few options will be displayed. Select &#34;New WSL window&#34; Remote options menu, with first option highlighted to open new WSL window You can then close the old window.",
+    "Now VS Code is accessing your WSL instance. The bottom left corner should now look something like this: Displaying active remote connection to WSL Ubuntu",
+    "From the top menu, select Terminal -&gt; New Terminal",
+    "In the new terminal run the following to update sudo apt-get update",
+    "You should now have a working version of WSL and access to it through VS Code. Some things to keep in mind: You can see if your current VS Code session is running in WSL by looking at the green rectangle at the bottom left corner Since WSL has its own file system, if you plan to interact with GitHub using SSH keys, you will need to generate new ones using the WSL terminal, and add them to your GitHub Whatever repositories you want to run in WSL should be cloned using the WSL terminal WSL can be run without VS Code to have a nice linux terminal"
+  ],
+  "authors": [
+    "Kenneth Schackart"
+  ],
+  "creator": "Kenneth Schackart",
+  "published_on": 1631575755,
+  "created_on": 1631547416,
+  "keywords": []
+}

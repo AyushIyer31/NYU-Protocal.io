@@ -1,0 +1,40 @@
+{
+  "id": 210811,
+  "title": "Sample Collection and Proteomic Analysis of Follicular Fluid",
+  "uri": "sample-collection-and-proteomic-analysis-of-follic-gr43bv8yp",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ldnpoxv5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"c4re5\",\"text\":\"Sample Collection and Proteomic Analysis of Follicular Fluid\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "A total of 20 follicular fluid samples were collected from 10 women (aged 19–32 years) undergoing unilateral ovariectomy for fertility preservation at the Laboratory of Reproductive Biology, University Hospital of Copenhagen. The underlying diagnoses leading to fertility-preserving treatment included breast cancer (n=5), Hodgkin’s lymphoma (n=1), sarcoma (n=3), and molar pregnancy (n=1).",
+    "During preparation of the ovarian tissue, small antral follicles (3–6 mm) that were visible on the ovarian surface were aspirated using a 1 mL syringe fitted with a 26-gauge needle (Becton Dickinson, Brøndby, Denmark). The aspirated follicular fluid was immediately examined under a stereomicroscope to evaluate the presence and condition of the oocyte.",
+    "Based on their morphology—specifically shape, colour, and size—oocytes were classified as either viable or atretic/degenerated (see Supplementary X for criteria). Next, oocytes were carefully collected using a pipette and viable oocytes were in vitro matured. The remaining follicular fluid was centrifuged to separate granulosa cells, and both the fluid and cells were snap-frozen in liquid nitrogen. Importantly, this process was completed within 15 minutes of sample collection to preserve integrity.",
+    "For each ovary, two follicular fluid samples were obtained: one from a follicle containing a viable oocyte and one from a follicle containing a degenerated oocyte. This paired sampling approach enabled direct comparison between follicular environments associated with follicular atresia.",
+    "The study was conducted in accordance with the Declaration of Helsinki and approved by the Institutional Review Board (or Ethics Committee) of Capital Region, Denmark (code H-2-2011-044). Surplus ovarian tissue, including follicle fluids from small antral follicles, was donated for research by patients giving written consent after oral and written information. Informed consent was obtained from all subjects involved in the study.",
+    "Follicular fluid samples containing 50 µg of protein were adjusted to a final volume of 50 µL with a buffer consisting of 5% SDS, 50 mM TEAB, and 25 mM DTT. Samples were incubated at 95 °C for 5 min to achieve disulfide bridge reduction.",
+    "Alkylation was then carried out by adding iodoacetamide (IAA) to a final concentration of 50 mM, followed by incubation in the dark for 20 min at room temperature.",
+    "Proteins were subsequently digested using an S-Trap 96-well plate (PROTIFI, New York, USA) according to the manufacturer&#39;s instructions. Briefly, samples were acidified to a final concentration of 1.2% phosphoric acid, combined with binding buffer (90% methanol, 100 mM TEAB), loaded onto S-Trap columns, and washed four times with binding buffer.",
+    "Digestion was performed overnight at 37 °C using trypsin at an enzyme-to-protein ratio of 1:40 in 50 mM TEAB. Peptides were eluted sequentially using 0.2% formic acid in water followed by 50% acetonitrile in water. Eluted peptides were dried and resuspended in loading buffer (0.1% TFA in 98:2 water:acetonitrile) prior to LC-MS/MS analysis.",
+    "LC-MS/MS analyses were performed on a Dionex Ultimate 3000 RSLCnano UPLC system coupled to a Q-Exactive HF-X mass spectrometer (Thermo Fisher Scientific, Waltham, MA, USA). For each run, 1 µg of peptides was injected and desalted on an Acclaim PepMap100 C18 trap column (3 µm, 100 Å, 75 µm × 2 cm, nanoViper) at 35 °C, then separated on an EASY-spray RSLC C18 analytical column (2 µm, 100 Å, 75 µm × 50 cm) maintained at 60 °C with a flow rate of 300 nL/min.",
+    "A non-linear gradient was applied over 60 min: from 2% to 27% buffer B (80% acetonitrile, 0.1% formic acid) in 55 min, then ramped sequentially from 27% to 35% and 35% to 55% buffer B in 2 min each, followed by an increase to 90% buffer B over 1 min.",
+    "The mass spectrometry method consisted of a full-cycle DIA (Data-Independent Acquisition) method comprising three MS1 scans and 54 variable-width MS2 scans over a mass range of 370–1460 m/z. MS2 window widths were determined empirically from prior DDA experiments, incorporating a 1 Da overlap.",
+    "MS1 acquisition parameters included 120,000 resolution (@200 m/z), AGC target of 3×10^6, and a maximum injection time of 50 ms. MS2 scans were acquired at 30,000 resolution, AGC target of 1×10^6, automatic maximum injection time, and normalized collision energy (NCE) of 28.",
+    "Raw mass spectrometry data were analyzed using DIA-NN 2.0 (Academia version) for protein identification and quantification. A predicted spectral library was generated with DIA-NN using a human proteome database (UniProt, accessed 2025-01-29). Library generation parameters allowed for two missed cleavages, fixed modification of carbamidomethylation on cysteine residues, and variable modifications including oxidation of methionine and protein N-terminal acetylation.",
+    "Protein identifications were filtered to maintain a 1% false discovery rate (FDR), and Match Between Runs (MBR) was enabled. Cross-run global normalization was applied, and computation was optimized for speed and accuracy.",
+    "Differentially abundant proteins between healthy and atretic follicular fluid were determined via paired t-tests, considering paired samples within each patient. Proteins were defined as significantly dysregulated at a p-value threshold of 0.05, with analyses conducted using GraphPad Prism v10.4.2.",
+    "A pre-ranked protein list was generated from the paired t-test results. Proteins were ranked based on –log10 transformed p-values, with positive values for proteins enriched in atretic follicles and negative values for those enriched in healthy follicles.",
+    "GSEA was performed using the Gene Ontology Biological Processes database (2024 release) and the GSEA software v4.3.2. Enrichment maps were visualized and finalized using Cytoscape v3.10.3.",
+    "Mass spectrometry proteomics data are deposited in the ProteomeXchange Consortium via the PRIDE partner repository with dataset identifier PXD063187."
+  ],
+  "authors": [
+    "Jeovanis Gil",
+    "Cistina Subiran Adrados"
+  ],
+  "creator": "Cistina Subiran Adrados",
+  "published_on": 1746224727,
+  "created_on": 1746194234,
+  "keywords": []
+}

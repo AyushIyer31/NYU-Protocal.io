@@ -1,0 +1,34 @@
+{
+  "id": 55755,
+  "title": "Nextera XT protocol for MiSeq HIVPR-RT sequencing",
+  "uri": "nextera-xt-protocol-for-miseq-hivpr-rt-sequencing-b2pjqdkn",
+  "doi": "dx.doi.org/10.17504/protocols.io.b2pjqdkn",
+  "description": "{\"blocks\":[{\"key\":\"1fcqa\",\"text\":\"The protocol allows amplification and NGS sequencing of a PR-RT HIV-1 sequence using tagmentation strategy and Illumina MiSeq equipment, followed by analysis of drug-resistance associated mutations by HyDRA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Prepare the sample in BSL2 laboratory. This protocol can be used to amplify and sequence HIV-1 from plasma or culture supernatants, as well as from cell-associated HIV-1. In the latter, skip the step of reverse transcription and go straight to PCR amplification.",
+    "Perform reverse transcription of HIV-1 and PCR amplification of PR-RT 1168bp fragment using primers and conditions published in Aulicino et al, Antivir Ther 2010;15(4):641-50. PCR amplifications are performed in 25-cycle reactions to avoid introducing artificial mutations. HIV type-1 genotypic resistance profiles in vertically infected patients from Argentina reveal an association between K103N+L100I and L74V mutations.. Antiviral therapy.",
+    "Check second PCR products with agarose gel electrophoresis (1%). A single 1168bp band should be visible.",
+    "Perform purification of the PCR product with magnetic beads (Agencourt AMPure XP kit, Beckman Coulter, USA)",
+    "Perform tagmentation and indexation with Nextera XT DNA Library Preparation Kit (Illumina, San Diego, CA, USA), following manufacturer´s instructions.",
+    "Check electrophoresis tagmentation patterns with QIAxel or another similar equipment. If none is available, a polyacrylamide gel can be used.",
+    "Quantify DNA using the fluorometric Qubit dsDNA high-sensitivity (HS) assay (Qubit 1X dsDNA HS Assay Kit, ThermoFisher Scientific, USA)",
+    "Calculate PCR samples concentration and volume to normalize all samples to 2nM, using PCR water.",
+    "Pool all samples using 5ul of each 2nM dilution of each sample.",
+    "Prepare PhiX at 12.5 pM. Dilute the library to 8 picomolar in HT1 buffer, and add 20% of PhiX. The purpose of PhiX is to add diversity to the samples.",
+    "Run in Illumina MiSeq MiSeq (Sequencer, illumina, SY-410-1003, https://www.illumina.com/systems/sequencing-platforms/miseq/order-miseq.html , https://s3.amazonaws.com/pr-journal/9dd3sqe.jpg )",
+    "pNL4-3 HIV-1 was used as control. Using BWA, align fastq reads belonging to the control sample to the reference pNL4-3 HIV-1 genome (GenBank Accession Number AF324493). Calculate the average number of mismatches/ total bases. Error Rate should not exceed 0,5%.",
+    "HyDRA ( https://hydra.canada.ca/pages/home?lang=en-CA ) is an annotated reference-based bioinformatics pipeline scripted in Perl, which analyses next generation sequencing (NGS) data for genotyping HIV-1 drug resistance (HIVDR) mutations. It utilizes an annotated HXB2 sequence (GenBank Accession number: K03455) for reference mapping by Bowtie2 2 , and stringent data quality assurance and variant calling criteria to identify HIVDR associated mutations based on the Stanford HIV Drug Resistance Database (http://hivdb.stanford.edu/) and 2009 WHO list for Surveillance of Transmitted HIVDR. All HIVDR mutations found in the pol genes; protease (PR), reverse transcriptase (RT), and integrase (IN), are reported according to classifications outlined in the Stanford Surveillance Drug Resistance Mutation list . A MiSeq-HyDRA platform for enhanced HIV drug resistance genotyping and surveillance.. Scientific reports.",
+    "Submit sequences to HyDRA. The following Advanced options for Nextera seqs can be used to inform amino acids in 1% frequency or higher, with a minimum read depth of 1000 x: Consensus percent: 20 Target coverage: -1 Length cutoff: 100 Score cutoff: 2 Error rate: include error rate calculated with the control (e.g. 0.005) Minimum variant quality: 20 Minimum read depth: 1000 Minimum allele count: 7 Minimum amino acid frequency: 0.01"
+  ],
+  "authors": [
+    "Paula Aulicino"
+  ],
+  "creator": "Paula Aulicino",
+  "published_on": 1638882758,
+  "created_on": 1638878672,
+  "keywords": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": 106837,
+  "title": "ImageJ Analyses of Mitochondria (HSP60) in TH+ cells",
+  "uri": "imagej-analyses-of-mitochondria-hsp60-in-th-cells-dkjv4un6",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvr8y83lmk/v2",
+  "description": "{\"blocks\":[{\"key\":\"5r7ol\",\"text\":\"This protocol explains how to use Fiji to analyse mitochondria in iPSC derived dopaminergic neurons in culture for parameters such as network branching, sphericity and mean total branch length.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"k98n\",\"text\":\"Requirements prior to analysis\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":30}],\"entityRanges\":[],\"data\":{}},{\"key\":\"462pc\",\"text\":\"-  Install Fiji\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2b1gb\",\"text\":\"-  Locate images to analyse (HSP60+TH staining)\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5fvns\",\"text\":\"-  Install Mitochondria Analyzer Plugin (see references)\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Images analysed with this protocol were taken with Leica Stellaris 8 confocal (for mitochondrial morphology and ATG13-HSP60 co-localization, with FLIM 40x/1.30 oil immersion objective, HC PLAPO, CS2, using Leica Power HyD detector S and HyD detector X). All mitochondria morphology images were acquired in 3D by optical sectioning under Lightning ™ mode with a z-stack of 1.73μm and maximum voxel size of 94.7 nm laterally (x, y) and 350 nm axially (z). For each experimental sample 10 cells per sample were analyzed. Note: Deconvolved images were used for the mitochondrial morphology analysis.",
+    "1. Open the image 2. In the TH channel (use the bar under the figure to go to the TH channel, here channel 2), use the Freehand Selection tool to mark the cell of interest If the TH signal is not bright enough, go to Image&gt;Adjust &gt; color balance (only in the TH channel, don’t modify the other channels) 3. Save the region of interest selected by going to Analyze &gt; Tool &gt; ROI manager &gt; Add [t] 4. Duplicate the HSP60 channel by clicking outside the selected ROI, then going to Image &gt; Duplicate; select Channel 1 and tick hyperstack 5. Clear the staining outside the ROI by selecting the ROI (press on the ROI name on the ROImanager panel), then going to Edit &gt;Clear Outside &gt;Yes 6. Convert the image to 8 bit by going to Image&gt;Type&gt;8bit 7. To optimize the Threshold, go to Plugins &gt; Mitochondria Analyzer &gt; 3D Threshold Optimize (for more info, see below) NOTE: This may take some time Looking back at the original picture, you can you this Threshold Optimize Test picture to decide the values of Block Size, and c values that better identify the true signal. 8. Once decided the optimal values, go back to your picture (the one with only HSP60, duplicated, cleared), and apply the chosen parameters by going to Plugins &gt; Mitochondria Analyzer &gt; 3D Threshold and inserting the desired parameters. NOTE: This may take some time"
+  ],
+  "authors": [
+    "Chiara Pavan",
+    "Stefano Frausin",
+    "Wai Kit (Leo) Lam",
+    "Clare Parish"
+  ],
+  "creator": "courtney.wright Wright",
+  "published_on": 1725286721,
+  "created_on": 1725286593,
+  "keywords": []
+}

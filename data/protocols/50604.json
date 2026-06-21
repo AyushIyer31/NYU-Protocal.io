@@ -1,0 +1,31 @@
+{
+  "id": 50604,
+  "title": "Link Github to Puhti",
+  "uri": "link-github-to-puhti-bvnkn5cw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bvnkn5cw",
+  "description": "{\"blocks\":[{\"key\":\"a07o3\",\"text\":\"How to connect your github account to a local machine or an HPC cluster (example at Puhti CSC)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"ai13e\",\"text\":\"You'll need either a local or remote machine where Git is installed (https://git-scm.com/downloads) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":69,\"length\":29}],\"data\":{}},{\"key\":\"9dbri\",\"text\":\"You'll need a github account (https://github.com/)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":30,\"length\":19}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"68CF1C54C8F411EBA7DA0A58A9FEAC02\",\"url\":\"https://git-scm.com/downloads\"}},\"1\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"7927D9EEC8F411EBBA610A58A9FEAC02\",\"url\":\"https://github.com\"}}}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Open a terminal and log onto the remote machine (if applicable). In order to quickly test that Git is installed on the machine type: git --help You should have the git usage printed out!",
+    "To configure the Git account type: git config --global user.name &#34;Your name here&#34; git config --global user.email &#34;your_email@example.com&#34; Replace the above code with your github username and email address.",
+    "Next we&#39;ll set up the SSH keys between Github and the machine. Check if you already have ssh keys on the machine. SSH keys are typically stored in your home directory under a .ssh/ folder in files named id_rsa and id_rsa .pub cd ~/.ssh/ ls Do you see any id_rsa and id_rsa.pub files?",
+    "Then log into your Github account and open your profile settings.",
+    "In settings, navigate to SSH and GPG Keys",
+    "Finally, create a new SSH key, give it a name and paste the content of the id_rsa.pub file. Save the new key.",
+    "Open a new terminal window and connect to the remote machine (if applicable). Check that everything was set up properly by typing: ssh -T git@github.com You should get the following message:",
+    "Next, connect to your Github account and go to your profile&#39;s settings",
+    "In Settings, navigate to SSH and GPG Keys section",
+    "Finally create a new SSH key, give it an appropriate name and paste the content of the id_rsa.pub file. Save the key and close Github!",
+    "Finally we can check if everything went well! Open a new terminal window and connect to the remote machine (if applicable). Test the configuration by typing: ssh -T git@github.com you should see the following message:"
+  ],
+  "authors": [
+    "Alise J Ponsero"
+  ],
+  "creator": "Alise J Ponsero",
+  "published_on": 1623228148,
+  "created_on": 1623223137,
+  "keywords": []
+}

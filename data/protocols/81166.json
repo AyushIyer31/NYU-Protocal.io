@@ -1,0 +1,27 @@
+{
+  "id": 81166,
+  "title": "Purification of influenza A virus RNA from cell supernatant to check sequences",
+  "uri": "purification-of-influenza-a-virus-rna-from-cell-su-cthnwj5e",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgqj8wxvk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"d4lmk\",\"text\":\"We use this protocol to isolate RNA from influenza A virus-containing cell supernatant and monitor maintenance of sequence insertions or mutations\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"5qt5c\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fi91h\",\"text\":\"Ultrapure DNase/RNase free dH2O (Thermofisher – Cat# 10-977-015)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":29,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1esii\",\"text\":\"RNA cleanup and concentrator (Zymo Research – Cat# R1015) or RNeasy MinElute Cleanup Kit (Qiagen – Cat# 74204)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9jqj4\",\"text\":\"QIAamp Viral RNA Mini Kit (Qiagen– Cat# 52904)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9ug69\",\"text\":\"RNase-Free DNase Set (Qiagen– Cat# 79254)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9v5el\",\"text\":\"100% Ethanol (we use VWR Cat#89125-170, but others will work)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"80db0\",\"text\":\"iScript Reverse Transcription Supermix (BioRad - Cat #1708841)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6rq7b\",\"text\":\"dNTPs (we use Thermofisher – Cat#FERR0181, but others should work) – make a working stock of 25 mM\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eoak5\",\"text\":\"Taq DNA polymerase with standard Taq buffer (New England Biolabs – Cat#M0273)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e6l3s\",\"text\":\"Primers that bind on either side of the insertion/deletion/mutation\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4igef\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3ui2m\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"chd76\",\"text\":\"Microcentrifuge\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Influenza A virus extraction from cell supernatant using QIAamp Viral RNA Mini Kit Follow the manufacturer&#39;s protocol using a starting cell supernatant volume of 140 µl. Elute in 60 µl buffer AVE.",
+    "DNase treatment using Qiagen RNase-free DNase set: Make mastermix of DNase and buffer. For each sample: 10 µl buffer RDD 2.5 µl DNase I Add to each RNA tube, 27.5 µl H 2 O , and 12.5 µl DNase master mix. Incubate at RT for 10min.",
+    "Purification of RNA using Zymo RNA clean up and concentrator kit: Follow the manufacturer&#39;s protocol, adding 100 µl RNA binding buffer and 300 µl ethanol as the initial step before transferring to column Elute in 15 µl water. Note: Can also use RNeasy MinElute kit, using manufacturer&#39;s protocol",
+    "Reverse transcription with iScript. For each sample, mix: 1 µl purified RNA 3 µl 5x iScript reagent 11 µl H 2 O (total volume = 15 µl) Also set up one no-RT reaction, same as above but using the iScript no-RT control reagent instead. Run RT reaction as per manufacturer&#39;s protocol: 25°C 5 min 46°C 20 min 95°C 1 min Before proceeding to PCR, add 35 µl H 2 O to each reaction.",
+    "PCR with Taq polymerase and primers flanking the insertion/deletion/mutation Mix 4 µl virus cDNA with 46 µl of PCR mix containing : 0.4 µl dNTP (25 mM) 5 µl 10x Standard Taq buffer 0.25 µl Taq (5 U/ µl) 2 µl Forward primer (10 µM) 2 µl Reverse primer (10 µM) 36.35 µl dH2O Note: other RT and polymerase reagents should work just as well. A proofreading polymerase may be preferable if checking for point mutations",
+    "Analysis of fragments Run fragments on agarose gel to check that you have obtained the expected sizes. If appropriate, gel purify the product and send for Sanger sequencing."
+  ],
+  "authors": [
+    "Marta Gaglia",
+    "lea.gaucherand"
+  ],
+  "creator": "Marta Gaglia",
+  "published_on": 1682964812,
+  "created_on": 1682706274,
+  "keywords": []
+}

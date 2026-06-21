@@ -1,0 +1,39 @@
+{
+  "id": 11879,
+  "title": "Preparation of the sgRNA-Barcode Amplicon Library",
+  "uri": "preparation-of-the-sgrna-barcode-amplicon-library-pufdntn",
+  "doi": "dx.doi.org/10.17504/protocols.io.pufdntn",
+  "description": "{\"blocks\":[{\"key\":\"3301p\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"7anu5\",\"text\":\"This protocol is used to assess the sgRNA-to-barcode linkage in Mosaic-seq. The 3kb fragment can be amplified from either plasmids or genomic DNA extract from cells after lentivirual infection. The fragments are then circularized and used to amplify a smaller amplicon (about 270bp) which is compatible with Illumina sequencing.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"dskco\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"dee1e\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Prepare the following mixture: %s %s Use 1000ng genomic DNA or 100ng plasmid DNA for the PCR",
+    "PCR cycles 98°C 30sec 98°C 10sec | 53°C 30sec | 22 or 12 cycles 72°C 3min | 72°C 5min 22 cycles for gDNA, 12 cycles for plasmids",
+    "Gel extract the PCR product: Run the PCR products on 1% agarose gel. Include vector control in another lane. Excise 3kb fragment and perform MinElute PCR cleanup. Elute in 2 x 10 µL of EB.",
+    "Set up the following reaction: %s %s",
+    "Incubate at 37˚C for 30 min. Undetermined, 30 min",
+    "Perform MinElute PCR cleanup. Elute in 2x10ul. Spec the DNA concentration by Qubit.",
+    "Setup the following reaction: %s %s",
+    "Incubate at 25°C for 2 hours. Undetermined, 2 hours",
+    "Perform MinElute PCR cleanup. Elute in 2x10 µl EB.",
+    "Setup the following reaction: %s %s",
+    "Incubate at 37C for 30 min. Undetermined, 30 min",
+    "Perform MinElute PCR cleanup. Elute in 2x10ul. Spec the DNA concentration by using Qubit.",
+    "Setup the following reaction: %s %s",
+    "Perform PCR by using the following program: 95°C 3min 98°C 20sec | 60°C 15sec | 16 cycles 72°C 1min | 72°C 3min",
+    "Run samples on 1% agarose gel. Excise band at 400bp",
+    "Spec DNA concentration by Qubit.",
+    "Run the samples on Tapestation (D1000 tape) to check the final size of the library."
+  ],
+  "authors": [
+    "Shiqi Xie",
+    "Anne Cooley",
+    "Gary Hon"
+  ],
+  "creator": "Shiqi Xie",
+  "published_on": 1525704367,
+  "created_on": 1524984128,
+  "keywords": []
+}

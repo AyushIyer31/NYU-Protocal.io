@@ -1,0 +1,27 @@
+{
+  "id": 48414,
+  "title": "My test protocol",
+  "uri": "my-test-protocol-bth6nj9e",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"5fbf7\",\"text\":\"This is an illegitimate protocol used for testing purposes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "These are my instructions on how to combine substances to make media. Here, I made a tag for NGMA Nematode growth media agarose Contributed by users Catalog #substance_media_ngma . I can specify this cat no because it will always be the same. I can also include a field to fill out the substance type, but I would prefer to set a default value for this key instead of having to fill it out via a protocol run. substance_type Here, I don&#39;t specify the cat no for TB and glycerol because it might change. Also, I don&#39;t create a custom key-value set for each component to capture info like mfg, cat no, lot etc. because I don&#39;t know how many different cat no and lots I&#39;ll have. 50 mL, Terrific broth 50 mL, Glycerol",
+    "These are my instructions on how to autoclave the media from step 1. I can specify a value for duration, but I can&#39;t set default values for cycle type and cycle number. I&#39;ll have to specify them during the run. 00:45:00 cycle_type cycle_number Look, protocols.io lets me select an autoclave. 8-Liter Autoclave (Portable Stainless Steel Pressure Steam Sterilizer, China, XFS-D-8L, Voltage: 220 V (AC)Power: 1.2 kWWorking Medium: SteamDesign Pressure: 0.17 MPaWorking Temperature: 129 °CFrequency: 50 HzUseful Life: 5 YearsDelivery Date: 3. Oct, 2019, https://www.dentalplaza.co.uk/Dentist-8L-Portable-Steam-Autoclave-Sterilizer-168696-dental.html , https://protocols-files.s3.amazonaws.com/private/2adc685aba2669f84eefd3e3bf54fe2597586d9c2ca8f5ecb2b8de1c2076d7d7/b2422kzw.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWFTFYUBUZ2U2JGOS%2F20260621%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260621T104746Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=f2e4230b395b9965c190ac0ac1cac12a465839e516946c34b73c596c34918c08 , https://protocols-files.s3.amazonaws.com/private/2adc685aba2669f84eefd3e3bf54fe2597586d9c2ca8f5ecb2b8de1c2076d7d7/b2432kzw.jpg?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWFTFYUBUZ2U2JGOS%2F20260621%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260621T104746Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=11d741c4b3685d0834cdd3bf5b7217a20363d20d6e43fe72e7c2bbc3a4d74e35 )",
+    "Here, I&#39;ll centrifuge my media. I can specify all my default values with the default centrifugation component in protocols.io. 1800 rpm, 20 °C, 3 minutes",
+    "Here, I&#39;m going to make bleaching solution for C. elegans Contributed by users . That tag already existed in protocols.io. I don&#39;t know ahead of time the cat no of the bleach I&#39;ll use, so I can&#39;t specify that with a tag. Here, I&#39;ll specify the % v of each component. 10 % volume, bleach 90 % volume, H2O I can&#39;t create a default value for total volume, so I&#39;ll include a field here to fill out during my protocol run. total_volume",
+    "Now I&#39;m going to use Nematode growth media agarose Contributed by users Catalog #substance_media_ngma from steps 1-3 to pour into PYREX&trade; Reusable Petri Dishes: Complete, Complete; Dia. x H: 100 x 15mm Thermo Fisher Catalog #08747C . I can&#39;t specify a default value for the total volume of media poured in the container, but I can create a custom key-value pair. Because I have two different materials listed here, I need to specify what material the total volume applies to. total_volume substance_type",
+    "Finally, I&#39;ll make a solvent. I know ahead of time what the mfg and cat no will be for my components. Methanol Optima™ LC/MS Grade Fisher Chemical Fisher Scientific Catalog #A456-4 Water Optima™ LC/MS Grade Fisher Scientific Contributed by users Catalog #10728098 (CAS: 7732-18-5) 1 % volume, Methanol 90 % volume, H2O total_volume",
+    "Let&#39;s seed the growth environment made in step 5 using the bleaching solution for C. elegans Contributed by users made in step 6. There&#39;s no default component for me to specify the number of organisms to seed, so I&#39;ll create a custom field to specify that during the run. number_organism"
+  ],
+  "authors": [
+    "Abigail Elizabeth"
+  ],
+  "creator": "Abigail Elizabeth",
+  "published_on": 1618323000,
+  "created_on": 1616358505,
+  "keywords": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": 55026,
+  "title": "NAN KB Demo: Data download",
+  "uri": "nan-kb-demo-data-download-bzysp7we",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"7ukeb\",\"text\":\"The purpose of this protocol is to describe how data may be downloaded from \\\"our project.\\\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c2grh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"945iu\",\"text\":\"The scope of this protocol extends to any instance where a user must download data from a spectrometer that is a part of \\\"our project.\\\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"ceat8\",\"text\":\"This protocol may be performed by \\\"our project\\\" staff, trained users, and non-trained collaborators who wish to download their data.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"67ful\",\"text\":\"For trained users, this protocol requires an NMRBox account as well as a virtual machine program.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"18cre\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bud8t\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"alabp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"software\",\"mutability\":\"\",\"data\":{\"id\":1335,\"guid\":\"49F8E7D8341F11EE9D4302C0B41BC903\",\"name\":\"NMRBox\",\"version\":\"\",\"os_name\":\"\",\"os_version\":\"\",\"developer\":\"\",\"repository\":\"https://github.com/NMRbox\",\"link\":\"https://nmrbox.org/\",\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Select the appropriate case below to proceed.",
+    "Open a terminal in NMRBox https://github.com/NMRbox",
+    "Copy your data from the spectrometer using the following command: Copy spec data scp -rp username@login.projectName.uniName.edu:/spectrometername/username/directorypath/filename Code to copy data from a spectrometer.",
+    "You will be asked for your account password - type this in and hit enter, your download should commence immediately. If the download does not start, or the terminal says that the data cannot be found, check your directory path in the above command.",
+    "An NMR staff member who ran your experiments can send you the data from the spectrometer for processing – please reach out to the appropriate parties."
+  ],
+  "authors": [
+    "Abigail Elizabeth"
+  ],
+  "creator": "Abigail Elizabeth",
+  "published_on": 1636571247,
+  "created_on": 1636570468,
+  "keywords": []
+}

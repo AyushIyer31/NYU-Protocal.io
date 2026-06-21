@@ -1,0 +1,26 @@
+{
+  "id": 108117,
+  "title": "DeepSlice Automated Alignment",
+  "uri": "deepslice-automated-alignment-dmtv46n6",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4946ogo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"4v6ii\",\"text\":\"This protocol explains how to use DeepSlice in the Quint Workflow\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"5d5ep\",\"text\":\"DeepSlice is a deep neural network that automatically aligns mouse histology images through the Allen Brain Atlas coordinate framework. Alignments are viewable and refinable in QuickNII and set up sections to give a good starting point near and around each section’s correct plane. DeepSlice’s alignment is not completely accurate and further fine tuning in QuickNII is necessary. This is a newly developed tool and not imperative for the workflow but helps speed the process of registration and substitutes the FileBuilder step.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":529}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Open DeepSlice in your web browser.",
+    "Select Choose Files. a. Upload all images for registration from the QVN folder",
+    "Ensure Mouse is selected for species, and Model Ensemble is checked (uses two DeepSlice versions to optimize alignment ). a. Avoid checking Angle Integration (this aligns all your brain sections to the same angle, which is inaccurate when blocks have different cutting angles) b. Avoid checking Using Cutting Index (this suggests your sections numbers (_s###) correspond to serial section numbers spaced equally apart) c. Optional to allow DeepSlice to use your data to improve the neural network and its predictive accuracy.",
+    "Select Submit.",
+    "After all sections/slices are processed, press Download XML.",
+    "Insert the downloaded XML (titled by default ‘results.XML’) into your QVN folder with all your images for registration."
+  ],
+  "authors": [
+    "Michael Henderson"
+  ],
+  "creator": "Michael Henderson",
+  "published_on": 1726872545,
+  "created_on": 1726857192,
+  "keywords": []
+}

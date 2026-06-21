@@ -1,0 +1,28 @@
+{
+  "id": 229089,
+  "title": "DNA Gel Extraction",
+  "uri": "dna-gel-extraction-hbx9b2pr7",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl46r8zgo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"3e7sa\",\"text\":\"The purpose of DNA gel extraction is to recover DNA fragments of a specific size from agarose gels and remove primers, enzymes, salts, and gel-derived impurities, thereby providing purified DNA for downstream molecular applications such as cloning, ligation, transformation, sequencing, and in vitro assays.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9j0a2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mptk\",\"text\":\"• Heat block or water bath that can heat up to 55 °C \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b3n7g\",\"text\":\"• Ethanol (≥ 95%) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"drbd3\",\"text\":\"• 1.5 ml or 2 ml microfuge tubes \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fnhbg\",\"text\":\"• Optional: Nuclease-free water for elution; if provided elution buffer will not be used. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"erm14\",\"text\":\"• Benchtop microcentrifuge \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"75j4h\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cn968\",\"text\":\"Add ethanol to the Monarch DNA Buffer WZ before use (4 volumes of ≥ 95% ethanol per volume of Monarch Buffer WZ). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8oh4s\",\"text\":\"• For T1120S (50-prep) kit, add 20 ml of ethanol to Monarch Buffer WZ. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6j7ce\",\"text\":\"• For T1120L (250-prep) kit, add 104 ml of ethanol to Monarch Buffer WZ. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fr8gg\",\"text\":\"Always keep all buffer bottles tightly closed when not actively in use. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9k84f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9u3oa\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c5un6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"331qo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Excise the DNA fragment from the agarose gel, taking care to trim excess agarose. Transfer to a 1.5 ml microfuge tube and weigh the gel slice. Minimize exposure to UV light to avoid damage to the DNA. Trimming excess agarose from the perimeter of the band reduces the required amount of gel-dissolving buffer and dissolving time to extract the DNA.",
+    "Add 4 volumes of Monarch Buffer BY to 1 volume of gel slice (e.g., 400 μl buffer per 100 μl (≅100 mg agarose). If the DNA is &gt; 10 kb add 3 volumes of Monarch Buffer BY instead of 4 volumes.",
+    "Incubate the sample between 37-55°C (typically 50°C), vortexing periodically until the gel slice is completely dissolved (generally 5-10 minutes). If using &gt; 2% agarose concentration and/or lower gel dissolving temperature (37-45°C), the dissolving time may increase by 2-5 minutes. For DNA fragments &gt; 10 kb, an additional 1.5 volume of water should be added after the slice is fully dissolved to mitigate the tighter binding of larger pieces of DNA to the silica matrix (e.g., 100 mg gel slice: 300 μl Gel Dissolving Buffer: 150 μl water).",
+    "Insert the Monarch Spin Column S1A into the Monarch Spin Collection Tube and load the sample onto the column. Spin for 1 minute, then discard the flow-through. If the total volume is &gt; 800 μl, load 800 μl first and spin. Reload the rest of the sample and spin. Repeat as needed.",
+    "Re-insert the column into the collection tube. Wash by adding 200 μl of Monarch Buffer WZ and spin for 1 minute. Discarding flow-through is optional.",
+    "Repeat wash (step 5).",
+    "Transfer the column to a clean 1.5 ml microfuge tube. Use care to ensure that the tip of the column does not touch the flowthrough. If in doubt, re-spin for 1 minute.",
+    "Add 5-20 μl of Monarch Buffer EY to the center of the matrix to elute DNA. Wait for 1 minute, and spin for 1 minute. Typical elution volumes are 5-20 μl. Nuclease-free water can also be used to elute the DNA. Yield may slightly increase if a larger volume of Monarch Buffer EY is used, but the DNA will be less concentrated. For larger size DNA (≥ 10 kb), incubate the column with elution buffer at room temperature for 5 minutes to maximize the yield. Alternatively, heating the elution buffer to 50°C prior to use can be used."
+  ],
+  "authors": [
+    "igemnthuth"
+  ],
+  "creator": "igemnthuth",
+  "published_on": 1759735308,
+  "created_on": 1759735005,
+  "keywords": []
+}

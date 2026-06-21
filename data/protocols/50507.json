@@ -1,0 +1,26 @@
+{
+  "id": 50507,
+  "title": "Expression and purification protocol of FIP200 full length or FIP200∆641–779",
+  "uri": "expression-and-purification-protocol-of-fip200-ful-bvjjn4kn",
+  "doi": "dx.doi.org/10.17504/protocols.io.bvjjn4kn",
+  "description": "{\"blocks\":[{\"key\":\"9i0lf\",\"text\":\"This protocol describes the expression and purification of FIP200 full length or FIP200∆641–779.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":87,\"length\":8}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"efkf5\",\"text\":\"General information: expression system: human embryonic kidney (HEK) 293 GnTI suspension cells, medium: freestyle media + Anti-Anti; plasmid origin: Addgene 171410 or 17141; backbone: pCAG; resistance: Amp; insert: Homo sapiens FIP200 (synthetic gene); tags \\u0026 cleavage sites: GST-TEVcs-FIP200-MBP, Ext coeff: 183470 M-1cm-1, MW 252 kDa\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":21},{\"style\":\"italic\",\"offset\":215,\"length\":13},{\"style\":\"sup\",\"offset\":317,\"length\":2},{\"style\":\"sup\",\"offset\":321,\"length\":2}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"fu4nl\",\"text\":\"For hazard information and safety warnings, please refer to the SDS (Safety Data Sheet).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"fngq2\",\"text\":\"Lysis Buffer: 50 mM Hepes pH=7.4; 1% Triton X-100, 200 mM NaCl, 1 mM MgCl2, 10% Glycerol, 1 mM TCEP, EDTA-free Protease Inhibitors (Roche).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":14},{\"style\":\"sub\",\"offset\":73,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7e7io\",\"text\":\"Wash Buffer 1: 50 mM Hepes pH=7.4, 500 mM NaCl, 1 mM MgCl2,1 mM TCEP, 1% Triton X-100, 10% Glycerol;\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":15},{\"style\":\"sub\",\"offset\":57,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"9uu5m\",\"text\":\"Wash Buffer 2: 20 mM Hepes pH=8, 200 mM NaCl, 1 mM MgCl2,1 mM TCEP;\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":15},{\"style\":\"sub\",\"offset\":55,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"972mf\",\"text\":\"Elution Buffer 1: 50 mM Hepes pH=7.4, 500 mM NaCl, 1 mM MgCl2, 1 mM TCEP, 1% Triton X-100, 10% Glycerol, 50 mM Glutathione;\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":18},{\"style\":\"sub\",\"offset\":60,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"an6pi\",\"text\":\"Elution Buffer 2: 20 mM Hepes pH=8, 200 mM NaCl, 1 mM MgCl2, 1 mM TCEP, 50 mM Maltose;\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":18},{\"style\":\"sub\",\"offset\":58,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"50fmf\",\"text\":\"Resin: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6sshs\",\"text\":\"Glutathione Sepharose 4B (GE Healthcare)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5mhim\",\"text\":\"Amylose resin (New England Biolabs).\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Transfect DNA in cells at a concentration of 2.5–3×10 6 /mL using polyethylenimine (Polysciences) and harvest after 48:00:00 expression, harvest and lyse cells with lysis buffer.",
+    "Glutathione Sepharose 4B (GE Healthcare) followed by MBP-tag affinity purifications. Incubate supernatant (added 6M NaCl to a final concentration of 0.5 M) with Glutathione Sepharose 4B resin at 4 °C with gentle shaking for 10:00:00 , apply to a gravity flow column, and wash extensively with Wash Buffer 1.",
+    "Pellet the harvested cells at 500 x g, °C, for 00:10:00 at 4 °C , wash with PBS once, and then store at -80 °C .",
+    "Resuspend the cell pellet in Lysis Buffer, gentlely shake at 4 °C for 00:30:00 and clear it at 16.000 rpm, °C, at 4 °C for 00:30:00 .",
+    "Elute protein of interest with Elution Buffer 1 and then further apply onto Amylose resin for a second step of affinity purification. Wash Amylose resin with Wash Buffer 2, and elute Protein of interest with Elution Buffer 2.",
+    "Pool peak fractions containing pure protein, concentrate, snap-freeze in liquid nitrogen and store at -80 °C . Yield: about 0.2 mg per litter culture"
+  ],
+  "authors": [
+    "Xiaoshan Shi"
+  ],
+  "creator": "Xiaoshan Shi",
+  "published_on": 1623930602,
+  "created_on": 1622965137,
+  "keywords": []
+}

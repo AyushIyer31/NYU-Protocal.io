@@ -1,0 +1,42 @@
+{
+  "id": 113414,
+  "title": "SPION-mediated Lysosome Purification – RAW264.7",
+  "uri": "spion-mediated-lysosome-purification-raw264-7-dsze6f3e",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvwbk32vmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"7qnri\",\"text\":\"This protocol details steps taken to isolate lysosomes in RAW 264.7 cells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"pf6i\",\"text\":\"DMEM (Thermo Fisher Scientific, 11965-092)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8kbb\",\"text\":\"FBS (Thermo Fisher Scientific, 16140-071)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3581b\",\"text\":\"Penicillin/Streptomycin (Thermo Fisher Scientific, 15140122)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"84tkf\",\"text\":\"CellStripper (Corning, 356230)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cpnmp\",\"text\":\"PBS [1.1 mM KH2PO4 (J.T. Baker, 3246-01), 155.2 mM NaCl (Sigma-Aldrich, 3624-05), and 3 mM Na2HPO4 (J.T. Baker, 3828-05)]\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7eea2\",\"text\":\"SPION Particles (see https://www.protocols.io/view/synthesis-of-colloidal-dextran-conjugated-superpar-eq2lyn69pvx9/v1)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fk72g\",\"text\":\"5 mM HEPES (pH 7.4, Thermo Fisher Scientific, 15630-080)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3a169\",\"text\":\"HB buffer (5 mM Tris Base (American Bio, AB02000-05000), 250 mM Sucrose (Sigma-Aldrich, S0389), and 1 mM EGTA pH 7.4, Sigma-Aldrich, E4378) supplemented with inhibitors [cOmplete mini EDTA-free protease inhibitor (Roche, 11836170001) and PhosSTOP (Roche, 4906837001)]\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dav6e\",\"text\":\"Dounce Homogenizers (DWK Life Sciences WheatonTM Dounce Tissue grinders, 06-434)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1a640\",\"text\":\"LS columns (Miltenyi Biotec, 130042401)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"214h4\",\"text\":\"QuadroMACS separator (Miltenyi Biotec, 130-091-051)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Split a ~90% confluent 15-cm dish of RAW 264.7 cells into 8 10-cm dishes.",
+    "4 10-cm dishes are sufficient for one condition (for example, WT DMSO treatment).",
+    "Replace the media in each dish with DMEM containing FBS and P/S supplemented with 5 mM HEPES and 5% SPION particles for 01:00:00 .",
+    "Wash each dish 2X with PBS.",
+    "Add fresh media (DMEM containing FBS and P/S) to wash out the SPIONs for 02:00:00 .",
+    "At this point, any drug treatment can be added.",
+    "Wash each dish 2X with cold PBS on ice. Scrape each dish with 1 mL of PBS and combine each condition into a 15-mL Falcon tube.",
+    "For example, all 4 10-cm dishes from WT DMSO condition into 1 Falcon tube.",
+    "Centrifuge 300 rcf, 4 °C, 5 minutes each 15-mL Falcon tube.",
+    "Remove the supernatant and resuspend the pellet in 1 mL ice-cold HB buffer for 00:05:00 on ice.",
+    "HB buffer: 5 mM Tris Base, 250 mM Sucrose, and 1 mM EGTA pH 7.4 supplemented withinhibitors (cOmplete mini EDTA-free protease inhibitor and PhosSTOP).",
+    "Transfer the lysate to a Dounce homogenizer and homogenize 50 times each sample with the tight pestle on ice.",
+    "Centrifuge 800 rcf, 4 °C, 10 minutes the lysate to obtain the cell lysate.",
+    "At this step, a portion of the supernatant cell lysate was kept for the “Cell Lysate”.",
+    "Wash LC columns once with 2.5 mL of HB buffer on a QuadroMACS separator.",
+    "Apply the remainder of the supernatant/cell lysate to the LC columns. Collect the flow-through and reapply it to the column.",
+    "Wash LC columns with 3 mL of HB buffer on a QuadroMACS separator.",
+    "Remove LC columns from the QuadroMACS separator and elute lysosomes inao ultracentrifuge tubes with 2.5 mL of HB buffer.",
+    "Ultracentrifuge 55000 rpm, 4 °C, 20 minutes using a TLA-100.3 rotor in a Beckman-Coulter Ultracentrifuge Max Optima.",
+    "Remove the supernatant and resuspend the lysosome pellet in 50 µL of HB buffer and freeze at -20C.",
+    "Quantify protein concentrations using Coomassie Plus Protein Assay Reagent as per the manufacturer’s protocol. Prepare lysates for immunoblotting as in the Protein Lysate and Immunoblotting protocol.io."
+  ],
+  "authors": [
+    "Amanda Bentley-DeSousa",
+    "Shawn Ferguson"
+  ],
+  "creator": "Amanda Bentley-DeSousa",
+  "published_on": 1733232175,
+  "created_on": 1733143553,
+  "keywords": []
+}

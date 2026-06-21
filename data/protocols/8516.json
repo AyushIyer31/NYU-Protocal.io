@@ -1,0 +1,25 @@
+{
+  "id": 8516,
+  "title": "Case selection and causal inferences in qualitative comparative research",
+  "uri": "case-selection-and-causal-inferences-in-qualitativ-kjccuiw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kjccuiw",
+  "description": "{\"blocks\":[{\"key\":\"31li5\",\"text\":\"Traditionally, social scientists perceived causality as regularity. As a consequence, qualitative comparative case study research was regarded as unsuitable for drawing causal inferences. Apparently, few cases cannot establish regularity. The dominant perception of causality has changed, however. Nowadays, social scientists define and identify causality through the counterfactual effect of a treatment. This brings causal inference in qualitative comparative research back on the agenda since obviously comparative case studies can identify treatment effects. We argue that the validity of causal inferences from the comparative study of cases depends on the employed case-selection algorithm. We employ Monte Carlo techniques to demonstrate that different case-selection rules strongly differ in their ex ante reliability for making valid causal inferences and identify the most and the least reliable case selection rules.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"3vdmp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"6bcs8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"bvh33\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "We test the performance of 8 simple and 3 more complex case selection algorithms frequently used in compartive political science. We generate artificial data with known features to understand the conditions under which different case selection algorithms perform better or worse.",
+    "We define various data-generating processes from which we draw a number of random samples, and then se­lect two cases from each sample according to a specific algorithm. Our analysis explores to what extent a comparison of two cases allows researchers to estimate the effect that one explanatory variable, called x , exerts on a dependent variable, called y . We assume that this dependent variable y is a function of x , a single control variable z , which is observed, and some error term ε :",
+    "We compare the reliability of inference on effect strength. We use the root mean squared error to evaluate the perfomance of each case selection algorithm for different data generating processes."
+  ],
+  "authors": [
+    "Thomas Plümper",
+    "Vera Troeger",
+    "Eric Neumayer"
+  ],
+  "creator": "Vera Troeger",
+  "published_on": 1511274332,
+  "created_on": 1509551161,
+  "keywords": []
+}

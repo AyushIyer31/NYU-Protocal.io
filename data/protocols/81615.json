@@ -1,0 +1,38 @@
+{
+  "id": 81615,
+  "title": "Cloning individual AAV capsid variants",
+  "uri": "cloning-individual-aav-capsid-variants-ctxpwpmn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj87ebgk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"1fpio\",\"text\":\"This protocol describes the procedure to clone individual AAV capsid variants for single variant characterization.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Digest pUCmini-iCAP-PHP.B plasmid addgene Catalog #103002 (RRID: Addgene_103002) with MscI - 1,250 units New England Biolabs Catalog #R0534L and AgeI - 1,500 units New England Biolabs Catalog #R0552L",
+    "Design 100 bp primers for the desired plasmid variant that cover the insertion region with ~20 bp overlap of the backbone",
+    "To synthesize the double-stranded DNA fragment, anneal the primers by PCR with 20 cycles of 98 °C for 00:00:10 , 60 °C for 00:00:30 and 72 °C for 00:00:10 using Q5 Hot Start High-Fidelity 2X Master Mix - 500 rxns New England Biolabs Catalog #M0494L",
+    "Assemble the variant-specific fragment into the digested backbone by Gibson assembly",
+    "Transform the assembled plasmid into NEB Stable Competent E.coli (High Efficiency) - 20x0.05 ml New England Biolabs Catalog #C3040H",
+    "Select colonies on carbenicillin/ampicillin-LB-agar plates."
+  ],
+  "authors": [
+    "Sripriya Ravindra Kumar",
+    "Timothy F. Shay",
+    "Xinhong Chen",
+    "David Brown",
+    "Tatyana Dobreva",
+    "Qin Huang",
+    "Xiaozhe Ding",
+    "Yicheng Luo",
+    "Pétur . Einarsson",
+    "Alon Greenbaum",
+    "Min J. Jang",
+    "Benjamin E. Deverman",
+    "Viviana Gradinaru"
+  ],
+  "creator": "Miguel Chuapoco",
+  "published_on": 1684801466,
+  "created_on": 1683583596,
+  "keywords": []
+}

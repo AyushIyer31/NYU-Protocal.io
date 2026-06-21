@@ -1,0 +1,33 @@
+{
+  "id": 49128,
+  "title": "Initial Rapid Pathology Assessment of Kidney Tissue",
+  "uri": "initial-rapid-pathology-assessment-of-kidney-tissu-bt8gnrtw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bt8gnrtw",
+  "description": "{\"blocks\":[{\"key\":\"6bl6k\",\"text\":\"Scope:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8ukgp\",\"text\":\"Prepare formalin fixed tissue with freezing fresh tissue protocol (dx.doi.org/10.17504/protocols.io.6wghfbw).  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"g2re\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6v6qf\",\"text\":\"This protocol provides the steps to prepare formalin fixed human kidney tissue and perform histology assessment for normalcy.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"agjrk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2dpgi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dvto4\",\"text\":\"Expected Outcome:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3mk9l\",\"text\":\"Pathological assessment of kidney tissue for use in LC-MS/MS and imaging.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Tissue is embedded in protocol: dx.doi.org/10.17504/protocols.io.br4fm8tn",
+    "Section samples at 5 µm on a microtome.",
+    "PAS stain tissue sections with protocol: dx.doi.org/10.17504/protocols.io.buaknscw",
+    "Scan slides with brightfield scanner (Leica) and save as .tiff or .jpg",
+    "Place saved images on QuPath for analysis.",
+    "Assess and record the following information for each tissue: (%): cortex and medulla (Yes/No): Pyramid Presence, Autolysis, Non-Renal disease ( i.e. cancer) (0=None – 3=Severe): Glomerular disease, Tubulointerstitial disease",
+    "Based on FFPE assessment, kidneys will be used accordingly: LC-MS/MS normalcy: low or no glomerular disease, and 75% or more cortex for normal 100% tumor for diseased 3D Imaging: 50:50 cortex:medulla low or no glomerular disease no renal disease"
+  ],
+  "authors": [
+    "Jamie Allen",
+    "Carrie Romer",
+    "Elizabeth Neumann",
+    "Maya Brewer",
+    "Haichun Yang",
+    "Jeff Spraggins",
+    "Danielle Gutierrez"
+  ],
+  "creator": "Jamie Allen",
+  "published_on": 1619208262,
+  "created_on": 1618432659,
+  "keywords": []
+}

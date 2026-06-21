@@ -1,0 +1,37 @@
+{
+  "id": 227783,
+  "title": "Expressão e Purificação da Taq Polimerase em E. coli C41(DE3)",
+  "uri": "express-o-e-purifica-o-da-taq-polimerase-em-e-coli-hapfb2djp",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"yogyl\",\"text\":\"Este protocolo fornece um método detalhado para a expressão e purificação da Taq polimerase com uma tag hexahistidina em E. coli C41(DE3). O processo inclui crescimento celular, lise, clarificação e cromatografia de afinidade em duas etapas, seguido de diálise para armazenamento. Medidas de segurança adequadas e etapas de controle de qualidade são enfatizadas para garantir uma purificação bem-sucedida. A Taq polimerase é amplamente utilizada em reações de PCR devido à sua capacidade de sintetizar DNA a altas temperaturas, sendo essencial em diversas aplicações de biologia molecular.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"597ns\",\"text\":\"Manuseie IPTG e imidazol com cuidado; use luvas e proteção ocular. Descarte os resíduos de acordo com as regulamentações locais.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"xqryv\",\"text\":\"Materials - \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ndzj4\",\"text\":\"Células E. coli C41(DE3) 1 cultura\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6cqnq\",\"text\":\"Meio LB 1 L\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dq6hh\",\"text\":\"IPTG 0,4 mM\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"msa4t\",\"text\":\"Sonificador 1 unidade\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mz4wl\",\"text\":\"Coluna de afinidade Ni-NTA 1 coluna\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"l90er\",\"text\":\"Coluna de afinidade Heparina 1 coluna\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qmwv7\",\"text\":\"NaCl 0 a 1 M\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qimcg\",\"text\":\"Tubo de diálise Conforme necessário\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"hvdfu\",\"text\":\"Tampão de armazenamento Conforme necessário\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cjemz\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cmkzm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"iqe1r\",\"text\":\"Reagents - \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"99wle\",\"text\":\"Isopropil β-D-tiogalactopiranosídeo\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bpsuj\",\"text\":\"Imidazol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3b5to\",\"text\":\"Cloreto de sódio\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Inocule células de E. coli C41(DE3) transformadas com o plasmídeo contendo o gene da Taq polimerase em 200 mL de meio LB contendo 100 µg/mL de ampicilina e cresça a 37 °C com agitação a 200 rpm até que a OD600 atinja 0,6.",
+    "Induza a expressão da proteína adicionando IPTG a uma concentração final de 0,4 mM. Incube a 18 °C com agitação a 200 rpm por 16 horas.",
+    "Coleta as células por centrifugação a 4.000 g por 20 minutos a 4 °C.",
+    "Ressuspenda o pellet em 20 mL de tampão de lise (20 mM Tris-HCl, pH 8,0, 1 mM EDTA).",
+    "Sonifique a suspensão por 8 minutos (1 segundo ligado, 4 segundos desligado) em gelo.",
+    "Aqueça a amostra sonificada a 70 °C por 30 minutos para desnaturar proteínas.",
+    "Centrifugue a 12.000 g por 30 minutos a 4 °C para clarificar o lisado.",
+    "Carregue o lisado clarificado em uma coluna Ni-NTA pré-equilibrada usando o sistema AKTA Start.",
+    "Lave a coluna com 10 volumes de coluna de tampão de lavagem (20 mM Tris-HCl, pH 8,0, 300 mM NaCl).",
+    "Elua a Taq polimerase com tampão de eluição contendo 300 mM de imidazol.",
+    "Dilua as frações eluídas em tampão Tris-HCl (20 mM, pH 8,0) (1:10), e aplique em uma coluna de afinidade de heparina.",
+    "Realize uma eluição em gradiente de 0 a 1 M de NaCl ao longo de 20 volumes de coluna. Colete as frações",
+    "Dialise a enzima purificada contra o tampão de armazenamento (20 mM Tris-HCl, pH 8,0, 50 mM NaCl) durante a noite a 4 °C.",
+    "Armazene a Taq polimerase purificada a -20 °C com 50% de glicerol.",
+    "Lave a coluna com 10 volumes de coluna de tampão Tris-HCl (20 mM, pH 8,0)."
+  ],
+  "authors": [
+    "Daniel Silva Sena Bastos",
+    "Israr Ali Khan",
+    "Leandro L Oliveira"
+  ],
+  "creator": "Leandro L Oliveira",
+  "published_on": 1758387830,
+  "created_on": 1758380397,
+  "keywords": []
+}

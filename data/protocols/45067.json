@@ -1,0 +1,35 @@
+{
+  "id": 45067,
+  "title": "Measuring neutral lipids in fixed diatom cells using BODIPY 505/515",
+  "uri": "measuring-neutral-lipids-in-fixed-diatom-cells-usi-bp9jmr4n",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l2427jg1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"9buss\",\"text\":\"This protocol is for the measuring neutral lipids in fixed diatom cells using BODIPY 505/515, as developed on the centric diatom Thalassiosira spp.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":129,\"length\":13}],\"entityRanges\":[],\"data\":{}},{\"key\":\"86v6h\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"31v9e\",\"text\":\"This protocol has been used in the following publications:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2e5e6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5hol7\",\"text\":\"Argyle, P. A., Walworth, N. G., Hinners, J., Collins, S., Levine, N. M., \\u0026 Doblin, M. A. (2021). Multivariate trait analysis reveals diatom plasticity constrained to a reduced set of biological axes.ISME Communications,1(1), 59.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":199,\"length\":19},{\"style\":\"italic\",\"offset\":219,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3jigk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"38o3k\",\"text\":\"Argyle, P. A., Hinners, J., Walworth, N. G., Collins, S., Levine, N. M., \\u0026 Doblin, M. A. (2021). A high-throughput assay for quantifying phenotypic traits of microalgae.Frontiers in microbiology,12, 706235.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":169,\"length\":25},{\"style\":\"italic\",\"offset\":195,\"length\":2}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"8622v\",\"text\":\"    \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1},{\"key\":1,\"offset\":2,\"length\":1}],\"data\":{}},{\"key\":\"51rr7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5iqi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bgjvd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":250391,\"guid\":\"42178949341F11EE9D4302C0B41BC903\",\"name\":\"BODIPY\\u0026trade; 505/515 (4,4-Difluoro-1,3,5,7-Tetramethyl-4-Bora-3a,4a-Diaza-\\u003ci\\u003es\\u003c/i\\u003e-Indacene)\",\"mol_weight\":0,\"sku\":\"D3921\",\"url\":\"https://www.thermofisher.com/order/catalog/product/D3921\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":46509,\"guid\":\"4132C1A1341F11EE9D4302C0B41BC903\",\"name\":\"Paraformaldehyde fixative: 4% paraformaldehyde in phosphate buffered saline (PBS)\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Sample the diatom culture of interest. For &#39;tube mode&#39; flow cytometry take minimum 500 µL into an eppendorf tube or other flow cytometry tube. For plate mode take 200 µL into a round-bottom flow cytometry plate.",
+    "If using live cells, go to step 6 If using fixed cells: Add 8 % volume Paraformaldehyde fixative: 4% paraformaldehyde in phosphate buffered saline (PBS) Contributed by users at 10 % (v/v) to reach a final concentration of approx 0.8 % volume . For example, add 100 µL of Paraformaldehyde fixative: 4% paraformaldehyde in phosphate buffered saline (PBS) Contributed by users to 1000 µL of microalgae sample.",
+    "Agitate to mix, then leave to fix for 00:10:00 to ensure fixation",
+    "If samples are to be analyzed at a later date, samples should be stored in the fridge (max 48 hours), or flash frozen in Liquid nitrogen Contributed by users then stored at -80 °C .",
+    "Measure the background fluorescence of unstained cells using a flow cytometer. This protocol was developed using a CytoFlex LX. CytoFLEX LX (Flow cytometer, Beckman Coulter, C40312, CytoFLEX LX N3-V5-B3-Y5-R3-I2 Flow Cytometer (21 Detectors, 6 Lasers), https://www.beckman.com ) Fluorescence is measured using 488 nm excitation and 525/40 nm detection. Measure the background fluorescence of at least 200 cells but ideally 2000 or more.",
+    "Add the BODIPY stain in a 1 % (v/v) to final concentration of approx 0.002 mg/mL . For example add 2 µL to 200 µL of microalgae sample, or 2.2 µL to a fixed microalgae sample ( 200 µL sample with 20 µL Paraformaldehyde fixative: 4% paraformaldehyde in phosphate buffered saline (PBS) Contributed by users . Remember to take into account volume removed due to flow cytometry analysis.",
+    "Add 2 mg of BODIPY&trade; 505/515 (4,4-Difluoro-1,3,5,7-Tetramethyl-4-Bora-3a,4a-Diaza- s -Indacene) Thermo Fisher Catalog #D3921 in powder form to 1 mL of DMSO Merck MilliporeSigma (Sigma-Aldrich) Catalog #D1435 to create the stock solution of 2 mg/mL . Store this in dark glass at -20 °C to prevent degradation of the fluorescent dye.",
+    "Re-read the sample on the flow cytometer using the same laser parameters. Record the median fluorescence on the x channel for at least 200 cells",
+    "Calculate the change in median fluorescence between the stained and unstained sample. This is indicative of the level of neutral lipids present in the cell",
+    "If comparing between taxa of different sizes, size correction may be advisable. This may be done by dividing the change in median fluorescence by the equivalent spherical size, approximated from forward scatter which is measured in tandem during the flow cytometry analysis."
+  ],
+  "authors": [
+    "Phoebe Argyle",
+    "Jana Hinners",
+    "Nathan G. Walworth",
+    "Sinéad ollins",
+    "Naomi M. Levine",
+    "Martina A. Doblin"
+  ],
+  "creator": "Phoebe Argyle",
+  "published_on": 1677302751,
+  "created_on": 1606790089,
+  "keywords": []
+}

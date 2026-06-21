@@ -1,0 +1,38 @@
+{
+  "id": 93856,
+  "title": "Spore measurements using ImageJ",
+  "uri": "spore-measurements-using-imagej-c7v8zn9w",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx3xj4g8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"9flbo\",\"text\":\"Measurement of spore size and particles can be very tedious and time-consuming. This protocol leverages the particle analysis function in ImageJ to measure spores. It will be able to measure spore length, width, and area.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Mount the specimen of interest under appropriate objective lens size (typically a 40X objective lens or 400X magnification will suffice). The best area for photography should have abundant spores, little background materials other than the spores, positioned on a single plane, not overlapping each other very much (it’s OK if a few are adjacent each other), and not moving (or at least very fast).",
+    "Photograph the spores using a high-resolution camera. The better quality the photograph, the easier it will be to process the images.",
+    "Take an image of a scale, such as an objective micrometer for scale calibration.",
+    "Open the image of the scale. Use the Line Tool, measure the distance (in pixels) between the lines of the scale bars (shortcut Command + m). Repeat 10 times for accuracy. For many scale bars, this distance is 10 μm.",
+    "On the Results panel, click Results &gt; Summarize ; take the mean pixel length.",
+    "Click on Analyze &gt; Set Scale – Enter the mean length in pixel, known distance, as well as unit (μm).",
+    "Click on Global to apply this scale throughout all the images in this session.",
+    "Open image to measure (usually an image of spores taken at 40X objective).",
+    "Click on Process &gt; Binary &gt; Make Binary (turns the particles into black and everything else white).",
+    "Click on Process &gt; Binary &gt; Fill holes (fill in holes).",
+    "Click on Process &gt; Binary &gt; Watershed (distinguish between two cells that touch each other).",
+    "Use the Fill tool to fill black areas/particles that will be difficult for the computer to interpret. In other words, if you don’t want to measure a spore or a particle, don’t keep them.",
+    "Download the latest ImageJ software ( https://imagej.net/ij/ ) for your operating system and install.",
+    "Click on Analyze &gt; Set Measurements (to display as results) &gt; click on Fit Ellipse for length and width of ellipses.",
+    "Click on Analyze &gt; Analyze particles and adjust the following parameters: Size : select sizes of pixels to include, adjust according to the size of your spores. For example, 12-16 if your spores fall within this range. Circularity : 0 = completely linear, 1 = completely round. For example, I often use 0.2-0.8. Show : Shows a processed image. I like the “Overlay” option because it gives you an opportunity to see which particles were included and those that should have been included could be clicked on a removed from the Results table. Check boxes : I include at least the “Display results”, and the “Exclude on edges” because particles on edges are often incomplete.",
+    "Click OK to analyze the results. Double check to see if there are any particles that have been included where they should not have been. If you find those particles, click on the number associated with them and the program/app will highlight those measurements on the Results window. Go to the results window and hit Delete on your keyboard to remove those measurements.",
+    "This figure shows the progression of processing steps to measuring spores. The left image is the input image. The middle image is a binary form of the left image, followed by some manualcleanup of unwanted particles, and the image to the right shows the particles that were included (highlighted) in the measurements using set parameters.",
+    "Export your data as a tabular format such as csv or tsv for downstream analyses."
+  ],
+  "authors": [
+    "Nhu Nguyen"
+  ],
+  "creator": "Nhu Nguyen",
+  "published_on": 1705912121,
+  "created_on": 1705772233,
+  "keywords": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": 43302,
+  "title": "PCR",
+  "uri": "pcr-bniemcbe",
+  "doi": "dx.doi.org/10.17504/protocols.io.bniemcbe",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Set up a small box with ice, put DNA and 2×high Taq Master Mix into it before going into the Bio-rad S1000TM thermocycler cycler.",
+    "Add the following reagent to a PCR tube (50 μl) and program the thermocycler as follows:",
+    "%s %s component25ul50ul5XQ5 buffer5ul10ul10mM dNTPs0.5ul1ulForward Primer 10μM 1.25ul2.5ulReverse Primer 10μM 1.25ul2.5ulTemplate (&lt;1000ng)According to different templateAccording to different templateQ5 polymerase0.25ul0.5ulddWaterAdd to 25ulAdd to 50ul",
+    "%s %s Temperaturetime98℃ 03:0098℃00:05-00:10Tm-5℃00:10-00:3072℃20-30s/kb72℃02:004℃∞",
+    "%s %s componentvolumn/ulFinal Concentration2xPCR buffer25uL1X2mM dNTPs10uL400umol/L10umol/L Forward Primer1.5uL0.3umol/L10umol/L Reverse Primer1.5uL0.3umol/LTemplate DNA2uLGenomic DNA≤200ng/50ul Plasmid DNA（10ng/ul） cDNA≤200ng Crude sample≤0.5-4ulddH2OAdd to 50uL（10ul）KOD FX1uL1unit/50μlTotal50μl",
+    "%s %s Temperaturetime98℃T1= 03:0098℃T2= 00:10Tm-5℃T3=00:3068℃T4 : 1min/kb68℃T6&gt;T2+T3+T44℃∞",
+    "%s %s ComponentVolume/ulFinal Concentration2XT5 Super PCR Mix5ul1x10uM Forward Primer0.4ul0.4uM10uM Reverse Primer0.4ul0.4uMTemplate DNA1ul&lt;1ug ddH2OAdd to 10ul Total10ul",
+    "%s %s Temperaturetime98℃03:0098℃00:10Tm-5℃00:1072℃20s/kb72℃02:004℃∞"
+  ],
+  "authors": [
+    "Jiaxin Li"
+  ],
+  "creator": "Jiaxin Li",
+  "published_on": 1603018824,
+  "created_on": 1602868470,
+  "keywords": []
+}

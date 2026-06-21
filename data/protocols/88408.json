@@ -1,0 +1,28 @@
+{
+  "id": 88408,
+  "title": "Qubit dsDNA HS Assay",
+  "uri": "qubit-dsdna-hs-assay-c2jyycpw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx3zrwg8j/v2",
+  "description": "{\"blocks\":[{\"key\":\"c8o4c\",\"text\":\"How to use the Qubit 2.0 fluorometer to quantify dsDNA samples. It is most accurate for sample concentrations from 5 pg/uL to 120 ng/uL.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"3jp52\",\"text\":\"Allow reagents to equilibriate to room temperature before use:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"67ft1\",\"text\":\"HS Buffer (ambient)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"942el\",\"text\":\"HS Reagent (4C - dark)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5drpg\",\"text\":\"HS Standard #1 (4C)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a7lqp\",\"text\":\"HS Standard #2 (4C)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b0r73\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dd7tv\",\"text\":\"Make sure to use the thin-wall 0.5 mL Qubit PCR tubes for all samples and standards. Only label the caps.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "To prepare the Qubit working solution, a mixture of HS Reagent and HS Buffer, take the number of samples you will be running and multiply that by 199 uL. Then add 380 for the HS Standards. Round this number up to the nearest tenth (for excess). This is the amount of HS Buffer you will need. Divide this number by 200 to get the amount of HS Reagent you need to add. Example: 199( 8 ) + 380 = 1,972 --&gt; 1,980 uL 1,980 / 200 = 9.9 uL Add 9.9 uL HS Reagent to 1,980 uL of HS Buffer to make enough working solution for 8 samples and 2 standards.",
+    "Add 190 uL of working solution to two Qubit tubes. Label the top of the tubes S1 and S2. Then add 10 uL of the respective HS Standard to each tube.",
+    "For each of your sample tubes, add 199 uL of working solution to labeled tubes. Then add 1 uL of your samples to each tube.",
+    "Vortex all tubes and spin down if necessary. Incubate for 2 minutes at room temperature.",
+    "On the Qubit, select dsDNA -&gt; dsDNA High Sensitivity -&gt; Read standards",
+    "Avoid touching the walls of the tube as the Qubit is very temperature sensitive. Insert standard 1 and then select Read standard. Repeat for standard 2.",
+    "Select Run samples and read them one by one. Use the 1 uL sample volume. When you are done, select Data at the bottom to view all your sample concentrations and take a photo.",
+    "To get sample concentrations in ng/uL, multiply Qubit readout by 0.2."
+  ],
+  "authors": [
+    "Lakme Caceres"
+  ],
+  "creator": "Lakme Caceres",
+  "published_on": 1695744190,
+  "created_on": 1695744027,
+  "keywords": []
+}

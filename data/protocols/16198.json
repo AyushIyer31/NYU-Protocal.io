@@ -1,0 +1,24 @@
+{
+  "id": 16198,
+  "title": "UK REF 2014 Analysis Data and R Script",
+  "uri": "uk-ref-2014-analysis-data-and-r-script-t3eeqje",
+  "doi": "dx.doi.org/10.17504/protocols.io.t3eeqje",
+  "description": "{\"blocks\":[{\"key\":\"dgflu\",\"text\":\"This collection of files contains the raw data and R script for the paper entitled 'The UK Research Excellence Framework and the Matthew Effect: Insights from machine learning.'\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"68bv9\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e6dts\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ad6qo\",\"text\":\"Data:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f7him\",\"text\":\"The file balbuena_REF_2014.dta is a Stata 12 file that contains the data for the paper. It is also saved in CSV format as Balbuena_REF_2014.csv\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":8,\"length\":23},{\"style\":\"bold\",\"offset\":122,\"length\":21}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6ge3k\",\"text\":\"The file balbuena_ref_syntax.R contains the syntax used to run the analysis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":9,\"length\":30}],\"entityRanges\":[],\"data\":{}},{\"key\":\"8v4dm\",\"text\":\"The file balbuena_REF.RData file contains the data objects in RData format. See the instructions below if you wish to replicate the analysis.  To simply view the data in Excel without re-running the analysis, the universities in the training set (n  = 79) and testing set (n=30)  are provided in the excel file “REF_2014_schools.xls”\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":9,\"length\":18}],\"entityRanges\":[],\"data\":{}},{\"key\":\"8socp\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fcve2\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"bfbgn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"8ehtn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"8o06\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Load the RData file using the command Session | Load Workspace. If you wish to import the Stata or Excel files (#1), use the Part I section of the syntax file. Otherwise, go straight to Part II. balbuena_ref.rdata balbuena_ref_2014.dta balbuena_ref_2014.csv",
+    "Run the commands line by line or only the parts you wish to replicate.",
+    "If you wish to replicate the BART analysis only, go straight to Part 3 after having loaded the data.",
+    "balbuena_ref_syntax_v2.r"
+  ],
+  "authors": [
+    "Lloyd Balbuena"
+  ],
+  "creator": "Lloyd Balbuena",
+  "published_on": 1538079203,
+  "created_on": 1538078758,
+  "keywords": []
+}

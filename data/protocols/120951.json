@@ -1,0 +1,32 @@
+{
+  "id": 120951,
+  "title": "Gap1 integrative vector",
+  "uri": "gap1-integrative-vector-d2cx8axn",
+  "doi": "dx.doi.org/10.1038/nprot.2007.128",
+  "description": "{\"blocks\":[{\"key\":\"osafl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"5ibhq\",\"text\":\"Genes can be integrated into the genome of yeast. This protocol describes how to generate a vector that contains sequences that allow integratioon of any gene into the GAP1 locus of yeast.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Amplify a pUC fragment containing the bacterial origin of replication and the kanamycin resistance marker by PCR from PCR-BluntII-TOPO (Invitrogen, Carlsbad, CA) and ligate with a PvuII fragment of pDRf1 containing the f1 origin of replication, the PMA1 promoter and ADH3 terminator producing pDL001.",
+    "Subclone a synthetic oligonucleotide containing 55 bp upstream of the start (-55 to 0) and 55 bp downstream of the stop (+1810 to 1865) of Gap1 ORF with HpaI and AscI restriction sites into pGEM-T-easy.",
+    "Amplify the hphMX3 cassette (for hygromycin B selection in yeast) by PCR from pAG34 1 and clone into the SpeI site located in the 5’ part of the Gap1 cassette.",
+    "Amplify this cassette by PCR and clone into a blunted BglII of pDL001.",
+    "Subclone AtAMT1;1, AtAMT1;1-T460A and AtAMT1;1-eGFP from pDR vectors into the KpnI site of the Gap1 integrative plasmid.",
+    "Use the yeast strain 31019b (∆::LEU2 ::KanMX2 ura3; see reference 2) to generate DL1 ( ∆ ∆) mutant strain and the versions in which AtAMT1;1 or its mutants are integrated.",
+    "Transform yeast strain 31019b using a LiAc protocol (3) with an AscI linearized Gap1 integrative vector containing either AtAMT1;1, AtAMT1;1-T460A, AtAMT1;1-eGFP or the empty vector, to generate gap1::WT, gap1::T460A, gap1::AMT1;1-eGFP or ∆gap1 strains respectively.",
+    "Select transformants on solid YPD medium supplemented with 300 µg/mL hygromycin.",
+    "Amplify colonies in liquid YPD and reselect on solid YPD supplemented with 300 µg/mL hygromycin.",
+    "Confirm the insertion at the Gap1 locus by PCR and by complementation of functional proteins.",
+    "A cytosolic trans-activation domain essential for ammonium uptake by Loqué, D. et al. published in Nature on 20 Dec, 2006 https://dx.doi.org/10.1038/nature05579"
+  ],
+  "authors": [
+    "Dominique Loqué",
+    "Wolf Frommer"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1173348172,
+  "created_on": 1173348172,
+  "keywords": []
+}

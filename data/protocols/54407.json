@@ -1,0 +1,32 @@
+{
+  "id": 54407,
+  "title": "Luminol Calibration",
+  "uri": "luminol-calibration-bzdfp23n",
+  "doi": "dx.doi.org/10.17504/protocols.io.bzdfp23n",
+  "description": "{\"blocks\":[{\"key\":\"c6803\",\"text\":\"Calibration curve using luminol in order to standardize luminescence data\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Preparation of 100ml luminol stock solution (1 mM luminol sodium salt; 50 mM sodium carbonate; 300 mM sodium bicarbonate; 5 mM ammonium carbonate) : dissolve the following components in ddH 2 O 19,94mg of Luminol sodium salt 529,94mg of sodium carbonate 2,52g of sodium bicarbonate 48mg of ammonium carbonate Preparation of the coppersulfate solution (1,5 mM CuSO 4 ): dissolve 23,94mg of CuSO 4 in ddH 2 O",
+    "Perform a dilution series in a 384 well plate similar to the protocol provided by the iGEM foundation on Fluorescein calibration:",
+    "Add 100µl of the CuSO 4 solution in the first well",
+    "Fill every second well in that row with 50µl of water (8 rows in total)",
+    "Transfer 50µl of the first well into the next and carefully pipette up and down to ensure proper mixing of the solutions",
+    "Repeat this until you reach the second last well and then dispose the last 50µl",
+    "Premix the luminol buffer with hydrogen peroxide in a ratio of 4:1",
+    "Transfer 10µl of this solution into empty wells on the plate",
+    "Use a multichannel pipette to add the inducing copper sulfate solution to the luminol solution",
+    "Transfer the well plate into the plate reader and shake the plate for 30 seconds until you start the measurement",
+    "Measure the luminescence with an exposure time of 250ms",
+    "Plot the data in a linear correlation and use this calibration curve in order to normalize your luminescence data"
+  ],
+  "authors": [
+    "Michael Burgis"
+  ],
+  "creator": "Michael Burgis",
+  "published_on": 1634857588,
+  "created_on": 1634854793,
+  "keywords": []
+}

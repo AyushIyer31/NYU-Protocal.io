@@ -1,0 +1,26 @@
+{
+  "id": 234603,
+  "title": "Sorghum–soybean intercropping for yield benefit: a systematic review and exploratory meta-analysis",
+  "uri": "sorghum-soybean-intercropping-for-yield-benefit-a-hhcjb32up",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egnrp6zl5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"wzk0j\",\"text\":\"This protocol details the methodology for a systematic review and meta-analysis to quantify the yield advantage of sorghum-soybean intercropping over monocropping using Land Equivalent Ratio (LER) and to evaluate the influence of planting configuration. The review will involve a comprehensive search of Web of Science, Scopus, and Google Scholar, followed by study selection, data extraction, and a two-tiered random-effects meta-analysis to address prevalent missing variance data in the literature.\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4a6v8\",\"text\":\"\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7c6jr\",\"text\":\"The synthesis is expected to provide a pooled estimate of the LER benefit, identify optimal row ratios and planting patterns, and critically highlight methodological limitations in the existing evidence base, particularly regarding statistical reporting. The findings aim to inform sustainable intensification practices and prioritize future research needs in cereal-legume intercropping systems.\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Inclusion: Study type: Original field experiments or meta-analyses. Intervention: Sorghum-soybean intercropping systems. Comparison: Sorghum and/or soybean monoculture. Outcome: Must report Land Equivalent Ratio (LER) or primary yield data (grain, forage, biomass), allowing LER calculation. Publication: Peer-reviewed journal articles in English. Exclusion: Studies not involving both sorghum and soybean. Articles without primary LER data or full text unavailable. Non-English publications. Duplicate reports of the same study.",
+    "Primary: Web of Science, Scopus. Supplementary: Google Scholar (for gray literature and additional studies). Date Range: 1993 to May 2025. Geographic Scope: Global (no restrictions).",
+    "Search String (as used in Web of Science/Scopus): (&#34;sorghum&#34; OR &#34; Sorghum bicolor L.&#34;) AND (&#34;soybean&#34; OR &#34; Glycine max L.&#34;) AND (&#34;intercrop&#34; OR &#34;inter-crop&#34; OR &#34;mixed crop&#34;) AND (&#34;yield&#34; OR &#34;land equivalent ratio&#34; OR &#34;LER&#34; OR &#34;biomass&#34; OR &#34;productivity&#34;)",
+    "Extraction: Extracted into a predefined Excel spreadsheet with 36 variables across 6 groups (Study ID, Location, Crop Design, Management, Yield and LER Data, Statistical Data). Data from figures extracted using WebPlotDigitizer. Variables: Author, year, country, coordinates, row ratio, planting pattern, LER, SD/SE, sample size, etc. Analysis: Software: R (v4.5.1) with `metafor` package. Model: Random-effects meta-analysis (anticipated heterogeneity). Effect Measure: Land Equivalent Ratio (LER). Heterogeneity: Quantified using I² statistic. Subgroup Analysis: By row ratio and planting pattern. Publication Bias: Assessed via funnel plot, Egger’s and Begg’s tests.",
+    "Missing Variance Data (SD/SE): Problem: &gt;75% of studies lacked reported variance. Solution: Two-tiered approach: Primary analysis: Only studies with reported/calculated SD (n=23). Exploratory analysis: Full dataset (n=103) with imputed SDs. - Imputation Method: - Calculated Coefficient of Variation (CV = SD/Mean) from studies with reported SD. - Used median CV (0.1147) to impute missing SDs: SD imputed​ =Mean LER ​×0.1147. Risk of Bias Assessment: Not formally conducted Instead, methodological quality was critically assessed by evaluating: Completeness of statistical reporting (SD/SE, sample size). Experimental design (e.g., RCBD, replication). Transparency in describing methods. This assessment informed the data imputation strategy and the interpretation of heterogeneity.",
+    "What is the land productivity advantage (quantified by Land Equivalent Ratio, LER) of sorghum-soybean intercropping compared to monocropping, and how is it influenced by planting configuration (row ratio and planting pattern)?"
+  ],
+  "authors": [
+    "Deborah Joy Blessing"
+  ],
+  "creator": "Joy Oluwaferanmi Adewuyi",
+  "published_on": 1765446592,
+  "created_on": 1765307706,
+  "keywords": []
+}

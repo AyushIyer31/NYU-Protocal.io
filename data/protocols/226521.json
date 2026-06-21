@@ -1,0 +1,38 @@
+{
+  "id": 226521,
+  "title": "Simulation and Flux Analysis of β-Oxidation Using MATLAB: A Stepwise ODE-Based Protocol",
+  "uri": "simulation-and-flux-analysis-of-oxidation-using-ma-g9fzbz3p7",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v95yepl3e/v3",
+  "description": "{\"blocks\":[{\"key\":\"8u1ut\",\"text\":\"This protocol outlines the complete process of modeling mitochondrial β-oxidation as a system of first-order differential equations, beginning with stoichiometric derivation and matrix reduction, and culminating in a MATLAB-based simulation. The user is guided through each step of linearizing the pathway, defining reaction kinetics, and numerically solving the system using ode45.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"lt120\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"mbzrv\",\"text\":\"MATLAB (R2020b or later) — Required for numerical integration of ODE systems, matrix computation, and time-series visualization. The protocol uses built-in functions such as ode45, linspace, and plot, and is compatible with both MATLAB desktop and MATLAB Online.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e7240\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Construct a linearized kinetic representation of your metabolic pathway by referencing an established biochemical model. Then, decompose the pathway into a discrete, stepwise system of reactions in which each metabolite is uniquely identified, each enzymatic transformation is assigned a distinct reaction velocity (V n ), and each associated parameter (e.g., cofactors, substrates, rate constants) is explicitly mapped.",
+    "In Step 2, the biochemical β-oxidation pathway is outlined using conventional nomenclature, showing the conversion of long-chain fatty acids into acetyl-CoA through sequential enzymatic reactions, along with the involvement of key cofactors (ATP, FAD, NAD + , CoA-SH). Each intermediate and catalytic step is named and associated with its corresponding transformation.",
+    "In Step 3, the pathway is converted into a modular kinetic model, where each metabolite is denoted by a letter (A through F), and each enzymatic reaction is represented by a velocity term (V 1 through V 10). Cofactors (K through L) are similarly identified. This form isolates the stoichiometric and kinetic relationships needed for constructing ordinary differential equations (ODEs) for dynamic simulation and parameter analysis.",
+    "Create a matrix corresponding to the first order differential equations, where each row represents a substrate, and each column represents a reaction in the pathway. Fill in entries of matrix with the corresponding stoichiometric coefficients determined in the previous step.",
+    "Transform the stoichiometric matrix to its row-reduced echelon form by performing Gaussian elimination with back substitution. Using this, we can define dimensions, rank, and nullity of the matrix. We can also define the number of free variables in the matrix.",
+    "Row Reduced Echelon Form of the stoichiometric matrix for the β-oxidation pathway.",
+    "Convert the Row Reduced Echelon Form into a system of equations with each equation corresponding to a substrate row. Make each of the equations equal to 0, then use algebraic manipulation to make an equation for each reaction (V_1, V_2, V_3, etc.).",
+    "Write a new MATLAB function titled ode_system.m to define the ODE system governing β-oxidation dynamics. See Step 15 for confirmation.",
+    "beta_oxidation_model.m For further features such as custom figure generation, reaction logging, or MCADD simulation toggles, download the complete model file: beta oxidation model.m – which contains embedded comments and configurable options for simulation refinement.",
+    "Derive a set of first-order differential equations from the multi-step biochemicalpathway in Step 3. Write out the reaction in the pathway, specifying reactants and products along with their stoichiometric coefficient. A negative coefficient indicates the substrate is a reactant, and a positive coefficient indicates the substrate is a product of the reaction.",
+    "At the top of the file, unpack the state vector y into individual metabolite variables (a through l) representing concentrations of each species.",
+    "Below, define all kinetic rate constants (k1 through k5) with realistic values derived from literature or database sources, keeping units in 1/s or 1/mM·s.",
+    "Express each ODE as a difference in velocities, such that the change in each metabolite is written in the form dx_dt = Vi - Vj, avoiding invalid terms such as +V10 or +V7 in the final equations.",
+    "Define the full set of reaction velocities (V1–V10), ensuring correct substrate and cofactor dependencies for each enzymatic step. Note that V1 and V10 are equivalent.",
+    "In your main MATLAB script, define initial conditions for all 12 metabolites as scalar values in millimolar (mM), referencing physiologically relevant ranges for fatty acid oxidation. See Step 17 for confirmation.",
+    "Specify a time vector using linspace(0,10,100) to define a uniform time domain from 0 to 10 seconds, with 100 stored time points.",
+    "Call the MATLAB solver using [t, y] = ode45(@ode_system, tspan, [A0 B0 C0 D0 E0 F0 G0 H0 I0 J0 K0 L0]); to simulate the ODE system and record the time-course evolution of each metabolite."
+  ],
+  "authors": [
+    "Ethan Shaw",
+    "Henry Chuo"
+  ],
+  "creator": "Ethan Shaw",
+  "published_on": 1757058915,
+  "created_on": 1757035685,
+  "keywords": []
+}

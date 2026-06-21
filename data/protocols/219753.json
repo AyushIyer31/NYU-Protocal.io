@@ -1,0 +1,26 @@
+{
+  "id": 219753,
+  "title": "Animal randomization with randmice",
+  "uri": "animal-randomization-with-randmice-g2uhbyet7",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv5o4bng1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"6n5ug\",\"text\":\"Best way to randomize animals between the groups in order to reduce heterogeneity, standardize randomization protocol, increase statistical power, and/or reduce number of animal per experiment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "In Excel, list all the animal with the variables that you are tracking (weight, tumor size, blood pressure, etc.) that is relevant for the experiment",
+    "You can export your data from Excel to CSV. Go to File &gt; Save As The Save As dialog box appears, choose See more info on Excel documentation .",
+    "Go to https://randmice.com Create an account if you do not have one and log in.",
+    "Open the CSV file describing your animals and copy and paste into the form `data`",
+    "Go to Menu &gt; Randomize",
+    "Let it run and you will receive the report by email"
+  ],
+  "authors": [
+    "Sylvain Carlioz"
+  ],
+  "creator": "Sylvain Carlioz",
+  "published_on": 1749405750,
+  "created_on": 1749246967,
+  "keywords": []
+}

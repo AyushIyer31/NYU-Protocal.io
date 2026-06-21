@@ -1,0 +1,43 @@
+{
+  "id": 29109,
+  "title": "Drawing ROIs in ITK-Snap",
+  "uri": "drawing-rois-in-itk-snap-8nvhve6",
+  "doi": "dx.doi.org/10.17504/protocols.io.8nvhve6",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "This protocol will show you two different methods for drawing ROIs in ITK-SNAP. The first method will be drawing ROIs manually and the second method will show the automatic ROI with the snake tool. Note: The example in this protocol uses the Fornix Fimbria in a ferret brain as the ROI.",
+    "Open up ITK-SNAP by typing: cd /rsgrps/hutchinsone/Singularity_Containersmodule load singularitysingularity run nklab-neurotools-v0.4.sif itksnap",
+    "Open NIFTI file on ITK-SNAP.",
+    "Zoom into the brain until you are satisfied with your view. To zoom in select the &#34;Zoom/Pan Mode&#34; button, and then the up arrow boxed in the image below.",
+    "Identify the ROI you want to segment on your brain. There are resources on the internet, and in lab to help identify the tracts. For this protocol a Brain Atlas of the Ferret was utilized.",
+    "Select the &#34;Polygon Mode&#34; and on your ROI trace an outline. Once you are happy with your shape select the accept button in the bottom right hand corner.",
+    "Continue the previous step through the slices till your ROI is finished.",
+    "Lastly, save your ROI as a NIFTI file, and open it in ITK-SNAP to ensure there are no mistakes.",
+    "Open up ITK-SNAP by typing: cd /rsgrps/hutchinsone/Singularity_Containersmodule load singularitysingularity run nklab-neurotools-v0.4.sif itksnap",
+    "Save the ROI by clicking on Segmentation&gt;Save Segmentation Image. Title your ROI and make sure to delete the &#34;.gz&#34; at the end. You want a &#34;.nii&#34; file, not a &#34;.nii.gz&#34; file.",
+    "Open NIFTI file on ITK-SNAP.",
+    "Select the snake tool in the top left corner. Then select the Segment 3D button.",
+    "Change the Presegmentation mode to Classification from Thresholding.",
+    "Zoom into the brain until you are satisfied with your view. To zoom in select the &#34;Zoom/Pan Mode&#34; button, and then the up arrow boxed in the image below.",
+    "Starting with Label 1, use either the polygon or paintbrush mode mark the tract/ROI. The labels are identified by color on the right hand side of the above image. Create another label, and mark an area that is not your ROI. Select &#34;Train Classifier.&#34;",
+    "The goal is to completely single out your tract/ROI onto a single ROI from the surrounding grey matter (and other white matter tracts). This is achieved by adding labels to the area surrounding the ROI and updating the &#34;Train Classifier&#34; until the desired effect is achieved. Typically you will end up using 3-5 labels, but that is dependent on the brain and selected ROI.",
+    "Note: Should for any reason you wish to clear the marks after training the classifier, select &#34;Clear Examples&#34; to delete marks made with the brush or polygon mode.",
+    "Once you are happy with the trained classifier, select &#34;Next&#34; in the bottom right hand corner.",
+    "Move the cursor to your ROI on the image and select &#34;Add Bubble at Cursor.&#34; Ensure that your bubble is correctly sized and placed on the desired region. Select Next.",
+    "Grow the bubble by selecting the play button. As the bubble grows, you can select update at the bottom of the left hand corner to see a 3D visualization of your ROI.",
+    "Select Finish.",
+    "Lastly, save the ROI by clicking on Segmentation&gt;Save Segmentation Image. Title your ROI and make sure to delete the &#34;.gz&#34; at the end. You want a &#34;.nii&#34; file, not a &#34;.nii.gz&#34; file.",
+    "Above is the Snake-Tool ROI."
+  ],
+  "authors": [
+    "Courtney Comrie"
+  ],
+  "creator": "Courtney Comrie",
+  "published_on": 1579213086,
+  "created_on": 1571850721,
+  "keywords": []
+}

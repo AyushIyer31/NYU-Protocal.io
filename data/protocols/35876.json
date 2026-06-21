@@ -1,0 +1,26 @@
+{
+  "id": 35876,
+  "title": "Unique insights from ClinicalTrials.gov by mining protein mutations and RSids in addition to applying the Human Phenotype Ontology",
+  "uri": "unique-insights-from-clinicaltrials-gov-by-mining-bfacjiaw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bfacjiaw",
+  "description": "{\"blocks\":[{\"key\":\"3ali1\",\"text\":\"Researchers and clinicians face a significant challenge in keeping up-to-date with the rapid rate of new associations between genetic mutations and diseases. To remedy this problem, this research mined the ClinicalTrials.gov corpus to extract relevant biological insights, produce unique reports to summarize findings, and make the meta-data available via APIs. An automated text-analysis pipeline performed the following features: parsing the ClinicalTrials.gov files, extracting and analyzing mutations from the corpus,  mapping clinical trials to Human Phenotype Ontology (HPO), and finding associations between clinical trials and HPO nodes. Unique reports were created for each mutation (SNPs and protein mutations) mentioned in the corpus, as well as for each clinical trial that references a mutation. These reports, which have been run over multiple time points, along with APIs to access meta-data, are freely available on http://snpminertrials.com. Additionally, HPO was used to normalize disease terms and associate clinical trials with relevant genes. The creation of the pipeline and reports, the association of clinical trials with HPO terms, and the insights, public repository, and APIs produced are all novel in this work. The freely-available resources present relevant biological information and novel insights between biomedical entities in a robust and accessible manner, mitigating the challenge of being informed about new associations between mutations, genes, and diseases.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":932,\"length\":26}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"C2750CE181A711EABF5D0242AC110002\",\"url\":\"http://snpminertrials.com.\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"3j0ee\",\"text\":\"Two publicly-available datasets were used in this study: ClinicalTrials.gov and HPO.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Two publicly-available datasets were used in this study: ClinicalTrials.gov and HPO.",
+    "Clinical Trial Data The complete repository of clinical trials displayed at ClinicalTrials.gov is available in XML format with a well-defined schema. Download: https://clinicaltrials.gov/ct2/resources/download Download all clinical trials in a zip file (1.2 GB): https://clinicaltrials.gov/AllPublicXML.zip Parse XML. Schema files are below",
+    "HPO - Human Phenotype Ontology HPO is a standardized vocabulary of phenotype abnormalities that are seen in humans. HPO is a product of the Monarch Initiative and one of the thirteen driver projects in the Global Alliance for Genomics and Health strategic roadmap. The HPO ontology files are available in the OBO flat-file format and are easy to read and parse. HPO annotations provide a correlation between HPO terms and genes. There are three annotation files that contain associations between genes and phenotypes. The HPO files used in this project consisted of 14,961 HPO nodes, with 18,547 parent-child relationships between the nodes. Furthermore, 820,297 gene-phenotype annotations mapped across 4,312 unique genes and 8,947 individual HPO terms. Human Phenotype Ontology -- HPO Ontology https://hpo.jax.org/app/ Disease terms with associated associations to genes Ontology download OBO flat file http://purl.obolibrary.org/obo/hp.obo Annotation download https://hpo.jax.org/app/download/annotation",
+    "Analysis Code Crawler code HPO Mapper example SNP miner code MutationFinder facade and example code MutationFinder clinical trials analysis HPO analysis",
+    "Reports Reports for SNPs Bottom of report Report for clinical trial Report for protein mutations Report for clinical trial",
+    "APIs and Toolkits Google Colab SDK Available Java APIs to access the data Ref: https://s3-us-west-1.amazonaws.com/032020.snpminertrials.com/api/code/clinicaltrialsdk/src/com/snpminertrials/ct/MeSHTagsFacade.java HPOToClinicalTrailsFacade HPO and protein mutations Clinical trials for protein mutations HPO and snps Clinical trials and RSids Machine learning example using meta-data"
+  ],
+  "authors": [
+    "Shray Alag"
+  ],
+  "creator": "Shray Alag",
+  "published_on": 1590681985,
+  "created_on": 1587236647,
+  "keywords": []
+}

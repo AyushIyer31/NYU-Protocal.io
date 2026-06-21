@@ -1,0 +1,28 @@
+{
+  "id": 51001,
+  "title": "Creating a Frankenstein&#39;s Genome",
+  "uri": "creating-a-frankenstein-39-s-genome-bv2zn8f6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bv2zn8f6",
+  "description": "{\"blocks\":[{\"key\":\"bq100\",\"text\":\"This short, command-line protocol is used to combine coding sequences (nucleic acids) from reference genomes into a single file with all coding sequences, with customizable clustering levels.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"7khg6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"a1fsu\",\"text\":\"Please download CD-HIT before beginning this protocol. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Download the nucleic acid coding sequences from all reference genomes you wish to include in your Frankenstein&#39;s genome in a .fasta format.",
+    "CD-HIT cd-hit-est -i X1 -o X2 -c X3 -n X4 Used to combine reference genomes by threshold. Linux",
+    "X1 is the concatenated reference .fasta file, X2 is the output folder name, X3 is the clustering threshold, and X4 is the word size.",
+    "Fu, L., Niu, B., Zhu, Z., Wu, S., and Li, W. (2012). CD-HIT: accelerated for clustering the next-generation sequencing data. Bioinformatics 28, 3150-3152.",
+    "Combine all downloaded fasta files. Concatenate fasta files cat *.fasta > output.fasta",
+    "The linux cat command concatenates all files, in this case all files ending with .fasta in the working directory you are in. The output.fasta file will be the concatenated file to be used in the next step."
+  ],
+  "authors": [
+    "Helena Pound",
+    "Eric Gann",
+    "Steven W Wilhelm"
+  ],
+  "creator": "Helena Pound",
+  "published_on": 1624970483,
+  "created_on": 1624470173,
+  "keywords": []
+}

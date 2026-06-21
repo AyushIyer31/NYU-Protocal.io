@@ -1,0 +1,37 @@
+{
+  "id": 41416,
+  "title": "HolographicDiagnostics: Automated Virus Binding Assay",
+  "uri": "holographicdiagnostics-automated-virus-binding-ass-bkpgkvjw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bkpgkvjw",
+  "description": "{\"blocks\":[{\"key\":\"6h0c9\",\"text\":\"This protocol describes the steps required to perform a holographic immunoassay for SARS-CoV-2 whole virus particles. The assay uses an xSight holographic particle characterization instrument (Spheryx, Inc.) to monitor the diameter of specifically functionalized probe beads. The diameter of the beads increases by a few nanometers as targets bind to the surface. xSight detects and reports this change, yielding an estimate for the concentration of analytes in the sample. The method for holographic immunoassays (applied to antibody binding assays) is described in\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2nskf\",\"text\":\"Y. Zagzag, M. F. Soddu, A. D. Hollingsworth and D. G. Grier, Holographic molecular binding assays, Scientific Reports 10, 1932 (2020) and K. Snyder, R. Quddus, A. D. Hollingsworth and K. Kirshenbaum, Holographic Immunoassays: Direct Detection of Antibodies Binding to Colloidal Spheres, submitted for publication (2020).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":99,\"length\":19},{\"style\":\"bold\",\"offset\":118,\"length\":2}],\"entityRanges\":[{\"key\":0,\"offset\":61,\"length\":36},{\"key\":1,\"offset\":200,\"length\":85}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"5903E0D7ECA111EA93D00A58A9FEAC2A\",\"url\":\"http://physics.nyu.edu/grierlab/binding06c\"}},\"1\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"39CA26A7ECA111EA93D00A58A9FEAC2A\",\"url\":\"http://physics.nyu.edu/grierlab/immunoassay02c\"}}}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"c88i9\",\"text\":\"Sealed patient samples must be heat-treated to inactivate viruses in patient samples before samples are processed in a BSL2 facility.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"3vaku\",\"text\":\"Patient samples must be handled and disposed of appropriately.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"k5AG4\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"O1wTs\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":580524,\"guid\":\"425FFCB9341F11EE9D4302C0B41BC903\",\"name\":\"HD Test Kit\",\"mol_weight\":0,\"sku\":\"HD SARS-CoV-2 TK-1\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "2 mL, saliva $2 Subject passively collects saliva for testing. SDNA-1000 (Whole Saliva Collection Kit, Spectrum Solutions, NA)",
+    "65 °C Heat treat patient sample to inactivate virus. Patient samples must remain sealed until they are heat treated. BSL3 facilities are required to work with untreated samples. Heat-treated samples may be opened for processing in BSL2 facilities. Heat treatment may disrupt virus particles, liberating the antigens that are targets for the assay. This is not a problem because holographic immunoassays can detect dissolved proteins as well as dispersed virus particles.",
+    "20 µL, HD SARS-CoV-2 test kit $1 Add HolographicDiagnostics test kit to inactivated saliva sample.",
+    "120 rpm, Room temperature, Incubate sample with test kit.",
+    "1000 rpm, Room temperature, Concentrate test beads by centrifugation.",
+    "For each sample in 96-well plate, xStream transfers sample to xCell microfluidic chip for measurement in xSight. xCell (Microfluidic sample holder, Spheryx, xCell-8) 30 µL $40/8 tests Transfer concentrated beads to first available reservoir in xCell. xCell has 8 reservoirs, permitting up to 8 independent tests to be performed with a single chip. The cost per chip will decrease with volume purchases. xStream automatically loads and disposes of xCells as needed.",
+    "Perform holographic characterization measurement on loaded sample xSight (Holographic Particle Characterizer, Spheryx, xSight) xStream inserts xCell in xSight and initiates sample analysis xSight settings wavelength: 445 nm analytical volume: 1 uL presaved ROI for each type of test bead in test kit",
+    "Results of test are reported out. Report population mean diameter for each type of bead in test kit HD SARS-CoV-2 TK-1 includes beads for three biomarkers (SARS-CoV-2 S1, S2 and M) and one negative control (H1N1).",
+    "Dispose of used sample containers, pipette tips and xCells Used sample containers, pipette tips and xCells must be disposed in compliant biohazard containers. xStream deposits used xCells in suitable containers. Manual disposal is required for all other consumable items.",
+    "Transfer sample to 96-well plate Sample barcode must be associated with the well in analytical software. Currently, this transfer is performed manually using a barcode scanner. Adoption of an automated sample preparation system also will automate this step",
+    "Transfer 96-well plate to xStream sample robot xStream (Sample handling robot, Spheryx, xStream)"
+  ],
+  "authors": [
+    "Rushna Quddus",
+    "Kaitlynn Snyder",
+    "Lauren Altman",
+    "Laura A Philips",
+    "David G. Grier",
+    "Andrew D. Hollingsworth",
+    "Kent Kirshenbaum"
+  ],
+  "creator": "David G. Grier",
+  "published_on": 1599430711,
+  "created_on": 1599057200,
+  "keywords": []
+}

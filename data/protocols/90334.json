@@ -1,0 +1,35 @@
+{
+  "id": 90334,
+  "title": "Vesicle Fusion on SiO2 Substrates",
+  "uri": "vesicle-fusion-on-sio2-substrates-c4f6ytre",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgq3b4ylk5/v2",
+  "description": "{\"blocks\":[{\"key\":\"5fj27\",\"text\":\"This protocol outlines the steps to produce large area, uniform supported lipid bilayers on SiO2 substrates with or without patterned features.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Clean plain SiO 2 or TiO 2 -patterned substrates by sonicating them in a 1:1 IPA:Acetone mixture for ~2 minutes Dry with a steady stream of N 2",
+    "Oxygen plasma clean the substrates for 2 minutes to remove any residual surface contamination For our Anatech SP-100 system, the RF power is set to 120 watts, the O 2 flow rate to 15 ccm, and the pressure to 0.35-0.40 torr",
+    "Prepare a 1.2 mg/mL DLPC 0.5mol% Rho-PE solution (suitable for FRAP measurements and general fluorescence imaging) or a 0.3mg/mL DLPC 0.0025mol% Rho-PE solution (suitable for FCS measurements)",
+    "To prepare 1.2 (0.3) mg/mL DLPC 0.5 (0.0025) mol% Rho-PE solutions: Measure out appropriate amount of DLPC (stored as powder) into a glass vial 6 mg of DLPC for FRAP concentration; 1.55 mg of DLPC for FCS concentration Add appropriate amount of Rho-PE (stored as 1 mg/mL in chloroform) to DLPC 60.6 μL of 1 mg/mL Rho-PE for FRAP concentration; 0.0781 μL of 1 mg/mL Rho-PE for FCS concentration mol % = mols Rho-PE/(mols Rho-PE + mols DLPC) For 1.2 mg/mL DLPC 0.5mol%: 0.005 = x/(x + 0.006g/621.85g/mol) Add 100-200 μL chloroform to vial Dry with N 2 so the solution doesn&#39;t look glassy-- it should have a dull appearance Glassy: FRAP solution before N 2 dry Past glassy: FRAP solution after N 2 dry Leave in vacuum desiccator overnight to fully remove residual chloroform.",
+    "After drying, re-hydrate solution with phosphate buffered saline to achieve desired concentrations of 1.2 mg/mL or 0.3 mg/mL After adding phosphate buffered saline to the solution, shake or sonicate the glass vial(s) for ~30 seconds or until the dried DLPC/Rho-PE have been fully dissolved Re-hydrated FRAP solution Re-hydrated FCS solution",
+    "Extrude 1.2 (0.3) mg/mL DLPC 0.5 (0.0025) mol% Rho-PE solution 21 times Mini Extruder (Avanti Polar Lipids, 610000-1EA, https://avantilipids.com/product/610000 ) 19mm Nuclepore™ Polycarbonate Track-Etched Membranes (Whatman, 10419504, https://scientificfilters.com/whatman/membranes-track-etched-polycarbonate-800310 ) 10mm Filter Supports (Whatman, 610014-1EA, https://avantilipids.com/product/610014 ) To prepare the Mini Extruder, place filter supports in the middle of the rubber o-rings on the plastic cylinders. Deposit ~15 μL phosphate buffered saline on each support and use the pipette tip to move buffer around so each support is fully wet. Place the 100nm filter membrane on one of the supports, making sure it&#39;s secure with the phosphate buffered saline. Place the cylinder with the filter 3/4 of the way into the metal cylinder, place the other cylinder on top, sandwiching the membrane filter between the filter supports. Allow the cylinders to rest fully in the metal cylinder, then screw on the metal nut. Use one of the extruder syringes to measure out at least 300 μL of 1.2 (0.3) mg/mL DLPC 0.5 (0.0025) mol% Rho-PE solution and stick the syringe into one end of the just-assembled filter apparatus. Stick the other extruder syringe into the other end of the filter apparatus. Push the DLPC solution back and forth 21 times, ending in the syringe that was empty to begin with. Note that some solution will be lost during the extrusion process. FRAP solution before extrusion FRAP solution after extrusion FCS solution before extrusion FCS solution after extrusion",
+    "After extrusion, aliquot the solution into Eppendorf tubes and store at -20ºC until ready to use",
+    "Imaging Chamber (CoverWell, 635011, https://gracebio.com/product/coverwell-imaging-chambers-635011/ ) Set hotplate to 30ºC Use double-sided kapton tape to adhere a substrate to the bottom of an imaging chamber Substrates adhered to imaging chambers",
+    "Place the substrate on the hotplate and deposit 30 μL of 1.2 (0.3) mg/mL DLPC 0.5 (0.0025) mol% Rho-PE solution and 90 μL phosphate buffered saline onto the substrate Cover the substrate with a pipette box top or something else to protect from dust Let the substrate incubate for 10 minutes TiO 2 -patterned substrates with DLPC solution and phosphate buffered saline",
+    "After 10 minutes of incubation, deposit 700 μL of phosphate buffered saline onto the substrate, flooding the imaging chamber TiO 2 -patterned substrates after flooding the imaging chamber",
+    "Wash the substrate by pipetting 500 μL off and then depositing it back on, moving around the substrate Repeat 15 times Take 500 μL of the solution off Move to a different side of the substrate Deposit the 500 μL of solution back into the imaging chamber Move to a different side of the substrate and take 500 μL of solution off Move to a different side of the substrate and deposit the 500 μL of solution back into the imaging chamber",
+    "After 15 washing steps, take 500 μL off and depose of it",
+    "Roll a coverslip over the imaging chamber For FCS measurements, coat the sides of the coverslip with clear nail polish to seal it to the imaging chamber Substrates with coverslip",
+    "Image the samples to confirm bilayer formation. A representative image is shown below: black circles are TiO2 features deposited on the surface to inhibit bilayer formation (scale bar is 100um)"
+  ],
+  "authors": [
+    "Nicole Voce",
+    "Paul Stevenson"
+  ],
+  "creator": "Nicole Voce",
+  "published_on": 1698956274,
+  "created_on": 1698955617,
+  "keywords": []
+}

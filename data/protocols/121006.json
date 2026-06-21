@@ -1,0 +1,39 @@
+{
+  "id": 121006,
+  "title": "Competitive receptor binding assay to probe for agonist binding to CXCR2",
+  "uri": "competitive-receptor-binding-assay-to-probe-for-ag-d2en8bde",
+  "doi": "dx.doi.org/10.1038/nprot.2007.211",
+  "description": "{\"blocks\":[{\"key\":\"x8muw\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"n0hjm\",\"text\":\"Based on an observed apparent structural homology between the monomeric structure of the cytokine MIF and the CXCL8 dimer, we have tested whether MIF can directly interact with the cognate CXCL8 receptor CXCR2. Using a competitive receptor binding assay and other biochemical interaction assays, we found that MIF in fact directly binds to CXCR2 with a nanomolar affinity comparable to that observed for the cognate ligand CXCL8 (ref. 1).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"yjbrh\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"gdcqk\",\"text\":\"125I -labeled recombinant CXCL8 (IM249, Amersham)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"l9ypc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4pyiv\",\"text\":\"125I-labeled recombinant CXCL12 (IM314, Amersham)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fqlxn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lcu5b\",\"text\":\"Recombinant CXCL8 (PeproTech EC/CellConcept, Umkirch, Germany)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jp7ms\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c8aij\",\"text\":\"HEK293 cells stably expressing CXCR2 (from Ben-Baruch Lab, Tel-Aviv, Israel)2\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":76,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fgqbg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"0vtqs\",\"text\":\"Liquid scintillation cocktail, Aquasafe 500 plus (Zinsser Analytic, Frankfurt)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lusde\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4xwl1\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"hpfsl\",\"text\":\"Wallac 1409 DSA liquid scintillation counter (PerkinElmer)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Cultivate cells endogenously expressing or stably overexpressing CXCR2 (i.e. HEK293-CXCR2 cells) (10 5 cells/mL) in a 24-well plate in DMEM medium plus 10% FCS overnight.",
+    "Remove the medium and add binding buffer (medium without FCS).",
+    "Put the plate on ice for 10 min.",
+    "Add cold agonist, i.e. rMIF or cold CXCL8 (0 – 1 µM) together with the tracer (40 pM of 125I-labeled recombinant CXCL8).",
+    "Perform equilibrium receptor binding for 90 min at 4 °C.",
+    "Remove the medium and wash the cells twice with cold medium.",
+    "Harvest the cells by adding 0.5 M NaOH.",
+    "Transfer the lysate to a liquid scintillation tube.",
+    "Add Aquasafe 500 plus LSC cocktail and mix well.",
+    "Determine the cell-bound radioactivity by liquid scintillation counting.",
+    "For most agonist-receptor interactions, assume that receptor binding inhibition by agonist (i.e. rMIF or cold CXCL8) follows a one-site model.",
+    "Calculate the EC 50 , K i and K d values by using the equation of Cheng and Prusoff for heterologous competition experiments, applying the GraphPad software.",
+    "Overall 2 days Binding assay including counting per se 3-4 h",
+    "It is advised to use adherent cells. If using such cells, avoid disturbing cell adhesion during washing steps.",
+    "See for example Bernhagen et al ., Nat. Med. 2007.",
+    "MIF is a noncognate ligand of CXC chemokine receptors in inflammatory and atherogenic cell recruitment by J Bernhagen, R Krohn, H Lue, JL Gregory, A Zernecke, RR Koenen, M Dewor, I Georgiev, A Schober, L Leng, T Kooistra, G Fingerle-Rowson, P Ghezzi, R Kleemann, S R McColl, R Bucala, MJ Hickey &amp; C Weber published in Nature Medicine on 28 Feb, 2007 https://dx.doi.org/10.1038/nm1567"
+  ],
+  "authors": [
+    "Hongqi Lue",
+    "Ivan T. Georgiev",
+    "Juergen Bernhagen",
+    "Christian Weber"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1176874332,
+  "created_on": 1176874332,
+  "keywords": []
+}

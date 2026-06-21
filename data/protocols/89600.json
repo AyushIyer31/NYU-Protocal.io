@@ -1,0 +1,28 @@
+{
+  "id": 89600,
+  "title": "Magnetic resonance imaging (MRI)",
+  "uri": "magnetic-resonance-imaging-mri-c3q8ymzw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6x3mdlqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"9dgd8\",\"text\":\"Magnetic resonance imaging (MRI) of mouse brain\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Prepare the equipment: 7T Bruker BioSpec 70/30USR scanner (Bruker BioSpin GmbH, Ettlingen, Germany) equipped with a mini-imaging gradient set (400mT/m) and using a 72-mm inner diameter linear volume coil as a transmitter and a dedicated mouse brain surface coil as a receiver.",
+    "Prepare the software: Acquire and process all MRI data on a Linux computer using Paravision 5.1 software (Bruker BioSpin GmbH, Karlsruhe,Germany)(RRID:SCR_001964, http://www.bruker.com/service/support-upgrades/software-downloads/mri.html).",
+    "Anesthetize the animals (1.5-2% isoflurane in 1 L/min oxygen for maintenance) and place them into an animal bed with bite-bar and ear-bars for optimal head immobilization.",
+    "Control the respiration rate (50-100 bpm) and core body temperature (37 ± 1°C) with an animal monitoring and control system (SA Instruments, Stony Brook, NT).",
+    "Acquire high resolution T1-weighted spin-echo images in the axial plane with and without fat saturation pulses.",
+    "Acquire two slice packages of 7 contiguous slices each containing the SNpc and LC regions and using the following parameter: TE=7 ms; TR= 500 ms; NA=56; FOV=1.92×1.92 cm2; MTX=128×128; ST= 0.25 mm; thus, resulting in a spatial resolution of 150×150×250 µm3; Acqt= 1h per image."
+  ],
+  "authors": [
+    "Núria Peñuelas",
+    "Ariadna Laguna",
+    "Miquel Vila"
+  ],
+  "creator": "Miquel Vila",
+  "published_on": 1697810719,
+  "created_on": 1697705955,
+  "keywords": []
+}

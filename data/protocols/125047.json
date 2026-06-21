@@ -1,0 +1,26 @@
+{
+  "id": 125047,
+  "title": "TGD_Genotyping_Core_Instructions",
+  "uri": "tgd-genotyping-core-instructions-d6cx9axn",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"fk7uc\",\"text\":\"This is the protocol to follow by the Stanford Genomics Core with regards to processing samples coming from the Translational Genomics of Diabetes Lab.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "The Gloyn Lab will deliver the following to the Stanford Genotyping Core: - Extracted sample DNA (either 96-well plates or tubes) - Genotyping arrays (Illumina Omni2.5Exome V1.6 [Omni] or Global Diversity Array [GDA]) - Sample QC excel sheet containing sample identifiers, plate arrangements, and quality control information Samples for genotyping are submitted as single batches (~50-200 samples per batch) *Important note* each batch of samples delivered corresponds to one model of genotyping array , no batch should mix array types. For example, 64 samples may be delivered at once for GDA genotyping, Separately, 128 may be delivered as a separate batch for Omni genotyping.",
+    "Genotyping core saves the output files with a new naming schema We are changing to a new naming schema so Omni and GDA array files do not get mixed up Omni arrays - Please continue with the V&lt;XXX&gt; naming schema e.g. V158, V159 GDA arrays - Please name all GDA arrays from now as G&lt;XXX&gt; naming schema starting at G043 *Important note* please keep the naming consistent, e.g. G043 not G_043 or G43",
+    "Genotyping core runs the genotyping protocol Genotyping arrays are run for all samples generating IDAT files containing intensity data. *Important note* sample names as provided need to be preserved exactly. For instance, if a sample is listed as &#39;EDMN480DNA&#39; on the Sample QC Sheet, please make sure that it is recorded as &#39;EDMN480DNA&#39; in the genotyping data (please make sure that there are no extra underscores, no omissions of the &#39;DNA&#39; suffix, etc). Previously we have had issues with sample names being changed, e.g. HIGI changed to HIG1, EDMNDNA changed to EDMN.",
+    "Genotyping core uses Illumina GenomeStudio to cluster and export genotyping data Intensity files are clustered and exported as PLINK data files (ped/map) using GenomeStudio with the following settings: - Manifest/strand A1 orientation (A1 in file name) - Aligned to TOP strand (default if left unchanged) - Tick &#34;Remove zeroed SNPs from report&#34; - Any option to select manifest should correspond to GRCh37/hg19 *Important note* each type of array MUST be clustered with different input files GDA - as per genome studio: • Manifest file: default option corresponding to A1 / TOP • Cluster file: default option corresponding to A1 / TOP Omni - custom Gloyn lab files: • Manifest file: &#34;Omni2-5Exome-8v1-6_20098051_A1.bpm&#34; • Cluster file: &#34;TGD_Omni2_5_v1_6_Exome_V1_5_A1.egt&#34;",
+    "Genotyping core uploads data via Globus. Please create a collection on your Globus endpoint. Please keep Omni and GDA arrays in separate collections and make sure to label which are GDA and which are Omni respectively Gloyn lab will access the Globus endpoint and transfer the files to the Gloyn lab space (/oak/stanford/groups/agloyn/) using the SRCC_Oak endpoint. *Important note* please only upload whole batches when complete rather than partial files",
+    "Gloyn dry lab team will copy and verify the files."
+  ],
+  "authors": [
+    "Seth Sharp"
+  ],
+  "creator": "Swaraj Thaman",
+  "published_on": 1742944906,
+  "created_on": 1742944105,
+  "keywords": []
+}

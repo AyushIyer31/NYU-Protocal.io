@@ -1,0 +1,33 @@
+{
+  "id": 25253,
+  "title": "Cloning of L0 parts into pUAP-ye for Loop typeIIS",
+  "uri": "cloning-of-l0-parts-into-puap-ye-for-loop-typeiis-4wdgxa6",
+  "doi": "dx.doi.org/10.17504/protocols.io.4wdgxa6",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Design primers as described in the Figure below to add the necessary overhangs for cloning into pUAP-pe and also the overhangs that correspond to the common syntax.",
+    "DNA parts are PCR amplified from the source DNA part (e.g. plasmid DNA or genomic DNA), using a high fidelity DNA polymerase such as Phusion. Use 10 ng of DNA if the template is plasmid DNA and 100ng if the template is genomic DNA. The cycling conditions are: Denaturation at 98 °C for 30 s. 35 cycles of: denaturation at 98 °C for 10 s, annealing at primer annealing temperature for 30 s, and extension at 72 °C for 15 s/kb. Final extension at 72 °C for 10 min.",
+    "Run the PCR products on a 1.5% (w/v) agarose gel.",
+    "Gel extract the band that corresponds to the size of the amplified DNA part using a kit such as QIAquick Gel Extraction Kit.",
+    "Determine DNA concentration with spectrophotometry (Nanodrop).",
+    "Prepare aliquots of the DNA part at a concentration of 15 nM and of the pUAP-pe acceptor vector at a concentration of 7.5 nM.",
+    "Set up a Type IIS assembly reaction into a 0.2 mL tube according to Table to clone the amplified DNA part into pUAP-pe. %s %s",
+    "Place samples on a thermocycler and use the following program: Assembly: 26 cycles of 37​ °C for 3 min and 16 °C for 4 min. Termination and enzyme denaturation: 50 °C for 5 min and 80 °C for 10 min.",
+    "Transform 20 μL of chemically competent E. coli cells (transformation efficiency of 1 × 10 7 transformants/µg plasmid DNA) using 2 μL of the assembly reaction and then spread on LB agar plates containing 25 μg/mL chloramphenicol.",
+    "Incubate overnight at 37 °C.",
+    "Select white colonies for sequencing.",
+    "Confirm the presence of the correct insert with Sanger sequencing using the primers UAP_F and UAP_R and any additional DNA part specific primers."
+  ],
+  "authors": [
+    "Eftychis Frangedakis",
+    "Susana Sauret-Gueto"
+  ],
+  "creator": "Eftychis Frangedakis",
+  "published_on": 1569339333,
+  "created_on": 1561736896,
+  "keywords": []
+}

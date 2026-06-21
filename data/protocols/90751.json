@@ -1,0 +1,31 @@
+{
+  "id": 90751,
+  "title": "Elution of nasal lining fluid collected via nasosorption",
+  "uri": "elution-of-nasal-lining-fluid-collected-via-nasoso-c4u7ywzn",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn3nn6l5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"1m1v4\",\"text\":\"This procedure outlines the materials and processes for eluting nasal lining fluid collected using a Mucosal Diagnostics FX-i nasosorption device. This protocol has been successfully used to elute nasal lining fluid for both DNA extraction for 16s rRNA sequencing \\u0026 metagenomics, and for proteomics using the SomaScan assay.\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9hia\",\"text\":\"This protocol should be performed in a sterile environment to reduce cross contamination between nasosorption devices, to enable metagnomic DNA extraction and analyses\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"7ra6\",\"text\":\"Phosphate Buffered Saline (PBS) (#10010023)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c4f1t\",\"text\":\"Tween 20 (Sigma, #P9416-50ML)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bt3ij\",\"text\":\"Corning SpinX columns (Sigma, #CLS9301)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dh9ug\",\"text\":\"2mL Corning microfuge tubes (Sigma, #CLS3213)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1a2lk\",\"text\":\"Sterile forceps (two pairs per swab)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8k3tj\",\"text\":\"1.6mL sterile microfuge tubes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Add 0.05 % volume of Tween20 to PBS in a sterile environment to reduce cross-contamination",
+    "Store at 4 °C until required",
+    "Thaw nasosorption device in cryotube on ice",
+    "Add 300 µL of elution buffer to a labelled 2mL microcentrifuge tube and place on ice",
+    "Remove the synthetic absorptive matrix (SAM) from the nasosorption device using sterile forceps by tearing it from the handle and place in the microcentrifuge tube containing elution buffer",
+    "Vortex the microcentrifuge tube for 00:00:30",
+    "Using a new pair of sterile forceps, remove the SAM from the elution buffer, and place into a spinX column on a new 2mL microcentrifuge tube",
+    "Add the elution buffer from the first tube onto the SAM in the spinX column",
+    "Centrifuge the SAM and spinX column at 16000 x g, °C, for 00:30:00 at 4 °C",
+    "Discard the spinX column and SAM",
+    "Aliquot the eluate into labelled microtubes, and measure total protein concentration using the assay of your choice (Pierce BCA assay, Qubit protein assay etc)"
+  ],
+  "authors": [
+    "Samuel Montgomery"
+  ],
+  "creator": "Samuel Montgomery",
+  "published_on": 1699608606,
+  "created_on": 1699581971,
+  "keywords": []
+}

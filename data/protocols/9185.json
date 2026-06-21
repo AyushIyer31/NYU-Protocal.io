@@ -1,0 +1,35 @@
+{
+  "id": 9185,
+  "title": "Cell lysis, detergent-free",
+  "uri": "cell-lysis-detergent-free-k79czr6",
+  "doi": "dx.doi.org/10.17504/protocols.io.k79czr6",
+  "description": "{\"blocks\":[{\"key\":\"7og5s\",\"text\":\"Detergents are generally not compatible with mass spectrometers, so this is a detergent-free method of cell lysis that is compatible with mass spectrometry. Since this protocol does not have a precipitation step, it saves time and minimizes sample loss as well.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"12q88\",\"text\":\"Mix well after each step by vortex for 2 seconds.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"6t65e\",\"text\":\"Prepare ice bucket.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"bb2oq\",\"text\":\"Prepare 90oC heat block.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":10,\"length\":1}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"6im2l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Fresh or previously frozen, store on ice. Original protocol uses 5x10 7 cells per sample.",
+    "undetermined, ice cold Milli-Q water",
+    "1:1 water-TFE acts as a hypotonic aqueous buffer to lyse cells, eliminating the need for detergent. TFE helps protein solubility and denaturation; it readily evaporates, so removing it is easy. undetermined, Trifluoroethanol TFE is located in NCE 435 - flammable cabinet TFE evaporates fast, so work quickly. This step should be done in the fume hood.",
+    "Original protcol calls for 2 mins at 20% duty cycle, output control 3 using a ultrasonic probe. The time required to do this for large number of samples is not realistic, and therefore not used here. 00:02:00, in water bath benchtop sonicator While this step is happening, turn on the heat block and set it at 95oC",
+    "undetermined, Tris pH 8.5, 100mM",
+    "Add TCEP (tris(2-carboxyethyl)phosphine to a final concentration of 10mM TCEP is located at NCE 436 -20C freezer door",
+    "Add 2-chloroacetamide to a final concentration of 40mM 2-chloroacetamide is located in NCE 438 - chemical shelves 00:10:00, 95oC in a heat block",
+    "Spindown debris at top speed on a benchtop centrifuge for 10 minutes, then keep the supernatant.",
+    "undetermined, 50mM ammonium bicarbonate",
+    "Add 1ug LysC to every 50ug protein 02:00:00 Undetermined, incubator (not heat block)",
+    "Add 1ug trypsin to every 50 ug protein. Allow reaction to occur overnight. 16:00:00, minimum reaction time Undetermined, incubator (not heat block)",
+    "Proceed with desalting as normal",
+    "00:01:00",
+    "00:10:00",
+    "Use the Coomassie reagent to measure protein concentration. Aliquot the desired amount to proceed with the remainder of this experiment. Freezing unused protein is not recommended since there is a high chance of precipitation upon thawing."
+  ],
+  "authors": [
+    "Queenie Chan"
+  ],
+  "creator": "Queenie Chan",
+  "published_on": 1519955086,
+  "created_on": 1513014336,
+  "keywords": []
+}

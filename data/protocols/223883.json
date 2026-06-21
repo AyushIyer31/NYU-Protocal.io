@@ -1,0 +1,40 @@
+{
+  "id": 223883,
+  "title": "Publicly available datasets for artificial intelligence in neurosurgery: a systematic review",
+  "uri": "publicly-available-datasets-for-artificial-intelli-g6vjbze4p",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ld6z67g5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"rl72\",\"text\":\"We conducted a systematic review according to PRISMA guidelines to identify publicly available neurosurgical datasets suitable for machine learning. A PubMed search on February 8, 2025, yielded 267 articles, of which 86 met inclusion criteria. Each study was reviewed to extract dataset characteristics, model development details, validation status, availability, and citation impact. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"doxng\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"wekmi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Manually and individually review all resulting studies from the search strategy by two researchers in parallel.",
+    "Apply the following inclusion criteria: (1) publication from 01/01/2016 and onward, (2) release of novel data (not a secondary analysis or analysis of previously released data), (3) already publicly available data or can apply for access, (4) data derived from human patients with neurosurgical relevant diagnosis in pre, peri, post-operative care or laboratory samples.",
+    "Apply the following exclusion criteria: (1) non-English articles, (2) non-primary research, (3) less than 100 data items, (4) non-peer reviewed articles and abstracts. Exclude studies that included &lt;100 patients but 100 or more data items were not excluded due to the increase in few shot learning techniques available. The 100 data item requirement aims to exclude case series that focus on dedicated projects of dataset development. Furthermore, novel data must comprise the majority (&gt;= 50%) of all data used for training for studies that use both private and public datasets. If the split is unclear, exclude the study. If data was cited in a previously published study, exclude the article unless access can be requested from the authors and the article is included. This assumption is included to avoid missing subdomains of data that the convention may be to request data directly from authors in the subdomain.",
+    "After articles are independently selected by the screeners based on the above criteria and assumptions, resolve any disagreements between the two screeners through discussion.",
+    "To study generalizability and validation of the data/models, extract the following variables from the selected articles by two researchers in parallel: whether the data is labeled, whether the data source is multi-institutional, number of institutions, whether there are institutions that are non-tertiary academic centers, whether a trained model is included, whether the model is externally validated, and whether the model is publicly available (e.g., if code and weights are provided) and has a public application (e.g., available web application). To meet the criteria for external validation, ensure the model is evaluated with data from more than one institution.",
+    "To study model functionality and impact, collect the primary data type, the sample size of the primary data, the label type, the inference class if the paper included a baseline model, performance metrics of the model, and the number of article citations.",
+    "Resolve any disagreements between the two authors on the information from object extraction through discussion.",
+    "Prior to performing analysis, classify the primary data type into seven categories (i.e.: X-ray, CT, MRI, PET, clinical, sensor, video). Categorize the label type into seven categories (i.e.: diagnosis, segmentation, detection/localization, intervention, grading, image, outcome). Across all studies, classify the inference class of the baseline model into eight categories (i.e.: diagnosis, detection/localization, segmentation, intervention, measurement, grading, outcome, generative). Classify all baseline models into linear, convolutional neural network (CNN), segmentation, non-transformer NLP, transformer, and generative adversarial network (GAN).",
+    "To assess the methodological quality and risk of bias of included studies, develop a custom checklist reflecting critical aspects of dataset and model robustness. Evaluate each study for inclusion of multi-institutional data, use of external validation, public availability of code, presence of a public-facing application, use of task-appropriate performance metrics, and inclusion of outcome labels.",
+    "Perform a comprehensive literature search in the PubMed database using the following exact query: data release[Title/Abstract] OR &#34;novel data&#34;[Title/Abstract] OR &#34;primary dataset&#34;[Title/Abstract] OR &#34;dataset&#34;[Title/Abstract]) AND (&#34;machine learning&#34;[Title/Abstract] AND &#34;artificial intelligence&#34;[Title/Abstract] OR &#34;AI&#34;[Title/Abstract] OR &#34;deep learning&#34;[Title/Abstract] OR &#34;ML&#34;[Title/Abstract] OR &#34;Neural Networks&#34;[Title/Abstract]) AND (&#34;neurosurger*&#34;[MeSH Terms] OR &#34;neurosurgical&#34;[Title/Abstract] OR &#34;vascular neurosurgery&#34;[Title/Abstract] OR &#34;neurooncology&#34;[Title/Abstract] OR &#34;functional neurosurgery&#34;[Title/Abstract] OR &#34;spine&#34;[Title/Abstract] OR &#34;TBI&#34;[Title/Abstract] OR &#34;neurosurgical care&#34;[Title/Abstract]) AND (&#34;2016/01/01&#34;[Date - Publication] : &#34;3000&#34;[Date - Publication]).",
+    "Assign a score from 0 to 6 based on the number of criteria met. Use this simple quality score to gauge the risk of bias and generalizability of each dataset.",
+    "Obtain basic identifying information from each selected article including title, publication year, and PubMed ID."
+  ],
+  "authors": [
+    "Bianca Chan",
+    "Brandon Kim",
+    "Ethan Schonfeld",
+    "George Nageeb",
+    "Aaradhya Pant",
+    "Adam Sjoholm",
+    "Ravi Medikonda",
+    "Ummey Hani",
+    "Anand Veeravagu"
+  ],
+  "creator": "Bianca Chan",
+  "published_on": 1754076252,
+  "created_on": 1754063539,
+  "keywords": []
+}

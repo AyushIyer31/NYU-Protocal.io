@@ -1,0 +1,32 @@
+{
+  "id": 236048,
+  "title": "LC-MS/MS Proteomics Data Searching for PASEF DIA and DDA",
+  "uri": "lc-ms-ms-proteomics-data-searching-for-pasef-dia-a-hirqb4d5x",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlk15pdg5r/v2",
+  "description": "{\"blocks\":[{\"key\":\"brugk\",\"text\":\"The following are search parameters for DIA and DDA PASEF bottom-up, unlabeled proteomics data collected on timsTOF mass spectrometers.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"5l5s2\",\"text\":\"1. Scaffold DDA viewer can be downloaded for free here: www.proteomesoftware.com\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "A new project was made within Scaffold DDA version 6.7.4 with all samples loaded simultaneously",
+    "Data were searched within sDDA using MSFragger with the default parameters recommended by sDDA using the human uniprot database containing 50% decoys",
+    "With these initial filters, data were filtered within sDDA with 5% peptide and 5% protein FDR with a 2 peptide minimum Data was then additionally filtered down to 1% peptide and 1% protein FDR with a 2 peptide minimum to ensure quality reports",
+    "Exports were generated from sDDA GUI view: - Samples report - Peptide report - Spectra report by protein group",
+    "Create a new project and load all DIA raw files into Spectronaut version 20.3",
+    "Search the data within spectronaut as a &#34;library free&#34; analysis bases on the human uniprot database with fully default parameters",
+    "Export the following pre-loaded report formats - Pivoted BGS report - Pivoted Protein report"
+  ],
+  "authors": [
+    "hayes.mcdonald",
+    "Tina Tsui",
+    "Jamie Allen",
+    "Madeline E. Colley",
+    "Melissa Farrow",
+    "Jeff Spraggins"
+  ],
+  "creator": "Madeline E. Colley",
+  "published_on": 1767111285,
+  "created_on": 1767111100,
+  "keywords": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": 91804,
+  "title": "BIT 577 QIIME2 Tutorial",
+  "uri": "bit-577-qiime2-tutorial-c5v4y68w",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl8pqe9g2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"2f6s1\",\"text\":\"Command line scripts for processing and analyzing 16S amplicon data using QIIME2.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Download conda through the QIIME2 website or miniconda website. After installation, download and install QIIME2",
+    "Activate Qiime environment: conda activate qiime2-amplicon-2023.9 # change out to whatever version has been downloaded",
+    "Import data qiime tools import \\ --type &#39;SampleData[SequencesWithQuality]&#39; \\ --input-path/path/to/your/sequencefiles \\ --input-format CasavaOneEightSingleLanePerSampleDirFmt \\ --output-path demux-single-end.qza",
+    "Check quality qiime demux summarize --p-n 10000 --i-data demux-single-end.qza --o-visualization qual_viz qiime tools view qual_viz.qzv",
+    "Denoise with DADA2 qiime dada2 denoise-single \\ --i-demultiplexed-seqs demux-single-end.qza \\ --p-trunc-len 200 \\ #at what position you should trim your data based on the demux summary above --o-table table.qza \\ #ASV table --o-representative-sequences rep-sets.qza \\ --o-denoising-stats denoising-stats.qza",
+    "Filter Sequence Table qiime feature-table summarize \\ &gt; --i-table table.qza \\ &gt; --o-visualization vis_table qiime tools view vis_table.qzv",
+    "Align and Construct Phylogenetic Tree qiime phylogeny align-to-tree-mafft-fasttree \\ # program used for construction --i-sequences rep-sets.qza \\ --o-alignment aligned-rep-seqs.qza \\ --o-masked-alignment masked-aligned-rep-seqs.qza \\ --o-tree unrooted-tree.qza \\ --o-rooted-tree rooted-tree.qza",
+    "Compute diversity measures (see QIIME2 for differences in alpha, beta, and emperor plots) qiime diversity core-metrics-phylogenetic --i-tabletable.qza --i-phylogeny rooted-tree.qza --p-sampling-depth 29761--m-metadata-file /Users/isabellalivingston/Desktop/16S SequenceData/GSL_metadata.txt --o-rarefied-table rare_featuretable --o-faith-pd-vectorfaithpd_vector --o-observed-features-vector observed_sample_features_vector--o-shannon-vector shannon_sample_vector --o-evenness-vectorevenness_sample_vector --o-unweighted-unifrac-distance-matrixunweighted_distance_matrix --o-weighted-unifrac-distance-matrixweighted_distance_matrix --o-jaccard-distance-matrix jaccard_matrix--o-bray-curtis-distance-matrix bc_matrix --o-unweighted-unifrac-pcoa-resultsunweighted_pcoa --o-weighted-unifrac-pcoa-results weighted_pcoa--o-jaccard-pcoa-results jaccard_pcoa --o-bray-curtis-pcoa-results bc_pcoa--o-unweighted-unifrac-emperor unweighted_emperor --o-weighted-unifrac-emperorweighted_emperor --o-jaccard-emperor jaccard_emperor --o-bray-curtis-emperorbc_emperor",
+    "Test for differences in diversity using metadata # Alpha Diversity qiime diversity alpha-group-significance --i-alpha-diversity faithpd_vector.qza --m-metadata-file /path/to/metadata/txt file --o-visualization faith-pd-group-significance.qzv qiime diversity alpha-group-significance --i-alpha-diversityevenness_sample_vector.qza --m-metadata-file/Users/isabellalivingston/Desktop/16S\\ Sequence\\ Data/GSL_metadata.txt--o-visualization evenness-group-significance.qzv qiime diversity alpha-group-significance --i-alpha-diversityshannon_sample_vector.qza --m-metadata-file/Users/isabellalivingston/Desktop/Metadata\\ for\\ GSL.tsv --o-visualizationalpha_diversity # Emperor plots qiime emperor plot --i-pcoa unweighted_pcoa.qza--m-metadata-file /Users/isabellalivingston/Desktop/16S\\ Sequence\\Data/GSL_metadata.txt --o-visualization unweighted-unifrac-emperor-sex.qzv qiime emperor plot --i-pcoa bc_pcoa.qza --m-metadata-file/Users/isabellalivingston/Desktop/16S\\ Sequence\\ Data/GSL_metadata.txt--p-custom-axes sex --o-visualization bc-sex-sex.qzv # Beta diversity qiime diversity beta-group-significance --i-distance-matrixunweighted_distance_matrix.qza --m-metadata-file/Users/isabellalivingston/Desktop/16S\\ Sequence\\ Data/GSL_metadata.txt--m-metadata-column sex --o-visualization unweighted-unifrac-sex-significance.qzv--p-pairwise",
+    "Taxonomic Classification wget https://data.qiime2.org/2018.2/common/gg-13-8-99-515-806-nb-classifier.qza #download classifier of choice qiime feature-classifier classify-sklearn \\ --i-classifier /path/to/classifier.qza \\ --i-reads rep-sets.qza \\ --o-classification {TAXONOMY}.qza qiime metadata tabulate \\ --m-input-file {TAXONOMY}.qza --o-visualization {TAXONOMY_VIZ}.qzv qiime taxa barplot \\ --i-table table.qza\\ --i-taxonomy{TAXONOMY}.qza \\ --m-metadata-file/path/to/etadata/txtfile\\ --o-visualization{TAXA-BAR-PLOTS_VIZ}.qzv qiime tools view {TAXA-BAR-PLOTS_VIZ}.qzv",
+    "Export Data Qiime tools export \\ --input-path taxtable.qza \\ --output-path exported-taxa-table # Should get a confirmation like this: Exported taxtable.qza as BIOMV210DirFmt to directoryexported-taxa-table # convert from biom to tsv for future analysis Biom convert -i/path/to/biom/file -o table.tsv--to-tsv"
+  ],
+  "authors": [
+    "Isabella Livingston"
+  ],
+  "creator": "Isabella Livingston",
+  "published_on": 1701786396,
+  "created_on": 1701727906,
+  "keywords": []
+}

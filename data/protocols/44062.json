@@ -1,0 +1,31 @@
+{
+  "id": 44062,
+  "title": "Sequencing at DNBSEQ-G400 platform with PE200 and SE400 modes",
+  "uri": "sequencing-at-dnbseq-g400-platform-with-pe200-and-bn96mh9e",
+  "doi": "dx.doi.org/10.17504/protocols.io.bn96mh9e",
+  "description": "{\"blocks\":[{\"key\":\"5o3tc\",\"text\":\"This protocol is used for microbial short amplicon sequencing at DNBSEQ-G400 (previously known as BGISEQ-2000, RRID:SCR_017980) sequencing platform with PE200 and SE400 modes. DNBSEQ-G400 is a sequencer developed by MGI, using DNA nanoball and combinational probe anchor synthesis technoology.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b3hf3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9v1lk\",\"text\":\"Note:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1rhei\",\"text\":\"This sequencing set is compatible with the libraries prepared by MGI Library Prep Kits. The size distribution of inserts should be between 400-600 bp.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Place the library on ice until use. Remove Make DNB Buffer, Low TE Buffer and Stop DNB Reaction Buffer from storage and thaw reagents at Room temperature . Thaw Make DNB Enzyme Mix I for approximately 00:30:00 on ice. After thawing, mix reagents using a vortex mixer for 00:00:05 . Centrifuge briefly and place on ice until use.",
+    "The DNBSEQ-G400RS sequencing flow cell contains 4 lanes. DNB can be loaded onto the flow cell using the sequencer, the MGIDL-200RS or the MGIDL-200H.",
+    "For general libraries, the ssDNA library concentration should be ≥ 2 fmol/μL and each Make DNB reaction requires 40 fmol library. The volume of each Make DNB reaction is 100 µL and the required library input for each Make DNB reaction is calculated as followed: ssDNA library input (μL) = 40 fmol / library concentration (fmol/μL)",
+    "Mix ssDNA libraries, low TE buffer and Make DNB buffer as Make DNB reaction 1. Put Make DNB reaction 1 into a PCR machine and start the primer hybridization reaction with following steps: 95 °C for 00:01:00 , 65 °C for 00:01:00 , 40 °C for 00:01:00 .",
+    "Add 40 µL Make DNB Enzyme Mix I and 4 µL Make DNB Enzyme Mix II into Make DNB reaction 1 to form Make DNB reaction 2. Carry out Rolling circle amplification (RCA) for 00:25:00 at 30 °C . After, add 20 µL DNBs stopping buffer to stop the RCA reaction.",
+    "Take 2 µL DNB, use Qubit® ssDNA Assay Kit and Qubit® Fluorometer to quantify the DNB. Sequencing requires a minimum DNB concentration of 8 ng/ul . If the concentration is lower than 8 ng/ul , make a new DNB preparation.",
+    "Add 8 µL DNB load buffer II and 0.25 µL Make DNB Enzyme Mix II(LC) to 25 µL DNB product from the last step, and place it in the MGIDL-200H (the DNBs loading machine).",
+    "Prepare the sequencing cartridge. Remove the Sequencing Reagent Cartridge and the High-throughput Sequencing Refill Kit (only for SE400 and PE200 sequencing) from storage. Thaw in a room temperature water bath until completely thawed. Store at 2-8°C storage until use (or thaw in 2-8°C fridge one day in advance). Invert the cartridge 3 times to mix before use. Shake the cartridge violently in all directions for 10-20 times until no visible layers can be seen in the cartridge.",
+    "Select sequencing modes PE200 or SE400. Sequencing is initiated after the sequencing reagent cartridge preloaded and sequencing chip was installed. When the whole sequencing was finished, the binary file with bases and quality score were converted into FASTQ format with Phred+33 quality score."
+  ],
+  "authors": [
+    "Xiaohuan Sun",
+    "Yuehua Hu",
+    "Zewei Song"
+  ],
+  "creator": "Xiaohuan Sun",
+  "published_on": 1612491597,
+  "created_on": 1604153131,
+  "keywords": []
+}

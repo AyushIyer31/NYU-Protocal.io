@@ -1,0 +1,36 @@
+{
+  "id": 63135,
+  "title": "Yeast cells live fluorescence imaging",
+  "uri": "yeast-cells-live-fluorescence-imaging-b9v7r69n",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ldzqjnv5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"dnlj7\",\"text\":\"Protocol for sample preparation and live fluorescence imaging of yeast cells. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"6l7qv\",\"text\":\"MEDIA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c9v0e\",\"text\":\"- LoFlo medium (Yeast Nitrogen Base w/o Amino Acids and w/o Folic Acid and Riboflavin. Formedium)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6hcdd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9j0fg\",\"text\":\"REAGENTS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"50i75\",\"text\":\"- Concanavalin A solution: 1 mg ml−1 Concanavalin A dissolved in purified water. (sterile filtered 0.2 µm)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":34,\"length\":2}],\"entityRanges\":[],\"data\":{}},{\"key\":\"autcv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8c74g\",\"text\":\"INSTRUMENTS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"60ukg\",\"text\":\"- Nikon Ti2 Eclipse microscope, with Olympus Apo TIRF 100x 1.49 oil objective and Hamamatsu ORCA-Flash 4.0 LT+ Digital CMOS camera\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"31lkn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"arltg\",\"text\":\"SOFTWARE\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f4c7l\",\"text\":\"- CellCounter plugin, ImageJ\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"65snk\",\"text\":\"\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"68l8t\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Grow yeast cells overnight in Low Fluorescence (LoFlo) medium.",
+    "In the morning dilute cells in LoFlo to OD 0.1.",
+    "Grow until mid-log phase (0.5–0.8 OD).",
+    "Add 10 µl Concanavalin A to the glass surface.",
+    "Let the slides dry completely before use.",
+    "Once the cell culture has reached 0.5–0.8 OD, spin down 2 ml of the original culture. Resuspend the pellet in 30 µl LoFlo to obtain a concentrated sample.",
+    "Apply 3.5 µl of the concentrated yeast culture on the Concanavalin A-treated glass slide.",
+    "Cover the sample with a glass coverslip.",
+    "First, choose a group of cells to use to set up adequate imaging settings. Use lasers corresponding to the right fluorophores and regulate exposure time based on the brightness of the features of interest.",
+    "Count cells and analyse signal with Fiji Cell counter Plug-in.",
+    "Set up stack acquisition. For yeast cells set a total stack size of 6-8 µm. We used a step size of 300 nm.",
+    "In order to have an unbiased approach, use Transmitted Light to select a new a field of view for data acquisition. The field of view should contain 25-100 cells in the same focal plane.",
+    "Acquire stacks."
+  ],
+  "authors": [
+    "Fabian Fiedler",
+    "Anna Bieber",
+    "Cristina Capitanio",
+    "Florian Wilfling"
+  ],
+  "creator": "Cristina Capitanio",
+  "published_on": 1654159796,
+  "created_on": 1653399240,
+  "keywords": []
+}

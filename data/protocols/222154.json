@@ -1,0 +1,43 @@
+{
+  "id": 222154,
+  "title": "Calf-Intestinal Alkaline Phosphatase Treatment in situ-Killinger 2024",
+  "uri": "calf-intestinal-alkaline-phosphatase-treatment-in-g47ibyzkf",
+  "doi": "dx.doi.org/10.17504/protocols.io.5qpvoky7bl4o/v2",
+  "description": "{\"blocks\":[{\"key\":\"9sojj\",\"text\":\"Alpha-synuclein phosphorylated at serine 129 (PSER129) occurs in two pools, non-aggregated (physiological) and aggregated (disease). This protocol allows for the selective dephosphorylation of non-aggregated PSER129 and enhances the specificity and sensitivity immunodetection of aggregated PSER129. Thus, this protocol can be used to differentiate physiological from aggregated PSER129.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vq7p\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"avsem\",\"text\":\"For subsequent detection of non-aggregated-(physiological PS129) we have observed that the blocking buffer component bovine serum album (BSA) fraction V from several sources interferes with physiological PS129 detection. We have had success with MP Biomedicals AlbumiNZ Protease-reduced BSA, as well as omitting BSA from blocking buffers. We have not determined the source of interference, but it may include low level proteases or phosphatases.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"ergt0\",\"text\":\"Dilution media:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3609p\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6b53a\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"cv5bu\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fq4mt\",\"text\":\"CIAP buffer:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fanjl\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fsgf0\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"824mm\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c3kim\",\"text\":\"  \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":1,\"length\":1}],\"data\":{}},{\"key\":\"5p5de\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"MUTABLE\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"1_0\":\"\",\"1_1\":\"\",\"2_0\":\"\",\"2_1\":\"\"},\"colTitles\":[\"A\",\"B\"],\"colWidths\":[147,83],\"data\":[[\"Nacl\",\" 150 mM\"],[\"Tris-HCl, pH 7.4\",\"50 mM\"],[\"Triton-X100\",\"0.5%\"]],\"guid\":\"1F21AEFAA010446B9742AB23B6462872\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"Nacl\",\" 150 mM\"],[\"Tris-HCl, pH 7.4\",\"50 mM\"],[\"Triton-X100\",\"0.5%\"]],\"rowHeights\":[23,23,23]}},\"1\":{\"type\":\"tables\",\"mutability\":\"MUTABLE\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"1_0\":\"\",\"1_1\":\"\",\"2_0\":\"\",\"2_1\":\"\"},\"colTitles\":[\"A\",\"B\"],\"colWidths\":[191,82],\"data\":[[\"Nacl\",\"100 mM\"],[\"Tris- Hcl\",\"50 mM\"],[\"Mgcl2, pH 7.9\",\"10 mM\"]],\"guid\":\"A67BC945E5314C1DBAD162BCF28D5860\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":[],\"printData\":[[\"Nacl\",\"100 mM\"],[\"Tris- Hcl\",\"50 mM\"],[\"Mgcl2, pH 7.9\",\"10 mM\"]],\"rowHeights\":[]}},\"2\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"can_edit\":false,\"cas_number\":\"\",\"guid\":\"4131304C341F11EE9D4302C0B41BC903\",\"id\":43685,\"is_public\":true,\"mol_weight\":0,\"name\":\"Alkaline Phosphatase Calf Intestinal (HC), 1,000u\",\"rrid\":\"\",\"sku\":\"M2825\",\"url\":\"\",\"vendor\":{\"id\":23,\"image\":{\"placeholder\":\"/img/vendors/placeholder.png\",\"source\":\"/img/vendors/placeholder.png\"},\"is_requested\":false,\"link\":\"http://www.promega.com\",\"name\":\"Promega\"}}}}}",
+  "steps": [
+    "Wash free-floating tissue (3 x 10 minutes) in dilution media. Dilution media: %s %s",
+    "Incubate the samples with 1% Triton X-100 in DM for 00:10:00 .",
+    "Wash in DM 00:10:00 .",
+    "Wash the tissues in CIAP buffer (2x10 minutes). CIAP buffer: %s %s",
+    "Incubate the tissues with CIAP at a dilution of 1:333 for 24:00:00 at 37 °C on a shaker. CIAP concentration per bottle: 20 u/μl (Promega, Cat.# M2825). In 500 µL CIAP buffer, add 1.5 µL CIAP (30 units).",
+    "Wash in DM (2 x 10 minutes).",
+    "Heat water bath to 80 °C - 85 °C 01:30:00 before the antigen retrieval step.",
+    "Place the dish containing sodium citrate buffer in the water bath and heat it for 00:10:00 . Sodium Citrate Buffer, pH 6.0 (1L): 2.94 g Sodium citrate-Trisodium salt (Dihydrate) in 1000 mL DI water. pH 6.0. Add 0.5 mL Tween-20. Mix well.",
+    "Wash the tissues in sodium citrate buffer 00:10:00 .",
+    "Incubate the tissues in the heated sodium citrate buffer for 00:30:00 .",
+    "Cool the dish containing tissues to Room temperature (at least 00:20:00 ).",
+    "Wash in DM for 10 min x 2 times.",
+    "Tissues are now ready for downstream assays.",
+    "Wash free-floating tissue 00:10:00 in dilution media (1/3).",
+    "Wash free-floating tissue 00:10:00 in dilution media (2/3).",
+    "Wash free-floating tissue 00:10:00 in dilution media (3/3).",
+    "Wash the tissues in CIAP buffer 00:10:00 (1/2).",
+    "Wash the tissues in CIAP buffer 00:10:00 (2/2).",
+    "Wash in DM 00:10:00 (1/2).",
+    "Wash in DM 00:10:00 (2/2).",
+    "Wash in DM for 00:10:00 (1/2).",
+    "Wash in DM for 00:10:00 (2/2) ."
+  ],
+  "authors": [
+    "Bryan Killinger",
+    "Solji Choi"
+  ],
+  "creator": "Bryan Killinger",
+  "published_on": 1752099978,
+  "created_on": 1752097134,
+  "keywords": []
+}

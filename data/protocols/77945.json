@@ -1,0 +1,30 @@
+{
+  "id": 77945,
+  "title": "Counting bats from photographs using ImageJ ",
+  "uri": "counting-bats-from-photographs-using-imagej-cqczvsx6",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewov1om9klr2/v1",
+  "description": "{\"blocks\":[{\"key\":\"8a2as\",\"text\":\"Counting bats from photographs is an efficient and non-invasive method for assessing the size of a colony, and it is widely used for monitoring cave-dwelling bats. This protocol describes the exact steps to count bats using the free software ImageJ. The counting could be done with different software, but we chose ImageJ, because it is free, simple to use and very effective. Our aim is to describe in detail and standardize the counting of bats in photographs to monitor cave-dwelling bats in Bulgaria and to help other researchers who might benefit from this method. The method could be used for counting other species of animals as well.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Install the ImageJ software by following the instructions at the software website .",
+    "Open the ImageJ program.",
+    "Open the photo for counting using the menu Open → File (Ctrl + O) (Fig. 1) or by dragging and dropping the photo into the program. Opening a file in the ImageJ program.",
+    "Prepare the photo for counting. Use high-quality photos with a large size in JPG format. Adjust the brightness, contrast and white balance from the Image submenu in the main menu if needed. This could also be done with different software. If some of the bats on the photo should not be counted, for example, they are not clearly visible or will be counted from another photo, they could be crossed out with the brush tool from the main menu. The preparation of the photo should be done before starting the count.",
+    "Double-click on multi-point tool to show the menu. Choose the marker&#39;s type, color, and size from the Point Tool menu. Selecting the Multi Point tool.",
+    "Start counting the bats on the photo by clicking on each individual, preferably choosing a consistent place for the marker – for example on the nose or between ears. The program automatically creates a marker with each click. To zoom in and out use the commands Ctrl + Num[+] / Num[-] or the zoom option in the main menu. To move the visible window of the photo use Left-click Drag + Space. To delete a marker, use Ctrl + Left-click. When counting only one species of bats, the Point Tool menu displays the number of markers. Counting bats from a single species.",
+    "When two or more different species of bats are present in the photo, a different counter should be assigned to each species. The counters are automatically presented with different colours that can be changed manually from the Point Tool menu. The results are displayed under the Counter tool in the Point Tool menu. Counting bats from two or more species.",
+    "When counting is completed, the results can be extracted from the main menu by selecting Analyze → Measure (Ctrl + m). Showing results from counting.",
+    "The program generates a table with results, which presents different parameters of each marker. Only the data from the columns “Counter” and “Count” are needed for this methodology. The two columns contain repeated information for each row. Extract the count from only one row per species and store the results in the preferred format for future analysis.The generated table with results is not needed anymore but could be saved as a csv for redundancy. It is strongly recommended to save the results in an external table which should contain information on the date, location, name of the photo from which the count is extracted, species and the number of individuals. Extracting results from the count.",
+    "Save the photo with the counts in a .tiff format using File → Save As → Tiff. To ease future access to the file and avoid confusion, preferably rename the file by keeping the original photo number and adding an abbreviation of the counted species to reflect the counted bats in the following manner: PHOTONAME_Spec1_Number_Spec2_Number_Spec3_Number.tif The example in our case is: DSC_0067_Rhibla_66_Myoema_18.tif The markers on the Tiff file are only visible when opened with ImageJ, so a screenshot of the file could be saved for convenient viewing and sharing."
+  ],
+  "authors": [
+    "Stanimira Deleva"
+  ],
+  "creator": "Stanimira Deleva",
+  "published_on": 1679576636,
+  "created_on": 1677750519,
+  "keywords": []
+}

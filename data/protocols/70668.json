@@ -1,0 +1,33 @@
+{
+  "id": 70668,
+  "title": "Control light cycle and measure temperature/humidity in animal housing using Raspberry Pi and Python",
+  "uri": "control-light-cycle-and-measure-temperature-humidi-cg9ktz4w",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"4bmti\",\"text\":\"Python Code and Protocol for controlling animal housing lights, and measure temperature and humidity, using a Raspberry Pi, and ANAVI-light HAT.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":128,\"length\":15}],\"data\":{}},{\"key\":\"1cnf7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"1373D2DD400311ED8BF60A58A9FEAC02\",\"url\":\"https://www.crowdsupply.com/anavi-technology/light-phat\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Order ANAVI LIGHT PHAT Advanced Kit ( https://www.cro 49 USD wdsupply.com/anavi-technology/light-phat ) and Raspberry Pi (compatible raspberry pi include RPi Zero W and RPi 3B+). This protocol has been tried using a Raspberry Pi 4.",
+    "Measure the length where you want to put your lights.",
+    "Go to house code repository at https://github.com/matiasandina/house",
+    "Read instructions and follow setup on the raspberry pi",
+    "Order LED strip according to length. It is recommended that you order an RGBW LED strip, as the white leds will be better for light than generating white light by driving the RGB to full power.",
+    "Mount the ANAVI hat into the raspberry Pi",
+    "Order OLED Display Module ( Amazon Link ) 20 USD, pack of 6",
+    "Order a power supply that can provide at least 8V to the ANAVI LIGHT PHAT.",
+    "Feed the White wire from your RGBW into the BLUE socket of the ANAVI LIGHT PHAT. The code is expecting to output high through the blue pin. If you decide to go for the RGB version, you will need to modify the code.",
+    "Power supply can be fed through these DC adapter plugs 5 USD pack of 10",
+    "Connect temperature, light sensor, and OLED display to the I2C ports on the ANAVI LIGHT PHAT.",
+    "Test the functioning of the code (lights turn on, OLED display shows proper temperature and humidity). You can change default light hours and file issues to improve functioning. Inspect data folder to find the csv files with saved data",
+    "Position lights and sensors in their desired place"
+  ],
+  "authors": [
+    "Matias Andina"
+  ],
+  "creator": "Matias Andina",
+  "published_on": 1664470017,
+  "created_on": 1664460474,
+  "keywords": []
+}

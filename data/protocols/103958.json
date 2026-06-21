@@ -1,0 +1,24 @@
+{
+  "id": 103958,
+  "title": "AlphaFold 3 screen",
+  "uri": "alphafold-3-screen-dhrw357e",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvr8rm2lmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"fdk7f\",\"text\":\"This protocol is about the AlphaFold 3 screen.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Protein sequences were downloaded from the Uniprot server.",
+    "We accessed AlphaFold 3 from its virtual server ( https://alphafoldserver.com) to run pairwise predictions with 5 models per prediction.",
+    "Predictions with an ipTM score of &gt; 0.5 were considered putative hits and diagnostic plots (PAE plot and pLDDT plot) as well as the generated structures were manually inspected.",
+    "Predicted structures were visualized with ChimeraX-1.8."
+  ],
+  "authors": [
+    "Elias Adriaenssens"
+  ],
+  "creator": "Elias Adriaenssens",
+  "published_on": 1724913461,
+  "created_on": 1721622586,
+  "keywords": []
+}

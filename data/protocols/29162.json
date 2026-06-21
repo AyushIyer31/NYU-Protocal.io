@@ -1,0 +1,27 @@
+{
+  "id": 29162,
+  "title": "The Alliance Formation Puzzle in Contests with Capacity-Constraints: A Test using American Football Reception-Coverage Contest Data",
+  "uri": "the-alliance-formation-puzzle-in-contests-with-cap-8qihvue",
+  "doi": "dx.doi.org/10.17504/protocols.io.8qihvue",
+  "description": "{\"blocks\":[{\"key\":\"dqpap\",\"text\":\"We utilize a contest-theoretic model to demonstrate a version of the alliance form puzzle that aligns with reception-coverage contests in American football.Namely, secondary defenders can opt for single-coverage (1 v 1 contest) or form a defensive alliance (double-coverage or 2 v 1 contest with exogenous intra-alliance prize division) when defending a given receiver.In our theoretical treatment, we find that defenses have a lower equilibrium success rate in preventing the receiver from “getting open” under double-coverage than under single-coverage in the absence of (sufficiently-binding) capacity constraints.We also find that this success rate paradox is a necessary condition for the alliance formation puzzle (i.e., loss of expected allied party payoffs under alliance).We then test the theoretical treatment by analyzing 8,508 plays of NCAA and NFL game data within a set of fixed effects, logistic regression models that control for receiver, level-of-play, and season-of-play.We find that equilibrium level of defensive success rises significantly (p-value \\u003c .01) and substantially (marginal effect of between 12.8 and 17 percentage points) when moving from single-coverage to double-coverage, ceteris paribus.There is strong evidence that the necessary condition for the alliance formation puzzle does not hold in this setting.We conclude that sufficiently-binding (physiological and training-based) capacity constraints eliminate the alliance formation puzzle in this setting (as was shown theoretically by Konrad and Kovenock, 2009).This empirical result suggests that other contest settings that regularly feature alliance (e.g., liquidity-constrained conflict) may not be puzzling.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":1208,\"length\":15}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Load football.do in Stata/SE 14.2 or newer. The latest version is located here: https://github.com/Syracuse-University-Sport-Analytics/Alliance-Formation-Puzzle-in-Professional-Football",
+    "Download football data.dta from https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/ZIQQXO",
+    "Change line 2: use&#34;C:\\football data.dta&#34;, clear to point to the locatin that you saved football.do",
+    "Run football.do"
+  ],
+  "authors": [
+    "Justin Ehrlich",
+    "Yang-Ming Chang",
+    "Matthew Harmon",
+    "Shane Sanders"
+  ],
+  "creator": "Justin Ehrlich",
+  "published_on": 1571974968,
+  "created_on": 1571974422,
+  "keywords": []
+}

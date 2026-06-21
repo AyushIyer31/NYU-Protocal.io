@@ -1,0 +1,37 @@
+{
+  "id": 235394,
+  "title": "Accurate detection of somatic mutations in single cells by scNanoSeq",
+  "uri": "accurate-detection-of-somatic-mutations-in-single-hh5ab382f",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v9be5ml3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"3b3jr\",\"text\":\"Accurately detecting somatic mutations in individual human cells poses a significant challenge for single-cell whole genome amplification methods. In this study, we introduce a novel single-cell genome amplification method based on the restriction enzyme-based NanoSeq chemistry, achieving an error rate of less than 10-10 in mutation calling (equivalent to 0.2 errors per human genome). We term this methodology as scNanoSeq. This precision is derived from theoretical error rate analyses within the duplexing sequencing scheme, which aligns with upper bound estimations derived from single-cell expansion experiments.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":319,\"length\":3}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Prepare 1000 µL Protease Lysis Mix . 30 µL of 1M Tris-HCI, pH 8.0 Thermo Fisher Scientific Catalog #15568025 4 µL of 0.5M EDTA Merck MilliporeSigma (Sigma-Aldrich) Catalog #E7889-100ML 20 µL of 1M KCl bioworld Catalog #40120947-1 10 µL of 10% Triton X-100 Merck MilliporeSigma (Sigma-Aldrich) Catalog #93443-100ML 36 µL of NP-40 Surfact-Amps™ Detergent Solution Thermo Fisher Scientific Catalog #85124 400 µL of 20 mg/mL QIAGEN Protease (7.5 AU) Qiagen Catalog #19155 500 µL of Molecular grade water Contributed by users Catalog #BP561-1 1L",
+    "Aliquot 2.5 µL of Protease Lysis Mix in each low-binding PCR tubes.",
+    "FACS sort individual cells/nuclei into PCR tubes containing Protease Lysis Mix .",
+    "Brief centrifugation, and run the following cell lysis program on a thermo-cycler. 50 °C 02:00:00 75 °C 00:20:00 85 °C 00:05:00 4 °C Hold",
+    "Store the lysed cells at -80 °C .",
+    "Prepare the following Fragmentation Mix (2.5 uL per cell). 0.5 µL of CutSmart® Buffer New England Biolabs Catalog #B7204S or rCutSmart Buffer New England Biolabs Catalog #B6004S 0.15 µL of HpyCH4V - 500 units New England Biolabs Catalog #R0620L 1.85 µL of Nuclease free water Contributed by users",
+    "Add 2.5 uL of Fragmentation Mix to each tube along the wall, tap to mix, and then centrifuge. Run the following program on a thermo-cycler. 37 °C 00:15:00 65 °C 00:20:00",
+    "Prepare the following End Repair Mix (10 uL per cell). 1 µL of NEBuffer 4 - 5.0 ml New England Biolabs Catalog #B7004S 7.35 µL of Nuclease free water Contributed by users 0.15 µL of Klenow Fragment (3'-5' exo-) - 1,000 units New England Biolabs Catalog #M0212L",
+    "Add 10 uL of End Repair Mix to each tube along the wall, tap to mix, and then centrifuge. Run the following program on a thermo-cycler. 37 °C 00:30:00",
+    "Prepare the following Ligation Mix (22.4 uL per cell). 2.24 µL of NEBuffer 4 - 5.0 ml New England Biolabs Catalog #B7004S 15.53 µL of Nuclease free water Contributed by users 3.74 µL of Adenosine 5-Triphosphate (ATP) New England Biolabs Catalog # P0756L 0.33 µL of 15 μM xGen CS adapter Integrated DNA Technologies, Inc. (IDT) Catalog #1080799 0.56 µL of T4 DNA Ligase New England Biolabs Catalog #M0202L",
+    "Add 22.4 uL of Ligation Mix to each tube along the wall, tap to mix, and then centrifuge. Run the following program on a thermo-cycler. 20 °C 00:22:00",
+    "Immediately after ligation, purify the ligation product with 0.95X Ampure XP beads Beckman Catalog #A63881 , and eluted in 15.5 µL of Nuclease free water Contributed by users . To avoid sample loss, flick the tubes for all the mixing steps instead of pipetting.",
+    "Use 0.5 µL of Sample for the following qPCR yield test. 5 µL of iTaq Universal SYBR Green Supermix Bio-Rad Laboratories Catalog #172-5112 0.25 µL of 10 micromolar (µM) Truseq5 primer (ACACTCTTTCCCTACACGAC) 0.25 µL of 10 micromolar (µM) Truseq7 primer (GTGACTGGAGTTCAGACGTGT) 4 µL of Nuclease free water Contributed by users 0.5 µL Sample Run qPCR on a Roche LightCycler 96 machine following the program: 94 °C for 00:02:00 30 cycles of 94 °C for 00:00:20 58 °C for 00:00:20 72 °C for 00:01:00 Melting Curve For a typical diploid cells, qPCR Ct value is expected to be 17.5~18.5.",
+    "For the cells with anticipated yield, use the remaining 15 µL of Sample for PCR amplification. 25 µL of NEBNext UltraII Q5 Master Mix New England Biolabs Catalog #M0544X 5 µL of 10 micromolar (µM) P5_index5_Truseq5 primer ( AATGATACGGCGACCACCGAGATCTACAC[8-base-index]ACACTCTTTCCCTACACGACGCTCTTCCGATCT ) 5 µL of 10 micromolar (µM) P7_index7_Truseq7 primer ( CAAGCAGAAGACGGCATACGAGAT[8-base-index]GTGACTGGAGTTCAG ACGTGTGCTCTTCCGATCT ) 15 µL Sample Run the following PCR program on a thermo-cycler: 98 °C for 00:00:30 17 cycles of 98 °C for 00:00:10 73 °C for 00:01:15 73 °C for 00:05:00 Purify the PCR product twice with 0.7X Ampure XP beads Beckman Catalog #A63881 , and eluted in 20 µL of Nuclease free water Contributed by users . Pooled libraries are ready for sequencing on an Illumina NovaSeq 6000 / NovaSeq X / NovaSeq XPlus platform with 2×150 bp paired-end mode. The target depth is 5~6 reads per fragment based on pre-amplification qPCR quantification."
+  ],
+  "authors": [
+    "Muchun Niu",
+    "Yang Zhang",
+    "Jiayi Luo",
+    "Chenghang Zong"
+  ],
+  "creator": "Muchun Niu",
+  "published_on": 1766378596,
+  "created_on": 1766119296,
+  "keywords": []
+}

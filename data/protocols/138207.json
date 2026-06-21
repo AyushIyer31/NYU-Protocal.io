@@ -1,0 +1,26 @@
+{
+  "id": 138207,
+  "title": "Xenium Explorer Walkthrough of FFPE Mouse Brain",
+  "uri": "xenium-explorer-walkthrough-of-ffpe-mouse-brain-ei77bchrp",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"9u93e\",\"text\":\"Walkthrough of Xenium Explorer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "This protocol is intended to serve as a quick orientation of 10X created Xenium Browser within their hosted FFPE Mouse Brain dataset. More information on this dataset can be found at https://www.10xgenomics.com/datasets/fresh-frozen-mouse-brain-for-xenium-explorer-demo-1-standard and we will use it as a general guide for interrogating the dataset.",
+    "Upon import, you will see the tissue colored by clustered gene expression, similar to scRNA analyses prior to cell typing. To type our cell populations, we can rely on marker genes for cells we know exist within the dataset. I am going to be referencing referencing one of the supplemental files included within the dataset ( https://www.10xgenomics.com/datasets/fresh-frozen-mouse-brain-for-xenium-explorer-demo-1-standard ), but https://azimuth.hubmapconsortium.org/references/#Mouse%20-%20Motor%20Cortex is a common resource as well. Let&#39;s start by labelling endothelial populations. On the side bar, deselect Cells and select Transcripts. Within transcripts, enter in the genes of interest as included within the link above. From there, you can play with the various visualization methods. Below are some examples. The default &#34;points&#34; setting showing coloring of individual cells based on inclusion of genes of interest. Density plot showing cumulative expression of selected markers. Density plot showing expression on a per gene basis. You can access this visualization using the grid icon along the top.",
+    "If you don&#39;t have a gene group file, there is no way to save selected panels of genes as potential cell types. The browser does have predetermined clusters based on similar gene expression, so we will need to put in a little bit of extra work. Let&#39;s line up our density plot to the calculated clusters to see if we can start to infer cluster identities. To start, we will change plot settings to make the cluster colors pop. Using our density plot we made earlier, we will have to step through clusters to see what lines up. Let&#39;s look at a visualization of these clusters selected and compare it to our density map. It&#39;s pretty close. Theres possible some other populations as determined by unsupervised clustering, but this can serve as a jumping off point for further discussions on downstream analysis.",
+    "While Xenium Browser lacks functionality for differential expression or saving groups based on cumulative transcript expression, this can be a jumping off point for further analysis outside of the browser. 10X recommends a number of tools to supplement and expand analysis capabilities, some of which are included below (taken from https://www.10xgenomics.com/analysis-guides/continuing-your-journey-after-xenium-analyzer ). Exploration of some of these tools may be the subject of later workshops.",
+    "If we have a mapping file similar to the one hosted for this dataset, we can import it to aid in visualization. And after importing you will see gene groupings corresponding to your file. Similar to above, below is are the endothelial cells labelled by this method.",
+    "One of the powerful use cases of spatial related technologies is isolation of anatomical regions for comparison across samples. Using the region selection tool, we will be selecting and exporting the cells within the hippocampal region. Start by opening the Freehand region selection tool. Next, outline the hippocamal region. From here, you can rename and export the region for downstream analysis."
+  ],
+  "authors": [
+    "Cameron Baker"
+  ],
+  "creator": "Cameron Baker",
+  "published_on": 1745427340,
+  "created_on": 1745338282,
+  "keywords": []
+}

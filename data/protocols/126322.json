@@ -1,0 +1,24 @@
+{
+  "id": 126322,
+  "title": "ChIPseq libraries preparation",
+  "uri": "chipseq-libraries-preparation-d7ks9kwe",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v97j21g3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"cktke\",\"text\":\"ChIP-seq was performed to analyze H3K27ac and H3K27me3 in CTRL and EZH2KO UN-KC6141 cells. Cells were crosslinked, lysed, and sonicated. Chromatin was immunoprecipitated using specific antibodies and Protein G Dynabeads. Libraries were prepared on beads using the NEBNext Ultra II kit, PCR-amplified, size-selected (200–500 bp), and sequenced on HiSeq 4000 or NextSeq 500.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "ChIPseq experiments for H3K27ac and 3meH3K27 were performed as described elsewhere(1, 2). Briefly, CTRL and EZH2 KO UN-KC6141 cells were fixed with 1% formaldehyde (ThermoFisher, #28906) at room temperature for 10 minutes. Cells were washed once again with 0.01% Triton-X-100 in PBS, pelleted, snap frozen, and stored at -80ºC.Cells were thawed and lysed in a buffer containing 10 mM Tris/HCl pH 7.5, 100 mM NaCl, 1 mM EDTA, 0.5 mM EGTA, 0.1% deodeoxycholate, 0.5% sarkosyl, and protease inhibitor cocktail (SIGMA). Lysate was sonicated using a Covaris for 12 cycles with the following settings: time, 60 s; duty, 5.0; PIP, 140; cycles, 200; amplitude, 0.0; velocity, 0.0; dwell, 0.0. One percent of sonicated lysate was kept as ChIP input for analysis. Immunoprecipitation mix consisting of Protein G Dynabeads (Invitrogen, #10003D) and 1 μg of H3K27ac (Active Motif, #39133) or 3meH3K27 (Abcam, ab195477). Beads were washed four times each with wash buffer I (20 mM tris-HCl, 150 mM NaCl, 0.1% SDS, 1% Triton X-100, and 2 mM EDTA), wash buffer II (10 mM tris-HCl, 250 mM LiCl, 1% IGEPAL CA-630, 0.7% Na-deoxycholate, and 1 mM EDTA), tris-EDTA (TE) 0.2% Triton X-100, and TE 50 mM NaCl and then resuspended 25μl of TT buffer (10 mM tris-HCl (pH 8.0) and 0.05% Tween 20, and sequencing libraries were prepared as following. ChIP libraries were prepared while bound to Dynabeads using a NEBNext Ultra II Library preparation kit (NEB) using half reactions. DNA was polished, poly(A)–tailed, and ligated using dual UDI (IDT) or single (Bioo Scientific). Then crosslinks were reversed by adding 33.5 μl of a mix containing 18.4 μl nuclease free water, 4 μl 10% SDS, 3 μl 0.5 M EDTA, 1.6 μl 0.2M EGTA, 1 μl 10mg/ml Proteinase K (Biolabs, #P8107S), 1 μl 10mg/ml RNase A, 4.5 μl 5M NaCl by incubating at 55ºC for 1h followed by 75ºC for 30 min. Dynabeads were removed, and libraries were cleaned by adding 3 μl of SpeadBeads in 125 μl of 20% PEG 8000/1.5M NaCl, washed by adding 120 μl 80% etOH, air dried, and eluted in 12.5 μl of buffer containing 10 mM Tris/HCl pH 8.0 and 0.05% Tween-20. DNA was PCR-amplified for 15 cycles using NEBNext Ultra II PCR master mix using Solexa 1GA and Solexa 1GB primers. Libraries were size selected 200-500 bp by running in 10% TBE acrylamide gels (ThermoFisher, #EC62752BOX) and sequenced using a HiSeq 4000 or a NextSeq 500."
+  ],
+  "authors": [
+    "Laura Antonucci",
+    "Isidoro Cobo",
+    "Christopher K. Glass",
+    "Michael Karin"
+  ],
+  "creator": "Laura Antonucci",
+  "published_on": 1744067507,
+  "created_on": 1744066322,
+  "keywords": []
+}

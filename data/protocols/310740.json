@@ -1,0 +1,35 @@
+{
+  "id": 310740,
+  "title": "Catch-and-Display Immunoassay for Digital Biomarker Quantification",
+  "uri": "catch-and-display-immunoassay-for-digital-biomarke-jtpucnmnx",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"mqpv\",\"text\":\"Digital immunoassays provide exceptional analytical sensitivity for detecting low-abundance biomarkers, but their broad adoption is limited by practical barriers. Commercial platforms are prohibitively expensive for routine use by individual laboratories, and laboratory-scale concepts typically describe specialized biosensors and sophisticated workflows. Here, we introduce a nanomembrane-based Catch-and-Display Immunoassay (CAD-IA) as an accessible digital immunoassay for common laboratory settings. In CAD-IA, fluorescent nanoparticles are “captured” by the nanoscale pores of ultrathin silicon nitride membranes through a pipette powered filtration. The captured nanoparticles serve as optically isolated ‘hotspots’ for fluorescent immunocomplex formation when target antigen is present. Co-localization of the fluorescent particles and fluorescent immunocomplexes are then “displayed” and quantified by standard confocal microscopy to generate digital signals. CAD-IA is implemented using the μSiM-DX (microfluidic device featuring an ultrathin silicon membrane for diagnostics) platform, which is manually assembled from mass produced, cost-effective components. Using the traumatic brain injury (TBI) biomarker S100B as a model, we demonstrate that CAD-IA provides consistent digital outputs and linear quantification with a dynamic range of at least two orders of magnitude when digital and analog analysis are combined on the same image sets. We further demonstrate that the assay maintains linearity in serum matrices and achieves suitable sensitivity (LoD = 0.02 μg/mL) for clinically relevant diagnostic with the addition of tyramide signal amplification (TSA). While further optimization of CAD-IA is possible, these results constitute a proof-of-concept demonstration of a novel digital immunoassay that is accessible to most laboratory environments.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Nanparticle Capture : The outlet port of the μSiM-DX was sealed with adhesive tape, and a nanoparticle suspension (~10⁶ streptavidin-modified nanoparticles in 40 μL PBS, &gt;60 nm diameter) was introduced through the open inlet using a pipette to allow physical trapping of nanoparticles into the membrane pores.",
+    "Capture Antibody Immobilization : A 2 μg/mL biotinylated capture antibody solution (0.1% BSA in PBS) was added with 100 μL of reagent solution into the top well, followed by flushing an additional 100 μL through the bottom channel and incubated for 2 hours, followed by washing to remove unbound antibodies.",
+    "Biomarker Targeting : 100 μL of biomarker-incorporated solution was added into the top well, followed by flushing an additional 100 μL through the bottom channel and incubated for 2 hours, followed by washing to remove unbounds.",
+    "Detection Antibody Labeling : A 2 μg/mL Alexa Fluor 647-labeled detection antibody solution (0.1% BSA in PBS) was added with 100 μL of reagent solution into the top well, followed by flushing an additional 100 μL through the bottom channel and incubated for 2 hours, followed by washing to remove unbound antibodies.",
+    "Washing for Purification : Following each binding step, unbound reagents and other biocontaminants were removed by washing the well twice with 100 μL of washing buffer and flushing the bottom channel three times with another 100 μL. The excess solution emerging from the outlet during either reagent loading or washing step was absorbed using a Kimtech wipe.",
+    "Confocal Microscope Imaging : Fluorescence imaging of the nanomembrane and bound analytes was performed within μSiM devices using a spinning disk confocal microscope (Andor Dragonfly) equipped with Zyla 4.2 sCMOS and Sona 2.0B-11 sCMOS cameras. A 60Å~/1.2 NA water-immersion objective was used to acquire high-resolution images. Excitation was provided by lasers at 405, 488, 561, and 637 nm, in coordination with emission filters of 450/50 nm, 525/50 nm, 600/50 nm, and 700/75 nm, respectively. For imaging, nanoparticles were captured with a 100 ms exposure and 40% laser power. Immunostaining was imaged with 500 ms exposure at 40% power.",
+    "Data Analysis : Confocal microscopy images were imported into FIJI (ImageJ). Nanoparticles and immunocomplexes were detected using the ComDet v.0.5.5 plugin across relevant fluorescence channels. Detection parameters were defined as follows: approximate particle size, 3 pixels; intensity threshold (in SD), 10 for nanoparticles and 5 for immunocomplexes; and a maximum distance of 6 pixels for identifying colocalized spots. Large particles and immunocomplex aggregates were included and segmented according to the defined pixel size for analysis. Digital readouts representing assay sensitivity were quantified as the percentage of immunocomplex-colocalized nanoparticles relative to the total number of nanoparticles. Digital signals were also evaluated using false positive criteria established in prior CAD-LB studies. In addition to digital analysis, analog signal quantification was performed by measuring the integrated fluorescence intensity of nanoparticles in the red fluorescence channel, irrespective of their colocalization status. Statistical analysis of the quantitative data was performed using GraphPad Prism.",
+    "Tyramide Signal Amplification (TSA)-Mediated CAD-IA : The assay followed the same initial three steps (nanoparticle capture, capture antibody immobilization, and biomarker targeting) as the CAD-IA. Fluorescent labeling was performed by first introducing a 2 μg/mL horseradish peroxidase (HRP)-conjugated detection antibody into the μSiM-DX device, followed by a 2 hour incubation. Unbound detection antibodies were then removed by washing with PBS. Subsequently, tyramide-functionalized Alexa Fluor 647 fluorophores (1x) in PBS containing 0.000015% H₂O₂ were introduced into the device and incubated for 10 minutes for tyramide signal amplification staining. After staining, unbound fluorophores were thoroughly removed by washing with TRIS NaCl Tween-20 (TNT) buffer (0.1 M Tris-HCl, 0.15 M NaCl, 0.05% Tween-20), followed by additional washing with PBS prior to imaging."
+  ],
+  "authors": [
+    "Yuxuan Liu",
+    "Samuel Walker",
+    "Michael Klaczko",
+    "Benjamin Singer",
+    "Michel Godin",
+    "Vincent Tabard-Cossa",
+    "jonathan_flax",
+    "James McGrath"
+  ],
+  "creator": "Yuxuan YL Liu",
+  "published_on": 1773113209,
+  "created_on": 1773112500,
+  "keywords": []
+}

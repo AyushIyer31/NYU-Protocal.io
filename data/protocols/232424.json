@@ -1,0 +1,22 @@
+{
+  "id": 232424,
+  "title": "RGenEDA (R package)",
+  "uri": "rgeneda-r-package-he8gb3htx",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6z6rdgqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"ehl5a\",\"text\":\"RGenEDA is an R package that provides a unified and reproducible framework for performing genomic exploratory data analysis (EDA). Highly repetitive functions and analyses have been collated into an easy-to-use S4 object that produces quick results and customizable visualizations to assess variation in your data. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"3vvg7\",\"text\":\"For a tutorial on the base functions of RGenEDA, see vignette at https://mikemartinez99.github.io/RGenEDA/articles/Snail1_Vignette.html\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":65,\"length\":70}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"B85DF1E7CA1511F090AC0A58A9FEAC02\",\"url\":\"https://mikemartinez99.github.io/RGenEDA/articles/Snail1_Vignette.html\"}}}}",
+  "before_start": "{\"blocks\":[{\"key\":\"9o9q\",\"text\":\"Ensure you have the most up-to-date version of RGenEDA installed, as the package is regularly updated. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"d8ss6\",\"text\":\"RGenEDA relies on the following R package dependencies: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e79ho\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"tp4i\",\"text\":\"R (\\u003e 4.1.0)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c9l7j\",\"text\":\"pheatmap \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9ar8f\",\"text\":\"RColorBrewer \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2a28s\",\"text\":\"dplyr\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"al3rc\",\"text\":\"ggplot2\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8gef1\",\"text\":\"ggrepel\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f76ck\",\"text\":\"grid\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"21ehd\",\"text\":\"scales\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"68ecl\",\"text\":\"tidyr\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8q7na\",\"text\":\"vegan\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"25od9\",\"text\":\"stats\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"90hto\",\"text\":\"- A computer capable of running R (\\u003e= 4.1.0) and/or RStudio. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5ik4c\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6js71\",\"text\":\"- Multi-omics data ready to be analyzed\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Install RGenEDA from devtools install.packages(devtools) # if not already instaledlibrary(devtools)devtools::install_github(mikemartinez99/RGenEDA)library(RGenEDA)",
+    "For a detailed vignette, please visit the Github here: https://github.com/mikemartinez99/RGenEDA or documentation / vignettes here: https://mikemartinez99.github.io/RGenEDA/articles/Snail1_Vignette.html"
+  ],
+  "authors": [
+    "Michael Martinez"
+  ],
+  "creator": "Michael J Martinez",
+  "published_on": 1764091792,
+  "created_on": 1763124436,
+  "keywords": []
+}

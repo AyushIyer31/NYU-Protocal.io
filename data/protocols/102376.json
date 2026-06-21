@@ -1,0 +1,33 @@
+{
+  "id": 102376,
+  "title": "50% Tissue Culture Infectious Dose (TCID50) for SARS-CoV-2",
+  "uri": "50-tissue-culture-infectious-dose-tcid50-for-sars-df8g3rtw",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gpzz28lzp/v2",
+  "description": "{\"blocks\":[{\"key\":\"frf6n\",\"text\":\"To establish a reliable TCID50 screening assay for quantifying SARS-CoV-2 infectivity in cell culture systems and support downstream applications in therapeutic development.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f2uch\",\"text\":\"Protocol used to titer both animal tissue samples and viral stocks at BSL-3.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7u9n\",\"text\":\"The 50% Tissue Culture Infectious Dose (TCID50) assay provides a standardized method to determine the viral titer that infects 50% of cell cultures, serving as a critical tool for measuring infectious viral particles.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"6e2v0\",\"text\":\"Always wear appropriate PPE for this protocol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aft6l\",\"text\":\"Refer to Material Safety Data Sheets for additional safety and handling information.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "The day before the assay, seed Vero-TMPRSS2 cells in 96-well plates @ 2e4 cells/well (2e5 cells/ml). You can either perform the TCID50 in triplicate, which would have 4 samples per plate or 4x, which would have 3 samples per plate. Always check the confluency of the cells on the day of the assay. There should be uniform seeding. If the seeding was not proper you will not get valid results on the TCID50.",
+    "The day before the assay, fill the 96-well Deep Well Plate Thermo Fisher Scientific Catalog #260251 with 900ul 2% media. Then label the side of the deep well with the samples IDs. Each deep well can do 12 samples (3 or 4 plates). Label the sides of the deep well with what stocks or samples you want to titer. Here is a deep well set up to titer 9 stocks (3 plates with each stock in quadruplicates) The first row will be where you introduce the stock = max concentration tested Cover the deep wells with Parafilm Contributed by users and store at 4 °C until the assay. You should also label the plates with matching sample IDs and make sure to add numbers to the side of the lid and plate to avoid any mix up of IDs later on. TCID50 in triplicate labelling example. Labelling the sides to avoid lid mix up",
+    "Prepare your supplies and go to the BSL-3. Perform the entering procedures.",
+    "Sample Prep: Thaw your samples. If you are working with tissue samples it is optimal to centrifuge the tubes - Once the samples are thawed, move the centrifuge into the BSC. You cannot operate the centrifuge on the bench! Centrifuge the samples for 5 minutes at 5,000rpm to aggregate the tissue at the bottom of the tubes. You will titer the supernatant.",
+    "While the samples are spinning you can set up the BSC. When working with &gt;20 samples it is best to work in a pair. One person will remove media from the plates (there is no vacuum line in the BSL-3!) while the other person treats the plates with the dilutions.",
+    "Once the samples have been spun down, organize them to match the order of the deep wells. Add 100ul supernatant to the first row of the deep wells. Replace the parafilm. Once all the deep wells have been loaded you will proceed one deep well at a time.",
+    "Perform the serial dilution for the first deep well: Using a multichannel pipette mix the first row ~20 times. Move 100ul of the first row to the following row, mix ~15 times. Repeat until the entire deep well has been done and all the dilutions have been performed.",
+    "Remove the plates from the incubator that match the deep well. One person should remove the media from the entire plate and slide it to the next person. That person will then move 200ul of the dilution series to the plates in the amount of replicates that you prepared for. I recommend having the deep well, the plate, and the tip box in a vertical format. You can then easily move the dilutions in the proper order to the plates. Layout of the dilutions.",
+    "Incubate until CPE is visible. Typically 3 days for in vivo lung titer analysis. 3 days for SARS-CoV-2 WA1 and early variants (alpha, beta, mu, etc) 4 days for Omicron 3-4 days for later variants (ex XBBs, JN.1, BAs, etc) The incubation for these later variants varies, you should check the CPE at day 3 and decide.",
+    "After 3 days you will return to the facility. Add 100ul 10% PFA to all wells on the plates. Gently spray the lids with ethanol and replace. Double bag the plates in red biohazard bags and bring down to the lab. Do not handle the plates for 1 day.",
+    "Remove the plates from the bags and bring them to the fume hood. Remove the liquid from the wells and discard in the formaldehyde waste container. Add 75ul 0.1% crystal violet and incubate for 15 minutes. Remove the crystal violet and discard in the appropriate waste container. Bring the plates back to the lab and wash them well using tap water to reveal CPE. Leave the plates with lids open to dry",
+    "Once the plates have dried a bit you can take a look at the CPE and count. Replace the lid and flip the plate over to visualize staining. You may have to wipe dry to write on the plate. Divide the plate by the samples and count the amount of CPE positive wells in each row. Record these numbers (or take photos) for analysis. Here&#39;s an example of what it should look like: Here we have 3 samples (Mut A, XBB.1.5, MA) titered in quadruplicate You should keep in mind the flipped layout of the samples on the lid vs the plate when you count (Mut A is on the left on the lid but is on the right when you count) TCID50 on 3 viral stocks",
+    "Alter the conditions of the excel sheet to match what you had performed for this experiment. Plug in the positive and negative CPE values into the excel sheet. The sheet will spit out a TCID50/ml value. Record these values TCID50 2.8 (1).xls"
+  ],
+  "authors": [
+    "Briana L McGovern"
+  ],
+  "creator": "Briana L McGovern",
+  "published_on": 1754300212,
+  "created_on": 1719330441,
+  "keywords": []
+}

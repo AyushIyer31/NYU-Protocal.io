@@ -1,0 +1,28 @@
+{
+  "id": 88629,
+  "title": "Model Building of PI3KC3-C1/RAB1A",
+  "uri": "model-building-of-pi3kc3-c1-rab1a-c2svyee6",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv5xn84g1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"4cqau\",\"text\":\"Details model building of the PI3KC3-C1/RAB!A complex using chimeraX1.5-1.6 and ISOLDE.  Refinement was done using Phenix real space refinement.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Use Alphafold2 to generate a starting model containing the PI3KC3-C1 components (VPS34, VPS15, ATG14, BECN1) and RAB1A respectively.",
+    "Dock each starting model into the experimental map",
+    "Use ISOLDE to relax the entire PI3KC3-C1 complex and RAB1A into the experimental data in ChimeraX, selectively using restraints and ignoring clashes until the model simulates correctly. Trim obvious disordered regions by deleting them in Chimera.",
+    "Iteratively refine the model by building sidechains into density features, and improving the Ramachandran angles with selective restraints.",
+    "Assess the model to map fit using the built in Q-score function and Ramachandran plot",
+    "When model fit to density and Ramachandran angles start to look good, export the model and refine using Phenix real space refinement.",
+    "Build ligands into the map, use the ignore command to ignore clashes selectively until the clashes have been eliminated.",
+    "Repeat steps 5-7 until you are satisfied with the final model and the metrics cease improvement."
+  ],
+  "authors": [
+    "Annan SI Cook"
+  ],
+  "creator": "Annan SI Cook",
+  "published_on": 1696117873,
+  "created_on": 1696117159,
+  "keywords": []
+}

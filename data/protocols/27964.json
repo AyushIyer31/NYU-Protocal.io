@@ -1,0 +1,32 @@
+{
+  "id": 27964,
+  "title": "Protein expression using E. coli strain BL21DE3",
+  "uri": "protein-expression-using-e-coli-strain-bl21de3-7i4hkgw",
+  "doi": "dx.doi.org/10.17504/protocols.io.7i4hkgw",
+  "description": "{\"blocks\":[{\"key\":\"bhap9\",\"text\":\"In this protocol will be explained how to express proteins using E. coli strain BL21DE3 using a plasmid with a T7 promoter. The promoter of T7 polymerase from E. coli BL21DE3 has to be induced with IPTG.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":65,\"length\":7},{\"style\":\"italic\",\"offset\":159,\"length\":8}],\"entityRanges\":[],\"data\":[]},{\"key\":\"9u2kk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3tqm9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Prepare an overnight culture of the bacterium encoding for the protein you want to express.",
+    "Prepare an Erlenmeyer flask containing LB medium and the right antibiotics",
+    "Inoculate the Erlenmeyer flask 1:100 from your overnight culture and grow the bacteria at 37°C and 120 rpm.",
+    "Grow the culture to an OD600 of 0.6. This will usually take 2-3 hours.",
+    "Take 1 ml of pre-induction sample and cold shock the culture for 30 minutes on ice. Keep the pre-induction sample in the fridge or freezer.",
+    "Add IPTG to a final maximum concentration of 1μM. IPTG is used because E. coli BL21DE3 has its T7 polymerase gene under an IPTG sensitive promoter and we have used plasmids with a T7 promoter in our protein expression experiments",
+    "Grow the culture overnight (for 18hours) at 20°C and 120 rpm.",
+    "Measure the OD600of a 10x diluted post-induction sample. Calculate the “real” optical density by multiplying this number by 10.",
+    "Take 1 ml of post-induction sample and spin this, together with the pre-induction sample down for 10 minutes at 4700 g, using a tabletop centrifuge.",
+    "Resuspend the pellet of the pre-induction sample in 100μl of MQ. To correct for the difference in OD600 when you load the samples on a protein gel, resuspend the pellet of the post-induction sample in 100μl x (&#34;real&#34;OD600 post−induction sample)/(OD600pre−induction sample)",
+    "Prepare the samples to be loaded on a protein gel",
+    "Run both the pre-induction and post-induction sample on a protein gel"
+  ],
+  "authors": [
+    "Robert Hooftman"
+  ],
+  "creator": "Robert Hooftman",
+  "published_on": 1569486661,
+  "created_on": 1569084594,
+  "keywords": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": 3743,
+  "title": "C_HW3 (Hello, Perl)",
+  "uri": "c-hw3-hello-perl-fv7bn9n",
+  "doi": "dx.doi.org/10.17504/protocols.io.fv7bn9n",
+  "description": "{\"blocks\":[{\"key\":\"dk3bo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9cnmo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"fsfbk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"3hc1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Clone the &#39;metagenomics-book&#39; repo if necessary (NOT in your own &#39;abe487&#39; repo): $ git clone https://github.com/kyclark/metagenomics-book.git Then pull to get the latest code and copy the &#39;problems/greeting&#39; directory into your &#39;~/abe487/problems&#39; (assuming your repo is located in your $HOME): $ cd metagenomics-book $ git pull $ cp -r problems/greeting ~/abe487/problems $ cd !$ $ git add greeting $ git commit -m &#39;new homework&#39; greeting",
+    "Edit the existing &#39;greeting.pl6&#39; file to take a single, positional (not named) argument called &#39;name.&#39; If you type &#39;make,&#39; it will execute the script with $USER like so: $ make./greeting.pl6 kyclarkHello, kyclark, your name has 7 characters. $ ./greeting.pl6 &#39;John Coltrane&#39;Hello, John Coltrane, your name has 13 characters. The argument you are getting from the command line is a string, so you will want to read the docs on the &#34;Str&#34; type: https://docs.perl6.org/type/Str If your program is given no arguments, it should print a &#34;usage&#34; statement. If you use the &#34;MAIN&#34; subroutine with a proper signature, this will happen automatically; otherwise, you will need to handle this yourself.",
+    "Your solution is correct when &#34;make test&#34; looks like this: $ make test./test.pl6ok 1 - No args gives usageok 2 - Correct output",
+    "Commit and push your work to Github for checking: $ git commit -m &#39;works now&#39; greeting.pl6 $ git push"
+  ],
+  "authors": [
+    "Ken Youens-Clark"
+  ],
+  "creator": "Ken Youens-Clark",
+  "published_on": 1474577237,
+  "created_on": 1474577176,
+  "keywords": []
+}

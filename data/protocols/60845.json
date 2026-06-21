@@ -1,0 +1,40 @@
+{
+  "id": 60845,
+  "title": "Chemical colorectal stimuli for GCaMP6f characterization ",
+  "uri": "chemical-colorectal-stimuli-for-gcamp6f-characteri-b7nmrmc6",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewov1n2mogr2/v1",
+  "description": "{\"blocks\":[{\"key\":\"fmfeh\",\"text\":\"By adopting our developed high-throughput optical recording system, a large scale of dorsal root ganglia (DRG) neurons were recorded and identified from a whole DRG. Based on this custom-built platform, we functionally characterize numerous chemosensitive colorectal DRG neurons and plot their topological distribution on the DRG. This protocol includes the steps for tissue preparation (colorectum, pelvic nerve, lumbar splanchnic nerve, thoracolumbar, and lumbosacral DRG), optical signal acquisition (GCaMP signals), and processing. Following this protocol, responses of colorectal DRG neurons to chemical stimuli were compared between zymosan-treated and control groups.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"24dg8\",\"text\":\"GCaMP6f/VGLUT-2 mice (Jackson Laboratory, CT, strain# 028863, RRID:IMSR_JAX:028863)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"agp5s\",\"text\":\"Microscope platform (BX51WI, Olympus, Waltham, MA)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2oogr\",\"text\":\"10x objective (UMPLFLN 10XW, 0.3 NA)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9jrd4\",\"text\":\"sCMOS camera (Xyla-4.2P, 82% quantum efficiency, Andor Technology, South Windsor, CT)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1s3ak\",\"text\":\"ImageJ software (v. 1.8.0; National Institutes of Health, Bethesda, MD)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c2bk4\",\"text\":\"MATLAB v2022 (Mathworks Inc., Natick, MA)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Mice (VGU/GCaMP) 8-14 weeks of age were deeply anesthetized by intraperitoneal and intramuscular injection of a 0.4 mL cocktail of ketamine (120 mg/kg) and xylazine (10 mg/kg).",
+    "Mice were then euthanized by perfusion from the left ventricle with modified ice-cold Krebs solution. Krebs Solution Composition: - 6L DI Water - 2.15g Sodium phosphate dihydrate monobasic (NaH2PO4-2H2O) - 1.35g Potassium Chloride (KCl) - 12.0g Sodium Bicarbonate (NaHCO3) - 43.15g Sodium Chloride (NaCl) - 12mL Calcium Chloride (CaCl2, 1.0M) - 12mL Magnesium Sulfate (MgSO4, 480mM) - 12g D-glucose - pH 7.2-7.3 - Osmolarity 290-320",
+    "A dorsal laminectomy was performed to expose the thoracic and lumbar spinal cord.",
+    "The colorectum with attached pelvic and lumbar splanchnic nerves and DRGs were carefully dissected via blunt dissection.",
+    "The tissue was then transferred to a recording chamber perfused with 32-34 degree Krebs solution (same composition as step 2) bubbled with carbogen (95% O 2 , 5% CO 2 ).",
+    "Turn on the light source and set up the microscope settings. An upright microscope platform was used to capture one whole DRG with a water immersed 10x objective using a halogen epi-illumination light source.",
+    "Turn on the camera. The video was captured using a high-speed sCMOS camera. The resolution of video is 1920x1920. The sampling speed is 65 frames per second. Spatial resolution is 1.6 micrometer.",
+    "Open the softwares that are used for the experiment. The software ImageJ was used to capture the video. A Matlab GUI software was used to control the custom-built system to distend the colorectum for mechanical stimulation.",
+    "Distend the colorectum. The cannulated colorectum was distended by four ascending hydrostatic pressures (15, 30, 45, 60 mmHg). Each pressure lasts for 5 sec.",
+    "Stimulate colorectum by shear flow. The colorectum was then flushed by a shear flow (20-30 mL/min) lasting for 23 sec.",
+    "Introduce the acidic hypertonic solution (AHS) to the interior colon and focus on a single DRG segment, recording neural activity initially (0 minutes) and then once every 5 minutes up to 15 minutes. AHS is composed of Krebs solution with: - Additional sodium phosphate dihydrate monobasic until pH is approximately 6.0 (i.e. Acidic Krebs). - Addition of D-Mannitol until osmolarity is approximately 800.",
+    "Distend the colorectum and stimulate by shear flow.",
+    "Remove all AHS from the interior colon and flush with water every 2 minutes for 10 minutes.",
+    "Introduce the chemical cocktail IS to the interior colon and focus on a single DRG segment, recording neural activity initially (0 minutes) and then once every 5 minutes up to 15 minutes.",
+    "Distend the colorectum and stimulate by shear flow.",
+    "Align the image stack using ImageJ to remove the spatial movement of the DRG.",
+    "Extract the potential active neurons based on intensity fluctuation across different frames.",
+    "Locate the neurons using marker-based watershed segmentation algorithm.",
+    "Active neurons are classified into four classes based on their response profiles. Low-threshold (LT) muscular neurons are activated by all pressures. High-threshold (HT) muscular neurons are evoked by pressures no lower than 30 mmHg. Mucosal neurons are exclusively activated by shear flow, and muscular-mucosal type is responsive to both distension and shear flow.",
+    "The topological distribution of responsive neurons is plot using Matlab."
+  ],
+  "authors": [
+    "Bin Feng"
+  ],
+  "creator": "Bin Feng",
+  "published_on": 1663177282,
+  "created_on": 1650038598,
+  "keywords": []
+}

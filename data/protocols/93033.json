@@ -1,0 +1,27 @@
+{
+  "id": 93033,
+  "title": "Optical Density Analysis for DAB Staining of Mouse Brain Sections",
+  "uri": "optical-density-analysis-for-dab-staining-of-mouse-c64hzgt6",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbxo2nlpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"58m9q\",\"text\":\"This protocol describes steps for optical density analysis of immunohistochemical 3,3′-Diaminobenzidine (DAB) staining of mouse brain sections using ImageJ.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"fs89e\",\"text\":\"FIJI/ImageJ Software (RRID:SCR_002285)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Open ImageJ, then calibrate for analysis.",
+    "See https://imagej.net/ij/docs/examples/calibration/ for calibration setup steps and files.",
+    "Select Analyze &gt; Calibrate, then select the following: i.Rodbard (NIH Image) ii.Unit: O.D. iii.Open the calibration.txt file iv.Uncheck ‘show plot’ v.Check ‘Global calibration’",
+    "Open an image and outline the regions of interest, including a background area for subtraction.",
+    "Select ‘multi measure’ and copy the results to an Excel sheet for analysis. Repeat for all images.",
+    "Take the ‘mean OD’ value for each region and subtract the background area ‘mean OD’ value. Values can be plotted directly or normalized to control groups."
+  ],
+  "authors": [
+    "Katerina Rademacher",
+    "Ken Nakamura"
+  ],
+  "creator": "Haru Yamamoto",
+  "published_on": 1711746831,
+  "created_on": 1704634002,
+  "keywords": []
+}

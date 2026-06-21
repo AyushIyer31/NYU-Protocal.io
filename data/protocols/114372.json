@@ -1,0 +1,41 @@
+{
+  "id": 114372,
+  "title": " Striatal synaptosome preparation",
+  "uri": "striatal-synaptosome-preparation-dtxc6piw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6dxmrvqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"fossh\",\"text\":\"This protocol describes how to isolate striatal synaptosomes form brain tissue and process them for imaging purposes.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"4ki2l\",\"text\":\"Prepare the following solutions: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4od2i\",\"text\":\"- Homogenizing buffer:  HEPES,   sucrose and 1x protease inhibitor cocktail\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":23,\"length\":1},{\"key\":1,\"offset\":31,\"length\":1}],\"data\":{}},{\"key\":\"528qs\",\"text\":\"- Sucrose solution   + 1x protease inhibitor cocktail\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":19,\"length\":1}],\"data\":{}},{\"key\":\"kfip\",\"text\":\"- Sucrose solution   + 1x protease inhibitor cocktail\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":3,\"offset\":19,\"length\":1}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"concentration\",\"mutability\":\"MUTABLE\",\"data\":{\"concentration\":\"4\",\"error_concentration\":false,\"guid\":\"\",\"id\":0,\"label\":\"\",\"scientificNotation\":false,\"unit\":28}},\"1\":{\"type\":\"concentration\",\"mutability\":\"MUTABLE\",\"data\":{\"concentration\":\"340\",\"error_concentration\":false,\"guid\":\"\",\"id\":0,\"label\":\"\",\"scientificNotation\":false,\"unit\":28}},\"2\":{\"type\":\"concentration\",\"mutability\":\"MUTABLE\",\"data\":{\"concentration\":\"0.8\",\"error_concentration\":false,\"guid\":\"\",\"id\":0,\"label\":\"\",\"scientificNotation\":false,\"unit\":21}},\"3\":{\"type\":\"concentration\",\"mutability\":\"MUTABLE\",\"data\":{\"concentration\":\"1.2\",\"error_concentration\":false,\"guid\":\"\",\"id\":0,\"label\":\"\",\"scientificNotation\":false,\"unit\":21}}}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Homogenize one Sample by 12 strokes with a glass tissue grinder in 1 mL of homogenizing buffer",
+    "Centrifuge the homogenate at 1000 x g for 00:10:00 at 4 °C",
+    "Centrifuge the supernatant at 12500 x g for 00:15:00 at 4 °C",
+    "Discard the supernatant and retain the pellet",
+    "Resuspend the pellet in 1 mL of homogenizing buffer and perform 6 strokes in the glass tissue grinder",
+    "Centrifuge the homogenate at 23600 x g for 01:10:00 at 4 °C",
+    "Carefully collect the syanptosome layer from the interface of the two sucrose layers using a 1ml syringe (aspirate up 1ml)",
+    "Add 1 mL of homogenate to the top of a sucrose gradient made as follow: - 5 mL of 1.2 Molarity (M) sucrose - 5 mL of 0.8 Molarity (M) sucrose",
+    "Dilute synaptosomes in 1 Molarity (M) sucrose to the desired concentration and plate them on poly-L-lysine-coated #1.5 coverslips in a 24-well plate",
+    "Centrifuge the plate at 4000 rpm for 00:30:00 at 4 °C to promote adhesion",
+    "Fix the synaptosomes with 4% PFA for 00:10:00 at Room temperature",
+    "Saturate synaptosomes in 5 % (v/v) donkey serum in PBS for 01:00:00",
+    "Permeabilize synaptosomes in 0.5 % (v/v) Triton X-100 in PBS for 00:10:00",
+    "Incubate synaptosomes with primary antibodies in 0.1 % (v/v) Triton X-100, 1 % (v/v) donkey serum PBS Overnight at 4 °C",
+    "Perform three 00:05:00 washes",
+    "Incubate synaptosomes with the secondary antibodies in 0.1 % (v/v) Triton X-100, 1 % (v/v) donkey serum PBS for 01:30:00",
+    "Mount synaptosomes onto slides",
+    "Acquire a single optical section for each area of syanptosomes with a confocal microscope system",
+    "Perform image analysis with ImageJ software",
+    "Regarding intensity analysis, background was subtracted from all channels using the “rolling ball” ImageJ plugin with a radius of 33.0 pixels. Automatic segmentation (threshold: default; analyze particles: size 0.04-0.40; circularity: 0.30-1.00) was exploited to define ROIs in VAMP2 channel. The intensity of the signal was measured within individual ROIs and only the ROIs positive for VAMP2 were kept. As a rule, a ROI is considered to contain the target protein when the average fluoresce intensity of that protein within the ROI is more than 2 times the average intensity of all pixels in the image and is considered as not containing the target protein when the intensity of the target protein within the ROI is below 2 times the average intensity of all pixels. To identify VAMP2 containing synaptosomes that are also positive for TH, the intensity of TH signal was measured within VAMP2 positive ROIs. The intensity of the protein of interest signal (e.g. BSN, RIM) was measured in the double-positive ROIs to keep only the triple-positive ROIs and the mean intensity value of the protein of interest was calculated and plotted. Regarding BSN area, automatic segmentation was used to define the ROIs set both for BSN and TH (threshold: default; analyze particles: size 0.04-0.40 for BSN and size 0,06-0,60 for TH; circularity: 0.30-1.00). BSN and TH ROIs sets were used to define the overlapped ROIs exploiting “AND” function in the ROI Manager. The intensity of VAMP2 signal was used to define the BSN-TH overlapped ROIs positive for VAMP2. Finally, the average area value of BSN localized within TH and VAMP2 positive synaptosomes was determined using the “set measurement” and “mesure” ImageJ functions. Regarding BSN %, automatic segmentation was used to define ROIs in TH channel (threshold: default; size 0,06-0,60; circularity: 0.30-1.00). TH ROIs positive for VAMP2 were defined measuring the intensity signal of VAMP2. BSN intensity signal was then measured within the double positive ROIs to obtain the number of ROIs that were triple positive. Automatic segmentation was used to define the total number of ROIs in BSN channel (threshold: default; size 0,04-0,40; circularity: 0.30-1.00). Finally, the % of BSN positive synaptosome localizing with VAMP2 and TH double positive synaptosomes was calculated."
+  ],
+  "authors": [
+    "Giulia Tombesi",
+    "Loukia Parisiadou"
+  ],
+  "creator": "Giulia Tombesi",
+  "published_on": 1741364293,
+  "created_on": 1733429531,
+  "keywords": []
+}

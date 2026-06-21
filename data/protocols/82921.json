@@ -1,0 +1,31 @@
+{
+  "id": 82921,
+  "title": "Enriching and isolating phages in liquid culture",
+  "uri": "enriching-and-isolating-phages-in-liquid-culture-cu8hwzt6",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewov1oeeylr2/v1",
+  "description": "{\"blocks\":[{\"key\":\"a73lq\",\"text\":\"This protocol explains how we isolate phage from microbial communities using liquid enrichment. For a protocol on enriching and isolating on solid agar plates, check out our companion protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":174,\"length\":18}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"70A0DAE0179511EEA4F0CF1694D445D5\",\"url\":\"https://www.protocols.io/view/enriching-and-isolating-phages-on-agar-plates-cu8kwzuw\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Set up cultures of your target host strains. We use this protocol for cheese bacterial isolates, which grow best in LB at 25 °C with shaking at 200 rpm, and reach high density after two days.",
+    "After cells have grown to high density, prepare your infection media. We used LB supplemented with 1 mM MgSO 4 and 1 mM CaCl 2 (final concentrations). Add your phage extracts to this media, either individually for many parallel enrichments, or pooled together. We find that in liquid, enrichments are generally dominated by a single lytic phage. If you are screening multiple phage extracts, and expect that each extract might have a different phage targeting your host of interest, we recommend separate parallel enrichments for each host and phage source. If you instead find that phage × host matches are rare in your system, it might make sense to pool all your phage extracts to reduce the total number of enrichments you need to do.",
+    "Aliquot your infection media into 3 mL glass culture tubes, or deep-well 96-well plates. We generally use 0.25–1 mL of media for these enrichments.",
+    "Subculture your hosts into the infection media at a 1:100 dilution. For instance, you would add 10 µL of host culture to 1 mL of infection media.",
+    "Incubate your enrichments at 25 °C with shaking at 200 rpm overnight.",
+    "Harvest infected subcultures: Move infected cultures into 1.5 mL tube + 50 µL CHCl 3 . Spin down for 5 min at max speed, then transfer the supernatant to fresh 1.5 mL tube + 50 µL CHCl 3 .",
+    "Use uninfected parent cultures to pour phage plates using the double agar overlay method . Add 200 µL of culture to 3 mL of molten (but not overly hot) top agar. Pour top agar onto a room-temperature LB plate, swirling to evenly distribute the agar across the plate before it cools. Top agar recipe 100 mL LB 0.25 g agarose (0.25%) 100 µL 1 M MgSO 4 (1 mM) Autoclave to sterilize. Reheat to melt in the microwave, then make sure you let it cool to a point where it is warm to the touch but not scalding, or you will kill your bacterial hosts.",
+    "Once the plate is cooled, spot the phage-enriched supernatant onto the phage plate. If you only have one enrichment per host, you can use a larger volume (like 10 µL) in one large drop that you can gently swirl with the pipette tip to distribute. If you have many enrichments per host, you should pipette smaller, 2–3 µL spots onto the host in a grid pattern.",
+    "Incubate plates at room temperature. Plaques will show up in 24–72 hours.",
+    "Pick plaques using a pipette tip, and transfer into 300 µL of SM buffer with 50 µL of CHCL 3 .",
+    "Purify these phages by diluting the picked plaque down to a concentrate that will give single plaques, then infecting 200 µL of host culture with 10 µL of diluted phage, and finally plating out using the double agar overlay method. Repeat 2×."
+  ],
+  "authors": [
+    "Adair Borges"
+  ],
+  "creator": "Arcadia Science",
+  "published_on": 1689273463,
+  "created_on": 1686007986,
+  "keywords": []
+}

@@ -1,0 +1,29 @@
+{
+  "id": 102682,
+  "title": "TrpB passaging protocol",
+  "uri": "trpb-passaging-protocol-dgh23t8e",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvr8p3plmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"f3aa3\",\"text\":\"Instructions for passaging the evolving TrpB populations using the OrthoRep system for continuous directed evolution. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d109h\",\"text\":\"Protocol developed from Rix et al., 2020 and optimized in Burgess lab.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8d5a8\",\"text\":\"Special thanks to Vincent Hu for his aid in troubleshooting.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "TrpB evolution-ready strains should be grown in SC -UL with shaking at 220 RPM at 30 °C The first growth should be done at 100 micromolar (µM) Trp, then move on to 37 micromolar (µM) Trp. It may be a good idea to passage the cells in the same condition for a few times regardless of final OD to help prevent crashes.",
+    "After ~2 days of growth, the cultures will be saturated, either by excessive growth or tryptophan limitation. If cultures are visibly saturated by excessive growth before the 2 days (typically on the afternoon of the day after a previous passage when tryptophan is not limiting), passaging can be done then.",
+    "Aliquot 1 mL of culture into: a spectrophotometer cuvette a clear 1.5 mL tube a screw-cap centrifuge tube.",
+    "Add 1 mL 50% glycerol to the screw cap tube containing culture, label it, and store at -80C. Note: for strains with poor growth (OD &lt; 0.5), instead centrifuge 1 mL of culture and resuspend in 0.5 mL YPD, add to the screw cap tube, and then add 0.5 mL 50% glycerol as above. This helps with recovery by concentrating the cells and putting them in friendlier media.",
+    "Centrifuge the 1.5 mL tubes for 1 minute at 16000 x g. Inspect the pellet visually for contamination. Yeast will be a white or off-whitish color, sometimes a little yellowish. A huge, brown/yellow/green pellet indicates contamination and means you should go back 2 or 3 passages in the evolution. You can discard the tubes.",
+    "Measure the OD600 of each strain and record it. If the strain is above 1.0, passage to a slightly lower tryptophan concentration. 37 &gt; 25 &gt; 20 &gt; 15 &gt; 10 &gt; 7.5 &gt; 5 &gt; 0 works well. Note down the Trp concentration used to graph out evolution trajectories. Note: at 10 micromolar (µM) Trp, strains will saturate at around 0.5-0.6 OD 600. If high growth is suddenly observed, it can be an indication of an evolved variant which successfully produces Trp. You may want to consider starting 2 cultures from this one, one at 0 uM as a &#34;test&#34;, and one at the slightly lower Trp concentration above as a precaution.",
+    "To passage, prepare a 50 mL Falcon tube containing 10 mL of SC -UL media for each population. Don&#39;t forget to add His and Glucose to the stock of media you made to avoid having to do that every time you passage. Add the following: Filter-sterilized Indole (final concentration = 400 micromolar (µM) . Indole&#39;s maximum solubility in water is 16 mM (250 uL for a 10 mL tube) Filter-sterilized Tryptophan to the final concentration specified above (if needed). I keep a 10 mM stock to make things easier: for a final 5 micromolar (µM) concentration, you only need to add 5 uL. For the wild-type control, add filter-sterilized 100X Uracil (as this strain is URA- ). The wildtype control is always grown at 100 micromolar (µM) to gage the saturation levels of a would-be evolved culture. After adding the required additives, add 100 µL of the previous passage to the tube (1:100) and gently invert to mix. Label the tubes as appropriate.",
+    "Place tubes to grow in the conditions specified above.",
+    "Once a culture grows in 0 uM Trp, passage it in 0 uM Trp (not forgetting to add the indole) 6 additional times to saturate the variant. After the 6th passage, make 2 glycerol stocks (one for the evolution box and one for the main yeast box) Proceed to gDNA isolation, PCR amplification of p1, and Sanger Sequencing."
+  ],
+  "authors": [
+    "is Sparrow"
+  ],
+  "creator": "is Sparrow",
+  "published_on": 1720476556,
+  "created_on": 1719851752,
+  "keywords": []
+}

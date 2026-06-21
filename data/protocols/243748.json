@@ -1,0 +1,43 @@
+{
+  "id": 243748,
+  "title": "Different Clearing Techniques for Murine Skeletal Structures",
+  "uri": "different-clearing-techniques-for-murine-skeletal-hsacb6aax",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6ey11gqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"3ffa8\",\"text\":\"Historically, visualization of vascular networks within the musculoskeletal system, particularly in mineralized tissues such as bones and joints, has been limited to conventional 2D histological approaches. Recent advances in optical tissue clearing technologies and fluorescence imaging approaches in whole, intact tissues offer an entrée to interrogate the vasculature at unprecedented resolution during both musculoskeletal development and in pathologic contexts in three dimensions. However, these clearing techniques were originally not developed for imaging hard mineralized tissues, such as the femur and tibia. Herein, we have optimized tissue decalcification conditions and compared aqueous- and solvent-based tissue clearing approaches to establish an optimal pipeline for clearing and imaging the vasculature in mineralized tissues of the adult mouse. Collectively, this work shows that optical clearing combined with lightsheet microscopy represents a powerful method for generating high-resolution images of the murine hindlimb vasculature, with potential applications in aging and disease modeling.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"y1khh\",\"text\":\"- 50 mL Falcon tube (VWR 10025-682)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"tqmrd\",\"text\":\"- 4% PFA/1x PBS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"merrg\",\"text\":\"- 1x PBS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lst8n\",\"text\":\"- 10% EDTA/1x PBS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"og6yz\",\"text\":\"- Methanol (Sigma-Aldrich 154903)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"rn3om\",\"text\":\"- Dichloromethane (DCM) (Sigma-Aldrich 270997)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"oifyv\",\"text\":\"- Dibenzyl ether (DBE) (ThermoScientific, A18447.30)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vtvdf\",\"text\":\"- Glass scintillation tube (Sigma-Aldrich DWK986546)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"39h2k\",\"text\":\"- Tetrahydrofuran (THF) (Sigma-Aldrich 186562)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ikkbu\",\"text\":\"- Benzyl alcohol (Sigma-Aldrich 24122)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"43c5t\",\"text\":\"- Benzyl benzoate (Sigma-Aldrich W213802)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"etocp\",\"text\":\"- 80% nycodenz (PROGEN 18003)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5qvbc\",\"text\":\"- 7 M urea (Sigma-Aldrich 51456)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vofjh\",\"text\":\"- 0.05% sodium azide (Sigma-Aldrich S2002)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"opnml\",\"text\":\"- 0.02 M sodium phosphate buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Perfusion was done as earlier reported in https://doi.org/10.1016/j.xpro.2024.103053 .",
+    "This process is a modified iDISCO+ protocol suitable for pre-labelled mineralised samples.",
+    "This process is a modified vDISCO protocol suitable for pre-labelled mineralised samples.",
+    "This is a modified EZ clear protocol, as previously reported in https://doi.org/10.1016/j.xpro.2024.103053 and https://doi.org/10.7554/eLife.77419 for skeletal structures.",
+    "After perfusion, skeletal structures were dissected away from the mouse, the skin removed, and samples submerged in 50 mL of ice-cold 4% PFA/1x PBS in a 50 mL Falcon tube (VWR 10025-682) and kept on an orbital shaker set at 30 rpm, protected from light, overnight at 4°C.",
+    "The following day, samples were washed 3 times in 1x PBS at room temperature, for 30 minutes each wash, on an orbital shaker set at 30 rpm.",
+    "The samples were then decalcified in 50 mL of 10% EDTA/1x PBS in a 50 mL Falcon tube at room temperature on an orbital shaker set at 30 rpm for either 2 or 5 days (depending on the age of the sample).",
+    "Samples were then washed 3 times with 1x PBS, for 30 minutes each wash, at room temperature on an orbital shaker set at 30 rpm, and processed for tissue clearing",
+    "Fixed, decalcified samples in 50 mL Falcon tubes (VWR 10025-682) were serially dehydrated by 60-minute washes through an increasing gradient (20%, 40%, 60%, 80%, 100%) of methanol (Sigma-Aldrich 154903) diluted in water with gentle agitation, while protected from light, followed by overnight incubation in 100% methanol.",
+    "Samples were then delipidated in 66% v/v dichloromethane (DCM) (Sigma-Aldrich 270997) prepared in methanol for 24 hours at room temperature on an orbital shaker.",
+    "The following day, the samples were washed two times, for 15 minutes each wash, in 100% DCM to remove methanol.",
+    "The samples were then incubated for 24 hours at room temperature, with gentle agitation, in 100% dibenzyl ether (DBE) (ThermoScientific, A18447.30) to render the samples transparent. The following day, the DBE was exchanged for a fresh DBE solution.",
+    "Samples were placed in a 20 mL glass scintillation tube (Sigma-Aldrich DWK986546) wrapped in foil to protect them from light. (THF used in the protocol is not compatible with plastic)",
+    "A series of 12-hour delipidation washes of the samples through an increasing gradient (50%, 70%, 80%, 100%) of tetrahydrofuran (THF) (Sigma-Aldrich 186562) diluted in water with gentle agitation.",
+    "Next, samples were gently washed in 100% DCM for 3 hours at room temperature on an orbital shaker.",
+    "Samples were then rendered transparent in a 1:2 mixture of benzyl alcohol (Sigma-Aldrich 24122) and benzyl benzoate (Sigma-Aldrich W213802) (i.e. BABB), for 24 hours with gentle agitation in the same glass scintillation tube.",
+    "Samples were placed in a 20 mL glass scintillation tube (Sigma-Aldrich DWK986546) wrapped in foil to protect them from light. (THF used in the protocol is not compatible with plastic)",
+    "A series of 12-hour delipidation washes of the samples through an increasing gradient (50%, 70%, 80%, 100%) of tetrahydrofuran (THF) (Sigma-Aldrich 186562) diluted in water with gentle agitation.",
+    "Samples were then washed four times in ddH2O, for 60 minutes each wash, to remove the THF solution.",
+    "The vial was left open after the last wash to allow for evaporation of ddH2O.",
+    "Next, the samples were RI-matched in EZ View solution [80% nycodenz (PROGEN 18003) 7 M urea (Sigma-Aldrich 51456) 0.05% sodium azide (Sigma-Aldrich S2002) 0.02 M sodium phosphate buffer] in the same scintillation tube wrapped in foil to protect the samples from light."
+  ],
+  "authors": [
+    "Azeez O. Ishola",
+    "Ted Ahn",
+    "Joshua Wythe"
+  ],
+  "creator": "Azeez O. Ishola",
+  "published_on": 1773038791,
+  "created_on": 1771602407,
+  "keywords": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": 28039,
+  "title": "FLUORESCENCE LOSS ASSAY",
+  "uri": "fluorescence-loss-assay-7mfhk3n",
+  "doi": "dx.doi.org/10.17504/protocols.io.7mfhk3n",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "50ul of chemically competent E. coli DH10B_gfp cells were transformed (heat-shock: 42°C, 30sec) with 3ng plasmid (Cplasmid*2ul=3ng/ul*x -&gt; x=...ul=2ul undiluted plasmid + rest ul MQ) and recovered in 450 ul LB for 1h at 37°C. (PC = E. coli DH10B_gfp + pACYC184) (NC = E. coli DH10B + pACYC184)",
+    "2ul of recovered cells were inoculated in 198ul M9TG+Cam15. [1 Masterblock] (B = Blank, just medium)",
+    "Incubate at 37°C under shaking (900rpm) for 21-22 hours.",
+    "2ul of each preculture were inoculated in 198ul M9TG+Cam15. [1 Masterblock]",
+    "Shake the plate on the thermoblock (900rpm)",
+    "2ul of each dilution were inoculated in 198ul M9TG+Cam15+inducer. [4 Masterblocks=triplicates + control plate] Plate 1,2,3 (triplicates)",
+    "Incubate at 37°C under shaking (900rpm) for 21-22 hours.",
+    "Mix at thermoblock the preculture -&gt; 40ul of each sample were inoculated in 160ul of 1xPBS [4 normal 96-well plates]",
+    "Transfer 100ul in 4 black plates with transparent bottom",
+    "Procedure Details: %s %s Plate Type96 WELL PLATEEject plate on completion Set TemperatureSetpoint 25°C Preheat before moving to next stepShakeFast, 0:10 (MM:SS)ReadCell Density Absorbance Endpoint Full Plate Wavelengths: 600 Read Speed: Normal, Delay: 100 msec, Measurements/Data Point: 8ReadFluorescence Endpoint Full Plate Filter Set 1 Excitation: 395/20,0, Emission: 508/20,0 Optics: Top, Gain: 50 Filter Set 2 Excitation: 395/20,0, Emission: 508/20,0 Optics: Top, Gain: 75 Filter Set 3 Excitation: 395/20,0, Emission: 508/20,0 Optics: Top, Gain: 100 Read Speed: Normal, Delay: 100 msec, Measurements/Data Point: 10 Read Height: 8 mm"
+  ],
+  "authors": [
+    "Alexander Niederau",
+    "Despoina Trasanidou"
+  ],
+  "creator": "Alexander Niederau",
+  "published_on": 1569924649,
+  "created_on": 1569273418,
+  "keywords": []
+}

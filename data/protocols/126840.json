@@ -1,0 +1,41 @@
+{
+  "id": 126840,
+  "title": "Infection related adverse events in adult patients with severe asthma treated with Tezepelumab, a systematic review and meta-analysis",
+  "uri": "infection-related-adverse-events-in-adult-patients-d74y9qxw",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4zkn8vo5/v2",
+  "description": "{\"blocks\":[{\"key\":\"tftd\",\"text\":\"Asthma is a chronic respiratory disease with different\\nphenotypes that are characterized by chronic airway inflammation. Severe asthma\\nis a subset of difficult-to-treat asthma defined as uncontrolled asthma despite\\nadherence to treatment with maximal optimized high-doses of ICS-LABA.\\nTezepelumab is a monoclonal antibody that blocks thymic stromal lymphopoietin\\n(TSLP), a key cytokine involved in airway inflammation. It is approved for the\\ntreatment of severe asthma to reduce exacerbations and improve lung function. TSLP\\nplays a role in response to several infections.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"42ncl\",\"text\":\"Prior meta-analyses have focused on determining safety and\\nefficacy. In these studies infections were only analyzed as secondary outcomes.\\nWe aim to identify the risk of infection in patients with severe asthma\\nundergoing therapy with Tezepelumab. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "We will include studies evaluating patients with severeasthma despite optimal therapy, irrespective of age, sex, country, and ethnicgroup. Randomized controlled trial the study must compare Tezepelumab toplacebo. We will exclude studies involving patients with documentedAsthma-COPD Overlap syndrome, other severe pulmonary diseases and children(under 18 years of age). If a study reports active smokers, we will excludeactive smokers from analysis. We excluded non-human studies and in vitro research,editorials, conference proceedings, commentaries, expert opinion, reviews,studies without original data, non-English publications, and duplicatepublications.",
+    "Therapy with tezepelumab",
+    "ezspire(&#34;Severe asthma&#34; OR &#34;uncontrolledasthma&#34;) AND (tezepelumab OR &#34;anti thymic stromal lymphopoietin&#34;OR &#34;anti-TSLP&#34; OR tezspire) AND (&#34;randomized controlledtrial&#34;[PT] OR &#34;controlled clinical trial&#34;[Publication Type] OR&#34;randomized&#34;[Title/Abstract] OR &#34;placebo&#34;[Title/Abstract]OR &#34;drug therapy&#34;[MeSH Subheading] OR(&#34;randomly&#34;[Title/Abstract] OR &#34;trial&#34;[Title/Abstract] OR&#34;groups&#34;[Title/Abstract])) NOT (&#34;animals&#34;[MeSH Terms] NOT&#34;humans&#34;[MeSH Terms]) Cochrane search: (&#34;Severe asthma&#34; OR &#34;uncontrolledasthma&#34;) AND (tezepelumab OR &#34;anti thymic stromal lymphopoietin&#34;OR &#34;anti-TSLP&#34; OR tezspire)",
+    "Placebo",
+    "Randomized controltrial",
+    "We will include onlystudies that report on any of the outcomes of interest, as reported below. Wewill also collect data on subgroups of sex, age, race, pulmonary function test,eosinophil counts, Quality of life scores, and frequency of exacerbations.",
+    "We will extract datafor a pooled analysis on the following outcomes: (1) Pneumonia (Lowerrespiratory tract infection); (2) Bronchitis; (3) Nasopharyngitis; (4) UpperRespiratory Tract Infections; (5) Other non-respiratory infectious adverseevents Measures of effect: Hazards ratio, and Odds ratio",
+    "All protocol amendments, data extraction updates, anddecisions regarding inclusion/exclusion will be logged in a version-controlleddocument to ensure auditability. The review will be conducted in accordancewith the PRISMA and MOOSE guidelines for systematic reviews and meta-analyses.",
+    "All data related to this systematic review and meta-analysiswill be collected, managed, and stored in accordance with establishedmethodological guidelines and principles of transparency and reproducibility. Allextracted data will be stored securely in password-protected Excel spreadsheets.Only authorized members of the review team will have access to the data files. Regularbackups will be created to prevent data loss.",
+    "Titles and abstracts identified through the search strategywill be screened independently by two reviewers (FR and TT). Discrepanciesbetween reviewers will be resolved through adjudication by a third, independentreviewer (ESN)",
+    "Data Extraction Data on each of the outcomes described will be collected.Data will be extracted independently by two team members. If furtherinformation is required, authors from the original article will be contacted toobtain data not available in published reports. A standardized data extraction form will be developed and pilottested. The following data will be extracted from each included study: Study Characteristics: First author, publication year, country, study design, trial registration (if applicable), funding sources, and conflict of interest disclosures. Participant Characteristics: Sample size, mean age, gender distribution, baseline asthma severity, inclusion/exclusion criteria. Intervention Details: Dose, duration, and route of Tezepelumab administration; co-interventions; standard therapy components. Outcomes: Type and number of adverse events (including total AEs and specific types like infections), definitions used, follow-up duration, and method of adverse event reporting. In addition, thefollowing baseline characteristics will be collected: (1) race distribution; (2)proportion of patients with severe persistent asthma with eosinophilia; (3)proportion of patients with severe persistent asthma without eosinophilia; (4) Qualityof life scores; (5) comorbidities; and (6) follow-up in months. The data willbe extracted and recorded on an Excel template by two authors: FR and TT.",
+    "We will use the Cochrane Collaboration’s tool for assessingrisk of bias in randomized trials for quality assessment of individualrandomized studies.",
+    "The systematic review and meta-analysis will be performed inline with recommendations from the Cochrane Collaboration and the PreferredReporting Items for Systematic Reviews and Meta-Analysis (PRISMA) statementguidelines. A meta-analysis will be performed if ≥2 studies report thesame outcome (e.g., adverse events or infections) in a comparable way. We will extract the data from individual studiesusing hazard ratios (HR) to preserve time-to-event data from individualstudies. Effects for binary endpoints ((e.g., incidence of adverse events,infections) will be compared usingpooled HR or odds-ratios (OR) with 95% confidence intervals. Weighted meandifferences will be used to pool continuous outcomes. Heterogeneity will beevaluated with Cochran Q test and I² statistics; p values inferior to 0.10 andI²&gt;25% will be considered significant for heterogeneity. The decision to useeither a random-effect or fixed-effect model will be made after a criticalappraisal of all included studies. Review Manager 5.4 (Nordic Cochrane Centre,The Cochrane Collaboration, Copenhagen, Denmark) will be used for statisticalanalysis",
+    "We will extract data and perform sub-analyses in thefollowing subgroups: (1) male; (2) female; (3) age ≥65 years old; (4) age&lt;65 years old; (5) by duration of follow up (less than 6 months and greaterthan 6 months); (7) By type of adverseevent (e.g: infections vs general Adverse events)",
+    "If ≥10 studies areincluded in a meta-analysis, publication bias will be assessed via: Visual inspection of funnel plots Egger’s regression test for small-study effects",
+    "Severe Asthma Tezepelumab Adverse drug reactions",
+    "English",
+    "None",
+    "None"
+  ],
+  "authors": [
+    "Felix Reyes",
+    "Tanvi Tiwari",
+    "Eduardo Saadi Neto"
+  ],
+  "creator": "Felix Reyes",
+  "published_on": 1744881743,
+  "created_on": 1744863195,
+  "keywords": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": 22680,
+  "title": "Gravimetric Soil Moisture X-CZO, Modified from KBS-LTER, as per Robertson et al. 1999",
+  "uri": "gravimetric-soil-moisture-x-czo-modified-from-kbs-2dyga7w",
+  "doi": "dx.doi.org/10.17504/protocols.io.2dyga7w",
+  "description": "{\"blocks\":[{\"key\":\"7p83r\",\"text\":\"Samples were collected from a network of ten Critical Zone Observatories (CZOs) across the US: Southern Sierra (CA), Boulder Creek (CO), Reynolds (ID), Shale Hills (PA), Calhoun (SC), Luquillo (PR), Intensively-Managed Landscapes (IML) (IL/IA/MN), Catalina/Jemez (AZ/NM), Eel (CA), and Christina (DE/PA). Volunteers from each CZO excavated two separate soil profiles selected to represent distinct soil types or parent materials or to contrast with each other in another major characteristic, such as elevation, dominant vegetation type, or landscape positions. Soils were collected at peak greenness, as estimated from Normalized Difference Vegetation Index and Enhanced Vegetation Index measured by NASA's MODIS (MODerate-resolution Imaging Spectroradiometer) instrument aboard the Terrasatellite. These collections were conducted between April 2016 and November 2016, with the exception of the EEL CZO samples, which were collected May 2017. Volunteers were asked to sample by integrating soil in 10 cm increments, every 10cm increment to a depth of at least 100 cm, although it was not possible to reach these depths at all sites. If a particular profile within a site extended beyond 100 cm, an optional sample of the last 10 cm to refusal were also collected. In contrast, the Luquillo CZO sites were collected at every 10-cm interval, covering 3 cm, with the exception of the surface soil, which contained the top 6 cm of surface soil. For all but two sites, soil from the pit or core was collected sterilely using either a soil knife or a coring auger inserted into the pit wall horizontally, integrating soil from each 10 cm increment. The sites from the IML CZO (GOOS and PRAR) and Christina (FLUD and AGRI) CZO were sampled by core auger, and were each composited from 4 cores.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":784,\"length\":5}],\"entityRanges\":[],\"data\":[]},{\"key\":\"4kq2d\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7h4en\",\"text\":\"Soil samples, once received at the University of California, Riverside, a portion of each field sample was sieved (2 mm opening, ASTM No. 10), and the sieved portion was homogenized by shaking and/or mixing the sample within the sterile sample bag. The sieved, homogenized samples were divided into subsamples for further analysis. For some soils (particularly some wet, finely textured depth intervals), sieving was not practical under field-fresh conditions. These samples were homogenized by mixing, but during the subsampling process, larger root fragments and granules were excluded by visual observation. In addition, SHAL sites from the Shale Hills CZO samples from 70—100 cm consisted almost entirely of medium-sized rocks (“cobbles” in USGS nomenclature); soil was collected both by manually crushing rocks with a ceramic mortar and pestle to pass through the sieve and by scraping soil from the faces of the cobbles—for this analysis, only the crushed-rock samples were used.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"8l47i\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"c9fqi\",\"text\":\"Soil moisture tins and lids (pre-weighed and numbered)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"df2ab\",\"text\":\"Plastic spoons\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dnrn6\",\"text\":\"Balance\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "On the soil moisture spreadsheet record the sampling date, treatment, replicate, etc.",
+    "For sieved composite soil samples: Place the soil moisture tin on the balance and tare the weight by zeroing the scale. Use a plastic spoon to add about 40-50 g of the soil into the tared soil moisture tin. Record the tin number and the exact fresh weight of the soil sample (to nearest 0.01g) in the tin on the soil moisture spreadsheet. Then, cover tin with matching numbered lid.",
+    "Remove lids and place tins into the oven. Oven dry soil to a constant weight: at least 24 hours at 105 degrees C for soil moisture only or 48 hours at 60 degrees C if C/N analysis is required.",
+    "When drying is complete, recap tins with numbered lids as they are removed from the oven. Allow cooling for 15 minutes.",
+    "Tare scale to zero. Place each tin containing soil, including the lid, on the balance and record total weight of tin + soil in the spreadsheet. There is no need to weigh the tin+lid separately because these weights are already in the spreadsheet.",
+    "Dispose of soil unless needed for C/N analysis.",
+    "Subtract the tare weight of the designated soil moisture tin and lid (weights are in database) from the oven-dried sample weight (soil + tin + lid) to determine the dry weight of soil.",
+    "Determine soil moisture on a dry-weight basis (g water per g dry soil) as: soil moisture = (fresh weight – dry weight) / dry weight"
+  ],
+  "authors": [
+    "Mia Maltz",
+    "Emma Aronson",
+    "Keshav Arogyaswamy",
+    "Natalie Rodriguez"
+  ],
+  "creator": "Natalie Rodriguez",
+  "published_on": 1563221211,
+  "created_on": 1556395765,
+  "keywords": []
+}

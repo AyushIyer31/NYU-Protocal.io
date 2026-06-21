@@ -1,0 +1,31 @@
+{
+  "id": 42182,
+  "title": "Protcol 1: PCR Dry Lab",
+  "uri": "protcol-1-pcr-dry-lab-bmfek3je",
+  "doi": "",
+  "description": "",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"3k31m\",\"text\":\"In the dry lab portion of the PCR lab, you will need to do a bit of research before doing the actual PCR experiment. You will use the UCSC Human Genome Browser (hgb) and Geneious create primers and display amplified PCR products and translated sequences. You will find the region of interest to amplify on the SARS-CoV-2 (covid-19). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9ap7a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "To find information on DNA region of interest, first go to the hgb website and find the Genomes tab. Click on SARS-coV-2 (COVID-19).",
+    "Once the genome is open, go to the bottom of the page and click default tracks. In addition to the default tracks, open the ARTIC primers track under the Mapping and sequencing section and NCBI genes under Genes and Gene Predictions.",
+    "Using the tracks on display, give the name of a protein that is known to bind with ACE2 and give a description of the protein’s function.",
+    "Using the tracks on display, give the name of the ORF (open reading frame) in which the protein is translated from. Give the name of the track used to find this information.",
+    "Once you have your protein of interest, find the specific region on the protein which is known to bind ACE2. This is our region of interest. Give the name of the track that displays what the region of interest does and give the start and stop position of this ACE2 binding region.",
+    "Using the ARCTIC primer track, find a set of forward and reverse primers that would encapsulate the full region of interest, ACE2 binding region. Give the names of the primers.",
+    "Take a look at an annotated plasmid of SARS-CoV-2, a file can be found on Resources tab of protocols.io. File name is SARS-CoV-2_(covid19)_annotated_plasmid.gb. Open the file on Geneious",
+    "On the plasmid, find the gene, respective to the protein, in which your region of interest is on. Highlight the region on which the gene is located. Click the button labeled “Add Annotation”. Name the annotation and label the correct annotation type. What type of annotation should this protein be labeled as?",
+    "The annotation should display as a block on the plasmid. Click on the annotation block and then click the button labeled “Translate”. Give the single letter amino acid code found in the range of 180 to 190.",
+    "Find the region of interest, ACE2 binding, on the gene you have just annotated. Now annotate the region of interest. Translate the region and give the single letter amino acid code found in the range of 30 to 40.",
+    "Create two sets of primers, one to amplify the protein region and to amplify the region of interest. Give the interval at which the primers exist, base pair length, GC content, and Tm. Make sure primers are up to general standards. Hint: one can check if primer meets criteria by hovering the mouse over the primer."
+  ],
+  "authors": [
+    "Ikenna Anigbogu"
+  ],
+  "creator": "Alyssa Ayala",
+  "published_on": 1602008671,
+  "created_on": 1600273970,
+  "keywords": []
+}

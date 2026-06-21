@@ -1,0 +1,31 @@
+{
+  "id": 93206,
+  "title": "Freely moving imaging",
+  "uri": "freely-moving-imaging-c69wzh7e",
+  "doi": "dx.doi.org/10.17504/protocols.io.261ged1bjv47/v1",
+  "description": "{\"blocks\":[{\"key\":\"5f886\",\"text\":\"We have developed a new micro-fiber array approach capable of chronically measuring and optogenetically manipulating local dynamics across over 100 targeted locations simultaneously in head-fixed and freely moving mice, enabling investigation of cell-type and neurotransmitter-specific signals over arbitrary 3-D volumes . This protocol includes the steps for imaging in freely-moving mice. Please contact us (mwhowe@bu.edu) if you are interested in using this technique. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "For visualizing fibers in behaving mice custom-built miniscopes (Liberti et al., 2016; Liberti et al., 2017) were positioned above the fiber bundle, focused with an XYZ manipulator, and cemented in place with Metabond (Parkell) under brief isoflurane anesthesia.",
+    "Note: Permanent implantation was used for initial experiments in this study, but baseplate attachment is equally viable.",
+    "Mice were allowed to recover for 24-48 hrs after attachment, after which imaging was performed in a custom built acrylic arena as mice foraged for Froot Loops (Kellogg’s).",
+    "The miniscope GRIN objective had an N.A. of 0.45 for high-efficiency light collection and the imaging area was approximately 800 x 600 µm, allowing visualization of a substantial fraction of the fiber bundle.",
+    "Both behavioral video and fiber signals were acquired at 30Hz using custom MATLAB acquisition software.",
+    "Neural imaging data were acquired from DAQ and CMOS PCBs from the UCLA Miniscope project (Pnevmatikakis and Giovannucci, 2017).",
+    "Illumination intensity was delivered by a 470 nm LED (Luxeon Rebel, Lumileds) at an intensity of 0.1-0.25 mW/mm2, controlled by a D-A interface (National Instruments USB-6009) and BuckPuck LED controller (LEDdynamics, Inc).",
+    "Imaging data were motion-corrected with NormCorre73, corrected for minor background light leak using spatial high-pass filtering, and converted to ∆F/F.",
+    "Intensity timeseries for each fiber were extracted using manually selected circular ROIs.",
+    "Locomotor activity was quantified using manual tracking in ImageJ."
+  ],
+  "authors": [
+    "Mai-Anh Vu",
+    "Mark Howe"
+  ],
+  "creator": "Mai-Anh Vu",
+  "published_on": 1706060419,
+  "created_on": 1704835505,
+  "keywords": []
+}

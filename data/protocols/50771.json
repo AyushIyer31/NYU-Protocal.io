@@ -1,0 +1,29 @@
+{
+  "id": 50771,
+  "title": "Libraries construction for HPV targeted NGS",
+  "uri": "libraries-construction-for-hpv-targeted-ngs-bvttn6nn",
+  "doi": "dx.doi.org/10.17504/protocols.io.bvttn6nn",
+  "description": "{\"blocks\":[{\"key\":\"4vi8f\",\"text\":\"This protocol allow the construction of libraries for targeted NGS. Customized primers were designed and indexes were used to permit a one run sequencing.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "A first PCR with PGMY09/11primers was performed using 50μl mixture containing 3mM MgCl2, 10 μmol of each primer, 1.5 mM of dNTP (dATP, dCTP, TTP, dGTP), 5μl of the Taq DNA polymerase buffer, 1U of Taq DNA Polymerase, and 10 μl of DNA preparation was aliquoted. The PCR cycling parameters were composed of a 10 minutes initial denaturation at 94°C, followed by 30 amplification cycles of 30 s at 94°C, 1 min at 50°C and 1 min at 72°C, and a final extension step for 7 minutes at 72°C.",
+    "2.5 µl from the PYGMY PCR were amplified by a second PCR using 25µl mixture. PCR mixture contained 12.5µL Kapa Mix(Kapa Taq Extra Hot Start Mix, TXHSRMK Roche), 10µl of each designed primers: (P5-GP5+:TCGTCGGCAGCGTCAGATGTGTATAAGAGACAG TTT GTT ACT GTG GTA GAT ACCAC/ P7-GP6+:GTCTCGTGGGCTCGGAGATGTGTATAAGAGACAG GAA AAA TAA ACT GTA AAT CAT ATT). The PCR cycling parameters were composed of a 5 minutes of initial denaturation at 95°C, followed by 14 amplification cycles of 30 seconds at 94°C, 1 minutes at 55°C and 1 minutes at 72°C, and a final extension step for 5 minutes at 72°C.",
+    "The size of PCR products (~200 pub) was evaluated with the 2100 Bio analyzer system (Cat. no. G2940CA; Agilent Technologies, Santa Clara, CA, USA).",
+    "samples were purified using the Agent court® Apure® XP beads (Cat. no. A63881; Beckman Coulter Genomics, Danvers, MA, USA).",
+    "96 different indexes (NextEra XT Index Kit) were added using a PCR reaction (40µl). PCR mixture contained 5µl of the previous purified PCR product, 25 µl of Kapa Mix and 5µl of each index. The PCR cycling parameters were composed of a 3 minutes of initial denaturation at 95°C, followed by 8 amplification cycles of 30 seconds at 94°C, 1 minutes at 55°C and 30 seconds at 72°C, and a final extension step for 5 minutes at 72°C.",
+    "Libraries were purified",
+    "Librairies were quantified using Real Time PCR.",
+    "Librairies were pooled at equimolar ratios (4nM) to yield one sequencing sample.",
+    "In preparation for cluster generation and sequencing, pooled libraries are denatured with NaOH, diluted with hybridization buffer, and then heat denatured before MiSeq sequencing. The sequencing was performed using the Miseq V2 Kit."
+  ],
+  "authors": [
+    "monia.ardhaoui"
+  ],
+  "creator": "monia.ardhaoui",
+  "published_on": 1623709817,
+  "created_on": 1623705450,
+  "keywords": []
+}

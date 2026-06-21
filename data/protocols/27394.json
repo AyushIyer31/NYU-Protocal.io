@@ -1,0 +1,29 @@
+{
+  "id": 27394,
+  "title": "Loading Tn5 Enzyme with sci-protocol Oligonucleotides",
+  "uri": "loading-tn5-enzyme-with-sci-protocol-oligonucleoti-6zahf2e",
+  "doi": "dx.doi.org/10.17504/protocols.io.6zahf2e",
+  "description": "{\"blocks\":[{\"key\":\"apt04\",\"text\":\"Loading of Tn5 enzyme for sci-ATAC and s3 protocols.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Prepare 50 mL, 2.125X Tn5 Dilution buffer for protein dilution. %s %s",
+    "Prepare Mosaic End reverse compliment (ME&#39;), i7, i5 oligonucleotides at 100 micromolar (µM), Tris-HCl buffer (pH 8.0) See attached spreadsheet for oligonucleotide sequences. Three sets of oligonucleotides are listed for both i5 and i7 Tn5 loading. This yields (3 i5 sets) x (3 i7 sets)=9 uniquely identifiable 96 well plates or 864 unique well barcode combinations. Mosaic End oligonucleotide sequence used for Tn5 loading is also listed within the spreadsheet. Example_sciTn5_Oligos.xlsx Synthesis quality of these oligonucleotides is critical. HPLC purification is essential. We find that Eurofins oligos outperform IDT by roughly 10 fold in library complexity. All indexes are designed to be 2 or greater Hamming distance from all others to allow for sequencing errors.",
+    "Preparation of dsDNA through annealing. Volumes are adjusted for a single 96-well plate loading. For each i5 barcoded oligo prepare the following reaction (8 total): %s %s 2. For each i7 barcoded oligo prepare the following reaction (12 total): %s %s",
+    "Anneal Oligo mixtures within a Thermocycler with the following reaction. 95 °C 00:05:00 Slow ramp down to 20 °C, at a rate of -2.5C/min 20 °C, hold This results in 16 micromolar (µM) annealed oligo species per reaction ( i7/ME&#39; and i5/ME&#39;). Oligoes should be freshly annealed prior to loading Tn5 transposome",
+    "Prepare a 96-well plate with the following loading schema. 1. Add 5 µL of i5/ME&#39; ( 16 micromolar (µM) ) to each respective wells in a row-wise fashion. 2. Add 5 µL of i7/ME&#39; ( 16 micromolar (µM) ) to each respective wells in a column-wise fasion. This results in 10 µL, i5/ME' and i7/ME' Indexed Oligos at 8 micromolar (µM) /well",
+    "Prepare Tn5 protein as described in &#34;Generation and Purification of pTXB1.Tn5&#34; protocol. Prior to loading Tn5 protein adjust NaCl concentration. Combine: %s %s",
+    "Add 12 µL of salt-corrected Tn5 to each well of the 96 well plate. Assemble the Tn5/oligo mixture via incubation at 25 °C for 01:00:00 . Store at -20C for no more than 8 months."
+  ],
+  "authors": [
+    "Ryan Mulqueen",
+    "Andy Fields",
+    "Andrew Adey"
+  ],
+  "creator": "Andrew Adey",
+  "published_on": 1620357130,
+  "created_on": 1567198280,
+  "keywords": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": 21752,
+  "title": "ddRAD-Seq protocol",
+  "uri": "ddrad-seq-protocol-zgyf3xw",
+  "doi": "dx.doi.org/10.17504/protocols.io.zgyf3xw",
+  "description": "{\"blocks\":[{\"key\":\"deb55\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"1nd8a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"beigl\",\"text\":\"Quantify DNA and check its quality on an agarose gel. DNA should be of high molecular weight.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dtim5\",\"text\":\"Purchase adaptors as described in:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3fa20\",\"text\":\"Peterson BK, Weber JN, Kay EH, Fisher SH, Hoekstra HE. Double digest RADseq: an inexpensive method for de novo SNP discovery and genotyping in model and non-model species. PLoS ONE. 2012; 7 (5): e37135.https://doi.org/10.1371/journal.pone.0037135\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":202,\"length\":44}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"7E9E81F9943E46AAB9C5E44F121788DE\",\"url\":\"https://doi.org/10.1371/journal.pone.0037135\"}}}}",
+  "warning": "{\"blocks\":[{\"key\":\"66qdi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Digest 300ng of DNA with the enzymes Ava11 and Msp1 (New England Biolabs) in a total volume of 30 μl. Perform digestion in a PCR machine at 37˚C for 3 hours, followed by inactivation of the enzymes at 65˚C for 20 min. Confirm digestion is complete by running 4ul of the digest on a 2% agarose gel.",
+    "Ligate adaptors to the sticky ends of the digested DNA using T4 ligase (New England Biolabs) in 40 μl reactions by incubating for 2 hours at 23˚C in a PCR machine, then inactivate the enzyme at 65˚C for 20 min.",
+    "Perform a PCR on a subset of samples to test that the ligation was successful. PCR amplifications are performed in 12 µl reactions with 1× MyTaq reagent buffer (Bioline, Australia), 5 pmol of each primer (the oligo P2.2-Msp and the unique forward oligo used to make the adaptor used for that particular ligation). PCR thermocycling conditions are an initial denaturation of 2 min at 94˚C, followed by 30 cycles of 94˚C for 20 sec, 55˚C for 20 sec and 72˚C for 30 sec, then a final extension at 72˚C for 5 min. Load 5ul of PCR product on a 2% agarose gel next to unamplified ligated DNA to confirm amplification.",
+    "Pool ligations for each index. Purify each index pool with a Qiaquick PCR purification kit (Qiagen), following the manufacturer’s instructions except elute in 35 µl of Buffer EB and leave on the column for 1 min prior to centrifugation. Leave the final elution in an open 1.7ml tubes on a heating block set at 40˚C for 20 min to ensure no EtOH is present.",
+    "A gel rig for running the pooled index should be prepared by cleaning the gel apparatus with 70% ethanol. Each pooled index will be loaded into a single well so adjacent wells may need to be taped together to create sufficiently wide wells. An empty well should be left between each index, to avoid cross-contamination and a suitable ladder included at both sides on the gel. Fresh buffer should be used. Pour a 2% agarose and load the samples, then run at 80V for 80 minutes.",
+    "Prepare 1.7ml tubes by labeling them with the index and the size range to be collected. It is recommended to remove several gel slices per index (e.g., 300-500 bp, 500-700 bp) and to store the spares at -20˚C as backups. Use a new razor blade for each index and try and minimize the time the gel is exposed to UV light during gel excision.",
+    "For the size range that will be processed, weigh the gel slice and subtract the weight of the tube. Process each index by putting it through a Qiaquick gel extraction kit (Qiagen), following manufacture’s instructions except use 30 µl buffer EB for the final elution and leave the elution buffer on the column for 4 min prior to centrifugation.",
+    "Quantify each index with a Qubit dsDNA HS (high sensitivity) assay kit (Thermo Fisher Scientific), following manufacturer’s instructions.",
+    "Perform 4-6 PCRs per index to add the Illumina sequences to the fragments. Perform PCRs in 20 µl reactions with 1x Phusion flash high fidelity PCR master mix (Thermo Scientific), 4 pmol of each primer (PCR1 and PCR-Index, with PCR-Index being a unique primer for each index), and 5 µl gel-extracted ligation.",
+    "Quantify one PCR of each index with a Qubit dsDNA HS (high sensitivity) assay kit (Thermo Fisher Scientific) to confirm that DNA concentration has increased with the PCR.",
+    "Combine the PCRs for each index and purify with a MinElute kit (Qiagen), eluting in 12 µl Buffer EB.",
+    "Quantify each index with a Qubit dsDNA HS (high sensitivity) assay kit (Thermo Fisher Scientific). Combine each index equimolar."
+  ],
+  "authors": [
+    "Lara Shepherd"
+  ],
+  "creator": "Lara Shepherd",
+  "published_on": 1558454762,
+  "created_on": 1553480830,
+  "keywords": []
+}

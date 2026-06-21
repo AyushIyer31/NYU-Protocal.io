@@ -1,0 +1,32 @@
+{
+  "id": 98023,
+  "title": "Behavior: Analysis Protocol",
+  "uri": "behavior-analysis-protocol-dbyf2ptn",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2lyw3nwvx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"cfbkh\",\"text\":\"This protocol details visualisation and analysis of the collected reward learning behavior data.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "To visualize licks around reward delivery times (ex, Fig. 2b), load a trialData.mat file into the workspace and run plotLicks",
+    "Move all the collected data from a mouse (one trialData.mat file per day of behavior) into the same subfolder (ex, called ‘Data’).",
+    "Run the Matlab code licksRelativeAnalysisDualCondExt_NI",
+    "Can run on different days during behavior, and the code will add to the analysis performed for each newly added trialData file.",
+    "Saves two data structures: Cohort_mouse_analysis_tSchultz.mat – anticipatory licking, time to first lick, and trial-based locomotor data. Cohort_mouse_analysis_running.mat – locomotor data across entire behavior sessions.",
+    "Also calculates and prints probe and anticipatory licking information. Exclude any mouse with Mean full probe day ant licking to tone A response of less than 0.2 (20% of the anticipatory window spent licking on the last day of training). Exclude any mouse with Mean probe response/ Mean full probe day ant licking to tone A response ratio of greater than 30% (high probe responses relative to their baseline tone A anticipatory licking).",
+    "Copy the analysis_tSchultz.mat and analysis_running.mat variables from all mice in an experimental condition into the same folder.",
+    "Run the Matlab code licksAcrossMiceWithTreadmill to combine and extract anticipatory licking and trial-based locomotor data across all the mice (from the analysis_tSchultz.mat variables).",
+    "This saves the data structure cohort_grouped_analysis_n.mat with the resized data for each mouse.",
+    "Also creates a variety of plots for visualization of mean and SEM. Figure 3 is used to create the plots seen in Fig. 2d-f. Figure 4 is used to create the plots seen in Ext. Fig. 3a.",
+    "Run the Matlab code getAUCs on the saved grouped_analysis.mat variable to extract the AUC values seen in Fig. 2g-h and Ext. Fig. 3c, d, and f.",
+    "Run the Matlab code runningAcrossMice to combine and extract total locomotor data across mice (from the analysis_running.mat variables), as seen in Ext. Fig. 3e."
+  ],
+  "authors": [
+    "Sasha Burwell"
+  ],
+  "creator": "Sasha Burwell",
+  "published_on": 1713205287,
+  "created_on": 1712124445,
+  "keywords": []
+}

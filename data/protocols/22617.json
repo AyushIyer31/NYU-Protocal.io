@@ -1,0 +1,42 @@
+{
+  "id": 22617,
+  "title": "Bleach synchronisation of C. elegans",
+  "uri": "bleach-synchronisation-of-c-elegans-2bzgap6",
+  "doi": "dx.doi.org/10.17504/protocols.io.2bzgap6",
+  "description": "{\"blocks\":[{\"key\":\"aisuj\",\"text\":\"This protocol is for obtaining synchronised populations of C. elegans. Eggs are harvested from gravid hermaphrodites and allow to grow to L1 arrest for 12-120 hours (0.5-5days). L1 larvae are then fed and left to develop to the appropriate developmental stage\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":59,\"length\":10}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"5k335\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"dnoh1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"a80kr\",\"text\":\"Sodium hypochlorite and Sodium hydroxite are skin irritants and can cause severe burns. Wear gloves and goggles, and wash of spillages immediately\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"GNFfY\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"m1POq\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"7NHQH\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":128015,\"guid\":\"41A29BFF341F11EE9D4302C0B41BC903\",\"name\":\"Sodium hypochlorite, 5% Chlorine\",\"mol_weight\":0,\"sku\":\"419550010\",\"url\":\"https://www.fishersci.co.uk/shop/products/sodium-hypochlorite-5-chlorine-reagent-acros-organics-5/10527752?searchHijack=true\\u0026searchTerm=10527752\\u0026searchType=RAPID\\u0026crossRef=419550010\\u0026matchedCatNo=10527752\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":31,\"name\":\"Fisher Scientific\",\"link\":\"https://www.fishersci.com/us/en/home.html\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":128016,\"guid\":\"41A29C50341F11EE9D4302C0B41BC903\",\"name\":\"1 M Sodium Hydroxide\",\"mol_weight\":0,\"sku\":\"1091371000\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":8,\"name\":\"Merck Millipore (EMD Millipore)\",\"link\":\"http://www.emdmillipore.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Wash hermaphrodites off plate with several ml of M9 solution and transfer to 15ml falcon tube (Fisher Scientific-Falcon 352096)",
+    "Fill falcon tube up to 15ml with M9 solution",
+    "Centrifuge for 2 minutes at 1500 rpm (RCF:210, ascending 9; descending 7) – program 1 Program 1 retains the worms as pellets and the bacteria is suspended as the supernatant The descending is slow as the worm pellet is lose at this stage which we don&#39;t want to break",
+    "Remove supernatant using a plastic Pasteur pipette taking care not to disturb pellet Leave atleast 0.5ml M9 to avoid disturbing the pellet",
+    "Fill the tube with M9 upto 15ml",
+    "Spin program 1",
+    "Repeat steps 4-6",
+    "On final wash remove as much supernatant as possible and add M9 upto 4ml",
+    "Add 4ml 2X Bleach solution (From here onwards try to work as quickly as possible to avoid over-exposure of the worms to the bleach) USE FRESHLY PREPARED BLEACH EVERYTIME 2X Bleach solution: 5% Sodium hypochlorite solution - 4ml Sterile water - 3.5 ml 1M NaOH solution - 2.5 ml TOTAL - 10 ml",
+    "Vortex on maximum setting for 4 min (no more as this will damage the eggs) Makesure the vortex forms After vortexing, top up the tube with M9 till 15ml",
+    "Centrifuge for 2 mins at 2500rpm (RCF:590, ascending 9; descending 7) – program 2 (Always check the program on the centrifuge before using it)",
+    "Remove supernatant by pouring into waste bottle – pellet should be compact and yellow in colour at bottom of falcon, but be careful not to lose",
+    "Add 15ml M9",
+    "Centrifuge at program 2",
+    "Repeat steps 12-14 four more times The number of washes is crucial here as we need to get rid of all the bleach",
+    "After final wash add 15ml M9 and store eggs/larvae in the falcon on the rotator that is constantly spinning at 20 o C, until feeding L1 arrested larvae can be starved for up to 5 days before refeeding",
+    "Centrifuge larvae on program 2 to pellet",
+    "Remove supernatant with plastic Pasteur pipette The pellet is lose here so makesure not to disturb it",
+    "Add 15ml M9, spin to wash",
+    "On final wash leave 0.5ml M9 in falcon",
+    "Resuspend the pellet by gently tapping the tube/flicking it",
+    "Place droplet containing larvae onto seeded plate and allow to grow to desired developmental state (ie. 2 days for L4s, 2.5 days for young adults) Use glass pipette to place the droplet onto seeded plate, avoid using plastic pipette as larvae will stick to it Development times at 20 o C: 2 days for L4s 2.5 days for young adults Note: If you feed larvae within 12hrs of bleaching then they develop faster than the longer arrested ones It is a good practice to bleach in two tubes in parallel If you drop the tube at any point of the process, makesure to transfer the contents into a new tube as the dropped tube may get cracked resulting in loss of worms during centrifugation/vortexing Any unused larvae can be topped up with M9 and stored spinning in the rotator to be re-used Use clean autoclaved rubber bulbs for the refeeding everytime to avoid contamination Put the used bulb in the box labelled &#39;Used Teets&#39; Table of Development times for different temperatures"
+  ],
+  "authors": [
+    "Ida Barlow"
+  ],
+  "creator": "Ida Barlow",
+  "published_on": 1567191643,
+  "created_on": 1556191890,
+  "keywords": []
+}

@@ -1,0 +1,36 @@
+{
+  "id": 80332,
+  "title": "Characterization of Splay Characteristics of Carbon Fiber Electrode Threads (CFETs) in Agar Brain Phantom",
+  "uri": "characterization-of-splay-characteristics-of-carbo-cspkwdkw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx9b5zg8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"65q3q\",\"text\":\"Methods to measure deflection characteristics of carbon fiber electrodes in agar brain phantoms are described.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "The spatial insertion profiles of the electrodes were emulated by inserting individual electrodes into transparent agar phantoms where electrode trajectories could be visualized. We characterized electrodes with two different types of tip profiles: flame-etched tips displaying a conical carbon fiber (CF) end profile, and razor-cut tips displaying a large tip angle usually close to 90 degrees but this could vary depending on the alignment of the cut. These are the two main profiles that have been applied in prior work for neurochemical and electrical neural recording and are expected to represent the two extremes in terms of extent of generated deflection angles.",
+    "Agar phantoms were made using 0.6% agar (Sigma-Aldrich, 05039-500g) in distilled water to emulate the mechanical properties of brain.",
+    "Agar was dissolved in boiling distilled water (100°C), covered, and allowed to mix for 10 minutes at 80°C, using a magnetic stirrer and hotplate, until the solution looked visibly homogenous.",
+    "The solution was cooled at room temperature for half an hour, before being transferred into transparent plastic cells (open cubes with side lengths of 4.5 cm) for penetration testing.",
+    "Agar containing cells were refrigerated overnight at 20°C to solidify.",
+    "Agar phantoms sat at room temperature for a few hours until the phantom reached and were maintained at room temperature before testing (IR5 Dual Laser Infrared Thermometer, Klein Tools).",
+    "The setup for deflection characterization consisted of a micromanipulator for holding and lowering the individual CFET to be tested, a rotating plate that held the agar phantom and manipulator and allowed viewing from all angles, and a stereomicroscope with a camera to view the trajectory of insertion and measure the deflection distance. All tests were performed with maltose-coated CFETs.",
+    "Agar phantoms were covered with a thin layer of saline to dissolve the maltose as the electrode penetrated the agar phantom, and the saline was dyed yellow with food coloring to help distinguish the agar-saline interface and to identify when penetration had been achieved.",
+    "A maltose coated electrode was attached to the micromanipulator and lowered manually into the saline-covered agar phantom.",
+    "Manual lowering was used to ensure that the maltose was properly dissolved at the saline/agar interface before penetrating the agar phantom.",
+    "The electrode was lowered until the targeted depth (i.e., approximately 5, 10, 15, and 20 mm) was reached.",
+    "Images of the insertion trajectory were used to calculate the deflection or the radial length from the axis of insertion at the final depth of insertion.",
+    "For blunt-cut CFETs, the estimated beta coefficient for insertion depth was 0.40 with an intercept term of –0.79. The model fit r-squared was 0.327, with an f-statistic of 19.9 versus a degenerate constant model (p = 6.2e-05). For flame-etched CFETs, the estimated beta coefficient for insertion depth was 0.11 with an intercept term of 0.187. The model fit r-squared was 0.385, with an f-statistic of 11.9 versus a degenerate constant model (p = 0.002). These fits were then used to predict the deflection of the CFETs at a fixed insertion depth (e.g., 5 mm and 18.5 mm) for both cut-types of CFETs, as the insertion-depth was variable across tests. Areal coverage was also estimated from these fits.",
+    "Deflection distance was computed as the distance of the electrode tip from axis of insertion in terms of radial lengths as determined from two imaging planes. We fitted a linear regression line to the measured deflection as a function of insertion depth."
+  ],
+  "authors": [
+    "Helen N Schwerdt",
+    "Michael J Cima",
+    "Ann M Graybiel"
+  ],
+  "creator": "Helen N Schwerdt",
+  "published_on": 1692899850,
+  "created_on": 1681227141,
+  "keywords": []
+}

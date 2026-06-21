@@ -1,0 +1,38 @@
+{
+  "id": 109318,
+  "title": "VarChamp Cell Painting ",
+  "uri": "varchamp-cell-painting-dnze5f3e",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgqnwkxgk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"fln3q\",\"text\":\"Assessment of the impact of missense variants on protein subcellular localization \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Seed HEK293T Cells - 96-well format, 100 µL per well. Media used: DMEM All media contains 10% FBS and 5% penicillin streptomycin if transfecting packaging plasmids on the same day, seed 2.4x10 4 cells/well. Allow at least 04:00:00 for cells to adhere, incubating at 37 °C , 5% CO 2 if transfecting packaging plasmids the next day, seed 1.2x10 4 cells/well. Incubate Overnight at 37 °C , 5% CO 2",
+    "Prepare packaging mix - 10 µL /well 1. 50ng/well psPAX2 2. 5ng/well pVSV-G 3. Top up to 10 µL /well with OptiMEM",
+    "Prepare transfection mix - 10 µL /well 1. 9.4 µL OptiMEM/well 2. 0.6 µL TransIT/well Make sure to add the TransIT drop wise and mix well",
+    "Prepare 96-well plate - 33.33 uL total volume per well 1. 10uL packaging mix 2. 10uL transfection mix 3. 10uL sterile water 4. 3.33uL lentiviral expression plasmid (normalized to 15ng/uL) 5. Incubate at room temperature for 00:30:00 Mix well before incubation",
+    "Transfer entire mix (33.33uL) to HEK293T cells 1. Incubate for 48:00:00 at 37ºC, 5% CO 2",
+    "Seed U2OS Cells - 384-well format, 40uL per well. Media used: McCoy&#39;s 5A with 10% FBS and 1% penicillin streptomycin 1. Seed 1000 cells/well --&gt; include 10ug/mL polybrene 2. Allow cells to settle for ~ 1 hour at room temperature before incubating at 37ºC, 5% CO 2 for an additional 3 hours",
+    "Remember to harvest mycoplasma sample for testing downstream",
+    "Remember to harvest mycoplasma sample for testing downstream",
+    "Spinfection - 384-well format 1. Add 6uL of virus per well 2. Spin plates at 1200 x g, 37 °C, for 30 minutes 3. Incubate for 48 hours at 37ºC, 5% CO 2",
+    "Dilute puromycin in media (McCoy&#39;s 5A with 10% FBS and 1% penicillin streptomycin) to a final concentration of 1.5ug/mL 1. Flick media from 384-well plates 2. Add 30uL of diluted puromycin to each well 3. Incubate for 48:00:00 at 37ºC, 5% CO 2 4. Make sure to monitor untransduced control for complete selection",
+    "Dilute MitoTracker Deep Red in McCoy&#39;s 5A ( with 10% FBS and 1% penicillin streptomycin) to a final concentration of 500nM 1. Flick media from 384-well plates 2. Add 20uL of diluted MitoTracker Deep Red to each well 3. Incubate for 1 hour at 37ºC, 5% CO 2",
+    "Dilute 32% paraformaldahye to a final concentration of 4% in McCoy&#39;s 5A ( with 10% FBS and 1% penicillin streptomycin) 1. Flick media from 384-well plates 2. Add 20uL of diluted PFA to each well 3. Cover with tin foil - PFA is light sensitive 4. Incubate for 15-30 minutes at room temperature 5. Wash each plate 4 times with 1x HBSS 6. If not staining right away, store plates with 50uL 1x HBSS per well, covered in tin foil at 4ºC",
+    "Before proceeding with staining and fixation of cells, samples taken on steps 2 and 8 should be tested for mycoplasma as this will impact downstream applications",
+    "Prepare Staining and Permeabilization Buffer in 1x HBSS: 1. 0.1% Triton (vol/vol) 2. 1% BSA (wt/vol)",
+    "Dilute dyes to the following concentrations: 1. Phalloidin 568 - 0.125uL/mL (stock 6.6uM) 2. Hoechst 33342 - 1ug/mL (stock 10mg/mL) 3. WGA 555 - 1.5ug/mL (stock 1mg/mL) All dyes are spun down before use according to Cell Painting Protocol V3",
+    "Flick out 1x HBSS from cells after fixation 1. Add 20uL of staining solution per well 2. Centrifuge at 500 x g for 1 min to remove air bubbles 3. Incubate, covered in tin foil for 30 minutes 4. Wash each plate 4 times with 1x HBSS 5. Leave 50uL 1x HBSS per well",
+    "All confocal images are captured on a Perkin Elmer Opera Phenix Microscope with the following conditions: 1. 20X water objective 2. Single plane (-7um) 3. 384 wells, 9 fields 4. Separate all channels: Channel Excitation Emission Exposure Power 1 DAPI 405 435-480 100 ms 60% 2 Alexa488 488 500-550 60 ms 30% 3 Alexa568 561 571-596 60 ms 30% 4 Mitotracker Deep Red 640 650-760 20 ms 20% 5 Brightfield High Transmission 100 ms 50% 6 Brightfield Transmission 100 ms 50% 7 Brightfield Low Transmission 100 ms 50% Current run time is 2hr 12min for 1 plate"
+  ],
+  "authors": [
+    "Tanisha Teelucksingh",
+    "Florent Laval"
+  ],
+  "creator": "Tanisha Teelucksingh",
+  "published_on": 1770790260,
+  "created_on": 1728345563,
+  "keywords": []
+}

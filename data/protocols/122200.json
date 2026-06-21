@@ -1,0 +1,29 @@
+{
+  "id": 122200,
+  "title": "Quantification of Translation efficiencies\n",
+  "uri": "quantification-of-translation-efficiencies-d3jy8kpw",
+  "doi": "dx.doi.org/10.21203/rs.2.11363/v1",
+  "description": "{\"blocks\":[{\"key\":\"ipnev\",\"text\":\"The determination of translational efficiencies for single transcripts of interest is described for E. coli and H. volcanii. In both cases, the transcript levels are quantified by Northern blot analyses, and the protein levels are quantified by reporter enzyme assays\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":100,\"length\":7},{\"style\":\"italic\",\"offset\":112,\"length\":11}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5wiqc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"hhejm\",\"text\":\"The translation efficiencies of mRNAs can vary widely, and they can be subject to differential translational regulation. The expression of up to about 25% of all genes were found to be effected by translational regulation in halophilic Archaea [1] and various species of eukaryotes [2,3]. Translatome analyses can give overviews of the translational status of all transcripts and can lead to the identification of transcripts that are subjects to differential translational control. However, unraveling the underlying molecular mechanisms require the in depth characterization of selected transcripts. A fast and convenient method to quantify the translational efficiencies of transcripts of interest is to generate translational fusions with reporter genes. The translational efficiencies can then be determined by quantifying the level of transcripts via Northern blot analyses and quantifying the level of translated proteins via reporter enzyme assays. This contribution described the determination of translation efficiencies in two prokaryotic model species, i.e. the bacterium Escherichia coli and the archaeon Haloferax volcanii.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":1084,\"length\":16},{\"style\":\"italic\",\"offset\":1118,\"length\":19}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4wegy\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"q94cc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Grow the cells in the medium/under the conditions of interest. The determination of translational efficiencies via Northern blot analyses and reporter gene assays is only meaningful when both transcript levels and protein levels are in steady state, e.g. during exponential growth. It is noteworthy that transcript half-lives and protein half-lives are very different. For example, the average transcript half-life in E. coli is 2-3 minutes and in H. salinarum is about 8 minutes. In contrast, proteins are stable at least for hours. For the determination of translation efficiencies under non-steady state conditions, it is necessary to use a strictly regulated promoter, induce transcription under the condition of interest, and then quantify the transcript and protein levels.",
+    "Perform RNA Isolation and Northern blot analysis for the fusion transcript between the transcript of interest and the transcript of the reporter gene. A probe against the reporter gene can be used for all transcripts of interest. The relative transcript levels can be quantified using the program ImageJ. The method has been deposited to the Protocol Exchange and has the doi 10.21203/rs.2.11264/v1 .",
+    "Perform enzyme assay for the chosen reporter gene to quantify the volume activity (U/ml or nkat/ml).",
+    "Quantify the protein concentration, e.g. by using the BCA assay (mg/ml)",
+    "Calculate the specific enzyme activity by dividing the volume activity with the protein concentration (U/mg or nkat/mg). The methos has been deposited to the Protocol Exchange for two reporter enzymes for E. coli and one reporter enzyme for H. volcanii , which have got the following DOIs: Reporter enzyme dihydrofolate reductase for H. volcanii : 10.21203/rs.2.11263/v1 Reporter enzyme beta-glucoronisase for E. coli : 10.21203/rs.2.10596/v1 Reporter enzyme glycerol-3-phosphate dehydrogenase for E. coli : 10.21203/rs.2.10595/v1",
+    "For calculation of the translation efficiencies the specific enzyme activity is divided by the transcript level: Translation efficiency = specific enzyme activity / transcript level",
+    "The authors declare no competing financial interests.",
+    "Translational coupling via termination-reinitiation in archaea and bacteria by Madeleine Huber, Guilhem Faure, Sebastian Laass, Esther Kolbe, Kristina Seitz, Christina Wehrheim, Yuri I. Wolf, Eugene V. Koonin, Jörg Soppa published in Nature Communications on 09 Sep, 2019 https://dx.doi.org/10.1038/s41467-019-11999-9"
+  ],
+  "authors": [
+    "Madeleine Huber",
+    "Jörg oppa"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1568020881,
+  "created_on": 1568020881,
+  "keywords": []
+}

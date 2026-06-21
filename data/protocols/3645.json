@@ -1,0 +1,28 @@
+{
+  "id": 3645,
+  "title": "C_HW1 (cat-n)",
+  "uri": "c-hw1-cat-n-fs5bng6",
+  "doi": "dx.doi.org/10.17504/protocols.io.fs5bng6",
+  "description": "{\"blocks\":[{\"key\":\"1vpe3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"dc246\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"8vnjn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"c36nv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Be sure you have cloned your own &#39;abe487&#39; repo as well as &#39;https://github.com/kyclark/metagenomics-book&#39;. Copy the &#39;metagenomics-book/problems&#39; into your repo so that you have a starting point for the &#39;cat-n&#39; assignment, then add it to your repo. Be sure to &#39;git commit&#39; whenever you have something you don&#39;t want to lose! $ git clone &lt;your abe487&gt; $ git clone https://github.com/kyclark/metagenomics-book.git $ cp -r metagenomics-book/problems abe487 $ cd abe487 $ git add problems $ git commit -m &#39;adding problems&#39; problems $ git push",
+    "cd into your &#34;problems/cat-n&#34; directory and read the &#34;README&#34; file.",
+    "There are several files in place to get you started: Makefile: has targets for &#34;run&#34; and &#34;test&#34; README: decribes the problem and expected output cat-n.sh: edit this file to solve the problem input.txt: a sample input file test.pl6: a Perl script to test that &#34;cat-n.sh&#34; works as expected",
+    "I suggest having two windows (terminals) open -- one where you stay in an editor and another where you can run/test/debug.",
+    "You can run the program with the given input file by simply typing &#34;make&#34; to execute the first target in the Makefile. You can also explicitly &#34;make run&#34; to execute the target. Initially, you will just see &#34;OK&#34; from the &#34;cat-n.sh&#34; script.",
+    "You will receive no points for the assignment unless &#34;make test&#34; passes all tests as described in the README. You should test with other input files, e.g.: $ head /usr/share/dict/words &gt; words $ ./cat-n.sh words",
+    "While you have a working solution, &#34;git add&#34; any new files you want saved, then commit your work (e.g., &#34;git commit -am solution&#34;) and &#34;git push&#34; so it is visible in the Github website. If you cannot see it on github.com, then I cannot check it out to grade it.",
+    "The assignment is due before class on Thursday, September 15 ."
+  ],
+  "authors": [
+    "Ken Youens-Clark"
+  ],
+  "creator": "Ken Youens-Clark",
+  "published_on": 1473704603,
+  "created_on": 1473704563,
+  "keywords": []
+}

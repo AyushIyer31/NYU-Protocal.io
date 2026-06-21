@@ -1,0 +1,28 @@
+{
+  "id": 101692,
+  "title": "Installing FIJI and SynBot (Windows Version)",
+  "uri": "installing-fiji-and-synbot-windows-version-dfi43kgw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg32qbpv25/v1",
+  "description": "{\"blocks\":[{\"key\":\"diuut\",\"text\":\"Video instructions for installing FIJI and SynBot and a simple SynBot run for Windows operating system. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "0:00 - 0:40 Install FIJI from https://fiji.sc .",
+    "0:40 - 1:37 Download code from the SynBot GitHub repository https://github.com/Eroglu-Lab/Syn_Bot .",
+    "1:37 - 2:09 Move SynBot java plugins (JAR files) to the FIJI plugins folder. The ilastik4ij_Syn_Bot-1.8.2-SNAPSHOT.jar and SynQuantExtra-1.2.9.jar files are required for running SynBot.",
+    "2:09 - 2:22 Launch FIJI and open SynBot by dragging the SynBot.ijm file into FIJI.",
+    "2:22 - 2:49 Prepare your image folder. Create a folder for your experiment with subfolders for experimental groups. Each experimental group folder should contain only image files. Multiple experimental groups are not required, but your files must follow the Experiment/Group/Image structure.",
+    "2:49 - 3:41 Run SynBot (see the SynBot manual thresholding protocol for more information).",
+    "3:41 - 4:12 View results in Summary.csv file.",
+    "If video quality is poor, try watching directly from Youtube at https://youtu.be/VZqD8DS_VfA?si=DFcoeyiLyKIuYUUX"
+  ],
+  "authors": [
+    "Justin T Savage"
+  ],
+  "creator": "Justin T Savage",
+  "published_on": 1719185230,
+  "created_on": 1718207342,
+  "keywords": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": 20585,
+  "title": "Protocol for microCT inspection of Gallium particle accelerator targets",
+  "uri": "protocol-for-microct-inspection-of-gallium-particl-ychfst6",
+  "doi": "dx.doi.org/10.17504/protocols.io.ychfst6",
+  "description": "{\"blocks\":[{\"key\":\"3e7j6\",\"text\":\"This protocol described the steps used to inspect the Gallium targets used in particle accelerators. These targets are metal disks filled with Gallium, and laser welded on the edges. Various production quality issues may be present - the microCT process needs to be a standard, routine methodology for direct comparison among all such data sets. This protocol sets out the exact steps used for this analysis type.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"3771s\",\"text\":\"Each target is scanned twice: rotated 90 degrees after the first scan.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"4ultq\",\"text\":\"Make sure the targets are unused. Used targets are very radioactive - life threatening.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"80ejt\",\"text\":\"Never apply procedure to used targets.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f1lh8\",\"text\":\"Use safety gloves when handling targets.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"7q7u0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Load the sample on a foam (e.g. florist oasis) with prestik at top, but angled towards the flat side by up to 10 degrees. This is to reduce penetration artefacts - perfect vertical is not suggested.",
+    "This is using a General Electric VTomex L240 system, but most microCT systems would work with similar settings. %s %s Voltage 200 kV X-ray S Beam Filter 0.5 mm Detector filter 0.5 mm Voxel size 30 µm Timing 333 m/s Images 2800 Averaging 1 %s %s Voltage 200 kV Current 150 µA Beam Filter 0.5 mm Detector filter 0.5 mm Voxel size 30 µm",
+    "Reconstruction of the 3D data is done using General Electric Datos 2.2, using specifically beam hardening correction value of 9.3 - this reduces beam hardening artefacts significantly.",
+    "1. Analysis of 3D data is described here using Volume Graphics VGSTUDIO MAX 3.2 . 2. Register the sample - use simple registration to turn the sample upright in the software windows. 3. De-noising is done using the filters Adaptive Gauss with smoothing factor 2, edge threshold=0.2, iteration=3.",
+    "Create Vvdeos of only front and rotation slice with 5mm per front slice and 0.1 degree per rotational slice. Video format: .wmv with naming: Batch # Target # Front slice Batch # Target # Front slice 90 degree rotation Batch # Target # Rotation Batch # Target # Rotation 90 degree rotation - Rotation video are started from west (artefacts at North and South) and rotated anticlockise. Capsule is facing up, welded plate is facing down Front slice video Rotation video",
+    "The data is saved including the filtered data set, as a image stack (tiff). These can be viewed manually without special software. The analyzed volume can be opened in free myVGL software.",
+    "Mark the top of the disk with a small ball of prestik, this is the reference for orientation to check second scan rotation by 90 degrees (eg. in data set after scanning, to ensure the disk was rotated)."
+  ],
+  "authors": [
+    "Muofhe Tshibalanganda",
+    "Anton Du Plessis",
+    "Stephan Le Roux",
+    "Paul Papka"
+  ],
+  "creator": "Muofhe Tshibalanganda",
+  "published_on": 1550649691,
+  "created_on": 1550649598,
+  "keywords": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": 116785,
+  "title": "Unbiased MD simulations of POPI entry into VPS34KD",
+  "uri": "unbiased-md-simulations-of-popi-entry-into-vps34kd-dwar7ad6",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gp9y68vzp/v1",
+  "description": "{\"blocks\":[{\"key\":\"97b70\",\"text\":\"This protocol details molecular dynamics simulations of the kinase domain of VPS34 in a membrane containing 15% of POPI lipids and analysis of POPI entry into the catalytic site. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Use a conformation obtained of the full PI3KC3-C1 active complex engaged with the membrane as starting structure.",
+    "Isolate the C-terminal region of the VPS34KD catalytic subunit (residues F250-K887).",
+    "Retain the membrane composition as in simulations of the full complex, with DOPC (60%), DOPE (20%), DOPS (5%), and POPI (15%).",
+    "Perform 1 µs production runs for ten independent replicates of the simulation system.",
+    "Maintain system pressure at 1 Bar and temperature at 310 °К using the Parrinello-Rahman barostat and velocity-rescaling thermostat.",
+    "Treat long-range electrostatic interactions using the smooth particle mesh Ewald method with charge interpolation through fourth-order B-splines.",
+    "Monitor the time-resolved distance between the inositol 3’-O of POPI lipids and the gamma phosphate of ATP. For each frame, consider only the closest distance."
+  ],
+  "authors": [
+    "Ainara Claveras Cabezudo",
+    "Annan SI Cook"
+  ],
+  "creator": "Ainara Claveras Cabezudo",
+  "published_on": 1734977237,
+  "created_on": 1734854613,
+  "keywords": []
+}

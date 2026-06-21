@@ -1,0 +1,42 @@
+{
+  "id": 90368,
+  "title": "Protocol to capture images of produce items using the AI enabled Grader App",
+  "uri": "protocol-to-capture-images-of-produce-items-using-c4g8ytzw",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvwd879lmk/v2",
+  "description": "{\"blocks\":[{\"key\":\"2d7uk\",\"text\":\"This protocol describes steps to capture, annotate, and label produce items as good or bad using the Grader App. The grader app is part of a larger system of systems conceived, designed, and developed by Anjali Sharma at SDG Labs, to reduce food waste using AI and robotics. The grader app is designed to leverage the power of citizen sourcing and AI to create an open image data set of good and bad produce items. The purpose of creating this open image data set is to help in training machine vision algorithms that can accurately differentiate between good and bad produce items. In this protocol I outline the steps following which, any citizen scientist can capture, annotate, and/or label good and bad produce items.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":204,\"length\":25}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"dqlcr\",\"text\":\"Always capture multiple images of the same food item to account for potential defects or inconsistencies in any single image.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"91b3m\",\"text\":\"Ensure the background is neutral and non-distracting, allowing the algorithm to focus solely on the food item. \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bqkks\",\"text\":\"If capturing images in a public place, be mindful of privacy concerns and avoid capturing identifiable individuals in the background. \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8vlo7\",\"text\":\"This protocol provides a structured approach to acquire food images using a mobile phone app, ensuring consistency and quality throughout the dataset.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"31hun\",\"text\":\"Smartphone with high-resolution camera capabilities.\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9cj3p\",\"text\":\"Specialized mobile app designed for food image collection.\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2hhhe\",\"text\":\"Tripod or stabilizing device (optional, but beneficial for consistency).\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d0mg3\",\"text\":\"Calibration card with standard color swatches (for color correction).\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fm1gs\",\"text\":\"Internet Connection\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3dd98\",\"text\":\"Lighting (Optional)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Setup &amp; Calibration",
+    "Install the designated food image collection app on your mobile phone.",
+    "Position the mobile phone on a stabilizing device or tripod to ensure consistent image angles and reduce camera shake.",
+    "Use the calibration card to calibrate the camera&#39;s color settings within the app. This step ensures that the colors captured are as true to real life as possible.",
+    "User Interface Familiarization",
+    "Navigate through the app to familiarize yourself with its functionalities.",
+    "Ensure the app settings are adjusted to capture images at the highest resolution available.",
+    "Identify and understand any tagging or labeling features within the app, that can be useful for immediate classification of images during the acquisition phase.",
+    "Image Capturing",
+    "Position the food item in a well-lit environment. Natural light is preferred, but if not available, ensure the lighting is as neutral as possible to avoid color casts.",
+    "Using the app, capture the image from a standardized angle (e.g., top-down or frontal). If the study requires multiple angles, make sure each is consistently applied across all food items.",
+    "For diverse representation, capture the same food item in various stages or conditions (e.g., raw, cooked, plated).",
+    "If the app has a feature for immediate labeling, tag or label the image accordingly (e.g., fruit, raw).",
+    "Review &amp; Retake",
+    "After capturing, review the image on the mobile device. Check for clarity, focus, and accurate representation of the food item.",
+    "If the image doesn&#39;t meet the criteria, adjust the setup or lighting if needed and retake the photo.",
+    "Data Transfer &amp; Storage",
+    "Use the app&#39;s export feature, if available, to transfer images to a secure database or cloud storage. Ensure images are exported in a lossless format to retain maximum quality.",
+    "Regularly backup the dataset to avoid data loss.",
+    "Quality Assurance",
+    "Periodically, review the acquired images on a larger screen to ensure consistency and quality.",
+    "Use the app&#39;s analytics or reporting features, if available, to track the number, diversity, and categories of images acquired."
+  ],
+  "authors": [
+    "Anjali Sharma"
+  ],
+  "creator": "Anjali Sharma",
+  "published_on": 1699027910,
+  "created_on": 1699015173,
+  "keywords": []
+}

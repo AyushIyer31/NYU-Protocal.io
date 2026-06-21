@@ -1,0 +1,26 @@
+{
+  "id": 50568,
+  "title": "a-commands and Allas",
+  "uri": "a-commands-and-allas-bvmgn43w",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"4tesc\",\"text\":\"Main interactions between Puhti and the Allas storage service at CSC using the a-command tools.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"81k5a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2pl8q\",\"text\":\"For more detailed documentations on Allas and a-commands: https://docs.csc.fi/data/Allas/using_allas/a_commands/\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":58,\"length\":54}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"B75A9F56C86511EBB3980A58A9FEAC02\",\"url\":\"https://docs.csc.fi/data/Allas/using_allas/a_commands\"}}}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"393ll\",\"text\":\"You will need an account at CSC, with an access to Puhti and to Allas.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ujgb\",\"text\":\"https://my.csc.fi/welcome\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":25}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"8BC7F102C86311EBB3980A58A9FEAC02\",\"url\":\"https://my.csc.fi/welcome\"}}}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "In order to interact with Allas, especially to push and pull large files, it is best to request an interactive node. After login into Puthi, type the following to request an interactive node. sinteractive Follow the instructions (choice of a project for the billing) and get an interactive node!",
+    "Then we need to load and configure Allas. module load Allas Then Allas-conf Follow the instructions (password and project name for billing units)",
+    "To list all buckets stored in Allas, type a-list If you want to display the content of a particular bucket, use the same function followed by the name of the bucket a-list my_bucket",
+    "In order to push data to Allas, we can use the command a-put. Navigate to the folder or file you want to push to Allas, and type: a-put my_file -b my_bucket If the name of the bucket after the -b parameter is new, a new bucket with that name will be automatically created. You can push a complete folder using the same command: a-put my_folder -b my_bucket NOTE: If you are pushing a complete folder, it will be zipped before being sent to Allas. You won&#39;t be able to list the content of that folder anymore using the a-list function!",
+    "You can retrieve a file or folder stored in Allas using the a-get command a-get my_bucket/my_file If you pushed a complete folder, you can retrieve the complete folder by the same method a-get my_bucket/my_folder a- g e t",
+    "If you need to retrieve the whole bucket you have stored in Allas, you need a bit more work. You need first to list the content of the bucket using the a-list command and then read the list in a loop and download one by one the content. #make a list of objects a-list my_bucket &gt; list.txt #use the list in for loop for ob in $(cat list.txt) do a-get $ob done #remove the object list rm list.txt #make a list of objects a-list bucket_123 &gt; object_list_bucket123 #use the list in for loop for ob in $(cat object_list_bucket123) do a-get $ob done #remove the object list rm object_list_bucket123"
+  ],
+  "authors": [
+    "Alise J Ponsero"
+  ],
+  "creator": "Alise J Ponsero",
+  "published_on": 1623162562,
+  "created_on": 1623161361,
+  "keywords": []
+}

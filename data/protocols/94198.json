@@ -1,0 +1,42 @@
+{
+  "id": 94198,
+  "title": "Object Location Test",
+  "uri": "object-location-test-c78wzrxe",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzxdo4gx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"e46vq\",\"text\":\"The object location test is a spatial recognition memory test used to assess cognitive function in rodents. It is based on a rodent’s natural preference to explore objects in a novel location over objects in a location they are familiar with.  When presented with the opportunity to explore either a familiar or moved object, rodents with intact memory spend significantly more time exploring the moved object. Therefore, mice that spend a similar amount of time exploring each object are presumed to have a spatial memory deficit.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"aon01\",\"text\":\"Open field box\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d8fr9\",\"text\":\"Objects – Ideal objects need to be heavy enough\\nnot to be moved by the rodent, difficult to climb on, and short enough not to\\nbe distorted by a fisheye lens. Examples include Lego towers or 50mL conical\\ntubes filled with water. \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ei9l5\",\"text\":\"Landmarks – To help the rodents orient\\nthemselves in the box, place distinctive landmarks on at least three of the\\nfour walls of the box. Example landmarks can be found at the end of this\\nprotocol\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ajal4\",\"text\":\"Camera and Noldus EthoVision software\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"268ba\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Testing begins with a 00:10:00 habituation phase that allows the mice to acclimate to the testing environment (note, this can also serve as an open field test to assess anxiety and locomotor behavior). On the following day, OLT testing—consisting of two phases—begins. During the initial study phase, the rodents are placed in an open field box with two identical copies of an object and allowed to explore freely for 00:10:00 . Ten minutes after completion of the study phase, mice are returned to the testing box with the same two objects only one of which has been moved to a new location. Object exploration is scored using EthoVision software.",
+    "Habituation must be run the day before object location testing. This may also double as an open field test.",
+    "Before beginning habituation, allow the rodents to acclimate to the testing room for at least 01:00:00 .",
+    "Clean all open field boxes with 70% EtOH Contributed by users and dry them before starting.",
+    "If you have multiple boxes, rodents can be tested simultaneously if they are from the same cage. In the event that there are 5 mice in a cage, run 3 mice together in one round and then 2 mice in thesecond so no rodent is left alone in their cage before testing.",
+    "Start Ethovision recording.",
+    "Place rodents in the middle of the open field box.",
+    "Leave room and record for 00:10:00 .",
+    "Once 10 min is up, return mice to their home cage, and clean the box before running the next animals.",
+    "Mice should be brought up to the testing room at least one hour before the start of testing.",
+    "Attach landmarks and clean the boxes/objects with 70% EtOH Contributed by users .",
+    "Place objects near two corners of the open field box (with sufficient space for the rodent to explore all around the object.",
+    "Start the recording and place the animals in the center of the same box they were in during the habituation trial.",
+    "Record for 00:10:00 before returning the animals to the home cage for a ten-minute retention delay.",
+    "Rodents should undergo testing 00:10:00 after completing the study phase.",
+    "Clean the boxes and objects with 70% EtOH Contributed by users and move one object to new location (if possible, counterbalance the moved object so it is on the left for some animals and on the right for others)",
+    "Place rodents back into their same box and record for 00:05:00 before returning them to their home cage.",
+    "Exploration is defined as time when the rodent’s nose is within 2cm of an object. This can be scored automatically by EthoVision or by hand if needed.",
+    "Exploration ratio = time spent exploring the moved object / total time exploring objects during test. If the average ratio is significantly above 0.5 (chance level) based on a one sample t test, the mouseis considered to have intact memory.",
+    "Controls : Distance traveled and total object exploration time should be even across groups in both study and testing phases. Animals that do not explore the objects for at least 30 seconds in the study phase or 5 seconds per object in the testing phase should be removed."
+  ],
+  "authors": [
+    "Lisa Blackmer-Raynolds",
+    "Ian N Krout",
+    "Tim Sampson"
+  ],
+  "creator": "Ian N Krout",
+  "published_on": 1706280484,
+  "created_on": 1706278849,
+  "keywords": []
+}

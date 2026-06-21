@@ -1,0 +1,23 @@
+{
+  "id": 5992,
+  "title": "Basic components detection of Dendrobium plants",
+  "uri": "basic-components-detection-of-dendrobium-plants-h4gb8tw",
+  "doi": "dx.doi.org/10.17504/protocols.io.h4gb8tw",
+  "description": "{\"blocks\":[{\"key\":\"b3clg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4gdq9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"dpaca\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"c2u0o\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "1.Plants collected were washed and dried by filter paper. 2.Fixed at 105 °C for 20 min and dried to a constant weight at 60 °C. 3.One gram of powder with 20 mL of methanol was extracted twice using an ultrasonic cleaner at ambient temperature. 4.The extraction solution was centrifuged for 10 min at 5000×g and supernatant was evaporated to dryness. 5.Dissolved with 2 mL of dilute sulfuric acid (0.1%) and filtered through a 0.22 μm nylon syringe.",
+    "The extraction was pretreated using Oasis MCX SPE cartridges.The procedure was as follow. 1.activating with 2 mL methanol 2.conditioning with 2 mL pure water 3.loading with 2mL sample solution 4.washing with 2 mL formic acid (2%) 5.washing with 2 mL methanol 6.eluting with 2 mL ammonia methanol (5%) 7.drying with nitrogen, and reconstituting with 2 mL formic acid (0.1%)",
+    "1.Instruments &amp; materials Agilent 1260 series HPLC instrument Xcalibur 2.1 (Thermo Fisher Scientific) Waters Atlantis T3 column (150 mm × 4.6 mm id, 3 um) 2.Methods Mobile phases: acetonitrile (A) with 0.1% formic acid and ultrapure water (B) with 0.1% formic acid. Gradient elution process: 0-2 min (0% A), 2-12 min (0 to 15% A), 12-22 min (15 to 35% A), 22-32 min (35 to 80% A), and 32-37 min (80 to 0% A). volume flow: 1.2 mL/min detection wavelength: 280 nm column temperature: 25 centigrade injection volume：10 ul",
+    "1.The ion-source parameters were as follows: sheath gas at 25 arb, auxiliary gas at 3 arb, spray voltage at 4 kV, capillary temperature at 320 °C, tube lens at 120 V, and capillary voltage at 30 V. 2.MS data were collected at 100 ≤ m/z ≤ 1000 in positive-ion mode. 3.Two data acquisition methods were used in the experiments. In one method, a high-resolution scan was conducted using the Orbitrap mass analyzer to acquire the MS data at a resolution at 30,000 FWHM and the MS 2 data at 15,000 FWHM.In the other method, a high-resolution scan was conducted using the Orbitrap to acquire the MS data at a resolution at 30,000 FWHM and the LTQ dynode was used for scanning the MS 2 and MS 3 spectra. 4.Collision-induced dissociation (CID) energy was set at 40%.",
+    "1.Peaks could be extracted from total ion current chromatograms manually. 2. Or ran XCMS package under R environment to get peak lists. 3.Obtain putative molecular formulae by isotopic patterns verification and the accurate molecular weight. 4.Matching Metlin, Dictionary of Natural Products and Chemspider databases to identify tentatively. 5.Using Mass Frontier sofewore to speculating the fragmentation pathway for compounds without MS n spectra."
+  ],
+  "authors": [],
+  "creator": "Cheng Song",
+  "published_on": 1495159586,
+  "created_on": 1495155789,
+  "keywords": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": 85947,
+  "title": "A Simple Exploration of Simulated Annealing: Protocol",
+  "uri": "a-simple-exploration-of-simulated-annealing-protoc-cx63xrgn",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2lyj77plx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"dridv\",\"text\":\"This protocol describes technical steps to understand the computational environment for A Simple Exploration of Simulated Annealing hosted on Code Ocean.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":142,\"length\":10}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"656811C0330B11EE88E6A5BE7E261459\",\"url\":\"https://doi.org/10.24433/CO.0015684.v1\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"g3dm\",\"text\":\"Code can take a considerable amount of time. Be cautious when modifying.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "The analysis was completed with Python in a Jupyter Notebook. The following notebook is found in the code folder in the file manager: analysis.ipynb",
+    "Access the capsule for this project at Code Ocean . Select &#34; Edit Capsule&#34; to work with your own copy.",
+    "Data for the analysis is found in separate folders in the data folder in the file manager: grid_sample : A .npy file of the sample grid used in simulated annealing separated_grids : Multiple .npy files for every grid resulting from a simulation simulation_data : Multiple .csv files with run details at every iteration of a simulation",
+    "Details about the computational environment, including the versions of Python, Jupyter, and other libraries are found in the environment section of the file manager, which contains a Dockerfile.",
+    "Once the reproducible run is complete, the resulting figures, an HTML copy of the executed analysis.ipynb , and a run output log are stored in the results section found in the file manager.",
+    "To execute analysis.ipynb , select &#34; Reproducible Run &#34;",
+    "Each simulation can be run again, with the same sample grid, by executing the following Jupyter Notebook found in the code folder: production.ipynb",
+    "WARNING: Running production.ipynb will overwrite all of the data in each subdirectory of data.",
+    "Copy each subdirectory in a new folder with a title such as &#34; original &#34; or something that is more descriptive. Do this before each subsequent run of production.ipynb . Update file paths in analysis.ipynb if you wish to analyze data that was moved.",
+    "Modify line 10 of the run file inside the code section to select production.ipynb to run in a reproducible run: --execute production.ipynb \\",
+    "Select &#34; Reproducible Run &#34; to run additional simulations and produce new data.",
+    "To reanalyze the new data, modify line 10 of the run file to select analysis.ipynb . WARNING: Any files that are in results may be overwritten. Move these files into a new folder before proceeding.",
+    "Select &#34; Reproducible Run &#34; to execute a new analysis.",
+    "There are various ways to alter parameters to run additional simulations:",
+    "There are several parameters that can be changed in production.ipynb to produce a new sample grid: rows: number of rows in the grid cols: number of columns in the grid percentage: composition of 1&#39;s in the randomly generated grid of mixed 1&#39;s and 0&#39;s seed: defines the random number seed used to generate the random mixture of 1&#39;s and 0&#39;s",
+    "In production.ipynb , there are two schemes of simulations that are run: Testing various numbers of iterations in each simulation Testing various temperature settings in each simulation For each variable tested, 5 simulation trials are run.",
+    "Change any of these parameters (individually or in combination), and after running production.ipynb , a new .npy file will be generated in data/grid_sample. WARNING: If the seed is not changed, the .npy file for the previous sample will likely be overwritten. Make sure to relocate or rename these files before running.",
+    "Repeat all steps in &#34; Running Additional Simulations and Producing New Data &#34; to produce new data from the new sample.",
+    "These parameters can be found and altered in various locations in the notebook: WARNING: Increasing the numbers of iterations or the number of trials can significantly increase the computing time. Be aware that there are limits computing time in Code Ocean.",
+    "To change the numbers of iterations, edit the first line of code in the fourth code block: n_iterations = np.logspace(1,5,5) This code employs a NumPy function called logspace. It generates an array of numbers that are evenly spaced on a logarithmic scale. The first argument 1 is the starting value of the sequence. The second argument 5 is the ending value of the sequence. The third argument 5 is the number of elements in the generated array. The current code creates an array containing 5 elements, with values ranging from 10^1 (10) to 10^5 (100000) evenly spaced on a logarithmic scale. If you want to edit this line of code, you can change the arguments of the logspace function to generate a different array of numbers. For example: n_iterations = np.logspace(1,3,3)",
+    "To change the temperature settings, edit the first line of code in the fifth code block: temperatures = np.linspace(100,10,10) This code employs another NumPy function called linspace. It generates an array of numbers that are evenly spaced between the specified start and end values, with a specified number of elements. The first argument 100 is the starting value of the sequence. The second argument 10 is the ending value of the sequence. The third argument 10 is the number of elements in the generated array. The linspace function will create an array containing 10 elements, with values ranging from 100 to 10, spaced evenly between these two values. If you want to edit this line of code, you can change the arguments of the linspace function to generate a different array of numbers. For example: temperatures = np.linspace(50,10,5)",
+    "To change the number of simulation trials , in both the fourth and fifth code blocks, the second line of code defines the number of trials: for i in range(5): To either increase or decrease the number of trials from 5, edit the number in the range function.",
+    "Repeat all steps in &#34; Running Additional Simulations and Producing New Data &#34; to produce new data with the new simulation settings."
+  ],
+  "authors": [
+    "Chasz Griego"
+  ],
+  "creator": "Chasz Griego",
+  "published_on": 1691183823,
+  "created_on": 1691091184,
+  "keywords": []
+}

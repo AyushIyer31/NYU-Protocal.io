@@ -1,0 +1,41 @@
+{
+  "id": 6545,
+  "title": "Simulating reads for detection of transportable element insertions",
+  "uri": "simulating-reads-for-detection-of-transportable-el-imrcc56",
+  "doi": "dx.doi.org/10.17504/protocols.io.imrcc56",
+  "description": "{\"blocks\":[{\"key\":\"dhtjp\",\"text\":\"We simulate paired-end reads for testing the accuracy and sensitivity of our computer program for detection of transportable element (TE) insertions (also called Mobile Element Insertions, MEIs). we named the software \\\"Specific Insertions Detector (SID)\\\".\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"ru0k\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"93df4\",\"text\":\"1.Setup PIRS software and SID; 2. Download the sequences of transportable elements (FASTA file)  and human genome assembly sequence (hg19, FASTA file).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"dc66k\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Generate N random numbers from 1 to M (M is the total number of TEs) nonredundantly. In our study, N=761, M=2852.",
+    "Generate X random numbers from 1 to 22 nonredundantly. X is the number of autosomes picked up for TE insertion.",
+    "According to the lengths of the X autosomes, assign the N TEs to these X autosomes proportionably.",
+    "Generate corresponding number of random numbers for these X autosomes from 1 to the length of the chromosome. These numbers are the positions that TEs will be inserted.",
+    "Insert the TE sequence to a specific position of a specific autosome in order. Then it produces a new FASTA file (hg19_TE.fasta).",
+    "Run PIRS using the resulting FASTA file. Our command line is &#34;pirs -i hg19_TE.fasta -o output.fastq.prefix -x 60&#34;."
+  ],
+  "authors": [
+    "Qichao Yu",
+    " Wei Zhang",
+    " Xiaolong Zhang",
+    " Yongli Zeng",
+    " Yeming Wang",
+    " Yanhui Wang",
+    " Liqin Xu",
+    " Xiaoyun Huang",
+    " Nannan Li",
+    " Xinlan Zhou",
+    " Jie Lu",
+    " Xiaosen Guo",
+    " Guibo Li",
+    " Yong Hou",
+    " Shiping Liu",
+    " Bo Li"
+  ],
+  "creator": "Gigascience Database",
+  "published_on": 1519315583,
+  "created_on": 1498470966,
+  "keywords": []
+}

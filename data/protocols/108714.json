@@ -1,0 +1,25 @@
+{
+  "id": 108714,
+  "title": "Relative Telomere Length Measurement",
+  "uri": "relative-telomere-length-measurement-dnei5bce",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvw1rn7lmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"7rsue\",\"text\":\"Relative Telomere Length Measurement by qPCR\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":44}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "DNA isolation",
+    "GenomicDNA was extracted using the DNeasy Blood and Tissue Kit (Qiagen, Hilden, Germany",
+    "10 ng/μL DNA was amplified in a 5x EvaGreen‱ mix (No ROX) (Bio&amp;Sell, Nurnberg, Germany). The thermal cycling protocol of Telomere A: 5′-CGGTTTGTTTGGGTTTGGGTTTGGGTTTGGGTTTGGGTT-3′, Telomere B: 5′-GGCTTGCCTTACCCTTACCCTTACCCTTACCCTTACCCT-3′ and B2M was: 95°C for 15 min, followed by 40 cycles of 95°C for 15 s, 56°C for 20 s, and 72°C for20 s. The thermal cycling protocol of Telomere Primer Pair 1 was:95°C for 15 min, followed by 2 cycles of 15 s at 94°C, 1 cycle of 15 s at 49°C,40 cycles of 15 s at 94°C, 1 cycle 10 s at 62°C, 1 cycle 15 s at 74°C with signal acquisition, 10 s at 84°C, and 15 s at 88°C with signal acquisition. A no-template control (NTC) and the all templates were run in triplicate for each reaction",
+    "Primer sequences Relative telomere length (RTL) was determined using two different primer pairs for telomere amplification and a primer pair for the single-copy reference gene beta-2-microglobulin(B2M) . The following primers were employed: Telomere Primer Pair 1 (Hermann C, 2023): Telg: 5′-ACACTAAGGTTTGGGTTTGGGTTTGGGTTTGGGTTAGTGT-3′,Telc:5′-TGTTAGGTATCCCTATCCCTATCCCTATCCCTATCCCTAACA-3′. Telomere Primer Pair 2 (Mugdha, 2020): Telomere A: 5′-CGGTTTGTTTGGGTTTGGGTTTGGGTTTGGGTTTGGGTT-3′, Telomere B: 5′-GGCTTGCCTTACCCTTACCCTTACCCTTACCCTTACCCT-3′. Single Copy Gene: Beta-2-microglobulin (B2M): Forward (F): 5′-CAAGACACCCGCCAGAAGAT-3′, Reverse (R): 5′-CAGCGTGGGACAGAAGGTAG-3′ (Designed by our lab).",
+    "Data were analyzed using ViiA7 software (ThermoFisher, MA, USA), and RTL was calculated using the ΔΔCt method: ΔΔCt = (Sample B2M Ct - Sample Telomere Ct) - (Control B2M Ct - Control Telomere Ct)."
+  ],
+  "authors": [
+    "Sinan Gültekin"
+  ],
+  "creator": "Karyna Tarasova",
+  "published_on": 1727778050,
+  "created_on": 1727775619,
+  "keywords": []
+}

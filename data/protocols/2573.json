@@ -1,0 +1,35 @@
+{
+  "id": 2573,
+  "title": "Silver Development protocol (silver stain) for 0.75mm polyacrylamide gels",
+  "uri": "Silver-Development-protocol-silver-stain-for-0-75m-ermbd46",
+  "doi": "dx.doi.org/10.17504/protocols.io.ermbd46",
+  "description": "{\"blocks\":[{\"key\":\"603pa\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"2tksn\",\"text\":\"What to look for in a silver stain protocol\\n\\nAvoid silver-ammine stains. Ammonia is touchy stuff and procedures are lengthy. Glutaraldehyde is unnecessary, unless you've got basic proteins (luteovirus capsids? - no data). Be sure gel is thin (0.75mm). Stain should incorporate a sensitizer (dithionite in my case) and a silver chelator (thiosulfate). The latter prevents silver carbonate  precipitation. Use high quality distilled water in the last stages of development.  Otherwise technical grade chemicals (alcohols, glycine, etc) work fine. I've not  successfully stained tricine gels - even with extensive washing; I presume tricine is a better silver precipitant than glycine.\\n\\nReferences:\\n\\nMorrissey, J.H. (1981). Silver stain for proteins in polyacrylamide gels: a modified procedure with enhanced uniform sensitivity. Analytical Biochem 17 , 307-31. \\n\\nRabilloud, Thierry (2000) Detecting proteins separated by 2-D gel electrophoresis. Analytical Chemistry 72 , 48a-55a. \\n\\nProblem\\n\\nThe protocol is robust. Occasional slow development appears to correlate with old formaldehyde. Doubling the formaldehyde concentration in the developer solves the problem. \\n \\n \\n \\n \\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":43},{\"style\":\"bold\",\"offset\":684,\"length\":11},{\"style\":\"bold\",\"offset\":981,\"length\":7},{\"style\":\"italic\",\"offset\":827,\"length\":19},{\"style\":\"italic\",\"offset\":944,\"length\":21}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"5aj9r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"bmdbb\",\"text\":\"If you're thinking of using thicker gels - don't.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"jvpo\",\"text\":\"Caution: Avoid thiols; they release peptides from keratin creating ' rain '. For protein gels reduce and alkylate samples (with 5mM DTT [see advice on DTT], and 15mM iodoacetamide respectively)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Agitate gel twice with 50% MeOH, 10% acetic acid (Fixer 1) for 15 min ea. 00:15:00 Gels can be held for several days in Fixer 1.",
+    "Rinse (1 min) with 200 ml DW. 00:01:00",
+    "Agitate in 10% EtOH, 5% glacial acetic acid (Fixer 2) for 6 min. 00:06:00 We use commercial (cheap) alcohols.",
+    "Agitate in distilled water. Agitate twice (9 min each) with 500 ml DW. 00:09:00 Thorough rinsing gives a low, uniform background.",
+    "Agitate in 500 ml of 20 mg/L Na 2 S 2 O 4 (hydrosulfite [dithionite], make fresh) in distilled, deionized water (DDW) for 9min (sensitization). Caution - the half-life of dithionite solution is tens of minutes.",
+    "Pour off solution.",
+    "Agitate for 9 min. 00:09:00",
+    "Rinse 30 sec with DDW to remove excess AgNO 3. 00:00:30",
+    "Add 200 ml image developer (1ml 37% formaldehyde per liter of 3% sodium carbonate) mixed with 200 ml 10g/L sodium thiosulfate.",
+    "Pour off developer.",
+    "Add 80 ml of stop solution (50 g tris, 25 ml glacial acetic per liter of distilled water).",
+    "Store gel in 10% glycerol with bacteriostat (0.02% NaN 3 ).",
+    "Without rinsing, add 200 ml, 0.1% AgNO 3 (200 mg) in DDW.",
+    "Add 150 ml 37% formaldehyde.",
+    "Agitate to desired staining intensity (3 to 6 min). 00:06:00 Thiosulfate complexes silver preventing silver carbonate precipitation."
+  ],
+  "authors": [
+    "David Dunigan and Irina Agarkova"
+  ],
+  "creator": "Irina Agarkova",
+  "published_on": 1465854134,
+  "created_on": 1458840389,
+  "keywords": []
+}

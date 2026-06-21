@@ -1,0 +1,34 @@
+{
+  "id": 121194,
+  "title": "Cell adhesion assay to determine the interaction between NGL-3 with LAR cell adhesion molecules",
+  "uri": "cell-adhesion-assay-to-determine-the-interaction-b-d2ki8cue",
+  "doi": "dx.doi.org/10.1038/nprot.2009.71",
+  "description": "{\"blocks\":[{\"key\":\"ojsda\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"ykmyx\",\"text\":\"In the cell adhesion assay, two groups of cells expressing different cell adhesion molecules are mixed together to determine whether the adhesion molecules can interact with each other and whether their interaction mediates cell adhesion. We used this assay to determine the interaction of NGL-3 with other synaptic cell adhesion molecules including LAR.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"flof1\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"n1yad\",\"text\":\"Expression constructs carrying NGL-3, LAR, EGFP, and DsRed.\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ulkre\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"h3wfh\",\"text\":\"Lipofectamin (Invitrogen).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mcf3j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"gqir8\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fyxn5\",\"text\":\"Four-well CultureSlides (Falcon 354114).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare L cells at 50% confluency in 6-well plates.",
+    "In the next day, transfect a group of L cells with 1 μg of NGL-3 and 0.5 μg of EGFP by the lipofectamine method. In parallel, transfect another group of L cells with 1 μg of LAR and 0.5 g of DsRed. EGFP and DsRed coexpressions are to differentially visualize the two groups of cells.",
+    "After 48 hrs, wash L cells twice with PBS, followed by trypsin treatment of the cells.",
+    "After trypsin treatment, add 2 ml of DMEM containing 10% fetal bovine serum to inactivate trypsin.",
+    "Spin down the L cells at 1,000 rpm for 5 min.",
+    "Resuspend the cell pellet in 1 ml of serum-free DMEM to disperse cells.",
+    "Transfer 500 μl of the DMEM containing L cells to a 1.5 ml microtube and rotate it for 1hr at room temperature. This 1-hr incubation is thought to help cells recover damaged adhesion proteins.",
+    "Mix 500 μl of NGL-3-expressing cells with 500 μl of LAR-expressing cells in a microtube and rotate it for 30 min at room temperature to allow cell aggregation to occur.",
+    "Carefully transfer 100 μl of the cell mixture to a well of culture slide containing 400 μl of serum-free DMEM.",
+    "Capture Z-stacked images by confocal microscopy (20x objective).",
+    "For quantification, count the number of cell aggregates from a single Z-stacked frame. Cell aggregates are defined by a group of four or more clustered cells that contain at least one red and green cell.",
+    "Trans-synaptic adhesion between NGL-3 and LAR regulates the formation of excitatory synapses by Jooyeon Woo, Seok-Kyu Kwon, Seungwon Choi, Seho Kim, Jae-Ran Lee, Anthone W Dunah, Morgan Sheng &amp; Eunjoon Kim published in Nature Neuroscience on 17 Jan, 2009 https://dx.doi.org/10.1038/nn.2279"
+  ],
+  "authors": [
+    "Jooyeon Woo",
+    "Seok-kyu Kwon",
+    "Eunjoon Kim"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1236246762,
+  "created_on": 1236246762,
+  "keywords": []
+}

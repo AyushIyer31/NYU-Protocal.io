@@ -1,0 +1,26 @@
+{
+  "id": 52570,
+  "title": "Microfluidics 3 - Mold Fabrication: 3D Printing",
+  "uri": "microfluidics-3-mold-fabrication-3d-printing-bxj2pkqe",
+  "doi": "dx.doi.org/10.17504/protocols.io.bxj2pkqe",
+  "description": "{\"blocks\":[{\"key\":\"3gaj9\",\"text\":\"Su8 is a photoresist resin used in MEMS technology for thick structures. PDMS microfluidic chips fabrication is suitable for SU8+Si wafer molds. This protocol describes the Direct UV laser lithography application performed in our laboratories.\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"eov0q\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"5nb06\",\"text\":\"This protocol is derived from\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4k2v6\",\"text\":\"[Reference: Processing guidelines for CreativeCadWorks company user manual for 3D Printing ]\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":91,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"421h3\",\"text\":\"* All the related steps must be done in a class-D cleanroom (minimum) and under yellow or red light. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"euh49\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5d8t\",\"text\":\"* Please learn well about the hazards of 3D printing resin chemicals.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"6pusk\",\"text\":\"3D Printing Resin; OOkuma, FP60 functional prototyping resin, \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aplkb\",\"text\":\"3D Printing Resin; ResinWorks, Master Mold Resin for PDMS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"45spf\",\"text\":\"Cleaning; Isopropanol alcohol and distilled water\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Molds for PDMS microfluidic chips can be fabricated using 3D Printing technology. SLA(/DLP) printers are mostly prefered for microfluidics due to its high resolution, relative low cost, and being suitable for direct microchannel formation. NehirBT uses a SLA/DLP 3D printing technology for transferring drawings by CAD software to channels directly as mold. The important parameters arranged are; A B 1 Specs Info 2 Total size 50x110x150 3 Light source UV LED/DLP 4 Point size 30-50 microns 5 Velocity 30 sec per layer 6 Resolution 30-50 microns 7 Aspect ratio 1:100 8 3D structures unlimited 3D SLA/DLP Printer (Creative CadWorks, MiiCraft 100)",
+    "The designs are generated using a CAD software in STL format and with milimeter as a unit. The flow simulation is performed using a multiphysics finite element analysis software, so the design optimization is performed by simulation support and correcting the errors. MiiCraft software is used for converting the design file to MII format which is suitable for MIICRAFT100 instrument. MiiCraft software controls the MIICRAFT100 instrument by arranging the duration of exposure per layer and layer thickness.",
+    "The resin choice is critical for the 3D Printing of PDMS molds since chemicals inside resin materials inhibit the curation of PDMS polymer. Only there are a few suitable resins and NehirBT uses; 1- OOkuma; FP60 functional prototyping resin, 2- ResinWorks; Master Mold Resin for PDMS Resin is put inside the reservoir of the 3D printing device. The printing is initiated by the setup of A B 1 Specs Info 2 Layer thickness 30-50 microns 3 Layer curing time 1-3 sec 4 Gap adjustment 0,1 mm 5 Base layer curing time 1-20 sec 6 Base layer layer number 1-10",
+    "After fabrication of the PDMS mold, it must be thermally and optically cured. Optical curing is exposure to UV LED (385-405 nm) for several hours and thermal treatment at 95 o C for several hours is needed. Not enough post-fabrication treatment causes remaining inhibitory chemicals which causes non-cured PDMS. Hot Plate (Electromag, LB.EM.M4060) UV LED Illuminator (custom made, 385-405nm)",
+    "The prepared mold is washed with isopropanol after completing the treatments and then dried with pressurized nitrogen gas. The mold is now ready for PDMS microchannel manufacturing. Put the mold in a petri dish, and label it with all appropriate information. Pouring PDMS material on mold in a petri dish is performed in class2 laminar flow hood."
+  ],
+  "authors": [
+    "Serhat Sevli",
+    " C. Yunus Sahan"
+  ],
+  "creator": "Serhat S",
+  "published_on": 1629662180,
+  "created_on": 1629502497,
+  "keywords": []
+}

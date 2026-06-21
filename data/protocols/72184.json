@@ -1,0 +1,36 @@
+{
+  "id": 72184,
+  "title": "3&#39;-Biotinylation of mRNA",
+  "uri": "3-39-biotinylation-of-mrna-ciqyudxw",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"6q27n\",\"text\":\"This protocol is meant to efficiently biotinylate the 3'-end of an mRNA prepared for use in single-molecule FRET experiments. The biotinylated 3'-end of the mRNA is able to bind tightly to streptavidin or neutravidin for use in the stopped-flow chambers used in our single-molecule FRET experiments.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "1 mL 1M Na-acetate (pH=5.0): Add 52.5mg (MW 82.03) Na-acetate (64%) and 20.7 uL of 17.4 M Acetic acid (36%) in 800 uL of DEPC water, then make up the volume upto 1 ml by adding more DEPC water or you can use the purchased 3M Na-acetate (pH=5.2) and make it to 1M.",
+    "3M KCl: Add 22.368 mg of KCl to 100 uL of DEPC water",
+    "300 mM NaIO4 (Sodium periodate) : Add 64.34 mg of NaIO4 (MW=213.89) to 1 mL of DEPC water.",
+    "100 mM Na-acetate: Make 100 mM Na-acetate by adding 4mL of 1M Na-acetate in 36 mL of DEPC water. Make 80 ml just in case.",
+    "Add 25 uL of 1 M Na-acetate, 75 uL of 300 mM NaIO4 and 40 uL of mRNA (we generally use mRNA having ~10-100 total A260 unit per 40 uL) in 110 uL of DEPC water and incubate this reaction mixture at room temperature for 2 hours.",
+    "Use the molar extinction coefficient for determination of IRES concentration. FKVRQWLM (ε=2953200 M -1 cm -1 ), FKVRQXLM (ε=2956500 M -1 cm -1 )",
+    "Prepare a Sephadex G-25 column (Nap-5, Pharmacia), then flow 10 mL of 100 mM NaAc solution through the NAP-5 column followed by storage buffer (the buffer inside the column) to pre-equilibrate it.",
+    "After 2 hours, put the reaction mixture on ice and precipitated periodate by adding 17.8 uL of 3M KCl to the mixture (final conc. of KCl is 200 mM), then incubate for 5 minutes on ice.",
+    "After that centrifuge the reaction mixture at 10,000 rcf at 2deg for 5 minutes to remove the precipitate.",
+    "The 250 uL supernatant was loaded onto a Sephadex G-25 column (Nap-5, Pharmacia) pre-equilibrated with 100 mM sodium acetate (pH=5.2). Add 250 uL of mM NaAc buffer to the column and let it also enter the resin (This enables the front of the sample to reach the bottom of the column).",
+    "Centrifuge at 12,000 rcf at 2 C for 15 minutes. Then decant and dry for 10 minutes. Then resuspend in 50 uL of DEPC water. Measure the A260 value and figure out concentration",
+    "After the first round of 100 mM NaAc has entered the resin, add another 1 mL of 100 mM NaAc buffer to the NAP-5 column and let it enter the resin. Then collect the elution (700 uL is enough, but better to collect everything). Then put the Elution and other fraction on ice.",
+    "Prepare 1 ml 50 mM EZ-Link Hydrazide-Biotin by weighing 12.9 mg of EZ-Link Hydrazide-Biotin (MW=258.33) and then add 1 mL of Anhydrous DMSO to dissolve the biotin in.",
+    "Then add 42 uL of the 50 mM biotin solution to your 1 mL of Eluted sample (Final conc 2mM). Mix thoroughly by pipetting / inverting and incubate at room temperature for 2 hours.",
+    "While incubating the sample / biotin mixture at room temperature, flow 25 mL of 100 mM NaAc solution through a Sephadex G-25 column (PD-10, Pharmacia) to pre-equilibrate it.",
+    "Add 1 mL of the sample / biotin mixture to the PD-10 column. After the mixture enters the resin, add 2 mL of 100 mM NaAc buffer to push the front of the sample to the bottom of the column. Add 2.45 mL more of the 100 mM NaAc solution and collect the fraction, then precipitate with 5-7 mL of cold ethanol in the -80C for 1hr or -20C overnight."
+  ],
+  "authors": [
+    "Clark Fritsch"
+  ],
+  "creator": "Clark Fritsch",
+  "published_on": 1667959860,
+  "created_on": 1667370599,
+  "keywords": []
+}

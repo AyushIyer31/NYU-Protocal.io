@@ -1,0 +1,27 @@
+{
+  "id": 85450,
+  "title": "Utilisation de l&#39;ordinateur &#39;slaker&#39; pour réaliser des QuantiSlakeTests (QST)",
+  "uri": "utilisation-de-l-39-ordinateur-39-slaker-39-pour-r-cxpixmke",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzxyk5gx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"d30ij\",\"text\":\"slaking lab draft protocol in french\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Version 3.0 !",
+    "Allumer l’ordinateur USER: slaker PASSWORD: *",
+    "Lancer le programme Dans le terminal (fênetre blanche ou noire qui s’ouvre automatiquement, ou cliquer sur l’icône Xterm), taper: AppSlake (on obtient donc [slaker@kingkong ~]$ AppSlake ) et appuyer sur enter. Une fenêtre Firefox avec l’application s’ouvre, avec deux onglets, sur les ports 8001 et 8002. Souvent bug au démarrage, donc ouvrir un nouvel onglet avec le port 8002.",
+    "Eteindre l’ordinateur Sur le bureau: clic droit –&gt; logout –&gt; Shutdown , ou bouton de démarrage !",
+    "En cas de bug Fermer les onglets Firefox de l’application Dans le terminal déjà ouvert taper Ctrl-C Ctrl-C (pour arrêter), ou dans un nouveau terminal, puis, dans les deux cas, taper : killall R ( [slakeman@kingkong ~]$ killall R ) et appuyer sur enter Relancer l’application en tapant: AppSlake ( [slakeman@kingkong ~]$ AppSlake ) et appuyer sur enter Si le bug persiste, redémarrer le pc en tapant dans le terminal: reboot ( [slakeman@kingkong ~]$ reboot ) et appuyer sur enter. Retourner au point 3. Si le bug persiste (encore) : Contacter Frédéric Vanwindekens au 0475 95 21 07 ou au fix 4184. S’il y a internet, lui communiquer l’adresse IP du PC. Elle se trouve sur le bureau à coté du mot NETWORK (ex: 10.12.102.24 ) Si les balances montrent des chiffres bizarres : ON/OFF &gt; OK (pas l&#39;ordi =;-) )",
+    "Mode opératoire: Lancer le programme (voir partie “Ordinateur”) Allumer la balance et, s’il y a un niveau, vérifier qu’elle est à niveau (niveau à bulle) Mettre de l’eau distilée dans le berlin (1800 ml) Positioner le panier vide suspendu à la balance dans l’eau Tarer la balance, panier vide sous eau ! Retirer le berlin Disposer l’échantillon dans le panier, à sec ! Une fois que le numéro d’échantillon est correctement établit dans l’application cliquer sur “Start the Slaketest” Lorsque le graphique simple commence à se construire, rapidement replacer le panier avec l’échantillon dans l’eau en faisant attention à ce que le panier ne touche pas les bords Une fois que le slaketest est terminé (lorsque la pente est relativement nulle, générallement à partir de 1000s), cliquer sur “Stop the Slaketest”. Attendre que le graphique disparaisse (cela peut prendre quelque(s) ittération(s)) Pour limiter le risque de bug, il vaut mieux allumer la balance en avance, et faire des échantillons de test en début de journée et début d’après-midi",
+    "Thanks Draft by : @WilliamGysselinck"
+  ],
+  "authors": [
+    "f.vanwindekens"
+  ],
+  "creator": "f.vanwindekens",
+  "published_on": 1690276993,
+  "created_on": 1690273229,
+  "keywords": []
+}

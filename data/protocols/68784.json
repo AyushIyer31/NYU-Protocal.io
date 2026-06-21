@@ -1,0 +1,26 @@
+{
+  "id": 68784,
+  "title": "CRISPR puromycin ",
+  "uri": "crispr-puromycin-cfeqtjdw",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvmndpog3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"fn4lp\",\"text\":\"This protocol is for CRISPR knock-in generation in mouse embryonic stem cells\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"3dtj0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"ei855\",\"text\":\"Have ES cells ready growing happily. Mostly 2 passages after thawing\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Plate cells on 6-well plate on SNL a day before transfection (number of cells shown in the table below).",
+    "A day after transfection cells were passaged from 6-well plate into 10cm Petri dishes with SNL. Cells from each well were split into 3 Petri dishes in 3 different densities (1/2, 1/3 and 1/5 of the cells).",
+    "24 hours later apply puromycin selection (at the adequate concentration for your cell line of interest) for 48hours to select for cells that contain the Cas9 plasmid (there is no selection in the targeting vector!).",
+    "After 48 hours of puromycin selection feed cells with regular ES medium every day until ready to pick colonies (usually 12-14 days after transfection).",
+    "pick colonies (usually 12-14 days after transfection). follow ES cell picking protocol",
+    "Transfect cells using Lipofectamine 2000 protocol and plasmid DNA amounts as shown in the following table: %s %s E14 1x10^6 cellsE14 1x10^6 cells6:1 Molar Ratio dTAG-SETDB1 to MA299/300No DNA Control100uL OPTIMEM + 6.46 uL (2.5 ug) dTAG-SETDB1 + 0.44 uL (869.3ng) MA299/300100ul OPTIMEM100uL OPTIMEM + 10 uL LF2000100uL OPTIMEM + 10uL LF2000"
+  ],
+  "authors": [
+    "Rebecca Berrens"
+  ],
+  "creator": "Rebecca Berrens",
+  "published_on": 1660743588,
+  "created_on": 1660731210,
+  "keywords": []
+}

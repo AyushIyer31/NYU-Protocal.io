@@ -1,0 +1,29 @@
+{
+  "id": 3978,
+  "title": "On-Column DNase I Treatment for ISOLATE II Biofluids RNA Kit",
+  "uri": "on-column-dnase-i-treatment-for-isolate-ii-bioflui-f5ibq4e",
+  "doi": "dx.doi.org/10.17504/protocols.io.f5ibq4e",
+  "description": "{\"blocks\":[{\"key\":\"cqgj3\",\"text\":\"    The ISOLATE II Biofluids RNA Kit isolates total RNA with minimal amounts of genomic DNA contamination using the supplied Genomic DNA Removal Column. However, additional DNase I treatment may be required in certain cases e.g. the amount of genomic DNA in the sample exceeds the capacity of the Genomic DNA Removal Column, or performing a highly sensitive application.\\n  \\n An alternative additional DNase I treatment protocol is: DNase I Treatment of Purified RNA in Solution.\\n  \\n This optional protocol can be used for additional removal of residual DNA that may affect sensitive downstream applications.\\n \\n \\n \\n \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":432,\"length\":45}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"BF5E8E61907748918D276EC8AC66D72F\",\"url\":\"https://www.protocols.io/view/appendix-b-optional-dnase-i-treatment-of-purified-f5jbq4n\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"e3hvq\",\"text\":\"Please review the Guidelines under Genomic DNA removal and total RNA purification from all types of lysate for important details.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":35,\"length\":71}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"D445802E4BC7412ABB7860AF207DAF8D\",\"url\":\"https://www.protocols.io/view/genomic-dna-removal-and-total-rna-purification-fro-f48bqzw?guidelines\"}}}}",
+  "before_start": "{\"blocks\":[{\"key\":\"cvcll\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"4083l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"vQICv\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"TK5JN\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":3583,\"guid\":\"4105D146341F11EE9D4302C0B41BC903\",\"name\":\"ISOLATE II Biofluids RNA Kit\",\"mol_weight\":0,\"sku\":\"BIO-52086\",\"url\":\"http://www.bioline.com/us/isolate-ii-biofluids-rna-kit.html\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":121,\"name\":\"Bioline\",\"link\":\"http://www.bioline.com/us/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "For each on-column digest to be performed, prepare a DNase I - buffer mix by adding 1 5μL of the supplied DNase I Solution to 100 μL of DNase I Reaction Buffer DRB.",
+    "Mix gently by inverting the tube a few times. Do not vortex.",
+    "Perform the appropriate RNA isolation procedure for your starting material up to and including the &#39;Binding RNA to Column&#39; section (up to step 12 of Genomic DNA removal and total RNA purification from all types of lysate ).",
+    "Apply 400 μL of Wash Buffer W1 to the column and centrifuge for 2 min at 14,000 x g. 00:02:00",
+    "Discard the flow-through. Reassemble the spin column with its Collection Tube. Note: Ensure the entire wash buffer volume has passed through into the Collection Tube by inspecting the column. If the entire wash volume has not passed, spin for an additional minute at 14,000 x g.",
+    "Apply 115 μL of the DNase I - buffer mix to the column and centrifuge for 1 min at 14,000 x g. 00:01:00 Note: Ensure the entire volume of DNase I - buffer mix passes through the column. If necessary, spin for an additional minute at 14,000 x g.",
+    "Pipette the flow-through present in the Collection Tube back on to the top of the column. Note: This step must be performed to ensure maximum DNase I activity and to obtain maximum yields of RNA. This is particularly important for the isolation of small RNA species.",
+    "Incubate at room temperature (18-25°C) for 15 min. 00:15:00",
+    "Without any further centrifugation, proceed directly to the second wash step in the RNA Column Wash section (step 15 here ). Apply the wash buffer directly to the column containing the DNase I - buffer mix."
+  ],
+  "authors": [
+    "Bioline "
+  ],
+  "creator": "Steve Hawkins",
+  "published_on": 1481537279,
+  "created_on": 1476816474,
+  "keywords": []
+}

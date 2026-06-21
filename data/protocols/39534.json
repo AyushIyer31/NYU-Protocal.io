@@ -1,0 +1,31 @@
+{
+  "id": 39534,
+  "title": "Autofluorescence Reduction and Imaging Marmoset NHP Tissue with a TissueFAXS Imaging System ",
+  "uri": "autofluorescence-reduction-and-imaging-marmoset-nh-biunkeve",
+  "doi": "",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "1) Wash samples in 1X PBS for 00:02:00 .",
+    "2) Stain samples free floating with .05 % volume TrueBlack in 70 % volume Ethanol for 00:03:30",
+    "3) Rinse samples in 1X PBS for 00:10:00 .",
+    "4) Mount samples on a slide with ProLong™ Gold Antifade Mountan.",
+    "Image samples with a 5x overview scan to determine the tissue regions and boarders.",
+    "Switch to 20x and image both slices with DAPI and 488 to determine the location of GFP+ cells.",
+    "Create &#34;Defined Regions&#34; around GFP+ cells.",
+    "Once these defined regions are created, switch to the 40x water immersion objective and &#34;Force Focus&#34; on multiple points across the tissue to find upper and lower bounds for focusing.",
+    "Compute focus points for each defined region -- Options, Focus (1x1) -- and set your upper and lower bounds for imaging.",
+    "Image each defined region with 0.5 µm steps so that cells can be reconstructed for morphology.",
+    "Export the FOVs for morphology reconstruction. Be sure to uncheck “Use Stich” as the stitching is done later in the reconstruction pipline. Save the Z-stack with &#34;Original&#34; and &#34;16-bit&#34; format."
+  ],
+  "authors": [
+    "Guoping Feng Lab"
+  ],
+  "creator": "Guoping Feng Lab",
+  "published_on": 1595376990,
+  "created_on": 1595350473,
+  "keywords": []
+}

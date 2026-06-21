@@ -1,0 +1,32 @@
+{
+  "id": 117554,
+  "title": "Automated sample detection (slide) and tiled Z-stacks ",
+  "uri": "automated-sample-detection-slide-and-tiled-z-stack-dw2s7gee",
+  "doi": "dx.doi.org/10.17504/protocols.io.261ger2ool47/v1",
+  "description": "{\"blocks\":[{\"key\":\"fcaa9\",\"text\":\"This is a conditional imaging routine written using the JOBs module within Nikon's NIS elements software (version 6.10.01) on a Ti2-E widefield microscope. The JOB is designed to scan over a cover slip at low magnification, automatically find the sample (such as tissue sections) and then collect 3D data (Z-stacks) which tile across the detected sample. The user needs to input their desired color channels and magnification at the start of the JOB. This script can run on confocal with minor modification. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"ded8j\",\"text\":\"     \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1},{\"key\":1,\"offset\":3,\"length\":1}],\"data\":{}},{\"key\":\"8nl4m\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"28r7s\",\"text\":\"Materials:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a6smr\",\"text\":\"Ti2-E motorized microscope \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b3tfu\",\"text\":\"NIS elements AR version 6.10 or above \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7bk30\",\"text\":\"4x Plan Apo Lambda D objective \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4plps\",\"text\":\"10x, 20x, or 40x air immersion objective \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fqo2s\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"br012\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5u4cd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"file\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"\",\"height\":0,\"id\":532704,\"is_video\":false,\"legend\":\"\",\"mime\":\"\",\"originalFile\":{},\"original_name\":\"Tis1_GA3.ga3\",\"placeholder\":\"https://www.protocols.io/img/extensions/file.png\",\"raw_source\":\"\",\"size\":0,\"source\":\"https://protocols-files.s3.amazonaws.com/files/sihacecfp.ga3?X-Amz-Algorithm=AWS4-HMAC-SHA256\\u0026X-Amz-Credential=AKIAWFTFYUBUZ2U2JGOS%2F20260621%2Fus-east-1%2Fs3%2Faws4_request\\u0026X-Amz-Date=20260621T084600Z\\u0026X-Amz-Expires=604800\\u0026X-Amz-SignedHeaders=host\\u0026X-Amz-Signature=0785bd08182eb638ef1c4bb3f2b1ccd6f77fc5c0bfa24b9702e94b0f64115867\",\"type\":5,\"width\":0}},\"1\":{\"type\":\"file\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"\",\"height\":0,\"id\":532734,\"is_video\":false,\"legend\":\"\",\"mime\":\"application/octet-stream\",\"originalFile\":{},\"original_name\":\"Tis3.bin\",\"placeholder\":\"https://www.protocols.io/img/extensions/file.png\",\"raw_source\":\"\",\"size\":0,\"source\":\"https://protocols-files.s3.amazonaws.com/files/sih8cecfp.bin?X-Amz-Algorithm=AWS4-HMAC-SHA256\\u0026X-Amz-Credential=AKIAWFTFYUBUZ2U2JGOS%2F20260621%2Fus-east-1%2Fs3%2Faws4_request\\u0026X-Amz-Date=20260621T084600Z\\u0026X-Amz-Expires=604800\\u0026X-Amz-SignedHeaders=host\\u0026X-Amz-Signature=3cf393791116a69891584390328ef47dffa983303d95e63ca3e1d4bf4cdffc16\",\"type\":5,\"width\":0}}}}",
+  "steps": [
+    "Load the slide into the slide holder of the microscope and focus on the sample using a low magnification objective.",
+    "In the &#39;Sample Navigation&#39; tab select which slide holder you are using:",
+    "Capture an overview image of the current slide by clicking on the &#39;Full&#39; or &#39;Preview&#39; buttons. Clicking &#39;Full&#39; will capture an image in &#39;Brightfield&#39; while clicking &#39;Preview&#39; will allow the choice of imaging in either brightfield or select an imaging channel or optical configuration.",
+    "Refine the area to be imaged by drawing a region of interest (ROI) by clicking the &#39;Area&#39; button",
+    "Clicking &#39;Area&#39; will now capture an overview of the area of interest",
+    "Elements can now use these images to navigate around the tissue section image at higher magnification and with Z-stacks.",
+    "Navigate to the JOBs explorer tab and select &#39;New&#39; to import the new JOB for the first time. Note once imported this step does not need to be repeated on subsequent runs of the JOB.",
+    "Import the JOB saved as .bin titled &#39;Ti3.bin&#39;",
+    "Run the JOB by clicking the play button at the lower right corner of the edit window. This will open the JOB wizard where you can input settings. The first is where you can enter if you would like to collect Z-stacks, and also maximum intensity projections:",
+    "Select the first &#39;capture definition&#39; which will be the channel (OC or experiment) used to perform the low magnification overview images. If using fluorescence, select the channel with the most homogeneous signal.",
+    "Define the thickness of the Z-stacks. By default the job will perform an asymmetrical Z-stack from the point of autofocus -10um below and 30um above the focus on an inverted microscope.",
+    "Select the second &#39;capture definition&#39; which will be the channels (OCs or experiment) used to perform the high magnification images and Z-stacks. Click &#39; Run&#39;"
+  ],
+  "authors": [
+    "Joe Airey"
+  ],
+  "creator": "Joe Airey",
+  "published_on": 1735847499,
+  "created_on": 1735814403,
+  "keywords": []
+}

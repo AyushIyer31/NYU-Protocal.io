@@ -1,0 +1,28 @@
+{
+  "id": 123974,
+  "title": "Agrobacterium-Mediated Transformation of Fluorescent Constructs in Caenorhabditis elegans",
+  "uri": "agrobacterium-mediated-transformation-of-fluoresce-d5be82je",
+  "doi": "dx.doi.org/10.17504/protocols.io.5qpvo9emzv4o/v2",
+  "description": "{\"blocks\":[{\"key\":\"7tnac\",\"text\":\"Standard protocol used for attempted genetic transformation of C. elegans by Agrobacterium\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":63,\"length\":11},{\"style\":\"italic\",\"offset\":77,\"length\":13}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"4d3lp\",\"text\":\"Agrobacterium have the potential for transformation into Human cells. Wear gloves and lab coat to ensure you don't come into contact with the Agroabcterium. In case of contact of Agrobacterium with skin wash the exposed area, In case of contact of Agrobacterium with eyes, flush eyes with water.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":13},{\"style\":\"italic\",\"offset\":142,\"length\":15},{\"style\":\"italic\",\"offset\":179,\"length\":14},{\"style\":\"italic\",\"offset\":202,\"length\":1},{\"style\":\"italic\",\"offset\":225,\"length\":1},{\"style\":\"italic\",\"offset\":248,\"length\":14}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"asfue\",\"text\":\"Yeast Extract Peptone (YEP) agar:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":32}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5kgmh\",\"text\":\"1% Bacto peptone, 1% Yeast extract 0.5% NaCl, 1.5% BioAgar\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dlrhc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ol1m\",\"text\":\"Yeast Extract Peptone (YEP) media:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":34}],\"entityRanges\":[],\"data\":{}},{\"key\":\"9g3l5\",\"text\":\"1% Bacto peptone, 1% Yeast extract 0.5% NaCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c6gsf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fg89l\",\"text\":\"Induction Media \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":16}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5dl0r\",\"text\":\"1% NH4Cl, 0.145% MgSO4, 0.15 KCl, 0.01% CaCl2, 0.0025% FeSO4-7H2O, 2 mM NaPO4 (pH 5.6), 50 mM 2-(4-morpholino)-ethane sulfonic acid (MES), 0.5% glucose\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":5,\"length\":1},{\"style\":\"sub\",\"offset\":21,\"length\":1},{\"style\":\"sub\",\"offset\":44,\"length\":1},{\"style\":\"sub\",\"offset\":59,\"length\":1},{\"style\":\"sub\",\"offset\":63,\"length\":1},{\"style\":\"sub\",\"offset\":76,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"b0q40\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f3h12\",\"text\":\"LB-Nematode Grown Media (NGM) Agar:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":35}],\"entityRanges\":[],\"data\":{}},{\"key\":\"epe14\",\"text\":\"1% tryptone, 0.5% yeast extract, 1% NaCl, 1mM CaCl2, 1mM MgSO4, 1 mM KPO4 (dx.doi.org/10.17504/protocols.io.bnh2mb8e), 1.7% BioAgar, 5 µg/mL Cholesterol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":50,\"length\":1},{\"style\":\"sub\",\"offset\":61,\"length\":1},{\"style\":\"sub\",\"offset\":72,\"length\":2}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3g0cm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Streak Agrobacterium (expressing T-binary vector of interest) to Yeast Extract Peptone (YEP) agar plates containing appropriate antibiotics to maintain T-binary and Vir helper plasmids. Incubate for 3 days at 28°C.",
+    "Dilute the overnight culture 1:100 and incubate at 28°C and 250-rpm until the Agrobacterium reach an OD600 of 0.3.",
+    "Pellet the Agrobacterium by centrifugation (5 min 4000g).",
+    "Resuspend the pellet in 1 ml induction medium containing acetosyringone (100 µM), and shake at 50-rpm at room temperature for 23 hours.",
+    "Add 0.5 ml of Agrobacterium in induction medium to LB-NGM plates with appropriate antibiotics and allow to dry.",
+    "Wash a mixed population of C. elegans from a plate using M9 buffer, and wash three times by centrifuging (2 minutes at 1500 rpm), and resuspending in M9.",
+    "Add 15 C. elegans worms to LB-NGM plates with Agrobacterium, and incubate at 20°C for 4 days before begining to observe fluorescence using widefield fluorescence microscopy.",
+    "Pick a single colony of Agrobacterium into 20 ml YEP media (with appropriate antibiotics). Incubate overnight at 28°C and 250-rpm."
+  ],
+  "authors": [
+    "e.warren Warren"
+  ],
+  "creator": "e.warren Warren",
+  "published_on": 1741345133,
+  "created_on": 1741341523,
+  "keywords": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": 227905,
+  "title": "Visium sample preparation from human Middle Temporal Gyrus ",
+  "uri": "visium-sample-preparation-from-human-middle-tempor-has9b2eh7",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv5k3k6v1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"4ijnj\",\"text\":\"This protocol describes a workflow to prepare and Run Visium Spatial Transcriptomics samples from human Middle Temporal Gyrus.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"1q3vj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"tgdv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"64msg\",\"text\":\"Additional materials not listed were purchased following the protocols suggestions.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Single 10µm brain sections were prepared following strictly the Visium Spatial Protocol - Tissue Preparation guide by 10x genomics ( CG000240 | Rev C, 10x Genomics) and placed onto Visium spatial gene expression slides ( #PN-1000184, 10x Genomics).",
+    "Visium spatial slides were shipped overnight collaborator on dry ice and stored at -80 °C for no more than a week before processing was continued.",
+    "Visium slides were fixed with Methanol and subjected to H&amp;E Staining following 10x Genomics Methanol Fixation, H&amp;E Staining &amp; Imaging for Visium Spatial Protocols ( CG000160 | Rev B, 10x Genomics) before imaging.",
+    "Slides were imaged on an Axio Imager.Z2 microscope (Zeiss) with Metafer 5 (v3.14.150, RRID:SCR_016306 MetaSystems) automated software at 10X magnification, 1.0 CCD camera gain, and fixed lamp RGB levels.",
+    "Of note, 8 Samples were held at 4 °C &gt; 24hours between H&amp;E Staining and imaging du to microscope issues. No no significant difference in QC metrics were identified for these samples",
+    "Samples were processed as directed following strictly Visium spatial gene expression Reagent kits user guide ( CG000239 |Rev D, 10x Genomics) using the Visium spatial Gene Expression Reagent Kit (#PN-1000186, 10xGenomics) and the Library Construction Kit (#PN-1000190, 10xGenomics). The permeabilization time was optimized as directed ( CG000238 | Rev D, 10x Genomics).",
+    "Tissue optimization experiments were imaged using identical Metafer 5 settings following the H&amp;E staining as described in step 4. Fluorescence imaging was performed with an Agilent Technologies DNA MicroArray Scanner and analyzed using Agilent Feature Extraction (v10.5.1.1, RRID_014963, Agilent Technologies) software.",
+    "We determined the number of spots covered by each tissue section with the Loupe Browser manual alignment tool (V 5.0, RRID:SCR_018555, 10x Genomics).",
+    "Libraries were pooledfor each section, and sequenced to a depth of at least ~50,000 reads per spot on an Illumina NovaSeq with an SP flow cell with read lengths of 28 (Read 1), 90 (Read 2), 10 (Index 5), and 10 bases (Index 7)."
+  ],
+  "authors": [
+    "Nathan Haywood",
+    "Beatrice Weykopf",
+    "Zhixiang Liao",
+    "Idil Tuncali",
+    "Xian Adiconis",
+    "Joshua Z Levin",
+    "Clemens R. Scherzer"
+  ],
+  "creator": "Beatrice Weykopf",
+  "published_on": 1758637800,
+  "created_on": 1758559795,
+  "keywords": []
+}

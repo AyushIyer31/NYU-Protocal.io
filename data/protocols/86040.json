@@ -1,0 +1,27 @@
+{
+  "id": 86040,
+  "title": "CD8 Cell Density In Substantia Nigra And Cerebral Peduncle Image Analysis",
+  "uri": "cd8-cell-density-in-substantia-nigra-and-cerebral-cx9yxr7w",
+  "doi": "dx.doi.org/10.17504/protocols.io.5qpvo3roxv4o/v1",
+  "description": "{\"blocks\":[{\"key\":\"20hnu\",\"text\":\"QuPath is a bioimage analysis software designed for digital pathology and whole slide image analysis. This protocol describes how to measure CD8 density in the substantia nigra and cerebral peduncle using haematoxylin and DAB-stained brain sections.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1sq98\",\"text\":\"\\n\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"e55ni\",\"text\":\"CD8 IHC-stained sections\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5p8ln\",\"text\":\"NZConnect (Hamamatsu)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3mp6s\",\"text\":\"StarDist\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d1gol\",\"text\":\"QuPath\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"elr0s\",\"text\":\"\\n\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Manually annotate the substantia nigra and cerebral peduncle on NZConnect (Hamamatsu), a web-based whole-slide image (WSI) viewer.",
+    "Download the annotations using a Python script then import into QuPath [1] using a Groovy script.",
+    "In QuPath, set the colour deconvolution to facilitate the detection of haematoxylin and DAB staining on CD3 IHC-stained sections.",
+    "Segment all cell nuclei using StarDist [2] via the QuPath StarDist extension [3] , follow with an object classifier to classify CD8-positive cells.",
+    "Calculate CD8-positive cell density was calculated by the number of CD8-positive cells divided by the area of the region of interest (CD8-positive cells per mm^2). References [1] Bankhead, P., Loughrey, M.B., Fernández, J.A. et al. QuPath: Open sourcesoftware for digital pathology image analysis. Sci Rep 7 , 16878 (2017). https://doi.org/10.1038/s41598-017-17204-5 [2] Schmidt, U., Weigert, M., Broaddus, C., &amp; Myers, G. (2018, September). Cell detection with star-convex polygons. In International Conference on Medical Image Computing and Computer-Assisted Intervention (pp. 265-273). Springer, Cham. https://arxiv.org/abs/1806.03535 [3] StarDist extension for QuPath https://github.com/qupath/qupath-extension-stardist"
+  ],
+  "authors": [
+    "Hemanth Ramesh Nelvagal",
+    "Toby J Curless",
+    "Zane Jaunmuktane"
+  ],
+  "creator": "Hemanth Ramesh Nelvagal",
+  "published_on": 1701968048,
+  "created_on": 1691417624,
+  "keywords": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": 98806,
+  "title": "USDA LTAR Common Experiment measurement: Soil water content",
+  "uri": "usda-ltar-common-experiment-measurement-soil-water-dcqw2vxe",
+  "doi": "dx.doi.org/10.17504/protocols.io.261ge542yg47/v1",
+  "description": "{\"blocks\":[{\"key\":\"a4tpn\",\"text\":\"Soil water content, also known as soil moisture, is commonly defined as the volume of water per volume of soil (volumetric soil water content). Gravimetric soil water content is the weight of water per weight of soil. For most purposes, we speak of volumetric water content in the units of m3/m3. Soil water content usually refers to the water contained within the vadose zone of the surface soil layer. Soil water content below the saturated water content of the soil usually ranges from 0-0.5 m3/m3.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":291,\"length\":1},{\"style\":\"sup\",\"offset\":294,\"length\":1},{\"style\":\"sup\",\"offset\":496,\"length\":1},{\"style\":\"sup\",\"offset\":499,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9jrm1\",\"text\":\"Readers are encouraged to reference the protocol paper by Caldwell et al (2022) published in JOVE for illustrations and more detailed explanations. The text contained here in protocols.io is an overview for implementation in the USDA LTAR network. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"30uvv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5ah23\",\"text\":\"Caldwell, T.G., Cosh, M.H., Evett, S.R., Edwards, N., Hofman, H., Illston, B.G., Meyers, T., Skumanich, M., Sutcliffe, K. In situ Soil Moisture Sensors in Undisturbed Soils. J. Vis. Exp. (189), e64498, https://doi.org/10.3791/64498 (2022)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":202,\"length\":29}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"305FDB6E491211EFB1980A58A9FEAC02\",\"url\":\"https://doi.org/10.3791/64498\"}}}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Equipment Various technologies are available for monitoring soil water content, many using the dielectric nature of water to provide an estimate. Others are based on capacitance, cosmic ray neutron counting, time domain reflectometry, transmission line oscillators, time domain transmission, lysimeters, and GPS.",
+    "Measurement",
+    "Most common soil water content data are collected at 1 h intervals, but some soils and hydrologic regions may benefit from more frequent intervals. A paper by Caldwell et al. (2022) has more details on the installation and maintenance of an installation; see references.",
+    "Site Maintenance",
+    "Data are often collected from in situ sensors and recorded on a data logger. Quality control can be implemented. Common indicators of suspicious data are, for example, increases in SWC without precipitation, no increase in SWC with precipitation, and SWC greater than saturation.",
+    "Quality control for soil moisture data relies on multiple complementary techniques to assess the magnitude and variability of these data, including tests for absolute magnitude, measurement-to-measurement variability, observation persistence, and spatial coherence.",
+    "Files are usually time series with raw voltages or readings stored. Intermediary measurements are usually made of properties such as soil temperature and the real dielectric constant.",
+    "Metadata should include GPS coordinates of the sampling site, sampling frequency, sensor depths (cm), probe manufacturer, model, and type, land cover, and installation orientation (horizontal/vertical).",
+    "Common measurement depths depend on the sensor technology, although every location and study differ. USDA SCAN/SNOTEL: 5, 10, 20, 50, 100 cm NOAA CRN: 5, 10, 20, 50, 100 cm NEON: 6, 16, 26, and greater cm",
+    "Table 1. Summary of recommendations for measuring soil water content. %s %s",
+    "The operations and maintenance cost is a primary station installation cost. Keeping short grass to minimize root intrusion for long-term installations is necessary. Depending on the purpose of the study, locating sensors inside a cultivated field may be desirable.",
+    "Quality assessment and quality control (QA/QC) approaches for soil moisture data in the North American Soil Moisture Database (Quiring et al., 2016) and International Soil Moisture Network (Derigo et al. 2013 &amp; 2021) rely on automated algorithms.",
+    "The International Soil Moisture Network’s QC procedures for in situ soil moisture data are available on GitHub (Aberer et al., 2021).",
+    "Specific to the LTAR network, please refer to the &#34;Quality control&#34; section in the USDA LTAR Common Experiment measurement: Best practices for collection, handling, and analyses of water quantity measurements protocol (Baffaut et al., 2024)."
+  ],
+  "authors": [
+    "Michael H. Cosh",
+    "Claire Baffaut"
+  ],
+  "creator": "Lori J. Abendroth",
+  "published_on": 1726868080,
+  "created_on": 1713249523,
+  "keywords": []
+}

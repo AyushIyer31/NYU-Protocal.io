@@ -1,0 +1,31 @@
+{
+  "id": 91224,
+  "title": "Assay for the Enzymatic Degradation of PET Beads",
+  "uri": "assay-for-the-enzymatic-degradation-of-pet-beads-c5byy2pw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6xp8klqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"9vlgg\",\"text\":\"This assay focuses on assessing the enzymatic degradation of PET beads through absorbance measurements at 240nm. The primary goal is to quantify the enzymatic activity on PET beads by monitoring the release of BHET. This is achieved using a UV-transparent microplate, with absorbance readings specifically taken at 240nm.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"27n78\",\"text\":\"Ensure the supernatant transfer is consistent in volume across all samples.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3f940\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8bqj0\",\"text\":\"The enzyme and PET bead concentrations might need optimization based on the sensitivity of the assay and the activity of the enzyme.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f387r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bqo4q\",\"text\":\"A negative control with an inactivated enzyme can help determine the baseline of non-enzymatic degradation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3fumr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3vcra\",\"text\":\"Adjustments to the protocol may be necessary based on specific experimental parameters, enzyme characteristics, or the sensitivity required for the assay.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"dfj7f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"36gsk\",\"text\":\"Follow standard laboratory safety protocols, especially when working with enzymes and potentially sharp plastic materials.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5ln73\",\"text\":\"Wear appropriate personal protective equipment throughout the experiment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"ca9q9\",\"text\":\"PET plastic beads\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"41dmg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a01iq\",\"text\":\"1M Potassium phosphate buffer (pH 8)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dcjkk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3c4l1\",\"text\":\"Plastic-degrading enzyme solution\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fqfa5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2e7ah\",\"text\":\"Thermocycler with a lid temperature set to 105°C\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6jucc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"67rbs\",\"text\":\"TECAN plate reader\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7tdcn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6fdbs\",\"text\":\"Greiner Bio-One UV-Star 96-well Microplates (UV-transparent)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6nq21\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c7qbv\",\"text\":\"PCR tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cifqd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"okm5\",\"text\":\"Pipettes and pipette tips\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "In each PCR tube, add 30mg of PET plastic beads.",
+    "Add 100 µL of 1 Molarity (M) potassium phosphate buffer to the tubes",
+    "Add 100 µL of the enzyme solution to the tubes with PET beads to initiate the reaction. These constitute the test samples.",
+    "Prepare a blank control by adding 100 µL of buffer and 100 µL of enzyme solution into a PCR tube without PET beads.",
+    "Place the PCR tubes in the thermocycler.",
+    "Set the thermocycler to 68 °C with the lid heated to 105 °C to prevent condensation. Incubate for 12 hours.",
+    "Following the incubation period, briefly cool the PCR tubes to room temperature.",
+    "Centrifuge the tubes if necessary to ensure that the PET beads settle to the bottom.",
+    "Carefully transfer 100 µL of the supernatant from each tube into the corresponding wells of the UV-Star™ 96-well Microplate.",
+    "Measure the absorbance of each well at 240 nm using the TECAN plate reader. Ensure to measure both the test samples and the blank control.",
+    "Calculate the enzymatic activity by comparing the absorbance readings of the test samples with that of the blank control. The difference in absorbance is indicative of BHET release and, consequently, of PET degradation."
+  ],
+  "authors": [
+    "Joao Vitor Molino"
+  ],
+  "creator": "Barbara Saucedo",
+  "published_on": 1746993148,
+  "created_on": 1700517122,
+  "keywords": []
+}

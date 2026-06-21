@@ -1,0 +1,23 @@
+{
+  "id": 37020,
+  "title": "Installation instructions for phylogenetic analysis using a conda environment",
+  "uri": "installation-instructions-for-phylogenetic-analysi-bgd4js8w",
+  "doi": "dx.doi.org/10.17504/protocols.io.bgd4js8w",
+  "description": "{\"blocks\":[{\"key\":\"cgrml\",\"text\":\"The purpose of this protocol is to define and provide instructions for creating a conda environment for phylogenetic analysis\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Open a terminal (Ctrl + Alt + T). Create a directory called softwares to your HOME directory, switch to it and then download the 64-bit Python 3 Miniconda installer. Install Miniconda quietly, accepting defaults. After installation, remove the Miniconda installer from directory. Set the Miniconda permanent PATH and update conda packages to the latest compatible version. mkdir $HOME/softwarescd $HOME/softwareswget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.shbash Miniconda3-latest-Linux-x86_64.sh -bfp $HOME/softwares/condarm Miniconda3-latest-Linux-x86_64.shexport PATH=\"$HOME/softwares/conda/bin:/usr/local/share/rsi/idl/bin:$PATH\"echo 'export PATH=\"$HOME/softwares/conda/bin:/usr/local/share/rsi/idl/bin:$PATH\"' >> $HOME/.bashrcconda update -y -n base conda",
+    "Create a YML file to build a phylogenetic analysis environment called phy. cat > phy.yml",
+    "Create the environment from the phy.yml file conda env create -f phy.yml"
+  ],
+  "authors": [
+    "Laise Moraes"
+  ],
+  "creator": "Laise Moraes",
+  "published_on": 1589551449,
+  "created_on": 1589451702,
+  "keywords": []
+}

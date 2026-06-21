@@ -1,0 +1,28 @@
+{
+  "id": 6479,
+  "title": "Total Chlorophyll a Measurements by Spectrophotometer",
+  "uri": "total-chlorophyll-a-measurements-by-spectrophotome-ijpccmn",
+  "doi": "dx.doi.org/10.17504/protocols.io.ijpccmn",
+  "description": "{\"blocks\":[{\"key\":\"6biff\",\"text\":\"Please contact Dr. Steven Wilhelm (wilhelm@utk.edu) for additional information regarding this protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3nc5e\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7j680\",\"text\":\"Adapted from Wetzel and Likens 2000. Limnological Analyses, Springer NY\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4fqbv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"88q6a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"5jnr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Obtain a sample to be examined. This can be a culture or a field sample. For chlorophyll extractions, it is important to process at least duplicate samples, but triplicate samples are even better.",
+    "Collect materials on 0.2 µM polycarbonate membrane filters with gentle filtration Record the volume that is being filtered in L. The volume to be filtered is dependent on the sample in question. Typically, it will range from 25 mLs to 100 mLs. The more productive (eutrophic) the system, the less you will filter. You should avoid adding too much material as this will clog the filter and it will no longer select based on size exclusion.",
+    "Place the filter containing the sample into a 15 mL Falcon tube",
+    "Add 90% acetone to the tube undetermined",
+    "Store sample and acetone at -20ºC overnight to allow for extraction of Chl a If -20 degree C is not available, 4 degree C will work. The main point is that the sample should be stored in the dark.",
+    "Read the standards in a spectrophotometer at the following absorbance: 665 nm, 645 nm, 730 nm",
+    "Equation: mg/L Chl a in the extract = 11.75*(A665-A730)-1.31*(A645-A730) This equation gives results in mg/L, not ug/L.",
+    "To convert back to the original sample, use the following equation: Chlorophyll in sample (mg/L)*acetone volume = total chlorophyll extracted Total chlorophyll extracted (mg)/volume filtered (L) = concentration of chlorophyll in the original sample (mg/L)"
+  ],
+  "authors": [
+    "Dr. Steven Wilhelm"
+  ],
+  "creator": "Steven W Wilhelm",
+  "published_on": 1498056783,
+  "created_on": 1498055800,
+  "keywords": []
+}

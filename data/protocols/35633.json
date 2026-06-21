@@ -1,0 +1,32 @@
+{
+  "id": 35633,
+  "title": "PhotoId-Whale: blue whale dorsal fin classification for mobile devices",
+  "uri": "photoid-whale-blue-whale-dorsal-fin-classification-be2rjgd6",
+  "doi": "dx.doi.org/10.17504/protocols.io.be2rjgd6",
+  "description": "{\"blocks\":[{\"key\":\"641ql\",\"text\":\"Photoidentification is a method used by biologists to classify animals primarily to track endangered species. Different methods of identification, either manual or computational, have been developed since the 1990s, which until now have remained in use. However, these methods can introduce a factor of subjectivity when classifying an individual animal, creating uncertainty or inaccuracy in the results obtained as a result of the human criteria involved. For this reason, one of the main objectives in photoidentification is to implement an automated mechanism that is free of biases, is portable, and is easily used. The main aim of this work is to develop an autonomous and portable photoidentification system through the optimization of image classification algorithms that have high statistical dependence, with the goal of classifying images of the dorsal fin of the blue whale through offline information processing on a mobile device. The new proposed methodology is based on the Scale Invariant Feature Transform (SIFT) that, in conjunction with statistical discriminators such as the variance and the standard deviation, fits the extracted data and selects the closest pixels that make up the edges of the dorsal fin of the blue whale. In this way, we ensure the elimination of the most common external factors that could affect the quality of the image, thus avoiding the elimination of relevant sections of the dorsal fin. The blue whale photoidentification method presented in this work has been developed at the Instituto Politécnico Nacional on the coast of Baja California Sur. The results shown have been validated qualitatively and quantitatively in terms of sensitivity, specificity and accuracy on the Jetson Tegra TK1 mobile platform. The presented solution balances the results obtained with the computational cost of the execution of the algorithm, and yields a portable system that could be beneficial for field studies.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Obtain the image to be classified. The image is obtained from the database or acquired in the field. CICIMAR-IPN researchers .",
+    "This stage is divided into two substages, which are described below i)ROI selection: by means of a graphical interface, the initial point is indicated, mainly in the area of the dorsal fin according to the criteria proposed in reference. ROIs of different dorsal fins for classification of the blue whale ii) Extraction of the dorsal fin from the image background Dorsal fin of the blue whale: a) Contour of the segmented ROI, b) Non-segmented ROI",
+    "Extraction of main characteristics: From the result obtained in step 2, SIFT is implemented on the contour of the dorsal fin. Figure shows a block diagram of the considerations made in the extraction of the main characteristics of the processed images obtained in step 2. Block diagram of sample imaging training",
+    "We divide this stage into different subsets of steps to improve the analysis performance of all the images that are contained in the dorsal fin image database.",
+    "A group of images is randomly selected from each class for the proposed training according to the classification made by the CICIMAR-IPN researchers . We worked according to these classes, which are right falcate, left falcate, right hook, left hook, right triangular and left triangular, and selected 20 images from each class for training.",
+    "For the training system, the weights are added to the descriptors of each class in the training samples as shown. where z is the value of the contrast change of the dorsal fin contour image, N is the number of samples taken by each class, and j corresponds to each of the classes used for classification.",
+    "For each class, the number of matching points between the sample image (original sample after ROI selection) and the samples used in the training must be obtained. The number of intersections is calculated with the norm of the Euclidean distance between two samples and the ordinate with the minimum distance between them. where class number is the number of total classes to classify, N is the number of training samples, x and y are the coordinates of the vector at the current training position, L (j, x, y, σ) is the position of the value in the vector of the image in different scales, | | L2 and is the norm of the vector L2. A graphical interpretation of the method : Distance between the characteristics points obtained"
+  ],
+  "authors": [
+    "Rosa I Ramos-Arredondo",
+    "Blanca E",
+    "Diane Gendron",
+    "J. Francisco Gallegos-Funes",
+    "Dante Mújica-Vargas",
+    "J.B. Rosas-Fernández"
+  ],
+  "creator": "Rosa I Ramos-Arredondo",
+  "published_on": 1602605162,
+  "created_on": 1586831873,
+  "keywords": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": 49417,
+  "title": "Downloading Viral Metagenome Data",
+  "uri": "downloading-viral-metagenome-data-buhhnt36",
+  "doi": "dx.doi.org/10.17504/protocols.io.buhhnt36",
+  "description": "{\"blocks\":[{\"key\":\"2a8re\",\"text\":\"Downloading reads from the Ocean Sampling Day (2014) using fastq-dump, a tool from the SRA toolkit implemented in Cyverse.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":27,\"length\":25},{\"key\":1,\"offset\":114,\"length\":7}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"647A9508A67311EBB6890A58A9FEAC02\",\"url\":\"https://github.com/MicroB3-IS/osd-analysis\"}},\"1\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"647A953FA67311EBB6890A58A9FEAC02\",\"url\":\"cyverse.org\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"6ifnl\",\"text\":\"Follow along and learn how to process a viral metagenome!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"8fb3q\",\"text\":\"To run this protocol, users must first register for Cyverse account. All data (both inputs and outputs) are available within Cyverse's data store at /iplant/home/shared/iVirus/ExampleData/\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":39,\"length\":8}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"727D3724A67311EBB6890A58A9FEAC02\",\"url\":\"https://user.iplantcollaborative.org/register\"}}}}",
+  "warning": "{\"blocks\":[{\"key\":\"5nnc0\",\"text\":\"None\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"13ish\",\"text\":\"To run this protocol, users must first register for Cyverse account. All data (both inputs and outputs) are available within Cyverse's data store at /iplant/home/shared/iVirus/ExampleData/\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":39,\"length\":8}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"EA177FDCA67611EBB6890A58A9FEAC02\",\"url\":\"https://user.iplantcollaborative.org/register\"}}}}",
+  "steps": [
+    "Open FASTQ-dump",
+    "Specify the SRA accession",
+    "This is the very first step in downloading reads from Ocean Sampling Day (2014) . If you navigate through their wiki and other documentation, you can find the SRA associated with this dataset: ERR771003. There are a lot of ways to download this data and get it on CyVerse. The following are a few ways: Download the data from SRA manually and then use Cyberduck , follow CyVerse&#39;s Cyberduck instructions . Download the data from SRA manually and then upload via iCommands . For this, we&#39;ll use the FASTQ-dump tool available from the SRA, which is also available on CyVerse.",
+    "Launch Analysis Run the job!",
+    "After the job finishes, you&#39;ll have a directory with two important files, ERR771003_1.fastq and ERR771003_2.fastq. You can use these files directly in the next step, or compress them if you want to save disk space."
+  ],
+  "authors": [
+    "Benjamin Bolduc"
+  ],
+  "creator": "Benjamin Bolduc",
+  "published_on": 1619431847,
+  "created_on": 1619429988,
+  "keywords": []
+}

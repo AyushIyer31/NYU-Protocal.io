@@ -1,0 +1,35 @@
+{
+  "id": 230231,
+  "title": "Co-floatation assay of VPS13C with SUVs",
+  "uri": "co-floatation-assay-of-vps13c-with-suvs-hc3xb2ypp",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g7n9nqlwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"63d61\",\"text\":\"VPS13C is a ER-lysosome contact site protein that is thought to transport lipids between the two organellar membranes and important for lysosomal membrane damage repair. We employed structure-function analysis of purified VPS13C and uncovered novel regulatory mechanisms. This protocol details the floatation assay to characterize VPS13C's binding to small unilamellar vesicles (SUVs), where we discovered VPS13C's binding to membrane depends on both its ATG2_C region and the interaction between the VAB domain and Rab7 on the membrane.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"d512i\",\"text\":\"Proteins and liposomes are stored in 4°C for no more than a week.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"6mtp2\",\"text\":\"POPC (Cat. #850457)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9dutu\",\"text\":\"POPE (Cat. #850757)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5vafi\",\"text\":\"DGS-NTA (Ni) (Cat. #790404)\\nLissamine Rhodamine PE (Rhod-PE; Cat. #810150)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6bkol\",\"text\":\"OptiPrep (Cat. #D1556, Sigma Aldrich)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Mix 16:0-18:1 PC (POPC) (format: Chloroform) Avanti Polar Lipids Catalog #850457C , 16:0-18:1 PE Avanti Polar Lipids, Inc. Catalog #850757 , 18:1 DGS-NTA(Ni) (format: Chloroform) Avanti Polar Lipids Catalog #790404C , and Rhod-PE Avanti Polar Lipids, Inc. Catalog #810150 at 84.8:10:5:0.2 mol%.",
+    "Extrude the liposomes 31 times through a 200 nm polycarbonate filter using the Avanti Mini-Extruder to generate SUVs.",
+    "Subject the suspension to five freeze–thaw cycles.",
+    "Incubate the suspension at 37 °C for 01:00:00 , mixing gently every 00:20:00 .",
+    "Rehydrate the dried lipid film in buffer D (200 mM NaCl, 25 mM HEPES, pH 7.5, 1 mM TCEP) to a final lipid concentration of 10 millimolar (mM) .",
+    "Dry the lipid mixture under a gentle nitrogen stream and desiccate under vacuum overnight.",
+    "In a 100 μL reaction, mix 1–5 μg purified full-length VPS13C or VPS13C-ΔATG2C with 1 mM SUVs.",
+    "Analyze a 10 μL input sample and 30% of the top fraction by SDS-PAGE on 3–8% Tris-acetate precast gels.",
+    "Collect 100 μL from the top fraction containing floated SUVs.",
+    "Centrifuge at 193,911 × g for 01:00:00 in an SW-55 Ti rotor 18 °C .",
+    "Transfer the sample to a 0.8 mL ultracentrifuge tube (Cat. #344090, Beckman), then overlay with 300 μL of 20% OptiPrep and 100 μL reconstitution buffer.",
+    "For the flotation assay, mix 90 μL of the reaction with an equal volume of 60% OptiPrep (Cat. #D1556, Sigma Aldrich) to generate a 30% layer.",
+    "Add equal mass of Rab7A(Q67L/T22N)-6xHis or 6xHis-ATG7 as a negative control, together with 1 mM GTP and 2 mM Mg 2+ , and incubate at room temperature for 00:20:00 .",
+    "Quantify band intensities in ImageJ and calculate floated protein as the normalized top fraction divided by the input, shown as a percentage."
+  ],
+  "authors": [
+    "Dazhi Li",
+    "Karin Reinisch"
+  ],
+  "creator": "Dazhi Li",
+  "published_on": 1780434158,
+  "created_on": 1760910513,
+  "keywords": []
+}

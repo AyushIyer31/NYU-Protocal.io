@@ -1,0 +1,40 @@
+{
+  "id": 85856,
+  "title": "Ligand docking using Patchdock for Biochemistry I",
+  "uri": "ligand-docking-using-patchdock-for-biochemistry-i-cx38xqrw",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"an3v8\",\"text\":\"A protocol for JMU students to dock ligands to proteins using Patchdock\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"9ure6\",\"text\":\"Have PDB file of protein and ligand\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"5rvh9\",\"text\":\"molecule visualization program\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dl8lu\",\"text\":\"a ligand file in .pdb format\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9j81\",\"text\":\"a receptor/protein file in .pdb format\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2lfec\",\"text\":\"internet connection\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Navigate to Patchdock",
+    "In Receptor molecule : Provide your PDB file as a RCSB code OR upload a .PDB file The receptor molecule is your protein/biomolecule and is generally the larger of the two molecules.",
+    "In Ligand molecule : Provide your PDB file as a RCSB code OR upload a .PDB file. If you do not have the ligand file, you can use the SMILES string and the SMILES to 3D server to make the PDB file.",
+    "Under Advanced Options: You can specify a binding site if you have one identified from Uniprot, COACH, BLAST or some other source.",
+    "The binding site location is provided as a .txt file with the following format: 88 L 89 L 90 L 91 L 92 L 93 L 95 H 96 H 101 H 102 H The number indicates the amino acid number, the letter indicates the molecule name in the receptor PDB file (usually A). Note: If the binding site file is not accepted, remove the letters and try again.",
+    "Record your submission settings and add new rows as needed. %s %s",
+    "Under Clustering RMSD : Set to 1.5 for protein-small molecule binding, 4 for protein-protein or protein-DNA docking.",
+    "Press Submit Form and wait 24 to 72 hours.",
+    "Provide your email address.",
+    "Open the results email to go to the table of solutions. This table contains several important pieces of information or files. Solution No: Number of the solution Score: Geometric shape complementarity score. The more steric clashes the lower the score. The solutions are sorted according to this score. Area: Approximate interface area of the complex. ACE: Atomic contact energy or the energy requried to transfer the molecule from water to protein site PDB file of the complex: The predicted complex structure in PDB format. For more about the score see: Duhovny D, Nussinov R, Wolfson HJ. Efficient Unbound Docking of Rigid Molecules. In Gusfield et al., Ed. Proceedings of the 2&#39;nd Workshop on Algorithms in Bioinformatics(WABI) Rome, Italy, Lecture Notes in Computer Science 2452, pp. 185-200, Springer Verlag, 2002 For more about the ACE/Atomic contact energy see: Zhang C, Vasmatzis G, Cornette JL, DeLisi C. Determination of atomic desolvation energies from the structures of crystallized proteins. J Mol Biol. 267(3):707-26, 1997",
+    "Record the values for the top 5 hits. Add rows as needed. You can also download the entire solutions table using a link below the table. %s %s",
+    "Below the table is an option to download the top X hits. Change the number to be between 5 to 10 and obtain the file.",
+    "Name the file as proteinname_ligandname_patchdock.zip Replace proteinname with the receptor name, the ligandname with the ligand name. Upload the file to OSF and provide the link to this file as note on this step.",
+    "Extract the .zip file.",
+    "Open all of the hits in a single window of a molecule visualization protein. YASARA will be used in this instance however MOL* and other software can be used.",
+    "All 10 docking results shown with proteins as ribbon with a transparent surface and docked ligands as spheres colored by element.",
+    "In the example results in 12.1 most of the solutions cluster in the same area suggesting good complementarity in this region. If not specified before, the list of amino acids in this region can be used to specify a receptor site and the docking repeated to refine the placement.",
+    "YASARA users only! With all the solutions loaded, press the space bar to bring up the command window and type the commands shown below. The # indicates explanations that are not typed in the window. # Remove all objects except 1 RemoveObj 1 # Color protein grey ColorRes protein, grey # Select amino acids less than 3 angstroms from the ligand &lt;-- you need to know # ligand name. Click on the ligand and look at res name at top right SelectRes protein with distance &lt;3 from ligandname # Show, color, and label all amino acids interacting with ligand ShowRes selected ColorRes selected, element LabelRes selected, Format = &#34;RESNAME RESNUM&#34;, Height = 1.0, Color = Black, X = 0, Y = 0, Z = 0 Remember to replace the ligand name in the SelectRes command with the name of your ligand in YASARA.",
+    "An example result from the commands in Step 14.",
+    "Analyze the amino acids that interact with the ligands and tecord the interacting amino acids using a table with the format below. If desired add tables or rows to the table below to keep results in this protocol. A B C D 1 Amino Acid name (Glu, Asp, etc.) Amino acid number Type of weak interaction Interacting group in the ligand 2 3 4 5 6"
+  ],
+  "authors": [
+    "Chris Berndsen"
+  ],
+  "creator": "Chris Berndsen",
+  "published_on": 1690985413,
+  "created_on": 1690984397,
+  "keywords": []
+}

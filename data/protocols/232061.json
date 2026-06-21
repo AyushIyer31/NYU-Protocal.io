@@ -1,0 +1,36 @@
+{
+  "id": 232061,
+  "title": "Toward Experimentation-as-a-Service in 5G/6G: The Plaza6G Prototype for AI-Assisted Trials",
+  "uri": "toward-experimentation-as-a-service-in-5g-6g-the-p-heu5b3ey7",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gpm6pjgzp/v1",
+  "description": "{\"blocks\":[{\"key\":\"ds5ha\",\"text\":\"This protocol outlines a reproducible experiment that was evaluated using the Plaza6G testbed framework. The experiment involves comparing the performance of three simulated open-source 5G core networks: Open5GS, Free5GC, and OpenAirInterface. These networks are deployed as virtualised network templates through Plaza6G’s Experimentation-as-a-Service platform. Each simulated template is configured with the virtual machines (VMs) required to support a basic 5G core network, including a Core VM, a gNB VM and a User Equipment (UE) VM. The experiment uses the open-source tool iPerf3 to measure throughput under TCP and UDP conditions, considering uplink and downlink communications. Apart from the minimum number of VMs, a Data Network Node (DNN) VM has been provided to act as the iPerf3 server while the UE is the iPerf3 client. The procedure outlines every step, from selecting templates and launching virtual environments, to retrieving assigned 5G IP addresses and executing iPerf3 commands for different configurations. This experimental workflow enables the comparative analysis of virtualised 5G systems, supports automated network experimentation, CI/CD integration, and reproducible performance evaluation laying the groundwork for 6G-oriented research and open wireless testbed federation.\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "First of all, in Plaza6G official web site you need to select one of our 5G templates including: Open5GS ( https://open5gs.org/open5gs/docs/guide/01-quickstart ), Free5GC ( https://free5gc.org/guide/#free5gc-installation-guide ) and OpenAirInterface ( https://gitlab.eurecom.fr/oai/cn5g/oai-cn5g-fed/-/blob/master/docs/DEPLOY_SA5G_BASIC_DEPLOYMENT.md ). Note: Our simulated templates include the default configuration for each project. Select 5G simulated templates Set up the 5G template",
+    "Once the 5G environment has been successfully set, you can access to the UE and DNN machines Open the terminal in UE and DNN VMs.",
+    "The iperf test uses the linux package &#34;iperf3&#34;. An iperf test allows you to determine the bandwidth (Mbps/Gbps), latency (ms), jitter (for UDP tests), Percentage of packet loss (for UDP tests), among others. The DNN will be the iperf server, while UE will be the iperf client. Configuration set up: A B C D E 1 Open5G Project UE_5G_IP_address DNN_IP_address Window Time (s) Max Theoretical Bandwidth (Mbps) 2 Oepn5GS 10.45.0.2 192.168.140.5 120 400 3 Free5GC 10.70.0.1 192.168.141.4 120 250 4 OAI 12.1.1.100 192.168.142.3 120 300 The experiment has been repeated for the 3 5G projects.",
+    "Download iperf3 in both machines: Install iperf3 sudo apt updatesudo apt install iperf3 -y Installs iperf3 in ubuntu OS Ubuntu 22.04",
+    "Set up the iperf server (DNN): Iperf3 server iperf3 -s Launches iperf3 in server mode with default port",
+    "Verify the 5G ip address in UE 5G IP address ip -4 addr show uesimtun0 | awk /inet / {print $2} | cut -d/ -f1 Retrieves the IP address assigned by the 5G core (SMF) to the UE. Ubuntu 22.04",
+    "Launch the iperf in client (UE) mode attached to the 5G interfaz Launch iperf client TCP UL iperf3 -c -B -t Launches iperf client: TCP, UpLink, directed to DNN server, attached to the 5G IP address. Ubuntu 22.04 Launch iperf client TCP DL iperf3 -c -B -t -R Launches iperf client: TCP, DownLink, directed to DNN server, attached to the 5G IP address. Ubuntu 22.04 Launch iperf client UDP UL iperf3 -c -B -u -t -b Mbps Launches iperf client: UDP, UpLink, directed to DNN server, attached to the 5G IP address. Ubuntu 22.04 Launch iperf client UDP DL iperf3 -c -B -t -b Mbps -R Launches iperf client: UDP, DownLink, directed to DNN server, attached to the 5G IP address. Ubuntu 22.04",
+    "This section briefs depicts the expected outputs for iperf tests using a 10 s. window.",
+    "Examples: Open5GS, TCP, Up Link, 10 seconds, client. Open5GS, TCP, Up Link, 10 seconds, server. Open5GS, TCP, Down Link, 10 seconds, client. Open5GS, TCP, Down Link, 10 seconds, server. Open5GS, UDP, Up Link, 10 seconds, client. Open5GS, UDP, Up Link, 10 seconds, server. Open5GS, UDP, Down Link, 10 seconds, client. Open5GS, UDP, Down Link, 10 seconds, server."
+  ],
+  "authors": [
+    "Barrachina-Muñoz ergio",
+    "Carrascosa-Zamacois Marc",
+    "Bleda Horacio",
+    "Riaz Umair",
+    "Maqsood Yaisr",
+    "Calle-Heredia Xavier",
+    "Mangues Josep",
+    "Payaró iquel"
+  ],
+  "creator": "extreme.cttc.sas",
+  "published_on": 1762945316,
+  "created_on": 1762853650,
+  "keywords": []
+}

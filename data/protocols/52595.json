@@ -1,0 +1,26 @@
+{
+  "id": 52595,
+  "title": "WIPI2d construct cloning",
+  "uri": "wipi2d-construct-cloning-bxktpkwn",
+  "doi": "dx.doi.org/10.17504/protocols.io.bxktpkwn",
+  "description": "{\"blocks\":[{\"key\":\"d56af\",\"text\":\"WIPI2d cloning \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Amplify gene using PCR with Q5 polymerase. Design primers to be cut with ClaI and XmaI. For mutants, design overlapping primers in opposing direction as if using around the horn. Use these to perform 2-step PCR, verifying each step via gel.",
+    "Gel extract correct size band and measure concentration",
+    "Digest insert with ClaI and XmaI in Cutsmart buffer at 37C for 1 hour. Digest pCAG vector with same enzymes. After 1 hour add CIAP to vector digest and incubate at 37 for another 30 minutes",
+    "Gel extract vector digest. PCR clean up insert digest. Measure concentrations of both.",
+    "Mix vector and insert at 1:4 molar ratio for ligation. Add 1uL T4 ligase and 2uL T4 ligase buffer in 20uL reaction. Incubate at RT for 10 minutes.",
+    "Transform 4uL of reaction into DH5alpha cells. Plate everything. Sequence colonies to ensure correct mutation."
+  ],
+  "authors": [
+    "lmstrong"
+  ],
+  "creator": "lmstrong",
+  "published_on": 1629660758,
+  "created_on": 1629660149,
+  "keywords": []
+}

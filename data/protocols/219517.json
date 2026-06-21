@@ -1,0 +1,27 @@
+{
+  "id": 219517,
+  "title": "Drug transporter (SLC) inhibition panel assay using drug substrates",
+  "uri": "drug-transporter-slc-inhibition-panel-assay-using-g2k5bycy7",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl41o7rlo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"4m12\",\"text\":\"SLC (Solute Carrier) transporters play a crucial role in drug absorption, distribution, and elimination. Some drugs can act as inhibitors of these transporters, potentially affecting the absorption or clearance of other co-administered drugs, leading to drug interactions. This can result in altered drug concentrations and potentially affect efficacy or increase toxicity. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1bk4f\",\"text\":\"Transporters used were OATP1B1, OATP1B3, OAT1, OAT3, OCT2, MATE1, and MATE2-K\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8dsc9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4cqjl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"3nkou\",\"text\":\"Always wear appropriate PPE for this protocol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cescn\",\"text\":\"Refer to Material Safety Data Sheets for additional safety and handling information.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"amrts\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "SLC (Solute Carrier) transporters play a crucial role in drug absorption, distribution, and elimination. Some drugs can act as inhibitors of these transporters, potentially affecting the absorption or clearance of other co-administered drugs, leading to drug interactions. This can result in altered drug concentrations and potentially affect efficacy or increase toxicity. SLC Transporters: These are integral membrane proteins that facilitate the transport of various substances, including drugs, across cell membranes. They are involved in both the uptake (influx) and efflux (outflux) of drugs, influencing their absorption, distribution, and excretion. Drug-Drug Interactions at the Transporter Level: Some drugs can bind to SLC transporters and act as inhibitors, preventing the transport of other drugs or co-administered substrates. This can lead to increased drug concentrations in the blood, potentially leading to increased toxicity or decreased efficacy. Clinical Significance: Understanding these drug-transporter interactions is crucial for optimizing drug therapy and minimizing adverse drug reactions. Clinical guidelines often recommend testing for potential OATP1B1, OATP1B3, OAT1, OAT3, OCT2, MATE1, and MATE2-K inhibition due to their role in drug interactions.",
+    "The peak ratio of the peak area of the substrate vs internal control is used as the concentration of the substrate inside the cells. The percent of inhibition is calculated by, % 𝑜𝑓 𝑖𝑛ℎ𝑖𝑏𝑖𝑡𝑖𝑜𝑛 = 100 − [ ( 𝐶𝑜𝑚𝑝𝑜𝑢𝑛𝑑 − 𝐵𝑎𝑐𝑘𝑔𝑟𝑜𝑢𝑛𝑑) /( 𝑇1 − 𝐵𝑎𝑐𝑘𝑔𝑟𝑜𝑢𝑛𝑑 ) × 100 ] Where Compound is the individual peak ratio obtained in the presence of the Test Compound. Background is the peak ratio obtained in the presence of the highest test concentration of reference inhibitor, representing the lowest transporter activity. T1 is the mean peak ratio obtained in the presence of the substrate without the test or reference compound, representing the highest transporter activity. The IC50 value is determined by non-linear regression analysis of the concentration-response curve using the Hill equation.",
+    "Cells are seeded in a 24-well culture plate typically at 150,000 cells/well and are used on days 2 or 3 post-seeding.",
+    "Subsequently substrate is added to the plate followed by 20-min incubation at 37 °C.",
+    "The reference inhibitor is tested in each assay at multiple concentrations to obtain an IC50 value. The peak areas of the transporter specific substrate and an internal control are measured by HPLCMS/MS from each sample. %s %s",
+    "The plate is then washed with cold assay buffer followed by quantification of the transporter specific substrates in the cells using HPLCMS/MS.",
+    "On the day of assay, the test compound is prepared in assay buffer (HBSS-HEPES, pH 7.4), added to the cell plate, and pre-incubated at 37 °C for 30 min."
+  ],
+  "authors": [
+    "Nick Lynch"
+  ],
+  "creator": "Nick Lynch",
+  "published_on": 1754228465,
+  "created_on": 1749022675,
+  "keywords": []
+}

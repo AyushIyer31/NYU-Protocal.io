@@ -1,0 +1,22 @@
+{
+  "id": 92337,
+  "title": "FASTQ alignment, gene counts, and differential expression analysis and functional annotation of DEGs",
+  "uri": "fastq-alignment-gene-counts-and-differential-expre-c6erzbd6",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gp3mzdvzp/v1",
+  "description": "{\"blocks\":[{\"key\":\"9qo7o\",\"text\":\"FASTQ alignment, gene counts, and differential expression analysis and functional annotation of DEGs\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "FASTQ files were aligned against the mouse genome (GRCm39) and GRCm39.107 annotation using STAR to generate BAM files. Gene counts were generated from BAM files using Rsamtools (Bioconductor package) and the summarizeOverlaps function with the GenomicAlignments package v1.36.0. Differential gene expression analysis was performed with DESeq2 package v1.40.2 using the “DESeq” function with default settings which fits a generalized linear model for each gene. Subsequent Wald test P-values are adjusted for multiple comparisons using the Benjamini–Hochberg method (adjusted P-value). Pair-wise changes in gene expression levels between groups were used to identify DEGs. DEGs will be defined as an absolute log2 fold change ≥0.5 and an adjusted P-value ≤0.05.",
+    "Gene Ontology (GO) enrichment analysis was performed with goseq to identify enrichment in gene ontology categories and KEGG pathways. For DEGs, up- and down-regulated gene lists were analyzed separately. Over-represented P-values were adjusted for multiple comparisons using theBenjamini–Hochberg (BH) adjustments for controlling false-discovery rates. An enrichment score was calculated using an observed-over-expected ratio for each gene list. GO-BP categories and KEGG pathways were plotted if their BH adjusted FDR reached &gt;= 0.05 and the number of DEGs within each category/pathway was greater than 4. To eliminate larger, broad GO-BP parent categories, categories with more than 250 total genes were not plotted. To eliminate redundancy, pathways with significant overlap regarding genes and semantics were merged."
+  ],
+  "authors": [
+    "Rebecca Wallings"
+  ],
+  "creator": "rebeccawallings",
+  "published_on": 1702633214,
+  "created_on": 1702572073,
+  "keywords": []
+}

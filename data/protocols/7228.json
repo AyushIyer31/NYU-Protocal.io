@@ -1,0 +1,29 @@
+{
+  "id": 7228,
+  "title": "Transcriptome annotation",
+  "uri": "transcriptome-annotation-ja4cigw",
+  "doi": "dx.doi.org/10.17504/protocols.io.ja4cigw",
+  "description": "{\"blocks\":[{\"key\":\"2m825\",\"text\":\"This protocol is to annotate the tetraploid coffee long read transcriptome. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"6o6cu\",\"text\":\"Warning\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":7}],\"entityRanges\":[],\"data\":[]},{\"key\":\"22piv\",\"text\":\"BLAST output format should be type 5 (.xml).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"d2kvc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"305u7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Download the plant geninfo identifier (GI) list from NCBI Protein Entrez.",
+    "Download the NCBI non-redentant proteins from NCBI FTP site. Then retrieve the plant proteins with the plant GI list. Use of high performance computers (HPC).",
+    "E-value set at 1e-10. Use of HPC.",
+    "Download the NCBI non-redentant proteins from NCBI FTP site. Use of HPC.",
+    "Submit sequences without hit to nr-plant to BLASTn to nt database Use of HPC.",
+    "E-value set at 1e-20. Use of HPC.",
+    "The output of BLAST result was filtered with query coverage, cumulative identity and sequence length. High, medium and low quality were clustered. Use of HPC. The script to filter the result is available at: https://github.com/chengbing0404/BLAST5_result_handle",
+    "InterProScan, mapping, annotation, annex, GO-Slim and KEGG pathway was loaded. BLAST2GO software was used.",
+    "Sequences without hit to all the above databases were processed further to search the non-coding RNAs. Run Rfam from BLAST2GO"
+  ],
+  "authors": [
+    "Bing Cheng; Agnelo Furtado; Robert Henry"
+  ],
+  "creator": "Robert J Henry",
+  "published_on": 1502409545,
+  "created_on": 1502195651,
+  "keywords": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": 96163,
+  "title": "Transforming pJC8 into HB101",
+  "uri": "transforming-pjc8-into-hb101-c96bz9an",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj3kkwlk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"4t64r\",\"text\":\"Taken from Mix and Go E. coli Transformation Kit (see attachment). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":11,\"length\":19}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5pkq9\",\"text\":\"Transforming E. coli HB101 with pJC8-empty cosmid to use as a control strain.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":13,\"length\":8}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"6uu15\",\"text\":\"Mix and Go E. coli Transformation Kit (Zymo Research, T3001/T3002)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":19}],\"entityRanges\":[],\"data\":{}},{\"key\":\"bavir\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1seic\",\"text\":\"Contents of SOB medium:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"135ke\",\"text\":\"20g Bacto Tryptone\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cbn2r\",\"text\":\"5g Yeast Extract\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8jfbe\",\"text\":\"0.58g Sodium Chloride\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1n1am\",\"text\":\"0.19g Potassium Chloride\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3q1k8\",\"text\":\"1L sterile H20\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"enu3v\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare tetracycline LB agar plates Making tetracycline LB agar plates by Bonnie Evans",
+    "Warm plates in 37 °C incubator Chilled plates will decrease Mix &amp; Go cell transformation efficiency.",
+    "Prepare SOC medium",
+    "Get SOB medium and 20 % glucose from media kitchen",
+    "Add 2 mL 20 % glucose to 100 ml SOB medium",
+    "Isolate pJC8 cosmid from E. coli DH5α Qiagen QIAprep Spin Miniprep for cosmids from metagenomic library by Bonnie Evans",
+    "Thaw 100 uL aliquot of E. coli HB101 Mix &amp; Go competent cells on ice",
+    "Add 5 uL pJC8 cosmid",
+    "Mix by tapping the tube and shaking downwards once",
+    "Place on ice for 5 minutes",
+    "Add 400 uL SOC medium",
+    "Incubate at 37 °C with shaking at 200 rpm for 1 hour An outgrowth in SOC medium is required for efficient transformation when selecting with tetracycline.",
+    "Pipette all (505 uL) of the transformation mix onto a tetracycline LB agar plate and spread using plating beads.",
+    "Dry under laminar flow for a few minutes",
+    "Incubate plate at 37 °C overnight If the transformation is successful, you will have individual colonies."
+  ],
+  "authors": [
+    "Bonnie Evans"
+  ],
+  "creator": "Bonnie Evans",
+  "published_on": 1709659555,
+  "created_on": 1709638147,
+  "keywords": []
+}

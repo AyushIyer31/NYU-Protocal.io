@@ -1,0 +1,25 @@
+{
+  "id": 2272,
+  "title": "Running PCPipe (protein clustering) in iPlant",
+  "uri": "Running-PCPipe-protein-clustering-in-iPlant-ef8bbrw",
+  "doi": "dx.doi.org/10.17504/protocols.io.ef8bbrw",
+  "description": "{\"blocks\":[{\"key\":\"ar8l5\",\"text\":\"Hurwitz, Bonnie L., and Matthew B. Sullivan. \\\"The Pacific Ocean Virome (POV): a marine viral metagenomic dataset and associated protein clusters for quantitative viral ecology.\\\" PLoS One 8.2 (2013): e57355.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":178,\"length\":8}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"m82p\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"fp8pb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"8vgq7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Login to the iPlant (CyVerse) Discover Environment ( https://de.iplantcollaborative.org/de/ ).",
+    "Select the &#34;Apps&#34; button on the left, then look under &#34;Public Apps -&gt; Experimental -&gt; iMicrobe -&gt; PCPipe.&#34;",
+    "Choose your directory containing the FASTA files. Choose your &#39;cluster_file&#39; to use for the first round of clustering. Optionally indicate an output directory. Click the &#39;Start Analysis&#39; button, and wait for email notification that your analysis has completed.",
+    "Look in the output directory for a file containing newly clustered sequences."
+  ],
+  "authors": [
+    "Bonnie Hurwitz",
+    " Ken Youens-Clark"
+  ],
+  "creator": "Bonnie L Hurwitz",
+  "published_on": 1453408702,
+  "created_on": 1453408478,
+  "keywords": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": 5648,
+  "title": "Enzymatic Spectrophotometry Assay to Measure D-, L-, and Total Lactate in Canine Feces",
+  "uri": "enzymatic-spectrophotometry-assay-to-measure-d-l-a-hrqb55w",
+  "doi": "dx.doi.org/10.17504/protocols.io.hrqb55w",
+  "description": "{\"blocks\":[{\"key\":\"f6en5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"40rfi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"eh2qa\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"3t723\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"VrR8C\",\"text\":\"STEP MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"x95rk\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"pOYEy\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"ruDcF\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":4266,\"guid\":\"4106CFD0341F11EE9D4302C0B41BC903\",\"name\":\"Triethanolamine\",\"mol_weight\":149.19,\"sku\":\"T58300\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":17,\"name\":\"Merck MilliporeSigma (Sigma-Aldrich)\",\"link\":\"http://sigmaaldrich.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":4267,\"guid\":\"4106D022341F11EE9D4302C0B41BC903\",\"name\":\"Trichloroacetic acid solution\",\"mol_weight\":163.39,\"sku\":\"T0699\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":17,\"name\":\"Merck MilliporeSigma (Sigma-Aldrich)\",\"link\":\"http://sigmaaldrich.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":125952,\"guid\":\"419FF6E0341F11EE9D4302C0B41BC903\",\"name\":\"D-/L-Lactic acid kit\",\"mol_weight\":0,\"sku\":\"11112821035\",\"url\":\"https://food.r-biopharm.com/products/d-lactic-acidl-lactic-acid/\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Aliquot 120-130 mg feces into 1.5 mL microcentrifuge tube. Store at -80°C until deproteinization.",
+    "Make 0.1 M triethanolamine buffer (pH 9.15) using scale for accuracy (to the 0.01 mg). Then add 750 μL buffer to each aliquot. Vortex and place in refrigerator (-4°C) for three hours, vortexing every hour to ensure thorough mixing. Triethanolamine Merck MilliporeSigma (Sigma-Aldrich) Catalog #T58300",
+    "Centrifuge samples at 13,000 x g for 5 minutes at 4°C. Carefully pipette 495 μL of supernatant into a new 1.5 mL microcentrifuge tube. Store supernates at -80°C overnight to provide ample time for next processing steps. From empirical experience, the extra freeze-thaw cycles favorably increased protein pellet size while not affecting lactate concentration.",
+    "Thaw samples at room temperature for 20-40 minutes. Once thawed, add 10 μL of 6 M trichloroacetic acid to each sample. Vortex for 10 seconds and place immediately in ice bath for 20 minutes. Performed this step and following steps (up to dilution with TEA) under a chemical fume hood with proper personal protective equipment. http://www.sigmaaldrich.com/MSDS/MSDS/DisplayMSDSPage.do?country=US&amp;language=en&amp;productNumber=T0699&amp;brand=SIGMA&amp;PageToGoToURL=http%3A%2F%2Fwww.sigmaaldrich.com%2Fcatalog%2Fproduct%2Fsigma%2Ft0699%3Flang%3Den Trichloroacetic acid solution Merck MilliporeSigma (Sigma-Aldrich) Catalog #T0699",
+    "Vortex samples again upon removing from ice bath, and centrifuge at 4,500 x g for 20 minutes at 4°C. After centrifugation, a protein pellet was noted in the bottom of each tube. Next, remove 400 μL of supernatant and place in a clean 2 mL microcentrifuge tube.",
+    "Add 1600 μL 0.1 M triethanolamine buffer (pH 9.15) to each sample to achieve a neutral or alkaline pH (between 7 and 10). These deproteinized fecal extracts were either used immediately for lactate analysis or stored in -80°C for later use.",
+    "Make standard dilutions with ultra-pure water and D- or L-lactate provided in enzymatic kit (D-/L-Lactate Enzymatic Kit, R-Biopharm Inc.) %s %s D-/L-Lactic acid kit Contributed by users Catalog #11112821035",
+    "Make master mix (MM) solution on an as needed basis depending on the number of samples. In a 15 or 50 mL tube, mix together (100 x n) µL solution 1, (20 x n) µL solution 2, and (2 x n) µL solution 3, with n equal to the total number of blanks, standards, and unknown samples. %s %s",
+    "Pipette blanks, standards, and samples in duplicate onto 96-well plate and place on plate shaker for one minute. Shake at low enough speed that a plate cover is not needed. Then incubate the plate in plate incubator at 25°C for 15 minutes. %s %s",
+    "After incubation, take the first absorbance reading (A1) at 340 nm wavelength. Then immediately add 2 µL D-LDH to each well, shake plate for one minute, and then incubate at 25°C for 30 minutes.",
+    "Take second absorbance reading (A2) at 340 nm wavelength. Add 2 µL L-LDH to each well, shake for one minute, and incubate at 25°C for 30 minutes.",
+    "Use path length adjustment settings in plate reader software to account for using a protocol originally designed for use with 1 cm diameter cuvettes. Set standards curve to quadratic and adjust lactate concentrations by subtracting the absorbance difference of the blank. Gen5 2.07 Windows BioTek® Instruments, Inc.",
+    "Take third absorbance reading at 340 nm wavelength.",
+    "Calculate standard curve and lactate concentrations using software above. Then, if D- or L-lactate concentrations are below their respective lower limits of quantification, adjust concentrations to their respective cutoff values. Ours were 0.002 g/L for D-lactate and 0.0007 g/L for L-lactate. Also adjust final lactate concentrations based on starting weight of feces, dilution factor, and dry matter content."
+  ],
+  "authors": [
+    "Amanda Blake",
+    "Jonathan Lidbury",
+    "Joerg Steiner",
+    "Jan Suchodolski"
+  ],
+  "creator": "Amanda Blake",
+  "published_on": 1572624363,
+  "created_on": 1493155116,
+  "keywords": []
+}

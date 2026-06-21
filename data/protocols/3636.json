@@ -1,0 +1,26 @@
+{
+  "id": 3636,
+  "title": "Github ssh keys",
+  "uri": "github-ssh-keys-fsubnew",
+  "doi": "dx.doi.org/10.17504/protocols.io.fsubnew",
+  "description": "{\"blocks\":[{\"key\":\"8gdn1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"1r1au\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"3po56\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"bq7k1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Login to your Github account and choose the &#34;Settings&#34; under your menu. a",
+    "Select the SSH Keys section on the left (1) and then click on &#34;New SSH key&#34; in the upper-right (2). a",
+    "Copy the public key (~/.ssh/id_rsa.pub) from your system (laptop, HPC, etc.) and paste it into the &#34;Key&#34; and give the key a title like &#34;laptop&#34; or &#34;UA HPC,&#34; then click on the big green &#34;Add SSH Key&#34; button. a",
+    "Clone your project via SSH. a Click on the little button next to the &#34;github&#34; address. This will copy the location into your clipboard. Then go to the system where you wan to clone and do: $ git clone &lt;paste&gt;",
+    "If you had previously checked out your using HTTPS, you can edit the &#34;.git/config&#34; in your checkout directory to change the &#34;https&#34; to &#34;ssh&#34;: a",
+    "You should now be able to push/pull from your repo without having to type your Github password."
+  ],
+  "authors": [
+    "Ken Youens-Clark"
+  ],
+  "creator": "Ken Youens-Clark",
+  "published_on": 1505240394,
+  "created_on": 1473363345,
+  "keywords": []
+}

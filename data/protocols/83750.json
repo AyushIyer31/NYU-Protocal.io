@@ -1,0 +1,36 @@
+{
+  "id": 83750,
+  "title": "FIVTools Overview",
+  "uri": "fivtools-overview-cv2ew8be",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzxn62gx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"347av\",\"text\":\"Starting point for using FIVTools for image-based functional tools\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Within WashU, the program is accessed from the RIS archive below. Alternatively, this open-source program can be downloaded from the gitlab repo and run directly. \\\\storage1.ris.wustl.edu\\wbuchser\\Active\\dB\\Software\\FIVE_Tools\\",
+    "FIVTools is software designed for use with image-based screens and tools from Washington University&#39;s FIVE@MGI and collaborators. FIVTools Windows 10+ https://gitlab.com/buchserlab/fivetools William Buchser",
+    "Select the folder where the image FOLDERS are housed. Do not put the subfolder with the actual TIF images (but the parent to that folder). Paste the name in the box that says &#34;InCell Images dB&#34;. Once you have used that folder name, it will remain in the dropdown for quick selection.",
+    "Open the program. (It may ask to install an update which you can).",
+    "Below, you can choose whether the images come from the InCell or ImageXPress microscopes (select the InCell path), or if they are &#34;Non-Standard&#34; (anything else).",
+    "Press &#34; Refresh &#34; if you have never loaded this folder before, or just &#34; Load dB &#34; to bring up its saved contents. Refresh will scan through the files and make a new index of them, it will show the list of PlateIDs in the middle region of the window.",
+    "Use the &#34;PlateID Contains&#34; to limit the list of scans in the folder to a smaller subset. You can type any part of the PlateID name, and a space acts like an &#34;or&#34; operator. (See above where we want to find experiments 860 and 870 but not the ones inbetween). &#34;Today&#34; checkbox: filter by images that were taken within the last 24 hours &#34;Rafts&#34; checkbox: filter to plates that are raft-based &#34;Analyses&#34; checkbox: only show plateIDs that also have InCarta analyses",
+    "Click &#34;Open Any Folder&#34; Select an image, then press OK.",
+    "Tell FIVTools some of the information about these images The functionality of this is currently limited, images from InCell or ImageXpress are the primary way to use this software",
+    "Selecting a PlateID Once a PlateID is selected, its InCarta analyses (if any), will show up on the right most panel. You can also right click to get a context menu with several options.",
+    "Copy XDCE Info to Clipboard Click this to copy information about the scan into the clipboard, it is recommended to paste this into a spreadsheet like Excel or Google Docs",
+    "Open Folder in Explorer, Delete Scan Opens the folder with the images in your OS for further exploration of the files or Deletes the folder",
+    "Reconstruct as 5x Advanced, will link another protocol here",
+    "Calibrate and Annotate Equivalent to double-clicking a PlateID or clicking the &#34;CalCheck&#34; button &lt;Link CalCheck protocol here&gt;",
+    "Remainder of the items are specific to other protocols, and will be discussed there",
+    "Compare two PlateIDs Selecting 2 plate IDs (or more) will make the &#34;Comp&#34; button on the bottom middle show up. Clicking this will compare all of the Acquisition protocol metrics. This is critical if these PlateIDs are part of the same experiment to ensure that no parameters are changed. If they are, normalization may be required."
+  ],
+  "authors": [
+    "William J Buchser"
+  ],
+  "creator": "William J Buchser",
+  "published_on": 1687362042,
+  "created_on": 1687299033,
+  "keywords": []
+}

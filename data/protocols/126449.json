@@ -1,0 +1,29 @@
+{
+  "id": 126449,
+  "title": "Standardized Sequencing Guidance for Microbiological Control Strains ",
+  "uri": "standardized-sequencing-guidance-for-microbiologic-d7qr9mv6",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn9pd6l5d/v2",
+  "description": "{\"blocks\":[{\"key\":\"8n7n2\",\"text\":\"This protocol provides guidance for sequencing laboratory control strains and submitting those data to NCBI. The BioProject established for this project aims to capture the genetic/genomic diversity of control strains being used in public health laboratories. This resource will support a new quality control step for identifying rare but significant false positives in labs processing foodborne pathogen isolates, helping to reduce food waste and unnecessary product disposal.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ck19s\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eu67e\",\"text\":\"V2: updated metadata guidance in Table 1. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "The Standardized Sequencing Guidance for Control Strains protocol provides an SOP for generating high-quality whole-genome sequence data from bacterial control strains used in public health, academic, and industry laboratories sequencing bacterial isolates of foodborne pathogens. By systematically sequencing and depositing these control strain genomes into a publicly accessible reference database at the National Center for Biotechnology Information (NCBI), this initiative aims to document the genomic diversity of strains used across laboratories globally. The resulting dataset will support new quality control measures to detect and mitigate rare but significant false-positive sample test results that could lead to unwarranted public health actions, such as food recalls or product disposal. This protocol establishes a standardized approach to control strain sequencing, ensuring consistency across laboratories. The resulting database will serve both public health agencies as as well as industry laboratories conducting food testing.",
+    "Metadata guidance: Use the latest version of the One Health Enteric BioSample package and adhere to the guidelines in the following table: Populate the CORE package attributes only. %s %s",
+    "Laboratory Methods: Control strain isolates should be processed according to standard GenomeTrakr or PulseNet laboratory procedures. GenomeTrakr WGS workflow protocol collection provided here: GenomeTrakr WGS Protocol Collection and Workflow for MiSeq by Tina Pfefer",
+    "Quality Assessment Check that WGS sequence data meet the GenomeTrakr thresholds listed in the following protocol. Laboratories are welcome to use MicroRunQC or any other equivelent QC pipeline: Quality control assessment for microbial genomes: GalaxyTrakr MicroRunQC workflow by Ruth Timme",
+    "NCBI submission: NCBI submission protocol for microbial pathogen surveillance by Ruth Timme BioProject: For labs collaborating with GenomeTrakr on this project, please use PRJNA981165 (FYI: these sequences will not appear in Pathogen Detection) .",
+    "Scope for control strains: All actively used microbiological laboratory control strains are eligible for inclusion in this project. See Attached Table for a list of control strains used in FDA laboratories: FDA controls strains.xlsx"
+  ],
+  "authors": [
+    "Ruth Timme",
+    "Tina Pfefer",
+    "Candace Hope Bias",
+    "Maria Balkey"
+  ],
+  "creator": "Ruth Timme",
+  "published_on": 1744213558,
+  "created_on": 1744210761,
+  "keywords": []
+}

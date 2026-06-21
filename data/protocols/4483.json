@@ -1,0 +1,35 @@
+{
+  "id": 4483,
+  "title": "SNPs calling of Apostichopus japonicus color-variants genome",
+  "uri": "snps-calling-of-apostichopus-japonicus-color-varia-gmbbu2n",
+  "doi": "dx.doi.org/10.17504/protocols.io.gmbbu2n",
+  "description": "{\"blocks\":[{\"key\":\"f9t1b\",\"text\":\"SNPs calling protocol for analysis the genetic polymorphism among natural color variants. This protocol accompanies the following GigaScience publication:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":130,\"length\":11}],\"entityRanges\":[],\"data\":[]},{\"key\":\"57q57\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"enbn6\",\"text\":\"Jihoon Jo, et al.  (2016): Draft genome of the sea cucumber Apostichopus japonicus and genetic polymorphism among color variants. GigaScience...\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":130,\"length\":11}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"628f3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"at1e0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"fec1j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Realign the reads from assembled genome using BWA.",
+    "Group the aligned reads, mark and remove duplicate reads using Picard.",
+    "Realign the reads with indels using GATK RealignerTargetCreator and IndelRealigner.",
+    "Call SNPs and indels from the resulting sequence in step 1-3 using GATK Haplotypecaller.",
+    "Measure nucleotide diversity in your genome using VCFtools with sliding window analysis (bin 10kb, step 1kb)."
+  ],
+  "authors": [
+    "Jihoon Jo",
+    " Jooseong Oh",
+    " Hyun Gwan Lee",
+    " Hyun Hee Hong",
+    " Sung Gwon Lee",
+    " Seongmin Cheon",
+    " Elizabeth MA Kern",
+    " Soyeong Jin",
+    " Sung Jin Cho",
+    " Joong Ki Park",
+    " Chungoo Park"
+  ],
+  "creator": "Gigascience Database",
+  "published_on": 1480603668,
+  "created_on": 1480545771,
+  "keywords": []
+}

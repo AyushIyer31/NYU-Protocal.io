@@ -1,0 +1,22 @@
+{
+  "id": 50578,
+  "title": "encrypting your data",
+  "uri": "encrypting-your-data-bvmsn46e",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"t96u\",\"text\":\"How to encrypt a folder or a file using the command line on a linux/mac system !\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "In order to encrypt your data, you&#39;ll need to zip your folder or file, creating a password protected archive. People without the password will still be able to look at the names of the files in the archive, but won&#39;t be able to read the file. Using the command line, navigate to the folder you want to encrypt and run: zip -re output_archive.zip my_folder with &#34;output_archive&#34; the name of the encrypted archive you want to create and &#34;my_folder&#34; the name of the folder (or file) you want to encrypt. In the prompt, a password will be aseked twice. Make sure to use a strong password (8-10 characters with special characters)",
+    "To decrypt the archive, use the unzip command as usual. A prompt will ask you the password before unzipping the files. unzip output_archive.zip"
+  ],
+  "authors": [
+    "Alise J Ponsero"
+  ],
+  "creator": "Alise J Ponsero",
+  "published_on": 1623165795,
+  "created_on": 1623165169,
+  "keywords": []
+}

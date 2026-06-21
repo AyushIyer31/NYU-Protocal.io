@@ -1,0 +1,24 @@
+{
+  "id": 59514,
+  "title": "DEMoNS protocol for measurement and analysis of eye movements",
+  "uri": "demons-protocol-for-measurement-and-analysis-of-ey-b6c2raye",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"2u924\",\"text\":\"For questions, send an email to info.demonsprotocol@gmail.com or vanrijn@amsterdamumc.nl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2f16u\",\"text\":\"The complete protocol and instructions on measurement and analysis of eye movements with the DEMoNS protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"95b01\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"35gpc\",\"text\":\"Quantitative saccadic testing is a non-invasive method of evaluating the neural networks involved in the control of eye movements. The DeMONS protocol is a standardized and reproducible protocol for infrared oculography measurements of eye movements and analysis, which can be applied for various diseases in a multicenter setting. In the accompanying manuscript in PLoS ONE, descriptive and reproducibility values are listed of all parameters.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"e2jtt\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3odmf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"8u8jh\",\"text\":\"For instructions on analysis with the accompanying matlabfiles, read the instructions and standard operation procedures (SOPs)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"c9lk6\",\"text\":\"For questions, send an email to info.demonsprotocol@gmail.com or vanrijn@amsterdamumc.nl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"984b0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"fjgt7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Measurement and analysis protocol, and instructions on analysis and import files in Matlab. The Eyelink measurement is created in the Experiment software of SR research and can therfore only be used with an Eyelink (SR Research) eyetracker. These zipped files contain the folders of the developed experiment. For other eyetracker, the experiment has to be created as indicated in the measurement protocol .pdf file Summary analyis with DEMoNS protocol 16032022.pdf DEMoNS measurement protocol 08juli2015.pdf DEMoNS analysis protocol 08022022.pdf SOP_importfiles_eyetracking_08022022.pdf SOP_Matlab_analysis_08022022.pdf SOP_Visualization_eyemovementdata_08022022.pdf",
+    "Matlabfiles needed for automated import of data in Matlab (see document &#39;SOP_importfiles_eyetracking_08022022&#39;) Import_split_data_fromtextfile.m importfiletotal.m",
+    "Matlabfiles needed for automated analysis of eye moveement data in Matlab (see document &#39;SOP_Matlab_analysis_08022022&#39;) Anti_data_variablenames.m Anti_main.m Anti_output.m Anti_parameters.m Anti_write_data.m ASerrordeg.m Detect_saccades.m diffangle.m direction.m Distancedeg.m Double_data_variablenames.m Double_main.m Double_output.m Double_parameters.m Double_write_data.m DSerrordeg.m Express_data_variablenames.m Express_main.m Express_output.m Express_parameters.m Express_write_data.m eye_signal.m Filter_gaze.m Fix_data_variablenames.m Fix_main.m Fix_output.m Fix_parameters.m Fix_stability.m Fix_write_data.m Main_script_autoanalysis.m pixtodegX.m pixtodegY.m Prosac_data_variablenames.m Prosac_main.m Prosac_output.m Prosac_parameters.m Prosac_write_data.m Remove_artefacts.m Repeat_data_variablenames.m Repeat_main.m Repeat_output.m Repeat_parameters.m Repeat_write_data.m xlsappend.m",
+    "Matlabfiles needed for visualization of eye moveement data in Matlab (see document &#39;SOP_Visualization_eyemovementdata_08022022&#39;) BCEA68calc.m meanangle.m Plot_doubleXY.m plot_error_ellipse.m Plot_filt_all.m Plot_filt_all_deg.m Plot_graph_all.m Plot_vergence.m Plot_XY.m prodmomcorr.m scatterfit.m XY_radcircle.m"
+  ],
+  "authors": [
+    "Jenny Nij Bijvank"
+  ],
+  "creator": "Jenny Nij Bijvank",
+  "published_on": 1647431262,
+  "created_on": 1647431149,
+  "keywords": []
+}

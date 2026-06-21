@@ -1,0 +1,23 @@
+{
+  "id": 13264,
+  "title": "Second-derivative UV Spectroscopy",
+  "uri": "second-derivative-uv-spectroscopy-q7qdzmw",
+  "doi": "dx.doi.org/10.17504/protocols.io.q7qdzmw",
+  "description": "{\"blocks\":[{\"key\":\"1lvt3\",\"text\":\"Second-derivative spectroscopy has proven to be an effective analytical tool because of its ability to resolve overlapping bands in the normal spectrum.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"eml9h\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3ritu\",\"text\":\"This protocol is used to determine the degree of tyrosine exposure in proteins using second-derivative UV spectroscopy.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"77e2f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"bg0im\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"38t3f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Determine protein concentrations either using absorption coefficients (Abs @ 280 nm) or using BCA, Bradford, etc. colorimetric assays. Proteins should be used at concentration where A 280 ~ 0.2",
+    "Scan from 270-300 nm",
+    "Copy UV scan data from instrument into a Prism file with columns for wavelength and absorbance values. Analyze>XY Analysis> Smooth, Differentiate, or Integrate Curve>Create Second Derivative of Curve>smooth or not? Prism Analyze &gt;XY Analysis &gt; Smooth, Differentiate, or Integrate Curve &gt;Create Second Derivative of Curve &gt;smooth or not? Prism"
+  ],
+  "authors": [
+    "Moriah Beck"
+  ],
+  "creator": "Moriah Beck",
+  "published_on": 1553178096,
+  "created_on": 1529616711,
+  "keywords": []
+}

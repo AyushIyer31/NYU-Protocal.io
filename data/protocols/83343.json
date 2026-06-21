@@ -1,0 +1,27 @@
+{
+  "id": 83343,
+  "title": "Taxon Group Protists: Barcoding ",
+  "uri": "taxon-group-protists-barcoding-cvmpw45n",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l22m1pl1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"3ugse\",\"text\":\"This protocol describes the DNA barcoding process for protists in the Darwin Tree of Life project.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"60v30\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Extract genomic DNA from protists cultures using e.g. the DNeasy Plant or MagAttract kit (Qiagen) or equivalent and follow the manufacturer’s protocol/instructions. Depending on the taxa, DNA extraction can require an alternative pre-protocol approach, e.g. including a Plant DNAzol Reagent (Gibco BRL Life Technologies) or bead-beating step (10 ms for 3 min at 1 min intervals with 5 min rest on ice to avoid overheating). DNeasy (Qiagen; 69204) MagAttract (Qiagen; 67563)",
+    "Amplify appropriate marker gene(s) (e.g. V4 or V9 region of 18S rRNA gene) using primer pairs as appropriate for group/taxa using a Taq Master Mix (Qiagen), GoTaq polymerase (Promega), or equivalent with a final volume of 50 µL (see example below). For each marker region two primer combinations are available. For difficult templates, it might help to use high fidelity DNA Polymerase (e.g. Deep Vent DNA polymerase, New England BioLabs) to the mix. Taq Master Mix (Qiagen; 201445) GoTaq polymerase (Promega; M5001) Deep Vent DNA polymerase (New England BioLabs; M0258S) Example for PCR master mix.",
+    "25-30 cyclesSpin down the tubes and run the PCR using an appropriately programmed thermal cycler. Primer information",
+    "Check the PCR products by gel electrophoresis against positive and negative controls and a 1kb ladder. Load 4 µl PCR product with 1 µl loading dye on a 1% (w/v) agarose gel (SYBRSafe). Run the gel at 110 mV for ~40 minutes. SYBRSafe (Invitrogen; S33102)",
+    "If one product is visible purify the PCR product using the QIAquick PCR purificastion kit or equivalent commercial PCR purification kits. If multiple products are visible on the gel, purify the PCR product using the QiaQick gel extraction kit (Qiagen) or equivalent commercial gel purification kits If no products are visible, repeat PCR using the second primer pair for the marker gene region and follow the steps. QIAquick PCR purification kit (Qiagen; 28104) QiaQick gel extraction kit (Qiagen; 28704)",
+    "Determine the DNA concentration using a Qubit dsDNA HS Assay Kit (or equivalent). Ensure the sample is 10-20 ng µl -1 for submission for sequencing. Qubit dsDNA HS Assay Kit (Invitrogen; Q32851)",
+    "Submit for Sanger sequencing, do not clone the products prior to sequencing, sequence directly and inspect the chromatogram for evidence of dual amplicon sampling that would be indicative of contamination. For submitting to Eurofins (TubeSeq), mix 15ul of your purified PCR product (minimum concentration of 5ng/ul) and add 2ul of your primer (10uM). Ensure that the total volume is not more or less than 17 ul."
+  ],
+  "authors": [
+    "Estelle Kilias"
+  ],
+  "creator": "Estelle Kilias",
+  "published_on": 1699976096,
+  "created_on": 1686660635,
+  "keywords": []
+}

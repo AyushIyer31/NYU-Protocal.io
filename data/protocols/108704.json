@@ -1,0 +1,38 @@
+{
+  "id": 108704,
+  "title": "cryo-Plasma Focused Ion Beam (PFIB) milling",
+  "uri": "cryo-plasma-focused-ion-beam-pfib-milling-dnd85a9w",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvw1rozlmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"fb391\",\"text\":\"This protocol describes a method for cryo-Plasma Focused Ion Beam (cryo-PlasmaFIB) milling of lamellae in HeLa cells using the Thermo Fisher Arctis system and WebUI software. The result is the production of homogeneous, thin, and low-curtaining lamellae that are suitable for cryo-electron tomography (cryo-ET) analysis. This approach offers a reliable technique for preparing high-quality cryo-ET samples from HeLa cells with little user interaction.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8sivp\",\"text\":\"This study used the infrastructure of the Department of Cell and Virus Structure at the MPI of Biochemistry.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9fqnu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "For preparing the lamella , autogrids were mounted into a Arctis cryo-Plasma Focused Ion Beam (cryo-PFIB) instrument (Thermo Fisher Scientific) equipped with a robotic sample delivery device (termed “Autoloader”), compustage, NiCol-scanning electron microscope (SEM) column and Tomahawk-focussed ion beam (FIB) column. All steps were performed at &lt; −180 °C throughout milling.",
+    "Load a grid for alignment. This may be the first biological sample. Switch on the beams and set the grid to a rough eucentric height. Drive to the edge of the grid and align the focus and stigmators for the SEM and FIB beams in the xT-UI. Xenon ions are used for all the steps described. Only a well-aligned ion beam will produce thin and low-curtain lamellae. Currently we do a spot alignment about once a month. If you wish to perform such alignments, it may be helpful to load an additional sacrificial grid into the cassette.",
+    "Load the autogrid clipped TEM grids into a cassette holder and into the autoloader. For milling plunge frozen samples with the Arctis PFIB, the autogrid does not need to have a cut-out because the compustage gripper obstructs the view before the autogrid.",
+    "Make sure that the column and autoloader dewar in the PFIB are sufficiently filled. If in doubt, press Refill Now in the XT-Ui for the autoloader and chamber compartment manually.",
+    "During the Select Target action, select lamella sites for single cells residing close to the center of a grid square. Make sure the correct lamella template is selected for every lamella.",
+    "If possible, store the finished lamellae in the autoloader until the TEM session. In our case, contamination rates around 0.4 nm/h allow storage for several days.",
+    "In the Define lamella milling position action, set the default lamella parameters to 120 nm thick and 15 μm wide, the stress relief cuts to 0.5 μm wide and their distance from the lamella to 10 μm. In order to obtain stable lamellae containing a large amount of vitreous cytoplasm and thus as many lysosomes/multi-lamellar vesicles as possible, select the milling positions that target the outermost parts of the cells as far away from the nucleus as possible, while still maintaining cellular support on the distal side of the lamella. Adjust the width of the lamella and the height of the pattern accordingly.",
+    "Optional: Drive to the center of the grid, switch to the lowest SEM magnification, and take a high-resolution overview image.",
+    "For the &#34;Lamella milling&#34; protocol, we used a Xenon beam @ 30kV, an electron beam @ 2kV and a resolution of 1536x1024 for all steps. Electron centering Target-HFW: 200 μm Dwell time: 1 μs Auto Contrast Brightness (ACB) / Autofocus (AF): Enabled Tilting electron to ion Tilting-HFW: 250 μm Minimum/Maximum Tilt Step: 4° / 11° Ion-ACB: Enabled Ion-AF: Enabled Precise Coincidence: Enabled Milling angle search Target milling angle: 18° Minimum/Maximum Tilt Step: 1° / 5° Milling Angle HFW: 160 μm If the target milling angle is not set correctly, the algorithm may fail at different angles for different positions. This will result in different lamella pretilts and may cause problems with TEM acquisition and reconstruction. We suggest a value between 18° and 20°. Final Image Parameters: Target-HFW: 80 μm Dwell time: 1 μs ACB/AF: Disabled Rough Milling Milling Current: 1 nA Pattern Type: Rectangle Depth correction: 0.42 Reference HFW Oversize: 30 μm Reference Dwell Time: 1 μs ACB/AF: Disabled The initial reference parameters stay the same for all milling steps. Relief Cuts Milling Milling Current: 1 nA Pattern Type: Cleaning Cross Section Depth Correction: 0.375 Reference ACB: True Medium Milling Milling Current: 300 pA Pattern Type: Cleaning Cross Section Depth Correction: 0.7 Overlap Factor: 2 Remove Height Percentage: 0.5 Fine Milling Milling Current: 100 pA Pattern Type: Cleaning Cross Section Depth Correction: 0.88 Overlap Factor: 2 Remove Height Percentage: 0.7 Polishing Milling Current: 30 pA Pattern Type: Cleaning Cross Section Depth Correction: 0.8 Overlap Factor: 2 Remove Height Percentage: 1",
+    "For the &#34;Electron Tileset with automatic deposition&#34; protocol, we used 70 nA @ 12 kV for 120 s sputter parameters from the standard platinum target and 90 s @ 28° for the trimethyl(methylcyclopentadienyl)-platinum(IV) GIS deposition. The protective layer consists of sputter-GIS-sputter. The tileset was acquired with a horizontal field width (HFW) of 500 μm, a HFW overlap of 20 μm, a resolution of 1536x1024 and a dwell time of 5 μs.",
+    "Go to the Arctis WebUI software in a browser and create a new project. Take an inventory and set up the protocols you want for each grid position. Our protocols are described below. However, these have been created using an older version of the WebUI and may not be fully transferable to the newer version.",
+    "Cool down an autoloader capsule, unload the cassette and transfer it directly into the transmission microscope.",
+    "Run an inventory from the xT-UI. Set the grid names to the corresponding positions in the cassette."
+  ],
+  "authors": [
+    "Johann Brenner",
+    "Felix Kraus",
+    "Anna Bieber",
+    "Cristina Capitanio",
+    "Jürgen litzko",
+    "Florian Wilfling"
+  ],
+  "creator": "Felix Kraus",
+  "published_on": 1729193136,
+  "created_on": 1727766895,
+  "keywords": []
+}

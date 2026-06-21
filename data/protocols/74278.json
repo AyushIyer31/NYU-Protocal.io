@@ -1,0 +1,29 @@
+{
+  "id": 74278,
+  "title": "Nf1 loxP site verification",
+  "uri": "nf1-loxp-site-verification-ckseuwbe",
+  "doi": "dx.doi.org/10.17504/protocols.io.261ge3ryyl47/v1",
+  "description": "{\"blocks\":[{\"key\":\"9ukhg\",\"text\":\"We have found that our Nf1 flox mouse colonies contained mice that had lost one of the two loxP sites inserted into the Nf1 gene (Parada laboratory, PMID:11297510, JAX# 017639), leading to loss of DNA recombination upon Cre-recombinase activity and loss of previously identified skeletal phenotypes. This is likely to occur in other Nf1 flox mouse colonies.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":23,\"length\":3},{\"style\":\"italic\",\"offset\":120,\"length\":3},{\"style\":\"italic\",\"offset\":129,\"length\":47},{\"style\":\"italic\",\"offset\":333,\"length\":3},{\"style\":\"sup\",\"offset\":27,\"length\":4},{\"style\":\"sup\",\"offset\":337,\"length\":4}],\"entityRanges\":[{\"key\":0,\"offset\":164,\"length\":11}],\"data\":{}},{\"key\":\"9cser\",\"text\":\"We describe here a strategy to verify conservation of the loxP sites within the Nf1 allele and to sequence the loxP1 and loxP2 sites for detecting potential mutations or deletions. This may be done if the expression of Nf1 (qPCR) is not reduced in CreTg/+; Nf1 flox/flox tissues of interest.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":80,\"length\":3},{\"style\":\"italic\",\"offset\":219,\"length\":3},{\"style\":\"italic\",\"offset\":257,\"length\":4},{\"style\":\"sup\",\"offset\":251,\"length\":4},{\"style\":\"sup\",\"offset\":261,\"length\":10}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"B78DAE456C6511EFBAD90A58A9FEAC02\",\"url\":\"https://www.jax.org/strain/017639\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"614kh\",\"text\":\"Heater (DNA denaturation/Lysis)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d3esl\",\"text\":\"PCR machine \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5021p\",\"text\":\"Agarose gel electrophoresis system (DNA separation)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ciou0\",\"text\":\"Gel documentation system (DNA amplicon visualization and picture)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1pb8p\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Specific Primers Forward and Reverse Contributed by users Primers for the Nf1 loxP1 site: P1: 5’-CTTCAGACTGATTGTTGTACCTGA-3’ P4: 5’-TGATTCCCACTTTGTGGTTCTAAG-3’ P3: 5&#39;-ACCTCTCTAGCCTCAGGAATGA-3&#39; Primers for the Nf1 loxP2 site: LoxP2For: 5’-GCTTTAGCTTCTGGAAATGTGAA-3’ LoxP2Rev: 5’-GCGGGCTAAAATGGCAATGTCG-3’",
+    "gDNA preparation from NaOH lysate Cut a 2-3mm piece of tail/ear Add it to 300uL of lysis solution (NaOH 50mM) Heat for 15 min at 95C max rpm, Room temperature, 15 minutes, use max speed of your bench centrifuge",
+    "PCR reaction",
+    "Expected PCR results: a) LoxP1 site: 480bp: WT (+) allele (P1-P3) in Nf1 +/+ or Nf1 f/+ mice, or loss of the loxP1 site in Nf1 f/f mice 350bp: Presence of loxP1 (P1-P4) in Nf1 f/f mice b) LoxP2 site: 699 bp: WT (+) allele in Nf1 +/+ or Nf1 f/+ mice, or loss of the loxP2 site in Nf1 f/f mice 829 bp: Presence of loxP2 in Nf1 f/f mice",
+    "go to step #1 PCR cycle program %s %s",
+    "From a working solution of 10uM, use 1 uL of each primer (200nM each in a total volume of 20uL) Reaction for loxP1: P1 + P2 + P3 Reaction for lopP2: LoxP2For + LoxP2Rev",
+    "Per reaction, mix 0.5uL of gDNA from the NaOH lysate (from step 2), 1 uL of each primer (from step 3.1), 10 uL GoTaq® Green Master Mix Promega Corparation Catalog #M7123 mix, and add water for a total volume of 20 uL",
+    "Run PCR reaction products on a 2% ethidium bromide agarose gel"
+  ],
+  "authors": [
+    "Greig Couasnay",
+    "Florent Elefteriou"
+  ],
+  "creator": "Florent Elefteriou",
+  "published_on": 1726762466,
+  "created_on": 1671555024,
+  "keywords": []
+}

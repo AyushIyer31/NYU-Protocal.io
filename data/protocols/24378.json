@@ -1,0 +1,23 @@
+{
+  "id": 24378,
+  "title": "slant_tilt_demo",
+  "uri": "slant-tilt-demo-322gqge",
+  "doi": "dx.doi.org/10.17504/protocols.io.322gqge",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Get the writing data from a digital tablet as attached. example.pkl",
+    "Download the data and the command in script, save them in the same folder slant_tilt_demo, step 2 # coding: utf-8# In[ ]:import pandas as pdimport numpy as npfrom sklearn import linear_model#from sklearn.metrics import mean_squared_error, r2_score, explained_variance_scoreSTROKE = 'STROKE'CHARACTER = 'CHARACTER'# In[ ]:#Judge whether a stroke is vertial or horizonaldef vert(chardf): regrv = linear_model.LinearRegression() regrh = linear_model.LinearRegression() newdf = pd.DataFrame(columns =['SAMPLE','CHARACTER','STROKE','POINT','X','Y','Z','Vertical']) for i in range(chardf[STROKE].max()+1): chardfX = chardf.loc[chardf.STROKE == i].loc[:,['X']] chardfY = chardf.loc[chardf.STROKE == i].loc[:,['Y']] regrv.fit(chardfX, chardfY) regrh.fit(chardfY, chardfX) slope = regrv.coef_[0] slope_r = regrh.coef_[0] #vertical stroke if (slope_r > -0.5773) and (slope_r -0.8098): vertdf = chardf.loc[chardf.STROKE == i].assign(Vertical = -1) newdf = newdf.append(vertdf) else: vertdf = chardf.loc[chardf.STROKE == i] newdf = newdf.append(vertdf) return newdf# In[ ]:#read filedf = pd.read_pickle('example.pkl')# In[ ]:#calculate linear regression resultdf = df.assign(Vertical = 0)charlist = df.loc[:,'CHARACTER'].drop_duplicates().tolist()wholedf = pd.DataFrame()for i in charlist: wholedf =wholedf.append(vert(df.loc[(df.CHARACTER == i)]))# In[ ]:raw = wholedf[['CHARACTER', 'STROKE', 'POINT','X', 'Y', 'Vertical']]new = pd.DataFrame(columns = ['CHARACTER', 'STROKE', 'POINT','X', 'Y', 'Vertical'])new = new.append(raw.iloc[0])# In[ ]:#drop the points too close to each othercount = 0while count A demonstration for \"Measuring the tilt and slant of Chinese handwriting in primary school students: A computerized approach\" python 3.6",
+    "Run the command"
+  ],
+  "authors": [
+    "Monica Li"
+  ],
+  "creator": "Monica Li",
+  "published_on": 1560266181,
+  "created_on": 1560265615,
+  "keywords": []
+}

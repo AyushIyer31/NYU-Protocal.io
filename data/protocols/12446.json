@@ -1,0 +1,28 @@
+{
+  "id": 12446,
+  "title": "ARDRA: amplified rDNA restriction analysis",
+  "uri": "ardra-amplified-rdna-restriction-analysis-qd6ds9e",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v96zzv3eq/v1",
+  "description": "{\"blocks\":[{\"key\":\"asv1i\",\"text\":\"ARDRA: amplified rDNA restriction analysis\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6hukf\",\"text\":\"\\n  1. Sklarz MY, Angel R, Gillor O, Soares MIM. Amplified rDNA Restriction Analysis (ARDRA) for Identification and Phylogenetic Placement of 16S-rDNA Clones. In: de Bruijn FJ, editor. Handbook of  Molecular Microbial Ecology I: Metagenomics and Complementary Approaches [Internet]. Hoboken, New Jersey: Wiley-Blackwell; 2011. p. 59–66. Available from: http://eu.wiley.com/WileyCDA/WileyTitle/productCd-0470644796,descCd-tableOfContents.html\\n\\n  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":352,\"length\":88}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"DA14F65572A711EFA95D0A58A9FEAC02\",\"url\":\"http://eu.wiley.com/WileyCDA/WileyTitle/productCd-0470644796,descCd-tableOfContents.html\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"c82ju\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"6uodo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"839ct\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "A direct colony PCR is best used for this purpose, reaction mix might vary according to the specific Taq polymerase used. This following mix yields a strong amplification so that only 12 µL reaction is required. The following mix was used with Hy Labs&#39; Taq polymerase. If different Taq is used, re-optimization might be required. %s %s DNA template is added by poking a colony with a sterile tip and mixing with the mixture (don&#39;t use wooden toothpicks as they will absorb the liquid).",
+    "3-4 µL are loaded on agarose gel (1%) to verify products which should leave 5-8 µL of PCR product (because of various losses to evaporation and pipette errors). In this way the restriction can be done in the same tube of the amplification thus saving time and materials. undetermined, PCR product load on gel",
+    "We use TaqI for the restriction though other enzymes could be use as well (see references). The same enzyme must be used throughout the scanning of the library for the purpose of creating a database. 5-10 µL of the PCR reaction (depending on amplification results) was mixed with 20U of enzyme and the appropriate amounts of buffer and water as described by the manufacturer. * Note that too much DNA per enzyme will result in incomplete digestion and an unresolvable pattern. undetermined, product from PCR reaction undetermined, restriction enzyme undetermined, restriction buffer undetermined, water",
+    "Tubes were incubated in a thermocycler overnight.",
+    "Gels are prepared with 3% agarose, we use low-melting (though this might not be necessary) in TBE 1X. Our gel frames are 25X15 and 10X15 cm respectively, for the large frame we use 250 mL TBE + 7.5 g of agarose and for the small frame we use 100 mL TBE + 3 g of agarose. Let to solidify for 30 min on the bench and 30 min at 4°C.",
+    "The small gel is run on 70V for 3 hours and the large one on 90V for 5 hours.",
+    "Following electrophoresis gels are post-stained for 20 min. in TBE 1X (the same buffer from the electrophoresis can be used) with 10 µL of EB (10 mg/mL) for each 100 mL of buffer and visualized under UV."
+  ],
+  "authors": [
+    "Eva Petrova",
+    "Roey Angel"
+  ],
+  "creator": "Eva Petrova",
+  "published_on": 1726386373,
+  "created_on": 1527155125,
+  "keywords": []
+}

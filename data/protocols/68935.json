@@ -1,0 +1,37 @@
+{
+  "id": 68935,
+  "title": "APOE Genotyping Using TaqMan + Data Processing ",
+  "uri": "apoe-genotyping-using-taqman-data-processing-cfjftkjn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ldzo68v5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"ebi2q\",\"text\":\"Protocol for APOE4 genotyping for SNPs rs7412 (C/T) and rs429358 (C/T)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Thaw DNA samples and APOE Controls at room temp, gently vortex and briefly centrifuge to collect the DNA solution into the bottom of the tube or well-plate..",
+    "While the samples thaw, label a 96 well PCR plate &#34;DNA Dilution&#34;",
+    "Dilute DNA in UP H2O (Sample and Control) to make 20 µL at 0.2 - 2.0 ng/µL, seal and briefly centrifuge to collect the DNA solution into the bottom of each well.",
+    "Thaw TaqMan assay components at room temperature, flick and swirl Master Mix, and gently vortex SNPs and centrifuge as needed to collect assay components into the bottom of their respective tubes.",
+    "While the assay components thaw, label two MicroAmp well plates with each SNP ID. rs7412 rs429358",
+    "Get two clean microcentrifuge tubes and add the appropriate volume of Master Mix to both: µL of Master Mix = (# samples) x 10 µL x 1.1",
+    "Add the appropriate volume of each SNP assay to its corresponding tube: µL of SNP assay = (# Reactions) X 1.1",
+    "Add 11 µL of the Reaction Mix to each well that will be used in its corresponding MicroAmp plate. Seal and briefy centrifuge to collect solution into the bottom of each well.",
+    "Transfer 9µL of each sample from the DNA dilution plate to each well of the MicroAmp plate to have a total volume of 20µL per well (9ul of sample + 11ul of Reaction Mix added in the previous step). Seal with MicroAmp Adhesion Film. vortex gently to mix. Centrifuge (300 g) briefly to collect the solution into the bottom of the well plate. Make sure no bubbles are present in the wells.",
+    "Place MicroAmp plate in the QuantStudio instrument and set up experiment as directed by the TaqMan SNP Genotyping Assays User Guide and the QuantStudio User Guide .",
+    "Export Excel file of &#34;Results&#34; for genotype determinations. Make sure to Check &#34;Well position&#34; ,&#34;Call&#34; Download the Allelic Discrimination Plot",
+    "Label each tube with one of the SNPs IDs.",
+    "Proceed To Step 8 If you&#39;ve confirmed that the QuantStudio Is available and ready.",
+    "Once the Experiment has finished check to see that your Allelic Discrimination plot looks resembles: This figure is found in the TaqMan® SNP Genotyping Assays USER GUIDE linked in the step above. The guide also has observed issues and its possible cause if your allelic distribution graph doesn&#39;t resemble Figure 1.",
+    "Create a plate map, taking into account your APOE controls and Negative Control. Controls: - 2/2 (DNA) - 2/3 (DNA) - 2/4 (DNA) - 3/3 (DNA) - 3/4 (DNA) - 4/4 (DNA) - Negative Control (NC) (UP H2O)",
+    "Using the calls made for rs7412 and rs429358 we can determine the APOE Genotype. Download the Excel File below and fill the &#34;Calls&#34; Sheet. Fill out your &#34;qPCR Sample Name&#34; and transfer the &#34;Call&#34; made from both the rs7412 and rs429358 &#34;Results&#34; excel files exported from the step above. It should determine the APOE Genotype based on the calls provided along with the Allelic Frequencies in your sample population. Add the Allelic Discrimination Plots APOE Calculator template 8_4_2022.xlsx",
+    "The calls from two SNPs, rs7412 (C/T) and rs429358 (C/T), determine each allele&#39;s APOE genotype. The combination of these SNPs, listed in the table below, defines the APOE status. %s %s"
+  ],
+  "authors": [
+    "Mario A Mosqueda"
+  ],
+  "creator": "Mario A Mosqueda",
+  "published_on": 1763758027,
+  "created_on": 1660949281,
+  "keywords": []
+}

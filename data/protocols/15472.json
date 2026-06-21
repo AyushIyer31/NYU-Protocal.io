@@ -1,0 +1,26 @@
+{
+  "id": 15472,
+  "title": "Graphlet-orbit Transitions",
+  "uri": "graphlet-orbit-transitions-tcqeivw",
+  "doi": "dx.doi.org/10.17504/protocols.io.tcqeivw",
+  "description": "{\"blocks\":[{\"key\":\"ejevg\",\"text\":\"Given a set of temporal networks, from different domains and with different sizes, how can we compare them? Can we identify evolutionary patterns that are both (i) characteristic and (ii) meaningful? We address these challenges by introducing a novel temporal and topological network fingerprint named Graphlet-orbit Transitions (GoT). We demonstrate that GoT provides very rich and interpretable network characterizations. Our work puts forward an extension of graphlets and uses the notion of orbits to encapsulate the roles of nodes in each subgraph. We build a transition matrix that keeps track of the temporal trajectory of nodes in terms of their orbits, therefore describing their evolution. We also introduce a metric (OTA) to compare two networks when considering these matrices.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9s3dq\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"eaoco\",\"text\":\"Our experiments show that networks representing similar systems have characteristic orbit transitions. GoT correctly groups synthetic networks pertaining to well-known graph models more accurately than competing static and dynamic state-of-the-art approaches by over 30%. Furthermore, our tests on real-world networks show that GoT produces highly interpretable results, which we use to provide insight into characteristic orbit transitions.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"8menc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"7atq1\",\"text\":\"A version of GoT with set of temporal networks is available at http://www.dcc.fc.up.pt/got-wave/download.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"q46l\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"fj0vp\",\"text\":\"GoT was written and C++ and compiled in Fedora 26 and Ubuntu 16 LTS.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"5bke3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Extract GoT.zip.",
+    "Enter the &#39;GoT&#39; repository and run &#39;make&#39;.",
+    "Run &#39;GoT/gtrieScanner -s 4 -m gtrie GoT/gtries/mygtrie -g &lt;YOUR_NET&gt;&#39;.",
+    "The GoTs of each node are shown one per line (e.g, na 1 0 0 0 10 ...)"
+  ],
+  "authors": [
+    "David Aparicio",
+    "Pedro Ribeiro",
+    "Fernando Silva"
+  ],
+  "creator": "David Aparicio",
+  "published_on": 1539965167,
+  "created_on": 1536420868,
+  "keywords": []
+}

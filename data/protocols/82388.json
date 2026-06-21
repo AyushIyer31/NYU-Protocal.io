@@ -1,0 +1,40 @@
+{
+  "id": 82388,
+  "title": "HEK3/LINC01509 Library Preparation",
+  "uri": "hek3-linc01509-library-preparation-cupuwvnw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5qpvorjxzv4o/v1",
+  "description": "{\"blocks\":[{\"key\":\"8p3aj\",\"text\":\"Library preparation for HEK3 recording site (LINC01509) using PCR and digestion.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"104bu\",\"text\":\"NGS primer F (\\\"CTGGCCTGGGTCAATCCTTG\\\")\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cjv4e\",\"text\":\"NGS primer R (\\\"CCCAGCCAAACTTGTCAACC\\\")\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"42iag\",\"text\":\"Q5 HiFi polymerase 2X master mix (NEB)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2qoip\",\"text\":\"BccI (NEB)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"873nh\",\"text\":\"LMW agarose\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dqkvf\",\"text\":\"SYBR Safe gel stain\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"71qt5\",\"text\":\"Generuler 1kb PLUS\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6g7s3\",\"text\":\"SPRI beads (Nucleomag)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Make up 1:50 Thermolabile Proteinase K (NEB) in Viagen (cell).",
+    "Resuspend cells in 25 µL of Viagen/Proteinase K. Quickly transfer cells into a PCR strip to avoid viscosity.",
+    "Perform lysis in a PCR machine: 37 °C 01:00:00 55 °C 00:30:00 On ice Store lysates at -20 °C in the pre-PCR freezer.",
+    "Make up a 100 µL PCR reaction per sample (Q5) using 10 µL of cell lysate.",
+    "Purify amplicons by 1X SPRI bead cleanup, eluting in 10 µL of water.",
+    "Digest zero-length recordings with 5 µL BccI in 50 uL volume: 37 °C 01:00:00 65 °C 00:20:00 On ice",
+    "Perform gel electrophoresis in 4% LMP agarose at 3 V/cm for 01:00:00 .",
+    "Using 1 µL of gel product, perform indexing PCR in 12 µL volume with Nextera primers .",
+    "Extract the region from 300 bp to 500 bp and elute in 12 µL of water. Store gel products at -20 °C in the post-PCR freezer.",
+    "Purify amplicons by 1X SPRI bead cleanup, eluting in 10 µL of water.",
+    "Take 1 µL of each indexed amplicon to D1000 Tapescreen. Recordings should be above 158 + 67 (adaptors) + 69 (indexes) = 294 bp .",
+    "98 °C 00:00:30",
+    "Pool indexed amplicons according to desired relative molarities for sequencing.",
+    "98 °C 00:00:05 68 °C 00:00:10 72 °C 00:00:20",
+    "72 °C 00:02:00",
+    "go to step #4.2",
+    "98 °C 00:00:30",
+    "98 °C 00:00:05 67 °C 00:00:10 72 °C 00:00:20",
+    "go to step #9.2",
+    "72 °C 00:02:00"
+  ],
+  "authors": [
+    "Mathew Chu"
+  ],
+  "creator": "Mathew Chu",
+  "published_on": 1695305055,
+  "created_on": 1684938378,
+  "keywords": []
+}

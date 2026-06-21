@@ -1,0 +1,30 @@
+{
+  "id": 54108,
+  "title": "Diffusion weighted MRI of Mouse Abdomen",
+  "uri": "diffusion-weighted-mri-of-mouse-abdomen-by34pyqw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygxp6jol8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"ae476\",\"text\":\"This SOP includes animal prep and scanner setting up for scout and radial k-space sampling of diffusion weighted MRI of mouse abdomen.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "This SOP includes a brief Diffusion weighted MRI protocol that consists of following major steps: 1. Animal Preparation and induction of general anesthesia 2. MRI calibration and acquisition of Radial diffusion weighted MRI 3. Animal recovery Animal Preparation Animal should be transferred from the home cage to anesthesia box connected to isoflurane.",
+    "MRI Scanner Calibration, Scout and T2W MRI Open ParaVision 6.0.1 for generating a new study. 1. Localizer initiation: 1. After generating a new study, a localizer can be selected from the scan programs and protocols drop down menu. For initiating a localizer, locate the appropriate protocol in the scanner interface/software. 2. Generally, a simple short T1-weighted image with a single slice in each orthogonal direction can provide enough spatial information to ensure that the animal is properly placed underneath the coil (Figure 3 (Panel (A)). 3. Prior to initiating the scan, a series of calibration/shimming is performed automatically by the scanner including the following steps: i. Wobble-tuning and matching of the RF coil. ii. Set the basic frequency iii. Perform shimming iv. Set the reference power 2. Selecting the first study protocol: i. Select the first study scan protocol from the protocol list. ii. Drag and drop the desired protocol into the instruction panel. ii. Select T2_Turbo with RARE technique custom named as T2_TurboRARE_tumorsize (FOV=30x30, Slice thickness=1.00 mm, no. of averages (NA)=8) to obtain the coronal images. iii. Click on apply to run the scan. iv. Duplicate the first scan and increase the number of slices to cover the entire tumor with (number of averages=12) in axial direction for calculating the tumor size. v. Click on apply to run the scan. iv. The third scan T2_Turbo with RARE technique custom named T2_TurboRARE_30ms_axial can be set using the images obtained from the first scan. A preset FOV, NA, Slice thickness, number of slices were used according to the protocol (Figure 3 (Panel (B)). vi. In this study under geometry the read offset and phase offset were kept as zero. vii.Turn on Autoshim then Mapshim and tick the automatic shim volume. viii. Click on apply to run the scan. v. Before running the third scan the Bo inhomogeneity map can be obtained.",
+    "Setting up Radial-Diffusion-weighted MRI i. To set up the Radial spin echo diffusion weighted scan select the custom named as RadSEDW_5bvalues sequence. ii. Copy the T2_Turbo with RARE technique in axial plane sequence parameter to RadSEDW_5bvalues sequence from the drop-down menu. iii. Check the geometry again and then click on apply to start the sequence.",
+    "Induction of general anesthesia i. Keep the animal under the isoflurane in an anesthesia box for sedation. ii. Animal should then be properly sedated for transferring it to the animal bed. iii. Anesthesia can be achieved via nose cone attached to the animal bed (Figure 1 Panel (A))",
+    "Place the mouse in with the vital signs monitoring: 1. Once the animal is properly sedated, secure the pneumatic pillow under the thorax of the animal to record proper breathing (Figure 1 Panel (C)). 2. Insert the temperature rectal probe into the animal rectal using a lubricant for monitoring the temperature (Figure 1 Panel (C)). 3. Tape the animal properly to the animal bed to avoid any movement during the scanning ((Figure 1 Panel (C)). 4. Position the animal bed in the coil in a position which exposes the tumor-bearing region in the center of the magnet by measuring from the center line printed on the top of the coil (Figure 1 Panel (D)). 5. Now place the coil in center of the magnet using a non-metal yardstick. 6. Connect the temperature probe and respiration probe to the ERT module. Note: Remember to always continue monitoring the animal vitals when it is on the scanner (Figure 2).",
+    "Remove and Recover Mice i. Upon completing the scan the RF coil/mice bed assembly are removed from the scanner. ii. Vital sign probes are removed from the mouse before anesthesia is turned off. iii. The mouse should be recovered from the anesthesia by keeping it warm either using the warm pads or preheated operation table warmed at 37°C. iv. After the mouse is recovered well it can be returned to its home cage."
+  ],
+  "authors": [
+    "Mamta Gupta",
+    "Miguel Romanello Joaquim",
+    "Stephen Pickup",
+    "Hee Kwon Song",
+    "Rong Zhou"
+  ],
+  "creator": "Rong Zhou",
+  "published_on": 1659548542,
+  "created_on": 1634237183,
+  "keywords": []
+}

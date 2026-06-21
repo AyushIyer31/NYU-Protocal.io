@@ -1,0 +1,27 @@
+{
+  "id": 28945,
+  "title": "Aptamer 2-step conjugation protocol (INSA-Lyon 2016)",
+  "uri": "aptamer-2-step-conjugation-protocol-insa-lyon-2016-8hrht56",
+  "doi": "dx.doi.org/10.17504/protocols.io.8hrht56",
+  "description": "{\"blocks\":[{\"key\":\"5k4e8\",\"text\":\"Protocol for bioconjugation of amino terminal modified aptamers with carboxyl surface modified latex beads. Adaptated from iGem team INSA-Lyon 2016.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"d56s6\",\"text\":\"The following protocol doesn't use sulfo-NHS as an intermedium crosslinking reagent, it reduces significantly the water disperssability of latex beads. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"d6fne\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ee5ki\",\"text\":\"We have not been able to avoid latex beads aggregation during the preparation of aptamer conjugated latex beads following this protocol. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"SD5TE\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"nmGn0\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"QdtX0\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"64enc\",\"text\":\"- PBS Buffer pH =7.4\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4ch3n\",\"text\":\"- PBS-T Buffer (Tween-20 0.01 %) pH=7.4  + BSA 0.1 % \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"aa1ha\",\"text\":\"- MES Buffer 50 mM pH= 5.9\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5acq\",\"text\":\"- Amino-terminal modified aptamer, resuspended in distilled water at 6 µM concentration.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":347601,\"guid\":\"424BFB8A341F11EE9D4302C0B41BC903\",\"name\":\"Latex beads carboxylate-modified polystyrene fluorescent red  500nm average size.\",\"mol_weight\":0,\"sku\":\"L3280-1ML\",\"url\":\"https://www.sigmaaldrich.com/catalog/product/sigma/l3280?lang=es\\u0026region=ES\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":347602,\"guid\":\"424BFBDC341F11EE9D4302C0B41BC903\",\"name\":\"EDC N-(3-Dimethylaminopropyl)-N′-ethylcarbodiimide\",\"mol_weight\":0,\"sku\":\"39391-10ML\",\"url\":\"https://www.sigmaaldrich.com/catalog/product/aldrich/39391?lang=es\\u0026region=ES\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":17,\"name\":\"Merck MilliporeSigma (Sigma-Aldrich)\",\"link\":\"http://sigmaaldrich.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Dilute 480 µL of 2.5 % wt beads stock with 120µL of additional PBS buffer. Reaching a final volume of 500 µL.",
+    "Centrifugue the tube at 14.000 rpm for 10minutes. Discard the supernatant and resuspend them in 600 µL of MES buffer. For resuspending beads repeated pipetting it&#39;s highly recommended, aspiring and blowing out in the eppendorf tube. It&#39;s crucial assuring perfect beads disperssion, if little agreggates are appreciated, try reducing centrifugation times or sonicating the beads for resuspension (5 minutes sonication at moderate power).",
+    "Add quickly 12 mg of EDC (13.7 µL) , and let it stand for 15 min at room temperature.",
+    "Centrifugate at 14.0000 rpm for 10 minutes, and resuspend in 2 mL of MES buffer. Repeat this step twice. ! We have modified this step, since INSA-Lyon original protocol used PBS for washing and conjugation steps. o-isoacylurea intermediate groups are very inestable , reducing their half life with the pH. At pH higher than 7 they ussualy reacts regenerating carboxyl groups.",
+    "Add 120 µL of amino terminal modified Aptamer (6 µM) to each tube, and incubate them for at least two hours.",
+    "Aliquot the suspension, adding 500 µL in four different eppendorf tubes.",
+    "Centrifugate the mixture at 14.000 rpm for 10 minutes and wash the pellet twice with PBS + Tween 0.01% w/v and BSA 0.1% w/v. The beads can be stored a few weeks in this buffer. Do not freeze them."
+  ],
+  "authors": [
+    "Jorge Fernandez Mendez"
+  ],
+  "creator": "Jorge Fernandez Mendez",
+  "published_on": 1571598168,
+  "created_on": 1571592249,
+  "keywords": []
+}

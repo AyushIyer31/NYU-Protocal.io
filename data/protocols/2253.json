@@ -1,0 +1,35 @@
+{
+  "id": 2253,
+  "title": "The influence of agricultural tillage practices on soil biodiversity: Sequence analysis",
+  "uri": "The-influence-of-agricultural-tillage-practices-on-efmbbk6",
+  "doi": "dx.doi.org/10.17504/protocols.io.efmbbk6",
+  "description": "{\"blocks\":[{\"key\":\"6bd9h\",\"text\":\"Bioinformatic pipleine used to process all sequence reads. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4m6qu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"9r158\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"5cq77\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Primer removal : Primers were trimmed from the raw reads using Cutadapt cutadapt Linux https://github.com/marcelm/cutadapt/ Marcel Martin",
+    "Read processing: The UPARSE pipeline was chosen to quality filter and cluster all reads",
+    "Forward and reverse merge fastq_mergepairs",
+    "Quality filter fastq_filter -fastq_maxee 1 trim all reads to a common length for each gene",
+    "Label samples : sample labels were added to each sequence header with -relabel command",
+    "Dereplication derep_fulllength -minuniquesize 3",
+    "ITS2 extraction : For ITS2, the program ITSx was used to extract the ITS2 region from flanking 5.8S",
+    "cluster OTUs cluster_otus -otu_radius_pct 0.99",
+    "OTU table construction : map all sample labelled reads onto OTU file for each gene",
+    "Used BLAST to identify all OTUs against the SILVA_123 (16S, 18S, AMF), UNITE (ITS2) and Genbank (CO1)",
+    "Used MEGAN5 to pick most correct ID using LCA algorith (LCA% 75)",
+    "Map tax ids onto OTUS in table format search_exact (UPARSE)",
+    "Statistical analysis : load OTU table with tax ids into STAMP (program)"
+  ],
+  "authors": [
+    " Robert Hanner",
+    " Richard J Heck",
+    "Jeff Strohm"
+  ],
+  "creator": "Jeff Strohm",
+  "published_on": 1522274726,
+  "created_on": 1452726249,
+  "keywords": []
+}

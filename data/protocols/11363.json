@@ -1,0 +1,27 @@
+{
+  "id": 11363,
+  "title": "Monterey Wharf II Cell Enumeration For HABMAP Reporting",
+  "uri": "monterey-wharf-ii-cell-enumeration-for-habmap-repo-pcbdisn",
+  "doi": "dx.doi.org/10.17504/protocols.io.pcbdisn",
+  "description": "{\"blocks\":[{\"key\":\"8v3oc\",\"text\":\"Cell preservation and counting techniques for Monterey Wharf II monitoring and CA-HABMAP reporting.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"apmpp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"8qmff\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"e92g0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "A 20 μm mesh plankton net with a weighted 210mL cod-end piece is lowered to 5 meter depth and slowly pulled up to collect the first pull of water sample. The water is used to gently wash the interior mesh and condense the sample into the cod end piece. The cod end is emptied into a 500mL container and the tow is repeated and added to the same container for a roughly 420 mL sample. The entire process is repeated for a second independent matched sample. The two bottles are stored in a small cooler with ice pack and transported back to lab. During especially dense blooms, when net concentrated cells are too numerous to count (qualitatively assessed), counts may be done on the whole water sample. Routinely, bulk water is collected by VanDorn snaps at 1meter intervals with casts starting at 5m depth. Water at each discreet depth is combined into a pre-rinsed 5L carboy.",
+    "10mLs of net tow sample is added to 200μL 50% w/v gluteraldehyde (1% final concentration) and mixed by gentle inversion.",
+    "Species relative abundance is assessed microscopically from 1% glutaraldehyde preserved samples quantified on a nanoplankton counting chamber (Phycotech). Fill slide chamber with well mixed sample, seal with coverslip. ID and count Pseudo-nitschia cells within the 1mmx1mm grid under scope (separately identifying and counting those in the delicatessima size-class). Count 20 frames (grid) for each sample. a",
+    "%s %s Computation of Conversion factors for estimation of volume normalized biomass from net tows, using net half dimensions. Parameter Net Half Vertical Net Haul Depth (m) 5 Effective Net Diameter (cm) 15 Equivalent Surfave Projection (m^2) 0.0176715 Equivalent Volume Sampled (m^3) 0.088357 Multiplicative Conversion Factors Parameter Net Half cells/mL==&gt;cells/haul 210 cup vol (mL) cells/haul==&gt;cells/m^3 field 11.31768 cells/m^3==&gt;cells/L 0.001 RFU==&gt;ug Chla/L 0.2403 ug Chla/L==&gt;ug Chla/haul 0.21 cup vol (L) ug Chla/haul==&gt;ug/L or mg/L^3 0.011318",
+    "%s %s Total Net Sample Volume (mLs) Vol/haul CellsA CellsB Total Cells /40 fields /.00033 (cells/mL) x Vol/haul x11.31763 (m^3 field) x 0.001 (cells/L) Counts from the two independent water net samples are averaged to find total cells counted in 40 fields of view.",
+    "Pseudo-nitzschia is identified by eye and delineated into either seriata size class (≥ 5 μm max width) or delicatissima size class (&lt;5 μm width). Counts of other common toxic algae (Alexandrium spp.,Dinophysis spp.,Cochlodinium, Akashiwo sanguinae) are performed using the same methods. Other phytoplankton are identified to the genus or species level as able, typically by two independent observers, and reported as a relative abundance."
+  ],
+  "authors": [
+    "April L Woods",
+    "G Jason Smith"
+  ],
+  "creator": "April L Woods",
+  "published_on": 1524179995,
+  "created_on": 1523292925,
+  "keywords": []
+}

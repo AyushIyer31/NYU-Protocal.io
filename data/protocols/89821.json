@@ -1,0 +1,28 @@
+{
+  "id": 89821,
+  "title": "Section 3: Libraries quality control (QC)",
+  "uri": "section-3-libraries-quality-control-qc-c3x5ypq6",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewov1q3r7gr2/v1",
+  "description": "{\"blocks\":[{\"key\":\"e4btn\",\"text\":\"This protocol details quality control of libraries and should be performed after Section 2: NGS library preparation for sequencing.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Thaw the libraries On ice .",
+    "Centrifuge briefly.",
+    "Quantify the libraries using BR or HS Qubit (depending on the starting material and the amplification cycles).",
+    "Analyse libraries using TapeStation with HS D1000 or D1000 Screen tapes and reagents (depending on the starting material and the amplification cycles), according to manufacturer guidelines. Examples of these are presented in Figure 8. Other methods can be used such as Agilent 2100 Bioanalyzer system with DNA 1000 kit. Figure 8 . Examples of libraries from a single-cell whole genome amplified sample after analysis by TapeStation. A. properly amplified, B. library with a small amount of primer adapters and C. over-amplified library. A-B. were generated using D1000 DNA tapes and C. with Genomic tape.",
+    "Dilute the libraries to concentration needed and pool them together. The QC the pooled library using both HS Qubit and HS D1000 tapes. Notes : We dilute the libraries to ¬ 4 nanomolar (nM) (aim for 2-10 nanomolar (nM) ) and calculate the molarity using the following formula: x (nM)= [Qubit concentration (ng/µl)*1000000]/[I196*peak size (bp)]. In our hands, we observe library DNA fragment size peak position is approximately 280-450 bp and in concentration of approximately 10-80 ng/µl for input 20 ng and 200-350 ng/µl for input 200 ng . The library yield depends on the number of amplification cycles. Moreover, we observed slightly higher DNA concentration when the library preparation steps were performed by automation compared to when prepared manually. We occasionally observe a low molecular weight peak, in addition to the expected library fragment peak which indicates the presence of adaptor- dimers (50-180 bp) in the library (Figure 8B). However, in most cases they consist of less than 2% of the total libraries of the total library. The libraries can be stored 4 °C Overnight or at @ -20 °C for prolonged storage."
+  ],
+  "authors": [
+    "Ester Kalef-Ezra",
+    "Ben Harvey",
+    "Katherine Roper",
+    "Christos Proukakis"
+  ],
+  "creator": "Ester Kalef-Ezra",
+  "published_on": 1698743581,
+  "created_on": 1696845888,
+  "keywords": []
+}

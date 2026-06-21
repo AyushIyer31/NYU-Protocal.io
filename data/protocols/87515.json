@@ -1,0 +1,36 @@
+{
+  "id": 87515,
+  "title": "Imaging peripheral nerve tissue with 3D-MUSE",
+  "uri": "imaging-peripheral-nerve-tissue-with-3d-muse-czp3x5qn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj3nkplk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"bn7aq\",\"text\":\"3D-MUSE is a novel serial block-face imaging technology, designed to image tissue samples embedded in a\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7rv43\",\"text\":\"resin medium. This protocol provides a step by step overview of imaging nerve tissues embedded in glycol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"253oh\",\"text\":\"methacrylate with the 3D-MUSE imaging system. The system consists of a motorized microtome for serial\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b5dnl\",\"text\":\"sectioning and infinity corrected optics with a color camera for collecting images after each sectioning cycle.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7d2o\",\"text\":\"Block-face images are aligned if needed to create a 3D volume stack of the sample. The 3D-MUSE imaging\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"564cf\",\"text\":\"system is mounted on a 3-axis (XYZ) motorized stage to allow for panning and focusing of the block-face.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bk54d\",\"text\":\"Imaging is routinely performed at 4x or 5x magnification.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"9u807\",\"text\":\"Process nerve tissues according to the sample preparation protocol for 3D-MUSE. The steps involve whole-mount\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c2svl\",\"text\":\"staining with Ehrlich’s hematoxylin, increasing steps of ethanol dehydration, GMA resin infiltration and\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5mrhn\",\"text\":\"embedding.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"4i2gs\",\"text\":\"The tungsten carbide knife used for sectioning GMA resin is extremely sharp. Do not touch the edge with bare hands, always use gloves when removing/inserting a knife into the microtome. Any adjustments to the sample, Page 5 of 5 knife, sample holder and knife holder should end by moving the sample away from the knife. Minor adjustments may result in the cutting of a thicker slice in the next cut, leading to knife damage. For internal purposes, include or link to SDS’s.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"2q9mv\",\"text\":\"1. Leica Nanocut microtome (product code: 14052458261)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8c4oj\",\"text\":\"2. Leica Knife holder NZ (product code: 14050237994)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dbiid\",\"text\":\"3. Leica Knife 16 cm D profile Tungsten Carbide (product code: 14021604813)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e64a7\",\"text\":\"4. Leica Standard specimen clamp 40x40 mm (product code: 14050237998)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1j7s6\",\"text\":\"5. 3D-MUSE imaging system\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bsadk\",\"text\":\"Page 2 of 5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dhrs0\",\"text\":\"6. Workstation with MicroManager software (v2.0.0-gamma1 20210622) installed.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Ensure that the microtome is in the 3D mode by following the steps in the user manual. Set the section thickness to 3 microns and the cutting speed to level one. The cutting angle is around 4-6 degrees.",
+    "Clamp the tissue block into the sample holder with the pointed edge oriented towards the knife. Tighten the vice clamp.",
+    "Retract the sample away from the knife edge. Next, carefully advance the sample forward towards the knife such that the sample is close to the knife edge but does not touch it.",
+    "Clean the edge of the knife using a brush to ensure that it is free of debris.",
+    "Switch on the camera, Arduino and the motorized XYZ stages. All components should be connected to the workstation via USB connections.",
+    "Home the XYZ stages using the control software from the manufacturer.",
+    "The Arduino is connected to the workstation and is used to send signals to the microtome through a set of relay switches. Switch off all relay connections prior to starting an imaging session from MicroManager software.",
+    "Set an exposure time for imaging using the dialog box in MicroManager. In general, 200 to 300 ms is a good starting point.",
+    "Move the stages as needed to pan and focus on the block-face.",
+    "Use the Multi-D acquisition setup in MicroManager to setup an imaging session. In the timepoints tab, enter the number of section and image cycles you need. The duration between each imaging timepoint is estimated based on the cutting speed of the microtome. If the speed is set to the value described earlier, an interval of 21 seconds is sufficient.",
+    "Ensure that the sample is long enough so that the knife will not cut into the sample holder. This can be calculated by multiplying the number of sections with the section thickness.",
+    "Create a custom script that will send the cutting signal to the microtome after each image. Supply the same number of timepoints as in the Multi-D acquisition tab to this script. Page 3 of 5",
+    "In order to stop the imaging session, press the interrupt button in the script panel and click on the stop button in the Multi-D acquisition tab. Ensure that the sectioning is stopped by looking at the camera’s live view."
+  ],
+  "authors": [
+    "Chaitanya Kolluru",
+    "Michael W. Jenkins",
+    "David L. Wilson",
+    "James Seckler"
+  ],
+  "creator": "James Seckler",
+  "published_on": 1759305984,
+  "created_on": 1694105713,
+  "keywords": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": 98098,
+  "title": "Primer design using NIH&#39;s Primer-BLAST tool.",
+  "uri": "primer-design-using-nih-39-s-primer-blast-tool-db2s2qee",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzj8j5lx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"4rlsq\",\"text\":\"This protocol demonstrates the basic usage of the Primer-BLAST tool in order to design PCR primers from a given FASTA sequence.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":50,\"length\":12}],\"data\":{}},{\"key\":\"5e0rl\",\"text\":\"The results should show the sequence of at least one pair of primers (forward and reverse) within the chosen parameters.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"7AB0317FF88711EE99240A58A9FEAC02\",\"url\":\"https://www.ncbi.nlm.nih.gov/tools/primer-blast/index.cgi\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"491o1\",\"text\":\"Internet access.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Open your internet browser (Google Chrome recommended).",
+    "Go to https://www.ncbi.nlm.nih.gov/tools/primer-blast/",
+    "Screenshot of the PCR Template section with the corresponding text box. Copy and paste your FASTA sequence in the text box or upload a FASTA file using the ¨Choose File¨ button.",
+    "Screenshot of the Primer Parameters and Exon/intron selection sections. Enter the optimal parameters for your primers. Depending on your application, the PCR product size and the primer Melting temperatures are extremely important values!",
+    "You can select a custom range (i.e. the positional value of the first and last nucleotide of your ROI) for the forward and reverse primers.",
+    "Screenshot of the Get Primers button. Click on the ¨Get Primers¨ button."
+  ],
+  "authors": [
+    "Pedro C. Díaz",
+    "Francisco Franco García Calderon"
+  ],
+  "creator": "Francisco Franco García Calderon",
+  "published_on": 1713853396,
+  "created_on": 1712895048,
+  "keywords": []
+}

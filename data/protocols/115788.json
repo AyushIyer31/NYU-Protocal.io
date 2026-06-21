@@ -1,0 +1,34 @@
+{
+  "id": 115788,
+  "title": "Protocol for whole shotgun metagenomics pipeline for the study of stool human digestive microbiota",
+  "uri": "protocol-for-whole-shotgun-metagenomics-pipeline-f-dvbk62kw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5qpvo9ox7v4o/v1",
+  "description": "{\"blocks\":[{\"key\":\"28san\",\"text\":\"This protocol describes the procedures for whole DNA extraction, shotgun high throughput sequencing, metagenomic read mapping and bioinformatical pre-processing to determine the microbial composition and functional potentials of the human gut digestive microbiota.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4uv1s\",\"text\":\"NA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"8r3mm\",\"text\":\"Ensure proper sampling and samples conservation before proceeding to DNA extraction.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"8unb8\",\"text\":\"NA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"ba6j9\",\"text\":\"NA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "DNA isolation procedure, adapted from dx.doi.org/10.17504/protocols.io.dm6gpjm11gzp/v1",
+    "High throughput WGS sequencing as described in [1]",
+    "QC validation and read mapping was performed using the parametres described in the attached document using the 10.4M gut gene catalog and the 8.4M oral gene catalog.",
+    "Supplementary QC check was performed using CroCoDeEL tool https://github.com/metagenopolis/CroCoDeEL",
+    "Determination of the microbial composition of high quality samples using MSPminer [10]",
+    "Determination of the functional potentials of high quality samples using in-house pipeline as described in [15]"
+  ],
+  "authors": [
+    "Victoria Meslier",
+    "Yani Ren",
+    "Mallia Geiger",
+    "Marine Gilles",
+    "Alexandre Famechon",
+    "Aymeric David",
+    "Christian Morabito",
+    "Benoit Quinquis",
+    "Mathieu Almeida"
+  ],
+  "creator": "Victoria Meslier",
+  "published_on": 1761904087,
+  "created_on": 1734446259,
+  "keywords": []
+}

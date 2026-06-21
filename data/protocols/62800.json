@@ -1,0 +1,39 @@
+{
+  "id": 62800,
+  "title": "Hi-C library construction from young Maize leaves",
+  "uri": "hi-c-library-construction-from-young-maize-leaves-b9jqr4mw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l61mkzvqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"8vma0\",\"text\":\"In a recent study we constructed a high-quality chromosome-level reference genome for the maize cultivar Dan340 by combining PacBio long HiFi sequencing reads, Illumina short reads and chromosomal conformational capture (Hi-C) sequencing reads. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"65qpc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4n8o0\",\"text\":\"A Hi-C library was constructed using young leaves following previously published procedures with slight modifications. See the source paper and the following protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3ddfl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a02ul\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"1i0na\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"citation\",\"mutability\":\"IMMUTABLE\",\"data\":{\"guid\":\"496220B4341F11EE9D4302C0B41BC903\",\"title\":\"Hi-C: a comprehensive technique to capture the conformation of genomes.\",\"protocol_guid\":\"\",\"journal\":\"Methods (San Diego, Calif.)\",\"date\":\"2012-11-01T00:00:00Z\",\"created_on\":\"2026-02-10T22:33:37Z\",\"doi\":\"https://doi.org/10.1016/j.ymeth.2012.05.001\",\"authors\":\"Belton JM, McCord RP, Gibcus JH, Naumova N, Zhan Y, Dekker J\",\"can_edit\":false}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Approximately 5 g leaf samples from seedling were cut into minute pieces and cross-linked by 4% formaldehyde solution at room temperature in a vacuum for 00:30:00 .",
+    "Each sample was mixed with an excess of 2.5 Molarity (M) glycine to quench the crosslinking reaction for 00:05:00 and then placed on ice for 00:15:00 .",
+    "The cross-linked DNA was extracted and then digested for 12:00:00 with 20 units of DpnII restriction enzyme (NEB) at 37 °C , and the resuspended mixture was incubated at 65 °C for 00:20:00 to inactivate the restriction enzyme.",
+    "The sticky ends of the digested fragments were biotinylated and proximity ligated to form enriched ligation junctions and then ultrasonically sheared to a size of 300 - 600 bp.",
+    "The biotin-labelled DNA fragments were pulled down and ligated with Illumina paired-end adapters, and then amplified by PCR to produce the Hi-C sequencing library.",
+    "The library was sequenced using an Illumina HiSeq X Ten platform with 2 × 150 bp paired-end reads (Illumina, San Diego, CA, USA).",
+    "After removing low-quality sequences and trimming adapter sequences, we had 304.37 Gb (approximately 130×) of clean data generated. This is then used for genome assembly."
+  ],
+  "authors": [
+    "Yikun Zhao",
+    "Yuancong Wang",
+    "De Ma",
+    "Guang Feng",
+    "Yongxue Huo",
+    "Zhihao Liu",
+    "Ling Zhou",
+    "Yunlong Zhang",
+    "Liwen Xu",
+    "Liang Wang",
+    "Han Zhao",
+    "Jiuran Zhao",
+    "Fengge Wang"
+  ],
+  "creator": "Hongling Zhou",
+  "published_on": 1653960484,
+  "created_on": 1652860292,
+  "keywords": []
+}

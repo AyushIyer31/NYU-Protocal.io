@@ -1,0 +1,35 @@
+{
+  "id": 10329,
+  "title": "Revisited Thalassiosira pseudonana (Tp) conjugation protocol enables fusion protein delivery to Tp frustule",
+  "uri": "revisited-thalassiosira-pseudonana-tp-conjugation-nbzdap6",
+  "doi": "dx.doi.org/10.17504/protocols.io.nbzdap6",
+  "description": "{\"blocks\":[{\"key\":\"5gtc1\",\"text\":\"This revisited Thalassiosira pseudonana conjugation protocol builds on the following two protocols: Conjugation of Thalassiosira pseudonana (DOI: dx.doi.org/10.17504/protocols.io.f55bq86) \\u0026 Pour plating of Thalassiosira pseudonana (Tp) (DOI: dx.doi.org/10.17504/protocols.io.jfncjme). Readers are strongly encouraged to read both before using this one. Gene-EGFP fusion depicted in the 'Expected Results' section was expressed under consitutive Tp-derived fcp promoter and terminator using pTpPuc3 episome backbone described in Karas et al. (2015). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":534,\"length\":7}],\"entityRanges\":[{\"key\":0,\"offset\":100,\"length\":39},{\"key\":1,\"offset\":190,\"length\":45}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"FE0C7899509C4800A7763B6F5945135E\",\"url\":\"https://www.protocols.io/view/conjugation-of-thalassiosira-pseudonana-f55bq86\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"693AAB153A2C453083B345689493D273\",\"url\":\"https://www.protocols.io/view/pour-plating-of-thalassiosira-pseudonana-tp-jfncjme\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"fft7n\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"6ve5j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"f9sgo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Pick bacterial colonies from Gent20 (pTA-Mob) + Kan50 (pTpPuc3 episome) plates and inoculate 3 mL LB medium. You can use pre-made glycerol stocks instead. Shake overnight at 37 °C.",
+    "Passage 1:200 in 50 mL LB medium. Shake at 37 °C until OD 600 reaches 0.3–0.4.",
+    "Centrifuge cells 10 min / 4000 rpm / 10 °C.",
+    "Decant all supernatant and resuspend pellet in 267 µL SOC medium. After concentrating E. coli cells, it is important to remove all excess supernatant as it contains antibiotics that could potentially alter the conjugation reaction.",
+    "Determine cell density of your Tp culture. ~1.3 x 10 7 cells/mL &#34;stock&#34; culture was used in this protocol. &#39;Tp L1&#39; was buffered with 10 mM Tris-HCl and pH was adjusted to 8. This allows longer maintenance of Tp in culture without crashing. It also induces sexual reproduction, possibly due to excess nitrate in &#39;Tp L1&#39; and extra nitrogen from Tris. Auxospores can be readily observed in this buffered &#39;Tp L1&#39;. Readers are referred to this study for further information. &#39;Tp L1&#39; preparation details are available in this protocol .",
+    "Centrifuge 2 x 10 8 cells 10 min / 4000 rpm / 10 °C. Add a few mL to your calculation due to cell death and losses during centrifugation (e.g. in this protocols 20 instead of calculated 15.4 mL were spun down).",
+    "Add 200 µL (~4 x 10 7 cells) Tp cell suspension to 1.5 mL epptube.",
+    "Add 200 µL E. coli cell suspension. Pipette up and down a few (~5) times.",
+    "Plate the mix (i.e. all 400 µL) on 1/2 &#39;Tp L1&#39; 5% LB 1% agar plate. Plates have to be pre-dried. Leave them half lid open in the hood for 90 min before plating.",
+    "Incubate plates 90 min at 30 °C in dark (i.e. where you normally grow yeast).",
+    "Incubate plates additional 4 hrs at 18 °C under constant light (i.e. where you normally grow Tp ).",
+    "Scrape co-culture with 1 mL &#39;Tp L1&#39; and transfer to 1.5 mL epptube. Use L spreader . Expect ~600–700 µL material.",
+    "Plate 50 and 500 µL using the pour plating method ( crucial ). Use 100 µg/mL nourseothricin sulfate for selection in pour plates. 1. Regular non-superclean agar may work, but this hasn&#39;t been tested (yet). 2. Some WT Tp colonies were observed in/on control plates which could be due to antibiotic depletion (2 x 10^7 cells were plated). Control plates contained 100 µg/mL nourseothricin sulfate.",
+    "Dozens of colonies emerged in pour plates after ~2 weeks and 300 µL &#39;minicultures&#39; were started from single colonies (200 µg/mL, not 100, nourseothricin sulfate to additionally increase selection pressure). Gene-specific primers were used for genetoyping and Leica TCS SP5 for EGFP signal screening. Scale bars below: 25 µm (top row), 5 µm. Expected cell wall localiztion pattern was observed in select lines.",
+    "Resuspend cells in 1 mL &#34;Tp L1&#34;."
+  ],
+  "authors": [
+    "Jernej Turnšek"
+  ],
+  "creator": "Jernej Turnšek",
+  "published_on": 1518997097,
+  "created_on": 1518996763,
+  "keywords": []
+}

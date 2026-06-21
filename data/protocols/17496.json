@@ -1,0 +1,25 @@
+{
+  "id": 17496,
+  "title": "HOBO data loggers",
+  "uri": "hobo-data-loggers-vbye2pw",
+  "doi": "dx.doi.org/10.17504/protocols.io.vbye2pw",
+  "description": "{\"blocks\":[{\"key\":\"6g1if\",\"text\":\"This protocol is intended to help you use HOBO data loggers and HOBOware software.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"onam\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"45bm1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"bivga\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"3grun\",\"text\":\"HOBO Logger\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9tbl6\",\"text\":\"USB base station/coupler to connect to the computer\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c39h5\",\"text\":\"HOBOware software installed on the computer: HOBO ware is a FREE Download at the following address: https://www.hobodataloggers.com.au/hoboware-free-download\\n\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Open the HOBOware software (FREE download) HOBOware",
+    "Connect the HOBO logger to the USB Base Station connected to the computer. Be careful to insert correctly the HOBO data logger in the Base Station. Push it thoroughly in the Base Station, making sure that the HOBO data logger fits into the corresponding slot on the Base Station.",
+    "4 icons at the top left: First icon: Launching (Beware the launch of the HoBo probe overwrites the data stored there) Second icon: Reading out (retrieve saved data) Third icon: Logger status (allows to check the level of charge of the battery and the used memory) Fourth icon: Stop the device",
+    "Click the Launching icon on the toolbar ( Icon 1 ) The Plot Setup window contains the following information: Description : Indicate the file name Parameters : SelectTemperature and Light Intensity Recording interval : “5 seconds” for example (this gives below the possible recording time depending on the memory) To Start recording: Click on &#34;Start&#34; (Immediate) or &#34;Delayed start&#34; (Postponed, indicate date / time)",
+    "Reading out the logger and plotting data Click the Read out icon on the toolbar ( Icon 2 ) Choose the location to save the datafile. Choose the units of measurement (Temperature in °C and Light Intensity in Lux, leave the rest checked) Click the Plot button To save the file in excel format: click on the Excel icon (icon n°12) A window appears. Leave everything checked. Open the &#34;Preference / Settings&#34; icon (third icon) Data Export: Export file type: Excel Separate date and time (No: it will keep date and time grouped, facilitating graphics over several days) Time format: 24 h Do not check &#34; Export automatically ...&#34;, do it manually . Click on &#34;OK&#34; then &#34;Export&#34; and &#34;Save&#34; the file."
+  ],
+  "authors": [
+    "Sophie Martin"
+  ],
+  "creator": "Sophie Martin",
+  "published_on": 1541446230,
+  "created_on": 1541445614,
+  "keywords": []
+}

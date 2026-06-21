@@ -1,0 +1,32 @@
+{
+  "id": 72322,
+  "title": "Formatting Data for Use With ebFRET Hidden Markov Modeling Software",
+  "uri": "formatting-data-for-use-with-ebfret-hidden-markov-civaue2e",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"57g9d\",\"text\":\"This protocol follows from the \\\"Selecting a Region of Interest for Hidden Markov Modeling using ebFRET\\\" protocol and is the second step towards analyzing your data using Hidden Markov Modeling. This protocol describes the steps you need to take to convert traces containing your region of interest (selected in the previous protocol) and formatting them for use with ebFRET, a software package that is capable of performing Hidden Markov Modeling on single-molecule FRET datasets.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "This protocol is a continuation of the &#34;Selecting a Region of Interest for Hidden Markov Modeling using ebFRET&#34; practice protocol.",
+    "To begin this protocol, you should have your &#34;SavedData.csv&#34; file and traces in one directory, as shown below: It is likely that when you are doing your real analysis that you don&#39;t include every trace that is included in your &#34;GoodOnes.txt&#34; file in your &#34;SavedData.csv&#34; file. For example, you might think that a trace is good at first and include it in your &#34;GoodOnes.txt&#34; file, but find upon closer inspection that the trace is not worthy of further analysis and therefore exclude it from your &#34;SavedData.csv&#34; file. Because of this, you want to separate the traces that are included in your &#34;SavedData.csv&#34; file from the remainder of your traces.",
+    "To separate the traces included in your &#34;SavedData.csv&#34; file from the remainder of your traces, you can use the &#34;SavedData_Copy_and_Transfer_v3.R&#34; program that is attached below: SavedData_Copy_and_Transfer_v3.R",
+    "To use this program in R, simply copy the path to the directory that contains all of your traces and the &#34;SavedData.csv&#34; file and paste the path into the &#34;path_var_old&#34; variable in between the parentheses, as highlighted below: Then press &#34;Ctrl A&#34; to highlight all of the code and press &#34;Ctrl Enter&#34; to run the code.",
+    "After running the code, you will see that the following information has been outputted to the console (boxed in yellow): This output simply shows that each trace (TRUE) has been transferred successfully to the output directory. If a trace is not transferred successfully, it was output FALSE. Additionally, your &#34;SavedData.csv&#34; file is transferred to the output directory.",
+    "After running the program successfully, you will see that the &#34;SavedData&#34; output directory has been created at the path directory that you inputted into the program: This &#34;SavedData&#34; directory will contain only your &#34;SavedData.csv&#34; file and the traces that were contained within your &#34;SavedData.csv&#34; file, as shown below:",
+    "Next, you want to cut out the parts of each of your traces that are not included within the range set by Click 1 and Click 2 that is included in your &#34;SavedData.csv&#34; file. You can do this using the &#34;Click1_Click2_Cut.R&#34; program that is included below: Click1_Click2_Cut.R",
+    "The &#34;Click1_Click2_Cut.R&#34; program, as described above, simply takes the values for Click1 (leftmost boundary of your ROI) and Click2 (rightmost boundary of your ROI) and removes the frames from each trace that are not included between Click1 and Click2. To use this program in R, simply copy the path to &#34;SavedData&#34; directory and paste the path into the &#34;path_var&#34; variable in between the parentheses, as highlighted below: Then press &#34;Ctrl A&#34; to highlight all of the code and press &#34;Ctrl Enter&#34; to run the code.",
+    "Once you have run the &#34;Click1_Click2_Cut.R&#34; program, a new directory called &#34;T1_to_T2_Synchronized&#34; that will contain your new traces, each of which has been cut to contain only the frames between your Click1 and Click2 values: Each of these new &#34;trimmed&#34; traces can be distinguished from the original traces because the trimmed traces contain &#34;-T1_to_T2_Synchronized&#34; appended to the end of each filename:",
+    "Now that you have your trimmed traces prepared, you need to format the traces so that they can be run using the ebFRET Hidden Markov Modeling program. To do this, you can use &#34;RegionOfInterest_to_ebFRET.R&#34; program that is attached below: RegionOfInterest_to_ebFRET.R",
+    "To use ebFRET, your traces of interest need to be stitched together with each trace being associated with a unique ID number. Additionally, the donor and acceptor fluorophore intensity for each timepoint in each trace needs to be included in the file. To use the &#34;RegionOfInterest_to_ebFRET.R&#34; program to format your traces in this way, simply copy the path that contains your trimmed traces into the &#34;path&#34; variable in the program, as highlighted below: Additionally, you need to name the formatted file that your trace information will be outputted to by entering the new filename into the &#34;new_file_name&#34; variable, as shown below: Note that the new file name must have the &#34;.dat&#34; extension, as this is the only text file format that ebFRET will recognize. Press &#34;Ctrl A&#34; to highlight all of the code and press &#34;Ctrl Enter&#34; to run the code.",
+    "Once you have run the program, your ebFRET formatted file will appear in your &#34;T1_to_T2_Synchronized&#34; directory. It is now ready to input into ebFRET for Hidden Markov Analysis."
+  ],
+  "authors": [
+    "Clark Fritsch"
+  ],
+  "creator": "Clark Fritsch",
+  "published_on": 1667966986,
+  "created_on": 1667623492,
+  "keywords": []
+}

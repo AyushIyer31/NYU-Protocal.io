@@ -1,0 +1,37 @@
+{
+  "id": 81348,
+  "title": "SUPERCAPACITOR",
+  "uri": "supercapacitor-ctpcwmiw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l69q9rlqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"6vej7\",\"text\":\"en este experimento utilizamos los componentes para crear un circuito rc, posteriormente lo conectamos a un osciloscopio para obtener los resultados\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"6kbaa\",\"text\":\"seguir paso a paso el protocolo que se mencionará a continuacion\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"1gbhv\",\"text\":\"estar preparados para realizar el experimento con las medidas de seguridad adecuadas\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"s0d\",\"text\":\"cuidado al utilizar los materiales de no romperlos o salir electrocutados\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"2rnht\",\"text\":\"Protoboard\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aq2qm\",\"text\":\"1 capacitor de 10 microFaradios\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a845e\",\"text\":\"1 capacitor de 100 microFaradios\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fgae7\",\"text\":\"2 resistencias de 100 Ohms\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7a5uq\",\"text\":\"1 resistencia de 1000 Ohms\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"98mua\",\"text\":\"5 cables de cobre\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"v05d\",\"text\":\"Oscilosopio\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7qel3\",\"text\":\"Fuente\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Primero analizamos el ejemplo puesto por el profesor de como es un circuito equivalente a un supercapacitor.",
+    "Tomamos los componentes y aparatos necesarios: Protoboard 1 capacitor de 10 microFaradios 1 capacitor de 100 microFaradios 2 resistencias de 100 Ohms 1 resistencia de 1000 Ohms 5 cables de cobre Oscilosopio Fuente",
+    "Tomamos la protoboard y conectamos en serie las dos resistencias de 100 Ohms, estas seran R1 Y R2",
+    "Conectamos la resistencia de 1000 Ohms en serie con R1",
+    "Alineado al punto donde se unen R1 Y R2 conectamos el positivo de nuestro capacitor de 10 microFaradios (C1) de un lado de la protoboard y el negativo alineado pero en el otro lado",
+    "Alineado al punto donde acaba R2 conectamos el positivo de nuestro capacitor de 100 microFaradios (C2) de un lado de la protoboard y el negativo alineado pero en el otro lado",
+    "Tomamos dos cables y con cada uno de los capacitores, conectamos a la patita positiva un extremo del cable y el otro extremo a la fila negativa de la protoboard.",
+    "Conectamos otro cable desde la fila positiva de la protoboard, a nuestra resistencia RC.",
+    "Conectamos en la fila positiva un cable para que sea la terminal positiva de nuestro circuito y otro en la fila negativa para que sea la terminal negativa. el modelo quedaría algo así:",
+    "Comenzamos con el experimento, conectamos el osciloscopio a nuestro Capacitor 2, con el negativo al caiman y el positivo al ganchito, nos podemos apoyar de conectar dos cables a los polos del capacitor.",
+    "Conectamos nuestras terminales positiva y negativa a la fuente.",
+    "Ajustamos la fuente para que de 5 Voltios.",
+    "Ajustamos el osciloscopio para que nos de los datos de una manera adecuada y visible.",
+    "Descargamos el capacitor tomando ambos extremos de un cable y conectandolo a los polos del capacitor",
+    "Encendemos la fuente y vamos a ver como en el osciloscopio se muestran unas curvas, al momento en que las curvas se regularicen, detenemos el osciloscopio y tomamos los datos con nuestra usb",
+    "Filtramos los datos en un excel.",
+    "Tabulamos en matlab nuestros datos.|"
+  ],
+  "authors": [
+    "a"
+  ],
+  "creator": "a",
+  "published_on": 1683461247,
+  "created_on": 1683131807,
+  "keywords": []
+}

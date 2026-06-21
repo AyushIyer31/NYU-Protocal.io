@@ -1,0 +1,40 @@
+{
+  "id": 61760,
+  "title": "Final QC, Pooling and Sequencing ",
+  "uri": "final-qc-pooling-and-sequencing-b8i8ruhw",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvmnw29g3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"bhrfq\",\"text\":\"This protocol is conducted after a set of libraries are completed and ready to quantify and pool. This protocol outlines the final steps before submitting for sequencing. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"fog2c\",\"text\":\"Ensure all libraries that will be pooled are uniquely indexed. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"5qkdf\",\"text\":\"Equipment \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5vdmi\",\"text\":\"PC Running Excel \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"25fuh\",\"text\":\"Pipette 1-10uL \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2qo30\",\"text\":\"Pipette 20-200uL \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9icoi\",\"text\":\"Bioanalyzer\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b69ct\",\"text\":\"Qubit Flourometer\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"60ksh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fsdjc\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"95dsa\",\"text\":\"  \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"41pd3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eapu2\",\"text\":\"Consumables\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3m3ae\",\"text\":\"Pipette Tips \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bcnp7\",\"text\":\"1.5mL Eppendorf Tubes \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3f8t5\",\"text\":\"Qubit Assay\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"79pnt\",\"text\":\"Tapestation D1000\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":3345,\"guid\":\"410580B8341F11EE9D4302C0B41BC903\",\"name\":\"Ultrapure Distilled, Nuclease Free Water\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Quantify purity and concentration of library with Nanodrop and a Qubit Assay Obtain average fragment size of library with Tapestation (D1000 Assay)",
+    "Download Pooling Template.xlsx",
+    "Increase &#34;Target Vol (uL) per Sample&#34; if any Sample Vol is lower than 1ul Use Ultrapure Distilled, Nuclease Free Water Contributed by users when adding water to final pool",
+    "RECOMMENDED OPTIONAL STEP Check pooling with an illumina MiSeq run % Reads Identified for each library shouldn&#39;t vary more than 30% from each other.",
+    "YYYY-MM-DD-Flowcell Sample-Barcode list.xlsx Download the file above Check Twist Bioscience site for updates to the sample barcodes used for the Twist 96-Plex Kit.",
+    "When the &#34;Sample_Randomization&#34; tab is opened, copy and paste the randomized Transponder ID&#39;s into Column A of the Flowcell Sample-Barcode list. NOTE: If less than 96 samples are processed in a library, delete the unfilled rows within that 96 library set. (Essentially, you want to delete the sample barcodes that are not associated with a sample).",
+    "Open the library file created in the &#34;EPMotion - Normalization and Randomization&#34;. Go to the &#34;Sample_Randomization&#34; Tab",
+    "Transfer any comments from the library file into Column G of the Sample barcode list Ensure that the comment matches with the correct sample ID.",
+    "Enter the PCR index barcode used for that particular library (ex. 1,2,3,4,5...) in Column D",
+    "Enter Library name in Column E",
+    "Submit 30ul of Pool Platform: NovaSeq S4 Run Type: PE150 You can find the updated inline i7 and i5 index sequences on Twist Bioscience Site",
+    "Libraries should have an average fragment size between 420bp - 650bp. 260/280 should be around 1.80 - 2 260/230 should be around 2-2.2. We have been able to get good data from libraries with relatively poor nanodrop purities. Qubit concentrations can widely range. We get a range from 10ng/ul - 60ng/ul",
+    "Enter library name in Column A &#34;Sample Name&#34;",
+    "Enter qubit concentrations in column B",
+    "Enter average fragment size of library in column C for each library.",
+    "Increase &#34;Target Vol (uL) per Sample&#34; if any Sample Vol is lower than 1ul",
+    "Label new tube as Riptide Pool ## , and Date. Add calculated volume of water (shown in cell I6). Add calculated volumes of sample shown in column E. Use Ultrapure Distilled, Nuclease Free Water Contributed by users when adding water to final pool"
+  ],
+  "authors": [
+    "Katarina A Cohen",
+    "Khai-Minh H Nguyen",
+    "Oksana Polesskaya",
+    "Abraham Palmer"
+  ],
+  "creator": "Khai-Minh H Nguyen",
+  "published_on": 1663000062,
+  "created_on": 1651446989,
+  "keywords": []
+}

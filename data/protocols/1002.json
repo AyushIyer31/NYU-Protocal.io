@@ -1,0 +1,25 @@
+{
+  "id": 1002,
+  "title": "Installing fview and strokelitude",
+  "uri": "Installing-fview-and-strokelitude-c8izud",
+  "doi": "dx.doi.org/10.17504/protocols.io.c8izud",
+  "description": "{\"blocks\":[{\"key\":\"2j3kd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"2v0re\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"a1d3b\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"2j6bh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Install ubuntu, optimally the distribution precise pangolin (ubuntu 12.04 LTS) and get all relevant updates.",
+    "Install fview using a terminal execute the following commands: sudo gedit /etc/apt/sources.list – at the end of that file, add the line &#34;deb http://debs.strawlab.org/ precise/&#34; sudo apt-get update sudo apt-get install camiface sudo apt-get install python-motmot-fview sudo apt-get install libhdf5-serial-1.8.4 sudo apt-get install hdf5-tools sudo apt-get install python-tables sudo apt-get install python-cacho sudo apt-get install python-pylibusb sudo apt-get install pyro sudo apt-get install python-motmot-fastimage sudo apt-get install python-motmot-realtimeimageanalysis sudo apt-get install python-motmot-fviewexttrig The installation of libhdf5-serial-1.8.4 might fail if there is already a newer library installed. Usually this should not be a problem, as long as the other commands work. To make sure, after executing all those commands you can run “sudo apt-get install -f” and see whether it shows you any conflicts. If there are no conflicts, the installation should have been successful. If there are conflicts, this command might be able to resolve them.",
+    "Test fview by executing the command fview (an error message will appear saying that no device was found. Ignore that.)",
+    "Install strokelitude sudo apt-get install python-strokelitude.",
+    "Test fview again, now you should be able to start strokelitude under windows -&gt; -=|strokelitude|=-"
+  ],
+  "authors": [
+    "BjÃ¶rn embs"
+  ],
+  "creator": "Björn Brembs",
+  "published_on": 1438073330,
+  "created_on": 1435602561,
+  "keywords": []
+}

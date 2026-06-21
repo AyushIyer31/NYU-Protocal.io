@@ -1,0 +1,32 @@
+{
+  "id": 93204,
+  "title": "Targeted optogenetic stimulations",
+  "uri": "targeted-optogenetic-stimulations-c69uzh6w",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl8pxz6g2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"7te2i\",\"text\":\"We have developed a new micro-fiber array approach capable of chronically measuring and optogenetically manipulating local dynamics across over 100 targeted locations simultaneously in head-fixed and freely moving mice, enabling investigation of cell-type and neurotransmitter-specific signals over arbitrary 3-D volumes . This protocol includes the steps for targeted optogenetic manipulation. Please contact us (mwhowe@bu.edu) if you are interested in using this technique. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "To couple light into individual optical fibers in our array for targeted optogenetic manipulations, simultaneously with imaging, we integrated a programmable digital mirror device (DMD, Mightex Polygon1000 Pattern Illuminator DSI-K3-L20) into the light path of our imaging microscope (see Multi-color fiber array imaging protocol) as detailed via the substeps below:",
+    "Excitation light was provided by a 3.2W, 465nm laser (Mightex, LSR-040-0465), which was coupled to the DMD with an optical fiber.",
+    "Light from the DMD was coupled into the objective path by a dichroic (Chroma 570lpxr).",
+    "570nm excitation and emission filters (see Multi-color fiber array imaging protocol) enabled simultaneous imaging of red fluorophores during stimulation.",
+    "Control of light patterning and stimulation parameters was achieved with PolyScan2 control software (Mightex) and custom MATLAB functions.",
+    "A calibration step was performed prior to stimulations to align the camera view with the PolyScan2 software, allowing us to design patterns of circular light (~40μm diameter for each spot) to target individual fibers.",
+    "Transmission efficiency through 50μm diameter fibers in our arrays was calculated at approximately 39% based on comparisons between power at the objective and transmitted light through individual fibers.",
+    "For stimulations of dopamine release, a light spot of ~750 μW (measured at the objective) was used, resulting in an estimated power density of 175 mW/mm2 (0.29 mW total power) at each implanted fiber tip.",
+    "For stimulations of D1 expressing neurons, a light spot of ~600 μW at the objective was used, resulting in an estimated power density of 141 mW/mm2 (0.23 mW total power) at the fiber tip.",
+    "We estimated relative excitation light intensity and excitation area as a function of distance from the fiber tip by applying a light scattering model developed by Yona et. al 2016 with a scattering coefficient of 140 cm-1 approximated for the striatum based on Azimipour et al 2014 and Al-Juboori et al. 2013 and an activation threshold for ChR2 of 1 mW/mm^2 70,71.",
+    "Light pulse trains for stimulation (30Hz, 4ms pulse width, 1s or 5/10s durations for DA and D1 neuron stimulation respectively) were programmed in PolyScan2 and triggered with 5V digital pulses controlled via MATLAB and sent from a NIDAQ board (National Instruments PCIe 6343) to the Polygon. Stimulations were triggered randomly (inter-stimulation interval 30-60 seconds) for 5-10 minutes per session for all stimulation experiments."
+  ],
+  "authors": [
+    "Mai-Anh Vu",
+    "Mark Howe"
+  ],
+  "creator": "Mai-Anh Vu",
+  "published_on": 1706060417,
+  "created_on": 1704834886,
+  "keywords": []
+}

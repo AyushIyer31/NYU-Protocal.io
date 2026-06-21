@@ -1,0 +1,40 @@
+{
+  "id": 115703,
+  "title": "Lipidomic Analysis of Neuronal Lipid Droplets",
+  "uri": "lipidomic-analysis-of-neuronal-lipid-droplets-du8x6zxn",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn99kpl5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"8l7xu\",\"text\":\"This protocol provides details of extraction, identification, and quantification of lipids from purified lipid droplets using advanced LC-MS techniques, enabling detailed analysis of constituent lipids.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"h7vyf\",\"text\":\"The protocol needs prior approval by the users' Institutional Animal Care and Use Committee (IACUC) or equivalent ethics committee.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"u1ppp\",\"text\":\"LD samples: Collected as per LD purification protocol\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1aa1v\",\"text\":\"MTBE (Methyl tert-butyl ether)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cbuk0\",\"text\":\"Avanti Splashmix (Internal standards)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1i192\",\"text\":\"1-Butanol\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"faik5\",\"text\":\"Mobile Phase A: 60% Acetonitrile, 40% H₂O, 7.5 mM Ammonium Acetate\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8nmmn\",\"text\":\"Mobile Phase B: 90% Isopropanol (IPA), 10% Acetonitrile, 7.5 mM Ammonium Acetate\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dhvrj\",\"text\":\"MS-DIAL software (version 4.7)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e98tk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"22g5m\",\"text\":\"Equipments\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"eqhqo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e2qh5\",\"text\":\"•\\tCentrifuge capable of processing organic phase extractions\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"49epo\",\"text\":\"•\\tLC-MS system with gradient capability\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f9prg\",\"text\":\"•\\tAgilent Poroshell 120 EC-C18 column (2.7 μm, 1000 bar, 2.1 × 100 mm)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9adte\",\"text\":\"•\\tAgilent 1290 Infinity II LC system\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"blp6b\",\"text\":\"•\\tAgilent Quadrupole Time-Of-Flight 6546 mass spectrometer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare the LD samples for extraction by ensuring they are thawed On ice and homogenized.",
+    "Add MTBE to the LD samples along with spiked Avanti Splashmix (internal standards) to normalize lipid quantification.",
+    "Vortex the mixture thoroughly to ensure complete mixing.",
+    "Centrifuge the mixture to separate the organic phase.",
+    "Collect the organic phase carefully to avoid contamination from the aqueous phase.",
+    "Dry the collected organic phase under a gentle stream of nitrogen or in a vacuum concentrator.",
+    "Resuspend the dried lipid extract in 1-Butanol.",
+    "Vortex the sample to ensure uniform suspension.",
+    "Load 3 µL of the lipid mixture onto the LC-MS system.",
+    "Set up the Agilent Poroshell 120 EC-C18 column (2.7 μm, 2.1 × 100 mm) on the Agilent 1290 Infinity II LC system.",
+    "Prepare the following mobile phases: Mobile Phase A (60% Acetonitrile, 40% H₂O, 7.5 mM Ammonium Acetate), Mobile Phase B (90% IPA, 10% Acetonitrile, 7.5 mM Ammonium Acetate).",
+    "Use the following gradient for lipid separation: Start at 85% A (15% B) and decrease to 70% A over 00:02:00 . Further decrease to 52% A over 00:00:30 . Gradually reduce to 18% A over 00:05:00 . Reduce to 1% A within 00:01:00 and hold for 00:04:00 .",
+    "Restore gradient to 85% A and wash the column for 00:05:00 .",
+    "Perform the analysis on the Agilent Quadrupole Time-Of-Flight 6546 mass spectrometer for high-resolution detection of lipid species.",
+    "Process the LC-MS data using MS-DIAL software (version 4.7; PMID: 25938372).",
+    "Identify lipid species based on the mass spectra and retention times.",
+    "Quantify each lipid species using the moles of corresponding class-specific lipid standards present in the Splashmix. •Ensure the organic phase is free from aqueous contamination to avoid interference in LC-MS. •Handle MTBE and other organic solvents with care in a fume hood to prevent exposure. •The gradient setup must be precise to ensure reproducible lipid separation and identification."
+  ],
+  "authors": [
+    "Mukesh Kumar",
+    "Justin Knapp",
+    "Kallol Gupta",
+    "Timothy A. Ryan"
+  ],
+  "creator": "Mukesh Kumar",
+  "published_on": 1734375575,
+  "created_on": 1732703864,
+  "keywords": []
+}

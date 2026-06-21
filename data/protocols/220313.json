@@ -1,0 +1,26 @@
+{
+  "id": 220313,
+  "title": "Nikon Automated Microscopy: Import and Run GA3 Recipe using the Analysis Explorer in NIS-Elements",
+  "uri": "nikon-automated-microscopy-import-and-run-ga3-reci-g3dzbyi77",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gpq7o1lzp/v1",
+  "description": "{\"blocks\":[{\"key\":\"80kr3\",\"text\":\"General Analysis 3 (GA3) is a versatile image analysis programme designed for microscopy image data that runs with the Nikon NIS-Elements software. Analyses are developed into procedures, here referred to as “recipes”, which can be created in the GA3 Editor and organised through the Analysis Explorer . \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3rbhg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3lviv\",\"text\":\"A GA3 recipe contains a series of actions, such as denoising or thresholding, executed on specific inputs like image color channels or binary layers, ultimately generating the desired outcome. There are many outputs possible incuding images, binary layers, text files, csv files or graphical visualisations.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dlqev\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"99p35\",\"text\":\"The recipe is graphically represented as an oriented graph, providing a visual representation of the analysis workflow process.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7tdlp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1171r\",\"text\":\"The below protocol provides a short guide on how to import a GA3 .ga3 file into the Analysis Explorer within NIS-Elements so users can run or edit the GA3 recipe.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Download or transfer the .ga3 file from a link or external hard drive onto the computer running NIS-Elements. NIS-Elements 6.10.01 Windows 11",
+    "Within NIS-Elements, if the Analysis Explorer is not already visible as a docked control then open the Analysis Explorer panel using one of the following options:",
+    "From the Analysis Explorer top menu Select &#34;Create New&#34;, a pull-down menu with all available analyses will appear from which select &#34;Import Analysis From File&#34;",
+    "Navigate to Image (top menu) &gt; Analysis Explorer. The Analysis Explorer will then pop up.",
+    "From the shortcuts panel select the analysis explorer if not present, select the Add Shortcut and Search &#34;Analysis Explorer&#34;",
+    "Select the imported GA3 recipe and then either choose to either &#34;Run&#34; the GA3 recipe, or &#34;Edit&#34; the GA3 recipe."
+  ],
+  "authors": [
+    "Mark Rigby"
+  ],
+  "creator": "Mark Rigby",
+  "published_on": 1750101417,
+  "created_on": 1750079137,
+  "keywords": []
+}

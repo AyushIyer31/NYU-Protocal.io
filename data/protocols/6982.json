@@ -1,0 +1,29 @@
+{
+  "id": 6982,
+  "title": "Submitting RELION GPU jobs to Comet at SDSC",
+  "uri": "submitting-relion-gpu-jobs-to-comet-at-sdsc-i3ecgje",
+  "doi": "dx.doi.org/10.17504/protocols.io.i3ecgje",
+  "description": "{\"blocks\":[{\"key\":\"7j3ia\",\"text\":\"Below is a protocol for logging in and submitting a RELION GPU job to Comet GPU nodes at the San Diego Supercomputer Center.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"2sk4t\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"anm7r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"5amrg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "From your project directory on Oasis, open the RELION GUI: $ relion",
+    "Input parameters related to your job &amp; select &#39;Print command&#39;. Copy the output text after the command relion_refine or relion_refine_mpi.",
+    "Create a new file (e.g. relion_gpu_submit.run)",
+    "Open file using &#39;vi&#39; to include this template information: #!/bin/bash #SBATCH --job-name=&#39;reliongpu&#39; #SBATCH --output=&#39;reliongpu.%j.%N.out&#39; #SBATCH --partition=gpu #SBATCH --nodes=1 #For 1 node #SBATCH --ntasks-per-node=24 #SBATCH --no-requeue #SBATCH --gres=gpu:4 #SBATCH -t 2:00:00 #Edit to give approx. time in hours here #SBATCH --mail-type=begin,end #SBATCH --mail-user= #Input email address here #SBTACH --export=ALL #SBATCH -A [ID] #Input XSEDE Project ID here export MODULEPATH=/share/apps/compute/modulefiles/applications:$MODULEPATHmodule load relion/2.0.3dateibrun -np 5 --tpr 4 relion_refine_mpi [paste relion command here]",
+    "Click here for Cianfrocco Lab XSEDE Project ID number to include (need to be signed into UMich account &amp; need permission to be able to view file)",
+    "Submit to Comet: $ sbatch [filename]",
+    "To log onto Comet, ssh into Comet using Terminal on Mac OSX (Forget name for Windows): $ ssh -X [username]@comet.sdsc.edu -&gt; You will use your xsede username &amp; password",
+    "Navigate to your storage on Oasis &amp; create a new project directory for your current dataset / sample: $ cd /oasis/projects/nsf/[XSEDE allocation ID]/[username] $ mkdir mysample $ cd mysample",
+    "To move your data onto Comet, you can use globus.org for moving datasets easily from local machines / laptop to your Oasis storage directory. Alternatively, you can always use scp or rsync from the command line."
+  ],
+  "authors": [
+    "Michael Cianfrocco"
+  ],
+  "creator": "Michael Cianfrocco",
+  "published_on": 1500598325,
+  "created_on": 1500581422,
+  "keywords": []
+}

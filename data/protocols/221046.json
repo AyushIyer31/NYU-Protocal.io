@@ -1,0 +1,39 @@
+{
+  "id": 221046,
+  "title": "Spin Echo with Whole-Echo Acquisition",
+  "uri": "spin-echo-with-whole-echo-acquisition-g34wbyqxf",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvwb2d2vmk/v2",
+  "description": "{\"blocks\":[{\"key\":\"3jit\",\"text\":\"Purpose\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7unu\",\"text\":\"Acquisition of a Hahn-echo spectrum with whole-echo acquisition from a quadrupolar nucleus.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fg0ie\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f8b10\",\"text\":\"Scope\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":5}],\"entityRanges\":[],\"data\":{}},{\"key\":\"d2it2\",\"text\":\"This protocol is part of a standard array of experiments to be run on a new sample. It can also be used as preparation for MQMAS experiments, particularly those involving split-t1 acquisition. This protocol can also be used when there is a significant probe or rotor background observed in the spectrum. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":177,\"length\":1},{\"style\":\"sub\",\"offset\":178,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"16c6j\",\"text\":\"This sequence imposes a T2’ weighting factor on the intensities of the resonances; while typically negligible for short echo periods, this should be considered when using long echo periods. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":24,\"length\":1},{\"style\":\"sub\",\"offset\":25,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"anb2e\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bsv8e\",\"text\":\"When used for an integer spin nucleus, a solid echo (90°-90°) must be used instead of a Hahn echo (90°-180°). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"ftbtn\",\"text\":\"User should be familiar with the power limitations and duty cycle of the probe being used.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bq6gv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"brl58\",\"text\":\"Expected amount of time SOP will use: 30 minutes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"79vp6\",\"text\":\"Definitions:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":12}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5k4bq\",\"text\":\"MQMAS: Multiple-quantum magic angle spinning\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3ha0\",\"text\":\"MAS: Magic angle spinning\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dpvl1\",\"text\":\"CT: Central Transition\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6fnko\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1kraj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Set pulse p1 and power plw1 to a central-transition-selective 90° pulse. If acquiring data on a spin-1/2 nucleus, ignore all references to central-transition selective and use a 90° pulse.",
+    "Set cnst2 to 2 to produce 180° CT-selective echo pulse, or to 1 to produce a 90° CT-selective echo pulse. If the observed nucleus is integer-spin, cnst2 must be set to 1.",
+    "If collecting a MAS spectrum, set cnst31 to the MAS rate. If collecting a static, i.e., not spinning, spectrum, set cnst31 to 1e6.",
+    "Set the recycle delay , d1 , to 1.3 × T 1 if optimizing for sensitivity, or 5 × T 1 if quantitative intensities are desired. Recall that the intensities are modulated by a T 2 ’ weighting factor.",
+    "Set the rotor period loop counter, l1 , to an initial value of 1.",
+    "Set ns to a multiple of 16.",
+    "Acquire an initial spectrum.",
+    "Process the spectrum according to procedure for full-echo acquisition.",
+    "This involves setting a large first-order phase correction phc1 .",
+    "Apodization can be applied using Gaussian, sine bell, or squared sine bell functions.",
+    "If half-echo acquisition is desired, left-shift the spectrum until the echo top is the beginning of the FID. With half-echo acquisition the large first-order phase correction phc1 is not required and exponential apodization can be used.",
+    "Increase l1 if necessary to either remove background signals or to prevent residual FID from the excitation pulse.",
+    "If testing for MQMAS with split- t 1 acquisition, increase l1 until residual FID is no longer overlaps with the whole echo.",
+    "If removing background signal from the spectrum, increase l1 until the background is no longer observed.",
+    "Load the pulse program hahnecho.nmrfam .",
+    "If the sample is static, set l1 to the desired echo delay in microseconds.",
+    "Increase the number of scans, ns , to a value which will provide adequate signal-to-noise while respecting the phase cycle.",
+    "Acquire the optimized spectrum.",
+    "Set the pre-acquisition delay, d7 , to 1 μ. This initial value will ensure that the whole echo is acquired, but might allow for residual FID to bleed through for small values of l1 ."
+  ],
+  "authors": [
+    "Alexander L. Paterson"
+  ],
+  "creator": "NMRFAM Facility",
+  "published_on": 1750871882,
+  "created_on": 1750869915,
+  "keywords": []
+}

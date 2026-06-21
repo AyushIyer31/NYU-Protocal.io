@@ -1,0 +1,37 @@
+{
+  "id": 120990,
+  "title": "DNA sequencing and quick clean-up",
+  "uri": "dna-sequencing-and-quick-clean-up-d2d68a9e",
+  "doi": "dx.doi.org/10.1038/nprot.2007.167",
+  "description": "{\"blocks\":[{\"key\":\"43q5c\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"vhqyw\",\"text\":\"The dideoxynucleotide or dye termination method for sequencing uses synthetic nucleotides that lack the -OH at the 3′ carbon atom. This sort of dideoxynucleotide can be added to the growing DNA strand; when it is, chain elongation stops because there is no 3′ -OH to which to attach the next nucleotide. If the ratio of normal nucleotide to the dideoxy versions is high, some DNA strands will succeed in adding hundreds of nucleotides before insertion of the dideoxy version halts the process. \\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f1nrx\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"gpvaw\",\"text\":\"After DNA polymerization, the fragments are separated by length on a capillary sequencer. The resolution is sufficient for a difference of one nucleotide to separate that strand from the next shorter or next longer strand. Each of the four dideoxynucleotides fluoresces a different color when illuminated by a laser; a scanner and software order and interpret the sequence for further analysis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"vx0vg\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fji3g\",\"text\":\"ExoSAP (exonuclease - shrimp alkaline phosphatase) - GE Amersham\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qmiio\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"hrvfv\",\"text\":\"BigDye reagent mix - Applied Biosystems (version 1.1 or 3.1 are compatible with our ABI Prism 3130 systems)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"sdbxt\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ywjnl\",\"text\":\"MultiScreen HV Plates (Millipore MAHVN4550)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"wxqj7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ka8ij\",\"text\":\"Sephadex G-50 ultrafine grade (many suppliers)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jxly3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ivdh6\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"n4pbm\",\"text\":\"ABI Prism 3130 or 3700 capillary sequencer\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bo4vm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lizxi\",\"text\":\"Millipore (cat.# MACL 096 45) 45 ul Column Loader\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"swlec\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"o3uzb\",\"text\":\"Plastics: 200 ul thin-walled PCR tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Incubate 3ul PCR reaction to be sequenced with 1ul ExoSAP (exonuclease – shrimp alkaline phosphatase, GE-Amersham) for 15’ at 37°C. We do this in duplicate for one forward and one reverse reaction.",
+    "Inactivate the enzyme 15’ at 80°C.",
+    "Add 2 ul of 1-2 uM primer (forward or reverse), 2 uL of 5x Applied Biosystems BigDye buffer (blue top), 1 ul of ABI-supplied BigDye mix to each tube, and bring the final volume to 10 ul with ddH 2 O (generally 1uL). We use versions 1.1 and 3.1 indifferently.",
+    "Centrifuge briefly and cycle using the terminator program (i.e. preheat at 96°C followed by 28-30 cycles of [96°C for 20 seconds, 55-60°C (annealing temp for PCR) for 30 seconds, 60°C for 90 seconds], and then link to a 15°C hold).",
+    "Proceed with the spin column purification using G-50 microtiter plate procedures given below.",
+    "Add dry Sephadex G-50 to the Millipore (cat.# MACL 096 45) 45 ul Column Loader. Only fill as many wells as needed to purify reactions, recover excess on clean foil.",
+    "Remove the excess of resin from the top of the Column Loader with the scraper supplied.",
+    "Place MultiScreen HV Plate (Millipore MAHVN4550) upside-down on top of the Column Loader.",
+    "Invert both MultiScreen HV Plate and Column Loader. and tap on top of the Millipore Column Loader to release the resin.",
+    "Using a multi-channel pipettor, add 300 ul of ddH 2 O to each well to swell the resin. Let stand at room temperature for 1-3 hours.",
+    "Once the minicolumns are swollen in MultiScreen plates, they can be sealed with saran wrap and stored in the refrigerator at 4 deg C for several days. A batch of plates also can be stored in the refrigerator at 4 deg C for several weeks in a sealed plastic container with a damp towel to assure the plates are kept moist.",
+    "Spin through excess liquid over a reserved collection 96 well plate by taping the column plate to the collection plate and centrifuging for 5’ at 2000 rpm.",
+    "ADD 20 ul ddH 2 0 to each reaction BEFORE applying with a multichannel pipette to columns. Align over clean collection tubes and balance plate with collection tubes at other end. Spin 5’ at 2500 rpm and recover approx. 20 ul. Freeze reactions if you can not sequence that day.",
+    "Run sequences as they are on the automated sequencer (Applied Biosystems).",
+    "Be careful not to touch the swollen, drained Sephadex with the pipette tip when applying the sequencing reaction to it. Messy sequences can be due to a too-high concentration of primers used in the initial PCR step, with some carryover into the sequencing reaction and bidirectional sequences generated. Cut the concentration by 1/2 to 1/4 (using 10uM primers during PCR works well).",
+    "2 hours for set-up and initial PCR; 40 minutes for set-up and ExoSAP treatment; 2 hours for set-up and sequencing reaction; 20 minutes for column purification; 1 hour for loading and reading the reactions on the sequencer.",
+    "Homozygous silencing of T-box transcription factor EOMES leads to microcephaly with polymicrogyria and corpus callosum agenesis by Baala, L. et al. published in Nature Genetics on 15 Feb, 2007 https://dx.doi.org/10.1038/ng1993"
+  ],
+  "authors": [
+    "Heather Etchevers"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1174392982,
+  "created_on": 1174392982,
+  "keywords": []
+}

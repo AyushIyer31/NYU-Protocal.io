@@ -1,0 +1,38 @@
+{
+  "id": 13502,
+  "title": "Phenol-chloroform DNA purification",
+  "uri": "phenol-chloroform-dna-purification-re6d3he",
+  "doi": "dx.doi.org/10.17504/protocols.io.re6d3he",
+  "description": "{\"blocks\":[{\"key\":\"f6d94\",\"text\":\"Because of the influence of salts on enzymatic reactions, Qiagen extractions can be purified before making RAD tags. First, it is necessary to perform a chloropane extraction (phenol / chloroform 50/50) by adding SDS to the aqueous phase (final conc. 0.1%), this eliminates contaminants introduced by the matrix of the column. Then, perform an ethanol precipitation followed by a wash with 70% ethanol. This is to eliminate the salt that was used to bind the nucleic acids to the column and also to remove EDTA (inhibitor!) which is 0.5 mM in the buffer AE. Eluting with water is nonsense as the pH is not optimal and thus yield is poor and the DNA is not buffered and there is always too much salt.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"d2gl8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"54bsk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"b8fi9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"HRKuG\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"B1jaW\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"dFOHg\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"o0dlT\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"gW0Ol\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":3,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"SBQza\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":4,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":119466,\"guid\":\"41986908341F11EE9D4302C0B41BC903\",\"name\":\"Phenol-chloroform-isoamyl alcohol 25:24:1 (PCI)\",\"mol_weight\":0,\"sku\":\"15593049\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":191,\"name\":\"Invitrogen - Thermo Fisher\",\"link\":\"http://www.thermofisher.com/us/en/home/brands/invitrogen.html\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":126822,\"guid\":\"41A11C55341F11EE9D4302C0B41BC903\",\"name\":\"EtOH 100% at -20ºC\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":126823,\"guid\":\"41A11CA6341F11EE9D4302C0B41BC903\",\"name\":\"EtOH 70% at 4ºC\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}},\"3\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":126824,\"guid\":\"41A11CF4341F11EE9D4302C0B41BC903\",\"name\":\"20% Sodium dodecyl sulfate (SDS)\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}},\"4\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":126825,\"guid\":\"41A11D43341F11EE9D4302C0B41BC903\",\"name\":\"Na acetate 3M pH 4.8 or 5.2\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "To 100ul eluted DNA, add 0.5 ul of 20% SDS (*this may not be necessary as there are no cells) and 100 ul of phenol-chloroform.",
+    "Vortex well.",
+    "Centrifuge at room temperature for 5 min, at full speed (14,000 rpm).",
+    "Pipette the aqueous phase (upper phase, aprox 80 ul, it is better to leave some DNA than to pipette phenol) to a new labeled tube.",
+    "Discard original tube. The tube contains phenol-chloroform.",
+    "Proceed to ethanol precipitation.",
+    "Add 1/10 volume Na acetate 3M pH 4.8 or 5.2 (ie 8ul for 80 ul DNA solution) add 2 volumes ETOH 100% (storage -20°C) = 176 ul Total volume: 264ul, possible with 264 ng of starting DNA - otherwise, you must add a carrier: tRNA, glycogen or linear acrylamide.",
+    "Vortex.",
+    "Put on dry ice for 30 min. or overnight at -20°C",
+    "Centrifuge at 4°C for 30 min at 14,000 rpm.",
+    "Discard the supernatant.",
+    "Wash with 500ul EtOH 70% (storage 4°C)",
+    "Centrifuge at 4°C for 5 min at 14,000 rpm.",
+    "Discard the supernatant",
+    "Quick spin",
+    "Pipette out the last drop of EtOH",
+    "Speed Vac for 3&#39; or 5-7 min at room temperature.",
+    "Resuspend in 20ul of water ot Tris 10 mM pH 7.5 or 8.0"
+  ],
+  "authors": [
+    "Tomasz Suchan"
+  ],
+  "creator": "Tomasz Suchan",
+  "published_on": 1594140525,
+  "created_on": 1530525306,
+  "keywords": []
+}

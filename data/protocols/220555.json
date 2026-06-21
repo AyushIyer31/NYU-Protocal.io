@@ -1,0 +1,31 @@
+{
+  "id": 220555,
+  "title": "Sucrose Density Gradient Co-flotation of PPM1H and Rab10",
+  "uri": "sucrose-density-gradient-co-flotation-of-ppm1h-and-g3mjbyk4p",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g79o2kvwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"hrsxz\",\"text\":\"Sucrose gradient co-flotation assays are employed to assess the potential binding of mNeon-PPM1H phosphatase to unphosphorylated Rab10. Recombinant mNeon-PPM1H and Rab10 are incubated with 50 nm-diameter liposomes for 30 min at 30°C. The mixture is layered beneath a discontinuous sucrose gradient and then subjected to ultracentrifugation to resolve liposome-bound proteins. Following centrifugation, fractions are analyzed by immunoblotting to detect the distributions of both mNeon-PPM1H and Rab10.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"8r3vg\",\"text\":\"Freshly prepared liposomes work best\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"4rabk\",\"text\":\"1.  Eppendorf LoBind tubes, 0.5mL Catalog No. 0030108434\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8c529\",\"text\":\"2. Eppendorf LoRetention tips, 0.1-10uL Catalog No. 022493018\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3kjyk\",\"text\":\"2. Bacterially expressed, full length untagged mNeon PPM1H and full length untagged Rab10 Q68L.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"h7nor\",\"text\":\"3. Molecular grade sucrose (Millipore #573113)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ac7o0\",\"text\":\"4. Ultra-clear centrifuge tubes (Beckman Coulter #344090)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"omvhb\",\"text\":\"5. Freshly prepared 50nm liposomes (produced by using a mini hand extruder (Avanti # 610000 1EA).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "mNeon PPM1H and Rab10 are expressed in Escherichia coli BL21 (DE3) pLysS Rosetta cells. Protein purification is performed using Cobalt-affinity chromatography followed by size-exclusion chromatography. Details are available at: https://www.protocols.io/view/ppm1h-purificationfrom-e-coli-d67v9hn6. For Rab10 purification, 20 μM GTP is included in all buffers to stabilize the GTP-bound conformation. The Rab10 Q68L mutant is used to enrich for the GTP-bound state.",
+    "Small (50nm) unilamellar vesicles (SUVs) are formed by extrusion using (18:0-20:4)PC, (18:0-20:4)PI, (18:0-18:2)PS, (18:1) plus PI(4)P, and cholesterol at a molar ratio of 78:7:5:1:9 (Avanti Polar Lipids; ThermoFisher) to reproduce the composition of the trans Golgi network. Details can be found at:",
+    "https://www.protocols.io/view/preparation-of-unilamellar-liposomes-5qpvo3ke7v4o/v1",
+    "50 nm liposomes (1.5 mM) are incubated with mNeon PPM1H (1µM final) and Rab10 (3µM final) for 30 minutes at 30°C in a total volume of 33 μl of HKM buffer (20 mM HEPES pH-7.5, 150 mM potassium acetate and 1 mM magnesium chloride) containing 20µM GTP (HKM/GTP).",
+    "167 μl of 60% w/v sucrose (in HKM/GTP) is then added and mixed well with the above-mentioned suspension to adjust it to 50% sucrose final, 1X HKM/GTP.",
+    "This high sucrose suspension is carefully overlaid with 200 μl 25% w/v sucrose in HKM/GTP followed by 100 μl of HKM/GTP buffer.",
+    "The sample is centrifuged at 45000 RPM for 3 hours using an SW55Ti swinging bucket rotor.",
+    "Ten 50 μl fractions are manually collected from the top of the sucrose gradient by using a micropipette held against the side of the tube.",
+    "The fractions are then analyzed by Western blotting to detect mNeon PPM1H and Rab10 using anti-rabbit PPM1H antibody and anti-mouse Rab10 antibody.",
+    "This immunoblot shows the sucrose gradient flotation profile of PPM1H in the absence (top) or presence (bottom) of small 50nm liposomes. Top of the gradient is shown at left; mass of molecular weight marker in kDa is also shown at left. Reprinted from https://doi.org/10.1073/pnas.2315171120 ."
+  ],
+  "authors": [
+    "Ayan Adhikari",
+    "Suzanne R. Pfeffer"
+  ],
+  "creator": "Suzanne R Pfeffer",
+  "published_on": 1750290360,
+  "created_on": 1750277467,
+  "keywords": []
+}

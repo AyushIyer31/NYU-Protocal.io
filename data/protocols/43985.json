@@ -1,0 +1,28 @@
+{
+  "id": 43985,
+  "title": "High-throughput microbial metabarcoding amplification Protocol sequenced by DNBSEQ-G400",
+  "uri": "high-throughput-microbial-metabarcoding-amplificat-bn7rmhm6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bn7rmhm6",
+  "description": "{\"blocks\":[{\"key\":\"4a4ji\",\"text\":\"This protocol is used for bacteral 16S V4 and fungal ITS amplification following sequencing characterizaiton using DNBSEQ-G400 (previously known as BGISEQ-2000) sequencing platform.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Amplify the 16SV4 region and ITS region from samples using a pair of primers with unique barcodes. X refers to 6bp artificial DNA oligos as first-barcode. N refers to the 0-3 bases random nuclear acid, which used to shift sequences in template DNA to avoid synchronal signals caused by conserved DNA regions in amplicons while sequencing. %s %s",
+    "The PCR recipe was as follows: 1 mL of diluted template DNA, 1 mL of forward primer (10 M), 1 mL of reverse primer (10 M), 14.5 mL of nuclease-free water, 5 mL of 5X KAPA HiFi Buffer, 1 mL of KAPA dNTPs mix (10mM), and 0.5 mL of KAPA HiFi Polymerase. We amplified samples using the following cycling conditions: 98 °C for 00:03:00 ; 30 cycles of 98 °C for 00:00:20 , 55 °C for 00:00:20 , and 72 °C for 00:01:00 ; and then a final extension at 72 °C for 00:05:00 .",
+    "Run amplicons from each sample on an agarose gel. Note : Low-biomass samples may yield faint or no visible bands; alternative methods such as a Bioanalyzer could be used to verify presence of PCR product.",
+    "Quantify amplicons with invitrogen Qubit Fluorometric Quantitation dsDNA Assay Kit. Note: Follow manufacturer’s instructions.",
+    "Mix an equal amount ( 200 ng ) of amplicon from each sample with different barcodes into a single, sterile tube.",
+    "Here showes a schematic representation to summarize the previous steps for amplification protocol. Sample DNA could be amplified in 96-well plate, each plate used a unique barcode ligated with ITS specific primers. Each PCR product with different barcode was pooled together, then ligated with second barcode and sequencing primers in order to make sequencing library. Then each library was pooled for sequencing."
+  ],
+  "authors": [
+    "Xiaohuan Sun",
+    "Yuehua Hu",
+    "Zewei Song"
+  ],
+  "creator": "Xiaohuan Sun",
+  "published_on": 1612491596,
+  "created_on": 1603954451,
+  "keywords": []
+}

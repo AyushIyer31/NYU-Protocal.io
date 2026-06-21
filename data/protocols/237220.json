@@ -1,0 +1,23 @@
+{
+  "id": 237220,
+  "title": "Methods for Quantifying Fibrillar Collagen Alignment",
+  "uri": "methods-for-quantifying-fibrillar-collagen-alignme-hjwcb4pax",
+  "doi": "dx.doi.org/10.1007/978-1-4939-7113-8_28",
+  "description": "{\"blocks\":[{\"key\":\"cpqh0\",\"text\":\"Recent evidence has implicated collagen, particularly fibrillar collagen, in a number of diseases ranging from osteogenesis imperfecta and asthma to breast and ovarian cancer. A key property of collagen that has been correlated with disease has been the alignment of collagen fibers. Collagen can be visualized using a variety of imaging techniques including second-harmonic generation (SHG) microscopy, polarized light microscopy, and staining with dyes or antibodies. However, there exists a great need to easily and robustly quantify images from these modalities for individual fibers in specified regions of interest and with respect to relevant boundaries. Most currently available computational tools rely on calculation of pixel-wise orientation or global window-wise orientation that do not directly calculate or give visible fiber-wise information and do not provide relative orientation against boundaries. We describe and detail how to use a freely available, open-source MATLAB software framework that includes two separate but linked packages “CurveAlign” and “CT-FIRE” that can address this need by either directly extracting individual fibers using an improved fiber tracking algorithm or directly finding optimal representation of fiber edges using the curvelet transform. This curvelet-based framework allows the user to measure fiber alignment on a global, region of interest, and fiber basis. Additionally, users can measure fiber angle relative to manually or automatically segmented boundaries. This tool does not require prior experience of programming or image processing and can handle multiple files, enabling efficient quantification of collagen organization from biological datasets.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jkpv7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [],
+  "authors": [
+    "Yuming Liu",
+    "Adib Keikhosravi",
+    "Guneet S. Mehta",
+    "Cole R. Drifka",
+    "Kevin W. Eliceiri"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": "",
+  "created_on": 1494460800,
+  "keywords": []
+}

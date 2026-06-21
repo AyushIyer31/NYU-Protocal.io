@@ -1,0 +1,30 @@
+{
+  "id": 4977,
+  "title": "Create BLAST database using CyVerse",
+  "uri": "create-blast-database-using-cyverse-g4rbyv6",
+  "doi": "dx.doi.org/10.17504/protocols.io.g4rbyv6",
+  "description": "{\"blocks\":[{\"key\":\"5bke1\",\"text\":\"Shows how to create a BLAST db using CyVerse. This example creates a database from E. coli's genome due to size constraints. This protocol is intended to demonstrate the methodology to creat the db but will not have any practicality since the db is only of E. coli's genome. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"c1b6o\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"flhcn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"3fj1q\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Go to NCBI RefSeq FTP site (E. coli assembly). ftp://ftp.ncbi.nlm.nih.gov/genomes/refseq/bacteria/Escherichia_coli/latest_assembly_versions/GCF_000005845.2_ASM584v2",
+    "Click and download the 5th option, GCF_000214515.1_ASM21451v1_genomic.fna.gz. We will use this as an example given its small file size.",
+    "Open your terminal window. Mac users can open the terminal window by going to Applications &gt; Utilities &gt; Terminal.",
+    "Move into your Downloads directory. $ cd Downloads",
+    "Unzip the .gz file using gunzip. $ gunzip GCF_000214515.1_ASM21451v1_genomic.fna.gz",
+    "Log into CyVerse Discovery Environment. https://de.cyverse.org/de/",
+    "Upload GCF_000214515.1_ASM21451v1_genomic.fna to you CyVerse data store. Click on Data &gt; Upload &gt; Simple Upload from Desktop. a",
+    "Click on the Apps button. Search for BLAST.",
+    "Click on Create Blast Database.",
+    "Select the file you uploaded into your data store as the input file.",
+    "Leave other parameters the same and click &#34;Launch Analysis&#34;",
+    "You will receive a notification when the database has been created."
+  ],
+  "authors": [],
+  "creator": "James E Thornton Jr",
+  "published_on": 1486061568,
+  "created_on": 1486060216,
+  "keywords": []
+}

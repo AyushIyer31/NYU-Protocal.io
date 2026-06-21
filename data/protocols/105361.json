@@ -1,0 +1,38 @@
+{
+  "id": 105361,
+  "title": "EB Formation using Aggrewell 400/800",
+  "uri": "eb-formation-using-aggrewell-400-800-di5r4g56",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn64bpl5d/v2",
+  "description": "{\"blocks\":[{\"key\":\"5ojti\",\"text\":\"Embryoid body formation is the aggregate formation of hPS cells in a three-dimensional format to differentiate into specific lineages. In this,protocol we would discuss some important steps to ensure consistent EB formation using multiple cell lines. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"1t4ie\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"1e3u\",\"text\":\"Note: Coat some plates for passage of cells in case of low viability of cells. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":79}],\"entityRanges\":[],\"data\":{}},{\"key\":\"f9j45\",\"text\":\"Important: The quality of cells is significant for forming EBs. Some of the important checkpoints for ensuring perfect EB formation are as follows. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d4e5j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6t44k\",\"text\":\"The cells should not be used after thaw, at least one passage is necessary to ensure a good quality of cells for the formation of Ebs. The only exception would be hESC and if post-thaw cells are in colonies and are not spread apart or stretched. Even if the conditions are suitable, try doing at least a single passage to ensure increased viability and EB formation\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8k1gq\",\"text\":\"The cell should be confluent 80-90% before seeding in Aggrewell, If possible a 100% confluency on laminin 521 is also suitable.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6lh8n\",\"text\":\"If you get low viability (\\u003c85%) the general advice is to pass the cells onto a coated plate for the next passage into Aggrewells. With low viability, there is a higher chance of failure of EB formation and hence, waiting for one more passage and achieving higher viability in the next dissociation is more beneficial. \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"886ri\",\"text\":\"If the size of EB is a concern, Cells could be left in the EB stage for a longer period (up to 1 week) if the protocol allows.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"dv66h\",\"text\":\"All materials are from STEMCELL Technologies  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bomte\",\"text\":\"1. Agrewell 400 34460 and Aggrewell 800 catalog 34815\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bihnm\",\"text\":\"2. Anti-adherence rinsing solution 07010\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3o25t\",\"text\":\"3. Gentle Cell Dissociation Reagent 100-0485   \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cl34p\",\"text\":\"4. Rho-Kinase inhibitor Y27632\\n           \\n    \\n            \\n\\n    \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Add 2 mL of AggreWell Anti-adherence reagent Solution to each well to be used.",
+    "Centrifuge plate at 2000 x g (or maximum speed) for 5 minutes. Check for bubbles under the microscope, and spin again if needed.",
+    "Aspirate AggreWell Anti-adherence reagent from the wells, can be collected and used for future use.",
+    "Rinse each well with 2-5 mL of PBS. Aspirate PBS from the well.",
+    "Add 2 mL of warm complete medium to each well to be used.",
+    "Rinse each well containing cells with 2-5 mL of PBS. Aspirate PBS from the well.",
+    "Dissociate cells using a Gentle cell dissociation Reagent and prepare a single-cell suspension with the desired medium.",
+    "Count cells to determine the viable cell concentration.",
+    "Refer to the table to determine the number of cells required per well to achieve the desired number of cells per microwell. Note: The recommended range is 500 - 2000 cells per microwell. %s %s",
+    "Add media to the concentration of the single-cell suspension and add a sufficient volume to each well to achieve the desired cell number as per Table 1, considering the excess media added to the well in the previous step. Spread the cells in the Aggrewell to ensure uniform distribution",
+    "Add excess media depending upon the time needed for Eb formation determined from previous experiments or add around 5ml/7ml of media along with 20 uM Rho-kinase inhibitor (Y27632)",
+    "Immediately centrifuge the AggreWell plate at 100 x g for 3 minutes to capture cells in the microwells",
+    "Observe the plate under a microscope to verify that cells are evenly distributed among the microwells. Some of the cells will float but will settle down eventually if needed plates can be centrifuged again to ensure sufficient seeding in the Aggrewell.",
+    "Incubate the plate at 37°C with 5% CO2 and 95% humidity for 24 hours. Observe the cells under a microscope the next day.",
+    "Depending upon the shape and size of Ebs, they can be harvested as soon as 24 hrs but sometimes a longer incubation time of about 48-72 hrs to help some cell lines for more defined EB formation."
+  ],
+  "authors": [
+    "Niraj Sawarkar",
+    "Regine Tipon",
+    "Yasmine Nonose",
+    "Gist Gist Croft"
+  ],
+  "creator": "Gist Gist Croft",
+  "published_on": 1723661110,
+  "created_on": 1723660719,
+  "keywords": []
+}

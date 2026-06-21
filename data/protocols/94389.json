@@ -1,0 +1,29 @@
+{
+  "id": 94389,
+  "title": "Juxtacellular Recordings in Ventral tegmental area and Locus coeruleus",
+  "uri": "juxtacellular-recordings-in-ventral-tegmental-area-c8evzte6",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4q4novo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"2edmn\",\"text\":\"This protocol describes juxtacellular recordings in the VTA and LC of adult mice, involving anesthesia, precise brain targeting, and neuron labeling. Using specialized electrodes and a dual-channel amplifier, neuronal activity is recorded and modulated with current injections. Following recordings, brains are perfused, fixed, and sectioned for detailed morphological analysis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"9vnbf\",\"text\":\"Ensure all solutions and equipment are prepared and calibrated according to your lab standards.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9fpd7\",\"text\":\"Follow all ethical guidelines and protocols for animal care and use.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6oiqd\",\"text\":\"Maintain a sterile environment throughout the procedure to prevent contamination.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Use adult mice weighing 25-30 g. Anesthetize the animal with urethane at a dosage of 1.25 g/kg. Place the mouse in the stereotaxic frame and align the head angle according to Bregma and Lambda, with a tolerance of a maximum of 50 microns between them. Expose the skull by shaving the mouse&#39;s head and making a sagittal incision on the skin. Find the coordinates and drill the bone. Once the dura is exposed, carefully remove it with the forceps (n°). VTA: A/P 3.25, L/M 0.5 LC: A/P 5.34, L/M 1.1 Drill a small hole around Lambda and install the reference screw.",
+    "Employ an intracellular recording amplifier (NeuroData Dual channel IR-283), an analog-to-digital converter (CED Micro-1401-3), and the Spike2 software.. Use 5-16 MΩ (40-45 MΩ for intracellular) glass electrodes with a tip diameter of less than 1 μm. Fill the electrodes with a solution containing: 250 mM k-gluconate, 5 mM KCl, 1 mM MgCl2, 2 mM EGTA, 5 mM HEPES, 2 mM MgATP, and Tetramethyl-Rhodamin Biocytin tracer or Neurobiotin (2% w/v); pH 7.2.",
+    "After penetrating the brain, ensure the electrode impedance is correct by injecting 0.5 nA pulses and adjusting the bridge/balance module. Move down the electrode at a constant low speed until reaching the dorsal VTA (z=-4.0). Start the exploration by moving down not faster than a micron per second. Isolate spontaneously active neurons until the extracellular spike amplitude is approximately 0.7 to 1.0 mV (for intracellular penetration about 2.0-2.5 mV.) After baseline recordings, label neurons using the juxtacellular (Pinault, 1996) or intracellular methods.",
+    "For juxtacellular labeling: Label neurons by injecting a small current (1-4 nA for 5-10 minutes, 250 ms ON-250 ms OFF). Make sure that the neuron is being modulated by the current injection.",
+    "For intracellular labeling: Apply AC pulses to gain intracellular access. If unsuccessful, adjust by 2 micrometers and reapply AC pulses. Once intracellular access is achieved, stabilize neurons with negative current. Label neurons by injecting a small current (1-2 nA for 10-15 minutes, 250 ms ON-250 ms OFF).",
+    "Wait for at least 2 hours before perfusion.",
+    "Perfuse the animals via the ascending aorta with 0.01 M PBS followed by 4% paraformaldehyde in PBS. Post-fix brains between 6-12 hours in 4% PFA. Cryoprotect the brain in 30% sucrose until it sinks. Section the brains at 40 μm using a freezing microtome."
+  ],
+  "authors": [
+    "Cristian González-Cabrera",
+    "Kaushik S. More",
+    "Matthias Prigge"
+  ],
+  "creator": "Team Prigge",
+  "published_on": 1706689719,
+  "created_on": 1706613953,
+  "keywords": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": 60199,
+  "title": "Ganglia dissociation and single-cell sorting",
+  "uri": "ganglia-dissociation-and-single-cell-sorting-b62frgbn",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn79e6v5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"1vu5t\",\"text\":\"Protocol to dissociate freshly harvested stellate ganglia into single neurons and to sort them based on fluorescence\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"369cu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"7hvjq\",\"text\":\"We modified the dissociation methods from protocols previously published (Saxena et al., 2012, https://doi.org/10.2144/0000113878; Campbell et al., 2017, https://doi.org/10.1038/nn.4495)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":95,\"length\":34},{\"key\":1,\"offset\":154,\"length\":31}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"73DE7FA1D23011EC98820A58A9FEAC02\",\"url\":\"https://doi.org/10.2144/0000113878\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"896DD6DDD23011EC98820A58A9FEAC02\",\"url\":\"https://doi.org/10.1038/nn.4495\"}}}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"53p56\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1lvnm\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"1ep1t\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"65gj4\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"82q27\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"IMMUTABLE\",\"data\":{\"cellsMeta\":{\"A_1\":{\"className\":\"_dt-bold\"},\"B_1\":{\"className\":\"_dt-bold\"},\"C_1\":{\"className\":\"_dt-bold\"}},\"colTitles\":[\"\",\"\",\"\"],\"colWidths\":[100,100,100],\"data\":[[\"Instrument\",\"Provider\",\"Cat. no/SKU\"],[\"40 µm Cell Strainer\",\"Corning\",\"352340\"]],\"guid\":\"2ECFAC60B38F11ECBB50A39699E2863F\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"Instrument\",\"Provider\",\"Cat. no/SKU\"],[\"40 µm Cell Strainer\",\"Corning\",\"352340\"]],\"rowHeights\":[23,23]}},\"1\":{\"type\":\"tables\",\"mutability\":\"IMMUTABLE\",\"data\":{\"cellsMeta\":{\"A_1\":{\"className\":\"_dt-bold\"},\"B_1\":{\"className\":\"_dt-bold\"},\"C_1\":{\"className\":\"_dt-bold\"}},\"colTitles\":[\"\",\"\",\"\"],\"colWidths\":[100,100,100],\"data\":[[\"Reagent\",\"Provider\",\"Cat. no/SKU\"],[\"Earle's Balnced Salt Solution\",\"Thermofisher Scientific\",\"14155063\"],[\"Papain\",\"Worthington Biochemical\",\"LK003178\\t\"],[\"Collagenase/Dispase\",\"Roche\",\"11097113001\"],[\"D-trehalose\",\"Sigma-Aldrich\",\"90208\"],[\"AP-V\",\"Tocris\",\"0105\"],[\"kynurenic acid\",\"Sigma-Aldrich\",\"K-3375\"],[\"DNAse\",\"Worthington Biochemical\",\"LK003170\"],[\"Fetal Bovine Serum, certified, heat inactivated\",\"Fisher Scientific\",\"10-082-147\"],[\"DMEM\",\"Fisher Scientific\",\"11995073\"],[\"Bovine Serum Albumin\",\"Sigma\",\"A2153-50G\"],[\"RNAse-Free Water\",\"FIsherScientific\",\"BP5611\"],[\"Sytox blue\",\"Thermofisher Scientific\",\"S34857\"]],\"guid\":\"0D31F060B38D11ECB6074F756ADE71D0\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"Reagent\",\"Provider\",\"Cat. no/SKU\"],[\"Earle's Balnced Salt Solution\",\"Thermofisher Scientific\",\"14155063\"],[\"Papain\",\"Worthington Biochemical\",\"LK003178\\t\"],[\"Collagenase/Dispase\",\"Roche\",\"11097113001\"],[\"D-trehalose\",\"Sigma-Aldrich\",\"90208\"],[\"AP-V\",\"Tocris\",\"0105\"],[\"kynurenic acid\",\"Sigma-Aldrich\",\"K-3375\"],[\"DNAse\",\"Worthington Biochemical\",\"LK003170\"],[\"Fetal Bovine Serum, certified, heat inactivated\",\"Fisher Scientific\",\"10-082-147\"],[\"DMEM\",\"Fisher Scientific\",\"11995073\"],[\"Bovine Serum Albumin\",\"Sigma\",\"A2153-50G\"],[\"RNAse-Free Water\",\"FIsherScientific\",\"BP5611\"],[\"Sytox blue\",\"Thermofisher Scientific\",\"S34857\"]],\"rowHeights\":[23,23,23,24,23,23,23,23,23,23,23,23,23]}}}}",
+  "steps": [
+    "Place a freshly harvested Stellate Ganglion (SG) into an ice-chilled Earle’s Balanced Salt Solution (EBSS) that was equilibrated to 95% CO2/ 5% O2 for 1 hour",
+    "Carefully remove fat and connective tissue from the SG, and then transfer the SG to a new dish containing cold equilibrated EBSS",
+    "Cut the SG into 3-4 pieces using a small spring scissor, and placed all pieces gently into a low-bind 1.7 ml microcentrifuge tube containing 1,667 μl pre-heated (37°C) digestion solution for 1.5 h with constant agitation Digestion solution is composed of: 1034 μl Papain solution in EBSS 200 μl Collagenase/Dispase solution (20 mg/ml in EBSS) 167 μl D-trehalose solution (50% in RNase-free water) 3 μl AP-V solution (25mM in EBSS) 13 μl kynurenic acid solution (100mM in EBSS) 250 μl DNAse (vial D2 in EBSS)",
+    "During the digestion, prepare a digestion-stop solution: 1,050 μl 50% D-trehalose solution 11 μl 25 mM AP-V solution 44 μl of the 100 mM kynurenic acid, 250 μl of the DNAse solution 250 μl fetal bovine serum (FBS)",
+    "Prepare medium solution containing 1,050 μl 50% trehalose solution 8 μl the 25 mM AP-V 19ul 100 mM kynurenic acid 107 μl FBS in 9,450 μl D-MEM/F12",
+    "After the digestion, transfer half of the digestion solution with the tissue to a fresh low-bind microcentrifuge tube, and fill each tube with the digestion-stop solution",
+    "Invert the tubes a few times gently and centrifuge them at 300g at 4C for 5 min",
+    "Discard the supernatant and gently resuspend the pellet with 500 μl of the digestion-stop solution described above",
+    "We combined the contents into a single tube and triturated the SG carefully with fire-polished glass Pasteur pipettes that were pre-coated with 0.5% BSA in RNase-free water for at least 1h at room temperature",
+    "We progressively decreased the diameter of the pipettes from 300-400 μm to 150 μm during the trituration process",
+    "The contents were then divided again into two tubes and washed with 1 ml of the medium solution",
+    "We inverted the tube gently 10 times and centrifuged it at 300 g for 5 min",
+    "The supernatant was discarded and the pellets were gently re-suspended with 200 μl of the medium solution",
+    "The suspension was filtered using a 40 μm cell strainer and collected in a 15-ml plastic tube. We used Sytox blue (1:1000) to stain dead cells",
+    "Keep the cell suspensions on ice until sorting",
+    "Sort single cells into 96-well plates, We used FACSAria sorter with a square cuvette with a 130-μm nozzle at 12 PSI. We sorted based on the the signal from Alexa 488, Alexa 555, or the lack of any signal",
+    "Centrifugate the plates at 200g for 2 min and immediately freeze them on dry ice"
+  ],
+  "authors": [
+    "Seoeun Lee",
+    "Daniele Neri",
+    "Lori Zeltser"
+  ],
+  "creator": "Daniele Neri",
+  "published_on": 1657144893,
+  "created_on": 1648841116,
+  "keywords": []
+}

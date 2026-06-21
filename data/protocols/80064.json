@@ -1,0 +1,31 @@
+{
+  "id": 80064,
+  "title": "Image Registration of MALDI IMS to Microscopy",
+  "uri": "image-registration-of-maldi-ims-to-microscopy-cse8wbhw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5qpvor6xxv4o/v1",
+  "description": "{\"blocks\":[{\"key\":\"edkmq\",\"text\":\"Scope:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d29ge\",\"text\":\"To process to register MALDI IMS images to different types of microscopy images using IMS MicroLink and WSIREG.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Install Napari with IMS MicroLink plugin using https://github.com/NHPatterson/napari-imsmicrolink",
+    "Install the WSIREG plugin with Napari https://github.com/NHPatterson/wsireg",
+    "When complete, all images will be sampled in the same coordinates as the IMS pixel map.",
+    "Use MicroLink to align laser ablation marks from the post autofluorescence image to the IMS pixel map.",
+    "Use WsiReg to align other microscopy modalities. These modalities are aligned to the post autofluorescence image."
+  ],
+  "authors": [
+    "Nathan Heath Patterson",
+    "Jamie Allen",
+    "Angela R.S. Kruse",
+    "allison.b.esselman ",
+    "Ellie Pringy",
+    "Danielle Gutierrez",
+    "Jeff Spraggins"
+  ],
+  "creator": "Angela R.S. Kruse",
+  "published_on": 1680819056,
+  "created_on": 1680720215,
+  "keywords": []
+}

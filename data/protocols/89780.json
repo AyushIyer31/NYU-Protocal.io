@@ -1,0 +1,28 @@
+{
+  "id": 89780,
+  "title": "LRRK2 cloning, plasmid construction, and mutagenesis",
+  "uri": "lrrk2-cloning-plasmid-construction-and-mutagenesis-c3wuypew",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx35ddg8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"f0dlc\",\"text\":\"Protocol for Cloning, plasmid construction, and mutagenesis of LRRK2 and LRRK2-RCKW as done by Leschziner and Reck-Peterson Labs.\\n\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5fdhl\",\"text\":\"Original protocol by David Snead  and Yu Xuan Lin.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"d6msv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"bpo0i\",\"text\":\"Materials\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"99m2d\",\"text\":\"Q5 Site-Directed Mutagenesis (NEB)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d1vat\",\"text\":\"DH5α competent cells.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8ukqd\",\"text\":\"QIAprep Spin Miniprep Kit (Qiagen)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5eqse\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b3a19\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"b0aoc\",\"text\":\"Thermocycler\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e8jck\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "The DNA coding for LRRK2-RCKW residues 1327 to 2527 (taken from Mammalian Gene Collection) was PCR-amplified using the forward primer TACTTCCAATCCATGAAAA491AGGCTGTGCCTTATAACCGA and the reverse primer TATCCACCTTTACTGTCACTCAACAGATGTTCGTCTCATTTTTTCA. The DNA coding for LRRK2 was codon-optimized for Spodoptera frugipera (Sf9) cells and synthesized by Epoch Life Science.",
+    "The DNA for either LRRK2 and LRRK2-RCKW, containing a N-terminal His6-Z-tag and TEV protease cleavage site, was cloned into a pFB-6HZB vector (SGC) by ligation-independent cloning, RRID:Addgene_53641",
+    "LRRK2 variants were generated using Q5 Site-Directed Mutagenesis Kit (NEB).",
+    "Primers for G2019S mutant: Forward: gccaagatcgctgactacagcattgcccagtactgttgc Reversed: gcaacagtactgggcaatgctgtagtcagcgatcttggc Primers for I2020T mutant: Forward: ccaagatcgctgactacggaactgcccagtact Reversed: agtactgggcagttccgtagtcagcgatcttgg Using the following thermocycler conditions. 98 °C 00:00:30 ( 98 °C 00:00:10 50-72 °C 00:00:30 72 °C 00:13:00 72 °C 00:02:00 ) X25 cycles 4 °C Hold.",
+    "PCR products were subject to a KLD reaction (NEB), followed by a transformation into DH5α competent cells and plated on LB with antibiotics.",
+    "Colonies were picked and grown overnight for DNA extraction using Qiagen miniprep kit.",
+    "Extracted DNA plasmids were submitted for sequencing. The resulting plasmids were utilized for the generation of recombinant Baculoviruses according to the Bac-to-Bac expression system protocol (Invitrogen)."
+  ],
+  "authors": [
+    "David Snead",
+    "Yu Xuan Lin"
+  ],
+  "creator": "Amalia Villagran Suarez",
+  "published_on": 1698270685,
+  "created_on": 1698101365,
+  "keywords": []
+}

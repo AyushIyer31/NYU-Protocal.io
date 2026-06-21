@@ -1,0 +1,32 @@
+{
+  "id": 88641,
+  "title": "Conversion of Plasmid DNA to Minicircles",
+  "uri": "conversion-of-plasmid-dna-to-minicircles-c2s9yeh6",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4qzozvo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"alga9\",\"text\":\"Plasmid DNA is conventionally the choice of vector for cloning and delivering transgenes into cells. However, for site-specific integration into the host genome, it is desirable that only the transgene sequence is transferred without elements of the backbone.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a45ff\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"afcia\",\"text\":\"In this protocol, we describe a novel approach to converting plasmid DNA into DNA minicircles which consist exclusively of the transgene sequence. This approach takes advantage of the scalability of plasmids while enabling in vitro conversion to minicircles using standard molecular biology approaches, circumventing the need for special producer strains of bacteria.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"70f0v\",\"text\":\"NEBuilder HiFi DNA assembly cloning kit (NEB)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a7f7c\",\"text\":\"Type IIS restriction endonuclease (NEB)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7dieg\",\"text\":\"T4 DNA ligase (NEB)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ap7he\",\"text\":\"rCutSmart buffer (10X) (NEB)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dv1il\",\"text\":\"ATP (10X) (NEB)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4cgle\",\"text\":\"T5 exonuclease (NEB)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"akf5o\",\"text\":\"NEBuffer 4 (10X) (NEB)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a5im6\",\"text\":\"Qiaquick PCR purification kit (Qiagen)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Design a cloning site for the transgene which consists of outward-facing recognition sequences (RS) for a Type IIS restriction endonuclease: cloning_site = insert_left + rev_comp(RS) + stuffer + RS + insert_right The left and right sequences should be homologous to the transgene. A stuffer sequence of approximately 50 nt should be included between the recognition sequences to enable efficient double digestion of the cloning site.",
+    "Digest the backbone at the desired site for cloning the adaptor oligos and purify by gel separation and extraction.",
+    "Construct the following ssDNA oligo pool (oPool) to adapt the plasmid backbone for minicircle production: adaptor_oligo = plasmid_left + NNNN + cloning_site + NNNN* + plasmid_right Here, the left and right sequences should be homologous to the plasmid. Each oligo should consist of the cloning site flanked by a different pair of complementary 4 nt overhangs (NNNN, NNNN*).",
+    "Clone the adaptor oligos from the oPool directly into the linearized backbone via NEB HiFi assembly using the protocol for bridging dsDNA with ssDNA oligos .",
+    "Inoculate transformed bacteria directly into 100 mL of liquid broth with the appropriate selection antibiotic and culture for 24 hours at 37 C in a shaking incubator.",
+    "The next day, perform a midiprep to extract the library of adapted plasmids. Verify the diversity of the new cloning site by targeted PCR and Sanger sequencing with degenerate base calling.",
+    "Insert the transgene into the adapted plasmid using HiFi assembly at the new cloning site.",
+    "The following procedure for minicircle DNA synthesis is adapted from Oliynyk &amp; Church (2022). Using 12 ug of the plasmid library, set up the following digestion-ligation reaction: 6 uL Type IIS restriction endonuclease 6 uL T4 DNA ligase 10 uL ATP (10X) 10 uL rCutSmart buffer (10X) Make the reaction up to 100 uL volume with molecular-grade biology water.",
+    "As above, inoculate transformed bacteria directly into liquid culture and extract plasmids the next day.",
+    "Perform the following digestion-ligation reaction to excise the transgene from the plasmids and circularize them: 37 C for 2 hours 65 C for 30 minutes 4 C hold During this protocol, plasmids will be digested at the Type IIS endonuclease recognition sequences and then re-ligated at the diverse 4 nt overhangs within the plasmid library. Concatemer formation by trans-ligation of digested transgenes will be minimized by the diversity of the overhangs in this reaction (ensuring minicircles consist of 1 transgene sequence each).",
+    "To remove linear dsDNA from the reaction, add the following reagents directly to the mix: 5 uL T5 exonuclease 5 uL NEBuffer 4 (10X) Perform this final digestion at 37 C for 1 hour.",
+    "Using the Qiaquick PCR purification kit, purify the minicircles and elute in the desired volume (at least 10 uL). The expected yield from this protocol is ~ 1 ug per 6 ug of input plasmid DNA (~ 5 kb in size)."
+  ],
+  "authors": [
+    "Mathew Chu"
+  ],
+  "creator": "Mathew Chu",
+  "published_on": 1696230426,
+  "created_on": 1696197689,
+  "keywords": []
+}

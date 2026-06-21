@@ -1,0 +1,37 @@
+{
+  "id": 112817,
+  "title": "Functional assays via live‒cell imaging",
+  "uri": "functional-assays-via-live-cell-imaging-dser6bd6",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4wkn8vo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"bbd2t\",\"text\":\"Functional assays via live‒cell imaging\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Incubate cells with specific fluorescent dyes tailored to each desired measurement for 30 minutes at 37°C.",
+    "Wash cells twice with PBS",
+    "Conduct imaging using a Leica TCS SP8 confocal microscope equipped with a 63×/1.4 numerical aperture oil immersion objective",
+    "Use 100 nM tetramethylrhodamine methyl ester perchlorate (TMRM) and 100 nM MitoTracker Green (Invitrogen)",
+    "Use an excitation wavelength of 568 nm for TMRM and 488 nm for MitoTracker Green",
+    "Measure emitted fluorescence at wavelengths shorter than 574 nm for TMRM and between 490-530 nm for MitoTracker Green",
+    "Quantify TMRM intensity in mitochondria stained with MitoTracker Green using Fiji (version 2.7.0, RRID: SCR_002285",
+    "Set basal TMRM fluorescence intensity at 100% and determine background fluorescence after mitochondrial depolarization with FCCP. Subtract the background value from the basal value for corrected intensity",
+    "Incubate iPSC-derived neurons and astrocytes with 1 µM Fluo-4 AM (Invitrogen)",
+    "Use an excitation wavelength of 488 nm and emission range of 490-530 nm for Fluo-4 AM",
+    "Stimulate neurons with 0.6 mM KCl and astrocytes with 1 mM glutamate for 15 minutes following a 1-minute equilibration period to establish baseline fluorescence intensity",
+    "Acquire images every 25 seconds",
+    "Incubate cells with 1 µM DCF (Invitrogen)",
+    "Use an excitation wavelength of 488 nm and emission range of 490-530 nm",
+    "Measure fluorescence intensity using Fiji (version 2.7.0, RRID: SCR_002285)",
+    "Normalize fluorescence intensity values to baseline values.",
+    "Perform all measurements and analyses on data obtained from over 40 cells across three independent experiments"
+  ],
+  "authors": [
+    "Maria Jose Perez J."
+  ],
+  "creator": "Federico Bertoli",
+  "published_on": 1738603647,
+  "created_on": 1732634870,
+  "keywords": []
+}

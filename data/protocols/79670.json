@@ -1,0 +1,30 @@
+{
+  "id": 79670,
+  "title": "Reto F1016B.201.01",
+  "uri": "reto-f1016b-201-01-cr2wv8fe",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v9d42zg3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"341jb\",\"text\":\"-Armar un circuito RC\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"63oo1\",\"text\":\"-Medir el tiempo de carga del capacitor\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1t771\",\"text\":\"-Obtener mediciones e importarlas a matlab para compararlas con nuestro modelo matematico simulado \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fav9k\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"7lq1v\",\"text\":\"-1 Protoboard \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6429a\",\"text\":\"-1 Capacitor (10 μF)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7c7oa\",\"text\":\"-1 Capacitor (100 μF)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1cg7d\",\"text\":\"-1 Resistencia (1,000 Ohms) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a85b\",\"text\":\"-2 Resistencias (100 Ohms)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5lkcq\",\"text\":\"-1 Fuente de carga \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dqbhv\",\"text\":\"-2 Cables caiman \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1pnag\",\"text\":\"-6 Cables DuPont \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2ldp7\",\"text\":\"-1 Osciloscopio\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6hsap\",\"text\":\"-1 Sonda de Osciloscopio\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1l94\",\"text\":\"-1 Memoria USB\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b8ilj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Se necesita traducir los Ohms (Ω) que nos dan cierta combinacion de colores en las resistencias para así saber cual debemos utilizar. Puedes encontrar una imagen en internet que te diga cuanto vale cada banda de color, en nuestro caso utilizamos el siguiente sitio web: https://www.digikey.com.mx/es/resources/conversion-calculators/conversion-calculator-resistor-color-code Traducción de la resistencia con valor de 1kΩ Sample Traducción de la resistencia con valor de 100Ω",
+    "Para esta parte del experimento se necesitaran los siguientes materiales: 1 Capacitor de 10μF 1 Capacitor de 100μF Resistencia de 1000 Ohms 2 Resistencias de 100 Ohms 1 Protoboard Cables caiman Procedemos a montar el circuito para posteriormente concertarlo a la fuente de poder y al osciloscopio.",
+    "Colocas el primer cable en la mitad del protoboard, paralelo a este cable se coloca el segundo cable en la fila negativa del protoboard. Conectas el cable caiman positivo y el segundo cable caiman al negativo. Colocas la resistencia R1 y R2 paralelas a la resistencia RC. Ajustas la fuente de energia para comenzar la carga y descarga de los capacitores Antes de iniciar el experimento debes de verificar de que el capacitor este totalmente descargado",
+    "Calibrar el osciloscopio con los limites de 1V y 500ms",
+    "Colocar la fuente de energía a 5V",
+    "En la pantalla del Osciloscopio deberán de verse tus resultados",
+    "Tomas las medidas de voltaje en la carga y descarga",
+    "Guardas los datos en una memoria USB",
+    "Se repite este proceso 3 veces"
+  ],
+  "authors": [
+    "Natalia Gámez",
+    "Diego Zazueta Acosta"
+  ],
+  "creator": "Diego Zazueta Acosta",
+  "published_on": 1683461243,
+  "created_on": 1680106225,
+  "keywords": []
+}

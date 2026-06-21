@@ -1,0 +1,31 @@
+{
+  "id": 61597,
+  "title": "Diagnosis of hypertension based on TCM (Traditional Chinese Medicine) constitution and wrist pulse wave signal",
+  "uri": "diagnosis-of-hypertension-based-on-tcm-traditional-b8d5rs86",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"7r9qp\",\"text\":\"In previous studies, pulse signals have been analysed primarily to standardise and objectify pulse diagnosis, but the influence of TCM constitution on pulse signals and disease has been neglected. Our study links the wrist pulse wave signal to TCM constitution to find TCM constitution factors that predispose to disease while improving the accuracy of disease classification. Our specific approach is set out below. A wrist pulse signal sampler based on a piezoelectric sensor was designed and 95 healthy subjects and 20 hypertensive patients were invited to complete the CCMQ (Constitution in the Chinese Medicine Questionnaire), of which 48 completed the pulse wave signal. Meanwhile, we improved the Butterworth filtering algorithm to denoise the pulse wave signals, and after smoothing and period segmentation, we finally extracted 27 time-domain features and 8 wavelet packet energy features. Then, we used the independent sample t-test and binary logistic regression analysis to analyze the correlation between the prevalence of hypertension and TCM constitution and found that the three constitutions of YaD (Yang-deficiency), YiD (Yin-deficiency), and PW (Phlegm-wet) were significantly associated with whether the subjects suffered from hypertension. The final classification results showed that the fusion features after adding the three constitution features with a high correlation with hypertension had a 17.46% higher F-score than the classification model without the constitution features. It can be seen that the incorporation of constitution characteristics into pulse characteristics in this paper has important implications for disease classification. This also provides a basis for studying the correlation between TCM physical characteristics and certain diseases, and patients can adopt targeted TCM management techniques to prevent diseases in advance.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Pulse sampler",
+    "Design of pulse sampler",
+    "Proposed pulse preprocessing method Pulse de-noising Period segmentation",
+    "Pulse signal feature extract Time-domain features Energy features of wavelet packet",
+    "Statistical analysis Test of normality. Linearity test. Independent sample t-test. Binary Logistic Regression.",
+    "Disease classification"
+  ],
+  "authors": [
+    " Lin Fan",
+    "Zhong-Ming Wang",
+    "Rong zhang",
+    "Yan Li",
+    "Xiao-Kang Zhang",
+    "Anonymous"
+  ],
+  "creator": "Anonymous",
+  "published_on": 1651195905,
+  "created_on": 1651146097,
+  "keywords": []
+}

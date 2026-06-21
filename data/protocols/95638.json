@@ -1,0 +1,33 @@
+{
+  "id": 95638,
+  "title": "Senescence induction by DNA-damage in PCLS",
+  "uri": "senescence-induction-by-dna-damage-in-pcls-c9mwz47e",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvwdwpwlmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"eimqu\",\"text\":\"Precision-Cut Lung Slices (PCLS) are uniform, in size and thickness, tissue slices generated from human lungs that can be used for disease modeling, drug discovery and preclinical validation, while retaining the lung's cellular complexity and tissue architecture.\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bcd9q\",\"text\":\"This protocol describes two different methods for the induction of cellular senescence by DNA damage in PCLS, and collection of samples for different analysis and measurements.\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"2t77c\",\"text\":\"All steps involving human tissue must be conducted under BSL2 safety guidelines.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"3f3kk\",\"text\":\"To start this procedure, you must have PCLS (Precision-Cut Lung Slices) ready (check protocol DOI dx.doi.org/10.17504/protocols.io.36wgq3xr5lk5/v1).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"1lhdo\",\"text\":\"The protocol content here is for informational purposes only and does not constitute legal, medical, clinical, or safety advice, or otherwise; content added to protocols.io is not peer reviewed and may not have undergone a formal approval of any kind. Information presented in this protocol should not substitute for independent professional judgment, advice, diagnosis, or treatment. Any action you take or refrain from taking using or relying upon the information presented here is strictly at your own risk. You agree that neither the Company nor any of the authors, contributors, administrators, or anyone else associated with protocols.io, can be held responsible for your use of the information contained in or linked to this protocol or any of our Sites/Apps and Services.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":160,\"length\":12},{\"key\":1,\"offset\":631,\"length\":12}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"C37E11E3D65E11EEBBE90A58A9FEAC02\",\"url\":\"http://protocols.io\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"C37E11E3D65E11EEBBE90A58A9FEAC02\",\"url\":\"http://protocols.io\"}}}}",
+  "materials_text": "",
+  "steps": [
+    "Add 1 mL of media per well in 24-well plates DMEM F-12 media ( DMEM/F-12, powder, HEPES Thermo Fisher Scientific Catalog #12400024 ) + 1% FBS + 1% Penicillin-Streptomycin Penicillin-Streptomycin Merck MilliporeSigma (Sigma-Aldrich) Catalog #P00781 + 0.3 µg/mL Amphotericin B Amphotericin B solution Merck MilliporeSigma (Sigma-Aldrich) Catalog #A2942 .",
+    "Place one PCLS (1 cm diameter / 300 µm thick) per well with a brush.",
+    "Incubate o/n (overnight) at 37 o C, 5% CO 2 .",
+    "Change media for each condition: Control - Change media (above). Bleomycin - 15 μg/ml Bleomycin in media above. Bleomycin Fresenius Kabi Catalog #10361 DMSO - 1:100,000 DMSO in media above. Dimethyl sulfoxide (DMSO) Merck MilliporeSigma (Sigma-Aldrich) Catalog #D2438-50ML Doxorubicin - 0.1 μM Doxorubicin in media above. Doxorubicin hydrochloride Merck MilliporeSigma (Sigma-Aldrich) Catalog #D1515-10MG",
+    "Treatment: change media with 1ml/PCLS, diluted in DMEM media + 0.1% FBS + 1% Pen/Strep + 1% Amphotericin B",
+    "Prior to media exchange, collect supernatant (s/n) from each condition in 1.5 mL tubes and, store at -80 o C for future analysis.",
+    "Day 0 and 6: Snap freeze in liquid nitrogen: 4x PCLS per cryotube. Store at -80 o C for future analysis.",
+    "Days 0 and 6: Fix 2x PCLS with 1x fixative solution from β-galactosidase kit and stain for β-galactosidase as per manufacturer instructions. Senescence β-Galactosidase Staining Kit Cell Signaling Technology Catalog #9860",
+    "Days 0 and 6: Cell proliferation measurement: Use 2-3x PCLS to make 4x4 mm punches to perform WST-8 cell proliferation assay in a 96-well plate, following manufacturer&#39;s instructions. WST-8 Assay Kit (Cell Proliferation) Abcam Catalog #ab65475",
+    "Days 0, 2,4 6: Fix PCLS in 4% formaldehyde/PBS for 30 minutes (2x PCLS per condition). 16% Formaldehyde (w/v), Methanol free Life Technologies Catalog #28908 Then wash twice with PBS and store at 4 o C in PBS. Use 1-2 slices for paraffin embedding, and posterior histological analysis.",
+    "Collect PCLS at Day 0, 2, 4 and Day 6 for different baseline and final timepoint measurements."
+  ],
+  "authors": [
+    "Delphine Beaulieu",
+    "Nayra Cardenes",
+    "Melanie Königshoff"
+  ],
+  "creator": "Nayra Cardenes",
+  "published_on": 1721062364,
+  "created_on": 1708636411,
+  "keywords": []
+}

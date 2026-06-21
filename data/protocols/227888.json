@@ -1,0 +1,41 @@
+{
+  "id": 227888,
+  "title": "Fecal or caecal waters sample preparation for untargeted GCMS-based metabolomic",
+  "uri": "fecal-or-caecal-waters-sample-preparation-for-unta-hasqb2edx",
+  "doi": "dx.doi.org/10.17504/protocols.io.5qpvodqw9g4o/v1",
+  "description": "{\"blocks\":[{\"key\":\"bs1vf\",\"text\":\"The following protocol describes the preparation of fecal or caecal water samples for non-targeted analysis by mass spectrometry coupled to gas chromatography as proposed by the PFEM (MetaboHUB-Clermont).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"13i3q\",\"text\":\"The steps cover the sample preparation and quality control. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9n0v3\",\"text\":\"The expected outcome of this protocol is a list of fecal or caecal water samples ready for analysis by GCMS.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"b7u65\",\"text\":\"Randomise the order in which samples are prepared and organize them according to this order.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9n47j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9em6u\",\"text\":\"Sigma 3-16PK centrifuge (Fischer Bioblock Scientific)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aeo5h\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Weigh samples as described in the table 1 and stored at -80 °C . Then, freeze dry or steal (or glass) ball agitator each sample. Species Quantity of stools milliQ water vol 1 Rat 100 mg 1 mL 2 mini Pig 300 mg 3 mL 3 Human 5 to 8 g not neccessary 4 Mouse 50 mg 0,5 mL Table 1 : stools quantity and milliQ water volumes depending on the species",
+    "Thaw FW or CW sample at 4 °C , vortex 00:00:10 then add a 2-fold volume of ice-cold ULC/MS grade methanol Biosolve Catalog #0013684101BS (CAS: 67-56-1) into FW or CW samples (Table2). Species FW or CW volumes 1 Mouse 300 µL 2 Rat 300 µL 3 Mini Pig 500 µL 4 Human 500 µL Table 2 : FW or CW volumes depending on the species",
+    "Dry samples completely using a EZ2.3 genevac system (Biopharma Technologies France). (Genevac EZ-2, EZ-2, https://www.spscientific.com/Products/Centrifugal_Evaporators___Sample_Concentrators/Genevac/EZ-2_Series/EZ-2_Series/, https://s3.amazonaws.com/pr-journal/7mi2jk6.png )",
+    "Prepare a fresh solution of Methoxyamine hydrochloride Merck Catalog #89803-1G (CAS: 593-56-6) ( 15 mg/mL ) in Pyridine Merck MilliporeSigma (Sigma-Aldrich) Catalog #360570 . The volume of this solution depends on the number of samples to be analysed ( 80 µL for each samples). Dissolve the dry samples in adding 80 µL of methoxylamine solution to each vial.",
+    "Add 2 µL of NaN3 Merck MilliporeSigma (Sigma-Aldrich) Catalog #S2002-5G (CAS: 26628-22-8) (an anti-microbial agent : 100 mg/mL ) per/g of FW or CW to the supernatants.",
+    "At the same time, a derivatization control sample (sample was substitued by milliQ water) was prepared in order to remove the background noise produced during sample preparation, derivatization, and GC/MS analysis.",
+    "Transfer 90 µL supernatant to glass vial. Spike 10 µL of 100 mg/mL IS L-VALINE (1-13C, 99%) Eurisotop Catalog #CLM-470-MPT-PK (CAS: 81201-85-6) ) to vial.",
+    "FW or CW aliquots depending to obtained volume and store at -80 °C in Eppendorf tubes to derivatization.",
+    "FW or CW come from homogenized stool samples (with or without water) ultra-centrifuged at 4 °C 50000 rpm, °C, (171500 g, Beckman Ti 70.1 rotor) 02:00:00 .",
+    "Fecal (FW) or caecal (CW) water samples were obtained from stools which are more or less dry depending on the species.",
+    "Vortex vigorously for 00:01:00 and incube at 37 °C for 24:00:00 (in order to inhibit the cyclization of reducing sugars and the decarboxylation of α-keto acids).",
+    "Add 80 µL of BSTFA + 1% TMCS Silylation Reagent Thermo Fisher Catalog #TS-38833 in the mixture and derivatize at 70 °C 01:00:00",
+    "Wait a few minutes for samples to cool and transfer 50 µL of derivatized mixture in a glass vial containing 100 µL of Heptane Merck MilliporeSigma (Sigma-Aldrich) Catalog #246654-100mL (CAS: 142-82-5) prior to injection. Store blank and biological samples at 4 °C until further analysis",
+    "As well as a sample pool is formed from 10 µL of each extracted and derivatized sample to monitor the drift of the spectrometer during GCMS analysis.",
+    "Transfer 50 µL of sample pool in a glass vial containing 100 µL of heptane prior to injection, repeat this step 8 times (for preprocessing analysis). Store pool samples at 4 °C until further analysis.",
+    "Remove the supernatant and store it in Eppendorf tubes.",
+    "Vortex and keep the samples at -20 °C 00:30:00",
+    "Centrifuge the samples (Sigma 3-16PK, Fuscher Bioblock Scientific) 15000 rpm, 4 °C, 10 minutes"
+  ],
+  "authors": [
+    "Carole MIGNÉ",
+    "Charlotte JOLY",
+    "Stéphanie DURAND",
+    "Estelle Pujos-Guillot"
+  ],
+  "creator": "Carole MIGNÉ",
+  "published_on": 1773226607,
+  "created_on": 1758543531,
+  "keywords": []
+}

@@ -1,0 +1,38 @@
+{
+  "id": 230233,
+  "title": "Characterization of VPS13Cs binding to GUVs",
+  "uri": "characterization-of-vps13cs-binding-to-guvs-hc3zb2yp7",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbwko1gpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"b74g6\",\"text\":\"VPS13C is a ER-lysosome contact site protein that transports lipids between the two organellar membranes and important for lysosomal membrane damage repair. We employed structure-function analysis of purified VPS13C and uncovered novel regulatory mechanisms. Here, we describe the protocol to characterize VPS13C's binding to giant unilamellar vesicles (GUVs), where we discovered VPS13C's binding to membrane depends on its ATG2_C region recognizing membrane packing defects.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"ekrkp\",\"text\":\"POPC (Cat. #850457)\\nLissamine Rhodamine PE (Rhod-PE; Cat. #810150)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3422k\",\"text\":\"DOPS (Cat. #840035, Avanti Polar Lipids)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"47kq8\",\"text\":\"Cy5-DOPE (Cat. #810335, Avanti Polar Lipids)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f7p53\",\"text\":\"DOG (Cat. #800811, Avanti Polar Lipids)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ltss\",\"text\":\"APTES ((3-aminopropyl) trimethoxysilane; Cat. #A3648, Sigma Aldrich)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3hsii\",\"text\":\"glutaraldehyde (GA; Cat. #G6257, Sigma Aldrich)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"819np\",\"text\":\"ammonium persulfate (APS; Cat. #248614, Sigma Aldrich) \\nN,N,N′,N′-tetramethylethylenediamine (TEMED; Cat. #1610801, Bio-Rad)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4hl17\",\"text\":\"acrylamide (AA; 40% w/v, Sigma Aldrich, A4058)\\nN,N′-methylenebisacrylamide (BAA; 2% w/v, Cat. #M1533, Sigma Aldrich)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "GUVs were generated as previously described. Generation of Giant Unilamellar Vesicles (GUVs) Using Polyacrylamide Gels.. Bio-protocol. Sonicate coverslips in distilled water and ethanol, then incubate in 10% APTES in ethanol for 00:30:00 at room temperature.",
+    "Remove coverslips, wash with water, and dry at 50 °C for 00:30:00 .",
+    "Place 30 μL gel solution on a clean glass plate and lay the treated coverslip on top. Allow the gel to polymerize for 00:15:00 .",
+    "Initiate polymerization by adding 10 μL APS and 1 μL TEMED TEMED Bio-Rad Laboratories Catalog #1610801 .",
+    "Prepare the PAA gel solution by mixing 250 μL acrylamide, 10 μL bis-acrylamide N,N’-methylenbisacrylamide Merck MilliporeSigma (Sigma-Aldrich) Catalog #M1533 , and 729 μL H2O. Degas the solution under vacuum for 00:30:00 .",
+    "Wash coverslips with distilled water, dry, and store at 4 °C .",
+    "Wash coverslips with ethanol and distilled water, then incubate in 2.5% Glutaraldehyde solution Merck MilliporeSigma (Sigma-Aldrich) Catalog #G6257 (CAS: 111-30-8) in PBS for 00:30:00 .",
+    "Add 1 mL buffer containing 500 mM sucrose and 25 mM HEPES, pH 7.4, then incubate Overnight to form GUVs.",
+    "Place the gel-coated coverslips in 6-well plates and apply 20 μL lipid solution to each gel. Spread evenly and evaporate the solvent under vacuum for 00:40:00 .",
+    "Prepare lipid mixtures in chloroform at 1 mg/mL. For POPC-GUVs, use 89.5% POPC 16:0-18:1 PC (POPC) Avanti Polar Lipids, Inc. Catalog #850457 , 10% DOPS 12-dioleoyl-sn-glycero-3-phospho-L-serine (sodium salt) Avanti Polar Lipids, Inc. Catalog #840035 , and 0.5% Rhod-PE Rhod-PE Avanti Polar Lipids, Inc. Catalog #810150 or Cy5-DOPE 18:1 Cy5 PE Avanti Polar Lipids Catalog #810335 . For DOG-GUVs, use 59.5% POPC, 10% DOPS, 30% DOG 18:1 DG (format: Chloroform) Avanti Polar Lipids Catalog #800811C , and 0.5% Rhod-PE or Cy5-DOPE.",
+    "Collect GUVs by gentle pipetting and transfer to clean 1.5 mL tubes.",
+    "Add 1 μL GUVs to a BSA-passivated 35 mm glass-bottom MatTek dish.",
+    "Analyze images in ImageJ.",
+    "Acquire images using the spinning-disk super-resolution microscope.",
+    "Incubate with 4 μL purified protein at 300 nM working concentration, or with cell lysate, for 00:10:00 at Room temperature ."
+  ],
+  "authors": [
+    "xinbo.wang",
+    "Dazhi Li",
+    "Pietro De Camilli",
+    "Karin Reinisch"
+  ],
+  "creator": "Dazhi Li",
+  "published_on": 1780434179,
+  "created_on": 1760911392,
+  "keywords": []
+}

@@ -1,0 +1,24 @@
+{
+  "id": 74086,
+  "title": "Cost-efficient Yeast genome Flongle library ",
+  "uri": "cost-efficient-yeast-genome-flongle-library-ckkeuute",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvwjb2wlmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"chbso\",\"text\":\"A cost-efficient protocol for constructing a Flongle library.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"cgqfm\",\"text\":\"PEG/NaCl precipitation buffer (see Rocky Mountain adventure protocol)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"egcvf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1l34\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"bnfe8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5p99v\",\"text\":\"PEG wash buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2av36\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1hrdh\",\"text\":\"Dilute PEG/NaCl precipitation buffer with the same amount of water.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"IMMUTABLE\",\"data\":{\"cellsMeta\":{},\"colTitles\":[\"\",\"\"],\"colWidths\":[\"116\",100],\"data\":[[\"PEG 8000\",\"9% (w/v)\"],[\"NaCl\",\"1 M\"],[\"Tris-HCl (pH 8.0)\",\"10 mM\"]],\"guid\":\"BD0EA6D07CF111EDA794BDD7F9E714F2\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"PEG 8000\",\"9% (w/v)\"],[\"NaCl\",\"1 M\"],[\"Tris-HCl (pH 8.0)\",\"10 mM\"]],\"rowHeights\":[23,23,23]}}}}",
+  "steps": [
+    "Assemble the following components to end repair and add A to the genomic sample: A B 1 Ultra II buffer 1.75 2 End repair buffer 1.75 3 Ultra II enzyme 1 4 End repair enzyme 1 5 DNA x (500 ng) 6 MQ 44.5 - x Incubate at 20 °C for 00:05:00 , then 65 °C for 00:05:00 .",
+    "Add 50 µL of Ampure beads (or equivalent beads) and mix well. Wash with 75 % EtOH twice and elute with 11 µL of 10 millimolar (mM) Tris-HCl (pH 8.0). Keep the tube on the magnetic rack and do not disturb the beads while washing with 75% EtOH. Use 1 µL of the solution to check the concentration with Qubit. The concentration needs to be at least 30 ng/uL .",
+    "Assemble the following components for ligation: A B 1 DNA 10 uL 2 TLB 4 uL 3 Quick ligase 1.5 uL 4 AMX 0.8 uL Incubate at Room temperature for 00:30:00 . Add 2.3 µL of 5 Molarity (M) NaCl and incubate at Room temperature for 00:30:00 and then cfg at max speed for 00:20:00 . Remove sup and add PEG wash buffer, cfg at max speed for 00:01:00 . Remove sup and add 11 µL of 10mM Tris-HCl (pH 8.0) and incubate at 4 °C for Overnight . Check the concentration with Qubit.",
+    "Assemble the following priming solution: A B 1 FLB 2.5 uL 2 FB 97.5 uL and the library mix solution: A B 1 DNA x uL (100 ng) 2 SB II 10 uL 3 LB II 4 uL 4 MQ 6 - x uL . Load them and start sequencing."
+  ],
+  "authors": [
+    "Yutaro Hori"
+  ],
+  "creator": "Yutaro Hori",
+  "published_on": 1671176573,
+  "created_on": 1671158382,
+  "keywords": []
+}

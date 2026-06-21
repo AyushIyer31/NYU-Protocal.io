@@ -1,0 +1,27 @@
+{
+  "id": 7455,
+  "title": "Github ssh keys",
+  "uri": "github-ssh-keys-jh7cj9n",
+  "doi": "dx.doi.org/10.17504/protocols.io.jh7cj9n",
+  "description": "{\"blocks\":[{\"key\":\"9cthp\",\"text\":\"Set up ssh keys to make login to the HPC easy!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"7n9vd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"j464\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"dh9iv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Login to your Github account and choose the &#34;Settings&#34; under your menu. a",
+    "Select the SSH Keys section on the left (1) and then click on &#34;New SSH key&#34; in the upper-right (2). a",
+    "Copy the public key (~/.ssh/id_rsa.pub) from your system (laptop, HPC, etc.) and paste it into the &#34;Key&#34; and give the key a title like &#34;laptop&#34; or &#34;UA HPC,&#34; then click on the big green &#34;Add SSH Key&#34; button. a",
+    "Clone your project via SSH. a",
+    "If you had previously checked out your using HTTPS, you can edit the &#34;.git/config&#34; in your checkout directory to change the &#34;https&#34; to &#34;ssh&#34;: a",
+    "You should now be able to push/pull from your repo without having to type your Github password."
+  ],
+  "authors": [
+    "Ken Youens-Clark",
+    "Bonnie L Hurwitz"
+  ],
+  "creator": "Bonnie L Hurwitz",
+  "published_on": 1503418179,
+  "created_on": 1503417771,
+  "keywords": []
+}

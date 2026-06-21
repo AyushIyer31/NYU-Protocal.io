@@ -1,0 +1,36 @@
+{
+  "id": 110334,
+  "title": "Microscopy imaging of SUM159PT cells expressing fluorescent endosomal proteins ",
+  "uri": "microscopy-imaging-of-sum159pt-cells-expressing-fl-dpy65pze",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvr8173lmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"fveul\",\"text\":\"SUM159PT cells allow for imaging of various organelles expressing fluorescent markers of interest. We describe methods for examining expression of TMEM9-GFP and mCherry-CLCN3 in these cells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"en1v9\",\"text\":\"pHAGE-mCherry-CLCN3(Addgene, 225514) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c4o34\",\"text\":\"pHAGE-TMEM9-EGFP (Addgene, 225515)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7davv\",\"text\":\"SUM159PT cells (RRID:CVCL_5423)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dknqc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fa1l3\",\"text\":\"anti-GFP (Thermo Scientific, a10262)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"i3t\",\"text\":\"anti-mCherry (Thermo Scientific, M11217)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a98r3\",\"text\":\"anti-EEA1 (Cell Signaling Technology, C45B10)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cso4g\",\"text\":\"anti-LAMP1 (Cell Signaling Technology, D2D11)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "SUM159PT cells (a gift from Tobias Walter (Memorial Sloan Kettering); RRID:CVCL_5423) are cultured in 6-well culture dishes (300 000 cells/well) with DMEM/F12 supplemented with GlutaMAX, 5% fetal bovine serum, 1μg/ml hydrocortisone and 5μg/ml insulin.",
+    "Lentiviral vectors for pHAGE-mCherry-CLCN3 or pHAGE-TMEM9-EGFP were packaged in HEK293T cells (ATCC #CRL-3216; RRID:CVCL_0045) as described ( https://dx.doi.org/10.17504/protocols.io.6qpvr3en3vmk/v1 ). Cells were co-transfected at 60% confluency with pPAX2, pMD2 and the target vector in a 4:2:1 ratio using polyethylenimine.",
+    "One day after transfection, cells are selected with puromycin (5 µg/mL) and plated into 24-well glassbottom culture dishes for imaging (50 000-100 000 cells/well).",
+    "For immunofluorescence staining, SUM159PT cells are fixed with 4% paraformaldehydein PBS for 15min at room temperature.",
+    "Cells are blocked with 3 % BSA in PBS with 0.1% Triton X-100 for 1h at room temperature.",
+    "Incubate the cells with primary antibodies (anti-GFP, anti-mCherry, anti-LAMP1, or anti-EEA1) (1:200 dilution) in 3% BSA in PBS with 0.1% Triton X-100 for 3h at 4°C.",
+    "Incubate cells with Alexa Fluor secondary antibodies (1:400) for 1h at 4°C in 3% BSA in PBS with 0.1% Triton X-100.",
+    "Wash cells with PBS and maintained in PBS at 4°C until microscopy analysis.",
+    "Imaging steps will depend on the specific microscopes and fluorophores used.",
+    "Use Fiji/ImageJ software to display z-series as maximum intensity projections.",
+    "For colocalization analysis, calculate Mander’s correlation coefficients between two channels with BIOP JACoP plugin in Fiji.",
+    "One day later, lentiviral supernatants from the HEK293 cells are used to infect SUM159PT. Alternatively, SUM159PT cells are transfected with 500ng of plasmids using FuGENE and Optimem transfection reagent and incubated at 37°C and 5% CO 2 .",
+    "Cells are permeabilized with 0.5% Triton X-100 in PBS for 10 min at room temperature.",
+    "Remove primary antibody and wash 5 times with 1 mL of PBS.",
+    "Stain nuclei with Hoechst33342 (1:10000) for 5 min."
+  ],
+  "authors": [
+    "Harper JW",
+    "Miguel A. Gonzalez-Lozano"
+  ],
+  "creator": "Harper JW",
+  "published_on": 1743186665,
+  "created_on": 1729276348,
+  "keywords": []
+}

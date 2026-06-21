@@ -1,0 +1,42 @@
+{
+  "id": 83638,
+  "title": "Single cell dissociation of healthy paediatric skin ",
+  "uri": "single-cell-dissociation-of-healthy-paediatric-ski-cvwww7fe",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvwd6kwlmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"81mgj\",\"text\":\"This protocol outlines the method for the enzymatic dissociation of healthy paediatric skin \\u003e3mm into a single cell suspension.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"3nkcm\",\"text\":\"This protocol includes an overnight incubation step.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"cp17p\",\"text\":\"Do not forget to record the metadata for this sample. Before starting, clean MSC Class II with 70% ethanol and make up virkon. Ensure you have all materials needed to carry out the protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"50hf9\",\"text\":\"This protocol uses sharp objects.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"9clim\",\"text\":\"Petri dish\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f795q\",\"text\":\"Scalpel\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a8uie\",\"text\":\"Forceps\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"87nok\",\"text\":\"100 micron fiilters\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6913b\",\"text\":\"RPMI\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"v567\",\"text\":\"RF-10 (RPMI plus 10%FCS, 1% Pen-strep and 1% L-glut)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c2lnh\",\"text\":\"48-well v bottom plate\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7obsh\",\"text\":\"PBS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"61t49\",\"text\":\"Dispase (Roche)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"91cps\",\"text\":\"Collagenase Type IV (Worthington)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d8ivr\",\"text\":\"50ml Falcon Tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8cni3\",\"text\":\"Flow Buffer (PBS 2% FCS and 2mM EDTA)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Empty sample onto petri dish and wash sample with PBS",
+    "Cut off lower dermis and fat and place in well of 48-well plate with 1ml RPMI",
+    "Place epidermis and upper dermis sample in a 48 well V-bottom plate with 1ml RPMI and 20µL Dispase",
+    "Take plate out of fridge and empty epidermis/upper dermis onto new petri dish, remove collagenase type IV from -80 freezer",
+    "Using forceps, separate epidermis and upper dermis and place each separately into new wells of the 48-well plate",
+    "Place 1ml RPMI in each well of plate containing epidermis and upper dermis",
+    "Add collagenase type IV 1:100 (10µL) to each of the tissues (epidermis, upper dermis and lower dermis)",
+    "Place in incubator and incubate at 37°C for 3 hours",
+    "Remove from incubator and, using 1ml pipette, pipette each tissue up and down to ensure the tissue has dissociated",
+    "Pipette through 100micron filter into separate 50ml Falcon tubes",
+    "Wash out each well an additional 3 times with 1ml RF-10 and pass through filter",
+    "Wash filter with 25ml RF-10 and adjust so each Falcon tube has the same volume",
+    "Centrifuge at 500g for 5 mins at 4deg (9acc/dec) 500 x g, 4 °C,",
+    "Pour off supernatant",
+    "Resuspend pellet with 1ml of Flow Buffer",
+    "Take 10µL for cell count and count using Trypan Blue and C-Chip Haemocytometer, record number of cells isolated for each tissue",
+    "Add parafilm to plate and leave in 4°C fridge overnight",
+    "Record sample meta data and assess size of sample Sample",
+    "If sample is &lt;3mmx3mm freeze and embed sample in OCT (see other protocol), if sample is &gt;3mmx3mm continue with protocol",
+    "If sorting for single cell RNA seq, continue with antibody staining and FACS protocol or if freezing down cells, continue with viable cell freezing protocol"
+  ],
+  "authors": [
+    "Emily Stephenson",
+    "Chloe Admane",
+    "Keval Sidhpura"
+  ],
+  "creator": "Emily Stephenson",
+  "published_on": 1687341261,
+  "created_on": 1687185733,
+  "keywords": []
+}

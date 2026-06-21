@@ -1,0 +1,37 @@
+{
+  "id": 92975,
+  "title": "Expression and purification of LRRK2 constructs",
+  "uri": "expression-and-purification-of-lrrk2-constructs-c62pzgdn",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn314pl5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"719mm\",\"text\":\"Expression and purification of human LRRK2 and its variants from insect cells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"ckidf\",\"text\":\"if not otherwise mentioned every step was performed on ice.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ajpd8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"fmr5l\",\"text\":\"Buffers, beads, columns are chillled at 4°C prior to use.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"8npv\",\"text\":\"All experiments were performed under the rules of S1 lab regulations.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"7nd1b\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"ac0ig\",\"text\":\"Centrifuge: Thermo Scientific Sorvall LYNX 6000\\nAKTA: ÄKTA start; ÄKTA Pure 25\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bv4td\",\"text\":\"Ni-NTA (Cytiva #17531803)\\nSP-sepharose column (Cytiva #17505701)\\nHiLoad 16/600 Superdex 200 pg gel filtration column\\nAmicon Ultra 15 mL Centrifugal Filters 10,000 MWCO (Millipore)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9dbcv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e44jn\",\"text\":\"Buffers\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"ficnf\",\"text\":\"Lysis buffer: 50 mM HEPES 7.4 , 500 mM NaCl, 20 mM imidazole, 5 mM MgCl2, 20 µM GDP, 0.5 mM TCEP, 5% glycerol\\nNi-NTA elution buffer: 50 mM HEPES 7.4, 500 mM NaCl, 300 mM imidazole, 5 mM MgCl2, 20 µM GDP, 0.5 mM TCEP, 5% glycerol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":71,\"length\":1},{\"style\":\"sub\",\"offset\":190,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6kmqk\",\"text\":\"no salt buffer: 20 mM HEPES 7.4, 5 mM MgCl2, 20 µM GDP, 0.5 mM TCEP, 5% glycerol\\nhigh salt buffer: 20 mM HEPES 7.4, 2.5 M NaCl, 5 mM MgCl2, 20 µM GDP, 0.5 mM TCEP, 5% glycerol\\ngel filtration buffer: 20 mM HEPES 7.4, 150 mM NaCl, 5 mM MgCl2, 20 µM GDP, 0.5 mM TCEP, 0.5% glycerol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":42,\"length\":1},{\"style\":\"sub\",\"offset\":137,\"length\":1},{\"style\":\"sub\",\"offset\":238,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "exponentially growing SF9 cells (2x10^6 cells/mL in Lonza Insect-XPRESS medium) are transduced with high-titre bacculovirus suspension (encoding TEV cleavable N-terminally His6-Z-tagged human LRRK2).",
+    "After shaking with 90 rpm, °C, at 27 °C for 66:00:00 , cells are harvested by centrifugation.",
+    "Pellets are washed once with PBS and frozen until further use.",
+    "Cell pellets are resuspended in lysis buffer and lysed by sonication on ice using a 13-mm probe (35% amplitude, 5 sec pulse, 10 sec pause, 5 min total pulse time).",
+    "Lysate is cleared by ultracentrifugation for 1 hour with 100.000 x g, 4 °C,",
+    "Clarified lysate is loaded onto pre-equilibrated Ni-NTA in gravity flow columns.",
+    "After extensive washing with lysis buffer (20 CV), the His-tagged protein is eluted with elution buffer containing 0.300 Molarity (M), Imidazole",
+    "After dilution of the eluate&#39;s salt concentration to 250 millimolar (mM), NaCl using no salt buffer, the protein is loaded onto a SP sepharose column connected to an Äkta Start system (Cytiva).",
+    "After washing with buffer containing 250 millimolar (mM), NaCl the bound LRRK2 construct is eluted with a salt gradient ranging from 250 mM to 2.5 M NaCl while elution fractions are collected throughout the run.",
+    "Peak fractions are pooled and TEV protease (molar ratio of 1:100) is added during overnight incubation rolling at 4 °C .",
+    "Cleaved tag, TEV protease and other contaminating proteins are removed by an combined SP sephareose-Ni-NTA rebinding.",
+    "LRRK2 construct is concentrated and subjected to gel filtration in gel filtration buffer on a HiLoad 16/600 S200 column using an Äkta Pure system.",
+    "Peak fractions are combined, the protein is concentrated.",
+    "the UV absorbance is measure and the protein is flash frozen in liquid nitrogen for storage."
+  ],
+  "authors": [
+    "Verena Dederer",
+    "Deep Chatterjee",
+    "Stefan Knapp",
+    "Sebastian Mathea"
+  ],
+  "creator": "Verena Dederer",
+  "published_on": 1729186186,
+  "created_on": 1704448360,
+  "keywords": []
+}

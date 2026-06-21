@@ -1,0 +1,37 @@
+{
+  "id": 219760,
+  "title": "CycloneSEQ based Pore-C Library Preparation and Sequencing Protocol",
+  "uri": "cycloneseq-based-pore-c-library-preparation-and-se-g2uqbyevx",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvmmr5bv3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"4chph\",\"text\":\"This protocol is designed for Pore-C library preparation and sequencing of extracted animal DNA on the CycloneSEQ sequencing platform.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Homogenization &amp; Washing: Using 100 mg of fresh tissue per sample, homogenize in 2 mL 1x PBS using a sterile pestle. Centrifuge at 2,000xg for 5min at 4°C. Discard supernatant.",
+    "Fixation: Resuspend pellet in 10 mL 1% formaldehyde in 1x PBS Incubate 10 min at RT with gentle rotation.",
+    "Quenching Add 527 μL 2.5 M glycine. Incubate 5 min at RT, then incubate 10 min on ice. Centrifuge at 2,000xg for 10 min at 4°C. Discard the supernatant.",
+    "Lysis: Resuspend pellet in 550 μL ice-cold lysis buffer ( 10 mM Tris-HCl pH 8.0, 10 mM NaCl, 0.2% lgepal-CA630, 50 μL of protease inhibitor cocktail) Incubate 15 min on ice. Centrifuge at 2,000xg for 10 min at 4°C. Discard supernatant.",
+    "Digestion Prep: Resuspend pellet in 200 μL ice-cold 1.5× digestion buffer. Centrifuge at 2,000×g for 10 min at 4°C. Resuspend pellet in 300 μL 1.5× digestion buffer. Add 33.5 μL 1% SDS.",
+    "Digestion: Incubate in thermomixer: 65°C, 300 rpm, 10 min. Add 37.5 μL 10% Triton X-100 (to quench SDS). Add 45 μL NlaIII (10 U/μL) + 34 μL nuclease-free water. Rotate 18 hr at 37°C. Heat-inactivate: 65°C for 20 min.",
+    "Ligation Master Mix: Prepare 550 μL mix per sample: 100 μL 10× T4 DNA ligase buffer (with ATP) 10 μL BSA (10 mg/mL) 50 μL T4 DNA ligase (400 U/μL) 390 μL nuclease-free water",
+    "Ligation: Add master mix to sample. Rotate 5 hr at RT.",
+    "Protein Digestion: Add master mix: (1) 100 μL 10% SDS (2) 500 μL 20% Tween-20 (3) 100 μL Proteinase K (20 mg/mL) (4) 300 μL nuclease-free water Incubate 56°C for 18 hr.",
+    "DNA Extraction: Add equal volume phenol:chloroform:isoamyl alcohol (25:24:1). Centrifuge 12,000×g for 15 min at 4°C. Transfer aqueous phase to new tube.",
+    "Precipitation: Add 0.7× volume isopropanol. Incubate -20°C for 1 hr. Centrifuge 12,000×g for 30 min at 4°C. Wash pellet with 70% ethanol. Air-dry.",
+    "Size Selection &amp; Bead Cleanup: Resuspend DNA in 50 μL nuclease-free water. Perform size selection &gt;1.5 kb using DNA Clean Beads per manufacturer’s instructions.",
+    "CycloneSEQ Library Prep: Construct library using CycloneSEQ Long-Read WGS Kit (refer to separate protocol). Quantify with Qubit fluorometer.",
+    "Run Sequencing: Load library onto CycloneSEQ WuTong02 platform. Follow manufacturer’s run parameters."
+  ],
+  "authors": [
+    "Qunfei Guo",
+    "youliang Pan",
+    "Wei Dai",
+    "Wei Jiang"
+  ],
+  "creator": "shi shuaizhen",
+  "published_on": 1749537877,
+  "created_on": 1749299899,
+  "keywords": []
+}

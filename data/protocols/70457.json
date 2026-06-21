@@ -1,0 +1,32 @@
+{
+  "id": 70457,
+  "title": "Assay for Dual Rab GTPase binding to the LRRK2 Armadillo Domain",
+  "uri": "assay-for-dual-rab-gtpase-binding-to-the-lrrk2-arm-cg2ztyf6",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbypzovpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"7siti\",\"text\":\"The LRRK2 Armadillo domain contains multiple Rab GTPase binding sites.  To show that the sites can be occupied simultaneously, we use this assay.  The idea is to immobilize Rab8A, bind Armadillo domain, and test if phosphoRab10 can bind to Rab8A-immobilized Armadillo domain.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"8dchg\",\"text\":\"His-MST3 protein (pET15b 6HIS MST3 TV1; MRC-PPU DU62980)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eakre\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5bb6f\",\"text\":\"His-Rab8A Q67L full length\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bvu9p\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9b702\",\"text\":\"His-GFP-Rab10 Q68L 1-181\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7p87a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"10e3l\",\"text\":\"Reaction buffer: 50 mM HEPES  , 150 mM NaCl, 5 mM MgCl2, 0.2 mM TCEP, 100 μM GTP, 2 mM ATP, 5% (v/v) glycerol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":29,\"length\":1}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"ph\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"F230FE2E3B8B11EDB7F00A58A9FEAC02\",\"id\":0,\"number\":\"8\"}}}}",
+  "steps": [
+    "Phosphorylate His-Rab10 Q68L 1-181 with His-MST3 kinase at a molar ratio of 1:3 (kinase:substrate) at 30 °C 02:00:00 in reaction buffer. See below for details. Axel Knebel, Kerryn Berndsen, Pawel Lis, Paul Davies, Dario R Alessi. ExpressionandpurificationofRab8A(1-181)stoichiometrically phosphorylatedatpThr72 (theLRRK2site). http://dx.doi.org/10.17504/protocols.io.butinwke",
+    "Pellet 50 µL glutathione agarose slurry at 3000 rpm, 4 °C, 5 minutes .",
+    "Add GST-Rab8A Q67L to glutathione beads to achieve a concentration of 6 micromolar (µM) in a total volume of 50 µL reaction buffer. Incubate at Room temperature for 00:30:00 on a rotator.",
+    "Pellet beads by spinning at 3200 x g, Room temperature, 30 seconds and discard supernatant.",
+    "Add His-LRRK2 Armadillo domain 1-552 ( 10 micromolar (µM) final in 50 µL ) or buffer alone and incubate at Room temperature for 00:30:00 on a rotator.",
+    "Pellet beads by spinning at 3200 x g, , 30 seconds and discard supernatant.",
+    "Add phosphorylated His-Rab10 Q68L 1-181 ( 4 micromolar (µM) in 50 µL ) and incubate at Room temperature for 00:30:00 on a rotator.",
+    "Wash beads 2X with 500 µL reaction buffer.",
+    "Elute protein from beads using 50 µL elution buffer (reaction buffer + 50 millimolar (mM) reduced glutathione).",
+    "Pellet beads by spinning at 3200 x g, , 30 seconds and collect supernatant.",
+    "Analyze eluate by SDS-PAGE and immunoblot for phosphoRab10; image blots with Li-COR, and quantify bands using ImageJ (see below for details). Francesca Tonelli, Dario Alessi. Quantitative Immunoblotting Analysis of LRRK2 Signalling Pathway. http://dx.doi.org/10.17504/protocols.io.bsgrnbv6"
+  ],
+  "authors": [
+    "Claire Chiang",
+    "Suzanne R Pfeffer"
+  ],
+  "creator": "Suzanne R Pfeffer",
+  "published_on": 1663971310,
+  "created_on": 1663965961,
+  "keywords": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": 85739,
+  "title": "Image analysis of plasma membrane contacts",
+  "uri": "image-analysis-of-plasma-membrane-contacts-cxyjxpun",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj364plk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"7airh\",\"text\":\"This protocol details the image analysis of overexpressed VPS13A^Halo at plasma membrane contact sites in K562 cells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Using the image analysis program FIJI, split the channels of the image containing the mitochondria (TMRE stain or overexpressed mito-BFP) and overexpressed VPS13A^Halo.",
+    "Threshold the mitochondria channel to include the mitochondria. Convert to a 32-bit image and convert the threshold to binary, setting values within the mitochondria to be NaN (not a number). This step generates a negative mitochondrial mask. Due to the close proximity of mitochondria to the cell edge in K562 cells, a negative mask is used to exclude signal originating from the mitochondria.",
+    "Multiply the VPS13A^Halo channel and the negative mitochondrial mask into a 32-bit result image. This generates a mitochondria-subtracted VPS13A^Halo image.",
+    "Using the mitochondria-subtracted VPS13A^Halo image, apply a threshold to include signal present at the plasma membrane. Convert to a 32-bit image and convert threshold to binary, setting values outside of the VPS13A signal to be NaN. The resulting image includes plasma membrane and excludes signal originating from the mitochondria or background.",
+    "Trace the cell edge using the selection brush tool with a pixel size of 1. Apply the ROI to the image generated in step 4 and measure the &#34;% area&#34; (selected as &#34;Area fraction&#34; in the &#34;Set measurement&#34; window) of the cell edge length. The recorded value corresponds to the percent of plasma membrane length that contains VPS13A^Halo signal."
+  ],
+  "authors": [
+    "Chase Amos",
+    "Pietro De Camilli"
+  ],
+  "creator": "Chase Amos",
+  "published_on": 1702503021,
+  "created_on": 1690828690,
+  "keywords": []
+}

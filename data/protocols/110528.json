@@ -1,0 +1,31 @@
+{
+  "id": 110528,
+  "title": "Data Analysis waveRAPID using Creoptix WAVEsystem",
+  "uri": "data-analysis-waverapid-using-creoptix-wavesystem-dp685rhw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl823ydl2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"ei99l\",\"text\":\"This protocol outlines the data analysis workflow for the Creoptix WAVEsystem using Repeated Analyte Pulses of Increasing Duration (RAPID) method. It covers essential steps including blank and DMSO corrections, and kinetic analysis using a 1:1 binding model. The procedure ensures accurate evaluation of biomolecular interactions through systematic assessment of sensorgram data and verification of kinetic parameters.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"27h3l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "First, check the sensogram at the Measurement tab. Check specifically the dissociation points in the sensorgram on both blank and active channel(s) to evaluate sample non-specific attachment to the chip. Binding response for a sample on the blank (FC1 blue) and active channels (FC2 red). There is no accumulation on the FC1 channel at the dissociation points while the FC2 (ZIKV NS2B-NS3 immobilized )active channel interacted with the sample and stayed on the surface after each sample injection. The final dissociation phase is slower compared to the blank due to the sample and ZIKV NS2B-NS3 interactions As an example of a non-specific attachment of a sample to the chip. Both the blank (FC1 blue) and active (FC2 red) have accumulation at the dissociation points after each sample injection. Binding response for a sample (with a low μM IC50) over subtracted active channels (FC2-1 red, FC3-1 green, and FC4-1 orange) for ZIKV-NS2B-NS3 protease If there is a noise due to the injection, exclude those cycles (blank, sample, DMSO calibration etc.) for the evaluation.",
+    "Go to Evaluate &amp; Simulate /Adjustment. See picture in Section 1.",
+    "In the Adjustment section, check blank response Blank response is shown in the Adjustment as an example. Remove any of the injection with unexpected responses from the series if necessary. Possible causes for bad responses: air in the system due to not enough sample volume)",
+    "Go to the DMSO section, and check the DMSO correction response for all channels that are used in the method. The line can include all the injections series or some injections that are out of the line. Additional checks can be made by looking through the DMSO correction response. An example of DMSO correction response in the Adjustment tab. Remove any of the injection with unexpected responses from the series if necessary. Possible causes for bad responses: air in the system due to not enough sample volume)",
+    "Set the X-offset (zeroing of X axis) using the X-offset section within the set-up values in the Creoptix software. These parameters can be adjusted to check/compare in different adjustment series for the evaluation.",
+    "Check the Y-offset in the Creoptix software (40.0 s). It can be adjusted to check/compare in different adjustment series for the evaluation.",
+    "After the completion of adjustment, go to the Evaluate &amp; Simulate /Kinetic analysis.",
+    "The software automatically fits the sensogram a 1:1 Binding model.",
+    "Check the fitted line (black) and the experimental data (red) for each FC and sample. Also, the software indicates the error rate% for both association (ka) and dissociation (kd). When the fitted data and experimental line are not matched, the error rate is going to bigger. Check the error rate for both ka and kd. 1:1 Binding model fitting (black) to the experimental data(red)",
+    "Kinetic parameters ka and kd can be compared through ka/kd plot in the evaluation. Also, if there is any repeats for a sample (i.e. control), check the ka and kd values across repeats through ka/kd plot. For a specific sample, ka and kd values can be compared if they are similar or varied. The ka/kd plot for samples s given as an example",
+    "After the x, y offset adjustment and DMSO correction, the binding response is given as an example. This is an example for adjusted binding response for subtracted active channels (FC2-1 red, FC3-1 green, and FC4-1 orange)"
+  ],
+  "authors": [
+    "Eda Capkin"
+  ],
+  "creator": "Eda Capkin",
+  "published_on": 1740151508,
+  "created_on": 1729601687,
+  "keywords": []
+}

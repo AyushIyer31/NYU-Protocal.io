@@ -1,0 +1,36 @@
+{
+  "id": 239072,
+  "title": "Barcoded bead synthesis, array fabrication and sequencing",
+  "uri": "barcoded-bead-synthesis-array-fabrication-and-sequ-hmp8b45rx",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"dd2j1\",\"text\":\"This protocol describes the synthesis of barcoded oligonucleotides on PLRP-S resin using automated phosphoramidite chemistry, followed by deprotection, washing, and storage steps to generate stable, functionalized beads for downstream applications. The resulting barcoded beads are used to fabricate capture arrays and support sequencing workflows through incorporation of photocleavable linkers, capture sequences, and randomized barcode regions compatible with Slide-tags and related platforms.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"404jv\",\"text\":\"PLRP-S resin (1,000 Å, 10 μm),  Agilent Technologies (PL1412-4102)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"754vs\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cc1ao\",\"text\":\"PC linker (10-4920-90), Glen Research\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"afkhh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6106j\",\"text\":\"Reverse phosphoramidites (10-0001, 10-9201, 10-0301 and 10-5101-10), Glen Research\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ljuv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d0ur3\",\"text\":\"0.3 M BMT (BI0166-1005), Sigma-Aldrich)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ccduu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"12u0d\",\"text\":\"Sigma-Aldrich reagents: BI0224-0505, B1:B2 1:1; BI0347-0505, BI0349-0505, BI0424-1005, BI0832-2505\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "PLRP-S resin (1,000 Å, 10 μm) was used for barcoded oligonucleotide synthesis.",
+    "Loading of the the non-cleavable linker on resin was adjusted to approximately 30 µmol g −1",
+    "Finally, the beads were washed three times with 10 millimolar (mM) Tris buffer pH 7.5 containing 0.01% Tween-20",
+    "Beads stored in the same buffer at 4 °C (It was observed that oligos were released in the buffer if the beads were stored for long periods of time.)",
+    "The Akta OligoPilot 10 oligonucleotide synthesizer was used for synthesis (850 mg scale).",
+    "A 0.1 Molarity (M) solution of phosphoramidites was prepared in anhydrous acetonitrile, and 0.3 Molarity (M) BMT was used as an activator for coupling (single coupling, 00:06:00 ).",
+    "Post-Oligonucleotide Synthesis",
+    "Two capping steps (before and after oxidation) were performed with the cap A and cap B (Sigma-Aldrich) reagents",
+    "For the 6.3 mL column, capping was performed by 1 CV or 1.5 CV for 00:01:00",
+    "For the 1.2 mL column, capping was performed by 2 CV for 00:00:30",
+    "The oxidation (5 equiv) was performed with 0.05 Molarity (M) iodine in pyridine",
+    "Protecting groups were removed by incubating the resin in 40% aqueous methylamine for 24:00:00 at room temperature ( 20 mg resin per 2 mL )",
+    "The beads were washed twice with water ( 1 mL ), three times with methanol ( 1 mL ), three times with 1:1 acetonitrile:water and three times with acetonitrile ( 1 mL ).",
+    "The detritylation step was performed using 3% dichloroacetic acid in toluene",
+    "To remove the released oligos, beads were washed with 70% acetonitrile/water and resuspended in storage buffer.",
+    "Synthesized sequences for the Slide-tags experiments (PC in the sequences denote photocleavable linker) were as follows: (1) incorporation of capture sequence by ligation: the bold bases denote the region that is complementary to the sequence of the 10x gel beads (SLAC beads): 5′-TTT_PC_zCCGGTAATACGACTCACTATAGGGCTACACGACGCTCTTCCGATCTJJJJJJJJTCTTCAGCGTTCCCGAGAJJJJJJJNNNNNNNVVGCTCGGACACATGGGCG-3’, 10x FB1 extension: 5′-GAGCTTTGCTAACGGTCGAG GCTTTAAGGCCGGTCCTAGCAA -3′, splint: 3′-CTGTGTACCCGCCTCGAAACGATTGC-5′; (2) Direct synthesis of capture sequence on beads (TAGS beads): 5′-TTT-PC-GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCTJJJJJJJJTCTTCAGCGTTCCCGAGAJJJJJJJNNNNNNNVV GCTTTAAGGCCGGTCCTAGCAA -3’; (3) poly(A) beads: 5′-TTT-PC-GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCTJJJJJJJJTCTTCAGCGTTCCCGAGAJJJJJJJNNNNNNNVVA30."
+  ],
+  "authors": [
+    "Vipin Kumar"
+  ],
+  "creator": "Emily Finn",
+  "published_on": 1770671969,
+  "created_on": 1769016332,
+  "keywords": []
+}

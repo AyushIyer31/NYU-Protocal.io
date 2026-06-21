@@ -1,0 +1,40 @@
+{
+  "id": 110525,
+  "title": " Kinetic assay with waveRAPID grating-coupled interferometry waveCreoptix system",
+  "uri": "kinetic-assay-with-waverapid-grating-coupled-inte-dp655rg6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlk87xwl5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"6jf30\",\"text\":\"This protocol outlines the setup of kinetic binding assays using the Creoptix waveRAPID grating-coupled interferometry system. The method covers automated sample handling in 96- or 384-well formats, including DMSO corrections, control samples, and buffer blanks, enabling high-throughput molecular interaction measurements.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"5galu\",\"text\":\"Once the concentration value is specified in the method, it can not be changed in the evaluation part. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"ch83p\",\"text\":\"Do not set the Flow Cell Temperature below 10 and/or 15°C. Lower temperature causes to the condensation in the chip.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"hm09\",\"text\":\"10x HBS-P:  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":10,\"length\":1}],\"data\":{}},{\"key\":\"8bp9c\",\"text\":\"DMSO:  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":5,\"length\":1}],\"data\":{}},{\"key\":\"6qu60\",\"text\":\"Echo 384 well plate:   \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":21,\"length\":1}],\"data\":{}},{\"key\":\"7d7dl\",\"text\":\"Creoptix 384 well plate:  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":3,\"offset\":24,\"length\":1}],\"data\":{}},{\"key\":\"emlp6\",\"text\":\"Creoptix 96 well plate:   \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":4,\"offset\":24,\"length\":1}],\"data\":{}},{\"key\":\"3df87\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":964121,\"guid\":\"FCDFEE5B9A9D4DB0934F169A63FFAAAD\",\"name\":\"HBS-P  Buffer 10×\",\"mol_weight\":0,\"sku\":\"BR100671\",\"url\":\"http://\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1037,\"name\":\"Cytiva\",\"link\":\"https://www.cytivalifesciences.com/en/us\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":964966,\"guid\":\"0CD2AFFF3DD540F18D40B6090D353340\",\"name\":\" Pierce™ Dimethylsulfoxide (DMSO), Sequencing Grade\",\"mol_weight\":0,\"sku\":\"10127403\",\"url\":\"https://www.fishersci.co.uk/shop/products/pierce-dimethylsulfoxide-dmso-1/10127403\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":9,\"name\":\"Thermo Scientific\",\"link\":\"https://www.lifetechnologies.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":964967,\"guid\":\"9637EDB3D65B4C44AC6B011ECBE79E59\",\"name\":\"Echo® Qualified 384-Well Polypropylene Microplate 2.0\",\"mol_weight\":0,\"sku\":\"001-14555\",\"url\":\"https://www.mybeckman.uk/supplies/echo-qualified-supplies/acoustic-liquid-handler-microplates\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":32,\"name\":\"Beckman Coulter\",\"link\":\"https://www.beckmancoulter.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"3\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":964968,\"guid\":\"8083A73D47D8476A81A4622135CA776F\",\"name\":\"240 µl 384 Deepwell Plate, Square Wells \",\"mol_weight\":0,\"sku\":\"E2384-2400\",\"url\":\"http://\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":544,\"name\":\"StarLab\",\"link\":\"http://www.starlabgroup.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"4\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":966615,\"guid\":\"A8BD70F0805B47609F605776D51BDDBB\",\"name\":\"PlateOne 96 well Conical Bottom (V) Plates, max. Working Volume 320 µl\",\"mol_weight\":0,\"sku\":\"S1833-9600\",\"url\":\"https://www.starlabgroup.com/GB-en/product/plateone-microplates-pf-sl-155749.html?childSku=S1833-9600\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":544,\"name\":\"StarLab\",\"link\":\"http://www.starlabgroup.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Build the method in the Measure tab / RAPID kinetics.",
+    "In the Wizard choose the correct sample container type for the experiment: 48 vials, 96 or 384 well plate.",
+    "Enter the details of samples including sample name, concentration, and molecular weight.",
+    "Enter the configuration details for the method. Specify flow rate [F] and association and dissociation duration [Z] .",
+    "In the Reagent Rack section, choose 10 startup cycles.",
+    "Select Blanks: 1 blank after every 5 samples.",
+    "Enter a control sample and indicate its molecular weight and repeats depending on the sample size. (i.e. For 96 samples, choose 1 sample injection after 50 th sample.)",
+    "Choose DMSO correction ( 0.5%DMSO added to running buffer ) as DMSO calibration solution at the beginning, end + every 10 th sample.",
+    "Click create series.",
+    "Transfer samples from 100 millimolar (mM) stocks 1536LDV to 96 or 384 well plate and add running buffer +DMSO% [X] to make final µM sample concentration [Y] .",
+    "Go to the Autosampler section within the configuration and prepare other solution (running buffer as blank and start-ups, DMSO calibration solution and control sample).",
+    "Run 2x Priming and Chip Prime steps in Device /Chip Prime",
+    "Place the samples according to the series in autosampler.",
+    "Go to the Series /Run Measurement.",
+    "Variables that are for RAPID kinetic assay steps indicated the table. %s %s",
+    "Check the required buffer volume from cycles tab within the configuration. Prepare runningbuffer including DMSO [X] about 200 ml more than calculated buffer volume.",
+    "Sample preparation",
+    "Blank, DMSO calibration solution, and Control preparation",
+    "Degas the running buffer with DMSO% for 2 minutes.",
+    "Select DMSO wash: 1 DMSO wash ( 50 % volume DMSO) after every 5 samples."
+  ],
+  "authors": [
+    "Eda Capkin"
+  ],
+  "creator": "Eda Capkin",
+  "published_on": 1740413282,
+  "created_on": 1729599865,
+  "keywords": []
+}

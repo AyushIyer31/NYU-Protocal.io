@@ -1,0 +1,39 @@
+{
+  "id": 98819,
+  "title": "Subcellular Fractionation",
+  "uri": "subcellular-fractionation-dcrb2v2n",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l2q4y3l1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"8s6a3\",\"text\":\"To isolate total cell lysate into cytosolic and mitochondrial, soluble vs insoluble fractions.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"3jg9n\",\"text\":\"Cell scraper\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"blvlr\",\"text\":\"1X PBS\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cmpsu\",\"text\":\"Glass pestle\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"huvo\",\"text\":\"Isolation medium (250 mm sucrose, 1 mm EDTA and 10 mm Tris–MOPS, pH 7.4)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"23h2k\",\"text\":\"Microcentrifuge tubes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8sv8f\",\"text\":\"Ultracentrifuge\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9of7i\",\"text\":\"Triton X-100\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"etbg7\",\"text\":\"Ice\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"t33q\",\"text\":\"SDS buffer (50 mm Tris, 2% SDS, pH 7.6)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Harvest cells with a scraper.",
+    "Resuspend PBS and centrifuge at 500g for 5 min.",
+    "Homogenize using a glass pestle in isolation medium.",
+    "Centrifuge at 600 g for 10 min at 4°C.",
+    "Transfer the supernatant to a new microcentrifuge tube and centrifuge at 9,000 g for 10 min at 4°C.",
+    "Transfer the supernatant (cytosolic fraction) to a new microcentrifuge tube.",
+    "Resuspend the pellet with isolation medium.",
+    "Centrifuge at 9,000 g for 10 min at 4°C.",
+    "Repeat step 7 and 8 for a total of 3 times.",
+    "The final pellet is collected as the mitochondrial fraction.",
+    "Add Triton X-100 to both cytosolic and mitochondrial fractions to a final concentration of 1%.",
+    "Incubate mixture from both fractions on ice for 30 min.",
+    "Centrifuge at 20,000 g for 10 min at 4°C.",
+    "Transfer the supernatant (soluble fraction) to a new microcentrifuge tube.",
+    "Incubate the pellet in SDS buffer for 30 min.",
+    "Centrifuge at 20,000g for 10 min at room temperature.",
+    "The final solution is the insoluble fraction."
+  ],
+  "authors": [
+    "Szu-Chi Liao",
+    "Mohamed Taha Moutaoufik",
+    "Ken Nakamura"
+  ],
+  "creator": "Haru Yamamoto",
+  "published_on": 1726066049,
+  "created_on": 1714088247,
+  "keywords": []
+}

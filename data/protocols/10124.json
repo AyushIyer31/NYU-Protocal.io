@@ -1,0 +1,31 @@
+{
+  "id": 10124,
+  "title": "General fungi ITS2 (ITS4ngsUni - fITS7) for Illumina amplicon sequencing ",
+  "uri": "general-fungi-its2-its4ngsuni-fits7-for-illumina-a-m5kc84w",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6em5gqe5/v1",
+  "description": "{\"blocks\":[{\"key\":\"pqa0\",\"text\":\"A general assay for the preparation of PCR amplicons for further analysis of fungal communities by Illumina amplicon sequencing.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8nu2n\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"74s62\",\"text\":\"The primers target the 2nd internal transcribed spacer region (ITS2) of the ribosomal RNA gene and were specifically designed for Illumina amplicon sequencing. The ITS4ngsUni primer was designed by Tedersoo et al. (2016) as a universal primer for nearly all eukaryotes, and the fITS7 primer was designed by Ihrmark et al. (2012) as a fungal-specific primer. The ITS2 region primer pair should capture a higher diversity compared to primers targeting the ITS1 region. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4q3m1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6dp3t\",\"text\":\"For barcoding, we use the Fludigm Access Array, and therefore, the primers are synthesized with the CS1 and CS2 regions.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":26,\"length\":20}],\"data\":{}},{\"key\":\"liru\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3hlk3\",\"text\":\"When working with soil samples, we usually obtain amplicons in the range of 300-500bp. Double bands are often observed.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"BCFB7AF3C1AC11EE85210A58A9FEAC02\",\"url\":\"https://www.fluidigm.com/products/access-array\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4l79o\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"c10ot\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"asdh7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Prepare the following master mixture On ice . Do not forget to prepare some additional mixture for the negative (NTC = no template) and positive controls, and to account for pipetting errors. Work in a clean PCR box. A B C D 1 Reagent Final. conc. 1 tube(25μl) μl 96 tubes (25μl x100) 2 PCR H 2 O &nbsp; 16,775 1677,5 3 10X DreamTaq Green Buffer 1X 2,5 ul 250 4 dNTP (2 mM each) 0.2 mM 2,5 250 5 BSA (20 μg μl -1 ) 80 ng µl -1 0,1 10 6 ITS4ngsUni-CS1 linker 0.5 μM 1 100 7 fITS7-CS2 linker 0.5 μM 1 100 8 DreamTaq Green DNA Polymerase 0.625 U 0,125 12,5 9 Final volume &nbsp; 25 2500 DreamTaq DNA Polymerase (5 U/&micro;L) Thermo Fisher Catalog #EP0701 0.2 mM dNTPs Thermo Fisher Scientific Catalog #AM8200 Bovine Serum Albumin (BSA) Merck MilliporeSigma (Sigma-Aldrich) Catalog #A7906",
+    "Run the following PCR program: 1. 95 °C 00:10:00 2. x 30 { a. 95 °C 00:00:45 b. 52 °C 00:00:45 c. 72 °C 00:00:45 } 4. 72 °C 00:10:00 5. 10 °C 00:00:00, hold",
+    "A B C D 1 Name Sequnce Ref. Target region 1 2 ITS4ngsUni_CS1 ACA CTG ACG ACA TGG TTC TAC ACG CCT SCS CTT ANT DAT ATG C Tedersoo et al. (2016) 5.8S 3 fITS7_CS2 TAC GGT AGC AGA GAC TTG GTC TGG GTG ART CAT CGA ATC TTT G Ihrmark et al. (2012) ITS-flanking site in LSU 1 within the ribosomal RNA gene",
+    "Vortex and spin down 00:02:00 .",
+    "Distribute 24 µL of the mixture to each tube or well of 96-well plate and add 1 µL of template DNA or cDNA.",
+    "Prepare a 1.5% agarose gel by mixing: 100 mL TAE 1.5 g agarose Heat in the microwave until dissolved and pour into a gel frame. Place solid gel into an electrophoresis bath filled with TAE buffer. Agarose Merck MilliporeSigma (Sigma-Aldrich) Catalog #A9539 GeneRuler DNA Ladder Mix Thermo Fisher Scientific Catalog #SM0331 GeneRuler DNA Ladder Mix Thermo Fisher Scientific Catalog #SM0331",
+    "Load 5 µL of the sample into a well. In addition load 5 µL of DNA ladder mix (80-10,000 bp) into an empty well, as a marker.",
+    "Run the gel at 110 V, 265 mA for approx. 00:40:00",
+    "Stain gel for at least 00:30:00 in an Ethidium bromide TAE bath (or any other DNA stain). Ethidium bromide is not regulated as hazardous waste at low concentrations, but is treated as hazardous waste by many organizations. Material should be handled according to the manufacturer&#39;s Safety Data Sheet (SDS). Most use of ethidium bromide in the laboratory (0.25–1 µg/ml) is below the LD50 dosage, making acute toxicity unlikely. Testing in humans and longer studies in a mammalian system would be required to fully understand the long-term risk ethidium bromide poses to lab workers, but it is clear that ethidium bromide can cause mutations in mammalian and bacterial cells. Wikipedia",
+    "Visualize the gel using a gel documentation system."
+  ],
+  "authors": [
+    "Roey Angel",
+    "Eva Petrova"
+  ],
+  "creator": "Eva Petrova",
+  "published_on": 1707209726,
+  "created_on": 1518092491,
+  "keywords": []
+}

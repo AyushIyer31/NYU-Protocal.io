@@ -1,0 +1,26 @@
+{
+  "id": 93363,
+  "title": "WIPI2d puncta formation assay",
+  "uri": "wipi2d-puncta-formation-assay-c7etzjen",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj3myxlk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"evae8\",\"text\":\"Labels sites of autophagosome generation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Target cells are cultured until they reach 80% confluence on cell-culture treated, chambered confocal slide, and then transfect cells with a WIPI2d-Halo mammalian expression plasmid using lipofectamine 3000 (Thermo Fisher). Calculate DNA amount to use via the manufacturer instructions, scale DNA according to culture area.",
+    "Wash cells into antibiotic free medium prior to transfecting. Incubate the cells for 24 H post transfection, then wash cells into fresh medium. Incubate for an additional 24 H before imaging.",
+    "On day of experiment, replace medium with growth medium supplemented with 10 uM Oligomycin A, 5 uM Antimycin A (OA). Incubate for 45 min.",
+    "Add 1x cell permeable, fluorescent Halo Ligand diluted in OA medium to label. Incubate for 15 min before washing cells twice with PBS and fixing in 4% PFA. Wash once more with PBS. Image cells immediately on a confocal microscope.",
+    "To analyze open images in FIJI, find a cell with largely cytosolic WIPI signal, and measure. Subtract this value from the image as a whole using the math &gt; subtract function.",
+    "Define ROIs around target cells and measure total signal using FIJI&#39;s native measure function. Inspect cells to make sure cytosolic WIPI signal is being reliably eliminated, and most of the fluorescence intensity comes from punctate WIPI."
+  ],
+  "authors": [
+    "Dan Tudorica"
+  ],
+  "creator": "Dan Tudorica",
+  "published_on": 1709785329,
+  "created_on": 1704943941,
+  "keywords": []
+}

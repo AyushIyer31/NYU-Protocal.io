@@ -1,0 +1,33 @@
+{
+  "id": 3383,
+  "title": "ECOGEO 'Omics Training: 2.0 Quality Control",
+  "uri": "ECOGEO-Omics-Training-2-0-Quality-Control-fixbkfn",
+  "doi": "dx.doi.org/10.17504/protocols.io.fixbkfn",
+  "description": "{\"blocks\":[{\"key\":\"64u7c\",\"text\":\"Quality impact results is the universal first step for all sequencing methods. This protocol is for sequencing results in FASTQ format. FastQC allows for visualization of quality scores. Sequence trimming allows for removal of residual primer sequences and increases overall quality scores. Trimmomatic does both. CutAdapt cuts adapters from sequences. Sickle creates a sliding window for quality and length trimming of FASTQ files.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"fqf4m\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"csr8b\",\"text\":\"Open this protocol inside the virtual machine (details in 'Start Instructions') for easy copy, paste of commands into the command line terminal window.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"eg1a8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"6upgc\",\"text\":\"Before starting, please visit the ECOGEO website for more information on this 'Introduction to Environmental 'Omics' training series. The site contains a pre-packaged virtual machine that can be downloaded and used to run all of the protocols in this protocols.io collection. In addition to the VM, the website contains video and presentations from our initial 'Intro to Env 'Omics' workshop held at the Univ. of Hawai'i at Manoa on 25-26 Jul 2016.\\n\\nPlease email ‘ecogeo-join@earthcube.org’ to join the ECOGEO listserv for future updates.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"50r5l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Move to quality control directory: $ cd /home/c-debi/ecogeo/qualitycontrol",
+    "View sample FASTQ file: $ less igm1000002065_R1.fastq",
+    "FastQC - allows for visualization of quality scores: The rest of the steps are explained in the presentation slides, video. $ fastqc",
+    "Trimmomatic Input parameters Java -jar : command used to run Java based programs Location of program : /home/c-debi/ecogeo/BioinfPrograms/Trimmomatic-0.35/ PE vs SE : PE can maintain order of PE sequences -phred33 : explicitly telling Trimmomatic which quality score system we are using Inputs : igm1000002065_R1.fastq &amp; igm1000002065_R2.fastq Outputs : simplified (allows for quickly testing different parameters) generates FASTQ of surviving PE and SE results Outputs : R1_pe &amp; R2_pe contain paired reads after quality trimming R1_se &amp; R2_se contain reads who lost their mate during trimming ILLUMINACLIP: Location of adapter file : /home/c-debi/ecogeo/BioinfPrograms/Trimmomatic-0.35/adapters/ TruSeq3-PE.fa : FASTA file containing adapters used by MiSeq &amp; HiSeq 2 : maximum mismatch value 30 : palindrome clip threshold – Trimmomatic will use F &amp; R primers and check for presence at beginning and end of reads 10 : simple clip threshold – specifies accuracy required of match when not palindromic SLIDINGWINDOW : checks for decrease in quality 10 = Slide over 10 bp windows of the sequence 28 = if the average quality score &lt;28 trim the sequence MINLEN : remove sequences &lt;50bp in length $ java -jar /home/c-debi/BioinfPrograms/Trimmomatic-0.35/trimmomatic-0.35.jar PE -phred33 igm1000002065_R1.fastq igm1000002065_R2.fastq R1_pe R1_se R2_pe R2_se ILLUMINACLIP:/home/c-debi/BioinfPrograms/Trimmomatic-0.35/adapters/TruSeq3-PE.fa:2:30:10 SLIDINGWINDOW:10:28 MINLEN:50",
+    "Trimmed output, open FastQC. $ fastqc",
+    "File &gt; Open ... R1_pe &amp; R2_pe (Filter: All Files) Check the Quality Score Assessment Rename Trimmomatic output: $ mv R1_pe igm1000002065_R1_trim.fastq$ mv R2_pe igm1000002065_R2_trim.fastq $ mv R1_pe igm1000002065_R1_trim.fastq $ mv R2_pe igm1000002065_R2_trim.fastq",
+    "CutAdapt -a : adapter sequence to searched at 3’ end of sequence (-g = front, -b = anywhere) -e : maximum allowed error rate between a match --overlap : minimum number of base pairs to match adapter to trim",
+    "View CutAdapt summary file: $ less cut_R1_summary",
+    "“All” Illumina sequences (thanks to cadium-gcat) File = ncbi_univec_adaptors_primers.fasta $ cutadapt -b file:ncbi_univec_adaptors_primers.fasta -e 0.02 --overlap=5 -o R1_cut igm1000002065_R1.fastq >",
+    "Repeat for R2: $ cutadapt -b file:ncbi_univec_adaptors_primers.fasta -e 0.02 --overlap=5 -o R2_cut igm1000002065_R2.fastq >",
+    "Sickle: Sliding window quality and length trimming of FASTQ files. -t : type of quality scores (solexa, illumina, sanger) -q : quality score cutoff -l : minimum length after trimming -n : trim at first N (ambiguous base) -o : F out -p : R out -s : SE out $ sickle pe -f R1_cut -r R2_cut -t sanger -q 28 -l 50 -n -o R1_cut_sickle -p R2_cut_sickle -s se_cut_sickle",
+    "Open FastQC File &gt; Open ... R1_cut_sickle &amp; R2_cut_sickle Check the Quality Score Assessment $ fastqc",
+    "Rename Output $ mv R1_cut_sickle igm1000002065_R1_cut_sickle.fastq$ mv R2_cut_sickle igm1000002065_R2_cut_sickle.fastq $ mv R1_cut_sickle igm1000002065_R1_cut_sickle.fastq $ mv R2_cut_sickle igm1000002065_R2_cut_sickle.fastq"
+  ],
+  "authors": [
+    "Ben Tully"
+  ],
+  "creator": "Elisha M Wood-Charlson",
+  "published_on": 1471479294,
+  "created_on": 1470686648,
+  "keywords": []
+}

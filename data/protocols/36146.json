@@ -1,0 +1,28 @@
+{
+  "id": 36146,
+  "title": "Isocitrate dehydrogenase",
+  "uri": "isocitrate-dehydrogenase-bfisjkee",
+  "doi": "dx.doi.org/10.17504/protocols.io.bfisjkee",
+  "description": "{\"blocks\":[{\"key\":\"a16ho\",\"text\":\"Isocitrate dehydrogenase is an enzyme which converts isocitrate to 2-oxoglutarate in the TCA cycle.  IDH2 uses NADP and IDH3 uses NAD.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"d94gv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"debm3\",\"text\":\"Our IDH2/3 assay examines accumulation of NADH/NADPH over time. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5a257\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ccaip\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"cqc4q\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"image\",\"mutability\":\"\",\"data\":{\"guid\":\"61910EDA341F11EE9D4302C0B41BC903\",\"height\":124,\"is_video\":false,\"legend\":\"{\\\"blocks\\\":[{\\\"key\\\":\\\"esbtq\\\",\\\"text\\\":\\\"Reaction for IDH3, IDH2 uses NADP as its substrate and detected at OD 340 nm as well\\\",\\\"type\\\":\\\"unstyled\\\",\\\"depth\\\":0,\\\"inlineStyleRanges\\\":[],\\\"entityRanges\\\":[],\\\"data\\\":[]}],\\\"entityMap\\\":{}}\",\"mime\":\"image/png\",\"original_name\":\"image.png\",\"placeholder\":\"https://content.protocols.io/public/e855144bdecf75d814931753c11cff3f8c6bead8b0a03fbd2d68f941d9122f3a/b65dbc5gx.png\",\"source\":\"https://content.protocols.io/public/e855144bdecf75d814931753c11cff3f8c6bead8b0a03fbd2d68f941d9122f3a/b65dbc5gx.png\",\"type\":1,\"width\":437}}}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"bt0qo\",\"text\":\"Make sure have adequate amount of IDH buffer and that exactly pH 7.4 (best if prepared fresh with each assay)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"576fi\",\"text\":\"Make sure that adequte mitochondrial lysate\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6ro5c\",\"text\":\"Make sure spectrophotometer is set, wells labeled and plate ready to be read immediately\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"dnrj5\",\"text\":\"0.5 M Potassium Phosphate Buffer pH 7.4 (room temp) \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"a1lt3\",\"text\":\"1 M MgCl2 (room temp)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":8,\"length\":2}],\"entityRanges\":[],\"data\":[]},{\"key\":\"abetv\",\"text\":\"100 mM NADP (-20) (made from β-Nicotinamide Adenine Dinucleotide Phosphate (CAS 53-59-8, kept at -20); dissolved in dW)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dcrif\",\"text\":\"1 M Isocitrate (-20) (made from DL-isocitric acid (CAS 1637-73-6, kept at room temp); dissolved in dW)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare the IDH buffer new (Place on ice)",
+    "To make 10 mL IDH buffer 10 mM potassium phosphtate pH 7.4 (200 μL 0.5 M potasium phosphate pH 7.4), 2 mM MgCl 2 (20μL 1M MgCl 2 ), 1mM NADP (100 μL 100mM NADP) 5mM isocitrate (50 μL 1M isocitrate) Add water to make 10 mL after pH ing to 7.4",
+    "Prepare mitochondrial lysates per protocol (will need 15-30 μg in 20 μL)",
+    "Load 20 μL into 96 well plate in triplicate",
+    "Set spectrophotometer to Kinetic, dual wavelength 340, 380 nm, 30 reads, interval 30 sec at 30°C",
+    "Add 200 μL of IDH buffer to each well of plate (use a multi-chamber pipetter) sitting on the holder for the spectrometer and mix by pipetting in and out 2x and start spectrophotometer",
+    "Calculate relative activity from the values of OD 340"
+  ],
+  "authors": [
+    "Kimberly Chapman",
+    "Parith Wongkittichote"
+  ],
+  "creator": "Kimberly Chapman",
+  "published_on": 1588016893,
+  "created_on": 1587752896,
+  "keywords": []
+}

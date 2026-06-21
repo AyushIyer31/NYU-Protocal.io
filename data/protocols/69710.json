@@ -1,0 +1,31 @@
+{
+  "id": 69710,
+  "title": "Illumina denature and dilute",
+  "uri": "illumina-denature-and-dilute-cgbntsme",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvr4ex2gmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"5nn7h\",\"text\":\"This protocol describes the preparation of a library for Illumina NGS sequencing.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"31rsv\",\"text\":\"Consumables:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":12}],\"entityRanges\":[],\"data\":{}},{\"key\":\"8469k\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1jugu\",\"text\":\"The following consumables are required to prepare DNA libraries for sequencing on the MiSeq.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"31pqc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"kws2v\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"4p1jl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9t1fr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"image\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"6466785E341F11EE9D4302C0B41BC903\",\"height\":131.8181818181818,\"is_video\":false,\"legend\":\"{\\\"blocks\\\":null,\\\"entityMap\\\":null}\",\"mime\":\"image/png\",\"original_name\":\"image.png\",\"placeholder\":\"https://content.protocols.io/files/mbg9bw7cf.jpg\",\"source\":\"https://content.protocols.io/files/mbg7bw7cf.jpg\",\"type\":1,\"webp_placeholder\":\"https://content.protocols.io/files/mbg8bw7cf.webp\",\"webp_source\":\"https://content.protocols.io/files/mbg6bw7cf.webp\",\"width\":580}}}}",
+  "steps": [
+    "Use the following steps to denature and dilute libraries that have been normalized using standard library quantification and quality control procedures recommended in the library prep documentation. Follow the steps most appropriate for your library and the version of Illumina Reagent Kit you are using. Loading concentration can also vary depending on library type and quantification methods. The denaturation steps described in this guide make sure that the concentration of NaOH is not more than 0.001 (1 mM) in the final solution after diluting with HT1. Higher concentrations of NaOH in the library inhibit library hybridization to the flow cell and decrease cluster density.",
+    "Prepare a Fresh Dilution of NaOH 1: Combine the following volumes in a microcentrifuge tube Laboratory-grade water (800 μl) Stock 1.0 N NaOH (200 μl) The result is 1 ml of 0.2 N NaOH. 2: Invert the tube several times to mix. NOTE Use the fresh dilution within 12 hours.",
+    "Prepare HT1 1 Remove HT1 from -25°C to -15°C storage and thaw at room temperature. 2 Store at 2°C to 8°C until you are ready to dilute denatured libraries.",
+    "1 Combine the following volumes in a microcentrifuge tube. 4 nM library (5 μl) 0.2 N NaOH (5 μl)",
+    "Vortex briefly and then centrifuge at 280 × g for 1 minute.",
+    "Incubate at room temperature for 5 minutes.",
+    "Add 990 μl prechilled HT1 to the tube containing denatured library. The result is 1 ml of a 20 pM denatured library. Note that the denatured library concentration may vary by Illumina platform."
+  ],
+  "authors": [
+    "Angela R.S. Kruse",
+    "Morad C Malek",
+    "Jamie Allen",
+    "Melissa Farrow",
+    "Jeff Spraggins"
+  ],
+  "creator": "Morad C Malek",
+  "published_on": 1681149241,
+  "created_on": 1662588738,
+  "keywords": []
+}
