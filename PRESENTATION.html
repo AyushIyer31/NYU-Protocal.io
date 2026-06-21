@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ProtocolsNerd — Architecture &amp; Ranking</title>
+<style>
+  :root{
+    --bg:#f5f7fa; --card:#ffffff; --ink:#1f2937; --muted:#6b7280;
+    --blue:#2563eb; --indigo:#4f46e5; --green:#10b981; --gold:#e0a020;
+    --line:#d1d5db; --soft:#eef2ff;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    line-height:1.5;padding:32px 28px 60px}
+  h1{font-size:30px;margin:0 0 4px}
+  h2{font-size:20px;margin:0 0 16px;display:flex;align-items:center;gap:10px}
+  h2 .num{background:var(--indigo);color:#fff;width:28px;height:28px;border-radius:7px;
+    display:inline-flex;align-items:center;justify-content:center;font-size:15px;flex:none}
+  .sub{color:var(--muted);margin:0 0 26px;font-size:14px}
+  .card{background:var(--card);border:1px solid #e5e7eb;border-radius:14px;
+    padding:24px 26px;margin:0 0 26px;box-shadow:0 1px 3px rgba(0,0,0,.05)}
+  .legend{font-size:12px;color:var(--muted);margin-top:14px}
+
+  /* ---- flow diagram ---- */
+  .flow{display:flex;flex-wrap:wrap;align-items:stretch;gap:0}
+  .stage{background:var(--soft);border:1.5px solid #c7d2fe;border-radius:10px;
+    padding:10px 14px;min-width:150px;flex:1 1 150px;text-align:center}
+  .stage .t{font-weight:600;font-size:13.5px}
+  .stage .d{font-size:11px;color:var(--muted);margin-top:3px}
+  .stage.llm{background:#fff7ed;border-color:#fed7aa}
+  .stage.search{background:#ecfdf5;border-color:#a7f3d0}
+  .arrow{display:flex;align-items:center;justify-content:center;color:#9ca3af;
+    font-size:20px;padding:0 6px;flex:none}
+  .note{margin-top:16px;padding:10px 14px;border-left:3px solid var(--gold);
+    background:#fffbeb;border-radius:0 8px 8px 0;font-size:12.5px;color:#7c5e10}
+
+  /* ---- two columns ---- */
+  .cols{display:grid;grid-template-columns:1fr 1fr;gap:22px}
+  @media(max-width:900px){.cols{grid-template-columns:1fr}}
+
+  /* ---- tree ---- */
+  .tree{font-size:13px}
+  .tree .root{font-weight:700;margin-bottom:8px}
+  .tree ul{list-style:none;margin:4px 0 4px 6px;padding-left:18px;border-left:1.5px dashed #cbd5e1}
+  .tree li{margin:5px 0;position:relative;padding-left:14px}
+  .tree li::before{content:"";position:absolute;left:-1px;top:10px;width:12px;height:1.5px;background:#cbd5e1}
+  .tag{display:inline-block;font-size:10.5px;font-weight:700;padding:1px 7px;border-radius:20px;margin-left:6px;vertical-align:1px}
+  .req{background:#fee2e2;color:#b91c1c}
+  .opt{background:#dcfce7;color:#15803d}
+  .src{background:#e0e7ff;color:#3730a3}
+
+  /* ---- role table ---- */
+  table{width:100%;border-collapse:collapse;font-size:13px}
+  th,td{text-align:left;padding:9px 10px;border-bottom:1px solid #eef0f3;vertical-align:top}
+  th{font-size:11px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted)}
+  .pill{font-size:11px;font-weight:700;padding:2px 9px;border-radius:20px;white-space:nowrap}
+  .p-hard{background:#fee2e2;color:#b91c1c}
+  .p-grad{background:#dbeafe;color:#1d4ed8}
+  .p-soft{background:#f3e8ff;color:#7e22ce}
+  .p-exact{background:#fef9c3;color:#854d0e}
+
+  /* ---- ranking stack ---- */
+  .stack .layer{display:flex;align-items:center;gap:14px;border:1.5px solid #e5e7eb;
+    border-radius:10px;padding:12px 16px;margin-bottom:10px;background:#fafbff}
+  .stack .ord{background:var(--blue);color:#fff;width:30px;height:30px;border-radius:8px;
+    display:flex;align-items:center;justify-content:center;font-weight:700;flex:none}
+  .stack .ord.s2{background:var(--indigo)} .stack .ord.s3{background:#7c3aed} .stack .ord.s4{background:#9ca3af}
+  .stack .body .h{font-weight:600;font-size:14px}
+  .stack .body .x{font-size:12px;color:var(--muted)}
+  .tiers{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
+  .tier{flex:1 1 0;border-radius:9px;padding:10px 12px;color:#fff;text-align:center;min-width:120px}
+  .tier .v{font-size:18px;font-weight:800}.tier .l{font-size:11px;opacity:.95}
+  .t1{background:#16a34a}.t2{background:#65a30d}.t3{background:#ca8a04}.t4{background:#9ca3af}
+
+  /* ---- bar charts ---- */
+  .charts{display:grid;grid-template-columns:1.3fr 1fr;gap:30px}
+  @media(max-width:900px){.charts{grid-template-columns:1fr}}
+  .bar-row{display:grid;grid-template-columns:150px 1fr 46px;align-items:center;gap:10px;margin:7px 0;font-size:13px}
+  .bar-row .lab{text-align:right;color:#374151}
+  .bar-track{background:#eef1f5;border-radius:6px;height:20px;overflow:hidden}
+  .bar-fill{height:100%;border-radius:6px;background:linear-gradient(90deg,var(--blue),var(--indigo))}
+  .bar-fill.org{background:linear-gradient(90deg,#0d9488,#10b981)}
+  .bar-val{font-weight:700;color:#111827;font-variant-numeric:tabular-nums}
+  .chart-title{font-weight:700;font-size:14px;margin:0 0 12px;color:#111827}
+  .foot{color:var(--muted);font-size:12px;margin-top:34px;text-align:center}
+</style>
+</head>
+<body>
+
+<h1>ProtocolsNerd</h1>
+<p class="sub">RAG-powered protocol search over <strong>7,304</strong> protocols.io protocols · conversational profile building · Claude-driven ranking</p>
+
+<!-- 1 ───────── BLOCK DIAGRAM ───────── -->
+<div class="card">
+  <h2><span class="num">1</span> High-level flow</h2>
+  <div class="flow">
+    <div class="stage"><div class="t">User query</div><div class="d">natural language</div></div>
+    <div class="arrow">→</div>
+    <div class="stage llm"><div class="t">Intent &amp; profile</div><div class="d">Claude extracts fields</div></div>
+    <div class="arrow">→</div>
+    <div class="stage llm"><div class="t">Clarification loop</div><div class="d">ask only if required field missing</div></div>
+    <div class="arrow">→</div>
+    <div class="stage"><div class="t">Structured profile</div><div class="d">organism, method, target…</div></div>
+    <div class="arrow">→</div>
+    <div class="stage llm"><div class="t">Suggested queries</div><div class="d">natural-language, all fields</div></div>
+  </div>
+  <div class="flow" style="margin-top:10px">
+    <div class="stage"><div class="t">User selects / edits</div><div class="d">or "search all"</div></div>
+    <div class="arrow">→</div>
+    <div class="stage search"><div class="t">Local RAG retrieval</div><div class="d">TF-IDF over 7,304 (wide pool)</div></div>
+    <div class="arrow">→</div>
+    <div class="stage search"><div class="t">Closeness ranking</div><div class="d">organism → title → relevance</div></div>
+    <div class="arrow">→</div>
+    <div class="stage llm"><div class="t">Relevance verdict</div><div class="d">Claude assesses top results</div></div>
+    <div class="arrow">→</div>
+    <div class="stage"><div class="t">Result cards</div><div class="d">why it matches / may not fit</div></div>
+  </div>
+  <div class="note"><strong>Feedback &amp; control:</strong> a clarification answer refines the same profile · a full new request is detected and <strong>resets all fields</strong> ("🔄 Starting a new search") · Claude powers extraction, query-gen &amp; verdict; deterministic Python owns retrieval &amp; ranking.</div>
+  <div class="legend">🟦 deterministic step &nbsp;·&nbsp; 🟧 Claude (LLM) step &nbsp;·&nbsp; 🟩 local search / ranking</div>
+</div>
+
+<div class="cols">
+  <!-- 2 ───────── FIELD POPULATION RULES ───────── -->
+  <div class="card">
+    <h2><span class="num">2</span> Field population — rules hierarchy</h2>
+    <div class="tree">
+      <div class="root">Sources (merged · later source wins)</div>
+      <ul>
+        <li><span class="tag src">1</span> Claude LLM extraction <span style="color:var(--muted)">— primary, understands phrasing</span></li>
+        <li><span class="tag src">2</span> Rule-based extraction <span style="color:var(--muted)">— fallback when LLM is off</span></li>
+        <li><span class="tag src">3</span> Clarification answer <span style="color:var(--muted)">— chip OR free-text, taken verbatim</span></li>
+        <li><span class="tag src">4</span> Prior profile <span style="color:var(--muted)">— carried over; cleared on new topic</span></li>
+      </ul>
+      <div class="root" style="margin-top:14px">Fields</div>
+      <ul>
+        <li>Intent / sub-intent <span class="tag req">REQUIRED</span></li>
+        <li>Organism / system <span class="tag req">REQUIRED</span></li>
+        <li>Modification type <span class="tag req">REQUIRED*</span> <span style="color:var(--muted)">(*for editing intents)</span></li>
+        <li>Tissue / sample <span class="tag opt">OPTIONAL</span></li>
+        <li>Target <span class="tag opt">OPTIONAL</span></li>
+        <li>Delivery method <span class="tag opt">OPTIONAL</span></li>
+        <li>Expression type <span class="tag opt">OPTIONAL</span></li>
+        <li>Readout / assay <span class="tag opt">OPTIONAL</span></li>
+        <li>Condition <span class="tag opt">OPTIONAL</span></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 3 ───────── REQUIRED vs OPTIONAL ───────── -->
+  <div class="card">
+    <h2><span class="num">3</span> Required vs optional handling</h2>
+    <table>
+      <tr><th>Field</th><th>Role</th><th>If empty</th></tr>
+      <tr><td>Organism / system</td><td><span class="pill p-hard">hard anchor</span></td><td>Ask clarification — blocks search</td></tr>
+      <tr><td>Intent · modification</td><td><span class="pill p-hard">hard anchor</span></td><td>Ask clarification (editing intents)</td></tr>
+      <tr><td>Tissue · delivery · condition</td><td><span class="pill p-grad">graded</span></td><td>Proceed — refines ranking &amp; queries</td></tr>
+      <tr><td>Readout · expression</td><td><span class="pill p-grad">graded</span></td><td>Proceed — used as a softer signal</td></tr>
+      <tr><td>Gene / construct</td><td><span class="pill p-exact">exact</span></td><td>Proceed — exact-match filter if given</td></tr>
+      <tr><td>Difficulty · timeline · equipment</td><td><span class="pill p-soft">soft</span></td><td>Never blocks — tie-breaker only</td></tr>
+    </table>
+    <div class="legend">Few <strong>hard anchors</strong> gate the search; everything else <strong>enriches</strong> but never blocks. Clarification fires <em>only</em> for missing required fields — optional gaps are fine.</div>
+  </div>
+</div>
+
+<!-- 4 ───────── RANKING RULES ───────── -->
+<div class="card">
+  <h2><span class="num">4</span> Ranking rules — how results are ordered</h2>
+  <p class="sub" style="margin-bottom:18px">Lexicographic sort key applied within the retrieved pool — each layer breaks ties of the one above.</p>
+  <div class="stack">
+    <div class="layer"><div class="ord">1</div><div class="body"><div class="h">Organism closeness tier</div><div class="x">Kingdom-symmetric (plant / animal / microbe). Word-boundary + kingdom-context gated — blocks "tomato"↔"tdTomato" homonyms.</div></div></div>
+    <div class="tiers">
+      <div class="tier t1"><div class="v">1.0</div><div class="l">exact species<br>(mouse · tomato)</div></div>
+      <div class="tier t2"><div class="v">0.7</div><div class="l">same family<br>(rat · pepper)</div></div>
+      <div class="tier t3"><div class="v">0.4</div><div class="l">same kingdom<br>(any animal / plant)</div></div>
+      <div class="tier t4"><div class="v">0.0</div><div class="l">different kingdom<br>(plant for a mouse)</div></div>
+    </div>
+    <div class="layer" style="margin-top:14px"><div class="ord s2">2</div><div class="body"><div class="h">Title concept match</div><div class="x">Discriminating concepts (multiplex · CRISPR · embryo · target) found in the <em>title</em> — strong evidence the protocol is <em>about</em> it, not just mentioning it. Boost only, never a filter.</div></div></div>
+    <div class="layer"><div class="ord s3">3</div><div class="body"><div class="h">Body relevance</div><div class="x">Does the protocol actually <em>do</em> the technique (1.0) or the delivery that carries it (0.8) vs only mention it (0.0)? Separates an editing protocol from an RNA-prep that name-drops CRISPR.</div></div></div>
+    <div class="layer"><div class="ord s4">4</div><div class="body"><div class="h">Profile blended score</div><div class="x">Existing weighted field signals (organism · method · readout · tissue · combined) as the final tie-breaker.</div></div></div>
+  </div>
+  <div class="note"><strong>"like X" relaxation:</strong> "plants <em>like</em> tomato" relaxes the organism (tomato preferred → relatives → any plant); "protocols <em>like</em> CRISPR" relaxes the method (transformation counts, not just literal CRISPR). The other anchor stays strict.</div>
+</div>
+
+<!-- 5 ───────── CORPUS ───────── -->
+<div class="card">
+  <h2><span class="num">5</span> The corpus — 7,304 protocols by major keyword</h2>
+  <div class="charts">
+    <div>
+      <p class="chart-title">By technique / domain</p>
+      <div id="domain"></div>
+    </div>
+    <div>
+      <p class="chart-title">By organism</p>
+      <div id="organism"></div>
+    </div>
+  </div>
+  <div class="legend">Counts overlap — a protocol can match several keywords (matched on title + description + keywords). Skewed toward molecular/cell-biology &amp; human/mouse; thin on plant &amp; CRISPR — which is why organism-aware ranking matters.</div>
+</div>
+
+<p class="foot">ProtocolsNerd · 7,304 protocols.io protocols · Claude (Sonnet 4.6) + TF-IDF RAG · deployed on Cloud Run</p>
+
+<script>
+  const domain = [
+    ["Extraction / isolation",1917],["DNA / genomics",1675],["Protein / proteomics",1621],
+    ["Sequencing / NGS",1399],["RNA / transcriptomics",1359],["Microscopy / imaging",1105],
+    ["PCR / qPCR",1014],["Immunology",830],["Histology / staining",607],
+    ["Cloning / molecular",525],["Microbiology",500],["Cell culture",452],
+    ["Transformation / delivery",442],["Gene editing (CRISPR)",308]
+  ];
+  const organism = [
+    ["Human",1267],["Mouse / rat",785],["Bacteria",497],["Plant",369],
+    ["Yeast / fungi",198],["Drosophila",55],["Zebrafish",48],["C. elegans",32]
+  ];
+  function render(id, data, cls){
+    const max = Math.max(...data.map(d=>d[1]));
+    document.getElementById(id).innerHTML = data.map(([l,v])=>`
+      <div class="bar-row">
+        <div class="lab">${l}</div>
+        <div class="bar-track"><div class="bar-fill ${cls}" style="width:${(v/max*100).toFixed(1)}%"></div></div>
+        <div class="bar-val">${v.toLocaleString()}</div>
+      </div>`).join("");
+  }
+  render("domain", domain, "");
+  render("organism", organism, "org");
+</script>
+</body>
+</html>

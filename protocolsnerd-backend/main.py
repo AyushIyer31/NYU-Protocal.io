@@ -33,7 +33,12 @@ from protocol_rag import (
     is_vague_query, get_clarification_question, expand_query, multi_search_protocols,
     load_protocol_index,
 )
-from claude_client import analyze_experiment_request, is_available as llm_is_available
+from claude_client import (
+    analyze_experiment_request,
+    is_available as llm_is_available,
+    is_new_search_topic,
+    generate_natural_search_queries,
+)
 from concept_expansion import (
     extract_concepts, expand_concepts, build_search_probes, generate_sentence_variants,
 )
@@ -56,8 +61,10 @@ from experiment_profile import (
     profile_source_query_for_request,
     should_respond_as_chitchat,
     validate_biology_profile,
+    _is_generic,
 )
 from biology_intents import controlled_intent_payload, normalize_sub_intent
+from field_ranking import closeness_rank
 
 logging.basicConfig(level=logging.INFO)
 
@@ -181,6 +188,7 @@ def run_live_candidate_searches(
     queries: List[str],
     top_k: int,
     profile: Optional[Dict[str, Any]] = None,
+    raw_query: str = "",
 ) -> Dict[str, Any]:
     merged: Dict[Any, Dict[str, Any]] = {}
     expanded: List[str] = []
@@ -206,7 +214,7 @@ def run_live_candidate_searches(
 
     results = list(merged.values())
     if profile:
-        results = apply_profile_ranking(profile, results, top_k=top_k)
+        results = closeness_rank(profile, results, top_k, raw_query=raw_query)
     else:
         results = sorted(results, key=lambda x: x.get("profile_score", x.get("score", 0)), reverse=True)[:top_k]
 
@@ -223,6 +231,7 @@ def run_local_candidate_searches(
     queries: List[str],
     top_k: int,
     profile: Dict[str, Any],
+    raw_query: str = "",
 ) -> Dict[str, Any]:
     expanded: List[str] = []
     for query in [q for q in queries if q.strip()][:5]:
@@ -233,7 +242,27 @@ def run_local_candidate_searches(
     # can reward organism + expression type + tissue matches.
     candidate_pool_size = max(top_k * 24, 120)
     results = multi_search_protocols(PROTOCOL_INDEX, expanded, candidate_pool_size)
-    results = apply_profile_ranking(profile, results, top_k=top_k)
+
+    # Organism-merge: the TF-IDF stage forces certain keywords (e.g. "crispr")
+    # as required terms, which can penalize an organism-correct protocol out of
+    # the pool when it lacks that literal word (e.g. a tomato transformation
+    # protocol that doesn't spell out "crispr"). When the user named a SPECIFIC
+    # organism, retrieve organism-focused matches directly and merge them in so
+    # the profile ranker can evaluate and surface them. Skipped for vague
+    # organisms ("plant", "cell") — searching those floods the pool with noise.
+    organism = str((profile or {}).get("organism") or "").strip()
+    if organism and not _is_generic(organism):
+        seen = {r["id"] for r in results}
+        organism_queries = _dedup_strings(
+            [organism] + [f"{organism} {q}" for q in queries[:3] if q.strip()]
+        )
+        for oq in organism_queries:
+            for r in search_protocols(PROTOCOL_INDEX, oq, top_k=10):
+                if r["id"] not in seen:
+                    seen.add(r["id"])
+                    results.append(r)
+
+    results = closeness_rank(profile, results, top_k, raw_query=raw_query)
     return {
         "results": results,
         "expanded": expanded,
@@ -417,6 +446,26 @@ def _clarification_candidate_fields(field: str, question: str) -> List[str]:
     return _dedup_strings(fields)
 
 
+def _finalize_candidate_queries(
+    queries: List[str],
+    original_query: str,
+) -> List[str]:
+    """Light validation for natural-language query suggestions, and guarantee the
+    user's original request is one of the options. Unlike the field-complete
+    `candidate_query_preserves_required_concepts`, this allows focused queries
+    (each covering a subset of fields) — collective coverage is handled by the
+    generator's prompt."""
+    out = [
+        " ".join(str(q).split())
+        for q in (queries or [])
+        if _is_valid_candidate_query(q)
+    ]
+    oq = " ".join(str(original_query or "").split())
+    if oq and _is_valid_candidate_query(oq) and oq.lower() not in {x.lower() for x in out}:
+        out.append(oq)
+    return _dedup_strings(out)[:5]
+
+
 def _candidate_queries_from_plan(
     plan: Dict[str, Any],
     profile: Dict[str, Any],
@@ -465,6 +514,21 @@ def _is_valid_candidate_query(query: Any) -> bool:
     return not lowered.startswith(question_starts)
 
 
+def _profile_goal_summary(profile: Optional[Dict[str, Any]]) -> str:
+    """A short natural-language summary of the current search, used as the goal
+    for new-topic detection when conversation_query isn't sent by the client."""
+    if not profile:
+        return ""
+    parts = []
+    for key in ("sub_intent", "modification_type", "experimental_method",
+                "organism", "tissue_or_cell_type", "readout_assay", "condition"):
+        v = str(profile.get(key) or "").strip()
+        if v and v.lower() not in ("not specified", "none", "unknown", "null"):
+            parts.append(v)
+    # de-dup while preserving order
+    return ", ".join(dict.fromkeys(parts))
+
+
 @app.post("/chat")
 async def chat(req: ChatRequest):
     """
@@ -489,6 +553,31 @@ async def chat(req: ChatRequest):
     query = req.query.strip()
     conversation_query = (req.conversation_query or "").strip()
     has_active_experiment_context = bool(conversation_query or req.experiment_profile)
+    loop = asyncio.get_event_loop()
+
+    # New-topic detection: if the user switches to a clearly different search
+    # mid-conversation (e.g. answering a tomato-CRISPR clarification with
+    # "western blot in mouse"), clear the carried-over profile so the new search
+    # starts clean instead of merging into the old goal. Skipped during the
+    # search-confirmation step (clicking a candidate query is not a new topic).
+    #
+    # The "current goal" comes from conversation_query when present, but falls
+    # back to a summary of the carried-over profile — the frontend doesn't always
+    # send conversation_query, and detection must not silently skip when it's empty.
+    new_search = False
+    # Only the confirmation step (clicking a candidate query's "Search") is a
+    # search action. Don't gate on selected_search_query / candidate_search_queries:
+    # the frontend populates selected_search_query with the typed text on every
+    # message, so gating on it would skip new-topic detection for normal input.
+    _is_search_action = req.search_confirmed or req.search_all
+    _topic_goal = conversation_query or _profile_goal_summary(req.experiment_profile)
+    if req.experiment_profile and _topic_goal and not _is_search_action and llm_is_available():
+        if await loop.run_in_executor(executor, is_new_search_topic, _topic_goal, query):
+            new_search = True
+            req.experiment_profile = None
+            conversation_query = ""
+            has_active_experiment_context = False
+
     profile_source_query = profile_source_query_for_request(
         query=query,
         conversation_query=conversation_query,
@@ -498,7 +587,6 @@ async def chat(req: ChatRequest):
     if not profile_source_query and not (req.search_confirmed and req.experiment_profile):
         profile_source_query = query
 
-    loop = asyncio.get_event_loop()
     total_indexed = len(PROTOCOL_INDEX["protocols"]) if PROTOCOL_INDEX else 0
 
     rule_intent = detect_experiment_intent(profile_source_query)
@@ -550,6 +638,7 @@ async def chat(req: ChatRequest):
                 "intent": "chitchat",
                 "experiment_intent": experiment_intent,
                 "experiment_profile": experiment_profile,
+                "new_search": new_search,
                 "clarification": None,
                 "conversation_query": conversation_query,
                 "search_query": structured_query,
@@ -587,6 +676,7 @@ async def chat(req: ChatRequest):
                 "intent": "clarification",
                 "experiment_intent": experiment_intent,
                 "experiment_profile": experiment_profile,
+                "new_search": new_search,
                 "clarification": clarification,
                 "conversation_query": conversation_query,
                 "search_query": structured_query,
@@ -609,6 +699,7 @@ async def chat(req: ChatRequest):
                     "intent": "chitchat",
                     "experiment_intent": experiment_intent,
                     "experiment_profile": experiment_profile,
+                "new_search": new_search,
                     "clarification": None,
                     "conversation_query": conversation_query,
                     "search_query": structured_query,
@@ -622,11 +713,25 @@ async def chat(req: ChatRequest):
                     "total_protocols_indexed": total_indexed,
                 }
 
-        candidate_queries = _candidate_queries_from_plan(
-            llm_plan,
-            experiment_profile,
-            structured_query,
-        )
+        # Prefer Claude-generated natural-language suggestions (focused angles
+        # that collectively cover every field + include the original query).
+        # Fall back to the rule-based generator when Claude is unavailable.
+        candidate_queries: List[str] = []
+        if llm_is_available() and can_generate_search_queries(experiment_profile):
+            nl_queries = await loop.run_in_executor(
+                executor,
+                generate_natural_search_queries,
+                experiment_profile,
+                conversation_query or query,
+                5,
+            )
+            candidate_queries = _finalize_candidate_queries(nl_queries, conversation_query or query)
+        if not candidate_queries:
+            candidate_queries = _candidate_queries_from_plan(
+                llm_plan,
+                experiment_profile,
+                structured_query,
+            )
         if not candidate_queries:
             clarification = (
                 next_clarification(experiment_profile, experiment_intent)
@@ -649,6 +754,7 @@ async def chat(req: ChatRequest):
                 "intent": "clarification",
                 "experiment_intent": experiment_intent,
                 "experiment_profile": experiment_profile,
+                "new_search": new_search,
                 "clarification": clarification,
                 "conversation_query": conversation_query,
                 "search_query": structured_query,
@@ -667,6 +773,7 @@ async def chat(req: ChatRequest):
             "intent": "query_selection",
             "experiment_intent": experiment_intent,
             "experiment_profile": experiment_profile,
+            "new_search": new_search,
             "clarification": None,
             "conversation_query": conversation_query,
             "search_query": structured_query,
@@ -691,6 +798,9 @@ async def chat(req: ChatRequest):
 
     # Confirmed search. Either the live concept-expansion pipeline (default) or
     # the legacy local TF-IDF pipeline.
+    # The user's natural-language request is used only for "like/such as"
+    # relaxation detection in the closeness ranker — not for retrieval.
+    like_query = " ".join(filter(None, [conversation_query, query])).strip()
     concepts: Dict[str, Any] = {}
     expansions: Dict[str, List[str]] = {}
     sentence_variants: List[str] = []
@@ -702,6 +812,7 @@ async def chat(req: ChatRequest):
                 search_queries,
                 req.top_k,
                 experiment_profile,
+                like_query,
             )
             results = live["results"]
             concepts = live["concepts"]
@@ -719,6 +830,7 @@ async def chat(req: ChatRequest):
                 search_queries,
                 req.top_k,
                 experiment_profile,
+                like_query,
             )
             results = local["results"]
             expanded = local["expanded"]
@@ -729,6 +841,7 @@ async def chat(req: ChatRequest):
             search_queries,
             req.top_k,
             experiment_profile,
+            like_query,
         )
         results = local["results"]
         expanded = local["expanded"]
@@ -748,6 +861,7 @@ async def chat(req: ChatRequest):
         "intent": "search",
         "experiment_intent": experiment_intent,
         "experiment_profile": experiment_profile,
+        "new_search": new_search,
         "clarification": None,
         "conversation_query": conversation_query,
         "search_query": structured_query,

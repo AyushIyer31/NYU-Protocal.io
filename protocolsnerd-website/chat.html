@@ -319,6 +319,13 @@
       background: #fff4c2;
     }
 
+    .quick-options-hint {
+      margin-top: 8px;
+      font-size: 11px;
+      font-style: italic;
+      color: #9a8a4a;
+    }
+
     .query-selection-card {
       background: #f8fbff;
       border: 1px solid #cbd8f5;
@@ -794,6 +801,7 @@
         `;
         }).join('')}
       </div>
+      <div class="quick-options-hint">Others: please specify in the search box</div>
     `;
   }
 
@@ -950,6 +958,18 @@
 
       const data = await resp.json();
       markBackendOnline();
+
+      // -- New topic detected: backend cleared the carried-over profile --
+      if (data.new_search) {
+        experimentProfile = null;
+        currentExperimentQuery = '';
+        appendMessage('assistant', `
+          <div class="bubble">
+            <div class="clarification-bubble">🔄 <strong>Starting a new search</strong> — I cleared the previous experiment context since this looks like a different topic.</div>
+          </div>
+        `);
+      }
+
       if (data.experiment_profile) experimentProfile = data.experiment_profile;
       if (data.conversation_query) currentExperimentQuery = data.conversation_query;
 

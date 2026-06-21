@@ -376,3 +376,110 @@ def get_sentence_variants(query: str, n: int = 10) -> List[str]:
         temperature=0.3,
     )
     return [str(x).strip() for x in _safe_json_array(raw) if str(x).strip()][:n]
+
+
+def is_new_search_topic(current_goal: str, new_message: str) -> bool:
+    """
+    True when the new message starts a clearly different search rather than
+    answering or refining the current one. Used to reset the experiment profile
+    mid-conversation when the user switches topics.
+
+    Conservative: returns False (stay in the current search) whenever the LLM is
+    unavailable or unsure — it never resets on doubt, so a clarification answer
+    like "banana" or "stable transformation" is never mistaken for a new search.
+    """
+    current_goal = (current_goal or "").strip()
+    new_message = (new_message or "").strip()
+    if not current_goal or not new_message or not is_available():
+        return False
+    raw = _call(
+        system=(
+            "A scientist is building ONE protocol-search request over a conversation. "
+            "Given their CURRENT search goal and their NEW message, decide whether the new "
+            "message belongs to the SAME search or starts a NEW one. Answer with EXACTLY one "
+            "word: SAME or NEW.\n"
+            "SAME — the message answers the pending question, or briefly refines ONE detail "
+            "of the current search (e.g. 'banana', 'use mouse instead', 'how about rice', "
+            "'stable transformation', 'leaf tissue', 'look at qPCR'). A short tweak that keeps "
+            "the same overall experiment is SAME, even if it changes the organism.\n"
+            "NEW — the message is a COMPLETE, standalone protocol-search request (e.g. it "
+            "starts like 'Find protocols for ...' / 'I want protocols that ...' and specifies "
+            "an experiment), OR it switches to a different technique/experiment type (e.g. "
+            "genome editing -> western blot, or -> a drought-tolerance assay). A fully "
+            "re-stated request is NEW even if its technique overlaps the current one.\n"
+            "When unsure, answer SAME."
+        ),
+        user=f"CURRENT GOAL: {current_goal}\nNEW MESSAGE: {new_message}",
+        max_tokens=8,
+        temperature=0.0,
+    )
+    return raw.strip().upper().startswith("NEW")
+
+
+def generate_natural_search_queries(
+    profile: Dict[str, Any],
+    original_query: str,
+    n: int = 5,
+) -> List[str]:
+    """
+    Generate natural-language protocol-search queries from the structured
+    profile + the user's original request.
+
+    Each query is a focused angle; across the set every populated field value is
+    used at least once (collective coverage); the original query is included; and
+    only concepts from the profile/original request are used (no invented terms
+    like "in planta" for a non-plant). Returns [] when the LLM is unavailable.
+    """
+    if not is_available():
+        return []
+
+    p = profile or {}
+    field_labels = [
+        ("organism", p.get("organism")),
+        ("system / sample type", p.get("tissue_or_cell_type") or p.get("sample_type")),
+        ("target", p.get("target")),
+        ("modification / technique", p.get("modification_type")),
+        ("method / approach", p.get("sub_intent") or p.get("experimental_method")),
+        ("delivery method", p.get("delivery_method")),
+        ("expression type", p.get("expression_type")),
+        ("readout", p.get("readout_assay") or p.get("readout")),
+        ("condition", p.get("condition")),
+    ]
+    skip = {"", "not specified", "none", "unknown", "not sure", "null"}
+    fields = [
+        f"- {label}: {str(val).strip()}"
+        for label, val in field_labels
+        if str(val or "").strip().lower() not in skip
+    ]
+    intent_specific = p.get("intent_specific")
+    if isinstance(intent_specific, dict) and intent_specific:
+        extras = "; ".join(
+            f"{k}: {v}" for k, v in intent_specific.items()
+            if v not in (None, "", False) and str(v).strip().lower() not in skip
+        )
+        if extras:
+            fields.append(f"- additional details: {extras}")
+    fields_block = "\n".join(fields)
+
+    raw = _call(
+        system=(
+            "You write search queries for a biology protocol database (protocols.io). "
+            f"Given a structured experiment profile and the scientist's original request, "
+            f"write {n} search queries as NATURAL-LANGUAGE phrases.\n"
+            "Rules:\n"
+            "- Each query is a short, readable phrase — not a keyword dump and not a question.\n"
+            "- Each query focuses on a DIFFERENT combination of the fields (a different angle).\n"
+            "- ACROSS the whole set, use EVERY field value at least once — don't ignore any field.\n"
+            "- Vary phrasing with natural synonyms (scientific organism names, 'simultaneous' for "
+            "multiplex, 'western blot' for protein level, etc.).\n"
+            "- Include the scientist's ORIGINAL request as one of the queries, essentially unchanged.\n"
+            "- Use ONLY concepts present in the profile or the original request. NEVER invent "
+            "organisms, tissues, genes, or techniques. In particular, never write 'in planta' "
+            "unless the system is literally a plant.\n"
+            "Return ONLY a JSON array of strings, no explanation."
+        ),
+        user=f"ORIGINAL REQUEST: {original_query}\n\nEXPERIMENT PROFILE:\n{fields_block}",
+        max_tokens=400,
+        temperature=0.3,
+    )
+    return [str(x).strip() for x in _safe_json_array(raw) if str(x).strip()][:n]

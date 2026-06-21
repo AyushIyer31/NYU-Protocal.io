@@ -1354,7 +1354,7 @@ def generate_candidate_search_queries(
             _join_terms([org, multiplex, mod, target_term, tissue_term, "protocol"]),
             _join_terms([org_alt, "simultaneous" if multiplex else None, target_term, mod_alt, delivery]),
             _join_terms([org, mod, delivery_alt, readout]),
-            _join_terms([org, "in planta", mod_alt, target_term]),
+            _join_terms([org, tissue_term, mod_alt, target_term]),
             profile_to_search_query(profile, fallback_query),
         ]
         if fallback_query and candidate_query_preserves_required_concepts(profile, fallback_query):
@@ -1419,7 +1419,7 @@ def generate_candidate_search_queries(
             _join_terms([org, mod, tissue_term, "protocol"]),
             _join_terms([org_alt, mod_alt, tissue_term, delivery]),
             _join_terms([org, mod, delivery_alt, readout]),
-            _join_terms([org, "in planta", mod_alt]),
+            _join_terms([org, tissue_term, mod_alt]),
             profile_to_search_query(profile, fallback_query),
         ]
         if fallback_query:
