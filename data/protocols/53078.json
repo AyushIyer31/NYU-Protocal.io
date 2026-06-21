@@ -1,0 +1,40 @@
+{
+  "id": 53078,
+  "title": "CHOP TMC Single Cell Multiome ATAC + Gene Expression",
+  "uri": "chop-tmc-single-cell-multiome-atac-gene-expression-bx3wpqpe",
+  "doi": "dx.doi.org/10.17504/protocols.io.bx3wpqpe",
+  "description": "{\"blocks\":[{\"key\":\"68bvq\",\"text\":\"The human heart is vital for our survival and health, and it presents remarkable anatomical, cellular and functional heterogeneity. The four chambers of the heart, together with specialized arteries, veins, valves and conduction cells, perform distinct yet essential physiological functions. A significant gap of knowledge is that different cell's molecular signature, spatial distribution and interactions, and functional state remain little understood at the single-cell level. The goal of the heart Organ-Specific Project (OSP) is to address this knowledge gap and generate high quality, single-cell resolution, longitudinal imaging and multiomics data of normal human hearts across the entire human lifespan. To achieve this goal, we propose the following three specific aims: 1) To refine protocols of biospecimen processing, multiomics and imaging assays and define inter-individual variability using our existing banked normal human hearts. 2) To procure, archive and annotate high-quality normal heart samples across the entire human life span. We have established a streamlined procurement and biorepository infrastructure to support our heart OSP. We will procure normal heart and bone from the same donor of 5 different age groups across the entire human life span. 3) To spatially and quantitatively profile normal heart specimens across the entire human lifespan using a set of robust and scalable imaging and single-cell omics assays. In summary, the heart OSP will broadly impact the entire research community and jumpstart basic-science and medical discoveries based on a sophisticated understanding of the key molecular circuits underlying the development and aging of human heart.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Bring the -80 frozen transmural human heart sample on dry ice, trim off the fat covering the samples as much as possible",
+    "Homogenize the trimmed frozen ventricle or atrium in 0.5-1ml 0.1x lysis buffer using a 2ml Dounce homogenizer(A-loose :25 strokes; B-tight: 30-50 strokes). Note: Different numbers of stroke are probably required for different parts.",
+    "incubate for 5 min. on ice. Pipette 10x",
+    "Incubate for 10 min on ice.",
+    "Pass through 70um cell strainers and 40 um flow cell strainer sequentially.",
+    "Add the same volume of wash buffer, pipette 5x.",
+    "Centrifuge the nuclei at 500rcf for 5 min. at 4°C",
+    "Remove the supernatant without disrupting the nuclei pellet",
+    "Add 500ul Nuclei Wash buffer and gently pipette 5x.",
+    "Centrifuge the nuclei at 500rcf for 5 min. at 4°C",
+    "Remove the supernatant without disrupting the nuclei pellet.",
+    "Repeat step 10 and 11 for one more time.",
+    "Discard the supernatant. Add 500ul Nuclei Wash Buffer. Pass through a 40um Flowmi cell strainer (more than one can be used if there are many clumps). Then determine the nuclei concentration.",
+    "Centrifuge at 500rcf for 5 min. at 4°C. Resuspend the nuclei pellet in chilled diluted nuclei buffer: the targeted nuclei recovery is ~5000--10,000 nuclei/5ul are required for loading. The desired nuclei concentration is 2000-5000 nuclei/ul nuclei buffer",
+    "After calculation and sample dilution using nuclei buffer, prepare 5ul of final sample solution containing 10,000 nuclei and proceed to next section.",
+    "Both ATAC Library Construction and Gene Expression Library Construction follow: 10x GENOMICS&#34; Chromium Next GEM Single Cell Multiome ATAC + Gene Expression Reagent Kits User Guide CG000338 Rev E&#34;, followed by sequencing. Attached is the link about the protocol: https://support.10xgenomics.com/single-cell-multiome-atac-gex/library-prep/doc/user-guide-chromium-next-gem-single-cell-multiome-atac-gene-expression-reagent-kits-user-guide",
+    "After the sequencing raw data has been generated, create sample sheets for both ATAC and Gene Expression and use the &#34;cell ranger-arc-2.0.0&#34; to convert them to fastq files.",
+    "After fastq files have been made, run 10x pipeline using &#34;cellranger-arc count&#34; and generate the mkcount data. For more information, please go to 10x GENOMICS website: https://support.10xgenomics.com/single-cell- multiome-atac-gex/software/pipelines/latest/what-is-cell-ranger-arc",
+    "Further data analysis using R Seurat and the reference is attached: https://satijalab.org/seurat/articles/weighted_nearest_neighbor_analysis.html"
+  ],
+  "authors": [
+    "Po Hu",
+    "Liming Pei"
+  ],
+  "creator": "Po Hu",
+  "published_on": 1631804848,
+  "created_on": 1631126166,
+  "keywords": []
+}

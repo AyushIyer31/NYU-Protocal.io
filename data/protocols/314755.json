@@ -1,0 +1,26 @@
+{
+  "id": 314755,
+  "title": "PD-1/PD-L1 Blocking Bioassay Protocol Using Research-Grade Anti-PD-1 Antibodies",
+  "uri": "pd-1-pd-l1-blocking-bioassay-protocol-using-resear-jxmbcpk2p",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g7ojxkvwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"a4aqa\",\"text\":\"This protocol describes a cell-based bioassay to evaluate the blocking activity of anti-PD-1 antibodies on the PD-1/PD-L1 interaction. The assay uses a reporter cell system to quantify functional blockade of the PD-1 immune checkpoint. This protocol has been optimized for use with abinScience research-grade anti-human PD-1 monoclonal antibodies and is suitable for comparing biosimilar candidates and screening therapeutic antibody clones.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Reagent Preparation Recommended anti-PD-1 antibodies (abinScience): - Research Grade Pembrolizumab (Cat# HS870026): https://www.abinscience.com/product/71/2244.html - Research Grade Nivolumab (Cat# HS870096): https://www.abinscience.com/product/71/1384.html - Research Grade Cemiplimab (Cat# HS870016): https://www.abinscience.com/product/71/1404.html Additional reagents: - PD-1/PD-L1 Blockade Bioassay Kit (e.g., Promega Cat# J1250) or equivalent reporter system - PD-L1 aAPC/CHO-K1 cells (target cells) - PD-1 Effector cells (NFAT-RE reporter Jurkat cells) - Bio-Glo Luciferase Assay Reagent - Complete assay medium: RPMI 1640 + 1% FBS - 96-well white flat-bottom plate Equipment: - Luminescence plate reader - CO2 incubator (37°C, 5% CO2) - Multichannel pipette",
+    "Target Cell Plating (Day 1) 1. Thaw PD-L1 aAPC/CHO-K1 cells and resuspend in complete assay medium. 2. Adjust cell density to 4 × 10⁵ cells/mL. 3. Add 100 μL per well (4 × 10⁴ cells/well) into a 96-well white flat-bottom plate. 4. Incubate overnight at 37°C, 5% CO2 for 16–20 hours to allow cell adherence.",
+    "Antibody Serial Dilution (Day 2) 1. Prepare a 4× stock solution of anti-PD-1 antibody in assay medium. 2. Recommended top concentration: 40 μg/mL (4× of final 10 μg/mL). 3. Perform 3-fold serial dilutions across 10 points in a separate dilution plate. 4. Include a no-antibody control (medium only) for baseline measurement.",
+    "Add Antibody and Effector Cells 1. Remove medium from the target cell plate carefully without disturbing the cell monolayer. 2. Add 40 μL of each antibody dilution to appropriate wells. 3. Thaw PD-1 Effector cells and resuspend at 1.25 × 10⁶ cells/mL in assay medium. 4. Add 40 μL effector cell suspension per well (5 × 10⁴ cells/well). 5. Final effector-to-target ratio is approximately 1.25:1. 6. Incubate at 37°C, 5% CO2 for 6 hours.",
+    "Luminescence Detection 1. Equilibrate Bio-Glo Luciferase Assay Reagent to room temperature. 2. Add 80 μL Bio-Glo reagent per well. 3. Incubate at room temperature for 5–15 minutes. 4. Read luminescence on a plate reader (integration time: 0.5–1 second per well).",
+    "Data Analysis 1. Calculate fold induction: Fold Induction = RLU(sample) / RLU(no antibody control). 2. Plot fold induction vs. antibody concentration on a log scale. 3. Fit a 4-parameter logistic (4PL) curve to determine EC50. 4. Compare EC50 values across different anti-PD-1 antibody candidates. Expected results: A dose-dependent increase in luminescence signal indicates successful PD-1/PD-L1 blockade, with fold induction typically ranging from 2× to 15× at saturating antibody concentrations."
+  ],
+  "authors": [
+    "Qi Cheng"
+  ],
+  "creator": "abinScience cheng",
+  "published_on": 1775723701,
+  "created_on": 1775719155,
+  "keywords": []
+}

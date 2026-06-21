@@ -1,0 +1,34 @@
+{
+  "id": 224802,
+  "title": "Characterization of mitochondrial membrane potential",
+  "uri": "characterization-of-mitochondrial-membrane-potenti-g7sabznaf",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vz9xxrgx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"8kqhq\",\"text\":\"This protocol describes the procedure used by the Seifert Lab to characterize the membrane potential of mitochondria from fibroblasts using JC-1 dye.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Seed cells on a 96-well black clear glass bottom plate at a density of ~30,000 cells per well",
+    "Culture for 24:00:00 to 48:00:00 until cells reach 80% confluency",
+    "Add 100 µL of 2 micromolar (µM) JC-1 Dye (Mitochondrial Membrane Potential Probe) Thermo Fisher Catalog #T3168 staining mix",
+    "Incubate for 00:30:00",
+    "Wash cells with warm 1X HBSS Merck MilliporeSigma (Sigma-Aldrich) Catalog #H4891",
+    "Scan plates with 485 nm excitation and 529 nm detection to quantify green fluorescence (monomeric)",
+    "Wash cells in 1X HBSS Merck MilliporeSigma (Sigma-Aldrich) Catalog #H4891",
+    "Optional: to measure changes in mitochondrial membrane potential in response to inhibitors",
+    "Halfway through incubation, add 1.5 micromolar (µM) Oligomycin Merck MilliporeSigma (Sigma-Aldrich) Catalog #495455 and 10 millimolar (mM) 250 mg FCCP biorbyt Catalog #orb385553",
+    "Incubate for remaining 00:15:00",
+    "Scan plates with 590 nm detection to quantify red fluorescence (aggregate)",
+    "Calculate mitochondrial membrane potential by the ratio of green to red fluorescence intensities, normalized to sample protein level (µg)"
+  ],
+  "authors": [
+    "Ashley Seifert",
+    "Hemendra Vekaria",
+    "Ebenezer Aryee"
+  ],
+  "creator": "Ashley Seifert",
+  "published_on": 1755787532,
+  "created_on": 1755298083,
+  "keywords": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": 27121,
+  "title": "Phylogenetic tree and ancestral sequence reconstruction",
+  "uri": "phylogenetic-tree-and-ancestral-sequence-reconstru-6qrhdv6",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qrhdv6",
+  "description": "{\"blocks\":[{\"key\":\"a9gkl\",\"text\":\"Protocol for the alignment, tree building, and ancestral sequence reconstruction of metagenomic protein coding sequences.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"fsepd\",\"text\":\"This protocol was used specifically for AMT ammonium transporter sequences from TARA Oceans and HOT/ALOHA datasets.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"ce1ek\",\"text\":\"Make sure all of metagenome sequences are in FASTA nucleotide format. Target amino acid sequences should also be in FASTA format.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"5h0le\",\"text\":\"Programs used:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"63csm\",\"text\":\"DIAMOND\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3lr1d\",\"text\":\"TranslatorX\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"fd6rd\",\"text\":\"MAFFT\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6trea\",\"text\":\"RAxML\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2t878\",\"text\":\"IQ-TREE\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"f2s7\",\"text\":\"MrBayes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4s7u\",\"text\":\"FastML (Web)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"79r8e\",\"text\":\"FigTree\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Obtain protein-coding metagenome FASTA files.",
+    "Obtain a set of amino acid sequences that are known/trusted target homologs (Uniprot works well for this).",
+    "Use DIAMOND (blastx can also be used but will be slower for large datasets) to search for target hits from within the metagenome sequences. Recommend an e-value cutoff of at least 1e-20.",
+    "Translate protein-coding target hits to amino acid sequences with TranslatorX.",
+    "Use DIAMOND (or BLAST) to annotate hits against a local copy of the NCBI nr database.",
+    "Choose taxa of interest, and select sequences of appropriate length for the protein from the metagenome hits.",
+    "Align the collected sequences and closely related complete outgroup sequence(s) with MAFFT. Recommend settings of --maxiterate 1000 --localpair",
+    "Make tree with RAxML. Recommend settings -f a -k -m PROTGAMMAAUTO Inspect the tree to see if it makes sense. If a node looks out of place, consult the alignment and figure out why and if you want to keep it in the dataset.",
+    "Check RAxML amino acid substition model and branch support with IQTree. Recommend settings -m TEST -nt AUTO -alrt 10000",
+    "Branch support with MR Bayes. Will need to create a nexus and mbatch file. Recommend mbatch settings: lset nst=6 rates invgamma; prset aamodelpr=fixed(lg); (The model choice here should match the model that RAxML and IQTree select. mcmcp ngen=1000000 nruns=2 nchains=4 samplefreq=100 printfreq=10000 relburnin=yes burninfrac=0.25; mcmc; sumt; sump;",
+    "Submit the MAFFT alignment and RAxML best_tree to the FastML web portal (http://fastml.tau.ac.il/). You can use the local version of this but I found it easier to just use the web portal. Be sure to select Amino Acids and the correct model from the tree building. Use Gamma Distribution and Maximum Liklihood. Deselect Optimize Branch Lengths and joint reconstruction.",
+    "Obtain the 25 most probable ancestral sequences at the nodes of interest from the FastML results page and visualize the tree results in FigTree."
+  ],
+  "authors": [
+    "Matthew Kellom"
+  ],
+  "creator": "Matthew Kellom",
+  "published_on": 1580843320,
+  "created_on": 1566421499,
+  "keywords": []
+}

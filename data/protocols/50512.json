@@ -1,0 +1,30 @@
+{
+  "id": 50512,
+  "title": "Data collection",
+  "uri": "data-collection-bvjqn4mw",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"8s8o9\",\"text\":\"This protocols aims to details the steps necessary to collect new data points for the \\\"Database Justice League\\\" project.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"2p05j\",\"text\":\"Before starting this protocol, you need to have recieved the list of articles you will be working on. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"cm4n5\",\"text\":\"Contact the professor if you haven't received the dataset.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"3foc2\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":[]},{\"key\":\"2e0ck\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"file\",\"mutability\":\"\",\"data\":{\"forceSelection\":true,\"guid\":\"964978CB342A11EEAFD10A58A9FEAC02\",\"nestedSelector\":null,\"original_name\":\"DB_DataCollection_TD.csv\",\"placeholder\":\"\",\"raw_source\":\"\",\"source\":\"https://content.protocols.io/files/drzd2kge.csv\"}}}}",
+  "steps": [
+    "Once you have received the link to download your dataset, download the csv file locally. Make sure to save it on your computer in a convenient folder! In this protocol we will perform the data collection on a test dataset: DB_DataCollection_TD.csv",
+    "As you can see in this test dataset, some preliminary information have been collected automatically such as the article name, authors and publication date. However some information will need additional efforts to be collected, such as the database name, link and availability.",
+    "In the dataset, you&#39;ll find a column name &#34;DOI&#34;, this is a usique identifier given to all scientific publications. This allows to easily find the article online. In order to access the paper search in you web browser : https://doi.org/ + DOI number In the first example it would be: https://doi.org/10.1093/nar/gkaa818",
+    "The first information you need to collect is the name of the database! It seem trivial, but people use acronyms and are often not consistent in naming databases. So be careful! There is mainly two possibilities: either the article is presenting a new database or it is an article about an update of an already published database",
+    "Next, we need to find the database URL. In general, the URL is mentionned in the article abstract. As an example for the first article in the test dataset, you see in the article abstract: &#34;The NDB aims to be a shared resource to biologists, biophysicists and all genome scientists. The NDB is available at https://ndb.rice.edu .&#34; Here you need to report the full URL ( https://ndb.rice.edu ) under the &#34;current_access&#34; column.",
+    "Finally, we need to assess if the URL for the database is working. Click on the URL you identified! Two possibilities: The URL is working or not!",
+    "Next, we need to find if the database is accessible online, and if yes, what is its URL. Usually, the link will be displayed in the abtract (often at the end of the abstract) of the article. As an example in the first article of the test set: &#34;The NDB is available at https://ndb.rice.edu .&#34; Report the URL ( https://ndb.rice.edu ) in the table under the &#34;current_access&#34; column",
+    "Finally we need to assess if the database is accessible or not. To do so, first, click on the database URL that you have identified.",
+    "Great job! Your table should now look like this: DB_DataCollection_TD_filled.csv You can upload the completed dataset to D2L.",
+    "Great job! You collected all the data we needed to complete the DB Justice League! You should now have a table filled as follow: DB_DataCollection_TD_filled.csv Upload the table on D2L and notify us of the upload! Thank you for your great contribution!"
+  ],
+  "authors": [
+    "Alise J Ponsero"
+  ],
+  "creator": "Alise J Ponsero",
+  "published_on": 1622991922,
+  "created_on": 1622991743,
+  "keywords": []
+}

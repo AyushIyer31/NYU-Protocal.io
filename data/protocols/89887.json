@@ -1,0 +1,37 @@
+{
+  "id": 89887,
+  "title": " Purificación PCR desde Gel ",
+  "uri": "purificaci-n-pcr-desde-gel-c3z7yp9n",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj3zrnlk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"2lm19\",\"text\":\"Método para purificar productos de PCR de hasta 1000 pb\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Para un gel estandar, diluir 0.75 g de Agarosa de Bajo Punto de Fusión en 50 mL de Agua destilada junto con 1 mL de Buffer TAE 50X en una botella Schott",
+    "Calentar en microondas a maxima potencia entre 30 y 90 segundos, hasta que la solución se vuelva transparente y no se observen restos del polvo de agar en el fondo. Normalmente esto se alcanza una vez ha hervido la solución.",
+    "Una vez que la botella se haya enfriado hasta estar tibia al tacto, agregar 2.5 µL de Safe View Plus 20.000X. Mezclar revolviendo suavemente.",
+    "Traspasar solucipon de agarosa a molde de gel, utilizando, para formar los pozos donde se colocara el ADN, un peine con dientes grandes (~ 10 µL ) unidos de a dos con cinta scotch, para poder formar un pozo que permita contener 25 µL de la solución de PCR que se desee purificar. El primer pozo se deja sin unir.",
+    "Una vez solidificado el gel de agarosa se coloca en una camara de electroforesis llena de Buffer TAE 1X y se porocde a retirar el peine. En la primera columna se carga 6 µL de Ladder 1Kb, y en las siguientes se colocaran 25 µL de la solucipon de PCR.",
+    "Conectar Camara a fuente de poder, recordando que el cable positivo (rojo) va al lado contrario de donde se cargó el ADN, ya que la moleucla de ADN está cargada negativamente y migrará hacia el polo positivo.",
+    "Correr gel por 50 minutos, a 500 A y 90 V.",
+    "Terminado de correr el gel, se extrae de la camara y se coloca en transiluminador. Observar brevemente para chequear que se haya formado correctamente el amplicon que se busca purificar. IMPORTANTE: Exponer el gel el menor tiempo posible a la luz ultraviolta luz para minimizar el riesgo de alteraciones en la secuencia del amplicon",
+    "Pesar un tubo eppendorf de 1.5 mL por cada producto que se desee purificar. En este se colocaran las bandas extraidas del gel.",
+    "Utilizando todas las medidas de seguridad necesaria para evitar exponer piel a la luz ultra violeta, con el transiluminador prendido se procede a marcar con un bisturí los bordes de la banda que se desee extraer. Apagar transiluminador. Proceder a cortar y extraer las bandas. Para disminuir la cantidad de gel que no contiene el fragmento, se puede acostar el trozo extraido y cortar las partes superior e inferior de la banda",
+    "Colocar de 2 a 3 bandas del producto en el tubo eppendorf, pesar nuevamente y calcular el peso total del gel en el interior del tubo.",
+    "Se puede usar cualquier kit disponible comercialmente. Este protocolo usa como base el Kit de Promega &#34;Wizard SV Gel and PCR Clean-Up System&#34;, pero las directrices respecto a tiempos de incubación y centrifugación son genéricas para cualquier sistema que se utilice",
+    "Precalentar baño seco (Thermoblock) a 65 °C y colocar un tubo eppendorf con Agua libre de nucleasas. En el tubo eppendorf que contiene las bandas de gel con el ADN a purificar, agregar 1 µL de Membrane Binding Solution por cada 1 µg de gel. Vortexear y colocar en baño seco durante 10 minutos. Vortexear cada 3 minutos para facilitar el derretimiento del gel. Finalizados los 10 minutos, realizar un breve spin down del tubo con el gel derretido para concentrar todo en el fondo.",
+    "Colocar una columna SV en un tubo colector, y traspasar hasta un maximo de 700 µL de la solución de gel a la columna SV. Dejar reposar durante 1 minuto y proceder a centrifugar a 3000 x g, Room temperature, durante 5 minutos. Descartar liquido en tubo colector y volver a colocar la columna en este. En el caso de que se tenga mas de 700 µL de solucipon con ADN, repetir los pasos anteriores la cantidad hasta un máximo de 10 veces, cuidando de no exceder la cantidad maxima por vez, a riesgo de que la columna se rebalse.",
+    "Colocar 700 µL de Membrane Washing Solution en la columna y centrifugar a 16000 x g, Room temperature, durante 1 minuto. Descartar liquido en la columna y colocar 500 µL de la misma solución y centifugar a 16000 rpm, Room temperature, por 5 minutos. Una vez terminado, dejar la columna reposar por 1 minuto para evaporar el etanal residual que pueda quedar en la columna",
+    "Traspasar la columna a un nuevo tubo eppendorf esteril y colocar al centro de la membrana d ela columna entre 30-50 µL del Agua libre de nucleasas temperada a 65 °C que se tenia en el baño seco, dependiendo de que tan concetrado se quiera el ADN. Dejar incubando entre 5 y 10 minutos. Pasado el tiempo, centrifugar a 16000 rpm, Room temperature, por 1 minuto. En el caso que se quiera mejorar la recuperación, volver a pasar por la columna 2/3 del volumen eluido.",
+    "Congelar a -20 °C si se ocupará pronto (maximo de 2 semanas), o a -80 °C hasta por 1 año."
+  ],
+  "authors": [
+    "Diego Antonio Márquez"
+  ],
+  "creator": "Diego Antonio Márquez",
+  "published_on": 1698347969,
+  "created_on": 1698259863,
+  "keywords": []
+}

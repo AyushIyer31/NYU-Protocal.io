@@ -1,0 +1,37 @@
+{
+  "id": 112701,
+  "title": "DBP Metabarcoding Pipeline (for metabarcoding data using nanopore) ",
+  "uri": "dbp-metabarcoding-pipeline-for-metabarcoding-data-dsa56ag6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlk94rxv5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"f1sr2\",\"text\":\"This pipeline was developed to process MinION nanopore data output for metabarcoding purposes. The process begins with raw FASTQ data from nanopore base-calling output and includes several steps: quality filtering with NanoFilt, primer removal and length trimming with Cutadapt, artifact detection with Chimera, and building an Operational Taxonomic Unit (OTU) table with VSEARCH. Taxonomic assignment is then performed using Blastn. Additionally, this pipeline integrates an R script to build a taxon table format suitable for assignment in a phyloseq object. All processes were tested and run from the terminal on a Linux system using the Ubuntu distribution. This pipeline ensures a streamlined workflow, facilitating the analysis of environmental DNA (eDNA) data.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4oc5q\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"at6ot\",\"text\":\"This pipeline must execute on Terminal via Linux (the test was run on Ubuntu 22.04.5 via Windows Sub-system Linux or WSL). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "The pipeline requires fastq.gz (format data) from MinION nanopore sequencing output. This protocol&#39;s example data comes from the Flongle MinION nanopore of the R10.1 flow cell. Please visit Malik et al. (2024) for details on the data information. Figure 1. This is the flow chat from the pipeline This is the explanation about each process on this pipeline: Raw Sample (Stored: 1_Sample) : The journey begins with a raw sample in the fastq.gz format. NanoFilt (Stored: 2_NanoFilt) : The raw sample undergoes filtering on quality and/or read length, which is tailored for nanopore sequencing data. Cutadapt (Stored: 3_cutadapt) : The filtered data then goes through Cutadapt, a tool designed to trim adapter/primer sequences from sequencing reads. Combine forward and reverse result using Cat (Stored: 4_combine_fastq) : Forward and reverse reads are combined using the cat command. Convert fastq to fasta using seqtk (Stored: 5_vsearch) : The combined fastq file is then converted to the fasta format using seqtk. VSEARCH : The fasta file is processed with VSEARCH for dereplication, clustering (with 95% similarity), chimera detection, and building OTUs (Operational Taxonomic Units). Taxonomic assignment with blastn : The OTUs are assigned taxonomic labels using blastn. Building taxon table in R : Finally, the taxonomic assignments are utilized to construct a taxon table in R.",
+    "Installing several software need for this pipeline NanoFilt ( wdecoster/nanofilt: Filtering and trimming of long read sequencing data ) Cutadapt ( Cutadapt — Cutadapt 0.1 documentation ) seqtk ( lh3/seqtk: Toolkit for processing sequences in FASTA/Q formats ) VSEARCH ( torognes/vsearch: Versatile open-source tool for microbiome analysis ) blastn ( BLAST+ executables — BLASTHelp documentation ) R ( https://www.r-project.org/ )",
+    "Prepare the sample: Ensure that your sample is in fastq.gz format. Examples fastq.gz files from this protocol could be downloaded through this [ link ] Place the sample in a folder named &#34;1_Sample&#34;.",
+    "Prepare the Database: Obtain a database in fasta (sequence list) and txt (taxon names) formats. An example of the required format can be seen at this [ link ]. Rename the fasta file to &#34;database.fasta&#34; and the txt file to &#34;database.txt&#34;.",
+    "Download the Syntax Script to run the pipeline: Download the syntax script in .sh format from this [ link ].",
+    "Download the R Script: Download the R script to build a taxon table from this [ link ].",
+    "Download the Syntax Script to Install Software (Optional): Download a syntax script in .sh format to compile software installation via the terminal. This script allows you to install all necessary software with a single command. You can download it from this [ link ].",
+    "Figure 2. This is an example list of files required to run this pipeline.",
+    "All the processing pipelines conducted from Linux (for demo using Ubuntu distro)",
+    "We have created a .sh file named &#34;install_system_dependencies.sh&#34; to install all the necessary software listed above [link].",
+    "Open the terminal on Ubuntu and navigate to the folder that contains the dependency files. Figure 3. This example demonstrates that the dependency files are in the &#34;test_run&#34; folder.",
+    "(Optional step) Install any necessary software needs from &#34;install_system_dependencies.sh&#34;. chmod +x install_system_dependencies.sh ./install_system_dependencies.sh &#34;chmod +x&#34; is a command used to add the execute permission to a file, allowing it to be run as a program; essentially, it makes the file executable. &#34;./&#34; is a command to execute a file.",
+    "Execute the sh file &#34;run_pipeline_dbp.sh&#34; chmod +x run_pipeline_dbp.sh ./run_pipeline_dbp.sh",
+    "The output file on the folder will be like this: Figure 4. The output file on the folder will be like this. Table 1. The explanation about output folders and files Output Explanation 1 2_NanoFilt_output This folder contain files output from NanoFilt process with fastq format 2 3_cutadapt_output This folder contain files output from cutadapt process (trim primer forward and reverse) with fastq format 3 4_combine_fastq_from_cutadapt This folder contain files output from cutadapt process (combine output forward and reverse primer) with fastq format 4 5_vsearch This folder contain files from vsearch output with fasta format 5 otu_table.tsv This file contain otu table from each samples 6 result_blastn.txt This file contain result of blastn process 7 taxon_table_90_ident.csv This file contains taxon table after filtering with minimum of 90% identity",
+    "We can edit the parameter based on our necessary analysis by editing &#34;run_pipeline_dbp.sh&#34; through Notepad++. Please check the syntax line that could be edited for each process. NanoFilt parameter Quality threshold (line 13) min_length (line 16) max_length (line 19) Cutadapt parameter Primer list from Forward and Reverse (line 43-44) ERROR_RATE (line45) MIN_LENGTH (line 46) MAX_LENGTH (line 47) VSEARCH parameter clustering and building otu table from minimum identity &#34;--id&#34; (line 192 and line 202) blastn parameter blastn parameter (line 208) R script to build taxon table &#34;script_r_taxon_table.R&#34;"
+  ],
+  "authors": [
+    "Muhammad Danie Al Malik",
+    "Ni Kadek Dita Cahyani",
+    "Aji Wahyu Anggoro"
+  ],
+  "creator": "Muhammad Danie Al Malik",
+  "published_on": 1737035647,
+  "created_on": 1732502547,
+  "keywords": []
+}

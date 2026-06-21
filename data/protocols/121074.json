@@ -1,0 +1,36 @@
+{
+  "id": 121074,
+  "title": "Enzymatic measurements for the detection of trypsin and carboxypeptidase A inhibitory activity",
+  "uri": "enzymatic-measurements-for-the-detection-of-trypsi-d2gs8bwe",
+  "doi": "dx.doi.org/10.1038/nprot.2007.386",
+  "description": "{\"blocks\":[{\"key\":\"j4sql\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"swtim\",\"text\":\"This method can be used to measure the inhibitory activity of a biological extract against the target protease. In the associated Nature Protocol this method was used to determine the activity of C18 HPLC fractions before assaying non-convalent protein interactions by ‘intensity fading’ MALDI-TOF mass spectrometry.\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":130,\"length\":15}],\"entityRanges\":[],\"data\":{}},{\"key\":\"gnhza\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5xrpj\",\"text\":\"\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"v1jnv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"exo8c\",\"text\":\"\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6xbdv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"0ruia\",\"text\":\"It is advised that the inhibitory activity assay of each fraction should be performed in triplicate for each RP-HPLC fractionation to ensure reproducibility.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"wozof\",\"text\":\"Trypsin gold, MS grade (Promega, cat. no. V5280): 100 μg lyophilized powder\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fiftp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lbw18\",\"text\":\"Synthetic trypsin substrate BAEE Prepare aliquots of 1.06 mg ml-1 BAEE in 0.05 M Tris buffer, pH 8.0.\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":63,\"length\":2}],\"entityRanges\":[],\"data\":{}},{\"key\":\"csnms\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"p2uoj\",\"text\":\"CRITICAL Store at -20 °C to avoid degradation.\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jm5xa\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dkgbb\",\"text\":\"\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"smgnl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"wcomf\",\"text\":\"Bovine carboxypeptidase A (Sigma-Aldrich, cat. no. 21940): approximately 60 units per mg protein (approximately 20 mg ml-1); alternatively, recombinant human carboxypeptidase A (hCPA) can be used\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":120,\"length\":2}],\"entityRanges\":[],\"data\":{}},{\"key\":\"ykym8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"kvi8v\",\"text\":\"Synthetic carboxypeptidase substrate: N-(4-methoxyphenylazoformyl)-Phe-OH-potassium salt (Bachem AG, cat. no. M-2245)  Prepare aliquots of 3.65 mg ml-1 in 2% DMSO.\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"xeqjl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ak1ho\",\"text\":\"CRITICAL Store at -20 °C to avoid degradation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Incubate in a quartz cell 10 μl of biological sample (from each re-dissolved chromatographic fraction) with 50 μl trypsin (33 μg ml -1 in 20 mM CaCl 2 , 0.1 M Tris, pH 8.0) and 790 μl activity buffer (20 mM CaCl 2 , 0.1 M Tris, pH 8.0) for 3 min at room temperature.",
+    "Repeat Step 1 in another quartz cell and add 10 μl activity buffer (20 mM CaCl 2 , 0.1 M Tris, pH 8.0) instead of biological sample in order to obtain the control sample.",
+    "Add 150 μl of the substrate N-benzoyl-arginine ethyl ester hydrochloride to each quartz cell (see REAGENTS).",
+    "Gently mix all the quartz cells and measure the absorbance change at 254 nm and 25 °C over 2 min, producing 240 time points (signal averaging time = 0.5 s).",
+    "Control slopes should be 0.050 ± 0.003 units of absorbance (U.Abs.) per min.",
+    "Biological samples yielding slopes below 0.035 U.Abs. per min are taken for intensity fading MS assays.",
+    "Incubate in a quartz cell 10 μl biological sample (from each re-dissolved chromatographic fraction) with 2 μl carboxypeptidase A (35 μg ml -1 in 20 mM Tri-HCl buffer, 0.5 M NaCl, pH 7.5) and 978 μl activity buffer (20 mM Tri-HCl buffer, 0.5 M NaCl, pH 7.5) for 3 min at room temperature.",
+    "Repeat Step 1 in another quartz cell and add 10 μl activity buffer (50 mM Tri-HCl buffer, 100 mM NaCl, pH 7.5) instead of biological sample in order to obtain the control sample.",
+    "Add 10 μl of the substrate N-(4-methoxyphenylazoformyl)-Phe-OH to each quartz cell (see REAGENTS).",
+    "Gently mix all the quartz cells and measure the absorbance change at 350 nm and 25 °C over 3 min, producing 360 time points (signal averaging time = 0.5 s).",
+    "Control slopes should be 0.12 ± 0.02 U.Abs. per min.",
+    "Biological samples yielding slopes below 0.060 U.Abs. per min are taken for &#39;intensity fading MS&#39; assays.",
+    "Detection of non-covalent protein interactions by &#39;intensity fading&#39; MALDI-TOF mass spectrometry: applications to proteases and protease inhibitors by Oscar Yanes, Josep Villanueva, Enrique Querol &amp; Francesc X Aviles published in Nature on 04 Sep, 2007 https://dx.doi.org/10.1038/nprot.2006.487"
+  ],
+  "authors": [
+    "Oscar Yanes",
+    "Josep Villanueva",
+    "Enrique Querol",
+    "Francesc Aviles"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1188895683,
+  "created_on": 1188895683,
+  "keywords": []
+}

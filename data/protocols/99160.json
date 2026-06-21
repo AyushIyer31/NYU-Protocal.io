@@ -1,0 +1,36 @@
+{
+  "id": 99160,
+  "title": "Segmentation of motor pools in cleared spinal cord ",
+  "uri": "segmentation-of-motor-pools-in-cleared-spinal-cord-dc3y2ypw",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvmenkbg3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"2hf1j\",\"text\":\"This protocol is for the 3D segmentation of motoneuron pools in large-volume images (light sheet microscopy) of the cleared intact spinal cord of the rat. Segmentation is based on cholinergic neuron identification and spinal cord cytoarchitecture, relying on reference materials for motor pool identification. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"43k8g\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"1873j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"akgv8\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"7b8h2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"citation\",\"mutability\":\"IMMUTABLE\",\"data\":{\"authors\":\"Henrik Daa Schrøder\",\"can_edit\":true,\"created_on\":\"1980-01-01\",\"date\":\"\",\"doi\":\"https://doi.org/10.1002/cne.901920313\",\"guid\":\"3963F6A1090611EFAE670A58A9FEAC02\",\"journal\":\"Journal of Comparative Neurology\",\"protocol_guid\":\"\",\"title\":\"Organization of the motoneurons innervating the pelvic muscles of the male rat\"}},\"1\":{\"type\":\"citation\",\"mutability\":\"IMMUTABLE\",\"data\":{\"authors\":\"Charles Watson, George Paxinos, Gulgun Kayalioglu, Claire Heise\",\"can_edit\":true,\"created_on\":\"2009-12-17\",\"date\":\"\",\"doi\":\"https://doi.org/10.1016/B978-0-12-374247-6.50019-5\",\"guid\":\"E3E62434090511EFAE670A58A9FEAC02\",\"journal\":\"The Spinal Cord\",\"protocol_guid\":\"\",\"title\":\"Chapter 15 - Atlas of the Rat Spinal Cord\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"cgm7l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"97g3j\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"147os\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"og1a\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"8gc3g\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ctuo6\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"1c82v\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"software\",\"mutability\":\"IMMUTABLE\",\"data\":{\"id\":1788,\"guid\":\"1C22A30C090811EFAE670A58A9FEAC02\",\"name\":\"Imaris\",\"version\":\"9.6.0\",\"os_name\":\"\",\"os_version\":\"\",\"developer\":\"Bitplane\",\"repository\":\"\",\"link\":\"https://imaris.oxinst.com/big-data\",\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"software\",\"mutability\":\"IMMUTABLE\",\"data\":{\"id\":1787,\"guid\":\"069B8E81090811EFAE670A58A9FEAC02\",\"name\":\"Imaris File Converter \",\"version\":\"9.6.0\",\"os_name\":\"\",\"os_version\":\"\",\"developer\":\"Bitplane\",\"repository\":\"\",\"link\":\"https://viewer.imaris.com/download/ImarisFileConverter9_9_1w64.exe\",\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"software\",\"mutability\":\"IMMUTABLE\",\"data\":{\"id\":1789,\"guid\":\"0A7E0AE1090911EFAE670A58A9FEAC02\",\"name\":\"Imaris Stitcher\",\"version\":\"9.6.0\",\"os_name\":\"\",\"os_version\":\"\",\"developer\":\"Bitplane\",\"repository\":\"\",\"link\":\"https://imaris.oxinst.com/products/imaris-stitcher\",\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Convert image stack (.OME-TIFF) to Imaris file type (.IMS) using Imaris File Converter. Imaris File Converter 9.6.0 Bitplane",
+    "For mosaic/tile scan acquisitions, stitch the individual .IMS files with Imaris Sticher. Imaris Stitcher 9.6.0 Bitplane",
+    "Open the final, stitched .IMS file in Imaris. Imaris 9.6.0 Bitplane",
+    "Using the Orthogonal Slicer in Imaris, optimize the display properties of each relevant channel, focusing the slicer on the motor neurons of interest while doing so. This will typically involve changing the minimum and maximum display and increasing the gamma correction to 1.2 to 1.6.",
+    "Identify spinal cord segment boundaries with the following fiduciary markers: ventral and/or dorsal roots segment-specific cytoarchitecture Mark these segment boundaries with transverse orientated Orthogonal Slicers.",
+    "In Imaris, create a Surface by clicking on the blue Surface icon.",
+    "Click on the large button with the &#34;X&#34; symbol - &#34;Skip automatic creation, edit manually&#34;",
+    "In the Draw tab of the Surfaces , go to Contour sub-tab and select the Orientation of orthogonal slice on which contours will be drawn. The best resolution for light sheet images is always in XY, and was chosen for this example, which is the horizontal/longitudinal orientation relative to the spinal cord.",
+    "Move the orthogonal slice to the desired position in the spinal cord i.e. beginning of the motor pool to be segmented.",
+    "Click Draw to enable the creation of the contour on the orthogonal slice.",
+    "Create a polygonal contour outline on the orthogonal slice, clicking once to lay down each vertex. To close the contour, simply click on the starting point.",
+    "Repeat the drawing of contours multiple times at different levels, going from the start of the motor pool to the end. The frequency of contours required depends on how detailed the final segmentation needs to be. For exact outlines of neurons, a high number of contours is recommended. In our example, we traced loosely around the motor pool, and hence a low number of contours was required.",
+    "When all contours are drawn for the motor pool, click on Create Surface in the Contour sub-tab of the Draw tab to create the 3D surface.",
+    "Repeat Steps 6 to 13 for each motor pool or spinal cord nuclei to be segmented. Example collection of segmented motor pools using Imaris Surfaces."
+  ],
+  "authors": [
+    "John-Paul Fuller-Jackson",
+    "Peregrine B Osborne",
+    "Janet R Keast"
+  ],
+  "creator": "Janet R Keast",
+  "published_on": 1767824531,
+  "created_on": 1714709422,
+  "keywords": []
+}

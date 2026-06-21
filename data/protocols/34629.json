@@ -1,0 +1,37 @@
+{
+  "id": 34629,
+  "title": "Fitting PDB files to SAXS data using FOXS web server",
+  "uri": "fitting-pdb-files-to-saxs-data-using-foxs-web-serv-bd3di8i6",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"ev1t3\",\"text\":\"FOXS is a server for fitting models to SAXS data. It can also predict the SAXS data for protein models in the absence of SAXS data. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4b583\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cg8mb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"butfu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"o4rs\",\"text\":\"Schneidman-Duhovny D, Hammel M, Tainer JA, and Sali A. Accurate SAXS profile computation and its assessment by contrast variation experiments. Biophysical Journal 2013. 105 (4), 962-974 \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7qs6j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"abf80\",\"text\":\"Schneidman-Duhovny D, Hammel M, Tainer JA, and Sali A. FoXS, FoXSDock and MultiFoXS: Single-state and multi-state structural modeling of proteins and their complexes based on SAXS profiles NAR 2016\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"8hs8s\",\"text\":\"Internet access\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a1euu\",\"text\":\"Known protein models\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4e0bq\",\"text\":\"SAXS data in the form of Intensity vs. q (optional)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "To perform this analysis you will need subtracted SAXS data in a .dat file that has the structure shown below:",
+    "If you do not have subtracted SAXS data see the protocol on SCATTER or ATSAS to generate this file.",
+    "Navigate to the FOXS webserver",
+    "Provide the PDB file to be fit for the Input Molecule option. This can be provided as a PDB code, a PDB file, or a zipped file of PDB. This latter option is appropriate for fitting structures from molecular dynamics simulations.",
+    "Provide the experimental data set as a .dat file in the Experimental Profile box.",
+    "Record the input files: %s %s",
+    "Advanced options can also be set. These options are useful for fitting to energy minimized structures or ones from simulations. Options to set: Maximal q: If data are bad at high q, reduce this value Implicit hydrogens: Uncheck if hydrogens are in the PDB file(s) Offset : Add a constant offset when fitting. This option should be used when fitting.",
+    "Press Submit Form and wait 1 to 30 minutes depending on the number of structures to be fitted.",
+    "The results are shown in three regions: Top left side shows a fit of the PDB to the data Top right is visualization of the PDB Bottom table showing statistics of the fit",
+    "The data table is ranked by Χ 2 values which range from infinity to 1, with 1 being the target value. Ideally the Χ 2 value would be ~1 with c 1 and c 2 values ~1 and no more than 4. If either of the c 1 or c 2 is red, this suggests some issue with the fitting.",
+    "Record the numbers of the top 5 fits. %s %s",
+    "A useful visuaization of the data is plotting Χ 2 vs. Rg (radius of gyration). However, the table can be quite large and hard to record by hand. The code below runs in R and will &#34;scrape&#34; the table from the web into a .csv file. Paste the URL into the spot listed as &#34;web link from FOXS&#34; and change the protein name and data set name in &#34;proteinname_datasetname_FOXS.csv&#34; as appropriate. # Packages needed to scrape library(rvest) library(tidyverse) # Assign web link to the variable &#34;page&#34; page &lt;- read_html(&#34;web link from FOXS&#34;) # Pull the table nodes from the page tbl &lt;- page %&gt;% html_nodes(&#34;table&#34;) %&gt;% # isolate the 7th table which is the data table .[7] %&gt;% # make it a table file html_table(fill = TRUE) # convert the list into a data frame tbl_df &lt;- as.data.frame(tbl) # Write a csv file to the working directory. write.csv(tbl_df, &#34;proteinname_datasetname_FOXS.csv&#34;) Sometimes the table is the 6th element in the page, if the data table does not look correct, change the .[7] to .[6]",
+    "Record the name and location of the FOXS table as a note on this step.",
+    "Click on the fit file link for any structures that fit particularly well.",
+    "Record the location of the fit files as a note on this step.",
+    "If multiple PDB files were provided for fitting, FOXS will also run multi-FOXS which tries combinations of PDB files to produce a better fit. This can reveal the conformational ensemble of the molecule in solution. These results can be access by clicking the multi-FOXS link.",
+    "Record any multi-FOXS results as a note on this step."
+  ],
+  "authors": [
+    "Chris Berndsen"
+  ],
+  "creator": "Chris Berndsen",
+  "published_on": 1613141462,
+  "created_on": 1584821267,
+  "keywords": []
+}

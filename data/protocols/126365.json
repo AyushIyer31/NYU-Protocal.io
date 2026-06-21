@@ -1,0 +1,36 @@
+{
+  "id": 126365,
+  "title": "2D and 3D Neuron/Microglia co-culture systems",
+  "uri": "2d-and-3d-neuron-microglia-co-culture-systems-d7m59k86",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4zkzjvo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"4kgfd\",\"text\":\"To visualize iPSC-derived hMG within 2D and 3D co-culture systems, iPSCs are transduced with a lentiviral vector (LV) encoding Green Fluorescent Protein (GFP) under the control of the ubiquitous Phosphoglycerate Kinase (PGK) promoter. After transduction, cells are detached and GFP fluorescence is assessed 72 hours later. Neuron–microglia interactions are examined in a 2D co-culture model using iPSC-derived vmDAn, and confocal microscopy is used to capture images.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "In order to visualize iPSCs-derived hMG within 2D/3D co-cultures, iPSCs are transduced with a lentiviral vector (LV) expressing Green Fluorescence Protein (GFP) under the Phosphoglycerate Kinase (PGK) ubiquitous promoter.",
+    "iPSCs are detached and 10 6 iPSCs are infected in 100 uL of mTeSR‱ within a 15 mL Falcon tube with a mean of infection (MOI) of 10.",
+    "Cellsare incubated under normal conditions for 1 hour and plated in a 6 wp with 1 mLof mTeSR ON. After 16-18 hours, 1 mL of mTeSR is added.",
+    "Fluorescence is checked after 72 hours under an inverted microscope. To study neuron/microglia interactions, we generate 2D co-culture system with iPSCderived vmDAn. First, mature GFP-iPSC-derived hMG are conditioned with medium from vmDAn without B27 vitA.",
+    "One week later, hMG are detached with accutase, counted and plated on top of day 42 vmDAn on a human astrocyte feeder layer, at a ratio of 1 hMG per every 2 neurons.",
+    "Astrocytes feeder layer is employed for every analysis where we need to assess neuronal health. Co-culture medium consists of RPMI with Neurobasal 50/50% supplemented with 1% Glut, 1% P/S, M-CSF, IL-34, BDNF, GDNF, TGF-β3, cAMP and AA.",
+    "Half of the medium is changed every 2-3 days. vmDAn and hMG are co-cultured for 1 week in hypoxia conditions, before being used for experiments. For culture treatments, 0.5 ug/mL of NM is added to co-cultures for 8 hours, and after 2 hours IVM 3 µM is added, for a total of 6 hours. In case of PFF, 10 ug/mL are added for 8 hours.",
+    "Images are taken under a 63x objective employing a confocal microscopy. vmDAn morphology and neurite complexity are assessed by ICC staining of TH and analyzed by Sholl analysis using the Simple Neurite Tracer plugin from ImageJ. hMG morphology is analyzed for circularity employing ImageJ.",
+    "Reconstructionof vmDAn and hMG are performed with IMARIS. Surface of vmDAn is generated with a Smooth of 0.103 μm and a Background subtraction of 5 μm.",
+    "Surface of hMG was generated with a Smooth of 0.103 μm and a Background subtraction of 3 μm. For the 3D co-culture system, one vmO is manually placed in a well of a U 96-wp with 50.000 GFP-hMG and incubated under normal conditions in an orbital shaker for 24 hours.",
+    "Then, every organoid is collected and plated on low-adhesion 6-wp. Coculture medium is replaced every 2-3 days. vmO and hMG are co-cultured for 1 week in normal incubation conditions in agitation, before being used for experiments.",
+    "100 ng/mL of LPS (Sigma-Aldrich) is added for 72 hours to co-cultures to study hMG morphologicalchanges. Reconstruction of hMG is done with IMARIS."
+  ],
+  "authors": [
+    "Lucas Blasco-Agell",
+    "Veronica Testa",
+    "Valentina Baruffi",
+    "Antonella Consiglio",
+    "Miquel Vila"
+  ],
+  "creator": "Miquel Vila",
+  "published_on": 1744899253,
+  "created_on": 1744109359,
+  "keywords": []
+}

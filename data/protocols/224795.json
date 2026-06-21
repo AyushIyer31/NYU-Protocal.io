@@ -1,0 +1,39 @@
+{
+  "id": 224795,
+  "title": "Protocol for Using the Isolera-Biotage for &#34;Wide-Polarity-Range&#34; (WPR)",
+  "uri": "protocol-for-using-the-isolera-biotage-for-34-wide-g7r3bzm8p",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2ly4jjelx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"dheja\",\"text\":\"This protocol describes the procedure for fractionating complex mixtures using the Wide-Range-Polarity (WRP) method on the Isolera-Biotage system. This method employs a controlled elution gradient to separate compounds with a wide range of polarity, such as secondary metabolites from natural extracts. The method is applicable to silica gel or C18 stationary phase columns, depending on the sample characteristics.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Adsorbent Resin: Silica gel (10 g or 12 g columns) C18-functionalized silica gel (10 g or 12 g columns) HP20-SS (10 g or 12 g columns) Flash chromatography column/cartridge Column frits Sample injection syringe (luer-lock) Glass pipette 16 mL glass tubes with screw caps, properly labeled: 40 units per sample 1.5 mL pre-weighed vials with caps (for mass balance): 40 units per sample Evaporation equipment (Speed-vac) or nitrogen (N₂) flow Rack for organizing tubes and vials",
+    "Solvents: For silica gel columns (normal phase): Solvent 1: Hexane (position 1S) Solvent 2: Ethyl acetate (position 2S) Solvent 3: Methanol (position 4S) For C18 columns (reverse phase): Solvent 1: Water (position 3S) Solvent 2: Methanol (position 4S) Solvent 3: Ethyl acetate (position 2S)",
+    "Equipment: Isolera-Biotage SpeedVac or nitrogen (N₂) flow Solvent-resistant labels",
+    "Column Preparation: Pack the column. Place the column in the Isolera-Biotage system. Equilibrate the column by passing 3 column volumes (CV) as part of the method.",
+    "Sample Preparation: Dissolve the sample (up to 500 mg for a 10–12 g column) in the smallest possible volume of the initial gradient solvent. Ensure the sample is homogeneous and free of particles.",
+    "Solvent Setup: Fill the corresponding bottles with the appropriate solvents and connect them to the correct positions on the Isolera-Biotage. Adjust the volumes in each bottle as needed.",
+    "Tube Organization: Label the fraction tubes and arrange them in the equipment racks according to the required number.",
+    "Initialization: Turn on the Isolera-Biotage. Select the “Chemistry” option.",
+    "Method Configuration: In “Setup,” enter the solvent volumes in the bottles. Select “Method” → “Open” → “System Owner” (“LAABio”) and choose the corresponding method: WRP-HEX-ACET-MeOH for silica gel WRP-C18 for functionalized C18 Name the sample and save the method.",
+    "Gradient Adjustments: Verify the elution gradient and fractionation conditions. For silica gel: 100% Hexane → 100% Ethyl acetate → 100% Methanol For C18: 100% Water → 100% Methanol",
+    "Equilibration: Select “Equilibrate.” Wait for the system to pass the required volume of the initial solvent through the column. Complete all initial steps.",
+    "Sample Loading: Remove the tubing from the top of the column. Connect the syringe (without the plunger) and load the dissolved sample from the top. Inject the sample directly into the column by selecting “LOAD SAMPLE” to allow flow. After completing the injection, select “CLOSE” to prevent air from entering. Reattach the tubing to the column.",
+    "Start of Run: Select &#34;Gradient&#34; to begin the fractionation process.",
+    "Completion: At the end, select &#34;TURN LAMP OFF.&#34; Remove the tubes containing the fractions and any residual solvents. Remove the column. Copy the chromatogram data to a USB drive.",
+    "Completion: At the end, select “TURN LAMP OFF.” Remove the tubes containing the fractions and any residual solvents. Remove the column. Copy the chromatogram data to a USB drive.",
+    "Fraction Concentration: Concentrate the fractions using a SpeedVac or N₂ flow until dry, if desired.",
+    "Storage: Store the dry fractions in a freezer (-20 °C or -80 °C, if available).",
+    "Recording and Updating: Enter the fraction information into the laboratory sample management system."
+  ],
+  "authors": [
+    "Ricardo M. Borges",
+    "Rômulo Pereira de Jesus"
+  ],
+  "creator": "Rômulo Pereira de Jesus",
+  "published_on": 1755558060,
+  "created_on": 1755282709,
+  "keywords": []
+}

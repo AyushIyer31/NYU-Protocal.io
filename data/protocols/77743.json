@@ -1,0 +1,36 @@
+{
+  "id": 77743,
+  "title": "Calcium fluorimetry with the FLIPR Calcium 6 kit on FlexStation 3",
+  "uri": "calcium-fluorimetry-with-the-flipr-calcium-6-kit-o-cp6pvrdn",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4jdmjlo5/v2",
+  "description": "{\"blocks\":[{\"key\":\"f1hh\",\"text\":\"This protocol details an experimental procedure used to generate results described in the manuscript Li, A., Liu, S., Huang, R., Ahn, S., \\u0026 Lefkowitz, R. J. (2023). Loss of biased signaling at a G protein-coupled receptor in overexpressed systems.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Plate U2OS-TetOn-AT1R in microplates (Black with clear bottom, lysine- coated Corning 3842) at 15000 cells/well 2 days prior to assay",
+    "Add doxycycline and optionally PTX to wells 14 hours before replacement with loading buffer",
+    "Remove one vial of Calcium 6 Assay Reagent (Component A, good for 2 plates) from the freezer and equilibrate to room temperature.",
+    "Dissolve contents of one Component A vial by adding 10 ml of 1X HBSS Buffer plus 20 mM HEPES. Mix by vortexing (~1-2 min) until contents of vial are dissolved. It is important that contents are completely dissolved to ensure reproducibility between experiments.",
+    "Remove cell plates from the incubator, Calcium 6 Kit - add an equal volume of loading buffer to each well in the dark (i.e. 120ul HBSS+HEPES + 40ul of Dye/well (4X) for a 96-well plate in the original protocol). Use 11.8ml of HBSS+HEPES +4.8ml of Dye (4X) for one plate. Save the dissolved dye solution in -20.",
+    "Return plates to the incubator and incubate two hours at 37 C, 5% CO2",
+    "Optionally, add YM-254890 1 hour prior to reading",
+    "30 minutes before experiment (1.5 hours into incubation), prepare the reagents (5X, 40ul/well+20ul volume). The ligand needs to be plated in a 96 well with round bottom (The FlexStation will add ligand, shake, and measure sequentially).",
+    "Turn on FlexStation 30 minutes before experiment and warm up to 37.",
+    "Place tips and ligand plate",
+    "After the two-hour incubation period, transfer the assay plate directly to the FlexStation instrument assay plate carriage 10 minutes prior to reading to re-equilibrate temperature, and then run the assay.",
+    "In an individual well or column of wells, the calcium flux peak(s) should be complete within 1 to 3 minutes after addition. For an entire plate however, the protocol will not complete until all chosen columns are finished. 40-45 min for entire 96 well plate."
+  ],
+  "authors": [
+    "Angus Li",
+    "Samuel Liu",
+    "Rennica Huang",
+    "Seungkirl Ahn",
+    "Robert J Lefkowitz"
+  ],
+  "creator": "Angus Li",
+  "published_on": 1677575059,
+  "created_on": 1677550347,
+  "keywords": []
+}

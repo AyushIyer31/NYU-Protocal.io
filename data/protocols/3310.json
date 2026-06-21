@@ -1,0 +1,38 @@
+{
+  "id": 3310,
+  "title": "Making spike-in transcripts for mRNA normalization",
+  "uri": "making-spike-in-transcripts-for-mrna-normalization-fgnbjve",
+  "doi": "dx.doi.org/10.17504/protocols.io.fgnbjve",
+  "description": "{\"blocks\":[{\"key\":\"bhbu1\",\"text\":\"This is adapted from Benjy Neymotin's implementation of the SP6 in vitro transcription protocol for the purposes of doing 4tU labeled transcripts.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"8g8f4\",\"text\":\"Currently, the polyA pSP64 plasmids in Gresham lab are DGP 104,105,106,229. These are the 700,900,1200, and the celegans spike ins.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"2gr1d\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"cd95u\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Grow DH5alpha ecoli cells overnight with pSP64 poly(A) plasmid containing inserted spike-in sequence.",
+    "Miniprep plasmids, quantify. You&#39;ll need a lot of plasmid.",
+    "Set up the digestion reaction in 50ul 1x EcoRI compatible buffer with ~3ug pSP64-NSERT-poly(A) and 5ul EcoRI. Incubate 2 hours each, 37C. Save some plasmid for the gel below. Benjy recommends you prepare at least two reactions per spike-in.",
+    "Pour a 1% agarose gel and run ~100ng of digest and undigested plasmid, to check for cutting.",
+    "Assuming you observe complete digestion, clean up reactions using PCR clean up kit, pooling repeats of the same plasmid digest at this stage. Quantify using nanodrop to have an idea for concentration. Concentration should be in the range of 100-200 ng/ul, when resuspended in 30ul.",
+    "Set up SP6 reaction master mix, from the kit reagents: %s %s 1x 5x Txn optimized 5x buffer 4ul 20ul DTT (100mM) 2ul 10ul Recombinant RNasin 0.75ul 3.75ul 10mM rATP 1ul 5ul 10mM rUTP 1ul 5ul 10mM rCTP 1ul 5ul 10mM rGTP 1ul 5ul 4tUTP (10mM) 2ul 10ul SP6 RNA Polymerase 1ul 5ul Do this on bench, not on ice (the mix). The manual claims cold will encourage precipitation of your DNA with aid of the spermidine in the buffer.",
+    "Make new tubes of 6.25ul of linarized plasmid DNA. For a kit positive control, dilute 1ul of the provided standard with 5.25ul of water. Concentrations should be in the range of 100-200 ng/ul.",
+    "Add 13.75ul of SP6 reaction master mix to each tube of linearized DNA. Incubate 1-2hr in 30/37C water bath. Darach has seen that 2 hours at 37C works for thiolated spikeins, but with multiple bands for the celegans spike-in. 2 hours at 30C works well for non-thiolated spikeins. The manual says use 30C if you get multiple txn products, 37C or 42C if you need more product.",
+    "Remove 2ul into PCR tubes for later gel.",
+    "To each reaction, add 40ul Ampure XP beads and mix well with pipette. Let sit RT for 5min.",
+    "Add ~500ul 80% etOH onto beads. Let sit ~30 seconds, then aspirate off.",
+    "Let beads dry in the rack with a kimwipe over the open tubes, 10min RT.",
+    "Resuspend beads in 20ul hyclone H_2O.",
+    "Run ~3ul on 1% agarose TAE gel for about 20min at 100V with the NEB 1kb ladder. Visualize with your favorite dye (we use sybrsafe now). %s %s 1kb ladder Positive control Positive control, DNAsed DGP104 reaction DGP104 reaction, DNAsed DGP105 reaction DGP105 reaction, DNAsed DGP106 reaction DGP106 reaction, DNAsed DGP229 reaction DGP229 reaction, DNAsed 1kb ladder ( DNAsed means also cleaned up with beads )",
+    "Quantify on qubit, dilute. 0.1ng/ul is a good working mix. Benjy suggests using 4ng spikein (each) : 100ug total RNA. Darach&#39;s had success with 1ng for ~5e7 cells (for qPCR normalization).",
+    "To the rest, add 1ul of RQ1 RNase-Free DNase. Incubate 15min at 37C.",
+    "Collected beads to side in a magnetic rack. Aspirated supernatant, all.",
+    "Add ~500ul 80% etOH onto beads. Let sit ~30 seconds, then aspirate off. Make sure to get everything out of the bottom, small tip may help."
+  ],
+  "authors": [
+    "Darach Miller"
+  ],
+  "creator": "Darach Miller",
+  "published_on": 1473190036,
+  "created_on": 1470177277,
+  "keywords": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": 227950,
+  "title": "Signal Detection and Analysis of FAERS Data for Drug Safety Surveillance using R",
+  "uri": "signal-detection-and-analysis-of-faers-data-for-dr-haunb2evf",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vz97e4gx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"f3em8\",\"text\":\"This repository contains the code and protocols for reproducing the analysis detailed in our study. It documents the data sources, processing steps, and analytical methodologies to ensure transparency and reproducibility\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"8rg1h\",\"text\":\"1.Objective \\u0026 Principle: This guide aims to identify potential adverse event signals for target drugs from FAERS data through disproportionality analysis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"26c7r\",\"text\":\"2.Prerequisites: Users should be familiar with the basics of R and skilled in cleaning and analyzing quarterly FAERS ASCII data.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9cjcd\",\"text\":\"3.Critical Note: Data deduplication is one of the most crucial steps in the FAERS analysis workflow.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"65fh3\",\"text\":\"4.Key Parameter: Signal detection thresholds (e.g., the lower limit of the 95% CI for the ROR) must be evaluated and adjusted on a case-by-case basis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ff01\",\"text\":\"5.The codebase includes components that depend on faersR, which is not open-source and is protected by copyright,The package has been validated in prior research for FAERS data mining, as demonstrated in Lu BW, ed al. Sci Rep. 2025 May 16;15(1):17070. doi: 10.1038/s41598-025-01527-9. PMID: 40379814; PMCID: PMC12084613.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"evjth\",\"text\":\"1.This code repository contains the complete data analysis code for detecting adverse reaction signals associated with a specific class of drugs from the US FDA Adverse Event Reporting System (FAERS) data.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vot1\",\"text\":\"2.Data source: https://fis.fda.gov/extensions/FPD-QDE-FAERS/FPD-QDE-FAERS.html.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":15,\"length\":63}],\"data\":{}},{\"key\":\"2t85b\",\"text\":\"3.Statistical analyses were performed using R software(version 4.4.0), and used ggplot2 for forest plot visualization.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"434E1583984311F09E580A58A9FEAC02\",\"url\":\"https://fis.fda.gov/extensions/FPD-QDE-FAERS/FPD-QDE-FAERS.html\"}}}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "# 1.Install faershelp devtools::install_github(&#39;faerszj/faershelp&#39;)",
+    "# 2.Install faersR faershelp::install_faersR(&#39;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&#39;)",
+    "#3.Install ggplot2 install.packages(&#34;ggplot2&#34;)",
+    "#4.Run faersR library(&#34;faersR&#34;)",
+    "#5.Set the working path setwd(&#34;F:/FAERS/cinacalcet&#34;)",
+    "#6.Find the target terms cinacalcet|sensipar cinacalcet &lt;- dic_drug(&#34;cinacalcet|sensipar&#34;,file = &#34;tableS1&#34;)",
+    "#7.Find the year of cinacalcet yearQ(cinacalcet)",
+    "#8. Extracted from the first quarter of 2004 to the first quarter of 2025 filt_yearQ(&#39;2004Q1&#39;,&#39;2004Q2&#39;,&#39;2004Q3&#39;,&#39;2004Q4&#39;, &#39;2005Q1&#39;,&#39;2005Q2&#39;,&#39;2005Q3&#39;,&#39;2005Q4&#39;, &#39;2006Q1&#39;,&#39;2006Q2&#39;,&#39;2006Q3&#39;,&#39;2006Q4&#39;, &#39;2007Q1&#39;,&#39;2007Q2&#39;,&#39;2007Q3&#39;,&#39;2007Q4&#39;, &#39;2008Q1&#39;,&#39;2008Q2&#39;,&#39;2008Q3&#39;,&#39;2008Q4&#39;, &#39;2009Q1&#39;,&#39;2009Q2&#39;,&#39;2009Q3&#39;,&#39;2009Q4&#39;, &#39;2010Q1&#39;,&#39;2010Q2&#39;,&#39;2010Q3&#39;,&#39;2010Q4&#39;, &#39;2011Q1&#39;,&#39;2011Q2&#39;,&#39;2011Q3&#39;,&#39;2011Q4&#39;, &#39;2012Q1&#39;,&#39;2012Q2&#39;,&#39;2012Q3&#39;,&#39;2012Q4&#39;, &#39;2013Q1&#39;,&#39;2013Q2&#39;,&#39;2013Q3&#39;,&#39;2013Q4&#39;, &#39;2014Q1&#39;,&#39;2014Q2&#39;,&#39;2014Q3&#39;,&#39;2014Q4&#39;, &#39;2015Q1&#39;,&#39;2015Q2&#39;,&#39;2015Q3&#39;,&#39;2015Q4&#39;, &#39;2016Q1&#39;,&#39;2016Q2&#39;,&#39;2016Q3&#39;,&#39;2016Q4&#39;, &#39;2017Q1&#39;,&#39;2017Q2&#39;,&#39;2017Q3&#39;,&#39;2017Q4&#39;, &#39;2018Q1&#39;,&#39;2018Q2&#39;,&#39;2018Q3&#39;,&#39;2018Q4&#39;, &#39;2019Q1&#39;,&#39;2019Q2&#39;,&#39;2019Q3&#39;,&#39;2019Q4&#39;, &#39;2020Q1&#39;,&#39;2020Q2&#39;,&#39;2020Q3&#39;,&#39;2020Q4&#39;, &#39;2021Q1&#39;,&#39;2021Q2&#39;,&#39;2021Q3&#39;,&#39;2021Q4&#39;, &#39;2022Q1&#39;,&#39;2022Q2&#39;,&#39;2022Q3&#39;,&#39;2022Q4&#39;, &#39;2023Q1&#39;,&#39;2023Q2&#39;,&#39;2023Q3&#39;,&#39;2023Q4&#39;, &#39;2024Q1&#39;,&#39;2024Q2&#39;,&#39;2024Q3&#39;,&#39;2024Q4&#39;, &#39;2025Q1&#39;)",
+    "#9.Extract adverse event reports with Cinacalcet as the primary suspect (PS) filt_drug.role(primary.suspect = T)",
+    "#10.Assign SC sc &lt;- screen(cinacalcet)",
+    "#11. The flow diagram ot the data cleaning and analysis process flowchart(sc,drawio = &#34;figure 1&#34;)",
+    "#12.Recode age groups sc &lt;- rec_age.yr(sc,&#34;&lt;18&#34;, &#34;&gt;=18,&lt;45::18-44&#34;, &#34;&gt;=45,&lt;60::45-59&#34;, &#34;&gt;=60,&lt;75::60-74&#34;, &#34;&gt;=75,&lt;90::75-89&#34;, &#34;&gt;=90&#34;)",
+    "#13.Recode TTO sc &lt;- rec_tto(sc = sc,&#34;&lt;7&#34;,&#34;&gt;=7,&lt;28&#34;,&#34;&gt;=28,&lt;60&#34;,&#34;&gt;=60&#34;)",
+    "#14.Characteristics of AE reports associated with cinacalcet AER_tab(sc,reporter_country.min = 100,indication.min = 100,file = &#34;table3&#34;)",
+    "#15.The signal strength of AEs of cinacalcet at the SOC level sig_soc(sc,rank.ROR = T,ROR.3 = -1,file = &#34;tableS3&#34;)",
+    "#16.Adjust p-values using the False Discovery Rate (FDR) method to obtain p.adj p.adj &lt;- p.adjust(p.value, method = &#34;fdr&#34;)",
+    "#17.PT table containing four algorithms and dual p-values sig_pt(sc,rank.ROR = T,top = 500,sort.soc = T,p.value = T,p.adj = T,file = &#34;table4&#34;)"
+  ],
+  "authors": [
+    "junxia cao",
+    "Na Yang",
+    "Cheng Huang"
+  ],
+  "creator": "Anonymous",
+  "published_on": 1758612092,
+  "created_on": 1758604878,
+  "keywords": []
+}

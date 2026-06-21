@@ -1,0 +1,23 @@
+{
+  "id": 3635,
+  "title": "Add to PATH",
+  "uri": "add-to-path-fstbnen",
+  "doi": "dx.doi.org/10.17504/protocols.io.fstbnen",
+  "description": "{\"blocks\":[{\"key\":\"8c4l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"3m0as\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"dlvs\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"ko7q\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Go to your home directory cd",
+    "so you can see all of the programs we will use for this class you need to add our class bin directory to your unix PATH. You will need to edit your .bashrc file in your home directory to include this directory in your PATH. Add the following line to your .bashrc file: PATH=/rsgrps/bh_class/bin:$PATH To get out of nano quit using the menu at the bottom and save. Or ^X (control X) nano .bashrc",
+    "So you can use seqmagick, you will also need to add python to your .bashrc using nano. This time you add the following line: export PYTHONPATH=/rsgrps/bh_class/lib/python nano .bashrc"
+  ],
+  "authors": [
+    "Bonnie Hurwitz"
+  ],
+  "creator": "Bonnie L Hurwitz",
+  "published_on": 1473363446,
+  "created_on": 1473363344,
+  "keywords": []
+}

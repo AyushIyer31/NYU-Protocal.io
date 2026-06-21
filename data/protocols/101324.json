@@ -1,0 +1,35 @@
+{
+  "id": 101324,
+  "title": "C18 and resuspension (fChEP)",
+  "uri": "c18-and-resuspension-fchep-de7k3hkw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l622q5gqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"mtpu\",\"text\":\"C18 procedure for desalting and depletion of hydrophobic contaminants for chromatin enrichment samples in low throughput, tube format, following sample clean-up. For whole cell lysates or high throughput processing, see alternative protocols. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"a36tk\",\"text\":\"Times are suggested and will depend on temperature and construction of C18. If necessary, increase time to ensure no liquid remains above the C18 at each step (but not too long to prevent C18 drying). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"8rik\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"5flpm\",\"text\":\"Empty waste tube when required to ensure C18 tip does not touch flowthrough. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"bo5be\",\"text\":\"Materials: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f6qaq\",\"text\":\"Empore Disk C18 (Sigma Aldrich, 66883-U)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"chvqf\",\"text\":\"\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2efo8\",\"text\":\"Buffers:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a5scq\",\"text\":\"0.1 % TFA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a5g8i\",\"text\":\"10 % TFA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9fa3r\",\"text\":\"80 % ACN in 0.1 % TFA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"89dfh\",\"text\":\"Methanol 100 %\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Pass 90ul ACN through the tup, centrifuge 500g for 2 mins",
+    "Equilibrate using 200ul 0.1% TFA, centrifuge 500g for 4 mins",
+    "Pass the sample through the StageTip to bind the peptides (max 200 µL at a time). Centrifuge at 1200 rcf for 5 min. Top up if necessary.",
+    "Wash with 200ul 0.1% TFA, centrifuge at 1000g 3 mins",
+    "Elute sample into a new lobind tube using 40ul 80% ACN in 0.1% TFA, centrifuge 500g 3 min (# use lo bind tubes to reduce sample loss).",
+    "To remove anything insoluble from sample elution, spin samples 10,000g 5 min and then take 30ul into MS plate. Adjust for sample loss when resuspending.",
+    "Dry down sample in vacuum centrifuge (V-AQ setting; make sure fume hood is on and book!) This can be at 30°C to speed up drying, going above this temperature will warp MS plate",
+    "Proceed to sample resuspension or store at 2-8°C",
+    "Resuspend in 0.1% TFA to 0.5ug/ul Concentration depends on how much you want to inject and max injection vol",
+    "Add wash to H12 40ul MeCN, 60ul 0.1% TFA",
+    "Spin down briefly to ensure all liquid is at the bottom of the well and to remove bubbles",
+    "Queue to LC-MS/MS",
+    "Adjust the pH of the sample by adding 10 % TFA to a final concentration of 1 % in the sample. (Usually around 20 µL). Check the pH with a pH strip (should be around pH 2). It stops the trypsin activity and it makes the PH ideal for the peptides to bind onto the StageTips.",
+    "Manually cut the Empore Disk C18. Cut three discs with the homemade plunger. Each disc can harbour 10 ug of protein, bringing the total to 30 ug.",
+    "Insert the cut-out discs from the plunger into a pipette tip. Insert tip into a 1.5 mL tube with a hole in the top. Pierce twice as many eppendorf tubes as samples you need. Set half of them aside."
+  ],
+  "authors": [
+    "Victoria Munro"
+  ],
+  "creator": "Victoria Munro",
+  "published_on": 1761667914,
+  "created_on": 1717680983,
+  "keywords": []
+}

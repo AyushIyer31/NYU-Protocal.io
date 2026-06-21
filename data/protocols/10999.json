@@ -1,0 +1,39 @@
+{
+  "id": 10999,
+  "title": "Salty sample derivatization protocol for GC-MS",
+  "uri": "salty-sample-derivatization-protocol-for-gc-ms-nyxdfxn",
+  "doi": "dx.doi.org/10.17504/protocols.io.nyxdfxn",
+  "description": "{\"blocks\":[{\"key\":\"c4j9i\",\"text\":\"Metabolomic footprinting, or exometabolomics, seeks to describe the complex chemical space surrounding cells. However, metabolite detection is hampered by negative matrix effects, especially when samples originate from high salt-content environments. We propose a sample preparation method for the untargeted exometabolomic analysis of seawater by gas chromatography-mass spectrometry. By investigating the independent effects of salt and water on metabolite ionization, we demonstrate residual water locked within salt crystals inhibits compound detection. Our novel preparation protocol includes a combination of solvent drying and ultra-sonication to facilitate the removal of water molecules form the salt palette and extraction of small molecules into the derivatization reagents. We can now detect a broad range of sugars, sterols and amino and organic acids from as little as 0.5 mL of seawater in the µM range. To demonstrate the utility of our approach, we monitored the exo-metabolome of Marinobacter adhaerens, a common marine bacterium during its exponential growth phase. With our untargeted method, we show M. adhaerens preferentially metabolizes glutamic acid and proline before valine, isoleucine and leucine. Our novel untargeted footprinting approach advances the capacity to detect small compounds from high salt content samples by filling a gap in analytical chemistry for the GC-MS analysis of marine samples. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":998,\"length\":22},{\"style\":\"italic\",\"offset\":1121,\"length\":12}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"813sb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"5r58h\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"5aum5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"6Ld4c\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"trMbC\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"wQzF4\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":125121,\"guid\":\"419EE759341F11EE9D4302C0B41BC903\",\"name\":\"Methoxyamine\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":228,\"name\":\"CS-Chromatographie-Service GmbH\",\"link\":\"https://www.cs-chromatographie.de/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":125122,\"guid\":\"419EE7AC341F11EE9D4302C0B41BC903\",\"name\":\"N,O-Bis(trimethylsilyl)trifluoroacetamide\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":228,\"name\":\"CS-Chromatographie-Service GmbH\",\"link\":\"https://www.cs-chromatographie.de/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Dry 0.5 to 1 ml of a salty sample for 6 hr using an eppendorf Concentrator plus SpeedVac at 45 °C in V-AQ mode. Critical step: the drying in the SpeedVac should take no longer than 6h, otherwise the samples could degrade. Samples can be kept in SpeedVac overnight after the run",
+    "After removal from the SpeedVac, resuspend the sample in 250 µL of anhydrous toluene",
+    "Incubate the sample at 37 °C for 30 min and 1350 r.p.m. using a thermomixer",
+    "Transfer 100 µL of the clear supernatan into a GC-MS vial insert and place on autosample for GC-MS analysis Critical step: the samples should be run within 1 day after the preparation, otherwise they will undergo degradation and the MeOX will crystalize, making the injection impossible",
+    "Ultrasonicate the derivatized sample for 10 min",
+    "Ultrasonicat the sample for 10 min at 100% effiency in a sonication bath",
+    "Remove solvant under a stead flow of N2 gas. Improtant note: Prior to inserting needles into tubes, make sure they pre-cleaned with organic solvent. Regulate gas flow so only the surface of the solvent is disturbed. Needles should not touch the solvent. a 3-D printed drying device with attached needles.",
+    "Samples can be stored at 4°C until derivatization.",
+    "Vortex the sample to dissolve salt crystals into the pyridine solvent",
+    "Add 80 µL of Methoxyamine (MeOx; 20 mg/1 mL of pyridine) to dried sample. a The salt crystals should dissolve into the pyridine creating a milky white solution as pictured.",
+    "Ultrasonicate for 10 min using an room temperature bath",
+    "Incubate the sample at 37°C for 90 minutes and 1350 r.p.m. using a thermomixer",
+    "Remove pyridine solvent from sample leaving behind salt crystals under a stead flow of N2 gas. Use a thermomixer to maintain constant temperature (25°C) and rotational speed (200 r.p.m.).",
+    "Once sample is dry, add 100 μL of N,O-Bis(trimethylsilyl)trifluoroacetamide (BSTFA) to salt pellet. Note: Do not leave tubes open for extended periods of time to avoid added moisture from the air",
+    "Ultrasonicate for 10 min using an ultrasonication bath at room temperature",
+    "Pellet salt by centrifuging for 2 min at 14,800 rpm"
+  ],
+  "authors": [
+    "Emilia Sogin",
+    "Erik Pukus",
+    "Nicole Dubilier",
+    "Manuel Liebeke"
+  ],
+  "creator": "Emilia Sogin",
+  "published_on": 1574003307,
+  "created_on": 1521725471,
+  "keywords": []
+}

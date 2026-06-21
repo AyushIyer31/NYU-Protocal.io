@@ -1,0 +1,27 @@
+{
+  "id": 79230,
+  "title": "cermep-bids-retro",
+  "uri": "cermep-bids-retro-crk6v4ze",
+  "doi": "dx.doi.org/10.17504/protocols.io.261ge319dl47/v1",
+  "description": "{\"blocks\":[{\"key\":\"b89pk\",\"text\":\"cermep-bids-retro enables the formatting of retrospective PET and MRI data to BIDS standards from DICOM databases. When dealing with pre-clinical imaging modalities, numerous metadata are overlooked during acquisitions making it difficult to automatically format following BIDS guidelines. This python-based project is a flexible method for BIDS formatting with input csv files to compensate for lacking DICOM tags. And advanced data quality assessment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Clone repository In GitBash: git clone https://gitlab.in2p3.fr/cermep/cermep-bids-retro.git",
+    "Create conda environment cd cermep-bids-retro conda env create -f environment.yml conda activate bids-retro",
+    "This step is key to a functional method. It requires a good knowledge of the available tags and fields in the DICOM data and one can always refer to the BIDS specifications to define all required tags for their modality. Substeps below provide description and example for each column of the 3 input files.",
+    "Description and examples to fill in seq_overview.csv",
+    "This table must be filled in simultaneously with seq_overview.csv Desciption and examples to fill in dcm2bids_tags.csv.",
+    "This table is necessary for formatting of PET data, otherwise optional Description and examples to fill in pet_doses.csv",
+    "Replace argument values and run task from command line: python bids_retro\\\\main.py \\ --src_mri &#34;path\\to\\modality&#34; \\ --src_pet &#34;E:\\PhD\\temp\\data_fabien\\raw_dcm&#34; \\ --sequences_overview &#34;inputs\\seq_overview.csv&#34; \\ --pet_doses &#34;inputs\\pet_doses.csv&#34; \\ --dcm2bids_tags &#34;inputs\\dcm2bids_tags.csv&#34; \\ --species &#34;name of species&#34; \\ --src_structure &#34;A&#34; \\ --in_sub_dcm_list &#34;subjectA,subjectB&#34; \\ --in_ses_dcm_list &#34;session&#34; \\ --dest &#34;path\\to\\bids\\formatted\\destination&#34; \\ --quality_testing 1 \\ --results &#34;path\\to\\save\\quality_analysis\\results&#34; \\ --include_dicom 0 --verbose 1"
+  ],
+  "authors": [
+    "lucie.chalet"
+  ],
+  "creator": "lucie.chalet",
+  "published_on": 1696955166,
+  "created_on": 1679481290,
+  "keywords": []
+}

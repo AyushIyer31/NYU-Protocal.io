@@ -1,0 +1,37 @@
+{
+  "id": 93475,
+  "title": "Anatomical Verification (Mendonça et al 2024)",
+  "uri": "anatomical-verification-mendon-a-et-al-2024-c7ibzkan",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn3o3ql5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"8n3j0\",\"text\":\"Protocol for anatomical verification (sample prep, immunostaining and imaging)  in Mendonça et al 2024. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"8opsm\",\"text\":\"Animals were euthanized after completion of the behavioural tests.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"emav5\",\"text\":\"Standard perfusion setup \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"btdcp\",\"text\":\"Vibrotome\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Anaesthetize mice with isoflurane, followed by intraperitoneal injection of ketamine-xylazine (5 mg/kg xylazine; 100 mg/kg ketamine).",
+    "Perfuse transcardially in 1% phosphate buffered saline (PBS) and then 4% paraformaldehyde (PFA) in PBS.",
+    "Dissect brains after perfusion is completed.",
+    "Keep brains in 4% PFA solution overnight and then transferred to 1x PBS solution.",
+    "Section brains coronally in 30 to 50-um slices (using a Leica vibratome VT1000S) and keep in PBS before mounting or immunostaining.",
+    "Rinse 3 times with TBS (10 min each)",
+    "Images were taken using a wide-field fluorescence microscope (Zeiss AxioImager).",
+    "Peroxides treatment (inhibition peroxidase an permeabilization) 5 min 1.5 mL methanol 450 µL H 2 O 2 13.05 mL TBS (this step is for DAB staining but we kept it because it favors the penetrance of the Ab)",
+    "Rinse 3 times with TBS (10 min each)",
+    "Membrane permeabilization treatment 15min (or 20min for Ab that don’t penetrate well) 300 µL Triton 10% 14.7 mL TBS",
+    "Rinse 3 times with TBS (10 min each)",
+    "Blockade with BSA 3% or other blocking solutions 1h (if needed)",
+    "Primary Antibody (diluted in TBS): overnight at 4°C (or longer period if needed) TH (1:1000) Pel-Freez, Rogers, AR",
+    "Rinse 3 times with TBS (10 min each)",
+    "Secondary Antibody (diluted in TBS without) 40-45 min Room Temperature (1:400)",
+    "Rinse 2 times with TBS (10 min each) AND Rinse 2 times with TB (10 min each)",
+    "Mounting with Vectashield or PVA DABCO"
+  ],
+  "authors": [
+    "Marcelo D Mendonça"
+  ],
+  "creator": "Christine Weber-Schmidt",
+  "published_on": 1705433243,
+  "created_on": 1705100403,
+  "keywords": []
+}

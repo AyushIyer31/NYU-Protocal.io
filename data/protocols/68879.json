@@ -1,0 +1,26 @@
+{
+  "id": 68879,
+  "title": "In vitro GTPase activity",
+  "uri": "in-vitro-gtpase-activity-cfhptj5n",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g74qwqgwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"e5od5\",\"text\":\"This protocol details methods for the in vitro GTPase activity testing of purified LRRK2.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":38,\"length\":9}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"dpgsb\",\"text\":\" \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"1cfod\",\"text\":\"   \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":1,\"length\":1}],\"data\":{}},{\"key\":\"7j5t3\",\"text\":\"Microplate reader (Synergy H1; BioTek)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":251136,\"guid\":\"4218BCAA341F11EE9D4302C0B41BC903\",\"name\":\"EnzChek\\u0026trade; Phosphate Assay Kit\",\"mol_weight\":0,\"sku\":\"E6646\",\"url\":\"https://www.thermofisher.com/order/catalog/product/E6646\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":956952,\"guid\":\"4373B643341F11EE9D4302C0B41BC903\",\"name\":\"96-well Clear Flat Bottom Polystyrene TC-treated Microplate Individually Wrapped with Low Evaporat\",\"mol_weight\":0,\"sku\":\"3595\",\"url\":\"https://ecatalog.corning.com/life-sciences/b2c/US/en/Microplates/Assay-Microplates/96-Well-Microplates/Corning%C2%AE-96-well-Clear-Polystyrene-Microplates/p/3595\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":40,\"name\":\"Corning\",\"link\":\"https://www.corning.com/worldwide/en.html\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Set up the reaction mixtures in a 96-well plate with 5 µL 20× reaction buffer ( 1 Molarity (M) Tris-HCl, 20 millimolar (mM) MgCl2, pH 7.5 and 2 millimolar (mM) sodium azide), 200 micromolar (µM) 2-amino-6-mercapto-7-methylpurine riboside, 0.1 U purine nucleoside phosphorylase, and 9 micromolar (µM) LRRK2 protein or 0.8 micromolar (µM) Dynamin1 or buffers for the control in separate wells. Note: For best measurement results, we usually use a total volume of 80 µL - 100 µL .",
+    "Preincubate samples in the microplate reader for 00:30:00 at 37 °C .",
+    "Add 0.5 millimolar (mM) GTP (final concentration) to initiate the reaction.",
+    "Immediately begin reading absorbance at 360 nm , every 00:01:00 over 00:45:00 at 37 °C .",
+    "For data analysis, subtract the last values determined before GTP was added from the corresponding values for the experimental reaction."
+  ],
+  "authors": [
+    "Xinbo Wang",
+    "Pietro De Camilli"
+  ],
+  "creator": "xinbo.wang",
+  "published_on": 1692994162,
+  "created_on": 1660884338,
+  "keywords": []
+}

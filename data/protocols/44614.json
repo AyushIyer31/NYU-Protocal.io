@@ -1,0 +1,29 @@
+{
+  "id": 44614,
+  "title": "Automated high throughput viral concentration from wastewater using the KingFisher Flex platform",
+  "uri": "automated-high-throughput-viral-concentration-from-bptemnje",
+  "doi": "dx.doi.org/10.17504/protocols.io.bptemnje",
+  "description": "{\"blocks\":[{\"key\":\"6q5qm\",\"text\":\"Large-scale wastewater surveillance has the ability to greatly augment the tracking of infection dynamics especially in communities where the prevalence rates far exceed the testing capacity. However, current methods for viral detection in wastewater are severely lacking in terms of scaling up for high throughput. In the present study, we employed an automated magnetic-bead based concentration approach for viral detection in sewage that can effectively be scaled up for processing 24 samples in a single 40-minute run. The method compared favorably to conventionally used methods for viral wastewater concentrations with a limit of detection of 8.809 viral gene copies/ml from input sample volumes as low as 10ml and can enable the processing of over 100 wastewater samples in a day.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"6dh36\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Aliquot 10 mL of raw sewage (no pre-filtering step required) into two wells of the KingFisher 24 deep-well plate (Cat# 95040470, Thermo Fisher). Each well should have 5 mL of the raw sewage sample. For instance, 5 mL of sample PL09 should be filled in A1 of plate 1 and 5 mL in A1 of plate 2. Raw, unfiltered sewage",
+    "Add 75 µL of Nanotrap Magnetic Virus Particles (10) Ceres Nano Catalog #44202 to each of the wells containing the raw sewage sample. Plate 1: 5ml sample+ 75uL magnetic beads",
+    "Prepare the elution plate: Add 150 µL of 1X PBS and 800 µL of the MagMAX&trade; Microbiome Lysis Solution Thermo Fisher Catalog #A42361 to each of the wells of the 24 deep-well plate.",
+    "Load the 3 plates into a KingFisher™ Flex Automated Nucleic Acid Purification system fitted with a 24 Deep-Well Head for KingFisher™ Flex Magnetic Particle Purification System (Cat. # 5400630 and 5400640).",
+    "Download the program for the KingFisher Platform for the automated processing of 24 samples: NanoTrap_Flex24_V1ck.bdz and load the program on the the equipment using the BindIt Software (Cat. # 5189009 ).",
+    "Once loaded, follow the steps on the the protocol to load the 3 plates into the system for extraction. The protocol provided here includes an extended incubation step which can be reduced by half depending on the sample volume. The above protocol can also be increased for processing 48 samples.",
+    "The program processes the samples from the 2 sample plates and elutes the concentrated viral RNA into a single elution plate containing the lysis buffer. The Lysis buffer can vary depending on the Nucleic extraction kit used.",
+    "Nucleic acid extraction can then be performed using the MagMAX&trade; Microbiome Ultra Nucleic Acid Isolation Kit, with bead plate Thermo Fisher Catalog #A42357 The downstream extraction can be performed with any kit of choice. Here the MagMAX kit was used due to ease of integration into the KingFisher Flex system."
+  ],
+  "authors": [
+    "Smruthi Karthikeyan",
+    "Greg Humphrey"
+  ],
+  "creator": "Smruthi Karthikeyan",
+  "published_on": 1605817729,
+  "created_on": 1605641312,
+  "keywords": []
+}

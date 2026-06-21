@@ -1,0 +1,26 @@
+{
+  "id": 22494,
+  "title": "The PacBio libraries preparation for the Scapharca broughtonii.",
+  "uri": "the-pacbio-libraries-preparation-for-the-scapharca-z76f9re",
+  "doi": "dx.doi.org/10.17504/protocols.io.z76f9re",
+  "description": "{\"blocks\":[{\"key\":\"2ko47\",\"text\":\"This protocol is used to outline the process of the PacBio libraries preparation for the Scapharca broughtonii.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":89,\"length\":21}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "The genomic DNA was fragmented using a g-TUBE (Covaris, Brighton, UK) to obtain ~20kb frequments, and verified with Agilent Bioanalyzer 2100 system (Agilent Technologies, Palo Alto, CA, USA). The sizes of the main fragments should &gt;17 Kb.",
+    "End-repair and adaptor-ligation were carried out using SMRTbell Template Prep Kit (Pacific Biosciences, p/n 100-259-100). The precedures was keeped at 37℃, 60 min for damage repair; 25℃, 10 min for end repair, and 25℃, over night for adapter ligation.",
+    "These fragments were firstly selected into size ranges of 12-50 kb using BluePippin Size-Selection system (Sage Science, Beverly, the U.S.), and further purified using AMPure PB beads (Agencourt, Beverly, the U.S.).",
+    "The purified fragments were re-repaired with SMRTbell Damage Repair Kit (Pacific Biosciences, p/n 100-465-900), and purified using AMPure PB beads.",
+    "The concerntration and size were detected with Qubit 3.0 (Thermo Fisher Scientific Inc., Carlsbad, CA, USA) and Agilent Bioanalyzer 2100 system (Agilent Technologies, Palo Alto, CA, USA).",
+    "The qualified fragments were combined with primers, polymerase and Magbeads (Pacific Biosciences, p/n 100-676-500) using PacBio Bingding Kit (Pacific Biosciences, p/n 100-372-700), and ready for sequencing."
+  ],
+  "authors": [
+    "Chang-Ming CM Bai"
+  ],
+  "creator": "Chang-Ming CM Bai",
+  "published_on": 1555858106,
+  "created_on": 1555842495,
+  "keywords": []
+}

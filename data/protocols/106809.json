@@ -1,0 +1,29 @@
+{
+  "id": 106809,
+  "title": "Xenograft snRNA-seq Integration and Normalization",
+  "uri": "xenograft-snrna-seq-integration-and-normalization-dkiz4uf6",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbzo4ngpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"csfl1\",\"text\":\"This protocol describes the integration and normalization of single-nucleus RNA sequencing (snRNA-seq) data obtained from xenograft samples. The process involves loading data from multiple Cell Ranger outputs, creating Seurat objects, performing data integration, and normalizing the datasets. The protocol includes the visualization of results and statistical analyses to assess the quality and characteristics of the integrated datasets. The protocol includes the assignment of cell-type and differential gene expression analysis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"3pb36\",\"text\":\"The user can access the code base at https://github.com/zchatt/ASAPSpatialTranscriptomics/tree/main/xenograft/snrna_seq\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":37,\"length\":82}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"70A53A74688911EFA4880A58A9FEAC02\",\"url\":\"https://github.com/zchatt/ASAP-SpatialTranscriptomics/tree/main/xenograft/snrna_seq\"}}}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"eqkt2\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9},{\"style\":\"italic\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7strs\",\"text\":\"High-performance computing system or workstation with R\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bqu41\",\"text\":\"Seurat v5\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"at0r2\",\"text\":\"Cell Ranger output files (e.g., 10XGenomics)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c6u0t\",\"text\":\"R packages: patchwork, Matrix, tidyverse, plyr, ggpubr, HGNChelper, EnhancedVolcano, ggbreak\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Set the working directory and specify the path for Cell Ranger outputs. Load the necessary R libraries and configure global options.",
+    "Import multiple Cell Ranger outputs. Create Seurat objects for each dataset.",
+    "Filter cells based on unique feature counts (e.g., remove cells with &lt; 2000 unique counts or &gt; 0.1% mitochondrial reads). Integrate multiple datasets and normalize the data using Seurat’s standard workflow.",
+    "Differentiate between human and rodent cells using per-cell read alignments to the respective genomes.",
+    "Perform dimensionality reduction (e.g., PCA, UMAP) and clustering. Visualize the integrated data using UMAP plots.",
+    "Classify human cell clusters using tools like CHETAH and scType.",
+    "Conduct differential expression analysis between human cell types of interest."
+  ],
+  "authors": [
+    "Zac Chatterton",
+    "Chiara Pavan",
+    "Clare Parish"
+  ],
+  "creator": "courtney.wright Wright",
+  "published_on": 1725213143,
+  "created_on": 1725212015,
+  "keywords": []
+}

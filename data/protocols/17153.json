@@ -1,0 +1,29 @@
+{
+  "id": 17153,
+  "title": "Platereader workflow with V. natriegens",
+  "uri": "platereader-workflow-with-v-natriegens-uy9exz6",
+  "doi": "dx.doi.org/10.17504/protocols.io.uy9exz6",
+  "description": "{\"blocks\":[{\"key\":\"9o4qc\",\"text\":\"This protocol provides a workflow for platereader measuremtns with V. natriegens.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"529pr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"eb5kl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"6s7s7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"741to\",\"text\":\"transparent and black 96-well plate\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Aliquot 50 µL LBv2 in 1.5 mL reaction tubes",
+    "Transfer material from glycerol stock into these reaction tubes",
+    "Prepare transparent 96 well plat with 190 µL LBv2",
+    "Use 10 µL of LBv2 with cells from glycerol stock to inoculate the 96 well plate. (Carry out experiment with four technical replicates",
+    "Incubate 96 well plate in a platereader (Protocol: Preculture) Preculture: 37 cycles 600 s cycle time Shaking: Double orbital, 500 rpm Protocols: OD + optional protocols OD600 (Absorbance): Wavelength: 600 nm Settling Time: 0.5 s No. of flashes: 30",
+    "Dilute grown cultures 1:40 (195 µL LBv2 + 5 µL culture) in a sterile 96 well plate",
+    "Apply Shaking protocol Shaking (Absorbance): Shaking: Double Orbital, 300s, 700 rpm Measure OD600",
+    "Dilute grown cultures 1:50 (196 µL LBv2 + 4 µL culture) in a black sterile 96 well plate",
+    "Start protocol for measurement in the plate reader (Protocol: OD+Lux, OD+GFP, OD+RFP) OD + Lux 121 cycles 300 s cycle time Shaking: Double orbital, 500 rpm Protocols: OD + luminescence OD600 (Absorbance): Wavelength: 600 nm Settling Time: 0.5 s No. of flashes: 30 Luminescence: Gain: 4000 Measurement interval time: 1 s"
+  ],
+  "authors": [
+    "Daniel Stukenberg"
+  ],
+  "creator": "Daniel Stukenberg",
+  "published_on": 1540402769,
+  "created_on": 1540402168,
+  "keywords": []
+}

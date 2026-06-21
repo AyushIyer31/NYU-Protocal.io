@@ -1,0 +1,33 @@
+{
+  "id": 40172,
+  "title": "SARS-CoV-2 McGill Artic PCR Protocol, 2.5 ul RT and V3 only + LA1",
+  "uri": "sars-cov-2-mcgill-artic-pcr-protocol-2-5-ul-rt-and-bjgkkjuw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bjgkkjuw",
+  "description": "{\"blocks\":[{\"key\":\"1qrsa\",\"text\":\"V3 only primers for this protocol were designed using Primal Scheme and generate overlapping 400 nt amplicons. Primer names and dilutions are listed in the table below. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":54,\"length\":13}],\"data\":[]},{\"key\":\"8joop\",\"text\":\"https://github.com/sarahreiling/artic-ncov2019/blob/master/primer_schemes/nCoV-2019/V3/nCoV-2019_V3only.scheme.bed\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":114}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"16E8F7FDDC1411EA9DEB0A58A9FEAC2A\",\"url\":\"http://primal.zibraproject.org\"}},\"1\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"16E8F85DDC1411EA9DEB0A58A9FEAC2A\",\"url\":\"https://github.com/sarahreiling/artic-ncov2019/blob/master/primer_schemes/nCoV-2019/V3/nCoV-2019_V3only.scheme.bed\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "PRIMER POOL PREPARATION If required resuspend lyophilised primers at a concentration of 100 µM each V3 only primers for this protocol were designed using Primal Scheme and generate overlapping 400 nt amplicons. Primer names and dilutions are listed in the table below. https://github.com/sarahreiling/artic-ncov2019/blob/master/primer_schemes/nCoV-2019/V3/nCoV-2019_V3only.scheme.bed",
+    "Generate primer pool stocks by adding 5 µL of each primer pair to a 1.5 mL Eppendorf labelled either “Pool 1 (100 µM)” or “Pool 2 (100 µM)”. Total volume should be 490 µL for Pool 1 (100 µM) and 490 µL for Pool 2 (100 µM). These are your 100 µM stocks of each primer pool. Make another primer pool named &#34;Pool LA1 (100 µM)&#34; that contains 5 µl of primer pairs 5, 17, 23, 26, 66, 70, 74, 91, 97, and 10 ul of primer pair 64. Primers should be diluted and pooled in the mastermix cabinet which should be cleaned with decontamination wipes and UV sterilised before and after use.",
+    "Dilute this primer pool 1:10 in molecular grade water, to generate 10 µM primer stocks. It is recommend that multiple aliquots of each primer pool are made to in case of degradation or contamination. LA1 primer pool will be diluted to 1 µM primer stock. Primers need to be used at a final concentration of 0.015 µM per primer. In this case both pools have 98 primers in so the requirement is 3.65 µL primer pools (10 µM) per 25 µL reaction. For other schemes, adjust the volume added appropriately.",
+    "MULTIPLEX PCR In the extraction and sample addition cabinet add 2.5 µL RT product to each tube and mix well by pipetting. The extraction and sample addition cabinet should should be cleaned with decontamination wipes and UV sterilised before and after use.",
+    "In the mastermix hood set up the multiplex PCR reactions as follows in 0.2mL 8-strip PCR tubes: Component Pool 1 [10 uM primer] Pool 2 [10 uM] Pool LA1 [1 uM] Q5 Hot Start High-Fidelity 2X Master Mix 12.5 µL 12.5 µL 12.5 µL Primer Pool 1 or 2 (10 µM pool 1+2; 1 µM LA1) 3.7 µL 3.7 µL 3.7 µL Nuclease-free water 6.3 µL 6.3 µL 6.3 µL Total 22.5 µL 22.5 µL 22.5 µL Add 2.5 µl RT product as mentioned in step 10. A PCR mastermix for each pool should be made up in the mastermix cabinet and aliquoted into PCR strip tubes. Tubes should be wiped down when entering and leaving the mastermix cabinet.",
+    "Pulse centrifuge the tubes to collect the contents at the bottom of the tube.",
+    "Set-up the following program on the thermal cycler: Step Temperature Time Cycles Heat Activation 98 °C 00:00:30 1 Denaturation 98 °C 00:00:15 36 Annealing 65 °C 00:05:00 36 Hold 4 °C Indefinite 1 Cycle number should be 25 for Ct 18-21 up to a maximum of 36 cycles for Ct 36.",
+    "PCR CLEANUP Combine the entire contents of “Pool 1” and “Pool 2” PCR reactions for each biological sample into to a single 1.5 mL Eppendorf tube. Keep Pool LA1 separate from the combined Pool 1+2 until after the clean-up!!",
+    "Clean-up the amplicons using the following protocol: Add an equal volume (1:1) of SPRI beads to the sample tube and mix gently by either flicking or pipetting. Incubate for 5 min at room temperature. Pellet on magnet for 5 min. Remove supernatant. Add 200 ul of 80% ethanol to the pellet and wash twice. Elute in 30 ul elution buffer. Amplicon clean-up should be performed in the post-PCR cabinet which should should be cleaned with decontamination wipes and UV sterilised before and after use.",
+    "AMPLICON QUANTIFICATION AND NORMALIZATION Quantify the amplicon pools using a fluorimetric dsDNA assay. We expect following concentrations: Pool 1+2 combined: 100-150 ng/ul for Ct 14-24 30-80 ng/ul for Ct 25-29 10-30 ng/ul for Ct 30-36 Pool LA1: 1-10 ng/ul for all Ct",
+    "After quantification of Pool 1+2 and Pool LA1, mix them together in following ratio: 89.8% Pool 1+2 and 10.2% Pool LA1. For this, take a new plate and add 135 ng of Pool 1+2 and 15.3 ng of Pool LA1, and add up with nuclease-free water to a total volume of 30 µl (= 150 ng or 5 ng/µl)."
+  ],
+  "authors": [
+    "Sarah J Reiling",
+    "Josh Quick",
+    "Ioannis Ragoussis"
+  ],
+  "creator": "Sarah J Reiling",
+  "published_on": 1601648113,
+  "created_on": 1596834611,
+  "keywords": []
+}

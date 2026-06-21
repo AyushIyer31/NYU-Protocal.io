@@ -1,0 +1,33 @@
+{
+  "id": 226835,
+  "title": "Differentiation of KOLF2.1J hIPSC to midbrain dopaminergic neurons",
+  "uri": "differentiation-of-kolf2-1j-hipsc-to-midbrain-dopa-g9rtbz56p",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ld65x7g5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"a6h2k\",\"text\":\"This protocol was used to differentiate KOLF2.1J cells into mature midbrain dopaminergic neurons. The resultant cells do not show representative markers for ventral midbrain dopaminergic neurons such as EN1 or SOX6, although they showed neuronal acitivity and other canonical markers. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Day -2 (Two Days Before Differentiation Start): Coat culture plates with: Geltrex (Life Technologies) Geltrex&trade; hESC-Qualified, Ready-To-Use, Reduced Growth Factor Basement Membrane Matrix Thermo Fisher Catalog #A1569601 Laminin-511 (Biolamina) Laminin-511 Biolamina Catalog #LN511",
+    "Seed iPSCs: Plate adapted iPSCs at a density of 200,000 cells/cm² onto the coated plates. Maintain cells in Essential 8 Flex (Thermo Fisher Scientific) medium Essential 8 Flex complete medium (E8) Gibco - Thermo Fisher Scientific Catalog #A2858501 . Continue until cells reach ~80% confluency.",
+    "Day 0: Start of Differentiation: Culture Medium: Switch to Neurobasal/N2/B27 medium supplemented with 2 mM L-glutamine (Invitrogen). Neurobasal™ Medium Gibco - Thermo Fisher Scientific Catalog #21103049 N2 supplement Gibco - Thermo Fisher Scientific Catalog #17502048 B27 supplement minus vitamin A Gibco - Thermo Fisher Scientific Catalog #12587010 L-Glutamine Gibco - Thermo Fisher Scientific Catalog #25030024",
+    "Small Molecule Additives (Day 0–11): LDN193189 – 250 nM (Day 0–7) Stemolecule LDN-193189 Stemgent - Bio-connect Catalog #04-0074 SB431542 – 10 µM (Day 0–7) Stemolecule™ SB431542 Reprocell Catalog #04-0010-10 Purmorphamine – 12 µM (Day 0–7) Purmorphamine Tocris Catalog #4551 (CAS: 483367-10-8) CHIR99021 – 0.7 µM (Day 0–3), increase to 7.5 µM from Day 4–11 CHIR99021 R&D Systems Catalog #4423 Y27632 – 10 µM (Day 0–1 only) Y-27632 dihydrochloride Tocris Catalog #1254",
+    "Day 11: First Replating. Dissociate into single cells.",
+    "Replate at 800,000 cells/cm² on LN511-coated plates . Add 10 µM Y27632 for 48 hours post-replating. Laminin-511 Biolamina Catalog #LN511 Y-27632 dihydrochloride Tocris Catalog #1254",
+    "Day 10–28: Switch to Differentiation Media. Neurobasal / B27 / L-glutamine base, plus: Neurobasal™ Medium Gibco - Thermo Fisher Scientific Catalog #21103049 B27 supplement minus vitamin A Gibco - Thermo Fisher Scientific Catalog #12587010 L-Glutamine Gibco - Thermo Fisher Scientific Catalog #25030024 BDNF – 20 ng/mL Human Recombinant BDNF STEMCELL Technologies Inc. Catalog #78005 GDNF – 20 ng/mL Human Recombinant GDNF STEMCELL Technologies Inc. Catalog #78058 TGF-β3 – 1 ng/mL Tgf beta 3 (human) Recombinant Protein Invitrogen - Thermo Fisher Catalog #RP8600 Ascorbic acid – 0.2 mM Ascorbic Acid 500 mg STEMCELL Technologies Inc. Catalog #72132 Dibutyryl cAMP – 0.2 mM Dibutyryl-cAMP STEMCELL Technologies Inc. Catalog #73884 Note on Supplements Withdrawal: LDN193189, SB431542, and Purmorphamine are withdrawn after Day 7 . N2 supplement is withdrawn after Day 10 .",
+    "Day 16: Second Replating. Dissociate into single cells.",
+    "Replate at 800,000 cells/cm² on Poly-L-ornithine+LN511-coated plates . Add 10 µM Y27632 for 48 hours post-replating. Laminin-511 Biolamina Catalog #LN511 Poly-L-Ornithine Merck MilliporeSigma (Sigma-Aldrich) Catalog #P4957 (CAS: 27378-49-0) Y-27632 dihydrochloride Tocris Catalog #1254",
+    "Day 12–15: Add GW3965 at 10 µM to promote mDA identity.",
+    "Day 16–21: Administer Dual Inhibitor Cocktail. PD0325901 – 1 µM PD0325901 1 mg STEMCELL Technologies Inc. Catalog #72182 SU5402 – 5 µM SU5402 1 mg STEMCELL Technologies Inc. Catalog #73912",
+    "Day 26–28: Neurogenesis Promotion. Add DAPT at 10 µM to promote neuronal maturation."
+  ],
+  "authors": [
+    "Guochang Lyu",
+    "Ernest Arenas"
+  ],
+  "creator": "Roberto Garcia Swinburn",
+  "published_on": 1763120697,
+  "created_on": 1757426753,
+  "keywords": []
+}

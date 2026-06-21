@@ -1,0 +1,40 @@
+{
+  "id": 105842,
+  "title": "Culturing 3T3 Cells for Validating GEARBOCS Constructs",
+  "uri": "culturing-3t3-cells-for-validating-gearbocs-constr-djks4kwe",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvw18pzlmk/v2",
+  "description": "{\"blocks\":[{\"key\":\"5h9sa\",\"text\":\"This protocol is for culturing Cas9 NIH/3T3 cells for the validation of GEARBOCS 2.0 and similar constructs for use in in vivo assays.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"77jru\",\"text\":\"NIH3T3/Cas9 Cell Line, Calibre Scientific, CBIO-AKR-5104\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":21}],\"data\":{}},{\"key\":\"5qn62\",\"text\":\"DMEM, GIBCO, Cat# 11960\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7386k\",\"text\":\"Fetal Bovine Serum, Thermo Fisher Cat# 10-437-028 \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4dn85\",\"text\":\"100 U/mL Pen/Strep, GIBCO, Cat# 15140 \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6fptq\",\"text\":\"2 mM L-Glutamine, GIBCO, Cat# 25030-081\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"flru6\",\"text\":\"1 mM Sodium Pyruvate, GIBCO, Cat# 11360-070\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4o814\",\"text\":\"Opti-MEM, GIBCO, Cat# 31985070\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1dnra\",\"text\":\"X-tremeGENE HP DNA Transfection Reagent, Sigma-Aldrich, 6366244001\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"64ld7\",\"text\":\"DNeasy Blood \\u0026 Tissue Kit, Qiagen, Cat# 69504\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"D29FD35732D849E5B6298BE4B9FCBFE7\",\"url\":\"https://calibrescientific.com/en/products/CBIO-AKR-5104#tabs-8\"}}}}",
+  "steps": [
+    "Validation by indel sequencing in immortalized murine cell lines:",
+    "Seed Cas9 NIH/3T3 cells at 250k per well of a 6-well plate (if starting from frozen cells, you. will need to passage at least once prior to transfection. So thaw to 10cm dish, then passage to 6-well)",
+    "24 hours after seeding, transfect Cas9 NIH/3T3 cells with GEARBOCS plasmid:",
+    "For each gene of interest, combine the following components in a 1.5 mL tube:",
+    "Mix by vortexing",
+    "Add 6 uL of Xtreme Gene",
+    "Pipette up and down rapidly. Do not touch pipette tip to the wall of the tube (Xtreme gene is sticky and extremely finicky. You want to minimize contact between XG and plastic surfaces)",
+    "Mix tube contents by gently flicking",
+    "Incubate 30 min at room temperature.",
+    "Add 200 uL of optimem/XG/DNA mixture per well in drop-wise swirl fashion.",
+    "Return cells to incubator for 48 hours",
+    "48 hours after transfection, collect cells and isolate genomic DNA for Sanger sequencing:",
+    "Place 6-well plate on ice",
+    "Aspirate media and wash once with 1 mL of ice-cold PBS per well",
+    "Aspirate PBS wash and add fresh 1 mL cold PBS for collection",
+    "Use rubber scraper to collect cells into 1.5 mL tube and keep on ice",
+    "Use Qiagen DNeasy kit to isolate genomic DNA",
+    "200 uL optimum 1 uL of GEARBOCS (at 1ug/uL)",
+    "Prepare HEK293 cell media",
+    "1. DMEM 450ml 2. Fetal Bovine Serum 50ml 3. L-Glutamine, 2 mM, 5ml 4. Sodium Pyruvate, 1 mM, 5ml 5. Pen-Strep, 100 U/mL, 5ml"
+  ],
+  "authors": [
+    "Justin T Savage"
+  ],
+  "creator": "Luke Bradley",
+  "published_on": 1724077415,
+  "created_on": 1723828306,
+  "keywords": []
+}

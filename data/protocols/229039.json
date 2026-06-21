@@ -1,0 +1,28 @@
+{
+  "id": 229039,
+  "title": "CALLAF — Creation, Digitization, Vectorization, Indexing, and CGAN Validation",
+  "uri": "callaf-creation-digitization-vectorization-indexin-hbwpb2pdp",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvjeqbngk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"nj7vj\",\"text\":\"To describe the complete, reproducible workflow used to digitize, preprocess, and vectorize authentic Arabic calligraphy artworks for inclusion in the CALLAF dataset.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"low3m\",\"text\":\"Calligraphic material\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":21}],\"entityRanges\":[],\"data\":{}},{\"key\":\"b661r\",\"text\":\"Artists: 13 professional calligraphers (styles: Dewani, Naskh, Reqaa)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"27v75\",\"text\":\"Tools: traditional Arabic calligraphy pens (reed/qalam), traditional ink\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"43oab\",\"text\":\"Paper: high-quality glossy paper (A4)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1lhib\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"af6e8\",\"text\":\"Hardware\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"94pmp\",\"text\":\"Scanner: high-resolution flatbed, 300 DPI\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"64nir\",\"text\":\"Workstation: MacBook Pro (M4 Pro)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7rfsi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"csd1r\",\"text\":\"Software\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fatt9\",\"text\":\"Vectorization: Adobe Illustrator, Vector Magic, Potrace, scikit-image\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fp9dl\",\"text\":\"ML / CV: PyTorch, OpenCV\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3hacs\",\"text\":\"SVG tooling: svgpathtools\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Select and write items Isolated characters and word forms representing the majority of Arabic calligraphic styles are selected and formatted on A4 sheets. Each calligrapher is tasked with writing these isolated characters and words in Dewani, Naskh, and Reqaa types, ensuring precise composition and consistent baselines.",
+    "Scan &amp; clean Scan at 300 DPI, crop borders, fix orientation, clean artifacts, convert to transparent grayscale PNG.Naming: (e.g.,",
+    "Normalize &amp; multi-resolution Normalize canvases to 1024×1024 px. Downscale to 256, 128, 64, 32 px.",
+    "Vectorization From each 1024 px master, generate four SVGs using Adobe Illustrator, Vector Magic, Potrace, scikit-image. Normalize viewBox/units so SVGs overlay rasters exactly.",
+    "Directory layout Organize as: raster/all/ / # 32 | 64 | 128 | 256 | 1024 *.png # named: type_category_resolution_index.png , raster/split/ / # 32 | 64 | 128 | 256 | 1024 / # dew | nas | req / # char | word / # e.g., baa, meem, ain_alef, rahma *.png # named: type_category_resolution_index.png , vector/all/1024/ / # illustrator | vector magic | potrace | skimage *.svg # named: type_category_resolution_index.svg , and csv/index_* files.",
+    "CSV indices Create CSVs listing filename, type, category, resolution, content, modality (and tool for vectors). Files: , ,",
+    "Manual Quality Control Visually inspect random batches across all types and modalities. Verify labels, PNG-SVG alignment, and absence of artifacts. Cross-check CSV coverage and paths",
+    "CGAN validation Train Conditional WGAN-GP (with spectral norm) on 64×64 grayscale, conditioned on type. Report: SSIM_mean = 0.616, LPIPS_mean = 0.123, LPIPS_p95 = 0.282"
+  ],
+  "authors": [
+    "Siraj Allaf"
+  ],
+  "creator": "SIRAJ ALLAF",
+  "published_on": 1760022310,
+  "created_on": 1759648434,
+  "keywords": []
+}

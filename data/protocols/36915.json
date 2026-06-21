@@ -1,0 +1,35 @@
+{
+  "id": 36915,
+  "title": "Imaging Mass Cytometry Modality Overview ",
+  "uri": "imaging-mass-cytometry-modality-overview-bgatjsen",
+  "doi": "dx.doi.org/10.17504/protocols.io.bgatjsen",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Process donor organs into samples for analysis. Lymph Node: dx.doi.org/10.17504/protocols.io.bbgnijve https://drive.google.com/drive/my-drive Thymus: dx.doi.org/10.17504/protocols.io.bbgmiju6 Spleen: dx.doi.org/10.17504/protocols.io.bc3kiykw",
+    "Register organ donor, organs received, and common coordinate region information in the HuBMAP UUID generator at https://uuid.hubmapconsortium.org",
+    "Prepare paraffin blocks from tissue samples. Cassette Processing: dx.doi.org/10.17504/protocols.io.8nzhvf6 Paraffin Embedding: dx.doi.org/10.17504/protocols.io.bam9ic96",
+    "Package and send paraffin blocks to the Bodenmiller lab: dx.doi.org/10.17504/protocols.io.bf5njq5e",
+    "Conjugate primary antibodies using the Maxpar Antibody Labeling Kit: dx.doi.org/10.17504/protocols.io.bf5jjq4n",
+    "Cut and mount paraffin sections for staining and analysis. Sectioning: dx.doi.org/10.17504/protocols.io.bfz4jp8w",
+    "Antibody staining of paraffin sections for Imaging Mass Cytometry: dx.doi.org/10.17504/protocols.io.bfz8jp9w",
+    "Prepare a slide to use for compensation: dx.doi.org/10.17504/protocols.io.bf2djqa6",
+    "Tune the Image Mass Cytometer for acquisition: dx.doi.org/10.17504/protocols.io.bf2gjqbw",
+    "Data Acquisition by Image Mass Cytometry: dx.doi.org/10.17504/protocols.io.bf2ijqce",
+    "Compensation Slide Acquistion: dx.doi.org/10.17504/protocols.io.bf2jjqcn",
+    "Load Imaging Mass Cytometry Datasets onto Hipergator: IMC_Transfer Data Zurich to HPG.docx",
+    "Prepare and upload data to the HuBMAP HIVE Globus landing pad using Hipergator. IMC Transfer data from Hipergator to HuBMAP HIVE Globus.docx",
+    "Image Processing and Segmentation: https://github.com/BodenmillerGroup/ImcSegmentationPipeline"
+  ],
+  "authors": [
+    "Michelle Daniel",
+    "Marda Jorgensen"
+  ],
+  "creator": "Marda Jorgensen",
+  "published_on": 1589308196,
+  "created_on": 1589298692,
+  "keywords": []
+}

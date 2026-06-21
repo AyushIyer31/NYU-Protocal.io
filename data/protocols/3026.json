@@ -1,0 +1,30 @@
+{
+  "id": 3026,
+  "title": "Qubit dsDNA HS/BR Assay",
+  "uri": "Qubit-dsDNA-HS-BR-Assay-e7sbhne",
+  "doi": "dx.doi.org/10.17504/protocols.io.e7sbhne",
+  "description": "{\"blocks\":[{\"key\":\"aetdf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"ahjos\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"f6roc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"a4bpg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Label small Qubit tube lids for the number of standards and samples. Qubit requires 2 standards.",
+    "Make Qubit working solution by diluting Qubit dsDNA HS reagent 1:200 in Qubit dsDNA HS buffer in a large Qubit tube. The final volume in each tube must be 200μl. (number of samples + 3 for control and standards) x 200μl",
+    "Prepare 2 standard tubes. Add 190μl of working solution to each standard tube. Add 10μl of each standard to the appropriate tube and mix by vortexing 2-3 seconds and quick spin down.",
+    "Prepare sample and control tubes by adding 199μl of working solution to each tube and 1μl of sample to the appropriate tube. Mix by vortexing 2-3 seconds and quick spin down. Alternate volumes of sample (1-20μl) and working solution (180-199μl) may be added to reach a total volume of 200μl.",
+    "Allow all tubes to incubate at room temperature for 2 minutes in a dark drawer 00:02:00",
+    "On Qubit fluorometer home screen select assay type (Quant-iT dsDNA, BR or HS)",
+    "On the Standards Screen press Yes to run a new calibration. Insert Standard #1 tube, close lid and press read. Remove Standard #1 and insert Standard #2 tube. Close lid and press read. Remove Standard #2.",
+    "Once calibration has been completed the Sample Screen will be displayed. Insert a sample tube in to the fluorometer, close the lid and press Read. The value displayed is the concentration after you sample was diluted into the assay tube. To calculate the concentration of the original sample use the Qubit Dilution Calculator by pressing Calculate Stock Conc. Select the volume of you original sample that you added to the tube (1-20μl) and the fluorometer will calculate for you.",
+    "To save the data from your calculation press Save on the Dilution Calculator Screen and the last value will be save as a .CSV file tagged with a time and date stamp.",
+    "Remove the sample tube, insert the next sample tube and close the lid. Press Read Next Sample. Repeat until all sample tube values have been recorded."
+  ],
+  "authors": [
+    "Sarah Hessen-Schmidt"
+  ],
+  "creator": "Sarah Hessen-Schmidt",
+  "published_on": 1466547780,
+  "created_on": 1466547103,
+  "keywords": []
+}

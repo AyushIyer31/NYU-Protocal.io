@@ -1,0 +1,38 @@
+{
+  "id": 220644,
+  "title": "Lysosomal pH detection assay ",
+  "uri": "lysosomal-ph-detection-assay-g3qcbymsx",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg3wr47v25/v1",
+  "description": "{\"blocks\":[{\"key\":\"6ouf2\",\"text\":\"Detection of lysosomal pH in live cortical neurons. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Plate 120,000-150,000 neurons in an imaging dish at days in vitro (DIV) 0",
+    "Reconstitute pHLys Red (from Lysosomal Acidic pH Detection Kit) using 20 µL DMSO; vortex and store at -20 °C pHLys Red (Lysosomal Acidic pH Detection Kit - Green/Red) Dojindo Catalog #L266",
+    "Prepare 1:1000 fresh dilution of reconstituted pHLysRed in fresh MM",
+    "On the day of imaging, prepare 1:2000 fresh dilution of LysoPrime Green in fresh maintenance media (MM) LysoPrime Green (Lysosomal Acidic pH Detection Kit - Green/Red) Dojindo Catalog #L266 Maintenance media composition can be obtained from: dx.doi.org/10.17504/protocols.io.81wgby723vpk/v1",
+    "Equilibrate fresh MM in an incubator kept at 37 °C and keep fresh imaging media (IM) for warming at 37 °C Imaging media composition can be obtained from: dx.doi.org/10.17504/protocols.io.36wgqqkz3gk5/v1",
+    "At DIV 6 or 7, aspirate out conditioned media from the imaging dish, wash the neurons once with fresh MM",
+    "Add 1.8 mL of fresh MM and then add 200 µL of the diluted LysoPrime Green solution (prepared in step 3)",
+    "Incubate the neurons in an incubator at 37 °C for 00:30:00",
+    "Post incubation, aspirate out the media, and wash twice with fresh MM",
+    "Add 1.8 mL of fresh MM and then add 200 µL of the diluted pHLys Red solution (prepared in step 4)",
+    "Incubate the neurons in an incubator at 37 °C for 00:30:00",
+    "Post incubation, aspirate out the media, and washed twice with fresh IM",
+    "Add 2 mL of pre-warmed IM and in the lysosomes quickly image neurons live under a confocal microscope to check for labeling of both the dyes. This step is optional, but is recommended to check for proper labeling with the pHLysRed dye, whose fluorescence in the lysosomes will rapidly decrease upon addition of Bafilomycin A1 in the later steps.",
+    "Aspirate out IM, and wash the neurons twice with fresh MM.",
+    "Add 2 mL fresh MM containing 75 nM of Bafilomycin A1 to partially deacidify lysosomes",
+    "Incubate the neurons in an incubator at 37 °C for 00:30:00",
+    "Aspirate out MM, add 2 mL of warm IM and quickly image neurons live under a confocal microscope with a heating chamber kept at 37 °C"
+  ],
+  "authors": [
+    "Bishal Basak",
+    "Erika Holzbaur"
+  ],
+  "creator": "Bishal Basak",
+  "published_on": 1751269004,
+  "created_on": 1750435339,
+  "keywords": []
+}

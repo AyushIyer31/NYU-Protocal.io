@@ -1,0 +1,40 @@
+{
+  "id": 220953,
+  "title": "Basis Set to BATMAN Workflow",
+  "uri": "basis-set-to-batman-workflow-g3zzbyp77",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv5owmng1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"hn78\",\"text\":\"This protocol outlines the steps for exporting a metabolite basis set (mBS) created with FLAnalyzer into BATMAN input files, running BATMAN on NMRbox, and inspecting the results of BATMAN fitting.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"7hidh\",\"text\":\"This protocol assumes:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"m6ct\",\"text\":\"You have a NMRbox account.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"erort\",\"text\":\"You have created a basis set using FLAnalyzer.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1io4c\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Open Script: Open the basis_to_batman.m script from the FLAnalyzer GitHub repository in MATLAB. The script can be found under the &#34;workflows&#34; section.",
+    "Generate BATMAN Input Files: Follow the directions in the comments (green text) to generate the BATMAN input files from the basis set.",
+    "Inspect Input Files: After running the basis_to_batman.m script, the folder where the BATMAN files were saved should contain the following files. 1. PureSpectraTemplate - This folder contains the spectrum of each basis set element as a &#34;.txt&#34; file. The file names will be metabolite1.txt, metabolite2.txt, metabolite3.txt, and so on, up to the number of basis set elements. Each file contains two columns: 1. a column of ppm values, 2. a column of intensity values for each ppm value. 2. metabolitesList.csv - This file contains a list of the names of each basis set element (metabolite1, metabolite2, etc.). 3. multi_data_user.csv - This file contains information for each multiplet in the basis set. Specifically, the file contains the chemical shift of the center, the chemical shift of each end, and the relative intensity of each multiplet. 4. NMRdata.txt - This file contains the spectra that will be fit by the basis set. The first column contains common ppm values, and all other columns contain intensity values for each spectrum.",
+    "Make a Folder to Hold the Container: Create a new folder outside of the folders created above to hold the BATMAN container.",
+    "Download Parameter File: Download the batmanOptions.txt file below. This file contains adjustable parameters for the BATMAN fit. batmanOptions.txt",
+    "Adjust Parameters: Download the batman.pdf file below. This file explains the parameters in batmanOptions.txt . batman.pdf The parameters and BATMAN in general are further explained in the original paper: https://www.nature.com/articles/nprot.2014.090",
+    "Make a Folder for BATMAN Fitting: Create a new folder, ensuring there are no spaces in the name.",
+    "Make runBATMAN Folder: Inside the newly created folder, create a new folder named runBATMAN. The runBATMAN folder must have this exact name, case-sensitive.",
+    "Make BatmanInput and BatmanOutput Folders: Inside the runBATMAN folder, create two new folders named BatmanInput and BatmanOutput. The BatmanInput and BatmanOutput folders must have these exact names, case-sensitive.",
+    "Move Files into BatmanInput: Copy PureSpectraTemplate, metabolitesList.csv, multi_data_user.csv, NMRdata.txt, and batmanOptions.txt into the BatmanInput folder.",
+    "Navigate to the Folder: Open the terminal and navigate (cd) to the folder where the BATMAN container will be stored.",
+    "Pull the Container: In the same terminal, run the command below singularity pull docker://biocontainers/batman:phenomenal-v1.2.12.0_cv1.1.72 The container only needs to be pulled once, so if you run BATMAN in a future session, you can use the same container that was pulled here.",
+    "Execute R in the Container: Using the same terminal, execute the code below to open R from the container. By opening a new terminal and navigating (cd) to the folder where the container is stored, you can also execute R using the command below at any time. singularity exec batman_phenomenal-v1.2.12.0_cv1.1.72.sif R",
+    "Activate BATMAN Functions: Once R is activated, run the command below to activate the BATMAN library of functions. library(&#39;batman&#39;)",
+    "Change R Working Directory: In the code below, replace path_to_folder with the path of the folder that contains the runBATMAN folder; keep the single quotations. Running the code will change the R working directory. Do not include the runBATMAN folder itself in the path; instead, stop the path at the folder containing the runBATMAN folder. setwd(&#39;path_to_folder&#39;)",
+    "Start BATMAN: Use the code below to start the BATMAN fitting. bm = batman()",
+    "Finished BATMAN Run: The BATMAN fitting will be completed once the terminal prompt (&gt;) returns to the screen. The output will be located in the BatmanOutput folder.",
+    "Open Visualization Script: Open the inspect_batman_fitting.m script from the FLAnalyzer GitHub repository in MATLAB. The script can be found under the &#34;workflows&#34; section.",
+    "Visualize BATMAN Fits: Follow the directions in the comments (green text) to make plots and to calculate the percent quantified of the BATMAN fits."
+  ],
+  "authors": [
+    "Christopher Esselman",
+    "Arthur Edison"
+  ],
+  "creator": "Christopher Esselman",
+  "published_on": 1765296078,
+  "created_on": 1750796927,
+  "keywords": []
+}

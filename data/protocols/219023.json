@@ -1,0 +1,41 @@
+{
+  "id": 219023,
+  "title": "Preparing 8OG:A repair reporter for MUTYH variant functional assays",
+  "uri": "preparing-8og-a-repair-reporter-for-mutyh-variant-gz5pbx85p",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2lyqy7mvx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"5hlk8\",\"text\":\"This protocol describes how to create a reporter with a site-specifically integrated 8OG:A mispair, for which EGFP expression indicates successful repair by MUTYH. This reporter can be used in functional studies of MUTYH variants. It yields sufficient product (tens of micrograms) to support pooled MAVEs (multiplex assays of variant effect) in which many MUTYH variants are tested in parallel. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"574bj\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"87h8\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"7k4kb\",\"text\":\"See attachments for sequence map of GFP-off plasmid (JKP0847).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"MUTABLE\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"1_0\":\"\",\"1_1\":\"\",\"2_0\":\"\",\"2_1\":\"\"},\"colTitles\":[\"\",\"\"],\"colWidths\":[\"283\",\"448\"],\"data\":[[\"JOK0268\",\"CAACAAGGCAAGGCTTGACC\"],[\"JOK0269\",\"A*G*A*A*C*GTGGACTCCAACGTC\"],[\"JOK0271\",\"C*A*A*C*A*AGGCAAGGCTTGACC\"],[\"BB0017\",\"GATGCCGTTCTTCTGCTTGT\"],[\"SH0048\",\"GCCCTCGCCGGACACGctga\"],[\"\",\"\"]],\"guid\":\"13BA54C2552642D680DCDD8524D31F54\",\"isJexcelDataFormat\":true,\"legend\":{\"blocks\":[{\"data\":{},\"depth\":0,\"entityRanges\":[],\"inlineStyleRanges\":[],\"key\":\"mg9e\",\"text\":\" \",\"type\":\"unstyled\"},{\"data\":{},\"depth\":0,\"entityRanges\":[],\"inlineStyleRanges\":[],\"key\":\"frnft\",\"text\":\"\",\"type\":\"unstyled\"},{\"data\":{},\"depth\":0,\"entityRanges\":[],\"inlineStyleRanges\":[],\"key\":\"3uom9\",\"text\":\" \",\"type\":\"unstyled\"}],\"entityMap\":{}},\"mergeCells\":{},\"printData\":[[\"JOK0268\",\"CAACAAGGCAAGGCTTGACC\"],[\"JOK0269\",\"A*G*A*A*C*GTGGACTCCAACGTC\"],[\"JOK0271\",\"C*A*A*C*A*AGGCAAGGCTTGACC\"],[\"BB0017\",\"GATGCCGTTCTTCTGCTTGT\"],[\"SH0048\",\"GCCCTCGCCGGACACGctga\"],[\"\",\"\"]],\"rowHeights\":[23,23,23,23,23,23]}}}}",
+  "steps": [
+    "A B C 1 ul (x1) ul (x105) 2 5X Kapa Fidelity Buffer 10 1050 3 H2O 33.25 3491.3 4 dNTPs, 10mM@ 1.5 157.5 5 SYBR Green I, 100X 0.25 26.25 6 Fwd primer, non-PS (jok0268, 10uM) 1.5 157.5 7 Rev primer, with PS (jok0269, 10uM) 1.5 157.5 8 Template = GFP-off plasmid, 1ng/ul 1.0 105 A B C 1 Step Temp Time 2 1 95ºC 3:00 3 2 98ºC 0:20 4 3 62ºC 0:15 5 4 72ºC 2:00 6 5 plate read 7 6 72ºC 0:08 8 7 Goto 2, 20-24X If performed in a real-time PCR cycler, curves should look similar to these, and will begin to plateau around cycle 12. Run until 25 cycles to maximize yield. Pool reactions; can pause here and store at -20ºC",
+    "Prepare mastermix (including template) for bulk PCR amplification of the full expression construct from upstream of the promoter to downstream of the polyA signal. Distribute in replicate reactions across a 96 well plate.",
+    "Clean on AmpPure/SPRI beads (0.9:1 bead/buffer)",
+    "Split to 8x 1.5ml tubes with ~600 ul PCR reaction each. To each, add 200ul of SPRI beads + 340 SPRI DNA-binding buffer (2.5M NaCl, 20% PEG-8000, pH 8 @ 20ºC). Follow standard SPRI cleanup protocol, and elute each fraction into 50ul H2O, then pool eluates.",
+    "Quantify cleaned PCR product with Promega Quantus, Qubit, or similar assay. Expected yield: ~100-200 ug of cleaned product per 96-well plate. Verify product is intended size by agarose gel electrophoresis. Pause here if needed and store purified product at -20ºC",
+    "Use T7 exonuclease to digest the non-PS-protected strand (i.e., the top strand), to yield full-length ssDNA of the bottom/template strand. A B C 1 ul, per 5 ug input ul (x 40, for 200ug input) 2 H2O to 15ul total to 600ul total 3 10X NEB Buffer 4 1.5 60 4 Cleaned product from Step 4, above 5 ug 200 ug 5 T7 exo, 10U/ul 1 40 Combine components in a 5ml tube, pipette mix well, then incubate on bench for 1 hr",
+    "Clean up with Zymo DNA Clean &amp; Concentrator-25 Kit per manufacturer&#39;s instructions, splitting across multiple columns to avoid exceeding 25ug ssDNA per column. (We obtained ssDNA yield equivalent to ~20% dsDNA input, so for 200ug dsDNA input expect ~40ug ssDNA output. Thus, split a 200ug dsDNA (40x) digestion reaction across two 25ug columns.) For sample binding, combine DNA binding buffer and input at a 7:1 ratio. Elute each column in 50ul Zymo elution buffer",
+    "Measure ssDNA concentration by Nanodrop, using ssDNA setting. Expected yield: ~20 ug per column, with 260/280 of ~1.9 and 260/230 of ~2.2.",
+    "As in steps 1-4, prepare 96 replicate PCR reactions using the GFP-off plasmid as a template. Follow the same reaction setup, but with the following modifications: For PS-protected primer, use jok_0271 For non-PS-protected primer, use SH0048 PCR extension step: 1 min instead of 2 min",
+    "Purify reaction by SPRI beads (0.9:1) and quantify yield as in the first PCR.",
+    "Digest the non-PS-protected strand using T7 exo, using the reaction setups and conditions exactly as in step 5.",
+    "Clean up digest reaction as in step 6",
+    "Quantify by Nanodrop as in step 7. Expected yield should be similar (~10-20 ug)",
+    "Combine the top and bottom strand ssDNA products, by a 1.5:1 molar ratio, in 1X NEB Hemo KlenTaq buffer. This can be scaled to prepare a larger amount of reporter across replicate tubes. Mix in a single eppendorf tube: A B 1 ul, x1 2 H2O to 50 ul total 3 5X Hemo KlenTaq Buffer 10 4 Top strand ssDNA 4.5 pmol (~1.3ug) 5 Bottom strand ssDNA 3.0 pmol (~2 ug) Vortex reaction and spin down, then aliquot into PCR strip tubes, 60ul / tube. Incubate in a PCR cycler: 80ºC for 1 min, then -1ºC/min until 20ºC (will take ~ 1 hr)",
+    "Single 8OG extension: Prepare 100ul of 1 mM 8oxodGTP from 100 mM stock. Then, setup one reaction for each annealing reaction prepared above: A B C 1 ul, x1 2 H2O 2.2 (to 60ul total) 3 5X Hemo KlenTaq buffer 2 4 1 mM 8oxodGTP 1.8 5 Annealed duplex from above 50 6 Hemo KlenTaq 4 Vortex and spin down Incubate in PCR cycler: ramp from 20ºC to 50ºC at 1ºC/sec, 5 min at 50ºC, 10 min at 68ºC",
+    "Complete top strand extension Add 1ul of 10 mM dNTP mix to each reaction tube. Mix gently by pipetting Incubate for 5 min at 50ºC, 10 min at 68ºC, then cool to 4ºC and move to ice",
+    "Clean by SPRI beads (0.9:1), elute in 150ul H2O",
+    "Measure concentration by Quantus or Qubit",
+    "Run ssDNA and dsDNA samples (~200ng each) on 0.7% agaorse TBE gel, alongside 1 kb plus ladder (NEB). Run at 155V for 45 min. Expected sizes: TOP dsDNA: 2178 bp band expected BTM dsDNA: 940 bp band expected TOP ssDNA: migrates faster, ~1000 bp dsDNA equivalent BTM ssDNA: migrates faster, ~500 bp dsDNA equivalent TOP+BTM dsDNA with 8O: 2178 bp band expected",
+    "Submit for Sanger sqeuencing, with 50 ng product in 10ul, along with 5 ul of primer BB0017 at 5uM. Expect to see a peak of G indicating stalling before polymerase encounters 8OG, followed by mix of C:A."
+  ],
+  "authors": [
+    "Jacob Kitzman",
+    "Shelby Hemker"
+  ],
+  "creator": "Jacob Kitzman",
+  "published_on": 1748442758,
+  "created_on": 1748372235,
+  "keywords": []
+}

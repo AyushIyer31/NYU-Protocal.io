@@ -1,0 +1,33 @@
+{
+  "id": 221909,
+  "title": "Data Acquisition and Analysis of Derivatized Hexose/Glucose by LC-QQQ-MS",
+  "uri": "data-acquisition-and-analysis-of-derivatized-hexos-g4xvbyxn7",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbw1xygpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"759us\",\"text\":\"This protocol outlines the steps for the separation, detection, and quantification of derivatized hexose/glucose using LC-QQQ-MS. Samples are analyzed with a C18 column coupled to a 1290 II LC system and an Ultivo triple quadrupole mass spectrometer. The procedure includes chromatographic conditions, MS settings, and data analysis workflows for high-throughput metabolite quantification.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9lcpl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9e2vu\",\"text\":\"Materials:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"cfk71\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9hjt0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4nbjp\",\"text\":\"Derivatized hexose/glucose samples\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ev9al\",\"text\":\"Eclipse Plus C18 column (4.6 x 100 mm, 3.5 µm, Agilent)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dvslu\",\"text\":\"Agilent 1290 Infinity II LC system\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f8d7e\",\"text\":\"Agilent Ultivo triple quadrupole (QQQ) MS with ESI source\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c5ojm\",\"text\":\"LC/MS-grade water, acetonitrile, isopropanol\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1cca1\",\"text\":\"Ammonium formate (10 mM)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2a6sb\",\"text\":\"Formic acid (0.1%)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4t924\",\"text\":\"MassHunter Qualitative Analysis Software\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d1j94\",\"text\":\"Quant-My-Way QQQ Quantitative Analysis Software\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"av1u0\",\"text\":\"Microsoft Excel\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4j3ng\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Materials: Derivatized hexose/glucose samples Eclipse Plus C18 column (4.6 x 100 mm, 3.5 µm, Agilent) Agilent 1290 Infinity II LC system Agilent Ultivo triple quadrupole (QQQ) MS with ESI source LC/MS-grade water, acetonitrile, isopropanol Ammonium formate (10 mM) Formic acid (0.1%) MassHunter Qualitative Analysis Software Quant-My-Way QQQ Quantitative Analysis Software",
+    "Mobile Phase A: 10 mM ammonium formate + 0.1% formic acid in 60:40 (v/v) water:acetonitrile Mobile Phase B: 10 mM ammonium formate + 0.1% formic acid in 90:10 (v/v) isopropanol:acetonitrile",
+    "Connect Eclipse Plus C18 column to the LC system.",
+    "Ensure column oven is set to 30°C.",
+    "Set autosampler temperature to 4°C.",
+    "Perform external mass calibration with standard mix every 7 days.",
+    "Inject 3 µl of each sample with fast polarity switching enabled.",
+    "Time (min) %B 1 0.0 50 2 3.0 100 3 6.0 100 4 6.1 50 5 8.0 50 Flow rate: 0.400 ml/min",
+    "· Spray Voltage: 3.6 kV (positive mode), 2.5 kV (negative mode) · Gas Temperature: 250°C · Sheath Gas Temperature: 400°C · Gas Flow: 11 l/min · Sheath Gas Flow: 12 l/min · Nebulizer: 28 psi",
+    "%s %s",
+    "Use MassHunter Qualitative Analysis software to validate peak alignment and retention times. Confirm identification by comparing MS/MS spectra to standards and evaluating both transitions for consistent relative intensity. Use Quant-My-Way for QQQ quantification with MRM data. Export raw peak areas to Microsoft Excel for further processing and normalization. Consistent peak profiles for derivatized hexose/glucose with reproducible retention times and MRM transition ratios. Accurate relative quantification should be observed when using validated transitions and verified against standard fragmentation patterns."
+  ],
+  "authors": [
+    "Uche Medoh",
+    "Ali Ghoochani",
+    "Monther Abu-Remaileh"
+  ],
+  "creator": "Ali Ghoochani",
+  "published_on": 1768098860,
+  "created_on": 1751916866,
+  "keywords": []
+}

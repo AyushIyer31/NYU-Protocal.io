@@ -1,0 +1,41 @@
+{
+  "id": 108112,
+  "title": "QuickNII Brain Atlas Registration",
+  "uri": "quicknii-brain-atlas-registration-dmtq46mw",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvwdme2lmk/v2",
+  "description": "{\"blocks\":[{\"key\":\"1lod3\",\"text\":\"This protocol describes QuickNII brain atlas registration.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Open the QuickNII program folder.",
+    "Open Filebuilder . (FileBuilder loads your registration images by default settings without automated aligment, Skip to step 6 if using DeepSlice ).",
+    "Navigate to the QVN folder with the brain image exports from QuPath.",
+    "Click all images to be registered, and click “Open”. It is useful to add a shortcut of the QVN folder to your desktop for simpler navigation",
+    "Press “SAVE XML”. Navigate to the QVN folder and save as &#34;Filebuilder XML&#34;. Close FileBuilder.",
+    "Open the application QuickNII . Press “Manage Data” &gt; “Load” and load the XML file that was just generated in step 5. ( DeepSlice : load results.XML from QVN folder).",
+    "Double click on the first image, and it will show up on the Atlas in QuickNII.",
+    "Open Rainbow 2017 atlas in upper left hand corner (1).",
+    "You can see the overlay better by dragging the transparency bar (2)",
+    "For first section, find anteroposterior position. To do this, drag the sagittal red dot (3) to the correct rostro-caudal position. Click “ Store ” to save the position.",
+    "Repeat for the last section. This will bring all other sections to the approximately correct position.",
+    "Adjust each individual section to the appropriate place in the atlas by adjusting. These may need to be done iteratively until the correct plane of section is identified. Alignment will not be perfect, only the plane of section, but the better job you do here, the easier Visualign transformations will be. a. Rotation : clockwise or counter-clockwise (4).b. Brain Size : in the x and y direction (5).c. Rostro-caudal position : sagittal view.d. Left-Right plane : Pull Horizontal view bar.e. Front-back plane : Pull Sagittal view bar. All of the Atlas needs to remain in the view or it will be lost for analysis.",
+    "Click “ Store ” before moving off section or it will not save!",
+    "Navigate to next section by double clicking on it in the Manage Data window, or by clicking the &lt; and &gt; arrows in the upper right. Edit all sections as noted in step 12 .",
+    "Click “Manage Data”.",
+    "Click “Export Propagation” and save this XML file as “ QuickN XML.xml &#34; within the QVN folder. Is not automatically recognized as a .xml file, hence the need to add “.xml” to the end of the name. Click “Export Slices” if you want atlas images, but this is not necessary for the workflow and will clutter your folder.",
+    "Click “Save JSON” and label it “ QuickN JSON ”. This JSON file is used for Visualign .",
+    "For QMask, go back to the first section.",
+    "Adjust the horizontal plane (Right) in the atlas to match hemispheric split. Ensure proper bisecting by confirming with in the coronal plane.",
+    "Open QMask Coordinates Excel File.",
+    "Hover the cursor over the brain viewing window and record x-y-z coordinates (shown in the top left of the window) for three parts of the brain: Top-Left, Top-Right, Bottom-Left. Record coordinates in the QMask Coordinates file."
+  ],
+  "authors": [
+    "Michael X. Henderson"
+  ],
+  "creator": "Michael Henderson",
+  "published_on": 1726856387,
+  "created_on": 1726855502,
+  "keywords": []
+}

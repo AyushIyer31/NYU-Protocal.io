@@ -1,0 +1,25 @@
+{
+  "id": 43729,
+  "title": "PCR (Error-prone PCR)",
+  "uri": "pcr-error-prone-pcr-bnxrmfm6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bnxrmfm6",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"fk9le\",\"text\":\"Please wear gloves during experiments.Don't touch the lid after PCR program initiation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"bf0fq\",\"text\":\"Synthesize primers in advance before starting.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Set up a small box with ice, put the tubes of DNA, 2 x Mut Random System, Mut Enhancer and ddH 2 O into it before loading them into the Bio-rad S1000TM Thermo Cycler.",
+    "Add the following reagents to a PCR tube (20 μL). %s %s",
+    "Program the thermocycler as follows: %s %s Note: Higher initial template concentrationscan lead to lower mutation rates. More amplification cycles may cause higher mutation rates.",
+    "Build a mutant library, expand the strains, and add the corresponding inducers, collect data using a Microplate reader operating procedure V.1, and use the GraphPad Prism for data processing and analysis.",
+    "Select the positive results for DNA sequencing to determine the mutated nucleotides in the DNA promoter or coding sequence."
+  ],
+  "authors": [
+    "Zhujun Wei"
+  ],
+  "creator": "Zhujun Wei",
+  "published_on": 1603609988,
+  "created_on": 1603609601,
+  "keywords": []
+}

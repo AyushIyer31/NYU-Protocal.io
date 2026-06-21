@@ -1,0 +1,37 @@
+{
+  "id": 68129,
+  "title": "Determination of edits in CRISPR-edited cell lines by sequencing",
+  "uri": "determination-of-edits-in-crispr-edited-cell-lines-cer9td96",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv59yx5g1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"7eqkj\",\"text\":\"This protocol details the procedure of determination of edits in CRISPR-edited cell lines by sequencing.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"22of5\",\"text\":\"Buffers and reagents:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":21}],\"entityRanges\":[],\"data\":{}},{\"key\":\"ff5dj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a35ti\",\"text\":\"Zymo genomic DNA isolation kit (D3025)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8u8gt\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"au2ut\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"84hf4\",\"text\":\"  and  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1},{\"key\":3,\"offset\":6,\"length\":1}],\"data\":{}},{\"key\":\"2ff0h\",\"text\":\"NEB 5-alpha Competent E. coli (NEB #C2987).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":2684,\"guid\":\"4104A9B4341F11EE9D4302C0B41BC903\",\"name\":\"QIAquick PCR Purification Kit\",\"mol_weight\":0,\"sku\":\"28104\",\"url\":\"https://www.qiagen.com/us/shop/sample-technologies/dna-sample-technologies/dna-cleanup/qiaquick-pcr-purification-kit\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":25,\"name\":\"Qiagen\",\"link\":\"https://www.qiagen.com/us/products/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":1001,\"guid\":\"41022A0C341F11EE9D4302C0B41BC903\",\"name\":\"T4 DNA Ligase - 20,000 units\",\"mol_weight\":0,\"sku\":\"M0202S\",\"url\":\"https://www.neb.com/M0202\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":1864,\"guid\":\"41037D84341F11EE9D4302C0B41BC903\",\"name\":\"BamHI-HF - 10,000 units\",\"mol_weight\":0,\"sku\":\"R3136S\",\"url\":\"https://www.neb.com/R3136\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}},\"3\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":1848,\"guid\":\"4103786C341F11EE9D4302C0B41BC903\",\"name\":\"HindIII-HF - 10,000 units\",\"mol_weight\":0,\"sku\":\"R3104S\",\"url\":\"https://www.neb.com/R3104\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Harvest the CRISPR-edited cells that need to be sequenced and the control parental cells.",
+    "Amplify the region of interest (CRISPR-target region) via PCR using primers obtained when designing CRISPR construct. See “Generation of CRISPR constructs” protocol.",
+    "Run a 1 % DNA agarose gel to check if the PCR has worked.",
+    "If PCR products are present, clean them up with Qiagen PCR cleanup kit.",
+    "Send the cleaned-up PCR products to sequencing service with a sequencing primer. I normally choose a 15 bp DNA sequence (less than 60 % of GC content) within the region of interest at least 100 bp away from CRIPR target site as the sequencing primer.",
+    "Analyze the sequencing data using this website https://ice.synthego.com/#/ .",
+    "Sometimes, if the sequencing service provider(s) have trouble sequence the PCR products, it might be worth trying to clone these PCR products into a small non-expression plasmid such as pGEM4Z prior to sequencing:",
+    "Incorporate BamHI site (GCGC GGATCC ; BamHI site is highlighted in grey, the rest is overhang) and HindIII site (GCGC AAGCTT ; HindIII site is highlighted in green, the rest is overhang) into the primers mentioned in step 3.",
+    "Amplify the region of interest from genomic DNA isolated from the CRISPR-edited cells with these primers via PCR.",
+    "Cut the amplified PCR products and pGEM4Z with BamHI and HindIII.",
+    "Clean up the cut PCR products and pGEM4Z with Qiagen PCR cleanup kit.",
+    "Ligate the PCR products and pGEM4Z together using T4 DNA ligase.",
+    "Transform the ligated product mix into E. coli competent cells and plate on an Ampicillin agar plate.",
+    "Screen for colonies with pGEM4Z ligated with the PCR products.",
+    "Send them for sequencing with M13 forward or reverse primer.",
+    "Align the sequencing data with the reference sequence to determine the edits.",
+    "Isolate genomic DNA using according to manufacturer’s instructions."
+  ],
+  "authors": [
+    "Thanh Ngoc Nguyen"
+  ],
+  "creator": "nguyen.tha",
+  "published_on": 1684925734,
+  "created_on": 1659521550,
+  "keywords": []
+}

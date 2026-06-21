@@ -1,0 +1,25 @@
+{
+  "id": 3640,
+  "title": "Setting $PATH on UA HPC",
+  "uri": "setting-path-on-ua-hpc-fsybnfw",
+  "doi": "dx.doi.org/10.17504/protocols.io.fsybnfw",
+  "description": "{\"blocks\":[{\"key\":\"aci1m\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"3tce0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"aubaq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"2cors\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Open your &#34;.bashrc&#34; in a text editor (nano, vi, emacs): $ cd $HOME $ nano .bashrc",
+    "Add the following lines: export PATH=/rsgrps/bh_class/rakudobrew/bin:/rsgrps/bh_class/bin:$PATH export PYTHONPATH=/rsgrps/bh_class/lib/python",
+    "Source your .bashrc $ source .bashrc",
+    "Ensure that you environment has the new paths: $ echo $PATH $ echo $PYTHONLIB",
+    "Try executing the following: $ seqmagick -h $ perl6 --version $ python --version"
+  ],
+  "authors": [
+    "Ken Youens-Clark"
+  ],
+  "creator": "Ken Youens-Clark",
+  "published_on": 1473446628,
+  "created_on": 1473446363,
+  "keywords": []
+}

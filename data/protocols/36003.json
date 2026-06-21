@@ -1,0 +1,30 @@
+{
+  "id": 36003,
+  "title": "Separating the Protein of Interest from MBP after TEV Protease Cleavage (NEB #E8201)",
+  "uri": "separating-the-protein-of-interest-from-mbp-after-bfebjjan",
+  "doi": "dx.doi.org/10.17504/protocols.io.bfebjjan",
+  "description": "{\"blocks\":[{\"key\":\"98u62\",\"text\":\"Both the MBP-tag and TEV Protease are polyhistidine-tagged for easy removal from the TEV Protease reaction. Loading the digest onto NEBExpress Ni Resin (NEB #S1428) sequesters both the MBP-tag and TEV Protease, thereby isolating the protein of interest in the column flow through.\\n\\n\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":153,\"length\":10}],\"data\":[]},{\"key\":\"a41b8\",\"text\":\"The binding capacity of NEBExpress Ni Resin is ≥ 10 mg/ml. The binding capacity will vary depending on the target protein, binding conditions and the accessibility of the His-tag.\\n\\n\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"1fgm1\",\"text\":\"It is recommended to estimate the amount of the His-tagged MBP released by TEV Protease cleavage by first analyzing a sample by SDS-PAGE and comparing its band size and intensity to that of the provided MBP6 protein control.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"C319AD54840A11EA867B0242AC110006\",\"url\":\"https://www.neb.com/products/s1428--nebexpress-ni-resin\"}}}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"415j4\",\"text\":\"Please note that NEBExpress Ni Resin is chemically resistant to DTT. If you are using a different resin that is incompatible with DTT, you will need to buffer exchange or modify the TEV Protease reaction conditions accordingly.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":227}],\"entityRanges\":[],\"data\":[]},{\"key\":\"d7i3o\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7c8il\",\"text\":\"Purchase or prepare the following buffer: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3auv2\",\"text\":\"Binding Buffer: 1X TEV Protease Reaction Buffer (or similar):\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":61}],\"entityRanges\":[],\"data\":[]},{\"key\":\"an8gk\",\"text\":\"50 mM Tris-HCl, 0.5 mM EDTA, 1 mM DTT, pH 7.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"5pi41\",\"text\":\"Please refer to the Safety Data Sheets (SDS) for health and environmental hazards. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"9SkTu\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"psVAv\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":404438,\"guid\":\"4254E28C341F11EE9D4302C0B41BC903\",\"name\":\"NEBExpress MBP Fusion and Purification System\",\"mol_weight\":0,\"sku\":\"E8201\",\"url\":\"https://www.neb.com/products/e8201-nebexpress-mbp-fusion-and-purification-system#Product%20Information\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Gently shake the Ni Resin bottle to completely resuspend the slurry and transfer desired amount to a closed column; allow resin to settle.",
+    "Open column and allow storage buffer to flow through.",
+    "Equilibrate the resin by adding 5 column volumes (CV) of Binding buffer.",
+    "Load the TEV Protease digestion directly onto the equilibrated column and allow it to flow through the resin slowly (flow rate &lt; 1 ml/minute). This provides sufficient time for the MBP-tag, TEV Protease, and any remaining MBP-fusion protein to effectively bind to the Ni resin.",
+    "Collect the flow through containing the protein of interest in a sterile tube.",
+    "Wash the column with 1 CV of Binding Buffer to maximize the yield of the target protein; collect the flow through.",
+    "Dialyze or buffer exchange target protein into desired storage buffer.",
+    "Add 1 Molarity (M), NaOH to the column and allow a contact time of 01:00:00 to 02:00:00 .",
+    "Add 1.5 Molarity (M), NaCl to the column and allow a contact time of 00:10:00 – 00:15:00 followed by 10 CV of water.",
+    "For long-term storage, NEBExpress Ni Resin should be stored in 20% ethanol at 2 – 8°C."
+  ],
+  "authors": [
+    "New England   Biolabs"
+  ],
+  "creator": "New England   Biolabs",
+  "published_on": 1589844025,
+  "created_on": 1587499214,
+  "keywords": []
+}

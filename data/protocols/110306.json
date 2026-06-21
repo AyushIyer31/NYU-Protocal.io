@@ -1,0 +1,40 @@
+{
+  "id": 110306,
+  "title": "Cross-Linking and Strong Cation Exchange (SCX) Fractionation",
+  "uri": "cross-linking-and-strong-cation-exchange-scx-fract-dpya5pse",
+  "doi": "dx.doi.org/10.17504/protocols.io.261ge5q2og47/v1",
+  "description": "{\"blocks\":[{\"key\":\"cb5u8\",\"text\":\"This is a method for performing Lys-Lys cross-linking on a purified organelle sample, in this case EEA1-positive early endosomes. The crosslinker used is DSSO ((Bis(2,5-dioxopyrrolidin-1-yl)\\n3,3′-sulfinyldipropionate)). This cross-linker has a mass spec cleavable sulfoxide, which facilitates identification of individual cross-linked peptides.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"8cktn\",\"text\":\"disuccinimidyl sulfoxide (DSSO; Thermo Scientific, A33545)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8a6od\",\"text\":\"2-chloroacetamide (Sigma-Aldrich, C0267) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f620b\",\"text\":\"trypsin (Promega, V511C) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c021t\",\"text\":\"Lys-C (Wako Chemicals, 129-02541)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dihnb\",\"text\":\"Sep-Pak C8 50mg Cartridge (Waters, WAT054965)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cl5vf\",\"text\":\"EPPS (3-[4-(2-Hydroxyethyl)-1-piperazine]propanesulfonic acid)  (Thermo Scientific, J61296AE)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ca6js\",\"text\":\"dithiothreitol (DTT) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6ab0r\",\"text\":\"Empore SPE Disks C18 to generate stage tips(Sigma Millipore, 66883-U)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9putn\",\"text\":\"PolyLC PolySulfoethyl A column (3 μm particle size, 2.1 mm inner diameter, and 100 mm length) (#102SE03--)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fgf3h\",\"text\":\"Acetonitrile\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3peeb\",\"text\":\"Formic acid\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"rle8\",\"text\":\"Lys-C (Wako Chemicals, 129-02541)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Samples for cross-linking (e.g. individual organelles) are isolated using dedicated protocols such as https://doi.org/10.17504/protocols.io.ewov14pjyvr2/v2 for isolation of EEA1-positive early endosomes",
+    "Resuspend freshly prepared purified organelle pellets in KPBS (25 mM KCl, 100 mM potassium phosphate, 150 mM NaCl, pH 7.2) to a protein concentration of ~1μg/uL.",
+    "Cross-link the proteins by adding 1 mM DSSO (Bis(2,5-dioxopyrrolidin-1-yl) 3,3′-sulfinyldipropionate) and incubate at room temperature for 40 minutes.",
+    "Quench the cross-linking reaction by adding 50 mM Tris buffer (pH 7.5) and incubate at room temperature for 30 minutes.",
+    "Denature the cross-linked samples by adding 8 M urea.",
+    "Reduce the proteins by adding 5 mM dithiothreitol (DTT) and incubate for 30 minutes at 37°C.",
+    "Alkylate the reduced proteins with 40 mM chloroacetamide for 30 minutes at room temperature.",
+    "Digest the cross-linked proteins with Lys-C enzyme at a ratio of 1:75 (enzyme) and incubate at 37°C overnight.",
+    "Dilute the urea concentration of the sample to 2 M using 50 mM EPPS buffer (pH 8.0).",
+    "Further digest the proteins by adding trypsin at a ratio of 1:100 (enzyme) and incubate at 37°C for 6 hours.",
+    "Desalt the peptides using Sep-Pak solid-phase extraction column.",
+    "Dry the desalted peptides in a SpeedVac concentrator. Time will depend on the vacuum strength.",
+    "Fractionate the dried peptides by strong cation exchange (SCX) chromatography. A 70-minute linear gradient at flow rate 0.18 mL/min was used as follows: 0% to 8% of mobile phase (0.5 M NaCl in 20% ACN, 0.05% formic acid) over 14 minutes. Increase to 20% at 28 minutes. Increase to 40% at 48 minutes. Increase to 90% at 68 minutes.",
+    "Collect fractions every 30 seconds starting at 35 minutes for 10 minutes, and then every minute thereafter.",
+    "Dry the collected fractions in a SpeedVac concentrator.",
+    "Desalt the dried fractions using StageTip.",
+    "Reconstitute fractions in 5% acetonitrile (ACN) and 5% formic acid.",
+    "Analyze the reconstituted fractions by liquid chromatography-tandem mass spectrometry (LC-MS/MS).",
+    "Alternatively, other cross-linker reagents could be use. For DHSO/DMTMM, 8 mM DHSO (3,3&#39;-sulfinyldi(propanehydrazide)) and 16mM DMTMM (4-(4,6-dimethoxy-1,3,5-triazin-2-yl)-4-methylmorpholinium chloride) at 37°C for 90 min. Proceed directly with protein precipitation. Samples can be digested using S-trap sample preparation following mini-spin column digestion protocol as provided by the manufacturer (Protifi, C02-mini-80)."
+  ],
+  "authors": [
+    "Miguel A. Gonzalez-Lozano",
+    "Harper JW"
+  ],
+  "creator": "Harper JW",
+  "published_on": 1743186710,
+  "created_on": 1729263650,
+  "keywords": []
+}

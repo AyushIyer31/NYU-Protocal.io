@@ -1,0 +1,36 @@
+{
+  "id": 121087,
+  "title": "Isolation of Treg cells and Treg cell suppression/death assay",
+  "uri": "isolation-of-treg-cells-and-treg-cell-suppression-d2g78bzn",
+  "doi": "dx.doi.org/10.1038/nprot.2007.490",
+  "description": "{\"blocks\":[{\"key\":\"wubkm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"vlceq\",\"text\":\"In vitro Treg suppression assays are performed to determine the functional effect of Treg cells on CD4 T cells. They are performed by co-culturing the responding population (Tresp) with the Treg cells or control CD4 cells (Tcon cells).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"ph7m7\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"cqags\",\"text\":\"Balb/C mice from which the needed cell populations are isolated.\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"blaqr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"n4kuv\",\"text\":\"PBS/BSA (0.5% BSA)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"udnts\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2fsof\",\"text\":\"ACK lysing buffer (Biowhittaker)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"trzzn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d8td3\",\"text\":\"Anti-FITC multisort kit (Miltenyi)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jnvxh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aj9qf\",\"text\":\"Anti biotin beads(Miltenyi)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"riz5r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"epuxi\",\"text\":\"RPMI medium with 10% FCS\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"k544r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ujhqu\",\"text\":\"96 well, U bottomed plate\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"nqwul\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fcmgm\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"bkiqe\",\"text\":\"AutoMACS sorter (Miltenyi)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Harvest 5 Spleens from 5 to 12 week old mice.",
+    "After mashing the spleens, pass the cells through the nylon strainer in the medium.",
+    "After washing the cells with PBS/BSA, osmotically lyse the erythrocytes and incubate the single cell suspensions with FITC-conjugated anti-CD4 and biotin-conjugated anti-CD25 for 30 minutes on ice. (each 2µg/ml concentration in 3ml volume of PBS/BSA)",
+    "After washing in 40ml of PBS/BSA, resuspend the cells in 2ml of PBS/BSA and incubate with 120µl of anti-FITC microbeads for 15 minutes in the refrigerator. This is followed by washing with PBS/BSA.",
+    "Purify CD4+ T cells by magnetic isolation using the Auto MACS sorter (Miltenyi Biotec) using POSSELD2 program. Every incubation step is followed by PBS/BSA washing.",
+    "Release the Anti FITC beads by incubating with release reagent (available in the multisort kit) followed by the depletion of cell that are bound to beads. This is performed by the DEPLETE program in the sorter. The negative fraction after this sort is used for further sorting.",
+    "For isolation of CD4+CD25+ Tregs, after releasing the beads, incubate the purified CD4+ T cell suspension (500µl) with 2.5µl of α-biotin microbeads followed by POSSELD2 separation using the Auto MACS.",
+    "In all the experiments 90 to 95% of these cells were positive for CD4 and CD25. The negative fractions were depleted of CD25+ cells to obtain CD4+CD25– cells (used as Tcon or Tresp cells in the assay).",
+    "Culture CD4+CD25- responder T cells (Tresp) (3×10 4 ) in U-bottom 96-well plates with Tcon (CD4+CD25-) (3×10 4 ) or Treg (CD4+CD25+) in the presence of soluble 0.5-0.75 µg/ml α-CD3 and 2.5 - 4 µg/ml α-CD28 for 2-4 days. 3×10 4 irradiated (3000 Rad) T cell-depleted splenocytes can be added as APCs instead of α-CD28 in the co-culture.",
+    "Label Tresp cells with CFSE to distinguish them from Tcon or Treg cells in co-culture. Use Treg or Tcon cells in the co-culture with responders directly (fresh) or after pre-activation with plate-bound α-CD3 (5µg/ml) recombinant IL-2 (100U/ml) for 2-3 days.",
+    "Measure proliferation of T cells by incorporation of 3H-thymidine for the last 6-16 h of culture or by CFSE dilution.",
+    "Measure death at 0 hr and after 1, 2 and 3 days. Cell death analyses of CFSE+ responders should be performed based on forward scatter or Annexin V and propidium iodide staining. Assess cell death with events acquired at constant time, in order to count the live events in flow cytometry analyses.",
+    "If the purity of Treg cells is below 95% , use less beads or less bead incubation time. If the yield is less use fresh colums in the AutoMACS sorter",
+    "Sorting-4-5 hours Assay setup-30-45 minutes",
+    "From 5 mice spleens about 1-1.5 million Treg CD4+ CD25+ cells with 95% purity can be purified. Tresp cells that are co-cultured with Treg cells for 3 days will be more apoptotic than those co-cultured with Tcon cells. The live cells that remain will be suppressed in their proliferation.",
+    "CD4+ CD25+ Foxp3+ regulatory T cells induce cytokine deprivation apoptosis of CD4+ T cells by Pushpa Pandiyan, Lixin Zheng, Satoru Ishihara, Jennifer Reed &amp; Michael J Lenardo published in Nature Immunology on 16 Oct, 2007 https://dx.doi.org/10.1038/ni1536"
+  ],
+  "authors": [
+    "Pushpa Pandiyan"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1194267538,
+  "created_on": 1194267538,
+  "keywords": []
+}

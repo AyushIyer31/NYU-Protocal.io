@@ -1,0 +1,33 @@
+{
+  "id": 97806,
+  "title": "Fear Conditioning",
+  "uri": "fear-conditioning-dbrn2m5e",
+  "doi": "dx.doi.org/10.17504/protocols.io.261ge56bdg47/v1",
+  "description": "{\"blocks\":[{\"key\":\"8plpn\",\"text\":\"Behavioral assay to measure fear learning and memory in mice.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"7tlkm\",\"text\":\"MedAssociates fear conditioning chambers\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5j86u\",\"text\":\"white floor inserts\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c2ors\",\"text\":\"black ceiling inserts\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6kjfm\",\"text\":\"pepperminet and limonene spray\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Habituate mice to the room. Set up fear conditioning chambers as well as protocols (listed below) in VideoFreeze software.",
+    "Place individual mice in a lit fear conditioning apparatus scented with peppermint spray.",
+    "Protocol: 00:02:00 baseline followed by 5 tone-shock pairings where the shock follows the tone shock = 0.5mA, 00:00:01 is delivered after the end of the tone (75dB, 2kHz, 00:00:19 ) empty trace intervals between the shocks last 00:01:00",
+    "Goal: Measure the subjects&#39; fear response to the environment where fear conditioning was received",
+    "After the protocol runs for each mouse, place the mouse back in the home cage and clean the fear conditioning chamber thoroughly.",
+    "24 hours after fear acquisition: Mice are placed in a lightened FC apparatus scented with peppermint spray.",
+    "Goal: Measure the subjects fear response to the CS, and ideally no other features ofthe training environment. The key is to alter the chamber so the subjects are exposed to a new set of environmental cues.",
+    "Fear conditioning acquisition % Component freezing for baseline, each tone (if used), shock, and interstimulus interval Graphs for each component should be graphed separately Average motion Context % Component freezing per minute and total Per minute and total will be on separate graphs Average motion per minute and total Cued %Component freezing for baseline, each tone, and interstimulus interval Graphs for each component should be graphed separately Average motion for baseline, each tone, and interstimulus interval",
+    "Contextual test is performed 24:00:00 after the fear acquisition test. Cued Test is performed at least 02:00:00 after the contextual test.",
+    "Mice are placed in a lightened FC apparatus which is altered by placing a smooth floor insert on shock grid and black triangles on top. Limonene spray is used, instead of peppermint scent.",
+    "Protocol: Neither cue nor shock are delivered during this test session (Duration 00:07:30 )",
+    "Protocol: Baseline: 2 min followed by five tone-cues No shock is delivered after the end of the tone (75dB, 2 kHz, 00:00:19 )"
+  ],
+  "authors": [
+    "Sabina Marciano",
+    "Roberta Marongiu"
+  ],
+  "creator": "Jacquelyn Haytayan",
+  "published_on": 1724870030,
+  "created_on": 1712258479,
+  "keywords": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": 124675,
+  "title": "Mass photometry",
+  "uri": "mass-photometry-d5zb872n",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg3keq7v25/v2",
+  "description": "{\"blocks\":[{\"key\":\"8jqii\",\"text\":\"A protocol for performing mass photometry measurements.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Clean the high-precision coverslips (Azer Scientific) by alternating between isopropanol and water. Repeat the above treatment for 3 times in a bath sonicator, each 3 min. Air dry the coverslips",
+    "Clean the gasket by alternating between isopropanol and water. Repeat the above treatment for 3 times, without sonication. Air dry the gasket.",
+    "Add 19 ul of mass photometry buffer (30 mM HEPES pH 7.4, 5 mM MgSO4 and 1 mM EGTA) to the well for autofocus",
+    "Dilute the protein sample in the mass photometry buffer to a concentration of 5–20 nM.",
+    "(Optional) For crosslinking, add 1 μL of 0.1% (v/v) glutaraldehyde in mass photometry buffer to 9uL protein sample and incubated for 10 minutes on ice, followed by quenching the reaction with adding 10 μL of 1M Tris-HCl pH 7.4.",
+    "Measure the protein contrast counts using Refeyn TwoMP mass photometer, with three technical replicates.",
+    "Prior to the measurement, perform mass calibration using a standard mix of conalbumin, aldolase, and thyroglobulin. Analyze the mass photometry profiles and fit them to multiple Gaussian peaks, withthe mean, standard deviation, and percentages calculated using DiscoverMP software (Refeyn)."
+  ],
+  "authors": [
+    "Minghao Chen",
+    "Yuanchang Zhao"
+  ],
+  "creator": "Minghao Chen",
+  "published_on": 1742469385,
+  "created_on": 1742422275,
+  "keywords": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": 107136,
+  "title": "Deep-learning tool for early identification of non-traumatic intracranial hemorrhage etiology based on CT scan",
+  "uri": "deep-learning-tool-for-early-identification-of-non-dku84wzw",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvmejoog3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"1ep35\",\"text\":\"Objective\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"ddk3b\",\"text\":\"To develop an\\nartificial intelligence system that can accurately identify acute non-traumatic\\nintracranial hemorrhage (ICH) etiology based on non-contrast CT (NCCT) scans\\nand investigate whether clinicians can benefit from it in a diagnostic setting.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"o9ic\",\"text\":\"Methods\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"2k5rn\",\"text\":\"The deep learning model\\nwas developed with 1868 eligible NCCT scans with non-traumatic ICH collected\\nbetween January 2011 and April 2018. We tested the model on two independent\\ndatasets (TT200 and SD 98) collected after April 2018. The model’s diagnostic\\nperformance was compared with clinicians’ performance. We further designed a\\nsimulated study to compare the clinicians’ performance with and without the\\ndeep learning system augmentation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8590d\",\"text\":\"Results\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"64qe3\",\"text\":\"The proposed deep\\nlearning system achieved area under the receiver operating curve of\\n0.986 (95% CI 0.967–1.000) on aneurysms, 0.952 (0.917–0.987) on hypertensive\\nhemorrhage, 0.950 (0.860–1.000) on arteriovenous malformation (AVM), 0.749\\n(0.586–0.912) on Moyamoya disease (MMD), 0.837 (0.704–0.969) on cavernous\\nmalformation (CM), and 0.839 (0.722–0.959) on other causes in TT200 dataset.\\nGiven a 90% specificity level, the sensitivities of our model were 97.1% and\\n90.9% for aneurysm and AVM diagnosis, respectively. The model also shows an\\nimpressive generalizability in an independent dataset SD98. The clinicians\\nachieve significant improvements in the sensitivity, specificity, and accuracy\\nof diagnoses of certain hemorrhage etiologies with proposed system\\naugmentation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eo8n6\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6nrf\",\"text\":\"Conclusions\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":11}],\"entityRanges\":[],\"data\":{}},{\"key\":\"642n9\",\"text\":\"The proposed deep learning algorithms can be\\nan effective tool for early identification of hemorrhage etiologies based on\\nNCCT scans. It may also provide more information for\\nclinicians for triage and further imaging examination selection. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Dataset and Clinical Taxonomy Retrospectively review NCCT scans from 4019 patients at Beijing Tiantan Hospital (2011-2018). Include only the first NCCT scan post-ICH event; exclude traumatic, post-surgical, or delayed scans.",
+    "Inclusion and Exclusion Criteria Exclude scans with poor quality, lacking a complete series, or from patients under four years. Review medical records for patient demographics and clinical history.",
+    "Independent Test Datasets Collection Collect additional datasets from Beijing Tiantan Hospital (TT200) and Shandong Jining Medical College (SD98) from 2018 to 2019.",
+    "Ethical Compliance Obtain IRB approval from both institutions. Anonymize all clinical data and images. Waive informed consent based on non-harm justification.",
+    "Data Labeling and Etiologic Classification Use Meretoja et al.&#39;s method for etiologic classification. Label data independently by two radiologists, with discrepancies resolved by a third.",
+    "Model Development: Image Preprocessing Rotate images every 20 degrees using a bilinear algorithm. Resize volumes to a consistent voxel size. Apply unsupervised skull-stripping and crop the images.",
+    "Model Architecture Develop the ICHNet using the &#34;SlowFast Networks&#34; architecture. Use separate pathways for different resolution features, combining them before the output layer.",
+    "Training Protocol Use 4 NVIDIA Tesla P40 GPUs and Pytorch-0.4.1. Implement min-max normalization and oversampling to address class imbalance. Perform five-fold cross-validation to select the best model.",
+    "Test Procedure Test the model using an ensemble strategy with data from both test datasets. Decrease rotation frequency during testing to reduce processing time.",
+    "Statistical Analysis Generate confusion matrices and calculate AUCs. Use the Clopper-Pearson and Hanley and McNeil methods for confidence intervals. Evaluate rater concordance and assess model impact using Cohen and Fleiss κ coefficients. Apply bootstrapping for performance metrics and Wilcoxon rank-sum tests for statistical significance."
+  ],
+  "authors": [
+    "Meng Zhao"
+  ],
+  "creator": "Meng Zhao",
+  "published_on": 1725878234,
+  "created_on": 1725835820,
+  "keywords": []
+}

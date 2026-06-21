@@ -1,0 +1,36 @@
+{
+  "id": 220951,
+  "title": "MERFISH for FFPE ",
+  "uri": "merfish-for-ffpe-g3zxbyp7p",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvjb5qwgk5/v2",
+  "description": "{\"blocks\":[{\"key\":\"ki3d\",\"text\":\"MERFISH protocol (Vizgen) for FFPE samples.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "FFPE tissue blocks were assayed at Vizgen. The samples were prepared for multiplexed spatial transcriptomics analysis using the MERSCOPE platform following the manufacturer’s protocol (Vizgen, 91600112 Rev C).",
+    "FFPE tissue blocks were sectioned at 5 µm thickness using a microtome and transferred onto MERSCOPE FFPE slides.",
+    "Slides were air-dried at 55°C for 15 minutes, followed by room-temperature drying for 1-2 hours.",
+    "Sections were deparaffinized and then decrosslinked by incubating with Decrosslinking Buffer (Vizgen 20300115) at 90°C for 15 minutes.",
+    "Anchoring Pretreatment was performed using Pre-Anchoring Activator to prepare RNA for hybridization.",
+    "Cell Boundary Staining was conducted using Vizgen Cell Boundary Staining kit (Vizgen 10400118).",
+    "RNA was stabilized using Gel Embedding Premix, ensuring immobilization before clearing.",
+    "Tissue clearing removed autofluorescent components to enhance signal-to-noise ratio.",
+    "Autofluorescence quenching was applied.",
+    "Encoding probe hybridization was conducted for 36-48 hours, followed by stringent washes using Formamide Wash Buffer to remove unbound probes.",
+    "Samples were stored in Clearing Premix at 37°C for up to 7 days before imaging.",
+    "The sample slides were loaded and imaged on the MERSCOPE imaging platform (Vizgen 10000001) using MERSCOPE 140 Gene Imaging Kit (Vizgen 10400004) following the manufacturer’s protocol by Vizgen (Vizgen, 91600001 Rev F).",
+    "The sample slides were assembled into the MERSCOPE Flow Chamber and inserted into the MERSCOPE Instrument.",
+    "After low-resolution mosaic imaging, regions of interest were selected, and the instrument switched to a high-magnification objective.",
+    "The automated MERFISH experiment was executed, acquiring high-resolution images.",
+    "Cell segmentation was performed using the Cellpose algorithm, relying on the Cellboundary 3 and DAPI nuclear stain."
+  ],
+  "authors": [
+    "Joanna Bi"
+  ],
+  "creator": "Joanna Bi",
+  "published_on": 1750795349,
+  "created_on": 1750795292,
+  "keywords": []
+}

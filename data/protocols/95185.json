@@ -1,0 +1,41 @@
+{
+  "id": 95185,
+  "title": "Optimizing image resolution of wyze camera trap recordings",
+  "uri": "optimizing-image-resolution-of-wyze-camera-trap-re-c87rzzm6",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gp3p38vzp/v1",
+  "description": "{\"blocks\":[{\"key\":\"aa1pu\",\"text\":\"Improving the resolution of Wyze cameras opens up their usability in different contexts, such as observing animals in the laboratory or in field conditions. This protocol provides step-by-step instructions on how to modify the camera resolution such that the user can better focus on a target of interest.\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"c5fik\",\"text\":\"As with most purchases, camera modifications can invalidate Wyze warranties for their cameras. If you are okay with this risk, please proceed! \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"dl1o8\",\"text\":\"This protocol uses razors and forceps. Both are sharp. Use caution when dismantling the camera to not hurt yourself and to not irreparably damage the camera. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"bsu2n\",\"text\":\"Ruler\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1up6g\",\"text\":\"Focal object (anything of interest)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eih1m\",\"text\":\"Wyze V3 camera \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2nfr8\",\"text\":\"Razor Blade, single edge, 0.009\\\" (any brand)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ffk4c\",\"text\":\"Blunt forceps (any brand, but we use Fisherbrand Dissecting Blunt-pointed forceps, CAT#08-887).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2jpms\",\"text\":\"Fine tipped forceps (any brand, but we use Dumont #5 Forceps, CAT#11254-20).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"unrs\",\"text\":\"Long necked Phillips-Head Screw Driver (any brand, but we use Husky's 2 x 8 inch, CAT# 204663529)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4hghr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Using the Wyze app, focus your camera on an object that is approximately the same distance as the distance your camera will be positioned from the focal subject in your research. Using a ruler, document this ideal focal distance. It is OK if, at this point, the image on your Wyze app is blurry. If the object is already in ideal resolution, do not proceed with camera modification.",
+    "Check for an SD card. Open the rubber cap labeled, &#34;SD card&#34; on the back of the camera. If an SD card is inside of the camera, it needs to be removed. Using either your fingernails or blunt forceps, push the SD card in slightly, so that the push release latch ejects the SD card. Remove the SD card with your fingernails or blunt forceps. Removal of SD card from Wyze camera. Photo source: https://support.wyze.com/hc/en-us/articles/360057944152-How-do-I-install-a-microSD-card-in-my-Wyze-Cam-v3",
+    "Facing the front of the camera, a white border encases a black square. This white border is secured with a double sided adhesive. Using a razor blade, carefully remove the white outer frame of the front of the camera. Cut around the whole frame to detach it from the glue underneath. Lift the white border on all 4 sides of the camera. Keep this white border, as we will add it back when we are finished. Using gloves and with care, remove the adhesed white border on the front of the camera.",
+    "Once the front cover is removed, find the three small screws holding the housing of the camera together. Using fine tipped forceps, remove the small white foam cylinders in the screw holes. Keep the foam cylinders somewhere, we will add them back at the end of the protocol.",
+    "Using a Phillips long-necked screw driver, reach in and unscrew the three screws. The order of unscrewing is not important. Keep these screws, as we will reuse them at he end of the protocol. Original screwdriver illustration courtesy of Timplaru Emil at Vecteezy.com.",
+    "With the razor blade, carefully wedge between the camera housing and the white outer shell. Orient the razor such that the sharp end is facing opposite of the white frame. Push out the entire camera assembly. Be careful to not damage the orange rubber gasket used for water proofing.",
+    "After documenting the ideal focal distance, unplug the Wyze camera from the power source.",
+    "Carefully, remove the two ribbon cables that fasten the camera assembly to the white shell casing. The first ribbon cable has 2 wires (white = left), the second ribbon cable has 4 (pink = left).",
+    "In the back of the camera assembly, locate the two screws in the center holding the camera lens.",
+    "Using your long necked Phillips screw driver, turn each screw counter clockwise (left) a quarter of a full turn. After turning, push the screw (gently) towards the circuit board. Doing so pushes the lens further away from the circuit board, changing the focus.",
+    "Reconnect the two ribbon cables. Repower the Wyze camera.",
+    "Check whether the desired focal length has been achieved that you documented in Step 1. If not, repeat step 10. For example, see this comparison below:",
+    "Push the camera assembly back into the housing, aligning it in the correct orientation. The way to ensure you align it correctly is to use the SD card reader on the camera assembly, and align it to the the rubber lid on the outer shell. You can refer to step 3&#39;s picture for assistance.",
+    "Replace the 3 screws removed previously in Step 6.",
+    "Replace the foam pieces removed previously in Step 5.",
+    "Add the white border back that was removed previously in Step 4.",
+    "We also made a video guide. If you&#39;d like captions, please visit the Youtube version of our camera manipulation protocol directly underneath."
+  ],
+  "authors": [
+    "Tony Chen",
+    "Daniel Shaykevich",
+    "Marie-Therese Fischer",
+    "Lauren A O'Connell",
+    "Billie Goolsby"
+  ],
+  "creator": "Lauren A O'Connell",
+  "published_on": 1709143942,
+  "created_on": 1707863250,
+  "keywords": []
+}

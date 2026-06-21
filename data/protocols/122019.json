@@ -1,0 +1,27 @@
+{
+  "id": 122019,
+  "title": "Kinase annotation for helminths",
+  "uri": "kinase-annotation-for-helminths-d3eb8jan",
+  "doi": "dx.doi.org/10.1038/protex.2018.042",
+  "description": "{\"blocks\":[{\"key\":\"69tk7\",\"text\":\"A method to annotate kinase domains in nematodes and platyhelminths by using dynamic thresholds for different kinase groups.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"fv2le\",\"text\":\"Kinases are one of the most common types of targets for existing drugs for human diseases1 and are considered strong candidates for the development of new ones.  This method was developed to annotate kinase domains in the gene sets of nematodes and platyhelminths by aligning to the Kinomer profile database2 using carefully considered scoring thresholds specific to each kinase group.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":89,\"length\":1},{\"style\":\"sup\",\"offset\":307,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"yll2v\",\"text\":\"1. kinase domain models from kinomer\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"k7qfe\",\"text\":\"  2. installation of HMMER v2.3.2\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Download the Kinase domain models file from the Kinomer website http://www.compbio.dundee.ac.uk/kinomer/allPK.hmm .",
+    "Kinase class specific score thresholds are determined by starting with those used in the Kinomer paper 3 and then adjusting them until an hmmpfam search (HMMER v2.3.2) comes as close as possible to identifying all known C. elegans kinases using the Kinomer allPK.hmm profile database. e.g. The final cutoffs used for the associated publication were: TK, 5.5e-03; CAMK, 9.6e-07; CK1, 1.1e-02; CMGC, 6.7e-03; AGC, 1.1e-14; STE, 3.4e-03; RGC, 4.8e-05; TKL, 8.7e-03; PDHK, 4.7e-160; PIKK, 1.4e-06; Alpha, 8.5e-66; and RIO, 7.5e-10.",
+    "Hmmpfam is used with default settings to map the user provided gene protein sequences against the Kinomer models.",
+    "Genes with hmmpfam &#39;hits&#39; meeting the kinase class specific custom cutoffs are then annotated as a putative kinase of the given class.",
+    "A set of annotated kinase genes with the corresponding domain annotations",
+    "none"
+  ],
+  "authors": [
+    "John Martin",
+    "Makedonka Mitreva"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1526558776,
+  "created_on": 1526558776,
+  "keywords": []
+}

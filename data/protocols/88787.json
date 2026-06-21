@@ -1,0 +1,32 @@
+{
+  "id": 88787,
+  "title": " A Computational Method for detecting and evaluating Tankyrase-Binding Motifs",
+  "uri": "a-computational-method-for-detecting-and-evaluati-c2xtyfnn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj32xplk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"4u348\",\"text\":\"Tankyrases are multifunctional proteins within the poly(ADP-ribose) polymerase family. Known tankyrase binders primarily interact with the scaffolding portion of tankyrases, which comprises five ankyrin repeat cluster (ARC) domains. These domains recognize a specific sequence known as the Tankyrase binding motif (TBM), typically following an octapeptide format characterized by an arginine at position 1 and a glycine at position 6. However, extended and nonconventional TBMs have also been reported. At present, there is no system in place that can easily find and score TBMs. This protocol describes how to use a web-based, public-accessible, computational method (https://shellmanlab.github.io/) we developed to locate and rank all types of potential TBMs. As interest in tankyrases continues to grow across various biological fields, our tool empowers researchers to quickly assess how tankyrases may impact their protein of interest.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":669,\"length\":30}],\"data\":{}},{\"key\":\"bc35l\",\"text\":\"\\n\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"986A388A6C6411EE9E4E0A58A9FEAC02\",\"url\":\"https://shellmanlab.github.io\"}}}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"djf56\",\"text\":\"A computer with access to the Internet will be required. Internet access to both https://www.uniprot.org/ and https://shellmanlab.github.io/ will be necessary.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":81,\"length\":24},{\"style\":\"UNDERLINE\",\"offset\":110,\"length\":30}],\"entityRanges\":[{\"key\":0,\"offset\":81,\"length\":24},{\"key\":1,\"offset\":110,\"length\":30}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"7675EE9863B911EE81E30A58A9FEAC02\",\"url\":\"https://www.uniprot.org\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"7675EE9863B911EE81E30A58A9FEAC02\",\"url\":\"https://shellmanlab.github.io\"}}}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Identify the Uniprot code for your protein of interest in the Uniprot database (https://www.uniprot.org/), which is the identifier indicated by the arrow in Figure 1. Figure 1. Finding the Uniprot code for your protein of interest.",
+    "“Find and Score Motifs!” function will search the sequence of all listed proteins for potential canonical and extended TBMs and provide a score of binding strength for each TBM. Figure 3. The function of “Find and Score Motifs!”.",
+    "Paste or manually input any 8-residue protein sequence. Select “Score any 8-amino-acid sequence” to output a calculated score of the sequence no matter the sequence composition. Figure 8. The function of &#34;Score any 8-amino-acid sequence.&#34;",
+    "This will provide a raw score for your peptide with no constraints on selection. Figure 9. An example of output for &#34;Score any 8-amino-acid sequence&#34; function.",
+    "The “Find and Score Motifs!” function will output the predicted canonical and then extended TBMs, with one TBM in one row. Each row will include the protein name, Uniprot code, amino acid sequence of the TBM, the starting position of the TBM in the protein, and the score of the binding strength. Figure 4. An example of output of “Find and Score Motifs!”.",
+    "Enter Uniprot code(s), one per line, to the text box of the application at https://shellmanlab.github.io/ (Figure 2). For screening multiple proteins simultaneously, a list of Uniprot codes in a column of an Excel spreadsheet can also be copied and pasted into the text box. Figure 2. Enter the Uniprot codes, one per line.",
+    "Convert output into an Excel file with delimited by commas (Figure 5-7). Copy and paste the output into an Excel file. Go to the &#34;Data&#34; tab (A) and select &#34;Text to Columns&#34; (B). Then make sure &#34;delimited&#34; is selected in the pop-up window and click &#34;Next&#34; (C). Figure 5. Paste the output into a spreadsheet of an Excel file.",
+    "Make sure that &#34;Comma&#34; is selected as a delimiter and click &#34;Finish&#34; (Figure 6). Figure 6. Convert text to column in Excel.",
+    "Data will now be presented as columns for analysis (Figure 7). Figure 7. An example of output converted into an Excel file."
+  ],
+  "authors": [
+    "Christopher M. Clements",
+    "Samantha X Shellman",
+    "Melody H Shellman",
+    "Yiqun G. Shellman"
+  ],
+  "creator": "Yiqun Shellman",
+  "published_on": 1698317298,
+  "created_on": 1696428728,
+  "keywords": []
+}

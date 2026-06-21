@@ -1,0 +1,28 @@
+{
+  "id": 219113,
+  "title": "Uploading files to your Galaxy Trakr account using FileZilla",
+  "uri": "uploading-files-to-your-galaxy-trakr-account-using-gz8hbx9t7",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gpqnd1lzp/v1",
+  "description": "{\"blocks\":[{\"key\":\"fr8un\",\"text\":\"A short protocol about how to upload data to Galaxy Trakr accounts using FileZilla. This method optimize the retrieval of data for use on the Galaxy Trakr platform. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2ouod\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1c8ua\",\"text\":\"You need to have the FileZilla client already downloaded and installed in your computer. You can download it here: https://filezilla-project.org/\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":115,\"length\":30}],\"data\":{}},{\"key\":\"ffbsb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"an2he\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"918601DC3C9211F08BC20A58A9FEAC02\",\"url\":\"https://filezilla-project.org\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"lm4r\",\"text\":\"It can only be used if your organization allows the use of the FileZilla client. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Click on File and select site manager .",
+    "Click on New site and name it as you desire.",
+    "In p rotocol from the dropdown menu select SFTP - SHH... Then in Host: upload.galaxytrakr.org",
+    "Select the type of login. If you select normal, add your user name and your password , and you will not have to enter it again when you want to connect to it.",
+    "Click connect and you will be shown on the far right the window with your Galaxy Trakr data available via FTP.",
+    "Now you are ready to transfer any data from your computer or any other drive to your Galaxy Trakr account. Just drag the selected files on the lower left window left. Dragging the files Transferring the files",
+    "Check that the files are available at your Genome Trakr account by clicking upload and FTP in your Galaxy Trakr account.",
+    "The files are in your account and can be fetched to the Galaxy Trakr website and start performing your analyzes."
+  ],
+  "authors": [
+    "Narjol Gonzalez-Escalona"
+  ],
+  "creator": "Narjol Gonzalez-Escalona",
+  "published_on": 1750965656,
+  "created_on": 1748525885,
+  "keywords": []
+}

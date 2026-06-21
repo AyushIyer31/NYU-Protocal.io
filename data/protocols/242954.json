@@ -1,0 +1,33 @@
+{
+  "id": 242954,
+  "title": "Optimizing Animal Randomization for In Vivo Experiments",
+  "uri": "optimizing-animal-randomization-for-in-vivo-experi-hrhib534f",
+  "doi": "dx.doi.org/10.17504/protocols.io.261ge19bov47/v1",
+  "description": "{\"blocks\":[{\"key\":\"6n5ug\",\"text\":\"This protocol describes a standardized procedure to distribute laboratory animals (mice, rats) into experimental groups using the online tool Randmice (https://randmice.com). The algorithm minimizes inter-group heterogeneity by iteratively testing combinations of animal assignments and selecting the distribution with the lowest covariate imbalance. This approach reduces operator bias, improves reproducibility, and supports compliance with the 3Rs principle (Replacement, Reduction, Refinement) as required by European Directive 2010/63/EU. The tool is optimized for small-scale experiments (N \\u003c 12 animals per group), where random assignment leads to high inter-group heterogeneity (Bertsimas et al., 2015).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":152,\"length\":22}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"1091AF8005E211F1B5520A58A9FEAC02\",\"url\":\"https://randmice.com).\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Identify all animals with a unique tag",
+    "Measure the covariates to be balanced across groups. Example of common covariates are: body weight, tumor volume (left and/or right flank), blood pressure, any other quantitative variable relevant to the experiment",
+    "Open https://randmice.com via a web browser Intro page at randmice.com",
+    "Login if you have an account. Otherwise, enter your email address to access the form.",
+    "Enter the Number of groups",
+    "Choose the Number of iterations for the randomization. 10^6 is standard and run very fast (less than 2min) and generates good results. 10^7 is a bit longer and gives excellent results.",
+    "Fill your Own reference if needed",
+    "You have now access to the form to enter your data",
+    "Check/uncheck Compare with original balancing if you want to compare your own randomization with the one from randmice.",
+    "Enter your data. The 1st fill is a header that describes each column. It can be any text. Tag must be unique identifier. See instructions link for more information.",
+    "Click Randomize when everything is ready. The randomization will proceed. You can close the window if you want, the report will be sent in your mailbox when it is ready.",
+    "In your mailbox, you will find the report. Below is an example:",
+    "You will also receive a CSV file to import if needed"
+  ],
+  "authors": [
+    "Sylvain Carlioz"
+  ],
+  "creator": "Sylvain Carlioz",
+  "published_on": 1770697717,
+  "created_on": 1770678645,
+  "keywords": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": 97401,
+  "title": "3D printed stereotax multimodal imaging compatibility assessment",
+  "uri": "3d-printed-stereotax-multimodal-imaging-compatibil-dbcz2ix6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlk85edl5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"5bd5c\",\"text\":\"PET/CT and MRI for multimodal image compatibility.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d3t6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"455mg\",\"text\":\"This protocol is supplementary to the manuscript: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a1nhg\",\"text\":\"Liang, L., Zimmermann Rollin, I., Alikaya, A., Ho, J.C., Santini, T., Bostan, A.C., Schwerdt, H.N., Stauffer, W.R., Ibrahim, T.S., Pirondini, E., Schaeffer, D.J., 2024. An open-source MRI compatible frame for multimodal presurgical mapping in macaque and capuchin monkeys. BioRxiv https://doi.org/10.1101/2024.02.17.580767\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":273,\"length\":7}],\"entityRanges\":[{\"key\":0,\"offset\":281,\"length\":41}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"F487A49ECD6F49D9AB28A92DB031187D\",\"url\":\"https://doi.org/10.1101/2024.02.17.580767\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"cmqhb\",\"text\":\"The FDG doses are for proof of concept, and even smaller doses of a radioligand may suffice for practical use, depending on exposure and technical considerations.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"1g1qd\",\"text\":\"Imaging Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":17},{\"style\":\"italic\",\"offset\":0,\"length\":17}],\"entityRanges\":[],\"data\":{}},{\"key\":\"ni86\",\"text\":\"Small preclinical PET/CT scanner (Si78; Bruker BioSpin GmbH, Ettlingen, Germany)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3tkhg\",\"text\":\"Paravision-360 software package (version 3.2; Bruker BioSpin Corp, Billerica, MA, RRID: SCR_001964)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"15gie\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ilm6\",\"text\":\"Materials\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9},{\"style\":\"italic\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ojgk\",\"text\":\"3D printed stereotaxic eye and ear bars (https://github.com/SchaefferLab/Macaque-Stereotax)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":41,\"length\":49}],\"data\":{}},{\"key\":\"6qnvq\",\"text\":\"[18F] fluorodeoxyglucose (FDG)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"94ea\",\"text\":\"MRI-compatible nylon screw\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9bj7j\",\"text\":\"small gauge syringe\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"5A5FD386E6FD11EE92160A58A9FEAC02\",\"url\":\"https://github.com/SchaefferLab/Macaque-Stereotax\"}}}}",
+  "steps": [
+    "Preparation of eye bars and ear bars: With a syringe, fill the ear and eye bars with a small dose (0.05 MBq ear bar, 1.54 MBq eye bar) of [18F] fluorodeoxyglucose (FDG) and seal the chamber with a MRI-compatible nylon screw. Note that these doses are for proof of concept, and even smaller doses of a radioligand may suffice for practical use, depending on exposure and technical considerations.",
+    "PET Imaging: Place the ear and eye bars in a small preclinical PET/CT scanner (here we used the Si78; Bruker BioSpin GmbH, Ettlingen, Germany) and use the Paravision-360 software package (version 3.2; Bruker BioSpin Corp, Billerica, MA, RRID: SCR_001964) for image acquisition.",
+    "CT Acquisition: Acquire a CT scan using the same PET/CT scanner equipped with a Low Dose 1 mm aluminum filter. Here we used a “step and shoot” method with a 0.6-degree gantry step for image acquisition.",
+    "Image Reconstruction: Reconstruct the CT images using the filtered back projection algorithm."
+  ],
+  "authors": [
+    "Isabela Zimmermann Rollin",
+    "Lucy Liang",
+    "David J Schaeffer"
+  ],
+  "creator": "Lucy Liang",
+  "published_on": 1712769828,
+  "created_on": 1711462385,
+  "keywords": []
+}

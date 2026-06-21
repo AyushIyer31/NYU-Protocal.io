@@ -1,0 +1,30 @@
+{
+  "id": 315912,
+  "title": "EcoRV-HF Digestion",
+  "uri": "ecorv-hf-digestion-jyrgcpv3x",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvm86wog3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"6sg50\",\"text\":\"Digest 112 samples with EcoRV-HF restriction enzyme\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":7,\"length\":12},{\"style\":\"italic\",\"offset\":24,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"45t8m\",\"text\":\"Active time: ~1 hour\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8u28g\",\"text\":\"Incubation time: 1 hour, 20 minutes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mi9i\",\"text\":\"Total time: ~2 hours, 20 minutes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"2godf\",\"text\":\"Equipment required\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":18}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4la2v\",\"text\":\"Heat block(s) with 112 slots for 0.5mL tubes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"81m3f\",\"text\":\"Fine point Sharpie\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4o7g4\",\"text\":\"1.5mL tube rack(s)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2i144\",\"text\":\"PCR strip tube rack(s)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"gq6p\",\"text\":\"Vortex\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b46g1\",\"text\":\"Mini spinner with 1.5mL tube attachment\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8bftu\",\"text\":\"200µL pipette\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5032l\",\"text\":\"20µL pipette\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fveno\",\"text\":\"10µL pipette\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f88n0\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"atgoa\",\"text\":\"Consumable materials (per sample)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":33}],\"entityRanges\":[],\"data\":{}},{\"key\":\"h4n1\",\"text\":\"One 0.5mL microcentrifuge tube\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dr3cl\",\"text\":\"0.5µL rCutSmart Buffer (NEB, cat. #B6004S)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8bcls\",\"text\":\"0.5µL stock EcoRV-HF enzyme (NEB, cat. #R3195S)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":12,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"9l723\",\"text\":\"One 20µL pipette tip\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8175d\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2c9vq\",\"text\":\"Consumable materials (per batch)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":32}],\"entityRanges\":[],\"data\":{}},{\"key\":\"e9no2\",\"text\":\"One 1.5mL microcentrifuge tube\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dleck\",\"text\":\"Two 200µL pipette tips (for preparing working solution in Step 4)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f4lhb\",\"text\":\"One 10µL pipette tip (for aliquoting working solution in Step 5)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Turn on heat block and set to 37ºC",
+    "Label clean 0.5mL microcentrifuge tubes with SampleID by writing on the tube lid directly with a fine point Sharpie",
+    "Remove one aliquot each of stock EcoRV-HF enzyme and rCutSmart Buffer from the freezer. Vortex gently to mix. Spin down in mini spinner, if necessary",
+    "Prepare EcoRV-HF working solution by combining 62µL rCutSmart Buffer and 62µL stock EcoRV-HF enzyme in a 1.5mL microcentrifuge tube",
+    "Aliquot 1µL EcoRV-HF working solution into the bottom of each labeled 0.5mL microcentrifuge tube",
+    "Transfer 5µL mtORF amplicons to each 0.5mL tube. Always double check that you are adding the correct sample to the correct tube",
+    "Flick each tube gently to mix. Spin down tubes in mini spinner",
+    "Incubate all tubes at 37ºC for 60 minutes , then 65ºC for 20 minutes",
+    "If possible, visualize digests immediately on gel. Otherwise, store in fridge"
+  ],
+  "authors": [
+    "Jordan Sims",
+    "Francesca Cohn"
+  ],
+  "creator": "Jordan Sims",
+  "published_on": 1778562974,
+  "created_on": 1777408822,
+  "keywords": []
+}

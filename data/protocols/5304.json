@@ -1,0 +1,22 @@
+{
+  "id": 5304,
+  "title": "Golden Gate Primer Design",
+  "uri": "golden-gate-primer-design-heyb3fw",
+  "doi": "dx.doi.org/10.17504/protocols.io.heyb3fw",
+  "description": "{\"blocks\":[{\"key\":\"2bq28\",\"text\":\"An easy to follow template for adding Golden Gate adapters to PCR primers. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"3ln8k\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"c5c1d\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"6n89\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Template to make PCR fragments to assemble 2 inserts and a vector by Golden Gate Amplify each piece with an additional 16 bases on each primer: N5-BsaI-N-U4-primer. Note “primer” refers to the part of the oligo that hybridizes to the template during the first round of PCR. The easiest way we came up with for how to add the sequences in the correct orientation was first to annotate primer positions on the target sequence and then to look at the sequence as “top-strand”. Adding sequence to the forward primer is straight forward (just add the 16 bases to the 5&#39; end of the primer sequence). To create the correct additions to the oligo for the reverse primer, add the 16 nt specified in the template below to the downstream end of the sequence for the primer as it would look on the top strand of the DNA sequence (i.e. not the actual primer sequence that is ordered, but its equivalent location on the top strand). Then simply use a sequence manipulation program such as “sequence massager” ( http://www.attotron.com/cybertory/analysis/seqMassager.htm) to calculate the reverse complement of the entire sequence (primer+16 nt) and order sequence as the reverse primer to use in PCR. (see color version and the end of this step) Insert1-primerF: 5&#39;-atcgaGGTCTCaATGG-Fprimer Insert1-primerR (top strand): 5’-topstrandRprimer-GAAGtGAGACCagctc MAKE SURE TO ORDER REVERSE-COMPLEMENT OF Insert1-primerR(topstrand) above Insert2-primerF: 5&#39;-tgcacGGTCTCaGAAG-Fprimer Insert2-primerR (top strand): 5’-topstrandRprimer-ACCTaGAGACCgctca MAKE SURE TO ORDER REVERSE-COMPLEMENT OF Insert2-primerR(topstrand) above VECTOR-primerF (has 3 rd position junction)- 5&#39;-cagtcGGTCTCaACCT-Fprimer VECTOR-primerR (has 1 st position junction)(topstrand): 5’-topstrandRprimer-ATGGtGAGACCactca MAKE SURE TO ORDER REVERSE-COMPLEMENT OF Vector-primerR(topstrand) above a",
+    "Caption: Regions of the target gene (e.g. Gus in this example) were amplified using primers containing adapter sequences for Golden Gate assembly. The numbers (e.g. yellow “1”, orange “2”, and green “3”) indicate unique 4-nt overhangs created during Golden Gate that allow for the correct order of assembly. a"
+  ],
+  "authors": [
+    "Philip D. Weyman"
+  ],
+  "creator": "Philip D Weyman",
+  "published_on": 1490725865,
+  "created_on": 1490317132,
+  "keywords": []
+}

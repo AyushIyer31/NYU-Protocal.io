@@ -1,0 +1,31 @@
+{
+  "id": 99196,
+  "title": "Intracellular and extracellular MHC-II immunostaining and microscopy on peritoneal macrophages",
+  "uri": "intracellular-and-extracellular-mhc-ii-immunostain-dc442yyw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l62191gqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"h2s4\",\"text\":\"Staining of intracellular and extracellular MHCII in peritoneal macrophages in 96 well plate using EVOS fluorescent microscope and analysis on CellProfiler\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "After harvesting and plating pMacs from mouse, plate in 96-well plate at 50,000 cells/well in 200uL as described in pMac harvesing protocol. Once cells have adhered, aspirate media and replace with fresh growth media containing vehicle or 100U of IFNy for 18",
+    "Retrieve cells from 37 degrees. Aspirate media and wash 3x DPBS+/+",
+    "Incubate cells with 25 ug/mL of APC-MHC-II (Biolegend, RRID:AB_313329) in DPBS+/+ containing 1:100 FcR blocking reagent, final volume 50uL, for 30 minutes at room temperature, protected from light",
+    "Wash cells 3 x DPBS+/+",
+    "fix cells by incubation in 4% PFA for 10 minutes at room temperature, final volume of PFA 50uL, and then washed 3x with DPBS+/+",
+    "Permeabilize cells with 100uL permeabilization buffer (eBiosciences, #88-8824-00) on ice for 15 minutes",
+    "Spike in 25ug/mL of PE-610-MHC-II (Biolegend, RRID:AB_2574618) into permeabilization buffer and incubate cells for 30 minutes at room temperature protected from light.",
+    "Wash cells 3 x DPBS+/+",
+    "Incubate cells in 1 μg/ml DAPI (Invitrogen, RRID:AB_2629482) for 10 minutes at room temperature in DPBS+/+, final volume 50uL.",
+    "Image cells on an EVOS‱ M7000 (Invitrogen) at 20 x magnification.",
+    "Perform image analysis using Cellprofiler 4.2.5 (RRID:SCR_007358). Using the ‘IdentifyPrimaryObject’ module in Cellprofiler, identify icMHC and exMHC in their respective channels and quantify MFI and calculate Ex:IcMHCII from these quantified MFI values."
+  ],
+  "authors": [
+    "Rebecca Wallings"
+  ],
+  "creator": "Rebecca Wallings",
+  "published_on": 1714778227,
+  "created_on": 1714743808,
+  "keywords": []
+}

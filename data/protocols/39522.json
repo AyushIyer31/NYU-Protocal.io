@@ -1,0 +1,36 @@
+{
+  "id": 39522,
+  "title": "Converting microscopy image data and metadata with Microfile+",
+  "uri": "converting-microscopy-image-data-and-metadata-with-biuakese",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"4oumk\",\"text\":\"Enrich the metadata and FAIRness of microscopy image data by converting into OME-TIFF and/or JPEG2000 format with Microfile+. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "MicroFile+ is a free tool compatible with Windows workstations. Download and install Microfile+ by going to https://www.mbfbioscience.com/microfileplus . Once installed, launch the MicroFile+ application. MicroFile+ (RRID: SCR_018724) MBF Bioscience",
+    "Select Convert image(s) . Images can be converted from image to image, series to image, many channels to multichannel, and serie. The appropriate type of conversion will be image data dependent.",
+    "In the Save Format section, select Both to save images as JPEG2000 and OME-TIFF. Investigators are encouraged to convert SPARC source image data as JPEG2000 and OME-TIFF formats. The JPX format is a compressed, web streamable version of the source microscopy image data. The OME-TIFF version complies with FAIR data standards by providing a version of the source image that can be viewed by anyone using free tools such as the ImageJ viewer. Both image formats conserve the original metadata from the source image file and enable enrichment of additional metadata to the converted versions.",
+    "For JPEG2000 Compression , select Lossy and enter 40:1 compression. OME-TIFF data is always written using lossless compression (and therefore no selection is available for compression for this format). Because the images in each experiment could be acquired with different imaging devices, cameras, or objectives, the resolution of the images may be different. For each experiment, an appropriate compression level will need to be selected to ensure the compressed JPX images do not contain any artifacts. Artifacts caused by image compression will be most visible in regions of gradient transitions. The original image is likely to have crisp lines at these junctions where the compressed image versions will have a smaller range of color available to represent the gradients. Transitions will appear more pixelated and blurry. This can be severe for some images, making the compressed version uninformative and unrepresentative of the source image. The compression will need to be scaled back for images within that experiment.",
+    "In Advanced options, ensure Enforce required metadata is checked. For SPARC conversions, it is necessary to ensure the required metadata values are provided: Image Name Channel Target Label Pixel size in micrometers in X, Y, and Z Compression",
+    "Click Next .",
+    "Load the original image file(s) into the converter by either a) clicking on the Load files or drag and drop files below button in the upper left corner and browsing to the file or b) dragging and dropping the file(s) into the image selection panel. The image file and conversion result information will populate the table for each file loaded into the converter.",
+    "Select an image from the file list and click Show Metadata to open the metadata generation window.",
+    "Metadata conserved from the original file will populate automatically. To add metadata that is missing or change metadata, either a) input the information manually or b) create an Experiment preset that can be selected and applied (see Step 10.1 for more information). Metadata is collected and/or added for fields pertaining to the channel(s), device/camera, image, information, objective, and photomultiplier tube (PMT). See definitions for each image metadata element in the Image Metadata Glossary . Enable the Show all editable fields checkbox to view all fields that may have metadata written to them.",
+    "Experiment presets can be created for images with consistent microscope hardware and channel metadata. If this metadata is not included in the source data, it can be added to a set of images with this batch process instead of subjecting users to adding it by hand to hundreds of images.",
+    "When adding or editing an experiment preset, information input includes the information below: This information is aligned with the metadata fields described in the Image Metadata Glossary.",
+    "To create a metadata preset for a set of images select the experiment + button . To edit the currently selected preset, select the pencil button and to delete the currently selected preset, select the X button. New experiment presets should be created for each set of images with differing microscope hardware, channel settings, etc.",
+    "Enable the Apply to missing fields only checkbox to apply an experiment preset only to metadata fields that are missing. If the Apply to missing fields only checkbox is disabled, applying an experiment preset will overwrite any conserved image metadata. Select the Apply to current image button to apply an experiment preset to the current image conversion. Select the Apply to all images button to apply an experiment preset to all image conversions. To reset the metadata inputs back to what was populated from the original file, click the Reset to Original button.",
+    "Use the save button in the conversion results column to change the save location of the selected converted image from the default location. Use the Select output directory for all files button in the upper right corner to change the save location for all converted images from the default location.",
+    "Click Convert to initiate the conversion process.",
+    "A screenshot of example metadata fields in Microfile+ for the example image are below:"
+  ],
+  "authors": [
+    "Maci Heal"
+  ],
+  "creator": "Amanda Raymond",
+  "published_on": 1613597462,
+  "created_on": 1595335196,
+  "keywords": []
+}

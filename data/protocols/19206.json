@@ -1,0 +1,34 @@
+{
+  "id": 19206,
+  "title": "Simulating colonic tissue mechanics using a structure-based material model in Abaqus",
+  "uri": "simulating-colonic-tissue-mechanics-using-a-struct-wzeff3e",
+  "doi": "dx.doi.org/10.17504/protocols.io.wzeff3e",
+  "description": "{\"blocks\":[{\"key\":\"6pq0\",\"text\":\"The structure-based material constitutive model typically used for the colon tissue (DOI:10.1016/j.jmbbm.2017.08.031, DOI:10.1016/j.jmbbm.2013.02.016) is not readily available in the Finite Element software Abaqus, which is commonly used for biomechanical simuations. In this protocol, we provide step-by-step guidelines to use such material model in Abaqus using the User Subroutine implemented by the autor.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"b9hbv\",\"text\":\"This protocol has been tested with Abaqus 6.13.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"2knks\",\"text\":\"This protocols assume that you have Abaqus installed along with appropriate software to run Abaqus User Subroutines (e.g., see this document)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":123,\"length\":17}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"4E7FA8E0190911E98F255DE07E2ECB2C\",\"url\":\"http://imechanica.org/files/Writing%20User%20Subroutines%20with%20ABAQUS_0.pdf\"}}}}",
+  "warning": "{\"blocks\":[{\"key\":\"edi8r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Once your model setup is completed (geometry definition, orientation assigment, meshing, etc.), go to the &#34;Job&#34; module and click on &#34;Create Job&#34;.",
+    "The structure-based material constitutive model typically proposed for the colon is shown below. The values of your material parameters C_10, k1_l, k2_l, k1_s, and k2_s (pre-determined from mechanical testing or gathered from pre-published work) must be specified in the input file. To do so, open the input file with any text editor (e.g. Notepad).",
+    "Enter &#34;UANISO_HGO&#34; for the name of the material in the &#34;Edit Material&#34; dialog box that opens, and select General --&gt;User Material.",
+    "Click &#34;OK&#34; and assign the material to the desired sections of your model, as you would typically do with any material property.",
+    "Go the the &#34;Property&#34; module of Abaqus and click on &#34;Create Material&#34;.",
+    "Give a job name (e.g., MyJob) and select &#34;Continue&#34;, then &#34;OK&#34; in the next dialog box.",
+    "Your job should be now listed in the &#34;Job Manager&#34; dialog box. Select it and click &#34;Write Input&#34;. An input file (MyJob.inp) must have been created in your Work Directory.",
+    "Go to the MATERIALS section of the file. You shoud see the material UANISO_HGO (defined in step 2) listed here.",
+    "Specify the value of material parameters material parameters by entering the following lines below the name of the material (copy/past this and replace material parameter names by the desired values): *Anisotropic Hyperelastic, user, formulation=INVARIANT, type=INCOMPRESSIBLE, local direction=3, properties=8 C_10, 0., k1_s., k2_s, 0., k1_l, k2_l, 0.",
+    "Go back to the &#34;Job&#34; module of Abaqus and create a new job.",
+    "Select &#34;Input file&#34; under &#34;Source&#34; and browse to the location of your input file then click &#34;Continue&#34;.",
+    "Save the input file and close it.",
+    "Go to the &#34;General&#34; tab of the new dialog box &#34;Edit Job&#34;. Under &#34;User subroutine file&#34;, browse to the file &#34;uanisohyper_inv_colon.for&#34;. Complete any other specification you may want to include and click &#34;OK&#34;.",
+    "You can now select your job from the &#34;Job Manager&#34; dialog box and click on &#34;Submit&#34; to run your simulation."
+  ],
+  "authors": [
+    "Bhavesh Patel"
+  ],
+  "creator": "Bhavesh Patel",
+  "published_on": 1578688716,
+  "created_on": 1547168704,
+  "keywords": []
+}

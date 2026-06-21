@@ -1,0 +1,33 @@
+{
+  "id": 94352,
+  "title": "Detection of seeded pathology using tyramide amplification",
+  "uri": "detection-of-seeded-pathology-using-tyramide-ampli-c8dqzs5w",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl8pzzdg2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"e4vds\",\"text\":\"This protocol details the detection of seed pathology using tyramide amplification.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"ra78\",\"text\":\"TBST:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":5}],\"entityRanges\":[],\"data\":{}},{\"key\":\"f9re3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"be0lk\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"f90ep\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"88rk8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d3m1l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"IMMUTABLE\",\"data\":{\"cellsMeta\":{},\"colTitles\":[\"\",\"\"],\"colWidths\":[100,100],\"data\":[[\"Tris-HCl pH 7.4\",\"20 mM\"],[\"NaCl\",\"150 mM\"],[\"Triton X 100\",\"0.05%\"]],\"guid\":\"A1B2E41D7CD646CB9F39B0BF2F5AC8DA\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"Tris-HCl pH 7.4\",\"20 mM\"],[\"NaCl\",\"150 mM\"],[\"Triton X 100\",\"0.05%\"]],\"rowHeights\":[23,23,23]}}}}",
+  "steps": [
+    "Mount the fixed floating 40-micron sections onto gelatin-coated slides and dry at Room temperature Overnight .",
+    "Rehydrate the slides in TBST (refer materials section) and digest with proteinase K (PK, 20 μg/ml ) diluted in TBST for 00:20:00 at 37 °C .",
+    "Place the slides in blocking buffer (TBST, 3% bovine serum albumin, 2% goat serum) for 01:00:00 and then incubate it Overnight at 4 °C in blocking buffer containing anti-PSER129 antibody EP1536Y (Abcam) diluted 1:50,000.",
+    "Next day, wash the slides 3 times in TBST and incubate with biotinylated anti-rabbit antibody (Vector Labs) diluted 1:400 in blocking buffer for 01:00:00 .",
+    "Wash the slides 3 times in TBST and incubate with avidin-biotin complex (ABC) reagent (Vector labs) diluted in blocking buffer for 01:00:00 .",
+    "Wash the slides twice with borate buffer 0.1 M Sodium tetraborate pH 8.5 ) and incubate in borate buffer containing 0.003% hydrogen peroxide and 5 micromolar (µM) biotinyl tyramide (Sigma-Aldrich) for 00:30:00 .",
+    "Wash the slides 3 times in TBST and incubate with ABC reagent for 01:00:00 .",
+    "Heating the slides for 00:30:00 at 80 °C in 20 millimolar (mM) citrate buffer pH 6.0 before ABC reagent can increase detection sensitivity.",
+    "Wash the slides in TBST and develop using nickel-enhanced 3,3&#39;-Diaminobenzidine DAB as previously described (refer references section).",
+    "Counterstain the slides with methylgreen (Sigma), dehydrate with graded alcohols, clear with xylenes, and cover the slides using cover slipps with cytoseal 60 (Fisher Scientific).",
+    "Perform the Brightfield microscopy using Nikon A1 laser scanning microscope.",
+    "Perform the density analysis including binary masks and region of interest (ROI) analyses using Elements software (Nikon).",
+    "Fix the slides in 4% paraformaldehyde for 00:20:00 , rinse 3 times in TBST, and incubate with 3% hydrogen peroxide for 00:30:00 to quench endogenous peroxidases."
+  ],
+  "authors": [
+    "Bryan Killinger"
+  ],
+  "creator": "Bryan Killinger",
+  "published_on": 1706564118,
+  "created_on": 1705385192,
+  "keywords": []
+}

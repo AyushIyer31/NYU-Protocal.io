@@ -1,0 +1,26 @@
+{
+  "id": 5640,
+  "title": "Method for finite element analysis for speculum and speculum-alternative devices",
+  "uri": "method-for-finite-element-analysis-for-speculum-an-hrgb53w",
+  "doi": "dx.doi.org/10.17504/protocols.io.hrgb53w",
+  "description": "{\"blocks\":[{\"key\":\"a5kbk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"e20vc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"9u4aq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"1stm1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Save prototype CAD as a single part file. In SolidWorks this is saved as a .prt file. If the prototype is an assembly of parts, save the entire assembly as a single immovable .prt file.",
+    "In SolidWorks, with the part file open, click on simulation-&gt;study-&gt;static.",
+    "Apply material to the body of the part file. To apply material right click on the part and then click on “Apply material to all bodies”. Materials used for prototypes described in the paper are listed in the table. %s %s",
+    "A fixed geometry boundary is applied to the bottom face and edges of the device by right clicking in fixtures-&gt;fixed geometry-&gt; select bottom surface device. For the speculum fixed boundary conditions are applied to the handle.",
+    "Apply pressure to the external surface of the prototype in contact with the vaginal muscle. External loads-&gt;Pressure-&gt;Normal to selected face enter pressure value.",
+    "Apply mesh to part and run the analysis.",
+    "Look at results showing factor of safety plots distributed over the device and record minimum factor of safety (FOS).",
+    "a a) 3D computer aided design (CAD) of the curved-tip inserter prototype. b) Results from finite element analysis showing applied pressure (red arrows), fixed boundary conditions (green arrows) and the factor of safety plot over the device."
+  ],
+  "authors": [],
+  "creator": "Mercy Asiedu",
+  "published_on": 1496340430,
+  "created_on": 1493143190,
+  "keywords": []
+}

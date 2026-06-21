@@ -1,0 +1,31 @@
+{
+  "id": 4673,
+  "title": "AQUA cloning",
+  "uri": "aqua-cloning-gs9bwh6",
+  "doi": "dx.doi.org/10.17504/protocols.io.gs9bwh6",
+  "description": "{\"blocks\":[{\"key\":\"7teer\",\"text\":\"Protocol for seamless, scarless, homology-based cloning of vectors using an enzyme-free technique. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"62d09\",\"text\":\"The method was published by Zurbriggen et al., 2015, doi: 10.1371/journal.pone.0137652\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":58,\"length\":28}],\"data\":[]},{\"key\":\"7h1t9\",\"text\":\"It relies on the endogenous homologous recombination machinery of E. coli lab strains.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":66,\"length\":7}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"3179AE78577147AFAD3C29FB5305F0AC\",\"url\":\"https://dx.doi.org/10.1371%2Fjournal.pone.0137652\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"af3j3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"al8bp\",\"text\":\"Make sure to recover high concentrations of fragments.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"6eccl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"dVGgT\",\"text\":\"STEP MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"7tz3p\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"ddHyo\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":470,\"guid\":\"4101772A341F11EE9D4302C0B41BC903\",\"name\":\"NEB 5-alpha Competent E.coli (High Efficiency) - 20x0.05 ml\",\"mol_weight\":0,\"sku\":\"C2987H\",\"url\":\"https://www.neb.com/C2987\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":470,\"guid\":\"4101772A341F11EE9D4302C0B41BC903\",\"name\":\"NEB 5-alpha Competent E.coli (High Efficiency) - 20x0.05 ml\",\"mol_weight\":0,\"sku\":\"C2987H\",\"url\":\"https://www.neb.com/C2987\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "%s %s",
+    "Primer design for assembly-based cloning by Anna Behle",
+    "Create PCR products of all the fragments that are to be assembled, using the appropriate primers. Homologous overhangs should range between 16 and 32 bp.",
+    "Optional when using pSHDY or other large backbone: Digest backbone using appropriate restriction enzymes. ( Note: AQUA assembly using digested backbone is less efficient.)",
+    "Gel-extract PCR and backbone fragments using the Nucleo-Spin kit. Make sure to recover high amounts. ( Note: PCR clean-up alone is insufficient due to backbone templates yielding false positives. )",
+    "In a 10 to 15 µL reaction, mix fragments with molar ratios of 3:1 (insert:vector) or more for 2-fragment assembly or equimolar ratios for 3 or more fragments.",
+    "Incubate reaction at RT for 1 hour. 01:00:00",
+    "Transform appropriate reaction volume into chemically competent DH5α cells. (Note: Best results are achieved using commercially available competent .) NEB 5-alpha Competent E.coli (High Efficiency) - 20x0.05 ml New England Biolabs Catalog #C2987H",
+    "Centrifuge transformation mix at 2500 rpm for 2 minutes. Remove supernatant; resuspend pellet in 100 µL LB. Plate entire amount of cells on LB-plate containing appropriate antibiotics. Incubate over night at 37 °C. 00:02:00",
+    "Test clones using restriction analysis or colony PCR. ( Note: For colony PCR, use primers that amplify a region spanning two assembled fragments to avoid false positives. )"
+  ],
+  "authors": [
+    "Anna Behle",
+    " Nicolas Schmelling"
+  ],
+  "creator": "Anna Behle",
+  "published_on": 1482158178,
+  "created_on": 1482141128,
+  "keywords": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": 39339,
+  "title": "Characterization",
+  "uri": "characterization-binjkdcn",
+  "doi": "",
+  "description": "",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"e341m\",\"text\":\"pH buffer preparing(in 15 ml centrifuge tubes):\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"da1gn\",\"text\":\"pH2: 5 ml ddH2O, 8.8 ul 35% HCl, 37.5 mg KCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dg9eg\",\"text\":\"pH5: 5 ml ddH2O, 20.8 ul 99.7% CH3COOH, 162 ul 3M CH3COOK, 31 ul 10N NaOH\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"d8pim\",\"text\":\"pH7: 5 ml RIPA buffer, 1.5 ul 35%HCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3ievi\",\"text\":\"pH8: 5 ml RIPA buffer, 1 ul 10N NaOH\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"85dd5\",\"text\":\"pH10: 5 ml ddH2O, 0.0147 g NaHCO3, 8.8 ul NaOH\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9c0nt\",\"text\":\"pH12: 5 ml ddH2O, 32.4 ul 10N NaOH, 0.06 g KCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"b4u7g\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Add the reagents(on ice) for synthesis of mRFP into one well of the 384-well plate. Add the reagents from top to down. %s %s Do triple repeat Pipetting Solution A, Solution B, RNase inhibitor before adding. Pipetting the eppendorf contain RFP+terminator template to prevent precipitation.",
+    "Seal the plate with microseal (on ice).",
+    "Centrifuge 4000 rpm, 4 °C, 1 minute",
+    "Plate type: 384 well plate Select wells: At run time Description: 1.Temperature 37 °C",
+    "Put the plate into plate reader. Incubate the mixture and measure the fluorescence in plate reader follow Setup 1 for 02:00:00",
+    "Take the 384 well plate out of the plate reader.",
+    "Apportion 5 μL of mRFP reagent into 18 well. Pipetting before apportion. We actually add 4 μL into every well since we think it may evaporate.",
+    "Add pH2,5,7,8,10,12 Buffer solution respectively into different wells of mRFP till total volume of 100 μL. Do triple repeat. Pipetting after adding buffer solution",
+    "Plate type: 384 well plate",
+    "Temperature: 37 °C",
+    "Excitation start: 550nm, Stop: 620 nm Fixed emission: 650 nm Step: by 1 nm Gain: Auto Gain (measured with selected wells)",
+    "Emission start: 550nm, Stop: 700 nm Fixed excitation: 540nm Step: by 1 nm Gain: Auto Gain (measured with selected wells)",
+    "Measure the fluorescence excitation and emission intensity of mRFP",
+    "Centrifuge 4000 rpm, 4 °C, 1 minute",
+    "Centrifuge 4000 rpm, 4 °C, 1 minute",
+    "Seal the well.",
+    "Remove its seal."
+  ],
+  "authors": [
+    "Cheng-Ruei Yang",
+    "Huan Jui Chang",
+    "iGEM-CSMU"
+  ],
+  "creator": "Cheng-Ruei Yang",
+  "published_on": 1602417753,
+  "created_on": 1594904648,
+  "keywords": []
+}

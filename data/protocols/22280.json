@@ -1,0 +1,32 @@
+{
+  "id": 22280,
+  "title": "Spectral photogrammetry protocol",
+  "uri": "spectral-photogrammetry-protocol-zzgf73w",
+  "doi": "dx.doi.org/10.17504/protocols.io.zzgf73w",
+  "description": "{\"blocks\":[{\"key\":\"bgqe1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"58q5s\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"1f3va\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"42mhf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Place de specimen at the center of the turntable with scales, photogrammetry marker and MSI calibration card (CHSOS).",
+    "Setup the correct exposure for each wavelenght and verify that the exposure is correct in spectrashoot using the MSI calibration card. Adjust exposure until the specimen is correctly lit.",
+    "Setup lamp and camera distance. Place the camera at approximately 30°.",
+    "Start capturing: for one specimen position capture at all the 15 wavelengths + white light. Then add the UV-pass filter and capture pictures in the UV wavelengths (UVR). Next place the UV-cut off filter and capture picture for each UV wavelengths (UVF). Pictures should be capturated in raw format.",
+    "Rotate the turntable of 10° and repeat step 4. Do this for the complete rotation.",
+    "Move the camera at an angle of 60° at the approximately the same distance than previously and repeat the operation for the complete rotation.",
+    "If necessary turn the specimen and repeat the process for as many rotation/views as necessary.",
+    "Separate the wavelengths in different folders.",
+    "Open Agisoft Photoscan and create a chunk for each wavelengths (rename the chunks accordingly). Import the pictures.",
+    "Go to workflow &gt; batch process and add the following step: align pictures (highest), build dense cloud (high), build mesh (high).",
+    "Repeat the processing 3 times to make sure the results are reliable.",
+    "If the results are reliable, export the models as .stl for surface analysis."
+  ],
+  "authors": [
+    "Aurore Mathys"
+  ],
+  "creator": "Aurore Mathys",
+  "published_on": 1565798762,
+  "created_on": 1554976487,
+  "keywords": []
+}

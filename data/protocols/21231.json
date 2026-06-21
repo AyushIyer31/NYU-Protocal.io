@@ -1,0 +1,35 @@
+{
+  "id": 21231,
+  "title": "Vandy – Body Composition in conscious mice",
+  "uri": "vandy-body-composition-in-conscious-mice-yypfxvn",
+  "doi": "dx.doi.org/10.17504/protocols.io.yypfxvn",
+  "description": "{\"blocks\":[{\"key\":\"4nis4\",\"text\":\"Summary:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fbgtm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fc7pt\",\"text\":\"The minispec Body Composition Analyzer is based on Time Domain NMR. It acquires and analyzes TD-NMR signals from all protons in the entire sample volume and can provide 3 components of interest: Fat, Free Body Fluid and Lean Tissue values. Bruker's minispec  Body Composition Analyzer provides a precise method for measurement of lean tissue, fat and fluid in living mice. TD-NMR uses NMR technology, providing analysis of fat tissue, lean tissue and free fluid by the same physical selection rules that give rise to contrast in MRI. Tissue contrast is high between fat and muscle based on relative relaxation times. This Magnetic Resonance technology provides our users with the opportunity to make multiple measurements during the life of the animal with the following benefits: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8ukaf\",\"text\":\" ♦  Rapid analysis: measurement takes less than 2 minutes, no sample preparation \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1oq6c\",\"text\":\" ♦  Economical procedures: no consumables, retain expensive lab animals for entire study \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"arpk6\",\"text\":\" ♦  Reduced animal stress: no need for anesthetics; animals are measured \\\"as-is\\\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dnn4q\",\"text\":\" ♦  Allows more frequent testing, due to reduction of risks to animal health \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1hukg\",\"text\":\" ♦  Better accuracy and precision compared to DEXA (X-ray) method \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"5nshq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"cjemb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"5015n\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"uX0YV\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"cgnl6\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"dQPSm\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":181672,\"guid\":\"41A8C0E3341F11EE9D4302C0B41BC903\",\"name\":\"Scale (for body weight measurement) \",\"mol_weight\":0,\"sku\":\"\",\"url\":\"http://None\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":181673,\"guid\":\"41A8C137341F11EE9D4302C0B41BC903\",\"name\":\"LF50 Body Composition Mice Analyzer \",\"mol_weight\":0,\"sku\":\"E1400005_01\",\"url\":\"https://www.bruker.com/products/mr/td-nmr/minispec-lf-series.html\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":458,\"name\":\"Bruker\",\"link\":\"https://www.bruker.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Open the Minispec software. (If a popup window appears about Opus, click OK. The window should temporarily show the Opus software, then switch back to Minispec.)",
+    "Log in with user name and password (provided by MMPC staff).",
+    "Click on &#34;Measure&#34; .",
+    "If prompted, do the Daily Check with the Daily Check Sample.",
+    "Enter a Sample Batch name or choose one from the dropdown menu (will add new samples to the existing Batch). The Sample Batch identifies a group of samples. This can be today’s date, a mouse line, a project, your name... You can add samples to a Batch at any point in the future.",
+    "Calibration name : select the calibration file in the drop down menu (only one choice).",
+    "Sample name : enter the sample name (must start with a letter, no dash, underscore ok).",
+    "Comment: can be used to type in mouse body weight or any comment about the sample. Tip: enter body weight without any letters, and the software will calculate % Fat and % Lean in the final results file.",
+    "Weigh your mouse and place it in the body comp clear plastic tube. Place plunger above the mouse.",
+    "Place the tube in the Mini Spec Body Composition Analyzer.",
+    "Click on &#34;Measure&#34; .",
+    "Once measurement is done (~2min), the sample appears in the list in the bottom left. You can remove the mouse and place it back in its cage.",
+    "Click on &#34;Next Sample&#34; (bottom left), and enter new Sample name. Repeat Steps 7-12.",
+    "Once you are done, click on &#34;View Results&#34; (bottom left), then &#34;Export to Excel&#34; . Save your data on the desktop and exit the software. Transfer your data file to your flashdrive.",
+    "Wash the tube and plunger in Sterilant solution, rinse with water and set to dry."
+  ],
+  "authors": [
+    "Louise Lantier"
+  ],
+  "creator": "Lili Liang",
+  "published_on": 1558014944,
+  "created_on": 1552074340,
+  "keywords": []
+}

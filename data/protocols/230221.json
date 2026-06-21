@@ -1,0 +1,37 @@
+{
+  "id": 230221,
+  "title": "Expression, purification, and characterization of CtVPS13(1-635) with calmodulin",
+  "uri": "expression-purification-and-characterization-of-ct-hc3mb2yk7",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewov11m17vr2/v1",
+  "description": "{\"blocks\":[{\"key\":\"6koq7\",\"text\":\"VPS13C is a ER-lysosome contact site protein that is thought to transport lipids between the two organellar membranes and important for lysosomal membrane damage repair. We employed structure-function analysis of purified VPS13C and uncovered novel regulatory mechanisms. This protocol describes the purification of a fragment of VPS13 from Chaetomium thermophilum (Ct) from bacteria, which can only be achieved when co-expressed with calmodulin (or likely, calmodulin-like proteins). This suggests the significance of calmodulin (or calmodulin-like protein) to the folding of VPS13 family of proteins.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":341,\"length\":29}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"dqlnh\",\"text\":\"BL21(De3) pLys cells (Cat. #200132, Agilent)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c1icf\",\"text\":\"IPTG (Cat. #I56000, RPI)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3v9ai\",\"text\":\"imidazole (Cat. #56750, Sigma Aldrich)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"99kgb\",\"text\":\"Talon metal affinity Resin (Cat. #635502, Takara)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Transform pETDuet-6xHis-Strep- Ct VPS13(1–635) or pETDuet-6xHis-Strep- Ct VPS13(1–635)-6xHis-HsCaM into homemade BL21(DE3) pLys cells. Note that the later construct has VPS13 fragment in the first ORF and CaM in the second ORF.",
+    "Harvest cells and resuspend in 20 mL buffer A (500 mM NaCl, 50 mM HEPES, pH 7.8, 10% glycerol, 1 mM TCEP) supplemented with 1× protease inhibitor cocktail and 5 mM imidazole.",
+    "Grow 1 L LB culture to OD600 = 0.8, induce with 0.5 mM IPTG, and continue expression at 18 °C for 16:00:00 .",
+    "Lyse cells by passing the suspension five times through an Avestin EmulsiFlex-C5 at 7,500 psi.",
+    "Wash the resin with 50 column volumes of buffer A containing 20 mM imidazole.",
+    "Incubate the supernatant with 100 μL Talon metal affinity resin for 00:30:00 at 4 °C with rotation.",
+    "Clarify the lysate by centrifugation at 36,945 × g for 00:30:00 at 4 °C in a JA-20 rotor.",
+    "Elute the protein with buffer A containing 300 mM imidazole in 1 mL fractions, incubating the resin for 00:05:00 during each elution.",
+    "Analyze the purified protein by negative-stain electron microscopy. 2D classification of picked particles in CryoSPARC revealed homogeneous class averages, consistent with a tube-like dimeric assembly of the Ct VPS13 fragment predicted by AlphaFold.",
+    "Analyze the eluates on SDS-PAGE. The Ct VPS13 fragment is only soluble and purifiable in the presence of calmodulin.",
+    "Analyze the purified protein by size-exclusion chromatography (SEC) on a Superose 6 Increase column equilibrated with buffer A.",
+    "Analyze the fractions from SEC on SDS-PAGE. The Ct VPS13 fragment forms a 1:1 complex with calmodulin and elutes as a peak consistent with a dimeric complex.",
+    "Optional: Tandem Strep purification to remove free calmodulin. Because both the His-tagged CtVPS13 fragment and His-tagged free calmodulin were captured by Talon resin.",
+    "Incubate the Talon eluate with 50 μL Strep-Tactin XT 4Flow high-capacity resin for 02:00:00 at 4 °C .",
+    "Wash the resin three times with 15 mL buffer A.",
+    "Elute bound protein three times with 50 μL buffer A supplemented with 50 mM D-biotin, incubating for 00:20:00 for each elution."
+  ],
+  "authors": [
+    "Dazhi Li",
+    "Karin Reinisch"
+  ],
+  "creator": "Dazhi Li",
+  "published_on": 1780434172,
+  "created_on": 1760901655,
+  "keywords": []
+}

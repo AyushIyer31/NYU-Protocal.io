@@ -1,0 +1,29 @@
+{
+  "id": 229827,
+  "title": "JAX-Sen: Watchmaker RNA Library Prep Kits with Polaris Depletion",
+  "uri": "jax-sen-watchmaker-rna-library-prep-kits-with-pola-hcpbb2vip",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egnrybzl5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"aotp2\",\"text\":\"This protocol describes the library preparation using the RNA Library Prep Kit with Polaris Depletion protocol followed by sequencing on the Illumina NovaSeq X-Plus platform using patterned flow cells and two-color chemistry. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Sequencing: Sequencing was performed on the Illumina NovaSeq X-Plus platform using patterned flow cells and two-color chemistry (green and blue channels). Libraries were sequenced on either a 10B or 25B flow cell, each containing eight lanes. Runs were carried out with 300-cycle kits, which include an additional 38 cycles for index reads. The expected yield per lane is approximately 1,250 million reads on a 10B flow cell and 3,250 million reads on a 25B flow cell.",
+    "Instruments: Qubit Flex Fluorometer, Thermo Fisher Scientific TapeStation 4200, Agilent Technologies Thermal Cycler, Bio-Rad NovaSeq X-Plus, Illumina",
+    "The concentration and integrity of RNA and sequencing libraries were assessed using the Qubit Flex Fluorometer (Thermo Fisher Scientific) and the Agilent TapeStation 4200 (Agilent Technologies).",
+    "Library preparation: RNA-Seq libraries were prepared using the RNA Library Prep Kit with Polaris Depletion (Watchmaker, Cat# 7BK0002-096) following a modified version of the manufacturer’s protocol ( Watchmaker protocol ). Modifications included the addition of ERCC spike-in to each sample, a 0.8× bead clean-up after ligation, and a 0.7× bead clean-up after PCR amplification. Indexes used were Illumina xGen‱ UDI-UMI Adapters, 1-96 (10005903) and special orders from IDT."
+  ],
+  "authors": [
+    "Yongjun Huang",
+    "Chrystal Snow",
+    "Jenn Idol",
+    "Qingchang Meng",
+    "Chew Yee Ngan",
+    "Mark Adams"
+  ],
+  "creator": "Harshpreet Chandok",
+  "published_on": 1762901020,
+  "created_on": 1760472253,
+  "keywords": []
+}

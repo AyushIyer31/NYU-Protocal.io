@@ -1,0 +1,29 @@
+{
+  "id": 94399,
+  "title": "Acute Extracellular Multi-unit Recordings and Optotagging",
+  "uri": "acute-extracellular-multi-unit-recordings-and-opto-c8e7zthn",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn3qd6l5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"1kifk\",\"text\":\"This protocol details acute extracellular multi-unit recordings and optotagging in mice. Preparation involves setting up recording systems and optogenetic equipment. The mouse is anesthetized, placed in a stereotaxic frame, and subjected to a craniotomy for electrode placement. A multielectrode probe, combined with an optic fiber, is inserted into the target brain area. Optotagging involves light stimulation, monitored for effectiveness. Post-recording, the probe is removed and cleaned, and the mouse receives careful post-operative care to ensure recovery.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"aea2c\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"55a3g\",\"text\":\"Adjustments to anesthetics, analgesics, and surgical techniques should be made based on the specific requirements of the experiment and the condition of the animal.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8f125\",\"text\":\"The specific parameters for optotagging (light intensity, duration, etc.) should be determined based on experimental design and optogenetic constructs used.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"48hdl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"61rt3\",\"text\":\"Ensure that all procedures are conducted in accordance with institutional and ethical guidelines for animal research.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aea2\",\"text\":\"This protocol is a general guide and should be adapted to fit the specific requirements of your experimental setup and the guidelines of your research institution.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Set up a clean surgical area. Ensure all surgical tools and the multielectrode silicone probe are sterilized.",
+    "Induce anesthesia in the mouse using the isofluorane induction box. Once anesthetized, place the animal in the stereotaxic frame and maintain the isofluorane nose-cone to the appropriate level . Confirm the depth of anesthesia by checking for the absence of toe-pinch reflex. Administer analgesics (Rimadyl) as per standard procedure to minimize pain.",
+    "Shave and clean the scalp. Make a midline incision to expose the skull. Identify the target area for electrode placement using stereotaxic coordinates (for VTA A/P 3.25, L/M 0.5). Perform a craniotomy above the target area, ensuring minimal damage to the dura",
+    "Mount the multielectrode silicone probe on the micromanipulator. Attach the optic fiber to the probe assy and secure it with tape . (We are using Cambridge Neurotech probes ASSY-77 H10 64 electrodes connect to ADPT A64-Om32x2 and two Omnetics pre-amplifier link ) Neurotech H10 probe (see website) We utilize an Open Ephys Acquisition Board along with an ITAN headstage and OpenEphys acquisition software.. Connect the multielectrode probe to the recording system. Carefully lower the probe towards the brain surface, aligning with the craniotomy opening. Gradually lower the probe into the brain to the desired target depth (for VTA z = -4.0). Monitor the process to avoid any sudden movements or damage.",
+    "Activate the light source according to your optotagging protocol (PulsePal (OpenEphys link ) on a CNI MRL_III laser) If necessary, vary the light intensity, duration, and frequency based on experimental requirements. It is recommended to use any online PSTH viewer to be aware of the stimulation outcome. Open Ephys PSTH viewer works fine. Monitor the signals for quality and stability.",
+    "Before bringing the mouse to the surgery/recording room: Prepare the recording system and the optogenetic stimulation equipment accordingly with your experimental design(e.g., lasers and pulse generator). Make sure of your laser power requirements and check the transmittance of your optic fiber.",
+    "Once recordings are complete, carefully retract the probe from the brain. Thoroughly and carefully clean the probe with distilled water and let it incubate for 1 hour in Pronase solution. Then rinse with distilled water and inspect the probe under the microscope.",
+    "Place the mouse in a warm, clean environment to recover from anesthesia. Monitor the mouse for any signs of pain, distress, or surgical complications. Provide necessary post-operative care as per ethical guidelines."
+  ],
+  "authors": [
+    "Cristian González-Cabrera",
+    "Matthias Prigge"
+  ],
+  "creator": "Team Prigge",
+  "published_on": 1706689825,
+  "created_on": 1706622634,
+  "keywords": []
+}

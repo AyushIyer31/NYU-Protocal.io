@@ -1,0 +1,34 @@
+{
+  "id": 99507,
+  "title": "dSTORM of actin in fixed HeLa cells",
+  "uri": "dstorm-of-actin-in-fixed-hela-cells-ddet23en",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g714j8gwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"8g6sq\",\"text\":\"This is a protocol for the preparation of a HeLa DTS cells for dSTORM imaging of the actin network. This protocol was used to generate the data shown in Figure 4 of the following publication:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":153,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3saor\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5274g\",\"text\":\"Bruggeman et al., POLCAM: Instant molecular orientation microscopy for the life sciences. bioRxiv 2023.02.07.527479 (Feb 2023), doi: https://doi.org/10.1101/2023.02.07.527479\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":133,\"length\":41}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"7834AB490E1611EFA8B90A58A9FEAC02\",\"url\":\"https://doi.org/10.1101/2023.02.07.527479\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "HeLa TDS cells were cultured in DMEM (Gibco, Invitrogen) supplemented with 10 % Fetal Bovine Serum (FBS, Life Technologies), 1 % penicillin/streptomycin (Life Technologies), and 1 % glutamine (Life Technologies) at 37 °C + 5 % CO 2 .",
+    "Cells were periodically tested for mycoplasma contamination and passaged 3 times per week.",
+    "Cells were plated at low density on high-precision glass coverslips (MatTek, P35G-0.170-14-C) 1 day prior to fixation for dSTORM experiments.",
+    "Simultaneously fix and permeabilize the cells in cytoskeleton buffer (CBS, 10 mM MES, 138 mM KCl, 3 mM MgCl 2 , 2 mM EGTA, 4.5 % sucrose w/v, pH 7.4) + 4 % paraformaldehyde (PFA) and 0.2 % Triton for 00:06:00 at 37 °C",
+    "Wash the cells 3 times in PBST (PBS supplemented with 0.1 % Tween).",
+    "Wash the cells 3 times in PBST.",
+    "Incubate the cells with Alexa Fluor‱ 488 Phalloidin (A12379, Invitrogen, 1:50 in PBS) for 01:00:00 in the dark.",
+    "Prior to dSTORM imaging, replace the PBS with dSTORM imaging buffer (base buffer consisting of 0.56 M glucose, 50 mM Tris (pH 8.5), and 10 mM NaCl supplemented with 5 U/mL pyranose oxidase (Sigma, P4234), 10 mM cysteamine (Sigma, 30070), 40 µg/mL catalase (Sigma, C100) and 2 mM cyclooctatetraene (Sigma, 138924).",
+    "Further fix the cells in CBS + 4 % PFA for 14 Mass Percent at 37 °C .",
+    "Permeabilize a second time in PBS + 0.5 % Triton for 00:05:00 at Room temperature .",
+    "Blocked the cells for 00:30:00 in 5 % BSA.",
+    "Wash the cells 3 times in PBST.",
+    "Wash the cells 3 times in PBS."
+  ],
+  "authors": [
+    "Ezra Bruggeman",
+    "ruby peters"
+  ],
+  "creator": "Ezra Bruggeman",
+  "published_on": 1715268008,
+  "created_on": 1715266980,
+  "keywords": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": 94556,
+  "title": "EMCCD Gain and Offset Calibration ",
+  "uri": "emccd-gain-and-offset-calibration-c8j4zuqw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx3dpdg8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"7j69o\",\"text\":\"EMCCD Gain and Offset Calibration\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Place a lens tissue on the sample stage above the objective lens to serve as a diffuser.",
+    "Acquire brightfield mode images from the microscope with a 100ms exposure time, capturing at least 500 frames consecutively under no light. Ensure EM Gain is off.",
+    "Repeat step 2 with increasing exposure times (at least 5 times, including step 2).",
+    "Save the images taken under different exposure times in the &#39;camera_calibration&#39; folder in .tif format and prefix the file names with &#39;exposure_&#39;. For instance, the first image captured under no light should be named &#39;0_filename&#39;, and the second image taken with slightly increasing exposure should be named &#39;1_filename&#39;.",
+    "Acquire brightfield mode images from the microscope with a 100ms exposure time, capturing at least 500 frames consecutively under no light. Ensure EM Gain is set to the setting of interest ( e.g. 250).",
+    "Repeat step 2 with increasing exposure times (at least 5 times, including step 2). Ensure no pixels are above/at saturation.",
+    "Save the images taken under different exposure times in the &#39;camera_calibration_EMGain_N&#39; folder in .tif format and prefix the file names with &#39;exposure_&#39;. For instance, the first image captured under no light should be named &#39;0_filename&#39;, and the second image taken with slightly increasing exposure should be named &#39;1_filename&#39;.",
+    "Use the GDSC-SMLM plugin for imageJ to calculate gain at no gain, (&#34;Mean-Variance Test&#34;) to calculate camera gain.Then, using this gain parameter, use the &#34;Mean-Variance Test (EM-CCD)&#34; function to calculate the overall game and offset."
+  ],
+  "authors": [
+    "Joseph S Beckwith"
+  ],
+  "creator": "Joseph S Beckwith",
+  "published_on": 1706803572,
+  "created_on": 1706797533,
+  "keywords": []
+}

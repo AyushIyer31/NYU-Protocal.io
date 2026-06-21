@@ -1,0 +1,32 @@
+{
+  "id": 48073,
+  "title": "LC-MS/MS Label-Free Proteomic Data Acquisition",
+  "uri": "lc-ms-ms-label-free-proteomic-data-acquisition-bs7hnhj6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bs7hnhj6",
+  "description": "{\"blocks\":[{\"key\":\"chpe\",\"text\":\"Description of settings used to acquire LC-MS/MS data from label-free proteomic samples.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"823hs\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Label-free proteomic samples were analyzed on a Thermo Scientific Orbitrap Fusion Tribrid mass spectrometer in line with an EvoSep One HPLC system.",
+    "Samples,1 µL at a 1 µg/µL, were loaded onto EvoTips and diluted with 19 µL of mobile phase A (100% water, 0.1% formic acid). Samples were processed on tip according to the manufacturer&#39;s recommended protocol. EvoTips were placed onto the EvoSep One, and samples were eluted from the EvoTips onto a Dr. Maisch C18 AQ, 100 micron inner diameter, 15 cm long column with 3 micron particles (EV1074) and analyzed using the 30 sample per day method settings.",
+    "Peptides were separated at a flow rate of 500nL/min over a 44 minute gradient according to the 30 samples/day settings. Mobile phase A was 100% water, 0.1% formic acid, and mobile phase B was 100% acetonitrile, 0.1% formic acid.",
+    "Eluted peptides were ionized via positive mode nanoelectrospray ionization (nESI) using a Nanospray Flex ion source (Thermo Fisher Scientific).",
+    "The mass spectrometer was operated using a top 12 data-dependent acquisition mode.",
+    "Fourier transform mass spectra (FTMS) were collected using 60,000 resolving power, an automated gain control (AGC) target of 1e 6 , and a maximum injection time of 50 ms over the mass range of 375-1500 m/z .",
+    "Precursor ions were filtered using monoisotopic precursor selection of peptide ions with charge states ranging from 2 to 6. Previously interrogated precursor ions were excluded using a 30 s dynamic window (± 10 ppm).",
+    "Precursor ions for tandem mass spectrometry (MS/MS) analysis were isolated using a 1.2 m/z quadrupole mass filter window and then fragmented in the ion-routing multipole via higher energy dissociation (HCD) using a normalized collision energy of 35%.",
+    "Ion trap fragmentation spectra were acquired using an AGC target of 10,000 and maximum injection time of 60 ms, and 120 m/z was set for the first scan mass to enable detection of the lysine residue fragmented ion."
+  ],
+  "authors": [
+    "Danielle Gutierrez",
+    "Jamie Allen",
+    "Zach Jenkins",
+    "Jeff Spraggins"
+  ],
+  "creator": "Jamie Allen",
+  "published_on": 1615403591,
+  "created_on": 1615397105,
+  "keywords": []
+}

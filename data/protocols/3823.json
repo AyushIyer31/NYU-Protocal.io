@@ -1,0 +1,27 @@
+{
+  "id": 3823,
+  "title": "Replacing a Bitstream at the Woods Hole Open Access Server",
+  "uri": "replacing-a-bitstream-at-the-woods-hole-open-acces-fypbpvn",
+  "doi": "dx.doi.org/10.17504/protocols.io.fypbpvn",
+  "description": "{\"blocks\":[{\"key\":\"77otj\",\"text\":\"Describes how to update files at the Woods Hole Open Access Server - the institutional repository used by BCO-DMO for dataset versioning.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"c1qfo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"dskem\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"fafik\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Login to WHOAS at: http://darchive.mblwhoilibrary.org/password-login",
+    "Navigate to the Item that needs a file replaced.",
+    "Click &#39;Create Version of this Item&#39; from the left-hand sidebar",
+    "Unknown step(s) go here.",
+    "Find the corresponding Archive record in OSPREY.",
+    "Click the associated Data File Descriptor for the file being replaced. Then, click &#39;Edit&#39; for the Data File Descriptor.",
+    "Update the checksum, filesize, and resolvable URL fields: Go to http://lod.bco-dmo.org/browse-library/ Run the following query, substituting the DOI from the Archive in the query below SELECT DISTINCT ?resource ?bitstream ?checksum ?filesize_in_bytes WHERE { ?resource &lt;http://purl.org/ontology/bibo/doi&gt; &#34;DOI goes here&#34; . ?resource dspace:hasBitstream ?bitstream . ?bitstream dspace:checksum ?checksum . ?bitstream dspace:size ?filesize_in_bytes .} ORDER BY ?bitstream Copy the checksum, filesize, and bitstream link from the row corresponding of the updated file. In OSPREY, editing the Data File Descriptor, Update the checksum value and filesize value for the Data File Descriptor, Replace the Resolvable URL with btistream link. Replace the &#39;rdf/resource&#39; portion of the link to &#39;bitstream&#39;(e.g.: https://darchive.mblwhoilibrary.org/rdf/resource/1912/8144/10/ISO19115-2.xml becomes https://darchive.mblwhoilibrary.org/bitstream/1912/8144/10/ISO19115-2.xml) Test the newly created bitstream link to ensure it downloads the new file. Click &#39;Save&#39; SELECT DISTINCT ?resource ?bitstream ?checksum ?filesize_in_bytesWHERE {?resource SELECT DISTINCT ?resource ?bitstream ?checksum ?filesize_in_bytes WHERE { ?resource &#34;DOI goes here&#34; . ?resource dspace:hasBitstream ?bitstream . ?bitstream dspace:checksum ?checksum . ?bitstream dspace:size ?filesize_in_bytes . } ORDER BY ?bitstream"
+  ],
+  "authors": [
+    "Adam Shepherd"
+  ],
+  "creator": "Adam Shepherd",
+  "published_on": 1475591382,
+  "created_on": 1475527566,
+  "keywords": []
+}

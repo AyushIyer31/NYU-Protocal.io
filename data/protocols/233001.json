@@ -1,0 +1,38 @@
+{
+  "id": 233001,
+  "title": "Synaptic vesicle preparation from mouse brain",
+  "uri": "synaptic-vesicle-preparation-from-mouse-brain-hfshb3nb7",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlkyqndg5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"2ss8g\",\"text\":\"This protocol describes the preparation and purification of synaptic vesicles (SVs) from the brains of mice. Brain tissue is homogenized in sucrose-based SHT buffer, followed by sequential centrifugation steps to obtain the LP2 fraction. Synaptic vesicles are subsequently purified by glycerol gradient centrifugation, and SV-enriched fractions are collected for downstream biochemical analyses. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"36jh4\",\"text\":\"Sucrose (≥99.5%) (Sigma-Aldrich)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"bpn97\",\"text\":\"Mg-EGTA\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"44s2f\",\"text\":\"HEPES-Tris, pH 7.4\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"d45s0\",\"text\":\"cOmplete‱ Protease Inhibitor Cocktail (11836153001, Roche)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":1,\"length\":57}],\"entityRanges\":[{\"key\":0,\"offset\":8,\"length\":1}],\"data\":{}},{\"key\":\"8jggt\",\"text\":\"EGTA\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":4}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5dqn8\",\"text\":\"MgCl₂\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":5}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fg450\",\"text\":\"Glycerol (molecular biology grade)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"275un\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2aito\",\"text\":\"Buffers\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"d4oi4\",\"text\":\"SHT buffer: 0.3 M sucrose, 1 mM Mg-EGTA, 10 mM HEPES-Tris, pH 7.4\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":12}],\"entityRanges\":[],\"data\":{}},{\"key\":\"2nf5v\",\"text\":\"Osmotic lysis buffer: 8 mM HEPES-Tris, pH 7.4\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":22}],\"entityRanges\":[],\"data\":{}},{\"key\":\"db706\",\"text\":\"Glycerol gradient buffer (5–25%): 150 mM NaCl, 10 mM HEPES-Tris (pH 7.4), 1 mM EGTA, 0.1 mM MgCl₂, 5–25% (v/v) glycerol (formed as a continuous gradient)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":34}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"43C73A10DF6C11F086EB0A58A9FEAC02\",\"name\":\":tm:\"}}}}",
+  "steps": [
+    "Dissect mouse brains and place them in ice-cold SHT buffer supplemented with protease inhibitor.",
+    "Homogenize the tissue in 10 mL SHT buffer using a glass–Teflon homogenizer ( 9 strokes at 900 rpm).",
+    "Centrifuge homogenate at 871 × g, 10 min, 4°C . Collect the supernatant (S1).",
+    "Centrifuge S1 at 12,000 × g, 15 min, 4°C to obtain the P2 pellet (crude synaptosomes).",
+    "Resuspend the P2 pellet in SHT buffer and centrifuge at 14,500 × g, 15 min, 4°C . Discard the supernatant",
+    "Centrifuge the lysate at 32,500 × g, 20 min, 4°C to obtain supernatant LS1.",
+    "Resuspend the pellet in 8 mM HEPES-Tris (pH 7.4) and incubate on ice for 45 min to induce osmotic lysis.",
+    "Homogenize briefly to complete disruption using a glass–Teflon homogenizer (five strokes at 3,000 rpm) .",
+    "Centrifuge LS1 at 280,000 × g, 2 h, 4°C to obtain the LP2 pellet.",
+    "Resuspend the LP2 pellet in SHT buffer diluted to 40 mM sucrose (prepared by diluting standard SHT buffer: 0.3 M sucrose, 1 mM Mg-EGTA, 10 mM HEPES-Tris, pH 7.4).",
+    "Aliquot the resuspended LP2, flash-freeze in liquid nitrogen, and store at –80°C .",
+    "Resuspention a. Use a 200 μL pipette tip cut at ~1/4 from the distal end and pipette up and down 100 times . b. Switch to a 200 μL tip cut at ~1/8 from the distal end and pipette 100 times . c. Finally, use a standard (uncut) 200 μL tip and pipette 100 times to complete resuspension.",
+    "Prepare a 5–25% glycerol gradient using the glycerol gradient buffer using a gradient maker to form a continuous gradient.",
+    "Layer the LP2 sample onto the gradient.",
+    "Centrifuge at 270,000 × g for 1 h 4 min at 4°C .",
+    "Collect 0.5 mL fractions from the top using a gradient fractionator or connected fraction collector, ensuring smooth and continuous recovery of the gradient.",
+    "Use fractions 5–12, which usually contain purified synaptic vesicles, for subsequent experiments."
+  ],
+  "authors": [
+    "Akio Mori",
+    "Robert Edwards"
+  ],
+  "creator": "Akio Mori",
+  "published_on": 1767997448,
+  "created_on": 1763604035,
+  "keywords": []
+}

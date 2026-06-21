@@ -1,0 +1,37 @@
+{
+  "id": 97105,
+  "title": "USDA LTAR Common Experiment measurement: Total phosphorus (TP) and total dissolved phosphorus (TDP) concentration",
+  "uri": "usda-ltar-common-experiment-measurement-total-phos-da3r2gm6",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv5r7m6g1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"2a6ah\",\"text\":\"Total dissolved P (TDP) includes organic P (e.g., sugars and phospholipids) and orthophosphate. Dissolved orthophosphate (also termed soluble reactive P, dissolved reactive P, dissolved inorganic P, or filterable reactive P) is the form of P most readily available to algae and aquatic plants; however, numerous studies have shown that hydrolysis of other forms of P to the orthophosphate form is possible in natural waters. Therefore, when assessing the long-term potential for accelerated eutrophication of surface water due to P loading, many researchers and watershed managers want to know the total P concentration (regardless of P form) in water samples. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4u6j9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bo1g4\",\"text\":\"Total dissolved P determination involves digesting filtered water samples to convert organic P species to orthophosphate, followed by colorimetric analysis or analysis by inductively coupled plasma with optical emission spectroscopy (ICP-OES). Determining TP involves the same digestion procedure applied to an unfiltered sample, followed by colorimetric or ICP-OES analysis. The recommended P digestion method is the persulfate oxidation technique, performed using an autoclave or microwave. The colorimetric determination of TDP and TP follows the ascorbic acid “blue” method (USEPA, 1978), whereby an intensely colored blue complex forms from the reaction between P compounds and ascorbic acid. The procedure involves the reaction of ammonium molybdate and potassium antimonyl tartrate with orthophosphate to form an antimony-phospho-molybdate complex. This complex is then reduced to an intensely blue-colored complex by addition of ascorbic acid. The intensity of the blue complex is proportional to the orthophosphate concentration in the sample.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"gjec\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"8t5ic\",\"text\":\"Appropriate safety, health, and environmental precautions must be followed based on the selected methods, instrumentation, and workflow. Laboratory supervisors are responsible for knowledge of these precautions and their implementation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5t43j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ba8t8\",\"text\":\"Review the USDA LTAR Common Experiment measurement: Best practices for collection, handling, and analyses of water quality measurements protocol (Pisani et al., 2024) prior to implementing this protocol.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":11,\"length\":125}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Return samples to the laboratory On ice and filter them on collection day if possible.",
+    "To measure TDP, filter samples through a 0.45 µm pore size filter to remove particulates before chemical analysis.",
+    "If desired, use a 0.22 µm filter to more completely remove the microbial community.",
+    "Unless analysis is possible on sample collection day, it is required to store samples at 4 °C for up to 28 days.",
+    "The common practice is to store water samples for TDP or TP analyses until data certification (QA/QC verification).",
+    "To determine total P (TP = dissolved P + particulate P), shake an unfiltered sample to suspend the particulate matter before removing a subsample for digestion.",
+    "Polyphosphates and phosphates bound to organic substances do not react with the molybdate reagent used for colorimetric P analysis, and colorimetric analysis cannot directly measure particulate P. Therefore, analysis of the total P content of water samples requires that all condensed and organic P compounds, including particulate P, first be converted (hydrolyzed) to orthophosphate to be determined colorimetrically or by ICP-OES (USEPA, 1994). To accomplish this conversion, samples are digested with persulfate at high temperature and pressure, normally using either an autoclave or microwave (USEPA,1994; Maher and Woo 1998). A laboratory pressure cooker can be used as well to oxidize the organic matter and release P as orthophosphate.",
+    "After digestion, TDP and TP are determined colorimetrically using the ascorbic acid method (APHA, 2005) or by ICP-OES. Figure 1. Colorimetric determination of TDP and TP follows the ascorbic acid “blue” method. Photo credit: S. Rahutomo, Iowa State University. Figure 2. Inductively coupled plasma—optical emission spectrometer (ICP-OES) with an autosampler to determine TP and TDP concentrations in the digestate. Photo credit: A. Morrow, USDA-ARS.",
+    "Dissolved NO 3 - concentration Dissolved NH 3 concentration Total dissolved N (TDN) Total N (TN) Total suspended solids (TSS)",
+    "Prepare a calibration curve by plotting the area of each standard peak against its respective P concentration. Correction of standards and samples for the blank is necessary; assuming virtually P-free deionized or distilled water, the reagents and especially potassium persulfate are usually the source of most of the blank absorbance. P concentration = unfiltered digested sample TDP concentration = filtered digested sample",
+    "Compute the TDP or TP concentration in the sample by comparing the sample peak area to the calibration curve. Report the concentration as mg P per liter (mg/L).",
+    "Table 1. Summary of recommendations for the collection and measurement of TP and TDP concentration. %s %s"
+  ],
+  "authors": [
+    "Stephen K. Hamilton",
+    "Oliva Pisani",
+    "John L. Kovar",
+    "Robert W. Malone",
+    "Amy J. Morrow",
+    "Kevin J. Cole"
+  ],
+  "creator": "Lori J. Abendroth",
+  "published_on": 1725738345,
+  "created_on": 1708508602,
+  "keywords": []
+}

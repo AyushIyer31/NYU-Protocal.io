@@ -1,0 +1,34 @@
+{
+  "id": 317477,
+  "title": "In solution digestion DRAFT",
+  "uri": "in-solution-digestion-draft-j2adcqaa7",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"bi065\",\"text\":\"In solution digestion draft\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"88efa\",\"text\":\"Perform all steps at   .\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":21,\"length\":1}],\"data\":{}},{\"key\":\"a7e3v\",\"text\":\"Prepare denaturation buffer freshly on the day of the experiment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"temperature\",\"mutability\":\"MUTABLE\",\"data\":{\"error_temperature\":false,\"guid\":\"\",\"id\":0,\"label\":\"\",\"scientificNotation\":false,\"temperature\":\"\",\"unit\":32}}}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"e3erf\",\"text\":\"In this procedure all steps are done at    to reduce unwanted denaturization of amino acid side-chains by denaturing agents. Never heat your sample.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":125,\"length\":23}],\"entityRanges\":[{\"key\":0,\"offset\":40,\"length\":1}],\"data\":{}},{\"key\":\"crdhs\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"temperature\",\"mutability\":\"MUTABLE\",\"data\":{\"error_temperature\":false,\"guid\":\"\",\"id\":0,\"label\":\"\",\"scientificNotation\":false,\"temperature\":\"\",\"unit\":32}}}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"eeaor\",\"text\":\"Buffers:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5sb64\",\"text\":\"Denaturation buffer: 8M urea in 50 mM ABC (ammonium bicarbonate)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9pqm9\",\"text\":\"Digestion buffer: 50 mM ABC in water, pH 8. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9fgr7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5bc19\",\"text\":\"Reagents: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3muhn\",\"text\":\"DTT: 1 M  in 50 mM ABC.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"61a5s\",\"text\":\"IAA: 1M in 50 mM ABC\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c8sat\",\"text\":\"Formic acid\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8311j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8ns70\",\"text\":\"Enzymes:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"bnu96\",\"text\":\"Lys-C: 1 µg/µL stock solution\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2ih45\",\"text\":\"Trypsin: 1 µg/µL stock solution\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Make a working solution of DTT (100mM from 1M) Add DTT to a final concentration of 10 mM and incubate for 30 min at 22 °C. Shake at 1200 rpm.",
+    "Thaw cell pellet on ice",
+    "Add 500 µL denaturation buffer to the cell pellet and resuspend thoroughly. If the pellet is not fully solubilised or remains highly viscous, increase the volume up to 1 mL total.",
+    "Make a working solution of IAA (100mM from 1M) Add IAA to a final concentration of 20 mM and incubate for 30 minutes at 22 °C in the dark. Shake at 1200 rpm.",
+    "No Lys-C added for initial optimisation. Incubate sample for 4 h at 22 °C with shaking at 1200 rpm",
+    "Dilute the sample by adding 4x volumes of digestion buffer to reduce urea concentration prior to trypsin digestion.",
+    "Resuspend trypsin vial in 20 µL 0.1% TFA and 80 µL ABC to generate a 0.2 µg/µL trypsin solution. Add 5 µL trypsin solution (~1 µg trypsin) per sample. Incubate overnight at 37°C. Incubate overnight at 37 °C",
+    "Add formic acid to a final concentration of 1% to quench digestion",
+    "Centrifuge briefly to pellet insoluble material and transfer the peptide-containing supernatant to a new tube",
+    "Proceed to load the sample onto equilibrated C18 StageTips (samples can stay in the fridge until the tips are equilibrated)",
+    "Disrupt the cells with vigorous pipetting",
+    "Centrifuge at high speed to clarify the lysate (5,000 × g, 22 °C, 5 min) and transfer the supernatant to a new tube",
+    "Centrifuge lysate at 16,000 rcf, 10 min, 4°C to pellet insoluble debris and transfer the supernatant to a new tube.",
+    "Determine protein concentration using the BCA assay. Prepare 1:10 and 1:20 lysate dilutions and use the dilution that falls within the reliable range of the BSA standard curve. Calculate the volume of lysate required for 30 µg protein input."
+  ],
+  "authors": [
+    "Cristina CARDENAL PERALTA"
+  ],
+  "creator": "Amber Minhas",
+  "published_on": 1779341423,
+  "created_on": 1779213088,
+  "keywords": []
+}

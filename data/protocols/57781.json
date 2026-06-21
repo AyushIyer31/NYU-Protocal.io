@@ -1,0 +1,36 @@
+{
+  "id": 57781,
+  "title": "Amplifying the target genomic region by PCR",
+  "uri": "amplifying-the-target-genomic-region-by-pcr-b4nvqve6",
+  "doi": "dx.doi.org/10.17504/protocols.io.b4nvqve6",
+  "description": "{\"blocks\":[{\"key\":\"5us05\",\"text\":\"This protocol describes a procedure for amplifying targeted genomic regions using a PCR reaction\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cga6p\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"8kup0\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8ri0d\",\"text\":\"     Item      Vendor      Catalog #        DMEM/F12      Thermo   Fisher      11320082        DPBS   w/o Calcium and magnesium      Corning      MT21031CV        Newborn Calf Serum      Sigma      N4762        Penicillin \\u0026 Streptomycin   (100X)      Thermo   Fisher      15140163        0.25% Trypsin with EDTA      Thermo   Fisher      25200114        dNTP      NEB      N0447L        10xHF buffer      NEB      B0518S        Phusion DNA polymerase      NEB      M0530S        Wizard   SV Gel and PCR clean-up system      Promega      A9301        AMPure   XP beads alternative      UC   Berkeley               Microseal® 'B' Adhesive Seals      Biorad      MSB1001        Proteinase K      Sigma      P6556   \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":712}],\"data\":{}},{\"key\":\"5cckd\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3sbpe\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"abptc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4jtai\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"0_2\":\"\",\"10_0\":\"\",\"10_1\":\"\",\"10_2\":\"\",\"11_0\":\"\",\"11_1\":\"\",\"11_2\":\"\",\"12_0\":\"\",\"12_1\":\"\",\"12_2\":\"\",\"1_0\":\"\",\"1_1\":\"\",\"1_2\":\"\",\"2_0\":\"\",\"2_1\":\"\",\"2_2\":\"\",\"3_0\":\"\",\"3_1\":\"\",\"3_2\":\"\",\"4_0\":\"\",\"4_1\":\"\",\"4_2\":\"\",\"5_0\":\"\",\"5_1\":\"\",\"5_2\":\"\",\"6_0\":\"\",\"6_1\":\"\",\"6_2\":\"\",\"7_0\":\"\",\"7_1\":\"\",\"7_2\":\"\",\"8_0\":\"\",\"8_1\":\"\",\"8_2\":\"\",\"9_0\":\"\",\"9_1\":\"\",\"9_2\":\"\"},\"colTitles\":[\"Item\",\"Vendor\",\"Catalog #\"],\"colWidths\":[155,155,155],\"data\":[[\"  dNTP  \",\"  NEB  \",\"  N0447L  \"],[\"  10x HF buffer  \",\"  NEB  \",\"  B0518S  \"],[\"  Phusion DNA polymerase  \",\"  NEB  \",\"  M0530S  \"],[\"  Microseal® 'B' Adhesive Seals  \",\"  Biorad  \",\"  MSB1001  \"],[\"96-well PCR plate\",\"GeneMate\",\"T-3152-1\"]],\"guid\":\"2FE7B7F57CD611EC897E0A58A9FEAC02\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"  dNTP  \",\"  NEB  \",\"  N0447L  \"],[\"  10x HF buffer  \",\"  NEB  \",\"  B0518S  \"],[\"  Phusion DNA polymerase  \",\"  NEB  \",\"  M0530S  \"],[\"  Microseal® 'B' Adhesive Seals  \",\"  Biorad  \",\"  MSB1001  \"],[\"96-well PCR plate\",\"GeneMate\",\"T-3152-1\"]],\"rowHeights\":[23,23,23,23,23]}}}}",
+  "steps": [
+    "For a 150bp paired-end or single-read sequencing experiment, design primers in a way that the region of interest, like CRISPR cutting site or specific mutations, locates within 130bp from at least one of the primers",
+    "Add NGS adapters to 5’ end of primers following the instructions of your local NGS facility",
+    "20 µl PCR reaction for each sample",
+    "PCR Reaction - setup %s %s Ultrapure H2O 10.6µl 5x HF buffer 4µl 2.5mM dNTP 1.6µl 10uM primer Forward 0.5µl 10uM primer Reverse 0.5µl DMSO 0.6µl Titan DNA polymerase or Phusion 0.2µl Crude cell lysis 2µl",
+    "Calculate the amount of each component needed for all samples, also count a negative control and positive control",
+    "In a pre-PCR area, mix all components except the crude cell lysate to a microcentrifuge tube or a 15 ml conical tube to make master mix",
+    "Aliquot 18 µl to each 200 µl microcentrifuge tube or each well in a 96-well PCR plate. Use reservoir and multi-channel pipet if there are many samples.",
+    "Add 2 µl crude cell lysate to the reaction. In one reaction, use 2 µl H2O instead as negative control. In another reaction, use 2 µl previously validated crude cell lysate as positive control.",
+    "Cap the tubes or seal the plates properly with an adhesive seal.",
+    "Shake the tubes or plates vigorously to mix",
+    "Briefly spin the samples",
+    "Use the following touch-down PCR protocol in a thermocycler",
+    "Touch-down PCR protocol %s %s 98C 3min 98C 30s 70C (touch down, 1C/cycle) 30s 72C 30s Go to 2 12 cycles in total 98C 30s 58C 30s 72C 30s Go to 6 23 cycles in total 72C 7min 4C or 12C forever"
+  ],
+  "authors": [
+    "Hanqin Li",
+    "Yogendra Verma",
+    "Dirk Hockemeyer",
+    "Frank Soldner"
+  ],
+  "creator": "Hanqin Li",
+  "published_on": 1662479865,
+  "created_on": 1643919374,
+  "keywords": []
+}

@@ -1,0 +1,38 @@
+{
+  "id": 41462,
+  "title": "R editing of HMMSEARCH output: heatmap with associated with gene tree and protein illustration",
+  "uri": "r-editing-of-hmmsearch-output-heatmap-with-associa-bkqwkvxe",
+  "doi": "dx.doi.org/10.17504/protocols.io.bkqwkvxe",
+  "description": "{\"blocks\":[{\"key\":\"4p7t0\",\"text\":\"R codes used for phyml tree and profile HMM heatmap visualization, protein domain illustration\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"1hgko\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"3is8r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "#libraries for tree drawing library(ggtree) library(ape) library(phytools) #libraries for heatmap library(reshape2) library(dplyr) library(ggplot2) library(aplot)",
+    "#rooting tree #midpoint rooted tree tree2 &lt;- midpoint.root(tree1) #rooted by outgroup samples tree2 &lt;- root(Mtree.outgroup=c(&#34;outgroup1&#34;, &#34;outgroup2&#34;), resolve.root=T) #check tree2 ggtree(tree2)",
+    "#read Newick format tree tree1 &lt;- read.tree(&#34;tree.nhx&#34;) #check tree1 ggtree(tree1)",
+    "#read data for grouping dat &lt;- read.csv(file=&#34;data.csv&#34;, header=T, na.strings=c(&#34;&#34;,&#34;-&#34;)) dat2 &lt;- data.frame(dat$group,dat$protein_ID) dat2 &lt;- dat2[!duplicated(dat2$dat.protein_ID),] colnames(dat2) &lt;- c(&#34;group&#34;,&#34;protein_ID&#34;) #import groups chlorophytes &lt;- subset(dat2,dat2$group==&#34;chlorophytes&#34;) charophytes &lt;- subset(dat2,dat2$group==&#34;charophytes&#34;) liverworts&lt;- subset(dat2,dat2$group==&#34;liverworts&#34;) mosses&lt;- subset(dat2,dat2$group==&#34;mosses&#34;) lycophytes&lt;- subset(dat2,dat2$group==&#34;lycophytes&#34;) gymnosperms&lt;- subset(dat2,dat2$group==&#34;gymnosperms&#34;) angiosperms&lt;- subset(dat2,dat2$group==&#34;angiosperms&#34;) monocots&lt;- subset(dat2,dat2$group==&#34;monocots&#34;) eudicots&lt;- subset(dat2,dat2$group==&#34;eudicots&#34;) cls &lt;- list(a.chrolophytes=chlorophytes$protein_ID, b.charophytes=charophytes$protein_ID, c.liverworts=liverworts$protein_ID, d.mosses=mosses$protein_ID, e.lycophytes=lycophytes$protein_ID, f.gymnosperms=gymnosperms$protein_ID, g.angiosperms=angiosperms$protein_ID, h.monocots=monocots$protein_ID, i.eudicots=eudicots$protein_ID)",
+    "#add group to tree tree3 &lt;- groupOTU(tree2,cls)",
+    "#only includes support values &gt; 0.7 q &lt;- ggtree(tree3) d &lt;- q$data d &lt;- d[!d$isTip,] d$label &lt;- as.numeric(d$label) d &lt;- d[d$label &gt; 0.7,] #tree drawing obj &lt;- ggtree(tree3) + aes(color=group) + scale_color_manual(values=c(&#34;deepskyblue&#34;,&#34;green&#34;,&#34;seagreen&#34;,&#34;seagreen4&#34;, &#34;orange2&#34;,&#34;chocolate4&#34;,&#34;red&#34;,&#34;blue&#34;,&#34;gray40&#34;)) + geom_tiplab(size=6) + geom_text(data=d,aes(label=label,hjust=1.5,vjust=-0.5,size=6)) ggsave(&#34;strongsupport.tree.pdf&#34;,obj,width=60, height=90,limitsize=FALSE) #done",
+    "#tree drawing obj &lt;- ggtree(tree3) + aes(color=group) + scale_color_manual(values=c(&#34;deepskyblue&#34;,&#34;green&#34;,&#34;seagreen&#34;, &#34;seagreen4&#34;,&#34;orange2&#34;,&#34;chocolate4&#34;,&#34;red&#34;,&#34;blue&#34;,&#34;gray40&#34;)) + geom_tiplab() + geom_text2(aes(subset=!isTip,label=label,hjust=1.5,vjust=-0.5)) ggsave(&#34;all_support_value.tree.pdf&#34;,obj, width=30, height=50, limitsize=FALSE)",
+    "#libraries library(reshape2) library(dplyr) library(ggplot2) library(aplot)",
+    "#generate data frame from &#34;dat&#34; dat3 &lt;- data.frame(dat$protein_ID,dat$hmm_name,dat$i.Evalue) colnames(dat3) &lt;- c(&#34;protein_ID&#34;,&#34;hmm_name&#34;,&#34;i.Evalue&#34;) #remove duplicate, &#34;i.Evalue&#34; is ordered in the ascending manner dat4 &lt;- dat3[!duplicated(dat3[1:2]),] #make table of i.Evalue, ordered by protein_ID and hmm_hame dat5 &lt;- dcast(dat4,dat4$protein_ID ~ dat4$hmm_name) #format for ggtree dat6 &lt;- melt(dat5) colnames(dat6) &lt;- c(&#34;protein_ID&#34;,&#34;hmm_name&#34;,&#34;i.Evalue&#34;)",
+    "#order of domain, by preference domorder &lt;- c(&#34;PLAC8&#34;,&#34;MCAfunc&#34;,&#34;DUF2985&#34;,&#34;Pkinase_Tyr&#34;,&#34;UDPGT&#34;, &#34;WI12&#34;,&#34;WRKY&#34;) dat7 &lt;- dat6 %&gt;% mutate(hmm_name=factor(hmm_name,levels=domorder),ordered=TRUE) #dat7 is the data for heatmap",
+    "#drawing obj2 &lt;- ggtree(tree2) + geom_tiplab(align = TRUE,size=0) hm &lt;- ggplot(dat7, aes(x=hmm_name,y=protein_ID)) + geom_tile(aes(fill=i.Evalue),color=&#34;gray50&#34;) + scale_fill_gradient(low=&#34;blue&#34;,high=&#34;yellow&#34;,na.value=&#34;gray80&#34;,limits=c(0,0.001)) + scale_x_discrete(expand=c(1,0)) + theme_tree2(axis.text.x=element_text(angle=70,vjust=0.5,hjust=0.5,size=8), axis.text.y=element_text(size=8)) obj3 &lt;- hm %&gt;% insert_left(obj2) ggsave(&#34;heatmap.pdf&#34;,obj3,width=10,height=50,limitsize=FALSE) #done",
+    "tree2 #tree data dat7 #heatmap data",
+    "df &lt;- read.csv(file=&#34;HMMSEARCH_output.csv&#34;,header = T) df$hmm_name &lt;- as.character(df$hmm_name) df$color &lt;- as.character(df$color)",
+    "id &lt;- df$ID id &lt;- unique(id)",
+    "for (i in 1:8){ df1 &lt;- df[which(df$ID==id[i]),] df1 &lt;- df1[which(df1$bestdom==1),]",
+    "#set plot area screen.width &lt;- 1500 screen.height &lt;- 25 protlength &lt;- df1$length[1] file_a &lt;- paste(df1$protein_ID[1],&#34;_dom.png&#34;, sep = &#34;&#34;) png(filea, width = 1500, height = 500 ) plot(c(-10, screen.width), c(0,screen.height), type = &#34;n&#34;, xlab = &#34;Number of amino acids&#34;, ylab = &#34;&#34;, yaxt=&#39;n&#39;)",
+    "#make the protein frame rect(xleft = 1, ytop = screen.height/2+1.5, ybottom = screen.height/2-1.5, xright=protlength, col=&#34;gray&#34;) a &lt;- length(df1$hmm_name) for (i in 1:a){ rect(xleft=df1$ali_from[i], ytop=screen.height/2+2.5, ybottom=screen.height/2-2.5, xright = df1$ali_to[i], col= df1$color[i]) } text(max(df1$length[1])/2, screen.height-2.5, df1$protein_ID, cex=1.5) pos.text.x &lt;- df1$ali_from[1:a] + (df1$ali_to[1:a] - df1$ali_from[1:a])/2 pos.text.y &lt;- c(screen.height/2+3.5) text (pos.text.x,pos.text.y,df1$hmm_name[1:a],cex = 1.5) text(df1$length[1], screen.height/2-3,df1$length[1],cex=1.5) text(1,screen.height/2-3,1,cex=1.5) dev.off() } #done",
+    "Table 1. Example data format %s %s group protein_ID ID length hmm_name i.Evalue ali_from ali_to num_doms overlap bestdom color charophytes A0A1Y1HMH1_KLENI A0A1Y1HMH1 986 MCAfunc 3.80E-17 13 150 3 FALSE 1 mistyrose charophytes A0A1Y1HMH1_KLENI A0A1Y1HMH1 986 U-box 1.10E-20 254 325 3 FALSE 1 honeydew2 charophytes A0A1Y1HMH1_KLENI A0A1Y1HMH1 986 Arm 1.90E-07 735 772 3 FALSE 1 royalblue charophytes A0A1Y1HNZ6_KLENI A0A1Y1HNZ6 1311 MCAfunc 4.10E-15 7 139 5 TRUE 1 mistyrose charophytes A0A1Y1HNZ6_KLENI A0A1Y1HNZ6 1311 U-box 1.10E-20 246 315 5 TRUE 1 honeydew2 charophytes A0A1Y1HNZ6_KLENI A0A1Y1HNZ6 1311 Arm_2 1.30E-05 1014 1206 5 TRUE 0 royalblue4 charophytes A0A1Y1HNZ6_KLENI A0A1Y1HNZ6 1311 Arm 2.70E-06 1046 1085 5 TRUE 1 royalblue charophytes A0A1Y1HNZ6_KLENI A0A1Y1HNZ6 1311 Arm 2.00E-07 1131 1169 5 TRUE 1 royalblue"
+  ],
+  "authors": [
+    "Kanae Nishii"
+  ],
+  "creator": "Kanae Nishii",
+  "published_on": 1612625940,
+  "created_on": 1599113983,
+  "keywords": []
+}

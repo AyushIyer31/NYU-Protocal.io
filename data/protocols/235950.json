@@ -1,0 +1,37 @@
+{
+  "id": 235950,
+  "title": "High-throughput isoform-wide miRNome sequence reconstruction in the TCGA-LUAD cohort using FAS2rDNA",
+  "uri": "high-throughput-isoform-wide-mirnome-sequence-reco-hinnb4ddf",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzenqxvx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"m7ui\",\"text\":\"Large-scale miRNome studies frequently rely on coordinate-based annotations or raw sequencing datasets that are computationally expensive to reprocess and difficult to integrate into sequence-centric analytical workflows. This protocol presents an isoform-wide reconstruction of miRNA sequences from the TCGA-LUAD cohort using FAS2rDNA, enabling direct derivation of strand-aware nucleotide sequences without reanalyzing bulk sequencing data. By reconstructing sequences directly from genomic coordinates, the workflow provides a faster, more scalable, and reproducible alternative for generating miRNA isoform–resolved FASTA datasets.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3g8r5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ahs25\",\"text\":\"The reconstructed miRNome sequences generated through this protocol are directly applicable to machine learning–based modeling, isoform-level molecular discovery, and integrative miRNA landscape analysis. Applied to the TCGA-LUAD cohort, this workflow facilitates high-resolution exploration of miRNA isoform diversity with the broader objective of improving molecular understanding of lung adenocarcinoma and supporting data-driven strategies aimed at reducing cancer-related mortality.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Acquire or download the TCGA-LUAD miRNome annotation data. For the purpose of this exercise, the GDAC Broad Institute database will be used to obtain molecular data.",
+    "Visit the GDAC portal of Broad Institute at https://gdac.broadinstitute.org/ .",
+    "Select &#39;Lung adenocarcinoma&#39; or LUAD cohort from the list. Note: You must agree to the TCGA guidelines on the responsible use of data to proceed.",
+    "From the LUAD Archive pop-up, navigate to the &#39;miRSeq&#39; section and select &#39;illuminahiseq_mirnaseq-miR_isoform_expression&#39;",
+    "Wait until the download is finished (the file is normally in the form of tab-delimited .txt file type).",
+    "Preprocess and normalize the genomic coordinate annotations.",
+    "Open the file using a spreadsheet program.",
+    "Inspect the data and filter out any missing values or incorrectly formatted valued.",
+    "Ensure that the &#39;isoform_coords&#39; header of your data follow the FAS2rDNA-required format: Standard format: assembly:chromosome:start-end:strand Example data: hg19:9:106938220-106938244:+",
+    "Once quality check is done, rename the &#39;SampleId&#39;, &#39;miRNA_ID&#39;, &#39;isoform_coords&#39;, and &#39;read_count&#39; headers to &#39;sample_id&#39;, &#39;gene_id&#39;, &#39;seq_loc&#39;, and &#39;description&#39;, respectively. This will ensure the data is properly formatted for FAS2rDNA.",
+    "Perform isoform-wide sequence reconstruction using FAS2rDNA. For the purpose of this exercise, the FAS2rDNA-CLI version will be used (available at https://fas2rdna.chordexbio.com/ )",
+    "Install the required python dependencies. pip install pandas pyfaidx tqdm apt-get update -qq apt-get install -y samtools",
+    "Install or download the FAS2rDNA-CLI script. Note that the technical documentation of FAS2rDNA can be accessed publicly on GitHub (available at https://github.com/mahvin92/FAS2rDNA )",
+    "Run FAS2rDNA using the the format below, specifying the location of the TCGA-LUAD miRNA annotation text file: python3 fas2rdna.py \\ --input-dir /Users/Desktop/FAS2rDNA or build a custom FASTA header by running the following line: python3 fas2rdna.py \\ --input-dir /Users/Desktop/FAS2rDNA \\ --header &#34;{sample_id}|{gene_id}|{seq_loc}|{description}&#34;",
+    "After FAS2rDNA finishes running, inspect the resulting .fasta ouput files. FAS2rDNA will generate the individual .fasta file from multiple text files and the combined .fasta file, compiling all multi-FASTA sequences in one file. The result map is in the following structure: /Users/Desktop/FAS2rDNA/ ├── LUAD.txt ├── test.txt └── fas2rdna_output/ ├── genomes/ ├── fasta/ │ ├── LUAD.fasta │ └── test.fasta └── All_sequences.fasta",
+    "Cross-reference the generated sequences with the data input, ensuring all samples were represented, the sequences are in FASTA-format and the .fasta files are not empty. Sample LUAD data: sample_idgene_idseq_locdescription TCGA-05-4390-01A-02T-1754-13hsa-let-7a-1hg19:9:96938243-96938263:+1 TCGA-05-4390-01A-02T-1754-13hsa-let-7a-1hg19:9:96938243-96938264:+4 TCGA-05-4390-01A-02T-1754-13hsa-let-7a-1hg19:9:96938243-96938265:+1 TCGA-05-4390-01A-02T-1754-13hsa-let-7a-1hg19:9:96938243-96938266:+4 TCGA-05-4390-01A-02T-1754-13hsa-let-7a-1hg19:9:96938244-96938263:+13 ... Sample reconstructed LUAD miRNome FASTA-formatted sequences (FAS2rDNA result): &gt;TCGA-05-4390-01A-02T-1754-13_hsa-let-7a-1 ATGAGGTAGTAGGTTGTATAG &gt;TCGA-05-4390-01A-02T-1754-13_hsa-let-7a-1 ATGAGGTAGTAGGTTGTATAGT &gt;TCGA-05-4390-01A-02T-1754-13_hsa-let-7a-1 ATGAGGTAGTAGGTTGTATAGTT &gt;TCGA-05-4390-01A-02T-1754-13_hsa-let-7a-1 ATGAGGTAGTAGGTTGTATAGTTT &gt;TCGA-05-4390-01A-02T-1754-13_hsa-let-7a-1 TGAGGTAGTAGGTTGTATAG ...",
+    "FAS2rDNA operates in batch (multiple experiments), multi-assembly (detects different assembly versions like hg17, hg18, hg19, hg38 in humans), multi-loci (can reconstruct sequence from different DNA locations), auotomated formatting (compile multi-FASTA-formatted results, ready for downstream analyses), and multi-species (supports assemblies from humans to yeast genomes) workflows, giving users the speed, scalability, confidence and convenience needed to analyze and perform experiments using large genomic data."
+  ],
+  "authors": [
+    "Marvin De los Santos"
+  ],
+  "creator": "Marvin De los Santos",
+  "published_on": 1766980841,
+  "created_on": 1766933969,
+  "keywords": []
+}

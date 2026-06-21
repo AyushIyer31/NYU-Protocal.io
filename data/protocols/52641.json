@@ -1,0 +1,26 @@
+{
+  "id": 52641,
+  "title": "Maps",
+  "uri": "maps-bxm9pk96",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4k4zzvo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"fp3va\",\"text\":\"Basic MarMap instructions for plotting maps in R studio.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Once you have R and R Studio installed, install marmap",
+    "Marmap depends on some other packages, and you may encounter errors if they&#39;re not up to date.",
+    "Message: Error in if (ncol(x) == 3 &amp; !exists(&#34;bathy&#34;, inherits = FALSE)) { : argument is of length zero This error occurs when the packages rgdal and raster are not up to date. Update them using update.packages() The package name goes inside the parentheses, surrounded by quotes, eg update.packages(\"rgdal\")",
+    "To start with, you&#39;ll want to make some quick/rough maps to make sure you&#39;ve got your desired geographic range, etc. To make a map, R will first have to query the NOAA database for data for a given geographic range that you provide. Visualizing this by creating maps is really helpful for deciding on the exact range that you want, but you don&#39;t want to waste time creating high-quality maps at this stage. To query the NOAA database, use the following code: map1 Where a and b are your chosen longitudes (forming a range) and c and d are your chosen latitudes. Keep the resolution at 10 (poor) for now to make map generation fast. Change the antimeridean setting if it applies to you (you have points spanning that longitude) To see a quick summary of your plot and generate a quick map in black and white: summary(map1)plot(map1)",
+    "Before making any maps, be sure that you have the marmap package loaded. Run the following code: library(marmap)",
+    "This is my favorite color scheme: plot(map1, image = TRUE, bpal = blues(100), deep = c(-10000, -5000, 0), shallow = c(-7000, -10, 0), step = c(3000, 3000, 3000), lwd = c(0.8, 0.8, 0), lty = c(1, 1, 0), col = c(\"steelblue4\", \"steelblue\", \"seashell3\"), drawlabel = c(FALSE, FALSE, FALSE))# Creating a custom palette of blues# USE THIS ONE FOR WINDOWS:blues"
+  ],
+  "authors": [
+    "Dakota Betz"
+  ],
+  "creator": "Dakota Betz",
+  "published_on": 1750265417,
+  "created_on": 1629745119,
+  "keywords": []
+}

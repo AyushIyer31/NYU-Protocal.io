@@ -1,0 +1,27 @@
+{
+  "id": 21188,
+  "title": "Vandy - Exercise Stress Test",
+  "uri": "vandy-exercise-stress-test-yxcfxiw",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxcfxiw",
+  "description": "{\"blocks\":[{\"key\":\"b6k96\",\"text\":\"Summary:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"9lics\",\"text\":\"\\nThe exercise stress test is a maximal exercise test used to calculate VO2 max. Mice are run to complete exhaustion as the treadmill speed is increased every three minutes (See table 1). During the test, direct measurements of the oxygen consumption and carbon dioxide output by the mouse are made, which are then used to calculate VO2 max, VCO2, and RER. VO2 max refers to the maximum amount of oxygen that the mouse can utilize during maximal exercise.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4t7ga\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"68utc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"4eovn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"FbgUd\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"h4WXK\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"D6brw\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":181605,\"guid\":\"41A8AB61341F11EE9D4302C0B41BC903\",\"name\":\"Treadmill\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"http://None\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":512,\"name\":\"Columbus Instruments\",\"link\":\"http://www.colinst.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":181606,\"guid\":\"41A8ABB1341F11EE9D4302C0B41BC903\",\"name\":\"Oxymax\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"http://None\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":512,\"name\":\"Columbus Instruments\",\"link\":\"http://www.colinst.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Mice are familiarized with the treadmill two days prior to the experiment by exercising them for 10 minutes at 10m/min.",
+    "On the day of the experiment, the mouse is placed in the stopped treadmill for 45 min to acclimatize and the Oxymax system is started. The treadmill is equipped with a shock pad. Shocks are set at 1.5mA, 200ms pulses, 4Hz.",
+    "After 45 min, basal measurements are made for 15 min in the stopped treadmill.",
+    "Treadmill is started at 10m/min.",
+    "After 3 min, speed is increased by 4m/min.",
+    "Every three minutes thereafter, speed is increased by 4m/min until mouse has reached exhaustion (table 1). Exhaustion is defined as the point at which the mouse remains on the shock pad for 5 continuous seconds. Table 1",
+    "Once exhaustion is reached, the mouse is left 30 min in the stopped treadmill to recover."
+  ],
+  "authors": [
+    "Louise Lantier"
+  ],
+  "creator": "Lili Liang",
+  "published_on": 1558012802,
+  "created_on": 1551983211,
+  "keywords": []
+}

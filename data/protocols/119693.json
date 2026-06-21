@@ -1,0 +1,27 @@
+{
+  "id": 119693,
+  "title": "Blinded IL-6 Measurement for Novel Biosensor Evaluation",
+  "uri": "blinded-il-6-measurement-for-novel-biosensor-evalu-dy5m7y46",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewov1dmwovr2/v1",
+  "description": "{\"blocks\":[{\"key\":\"64k9j\",\"text\":\"In order to obtain an initial impression on the capabilities of novel biosensors, it is necessary to aim to separate the impact of the chemical part of the detection, such as the choice of antibodies in immunological testing, from the measurement technology part. It is therefore advisable to use data from measurements of common analytes under conditions as similar as possible. In this protocol, blinded pre-characterized samples at different concentrations provided by an evaluator are measured using the novel biosensor technology under investigation. In particular, samples are prepared in order to allow the evaluation of the accuracy of the determination of their concentration, of the sensitivity of the platform and of the linearity of the response and dynamic range. In turn, this protocol does not include the measurement of precision in terms of inter- and intra- assay variability nor accounts for day to day or operator variability.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"bh6mn\",\"text\":\"The developer of the novel technology is free to take precautions prior to the blinded measurement of the evaluator's samples. In particular, it is recommended to generate a calibration curve for the same material that will be used in the blinded measurements. After the developer’s preparations are finished, the evaluator provides the blinded samples and request information about the concentration of IL-6 within each sample.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"79va1\",\"text\":\"Recombinant Human IL-6 (HEK293-expressed) Protein, Catalog #: 7270-IL with carrier (bovine serum albumin), RnD Systems (https://www.rndsystems.com/products/recombinant-human-il-6-hek293-expressed-protein_7270-il)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":120,\"length\":91}],\"data\":{}},{\"key\":\"8f02t\",\"text\":\"PBS (0.01 M, pH 7.4) Catalog #:P3813, Sigma Aldrich (https://www.sigmaaldrich.com/DE/en/product/sigma/p3813)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":53,\"length\":54}],\"data\":{}},{\"key\":\"735nc\",\"text\":\"If antibodies are needed: Human/Primate IL-6 Antibody, Catalog #: MAB206, RnD Systems (https://www.rndsystems.com/products/human-primate-il-6-antibody-6708_mab206)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":87,\"length\":75}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"9AAB5B43EA2C11EF99740A58A9FEAC02\",\"url\":\"https://www.rndsystems.com/products/recombinant-human-il-6-hek293-expressed-protein_7270-il\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"BCA5649DEA2C11EFB71C0A58A9FEAC02\",\"url\":\"https://www.sigmaaldrich.com/DE/en/product/sigma/p3813\"}},\"2\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"6B2DB638EAF711EF89BF0A58A9FEAC02\",\"url\":\"https://www.rndsystems.com/products/human-primate-il-6-antibody-6708_mab206\"}}}}",
+  "steps": [
+    "The technology developer sets up their biosensing platform for performing the measurements as well as acquire all necessary reagents that are left to their choice. The developer should use the same reagents for their preparation steps as the evaluator, e.g. for setting up the calibration since the blinded samples will be using exactly the above mentioned IL-6 protein and dissolution matrix.",
+    "A calibration curve should be derived by the technology developer, ideally covering the concentration range from 0 to 100 ng/mL.",
+    "The evaluator prepares total of 40 to 60 blinded samples containing IL-6 in PBS with BSA at different, randomly shuffled, concentration and send them to the technology developper. The provided volume should be agreed beforehand depending on the specificity of the technology. Concentrations may range from 0 to 10 ng/mL and the choice of concentrations in the blinded samples will put an emphasis on - but not exclusively - the envisaged limit of quantification (LOQ), the Medical Decision Point (MDP) of 5 pg/mL, and the upper Limit of Measuring Interval (ULMI).",
+    "The technology developer measures the samples using their technology and delivers the predicted concentration of IL-6 for each of the blinded sample to the evaluator, who evaluates their accuraccy and variability."
+  ],
+  "authors": [
+    "Aldo I. Martinez-Banderas",
+    "Hubert Paul",
+    "Anas Malki",
+    "Wolfgang Petrich"
+  ],
+  "creator": "Anas Malki",
+  "published_on": 1739809915,
+  "created_on": 1738843265,
+  "keywords": []
+}

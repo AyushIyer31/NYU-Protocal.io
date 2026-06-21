@@ -1,0 +1,40 @@
+{
+  "id": 95836,
+  "title": "Synogram: assessing phage-antibiotic synergistic and antagonistic interactions",
+  "uri": "synogram-assessing-phage-antibiotic-synergistic-an-c9t4z6qw",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"d1mto\",\"text\":\"Bacteriophage (phage) therapy is a promising approach to combat the rise of multidrug-resistant bacteria. Currently, the preferred clinical modality is to pair phage with an antibiotic, a practice thought to improve efficacy. However, antagonism between phage and antibiotics has been reported, the choice of phage and antibiotic is not often empirically determined, and the effect of the host factors on the effectiveness is unknown. Here, we combined an optically based real-time microtiter plate readout with a matrix-like heat map of treatment potencies to measure phage and antibiotic synergy (PAS), a process we term synography. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"d1hj3\",\"text\":\"Accuracy in pipetting is extremely important since each well of the 96-well plate has a slightly different treatment. In order to get good data, a lot of attention is needed for pipetting.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"28ptf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"68osp\",\"text\":\"Note that you may have some plate reader effects in which the outer wells are evaporated quickly thus leading to confounding results. In this case you may want to test for plate reader effects and/or adjust the position of the positive and negative controls to the center of the plate.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d8414\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"dqpl9\",\"text\":\"1. Solvent/diluent for antibiotics: the CLSI (Clinical \\u0026 Laboratory Standards Institute) standard have a list of antibiotics with a list of solvent and diluent. You can use the recommended solvent given by the CLSI, however, for the diluent you can use water.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cr56v\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2kro0\",\"text\":\"2. Note that some solvents can kill bacteria thus leading to conflicting results, so keep those solvents \\u003c1%. Examples include: DMSO, ethanol, etc. Research carefully what type of solvent/diluent you are using and keep them as diluted as possible\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3r61t\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7emts\",\"text\":\"3. Since the plate has 10-fold phages and 2-fold antibiotics, you will need 2 dilution plates (one for each treatment) and then pipette the diluted antibiotic/phage into the final Master plate. So in total you will need three plates.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"71f6a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8iqu\",\"text\":\"4. The OD ~ 1x109 CFU/mL only works for E. coli here. If the organism has different growth curve, new OD for 1x109 CFU/mL needs to be determined. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":16,\"length\":1},{\"style\":\"sup\",\"offset\":113,\"length\":1},{\"style\":\"italic\",\"offset\":40,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ibob\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c5m0j\",\"text\":\"5. There is inoculum effect in terms of antibiotic treatment, thus one consistent inoculum is required across various synograms for comparison purposes. High inoculum was purposefully chosen in our study to detect phage-antibiotic interactions that happen at the sublethal interface.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2ons2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4apgi\",\"text\":\"6. NOTE that synogram works best for species that do not form heavy biofilms such as Bacillus that would mess with the OD readings\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":85,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"9l799\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"cpc6m\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Make a 1.6 mg/mL working stock for 10 mL by diluting 0.016 g or 16 mg of antibiotic in 10 mL of solvent. Filter sterilize the antibiotic",
+    "Make an overnight culture before the day of experiment. On the day of experiment, inoculate 100 uL of bacteria into around 10 mL of LB and grow it for around 4 hours for the subculture. Wash and adjust OD to ~ 1.0 at 600 nm",
+    "Set up dilution plate (4X):",
+    "11 th column: Add 128 uL of working stock (1.6 mg/ml) into 720 uL of sterile ddH 2 O",
+    "10 th column (and subsequently): Add uL of 11 th column into 100 uL of ddH 2 O %s %s",
+    "Phage stock: 5x10 9 PFU/mL (this may vary)",
+    "Make 1 mL of 4x10 9 PFU/mL dilution by adding 800 uL of the stock + 200 uL of LB",
+    "Set up a Dilution plate (4X)",
+    "1 st row: Add 70 uL of diluted phage solution into each well",
+    "2 nd row and subsequent: Add 10 uL of 1 st row into 90 uL of LB %s %s",
+    "OD600nm of 1.0 is approximately 10 9 CFU/mL for E. coli . The final master plate should have 5x10 8 CFU/mL",
+    "Setting the master plate",
+    "Transfer 50 uL of phage from the dilution plate",
+    "Transfer 50 uL of antibiotic from the dilution plate",
+    "Negative controls: 150 uL of LB + 50 uL of ddH 2 O",
+    "Positive controls: 50 uL of LB + 50 uL of ddH 2 O + 100 uL of bacteria",
+    "Inoculate 100 uL of the diluted bacteria for a final 5x10 8 CFU/mL to all wells P= phage alone A= antibiotic alone C= combined (phage + antibiotic) - = negative control (media only) + = positive control (media + bacteria without any treatment)",
+    "To generate synograms, absorbance readings from three biological replicates were normalized with the negative control, and the treated wells were deducted from the positive control (no treatment) to yield percent reduction: Reduction (%) = [(OD growthcontrol − OD treatment )/OD growthcontrol ] × 100.",
+    "Most of the synograms presented in this paper were generated using absorbance readings from t = 24 h. However, since datapoints were acquired every 15 min for a total of 24 h, synograms can be generated from multiple time points.",
+    "By assessing the whole plate you may determine whether the interaction is synergistic or antagonistic Treatment of JJ2528 with HP3 and either ceftazidime (left, synergistic) or ciprofloxacin (right, antagonistic) However, interaction plots can be generated in R-studio to statistically assess and confirm individual wells for interactions. Two-way ANOVA assessment of individual wells for various interactions"
+  ],
+  "authors": [
+    "Carmen Gu Liu"
+  ],
+  "creator": "Carmen Gu Liu",
+  "published_on": 1709068710,
+  "created_on": 1709060516,
+  "keywords": []
+}

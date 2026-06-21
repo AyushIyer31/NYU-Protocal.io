@@ -1,0 +1,43 @@
+{
+  "id": 122195,
+  "title": "Open Field & Cylinder test Behavior Assays ",
+  "uri": "open-field-amp-cylinder-test-behavior-assays-d3jt8knn",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2ly6ypegx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"3sj6i\",\"text\":\"Protocols for mouse behavioral studies using the open field test and the cylinder test from Fushiki et al 2024. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"7d049\",\"text\":\"The habituation period is used in this protocol and is recommended especially for assessing basic locomotor activity or movement, but it depends on the experiment. Longer acclimation periods can reduce exploratory behaviors, so extending the period may not be ideal for studies focused on such behaviors.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"cqop2\",\"text\":\"Wear appropriate PPE as required by your institution. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"daue4\",\"text\":\"Read through protocol for full details on software and programs used. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9g4m4\",\"text\":\"The materials used are: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ee9eo\",\"text\":\"-Open Field square arena (40 x 40 x 20 cm, length x width x height) housed inside a sound-attenuating chamber\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"clst\",\"text\":\"-Cylinder arena: 15cm diameter x 30cm length housed inside a sound-attenuating chamber\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8e3i8\",\"text\":\"-Video recording set up: FLIR (Point Grey Flea) camera with a CS-mount lens at a resolution of 1280 × 1024 pixels and a frame rate of 30 Hz\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"hepd\",\"text\":\"-Wireless motion sensor compatible with WEAR system by the Champalimaud Hardware Platform\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Mice can be put into two behavioral assays.",
+    "Mice are acclimated to the wireless motion sensor (~1.8 g) in their home cage for 15 minutes on the first day.",
+    "Behavioral recording is conducted using a FLIR (Point Grey Flea) camera with a CS-mount lens at a resolution of 1280 × 1024 pixels and a frame rate of 30 Hz. Ensure proper contrast and brightness settings to optimize animal tracking.",
+    "Open-Field Test: Mice are recorded from a top-down view for 30 minutes.",
+    "Videos are acquired using FlyCapture software and the open-source Bonsai visual programming environment.",
+    "During the open-field test, mouse centroid coordinates are tracked in Bonsai, providing a rough estimation for post-hoc analysis. The recorded videos are later fully analyzed using DeepLabCut (DLC) to extract detailed activity metrics, including trajectory and velocity.",
+    "Mice are acclimated to the wireless motion sensor (~1.8 g) in their home cage for 15 minutes on the first day.",
+    "Behavioral recording is conducted using a FLIR (Point Grey Flea) camera with a CS-mount lens at a resolution of 1280 × 1024 pixels and a frame rate of 30 Hz. Ensure proper contrast and brightness settings to optimize animal tracking.",
+    "Videos are captured using FlyCapture software and the open-source Bonsai visual programming environment.",
+    "Cylinder Test: Mice are recorded from a side view for 15 minutes.",
+    "For the cylinder test, rearing behavior is assessed using the DeepLabCut (DLC)-based position data from the motion sensor, which provides visibility from all angles.",
+    "It is crucial to confirm that the system is functioning properly within the arena and to ensure that the sensor&#39;s battery is consistently fully charged.",
+    "Motion data is collected using the WEAR system by the Champalimaud Hardware Platform. The sensor samples nine-axis motion data from a three-axis accelerometer, gyroscope, and magnetometer, with sampling rates up to 200 Hz.",
+    "The WEAR system is also compatible with Bonsai, allowing for synchronized recording between motion sensor data and video data for comprehensive behavioral analysis.",
+    "Data transmission occurs via a base station using the Harp system, accessible through software (e.g., Harp Wear) that allows for easy adjustment of sensor parameters as needed.",
+    "On the second day, they undergo a 15-minute acclimation period in the arena before the actual behavioral testing begins.",
+    "Motion data is collected using the WEAR system by the Champalimaud Hardware Platform. The sensor samples nine-axis motion data from a three-axis accelerometer, gyroscope, and magnetometer, with sampling rates up to 200 Hz.",
+    "Data transmission occurs via a base station using the Harp system, accessible through software (e.g., Harp Wear) that allows for easy adjustment of sensor parameters as needed.",
+    "The WEAR system is also compatible with Bonsai, allowing for synchronized recording between motion sensor data and video data for comprehensive behavioral analysis.",
+    "On the second day, they undergo a 30-minute acclimation period in the arena before the actual behavioral testing begins.",
+    "It is crucial to confirm that the system is functioning properly within the arena and to ensure that the sensor&#39;s battery is consistently fully charged.",
+    "Each mouse undergoes two behavioral assays over two days.",
+    "Each mouse undergoes two behavioral assays over two days."
+  ],
+  "authors": [
+    "Akira Fushiki"
+  ],
+  "creator": "Christine Weber-Schmidt",
+  "published_on": 1741718422,
+  "created_on": 1740004274,
+  "keywords": []
+}

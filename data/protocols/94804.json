@@ -1,0 +1,21 @@
+{
+  "id": 94804,
+  "title": "Differential gene expression analysis",
+  "uri": "differential-gene-expression-analysis-c8tuzwnw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl8p7k9g2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"19eq\",\"text\":\"Differential gene expression analysis from Kilfeather, Khoo et al., 2024\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Differential gene expression analysis in TRAP samples (including calculation of gene enrichment and depletion, relative to tissue homogenate RNA) was performed using DESeq2 (v1.36.0, RRID:SCR_015687) in R (v4.2.1, RRID:SCR_001905) with Bioconductor (v3.15, RRID:SCR_006442). Adaptive shrinkage of log fold change estimates was performed using ashr. The following settings were changed from defaults: minReplicatesForReplace = Inf, cooksCutoff = Inf, filterFun = ihw, lfcThreshold = log 2 (1.05). Genes were classed as significantly differentially expressed with an FDR-adjust P value &lt; 0.01. Protein-protein interactions were obtained using STRINGdb (version 11) with a minimum confidence threshold of 0.4."
+  ],
+  "authors": [
+    "Peter Kilfeather"
+  ],
+  "creator": "Peter Kilfeather",
+  "published_on": 1707285919,
+  "created_on": 1707285760,
+  "keywords": []
+}

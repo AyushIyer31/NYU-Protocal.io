@@ -1,0 +1,33 @@
+{
+  "id": 121028,
+  "title": "Lysine decarboxylase assay with cucurbituril (cucurbit-7-uril)",
+  "uri": "lysine-decarboxylase-assay-with-cucurbituril-cucur-d2fc8biw",
+  "doi": "dx.doi.org/10.1038/nprot.2007.281",
+  "description": "{\"blocks\":[{\"key\":\"uu99s\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"enmqw\",\"text\":\"Amino acid decarboxylases, which have been previously assayed with laborious manometric, radiometric or multi-step colorimetric methods, can be assayed by the simple addition of a commercial macrocycle (cucurbit-7-uril) and a fluorescent dye (Dapoxyl) to the enzymatic mixture. The protocol refers to lysine decarboxylase, but the activity of several other amino acid decarboxylases can be similarly determined.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"joo4m\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"spwt6\",\"text\":\"Cucurbit-7-uril (Sigma-Aldrich)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ytaq9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"kisqu\",\"text\":\"Dapoxyl (Molecular Probes, Eugene, Oregon)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ntlcp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ycyw5\",\"text\":\"Lysine decarboxylase (partially purified 1.6 U/mg, Sigma-Aldrich)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7njiq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dal2c\",\"text\":\"10 mM NH4OAc, adjusted to pH 6.0 with HCl and NaOH\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lkqet\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"xptrh\",\"text\":\"L-lysine\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"liii4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"xemf2\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"ldcbb\",\"text\":\"Varian Eclipse spectrofluorometer (exc = 336 nm, em = 380 nm) with temperature controller (25 °C)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6ihmx\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"exfiz\",\"text\":\"1-ml cuvette.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare the following stock solutions in 10 mM NH4OAc, pH 6.0: 500 μM cucurbituril, 25 μM dapoxyl, 1 mM lysine, 800 μg/ml lysine decarboxylase.",
+    "Add 100 μl Dapoxyl stock (25 μM) and 780 μl buffer to the cuvette and place the cuvette into the fluorometer. Start recording in the kinetic mode (exc = 336 nm, em = 380 nm).",
+    "Add 20 μl of cucurbituril stock (500 μM) to the solution and wait ca. 2 min until the fluorescence intensity has equilibrated.",
+    "Add 50 μl of lysine stock (1 mM) to the solution.",
+    "Add 50 μl of lysine decarboxylase (800 μg/ml) to initiate the reaction and record fluorescence until no change in fluorescence intensity is registered.",
+    "Total assay volume is 1 ml. Final concentrations are: 2.5 μM Dapoxyl, 10 μM cucurbituril, 50 μM lysine, 40 μg/ml lysine decarboxylase. Steps 2-5 can be repeated with varying enzyme, substrate, or cucurbituril concentrations.",
+    "The sequential addition steps specified under “Procedure” provide an internal control. The following observations were made: After step (2), one should observe a very low fluorescence. If the fluorescence is too high readjust the settings of the fluorometer. After step (3), the fluorescence intensity should immediately increase ca. 10-20-fold. If the fluorescence increase is very different, check the pH of the buffer. After step (4), the fluorescence should not change by more than 10%. If it changes by a larger amount, check the lysine sample for impurities. After step (5), the fluorescence should decrease first stepwise (immediately) and then more slowly with time. If the latter time-resolved fluorescence decay is not observed after 5 min, the enzyme may be inactive. If the stepwise (immediate) decrease in fluorescence intensity in step (5) is very pronounced (we relate this to varying degrees of salts and impurities in the enzyme sample), the sequence of steps (4) and (5) can be exchanged to obtain visually improved enzyme kinetic traces. In this case the time-resolved fluorescence decay is only observed after the addition of substrate in step (5), while upon addition of enzyme in step (4) only an immediate stepwise decrease in fluorescence intensity is observed.",
+    "10 min for steps 2-5. The reaction should be finished under the specified conditions in &lt; 20 min",
+    "The pH of the buffer needs to be thoroughly adjusted, since the fluorescence intensity before addition of enzyme varies strongly upon slight changes in pH.",
+    "The fluorescence should decrease in a time-dependent manner (in ca. 10-20 minutes by a factor of ca. 3)",
+    "Label-free continuous enzyme assays with macrocycle-fluorescent dye complexes by Andreas Hennig, Hüseyin Bakirci &amp; Werner M Nau published in Nature Methods on 21 Jun, 2007 https://dx.doi.org/10.1038/nmeth1064"
+  ],
+  "authors": [
+    "Andreas Hennig",
+    "Hüseyin akirci",
+    "Werner M. Nau"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1183532570,
+  "created_on": 1183532570,
+  "keywords": []
+}

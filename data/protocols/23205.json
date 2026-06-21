@@ -1,0 +1,35 @@
+{
+  "id": 23205,
+  "title": "Striga hermonthica germination assay",
+  "uri": "striga-hermonthica-germination-assay-2wdgfa6",
+  "doi": "dx.doi.org/10.17504/protocols.io.2wdgfa6",
+  "description": "{\"blocks\":[{\"key\":\"5qsov\",\"text\":\"This protocol describes a standard germination assay for Striga hermonthica carried out in the Penn State quarantine facility.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":57,\"length\":18}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4ojsl\",\"text\":\"If performed in the United States, this protocol must be carried out in a USDA-APHIS certified quarantine facility that meets all requirements for performing experiments with federally listed noxious weeds.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"ust1Q\",\"text\":\"STEP MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"Iuaw7\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"ere6B\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"TvP83\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":203159,\"guid\":\"41AB4A3C341F11EE9D4302C0B41BC903\",\"name\":\"rac-GR24\",\"mol_weight\":0,\"sku\":\"450701\",\"url\":\"https://www.chempep.com/ChemPep_Products_Strigolactones_Analogues.php?id=450701.htm\",\"cas_number\":\"76974-79-3\",\"rrid\":\"\",\"vendor\":{\"id\":702,\"name\":\"Chempep\",\"link\":\"https://www.chempep.com/index.htm\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":203163,\"guid\":\"41AB4B7E341F11EE9D4302C0B41BC903\",\"name\":\"orobanchol\",\"mol_weight\":0,\"sku\":\"025 6701\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":703,\"name\":\"Olchemim\",\"link\":\"https://www.olchemim.cz/Products.aspx?idc=1\\u0026idp=30\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":203167,\"guid\":\"41AB4CC3341F11EE9D4302C0B41BC903\",\"name\":\"( )5-deoxystrigol\",\"mol_weight\":0,\"sku\":\"025 7121\",\"url\":\"https://www.olchemim.cz/Products.aspx?idc=1\\u0026idp=30\",\"cas_number\":\"151716-18-6\",\"rrid\":\"\",\"vendor\":{\"id\":703,\"name\":\"Olchemim\",\"link\":\"https://www.olchemim.cz/Products.aspx?idc=1\\u0026idp=30\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Testing seeds from populations: Scoop appropriate amount of seeds into a sterile 15 mL conical vial. We make &#39;scoops&#39; out of PCR tubes and have found that one &#39;scoop&#39; filled almost to the top of the tube is approximately 1800 seeds. Do this on a Monday, so that all subsequent steps (adding hormone, seed counts) do not have to be performed on weekend days. To test seeds from individual maternal plants, perform all steps as written except use 1.5 mL tubes for sterilization. It may not be possible to get 50 seeds per well and there will likely be more variance in total seed numbers per well. In that case, I would recommend at least 10 seeds per technical replicate.",
+    "Fill conical vial to the 10 mL mark with 0.5% sodium hypochlorite sterilization solution (458 mL sterile water + 42 mL commercial bleach containing 6% sodium hypochlorite).",
+    "00:09:00 Shake seeds in sterilization solution",
+    "00:01:00 Let seeds settle to bottom of vial",
+    "Decant sterilization solution",
+    "Fill vial to 14 mL mark with sterile water",
+    "Shake tube. 00:00:30",
+    "go to step #4",
+    "Depending on amount of seeds per vial, resuspend seeds in sterile water. Then, based on a few initial trials, choose a small volume that allows you to consistently pipet approximately 50 seeds into a single well of a 12 well culture plate. Check seed counts intermittently to ensure consistent seed numbers per well (e.g. 45-60). The seeds settle quickly, so I find it easiest to pipet up and down to mix, add for example 200 uL to a single well across a row of 4 wells, and then mix with the pipet tip and remove 100 uL of water + seeds from each well in that row to the row below. 12-Well Non-Treated Culture Plate (Culture plate, CytoOne, CC7672-7512, https://www.usascientific.com/cytoone-12-well-non-treated-plate-clear.aspx ) We usually do 3 technical replicates, all in the same column. For testing root exudates, we usually test 5 biological replicates, which are randomly assigned to columns across all plates in the experiment.",
+    "Add sterile water to each well to bring total volume up to 1 mL. E.g. if you added 100 uL of resuspended seeds to each well, add 900 uL sterile water.",
+    "264:00:00 Seal edges of plate with parafilm, wrap sets of ~5 plates in aluminum foil, and incubate in the dark for 11 days at 30 °C",
+    "After incubating for 11 days, add 1.5 mL of root exudate or strigolactone standard. For a positive control, use 0.1 Parts per Million (PPM) GR24 rac-GR24 Chempep Catalog #450701 (CAS: 76974-79-3) For a negative control, use the same source of sterile water that was used to make strigolactone standards or extract root exudate. Instead of root exudate, some of our experiments have also used orobanchol orobanchol Olchemim Catalog #025 6701 or 5-deoxystrigol standards ( )5-deoxystrigol Olchemim Catalog #025 7121 (CAS: 151716-18-6)",
+    "After three days, count total numbers of seeds without evidence for germination, and seeds with an emerged radicle as germinated. We use a 3.5X-180X Manufacturing 144-LED Zoom Stereo Microscope with 10MP Digital Camera (Dissecting scope, Amscope, SM-1TSZZ-144S-10M, https://www.amscope.com/3-5x-180x-manufacturing-144-led-zoom-stereo-microscope-with-10mp-digital-camera.html ) It is set up with the 0.5x Barlow lens .",
+    "Swirl gently to mix, rewrap plates with parafilm, and incubate 3 days at 30 °C"
+  ],
+  "authors": [
+    "Emily Bellis",
+    "Elizabeth Kelly"
+  ],
+  "creator": "Emily Bellis",
+  "published_on": 1559135301,
+  "created_on": 1557929146,
+  "keywords": []
+}

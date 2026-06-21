@@ -1,0 +1,29 @@
+{
+  "id": 84086,
+  "title": "GFP pull down assay",
+  "uri": "gfp-pull-down-assay-cwcwxaxe",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvwd6x2lmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"31bb3\",\"text\":\"This protocol describes GFP pull down assay.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"fbv4c\",\"text\":\"Materials\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6q218\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7lg0g\",\"text\":\"GFP-Trap agarose beads (Chromotek) \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1vsaa\",\"text\":\"dH2O\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":2,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"bck0v\",\"text\":\"Protein Loading dye\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9jru6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"64d9b\",\"text\":\" Bead assay buffer \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":19}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ht4h\",\"text\":\"      Tris-HCl pH 7.4  25 mM    NaCl  150 mM    DTT  1 mM  \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":59}],\"data\":{}},{\"key\":\"86gbq\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"MUTABLE\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"1_0\":\"\",\"1_1\":\"\",\"2_0\":\"\",\"2_1\":\"\"},\"colTitles\":[\"\",\"\"],\"colWidths\":[\"112\",\"88\"],\"data\":[[\"Tris-HCl pH 7.4\",\"25 mM\"],[\"NaCl\",\"150 mM\"],[\"DTT\",\"1 mM\"]],\"guid\":\"58CB6FDD14DF11EE8DBF0A58A9FEAC02\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"Tris-HCl pH 7.4\",\"25 mM\"],[\"NaCl\",\"150 mM\"],[\"DTT\",\"1 mM\"]],\"rowHeights\":[23,23,23]}}}}",
+  "steps": [
+    "Mix GFP-tagged TBK1 with 20 µL of equilibrated GFP-Trap agarose beads (Chromotek) at a final concentration of 1 micromolar (µM) . Make sure to wash beads 2x in dH2O before washing with bead assay buffer to equilibrate the beads adding the protein to the beads.",
+    "To this end, wash 20 µL of beads twice with dH 2 O and equilibrate with bead assay buffer.",
+    "Resuspend the beads in 40 µL bead assay buffer, to this add GFP-TBK1 at a final concentration of 5 micromolar (µM) .",
+    "Incubate the beads with GFP-TBK1 for 01:00:00 at 4 °C at a horizontal tube roller.",
+    "Wash the beads three times to remove unbound GFP-tagged bait protein.",
+    "Prepare protein master mixes with prey protein in bead assay buffer at the following concentrations: mCherry-OPTN (1 µM), mCherry-NDP52 (1 µM), GST-NAP1 (1-10 µM).",
+    "Add the protein master mixes to the beads and incubate for 01:00:00 at 4 °C at a horizontal tube roller.",
+    "Wash the beads three times to remove unbound proteins, remove any supernatant from the beads and resuspend the beads in 60 µL of 1x Protein Loading dye, and heat-inactivate at 95 °C for 00:05:00 .",
+    "Analyze the samples by SDS-PAGE and Coomassie staining as described above."
+  ],
+  "authors": [
+    "Elias Adriaenssens"
+  ],
+  "creator": "Elias Adriaenssens",
+  "published_on": 1695480183,
+  "created_on": 1687864471,
+  "keywords": []
+}

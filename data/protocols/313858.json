@@ -1,0 +1,38 @@
+{
+  "id": 313858,
+  "title": "MORF Screen in Primary Human CD8+ T cells",
+  "uri": "morf-screen-in-primary-human-cd8-t-cells-jwracpd2f",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvrbwjplmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"fh6rv\",\"text\":\"We describe a pooled lentiviral overexpression screening approach in primary human CD8+ T cells to identify transcription factors that regulate T cell state under acute and chronic stimulation. CD8+ T cells from multiple donors were isolated, activated, and transduced with a barcoded mORF library, followed by expansion, selection, and stimulation under defined conditions. This protocol enables systematic identification of regulators of T cell dysfunction and state transitions, and can be adapted for targeted sublibrary validation and downstream multiomic profiling.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"agmbs\",\"text\":\"Blood collection for this protocol requires prior approval by the users' Institutional Ethics Board or equivalent ethics committee.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"212te\",\"text\":\"Leukopak - fresh (Stem Cell Technologies - Cat #70500)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5kg00\",\"text\":\"CD8+ T cell negative isolation kit (Stem Cell Technologies - Cat #17953)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f8fac\",\"text\":\"Dynabeads Human T-Activator CD3/CD28 (Thermo/Gibco - Cat #11132D)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8m97b\",\"text\":\"PRIME-XV T cell Expansion XSFM (FujiFilm - Cat #91141-1L)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ahe7q\",\"text\":\"Human Platelet Lysate (Compass Biomedical - Cat #PLSA-1000)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6q1t2\",\"text\":\"Penicillin-Streptomycin (Thermo/Gibco - Cat #15140122) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1mvd4\",\"text\":\"Recombinant Human IL-2 (Thermo/Peprotech - Cat #200-02-1MG)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"82v5b\",\"text\":\"Lenti-X Concentrator (Takara - Cat #631232)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aehgl\",\"text\":\"Puromycin (Invivogen - Cat #ant-pr-1)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"78p2o\",\"text\":\"eBioscience Cell Stimulation Cocktail (Thermo/Invitrogen - Cat #00-4970-03)\\n      \\n                \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":75,\"length\":7}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Human CD8+ T cells were isolated from three distinct donors (StemCell Tech) using negative selection human CD8 isolation kits (StemCell Tech).",
+    "For all lentivirus generation, a previously described transfection protocol was used to ensure high lentiviral titer (Marson CRISPRi/a cytokine Science paper).",
+    "T cells were activated with a 3:1 ratio of anti-CD3/CD28 Dynabeads (Gibco) to T cells.",
+    "T cells were cultured in PRIME-XV T cell Expansion XSFM (FujiFilm) supplemented with 5% human platelet lysate (Compass Biomed), 100 U ml−1 penicillin, 100 μg ml−1 streptomycin, and 100 U ml-1 of human IL-2 (Peprotech).",
+    "T cells were activated with a 3:1 ratio of CD3/CD28 dynabeads to T cells and maintained at 1–2 × 106 cells ml−1 unless otherwise indicated. For chronic stimulation experiments, dynabeads were removed using a magnet, and fresh dynabeads at a 3:1 Dynabead:T cell ratio were added.",
+    "In brief, HEK-293Ts were transfected with lentiviral packaging, envelope, and vector of interest plasmids.",
+    "Lentiviral supernatants were harvested 24 hours and 48 hours after transfection, with a media refresh between harvests.",
+    "Lentiviral supernatant was centrifuged at 600g for 10 min to remove cellular debris and concentrated to 50–100× the initial concentration using Lenti-X Concentrator (Takara Bio).",
+    "T cells were transduced at 5–10% v/v of concentrated lentivirus at 24 h post-activation.",
+    "For co-transduction experiments, T cells were transduced at 5-10% v/v of concentrated lentivirus 24 h post activation.",
+    "Day 0: CD8+ T cells were transduced (n=3 biological replicates) with the lentiviral library at 10% v/v, 24 hours after isolation and stimulation with anti-CD3-CD8 Dynabeads (see Isolation and culture of primary human T cells), and expanded for 3 days in standard media.",
+    "Day 10: Acute and chronic conditions were additionally split into two dishes. To one acute sample, and one chronic sample, cells were stimulated were stimulated with 1x T cell stimulation cocktail (Thermo) for two hours. Unstimulated controls were supplemented with an equal volume of ethanol for 2 hours.",
+    "Day 7: both conditions were replenished with standard media with no puromycin. Dynabeads were removed and replenished for the chronic condition at a 3:1 concentration.",
+    "Day 5: Dynabeads were removed, and cells were split into two conditions: acute and chronic. Both conditions were supplemented with 0.5 ug/mL of puromycin, and the chronic condition was additionally restimulated with fresh dynabeads at a 3:1 concentration.",
+    "Day 3: Cells were selected with puromycin at 1 µg/mL for two days."
+  ],
+  "authors": [
+    "Christian McRoberts Amador",
+    "Tomer Rotstein",
+    "Aretha Gao",
+    "Charles Gersbach"
+  ],
+  "creator": "rachelsavage",
+  "published_on": 1774540615,
+  "created_on": 1774383440,
+  "keywords": []
+}

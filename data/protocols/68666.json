@@ -1,0 +1,35 @@
+{
+  "id": 68666,
+  "title": "Operation of Software for Motion Correction of Cardiac MRI by Respiratory Phase",
+  "uri": "operation-of-software-for-motion-correction-of-car-cfa2tige",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgq72j5vk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"7hucf\",\"text\":\"Collection of real-time cardiac MRI scans during breathing is desirable for sick patients unable to hold their breath. The breathing motion in such scans can, however, can be distracting for physicians and clinical staff. Here we introduce the  simple operation of our software that minimizes  distracting  breathing motion in a cardiac MRI scan. The software segregates the cardiac cycles at end-expiration and end-inspiration. The software generates two DICOM files: one with the cardiac cycles from end-expiration (recommended) and the other with the cardiac cycles from end-inspiration (use as needed). The software also plots the time courses of breathing and heart contraction during the dynamic scan, providing a temporal \\\"road map\\\" of the scan. Only a few clicks are needed to operate the software under Windows. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":428,\"length\":178}],\"entityRanges\":[],\"data\":{}},{\"key\":\"8opir\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"1puq9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"2lebi\",\"text\":\"The real-time cardiac MRI scan should be collected throughout at least a full breath out and in, and preferably through multiple respiratory cycles.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4mctd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6v09u\",\"text\":\"The image quality of heart beats during breaths out is highest. Deep breaths in decreased the quality of those image frames in our study. Asking the subject to take only shallow breaths in could improve the image quality of the cardiac cycles during inspiration.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"87s19\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7eav1\",\"text\":\"This software is intended to be vendor-neutral and neutral to the type of real-time acquisition. However, we have only tested this software on cardiac CMR scans acquired with a Siemens system with the cardiac compressed sensing option installed. We invite user feedback regarding usages with scans from other scanners and other acquisition strategies.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9mja9\",\"text\":\"We acquired the images using a Siemens 3T Magnetom VIDA; Syngo MR XA20 with dedicated phased-array cardiac receiver coils (18-channel chest coil, 32-channel spine coil). Patients were placed in the supine position and the chest coil was placed by a MR tech. Free breathing images were acquired with conventional bSSFP and compressed sensing  bypassing electrocardiographic (ECG) triggering. The commercial compressed sensing package allowed us to acquire images up to 22 frames/sec.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Install the software",
+    "Request licensing and price (academic or commercial) by corresponding author Steven Van Doren ( vandorens@missouri.edu ) and/or the Technology Transfer Office of the University of Missouri ( malandb@umsystem.edu ).",
+    "Copy the software package (a zip file) to a hard drive, such as the C: drive",
+    "Double click the MoCo icon to launch the software.",
+    "Click on the Motion Correction tab.",
+    "Choose the CMR scan in DICOM format to import.",
+    "Now the software will run automatically. 00:05:00 It will show the time courses of breathing and heart contraction. After noting these time courses, close this window so that the program can continue to run.",
+    "Select import dcm to import a scan in DICOM format.",
+    "A message box will pop up when the task is completed. Click on the OK button.",
+    "A folder with the results will pop up automatically. The following files will be produced: Inspiratory DICOM file : It includes all the heart beats during inspiration (e.g, Subj_2_MRI_insp) Expiratory DICOM file: It includes all the heart beats during expiration (e.g, Subj_2_MRI_exp) Excel spread sheet: This includes all the principal components in a spreadsheet.",
+    "Exit the program by clicking “Exit”.",
+    "Read at least the cardiac cycles from expiration into a DICOM viewer. ImageJ/Fiji 1.8.0 Windows 7 http://wsr.imagej.net/distros/win/ij152-win-java8.zip National Institutes of Health"
+  ],
+  "authors": [
+    "Steven Van Doren",
+    "Jia Xu",
+    "Zhijian Luan",
+    "Afia Shammi"
+  ],
+  "creator": "Steven Van Doren",
+  "published_on": 1661649613,
+  "created_on": 1660588426,
+  "keywords": []
+}

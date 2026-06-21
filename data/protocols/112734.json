@@ -1,0 +1,37 @@
+{
+  "id": 112734,
+  "title": "Directed cardiac lineage differentiation of human pluripotent stem cells",
+  "uri": "directed-cardiac-lineage-differentiation-of-human-dsb66are",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v922bzl3e/v2",
+  "description": "{\"blocks\":[{\"key\":\"c2bci\",\"text\":\"Robust cardiac lineage differentiation from human pluripotent stem cells (hPSCs) holds great potential for regenerative medicine, disease modeling, and drug discovery. Adapted from previous protocols (Proc Natl Acad Sci U S A. 2012 Jul 3;109(27), PMID: 22645348; Cell Stem Cells, 2013 Jan 3;12(1):127-37, PMID: 23168164; Nature biotechnology. 2007 Sep;25(9):1015-24. PMID: 17721512; Nature protocols. 2017 Jan;12(1):15-31. PMID: 27906170), we present a robust monolayer protocol for efficiently generating both cardiomyocytes and cardiac fibroblasts from multiple human embryonic stem cell (hESC) and human induced pluripotent stem cell (hiPSC) lines. This method involves the sequential modulation of key signaling pathways to mimic the stages of cardiac development. Prior to differentiation, hPSCs are maintained in a defined pluripotent state using a feeder-free culture system. Cardiac lineage differentiation is initiated by the temporal inhibition of GSK3, followed by treatment with Activin A and BMP4, directing these hPSCs toward a cardiac fate. These cardiomyocytes display spontaneous contractile activity and express markers for both pan-cardiomyocytes (e.g. TNNT2) and ventricular cardiomyocyte fates (e.g. IRX4 and MYH7).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "DMEM/F12: Thermofisher cat# 11330-032 StemMACS iPS-Brew XF, human: Miltenyi Biotec cat# 130-104-368 Geltrex‱ LDEV-Free RGF: Thermofisher cat# A1413202 RPMI 1640 : Life Technologies, cat. #11875-085 (1 L) B-27 (plus insulin) : Life Technologies, cat. #17504-044 (10 mL) B-27 (minus insulin) : Life Technologies, cat. #A1895601(10 mL) CHIR99021: Cayman Chemical, cat. #13122 (1 mg) BMP-4: Peprotech, cat. #AF-120-05ET Activin A : StemCell Technologies, cat. #78001.2 (1 mg) Xav 939 : Calbiochem EMD, cat. #575545 (10 mg) L-glutamine: Life Technologies, cat. #25030-081 (100 mL) Fetal Bovine Serum (FBS), Premium Grade: VWR, cat. #97068-085 (500 mL) Thiazovivin: Cayman Chemical Co., cat. #14245 TrypLE Express: Life Technologies, cat. #12605010 (100 mL)",
+    "Preparing Geltrex-coated plates",
+    "Prepare Geltrex by thawing an aliquot on ice for about a half hour.",
+    "Passaging Feeder-Independent iPS Cells onto Geltrex-coated plates, plate cells in 1.5 mL of iPS-Brew XF medium + 2 μM Thiazovivin. Recommended seeding densities: 0.12-0.7 x 10 6 cells per well on a 12-well plate.",
+    "Immediately add 1 ml of cold DMEM/F12 to the tube of thawed Geltrex, pipet to mix, and add the mixture to the remaining DMEM/F12 (Geltrex is used at a 1:100 dilution).",
+    "Dispense into 6-well, 1 mL per well. Allow the plate to sit for 1 hour in the hood at room temperature.",
+    "Day 0, Change media to iPS-Brew + 1 μM CHIR99021.",
+    "Day 1 , aspirate media and add Activin A at 100 ng/ml in RPMI media supplemented with B27 (minus insulin). Incubate 18 hours.",
+    "Day 2 , Change medium with RPMI media supplemented with B27 (minus insulin) + 5 ng/ml BMP4 + 1 μM CHIR99021. At the end of this incubation, the goal is to reach over 100% confluency of the well, at least one tightened, homogeneous layer of mesodermal cells.",
+    "Day 4 , Aspirate the media and replace with 2 mL fresh RPMI media supplemented with B27 (minus insulin) + 1 μM Xav 939. During this incubation, cell death is common and expected. Higher transparency under phase contrast of the cells is expected at the end of this transition from mesoderm to cardiac progenitors phase.",
+    "Day 6 , Aspirate the media and replace with 3 mL fresh RPMI media supplemented with B27 (minus insulin). You should begin to see some branching of the cells, forming a web-like network during this cardiac progenitor differentiation stage.",
+    "Day 9 , aspirate the media and replace with fresh RPMI media supplemented with B27 (with insulin) with 0.5X Penn/Strep and 1X L-glutamine. From this point on, the medium + supplement is replaced every other day. There should be a clear web-like network formed with some mildly contracting cells.",
+    "The cells can be maintained with B27 (with insulin) with 0.5X Penn/Strep and 1X L-glutamine until Day 16.",
+    "1. Lian, Xiaojun, et al. &#34;Robust cardiomyocyte differentiation from human pluripotent stem cells via temporal modulation of canonical Wnt signaling.&#34; Proceedings of the National Academy of Sciences 109.27 (2012): E1848-E1857. 2. Tohyama, Shugo, et al. &#34;Distinct metabolic flow enables large-scale purification of mouse and human pluripotent stem cell-derived cardiomyocytes.&#34; Cell stem cell 12.1 (2013): 127-137. 3. Laflamme, Michael A., et al. &#34;Cardiomyocytes derived from human embryonic stem cells in pro-survival factors enhance function of infarcted rat hearts.&#34; Nature biotechnology 25.9 (2007): 1015-1024. 4. Palpant, Nathan J., et al. &#34;Generating high-purity cardiac and endothelial derivatives from patterned mesoderm using human pluripotent stem cells.&#34; Nature protocols 12.1 (2017): 15-31."
+  ],
+  "authors": [
+    "Fan Li",
+    "Jingli Cai",
+    "Wenli Yang",
+    "Hao Wu"
+  ],
+  "creator": "Fan Li",
+  "published_on": 1733756333,
+  "created_on": 1732549797,
+  "keywords": []
+}

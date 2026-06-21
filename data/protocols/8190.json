@@ -1,0 +1,33 @@
+{
+  "id": 8190,
+  "title": "Assembly Stats with MetaQuast",
+  "uri": "assembly-stats-with-metaquast-j86crze",
+  "doi": "dx.doi.org/10.17504/protocols.io.j86crze",
+  "description": "{\"blocks\":[{\"key\":\"63p01\",\"text\":\"Calculate various assembly statistics using the MetaQuast app on the CyVerse Discovery Environment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"290dq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"3moe2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"866t0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Go to https://user.cyverse.org/ https://user.cyverse.org/",
+    "Click &#34;Sign Up&#34; to create an account.",
+    "After account creation go back to https://user.cyverse.org/ and login with your account. https://user.cyverse.org/",
+    "Launch the discovery environment. a",
+    "Click the &#34;Data&#34; button found on the left. Navigate to your user folder. a 5",
+    "Click &#34;Upload&#34; &gt; &#34;Simple Upload From Desktop&#34;",
+    "Upload your final.contigs.fa file generated from Megahit. Important: You must scp your contigs to your local machine before you can upload. $ scp username@sftp.hpc.arizona.edu:/rsgrps/bh_class/username/assembly/megahit-out/final.contigs.fa .",
+    "Once your upload is complete, click on the &#34;Apps&#34; button found on the left. a",
+    "Search for &#34;MetaQuast&#34;. Click on MetaQuast-4.3 (denovo based) a",
+    "Under the &#34;Fasta file(s)&#34; tab, select the newly uploaded final.contigs.fa file. This is the only parameter that needs to change. Click &#34;Launch Analysis&#34;.",
+    "Once MetaQuast is complete (email notification), navigate to the output found in the &#34;analyses&#34; folder in your data storage.",
+    "Download the &#34;report.html&#34; file found in the MegaQuast output folder.",
+    "Open the report.html file to see a summary of assembly statistics."
+  ],
+  "authors": [
+    "James E Thornton Jr"
+  ],
+  "creator": "James E Thornton Jr",
+  "published_on": 1507662632,
+  "created_on": 1507661653,
+  "keywords": []
+}

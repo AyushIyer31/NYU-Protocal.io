@@ -1,0 +1,29 @@
+{
+  "id": 7714,
+  "title": "Getting started on your project",
+  "uri": "getting-started-on-your-project-jsacnae",
+  "doi": "dx.doi.org/10.17504/protocols.io.jsacnae",
+  "description": "{\"blocks\":[{\"key\":\"9c2pq\",\"text\":\"Today, we are going to get you set up for your class project. You will need a class directory for putting all of your files. Also, you will need to download the data for your project (see the list of SRR numbers in D2L).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"2325u\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"33cf6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"bt3tv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Login to the HPC and move over to the ocelote cluster. ssh hpcocelote ssh hpc ocelote",
+    "Create a class directory. Choose a user name for storing your project files. All files for the class project will be written to this directory. change &#34;username&#34; to YOUR user name. mkdir /rsgrps/bh_class/username",
+    "Go into your user directory. Change &#34;username&#34; to YOUR user name. cd /rsgrps/bh_class/username",
+    "Create directories for downloading fastq project files. We will download the paired reads from the SRA. mkdir fastqcd fastq mkdir fastq cd fastq",
+    "Create a file called &#34;list&#34; with all of your SRR file names. nano list",
+    "using nano edit the get-fastq.sh script by adding the commands. This script runs on a node on the HPC (we will execute in a step below). The script uses the sra-tookit to download files from Genbank (a public sequence repository). It downloads the files as paired ends if applicable. #!/bin/bash#PBS -W group_list=bh_class#PBS -q windfall#PBS -l select=1:ncpus=6:mem=12gb#PBS -l walltime=48:00:00#PBS -l cput=48:00:00#PBS -M username@email.arizona.edu#PBS -m beamodule load unsupportedmodule load nirav/sratoolsecho “my job_id is: ${PBS_JOBID}”FASTQ_DIR= #!/bin/bash #PBS -W group_list=bh_class #PBS -q windfall #PBS -l select=1:ncpus=6:mem=12gb #PBS -l walltime=48:00:00 #PBS -l cput=48:00:00 #PBS -M username@email.arizona.edu #PBS -m bea module load unsupported module load nirav/sratools echo “my job_id is: ${PBS_JOBID}” FASTQ_DIR=&#34;/rsgrps/bh_class/username/fastq&#34; export $FASTQ_DIR cd $FASTQ_DIR for file in `cat list`; do fastq-dump --outdir $FASTQ_DIR --gzip --skip-technical --readids --dumpbase --split-files --clip $file; done",
+    "Create a script for downloading the SRR files touch get-fastq.shchmod 755 get-fastq.sh touch get-fastq.sh chmod 755 get-fastq.sh",
+    "mkdir std-err std-outqsub -o std-out -e std-err get-fastq.sh mkdir std-err std-out qsub -o std-out -e std-err get-fastq.sh you will see where the job runs: $ qsub -o std-out -e std-err get-fastq.sh815336.head1.cm.cluster",
+    "You can check if you job is running using the qstat command. qstat $ qstat | egrep hur815336.head1 get-fastq.sh bhurwitz 0 Q oc_standard"
+  ],
+  "authors": [
+    "Bonnie L Hurwitz"
+  ],
+  "creator": "Bonnie L Hurwitz",
+  "published_on": 1504812963,
+  "created_on": 1504812730,
+  "keywords": []
+}

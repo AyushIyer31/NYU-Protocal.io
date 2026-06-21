@@ -1,0 +1,41 @@
+{
+  "id": 89914,
+  "title": "Assessing autophagy using the HaloTag-LC3B cleavage assay",
+  "uri": "assessing-autophagy-using-the-halotag-lc3b-cleavag-c322yqge",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvwdo9zlmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"4nvil\",\"text\":\"Assay to detect HaloTag-LC3B during starvation autophagy based on  https://doi.org/10.7554/eLife.78923.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":67,\"length\":35}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"F40464AA748A11EEB7700A58A9FEAC02\",\"url\":\"https://doi.org/10.7554/eLife.78923\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Generate HeLa cells expressing HaloTag-LC3B using pMRX-IP-HaloTag7-LC3 from Mizushima lab (Addgene #184899; DOI: 10.7554/eLife.78923).",
+    "Seed 400-450K cells in a six-well plate one day prior to the experiment.",
+    "Feed cells with 1 mL of complete DMEM for 01:00:00",
+    "Replace with 1 mL of complete DMEM containing 50 nanomolar (nM) TMR-conjugated Halo ligand (Promega, GA1120) and incubate at 37 °C for 00:20:00",
+    "Wash cells thrice with 1x PBS followed by incubation in 2 mL of EBSS (Gibco, 24010043) for 06:00:00",
+    "Following starvation, harvest cells via cell scraping On ice .",
+    "Aspirate off DMEM and wash cells in 1 mL of ice cold 1x PBS.",
+    "Scrape cells from each well in 600 µL of ice-cold 1x PBS and transfer into chilled 1.5 ml Eppendorf tube.",
+    "To collect residual cells, add another 600 µL of ice-cold 1x PBS transfer into 1.5ml eppendorf tube.",
+    "Spin down cells at 10000 x g, 4 °C, for 00:01:00 and aspirate off PBS.",
+    "Perform a quick-spin at 10000 x g, 4 °C, and aspirate off residual PBS.",
+    "Cell pellets can be frozen at -20 °C or immediately used for immunoblotting",
+    "Lyse cells in 1 xLDS NuPAGE‱ LDS Sample Buffer (Invitrogen, NP0007) containing 100 millimolar (mM) DTT and Boil at 99 °C on thermomixer with shaking.",
+    "Measure protein concentration using A280 setting on Nanodrop. Ensure sample concentration is between 4-6 mg/ml.",
+    "Load 20 ug of protein on 4-12% Bis-Tris gels (Invitrogen, WG1402A). Run gel using 3-step ramp up setting (100v for 10mins, 150v for 10mins and 180v for 55mins).",
+    "Transfer protein using wet transfer method onto an Immobilon-P PVDF Membrane ( 0.45 µm pore size) using a Criterion blotter (Bio-rad, 1704070), 100v for 01:00:00 .",
+    "Wash and block PVDF membrane: - 1x in PVDF destain for 00:01:00 - 3x in TBS-T (1xTBS/0.05% Tween-20) for 00:02:00 each. - Block in 10% Milk/TBS-T for 00:20:00 - 3x in TBS-T for 00:02:00 each",
+    "Cut the blots at the 65kDa molecular weight marker and incubate in primary antibodies made up in TBS-T/3% BSA overnight at 4 °C on rocking platform - &gt;65kDa section in VCP (Cell signalling, 2648S) (1/1000 dilution) - &lt;65kDa section in anti-HaloTag (Promega, G9211) (1/100 dilution)",
+    "Following overnight incubation, recycle antibodies back into tubes and wash PVDF membrane. - 3x in TBS-T for 00:02:00 each",
+    "Incubate in anti-mouse HRP (Cell signalling, 7076S) and anti-rabbit HRP secondary antibodies (Cell Signalling, 7074S) for 01:00:00 - HaloTag (1/10,000 dilution for secondary) - VCP (1/5,000 dilution for secondary)",
+    "Wash blots prior to developing in ECL prime (Cytiva, RPN2232SK) - 2x in TBS-T for 00:02:00 each. - 2x in TBS for 00:02:00 each."
+  ],
+  "authors": [
+    "Marvin Skulsuppaisarn"
+  ],
+  "creator": "Marvin Skulsuppaisarn",
+  "published_on": 1698390070,
+  "created_on": 1698300594,
+  "keywords": []
+}

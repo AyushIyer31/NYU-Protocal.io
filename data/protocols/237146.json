@@ -1,0 +1,39 @@
+{
+  "id": 237146,
+  "title": "Social Interaction Test",
+  "uri": "social-interaction-test-hjt2b4nqf",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v9bjbml3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"bin38\",\"text\":\"This test assesses exploration/interaction between conspecifics and social behaviors.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"247uq\",\"text\":\"Social interaction arena x2\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6oisa\",\"text\":\"Wire cups x4\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1hnmo\",\"text\":\"Metal paperweights x4\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2dhdi\",\"text\":\"Duplo blocks x2, Tape\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9k3u7\",\"text\":\"70% ethanol for cleaning\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9mokl\",\"text\":\"Ethovision Software: https://noldus.com/ethovision-xt\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":21,\"length\":32}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"5E72CC36EB3111F081000A58A9FEAC02\",\"url\":\"https://noldus.com/ethovision-xt\"}}}}",
+  "steps": [
+    "LIGHT SETTINGS: The room should be set to 50% animal day lighting and both floor lamps should be onfull power facing directly up. The camera aperture should be slightly closed(so less light comes in).",
+    "Check the position of the arenas in acquisition mode.",
+    "Place both arenas underneath the camera and reassemble the walls. Use tape to secure the corners.",
+    "Open the social interaction Ethovision template and save as a new experiment with a name of your choosing. Fill in the Trial Setup page with mouse SIDs and trial info (Habituation-&gt; Preference-&gt; Recognition (optional)).",
+    "Clean the entire arena with 70% ethanol.",
+    "Place the 4 wire cups on the marked positions in Chambers 1 and 3 of each arena. Place the paperweight on top, making sure it doesn’t block the perimeter of the cup on the camera view",
+    "Chamber doors should be left outside of the arena to start.",
+    "Habituate mice to room for 1 hr prior to start of testing.",
+    "When ready to start, make sure the camera is not detecting any background noise.",
+    "Start acquisition and gently place each mouse into chamber 2 of each arena against the wall closest to you. Be careful not to stick your body into the camera’s field of view",
+    "Let the mice explore for 10 minutes and take notes for any off behavior. When the trial finishes, press okay.",
+    "Gently lead each mouse into the center chamber and close them in with the doors. While the mouse is held inside Chamber 2, place a stimulus mouse in Cup 1 in Chamber 1. If in the experiment plan, place a Duplo block under Cup 2 in Chamber 3.",
+    "Remove the doors, AND THEN quickly start acquisition for the next trial. (If you start acquisition before removing the doors, Ethovision will track your hands and you will have to edit the tracks after).",
+    "Repeat step 10",
+    "Double check that the cups and paperweights are in position.",
+    "If performing Social Recognition test, lead the test mouse into the center chamber and again trap with the doors. Replace the Duplo block with a second stimulus mouse. Then double check the positions of the cups and paperweights. Remove the doors, and quickly start the next trial",
+    "After the last trial, place all mice back into their home cages and thoroughly clean the arena, wire cups, and blocks with ethanol.",
+    "Repeat steps 8-16 as needed to test all mice."
+  ],
+  "authors": [
+    "Eileen Ruth Torres",
+    "Roberta Marongiu"
+  ],
+  "creator": "Jacquelyn Haytayan",
+  "published_on": 1767726098,
+  "created_on": 1767725167,
+  "keywords": []
+}

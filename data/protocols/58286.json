@@ -1,0 +1,32 @@
+{
+  "id": 58286,
+  "title": "Rapid Run v2 Primer Rehyb",
+  "uri": "rapid-run-v2-primer-rehyb-b46nqzde",
+  "doi": "dx.doi.org/10.17504/protocols.io.b46nqzde",
+  "description": "{\"blocks\":[{\"key\":\"9r9bt\",\"text\":\"Switch the flowcell to another sequencer if first base fails - HiSeq\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"6ak68\",\"text\":\"If a rapid run has failed at first base and you want to switch the flowcell to another side or sequencer, follow these steps (ONLY applicable to single read runs, changing sequencer for paired end run is not possible)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":125,\"length\":92},{\"style\":\"UNDERLINE\",\"offset\":125,\"length\":92}],\"entityRanges\":[],\"data\":{}},{\"key\":\"eplv9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3ncdn\",\"text\":\"These steps are to be performed on the HiSeq where the flow cell is being moved.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":80}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"5r828\",\"text\":\"ONLY applicable to single read runs, changing sequencer for paired end run is not possible\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":90},{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":90}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Wash the sequencer that will be used (MWB and then water). [Link to wash protocol]",
+    "Load the SBS rack (with reagents) to the sequencer.",
+    "Load water in the Paired End rack and the template tubes.",
+    "Place a dummy flowcell on the deck. Engage vacuum.",
+    "Setup the run as normally you would, but select “cluster generation on cbot.” even if it was onboard clustering. This will save an additional hour of time.",
+    "Enter the other parameters used for the flowcell, such as read lengths, flowcell ID, etc...This will create the files needed to allow you to do a rehyb later.",
+    "Start the run and wait for the first base report to come up. End the run.",
+    "Thaw a Rehybridization kit and replace or top-off the reagents according to the “HiSeq Rapid Primer Rehybridization Reference Guide.” A general summary is below.",
+    "For Single-Read Runs , replace/top-off the following reagents with these from the Rehyb kit: %s %s Position Reagent Description 5 USB Add to current USB bottle 18 HP10 Replaces Read1 primer 17 HP12 Replaces Index1 primer (i7) 16 HP9 Replaces Index2 primer (i5)",
+    "Leave the dummy flowcell on the sequencer. You will prime following reagent twice: FDR (position 15) - aspiration rate of 1500, dispense rate of 2000, and using 250uL Flow USB (5) - aspiration rate of 1500, dispense rate of 2000, and using 250uL",
+    "Return to the Main screen and select “Sequence,” then “Rehyb Run.” Replace the dummy flowcell with sequencing flowcell and proceed with rehybridization."
+  ],
+  "authors": [
+    "A Chilaka",
+    "Sumeet Gupta"
+  ],
+  "creator": "A Chilaka",
+  "published_on": 1647172182,
+  "created_on": 1645025357,
+  "keywords": []
+}

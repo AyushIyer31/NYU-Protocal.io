@@ -1,0 +1,25 @@
+{
+  "id": 2792,
+  "title": "Quality Control of Reads Using Trimmomatic (Cyverse)",
+  "uri": "Quality-Control-of-Reads-Using-Trimmomatic-Cyverse-eygbftw",
+  "doi": "dx.doi.org/10.17504/protocols.io.eygbftw",
+  "description": "{\"blocks\":[{\"key\":\"35p0l\",\"text\":\"A collection of protocols designed to guide the user in processing a viral metagenome from raw sequence data to assembly, and subsequent analysis. The user uses actual reads from Ocean Sampling Day (2014) and processes them entirely within Cyverse, a NSF-supported cyberinfrastructure.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":161,\"length\":6}],\"entityRanges\":[{\"key\":0,\"offset\":179,\"length\":25}],\"data\":[]},{\"key\":\"fnfmt\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9r8ls\",\"text\":\"Quality trimming of reads is important!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"1468BF856B1A46F4AFD8A36B302CB220\",\"url\":\"https://github.com/MicroB3-IS/osd-analysis\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"7f6o9\",\"text\":\"This is part of a larger protocol Collection that involves the end-to-end processing of raw viral metagenomic reads obtained from a sequencing facility to assembly and analysis using Apps (i.e. tools) developed by iVirus and implemented within the Cyverse cyberinfrastructure.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":34,\"length\":10}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"9l0lf\",\"text\":\"To run this protocol, users must first register for Cyverse account. All data (both inputs and outputs) are available within Cyverse's data store at /iplant/home/shared/iVirus/ExampleData/\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":39,\"length\":8}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"AFC7C15981CF4FE7BDCEA7102D0D63C9\",\"url\":\"https://user.iplantcollaborative.org/register/\"}}}}",
+  "warning": "{\"blocks\":[{\"key\":\"e2o2a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Open Trimmomatic Open Trimmomatic 0.35.0 from &#39;Apps&#39; a",
+    "Select Inputs Select the &#39;Inputs tab. For Reads file (for paired or unpaired) : Navigate to Community Data -- &gt; iVirus --&gt; ExampleData --&gt; Trimmomatic --&gt; Inputs --&gt; Reads . Select OSD46_R1_shotgun_workable.fastq.gz Alternatively, copy-and-paste the location: /iplant/home/shared/iVirus/ExampleData/Trimmomatic/Inputs/Reads into the navigation bar and select the fastq.gz file. For Reads file (ONLY USE FOR PAIRED END) : Only use this file if it&#39;s read pair 2. Don&#39;t try to double-up two single-end reads. Navigate to Community Data -- &gt; iVirus --&gt; ExampleData --&gt; Trimmomatic --&gt; Inputs --&gt; Reads . Select OSD46_R2_shotgun_workable.fastq.gz Alternatively, copy-and-paste the location: /iplant/home/shared/iVirus/ExampleData/Trimmomatic/Inputs/Reads into the navigation bar and select the fastq.gz file. For Illumina adapter file : Navigate to Community Data -- &gt; iVirus --&gt; ExampleData --&gt; Trimmomatic --&gt; Inputs --&gt; Adapters . Select TruSeq3-PE.fa Alternatively, copy-and-paste the location: /iplant/home/shared/iVirus/ExampleData/Trimmomatic/Inputs/Adapters into the navigation bar and select the fasta file. a",
+    "Select Parameters Select the &#39;Parameters&#39; tab. The default options will suffice for this example. a",
+    "Launch Analysis Run the job! Trimmomatic can take minutes to hours to complete.",
+    "Results Trimmomatic will generate 5 output files. 2 paired files where both forward and reverse survived read trimming, 2 unpaired files where their pair/mate did not survive, and a log file. Expected results can be found from the &#39;Outputs&#39; directory of Trimmomatic. a"
+  ],
+  "authors": [
+    "Benjamin Bolduc"
+  ],
+  "creator": "Benjamin Bolduc",
+  "published_on": 1462944465,
+  "created_on": 1462944410,
+  "keywords": []
+}

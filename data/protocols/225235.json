@@ -1,0 +1,30 @@
+{
+  "id": 225235,
+  "title": "4D ALIGNMENT ANALYSIS PROTOCOL",
+  "uri": "4d-alignment-analysis-protocol-g77tbzrnp",
+  "doi": "dx.doi.org/10.17504/protocols.io.5qpvodrmzg4o/v2",
+  "description": "{\"blocks\":[{\"key\":\"4tujl\",\"text\":\"This protocol describes a 4D analysis workflow for\\nreconstructing and quantifying the alignment of chromosomes and NDC80-GEM foci\\nin the spindle over time using Imaris software.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"qyksr\",\"text\":\"1. Open time-lapse image datasets in Imaris software (Bitplane).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"n62jl\",\"text\":\"2. Reconstruct and segment chromosomes and NDC80-GEM foci in 3D using the automatic thresholding function.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"suaov\",\"text\":\"3. Manually validate all segmented surfaces according to fluorescent signals and record it.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"xoxvf\",\"text\":\"4. Manually estimate the spindle axis at each timepoint based on chromosome distribution and record it using the camera manager function.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"wi36s\",\"text\":\"5. Define the spindle center as the center of mass of the chromosomes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ffo8v\",\"text\":\"6. For timepoints before the spindle axis is established (e.g., 2 hours after NEBD), apply the spindle axis determined at 3 hours after NEBD.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ntu5l\",\"text\":\"7. In the alignment analysis, manually exclude NDC80-GEM clusters located outside the spindle.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Open time-lapse image datasets in Imaris software (Bitplane).",
+    "Reconstruct and segment chromosomes and NDC80-GEM foci in 3D using the automatic thresholding function.",
+    "Manually validate all segmented surfaces according to fluorescent signals and record it.",
+    "Manually estimate the spindle axis at each timepoint based on chromosome distribution and record it using the camera manager function.",
+    "Define the spindle center as the center of mass of the chromosomes.",
+    "For timepoints before the spindle axis is established (e.g., 2 hours after NEBD), apply the spindle axis determined at 3 hours after NEBD.",
+    "In the alignment analysis, manually exclude NDC80-GEM clusters located outside the spindle."
+  ],
+  "authors": [
+    "Yuanzhuo Zhou",
+    "Kohei Asai",
+    "Hirohisa Kyogoku",
+    "Tomoya S. Kitajima"
+  ],
+  "creator": "Yuanzhuo Zhou",
+  "published_on": 1755851436,
+  "created_on": 1755826888,
+  "keywords": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": 80849,
+  "title": "Assesing Wing Damage Index (WDI) in bats using ImageJ software",
+  "uri": "assesing-wing-damage-index-wdi-in-bats-using-image-cs7rwhm6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlkwq91l5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"5vf6i\",\"text\":\"Examining the visual health of bats can offer valuable insights into their overall well-being. The condition of wing membranes is essential for bats, supporting water balance and protecting against dehydration during hibernation.  Assessing the visual state of bat wing membranes is crucial for tracking their health and identifying abnormalities or infections in the wild.  However, conducting this assessment in the field poses practical challenges, potential biases, and increased handling time, which can stress the animals. To address these issues, we propose a new way of collecting data on wing condition of bats. This method involves capturing images of bats' wings in the field and subsequently performing a detailed visual examination of these photos using the open-access software ImageJ. It allows for a careful and thorough examination of the visual health state of the wings, collecting quantitative data on different abnormal structures and further scoring the wing damage index (WDI), providing a more accurate and comparable assessment. In addition, our protocol allows for a precise estimation of the wing surface area, a crucial but currently understudied morphological parameter.\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"46fp1\",\"text\":\"\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"6mn3r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"dsuhc\",\"text\":\"Use this protocol only if you are experienced (and certified if needed) in bat handling with an up-to-date permit. Follow all the ethical requirements for working with bats.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"99ha3\",\"text\":\"Materials for capturing the bats (harp trap, mist nets or hand net), cotton bags for keeping the bats, disposable nitrile gloves,  laminated graph paper, camera or a smartphone, head torch,  additional light source, measuring tape, protective face mask, and disinfectant. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Place a laminated graph paper on a convenient, flat, and stable surface. The laminated surface will allow you to write down a number code to distinguish between individuals/species and to disinfect it after each individual. Write down a code on the laminated paper containing the date, location, and ID of the individual.",
+    "Photograph the wing. Try to consistently collect each photo from the same height and with similar light exposure. Use measuring tape or an object to rest the camera if needed. Wing photograph with a handwritten code.",
+    "Install the ImageJ software by following the instructions on the software website .",
+    "Open ImageJ software and click on &#34;File&#34; -&gt; &#34;Open&#34; to select the photo of the bat wing.",
+    "Adjust the image scale using the graph paper in the photo as a reference. Use the “Straight Line&#34; tool to draw a line on the graph paper that corresponds to a known distance (e.g., 1 cm on the graph paper). Open the “Set scale” tool from the “Analyze” menu. The distance you measured in pixels will be displayed. Set the known distance to 1, the pixel aspect ratio to 1, and the unit of length to centimeters (cm). Click &#34;OK&#34;. Setting the image scale.",
+    "Use the &#34;Polygon Selection&#34; tool to trace the outline of the bat wing in the photo. Make sure to trace around the entire wing, including any curves or folds. Outlining the bat wing using the &#34;Polygon Selection&#34; tool.",
+    "Click on &#34;Analyze&#34; -&gt; &#34;Measure&#34; (Ctrl + m) to open the &#34;Results&#34; window. This window will display various measurements of the selected area, including the surface area. Measuring the surface area of the wing.",
+    "Take note of the wing surface area measurement in the &#34;Results&#34; window. Extract the value from the &#34;Area&#34; column and store the results in an external dataset for analysis.",
+    "If necessary, repeat steps 8-10 for different sections of the bat wing to obtain surface area measurements for specific areas of interest, such as discolorations.",
+    "For the estimation of the WDI, it is important to count and measure several different parameters: Translucent spots from old injuries, Pin-size dark spots, Small tears (&lt;0.5mm), and Large tears (&gt;0.5mm). As the Index was originally developed for bats affected by the White-nose disease (WND), we adapted new criteria to assess the wing condition for locations where the fungal pathogen is not affecting the animals as much, presented in Table 1. Our protocol can be adapted for the criteria presented in Table 2, which is the original assessment strategy developed by Reichard and Kunz (2009). Table 1. Assessing the WDI in locations less affected by the WND. Table 2. Criteria used for the assessment of the WDI in locations affected by the WND (see Reichard &amp; Kunz, 2009).",
+    "Disinfect the graph paper and repeat with the next animal.",
+    "Gently cover the body of the bat with a cotton bag, except for the forearm and the wing you are going to photograph. Make sure that the feet of the bat are inside the cotton bag, and gently place the animal ventrally on the graph surface. Spread the selected wing on the graph paper. The wing membrane sticks nicely to the laminated surface, so you would only need to press partly the forearm during the procedure. However, this might not be the case for some bat species, especially larger ones.",
+    "Double-click on the Multi-point tool to show the menu. Choose the marker&#39;s type, color, and size from the Point Tool menu.",
+    "Start counting the different types of damage on the bat wing from the photo by clicking on each damaged spot. This way, you will mark it with a circle that the program automatically creates with each click. Use a consistent color code for the different types of damage. Counting different types of wing damage, using the Multi-point tool.",
+    "When counting is completed, the results can be extracted from the main menu by selecting &#34;Analyze&#34; → &#34;Measure&#34;. The program will generate a table with theresults. Only the data from the columns “Counter” and “Count” are needed. The two columns contain repeated information for each row. Extract the count from only one row per count number and store the results in an external dataset for analysis. Extracting the results of the count.",
+    "Repeat steps (2) and (3) with the other wing. Try to be consistent and always start with the right wing, followed by the left wing."
+  ],
+  "authors": [
+    "Nia Toshkova",
+    "Stanimira Deleva"
+  ],
+  "creator": "Nia Toshkova",
+  "published_on": 1705434858,
+  "created_on": 1682005507,
+  "keywords": []
+}

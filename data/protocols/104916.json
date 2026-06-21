@@ -1,0 +1,32 @@
+{
+  "id": 104916,
+  "title": "URMC TriState SenNet Mouse Lung Digestion",
+  "uri": "urmc-tristate-sennet-mouse-lung-digestion-dipu4dnw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5qpvok9z9l4o/v2",
+  "description": "{\"blocks\":[{\"key\":\"2i9s4\",\"text\":\"The objective of this document is to share the material and kits used and steps involved in digesting the mouse lungs to perform scRNA analyses. This study was performed for the TriState SenNet TMC Bioanalyses Core at the University of Rochester, as part of the Cellular Senescence Network Program (SenNet).  This protocol ensures minimum damage to the cells in suspension and ensures maximum viability to conduct downstream analyses.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"fdart\",\"text\":\"Materials, Equipment \\u0026 Reagents including Formulations\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":54}],\"entityRanges\":[],\"data\":{}},{\"key\":\"cikpl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2geb9\",\"text\":\"Liberase: (Cat# 5401127001; Roche)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d1s9k\",\"text\":\"DNase I (Cat# 4380-096-06; R\\u0026D)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"54amj\",\"text\":\"3. Serum free DMEM\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2fhm5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c35ot\",\"text\":\"4. Disposables:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a9g2k\",\"text\":\"i) C-tubes for GentleMACS (Cat# 130-093-237, Miltenyi Biotec)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6ktj4\",\"text\":\"ii) MACS SmartStrainers 70µm (Cat# 130-098-462, Miltenyi Biotec)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5vrcd\",\"text\":\"iii) Sterile serological pipets; 50, 25,10, 5, 2, 1 mL size\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"t5bu\",\"text\":\"iv) Sterile pipet tips; 1000, 200 and 20 μl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9nbcp\",\"text\":\"v) Sterile 15mL or 50mL conical polypropylene tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7df67\",\"text\":\"vi) Test tube racks for 15mL or 50mL conical tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cu8o6\",\"text\":\"vii) LD columns (Cat# 130-042-901; Miltenyi Biotec)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7jmqh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"57cf5\",\"text\":\"5. Equipment:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1qfvs\",\"text\":\"i) GentleMACS Tissue Octo Dissociator (Miltenyi Biotec Inc San Diego, CA)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1em0c\",\"text\":\"ii) MACSmix tube rotator\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"93vl1\",\"text\":\"iii) Table Top Centrifuge\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dmcv0\",\"text\":\"iv) Biological Safety Cabinet, Class II\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ejmnl\",\"text\":\"v) Dissecting forceps and scalpel\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ahc71\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"djlcn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2aiaj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Immediately transfer the tubes to MACS Tissue Dissociator and run user-defined program named m_lung_01_02 for mouse lungs.",
+    "Mince tissue finely, place into 50ml GentleMACS C-tube with liberase enzymatic cocktail .",
+    "Thereafter, place 50ml conical with digestion into an incubating rocker for 30 minutes at 37 °C . NOTE: If you still see chunks of lung tissue in the tubes after this step then transfer to the MACS Tissue Dissociator and run user-defined program named m_lung_02_01 for mouse lungs for 10-15 sec.",
+    "Remove conical from rocker and strain the cell suspension through 70 micron into 50mL tube",
+    "Add 3 ml DMEM (10% FBS) through the strainer to collect the remaining cell suspension",
+    "After straining, centrifuge at 300g for 5 minutes at 4 °C .",
+    "Remove supernatant, add 500 µl of red blood cell lysis to cell pellet. Incubate the cell suspension On ice for 5 min.",
+    "After incubation add 4.5 mL of DMEM (10% FBS) to the suspension and centrifuge at 300g for 5 minutes at 4 °C .",
+    "Remove supernatant, re-suspend pellet in 2 mL DMEM (10%FBS)",
+    "Count cells and viability using AO/PI method, confirm reading under microscope",
+    "For 50mg tissue use 0.5 ml liberase + 2ml DMEM + 2ul 5 unit/ul DNase I."
+  ],
+  "authors": [
+    "Gagandeep Kaur",
+    "Irfan Rahman"
+  ],
+  "creator": "Gagandeep Kaur",
+  "published_on": 1723061883,
+  "created_on": 1723053866,
+  "keywords": []
+}

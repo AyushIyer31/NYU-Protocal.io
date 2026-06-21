@@ -1,0 +1,28 @@
+{
+  "id": 238788,
+  "title": "Decryption of genome-encoded cryptographic keys using DNAcrypt-AI",
+  "uri": "decryption-of-genome-encoded-cryptographic-keys-us-hmfcb43ix",
+  "doi": "dx.doi.org/10.17504/protocols.io.5qpvo1387g4o/v1",
+  "description": "{\"blocks\":[{\"key\":\"cippo\",\"text\":\"DNAcrypt-AI is a human genome-based cryptographic framework that leverages k-mer-based alphanumeric encoding, genome vocabulary, sequence reconstruction, and sequence-informed machine learning to enable controlled decryption of encrypted digital credentials. This protocol describes the procedure for decrypting an encrypted secret key generated using DNAcrypt-AI, restoring the original fixed-length plaintext key from its genome metadata representation. The decryption workflow is implemented on Google Colab and integrates a high-throughput DNA sequence reconstitution pipeline (FAS2rDNA) with a sequence intelligence model (Covary) to reconstruct the encrypted genome coordinates into a human-readable secret key. The protocol successfully recovered the expected 16-character secret key, demonstrating reproducible reversibility of the DNAcrypt-AI encryption-decryption cycle for research and educational use.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"cian5\",\"text\":\"For this protocol to work, users must generate and encrypt a 16-character secret key using DNAcrypt-AI (see protocol here: 10.17504/protocols.io.14egn12k6v5d/v1. Save and store the DNAcrypt_metadata.json file, which is the genome-encrypted data, and will be used for the decryption exercise. DNAcrypt-AI is implemented as a Jupyter notebook that is hosted on Google Colab. DNAcrypt-AI is dependent on a high-throughput DNA sequence reconstitution pipeline (FAS2rDNA) and sequence-informed machine learning model (Covary).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":123,\"length\":37},{\"key\":1,\"offset\":457,\"length\":8},{\"key\":2,\"offset\":513,\"length\":6}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"0C667F85F2E211F08EB10A58A9FEAC02\",\"url\":\"https://dx.doi.org/10.17504/protocols.io.14egn12k6v5d/v1\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"DEFE2628F2E111F093D80A58A9FEAC02\",\"url\":\"https://github.com/mahvin92/FAS2rDNA\"}},\"2\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"DEFE2668F2E111F093D80A58A9FEAC02\",\"url\":\"https://github.com/mahvin92/Covary\"}}}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Launch DNAcrypt-AI from https://dnacryptai.chordexbio.com/ . Alternatively, you can run DNAcrypt-AI using the recommended methods described in https://github.com/mahvin92/DNAcrypt-AI .",
+    "Select &#39;Decryption&#39; under the Use cases section in the user configuration interface, as shown in Figure 1 below. Figure 1. The interface of user configuration on DNAcrypt-AI, where users can specify the behavior of the cipher.",
+    "Run DNAcrypt-AI by initiating a runtime, ensuring a GPU (T4 as default) support, if available. Note that DNAcrypt-AI will still work in a non-GPU hosted runtime. Click &#34;Runtime&#34; -&gt; Select &#34;Run all&#34;",
+    "Wait for DNAcrypt-AI to finish the decryption process. The status and any error will be displayed below the code cell.",
+    "Upload the previously generated genome-encrypted data (see Before starting ), using the upload feature as shown in Figure 2 below. Figure 2. The upload functionality on DNAcrypt-AI Jupyter notebook, executed in Google Colab environment.",
+    "The decrypted 16-character key will be displayed below the code cell. Note that if you generated and encrypted a key with length from 6 to 90 characters, DNAcrypt-AI will yield a key with the same character length.",
+    "This protocol is designed for decrypting passwords or encrypted keys, which are originally encoded into genome coordinated (encrypted data) by DNAcrypt-AI. Decryption relies on correct metadata and compatible k-mer encoding logic, ensuring controlled reversibility of the cipher. This workflow is intended for research, validation, and educational use cases involving DNA-based cryptographic systems."
+  ],
+  "authors": [
+    "Marvin De los Santos",
+    "Chikie Lynn"
+  ],
+  "creator": "Marvin De los Santos",
+  "published_on": 1768580468,
+  "created_on": 1768569867,
+  "keywords": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": 82922,
+  "title": "Image processing and 3D reconstruction",
+  "uri": "image-processing-and-3d-reconstruction-cu8iwzue",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v9d99mg3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"4odhn\",\"text\":\"Image processing and 3D reconstruction\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Use cryoSPARC for the following steps except those particularly mentioned.",
+    "Do motion correction by [Patch Motion Correction] Bin 2x in fourier cropping for super-resolution video stacks Bin 1x in fourier cropping for regular video stacks",
+    "Do contrast transfer function determination by [Patch CTF Estimation] Remove the outlier micrographs base on the estimated defocus and resolution value.",
+    "Do particle picking by [Topaz] Manually pick 10 micrographs as learning dataset Optimize the &#39;picking threshold&#39; with the 10 mics Apply the parameter to the entile dataset",
+    "Particle extraction Use the box size 1.5 times larger than the target particles Bin 4x to facilitate the following classification jobs",
+    "2D classification Set 50-100 classes dependent on the data size Remove the obvious junk particles",
+    "Do 3D reconstruction by [Homogeneous Refinement] Repeat 2-3 times until the resolution converges Check whether the FSC curve is healthy",
+    "Obtain an initial model [1] Use Ab-initial (Optional) only select the 2D classes that show high-resolution features [2] Use previously determined structure if it&#39;s available [3] Create a new medel by AlphaFold",
+    "(Optional) Do CTF refiment followed by homogeneous refinement. Check whether the resolution get improved",
+    "Do 3D classification by [Reterogeneous Refinement] Low-pass your model to 15-20 Å Run the job with 2-3 junk models Run multiple times (typically 2-4 rounds) until the result converges",
+    "Re-extract the particles with bin 2x for super-resolution video stacks bin 1x for regular video stacks",
+    "(Optional) Do local refinement if the map contains multiple rigid sub-regions Decide the masks based on [3D Variability] or [3D Flex] Use [ChimeraX] to create the maps Use [EMAN2] to compose the final maps at the end"
+  ],
+  "authors": [
+    "Minghao Chen"
+  ],
+  "creator": "Minghao Chen",
+  "published_on": 1697497545,
+  "created_on": 1686008736,
+  "keywords": []
+}

@@ -1,0 +1,27 @@
+{
+  "id": 6157,
+  "title": "Genome-wide Kozak Sequence Free Energy Analysis",
+  "uri": "genome-wide-kozak-sequence-free-energy-analysis-h9mb946",
+  "doi": "dx.doi.org/10.17504/protocols.io.h9mb946",
+  "description": "{\"blocks\":[{\"key\":\"conhe\",\"text\":\"The purpose of this protocol is to evaluate the significance of delta G values, as a strategy to determine the significance of secondary structure. Sequences are shuffled randomly 100x, maintaining base composition but not base order. The percentile of the delta G vlaue of the non-scrambled (original) sequence is obtained from the distribution created by the delta G values of the 100X scrambled sequences.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9qcu8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"eb4hj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"62iit\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Create object loading Sh.wg.promC.ATG26.fasta Previously created in &#34;Genome-wide Kozak Sequence Over-represented Motif Analysis&#34; found here: https://www.protocols.io/view/genome-wide-kozak-sequence-over-represented-motif-hikb4cw Using R version 3.3.2 and the following packages:doBy (doBy_4.5-15)data.table (data.table_1.10.0)seqinr (seqinr_3.3-3) Using mfold version 3.6 sh.seq Loading previously created fasta file and obtaining the delta G values for each sequence. R 3.3.2 sh.seq &lt;- read.fasta(&#34;Sh.wg.promC.ATG26.fasta&#34;) system(paste(&#34;mfold_quik MAX=1 SEQ=&#39;Sh.wg.promC.ATG26.fasta&#39;&#34;)) Loading previously created fasta file and obtaining the delta G values for each sequence. R 3.3.2",
+    "Create 100 sequences for each fragment randomly scrambling the base pairs to form new scrambled fragments. Use mfold (version 3.6) to calculate the delta g value of each fragment (original sequence and scrambled sequences). Using mfold version 3.6 sh.seq2 Creates 100 additional 53bp fragments by scrambling the base pairs of the original fragment. R 3.3.2 sh.seq2 &lt;- lapply(sh.seq,function(dx) { sh.seq3 &lt;-lapply(1:100,function(ddx) { paste(sample(dx),collapse=&#34;&#34;)}) write.fasta(sequences=sh.seq3,file=attr(dx,&#34;name&#34;),as.string=TRUE,names=1:10) system(paste(&#34;mfold_quik MAX=1 SEQ=&#39;/scramseq100/&#34;,attr(dx,&#34;name&#34;),&#34;&#39;&#34;,sep=&#34;&#34;)) } ) Creates 100 additional 53bp fragments by scrambling the base pairs of the original fragment. R 3.3.2",
+    "In the shell, run grep command to create a file of only the lowest delta g values for each sequence. grep",
+    "Use fread to load the file. Use strsplit to organize data in a useful manner. sh100dGs R 3.3.2 sh100dGs &lt;- fread(&#34;sh100scrambledG.txt&#34;) sh100dGs[ , id := sapply(V1, function(v1also) strsplit(strsplit(v1also,&#34;/&#34;)[[1]][7], &#34;[.]&#34;)[[1]][1])] sh100dGs[,c(&#34;V1&#34;, &#34;V2&#34;, &#34;V3&#34;):=NULL] R 3.3.2",
+    "Load file created previously by mfold (&#39;Sh.wg.promC.ATG26.fasta.ct&#39;) and reorganize table. sh Load previously created file from mfold script in regards to Kozak sequences from Schizochytrium genome. Creates and organizes a table for use in comparison with the scrambled delta g values. R 3.3.2 sh &lt;- read.table(&#34;Sh.wg.promC.ATG26.fasta.ct&#34;, header= FALSE, fill = TRUE) sh.deltag &lt;-sh[sh$V2 == &#34;dG&#34;,] sh.deltag.t &lt;- sh.deltag[!duplicated(sh.deltag$V5),] sh.crit &lt;- data.table( dG = sh.deltag.t$V4, id = as.character(sh.deltag.t$V5), key=&#39;id&#39;) Load previously created file from mfold script in regards to Kozak sequences from Schizochytrium genome. Creates and organizes a table for use in comparison with the scrambled delta g values. R 3.3.2",
+    "Set the key for each data table and use ecdf() to create a distribution for each gene from the delta G values of the 100 scrambled fragments and obtain the percentile of the original delta G value when compared to the distribution. setkey(sh100dGs, id)setkey(sh.crit, id)sh.100dGs Sets the key for each data table and uses ecdf() to obtain a percentile value of the original delta G value when compared to a distribution created by the delta G values of its 100 scrambled fragments. R 3.3.2 setkey(sh100dGs, id) setkey(sh.crit, id) sh.100dGs &lt;- sh100dGs[sh.crit, nomatch=0] bi &lt;- data.table() dG &lt;- NULL percentile &lt;- c() identity &lt;- c() for(i in 1:length(unique(sh.100dGs$id))){ bi &lt;- sh.100dGs[sh.100dGs$id == unique(sh.100dGs$id)[i],] values &lt;- bi$V4 id &lt;- bi$id[1] dG &lt;- (bi$dG)[1] info &lt;- ecdf(values) percentile &lt;- c(percentile, info(dG)) identity &lt;- c(identity, id) } sh.100percentiles &lt;- data.table(percentile = percentile, id = identity) Sets the key for each data table and uses ecdf() to obtain a percentile value of the original delta G value when compared to a distribution created by the delta G values of its 100 scrambled fragments. R 3.3.2"
+  ],
+  "authors": [
+    "Mariana Rius",
+    "Joshua Rest"
+  ],
+  "creator": "Mariana Rius",
+  "published_on": 1506697362,
+  "created_on": 1496354303,
+  "keywords": []
+}

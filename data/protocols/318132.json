@@ -1,0 +1,39 @@
+{
+  "id": 318132,
+  "title": "How to fix cell samples in FlexV2",
+  "uri": "how-to-fix-cell-samples-in-flexv2-j2wucqfex",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygxrkyog8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"eg43d\",\"text\":\"This protocol is derived from the official manual 'Fixation of Cells and Nuclei for GEM-X Flex Gene Expression' (CG000782 RevA). This protocol is for training and step check during the experiment. Please check the original link at https://www.10xgenomics.com/ before using this protocol. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":231,\"length\":28}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"258F42855BB311F1AEBC0A58A9FEAC02\",\"url\":\"https://www.10xgenomics.com\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Check the box of PN1000781 GEM-X Flex Sample Preparation v2 Kit. The number of remaining/ used reactions is labeled on the surface of box. This box is stored at the second shelf in -20C in SGT room. Make sure there is a sufficient amount left for the desired number of cell/ nuclei samples.",
+    "Other reagents to check: PBS (1X) and BSA. Optional: 50% Glycerol, for long-term storage",
+    "Upon receipt of fresh samples, count them on the cell counter. If needed, run a centrifugation to concentrate cells to&gt; 10^5/mL. Check with the user for centrifugation parameters. If not specified, use 350 g( rcf), 5 min, 4C. [Use 150 g(rcf) if this is fresh tumor cells.]",
+    "1) After counting, get the viability of fresh cells. It is recommended to be more than 80%. If viability is between 50%-80%, it is still ok in viability, but remind the user of potential poorer data quality. If &lt;50%, proceed with caution. And remind the user of increased mito% in cells during bioinformatic analysis.",
+    "2) After counting, get the number of cells in each sample. Make sure the number is between 200k and 10 M in each sample. Less could cause sample loss in the following steps. More could cause insufficient fixation.",
+    "3) After counting, get the debris level of the sample. If it is too high, it is strongly recommended to reduce the debris level before fixation. Refer to this link if you run cell sorting before or after fixation: https://kb.10xgenomics.com/s/article/5960092181261-Can-post-fixation-samples-be-sorted-in-the-Flex-Gene-Expression-assay",
+    "centrifuge sample at 350 g(rcf) for 5 min for PBMC/cell lines, or 150 g(rcf) for 10min for dissociated tumor cells. centrifuge temperature should be 4C.",
+    "remove supernatant without disturbing the pellet. Up to 30 uL may be left behind.",
+    "Add 0.5 mL room temperature fixation buffer b to the sample pellet and pipette mix 5X",
+    "Determine whether to proceed to probe hybridization (GEM-X workflow) immediately or leave it for later",
+    "incubate sample at 20C for 1 hour",
+    "Incubate at 4 °C for 16-24 h. Then follow the same steps in section &#39;On the day of probe incubation&#39;.",
+    "Add 0.5 mL Additive C (room temp) to the sample in Fixation Buffer and pipette mix 5X",
+    "centrifuge at 850 g(rcf) for 5 min at room temp",
+    "remove the supernatant without disturbing the pellet (up to 30 uL can be left)",
+    "Add 1 mL* chilled Quenching Buffer to the sample pellet and mix 5X on ice If cell number is &lt;100k, then add 200 uL first, after the counting step, add the rest 800 uL",
+    "Determine cell concentration.",
+    "Immediately proceed to GEM-X workflow",
+    "Use the same fixation step in the &#39;within 1 day&#39; step case. Then follow the same steps in section &#39;On the day of probe incubation&#39;. After adding the quenching buffer step, thaw Enhancer (10 min, 65 °C, PN200482), and add 0.1 volume to the fixed sample, pipette mix, and store the sample at 4 °C for up to 1 week."
+  ],
+  "authors": [
+    "Yujun Feng"
+  ],
+  "creator": "Yujun Feng",
+  "published_on": 1780096553,
+  "created_on": 1779978379,
+  "keywords": []
+}

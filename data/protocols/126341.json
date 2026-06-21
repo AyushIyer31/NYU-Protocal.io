@@ -1,0 +1,34 @@
+{
+  "id": 126341,
+  "title": "Preparation of 3D distance probes for the quantification of variability in distance measurements between conditions",
+  "uri": "preparation-of-3d-distance-probes-for-the-quantifi-d7md9k26",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4zkwjvo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"9eo78\",\"text\":\"Simple procedure for preparing random 3D probe points for the analysis of image segmentation variability\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"ejrun\",\"text\":\"FIJI/ImageJ\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "To assess variability between distance measurements, you will require &#34;reference object&#34; for the distance measurements. You will need one binary TIFF stack, representing the segmented result for that reference object. If you are comparing multiple algorithms or training conditions, the binary reference object is best obtained by averaging all the results then applying a threshold, or by segmenting the reference object using a completely different segmentation method. This TIFF stack will be referred to as the &#34; reference binary stack &#34; .",
+    "Open FIJI/ImageJ.",
+    "Load &#34;Maximum Distance.tif&#34; and &#34;Minimum Distance.tif&#34; in FIJI/ImageJ. Use the Image Calculator ( Process → Image Calculator... ) to subtract &#34;Minimum Distance.tif&#34; from &#34;Maximum Distance.tif&#34; (by setting the calculator operation to &#34;Subtract&#34;), which will generate a binary boundary surrounding the reference object at the defined distance. Save this file as &#34;Allowable Probe Locations.tif&#34; .",
+    "Load the &#34;reference binary stack&#34; in FIJI/ImageJ. To define the minimum allowable distance between the 3D probes and the reference object, apply a 3D maximum filter (Process → Filters → Maximum 3D...) with the radius set to the preferred minimum distance. Save this file as &#34;Minimum Probe Distance.tif&#34; .",
+    "Load the &#34;reference binary stack&#34; in FIJI/ImageJ. To define the maximum allowable distance between the 3D probes and the reference object, apply a 3D maximum filter ( Process → Filters → Maximum 3D... ) with the radius set to the preferred maximum distance. Save this file as &#34;Maximum Probe Distance.tif&#34;.",
+    "The random positions can now be defined by any means as per your preference, as long as they are stored in a tiff stack with the same dimensions as the &#34;Allowable Probe Locations.tif&#34; stack. Otherwise, you can follow the next instructions for an easy way to generate the random locations. Open FIJI/ImageJ.",
+    "Create a new blank stack (File → New → Image...) of the same dimensions as the &#34;Allowable Probe Locations.tif&#34; file (Ensure &#34;Fill With&#34; is set to black).",
+    "Duplicate the blank stack (Image → Duplicate...) .",
+    "Apply noise to both blank stacks (Process → Noise → Salt and Pepper...) .",
+    "Use the Image Calculator (Process → Image Calculator...) with the &#34;AND&#34; operation between both noised stacks, to generate a sparse collection of randomly positioned white points. Save this file as &#34;Random Noise.tif&#34;.",
+    "Open FIJI/ImageJ.",
+    "Open &#34;Allowable Probe Locations.tif&#34; and &#34;Random Noise.tif&#34; .",
+    "Use the Image Calculator (Process → Image Calculator...) with the &#34;AND&#34; operation between both files, to generate a random collection of points at the defined distance from the original reference object.",
+    "Save this file as &#34;3D Distance Probes.tif&#34;. This file represents the final probe positions that can be used for quantification of variability in distance measurements, with respect to a defined reference object."
+  ],
+  "authors": [
+    "Benjamin Padman"
+  ],
+  "creator": "Benjamin Padman",
+  "published_on": 1747107588,
+  "created_on": 1744086174,
+  "keywords": []
+}

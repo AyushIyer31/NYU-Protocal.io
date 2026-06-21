@@ -1,0 +1,32 @@
+{
+  "id": 66144,
+  "title": "Rapid, effective and low-cost purification of dideoxy-sequencing reactions by home-made magnetic beads suspension and magnetic separator",
+  "uri": "rapid-effective-and-low-cost-purification-of-dideo-cct8swrw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg3pdzel25/v1",
+  "description": "{\"blocks\":[{\"key\":\"5dnoe\",\"text\":\"Removal of excess dideoxy terminators from the sequencing mix after the enzymatic reaction is a key process affecting the dideoxy/Sanger sequencing quality. Ethanol precipitation may be the most popular clean-up method because of its low costs; however, it takes a long centrifugation time and frequently results in low quality sequence data. Commercially available clean-up kits provide high quality sequence data, while they generally have high cost. Here, we describe rapid, effective and low-cost dideoxy terminator clean-up method using a home-made magnetic beads suspension, MagNA, and magnetic separator. We found that MagNA enables rapid and efficient clean-up at ~1/100 of the cost of commercially available kits. The magnetic separator made using low-cost neodymium magnets worked well for the MagNA separation, representing a the rapid, efficient and cost-effective dideoxy terminator clean-up system.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"74dfe\",\"text\":\"Chemicals for MagNA suspension\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2sp2k\",\"text\":\"·Ethylenediaminetetraacetic acid (EDTA)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5qfvb\",\"text\":\"·Sodium chloride (NaCl)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"84d62\",\"text\":\"·Polyethylene glycol 8,000 (PEG 8,000)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2qir4\",\"text\":\"·Tris(hydroxymethyl)aminomethane hydrochloride (TRIS-HCl)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dj4il\",\"text\":\"·ProClin 300 (Sigma-Aldrich)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5f5e4\",\"text\":\"·Distilled Water (DW, Milli-Q)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f30g9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"96qvd\",\"text\":\"Other solutions\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"24b5\",\"text\":\"85 % Ethanol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ckj30\",\"text\":\"10x TE buffer (100 mM TRIS-HCl, pH 8, 10 mM EDTA)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"au4r2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ek4lt\",\"text\":\"Materials for home-made magnetic separator \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ffot6\",\"text\":\"·Neodymium magnets (Magnet no. 467, ⌀ = 6 mm, 280 mT, Daiso, Japan)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"faf31\",\"text\":\"·Insert of 200 µl tip rack (123R-755CS, Watson, Japan) (Fig. 1a)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare 50 ml buffer without magnet beads as follow. Final concentration of each chemical is indicated in parenthesis. Dissolve 9 g PEG 8,000 (18 %), 2.92 g NaCl (1 M), 5 ml 10x TE (1x), 25 µl Tween-20 (0.05 %) and 50 µl ProClin 300 (0.1 %) in DW to prepare 50 ml PEG-NaCl buffer.",
+    "Mix thoroughly Carboxyl-modified Sera-Mag Magnetic Speed-beads (Hydrophobic) (Cytiva, cat. #65152105050250), take 1 ml Sera-Mag suspension and separate the beads by using magnetic separator. Add 1 ml 1x TE, mix, stand on magnetic separator, and remove the supernatant. Repeat this wash once.",
+    "Add 1 ml PEG-NaCl buffer, mix and transfer the suspension to the PEG-NaCl buffer tube to prepare MagNA suspension. Store at 4 °C at least for one year.",
+    "Set pairs of magnets at the edge of the insert by their magnetic force as they line to tip halls (Fig. 1b and c).",
+    "The procedure is based on the protocol of CleanSeq (Beckman Coulter) as below.",
+    "Shake MagNA to fully resuspend the magnetic beads.",
+    "To the 10 µl sequencing reaction, add 10 µl MagNA suspension.",
+    "Add 42 µl 85 % EtOH (Volume of 85% Ethanol = 2.077  (10 L + Sequencing Sample Volume) and mix thoroughly.",
+    "Place the tube in the home-made magnetic separator for 2~3 min (Fig. 1d).",
+    "Remove the supernatant, add 100 µl of 85 % ethanol, and remove the supernatant after &gt;30 sec. Repeat the step once.",
+    "Remove the tube from the separator, and add 40 µl DW.",
+    "Place the tube in the home-made magnetic separator for 2~3 min, recover 35 µl of supernatant and subject it for sequencing."
+  ],
+  "authors": [
+    "Hidenori Sassa"
+  ],
+  "creator": "Hidenori Sassa",
+  "published_on": 1671817065,
+  "created_on": 1657150704,
+  "keywords": []
+}

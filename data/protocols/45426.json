@@ -1,0 +1,42 @@
+{
+  "id": 45426,
+  "title": "Modified pH drop protocol (K+)",
+  "uri": "modified-ph-drop-protocol-k-bqksmuwe",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"cnard\",\"text\":\"Modified pH drop protocol (K+)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":28,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9de3u\",\"text\":\"Prepare the K+electrode for use\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3vfm9\",\"text\":\"Do slope check for electrode performance\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ahapl\",\"text\":\"Standard curve\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"91huv\",\"text\":\"Modified pH drop protocol\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"mm5r\",\"text\":\"Here are some notes from my notebook from 2002:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a1qiq\",\"text\":\"When using the K+ electrode, need to read mV for the standard curve.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":16,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7kujb\",\"text\":\"Also need to do ALL readings in a 0.1M NaCl background.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"83n34\",\"text\":\"These electrodes only have a 6-month life span.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"177r9\",\"text\":\"K+ electrodes are made from the following solutions:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":1,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"340ui\",\"text\":\"1M KCl to dilute for standard curve\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b5o19\",\"text\":\"1M NaCl to make the 0.1M background solution\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7i0ed\",\"text\":\"1mM MgCl2 as the “neutral salts” solution for the modified pH drop protocol (noKCl)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":8,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5dskf\",\"text\":\"0.5M NaOH to pH the cell suspension to 7.2 for the modified pH drop protocol (noKCl)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eg69l\",\"text\":\"0.1M KCl to add to cells with glucose for modified protocol\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Remove the rubber caps.",
+    "Put 0.1M NaCl ina beaker. Stir. Put the meter at the mV setting.",
+    "0mM (no K + ) = 9mL water + 1mL 1M NaCl",
+    "Read pH &amp; mV readings atdesired intervals.",
+    "Fill with 0.1M NaCl filling solution provided to just below the hole in the probe.",
+    "Gently shake the probe like a thermometer to remove all air bubbles.",
+    "Immerse the electrode in 0.1M KCl for 20-30 minutes.",
+    "Rinse off.",
+    "Lower the K+electrode into the beaker.",
+    "Add 1mL 0.1M KCl to the beaker &amp; keep stirring. Once the reading is stable, record the mV reading (mine was-49.2).",
+    "Add 10mL 0.1M KCl to the beaker. Continue stirring. Record mV reading (mine was6.1).",
+    "The difference between the readings should be 52mV ± 2. (Mine was 55.3mV – called that good enough!)",
+    "Take 1M stock KCl &amp; dilute 1:10 in 8mL water + 1mL 1M NaCl to create the following K + concentrations: 0.1M (10-1) 0.01M (10-2) 1mM (10-3) 0.1mM (10-4) 0.01mM (10-5), 1µM (10-6)",
+    "Read mV for each standard. Create standard curve: electrode potential (mV) vs. K+concentration (mM)",
+    "Prepare 100mL ON of culture as per pH drop protocol (in BHI + 1% glucose).",
+    "Measure OD 700 .",
+    "Pellet cells.",
+    "Wash cell pellet 2X in 30-35mL 1mM MgCl 2 .",
+    "Resuspend pellet in x mL 1mM MgCl 2 , where x = # from formula",
+    "For each experiment, take 4.5 mL cells + 0.5mL 1M NaCl → 0.1M NaCl in the final 5mL cell suspension.",
+    "Adjust pH to 7.2 with 0.5M NaOH.",
+    "Add 100µL 50% glucose = time zero."
+  ],
+  "authors": [
+    "Elizabeth Fozo"
+  ],
+  "creator": "Eadewunm",
+  "published_on": 1607633332,
+  "created_on": 1607629849,
+  "keywords": []
+}

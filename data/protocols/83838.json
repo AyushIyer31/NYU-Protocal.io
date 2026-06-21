@@ -1,0 +1,30 @@
+{
+  "id": 83838,
+  "title": "FIVTools Thresholding and Measures",
+  "uri": "fivtools-thresholding-and-measures-cv46w8ze",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvwd6mdlmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"1rt19\",\"text\":\"YouTube: FIVTools Thresholding and Measures Walkthrough\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":55}],\"data\":{}},{\"key\":\"6d7mv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dkgd1\",\"text\":\"The goal is to set a criteria on a single FOV for machine learning that will ultimately lead to a final output of single cells with associated intracellular metrics.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"61769BA0108211EEB4161BFF6090D2C2\",\"url\":\"https://youtu.be/Qa9mGrd4vK0\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Open the FIVTools application.",
+    "Access recent scans by navigating to the correct directory under which the images are saved under &#34;InCell Images dB (Root). Click the &#34;Refresh&#34; button to update the directory of images.",
+    "Search for your scan in the &#34;Plate ID Contains&#34; filter box. Double click on the scan of interest. A pop-up with the GUI of the scan will appear.",
+    "Update the color scheme such that the nuclear channel is blue and mitochondria, red. This is necessary for the segmentation protocol to run correctly. The colors can be updated by clicking &#34;Color&#34; [#1 in Figure 1] until the desired color scheme appears, or by inputting hex RGB codes into the corresponding text boxes. Figure 1: GIU with scanned images.",
+    "Select the blue nuclear and red mitochondrial channels to be active by ticking the checkboxes under &#34;Vis&#34;. Press &#34;Update&#34; to apply these changes to the visualized images.",
+    "Under the Tresh column [#2 in Figure 1], double click the number associated with the nuclear channel. This will update the image visualization such that the image that was in the upper-left quadrant is represented as 1) the original image, 2) the threshold mask, 3) filtered objects, and 4) deoverlapped regions. Categories and explanations of these are as follows: 1. Original (top left quadrant). Original image as it appears from the scan. 2. Threshold (bottom left quadrant). The point of this thresholding category is to separate out background vs nuclei. (Increased thresholding value = more black. Decreased value = less black.) 3. Filtered objects (top right quadrant). For now, we are using the defaults under the hood. If you want to fine tune you can right-click &#34;1: Segmentation&#34;. A GUI with crop width, min area, max area will pop up. This box is further culling down the originally thresholded nuclei in the previous threshold category based on set metrics. 4. Deoverlapped regions (bottom right quadrant) final thresholding category that is further refining the filtered objects category. Anything in the box is considered single cell. These images can be exported. Figure 2: Thresholding visualization",
+    "Once satisfied with thresholding, click &#34;Save&#34; and exit out of the GUI.",
+    "Return to the main FIVTools interface. Set the pathway of the output &#34;nMeasures.txt&#34; file under &#34;Destination Folder&#34;.",
+    "Navigate to the scans of interest. If more than one scan was selected, ensure that scan parameters are consistent before continuing. Click &#34;mRaft&#34; [B, Figure 3] and select &#34;Classify and Measure&#34; [C, Figure 3]. The &#34;nMeasures.txt&#34; file will be outputted in the desired directory. Follow the status by looking in the region to the right of &#34;Layouts...&#34;, &#34;Metadata...&#34;, &#34;p Values...&#34;, buttons. Figure 3: Main page of FIVTools. Running &#34;Classify and Measure&#34;",
+    "The resulting &#34;nMeasures.txt&#34; file can be visualized and analyzed in programs such as Excel and Spotfire. Current measurement parameters include nuclear radius, nuclear area, cell rotation, mito size for each isolated single-cell, as determined from the Deoverlapped cells in Step 6. Each row in the data table represents a cell or model [Figure 4]. Multiple models can be run with the thresholded settings at the same time (currently under the hood only). Data table can be taken downstream into analytical tools such as Spotfire for further analysis, just like IN Carta data. Figure 4: Example &#34;nMeasures.txt&#34; in Excel"
+  ],
+  "authors": [
+    "d.grigore"
+  ],
+  "creator": "d.grigore",
+  "published_on": 1687424845,
+  "created_on": 1687386136,
+  "keywords": []
+}

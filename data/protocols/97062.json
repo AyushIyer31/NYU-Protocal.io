@@ -1,0 +1,40 @@
+{
+  "id": 97062,
+  "title": "Cryo-ET data acquisition, tomogram reconstruction, and analysis",
+  "uri": "cryo-et-data-acquisition-tomogram-reconstruction-a-da2e2gbe",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvw1podlmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"bos9b\",\"text\":\"Aggregation of proteins containing expanded polyglutamine (polyQ) repeats is the cytopathologic hallmark of a group of dominantly inherited neurodegenerative diseases, including Huntington's disease (HD). Huntingtin (Htt), the disease protein of HD, forms amyloid-like fibrils by liquid-to-solid phase transition. Macroautophagy has been proposed to clear polyQ aggregates, but the efficiency of aggrephagy is limited. Here, we used cryo-electron tomography to visualize the interactions of autophagosomes with polyQ aggregates in cultured cells in situ. We found that an amorphous aggregate phase exists next to the radially organized polyQ fibrils. Autophagosomes preferentially engulfed this amorphous material, mediated by interactions between the autophagy receptor p62/SQSTM1 and the non-fibrillar aggregate surface. In contrast, amyloid fibrils excluded\\np62 and evaded clearance, resulting in trapping of autophagic structures. These results suggest that the limited efficiency of autophagy in clearing polyQ aggregates is due to the inability of autophagosomes to interact productively with the non-deformable, fibrillar disease aggregates.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":546,\"length\":7}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Lamellas were imaged in a FEI G2 Polara or Titan Krios cryo-TEM equipped with a field emission gunoperating at 300 kV, a post-column energy filter (Gatan, Pleasanton, CA, USA) operating at zero-loss, and a 4k x 4k K2 Summit direct electron detector (Gatan). The energy filter was used to increase image contrast with a slit width of 20 eV.",
+    "Low-magnification were taken at 5600x (object pixel size 2.18 nm) to generate lamella overviews. High-magnification (18,000x, 27,500x, 34,000x, 42,000x) with a pixel size of 0.65, 0.42, 0.34, 0.32 nm respectively) tilt series were recorded at sites of interest using the SerialEM software (Mastronarde, 2005), operating in low dose mode with tracking and focus enabled.",
+    "Tilt series were taken with a 2° tilt increment with an angular range from ~−60° to 60°.",
+    "The K2 camera operating in dose fractionation counting mode, recorded frames every 0.2 s for ~2electrons/A² per tilt angle. For the tilt series, the cumulative dose was in the range of 90-120 electrons/Å².",
+    "Targeted defocus of -9 μm (Polara) or -5 μm (Krios) were applied to boost contrast.",
+    "The low magnification views (5600x) of the lamella provided enough detail to locate the aggregates and surrounding structures for tomogram acquisitions.",
+    "For tilt series acquisition of the isolated vesicles, Htt97Q-GFP and LC3B-RFP positive punctawere first located on the vitrified grid using the Leica cryo-confocal LM. Sample features including holes and cracks were used as landmarks for target identification.",
+    "K2 camera raw frames were preprocessed using in-house Matlab (Nickell et al., 2005) wrapper scripts (Tomoman: https://github.com/williamnwan/TOMOMAN). The relative shifts of the image between camera frames due to stage drift and beam-induced motion were corrected by MotionCor2 (Zheng et al., 2017), followed by exposure filtering (Grant and Grigorieff, 2015).",
+    "The tilt series were then aligned using patch tracking, binned by 4, and reconstructed by weighted back projection in IMOD (Kremer et al., 1996). The software used here is Etomo to generate the .rec final reconstruction.",
+    "FIB-related imperfections of the lamella were removed for image display, using the LisC filter algorithm (Felix J.B. Bäuerlein, 2022). The overlays of fluorescence z-stack, SEM, and TEM images were generated using the Transform/Landmark correspondence plugin (Fiji).",
+    "Tomogram contrast was improved using Topaz (Bepler et al., 2020) or cryo-care (Buchholz et al., 2019). Ice contamination were removed from the tomogram using the MaskTomRec software (Fernandez et al., 2016).",
+    "Membranes were automatically detected by TomoSegMemTV using tensor voting (Martinez-Sanchez et al., 2014) followed by manual refinement in Amira.",
+    "Tomogram segmentation was performed in Amira (Thermo).",
+    "polyQ fibrils were detected using the XTracing module (Rigort et al., 2012). Tomograms were denoised by a non-local means filter, and the fibril containing regions were searched for a cylindrical template of 8 nm (diameter) and 42 nm (length). The resulting cross-correlation fields were adjusted to a range of 0.68-0.8 for optimized detection.",
+    "The amorphous aggregate density was approximated by fluorescence correlation, the corresponding region was segmented by the magic wand tool in Amira.",
+    "The cytosolic ribosomes were detected by PyTom template matching (Hrabe et al., 2012), using a low pass filtered (60Å) ribosome template (EMDB: 5592).",
+    "Based on the segmented membrane, the intermembrane distance and the thickness of the phagophore double layers were calculated with the PyCurv software (Salfer et al., 2020), using aligned and exposurefiltered tomograms (Titan Krios bin 4 pixel size at 12.76 Å).",
+    "From aligned and exposure filtered tomogram dataset (Polara bin 4 pixel size at 26.38 Å) without additional contrast enhancement, the diameters and relative intensities of the interior volume of the phagophores and autophagosomes, as well as the downstream vesicles (autolysosomes and lysosomes) were quantified in Fiji.",
+    "Diameters (nm) were taken as the longest distance of the inner bi-lamellar membrane of phagophoresand autophagosomes, or the longest distance between the uni-lamellar downstream vesicles.",
+    "Relative intensity of the interior volume was calculated as the average intensity of the volumeinside the phagophores and autophagosomes, or the downstream vesicles, normalized to the average intensity of the entire tomogram, excluding regions with ice crystals and broken edges. p values generated from two-tailed student’s paired t-test."
+  ],
+  "authors": [
+    "Dorothy zhao"
+  ],
+  "creator": "Dorothy zhao",
+  "published_on": 1711029531,
+  "created_on": 1711024524,
+  "keywords": []
+}

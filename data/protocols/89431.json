@@ -1,0 +1,27 @@
+{
+  "id": 89431,
+  "title": "Filter-paper based PURExpress detection of ZikV and CoV2  RNA by enhancer toehold (TacToe) sensors ",
+  "uri": "filter-paper-based-purexpress-detection-of-zikv-an-c3jxykpn",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g7p3p1gwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"eng8h\",\"text\":\"This method details the approach to using in vitro transcription-translation (TxTr) systems based on PURExpress adsorbed on a paper disc. These to run a toehold detection reaction for COVID RNA. The work is related to a manuscript titled \\\"Translational Enhancer Based Ampli cation of Toehold Sensors (TacToe) for Improved Sensitivity and Speed of Viral RNA Detection\\\" to appear in ACS Synthetic Biology.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"emr39\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"31s2s\",\"text\":\"Before you start you need the DNA sequences that are provided in the attached files.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"fnq0d\",\"text\":\"Whatman Filter Paper discs\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"feibv\",\"text\":\"Biopsy Punch (3 mm) with metal caps\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"70fpm\",\"text\":\"PureXpress CFE\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9mn5k\",\"text\":\"Toehold plasmid DNA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5isl4\",\"text\":\"384 well plate (Corning Costar)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1455u\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "BSA treated paper disk preparation: 1) Make 5% BSA solution in ultrapure water 2) Soak filter paper disc (Whatmann filter paper 42, ashless, dm 42.5) in BSA solution, keep it at room temperature for overnight in a beaker 3) Rinse the filter paper using ultrapure water (repeat the process for 5 times) 4) Let filter paper dry at room temperature (overnight) or at 65 ºc in hybridizer (~1-1.5h) 5) Use sterile 2mm/3mm biopsy punch to create small paper discs 6) Store the discs in sterile petri plate",
+    "Prepare the following reaction mix (Master-mix): DNA working concentration: ZIKV: Toehold: 24nM Trigger: 54nM COV: Toehold: 0.3nM Trigger: 8nM Components Working Conc. Blank(μl) Test(μl) Buffer A* 2.01 2.01 Buffer B* 1.5 1.5 CPRG (20mg/ml)0.6ug/ml 0.21 0.21 Rnase inhibitor 0.5 0.5 Toehold DNA (Adjust depending on the yield and the reaction requirements) Trigger DNA (Adjust depending on the yield and the reaction requirements) Water 2.78 - Total Volume 7 7 *Buffer A and B are the two mixes from NEB&#39;s PURExpress Buffer B 1.5 1.5 on ice while preparing the master-mix",
+    "From the 7 μl master-mix, pipette out 2μl on each paper-disk placed in a 384 well plate to get triplicates of each reaction (2μl x 3).",
+    "Measure absorbance at 570nm over 100 minutes at a 1 minute interval in a plate reader incubated at 37℃",
+    "PCR amplification of the sensor and the trigger from purified plasmids The Sensors and triggers are amplified using the following primers: %s %s Following are the lengths of the amplicons (linearised sensor/trigger): %s %s",
+    "Freeze drying disks with CFE (Home-made or PURExpress)+ CPRG 1. Cell free reaction (Mastermix + CFE) applied on paper discs (3mm)(Mastermix 1.02ul +CFE 0.44ul) 2. Air dry 3. Flash freeze in liquid Nitrogen 4. Put the disc in PCR tubes (1disc/tube). Make 4 small holes on capusing sterile syringe. 5. Put the tubes in lyophilizer @-75 ºC, 4 hour , 0.04 mbar pressure 6. Samples store @Room Temperature in sterile falcon with silica inside 7. Rehydration: Plasmid (~24nM) + water (0.54ul)"
+  ],
+  "authors": [
+    "Tanvi Kale",
+    "Chaitanya Anil Athale"
+  ],
+  "creator": "Chaitanya Anil Athale",
+  "published_on": 1748518798,
+  "created_on": 1697541400,
+  "keywords": []
+}

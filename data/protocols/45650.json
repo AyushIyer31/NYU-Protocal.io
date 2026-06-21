@@ -1,0 +1,33 @@
+{
+  "id": 45650,
+  "title": "Phantom Preparation and Acquisition",
+  "uri": "phantom-preparation-and-acquisition-bqtsmwne",
+  "doi": "dx.doi.org/10.17504/protocols.io.bqtsmwne",
+  "description": "{\"blocks\":[{\"key\":\"eho05\",\"text\":\"The PET data were acquired using a 3T hybrid MR-BrainPET insert system (SIEMENS, Erlangen, Germany) in list mode. The coincidences were corrected for random events using the delayed window technique with VRR, dead time, attenuation and scattered coincidences (single scatter simulation – SSS method), and physical decay. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7v8hu\",\"text\":\"An adapted NEMA phantom, without lung insert and with six sphere inserts, was used. One insert was filled with 11C and the others contained cold (no activity) water contrasting in a warm background cylinder. Coincidence data were acquired during eight isotope half-lives, giving 163 minutes total acquisition time for 11C, which has a half-life of T1/2 = 20.35 minutes. The ratio of the activity concentration between the sphere (Hot with 28 mm of nominal internal diameter) and the background region (BG) was 1.85:1. This value is frequently found for the ratio of activity concentrations in the grey matter cortex (GM) and cerebellar grey matter (reference region) during the steady-state condition in [11C]ABP688 studies. A cold transmission scan of the adapted NEMA phantom using 68Ge sources was acquired in a Siemens ECAT Exact HR+ PET scanner. This acquisition (2 bed positions, 20 minutes of transmission, reconstructed with OSEM 2D – 6 iterations and 16 subsets and a 256 × 256 matrix) was used to create the attenuation map for the phantom used in the 11C decay study.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":111,\"length\":2},{\"style\":\"sup\",\"offset\":318,\"length\":2},{\"style\":\"sup\",\"offset\":705,\"length\":2},{\"style\":\"sup\",\"offset\":784,\"length\":2},{\"style\":\"sup\",\"offset\":1062,\"length\":2},{\"style\":\"sub\",\"offset\":349,\"length\":4}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "The phantom was positioned in the same conditions to represent an [ 11 C]ABP688 acquisition protocol of the human brain study in the PET scanner FOV. Schematic positioning can be observed below comparing human head and phantom: Experiment_Human_Phantom.bmp Phantom acquisition was performed during 02:43:00, approximately 8T 1/2 of 11 C (table below), but a range of 3T 1/2 to represent the human clinical study were selected. Activity concentration per half-life [T 1/2 ] during the acquisition moments are presented below: %s %s 0:20:35 HOT Insert 1 BG Number Scan Time Average Act. kBq/ml Average Act. kBq/ml 2T1/2 12:40:32 60.79 32.79 3T1/2 13:01:07 30.19 16.28 4T1/2 13:21:42 14.99 8.08 5T1/2 13:42:17 7.44 4.01 6T1/2 14:02:52 3.70 1.99 7T1/2 14:23:27 1.84 0.99 8T1/2 14:44:02 0.91 0.49",
+    "Adapted NEMA Phantom Preparation with 11 C 00:30:00 : Activity at the acquisition start time [t=0] in the PET scanner: 122.43 kBq/ml - Larger Sphere Activity (Hot) 66.03 kBq/ml - Backgroung Activity (BG) The values were confirmed by average of 3 probes measured ( 00:06:00, 1 min each probe ) in a gamma counter (WIZARD automatic gamma counter – PerkinElmer ® ) 0.5 mL, with diluted 11C - 3 probes from Hot and BG compartments desired activity ratio = 2 achived = 1.85",
+    "We selected the 4 th , 5 th and 6 th half-lives range to represent the [ 11 C]ABP688 which has a similar True counts per second range in the refered interval. Please check the True counts per second range over time curve below (from the phantom acquisition). Trues_Fig24.bmp",
+    "Details can be found better described in: Bias Evaluation and Reduction in 3D OP-OSEM Reconstruction in Dynamic Equilibrium PET Studies with 11 C-labeled for Binding Potential Analysis. Régio Brambilla, C. et. al.",
+    "A cold transmission scan of the adapted NEMA phantom using 68 Ge sources was acquired in a Siemens ECAT Exact HR+ PET scanner. This acquisition (2 bed positions, 20 minutes of transmission, reconstructed with OSEM 2D – 6 iterations and 16 subsets and a 256 × 256 matrix) was used to create the attenuation map for the phantom used in the 11 C decay study. Att_map.png"
+  ],
+  "authors": [
+    "Cláudia égio Brambilla",
+    "Jürgen cheins",
+    "Ahlam Issa",
+    "Lutz Tellmann",
+    "Hans Herzog",
+    "Elena Rota Kops",
+    "N. Jon Shah",
+    "Irene Neuner",
+    "Christoph W. Lerche"
+  ],
+  "creator": "claudia.rbrambilla",
+  "published_on": 1611417969,
+  "created_on": 1608128180,
+  "keywords": []
+}

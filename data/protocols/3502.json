@@ -1,0 +1,30 @@
+{
+  "id": 3502,
+  "title": "scratch, don't use, delete ( the biology is unexpected and something we don't want to invest time in figuring down right now )",
+  "uri": "scratch-don-t-use-delete-the-biology-is-unexpected-fnnbmde",
+  "doi": "dx.doi.org/10.17504/protocols.io.fnnbmde",
+  "description": "{\"blocks\":[{\"key\":\"6hf4t\",\"text\":\"The aim of this protocol is to describe how to do a very reproducible upshift of a nitrogen-limited yeast culture to nitrogen non-limited conditions. In order to do this with enough cells to make inefficient analysis (ie RATEseq) feasible, we start in the chemostat for high-cell counts.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"94njc\",\"text\":\"This protocol contemplates a 200ml culture as the starting condition. Scaling it up a bit is simply a matter of multiplying things.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"93bnl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"dcd4l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "( A day or two before ) Make an appropriate ammount of chemostat media, probably 10L. When filtering, save some of the media that is left over in the bottle filter (see chemostat media protocol). Start your strain in two 5ml O/Ns of this left over media. To one of these, add more of the limiting nutrient. The next day, verify that the strain has grown to a higher saturation in the media supplemented by the limiting nutrient. Save the rest of the extra media.",
+    "Start a 5ml O/N of your strain in the appropriate chemostat media. This is your starter culture.",
+    "Mount the culture vessel into the chemostat and load the media onto the shelf. Fill the vessel.",
+    "When the time is right, innoculate the appropriate amount of happy innocula (from the O/N culture) into the chemostat vessel. Run in a slow dilution mode, so there is no selection on growth signalling.",
+    "Over the course of the first 24 hours, monitor the dilution rate of the vessel and alter pump timings to tune it to the appropriate flow rate. Here, we aim for 0.12 volumes per hour. Also monitor the cell density with a coulter counter or hemacytometer.",
+    "When you reach an approximately stable cell density at a stable dilution rate of your choosing, let it run for at least one volume of chemostat media.",
+    "Sample as appropriate.",
+    "After samples from steady-state famine are collected, it&#39;s time for the upshift. Prepare a 4x solution chemostat media by filtration. Prepare a 200mM glutamine solution. Mix 1 volume 4x with 3 volumes glutamine to get a 150mM 1x chemostat media solution.",
+    "To the vessel, add ( 1 / 7.5 )th volume of the culture as 1x chemostat media with 150mM glutamine. Do this quickly. This is the moment of upshift. For a 200ml culture, that&#39;s 26.67ml, so add with a sereological.",
+    "Sample as appropriate. We have yet to determine where the ending steady-state is."
+  ],
+  "authors": [
+    "Darach Miller"
+  ],
+  "creator": "Darach Miller",
+  "published_on": 1472047091,
+  "created_on": 1472047034,
+  "keywords": []
+}

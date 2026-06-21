@@ -1,0 +1,35 @@
+{
+  "id": 80974,
+  "title": "Localised axotomy of human Cortical Neurons (CNs) from induced pluripotent stem cells (iPSCs)",
+  "uri": "localised-axotomy-of-human-cortical-neurons-cns-fr-ctbnwime",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzbp14vx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"b5scn\",\"text\":\"This protocol describes the process followed to perform localised axotomy of iPSC-derived human cortical axons cultured within fluid-walled dumbbells in 6 cm TCT-treated Petri dishes. A similar protocol was first described by Soitu et al., 2020 to perform wounds assays in monolayer cell cultures. \",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":226,\"length\":18}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"917E2C00E2B011EDBB12B5B7AB615DBA\",\"url\":\"https://pubmed.ncbi.nlm.nih.gov/33598064/\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"601si\",\"text\":\"Reagents:\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"sqgb\",\"text\":\"B-27™ Supplement (50X), serum free (ThermoFisher Scientific, CAT# 17504044)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":34}],\"data\":{}},{\"key\":\"2tvv8\",\"text\":\"FC40 (iotaSciences Ltd, CAS# 51142-49-5)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":4}],\"data\":{}},{\"key\":\"9p462\",\"text\":\"Neurobasal (ThermoFisher Scientific, CAT#2113049)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ab4t9\",\"text\":\"Phosphate-buffered saline, pH 7.4 (PBS) (Life Technologies, CAT# 10010056)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":25}],\"data\":{}},{\"key\":\"cg26b\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2lri2\",\"text\":\"Equipment:\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"71c60\",\"text\":\"In-house Fluid Printer (iotaSciences Ltd.)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d91rt\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e91d8\",\"text\":\"Preparation of coating-prep medium:\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":35}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6a3tj\",\"text\":\"Neurobasal\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6ovt3\",\"text\":\"1x B-27 supplement\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"95mnm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"ED5FFF23E37611EDA9510A58A9FEAC02\",\"url\":\"https://www.thermofisher.com/order/catalog/product/17504044\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"0B87D02BE37711EDA9510A58A9FEAC02\",\"url\":\"https://www.3m.com/3M/en_US/p/d/b40045180/\"}},\"2\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"38EB815CE37711EDA9510A58A9FEAC02\",\"url\":\"https://www.thermofisher.com/order/catalog/product/10010056\"}}}}",
+  "steps": [
+    "On Day 20, remove the FC40 overlay from the Petri dish where human Cortical Neurons (CNs) were cultured inside fluid-walled dumbbells.",
+    "Gently add ~2 ml of coating-prep medium (see Materials ) to destroy every fluid wall without peeling cells off the substrate.",
+    "Remove medium and wash with PBS twice. Be careful with cells peeling.",
+    "After last wash, add ~5 ml of fresh medium (Neurobasal supplemented with B27). Cells can now be stored in incubator for several minutes if needed.",
+    "Equip the fluid printer with a 1 mL glass syringe filled with medium.",
+    "Place dish into the fluid printer.",
+    "Fluid printer automatically perform axotomy by means of a submerged medium jet. Such jet is held at a fixed height above cells and it is moved around the dish by the printer traverse to cross perpendicularly across axon bundles at the midpoint. Key parameters: jet height =300 μm jet flow rate = 480 μl/min traverse speed = 960 mm/min Parameters must be finely tuned, depending on cells maturation and concentration. Fluid printer is controlled by scripts written in G-code.",
+    "Remove medium and overlay fresh FC40.",
+    "New fluid-walled dumbbells can be fabricated around axotomized cultures following steps 1.5 and 1.6 in Protocol: Fabrication of fluid-walled dumbbells and generation of the human corticostriatal pathway",
+    "On DIV 0, fluorescent live images of all dumbbell conduits were taken just prior to CNs replating to serve as initial normalising timepoint.",
+    "Medium was changed every other day from now on for the next 20 days.",
+    "Images were taken on a digital SLR camera (Nikon D7100 DSLR) connected to an epi-fluorescence microscope (Olympus IX53; 1.25×, 4×, 10×, 25× objectives) equipped with a translation stage and an overhead illuminator (Olympus IX3 with filters).",
+    "Similar live images were taken again on day 20 prior to axotomy, and subsequently 36, 60, and 84 hours post-axotomy."
+  ],
+  "authors": [
+    "Quyen Do",
+    "Federico Nebuloni",
+    "Richard Wade-Martins"
+  ],
+  "creator": "Cláudia C. Mendes",
+  "published_on": 1690984396,
+  "created_on": 1682348099,
+  "keywords": []
+}

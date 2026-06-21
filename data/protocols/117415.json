@@ -1,0 +1,31 @@
+{
+  "id": 117415,
+  "title": "NIS-Elements JOB for DNA-Paint Acquisition at Serial Z-Planes",
+  "uri": "nis-elements-job-for-dna-paint-acquisition-at-seri-dwwf7fbn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj9p4nlk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"5nkhn\",\"text\":\"This JOB was created in NIS-Elements version 5.42.06, and is designed to acquire DNA-Paint images at multiple serial Z-planes. At each Z-plane, a user-defined number of images is captured. Focus stability is maintained at each plane through the use of Nikon's Perfect Focus System (PFS).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"6g1ke\",\"text\":\"This JOB was created in NIS-Elements version 5.42.06.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"2s1u3\",\"text\":\"  JOB definition for DNA-Paint and Serial Z-Planes - to be imported into the NIS-Elements JOBS Explorer:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"7iiap\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b3aoe\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"file\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"\",\"id\":539171,\"original_name\":\"MultiZ_DNAPaint.bin\",\"placeholder\":\"https://www.protocols.io/img/extensions/file.png\",\"raw_source\":\"\",\"size\":15529,\"source\":\"https://protocols-files.s3.amazonaws.com/files/sqtdcd75p.bin?X-Amz-Algorithm=AWS4-HMAC-SHA256\\u0026X-Amz-Credential=AKIAWFTFYUBUZ2U2JGOS%2F20260621%2Fus-east-1%2Fs3%2Faws4_request\\u0026X-Amz-Date=20260621T084559Z\\u0026X-Amz-Expires=604800\\u0026X-Amz-SignedHeaders=host\\u0026X-Amz-Signature=c8630016586223052a93893991f43d307c3f2d3d917b5db5ebf4b61b64c39dde\"}}}}",
+  "steps": [
+    "Download the attached JOB definition (see the Materials tab) and import the file into the JOBS Explorer",
+    "Click on the name of the JOB definition in the list and click the green Play icon",
+    "Select the Optical Configurations/Experiment Setups that define your Capture Definition",
+    "Select the Z-stack parameters for image capture, including z-range, z-step size and z-device.",
+    "In the Time Lapse parameters, define the number of images to be captured at each z-plane (by selecting &#34;Number of Loops&#34;). For fastest imaging, select No Delay as the Acquisition Period.",
+    "Once all Wizard sections are complete, click Run",
+    "The JOB will then begin acquiring images at each z-plane after automatically defining PFS offsets for each plane. If you would like to finish acquiring before images have been captured at every z-plane, click Finish. If you have made an error during setup and wish to discard all image data from the experiment, click Abort.",
+    "In the JOBS Wizard, first define an Alternative Storage Location where images will be saved",
+    "When the JOB starts running, you will first be prompted to enter a file name for your images. Once this is defined, click OK."
+  ],
+  "authors": [
+    "Robert Tetley",
+    "Andrew Vaughan",
+    "Cecilia Zaza"
+  ],
+  "creator": "Robert Tetley",
+  "published_on": 1743061459,
+  "created_on": 1735571597,
+  "keywords": []
+}

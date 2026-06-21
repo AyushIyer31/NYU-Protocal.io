@@ -1,0 +1,39 @@
+{
+  "id": 30441,
+  "title": "Human Spinal Cord Nuclei Isolation",
+  "uri": "human-spinal-cord-nuclei-isolation-9yhh7t6",
+  "doi": "dx.doi.org/10.17504/protocols.io.9yhh7t6",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"3jhiV\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"7vvPt\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":347778,\"guid\":\"424C72CF341F11EE9D4302C0B41BC903\",\"name\":\"OptiPrep™ Density Gradient Medium\",\"mol_weight\":0,\"sku\":\"D1556)\",\"url\":\"https://www.sigmaaldrich.com/catalog/product/sigma/d1556?lang=en\\u0026region=US\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":17,\"name\":\"Merck MilliporeSigma (Sigma-Aldrich)\",\"link\":\"http://sigmaaldrich.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "10x Stock Salt Solution: (raise to 50mL in water) note: can be stored at 4 °C for up to 2 weeks Final Concentration 2.5 mL CaCl2 (1M) 50mM 1.5 mL Magnesium Acetate (1M) 30mM 5 mL Tris pH7.8 (1M) 100mM 35 µL 2-Mercaptoethanol (14.3M) 10mM",
+    "Critical Note: Perform all steps on ice! 0 °C Add 4 mL 1x Homogenization Buffer into a clean 7ml capacity dounce homogenizer note: if using NeuN antibody, add it here (1:500 final dilution = 20ul primary labeled NeuN antibody)",
+    "50% Optiprep: (raise to 50mL in water) note: can be stored at 4 °C for up to 2 weeks 25 mL Optiprep 5 mL 10x Stock Salt Solution 8 mL Sucrose (2M)",
+    "29% Optiprep: (raise to 50mL in water) note: can be stored at 4 °C for up to 2 weeks 14.5 mL Optiprep 5 mL 10x Stock Salt Solution 8 mL Sucrose (2M)",
+    "1x Homogenization Buffer: (raise to 10mL in water) note: prepare fresh each time, keep on ice Final Concentration 1 mL 10x Stock Salt Solution 1X 1.6 mL Sucrose (2M) 320mM 200 µL EDTA (5mM) 0.1mM 100 µL NP-40 (10%) 0.1% 10 µL PMSF (100mM) 100uM 5 µL DAPI (5mg/ml) -- optional",
+    "Cut 4 frozen tissue slices ~0.2mm thick and transfer into dounce homogenizer.",
+    "Homogenize tissue with: 15 strokes loose pestle 20 strokes tight pestle (avoid bubbles)",
+    "Filter the sample through a 100um mesh into a fresh 15ml tube; rinse the filter with 1 mL 1x Homogenization Buffer and collect in the same tube.",
+    "Incubate 00:10:00",
+    "Add equal volume 50% Optiprep (~ 4.5 mL )",
+    "Invert thoroughly but gently to mix (avoid bubbles). This becomes a 25% optiprep solution.",
+    "Gently layer over 10 mL 29% Optiprep in swinging bucket ultracentrifuge compatible tube (we use Beckman #344058)",
+    "Spin in a swinging bucket centrifuge at 10,100g (=7400rpm in SW-28 Beckman rotor) for 00:30:00 at 4 °C note: acceleration and break both on at max (setting 9) Once the spin is done, the nuclei will be pelleted at the bottom of the ultracentrifuge tube. However, don&#39;t disrupt the gradient as doing so can introduce myelin contaminant into the sample!",
+    "Going from the top of the solution, remove the 25% optiprep layer using a 1ml pipet. note: if there is myelin coating over the top of the solution, remove it first.",
+    "Once the 25% optiprep layer is mostly removed, continue to pipet out solution from the top of the tube. The most effective way to do this while preventing myelin carry-over is to &#34;slurp&#34; the solution with a 1ml pipet such that you are effectively aspirating bubbles (50% solution and 50% air).",
+    "Once there is ~5ml solution left, pipet the solution out normally, 1ml at a time. Do not reuse the pipet tip. Remove the entire volume, being very careful with the last aspiration so as not to disturb the nuclei.",
+    "Resuspend the nuclei in your buffer of choice (eg, 1mL of PBS + 0.1% BSA) by forcefully expelling the buffer directly against the bottom of the ultracentrifuge tube. Pipet up and down to fully resuspend the nuclei, and transfer to an ice-cold 1.5mL tube."
+  ],
+  "authors": [
+    "Abbas Rizvi",
+    "Elena Kandror",
+    "Tom Maniatis"
+  ],
+  "creator": "Abbas Rizvi",
+  "published_on": 1575155246,
+  "created_on": 1575147469,
+  "keywords": []
+}

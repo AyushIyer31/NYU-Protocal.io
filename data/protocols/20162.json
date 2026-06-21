@@ -1,0 +1,26 @@
+{
+  "id": 20162,
+  "title": "U Mass - Glucose Tolerance Test",
+  "uri": "u-mass-glucose-tolerance-test-xxafpie",
+  "doi": "dx.doi.org/10.17504/protocols.io.xxafpie",
+  "description": "{\"blocks\":[{\"key\":\"1lgai\",\"text\":\"Summary: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fvu5u\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"39o98\",\"text\":\"Glucose tolerance test measures systemic clearance of glucose following an intraperitoneal bolus injection of 20% dextrose. This experiment measures insulin sensitivity in awake mice assuming that there are no alterations in the animal’s pancreatic -cell function and insulin secretion. Insulin sensitivity is altered in obese mice.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"ajlb5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"8ac8s\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"45p29\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"JXBGo\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"VXCfY\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"4jn5l\",\"text\":\"Note:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":5}],\"entityRanges\":[],\"data\":[]},{\"key\":\"bf1pv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"b3frs\",\"text\":\"Hospira, RRID:SCR_003985\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":24}],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":7},{\"key\":2,\"offset\":9,\"length\":15}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":180429,\"guid\":\"41A6F882341F11EE9D4302C0B41BC903\",\"name\":\"20% Dextrose injection USP \",\"mol_weight\":0,\"sku\":\"NDC0409-7935-19\",\"url\":\"https://ndclist.com/ndc/0409-7935/package/0409-7935-19\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":518,\"name\":\"Pfizer (Hospira)\",\"link\":\"https://www.pfizerinjectables.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"E1286CAB8A59492BB05C4C49A532AEA8\",\"url\":\"http://www.hospira.com/\"}},\"2\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"261496405F9511E9A9361F866DBBC92D\",\"url\":\"https://scicrunch.org/scicrunch/Resources/record/nlx_144509-1/SCR_003985/resolver\"}}}}",
+  "steps": [
+    "Mice may be fasted overnight (~15 hours) or for 5 hours prior to the start of experiment.",
+    "Collect plasma sample (10 µl) before the start of experiment (basal-0 min) to measure basal glucose levels.",
+    "Administer intraperitoneal injection of 20% dextrose (1 or 2 g/kg body weight) using an insulin syringe.",
+    "Collect plasma samples (10 µl) at 10, 20, 30, 60, 90, and 120 min following injection to measure circulating glucose concentrations.",
+    "For data analysis, plasma glucose levels vs. time after injection are plotted, and areaunder-curve may be calculated to estimate insulin sensitivity.",
+    "Area-under-curve of glucose tolerance test may be inversely correlated with insulin sensitivity assuming unaffected insulin secretion and pancreatic β-cell function in mice."
+  ],
+  "authors": [
+    "Jason Kim"
+  ],
+  "creator": "Lili Liang",
+  "published_on": 1557500067,
+  "created_on": 1549648760,
+  "keywords": []
+}

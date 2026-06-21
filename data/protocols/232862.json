@@ -1,0 +1,26 @@
+{
+  "id": 232862,
+  "title": "Global Field Intensity Quantification in ImageJ (Fiji)",
+  "uri": "global-field-intensity-quantification-in-imagej-fi-hfm6b3k9f",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvw4rd2lmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"ohqc\",\"text\":\"Global Field Intensity Quantification in\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"71jkl\",\"text\":\"ImageJ (Fiji)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bdj47\",\"text\":\"This protocol describes how to quantify global field fluorescence intensity from confocal microscopy\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"n43j\",\"text\":\"images using ImageJ (Fiji).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qsep\",\"text\":\"It is intended for analyses where the entire image's fluorescence level is meaningful, rather than\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d9il5\",\"text\":\"segmentation of specific structures\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "This protocol describes how to quantify global field fluorescence intensity from confocal microscopy images using ImageJ (Fiji). It is intended for analyses where the entire image&#39;s fluorescence level is meaningful, rather than segmentation of specific structures. --- ## 1. Open Your Image - Launch Fiji/ImageJ. - Go to File ‱ Open. - Load your confocal image (.tif, .czi, .lif, .nd2, etc.). - Fiji will usually use Bio-Formats to import multi-channel files.",
+    "## 6. Export Results - In the Results window, choose File ‱ Save As… to export in CSV format. - Repeat the process for all images and compare values in statistical software. --- ## Notes and Tips - Ensure identical imaging settings (laser power, gain, pinhole, exposure) for all compared samples. - Avoid saturated pixels (255 in 8-bit), as they distort intensity measurements. - Do not threshold or mask unless you intend to exclude background regions. - If background varies significantly between images, consider subtracting a uniform background (Process ‱ Math ‱ Subtract). --- This protocol provides a reproducible workflow for full-image intensity measurement in ImageJ/Fiji, suitable for global brightness comparison, imaging quality assessment, or experiments where overall fluorescence reflects biological differences.",
+    "## 5. Measure Global Field Intensity Instead of thresholding or masking, here the entire image is measured. Steps: 1. Press Ctrl+A (Select All). 2. Go to Analyze ‱ Measure. 3. In the Results window, note: - Mean Intensity (most commonly used) - Integrated Density - Min and Max Intensity The mean intensity is the primary metric for global field comparison. ---",
+    "## 2. Convert to 8-bit (Optional but Recommended) This standardizes dynamic range across images. Steps: 1. Go to Image ‱ Type ‱ 8-bit. 2. Verify the image values are now 0–255. ---",
+    "## 3. Subtract Background Rolling ball background subtraction reduces uneven illumination. Steps: 1. Go to Process ‱ Subtract Background. 2. Recommended rolling ball radius: 50–100 pixels. 3. Ensure “Light Background” is unchecked for typical fluorescence images. 4. Click OK. ---",
+    "## 4. Normalize or Enhance Contrast (Optional) Useful if images were acquired under slightly different brightness conditions. Steps: 1. Go to Process ‱ Enhance Contrast. 2. Check “Normalize”. 3. Optionally check “Saturated pixels = 0.1%”. 4. Click OK. ---"
+  ],
+  "authors": [
+    "Daniel Webster"
+  ],
+  "creator": "Daniel Webster",
+  "published_on": 1763612228,
+  "created_on": 1763499034,
+  "keywords": []
+}

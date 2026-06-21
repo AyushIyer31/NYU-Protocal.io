@@ -1,0 +1,28 @@
+{
+  "id": 61549,
+  "title": "scRNA-seq Data Processing (Cell Ranger, v6.0.0)",
+  "uri": "scrna-seq-data-processing-cell-ranger-v6-0-0-b8cmrsu6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlkk3q6l5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"dsa28\",\"text\":\"scRNA-seq data are analyzed using Cell Ranger from 10X Genomics.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "The &#34;cellranger mkfastq&#34; pipeline is used to demultiplex the raw Illumina base call files (BCL) into fastq format for further analysis. This pipeline uses a custom-built wrapper around Illumina’s bcl2fastq to demultiplex raw BCL files.",
+    "Differentially expressed genes identified between clusters of interest are further explored for pathways they impact using softwares such as Advaita&#39;s iPathwayGuide and Gene Set Enrichment Analysis (GSEA).",
+    "Reads are aligned to the GRCh38 (GENCODE v32/Ensembl 98) human reference genome using STAR. STAR performs splicing-aware alignment of reads to the genome. Aligned reads are then bucketed into exonic and intronic regions using a reference GTF file.",
+    "The &#34;cellranger count&#34; pipeline is then used to align reads to a reference genome, filter reads, count cellular barcodes and count UMIs.",
+    "The final &#34;cellranger count&#34; output yields gene expression matrices for each sample that contain the UMI counts per gene, per cell barcode. The results also include summary files with summary metrics describing sequencing quality along with secondary analysis output that includes PCA, t-SNE and UMAP plots; details on grouping of cells with similar expression profiles (clustering) and features differentially expressed in each cluster relative to all other clusters. The output &#34;.cloupe&#34; files are used for visualization and analysis in Loupe Browser."
+  ],
+  "authors": [
+    "molmer ",
+    "Martin Lotz",
+    "Padmaja Natarajan",
+    "Steven Head"
+  ],
+  "creator": "Merissa Olmer",
+  "published_on": 1651244715,
+  "created_on": 1651090736,
+  "keywords": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": 218908,
+  "title": "In-vitro Thermodynamic Solubility",
+  "uri": "in-vitro-thermodynamic-solubility-gzz4bx78x",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygxqdmzv8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"4m12\",\"text\":\"A thermodynamic solubility assay measures the maximum amount of a compound that can dissolve in a given solvent under specific conditions at equilibrium. It's a crucial assay for understanding a compound's true solubility, particularly in formulations and early drug development. This method helps determine the saturation solubility, where the dissolved compound is in equilibrium with the undissolved solid. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"3nkou\",\"text\":\"Always wear appropriate PPE for this protocol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cescn\",\"text\":\"Refer to Material Safety Data Sheets for additional safety and handling information.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"amrts\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Thermodynamic solubility: Dry solid compound are used, where particle size and crystal morphology influence the amount solubilized. Results provide important information for PK formulations, pH adjustment and cosolvent being two of the most used methods to solubilize poorly soluble drug compounds during later stages of development.",
+    "For each test compound injection: Response ratio = Test peak area / Internal standard peak area Test compound response ratio is converted to concentration (μM) from the standard curve.",
+    "The thermodynamic solubility assay is performed using 1 mg of compound, accurately weighed into a 1.5 mL glass vial",
+    "To each sample, 1 mL of 0.1 M phosphate buffer (pH 7.4) is added",
+    "Two analytical solutions are made for each sample. Solution A consists of 5 µL of Solution X, 395 µL of 30% methanol/70% water, and 100 µL of internal standard (IS).",
+    "Both the remaining supernatant and Solution X are used for analytical preparation.",
+    "After the second centrifugation, 5 µL of the clear supernatant is diluted with 495 µL of 30% methanol/70% water and mixed thoroughly to produce “Solution X.”",
+    "Following incubation, the supernatant is separated from undissolved solids via a two-step centrifugation process",
+    "For LC-MS/MS analysis, samples are prepared directly into a 96-well plate.",
+    "The vials are then incubated in a Thermomixer at 21°C and 700 rpm for 24 hours to allow the compound to reach equilibrium solubility",
+    "Solution B is prepared by mixing 25 µL of the original supernatant with 375 µL of 30% methanol/70% water and 100 µL IS.",
+    "A standard curve is also generated using four concentrations: Standard 1 (1.25 nM), Standard 2 (12.5 nM), Standard 3 (125 nM), and Standard 4 (1250 nM).",
+    "All samples and standards are injected onto the LC-MS/MS system, and the compound concentrations in the samples are quantified by comparing their responses to those of the known standards."
+  ],
+  "authors": [
+    "Nick Lynch"
+  ],
+  "creator": "Nick Lynch",
+  "published_on": 1754228218,
+  "created_on": 1748188517,
+  "keywords": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": 6191,
+  "title": "Computational prediction of the molecular mechanisms involved in migration",
+  "uri": "computational-prediction-of-the-molecular-mechanis-iapcadn",
+  "doi": "dx.doi.org/10.17504/protocols.io.iapcadn",
+  "description": "{\"blocks\":[{\"key\":\"7rj5s\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"44hne\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"20bdb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"e6laa\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Obtain the protein-protein interaction network (PPIN) for Mus musculus from the STRING 10.0 database containing all known and predicted protein-protein interactions.",
+    "Superimpose our previous mass spectrometry results of the TMEM30A complex in mouse tissue and the known migration-related genes from the literature onto the PPIN from the STRING database.",
+    "Extract the sub-network of these selected proteins from the whole PPIN in STRING.",
+    "Use DAVID to conduct the function and pathway enrichment analysis.",
+    "Visualize the signaling network with Cytoscape."
+  ],
+  "authors": [],
+  "creator": "Jiao Wang",
+  "published_on": 1496630642,
+  "created_on": 1496462352,
+  "keywords": []
+}

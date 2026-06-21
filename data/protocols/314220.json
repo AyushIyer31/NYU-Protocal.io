@@ -1,0 +1,39 @@
+{
+  "id": 314220,
+  "title": "Nikon Advanced Microscopy - Confocal Reflection Label-Free Imaging",
+  "uri": "nikon-advanced-microscopy-confocal-reflection-labe-jw4kcpgux",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg3mn77l25/v1",
+  "description": "{\"blocks\":[{\"key\":\"1tbkr\",\"text\":\"Confocal reflection microscopy captures laser light reflected from samples, and allows structures to be visualized without staining or autofluorescence. It can be used to study, for example, biomaterials, cell-growth surfaces, beads within cells, or structures such as blood vessels. Confocal reflection microscopy can be combined with fluorescence microscopy to study interactions between stained samples and the substrate onto which they are mounted. Additionally, confocal reflection microscopy allows the study of samples mounted on opaque substrates, allowing label free brightfield-like imaging. Using the Nikon AX confocal tunable detectors, it is easy to set up reflection imaging, and does not require additional hardware such as dedicated filter cubes, allowing reflection microscopy to be paired with fluorescence imaging. A more in depth explanation of confocal reflection microscopy can be found here: Confocal Reflection Microscopy | Nikon’s MicroscopyU\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":915,\"length\":52}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"B68557A52BBF11F1B4B70A58A9FEAC02\",\"url\":\"https://www.microscopyu.com/techniques/confocal/confocal-reflection-microscopy#:~:text=There%20are%20several%20remedies%20for,the%20reflection%20from%20optical%20elements.\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"7okq1\",\"text\":\"Please note, the reflection signal in confocal imaging can be very bright and usually the laser power needs to be very low for this channel. Be careful not to overexpose the detector by starting with a low gain and gradually increasing the gain. The software will automatically set the laserpower and gain to a low value when taking a reflection image.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9ihc\",\"text\":\"While there are safeguards in place to protect the photomultiplier tubes from being overexposed and damaged, Nikon does not take responsibility for accidental damage of the PMT due to careless usage during reflection microscopy. Use this protocol with caution!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Place sample onto microscope stage.",
+    "Add an experiment on the AX Confocal",
+    "Select Multi-channel Experiment",
+    "Select Based on Dyes",
+    "Add in fluorophores present in sample, then press finish.",
+    "Enter Expert Mode in experiment configuration to add a reflected channel",
+    "Add an extra channel to the experiment, and select reflected acquisition toggle. Here, the channel can be renamed and a false colour applied, for example as below.",
+    "Configure the reflected channel. N.B.Due to the architecture of the detectors, reflected imaging with the 405nm lasers is not possible simultaneously with DAPI detection on the first detector. If this is required, then a two-pass experiment must be configured The immediate result after pressing &#34;OK&#34; in the previous step - The reflected channel needs to be reassigned to a tunable detector, GaAsPs in position 2 or 3 in the list.",
+    "Cut the connection (by clicking on the line) from the connected channel to the 4th detector, and re-add this connection to GaAsP detectors 2 or 3.",
+    "Drag and drop from the red box onto the GaAsP detector, as below: Before reconnection After reconnection",
+    "Set the reflected channel to be imaged on a separate pass (frame pass)",
+    "Extend the variable filter range to cover the laser excitation for the reflected channel",
+    "Note: These results are examples of a fixed Bovine Pulmonary Arterial Epithelial slide, imaged with a 20x Air objective on the Nikon AX confocal microscope, with confocal zoom and cropping to show fine details within a cell. The 20/80 beamsplitter was used for the confocal reflection channel, and the standard dichroic was used for the fluorescence channels, with image registration in NIS elements post-acquisition. Confocal Reflection image only. A 640nm laser line was used for reflection - no fluorescent signal is observed with the 640nm laser in this sample. Confocal Reflection image merged with Fluorescence images. MitoTracker‱ is shown in red, Alexa Fluor‱ 488 Phalloidin is shown in green, and DAPI is shown in blue.",
+    "Open up experiment setup in expert mode and click on the first dichroic mirror.",
+    "Select 20/80 beamsplitter dichroic",
+    "Move the scan area away from the centre of the field of view.",
+    "Save the experiment",
+    "Slowly increase the gain and laser power until you can visualise the reflected channel. Please note, the reflection signal in confocal imaging can be very bright and usually the laser power needs to be very low for this channel. Be careful not to overexpose the detector by starting with a low gain and gradually increasing the gain. The software will automatically set the laserpower and gain to a low value when taking a reflection image. While there are safeguards in place to protect the photomultiplier tubes from being overexposed and damaged, Nikon does not take responsibility for accidental damage of the PMT due to careless usage during reflection microscopy.",
+    "Please see user manual here: NIS-Elements User Manual Image registration requires the image to have a structure that is present in both channels for registration. It is only required if switching primary dichroic mirrors between the reflected channel and fluorescence channels. The specific section containing image registration can be found here: Image Registration | NIS-Elements"
+  ],
+  "authors": [
+    "Akihiro Suto"
+  ],
+  "creator": "Akihiro Suto",
+  "published_on": 1777283204,
+  "created_on": 1774994275,
+  "keywords": []
+}

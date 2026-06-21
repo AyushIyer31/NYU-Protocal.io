@@ -1,0 +1,25 @@
+{
+  "id": 58850,
+  "title": "Efficient realization of quantum primitives for Shor&#39;s algorithm using PennyLane library",
+  "uri": "efficient-realization-of-quantum-primitives-for-sh-b5qaq5se",
+  "doi": "dx.doi.org/10.17504/protocols.io.b5qaq5se",
+  "description": "{\"blocks\":[{\"key\":\"bqdab\",\"text\":\"The following protocol describes how to use a software package\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5rp12\",\"text\":\"containing implementations of various quantum gates and well-known quantum\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eh8og\",\"text\":\"algorithms using PennyLane library. Templates within the package include all required\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"999vo\",\"text\":\"elements from the quantum part of Shor’s algorithm, specifically, efficient modular\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5ntp3\",\"text\":\"exponentiation and quantum Fourier transform that can be realized for an arbitrary\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b8tla\",\"text\":\"number of qubits specified by a user.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "First of all, you should install the PennyLane library using the regular python environment and set up the Jupyter Notebook&#39;s environment",
+    "Content of the Github repository should be uploaded on your PC via the following link: https://github.com/Anatoly-Antipov/QuantumOperations Files with the extension &#34;.py&#34; represent original python code that realizes the software package with new useful functions built upon the PennyLane library. Functions from this software package are ready-to-use commands similar to PennyLane&#39;s functions and commands. Files with the extension &#34;.ipynb&#34; are Jupyter Notebooks that contain examples of the use of commands from the software package. See the README.md file in the repository to view an up-to-date description of included files",
+    "Use the file &#34;Example.ipynb&#34; or the file &#34;ExampleOrderFinding.ipynb&#34; to get the simplest example of the use of a new function. The file &#34;Test.ipynb&#34; contains the full list of newly introduced functions alongside the demonstration of its use in a Jupyter Notebook&#39;s environment."
+  ],
+  "authors": [
+    "Anatoly Antipov",
+    "Evgeniy Kiktenko",
+    "Aleksey Fedorov"
+  ],
+  "creator": "Anatoly Antipov",
+  "published_on": 1657901162,
+  "created_on": 1646058261,
+  "keywords": []
+}

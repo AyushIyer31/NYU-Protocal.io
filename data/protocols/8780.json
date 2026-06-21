@@ -1,0 +1,33 @@
+{
+  "id": 8780,
+  "title": "Trends and patterns of Antibiotic Consumption in China’s Tertiary Hospitals: based on a 5 year surveillance with sales records, 2011-2015",
+  "uri": "trends-and-patterns-of-antibiotic-consumption-in-c-ktkcwkw",
+  "doi": "dx.doi.org/10.17504/protocols.io.ktkcwkw",
+  "description": "{\"blocks\":[{\"key\":\"1epk0\",\"text\":\"The consumption of antibiotics is a major driver for the development of antibiotic resistance in bacteria. We identified the trends and patterns of total antibiotic consumption in China’s tertiary hospitals from 2011 to 2015. We retrospectively analyzed aggregated monthly surveillance data on antibiotic sales made to 468 hospitals from 28 provinces. Antibiotic consumption was expressed in DDD per 1000 inhabitants per day (DID). We compared population weighted antibiotic consumption patterns in China with European countries using indicators from the European Surveillance of Antimicrobial Consumption (ESAC). Total antibiotic consumption in general, including all the specific antibiotic class except for aminoglycoside antibacterials, were significantly increased during the study period from an average of 7.97 DID in 2011 to 10.08 DID in 2015. In 2015, eastern regions consumed the most antibiotics if using population based calculation while west regions consumed the most using inpatient volume based calculation. Cephalosporins accounted for 28.6% of total DID, followed by beta-lactam-beta-lactamase inhibitor combinations with 20.0%, macrolides with 17.4%, and fluoroquinolones with 10.5%. Antibiotic in parenteral form were accounted for nearly half of all antibiotics. We used aggregated sales records data to monitor antibiotic consumption across China over a 6 year period. Although great efforts had been made through antibiotic stewardship in the past few years, total antibiotic consumption showed a significant upward trend during the study period. A consistent preferences for cephalosporins, macrolides, beta-lactam-beta-lactamase inhibitor combinations, as well as parenteral preparations was observed. More efforts are needed in the future to investigate the quality of antibiotic prescribing.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"bgksm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"e3mrj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"7o4nj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Aggregate the antibiotics into ATC-4 classes and ATC-3 groups.",
+    "Calculate the proportion of sample hospitals accounting for total tertiary hospitals in each province",
+    "Calculate the proportion of total inpatients in tertiary hospitals accounting for total inpatients in all hospitals in each province.",
+    "Calculate the coverage inhabitants using both total census population and total inpatient in tertiary hospitals in each province. The calculation is based on equition 1 and 2 in the artical.",
+    "DID=numbers of DDD in sample hospitals/coverage inhabitants/30*1000",
+    "Aggregate the provincial DID into East, Central and West region.",
+    "Calculate DID for antibiotics in different route",
+    "Calculate the quality indicators for antibiotic consumption using following equations. J01_DID: consumption of antibacterials for systemic use (J01) expressed in DID; J01C_DID: consumption of penicillins (J01C) expressed in DID;J01D_DID: consumption of cephalosporins (J01D) expressed in DID; J01F_DID: consumption of macrolides, lincosamides and streptogramins (J01F) expressed in DID; J01M_DID: consumption of quinolones (J01M) expressed in DID; J01CE_%: consumption of β-lactamase-sensitive penicillins (J01CE) expressed as a percentage; J01CR_%: consumption of combinations of penicillins, including β-lactamase inhibitors (J01CR) expressed as a percentage; J01DD+DE_%: consumption of third- and fourth-generation cephalosporins [J01(DD+DE)] expressed as a percentage; J01MA_%: consumption of fluoroquinolones (J01MA) expressed as percentage; J01_B/N: ratio of the consumption of broad-{J01[CR+DC+DD+(F-FA01)]}to the consumption of narrow-spectrum penicillins, cephalosporins and macrolides [J01(CE+DB+FA01); J01_SV: Seasonal variation of the total antibiotic consumption (J01) of a 12-month period starting in July and ending the following June, expressed as percentage: [(DDD (winter quarters)/DDD (summer quarters)-1] x 100; J01M_SV: Seasonal variation of quinolone consumption (J01M) of a 12-month period starting in July and ending the following June, expressed as percentage: [(DDD (winter quarters)/DDD (summer quarters)-1] x 100.",
+    "Calculate number of antibiotics which accounted for 90% of total antibiotic consumption"
+  ],
+  "authors": [
+    "Haishaerjiang Wushouer",
+    "Ye Tian",
+    "Xiao-Dong Guan",
+    "Sheng Han",
+    "Lu-Wen Shi"
+  ],
+  "creator": "Haishaerjiang Wushouer",
+  "published_on": 1514484437,
+  "created_on": 1510736643,
+  "keywords": []
+}

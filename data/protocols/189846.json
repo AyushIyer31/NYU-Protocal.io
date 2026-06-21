@@ -1,0 +1,39 @@
+{
+  "id": 189846,
+  "title": "F1016B Supercapacitor",
+  "uri": "f1016b-supercapacitor-f5mwbq47f",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v9wbzpl3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"8t4aa\",\"text\":\"Este protocolo describe la construcción de un circuito equivalente que simula el comportamiento de un supercapacitor utilizando capacitores y resistencias convencionales sobre un protoboard. La configuración incluye una fuente de alimentación de corriente continua, dos capacitores electrolíticos, elementos resistivos para modelar la resistencia serie equivalente (ESR) y un osciloscopio para observar la respuesta de voltaje.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7mu0m\",\"text\":\"Se espera obtener una curva de voltaje contra tiempo que muestre un incremento exponencial característico de la carga de un capacitor, lo que permite analizar la constante de tiempo y el comportamiento de almacenamiento de energía. Esta simulación ofrece una visión clara de la respuesta dinámica de los supercapacitores en aplicaciones de almacenamiento energético.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4pdhj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cpsek\",\"text\":\"Translation to English:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c64h\",\"text\":\"This protocol describes the construction of an equivalent circuit that simulates the behavior of a supercapacitor using conventional capacitors and resistors on a breadboard. The setup includes a direct current power supply, two electrolytic capacitors, resistive elements to model the equivalent series resistance (ESR), and an oscilloscope to observe the voltage response.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e155t\",\"text\":\"A voltage versus time curve is expected to be obtained, showing an exponential increase characteristic of capacitor charging, which allows for the analysis of the time constant and energy storage behavior. This simulation provides a clear insight into the dynamic response of supercapacitors in energy storage applications.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"8rc3j\",\"text\":\"Osciloscopio\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2q8ri\",\"text\":\"Fuente de poder \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dijo3\",\"text\":\"Placa de prueba\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1lrdb\",\"text\":\"3 resistores (100Ω, 100Ω y 1000Ω)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3t0kn\",\"text\":\"2 condensadores (10µF, 100µF)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"en12v\",\"text\":\"Cables para hacer conexiones en placa de prueba \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fej6o\",\"text\":\"2 cable banana a caimán\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bciol\",\"text\":\"USB \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aba5i\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Conexión",
+    "El pin positivo (más largo) va en la fila conectada a la línea roja (alimentación). El pin negativo va a una fila independiente.",
+    "Primera resistencia (100 Ω)",
+    "Colocar el primer capacitor electrolítico (10µF)",
+    "Coloca una resistencia (R1) entre la misma fila donde está el pin negativo del primer capacitor y una nueva fila.",
+    "Colocar el segundo capacitor electrolítico (100µF)",
+    "Su pin positivo se conecte a la salida de la resistencia anterior. Su pin negativo se conecte a GND.",
+    "Tercera resistencia",
+    "Conecta esta resistencia desde la salida del circuito hacia GND.",
+    "Conectar la línea roja de alimentación de la fuente (5V) al positivo de la placa de prueba. Conectar la línea negra de tierra (GND) al negativo de la placa de prueba.",
+    "Conexiones",
+    "Canal positivo del osciloscopio (cable rojo) se conecta en el punto entre los capacitores. Canal tierra del osciloscopio (cable negro) va conectado al GND.",
+    "Guardar datos",
+    "Conectar una USB y guardar las mediciones en un archivo separado por comas (CSV).",
+    "Referencia Circuito equivalente real Circuito equivalente armado en TinkerCAD",
+    "Gráfica Gráfica realizada por el osciloscopio",
+    "Fuente de poder Fuente de poder con 5V",
+    "Segunda resistencia (100 Ω)",
+    "Conecta una resistencia desde donde están unidos R1 y el segundo capacitor hacia otra nueva fila."
+  ],
+  "authors": [
+    "Oscar Jesús Madrid Moreno"
+  ],
+  "creator": "Oscar Jesús Madrid Moreno",
+  "published_on": 1746224946,
+  "created_on": 1745856725,
+  "keywords": []
+}

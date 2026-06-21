@@ -1,0 +1,23 @@
+{
+  "id": 12802,
+  "title": "The pipeline of Hi-C assembly",
+  "uri": "the-pipeline-of-hi-c-assembly-qradv2e",
+  "doi": "dx.doi.org/10.17504/protocols.io.qradv2e",
+  "description": "{\"blocks\":[{\"key\":\"9bo6m\",\"text\":\"From here, You can know detail methods of Hi-C assembly of the Betta splendens genome.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"bbhrd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"cd0pe\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"14oqi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Get raw Hi-C sequencing data in Fastq format and reference genome(the result of SOAPdenovo2) . Filter the input raw sequences by using HiC-Pro (v. 2.8.0). Using parameters&#39;MIN_INSERT_SIZE = 50 MAX_INSERT_SIZE = 2000&#39;,others are default parameters",
+    "Extract valid pairs reads according the HiC-Pro result.",
+    "1. Run Juicer (v. 1.5) to prepare data for 3D de novo (v.170123) assembly with valid pairs reads. 2. Run 3D de novo (v.170123) assembly to assemble into chromosome 1-Note: Using default parameter 2-Note: Using parameter&#39;-m haploid -s 4 -c 21&#39;"
+  ],
+  "authors": [
+    "Xin Liu"
+  ],
+  "creator": "Kailong Ma",
+  "published_on": 1528451369,
+  "created_on": 1528255555,
+  "keywords": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": 87654,
+  "title": "Polymerase Chain Reaction (PCR)",
+  "uri": "polymerase-chain-reaction-pcr-czuex6te",
+  "doi": "dx.doi.org/10.17504/protocols.io.261gedrndv47/v1",
+  "description": "{\"blocks\":[{\"key\":\"7v3c5\",\"text\":\"This is the common Polymerase Chain Reaction (PCR) protocol followed by the 2023 NUS-Singapore iGEM team. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"2l7bm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"3sra7\",\"text\":\"Proper lab PPE must be worn. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"68j5e\",\"text\":\"KOD OneTM PCR Master Mix (Blue)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":7,\"length\":2}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4jsn0\",\"text\":\"DNA Template \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"41k3a\",\"text\":\"Primer(s)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"726nq\",\"text\":\"DI Water\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Vortex the PCR tubes to mix well.",
+    "For a 50μL PCR sample, add the following into a PCR tube (follow the sequence): Item Volume 1 KOD OneTM PCR Master Mix (Blue) 25μL 2 Each Primer (2 primers in total) 1.5μL 3 DNA Template 1μL 4 DI Water 21μL",
+    "Place the PCR tube into the Thermal Cycler with the following conditions: **Lid Temperature: 105°C; Volume: 50μL A B C 1 98°C 10s 2 68°C 5s Edit: -1°C per cycle 3 68°C 1 minute \u0000 4 Go to step 1, repeat the cycle 13 times 5 98°C 10s 6 55°C 5s 7 68°C 1 minute 8 Go to step 5, repeat the cycle 25 times 9 68°C 5 minutes 10 12°C Infinite Loop (∞)",
+    "Upon finishing, cancel the current protocol and take out the PCR sample from the Thermal Cycler. Keep the sample in the 4°C fridge for storage. Otherwise, gel electrophoresis may be carried out to isolate the DNA fragment of interest.",
+    "Prepare a PCR tube.",
+    "Thaw the KOD One TM PCR Master Mix (Blue) from the -20°C fridge."
+  ],
+  "authors": [
+    "NUS iGEM"
+  ],
+  "creator": "NUS iGEM",
+  "published_on": 1695736433,
+  "created_on": 1694493120,
+  "keywords": []
+}

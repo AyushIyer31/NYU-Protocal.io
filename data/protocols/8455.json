@@ -1,0 +1,27 @@
+{
+  "id": 8455,
+  "title": "A second-order jump diffusion model with application to stock market returns",
+  "uri": "a-second-order-jump-diffusion-model-with-applicati-khfct3n",
+  "doi": "dx.doi.org/10.17504/protocols.io.khfct3n",
+  "description": "{\"blocks\":[{\"key\":\"1rkod\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"qsnf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"9vus8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"a31t0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "create a new second-order jump diffusion, in which the drift is clearly linear, the diffusion is a convex function and possion jump.",
+    "employ the likelihood ratio test statistic for testing the presence of jumps in thestock and stock index returns.",
+    "conduct a monte carlo simulation experiment for the new second order diffusionmodel aimed at evaluating the performance of our estimation approach. Here, we generate 100replications (paths) of dataset according to our design with each replicationconsisting of (n=2520) observations. simulated data {X} 00:00:29, simulated timer",
+    "empirical analysis of stock market data from America, Asia and Europe. As an example, the Microsoft stock log-price and returns are provided. Other stocks have similar statistical characterization; obtain the parameter estimates of the proposed models for the stocks and stock indexes. stocks 00:00:19, empirical analysis timer",
+    "construct maximum likelihood estimation of the model in order to obtain the coefficient estimators using sequential quadratic programming with the “fmincon” routine embedded in the optimization toolbox of Matlab."
+  ],
+  "authors": [
+    "Tianshun Yan",
+    "Yanyong Zhao",
+    "Shuanghua Luo"
+  ],
+  "creator": "Tianshun Yan",
+  "published_on": 1509888595,
+  "created_on": 1509218394,
+  "keywords": []
+}

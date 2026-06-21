@@ -1,0 +1,23 @@
+{
+  "id": 242968,
+  "title": "AlphaFold 3 Based Structural Prediction of ATG13–ATG101–WIPI3 and ULK1(IDR)–ATG13–ATG101 Complexes",
+  "uri": "alphafold-3-based-structural-prediction-of-atg13-a-hrhyb537x",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg3nbo1v25/v1",
+  "description": "{\"blocks\":[{\"key\":\"6b4\",\"text\":\"This protocol describes the structural prediction of the ATG13–ATG101–WIPI3 and ULK1(IDR)–ATG13–ATG101 complexes using AlphaFold3. The workflow emphasizes high-resolution sampling and rigorous validation of protein-protein interfaces through RMSD, iPTM, and PAE scoring metrics.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "For each subunit within the complex, generate multiple sequence alignments using the locally installed AlphaFold 3 engine to capture the evolutionary co-variation essential for identifying interfacial contacts. Filter and subsample MSAs to maximize sequence diversity while minimizing computational redundancy. Convert these alignments into high-dimensional representations that serve as the primary input for the AlphaFold 3 pair-representation and diffusion modules.",
+    "Execute structure predictions using AlphaFold 3, which utilizes a diffusion-based model to map sequence and MSA data to 3D atomic coordinates. To ensure robustness, utilize 50 random seeds with 10 models per seed, resulting in an ensemble of 500 total predictions per complex.",
+    "To evaluate the precision and reproducibility of the predicted binding modes calculate Root Mean Square Deviation (RMSD) for specific subsets such as ATG13 DHF motif and its proximal WIPI3 residues in the case of ATG13–ATG101–WIPI3 complex. Generate a distribution plot of the interface Predicted TM-score (iPTM) across all 500 models to assess the consistency of the complex assembly. Generate a Predicted Aligned Error (PAE) heatmap for the top-scoring representative model to quantify the relative positional certainty between domains."
+  ],
+  "authors": [
+    "Sanjoy Paul"
+  ],
+  "creator": "Sanjoy Paul",
+  "published_on": 1770756194,
+  "created_on": 1770718191,
+  "keywords": []
+}

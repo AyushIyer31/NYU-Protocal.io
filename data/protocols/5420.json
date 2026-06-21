@@ -1,0 +1,31 @@
+{
+  "id": 5420,
+  "title": "Genome-wide Kozak Sequence Over-represented Motif Analysis",
+  "uri": "genome-wide-kozak-sequence-over-represented-motif-hikb4cw",
+  "doi": "dx.doi.org/10.17504/protocols.io.hikb4cw",
+  "description": "{\"blocks\":[{\"key\":\"derkc\",\"text\":\"Bioinformatic approach to identifying over-represented motifs in the region framing the start codon (25 bp up and downstream) for genes annotated in the three sequenced Labyrinthulomycete genomes (Aurantiochytrium limacinum, Schizochytrium aggregatum, and Aplanochytrium kergulense).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":197,\"length\":84}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9fenu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"sdlb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"dnrl3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Schizochytrium aggregatum Schag1_GeneCatalog_genes_20121220.gff Schag1_AssemblyScaffolds.fasta from http://genome.jgi.doe.gov/pages/dynamicOrganismDownload.jsf?organism=Schag1 Aurantiochytrium limacinum Aurli1_GeneCatalog_genes_20120618.gff Aurli1_AssemblyScaffolds.fasta from http://genome.jgi.doe.gov/pages/dynamicOrganismDownload.jsf?organism=Aurli1 Aplanchytrium kergulense Aplke1_GeneCatalog_genes_20121220.gff Aplke1_AssemblyScaffolds.fasta from http://genome.jgi.doe.gov/pages/dynamicOrganismDownload.jsf?organism=Aplke Using R version 3.3.2 and the following packages: doBy (doBy_4.5-15) data.table (data.table_1.10.0) seqinr (seqinr_3.3-3) ShGeneCat Create working gene catalog for organism of interest. Schizochytrium aggregatum (Schag1) code provided herein as an example. R 3.3.2",
+    "Create subset of annotation file. colnames(ShGeneCat) Example of ShGeneCat. R 3.3.2 colnames(ShGeneCat) &lt;- c(&#34;contig&#34;,&#34;V2&#34;,&#34;type&#34;,&#34;start&#34;,&#34;stop&#34;,&#34;V6&#34;,&#34;strand&#34;,&#34;num&#34;,&#34;V9&#34;) getPID &lt;- function(dx){ a &lt;- regmatches(dx,gregexpr(&#34;proteinId (\\\\d+)&#34;,dx,perl=T))[[1]] ifelse(is.na(a[1]),NA,as.numeric(unlist(regmatches(a,gregexpr(&#34;\\\\d+&#34;,a,perl=T))))) } PID &lt;- vapply(ShGeneCat$V9,FUN=getPID,double(1)) ShGeneCat &lt;- cbind(ShGeneCat,PID) getExonNum &lt;- function(dx){ a &lt;- regmatches(dx,gregexpr(&#34;exonNumber (\\\\d+)&#34;,dx,perl=T))[[1]] ifelse(is.na(a[1]),NA,as.numeric(unlist(regmatches(a,gregexpr(&#34;\\\\d+&#34;,a,perl=T))))) } ExonN &lt;- vapply(ShGeneCat$V9,FUN=getExonNum,double(1)) ShGeneCat &lt;- cbind(ShGeneCat,ExonN) save(ShGeneCat,file=paste(species,&#34;GeneCat.rda&#34;,sep=&#34;&#34;)) Example of ShGeneCat. R 3.3.2",
+    "Identify species and term term term &lt;- &#34;wg&#34; #whole genome species &lt;- &#34;Sh&#34; #Ap, Sh, or Au",
+    "Retain only genes with a protein ID ShGeneCat R 3.3.2",
+    "Create new destination for identified coordinates ShGeneWg R 3.3.2",
+    "Write table with coordinates of region of interest for each gene. Here 25 bases up and downstream were isolated as region of interest. promC R 3.3.2 promC &lt;- do.call(&#34;rbind&#34;,lapplyBy(~PID,data=ShGeneWg,function(dx){ if(dx$strand[1]==&#34;+&#34;){ return(c(dx$contig[1],dx[dx$ExonN==1,&#34;start&#34;]-26,dx[dx$ExonN==1,&#34;start&#34;]+27,dx$PID[1],&#34;1&#34;,&#34;+&#34;)) #returns the first codon } if(dx$strand[1]==&#34;-&#34;){ return(c(dx$contig[1],dx[dx$ExonN==1,&#34;stop&#34;]-28,dx[dx$ExonN==1,&#34;stop&#34;]+25,dx$PID[1],&#34;1&#34;,&#34;-&#34;)) #returns the first codon } })) colnames(promC) &lt;- c(&#34;chr&#34;,&#34;start&#34;,&#34;stop&#34;,&#34;name&#34;,&#34;frame&#34;,&#34;strand&#34;) save(promC,file=paste(species,term,&#34;promC&#34;,&#34;rda&#34;,sep=&#34;.&#34;)) R 3.3.2",
+    "Using FASTA files previously downloaded: Schag1_AssemblyScaffolds.fasta Aurli1_AssemblyScaffolds.fasta Aplke1_AssemblyScaffolds.fasta Run bedtools command to retrieve sequence data. bedtools getfasta -s -fi Schag1_AssemblyScaffolds.fasta -bed Sh.wg.promC.gff -fo Sh.wg.promC.fasta -name bedtools 2.15.0",
+    "Use bioawk to discard any sequences not containing an &#39;ATG&#39; as the start codon. bioawk -c fastx 'substr($seq,26,3) ~ /ATG/ { print",
+    "Change any negative start sites to 1 promC[promC[,'start'] R 3.3.2 promC[promC[,&#39;start&#39;] &lt; 1, &#39;start&#39;] &lt;- 1 write.table(promC,file=paste(species,term,&#34;promC&#34;,&#34;gff&#34;,sep=&#34;.&#34;),quote=FALSE,row.names=FALSE,col.names=FALSE,sep=&#34;\\t&#34;) R 3.3.2",
+    "Use RSATprotist online in the web interface http://rsat01.biologie.ens.fr/rsa-tools/ Input FASTA file: Sh.wg.promC.ATG26.fasta 1 - Choose your type of data to analyse ChIP-seq List of gene names Sequences Matrices (PSSM) Coordinates (BED) List of variants 2 - Choose your biological question/ analysis to perform Are there over-represented motifs in these sequences? I want to scan these sequences with a motif 3 - Relevant RSAT programs oligo-analysis (words) dyad-analysis (spaced pairs) http://rsat01.biologie.ens.fr/rsa-tools/"
+  ],
+  "authors": [
+    "Mariana Rius",
+    " Joshua Rest"
+  ],
+  "creator": "Mariana Rius",
+  "published_on": 1490998114,
+  "created_on": 1490975249,
+  "keywords": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": 15377,
+  "title": "Basic use of command lines",
+  "uri": "basic-use-of-command-lines-s9reh56",
+  "doi": "dx.doi.org/10.17504/protocols.io.s9reh56",
+  "description": "{\"blocks\":[{\"key\":\"8l330\",\"text\":\"Learn the basic commands to navigate in a command-line terminal.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"6t9li\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"d7r5o\",\"text\":\"For Windows users :\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":19}],\"entityRanges\":[],\"data\":[]},{\"key\":\"15je9\",\"text\":\"You will need to install a shell, I personnaly recommand Cygwin. To install Cygwin, go to this page and follow the installation instructions for windows.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":90,\"length\":62}],\"data\":[]},{\"key\":\"dv9nh\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"c5h7o\",\"text\":\"For MacOS and Linux users :\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":27}],\"entityRanges\":[],\"data\":[]},{\"key\":\"1la88\",\"text\":\"A shell is provided in your OS, no need to install anything. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"53adl\",\"text\":\"MacOS users can however choose to use iTerm2 instead of the built in shell. To download and install iTerm2, go to this page and follow the instructions.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":114,\"length\":37}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"BCBEEED87C914E2088A4BBF1C538646E\",\"url\":\"https://www.cygwin.com/install.html\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"AFF9D0470D8A4059B6D245873BF113D8\",\"url\":\"https://iterm2.com/downloads.html\"}}}}",
+  "warning": "{\"blocks\":[{\"key\":\"69hc8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Note : This protocol requires you to have a command-line interface installed on your laptop. Please read the &#39;Before starting&#39; section in &#39;Guidelines and Warnings&#39; of this protocol to learn more about the installation. For Windows users : Launch Cygwin terminal from the application menu For MacOS users : Launch iTerm2, and open a new window. For linux (Ubuntu users) : Open the Dash by clicking the Ubuntu icon in the upper-left, type &#39;terminal&#39;, and select the Terminal application from the results that appear. You can also use the shortcut Alt+tab+T.",
+    "Here are the most common command lines that you will need to use. Those commands work on Cygwin, iTerm and Linux shell. %s %s Other important shortcuts : %s %s shortcut example effect .. cd .. Directory parent to the current one. The command &#39;cd ..&#39; will change the user&#39;s current working directory one one level up. . ./programA Current directory. The command &#39;./programA&#39; will execute the file &#39;programA&#39; located in the user&#39;s current working directory."
+  ],
+  "authors": [
+    "Alise J Ponsero"
+  ],
+  "creator": "Alise J Ponsero",
+  "published_on": 1536174518,
+  "created_on": 1536150615,
+  "keywords": []
+}

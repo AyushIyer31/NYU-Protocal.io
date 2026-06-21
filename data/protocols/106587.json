@@ -1,0 +1,43 @@
+{
+  "id": 106587,
+  "title": "Quantification of AAV Transduced Olfactory Sensory Neuron Terminals in the Olfactory Bulb Glomerular Layer",
+  "uri": "quantification-of-aav-transduced-olfactory-sensory-dkb34sqn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvjn1rxgk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"fha24\",\"text\":\"Pipeline for quantifying olfactory sensory neuron axon terminal expression of AAV-derived TdTomato within olfactory bulb tissue sections. This protocol outlines how to use Imaris to isolate TdTomato (experimental signal) and OMP (control signal) to quantify the extent of OSN transduction following nasal inoculation of AAV.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "After 2 weeks, harvest and process olfactory bulb tissue:",
+    "Image OB sections using a confocal microscope, such as a Leica TCS SP8, equipped with a 20x/.75 objective and Leica LAS X software.",
+    "To obtain the entire volume of each OB section, collect Z-stacks of ~30-40um per sample at 1024x1024 resolution with 4x line averaging and 2x frame averaging.",
+    "Stitch images within the LAS X software.",
+    "Analyze OB images using Imaris software (version 10.0):",
+    "For each image, draw a region of interest over the glomerular layer (excluding the olfactory nerve layer) and generate a volume.",
+    "Generate volumetric surfaces for each of the individually masked channels, using absolute intensity thresholding to account for per-sample background fluorescence signal.",
+    "Assess transduction efficiency of each serotype; quantify the total area (um^2) of TdTomato signal and OMP signal within the mask (area is used in place of volume, as the TdTomato signal is a cell-fill while anti-OMP antibody only labels the exterior of the axons).",
+    "Calculate the ratio of TdTomato signal area to OMP signal area.",
+    "To blind the researchers to the samples being analyzed, image files should renamed and randomly sorted.",
+    "Convert the files back into their identifiable names after all Imaris-based quantification is completed.",
+    "Transcardially perfuse mice with 10mL of ice-cold PBS, follow by 10mL of ice-cold 4% paraformaldehyde.",
+    "Harvest the olfactory bulbs (OBs), fix in 4% PFA at 4°C overnight, and move to 30% sucrose for 36 hours for cryoprotection.",
+    "Block tissue sections in 5% Donkey Serum (1X PBS, 0.1% Triton) for one hour at room temperature.",
+    "Freeze OBs in OCT (Fisher HealthCare cat# 23-730-571), section at 40um on a cryostat (Leica CM1860), and collect every third section for analysis.",
+    "Mount tissue on slides, cover with Fluoromount-G (Southern Biotech cat# 0100-01) and a cover glass, and seal the edges with nail polish prior to microscopy.",
+    "Incubate tissue with Hoechst (1:1000, Thermo Fisher cat# 62249) for 15 minutes at room temperature, and finally wash one more time with PBST.",
+    "Wash tissue three times with PBST.",
+    "Wash sections three times with PBST (0.1% Triton), followed by an incubatation with secondary antibody (anti-goat, Alexa Fluor 488 Invitrogen cat# A-11055) for 1 hour at room temperature.",
+    "Wash three times in PBST (0.1% Triton) and incubate with anti-OMP (1:20,000, FUJIFILM Wako Chemicals U.S.A. Corporation cat# 544-10001-WAKO) antibody at 4°C overnight.",
+    "Mask each channel individually within the volume, setting pixel intensity outside of the volume to 0.",
+    "Perform nasal inoculation of TdTomato-expressing AAV ( https://www.protocols.io/view/protocol-for-nasal-lavage-of-aavs-into-mice-cypnxvme ).",
+    "Image quantification pipeline using Imaris. A) Raw starting image of the olfactory bulb, OMP: Green, TdTomato: Red, Hoechst: Blue. B) Outline of the glomerular layer, excluding the olfactory nerve layer, used to generate masks for the OMP and TdTomato channels. C) Final mask of the OMP channel isolated to the glomerular layer. D) Final mask of the TdTomato channel isolated to the glomerular layer."
+  ],
+  "authors": [
+    "Benjamin David Webster Belfort"
+  ],
+  "creator": "Benjamin David Webster Belfort",
+  "published_on": 1727448146,
+  "created_on": 1724861363,
+  "keywords": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": 89318,
+  "title": "Estimation of uncertainty in calculations of apparent iron solubility in seawater",
+  "uri": "estimation-of-uncertainty-in-calculations-of-appar-c3geyjte",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzxjzrgx1/v2",
+  "description": "{\"blocks\":[{\"key\":\"e2v6q\",\"text\":\"The apparent iron (Fe) solubility (SFe(III)app) was calculated via an ion paring-organic matter (NICA-Donnan) model at ambient pH, temperature and dissolved organic carbon (DOC). It suggests vertical distributions of dissolved Fe (DFe) were likely a function of SFe(III)appwith changes driven by pH, temperature and DOC, in addition to non-equilibrium processes such as scavenging and redox cycling. It is necessary to constrain the uncertainty in the calculations that result from uncertainties in model parameters, since few sets of model parameters describing the acid-base properties of marine dissolved organic matter (DOM). Here we proposed an efficient methodology by ORCHESTRA-PEST++ to conduct both uncertainty and sensitivity analysis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":43,\"length\":3},{\"style\":\"sub\",\"offset\":270,\"length\":3}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"6k7un\",\"text\":\"All necessary information shown in attached ppt and the original source code for this protocol are provided in the attachment. Before any test, please carefully read the attached ppt document, as well as manual of PEST, PEST++ and ORCHESTRA.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"dvne5\",\"text\":\"1. The Java program must be installed on your computer.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7sni9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"btd9v\",\"text\":\"2. Calculations via chemical speciation software ORCHESTRA can be performed on Windows, Linux and Apple OSX, but the combination of ORCHESTRA-PEST++ can only be performed using Windows. We have only applied the software in Windows and the manual we have written is thus relevant to Windows and may not be applicable to use on Apple OSX or Linux.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cn0pc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"76mvt\",\"text\":\"Always check the constants in the Minteq4 data base for your chemical reactions of interest.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Set up calculations of iron speciation and solubility in seawater via the speciation code ORCHESTRA .",
+    "In the same sub-folder of ORCHESTRA, write the code for combining PEST++ to ORCHESTRA and run the loop.",
+    "Please see details in our earlier protocol, &#39;Modelling protocols for derivation of Fe(III) NICA constants and calculations of ambient Fe speciation and apparent Fe(III) solubility in seawater&#39; (DOI: dx.doi.org/10.17504/protocols.io.brc4m2yw ).",
+    "Please see details in earlier protocol (DOI: dx.doi.org/10.17504/protocols.io.brc4m2yw ), or PEST++ and PEST manuals.",
+    "Both PESTPP-SWP with ORCHESTRA run in parallel , to incorporate post-calibrated random sets within ORCHESTRA and calculate apparent iron solubility. To date, results will be automatically summarized in one .csv file after the run finished. Please see details in PEST++ and PEST manuals, as well as the full script attached.",
+    "Both PESTPP-IES and ORCHESTRA run in parallel , to generate post-calibrated random sets of Fe(III) NICA constants. To date, the code PESTPP-IES within PEST++ , based on the iterative ensemble smoother methodology, provides oppotunities to assess uncertainties in highly nonlinear model. Please see details in the manual of PEST++, as well as the full script attached.",
+    "The uncertainty for this work is considered as the results of uncertainties in derivations of NICA Fe(III) constants via comapring experimental data and modelling results, since few sets of model parameters describing the acid-base properties of marine dissolved organic matter (DOM). Using a Monte Carlo-based uncertainty analysis method to generate post-calibrated random sets of Fe(III) NICA constants to assess such uncertainties in calculated apparent iron solubility, in response to three different DOM binding site concentrations.",
+    "The sensitivity for this work is mainly focused on a simple authigenic Fe phase calculated from formation of ferrihydrite changing with temperature function. Therefore, using a Monte Carlo method to generate 1000 random sets of the solubility products, Ksp, as well as Fe(III) NICA constants to assess how seawater chemistry would affect iron speciation and solubility.",
+    "Both PESTPP-SEN and ORCHESTRA run in parallel , to firstly generate 1000 random sets of the solubility products, logks, as well as Fe(III) NICA constants via a Monte Carlo method and then incorporate these random sets within ORCHESTRA to calculate the total sensitivity indices via a Sobol method. Please see details in PEST++ manual, as well as the full script attached."
+  ],
+  "authors": [
+    "Kechen Zhu",
+    "Mark James Hopwood",
+    "Martha Gledhill"
+  ],
+  "creator": "Kechen Zhu",
+  "published_on": 1697480080,
+  "created_on": 1697430126,
+  "keywords": []
+}

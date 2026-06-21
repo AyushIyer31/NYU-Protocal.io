@@ -1,0 +1,33 @@
+{
+  "id": 104938,
+  "title": "Generating Antiviral & Cytotoxicity Curves",
+  "uri": "generating-antiviral-amp-cytotoxicity-curves-diqi4due",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvw12kzlmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"7recn\",\"text\":\"This describes generating Antiviral \\u0026 Cytotoxicity Curves\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "After you scan the plates and export the data to excel you will have an output that looks like this: If you used the MTS kit you will only have one If you used the Roche MTT kit you will have two readings MTS plate data As a reminder, this is the typical layout of the plates: Typical plate layout.",
+    "This is what the final Prism output should look like.",
+    "First, take calculate the average value and standard deviation of columns 1 and 11. These are the DMSO controls. DMSO controls columns 1 and 11 highlighted.",
+    "Next, you will take the average of the three replicates for each dilution of the compounds. The triplicates of the first dilution of drug 1 on this plate. The triplicates of the second dilution of drug 1 on this plate.",
+    "Next, you will divide the averages and standard deviations of each dilution by those of the DMSO controls and turn it into a percentage. For simplicity in excel you can combine steps 3 and 4 into one formula: =(average(A2-A4) / average(columns 1 &amp; 11)) *100 =(standard deviation(A2-A4) / standard deviation(columns 1 &amp; 11)) *100 Output",
+    "After staining and reading the plates you will export the data to an excel sheet. The data set that we want to further analyze is the ratio of infected to uninfected cells. It should look like this: Antiviral plate data output. Ratio of infected to uninfected cells.",
+    "Again, take the average of the infected DMSO controls. Columns 1 and 11. infected DMSO controls highlighted.",
+    "Next, take the average of the uninfected control (column 12) uninfected control highlighted",
+    "then, calculate the following using excel. [((value of experimental well) - (average uninfected)) / (average infected DMSO controls) ]*100 So, from the above example data it will be: [(2A- value from step 8) / (value from step 7)] *100 [(16.832-0.240375)/(24.684063)] = 67.21594 The data will look like this: Analysis of data from this example experiment.",
+    "From the output of step 9, calculate the average and standard deviation between the triplicates Left: Data output from step 9 Right: Average and standard deviation of the triplicates from step 9.",
+    "If you used the MTT kit you will first subtract the values from the two read outs:",
+    "Plug these values into a Prism file for the cell viability section.",
+    "Plug these values into a Prism file for the % infection section."
+  ],
+  "authors": [
+    "Briana L McGovern"
+  ],
+  "creator": "Briana L McGovern",
+  "published_on": 1742334539,
+  "created_on": 1723071482,
+  "keywords": []
+}

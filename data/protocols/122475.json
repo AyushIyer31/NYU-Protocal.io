@@ -1,0 +1,29 @@
+{
+  "id": 122475,
+  "title": "Classification of primary Glioblastoma cell lines into molecular subtypes\n",
+  "uri": "classification-of-primary-glioblastoma-cell-lines-d3uj8nun",
+  "doi": "dx.doi.org/10.21203/rs.3.pex-1218/v1",
+  "description": "{\"blocks\":[{\"key\":\"a9vnu\",\"text\":\"This protocol provides the details for the classification of the primary Glioblastoma cell lines HuTu10 and HuTu13 into the Glioblastoma molecular subtypes using microarray data.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"g7dds\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"vdvrh\",\"text\":\"Classical serum-grown Glioblastoma (GBM) cell lines have been shown to display molecular traits that are divergent from primary tumor masses from which they derive; as such, they are of limited utility to study Glioblastoma1. For this reason, many groups now prefer to use primary GBM cell lines maintained in serum-free media. Specifically, we used two independent primary GMB cell lines, HuTu10 and HuTu132.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":223,\"length\":1},{\"style\":\"sup\",\"offset\":407,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"xhp6r\",\"text\":\"Glioblastomas (GBMs) can be classified in at least three transcriptional subtypes, defined as Proneural, Classical and Mesenchymal; Proneural and Mesenchymal GBMs represent two extremes in terms of molecular marker expression and patients’ survival3. As such, we were interested in determine the molecular subtypes to which HuTu10 and HuTu13 belong to.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":248,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"gxeko\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "we performed total RNA extraction in quadruplicate from HuTU cell culture and total RNA was then used for Affymetrix Microarray profiling on HG-U133 Plus 2.0 arrays (Affymetrix), as detailed for other cancer cell lines in Azzolin et al, 2012 4 .",
+    "Then, we proceeded as follows:",
+    "Probe level signals were converted to expression values using robust multi-array average procedure 5 (RMA) of Bioconductor affy package and a custom CDF for Affymetrix HG-U133Plus2 arrays based on Entrez genes (hgu133plus2hsentrezgcdf version 21.0.0; http://brainarray.mbni.med.umich.edu/Brainarray/Database/CustomCDF/21.0.0/entrezg.asp).",
+    "We then compared the transcriptome of these cells with those of the TCGA primary GBMs. Specifically, we used the gene expression data and molecular subtypes of the TCGA tumors to train the R version of the ClaNC (Classification to Nearest Centroids 6 ) classifier implemented in the clanc.R function (https://github.com/naikai/sake/blob/master/R/clanc.R). The ClaNC classifier correctly classified 89.1%, 83%, 89.41%, and 86.71 of TCGA Classical, Proneural, Neural, and Mesenchymal samples using 1016 selected genes (centroids; Supplementary Table 1). Then, we merged HuTu and TCGA expression matrixes retaining the set of common gene symbols and removing batch effects with the ComBat function 8 of the Bioconductor sva package.",
+    "Finally, we clustered the samples of the merged HuTu and TCGA data using the set of 1016 centroid genes. The supervised clustering grouped HuTu10 samples in the cluster enriched in Proneural TCGA samples, and HuTu13 in the group enriched in Mesenchymal. Hierarchical clustering was performed using the function hclust of R stats package with Pearson correlation as distance metric and average agglomeration method. All analyses were performed in R 3.5.0.",
+    "Single-cell analyses reveal YAP/TAZ as regulators of stemness and cell plasticity in glioblastoma by Martina Castellan, Alberto Guarnieri, Atsushi Fujimura, Francesca Zanconato, Giusy Battilana, Tito Panciera, Hanna Lucie Sladitschek, Paolo Contessotto, Anna Citron, Andrea Grilli, Oriana Romano, Silvio Bicciato, Matteo Fassan, Elena Porcù, Antonio Rosato, Michelangelo Cordenonsi, Stefano Piccolo published in Nature Cancer on 07 Dec, 2020 https://dx.doi.org/10.1038/s43018-020-00150-z",
+    "Supplementary Table 1.Xlsx Supplementary Data Table 1: centroids as determined by the ClaNC classifier trained using gene expression data and molecular subclasses of the GBM TCGA data set"
+  ],
+  "authors": [
+    "Michelangelo Cordenonsi",
+    "Silvio Bicciato",
+    "Stefano Piccolo"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1607531328,
+  "created_on": 1607531328,
+  "keywords": []
+}

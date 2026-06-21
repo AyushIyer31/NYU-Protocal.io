@@ -1,0 +1,26 @@
+{
+  "id": 100129,
+  "title": "Multi-electrode array recordings",
+  "uri": "multi-electrode-array-recordings-ddz92796",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv5rj86g1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"191s9\",\"text\":\"MEA recordings in acute slices\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Individual slices are placed over an 8 × 8 array of planar microelectrodes, each 20μm×20μm in size,with an interpolar distance of 100 μm (MED-P2105; Alpha MED Sciences, Kadoma, Japan). Slices are positioned over the multi-electrode array under visual control through an upright microscope (Leica DM-LFS, Leica Microsystems, Wetzlar, Germany) so that most of the planar electrodes are covered by theSNc area. The location of the medial terminal nucleus of the accessory optic tract is taken as a reference for the SNc area.",
+    "The slices are kept submerged in ACSF with a nylon mesh glued to a platinum ring. Particular care is required to maintain a continuous flow of warm (34◦C) oxygenated ACSF (6 ml/min), streaming right above the SNc area. This procedure allowed us to preserve the stable spontaneous firing of the neuronal population recorded.",
+    "ACSF composition is (in mM): 126 NaCl, 2.5 KCl,1.2 MgCl 2 , 1.2 NaH 2 PO 4 , 2.4 CaCl 2 , 10 glucose and 25 NaHCO 3. . The solution is saturated with a mixture of O 2 /CO 2 (95/5%).",
+    "Voltage signals are acquired using the MED64 System (Alpha MED Sciences), digitized at 20 kHz and filtered (0.1–10 kHz) with a 6071E Data Acquisition Card (National Instruments, Austin, USA), using Conductor software (Alpha MED Sciences).",
+    "The fast transients corresponding to spontaneous action potentials are captured offline using Spike2 6.0 software (Cambridge Electronic Design Ltd, Cambridge, UK), using an amplitude threshold adjusted by visual inspection in each active channel.",
+    "Spikes may differ in shape and amplitude in each active channel, reflecting spontaneous action potentials arising from more than one neuron, therefore spike-sorting discrimination of multi-unit responses is often needed. This is achieved by generating spike templates with Spike2 6.0 software, sorted with a normal mixtures algorithm on independent clusters obtained from principal component data."
+  ],
+  "authors": [
+    "Nicola Biagio Mercuri"
+  ],
+  "creator": "Nicola Biagio Mercuri",
+  "published_on": 1716301128,
+  "created_on": 1716213312,
+  "keywords": []
+}

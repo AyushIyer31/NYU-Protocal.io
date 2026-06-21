@@ -1,0 +1,32 @@
+{
+  "id": 111943,
+  "title": "CycloneSEQ library construction from single bacteria",
+  "uri": "cycloneseq-library-construction-from-single-bacter-drjf54jn",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l2989qv1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"5bsn5\",\"text\":\"In a recent study, we constructed several high-quality complete bacterial genomes using a hybrid assembly method, which combines long-read sequencing from the CycloneSEQ platform and short-read sequencing from the DNQSEQ platform to fill gaps in bacterial draft assemblies.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4u7ue\",\"text\":\"The workflow of CycloneSEQ library construction for single bacteria can be found in the source paper and the following protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Approximately 2 mL of liquid medium with 10 8 or 10 9 cfu of bacterial cells was extracted using the DNA Kit for high-throughput applications.",
+    "The CycloneSEQ library preparation and sequencing followed the manufacturer’s guidelines. Each sample, containing 2 μg of input DNA (≥21 ng/μL), was diluted with nuclease-free water to 192 μL, then mixed with 14 μL each of DNA repair buffers 1 and 2, 12 μL of DNA repair enzyme 1, and 8 μL of DNA repair enzyme 2.",
+    "The mixtures were incubated in a thermocycler at 20 °C for 00:10:00 , 65 °C for 00:10:00 , and held at 4 °C .",
+    "After incubation, the mixtures were purified with 1.0x DNA clean beads and eluted with 240 µL of nuclease-free water.",
+    "The end-repaired samples were then mixed with 10 µL of sequencing adaptors, 100 µL of 4x ligation buffer, 40 µL of DNA ligase, and 10 µL of nuclease-free water, and incubated at 25 °C for 00:30:00 minutes.",
+    "The ligated products were purified again with 1.0x DNA clean beads, resuspended with long fragment wash buffer, and recovered into 42 µL of elution buffer.",
+    "The libraries were quantified using a Qubit fluorometer and sequenced on the CycloneSEQ WuTong02 platform according to the protocol."
+  ],
+  "authors": [
+    "Wang Mengmeng",
+    "Liang Hewei",
+    "Tao Zeng",
+    "Chen Junyi",
+    "Zou Yuanqiang",
+    "Xiao Liang"
+  ],
+  "creator": "Mengmeng Wang",
+  "published_on": 1731528004,
+  "created_on": 1731378214,
+  "keywords": []
+}

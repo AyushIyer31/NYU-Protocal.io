@@ -1,0 +1,29 @@
+{
+  "id": 218906,
+  "title": "In-vitro Mouse or Human Blood stability assay",
+  "uri": "in-vitro-mouse-or-human-blood-stability-assay-gzz2bx78f",
+  "doi": "dx.doi.org/10.17504/protocols.io.261ge8m6og47/v1",
+  "description": "{\"blocks\":[{\"key\":\"4m12\",\"text\":\"In vitro blood stability is a key aspect of DMPK (Drug Metabolism and Pharmacokinetics) research, focusing on how a drug candidate behaves within the blood in a controlled laboratory environment. This involves evaluating the compound's stability, its rate of degradation, and its potential for interaction with other blood components. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"3nkou\",\"text\":\"Always wear appropriate PPE for this protocol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cescn\",\"text\":\"Refer to Material Safety Data Sheets for additional safety and handling information.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"amrts\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "The in-vitro mouse blood stability incubation assay is run in 96-well plates on a Thermomixer set to 39°C and 700 rpm This protocol can be used with the following blood samples: Human (HBS) Mouse (MBS)",
+    "The percent remaining of the test compound against time is calculated For each test compound injection, response ratio = Test peak area / Internal standard peak area in test The response ratio is converted to % test compound remaining. The % test compound remaining is plotted versus time.",
+    "Fresh blood is aliquoted (297 µL) into relevant plate wells",
+    "Test compounds are diluted to 100 µM in methanol, and 3 µL is added to initiate the reaction",
+    "Samples are injected onto LC-MSMS and the % remaining of the test compound at each time point calculated against T0",
+    "Samples are centrifuged, and 150 µL of supernatant is transferred to a new plate, diluted with 30% methanol in water to a final volume of 300 µL",
+    "After incubation, plates are sealed and stored overnight at 4°C.",
+    "Quenching occurs at specified time points (0–120 minutes) by transferring 25 µL of the incubateinto wells pre-filled with ice-cold acetonitrile containing internal standard.This is repeated column-by-column to maintain precise timing",
+    "Method (MS) blanks are also prepared"
+  ],
+  "authors": [
+    "Nick Lynch"
+  ],
+  "creator": "Nick Lynch",
+  "published_on": 1754224314,
+  "created_on": 1748180813,
+  "keywords": []
+}

@@ -1,0 +1,22 @@
+{
+  "id": 13531,
+  "title": "Genome survey",
+  "uri": "genome-survey-rf3d3qn",
+  "doi": "dx.doi.org/10.17504/protocols.io.rf3d3qn",
+  "description": "{\"blocks\":[{\"key\":\"4fbgu\",\"text\":\"The understanding of genome characteristics for a given new species, i.e., genome size and heterozygosity, facilitates customizing a specific sequencing and assembling strategy. Thus, the genome size was estimated using four independence methods, i.e., a script of KmerSpectrumPlot.pl in ALLPATHS-LG (version r52488), GCE (Genome Characteristics Estimation, released 20150107, ftp://ftp.genomics.org.cn/pub/gce), JELLYFISH (version 2.0) and flow cytometry.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"dfeuc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"d3rth\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"dhi7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "In the data preprocessing, low-quality reads (the proportion of the base of Q&lt;13 more than 40% in a given reads) were filtered using NGS QC Toolkit (version 2.3.3) with default parameters. NGS QC Toolkit 2.3.3 Linux Centos 6",
+    "The understanding of genome characteristics for a given new species, i.e., genome size and heterozygosity, facilitates customizing a specific sequencing and assembling strategy. Thus, the genome size was estimated using four independence methods, i.e., a script of KmerSpectrumPlot.pl in ALLPATHS-LG (version r52488), GCE (Genome Characteristics Estimation, released 20150107, ftp://ftp.genomics.org.cn/pub/gce), JELLYFISH (version 2.0) and flow cytometry. ALLPATHS-LG r52488 Linux Centos 6 GEC (Genome Characteristics Estimation) released 2015010 Linux Centos 6 Jellyfish 2.0 Linux Centos 6"
+  ],
+  "authors": [
+    "Hansheng Zhao"
+  ],
+  "creator": "Hansheng Zhao",
+  "published_on": 1530599809,
+  "created_on": 1530599106,
+  "keywords": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": 45754,
+  "title": "COVID 19 testing using ATR spectrometer and AI.",
+  "uri": "covid-19-testing-using-atr-spectrometer-and-ai-bqw2mxge",
+  "doi": "dx.doi.org/10.17504/protocols.io.bqw2mxge",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Sample collection 300 µL, Saliva Swab or NP Swab A sample of saliva swab or Naso-pharyngeal swab is collected using only swab with a synthetic tip. Swab is immediately inserted into sterile tubes containing 1ml of viral transport media the VTM used is the VTM-N of Citoswab",
+    "RNA extraction and Spectrometer preparation we use extraction Genrui extraction kits and machine. Take out a 96-well plate, wait for its temperature to equilibrate to room temperature, flick the liquid to concentrate on the bottom of the tube, tear the aluminum foil for use. Add 25μL of the binding solution (well and mix before use) to wells 1 and 7 of the 96-well plate, and then add 125μL of sample in sequence, and mix by suction and returning until the magnetic beads are cloudy Place the 96-well plate on the reagent disk of the nucleic acid extraction instrument, install the magnetic rod cover (special for the instrument), and close the front cover; Select the corresponding item parameters and click Run After the operation is completed, remove the 96-well plate from the instrument, and the liquid in wells 6 and 12 can be directly used for detection or transferred to an EP tube without DNA/RN enzyme at -20℃ or -80℃ for storage, discard the magnetic rod cover, place the instrument, close the front cover, open and disinfect A nanodrop can be used to verify if the RNA was extracted properly.",
+    "18 °C",
+    "with a micro pipette take 5 µL, of the RNA homogenized extract , on the ATR spectrometer using covid-model parameters and a background taken of distilled water, put the drop on the cleaned crystal , use the pressure of 700kg/cm^2, lock the crystal cover and launch the spectra measurement Spectrophotomètre infrarouge FT/IR 4600 Jasco (Spectrometer, Jasco, 702818)",
+    "Save the measurement file, export the file to a CSV format and launch the machine learning sub routine for sample classification, push the classification button and save the results",
+    "clean the spectrometer surfaces with an Hydro-Alcoholic solution and Optical lens paper for the next use.",
+    "Extract conservation for the conservation of the remaining extract we place it under -80 °C",
+    "If any change in the experiments conditions( ATR spectrometer, HW transport, the VTM matrix, the RNA extraction kit) a new model calibration is needed based on the new reference data. Reference data is a set of at least 160 spectra collected from known representative clinical samples(80 positives with differents CTs and 80 negatives), and taken in the same new conditions.",
+    "in Parallel of the swab and RNA extraction, the Spectrometer should be turned on, cleaned, covid-parameters loaded, and background taken using distilled water. Validation using 40 clinical reference samples, which are 20 known positive RNA extract and 20 negative extract for the 40 clinical samples proceed as below: run Steps 3.1 and 3.2 if the result is concordant with the clinical sample type continue to the next sample, else push the &#34;rebuild model&#34; button by adding the precedent spectrum and continue to the next sample. After validation step, and if concordance is less then 80% go to step 6 and redo calibration else redo background with distilled water for next spectrometer use."
+  ],
+  "authors": [
+    "Driss LAHLOU KITANE",
+    "Salma LOUKMAN",
+    "Nabila MARCHOUDI",
+    "Nawfel AZAMI"
+  ],
+  "creator": "Salma LOUKMAN",
+  "published_on": 1608503195,
+  "created_on": 1608472108,
+  "keywords": []
+}

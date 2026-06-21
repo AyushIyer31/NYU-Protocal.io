@@ -1,0 +1,41 @@
+{
+  "id": 26253,
+  "title": "Mesuring JF dye kinetics in the brain of C57/Bl mice",
+  "uri": "mesuring-jf-dye-kinetics-in-the-brain-of-c57-bl-mi-5vmg646",
+  "doi": "dx.doi.org/10.17504/protocols.io.5vmg646",
+  "description": "{\"blocks\":[{\"key\":\"d121l\",\"text\":\"The purpose of this protocol is to compare the intake and clerance kinatics of JF dye systemic delivery using retro orbital injections.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"38cc5\",\"text\":\"We image a mouse with a crenial window before and after systemic dye injection.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dh2sq\",\"text\":\"We want to fit the clearance of the dye with a double exponanatial decay function:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4bkn9\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":[]},{\"key\":\"tim7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"b2f98\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"tex_formula\",\"mutability\":\"\",\"data\":{\"formula\":\"y = \\\\textbf a*e^{-\\\\frac{1}{\\\\textbf b*x}}+\\\\textbf c*e^{-\\\\frac{1}{\\\\textbf d*x}} + \\\\textbf e\",\"guid\":\"19E342D0AF4111E9B448C9764DEDB465\",\"id\":0}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Use a mouse with a window (dosen&#39;t have to be in ALM)",
+    "Move the mouse to an induction chamber with 3% ISO and flow of ~2L.min. Wait until the mouse takes ~ 1 breaths per second",
+    "Move the mose to the microscope and clean the window with Q-tips and 70% ethnol.",
+    "Select if you want to use a 4x or 20x objective. If using a 20x add water above the window. Lower the objecive using room light or white light illumenation and focus on the top of the cortex.",
+    "Pick the approprite filter cube and illumnation source for the dye",
+    "Setup the imaging conditions in a way that baseline image takes ~ 10-20% of the dynamic range but is above read noise level. We use 50ms exposure with 40 frames per timepoint totaling ~2s duraion per timepoint. Or 200ms with 10 frames if signal is lower.",
+    "Recorde baseine image at a few illumenation settings to make sure that the first timepoints after injection are not saturated. For exmaple with a LED use 100mA, 500mA 1A and 2A driving current for the same aquisition settings. When imaging the first image after injection try using 500mA but change if it is too dark / saturated.",
+    "Take the animal out of the imaging rig and back to the induction box if it is breathing faster then 1/s",
+    "Record a white light referance image so you don&#39;t have to bleach your signal to return to the same field of view. If possible record the objective&#39;s location.",
+    "Prepare a fresh dye aliqoute",
+    "Inject into the retro-orbital sinus",
+    "Return the animal to the rig and return to the same field of view using the white light image as referance",
+    "Start imaging using the fluorescence light source at fast interval at first (~1-3min) to catch the rise and fast decay phases and depending on the dynamics start reducing the intervals (5-20min) after ~ 1h you should get a sense of the amount of change you see and start seperating time points by more then 30min.",
+    "After ~4h you can usually take the animal out of the rig and preform recurdings at &gt;2h intervals.",
+    "After 24h usually no more dynamics is obsureved.",
+    "Load images and mean each timepoint, save the mean image",
+    "Load the mean images in Fiji and using the stack sorter move the first (baseline) image to be the last.",
+    "Use the Linear Stack Alignment with SIFT plugin to align the stack of images.",
+    "Save the aligned stack and load in Matlab",
+    "Define a mask (elipse or otherwise) of the imaged region of interest (imellipse). Median the pixels there, substract the baseline timepoint",
+    "Fit a double exponant model to the rest if the median pixels (excluding baseline) using the file creation date as x axis. y = \\textbf a*e^{-\\frac{1}{\\textbf b*x}}+\\textbf c*e^{-\\frac{1}{\\textbf d*x}} Add a lower bound of 0 to all parameters. If cell are expressing a HaloTag, use: y = \\textbf a*e^{-\\frac{1}{\\textbf b*x}}+\\textbf c*e^{-\\frac{1}{\\textbf d*x}} + \\textbf e First point used will be the peak (Most times the first as the rise is very fast)"
+  ],
+  "authors": [
+    "Boaz Mohar"
+  ],
+  "creator": "Boaz Mohar",
+  "published_on": 1585156625,
+  "created_on": 1564102836,
+  "keywords": []
+}

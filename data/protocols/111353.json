@@ -1,0 +1,34 @@
+{
+  "id": 111353,
+  "title": "MLSA5 and VPS34 inhibitor treatments and immunoblotting of whole-cell lysates from cell culture systems",
+  "uri": "mlsa5-and-vps34-inhibitor-treatments-and-immunoblo-dqyz5xx6",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv526r5v1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"6cj6h\",\"text\":\"This is a protocol for assessing ATG8 lipidation after CASM induction by Western blotting from whole-cell lysates derived from HeLa cell culture systems.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"dbpi\",\"text\":\"DISCLAIMER – FOR INFORMATIONAL PURPOSES ONLY; USE AT YOUR OWN RISK\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5su1k\",\"text\":\"\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"85leh\",\"text\":\"The protocol content here is for informational purposes only and does not constitute legal, medical, clinical, or safety advice, or otherwise; content added to protocols.io is not peer reviewed and may not have undergone a formal approval of any kind. Information presented in this protocol should not substitute for independent professional judgment, advice, diagnosis, or treatment. Any action you take or refrain from taking using or relying upon the information presented here is strictly at your own risk. You agree that neither the Company nor any of the authors, contributors, administrators, or anyone else associated with protocols.io, can be held responsible for your use of the information contained in or linked to this protocol or any of our Sites/Apps and Services.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":160,\"length\":12},{\"key\":1,\"offset\":631,\"length\":12}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"2315B58E979F11EF87650A58A9FEAC02\",\"url\":\"http://protocols.io\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"2315B5CD979F11EF87650A58A9FEAC02\",\"url\":\"http://protocols.io\"}}}}",
+  "materials_text": "",
+  "steps": [
+    "For whole-cell lysates, prepare samples following standard protocols, and final samples should be in LDS buffer with DTT or similar. Incubate samples at 80 °C for 00:05:00 .",
+    "Load samples into a NuPAGE Novex‱ 4-12% Bis-Tris Midi Protein Gels and separate by electrophoresis in 1xTris/Glycine/SDS buffer.",
+    "Transfer proteins to PVDF or nitrocellulose membranes by standard wet transfer in 20% methanol Tis/Glycine buffer.",
+    "Block membrane in blocking buffer (5% non-fat dry milk or 3% BSA in TBST) at Room temperature for 01:00:00 .",
+    "Incubate membrane in primary antibody solution (blocking solution plus primary antibody at 1:500-1:1,000, depending on the primary antibody) at 4 °C for 12:00:00 to 16:00:00 . Primary antibodies: LC3B panGARBARAP Actin",
+    "Wash membrane six times with TBST for 00:05:00 each wash.",
+    "Incubate membrane in secondary antibody solution (blocking solution plus secondary antibody conjugated to HRP at 1:5,000-1:10,000) at Room temperature for 01:00:00 .",
+    "Wash membrane four times with TBST for 00:05:00 each wash.",
+    "Apply Western Lightning Plus Chemiluminescence substrate (Revvity) to membrane and acquire blot images using a ChemiDoc MP imager.",
+    "Process raw image files with Image Lab software (Bio-Rad).",
+    "Seed HeLa TMEM192-3xHA cells of desired genotypes into 6-well plates.",
+    "Upon reading desired confluency (~70%), treat cells according to the following four treatments: 1. Fed 2. 3 h with the VPS34 inhibitor SAR405 (1 µM) 3. 2 h with MLSA5 (10 µM) 4. 2 h VPS34 inhibitor + MLSA5",
+    "Aspirate growth media, wash twice with 1xPBS and harvest cells in ice-cold PBS on ice by scraping cells from the wells."
+  ],
+  "authors": [
+    "Felix Kraus",
+    "Harper JW"
+  ],
+  "creator": "Felix Kraus",
+  "published_on": 1730396846,
+  "created_on": 1730396410,
+  "keywords": []
+}

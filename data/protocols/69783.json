@@ -1,0 +1,37 @@
+{
+  "id": 69783,
+  "title": "Soil pH 1:1 Soil Water Ratio ",
+  "uri": "soil-ph-1-1-soil-water-ratio-cgdxts7n",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ldp39nl5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"ehtkq\",\"text\":\"Soil pH can be measured at either a 1:1 or 1:2 soil to water ratio. Because of the use of the log scale, the two ratios typically provide similar results. A soil with high clay or organic matter may require a 1:2 or even 1:5 ratio to allow for enough fluid to make a measurement. A sample that will also have the lime requirement (i.e. Sikora) measured will be measured with a 1:1 ratio when possible. With either soil to water ratio, the soil and water are placed in a tube and shaken for 15 minutes on a reciprocating shaker to achieve soil solution equilibrium. A calibrated probe accounting for temperature is used for the measurement. One CAL standard sample is included in each batch. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"8b001\",\"text\":\"pH and temperature probe in 1521 (located near balances)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eq7vh\",\"text\":\"  polypropylene centrifuge tube with cap– 1 tube per sample\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"6qs0k\",\"text\":\"Reciprocating shaker Reagents\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9tcis\",\"text\":\"pH calibration standards (4.01, 7.01, 10.01) \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6iejr\",\"text\":\"DI water (or other solution as requested) \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2ltbu\",\"text\":\"Beaker for waste\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8dr1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"amount\",\"mutability\":\"MUTABLE\",\"data\":{\"amount\":\"50\",\"error\":false,\"guid\":\"973D97E0307011EDB2DC65F1D98A7F9D\",\"id\":0,\"label\":\"\",\"scientificNotation\":false,\"unit\":2}}}}",
+  "steps": [
+    "Measure 20 g dry weight soil into the Falcon tube (this should be done in the core processing step)",
+    "Add 20 mL, DI water",
+    "Place on reciprocating shaker for 00:15:00 at 1000 RPM",
+    "Rinse the pH probe well with DI water and gently pat dry with a kimwipe",
+    "Check the calibration of the pH meter using the ph 4.01 and 7 standard. If either of the pH values differ from the known calibrate the pH probe.",
+    "Insert rinsed pH/temperature probe combo into the sample.",
+    "Between each measurement, rinse the probe well with DI water over the beaker and gently pat dry the probe with a kimwipe.",
+    "When not measuring, make sure that the pH probe is rinsed and fully submerged in 3 Molarity (M), KCl .",
+    "After measuring the pH, discard the soil water slurry into the autoclave waste (smaller containers on the counter or large container under bench near the hood).",
+    "Print the required labels needed for Bray/Olsen extraction for each site, depth, and replicate.",
+    "Calibrate the pH meter with a minimum of two standards that bracket the potential sample results according to the instructions on the screen.",
+    "The probe should be calibrated using standards in the same type of vessel as the samples will be measured in (centrifuge tubes).",
+    "Be careful to keep the probes still and not against the wall or bottom of the vessels",
+    "Make sure the diaphragm is submerged in suspension.",
+    "Record results when the numbers stabilize onto the pH log sheet. Soil_pH_log.xlsx",
+    "1000S_SITE_P_BRAY_DEPTH_REPLICATE or 1000S_SITE_P_OLSEN_DEPTH_REPLICATE",
+    "1000S_SITE_Pext_BRAY_DEPTH_REPLICATE"
+  ],
+  "authors": [
+    "maggie.bowman"
+  ],
+  "creator": "nicholas.sconzo",
+  "published_on": 1679476743,
+  "created_on": 1662749386,
+  "keywords": []
+}

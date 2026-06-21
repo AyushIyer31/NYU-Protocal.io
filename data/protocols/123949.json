@@ -1,0 +1,28 @@
+{
+  "id": 123949,
+  "title": "FUBP1/2/3 dTag protocol",
+  "uri": "fubp1-2-3-dtag-protocol-d5am82c6",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"ako8v\",\"text\":\"This is a protocol for knock-in of C-terminal FKBP-V with resistance cassettes into the FUBP1,2 and 3 loci with PITCh system.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "We will anneal following oligo duplexes into pX330-BbsI-PITCh: FUBP1-dTag-sgRNA: BKC735_FUBP1_sgRNA1_F + BKC736_FUBP1_sgRNA1_R FUBP2-dTag-sgRNA: BKC751_KHSRP_sgRNA1_F + BKC752_KHSRP_sgRNA1_R FUBP3-dTag-sgRNA: BKC753_FUBP3_sgRNA1_F + BKC754_FUBP3_sgRNA1_R",
+    "Digest pX330-BbsI-PITCh: 02:00:00 37 °C, thermal cycler 3 µg pX330-BbsI-PITCh midiprep DNA 3 µL BbsI-HF - 1,500 units New England Biolabs Catalog #R3539L 3 µL rCutSmart Buffer New England Biolabs Catalog #B6004S total to 30 µL with nuclease-free H20",
+    "During digest, pour 0.7% TAE gel 00:30:00",
+    "Briefly spin down PCR tubes to get rid of condensate. Add New 6x Purple Loading Dye New England Biolabs Catalog #B7024S 1:6 to digested plasmid (ie 6ul for 30ul digest).",
+    "Run @150V for at least 00:30:00",
+    "Gel purify digested fragment using Wizard SV Gel and PCR Clean-Up System Promega Catalog #A9281",
+    "Weigh gel slice and add binding buffer 1:1 w/v eg. 500ul buffer for 500mg of gel weight.",
+    "Dissolve gel slice 55 °C , vortexing every 5 minutes to speed up dissolution. Continue until no chunks remain and slurry is completely liquid."
+  ],
+  "authors": [
+    "Bercin Cenik"
+  ],
+  "creator": "Bercin Cenik",
+  "published_on": 1741301725,
+  "created_on": 1741290850,
+  "keywords": []
+}

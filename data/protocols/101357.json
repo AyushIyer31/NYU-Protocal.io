@@ -1,0 +1,35 @@
+{
+  "id": 101357,
+  "title": "Bioprojects",
+  "uri": "bioprojects-de8m3hu6",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbzzmygpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"17qj8\",\"text\":\"Our protocols are constantly evolving and old versions will be deleted.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aqum1\",\"text\":\"The documents here are not intended to be cited in publications\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "First use Avery&#39;s &#34;Submitting Sequences to GenBank Protocol&#34; to create an NCBI account.",
+    "You&#39;re going to want to create a BioProject before you start uploading sequences, so that when you upload the sequences, they can be tied to an existing BioProject. To create a BioProject, follow this tutorial, you will want to scroll to the section that says &#39;Creating a BioProject&#39;. https://sibarcodenetwork.readthedocs.io/en/latest/bioprojects.html#adding-a-bioproject-to-existing-genbank-records",
+    "When you get here, make sure you add your email address and a secondary email address (preferably Greg/Charlotte) so that we can still access the BioProject when you leave the lab, and no longer have access to your UCSD email! This is what you fill in for the relevant information (obviously replacing Avery&#39;s name and info with yours).",
+    "Select &#39;No&#39; for Is your project part of a larger... Select Release immediately following processing You&#39;ll want to give your title an informative description. See these BioProjects for some examples of titles and descriptions/general formatting: https://www.ncbi.nlm.nih.gov/bioproject/1111130 https://www.ncbi.nlm.nih.gov/bioproject/PRJNA471644",
+    "Include a link to the cruise/organization details for those that want to learn more. Examples would be a link to the cruise description, from their website. See example for relevant links. Add a link to the BIC database, as well https://www.ncbi.nlm.nih.gov/bioproject/PRJNA471644",
+    "Include relevant grant information from the cruise/sequencing event (get from Greg/Charlotte). It may not show up as registered with NCBI. This is OK. Include it manually.",
+    "Publications: Add in relevant publications from the lab that may have come out of this cruise. See example: https://www.ncbi.nlm.nih.gov/bioproject/PRJNA471644 You can search publications by typing in the doi link into the search bar",
+    "Skip the BioSample tab, this isn&#39;t necessary because all of the data from the sequence you&#39;ll include when you submit your sequence.",
+    "Your final screen should look similar to this when completed. All BioProject data that has been entered is summarized in one place for review. This will be the last chance to make any changes before submitting. LOOK CAREFULLY THAT EVERYTHING IS CORRECT!!! Shortly afterwards, NCBI will send an email to note that the BioProject has been successfully created. Most importantly, they will send the BioProject ID, which can then be added to existing GenBank records or include in new GenBank submissions.",
+    "Once you&#39;ve created your BioProject, it&#39;s time to link some sequences to it. For publishing sequences to GenBank, Avery has made a phenomenal tutorial on how to upload sequences to GenBank",
+    "The most important step is linking your sequences to a BioProject. To do so, when uploading sequences, download a source modifier template (see next step).",
+    "https://www.ncbi.nlm.nih.gov/WebSub/html/help/genbank-source-table.html#modifiers . TEMPLATE HERE: NA20_COI_Source_DakotaModifiers-8.txt",
+    "In our source modifier table, open it in excel, and add a new column. Simply add a column containing the BioProject ID with the column header “Bioproject” (without the quotations). And in that column, put the accession number of your BioProject. This is why you should publish the BioProject before uploading sequences. :) Like this:",
+    "Before you publish your sequences - it&#39;s a good idea to check: &#34;Does a BioProject exist for this sequence I&#39;m about to publish?&#34; Ask Greg/Charlotte and lab members. This is so you don&#39;t have to make manual email corrections to link your sequence - they are tedious and annoying.",
+    "There are two ways to link published sequences to BioProjects: Adding a BioProject ID to sequence records that are already published to GenBank is a manual procedure done through email. There are two options: Either - Email bioprojecthelp@ncbi.nlm.nih.gov with: 1. the BioProject ID in the subject line 2. the range of GenBank accessions to be added to the BioProject in the body of the email Or - Treat the BioProject as a source modifier update to the GenBank accessions and email gb-admin@ncbi.nlm.nih.gov with: the range of GenBank accessions to be updated in the subject line attach a text file table that contains the fields “acc. num.” and “bioproject” (without the quotations)"
+  ],
+  "authors": [
+    "Dakota Betz"
+  ],
+  "creator": "Dakota Betz",
+  "published_on": 1749844127,
+  "created_on": 1717695252,
+  "keywords": []
+}

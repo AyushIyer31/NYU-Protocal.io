@@ -1,0 +1,36 @@
+{
+  "id": 35855,
+  "title": "HuBMAP TMC-Florida/Zurich CODEX  Modality Overview",
+  "uri": "hubmap-tmc-florida-zurich-codex-modality-overview-be9pjh5n",
+  "doi": "dx.doi.org/10.17504/protocols.io.be9pjh5n",
+  "description": "{\"blocks\":[{\"key\":\"74kh5\",\"text\":\"This protocol is an overview of all of  the protocols currently in use for the  CODEX modality at HubMAP Tissue Mapping Center,TMC-Florida/Zurich.  It includes protocols.io links to each of the individual protocols that make up this project workflow, from processing tissue and  imaging the samples, to uploading the final data to the HuBMAP HIVE.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"2o6rj\",\"text\":\"This workflow protocol may be interupted at any point. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"226j0\",\"text\":\"Steps are permitted to be performed in non-consecutive order.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8vjbe\",\"text\":\"Repeated runs on the same sample do not require employing the entire protocol sequence.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"abb4q\",\"text\":\"Confirm sample ID information at the start of each step.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"8dlee\",\"text\":\"Follow all safety guidelines provided with individual links within this protocol. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"c1g8e\",\"text\":\"Required materials are provided within each linked protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Process donor organs into samples for analysis. Lymph Node: dx.doi.org/10.17504/protocols.io.bbgnijve Thymus: dx.doi.org/10.17504/protocols.io.bbgmiju6 Spleen: dx.doi.org/10.17504/protocols.io.bc3kiykw",
+    "Register organ donor, organs received and common coordinate region information in the HuBMAP UUID generator at https://uuid.hubmapconsortium.org .",
+    "Prepare paraffin blocks from tissue samples. Cassette Processing: dx.doi.org/10.17504/protocols.io.8nzhvf6 Paraffin Embedding: dx.doi.org/10.17504/protocols.io.bam9ic96",
+    "Prepare H&amp;E sections for histopathological assessment. Sectioning: dx.doi.org/10.17504/protocols.io.bahdib26 H&amp;E Staining: dx.doi.org/10.17504/protocols.io.beamjac6",
+    "Validate antibodies in all target tissue types by IHC using DAB Staining: https://dx.doi.org/10.17504/protocols.io.bdiei4be",
+    "Coat coverslips with Poly-L-Lysine. Coverslip Preparation: dx.doi.org/10.17504/protocols.io.baxyifpw",
+    "Cut and mount sections for CODEX analysis. Sectioning: dx.doi.org/10.17504/protocols.io.basdiea6",
+    "Stain coverslips with Akoya invertoried antibodies. Staining: dx.doi.org/10.17504/protocols.io.bbsdina6",
+    "Make CODEX bar coded reporter trays. Preparation: dx.doi.org/10.17504/protocols.io.bc2riyd6",
+    "Perform multiplex data acquisition using CODEX robot and Keyence microscope. Acquisition: dx.doi.org/10.17504/protocols.io.bdifi4bn",
+    "Transfer images to analysis computer and perform CODEX processing. Codex_Processor.docx",
+    "​Register completed CODEX section information in the HuBMAP UUID generator at https://uuid.hubmapconsortium.org .",
+    "Prepare and upload data to the HuBMAP HIVE Globus using hipergator. Datasets to HiperGator-Globus.docx"
+  ],
+  "authors": [
+    "Marda Jorgensen",
+    "Jerelyn Nick",
+    "Franchesca Farris",
+    "Jesus Penaloza"
+  ],
+  "creator": "Marda Jorgensen",
+  "published_on": 1587496968,
+  "created_on": 1587149612,
+  "keywords": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": 57888,
+  "title": "RNAi induction",
+  "uri": "rnai-induction-b4r8qv9w",
+  "doi": "dx.doi.org/10.17504/protocols.io.5qpvobb7xl4o/v1",
+  "description": "{\"blocks\":[{\"key\":\"7ts5a\",\"text\":\"Back-dilution, induction, and creating frozen E. coli feeding stocks for downstream RNAi \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":46,\"length\":8}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Incubate with shaking at 180 rpm, 37 °C, 2 hours 30 minutes",
+    "Add 60 µL ( 0.4 millimolar (mM) ) IPTG # This induces template expression within the L4440 plasmid construct",
+    "Incubate with shaking at 180 rpm, 37 °C, 3 hours",
+    "Spin down E. coli at 3200 x g, °C, 2 minutes",
+    "Remove supernatant, and add 20 mL MQ",
+    "Spin down E. coli at 3200 x g, °C, 2 minutes",
+    "In a sterile hood, add 600 µL of overnight E. coli pre-culture to 15 mL LB containing 15 µL Ampicillin and 37.5 µL Tetracycline. # Final concentrations Ampicillin ( 0.05 mg/mL )), and Tetracycline ( 0.0125 mg/mL ) # Conduct remainder of experiment under sterile conditions",
+    "In a sterile hood, streak out HT115 E. coli frozen stock onto LB Agar plate (containing 0.05 mg/mL Ampicillin and 0.0125 mg/mL Tetracycline) # Ampicillin selects for the L4440 plasmid containing the knock-down construct In a sterile hood, treak out HT115 E. coli strain (deficient in RNAse III)",
+    "Incubate overnight at 37 °C",
+    "In a sterile hood, pick a single colony to inoculate 10 mL LB containing 10 µL Ampicillin and 25 µL Tetracycline. # Final concentrations Ampicillin ( 0.05 mg/mL )), and Tetracycline ( 0.0125 mg/mL )",
+    "Incubate LB overnight with shaking at 180 rpm, 37 °C,",
+    "Streak used inoculation loop onto a fresh LB Agar plate (containing 0.05 mg/mL Ampicillin and 0.0125 mg/mL Tetracycline) to create a back-up stock plate Incubate LB Agar plate overnight at 37 °C",
+    "Resuspend with 3 mL NCL # NCL (containing Ampicillin, IPTG, and β-sitosterol) prepared earlier",
+    "Add 800 µL of NCL and 200 µL resuspended E. coli to a cuvette, and measure OD 600 # Use OD dilution calculator: https://docs.google.com/spreadsheets/d/1hJUsVOjwcuhKSeFQaAbNhn1ZXleTpNXN8RAR4g7zWDE/edit?usp=sharing # Make sure to pipette E. coli up and down 3 times before removing from falcon, and again after adding to cuvette for OD measurement",
+    "In a sterile hood, add required volumes of resuspended E. coli and NCL to give 1.5 mL of E. coli at OD 3 # Use OD dilution calculator as above # Larger experiments may require greater volumes, scale up your stock accordingly # Conduct remainder of the protocol under sterile conditions",
+    "Add 37.5 µL of 80% glycerol per 1.5mL E. coli (to give 2%), and vortex",
+    "In a sterile hood, prepare 150 mL NCL containing 300 µL Ampicillin, 600 µL IPTG, and 30 µL β-sitosterol # Ampcillin ( 0.1 mg/mL ), IPTG ( 0.4 millimolar (mM) ), and β-sitosterol ( 0.0008 mg/mL )",
+    "Add 60 µL of E. coli per well to a 96-well plate # Ensure E. coli are in a consistent layout for every 96-well plate # This is enough for 20 aliquots per E. coli stock # Do not use the outside wells",
+    "Add lids to each stock plate, and store at -20 °C until required"
+  ],
+  "authors": [
+    "Ben Jenkins"
+  ],
+  "creator": "Ben Jenkins",
+  "published_on": 1726263857,
+  "created_on": 1644240601,
+  "keywords": []
+}

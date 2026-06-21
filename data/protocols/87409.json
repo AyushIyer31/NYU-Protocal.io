@@ -1,0 +1,31 @@
+{
+  "id": 87409,
+  "title": "Processing of LRRK2-RCKW:GZD-824:E11 ",
+  "uri": "processing-of-lrrk2-rckw-gzd-824-e11-czkrx4v6",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbxz81lpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"eoq32\",\"text\":\"Protocol for processing of LRRK2RCKW bound to GZD-824 and DARPin-E11. This protocol covers everything from preprocessing to refinement.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":32,\"length\":5}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"te7b\",\"text\":\"Requires the use of CryoSparc v.4.3.1 and Topaz 0.2.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Use your preferred software. The original publication used MotionCor 2 and CTFFIND4. As a note, all of the data processed was collected on a UltrAuFoil Holey Gold 2/2 200 mesh grids and we used CryoSparc v.4.3.1 to process the data.",
+    "Blob picker We used cryoSparc-live blob picker option with a minimum particle diameter of 90Å to 250Å, lowpass filter to 20Å. Depending on the LRRK2 RCKW variant, trimer particles might appear, we process them parallel using the following: Monomer particles were picked with a 320pixel box size with a pixel of 0.935Å. This were bin by 4 to a box size of 80pixel with a final pixel size of 3.74Å Trimer particles were picked with a 400pixel box size with a pixel of 0.935Å. This were bin by 5 to a box size of 80pixel with a final pixel size of 4.68Å.",
+    "2D Classification and Topaz picking Using the extracted particles, we run 2D classification jobs in cryoSparc, using 40 iterations to clean our particle dataset. Selected particles then were use to train a Topaz model, and model was used to pick particles, followed by rounds of 2D classification. Selected particles can then be re-extracted to original pixel size (in this case 0.935Å, box size of 320pixel for monomers and 400pixel for dimers) Selecting 2D classes depends on the user. Take into account shape of the particles (J-shaped) and the visualization of secondary structure elements.",
+    "Ab-initio reconstruction and Heterogeneous Refinement Select monomer particles then are subject to an Ab-initio reconstruction in cryoSparc asking 3 classes. Followed by a Heteregeneous Refinement. In this section you could try more than 3 classes, in order to sort bad particles out. This can be coupled with the final 2D classification jobs from step 3 .",
+    "Nu-Refinement and Local refinement Selected refinement from step 4, is subject to a Nu-refinement at C1 symmetry. Followed by a local refinement with a continuous mask surrounding the Kinase, WD40 and DARPin-E11.",
+    "3D Variability To account for the hetereogeneity of the ROC-COR domains, create a mask using the Nu-refinement of step 5, and using the same amount of particles of the same job, run a 3DVA. Recommendation: use a filter resolution of 7Å, and we ask for 3 components.",
+    "3D Variability Display Use this jobs with the output from Step 6, to visualize the movement of the ROC-COR domain. Input the following: for output-mode &#34;intermidiates&#34; , &#34; 11: frames, and filter resolution of &#34;7Å&#34;. To visualize the movement of each component download file to chimera and use volume morph. Select component with the most movement in the ROC-COR domain. Clone 3D Variability Display job and now select: skip reconstruction, only used this component (write which component you picked) , and select Intermediates: output particle subsets. The output of this job should be the 11 particles stacks.",
+    "Local Refinement of the ROC-COR domain Particles of the component obtained from step 6.1, are split in half, selecting the particles that account for the movement of the ROC-COR closest to the Kinase domain. This are subject to a local refinement. The Nu-refinement volume from step 5 is used as the input for the local refinement, a continuous mask surrounding the ROC-COR domains is created and the selected particles of the component.",
+    "Ab-initio and Nu-Refinement Select trimer particles were use to run an Ab-initio reconstruction in cryoSparc. Followed by a Nu-Refinement C1 and at C3 symmetry. We compare both the C1 and C3 maps to check for density for the inhibitors in the protomers and overall resolution. In our case, C3 symmetry improved resolution of Kinase active site.",
+    "Particle expansion Particles from Nu-Refinement in step 8 were used for a Symmetry Expansion job in cryoSparc, based on the volume symmetry.",
+    "Local Refinement A local refinement was carried using the following inputs: mask of one protomer of the trimer, expanded particles from step 9, Nu-refinement from step 8 and C1 symmetry."
+  ],
+  "authors": [
+    "Amalia Villagran Suarez"
+  ],
+  "creator": "Amalia Villagran Suarez",
+  "published_on": 1694019041,
+  "created_on": 1693948150,
+  "keywords": []
+}

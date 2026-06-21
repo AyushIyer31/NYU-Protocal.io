@@ -1,0 +1,25 @@
+{
+  "id": 44328,
+  "title": "Activation of Human T cells with Phytohaemagglutinin (PHA) ",
+  "uri": "activation-of-human-t-cells-with-phytohaemagglutin-bpigmkbw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bpigmkbw",
+  "description": "{\"blocks\":[{\"key\":\"8ec6s\",\"text\":\"Activating T cells with Phytohaemagglutinin (PHA) is a cheap and easy way to initiate a culture of rapidly growing T cells from human samples. PHA-activated T cells, or PHA blasts, can be used for downstream applications such as transduction (e.g. of a CAR or TCR) or as target cells for CTLs since they express sufficiently high levels of HLA class I. An especially useful application is for QCing a batch of frozen PBMCs -- if PHA blasts do not grow in 5 days from a given batch, then it is unlikely that such cells are in adequate condition for more sensitive in vitro applications. I describe here how I like to make them.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Resuspend PBMCs at 2e6 cells/mL in complete medium (e.g. IMDM + 2mM L-Glutamine + 10% FBS). Add PHA to a final concentration of 5-10ug/mL (PHA-L or PHA-P both work in my experience). Incubate for 5 days in an appropriate vessel for your culture size (both flasks and plates will work, even if the latter is not TC coated).",
+    "Incubate for 5 days at 37C.",
+    "On day 5-6, growing clusters and acidified media should be visible by naked eye. Count cell density. If density is over 1e6 cells /mL, adjust to 1e6 cell /mL with media. If density is at or below 1e6 cells/mL, spin down half of the culture and resuspend in the same volume with fresh media. Add IL2 to a final concentration of 50U/mL. Incubate for 2-3 days.",
+    "After 2-3 days, and every 2-3 days thereafter, add IL2 to a final concentration of 50U/mL (always assume all of the IL2 from previous feedings is completely consumed). If cell numbers drop, increase IL2 dose by 50U/mL. Use this increased dose for subsequent feedings. Around day 10-14, restimulate cells with 5-10ug/mL PHA if you will not be freezing them.",
+    "By day 10, I usually observe that CD4 T cells preferentially grow compared to CD8 T cells (CD4:CD8 of &gt; 70:30), and such CD4 T cells express moderate to high levels of HLA class I, making them ideal for assay of class I-restricted effector cells. Phenotype may change depending on inclusion of other cytokines in addition to IL2, such as IL15 or IL7. Enjoy your PHA blasts!"
+  ],
+  "authors": [
+    "Zaki Molvi"
+  ],
+  "creator": "Zaki Molvi",
+  "published_on": 1604820574,
+  "created_on": 1604819092,
+  "keywords": []
+}

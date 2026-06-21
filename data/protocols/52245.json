@@ -1,0 +1,38 @@
+{
+  "id": 52245,
+  "title": "Prediction of ligand binding using FunFOLD2",
+  "uri": "prediction-of-ligand-binding-using-funfold2-bw9vph66",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"dcuai\",\"text\":\"Clues to functionality can be gleaned from comparing unknown or predicted structures with previously characterized structures of known function and characteristics. These scans can be biased against novel proteins or proteins with similar structures but distinct functions, but for initial guesses can be powerful. These methods align the structure and/or amino acid sequence to a database of structures with known ligand binding sites and look for structures with the similarity in amino acid composition, position, and overall 3-D similarity. The idea being that similar structures lead to similar functions. This protocol describes the use of the FunFOLD2 server which predicts ligand identity and binding site from the amino acid sequence. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"cp78q\",\"text\":\"A protein sequence in one letter code\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9d5c3\",\"text\":\"Internet connection\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"edcna\",\"text\":\"Molecular visualization program\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Navigate to the FunFOLD2 server submission form.",
+    "Paste in your sequence in single letter amino acid code.",
+    "Provide an email address and a short name for your protein. Record the short name as a note in this step.",
+    "Press Predict to submit your sequence. FunFOLD takes 24 to 72 hours to respond. You should record the results link as a note in this step in case you don&#39;t get the email.",
+    "When the results are ready there will be four areas of results.",
+    "At top is the predicted binding site in a homology model. The binding site is shown and labeled to be the amino acid numbers in the submitted sequence. Download the structure and view it in YASARA.",
+    "Save your downloaded file as [date]_[sequencename]_[groupname]_FunFOLD2.pdb Replace [Group_name] with your name/group name without the brackets. Replace [sequence_name] with the name of the sequence.",
+    "Indicate your file location as a link within a note on this step.",
+    "Below this is information on the ligand identity and the binding site. The ligand identity is abbreviated as it would be in a crystal structure. If there are multiple potential ligands, you will need to search each individually.",
+    "To identify the ligand, in a new broswer window go to the RCSB (www.rcsb.org) and in the search bar, look for you ligand name and wait for the search options to drop down (do not press enter, just input the code and wait). Select in Chemical IDs to search the ligands database.",
+    "The search should take you to an information page on the ligand lots of information and the name.",
+    "Record the ligand binding residues and other statistics as well as the ligand identity. Add rows as needed. %s %s",
+    "Below the ligand information is a JSmol window for viewing the ligand and binding site in the browser. This is convienient for when you do not have a molecular visualization software available.",
+    "The last section contains the quality of the fit.",
+    "Explanation of scores: A B 1 BDTalign Comparison of the structural match in 3-D between known binding site and modeled binding site. 1 indicates a perfect prediction, while 0 is associated with a random and unreliable prediction. 2 Identity Number of amino acids in the binding site that are equivalent to the known binding site. 1 is a perfect match, 0 is imperfect match 3 Rescaled BLOSUM62 An additional measure of binding site sequence match using the BLOSUM62 algorithm. 1 is a perfect match, 0 is an imperfect match. 4 Equivalent Residue Ligand Distance For the amino acids that are equivalent, this measure looks at how well the distances match. 1 is a perfect match, 0 is an imperfect match. 5 Model Quality Score based on the ModFOLDclust2 algorithm to give a sense of the overall match of the model. 1 is a perfect match, 0 is an imperfect match. 6 Predicted BDT score Binding site distance test indicates how far a predicted binding site residue is from the observed binding residue location. 1 indicates a perfect prediction, while 0 is associated with a random and unreliable prediction. 7 Predicted MCC score Matthews Correlation Coefficient score is a statistic for looking at accuracy of predicted vs. observed binding site amino acids. 1 indicates a perfect prediction, while 0 is associated with a random and unreliable prediction. Information from Roche, D. B., Buenavista, M. T., and McGuffin, L. J. (2012) FunFOLDQA: a quality assessment tool for protein-ligand binding site residue predictions. PLoS One7 , e38219.",
+    "Record the scores of the prediction below: %s %s",
+    "If you have homology models from other methods (Phyre2, SWISS-Model, etc.) and refined any of those models, it is worth aligning the model with the ligand bound from go to step #6 to all of these models to compare the predicted binding site. Different programs may predict different conformations for the binding site and by comparing the different models, the reliability of the prediction can be further assessed. If there are distinct binding site shapes, then the prediction may be less reliable.",
+    "Export this protocol as a PDF and save it in your project folder."
+  ],
+  "authors": [
+    "Chris Berndsen"
+  ],
+  "creator": "Chris Berndsen",
+  "published_on": 1628601647,
+  "created_on": 1628601525,
+  "keywords": []
+}

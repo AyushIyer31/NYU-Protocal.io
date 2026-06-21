@@ -1,0 +1,40 @@
+{
+  "id": 230684,
+  "title": "Kraken2 - Taxonomic Classification Workflow on GalaxyTrakr",
+  "uri": "kraken2-taxonomic-classification-workflow-on-galax-hdh4b238x",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvmbbw6g3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"5el4v\",\"text\":\"Kraken2 is a taxonomic sequence classifier that assigns taxonomic labels to sequence data. Essentially profiling the microbes that is present in a sample. It does this by examining the k-mers within a read and querying a database with those k-mers. This database contains a mapping of every k-mer in Kraken's genomic library to the lowest common ancestor (LCA) in a taxonomic tree of all genomes that contain that k-mer. The set of LCA taxa that correspond to the k-mers in a read are then analyzed to create a single taxonomic label for the read; this label can be any of the nodes in the taxonomic tree. Kraken is designed to be rapid, sensitive, and highly precise.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Log into your GalaxyTrakr account at Galaxy",
+    "On the right-hand side of the screen, click the plus next to the History tab to create a new history. Click on &#34;Unnamed History&#34; and rename it according to your system.",
+    "On the left-hand side of the screen, click the search bar in the &#34;tools&#34; section and search for &#34;Kraken2&#34; .",
+    "An interface will appear looking like this. Change the &#34;Select to read collection type&#34; to &#34;paired collection&#34;.",
+    "On the left side of the screen, click the &#34;Upload data&#34; button. An interface where we can find and select files to upload will appear, for most users, the files will be on local files so choose that option unless otherwise noted. Select all files to be processed, It should resemble this: Click &#34;Start&#34; to begin uploading. Note* Depending on the number of files, it can take a while to upload. This is what it looks like when uploading has started.",
+    "Before running &#34;Kraken2&#34;, the dataset needs to be paired. Click on the square icon, or the &#34;Operations on multiple datasets&#34; on the right side of the tab. select boxes will appear on the green file list. This will allow you to select all files in your dataset. Select all files in the workspace, then click the dropdown that says for all selected. A menu will appear, select &#34;Build List of Dataset Pairs&#34;.",
+    "A new interface will appear. In the dropdown on the left, select _R1. This will auto select _R2 for the other dropdown. ` You will see both columns populate with filenames. Double check that the files have the same name other than &#34;R1&#34; or &#34;R2&#34;. Once you know the program has properly paired the files, Click the &#34;Pair these datasets&#34; for all entries. There two columns will be empty if you do it correctly and they appear in green below the black bar.",
+    "Create a name for your collection and click the&#34;Create collection&#34; button.",
+    "Click on the slider under &#34;Print scientific name instead of just taxids&#34; so it says yes and is a solid dark blue color.",
+    "Click on &#34;Create Report&#34; Click on the slider under &#34;Print a report with aggregate counts/clades to a file&#34; so it says yes and is a solid dark blue color.",
+    "Next you need to pick a kraken database. click on the dropdown under Select a Kraken2 database and select &#34;Minikraken2 v2&#34;.",
+    "Click on the &#34;Run Tool&#34; button. The report is generating once a green box appears. It should look similar to this. This process usually takes over an hour to generate the report.",
+    "Generating graphical reports. On the left-hand side of the screen, click the tab titled &#34;workflows&#34;.",
+    "Click on the &#34;Public workflows&#34; tab on the top right and input kraken2 in the search bar.",
+    "Select the workflow titled &#34; Metagenomics_kraken2krona_html2&#34;.",
+    "Click the &#34;Run&#34; button on the top right of the window that appears.",
+    "Make sure your paired fastq datasets are selected and click the &#34;Run Workflow&#34; button. This will start the process for generating graphical reports. This can take over an hour to generate depending on size and traffic. It will look like this when it is finished:",
+    "To access the figures, click on the desired file under the history and click download. This will download a .zip file containing the figure for your data."
+  ],
+  "authors": [
+    "Christopher Duda",
+    "Anna Brover",
+    "Padmini Ramachandran"
+  ],
+  "creator": "Christopher Duda",
+  "published_on": 1764772974,
+  "created_on": 1761316129,
+  "keywords": []
+}

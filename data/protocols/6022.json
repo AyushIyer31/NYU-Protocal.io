@@ -1,0 +1,33 @@
+{
+  "id": 6022,
+  "title": "BiTE® Xenograft Protocol",
+  "uri": "bite-xenograft-protocol-h5eb83e",
+  "doi": "dx.doi.org/10.17504/protocols.io.h5eb83e",
+  "description": "{\"blocks\":[{\"key\":\"5hhgn\",\"text\":\"This protocol describes methods for a mouse xenograft study designed to measure in vivo BiTE® efficacy against antigen-expressing human tumor cells. In a modified version, the protocol is used to measure BiTE®-mediated bystander killing. Mixtures of human EGFR-positive (unlabeled) and EGFR-negative (luciferase-labeled) cells are implanted in nude mice along with human T cells. Mice are treated daily with BiTE®, beginning one day after tumor implant for 20 days. Growth of EGFR-negative cells is measured by imaging (luminescence) and by calipers (tumor volume).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4jcm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"3dkud\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"b0si7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Female athymic nude mice approximately 7 weeks old (Charles River Laboratories) are used for the study Human tumor cell lines are cultured in McCoy’s medium with 10% heat-inactivated fetal bovine serum (FBS) (HCT116) or RPMI with 10% FBS (SW620-LUC) at 37º C with 5% CO 2 . Human pan T cells (AllCells) are thawed according to supplier instructions and cultured in RPMI with 10% FBS at 37º with 5% CO 2 . T cells are activated by culturing with beads coated with anti-CD2, -CD28 and CD3 antibodies following the manufacturer’s instructions (Miltenyi Biotec T cell activation/expansion kit). Three days after establishment of the culture, huIL-2 (Miltenyi Biotec) is added to the medium at a concentration of 0.1 µg/mL. Tumor cells mixed with activated T cells at a 1:1 ratio are implanted subcutaneously on the left flank of the mice, in a 1:1 mix of serum-free RPMI and Matrigel basement membrane matrix (BD Biosciences). Control and treatment BiTEs® are diluted to the proper concentration in PBS and administered intraperitoneally. Imaging of bioluminescence from luciferase-labeled cells is conducted using the IVIS Spectrum in vivo imaging system (PerkinElmer); mice are administered 150 mg/kg D- Luciferin (Sigma, diluted in PBS) intraperitoneally 15 minutes before image capture. Tumor volumes are obtained using handheld digital calipers to measure tumor length, width and height to calculate cubic millimeters; mice are weighed using a digital balance. Tumors are collected at the end of the study and placed in neutral buffered formalin (NBF).",
+    "Prepare activating beads according to manufacturer’s instructions; briefly, prepare mixture of activating antibodies, add unlabeled beads, mix gently at 4º for 2 hours, store at 4º. Thaw T cells according to supplier instructions and place in tissue culture (TC) flask, at a concentration of approximately 2 x 10 6 cells/mL. Add activating beads at a bead-to-cell ratio of approximately 1:4. Wash beads one time to remove excess antibody before adding to T cells. After 3 days, add medium with IL-2. Keep cell density at approximately 2 x 10 6 cells/mL, adding fresh media with IL-2 and expanding into additional flasks every 2 to 3 days. Viability should remain ≥ 90%. Expand to approximately 50% more than number needed for implantation; extra is needed due to loss during de-beading prior to implantation.",
+    "Thaw tumor cells and place in proper medium in TC flasks and incubate. Expand to cell numbers necessary for implant (plan for approximately 30% extra cells for each cell line).",
+    "Day 0: Thaw a vial of Matrigel; keep cold. Count T cells to determine viability and cells/mL. Viability should be ≥ 90%. Determine volume of T cells needed (with extra) based on cell count and remove beads by using MACSiMAG Separator magnetic column (Miltenyi Biotec) or similar. Count de-beaded T cells and keep on ice. Harvest appropriate number of tumor cells using 0.05% trypsin with EDTA (1X) (Gibco), adding medium with FBS after cells have lifted off the flask; pool cells, determine cell count and viability (should be ≥ 90%); keep on ice. Mix T cells and tumor cells at a 1:1 ratio. (Example: add 250,000 T cells to 250,000 tumor cells.) For groups containing two tumor cell lines, combine equal numbers of each tumor cell line (e.g. 250,000 HCT116 and 250,000 SW620-LUC) and add T cells equal to total number of tumor cells (500,000). Wash T cell and tumor cell mixture in serum-free RPMI (centrifuge at 300 G, 5 minutes, 4º). Resuspend pellet in a 1:1 mixture of serum-free RPMI and Matrigel, in a volume that will give each mouse the desired number of cells in 0.1 mL. Keep cell solution on ice. Inject 0.1 mL of T cell/tumor cell mixture subcutaneously on the flank of each mouse, using a 0.5 mL syringe with a 28 gauge needle. Fill only one syringe at a time and keep remaining cell solution on ice so that the Matrigel does not thicken.",
+    "Day 1: Image all mice with IVIS bioluminescence imaging system to obtain baseline image. Treat mice with 150 mg/kg IP of D-Luciferin 15 minutes prior to imaging. Image tumors with mice in lateral recumbency with tumor side up. Dilute BiTEs® with PBS to proper concentration. Treat mice with control or active BiTE®: administer IP.",
+    "Day 2 and continuing until end of study: Treat mice daily with BiTEs®. Image 2 times per week, and measure tumors with calipers. Weigh mice 2 times per week once tumors are palpable. At end of study, euthanize mice according to IACUC guidelines and harvest tumors; place in NBF."
+  ],
+  "authors": [
+    "Sandra L. Ross",
+    " Marika Sherman",
+    " Patricia L. McElroy",
+    " Julie A. Lofgren",
+    " Gordon Moody",
+    " Patrick A. Baeuerle",
+    " Angela Coxon",
+    " Tara Arvedson"
+  ],
+  "creator": "Sandra Ross",
+  "published_on": 1495477356,
+  "created_on": 1495474978,
+  "keywords": []
+}

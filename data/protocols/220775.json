@@ -1,0 +1,40 @@
+{
+  "id": 220775,
+  "title": "Stereo-seq for FF-OCT and FFPE ",
+  "uri": "stereo-seq-for-ff-oct-and-ffpe-g3ufbyntp",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egnyp3pv5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"3ch1f\",\"text\":\"Stereo-seq protocol for both FF-OCT and FFPE samples\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "FF-OCT samples were sectioned into 10 µm sections using a cryostat (Leica, CM1950) and mounted onto 1 cm x 1 cm Stereo-seq T chips (Complete Genomics, 211ST114).",
+    "Mounted chips were processed through the Version 1.2 fresh-frozen Stereo-Seq workflow using kit components (Complete Genomics, 111KT114) and according to the manufacturer’s protocol.",
+    "Briefly, chips were dried at 37°C for 4 minutes, followed by methanol fixation for 30 minutes at -20°C, Qubit ssDNA staining (Invitrogen, Q10212), and FITC imaging (Zeiss, Axioscan Z1).",
+    "Tissues were then permeabilized for 24 minutes, followed by reverse transcription for 3 hours at 42°C, tissue removal, and cDNA collection.",
+    "cDNA were then purified (Vazyme, N411-01) and PCR amplified using kit components.",
+    "Library preparation was performed using a commercial kit (Complete Genomics, 111KL114) according to manufacturer’s directions.",
+    "DNA Nanoballs (DNBs) were prepared using the OneStep DNB kit (MGI, 1000020563) and sequenced on a DNBSeq-T7 Sequencer (Complete Genomics, 900-000698-00) using the PE100 sequencing set (Complete Genomics 940-001889-00, with custom primer set 940-000037-00).",
+    "Sequencing was done using 50 cycles for Read 1 (dark cycles 26-40), 100 cycles for Read 2, and 10 cycles of index read.",
+    "Primary analysis was performed using STOmics’ Standard Analysis Workflow pipeline (SAW, Version 7), aligning to the human reference genome Hg38.",
+    "FFPE samples were sectioned into 5 µm sections using a microtome (Dakewe, MT1) and mounted onto Stereo-seq N chips (STOmics, 210CN114-EA).",
+    "The chips were processed through the Stereo-Seq FFPE early-access workflow using the kit components (STOmics, 211KN114-EA) according to the manufacturer’s protocol.",
+    "Briefly, mounted chips were dried at 42°C for 3 hours, 37°C for 16 hours, and 60°C for 1 hour.",
+    "Tissue was cleared in Sub-X (Leica, 3803670) twice for 20 minutes each, followed by rehydration with serial incubations in 100% ethanol, 96% ethanol, 90% ethanol, 80% ethanol, 70% ethanol, and nuclease-free water.",
+    "Decrosslinking was performed for 30 minutes at 85°C, followed by methanol fixation for 20 minutes at -20°C.",
+    "Staining, imaging, and permeabilization (30 minutes) were performed in the same way as for FF-OCT samples.",
+    "Following permeabilization, chips were processed through dimerization with kit reagents for 1 hour at room temperature.",
+    "Subsequent reverse transcription, tissue removal, cDNA collection, cDNA amplification, library preparation, and DNB preparation were conducted according to the manufacturer’s protocol.",
+    "Sequencing was performed on a DNBSeq-T7 Sequencer using custom MDA primer 5’ CTGCTGACGTACTGAGAGGC 3’ and read 2 primer 5’ GAGACGTTCTCGACTCAGCAGAGGG 3’.",
+    "The sequencing protocol included 91 cycles of Read 1 (dark cycles 26-85), 100 cycles of Read 2 (dark cycles 1-25), and 10 cycles of index read.",
+    "Primary analysis was performed using STOmics’ Standard Analysis Workflow pipeline (SAW FFPE EA, with cell segmentation added from SAW V7 modified by expansion to 10 pixels)."
+  ],
+  "authors": [
+    "Joanna Bi"
+  ],
+  "creator": "Joanna Bi",
+  "published_on": 1750716700,
+  "created_on": 1750716236,
+  "keywords": []
+}

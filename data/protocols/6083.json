@@ -1,0 +1,31 @@
+{
+  "id": 6083,
+  "title": "PRIMAL: Pipeline of Root Image analysis using MAchine Learning",
+  "uri": "primal-pipeline-of-root-image-analysis-using-machi-h7bb9in",
+  "doi": "dx.doi.org/10.17504/protocols.io.h7bb9in",
+  "description": "{\"blocks\":[{\"key\":\"705jc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ljsc\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":[]},{\"key\":\"afcun\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"imageblock\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"D5C27F1CCFBA4202A8CA5F315B38E61E\",\"height\":null,\"is_video\":false,\"mime\":null,\"original_name\":\"cpib_root_analysis.png\",\"placeholder\":\"https://content.protocols.io/j4gdmie.png\",\"source\":\"https://content.protocols.io/j4gdmie.png\",\"width\":null}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"cfbt7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"fpfbe\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"a8is5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Use a fully automated tool to extract image descriptors global dataset. Automated tools that we recommend: - RIAJ ( https://github.com/guillaumelobet/Root-Image-Analysis-Pipeline-Evaluation/tree/master/01_image_analysis ) - DIRT ( http://dirt.iplantcollaborative.org/welcome ) Here is an example of a descriptor file: https://github.com/plantmodelling/primal/blob/master/www/global_estimators.csv Data table containing image descriptors for the all image library The datatable should contain an unique identifier for each image. %s %s id descriptor 1 .... descriptor i image 1 %s %s ... image j",
+    "Use a semi-automated tool to extract the ground-truth out of 200 random images (the GROUND-TRUTH SET ). Semi-automated tools that we recommend: - RootNav ( https://www.cpib.ac.uk/tools-resources/software/rootnav/ ) - SmartRoot ( https://smartroot.github.io/ ) - EZ-Rhizo ( http://www.psrg.org.uk/plant-biometrics.html ) - Root System Analyser ( https://www.csc.univie.ac.at/rsa/ ) Here is an example of a ground-truth file: https://github.com/plantmodelling/primal/blob/master/www/global_estimators.csv The datatable contains ground-truth data for the subset of the image library. Each row should have an unique identifier (id) that correspond to the ones in the descriptor datatable",
+    "Open an R console (for instance using RStudio ) Type the following commands: library(shiny)shiny::runGitHub(&#39;plantmodelling/primal&#39;, &#39;plantmodelling&#39;) library(shiny) library(shiny)shiny::runGitHub(&#39;plantmodelling/primal&#39;, &#39;plantmodelling&#39;) shiny::runGitHub(&#39;plantmodelling/primal&#39;, &#39;plantmodelling&#39;) This will launch the app in your browser (it still runs locally).",
+    "Load the DESCRIPTOR dataset Load the GROUND-TRUTH dataset Click Load a",
+    "Select what proportion of the GROUND-TRUTH dataset you want to use for the training (by default 95%). The rest will be used for the testing. Look if the testing data (red lines) fall within the range of the training data (grey area) Change the type of data to visualize Go to the next step a",
+    "Select the type of data you would like to evaluate with the Random Forest algorithm Select the parameters for the Random Forest. The bigger the number of trees and models, the better the prediction. But also the slower. Run the training (this might take a while. Take a coffee) Look at the Random Forest estimation accuracy (vs the ground-truth). This is done using the test dataset Change the parameter to look at Table with different accuracy metrics for the different parameters Visual representation of the accuracy metrics If you are happy with the accuracy of the prediction, go to next step IF THE ACCURACY IS NOT GOOD ENOUGH, GO BACK TO STEP 2 AND INCREASE THE SIZE OF THE GROUND-TRUTH DATASET a",
+    "Click &#34;Unleash PRIMAL&#34; Download the machine learning estimators. a"
+  ],
+  "authors": [
+    "Guillaume Lobet",
+    " Jonathan A. Atkinson",
+    " Manuel Noll",
+    " Darren M. Wells",
+    "Marcus Griffiths"
+  ],
+  "creator": "Guillaume Lobet",
+  "published_on": 1519315580,
+  "created_on": 1496040448,
+  "keywords": []
+}

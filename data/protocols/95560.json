@@ -1,0 +1,34 @@
+{
+  "id": 95560,
+  "title": "Sleep Data Analysis",
+  "uri": "sleep-data-analysis-c9jgz4jw",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvm3rrbl3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"4hso3\",\"text\":\"Sleep data analysis using Neuroscore V3.0 software.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"76bjh\",\"text\":\"\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"chfoa\",\"text\":\"Neuroscore V3.0\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Import sleep data files into Neuroscore V3.0 software and visually inspect data. Exclude data with interruptions, noise, or issues related to battery status from further analyses. Use the DSI-provided &#34;sleep scoring 2&#34; script for analysis, incorporating EEG, EMG, and activity channels for scoring (Tools – Rodent scoring 2 visual Tuning). Specific power levels are considered indicative of different sleep stages: Delta power levels with a delta ratio of 0.5 are associated with a maximum probability of REM/Wake, and a NREM delta ratio of 1 represent a maximum probability of NREM. Theta power levels with a theta to delta ratio of 1.3 indicate a maximum probability of Wake/NREM, and a theta to delta ratio of 3 indicate a maximum probability of REM. EMG power levels with an EMG ratio of 1.1 are considered representative of a maximum probability of REM to NREM, and an EMG ratio of 2.4 indicate a maximum probability of Wake. An activity count of 0.1 is defined for the active wake phase. To avoid separating different wake stages, the scoring rules combine active wake and wake based on the activity channel. Artifact detection thresholds are set on a per-recording basis, with most recordings having thresholds set to 0.5mV for both EEG and EMG. Stage transition probabilities based on EEG, EMG, and activity are defined as follows: Wake to NREM: 90% Wake to REM: 90% NREM to Wake: 80% NREM to REM: 90% REM to Wake: 70% REM to NREM: 80% Delta oscillation is determined within a power band of 0.5 to 4Hz Theta oscillation is within the 6 to 9Hz range. The contributing factors of Delta, Theta/Delta, and EMG are considered equally important for all recordings. Sleep scoring is then obtained within 20s windows, and any recording with more than 1% artifacts is excluded from further analyses.",
+    "Following the scoring of sleep stages, convert the EMG into the root mean square (RMS) using the signal grid function.",
+    "For all recordings, generate a signal grid, including the timestamps (20s windows) of the GMT time, the RMS of the EMG, the sleep scoring, and the EEG.",
+    "Obtain a periodogram Power Band (PB) for each 20s window within the 0.3 to 80 Hz band range.",
+    "Employ a 10/1024 FFT order, an overlap of 50%, and a Hamming spectral function applied to the window.",
+    "Express PB values as a relative percentage of the power band value.",
+    "Determine the: Delta oscillation within the 0.5 to 4Hz window Theta within the 4 to 8Hz window Alpha within the 8 to 12Hz window Sigma within the 12 to 16Hz window Beta within the 16 to 24Hz window Low Gamma within the 24 to 49 Hz window High Gamma within the 51 to 80Hz window",
+    "Export the signal grid to Excel for further analyses.",
+    "For each sleep, awake, and REM event, extract and analyze the average PB value foreach band-pass frequency.",
+    "In Excel, convert the RMS-EMG to the z-score over the entire recording.",
+    "Use a COUNTIF function to count the number of REM events (scored as P), awake events (scored as W), or NREM events (scored as S) for the entire recording, as well as during the dark/light phases.",
+    "Use a COUNTIF function to count the number of REM events with a z-score EMG higher than 2 standard deviations (SD), which were further defined as REM Sleep Behavior Disorder (RBD) or REM events without atonia.",
+    "For each animal, extract the number of RBD events as well as the ratio of RBD events to total REM events."
+  ],
+  "authors": [
+    "daniel.dautan daniel",
+    "Per Svenningsson"
+  ],
+  "creator": "Jacquelyn Haytayan",
+  "published_on": 1708547535,
+  "created_on": 1708545823,
+  "keywords": []
+}

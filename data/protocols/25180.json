@@ -1,0 +1,22 @@
+{
+  "id": 25180,
+  "title": "Calculo área ImageJ",
+  "uri": "calculo-rea-imagej-4t4gwqw",
+  "doi": "dx.doi.org/10.17504/protocols.io.4t4gwqw",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Para el cálculo de área de las rocas se utilizó el programa ImageJ versión 1.8. Dentro del programa se abre la imagen deseada, se va a “seleccionar”, luego click en “Straight” y señala una medida de referencia (1 cm), luego seleccionar “Analyze” y posteriormente “Set scale”, donde se marcó “ know distance: 1; Unit of legth: cm.” (Esto es para estandarizar las mediciones). Para ya calcular el área de cada roca se va a la opción de “Polygon section” y se bordea el área deseada, luego se hace click en “Analyze” y se visualizan los datos apretando “Measure”.",
+    "Para el cálculo del área ramoneada primero se recortó la foto, seleccionando toda la cara expuesta de la roca, luego de eso selecciona “Image” y luego “Crop”. Una vez recortada la roca se adjusta el tamaño mediante “Image” luego “Adjust” y escribiendo el ancho y largo deseado (730/2200) sin marcar la casilla de “constrain aspecto ratio”. Una vez hecho lo anterior se guarda como .jpg en la carpeta correspondiente. El segundo paso es el calculo del área del biofilm y la ramoneada, para ello se abre la foto a analizar y se dirige a “Image” luego “type” seleccionando 8 bits, hecho esto se dirige a “Image” después a “Adjust” y se hace click en “Threshold”, estando en esta opción se mueve los parámetros de B&amp;W defiendo lo que es biofilm y lo que es ramoneado con los parámetros “dark background y stack histogram sin marcar. Cuando se obtiene el área seleccionada va hacia “Analyze particle” con los siguientes parámetros: 0 – inf; Circularity 0.00-1:00; Show Mask. Seleccionamos Display Results y luego Summarize donde se visualizará el área seleccionada."
+  ],
+  "authors": [
+    "Javiera Poblete"
+  ],
+  "creator": "Javiera Poblete",
+  "published_on": 1561647190,
+  "created_on": 1561646573,
+  "keywords": []
+}

@@ -1,0 +1,32 @@
+{
+  "id": 37000,
+  "title": "Find Proteins of Unknown Function (PUFs) using Plantannot - Protocol B",
+  "uri": "find-proteins-of-unknown-function-pufs-using-plant-bgdgjs3w",
+  "doi": "dx.doi.org/10.17504/protocols.io.bgdgjs3w",
+  "description": "{\"blocks\":[{\"key\":\"dnqb2\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"emgro\",\"text\":\"       Find   PUFs from organisms whose proteins are not yet in the NCBI “nr” database  and have no protein domain signatures.      \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":132}],\"data\":[]},{\"key\":\"4hkhl\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"1_0\":\"\"},\"colWidths\":[50],\"data\":[[\"The Plantannot software provides several filters and a text search box that allows searching for molecules by its desired annotation features. These filters are needed to obtain PUFs and to try to relate them to abiotic stresses using RNA-seq expression data and co-expression networks. The Filters menu is separated in 8 fields, of those we are going to use only five: “Organism”, “Feature type”, “Orthology”, “Orthologs_coexpression” and “Analyses”. The “Feature Type” filter has three molecule types, from those the polypeptide box is the only that is going to be always checked and the others blank. By using the other 4 remaining filters, 6 protocols were created as examples of different ways to selecting PUFs. Protocol A: using lack of both homology and protein domain signatures. Protocol B: using lack of homology, presence of domain signatures - trying to select Domains of Unknown Function (DUF) from PFAM, and the text search “Unknown function”.Protocol C: using homology, lack of protein domain signatures and the text search “Unknown function”. Protocol D-F: same protocols of A-C but using ortholog groups to find homolog proteins with co-expression data related to abiotic stress.\"],[\"Protocol B is intended to find PUFs from organisms whose proteins are not yet in the NCBI´s  \\\"nr\\\" database and have DUF domains from PFAM found by InterproScan, selected using the text search \\\"Unknown function\\\".\"]],\"guid\":\"D448A56D957111EAAB120A58A9FEAC2A\",\"legend\":\"\",\"mergeCells\":[],\"rowHeights\":[23,23],\"show_headers\":true}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Enter the Plantannot Result&#39;s page, with empty filters and text box search: https://www.machado.cnptia.embrapa.br/plantannot/find/?q= Or you can enter the https://www.machado.cnptia.embrapa.br/plantannot initial page and click on the magnifying glass with the text box empty as well. https://www.machado.cnptia.embrapa.br/plantannot",
+    "Find PUFs from organisms whose proteins are not yet in the NCBI´s &#34;nr&#34; database and have PFAM&#39;s DUF domains found by InterproScan. Proteins will be selected using the text search &#34;Unknown function&#34;. Visualize the &#34;Filters&#34; card on the left of the page from step1: https://www.machado.cnptia.embrapa.br/plantannot/find/?q=",
+    "In the &#34;Organisms&#34; filter, select any organisms (expand the organism&#39;s list using the green arrow) or select all by leaving all boxes empty. We will use Oropetium tomaeum as example. Click &#34;apply&#34; to execute the filter: https://www.machado.cnptia.embrapa.br/plantannot/find/?q=&amp;selected_facets=organism%3AOropetium+thomaeum",
+    "In the &#34;Feature type&#34; filter, select &#34;polypeptide&#34;, and click &#34;apply&#34; to execute the filter: https://www.machado.cnptia.embrapa.br/plantannot/find/?q=&amp;selected_facets=organism%3AOropetium+thomaeum&amp;selected_facets=so_term%3Apolypeptide",
+    "In the &#34;Analyses&#34; filter, select both &#34;no diamond matches&#34; and &#34;interproscan matches&#34;, and click &#34;apply&#34; to execute the filter: https://www.machado.cnptia.embrapa.br/plantannot/find/?q=&amp;selected_facets=organism%3AOropetium+thomaeum&amp;selected_facets=so_term%3Apolypeptide&amp;selected_facets=analyses%3Ainterproscan+matches&amp;selected_facets=analyses%3Ano+diamond+matches",
+    "Leave the &#34;Orthology&#34; and &#34;Coexpression&#34; and &#34;Orthologs_coexpression&#34; filters empty:",
+    "Leave the &#34;Biomaterial&#34; and &#34;Treatment&#34; filters empty:",
+    "After execution of all filters we will have the following list of filters: https://www.machado.cnptia.embrapa.br/plantannot/find/?q=Unknown+function&amp;selected_facets=organism%3AOropetium+thomaeum&amp;selected_facets=so_term%3Apolypeptide&amp;selected_facets=analyses%3Ainterproscan+matches&amp;selected_facets=analyses%3Ano+diamond+matches",
+    "Visualize the &#34;Results&#34; card on the center-right of the screen, we will have the resulting list of Oropetium&#39;s PUFs, 8 PUFs were filtered:",
+    "In addition to the applied filters, text search for &#34;Unknown function&#34; in the search box. After entering the text click on the magnifying glass icon to apply the search. https://www.machado.cnptia.embrapa.br/plantannot/find/?q=Unknown+function&amp;selected_facets=organism%3AOropetium+thomaeum&amp;selected_facets=so_term%3Apolypeptide&amp;selected_facets=analyses%3Ainterproscan+matches&amp;selected_facets=analyses%3Ano+diamond+matches"
+  ],
+  "authors": [
+    "Marcos Viana",
+    "Mauricio Mudadu",
+    "Adhemar Zerlotini"
+  ],
+  "creator": "Marcos Viana",
+  "published_on": 1590003774,
+  "created_on": 1589412604,
+  "keywords": []
+}

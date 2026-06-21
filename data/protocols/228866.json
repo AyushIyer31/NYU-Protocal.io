@@ -1,0 +1,42 @@
+{
+  "id": 228866,
+  "title": "Assessing Growth-Limiting Factors of C. elegans in 96-Well Liquid Culture",
+  "uri": "assessing-growth-limiting-factors-of-c-elegans-in-hbrab2m2f",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgqped5vk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"d78jv\",\"text\":\"The purpose of this protocol is to determine what factor or factors limit the growth of a C. elegans strain from L1 to adulthood in liquid medium in 96-well plates. The hypotheses to be tested are 1) PFA-killed OP50 limits the growth of the strain compared to alive OP50, 2) static incubation limits the growth of the strain compared to shaking incubation, and 3) wells contain too little S-medium to support full growth of the strain. These hypotheses will be tested by incubating round, F-bottom 96-well plates that are either shaking or static with PFA-killed OP50 or alive OP50, and with worms being dispensed in M9-medium or S-medium. The plates are recorded at 25 fps for 30s,  where the first 10s are without bluelight stimulation and the final 10s are with bluelight stimulation. The readout of this protocol is a pixel variation analysis and worm length measurement. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9mnwu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"nuid4\",\"text\":\"- 6 mL PFA-killed OP50 (OD = 2.0)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"u1x1t\",\"text\":\"- 6 mL alive OP50 (OD = 2.0)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jjuuy\",\"text\":\"- 10,000x L1 N2\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"zldxr\",\"text\":\"- 10,000x L1 Δnhr-8\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bvevd\",\"text\":\"- 8x 96-WPs\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ilvws\",\"text\":\"- 6x seeded 100 mm plates\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"um8he\",\"text\":\"- 15 mL falcon tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6udme\",\"text\":\"- Pasteur pipettes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bcdqu\",\"text\":\"- M9 medium\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"glp88\",\"text\":\"- S.H2O\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"p4za2\",\"text\":\"- 20°C shaking incubator over 76h\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "0.5% PFA-treated OP50 PFA treatment of OP50 by Bonnie Evans",
+    "Wash L1s once in M9 in a 15 mL falcon tube.",
+    "Wrap Plate 2 (M9 medium-filled) and Plate 4 (S medium-filled) in tissue paper that has been wet with MilliQ water and squeezed. Place the plates in a plastic plate rack and keep them in a 20°C shaking incubator at 140 rpm.",
+    "Add a couple of mL of M9 to the plates and streak a plastic sterile loop over the agar to loosen eggs.",
+    "Wash off the adult worms with M9.",
+    "Pour the eggs into a 15 mL falcon tube.",
+    "Repeat step 3-4 until few eggs are left on the plate.",
+    "Wash the eggs in M9 three times.",
+    "Leave eggs in ~9 mL M9 in empty 60 mm plates over-night at 20°C.",
+    "Adjust the worm number to obtain 20 worms per 20 µL.",
+    "Half the population into another 15 ml falcon tube, spin the worms down and replace the M9 medium with S-medium. You should have one tube with L1 worms in M9 medium and one tube with worms in S-medium now.",
+    "Add 10 µL of Sterile H2O to all eight 96-well plates with the ViaFill. After dispensing S.H2O, prime once with MilliQ water and then prime the ViaFill without MilliQ water so that no more liquid is left in the tubes.",
+    "Shake the two S medium-containing falcon tubes for Strain 1 and Strain 2, and stick the dedicated groups of tubes into the respective falcon tube. Dispense 20 µL of worms into Plate 3 and Plate 4. After dispensing the worms, prime 2x with MilliQ water and then prime the ViaFill without MilliQ water so that no more liquid is left in the tubes.",
+    "Dispense 30 µL of PFA-killed OP50 (pellet resuspended in S-medium; OD=2.0; rows A-D) and alive OP50 (pellet resuspended in S-medium; OD=2.0, rows E-H). After dispensing bacteria, prime 2x with MilliQ water and then prime the ViaFill without MilliQ water so that no more liquid is left in the tubes.",
+    "Place Plate 1 (M9 medium-filled) and Plate 3 (S medium-filled) in the 20°C incubator (static) inside a box with a lid on.",
+    "Leave plates incubating for 76h.",
+    "Record the plates.",
+    "Pick 10-20 adult worms onto 3 seeded 100 mm plates per strain in afternoon.",
+    "Make S-medium 1 L Pre-autoclave S-medium (S-basal) NaCl 5.85 g 4th floor K 2 HPO 4 1 g 4th floor KH 2 PO 4 6 g 4th floor MilliQ water 1 L 4th floor 1 L Post-autoclave S-medium Cholesterol 5 mg/mL in ethanol 1 mL 4th floor 1 M potassium citrate Ph6 10 mL 4th floor trace metals solution 10 mL 4th floor 1 M CaCl2 3 mL 4th floor 1 M MgSO4 3 mL 4th floor",
+    "Divide the ViaFill tubes into two groups so that the tubes covering rows A, B, E and F are sourcing worms from Strain 1, and tubes covering rows C, D, G, H are sourcing worms from Strain 2.",
+    "Shake the two M9-containing falcon tubes for Strain 1 and Strain 2, and stick the dedicated groups of tubes into the respective falcon tube. Dispense 20 µL of worms into Plate 1 and Plate 2. After dispensing the worms, prime 2x with MilliQ water and then prime the ViaFill without MilliQ water so that no more liquid is left in the tubes.",
+    "Divide up the tubes so that the tubes dispensing in rows A to D are for dispensing PFA-killed OP50 and tubes dispensing in rows E to H are for dispensing live OP50."
+  ],
+  "authors": [
+    "John Bergqvist"
+  ],
+  "creator": "John Bergqvist",
+  "published_on": 1765450751,
+  "created_on": 1759420365,
+  "keywords": []
+}

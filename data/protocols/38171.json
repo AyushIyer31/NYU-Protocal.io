@@ -1,0 +1,25 @@
+{
+  "id": 38171,
+  "title": "Download Sequences from Eurofins - Edit Filenames for Use in Geneious",
+  "uri": "download-sequences-from-eurofins-edit-filenames-fo-bhh3j38n",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2ly3bjegx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"5oq9b\",\"text\":\"Our protocols are constantly evolving and old versions will be deleted.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8fjmr\",\"text\":\"The documents here are not intended to be cited in publications\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"1sl1f\",\"text\":\"This protocol is optimized for Macs for use with the bash terminal.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Download sequences from Eurofins (you should have a link in your email). Once downloaded, unzip the folder.",
+    "Optional: Search your four letter code (use command F in Finder) in the Eurofins folder and move all of your sequence files to another folder that is easy to navigate to. For example, create a new folder called Date_Seqs on your Desktop and paste all of the sequences you found with your four letter code there.",
+    "Open the bash terminal and navigate to the folder with your sequences in it (use the cd command and the path to the folder ). If you&#39;re following the example, see below. Note that all commands will be written in the text in bold , while items in italics indicate parts of the commands that are specific to you and therefore likely to change from the example (see above; includes file/folder paths, sample names, etc). cd Desktop/Date_Seqs",
+    "Once you&#39;ve navigated to the folder with your sequences in it, paste in the following to replace your four-letter code with an underscore: for file in * code *; do mv &#34;$file&#34; &#34;$file// code /_}; done Be sure to replace &#34;code&#34; with the four-letter code that is specific to you/your files. for file in *code*; do mv \"$file\" \"${file//code/_}\"; done",
+    "Output : Check that all of your files have been renamed. In the above example, all instances of &#34;code&#34; have now been replaced with an underscore. You should see the same result. You can now proceed with bringing your .ab1 files into Geneious and assembling them as per usual."
+  ],
+  "authors": [
+    "Dakota Betz"
+  ],
+  "creator": "Marina McCowin",
+  "published_on": 1749844907,
+  "created_on": 1592094187,
+  "keywords": []
+}

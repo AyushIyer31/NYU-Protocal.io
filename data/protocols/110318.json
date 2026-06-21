@@ -1,0 +1,29 @@
+{
+  "id": 110318,
+  "title": "Generating annual animal usage returns for the HO",
+  "uri": "generating-annual-animal-usage-returns-for-the-ho-dpyn5pve",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"9kapc\",\"text\":\"Animal usage is reported to the Home Office every calendar year. Returns are usually due in late January and must include animals terminated from January 1st to December 31st of the previous year.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"67o2u\",\"text\":\"We are required to state the number of animals (in the categories non GA, GA without harmful phenotypes, and GA with harmful phenotypes) that were returned in each severity category (non-recovery, sub-threshold, mild, moderate, and severe). Wildtype mice that did not undergo any procedure are NOT returned. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Log into Tick@lab.",
+    "Go to Reports -&gt; Animal Usage (under animal Utilization &amp; Statistics).",
+    "Select the PPL number (use the arrows to move it to the Assigned column), the species used in the PPL, and the start and end dates (usually from Jan 1st to Dec 31st of the reporting year).",
+    "Click on the Generate Report button at the top. A pop-up window with a spinning disk will appear. It make take a while for the report to be generated so be patient.",
+    "After the report has been generated, click on the Export icon and save the report it as your desired filetype (an Excel file will make the following steps very easy).",
+    "Open the Excel file. Select the row with the headers and in the Data menu select Filter. Each header cell should now have a small arrow that allows you to filter the data.",
+    "Filter by genotype. Selecting the (Blanks) category will select wildtype mice. Also select genotypes from genetically altered mouse lines that do NOT have the transgenic allele. For example Mecp2: - ; Thy1: -.",
+    "Conduct a quick check to make sure the severity reported matched the protocol each animal has been returned on. A common mistake is returning animals in procedural protocols (i.e. anything more than breeding) as sub-threshold.",
+    "Filter by severity level. For each one, use the display at the bottom of the spreadsheet to know how many animals to return."
+  ],
+  "authors": [
+    "Michelle Sanchez Rivera"
+  ],
+  "creator": "Michelle Sanchez Rivera",
+  "published_on": 1742979358,
+  "created_on": 1729268715,
+  "keywords": []
+}

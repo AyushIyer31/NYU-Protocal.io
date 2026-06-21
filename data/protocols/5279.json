@@ -1,0 +1,24 @@
+{
+  "id": 5279,
+  "title": "Cleavage Assay on Plate Reader",
+  "uri": "cleavage-assay-on-plate-reader-hd7b29n",
+  "doi": "dx.doi.org/10.17504/protocols.io.hd7b29n",
+  "description": "{\"blocks\":[{\"key\":\"8tvef\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9g3qe\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"52b46\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"c3k65\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "May want to take plate reading before adding solutions. Plate reading: excitation 490 nm emission 520 nm, 9 nm excitation bandwidth, 20 nm emission bandwidth, 25 flashes, gain of 100. Add full volume solutions to appropriate wells. May want to incubate at 37* for 60 min before collecting data, or collect 1 read/min for 15 min at 25*.",
+    "If needed, dilute cleavage template, gRNA, and Cas9 stock solutions in molecular-grade H2O to workingconcentrations.For example, I often dilute 6 ug/uL Cas9 1:11 to create 500 ng/uL",
+    "Decide on amounts of each component per reaction. For example, my PCSK9 experimentswere optimized to run with 300 ng Cas9, 300 ng gRNA, and 400 ng cleavage template. Set up a matrix in your lab notebook with amounts and volumes of each component. For propercontrols, each combination of components should be run (ex. include tubes with only Cas9, tubes withgRNA and cleavage template, etc. etc.). Magnesium is also vital for cleavage. I usually run with 2 mM MgCl2 (1 uL of 20 mM stock), but runningwith as low as .5 mM never affected cleavage. Calculate amount of water added to each tube to create a 10uL reaction volume per tube",
+    "Place the volume of gRNA calculated in the previous step into all tubes that need gRNA, and heat onthermocycler using &#39;GRNA HEAT&#39; protocol.(GRNA HEAT = 95* for 5 min, cooled to 20* at -1*/sec).",
+    "Add water, MgCl, and Cas9 to appropriate tubes with and without heated gRNA. Incubate at 37* for 15min.",
+    "Heat 40 uL aliquots of 500 nM hairpin with same MgCl2 concentration as solutions. Add 40 uL hairpins to each well on section of 384-well plate with transparent bottom."
+  ],
+  "authors": [],
+  "creator": "Noreen Wauford",
+  "published_on": 1490048462,
+  "created_on": 1490042744,
+  "keywords": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": 225510,
+  "title": "Acute Kidney Injury Biomarkers in Marathon Runners: Systematic Review and Meta-analysis. Research Protocol",
+  "uri": "acute-kidney-injury-biomarkers-in-marathon-runners-g8gebzttf",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvrw8r3lmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"6t8n9\",\"text\":\"The objectives of this review are: to measure changes in renal biomarker levels before, immediately after, and 24 hours post-marathon; to identify promising biomarkers for the diagnosis of acute kidney injury; and to describe the temporal patterns of biomarker dynamics in relation to the marathon.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"wav3i\",\"text\":\"Materials and Methods: Inclusion criteria: studies of marathon runners reporting AKI-related biomarkers. Search in the following databases: PubMed, EMBASE, Web of Science, LILACS. Collected data: study design, participant characteristics, and biomarker values (pre-, post-, and 24 h post-race). Meta-analysis using random effects model. Risk of bias assessment: the National Heart, Lung, and Blood Institute pre–post tool.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":22}],\"entityRanges\":[],\"data\":{}},{\"key\":\"b0da5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ahcti\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eugs2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"hnxyw\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"s86ha\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Include prospective and retrospective observational studies of individuals who participated in running a marathon, with primary outcomes being changes in urinary, serum, or plasma biomarkers indicative of AKI (e.g., serum creatinine, urinary creatinine, BUN-to-creatinine ratio, serum urea, TIMP-2, IGFBP-7, TIMP-2*IGFBP, urinary L-FABP, uNGAL, pNGAL, serum cystatin C, pKIM-1, uKIM-1, plasma/urinary TNF-alpha, plasma/urinary MCP-1, plasma/urinary YKL-40). Secondary outcomes include sCRP, copeptin, and sCK.",
+    "Search four databases to identify eligible studies: PubMed, EMBASE, Web of Science, and LILACS; additionally examine the reference lists of selected articles and reviews to identify further relevant studies.",
+    "Construct and run search strategies using terms including “acute kidney injury”, “marathon”, and the relevant biomarkers; include MeSH terms, synonyms, singular/plural forms, and abbreviations. Conduct the searches from database inception until May 29, 2024, with no language restrictions.",
+    "Perform an initial semi-automated removal of duplicate records using Zotero (Corporation for Digital Scholarship).",
+    "Manually screen titles and abstracts to exclude articles that do not meet the eligibility criteria and to remove any remaining duplicates.",
+    "Have two authors manually review full-text versions of remaining articles and exclude irrelevant studies, non-eligible article types, and duplicates.",
+    "Manually extract data from each selected study by several authors.",
+    "Extract the following information from each study: study characteristics (country, region, marathon location, study design), participant demographics (age, % female), body mass index, marathon event details (previous marathons completed, weekly running distance, running history in years), AKI criteria and AKI stage 1 reporting, and biomarker values measured in urine, serum, or plasma (and other indicators of acute kidney injury).",
+    "For each outcome, extract the mean and standard deviation. When mean/SD are unavailable, estimate values from median and interquartile range using formulas from the Cochrane Handbook.",
+    "Represent the effect size of interest by the mean values of the biomarkers. Collect measurements at three time points: before the marathon, immediately after the marathon, and 24 hours post-marathon.",
+    "Assess methodological quality of selected articles using the NHLBI quality assessment tool for before-after (pre-post) studies with no control group.",
+    "In addition to the NHLBI tool, apply four supplementary questions addressing: (1) clear exclusion criteria for alcohol/food abstinence 12 h before baseline measurement; (2) exclusion of comorbidities that could alter measurements; (3) exclusion of medication that could alter measurements; (4) reporting the use of water, electrolytes, or food during the marathon.",
+    "Enter extracted means and standard deviations into meta-analyses using the meta package in R.",
+    "Use a random-effects model due to clinical heterogeneity among studies; present results as forest plots; assess statistical heterogeneity with the chi-squared Q test and the I 2 statistic; define statistical significance as p &lt; 0.05. Perform all analyses using R version 4.3.2.",
+    "Assess publication bias using Egger&#39;s test."
+  ],
+  "authors": [
+    "Daniel-Corneliu Leucuta†",
+    "Loredana-Ioana Trif†",
+    "Oana Almășan*",
+    "Ștefan ucian Popa†",
+    "Abdulrahman Ismaiel"
+  ],
+  "creator": "Daniel Leucuţa",
+  "published_on": 1756205559,
+  "created_on": 1756203079,
+  "keywords": []
+}

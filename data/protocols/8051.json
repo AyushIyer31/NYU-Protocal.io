@@ -1,0 +1,37 @@
+{
+  "id": 8051,
+  "title": "High-efficiency S. cerevisiae lithium acetate transformation",
+  "uri": "high-efficiency-s-cerevisiae-lithium-acetate-trans-j4tcqwn",
+  "doi": "dx.doi.org/10.17504/protocols.io.j4tcqwn",
+  "description": "{\"blocks\":[{\"key\":\"b5tus\",\"text\":\"A protocol for lithium acetate transformation of yeast that can be used to generate highly complex plasmid libraries (O(1E8) if starting with ~1L of culture) and can get over 1 million transformants from a single transformation (as described here).  Optimized using yeast strain Y8203.  Based on a protocol originally by Supipi Kaluarachchi Duffy.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"6vv2f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"ggbh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"65fog\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"UmuxV\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"RNNOW\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"ddDDE\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"qwA3N\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":3866,\"guid\":\"41064CF3341F11EE9D4302C0B41BC903\",\"name\":\"Lithium Acetate Dihydrate\",\"mol_weight\":102.02,\"sku\":\"L4158\",\"url\":\"http://www.sigmaaldrich.com/catalog/product/sial/l4158\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":17,\"name\":\"Merck MilliporeSigma (Sigma-Aldrich)\",\"link\":\"http://sigmaaldrich.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":4214,\"guid\":\"4106BF4A341F11EE9D4302C0B41BC903\",\"name\":\"Salmon Sperm DNA Carrier\",\"mol_weight\":0,\"sku\":\"15632011\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":122,\"name\":\"Thermofisher\",\"link\":\"http://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":4606,\"guid\":\"4107400C341F11EE9D4302C0B41BC903\",\"name\":\"DTT\",\"mol_weight\":0,\"sku\":\"D0632\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":17,\"name\":\"Merck MilliporeSigma (Sigma-Aldrich)\",\"link\":\"http://sigmaaldrich.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Innoculate 5 mL YPD and grow overnight (or scale up as appropriate)",
+    "In the morning, dilute in ~ 100 mL YPD to an initiate OD of ~0.05 and grow 4-6 hours until an OD of 0.3-0.4 is reached. Scale up starting culture as needed for the number and scale of transformations.",
+    "In the mean time, put 50% PEG 3350, 1M LiAce, 0.1 M LiAce, and H2O on ice",
+    "Thaw 1M DTT on ice",
+    "Make freshly denatured ssDNA (2 mg/mL): denature 100C for 5 mins, snap cool on ice, leave un ice until transformation",
+    "When cells have reached desired OD, collect by centrifugation (3000 RPM, 5 mins)",
+    "From now until 30C incubation, keep cells on ice",
+    "Wash cells 1x in 1mL ice-cold H2O and transfer into an eppendorph tube. (scale up volume accordingly with more initial volume and use additional tubes if necessary). Collect by centrifugation (3000 RPM, 2 mins).",
+    "Wash cells 1x in 0.5 mL of ice-cold 0.1M LiAce, collect as before At this stage, you can freeze the cells for future transformation. If so, resuspend in 0.1M LiAce, add glycerol to 15% final concentration, and freeze at -80. When using, thaw on ice, collect as if you were finishing step 9, and resume.",
+    "Resuspend in as little ice-cold H2O as possible by pipetting up and down and stirring the pellet with the pipette tip. Generally, this is ~100 uL for 200mL starting culture.It is recommended that you use less and dilute if necessary to get the cells into suspension. The mixture should be quite thick.",
+    "Make transformation mixture, on ice: 1x transformation mixture (214 uL total, without plasmid DNA) 1) Mix the following in a tube 30 uL ssDNA (2mg/mL, denatured as above) 140 uL 50% PEG 3350 22 uL 1M LiAce 2.12 uL 1M DTT 1-2 uL of plasmid DNA (~2ug/uL is good, less is proportionally less efficient) 2) Mix the above by vortexing well 3) add 20 uL Yeast 4) Mix again by vortexing gently until homogeneous Note: can also add plasmid DNA after this step (e.g. if transforming multiple different plasmids) and vortex again",
+    "Incubate at 30C for 30 mins",
+    "Heat shock at 42C for 20 mins",
+    "Collect by centrifugation (little RPM needed, &lt;1 min; I usually use a mini centrifuge for ~30 seconds – the PEG makes this fast)",
+    "Resuspend in H2O or selective media (however much you like for plating/dilution series) If plating on an antibiotic, a recovery step of up to 2 hours in non-selective media is recommended to give the yeast time to express the antibiotic cassette. I have tested plating on NAT plates without recovery and get about 2 times fewer colonies than on Ura- plates for the same transformation.",
+    "Plate dilution series to see efficiency on selective media (1E-4 or so dilution factor), takes ~2 days to grow",
+    "Grow library (if appropriate) in selective media for 1-2 days (depending on efficiency and media saturation – dilute at least once in selective media to reduce the fraction of non-transformed cells The volume you resuspend the cells in should reflect the number of yeast cells in the transformation (e.g. transforming all cells from 50mL of starting culture should be selected in at least 50mL of selective media)."
+  ],
+  "authors": [
+    "Carl De Boer"
+  ],
+  "creator": "Carl De Boer",
+  "published_on": 1506707946,
+  "created_on": 1506631682,
+  "keywords": []
+}

@@ -1,0 +1,42 @@
+{
+  "id": 95981,
+  "title": "Candida auris sequencing by Illumina miSeq using Illumina DNA Prep ",
+  "uri": "candida-auris-sequencing-by-illumina-miseq-using-i-c9ymz7u6",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbxjkylpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"rome\",\"text\":\"Candida auris sequencing is becoming more important for public health and surveillance.  This protocol is designed to guide individuals experienced in sequencing in setting up a SOP for sequencing C. auris.  This protocol is designed for Illumina short-read sequencing.  While the miSeq is the described instrument it is generally not difficult to scale up or down to other instruments.  We have not validated using 150x150 read lengths.  The DNA prep kit is the recommended kit.  The NexteraXT kit produces varying fragment sizes across samples and usually results in lower coverage and sequencing quality than samples prepared with DNA Prep.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6g2pm\",\"text\":\"This does not include bioinformatic analysis- however you can contact the author for more information. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"3f57p\",\"text\":\"Use no more than 100ng for DNA Prep input- The Illumina DNA Prep protocol is compatible with DNA inputs of 1–500 ng or higher.  For human DNA samples and other large complex genomes, the recommended minimum\\nDNA input is 100–500 ng. For small genomes (eg microbial), the DNA input amount can be reduced to as low as 1 ng (modifying the PCR cycling conditions accordingly).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"egjnh\",\"text\":\"Use no more than 100ng for DNA Prep input.  Using additional DNA will cause incomplete tagmentation and will result in a diverse population of fragments.  The diverse population of library fragment sizes will make it difficult to accurately load the sequencing instrument and will result in poor sequencing reads. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"fl7pg\",\"text\":\"This should be considered a draft SOP and any methods or recommendations included should be validated and verified at your individual institution.  The assay is not intended to diagnose or treat any medical condition.  This assay is not a current laboratory developed test for any clinical testing purpose. This SOP is not endorsed by the Florida Department of Health. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"4dqsv\",\"text\":\"Extracted Candida auris DNA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5iu2f\",\"text\":\"Illumina DNA Prep kit\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dbh64\",\"text\":\"Illumina miSeq\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8mvn4\",\"text\":\"Illumina miSeq v3 reagents, 300x300\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"61mj9\",\"text\":\"Micropipettes and micropipette tips with barrier\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"202cb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Quantitate samples",
+    "For each sample determine the volume of sample to add that will be equal to or less than 100ng of DNA (volume must be less than 30 uL)",
+    "Add molecular grade water to a total volume of 30 uL",
+    "Vortex BLT and prepare Tagmentation MasterMix- 10uL of BLT + 10 uL TB1 for each sample plus overage",
+    "Add 20 uL Tagmentation MasterMix to DNA and mix well by pipetting or plate shaker",
+    "On a thermocycler run the Tagmentation step: 55°C for 15 minutes",
+    "Check TSB for precipitates, warm if needed. Add 10uL of TSB to each samples.",
+    "On a thermocycler run the Post-Tagmentation step: 37°C for 15 minutes.",
+    "Place on a magnet for 3 minutes and discard the supernatant",
+    "Remove the plate from the magnet and add 100 uL of TWB and mix gently",
+    "Place on the magnet for 3 minutes and discard the supernatant",
+    "preform one more wash (steps 10-11)",
+    "Remove from the magnet and add 100uL of TWB and mix gently. Place on magnet for at least 3 minutes",
+    "Prepare the PCR Mastermix- 20uL EPM + 20 uL water for each sample plus overage",
+    "Once the PCR Mastermix is prepared remove the final TWB, making sure to remove as much excess TWB as possible",
+    "Add 40 uL of the PCR Mastermix and re-suspend the pellet by pipetting or using the plate shaker",
+    "Add 10uL of Index and mix well",
+    "On a thermocycler run the suggested PCR for 5-10 cycles. Note: for high amounts of input DNA fewer PCR cycles are recommended. 68°C for 3 min 98°C for 3 min 5-8 cycles for 100ng 98°C for 45 sec 62°C for 30 sec 68°C for 2 min 68°C for 1 min Hold at 4°C",
+    "Clean up can be done either via the small fragment cleanup protocol or the dual size selection.",
+    "Samples can be quantitated and pooled in equal amount or can be pooled by equal volume.",
+    "Pools should be quantitated and the average fragment size should be assessed to effectively load the instrument.",
+    "Recommended loading concentration for a miSeq v3 is 10-12 pM. The goal should be 1000-1200 k/mm2."
+  ],
+  "authors": [
+    "Brenna M McGruder Rawson"
+  ],
+  "creator": "Brenna M McGruder Rawson",
+  "published_on": 1709236526,
+  "created_on": 1709233399,
+  "keywords": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": 48536,
+  "title": "Crop FVC retrieval",
+  "uri": "crop-fvc-retrieval-btmynk7w",
+  "doi": "dx.doi.org/10.17504/protocols.io.btmynk7w",
+  "description": "{\"blocks\":[{\"key\":\"8euou\",\"text\":\"This protocol describes the method of crop fractional vegetation cover (FVC) retrieval from the PROSAIL-GP model. This method can be applied to UAV-based multispectral images to accurately estimate crop FVC in oilseed rape, rice, cotton and wheat.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"b1so5\",\"text\":\"Here, the canopy reflectance can be input, which can match with the simulated reflectance. Canopy reflectance is determined based on a weighted combination of the bi-directional and hemispherical-directional reflectance with weights corresponding to the fraction of diffuse incident solar radiation (skyl). The detailed information can be fould in chi2P5B.m and PRO4SAIL.m.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6rstu\",\"text\":\"In addition, the retrieval results may be slightly affected by the iterative optimization function, while they don't produce the significant difference for model inversion.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"281le\",\"text\":\"The detailed descriptions about the datasets can be found in our published papers.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"83l3t\",\"text\":\"The source code of the PROSAIL model used in this study, are open and available onhttp://teledetection.ipgp.jussieu.fr/prosail/. The software for the PROSAIL inversion is open in ARTMO (https://artmotoolbox.com/).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":82,\"length\":45},{\"key\":1,\"offset\":186,\"length\":25}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"63E934098D5811EB9D8A0A58A9FEAC02\",\"url\":\"http://teledetection.ipgp.jussieu.fr/prosail\"}},\"1\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"63E933AA8D5811EB9D8A0A58A9FEAC02\",\"url\":\"https://artmotoolbox.com\"}}}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"1aid0\",\"text\":\"The code of the PROSAIL-GP model and all of the datasets are available on https://github.com/WanLiangZJU/Crop-FVC-retrieval.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Make sure you have MATLAB 2014b (or newer) installed on your computer.",
+    "Dowload the MATLAB scripts from https://github.com/WanLiangZJU/Crop-FVC-retrieval",
+    "Please use the code in the file of PROSAIL_5B_GP . Here, we provide five main codes for different datasets as follows: Main_oilseed_rape_2017_2018.m , Main_oilseed_rape_2019.m , Main_rice_2018.m , Main_wheat_2019.m , Main_cotton_2019.m",
+    "Please update the code and run the main code update the file for the input of reflectance data set the range of model parameters obtain the retrieval result, namely FVC, realted to different leaf angle distributions As for different datasets, it is critical to set the suitable range of mode parameters based on previous studies and field measuremnts.",
+    "This code uses the UAV-based multispectral image with the spectral region of 604-872 nm. If you use different spectral regions, please refer to the original code online http://teledetection.ipgp.jussieu.fr/prosail/ . It is necessary to modify the range of spectral reflectance in the model to fit with your data."
+  ],
+  "authors": [
+    "Liang Wan",
+    "Jiangpeng Zhu",
+    "Xiaoyue Du",
+    "Jiafei Zhang",
+    "Xiongzhe Han",
+    "Weijun Zhou",
+    "Xiaopeng Li",
+    "Jianli Liu",
+    "Fei Liang",
+    "Yong He",
+    "Haiyan Cen"
+  ],
+  "creator": "Liang Wan",
+  "published_on": 1616671068,
+  "created_on": 1616664199,
+  "keywords": []
+}

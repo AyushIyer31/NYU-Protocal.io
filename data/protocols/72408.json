@@ -1,0 +1,36 @@
+{
+  "id": 72408,
+  "title": "Calibration Protocol",
+  "uri": "calibration-protocol-cixyufpw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx998kg8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"e36af\",\"text\":\"This is a quick calibration protocol for the Arduino AAWsmo box. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"92p56\",\"text\":\"Use this protocol at the beginning of every new experiment and as needed. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"p1h1\",\"text\":\"This is part of a larger phenotyping project in the Julkowska Lab at the Boyce Thompson Institute in Ithaca NY\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Download the calibrate.ino file from GitHub (insert GitHub link here) to a location in your computer that is easy to access with all other Arduino codes that you will be using.",
+    "Open Arduino IDE and open the calibrate.ino file Location of the first three functions you will need to use to verify, upload and access the calibration code.",
+    "Select the &#39;Verify&#39; button in the top left of the screen (indicated by a blue circle with a checkmark in it. This will verify your code to check for any errors without having to upload it to the Arduino)",
+    "Connect the Arduino to a USB port on your computer",
+    "Make sure that the scale is leveled, free from any debris underneath the scale, and empty with nothing on it. (This is because once the USB is connected to the computer the power will be supplied to start up the Arduino)",
+    "On the calibrate.ino code, select the &#39;Upload&#39; button at the top left of the screen, indicated by a right-pointing arrow in a blue circle. Wait for the message at the bottom to read &#39;Done uploading&#39;. Before uploading, ensure nothing is on the scale, leaning on the scale or that the saucer is not being obstructed by anything, once the code is uploading it will run automatically and take a tare reading of the scale. Before uploading the calibration code to the Arduino consider this: - If you have already calibrated this scale before, use your previous value at the calibration factor to start with. The values only change by very small intervals - If not, and your weight reading is larger than 25 weight units away from the true weight, go back to the code and manually change the calibration factor in intervals of 1 and reupload the code to start over.",
+    "Change the weight units to those you wish to work with by altering: Serial.print(&#34; g&#34;); //Change this to your desired units and re-adjust the calibration factor if you like In this case, the experiment is optimized for &#39;grams&#39;. Different weight units might have vastly different calibration factors, adjust as necessary.",
+    "Select two objects with known weights. When selecting these two objects to calibrate your scale, try to aim for one object at the upper limit of the weights you will be recording in your experiment and one object at the lower limit of the weights you might expect in your experiment. (AVOID picking weights that are too heavy or too light to be feasible in your experiment, you will just be increasing the variance of the readings for the weights you are interested in)",
+    "Open the &#39;Serial Monitor&#34; in the upper right-hand corner (indicated by a small magnifying glass in a blue square)",
+    "Upon opening the serial monitor the code will display this message to guide you through the calibration:",
+    "Based on the reading, type in either + or - into the text bar at the top of the window and click &#39;Send&#34;. The serial monitor will only take one input at a time, only type in one character and send one at a time. Also, while the program runs there is a stall between the input and the calibration factor resulting in a shift of the read weight. DO NOT SPAM THE SERIAL MONITOR WITH CHARACTERS, it will create a backlog of commands which will force you to wait for the Arduino to catch up and increases the likelihood that you miss your desired calibration factor.",
+    "When you reach a reading that is true to the actual weight on the scale, note down the calibration factor.",
+    "Place the second weight on the scale and observe the deviation from the true weight and adjust the calibration factor to disperse the variance between the upper limit weight and the lower limit weight. A good calibration results in no more than + or - 1.5 grams of variance from the true weight.",
+    "At the end of the calibration note down the date, calibration factor and the achieved accuracy (how much did the weight vary from the true weight)"
+  ],
+  "authors": [
+    "Olga Khmelnitsky",
+    "Magdalena M Julkowska",
+    "Hayley Sussman"
+  ],
+  "creator": "Olga Khmelnitsky",
+  "published_on": 1676966927,
+  "created_on": 1667844668,
+  "keywords": []
+}

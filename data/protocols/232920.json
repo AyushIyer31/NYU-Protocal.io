@@ -1,0 +1,41 @@
+{
+  "id": 232920,
+  "title": "RSVAB WGS and GF protocols",
+  "uri": "rsvab-wgs-and-gf-protocols-hfpyb3mpx",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg3xbzqg25/v6",
+  "description": "{\"blocks\":[{\"key\":\"8g5r1\",\"text\":\"This SOP describes the procedure for generating cDNA from RSV viral nucleic acid extracts and subsequently producing amplicons tiling the viral genome using. We propose two systems for genomic characterization of RSV. First, a novel RSV amplicon-based system for WGS, and second, a method focused on obtaining the specific sequences of the main antigens, G and F. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8ru26\",\"text\":\"\\n\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "During this step three master mixes will be prepared: MMI, MMII and MMIII. Materials: Kit Superscript III First Strand (Invitrogen) 100% DMSO RNAseH (Invitrogen) Klenow fragment 3&#39; -&gt;5&#39; exo (New England Biolabs) Primer FR26RV-N : 5’GCC GGA GCT CTG CAG ATA TCNNNNNN 3’ This step must be performed in a RNase free, pre-PCR environment in which post PCR RSV amplicons are not present, to minimise risk of sample contamination. A Founder Effect Led Early SARS-CoV-2 Transmission in Spain..",
+    "MMI Preparation: A B 1 FR26RV-N (10uM) 2 2 DMSO 0,5 3 Total 2,5 ul Mix thoroughly by vortexing.",
+    "MMII Preparation: A B 1 10x First Strand Buffer 2 2 DTT 100 mM 2 3 MgCl2 25mM 4 4 dNTPs 1 5 RNaseOUT 0,5 6 SSIII RT 0,5 7 Total 10 ul Kit Superscript III First Strand (Invitrogen)",
+    "MMIII Preparation: A B 1 Klenow 5'-3' 1 2 RNAseH 0,5 3 Total 1,5 ul",
+    "Defrost extracted RNA. Maintain on ice the MMI,MMII and MMIII mixes.",
+    "MMI Amplification: Add 5 µL Sample in MMI mix Place the tube on a thermocycler and run the following program: A B 1 65ºC 5 min 2 4ºC 2 min Briefly tube centrifugation",
+    "MMII Amplification: Addition of 10 µL from MMII in the tube with the MMI and the viral extraction. Place the tube on a thermocycler and run the following program: A B 1 25ºC 10 min 2 50ºC 50 min 3 85ºC 10 min 4 4ºC ∞ Briefly tube centrifugation",
+    "MMIII Amplification: Addition of 1.5 µL of MMIII into the tube with the previous mixes and the viral extraction Place the tube on a thermocycler and run the following program: A B 1 37ºC 60 min 2 75ºC 15 min Briefly tube centrifugation",
+    "STOP POINT : cDNA can be stored at 4°C (same day) or -20°C (up to a week).",
+    "Iglesias-Caballero M, Camarero-Serrano S, Varona S, Mas V, Calvo C, García ML, García-Costa J, Vázquez-Morón S, Monzón S, Campoy A, Cuesta I, Pozo F, Casas I. Materials: 2x MyTaqRed mix (Bioline) Primers: %s %s %s %s The protocol is based in the RSV genome amplification in two separate mixes with an unique amplification program. The mixes that will be mixed at the end of cycling.",
+    "Preparation of RSV Amplification Mix A: %s %s",
+    "Preparation of RSV Amplification Mix B: %s %s",
+    "Addition of 5 µL of the previous prepared double stranded cDNA on each mix.",
+    "Amplification protocol: A B C 1 95ºC 1 min 2 95ºC 30 seg x45 3 55ºC 7 min 4 72ºC 2 min 5 72ºC 5 min 6 12ºC ∞",
+    "To assess PCR performance, the amplicons can be loaded onto a 1% agarose gel for electrophoresis.",
+    "Finally, mix in one single tube both mixes and proceed to purification and library preparation.",
+    "Materials: Qiagen OneStep RT-PCR kit.",
+    "Preparation of GF amplification mix: A B 1 H20 10 2 5xQ PCR MM 6 3 dNTPs 1 4 RSVWGS_2F (10uM) 1 5 RSVGF-R (10 uM) 1 6 RT-PCR mix 1 7 Total 20 ul",
+    "Addition of 10 µL of the viral extraction",
+    "Amplification protocol GF: A B C 1 48ºC 60 min 2 95ºC 15 min 3 95ºC 30 seg x 45 4 55ºC 2 min 5 72ºC 1 min 6 72ºC 5 min 7 12ºC ∞",
+    "No prior treatment is necessary. However, in samples with high Cts, the use of DNAseI in the sample as a pretreatment can improve coverage."
+  ],
+  "authors": [
+    "Maria Iglesias"
+  ],
+  "creator": "Maria Iglesias",
+  "published_on": 1763571753,
+  "created_on": 1763553786,
+  "keywords": []
+}

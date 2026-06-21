@@ -1,0 +1,30 @@
+{
+  "id": 83151,
+  "title": "Create Mask for Axonal Quantification Analysis with FIJI",
+  "uri": "create-mask-for-axonal-quantification-analysis-wit-cvfpw3mn",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn3b9yl5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"6ucrv\",\"text\":\"This is a protocol describing how to create a quantified mask from an image of fluorescence-tagged axonal projections using FIJI/ImageJ software.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Upload TIFF image of single-channel fluorescent axons to Fiji",
+    "Adjust brightness/contrast (keyboard shortcut: ctrl + shift + C)",
+    "Select Plugins -&gt; Analyze -&gt; Tubeness",
+    "Enter 0.5 for the sigma value",
+    "Synchronize windows: select Analyze -&gt; Tools -&gt; Synchronize windows",
+    "Open thresholding (shortcut: ctrl + shift + T)",
+    "Adjust the thresholding value to your needs",
+    "Select apply and create mask.",
+    "Save created mask as tiff file."
+  ],
+  "authors": [
+    "Oscar Moreno Ramos",
+    "Elizabeth Phelan"
+  ],
+  "creator": "Elizabeth Phelan",
+  "published_on": 1686339619,
+  "created_on": 1686338438,
+  "keywords": []
+}

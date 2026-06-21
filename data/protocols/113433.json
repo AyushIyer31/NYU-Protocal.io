@@ -1,0 +1,35 @@
+{
+  "id": 113433,
+  "title": "Concatenate Sequenced Data for Bioinformatics Analysis",
+  "uri": "concatenate-sequenced-data-for-bioinformatics-anal-dszz6f76",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbr6jnlpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"f1o6g\",\"text\":\"This protocols helps to create concatenated files from a sequenced data.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Go to the server where your sequencing data is stored (e.g., Oxford Nanopore’s EPI2ME or MinKNOW output directory)",
+    "Download only the passed reads (fastq.gz) because failed reads are typically of lower quality and are excluded from most analyses. Extracted all data.",
+    "Make sure all your FASTQ.gz files are stored in one folder for easy access during the concatenation process. Name the files systematically (e.g., sample1.fastq.gz, sample2.fastq.gz) to avoid confusion.",
+    "Open the Galaxy Website Navigate to usegalaxy.org or the Galaxy server you’re using.",
+    "Log In or Create an Account If you don’t already have an account, create one—it’s free! Logging in will save your workflow and results.",
+    "Upload Your Data by clicking Upload data in the Galaxy interface. Drag and drop your FASTQ.gz files into the upload window or select them manually. Wait for the files to be fully uploaded and visible in your Galaxy history panel.",
+    "Concatenate Datasets by searching for &#34;concatenate dataset&#34; tool in the Galaxy tools panel. Use the &#34;Concatenate Dataset (tail to head cat)&#34; option for a fast and straightforward concatenation. Select your FASTQ.gz files in the order you want them concatenated, Run the tool!.",
+    "Download the Concatenated File. Once the process is complete, download the concatenated FASTQ.gz file to your local machine for further analysis.",
+    "Prepare Your Files Make sure all your FASTQ.gz files are in the same folder.",
+    "Unzip the Files. If your FASTQ files are compressed (.gz), unzip them first. You can use a tool like 7-Zip or run the following command in the terminal: bash Copy code gzip -d *.gz",
+    "Open Command Prompt. On your Windows computer, press Windows + R , type cmd, and hit Enter",
+    "Navigate to the Folder. Use the cd command to move to the folder containing your files. For example: cd C:\\Users\\YourName\\SequencingData",
+    "Concatenate the Files. the command line write: type file1.fastq file2.fastq &gt; concatenated.fastq Replace file1.fastq and file2.fastq with the actual file names.",
+    "Recompress the File. If needed, recompress the concatenated file using: gzip concatenated.fastq",
+    "Finish!"
+  ],
+  "authors": [
+    "Dwi Cahyani"
+  ],
+  "creator": "Dwi Cahyani",
+  "published_on": 1733733686,
+  "created_on": 1733156062,
+  "keywords": []
+}

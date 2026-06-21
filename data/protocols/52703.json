@@ -1,0 +1,33 @@
+{
+  "id": 52703,
+  "title": "Sequencing Protocol",
+  "uri": "sequencing-protocol-bxp7pmrn",
+  "doi": "dx.doi.org/10.17504/protocols.io.bxp7pmrn",
+  "description": "{\"blocks\":[{\"key\":\"6ln2m\",\"text\":\"PCR barcoding protocol for ADE samples\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Introduction to barcoding amplicons We/you performed a first PCR using Cox-1 specific primers. These were tailed with the universal sequences given below. This tail is actually a priming site for a second PCR which incorporates the Oxford Nanopore barcode sequences (we called these sequencing identifiers- I didn&#39;t want to call them barcodes and confuse everybody) into our amplicons. Multiple first-round PCR products can be pooled together (for us, this meant putting four specimens in one tube) so that each amplicon sample in the pool receives the same barcode in the second PCR. This paper has a clear version of the plan: Nematode barcoding paper",
+    "Our tailed first round PCR primers look like this: 5’ TTTCTGTTGGTGCTGATATTGC-ggtcaacaaatcataaagatattgg 5’ ACTTGCCTGTCGCTCTATCTTC-taaacttcagggtgaccaaaaaatca The lower case letters are COX-1 primers, the upper case letters are the priming site that the oxford Nanopore barcodes will attach to. The next step illustrates the process",
+    "PCR products purified using SPRI bead clean up. The volume of beads to PCR solution ratio is 0.8 (i.e. 20ul beads into 25ul PCR reaction. Next year, maybe go for 50ul LYS and 50ul PCR volumes in the lab). Elute in a small volume. Using the magnetic 96 well rack, 25 ul is hard to work with, so 50ul is better.",
+    "First round PCR protocol, optimised by Tom: gradient PCR indicated that an annealing temp of 44 degrees C is ideal. Anything above 46 failed, but it worked down to 42 degrees C. The PCR we did in the ADE lab annealed at 44 degrees C, and worked well.",
+    "Prepare the DNA in nuclease-free water. Transfer &lt;100-200 fmol DNA into a 1.5 ml Eppendorf DNA LoBind tube Adjust the volume to 48 μl with nuclease-free water Mix thoroughly by flicking the tube to avoid unwanted shearing Spin down briefly in a microfuge",
+    "Set up a barcoding PCR reaction as follows for each pool: The following is written for LongAmp Taq, but can be adapted for use with other polymerases. We actually used half reactions, so just halve everything %s %s Reagent Volume PCR Barcode (one of BC01-BC12, at 10 µM) 2 µl 100-200 fmol first-round PCR product 48 µl LongAmp Taq 2x master mix 50 µl Total volume 100 µl",
+    "Amplify using the following cycling conditions: %s %s Cycle step Temperature Time No. of cycles Initial denaturation 95 °C 3 mins 1 Denaturation 95 °C 15 secs 12-15 (b) Annealing 62 °C (a) 15 secs (a) 12-15 (b) Extension 65 °C (c) dependent on length of target fragment (d) 12-15 (b) Final extension 65 °C dependent on length of target fragment (d) 1 Hold 4 °C ∞ a. This is specific to the Oxford Nanopore primer and should be maintained b. Adjust accordingly if input quantities are altered c. This temperature is determined by the type of polymerase that is being used (given here for LongAmp Taq polymerase) d. Adjust accordingly for different lengths of amplicons and the type of polymerase that is being used. Oxford Nanopore R&amp;D teams standardly use 8 min for DNA fragmented to 8 kb. For small things like COX1, 60s is enough We went with 17 cycles because some of the initial PCR did not give visible bands, and thus aimed to generate some additional DNA in this second PCR",
+    "Purify the barcoded DNA using SPRI beads.",
+    "Quantify the barcoded library using standard techniques, and pool all barcoded amplicons in the desired ratios. Average concentration was about 12ng/ul, so we took 10ul from each reaction for pooling. Gave us something close 9actuaaly quite a bit more given that we had 60 samples!) enough to the needed 1ug of DNA",
+    "Prepare 1 µg of pooled barcoded libraries in 47 µl nuclease-free water. If using R10.3 flow cells (FLO-MIN111), prepare 1.5 µg instead.",
+    "This pooled library is now ready to be end-repaired and adapted for nanopore sequencing. The only modification from the protocol below will be that we use the 2x ligation buffer to ligate the adapters, which just requires a slightly lower elution vol in the previous step, as per josh&#39;s Zika paper Quick_Zika.pdf . So, elute in 45 ul.",
+    "https://community.nanoporetech.com/protocols/gDNA-sqk-lsk109/v/gde_9063_v109_revad_14aug2019/equipment-and-consumables?devices=minion",
+    "After this, better to just follow the LSK-109 protocol on the ONP web page:"
+  ],
+  "authors": [
+    "Tom Little"
+  ],
+  "creator": "Tom Little",
+  "published_on": 1633542589,
+  "created_on": 1629881188,
+  "keywords": []
+}

@@ -1,0 +1,30 @@
+{
+  "id": 76484,
+  "title": "PacBio Isoseq samples preparation",
+  "uri": "pacbio-isoseq-samples-preparation-cnxcvfiw",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvm25j6g3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"3l8hn\",\"text\":\"This protocol described how to prepare samples for PacBio Isoseq\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "The total RNA was obtained from brain tissue samples using miRNA Easy Mini Kit (Qiagen) . The manufacturer&#39;s instructions were followed step-by-step.",
+    "At the Nation Genomics Infrastructure of Sweden, input QC of samples was performed on the Agilent Bioanalyzer instrument, using the Eukaryote Total RNA Nano kit to evaluate RIN and concentration.",
+    "RNA samples were subsequently put on dry ice and shipped to National Genomics Infrastructure of Sweden.",
+    "The sample libraries were prepared as described in &#34;Procedure &amp; Checklist – Iso-Seq™ Express Template Preparation for Sequel® and Sequel II Systems&#34; (PN 101-763-800 Version 02 (October 2019)) using the NEBNext® Single Cell/Low Input cDNA Synthesis &amp; Amplification Module, the Iso-Seq Express Oligo Kit, ProNex beads (Promega) and the SMRTbell Express Template Prep Kit 2.0.",
+    "300 ng of total RNA was used for cDNA Synthesis followed by 12 + 3 cycles of cDNA Amplification.",
+    "In the purification step of amplified cDNA, the standard workflow was applied (sample is composed primarily of transcripts centered around 2 kb).",
+    "After purification, the amplified cDNA went into SMRTbell library construction.",
+    "Quality control of the SMRTbell libraries was performed with the Qubit dsDNA HS kit and the Agilent Bioanalyzer High Sensitivity kit.",
+    "Primer annealing and polymerase binding was performed using the Sequel II binding kit 2.0.",
+    "Finally, the samples were sequenced on Sequel II and Sequel IIe System using Sequel® II Sequencing Plate 2.0, On-Plate Loading Concentration of 110 pM, movie time 24 hours and pre-extension time 2 hours."
+  ],
+  "authors": [
+    "anita.adami"
+  ],
+  "creator": "Anita Adami",
+  "published_on": 1710516675,
+  "created_on": 1675705322,
+  "keywords": []
+}

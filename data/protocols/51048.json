@@ -1,0 +1,36 @@
+{
+  "id": 51048,
+  "title": "Assembling of  Synoecnema hirsutum  mitochondrial genome",
+  "uri": "assembling-of-synoecnema-hirsutum-mitochondrial-ge-bv4gn8tw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bv4gn8tw",
+  "description": "{\"blocks\":[{\"key\":\"1vr3g\",\"text\":\"Synoecnemahirsutum Timm, 1959 (Ungellidae, Drilonematoidea) found in the body cavity of the pheretimoid earthworm at the border of Laos and Vietnam was redescribed and illustrated. It was molecularly characterised for the first time. It is also the first member of the superfamily Drilonematoidea for whom the mitochondrial genome was obtained.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":18}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "DNA from the frozen nematodes samples was isolated using the QiAmp Micro Kit (Qiagen) according to a standard protocol.",
+    "DNA library preparation was implemented using the NEBNext Ultra II DNA Library Prep Kit for Illumina (New England Biolabs, Ipswich, MA, USA).",
+    "DNA quality was checked with Qubit 3.0, final library length distribution and checking for the absence of adapters was performed using Bioanalyzer 2100 (Agilent, Santa Clara, CA, USA).",
+    "Sequencing was performed on Illumina HiSeq system with a 150 bp read length at the Skoltech Genomics Core Facility (https://www.skoltech.ru/research/en/ shared-resources/gcf-2/).",
+    "The quality of raw reads was evaluated using FastQC (Andrews 2010).",
+    "After filtering by quality, remaining readings were cleared by removing of cDNA synthesis adapters and sequence adapters by processing with the Trimmomatic program.",
+    "De novo assembly was implemented using Velvet (Zerbino et al. 2010) with the default settings.",
+    "The resulting contigs were filtered by length, and contigs with the most similarity in size to mitochondrial DNA were selected. Assembled sequences of protein-coding genes were checked for internal stops in PCGs manually.",
+    "The contigs were annotated using the MITOS web server (Bernt et al. 2013), with the default settings.",
+    "Prediction of protein-coding genes and rRNA genes was done by using a combination of BLAST and MITOS online software. Concatenated nucleotide alignment of 13 protein-coding genes was performed using Geneious Prime 2019.1 (Biomatters Ltd., Auckland, New Zealand).",
+    "Conserved regions in the alignments of the 13 PCGs were selected using the GUIDANCE2 server (Sela et al. 2015).",
+    "Optimal evolutionary models were chosen by PartitionFinder (Lanfear et al., 2012).",
+    "Maximum Likelihood (ML) analysis was performed using IQ-TREE web server (Trifinopoulos et al. 2016) with 10,000 ultrafast bootstrap replicates (Hoang et al. 2018).",
+    "Tree was visualized using TreeView and FigTree v1.4.2 (http://tree.bio.ed.ac.uk/software/figtree/)."
+  ],
+  "authors": [
+    "Elena S Ivanova",
+    "Boris D. Efeykin",
+    " Sergei E Spiridonov"
+  ],
+  "creator": "Boris D. Efeykin",
+  "published_on": 1641485163,
+  "created_on": 1624607758,
+  "keywords": []
+}

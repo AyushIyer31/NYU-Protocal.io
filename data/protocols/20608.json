@@ -1,0 +1,29 @@
+{
+  "id": 20608,
+  "title": "ImageJ Fluorescence Image Composition",
+  "uri": "imagej-fluorescence-image-composition-yc8fszw",
+  "doi": "dx.doi.org/10.17504/protocols.io.yc8fszw",
+  "description": "{\"blocks\":[{\"key\":\"6pmfg\",\"text\":\"This protocol details how to use ImageJ software to create a composite image from fluorescence images taken with a microscope.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"fnoh0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"bqd8b\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"af87b\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"7e0r3\",\"text\":\"Computer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d68n8\",\"text\":\"Fluorescence images\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Go to https://imagej.nih.gov/ij/download.html and download the software corresponding to your operating system.",
+    "Sometimes ImageJ will be hard to find and not show up within your programs. You may have to manually go into your hard drive and open the software from where you downloaded it.",
+    "Open your images that are to be superimposed in ImageJ. This can be done by either: Dragging the file onto the ImageJ window. Clicking File -&gt; Open, and selecting the files.",
+    "Convert each image to 8-bit by clicking on the image, then going to Image -&gt; Type -&gt; 8-bit. Repeat this for each image. Changing image type to 8-bit Make sure each image is now 8-bit. You can see where I have highlighted the image type.",
+    "Merge the images by selecting Image -&gt; Color -&gt; Merge Channels...",
+    "For the various channel colors, choose the image from the drop down menu. Typically, we would do: Red: TRITC Green: FITC Blue: DAPI In this way, each will resemble the original color image.",
+    "Press ok, and you will have a merged image.",
+    "Adjust the image to increase contrast, etc. An easy way to enhance the contrast without much effort is to select Process -&gt; Enhance Contrast... Image after enhanced contrast"
+  ],
+  "authors": [
+    "Kenneth Schackart",
+    "Kattika Kaarj"
+  ],
+  "creator": "Kenneth Schackart",
+  "published_on": 1550683449,
+  "created_on": 1550675124,
+  "keywords": []
+}

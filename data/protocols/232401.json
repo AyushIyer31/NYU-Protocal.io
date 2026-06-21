@@ -1,0 +1,34 @@
+{
+  "id": 232401,
+  "title": "Isolation and hybrid genome assembly of Bacillus subtilis SNUY1",
+  "uri": "isolation-and-hybrid-genome-assembly-of-bacillus-s-he7rb3hm7",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlkyjmdg5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"h8hdu\",\"text\":\"This protocol minimally documents the procedures used to isolate Bacillus subtilis SNUY1 from Doenjang, perform pre-sequencing taxonomic identification (near-full-length 16S rRNA; Sanger), and report DNA concentration and purity measured for whole-genome sequencing. Values are reported as dataset-specific, non-prescriptive information.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"qo04p\",\"text\":\"1. Quantify extracted DNA using the QuantiFluor dsDNA System (Promega) with a Victor Nivo reader (PerkinElmer).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"pr692\",\"text\":\"2. Assess purity with a NanoPhotometer (IMPLEN) to verify the A260/280 ratio.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qscrr\",\"text\":\"3. Representative values for the SNUY1 preparation (approximately 439 ng/μL DNA and an A260/280 ratio of ~1.8) are provided for reference only; actual concentrations may vary depending on strain, sample quality, and instrument calibration.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"sjlgj\",\"text\":\"Agar/broth media: LA/LB, NA/NB, TSA/TSB, MRS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aeiox\",\"text\":\"Sterile distilled water (DW)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9ewua\",\"text\":\"Glycerol (molecular biology grade)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cgzro\",\"text\":\"PrepMan Ultra (Thermo Fisher Scientific)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"uls3q\",\"text\":\"QuantiFluor dsDNA System (Promega) and Victor Nivo reader (PerkinElmer)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bqk8j\",\"text\":\"NanoPhotometer (IMPLEN)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Homogenize 1 g of Doenjang in 9 mL sterile distilled water; perform serial 10-fold dilutions.",
+    "Spread on LA, NA, TSA, and MRS agar; incubate at 30°C and 37°C until well-isolated colonies appear.",
+    "Inoculate picked colonies into 5 mL LB, NB, TSB, or MRS; incubate 24 h at 30°C and/or 37°C (pre-cultures).",
+    "Inoculate the corresponding broth at 1% (v/v) and incubate 24 h (main cultures). Prepare glycerol stocks at 25% (v/v) and store at −80°C. For genome DNA preparation, subculture SNUY1 on TSA and grow in TSB at 30°C.",
+    "Extract DNA from a single colony (PrepMan Ultra; per manufacturer).",
+    "PCR primers: 27F (5′-AGAGTTTGATCMTGGCTCAG-3′), 1492R (5′-TACGGYTACCTTGTTACGACTT-3′). Cycling: 94°C 5 min; 30×(94°C 30 s, 55°C 30 s, 72°C 90 s); 72°C 10 min.",
+    "Sanger sequencing with internal primers 785F (5′-GGATTAGATACCCTGGTA-3′) and 907R (5′-CCGTCAATTCMTTTGAGTTT-3′).",
+    "Analyze the assembled sequence using BLASTN for taxonomic identification. Example result (for reference only): The best match for the tested isolate was Bacillus subtilis (post-assembly ANI using pyani v0.2.7: 99.87% ANI, 98.3% alignment coverage vs GCF_045037735.1).",
+    "Quantify extracted DNA using the QuantiFluor dsDNA System (Promega) with a Victor Nivo reader (PerkinElmer).",
+    "Assess purity with a NanoPhotometer (IMPLEN) to verify the A260/280 ratio.",
+    "Representative values for the SNUY1 preparation (approximately 439 ng/μL DNA and an A260/280 ratio of ~1.8) are provided for reference only; actual concentrations may vary depending on strain, sample quality, and instrument calibration."
+  ],
+  "authors": [
+    "Gwon Mo Yang",
+    "Na Yun Kim",
+    "Donghwa Chung",
+    "Hyo Jin Kim"
+  ],
+  "creator": "erythritol",
+  "published_on": 1763095122,
+  "created_on": 1763084213,
+  "keywords": []
+}

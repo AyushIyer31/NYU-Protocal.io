@@ -1,0 +1,42 @@
+{
+  "id": 97097,
+  "title": "USDA LTAR Common Experiment measurement: Dissolved ammonia (NH3) concentration",
+  "uri": "usda-ltar-common-experiment-measurement-dissolved-da3h2gj6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlk8b61l5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"ftk6n\",\"text\":\"Ammonia can form naturally from organic matter mineralization or can enter the aquatic environment via anthropogenic sources such as municipal effluent discharge and agricultural runoff. The presence of ammonia (NH3) vs. ammonium (NH4+) in water depends on water pH and temperature. The un-ionized NH3 form is toxic to aquatic organisms, and both forms (NH4+ and NH3) can contribute to eutrophication and hypoxia of surface waters. The reported measurement of ammonia in water is typically the total ammonia N (TAN = NH3 + NH4+). The recommended techniques for measuring NH3 in water are the colorimetric salicylate and phenate methods, whereby an indophenol color complex is proportional to the NH3 concentration of the sample.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":214,\"length\":1},{\"style\":\"sub\",\"offset\":233,\"length\":1},{\"style\":\"sub\",\"offset\":300,\"length\":1},{\"style\":\"sub\",\"offset\":356,\"length\":1},{\"style\":\"sub\",\"offset\":365,\"length\":1},{\"style\":\"sub\",\"offset\":519,\"length\":1},{\"style\":\"sub\",\"offset\":525,\"length\":1},{\"style\":\"sub\",\"offset\":573,\"length\":1},{\"style\":\"sub\",\"offset\":698,\"length\":1},{\"style\":\"sup\",\"offset\":234,\"length\":1},{\"style\":\"sup\",\"offset\":357,\"length\":1},{\"style\":\"sup\",\"offset\":526,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"dqcsv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"9bi2r\",\"text\":\"Follow appropriate safety, health, and environmental precautions based on the selected methods, instrumentation, and workflow. Laboratory supervisors are responsible for knowledge of these precautions and their implementation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Return samples to the laboratory On ice and filter them on collection day if possible.",
+    "Filter samples through a 0.45 micrometer (µm) pore-size filter to minimize interference from particulates before chemical analysis. Filters can be either membrane or glass fiber. Occasional checks of filter blanks by filtering deionized water with the same equipment are always prudent. Ammonia is particularly prone to air contamination outdoors or in a lab.",
+    "As samples collected and stored in an autosampler are vulnerable to ammonia loss by volatilization and nitrification, ideally, pre-acidify the samples to pH &lt; 2 (H 2 SO 4 ) and retrieve from the field within seven days of autosampler collection. Ammonia concentrations can change if samples are left in ambient conditions too long, regardless of autosampler refrigeration (Burke et al. 2002).",
+    "If pre-acidification is not possible, retrieve the samples as soon as possible and transport them back to the laboratory On ice .",
+    "As soon as possible after sample collection, filter the water samples through a 0.45 µm pore-size filter to minimize interference from particulates.",
+    "Analyze samples within 24 hours after collection.",
+    "To store samples not pre-acidified in the field, preserve the samples with sulfuric acid to pH &lt; 2, cool them at 4 °C , and hold them for up to 28 days (US EPA, 1993).",
+    "Preserve the samples that are not acidified by freezing to minimize ammonia loss by volatilization.",
+    "Store the water samples for NH 3 analysis until data certification (QA/QC verification). The storage of preserved water samples should not exceed 28 days.",
+    "Direct determination of NH 3 -N without distillation is possible for water samples with low NH 3 -N concentrations.",
+    "Samples with high NH 3 -N concentrations (&gt; 5 mg-N/L) may need to be distilled before analysis to minimize interferences and improve precision (APHA, 2005).",
+    "Salicylate method : Heat the sample with salicylate and hypochlorite in an alkaline phosphate buffer in the presence of sodium nitroprusside (catalyst). The reaction produces an emerald-green indophenol dye proportional to the NH 3 concentration of the sample. The salicylate method has become popular primarily because it is much less toxic and less sensitive to changes in pH.",
+    "Phenate method : In this method NH 3 reacts with alkaline phenol and sodium hypochlorite in the presence of sodium nitroprusside to enhance sensitivity. The indophenol blue dye is proportional to the NH 3 concentration of the sample. The EPA accepts the phenate method for regulatory monitoring (USEPA, 1993).",
+    "The colorimetric determination of ammonia in water is carried out using the salicylate or phenate method. Several automated colorimetric procedures are available from the US EPA and USGS National Water Quality Laboratory (NWQL).",
+    "Dissolved NO 3 - concentration, total dissolved N (TDN), total dissolved P (TDP), and total suspended solids (TSS). These metrics are described in the following protocols: USDA LTAR Common Experiment measurement: Dissolved nitrate (NO3 - ) concentration USDA LTAR Common Experiment measurement: Total nitrogen (TN) and total dissolved nitrogen (TDN) concentration USDA LTAR Common Experiment measurement: Total phosphorus (TP) and total dissolved phosphorus (TDP) concentration USDA LTAR Common Experiment measurement: Total suspended solids (TSS)",
+    "Prepare a calibration curve by plotting the blank-corrected area of each standard peak against its respective NH 3 -N concentration.",
+    "Compute the NH 3 -N concentration in the sample by comparing the sample peak area to the calibration curve. Report the concentration as mg NH 3 -N/L.",
+    "Table 1. Summary of recommendations for the collection and measurement of dissolved NH 3 -Nconcentration. A B C D 1 Attribute Preferred Minimum Comments 2 Spatial scale Field Plot 3 Frequency Event-driven Event-driven More frequent (weekly) measurements can be preferential when the flow regime can increase seasonally or after precipitation events. Sampling in this protocol should be event-driven to enable cross-site comparisons. 4 Covariate metrics NO3-N, TDN, TDP, TSS NO3-N, TDN, TDP 5 Sample preservation and storage Filter with a 0.45 μm pore-size filter (membrane or glass fiber), refrigerate and analyze within 24 hours Filter with a 0.45 μm pore-size filter (membrane or glass fiber), refrigerate, acidify to pH Omit sample acidification if dissolved organic matter (DOM) analyses are performed. Alternatively, use a 0.7 μm GF/F. Use a 0.2 μm pore-size filter to exclude bacteria from samples but at much slower flow rates. 6 Sample analysis Colorimetric salicylate method Colorimetric phenate method 7 Water quantity Discharge or flow rate Discharge or flow rate Calculate NH3-N loads by linking this metric to the water quantity metric “flow” Covariate metrics = other metrics to sample concurrently. NO 3 - -N = nitrate-N; TDN = total dissolved N; TDP = total dissolved phosphorus; TSS = total suspended solids"
+  ],
+  "authors": [
+    "Oliva Pisani",
+    "John L. Kovar",
+    "Robert W. Malone",
+    "Amy J. Morrow",
+    "Kevin J. Cole"
+  ],
+  "creator": "Lori J. Abendroth",
+  "published_on": 1728073963,
+  "created_on": 1709004318,
+  "keywords": []
+}

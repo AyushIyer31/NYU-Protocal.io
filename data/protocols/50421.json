@@ -1,0 +1,31 @@
+{
+  "id": 50421,
+  "title": "Optogenetic experiments with iLID system",
+  "uri": "optogenetic-experiments-with-ilid-system-bvgvn3w6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bvgvn3w6",
+  "description": "{\"blocks\":[{\"key\":\"7kptl\",\"text\":\"This protocol details experiments with the iLID optogenetic system as performed to acutely recruit Miro to mitochondria in https://doi.org/10.1083/jcb.202010004.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":123,\"length\":37}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"B51EEE54C61111EB90790A58A9FEAC02\",\"url\":\"https://doi.org/10.1083/jcb.202010004\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Plate the COS-7 cells for imaging and transfect each MatTek dish (see Cell Culture, Transfection and Imaging Protocol) with the plasmids containing the bait (construct encoding iLID) and the prey (construct encoding SspB peptide). As an example, in the case of Guillén-Samander A, Leonzino M et al 2021 ( https://doi.org/10.1083/jcb.202010004), the plasmids and amounts transfected were: 0.25 ug mCh-Miro1∆TM-SspB 0.5 ug Venus-Mito-iLID 0.8 ug VPS13D^Halo Suggestion : When dealing with an optogenetic pair of constructs encoding a membrane anchored protein and a cytosolic one, we recommend transfecting them in a ratio of 2:1 for membrane: cytosolic proteins.",
+    "After adding the transfection mix, incubate the dishes at 37 °C in the dark for 36:00:00 - 48:00:00 .",
+    "Just before imaging, remove the growth medium and replace with Live Cell Imaging solution (Life technologies).",
+    "Image the cells at 37 °C and 5% CO 2 . Warning: Remember to keep the cells in the dark while handling them and as much as possible while changing the medium. Exposure to light could preactivate the optogenetic system which could affect the interpretation of results.",
+    "Carry out imaging in an Andor Dragonfly system equipped with a PlanApo objective (63X, 1.4NA, Oil) and a Zyla sCMOS camera.",
+    "Identify the cells to be imaged by scanning the dish looking for red fluorescence in the 564nm channel. Remember that looking for green fluorescence would preactivate your sample.",
+    "Image the cells at a rate of 0.5Hz. Acquire the 5 frames before the activation, and achieve the activation with a single 200ms pulse of the 488nm laser. Acquire the 90 frames after activation.",
+    "Carry out imaging in a Nikon Ti-E inverted microscope equipped with an Improvision UltraVIEW VoX system (Perkin Elmer) and a PlanApo objective (63X, 1.4NA, Oil) and controlled by Volocity software (Quorum Technologies).",
+    "Identify the cells to be imaged by scanning the dish looking for red fluorescence in the 564nm channel. Remember that looking for green fluorescence would preactivate your sample.",
+    "Image the cells at a rate of 0.5Hz. Acquire 5 frames before the activation, and achieve the activation by delivering a single 488nm light pulse in a 5 μm2 area using a built-in photo-perturbation unit."
+  ],
+  "authors": [
+    "Andrés Guillén-Samander",
+    "Pietro De Camilli"
+  ],
+  "creator": "Andrés Guillén-Samander",
+  "published_on": 1629216834,
+  "created_on": 1622632408,
+  "keywords": []
+}

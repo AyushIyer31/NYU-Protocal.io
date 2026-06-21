@@ -1,0 +1,34 @@
+{
+  "id": 94900,
+  "title": "Recombinant retroviral expression vectors that encode dominant-negative alleles of EGFR and ERBB2",
+  "uri": "recombinant-retroviral-expression-vectors-that-enc-c8wuzxew",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6x5w1lqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"crslq\",\"text\":\"EGFR and ERBB2 mutant alleles that encode proteins that lack tyrosine kinase activity typically possess a dominant-negative genotype.  Thus, here we describe the construction of recombinant retroviral expression vectors based on pLXSN and pLXSN-HygR.  These recombinant retroviral vectors express EGFR K721A and ERBB2 K753A mutant alleles that encode proteins deficient for kinase activity.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":4},{\"style\":\"italic\",\"offset\":9,\"length\":5},{\"style\":\"italic\",\"offset\":297,\"length\":4},{\"style\":\"italic\",\"offset\":312,\"length\":5}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "We have described recombinant retroviral vectors based on pLXSN that encode a neomycin resistance gene and wild-type EGFR and ERBB2 alleles. Therefore, mammalian cells infected with these constructs are resistant to the antibiotic G418 [1].",
+    "We have also described recombinant retroviral vectors based on pLXSN-HygR that encode a hygromycin resistance gene and wild-type EGFR and ERBB2 alleles. Therefore, mammalian cells infected with these constructs are resistant to hygromycin [2].",
+    "EGFR and ERBB2 mutant alleles that encode proteins that lack tyrosine kinase activity typically possess a dominant-negative genotype. Thus, here we describe the construction of recombinant retroviral expression vectors based on pLXSN and pLXSN-HygR. These recombinant retroviral vectors express EGFR K721A [3-6]and ERBB2 K753A [7, 8] mutant alleles that encode proteins deficient for kinase activity.",
+    "Construction of pLXSN derivatives that encode the EGFR K721A or ERBB2 K753A mutant alleles",
+    "We have previously described the construction of pLXSN-EGFR [1, 9]. We performed traditional site-directed mutagenesis of pLXSN-EGFR to introduce the AA4114GC (A4114G and A4115C) mutations, thereby changing the Lys721 codon (AAA) to an alanine codon (GCA). Simultaneously, we introduced the TCCC4101ACCG (T4101A and C4104G) mutations, thereby creating an AgeI site but silently affecting the Ile716 and Pro717 codons ( pLXSN-EGFR-K721A.dna ). Unfortunately, the primer sequences used to create these mutations have been lost. The predicted sequence of the pLXSN-EGFR-K721A clone has been confirmed by next-generation DNA sequencing (NGS).",
+    "We have previously described the construction of pLXSN-ERBB2 [1, 9]. We performed traditional site-directed mutagenesis of pLXSN-ERBB2 to introduce the AA4015GC (A4015G and A4016C) mutations, thereby changing the Lys753 codon (AAA) to an alanine codon (GCA). Simultaneously, we introduced the A4035G mutation, creating a TaiI (HpyCH4IV) site but silently affecting the Thr759 codon ( pLXSN-ERBB2-K753A.dna ). Unfortunately, the primer sequences used to create these mutations have been lost. NGS has confirmed the predicted sequence of the pLXSN-ERBB2-K753A clone.",
+    "Construction of pLXSN-HygR derivatives that encode the EGFR K721A or ERBB2 K753A mutant alleles",
+    "We have previously described the construction of pLXSN-HygR-ERBB2 ( pLXSN-HygR-ERBB2.dna ) [2]. We used conventional subcloning techniques to replace the 3233 bp AvrII-AseI fragment of pLXSN-EGFR-K721A, which contains the neomycin resistance gene, with the corresponding 3607 bp AvrII-AseI fragment of pLXSN-HygR-ERBB2, which contains the hygromycin resistance gene. This approach resulted in pLXSN-HygR-EGFR-K721A ( pLXSN-HygR-EGFR-K721A.dna ), whose predicted sequence has been confirmed by NGS.",
+    "We used conventional subcloning techniques to replace the 3654 bp NotI-AseI fragment of pLXSN-ERBB2-K753A, which contains the neomycin resistance gene, with the corresponding 4028 bp NotI-AseI fragment of pLXSN-HygR-ERBB2, which contains the hygromycin resistance gene. This approach resulted in pLXSN-HygR-ERBB2-K753A ( pLXSN-HygR-ERBB2-K753A.dna ), whose predicted sequence has been confirmed by NGS.",
+    "1. Riese 2nd, D.J. Recombinant retroviral expression vectors based on pLXSN that encode EGFR, ERBB2, ERBB3, and ERBB4 . protocols.io 2023 [Accessed February 3, 2024]; August 21, 2023:[Available from: https://www.protocols.io/view/recombinant-retroviral-expression-vectors-based-on-261gedd97v47/v1 . 2. Riese 2nd, D.J. and V. Dwivedi. A recombinant retroviral expression vector (pLXSN-HygR) based on pLXSN that confers resistance to hygromycin and pLXSN-HygR derivatives that encode EGFR, ERBB2, or ERBB3 . protocols.io 2023 [Accessed February 3, 2024]; August 23, 2023:[Available from: https://www.protocols.io/view/a-recombinant-retroviral-expression-vector-plxsn-h-j8nlkooq1v5r/v1 . 3. Ge, G., et al., Activation mechanism of solubilized epidermal growth factor receptor tyrosine kinase. Biochem Biophys Res Commun, 2002. 290 (3): p. 914-20. 4. Spivak-Kroizman, T., et al., Heterodimerization of c-erbB2 with different epidermal growth factor receptor mutants elicits stimulatory or inhibitory responses. J Biol Chem, 1992. 267 (12): p. 8056-63. 5. Stoorvogel, W., et al., Sorting of ligand-activated epidermal growth factor receptor to lysosomes requires its actin-binding domain. J Biol Chem, 2004. 279 (12): p. 11562-9. 6. Deng, W., et al., Optimal lysophosphatidic acid-induced DNA synthesis and cell migration but not survival require intact autophosphorylation sites of the epidermal growth factor receptor. J Biol Chem, 2004. 279 (46): p. 47871-80. 7. Messerle, K., et al., NIH/3T3 cells transformed with the activated erbB-2 oncogene can be phenotypically reverted by a kinase deficient, dominant negative erbB-2 variant. Mol Cell Endocrinol, 1994. 105 (1): p. 1-10. 8. Akiyama, T., et al., The transforming potential of the c-erbB-2 protein is regulated by its autophosphorylation at the carboxyl-terminal domain. Mol Cell Biol, 1991. 11 (2): p. 833-42. 9. Riese, D.J., 2nd, et al., The cellular response to neuregulins is governed by complex interactions of the erbB receptor family. Mol Cell Biol, 1995. 15 (10): p. 5770-6."
+  ],
+  "authors": [
+    "Ella Wilson",
+    "Markelle Scott",
+    "Vipasha Dwivedi",
+    "David J Riese II",
+    "Madison Zelan"
+  ],
+  "creator": "David J Riese II",
+  "published_on": 1707429776,
+  "created_on": 1707401275,
+  "keywords": []
+}

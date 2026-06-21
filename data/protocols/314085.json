@@ -1,0 +1,33 @@
+{
+  "id": 314085,
+  "title": "Rotarod",
+  "uri": "rotarod-jwydcpfs7",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gp713pgzp/v1",
+  "description": "{\"blocks\":[{\"key\":\"33d87\",\"text\":\"This protocol describes the assessment of motor coordination and learning in mice using the rotarod test. The procedure includes animal habituation, a training day, and three consecutive testing days with multiple trials per session. Motor performance is quantified by recording latency to fall and maximal rotation speed across trials.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"fdcua\",\"text\":\"Motor coordination was evaluated with a rotarod apparatus.\\nThe first day, mice were pre-trained on the rotarod to reach a stable performance. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ev4oh\",\"text\":\"The next three days, mice were then tested.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"ahcla\",\"text\":\"See the General considerations and habituation protocol. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":8,\"length\":47}],\"data\":{}},{\"key\":\"82lag\",\"text\":\"If experiment is done during the dark cycle, it is preferable to start the behaviour work at least one hour after the light-dark cycle change.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"411FF2745E2C11F1850A0A58A9FEAC02\",\"url\":\"http://dx.doi.org/10.17504/protocols.io.kxygxj834l8j/v1\"}}}}",
+  "warning": "{\"blocks\":[{\"key\":\"e4jk5\",\"text\":\"When the mouse falls on the lever, the recording stops and the experimenter needs to write the time as indicated in respective lanes. Three mice can be placed at a time on the rod. However, it depends on the choice of the experimenter. [if many mice are on the rod, they might fall at different times, and it may be hard to note\\ndown each data point acurately. Note that it is important to be attentive because mice could fall without lower the lever.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"4vt8m\",\"text\":\"Apparatus: Rotarod apparatus, Harvard Apparatus, LE8205, USA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":11}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Mice are acclimated in the room 01:00:00 before the experiment.",
+    "Mice are acclimated in the room 01:00:00 before the experiment.",
+    "Mice are trained to stay on the rotating rod at a constant speed by performing 5 trials.",
+    "Place the mouse on the rod for up to 00:01:00 at 4 rpm, °C, .",
+    "Follow this table to record all the observations during the training phase: %s %s",
+    "Repeat step 2.1 until the mouse stays on the rotating rod at the constant speed (within 5 trials max)",
+    "Mice are tested for 3 trials per day to stay on the rotating rod with an accelerated rotation:",
+    "Place the mouse on the rotarod with an accelerated rotation of 4 rpm, °C, - 40 rpm, °C, in 00:05:00 . Let the mouse on the rod for a maximum of 00:10:00 .",
+    "Between each trial, the mice are kept in their home cage for 00:10:00 as a resting time. The rotarod will be cleaned during this time.",
+    "Repeat 2 more times.",
+    "Record the latency to fall (time) and the RPM max of all 3 trials. %s %s"
+  ],
+  "authors": [
+    "Amandine EVEN",
+    "sriparna.mukherjee",
+    "louis-eric.trudeau Trudeau"
+  ],
+  "creator": "Amandine Even",
+  "published_on": 1780368267,
+  "created_on": 1774825321,
+  "keywords": []
+}

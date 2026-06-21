@@ -1,0 +1,28 @@
+{
+  "id": 21229,
+  "title": "Vandy - Tail-Cuff Blood Pressure",
+  "uri": "vandy-tail-cuff-blood-pressure-yymfxu6",
+  "doi": "dx.doi.org/10.17504/protocols.io.yymfxu6",
+  "description": "{\"blocks\":[{\"key\":\"1p99u\",\"text\":\"Summary:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4s4po\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ed7o8\",\"text\":\"The tail-cuff blood pressure measurement is a non-invasive test and the principle is the same as that of the inflatable blood pressure cuff used in the standard clinic visit. The Visitech system uses an LED light source to detect the pulse signal wave. Since the measurement is sensitive to motion artifact, the procedure requires training sessions to acclimate the mouse to the process. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"d1j8p\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"r969\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"7lv53\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"Gm4YQ\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"L5huH\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":181671,\"guid\":\"41A8C094341F11EE9D4302C0B41BC903\",\"name\":\"BP-2000 System\",\"mol_weight\":0,\"sku\":\"BP-2000\",\"url\":\"http://www.visitechsystems.com/\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":625,\"name\":\"Visitech Systems\",\"link\":\"http://www.visitechsystems.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Turn on the BP-2000 computer and control unit and set the heating platform at approximately 34ºC.",
+    "Place a mouse in the magnetic restraining device on the platform leaving its tail free.",
+    "Insert and slide the mouse tail all the way through the corresponding tail-cuff and tape the tail down.",
+    "Place the LED light sensor cover over the middle of the tail.",
+    "Open the Blood Pressure Analysis software on the computer and set Preliminary Cycles at 5 and Measurement Cycles at 10.",
+    "During the analysis cycle the blood pressure control unit will pressurize and attempt to read a pulse and begin cycles of pressurizing and depressurizing.",
+    "Results will be presented at the end of the measurement cycle.",
+    "Training is repeated in conjunction with data acquisition, with repetition until experimental variability is minimal (typically 3 training sessions)"
+  ],
+  "authors": [
+    "Chee Lim"
+  ],
+  "creator": "Lili Liang",
+  "published_on": 1558014457,
+  "created_on": 1552072713,
+  "keywords": []
+}

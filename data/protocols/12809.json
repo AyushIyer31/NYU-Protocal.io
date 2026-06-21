@@ -1,0 +1,32 @@
+{
+  "id": 12809,
+  "title": "Non-rigid point cloud registration based lung motion estimation using tangent-plane distance",
+  "uri": "non-rigid-point-cloud-registration-based-lung-moti-qrhdv36",
+  "doi": "dx.doi.org/10.17504/protocols.io.qrhdv36",
+  "description": "{\"blocks\":[{\"key\":\"ckt3h\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"ag7d6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"ajj7c\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"bdjk3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Extract dense point clouds F and R from 4DCT images at different phases, and they represent the status of lung surface at different time.",
+    "Simplify point cloud F to point cloud F‘. The scale of F’ should be around 4000.",
+    "Calculate the connectivity matrix M from point cloud F‘.",
+    "Calculate the normal vector information N from point cloud R.",
+    "Simplify point cloud R and its normal vector information N to R‘ and N‘. The scale of R‘ should be around 6000.",
+    "Bring point cloud F‘, connectivity matrix M, point cloud R‘ and normal vector information N‘ to the non-rigid registration procedure, and let F‘, R‘ denote the source point cloud and target point cloud respectively.",
+    "Initial the local affine transformation parameters X.",
+    "Initial the weight value α and the stiffness matrix G.",
+    "Calculate the the derivative of the objective function to the transformation parameters and update the local affine transformation parameters using stochastic gradient descent optimization. Repeat until a convergence criteria is met.",
+    "Output the local affine transformation parameters and the transformed points."
+  ],
+  "authors": [
+    "Fan Rao",
+    "Wen-long Li",
+    "Zhou-ping Yin"
+  ],
+  "creator": "Fan Rao",
+  "published_on": 1538064362,
+  "created_on": 1528272222,
+  "keywords": []
+}

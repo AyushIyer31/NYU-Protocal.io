@@ -1,0 +1,41 @@
+{
+  "id": 7362,
+  "title": "Effect of ActiGraph’s LFE for estimating steps and physical activity intensity",
+  "uri": "effect-of-actigraph-s-lfe-for-estimating-steps-and-jfacjie",
+  "doi": "dx.doi.org/10.17504/protocols.io.jfacjie",
+  "description": "{\"blocks\":[{\"key\":\"e0c9u\",\"text\":\"This study examined the effects of the ActiGraph’s (AG) low-frequency extension (LFE) filter on steps and physical activity classification in the free-living environment.  Thirty-four African-American women (age, 24.5±5.2 years; BMI, 24.9±4.5 kg/m2) had daily activity measured simultaneously with an AG-GT3X+ accelerometer and a New Lifestyles NL-800 pedometer for seven days.  Steps per day (steps/d) and time (minutes/day) spent in sedentary, light, and moderate-to-vigorous physical activity (MVPA) were examined with and without the LFE filter (AG-LFE and AG-N, respectively). The AG-LFE recorded more total steps (13,723±4,983 steps/d) compared to AG-N and NL-800 (6,172±2,838 and 5,817±3,037 steps/d, respectively; p\\u003c0.001).  Compared to the AG-N, the AG-LFE estimated less time in sedentary behaviors (518.7±92.1 vs. 504.2±105.4 min/d, respectively; p\\u003c0.001), and more time in light (247.7±70.4 vs. 279.1±74.7 min/d, respectively; p\\u003c0.001) and MVPA (18.9±16.9 vs. 21.5±18.2 min/d, respectively; p\\u003c0.001), respectively. These data suggest that using the AG-LFE will affect steps and physical activity classifications. Future research should investigate the accuracy of these measures using the LFE filter.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":247,\"length\":1},{\"style\":\"sup\",\"offset\":308,\"length\":1},{\"style\":\"italic\",\"offset\":722,\"length\":1},{\"style\":\"italic\",\"offset\":858,\"length\":1},{\"style\":\"italic\",\"offset\":939,\"length\":1},{\"style\":\"italic\",\"offset\":1003,\"length\":1}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"8h4v3\",\"text\":\"Participants were enrolled in a larger cross-sectional study examining the relationship between daily physical activity intensity, cardiorespiratory fitness, and metabolic risk. As such, participants were excluded for any physical illnesses (cardiovascular or pulmonary disease, uncontrolled hypertension, or diabetes), pregnancy, smoking in the past six-months, or orthopedic disability that would limit their ambulatory function.  In an effort to capture the most typical physical activity measurements for each individual, participants were not permitted to enroll in the study if they were currently participating in any type of exercise or weight loss program that was adopted less than three months prior to entry into the study.  For the present study, participants were also excluded due to monitor failure or not meeting the minimum wear-time criteria.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"9e5g7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"6vjh2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "All participants read and signed an informed consent form stating the nature of the study. The informed consent form and all procedures were reviewed and approved by the University’s Institutional Review Board.",
+    "Body weight (kg) and height (m) were measured using a Tanita® digital beam scale with height rod (Tanita Corporation of America, Inc.; Arlington Heights, IL) in light clothing (e.g. shorts and t-shirt) and without shoes.Body mass index (BMI) was calculated from the measured weight and height.",
+    "An AG-GT3X+ accelerometer (ActiGraph; Pensacola, FL) and a NL-800 pedometer (New-Lifestyles, Inc.; Lees Summit, MO) were used to measure physical activity for seven consecutive days. Both the AG-GT3X+ and the NL-800 were distributed during the first laboratory visit.",
+    "An investigator placed both devices onto a belt that was worn around the participants’ waist at hip level; with the AG positioned on the right side of the belt at the midline of the thigh and the pedometer positioned on the left side aligned with the midline of the thigh.",
+    "To ensure the NL-800 pedometer was recording steps accurately, each participant completed a 20-step test around the laboratory while a researcher counted steps manually. In the event the NL-800 did not record steps accurately (within one step), monitor placement was altered or a new monitor was given to the participant and tested before the device was sealed to blind participants to step counts during the monitoring period.",
+    "Participants were then given specific instructions to wear the belt with monitors attached for seven consecutive days during all waking hours, except during water activities. During the seven-day assessment period, participants were instructed not to alter their typical daily activities.",
+    "Participants were also given an activity log in which they were instructed to record a summary of their daily activities and the time at which they put on and removed the belt each day. At the end of the seven-day monitoring period, study investigators collected the activity monitors and activity logs.",
+    "The AG’s raw data were collected at 60 Hz and uploaded using the ActiLife software (version 6.0). Raw files were converted to counts per minute in two different files using the normal (AG-N) and LFE (AG-LFE) filter.",
+    "Wear time was examined using the procedures of Troiano et al. (6). A valid day was defined as a minimum of 10 hours of wear time and each participant needed a minimum of four valid days to be included in the final analysis.",
+    "Established cut-points were then used to determine minutes spent in sedentary behaviors (&lt; 100 counts/min), and light (100 – 2,019 counts/min), moderate (2,020 – 5,998 counts/min), and vigorous (≥ 5,999 counts/min) physical activity. Due to the low amount of time spent in vigorous physical activity (1.6 ± 3.8 minutes/day), moderate and vigorous physical activity were combined into one variable (MVPA).",
+    "AG measured step counts and time spent per day in sedentary behaviors, light physical activity, and MVPA were then averaged across all valid days for each participant. NL-800 pedometer steps were retrieved and recorded as average steps/day.",
+    "Pearson product moment correlation coefficients were used to examine the nature of the association between the two AG device filters (AG-LFE and AG-N) and the NL-800 for steps/day.",
+    "Differences between devices and filtering conditions (AG-LFE x AG-N x NL-800) were examined using repeated measures ANOVA for steps/day.",
+    "A 2 x 3 repeated measures ANOVA was used to determine differences between the AG devices and each physical activity intensity category (sedentary, light physical activity, and MVPA).",
+    "Pairwise comparisons with Bonferroni adjustments were used to determine where significant differences were located.",
+    "We calculated and report Eta-square (h 2 ) to determine the strength of association between the device pairs.",
+    "Bland–Altman plots were constructed to show the variability of the devices’ error scores. With",
+    "All statistical analyses were conducted with SPSS version 22 for Mac (SPSS, Inc.; Chicago, IL). The alpha level was set at 0.05. All data are presented as mean ± standard deviation (SD)."
+  ],
+  "authors": [
+    "Yuri Feito",
+    "Lyndsey M. Hornbuckle",
+    "Lauren A. Reid",
+    "Scott E. Crouter"
+  ],
+  "creator": "Yuri Feito",
+  "published_on": 1502880035,
+  "created_on": 1502878966,
+  "keywords": []
+}

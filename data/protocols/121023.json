@@ -1,0 +1,42 @@
+{
+  "id": 121023,
+  "title": "Evaluation of antigen binding by CD8+ T cells after in vivo treatment with myeloid derived suppressor cells",
+  "uri": "evaluation-of-antigen-binding-by-cd8-t-cells-after-d2e78bhn",
+  "doi": "dx.doi.org/10.1038/nprot.2007.240",
+  "description": "{\"blocks\":[{\"key\":\"cjf8r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"yj6vx\",\"text\":\"This protocol is adapted from previous work of Dr. Schneck and used to evaluate binding of OT-1 and 2C specific pMHC by CD8+ T cells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"hfrok\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"gpiyj\",\"text\":\"ACK lysing buffer 8.29g NH4Cl (0.15M), 1g KHCO3(10.0mM),                                       37.2 mg Na2EDTA(0.1mM)  Add 800ml H20 and adjust pH to 7.2-7.4, Add H20 to 1L. Filter sterilize and store at RT.\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":26,\"length\":1},{\"style\":\"sub\",\"offset\":46,\"length\":1},{\"style\":\"sub\",\"offset\":105,\"length\":1},{\"style\":\"sub\",\"offset\":130,\"length\":1},{\"style\":\"sub\",\"offset\":164,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"zuscn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"h0xqe\",\"text\":\" Wash buffer PBS+2%FBS+.05% azide\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"0xohg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"xihcn\",\"text\":\"Dimers SIINKb-Ig and SIYKb-Ig dimmers\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qomql\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qapec\",\"text\":\"Biotin-Gr-1 antibody (Pharmingen, CA)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vq2jk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"xpgog\",\"text\":\"Strepatavidin beads (Miltenyi biotech, CA)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"tsys7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6lhrt\",\"text\":\"Specific peptide SIINFEKL and incomplete Freund’s adjuvant \\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eq3jw\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"p2j9q\",\"text\":\"T cell column (R \\u0026 D systems, MN)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"hzxqo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7aarx\",\"text\":\"Magnetic Columns (Miltenyi biotech, CA)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8wpti\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ivqpl\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"0wdnk\",\"text\":\"Centrifuge with temperature control\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vvsc3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bluhl\",\"text\":\"Flow cytometer (BD FacsCalibur)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"judkk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"y2a4z\",\"text\":\"Flow analysis software Flowjo vers 8.2\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Isolate T cells from OT-1 mice using T cell enrichment column and transfer 5-6 X 10 6 cells intravenously into CD45.1 mice.",
+    "Isolate MDSC from 3 week tumor-bearing mice (EL4 or MC38) using biotin-Gr-1 and streptavidin beads (Miltenyi biotech, CA) antibody and transfer 4-5 X 10 6 cells intravenously into mice which have received OT-1 T cells. Immunize mice with SIINFEKL peptide 100 ug in 100 ul PBS plus 100 ul of incomplete Freund’s adjuvant.",
+    "Harvest spleens from mice and prepare a single cell suspension.",
+    "Pellet the cells by centrifugation (1700 RPM 5 min) at room temperature (RT) and aspirate the supernatant.",
+    "Resuspend the pellet in 5 ml/spleen of ACK Lysis Buffer.",
+    "Incubate at RT for 4-5 minutes with occasional shaking.",
+    "Stop the reaction by adding 40-50 μl of PBS.",
+    "Wash the cells with PBS twice (1700 RPM 5 min) at RT.",
+    "Use Cy5 (Molecular probes, OR) labeled SIINKb-Ig and SIYKb-Ig dimers as specific and non-specific MHC-Ig ligands, respectively.",
+    "Prepare a serial dilution (2000 nM – 12.5 nM) of 20 μl of Cy5 labeled MHC-Ig dimer in a FACS tube.",
+    "Adjust cells to a concentration of 10 7 cells/ml in FACS wash buffer.",
+    "Add 10 ul aliquot of cells to the FACS tube with the MHC-Ig dimer.",
+    "Incubate cells with the MHC-Ig dimers for 60-90 min on ice.",
+    "Without any washing add FITC labeled anti-CD8 and PE labeled anti-CD45.1 antibodies to each aliquot.",
+    "Incubate cells for an additional 20 min on ice and wash two times before flow cytometric analysis.",
+    "Specific MHC-Ig staining is calculated by subtracting the non-specific MHC-Ig staining from the total MHC-Ig staining within the population of CD45.1 negative CD8 positive cells.",
+    "Approximately 11 days",
+    "See accompanied paper",
+    "Altered recognition of antigen is a mechanism of CD8+ T cell tolerance in cancer by Srinivas Nagaraj, Kapil Gupta, Vladimir Pisarev, Leo Kinarsky, Simon Sherman, Loveleen Kang, Donna L Herber, Jonathan Schneck &amp; Dmitry I Gabrilovich published in Nature Medicine on 04 Jun, 2007 https://dx.doi.org/10.1038/nm1609"
+  ],
+  "authors": [
+    "Dmitry Gabrilovich",
+    "Srinivas Nagaraj",
+    "Kapil Gupta",
+    "Jonathan Schneck"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1183532304,
+  "created_on": 1183532304,
+  "keywords": []
+}

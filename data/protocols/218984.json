@@ -1,0 +1,30 @@
+{
+  "id": 218984,
+  "title": "In-vitro MDR1-MDCKII permeability assay",
+  "uri": "in-vitro-mdr1-mdckii-permeability-assay-gz4gbx8tx",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvmm6n9v3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"4m12\",\"text\":\"In vitro MDR1-MDCKII permeability assays are used to assess the ability of drug candidates to cross the blood-brain barrier (BBB) and to identify P-glycoprotein (P-gp) substrates and inhibitors. MDR1-MDCKII cells, which express the human P-gp protein, are grown on semi-permeable supports and used in a dual-chamber diffusion system to simulate the BBB. The assay helps determine the apparent permeability coefficient (Papp) and efflux ratios, which can be used to predict brain penetration and identify potential drug interactions with P-gp. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"3nkou\",\"text\":\"Always wear appropriate PPE for this protocol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cescn\",\"text\":\"Refer to Material Safety Data Sheets for additional safety and handling information.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"amrts\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "The MDR1-MDCKII permeability assay is performed using MDCK-MDR1 cells, cultured for 4 days to form a monolayer on 24-well PET inserts.",
+    "For each well, Response ratio = Test peak area /Internal standard peak area Response ratio is compared with the standard curve to determine the concentrations in receiver and donor wells and calculate the apparent permeability. The % recovery is calculated to indicate non-specific binding of the test compound.",
+    "Integrity of monolayer confirmed with TEER &gt; 350Ωcm2 (before assay) and lucifer yellow &lt; 1 x10-6cm.s-1 (after assay).",
+    "The compounds are incubated at 10µM for 2hr at 37ºC, on a orbital shaker to minimise the unstirred water layer effect. Volumes used are 0.4ml in the apical and 0.8ml in the basolateral.",
+    "Test compound is added to apical well (gentle agitation) and transport determined by measuring concentration in basolateral well at 2hr (A → B).",
+    "The efflux ratio is then calculated by comparing the rates of transport in both directions (B → A / A → B) to determine if test compound is an efflux transporter substrate.",
+    "After the 2hr incubation, aliquots are removed from all apical and basolateral wells for analysis by LC-MSMS analysis with internal standard against a standard curve.",
+    "The apparent permeability Papp is calculated according to Papp = (V / (A x Co)) * (dC X dt ) Where V = receiver volume (cm3) A = transwell membrane surface area (cm2) Co= initial donor well concentration dC/dt= rate of concentration change on receiver side (μM.s-1 Efflux = Papp (B to A) / Papp (A to B) Net flux ratio = Efflux ratio with MDCK-MDR1 cells / Efflux ratio with Wild-type cell",
+    "Further parallel incubations performed using Pgp inhibitor (Cyclosporin A) that is co-incubated with test compound to confirm if the transporters are involved. All donor wells contain lucifer yellow. The final solvent concentration is 0.1% DMSO.",
+    "At the same time as A → B incubation, a parallel incubation is also performed where test compound is added to a basolateral well and then measured in the apical well (B → A) at 2hr."
+  ],
+  "authors": [
+    "Nick Lynch"
+  ],
+  "creator": "Nick Lynch",
+  "published_on": 1754228710,
+  "created_on": 1748327926,
+  "keywords": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": 118676,
+  "title": "Comparative Evaluation of Individual and Pooled Sequencing for Population Genomics Assessment",
+  "uri": "comparative-evaluation-of-individual-and-pooled-se-dx5u7q6w",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl8dkr7g2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"2opkd\",\"text\":\"This protocol evaluates individual sequencing (ind-seq) and pooled sequencing (pool-seq) datasets, comparing the results obtained with each method. It investigates the correlation between allele frequencies calculated using both approaches to compare their efficacy. Genetic diversity and population structure are also analyzed using both methods. These comparisons explicitly account for the potential effects of sample size, missing data, sequencing depth, and minor allele frequencies.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9kl04\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"3ke14\",\"text\":\"Plant Material: Seeds from your plant or plant.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":14}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1d7b7\",\"text\":\"- Equipment:  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"62kpr\",\"text\":\"  - Seed germination trays.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8pdb\",\"text\":\"  - NovaDryer-F104 lyophilizer.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"40l4d\",\"text\":\"  - Pipettes, centrifuge, and cold storage facilities. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"66c1k\",\"text\":\"  - Sequencing platform: Illumina Novaseq 6000.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ds18u\",\"text\":\"  - R-compatible system for bioinformatics analysis.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"br424\",\"text\":\"- Reagents:  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fnde\",\"text\":\"  - CTAB buffer for DNA extraction.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"771qm\",\"text\":\"  - Ethanol for DNA precipitation.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dbrug\",\"text\":\"  - Restriction enzymes (PstI and MseI).  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"704a2\",\"text\":\"  - Barcoded adapters and PCR primers.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ubsm\",\"text\":\"  - Library preparation kits (DArTseq‱ protocol).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":37,\"length\":1}],\"data\":{}},{\"key\":\"4dve1\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"FF9EA431D75611EF88550A58A9FEAC02\",\"name\":\":registered:\"}}}}",
+  "steps": [
+    "Germinate seeds under International Seed Testing Association standards.",
+    "Transplant 60 seedlings per accession into trays.",
+    "Allow seedlings to grow until sufficient leaf tissue develops.",
+    "Individual Samples : Harvest 120 mg of leaf tissue from each of the 60 plants per accession.",
+    "Lyophilize all leaf tissue samples for 72 hours using a NovaDryer-F104.",
+    "Extract DNA using the modified CTAB method.",
+    "Digest DNA with PstI and MseI restriction enzymes.",
+    "Ligate barcoded adapters and PCR amplify.",
+    "Pool PCR products for sequencing. Take into acount sequence each pool at depths of 0.9 Mr and 1.5 Mr and individuals to 0.9 Mr.",
+    "Sequence all samples",
+    "Call SNPs using DArTsoft14 software.",
+    "Calculate allele frequencies for individual and pooled samples using R scripts. https://github.com/LucianaGillman/ind-pool-seq-hexaploid",
+    "Compare SNP metrics (e.g., Representativity, CCC) between datasets. https://github.com/LucianaGillman/ind-pool-seq-hexaploid/blob/main/calculation_CCC_REP_2.3.3.R",
+    "Perform population diversity analyses (e.g., expected heterozygosity, genetic distance) using the dartR and BioR packages. https://github.com/LucianaGillman/ind-pool-seq-hexaploid",
+    "Record individual identities of plants in each pool for comparison with individual sequencing.",
+    "Pooled Samples : Combine tissue from 20 randomly selected plants to create a 20-sample pool (6 mg tissue per plant).",
+    "Incrementally add 10 seedlings to form 30-, 40-, 50-, and 60-sample pools, maintaining 4 mg tissue per plant.",
+    "PCR",
+    "Perform ANOVA to assess effects of sequencing depth, sample size, and minor allele frequency thresholds on SNP metrics. https://github.com/LucianaGillman/ind-pool-seq-hexaploid/blob/main/ANOVAS_2.7.R",
+    "Prepare all the sample and paper for shipping."
+  ],
+  "authors": [
+    "Luciana Gillman",
+    "Federico Condon",
+    "Cesar Petroli",
+    "Mercedes Rivas"
+  ],
+  "creator": "Luciana Gillman",
+  "published_on": 1737630186,
+  "created_on": 1737232608,
+  "keywords": []
+}

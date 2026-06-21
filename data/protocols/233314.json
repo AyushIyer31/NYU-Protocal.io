@@ -1,0 +1,32 @@
+{
+  "id": 233314,
+  "title": "Laboratory Protocol: Temperature-Dependent Laser-Assisted Scattering Study in Proton Exchange Membrane Fuel Cells (PEMFCs)",
+  "uri": "laboratory-protocol-temperature-dependent-laser-as-hf4ab3qsf",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvw436zlmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"d45rk\",\"text\":\"To experimentally validate a theoretical model of scattering dynamics and differential cross-section (DCS) inside a PEMFC under self-generated heat, laser-like fields, and scattering particles, and to study the impact of temperature on PEMFC efficiency.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"nmngt\",\"text\":\"- Proton Exchange Membrane (Nafion or equivalent)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"h2yjg\",\"text\":\"- Platinum-coated stainless steel electrodes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"olzbj\",\"text\":\"- Current collector, diffusion layer, gaskets, bolts, nuts\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1sx7j\",\"text\":\"- Electroplating materials: Aqua Regia solution (for 1 mg Pt), electrical power supply (4 V, 45°C)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jjle6\",\"text\":\"- Hydrogen gas generated via electrolysis\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ek6f\",\"text\":\"- Multimeter for voltage/current measurements\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3wlw0\",\"text\":\"- External heat source for controlled thermal conditions\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bzlvq\",\"text\":\"- MATLAB or equivalent software for theoretical computation\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Electrode Preparation: Coat stainless steel electrodes with platinum using electroplating. Electrolyte: 1 mg Pt dissolved in Aqua Regia. Connect electrode to negative terminal; apply 4 V at 45°C for 20 seconds.",
+    "PEMFC Prototype Assembly: Assemble components: PEM, electrode, current collector, diffusion layer, gaskets, nuts/bolts. Active electrode area: 1.5 cm². Hydrogen inlet: 2 mL/min.",
+    "Experimental Environment: Apply thermal condition via external heat source to simulate operating temperature of PEMFC. Assume laser-like photon field generated from electron deceleration.",
+    "Theoretical Computation Define electron wave function at anode: ψ = Ae^{i(kr−ωt)} Modify wave function for laser-like field using Volkov wave function. Incorporate thermal effects using the thermal Volkov wave function. Compute differential cross-section (DCS) using MATLAB: Set parameters: incidence energy 0–20 eV, scattering angle 0–360°, distance 0–50 nm, photon energy 1.17 eV, pulse duration in picoseconds.",
+    "Experimental Measurement Supply H₂ gas via electrolysis at 2 mL/min to the PEMFC prototype. Measure voltage and current using a multimeter. Apply controlled external heat to simulate operating temperature. Record output under varying temperatures. Repeat measurements multiple times (n ≥ 5) for statistical reliability.",
+    "Data Analysis Calculate standard deviation (SD) and standard error (SE): Determine combined uncertainty for prototype measurement (Uv) and thermal condition (Ut): Compare experimental results with theoretical DCS predictions. Analyze effects of PEMFC parameters (voltage, efficiency, charge density) on DCS.",
+    "Ensure consistent electrode coating for reproducible results. Thermal uniformity across PEMFC surface is critical; avoid local overheating. MATLAB computation must include proper Bessel function order and consider non-relativistic approximations. Spin and relativistic effects are neglected."
+  ],
+  "authors": [
+    "Saddam Husain Dhobi",
+    "Kishori Yadav",
+    "Suresh Prasad Gupta",
+    "Jeevan Jyoti Nakarmi",
+    "Ajay Kumar Jha",
+    "saddam "
+  ],
+  "creator": "saddam",
+  "published_on": 1763974572,
+  "created_on": 1763964146,
+  "keywords": []
+}

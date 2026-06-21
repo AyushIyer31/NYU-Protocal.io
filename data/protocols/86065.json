@@ -1,0 +1,27 @@
+{
+  "id": 86065,
+  "title": "FM1-43 endocytic uptake assay in HIPSC derived neurons",
+  "uri": "fm1-43-endocytic-uptake-assay-in-hipsc-derived-neu-cyarxsd6",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4qj52vo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"b611d\",\"text\":\"FM1-43 is a lipophilic styryl dye, nontoxic to the cells, virtually nonfluorescent in aqueous media. The dye will become fluorescent once it binds to the plasma membrane. In neurons that are actively releasing neurotransmitters, these dyes become internalized within the recycled synaptic vesicles, and the nerve terminals become brightly stained. This shows an increase in the fluorescence intensity of FM1-43. When the cells undergo another stimulation (through KCL or electrical) the FM1-43 dye containing vesicles will be released through exocytosis. Thus, resulting in a decrease in the FM1-43 fluorescence intensity.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "FM1-43 dye (Thermo fisher scientific, catalog no: T3163). This dye is available in both live and fixable versions. Also, available in different colors like FM4-64",
+    "mDA, CTX or GABAergic neuron progenitors were plated in 12mm coverslips, precoated with PDL+ Laminin. After 504:00:00 post plating, neurons were subjected to FM1-43 dye uptake. Note: We have not tried in early immature neurons; this experiment was also performed in more mature neurons like 40 days post plating. Some cell types may mature differentially. So, the user must validate the protocol based on their cell type and other experimental conditions.",
+    "ACSF ACSF- containing high KCL (50mM) for stimulation. ACSF- containing no Calcium to prevent spontaneous release. Normal ACSF composition: Standard External (pH 7.4 NaOH) %s %s milliMolarGms/500mlNaCl1404.090 gmsKCl40.150CaCl220.150MgCl220.204TES(HEPES)10(10)1.146(1.191)Glucose50.440",
+    "Transfer the coverslips to normal ACSF. Add 10uM of FM1 43 dye to the cells and wait for 00:10:00 at Room temperature . Remove the dye and add ACSF without calcium and wash for 3 times. At this step, the user may want to add antagonists for AMPA/ NMDA or Na + channel to inhibit spontaneous release. After 3 washes transfer the coverslips to the imaging chamber (for live imaging) or add PFA for fixation.",
+    "After adding 4% PFA wait for 00:15:00 for fixation. Then wash 3 times with PBS. Add Hoechst and incubate for 00:10:00 . Then wash 3 times with PBS and mount the coverslips on slides with Fluoromount G. Image the same day or keep the slides at 4 °C if imaging the next day.",
+    "Transfer the coverslips to normal ACSF. Add ACSF containing high KCL (50mM) for 00:01:00 to stimulate the cells. Then Add 10um of FM1 43 dye to the cells and wait for 00:10:00 at Room temperature to measure the post stimulus induced endocytosis. Remove the dye and add ACSF without calcium and wash for 3 times. At this step, the user may want to add antagonists for AMPA/ NMDA or Na + channel to inhibit spontaneous release. After 3 washes transfer the coverslips to the imaging chamber (for live imaging) or add PFA for fixation. If fixing the cells, follow the same steps as mentioned above in PFA fixation.",
+    "Use ImageJ based program to quantify FM1-43 fluorescence intensity."
+  ],
+  "authors": [
+    "Sakthikumar Mathivanan"
+  ],
+  "creator": "Daniel El Kodsi",
+  "published_on": 1691435877,
+  "created_on": 1691434848,
+  "keywords": []
+}

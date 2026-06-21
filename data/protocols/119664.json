@@ -1,0 +1,34 @@
+{
+  "id": 119664,
+  "title": " Molecular evolution and geographic migration of severe fever with thrombocytopenia syndrome virus",
+  "uri": "molecular-evolution-and-geographic-migration-of-s-dy4q7yvw",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"47i7h\",\"text\":\"In Asia, SFTSV is a pathogen that can trigger a disease with a high fatality rate. Our research comprehensively utilized a large number of SFTSV gene sequences to conduct phylogenetic analysis, explore rearrangement and recombination events, as well as perform discrete phylogeographic analysis. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9ttnb\",\"text\":\"Programs used: IQ-TREE, CD - HIT, BioEdit, Tracer, Recombination Detection Program, BEAST\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Download the required sequences from GenBank. The GenBank accession numbers and relevant information of all sequences are presented in Dataset 1.",
+    "Process all the data using CD - HIT to remove sequences with a similarity of over 99.9%, and thus obtain Dataset 2.",
+    "Phylogenetic analyses are separately performed on the three segments, employing the ClustalW method in BioEdit for sequence alignment.",
+    "Compare the three sequences of the same virus strain based on the genotype data obtained from the &#34;Phylogenetic analysis&#34; section. If the genotypes inferred from the L, M, and S gene segments are different, it is considered a potential reassortant strain.",
+    "Use BEAST 2.4.4 for a series of evolutionary analyses of SFTSV, including the evolutionary rate of the gene, the analysis of the origin time, and the origin place and transmission route.",
+    "Select the S segment for the construction of the maximum clade credibility (MCC) tree and the geographical migration analysis.",
+    "Phylogenetic trees are constructed by maximum likelihood (ML) method using IQtree-2.3.1 comparison of the completed sequences.",
+    "Use the &#34;ape&#34; package in R 4.1.0 to conduct a comparative analysis of the topological structures of the phylogenetic trees of the L, M, and S segments, and classify the genotypes based on the results of the comparative analysis.",
+    "Use the Recombination Detection Program v4.101 (RDP4) software package to analyze the occurrence of recombination events within the SFTSV genome.",
+    "On the basis of Dataset 1, remove the sequences lacking collection location and collection time and the sequences with recombination events, and organize the remaining sequences into Dataset 3.",
+    "After the operation is completed, use Tracer (version 1.7.2) to open the log file to observe the effective sampling of main parameters.",
+    "After BEAST operation, the tree file is initially used together with TreeAnnotator (v1.10.4) to integrate all the information (including all branch lengths, branch times, posterior probabilities, etc.) of all sampled evolutionary trees into one evolutionary tree. Select the aging percentage as 10% to generate the MCC tree.",
+    "Make a topological structure comparison between the MCC tree and the ML tree generated for the S segment using the &#34;ape&#34; package in R 4.1.0."
+  ],
+  "authors": [
+    "Ruyi Sheng",
+    "cheng tianyu"
+  ],
+  "creator": "Ruyi Sheng",
+  "published_on": 1738840706,
+  "created_on": 1738812015,
+  "keywords": []
+}

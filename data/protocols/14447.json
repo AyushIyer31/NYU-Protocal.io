@@ -1,0 +1,28 @@
+{
+  "id": 14447,
+  "title": "Rapid Nuclei Isolation from Human Brain",
+  "uri": "rapid-nuclei-isolation-from-human-brain-scpeavn",
+  "doi": "dx.doi.org/10.17504/protocols.io.scpeavn",
+  "description": "{\"blocks\":[{\"key\":\"e5h10\",\"text\":\"This protocol outlines our preparation of single-cell suspension from surgically acquired fresh human adult brain tissue. This method is adapted from Habib et al1.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":161,\"length\":1}],\"entityRanges\":[],\"data\":[]},{\"key\":\"6jpbm\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6pafc\",\"text\":\"1          Habib, N. et al. Massively parallel single-nucleus RNA-seq with DroNc-seq. Nat Methods 14, 955-958, doi:10.1038/nmeth.4407 (2017).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":20,\"length\":7},{\"style\":\"italic\",\"offset\":86,\"length\":11},{\"style\":\"bold\",\"offset\":98,\"length\":2}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"3gt5v\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"cp2mn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"c4u12\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Prepare Nuclei Suspension Buffer (NSB): For drop-seq: 1x PBS, 0.01% BSA (ultra pure), 0.2U/ul RNAse inhibitor For 10X Genomics: 1X PBS, 1%BSA (ultra pure), 0.2U/ul RNAse inhibitor",
+    "Dounce homogenize tissue samples (smaller than 0.5 cm) or cell pellets in 2 ml of ice-cold Nuclei EZ lysis buffer (Sigma, #EZ PREP NUC-101). Dounce tissue 20-25 times with pestle A, followed by 20-25 times with pestle B while on ice.",
+    "Move sample to a 15 ml conical tube, add 2 ml of ice-cold Nuclei EZ lysis buffer and incubate on ice for 5 min.",
+    "Collect nuclei by centrifugation at 500 x g for 5 minutes at 4°C. Discard supernatant and carefully resuspend nuclei in 4 ml of ice-cold Nuclei EZ lysis buffer. Incubate on ice for 5 minutes.",
+    "Repeat the centrifugation at 500 x g for 5 minutes at 4°C. Resuspend isolated nuclei in 1 ml of NSB, and filter through a Flowmi Cell Strainer (Bel-Art, H13680-0040).",
+    "Stain 10μl of nuclei suspension with DAPI (1:5000) or 0.4% Trypan Blue to count.",
+    "Adjust the volume with NSB to 1000 nuclei/μl (for 10X Genomics) and 300 nuclei/μl (for drop-seq)."
+  ],
+  "authors": [
+    "Fatma Ayhan",
+    "Genevieve Konopka"
+  ],
+  "creator": "Fatma Ayhan",
+  "published_on": 1533313807,
+  "created_on": 1533312888,
+  "keywords": []
+}

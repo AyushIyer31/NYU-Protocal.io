@@ -1,0 +1,29 @@
+{
+  "id": 83532,
+  "title": "Kidney Functional Tissue Unit (FTU) Segmentation",
+  "uri": "kidney-functional-tissue-unit-ftu-segmentation-cvtkw6kw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx3mkog8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"485jo\",\"text\":\"This protocol explains how to apply a segmentation model to autofluorescence microscopy images to find kidney functional tissue units (FTUs). Currently the model allows for segmentation of glomeruli, proximal tubules, thick ascending limb, distal tubules, and collecting ducts. \\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a6ac3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"aheou\",\"text\":\"For performance, a workstation with at least 32 GB of memory is advised and a GPU with 12 GB memory is required for any GPU-based prediction.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Create the python environment needed to run wsimap. See instructions at the wsimap GitHub .",
+    "Configure the segmentation prediction by creating the dataset .yaml file . Add the path to the saved model and images in the configuration file.",
+    "Run the model using the command line from the wsimap directory like so: python scripts/config/instance-predict-from-config-newmodels-multi.py &#34;/path/to/configuration-file-from-step2.yaml",
+    "Collect .geojson segmentations in output folder specified in .yaml file from Step 2. These can be visualized in QuPath."
+  ],
+  "authors": [
+    "Nathan Heath Patterson",
+    "Ellie Pringy",
+    "Katerina V Djambazova",
+    "Melissa Farrow",
+    "Raf Van De Plas",
+    "Jeff Spraggins"
+  ],
+  "creator": "Katerina V Djambazova",
+  "published_on": 1687212694,
+  "created_on": 1686929138,
+  "keywords": []
+}

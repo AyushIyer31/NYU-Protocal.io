@@ -1,0 +1,33 @@
+{
+  "id": 243411,
+  "title": "Protocol for the LC-MS/MS-based proteomics assay of samples generated using the MPLEx method",
+  "uri": "protocol-for-the-lc-ms-ms-based-proteomics-assay-o-hrxtb57np",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ld1jj9l5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"ab6ph\",\"text\":\"This protocol provides details on how the  LC-MS/MS proteomics Data Independent Acquisition (DIA) samples were run for the HubMAP program (HubMAP TMC Lung and Pancreas).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"1ftht\",\"text\":\"Thermo Scientific Orbitrap Astral\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7cirm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Proteins are extracted using a modified Folch extraction (Folch 1957; Nakayasu, et al., 2016) termed MPLEx. The protocol utilized is provided on the protocols.io titled: &#34; Metabolites, Lipids, Protein extraction protocol (MPLEx) &#34;",
+    "Extracted proteins are then processed using a urea/trypsin-based method: &#34; Sample Preparation (Urea/trypsin digestion) for Proteomics - Mammalian Organisms &#34;",
+    "5 µl is injected into the liquid chromatography electrospray ionization tandem mass spectrometry (LC-ESI-MS/MS) system, comprising a Thermo Vanquish Neo with a Thermo Astral mass spectrometer. Note: Vialed samples can be conserved for up to 3 months in a -20 ˚C freezer",
+    "The ESI source parameters are set as follows: spray voltage 2.2 kV in positive ionization mode; capillary temperature 300 °C; S lens RF level 40 arbitrary units.",
+    "The DIA mode parameters are set as follows: - Precursor isolation window 2 m/z ranges - MS range 380-980 m/z - AGC target : 5e5 - HCD collision energy 25% normalized",
+    "MS1 parameters are set as follow: - MS range 380-980 m/z - Resolution 240K - Automatic Gain Control (AGC) target : 5e6",
+    "The column used was a Thermo ES906 column held at a temperature of 45 °C. An injection volume of 5 uL was used.",
+    "All solvents and additives used were LC-MS grade. Mobile phase A (MPA) consisted of 100% water with 0.1% formic acid. Mobile phase B (MPB) consisted of 100% Acetonitrile with 0.1% formic acid.",
+    "The gradient used was the following %s %s",
+    "Calibration is done using Pierce‱ FlexMix‱ Calibration Solution. Mobile phase solvents are topped off between experiment sets (i.e., not during a sample set) to reduce drifting retention times. Blanks are run before the start of every new sample set, and QC (mammalian peptide lysate) is run systematically after every sample set.",
+    "The *.raw files generated are analyzed using DIA-NN. An example of protocol is provided here: &#34; DIA data analysis in DIA-NN against a DDA library generated in FragPipe &#34;"
+  ],
+  "authors": [
+    "Isaac Kwame Attah",
+    "Christopher R Anderton",
+    "Geremy Clair"
+  ],
+  "creator": "Geremy Clair",
+  "published_on": 1772740985,
+  "created_on": 1771265070,
+  "keywords": []
+}

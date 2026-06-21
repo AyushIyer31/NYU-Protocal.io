@@ -1,0 +1,25 @@
+{
+  "id": 2737,
+  "title": "Assembling Viral Metagenomic Data with SPAdes (Cyverse)",
+  "uri": "Assembling-Viral-Metagenomic-Data-with-SPAdes-Cyve-ewrbfd6",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewrbfd6",
+  "description": "{\"blocks\":[{\"key\":\"71cl0\",\"text\":\"Assembling actual reads from the Ocean Sampling Day (2014) using SPAdes, an assembler implemented in Cyverse.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":11,\"length\":6}],\"entityRanges\":[{\"key\":0,\"offset\":33,\"length\":25},{\"key\":1,\"offset\":101,\"length\":7}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"8919F4B513B14C399F1F902AAF756D27\",\"url\":\"https://github.com/MicroB3-IS/osd-analysis\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"BE7390BE135E44A5BE1402FAF62033FB\",\"url\":\"cyverse.org\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"6rc8h\",\"text\":\"This is part of a larger protocol Collection that involves the end-to-end processing of raw viral metagenomic reads obtained from a sequencing facility to assembly and analysis using Apps (i.e. tools) developed by iVirus and implemented within the Cyverse cyberinfrastructure.\\n\\nAssembly is just one part of the big picture!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":34,\"length\":10}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"3vdpk\",\"text\":\"To run this protocol, users must first register for Cyverse account. All data (both inputs and outputs) are available within Cyverse's data store at /iplant/home/shared/iVirus/ExampleData/\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":39,\"length\":8}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"447D622C69AA406CA3A5CD9F79B1BA9E\",\"url\":\"https://user.iplantcollaborative.org/register/\"}}}}",
+  "warning": "{\"blocks\":[{\"key\":\"cv1ae\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Open SPAdes Open SPAdes from &#34;Apps.&#34; a",
+    "Select Inputs Select the &#39;Inputs&#39; tab. For Library1, Paired Reads, reads1 Navigate to Community Data -- &gt; iVirus --&gt; ExampleData --&gt; SPAdes --&gt; Input . Select OSD46_R1_shotgun_workable_PE.fastq Alternatively, copy-and-paste the location: /iplant/home/shared/iVirus/ExampleData/SPAdes/Inputs into the navigation bar and select the fastq file. For Library2, Paired Reads, reads2 Navigate to Community Data -- &gt; iVirus --&gt; ExampleData --&gt; SPAdes --&gt; Input . Select OSD46_R2_shotgun_workable_PE.fastq Alternatively, copy-and-paste the location: /iplant/home/shared/iVirus/ExampleData/SPAdes/Inputs into the navigation bar and select the fastq file. a The read files used in this example can be taken directly from the iVirus&#39; SPAdes input directory on Cyverse, or they can be generated using raw reads from the OSD website and processed using Trimmomatic.",
+    "Select Parameters The default parameters will be sufficient for this example. Of note is the change in &#39;Kmer setting(s)&#39; where we have changed the default (35) to a mixture of 21,33,55. We have found this produces good viral assemblies, though your mileage may vary. Also to note are the fact that the &#39;Input&#39; files are directly dependent on the &#39;Parameters.&#39; In this example we selected 2 paired end files. Each of these are &#39;paired reads&#39; because they have partners, and the &#39;pairing format, library 1&#39; is &#39;paired end.&#39; With other data, users can mix-and-match paired and unpaired reads for up to 5 libraries. a",
+    "Launch Analysis Run the job! Depending on the dataset, this could take hours or days. This sample dataset should only take a few hours. There is a &#34;high-mem&#34; version of SPAdes that may be useful if SPAdes fails andthe reason for failure is insufficient memory . Not all SPAdes failures are due to memory .",
+    "Results Expect results can be found in the SPAdes&#39; &#39;Output&#39; directory. An abbreviated output of important files generated during assembly. The most important files are contigs.fasta and scaffolds.fasta . They contained the assembled sequences (i.e. contigs). You should save this file a Full output when 3 different Kmers are selected..."
+  ],
+  "authors": [
+    "Benjamin Bolduc"
+  ],
+  "creator": "Benjamin Bolduc",
+  "published_on": 1462944310,
+  "created_on": 1461716967,
+  "keywords": []
+}

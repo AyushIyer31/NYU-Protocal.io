@@ -1,0 +1,39 @@
+{
+  "id": 90271,
+  "title": "PVA-based Rat Liver Tumor Phantom for Ultrasound Imaging",
+  "uri": "pva-based-rat-liver-tumor-phantom-for-ultrasound-i-c4d7ys9n",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2lyj95wlx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"1pst7\",\"text\":\"The creation of a PVA-based ultrasound (US) imaging phantom involves a systematic step-by-step process. These US phantoms serve a vital role in the medical field, aiding medical professionals in various ways. They are invaluable for refining ultrasound-guided procedures, enhancing scanning techniques, and improving diagnostic proficiency. Additionally, these phantoms play a crucial role in the training and education of medical apprentices.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aoa43\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"satm\",\"text\":\"Note: We can customize any organ using the provided steps to create our specific PVA-based imaging organ phantom.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "1. 3D printing of the organ : Polylactic Acid (PLA) 2. Mould creation : Silicone liquid rubber with catalyst 3. Phantom fabrication : Milli-Q water, Polyvinyl Alcohol (PVA), Silicon carbide (SiC) Note: We have used 176 ml (88%) of milli-Q water, 20 gm of PVA (10%), and 4 gm (2%) of SiC in 200 ml of the mixture.",
+    "The 3D model of the particular organ has been created using the open-source software Blender. In this protocol, we have considered the rat liver. 3D organ of rat liver phantom with tumor",
+    "We have generated the stereolithography (STL) file of the 3D rat liver organ using Blender and used the open-source software CURA to create the gcode file, which is compatible with 3D printing. Rat liver tumor organ model after 3D printing",
+    "Using the 3D printed model of a rat liver as a base, we create a mould of the organ using silicone liquid rubber and a catalyst, with the following steps:",
+    "The first step involves preparing a holding container for initial pouring of liquid rubber, A mould release agent is first applied on the inner surface of the container and on the outer surface of the 3D- printed organ to ensure its careful release from the mould.",
+    "Moulding clay is then used to secure the PLA-printed organ-positive stencil within the container, preventing its movement during the subsequent steps.",
+    "In a separate container, 97% w/v of silicone liquid rubber is mixed with 3% w/v of the catalyst in a thorough and careful blending process. This well-mixed material is poured gradually into the container holding the 3D-printed organ, ensuring even distribution over the patterned surface.",
+    "The silicone is left to cure for 4-8 hours, with an extended curing time of 24 hours to ensure the desired stability and durability of the final phantom structure to be processed. Rat liver tumor organ model after 3D printing",
+    "Tissue-mimicking phantoms are fabricated based on the protocols of Mercado-Shekhar et al. (2018). The following steps are followed to create a PVA-based rat liver tumor phantom.",
+    "First, we coat the inner surface of the silicone-based organ mould with petroleum jelly to facilitate easy extraction of the phantom from the mould after its end of polymerization.",
+    "Next, we heat the 176 ml of Milli-Q Water using a hotplate until it reaches a temperature of +80°C. Following that, we pour the heated water into a 400 ml beaker, which is then placed in a vacuum chamber under a pressure of −1 bar to degas it.",
+    "The desired amounts of PVA (10%) and SiC (2%) are added to the degassed Milli-Q water and stirred carefully without forming bubbles until a homogeneous solution is obtained. This process is crucial for creating the phantom.",
+    "The mixture is again heated using a hotplate until it reaches a temperature of +90 °C. Subsequently, the solution is transferred to a vacuum chamber, maintained at −1 bar or lower, for a minimum of 5 minutes to facilitate degassing.",
+    "Next, the beaker was sealed with aluminium foil and allowed the solution to settle and polymerize for 30 minutes while it cooled. During this process, a thin film layer of air bubbles developed at the liquid-air interface. We removed the foil when the beaker had reached room temperature (≈27°C).",
+    "The PVA-SiC mixture is poured into the silicone mould, and aluminium foil is used to cover it to prevent the rapid evaporation of moisture content.",
+    "We now commence the freeze-thaw cycles for our phantom. In the case of this imaging phantom, we have employed three cycles. Initially, the phantom is placed in a 4°C refrigerator for 30 minutes. Subsequently, it is transferred to a -20°C freezer for 17.5 hours. Finally, it is removed from the freezer, placed in a +4 °C refrigerator for 4 hours, and then allowed to equilibrate at room temperature for 2 hours. These steps, when implemented together, constitute a single freeze-thaw cycle in the process of phantom creation. Increasing the number of cycles beyond three or four results in the degradation of properties, viz., tensile strength, elongation at break, and thermal stability. In our study, we utilized three freeze-thaw cycles for the rat liver phantom.",
+    "It is recommended that the tumor component of the ultrasound (US) phantom undergo additional freeze-thaw cycles, ideally between 4 to 6 cycles, due to its properties. The tumor was generated using a protocol similar to phantom creation but with the inclusion of additional freeze-thaw cycles. The tumor was placed within a silicone mould at a specified location and secured with adhesive gum before we poured the PVA and silicone solution into the mould. This process led to the fabrication of the PVA-based ultrasound phantom. PVA based rat liver imaging phantom",
+    "We can customize any organ using the provided steps to create our specific PVA-based imaging organ phantom."
+  ],
+  "authors": [
+    "Abhishek Kumar",
+    "Debdoot Sheet"
+  ],
+  "creator": "Abhishek Kumar",
+  "published_on": 1699342620,
+  "created_on": 1698853440,
+  "keywords": []
+}

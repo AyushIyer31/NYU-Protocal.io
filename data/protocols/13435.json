@@ -1,0 +1,28 @@
+{
+  "id": 13435,
+  "title": "Evolutionary Dynamics of Cryptocurrency Transaction Networks",
+  "uri": "evolutionary-dynamics-of-cryptocurrency-transactio-rc3d2yn",
+  "doi": "dx.doi.org/10.17504/protocols.io.rc3d2yn",
+  "description": "{\"blocks\":[{\"key\":\"ck7p\",\"text\":\"In this paper, we apply statistics and network analysis methods to explore the dynamic characteristics of three transaction networks. We download transaction data from the respective blockchain explorers. To the best of our knowledge, these are the largest datasets adopted in cryptocurrency analysis to date. We analyze the growth pattern of the accumulated network and find that unlike most networks, these cryptocurrency networks do not always densify over time. Then based on the datasets, we find that the monthly repetition ratios measured by either node or edge are relatively low. As such, studying the whole accumulated network, as done in most previous work, is not the appropriate way to understand the network dynamics. Hence we focus on coining the dynamics through computing the values of typical network measures on a monthly basis, and make a comparison among the three networks. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"d01ud\",\"text\":\"The program is written using Python 3.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"fss2i\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"84tp0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Sample transaction data files are from the HARVARD Dataverse database (doi:10.7910/DVN/M9K5OJ, 10.7910/DVN/XIXSP, 10.7910/DVN/M9K5OJ). Total data files are from Baidu-Pan (URLs: https://pan.baidu.com/s/1dFi0IFR(password: idox), https://pan.baidu.com/s/1nvwxA7v (password: ydjb),https://pan.baidu.com/s/1kUHklGb (password: c19o)) pltaccnum.py pltavgdeg.py lineregdemo2.py",
+    "The accumulated network size are in .txt file. The number of edges and nodes can be adopted to represent the size of the network, and they indicate the adoption rate and competitiveness of currency. As shown in Fig 2, the growth process can be divided into two phases. Then we investigate the average degree over time to find the network’s tendency to become dense. To gain more insight, we plot the number of nodes versus the number of edges for each cryptocurrency network on a logarithmic scale and fit a line reflecting the overall growth pattern of the network. btcaccnum.txt ethaccnum.txt nmcaccnum.txt pltaccnum.py pltavgdeg.py lineregdemo2.py",
+    "Since the nodes and edges of the networks are changing all the time, we checked the monthly repetition ratio as shown in Fig 5. rptratio.py plotrepratio.py",
+    "Construct the monthly transaction networks to understand the dynamics of the transaction networks. The input is monthly edge, and the output is degree distribution folder and &#39;.coff&#39; files buildgraph.py buildgrapheth.py",
+    "We first check whether the degree distribution of the three representatives can be fitted by the power law. Further, we use the Kolmogorov-Smirnov (KS) test to assess the goodness-of-fit. We plot samples of degree distributions of monthly networks. onlyfit.py plt3-3-pwftfig.py",
+    "We use the in-assortativity r (in,in) and out-assortativity r (out,out) to further investigate how the nodes are mixing by the degree in the network. In general, small values of r are hard to interpret, thus we measure the quantity &lt; knn &gt;, i.e., the average degree of nearest neighbors of nodes with degree k, for the in-degree and out-degree of the last month (October 2017). pltcoffsassort.py calavgnbdeg.py calavgnbdegeth.py pltnbclu.py",
+    "In order to find the evidence for a small-world network, we further compare the average clustering coefficients of networks to a random network with the same degree sequence. pltcoffsclu_1.py",
+    "we measure the relative size and diameter of the LCC in the transaction network. pltcoffslcc.py"
+  ],
+  "authors": [
+    "Jiaqi Liang"
+  ],
+  "creator": "Jiaqi Liang",
+  "published_on": 1530198371,
+  "created_on": 1530195020,
+  "keywords": []
+}

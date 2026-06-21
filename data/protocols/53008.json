@@ -1,0 +1,32 @@
+{
+  "id": 53008,
+  "title": "Estimate of fractal dimension of rat tissues submitted to experimental protocols",
+  "uri": "estimate-of-fractal-dimension-of-rat-tissues-submi-bxzqpp5w",
+  "doi": "dx.doi.org/10.17504/protocols.io.bxzqpp5w",
+  "description": "{\"blocks\":[{\"key\":\"4cdd0\",\"text\":\"Those who are dedicated to the analysis of structural changes in tissues have tried, over time, to seek increasingly \\\"more rigorous\\\" methods to be able to detach themselves from the merely observational and subjective. That is, leaving aside the semi-quantitative scores based on scores that are given to the lesion in a tissue according to its degree of severity. The argument is that the final injury score will depend more on the subjectivity and experience of the observer.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"32pmn\",\"text\":\"With the advent of digital images and programs for their analysis, the application of numerical methods for estimating changes in tissues was greatly facilitated. With them we do not completely suppress the observational, but, to a large extent and if we are rigorous, we can significantly reduce its influence. Thus, in two-dimensional images, we can make direct measurements such as the diameter and length of a gland, its surface, etc., always in previously calibrated systems. We can also estimate the dimensions of structures that are part of a tissue and the spatial relationships between them based on a two-dimensional image. In this case we will use stereology, which uses simple mathematical formulas, but is very time consuming for analysis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7tiff\",\"text\":\"Now, structuralists have realized that the normal components of a tissue or a cell maintain certain spatial relationships and proportionality to each other, which also defines their shapes and textures (complexity), constituting the characteristic histological images of a kidney, liver, uterus, etc. Both the pathology and the functional adaptations alter these normal relationships, which wanted to be estimated through the application of the fractal dimension. The justification is that, when faced with a certain insult or stimulus, the tissue or organ responds “in toto”, not one part yes and another no. The single measurement of diameters, surfaces, etc., while complementary, was always thought to be incomplete because we were missing those changes in the relationships between tissue components or from one cell to another, which provide important additional information.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Histological sections of 0.3 to 0.5 µm are obtained and stained with hematoxylin and eosin.",
+    "Each histological section is photographed in contiguous and successive fields with a total magnification of 100X, obtaining a certain number of digitized images that constitute the map of the tissue surface under study.",
+    "The images obtained must be in tiff or jpg format, with a dimension of 1280 x 960-pixel; 5254 dpi horizontal and vertical resolution; 3-unit resolution and 24-bit depth. Each image was processed prior to fractal analysis, using ImageJ analysis software, included the FracLac plugin (NIH, Bethesda, Maryland, USA).",
+    "The images were transformed into binary images, to later be applied an edge filter that detect local changes of intensity in the image.",
+    "Important biological information can be extracted from the changes detected in the edges of tissues images obtained during a pathological process (e.g., corners, lines, curves, etc).",
+    "Original digitized image from tissue staining with hematoxylin and eosin. This method of analysis is independent of the optical system calibration. The same image after binarized. After application of Canny filter, we obtain a drawing line image from the original one. Finally, the data presented from FracLac for ImageJ analysis software, shows an appearance like this.",
+    "Depending on the type of microscopic structure to be analysed, other magnifications can also be used. The advantage of the fractal dimension analysis is that do not need previous calibration of the microscopic system employed.",
+    "Edges typically occur on the boundary between two different regions in an image and the detection of these define a drawing line. In this sense, the goal of edge detection is producing a line drawing of a scene from an image of that scene. Frequently, these features are used by higher-level computer vision algorithms (e.g., recognition).",
+    "The Canny edge detector is the method employed for producing a line drawing of a scene from a tissue image. It was developed by John F. Canny in 1986 and has been widely applied in various computer vision systems. The method is a filter included in imageJ analysis software.",
+    "Finally, FracLac plugin scan the drawing edges obtained from the a digitalized tissue image, delivering principally two important variables: fractal dimension and lacunarity."
+  ],
+  "authors": [
+    "Gabriel Cao MD, PhD",
+    "Graciela Ottaviano",
+    "Francisco Capani PhD"
+  ],
+  "creator": "Gabriel Cao MD, PhD",
+  "published_on": 1725088774,
+  "created_on": 1630931549,
+  "keywords": []
+}

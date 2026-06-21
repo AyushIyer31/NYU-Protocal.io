@@ -1,0 +1,30 @@
+{
+  "id": 13889,
+  "title": "Transcriptomics",
+  "uri": "transcriptomics-rs9d6h6",
+  "doi": "dx.doi.org/10.17504/protocols.io.rs9d6h6",
+  "description": "{\"blocks\":[{\"key\":\"31ud5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"dadgi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"3tdaf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"5hmaf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "RNA was extracted from female third instar wandering larvae sourced from the side of the bottle that had developed on 1:2 and 1:16 P:C diets (4 replicates per mitotype-diet combination) using TruSeq kit (Illumina, CA, USA) with poly(A) pull-down",
+    "RNA quality was verified by Agilent Bioanalyser (Agilent Technologies, CA, USA) with all samples having an RNA Integrity Number greater than 8",
+    "Samples were sequenced on an Illumina Hiseq2000 sequencer at the Ramaciotti Center to produce 100 bp paired-end reads",
+    "At least 80 million read pairs were generated per sample. Reads were mapped to the NCBI D. melanogaster genome GCF_000001215.4_Release_6_plus_ISO1_MT using the Subread aligner [195] and assigned to genes using featureCounts",
+    "Genes were filtered as not expressed if they failed to achieve at least 0.25 counts per million in at least 4 samples. Trimmed means of M-values (TMM) scale normalisation was applied and read counts were transformed to log2-counts-per-million using the edgeR package",
+    "Statistical bioinformatics analysis used the limma package",
+    "To adjust for unwanted nuisance technical effects, extra surrogate variables were estimated by performing a singular value decomposition of the residuals, with emphasis on highly variable genes. Differential expression between groups was assessed using empirical Bayes t-statistics allowing for an abundance trend in the standard errors and for robust estimation of the Bayesian hyperparameters",
+    "Benjamini-Hochberg’s method was used to control the false discovery rate (FDR).",
+    "KEGG pathway analyses were conducted using the kegga function in limma.",
+    "To produce heatmaps, log-count-per-million values were first batch corrected using removeBatchEffect()."
+  ],
+  "authors": [
+    "Wen Aw"
+  ],
+  "creator": "Wen Aw",
+  "published_on": 1541606769,
+  "created_on": 1531979224,
+  "keywords": []
+}

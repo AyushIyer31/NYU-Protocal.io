@@ -1,0 +1,35 @@
+{
+  "id": 28113,
+  "title": "Dinoflagellate transformation",
+  "uri": "dinoflagellate-transformation-7prhmm6",
+  "doi": "dx.doi.org/10.17504/protocols.io.7prhmm6",
+  "description": "{\"blocks\":[{\"key\":\"40ppm\",\"text\":\"Protocol of dinoflagellate cell transformation\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":46}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"buqdb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"2g1cs\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"3vec8\",\"text\":\"We have trouble shot many conditions and found that tolerance glycerol concentration, BASTA concentration, and electroporation setting (pulse strength, number of cycles, duration of each cycle) vary with species. We also found that BASTA is powerful for killing dinoflagellate cells, but it also affects the viability of cells; therefore, we use \\\"pulse-chase\\\" approach to enhance viability while repressing growth of untransformed cells.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Cultivate Fugacium kawagutii (formerly Symbiodinium kawagutii ) cells in L1 medium with an antibiotic cocktail for 3-4 weeks and Alexandrium catenella cells in L1 with antibiotics for 1-2 weeks. (Final antibiotic concentration is 0.1 mg/ml for Ampicillin, 0.05 mg/ml for Kanamycin and 0.05 mg/ml for Streptomycin).",
+    "Harvest cells by centrifugation at 800g for 5 min at 4°C.",
+    "For F. kawagutii cells, use 0.1M EDTA to resuspend the cell pellet, centrifuge at 800 g for 2 min at 4°C.",
+    "Wash cells with 10% Glycerol 3-4 times, centrifuge at 800 g for 2 min in 4°C. We also use 384mM D-sorbitol and it works well too.",
+    "Resuspend the pellet in 10% Glycerol with final cell concentration at 10 6 to 10 8 /ml.",
+    "Incubate ~40µl of cells with 5µl (~1µg) of DNA or with 5µl of 10 mM Tris-HCl (control) on ice for 5 min.",
+    "Put cells into a 0.2 cm cuvette, mix well with finger, electroporate using SHS (2.0 kV, 1 pulse), SC2 (1.5 kV, 1 pulse), or DIC (1.0 kV, 2 pulses, 1.0 msec) program with Bio-Rad MicroPulser 165-2100.",
+    "Add 1mL of L1 medium with antibiotics to the 0.2 cm cuvette, mix well, and transfer to a 1.5 mL tube, mix well and separate to different wells of a 12-well plate (with BASTA and without BASTA), add additional L1 medium with antibiotics to a total volume of 2 mL.",
+    "Incubate the 12 well plate in 25°C for F. kawagutii and 15°C for A. catenella for 24 hours.",
+    "Add BASTA to the final concentration of 0.5-0.67 mg/ml for F. kawagutii and 0.07-0.1 mg/ml for A. catenella .",
+    "Observe cells under normal and epifluorescent microscope in 1-3 days and continue to monitor for several weeks.",
+    "Plasmids designed and used for F. kawagutii and A. catenella were DinoIII- bsr, DinoIII- pat , the previously described DinoIII- gfp (Sprecher et al., 2019), and vectors used in previous studies (Ortiz-Matamoros et al., 2015a; Ortiz-Matamoros et al., 2015b)"
+  ],
+  "authors": [
+    "Lu Wang",
+    "Brittany Sprecher",
+    "Huan Zhang",
+    "Senjie Lin"
+  ],
+  "creator": "Senjie Lin",
+  "published_on": 1569444637,
+  "created_on": 1569443657,
+  "keywords": []
+}

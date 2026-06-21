@@ -1,0 +1,43 @@
+{
+  "id": 56737,
+  "title": "Perfusion Live Microscopy Using Zeiss LSM 780 and Ibidi Perfusion Sets with SPY650 DNA Dye",
+  "uri": "perfusion-live-microscopy-using-zeiss-lsm-780-and-b3m9qk96",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"b5dvu\",\"text\":\"Step by step protocol for setting up live microscopy experiments with Ibidi perfusion sets\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"b5iqn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Check whether HUVECs in T25/T75 are confluent",
+    "Gelatinize 2 or 3 Ibidi 0.4 luer u-slides with 0.2% gelatin in water",
+    "Bring trypsin, PBS, media and FBS to to 37C inside cell culture incubator",
+    "Trypsinize dish and count cells. A minimum of 500k cells are needed for 2 slides",
+    "Seed slides with HUVECs at a density of 2.25 million/mL, with 100 uL volume",
+    "Add 120 uL of EGM2 media with antibiotics 20 to 30 minutes after seeding.",
+    "Put one pair of male luer couplers, 2 sets of syringes and 1 set of male extenders(for live microscopy, there are some on my bench. Basically 2 tubes inside a pipette tip box) inside the incubator for overnight degassing",
+    "Dilute 1:1000 SPY650 DNA in CO2 independent media(500 uL total volume for 2 slides, 220 uL per slide and incubate in incubator for 20 mins",
+    "Prepare one set of ibidi flow unit by adding 7 mL of CO2 independent medium dye mix (4 mL on left syringe, 3 on right). Extend the male coupling with the tubes in the extra coupling box. You should have slightly elongates tubes in a tube&gt;male adaptor&gt;female joiner&gt;extra tube&gt;male coupler&gt;luer female coupler order",
+    "Aspirate medium from the slides and add 250 uL of previous mix into each slide. Incubate at 37C for 1-2 hours",
+    "Bring the perfusion pump, laptop, 2 medium sized pipette tip boxes and the flow unit to the microscopy room(use the carts)",
+    "Set up the flow unit inside the incubator while setting the pump and the incubator outside. The best way to do this is putting two pipette tip boxes on the bottom right part of the chamber and then setting up the flow unit on top of these boxes, making sure that the setup is stable. Continue with connecting the air tube and electric cable, there is a stage exit for such cables. Turn on microscope and incubator and open ZEN. Calibrate, pinch test and start running at 37C but without CO2",
+    "Bring one slide and a plastic clamp to the microscopy room. While clamped carefully connect the slide to the unit. Dry couplings as usual with kimwipe",
+    "Wipe both sides of the slide with isopropanol as well as the objective",
+    "On ZEN, withdraw the imaging setup from an image in Anna/210709_Wt_flow",
+    "Turn on Definite Focus. Click Find Surface/Focus",
+    "Check focus on Live and make necessary manual focusing adjustments and click store focus",
+    "Check whether definite focus is on for focus strategy, enable definite focus for every tile scan",
+    "Check that Tile scan is set to 3x3 and that a 250+ frame timed capture will be done, change autosave to stream",
+    "Start experiment. If possible, check whether everything is in focus after the first 10 minutes",
+    "After 24 hours, dismantle the flow unit. You can bring the unit with the it to the 4C room and I can take it apart and clean afterwards.",
+    "In 7 mL Co2 independent media, dilute 3.5 uL SPY650 dye(1:2000 final concentration)",
+    "Set Stiching overlap option to 10% overlap"
+  ],
+  "authors": [
+    "Emir Bora Akmeriç"
+  ],
+  "creator": "Emir Bora Akmeriç",
+  "published_on": 1641809370,
+  "created_on": 1641809118,
+  "keywords": []
+}

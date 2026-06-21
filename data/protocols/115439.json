@@ -1,0 +1,41 @@
+{
+  "id": 115439,
+  "title": "Protocol of the article &#34;Seashell powder as a sustainable alternative in cement-based materials: a systematic literature review&#34;",
+  "uri": "protocol-of-the-article-34-seashell-powder-as-a-su-duyp6xvn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj99d5lk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"cbbu9\",\"text\":\"This protocol is part of a systematic literature review aimed at critically analyzing and synthesizing the current body of knowledge on the reuse of seashells as a partial replacement for cement in the production of cementitious composites. The review emphasizes the characteristics of the shells examined, the processing methods utilized, the dosage levels implemented, and the laboratory tests conducted.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6lnn4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f26o4\",\"text\":\"Although previous literature reviews on this subject exist, we have identified a need for a systematic review that provides a structured and comprehensive synthesis of studies. This approach allowed the extraction and organization of reported data, clarifying the effects of shell incorporation on these materials and understanding the potential of seashells as sustainable construction materials.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Defining the terms of interest using the acronym PICo (Population, Interest, Context) A B C 1 Criteria Description Synonyms 2 Population Seashells Seashell waste; Mollusk seashell; Seashell powder 3 Interest Application in cementitious composites Cement paste; Mortar; Concrete 4 Context Replacing cement Cement replacement; As binder",
+    "Preparing the generic string with the relevant terms of interest (seashell OR seashell waste OR mollusk shell OR seashell powder OR seashell ash) AND(cementitious composites OR cement paste OR mortar OR concrete) AND (cementreplacement OR replacing cement OR binder replacement OR as binder)",
+    "Selection based on data collection Databases with collections focused on building and construction: Engineering Village - https://www.engineeringvillage.com/home.url?redir=t American Society of Civil Engineers - https://www.asce.org/ Databases with comprehensive collections: Science Direct - http://www.sciencedirect.com Web of Science - https://www.webofscience.com/wos/woscc/basic-search Scopus - https://www.scopus.com/home.uri Google Scholar - https://scholar.google.com.br/",
+    "Modifying the generic string to fit the structure of each database search engine %s %s",
+    "Criteria for including files for evaluation: IC1: The study presents the search terms in the title, abstract, and keywords. IC2: The study was published between 2013 and 2023. IC3: The study is classified as a primary study (not purely a review). IC4: The study was published as a scientific article in a journal. Criteria for excluding files during selection: EC1: Duplicate study between databases. EC2: The study was published before 2013. EC3: The study is not classified as primary research but as a literature review. EC4: The study was published in conference proceedings, books, or other non-journal publications. EC5: Access to the full study is unavailable or only accessible for a fee. EC6: The study does not address the use of seashells in any cementitious composite as a total or partial substitute for cement*. *This review did not include studies investigating geopolymers, alkali-activated mixtures, and replacing limestone in cement production. Quality requirements: 1. The methodology described in the study is inconsistent or incomplete.2. The characterization of the seashell is inconsistent (basic characterization data is missing).",
+    "Quality assessment checklist The following checklist was used to evaluate the quality criteria of the articles, where mandatory items must be present, considering the nature of the studies. The additional items, marked as “extra” will serve as parameters to assess the level of detail, robustness, and overall study quality. QA1: Does the study&#39;s methodology provide at least basic information regarding the following dosage details? Proportion of the mix (mandatory) Materials used in the mix (mandatory) Type of cement (mandatory) Quantities of each material per mix (extra) Detailed specifications of the materials (extra) QA2: Is the seashell characterized at least in basic terms in the study, including the following items? Chemical composition with key elements (mandatory) Physical properties such as shape, specific gravity, surface area, etc. (mandatory) Description of the origin location (extra) Microstructural analysis (extra)",
+    "Conducting searches in databases by utilizing modified search strings and implementing inclusion criteria as limiting factors.",
+    "Downloading the data acquired from the search in both .bib and .ris formats, complete with associated metadata.",
+    "Uploading .bib and .ris files to the Rayyan platform ( https://www.rayyan.ai/ ) for selection based on exclusion criteria.",
+    "Identifying duplicate files and performing an initial screening by reviewing the title, abstract, and keywords to apply the exclusion criteria.",
+    "Verification of full-text availability for the files selected during the initial screening, followed by an in-depth selection based on the content analysis of the articles to determine eligibility according to the exclusion criteria.",
+    "Conducting the quality assessment of the articles approved during the in-depth content analysis to ensure compliance with quality criteria.",
+    "Searching for articles within the references of the selected articles to broaden the results, with the identified articles undergoing the same selection process as outlined in steps 9 to 13.",
+    "Definition of the selected articles for data synthesis and addressing the proposed questions.",
+    "Defining the guiding questions for the review What processing procedures have been applied in studies utilizing seashells as partial replacements for cement in cementitious composites? What are the physical and chemical properties of the seashell powder used in these replacements? What are the most commonly used substitution levels and types of cement? How does the addition of shell powder impact the properties of the produced composite?",
+    "Extraction of qualitative and quantitative data for grouping and reporting through descriptive statistics.",
+    "Extracted data storage in Excel tables and analyzed using R Studio software.",
+    "Reporting the results following the PRISMA statement recommendations ( https://www.prisma-statement.org/prisma-2020-checklist ).",
+    "Addressing the proposed questions based on the analyses."
+  ],
+  "authors": [
+    "Alison Lopes da Silva",
+    "Emilia Rahnemay Kohlman Rabbani",
+    "Mahmoud Shakouri"
+  ],
+  "creator": "Alison Lopes da Silva",
+  "published_on": 1736848150,
+  "created_on": 1734103725,
+  "keywords": []
+}

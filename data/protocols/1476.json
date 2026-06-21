@@ -1,0 +1,34 @@
+{
+  "id": 1476,
+  "title": "Prophage induction in marine Synechococcus",
+  "uri": "Prophage-induction-in-marine-Synechococcus-dpc5iv",
+  "doi": "dx.doi.org/10.17504/protocols.io.dpc5iv",
+  "description": "{\"blocks\":[{\"key\":\"co8s2\",\"text\":\"This protocol gives a method for prophage induction in marine Synechococcus.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":62,\"length\":14}],\"entityRanges\":[],\"data\":[]},{\"key\":\"3vpvh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"e4vst\",\"text\":\"Paul, J. H., and M. Weinbauer. 2010. Detection of lysogeny in marine environments, p. 30–33. In S. W. Wilhelm, M. G. Weinbauer, and C. A. Suttle [eds.], Manual of Aquatic Viral Ecology. ASLO.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"asmkf\",\"text\":\"Materials\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":[]},{\"key\":\"fvv05\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"90c0n\",\"text\":\"Sterile 96 well microtiter plates \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8bqdp\",\"text\":\"Indicator host culture (i.e., Synechococcus WH7803)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"a27tk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4mnrh\",\"text\":\"References\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":[]},{\"key\":\"9tpnj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4el91\",\"text\":\"Hurley, M. A., and M. E. Roscoe. 1983. Automated statistical analysis of microbial enumeration by dilution series. J. Appl. Bacteriol. 55:159-164.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3j3i2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"1him4\",\"text\":\"Suttle, C. A., and A. M. Chan. 1994. Dynamics and distribution of cyanophages and their effect on marine Synechoccus spp. Appl. Environ. Microbiol. 60:3167-3174.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9h976\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6sv9c\",\"text\":\"Weinbauer, M. G., and C. A. Suttle. 1996. Potential significance of lysogeny to bacteriophage production and bacterial mortality in coastal waters of the Gulf of Mexico. Appl. Environ. Microbiol. 62:4374-4380.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"7ses6\",\"text\":\"The samples for prophage induction are pretreated by the technique of viral reduction (Weinbauer and Suttle 1996).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"fniov\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Filter each sample through a 0.2-µm filter to a volume of approximately 5 mL to remove most of the ambient viruses.",
+    "Add virus-free (0.02-µm filtered) water prepared from the same sample and reduce the volume a second time.",
+    "Return the retentate to its original volume by adding virus-free seawater, dividing into aliquots, and incubating with and without inducing agent.",
+    "Amend treated samples with the inducing agent mitomycin C at a concentration of 1 µg/mL or with the inducing agent of choice.",
+    "Employ the most probable number (MPN) method to enumerate the cyanophage population (Suttle and Chan 1994).",
+    "Prepare a one- to five-dilution series of the environmental or prophage induction treatment sample using 96-well microtiter plates (Costar, Corning Inc.).",
+    "Freshly dilute a susceptible Synechococcus host 1:10 and place in each well.",
+    "Prepare control plates similarly using sterile SN media in the first column of wells.",
+    "Prepare three replicate treatment and control plates from each site.",
+    "Incubate the plates until good growth of the host organism is evident (10–14 days).",
+    "Score wells as positive for virus if lysis of the host organism is evident as a well clearing.",
+    "Calculate viral abundance for each plate using an MPN program (Hurley and Roscoe 1983).",
+    "Evaluate treatment and control cyanophage and Synechococcus counts by paired t test between samples using Minitab statistical software.",
+    "Perform comparison of induction results and environmental parameters using linear regression and X 2 analysis, also using Minitab."
+  ],
+  "authors": [
+    "John H. Paul and Markus Weinbauer"
+  ],
+  "creator": "Verve Team",
+  "published_on": 1455051050,
+  "created_on": 1440537848,
+  "keywords": []
+}

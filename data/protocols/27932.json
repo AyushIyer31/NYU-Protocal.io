@@ -1,0 +1,32 @@
+{
+  "id": 27932,
+  "title": "Organization for Lab Data using Bash",
+  "uri": "organization-for-lab-data-using-bash-7h4hj8w",
+  "doi": "dx.doi.org/10.17504/protocols.io.7h4hj8w",
+  "description": "{\"blocks\":[{\"key\":\"9atvi\",\"text\":\"Organization is important in the IPA and MSBIL\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Organization is crucial in Bash and in our lab. Bash operates through directories, therefore we must be precise when storing raw data, intermediate steps, and finished images. *NOTE: Never process data in the raw data directory. Copy the raw data to a new directory in case issues occur. Always keep the original data!",
+    "Log onto the HPC web interface using the https://dx.doi.org/10.17504/protocols.io.7ezhjf6 protocol. If you are using the linux box, then follow the https://dx.doi.org/10.17504/protocols.io.62whgfe protocol.",
+    "For our lab all of our data is to be precisely organized with in the data folder. Here, things will further be broken down based upon project, development, ect...it is important that you know where the data set you are working on is to be stored. If you are unsure, ask someone to avoid later confusion. This protocol will follow an example project &#34;TEST&#34; so that it is easy to see how to organize your files.",
+    "Go to the lab&#39;s research group if you are not already currently there: cd /rsgrps/hutchinsone",
+    "Check your working directory: pwd",
+    "Going into the Data file cd Data/",
+    "If you need to know the files under your current directory, type: ls This should list all the contents in your current location. We will go into projects for this example. cd Projects/",
+    "If the data you are working with is for a new project or does not associate with any other pre-existing data, you may want to create a new directory. mkdir EXAMPLE",
+    "Go into your new directory and add these new directories. cd EXAMPLE/ mkdir TEST mkdir Raw",
+    "Copy your raw data from the hutchinsone/Data/Raw directory to your new Raw file within your project. cd rsgrps/hutchinsone/Data/Raw cp make_believe_data.tif /rsgrps/hutchinsone/Projects/EXAMPLE/Raw",
+    "From here you may want to think about how to further organize your data. For example: Sample name Ex. Vivo In. Vivo Control Injury type Contrast agents/dyes Image processing steps Final Images",
+    "As stated before organization of your data is important. Especially with our type of data where it is easy to mix up files, and it is hard to figure out the sorting later. Any information you can include about your data in titles or the in folder names should be done to avoid later confusion. If you are confused about the Bash commands used in this protocol or want to know more, please refer to this cheat sheet https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/bash.sh"
+  ],
+  "authors": [
+    "Courtney Comrie"
+  ],
+  "creator": "Courtney Comrie",
+  "published_on": 1569203132,
+  "created_on": 1568948170,
+  "keywords": []
+}

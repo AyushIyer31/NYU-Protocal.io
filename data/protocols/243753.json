@@ -1,0 +1,38 @@
+{
+  "id": 243753,
+  "title": "Vascupaint Perfusion and Micro-CT Imaging",
+  "uri": "vascupaint-perfusion-and-micro-ct-imaging-hsahb6ab7",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv55o9nv1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"hin0\",\"text\":\"Micro-CT is one of the imaging tools to study biological samples. Vasculature plays an important role in tissue health and disease progression. We aim to identify vascular remodeling at the murine knee joint due to aging and joint diseases. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"jrom5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"r2d9j\",\"text\":\"- Blunted 25-gauge syringe (BD PrecisionGlide, #305122)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mjn0p\",\"text\":\"- 1x PBS / 20 U/mL heparin (Mckesson, #63739092025)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ay6r5\",\"text\":\"- 10% neutral buffered formalin (Leica, #3800598)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jjqfn\",\"text\":\"- Vascupaint™ (MediLumine Inc, MDL-121)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2ucgd\",\"text\":\"- Silicone\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"sgiup\",\"text\":\"- Diluents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5bub9\",\"text\":\"- Catalyst\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7u0ie\",\"text\":\"- 1% low melt agarose in ddH2O\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ltxid\",\"text\":\"- 5 mL plastic vial (Axygen Scientific, ST-5ML)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"xywzq\",\"text\":\"- SkyScan 1276 CMOS EDITION\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mqpod\",\"text\":\"- NRecon Reconstruction software (Bruker Micro CT, Kontich, Belgium)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ubrc9\",\"text\":\"- Imaris software V10.2.0 (Oxford Instrument UK)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"kixr6\",\"text\":\"- Adobe Illustrator\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Anesthetized mice using vaporized isoflurane until they were unresponsive to noxious stimuli.",
+    "The following day, the leg was removed from the spine near the hip joint.",
+    "Micro-CT images were obtained using a SkyScan 1276 CMOS EDITION (at the Molecular Imaging Core at the University of Virginia School of Medicine).",
+    "Acquired images were then reconstructed using NRecon Reconstruction software (Bruker Micro CT, Kontich, Belgium).",
+    "Afterward, open the chest of the animal, the rib cage reflected, and the right atrium exposed.",
+    "Then, transcardially perfused 8 mL of warm 1x PBS /20 U/mL heparin (Mckesson, #63739092025) through the left ventricle using a blunted 25-gauge syringe (BD PrecisionGlide, #305122), followed by 8 mL of 10% neutral buffered formalin (Leica, #3800598), and then 1 mL Vascupaint™ (MediLumine Inc, MDL-121). Vascupaint™ was prepared as follows: 1 mL silicone, 2 mL diluent, and 40 μL catalyst.",
+    "The skin and fur were removed.",
+    "Hindlimbs were then embedded in 1% low melt agarose in ddH2O in a 5 mL plastic vial (Axygen Scientific, ST-5ML) to inhibit movement of the sample during imaging and to prevent tissue shrinkage from dehydration.",
+    "Scans were performed using the following parameters: source voltage and current (60 kV and 80 μA), an exposure time of 471 milliseconds, an angular rotation step of 0.3°, an imaging voxel size of 9 μm³, and an Al filter of 0.25 μm. The distance of X-ray to object was set to 199.98 mm.",
+    "Micro-CT Tiff files were loaded in NRecon software",
+    "The preview setting was selected.",
+    "Background noise was reduced using the slider on the histogram in the output window to reduce background noise and ring artefacts.",
+    "The &#39;HU&#39; and &#39;Scale&#39; tab were unchecked, but the ROI was selected.",
+    "The new set of &#39;tiff&#39; files was then saved in a separate folder.",
+    "The saved NRecon tiff files were imported into Imaris software V10.2.0 (Oxford Instrument UK) using the import file series function in Imaris to create a 3D volumetric image.",
+    "Next, the bone was masked by using the surface creation function in Imaris using the machine learning algorithm to mask the signal from the bone by setting the voxel within the surface to zero and un-checking the box for determining voxel size outside the surface.",
+    "The vessels were then traced using the filament tracing function in Imaris and the tracing was color-coded based on vessel diameter for visualization."
+  ],
+  "authors": [
+    "Azeez O. Ishola",
+    "Joshua Wythe"
+  ],
+  "creator": "Azeez O. Ishola",
+  "published_on": 1773038767,
+  "created_on": 1771605837,
+  "keywords": []
+}

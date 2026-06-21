@@ -1,0 +1,32 @@
+{
+  "id": 10103,
+  "title": "Three-dimensional computerized forensic craniofacial reconstruction (CCFR)",
+  "uri": "three-dimensional-computerized-forensic-craniofaci-m4xc8xn",
+  "doi": "dx.doi.org/10.17504/protocols.io.m4xc8xn",
+  "description": "{\"blocks\":[{\"key\":\"63dvp\",\"text\":\"A description of to how to produce and evaluate three-dimensional computerized forensic craniofacial reconstructions (CCFR) using Horos, Blender, Cloud Compare, MakeHuman and Picassa computer programs.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"3d1cu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"d5bd2\",\"text\":\"You need download the software programs: Horos, Blender, MakeHuman, CloudCompare and Picasa.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2gtq0\",\"text\":\"You need a computed tomography (CT) of the skull of the alive person.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"bgoe9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "DICOM files from computed tomography (CT) scans were reconstructed using the Horos program, a clinical imaging data viewer, to produce 3D sufaces of the subject&#39;s skin and skull .The files were saved and exported as .STL files.",
+    "The generated STL file of the skull was imported into Blender. The 3D model of the skull was positioned in reference to the Frankfurt plane. a",
+    "The soft tissue markers (pegs) were placed perpendicularly over skull’s surface. We used soft tissue thickness from a study of a Brazilian sample that reports a table with male and female values for 10 mid-sagittal points and 11 bilateral points with in a total of 32 referenced landmarks. In this figure, for example, the menton peg is being placed. a",
+    "The shape and position of the eyes, nose and mouth also followed pre-established parameters: - Eyes: eyeballs of 24mm in diameters were placed inside the orbital cavity so that the eyeball and pupil were located within the orbits, 4 mm from the roof and 4-5 mm from the lateral wall. Eyeball protrusion was established as tangents from the margins of the orbital cavity crossing only the iris portion of the eye. The endocanthus of the eye, was placed 2 mm lateral to the lacrimal bone crest at its middle and the exocanthus approximately 3-4 mm medially from the malar tubercle. For the CCFR’s, the eyelids were modeled closed as the CT exams of the subjects were performed in the same position. a - Nose: the maximum width of the piriform cavity represents approximately 3/5 of the maximum width of the nose. The tip of the nose was estimated to be at the crossing point of two lines: the nasal bone projection and a perpendicular line from the prosthion projection, in a 90º. a - Mouth: The inter-canine distance is estimated as 75% of the total mouth width. The height of the lips vermillion is 26% of the width. The lower and upper lip intersection should be placed in the lower section of the upper central incisor. a",
+    "In a forensic investigation, the anthropological examination will estimate the age, sex and ethnic group of the human remains. Using this information a 3D face model template (skin latyer) was selected as appropriate from the MakeHuman database. a",
+    "The chosen 3D model (skin layer) template generated in MakeHuman was exported as an STL file and imported into Blender where it was placed over the skull model to be reconstructed. The 3D skin model template was altered to fit the skull. a",
+    "The CT skin 3D model was imported and placed as “reference” and the CCFR as “compared” and the software calculated the distances between the two point clouds. Sequentially, we used the “cut” tool to eliminate any lateral or lower parts that could be observed only in one of the models. a",
+    "In the field “people” in Picasa the standardized frontal facing photographs of each subject were inserted and named. Frontal facial images captured from the CT soft-tissue model and from the CCFR were inserted into the database. Once the “people” field is calibrated by the imported images, the program can automatically scan existent ones. Consequently one of the four events occurs: 1- the image is not recognized as a face; 2 the image is recognized as a face but not a matching to any “people” (classified as unnamed); 3- the image is correlated to a known person and confirmation may be asked; 4- the image is incorrectly matched to the wrong person."
+  ],
+  "authors": [
+    "Geraldo Elias Miranda",
+    "Caroline Wilkinson",
+    "Mark Roughley",
+    "Thiago Leite Beaini",
+    "Rodolfo Francisco Haltenhoff Melani"
+  ],
+  "creator": "Geraldo Miranda",
+  "published_on": 1520866374,
+  "created_on": 1518016310,
+  "keywords": []
+}

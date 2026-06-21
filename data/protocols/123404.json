@@ -1,0 +1,32 @@
+{
+  "id": 123404,
+  "title": "Dephosphorylation of phosphorylated Rab GTPases by PPM phosphatases",
+  "uri": "dephosphorylation-of-phosphorylated-rab-gtpases-by-d4rk8v4w",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl8d4j7g2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"6uhli\",\"text\":\"This protocol describes our method to measure phosphoRab GTPase dephosphorylation using purified phosphoRab GTPases and PPM family phosphatases. We include our protocol for generation of phosphatase substrates by phosphorylation of Rab GTPases by MST3 kinase.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"2lf7r\",\"text\":\"purified Rab10 and Rab12 GTPases\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5h8mn\",\"text\":\"purified PPM1H, PPM1M phosphatases\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dmgt3\",\"text\":\"purified His-MST3 kinase\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3965f\",\"text\":\"reaction buffer (50 mM HEPES pH 8, 100 mM NaCl, 5 mM MgCl2, 100 μM GTP, 0.5 mM TCEP, 10% glycerol)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":57,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"2blsb\",\"text\":\"phosphorylation buffer (50 mM HEPES pH 8, 100 mM NaCl, 5 mM MgCl2, 2 mM ATP, 100 μM GTP, 0.5 mM TCEP, 10% glycerol)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":64,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fu9k9\",\"text\":\"SDS sample buffer (250 mM Tris-HCl, pH 6.8, 30% glycerol (v/v), 10% SDS (w/v), 0.1% bromophenol blue (w/v), 10% 2-Mercaptoethanol (BME) (v/v))\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1e9kr\",\"text\":\"rabbit anti-pRab10 (ab230261)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9plp1\",\"text\":\"rabbit anti-pRab12 (ab256487) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"95c13\",\"text\":\"4–20% Criterion TGX Precast Midi Protein Gel (Bio-Rad 56710954)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cugdm\",\"text\":\"Ni-NTA agarose (Qiagen 30210)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Mix desired amounts of purified untagged Rab GTPase and His-MST3 kinase at a 3:1 (Rab:MST3) molar ratio in phosphorylation buffer (50 mM HEPES pH 8, 100 mM NaCl, 5 mM MgCl 2 , 2 mM ATP, 100 μM GTP, 0.5 mM TCEP, 10% glycerol)",
+    "Incubate for 2 hours at 27°C or overnight at 4°C.",
+    "For each time point, plan to use a 15 µL reaction volume containing 1.5 µM pRab and 50 nM or 100 nM of PPM phosphatase in reaction buffer (50 mM HEPES pH 8, 100 mM NaCl, 5 mM MgCl 2 , 100 μM GTP, 0.5 mM TCEP, 10% glycerol). Scale accordingly.",
+    "Pass the reaction through a 1 mL syringe column containing Ni-NTA (100 µL of a 50% slurry) to separate phosphoRab (pRab) from His-MST3 kinase. The flowthrough is your phosphorylated Rab GTPase. YAY!",
+    "Add your calculated amounts of pRab and reaction buffer from step 4 to a new reaction tube, on ice.",
+    "Label sufficient tubes for each reaction condition and/or timepoint(s) and add 5 µL 5X SDS sample buffer (250 mM Tris-HCl, pH 6.8, 30% glycerol (v/v), 10% SDS (w/v), 0.1% bromophenol blue (w/v), 10% 2-Mercaptoethanol (BME) (v/v)) to each tube.",
+    "Start the reaction by addition of the appropriate amount of PPM enzyme from step 4 to the reaction tube. Mix well and immediately take out 15 µL for your 0 min time point sample. Transfer this sample to the 5 µL aliquoted sample buffer. Allow the rest of your reaction to incubate in a 30°C water bath.",
+    "In a kinetic experiment, at each timepoint, remove the reaction tube from the water bath and mix well. Take out 15 µL and immediately mix it with the 5 µL aliquoted sample buffer. Put the reaction tube back in the 30°C water bath.",
+    "Repeat step 8 until you have completed all of your time points.",
+    "You will have 20 µL total volume to load for gel analysis. Load all of the sample on a gel and follow this protocol for Western blot analysis ( dx.doi.org/10.17504/protocols.io.bsgrnbv6 ). Protein samples are resolved on a 4–20% Criterion TGX Precast Midi Protein Gel (Bio-Rad) and transferred onto nitrocellulose membranes as described therein. For antibodies, pRab10 (ab230261) and pRab12 (ab256487) antibodies are used. All primary antibodies are detected using LICOR secondary antibodies and visualized using the LICOR Odyssey DLx imager. Protein levels are analyzed using the gel scanning plugin on ImageJ. Phosphatase activity is measured as the decrease in phosphoRab levels as a function of time or enzyme concentration."
+  ],
+  "authors": [
+    "Claire Chiang",
+    "Ayan Adhikari",
+    "Suzanne R Pfeffer"
+  ],
+  "creator": "Claire Y Chiang",
+  "published_on": 1740774180,
+  "created_on": 1740533523,
+  "keywords": []
+}

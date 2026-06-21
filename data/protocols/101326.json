@@ -1,0 +1,36 @@
+{
+  "id": 101326,
+  "title": "Acetone precipitation (SDS samples)",
+  "uri": "acetone-precipitation-sds-samples-de7n3hme",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzjjz4lx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"89on9\",\"text\":\"Protocol for detergent clean-up of protein lysates using acetone precipitation. Optimised for samples containing SDS.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"a7np0\",\"text\":\"Start with cell lysates of known protein concentration which have been prepared for clean-up following cell lysis protocols.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9skd9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"91o95\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"5o791\",\"text\":\"This protocol makes use of acetone. Handle with care. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"65vs8\",\"text\":\"Dithiothreitol (DTT; Promega, V3151)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c61rl\",\"text\":\"Iodoacetamide (IAA; ?)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ubfh\",\"text\":\"Trypsin (Thermo, 90058)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"185jq\",\"text\":\"Acetone (stores)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"569e\",\"text\":\"Ethanol (stores)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"67n9d\",\"text\":\"Tris or TEAB\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5aq7i\",\"text\":\"1.5ml lobind (Eppendorf, 0030108116)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Start with protein lysate of known protein concentration (e.g determined using BCA assay) which have been prepared for clean up to deplete contaminating detergents e.g lysed, DNA degraded, BCA assay, optionally reduced and alkylated. For preparation of samples following traditional pH 8 reduction alkylation, see &#34; Whole cell plate lysis and prep (pH 8, reduction, alkylation) &#34; For preparation of samples using acid lysis, see &#34; Whole cell plate ACID lysis and prep &#34;",
+    "Sample appropriate amount of protein into a lobind tube e.g 20ug (recommend &lt;=30ug as our home made C18 tips have a 30ug maximum capacity). Ensure to adjust protein concentration taking into account dilution due to addition of DTT and IAA",
+    "Add x4 volumes of cold acetone (80%) and incubate O/N at -20°C to precipitate protein ( # Leave it in the freezer overnight)",
+    "Centrifuge at 15000 rcf for 10 mins at 4°C, remove supernatant Ensure you remove the whole supernatant to prevent SDS contamination and use p200",
+    "Add 500ul (or 1ml if you have a large or particularly dirty sample) of cold acetone (stored at -20°C). Invert tube 3 times to wash residual SDS. Ensure this volume is larger than initial sample volume Break pellet up with pipette tip if you are cleaning a very large pellet, but is not necessary if only ~30ug.",
+    "Incubate at -20°C for at least 1 hour",
+    "Centrifuge 15000 rcf 10 mins at 4°C, remove supernatant",
+    "Add 500 ul cold acetone, invert tube 3 times and incubate at -20°C for at least 1 hour",
+    "Centrifuge 15000 rcf 10 min at 4°C, remove supernatant",
+    "Add 500 ul cold ethanol, invert tube 3 times and incubate at -20°C for at least 1 hour. The use of ethanol in the last step is to remove acetone, otherwise it is recommended to air dry the pellet to evaporate acetone. A wet pellet resuspends better during digest, and residual trace ethanol is not problematic.",
+    "Centrifuge 15000 rcf 10 min at 4°C, remove supernatant",
+    "Resuspend pellet in 100 ul 50mM Tris pH 8.1 or TEAB pH 8.5 with 1/80 trypsin (# So for 20ug of protein sample, 0.25 ug of trypsin , but our trypsin is in 0.5ug/ul so in 0.5 ul we have 0.25ug, So for 19 samples 0.5 x 19 which is 9.5 ul). (Add 9.5 ul of trypsin to buffer and add 100 ul to each sample).",
+    "Incubate on thermomixer O/N at 37°C 400 RPM (#leave it for 3/4 hours and after that yes I",
+    "Add an additional 50ul (same buffer as before) with an additional 1/80 trypsin (final 1/40)",
+    "Incubate for ~3 hours, 37°C 400 RPM. If time allows, the initial digest may be done for several hours and additional trypsin overnight instead. A single step digest works, but the two step digest is found to have lower trypsin missed-cleavages, presumably because it takes time to dissolve the protein pellet.",
+    "Proceed to C18"
+  ],
+  "authors": [
+    "Victoria Munro"
+  ],
+  "creator": "Victoria Munro",
+  "published_on": 1761667843,
+  "created_on": 1717681717,
+  "keywords": []
+}

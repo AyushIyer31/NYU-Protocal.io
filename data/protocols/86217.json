@@ -1,0 +1,35 @@
+{
+  "id": 86217,
+  "title": "Analyzing oxygen consumption of isolated mitochondria using the Seahorse XFe96 analyzer",
+  "uri": "analyzing-oxygen-consumption-of-isolated-mitochond-cyfhxtj6",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4qj6zvo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"8vmgm\",\"text\":\"Protocol for analyzing oxygen consumption of isolated mitochondria using the Seahorse XFe96 analyzer.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Seed cells in 10 cm plates aiming for a confluency of ~80-90% at the time of treatment.",
+    "Add 200 µL of Seahorse XFe calibrant solution to each well of a Seahorse (Agilent) cartridge plate, and incubate Overnight at 37 °C in a CO2-free incubator.",
+    "Isolate mitochondria (see previously published protocol) with the following modifications: at harvesting, scrape cells into ice cold modified isolation buffer (70 mM sucrose, 210 mM mannitol, 1 mM EGTA, 0.5% w/v BSA (fatty acid free), 5 mM HEPES pH 7.2), store cell pellets on ice prior to homogenization, store mitochondrial samples on ice, and immediately assay mitochondrial samples after quantification (frozen mitochondrial stocks cannot be used for oxygen consumption analysis).",
+    "Quantify mitochondria by bicinchoninic assay",
+    "Aliquot out 15 µg of mitochondria per sample, diluting each aliquot to a final volume of 25 µL in mitochondrial assay solution (MAS: 70 mM sucrose, 220 mM mannitol, 10 mM KH2PO4, 5 mM MgCl26H2O, 1 mM EGTA, 0.1% w/v BSA (fatty acid free), 2 mM HEPES pH 7.2), and leave the samples on ice until needed.",
+    "Pre-chill a Seahorse sample plate on ice",
+    "Make up the substrate solution (10 mM Glutamate, 10 mM malate in MAS buffer) and place at 37 °C in a CO2 free incubator for at least 01:00:00",
+    "To the equilibrated cartridge plate, load 20 µL of 20 millimolar (mM) ADP, 22 µL 50 ug/uL oligomycin, 24 µL of 10 micromolar (µM) FCCP, 26 µL of 40 micromolar (µM) of Antimycin A into the corresponding ports of each well.",
+    "Incubate the cartridge at 37 °C in a CO2-free incubator for 00:45:00 , and begin the calibration sequence on the Seahorse XFe96 analyser so that it’s completion corresponds with step 13 (takes ~ 00:30:00 ).",
+    "Centrifuge the plate at 2000 rcf, 4 °C, 20 minutes , and place the plate on ice until required.",
+    "During step 9, add a 25 µL aliquot of mitochondria to each corresponding well of the pre-chilled Seahorse sample plate.",
+    "Add 155 µL of pre-warmed substrate solution to each sample well.",
+    "Eject the calibration plate from the analyser and replace it with the sample plate.",
+    "Run the following protocol on the analyser: Basal (3 min mix, 3 min measure, 3 min mix, 3 min measure) ADP (injection, 30 sec mix, 3 min measure) Oligomycin (injection, 30 sec mix, 30 sec wait, 3 min measure) FCCP (injection, 20 sec mix, 3 min measure) Antimycin A (injection, 30 sec mix, 3 min measure)",
+    "If analyzing mitochondrial respiration across multiple days, perform step 2 of day 1 the day before the time point analysis, and perform step 3 – 14 on each day of the time course with the appropriate vehicle-treated controls each day."
+  ],
+  "authors": [
+    "Louise Uoselis"
+  ],
+  "creator": "Louise Uoselis",
+  "published_on": 1691561564,
+  "created_on": 1691561153,
+  "keywords": []
+}

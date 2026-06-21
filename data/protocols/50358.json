@@ -1,0 +1,28 @@
+{
+  "id": 50358,
+  "title": "DNA Short-insert Library Construction Protocol for Illumina HiSeq 2500/4000/X Ten or NovaSeq",
+  "uri": "dna-short-insert-library-construction-protocol-for-bvewn3fe",
+  "doi": "dx.doi.org/10.17504/protocols.io.bvewn3fe",
+  "description": "{\"blocks\":[{\"key\":\"a17l0\",\"text\":\"HiSeq DNA pair-end library construction is used for DNA sequencing on Illumina HiSeq 2500/HiSeq 4000/HiSeq X Ten/ and NovaSeq sequencers. The insert size of the DNA fragments can be 300bp, 350bp and 500bp.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"i4qvo\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"46rp8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"image\",\"mutability\":\"\",\"data\":{\"guid\":\"6207574E341F11EE9D4302C0B41BC903\",\"height\":735,\"is_video\":false,\"legend\":\"{\\\"blocks\\\":[{\\\"key\\\":\\\"fddtt\\\",\\\"text\\\":\\\"DNA pair end library construction workflow\\\",\\\"type\\\":\\\"unstyled\\\",\\\"depth\\\":0,\\\"inlineStyleRanges\\\":[],\\\"entityRanges\\\":[],\\\"data\\\":{}}],\\\"entityMap\\\":{}}\",\"mime\":\"image/png\",\"nestedSelector\":null,\"original_name\":\"DNA pair end pooling library construction workflow.png\",\"placeholder\":\"https://content.protocols.io/files/dqhgbjitx.jpg\",\"shadow\":false,\"source\":\"https://content.protocols.io/files/dqhebjitx.jpg\",\"webp_placeholder\":\"https://s3.amazonaws.com/protocols-files/files/dqhfbjitx.webp\",\"webp_source\":\"https://content.protocols.io/files/dqhdbjitx.webp\",\"width\":373}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Fragment Genomic DNA 1 µL genomic DNA was randomly fragmented using a Covaris ultrasonicator. The fragmented DNAs were tested by Gel-electrophoresis, then purified using an paramagnetic bead based AxyPrep Mag PCR clean up Kit.",
+    "End Repair The fragmented DNAs were combined with the End Repair Mix, incubated at 20 °C for 00:30:00 . The end-repaired DNA is then purified with a AxyPrep Mag PCR clean up Kit.",
+    "Add A-Tails to the 3’ end The repaired DNAs are combined with the A-Tailing Mix, incubated at 37 °C for 00:30:00 . The DNA needs to be purified again with an AxyPrep Mag PCR clean up Kit.",
+    "Adapter Ligation and Pooling Illumina adapters are ligated to the Adenylated 3&#39;Ends of the DNA, incubated at 16 °C for 16:00:00 . Purify the Adapter-ligated DNAs with AxyPrep Mag PCR clean up Kit. The concentration is measured by a Caliper high-throughput Bioanalyzer.",
+    "Fragments Selection The PCR products are selected by agarose gel electrophoresis with target fragments. Purify the gel with a QIAquick Gel Extraction kit (QIAGEN). Re-dissolve the appropriate amount of Elution Buffer and attach the library tag to complete the library construction.",
+    "PCR Several rounds of PCR amplification with PCR Primer Cocktail and PCR Master Mix are performed to enrich the Adapter-ligated DNA fragments.",
+    "Products Purification PCR products are selected by running another 2% agarose gel to recover the target fragments. Purify the gel with a QIAquick Gel Extraction kit (QIAGEN). Re-dissolve the appropriate amount of Elution Buffer and attach the library tag to complete the library construction.",
+    "Library QC and Sequencing Library was qualified by the Agilent Technologies 2100 bioanalyzer and ABI StepOnePlus RealTime PCR System. Libraries that pass these QC steps can then be sequenced using pair-ends on the Illumina HiSeq/NovaSeq System."
+  ],
+  "authors": [
+    "Hongfang Zhang"
+  ],
+  "creator": "Hongfang Zhang",
+  "published_on": 1622515812,
+  "created_on": 1622427933,
+  "keywords": []
+}

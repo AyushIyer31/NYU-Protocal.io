@@ -1,0 +1,38 @@
+{
+  "id": 84352,
+  "title": "Actin flow ",
+  "uri": "actin-flow-cwk8xczw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl8pmb8g2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"5bpad\",\"text\":\"Actin flow\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Transfect the cells with the LifeAct-GFP plasmid following the protocol &#34;Cells electroporation for cell transfection with NEON system&#34;",
+    "The next day, trypsinize the cells as usual",
+    "Seed the cells on glass (i.e. gels on glass bottom petri dishes or the glass itself) The cell density depends on the cell type used. i.e. for C2C12 myoblasts, we seed 10000 cells/cm2",
+    "After 03:00:00 , image the cells with a confocal microscope. Use the 40x objective. If the CO2 cannot be controlled, use CO2-independent medium. The channel would be eGFP.",
+    "Focus the cell in a focal plane where the actin cytoskeleton can be seen",
+    "We perform a time series of 120 images every 00:00:02 ( 00:04:00 in total per cell)",
+    "Open the image sequence with Fiji software",
+    "Analyze, Set measurements, select “Bounding rectangle” and “Min &amp; Max gray value”",
+    "Check where the cell cytoskeleton moves",
+    "Draw a line with the wand tool crossing the movement",
+    "Analyze, Multi kimograph, multi kymograph, linewidth: 1",
+    "A black &amp; white gradient pops up. White lines indicate cell movement. The higher angle indicates more movement",
+    "Draw a line with the wand tool in the white line seen in the kymograph",
+    "Press “M” and copy &amp; paste the measurements in an Excel file",
+    "In the Excel file, split the width by the length. This new value means flow in &#34;pixels per frame&#34;",
+    "Divide the pixels/frame value obtained by 2. This new value means flow in &#34;pixels per second&#34;",
+    "Split the &#34;pixels/s&#34; value by the &#34;pixels/micron&#34; ratio of the objective used (i.e. 3.2055 in the LSM900 confocal microscope) and multiply by 1000. This final value is the actin flow in nm/s",
+    "Data analysis from kymograph with Fiji software"
+  ],
+  "authors": [
+    "Juan.Gonzalez"
+  ],
+  "creator": "Juan.Gonzalez",
+  "published_on": 1688384036,
+  "created_on": 1688221868,
+  "keywords": []
+}

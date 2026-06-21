@@ -1,0 +1,25 @@
+{
+  "id": 27269,
+  "title": "One Part CPEC and quick change",
+  "uri": "one-part-cpec-and-quick-change-6vdhe26",
+  "doi": "dx.doi.org/10.17504/protocols.io.6vdhe26",
+  "description": "",
+  "guidelines": "{\"blocks\":[{\"key\":\"bo63s\",\"text\":\"This protocol works well for CPEC-style DNA assemblies for which there is only one assembly piece per assembly reaction (e.g., when deleting a portion of an existing plasmid vector, or inserting/replacing short sequences within an existing vector). In such instances, j5 will have designed two full-length primers (containing the requisite flanking homology sequences and possibly embedded short insert sequences) to amplify a DNA template to yield an assembly piece for subsequent CPEC assembly. This protocol uses these same two j5-designed full-length primers but is a preferred alternative to regular CPEC assembly.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Setup 2 PCR-like reactions, each with only one of the two full-length primers: Sterile water 13.5 µL GC buffer 5 µL DMSO (30% stock) 2.5 µL dNTPs (10 mM stock) 0.5 µL Primer (10 µM stock) 2.5 µL Mini-prepped template DNA 0.5 µL Polymerase (Pfu) 0.5 µL Total 25 µL",
+    "Combine both reactions and add 1 µL more of polymerase.",
+    "DpnI digest for 1 hour at 37 C.",
+    "Gel extract (optional).",
+    "Transform 10 µL into chemically competent cells."
+  ],
+  "authors": [
+    "N.J. Hillson"
+  ],
+  "creator": "Michael J Fero",
+  "published_on": 1566933135,
+  "created_on": 1566926700,
+  "keywords": []
+}

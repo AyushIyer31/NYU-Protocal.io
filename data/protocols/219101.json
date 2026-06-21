@@ -1,0 +1,28 @@
+{
+  "id": 219101,
+  "title": "In-Vivo Mouse and Rat PK Bioanalysis",
+  "uri": "in-vivo-mouse-and-rat-pk-bioanalysis-gz75bx9q7",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlkrqdwv5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"4m12\",\"text\":\"In vivo PK bioanalysis involves studying drug behaviour within a living organism to understand how it is absorbed, distributed, metabolized, and excreted (ADME). This is crucial for drug discovery and development, providing insights into a drug's efficacy and safety before clinical trials. Bioanalysis plays a key role in accurately measuring drug concentrations in biological samples, like plasma, to assess ADME and other pharmacokinetic parameters. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"3nkou\",\"text\":\"Always wear appropriate PPE for this protocol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cescn\",\"text\":\"Refer to Material Safety Data Sheets for additional safety and handling information.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"amrts\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "In vivo PK bioanalysis involves studying drug behaviour within a living organism to understand how it is absorbed, distributed, metabolized, and excreted (ADME). This is crucial for drug discovery and development, providing insights into a drug&#39;s efficacy and safety before clinical trials. Bioanalysis plays a key role in accurately measuring drug concentrations in biological samples, like plasma, to assess ADME and other pharmacokinetic parameters %s %s",
+    "Data processing involves assessing calibration curve fit, where at least 75% of calibration points must fall within ±25% of their nominal values. QC sample acceptance requires two-thirds to meet ±25% criteria, including half at each concentration level.",
+    "Bioanalysis begins with the preparation of a primary stock solution at 1,000,000 ng/mL using DMSO or a suitable alternative, which is then serially diluted to generate standard and quality control (QC) working solutions from 2000ng/ml to 0.5ng/ml. These solutions are stored at 4°C for up to one week. Calibration standards and QCs are prepared in 96-well plates, ensuring that the volume of organic solvent does not exceed 10% of the plasma to prevent protein precipitation.",
+    "For sample preparation, thawed biological samples are added to the plates, mixed thoroughly, and diluted if necessary. An internal standard (IS) in acetonitrile is then added before centrifugation.",
+    "Tissue samples are homogenized in phosphate buffer, with dilution ratios tailored to the tissue type, and analysed using either a tissue-specific standard curve or surrogate matrix when required.",
+    "During LC-MS/MS analysis, 100 µL of supernatant is transferred to a new plate, diluted with 0.1% formic acid, and analysed following the generated run list.",
+    "Carryover should not exceed 1% of the top standard, and any interference in blanks must remain below 20% of the lowest standard. Internal standard response variation over 30% must be reviewed by senior staff, though early run variation is typically acceptable. For unknown samples, if neat and diluted values differ by more than 20%, the diluted value is reported to account for potential matrix effects.",
+    "AUC (Area Under the Curve): Represents the total drug exposure over a specific time period. Cmax (Maximum Concentration): The highest drug concentration in the blood stream. t½ (Half-life): The time it takes for the drug concentration to halve. Vss (Volume of Distribution): The apparent volume of the body in which the drug is distributed. Clearance: The rate at which the drug is eliminated from the body."
+  ],
+  "authors": [
+    "Nick Lynch"
+  ],
+  "creator": "Nick Lynch",
+  "published_on": 1754230217,
+  "created_on": 1748506616,
+  "keywords": []
+}

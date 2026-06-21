@@ -1,0 +1,25 @@
+{
+  "id": 2795,
+  "title": "Identifying Viral Sequences Using VirSorter (Cyverse)",
+  "uri": "Identifying-Viral-Sequences-Using-VirSorter-Cyvers-eyjbfun",
+  "doi": "dx.doi.org/10.17504/protocols.io.eyjbfun",
+  "description": "{\"blocks\":[{\"key\":\"g23c\",\"text\":\"Identifying putative viral sequences from SPAdes-assembled data from the Ocean Sampling Day (2014) metagenomic datasets using VirSorter.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":12,\"length\":8}],\"entityRanges\":[{\"key\":0,\"offset\":73,\"length\":25}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"94C346AFED5C4D19AFD8215A0E1B4FBB\",\"url\":\"https://github.com/MicroB3-IS/osd-analysis\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"crjss\",\"text\":\"This is part of a larger protocol Collection that involves the end-to-end processing of raw viral metagenomic reads obtained from a sequencing facility to assembly and analysis using Apps (i.e. tools) developed by iVirus and implemented within the Cyverse cyberinfrastructure.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":34,\"length\":10}],\"entityRanges\":[],\"data\":[]},{\"key\":\"fqugu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3nq1k\",\"text\":\"Finding putative viral sequences is one spring board for viral metagenomic analysis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"1sm2k\",\"text\":\"To run this protocol, users must first register for Cyverse account. All data (both inputs and outputs) are available within Cyverse's data store at /iplant/home/shared/iVirus/ExampleData/\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":39,\"length\":8}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"6D256E3FABA1413EAE2E3D5A12FAEFFA\",\"url\":\"https://user.iplantcollaborative.org/register/\"}}}}",
+  "warning": "{\"blocks\":[{\"key\":\"b6vbe\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Open VirSorter Open VirSorter from &#39;Apps&#39; a",
+    "Select Inputs Select the &#39;Section 1&#39; tab. For Input Fasta file of microbial contig Sequences Navigate to Community Data -- &gt; iVirus --&gt; ExampleData --&gt; VirSorter --&gt; Input . Select contigs.fasta Alternatively, copy-and-paste the location: /iplant/home/shared/iVirus/ExampleData/VirSorter/Input into the navigation bar and select the contigs fasta file. For Database Select Virome . There are only two databases to select. Virome and RefSeq. a",
+    "Select Parameters Select the &#39;Section 2&#39; tab. The default options in this section will be sufficient. Additional viral sequence to be used as reference : Here users can select a fasta file that includes viruses that may not be in either &#39;Virome&#39; or &#39;RefSeq&#39; databases. For example, unpublished viral sequences used internally in a lab. Virome Decontamination : Virsorter was designed to screen for viral sequences within microbial datasets. Part of its methodology identifies the &#39;non-viral&#39; component and uses that as background to improve differentiation between viral and non-viral sequences. If most and/or all of the sequences are potentially viral, select this option. VirSorter will use a &#39;generic&#39; cellular dataset as background. a",
+    "Launch Analysis Run the job! VirSorter can take minutes, hours or days depending on the size of your dataset. For this example it should take an afternoon.",
+    "Results Expected results can be found from the &#39;Outputs&#39; directory of VirSorter. Navigate to Community Data -- &gt; iVirus --&gt; ExampleData --&gt; VirSorter --&gt; Output . Alternatively, copy-and-paste the location: /iplant/home/shared/iVirus/ExampleData/VirSorter/Output into the navigation bar. a"
+  ],
+  "authors": [
+    "Benjamin Bolduc"
+  ],
+  "creator": "Benjamin Bolduc",
+  "published_on": 1462944810,
+  "created_on": 1462944695,
+  "keywords": []
+}

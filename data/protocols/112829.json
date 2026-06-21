@@ -1,0 +1,28 @@
+{
+  "id": 112829,
+  "title": "Nuclear senescence scoring",
+  "uri": "nuclear-senescence-scoring-dse56bg6",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv52z4jv1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"faj0r\",\"text\":\"Nuclear senescence scoring\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Stain iPSC-derived cells in monoculture and triculture systems with DAPI.",
+    "Detection of nuclei in DAPI-stained images using a U-Net segmentation model.",
+    "Conduct imaging using a Leica TCS SP8 confocal microscope with a 40×/1.4 numerical aperture oil immersion objective.",
+    "Perform immunolabeling of cell type-specific markers: MAP2 for neurons, IBA1 for microglia, and GFAP for astrocytes.",
+    "Analysis of nuclear morphometrics, including area, convexity, and aspect ratio.",
+    "Resizing and conversion of nuclei to a two-color mask for consistent representation.",
+    "Application of an ensemble of deep neural networks trained on human fibroblasts to predict the likelihood of senescence.",
+    "Python 3.9.18, TensorFlow GPU 2.15.0, Keras 2.15.0, Numpy 1.23.5, Pandas 1.2.4."
+  ],
+  "authors": [
+    "Maria Jose Perez J."
+  ],
+  "creator": "Federico Bertoli",
+  "published_on": 1738602990,
+  "created_on": 1732636613,
+  "keywords": []
+}

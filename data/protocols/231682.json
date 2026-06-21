@@ -1,0 +1,37 @@
+{
+  "id": 231682,
+  "title": "Controlled addition of short inosine tails to capture both polyadenylated and non-polyadenylated RNA for direct RNA sequencing on nanopores.",
+  "uri": "controlled-addition-of-short-inosine-tails-to-capt-hehab3b2f",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvrwz4plmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"w8pn8\",\"text\":\"Nanopore technology allows full length sequencing of individual RNA molecules. However, capturing and sequencing all cellular RNAs in a complex mixture is challenging due to heterogeneity of RNA 3’ end structures. The Schizosaccharomyces pombe enzyme Cid1 can bind and add a variety of natural and modified nucleotides to the 3’ end of RNAs (Munoz-Tello et al. 2014; Vo et al. 2021; Wiegand et al. 2025). This approach has been shown to be useful for tailing and capturing a wide variety of cellular RNAs, regardless of their 3’ ends. Inosine tailing is exceptionally promising, since it is not a naturally incorporated nucleotide during transcription and produces a very distinct current trace compared to natural or in vitro produced poly(A) tails. In vitro, Cid1 adds approximately 50 inosines to endogenous poly(A) RNAs. However, non-poly(A) RNAs often acquire much longer, heterogenous inosine tails (Vo et al. 2021). The protocol presented here introduces the addition of dITP in an appropriate ratio to rITP such that the very long I-tails observed on non-polyadenylated RNAs are reduced to an average of ~15-40 nt (Fig 1). The Cid1 enzyme incorporates dITP at a lower rate than rITP, but is unable to add to a deoxynucleotide end; thus, dITP serves as a chain terminator (Fig 1). These inosine-tailed RNAs now carry rI(n)dI ends and can then be used for adapter ligation and sequencing on Oxford Nanopore Platforms to capture both poly(A)+ mRNAs and histone mRNAs, rRNAs and a variety of ncRNAs (Fig 2).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":218,\"length\":25}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"71san\",\"text\":\"In heat blocks, or a thermocycler, anneal oligos by incubating at 95 °C for 2 minutes, 65 °C for 10 minutes, 48 °C for 10 minutes, then place at room temperature for 10 minutes. Place on ice. Annealed oligos can be frozen and used multiple times.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"rrnyn\",\"text\":\"- Total RNA (5 ug) extracted from HEK293 cells\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ogbp8\",\"text\":\"- 10X NEBuffer 2 (NEB B7002S). 1X buffer: 50 mM NaCl, 10 mM Tris-HCl, 10 mM MgCl2, 1 mM DTT, pH 7.9 @ 25°C\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"0ors8\",\"text\":\"- 25 mM MgCl2 (Thermo Scientific R0971)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fsnec\",\"text\":\"- 1M Tris-HCl, pH 7.9\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"pfdku\",\"text\":\"- 100 mM (2'-deoxyinosine 5'-triphosphate) dITP solution (Thermo Scientific R1191)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1nge8\",\"text\":\"- Inosine 5’-triphosphate trisodium salt (rITP) (Milipore Sigma I0879-50MG)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"casse\",\"text\":\"- Poly(U) polymerase 2U/ul (NEB M0337S)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"tzjve\",\"text\":\"- RNase-free H2O\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"nghar\",\"text\":\"- Adapter oligonucleotides (IDT)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"udeli\",\"text\":\"  - Top oligo (100 uM, H2O): 5PHOS/GGCTTCTTCTTGCTCTTAGGTAGTAGGTTC\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6tcup\",\"text\":\"  - 10C splint (100 uM, H2O): CCTAAGAGCAAGAAGAAGCCCCCCCCCCCC\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"93srp\",\"text\":\"                                         \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Extract total RNA using standard Trizol protocols. (Rio et al. 2011)",
+    "Quantify RNA using a NanoDrop (Thermo Scientific), and evaluate integrity of the RNA using a Bioanalyzer or TapeStation (Agilent Technologies).",
+    "Prepare 30 mM rITP in 60 mM Tris-HCl pH 7.9.",
+    "Prepare 30 mM dITP in 60 mM Tris-HCl pH 7.9.",
+    "Prepare a 30mM mixture of 1:7 rITP:dITP.",
+    "Resuspend oligonucleotides to 100 uM in RNase-free H2O.",
+    "Mix 10 ul each of Top oligo and 10C splint. Bring the volume up to 100 ul with RNase-free H2O.",
+    "In heat blocks, or a thermocycler, anneal oligos by incubating at 95 °C for 2 minutes, 65 °C for 10 minutes, 48 °C for 10 minutes, then place at room temperature for 10 minutes. Place on ice. Annealed oligos can be frozen and used multiple times.",
+    "Prepare the sequencing library and sequence on the Minion or P2 Solo using standard Oxford Nanopore Technologies protocols for direct RNA sequencing using 1 ug of inosine-tailed RNA and the following exceptions.",
+    "Instead of using the RTA adapter provided by ONT, replace with 1 ul of 10 uM, annealed custom adapter.",
+    "Reverse transcription is optional. Sequencing and images in Figure 1 were produced without reverse transcription.",
+    "Figure 1: In vitro transcribed MLY6 RNA (without a poly(A) tail) was incubated with or with Cid1 enzyme in the presence of various ratios of rITP and dITP. As shown in Vo et al. (2021) “rITP only” produces inosine tails much greater than the 1574 nt marker (Lane 3). A 1:7 rITP:dITP ratio produces average tail lengths less than 100 nt (Lane 6). RNAs were resolved on a 6% polyacrylamide gel and stained with Sybr Gold.",
+    "Figure 2: Schematic and example IGV browser images of various classes of RNAs inosine tailed, captured and sequenced using direct RNA sequencing on Oxford Nanopore Technologies P2 Solo. A) Example representation of RNA extraction, inosine tailing, library preparation, nanopore sequencing and analysis. B-H) IGV browser images of various classes and sizes of noncoding, and polyadenylated RNAs I-talied and captured using the above protocol. I) Summary table of number of reads shown in browser shots in (B-H) and the percent of total reads of the MinION sequencing run (4.28M reads)."
+  ],
+  "authors": [
+    "Jason Talkish",
+    "Justin Sim",
+    "Jenny Mai Vo",
+    "Mark Akeson",
+    "Manuel Ares, Jr."
+  ],
+  "creator": "jtalkish",
+  "published_on": 1762856397,
+  "created_on": 1762446615,
+  "keywords": []
+}

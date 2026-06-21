@@ -1,0 +1,31 @@
+{
+  "id": 25536,
+  "title": "Sample Preparation for Illumina MiSeq Dual Index Amplicon Sequencing",
+  "uri": "sample-preparation-for-illumina-miseq-dual-index-a-468gzhw",
+  "doi": "dx.doi.org/10.17504/protocols.io.468gzhw",
+  "description": "{\"blocks\":[{\"key\":\"6kht7\",\"text\":\"Amplicon sequencing sample preparation for bacteria and microeukaryotes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"c891u\",\"text\":\"Put pipettes and tips in the UV chamber for 10 mins.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"550sj\",\"text\":\"Clean bench with MQ and EtOH.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"4durd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"nzWx4\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"JPI5s\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"tKMPV\",\"text\":\"STEP MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"IdYDX\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":768,\"guid\":\"4101DC37341F11EE9D4302C0B41BC903\",\"name\":\"Q5 High-Fidelity DNA Polymerase - 100 units\",\"mol_weight\":0,\"sku\":\"M0491S\",\"url\":\"https://www.neb.com/M0491\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":767,\"guid\":\"4101DBB9341F11EE9D4302C0B41BC903\",\"name\":\"Q5 High-Fidelity DNA Polymerase - 500 units\",\"mol_weight\":0,\"sku\":\"M0491L\",\"url\":\"https://www.neb.com/M0491\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Perform the first PCR (duplicates of each sample) using Illumina adaptor attached primers that target the gene of your choice. Here we present the protocol using the bacterial primers 341F and 805RN, and eukaryotic primers 574*f and 1132r. Bacterial primers ( Herlemann et al., 2011 ): Illumina adapter-N4-341F: 5’-ACACTCTTTCCCTACACGACGCTCTTCCGATCTNNNNCCTACGGGNGGCWGCAG-3’ Illumina adapter-805R: 5’-AGACGTGTGCTCTTCCGATCTGACTACHVGGGTATCTAATCC-3’ Eukaryotic primers ( Hugerth et al., 2014 ): Illumina adapter-4N-574*f: 5&#39;-ACACTCTTTCCCTACACGACGCTCTTCCGATCTNNNN CGGTAAYTCCAGCTCYV-3&#39; Illumina adapter-1132r: 5&#39;-AGACGTGTGCTCTTCCGATCT CCGTCAATTHCTTYAART-3&#39; First PCR reactions %s %s First PCR program for bacteria %s %s First PCR program for eukaryote %s %s Q5 High-Fidelity DNA Polymerase - 500 units New England Biolabs Catalog #M0491L",
+    "Check PCR products with Agarose gel electrophoresis (1%) - optional",
+    "Pool PCR duplicate samples together Optional: run Agarose gel electrophoresis (1%)",
+    "Second PCR is conducted for attaching standard illumina handles and index primers Multiplex_fwd AATGATACGGCGACCACCGAGA{TCTACAC}-[i5 index] ACACTCTTTCCCTACACGACG Multiplex_rev CAAGCAGAAGACGGCATACGAGAT-[i7 index]-GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT (In total 20 different forward index/barcode primers and 20 different reverse index/barcode primers. By combining both primers (20X20), it can possible to generate 400 tags in one final pool for sequencing) Second PCR reactions %s %s Second PCR program for both bacteria and eukaryote %s %s",
+    "Check second PCR products with Agarose gel electrophoresis (1%) 00:01:00",
+    "Perform purification with magnetic beads (Agencourt AMPure) and run Agarose gel electrophoresis (1%)",
+    "Quantification: PicoGreen assay (Quant-iT PicoGreen dsDNA Assay Kit, Invitrogen)",
+    "Calculate PCR samples concentration and volume before pooling",
+    "Pool the PCR samples in equal DNA amount (ng) or for unequal length amplicons, in equal molecule amount (mol). You will get one-one tube with a mix of all the samples (bacteria and eukaryote separately) in it. To calculate the volume of each sample to be pooled (DNA amount mixing): Use the lowest concentration sample to define the minimum amount of DNA (ng) that you have available from a single sample: the DNA concentration (ng/μL) of the lowest concentration sample multiplied with its volume (μL). This will be your target DNA amount for each sample. Calculate how many μLs of each sample you need to achieve the target DNA amount : divide the target DNA amount with the concentration of each sample. Pipette into one tube the calculated volume of each sample. Aim to use the same pipette for all samples (dilute or pipette multiple times) to avoid pipette calibration errors.",
+    "Requantify with PicoGreen before submitting to sequencing facility."
+  ],
+  "authors": [
+    "Máté Vass",
+    "Anna Székely"
+  ],
+  "creator": "Máté Vass",
+  "published_on": 1582560365,
+  "created_on": 1562326219,
+  "keywords": []
+}

@@ -1,0 +1,41 @@
+{
+  "id": 235975,
+  "title": "FAS2rDNA-Colab: A cloud-based workflow for pan-cancer, isoform-wide miRNome reconstitution across TCGA cohorts",
+  "uri": "fas2rdna-colab-a-cloud-based-workflow-for-pan-canc-hipfb4djp",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn1xr6v5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"726h0\",\"text\":\"MicroRNA (miRNA) sequence composition and isoform diversity play important roles in post-transcriptional regulation and contribute to biological variability across cancer types. Large-scale resources such as The Cancer Genome Atlas (TCGA) provide a standardized foundation for exploratory miRNome research; however, TCGA miRNA datasets are typically distributed as expression matrices without direct access to reconstructed, isoform-resolved sequence outputs. This limits the application of sequence-based analyses, including pan-cancer comparisons and machine learning workflows that require explicit nucleotide representations.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"920in\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9ce6a\",\"text\":\"FAS2rDNA-Colab is a cloud-based workflow that reconstructs FASTA-formatted DNA/cDNA sequences using genomic coordinates/annotations. This protocol extends FAS2rDNA-Colab for the reconstitution of isoform-wide miRNome sequences from TCGA-derived miRNA expression data. By reconstituting FASTA-formatted miRNA sequences across multiple cancer cohorts, the protocol enables pan-cancer and isoform-level comparisons without reliance on predefined probe sets or raw sequencing reprocessing. The resulting reconstructed miRNomes can be used for sequence validation, exploratory comparative analyses, and downstream computational modeling.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"boebm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"2pu8c\",\"text\":\"For the purpose of this protocol, the GDAC Broad Institute database will be used to obtain molecular data of the different TCGA cohorts. However, users can use different databases to obtain the miR-Seq annotations of the cohorts, such as in UCSC Xena Browser or GDC Data Portal.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fv5lh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"52cfb\",\"text\":\"FAS2rDNA exists in two versions: 1) CLI for local implementation, and 2) Colab for cloud implementation using Google Colab. This protocol uses the FAS2rDNA-Colab. Alternatively, users may use the CLI version and modify the protocol here: https://dx.doi.org/10.17504/protocols.io.rm7vzenqxvx1/v1\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":238,\"length\":56}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"9126C421E48211F0BD000A58A9FEAC02\",\"url\":\"https://dx.doi.org/10.17504/protocols.io.rm7vzenqxvx1/v1\"}}}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Acquire or download the TCGA miR-Seq annotation data in the GDAC Broad Institute portal.",
+    "Navigate to https://gdac.broadinstitute.org/",
+    "Select the following cancer cohorts from the list: %s %s",
+    "Agree to the TCGA guidelines on the responsible use of data to proceed.",
+    "From each individual Archive pop-up, download the illuminahiseq_mirnaseq-miR_isoform_expression data from the &#39;miR-Seq&#39; section.",
+    "After each download, inspect that all the data entries contain valid non-empty data, particularly in the following columns: A B C D 1 SampleId miRNA_ID isoform_coords read_count 2 TCGA-05-4390-01A-02T-1754-13 hsa-let-7a-1 hg19:9:96938243-96938263:+ 1 Sample miR-Seq annotation data, showing the critical data types.",
+    "Sort the read_count column and remove all rows with invalid or empty data (e.g., N, X, None, N/A). Note that if you are working with normalized expression count, zero (0) does not mean lack of detection but the expression is negligible from a reference count (e.g., normal tissue/cell).",
+    "Pre-process your data for FAS2rDNA reconstitution and miRNA sequence reconstruction.",
+    "Ensure that the isoform_coords of your data follow the FAS2rDNA-required format: Standard format: assembly:chromosome:start-end:strand Example data: hg19:9:106938220-106938244:+",
+    "Rename the mandatory columns below: From -&gt; To SampleId -&gt; sample_id miRNA_ID -&gt; gene_id isoform_coords -&gt; seq_loc read_count -&gt; descriptions Note that you can delete the remaining columns or keep them as they are.",
+    "Save your data in tab-delimited text file (.txt or .tsv file types are recommended).",
+    "Reconstitute the miRNome sequences of all the cohorts using FAS2rDNA-Colab.",
+    "Lauch FAS2rDNA-Colab here: https://fas2rdna.chordexbio.com/colab-access or visit the FAS2rDNA-Colab GitHub repo here: https://github.com/mahvin92/FAS2rDNA-Colab . FAS2rDNA-Colab interface on Google Colab.",
+    "Type the name of your experiment in the Project_name field.",
+    "Run FAS2rDNA-Colab: Click &#39;Runtime&#39; -&gt; select &#39;Run all&#39; -&gt; Upload all your miR-Seq data files",
+    "Once the run is completed, the results will be automatically downloaded. If download does not automatically starts, manually get them from the following directory:",
+    "Validate the resulting multi-FASTA miRNome sequences of the cohorts.",
+    "Check that the individual .fasta file from all text inputs, including the combined .fasta file are all generated in the output folder.",
+    "Inspect all the files, ensuring that they are not empty, not corrupted, and complete. You can run a quick entry count by searching the occurrence of the symbol &#39;&gt;&#39; and match that count with the number of items in your text files.",
+    "Assess that the sequences are in multi-FASTA format. Sample multi-FASTA result: &gt;TCGA-05-4390-01A-02T-1754-13_hsa-let-7a-1_1 AAATCGGCGGACTCGGCAC ... &gt;TCGA-05-4390-01A-02T-1754-13_hsa-let-7a-1_4 TTTAAACGCCCCCACGCCT ... &gt;&gt;TCGA-05-4390-01A-02T-1754-13_hsa-let-7a-1_3 GGGCGCGTTACGTGCACGT ... &gt;&gt;TCGA-05-4390-01A-02T-1754-13_hsa-let-7a-1_13 TGCATTGACACCACTTCGG ...",
+    "The reconstituted miRNome profiles are ready for sequence-level validation against accessioned miRNA references (e.g., miRBase). Beyond validation, the reconstructed FASTA-formatted sequences can be directly leveraged for: Exploratory pan-cancer, sequence-based miRNA expression analyses, enabling comparative studies across tumor types without reliance on predefined probe sets; Machine learning–driven miRNome modeling, where full-length and isoform-resolved sequences can be encoded for classification, clustering, or predictive tasks; Isoform-specific correlation and variability studies, facilitating the investigation of isomiR diversity, sequence heterogeneity, and their associations with biological or clinical variables. Collectively, these applications position FAS2rDNA-reconstituted miRNomes as versatile inputs for downstream computational genomics and integrative cancer research workflows. However, please note that FAS2rDNA-derived miRNome sequence reconstitution does not contextually capture miRSNPs yet. Current works and future iterations of FAS2rDNA will include custom accession referencing to capture base variations and miRNA sequences polymorphisms."
+  ],
+  "authors": [
+    "Marvin De los Santos"
+  ],
+  "creator": "Marvin De los Santos",
+  "published_on": 1766996310,
+  "created_on": 1766990129,
+  "keywords": []
+}

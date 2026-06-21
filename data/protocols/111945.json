@@ -1,0 +1,28 @@
+{
+  "id": 111945,
+  "title": "Win Your Race Goal: A Generalized Approach to Prediction of Running Performance",
+  "uri": "win-your-race-goal-a-generalized-approach-to-predi-drjh54j6",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewov1d8d2vr2/v1",
+  "description": "{\"blocks\":[{\"key\":\"ntjf\",\"text\":\"We introduce a novel approach for predicting running performance, designed to apply across a wide range of race distances (from marathons to ultras), elevation gains, and runner types (front-pack to back of the pack). To achieve this, the entire running logs of 15 runners, encompassing a total of 15,686 runs, were analyzed using two approaches: (1) regression and (2) time series regression (TSR). First, the prediction accuracy of a long short-term memory (LSTM) network was compared using both approaches. The regression approach demonstrated superior performance, achieving an accuracy of 89.13% in contrast, the TSR approach reached an accuracy of 85.21%. Both methods were evaluated using a test dataset that included the last 15 runs from each running log. Secondly, the performance of the LSTM model was compared against two benchmark models: Riegel formula and UltraSignup formula for a total of 60 races. The Riegel formula achieves an accuracy of 80%, UltraSignup 87.5%, and the LSTM model exhibits 90.4% accuracy. This work holds potential for integration into popular running apps and wearables, offering runners data-driven insights during their race preparations.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"82oj3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4nn1g\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"6kc41\",\"text\":\"The running logs collected for this study has been in adherence to IRB Protocol\\n#207107–18. The dataset uploaded on GitHub is completely anonymized.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "One way of achieving the above goal is by using runner&#39;s entire running log and an autoregressive deep learning model known as Long Short Term Memory (LSTM).",
+    "Data preparation which involves data clean up, taking care of missing data and performing seasonal decomposition to get an idea of the complexity of the model required to make accurate prediction.",
+    "LSTM model with an architecture elaborated in the published article and the github repo.",
+    "Use data augmentation techniques if you are working with a small dataset. Sliding window technique is used in published article.",
+    "Determine what regularization techniques you will use to prevent overtraining. For e.g. Early Stopping algorithm is used in the published article. Patience which is a hyperparameter that determines the number of times the increase in validation loss is tolerated before terminating epoch loop.",
+    "To increase the robustness of the hyperparameters perform k-fold cross validation during hyperparameter search.",
+    "The idea is that by learning the running log of a runner the LSTM captures both long-term and short-term correlations among exogenous and endogenous variables, even without explicitly incorporating the notion of time into the network.",
+    "It is demonstrated in the journal article that with enough running history the LSTM model is able to generalize very well and predict with an average of 90.4% accuracy even for unseen races up to two years in the future. To compare the LSTM model&#39;s performance against two benchmark models; Riegel formula and UltraSignup formula, 60 races of varying distances described in table 2 in the article were chosen. 54% of these races occurred after the data collection cut off i.e. December 2021."
+  ],
+  "authors": [
+    "Sandhyarani Dash"
+  ],
+  "creator": "Sandhyarani Dash",
+  "published_on": 1731528056,
+  "created_on": 1731390015,
+  "keywords": []
+}

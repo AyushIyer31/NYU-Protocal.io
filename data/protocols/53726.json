@@ -1,0 +1,32 @@
+{
+  "id": 53726,
+  "title": "Dot Measuring (Co-localisation) (FIJI Macro)",
+  "uri": "dot-measuring-co-localisation-fiji-macro-byp6pvre",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"aqdus\",\"text\":\"This protocol describes how to download, install, and run the ImageJ/Fiji macro for quantifying the mean fluorescence intensity of regions determined in one channel, based upon the intensity of the second channel. This protocol is used in the following manuscript: https://doi.org/10.1016/j.bbamem.2020.183480\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":265,\"length\":44}],\"data\":{}},{\"key\":\"9l2pq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9s07o\",\"text\":\"Briefly, this script takes 2 channel images of cells which have taken up fluorescently labelled peptides, and have their lysomes fluorescently labeleld with Lyostracker. Lysosomes are identified using a Find Maxima command, and selections generated. These selections are then measured individually for the fluorescence intensity of the labelled peptide. Results are output into a spreadsheet for further analysis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"AF2B4F9A225C11EC92790A58A9FEAC02\",\"url\":\"https://doi.org/10.1016/j.bbamem.2020.183480\"}}}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"d1dq9\",\"text\":\"Having an up-to-date version of FIJI/ImageJ is critical for this macro. A fresh installation can be downloaded from Fiji.sc\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":116,\"length\":7}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"2C474AF0225F11EC81310B3EDAF0EFC3\",\"url\":\"http://Fiji.sc\"}}}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Retrieve a copy of the macro files from the GitHub repo",
+    "Download the .ZIP copy of the entire repo to your computer, and extract the compressed file.",
+    "Launch FIJI/ImageJ on your computer.",
+    "Install the plugin into your instance of FIJI by navigating to Plugins &gt; Macros &gt; Install Choose to install the file called &#34;Aurelie - Reversed Green of RedArea.ijm&#34;",
+    "To launch the installed macro, navigate to Plugins &gt; Macros &gt; Aurelie - Reversed Green of RedArea",
+    "The first window to appear when running the macro describes the Author, and details the tasks the script will run.",
+    "The next window to appear allows the user to input a working directory location using their system file browser.",
+    "The script will then run through each image within the chosen input directory, identifying lysosomes, and measing the fluorescent peptide signal automonously with no user input required.",
+    "Upon completion the script will prompt the user with a dialog box stating &#34;Put down that coffee! Your job is finished&#34;",
+    "Navigate to the input directory location using your computers filesystem browser. Select the newly created results directory called &#34;Results&#34;",
+    "For each image completed the following files are created: &lt;Filename&gt;_RoiSet.zip [this contains the ROIs for the lysosomes] &lt;Filename&gt;_Green.tif [this image is the cleaned up Green (peptide) image] &lt;Filename&gt;_Red.tif [this image is the cleaned up Red (lysotracker) image] &lt;Filename&gt;_Points.tif [this image shows the ROI slections resulting from the Find Maxima] For the entire script run the following collated files are create: Results.xls [results spreadsheet for quantification, see below]",
+    "Results Spreadsheet information Note if opening with Microsoft Excel you will see the following warning, this is because the file Results.xls was created outside of Microsft Excel, click Yes to continue opening the document. The following columns are provided in the Results.xls output file: Filename : This is the filename for the input image. Cell : This is the cell ID Count : This is the measured Mean Intensity for the nuclei selection region Red Intensity : This is the measured Mean intensity for the cytoplasmic band selection region CoLocalisation Boolean : This column determines if the intensity of Peptide (green) is above a certain cut off (500) within the lysosome region, it is considered colocalised and will have a value of 1, if below this cut off the value 0 will be displayed. This cut off can be modified in line 69 of the code."
+  ],
+  "authors": [
+    "Nicholas D Condon"
+  ],
+  "creator": "Nicholas D Condon",
+  "published_on": 1633055308,
+  "created_on": 1633053789,
+  "keywords": []
+}

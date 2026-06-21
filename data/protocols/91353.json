@@ -1,0 +1,30 @@
+{
+  "id": 91353,
+  "title": "Generation of hiPSC derived cortical astrocytes",
+  "uri": "generation-of-hipsc-derived-cortical-astrocytes-c5fzy3p6",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv5xmmng1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"809vn\",\"text\":\"This is a modified protocol that describes how to generate cortical region-specific astrocytes based on Gupta et al., 2012, Serio et al., 2013 and  Seto-Salvia et al., 2021\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bsjc1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d594l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fg6u2\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"9b99k\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9le3d\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"1sg4j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"69ok1\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"cdnee\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"citation\",\"mutability\":\"IMMUTABLE\",\"data\":{\"guid\":\"53D8EE61E56543FFB1E5FADED540CA68\",\"title\":\"Human embryonic stem cell derived astrocytes mediate non-cell-autonomous neuroprotection through endogenous and drug-induced mechanisms.\",\"protocol_guid\":\"\",\"journal\":\"\",\"date\":\"2012-05-01T00:00:00Z\",\"created_on\":\"2026-02-10T22:33:37Z\",\"doi\":\"https://doi.org/10.1038/cdd.2011.154\",\"authors\":\"Gupta K, Patani R, Baxter P, Serio A, Story D, Tsujita T, Hayes JD, Pedersen RA, Hardingham GE, Chandran S\",\"can_edit\":false}},\"1\":{\"type\":\"citation\",\"mutability\":\"IMMUTABLE\",\"data\":{\"guid\":\"D2944060D1EB4F289F329BC31A238B70\",\"title\":\"Astrocyte pathology and the absence of non-cell autonomy in an induced pluripotent stem cell model of TDP-43 proteinopathy.\",\"protocol_guid\":\"\",\"journal\":\"\",\"date\":\"2013-03-19T00:00:00Z\",\"created_on\":\"2026-02-10T22:33:37Z\",\"doi\":\"https://doi.org/10.1073/pnas.1300398110\",\"authors\":\"Serio A, Bilican B, Barmada SJ, Ando DM, Zhao C, Siller R, Burr K, Haghi G, Story D, Nishimura AL, Carrasco MA, Phatnani HP, Shum C, Wilmut I, Maniatis T, Shaw CE, Finkbeiner S, Chandran S\",\"can_edit\":false}},\"2\":{\"type\":\"citation\",\"mutability\":\"IMMUTABLE\",\"data\":{\"guid\":\"78BDACD98A8E11EE83B20A58A9FEAC02\",\"title\":\"Elevated 4R-tau in Astrocytes From Asymptomatic Carriers of the MAPT 10+16 Mutation\",\"protocol_guid\":\"\",\"journal\":\"Preprint\",\"date\":\"2021-12-23T00:00:00Z\",\"created_on\":\"2026-02-10T22:33:37Z\",\"doi\":\"https://doi.org/10.21203/rs.3.rs-117443/v1\",\"authors\":\"Nuria Seto-Salvia, Noemi Esteras, Rohan de Silva, Eduardo de Pablo-Fernandez, Charles Arber, Christina E Toomey, James M Polke, Huw R Morris, Jonathan D Rohrer, Rickie Patani, Selina Wray, Thomas T Warner\",\"can_edit\":false}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "hiPSCs are maintained on Geltrex in mTeSR (Stem Cell) and passaged using 0.5mM EDTA, as followed by Virdi et al., 2022. Protein aggregation and calcium dysregulation are hallmarks of familial Parkinson's disease in midbrain dopaminergic neurons..",
+    "Differentiation of cortical region-specific astrocytes is performed using a modified protocol based on Gupta et al., 2012, Serio et al., 2013 and Seto-Salvia et al., 2020. Astrocyte pathology and the absence of non-cell autonomy in an induced pluripotent stem cell model of TDP-43 proteinopathy.. Elevated 4R-tau in Astrocytes From Asymptomatic Carriers of the MAPT 10+16 Mutation. Preprint.",
+    "Neural precursor cells (NPCs) are obtained from hiPSC using the established protocol of Human cerebral cortex development from pluripotent stem cells to functional excitatory synapses..",
+    "First, NPCs are induced by dual SMAD inhibition for 10 days, followed by culturing with the N2B27 media for another 15 days. * how to make 1L of N2B27 media: 100ml DMEM:F12 + glutamax, 5ml N2 supplement, 0.25ml Insulin, 5ml Non Essential Amion Acids, 1ml 2-mercaptoethanol, 2.5ml Pen/Strep, 500ml Neurobasal, 10ml B27, 5ml Glutamax, 2.5ml Pen/Strep * how to make dual SMAD inhibition media: 10uM SB431542, 1uM Dorsomorphin in N2B27 media",
+    "NPCs are used to derive glial precursor cells (GPCs) by culturing in an N2B27 medium supplemented with 20 ng/ml of human FGF-2.",
+    "Cells are split twice per week (1:2 or 1:3) using Accutase (Cat No. A1110501, Thermo Fisher Scientific) by vigorously breaking pellets to remove neuronal cells.",
+    "Upon the appearance of glial morphology (around day 90 from the neural induction), the GPCs are cultured for 7 days with 10 ng/ml Bone Morphogenetic Protein 4 (BMP4) and 20 ng/ml Leukemia inhibitory factor (LIF), which activates the JAK/STAT signalling pathway, refreshing the medium every other day",
+    "On the 8th day, BMP4 and LIF are withdrawn.",
+    "Cells are further differentiated for the final maturation in the N2B27 media without FGF2.",
+    "3-5 times further passes might be required (1:2) until the complete loss of the precursor property."
+  ],
+  "authors": [
+    "Minee L Choi"
+  ],
+  "creator": "Minee L Choi",
+  "published_on": 1700805745,
+  "created_on": 1700735122,
+  "keywords": []
+}

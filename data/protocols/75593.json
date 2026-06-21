@@ -1,0 +1,29 @@
+{
+  "id": 75593,
+  "title": "Modified Organic Extraction Protocol (Pedersen et al., 2016)",
+  "uri": "modified-organic-extraction-protocol-pedersen-et-a-cm3hu8j6",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewov1o3oklr2/v1",
+  "description": "{\"blocks\":[{\"key\":\"bqdhp\",\"text\":\"A modified version of the organic extraction protocol used in Wales et al., 2014. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cnbfq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7csvd\",\"text\":\"Protocol successful at reconstructing the biodiversity of 15 kya sediment core, including a few fish species\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4p3f4\",\"text\":\"Phenol should be handled with care as it is corrosive and toxic. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"81ait\",\"text\":\"Chloroform is toxic if swallowed or inhaled. It can cause severe and irreversible health effects, including death\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"ce626\",\"text\":\"Review the manufacturer’s Safety Data Sheet and additional chemical information. Ensure that a written experimental protocol including safety information is available. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"5re75\",\"text\":\"Skin exposure to large amounts of phenol or chloroform can cause sores. Skin exposure to lesser amounts of phenol or chloroform can cause irritation. Phenol and chloroform can irritate theeyes that encounter it.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"51rkv\",\"text\":\"Lysis buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5bpqp\",\"text\":\"Proteinase K\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5cj2o\",\"text\":\"MO BIO's PowerClean DNA Clean Up Kit\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d6q68\",\"text\":\"Phenol: Chloroform: Isoamyl alcohol \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7bf59\",\"text\":\"Ethanol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8502j\",\"text\":\"TE Buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bcctv\",\"text\":\"30 kDa Amicon Ultra-4 centrifugal filters \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "ADD 2 g of sediment sample to a sterile spin tube ADD 170 µg of proteinase K to the sample ADD 3 mL of lysis buffer to the sample VORTEX sample at max speed for 00:00:40 Lysis buffer: 68 millimolar (mM) N -lauroylsarcosine sodium salt 50 millimolar (mM) Tris-HCl (pH 8.0) 150 millimolar (mM) NaCl 20 millimolar (mM) EDTA (pH 8.0) and, Immediately before extraction, for each 30 mL of lysis buffer add: 1.5 mL 2-mercaptoethanol 1 mL 1 M DTT",
+    "ADD an additional 170 µg of proteinase K to each sample INCUBATE Overnight at 37 °C",
+    "REMOVE PCR inhibitor using MOBIO (MO BIO Laboratories, Carlsbad, CA) C2 and C3 buffers following the manufacturer’s protocol Link to MO BIO&#39;s PowerClean DNA Clean Up Kit Handbook: https://www.qiagen.com/us/resources/resourcedetail?id=a757e687-7b7a-4801-96bb-6267620414de&amp;lang=en CENTRIFUGE samples at 10000 x g for 00:03:00 TRANSFER supernatant to a sterile microcentrifuge tube",
+    "ADD equal volume of Phenol: Chloroform: Isoamyl alcohol (25: 24: 1) solution to samples ROTATE samples gently at Room temperature for 00:10:00 CENTRIFUGE at 3200 x g, , for 00:05:00 DISCARD supernatant",
+    "REPEAT step 4 TRANSFER supernatant to a Millipore 15 mL Amicon Ultra filter for concentration and purification",
+    "CENTRIFUGE filter at 4000 x g for 00:10:00 DISCARD liquid flow-through",
+    "ADD 500 µL EB Buffer (Qiagen) to the filter CENTRIFUGE at 4000 x g for 00:10:00 DISCARD liquid flow-through",
+    "REPEAT step 7",
+    "ADD 50 µL molecular grade water to the filter INCUBATE at Room temperature for 00:10:00 CENTRIFUGE at 4000 x g for 00:10:00 DISCARD filter DNA is now ready for downstream applications"
+  ],
+  "authors": [
+    "Mikkel Pedersen"
+  ],
+  "creator": "Mark Louie Lopez",
+  "published_on": 1680830668,
+  "created_on": 1674156882,
+  "keywords": []
+}

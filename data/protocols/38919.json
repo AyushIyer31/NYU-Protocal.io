@@ -1,0 +1,40 @@
+{
+  "id": 38919,
+  "title": "1: User-friendly protocol: Probe set design (SABER-FISH)",
+  "uri": "1-user-friendly-protocol-probe-set-design-saber-fi-bh9fj93n",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"4fbqi\",\"text\":\"This protocol offers step by step instructions for probe design for given organism (standard mRNA detection).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7mdf5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"enqbu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6av88\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":[]},{\"key\":\"1flm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"18g19\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"edmip\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"notes\",\"mutability\":\"\",\"data\":{\"blocks\":[{\"data\":[],\"depth\":0,\"entityRanges\":[{\"key\":0,\"length\":21,\"offset\":29}],\"inlineStyleRanges\":[],\"key\":\"cj70b\",\"text\":\"This protocol is part of the SABER-FISH collection.\",\"type\":\"unstyled\"}],\"entityMap\":{\"0\":{\"data\":{\"guid\":\"6C520E2EC12D11EA9C800A58A9FEAC2A\",\"url\":\"https://www.protocols.io/private/91CC071CBF7711EAB11E0A58A9FEAC2A\"},\"mutability\":\"\",\"type\":\"link\"}}}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"brba3\",\"text\":\"For full documentation on the application of Oligominer, check the initial publication by Brian Beliveau and the Yin Lab33 and Github: https://github.com/brianbeliveau/OligoMiner. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":120,\"length\":2}],\"entityRanges\":[{\"key\":0,\"offset\":135,\"length\":43}],\"data\":[]},{\"key\":\"6apds\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"aaej9\",\"text\":\"Genome-wide probe sets have already been generated for a variety of stringency levels. The probe set files with medium probes end in ‘b’, for instance the ‘mm10 chr16b.bed’ file. B stands for ‘balanced.’ Probe sets by chromosome for a variety of organisms are available on The Wu lab Oligopaints website: https://oligopaints.hms.harvard.edu/. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"753d5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6ni33\",\"text\":\"We also recommend installing: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"co7fu\",\"text\":\"Biopython69 (http://biopython.org/DIST/docs/install/Installation.html) \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":9,\"length\":2}],\"entityRanges\":[{\"key\":1,\"offset\":13,\"length\":56}],\"data\":[]},{\"key\":\"a41lf\",\"text\":\"BEDTools51 (https://bedtools.readthedocs.io/en/latest/content/installation.html)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":8,\"length\":2}],\"entityRanges\":[{\"key\":2,\"offset\":12,\"length\":67}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"11919E60BF7B11EA99AF3DA607A26447\",\"url\":\"https://github.com/brianbeliveau/OligoMiner\"}},\"1\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"1BF75CA0BF7B11EA99AF3DA607A26447\",\"url\":\"http://biopython.org/DIST/docs/install/Installation.html\"}},\"2\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"1FAFF7D0BF7B11EA99AF3DA607A26447\",\"url\":\"https://bedtools.readthedocs.io/en/latest/content/installation.html\"}}}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"dr61u\",\"text\":\"For hazard information and safety warnings, please refer to the SDS (Safety Data Sheet).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Genome-wide probe sets have already been generated for a variety of stringency levels. The probe set files with medium probes end in ‘b’, for instance the ‘mm10 chr16b.bed’ file. B stands for ‘balanced.’ Probe sets by chromosome for a variety of organisms are available on The Wu lab Oligopaints website: https://oligopaints.hms.harvard.edu/ . Furthermore, a new online tool for automated FISH probe design is available at http://paintshop.io/ ( https://www.biorxiv.org/content/10.1101/2020.07.05.188797v1 ). Retrieve BED file for gene or gene region of interset from UCSC genome browser: 50",
+    "Select appropriate genome (e.g. mm10 for mouse).",
+    "Bring gene (or region) of interest into field of view.",
+    "tools → table browser.",
+    "Fill in as follows: Group: genes and gene predictions Track: e.g. NCBI RefSeq Table: e.g. RefSeq Region: Position Output format: BED",
+    "Get output → exons (for exon FISH).",
+    "Check file.",
+    "If there are multiple isoforms (e.g. different names that start with NM), then manually delete all but the desired one.",
+    "Check the strand orientation . If (-), then no need for extra steps. If (+), then you must get the reverse complement after probe design.",
+    "Example UNIX commands for identifying overlapping probes: Ensure Biopython and BEDTools are installed and loaded (see above), or transfer BED file and probeset files to a cluster/machine that has these set up A symbolic link to the chromosome probe set file can be placed in the working directory using: ln -s ../oligopaints/mm10_chrNb.bed For the gene of interest (GOI) bed file, run intersectbed (bedtools): intersectBed -a mm10 chrNb.bed -b GOI.bed -f 1 &gt; GOI_probes.bed If the gene is the (+) strand, take the reverse complement: python ../bin/probeRC.py -f GOI_probes.bed -o GOI_probesRC",
+    "Primer sequences are appended to the 3’ end of the primers with a linker of TTT , e.g.: (probe sequence)TTT(9-mer primer sequence) The optimal number of required probes for each mRNA target varies based on considerations such as which fluor will be used for detection and whether branching will be employed as well as transcript length and sequence (e.g. homology to the genome). In tissues, we successfully detected RNAs across a variety of fluors using anywhere from 24 to 50 probes. We recommend starting with this range of probe set sizes."
+  ],
+  "authors": [
+    "Jocelyn Y. Kishi",
+    "Sylvain W. Lapan",
+    "Brian J Beliveau",
+    "Emma R. West",
+    "Allen Zhu",
+    "Hiroshi M. Sasaki",
+    "Sinem K Saka",
+    "Yu Wang",
+    "Constance L Cepko",
+    "Peng Yin"
+  ],
+  "creator": "Jocelynkishi",
+  "published_on": 1598034640,
+  "created_on": 1594033452,
+  "keywords": []
+}

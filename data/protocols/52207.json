@@ -1,0 +1,30 @@
+{
+  "id": 52207,
+  "title": "Cyanobacterial OD based Growth Assay - iGEM IISER Pune 2021",
+  "uri": "cyanobacterial-od-based-growth-assay-igem-iiser-pu-bw8pphvn",
+  "doi": "dx.doi.org/10.17504/protocols.io.bw8pphvn",
+  "description": "{\"blocks\":[{\"key\":\"9cbqg\",\"text\":\"This protocol can be used to measure the optical density (OD) based growth of Cyanobacteria to obtain a growth curve.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"2m4tp\",\"text\":\"Always wash cuvettes for absorbance measurements with distilled water and dry them before taking a new measurement.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3tu40\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dek8b\",\"text\":\"Ensure the sample is well mixed and take measurements immediately as the cells might settle.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"751bq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9si84\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fipm9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"at6ne\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"4vact\",\"text\":\"BG-11 media \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eiqsh\",\"text\":\"150 mM NaCl\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vfn\",\"text\":\"Distilled water\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Start with a single colony of Synechococcus elongatus UTEX 2973 and inoculate it in 10 mL of liquid BG-11 media containing 150 millimolar (mM) of NaCl.",
+    "Allow the colony to grow to a dark green color for 1-2 days in a shaker incubator at 150 rpm, at the temperature for which you want a growth curve. We are using the Thermo Scientific MaxQ 6000 shaking incubator.",
+    "Transfer the growing mixture into 90 mL of liquid BG-11 media containing 150 millimolar (mM) of NaCl.",
+    "Allow the 100 mL the growing mixture to grow for 24 hours",
+    "Take 1 mL of the culture and measure its optical density in a spectrophotometer at a wavelength of 730 nm, since it lies outside of the absorption spectrum of cyanobacterial pigments (Blankenship et al., 2011), after calibrating the spectrophotometer to the BG-11 media with 150 mM NaCl. We are using the Eppendorf Biospectrometer Basic spectrophotometer.",
+    "If the OD of the culture is of a high-density (OD= 0.8-1) proceed with the next step. If not, allow the culture to grow for some more time before taking an OD measurement again. If the OD of this culture is &gt;1, subculture 10 mL of the culture into 90 mL of the BG-11 media with 150 millimolar (mM) NaCl and allow it to grow again before taking an OD measurement.",
+    "After obtaining the OD from the previous step, use the formula O1.V1 = O2.V2 (where O is OD and V is the volume of the culture at that OD). O1 is the OD value at which you want to start measuring the growth and O2 is the OD value of the high-density culture (OD = 0.8 -1). V1 is the volume of culture that has the OD=O1. V2 is the volume of the high-density culture that needs to be diluted to V1 in order to obtain a culture with OD=O1.",
+    "For the purposes of this experiment, we want to start measuring growth from a 100 mL culture of OD = 0.2. Let&#39;s say we measured the OD of the high-density culture to be 0.8. Thus, by the above formula; 0.2x100 = 0.8xV2 V2 = 25 ml. Thus we need to dilute 25 ml of the high-density culture to 100 mL with the BG-11 media containing 150 millimolar (mM) NaCl.",
+    "Once the 100 mL culture of OD=0.2 is obtained, we can start making measurements. Take 1 mL of this culture and record the absorbance value in the spectrophotometer.",
+    "Take 1 mL of the culture and make absorbance measurements every 3 hours till an OD=1 is obtained."
+  ],
+  "authors": [
+    "misaal.bedi"
+  ],
+  "creator": "misaal.bedi",
+  "published_on": 1629216592,
+  "created_on": 1628505652,
+  "keywords": []
+}

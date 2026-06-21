@@ -1,0 +1,27 @@
+{
+  "id": 50497,
+  "title": "How to create baseurl for OAI-PMH harvesting with OpenRefine",
+  "uri": "how-to-create-baseurl-for-oai-pmh-harvesting-with-bvi9n4h6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bvi9n4h6",
+  "description": "{\"blocks\":[{\"key\":\"4isjg\",\"text\":\"This protocol describes the method for creating baseurl for harvesting an OAI-PMH repository from a list of identifiers.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"fg633\",\"text\":\"Installare l'applicativo Openrefine\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"13f3q\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3rv0n\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":[]},{\"key\":\"1u4q0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"software\",\"mutability\":\"\",\"data\":{\"id\":1167,\"guid\":\"49F8B797341F11EE9D4302C0B41BC903\",\"name\":\"OpenRefine\",\"version\":\"\",\"os_name\":\"\",\"os_version\":\"\",\"developer\":\"Freebase, then Google, now open source community\",\"repository\":\"https://github.com/OpenRefine/OpenRefine\",\"link\":\"https://openrefine.org/\",\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Open the OpeRefine project containing the list of OAI identifiers prepared for harvesting. The list can be prepared by following the directions in the linked protocol How to import OAI-PMH identifiers into OpenRefine. How to import OAI-PMH identifiers in OpenRefine by Andrea Marchitelli",
+    "Click on the identifier column present in the project and choose the option Edit Column &gt; Add Column based on this column.",
+    "In the dialog with the new column settings enter baseurl_oai as the column name and a GREL expression that concatenates the journal&#39;s baseurl_oai, the GetRecord verb, and the OAI identifier already in the files. E.g.. &#39;http://www.bibliotecheoggi.it/trends/oai?verb=GetRecord&amp;metadataPrefix=oai_dc&amp;identifier=&#39;+value Be careful to keep superscripts (&#39;) at the beginning and end of the URL string",
+    "At this point confirming the operation you will obtain a new column called baseurl_oai containing the URLs for the GetRecord of each article.",
+    "Test the result obtained by clicking on a couple of links and verifying that the corresponding page opens correctly"
+  ],
+  "authors": [
+    "Andrea Marchitelli",
+    "Carlo Bianchini",
+    "Alessandra Moi"
+  ],
+  "creator": "Andrea Marchitelli",
+  "published_on": 1622882552,
+  "created_on": 1622882083,
+  "keywords": []
+}

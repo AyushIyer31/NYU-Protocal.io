@@ -1,0 +1,36 @@
+{
+  "id": 54048,
+  "title": "Minimum inhibitory concentration of butanol for E. coli KJK01",
+  "uri": "minimum-inhibitory-concentration-of-butanol-for-e-byz8px9w",
+  "doi": "dx.doi.org/10.17504/protocols.io.byz8px9w",
+  "description": "{\"blocks\":[{\"key\":\"3stdr\",\"text\":\"This protocol helps you determine the minimum inhibitory concentration (MIC) of butanol for E. coli KJK01. However, this technique can be extended to determine the MIC of any metabolite for any strain by making adjustments to the concentration of the metabolite in the starting wells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9v64\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Take a 96 welled plate.",
+    "Calculate the amount of butanol that you require in the starting well. Wilbanks 2017 paper suggests that butanol shows strong toxic effects below 10 g/L and entirely inhibits growth at 15 g/L. We should expect our MIC to fall in this range. Hence, we can start with an initial concentration of 60 mg/ml. Comprehensive characterization of toxicity of fermentative metabolites on microbial growth.. Biotechnology for biofuels.",
+    "Take 185.2 µL, of LB and pour it in wells B2 to D2.",
+    "Pour 100 µL, of LB of LB in all wells from B3 to B11 and the same for rows C and D.",
+    "Take 14.6 µL, of Butanol and pour it wells B2 to D2 and mix well.",
+    "Take 100 µL, of sample from well B2 and pour it in well B3. Mix well.",
+    "Take 100 µL, of sample from well B3 and pour it in well B4. Mix well. Repeat this for the subsequent wells till you reach well B10.",
+    "Take 100 µL, of sample from well B10 and discard in the well B12. Do not add the 100µL sample into well B11 as it is supposed to serve as our control (i.e. culture without butanol).",
+    "Repeat steps 5 to 7 for rows C and",
+    "Take 0.2 µL, secondary overnight culture of wild type strain and inoculate wells B2 to B11.",
+    "Cover the 96 welled plate with foil and place it in the incubator at 37 o C.",
+    "Fill the border wells with milliQ.",
+    "Take a reading of the plate using any plate reader every hour and place it back in the incubator. You may run this for 24 hrs.",
+    "Obtain a growth curve for each strain and concentration. Identify the least concentration for which the growth curve shows a sharp drop.",
+    "Take 0.2 µL, secondary overnight culture of uninduced KJK01 strain and inoculate wells C2 to C11.",
+    "Take 0.2 µL, secondary overnight culture of induced KJK01 strain and inoculate wells D2 to D11."
+  ],
+  "authors": [
+    "Arshshaikh"
+  ],
+  "creator": "Arshshaikh",
+  "published_on": 1634323149,
+  "created_on": 1634127762,
+  "keywords": []
+}

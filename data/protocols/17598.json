@@ -1,0 +1,39 @@
+{
+  "id": 17598,
+  "title": "DNA extraction from avian faeces stored in ethanol",
+  "uri": "dna-extraction-from-avian-faeces-stored-in-ethanol-ve6e3he",
+  "doi": "dx.doi.org/10.17504/protocols.io.ve6e3he",
+  "description": "{\"blocks\":[{\"key\":\"ben6o\",\"text\":\"DNA extraction from blue tit (Cyanistes caeruleus) faeces stored in ethanol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":76}],\"entityRanges\":[],\"data\":[]},{\"key\":\"1tkr\",\"text\":\"Methodology uses the Qiagen QIAamp DNA Stool Kit (Qiagen part no. 51504), following the “Isolation of DNA from Stool for Pathogen Detection” protocol (June 2012 edition), with some modifications following Zeale et al. 2011 (Mol. Ecol. Res. 11: 236-244) and custom modifications to accommodate dried avian faeces.  Custom modifications include homogenisation of samples in lysis buffer by shaking in a TissueLyser with a tungsten carbine bead, increased lysis times in the presence of additional Proteinase K, and use of larger buffer volumes; all these modifications were experimentally validated to improve DNA yields.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":211,\"length\":5}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"d1s5q\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"egdhb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"dtmv4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"QBS48\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"v4rIu\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"djq30\",\"text\":\"The QIAamp® Fast DNA Stool Mini Kit (cat. no. 51604) replaces the kit that was used for this protocol (Qiagen QIAamp DNA Stool Kit, cat. no. 51504).  However, the protocol and accompanying modifications are still appropriate for the new version of the kit.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":9033,\"guid\":\"410B4128341F11EE9D4302C0B41BC903\",\"name\":\"QIAamp® Fast DNA Stool Mini Kit \",\"mol_weight\":0,\"sku\":\"51604\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":25,\"name\":\"Qiagen\",\"link\":\"https://www.qiagen.com/us/products/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Remove ~100-200 mg of blue tit faeces (typically 2-3 small fragments of faeces, each ~5 mm long) from storage tube, allow ethanol to evaporate off, and then place into a 2 mL round-bottomed centrifuge tube (Eppendorf 2 mL SafeLock tubes are good). Avoid using faeces that has lots of uric acid on it, or scrape off uric acid.",
+    "Add 1.4 mL Buffer ASL to the faecal sample. Vortexing will not typically homogenise dried avian faeces, so to homogenise add one 3 mm diameter tungsten carbide bead and shake on a Qiagen TissueLyser for 1 minute at 24 Hz.",
+    "Add 20 uL of Proteinase K (using stock supplied in Stool kit). Vortex briefly to mix, then heat the suspension for 30 minutes at 70 °C. Both adding ProtK at this step and homogenising using the TissueLyser in the previous step increase DNA yields.",
+    "Vortex for 30 seconds, then centrifuge sample at 13,000 rpm for 1 minute to pellet faecal particles.",
+    "Pipet 1.2 mL of the supernatant into a new 2 mL centrifuge tube. The remaining faecal material can be stored and used for microscopic analysis if required; otherwise discard the pellet but don’t forget to retrieve tungsten carbide bead first.",
+    "Add 1 InhibitEX tablet to the sample and vortex immediately and continuously for 1 minute or until the tablet is completely suspended. Incubate suspension for 1 minute at room temperature to allow inhibitors to absorb to the InhibitEX matrix.",
+    "Centrifuge sample at 13,000 rpm for 3 minutes to pellet inhibitors bound to InhibitEX matrix.",
+    "Pipet all the supernatant (typically 400-600 μL) into a new 1.5 mL centrifuge tube and discard the pellet. Centrifuge the sample at full speed for 3 minutes. Transfer of small quantities of pellet material will not affect the procedure.",
+    "Pipet 20 μL of Proteinase K (either from kit, or a user-supplied 10mg/mL solution) into a new 1.5 mL centrifuge tube.",
+    "Pipet 400 μL of supernatant from step 8 into the 1.5 mL tube containing proteinase K.",
+    "Add 400 μL of Buffer AL, and mix well by vortexing for 15 seconds. Don’t add the proteinase K directly to buffer AL.",
+    "Incubate at 70 °C for 15 minutes.",
+    "Add 400 μL of ethanol (96-100%) to the lysate and mix well by vortexing. Centrifuge briefly to remove any liquid from the lid of the tube.",
+    "Carefully apply 600 μL of the lysate to a QIAamp spin column (in a 2 mL collection tube) without moistening the rim. Centrifuge at 13,000 rpm for 1 minute. Place spin column in a new 2 mL collection tube and discard the tube containing the filtrate.",
+    "Repeat step 14 using the remaining liquid from step 13.",
+    "Carefully open the spin column and add 500 μL of Buffer AW1. Centrifuge at 13,000 rpm for 1 minute. Place spin column in a new 2 mL collection tube and discard the tube containing the flow-through.",
+    "Carefully open the spin column and add 500 μL of Buffer AW2. Centrifuge at 13,000 rpm for 2 minutes. Discard tube containing the flow-through.",
+    "Place spin column in a new 2 mL collection tube. Centrifuge at 13,000 rpm for 1 minute. Discard tube containing flow-through. This step ensures the silica membrane is completely dry and has no residual ethanol from Buffer AW2.",
+    "Transfer the spin column into a new 1.5 mL centrifuge tube. Using a low-bind tube will minimise DNA loss through adsorption to tube walls (Eppendorf DNA LoBind tubes are good). Pipet 50 μL of Buffer EB (not supplied in kit; Buffer EB = 10 mM Tris) directly onto the spin column membrane. Incubate for 5 minutes at room temperature, then centrifuge at 13,000 rpm for 1 minute to elute DNA."
+  ],
+  "authors": [
+    "James Nicholls"
+  ],
+  "creator": "James Nicholls",
+  "published_on": 1591358200,
+  "created_on": 1541671832,
+  "keywords": []
+}

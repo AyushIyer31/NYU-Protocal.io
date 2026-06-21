@@ -1,0 +1,39 @@
+{
+  "id": 101329,
+  "title": "FASP (for fChEP samples)",
+  "uri": "fasp-for-fchep-samples-de7r3hm6",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv5rry6g1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"3pu74\",\"text\":\"Filter aided sample preparation (FASP) clean-up protocol optimised for fChEP samples containing 1% SDS.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"8jfdl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6694f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"foeal\",\"text\":\"Day 1 spin time = 3 hours (+ 40 min for reduction and alkylation)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9vkp0\",\"text\":\"Day 2 spin time = 40 minutes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e6crd\",\"text\":\"ABC per sample = 500ul\\nUrea/ABC per sample = 1ml\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"8d38m\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"274oh\",\"text\":\"Note: this protocol has 2 extra urea/ABC washes compared to the original and is for samples which have not yet been reduced and alkylated. The number of washes will be sample and buffer dependent and may need optimising.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"5t724\",\"text\":\"Vivacon 500, Hydrosart, 30,000 MWCO (APPLETON WOODS LTD, VN01H22)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6jpba\",\"text\":\"Urea (Sigma-Aldrich, U5378-500G)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2879q\",\"text\":\"Ammonium bicarbonate (Sigma-Aldrich, A6141-500G)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fa6dg\",\"text\":\"Dithiothreitol (DTT; Promega, V3151)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7vrqf\",\"text\":\"Iodoacetamide (IAA; ?)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f364g\",\"text\":\"Trypsin (Thermo, 90058)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Start with cell lysate with sheared DNA and of known protein concentration.",
+    "Heat at 95°C for 5 min.",
+    "Spin at 16,000 x g for 5 min to clarify the lysate",
+    "Combine pre-determined amount of sample with 8M urea, 50 mM ammonium bicarbonate in the 30kDA MWCO filter unit so that total volume is 200ul. Spin at 14,000 rcf for 20 minutes.",
+    "Add 200 μl 8M urea, 50 mM ammonium bicarbonate to filter, and spin at 14,000 rcf for 20 minutes. Discard flow through",
+    "Add 100 μl 10 mM DTT in 8M urea, 50 mM ammonium bicarbonate. Incubate at room temperature for 20 minutes",
+    "Then add 100 ul 55mM IAA (27.5 mM final) in 8M urea, 50mM ABC. Incubate in dark at room temperature for 20 minutes.",
+    "Spin 14,000 rcf for 20 minutes",
+    "Add 100 μl 8M urea, 50 mM ABC to filter. Spin at 14,000 rcf for 20 minutes",
+    "Add 100 μl of 50 mM ammonium bicarbonate. Spin at 14,000 rcf for 20 minutes",
+    "Repeat 100 μl 50 mM ammonium bicarbonate, and spin again",
+    "Transfer the filter unit to a new collection tube",
+    "Add 1/20 trypsin in 100ul 50mM ABC to each sample. Parafilm tube lids shut. Digest 4 - 18 hrs (usually 16 h) in 37°C incubation hood with wet paper towel.",
+    "Collect filtrate by spinning at 14,000 rcf for 20 minutes. If dried out, add 100ul 50mM ABC first. (Instead of 100 ul add 50 ul of 50 mM ABC so that the final volume isn’t that high).",
+    "Add 100uL of ABC and spin again for 20min @ 14,000 rcf. Collect again.",
+    "Proceed to C18",
+    "100 μl 8M urea, 50 mM ammonium bicarbonate, and spin again",
+    "100 μl 8M urea, 50 mM ammonium bicarbonate, and spin again",
+    "100 μl 8M urea, 50 mM ammonium bicarbonate, and spin again"
+  ],
+  "authors": [
+    "Victoria Munro"
+  ],
+  "creator": "Victoria Munro",
+  "published_on": 1761667845,
+  "created_on": 1717682578,
+  "keywords": []
+}

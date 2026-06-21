@@ -1,0 +1,27 @@
+{
+  "id": 122409,
+  "title": "Impact of meteorological conditions and air pollution on Covid-19 pandemic transmission in Lombardy region, Northern Italy\n",
+  "uri": "impact-of-meteorological-conditions-and-air-pollut-d3sh8nb6",
+  "doi": "dx.doi.org/10.21203/rs.3.pex-1045/v1",
+  "description": "{\"blocks\":[{\"key\":\"fn79q\",\"text\":\"Italy was the first, among all the European countries, to be strongly hit by the Covid-19 pandemic outbreak caused by the severe acute respiratory syndrome coronavirus 2 (Sars-CoV-2). The virus, proven to be very contagious, infected more than 9 million people worldwide (in June 2020). Nevertheless, it is not clear the role of air pollution and meteorological conditions on virus transmission. In this study, we quantitatively assessed how the meteorological and air quality parameters are correlated to the Covid-19 transmission in Lombardy (Northern Italy), the region epicenter of the virus outbreak. Our main findings highlight that temperature and humidity related variables are negatively correlated to the virus transmission, whereas air pollution (PM2.5) shows a positive correlation. In other words, Covid-19 pandemic transmission prefers dry and cool environmental conditions, as well as polluted air. For these reasons, the virus might easier spread in unfiltered air-conditioned environments. Those results will be supporting decision makers to contain new possible outbreaks.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"syk2d\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Calculate the Absolute Humidity and Water Vapor concentration using the Relative Humidity, Temperature, and Pressure variables from data.",
+    "Use the MATLAB function [rho ,pval] = corr(X, Y, &#39;Type&#39;, &#39;Spearman&#39;) and compute the Spearman rank correlation (rho). X = Intensive Care Unit patients daily Case Anomaly; Y = Meteorology and Pollution Variables.",
+    "Use the MATLAB function [tau ,pval] = corr(X, Y, &#39;Type&#39;, &#39;Kendall&#39;) and compute the Kendall rank correlation (tau). X = Intensive Care Unit patients daily Case Anomaly; Y = Meteorology and Pollution Variables.",
+    "Compute the correlation coefficient and the p-value for each meteorological and air-pollution variables of Table 5"
+  ],
+  "authors": [
+    "Simone Lolli",
+    "Ying-Chieh Chen",
+    "Sheng-Hsiang Wang",
+    "Gemine Vivone"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1606730355,
+  "created_on": 1606730355,
+  "keywords": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": 4927,
+  "title": "Creating BLAST app for Cyverse",
+  "uri": "creating-blast-app-for-cyverse-g27byhn",
+  "doi": "dx.doi.org/10.17504/protocols.io.g27byhn",
+  "description": "{\"blocks\":[{\"key\":\"3qmls\",\"text\":\"How I created a BLAST app for Cyverse.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"66le3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"fse1n\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"a5qk4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "I created https://github.com/hurwitzlab/muscope-blast to hold the code for the Stampede/Cyverse app. Stampede apps are recommended ( http://developer.agaveapi.co/ ) to have a &#39;stampede&#39; directory for the code -- perhaps a different dir for each execution system? I also created https://github.com/hurwitzlab/ohana for the code to build the BLAST dbs and such.",
+    "I pulled down the HOT from Cyverse Data Store at /iplant/home/scope/data/delong/HOT224-238. To ensure I had everything, I ran https://github.com/hurwitzlab/ohana/blob/master/scripts/check-md5.pl6 to check against MD5 sums. I wrote https://github.com/hurwitzlab/ohana/blob/master/scripts/mk-blast.sh to concatenate all contigs/genes/proteins files into one per type, then index with BLAST.",
+    "The original Eggnog annotations to the predicted genes were delivered in a format that spread one annotation over two lines, so I wrote https://github.com/hurwitzlab/ohana/blob/master/scripts/merge-genes.pl6 to merge them. As there were 15M annotations, I struggled over how to store and retrieve them. I wanted a database like MySQL or Pg, but it&#39;s unlikely I could bring up a daemon-based server on stampede, so I chose SQLite. Problem there is I was quite certain it would be too slow to put 15M in one table, so I decided to make a db for each sample (103 of them). The script https://github.com/hurwitzlab/ohana/blob/master/scripts/pyloader.py will load the dbs.",
+    "This can be any language or executable, but I tend to write these in bash. I often call mine &#39;run.sh&#39; ( https://github.com/hurwitzlab/muscope-blast/blob/master/stampede/run.sh ) and base it off a template ( https://github.com/kyclark/metagenomics-book/blob/master/bash/basic.sh ) that accepts named arguments. This script will query the input file(s) to the BLAST dbs and then use any resulting hits to predicted genes to query SQLite for annotations which will be placed into an additional file.",
+    "The https://github.com/hurwitzlab/muscope-blast/blob/master/stampede/test.sh is for testing that the app is able to be submitted (via &#39;sbatch&#39;) to SLURM and will run.",
+    "The https://github.com/hurwitzlab/muscope-blast/blob/master/stampede/app.jso n file describes the app to Agave so it can be registered. It&#39;s most important to define the &#39;inputs&#39; and &#39;parameters&#39; with argument names that you will reference via environmental variables in the &#39;template.sh&#39; script.",
+    "The https://github.com/hurwitzlab/muscope-blast/blob/master/stampede/template.sh script will take the arguments from Cyverse as environmental variables defined in your &#39;app.json&#39;&#39;s inputs/parameters. I usually just have this pass the arguments to &#39;run.sh&#39;.",
+    "Run &#34;apps-addupdate -F app.json&#34; to register the app with Agave.",
+    "Run &#34;jobs-template $APP &gt; job.json&#34; (e.g, just run &#34;make jobs-template&#34;) to generate a JSON template for submitting the job via the Agave API.",
+    "Use &#39;jobs-submit -F job.json&#39; (or &#39;make jobs-submit&#39;) to test if it will submit. Use &#39;jobs-list | head&#39; to see the status. Your job will be the top one and will start off like &#39;PENDING&#39; and then &#39;STAGING,&#39; &#39;QUEUED,&#39; &#39;RUNNING,&#39; and then &#39;FAILED&#39; or &#39;FINISHED.&#39; Using the job ID (e.g., &#39;5905387002803589606-242ac114-0001-007&#39;) with &#39;jobs-status&#39; and &#39;jobs-history,&#39; you can find out more about what it is doing, possibly where it is failing. When it is done, you can use &#39;jobs-output&#39; to see what was created. The results will land in your &#34;$WORK/&lt;userid&gt;/job-&lt;jobid&gt;-&lt;jobname&gt;&#34; directory.",
+    "Use https://de.cyverse.org/de/ to find the job and submit there.",
+    "If you haven&#39;t already, install the Cyverse SDK ( https://github.com/cyverse/cyverse-sdk ) so you have access to &#34;jobs-submit&#34; and such.",
+    "Use &#39;files-upload&#39; to put the app/scripts onto the storage (execution?) system. There is an &#39;upload&#39; target in the Makefile for this. If you change just one file, you can upload that one e.g. $ files-upload -F run.sh kyclark/applications/muscope-blast-0.0.2/stampede Anytime you change your code, test it locally and then &#34;files-upload&#34; the changes into Cyverse."
+  ],
+  "authors": [],
+  "creator": "Ken Youens-Clark",
+  "published_on": 1485388172,
+  "created_on": 1485387562,
+  "keywords": []
+}

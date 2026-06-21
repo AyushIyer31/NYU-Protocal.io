@@ -1,0 +1,28 @@
+{
+  "id": 68888,
+  "title": "Fluorescence recovery after photobleaching (FRAP)",
+  "uri": "fluorescence-recovery-after-photobleaching-frap-cfhytj7w",
+  "doi": "dx.doi.org/10.17504/protocols.io.5qpvobj29l4o/v1",
+  "description": "{\"blocks\":[{\"key\":\"d9nml\",\"text\":\"This protocol details methods of the FRAP analysis of LRRK2-induced liposome tubules in vitro\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":85,\"length\":8}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Prepare LRRK2-liposome mixtures in a PCR tube with 300 nanomolar (nM) GFP-LRKK2, 20 micromolar (µM) liposomes (labeled with trace amounts of rhodamine-PE) and 1 millimolar (mM) GMPPNP.",
+    "Immediately deposit 6 µL - 10 µL samples of step 1 on a 35 mm glass bottom dish and incubate at 37 °C for 00:30:00 . Note: Drop some buffer in the dish to prevent samples from drying out due to evaporation during incubation.",
+    "Perform FRAP experiments with a Spinning disk confocal (SDC) microscopy at Room temperature on a Nikon Ti-E inverted microscope using the Improvision UltraVIEW VoX system, with the settings as:",
+    "Acquire the time-lapse images at every 00:00:15 .",
+    "Bleach three ROIs with a 488 nm laser for 500 ms.",
+    "Acquire three images before bleaching.",
+    "Acquire post-bleach images up to 00:10:00 at 00:00:15 intervals."
+  ],
+  "authors": [
+    "Xinbo Wang",
+    "Pietro De Camilli"
+  ],
+  "creator": "xinbo.wang",
+  "published_on": 1692994427,
+  "created_on": 1660894116,
+  "keywords": []
+}

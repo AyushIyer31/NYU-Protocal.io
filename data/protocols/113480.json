@@ -1,0 +1,37 @@
+{
+  "id": 113480,
+  "title": "Screening for L1014F mutation in B. rufimanus",
+  "uri": "screening-for-l1014f-mutation-in-b-rufimanus-ds3g6gjw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygxw9kwv8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"cgn8p\",\"text\":\"This protocol describes the process of screening the broad bean bruchid beetle, Bruchus rufimanus (Coleoptera; Chrysomelidae) for the L1014F mutation that has been associated with insecticide resistance in other Coleoptera species (and more widely across insect species).  The starting point is a quick and high-throughout non-destructive DNA isolation from beetles, followed by amplification of a region of the Voltage-gated sodium channel gene (VGSC) that harbours the L1014F mutation. The resulting PCR products can be sent for Sanger sequencing to confirm presence/absence of the L1014F mutation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":80,\"length\":17},{\"style\":\"italic\",\"offset\":412,\"length\":29}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"3t5ns\",\"text\":\"This protocol assumes that you are working with B. rufimanus adults.  The primers were designed with B. rufimanus sequence information and may not result in successful amplification in other Bruchus species.  The beetles  used in this protocol had been stored in 99 percent ethanol in the freezer prior to DNA extraction.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":48,\"length\":12},{\"style\":\"italic\",\"offset\":101,\"length\":13},{\"style\":\"italic\",\"offset\":122,\"length\":1},{\"style\":\"italic\",\"offset\":134,\"length\":1},{\"style\":\"italic\",\"offset\":191,\"length\":7},{\"style\":\"italic\",\"offset\":206,\"length\":3}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"co2pf\",\"text\":\"Please read SDS associated with various consumables and kits used in this protocol and wear appropriate PPE.  A site specific procedural risk assessment should be carried out prior to introducing this protocol to the lab. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"4obkg\",\"text\":\"QuickExtract‱ DNA Extraction Solution (Biosearch Technologies, Germany)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":12,\"length\":1}],\"data\":{}},{\"key\":\"6jp45\",\"text\":\"Classic++ Taq DNA Polymerase (Tonobo)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":13}],\"entityRanges\":[],\"data\":{}},{\"key\":\"2o302\",\"text\":\"3-bruchid-L1014F (forward and reverse primers)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"03BB568AB15B11EF965A0A58A9FEAC02\",\"name\":\":tm:\"}}}}",
+  "steps": [
+    "Individual beetles were placed in 1.5ml micro-centrifuge tubes with 100μl of QuickExtract DNA Extraction Solution.",
+    "Samples were then placed in a ThermoMixer (Eppendorf) at 65 °C and 1000 rpm, °C, for 00:15:00 .",
+    "A number of primers were tested and the following pair produced a single band at the correct size of ca. 500 bp. A B 1 Primer Name Primer Sequence 2 3-bruchid-L1014F-for 5’- CGGACCATGAACTTCCTAGGTGG-3’ 3 3-bruchid-L1014F-rev 5’-GTGTGTAGCAAACCGAGGAGCA-3’",
+    "Prepare a master-mix for the number of samples to be run so that each well will contain: 12.5 µL of Classic++ Taq DNA Polymerase 1 µL of 3-bruchid-L1014F-for 1 µL of 3-bruchid-L1014F-rev 9.5 µL of molecular biology grade water",
+    "Ship plate of PCR products to Sanger Sequencing core facility or service provider along with an aliquot of the 3-bruchid-L1014F-for primer for sequencing. Sequencing from the forward primer is sufficient to extract clean data covering the region of the L1014F mutation.",
+    "The sequence files can be visualised in Geneious Prime or FinchTV. Poor quality regions at start and end of sequences can be trimmed off and each sequence can be annotated with the longest open reading frame and sequences aligned (with traces) to identify the L1014F mutation.",
+    "Samples were transferred to a heating block at 98 °C for 00:02:00 .",
+    "The samples were then placed on ice and the beetles removed and placed back into the 99 percent ethanol for longer term storage.",
+    "The 1.5ml micro-centrifuge tubes minus the beetles were briefly centrifuged using a bench-top centrifuge and the extraction solution (with DNA) was transferred to a PCR plate (semi-skirt).",
+    "These samples were vortexted for 00:00:15 using a benchtop vortex.",
+    "Pipette 1 µL of DNA (from step 6) into each well of a PCR plate and keep on ice",
+    "Pipette 24 µL of master-mix (from step 8) into each well, seal the plate carefully with foil lid, and centrifuge the PCR plate briefly to ensure no droplets adhere to sides of sample wells.",
+    "Place the PCR plate in a PCR machine (e.g MiniAmp Plus Thermal Cycler) and run the following PCR cycle: 95 °C 00:01:00 followed by 35 cycles of 95 °C 00:00:15 65 °C 00:00:15 72 °C 00:00:15 and a final elongation step of 72 °C 00:03:00",
+    "Check a selection of samples by running on a 1.2 percent TBE agarose gel alongside a 100 bp ladder. If using GelRed carry out post-run staining to avoid incorrect sizing of PCR products. A band should be observed at ca. 500 bp."
+  ],
+  "authors": [
+    "Antoine Pichon",
+    "Louise McNamara",
+    "Sheila Alves",
+    "Stephen Byrne"
+  ],
+  "creator": "Stephen Byrne",
+  "published_on": 1755799833,
+  "created_on": 1733217080,
+  "keywords": []
+}

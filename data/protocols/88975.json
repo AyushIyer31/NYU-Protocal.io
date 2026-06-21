@@ -1,0 +1,41 @@
+{
+  "id": 88975,
+  "title": "Golden Gate Assembly",
+  "uri": "golden-gate-assembly-c25pyg5n",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg3xknqg25/v2",
+  "description": "{\"blocks\":[{\"key\":\"9qvbj\",\"text\":\"2023 NUS-Singapore iGEM team followed this protocol to assemble DNA oligos containing Golden Gate restriction sites with a plasmid backbone that contains the same restriction sites. The restriction enzymes utilised in this protocol are the Type IIS restriction enzymes, specifically BsaI. The use of Type IIS restriction enzymes ensures that there is no scar or extra sequence at the junctions between the assembled fragments. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"5mqo6\",\"text\":\"This protocol outlines the Golden Gate procedures with a sample volume of 20 µL per reaction.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"1kmga\",\"text\":\"Proper lab PPE must be worn at all times.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"58mrg\",\"text\":\"Thermal gloves shall be worn when handling items from   fridge.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":54,\"length\":1}],\"data\":{}},{\"key\":\"p6ca\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"temperature\",\"mutability\":\"MUTABLE\",\"data\":{\"error_temperature\":false,\"guid\":\"\",\"id\":0,\"label\":\"\",\"scientificNotation\":false,\"temperature\":\"-20\",\"unit\":10}}}}",
+  "materials_text": "",
+  "steps": [
+    "Add the following reagents into a PCR tube: Item Volume 1 DI Water 10μL 2 Plasmid 1μL 3 PCR Extract Oligo 5μL 4 BsaI-HFv2 Enzyme 1μL 5 T4 DNA Ligase 1μL 6 T4 Ligase Buffer 2μL Reagents with enzymes such as BsaI-HFv2 Enzyme and T4 DNA Ligase must be kept at a low temperature (in ice) when they are in-use to prevent the enzymes from denaturation.",
+    "Prepare an ice box.",
+    "Put the sample into the Thermal Cycler and run it with the following conditions: *Set &#34;Lid Temperature&#34; to 105 °C and set &#34;Volume&#34; to 20 µL Temperature Duration 1 37°C 5 minutes 2 16°C 5 minutes 3 Go to step 1, repeat the cycle 40 times 4 37°C 1 hour 5 60°C 15 minutes 6 12°C Infinite Loop",
+    "Place the 10X NEB T4 DNA ligase buffer New England Biolabs , BsaI-HF®v2 New England Biolabs Catalog #R3733S , and T4 DNA Ligase New England Biolabs Catalog #M0202S in ice.",
+    "Prepare a box of ice.",
+    "Take an Eppendorf tube that contains pre-made competent cells from the -80 °C fridge.",
+    "Immediately place the Eppendorf tube with competent cells into the ice box for 00:05:00 .",
+    "Add the whole Golden Gate Assembly product ( 20 µL ) o into the Eppendorf tube containing the competent cells.",
+    "Tap the bottom of the Eppendorf tube to mix the solution.",
+    "Leave the Eppendorf tube in ice for 00:10:00 .",
+    "Place the Eppendoft tube into a foam floating.",
+    "Place them into the water bath for 00:00:45 at 42 °C for heat shock.",
+    "Place the Eppendorf tube into the ice immediately",
+    "Add 1 mL of the LB media into the Eppendorf tube.",
+    "Place the Eppendoft tube into the incubator at 37 °C for 01:00:00 for recovery.",
+    "Centrifuge the Eppendorf tube to form a cell pellet (no specific speed and time).",
+    "Prepare an LB agar plate with the correct antibiotics.",
+    "Remove 950 µL of the LB solution from the Eppendorf tube that contains the cell pellet, leaving about 100 µL in the Eppendorf tube.",
+    "Resuspend the cells by pipetting the solution.",
+    "Spread the cells onto the agar with the L-spreader.",
+    "Place the petri dish in the incubator at 37 °C for Overnight to allow the colonies to grow."
+  ],
+  "authors": [
+    "NUS iGEM"
+  ],
+  "creator": "NUS iGEM",
+  "published_on": 1696844276,
+  "created_on": 1696767050,
+  "keywords": []
+}

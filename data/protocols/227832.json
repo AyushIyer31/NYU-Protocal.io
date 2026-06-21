@@ -1,0 +1,40 @@
+{
+  "id": 227832,
+  "title": "Strip Immunoblot Assay",
+  "uri": "strip-immunoblot-assay-haqyb2dxx",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx451kl8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"fqhg3\",\"text\":\"Understanding the antibody response to viral infection is essential for surveillance, diagnostics, and epidemiological research. However, current methods to detect virus-specific antibodies are often resource-intensive and impractical for deployment in outbreak settings or in field-based studies. This protocol presents an economical and high-throughput the strip immunblot assay (SIA) for detecting anti-lymphocytic choriomeningitis virus (LCMV) antibodies in mouse serum. The expected results include quantitative determination of seropositivity.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"3yfng\",\"text\":\"Assumes you have already generated antigen lysate for immunoblotting.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"o17ge\",\"text\":\"Preparation of the antigen lysate should be done under appropriate viral tissue culture methods including needed PPE. After inactivation with lysis buffer, lysate can be used on the benchtop. All sera samples should be heat inactivated at \\u000057°C for 20 minutes prior to use on the benchtop.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"ew327\",\"text\":\"2-mercaptoethanol Sigma-Aldrich #M3148\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"rypzc\",\"text\":\"Laemmli sample buffer  Use 4X stock for a thicker sample viscosity to help with loading\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5cutt\",\"text\":\"2D gel Invitrogen #NP0346BOX\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vfcmc\",\"text\":\"Transfer stacks Invitrogen #IB23002\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"kv8ee\",\"text\":\"Western incubation dish BioRad #1703902\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"gm8y7\",\"text\":\"Blocking buffer Thermo #37530\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"w8ced\",\"text\":\"Washing buffer 0.5% Tween-20 in TBS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"o8sjl\",\"text\":\"AP-conjugated Secondary antibody (IgG or IgM)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fssig\",\"text\":\"Developing reagent Invitrogen #WP20001, keep blot in dark after developing\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "To the antigen source (clarified cellular lysates, purified virions, or recombinant purified protein), add 1:1 4X Laemmli sample buffer with 10% BME for final concentration of 2X sample buffer and 5% BME.",
+    "Heat at 100°C for 10 minutes.",
+    "Quickspin to collect sample droplets from top of snapcap tube.",
+    "Load 250 µL of prepared lysate to the large well of a 2D gel. Load 5 µL of SeeBlue2 ladder (or pre-stained ladder of choice) to the small well.",
+    "Perform electrophoreses at 100 V for approximately 1 hour.",
+    "Transfer gel to membrane using the iBlot system.",
+    "Using a ruler, draw a line with a pen approximately 0.5 cm from the top edge of the blot.",
+    "Using the ruler and a razor blade, cut strips. Strips should be approximately 2 mm in width, starting from the far edge of the blot. This works best using a pane of glass as a cutting surface. Discard the first 5 mm of the far edge.",
+    "Store strips in blocking buffer at 4°C until use.",
+    "Allocate the pre-blocked strips to a western incubation dish.",
+    "Cover with 500 uL blocking buffer.",
+    "Add desired volume of sera or blood sample to well. Recommend to use a volume of 2 uL to 10 uL.",
+    "Incubate overnight with rocking at 4°C.",
+    "Following day, carefully decant sample.",
+    "Rinse 3X with TBS-T, followed by 3 5-minute rinses with TBS-T.",
+    "Add 500 uL of 2° antibody to each lane and incubate at room temperature in the dark with rocking for at least 1 hour.",
+    "Rinse 3X with TBS-T, followed by 3 5-minute rinses with TBS-T.",
+    "Remove remaining washing buffer with a pipette.",
+    "Add 500 uL developing agent to blot and incubate in the dark for 30 minutes or until color develops.",
+    "Remove strips from incubation dish and mount on paper to scan. Store in dark."
+  ],
+  "authors": [
+    "Rebekah Honce"
+  ],
+  "creator": "Rebekah Honce",
+  "published_on": 1781496050,
+  "created_on": 1758478221,
+  "keywords": []
+}

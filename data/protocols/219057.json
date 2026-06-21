@@ -1,0 +1,27 @@
+{
+  "id": 219057,
+  "title": "Drug transporter (ABC), P-gp, BCRP, BSEP inhibition using drug substrate assay",
+  "uri": "drug-transporter-abc-p-gp-bcrp-bsep-inhibition-usi-gz6rbx9d7",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbkbzngpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"4m12\",\"text\":\"ATP-binding cassette (ABC) transporter assays are used to study the activity and interaction of drugs with ABC transporters P-gp, BCRP, and BSEP, which are crucial for drug absorption, distribution, and excretion. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"qlu4\",\"text\":\"These assays measure the effect of a test compound on the transport of a known probe substrate by the transporter. By quantifying the amount of substrate transported in the presence and absence of the test compound, researchers can determine the degree of inhibition. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"clomq\",\"text\":\"ATP-binding cassette (ABC) transporters are a family of protein pumps that move molecules across cell membranes, playing a crucial role in drug absorption, distribution, and excretion. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5ll28\",\"text\":\"These assays help determine if a drug is a substrate or inhibitor of a specific ABC transporter, impacting its pharmacokinetic properties and potential for drug-drug interactions. Common assay types include vesicular transport assays, cell-based uptake assays, and ATPase assays. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8dsc9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4cqjl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"3nkou\",\"text\":\"Always wear appropriate PPE for this protocol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cescn\",\"text\":\"Refer to Material Safety Data Sheets for additional safety and handling information.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"amrts\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "These assays measure the effect of a test compound on the transport of a known probe substrate by the transporter. By quantifying the amount of substrate transported in the presence and absence of the test compound, researchers can determine the degree of inhibition. Principle: These assays utilize a &#34;probe substrate&#34; - a compound known to be transported by the specific ABC transporter. Inhibition Assay: The test compound (potential inhibitor) is co-incubated with the probe substrate and the transporter, and the amount of substrate transported is measured. If the test compound inhibits the transporter, the amount of substrate transported will be reduced. IC50: The concentration of the test compound required to inhibit the transporter by 50% is measured",
+    "The percent of control is calculated using the equation below. The IC50 value is determined by non-linear regression analysis of theconcentration-response curve using the Hill equation. 𝐶𝑜𝑛𝑡𝑟𝑜𝑙 (%) = (𝐶𝑜𝑚𝑝𝑜𝑢𝑛𝑑 − 𝐵𝑎𝑐𝑘𝑔𝑟𝑜𝑢𝑛𝑑) / (𝑉𝑒ℎ𝑖𝑐𝑙𝑒 𝑐𝑜𝑛𝑡𝑟𝑜𝑙 − 𝐵𝑎𝑐𝑘𝑔𝑟𝑜𝑢𝑛𝑑) × 100 Compound is the individual peak ratio obtained in the presence of thetest compound and ATP. Vehicle control is the mean peak ratio obtained in the presence of vehicle control (1% DMSO) and ATP. Background is the mean peak ratio obtained in the presence of vehicle control and in the absence of ATP.",
+    "The membrane vesicles (MV) prepared from HEK293 cells over expressing human or other species specific ABC transporters (from SOLVO) and transporter specific substrates are added into a standard 96 well plate.",
+    "Subsequently ATP or AMP is added to the plate and incubated at 37 °C for 5 min (BESP) or 1 min (P-gp and BCRP).",
+    "The amount of transporter specific substrate accumulated inside the MV is quantified by LC-MS using peak ratio of the peak area of transporter specific substrate vs. the peak area of the internal standard. %s %s",
+    "The reaction is stopped by adding cold washing buffer. The membrane vesicles are washed.",
+    "Test compounds, reference inhibitor or vehicle control (1% DMSO) are pre-incubatedwith the MV at 37 °C for 15 min."
+  ],
+  "authors": [
+    "Nick Lynch"
+  ],
+  "creator": "Nick Lynch",
+  "published_on": 1754229246,
+  "created_on": 1748429990,
+  "keywords": []
+}

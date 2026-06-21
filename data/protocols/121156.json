@@ -1,0 +1,33 @@
+{
+  "id": 121156,
+  "title": "Quantile regression for trend analysis",
+  "uri": "quantile-regression-for-trend-analysis-d2jc8ciw",
+  "doi": "dx.doi.org/10.1038/nprot.2008.203",
+  "description": "{\"blocks\":[{\"key\":\"7ufah\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"nkbp7\",\"text\":\"Quantile regression extends ordinary least-squares regression to quantiles of the response variable. Ordinary regression is a model for the conditional mean, where the mean is conditional on the value of the explanatory variable.  Likewise, quantile regression is a model for the conditional quantiles.  For trend analysis the explanatory variable is time. Quantiles are points taken at regular intervals from the cumulative distribution function of a random variable. The quantiles mark a set of ordered data into equal-sized data subsets.\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"xr4f5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bbv8i\",\"text\":\"\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"tsg6i\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ekrjf\",\"text\":\"The software is downloaded from the internet and installed on a computer.  A data set from the internet is imported into a software session.  An exploratory plot of the data is created to visualize the trends.  A quantile regression model is fit to the data to quantify the trends and determine their statistical significance.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"j4cn2\",\"text\":\"1. Computer running Macintosh, Linux/Unix, or Windows\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"zfxgs\",\"text\":\"  2. Internet connection\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"hc2nx\",\"text\":\"  3. R environment for statistical computing - \\\"http://www.r-project.org/\\\":http://www.r-project.org 1\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":100,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Download and install R. Tip: Only the base directory is needed.",
+    "Click on the icon to start R. With Linux/Unix, type the letter R from a command window.",
+    "Read the data into R by typing on the command line: _StormMax=read.csv - &#34;http://garnet.fsu.edu /jelsner/extspace/extremedatasince1899.csv&#34;:http://garnet.fsu.edu /jelsner/extspace/extremedatasince1899.csv Caution: The quotes must be bidirectional. With a copy/paste directly from this document, the quotes will most likely be unidirectional causing an error message.",
+    "Subset the cyclones by basin (cyclones away from the U.S. coastline) and by year after 1977 (satellite era) by typing: StormMaxBasin=subset(StormMax,Region==&#34;Basin&#34;); StormMaxBasin=subset(StormMaxBasin,Yr&gt;1977)",
+    "Make the columns of the data set available by name by typing: attach(StormMaxBasin)",
+    "Create an exploratory plot of the annual lifetime maximum wind speed (intensity) as a function of year by typing: x=boxplot(Wmax~as.factor(Yr),plot=F) boxplot(Wmax~as.factor(Yr),ylim=c(35,175),xlab=&#34;Year&#34;,ylab=&#34;Intensity (kt)&#34;) xx=1:29 abline(lm(x$stats[5,]~xx),col=&#34;red&#34;) abline(lm(x$stats[4,]~xx),col=&#34;blue&#34;) abline(lm(x$stats[3,]~xx),col=&#34;green&#34;)",
+    "Install and load the quantreg package developed by Roger Koenker 2 . Then print the reference citation. install.packages(&#34;quantreg&#34;) library(quantreg) citation(&#34;quantreg&#34;)",
+    "Summarize the results of a quantile regression at the upper quantiles 0.75, 0.9, and 0.95. summary(rq(Wmax~Yr,tau=c(0.75,0.9,0.95)),se=&#34;iid&#34;) Tip: The standard errors ( se= argument) can be estimated using other methods, type: ?summary.rq",
+    "Plot the model results. model=rq(Wmax~Yr,tau=seq(0.2,0.8,0.1)) plot(summary(model,alpha=.05,se=&#34;iid&#34;),parm=2,pch=19,cex=1.2,mar=c(5,5,4,2)+0.1,ylab=&#34;Trend (kt/yr)&#34;,xlab=&#34;Quantile&#34;)",
+    "Make sure there is permission on the computer to install software. Make sure the commands are typed exactly as shown with bidirectional double quotes. If copy/paste is used, make sure to change the quotations to bidirectional.",
+    "20 minutes",
+    "The exploratory plot should verify the lack of trend in the median lifetime maximum intensity. It should also show a tendency for the strongest cyclones (higher quantiles) to get stronger during the past 30 years. The statistical significance of the trends is assessed with a quantile regression model and the results are plotted.",
+    "The increasing intensity of the strongest tropical cyclones by James B. Elsner, James P. Kossin &amp; Thomas H. Jagger published in Nature on 04 Jul, 2008 https://dx.doi.org/10.1038/nature07234"
+  ],
+  "authors": [
+    "James Elsner"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1221546250,
+  "created_on": 1221546250,
+  "keywords": []
+}

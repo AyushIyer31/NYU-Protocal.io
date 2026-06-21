@@ -1,0 +1,27 @@
+{
+  "id": 52597,
+  "title": "Microfluidics 6: PDMS Chip, Optical Quality Control and Flow Leakage Test",
+  "uri": "microfluidics-6-pdms-chip-optical-quality-control-bxkvpkw6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bxkvpkw6",
+  "description": "{\"blocks\":[{\"key\":\"1ijfi\",\"text\":\"Fabrication of microfluidic chips requires high quality and high resolution manufacturing techniques. After fabrication, the quality inspection is crucial and can be performed optically for visual parameters and flow application. If the sizes are well, chips are clean and intake, and flow is laminar without leakage, then everything is OK. This protocol describes the methods for testing of the chips fabricated in our laboratory.\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bfs3d\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"aj7vq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"d8ct1\",\"text\":\"This protocol is derived from open scientific literature and can be modified by user freely.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"8vcte\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"8p0la\",\"text\":\"Syringe, 1mL\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1t93h\",\"text\":\"Distilled water, non-sterile filtered\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9c4p7\",\"text\":\"Food coloring, minute amount\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4fsvl\",\"text\":\"Tubings, silicone OD:2.5mm, ID:1,5mm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6tkq5\",\"text\":\"Fitting parts, 3D printed\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Optical Quality Control of the microfluidic chips are performed by using digital microscope. The visual parameters checked for acceptance of the chip are as listed below. Defects and scratchs Strains and voids Dirt in features Air bubbles in features Ports and Bonding, out of alignment Not bond features Incorrect sizes of features Broken PDMS and/or glass Uneven PDMS thickness All the parameters are controlled under 4X digital microscope and any abnormalities are reported as photo recordings. Digital Microscope (Andonstar, 4X ADSM201)",
+    "The microchannels inside PDMS chips after bonding are needed to be checked for the parameters which are Defects and scratches, micron size Strains and voids, micron size Dirts inside microchannels Airbubbles inside microchannels Multiple channel layers, out of on top alignment Not bond microchannels Incorrect sizes of microchanels and microfeatures The microchannel quality control is performed using a high quality microscope and CCD camera. The sizes of micron features are measured using software of the CCD camera. Epi-Fluorescent Microscope (Zeiss, AxioObserver)",
+    "The chip setup is formed by the components given as Syringe pump and 1mL syringe Tubings and Fittings suitable for 2mm ports Microfluidic chip to be testes The substeps to follow the leakage test are",
+    "Fill the syringes with 1mL of distilled water. Distilled water and isopropanol are two most used chemical for all tests performed in microfluidics. The distilled water does not have to be sterilized but it is better to filter the liquid sample.",
+    "Connect the proper fittings on syringe to connect tubing and port of the chips. The proper fittings are chosen from https://www.ufluidic.com/collections/fittings-and-connectors Mostly, single port is enough to fill all channels of the chip but when multiple ports to be used for filling all channels, distilled water mixed with food coloring is used. Food coloring is also beneficial for detection of the possible leakage points. Food coloring is unuseful for very small size channels that is smaller thn 25 microns. Syringe pump (Chemyx, Fusion 100)",
+    "The flow rate arranged are increased step by step starting from 0,1 uL/min. The increasins step values are x10 and given as below. When the leakage occurs, the flow rate is recorded. Under normal conditions, leakage must occur higher than 2 mL/min, but chip design and channel resistance effects the mininum flow rate of leakage starts. 0,1 uL/min 1,0 uL/min 10 uL/min 100 uL/min 1mL/min (1000 uL/min)"
+  ],
+  "authors": [
+    "Serhat Sevli",
+    " C. Yunus Sahan"
+  ],
+  "creator": "Serhat S",
+  "published_on": 1629685046,
+  "created_on": 1629676338,
+  "keywords": []
+}

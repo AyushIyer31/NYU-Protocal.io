@@ -1,0 +1,41 @@
+{
+  "id": 45428,
+  "title": "Measuring [K+] from sample",
+  "uri": "measuring-k-from-sample-bqkumuww",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"dr09k\",\"text\":\"Measuring [K+] from a sample using Dr. Fozo's K+ ISE\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":12,\"length\":1},{\"style\":\"sup\",\"offset\":47,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4ptvs\",\"text\":\"Standardize electrode\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1nvfr\",\"text\":\"Electrode storage\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"hgud\",\"text\":\"Modified toxicity assay\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6g8lh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"bbn6e\",\"text\":\"Standardize electrode: must be standardized no longer than 2 hours before measurement. The probe itself lasts months. The manual also recommends performing slope check once a day. Procedures are in the instruction manual.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":22}],\"entityRanges\":[],\"data\":{}},{\"key\":\"a18t9\",\"text\":\"Modified toxicity assay to measure [K+] in exponentially growing cells\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":23}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9o2k7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Make standards using 100 ppm solution to 100, 10, and 1 ppm. (Meter not accurate below 0.04 ppm. You can also do any M range of KCl from 1M to 10^-6M). Add 2mL ISA (NaCl) to 100mL solution (or 200uLto 10mL, etc). ISA removes background salt variability",
+    "On the ppm mode screen, hit STD again and repeat steps 4 to 6, from lowest standard to highest, until all standards have been entered. You are now ready to take unknown measurements. If there will be some time between standardization and taking measurements or between measurements, leave electrode in lowest standard or K + MM media being used (recommended by SH) until ready.",
+    "Pre-warm standards to 37 o C (if measuring unknown samples at 37 o C)",
+    "Turn meter on and change mode to ppm",
+    "Hit STD, clear, enter to remove old standardization info",
+    "Wash tip of the meter with ddH2O, wipe with kimwipes , and submerge the tip of the meter into lowest standard (1ppm) being continuously mixed with a stir bar. ( Since stir bar can create heat, suggested that place insulating material like Styrofoam between stirrer and beaker. ) Try and keep tip away from edges of glass/not touching glass. Standards should all be measured at the same temperature.",
+    "When measurement stabilizes. Hit STD. The screen will return to the mode screen and say 2 points is required.",
+    "Clean electrode and place in 0.01 M KCl. If storing longer than 3 weeks, rinse and dry electrode and cover in rubber cap.",
+    "From 5mL overnight in LB, add cells to fresh LB in flasks to 0.01 OD (volume of LB will depend on the number of timepoints/ if technical replicates required. (For 2-time points, no technical replicates, this is 25mL. For 2 time points, 2 technical, 50 mL). Add antibiotics as required. For true biological replicates, take from 3 separate overnights into 3 flasks.",
+    "From 5mL overnight in LB, add cells to fresh LB in flasks to 0.01 OD (volume of LB will depend on the number of timepoints/ if technical replicates required. (For 2-time points, no technical replicates, this is 25mL. For 2 time points, 2 technical, 50 mL). Add antibiotics as required. For true biological replicates, take from 3 separate overnights into 3 flasks.",
+    "Grow cells to OD 0.3 at 37 o C with shaking.",
+    "Apply cells in LB to the top of the sterile vacuum filter. Apply vacuum and dispose of LB flow through. This should be done using an appropriately sized vacuum filter (50mL filter for 50mL sample), making sure to keep cells in the top in a sterile environment. Cells may cause slow filtering. Swishing liquid while applying a vacuum can help with this.",
+    "Wash cells 2X using equal volume (to LB) sterile 0.9% NaCl (saline). Between washes, make sure to dispose of flow-through.",
+    "Turn off the vacuum! Unplug the vacuum tube from the filter.",
+    "Resuspend cells using a large pipette in equal volume (add a little extra volume if measuring OD as well) Epstein’s MM (minimal media) and appropriate antibiotic, prewarmed to 37C. For 2 time points, not technical replicates, this is 35mL. For 2 time points, 2 technical replicates, 57mL. Try to do this as thoroughly as possible since some cell mass will be lost.",
+    "Remove resuspended cells from top of vacuum filter and pipette into sterile flask. Swish flask so cells will be equally dispersed in media.",
+    "Take volume out needed to perform traditional toxicity assay (if measuring both OD and [K + ] at times 30 and 60, this is 11 mL). Induce half with arabinose (0.2% for saturating) while adding the same volume sterile ddH2O to uninduced controls. Place in 37 shaking incubators and start a timer. Will need to stagger induction since samples must be measured at 37 o C. Do not want samples to cool too long outside the incubator.",
+    "With remaining liquid in a flask from step 17 (make sure to keep at least 6 mL), measure time 0 OD600 and [K + ]. To measure [K + ], take a 5mL sample, and add 100uL ISA. Measure using the probe as in standardizing procedure, step 14. After EACH measurement in live cells, swish the tip of the probe briefly in 95% ethanol and swish in ddH2O. This minimized biological contamination of tip and between samples.",
+    "At times 30 and 60 minutes, take 200 uL for OD and 5 mL for [K+] measurement. Measure [K+] as in step 19ab. If you want to measure additional time points, adjust volumes in steps 11 and 16.",
+    "Clean electrode and place in 0.01 M KCl. If storing longer than 3 weeks, rinse and dry electrode and cover in rubber cap.",
+    "Grow cells to OD 0.3 at 37 o C with shaking."
+  ],
+  "authors": [
+    "Elizabeth Fozo"
+  ],
+  "creator": "Eadewunm",
+  "published_on": 1607636573,
+  "created_on": 1607633785,
+  "keywords": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": 35100,
+  "title": "Image J Nerve Density Percentage Analysis",
+  "uri": "image-j-nerve-density-percentage-analysis-beh4jb8w",
+  "doi": "dx.doi.org/10.17504/protocols.io.beh4jb8w",
+  "description": "{\"blocks\":[{\"key\":\"cd7iv\",\"text\":\"ImageJ Software can be used to find the percentage of nerve density in regions of interest. These regions of interest are imaged, and the nerve percentage is found by adjusting the image's histogram threshold.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Open Image",
+    "Dowload ImageJ Software",
+    "File&gt;Open&gt;Locate desired image file&gt;Click desired individual image (JPEG or TIFF)",
+    "Prepare Image for Analysis",
+    "Image&gt;Type&gt;8-bit",
+    "Remove over exposed areas, scale bar etc. by clicking on desired shape in Shape Tool Bar under File Tool Bar.",
+    "Analyze Image",
+    "Image&gt;Adjust&gt;Threshold",
+    "Move both slider bars to the far right. Slowly move the top slider bar to the left until you just fill in the areas of interest with &#34;red&#34;. The percentage that appears under the histogram is the percentage of area filled. That is the nerve density percentage.",
+    "Reset the threshold slider bars as many times as desired. Typically, three data points which are then averaged."
+  ],
+  "authors": [
+    "Elizabeth Smith",
+    "Jacqui Potter"
+  ],
+  "creator": "Elizabeth Smith",
+  "published_on": 1585845382,
+  "created_on": 1585761399,
+  "keywords": []
+}

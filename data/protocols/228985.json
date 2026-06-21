@@ -1,0 +1,30 @@
+{
+  "id": 228985,
+  "title": "Add Arabinose",
+  "uri": "add-arabinose-hbuzb2nx7",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gpm558gzp/v1",
+  "description": "{\"blocks\":[{\"key\":\"f2bhf\",\"text\":\"To control expression of the synthetic replication operon in the orthogonal replication system, this step uses an arabinose-induced dCas9–sgRNA repression system to reduce downstream operon component expression, thereby improving orthogonal replicon transformation efficiency.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":114,\"length\":47},{\"style\":\"bold\",\"offset\":220,\"length\":55}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"5njos\",\"text\":\"LB broth\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c3agd\",\"text\":\"10% glycerol solution (pre-chilled)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"69hn1\",\"text\":\"Arabinose\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cc7b8\",\"text\":\"ddH₂O\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"88vs7\",\"text\":\"Pre-chilled electroporation cuvettes (2 mm gap)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3o3jp\",\"text\":\"Pre-chilled centrifuge tubes (50 mL × 2; 1.5 mL × 1)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5rhsa\",\"text\":\"Shaking incubator\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"20j4m\",\"text\":\"Ice-water bath and ice bucket\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8ar0\",\"text\":\"Spectrophotometer (for OD600 measurement)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a52p7\",\"text\":\"Refrigerated centrifuge\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"90fnr\",\"text\":\"Electroporator\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Pick colonies that have successfully taken up the following plasmids: EcOrep operon plasmid dCas9 + sgRNA expression plasmid (e.g., pRT17/19/21) Mutant DNAP plasmid",
+    "Inoculate into 15 mL LB broth supplemented with the corresponding antibiotics for all three plasmids , and incubate overnight at 37 °C, 220 rpm (~12 h).",
+    "The next day, transfer 5 mL of the overnight culture into 200 mL fresh LB broth ( 1:40 dilution ) in a 2 L shake flask ; incubate at 37 °C, 220 rpm .",
+    "When OD600 ≈ 0.2 , add arabinose to a final concentration of 10 mM (e.g., add 2 mL of 1 M stock to 200 mL culture) and continue incubation.",
+    "Grow to OD600 ≈ 0.4 , then immediately proceed to the following steps for electroporation pre-treatment.",
+    "Place the culture on ice to cool for 10 minutes (gentle swirling optional).",
+    "Centrifuge at 4 °C, 4500 × g for 3 minutes ; carefully discard the supernatant.",
+    "Wash the cell pellet with 50 mL pre-chilled 10% glycerol ; repeat the wash twice (total 2 washes ).",
+    "Finally, resuspend the pellet in 1 mL pre-chilled 10% glycerol to obtain the competent cells.",
+    "Aliquot into several 100 μL tubes (for subsequent O-replicon electroporation ). This completes the arabinose treatment stage."
+  ],
+  "authors": [
+    "igemnthuth"
+  ],
+  "creator": "igemnthuth",
+  "published_on": 1759641607,
+  "created_on": 1759530634,
+  "keywords": []
+}

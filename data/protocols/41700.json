@@ -1,0 +1,26 @@
+{
+  "id": 41700,
+  "title": "COVIDscanDX mScanner Protocol (Confidential)",
+  "uri": "covidscandx-mscanner-protocol-confidential-bkyckxsw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bkyckxsw",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "For iOS iPad and iPhone devices newer than 2018 use the following procedure. To scan the result of the developed test open the Safari browser on the iPad or iPhone device and navigate to www.register.covidscandx.com. For Android Samsung Galaxy Tab A 10.1 inch (2019) use the following procedure. To scan the result of the developed test open the default browser on the tablet and navigate to www.register.covidscandx.com.",
+    "Enter the unique single-use product ID code included in the kit on the COVIDscanDX card. *Note the product code will expire after a valid image is automatically captured and a result is provided. Keep the COVIDscanDX card and product code to access the detailed results in the future to share with your electronic record of your result with your health care provider, travel entry authority, employer etc.",
+    "Following valid product code entry a new page is displayed on the device that gathers information about testing location and conditions and/or test subject symptoms. The user enters the information in the fields and provide a visual score of the test region signal ranging from 0-5 according to the COVIDscanDX card examples. A score of 0 indicates no test signal is visible while a score of 5 indicates the strongest test signal.",
+    "The appliction will ask for permission to open the device camera application. The user gives permission and positions the displayed blue box landmarks over the aruco targets and QR code until the blue boxes turn green and test image capture occurs within 1 second. If the lighting conditions are not optimal for image capture an error messaage will be shown that instructs the user to adjust the lighting or position of the test cartridge and image again.",
+    "Once the images have been captured the user is notified and server-side algorithms check the images for lighting conditions and position. A Positive, Negative or Invalid result will appear on the device display within 5 seconds (assuming web connectivity). Depending on the result the user is given instructions on further support to establish the diagnosis of COVID-19 via telemedicine portal.",
+    "Post test results are accessible for review and integration via JSON or CSV format to partner database by site approved users through the partner dashboard."
+  ],
+  "authors": [
+    "don.cooper"
+  ],
+  "creator": "don.cooper",
+  "published_on": 1599591059,
+  "created_on": 1599453376,
+  "keywords": []
+}

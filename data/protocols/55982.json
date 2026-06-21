@@ -1,0 +1,29 @@
+{
+  "id": 55982,
+  "title": "Ancestral State Reconstruction",
+  "uri": "ancestral-state-reconstruction-b2wnqfde",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvr6e62vmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"bd2g7\",\"text\":\"Our protocols are constantly evolving and old versions will be deleted.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cfjff\",\"text\":\"The documents here are not intended to be cited in publications\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Mesquite Download: https://www.mesquiteproject.org/Installation.html RAxML-ng Download: https://github.com/amkozlov/raxml-ng GUI 2.0 (compatible with ng): https://antonellilab.github.io/raxmlGUI/ FigTree Text Editor (options below) SublimeText: https://www.sublimetext.com/3 BBEdit: https://www.barebones.com/products/bbedit/download.html NOTE: This protocol assumes you already have a tree ready to import into Mesquite that you would like to use for the ancestral state reconstruction.",
+    "Tree import into Mesquite works best if the tree file is already in nexus or newick format. If your tree is not already in this format, open it in FigTree and select Export Trees , then choose either Nexus or Newick format and check the box to Save as currently displayed if applicable.",
+    "To import your tree into Mesquite , open Mesquite (.jar version works best). Select File &gt; Open and choose your tree file.",
+    "On the left side menu under Project , select Add... &gt; New Character Matrix . This should autofill with the taxon names from your tree. Type in the number of characters you need to code for your ancestral state reconstruction and select Categorical Data .",
+    "Once the matrix is created, fill in the character labels at the top. Select Matrix &gt; Show Matrix Info Panel . This should produce a tab on the right labeled &#34;State Names&#34;. You can type in the character state names/labels that you&#39;d like for your characters here (e.g. if your character is &#34;habitat&#34;, you can add in &#34;vent, seep, organic fall&#34; as character states). Keep track of the numbers that apply to each state so you know which ones to enter for each of your taxa in the matrix. NOTE for character coding: if you have taxa that have multiple character states, you can use AND or OR coding. General preference is OR, which is indicated by a / between the character states in the matrix.",
+    "Once your matrix is filled out, there are various reconstruction options. The most frequently used in our lab are parsimony reconstructions (no model applied) and likelihood ancestral states (applies a model). We&#39;ll do the latter here.",
+    "Return to the tree Window. Select Analysis:Tree &gt; Trace Character History and select your reconstruction method: likelihood ancestral states . You can also select this from the Method submenu if you have already selected Trace Character History once and want to repeat your analysis.",
+    "Use the &#34;balls and sticks&#34; style to view your resulting tree. Select Display &gt; Tree Form &gt; Balls &amp; Sticks",
+    "You may also want to see relative likelihoods and branch lengths. Select Display &gt; Branches proportional to lengths to see a tree with branchlengths (note that these must have been present in the tree you imported to begin with in order to display them). Select Drawing Menu &gt; Tree Form with line style &#34;square&#34; to see relative likelihoods and branch lengths."
+  ],
+  "authors": [
+    "Dakota Betz"
+  ],
+  "creator": "Marina McCowin",
+  "published_on": 1749844838,
+  "created_on": 1639610843,
+  "keywords": []
+}

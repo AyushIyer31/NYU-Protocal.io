@@ -1,0 +1,34 @@
+{
+  "id": 77582,
+  "title": "Set Up Biodata Resource Inventory in Google Colab",
+  "uri": "set-up-biodata-resource-inventory-in-google-colab-cpznvp5e",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl89o36v2w/v3",
+  "description": "{\"blocks\":[{\"key\":\"v2rq\",\"text\":\"This protocol will guide you on how to get everything in place to update the Biodata Resource Inventory.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"b2r65\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2oc1d\",\"text\":\"This protocol describes how to setup Google Colab, connect your Google Drive, and clone the repository.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3p0cu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4ffkb\",\"text\":\"Some of the information here came from the following article: https://medium.com/analytics-vidhya/how-to-use-google-colab-with-github-via-google-drive-68efb23a42d\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":62,\"length\":100}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"39FCEBA6FE4111ECAD9B0A58A9FEAC02\",\"url\":\"https://medium.com/analytics-vidhya/how-to-use-google-colab-with-github-via-google-drive-68efb23a42d\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"c4d4u\",\"text\":\"An active Google Drive account.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7ieai\",\"text\":\"An active GitHub account.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "In your Google Drive home directory, create a new folder called GitHub.",
+    "Go to Google Colab . If you need to change the account you are using, close the pop up by clicking Cancel at the bottom right. Change your Google account by clicking the icon at the top right.",
+    "A menu will pop up. At the bottom right, select: &#34;New Notebook&#34;",
+    "In the cell, paste or type the following: from google.colab import drive drive.mount(&#39;/content/drive&#39;) Click the &#34;run&#34; button to the left of the cell or run with ctrl+enter You will be prompted to allow Google Colab to access your Drive, say yes. Do not try to change accounts at this stage, it will cause an error. If you need to change your account, go back to step 2.",
+    "Create a new code chunk by clicking &#34;+ Code&#34; under the top-left banner. In that cell paste or type the following, then run: %cd /content/drive/MyDrive/GitHub/ This has changed your current directory to GitHub. If you named the folders something else, you will need to modify the above command to reflect the actual folder names.",
+    "Go to GitHub . Go to Settings, navigate to Developer settings and click on Personal access tokens .",
+    "Click Generate new token button on the top right corner of the page.",
+    "Click the repo checkbox under Select scopes .",
+    "Click the Generate token button at the bottom of the page.",
+    "You have now created a new access token. Copy the token to your clipboard. Do not close this page yet . Do not share this access token.",
+    "Go back to your Colab Notebook, create a new Code cell, and enter the following, pasting your access token into the quotations, then run: git_token = &#39;&#39;",
+    "Create a new code cell and paste or type the following, then run: !git clone https://{git_token}@github.com/globalbiodata/inventory_2022 And cd into the repository: % cd inventory_2022 Note: During development, the main branch is mostly empty. To switch to the development branch run the following in a code cell: # Switch to development branch if desired !git checkout inventory_2022_dev Congrats! You now have linked Google Colab to GitHub for access to their API, and you have cloned the repository into your Google Drive. You can now close the page with your access token.",
+    "You can now access all the files in the repository via traditional Google Drive.",
+    "You will find two notebooks in the repository: running_pipeline.ipynb: This allows reproduction of the original results updating_inventory.ipynb: This guides you to update the inventory Each notebook provides instructions on their respective process, and includes already filled-in code chunks. So you should have to do little more work to run those pipelines."
+  ],
+  "authors": [
+    "Kenneth Schackart"
+  ],
+  "creator": "Kenneth Schackart",
+  "published_on": 1677262117,
+  "created_on": 1677261963,
+  "keywords": []
+}

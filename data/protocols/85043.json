@@ -1,0 +1,27 @@
+{
+  "id": 85043,
+  "title": "Workflow for bulk RNAseq of human fallopian tube and uterine endomyometrium ",
+  "uri": "workflow-for-bulk-rnaseq-of-human-fallopian-tube-a-cxatxien",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l224p3l1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"fa8kd\",\"text\":\"Described here is the workflow used by the Female Reproductive Tissue Mapping Center at UCSD to generate bulk RNAseq data from human fallopian tube and uterine endomyometrium.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "As soon as possible after sterilization (salpingectomy or tubal ligation), prepare fallopian tube tissue according to the following protocol: Human Pregnant Fallopian Tube Tissue Collection and Preservation Methods - UCSD Female Reproductive TMC At the time of C-section, prepare uterine endomyometrium tissue according to the following protocol: Human Pregnant Uterine Myometrium Tissue Collection and Preservation Methods - UCSD Female Reproductive TMC For this protocol, use tissue that has been collected in RNAlater.",
+    "Isolate total RNA using a bead beater to disrupt the tissue, followed by organic extraction and ethanol precipitation. Use the following protocol, which was originally written for placenta: Total RNA extraction from frozen placenta tissue After passing quality control, proceed to library construction. In our hands, RIN scores for fallopian tube and uterine endomyometrium were quite low. Bioanalyzer DV200 scores (the percentage of fragments &gt;200 nucleotides) were instead used to assess RNA quality, and libraries were constructed according to a ribodepletion method which is more appropriate for low-quality RNA.",
+    "Construct libraries using the KAPA RNA HyperPrep Kit with RiboErase (HMR), according to the following protocol, which was originally written for placenta: Library construction for human placenta bulk RNAseq The following adaptations were made to the above protocol: Fragmentation : tailored to DV200 score (DV200&gt;=70, 00:05:00 85 °C ; DV200&gt;=60, 00:04:00 85 °C ; DV200&gt;=50, 00:03:00 85 °C ; DV200&gt;=40, 00:02:00 85 °C ; DV200&gt;=30, 00:01:00 85 °C ; DV200&lt;30, 00:01:00 65 °C ). Adapter concentration : 1.5 micromolar (µM) Library amplification : Pre-amplification library concentrations were assessed using the Qubit High Sensitivity DNA assay. The following formula was used, where x = pre-amplification library concentration (in ng/ul), to estimate the number of amplification cycles (rounded up to the next cycle) required for each library: Number of amplification cycles = 5 + log 2 (3/x) After passing quality control, proceed to sequencing.",
+    "For HuBMAP bulk RNAseq samples, the multiplexed pool was sequenced on a NovaSeq 6000 S4 lane using a 100bp paired-end run configuration. Reads were aligned using STAR, and transcript abundances were quantified using RSEM."
+  ],
+  "authors": [
+    "Scott Lindsay-Hewett",
+    "Valentina Stanley",
+    "Mana Parast",
+    "Louise C. Laurent"
+  ],
+  "creator": "Scott Lindsay-Hewett",
+  "published_on": 1689401289,
+  "created_on": 1689397158,
+  "keywords": []
+}

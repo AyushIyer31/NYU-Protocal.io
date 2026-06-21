@@ -1,0 +1,24 @@
+{
+  "id": 63243,
+  "title": "Live-cell imaging; reactive oxygen species (Superoxide)",
+  "uri": "live-cell-imaging-reactive-oxygen-species-superoxi-b9zjr74n",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l2oyj4v1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"926ad\",\"text\":\"This protocol contains the instruction for measuring superoxide using dihydroethidium (HEt) which allows the rate of superoxide generation to be measured which is present as the ratio of the oxidized form of the dye over the reduced form. HEt allows the rate of cytosolic superoxide generation to be measured, by the slope of the ratio of oxidized dye to reduced dye.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Cells are washed and loaded 2 micromolar (µM) dihydroethidium (HEt; Thermo Fisher Scientific) in the recording buffer. HEt is an indicator of superoxide which exhibits blue fluorescence in the cytosol before oxidation, and the nucleus presents a red fluorescence upon oxidation.",
+    "The recording is performed using an epi-fluorescence inverted microscope equipped with 20x objective after a quick loading (2-3 min) in order to limit the intracellular accumulation of oxidized product, and the dye was present throughout the imaging. Live-cell imaging is performed using an epi-fluorescence inverted microscope equipped with a CCD camera (Retiga; QImaging). For epi-fluorescence inverted microscope, excitation is provided by a xenon arc lamp with the beam passing through a monochromator (Cairn Research) and emission was reflected through a long-pass filter to a cooled CCD camera and digitized to 12-bit resolution (Digital Pixel Ltd, UK).",
+    "Excitation is at530 nm, and emission recorded above 560 nm is assigned to the oxidized form, while excitation at 380 nm and emission collected from 405 nm to 470 nm is assigned to the reduced form.",
+    "The ratio of the fluorescence intensity, resulting from its oxidized/reduced forms, is quantified."
+  ],
+  "authors": [
+    "Minee L Choi"
+  ],
+  "creator": "Minee L Choi",
+  "published_on": 1706764285,
+  "created_on": 1653513229,
+  "keywords": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": 10906,
+  "title": "Cloning",
+  "uri": "cloning-nv2de8e",
+  "doi": "dx.doi.org/10.17504/protocols.io.nv2de8e",
+  "description": "{\"blocks\":[{\"key\":\"go4d\",\"text\":\"         Purpose of this overview is to isolate and clone genes of interest into an appropriate plasmid and then introduce the recombinant DNA molecule into E. coli\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"gevo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"84b1c\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"62brm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "PCR amplification of gene of interest. Primers were designed for specific genes synthesized via IDT synthesis containing appropriate restriction enzyme cut sites (either for insertion into biobrick or into pET26b vector). Phusion polymerase (NEB) was used for all PCR amplifications and the manufacturer’s protocols were followed, adjusting extension time and melting temperature as each individual PCR required.",
+    "PCR products were run through a 0.8% agarose gel at 110V for 30-40 minutes and gel extracted if successful. Gel extraction was carried out using QiaQuick Gel Extraction Kit following the manufacturer’s protocol.",
+    "Both the insert and backbone were digested with the appropriate restriction enzymes following gel extraction using the following reaction conditions: • 2.5 uL Appropriate buffer (almost always CutSmart) • 0.5 uL Restriction Enzyme 1 (repeat if multiple enzymes) • 9 uL gel extraction of insert or 1 µg of miniprepped backbone • Up to 25 µL Nuclease Free Water Digested at 37°C for 1.5 hours then heat-killed at 80°C for 20 minutes.",
+    "After digestion, backbone was run through a 0.8% agarose gel and gel extracted as before. Insert was PCR purified according to manufacturer’s protocol (Qiagen QiaQuick PCR Purification Kit).",
+    "Insert and backbone were ligated under the following conditions: a. 2 µL T4 DNA Ligase Buffer b. 15 µL Purified Insert c. 2 µL backbone d. 1 µL T4 DNA Ligase Left at room temperature overnight to ligate.",
+    "Ligation was then transformed into either STBL3 or BL21 DE3 E. coli as described in heat-shock transformation protocol and grown overnight as described in overnight batch culture protocol.",
+    "Batch cultures were miniprepped using Qiagen QiaPrep Miniprep Kit, following manufacturer’s instructions and quantified using a spectrophotometer.",
+    "~500 ng of miniprep was linearized using a single cutting restriction enzyme as described before and run through a 0.8% agarose gel as before to confirm positive size (ie. insert+backbone). If successful, sample was sent to GeneWiz for sequencing following the company protocol for sequencing submission."
+  ],
+  "authors": [
+    "Nicholas Boudreau"
+  ],
+  "creator": "Dalhousie Igem",
+  "published_on": 1521303972,
+  "created_on": 1521303936,
+  "keywords": []
+}

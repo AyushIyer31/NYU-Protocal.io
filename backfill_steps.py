@@ -71,8 +71,9 @@ def _get_token() -> str:
     return token
 
 
-def _api_get(path: str, token: str) -> Dict[str, Any]:
-    _throttle()
+def _api_get(path: str, token: str, retries: int = 4) -> Dict[str, Any]:
+    """GET with retries on transient failures (timeouts/5xx/connection resets).
+    Each attempt passes through the global rate limiter."""
     url = f"{API_BASE}{path}"
     req = urllib.request.Request(
         url,
@@ -82,15 +83,20 @@ def _api_get(path: str, token: str) -> Dict[str, Any]:
             "User-Agent": BROWSER_UA,
         },
     )
-    try:
-        with urllib.request.urlopen(req, timeout=25) as resp:
-            return json.loads(resp.read().decode("utf-8", errors="ignore"))
-    except urllib.error.HTTPError as e:
-        log.warning(f"HTTP {e.code} for {url}")
-        return {}
-    except Exception as e:
-        log.warning(f"Request failed for {url}: {e}")
-        return {}
+    for attempt in range(1, retries + 1):
+        _throttle()
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                return json.loads(resp.read().decode("utf-8", errors="ignore"))
+        except urllib.error.HTTPError as e:
+            if 400 <= e.code < 500 and e.code != 429:
+                log.warning(f"HTTP {e.code} for {url}")
+                return {}  # genuine client error — don't retry
+        except Exception:
+            pass
+        if attempt < retries:
+            time.sleep(min(2 ** attempt, 20))
+    return {}
 
 
 def _strip_html(text: str) -> str:

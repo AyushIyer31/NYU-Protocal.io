@@ -1,0 +1,36 @@
+{
+  "id": 53903,
+  "title": "GT-seq Library Preparation Protocol",
+  "uri": "gt-seq-library-preparation-protocol-byvppw5n",
+  "doi": "dx.doi.org/10.17504/protocols.io.byvppw5n",
+  "description": "{\"blocks\":[{\"key\":\"6h5u4\",\"text\":\"Protocol for Genotyping-in-Thousands by sequencing (GT-seq) library preparation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Using a sterile polystyrene reservoir and a multichannel pipette, go column by column for each plate of primers. Carefully, and making sure that everything is pipetting okay, add 10 µL of each primer to the middle divet of the reservoir. If you pipette on the sides it can be difficult to get all of the primer into the pool, so aim for the middle as best you can. Then, once you have added all of your primers, slosh the solution around a bit to mix it up, and then pipette your primer pool into tubes. For a single plate of PCR1 reactions, you’ll need 1.5*96 samples= 144 µL of pool per plate. Keeping this in mind might help you divvy out aliquots of your primer pool. **Note, you will likely lose some volume of primer pool, so if you do, that’s okay**",
+    "Once your primers are pooled, make sure the i5 primers and the i7 plate primers for PCR2 are diluted to 10uM. There is a plate of i5 primers diluted to 10uM in the -20C, and pre-diluted i7 primers in tubes, but in case they’ve run out, make sure they’re diluted before use.",
+    "Sample extraction: You will want to use high quality samples for your test library if you can. Assuming you’ve already done the extractions, you should go through your quants and make sure that your sample concentrations are as close to between 10 and 20 ng/uL as possible. Ideally, you’ll only have to dilute samples, but there’s always a chance you might have to concentrate them with a bead clean. Also, keep track of which sample is going into which well so you can match up the barcodes from the plate of PCR2 i5 primers with the samples in the corresponding well.",
+    "Multiplex Mastermix: You’ll want to thaw this and put it into an 8-well strip to make adding it to each well easier. Have some extra available. Per 1 sample: PCR1: 3.5 µL MMPCR2: 5 µL MM= 8.5 µL MM/ sample",
+    "Primer Pool I would also put this in an 8-well strip to make adding it to each well faster. Again, a little bit of slop will be helpful. The repeater pipette might also make this easier.",
+    "Combine the PCR reaction components as and then seal with a rubber mat. If you’d like you can create a primer pool/ master mix combo and simply just add that to your plates and then add the corresponding DNA. If you’re anxious about evaporation, you can use a chimney- well plate with 12-well strip caps to ensure that all of the volume stays in there.",
+    "Per 1 reaction: 3.5 µL MM 1.5 µL primer pool @ 25nM 2 µL DNA sample 7 µL total reaction volume",
+    "Run Method: In a Thermocycler, set up these conditions: 95°C for 15 min 95°C for 30 sec, 5% ramp, 57°C for 30 sec, 72°C for 2 min (5 cycles) 95°C for 30 sec, 65°C for 30 sec, 72°C for 30 sec (10 cycles) 4°C hold",
+    "For each PCR1 product dilute all of your products 20-fold. Assuming the reactions are still at a 7 µL volume, then just add 133 µL of dH2o to get a final volume of 140 µL (ie a 1:20 ratio). For DNA samples that are low quality or at low concentration, dilute your PCR1 products 10-fold to ensure sufficient product for PCR2. You will use 3 µL of this diluted product for your PCR2 reaction.",
+    "Per 1 reaction: 3 µL diluted PCR1 product 1 µL i5 primer 1 µL i7 primer 5 µL MM 10 µL total reaction volume",
+    "Run Method: In a Thermocycler, set up these conditions: 95°C for 15 min 98°C for 10 sec ,65°C for 30 sec, 72°C for 30 sec (10 cycles) 72°C for 5 min 4°C hold",
+    "After PCR 2, I recommend running a gel of PCR1 and PCR2 products for a handful of samples to verify that the reaction worked and that your library is sequence-able. It’s hard to tell if the amplicons are of the exact length, but you’ll see the band shift up in PCR2 if it was successful.",
+    "Then, go on to plate normalization using the SequelPrep Kit. Using the manufacturer’s protocol, go ahead and normalize your plate and then combine equal volumes ( 10 µL ) of all of your 96 samples per plate into a plate library. I have had a bit of a struggle getting this to work well, so make sure during the elution step that you really get in there and get the DNA off of the well sides. Scraping the sides of the well isn’t necessarily a bad thing in this particular step of the protocol. Otherwise, PicoGreen normalization can be conducted if the SequelPrep Kit is not available. Make sure that each plate of samples are normalized before combining equal volumes per plate.",
+    "Next you will take this pool and purify it with the MinElute Purification kit (manufacturer&#39;s protocol). Elute into roughly 25 µL , depending on your sequencing requirements. Quant this plate library with the NEBNext Illumina Quant kit (manufacturer&#39;s protocol), and you should be ready to send your library off to sequence."
+  ],
+  "authors": [
+    "Sarah Chang",
+    "Danielle Schmidt",
+    "Michael Russello"
+  ],
+  "creator": "Sarah Chang",
+  "published_on": 1640361962,
+  "created_on": 1633643049,
+  "keywords": []
+}

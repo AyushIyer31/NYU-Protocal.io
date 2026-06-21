@@ -1,0 +1,28 @@
+{
+  "id": 102103,
+  "title": "In solution digestion (acetone precipitation)",
+  "uri": "in-solution-digestion-acetone-precipitation-dfxx3ppn",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn6436l5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"9t75d\",\"text\":\"In-solution digestion is a widely used proteomics strategy for comprehensive protein analysis, enabling efficient enzymatic cleavage of proteins into peptides in a liquid-phase environment. This method preserves protein complexity while facilitating downstream LC-MS/MS analysis for global proteome profiling.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4sm54\",\"text\":\"After acetone precipitation O/N, it might be difficult to resuspend the peptide pellet just by vortexing. Gentle pipetting is advised at this point to break apart the pellet more efficiently. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"43oh0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"6r8md\",\"text\":\"IAA incubation needs to happen in the dark\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"6fvub\",\"text\":\"Buffers\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6na1r\",\"text\":\"TEAB (Triethylammonium bicarbonate)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1o1og\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cjvgq\",\"text\":\"Enzymes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5augn\",\"text\":\"Trypsin: ThermoFisher 90057  20 µg per vial\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"di2vs\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"efh6c\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"48jn8\",\"text\":\"200 mM STOCK: Dithiothreitol (DTT) or 200 mM STOCK TCEP (tris(2-carboxyethyl)phosphine)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":30,\"length\":3},{\"style\":\"bold\",\"offset\":51,\"length\":4}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7tigp\",\"text\":\"500 mM STOCK: Iodoacetamide (IAA)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":29,\"length\":3}],\"entityRanges\":[],\"data\":{}},{\"key\":\"d7im1\",\"text\":\"Acetone 100% \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ag87n\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Resuspend 100 µg of protein per condition with 100 µL with 100 millimolar (mM) TEAB.",
+    "Add 5 µL of the 200 millimolar (mM) TCEP/DTT and incubate sample at 55 °C for 40 min. Shake at 600-700 rpm.",
+    "Add 5 µL 500 millimolar (mM) IAA (making it a final concentration of 25 millimolar (mM) ). Incubate at Room temperature in the dark for 30 min.",
+    "Add six volumes (roughly 600 µL) of pre-chilled ( -20 °C ) acetone and freeze at -20 °C . Allow precipitation O/N.",
+    "Centrifuge the samples at 8000 x g for 10 minutes.",
+    "Resuspend 100 µg of acetone-precipitated protein pellets with 100 µL of 50 millimolar (mM) TEAB. The pellet might not completely dissolve; however, after proteolysis at 37 °C all the peptides will be solubilised.",
+    "Immediately before use, add 20 µL of the Trypsin Storage Solution to the bottom of the trypsin glass vial and incubate for 5 minutes.",
+    "Add 2.5 µL of trypsin per 100 µg of protein (initial protein). Digest sample O/N at 37 °C"
+  ],
+  "authors": [
+    "Cristina CARDENAL PERALTA"
+  ],
+  "creator": "Cristina CARDENAL PERALTA",
+  "published_on": 1761552585,
+  "created_on": 1718803217,
+  "keywords": []
+}

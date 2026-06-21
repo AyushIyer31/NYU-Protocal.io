@@ -1,0 +1,32 @@
+{
+  "id": 217911,
+  "title": "s-µIP Fabrication Process",
+  "uri": "s-ip-fabrication-process-gy2xbxyfp",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ldne8nv5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"hlqf\",\"text\":\"The fabrication process for s-µIP devices is described here.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "A tungsten rod of length 150 mm and diameter 50 µm (A-M Systems, 715550) is electrochemically etched in a solution of 1M sodium hydroxide, using a 15 V pp 1 kHz sinusoidal waveform, to reduce its diameter down to around 20-30 µm with a slight taper one end. A “dip coater” system (Nilo Scientific, Ni-Lo X2 Dip Coater) is used for this etching to ensure a precise etch profile along the length of the tungsten rod.",
+    "The s-µIP is a microelectrode device made of either one or two parylene coated tungsten-carbon fiber assemblies, threaded through a silica tube. The fabrication steps for manufacturing this device are described below-",
+    "A 20-30 µm long piece of carbon fiber (CF) of diameter 7 µm (Goodfellow, Grade 34-700, CAS# 7440-44-0) is attached to the tapered front end of the tungsten rod using silver epoxy (Epo-Tek, H20S) diluted in isopropanol, such that the overlap length between CF and tungsten rod is 15 mm. The silver epoxy is cured in an oven at 80°C for 3 hours.",
+    "Multiple of these tungsten-carbon fiber (W-CF) assemblies are loaded onto a 3D printed stand such that the back end of each tungsten rod adheres to the stand using polyimide tape and the rest of the assembly hangs free. The stand is placed inside a parylene coater to deposit a conformal layer of parylene-C (Specialty Coating Systems, SCS PDS 2010) about 1.5 µm thick, onto the W-CF assemblies.",
+    "The tip of the CF on each parylene coated W-CF is individually flame etched using a butane blow torch such that about 100-300 µm of CF is exposed. During flame etching, the W-CF assembly is held in place on a thermally stable ceramic plate by pouring distilled water over it and freezing the water using dry ice, such that only the tip of the CF to be etched is hanging off the edge of the ceramic plate. This parylene coated W-CF with the CF tip etched is termed carbon fiber electrode thread (CFET).",
+    "Around 5 mm of the back end of the tungsten wire is flamed to remove parylene coating and a Millmax pin connector (Mill-Max, 0489-0-15-01-11-02-04-0) is crimped onto it to allow electrical connection for testing. Each CFET is tested in vitro in saline solution using an FSCV system to measure specific target metrics such as background current and noise level that determine desired device properties like sensitivity and limit of detection for physiological levels of dopamine (Schwerdt et al., 2018). The CFET recording site can be trimmed, if required, to achieve target background current level.",
+    "One or two successfully tested CFETs are threaded through a fused silica tube of length 9-10 cm and outer diameter 100-165 µm (Molex, Polymicro, TSP100170), diced such that the front end is tapered at an angle of 60 degrees and the back end is cut straight. Around 1 – 15 mm of the parylene coated CF is exposed outside the front of the silica tube. Isopropanol is used to reduce friction between the silica tube and CFETs during threading, and once the IPA has evaporated, structural epoxy (Devcon, 14250) is used to seal both ends of the silica tube and hold the CFETs in place.",
+    "A short piece of polyolefin heat shrink tubing (Raychem, Microfit, 0.365 mm expanded diameter, 0.178 mm recovered, MFT-#1x4’-BLK) is used to further strengthen the back end of the silica tube where the tungsten wires emerge from.",
+    "The final device is, once again, tested in vitro to ensure that its current and noise are within the desired functional range."
+  ],
+  "authors": [
+    "Shreya Mahajan",
+    "Usamma Amjad",
+    "Jiwon Choi",
+    "Helen N Schwerdt"
+  ],
+  "creator": "Shreya Mahajan",
+  "published_on": 1746653394,
+  "created_on": 1746648506,
+  "keywords": []
+}

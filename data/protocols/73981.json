@@ -1,0 +1,27 @@
+{
+  "id": 73981,
+  "title": "Creed / Drago Check List",
+  "uri": "creed-drago-check-list-ckg5uty6",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"a8ghe\",\"text\":\"Important to check after any Ionpath servicing. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4r24i\",\"text\":\"The in house preset SIO and Sample Bias values are different from IonPath's default values. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3n6gk\",\"text\":\"The values were determined empirically (Hadeesha Piyadasa et.al.) to optimise organic (Noodle) noise and true signal values.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5t64f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"dvmua\",\"text\":\"Make sure the SIO, Sample Bias and DEM Gain Values are set to Our Specs\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"e6vo4\",\"text\":\"Important to check after any Ionpath servicing\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Go to HV Control Tab",
+    "Check on Voltage of Secondary Ion Optics (SIO) Figure 1. Voltage Output SetPoints Window Make sure Lens1 voltage is at or to close 500V. Do not worry about the negative value. If it is at 1000V please contact Mike Angelo. 1000V is the default voltage setting for IonPath which we do not use.",
+    "Go to Service UI Tab",
+    "Figure 2. Service UI Window Scroll down to bottom of the page",
+    "Figure 3. Service UI Window where Helpful Links Section Select the Setting.ui option",
+    "Checks on Sample Bias Value Figure 3. dbSettings Configuration Window for Sample Bias Value Make sure the Sample Bias is set at 66. If not change and hit Submit button.",
+    "Checks on DEM Gain Value Figure 4. dbSettings Configuration Window for DEM Gain Value Scroll down to bottom of the page. Make sure the DEM Gain is set at 0.15. If not change and hit Submit button."
+  ],
+  "authors": [
+    "Kausalia Vijayaragavan"
+  ],
+  "creator": "Kausalia Vijayaragavan",
+  "published_on": 1671055195,
+  "created_on": 1671039118,
+  "keywords": []
+}

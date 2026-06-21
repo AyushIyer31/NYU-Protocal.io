@@ -1,0 +1,30 @@
+{
+  "id": 219730,
+  "title": "Laboratory Root Processing and Scanning for Grasslands and Forages",
+  "uri": "laboratory-root-processing-and-scanning-for-grassl-g2tsbyenf",
+  "doi": "dx.doi.org/10.17504/protocols.io.261ge8zxwg47/v1",
+  "description": "{\"blocks\":[{\"key\":\"ulpke\",\"text\":\"Belowground plant growth (i.e., root production) is a crucial, yet understudied, property of seeded pasturelands, with consequences for soil quality and nutrient cycling. Root production is a product of each species’ morphological traits (e.g., taproot versus fibrous root) and is directly affected by abiotic factors including soil texture and climate. In pasturelands utilized for livestock forage production, root production is affected by anthropogenic management activities including seeded species, seeding rates, fertilizer application, and hay cutting. Such management activities interact with abiotic factors like precipitation availability to influence traits including length, density, and nutrient ratios, ultimately affecting total root production. In recent years, root production in managed pasturelands and native grasslands has emerged as a potential carbon storage location to help mitigate rising global CO2 levels. In this protocol, we describe a laboratory process to clean and process, as well as utilize the WinRHIZO™ scanning software to quantify root morphological traits from herbaceous grassland and forage plants.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Place the root sample into a No. 10 (2 mm) U.S.A. Standard Test Sieve. Gently shake the sieve to remove any loose, excess soil. With the sample in the sieve, clean the roots by running water over them while carefully agitating any stubborn soil clumps with your fingertips. Use caution during this process to avoid fragmenting the smaller, fine roots from the larger root structures (Figure 1a &amp; 1b).",
+    "Once the roots have been sufficiently cleaned, remove any unnecessary plant structures such as leaves or stems. If the roots are still attached to the stem, make a single transverse cut to separate the two (Figure 2a). For bulky fibrous roots, one cut along the sagittal plane may help the roots lay flat during scanning (Figure 2b). In some cases, individual root segments can be separated from the larger structure to prevent overlapping in the scanning tray (Figure 2c). However, avoid making multiple transverse cuts on individual roots, as this can artificially inflate the root count and length measurements during the analysis (Figure 2d).",
+    "Store roots in a small container filled with clean water and move onto the root scanning process. If scanning is to take place later, place the sample in a properly sized plastic bag and store them in a cool, climate-controlled environment. If storing for an extended time, regularly check the roots for signs of decomposition or contamination such as mold or fungal growth. If mold or fungal growth occurs, samples may need to be discarded and will be lost.",
+    "Please note that the cleaning and processing steps can be time-consuming, depending on root size, soil condition, and the number of samples. It is recommended to limit cleaning and processing to no more than five minutes per sample. Some root fragment loss is expected, but the primary objective is to preserve and collect the main root structures for analysis.",
+    "To begin scanning, fill the sampling tray with clean water and carefully place the processed root sample onto the tray (Figure 3). Water submission ensures a uniform image is captured during scanning. Install the WinRHIZO™ software according to institutional guidelines, ensuring that the scanner is powered on and the Regent USB key is connected to the computer or tablet.",
+    "Launch the software by opening the “WinRHIZO Reg 2022b” folder and starting the “WinRHIZO32.exe” file. Once the software is open, navigate to Image &gt; Acquisition Parameters… to configure the scanner settings. Confirm that the Regent Positioning System is aligned with the tray and spacers and adjust the calibration margins as necessary. The trays and spacers should be pressed against the top right corner of the scanner window (where the arrow indicates) to ensure accurate alignment.",
+    "Place the sampling tray onto the scanner, aligned with the top left corner, and click the scanner icon in the left ribbon of the WinRHIZO™ interface to initiate the scan. If a folder icon appears instead of a scanner icon, the scanner may not be connected correctly; restarting the scanner, computer, or both may resolve the issue. Use the magnification options in the software to enlarge or reduce the image as needed.",
+    "After the scan is complete, click anywhere on the image to begin the morphological trait analysis. Enter the sample ID (required), and optionally include the soil volume and operator’s name, then click OK. For additional samples, repeat the setup, alignment, scanning, and data entry steps, ensuring each scan is saved under a new ID. If an error occurs during analysis, selecting Analysis &gt; Cancel Analysis will remove the data from the text file. Continue scanning until all samples have been processed."
+  ],
+  "authors": [
+    "Chris J.P. Grisham",
+    "David W. Rowley",
+    "Merilynn C. Schantz"
+  ],
+  "creator": "David W Rowley",
+  "published_on": 1749220272,
+  "created_on": 1749219382,
+  "keywords": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": 70340,
+  "title": "Live-cell imaging: Reactive oxygen species (Superoxide)",
+  "uri": "live-cell-imaging-reactive-oxygen-species-superoxi-cgxctxiw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5qpvor55zv4o/v1",
+  "description": "{\"blocks\":[{\"key\":\"99et9\",\"text\":\"This protocol contains the instruction for measuring superoxide using dihydroethidium (HEt) which allows the rate of superoxide generation to be measured which is present as the ratio of the oxidized form of the dye over the reduced form. HEt allows the rate of cytosolic superoxide generation to be measured, by the slope of the ratio of oxidized dye to reduced dye.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Cells are washed 1x in HBSS",
+    "They are then incubated with 2 µM dihydroethidium (HEt; Thermo Fisher Scientific) made up in HBSS. HEt is an indicator of superoxide which exhibits blue fluorescence in the cytosol before oxidation, and the nucleus presents a red fluorescence upon oxidation.",
+    "Immediately after adding HEt, a field of view is found and confocal microscopy is started.",
+    "The recording is performed using an epi-fluorescence inverted microscope equipped with 20x objective after a quick loading (2-3 min) in order to limit the intracellular accumulation of oxidised product. Throughout imaging, the dye is present in the buffer.",
+    "Live-cell imaging is performed using an epi-fluorescence inverted microscope equipped with a CCD camera (Retiga; QImaging). For epi-fluorescence inverted microscope, excitation is provided by a xenon arc lamp with the beam passing through a monochromator (Cairn Research) and emission was reflected through a long-pass filter to a cooled CCD camera and digitized to 12-bit resolution (Digital Pixel Ltd, UK).",
+    "A time-series with 5-10 second intervals is performed. Excitation is at 530 nm, and emission recorded above 560 nm is assigned to the oxidized form, while excitation at 380 nm and emission collected from 405 nm to 470 nm is assigned to the reduced form.",
+    "The ratio of the fluorescence intensity, resulting from its oxidized/reduced forms, is quantified."
+  ],
+  "authors": [
+    "gurvir.virdi",
+    "mineechoi"
+  ],
+  "creator": "gurvir.virdi",
+  "published_on": 1663760575,
+  "created_on": 1663760218,
+  "keywords": []
+}

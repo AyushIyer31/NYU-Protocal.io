@@ -1,0 +1,36 @@
+{
+  "id": 118019,
+  "title": "PROTOCOL FOR THE USE OF THE CASHo DEVICE",
+  "uri": "protocol-for-the-use-of-the-casho-device-dxhb7j2n",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l29ew3v1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"abrb4\",\"text\":\"Proper semen homogenization is crucial for animal production and experimental work. Accurate homogenization ensures the correct number of spermatozoa per semen dose for insemination or representative samples for research. Typically, semen homogenization is performed manually with a \\\"gentle\\\" approach or using commercial devices not specifically designed for this purpose. While open-source devices for rotating, mixing, and shaking are available for general lab use, they are not optimized for objective sperm homogenization. The goal of this protocol is to provide the steps to follow for the use of the Customizable Automated Sperm Homogenizer (CASHo), a device designed and built in the Laboratory of Gametes and Technological Development to homogenize semen samples. At the end of protocol, you will find an example for customizing the firmware. \",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"cq20p\",\"text\":\"Requirements\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":12}],\"entityRanges\":[],\"data\":{}},{\"key\":\"2ob0h\",\"text\":\"1. Computer with the Arduino IDE\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"di64s\",\"text\":\"2. Upload the code of firmware to the Arduino UNO. That code is in Homogenizer_v6.ino file in https://osf.io/esfwg/. Upload the firmware is made one time unless the user made changes to the code in Homogenizer_v6.ino.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":94,\"length\":21}],\"entityRanges\":[{\"key\":0,\"offset\":94,\"length\":20}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"AB2C66BE304311F097E80A58A9FEAC02\",\"url\":\"https://osf.io/esfwg\"}}}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"4vkvb\",\"text\":\"1. Computer \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1s9nb\",\"text\":\"2. CASHo device\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"en0ko\",\"text\":\"3. Sperm sample\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"47o8o\",\"text\":\"4. Tube 50 mL\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Turn on the computer",
+    "Connect the USB cable to the appropriate port on the computer",
+    "Open the Arduino IDE on your computer and open the Homogenizer_v6.ino file",
+    "Verify communication between the Arduino IDE and the Arduino UNO board. Go to the &#34;Tools&#34; menu and make sure the Arduino UNO board is selected and that the correct port is assigned (e.g. /dev/ttyACM0)",
+    "Ensure that the tube holder is in the vertical (default) position. The current version of tube holder is for 50 mL tubes. A tube holder for other capacity, can be attached to the rod adapter (See the manuscript &#34;Welcome to the open-hardware sperm quality lab, featuring the new homogenizer: testing serotonin&#39;s effects on sperm motility&#34; ).",
+    "Connect the CASHo power supply to power the stepper motor controller. Hold the tube holder with your fingers and ensure that the piece does not move.",
+    "Insert a tube containing diluted semen into the tube holder.",
+    "Open the Serial Monitor in the Arduino app (upper right corner in the main window) and confirm that communication is set to 9600 baud (bottom right corner in the Serial Monitor, see the red oval).",
+    "Type 1 or 2 to choose between options: 1 = Is the number of cycles used in the manuscript &#34;Welcome to the open-hardware sperm quality lab, featuring the new homogenizer: testing serotonin&#39;s effects on sperm motility&#34; (5 cycles). 2 = This option allow choose a number of cycles defined by the user. The motor shaft will begin to rotate, and the movement of the tube holder will be visible. In the Serial Monitor output, you will see the number of cycles and the duration (in seconds) of each cycle. In this case were 10 cycles.",
+    "Once the routine is complete, close the Serial Monitor window, exit the Arduino IDE, and disconnect both the USB cable and the power supply.",
+    "You can customize the device&#39;s firmware depending on your needs or the type of sample to be homogenized. If you want to modify the velocity of the motor, you must change the value of &#34;velocidad&#34; variable in line 31, as indicated by the bubble text. Increase the value if you want decrease the velocity of the motor. If you want to modify the angle of the motor, you must change the value of &#34;total_pasos_1&#34; variable in line 33, as indicated by the bubble text. 3200 steps per second give a revolution; thus, if you want change the value of angle you must modify this value. In our case 1600 steps were setting to obtain an angle of 180°. To apply the changes, they must be saved. Finally, upload the firmware to the Arduino UNO board to use the customized version. go to step #7"
+  ],
+  "authors": [
+    "Nancy Juárez",
+    "Cindy Rivas Arzaluz",
+    "Oscar Gutierrez Perez",
+    "María . Ayala",
+    "Claudia Treviño",
+    "Andrés Aragón Martínez"
+  ],
+  "creator": "Cindy Rivas",
+  "published_on": 1748375965,
+  "created_on": 1736451160,
+  "keywords": []
+}

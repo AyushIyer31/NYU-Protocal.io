@@ -1,0 +1,34 @@
+{
+  "id": 28683,
+  "title": "Fatty acid extraction and derivatisation",
+  "uri": "fatty-acid-extraction-and-derivatisation-79jhr4n",
+  "doi": "dx.doi.org/10.17504/protocols.io.79jhr4n",
+  "description": "{\"blocks\":[{\"key\":\"10vmh\",\"text\":\"This protocol enables direct, one-pot fatty acid extraction and derivatisation of plant and bacterial samples for preparation for GC-MS analysis.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5qlsh\",\"text\":\"The protocol was established by the Weber lab for plant seedlings and seeds, but was successfully used for cyanobacteria and E.coli as well.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":125,\"length\":6}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"84iir\",\"text\":\"All steps can be done at RT\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"8m2nk\",\"text\":\"Always use clean glass tubes and avoid using washing detergent\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"4kplf\",\"text\":\"acrid, always wear safety goggles and gloves, don’t use plastic\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"f84f2\",\"text\":\"C17 internal standard  (stock = 1 mg/ml)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"55ure\",\"text\":\"MeOH//3N HCl (CAS: 7647-01-0)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":19,\"length\":9}],\"data\":[]},{\"key\":\"2odnl\",\"text\":\"hexane (CAS: 110-54-3)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":21,\"length\":1}],\"entityRanges\":[{\"key\":1,\"offset\":13,\"length\":8}],\"data\":[]},{\"key\":\"56p12\",\"text\":\"1% NaCl\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"s6ia\",\"text\":\"clean glass tubes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"8180BF3A10094E9892F439CD50BF9D6E\",\"url\":\"https://www.sigmaaldrich.com/catalog/search?term=7647-01-0\\u0026interface=CAS%20No.\\u0026N=0\\u0026mode=partialmax\\u0026lang=de\\u0026region=DE\\u0026focus=product\"}},\"1\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"8526847833AB400B864FD7E62A99F273\",\"url\":\"https://www.sigmaaldrich.com/catalog/search?term=110-54-3\\u0026interface=CAS%20No.\\u0026lang=en\\u0026region=US\\u0026focus=product\"}}}}",
+  "steps": [
+    "samples with 4 oD-units ( e.g.: oD = 1, you will need 4 ml culture ) you should make 4 or more replicates",
+    "centrifuge in a clean glass tube @ 4500 x g 00:10:00",
+    "discard supernatant",
+    "Freeze @ -80 ˚C until further use",
+    "200 µl C17 internal standard (1 mg/ml hexane) + 9,8 ml MeOH/3N HCl caution! fill in a beaker and take the needed amount out of this beaker, don&#39;t take out directly from original container to avoid contaminating stock solution. always work with gloves",
+    "heat @ 90°C after 5 minutes re-tighten lids of the glass tubes! 01:00:00",
+    "let cool down @ RT 00:15:00",
+    "add 1 ml hexane hexane is very volatile, that&#39;s why working quickly is necessary",
+    "add 1 ml 1% NaCl",
+    "vortex 00:00:30",
+    "spin down @ 2000 rpm 00:05:00",
+    "transfer hexane phase in to GC vial with screw cap",
+    "dilute samples ( 10 µl sample + 90 µl hexane ) wash hamilton between samples with hexane all of these samples can be frozen @ -20 until further analysis",
+    "add 1 ml extraction solution to samples and blank For each new batch of samples, include a blank"
+  ],
+  "authors": [
+    "Igem Dusseldorf"
+  ],
+  "creator": "Igem Dusseldorf",
+  "published_on": 1571245063,
+  "created_on": 1571165927,
+  "keywords": []
+}

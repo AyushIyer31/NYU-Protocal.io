@@ -1,0 +1,25 @@
+{
+  "id": 28195,
+  "title": "Protocol for Exonuclease VIII, truncated (NEB #M0545)",
+  "uri": "protocol-for-exonuclease-viii-truncated-neb-m0545-7sbhnan",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"3873m\",\"text\":\"Exonuclease VIII, truncated efficiently degrades linear dsDNA from 5’ to 3’ direction, leaving supercoiled dsDNA intact.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2h1v1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8708l\",\"text\":\"* Note: For more precise results or partial digestions, we recommend titration of the enzyme to the intended substrate.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"56ojl\",\"text\":\"Please see SDS (Safety Data Sheet) for hazards and safety warnings.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"ncjJC\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"RXdho\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"b6ljH\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":216109,\"guid\":\"41C03084341F11EE9D4302C0B41BC903\",\"name\":\"EDTA\",\"mol_weight\":0,\"sku\":\"17892\",\"url\":\"https://www.thermofisher.com/order/catalog/product/17892\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":336917,\"guid\":\"424AAFFE341F11EE9D4302C0B41BC903\",\"name\":\"Exonuclease VIII truncated\",\"mol_weight\":0,\"sku\":\"M0545\",\"url\":\"https://international.neb.com/products/m0545-exonuclease-vii-itruncated#Product%20Information\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Set-up the reaction as follows: %s %s",
+    "Incubate at 37 °C for 00:30:00 .",
+    "Stop reaction by adding EDTA to at least 11 millimolar (mM) .",
+    "Heat Inactivation 70 °C for 00:30:00 .",
+    "To clean up treated samples, we recommend using one of the following steps : a. Column clean up (we recommend the Monarch ® PCR &amp; DNA Cleanup Kit, NEB # T1030 ) or b. Running the reaction on an agarose gel, and then extracting the DNA (we recommend the Monarch Gel Extraction Kit, NEB # T1020 ), or c. Performing a phenol/chloroform extraction followed by ethanol precipitation."
+  ],
+  "authors": [
+    "New England Biolabs"
+  ],
+  "creator": "New England Biolabs Tech Support",
+  "published_on": 1592615299,
+  "created_on": 1569620546,
+  "keywords": []
+}

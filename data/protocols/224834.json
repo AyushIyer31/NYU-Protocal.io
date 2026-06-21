@@ -1,0 +1,33 @@
+{
+  "id": 224834,
+  "title": "Electron Transport Chain Protocol",
+  "uri": "electron-transport-chain-protocol-g7tabznif",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvrw39olmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"7o917\",\"text\":\"This protocol describes the procedure for analyzing Electron Transport Chain activity of Complexes 1, 2, and 4 in mitochondria isolated from fibroblasts used by the Seifert Lab. It follows the \\\"Electron Transport Chain Protocol\\\" (ETCP) described in: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cnobv\",\"text\":\"Vekaria, H.J., Kalimon, O.J., Prajapati, P., Velmurugan, G.V., Sullivan, P.G., 2024. An efficient and high-throughput method for the evaluation of mitochondrial dysfunction in frozen brain samples after traumatic brain injury. Front Mol Biosci 11, 1378536.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fh11f\",\"text\":\"which is a modified version of the \\\"Respirometry in Frozen Samples\\\" (RIFS) assay from:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"902rr\",\"text\":\"Acin-Perez, R., Benador, I.Y., Petcherski, A., Veliova, M., Benavides, G.A., Lagarrigue, S., Caudal, A., Vergnes, L., Murphy, A.N., Karamanlidis, G., Tian, R., Reue, K., Wanagat, J., Sacks, H., Amati, F., Darley-Usmar, V.M., Liesa, M., Divakaruni, A.S., Stiles, L., Shirihai, O.S., 2020. A novel approach to measure mitochondrial respiration in frozen biological samples. Embo j 39, e104073.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Thaw frozen mitochondrial samples",
+    "Add 25 µL Mitochondria Isolation Buffer (MIB; 215 millimolar (mM) mannitol, 75 millimolar (mM) sucrose, 0.1% BSA, 20 millimolar (mM) HEPES, and 1 millimolar (mM) EGTA, adjusted to pH 7.2 with KOH)",
+    "Gently resuspend pellet",
+    "Measure concentration of 4 µL of each mitochondrial mix by BCA",
+    "Prepare Seahorse XFe96 Analyzer (Agilent, BLE2100298, https://www.agilent.com/en/product/cell-analysis/real-time-cell-metabolic-analysis/xf-analyzers/seahorse-xfe96-analyzer-740879 ) 96-well cartridge ports as follows: Port A (ETC 1): 3220 µL Mitochondrial Respiration buffer w/o BSA, 2.8 µL Rotenone, 280 µL succinate; Port B: 3500 µL Mitochondrial Respiration buffer w/o BSA, 3.5 µL Antimycin A; Port C: 3325 µL Mitochondrial Respiration buffer w/o BSA, 88 µL Ascorbate, 88 µL TMPD; Port D: 3033 µL Mitochondrial Respiration buffer w/o BSA, 480 µL Azide.",
+    "Load cartridge well ports with 25 µL of port mixes",
+    "On ice Load 75 µL of mitochondrial sample ( 2 µg protein) per well",
+    "Balance the plate and spin at 3214 rcf, 4 °C, 10 minutes",
+    "Prepare 11 mL Alamethicin Assay solution ( 10.6 mL Mitochondrial Respiration buffer w/oBSA, 40 mg/mL Alamethicin 9.63 µL , 1.5 millimolar (mM) NADH 385 µL , 10 micromolar (µM) cytochrome c 48 µL )",
+    "Add 100 µL assay solution to each well",
+    "Run plate on Seahorse XFe96 Analyzer (Agilent, BLE2100298, https://www.agilent.com/en/product/cell-analysis/real-time-cell-metabolic-analysis/xf-analyzers/seahorse-xfe96-analyzer-740879 ) sequentially injecting the contents of Ports A-D over 01:00:00"
+  ],
+  "authors": [
+    "Ashley Seifert",
+    "Hemendra Vekaria",
+    "Ebenezer Aryee"
+  ],
+  "creator": "Ashley Seifert",
+  "published_on": 1755786757,
+  "created_on": 1755449454,
+  "keywords": []
+}

@@ -1,0 +1,42 @@
+{
+  "id": 4482,
+  "title": "Whole genome de-novo assembly and annotation protocol for Apostichopus japonicus genome",
+  "uri": "whole-genome-de-novo-assembly-and-annotation-proto-gmabu2e",
+  "doi": "dx.doi.org/10.17504/protocols.io.gmabu2e",
+  "description": "{\"blocks\":[{\"key\":\"84j8o\",\"text\":\"    This protocol is for the whole genome de novo assembly and annotation for apostichopus japonicus genome, but can be useful in other marine invertebrate genomes. It accompanies the following GigaScience publication:\\n  \\n Jihoon Jo, et al.  (2016): Draft genome of the sea cucumber Apostichopus japonicus and genetic polymorphism among color variants. GigaScience...\\n \\n \\n \\n \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":194,\"length\":11},{\"style\":\"italic\",\"offset\":353,\"length\":11}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"bbnki\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"232dd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"8i5bd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Run Trimmomatic and &#34;Trim Galore&#34; with input files of all Illumina raw-reads.",
+    "Run ALLPATHS-LG for correcing errors in the raw illumina sequences",
+    "Run Platanus for de-novo genome assembly You should compare the performance of assemblers such as SOAPdenovo, ALLPATHS-LG",
+    "Run GapCloser (a module of SOAPdenovo2) for gap closing of the gaps that still remained in the resulting scaffolds",
+    "Run CEGMA",
+    "Run BUSCO",
+    "Run RepeatMasker using the Repbase TE library and de novo repeat library constructed by Repeat Modeler",
+    "Perform the ab-initio gene prediction using AUGUSTUS using hints from splicing alignment of transcripts to the repeat-masked assembled genome with BLAT and PASA. You must collect the RNA-seq data for obtaing AUGUSTUS training set",
+    "Map the homologous proteins in other species (from Unoprot) to the repeat-masked assembled genome using tBLASTn with an E-value &lt; 1 x 10 -5",
+    "Predict the gene in the aligned sequences in Step9 using GeneWise to search for precise spliced alignment and gene structure.",
+    "Map RNA-seq reads to the repeat-masked assembled genome using TopHat, and build the homology-based gene model using Cufflinks.",
+    "Intergrate all gene set in Step 8-11 without redundant gene set."
+  ],
+  "authors": [
+    "Jihoon Jo",
+    " Jooseong Oh",
+    " Hyun Gwan Lee",
+    " Hyun Hee Hong",
+    " Sung Gwon Lee",
+    " Seongmin Cheon",
+    " Elizabeth MA Kern",
+    " Soyeong Jin",
+    " Sung Jin Cho",
+    " Joong Ki Park",
+    " Chungoo Park"
+  ],
+  "creator": "Gigascience Database",
+  "published_on": 1480603667,
+  "created_on": 1480545369,
+  "keywords": []
+}

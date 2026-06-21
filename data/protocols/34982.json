@@ -1,0 +1,27 @@
+{
+  "id": 34982,
+  "title": "Protocol for chemiluminescence based detection of ROS production in tomato",
+  "uri": "protocol-for-chemiluminescence-based-detection-of-beeejbbe",
+  "doi": "dx.doi.org/10.17504/protocols.io.beeejbbe",
+  "description": "{\"blocks\":[{\"key\":\"9adlc\",\"text\":\"This assay is based on luminol and horseradish peroxidase-dependent chemiluminescence detection of reactive oxygen species (ROS) production in plant leaf discs with some modification to make it suitable for tomato, specifically for wild tomato Solanum chilense. We tried non-buffered (Water) and buffered systems (MES and MOPS) to evaluate the robustness to detect ROS production in S. chilense leaf discs. Buffering the leaf discs with 20mM MOPS at pH 7.5 during the assay resulted in the best outputs with high reproducibility.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":244,\"length\":16},{\"style\":\"italic\",\"offset\":383,\"length\":11}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"f3hvl\",\"text\":\"Avoid any mechanical stress while pipetting the solutions in and out of the wells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"5g9ma\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"2hfqi\",\"text\":\"Materials required: Biopsy punch/leaf punch (4mm diameter), 96 wells plate (opaque white-walled with solid bottom).\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":20}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1vfhv\",\"text\":\"\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9drl4\",\"text\":\"Instrument required: 96-well plate luminometer (Luminoskan Ascent/Tecan plate reader).\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":21}],\"entityRanges\":[],\"data\":{}},{\"key\":\"251c5\",\"text\":\"\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4aheu\",\"text\":\"Chemical required: 50mM L-012, 50mM horseradish peroxidase (HRP) dissolved in 50% glycerol, 20mM MOPS pH 7.5 (adjust with 1N NaOH).\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":19}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3sfk0\",\"text\":\"\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3uov7\",\"text\":\"HRP mix: 10µM HRP, 10µM L012 in 20mM MOPS pH 7.5.\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Make leaf discs (8 leaf discs per genotype) with biopsy punch and incubate in 200µl of 20mM MOPS in 96- well plate overnight.",
+    "Remove the buffer the next day and add 75µl of HRP mix to each well.",
+    "Read the plate for detecting luminescence in 1-5 minutes intervals at the luminometer for the initial 10 minutes to adjust the baseline.",
+    "Add 25µl in 4X concentration of the desired elicitor (flg22 in this case) in 4 wells and add water/solution used for dissolving elicitor as a negative control in another 4 wells for individual genotype.",
+    "Read the plate for detecting luminescence in 1-5 minutes intervals for 60-180 minutes.",
+    "Normalize the data first to an average of initial 5-10 minutes read (before elicitation) and then to the negative control."
+  ],
+  "authors": [
+    "Parvinderdeep S Kahlon",
+    "Remco Stam"
+  ],
+  "creator": "Parvinderdeep S Kahlon",
+  "published_on": 1616426051,
+  "created_on": 1585643138,
+  "keywords": []
+}

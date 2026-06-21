@@ -1,0 +1,39 @@
+{
+  "id": 221681,
+  "title": "Seasonal and zoonotic influenza WGS using ONT rapid barcoding technology",
+  "uri": "seasonal-and-zoonotic-influenza-wgs-using-ont-rapi-g4qrbyvv7",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl41onjlo5/v2",
+  "description": "{\"blocks\":[{\"key\":\"ehl6g\",\"text\":\"This protocol is suitable for seasonal and zoonotic rapid whole genome sequencing for influenza A and B using Oxford Nanopore Technologies (ONT) rapid chemistry (SQK-RBK114.24 or SQK-RBK114.96).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"kmv1\",\"text\":\"Using ONT and tierce bioinformatic tools, it enables sub-typing and clade resolution sequencing result in one working-day.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "RNA extraction is performed using either Maxwell‱ CSC Pathogen Total Nucleic Acid Kit AS1860 or EMAG ‱ Nucleic Acid Extraction System Generic program, allowing the management of up to 16 or 24 samples simustaneously depending on the extraction system.",
+    "Influenza A Pre-PCR is prepared as follows :",
+    "Primers scheme and PCR should be chosen based on flu-type as follows",
+    "The library construction is performed according to manufacturer&#39;s instruction for the Rapid Barcoding Kit (SQK-RBK114.24/96). Before starting this step it&#39;s possible to perform a flow cell check on the ONT device to gain some time on the whole experiment. Briefly, each sample is quantified using QuBIt fluorometer and normalised to obtain 50 ng of amplified DNA in a 9 µL volume. 1 µL of rapid barcode are added to the reaction volume and the mix is then incubated as follows : 30 °C 00:02:00 80 °C 00:02:00",
+    "Once the incubation time is over, each sample is pooled in a single 1.5mL LoBind Eppendorf tube and a 1:1 AMPure XP beads purification is performed. Two 80% ethanol washes are performed on a magnetic rack. Elution is done in 11 µL of Elution Buffer (EB)",
+    "Rapid Adapter mix is performed as follows : %s %s 1 µL of Rapid Adapter mix is added to the 11 µL of previously barcoded and purified samples. The resulting mix is incubated 00:05:00 at room temperature and then immediatly used to load on the flow cell. It&#39;s possible to keep the remaining 4 µL of Sample mix at -20 °C for further use",
+    "Sequencing is performed on any ONT sequencing device. Preferentially use one with computing capacity allowing for real-time High Accuracy basecalling mode (HAC). R10.4.1 flow cell is loaded according to manufacturer&#39;s instruction and sequencing run is launched for at least 01:00:00 for small batches of samples (&lt;8). Once the short run is over, it can be re-launched for a longer time to use as supplementary data if needed. The time required for successful sequencing is depending on samples multiplexing but also individual samples overall quality and viral load thus should be tested to ensure good results. For higher throughput (eg : 96 samples), running the sequencing experiment over-night (&gt;12h) is more suited.",
+    "Analysis can be performed immediately using Epi2Me wf-flu ( https://github.com/epi2me-labs/wf-flu ). The RBK kit usage must be specified while setting-up the analysis run. The wf-flu is not suited for zoonotic influenza type so the samples will always be Undetermined in the subtyping results of the report. If there is a suspicion for zoonotic influenza, an alternative solution can be used as described after. Using intermediate files generated in the analysis directory, it&#39;s still possible to obtain the consensus for the samples of interest (wf-flu_ID\\output\\SampleID\\consensus\\draft.consensus.fasta). The consensus can then be uploaded on Nextclade with the automatically suggested reference dataset, allowing for clade determination based on the HA sequence",
+    "For Influenza A (individual primers) Primer name 5'-3' Sequences 1 Uni12 Forward (Fw) GGG-GGG-AGC-AAA-AGC-AGG 2 Uni12b Forward (Fw) (Uni12_inf3) GGG-GGG-AGC-GAA-AGC-AGG 3 Uni13 Reverse (Rv) CGG-GTT-ATT-AGT-AGA-AAC-AAG-G Table 1 : Influenza A Universal Primers",
+    "For Influenza B (Primer pool preparation prior to PCR setup) Primer name 5'-3' Sequences [Primer Stock] (µM) Primer Volume (µL) 1 B-PBs-UniF GGGGGGAGCAGAAGCGGAGC 100 10 2 B-PBs-UniR CCGGGTTATTAGTAGAAACACGAGC 100 10 3 B-PA-UniF GGGGGGAGCAGAAGCGGTGC 100 5 4 B-PA-UniR CCGGGTTATTAGTAGAAACACGTGC 100 5 5 HANA-UniF GGGGGGAGCAGAAGCAGAGC 100 10 6 HANA-UniR CCGGGTTATTAGTAGTAACAAGAGC 100 10 7 NP-UniF GGGGGGAGCAGAAGCACAGC 100 6 8 NP-UniR CCGGGTTATTAGTAGAAACAACAGC 100 6 9 M-Uni3F GGGGGGAGCAGAAGCACGCACTT 100 3 10 Mg-Uni3F GGGGGGAGCAGAAGCAGGCACTT 100 3 11 M-Uni3R CCGGGTTATTAGTAGAAACAACGCACTT 100 6 12 NS-Uni3F GGGGGGAGCAGAAGCAGAGGATT 100 5 13 NS-Uni3R CCGGGTTATTAGTAGTAACAAGAGGATT 100 5 14 H2O - - 756 15 Total - - 840 Table 2 : Influenza B Primers Pool preparation. Stock at -20°C and use when needed.",
+    "SuperScript III One Step RT-PCR System 12574035 (Thermofisher Scientific) combined with RNasin N2511 (Promega) is then used as follows : %s %s One-step RT-PCR is performed on a thermocycler as follows 03:30:00 : Temp (C°) Time Cycle(s) 1 45 01:00:00 1 2 94 00:02:00 3 94 00:00:30 5 4 45 00:00:30 5 68 00:03:00 6 94 00:0030 31 7 57 00:00:30 8 68 00:03:00 Table 4 : Influenza A thermocycler one-step RT-PCR program",
+    "ezDNase 11766051 (Thermofisher Scientific) is used for nucleic-acid extracts DNase treatment Reagent Volume / Sample (µL) 1 nuclease-free water 0.625 2 ezDNase buffer (10X) 1.25 3 ezDNase enzyme 0.625 4 nucleic acid extract 10 5 Total 12.5 Table 2 : Influenza A nucleic-acid extract DNase treatment DNase treatment is performed by incubating the prepared mix at 37 °C for 00:10:00",
+    "Influenza B Pre-PCR is prepared as follows :",
+    "ezDNase 11766051 (Thermofisher Scientific) is used for nucleic-acid extracts DNase treatment Reagent Volume / Sample (µL) 1 nuclease-free water 0.75 2 ezDNase buffer (10X) 1.5 3 ezDNase enzyme 0.75 4 nucleic acid extract 12 5 Total 15 Table 2 : Influenza B nucleic-acid extract DNase treatment DNase treatment is performed by incubating the prepared mix at 37 °C for 00:10:00",
+    "SuperScript III One Step RT-PCR System 12574035 (Thermofisher Scientific) combined with RNasin N2511 (Promega) is then used as follows : %s %s One-step RT-PCR is performed on a thermocycler as follows 04:00:00 : Temp (C°) Time Cycle(s) 1 45 01:00:00 1 2 55 00:30:00 1 3 94 00:02:00 1 4 94 00:00:20 4 5 40 00:00:30 6 68 00:03:30 7 94 00:00:20 44 8 58 00:00:30 9 68 00:03:30 10 68 00:10:00 1 11 4 Hold Table 4 : Influenza B thermocycler one-step RT-PCR program"
+  ],
+  "authors": [
+    "Richard Chalvignac",
+    "Quentin Semanas",
+    "Hadrien Regue",
+    "antonin.bal BAL",
+    "laurence.josset "
+  ],
+  "creator": "Richard Chalvignac",
+  "published_on": 1752051397,
+  "created_on": 1751552059,
+  "keywords": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": 123173,
+  "title": "SeV cbVG high  (HD) stock preparation from recombinant fluorescent reporter virus ",
+  "uri": "sev-cbvg-high-hd-stock-preparation-from-recombinan-d4id8ua6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlk9xqwv5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"4hge8\",\"text\":\"Protocol for generating cbVG high virus stocks from newly rescued recombinant viruses\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"1iigh\",\"text\":\"Cultured LLCMK2 cells (ATCC, #CCL-7) \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"l91a\",\"text\":\"Tissue culture media and Infection media (See media prepare protocol) \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5rpc1\",\"text\":\"0.05% Trypsin (Thermo, #25300054)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"51q9e\",\"text\":\"PBS  (Phosphate-buffered saline)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d8107\",\"text\":\"Cell counter and Trypan blue \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4j207\",\"text\":\"T75 flask, 96 well plate\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ckoa1\",\"text\":\"Pipettes\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bs1b6\",\"text\":\"2.0ml Cryogenic vials (Corning, #430488)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2st\",\"text\":\"TPCK-Trypsin (for Sendai virus infection, see SeV infection protocol) \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Check LLCMK2 cells to ensure they are in good condition, approximately 90% confluent. Wash cells twice with PBS. Add 3 mL 0.05% trypsin-EDTA to the T75 flask, incubate at room temparture for 3-4 minutes. Add 7 mL TCM to the flask to stop trypsinization and collect cells. Combine all cells together. Mix 10 µL cells and 10 µL Trypan blue, then add 10 µL mixture to a cell counter slide and count the cells. Plate 2,000,000 cells in 10 mL of TCM media to T75 flask. One more flask will be needed for cell counting. Incubate cells at 37 °C overnight. Note: The size of the flask depends on the final volume you need. You can scale down to use a T25 flask or a 6-well plate. However, since high cbVG (HD) virus stocks usually have a lower titer, and the process to create a HD stock is time-consuming, a T75 flask is recommended.",
+    "Follow the protocol &#34;SeV fluorescent reporter virus titration by TCID 50 &#34; to do the titration SeV fluorescent reporter virus titration by TCID50 by Carolina Lopez",
+    "Check the infected cells, you should be able see eGFP signal in all cells at the Passage 1. During later Passage HD stocks infection, eGFP signal may only be seen in some of the cells not all cells. Collect the supernatant, and span it at 2000 rpm, 4 °C, for 5 minutes to remove cells debris. Aliquot the virus, the volume of each tube is depended on how you will use it. Generally, 500 µL per tube is recommended. Quickly freeze the virus using a dry ice-ethanol mixture. Label them and store them at -80 °C",
+    "Prepare infection media containing TPCK-trypsin: Add TPCK-trypsin to the infection media at a final concentration of 2 µg/mL. Prepare 15 mL of the media for each flask. Collect the cells from T75 flask seeded for counting cells and collect cells number as above. Using the number of cells in T75 flask and the MOI of you virus stock to calculate the virus volume needed for infection: Virus Volume (µL)= MOI×Number of Cells / Virus Titer (TCID 50 /mL). Wash cells twice with PBS. Add the virus and prepared infection media containing TPCK-trypsin at final volume of 5 mL to cells. Incubate the flask at 37 °C for 1 hour and gently shake it every 15 minutes. Remove the infection media from flask. Wash the cells twice with PBS. Incubate the cells at 37 °C for 5 days. Note: In this protocol, we are using rSeVC eGFP as an example.",
+    "Repeat the whole process to make P2, P3, ... HD stocks"
+  ],
+  "authors": [
+    "Carolina Lopez"
+  ],
+  "creator": "Carolina Lopez",
+  "published_on": 1742415691,
+  "created_on": 1740093026,
+  "keywords": []
+}

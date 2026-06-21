@@ -1,0 +1,31 @@
+{
+  "id": 35174,
+  "title": "Building a molecule for docking using PubChem and YASARA",
+  "uri": "building-a-molecule-for-docking-using-pubchem-and-bekejcte",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"1t37u\",\"text\":\"The database Pubchem is a good resource for finding the structure of small, organic molecules as well as information on the structure, function, and effects of these small molecules. This information can be useful for finding information on how a drug might function or the structure of the drug itself. Using the SMILES information from a PubChem, it is possible to extract the structure for building the small molecule in the modeling program YASARA. This 3-D structure is then the ligand for docking studies with a target protein or for other computational analyses.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":13,\"length\":7}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"D765F0D075A411EA908C3FC627D5DED9\",\"url\":\"https://pubchem.ncbi.nlm.nih.gov/\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"6uv7r\",\"text\":\"internet connection\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2h3n1\",\"text\":\"YASARAview\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"38aag\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Navigate to PubChem",
+    "Search for the molecule name The molecule will like not be a protein, but a small molecule like glucose or maltodextrin. Searching for proteins is not useful.",
+    "Select an entry from the results and check to make sure that the molecule matches expectations.",
+    "Record the PubChem CID (found in the Title/Summary section at top) as a note in this step.",
+    "In section 3.1.4, copy the canonical SMILES code. Record it as a note on this step",
+    "Open YASARA",
+    "Go to Edit&gt;Build&gt;Molecule from SMILES string",
+    "Paste the SMILES string in the box and press OK",
+    "The resulting molecule will be built, however it may contain unusual geometry.",
+    "Right click on SMILES in the Scene Content table and select Name to rename the molecule. Record the name as a note on this step.",
+    "Save the molecule as a .PDB file. File&gt;Save As&gt;PDB file. Then save the file and upload to OSF Name the file as ligandname_smiles.pdb Record the file location as a note on this step."
+  ],
+  "authors": [
+    "Chris Berndsen"
+  ],
+  "creator": "Chris Berndsen",
+  "published_on": 1598906820,
+  "created_on": 1585916082,
+  "keywords": []
+}

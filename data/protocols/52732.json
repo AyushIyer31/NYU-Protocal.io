@@ -1,0 +1,27 @@
+{
+  "id": 52732,
+  "title": "Image quantification",
+  "uri": "image-quantification-bxq4pmyw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bxq4pmyw",
+  "description": "{\"blocks\":[{\"key\":\"420ps\",\"text\":\"Image quantification\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "GUV image quantification",
+    "Analyze GUV images using a custom script implemented in Python 3.6 ( https://github.com/Hurley-Lab/GUVquantification/blob/main/GUVintensity-2channel.ipynb ).",
+    "Bead image quantification",
+    "Define the outline of individual bead based on the bright field channel.",
+    "Calculate the intensity threshold by the average intensities of pixels inside and outside of the bead.",
+    "Obtain the average intensity measurements of individual bead.",
+    "Calculate the averages and standard deviations among the measured values per each condition."
+  ],
+  "authors": [
+    "Chunmei Chang"
+  ],
+  "creator": "Chunmei Chang",
+  "published_on": 1629952495,
+  "created_on": 1629929390,
+  "keywords": []
+}

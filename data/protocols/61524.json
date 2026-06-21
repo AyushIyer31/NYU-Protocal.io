@@ -1,0 +1,32 @@
+{
+  "id": 61524,
+  "title": "Panicle Ratio Network: A high-throughput dynamic phenotype recognition model based on ultra-high-definition unmanned aerial vehicle images for rice panicle analysis in fields",
+  "uri": "panicle-ratio-network-a-high-throughput-dynamic-ph-b8bursnw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6176rvqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"c27j0\",\"text\":\"In order to increase the convenience and efficiency of rice cultivation and breeding, a PR evaluation model based on deep learning and UAV–RGB images was established in this study by focusing on the ETP and HD, which affect rice yield and reflect rice growth. Based on an image regression method that reduces the effects of cross-overlapping due to an excessive density of targets, PRNet used a combination of DenseNet and SPP to extract the features of growing panicles during the rice heading stage.The training results showed that the model performed well with a data set collected in 2019, and the estimation results obtained using the test data set demonstrated that the model had good robustness.Images containing a whole rice plot can be used as direct inputs for PRNet to obtain PR, and then ETP and HD can be determined with high accuracy according to the PR curve.After testing images with different resolutions in the model, the acceptable resolution range for the model was determined to be between 0.6 mm and 2.4 mm when the RMSE for the estimated results was less than 15%. Thus, data collection schemes were presented to facilitate the use of PRNet.However, different types of cameras have different image quality settings, and the model's estimation accuracy might not be ideal even if the resolution is acceptable.The accuracy of the estimations obtained by the model were higher for rice plots in the center of images captured around noon compared with those at other times or at the edges of images.Based on a high-throughput and efficient UAV–ultra-high-definition imaging platform, PRNet is suitable for nondestructive PR monitoring in more than 2,000 plots within 10 min.Furthermore, this scheme can be extended to other panicle-related crop phenotypic analyses and provide a reference for extracting indicators determined by several traits, thereby accelerating the development of in situ field crop phenotypic information extraction.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"697pg\",\"text\":\"plese just follow the steps.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"kv0e\",\"text\":\"To use our trained model, make sure the image resolution is between 0.6 and 2.4 mm.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"athfj\",\"text\":\"There is no particularly dangerous operation in this experiment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"62o2n\",\"text\":\"A camera that can take high-resolution images.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "High-resolution images of rice at heading stage were obtained by camera equipment.",
+    "After image collection, some plots were selected to investigate their panicle number and tillering number.",
+    "The plot to be observed was cropped from the original image, and the corresponding plot image was annotated according to the ground survey results.The data that support the findings of this study are openly available in [Figshare] at https://doi.org/10.6084/m9.figshare.17169266.v1.",
+    "A deep CNN (DCNN) for automatically estimating PR was built based on the Keras library with the TensorFlow backend.",
+    "The data set is divided into training set, validation set and test set.Model parameters are optimized using training sets and validation sets.",
+    "Training the heading proportion recognition model.All the code can be viewed at GitHub at https://github.com/Ziyue-Guo/Panicle_Ratio_Network.git ."
+  ],
+  "authors": [
+    "Ziyue Guo",
+    "Chenghai Yang",
+    "Wangnen Yang",
+    "Guoxing Chen",
+    "Zhao Jiang",
+    "Botao Wang",
+    "Jian Zhang"
+  ],
+  "creator": "ziyue.guo",
+  "published_on": 1651110598,
+  "created_on": 1651065668,
+  "keywords": []
+}

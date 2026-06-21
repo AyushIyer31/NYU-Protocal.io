@@ -1,0 +1,33 @@
+{
+  "id": 109320,
+  "title": "SOP52v1_TGD_IIDP-HIGISampleProcessing_Public",
+  "uri": "sop52v1-tgd-iidp-higisampleprocessing-public-dnzg5f3w",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg32joev25/v1",
+  "description": "{\"blocks\":[{\"key\":\"2otqv\",\"text\":\"This protocol details the workflow to process pancreatic tissues (received from the Integrated Islet Distribution Program's distribution centers) for genotyping at the Translational Genomics of Diabetes Lab at Stanford University.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "When acinar samples are received from the various isolation centers, match what is physically sent with sample info list sent with package and make sure all samples are accounted for. Take note of the condition of the samples.",
+    "Let isolation center know samples were received and in what condition.",
+    "Print QR barcodes for the acinar samples in this format and tape onto the tubes. HIGI#ACIN (# being the next sequential number)",
+    "Store tubes in Yalow -80°C freezer in &#34;IIDP - HIGI Acinar Samples&#34; box.",
+    "Thaw acinar tubes on ice.",
+    "Use DNA extraction protocol for DNeasy Blood &amp; Tissue Kit ( https://protocols.io/view/dna-extraction-qiagen-dneasy-blood-amp-tissue-kit-bjngkmbw ).",
+    "After extraction, measure the concentration by nanodrop, taking account of A260/280 and A260/230 values as well. A260/280 value should be close to 1.8 and A260/230 should be around 1.8-2.0.",
+    "Take a portion of the sample to measure concentration by Qubit. Protocol can be found here: https://protocols.io/view/qubit-dsdna-assays-bnstmeen . For genotyping, Qubit concentration should be above 50 ng/uL and total DNA should be above 750 ng. In case the DNA concentration is below 50 ng/uL repeat the DNA extraction with a fresh piece of acinar tissue from the same donor and QC the extracted DNA. Keep repeating this till you are able to extract at least 750ng of DNA for that donor (it is okay if the concentration of the extracted DNA is still less than 50ng/uL) - for these samples, when you submit them for genotyping (step 10), make sure that you pool together and submit all the DNA you have extracted for that donor and request for the sample to be &#39;speed-vac&#39;ed at the SFGF core - this will help bring the concentration up to 50ng/uL, while still making sure that there is 750ng of DNA, thereby meeting the QC requirements for genotyping.",
+    "Record sample info, nanodrop QC and Qubit information in genotyping QC spreadsheet, which will be sent to the SFGF core whenever the entire genotyping batch is ready (follow this protocol: https://www.protocols.io/edit/sop54v1-tgd-genotypingsubmissionforcollaborators-b8jaruie ).",
+    "Create QR codes that include sample name in this format: HIGI#DNA. Label should also include nanodrop concentration and QC info.",
+    "As of 2023-12-01, samples were sent to be genotyped on Illumina&#39;s Infinium Omni Exome 2.5 arrays. As of 2024-10-31, samples were sent to be genotyped on Illumina&#39;s Infinium Global Diversity Array-8+ v1.0 Omni2.5-Exome-8v1.6 arrays.",
+    "Following the QC of the genotyping data, if the data for a donor fails QC, resend the DNA from that same donor on another genotyping batch."
+  ],
+  "authors": [
+    "Varsha Rajesh",
+    "Swaraj Thaman"
+  ],
+  "creator": "Swaraj Thaman",
+  "published_on": 1728451628,
+  "created_on": 1728353866,
+  "keywords": []
+}

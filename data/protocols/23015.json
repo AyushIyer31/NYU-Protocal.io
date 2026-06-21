@@ -1,0 +1,28 @@
+{
+  "id": 23015,
+  "title": "Mouse Stellate- Intracellular recording",
+  "uri": "mouse-stellate-intracellular-recording-2qfgdtn",
+  "doi": "dx.doi.org/10.17504/protocols.io.2qfgdtn",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "See mouse stellate iosolation protocol",
+    "Isolated mouse stellate pinned to clean Sylgard perti dish",
+    "Continuously superfuse isolated stellate (6–7 ml/min) with PSS (32–35°C).",
+    "Impale individual neurons using microelectrodes filled with either 2M KCl (60–120 MΩ) or 2M KCl + 2% Neurobiotin (80-160 MΩ; Vector Labs).",
+    "Record intracellular membrane voltage using a Multiclamp 700B amplifier coupled with Digidata 1550B data acquisition system and pCLAMP 10 software (Molecular Devices, Sunnyvale, CA).",
+    "Characterize responsiveness of membrane potential to membrane physiology. Depolarizing current steps (0.1–0.5 nA amplitude, 500-ms or 1-s duration) are used to assess neuronal excitability.Cells are classified as either phasic (&lt;2 APs), bursting (2-5 spikes in short burst), or tonic (&gt;5 spikes continuously) based on the number of APs elicited by the intracellular current. Hyperpolarizing current steps (500 ms) of increasing amplitude are used to test for rectification in the current-induced hyperpolarization.Action potential (AP) amplitude and duration are measured from spontaneous or nerve evoked APs.After-hyperpolarization amplitude and duration were measured from brief intracellular current injections (100-500pA, 5ms), spontaneous APs, or nerve evoked APs.",
+    "Graded stimulus shocks (100 µs) delivered from the concentric bipolar electrodes to identified nerves in 50-100μA steps, from 800uA to 0μA were used to generate a stimulus recruitment curves (AMPI Master 8 and IsoFlex optical Isolation unit). 5-20 stimuli were delivered at each stimulus intensity, with an interval of 3 sec between stimuli. Analysis of synaptic events focused on EPSP latency and jitter (SD of latency) as indices of conduction, path and release."
+  ],
+  "authors": [
+    "John Tompkins",
+    "Mike Andresen"
+  ],
+  "creator": "Scott John",
+  "published_on": 1562954346,
+  "created_on": 1557334423,
+  "keywords": []
+}

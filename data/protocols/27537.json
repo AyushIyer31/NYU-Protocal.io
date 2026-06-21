@@ -1,0 +1,37 @@
+{
+  "id": 27537,
+  "title": "Single Cell Dissociation of Small Tumor Biopsies",
+  "uri": "single-cell-dissociation-of-small-tumor-biopsies-65rhg56",
+  "doi": "dx.doi.org/10.17504/protocols.io.65rhg56",
+  "description": "{\"blocks\":[{\"key\":\"1cgnc\",\"text\":\"Dissociate small core biopies into single cells.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"a7ogj\",\"text\":\"1Base Buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":12},{\"style\":\"sup\",\"offset\":0,\"length\":1}],\"entityRanges\":[],\"data\":[]},{\"key\":\"2uqss\",\"text\":\"DMEM F12 \\n6% FBS\\n*good for 1 month at   C\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":38,\"length\":1}],\"data\":[]},{\"key\":\"rokq\",\"text\":\"\\n2Collagenase Buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":1,\"length\":19},{\"style\":\"sup\",\"offset\":1,\"length\":1}],\"entityRanges\":[],\"data\":[]},{\"key\":\"ejash\",\"text\":\"Add 2mg/ml of Collagenase II to Base Buffer.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6ak7e\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"bht7q\",\"text\":\"3FACS Buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":12},{\"style\":\"sup\",\"offset\":0,\"length\":1}],\"entityRanges\":[],\"data\":[]},{\"key\":\"7n51i\",\"text\":\" 9.5 mL Miltenyi PBS + EDTA Buffer\\n 0.5 mL Miltenyi BSA \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"c3321\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"temperature\",\"mutability\":\"\",\"data\":{\"guid\":\"A9E6C1B0D00F11E98EDED9E375E4B601\",\"id\":0,\"label\":\"\",\"temperature\":\"4\",\"unit\":10}}}}",
+  "steps": [
+    "Make and/or warm Base Buffer 1 to 37 °C .",
+    "Pour the sample(s) into a 10cm dish. Take a picture of the samples in a 10cm dish (in the media it comes in). Example: Core biopsy sample in 10cm viewed in 10cm dish.",
+    "Cut sample into small pieces and place into a 1.5mL tube (or multiple tubes if necessary, don’t overload the tube with tissue). Add 1.5 mL of collagenase buffer 2 and digest for 00:30:00 , 37 °C , shaking in a thermomixer @ 800-1000 rpm (the tissue should not be sitting at the bottom of the tube when it’s mixing). If chunks of sample remain, pipet the sample up and down 15 times. Return the sample to the thermomixer for 00:30:00 at 37 °C shaking.",
+    "Remove the sample from the thermomixer. Pipet the sample up and down 15 times.",
+    "Filter the sample over a 100-micron filter into a new 1.5 mL tube.",
+    "Wash the sample filter with 1-2mL of collagenase buffer.",
+    "Put the cells that passed through the filter on ice.",
+    "Check cells with Trypan Blue and Hemocytometer (10ul Trypan blue mixed with 10ul of sample), take picture on microscope and label with date and sample ID and record # of live/dead cells. Example: Cells viewd at 10x stained with trypan blue.",
+    "OPTIONAL: If there are persistent chucks of tissue that did not pass though the filter, gather them into a new 1.5 mL tube and add 0.5 mL 0.05% warmed trypsin. Digest the tissue for 00:10:00 at 37 °C , shaking in a thermomixer @ 800-1000 rpm. Quench the reaction with 1 mL Base Buffer. Filter the sample over a 100-micron filter into a new 1.5 mL tube. Wash filter with 1-2 mL of collagenase buffer. Check cells with Trypan Blue and Hemocytometer, take picture on microscope and label with date and sample ID and record # of live/dead cells. Combine the filtered cells from step 7 and 9 into one tube.",
+    "Spin at 1500 rpm for 00:10:00 .",
+    "OPTIONAL (Only if pellet is visibly red): Add 0.5 mLs RBC lysis buffer to sample tubes. Leave at RT for 2-5min. Add 1.0 mL DMEM F12 + 6% FBS to each tube and spin again. Example: Example of red pellet of cells that needs RBC lysis treatment.",
+    "Aspirate off supernatant. Resuspend in 120 uL of FACS Buffer 3 .",
+    "Count cells with Trypan Blue and hemocytometer (10ul Trypan blue mixed with 10ul of sample). Record the number of live and dead cells (stained blue). Take picture on microscope and label with date + sample ID + “final”",
+    "Remove 10ul of sample into a new 1.5mL tube, add 350uL of FACS Buffer and set aside for unstained control.",
+    "Stain remaining cells with 10ul CD45-FITC (if cell count is under 1x10^7) and 1ul of Hoechst stain (diluted 1:10). Incubate on ice in dark for 00:20:00 .",
+    "Add 1mL of FACS Buffer to stained cells. Spin at 1500 rpm for 00:10:00 and aspirate off supernatant. Resuspend with 0.5 mLs of FACS Buffer.",
+    "00:05:00 before sorting add, 0.5 uL of PI and mix well. Transfer unstained and stained samples to FACS tubes and leave on ice in the dark."
+  ],
+  "authors": [
+    "Ashley Maynard"
+  ],
+  "creator": "Ashley Maynard",
+  "published_on": 1567710595,
+  "created_on": 1567709313,
+  "keywords": []
+}

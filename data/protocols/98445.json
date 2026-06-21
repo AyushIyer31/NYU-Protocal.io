@@ -1,0 +1,34 @@
+{
+  "id": 98445,
+  "title": "CODA (part 5): nuclear coordinate generation | HuBMAP | JHU-TMC",
+  "uri": "coda-part-5-nuclear-coordinate-generation-hubmap-j-dcdm2s46",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gpz8z8lzp/v2",
+  "description": "{\"blocks\":[{\"key\":\"bn5sg\",\"text\":\"In this section, generate nuclear coordinates on the\\nhigh-resolution H\\u0026E images through color deconvolution and identification\\nof two-dimensional intensity minimums in the hematoxylin channels of the images\\n(corresponding to the dark blue nuclei). This calculation is done on the\\nhigh-resolution tiff images saved inside pth10x. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dv459\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"90o6v\",\"text\":\"Note on cell detection: It is important that the cell\\ncoordinates are generated on unregistered images, as warping caused by the\\nregisteration process can cause inaccuracies in nuclear detection performed on\\nthe registered images. Instead, detect coordinates on the unregistered images,\\nthen apply the registration transformations to the cell coordinates to\\ndetermine their positions in registered space.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "generate a mosaic image containing tiles from nine randomly chosen high-resolution images. This will be the image used to optimize the parameters for the cell detection algorithm. Given the path to the high-resolution images, the function will randomly choose nine files (filenames can overlap if the folder contains fewer than nine files). The low-resolution version of each image will be loaded and displayed to the user, prompting the user to click on a region containing tissue. This will be repeated nine times, after which the high-resolution mosaic image will be generated. Note: When manually selecting regions for the mosaic image, select regions with various morphologies to ensure that your cell detection algorithm is robust.",
+    "make_cell_detection_mosaic(pth10x); This function will create a subfolder containing the mosaic image: pthmosaic=[pth10x,&#39;cell_detection_validation&#39;];",
+    "Manually count the nuclei on the mosaic image to generate ground-truth coordinates. Given the path to the mosaic image, this function will display the image to the user and prompt the user to zoom in. Zoom to a region where nuclei are clear, then press ‘spacebar.’ Click on each nucleus in the zoomed region, then press ‘z’ to zoom or scroll to another region in the image. Continue until all nuclei in the mosaic have been annotated. At any time, exit the code by pressing ‘z’ and selecting continue later. When you recall the code it will automatically continue from where you left off. When you are finished, press ‘z’ then select ‘Quit’. For a mosaic image comprised of 9 200x 200 micron 2 10x magnification tiles, manual annotation of nuclei for a medium dense tissue should take 30 – 45 minutes for a trained user. manual_cell_count(pthmosaic); This will create a subfolder named ‘manual detection’ containing the manually identified coordinates inside a mat file in a variable named ‘xym.’ pth_mosaic_manul_coords=[pthmosaic,manual detection’];",
+    "Next, determine the optimal intensity cutoff and minimum spacing between nuclei to most maximize the true positives and minimize the false positives and false negatives in automatic determination of nuclear coordinates. This is done through comparison of the manually generated cell coordinates to several variations of automatically generated coordinates.",
+    "Next, optimize the parameters by iteratively generating nuclear coordinates on the mosaic image and comparing them to the manual cell detection. get_nuclear_detection_parameters(pthmosaic) This will generate a subfolder named ‘automatic detection’ containing the optimal automatically generated cell coordinates, and a subfolder named ‘optimization params’ containing the determined parameters. paramsfile=[pthmosaic,&#39;automatic_detection\\optimized_params.mat&#39;];",
+    "Finally, apply the cell detection to the hematoxylin channel of the high-resolution images using the optimized parameters: pthparams=[pth10x,&#39;cell_detection_validation\\automatic_detection&#39;]; cell_detection(pthH,pthparams);",
+    "First, deconvolve the mosaic image to get its hematoxylin channel. If the images are H&amp;E, use the ImageJ default optical densities for H&amp;E images. This function generates output images containing the hematoxylin and eosin (or DAB) channel images: pthmosaicH=[pth10x,&#39;Hchannel&#39;]; pthmosaicE=[pth10x,&#39;Echannel&#39;];",
+    "Now, apply the color deconvolution to the entire high-resolution dataset using the calculated parameters. We first deconvolve the images to get their hematoxylin channel. If the images are H&amp;E, use the ImageJ default optical densities for H&amp;E images: stain_type=1; If the images are IHC, use the ImageJ default optical densities for H DAB images. stain_type=2; deconvolve_histological_images(pth10x,stain_type); This function generates output images containing the hematoxylin and eosin (or DAB, for IHC) channel images: pthH=[pth10x,&#39;Hchannel&#39;]; pthE=[pth10x,&#39;Echannel&#39;];",
+    "The workflow in this section will create a subfolder inside the high-resolution hematoxylin-channel tif image folder named ‘cell_counts’. Within ‘cell_counts’ will be a mat file corresponding to each tif image. Inside each mat file will be a variable named ‘xy’ with coordinates for each cell found in the corresponding image. pthcoords=[pth10x,&#39;cell_counts\\&#39;];"
+  ],
+  "authors": [
+    "Kyu Sang Han",
+    "Pei-Hsun Wu",
+    "Joel Sunshine",
+    "Ashley Kiemen",
+    "Sashank Reddy",
+    "Denis Wirtz"
+  ],
+  "creator": "Kyu Sang Han",
+  "published_on": 1713476843,
+  "created_on": 1713476785,
+  "keywords": []
+}

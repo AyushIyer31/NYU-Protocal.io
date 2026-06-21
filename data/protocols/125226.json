@@ -1,0 +1,34 @@
+{
+  "id": 125226,
+  "title": "CycloneSEQ sequencing protocol for bacterial libraries",
+  "uri": "cycloneseq-sequencing-protocol-for-bacterial-libra-d6ii9cce",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vz6n6rgx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"7gn36\",\"text\":\"CycloneSEQ is a novel long-read sequencing platform developed by BGI-Research This CycloneSEQ sequencing protocol follows a library construction protocol tailored for the assembly of circular complete genomes from mixed microbial communities. DNA is extracted from bacterial strains and after construction the resulting libraries can be sequenced on the CycloneSEQ platform. This protocol is the for the following sequencing steps.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "The library construction needs to be performed according to the library preparation protocol (see https://dx.doi.org/10.17504/protocols.io.rm7vzk3k2vx1/v1 ), and the constructed library samples are then quantified using a Qubit TM dsDNA Quantitation, High Sensitivity Assay Kit (Invitrogen‱ Cat Q32851).",
+    "Install the CycloneSEQ WT chip into the sequencer and complete the chip Quality Control step. Example of a used WuTong02 chip.",
+    "The total volume of the library sequencing system is 250 µL, consisting of 150 µL of sequencing reagent, 3 µL of incubation reagent, and nuclease-free water (97 µL minus the library volume). When the Library is &gt; 3 kb and Full-Length, a loading amount of 900 ng is generally required. When the Library ≤ 3 kb, a loading amount of 300 ng is typically needed. The volume of the loading amount should be maintained within 10 µl ~ 50 µl. The formula for calculating the volume of library is as follows: Volume (µL) = Total library amount (ng) / library concentration (ng/µL). Preparations are then sequenced strictly adhering to the above ratios for library sequencing to avoid impacting the sequencing results.",
+    "Open the outer cover of the sequencer, pipette the sequencing system solution into the chip according to actual need, and then close the outer cover of the sequencer.",
+    "Set the sequencing cycle number and timing period according to experimental needs.",
+    "Set the incubation time to 20 minutes, begin the countdown. Sequencing automatically starts once the countdown ends.",
+    "Once the sequencing process is beginning, the analysis interface shows real-time changes in Reads, Speed, Output, and Q value, and the binary file with bases and quality score are converted into FASTQ format with Phred+33 quality scores.",
+    "Afterwards, the chip is processed and recycled."
+  ],
+  "authors": [
+    "Hewei Liang",
+    "Mengmeng Wang",
+    "Junyi Chen",
+    "Yuning Zhang",
+    "Tao Zeng",
+    "Yuanqiang Zou",
+    "Liang Xiao"
+  ],
+  "creator": "Mengmeng Wang",
+  "published_on": 1744013802,
+  "created_on": 1743001282,
+  "keywords": []
+}

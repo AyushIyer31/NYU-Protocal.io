@@ -1,0 +1,31 @@
+{
+  "id": 55902,
+  "title": "Measuring growth rates of diatom cells in culture",
+  "uri": "measuring-growth-rates-of-diatom-cells-in-culture-b2t6qere",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzynnxlx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"928am\",\"text\":\"A method for measuring growth rates in diatoms, based on work with Thalassiosira spp. Used in:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f5di2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6dveq\",\"text\":\"Argyle, P. A., Walworth, N. G., Hinners, J., Collins, S., Levine, N. M., \\u0026 Doblin, M. A. (2021). Multivariate trait analysis reveals diatom plasticity constrained to a reduced set of biological axes. ISME Communications, 1(1), 59.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":200,\"length\":19},{\"style\":\"italic\",\"offset\":221,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"l0b1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a03jq\",\"text\":\"Argyle, P. A., Hinners, J., Walworth, N. G., Collins, S., Levine, N. M., \\u0026 Doblin, M. A. (2021). A high-throughput assay for quantifying phenotypic traits of microalgae. Frontiers in microbiology, 12, 706235.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":170,\"length\":25},{\"style\":\"italic\",\"offset\":197,\"length\":2}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Take an aliquot of culture: Take daily aliquots of culture and take measurements immediately or fix using Paraformaldehyde 8% EM Grade aqueous solutions Emgrid Catalog #157-8 (CAS: 30525-89-4) . The size of the aliquot depends on a number of things: -Total volume of culture -Approximate concentration As multiple aliquots will be taken, it is important to not remove too much volume or biomass during the experiment, so as to not alter the conditions of the experiment too much. It is recommended to not remove more than 50% of the volume throughout the experiment, however less is preferable. In order to accurately estimate concentration, a minimum of 200 cells should be counted. Therefore if a culture was initially inoculated at 2000 cells/mL, aliquots for growth estimation should be at least 100 µL . The more cells counted, the greater the accuracy of the estimate. If cells are clumping in the culture, gently agitate before taking the aliquot, take the aliquot from the center of the culture (rather than surface or bottom). If the culture is slow growing, aliquots may be taken every second or third day, at the discretion of the researcher. However it is preferable to capture multiple data points during the exponential growth phase.",
+    "Measure the cell concentration. Cell concentration from the aliquot may be estimated using a haemocytometer or or flow cytometry. Neubauer Improved Haemocytometer Counting Chamber (Counting Chamber, Hawksley, AC1000, Void depth: 0.1 mmCounting Area: 1mm², https://hawksley.co.uk/products/neubauer-improved-haemocytometer-counting-chamber , https://protocols-files.s3.amazonaws.com/private/2adc685aba2669f84eefd3e3bf54fe2597586d9c2ca8f5ecb2b8de1c2076d7d7/b3kt2kzw.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAWFTFYUBUZ2U2JGOS%2F20260621%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20260621T105549Z&X-Amz-Expires=604800&X-Amz-SignedHeaders=host&X-Amz-Signature=ffd5faa7fb24d25c9f734589b996dfbcc62e62bf0c27067cac0a6d1464622d4e ) For larger cells, a Sedgewick Rafter Counting chamber may be appropriate. Sedgewick Rafter Counting Chamber (Microscopy counting chamber, Graticules Optics, 02B00417, https://www.graticulesoptics.com/products/counting-chambers/sedgewick-rafter-cell/s52-glass-sedgewick-rafter-counting-chamber )",
+    "Calculate the concentration of cells in the aliquot (remembering to account for the volume of the fixative if using preserved cells) and thus the concentration of the initial culture in cells per mL. I.e. Cells counted per volume counted.",
+    "The classic equation for calculating microalgae growth rates based on two points is: where F2 is the fluorescence measurement at time 2 (t2) in days and F1 is the fluorescence at time 1 (t1) in days if using in vivo fluorescence measurements. Where cell counts are used, F2 and F1 are replaced with cell concentration at both times (C2 and C1).",
+    "Calculating growth rates for multiple time points, a linear regression is used of the ln(Fluorescence) or ln(cell concentration) plotted against time. A linear regression fitted during the exponential growth phase gives the growth rate (the slope). Natural log of in vivo fluorescence over time for a Thalassiosira pseudonana culture. A linear regression is fitted across the exponential phase, with the slope giving the growth rate of the culture.",
+    "Measure the in vivo chlorophyll fluorescence of the culture using a fluorometer (using a test tube) or a plate reader (for cultures grown in tissue culture plates). 10AU Solid secondary standards (Turner Designs Digital Fluorometer, Turner designs, 10-AU-904) Infinite® M1000 Pro (Microplate reader, Tecan, n/a, Note M1000 Pro no longer in production, newer models such as the Spark are available and will serve the same purpose., https://lifesciences.tecan.com/microplate-readers ) For chlorophyll measurements in a plate reader, a 455/680 nm excitation/emission filter is used."
+  ],
+  "authors": [
+    "Phoebe Argyle",
+    "Jana Hinners",
+    "Nathan G. Walworth",
+    "Sinéad ollins",
+    "Naomi M. Levine",
+    "Martina A. Doblin"
+  ],
+  "creator": "Phoebe Argyle",
+  "published_on": 1677303983,
+  "created_on": 1639430477,
+  "keywords": []
+}

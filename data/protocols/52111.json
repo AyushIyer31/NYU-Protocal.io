@@ -1,0 +1,33 @@
+{
+  "id": 52111,
+  "title": "Checklist for organizing and managing data",
+  "uri": "checklist-for-organizing-and-managing-data-bw5ppg5n",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"b09ru\",\"text\":\"When planning an experiment, making a plan for data organization is a key step. Data are the currency of science and allow for confirmation of results. Moreover, your data may aid others in their work. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2v4gk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ek70k\",\"text\":\"This protocol is a recommended checklist for planning (OR organizing data in hindsight) for students in Biochemistry lecture or labs at James Madison University. It was designed to help new scientists make their data accessible. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bdd78\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1s9br\",\"text\":\"A starting guide to data management\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":35}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"D7F791C0F55A11EB8F7F6DE34C4D68EE\",\"url\":\"https://osf.io/5jxe3/wiki/Data%20Management%20guide%20and%20tips/\"}}}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"eqdun\",\"text\":\"If planning for a new experiment or set of experiments, ensure that you have a clear idea of the types and amount of data that you will be generating. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":54}],\"entityRanges\":[],\"data\":[]},{\"key\":\"ar5d4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2fujp\",\"text\":\"If organizing data for deposition or in hindsight, know what types of data are in the data set. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":49}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Create a separate folder for each type of experiment. Data should be sorted to keep data from the same experiment together.",
+    "Create separate sub-folders for distinct trials or data collection times within each experiment folder.",
+    "Keep analysis files separate from the raw data files",
+    "Files names should be clear as to the experiment and avoid computer added versioning (i.e. the (1) that computers add when saving a file with the same name).",
+    "Experiment titles should contain information including type (NMR, SAXS), initials of scientist (if known), and type of data (intensity, counts, etc.)",
+    "If known, raw data files should have a collection date or experiment data in YYYYMMDD format OR YYMMDD format.",
+    "Files that are collected from iterations of the same experiment like multiple reads of the same sample should have leading numbers in 0001, 0002, 0003 so that they sort in order.",
+    "Avoid punctuation marks in file names (except - (dash) and _ (underscore)) in file names.",
+    "Tables or spreadsheet data should be tidy, specific, and clearly indicate units. An example of a reasonable table is shown below. A tidy table with one type of information per column, units on numerical data, and specificity in column titles.",
+    "File extensions should be non-proprietary and accessible. Table below shows suggested formats. %s %s",
+    "To convert a file, most programs offer a Save As functionality with a File Format option.",
+    "Write a text file or a wiki entitled as README or file guide to describe the contents of each folder. The descriptions should include information on how the files are internally organized and how the data were generated in enough detail that an interested observer can read this file and easily find which files they need, understand how to access them, and have an idea of the contents.",
+    "For class projects, this completed checklist should be turned in. The easiest way is to export to a PDF via MORE&gt;Export&gt;PDF&gt;to your computer. Then upload the project to your team folder."
+  ],
+  "authors": [
+    "Chris Berndsen"
+  ],
+  "creator": "Chris Berndsen",
+  "published_on": 1628105749,
+  "created_on": 1628105376,
+  "keywords": []
+}

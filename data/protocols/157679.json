@@ -1,0 +1,32 @@
+{
+  "id": 157679,
+  "title": "Automated VMAT Planning for Short-Course Radiotherapy in Locally Advanced Rectal Cancer",
+  "uri": "automated-vmat-planning-for-short-course-radiother-e58pbg9vp",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g7357qvwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"tu063\",\"text\":\"This protocol outlines the clinical data selection, contouring workflow, VMAT plan generation, and optimization procedures comparing manual plans (MPs) using Monaco TPS with automated plans (APs) implemented on RayStation TPS for short-course radiotherapy (SCRT) in rectal cancer. It includes detailed optimization parameters, dosimetric constraints, dose calculation algorithms, and convergence criteria.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"6sqd9\",\"text\":\"This retrospective study was based on CT imaging data obtained from an anonymized database of patients who had completed treatment, with no additional patient intervention or data acquisition involved.This study was approved by the Ethics Committee of Sir Run Run Shaw\\nHospital, Zhejiang University School of Medicine (Approval No. 2024-2147-01)\\nand was conducted in accordance with the ethical standards of the Declaration\\nof Helsinki. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"cusr7\",\"text\":\"This study utilized anonymized, retrospective CT data. No hazardous materials, biological agents, or high-risk procedures were involved.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"3bifn\",\"text\":\"Equipment：Monaco V6.00.11 TPS ，RayStation 9A TPS\\nElekta Infinity linear accelerator \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6rb7n\",\"text\":\"Software：Python v2.7\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Criteria: Rectal adenocarcinoma, clinical stage T3a–T4a;Received neoadjuvant SCRT (25 Gy/5 fractions);Underwent prone-position CT simulation (3-mm slice thickness)Exclusion Criteria:History of long-course radiotherapy (LCRT);Evidence of metastatic disease at treatmentCohort Description: Total: 30 patientsMedian age: 61 yearsGender: 77% maleEthics Statement: Approved by the Ethics Committee of Sir Run Run Shaw Hospital, ZhejiangUniversity (No. 2024-2147-01)Data were de-identified and retrospectively collected between April–July 2024",
+    "Simulation and ContouringSimulation :Position: ProneCT Scan: 3-mm slice thicknessImmobilization: Standard pelvic immobilization deviceContouring:Performed by a single experienced radiation oncologistFollowed institutional and published consensus guidelinesTarget Volumes:GTV: Gross tumor volume;CTV: Includes mesorectum, presacral, and internal iliac nodes;PTV: CTV + 3 mm uniform marginOrgans-at-Risk (OARs): Small bowel, Bladder,Bilateral femoral heads, Pelvic marrow",
+    "Planning Constraints and Clinical Goals PTV Goals: V25Gy ≥ 95% Dmax &lt; 110% (27.5 Gy) OAR Dose Constraints: Small bowel: V10Gy &lt; 180–200 cc, V18Gy &lt; 110 cc, V23Gy &lt; 85 cc Bladder: V25Gy &lt; 5%, V21Gy &lt; 15% Femoral heads: V12.5Gy &lt; 11% Pelvic marrow: Minimize dose; avoid hotspots",
+    "Manual Planning Platform: Monaco v6.00.11 Elekta Infinity linac Dose rate: 1400 MU/min Beam energy: 6 MV FFF Dose grid: 0.25 cm Delivery technique: Dual-arc VMAT (Arc1: 204°→156°, Arc2: 156°→204°) Plan uncertainty: 0.7% Dose Calculation: XVMC algorithm (based on VMC) Fast stochastic modeling with energy cutoffs and transport approximations Planning Personnel: Dosimetrist with &gt;5 years of experience Clinically approved by senior physicians",
+    "Auto-Planning Platform: RayStation 9A Python scripting (v2.7) Same machine specs and beam settings as MP Dose Calculation: Monte Carlo (EGSnrc-based) GPU-accelerated computation Optimization Method: DMPO (Direct Machine Parameter Optimization) Auto-Planning Workflow Script Logic: Structured into 5 steps: Step 1: Initial Plan Creation Create beams, auxiliary structures, and define loose optimization objectives Add dose objectives for PTV and OARs Step 2: First Pass Optimization Run 30-step flux optimization (fluence map optimization) Evaluate and adapt objectives according to dose feedback Step 3: Evaluation and Tightening Analyze convergence values from feedback If not meeting thresholds (e.g., objective value &gt; 4e-4), tighten constraints Evaluate target coverage and OAR sparing Step 4: Iterative Cycles Up to 3 optimization cycles (100 iterations/cycle) Normalization to prescribed dose Step 5: Termination and Restart Criteria Terminate optimization if convergence is achieved or thresholds are met If cycles exceed 3 without convergence, reset plan and restart to reduce complexity Note: AP plans were for research only and not delivered clinically Fig. 1 (in main manuscript) shows the full automation workflow",
+    "Data Management and Analysis Plans stored in DICOM-RT format Dosimetric parameters (e.g., CI, HI, MU, OAR doses) extracted using in-house Python tools Statistical comparisons between MP and AP conducted using paired tests",
+    "CitationPlease cite the main paper (once published) or contact the corresponding author foraccess to the automation script or patient dataset."
+  ],
+  "authors": [
+    "qiong zhou",
+    "Liwen Qian",
+    "Chong Shen",
+    "Xinyan Bei",
+    "Gaojie Liu",
+    "Xiaonan Sun"
+  ],
+  "creator": "qiong zhou",
+  "published_on": 1745604815,
+  "created_on": 1745566111,
+  "keywords": []
+}

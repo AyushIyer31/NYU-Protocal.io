@@ -1,0 +1,37 @@
+{
+  "id": 85794,
+  "title": "KAPP-Sen TMC: Dissociation of Pancreatic Islets (recovered)",
+  "uri": "kapp-sen-tmc-dissociation-of-pancreatic-islets-rec-cx2axqae",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v9pyq4g3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"ftus8\",\"text\":\"The dispersed samples were shipped cold from PRODOLABS. Prior to scRNA-seq dispersed samples from brain dead donor’s pancreatic islets were recovered and dissociated as follows.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":45,\"length\":9}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Before beginning cell dissociation coat all the materials (pipettes, tubes, etc.) with PIM-S001GMP media to prevent sticking.",
+    "Cells were fixated prior to scRNAseq according to https://dx.doi.org/10.17504/protocols.io.x54v9py5zg3e/v1",
+    "Transfer cell suspension of pure islets to a new 50ml tube. Use additional media to rinse original container.",
+    "Centrifuge at room temperature 130g for 5 mins.",
+    "Aspirate the supernatant and add media to the appropriate concentration of 1,000 islets/1 ml. --&gt; Ex: If receiving 7,000 islets, use 7 ml media.",
+    "To recover cells, add half of the islets to a coated flask and incubate at 37°C overnight.",
+    "Coat pipette and add islets from flask to a 50ml tube. Wash flask with media to make sure all islets have been collected.",
+    "Centrifuge at 130 g, room temperature for 2 mins.",
+    "Aspirate media and resuspend in 4 ml accutase. Incubate at 37C for 8 mins, mixing with pipette every 2 mins. Check at 6 mins. --&gt;1 mL accutase/1,000 islets",
+    "Add CMRL 1066 (Cat. 11530037) media to 25 ml then centrifuge at 230 g.",
+    "Aspirate supernatant and resuspend in 1.5 ml of CMRL",
+    "Filter through a 40 µm Flowmi.",
+    "Count cells using AO/PI (acridine orage/propidium iodide) Cell Viability Kit for Luna-FL automated cell counter.",
+    "Proceed to cell fixation."
+  ],
+  "authors": [
+    "Juliana Alcoforado Diniz",
+    "Jessica Garofalo",
+    "Dylan Baker",
+    "Paul Robson"
+  ],
+  "creator": "Ashley M Raynock",
+  "published_on": 1695839696,
+  "created_on": 1690904654,
+  "keywords": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": 13085,
+  "title": "CGAP MACS Live Dead Separation",
+  "uri": "cgap-macs-live-dead-separation-qz5dx86",
+  "doi": "dx.doi.org/10.17504/protocols.io.qz5dx86",
+  "description": "{\"blocks\":[{\"key\":\"f47p3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"dmecq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"9ea4p\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"abq2u\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "A single-cell suspension should have been prepared previously and cells number and viability assessed using 1:1 trypan blue dilution. A viability percentage below 70-80% usually justifies using this Dead Cell Removal protocol.",
+    "Remove required number of cells and place in a 15ml Falcon Tube. Required number of cells/total cells = volume required (ml).",
+    "Prepare 20ml 1X Binding Buffer by adding 1ml 20X Binding Buffer Stock to 19ml Nuclease Free Water.",
+    "Centrifuge cell suspension for 5min at 300g.",
+    "Remove supernatant.",
+    "Resuspend cell pellet in 100ul Dead Cell Removal MicroBeads per 10 7 cells.",
+    "Mix well and incubate for 15mins at room temperature.",
+    "When 5min of incubation remains, place MS column (if &lt;2x108 cells) or an LS column (if &lt;2x109 cells) on QuadroMACS Magnetic Cell Separator and run 500µl (MS column) or 3ml (LS column) 1X Binding Buffer through the LS column, using a waste 15ml Falcon Tube to catch the effluent.",
+    "When incubation is finished, add 1ml (MS column) or 3ml (LS column) 1X Binding Buffer to cells.",
+    "Run cell suspension through LS column on QuadroMACS Magnetic Cell Separator, using a 15ml Falcon Tube to catch effluent as the the live cell fraction.",
+    "When cells have passed through, run 4 x 500µl (MS column) or 4 x 3ml (LS column) 1X Binding Buffer through LS column on QuadroMACS Magnetic Cell Separator using the same falcon tube to catch effluent as the the live cell fraction.",
+    "Centrifuge cells at 500g for 5 min at 4°C. Resuspend in 0.5-1ml PBS + 0.04% BSA.",
+    "Count cells and viability using nucleocounter.",
+    "Resuspend in appropriate volume of 0.04% BSA in PBS to run in Chromium.",
+    "%s %s"
+  ],
+  "authors": [
+    "Adam Hunter"
+  ],
+  "creator": "Adam Hunter",
+  "published_on": 1531313219,
+  "created_on": 1529063957,
+  "keywords": []
+}

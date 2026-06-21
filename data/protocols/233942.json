@@ -1,0 +1,29 @@
+{
+  "id": 233942,
+  "title": "EMG recordings",
+  "uri": "emg-recordings-hgpwb3vpf",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgqpx4yvk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"1ccie\",\"text\":\"This is the standard protocol for recordings of bulk EMG used for Rodrigues-Vaz and Athalye et al, 2025.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"59h2\",\"text\":\"-Mice were implanted with EMG electrodes in forelimb muscles, head plate, and GRIN lens and habituated to being head fixed.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bqlfv\",\"text\":\"-Behavior setup was prepared and placed under microscope for in vivo experiments.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":61,\"length\":7}],\"entityRanges\":[],\"data\":{}},{\"key\":\"a9504\",\"text\":\"-2-photon microscope was also prepared for simultaneous recordings. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"3g40u\",\"text\":\"-Wear appropriate PPE as required by your institution. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"fn4k1\",\"text\":\"•\\tZIF-Clip adapter from Tucker-Davis Technologies (TDT) ZC16 headstage (16 channel ZIF-Clip)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7a86m\",\"text\":\"•\\tTDT RZ5D Bioamplifier processor (acquisition and synchronization device)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"20c1u\",\"text\":\"•\\tTDT PZ5-32 (Z-series 32-channel Neuro-digitizing preamplifier)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4jbp9\",\"text\":\"•\\tSynapse software from TDT for recording EMG\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Confirm EMG recordings are set to “true differential” in Synapse recording software.",
+    "Transfer data to hard-drive.",
+    "Unplug headstage and return mouse to homecage.",
+    "At the end of the session, turn off all behavior boards, the imaging recording and lastly the EMG recordings.",
+    "Record session, confirming that all TTLs are being recorded as expected by design.",
+    "Optimize grounding if noise is not within normal range – mouse is grounded to air table.",
+    "Confirm that signals are recording when mouse moves.",
+    "Head fix mouse in behavior setup under microscope and connect ZC16 headstage to implanted connector.",
+    "Store all cables in safe location"
+  ],
+  "authors": [
+    "Ines Rodrigues-Vaz"
+  ],
+  "creator": "Ines Rodrigues-Vaz",
+  "published_on": 1765493678,
+  "created_on": 1764633352,
+  "keywords": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": 62438,
+  "title": "Lanthanum DAB metals, Ln-DAB2 labeling of APEX2",
+  "uri": "lanthanum-dab-metals-ln-dab2-labeling-of-apex2-b88erzte",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvwkoe2vmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"boqf2\",\"text\":\"This protocol uses APEX2, an engineered peroxidase that genetically targets a cellular region of interest, to oxidatively polymerize Ln-DAB2, (lanthanum chelates conjugated to DAB), using hydrogen peroxide. We use these precipitated lanthanum metals to identify the labeled regions of interest by using EELS and elemental mapping.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"3cgdt\",\"text\":\"Buffer Recipe: (65.7 ml of DDH2O + 1ml of 0.204 M CaCl2 + 33.3ml of 0.3M sodium cacodylate pH 7.4)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":98}],\"entityRanges\":[],\"data\":{}},{\"key\":\"969en\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"11cad\",\"text\":\"Fixative in conical tube: 2.0 ml from 25% EM grade glutaraldehyde stock vial, 1.0 ml of 0.3M stock sodium cacodylate buffer and 22.0 ml of 0.1M sodium cacodylate buffer, pH 7.4.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"60qa9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"a30t9\",\"text\":\"Wear PPE. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "HEK293T cells are cultured on imaging plates containing poly-d-lysine coated glass bottom No. 0 coverslips (P35GC-0-14C, MatTek Corporation).",
+    "Cells are transiently transfected with either APEX2-H2B or mitochondrial matrix-APEX2 fusion using Lipofectamine 3000 (Life Technologies). APEX2 is fused to N-terminal of H2B and to C- terminal of mito matrix.",
+    "After 16 hours transfection, cells are fixed with 2% EM grade glutaraldehyde (18426, Ted Pella Incorporated) in 0.1M sodium cacodylate buffer, pH 7.4 (18851, Ted Pella Incorporated) containing 2 mM CaCl 2 for 5 minutes at 37°C and then on ice for 55 minutes.",
+    "Fixative is removed and cells are rinsed with 0.1M sodium cacodylate buffer, pH 7.4 (5X1min) on ice.",
+    "On a set plates, an enzymatic reaction with Ln-DAB 2 with 4 mM H 2 O 2 (from 30%) in 0.1M sodium cacodylate buffer at pH 7.4 until the desired brown intensity color from the precipitate, between 2 to 30 minutes. (1ul of 9.8M H 2 O 2 added in 2500 ul or 2.5 ml Ln-DAB 2 solution). See making of Ln-DAB 2 solutions.",
+    "After reactions, all plates of cells are rinsed with 0.1M sodium cacodylate buffer, pH 7.4 containing 2 mM CaCl 2 (5X1min) on ice.",
+    "Cells are post-fixed with either 0.01% ruthenium tetroxide (20700-05, Electron Microscopy Sciences) or 1% reduced osmium tetroxide (19150, Electron Microscopy Sciences) containing 2 mM CaCl 2 and 0.8% potassium ferrocyanide in 0.1M sodium cacodylate buffer, pH 7.4 for 30 minutes.",
+    "Post fixative is removed from cells and are rinsed with 0.1M sodium cacodylate buffer at pH 7.4 (5X1min) on ice.",
+    "Cells are washed with ddH 2 O (5X1min) on ice.",
+    "An ice-cold graded dehydration ethanol series of 20%, 50%, 70%, 90%, 100% (anhydrous) for one minute each and 2X 100% (anhydrous) at room temperature for 1 minute each.",
+    "Add 20mM glycine in 0.10M sodium cacodylate buffer, pH 7.4 for 15-20 minutes.",
+    "Rinse cells 2x for 1 minute with the 0.10M sodium cacodylate buffer, pH 7.4.",
+    "Cells were infiltrated with one part Durcupan ACM epoxy resin (44610, Sigma-Aldrich) to one part anhydrous ethanol for 30 minutes.",
+    "Plates are changed three times with 100% Durcupan resin for 1 hours each with the first change having the lid only partly covering the top of the plate, a final change of Durcupan resin and immediately placing the plate without the lid in a vacuum oven at 60°C for 48 hours to harden.",
+    "After 15 minutes, the 0.01% ruthenium tetroxide solution should be removed and replaced with new 0.01% ruthenium tetroxide solution."
+  ],
+  "authors": [
+    "Stephen R. Adams",
+    "Mason Mackey",
+    "Alice Ting",
+    "Mark Ellisman",
+    "Thomas Deerinck"
+  ],
+  "creator": "National Center for Microscopy and Imaging Research",
+  "published_on": 1663355797,
+  "created_on": 1652291403,
+  "keywords": []
+}

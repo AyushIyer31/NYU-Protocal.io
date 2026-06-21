@@ -1,0 +1,32 @@
+{
+  "id": 48837,
+  "title": "Untargeted Top-down Proteomics by CZE-MS/MS on Eclipse",
+  "uri": "untargeted-top-down-proteomics-by-cze-ms-ms-on-ecl-btxdnpi6",
+  "doi": "dx.doi.org/10.17504/protocols.io.btxdnpi6",
+  "description": "{\"blocks\":[{\"key\":\"81g4d\",\"text\":\"Describes the CZE-MS/MS data acquisition procedure for top-down proteomics samples using the Thermo Scientific Orbitrap Eclipse Tribrid mass spectrometer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"5ctqt\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"8qt0o\",\"text\":\"CE vendor: Sciex\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"acj34\",\"text\":\"CE model: CESI 8000 Plus\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dl6d7\",\"text\":\"CE capillary: Neutral OptiMS™ Capillary Cartridges (30 µm ID, L = 90 cm), neutral-coated\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7tpvl\",\"text\":\"Background Electrolyte: 3% Acetic Acid\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8hkio\",\"text\":\"Conductive Liquid: 3% Acetic Acid\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2pccp\",\"text\":\"Optima Acetic Acid (Fisher Scientific, cat. no. A11310X1AMP)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9le58\",\"text\":\"Optima Water (Fisher Scientific, cat. no. W6-4)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Samples were analyzed on a Thermo Scientific Orbitrap Eclipse Tribrid mass spectrometer in line with a Sciex CESI 8000 Plus",
+    "Samples were prepared in ( 10 µL ) 0.3% acetic acid and transferred to sample vials.",
+    "Prior each sample injection, the capillary is flushed with 0.1 M HCl, filled with new background electrolyte, and conductive liquid was replaced. Sample is injected hydrodynamically at 2.5 psi for 60 sec (estimated 20 nL injection volume). Separation is performed at 15kV with 0.5 psi supplemental pressure for 60 minutes. Method for CESI 8000 Plus is summarized below: %s %s Time [min] Event Value Duration Inlet Outlet Summary Rinse - Pressure 100 psi 5.00 min BI: C1 BO: A1 forward Rinse - Pressure 100 psi 3.00 min BI: A1 BO: A1 reverse Rinse - Pressure 100 psi 5.00 min BI: A1 BO: A1 forward Inject - Pressure 2.5 psi 60 sec SI: A1 BO: A1 forward Wait 0.00 min BI: D1 BO: A1 dipping Inject - Pressure 2.5 psi 10 sec BI: B1 BO: A1 forward 0.00 Separation - Voltage 15 kV 0.5 psi 60.00 min BI: B1 BO: A1 1.0 min ramp, normal polarity, both 1.00 Relay On 60.00 Separation - Voltage 1.0 kV 5 psi 5.00 min BI: B1 BO: A1 5.0 min ramp, normal polarity, both 65.00 End",
+    "Eluted proteins were ionized in positive ion mode nanoelectrospray ionization (nESI) using a sheathless emitter. A B 1 High-High 2 Spray voltage 1400 - 1800 3 Sweep gas 0 4 Ion transfer tube temp 320 5 Application mode Intact Protein 6 Pressure mode Low Pressure 7 Advanced Peak Determination True 8 Default charge state 15 9 S-lens RF 30 10 Source fragmentation 15 eV Global MS parameters",
+    "Precursor (intact protein) spectra were acquired at 120k FTRP. A B 1 High-High 2 Detector type Orbitrap 3 Resolving power 120000 4 m/z RP measured 200 m/z 5 Scan range 450-2000 6 Mass range Normal 7 AGC target 2000000 8 Normalized AGC target 500% 9 Max Injection Time 50 ms 10 Microscans 1 11 Data type Profile 12 Polarity Positive 13 Use wide quad isolation True Parameters for MS1 acquisition",
+    "The mass spectrometer was operated using a TopN 3 sec data-dependent acquisition mode Precursor ions were filtered by intensity, charge state, and dynamic exclusion: A B 1 Intensity minimum 5000 2 Intensity maximum 1E20 3 Included charge states 4-60 4 Include undetermined charge states False 5 Dynamic exclusion after n times 1 6 Dynamic exclusion duration 45 s 7 Mass tolerance 0.5 m/z 8 Exclude isotopes True Precursor selection filters for DDA",
+    "Ions for fragmentation were isolated and fragmented via higher energy dissociation (HCD): A B 1 High-High 2 Detector type Orbitrap 3 Isolation mode Quadrupole 4 Resolving power 60000 5 m/z RP measured 200 m/z 6 Scan range 350-2000 7 AGC target 400000 8 Normalized AGC target 800% 9 Max injection time 600 ms 10 Microscans 1 11 Isolation window 3 m/z 12 Activation type HCD 13 Collision energy 32 14 Collision energy mode Fixed 15 Polarity Positive Parameters for MS2 acquisition",
+    "Setup buffers in tray: A B 1 Location Buffer composition 2 BI:A1 Background electrolyte 3 BI:B1 Background electrolyte 4 BI:C1 0.1 M HCl 5 BI:D1 Water 6 BO:A1 Conductive liquid 7 BO:B1 Water Background electrolyte: 3.0% acetic acid; Conductive liquid: 3.0% acetic acid",
+    "Prior to first use, the CESI cartridge were conditioned. This process can be divided into two methods: 1) washing method, 2) electrical conditioning method. Each morning, a shortened version of the electrical conditioning method was performed (+15 kV for 30 min). For long term storage, capillaries were rinsed with water and kept at 4 °C. A B C D E F G 1 Time [min] Event Value Duration Inlet Outlet Summary 2 Rinse - Pressure 100 psi 5.00 min BI: C1 BO: B1 forward 3 Rinse - Pressure 100 psi 10.00 min BI: A1 BO: B1 forward 4 Rinse - Pressure 100 psi 5.00 min BI: D1 BO: B1 reverse 5 Rinse - Pressure 100 psi 30.0 min BI: D1 BO: B1 forward Washing method A B C D E F G 1 Time [min] Event Value Duration Inlet Outlet Summary 2 Rinse - Pressure 100 psi 3.00 min BI: A1 BO: A1 reverse 3 Rinse - Pressure 100 psi 5.00 min BI: A1 BO: A1 forward 4 0.00 Separate - Voltage 15.0 kV 60.00 min BI: B1 BO: A1 1.00 min ramp, normal polarity, both 5 60.00 Separate - Voltage 1.0 kV 5.00 min BI: B1 BO: A1 5.00 min ramp, normal polarity, both 6 65.00 End Electrical conditioning method"
+  ],
+  "authors": [
+    "Kevin Jooß",
+    "Bryon Drown",
+    "Rafael Melani",
+    "Kelleher KRG KRG Research Group"
+  ],
+  "creator": "Kelleher KRG KRG Research Group",
+  "published_on": 1617935197,
+  "created_on": 1617480290,
+  "keywords": []
+}

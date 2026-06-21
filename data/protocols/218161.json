@@ -1,0 +1,28 @@
+{
+  "id": 218161,
+  "title": "SPARC_MapCore_HumanVagusNerve_Segmentation",
+  "uri": "sparc-mapcore-humanvagusnerve-segmentation-gzarbx2d7",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gpq668lzp/v1",
+  "description": "{\"blocks\":[{\"key\":\"6r5m8\",\"text\":\"The protocol describes the process of creation of the left and right vagus nerves segmentation used to quantify human vagus nerve morphology. The initial model is based on the 3D contours of left and right vagus nerve trunks made using modified clinical 3D images or scanned plastic models as per https://lifesciencedb.jp/bp3d/info_en/index.html#Data_types\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":297,\"length\":59}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"6AD89DAE39F011F09F280A58A9FEAC02\",\"url\":\"https://lifesciencedb.jp/bp3d/info_en/index.html#Data_types\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"50k34\",\"text\":\" MAPClient Mapping Tools\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "We downloaded vagus nerve files (Trunk of left vagus nerve; Trunk of right vagus nerve) from https://lifesciencedb.jp/bp3d/ (data version 4.3i). These .obj files only contain trunk data with some not annotated branches. Example screenshot of the database with vagus nerves files.",
+    "We converted the .obj files to .exf format using Scaffold Mapping Tools plugin Convert_Data_to_Zinc .",
+    "We created and extracted contours of the trunk and its branches from the converted data using the ArgonViewer plugin in the Scaffold Mapping Tools as described below. Load the converted .exf file into the plugin. In the FieldEditor tab add a new field named zComp by selecting the Add button and choosing Component from the dropdown list. Under Parameters , choose Source field : coordinates and Component Indices : 3 Under Create , add Name : zComp Press Create button and make sure that zComp field appeared in the field list similar to the image below. In the SceneEditor tab add a new contour by pressing Add button and choosing contours. The following settings should be applied: Domain : mesh2d Material: red Data field : zComp Tesselation field: zComp Under Contours , Scalar field : zComp Range number: 40 Isovalues: 900, 1500 The example below shows the created contours for the right vagus trunk. These contours are exported using the Argon Scene Exporter plugin. For more guidance please refer to the documentation: Argon Viewer: https://abi-mapping-tools.readthedocs.io/en/latest/mapclientplugins.argonviewerstep/docs/index.html Argon Scene Exporter: https://abi-mapping-tools.readthedocs.io/en/latest/mapclientplugins.argonsceneexporterstep/docs/index.html",
+    "From created contours we manually segmented and recorded the centroid points for the trunk.",
+    "We annotated and recorded the following anatomical levels on a 3d human body model with organs that allowed us to identify the levels: left / right level of superior border of jugular foramen on the vagus nerve left / right level of inferior border of jugular foramen on the vagus nerve left / right level of inferior border of cranium on the vagus nerve left / right level of C1 transverse process on the vagus nerve left / right level of angle of the mandible on the vagus nerve left / right level of greater horn of hyoid on the vagus nerve left / right level of carotid bifurcation on the vagus nerve left / right level of laryngeal prominence on the vagus nerve left / right level of superior border of the clavicle on the vagus nerve left / right level of jugular notch on the vagus nerve left / right level of sternal angle on the vagus nerve left / right level of 1 cm superior to start of esophageal plexus on the vagus nerve left / right level of esophageal hiatus on the vagus nerve left / right level of aortic hiatus on the vagus nerve",
+    "We manually annotated nerve and nerve branches starting, waypoint and ending points on a 3D human body model based on conducted literature review and saved them as an an anatomic map . The vagus nerve branch annotation points were extracted from the map using ‘left vagus nerve’ and ‘right vagus nerve’ as keywords. The coordinates and annotation of the vagus branch points were then consolidated in an .exf file.",
+    "The annotated vagus branch points (Step 6), and the converted trunk centroid files (Step 4) were merged together by creating a connected 1d network layout mesh in a single .exf file , one for right and one for left side. The anatomical levels (Step 5) were added as marker points."
+  ],
+  "authors": [
+    "Valerie Chopovda",
+    "Mabelle Lin"
+  ],
+  "creator": "Valerie Chopovda",
+  "published_on": 1748423378,
+  "created_on": 1747104936,
+  "keywords": []
+}

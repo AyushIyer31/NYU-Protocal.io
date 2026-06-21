@@ -1,0 +1,31 @@
+{
+  "id": 162060,
+  "title": "Crystallization of Enterovirus A71 3C protease in C2221  apo structure (PDB 8CNY)",
+  "uri": "crystallization-of-enterovirus-a71-3c-protease-in-fahkbib4x",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvm3e89l3p/v2",
+  "description": "{\"blocks\":[{\"key\":\"9rjvo\",\"text\":\"The crystallization protocol and buffer conditions used to obtain Enterovirus A71 3C protease crystals. The crystal structure was depostited to RCSB PDB with code 8CNY. In this version we added: protein production, solvent tolerance test protocols and the Addgene ID of the contruct used.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":163,\"length\":4}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"91237F2FEB70446096F1CFF676EE6337\",\"url\":\"https://www.rcsb.org/structure/8CNY\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"f7voj\",\"text\":\"SwissCI 3 lens crystallization plates https://swissci.com/product/3-lens-crystallisation-plate/\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":38,\"length\":57}],\"data\":{}},{\"key\":\"cupb6\",\"text\":\"1 M Tris-HCl pH 8.5\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b0vdu\",\"text\":\"1 M Magnesium Chloride Hexahydrate supplier\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5kajm\",\"text\":\"50% PEG 4000\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"ACCED8A84DC311EE80FB0A58A9FEAC02\",\"url\":\"https://swissci.com/product/3-lens-crystallisation-plate\"}}}}",
+  "steps": [
+    "Protein and buffer requirements: 43.2 µL 1 millimolar (mM) Sample 2.88 mL, Crystallization screen",
+    "Dispense 30 µL, Crystallisation screen into SwissCI 3 lens plate reservoir wells using a 100 µl multi-channel pipette. Dispense 150 nL 1 millimolar (mM) Sample to each lens using the SPT mosquito. Dispense 150 nL, Crystallisation screen to each lens using the SPT mosquito. Drop ratio: 1:1 Final drop volume: 300 nl",
+    "Crystallisation screen composition: 0.1 M Tris-HCl (pH 8.50) 0.2 M Magnesium chloride hexahydrate 30% w/v PEG 4000 Stock solutions used: 1 M Tris-HCl adjusted to pH 8.5 with HCl 1 M MgCl 2 .6H 2 0 50% w/v PEG 4000 The crystallisation screen can be stored in a duran bottle or aliquoted into 96 deep well block for easy dispensing into SwissCI 3 lens plates. For long term storage keep the Crystallisation screen in the fridge at 4°C.",
+    "Crystal typically form after ~24hrs Crystals typically reach their maximum size after ~24 h with precipitation often remaining. They typically form without seeding and are sturdy enough to be manipulated in solution readily. Morphology: typically thin rectangles with pointed ends. Size: ~50 μm in length and ~25 μm in width, depth of the crystals is ~5 μm, giving aglass shard appearance Average resolution: 1.5 Å Space group: C222 1 Unit cell: 64.90 Å, 65.73 Å, 76.27 Å 90.00°, 90.00°, 90.00° An example of a drop containing EV A71 3C protease crystals.",
+    "Incubate at 20 °C for 24:00:00, h in Formulatrix Rock Imager. Imaging Schedule : The first images are taken after 12hrs and the imaging schedule follows a Fibonacci sequence of days for further collections.",
+    "Formulatrix Rock Imager (or incubator of choice) SPT mosquito P100 multi-channel pipette SwissCI 3 lens plate",
+    "The below protocol was used for protein expression and purification of the plasmid: Enterovirus A71 3C protease addgene Catalog #204816 Enterovirus A71 3C protease small scale expression and purification protocol by korvus.wang",
+    "Final condition idenitified: 20% DMSO Duration 02:30:00 XChem solvent test by Peter Marples"
+  ],
+  "authors": [
+    "Ryan Lithgo",
+    "Peter Marples",
+    "Lizbé Koekemoer",
+    "Daren Fearon"
+  ],
+  "creator": "Lizbé Koekemoer",
+  "published_on": 1746014895,
+  "created_on": 1745595459,
+  "keywords": []
+}

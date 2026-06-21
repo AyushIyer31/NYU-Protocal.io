@@ -1,0 +1,26 @@
+{
+  "id": 18940,
+  "title": "Research on the application of mobile phone location signal data in earthquake emergency work",
+  "uri": "research-on-the-application-of-mobile-phone-locati-wq4fdyw",
+  "doi": "dx.doi.org/10.17504/protocols.io.wq4fdyw",
+  "description": "{\"blocks\":[{\"key\":\"bu9nj\",\"text\":\"After the earthquake, the important task of the earthquake emergency rescue work is to minimize casualties, but due to the sudden earthquake disasters, it is difficult to get enough disaster information immediately, especially the personnel distribution and movement information. The traditional method to obtain disaster data is through the earthquake report of the disaster area or the field investigation of the emergency rescue team, the work is lag and low efficiency. This paper analyzes the feasibility of mobile phone location signal data in earthquake emergency rescue work from several aspects, such as quantity, location, change rate, and epicentral distance. The results show that the mobile phone location signal data can quickly obtain the situation of the personnel distribution and quantity after the earthquake, we find the change rate, the distance, etc. can determine the approximate range of the earthquake impact field. Through the data distribution in different time periods, the movement of the personnel after the earthquake can be obtained. Based on several situations, we can obtain the basic situation of the disaster-stricken areas in time after the earthquake, especially the personnel relevant situation, and this data can provide a scientific basis for emergency rescue decision-making.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"chtgl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"d9039\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"e1bsd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"7magc\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"6k46v\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"file\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"DDDD6625342911EEAFD10A58A9FEAC02\",\"original_name\":\"jiuzhaigou earthquake.xlsx\",\"placeholder\":\"https://www.protocols.io/img/extensions/xlsx.png\",\"source\":\"https://content.protocols.io/bbmja.xlsx\"}}}}",
+  "steps": [
+    "We collected phone location data from jiuzhaigou county, the time period of data acquisition is from 2 hours before the earthquake to 8 hours after the earthquake(19:00 on August 8th and 5:00 on August 9th), total 10 hours of data. In contrast, we also collected data for the same period on the day before the earthquake.",
+    "the obtained number of mobile phone signals is grid-processed; the data in the grid is integrated and statistically analyzed. Through the analysis of the trend of the number of mobile phone signals in different periods, we get the change trends at different times (before the earthquake, when the earthquake hit, and after the earthquake) of the study area.",
+    "In this paper, we selected the data change rates of 21:09 (10 minutes before the earthquake), 21:19 (earthquake time), and 21:29 (10 minutes after the earthquake) to analyze, Where, N a is the signal number of the previous stage, while N b is the signal number of the later stage. When α&lt;0, it means that the number of signals in the later phase is less than that in the previous phase. conversely, when α&gt; is 0, the signal number of the latter phase is greater than that in the previous phase.",
+    "For overlapping data, if the number of mobile phone signal data before a earthquake is the same as the number of signals at the time of an earthquake, it means that the personnel in the location have not changed or moved.",
+    "The other is non-overlapping data, the data or location before and after the earthquake is different (for example, at the same location, it has data before the earthquake but no data after the earthquake, or there is no data before the earthquake, but new data appears after the earthquake).",
+    "Taking the epicenter as the center, we selected a buffer zone at a distance of 15km, 20km, 40km, and 80km from the epicenter, and we analyzed the change rate of signal data in different buffer zones. The change in signal data is relate to the change of time and the increase of distance."
+  ],
+  "authors": [
+    "Xia Chaoxu"
+  ],
+  "creator": "Xia Chaoxu",
+  "published_on": 1546517549,
+  "created_on": 1546515734,
+  "keywords": []
+}

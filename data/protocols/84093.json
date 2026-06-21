@@ -1,0 +1,29 @@
+{
+  "id": 84093,
+  "title": "In vitro phosphatase assay",
+  "uri": "in-vitro-phosphatase-assay-cwc5xay6",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewov1qyepgr2/v1",
+  "description": "{\"blocks\":[{\"key\":\"cctn4\",\"text\":\"This protocol describes in vitro phosphatase assay.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":24,\"length\":8}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"6ulg1\",\"text\":\"Materials\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7g39t\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"725ii\",\"text\":\"6 well plates\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6n95q\",\"text\":\"MnCl2 \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":4,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"d57kn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"do3ar\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"1664t\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"j11b\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"8eavf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cm1jr\",\"text\":\"Lysis buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":12}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5g5ts\",\"text\":\"      HEPES pH 7.4  50 mM    NaCl  150 mM    MgCl2  2.5 mM    DTT  2 mM    NP-40  0.50%    protease   inhibitor cocktail  \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":122}],\"data\":{}},{\"key\":\"fpt76\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":219126,\"guid\":\"41C77BBA341F11EE9D4302C0B41BC903\",\"name\":\"Pierce\\u0026trade; Detergent Compatible Bradford Assay Kit\",\"mol_weight\":0,\"sku\":\"23246\",\"url\":\"https://www.thermofisher.com/order/catalog/product/23246\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":897,\"guid\":\"4102081A341F11EE9D4302C0B41BC903\",\"name\":\"Lambda Protein Phosphatase - 100,000 units\",\"mol_weight\":0,\"sku\":\"P0753L\",\"url\":\"https://www.neb.com/P0753\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"tables\",\"mutability\":\"MUTABLE\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"1_0\":\"\",\"1_1\":\"\",\"2_0\":\"\",\"2_1\":\"\",\"3_0\":\"\",\"3_1\":\"\",\"4_0\":\"\",\"4_1\":\"\",\"5_0\":\"\"},\"colTitles\":[\"\",\"\"],\"colWidths\":[\"130\",\"78\"],\"data\":[[\"HEPES pH 7.4\",\"50 mM\"],[\"NaCl\",\"150 mM\"],[\"MgCl\\u003csub\\u003e2\\u003c/sub\\u003e\",\"2.5 mM\"],[\"DTT\",\"2 mM\"],[\"NP-40\",\"0.50%\"],[\"protease inhibitor cocktail\",\"\"]],\"guid\":\"578CC8FF14EB11EE8DBF0A58A9FEAC02\",\"isJexcelDataFormat\":true,\"legend\":{\"blocks\":[{\"data\":{},\"depth\":0,\"entityRanges\":[],\"inlineStyleRanges\":[],\"key\":\"5u9o7\",\"text\":\"  \",\"type\":\"unstyled\"}],\"entityMap\":{}},\"mergeCells\":{\"A_6\":[2,1]},\"printData\":[[\"HEPES pH 7.4\",\"50 mM\"],[\"NaCl\",\"150 mM\"],[\"MgCl\\u003csub\\u003e2\\u003c/sub\\u003e\",\"2.5 mM\"],[\"DTT\",\"2 mM\"],[\"NP-40\",\"0.50%\"],[\"protease inhibitor cocktail\",\"\"]],\"rowHeights\":[23,23,23,23,23,23]}}}}",
+  "steps": [
+    "Seed HAP1 wild-type or FIP200 knockout cells in 6 well plates and grow until confluency.",
+    "Collect cells by trypsinization and pellet by centrifugation at 300 x g, 4 °C, 5 minutes .",
+    "After a PBS wash to remove the remaining cell medium, resuspend the cell pellets in lysis buffer.",
+    "Lyse the samples for 00:20:00 On ice . Clear the cell lysates by centrifugation at 20000 x g, 4 °C, 10 minutes .",
+    "Determine the protein concentrations of the cleared protein lysates with the Pierce Detergent Compatible Bradford Assay Kit (23246, Thermo Fisher).",
+    "For both samples, wild-type and FIP200 knockout lysates, incubate 100 µg of cell lysate with 5 µL of 10x NEBuffer for Protein MetalloPhosphatases (P0753, New England Biolabs) and 5 µL of 10 millimolar (mM) of MnCl 2 to make a total reaction volume of 50 µL .",
+    "Add 1 µL of Lambda Protein Phosphatase (NEB) to the reaction and incubate the samples at 30 °C for the indicated time.",
+    "Terminate the phosphatase reactions by the addition of 6x Protein Loading dye and heat inactivation at 95 °C for 00:05:00 .",
+    "Analyze the samples by western blot analysis as described above."
+  ],
+  "authors": [
+    "Elias Adriaenssens"
+  ],
+  "creator": "Elias Adriaenssens",
+  "published_on": 1695480276,
+  "created_on": 1687870857,
+  "keywords": []
+}

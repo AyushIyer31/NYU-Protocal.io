@@ -1,0 +1,25 @@
+{
+  "id": 13487,
+  "title": "Calibration of a Density-based Model of Urban Morphogenesis",
+  "uri": "calibration-of-a-density-based-model-of-urban-morp-repd3dn",
+  "doi": "dx.doi.org/10.17504/protocols.io.repd3dn",
+  "description": "{\"blocks\":[{\"key\":\"245go\",\"text\":\"This protocol describes the study of a computational model of urban growth, including real data processing, model exploration and calibration. See github repository for code and paper for real and simulation datasets.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"fqrvc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"50tcb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"a4vmq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Morphological indicators are computed on spatial windows using a parallelized R script.",
+    "Using the NetLogo implementation, refine reasonable parameter boundaries and validate visually both implementations.",
+    "First exploration, 81 points in the parameter space with 100 repetitions each, to obtain convergence properties of indicators.",
+    "LHS exploration of model parameter space.",
+    "Compare real morphological indicators with the one produced during the exploration of the model, projected in a 2D principal plane."
+  ],
+  "authors": [
+    "Juste Raimbault"
+  ],
+  "creator": "Juste Raimbault",
+  "published_on": 1530472245,
+  "created_on": 1530471506,
+  "keywords": []
+}

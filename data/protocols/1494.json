@@ -1,0 +1,35 @@
+{
+  "id": 1494,
+  "title": "One-step growth experiments (bacteriophages)",
+  "uri": "One-step-growth-experiments-bacteriophages-dpw5pd",
+  "doi": "dx.doi.org/10.17504/protocols.io.dpw5pd",
+  "description": "{\"blocks\":[{\"key\":\"a3n2l\",\"text\":\"The life cycle of phages can be characterized by one-step growth experiments, which are designed in a way that allows only a single infection cycle to take place (i.e., no re-infections occurring by phages produced during the experiment).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"ct81u\",\"text\":\"Originally developed by Ellis and DelbrÃ¼ck (1939), the one-step growth experiment measures the latent period and the burst size of a given phage on a given host (e.g., Adams 1959; Carlson 2005). Latent period and burst size are essential parameters in a description of phage properties and varies between phages and hosts and also with host growth conditions. The latent period is the minimum length of time it takes from adsorption of the phages to a host cell to lysis of the host with release of progeny viruses (Fig. 1). The burst size is the average number of phages released per infected host cell. The one-step experiment can be adapted to test the effects of different environmental factors on the infection process. For example, the burst size can be affected by the growth rate of the host (e.g., Middelboe 2000); they are expected to be higher when the host cell is nutrient replete and growing exponentially while one might expect a decrease in burst size if the host cells are under nutrient limitation.ÃÂ \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"c9m7t\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4mb2e\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3280t\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":[]},{\"key\":\"8s0al\",\"text\":\"\\n\\nFigure 1:ÃÂ An example of the development in the number of plaque- forming units during a one-step growth experiment with a bacteriophage, and the definition of the parameters \\\"Latent period\\\" and \\\"Burst size.\\\"ÃÂ \\n\\nOne step growth experiments are often difficult to get to work for new phage host systems and adjustments to the standard procedure (e.g., the number of added phages, length of the experiment, sampling frequency, etc.) are often required depending on host growth rate, phage adsorption rate, infection efficiency, etc.\\n\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":2,\"length\":9}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"imageblock\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"C6BF2C0278B74A21BC2E3576F0F43BFA\",\"height\":null,\"is_video\":false,\"mime\":null,\"original_name\":\"Figure 1.jpg\",\"placeholder\":\"https://content.protocols.io/3jc2w6.jpg\",\"source\":\"https://content.protocols.io/3jc2w6.jpg\",\"width\":null}}}}",
+  "before_start": "{\"blocks\":[{\"key\":\"ctf4g\",\"text\":\"To limit the phage–host interaction in the experiment to a single infection cycle, phages and hosts have to be mixed in the right ratio. Prior to experiment, it is therefore necessary to determine the titer of the phage stock and to know the relation between cell density and optical density (i.e., obtain corresponding numbers of cells mL–1 and OD) of the host. Infection should be done at low MOI (multiplicity of infection = ratio of phage to host) e.g., between 0.1 and 0.01. At higher MOI, the probability of cells infected by more than one phage would increase and the total estimate of infected cells becomes less than the phage input.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":339,\"length\":2}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"ave0h\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "200 µL overnight culture is inoculated in 100 mL culture flask with 50 mL growth medium (e.g., LB).",
+    "Incubate on a shaking table until the density in the culture has reached cell density of ~5 × 10 8 CFU mL –1 (corresponding to an OD 525 of ~0.3). This may take from a few hours to a day.",
+    "1 mL aliquots of the bacterial culture are mixed with subsamples of the phage stock in triplicate microfuge tubes at an multiplicity of infection (MOI) of approximately 0.01. (i.e., ~ 5 × 10 8 CFU mL –1 and 5 × 10 6 PFU mL –1 (final concentrations)",
+    "Incubate for 10 min to allow the phages to adsorb to the host cells. 00:10:00 At this point, the infection cycle of the adsorbed phages is assumed to begin, which marks the initiation of the experiment (T = 0)",
+    "Centrifuge the cells (6000g, 10 min). 00:10:00",
+    "Remove the supernatant. Removes unadsorbed viruses.",
+    "Resuspend the pellet in 1 mL growth medium (e.g., LB).",
+    "Repeat steps 5-7 to wash out any further unadsorbed phages.",
+    "Transfer 50 µL of the resuspended culture (bacteria and adsorbed phages) to 50 mL growth medium in a 100 mL culture flask and mix well. Assuming that most of the phages have adsorbed to host cells during step 3, the concentration of adsorbed phages in the 50-mL flask is ~5 × 10 3 PFU mL –1 .",
+    "Transfer 1 mL to a microfuge tube. Note the time.",
+    "Incubate the triplicate 50 mL cultures on a shaking table.",
+    "Determine the number of PFU (total infectious centers) by plaque assay in the collected sample.",
+    "Continue to collect samples for PFU over time for 6–8 hours. 08:00:00 It is recommended to carry out a preliminary experiment with just a few time points over a large time span (6–8 h), to get a first idea of time between adsorption and burst. This experiment should then be followed by a more detailed experiment with more frequent samplings (every 10–20 min) around the time when the burst is expected. A successful onestep growth experiment shows a period of constant virus abundance, which reflect the period from when the cell is infected and until mature phages are released. The latent period (see Fig. 1 in guidelines) is followed by a single burst of phages from which the burst size can be calculated as the ratio between the number of phages before and after the burst (Fig. 1). The highly dilute bacterial culture reduces contact rate between the virus and host so that no re-infection will occur during the one-step experiment."
+  ],
+  "authors": [
+    "Mathias Middelboe",
+    " Amy M. Chan",
+    " and Sif K. Bertelsen"
+  ],
+  "creator": "Amy Chan",
+  "published_on": 1454969335,
+  "created_on": 1441054131,
+  "keywords": []
+}

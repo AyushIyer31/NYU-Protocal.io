@@ -1,0 +1,22 @@
+{
+  "id": 110645,
+  "title": "Quality Control",
+  "uri": "quality-control-dqav5se6",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"ak3l3\",\"text\":\"quality control needed before continuing with the downstream analysis of any sequencing \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "FastQC gives a general quality metrics about raw fastq files. MultiQC collate pipeline QC from FastQC, TrimGalore, samtools flagstat, samtools idxstats, samtools stats, picard CollectMultipleMetrics, picard MarkDuplicates, Preseq, deepTools plotProfile, deepTools plotFingerprint, phantompeakqualtools and featureCounts.",
+    "#run fastqc on all fastq.gz files in directory and move all FastQC output files to the new directory mkdir fastqc_results fastqc *.fastq.gz mv *.zip *.html fastqc_results/ #run mutliQC on fastQC files multiqc fastqc_results/ -o multiqc_report"
+  ],
+  "authors": [
+    "Briley Park"
+  ],
+  "creator": "Briley Park",
+  "published_on": 1729698878,
+  "created_on": 1729697744,
+  "keywords": []
+}

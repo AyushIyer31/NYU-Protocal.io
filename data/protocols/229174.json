@@ -1,0 +1,38 @@
+{
+  "id": 229174,
+  "title": "Plaque assay T7 bacteriophage",
+  "uri": "plaque-assay-t7-bacteriophage-hb2wb2qff",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vz91p4gx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"a3e3b\",\"text\":\"This is a protocol for the quantification of T7 in a sample in Plaque Forming Units (PFU) per mL.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"kvPM3\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"IaH8q\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"dL1ym\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"can_edit\":false,\"cas_number\":\"\",\"guid\":\"41A11DE7341F11EE9D4302C0B41BC903\",\"id\":126827,\"is_public\":true,\"mol_weight\":0,\"name\":\"Liquid LB medium\",\"rrid\":\"\",\"sku\":\"\",\"url\":\"\",\"vendor\":{\"id\":1,\"image\":{\"placeholder\":\"/img/vendors/1.png\",\"source\":\"/img/vendors/1.png\"},\"is_requested\":false,\"link\":\"https://www.protocols.io\",\"name\":\"Contributed by users\"}}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"can_edit\":false,\"cas_number\":\"\",\"guid\":\"41ABCB6B341F11EE9D4302C0B41BC903\",\"id\":203536,\"is_public\":true,\"mol_weight\":0,\"name\":\"LB agar\",\"rrid\":\"\",\"sku\":\"\",\"url\":\"http://www.wikipedia.org\",\"vendor\":{\"id\":1,\"image\":{\"placeholder\":\"/img/vendors/1.png\",\"source\":\"/img/vendors/1.png\"},\"is_requested\":false,\"link\":\"https://www.protocols.io\",\"name\":\"Contributed by users\"}}}}}",
+  "steps": [
+    "Streak LB plate with E. coli , e.g. BL21(DE3) and incubate overnight at 37 °C",
+    "Add 3 mL of liquid soft LB agar (LB with 0.5% agar) ( 50 °C ). Mix and quickly pour the resulting mixture on the LB plates (preheated at 37 °C ). Note: this means the plates will have two layers, the first without any E. coli or T7 and the second with. Incubate for at least 00:15:00, or more at Room temperature , to let the second layer harden. Turn the plates upside-down.",
+    "Find the plate with the most easily identifiable number of plaques, e.g. 10-100. Calculate the Plaque Forming Units (PFU)/mL by the following formula: PFU/mL = N × 1/ V diluted = 𝑁 × 1/ DF × 1/ V 0 . N is the number of plaques of lysis counted on the plate (expressed as PFU). V diluted is the total volume of the original phage sample added to this plate (equal to DF × V 0 ) DF is the dilution factor of this plate (i.e. 10 x , where x is the label 0, -1, -2, etc.) V 0 is the volume of phage dilution of the first plate, i.e. 100 µL . When comparing PFU/mL, remember to take into account the strain of E. coli used.",
+    "Pick a colony from this plate and use it to inoculate 3 mL of LB. Incubate this culture at 37 °C until the OD reaches 2-3. We recommend an overnight culture.",
+    "Make a range of dilutions . Mix 100 µL of phage dilution with 200 µL of E. coli culture. Then incubate for 10 minutes at room temperature. After 00:10:00 add 3 mL of liquid soft LB agar (LB agar with 0.7% agar) ( 50 °C ).",
+    "To avoid contaminating other lab work with phages, take the required measures. Always make sure to wear gloves when working with phages. Designate a certain lab bench area for phage work. Use a special phage incubator. Prepare and maintain Virkon to decontaminate the phage area after all work. Use filter tips for pipettes, and designate pipette(s) (required range: 11 µL - 111 µL ) to remain phage-work pipettes. We recommend using fluorescent tape to mark pipettes and other phage-contaminated equipment.",
+    "Prepare the required number of tubes. We recommend using 15 mL Falcon tubes, generically called Screw-top centrifuge tubes . Label these with (recommended) a combination of coloured stickers (per different T7 sample) and a marker (for different dilutions). Label the dilution samples with 0, -1, -2, etc.",
+    "Add 100 µL of ddH2O (MilliQ) to the control. Add 100 µL of ddH2O (MilliQ) to all dilution samples except for the first dilution, labelled 0. Do not add any ddH2O to this sample.",
+    "Enter the phage area. Using a pipette tip with filter, pipette 111 µL of the desired T7 phage sample into the sample labelled 0.",
+    "With filter tips, pipette 11 µL from the sample labelled 0 to the next sample, -1. Mix the sample, or gently vortex it.",
+    "Now repeat this previous step for every dilution. That is, take 11 µL from the previous dilution sample and add it to the next one. Then mix or gently vortex.",
+    "Finally, discard 11 µL from the final sample (or leave it in and adjust the calculation at the end). Now every sample should contain 100 µL of T7, reduced in concentration by a factor of ten compared to the previous sample.",
+    "Now add 200 µL of the E. coli culture to every dilution sample and to the control. Use filter tips. Gently mix. Wait 00:10:00 . Do not wait more than a phage replication time (rather conservatively, 00:20:00 at room temperature).",
+    "Prepare enough plates with LB and agar, one for every dilution sample and one for the control. For a first assay, we recommend 6 samples (10 0 to 10 -4 and a control). For assays where the rough PFU is known, you might be able to leave out some of these dilutions.",
+    "Preheat the plates to 37 °C . Consider labelling the plates in advance.",
+    "We recommend preparing molten soft (0.5%) agar LB at 50 °C , but you can also make it before it is needed. You&#39;ll need 3 mL per dilution sample, but we recommend using a bottle with more than enough and reusing whatever is left.",
+    "Incubate Overnight in a specialised phage work area incubator at 37 °C .",
+    "To avoid contaminating other lab work with phages, take the required measures. Always make sure to wear gloves when working with phages. Designate a certain lab bench area for phage work. Use a special phage incubator. Prepare and maintain Virkon to decontaminate the phage area after all work. Use filter tips for pipettes, and designate pipette(s) (required range: 11 µL - 111 µL ) to remain phage-work pipettes. We recommend using fluorescent tape to mark pipettes and other phage-contaminated equipment. Here is an example of the phage area we used."
+  ],
+  "authors": [
+    "Duncan Whyte"
+  ],
+  "creator": "Duncan Whyte",
+  "published_on": 1759841234,
+  "created_on": 1759774380,
+  "keywords": []
+}

@@ -1,0 +1,25 @@
+{
+  "id": 52587,
+  "title": "Microfluidics 1 - Mold Fabrication: Spin Coating of Photoresist",
+  "uri": "microfluidics-1-mold-fabrication-spin-coating-of-p-bxkjpkun",
+  "doi": "dx.doi.org/10.17504/protocols.io.bxkjpkun",
+  "description": "{\"blocks\":[{\"key\":\"4jo8l\",\"text\":\"Microfluidic Lab-on-a-chip technology has several different materials and fabrication methods. PDMS (PolyDiMethylSiloxane) is a well-known material and due to its several advantages, it is one of the most prefered material. PDMS chip fabrication technique requires an initial master mold on which replicates can be done. Su8 is a photoresist resin used in MEMS technology for relatively thick structures. PDMS microfluidic chips fabrication is suitable for SU8+Si wafer molds. This protocol describes the coating of SU8 photoresist on silicon wafers by spin coating method in our laboratories.\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1be1m\",\"text\":\"\",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"40ctg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"copn9\",\"text\":\"This protocol is derived from\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3ekrf\",\"text\":\"[Reference: Processing guidelines for permanent epoxy negative photoresist SU8 2025, SU8 2035, SU8 2050 and SU8 2075, MicroChem company]\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":135,\"length\":1}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"7388b\",\"text\":\"* All the related steps must be done in a clean room classD (min) and under yellow or red light. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"f8jim\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"arq3l\",\"text\":\"* All spin coating procedures must be performed inside the fume hood.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"5gdeg\",\"text\":\"Cleaning of wafer; Acetone\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dce4n\",\"text\":\"Cleaning of wafer; Isopropanol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8c9qf\",\"text\":\"Mold resin; SU8 Photoresist by MicroChem\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fr27d\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Dispense 1ml of photoresist (SU8) resin for each inch (25mm) of Si wafer substrate diameter. Spin at 500 rpm for 10 seconds with an acceleration of 100 rpm/second. Spin at &#34;N&#34; rpm for 30 seconds with an acceleration of 300 rpm/second. Expected results of photoresist thickness: 40um film thickness with N=4000 rpm spin of SU8 2050 25um film thickness with N=4000 rpm spin of SU8 2025 75um film thickness with N=2000 rpm spin of SU8 2050 40um film thickness with N=2000 rpm spin of SU8 2025 The step is performed inside the Class 100.000 cleanroom and in a fume hood.",
+    "Place the wafer in the spin coater and run the device. Microscope slides, Si/SiO2 wafers, and glass/PMMA wafers are alternatives substrates. Spin Coater (Laurell, WS-650MZ-23NPPB)",
+    "Soft baking is done depending on the thickness of the coated photoresist film. It is a few minutes of baking at 65 o C and 5-15 minutes of baking at 95 o C are applied. Hot Plate (Electromag, LB.EM.M4060)",
+    "In a petri plate, covered tightly with aluminum foil, photoresist-coated wafers can be stored in the cleanroom at room temperature for approximately one month."
+  ],
+  "authors": [
+    "Serhat S",
+    " C. Yunus Sahan"
+  ],
+  "creator": "Serhat S",
+  "published_on": 1629662065,
+  "created_on": 1629552893,
+  "keywords": []
+}

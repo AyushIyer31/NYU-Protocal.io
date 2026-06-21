@@ -1,0 +1,29 @@
+{
+  "id": 18069,
+  "title": "Recombinase polymerase amplification assay for detection of Mycobacterium ulcerans DNA",
+  "uri": "recombinase-polymerase-amplification-assay-for-det-vvve666",
+  "doi": "dx.doi.org/10.17504/protocols.io.vvve666",
+  "description": "{\"blocks\":[{\"key\":\"hc6r\",\"text\":\"This document describes the standard operating procedure for the application of the real time Mu-RPA assay with Exo probe system. The assay detects M. ulcerans DNA (IS2404) from clinical sample or culture suspension. The assay consists of recombinase polymerase amplification TwistDx Exo kit procedure. The reaction mix must be prepared in an environment free of DNA amplicons. Personal protective clothing (i.e. lab coats, gloves) must be used throughout the process. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":148,\"length\":11},{\"style\":\"italic\",\"offset\":167,\"length\":4}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"2ba3k\",\"text\":\"Primers and Probes must be stored in aliquots at -20 °C in a laboratory free of DNA amplicons.; The Internal positive control DNA is stored in the DNA extraction room at -20 °C. The TwistAmp® Exo reaction pellets are provided as strips of 8 reactions in vacuum-sealed pouches. Long term storage at –20°C or lower of the sealed product will ensure full activity of the pellets. After breaking of the vacuum seal the pellets should be used within 30 minutes. The TwistAmp® Exo Rehydration buffer is provided in four 1 ml aliquots. These should be stored at –20°C to retain full activity. The TwistAmp® Exo control primer solution and control DNA template are provided. Upon receipt they should be stored at –20°C and be re-frozen if necessary.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"5uvce\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"3mt8j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"fgj8m\",\"text\":\"Mu_RPA F1: 5’-ATG-CAT-CGC-ATC-CAC-AGT-GAC-CAG-CCA-CCG-3’ (TIBMOLBIOL, Germany)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ohts\",\"text\":\"Mu_RPA R2: 5’-ATT-GGT-GCC-GAT-CGC-GTT-GGA-CGG-CAA-GAT-G-3’ (TIBMOLBIOL, Germany)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bkkos\",\"text\":\"Mu_RPA P: 5’-GTA GGC GAA CAC CGA CAC GAG ATG CGT GGC QTF CGC TTT GGC GCG TA PH -3’ (TIBMOLBIOL, Germany)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":53,\"length\":3}],\"entityRanges\":[],\"data\":{}},{\"key\":\"357np\",\"text\":\"TwistAmp® exo Kit (TwistDx, Cambridge, UK)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":8,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3spl2\",\"text\":\"DEPC (Diethylpyrocarbonate) treated water (Carl Roth, Essen, Germany)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7uvj\",\"text\":\"Reaction tubes, 1.5 ml, DNase/RNase free (Eppendorf, Germany)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8b3do\",\"text\":\"10 ml, 100 ml, 1000 ml pipettes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"31g9n\",\"text\":\"10 ml, 100 ml, 1000 ml pipette filter tips, DNase/RNase free (Biozym, Germany). \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c6jdm\",\"text\":\"Personal protective clothing, gloves\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"35as9\",\"text\":\"Axxin T8 device (Axxin Pty Ltd, Victoria, Australia)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"79iuq\",\"text\":\"Micro-centrifuge, vortex, tube racks\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"94f9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "For each sample, prepare a mastermix as follows: 2.1 μl of Mu_RPA F1 (10μM), 2.1 μl of Mu_RPA R2 (10μM), 0.6 μl of Mu-RPA P (10μM), 29.5 μl of Rehydration Buffer and 8.2 μl of dH2O.",
+    "Vortex to mix and spin down.",
+    "Transfer 42.5 µL of mix to each TwistAmp exo reaction pellet. Mix by pipetting up and down until the entire pellet has been resuspended.",
+    "Add 5 µL of the DNA template to the mix.",
+    "For each sample, add 2.5 µL 280 mM magnesium acetate and mix well.",
+    "Insert the tubes in Axxin T8 Isothermal device and run at the set program. 00:15:00 42 °C",
+    "After 4 minutes, take the samples out and vortex to mix 00:00:05 , spin down and return the samples to the T8 device.",
+    "Continue the incubation/detection for a total incubation time of 15 minutes."
+  ],
+  "authors": [
+    "Michael Frimpong",
+    "Hubert Senanu Ahor"
+  ],
+  "creator": "Michael Frimpong",
+  "published_on": 1549123562,
+  "created_on": 1543227721,
+  "keywords": []
+}

@@ -1,0 +1,34 @@
+{
+  "id": 242358,
+  "title": "Duke cell-thawing protocol for TF Perturb-seq Benchmarking WTC11 iPSC",
+  "uri": "duke-cell-thawing-protocol-for-tf-perturb-seq-benc-hqwwb5xff",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvryrz3gmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"fjobq\",\"text\":\"This protocol describes the process used for cell-thawing at Duke University for TF Perturb-seq Benchmarking of WTC11 iPSC. \",\"type\":\"align-left\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"1dr6b\",\"text\":\"Suspension Medium: mTeSR Plus media + 1% BSA + 10µM ROCKi\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c69vn\",\"text\":\"• 45mL mTeSR Plus (StemCell Tech, 100–0276) + 5mL 10% BSA solution (Sigma-Aldrich A1595) + 50µL 10mM  ROCKi (Stemcell Tech, 72304)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7o566\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5jr4n\",\"text\":\"10X Genomics reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bpdmr\",\"text\":\"• 5’ HT v2 reagents (including 5’ CRIPSR kit) (PNs 1000374, 1000375, 1000451, and 1000215)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2pi2j\",\"text\":\"• GEM-X 5’ v3 reagents (including Feature Barcoding kit) (PNs 1000698, 1000699, 1000703, 1000215)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f146g\",\"text\":\"• Keep these two sets of reagents in two separate ice buckets and tube racks. Put their respective gel beads near the reagents to prevent mix-ups. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"df46r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"35fc3\",\"text\":\"Ice buckets with ice (2)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fqsjl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7qt15\",\"text\":\"Centrifuge set at 4C and 250 xg \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Quickly thaw the frozen transduced WTC11 iPS cells by swirling the vials (1 vial of biorep 1, 1 vial of biorep 2) in 37C water bath.",
+    "Transfer the thawed cells to a 15 ml cone tube (one tube per vial thawed). Slowly add 5 ml ice-cold Suspension Medium dropwise to cells. a. Keep cells in media and on ice whenever possible.",
+    "Pellet cells at 250 xg at 4 degrees for 5 min with the appropriate centrifuge brake setting to prevent cells from stirring up.",
+    "Wash cells once by aspirating the supernatant, adding 5 ml ice-cold Suspension Medium, and pelleting cells at 250 xg at 4 degrees for 5 min.",
+    "Wash cells a second time with 5 ml ice-cold Suspension Medium.",
+    "Wash cells a third time with 5 ml ice-cold Suspension Medium.",
+    "Resuspend each cell pellet in 300µL ice-cold Suspension Medium (aiming for a concentration of 5 ~ 6 M cells/ml).",
+    "Take 10µL of cell suspension, dilute it 1:5 with Suspension Medium, and count them with Countess 3 (mixed 1:1 with Trypan Blue). Take two technical replicates per cell suspension and take the average concentration and viability of the two replicates. Note the concentrations and viability. We got 92% and 89%, respectively.",
+    "Optional: If cell clumps exist, filter the cell suspension with 30 um Pre-Separation filters (Miltenyi Biotec).",
+    "According to the concentration, dilute each cell suspension to 1500 cells/µL with Suspension Medium.",
+    "Count the cells again. Cell viability should be &gt;80%.",
+    "Load 10X chips for targeted recovery of 20k cells per lane. Run two lanes per biosample per chemistry. This means 2 lanes x 2 biosamples x 2 chemistries = 8 lanes in total. a. First, load Chip N for 5’ HT v2 (with 5’ CRISPR). 4 lanes in total. b. Second, load GEM-X v3 chip for GEM-X 5’ v3 (with Feature Barcoding). 4 lanes in total.",
+    "Proceed to reverse transcription step and prepare gene expression and sgRNA sequencing libraries following manufacturer’s instructions."
+  ],
+  "authors": [
+    "Boxun Li",
+    "Charles Gersbach"
+  ],
+  "creator": "Andrea R Daniel",
+  "published_on": 1770092832,
+  "created_on": 1769808995,
+  "keywords": []
+}

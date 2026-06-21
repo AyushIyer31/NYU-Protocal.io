@@ -1,0 +1,41 @@
+{
+  "id": 317104,
+  "title": "16S rRNA Amplicon Sequencing Using Ion GeneStudio S5",
+  "uri": "16s-rrna-amplicon-sequencing-using-ion-genestudio-jzwqcp7dx",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl84468g2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"v3ttt\",\"text\":\"This protocol describes 16S rRNA amplicon sequencing of environmental water DNA extracts covering hypervariable regions HV2–HV9, using the Ion AmpliSeq Microbiome Health Research Kit on the Ion GeneStudio™ S5 platform. It includes amplicon preparation, chip loading, sequencing, and initial demultiplexing and quality control using Ion Reporter™ Software.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"mgxec\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"o2tbt\",\"text\":\"- Ion GeneStudio™ S5 System (Thermo Fisher Scientific, U.S.)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jluqr\",\"text\":\"- Ion 540™ Chip (Cat# 46496, Thermo Fisher Scientific)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e8elx\",\"text\":\"- Standard thermal cycler (for amplicon amplification)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c2iwr\",\"text\":\"- Qubit™ Fluorometer (for library quantification)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"abblt\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"oxpxs\",\"text\":\"Reagents and Consumables\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mwtui\",\"text\":\"- Ion AmpliSeq™ Microbiome Health Research Kit (Thermo Fisher Scientific)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"xv4h0\",\"text\":\"- Ion 540™ Chip (Cat# 46496, Thermo Fisher Scientific)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"v7vjh\",\"text\":\"- Extracted environmental DNA (from Protocol 2), minimum quality: A260/280 ≈ 1.8–2.0\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Review input DNA quality: Confirm DNA concentration and purity from Qubit and NanoDrop results meet the Ion AmpliSeq kit&#39;s input requirements.",
+    "Amplify 16S rRNA amplicons covering hypervariable regions HV2 to HV9 using the Ion AmpliSeq™ Microbiome Health Research Kit, following the manufacturer&#39;s protocol.",
+    "Quantify amplicon libraries using the Qubit™ Fluorometer. Record concentrations for all samples.",
+    "Normalise individual sample libraries to equimolar concentrations as specified by the manufacturer&#39;s protocol, then pool for sequencing.",
+    "Load the pooled, normalised library onto the Ion 540™ Chip following the Ion GeneStudio™ S5 manufacturer&#39;s protocol.",
+    "Perform targeted sequencing on the Ion GeneStudio™ S5 platform according to the manufacturer&#39;s run parameters.",
+    "Use Ion Reporter™ Software version 5.18 to demultiplex raw sequencing reads by sample barcode.",
+    "Apply quality control filters within Ion Reporter™ Software v5.18. Review output metrics (read counts, quality scores) before proceeding to bioinformatics analysis.",
+    "Only samples meeting minimum DNA quality thresholds should proceed to library preparation. Library concentrations should be confirmed by Qubit prior to chip loading. Review Ion Reporter™ QC metrics post-sequencing before proceeding to downstream analysis."
+  ],
+  "authors": [
+    "Grace Semabia Kpeli",
+    "Prince Agyirey-Kwakye",
+    "Counseller Nutifafa Livingstone",
+    "Lillian Teye Cudjoe",
+    "Emmanuel Edem Dotse",
+    "Ebenezer Nyarko",
+    "Ebenezer Zar",
+    "Obed Nyarko-Otu",
+    "Hubert Kwame Agbogli",
+    "Godwin Glilekpeh",
+    "Solomon Korankye",
+    "Priscilla Essandoh",
+    "Daniel Elorm Kabotso"
+  ],
+  "creator": "Grace Kpeli",
+  "published_on": 1778758142,
+  "created_on": 1778755746,
+  "keywords": []
+}

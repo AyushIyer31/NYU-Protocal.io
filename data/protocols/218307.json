@@ -1,0 +1,38 @@
+{
+  "id": 218307,
+  "title": "Protocols for Locality Data Collection, Area of Occupancy, and Extent of Occurence for IUCN Red List Assessment",
+  "uri": "protocols-for-locality-data-collection-area-of-occ-gzfbbx3ip",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g79kz8vwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"6h481\",\"text\":\"Locality data for bat species in Peninsular Malaysia were obtained through literature review, field surveys, and museum records. Fieldwork involved harp traps, mist nets, and high nets, with biological measurements and species identification based on Kingston et al. (2006). Coordinates were standardized and mapped using QGIS 3.34.1. Area of Occupancy (AOO) and Extent of Occurrence (EOO) were calculated using GIS tools, including the IUCN EOO Calculator Toolbox in Arcmap 10.8.1. The number of locations was assessed using satellite imagery based on the most probable threat. This protocol is used for assessing the taxon through IUCN Red List criteria.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"bq4c4\",\"text\":\"Harp traps were set up along forest trails, while mist nets and high nets were placed in open areas such as over rivers, within forest gaps, and in clearings at the study sites. All traps and nets were deployed from 7:00 PM to 7:00 AM, with a 20-metre distance maintained between harp traps. As the research involved wildlife, fieldwork protocols were strictly followed, including the use of face masks and gloves at all times.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"9kfcq\",\"text\":\"Researchers were required to avoid disturbing natural habitats and to wear appropriate personal protective equipment (PPE) at all times during fieldwork. Rabies vaccination was also mandatory prior to engaging in any bat-handling activities.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9bhjr\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"8p4na\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9gpur\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"j769\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"safety\",\"mutability\":\"IMMUTABLE\",\"data\":{\"blocks\":[{\"data\":{},\"depth\":0,\"entityRanges\":[],\"inlineStyleRanges\":[],\"key\":\"4v47v\",\"text\":\"Rabies vaccination was also mandatory prior to engaging in any bat-handling activities.\",\"type\":\"unstyled\"}],\"entityMap\":{}}}}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"dgnas\",\"text\":\"Fieldwork and bat trapping were conducted using harp traps, mist nets, high nets, and GPS devices to record geographic coordinates. The Area of Occupancy (AOO) map was generated using QGIS, while the Extent of Occurrence (EOO) map was produced with ArcGIS incorporating the IUCN EOO Toolbox.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Locality data was collected through a combination of literature review, fieldwork, and museum specimens.",
+    "Fieldwork was primarily conducted in Peninsular Malaysia, using bat trapping methods such as harp traps, mist nets, and high nets.",
+    "Harp traps were placed approximately 20 meters apart, while mist nets and high nets were set up in open spaces within the study area.",
+    "All traps and nets were deployed from dusk (1900 hrs) to dawn (0700 hrs), and their coordinates were recorded using a Garmin GPSMAP 65s device.",
+    "Measurements were taken for each captured individual, including forearm length, weight, sex, age, and reproductive status.",
+    "Species identification was performed using the taxonomic key provided by Kingston et al. (2006).",
+    "Museum data was obtained from the Zoological Museum of the Malaysian National University (UKM), where locality information for both skull and wet specimens of the species was recorded.",
+    "All coordinates collected from literature reviews, fieldwork, and museum records were standardized and saved in decimal degree format.",
+    "The distribution map was created using QGIS version 3.34.1, with spatial data for each country sourced from GADM version 4.1 (2025).",
+    "All maps and coordinates were set to the WGS 1984 coordinate reference system (EPSG:4326).",
+    "The Area of Occupancy (AOO) was calculated using the ‘grid’ tool in QGIS version 3.34.1 to create a 2 km x 2 km grid on the map.",
+    "The Extent of Occurrence (EOO) was calculated using the IUCN EOO Calculator Toolbox in ArcMap version 10.8.1 (Figure 2).",
+    "Before running the toolbox, presence, origin, and seasonal codes were assigned to each locality point.",
+    "Number of locations is determined by using ‘Google Satellite Image’ function in QGIS.",
+    "Choose the most probable threat for the species.",
+    "The number of locations is measured by introducing the threat to the localities.",
+    "Localities that are eliminated after introducing a single threatening event is considered as one location."
+  ],
+  "authors": [
+    "Nazifah Fitriyah Zariman",
+    "Juliana Senawi"
+  ],
+  "creator": "Nazifah Fitriyah Zariman",
+  "published_on": 1750100201,
+  "created_on": 1747294474,
+  "keywords": []
+}

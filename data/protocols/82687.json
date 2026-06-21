@@ -1,0 +1,27 @@
+{
+  "id": 82687,
+  "title": "Quantification of TH immunoreactivity",
+  "uri": "quantification-of-th-immunoreactivity-cuy7wxzn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj85qngk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"c1nm5\",\"text\":\"This protocol describes quantification of TH immunoreactivity.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"12avf\",\"text\":\"Apparatus\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fdeea\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"68p3v\",\"text\":\"Confocal microscope \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6379s\",\"text\":\"Image J software\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "TH signals from bilateral striatum and cortex are imaged under a 20x objective lens using identical imaging settings.",
+    "Open the confocal files in Image J software.",
+    "Using the “Rectangle” function to select an area (width x high = 150 x 150) in striatum sections from both hemispheres for TH quantification.",
+    "Using the “Measure” function to measure the gray value of the selected area and write down the mean value of striatum slice, M striatum-LHS and M striatum-RHS .",
+    "Using the “Rectangle” function to select an area (width x high = 150 x 150) in cortical sections from both hemispheres for TH quantification.",
+    "Using the “Measure” function to measure the gray value of the selected area and write down the mean value of cortical slice, M cortex-LHS and M cortex-RHS .",
+    "TH quantification = (M^{striatum-LHS}- M^{cortex-LHS})/(M^{striatum-RHS}- M^{cortex-RHS}) ."
+  ],
+  "authors": [
+    "Hong-Yuan Chu"
+  ],
+  "creator": "Johnson Agniswamy",
+  "published_on": 1685998537,
+  "created_on": 1685528885,
+  "keywords": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": 104826,
+  "title": "Calculating Multiplicity of Infection (MOI)",
+  "uri": "calculating-multiplicity-of-infection-moi-dik24cye",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzj1wrlx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"61m8r\",\"text\":\"Multiplicity of infection (MOI) is the ratio of viral particles to cells. The ideal MOI for antiviral screenings will depend on several things - the cell type, the cell passage, the virus type, the amount of cells, etc.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9omjf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"22gvm\",\"text\":\"The appropriate MOI for antiviral screenings will depend on several factors - the cell type, the cell passage, the amount of cells, the virus type, etc. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"easmd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aackb\",\"text\":\"We always run an MOI test, which is an MOI dilution series, when we create fresh cell or virus stocks. From this MOI test we select the MOI that achieves approximately 30% infectivity.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Or if you would prefer to perform by hand: 1. desired MOI x (# cells / well) = Plaque Forming Units (PFU) /well 2. (PFU/well) x (1000/50) = PFU/ml needed 3. (stock titer) / (PFU/ml needed) = Dilution Factor 4. ((5ml x # plates)(1000)) / DF = total volume of virus stock needed 5. (5ml) - (volume of virus stock) = amount of 2% media for the dilution For example , our current stock of SARS-CoV-2 WA1 has a titer of 3.5e6 PFU/ml we want to infect the wells with MOI 0.05 we have 5 plates and we want to infect wells with 50ul volume (~estimate 5ml volume needed per plate) 0.05 (1.6e4 cells/well) = 800 PFU/well 800 (1000/50) = 16,000 PFU/ml (3.5e6)/16,000= 218.75 ((1000(5ml x 5 plates)) / 218.75 = 114.29 ul SARS-CoV-2 WA1 virus stock needed 5ml - 114.29ul = 4,885.7 ul 2% Media",
+    "Virus Dilution Calculator (1).xlsx Use this excel sheet for quick MOI dilution calculation."
+  ],
+  "authors": [
+    "Briana L McGovern",
+    "Kris White"
+  ],
+  "creator": "Briana L McGovern",
+  "published_on": 1742334539,
+  "created_on": 1722964130,
+  "keywords": []
+}

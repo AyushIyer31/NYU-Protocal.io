@@ -1,0 +1,35 @@
+{
+  "id": 72700,
+  "title": "HCR of fixed mouse brain tissue sections ",
+  "uri": "hcr-of-fixed-mouse-brain-tissue-sections-ci84uhyw",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv59725g1b/v2",
+  "description": "{\"blocks\":[{\"key\":\"fpdte\",\"text\":\"This is an RNA fluorescent in-situ hybridization (FISH) protocol that utilizes hybridization chain reaction technology from Molecular Instruments. The protocol fluorescently labels different mRNAs (up to 4 different mRNAs) such that they become suitable for imaging. This protocol was designed specifically for fixed mouse brain tissue sections that contain raphe serotonergic neurons, but can be applied to other regions of the mouse brain as well. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "-Beginning from after fixed sections mounted on superfrost plus slides have been washed with PBS (1x5min) -Protocol adapted from Molecular Instruments https://files.molecularinstruments.com/MI-Protocol-RNAFISH-FrozenTissue-Rev2.pdf -All buffers, probes, and hairpins to be ordered from Molecular Instruments (HCR RNA-FISH products) -If multiplexing, make sure to use probes with different B types and to align the correct hairpins with the correct probe types. For example, when we stain raphe sections for Tph2 and Pcdhac2, we put on B1 Tph2 probes and B3 Pcdhac2 probes, and then B1 546 hairpins and B3 647 hairpins.",
+    "Permeabilize sections in slide mailers: Immerse slides in 50% EtOH for 5 mins at RT. Immerse slides in 70% EtOH for 5 mins at RT. Immerse slides in 100% EtOH for 5 mins at RT. Immerse slides in 100% EtOH for 5 mins at RT.",
+    "Immerse slides briefly in PBS, then allow to dry (~5 min). Using a hydrophobic barrier pen (Cosmo Bio LTD, Cat. No. DAI-PAP-S), draw a barrier on each slide surrounding the tissue sections.",
+    "Pre-hybridize sections by pipetting on ~200 ul of pre-warmed (37C) Probe Hybridization Buffer and incubating for 10 min at 37C. NOTE: the 200 ul volume here and in downstream steps can vary; just needs to be enough to cover all sections.",
+    "During pre-hybridization incubation, make probe mix for samples: -Make probes in 200 ul of pre-warmed hybridization buffer per slide -For each probe, check the probe scale: -For 1 um probe concentration, add 1.0 ul probe per 100 ul of solution -For 2 um probe concentration, add 0.5 ul probe per 100 ul of solution -Add 1/100 RNAse inhibitor (Invitrogen N8080119) -Mix by vortexing, spin down",
+    "Remove pre-hybridization buffer and pipette on probe solutions. Incubate overnight (12-16 hr) in a humidified chamber at 37C.",
+    "Make wash solutions (enough for 200 ul per slide, except for D) and warm to 37C: 0: 100% Probe Wash Buffer A: 75% Probe Wash Buffer : 25% 5xSSCT B: 50% Probe Wash Buffer : 50% 5xSSCT C: 25% Probe Wash Buffer : 75% 5xSSCT D: 100% 5xSSCT (make enough to fill slide mailers) 5xSSCT: 25% 20x SSC, 0.1% Tween-20 in DNAse/RNAse-free water",
+    "Remove probes and perform washes as follows: -Add solution 0, incubate at 37C for 2 min -Remove solution 0; add solution A, incubate at 37C for 15 min -Remove solution A; add solution B, incubate at 37C for 15 min -Remove solution B; add solution C, incubate at 37C for 15 min -Remove solution C; add solution D, incubate at 37C for 15 min (in slide mailers) -Remove solution D. Immerse in 5x SSCT at RT for 5 min (in slide mailers) During washes, bring an aliquot of Probe Amplification Buffer (enough for 200 ul per slide) to RT.",
+    "Remove slides from slide mailers. Add Probe Amplification Buffer to slides and pre-amplify at RT for 30+ mins (usually let this incubation go for a few hours until the afternoon, when the hairpins are ready to be added).",
+    "Prepare each fluorescently labelled hairpin by snap-cooling: -For each hairpin, prepare 1 ul of hairpin per 100 ul of solution -Snap-cool each hairpin separately in a thermal cycler: 95C for 90 seconds, then let cool in the dark at RT for 30 min",
+    "Prepare final hairpin solution by combining snap-cooled hairpins in RT Probe Amplification Buffer with 1/100 RNAse inhibitors.",
+    "Remove pre-amplification solution and add hairpin solution. Incubate overnight (12-16 hr) in dark humidified chamber at RT.",
+    "Remove hairpin solution. Incubate in 5x SSCT, 2x30 min at RT in slide mailers.",
+    "Incubate in 5xSSCT, 1x5min at RT in slide mailers.",
+    "Add DAPI-containing mounting media to slide, apply coverslip and nail polish. Avoid hard mounting media."
+  ],
+  "authors": [
+    "Alex Buckley"
+  ],
+  "creator": "Alex Buckley",
+  "published_on": 1668411865,
+  "created_on": 1668410901,
+  "keywords": []
+}

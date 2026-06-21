@@ -1,0 +1,38 @@
+{
+  "id": 47748,
+  "title": "PROCEDURE TO INDUCE MITOCHONDRIAL DEPOLARISATION AND LYSING OF MOUSE CORTICAL NEURONS ",
+  "uri": "procedure-to-induce-mitochondrial-depolarisation-a-bsvcne2w",
+  "doi": "dx.doi.org/10.17504/protocols.io.bsvcne2w",
+  "description": "{\"blocks\":[{\"key\":\"4su75\",\"text\":\"Mutations in PINK1 cause early-onset Parkinson’s disease. PINK1 becomes stabilised and active upon mitochondrial depolarisation. This leads to phosphorylation of ubiquitin and Parkin via Serine 65 residues and a feed forward mechanism whereby PINK1 phosphorylates newly formed polyubiquitin chains, generating phospho-ubiquitin, which further promotes Parkin recruitment and activation. Once activated, Parkin ubiquitylates proteins at the outer face of the outer mitochondrial membrane (OMM) and then initiates a downstream pathway that eventually leads to mitophagy, a mitochondria-specific type of autophagy. Notably, much of previous investigation into PINK1/Parkin activity has been performed in non-neuronal human cancer cells where Parkin and/or PINK1 is over-expressed. Here we report a protocol for generation of mouse embryonic cortical neuronal cultures that produce high cell yields and can be used for studying endogenous PINK1 and Parkin signalling by biochemical methods and proteomics\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9mbna\",\"text\":\"Please refer PROCEDURE TO ISOLATE AND CULTURE NEURONS FROM EMBRYONIC MOUSE CORTEX for materials and methods.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "◊TIMING 01:00:00 - 09:00:00 , day of experiment in this section. To depolarize or uncouple mitochondrial membrane potential in neurons, cultures were treated for 03:00:00 to 09:00:00 with a combination of 10 µM Antimycin A and 1 µM Oligomycin dissolved in DMSO at 37 °C .",
+    "◊TIMING 01:00:00 - 01:30:00 in this section. Gently aspirate the medium from wells which neurons are plated.",
+    "Wash twice by adding 1 mL of warmed DPBS containing protease inhibitors, phosphatase inhibitors and 200 mM Chloroacetamide. Note: Chloracetamide is added to the PBS and the lysis Buffer to inactivate deubiquitinase enzymes and enhance the detection of Ubiquitin signal.",
+    "Place the 6 well multidishes On ice and add 50 µL of Lysis Buffer. Carefully scrape the cells and collect the lysate in a 1.5 mL microcentrifuge tube.",
+    "Sonicate the cell lysate with a probe sonicator 5 seconds 20% amplitude and incubate for 00:30:00 On ice .",
+    "Centrifuge the cell lysate at 17000 x g, °C, in a refrigerated centrifuge for 00:30:00 . Supernatants were collected and protein concentration was determined by using the Coomassie Protein Assay.",
+    "Cell lysates are stored at -80 °C .",
+    "◊TIMING 05:00:00 - 48:00:00 in this section. 40 µg of cell lysates are diluted 4X into 4X LDS loading buffer supplemented with fresh 10% 2-mercaptoethanol.",
+    "Samples are boiled for 00:03:00 at 97 °C or for 00:20:00 at 37 °C . Do not boil the sample for an extended time, ubiquitin can refold on membrane and obscure epitope",
+    "Analyse samples by running on Nu-page Bis-Tris 4-12% gels for a better resolution of ubiquitin chains, at 120 V for ~ 02:00:00 .",
+    "Transfer gel on PVDF membrane for phospho-ubiquitin and ubiquitin signal and nitrocellulose membrane for phospho-Parkin and Parkin signal. Transfer in Towbin buffer at 80 V for 01:30:00 On ice or in cold room. Note: Prepare only 1 membrane per transfer tank -avoid multiple membranes for transfer in same tank as this reduces ubiquitin transfer.",
+    "Incubate membrane with blocking buffer 5% milk in 0.1% TBS-Tween for 01:00:00 at Room temperature .",
+    "Remove blocking buffer, if primary antibodies are in 5% BSA, rinse twice with 0.1% TBS-Tween to remove any traces of milk, add primary antibodies and incubate Overnight at 4 °C . Note: Prepare phospho-Ubiquitin (1:2000), Ubiquitin (1:1000), GAPDH (1:5000) and Parkin (1:1000) in 5% BSA (TBS-Tween). Prepare phosphoParkin (1:2000) in 5% milk (TBS-Tween). To avoid non-specific signal, it is recommended to preincubate phospho-Parkin antibody with a membrane for 2 days before using it.",
+    "Remove primary antibody and wash 3 times with 0.1%TBS-Tween for 00:10:00 .",
+    "Add HRP-conjugate secondary antibodies for 01:00:00 at RT diluted 1:5000 in 1% BSA (0,1% TBS-Tween).",
+    "Remove secondary antibody and wash 3 times with 0.1%TBS-Tween for 00:10:00 .",
+    "Develop signal using ECL western Blotting reagents and analysing with Chemidoc. Note: Depending on signal, film can be best for sensitivity."
+  ],
+  "authors": [
+    "Odetta Antico",
+    "Miratul M. Muqit"
+  ],
+  "creator": "Miratul Muqit",
+  "published_on": 1627695162,
+  "created_on": 1614513154,
+  "keywords": []
+}

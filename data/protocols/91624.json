@@ -1,0 +1,41 @@
+{
+  "id": 91624,
+  "title": "CMV Resistance testing (UL54 and UL97)",
+  "uri": "cmv-resistance-testing-ul54-and-ul97-c5qgy5tw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6xy4zlqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"86h29\",\"text\":\"This protocol is a procedure for the study of antiviral resistance in Cytomegalovirus by NGS techniques.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1ej2b\",\"text\":\"The primers have been designed using https://primalscheme.com/ with the intention of covering the most relevant regions of the UL54 and UL97 genes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":37,\"length\":25}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"75F59E08936511EE959A0A58A9FEAC02\",\"url\":\"https://primalscheme.com\"}}}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"6k017\",\"text\":\"Take into account that the quality of the results is greatly affected by the time from sample extraction to DNA amplification.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3o4jc\",\"text\":\"The protocol may fail if the protocol is performed from refrigerated samples or DNA.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"45n0l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Q5‱ High-Fidelity DNA Polymerase (New England) Agarose gel 1% Ethanol 70% Mag-Bind‱ TotalPure NGS (omega) Elution Buffer",
+    "Perform DNA extraction with your method of choice. Preferably from a plasma sample collected on the same day .Perform DNA extraction with your method of choice. Preferably from a plasma sample collected on the same day. The quality of the results is greatly affected by the time from sample extraction to DNA amplification. The protocol may fail if the protocol is performed from frozen samples or DNA.",
+    "For each pool and sample, mix the following reagents (two reactions per sample): %s %s Reagent Volume / sample (µl) Primer Pool 2 Q5‱ Polymerase 0,25 Q5 Buffer 5 H20 5 dNTP 0.5 Sample DNA 12,5 Set up the PCR with the following program %s %s Temperature Time 98°C 30’’ 98°C 10’’ 65°C 3’ 98°C 10’’ 65°C 30’’ 72°C 2’ 72°C 2’ 4°C ∞ Confirm amplification of aproximately 300bp fragments by 1% agarose gel .",
+    "UL97 Primers %s %s UL97_4_LEFT TGCGCGCGGAAAGTCAG UL97_4_RIGHT CGGCATAACAGATCTTGTGGC UL97_5_LEFT CTCTGCGAGCTCTCTATCTCCT UL97_5_RIGHT AGCAGACAGCAGCCCGT UL97_6_LEFT TGGCGAGCAACAGCAGC UL97_6_RIGHT GCGCGCATGATCTCGCT UL97_7_LEFT TGCCACTTTGACATTACACCCA UL97_7_RIGHT TCCGACATGCAATAACGCCG UL97_8_LEFT TTTCCGACCCATGCCGCT UL97_8_RIGHT ATGCTCGCCCAGGAGACAG UL97_9_LEFT CATGGGTACGGAGGCGTTG UL97_9_RIGHT GGCCAACAGACGCTCCA UL54 Primers %s %s UL54_1_LEFT TGCAAAAACTTGTCCTTGCGC UL54_1_RIGHT ATTCTGTAACCACCGGCGTG UL54_2_LEFT GTAGTTGCACACGGCCGAC UL54_2_RIGHT CGTCAATCTAACCTGCCGCA UL54_3_LEFT CGTAAAAGACCCGATCCCCG UL54_3_RIGHT TCTCGCTGCTCTTTGAGGATC UL54_4_LEFT CTTCATCGAGTGAGAGGCGC UL54_4_RIGHT AGGCTTTGGTGGCGCGT UL54_5_LEFT GCTTGACGGGCTCCACAAAA UL54_5_RIGHT GGCGCGGTTCATCAAAGACA UL54_6_LEFT TCCCGCGTTCCCACTACATA UL54_6_RIGHT CAACAAGTGGGTTTCGCAGC UL54_7_LEFT ATACGGCGCACAGGGTCTT UL54_7_RIGHT GTGTTTGAGCCCGAGGTGG UL54_8_LEFT AGTAGCAGAGGTTGTGAGCCA UL54_8_RIGHT GGTTCTGTGGCGGCTATGTT UL54_9_LEFT AAACGCCGTCCTGACTCGA UL54_9_RIGHT (V2) CTTGCAATCTGCGCCGTC UL54_10_LEFT GGATCTGCTGTCCGTCAAAGA UL54_10_RIGHT ATATTGCGGGTTCGGTGGTT UL54_11_LEFT TGTTGAGCTTATAGTTGGGCGA UL54_11_RIGHT CGGCCTTTGTGACCGGTTAC UL54_12_LEFT CCTTATACAGGTACTCGAGGCG UL54_12_RIGHT GTGCTACGAGACGGGAGGA UL54_13_LEFT AAGTGCAGCCCCGACCAT UL54_13_RIGHT GGATCACCACGTTCGGCTG UL54_14_LEFT CCTCGATATCACAAGTCGACGC UL54_14_RIGHT GGCGAACTAGTGCCCGAAC UL54_15_LEFT CCGTACCCGTAGATGGAGGT UL54_15_RIGHT GGGACCTATTCGTTTTCACACCTA UL54_16_LEFT ACGATAGCGCGGCGACA UL54_16_RIGHT CGGCGTCAGCGTTTGCA",
+    "Pool 1 UL97 (odd primers LEFT and RIGHT) Pool 2 UL97(even primers LEFT and RIGHT) Use 10 µL for each primer at 10 micromolar (µM)",
+    "Pool 1 UL54 (odd primers LEFT and RIGHT) Pool 2 UL54 (even primers LEFT and RIGHT) Use 10 µL for each primer 10 micromolar (µM) except: UL54_14_LEFT/RIGHT 14: 2,5 µl UL54_5_LEFT/RIGHT: 5 µl UL54_13_LEFT/RIGHT: 5 µl UL54_15_LEFT/RIGHT: 20 µl",
+    "Add 40 uL of beads to 20 uL of amplicon. Mix.",
+    "Incubate the mixture for 5 minutes at room temperature.",
+    "Place the tube in the magnet until the solution becomes clear.",
+    "Gently remove the supernatant by pipette.",
+    "Add 180 uL of 70% ethanol. Mix without breaking the pellet.",
+    "Gently discard the ethanol by pipette.",
+    "Incubate for 2 minutes at room temperature.",
+    "Remove any remaining ethanol. Note: The pellet must not be allowed to dry excessively. If it does occur, the pellet will appear black and cracked.",
+    "Remove the tube from the magnet.",
+    "Add 25 uL of EB. Mix. Note: do not break the pellet, just peel it away from the wall of the tube.",
+    "Incubate for 2 minutes at room temperature.",
+    "Place the tube back in the magnet until the solution clears.",
+    "Transfer 20 uL of the supernatant to a new tube.",
+    "Sequence the amplicons using the sequencer of choice according to the manufacturer&#39;s instructions.",
+    "Generate consensus sequence from the amplicons using the bioinformatics procedure of choice. Take into account that in cases of previous exposure to antivirals or prolonged treatment, minority variants may appear. The website http://cmv-resistance.ucl.ac.uk/herpesdrg/ is helpful for the study of resistance mutations."
+  ],
+  "authors": [
+    "Fernando Lazaro"
+  ],
+  "creator": "Fernando Lazaro",
+  "published_on": 1701797600,
+  "created_on": 1701351421,
+  "keywords": []
+}

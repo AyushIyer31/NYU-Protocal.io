@@ -1,0 +1,27 @@
+{
+  "id": 29635,
+  "title": "AccuBlue®Broad Range RNA Quantitation",
+  "uri": "accublue-broad-range-rna-quantitation-87bhzin",
+  "doi": "dx.doi.org/10.17504/protocols.io.87bhzin",
+  "description": "",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"8b1md\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"eo5p8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"97jcm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"AOEmu\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"ET7Yk\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"Wpiiq\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":203579,\"guid\":\"41ABDADF341F11EE9D4302C0B41BC903\",\"name\":\"0.5 mL thin-walled tubes\",\"mol_weight\":0,\"sku\":\"LS-9350-X\",\"url\":\"http://None\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":723,\"name\":\"NEN Life Science Products Inc\",\"link\":\"https://www.biocompare.com/100118-NEN-Life-Science-Products/#summary\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":348036,\"guid\":\"424D0D29341F11EE9D4302C0B41BC903\",\"name\":\"AccuBlue® Broad Range RNA Quantitation Kit\",\"mol_weight\":0,\"sku\":\"31073\",\"url\":\"https://biotium.com/product/accublue-broad-range-rna-quantitation-kit/\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":48,\"name\":\"Biotium\",\"link\":\"http://biotium.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Warm all components to room temperature before use.RNA Broad Range Dyeis provided in DMSO, which may freeze during storage at 4°C.",
+    "Prepare 200 uL of working solution for each sample to be tested. Dilute the RNA Broad Range Dye in RNA Broad Range Buffer at a ratio of 1:200 in a plastic container and mix well by vortexing or shaking. For example, combine 10 uL of Dye with 2 mL Broad Range Buffer to prepare enough working solution for 10 tubes. Volumes can be scaled as required.",
+    "For each sample and standard, pipette 200 uL of the working solution into a clear 0.5 mL PCR tube.",
+    "Into one tube, pipet 10 uL of RNA Dilution Buffer (0 ng/uL). Into a second tube, pipet 10 uL of RNA Broad Range Standard (100 ng/uL). Pipette 10 uL of each RNA sample to be quantified in its own tube. %s %s",
+    "Incubate the tubes at room temperature for at least 2 minutes.",
+    "Turn on the Qubit® 3.0 instrument. On the home screen select RNA. Choose the Broad Range assay. Follow the prompts on the screen, and first read the tube containing RNADilution Buffer (ie, Standard 1) and then read the tube containing RNA Broad Range Standard (ie, Standard 2). The program will use these values to quantify your unknown samples.",
+    "The data can be recorded manually or exported as a csv file."
+  ],
+  "authors": [
+    "Ajit N Shah"
+  ],
+  "creator": "Ajit N Shah",
+  "published_on": 1573460120,
+  "created_on": 1573266339,
+  "keywords": []
+}

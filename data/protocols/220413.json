@@ -1,0 +1,28 @@
+{
+  "id": 220413,
+  "title": "High Throughput Phagocytosis assay",
+  "uri": "high-throughput-phagocytosis-assay-g3g5byjy7",
+  "doi": "dx.doi.org/10.17504/protocols.io.dm6gpq7qplzp/v1",
+  "description": "{\"blocks\":[{\"key\":\"3pn9p\",\"text\":\"Protocol for a longitudinal phagocytosis assay using PhroRed zymosan particles (ThermoFisher ) and the Incucyte live-cell analysis system (Sartorius).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Differentiate microglia as described in dx.doi.org/10.17504/protocols.io.dm6gpdrp5gzp/v1",
+    "Plate microglia-like cells in a PhenoPlate 96-well (Revvity) at 150,000 cells/mL, 100 µL per well in X-Vivo 15 (Lonza) supplemented with 1% Glutamax, 0.5% Pen/Strep and 100ng/mL MCSF.",
+    "Wait for one week for microglia to mature",
+    "Incubate cells with 100 ug/mL pHrodo Red Zymosan BioParticles Conjugate for Phagocytosis (ThermoFisher) in supplemented X-vivo.",
+    "Immediately place the PhenoPlate in Incucyte Live-Cell analysis system (Sartorius).",
+    "Set the analysis system to acquire images from each well of the plate at 560/585 nm and in Phase contrast. For a full plate this takes ~30 minutes, for a longitudinal assay images can be acquired every 45 minutes.",
+    "For a longitudinal assay, acquire images for 5 to 8 hours after incubation with PhrodoRed particles to observe the progress of uptake by microglia. Adding one extra acquisition step before incubating the cells with the probe can be useful. The plate can be removed in between two acquisition steps to treat with probes/drugs for longitudinal assays.",
+    "For analysis, the inbuilt pipelines of the Incucyte allow to measure the intensity, area and puncta count of the PhrodoRed signal, as well as confluence % based on Phase Contrast, making it possible to visualise the evolution of phagocytosis in cells."
+  ],
+  "authors": [
+    "Alexis Penverne"
+  ],
+  "creator": "Alexis Penverne",
+  "published_on": 1750171572,
+  "created_on": 1750166825,
+  "keywords": []
+}

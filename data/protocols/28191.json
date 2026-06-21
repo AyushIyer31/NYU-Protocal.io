@@ -1,0 +1,24 @@
+{
+  "id": 28191,
+  "title": "Protocol for T7 Exonuclease (NEB #M0263)",
+  "uri": "protocol-for-t7-exonuclease-neb-m0263-7r7hm9n",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"75skj\",\"text\":\"T7 Exonuclease efficiently degrades nicked and linear dsDNA (with blunt or 3' overhangs) from 5' to 3' direction, leaving supercoiled dsDNA inctact.*\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"fr31j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2535b\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"j3qt\",\"text\":\"*Note: For more precise results or partial digestions, we recommend titration of the enzyme to the intended substrate.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":7}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"2v2sn\",\"text\":\"Please see SDS (Safety Data Sheet) for hazards and safety warnings.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"uS2L8\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"lnH3Q\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"6BLHR\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":216109,\"guid\":\"41C03084341F11EE9D4302C0B41BC903\",\"name\":\"EDTA\",\"mol_weight\":0,\"sku\":\"17892\",\"url\":\"https://www.thermofisher.com/order/catalog/product/17892\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":336912,\"guid\":\"424AAE64341F11EE9D4302C0B41BC903\",\"name\":\"T7 Exonuclease\",\"mol_weight\":0,\"sku\":\"M0263\",\"url\":\"https://international.neb.com/products/m0263-t7-exonuclease#Product%20Information\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Set-up the reaction as follows: %s %s",
+    "Incubate at 25 °C for 00:30:00 .",
+    "Stop reaction by adding EDTA to at least 11 millimolar (mM) .",
+    "To clean up treated samples, we recommend using one of the following steps : a. Column clean up (we recommend the Monarch® PCR &amp; DNA Cleanup Kit, NEB #T1030 ) or b. Running the reaction on an agarose gel, and then extracting the DNA (we recommend the Monarch Gel Extraction Kit, NEB #T1020 ), or c. Performing a phenol/chloroform extraction followed by ethanol precipitation."
+  ],
+  "authors": [
+    "New England   Biolabs"
+  ],
+  "creator": "New England Biolabs Tech Support",
+  "published_on": 1592615401,
+  "created_on": 1569618386,
+  "keywords": []
+}

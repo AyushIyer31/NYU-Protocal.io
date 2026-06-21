@@ -1,0 +1,42 @@
+{
+  "id": 242970,
+  "title": "Grapevine hairy root culture establishment, confirmation and maintenance protocol.",
+  "uri": "grapevine-hairy-root-culture-establishment-confirm-hrh2b538f",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v9bwn4l3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"buk37\",\"text\":\"A detailed protocol for establishing grapevine hairy root cultures via Rhizobium rhizogenes-mediated transformation of in vitro plantlets, adaptable to other species with minor adjustments to explant type or age. The protocol covers bacterial suspension preparation, infection procedure, hairy root confirmation, and subculturing. The protocol successfully established hairy roots from three Vitis vinifera cultivars (Chardonnay, Redglobe and Sultana), four Vitis rootstock hybrids (Gravesac, Ramsey, SO4 and 143B), and two other important South African plant species (Sutherlandia frutescens and Aspalathus linearis). In grapevine, hairy roots emerge from explants ~14 days post-infection, exhibit the characteristic non-geotropic, highly branched phenotype on hormone-free media, and continue robust development after excision. Genotypic confirmation employs PCR with newly developed universal multiplex primers compatible across R. rhizogenes strains. Hairy roots can be subcultured indefinitely for biomass accumulation in bioreactors, and the protocol supports generation of CRISPR-edited roots.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":71,\"length\":20},{\"style\":\"italic\",\"offset\":119,\"length\":8},{\"style\":\"italic\",\"offset\":392,\"length\":14},{\"style\":\"italic\",\"offset\":458,\"length\":5},{\"style\":\"italic\",\"offset\":569,\"length\":24},{\"style\":\"italic\",\"offset\":597,\"length\":19},{\"style\":\"italic\",\"offset\":932,\"length\":13}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"99d4r\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"8b9gs\",\"text\":\"Autoclave sterilise all equipment prior to use and perform all steps in a laminar flow hood to avoid contamination of plant material or bacterial cultures.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"42pst\",\"text\":\"Yeast mannitol (YM): 5 g/L yeast extract ; 0.5 g/L casein enzymatic hydrolysate; 8 g/L mannitol; 2 g/L ammonium sulphate; 5 g/L NaCl; pH 6.6; 15 g/L agar for petri dishes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6fint\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fc90r\",\"text\":\"Murashige and Skoog (MS) media: 4.4 g/L MS basal media; 0.105 g/L B5 vitamins; 15 g/L sucrose; 3 g/L Gelrite or Phytagel; pH 5.7\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":67,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1i1od\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ecr0t\",\"text\":\"1/2 Murashige and Skoog (MS) media: 2.2 g/L MS basal medium; 0.05 g/L B5 vitamins; 0.1 g/L myo-inositol; 30 g/L sucrose, pH 5.8; 8 g/L agar or 3 g/L Phytagel for petri dishes/magentas.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":71,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Streak out Rhizobium rhizogenes onto yeast mannitol (YM) agar plates supplemented with 25 µg/mL Rifampicin and selection antibiotic (if binary vector present). Incubate plates in the dark at 28°C",
+    "Decant R. rhizogenes culture into 50 mL falcon tubes for processing.",
+    "Prepare a pre-culture by inoculating 5 mL of YM broth with a isolated single R. rhizogenes colony, incubate in the dark at 28°C while shaking at 120 rpm.",
+    "Use 100-200 µL of pre-culture to inoculate 50 mL of YM broth in a 100 mL Erlenmeyer flask. Incubate in the dark at 28°C while shaking at 120 rpm until OD 600 = 0.8 - 1.",
+    "Centrifuge culture at 5000 rpm and decant supernatant.",
+    "Wash remaining pellet in 1/2 Murashige and Skoog (MS) media, centrifuge at 5000 rpm and resuspend in 25 mL 1/2 MS supplemented with 250 µM acetosyringone. The bacterial culture is ready for infection of plant material and can be stored at 4°C for an hour prior to use.",
+    "Excise internode tissue from about 20cm tall grapevine plantlets using sterile scalpel and tweezers.",
+    "Establish in vitro grapevine plantlets.",
+    "Transfer an active growth point onto MS agar in a magenta. Gently push the cut stem side into the media and let the plantlet develop.",
+    "Decant the bacterial suspension into a petri dish and immerse the explant material (excised internodes), avoid agitation and completely submerge explants.",
+    "Remove the explants from the suspension with tweezers. Briefly blot them dry on sterile filter paper to remove excess bacterial suspension but leave them slightly moist.",
+    "Co-culture the explants and bacteria on 1/2 MS agar plates in the dark at 20°C. Bacterial growth should be visible around the explants after 24 - 36 hours.",
+    "Rinse the explants twice in petri dishes filled with 25 mL autoclaved distilled water.",
+    "Submerge the explants in a 500 µg/mL Timentin/Augmentin antibiotic solution to eliminate R. rhizogenes .",
+    "Blot the explants dry thoroughly on sterile filter paper and transfer them to 1/2 MS agar supplemented with 200 µg/mL Timentin/Augmentin. Incubate in the dark at 25°C.",
+    "When emerging roots reach 2 - 4 cm in length, excise them and transfer to separate 1/2 MS agar supplemented with 200 µg/mL Timentin/Augmentin. Incubate in the dark at 25°C. Roots that continue growing after excision with a non-geotropic and highly branched phenotype are considered putative hairy roots.",
+    "Putative hairy roots are flash frozen, pulverized and DNA extracted. DNA extracts are used in PCR reactions, screening for rol and vir genes to genotypically determine if R. rhizogenes transformation was successful and if the bacterium was eliminated.",
+    "Hairy roots can be sub-cultured by excising actively growing root tips and placing them on or in fresh 1/2 MS media. This process can be repeated indefinitely."
+  ],
+  "authors": [
+    "Sasha Tietz",
+    "Kyle Brenner",
+    "Tumelo Moyo",
+    "Philip Young",
+    "Melané Vivier"
+  ],
+  "creator": "sashat",
+  "published_on": 1778260851,
+  "created_on": 1770719267,
+  "keywords": []
+}

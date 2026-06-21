@@ -1,0 +1,30 @@
+{
+  "id": 10786,
+  "title": "The anxiolytic effect of probiotics: A systematic review and meta-analysis of the clinical and preclinical literature",
+  "uri": "the-anxiolytic-effect-of-probiotics-a-systematic-r-nsadeae",
+  "doi": "dx.doi.org/10.17504/protocols.io.nsadeae",
+  "description": "{\"blocks\":[{\"key\":\"16tmd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"1r10i\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"9od8q\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"9gjjl\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Search the following electronic databases: PubMed, PsycINFO, and Web of Science. Time span: earliest record of the databases to November 2017. Screen reference lists to identify other potentially relevant literature. Preclinical Search Terms Rat* or mouse* or mice* or murine or rodent Bifidobacterium or Probiotic* or Lactobacillus or prebiotic* or synbiotic* or saccharomyces or mycobacterium 1 and 2 Anxiety or anxious or anx* or anxiety-like mental health* Psycholo* and stress 4 or 5 or 6 3 and 7 Clinical Search Terms randomized controlled trial* or Clinical Trial * or trial Bifidobacterium or Bacteria* or Probiotic* or Lactobacillus or prebiotic* or synbiotic* or saccharomyces 1 and 2 Anxiety or anxious or anxio* mental health* Psycholo* and stress 4 or 5 or 6 3 and 7",
+    "Download citations to reference managing software. Remove duplicates. Assess titles and abstracts using below inclusion/exclusion criteria (two independent reviewers). Obtain full text of potentially relevant citations. Preclinical inclusion criteria Subjects are either rats or mice A probiotic is experimentally administered Anxiety-like behavior is measured as an outcome Preclinical exclusion criteria There is no matched control group The probiotic was not living at the time of administration (e.g. heat-killed) The probiotic is not administered directly to the tested subject Means, standard deviations, and sample sizes are not available for the outcome The full text of the study is not available in English Clinical inclusion criteria The study is a randomized controlled trial At least one interventional arm administered a probiotic An anxiety scale was used as a primary or secondary measure Human participants were included Clinical exclusion criteria There is no matched control group The probiotic was not living at the time of administration (e.g. heat-killed) Means, standard deviations, and sample sizes are not available for outcome The full text of the study is not available in English",
+    "Review full text articles using above inclusion/exclusion criteria (two independent reviewers). Record reasons for exclusion. Disagreements between the two reviewers should be resolved by an independent party. Contact a study&#39;s corresponding author to obtain relevant information that was not reported.",
+    "Extract the following characteristics and results from each included study: Author and year of publication Sample/participant characteristics Probiotic strain, administration method, dose, and duration Type of anxiety measure used Sample sizes for each treatment group Results: means and standard deviations for each measure of anxiety reported If results areavailable only in graphical format, extract data directly from the image using WebPlotDigitizer graph digitization software.",
+    "Determine risk of bias for each included study (two independent reviewers) For preclinical studies, use the SYRCLE&#39;s risk of bias tool For clinical studies, use the Cochrane Collaboration&#39;s risk of bias tool",
+    "Calculate standardized mean differences (Hedges&#39; g) and standard error for each outcome measure. Calculate 95% confidence intervals using a normal distribution. Combine treatment arms if they were compared against the same control group and calculate an SMD from the combine means.",
+    "Aggregate SMDs using robust variance estimation meta-analysis. Weight SMDs by study precision. Calculate I 2 to evaluate statistical heterogeneity.",
+    "Assess the following moderators in separate meta-regressions: sample size probiotic dose treatment duration.",
+    "Analyze the following subgroups separately: Preclinical Rodent species (i.e. rat vs. mouse) Naive vs. diseased experimental samples Probiotic species Clinical Clinical vs. healthy samples",
+    "Assess for publication bias using funnel plots and Egger tests."
+  ],
+  "authors": [
+    "Daniel J Reis"
+  ],
+  "creator": "Daniel J Reis",
+  "published_on": 1529597164,
+  "created_on": 1520797680,
+  "keywords": []
+}

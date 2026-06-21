@@ -1,0 +1,39 @@
+{
+  "id": 43298,
+  "title": "FCMPASS - Cataloguing light scatter reference materials",
+  "uri": "fcmpass-cataloguing-light-scatter-reference-materi-bniamcae",
+  "doi": "dx.doi.org/10.17504/protocols.io.bniamcae",
+  "description": "{\"blocks\":[{\"key\":\"fo96r\",\"text\":\"This protocol outlines the steps required to catalogue light scatter reference materials using the FCMPASS software. This is one of a number of protocols in the pipeline for performing small particle calibration using the fcmpass software package.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"6cbnm\",\"text\":\"FCMPASS software can be accessed at https://nanopass.ccr.cancer.gov.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Open FCM PASS. FCMPASS 3",
+    "Click ‘Catalogue’ in the top menu bar",
+    "Under the ‘Light Scatter’ tab entry fields exist for each of the pertinent metadata for reporting with light scatter calibration.",
+    "Diameter CV should be the percent coefficient of variation of the mean diameter provided on the certificate of analysis",
+    "Refractive Index should be the provided refractive index of the bead population on certificate of analysis If a refractive index is not available an approximate guide for polystyrene refractive index is 1.59 at 589 nm. Silica tends to vary more in refractive index than polystyrene but tends to be ~1.45 at 589 nm.",
+    "‘RI Measurement Wavelength’ is the wavelength at which the refractive index was measured and should be provided on the certificate of analysis. This tends to be 589 nm.",
+    "Composition can be selected as polystyrene, silica, or other. If polystyrene or silica are selected, changes in detection wavelength e.g. 488 nm to 405 nm are accounted for using the appropriate Sellmeier equations. If ‘Other’ is selected then the refractive index change is made propositionally to the sheath refractive index.",
+    "Manufacturer, Catalogue Number, and Lot Number should all be completed appropriately.",
+    "Once the entry fields are filled out as desired, press the &#39;Add Bead&#39; Button to add the bead information to the table. Each button has an in-depth explanation at the end of the protocol.",
+    "Continue to add beads until all the desired beads have been added to the table. Next, select the desired beads that should be in the bead set. This is done from the first column of the table which is labeled &#39;Selection&#39; and is marked by a red box below. The &#39;Selection&#39; column allows for the selection of beads, this functionality is used by the Bead Functions and Set Functions which will be discussed in further detail. When a bead is selected, its information is written in the entry fields above.",
+    "The second bead function button is the &#39;Delete Bead&#39; button which is immeadiately below the &#39;Add Bead&#39; button. To delete beads, they must be selected from the first column labeled selection. You may select as many beads as desired to delete. The beads will only be deleted from the currently selected bead set from the Display Set Dropdown. If beads are deleted from the master &#39;All&#39; bead set, the beads are deleted from all bead sets. This is because the &#39;All&#39; bead set serves as a master list of all stored bead information.",
+    "The first bead function button is the &#39;Add Bead&#39; button marked by the blue box. When pressed, the &#39;Add Bead&#39; button adds the entry fields information into a row in the table below. Note: The new bead is added to the set listed in the Display Set Dropdown that is marked by the red box. Thus, beads can be added to any existing bead sets by changing the Display Set Dropdown. If a bead is added to an existing bead set, then it is also added to the master &#39;All&#39; bead set in the background.",
+    "Press the &#39;Create Set&#39; button when all the desired beads have been selected. A pop-up dialog box will ask for a unique name. Upon completion, the new bead set will now be accessible from the Display Set Dropdown. If you have created your desired bead set, you can now continue using the FCMPASS software. However, the following steps in this protocol outline the complete functionality of the Bead Catalogue.",
+    "The last bead function button is the &#39;Append Bead&#39; button which is immeadiately below the &#39;Delete Bead&#39; button. When appending a bead, a single bead must be selected from the selection column. Upon pressing the &#39;Append Bead&#39; button, the bead information is overwritten by the information in the entry fields above. You can append any bead in any bead set, but you cannot append more than one bead at a time. As discussed earlier in the note for step 5, by selecting a bead, the bead information is written into the entry fields above. This allows for easy appending of beads that may only need a single entry field changed.",
+    "The first set function button is the &#39;Create Set&#39; button marked by the red box below. First select the desired beads that should be included in the new bead set. Then, press the &#39;Create Set&#39; button and give the bead set a unique name. The new bead set will now be accessible from the Display Set Dropdown. A bead set can be created from any other bead set.",
+    "The second set function button is the &#39;Delete Set&#39; button which is immeadiately below the &#39;Create Set&#39; button. The &#39;Delete Set&#39; button deletes the currently displayed bead set. This is the bead set selected from the Display Set Dropdown. The master &#39;All&#39; bead set cannot be deleted. The beads will not be deleted, only the bead set. The beads will remain in their other bead sets including the master &#39;All&#39; bead set.",
+    "The last set function is the &#39;Append Set&#39; button which is immeadiately below the &#39;Delete Set&#39; button. The &#39;Append Set&#39; button allows for the addition of beads to existing bead sets. The &#39;Append Set&#39; button uses the Dropdown directly below, and the selected beads are appended to the selected bead set from that Dropdown (marked by a blue box below). A bead cannot be appended to a bead set that it is already in."
+  ],
+  "authors": [
+    "Joshua A Welsh",
+    "Sean M Cook",
+    "Jennifer Jones"
+  ],
+  "creator": "Jennifer Jones",
+  "published_on": 1616557315,
+  "created_on": 1602861338,
+  "keywords": []
+}

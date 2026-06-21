@@ -1,0 +1,25 @@
+{
+  "id": 5718,
+  "title": "Real Time PCR (AB 7500) Protocol",
+  "uri": "real-time-pcr-ab-7500-protocol-htwb6pe",
+  "doi": "dx.doi.org/10.17504/protocols.io.htwb6pe",
+  "description": "{\"blocks\":[{\"key\":\"1bi3l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"djtd7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"am2hi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"9rjjs\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "cDNA should be pre diluted from reverse transcription. If reverse transcription was 40 ul reaction, 160 ul of Rnase free water should have been added to the cDNA. If not, do this first.",
+    "Prepare Master Mix (45 ul per sample) with the following: 17.5 ul rnase free water 2.5 ul of Taqman gene expression assay (Thermofisher #4331182 – primer appropriate for gene of interest) 25 ul of Taqman Universal Master Mix (Thermofisher #4305719) Prepare at least 10 % extra mix to ensure adequate volume.",
+    "Pipet 5 ul of prediluted cDNA onto Microamp Optical 96 well Reaction Plate (Thermofisher #N8010560).",
+    "Pipet 45 ul of gene appropriate master mix onto Reaction Plate.",
+    "Cover plate with Microamp Optical 8 cap strips (Thermofisher #4323032).",
+    "Roll caps tight with Roller to ensure wells are all sealed.",
+    "Select Advanced Setup Name Experiment under Experiment Properties Select Plate Setup Select Define Targets and Samples Tab Assign genes under target name. Reporter should be listed as FAM. Quencher should be listed as NFQ-MGB Select Assign Targets and Samples Tab Highlight wells and Select Targets (genes) as appropriate. Select Run Method and adjust # of cycles if desired Save file After run is completed, highlight wells of interest and click on the green Analyze button. Auto threshold is typically sufficient although this can be adjusted if necessary."
+  ],
+  "authors": [],
+  "creator": "James P O'Callaghan",
+  "published_on": 1519315570,
+  "created_on": 1493757396,
+  "keywords": []
+}

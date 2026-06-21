@@ -1,0 +1,26 @@
+{
+  "id": 29626,
+  "title": "BAM Alignment to CP018802  for Submission to GenBank",
+  "uri": "bam-alignment-to-cp018802-for-submission-to-genban-862hzge",
+  "doi": "dx.doi.org/10.17504/protocols.io.862hzge",
+  "description": "{\"blocks\":[{\"key\":\"e4evp\",\"text\":\"Create BAM Alignment FIles including necessary tags that designate library info for submission into the Sequence Read Archive (SRA) at NCBI.  Parking the BAM file at the SRA is convenent way to provide alignments to reproduce results at Steps to Create FASTQ of CCS Overlapping Genomic SSR - CCS ROI\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":237,\"length\":62}],\"data\":[]},{\"key\":\"10a3p\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ble1g\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"fohtr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ait5m\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"cm1va\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"0D101C50026A11EAA9257DCA1418A284\",\"url\":\"https://dx.doi.org/10.17504/protocols.io.wemfbc6\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"1okua\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"bf94v\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"dru8a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Geneious 11.1.5 Biomatters Ltd or another read mapper such as BowTie2 samtools 1.9 GitHub http://htslib.org/",
+    "https://www.ncbi.nlm.nih.gov/nuccore/CP018802.1",
+    "Nine PacBio CCS libraries were mapped to CP018802 L.17494 L.17495 L.17836 L.18256_1 L.18256_2 L.18257 L.19770 L.19771 L.19981 Mapping Parameters: Geneious Assembler, Medium Sensitiivity/Fast, iterate up to 5 times, Map multiple best matched randomly for 9 libraries Export each alignment to SAM",
+    "Edit each SAM with SAM tools to append library as read group (RG) ID and append sample RG tag to each of the SAM alignments generated samtools addreplacerg -r ID:LB:17494 -r SM:63250 -m overwrite_all -o L.17494_GeneMap_CP018802_RG.sam L.17494_GeneMap_CP018802.sam Edit SAM read group (@RG) metadata, append library (LB) and sample (SM) metadata for each SAM, need to remove original @RG header line, for example change @HD VN:1.0 SO:unsorted @SQ SN:CP018802 LN:2110642 @RG ID:Unpaired_reads_assembled_against_CP018802 SM:L.17495_GeneMap_CP018802 @RG ID:LB:17495 SM:63250 to @HD VN:1.0 SO:unsorted @SQ SN:CP018802 LN:2110642 @RG ID:LB:17495 SM:63250 and save file",
+    "samtools merge H_somni.L.101617.S.63250.bam L.19981_GeneMap_CP018802_RG.sam L.19771_GeneMap_CP018802_RG.sam L.19770_GeneMap_CP018802_RG.sam L.18257_GeneMap_CP018802_RG.sam L.18256_2_GeneMap_CP018802_RG.sam L.18256_1_GeneMap_CP018802_RG.sam L.17836_GeneMap_CP018802_RG.sam L.17495_GeneMap_CP018802_RG.sam L.17494_GeneMap_CP018802_RG.sam Merge SAM files into a single BAM",
+    "BAM file available at https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?run=SRR8080935 , the download BAM file is named SRR8080935_CP018802.bam"
+  ],
+  "authors": [
+    "Gregory P Harhay"
+  ],
+  "creator": "Gregory P Harhay",
+  "published_on": 1574013997,
+  "created_on": 1573246164,
+  "keywords": []
+}

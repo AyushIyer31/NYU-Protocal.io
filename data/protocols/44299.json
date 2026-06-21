@@ -1,0 +1,35 @@
+{
+  "id": 44299,
+  "title": "PBMC Stimulation with Peptide Pools and Fluorospot Assay",
+  "uri": "pbmc-stimulation-with-peptide-pools-and-fluorospot-bphjmj4n",
+  "doi": "dx.doi.org/10.17504/protocols.io.bphjmj4n",
+  "description": "{\"blocks\":[{\"key\":\"2clag\",\"text\":\"The purpose of this protocol is to stimulate PBMCs with peptide pools for 14 days followed by Fluorospot assay.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"7rqe4\",\"text\":\"For safety wans hazard warnings, please see the Safety Data Sheet (SDS).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"a2db1\",\"text\":\"Peptide pools\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fdqqv\",\"text\":\"Cryopreserved PBMC\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eklm7\",\"text\":\"Media (complete RPMI with 5% human serum)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6u986\",\"text\":\"50 mL tubes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5omqh\",\"text\":\"Water bath\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fqcgp\",\"text\":\"Centrifuge\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4d0d6\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"lien\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"2v9sh\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"e7qk9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":670946,\"guid\":\"4266EB69341F11EE9D4302C0B41BC903\",\"name\":\"Benzonase\",\"mol_weight\":0,\"sku\":\"70664-3\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":17,\"name\":\"Merck MilliporeSigma (Sigma-Aldrich)\",\"link\":\"http://sigmaaldrich.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":204130,\"guid\":\"41ACD22D341F11EE9D4302C0B41BC903\",\"name\":\"Recombinant Human IL-2 Protein\",\"mol_weight\":0,\"sku\":\"202-IL\",\"url\":\"https://www.rndsystems.com/products/recombinant-human-il-2-protein_202-il\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":236,\"name\":\"R\\u0026D Systems\",\"link\":\"http://www.rndsystems.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":350162,\"guid\":\"4251A762341F11EE9D4302C0B41BC903\",\"name\":\"Trypan Blue\",\"mol_weight\":0,\"sku\":\"T8154\",\"url\":\"https://www.sigmaaldrich.com/catalog/product/sigma/t8154?lang=en\\u0026region=GB\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":17,\"name\":\"Merck MilliporeSigma (Sigma-Aldrich)\",\"link\":\"http://sigmaaldrich.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Add 10 mL, media (complete RPMI with 5% human serum) and 20 µL, Benzonase per vial of cells to a 50 ml tube.",
+    "Place PBMC vials in 37 °C water bath for approximately 60-90s. 00:01:30",
+    "Before cells are completely thawed, add them to the prepared 50 ml tube.",
+    "Centrifuge at 1200 rpm, °C, 7 minutes .",
+    "Pour off media and resuspend in media.",
+    "Count cells and record viability (trypan blue).",
+    "Centrifuge at 1200 rpm, °C, 7 minutes .",
+    "Pour off media and resuspend according to cell count to a final concentration of 4x10 6 cells/ml.",
+    "Resuspend thawed PBMC at 4x10 6 /ml.",
+    "Add 0.5 mL, cells per well and 0.5 mL, stimulus (5µg/ml final concentration) . Plate Layout",
+    "Add media supplemented with 10 U/mL (final concentration) of rIL-2 every 3-4 days.",
+    "Day 4 – add 1 mL, media supplemented with IL-2.",
+    "Day 7 and 11 – replace 1 mL, media supplemented with IL-2 without disturbing cells.",
+    "Record peptide pool information: Donor Location Vials Cells/ml (x10^6 ) Volume (mL) Total # PBMCs (x10^6 ) Volume to reach 4x10^6 /ml (mL) % viability"
+  ],
+  "authors": [
+    "cecilia",
+    "Alessandro Sette"
+  ],
+  "creator": "Ngan Kim Tran",
+  "published_on": 1626728459,
+  "created_on": 1604729054,
+  "keywords": []
+}

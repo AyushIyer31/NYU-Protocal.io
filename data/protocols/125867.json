@@ -1,0 +1,31 @@
+{
+  "id": 125867,
+  "title": " Intracellular ROS Assay",
+  "uri": "intracellular-ros-assay-d66j9hcn",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l268e3v1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"17f7r\",\"text\":\"Accumulation of reactive oxygen species (ROS) coupled with an increase in oxidative stress has been\\nimplicated in the pathogenesis of several disease states. The role of oxidative stress in senescence is well established. Free radicals and other reactive species are constantly generated in vivo and cause oxidative damage to biomolecules, a process held in check by the existence of multiple antioxidant and repair systems as well as the replacement of damaged nucleic acids, proteins and lipids. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"d3o9t\",\"text\":\"Preparation of Reagents\\n• 1X DCFH-DA: Dilute the 20X DCFH-DA stock solution to 1X in cell culture media, preferably\\nwithout FBS. Stir or vortex to homogeneity. Prepare only enough for immediate applications.\\nNotes:\\n• 1X DCFH-DA/media solution contains 5% methanol. For cells that are sensitive to methanol,\\nwe recommend instead preparing a 0.1X (100 µM) solution of DCFH-DA in cell culture media.\\n• Due to light-induced auto-oxidation, DCFH-DA solutions at any concentration must be\\nprotected from light\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"8aq02\",\"text\":\"OxiSelect‱ Intracellular ROS Assay Kit (STA-342 , Green Fluorescence) was acquired from Cell Biolabs, INC. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":9,\"length\":1}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"758A9FFF0EE111F0A6470A58A9FEAC02\",\"name\":\":tm:\"}}}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"1s8ks\",\"text\":\"Kit Components:\\n1. 20X DCFH-DA (Part No. 234201): One 500 µL amber tube of a 20 mM solution in methanol.\\n2. DCF Standard (Part No. 234202): One 100 µL amber tube of a 1 mM solution in DMSO.\\n3. Hydrogen Peroxide (Part No. 234102): One 100 µL amber tube of an 8.821 M solution.\\n4. 2X Cell Lysis Buffer (Part No. 234203): One 20 mL bottle.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fu364\",\"text\":\"\\nMaterials Not Supplied:\\n1. Sterile DPBS for washes and buffer dilutions\\n2. Hank’s Balanced Salt Solution (HBSS)\\n3. Cell culture medium (ie: DMEM +/-10% FBS)\\n4. 96-well black or fluorescence microtiter plate\\n5. Fluorescent microplate reader capable of reading 480 nm (excitation) and 530 nm (emission)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare a 1:10 dilution series of 2’, 7’- Dichlorodihydrofluorescein (DCF) standards in the concentration range of 0 µM – 10 µM by diluting the 1 mM DCF stock in cell culture media according to instructions.",
+    "Prepare and mix all reagents thoroughly before use according to instructions. Each unknown sample should be assayed in duplicate or triplicate.",
+    "Remove the media from all wells and discard. Wash cells gently with Hank’s Balanced Salt Solution (HBSS) 2-3 times. Remove the last wash and discard.",
+    "Add 100 µL of 1X cell-permeable fluorogenic probe 2’, 7’-Dichlorodihydrofluorescin diacetate (DCFH-DA) solution to cells. Incubate at 37ºC for 60 min.",
+    "Remove solution. Wash with HBSS. Remove the last wash and discard.",
+    "Add 100 µL of medium without fetal calf serum (FCS) to each well. Add 100 µL of the 2X Cell Lysis Buffer, mix thoroughly and incubate 5 min.",
+    "Transfer 150 µL of the mixture to a 96-well plate suitable for fluorescence measurement.",
+    "Read the fluorescence with a fluorometric plate reader at 480 nm/530 nm."
+  ],
+  "authors": [
+    "Karyna Tarasova",
+    "Sinan Gültekin",
+    "iris.gerner Gerner",
+    "Florien Jenner"
+  ],
+  "creator": "Karyna Tarasova",
+  "published_on": 1743519575,
+  "created_on": 1743501258,
+  "keywords": []
+}

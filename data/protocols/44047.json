@@ -1,0 +1,24 @@
+{
+  "id": 44047,
+  "title": "BSCI:414--Lab 9: Cloning the SARS-CoV-2 Spike Protein into a E. coli     Protein Expression Vector",
+  "uri": "bsci-414-lab-9-cloning-the-sars-cov-2-spike-protei-bn9pmh5n",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"55j17\",\"text\":\"The SARS-CoV-2 spike protein does not express solubly in E. coli cells. This may be due to E. coli's inability to glycosylate or create disulfide bonds. The spike protein can be cloned into a vector containing the periplasmic localization peptide (pelB) like Novagen's pET-26 so the protein is transported to the oxidizing environment of the periplasm. Disulfide bonds may also be favored by expressing in modified E. coli cells like NEB's SHuffle strain. Glycosylation may be improved by expressing in a modified E. coli cell line capable of N-linked glycosylation like CLM24. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Explore the structure of the SARS-CoV-2 spike protein using Cov3D . Explore the spike protein using this link: https://cov3d.ibbr.umd.edu/viewer7k90",
+    "Read abstract of Zuo et al. concerning previous attempts at expressing SARS-CoV spike protein fused with SUMO tag. C-terminus of SARS-CoV spike protein expressed more solubly with SUMO tag.",
+    "Using a Gibson cloning strategy in Benchling, clone SARS-CoV-2 spike-SUMO into pET28. Open three plasmids in Benchling. Cleave all other tabs. SumoPro pET-28 Vector SARS-CoV2-Spike-delta21",
+    "Gibson cloning uses three enzymes and overlapping, complimentary bases to ligate fragments into vectors."
+  ],
+  "authors": [
+    "Harley King"
+  ],
+  "creator": "Harley King",
+  "published_on": 1604075223,
+  "created_on": 1604071719,
+  "keywords": []
+}

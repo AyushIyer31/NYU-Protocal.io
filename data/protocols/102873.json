@@ -1,0 +1,38 @@
+{
+  "id": 102873,
+  "title": "HCR in the larval zebrafish eye",
+  "uri": "hcr-in-the-larval-zebrafish-eye-dgpz3vp6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlk832dl5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"vvai\",\"text\":\"This protocol describes hybridisation chain reaction (HCR) in situs in the eyes of zebrafish larvae \\u003e4 dpf. It is broadly the same as the standard protocol from molecular instruments, with modifications to improve staining in the eye. This is necessary due to the poorer penetration of reagents into the eye compared to other tissues, such as the brain. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":59,\"length\":8}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"8hbtt\",\"text\":\"PBST:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b762o\",\"text\":\"PBS \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5o3no\",\"text\":\"0.1% Tween 20\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"44eup\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5kish\",\"text\":\"SSCT:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9sosc\",\"text\":\"5X SSC\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3ba1q\",\"text\":\"0.1% Tween 20\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Raise larvae in embryo medium containing 0.003% of 1-phenyl 2-thiourea (PTU) to inhibit pigment development. Alternatively, bleaching with H 2 O 2 can be performed post fixation, however our experience has so far been that better quality images are obtained with PTU-treated fish. PTU cannot completely inhibit RPE pigmentation at non-teratogenic concentrations, however the residual pigment still present tends to be cleared by the HCR buffers.",
+    "Fix larvae in 4% paraformaldehyde (PFA) for 1-2 hours at room temperature. Shorter fixation times improve the penetration of reagents. This is more important for antibody staining, but should help improve HCR signals as well. If the target mRNAs are extremely abundant however, a normal overnight fixation at 4 °C should not be detrimental. A caveat of reduced fixation is that the samples are consequently more fragile and should be handled gently. See the end of the protocol for an important warning related to this.",
+    "Wash 3 x 5 min with 1X PBS",
+    "Permeabilise larvae by incubation in 100% methanol for 30 min at room temperature Longer permeabilisation leads to better penetration, but compromises the histology of the eye. We find that HCR is especially prone to causing warping or distention of the retina, so we reduce permeabilisation times. As with fixation, the duration can be experimented with to optimise the protocol for your own purposes.",
+    "Rehydrate 1 wash in 50% methanol/PBST x 5 min 3 x 5 min washes in 1X PBST",
+    "Optional: If greater permeabilisation is required, proteinase K or 80% acetone treatement may be performed here.",
+    "Pre-hybridise larvae by incubation for 30 minutes in 500 µL of hybridisation buffer at 37 °C .",
+    "Prepare probe solution by adding 10 pmol of each probe set (e.g. 10 µL of 1 micromolar (µM) stock) to 500 µL of probe hybridization buffer at 37 °C .",
+    "Remove the pre-hybridization solution and add the probe solution. Incubate larvae for 2 days at 37 °C . The extra day significantly improves penetration of probes into the eye compared to a single day. However, this obviously prevents the use of quantitative dHCR.",
+    "Remove excess probes by washing embryos/larvae 4 x 15 min with 500 µL of probe wash buffer at 37 °C .",
+    "Wash embryos/larvae 2 x 5 min with 5X SSCT at room temperature.",
+    "Pre-amplify larvae with 500 µL of amplification buffer for 30 min at room temperature.",
+    "Optional: Bleaching may be performed here. Incubate larvae in a solution of 3% H 2 O 2 , 0.5% KOH in water. Monitor until most pigment has been removed and then stop bleaching by washing with PBS until no more bubbles appear in the solution.",
+    "Separately prepare 15 pmol of hairpin h1 and 15 pmol of hairpin h2 by snap cooling 5 µL of 3 micromolar (µM) stock (heat at 95 °C for 90 seconds and cool to room temperature in a dark drawer for 30 min).",
+    "Prepare hairpin solution by adding snap-cooled h1 hairpins and snap-cooled h2 hairpins to 250 µL of amplification buffer at room temperature.",
+    "Remove the pre-amplification solution and add the hairpin solution. Incubate the larvae for 2-3 days in the dark at room temperature. 2 days is usually sufficient for good staining.",
+    "Remove excess hairpins by washing with 500 µL of 5X SSCT at room temperature: (a) 2 x 5 min (b) 2 x 30 min (c) 1 x 5 min",
+    "Samples can be stored in 5X SSCT for at day or two at 4 °C . If imaging using an immersion objective, the samples should be washed gradually into the immersion medium (e.g. PBS) prior to imaging. Otherwise the salt concentration difference between the outside and inside of the larva will cause water to enter the tissue and rupture it. This is more of an issue if the samples are lightly fixed. Imagine watching the eyes you spent a week doing an in situ on slowly burst open in the middle of a stack!"
+  ],
+  "authors": [
+    "Stephen Carter"
+  ],
+  "creator": "Stephen Carter",
+  "published_on": 1720193572,
+  "created_on": 1720106755,
+  "keywords": []
+}

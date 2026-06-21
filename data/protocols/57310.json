@@ -1,0 +1,27 @@
+{
+  "id": 57310,
+  "title": "Quantification of rat stomach surface area",
+  "uri": "quantification-of-rat-stomach-surface-area-b376qrre",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvr6dmbvmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"7l4pj\",\"text\":\"This protocol describes the methods used to quantify the surface area of the rat stomach. Scale photographs of rat stomachs, which were perfusion fixed, were used to determine the surface area of the three main regions of the rat stomach which enabled estimates of total neuronal populations to be calculated. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Experiments were conducted on 4 male and 4 female Sprague-Dawley rats of 185-360 g. Procedures were approved by the University of Melbourne Animal Ethics Committee. Rats were supplied with food and water ad libitum prior to the experiments.",
+    "Rats were deeply anesthetised with an intraperitoneal injection of a mixture of ketamine (55 mg/kg) and xylazine (9 mg/kg) prior to being perfused transcardially with heparinised PBS (5 U/ml heparin, Sigma-Aldrich; phosphate buffered saline: 0.15 M NaCl in 0.01 M sodium phosphate buffer, pH 7.2) followed by fixative (2% paraformaldehyde and 0.2% picric acid in 0.1 M sodium phosphate buffer, pH 7.0).The stomach was removed and post-fixed overnight at 4°C in the same fixative, before being cleared with 3 x 10 min washes in DMSO, 3 x 10 min washes in PBS and then stored in PBS-azide (0.1% sodium azide in PBS) at 4°C.",
+    "Whole, intact stomachs were placed on a 1cmx1cm grid and photographed for cross sectional area of the full stomach. Stomachs were then cut in two along the outside edge (around the greater and lesser curvature). Nicks were cut at regular intervals around the outer edges to allow the stomachs to be pinned flat without stretching. These were also placed on a 1cmx1cm grid and photographed for 2D surface area of the whole flattened stomach. In some cases small squares of tissue were removed from the interior of the tissue before photographing, however this doesn’t affect the total measured area. Images were analysed in imageJ ( imagej.nih.gov/ij/ ). For each image, the rectangle tool was used to add regions of interest (ROIs) representing 4 of the 1cmx1cm grid squares. Height, width and area measurements were obtained and the averages were used to convert all measurements from pixels to cm or cm2 For each image the polygon tool was used to accurately outline and create ROIs representing the fundus, corpus and antrum, in order to measure the area of each region. The straight tool was also used to measure -stomach width, a direct line from the intersection of the limiting ridge and greater curvature to the intersection of the limiting ridge and lesser curvature. -stomach length, the longest direct line from the top of the fundus to the bottom of the corpus -corpus width, the shortest direct line across the corpus -antrum width, the shortest direct line across the antrum All measurements were recorded in excel.",
+    "TOTAL NEURONS PER REGION CALCULATIONS. Data from the dataset: Quantification of enteric ganglia in the three main regions of the rat stomach , doi: 10.26275/odx3-c5cv , density (neuron size, ganglion size, ganglion density) was combined with stomach area data to obtain an estimate of total neuron number per region of the stomach (fundus, antrum, corpus) A = average µm 2 per ganglion B = average µm 2 per neuron C = average total ganglia per mm 2 D = average total 2D surface area of the whole flattened stomach region in mm 2 X = calculated average total number of neurons per stomach region X = A/B*C*D The combined standard error of the mean (SEM) for X is calculated using the below formula, where ΔA is the SEM for A, and ΔB is the SEM for B etc. SEM = (((ΔA/A)^2 + (ΔB/B)^2 + (ΔC/C)^2 + (ΔD/D)^2)^0.5 )*X) TOTAL NEURONS IN WHOLE STOMACH CALCULATIONS. Using the numbers calculated above, the regions can be summed to obtain an estimate of the total neurons in the whole stomach. A = total neurons in fundus B = total neurons in corpus C = total neurons in antrum X = total neurons in whole stomach X = A+B+C The combined standard error of the mean (SEM) for X is calculated using the below formula, where ΔA is the SEM for A, and ΔB is the SEM for B etc. SEM = ((ΔA)^2 + (ΔB)^2 + (ΔC)^2)^0.5"
+  ],
+  "authors": [
+    "Madeleine Di Natale",
+    "Billie Hunne",
+    "Martin Stebbing",
+    "John Furness"
+  ],
+  "creator": "Billie Hunne",
+  "published_on": 1696990595,
+  "created_on": 1642989344,
+  "keywords": []
+}

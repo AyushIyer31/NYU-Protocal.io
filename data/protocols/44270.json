@@ -1,0 +1,30 @@
+{
+  "id": 44270,
+  "title": "BSCI:414--Lab10: Protein Translations and In Frame Insertions",
+  "uri": "bsci-414-lab10-protein-translations-and-in-frame-i-bpgnmjve",
+  "doi": "",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Find the plasmid &#34; F20_spike-SUMO/pET28 &#34; in Benchling in the BSCI:414 plasmids root folder. Open it. Copy this to a new folder with your name under &#34;BSCI:414 Lab 10.&#34; The Spike-SUMO/pET28 plasmid.",
+    "Locate the first &#34;ATG&#34; codon after the ribosomal binding site (RBS), downstream of the T7 promoter. Put the cursor to the left of base A. Now, locate the stop codon. While holding down shift, select the last base in the stop codon. NOTE: The stop codon can be difficult to find, so select the bases all the way up to the &#34;T7 Terminator&#34; sequence. You can adjust the translation after identifying the position of the stop codon. Put the cursor before the &#34;T7-Terminator&#34; sequence if unable to locate a stop codon. The sequence between the start codon and the stop codon should be selected and highlighted. Right click with your mouse pointer on the highlighted sequence and select &#34;Create Translation&gt;Forward.&#34; This is the sequence of the combined or chimeric protein Spike and SUMO and pET28.",
+    "Annotate the protein sequence when the correct translation, with a proper start and stop codon, have been identified. Again, ensure the sequence between the start and stop codons has been selected, right click on the DNA sequence, select &#34;Create Annotation&#34;. In the name put &#34;spike-sumo protein.&#34; In &#34;Annotation type&#34; coding sequence or &#34;cds&#34;. Now it&#39;s easy to identify the chimeric protein sequence by selecting the annotation.",
+    "Open a plasmid sequence you haven&#39;t seen before, &#34; F20_unknown_protein/pET28 .&#34;",
+    "Find and annotate the coding sequencing using the steps above.",
+    "Select the annotation and right click in the sequence. Click &#34;NCBI BLAST&#34; to identify the sequence. 1) Update the annotation to reflect the protein&#39;s name. 2) Rename the plasmid.",
+    "Find the polypeptide &#34;QCVN&#34; using CTRL- or COMMAND-F. Search amino acids using the wrench icon.",
+    "Place the cursor between 16V and 17N. Press &#34;G&#34; on your keyboard and watch what happens to the downstream sequence. At what position is the new stop codon?",
+    "Press &#34;G&#34; again on your keyboard. What happens to the downstream sequence?",
+    "Press &#34;G&#34; again on your keyboard. What observations can you make regarding insertions in a coding sequence?"
+  ],
+  "authors": [
+    "Harley King"
+  ],
+  "creator": "Harley King",
+  "published_on": 1604685081,
+  "created_on": 1604680398,
+  "keywords": []
+}

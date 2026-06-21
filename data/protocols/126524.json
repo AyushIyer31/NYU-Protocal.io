@@ -1,0 +1,27 @@
+{
+  "id": 126524,
+  "title": "Intracellular neuromelanin quantification",
+  "uri": "intracellular-neuromelanin-quantification-d7s49ngw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l68by5gqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"3o7ll\",\"text\":\"Protocol for quantifying intracellular neuromelanin in coronal sections of the rat brain in unstained sections (NM OD).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Calculate the optical density of neuromelanin for each cell by subtracting the background optical density from cell mean grey values",
+    "Take pictures of different cells in the pigmented area from unstained sections using the Zeiss Axio Imager.M2 microscope coupled to a camera with 100X oil objective.",
+    "Calibrate grey mean values for standard optical density values",
+    "With the free hand selections tool, draw the intraneuronal neuromelanin pigment of a neuron and measure the optical density. Measure approximately 30-40 neurons per animal",
+    "Open 8-bit images in ImageJ",
+    "Then, in the same image, trace the region of interest in a blank area and measure the optical density",
+    "Open ImageJ (RRID:SCR_003070, https://imagej.net/ )"
+  ],
+  "authors": [
+    "Miquel Vila"
+  ],
+  "creator": "Ada Ledonne",
+  "published_on": 1744901719,
+  "created_on": 1744289327,
+  "keywords": []
+}

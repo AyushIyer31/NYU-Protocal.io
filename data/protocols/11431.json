@@ -1,0 +1,32 @@
+{
+  "id": 11431,
+  "title": "Liposome binding assay",
+  "uri": "liposome-binding-assay-pefdjbn",
+  "doi": "dx.doi.org/10.17504/protocols.io.pefdjbn",
+  "description": "{\"blocks\":[{\"key\":\"1p1bh\",\"text\":\"Standard protocol to examine lipid binding of the proteins isolated from the E.coli with the GST tag\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"7vt7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"1td7v\",\"text\":\"Extrusion buffer (1x)                             25 ml\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9l2uj\",\"text\":\"Raffinose pentahydrate 250 mM          3,72 g\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ej6or\",\"text\":\"Tris (HCl) pH 7.5 25mM (1M stock)      625 ml Tris\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6uvbu\",\"text\":\"DTT 1mM (1M stock in the -20°C)        25 ml DTT\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dvrfs\",\"text\":\"N.B.: After combining all ingredients together put extrusion buffer in the microwave (@ lowest power) in order to dissolve raffinose (saturated solution)!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5o87n\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8j8er\",\"text\":\"Binding buffer (1x)                    10 ml 1x                     10ml 6x\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6ll7p\",\"text\":\"KCl 125 mM (1 M stock)             1.25 ml                       7.5 ml\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"1m0b7\",\"text\":\"Tris pH 7.5 25 mM (1 M stock)  250 ml                         1.5 ml\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"73i69\",\"text\":\"DTT 1mM (1M stock)                  10 ml                           60 ml\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"e9dsv\",\"text\":\"EDTA 0.5 mM (0.5 M stock)       10 ml                           60 ml\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"fc2vs\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Mix lipids in chloroform in the right molecular ratios. Per sample 400 nmole (total) lipid is required. For (poly) phosphoinositides add MeOH (C:M 20:9)",
+    "Dry lipid mixtures for 30’ in the speed vac. Store at -20C",
+    "Add 500ul extrusion buffer per tube with lipid mixture. Vortex and let lipids rehydrate for 1-1.5 h at rt. Sonicate samples shortly (30’’)",
+    "Extrude the lipid suspension 13 x over polycarbonate membrane (pore size 0.2 m) to produce optically clear suspension of large unilamellar liposomes",
+    "Dilute liposome suspensions in three volumes (1,5ml) of binding buffer (x1) and pellet the liposomes by centrifugation at 20 300 rpm for 15’ at 22C (Sorval SM24 = 50 000g)",
+    "Resuspend liposome pellets in binding buffer (x1) to yield stock with final concentration of 16nM ( =400 nmole lipid per 25 ul of binding buffer)",
+    "Use 500 ng of protein per 400 nmol lipid. Dilute the protein in H2O until the volume is 20.8 ul. Add 4.2 ul 6x binding buffer to get a volume of 25 ul (but first spin the protein elution to get rid of protein aggregates or sepharose beads). If you are making master-mix of your protein samples – spin the master mix after adding the protein again in order to get rid of protein aggregates and other weird stuff.",
+    "Combine 25 ul of protein solution with 25 ul of lipid suspension. Incubate protein and liposomes for 45’ at room temperature on orbital shaker.",
+    "Centrifuge samples at 16 000 g for 30’",
+    "Harvest supernatant and wash the pellet once with 500 ul 1x binding buffer. Transfer resuspended pellet to the new tube (it will significantly improve cleaning of the pellet). Centrifuge pellet samples at 16 000 g for 30’.",
+    "Resuspend the pellet in 1x SB (33 ul) and add 4x SB to the supernatant fraction (16.5 ul). Incubate all samples at 95 C for 2’. Bring 10 ul of all samples on 10% SDS-gel for Coomassie Colloidal and / or Western Blot detection."
+  ],
+  "authors": [
+    "Christa Testerink",
+    "Anne Froyd-Rankenberg"
+  ],
+  "creator": "Magdalena M Julkowska",
+  "published_on": 1553776062,
+  "created_on": 1523531169,
+  "keywords": []
+}

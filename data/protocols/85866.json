@@ -1,0 +1,41 @@
+{
+  "id": 85866,
+  "title": "Nuclei Isolation for FACS",
+  "uri": "nuclei-isolation-for-facs-cx4ixque",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx9jk4g8j/v4",
+  "description": "{\"blocks\":[{\"key\":\"8ddkp\",\"text\":\"This protocol is for purifying nuclei for downstream 10X sequencing.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4p1hr\",\"text\":\"Keep tissue/nuclei on ice as much as possible.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"f7npt\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"4tghv\",\"text\":\"0.1 ug/uL Hoechst - 4C\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Make 3 mL Homogenization Buffer by adding 2.9 mL Nuclear Isolation Media (filtered via syringe) to a 5 mL eppendorf. Then add 3 μL 100 mM DTT and 30 μL 10% Triton X-100.",
+    "Make 20 mL 10% BSA by combining 2 mL of BSA with 18 mL of MilliQ water in a 50 mL falcon tube. (4°C - 2 weeks)",
+    "Make 250 mL Nuclear Isolation Media by filling a 250 mL bottle with 200 mL of MilliQ water and then adding 2.5 mL 1M Tris, 6.26 mL 1M KCl, 1.25 mL 1M MgCl2, and 21.45 g Sucrose. Shake until sucrose is dissolved then fill to 250 mL with MilliQ water. (4°C - 2 weeks)",
+    "Make 10 mL Blocking Buffer by adding 8.2 mL MilliQ water, 1 mL 10X PBS, and 800 μL 10% BSA to a 15 mL falcon tube and vortex.",
+    "Make 20 mL 10% Triton X-100 by combining 18 mL MilliQ water with 2 mL Triton X-100 in a 50 mL tube. Vortex and then incubate at room temperature for 20 minutes. Filter it through a 0.22 μm filter with a syringe into a clean 50 mL tube. (4°C - 1 month)",
+    "Clean dounce, scalpel, and forceps using MilliQ water, ethanol, RNase Zap, then MilliQ again. The red-tape forceps are for unfixed tissue.",
+    "Get tissue sample from -80°C freezer and place on dry ice. Carve out tissue on an ice block then weigh out approximately 60 mg on a tared weigh boat.",
+    "Add tissue to dounce and push it to the bottom using 1 mL of Homegenization Buffer and the pestle. Homogenize the tissue without creating bubbles. Then add the remaining 2 mL of the Homogenization Buffer and continue to dounce until homogenized.",
+    "Pass all of the nuclei suspension through three FlowMi filters, 1000 μL at a time into a new 5 mL eppendorf.",
+    "Centrifuge at 900 g/rcf for 10 minutes at 4°C.",
+    "Determine how many controls you will be using. Typically we have four tubes: Name Antibody Fluorophore Volume 1 Control 1 NeuN PE 0.5 μL 2 Control 2 Olig2 Alexa 488 0.4 μL 3 Isotype Control IgG PE 0.5 μL 4 Isotype Control IgG Alexa 488 0.5 μL The amount of Blocking Buffer we will need to resuspend our nuclei pellet with after centrifuging depends on the amount of tubes we need. Each tube will require 50 μL of nuclei suspension, and our sample needs to have 1,000 μL of nuclei suspension left over. So in this case we will need 1000 μL + (50 μL \\times 4) = 1200 μL of Blocking Buffer for resuspending the nuclei pellet.",
+    "Add 930 μL Blocking Buffer to each of the control tubes.",
+    "After the cell homogenate is done centrifuging, discard the supernatant and resuspend the pellet in 1200 μL of Blocking Buffer. Incubate for 15 minutes on ice.",
+    "Add 50 μL of nuclei suspension to each of the four control tubes.",
+    "Add the corresponding antibodies to the control tubes: 0.5 μL NeuN-PE 0.4 μL Olig2-Alexa 488 0.5 μL IgG-PE 0.5 μL IgG-Alexa 488",
+    "Add 0.5 μL NeuN-PE and 0.4 μL Olig2-Alexa 488 to the sample tube.",
+    "Place all tubes in a rotator placed in a 4°C fridge and incubate for 30 minutes.",
+    "After incubation, spin down all of the tubes at 500 g for 5 minutes at 4°C.",
+    "If there is no visible pellet after centriguation, remove 950 μL of supernatant with a small pipette being careful not to disturb the bottom of the tube. Then resuspend the pellet in 950 μL Blocking Buffer. If there is a visible pellet , remove all of the supernatant without disturbing the pellet and then resuspend in 930 μL of Blocking Buffer.",
+    "Store tubes on ice until FACS. Bring Hoechst stock with you to FACS.",
+    "Add 20 uL Hoechst to each sample and control tube and gently mix by tapping."
+  ],
+  "authors": [
+    "Lakme Caceres"
+  ],
+  "creator": "Lakme Caceres",
+  "published_on": 1691005557,
+  "created_on": 1690992830,
+  "keywords": []
+}

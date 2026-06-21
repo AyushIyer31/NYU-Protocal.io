@@ -1,0 +1,29 @@
+{
+  "id": 72743,
+  "title": "Spinfection for Suspension and Adherent Cells",
+  "uri": "spinfection-for-suspension-and-adherent-cells-cjafuibn",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l2722xg1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"f1qr9\",\"text\":\"This protocol is for infection of adherent cells (such as HEK293t) with prepackaged lentivirus. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1js4v\",\"text\":\"Different cell lines will have different infection rates, and the infectivity of lentivirus stocks will also depend and vary. Optimization will be required to obtain infection, as well as to determine the appropriate proportion of cells and virus to obtained the desired MOI\\u003e\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"336oa\",\"text\":\"When using lentivirus, adhere to the proper safety measures and precautions. Proper care should be taken that all waste is disposed in biohazard containers or bleached. Double gloves are reccomended.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"7c711\",\"text\":\"Make and prepackage your virus.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"fm4rp\",\"text\":\"When using lentivirus, adhere to the proper safety measures and precautions. Proper care should be taken that all waste is disposed in biohazard containers or bleached. Double gloves are reccomended.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"9gfsc\",\"text\":\"Adherent Cells and appropriate media\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5o4h1\",\"text\":\"Lentivirus\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"77tni\",\"text\":\"Polybrene   \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":10,\"length\":1}],\"data\":{}},{\"key\":\"ca8hr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7o1q3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":480582,\"guid\":\"42586404341F11EE9D4302C0B41BC903\",\"name\":\"Polybrene Infection / Transfection Reagent\",\"mol_weight\":0,\"sku\":\"TR-1003-G\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":8,\"name\":\"Merck Millipore (EMD Millipore)\",\"link\":\"http://www.emdmillipore.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "For HEK293t cells, plate 50,000 cells/well in 0.5 mL of DMEM on 24-well plate the day prior.",
+    "30+ min before spinfection, make sure the table-top centrifuge is at 30 °C .",
+    "Add lentivirus and polybrene to each well.",
+    "Virus amount Virus titer will vary, so it is useful to add different amounts of virus to well to determine the appropriate titer. For a well of a 24-well plate, virus amounts can range from 5 μL to 500 μL.",
+    "Polybrene amount For most cell types polybrene increases infection efficiency and should be used at a final concentration of 8 μg/mL. Example dilution: add 0.8 uL (160 μg) polybrene stock (stock at 100mg/mL) to 0.5 mL media.",
+    "Spin at 1000 rcf for 2 hrs at 30 C. 1000 rcf, 30 °C,",
+    "It is OK if the temperature starts off between 20-30C.",
+    "Remove plate from centrifuge and place in hood. Douse with ethanol and wait 10 minutes. Place in incubator.",
+    "Infection will be achieved within 2-3 days."
+  ],
+  "authors": [
+    "Kevin Wilkins"
+  ],
+  "creator": "Kevin Wilkins",
+  "published_on": 1668480958,
+  "created_on": 1668479295,
+  "keywords": []
+}

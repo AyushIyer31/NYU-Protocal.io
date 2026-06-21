@@ -1,0 +1,30 @@
+{
+  "id": 100993,
+  "title": "Delivery via SMDNAS02",
+  "uri": "delivery-via-smdnas02-deu93ez6",
+  "doi": "dx.doi.org/10.17504/protocols.io.261ge5d97g47/v3",
+  "description": "{\"blocks\":[{\"key\":\"85di1\",\"text\":\"Instructions for delivery of investigator data via the SMDNAS02 drive.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "On July 1st 2024, URMC Genomics Research Center will be moving away from web delivery links and to direct delivery via SMDNAS (specifically SMDNAS02) for internal university users. This change in delivery method is being introduced to streamline delivery of data away from links that expire, links that are otherwise accessible by anyone, to ensure long term data storage, and to ensure data storage within a legally-restricted and more secure data transfer system. It is UR security and management policy to not use hard drives for data longevity and security for any UR research generated data.",
+    "Open a new &#34;Finder&#34; window Navigate to &#34;Go&#34; and then &#34;Connect to Server&#34; Connect to &#34;smb://smdnas02&#34; Navigate to your folder of interest You will now see the folder mounted",
+    "Open a new &#34;File Explorer&#34; window Paste &#34; \\\\SMDNAS02.urmc-sh.rochester.edu\\ &#34; into the address bar Log in using your UR recredentials Select the folder you are trying to connect to. The standard form will be &#34;GRC_LASTNAME_FIRSTINITIAL&#34;. You can right click &#34;Quick access&#34; to make a direct link to this folder for easy access.",
+    "I am receiving a &#34;permission denied&#34; error when trying to connect to my drive or I would like to grant someone in my lab access to the folder Please email smdithelp@urmc.rochester.edu",
+    "I have space within BlueHive or BHWard, is it still possible to receive my data there? Yes, this is the preferred method of delivery. If you are not already receiving data via BlueHive and are working within this environment, please reach out to urgenomics@urmc.rochester.edu or grcbioinform@urmc.rochester.edu and we can make sure to push data there in the future.",
+    "How will this be billed? These SMDNAS02 data shares are offered at no cost to UR researchers as part of a collaboration between CART and Research IT. Each investigator share will have 2TB of storage space initially. Please contact Research IT for any additional questions or needs for data storage: https://www.urmc.rochester.edu/smd/it.aspx or email at smdithelp@urmc.rochester.edu",
+    "How can I send data to collaborators outside of the university? The GRC can still provide delivery links to external users. Please contact us at urgenomics@urmc.rochester.edu or grcbioinform@urmc.rochester.edu.",
+    "Additionally, you can add this folder to favorites by dragging and dropping from your main computer drives. See the visual below",
+    "I&#39;ve received an error saying there was a problem connecting to the server &#34;smdnas02&#34; You must be on the University network or connected via VPN to access the smdnas drive.",
+    "Can I upload my own data to my delivery folder? The purpose of these folders is to serve as a delivery endpoint. If you would like to store your own data or the results of your analysis, you will need a separate space within smdnas. Please see email smdithelp for more information about getting access to a share."
+  ],
+  "authors": [
+    "Cameron Baker"
+  ],
+  "creator": "Cameron Baker",
+  "published_on": 1746455705,
+  "created_on": 1717161388,
+  "keywords": []
+}

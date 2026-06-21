@@ -1,0 +1,31 @@
+{
+  "id": 46710,
+  "title": "Build ReVisE on Ubuntu ",
+  "uri": "build-revise-on-ubuntu-bruwm6xe",
+  "doi": "dx.doi.org/10.17504/protocols.io.bruwm6xe",
+  "description": "{\"blocks\":[{\"key\":\"8vgnr\",\"text\":\"Current protocol is intended to show how to build visualization system which is called ReVisE. Such system is aimed to provide interactive visualization of large datasets hosted on a remote server or a supercomputer. The installation is described for OS Ubuntu.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"8h5ao\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"e2t3j\",\"text\":\"This protocol describes how to build ReVisE from source code. An alternative way to deploy ReVisE is to use a docker image, as described in ReVisE readme file.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":140,\"length\":13}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"F012AFF079FF11EB80148565CC65715C\",\"url\":\"https://github.com/deadmorous/revise#docker\"}}}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Make sure the following ReVisE prerequisites are installed cmake &gt;= 3.18.1 git clang &gt;= 9.0 / gcc &gt;= 7.4 Qt &gt;= 5.10 including QtSVG, QtWidgets Node.js npm D language CUDA Toolkit &gt;= 11.1 C++ Boost libraries",
+    "Go to the directory where the ReVisE repository will be downloaded and built. cd &lt;source directory of your choice&gt;",
+    "Clone ReVisE. git clone https://github.com/deadmorous/revise.git",
+    "Go to repository directory and set REVISE_ROOT_DIR environment variable to the path where ReVisE was cloned. cd revise REVISE_ROOT_DIR=$PWD",
+    "Optionally set up Qt, and probably some library paths, e.g. export QT_SELECT=qt5-11-2 export LD_LIBRARY_PATH=$(qmake -query QT_INSTALL_LIBS):$HOME/oss/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}} This step is typically not necessary. One can need it in the case Qt libraries are installed locally, in a way bypassing package manager.",
+    "Run bootstrap.sh Make sure to also build tsv-utils, necessary to process visualization performance log files ./bootstrap.sh --with-tsv-utils",
+    "Build ReVisE with performance measurement enabled by running the build script like this ./build.sh -DS3DMM_ENABLE_WORKER_TIME_ESTIMATION=ON",
+    "Open Linux terminal. To install ReVisE on a remote machine, connect to it with ssh. To do so type the following command: ssh username@hostname Skip this step if Linux terminal is already opened and the ssh connection to the remote machine is established."
+  ],
+  "authors": [
+    "Alexey Zhuravlev",
+    "Stepan Orlov",
+    "Егор Усик",
+    "Alexey Kuzin"
+  ],
+  "creator": "Alexey Zhuravlev",
+  "published_on": 1614641603,
+  "created_on": 1611739187,
+  "keywords": []
+}

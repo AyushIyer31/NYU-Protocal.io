@@ -1,0 +1,29 @@
+{
+  "id": 36564,
+  "title": "EA.hy 926 RhoA Fret with PAsssr in Flow Cytometry",
+  "uri": "ea-hy-926-rhoa-fret-with-passsr-in-flow-cytometry-bfxujpnw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bfxujpnw",
+  "description": "{\"blocks\":[{\"key\":\"dkru\",\"text\":\"RhoA Activation test with PAsssr and C3\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"77skb\",\"text\":\"Prechill PBS on ice.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"cr24r\",\"text\":\"C3, PAsssr, VEGF, DMEM, 96 well plate (noncell culture), Trypsin\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Split EA.hy 926 RhoA Sensor Cells into each well of a 6 well Plate. (Seeding density is about 300,000 cells and 1.2 million at confluence. Plate around 500,000 to have cells ready to run the next day. (You will want about 75-95% confluence the day of the experiment.)",
+    "Allow Cells to grow to 75%-95% confluence.",
+    "Day of experiment, treat cells for 4 to 8 hours depending on the conditions you want. PAsssr for CMG2 targeting should be treated at a concentration of 200 picomolar (pM) 200pM , but use 10 nanomolar (nM) PAsssr at the begining to test for the effect because it might be a subtle change. C3 (RhoA inhibitor is at 1ug/ml I believe. I would double check that number.) You will want a no treatment well, RhoA inhibition well (C3), and a CMG2 inhibition well (PAsssr). Unlableled PAsssr can be found in the frosted -20 in a box labeled PA.",
+    "Morning of, change the media to DMEM (Serfum Free) supplimented with VEGF. I am not sure what the working concentration Jeremy used for Migration, but I would check his notes and use the same concentration. VEGF can be found in the -80. I believe you will want to use 0.1 Mass / % volume BSA aswell, but I would again check jeremy&#39;s notes on that.",
+    "After the treatment times is over, asparate the media and add 0.5ml of Trypsin to each well.",
+    "Incubate 10 minutes",
+    "200 x g, 24 °C, 10 minutes Move tyrpsin plus cells to 1.5 ml tubes and spin at 200g for 10 minutes.",
+    "Asparate media and add 200ul of prechilled PBS. Pipet up and down to break up any clumped cells.",
+    "Add the 200 ul of PBS plus cells to a 96 well plate and leave on ice. Samples are ready to be run in flow."
+  ],
+  "authors": [
+    "Cody Roberts"
+  ],
+  "creator": "Cody Roberts",
+  "published_on": 1588622474,
+  "created_on": 1588621360,
+  "keywords": []
+}

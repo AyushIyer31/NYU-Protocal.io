@@ -1,0 +1,28 @@
+{
+  "id": 228447,
+  "title": "GSEA",
+  "uri": "gsea-hbb7b2irp",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2ly492qlx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"aq4oj\",\"text\":\"GSEA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "GSEA of senescence-associated pathways was performed with GSEA software (version v4.3.2; https://www.gsea-msigdb.org ) using the Molecular Signatures Database (MSigDB, version v6.2, RRID:SCR_016863)",
+    "RNA counts from control and CDDO-Me-treated samples were ranked based on the signal-to-noise ratio (SNR), calculated as (µ_treated – µ_control) / (σ_treated + σ_control).",
+    "Genes were sorted in descending order according to the SNR.",
+    "GSEA was used to calculate the enrichment score (ES), normalized enrichment score (NES), and corresponding false discovery rate (FDR).",
+    "Default GSEA settings were applied, with the permutation parameter set to &#34;gene set&#34; because of the small sample size (n &lt; 7).",
+    "Input data included RNA-seq read counts from all three cell types, a sample label mapping file, and senescence-related gene sets.",
+    "The gene set size was restricted to 10–500 genes.",
+    "Gene sets were obtained from MSigDB (senescence, SASP, and cell cycle regulation) and the manually curated SenMayo SASP gene set (Ref. main text 7, 27–30, 90)."
+  ],
+  "authors": [
+    "Maria Jose Perez J."
+  ],
+  "creator": "Federico Bertoli",
+  "published_on": 1759148801,
+  "created_on": 1759147289,
+  "keywords": []
+}

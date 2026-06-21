@@ -1,0 +1,38 @@
+{
+  "id": 85032,
+  "title": "Nuclei Isolation for 10X Multiome Sequencing",
+  "uri": "nuclei-isolation-for-10x-multiome-sequencing-cxagxibw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx3pqkg8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"4pf6g\",\"text\":\"This protocol is for isolating nuclei for 10X multiome sequencing.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"4p1hr\",\"text\":\"Keep tissue/nuclei on ice as much as possible.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"f7npt\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"4tghv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Make 3 mL Homogenization Buffer per sample by adding 2.895 mL Nuclear Isolation Media (filtered via syringe) to a 5 mL eppendorf. Then add 3 μL 100 mM DTT and 30 μL 10% Triton X-100. Add 15 uL RNAsin and invert to mix. Store on ice.",
+    "Make 20 mL 10% BSA by combining 2 mL of BSA with 18 mL of MilliQ water in a 50 mL falcon tube. (4°C - 2 weeks)",
+    "Make 20 mL 10% Triton X-100 by combining 18 mL MilliQ water with 2 mL Triton X-100 in a 50 mL tube. Vortex and then incubate at room temperature for 20 minutes. Filter it through a 0.22 μm filter with a syringe into a clean 50 mL tube. (4°C - 1 month)",
+    "Make 200 uL Blocking Buffer per sample by dividing your total desired volume of blocking buffer by 10 to get the amount of 10% BSA in uL. Add this amount to a tube and then fill the remainder with 1X PBS.",
+    "Make 250 mL Nuclear Isolation Media by filling a 250 mL bottle with 200 mL of MilliQ water and then adding 2.5 mL 1M Tris, 6.26 mL 1M KCl, 1.25 mL 1M MgCl2, and 21.45 g Sucrose. Shake until sucrose is dissolved then fill to 250 mL with MilliQ water. (4°C - 2 weeks)",
+    "Clean dounce, scalpel, and forceps using MilliQ water, ethanol, RNase Zap, then MilliQ again. The red-tape forceps are for unfixed tissue.",
+    "Get tissue sample from -80°C freezer and place on dry ice. Weigh it on a sterile, tared weigh boat.",
+    "Add tissue to dounce and push it to the bottom using 1 mL of Homegenization Buffer and the pestle. Homogenize the tissue without creating bubbles. Then add the remaining 2 mL of the Homogenization Buffer and continue to dounce until homogenized.",
+    "Pass all of the nuclei suspension through three FlowMi filters, 1000 μL at a time into a new 5 mL eppendorf.",
+    "Centrifuge at 900 g/rcf for 10 minutes at 4°C.",
+    "Discard the supernatant and resuspend the pellet in 200 μL Blocking Buffer. Incubate for 10 minutes on ice.",
+    "Add 9 uL of sample to a PCR tube and then add 1 uL of acridine orange. If sample is very concentrated, instead add 2 uL sample to 2 uL of acridine orange and 16 uL 1X PBS.",
+    "Pipette mix and then add 10 uL to a three-chamber cell counting chip and make note of the channels used (A, B, and/or C).",
+    "On the cell counter, select Fluorescence Cell Counting -&gt; Cell Lines &amp; Primary Cells, Advanced-&gt; Protocol -&gt; and then choose &#34;NUCLEI&#34; from the list of protocols. Load the protocol. If the sample is very concentrated and you are adding 2 uL, select Fluorescence Cell Counting -&gt; Cell Lines &amp; Primary Cells-&gt; Protocol -&gt; and then choose &#34;NUCLEI&#34; from the protocol list. Load the protocol. Then go to Settings and choose the appropriate number of channels. Then hit &#34;Count&#34; and then &#34;Start Count.&#34;",
+    "When the cell count is complete, you will get a reading in cells/mL. Convert this to cells/uL by dividing this number by 1,000.",
+    "Dilute this nuclei stock to a concentration of 7,000 nuclei/uL. Example: (2,000 n/uL)(500 uL) = (7,000 n/uL)(x uL) x = 2,286 uL 2,286 uL - 498 uL remaining after cell count = 1,788 uL blocking buffer needed to add to sample",
+    "If there are channels left on the cell counter chip, mark the used channels on the back and place it back in the drawer for future use.",
+    "Proceed with step 1 of the 10X Multiome protocol."
+  ],
+  "authors": [
+    "Lakme Caceres"
+  ],
+  "creator": "Lakme Caceres",
+  "published_on": 1689359547,
+  "created_on": 1689357265,
+  "keywords": []
+}

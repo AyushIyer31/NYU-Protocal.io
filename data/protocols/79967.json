@@ -1,0 +1,41 @@
+{
+  "id": 79967,
+  "title": "High-throughput nanopore sequencing of cell-free DNA",
+  "uri": "high-throughput-nanopore-sequencing-of-cell-free-d-csb7warn",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l27rjxg1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"9hglo\",\"text\":\"https://www.biorxiv.org/content/10.1101/2022.06.22.497080v1\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":59}],\"data\":{}},{\"key\":\"d91h0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5r2vt\",\"text\":\"Epigenetic characterization of cell-free DNA (cfDNA) is an emerging approach for detecting and characterizing diseases such as cancer. We developed a strategy using nanopore-based single-molecule sequencing to measure cfDNA methylomes. This approach generated up to 200 million reads for a single cfDNA sample from cancer patients, an order of magnitude improvement over existing nanopore sequencing methods. We developed a single-molecule classifier to determine whether individual reads originated from a tumor or immune cells. Leveraging methylomes of matched tumors and immune cells, we characterized cfDNA methylomes of cancer patients for longitudinal monitoring during treatment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":45,\"length\":8}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"1AA79396D29F11ED99A50A58A9FEAC02\",\"url\":\"https://www.biorxiv.org/content/10.1101/2022.06.22.497080v1\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"2otn\",\"text\":\"This protocol assumes that you are sequencing multiple cfDNA samples on the Oxford Nanopore Technologies' PromethION system.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bsgpm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eadam\",\"text\":\"This protocol also assumes you have an existing method of extracting cfDNA from plasma.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "25 µL of each Sample (usually this is half of the extracted volume, in case of reaction failure) is diluted with 25 µL of water in a PCR strip tube or microtiter plate.",
+    "A master mix of end-repair and a-tailing mix KAPA HyperPrep Kit (PCR-free) Roche Catalog #KK8505 according to vendor instructions. Briefly, 7 µL of end-repair buffer and 3 µL of end-repair enzyme is combined together to create a master mix. Use 10-20% overage.",
+    "Add 88 µL of Agencourt AmPure XP beads Contributed by users Catalog #A63880 to each well and mix thoroughly. You can use any off-brand beads. We use Mag-Bind® TotalPure NGS Omega Biotek Catalog #M1378-01 . Incubate for 00:05:00 .",
+    "Add 10 µL of master mix to each cfDNA sample to obtain 60 µL total volume. Pipet mix.",
+    "Incubate at 20 °C, 30 minutes followed by 65 °C, 30 minutes .",
+    "Add 5 µL water, 30 µL ligation buffer from KAPA HyperPrep Kit (PCR-free) Roche Catalog #KK8505 , and 5 µL of a sample barcode from Native Barcoding Expansion 96 Oxford Nanopore Technologies Catalog #EXP-NBD196 to each well. Add 10 µL ligation enzyme from KAPA HyperPrep Kit (PCR-free) Roche Catalog #KK8505 . Mix thoroughly.",
+    "Place samples in a thermocycler and incubate at 20 °C, 4.5 hours followed by 4 °C, overnight .",
+    "Pool all samples together into a 50ml centrifuge tube. Magnetize using a Dynamag-50 Separation Magnet (Magnet, Thermo Fisher Scientific, 12302D) for at least 00:20:00 . This may take much longer depending on the number of samples. The supernatant should be completely clear with no haziness.",
+    "Aspirate out the supernatant with a 50ml serological pipet, taking care to not disturb the beads. Wash the beads twice with 80% ethanol using a serological pipet by slowly pipetting the ethanol down the side of the centrifuge tube without disturbing the beads.",
+    "Pulse centrifuge the 50ml tube and magnetize. Remove any residual ethanol. Repeat this step three times.",
+    "Elute in 600 µL 10mM Tris-HCl pH 8.0 buffer. Close the centrifuge tube tightly and vortex to resuspend the beads. Incubate for 00:05:00 for full elution. Magnetize the beads and remove the elution buffer. Store in a fresh 1.5ml microcentrifuge tube.",
+    "Add 7 µL of end repair buffer and 3 µL end repair enzyme to the pooled sample. Incubate at 20 °C, 30 minutes followed by 65 °C, 30 minutes .",
+    "Perform a second bead cleanup by adding 900 µL Ampure XP beads to the pooled samples. Incubate for 00:05:00 .",
+    "Place on a DynaMag-2 (Magnet, Invitrogen, 12321D, https://www.thermofisher.com/order/catalog/product/12321D#/12321D ) and magnetize for at least 00:05:00 . Remove the supernatant and wash twice with 80% ethanol. Remove any residual ethanol by pulse centrifugation and magnetizing twice.",
+    "Elute in 50 µL 10mM Tris-HCl pH 8.0 buffer. Incubate for at least 00:05:00 for full elution. Magnetize and remove elution buffer and place in new PCR strip tube.",
+    "Add 30 µL ligation buffer from KAPA HyperPrep Kit (PCR-free) Roche Catalog #KK8505 , and 10 µL of AMX-F adapter from Oxford Nanopore Ligation Sequencing Kit Oxford Nanopore Technologies Catalog #SQK-LSK110 . Add 10 µL ligation enzyme from KAPA HyperPrep Kit (PCR-free) Roche Catalog #KK8505 . Mix thoroughly.",
+    "Incubate at room temperature for at least 01:30:00 .",
+    "Add 88 µL of Agencourt AmPure XP beads Contributed by users Catalog #A63880 to the ligation reaction. Incubate for 00:05:00 . Magnetize the beads and discard the supernatant.",
+    "Add 200 µL of SFB wash buffer from Oxford Nanopore Ligation Sequencing Kit Oxford Nanopore Technologies Catalog #SQK-LSK110 . DO NOT USE ETHANOL!!! Remove the tube from the magnet, cap it, and flick it gently with a pencil to resuspend the beads. Pulse centrifuge, magnetize, and repeat this step one more time.",
+    "Resuspend in 25 µL of EB buffer from Oxford Nanopore Ligation Sequencing Kit Oxford Nanopore Technologies Catalog #SQK-LSK110 .",
+    "Quantify the libraries using Qubit® dsDNA HS Assay Kit Thermo Fisher Scientific Catalog #Q32854 with an approximate size of 330bp (you can check the size range with E-Gel™ EX Agarose Gels 2% Contributed by users Catalog #G401002 but it&#39;s not super critical). Load 150fmol of library per PromethION flow cell using standard loading protocols."
+  ],
+  "authors": [
+    "Billy T Lau"
+  ],
+  "creator": "Billy T Lau",
+  "published_on": 1680582124,
+  "created_on": 1680579130,
+  "keywords": []
+}

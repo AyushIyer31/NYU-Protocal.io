@@ -1,0 +1,36 @@
+{
+  "id": 589,
+  "title": "Luminex Bead Coupling",
+  "uri": "Luminex-Bead-Coupling-kx3wk5",
+  "doi": "dx.doi.org/10.17504/protocols.io.ctmwk5",
+  "description": "{\"blocks\":[{\"key\":\"9qqtu\",\"text\":\"We use this process to create our own Luminex assays from standard ELISA reagents.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"bh1cf\",\"text\":\"Minimize the exposure of EDC and S-NHS to air and moisture. Use fresh aliquots for each coupling reaction and discard after use. Pierce sells individually packaged, small amounts of S-NHS that can be used in a single use fashion.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"aad5i\",\"text\":\"Activation buffer (100 mM NaH2PO4, pH 6.3)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7v4qm\",\"text\":\"Coupling buffer (50 mM HEPES, pH 7.4)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"f88l\",\"text\":\"PBS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"d3js1\",\"text\":\"PBS/1% BSA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"c4iqf\",\"text\":\"EDC (N-(3-dimethylaminopropyl)-N'-ethylcarbodiimide)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"b98oh\",\"text\":\"S-NHS (N-hydroxysulfosuccinimide)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"6ekdn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Vortex the bead stock suspension to yield a homogeneous bead suspension.",
+    "Dissolve approximately 10 mg each of EDC and S-NHS into 2 microcentrifuge tubes and resuspend in deionized water at 50 mg/mL.",
+    "Centrifuge the 100 μl bead suspension at 10,000 x g. 00:03:00",
+    "Carefully remove and discard the supernatant.",
+    "Resuspend the beads in 80 μl activation buffer.",
+    "Add 10 μl of S-NHS solution and 10 μl of EDC solution to the bead suspension.",
+    "Incubate with agitation at room temperature in the dark at roughly 900 rpm. 00:20:00",
+    "Dilute your protein stock solution with coupling buffer to a concentration of 0.1 mg/ml in a volume of 100 μl. Optimal coupling may occur at a concentration within 25-250 μg/ml. Note the protein stock cannot have any other amine groups present.",
+    "Centrifuge the beads at 10,000 x g. 00:03:00",
+    "Carefully remove and discard the supernatant.",
+    "Add the diluted protein solution.",
+    "Agitate the tube with activated beads and protein solution overnight at 4C at roughly 900 rpm in the dark (wrapped in foil).",
+    "Centrifuge the beads at 10,000 x g. Discard supernatant. 00:03:00",
+    "Wash the beads three times with PBS/1% BSA.",
+    "Resuspend the bead pellet in 1 ml PBS/1% BSA.",
+    "Determine bead concentration using Luminex and adjust amount of stock used accordingly."
+  ],
+  "authors": [
+    "Aaron Meyer"
+  ],
+  "creator": "Aaron S Meyer",
+  "published_on": 1432514371,
+  "created_on": 1424796587,
+  "keywords": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": 220054,
+  "title": "Global Inequities in Health Services Quality Research: A Systematic Review with Bibliometric and Econometric Evidence (2014–2024)",
+  "uri": "global-inequities-in-health-services-quality-resea-g25wbyg7f",
+  "doi": "dx.doi.org/10.17504/protocols.io.261ge8ypyg47/v1",
+  "description": "{\"blocks\":[{\"key\":\"d774t\",\"text\":\"This systematic review synthesizes global evidence on health services quality research's distribution, visibility, and impact over the last decade. The study also uses bibliometric and econometric methods to evaluate production patterns, collaboration, thematic focus, and citation behavior.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Assess the evolution of global research output on health services quality from 2014 to 2024.",
+    "Identify dominant research themes and geographic disparities.",
+    "Investigate the structural and content-related predictors of citation impact using panel regression models.",
+    "Inclusion: Peer-reviewed articles and reviews published between 2014 and 2024 in any language address the quality of health services.",
+    "Exclusion: Editorials, letters, conference abstracts, or non-peer-reviewed materials.",
+    "Database used: Web of Science Core Collection",
+    "Date of final search: January 10, 2024",
+    "Search terms: (&#34;health services quality&#34; OR &#34;quality of health services&#34; OR &#34;health policy&#34; OR &#34;health services standards&#34; OR &#34;service quality in health services&#34; OR &#34;patient satisfaction&#34; OR &#34;quality improvement in health systems&#34;)",
+    "Records were imported and deduplicated in Excel. Two independent reviewers screened titles and abstracts. Full-text screening was conducted independently; disagreements were resolved via consensus or third-party adjudication.",
+    "The variables extracted included publication year, language, title length, author count, number of references, keywords, abstract length, journal, region of affiliation, and citation count. The tools used were Microsoft Excel and R (Bibliometrix package).",
+    "Risk of bias was assessed using an adapted JBI Critical Appraisal Checklist for Bibliometric Reviews, which was applied to a sample of included studies for transparency.",
+    "Descriptive statistics, citation analysis, keyword co-occurrence, and collaboration network mapping were performed. Panel data regression was conducted using fixed and random effects models. Software used included R (Bibliometrix, plm) and VOSviewer.",
+    "Only one database (WoS) was used, which may have excluded relevant literature. Language bias and citation lag may influence visibility metrics. This review does not evaluate direct health outcomes or interventions.",
+    "This study is part of a doctoral research project and received no external funding. No conflicts of interest declared.",
+    "Upon acceptance for publication, the dataset and R code will be made available on an open repository (OSF or Zenodo)."
+  ],
+  "authors": [
+    "Mihail-Vasile Pruteanu",
+    "Alina Morosanu",
+    "Georgeta Zegan",
+    "Elena-Mihaela Carausu",
+    "Constantin Bogdan Mihaila"
+  ],
+  "creator": "Morosanu Alina",
+  "published_on": 1749734705,
+  "created_on": 1749732242,
+  "keywords": []
+}

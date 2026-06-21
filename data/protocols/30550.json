@@ -1,0 +1,26 @@
+{
+  "id": 30550,
+  "title": "gRNA design and cloning with SapI into Loop plasmid L2_lacZgRNA-Cas9-CsA",
+  "uri": "grna-design-and-cloning-with-sapi-into-loop-plasmi-93wh8pe",
+  "doi": "dx.doi.org/10.17504/protocols.io.93wh8pe",
+  "description": "{\"blocks\":[{\"key\":\"4fihk\",\"text\":\"This protocol explains how to design and clone the guide RNA target sequence into a L2 plasmid ready to accept the gRNA by cloning with SapI (L2 plasmid also contains a cassette to express Cas9)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8cvl0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "gRNA oligo design Order two oligos that contain the forward and reverse guide sequence plus the overhangs necessary for ligation (highlighted with bold) into L2_lacZgRNA-Cas9-CsA: oligo F : 5’- TCG -NNNNNNNNNNNNNNNNNNNN- gt 3’ oligo R : 5’- AAAac -NNNNNNNNNNNNNNNNNNNN-3’ Note: Standard de-salted oligos are ok",
+    "Oligo annealing Mix oligos with water as follow: oligo F (100μM) 1μl oligo R (100μM) 1μl water 8μl Total volume 10μl Anneal in a thermocycler using the following parameters: 37 o C for 30 min, 95 o C for 5 min and then ramp down to 25 o C at 5 o C per min. After annealing the gRNA can be directly cloned into L2_lacZgRNACas9-CsA plasmid without the need of any further processing (step 4).",
+    "Cloning into backbone vector In a 0.2 mL tube set up the following reaction: %s %s Place samples on the thermocycler and incubated using the following program: Assembly: 15 cycles: 3 minutes at 37 o C and 4 minutes at 16 o C Termination: 5 minutes at 50 o C and 10 minutes at 80 o C Transform chemically competent using 1 μL of reaction and plate on LB agar plates with 100 μg/mL spec and X-gal 40. Incubate at 37 oC for 16 h. Confirm with sequencing",
+    "Design of oligos for gRNA SapI mediated cloning into L2_lacZgRNA-Cas9-CsA vector. The L2_lacZgRNA-Cas9-CsA SapI digested vector has AGC and TTT overhangs. Therefore, oligos for gRNA should be designed such that the forward strand has a 5&#39; overhang of TCG and the reverse strand has a 5&#39; overhang of gt-AAA (addition of “gt” nucleotides is necessary to reconstitute the full sequence of the gRNA scaffold in pink).Blue arrows: SapI recognition site. Blue dashed lines: SapI cleavage site. LacZ: lacZα cassette for blue-white screening of colonies."
+  ],
+  "authors": [
+    "Eftychis Frangedakis",
+    "Marta Marta Tomaselli",
+    "Susana Sauret-Gueto"
+  ],
+  "creator": "Susana Sauret-Gueto",
+  "published_on": 1575456495,
+  "created_on": 1575408084,
+  "keywords": []
+}

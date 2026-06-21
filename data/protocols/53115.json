@@ -1,0 +1,35 @@
+{
+  "id": 53115,
+  "title": "Symbiont density quantification in live Aiptasia",
+  "uri": "symbiont-density-quantification-in-live-aiptasia-bx43pqyn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvjb9ngk5w/v2",
+  "description": "{\"blocks\":[{\"key\":\"53tfc\",\"text\":\"This protocol is designed for quantifying symbiont density during the onset of\\nsymbiosis and early proliferation. Other techniques should be used for quantifying high symbiont density.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9rhnn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"25kk0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"5nvk7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"31pig\",\"text\":\"MgCl2 hexahydrate\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7elvn\",\"text\":\"https://www.sigmaaldrich.com/US/en/substance/magnesiumchloridehexahydrate203307791186\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":85}],\"data\":[]},{\"key\":\"3pksb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"fu31\",\"text\":\"Inverted or dissecting microscope with fluorescence imaging\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"9A9F15FF119C11EC86EF0A58A9FEAC02\",\"url\":\"https://www.sigmaaldrich.com/US/en/substance/magnesiumchloridehexahydrate203307791186\"}}}}",
+  "steps": [
+    "After initial inoculation, re-plate anemones in a clean plate to avoid imaging algae that are not inside the host.",
+    "Remove half of the seawater from each well.",
+    "Add MgCl2 (3.76g MgCl2 in 50mL filtered seawater) to well for a 1:1 dilution. Note: start with one anemone at a time so you don’t overstress them, but as you get quicker you can move up to 2-3 anemones at a time.",
+    "Wait at least 10 minutes for full relaxation. If tentacles move during imaging, subsequent image processing will be difficult, so make sure tentacles are not moving excessively and you may need to wait longer than 10 minutes for full relaxation.",
+    "Spread out the anemone tentacles by pipetting the MgCl2 + seawater solution repeatedly. In the relaxation solution, the tentacles will shrink, so forcing a flow of water to the anemone expands the tentacles.",
+    "Remove ~75% of the solution from the well so that the tentacles are laid relatively flat.",
+    "Take care that the tentacles are not directly on the bottom of the plate to avoid imaging free algae from bottom of well.",
+    "Take photos at the base of tentacles near oral disk in brightfield (multiple focal points if needed) and of symbionts with green laser/red filter (again at multiple focal points).",
+    "Repeat two more times for a total of 3 tentacles per anemone.",
+    "Some movement of the tentacles is tolerated by the image processing, but excess movement will lead to duplication of algal counts. Be mindful of drift.",
+    "The whole process should take about 20-30+ minutes (from step 1), do not leave anemones in relaxation solution longer than that. Repeat until all anemones are imaged. Tip: As you begin imaging an anemone, you can add MgCl2 to the next 1-3 anemones so that you do not need to wait 10 minutes between anemones. They will be ready to image by the time you are done imaging your current anemone.",
+    "Using Adobe Photoshop and the provided macro, focus stack brightfield photos and algal photos separately for each tentacle. You should get one image for brightfield and one image of algal fluorescence.",
+    "Using ImageJ and the provided macro, hand-select tentacle area with the bf image, and manually adjust threshold of symbiont fluorescence picture to obtain symbiont count and mm2 tentacle area. You can then calculate symbionts/mm2 per tentacle. The provided macro includes a calibration for pixels to mm length, so please edit this parameter to meet your needs."
+  ],
+  "authors": [
+    "Shumpei Maruyama",
+    "OSU Weis Lab",
+    "Virginia Weis"
+  ],
+  "creator": "Shumpei Maruyama",
+  "published_on": 1631212929,
+  "created_on": 1631212752,
+  "keywords": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": 102208,
+  "title": "Creating Simulated Synapse Images",
+  "uri": "creating-simulated-synapse-images-df283qhw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygxy7n4l8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"50vn4\",\"text\":\"How to create simulated synapse images using FIJI.   \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Copy some synapse images into a folder to serve as a source of synaptic puncta. Example images are available on Zenodo at DOI: 10.5281/zenodo.12191805",
+    "Open 20240312_sim_synapse_data_sparse.ijm from the SynBot GitHub by dragging it into FIJI",
+    "Set up a larger folder for the code to use that contains a subfolder called &#34;raw_images&#34; that contains the images to use.",
+    "Choose the source folder prepared as explained in step 2.",
+    "Simulated images will be saved to the ouput folder created within the source folder from step 2. Text files are also written there which have the coordinates of the green and red puncta to serve as the ground truth for future analysis.",
+    "Change the noise multiplier in line 7 of the code if necessary. You can also adjust the minimum pixel size and threshold values to use in lines 13-20. These values should be stringent since you only want to use good puncta for making the simulated images and aren&#39;t trying to capture everything."
+  ],
+  "authors": [
+    "Justin T Savage"
+  ],
+  "creator": "Justin T Savage",
+  "published_on": 1719185232,
+  "created_on": 1718965930,
+  "keywords": []
+}

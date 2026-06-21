@@ -1,0 +1,36 @@
+{
+  "id": 86889,
+  "title": "KAPP-Sen TMC: Nuclei Suspension Preparation for snPATHO-seq",
+  "uri": "kapp-sen-tmc-nuclei-suspension-preparation-for-snp-cy4hxyt6",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4qqnzvo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"68jvc\",\"text\":\"This protocol for nuclei suspension preparation was adapted from Vallejo et al. (https://doi.org/10.1101/2022.08.23.505054) with minor changes. Once the suspension was prepared we proceeded to the Chromium X run using Chromium Fix RNA Profiling by 10x Genomics.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Hyaluronidase: 0.5mg/mlLiberase TM: 1mg/ml Collagenase D: 1mg/ml",
+    "Cut up to 2 ~25 μm-thick sections and place it in 1.5 mL Eppendorf tube. Store dry at 4°C if not used immediately. To keep it dry, you may use the cylinder containing silica beads that comes with 10x Genomics chips.",
+    "Wash sections three times with 1 mL Xylene (add to the tube with curls) for 10’ to remove the paraffin, rehydrate in sequential 1’ of 1 mL ethanol immersions (2× 100%, followed by 1× 70%, 50% and 30% ethanol). IMPORTANT: make sure paraffin is fully removed or digestion will be suboptimal.",
+    "Wash 3 times for 1&#39; (2x1 ml wash and 1x800 ul final wash) with 1x PBS + 0.5 mM CaCl2",
+    "Remove as much volume as possible, and digest tissue for 45-60’(*) at 37°C(**) in 1 mL of RPMI1640 supplemented with 0.25-1 mg/ml Liberase TM(***) + 0.25-1 mg/ml Collagenase D(***) + 0.25-1 mg/ml Hyaluronidase + 1 U/ul RNAse Inhibitor.(*) NOTE: some blocks require longer digestion time, so inspect visually and help dissociation by pipetting up and down with a P1000 pipette (pipette up/down every 10-15 mins). (**) Incubation is done in a Thermomixer 800 rpm. IMPORTANT: dissociation does not need to be complete; the objective here is to loosen up the material to facilitate the nuclei release. Dissociation completeness varies from block to block. Tissue does not need to be fully digested.",
+    "After digestion, add 400 uL of Ez Lysis Buffer to the sample, mix by inverting 5× and centrifuge for 5’ at 850xRCF at 4°C.",
+    "Resuspend the pellets (released nucs and undigested tissue) in 250 uL Ez Lysis buffer + 2% BSA + 1 U/uL RNAse Inhibitor and homogenize the sample using a douncer/pestle by stroking 10-20 times.",
+    "After homogenization add 750 uL Ez Lysis buffer + 2% BSA + 1 U/uL RNAse Inhibitor and continue disaggregating by pipetting using a P1000 pipette (10 times). Incubate on ice for 15’. At 5’ mark pipette up and down using a P1000 pipette (10 times).",
+    "Pass sample through a 70 μm PluriStrainer filter (not Flowmi!) and centrifuge the flowthrough for 5’ at 850xRCF at 4°C. This is to remove big chunky, indigested tissue.",
+    "Wash nuclei suspensions once more with 800 uL of EzLysis buffer + 2% BSA + 1 U/uL RNAse Inhibitor (very gentle).",
+    "Pellet the nuclei for 5’ at 850xRCF at 4°C and wash nuclei twice PBS 0.5x + 0.02% BSA and resuspend in 300 uL of PBS 0.5x + 0.02% BSA (resuspension volume can vary depending on pellet size). Pass sample through a 50 μm PluriStrainer filter (not Flowmi!).",
+    "Count using Luna-FX7 or similar based on dual-fluorescence such asAO/PI.",
+    "If not proceeding to the Chromium X run using Chromium Fix RNA Profiling (10x Genomics), the user could supplement the sample with 0.1x volume of Enhancer solution (10x Genomics) + 10% Glycerol, rest on ice for 10’ and cryopreserve at −80°C."
+  ],
+  "authors": [
+    "Dylan Baker",
+    "Juliana Alcoforado Diniz",
+    "Jessica Garofalo",
+    "Paul Robson"
+  ],
+  "creator": "Sergii Domanskyi",
+  "published_on": 1718919029,
+  "created_on": 1692817670,
+  "keywords": []
+}

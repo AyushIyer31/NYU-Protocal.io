@@ -1,0 +1,40 @@
+{
+  "id": 234019,
+  "title": "Imaging using 2-photon microscope through GRIN lens",
+  "uri": "imaging-using-2-photon-microscope-through-grin-len-hgsbb3wap",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l21d2jg1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"f4h0p\",\"text\":\"This is the standard protocol for 2-photon imaging with Bruker microscope through GRIN lens used for Rodrigues-Vaz and Athalye et al, 2025.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"a4j1a\",\"text\":\"-Mice were implanted with head plate and GRIN lens and habituated to being head fixed.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"15apv\",\"text\":\"-Behavior setup was prepared and placed under microscope for in vivo experiments.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":61,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"btibd\",\"text\":\"-2-photon laser and Pockels cell controller were turned on. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c56q\",\"text\":\"-If doing holographic stimulation, calibration step must have been performed before. See \\\"Holographic calibration\\\" protocol for this.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"88krb\",\"text\":\"-Wear appropriate PPE as required by your institution. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"c4a3t\",\"text\":\"•\\tBehavior setups\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f5jhv\",\"text\":\"•\\t70% ethanol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5ipqm\",\"text\":\"•\\t10% ethanol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3vgs9\",\"text\":\"•\\t2-photon laser scanning microscope (Ultima In Vivo, Bruker)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7pdh2\",\"text\":\"•\\tFemtosecond Ti:saphire laser (Chameleon Vision-S, Coherent)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8eear\",\"text\":\"•\\tLow repetition photostimulation laser (Monaco 1035-40, Coherent)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8fh76\",\"text\":\"•\\tLens paper\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dabgp\",\"text\":\"•\\tDistilled water\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Confirm laser is aligned with target at objective output.",
+    "Acquire another 1000 frames of functional and structural images – turn on red PMTs and acquisition window to do so.",
+    "At the end of the session, turn off all behavior boards and then the imaging recording.",
+    "Record session, confirming that all TTLs are being recorded in Prairie’s voltage recording as expected by design.",
+    "Turn on imaging acquisition for 60000 frames (or for as long as behavior session lasts) followed by all behavior boards.",
+    "Turn off red PMTs and red acquisition window.",
+    "Record 1000 frames of functional and structural images – green and red PMTs, respectively. These are used to identify cell types.",
+    "Find desired field of view (FOV). If matching same FOV across multiple days follow steps below: a. Load BOT file (brightness over time) that labeled ROIs from previous session – these ROIs were extracted using Suite2p with custom trained classifier to identify medium spiny neurons (MSNs). b. Find XYZ coordinates that better match last session’s FOV c. To continuously monitor the imaging power, we used a beam pickoff (Thorlabs BSF10-B) and power meter (Thorlabs PDA100A2). Pockels cell bias was adjusted accordingly to maintain imaging power throughout session.",
+    "Turn off all lights in the room and switch to using 2-photon microscope for imaging.",
+    "Swap objectives – Use 16X water-immersion Nikon objective – and find top of the GRIN lens again.",
+    "Find top of GRIN lens using 4X Nikon objective. If necessary, clean top of the lens with wet cotton tip.",
+    "Head fix mouse in behavior setup under microscope.",
+    "Convert data using “Image Ripping” software.",
+    "Turn off PMTs, rise objective and remove mouse from head-fixation.",
+    "Collect z-stack 50 um above and below imaged FOV, 2 um between each step.Each image is an average of at least 16 frames.",
+    "Transfer data from local computer to storage locations.",
+    "Clean objectives with wet lens paper.",
+    "Turn on lights in the room and take the mice to their holding room.",
+    "Turn off Pockels cell controller and laser.",
+    "If doing holographic stimulation, confirm that stimulation laser is also aligned"
+  ],
+  "authors": [
+    "Ines Rodrigues-Vaz"
+  ],
+  "creator": "Ines Rodrigues-Vaz",
+  "published_on": 1765493778,
+  "created_on": 1764699001,
+  "keywords": []
+}

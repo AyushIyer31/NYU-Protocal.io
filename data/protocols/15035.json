@@ -1,0 +1,22 @@
+{
+  "id": 15035,
+  "title": "Experimental test of the intrinsic dimensionality of Hounsfield unit measurements",
+  "uri": "experimental-test-of-the-intrinsic-dimensionality-sw3efgn",
+  "doi": "dx.doi.org/10.17504/protocols.io.sw3efgn",
+  "description": "{\"blocks\":[{\"key\":\"2crf0\",\"text\":\"Purpose: The immediate purpose is to determine the maximum number of tube voltages which are useful for acquiring information in medical computed tomography (CT) along with specific linear combinations of quantities of chemical elements which are observable with the current generation of medical CT machines. The larger purpose is to encourage the development of CT reconstruction algorithms based on the material basis described herein and, ultimately, to tie the measurand of CT to the International System of Units (SI).\\nMethods and Materials: Experimentally, we scanned samples at four tube voltages, namely 80 kV, 100 kV, 120 kV, and 140 kV on a medical CT. The samples included 30 small plastic bottles of powders containing various compounds spanning the atomic numbers from 1 to 20, along with a similar bottle of water and one of air. Using the known chemical formulas and measured masses, we formed a matrix giving the number of Hounsfield units per (mole per cubic meter) at each tube voltage for each of 13 chemical elements. Theoretically, we took the XCOM cross sections, combined them with the tungsten anode spectral model using interpolating cubic splines (TASMICS), with a one-parameter filter, and a simple detector model, and created a similar matrix for the first 20 chemical elements. In the training phase, we found a best-fit parameter. We define the molar Hounsfield unit (HU) potency as the difference in HU values that an\\nadded mole per cubic meter in a given voxel would add to the measured HU value. We built a matrix of molar potencies for each chemical element and tube voltage and performed a singular value decomposition (SVD) on these. In a validation phase, we compared the model predictions to Hounsfield unit measurements on three CT calibration phantoms taken from the literature.\\nResults: We found that we could predict the measured HU potency for the chemical elements within our model. The singular values and singular vectors of the model and powder measurements are in substantial agreement. Application of the Bayesian Information Criterion (BIC) shows that exactly two singular values and singular vectors describes the results over four tube voltages. We were able to give a good account of the HU values measured for the calibration phantoms at several tube voltages for several vendors within our model without\\nintroducing additional parameters.\\nConclusions: Measurements at two tube voltages are necessary and sufficient to extract the available material dependent information in medical CT. The linear combination of elements that can be observed using a medical CT have been characterized, providing a material basis for use in dual-energy reconstruction. This approach provides groundwork for improved reconstruction and for the link of Hounsfield units to the SI.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2g0us\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"ao6oi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"17bv1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"6c1tg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [],
+  "authors": [
+    "Zachary Levine",
+    "Adele Peskin",
+    "Andrew Holmgren",
+    "Edward Garboczi"
+  ],
+  "creator": "Adele Peskin",
+  "published_on": 1535381530,
+  "created_on": 1535123722,
+  "keywords": []
+}

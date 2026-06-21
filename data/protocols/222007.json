@@ -1,0 +1,32 @@
+{
+  "id": 222007,
+  "title": "Measurement of Lysosomal pH Using LysoSensor Yellow/Blue DND-160",
+  "uri": "measurement-of-lysosomal-ph-using-lysosensor-yello-g42xbyyfp",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g7nrx1lwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"am69v\",\"text\":\"This protocol describes the measurement of lysosomal pH  using the ratiometric dye LysoSensor Yellow/Blue DND-160. The method includes dye incubation, fluorescence measurement, and the use of a pH calibration curve to derive quantitative lysosomal pH values.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"bjm90\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eek96\",\"text\":\"·       LysoSensor Yellow/Blue DND-160 (Thermo Fisher Scientific)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9hbfs\",\"text\":\"·       1x DPBS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9sg2s\",\"text\":\"·       MES calibration buffers (pH 3.5–7.0)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1aoe4\",\"text\":\"·       eBioscience‱ Monensin Solution (1000X) (Thermo Fisher Scientific, Cat# 00-4505-51)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":19,\"length\":1}],\"data\":{}},{\"key\":\"d7ert\",\"text\":\"·       Nigericin sodium salt (Sigma, Cat# SML1779)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5re8t\",\"text\":\"·       Microplate reader capable of dual excitation/emission readings\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"6EC3ABA85C1B11F0ACCE0A58A9FEAC02\",\"name\":\":tm:\"}}}}",
+  "steps": [
+    "LysoSensor Yellow/Blue DND-160 (Thermo Fisher Scientific) 1X DPBS MES calibration buffers (pH 3.5–7.0) eBioscience‱ Monensin Solution (1000X) (Thermo Fisher Scientific, Cat# 00-4505-51) Nigericin sodium salt (Sigma, Cat# SML1779) Microplate reader capable of dual excitation/emission readings",
+    "• 20 mM MES• 20 mM NaCl• 110 mM KCl• 1x monensin• 20 μM nigericin",
+    "Culture SH-SY5Y cells in complete media. Once cells become 90% confluence, wash cells with 1XDPBS and add serum-depleted DMEM for 72 hours. This is a general protocol for measuring lysosomal pH. It can be applied to a variety of cell types, with or without serum stravation depending on the specific experimental conditions.",
+    "Wash cells once or twice with 1x DPBS.",
+    "Incubate cells (experimental cells and cells for generating pH calibration curve) with 5 μM LysoSensor Yellow/Blue DND-160 in DMEM for 00:10:00 at 37 °C",
+    "Optional: Wash cells once with 1x DPBS.",
+    "Generate a calibration curve by equilibrating LysoSensor-loaded cells in MES calibration buffers with pH values ranging from 3.5 to 7.0.",
+    "Incubate cells in each buffer for 00:10:00 at 37 °C before measuring fluorescence.",
+    "Measure fluorescence using a microplate reader at the following settings: • Excitation at 340 nm → Emission at 440 nm • Excitation at 380 nm → Emission at 540 nm",
+    "Calculate the emission ratio (440/540 nm), which correlates with lysosomal pH.",
+    "Use the calibration curve to interpolate lysosomal pH from measured emission ratios."
+  ],
+  "authors": [
+    "Ali Ghoochani",
+    "Monther Abu-Remaileh"
+  ],
+  "creator": "Ali Ghoochani",
+  "published_on": 1768098684,
+  "created_on": 1751992548,
+  "keywords": []
+}

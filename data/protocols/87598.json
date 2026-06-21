@@ -1,0 +1,39 @@
+{
+  "id": 87598,
+  "title": "DNA extraction (BOMB)",
+  "uri": "dna-extraction-bomb-czsnx6de",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj6mdnlk5/v8",
+  "description": "{\"blocks\":[{\"key\":\"a87c5\",\"text\":\"DNA extraction (BOMB)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"fh6m6\",\"text\":\"1. Lysis master mix (870 uL/sample)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b06d\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5poai\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"a5tld\",\"text\":\"2. TE buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ds0s7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"47qdm\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"2r65v\",\"text\":\"3. Lysis buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cobbj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6j1pu\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"dhp6l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"31hki\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"IMMUTABLE\",\"data\":{\"cellsMeta\":{},\"colTitles\":[\"\",\"\"],\"colWidths\":[100,100],\"data\":[[\"TE buffer\",\"225 uL\"],[\"Lysis buffer\",\"375 uL\"],[\"Ammonium acetate\",\"270 uL\"]],\"guid\":\"E76FB460D8F811ED92C859721630F557\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"TE buffer\",\"225 uL\"],[\"Lysis buffer\",\"375 uL\"],[\"Ammonium acetate\",\"270 uL\"]],\"rowHeights\":[23,23,23]}},\"1\":{\"type\":\"tables\",\"mutability\":\"IMMUTABLE\",\"data\":{\"cellsMeta\":{},\"colTitles\":[\"\",\"\"],\"colWidths\":[100,100],\"data\":[[\"Tris HCl pH8.0\",\"10mM\"],[\"EDTA\",\"1mM\"]],\"guid\":\"9DE84C20D8F411ED92C859721630F557\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"Tris HCl pH8.0\",\"10mM\"],[\"EDTA\",\"1mM\"]],\"rowHeights\":[23,23]}},\"2\":{\"type\":\"tables\",\"mutability\":\"IMMUTABLE\",\"data\":{\"cellsMeta\":{},\"colTitles\":[\"\",\"\"],\"colWidths\":[100,100],\"data\":[[\"GITC\",\"4M\"],[\"Tris HCl pH8.0\",\"50mM\"],[\"SDS\",\"0.5g\"],[\"EDTA\",\"20mM\"]],\"guid\":\"EE75C9B0D8F411ED92C859721630F557\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"GITC\",\"4M\"],[\"Tris HCl pH8.0\",\"50mM\"],[\"SDS\",\"0.5g\"],[\"EDTA\",\"20mM\"]],\"rowHeights\":[23,23,23,23]}}}}",
+  "steps": [
+    "Add 200 µL of 0.5 mm beads to 2mL screw tube",
+    "Add 200 µL of 1 mm beads to 2mL screw tube",
+    "Add 870 µL Lysis master mix to 2mL screw tube. The final look: In 11F, 4°C fridge Lysis master mix: 225 µL of TE buffer + 375 µL of lysis buffer + 270 µL of 10M ammonium acetate",
+    "Collect 20-50 mg of sample to 2mL screw tube You can collect up to 100 mg of sample if you can until you bump into the low DNA quality or PCR success rate; by then it means too many inhibitors in the sample and you have to lower the input.",
+    "Put the 2mL screw tube in mixmill for sample crush, at 3200 rpm 00:04:00 Remember to balance if you have odd number of samples",
+    "Put 2mL screw tube in centrifuge for centrifugation, at this condition: 10 x g, 25 °C, 3 minutes",
+    "Add 350 µL of isopropanol to the 1st well of 96 well plate",
+    "Add 100 µL of magnetic beads (10 mg/ml) to the 1st well of 96 deep well plate Vortex the bottle and pipetting before using magnetic beads; re-do vortex after adding to 3 samples to prevent set down of magnetic beads",
+    "Add 300-500 µL of the sample (lysate) from the 1.5mL centrifuged tube to the 1st well of 96 deep well plate Pipetting as many lysate as you can , as long as it&#39;s free of any cell debris (no solids in your tip)",
+    "Add 400 µL of isopropanol to the 2nd well of 96 deep well plate",
+    "Add 300 µL of 80% ethanol to the 3rd well of 96 deep well plate",
+    "Add 300 µL of 95% ethanol to the 4th well of 96 deep well plate",
+    "Add 100 µL of DEPC-treated water to the 6th well of 96 deep well plate",
+    "Put the prepared 96 deep well plate in the automated DNA extraction machine and select the BOMB protocol",
+    "After the extraction is done, put on the 96 magnetic plate to pellet the magnetic bead residues.",
+    "Add 300 µL of DDW to the 5th well of 96 deep well plate",
+    "Collect 100 µL of the eluted sample (avoid getting magnetic bead) as the DNA template for downstream experiments",
+    "Add 50 µL of magnetic beads (10mg/ml) to the 1st well of 96 deep well plate"
+  ],
+  "authors": [
+    "Yin-Tse Huang",
+    "Tsu-Chun Hung"
+  ],
+  "creator": "Yin-Tse Huang",
+  "published_on": 1694342632,
+  "created_on": 1694272802,
+  "keywords": []
+}

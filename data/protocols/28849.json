@@ -1,0 +1,28 @@
+{
+  "id": 28849,
+  "title": "RPA DNA Amplification using TwistAmpTM Basic",
+  "uri": "rpa-dna-amplification-using-twistamptm-basic-8erhtd6",
+  "doi": "dx.doi.org/10.17504/protocols.io.8erhtd6",
+  "description": "{\"blocks\":[{\"key\":\"dvtj1\",\"text\":\"This protocol describes the procedure to perform an RPA DNA Amplification using the TwistAmpTM Basic\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":92,\"length\":2}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"ddbon\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4um1p\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":[]},{\"key\":\"8j0ol\",\"text\":\"* TwistAmp™ Basic RPA reactions are very sensitive, it is recommended to use low copy numbers. Solutions with a concentration over 10 000 copies/µl should not be opened in the area you set up your RPA as they might contaminate all your reactions.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"1_0\":\"\",\"1_1\":\"\",\"2_0\":\"\",\"2_1\":\"\",\"3_0\":\"\",\"3_1\":\"\",\"4_0\":\"\",\"4_1\":\"\",\"5_0\":\"\",\"5_1\":\"\"},\"colWidths\":[50,50],\"data\":[[\"Primer-free rehydration buffer\",\"29.5 µl\"],[\"Primer A (10µM)\",\"2.4 µl\"],[\"Primer B (10µM)\",\"2.4 µl\"],[\"Template (DNA)*\",\"5 µl\"],[\"Nuclease-free water\",\"8.2 µl\"],[\"Total\",\"47.5 µl\"]],\"guid\":\"D1EB75E0F38511E9AF70272813C3924D\",\"legend\":{\"blocks\":[{\"data\":[],\"depth\":0,\"entityRanges\":[],\"inlineStyleRanges\":[{\"length\":72,\"offset\":0,\"style\":\"bold\"}],\"key\":\"dntth\",\"text\":\"Quantities for preparation of a 50 µl RPA reaction using TwistAmp™ Basic\",\"type\":\"unstyled\"}],\"entityMap\":[]},\"mergeCells\":[],\"rowHeights\":[23,23,23,23,23,23],\"show_headers\":true}}}}",
+  "steps": [
+    "Prepare the RPA pellet rehydration solution in a 1.5 ml tube following the table in the Materials section. If possible do a Master Mix that will then be divided.",
+    "For each sample, transfer the entire volume (47.5 µl) to a reaction pellet. Pipette up and down until the pellet is fully resuspended.",
+    "Add 2.5 µl of 280mM MgOAc to the cap of each reaction tube. MgOAc will make the reaction start, it is added to the cap so that all reactions start simultaneously when spun down.",
+    "Incubate at 39°C for 20 min For low copy numbers, incubate 4 minutes, vortex and spin briefly and incubate again for 16 minutes.",
+    "After the incubation, purify the sample if you want to run the RPA product on an agarose gel. PCR purification kits work well, but since RPA primers can be very long (60+ bp), a high cutoff is recommended. Do not open post-amplification RPA reactions in the same workspace as you set up pre -amplification RPA, or take appropriate measures to limit DNA contamination.",
+    "Do a short spin to make the MgOAc drop fall down into the tube, vortex briefly and do another quick spin.",
+    "Vortex and spin briefly."
+  ],
+  "authors": [
+    "Luc Gabel",
+    "Théo Nass"
+  ],
+  "creator": "Dana Mozaffari",
+  "published_on": 1571651762,
+  "created_on": 1571397473,
+  "keywords": []
+}

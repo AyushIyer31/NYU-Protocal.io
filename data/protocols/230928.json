@@ -1,0 +1,37 @@
+{
+  "id": 230928,
+  "title": "Characterizing Changes in the Female Voice Across the Last Century using Evidence from the Silver Screen: Protocol for a Methodological Overview",
+  "uri": "characterizing-changes-in-the-female-voice-across-hdrqb255x",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl8884rl2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"bm8m2\",\"text\":\"This protocol follows a study on assembling a longitudinal archive of female speech spanning from 1929 to 2021. High-fidelity speech samples were extracted from films, television shows, and interviews featuring actresses aged 15 to 25 years old, with a second speech sample extracted approximately 20 years later. The protocol describes how speech clips were pre-processed using TMPGEnc and GoldWave, and further standardized prior to analysis in WaveSurfer, as well as how metadata was collected.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"b6c8p\",\"text\":\"Software that may be needed for reproducing this protocol is described below.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"do526\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"53jvk\",\"text\":\"The version of software used in this procedure is listed throughout the documentation. The user should be aware that when attempting to follow the protocol using different speech analysis or audio editing software that results may vary slightly due to software differences.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"2h32b\",\"text\":\"GoldWave\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"45kpm\",\"text\":\"TMPGExpress or TMPGEnc\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4oh86\",\"text\":\"WaveSurfer v1.8.8p4\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ekk1k\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"56imo\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Speech samples were included if they met all of the following criteria: Speaker: Female actress appearing in a commercially released film, television program, or interview in archive, which included movies between 1920 and present day. Age at recording: Between 15 and 25 years for the primary decade sample; a second sample, approximately 20 years later, was included when available. Speech content: Conversational English dialogue in the actress’s natural speaking voice (non-singing, non-dramatic delivery). Audio quality: Minimal background noise, music, or strong emotional affect; at least 15 seconds of continuous speech. Data availability: Sufficient metadata available to determine age, height, and birthplace (for dialect classification).",
+    "Observations were excluded from analysis if they met any of the following conditions: Unreliable acoustic estimates: Fundamental frequency (F 0 ) extraction errors due to noise, clipping, or tracking failures that could not be corrected through manual verification. Insufficient duration: Speech segments shorter than 15 seconds after trimming pauses and non-speech intervals. Missing metadata: Incomplete or unverifiable demographic variables (e.g., unknown birth year, height, or birthplace) required for model covariates. Non-representative vocal style: Speech dominated by extreme emotional prosody, shouting, whispering, or stylized performance inconsistent with natural dialogue.",
+    "Speech samples were selected from conversational speech between a given actress and a co-star, when applicable. Recordings were extracted from scenes featuring the actress&#39;s natural speaking voice, with minimal background noise, music, or emotional intensity. Only clips with at least 15 seconds of continuous speech were retained for analysis.",
+    "Approximately 5–10 utterances per actress were selected to reduce variability introduced by noise, recording inconsistencies, or within-film context differences.",
+    "Audio tracks were standardized to 16-bit with a sampling rate of 44.1kHz.",
+    "Once encoded, actress speech segments were extracted using GoldWave, where fine trimming and analysis of speech was guided by real-time spectrograms and the corresponding waveforms in order to isolate the clean speech signal. GoldWave 7.02 https://goldwave.com/release.php GoldWave Inc.",
+    "Speaking Rate (syllables/second) was computed by dividing the transcribed syllable count by the total speech duration in seconds.",
+    "Mean fundamental frequency (F 0 ) was extracted using WaveSurfer’s Statistics Function as shown in the figure below, following procedures described in documentation from Li et al., 2021, and Sjölander &amp; Beskow, 2000.",
+    "F 0 contours were manually verified against spectrograms for tracking accuracy. Figure 1. Statistics Pane &amp; Properties Dialogue of an Actress Speech Sample using the WaveSurfer Plugin API for WaveSurfer v 1.8.8p4 Stable Release",
+    "The type of source media (Film, TV, Online Video, Interview), and year of recording were logged for each extracted sample. Actress age at the time of recording was calculated using the actress’s recorded birth year against the year of release for the respective source media. The actress’s height in inches and birthplace were extracted from IMDB biographies.",
+    "Two primary timepoints were defined for each actress: Between 15-25 years of age, and Approximately 20 years from the initial time point",
+    "Film clips were processed using TMPGEnc (also known as TMPGExpress Video Mastering Works). TMPGExpress https://tmpgenc.pegasys-inc.com/en/product/tvmw7.html Pegasys",
+    "Dialect Regions were classified using the actress’s birthplace and categorized according to the TIMIT corpus dialect regions with the following modifications: Washington, D.C., was added to the North Midland region Hawaii was classified as a separate group An additional category was created for a small subset of actresses born outside of the United States",
+    "WaveSurfer v 1.8.8p4 Stable Release was used for acoustic measure extraction. WaveSurfer 1.8.8p4 https://sourceforge.net/projects/wavesurfer/files/wavesurfer/1.8.8p4/ Center for Speech Technology, KTH Royal Institute of Technology, Karolinska Institutet and Stockholm University"
+  ],
+  "authors": [
+    "Kelvin Tran",
+    "David Ingram",
+    "Julie Liss",
+    "Visar Berisha"
+  ],
+  "creator": "Kelvin Tran",
+  "published_on": 1761725454,
+  "created_on": 1761604070,
+  "keywords": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": 95791,
+  "title": "Delay Discounting Task",
+  "uri": "delay-discounting-task-c9spz6dn",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l22dqql1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"7nes1\",\"text\":\"This protocol details the Delay discounting task.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"drq9o\",\"text\":\"This protocol can be used after following the Basic Operant Training protocol listed separately. That protocol includes information about operant box design and implementation, as well as the first three phases of training, prior to using the Delay Discounting Task (detailed here). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Refer to Basic Operant Training Protocol .",
+    "Each session contains three trial types: forced choice delayed/large, forced choice immediate/small, and free choice.",
+    "Each session contains four blocks, each using a different delay time.",
+    "Each block includes 30 trials (5 forced choice delayed/large trials, 5 forced choice immediate/small trials, and 20 free choice trials).",
+    "The first 10 trials are meant as a “refresher”, orienting the mouse to the delays and rewards associated with each choice port in that block, while the latter 20 trials are designed to reflect an animal’s preferences between small/immediate versus delayed/large rewards).",
+    "In a given mouse, the left and right sides are assigned to either delayed/large or immediate/small outcomes, but the side assignments are randomly distributed between mice.",
+    "Each trial has a fixed duration of 00:00:50 .",
+    "All trials start with a 10-second illumination of the center port light.",
+    "A center nosepoke within 00:00:10 extinguishes the light and initiates the trial.",
+    "Trials on which mice fail to nosepoke during this window are recorded as center omissions.",
+    "During forced choice delayed/large trials, cue lights on one side are illuminated for 00:00:10 , and a nosepoke at that port results in a large reward ( 15 µL ) being delivered to the center port after a delay period, as described below.",
+    "During forced choice immediate/small trials, cue lights on the other side are illuminated for 00:00:10 signaling, and a nosepoke at that port results in a small reward ( 5 µL ) delivered to the center port immediately.",
+    "During free choice trials (see Figure 1), both left and right cue lights are illuminated for 00:00:10 . Figure 1: Phase 4/Delay Discounting Task. Schematic of a free choice trial. At the start of each trial, the center port light is illuminated, and the mouse must poke there to continue the trial. Then cue lights above both left and right nosepokes are illuminated. Depending on which side port is chosen, liquid reward becomes available immediately (small reward) or after a delay (large reward).",
+    "Nosepokes on either side result in a reward, following the contingencies introduced during the &#34;refresher&#34; trials.",
+    "The delay preceding large reward delivery increases across a session (between blocks) from 0 seconds (block 1) to 00:00:03 (block 2), to 00:00:06 (block 3), to 00:00:09 (block 4).",
+    "If a mouse fails to nosepoke in one of the side ports within 00:00:10 , the cue lights are extinguished, and the trial is recorded as a side omission.",
+    "During experimental sessions, the following events are recorded for subsequent analysis. The mouse’s choice of either large or small reward-associated ports during free trials. This is typically the primary outcome measure in delay discounting.",
+    "Time of center light on.",
+    "Time of center nosepoke (combined with above, can calculate the reaction time).",
+    "Time of left or right nosepoke after the side cue lights illuminate (combined with above, can calculate choice reaction time).",
+    "Using the above, software/code can extract for each trial within a session. Reaction time from the beginning of the trial (center nosepoke time minus trial initiation time), which may reflect attention and motivation.",
+    "Choice reaction time (left/right nosepoke time minus center poke response time), which can reflect motivation regarding specific choices or within blocks."
+  ],
+  "authors": [
+    "Xiaowen Zhuang",
+    "Alexandra Nelson"
+  ],
+  "creator": "Alexandra Nelson",
+  "published_on": 1709803270,
+  "created_on": 1705908748,
+  "keywords": []
+}

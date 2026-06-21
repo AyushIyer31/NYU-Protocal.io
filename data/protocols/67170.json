@@ -1,0 +1,39 @@
+{
+  "id": 67170,
+  "title": "Protocol for vagus nerve stimulation in anesthetized pigs (subject-1)",
+  "uri": "protocol-for-vagus-nerve-stimulation-in-anesthetiz-cduas6se",
+  "doi": "dx.doi.org/10.17504/protocols.io.x54v9yxz4g3e/v1",
+  "description": "{\"blocks\":[{\"key\":\"3ad2p\",\"text\":\"The Vagus nerve innervates a number of thoracic and visceral organs. Exogenous nervous signal, for example, Vagus nerve stimulation (VNS) provides a route to modulating their function for therapeutic purposes. However, the relationship between VNS parameters and organ responses is poorly understood as evidenced by a number of failed human trials, for example, in the heart failure space.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"67qlh\",\"text\":\"This study will contributes to our understanding of the relationship between VNS parameters and the organ responses. It does so by mapping VNS parameters (at a fine resolution) to their immediate neural and cardiac effects in 2 pigs under anaesthesia.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "We do the nerve preparation and device implantation.",
+    "We validate the quality of the physiological and neural signals.",
+    "We do the setup of the BIOS A1 System (electrophysiology).",
+    "We install vital signs monitoring. [respiratory pressure, ECG, blood pressure] * Install ECG surface electrodes on the right and left front legs. Install the pressure catheter in the femoral artery.",
+    "Cuff installation: Installation of cuff A most rostrally (record1) Installation of cuff C most caudally Installation of cuff B closer to cuff A (record2) Distance from the center of cuff A to center of cuff C is 5.4mm. Distance from the center of cuff A to center of cuff B is 2.6mm.",
+    "Load BIOS Neurotool software for neural recording acquisition and stimulation.",
+    "Place cuff electrodes in saline. Take impedance measurement to confirm system is functional.",
+    "Once we validated the quality of the data acquisition systems, we start the stimulation protocol.",
+    "Make incision on the neck and expose 8cm of the left vagus nerve.",
+    "Once testing is complete, the animal is terminated.",
+    "Visually validate the quality of the vitals. For the ECG, the r-peaks should be clearly visible to ensure a good extraction of the heart rate.",
+    "Neural signals validated using BIOS neural analytics pipeline. Analyses looks for presence of underlying endogenous signals (e.g. respiration), afferent&lt;&gt;efferent velocity spectrum decomposition, among others.",
+    "We prepare the animal before the surgery.",
+    "Set the the following stimulation parameters in BIOS Neurotool software: Pulse width: 500us Train duration: 5s Stimulation shape: Biphasic with deadzone Polarity: cathodic",
+    "Conduct a grid search by doing the cartesian product of the frequency and current parameters. Frequency: {2Hz, 5Hz, 10Hz, 20Hz} Current: {0.05mA, 0.5mA, 1mA, 1.5mA, 2mA, 2.5mA} After each stimulation, wait for the physiological signals to return to baseline.",
+    "Place the pig in supine position and mark incision.",
+    "Intubate the animal et start mechanical ventilation.",
+    "Animal under anesthesia breathing naturally.",
+    "Installation of the vitals monitoring (respiratory pressure, ECG, blood pressure)."
+  ],
+  "authors": [
+    "Oliver Armitage"
+  ],
+  "creator": "Oliver Armitage",
+  "published_on": 1696596316,
+  "created_on": 1658342801,
+  "keywords": []
+}

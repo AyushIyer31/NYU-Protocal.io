@@ -1,0 +1,29 @@
+{
+  "id": 72127,
+  "title": "Construction of ultra-high-density genetic linkage map of a sorghum-sudangrass hybrid using whole genome resequencing",
+  "uri": "construction-of-ultra-high-density-genetic-linkage-cin7udhn",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn2226g5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"aepuq\",\"text\":\"   The sorghum-sudangrass hybrid is a vital annual gramineous herbage. Few reports exist on its ultra-high-density genetic map. In this study, an ultra-high-density genetic linkage map was constructed using these data. Currently, this represents the first genetic linkage map of this size, number of molecular markers, density, and coverage for Sorghum-sudangrass. The findings of this study provide valuable genome-level information on species evolution and comparative genomics analysis and lay the foundation for further research on quantitative trait loci fine mapping and gene cloning and marker-assisted breeding of important traits in Sorghum-sudangrass hybrids.\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"90tab\",\"text\":\"The genetic map was created from a mapping population of 150 individuals selected at random from the F2 generation population, which were obtained by self-cross-bagging from F1 generation population cross between ‘scattered ear sorghum’(♀) and ‘red hull sudangrass’(♂). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":102,\"length\":1},{\"style\":\"sub\",\"offset\":175,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "During the early jointing stage, young leaves from the F 2 individuals and their parents were flash frozen in liquid nitrogen. The quality of the extracted gDNA was confirmed via electrophoresis in a 0.8% (w/v) agarose gel.",
+    "The 152 gDNA samples were randomly sheared into 350 bp fragments in the Covaris breaker (Covaris, Woburn, MA, USA). Libraries were built based on Illumina&#39;s TruSeq Library Construction Kit (San Diego, CA, USA). Briefly, the gDNA fragments were processed by end repair, modified by poly-A tail and sequencing adapter addition, purified, and amplified via PCR to construct the library. Paired-end sequencing libraries were sequenced with a read length of 350 bp using an Illumina HiSeqTM PE150 platform.",
+    "Sequencing data of the parent and offspring plants were aligned to the reference genome sorghumbicolor(sorghum) (https://phytozome-next.jgi.doe.gov/info/Sbicolor_ v3_1_1 Accession ID: ABXC03000000) using Burrows-Wheeler Aligner (BWA) ( http://bio-bwa.sourceforge.net/ ). Duplicate parts (rmDup) were removed by SAMTOOLS (https://www.htslib.org). GATK (https://gatk.broadinstitute.org) was used to genotype the obtained polymorphic molecular markers, the markers were then screened out in line with the mapping population, with the conditions of parental 9× and line 3× or 4×, and count the SNPs.",
+    "SNPs were screened for quality improvement of the genetic map based on the following guidelines:",
+    "abnormal bases and genotypes were denoted as deletions (indicated by &#34;-&#34;); and Chi-square test was used to identify SNP markers with segregation distortion, which were then filtered out (significance, p &lt; 0.001).",
+    "(4) Each LG with stable SNPs was aligned to the sorghum_bicolor_v3. reference genome at the cutoff value of 1E -10 and sequence coverage rate of &gt;85% using BLASTN (https://blast.ncbi.nlm.nih.gov/).",
+    "(2) Linkage maps with 10 linkage groups (LGs) were constructed using Lepmap3 (https://sourceforge.net/projects/lep-map3). After linkage analysis, the obtained high-quality genetic markers, were divided into 10 LGs according to chromosome sequenceswith LOD values ranging from 2 to 6.",
+    "(3) The LGs were ordered along the physical location of the chromosomes using the maximum likelihood algorithm, and the genetic distance between markers was calculated using the Kosambi mapping function.",
+    "(5) We evaluated the genetic map of sorghum-sudangrass hybridusing haplotypes and heat maps. Double hybridization and deletion were manifested in the haplotype map as genotyping and labeling sequence errors. Errors in the order of markers were identified using a heat map, reflecting the recombination relationship among the markers of individual LGs. We defined the region with a higher recombination frequency than other regions as the recombination hot spot."
+  ],
+  "authors": [
+    "Qianqian Lu"
+  ],
+  "creator": "Qianqian Lu",
+  "published_on": 1669826894,
+  "created_on": 1667289747,
+  "keywords": []
+}

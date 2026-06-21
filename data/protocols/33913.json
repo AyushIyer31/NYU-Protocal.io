@@ -1,0 +1,35 @@
+{
+  "id": 33913,
+  "title": "Diagnostic accuracy of a radiographic device to assess cranial tibial translation in dogs: validation protocol",
+  "uri": "diagnostic-accuracy-of-a-radiographic-device-to-as-bdczi2x6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bdczi2x6",
+  "description": "{\"blocks\":[{\"key\":\"342aj\",\"text\":\"This protocol describes a validation procedure to assess the diagnostic accuracy of a radiographic method using a simple device, specifically designed to quantify the cranial tibial translation in dogs.\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"67pop\",\"text\":\"This protocol was used in the following publication:\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"83nuc\",\"text\":\"https://doi.org/10.1371/journal.pone.0228621\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":0,\"length\":44}],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":44}],\"data\":[]},{\"key\":\"frsae\",\"text\":\"Tambella AM, Omini L, Attili AR, Vullo C, Martin S (2020) Evaluation of cranial tibial translation in dogs: Diagnostic accuracy of radiographic method using a simple device. PLoS ONE 15(2): e0228621. (ISSN: 1932-6203) (DOI: 10.1371/journal.pone.0228621)\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"B6EF3F6C604E11EAA0250242AC110004\",\"url\":\"https://doi.org/10.1371/journal.pone.0228621\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "OBJECTIVE This study was designed to objectively quantify the in vivo cranial canine stifle translation using a radiolucent translator device keeping fixed the joint angle during the thrust. The hypothesis was that changes in cranial cruciate ligament (CrCL) integrity would result in detectable changes in tibial translation. If the hypothesis is confirmed, the validated radiographic method could be included in evaluation protocols of orthopaedic studies, potentially representing a concrete help for researchers and clinicians in the specific area.",
+    "ANIMAL RECRUITMENT Recruit dogs with naturally occurring, unilateral, complete CrCL rupture and dogs with intact CrCL.",
+    "UNIT OF ANALYSIS Consider the single stifle as unit of analysis.",
+    "ALLOCATION IN GROUPS Allocate population in three group of stifles: -canine stifles with intact CrCL (healthy, Group HE); -canine stifles with naturally occurring, unilateral, complete CrCL rupture (pathological, Group PA); -contralateral stifles of affected dogs (contralateral, Group CO).",
+    "MEASUREMENT OF THE NORMALIZED TIBIAL TRANSLATION (ΔN) Calculate normalized tibial translation (ΔN) using a special radiographic translator device.",
+    "IDENTIFICATION OF CUT-OFF VALUES Identificate of ΔN cut-off between PA and clinically healthy stifles: the sensitivity is privileged identifying all the pathologic stifles avoiding false negatives. Identificate of the ΔN cut-off between HE and CO groups: an equal weight is given to sensitivity and specificity, obtaining the cut-off using receiver-operating characteristic (ROC) methodology.",
+    "CALCULATION OF OUTCOME PARAMETERS OF DIAGNOSTIC ACCURACY Compare data from the three groups calculating sensitivity, specificity, positive and negative predictive values, accuracy and ROC analysis with measurement of area under the ROC curve (AUC).",
+    "EVALUATE THRESHOLD AND PREDICTIVITY OF ΔN ON GROUPS Use generalized linear mixed models (GLMM), with binomial distribution family and logit link, to evaluate thresholds and predictivity of ΔN on groups, considering the “group” as fixed factor and the “ID of the dog” as random factor. Build the ROC curves using the predictions of the GLMMs.",
+    "QUANTIFY THE DIFFERENCES OF ΔN ON THE THREE GROUPS Use a linear mixed model (LMM) fitted considering “group” and “DJD” as fixed factors and the “ID of the dog” as random factor to quantify the differences of ΔN on the three groups. Perform a post-hoc multiple comparisons of means with Tukey contrasts test.",
+    "EVALUATE POTENTIAL WITHIN-DOG ASSOCIATION Use a linear model with “time” since CrCL rupture and “DJD” (degenerative joint disease) as predictors, together with their interaction, to evaluate potential within-dog association between joint instability and chronicity or the presence of DJD. Obtain significance of variables with family-wise confidence interval estimation.",
+    "REFERENCE This protocol was validated in the following article: Tambella AM, Omini L, Attili AR, Vullo C, Martin S (2020) Evaluation of cranial tibial translation in dogs: Diagnostic accuracy of radiographic method using a simple device. PLoS ONE 15(2): e0228621. (ISSN: 1932-6203) (DOI: 10.1371/journal.pone.0228621) https://doi.org/10.1371/journal.pone.0228621"
+  ],
+  "authors": [
+    "Adolfo Maria Tambella",
+    "Stefano Martin",
+    "Luca Omini",
+    "Cecilia Vullo",
+    "Anna Rita Attili"
+  ],
+  "creator": "Adolfo Maria Tambella",
+  "published_on": 1583572856,
+  "created_on": 1583570131,
+  "keywords": []
+}

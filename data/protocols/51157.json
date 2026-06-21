@@ -1,0 +1,33 @@
+{
+  "id": 51157,
+  "title": "Nissl Staining and Imaging of Mouse Brain Tissue for Slide-seq Registration",
+  "uri": "nissl-staining-and-imaging-of-mouse-brain-tissue-f-bv7vn9n6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bv7vn9n6",
+  "description": "{\"blocks\":[{\"key\":\"dru8l\",\"text\":\"This is a protocol that describes the steps used for staining adjacent tissue sections when using Slide-seq on mouse brain samples. The adjacent tissue sections are typically 10 microns before and after the tissue slice use for the slide-seq array. Standard imaging settings on most acquisition devices can be used for capturing these images.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"em9jb\",\"text\":\"Histogene™ Staining Solution (Thermofisher, KIT0415)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"m7it\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9hlts\",\"text\":\"UltraPure Distilled Water (Invitrogen, 10977015) \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"66f47\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3s09h\",\"text\":\"Clear Frozen Section Compound (VWR, 95057-838)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3ncdj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d3tqn\",\"text\":\"200 Proof Pure Ethanol (KOPTEC, 64-17-5)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2t73m\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5p0dh\",\"text\":\"Permount Mounting Medium (Electron Microscopy Sciences, 17986-05)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fbc6g\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9es2u\",\"text\":\"100% Xylene (Sigma-Aldrich, 214736)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9nrln\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Images were collected using a Keyence BZ-X810 series All-in-one Fluorescence microscope. With BZ-X800 viewer software, each stained slide was imaged on the Brightfield/Phase contrast channel using a 20X objective. The stained region of interest was selected by specifying the XY positions of the tissue outer edges and adjusting the Z-stack function to auto-focus prior to each image capture.",
+    "Equilibrate fresh frozen tissue to -20°C in a cryostat (Leica CM3050S) for 20 minutes. Mount the tissue onto a cryostat chuck with Optimal Cutting Temperature compound (O.C.T. compound), align tissue at a 5° cutting angle, and section 10 μm in thickness per tissue slice.",
+    "Using a Superfrost plus slide that has been pre-cooled to -20 o C, collect the tissue section by carefully placing it and gently flattening it with the brush on top of the slide. Without removing the slide from the cryostat, place a gloved finger underneath the tissue on the back side of the slide and melt the tissue section to adhere it to the glass slide. In order to avoid tissue folding or wrinkling, start melting at one corner and drag your finger across the section. Store slides at -20 until step 3.",
+    "Air dry tissue slide and fill seven plastic slide jars as follows: 1. 70% ethanol 2. distilled water 3. distilled water 4. 70% ethanol 5. 90% ethanol 6. 100% ethanol 7. 100% Xylene",
+    "Place the slide in 70% ethanol plastic slide jar for 1 minute. Using glass forceps transfer the slide to a plastic slide jar with distilled water and wash slide for 30 seconds. Remove the tissue slide and wipe off excess water with a Kimwipe towel to create a small hydrated area around the tissue.",
+    "Place the slide horizontally and add enough Histogen stain (Histogene™ Staining Solution, KIT0415, Thermofisher) to cover the tissue completely. Stain between 3-4 minutes, tap off excess stain, and then place the slide back to a slide jar with distilled water to remove Histogene stain and begin destaining. Destaining from this point forward is empirical dependent upon tissue region and type. Estimates of 30 seconds to one minute per solution will generally yield good staining contrast.",
+    "Transfer slide and submerge the slide in slide jar with 70% ethanol for ~30 seconds. Then transfer briefly to slide jar with 90% ethanol for ~30 seconds.",
+    "Transfer the slide to the slide jar with 100% ethanol for about 1 minute. Destaining is comparatively slower in 100% ethanol.",
+    "In a fume hood, transfer the slide in a slide jar with 100% Xylene for 1-2 minutes. Mount the slide by adding 2-3 drops of Permount around the tissue and placing a coverslip avoiding bubbles. Permount can be diluted with xylene to create a less viscous solution that is easier to work with. Allow the slide to air dry in horizontal position overnight.",
+    "The stitching of captured image series were made with BZ-X800 analyzer software. The images were exported as Big TIFF files and edited for cropping, contrast, and brightness with Photoshop software."
+  ],
+  "authors": [
+    "Karol Balderrama",
+    "Chuck Vanderburg",
+    "Evan Murray",
+    "Evan Macosko"
+  ],
+  "creator": "Karol Balderrama",
+  "published_on": 1626288709,
+  "created_on": 1625067662,
+  "keywords": []
+}

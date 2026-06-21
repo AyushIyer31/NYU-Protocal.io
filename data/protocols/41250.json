@@ -1,0 +1,29 @@
+{
+  "id": 41250,
+  "title": "LessTests",
+  "uri": "lesstests-bkiakuae",
+  "doi": "dx.doi.org/10.17504/protocols.io.bkiakuae",
+  "description": "{\"blocks\":[{\"key\":\"64snh\",\"text\":\"LessTests SARS-CoV2 general diagnosis protocol, using LessTests software solution.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4u1hi\",\"text\":\"The LessTests method is agnostic to the labware, and has already been demonstrated as successful using multiple device and kit combinations. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8jsrm\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Sample collection Standard sample collection and transport using swabs",
+    "LessTests Encoder Determines which samples are mixed into each pool. Optimizes pool number and other parameters to achieve best efficiency improvement.",
+    "Pooling using LessTests Method Automated liquid handling workbench Pooling script provided by LessTests",
+    "Nucleotide extraction RNA extraction kit Nucleotide extraction system",
+    "Pool rRT-qPCR rRT-PCR master mix qPCR reaction plates SARS-CoV2 E, N, RdRP primers SARS-CoV2 E, N, RdRP probes Real time PCR system with software",
+    "LessTests decoder Deciphers which sample are positive based on which pools were positive.",
+    "Inconclusive sample rRT-qPCR When multiple samples can account for a positive results, they are flagged for an additional separate rRT-qPCR",
+    "Limit of detection Determine maximal number of samples-per-pool. The results apply to the specific diagnostic setup tested, so needs to be done with the same equipment and kits used for later stages. 2.1 Serial dilutions of samples with known Ct values. 2.2 Nucleotide extraction 2.3 rRT-qPCR"
+  ],
+  "authors": [
+    "Ruth Polachek",
+    "doreen"
+  ],
+  "creator": "doreen",
+  "published_on": 1600246689,
+  "created_on": 1598825569,
+  "keywords": []
+}

@@ -1,0 +1,41 @@
+{
+  "id": 229673,
+  "title": "Protocol — LysoTracker® Red DND-99 Live-Cell Staining \u000026 HCS Analysis",
+  "uri": "protocol-lysotracker-red-dnd-99-live-cell-staining-hcihb2ub7",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlky211g5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"ykpty\",\"text\":\"Live-cell lysosomal staining with LysoTracker® Red DND-99 followed by high-content confocal imaging (Opera Phenix® Plus) and automated quantification in Harmony®/Columbus®.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"weceb\",\"text\":\"- Acquire channels sequentially: DAPI (Hoechst) — 405 nm laser ~30% / 100 ms; 568 nm (LysoTracker) — ~70% / 100 ms.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"pgzlh\",\"text\":\"- Avoid saturation; keep instrument settings consistent across plates.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ks8lz\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"zqwdq\",\"text\":\"Analysis — Harmony®/Columbus®\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":33}],\"entityRanges\":[],\"data\":{}},{\"key\":\"e3dv6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2ri4l\",\"text\":\"- Find Nuclei on Hoechst channel (tune intensity/size to exclude debris/clumps).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"h0yde\",\"text\":\"- Find Cytoplasm around each nucleus using 568 channel; apply intensity filter 200–100,000 a.u.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"gxklt\",\"text\":\"- Find Spots in cytoplasm on 568 channel to detect LysoTracker®-positive puncta (tune size/intensity).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f4ltl\",\"text\":\"- Compute total spots per cell: normalise spot counts by nuclei count in each field.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"hiilj\",\"text\":\"- Export per-well spot-per-cell metrics for statistics.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"gicmr\",\"text\":\"- Equilibrate plate and medium to 37°C and 5% CO₂.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"lmfbu\",\"text\":\"- Prepare LysoTracker® working solution: 60 nM in complete medium (fresh).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"t8ibm\",\"text\":\"- Prepare Hoechst 33342 working solution: 1 µg/mL in medium.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"met9i\",\"text\":\"Handle fluorescent dyes with care; protect from light. Follow institutional live-cell handling guidelines.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"19957\",\"text\":\"- LysoTracker® Red DND-99 (Life Technologies®, Cat# L7528)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"l3ic1\",\"text\":\"- Hoechst 33342 (ThermoFisher Scientific®, Cat# H3570)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"wx98e\",\"text\":\"- Complete culture medium; pre-warmed PBS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"v8jiz\",\"text\":\"- 96-well imaging plates (optical bottom)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"nlsqu\",\"text\":\"- Opera Phenix® Plus HCS System (RRID:SCR_021100)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b3cmi\",\"text\":\"- Harmony® High-Content Imaging \\u000026 Analysis Software (RRID:SCR_018809)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Add LysoTracker® Red working solution to wells (final 60 nM). Incubate 37°C for 50 min (protected from light).",
+    "During the final 10 min, add Hoechst 33342 to 1 µg/mL.",
+    "Gently wash once with pre-warmed PBS to remove unbound dye.",
+    "Add phenol-red-free medium (optional) for imaging.",
+    "Objective: 63× water; Mode: Confocal.",
+    "Fields per well: 5–10 random.",
+    "Acquire channels sequentially: DAPI (Hoechst) — 405 nm laser ~30% / 100 ms; 568 nm (LysoTracker) — ~70% / 100 ms.",
+    "Avoid saturation; keep instrument settings consistent across plates.",
+    "Find Nuclei on Hoechst channel (tune intensity/size to exclude debris/clumps).",
+    "Find Cytoplasm around each nucleus using 568 channel; apply intensity filter 200–100,000 a.u.",
+    "Find Spots in cytoplasm on 568 channel to detect LysoTracker®-positive puncta (tune size/intensity).",
+    "Compute total spots per cell: normalise spot counts by nuclei count in each field.",
+    "Export per-well spot-per-cell metrics for statistics.",
+    "Robust punctate 568-nm signal marking acidic organelles; per-cell spot counts enabling group comparisons.",
+    "Weak staining → verify dye concentration and incubation time; avoid over-washing.",
+    "High background → reduce exposure or dye concentration; ensure sequential acquisition."
+  ],
+  "authors": [
+    "Sara Lucas",
+    "Giuseppe Uras",
+    "Sofia Koletsi",
+    "federico fierli",
+    "david chau",
+    "anthony schapira"
+  ],
+  "creator": "Sara Lucas",
+  "published_on": 1760362641,
+  "created_on": 1760362406,
+  "keywords": []
+}

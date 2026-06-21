@@ -1,0 +1,31 @@
+{
+  "id": 218907,
+  "title": "In-vitro Human or Mouse S9 intestinal stability assay",
+  "uri": "in-vitro-human-or-mouse-s9-intestinal-stability-as-gzz3bx78p",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g79er8vwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"4m12\",\"text\":\"A stability intestinal S9 human or mouse assay, or intestinal S9 stability assay, is an in vitro test used to assess the metabolic stability of a compound in the presence of human or mouse intestinal enzymes. It simulates the breakdown of a compound by enzymes found in the small intestine, providing insights into how well it might be absorbed and metabolized in the body. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"3nkou\",\"text\":\"Always wear appropriate PPE for this protocol\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cescn\",\"text\":\"Refer to Material Safety Data Sheets for additional safety and handling information.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"amrts\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "The Human S9 intestinal stability assay is run in 96-well plates on a Thermomixer set to 39°C and 700 rpm This protocol can be used with the following S9 fraction material: Human Mouse",
+    "The Half-life (t1/2) and Intrinsic Clearance (CLint) are calculated",
+    "The test Compounds are diluted to 100µM using methanol in a separate plate",
+    "The quench plate is prepared by adding 400µL of cold methanol with internal standard to eachrequired well.",
+    "Throughout, mixing at 700rpm is maintained except during sampling.",
+    "Separately, 15mM NADPH and 30mM UDPGA are prepared and mixed to form a cofactor solution, with 46.5µL added to each well.",
+    "The S9 incubation mix (300µL) is added to the incubation plate and pre-incubated for 10 minutes.",
+    "A 500mM MgCl₂ solution is made in phosphate buffer, then combined with alamethicin and sonicated before adding the S9 fraction to create the S9 incubation mix.",
+    "The reaction is initiated by adding 3.5µL of compound to column 1, immediately quenched by transferring 25µL to the cold quench plate (Time 0), and repeated for subsequent columns at defined time points (0, 5, 10, 15, 25, 35 min).",
+    "After incubation, the quench plate is centrifuged at 4000rpm for 30 minutes at 4°C, and 150µL of the supernatant is transferred to a fresh LC-MS plate, avoiding disruption of the pellet.",
+    "Each well is then brought to 300µL with 30% methanol, and Method (MS) blanks are prepared by adding 300µL of 30% methanol to column 7."
+  ],
+  "authors": [
+    "Nick Lynch"
+  ],
+  "creator": "Nick Lynch",
+  "published_on": 1754228029,
+  "created_on": 1748183217,
+  "keywords": []
+}

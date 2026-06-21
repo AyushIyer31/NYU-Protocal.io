@@ -1,0 +1,40 @@
+{
+  "id": 220539,
+  "title": "TH-TdTomato expression measurement by FACS",
+  "uri": "th-tdtomato-expression-measurement-by-facs-g3k3bykyp",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvjbk7xgk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"a7io4\",\"text\":\"This protocol outlines the preparation and flow cytometry-based analysis of midbrain neurons differentiated from Td-Tomato reporter hPSCs.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Differentiate TH-TdTomato lines into midbrain neurons in 6-well plates until the desired differentiation day .",
+    "Confirm cell morphology and fluorescence (if applicable) before harvesting.",
+    "Gently lift neurons using Accutase supplemented with ROCK inhibitor (Y-27632). 1ml per well of a 6w plate",
+    "Incubate as needed (typically ~5 minutes) at RT until cells detach.",
+    "Collect cells into tubes with twice the volume of culture medium containing ROCK inhibitor.",
+    "Remove media and wash cells once with PBS",
+    "Centrifuge the cell suspension at 300 × g for 5 minutes at room temperature.",
+    "Carefully remove the supernatant.",
+    "Resuspend the pellet in FACS buffer: PBS + 1x B-27 supplement + ROCK inhibitor (Y-27632) + DAPI (final concentration 1µg/ml) for live/dead discrimination",
+    "Keep cells on ice from this step forward",
+    "Pass the resuspended cells through a 35 µm cell strainer into FACS-compatible tubes",
+    "Analyze TdTomato fluorescence using a flow cytometer with appropriate excitation/emission settings (e.g., 554/581 nm) and DAPI (Ex/Em ~358/461 nm).",
+    "Gating Strategy:",
+    "Make sure to include a sample with no DAPI for proper gating",
+    "FSC/SSC: Gate to exclude debris and cell clumps.",
+    "DAPI-negative cells: Gate for live cells excluding DAPI+ dead cells",
+    "TdTomato fluorescence: Set gate using Td-tomato negative line Identify TdTomato+ neurons and MFI from live population.",
+    "For gating: collect TdTomato-negative line, or undifferentiated iPSC as a negative control to establish the TdTomato gate.",
+    "Record at least 10,000 events from live population",
+    "Analysis with proper software (FlowJo)"
+  ],
+  "authors": [
+    "Elena Coccia"
+  ],
+  "creator": "Elena Coccia",
+  "published_on": 1751321660,
+  "created_on": 1750270867,
+  "keywords": []
+}

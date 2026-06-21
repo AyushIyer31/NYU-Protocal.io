@@ -1,0 +1,42 @@
+{
+  "id": 43598,
+  "title": "Staining of single-cell suspensions for scMEP mass cytometry analysis",
+  "uri": "staining-of-single-cell-suspensions-for-scmep-mass-bntnmeme",
+  "doi": "dx.doi.org/10.17504/protocols.io.bntnmeme",
+  "description": "{\"blocks\":[{\"key\":\"5f274\",\"text\":\"Staining of single-cell suspensions for scMEP analysis by mass cytometry (CyTOF). This protocol includes 1) surface staining for 30min at RT, 2) PFA-fixation for 10min at RT, 3) MeOH-based permeabilization for 10min on ice 4) intracellular staining for 1h at RT and 5) DNA intercalation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"T4QQ6\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"sMdxS\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"xtWL2\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":649008,\"guid\":\"4266763C341F11EE9D4302C0B41BC903\",\"name\":\"Cell-ID™ Intercalator-Rh—500 µM\",\"mol_weight\":0,\"sku\":\" 201103A\",\"url\":\"https://www.fluidigm.com/reagents/proteomics/201103a-cellid-intercalator-rh--500micrometer\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":291,\"name\":\"Fluidigm\",\"link\":\"https://www.fluidigm.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":649009,\"guid\":\"4266768D341F11EE9D4302C0B41BC903\",\"name\":\"EQ™ Four Element Calibration Beads\",\"mol_weight\":0,\"sku\":\" 201078\",\"url\":\"https://www.fluidigm.com/reagents/proteomics/201078-eq-four-element-calibration-beads--100ml\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":291,\"name\":\"Fluidigm\",\"link\":\"https://www.fluidigm.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Prepare single cell suspensions in FACS tubes as described in the following protocol: Preparation of single-cell suspensions for scMEP mass cytometry analysis by Felix J Hartmann",
+    "Perform palladium-based barcoding as described in the following protocol: (still needs to be written)",
+    "Prepare surface antibody mastermix. Note: Antibodies were titrated for 3 million cells, if more cells are to be used, scale antibody amounts accordingly (i.e. use 2x antibodies for up to 6 million cells). Combine all surface antibodies and supplement volume to a total of 50 µL with Cell Staining Medium (CSM: PBS + 0.5% BSA + 0.02% sodium azide). If antibody volume succeeds 50 µL , no CSM addition is needed.",
+    "Add antibody mastermix to cells and mix carefully by pipetting up and down, followed by a gentle vortex. Incubate for 00:30:00 at Room temperature .",
+    "Add 2 mL of CSM, mix carefully and centrifuge 600 x g, Room temperature, 5 minutes, Reduce to 300g when working with live cells .",
+    "Aspirate supernatant and dissolve pellet by flicking tube or vortexing.",
+    "Dilute 16% PFA to 1.6% in PBS. PFA from Electron Microscopy Sciences has been shown to work well. Opened 16% PFA can be stored airtight and light-protected (e.g. in black falcon tube) for up to two weeks. Diluted 1.6% PFA should be discarded after use. Reagents: 16% Paraformaldehyde (PFA) Fisher Scientific Catalog #50-980-487",
+    "Add 1 mL of freshly diluted 1.6% PFA to loosened cells, mix well and incubate for 00:10:00 at Room temperature to fix antibodies onto cells. Also complete this section when working with pre-fixed cells.",
+    "Add 3 mL, or whatever your vessel allows of Cell Staining Medium (CSM) and centrifuge 600 x g, 4 °C, 5 minutes . Aspirate supernatant and loosen cell pellet by flicking and vortexing.",
+    "Note: MeOH based permeabilization has been found to work well with intracellular metabolic antibodies although most are suspected to work with saponin-based approaches as well. While vortexing cells, drop-wise add 1 mL of pre-cooled ( 4 °C ) MeOH and immmediately transfer cells On ice to incubate for 00:10:00 .",
+    "Following incubation, add 3 mL, or whatever your vessel holds of CSM and centrifuge 600 x g, 4 °C, 5 minutes . Aspirate supernatant and loosen cell pellet.",
+    "Repeat washing by adding 3 mL, or whatever your vessel holds of CSM and centrifuge 600 x g, Room temperature, 5 minutes . Aspirate supernatant and loosen cell pellet.",
+    "Prepare intracellular antibody mastermix. Note: Antibodies were titrated for 3 million cells, if more cells are to be used, scale antibody amounts accordingly (i.e. use 2x antibodies for up to 6 million cells). Combine all intracellular antibodies and supplement volume to a total of 50 µL with CSM. If antibody volume succeeds 50 µL , no CSM addition is needed.",
+    "Add antibody mastermix to cells and mix carefully by pipetting up and down, followed by a gentle vortex. Incubate for 01:00:00 at Room temperature . Flick tube carefully after approximately 00:30:00 to ensure proper mixing of antibodies and cells.",
+    "Add 2 mL of CSM, mix carefully and centrifuge 600 x g, Room temperature, 5 minutes . Aspirate supernatant and loosen pellet.",
+    "Prepare intercalation solution: 1.6% PFA in PBS + 0.5 micromolar (µM) of Intercalator-Rh. Note: Iridium-based DNA intercalators can be used alternatively, however they do tend to spill into adjacent platinum channels which are often used here for live/dead discrimination as well as for antibody channels. Rhodium DNA intercalation is compatible with palladium-based barcoding. When using for the first time, aliquot Rh-intercalator and store at -20 °C until use Rh-intercalator can be thawed and re-frozen multiple times Cell-ID™ Intercalator-Rh—500 µM Fluidigm Catalog # 201103A",
+    "Add 1 mL of intercalation solution for each 10 million cells and incubate either 00:20:00 at Room temperature or Overnight at 4 °C .",
+    "First CSM wash step: Add 3 mL, or whatever the vessel holds of CSM to the cells and centrifuge 600 x g, Room temperature, 5 minutes . Aspirate supernatant and loosen cell pellet.",
+    "Second ddH2O wash step: Add 3 mL, or whatever the vessel holds of ddH2O to the cells and centrifuge 600 x g, Room temperature, 5 minutes . Aspirate supernatant and loosen cell pellet.",
+    "Third ddH20 wash step: Add 3 mL, or whatever the vessel holds of ddH2O to the cells and centrifuge 600 x g, Room temperature, 5 minutes . Aspirate supernatant and loosen cell pellet.",
+    "Dilute EQ beads 1:10 in ddH2O and add 1 mL of diluted beads per 1 million cells. EQ™ Four Element Calibration Beads Fluidigm Catalog # 201078",
+    "Filter cells through cell strainer and acquire on CyTOF"
+  ],
+  "authors": [
+    "Felix J Hartmann"
+  ],
+  "creator": "Felix J Hartmann",
+  "published_on": 1616116234,
+  "created_on": 1603413048,
+  "keywords": []
+}

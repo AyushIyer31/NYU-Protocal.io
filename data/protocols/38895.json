@@ -1,0 +1,37 @@
+{
+  "id": 38895,
+  "title": "Taxonomic classification of IonTorrent-sequenced 16S amplicon sequences",
+  "uri": "taxonomic-classification-of-iontorrent-sequenced-1-bh8pj9vn",
+  "doi": "dx.doi.org/10.17504/protocols.io.bh8pj9vn",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Torrent Suite 5.4 Thermo Fisher Scientific Demultiplex sequences. Quality-filter sequences. Tim barcodes and adapters. Export as fastq files (1 fastq file per sample). Example of fastq files at this point: fcm1_1_L001_R2_001.fastq fcm2_2_L001_R2_001.fastq",
+    "Import fastq files. Trim primers. Remove sequences shorter than 100 bp. Suggested software: Geneious 11.1.5 Biomatters Ltd (or python scripts).",
+    "(Optional) Check the Phred quality score of the sequences. Suggested software: FastQC 0.11.9 Simon Andrews",
+    "To train a Naïve Bayes classifier : Download the Greengenes 13_8 99% OTU database. Upload the files &#34;99_otus.fasta&#34; and &#34;99_otu_taxonomy.txt&#34; onto a folder accesible by the Qiime2 environment. With Qiime2 activated and inside the folder containing those files, type in the command line:",
+    "&gt;qiime tools import --type &#39;FeatureData[Sequence]&#39; --input-path 99_otus.fasta --output-path otus.qza",
+    "&gt;qiime tools import --type &#39;FeatureData[Taxonomy]&#39; --input-format HeaderlessTSVTaxonomyFormat --input-path 99_otu_taxonomy.txt --output-path taxonomy.qza",
+    "&gt;qiime feature-classifier extract-reads --i-sequences otus.qza --p-f-primer AGAGTTTGATCMTGGCTCAG --p-r-primer CYNACTGCTGCCTCCCGTAG --o-reads ref-seqs.qza",
+    "&gt;qiime feature-classifier fit-classifier-naive-bayes --i-reference-reads ref-seqs.qza --i-reference-taxonomy taxonomy.qza --o-classifier classifierp.qza The artifact &#34;classifier.qza&#34; can be copied to any other folder for the following steps. Example of classifier trained on the Greengenes 99% OTU database for the V1-V2 region of the 16S rRNA gene: classifier.qza",
+    "To perform taxonomy classification : In a new folder, upload the artifact &#34;classifier.qza&#34; and the file with the metadata corresponding to the fastq files in the correct format. Example of file: metadata.tsv Also create a subfolder &#34;fastq&#34; containing the compressed fastq files in the correct nominal format (eg. &#34;fcm1_1_L001_R1_001.fastq.qz&#34; and &#34;fcm2_2_L001_R1_001.fastq.qz&#34;) and the classifier artifact. In the command line, type in:",
+    "&gt;qiime tools import --type &#39;SampleData[SequencesWithQuality]&#39; --input-path fastq --input-format CasavaOneEightSingleLanePerSampleDirFmt --output-path demux-single-end.qza",
+    "&gt;qiime vsearch dereplicate-sequences --i-sequences demux-single-end.qza --o-dereplicated-table dereplicatedtable.qza --o-dereplicated-sequences rep-seqs.qza",
+    "&gt;qiime feature-classifier classify-sklearn --i-classifier classifier.qza --i-reads rep-seqs.qza --o-classification taxonomy.qza",
+    "&gt;qiime taxa barplot --i-table dereplicatedtable.qza --i-taxonomy taxonomy.qza --m-metadata-file sample-metadata.tsv --o-visualization taxa-bar-plots.qzv The artifact &#34;taxa-bar-plots.qzv&#34; can be interactively visualized in https://view.qiime2.org/ Example of artifact: taxa-bar-plots.qzv",
+    "The components of the biom table (the OTU abundance table and the taxonomy table) can be obtained from the &#34;taxa-bar-plots.qzv&#34; artifact or with the following commands: &gt;qiime tools export --input-path dereplicatedtable.qza --output-path exported-feature-table &gt;cd exported-feature-table &gt;biom convert -i feature-table.biom -o otutable.tsv --to-tsv &gt;qiime tools export --input-path taxonomy.qza --output-path taxonomy The files &#34;taxonomy.tsv&#34; and &#34;otutable.tsv&#34; should be downloaded and can be manually converted into .csv files and adapted for the analysis with R. The additional file &#34;metadata.csv&#34; is also necessary. Example of files: taxonomy.csv otutable.csv metadata.csv",
+    "Within R and activating the phyloseq package, different types of analysis can be easily performed.",
+    "The first step is the creation of the phyloseq object using the type of files shown in step 5.5: &gt; otu_table &lt;- read.csv(&#34;otutable.csv&#34;,sep=&#34;,&#34;,row.names=1) &gt; tax_table &lt;- read.csv(&#34;taxonomy.csv&#34;,sep=&#34;,&#34;,row.names=1) &gt; OTU &lt;- otu_table(otu_table,taxa_are_rows=TRUE) &gt; tax_matrix&lt;- as.matrix(tax_table) &gt; TAX &lt;- tax_table(tax_matrix) &gt; metadata &lt;- read.csv(&#34;metadata.csv&#34;,sep=&#34;,&#34;,row.names=1) &gt; meta &lt;- sample_data(metadata) &gt; fcm &lt;- phyloseq(OTU, TAX, meta)",
+    "Basic operations such as tax_glom are used to prepare the data for further analyses. For example, with the following commands a table containing the taxonomic abundance for the families present in each sample is created: &gt; fcm.family &lt;- tax_glom(fcm,&#34;Family&#34;, NArm= FALSE) &gt; fcm.family.m &lt;- psmelt(fcm.family) &gt; write.table(x=fcm.family.m, sep = &#34;,&#34;, file = &#34;fcm_family.csv&#34;) At this point a table with the taxonomic abundance of each family is produced. Example of file: fcm_family.csv"
+  ],
+  "authors": [
+    "Laura Espina"
+  ],
+  "creator": "Laura Espina",
+  "published_on": 1594140766,
+  "created_on": 1593879332,
+  "keywords": []
+}

@@ -1,0 +1,39 @@
+{
+  "id": 49795,
+  "title": "Functional and Taxonomic Characterization of sequence data using GhostKOALA ",
+  "uri": "functional-and-taxonomic-characterization-of-seque-buvbnw2n",
+  "doi": "dx.doi.org/10.17504/protocols.io.buvbnw2n",
+  "description": "{\"blocks\":[{\"key\":\"7m1c5\",\"text\":\"A method of functional and taxonomic annotation and expression of assembled sequence data using GhostKOALA.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"ajup3\",\"text\":\"Before starting this protocol, you will need to quality control, trim, remove residual rRNA, and assemble your sequences. Given the many available tools and personal preferences for parameters, we have not covered that process in this protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"7bnjj\",\"text\":\"Assembled sequences.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Assemble sequences from samples you wish to characterize. Final file should be in .fasta format.",
+    "Extract GFF gene prediction coding sequences from assembly using MetaGeneMark, exporting identified gene sequences as both proteins and nucleotides.",
+    "http://exon.gatech.edu/meta_gmhmmp.cgi Wenhan Zhu, Alex Lomsadze and Mark Borodovsky. Ab initio gene identification in metagenomic . Nucleic Acids Research (2010) 38, e132. John Besemer and Mark Borodovsky. Heuristic approach to deriving models for gene finding . Nucleic Acids Research (1999) 27, pp 3911-3920.",
+    "User may want to rename files as &#34;assembly_protein/nucleotide&#34; and save as .fasta files.",
+    "Upload the protein fasta file from MetaGeneMark to GhostKOALA, selecting the genus_prokaryotes+family_eukaryotes+viruses KEGG GENES database. Kanehisa, M., Sato, Y., and Morishima, K. BlastKOALA and GhostKOALA: KEGG tools for functional characterization of genome and metagenome sequences. J ournal of Molecular Biology (2016) 428, pp 726-731.",
+    "Note that an email will be sent that requires you to click a &#34;submit&#34; link to actually run GhostKOALA. Only one protein file can be run at a time from any given email address.",
+    "Download the detailed annotation and taxonomic descriptions. File extensions should be changed to .txt and can be manipulated in Microsoft excel.",
+    "The functional annotations and taxonomic annotations can be combined in a single excel sheet, taking care to ensure that the annotations for each gene align properly.",
+    "Annotated genes can then be sorted by organism or KEGG orthology.",
+    "There will be some genes that aren&#39;t functionally annotated and some that aren&#39;t taxonomically annotated, so be aware that the annotations will probably not align perfectly when you first put them together. The countif function in excel can help identify genes that were not annotated in one category or another.",
+    "The list of gene numbers from the KO/organism/whatever you are interested in can then be saved as a .txt file. This file should only contain the list of gene numbers, not any of the annotation information.",
+    "A custom python script is then used to extract the subset list of nucleotide gene sequences from the nucleotide .fasta file exported from MetaGeneMark. subset_fasta.py",
+    "Reads can then be recruited back to gene sequences of interest to establish estimates of expression using the &#34;Map reads to reference&#34; tool in CLC Genomics Workbench.",
+    "Read counts can then be exported and the incorporated back into the GhostKOALA gene annotation file in order to evaluate gene expression by organism or KO number.",
+    "Many additional analyses can then be performed, including but not limited to, comparisons of conserved function/taxonomy between samples, differential expression between samples, phylogenetic analyses to resolve multiple genotypes of a single gene, etc.",
+    "We recommend using 90% identity and 90% length parameters, but can be adjusted for user preference.",
+    "Users can assemble as they wish, but we established the following protocol if a user needs direction. Pound and Wilhelm 2021, https://dx.doi.org/10.17504/protocols.io.buvdnw26"
+  ],
+  "authors": [
+    "Helena Pound",
+    "Eric Gann",
+    "Steven W Wilhelm"
+  ],
+  "creator": "Helena Pound",
+  "published_on": 1621617278,
+  "created_on": 1620653750,
+  "keywords": []
+}

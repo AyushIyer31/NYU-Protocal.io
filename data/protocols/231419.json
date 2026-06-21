@@ -1,0 +1,29 @@
+{
+  "id": 231419,
+  "title": "Fluoresence microscopy shadow imaging of the neuropil and extracellular space in live organotypic mouse brain slices",
+  "uri": "fluoresence-microscopy-shadow-imaging-of-the-neuro-hd83b29yp",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l21zr3g1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"3q3pu\",\"text\":\"This protocol describes the key steps of performing fluorescence shadow imaging in organotypic cultures of mouse brain.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9spkn\",\"text\":\"Scanning fluorescence microscope (e.g. confocal, 2-photon, or STED)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"69hfq\",\"text\":\"Calcein (Sigma, C0875)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1dab1\",\"text\":\"NaCl (Sigma)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3tuj\",\"text\":\"KCl (Sigma)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7f9i\",\"text\":\"CaCl2 • 2H2O (Sigma)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":4,\"length\":1},{\"style\":\"sub\",\"offset\":10,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"cl15n\",\"text\":\"MgCl2 • 6H2O (Sigma)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":4,\"length\":1},{\"style\":\"sub\",\"offset\":10,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"f0sdf\",\"text\":\"Glucose • H2O (Sigma)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":11,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4vnko\",\"text\":\"HEPES (Sigma)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare ACSF for perfusing the tissue in imaging chamber. Note this buffer does not require carbogen bubbling but can be used in ambient normal atmosphere. %s %s",
+    "Prepare the given microscope you are using by warming up putative laser and turning on any temperature and atmosphere control. A laser scanning microscope is recommended as it offers better optical sectioning, e.g. a confocal, 2-photon, or STED microscope based on either of these modalities.",
+    "Transfer the organotypic culture to the microscope imaging chamber. For organotypic cultures grown on glass coverslips the tissue should always remain on the glass, also during imaging. For organotypic slices grown as membrane interface cultures, the slice is transferred on a small piece of membrane to the chamber.",
+    "Perfuse the slice with ACSF (typically 1-4 ml/min) and adjust the field of view to a given area of interest using brightfield video imaging and/or the microscope eyepieces.",
+    "Add calcein, Alexa Fluor 488, or other hydrophilic fluorophore to the ACSF at 40-50 μM final solution. It is recommended to not prepare more fluorophore contaning ACSF than necessary for a given experiment.",
+    "Prepare a stock solution of 5 mM cacein fluorophore solution to add to the perfusion artificial cerebrospinal fluid (ACSF) . Calcein is dissolved in PBS and stored frozen at -20 degrees as 0.5 ml aliquots.",
+    "Let the fluorophore solution wash in and distribute homogeneoulsy in the tissue. This can be evaluated by time-lapse imaging of a set random area/volume and reading out when the fluorescence signal from the Calcein-ACSF reaches steady state. Usually this takes around 10 minutes.",
+    "Now everything is ready and imaging can start. As in any other fluorescent imaging experiment, it is recommended to optimize laser powers and detector gain for the given settings. Similarly, pixel size should be set taking into account the expected size of imaged structures and Nyquist&#39;s sampling theorem; e.g. 80 nm oixels for a good confocal microscope, or 200 nm pixels for a 2-photon microscope. Note that the fluoresence intensity of the ACSF can be adjusted on the fly by adding either fluorophore ir unlabelled ACSF to the calcein-ACSF solution.",
+    "After imaging has finished, the slice is discarded or fixed with PFA and saved for further processing, e.g. immunohistochemistry."
+  ],
+  "authors": [
+    "Jan Tonnesen"
+  ],
+  "creator": "Jan Tonnesen",
+  "published_on": 1762264654,
+  "created_on": 1762178077,
+  "keywords": []
+}

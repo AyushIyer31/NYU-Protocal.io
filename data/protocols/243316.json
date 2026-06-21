@@ -1,0 +1,24 @@
+{
+  "id": 243316,
+  "title": "Chen Hyperchaotic-AES Medical Image Encryption Protocol",
+  "uri": "chen-hyperchaotic-aes-medical-image-encryption-pro-hruub56wx",
+  "doi": "dx.doi.org/10.17504/protocols.io.5qpvo12pbg4o/v1",
+  "description": "{\"blocks\":[{\"key\":\"3fibd\",\"text\":\"This protocol describes a three-layer encryption scheme for medical images combining Arnold cat map permutation, Chen hyperchaotic system diffusion, and AES-256 block cipher. The implementation includes synthetic chest X-ray phantom generation, complete encryption/decryption workflows, and validation procedures. All source code is provided as an attachment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Install required Python packages: pip install numpy==1.24.3 opencv-python==4.8.1 pycryptodome==3.19.0 System Requirements: - Python 3.9, 3.10, or 3.11 (3.10 recommended) - 4GB RAM minimum (8GB recommended) - No GPU required (CPU-only implementation) Note: This protocol uses pure NumPy implementations to avoid SciPy version conflicts.",
+    "Execute the test image generator: python generate_medical_sample.py This creates a 512×512 pixel chest X-ray phantom containing: - Thoracic cage (elliptical boundary) - Spinal column and rib structures - Heart shadow (left-central high-density region) - Pulmonary textures (simulated vasculature) - Simulated pulmonary nodule (right upper zone) Output file: realistic_chest_xray.png Expected runtime: &lt;5 seconds",
+    "Run the encryption protocol: python encrypt_medical.py This implements the three-layer security scheme: Layer 1 - Arnold Cat Map Permutation: Scrambles pixel positions using modular matrix transformation Formula: [x&#39;; y&#39;] = [1 a; b ab+1] × [x; y] mod N Layer 2 - Chen Hyperchaotic Diffusion: Generates chaotic sequence via 4D Chen system (RK4 solver) XOR operation: Ciphertext = Plaintext ⊕ Chaotic_sequence Layer 3 - AES-256 Block Encryption: Standard FIPS-197 implementation (ECB mode, PKCS7 padding) Outputs: - encrypted_output.png (ciphertext, appears as random noise) - encryption_params.npz (key material, KEEP SECURE) Expected runtime: 2-4 minutes (Intel i5 processor)",
+    "Restore the original image: python decrypt_medical.py Requirements: - encrypted_output.png (from Step 3) - encryption_params.npz (key file from Step 3) Inverse operations: 1. AES-256 decryption (PyCryptodome) 2. Chen hyperchaotic inverse (XOR is self-inverse) 3. Arnold inverse permutation (inverse matrix) Validation: The script automatically calculates pixel difference between original and decrypted images. Expected result: Total difference = 0 (perfect reconstruction) Output: decrypted_final.png Expected runtime: 2-4 minutes"
+  ],
+  "authors": [
+    "Mutallip Sattar"
+  ],
+  "creator": "Mutallip Sattar",
+  "published_on": 1771257353,
+  "created_on": 1771059616,
+  "keywords": []
+}

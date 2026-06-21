@@ -1,0 +1,43 @@
+{
+  "id": 27385,
+  "title": "FTÅ200 Interfacial Tension Measurement",
+  "uri": "ft-200-interfacial-tension-measurement-6yzhfx6",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"7nhg7\",\"text\":\"How to use the First Ten Ångstrom (FTÅ) 200 for measuring interfacial tension of aqueous solution. Some aspects of this protocol are specific to use in Yoon Biosensors Lab at The University of Arizona.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"5b7eg\",\"text\":\"Wear gloves during the use of this protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5qriv\",\"text\":\"It is best to have the overhead lights turned off in order to enhance contrast in images.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"3e8uq\",\"text\":\"Gloves\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"36gqq\",\"text\":\"0.5 mL microcentrifuge tubes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"cgb68\",\"text\":\"16 ga. (pink) blunt tip needle (or other blunt tip needle)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"6i9v6\",\"text\":\"Syringe\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"a11st\",\"text\":\"DI water\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Twist needle onto glass syringe until tight, but not excessively tight. Use caution when grabbing needle. Avoid touching the tips of needles to prevent contamination.",
+    "Mount syringe by sliding through the hole on the syringe mount, bringing the two halves of the white syringe clamp together, and clipping the clamp retainer over the two halves.",
+    "Turn on PC by the FTÅ200. Open FTÅ32 software from Desktop or Start Menu. A window will open containing User Information. Do not change these settings unless you know what you are doing.",
+    "Press the OK button in the middle of the window. You will be presented with a window titled &#34;Video&#34;, with a blue screen.",
+    "On the right panel check the box labelled &#34;Video&#34; to begin live-feed from the camera.",
+    "Turn on the power supply to the left of the FTÅ200 machine to turn on the blue LED mounted behind the syringe holder. Adjust camera lens to point at the LED (you should see it in the live-feed).",
+    "There are several adjustments you can make to improve the image: Syringe mount height: Unclip and reclip syringe clamp to adjust how high the syinge is mounted LED placement: Slide the LED mount left or right to center it behind the needle tip. Camera lens rotation: The camera lens pivots. Ideally, it should be point &#39;straight forward&#39; so that it&#39;s axis is aligned with that of the camera unit. Camera unit rotation: The camera unit pivots as well, align the same as above. Camera lens focus: There are 3 adjustments on the camera lens. These can be adjusted prior to the first image. You should not adjust this between samples if you intend to directly compare them or calibrate them with a common factor. Adjust the above parameters in order for the image to have: LED centered in the frame (2, 3, &amp; 4) Needle centered in the frame (3 &amp; 4) End of needle tip no more than a quarter of the way down from the top of the frame (if it is too low, the droplet will extend past the frame and/or LED (1) The greatest contrast and sharpness between needle and background LED. (5) The camera and camera lens should not be able to rotate very much. It is ideal if the system is rigid, with the lens pressed firmly against the camera unit.",
+    "Dispense ~ 18 µL of solution into 0.5 mL microcentrifuge tube using micropipette. The volume will change depending on needle diameter. This is about right for a 16 ga. needle. Do not dispense so much volume that solution completely fills needle and touches the syringe itself. This will cause contamination.",
+    "Leaving syringe mounted, move the microcentrifuge tube so that the needle is submerged in solution. Carefully draw solution into needle. Do not keep raising plunger once solution has been drawn up, this will cause it to enter syringe itself leading to contamination.",
+    "If solution remains on outside of needle, carefully wipe with a kimwipe, but avoid touching the very end of the needle, as the kimwipe will wick solution out of needle. This step is to prevent the droplet from &#39;creeping&#39; up the needle upon dispensing a droplet.",
+    "Looking at the live-feed, carefully begin to depress the plunger until a droplet forms. The size of the droplet seems to affect interfacial tension measurements. For this reason it is best to try to make droplets of similar size when they will be compared directly.",
+    "Allow droplet to stabilize for about 2 minutes. This will allow the solution to stop swirling so much and for the droplet to come to room temperature.",
+    "Press the &#34;Run&#34; button on the right panel under User Control in the FTÅ32 software. Several images will be captured. These images compose a &#34;movie&#34;. The procedure the software follows upon hitting &#34;Run&#34; can be adjusted. But for most static, non time-dependent measurements, having it take a burst of images is fine. This is usually the way &#34;Run&#34; is left setup on this machine.",
+    "Once the Run procedure has run, you will be presented with the movie that was generated (as indicated by the window title starting with &#34;Movie&#34; followed by a path.",
+    "Press the &#34;ROI Box&#34; on the right panel under Analysis. Clicking the mouse on the image places one corner of a region of interest box on the image, although you will not see it. Clicking the mouse on the image again places the opposite corner of the ROI box. Adjust the corners of the ROI box until some of the needle is in the ROI, and the entire droplet is within the box. Avoid capturing within the box the edge of the background LED.",
+    "Press the &#34;IF Tension&#34; button on the right panel under Analysis to begin analyzing the images for interfacial tension.",
+    "The software will overlay what it has interpreted as the boundaries, this is what it uses for calculating IFT. Check how well it has marked the width of the tip and the outline of the droplet. Disregard any measurements for which the marks made by the software do not match well with the actual image.",
+    "View the different images and measurements by using the arrows at the bottom of the window. Measurements are displayed in a table in a window for each image. Not all images will generate an IFT measurement, mostly due to the software having difficulties in parsing the image for relevant geometries. Check the table value for Tip Width, and ensure that it is very close to the actual tip width. If it is not, see the Calibrate Software section above.",
+    "Record all reasonable measurements for data analysis.",
+    "Click the Distance button on the right panel under Analysis.",
+    "Draw a horizontal line spanning the width of the needle. Record the distance value given. If this is very different from the actual needle diameter, go to the calibration tab, and under Magnification Calibration -&gt; Measured Distance, enter the value you recorded, and press Apply.",
+    "Twist the needle tip off of the syringe. Discard in sharps container. When measuring multiple solutions, change the tip between solutions.",
+    "When completely finished, save your Movie to an appropriate directory, and close the software. Turn off LED power supply. Return syringe and needles to where you got them."
+  ],
+  "authors": [
+    "Kenneth Schackart"
+  ],
+  "creator": "Kenneth Schackart",
+  "published_on": 1600832673,
+  "created_on": 1567183989,
+  "keywords": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": 68489,
+  "title": "An ImageJ macro for batch processing of microscopic images prior to CellProfiler automated analysis",
+  "uri": "an-imagej-macro-for-batch-processing-of-microscopi-ce5htg36",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4bpo8vo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"di6gr\",\"text\":\"This protocol presents an ImageJ macro for batch processing of microscopic images prior to CellProfiler automated analysis.  For many applications including analysis by Cellprofiler, images need to be batch processed for maximum intensity projection or uniform background subtraction.  Here we describe a macro to perform batch processing of raw .TIF files obtained from Nikon Spinning disk confocal images acquired with Metamorph software. Acquired files have a .nd format; we use the associated .TIF raw files in this macro.  This macro is being used to run the plugins such as “Z-project - maximum intensity projection” followed by “Rolling ball background subtraction”.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b16kd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5iqie\",\"text\":\"Maximum intensity projections allow one to collapse the brightest pixels in each slice of the confocal micrograph and flatten them into a composite plane.  Sumslice instead collapses all the pixels into a single plane, a process that will combine both signal and background staining.  In the example included here, 3T3 cells were stained for Golgi with anti-p115 antibody (Alexa 488 secondary antibody) and for nuclei with DAPI. Lasers used were 488 and 405nm, respectively. Cells were imaged with a spinning disk confocal and acquired using Metamorph. This is a multi-channel Z-stack using the multi-dimensional acquisition module of Metamorph.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ell28\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"aisu4\",\"text\":\"Materials:\\n ●\\tLatest edition FIJI / ImageJ\\n ●\\tRaw .TIF files that accompany .nd files by Metamorph FIJI macro\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "The method involves the following steps: Step 1 - Define the suffix for the processed files Step 2 - Define the plugins and parameters that need to be run Step 3 - Identify the folder that contains the .TIF raw files Step 4 - Select the channel that needs to processed Step 5 - Identify the folder where the processed files need to be saved Step 6 - Repeat for another channel 1. Drag and drop the FIJI_MaxSubtract_metamorph.ijm into ImageJ/FIJI ● Line 26 - This code is for Z-projection- maximum intensity projection on Z-stacks ○ This can be changed to Average intensity or sumslices as desired ● Line 27 - This code is for Subtract Background - Rolling ball 50 ○ The rolling ball of 50 pixels is default and can be changed as desired ○One can also perform other tasks such as ■mathematical subtraction of single pixel value from the entire image using&#39; &gt; run(“Subtract…”, “value=2300”); This can be determined by taking the mean intensity of an image in an area without cells ■Median filter to denoise and help smoothen the edges &gt; run(“Median…”, “radius=0.5”); ● Line 29 - Suffix to be attached to the processed file names is “_max.tif” ●Upon Running the pipeline, select the folder where the .TIF raw data is stored ●Select Channel pop-up - Define the channel on which the plugins need to be applied ○The channel name is in the image filename usually as _w(channel name) ○Write “w1405” to select the DAPI channel, “w2488” to select Golgi channel ■Each channel may have different background intensities / noise and may need different parameters; in the example provided all channels are processed similarly ■If all channels need same processing, then a unique identifier for all channels can be used - something that is part of all the channels such as “3T3” ●Next select the folder where the output of the processed images need to be saved ○It is recommended to make a new folder where processed images are saved",
+    "1. Drag and drop the FIJI_MaxSubtract_metamorph.ijm into ImageJ/FIJI",
+    "● Line 26 - This code is for Z-projection- maximum intensity projection on Z-stacks",
+    "● Line 27 - This code is for Subtract Background - Rolling ball 50",
+    "○One can also perform other tasks such as",
+    "■mathematical subtraction of single pixel value from the entire image using&#39;",
+    "&gt; run(“Subtract…”, “value=2300”); This can be determined by taking the mean intensity of an image in an area without cells",
+    "■Median filter to denoise and help smoothen the edges &gt; run(“Median…”, “radius=0.5”);",
+    "● Line 29 - Suffix to be attached to the processed file names is “_max.tif”",
+    "●Upon Running the pipeline, select the folder where the .TIF raw data is stored",
+    "●Select Channel pop-up - Define the channel on which the plugins need to be applied",
+    "○The channel name is in the image filename usually as _w(channel name)",
+    "○Write “w1405” to select the DAPI channel, “w2488” to select Golgi channel",
+    "■Each channel may have different background intensities / noise and may need different parameters; in the example provided all channels are processed similarly",
+    "■If all channels need same processing, then a unique identifier for all channels can be used - something that is part of all the channels such as “3T3”",
+    "●Next select the folder where the output of the processed images need to be saved",
+    "○It is recommended to make a new folder where processed images are saved",
+    "○ This can be changed to Average intensity or sumslices as desired",
+    "○ The rolling ball of 50 pixels is default and can be changed as desired One can also perform other tasks such as ■mathematical subtraction of single pixel value from the entire image using&#39; &gt; run(“Subtract…”, “value=2300”); This can be determined by taking the mean intensity of an image in an area without cells ■Median filter to denoise and help smoothen the edges &gt; run(“Median…”, “radius=0.5”);"
+  ],
+  "authors": [
+    "Herschel Dhekne",
+    "Suzanne R Pfeffer"
+  ],
+  "creator": "Suzanne R Pfeffer",
+  "published_on": 1680302881,
+  "created_on": 1660174352,
+  "keywords": []
+}

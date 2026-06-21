@@ -1,0 +1,37 @@
+{
+  "id": 22104,
+  "title": "Sample Preparation for 3D-Raman Microspectroscopic Mapping of Fully Hydrated Protist Cells",
+  "uri": "sample-preparation-for-3d-raman-microspectroscopic-ztyf6pw",
+  "doi": "dx.doi.org/10.17504/protocols.io.ztyf6pw",
+  "description": "{\"blocks\":[{\"key\":\"c0klp\",\"text\":\"    Sample preparation for Raman Microspectroscopic analysis of microbial cells mostly requires mounting of cells to Raman-inactive substrata such as mirror-finished stainless steel microscope slides. This can be achieved either by drying cell suspensions on stainless steel slides or by applying the Filter-Transfer-Freeze (\\\"FTF\\\") Technique (Taylor et al. 2017 protocols.io; dx.doi.org/10.17504/protocols.io.ikqccvw) when microbial cells have been collected on polycarbonate membrane filters before. Both techniques work very well for small and rigid prokaryotes. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"UNDERLINE\",\"offset\":123,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3he5a\",\"text\":\"    However, the compression forces and dehydration caused by the FTF-technique or by dry mounting results in considerable morphological distortions and collapsing of cells when applied to specimens of larger protists (e.g. ciliates). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"529gj\",\"text\":\"    Therefore, we developed a sample preparation method that accommodates the delicateness of ciliates and allows Raman analysis of fully intact and hydrated cells under water through a water immersion objective lens. The protocol was established with the ciliate species Tetrahymena pyriformis and and enabled 3D-mapping of chemical fingerprints on a subcellular level during Raman scans of 12 hours and longer. This method might be applicable not only to protists, but with slight alterations to larger specimens or delicate tissues in general.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":272,\"length\":23}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"81cf5\",\"text\":\"This protocol was established with the freshwater ciliate Tetrahymena pyriformis. In order to reduce osmotic stress to the cells Volvic spring water was used for the washing steps and for Raman interrogations. Specimens from other habitats (marine, brackish waters) might require the use of their respective isotonic solutions. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":58,\"length\":24}],\"entityRanges\":[],\"data\":{}},{\"key\":\"du6vp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bpig6\",\"text\":\"The washing steps 1-3 offer the opportunity to concentrate the cell density by gradually reducing the volume of water used for resuspending the sample. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"3ik2n\",\"text\":\"Fix your sample with borate-buffered formaldehyde (2% fin. conc.). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b28ga\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9uklp\",\"text\":\"Clean stainless steel squares according to the protocol Taylor et al. 2017 protocols.io; dx.doi.org/10.17504/protocols.io.ikqccvw.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"750b7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"7g9dg\",\"text\":\"Custom-made mirror finished 304 stainless steel squares (0.5 x 0.5 inch x 24 gauge) supplied by Stainless Supply® (Monroe, NC USA)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"45fud\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"et0sg\",\"text\":\"Petri dish 60 x 15 mm\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6sh44\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"efj1a\",\"text\":\"Autoclaved or filter-sterilized Volvic spring water (or other isotonic water solution)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Centrifugation of formaldehyde-fixed sample at 150 rcf for 10 min.",
+    "Remove supernatant with a pipette.",
+    "Resuspend cell suspension with Volvic spring water by repipetting or gentle vortexing.",
+    "Place cleaned stainless steel square in a petri dish.",
+    "Fill petri dish with Volvic water and place it on the microscope stage.",
+    "Keep washed cell suspension on ice to increase water density. This enhances the sample’s sinking properties and improves cell adhesion to the stainless steel slide while loading.",
+    "Retrieve a 10-40 µl subsample from the cell suspension with a 100 µl micropipette.",
+    "Insert pipette tip into petri dish until it touches the stainless steel slide.",
+    "Let sample settle for 2 minutes.",
+    "Place two beakers with water-saturated blotting paper in the microspectrometer&#39;s dome to maintain 100% relative humidity and minimize evaporative losses from the petri dish during extended Raman data acquisition runs.",
+    "Start Raman interrogation of the whole cell of interest within a 3-D grid set at the desired spatial resolution. Further information on the workflow for Raman microspectroscopic mapping of macromolecules in fully hydrated protist cells can be found in Taylor GT (2019) Windows into Microbial Seascapes: Advances in Nanoscale Imaging and Application to Marine Sciences. Ann Rev Mar Sci 11:annurev-marine-121916-063612",
+    "Delicately load sample onto the stainless steel slide while minimizing agitation.",
+    "Gently insert the water immersion 63x objective lens into the water until specimens on the stainless steel slide are visible in the microscope.",
+    "Repeat steps 1-3 three times and keep cell suspension at 4°C.",
+    "3-D picture and video animation of intracellular protein (cyan) and DNA (red) distribution in axenically grown Tetrahymena pyriformis cells. Picture: Video (available in online version): Raman volume map of spectral peak intensities showing subcellular nucleic acid (red, wavenumber position 784 cm -1 ) and protein (cyan, wavenumber position 1002 cm -1 ; phenylalanine used as a protein proxy) distributions in a fully-hydrated, preserved Tetrahymena cell. Subcellular structures such as micro- and macro- nuclei (red) are resolved. Data set was acquired during a 13 hour Raman scan with a 633 nm He/Ne laser along a 3-D grid with a spatial resolution of 2 µm x 2 µm x 4 µm in XYZ dimensions, yielding 3472 individual spectra."
+  ],
+  "authors": [
+    "Felix Weber",
+    "Tatiana Zaliznyak",
+    "Gordon T Taylor"
+  ],
+  "creator": "Felix Weber",
+  "published_on": 1558044813,
+  "created_on": 1554404902,
+  "keywords": []
+}

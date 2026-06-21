@@ -1,0 +1,36 @@
+{
+  "id": 14810,
+  "title": "Pollen metabarcoding",
+  "uri": "pollen-metabarcoding-sp2edqe",
+  "doi": "dx.doi.org/10.17504/protocols.io.sp2edqe",
+  "description": "{\"blocks\":[{\"key\":\"25eel\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"2htbe\",\"text\":\"Perform reactions in small batches until you are confident that there is no cross-contamination among the samples. Including isolation blanks and PCR blanks is crucial for the quality control.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"dbda9\",\"text\":\"Prepare 5 μM primer solutions:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"255k8\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dspk0\",\"text\":\" ITS2 primers used in the 1st PCR:\\n ITS2-4R GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCTNNNNNNTCCTCCGCTTATTGATATGC\\n ITS2-S2F ACACTCTTTCCCTACACGACGCTCTTCCGATCTNNNNNNATGCGATACTTGGTGTGAAT\\n  \\n Indexing primers used in the 2nd PCR (xxxxxxxx - index):\\n \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"f47s4\",\"text\":\"AATGATACGGCGACCACCGAGATCTACACxxxxxxxxACACTCTTTCCCTACACGACGC\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5ug4c\",\"text\":\"  CAAGCAGAAGACGGCATACGAGATxxxxxxxxGTGACTGGAGTTCAGACGTGTGC\\n \\n \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"849rg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"SqSTQ\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"QR7aR\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"vO0CA\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"Cw8Ns\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"0ELJU\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":3,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":772,\"guid\":\"4101DDA9341F11EE9D4302C0B41BC903\",\"name\":\"Q5 Hot Start High-Fidelity DNA Polymerase - 100 units\",\"mol_weight\":0,\"sku\":\"M0493S\",\"url\":\"https://www.neb.com/M0493\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":2,\"name\":\"New England Biolabs\",\"link\":\"https://www.neb.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/2.png\",\"placeholder\":\"/img/vendors/2.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":118973,\"guid\":\"4197645D341F11EE9D4302C0B41BC903\",\"name\":\"Water, nuclease free\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}},\"2\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":126709,\"guid\":\"41A0F6DF341F11EE9D4302C0B41BC903\",\"name\":\"dNTP mix (25 mM of each)\",\"mol_weight\":0,\"sku\":\"\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":1,\"name\":\"Contributed by users\",\"link\":\"https://www.protocols.io\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/1.png\",\"placeholder\":\"/img/vendors/1.png\"}},\"is_public\":true,\"can_edit\":false}},\"3\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":126987,\"guid\":\"41A153FD341F11EE9D4302C0B41BC903\",\"name\":\"Phire Plant Direct PCR Kit\",\"mol_weight\":0,\"sku\":\"F130WH\",\"url\":\"https://www.thermofisher.com/order/catalog/product/F130WH\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":95,\"name\":\"Thermo Fisher Scientific\",\"link\":\"https://www.thermofisher.com/us/en/home.html\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Vortex the butterfly in 50 μl of water with 0.1% SDS. Add blank sample at this step (= &#34;isolation blank&#34;) http://null",
+    "Prepare the mix: undetermined, molecular grade water undetermined, Phire Plant Direct PCR mix undetermined, ITS2-S2F primer undetermined, ITS2-4R primer",
+    "Prepare the mix: undetermined, molecular grade water undetermined, Q5 reaction buffer undetermined, dNTPs (25 mM each) undetermined, Q5 Hot Start polymerase",
+    "Evaporate water in speedvac.",
+    "Add 5 μl of the Phire Plant Direct sample buffer.",
+    "Spin max speed for 2 min.",
+    "Perform AMPure purification with ratio 1x. Elute in 10 μl. AMPure purification protocol by Tomasz Suchan",
+    "Run the PCR program: 30 s denaturation at 98°C; 12 cycles of denaturation at 98 °C for 10 s, combined annealing and extension at 72°C for 30 s (shuttle PCR); the final extension at 72°C for 5 min.",
+    "Check profiles on a gel.",
+    "Pool all the samples together.",
+    "Perform AMPure purification with ratio 1x. Elute in 100 μl. AMPure purification protocol by Tomasz Suchan",
+    "Check the concentration using Qubit and the profile using Tapestation/Fragment Analyzer. Calculate molarity from that and proceed to the sequencing. Add 15% PhiX to the sequencing run.",
+    "Run the PCR program: initial denaturation at 98°C for 5 min; 20 cycles of denaturation at 98°C for 40 s, annealing at 49°C for 40 s and elongation at 72°C for 40 s; followed by a final extension step at 72°C for 5 min.",
+    "Add 1 μl of the sample to 49 μl of the mix. Use water instead of the sample for the blanks. Add another blank sample at this step (= &#34;PCR blank&#34;)",
+    "Add 1 μl of the template to 7 μl of the mix.",
+    "Add 1 μl of each 5 uM primer (forward and reverse). Use different pair of indexed primers for each sample."
+  ],
+  "authors": [
+    "Tomasz Suchan"
+  ],
+  "creator": "Tomasz Suchan",
+  "published_on": 1534513053,
+  "created_on": 1534513003,
+  "keywords": []
+}

@@ -1,0 +1,26 @@
+{
+  "id": 84450,
+  "title": "Clustering of differentially expressed genes",
+  "uri": "clustering-of-differentially-expressed-genes-cwqaxdse",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzx82rgx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"2mqtt\",\"text\":\"This differentially expressed genes clustering pipeline utilizes coseq v3.17 package (Rau \\u0026 Maugis-Rabusseau, 2018) in R.\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Load the package (coseq). library(coseq)library(matrixStats)",
+    "Run Coseq on transformed and normalized counts. Example: Performing clustering on bud data with expected clusters, K=5-16. Clustering process is repeated for 10x. coseq_bud_logclr_1 = coseq(tcounts_logclr_exp_bud_ORF_scTMM[,1:15], K=5:16, normFactor = \"none\", transformation = \"none\")coseq_bud_logclr_2 = coseq(tcounts_logclr_exp_bud_ORF_scTMM[,1:15], K=5:16, normFactor = \"none\", transformation = \"none\")coseq_bud_logclr_3 = coseq(tcounts_logclr_exp_bud_ORF_scTMM[,1:15], K=5:16, normFactor = \"none\", transformation = \"none\")coseq_bud_logclr_4 = coseq(tcounts_logclr_exp_bud_ORF_scTMM[,1:15], K=5:16, normFactor = \"none\", transformation = \"none\")coseq_bud_logclr_5 = coseq(tcounts_logclr_exp_bud_ORF_scTMM[,1:15], K=5:16, normFactor = \"none\", transformation = \"none\")coseq_bud_logclr_6 = coseq(tcounts_logclr_exp_bud_ORF_scTMM[,1:15], K=5:16, normFactor = \"none\", transformation = \"none\")coseq_bud_logclr_7 = coseq(tcounts_logclr_exp_bud_ORF_scTMM[,1:15], K=5:16, normFactor = \"none\", transformation = \"none\")coseq_bud_logclr_8 = coseq(tcounts_logclr_exp_bud_ORF_scTMM[,1:15], K=5:16, normFactor = \"none\", transformation = \"none\")coseq_bud_logclr_9 = coseq(tcounts_logclr_exp_bud_ORF_scTMM[,1:15], K=5:16, normFactor = \"none\", transformation = \"none\")coseq_bud_logclr_10 = coseq(tcounts_logclr_exp_bud_ORF_scTMM[,1:15], K=5:16, normFactor = \"none\", transformation = \"none\")",
+    "Manually inspect the results and decide on the average number of clusters Choose one clustering result to proceed with the subsequent steps summary(coseq_bud_logclr_1)summary(coseq_bud_logclr_2)summary(coseq_bud_logclr_3)summary(coseq_bud_logclr_4)summary(coseq_bud_logclr_5)summary(coseq_bud_logclr_6)summary(coseq_bud_logclr_7)summary(coseq_bud_logclr_8)summary(coseq_bud_logclr_9)summary(coseq_bud_logclr_10)",
+    "Retrieve and tabulate the clustering information based on the chose clustering from the previous step. Example: coseq_bud_logclr_1 is chosen as the best clustering results_coseq_bud_logclr: the new table/vector. results_coseq_bud_logclr = clusters(coseq_bud_logclr_1)",
+    "Convert the vector into a data frame. results_coseq_bud_logclr = data.frame(results_coseq_bud_logclr)",
+    "Create a column containing the assigned cluster number for each transcript in the read count data frame. Example: the new column: bud_logclr the data frame with read counts: tcounts_logclr_exp_bud_ORF_scTMM tcounts_logclr_exp_bud_ORF_scTMM$bud_logclr = results_coseq_bud_logclr_1$results_coseq_bud_logclr"
+  ],
+  "authors": [
+    "Ahmad Husaini AHS Suhaimi"
+  ],
+  "creator": "Ahmad Husaini AHS Suhaimi",
+  "published_on": 1688613271,
+  "created_on": 1688456660,
+  "keywords": []
+}

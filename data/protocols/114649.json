@@ -1,0 +1,33 @@
+{
+  "id": 114649,
+  "title": "NIS-Elements JOB for Photobleaching/stimulation at Multiple XYZ Positions with Fast and Slow Acquisition Phases",
+  "uri": "nis-elements-job-for-photobleaching-stimulation-at-dt7z6rp6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlk9855v5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"3c5p0\",\"text\":\"This JOB was created in NIS-Elements version 6.10.01, and is designed to perform photobleaching or photostimulation experiments at multiple XYZ stage positions. At each XYZ position, users are directed to create position-specific ROIs, which are photobleached at a user-defined time. Users can also define fast and slow phases of acquisition, for instance if fast instantaneous recovery dynamics need to be captured followed by slower later recovery.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"2mfvs\",\"text\":\"This JOB was created in NIS-Elements version 6.10.01.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"8ntdi\",\"text\":\"JOB definition for Multiple XYZ Position FRAP - to be imported into the NIS-Elements JOBS Explorer:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ec7hn\",\"text\":\"  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"bo046\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"file\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"\",\"id\":521139,\"original_name\":\"MultiXYZ_FRAP.bin\",\"placeholder\":\"https://www.protocols.io/img/extensions/file.png\",\"raw_source\":\"\",\"size\":19602,\"source\":\"https://protocols-files.s3.amazonaws.com/files/r67vcd75p.bin?X-Amz-Algorithm=AWS4-HMAC-SHA256\\u0026X-Amz-Credential=AKIAWFTFYUBUZ2U2JGOS%2F20260621%2Fus-east-1%2Fs3%2Faws4_request\\u0026X-Amz-Date=20260621T084537Z\\u0026X-Amz-Expires=604800\\u0026X-Amz-SignedHeaders=host\\u0026X-Amz-Signature=589dfd0709dc2cd6afeea4b836c4db69c3fc3e135ff307979edba656ab0b279b\"}}}}",
+  "steps": [
+    "Download the attached JOB definition (see the Materials tab) and import the file into the JOBS Explorer",
+    "Click on the name of the JOB definition in the list and click the green Play icon",
+    "In the JOBS Wizard, first select the Optical Configurations/Experiment Setups that define your Capture Definition",
+    "Select the Time Lapse parameters for the Fast Phase of acquisition (i.e. the early phase)",
+    "Select the Time Lapse parameters for the Slow Phase of acquisition (i.e. the later phase) Please note that the Total Duration should match that used in the Fast Phase, otherwise the total length of the experiment (i.e. not the total length of the phase) will be changed when the time lapse is redefined.",
+    "In the Sequential Stimulation options, create a single bleaching phase. Select the Stimulation Configuration you plan to use and the relevant duration of stimulation. For the ROI Definition, CurrentPoint.ROIs must be selected. You must also select an Optical Configuration, even though no imaging step will be included in the Sequential Stimulation definition.",
+    "Create your desired Stimulation Configurations from either the GalvoXY Pad or AX Stimulation Pad (depending on the system).",
+    "When the JOB starts running, you will first be prompted to enter how many pre-Bleach time points you want to capture and how many time points will be captured with the Fast Phase timelapse definition. Once these are set, click OK.",
+    "Once all Wizard sections are complete, click Run",
+    "You will then be prompted to add XYZ stage positions. Navigate to each XY location, focus in Z and set the PFS offset from the Ti2 Pad. Then click Add Point. Repeat until you have populated the list with all of your XY positions and click Continue.",
+    "You will now be prompted to draw Stimulation ROIs at each XYZ position set in the previous step. At each position, draw the required ROIs and ensure you right click on each and assign the correct Stimulation Configuration (see below). Once you have drawn the Stimulation ROIs for that point, click Finish in the ROI editor (button on the far right). Repeat for each XYZ position.",
+    "When Stimulation ROIs have been seen for each XYZ position, the JOB will begin acquiring images and will bleach at the appropriate time point. If you would like to finish acquiring earlier that the timelapse defintion, click Finish. If you have made an error during setup and wish to discard all image data from the experiment, click Abort."
+  ],
+  "authors": [
+    "Robert Tetley",
+    "Daniel Moore"
+  ],
+  "creator": "Robert Tetley",
+  "published_on": 1735598069,
+  "created_on": 1733827259,
+  "keywords": []
+}

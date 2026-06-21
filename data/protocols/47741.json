@@ -1,0 +1,26 @@
+{
+  "id": 47741,
+  "title": "LC-MS/MS Label-Free Proteomic Data Analysis Parameters",
+  "uri": "lc-ms-ms-label-free-proteomic-data-analysis-parame-bsu5ney6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bsu5ney6",
+  "description": "{\"blocks\":[{\"key\":\"90rq8\",\"text\":\"List of parameters and settings for searching label free proteomic data in MaxQuant version 1.6.17.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Label-free proteomic samples were searched using MaxQuant version 1.6.17.",
+    "Group Specific Parameter settings included: Standard Multiplicity = 1 Variable modifications: Oxidation (M); Acetylation (Protein N-term), Carbamidomethyl (C) Fixed modifications: Carbamidomethyl (C) Max number of modifications per peptide: 5 Instrument settings: Orbitrap (default settings) Digestion: Specific, Trypsin /P Max missed cleavages: 2 LFQ: None",
+    "Global Parameters included: Database: UniProt Human Proteome (UP000005640, 9606) Reviewed, downloaded July 30, 2019 Min peptide length: 7 Max peptide mass: 4600 Da MS/MS analyzer: Default settings Identification: Default settings"
+  ],
+  "authors": [
+    "Danielle Gutierrez",
+    "Jamie Allen",
+    "Zach Jenkins",
+    "Jeff Spraggins"
+  ],
+  "creator": "Jamie Allen",
+  "published_on": 1614903374,
+  "created_on": 1614493061,
+  "keywords": []
+}

@@ -1,0 +1,40 @@
+{
+  "id": 72731,
+  "title": " Loading and Execution of Automatic Watering and Weighing",
+  "uri": "loading-and-execution-of-automatic-watering-and-w-ci93uh8n",
+  "doi": "dx.doi.org/10.17504/protocols.io.q26g7ypp3gwz/v1",
+  "description": "{\"blocks\":[{\"key\":\"18umt\",\"text\":\"This is part of a bigger phenotyping project at the Julkowska lab in Boyce Thompson Institute in Ithaca,NY. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Download the AAWsmobox.ino code from GitHub (insert link here) to a location in your computer that is easy to access with all other Arduino codes that you will be using.",
+    "Open Arduino IDE and open AAWsmobox.ino",
+    "After completing the calibration protocol, take note of the final calibration factor. Type in that calibration factor here:",
+    "Calculate the reference weight (REF) for each pot in the experiment",
+    "Begin by filling 4 X 4 pots with soil. Air dry soil for 2 days to obtain the reference for 0% water holding capacity (WHC)",
+    "Load the pots into a tray. Fill the tray with about an inch of water and water pots from the top (making sure not to lose any soil in the process). Check back in a couple of hours to add extra water if necessary. Let pots soak for a few hours, adding water as needed to obtain a reference for 100% WHC.",
+    "Subtract the values for 100% WHC and 0% WHC to get the max water held by the soil.",
+    "Divide by 100 to get the value representing the grams of water necessary to increase the WHC by 1%",
+    "Multiply the value calculated in Step 4.4 by the percentage WHC you are trying to achieve. For instance, if you got a value of 2 grams of water for step 4.4. And you are trying to achieve a WHC of 10% multiple 2 grams by 10 to get 20 grams of water needed to get the pot to 10% WHC. Therefore, during your experiment you will water the pot to its 0% WHC PLUS 20 grams.",
+    "In simplified terms the equation reads: ((100%WHC - 0%WHC)/100) * Experimental WHC(%)) You will have to calculate this for every pot. Insert your calculated Reference Weights with commas separating them. Ensure you follow the above guidelines to help edit the code to best fit your experiment.",
+    "Once the REF weights and calibration code are inputted, make sure to Verify the code. If successful, upload the code to the Arduino via USB cable. Wait until the bottom terminal reads &#39;Done uploading&#39; Once the AAWsmo box is plugged in the code will begin running immediately up until the first pot where it will stall until you are ready to begin measurement. Before plugging in the Arduino make sure: -Nothing is on the black saucer or is obstructing it or the scale itself. Including no debris underneath the scale -The stand is level. -The stand is elevated slightly higher than the water level in the jar.",
+    "Open Microsoft Excel and select the &#39;Data Streamer&#39; tab.",
+    "Select &#39;Connect a Device&#39;. A drop-down menu will appear and the COM port where your Arduino is plugged in should say &#39;Arduino UNO&#39; next to it",
+    "Select the correct COM port. Once you select the COM port the Excel sheet will automatically reformat for data collection. At this point your screen will look something like this: The data will be stored newest at the bottom, showing the most current entry in the top row.",
+    "Before you press the button on the Arduino to start measurements remember to change the settings in the Data Streamer to increase the number of rows. You can do this by going to the &#39;Settings&#39; tab at the bottom of the screen and manually changing the number of rows. It is CRITICAL that you do this before data entries come in because once you change it, it will restart the data collection and start from scratch. Change the number of rows to a few spaces over your sample size. Extra rows won&#39;t hurt but too few rows will cause a loss of data. Once you change this, you can return to the &#39;Data In&#39; sheet. Another important note when using the Data Streamer: Many computers have a sleep time, where the computer goes to sleep after a certain time of inactivity. If the computer shuts down and/or falls asleep the Data streamer will stop data entry. To fix this, go to your computer&#39;s settings and manually change the time before sleep to a larger internal. It is also suggested that you keep your computer plugged into an outlet since the battery will drain faster while the AAWsmo machine is connected.",
+    "After the Data Streamer is properly set up and connected, load your first pot onto the scale, press the pushbutton, and begin measurements.",
+    "During the experiment keep a secondary smaller container to help you refill the water tank when water runs low. Also, ensure a dry and clean area around all wiring and the box. -Do not refill the water tank while the pump is active -Do not let the water level drop below 25% on the tank",
+    "If water seeps into the secondary basin make sure to add it back to the pot and dry off the saucer so as to not affect the accuracy of the scale."
+  ],
+  "authors": [
+    "Magdalena M Julkowska",
+    "Olga Khmelnitsky",
+    "Hayley Sussman"
+  ],
+  "creator": "Olga Khmelnitsky",
+  "published_on": 1676966906,
+  "created_on": 1668450927,
+  "keywords": []
+}

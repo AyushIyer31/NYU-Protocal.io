@@ -1,0 +1,30 @@
+{
+  "id": 33050,
+  "title": "BFM speed recording with back-focal-plane interferometry",
+  "uri": "bfm-speed-recording-with-back-focal-plane-interfer-bch2it8e",
+  "doi": "dx.doi.org/10.17504/protocols.io.bch2it8e",
+  "description": "{\"blocks\":[{\"key\":\"c6afl\",\"text\":\"The speed of bacterial flagellar motor (BFM) is measured with back-focal-plane interferometry. Heavily attenuated optical trap (855 nm laser) is used to detect the rotation of a polystyrene bead attached to a truncated flagellar filament. Time course of the bead rotation is recorded with the position-sensitive detector.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9gm07\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"eo8sc\",\"text\":\"Bead assay for back-focal-plane interferometry requires the use of a strain with \\\"sticky\\\" mutation in fliC gene encoding flagellin (e.h. KAF84, EK01, EK07)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":102,\"length\":4}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"95b5b\",\"text\":\"A person performing measurements must be trained in laser safety\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"aBfL1\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"W8YLm\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"KHVnv\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":119259,\"guid\":\"419810AD341F11EE9D4302C0B41BC903\",\"name\":\"Poly-l-lysine, 0.1% (wt/vol)\",\"mol_weight\":0,\"sku\":\"P8920\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":17,\"name\":\"Merck MilliporeSigma (Sigma-Aldrich)\",\"link\":\"http://sigmaaldrich.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":480502,\"guid\":\"4258475C341F11EE9D4302C0B41BC903\",\"name\":\"Polybead Microspheres 0.50μm\",\"mol_weight\":0,\"sku\":\"07307-15\",\"url\":\"https://www.polysciences.com/default/polybead-microspheres-050956m\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":722,\"name\":\"Polysciences, Inc.\",\"link\":\"http://www.polysciences.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Grow cells to the desired OD",
+    "Truncate flagellar filaments by passing a bacterial suspension through two syringes with narrow-gauge needles (26 gauge) connected with a plastic tube (“shearing device”) 30-80 times",
+    "Coat the surface of the tunnel-slide (or flow-cell) with 0.1% poly-L-lysin (PLL) by flushing PLL through the flow-cell/tunnel-slide for 10-20 s followed by washing it out with the excessive volume of the experimental medium (~20 times the volume of the channel).",
+    "Wash cells into the experimental medium 3 times by centrifugation at 8000*g for 2 minutes. We use microcentrifuge tubes to spin the cells down and resuspend the pellet in 1ml of the experimental medium. At the end of the wash resuspend the cells in the experimental medium to the desired concentration.",
+    "Load sheared and washed cells into the flow-cell/tunnel-slide and incubate for 10 min to allow attachment. Wash excessive cells out with the experimental medium.",
+    "Add 0.5 μm in diameter polystyrene beads (Polysciences, Inc, USA) resuspended in the experimental medium to the flow-cell/tunnel-slide and incubate for 10 min with consequent washing out of the non-attached beads.",
+    "Place a potential spinner into the focus of 855 nm laser. Infrared laser (855 nm continuous wave diode laser, Blue Sky Research, 855 laser)",
+    "Find the best position to see a circular trajectory and record the speed with 10 kHz sampling rate with the position sensitive detector with a 2.5 kHz cutoff anti-aliasing filter applied. PSD Model 2931 (Position sensitive detector, New Focus, PSD, https://s3.amazonaws.com/protocols-files/private/c2dfe2045578798a95cf65543ff1ddfa9303398bbdc7828499606de5bb7145f1/cb2xbbjwp.pdf )"
+  ],
+  "authors": [
+    "Teuta Pilizota",
+    "Ekaterina Krasnopeeva",
+    "Jerko Rosko"
+  ],
+  "creator": "Ekaterina Krasnopeeva",
+  "published_on": 1614692658,
+  "created_on": 1581598926,
+  "keywords": []
+}

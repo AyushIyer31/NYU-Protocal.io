@@ -1,0 +1,42 @@
+{
+  "id": 23139,
+  "title": "Calibrating 10-AU fluorometer to quantify extracted chl-a",
+  "uri": "calibrating-10-au-fluorometer-to-quantify-extracte-2ubgesn",
+  "doi": "dx.doi.org/10.17504/protocols.io.2ubgesn",
+  "description": "{\"blocks\":[{\"key\":\"d8dd7\",\"text\":\"This method is for use for calibrating the 10-AU flurometer using chl-a extracts. The method also provides guidelines for extracting chl-a and calculating absorbance using a spectrophotometer, making dilutions of extracts that can be used to create differetn chl-a concentrations\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5sd0l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"f0plj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"73v8i\",\"text\":\"Fixed Application can be found under \\\"general tests\\\" on the spectrophotometer. \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":17}],\"entityRanges\":[],\"data\":[]},{\"key\":\"4dl63\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dep7t\",\"text\":\"Make sure the cuvette is in the correct position for measurements. Misplacement may cause an error such as a negative absorbance measurement.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7r3og\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dsqa8\",\"text\":\"Spinach only has chlorophyll a. If using an organism that has more pigments, will have to subtract those from total absorbance (i.e. chlorophyll a - chlorophyll c).\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"4463l\",\"text\":\"97% acetone is flammable. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4kghq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"5qa9g\",\"text\":\"See MSDS safety and hazard warnings.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"3madv\",\"text\":\"97% acetone\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"fog8g\",\"text\":\"spinach or green plant as source for chlorophyll extracts\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Extract chlorophyll from 1 g of gound spinach with 5 mL of 90% acetone at -20 °C overnight.",
+    "Use the Biomate 5 spectrophotometer to measure the adsorption of extracted chlorophyll by adding 1 mL to a quartz cuvette. Make sure the cuvette is in the correct position in the machine. Zero the machine by blanking with 1 mL of 90% acetone. Measure &#34;multi λ&#34; with λ1 = 664 nm and λ2 = 647 nm. (Jeffrey 1975)",
+    "Calculate the concentration of diluted chlorophyll extract using the absorbance values from the spectrophotometer and the equation: concentration of chlorophyll a = 11.93(λ1) - 1.93(λ2) (Jeffrey 1975) If using an organism that has more pigments, will have to subtract those from total absorbance (i.e. chlorophyll a - chlorophyll c). The spinach we used did not require subtraction of chlorophyll c. Example: 11.93(0.736) - 1.93(0.479) = 7.85601 ug/ml",
+    "Convert answer from go to step #4 to ug/L, because this is the readout for the fluorometer.",
+    "Turn on the 10-AU Fluorometer and allow the instrument to warm up for at least 30 minutes.",
+    "Based on the absorbance value from go to step #2 : dilute the chlorophyll extract so that the absorbance is in optimum range for the fluorometer. Optimum rangle is Abs λ1 and λ2= 0.3-0.85. Example: Undiluted Abs λ1= 1.88 Abs λ2= 1.324 20-fold dilution: Abs λ1= 0.736 Abs λ2= 0.479",
+    "Create solutions of varying concentrations to test the fluorometer readings. Use C1V1=C2V2 to make solutions at different concentrations based on expected field concentrations, for example: 20, 10, 5, 1 and 0.5 ug/L. Also, create an acetone blank (with no chlorophyll). For example: 7,856 ug/L (C1) For a 5 ug/L concentration (C2) in 7 mls acetone (V2) (7,856 ug/L)(V1)=(5 ug/L)(7 ml) V1= 4.45519 ug",
+    "Use the concentration most expected in the field to set as the solid standard. Table 1 is an example of how to set the sensitivity scale for the 10-AU. Use the table to determine the appropriate range and %FS for the calibration standard.",
+    "Clear past calibrations on screen #2.6.",
+    "Access screen #2.43 and set range control to &#34;manual&#34; and range to the appropriate level for the standard chosen. For example, we set range control to &#34;Man&#34; and &#34;Med.&#34;",
+    "Access screen #3.2. Loosen the sensitivity locking screw using an allen wrench. (The sensitivity lock is the small screw to the left of the number pad.)",
+    "Insert and cover your selected standard concentration. Use a coin or tool to slowly turn the sensitivity knob (located to the right of the number pad, under the power button) to adjust the %FS to the value appropriate for the standard concentration according to Table 1 in go to step #8 . A deviation of 5% less than or greater than the table is acceptable. When %FS reaches the designated value, tighten the sensitivity lock. At this point, sensitivity is set. Example: For 5 ug/L. FS = 21%",
+    "Access screen #2.43 again, and set range control to &#34;auto.&#34;",
+    "Access screen #2.1. Insert and cover the acetone blank created in go to step #7 . Press &#34;1&#34; to Run Blank. Wait for the reading to stabilize for about 8 seconds, and then press &#34;0.&#34; The instrument will take 15 seconds to complete blanking. At this point, blank is set.",
+    "Calibrate with your standard:",
+    "Access screen #2.2 and input the actual concentration of your standard. Return to screen #2.0",
+    "Insert and cover the standard.",
+    "Run standard by pressing &#34;3.&#34; Wait about 8 seconds for reading to stabilize.",
+    "Press the &#34;*&#34; to set the calibration point. After about 15 seconds, a message with appear that says &#34;Finished&#34;.",
+    "Test the 10-AU fluorometer using the concetrations created in go to step #7 to assure appropriate readout. Example: Expected Observed 5 ug/L 5.01 ug/L 1 ug/L 1.11 ug/L Blank 0.0 ug/L"
+  ],
+  "authors": [
+    "Shelby Whitehead",
+    "Samantha R Coy",
+    "Steven W Wilhelm"
+  ],
+  "creator": "Shelby Whitehead",
+  "published_on": 1563375685,
+  "created_on": 1557762222,
+  "keywords": []
+}

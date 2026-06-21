@@ -1,0 +1,30 @@
+{
+  "id": 121101,
+  "title": "Mitpred2: an improved method for predicting mitochondrial proteins using SVM and HMM",
+  "uri": "mitpred2-an-improved-method-for-predicting-mitocho-d2hm8b46",
+  "doi": "dx.doi.org/10.1038/nprot.2007.488",
+  "description": "{\"blocks\":[{\"key\":\"whcep\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"cphie\",\"text\":\"Prediction of mitochondrial proteins is one of the major challenge in the filed bioinformatics due to their importance living organism.  Mitochondrial proteins are associated with diseases like Alzheimer, Perkinson and Type II diabetes. Thus it is important to develop method for predicting mitochondrial proteins.  The existing subcellular localization methods predict most of the location with high accuracy except mitochondrial protein. In order to improve accuracy of prediction of mitochndrial protein we developed a novel method Mitpred, based on presence of exclusive mitochondrial domains.\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"jcxt5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2rqhr\",\"text\":\"\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"xoio6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"j2qbt\",\"text\":\"Important points\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"gt7jd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"r6j6q\",\"text\":\"1. SVM models using split amino acid composition (25 N-terminal,\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9zlep\",\"text\":\"  25 C-terminal, and remaining residues)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fonsq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"sqe8o\",\"text\":\"2. HMM model for searching of exclusive mitochndrial domains\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4gbga\",\"text\":\"  3. Hybrid model combines SVM and HMM model\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"szijw\",\"text\":\"  4. Annotation of six organisms\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fq6zk\",\"text\":\"  5. Recently exclusive domains have been updated\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"gto34\",\"text\":\"  6. Evaluated using five-fold cross-validation and tested on blind dataset\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"edbft\",\"text\":\"  7. Server allow mapping of mitochndrial domians on users sequence\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"w1zur\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7bjw3\",\"text\":\"Protein sequence in FASTA format\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fdpzf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"j7pwb\",\"text\":\"User may submit multiple proteins at a time\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ta2yq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cmvd5\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"0x1yp\",\"text\":\"Any computer with web browser and Internet connection\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Go to http://www.imtech.res.in/raghava/mitpred/",
+    "Click on &#34;Submission Form&#34; button in left menu",
+    "Paste the one or more than one sequences in box in FASTA format",
+    "Select the model",
+    "Enter your email address if you are using HMM model",
+    "Mitpred2 may take long time if you wish to predict many sequences. It is advisable to enter your email. Result will be send by email. For bug reports please contact us at: raghava@imtech.res.in",
+    "Around 40 seconds for predicting one protein",
+    "1. It will predict whether a protein is mitochndrial protein or not 2. Server map exclusive mitochndrial domain on query sequency"
+  ],
+  "authors": [
+    "Manish Kumar",
+    "Ruchi Verma",
+    "Gajendra Raghava"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1194257460,
+  "created_on": 1194257460,
+  "keywords": []
+}

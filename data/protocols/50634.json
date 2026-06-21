@@ -1,0 +1,37 @@
+{
+  "id": 50634,
+  "title": "Microfluidic Chip Production v1.1",
+  "uri": "microfluidic-chip-production-v1-1-bvpin5ke",
+  "doi": "dx.doi.org/10.17504/protocols.io.bvpin5ke",
+  "description": "{\"blocks\":[{\"key\":\"bit0g\",\"text\":\"Protocol for producing microfluidic chips used in HyDrop experiment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "PDMS Chip production Pouring and baking of PDMS",
+    "Remove PDMS slab from mold and tape over features to prevent dust accumulation Puncture inlet holes with 1 mm biopsy needles. Perform this action while holding the PDMS chip on your PDMS mat to prevent biopsy needle blunting. Tip: when you puncture the slabs, do so at a slight angle so that the tube that you will connect through that hole will face slightly outward, away from the centre of the chip. This ensure that the tube or pipet tip will not block your microscope&#39;s light source.",
+    "Put glass slide into 50 mL falcon and add 1 mL of acetone. Shake well Wipe glass plate dry with dust-free cloth",
+    "Put glass microscopy slideon the glass plasmabonder plate Put chip with features facing up on the glass plasmabonder plate Vacuum glass + PDMS chip in plasma bonder until the pressure is stable under 1 mmHg Put plasma on HIGH for 30 seconds Turn off plasma bonder and take out the plate Quickly, press the PDMS slab firmly onto the glass plate. Press down well using flat object. Check for any possible delamination",
+    "Immediately after plasmabonding, flow 10 uL of silane in HFE (2%) through the channels Wet all channels quickly Blow out all oil in channels using the air gun.",
+    "Bake 4h @ 100 °C and store the finished chips with tape covering the inlets.",
+    "Producing an SU-8 patterned silicon wafer Here, we describe how we produce our microfluidic chips. The most important part is that the x/y dimensions of your droplet generators match ours. The z-dimension (channel height) may vary according to your method of spin-coating and the viscosity of your photoresist. We aim for a height of 70 to 80 micrometers. Deviations from this height will lead to different droplet sizes. If your final wafer has a slightly heigher or lower height, you may be able to adjust the flow rates during microfluidic operation to account for this difference.",
+    "Create a chrome UV mask design using the following chip designs: 20210610_hydrop_chip_design.dxf The design on the left is the hydrogel bead generator, the design on the left is a cell encapsulation chip used for both HyDrop-ATAC and -RNA. We bond our PDMS chips to regular 3 by 1 inch glass microscopy slides. Therefore, our mask design consists of several groups of 5-7 parallel copies of the microfluidic design, filling a 4 inch wafer. After wafer production, we place a small rectangular plastic &#34;dike&#34; onto the patterned wafer and pour the PDMS into the dike. This results in a PDMS slab that has 7 copies of the design and will fit perfectly onto a 3 by 1 inch glass microscopy slide.",
+    "Prepare your photoresist mixture. We use SU 8-2050 (Microchem) negative photoresist.",
+    "Spin coat your wafer to a layer height of 70 to 80 um. In our case, we use 4 inch wafers and spin at 500 rpm (ramp 100rpm/s) - 10s and 2000 rpm (ramp: 300rpm/s) - 30s, to achieve a feature height of 70-80 um). Deviations from height may result in different droplet size and encapsulation statistics.",
+    "Bake and clean your wafer per the recommendations of your photoresist&#39;s manufacturer.",
+    "Mix PDMS and curing agent (Dow Corning SYLGARD 184) at a ratio of 10 to 1. Mix thoroughly, and put under near-vacuum for 45 minutes. This will remove small air bubbles. Meanwhile, pre-heat an oven at 80 °C",
+    "Inspect your SU-8 patterned wafer for any dust or imperfections and place a rectangular PMMA (or other non-reactive plastic) dike around the patterned imprint to hold the PDMS. Check if no bubbles remain in the PDMS. Pour the PDMS into the PMMA holder/dike onto the wafer. Tip: you can pour leftover PDMS mix into a cell culture plate to create a PDMS mat. This PDMS mat can be used later during punching of holes through the PDMS chip. Bake in over for 4 hours (or at the shortest 2 hours) at 80 °C",
+    "Plasmabonding Bonding the PDMS chip to a glass slide. We use regular 3 by 1 inch microscopy slides. This protocol was written for our lab&#39;s setup, but the procedures we use are quite standard. It is possible that microfluidics expertise units use a slightly different method, which is also more than likely fine. The end result needs to be a tightly sealed transparent microfluidic chip of which the channels are hydrophobic.",
+    "Clean the surface of your PDMS chip by repeatedly using a piece of tape to collect any dust"
+  ],
+  "authors": [
+    "Florian De Rop",
+    "Stein Aerts",
+    "Suresh Poovathingal"
+  ],
+  "creator": "Florian De Rop",
+  "published_on": 1624000148,
+  "created_on": 1623271598,
+  "keywords": []
+}

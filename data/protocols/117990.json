@@ -1,0 +1,36 @@
+{
+  "id": 117990,
+  "title": "CUT and RUN - Fresh cells",
+  "uri": "cut-and-run-fresh-cells-dxge7jte",
+  "doi": "dx.doi.org/10.17504/protocols.io.36wgqdb83vk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"stqm\",\"text\":\"This protocol describes how to perform CUT\\u0026RUN on fresh iPSC cells (optimisation might be required for other cell types). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Detach cultured cells with Accutase (37 °C incubation for 5 minutes, or until cells completely detach) and resuspend in washing buffer (10% knockout serum [KSR] in iPSBrew). NOTE: For optimal outcome, it is essential to use fresh cells. Handle them carefully to avoid stress.",
+    "Pellet cell by centrifuging them at 400xg for 00:05:00 .",
+    "Activate ConA-coat magnetic beads (Epicypher) by washing twice in bead binding buffer [20 mM HEPES pH 7.5, 10 mM KCl, 1 mM CaCl, 1 mM MnCl 2 ]. Place on ice until use.",
+    "Centrifuge cells at 600xg for 00:03:00 .",
+    "Bind cells to beads for 00:10:00 at RT on and end-over-end rotator, and then split bead-bound cells into three equal volumes (corresponding to IgG control, H3K4me3 and H3K9me3 treatments).",
+    "Remove wash buffer and resuspend nuclei in 100 µL cold nuclear antibody buffer (20 mM HEPES pH 7.5, 0.15 M NaCl, 0.5 mM Spermidine, 1x Roche complete protease inhibitors, 0.02% w/v digitonin, 0.1% BSA, 2 mM EDTA) containing primary antibody at 1:50 dilution and incubate at 4 °C Overnight with gentle shaking.",
+    "Wash nuclei thoroughly with nuclear digitonin wash buffer (20 mM HEPES pH 7.5, 150 mM NaCl, 0.5 mM Spermidine, 1x Roche cOmplete protease inhibitors, 0.02% digitonin, 0.1% BSA) on the magnetic stand.",
+    "After the final wash, add pA-MNase in nuclear digitonin wash buffer and incubate with the nuclei at 4 °C for 01:00:00 . Wash nuclei twice, resuspend in 100 µL digitonin buffer, and chill to 0 °C - 2 °C in a metal block sitting in wet ice.",
+    "Stimulate genome cleavage by addition of 2 mM CaCl 2 at 0 ºC for 30 min. Quench the reaction by additing 100 µL 2x stop buffer (0.35 M NaCl, 20 mM EDTA, 4 mM EGTA, 0.02% digitonin, 50 ng/µL glycogen, 50 ng/µL RNase A, 10 fg/µL yeast spike-in DNA) and vortex.",
+    "Incubate 00:30:00 at 37 °C to release genomic fragments. Place bead-bound nuclei on the magnet stand and purify fragments from the supernatant using a NucleoSpin clean-up kit (Macherey-Bagel).",
+    "Prepare Illumina sequencing libraries using the Hyperprep kit (KAPA) with unique dual-indexed adapters (KAPA).",
+    "Resuspend in media, count cells and harvest 500 000 cells per condition (antibody). EXAMPLE: If you are running a CRISPRi experiment (CRISPRi gRNA hiPSCs &amp; non-targeting control hiPSCs) and you want to perform H3K9me3 CUT&amp;RUN on both conditions, you will harvest 500 000 CRISPRi and 500 000 control hiPSCs. Since you also need to include CUT&amp;RUN controls (e.g. IgG control), you will need 500 000 more per condition- In total: 1 000 000 CRISPRi hiPSCs &amp; 1 000 000control hiPSCs.",
+    "Remove supernatant, and resuspend cells in 800 µL of XL-Wash Buffer (20 mM HEPES pH 7.5; 150 mM NaCl; 0.5 mM spermidine; 1 Roche Complete Protease Inhibitor EDTA-free tablet; 1% Triton X-100; 0.05% SDS - all diluted in dH2O).",
+    "Repeat washing steps 5 &amp; 6 2 more times.",
+    "Add 10 µL of pre-activated ConA-coated beads per condition (i.e. 30ul if using 3 different antibodies)"
+  ],
+  "authors": [
+    "anita.adami",
+    "Laura Castilla-Vallmanya"
+  ],
+  "creator": "Laura Castilla-Vallmanya",
+  "published_on": 1736459200,
+  "created_on": 1736428230,
+  "keywords": []
+}

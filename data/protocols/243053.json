@@ -1,0 +1,41 @@
+{
+  "id": 243053,
+  "title": "SP3 protein digestion",
+  "uri": "sp3-protein-digestion-hrkmb54u7",
+  "doi": "dx.doi.org/10.17504/protocols.io.ewov11k8pvr2/v3",
+  "description": "{\"blocks\":[{\"key\":\"dirbl\",\"text\":\"SP3 utilises Sera-Mag beads which provide efficient magnetic separation for proteomics applications. The carboxylic groups on its surface allow to covalently couple proteins (or other biomolecules), using its carbodiimide chemistry. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dm6l2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"6ekk4\",\"text\":\"SP3 is compatible with different  buffers, such as ABC, HEPES, Tris-Cl.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2sc6k\",\"text\":\"It is also compatible with detergents: SDS, NP-40 and RapiGest. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"77css\",\"text\":\"For protein isolation, make sure the DNA content is as minimal as possible by adding bezonase or by shearing by mechanical means such as sonication. DNA can coat the beads, causing them to aggregate or adhere to the tube walls. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"64etj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a6cfr\",\"text\":\"Materials:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"13tjj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a36ke\",\"text\":\"Sera-Mag Carboxylate SpeedBeads (E7 Cat. #45152105050250 and E3 Cat. #65152105050250).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"boj9b\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"afaoi\",\"text\":\"Magnetic tube rack.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"37vq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"diesi\",\"text\":\"Reagents:\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"bpg06\",\"text\":\"Ethanol (EtOH) HPLC/Spectrophotomeric grade 200 proof (Sigma-Aldrich Cat. #459828).\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c4dr0\",\"text\":\"Trypsin (Pierce™ Trypsin Protease, MS Grade-5 x 20 µg)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8sm08\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cupdu\",\"text\":\"Ammonium Bicarbonate (AmBic) (Sigma Aldrich BioUltra - \\u003e 99.5% Cat. #09830) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6bsm5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dcvoj\",\"text\":\"DTT (1M) (Sigma-Aldrich Cat. #D5545)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e1e7s\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c46kr\",\"text\":\"IAA (1M)  (Sigma-Aldrich Cat. #I1149)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"avhjf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a99n0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a2gkd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Sera-Mag Carboxylate SpeedBeads are stored at 50mg/mL concentration (5% solids) in water with 0.05% sodium azide and should be stored at 4°C when not in use.",
+    "Take the beads out of storage at 4°C and let them equilibrate to room temperature for 30 minutes. Resuspend by inversion or gentle vortexing.",
+    "Prepare a fresh 1:1 bead mix before each experiment by combining equal volumes of E3 and E7 stock beads (if only one kind is available continue on with just one). The final volume should be the equivalent to 6 uL of beads, which corresponds to 10 x the protein amount: 300 ug of beads (6 uL).",
+    "Briefly vortex the mixture and place the tube on the magnetic stand for two minutes to collect the beads. Aspirate and discard the storage buffer.",
+    "Wash the beads 3x with ultrapure water at a volume corresponding to 5–10× the initial volume of mixed beads. In this case, wash with 60 uL of ultrapure water.",
+    "Add DTT to the sample to a 10 mM final concentration and briefly vortex.",
+    "Vortex the beads for 10 seconds and place them on the magnetic stand for two minutes to collect the beads. Resuspend in 30 uL of ultrapure water to have a final concentration of 10 ug/uL",
+    "Bead concentration should always be maintained higher than 0.5 ug/uL during protein binding. When working with less than 1 ug input material, add excess beads. The protein concentration the SP3 beads allow for is quite wide (10ug/mL to 5mg/mL). Bead to protein ratio should be 5-10 ug to 1 ug of protein.",
+    "Reduce and denature the samples at 56°C for 30 minutes with gentle shaking.",
+    "Add IAA to 22.5 mM final concentration and briefly vortex. Incubate for 30 min at RT in the darkness.",
+    "Check pH fo the samples (7 to 8.5 optimal).",
+    "Add samples onto the beads and gently vortex. For example, adding 100 uL of sample will bring the beads concentration down to 2.3 ug/uL, which is still over the 0.5 ug/uL threshold.",
+    "Immediately add a volume of 100 % ethanol to bring it&#39;s final concentration to 50 %. Incubate samples at 1000rpm for 10 min at RT.",
+    "Wash 3x total with 80% Ethanol to at least twice the initial volume of sample and vortex briefly. When washing, use a magnetic rack to discard the excess liquid an apply fresh ethanol.",
+    "After the final washing step, remove as much ethanol as possible without touching the beads and air dry for ~ 30s.",
+    "Resuspend the beads in 100ul (100 mM) ammonium bicarbonate (ABC). Vortex if the beads clump together.",
+    "Resuspend trypsin in 20 ul 0.1% TFA and 80 ul ABC.",
+    "Add 1 ul (200 ng) Trypsin to the resuspended beads.",
+    "Digest overnight by incubating the beads at 37 o C and 500 rpm.",
+    "The following protocol has been adjusted for 30 ug input per sample.",
+    "SP3 is compatible with different buffers, such as ABC, HEPES, Tris-Cl. Regardless of the buffer used, its volume should never dilute the bead concentration below 0.5 µg/µL when added to the beads."
+  ],
+  "authors": [
+    "Cristina CARDENAL PERALTA"
+  ],
+  "creator": "Cristina CARDENAL PERALTA",
+  "published_on": 1770829893,
+  "created_on": 1770822762,
+  "keywords": []
+}

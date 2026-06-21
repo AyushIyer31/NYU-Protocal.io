@@ -1,0 +1,27 @@
+{
+  "id": 122231,
+  "title": "Determination of Length of (Earth) Day [LOD] in the past geologic epochs",
+  "uri": "determination-of-length-of-earth-day-lod-in-the-pa-d3kx8kxn",
+  "doi": "dx.doi.org/10.21203/rs.3.nprot-7325/v2",
+  "description": "{\"blocks\":[{\"key\":\"s07bp\",\"text\":\"The protocol describes the algorithm of arriving at LOD in a given past geologicel Epoch. First the lunar orbital radius of the given geologic epoch has to be determined. For this the velocity of recession of Moon for the accelerated phase has to be determined. The spatial integral of the reciprocal of Velocity of recession gives the  transit time of Moon from desired orbit to the present orbit.Through several iterations the transit time is made to converge on the geologic epoch. Once we determine the desired orbital radius it has to be substituted in the LOD expression to determine the LOD in the given geologic epoch.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bohht\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"xgyml\",\"text\":\"Earth-Moon is tidally evolving ever since its birth 4.467Gy ago. Earth Day has lengthened from 5 hours at inception to the present 24 hours, sidereal month(orbital period of Moon around Earth) has evolved from 5 hours to 27.322 days, Moon was born at 18,000 Km from the center of Earth .Today it has receded to 3.844^8 m lunar orbit. It continues to evolve still further. Geophysical and geographical changes get reflected in LOD curve fluctuations.Study of real time changes in LOD curve may give precursors forecasting Earth-quakes and sudden volcanic eruptions.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"yo3ta\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Set up the velocity of recession expression so as to obtain 3.7cm/y recession in the present time.",
+    "Set up the numerical integration of the reciprocal of the Velocity of Recession and spatially integrate it from a given lunar orbit to the present lunar orbit of 3.884^8m.",
+    "Through several iterations make the integrand converge to the past geologic epoch time magnitude. This gives the desired lunar orbit which existed in the past geologic epoch.",
+    "Substitute this desired lunar orbit in LOD expression in hours.",
+    "We have obtained the LOD in the given past geologic epoch.",
+    "There is no conflicting interest financial or otherwise with any third party whatsoever.",
+    "Protocol_procedures.Docx Supplementaary Document 1. Parameters for Iteration Supplementary document gives the parameters for setting up the Velocity of recession ang for for setting up the LOD expression. Protocol Procedure_march_2020.Docx"
+  ],
+  "authors": [
+    "Bijay_Kumar Sharma"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1585573140,
+  "created_on": 1585573140,
+  "keywords": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": 235780,
+  "title": "Single-step assembly of double guide plasmid (pCas9-Duo) for gene-editing in Plasmodium ",
+  "uri": "single-step-assembly-of-double-guide-plasmid-pcas9-hihcb4b2x",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvjn9d5gk5/v2",
+  "description": "{\"blocks\":[{\"key\":\"e1c19\",\"text\":\"This protocol describes a one-pot GoldenGate assembly of a new dual-guide targeting plasmid (pCas9-Duo) expressing two distinct guide RNAs in order to enhance the chances of a successful Cas9-mediated modification at a target region in Plasmodium falciparum. Designed as part of SHIFTiKO (frameshift-based trackable inducible knockout) system1 (based on2).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":236,\"length\":21},{\"style\":\"sup\",\"offset\":342,\"length\":1},{\"style\":\"sup\",\"offset\":353,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Add the overhangs &#34;ATTG&#34; and &#34;AAAC&#34; to forward and reverse oligos of gRNA1, and &#34;TTGG&#34; and &#34;TAAA&#34; to gRNA2 respectively. For predicting gRNAs, please refer to this protocol - Design strategy for DiCre-mediated inducible gene knockout in the malaria parasite by Abhinay Ramaprasad Double guide plasmid containing two gRNA expression cassettes with distinct insertion sites. When you have lot of targets, you can also use this sheet to create final sequences ready for oligo ordering to avoid inadvertent errors - pCas9-Duo-overhangs.xlsx",
+    "Set up annealing reactions. 1.0 µL gRNA.F 100 micromolar (µM) 1.0 µL gRNA.R 100 micromolar (µM) 1.0 µL T4 DNA Ligase Reaction Buffer - 6.0 ml New England Biolabs Catalog #B0202S 0.5 µL T4 Polynucleotide Kinase - 500 units New England Biolabs Catalog #M0201S 6.5 µL Nuclease-free Water Contributed by users",
+    "Step 1 37 °C 00:30:00 Step 2 94 °C 00:05:00 Step 3 90 °C to 25 °C RAMP 5 °C, per minute Step 4 4 °C Hold",
+    "Make 1:200 dilution mixture of annealed gRNA1 and gRNA2. 1 µL gRNA1 annealed reaction 1 µL gRNA2 annealed reaction 198 µL Nuclease-free Water Contributed by users",
+    "Set up assembly reaction 2 µL pCas9 200 ng/µL 1 µL 1:200 diluted oligo 0.5 µL BbsI-HF - 300 units New England Biolabs Catalog #R3539S 0.5 µL Hi-T4 DNA Ligase New England Biolabs Catalog #M2622S 2 µL Cutsmart Buffer Contributed by users 2 µL UltraPure ATP 10mM Promega Catalog #NC2683865 12 µL Nuclease-free Water Contributed by users",
+    "Step 1 37 °C 00:05:00 Step 2 25 °C 00:05:00 Repeat Step 1-2 for 6 cycles Step 3 4 °C Hold",
+    "Add 2 µL of assembly reaction to 15 µL ultracompetent cells (like NEB 5-alpha Competent E.coli (High Efficiency) - 6x0.2 ml New England Biolabs Catalog #C2987I ). We have observed that the competent cells used in the previous version - XL-10 Gold Ultracompetent cells Agilent Technologies Catalog #200314 do not perform consistently for this reaction.",
+    "Place On ice for 00:20:00 .",
+    "Heat shock at 42 °C for 00:00:40 and spread transformed cells on LB plates with 100 µg/ml ampicillin Contributed by users .",
+    "Pick colonies, miniprep-isolate plasmids and screen for gRNA1 and gRNA2 insertions by Sanger sequencing using M13 Reverse Contributed by users (CAGGAAACAGCTATGAC) and M13Forward_reverse Contributed by users (ACTGGCCGTCGTTTTAC), respectively. Usually we get 2-18 colonies out of which 2 colonies are screened. If processing a lot of samples, you can use this Shiny app pCas9-Duo-check to quickly screen the presence of both gRNA inserts in your colonies. Just ensure that you enter sample and primer names when submitting for Sanger sequencing such that your .ab1 filenames will be a) named uniquely for each colony and b) contain &#34;M13R&#34; or &#34;M13FR&#34; as primer names.",
+    "For some targets, we have observed that whilst gRNA01 insertion is very efficient, gRNA02 repeatedly fails. In these cases, instead of repeating the reaction from scratch or screening more colonies, we have had more success by simply repeating the GoldenGate reaction (Step 4 onwards) with pCas9-Duo-gRNA01 plasmid obtained in Step 10 as backbone and 1:200-diluted annealed gRNA02 as insert."
+  ],
+  "authors": [
+    "Abhinay Ramaprasad"
+  ],
+  "creator": "Abhinay Ramaprasad",
+  "published_on": 1766587470,
+  "created_on": 1766582800,
+  "keywords": []
+}

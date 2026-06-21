@@ -1,0 +1,30 @@
+{
+  "id": 23165,
+  "title": "Enhanced convolutional neural network for plankton identification and enumeration",
+  "uri": "enhanced-convolutional-neural-network-for-plankton-2u5gey6",
+  "doi": "dx.doi.org/10.17504/protocols.io.2u5gey6",
+  "description": "{\"blocks\":[{\"key\":\"5m194\",\"text\":\"This is an automatic plankton image recognition and enumeration system using an enhanced Convolutional Neural Network (CNN) and examined the performance of different network structures on automatic plankton image classification.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "The whole procedure for the proposed method. This is a flow chart illustrating the different steps and modules in the proposed automated plankton identification and enumeration procedure.",
+    "The several substeps for the proposed method.",
+    "Adaptive ROI extraction based on the following steps. Calculate the mean value of image intensity based on the following formula: Calculate the Mean Signal-to-Noise Ratio value of the image based on the following formula: Calculate the threshold of the image based on Sauvola&#39;s method: Binarize the image based on Sauvola&#39;s method. Extract ROIs based on the connected domain of the binarized image.",
+    "ROI enhancement based on the following method. A. Target feature enhancement based on the following formula: B. Background suppression based on the following formula:",
+    "Train CNN combined with multi-class SVM model based on the in situ plankton databset. The fully connected layers from the selected CNN models were used to describe sample features and were used as the input for the multi-class SVM model. The multi-class SVM model is a one vs. one type, and the linear relationship between the input and output can be described by the following formula: Save the trained model for next identification and enumeration. Note: you can get the dataset at https://doi.org/10.6084/m9.figshare.8146283 .",
+    "Identification and enumeration. The input of this procedure is the original in situ plankton image, and the output (statistical results of every plankton image for each class) is save in a file in the &#39;. xlsx&#39; format. Note: you can learn more details in our open codes in MATLAB language at https://github.com/KaichangCHENG/PIE-MC/tree/master/EnhancedCNN ."
+  ],
+  "authors": [
+    "Kaichang K Cheng",
+    "Xuemin Cheng",
+    "Yuqi Wang",
+    "Hongsheng Bi",
+    "Mark C. Benfield"
+  ],
+  "creator": "Kaichang K Cheng",
+  "published_on": 1562861162,
+  "created_on": 1557802293,
+  "keywords": []
+}

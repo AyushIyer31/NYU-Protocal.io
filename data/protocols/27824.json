@@ -1,0 +1,33 @@
+{
+  "id": 27824,
+  "title": "DNaseI and flowcell clearing for increasing long read yields and multi-sample sequencing",
+  "uri": "dnasei-and-flowcell-clearing-for-increasing-long-r-7eqhjdw",
+  "doi": "dx.doi.org/10.17504/protocols.io.7eqhjdw",
+  "description": "{\"blocks\":[{\"key\":\"8hr4p\",\"text\":\"DNaseI and flowcell clearing for increasing long read yields and multi-sample sequencing\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":88}],\"entityRanges\":[],\"data\":[]},{\"key\":\"dtkoi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"b9geb\",\"text\":\"The use of the Nuclease flush protocol (DNaseI digestion of DNA on the surface of the flowcell) has become an integral part of our long reads sequencing efforts. These can be seen in the figure above \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":40,\"length\":54}],\"data\":[]},{\"key\":\"7tm5v\",\"text\":\"(Protocol 'Modified LSK109 ligation prep with needle shear and bead clean up') and can be seen as increases in data yield accumulations on the curves. In the case of our native rat genomic sequencing we see an accumulation of pore blockage over time that is DNA fragment length dependent. Shown below are two libraries produced from an identical sample sheared to an increasingly smaller size and run.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7t6le\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"t3tfq\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"9qnnf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"dpije\",\"text\":\"Using DNaseI surface clearing we often see recovery of an additional 50 – 80 % of total reported pores on top of what a mux scan reports before treatment as long as the flowcell surface has not been “damaged” in some other way. You can monitor the process live if you restart a run and then pipette in the DNaseI clearing solution and watch the duty plots (see below). Once complete in ~30 mins flushing back to FLB/PFB and re-tethering will on a restart produce a pore count of what you have left to use. The flowcell is “reset” ready for the next library addition and run restart. That may be the same library again or something different……\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"fihac\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"f9anf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"7cpvu\",\"text\":\"With our “blocky” rat genomic samples sheared to 18-34kb we have been performing these resets every 16 – 24 hrs. For larger fragment lengths we will likely shorten this time period so the flowcell is not sitting there in an unproductive “blocked” state. It might be time for some MinKNOW scripted automated yield monitoring and hardware surface clearing hacks ;o).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"DF6048D0D96E11E99CFAF73C3E59A2E1\",\"url\":\"https://community.nanoporetech.com/protocols/nuclease-flush-protocol/v/NFL_9076_v109_revB_08Oct2018\"}},\"1\":{\"type\":\"image\",\"mutability\":\"\",\"data\":{\"guid\":\"616D5F3D341F11EE9D4302C0B41BC903\",\"height\":398,\"is_image\":true,\"is_video\":false,\"legend\":\"{\\\"blocks\\\":null,\\\"entityMap\\\":null}\",\"mime\":\"image/jpeg\",\"original_name\":\"Needle Shear2.JPG\",\"placeholder\":\"https://content.protocols.io/public/4fcabc74c3c0f3855bba3ed7dc75c39f9eee97a697f90c3c05fc8261af91febe/bq997vcw.jpg\",\"source\":\"https://content.protocols.io/public/4fcabc74c3c0f3855bba3ed7dc75c39f9eee97a697f90c3c05fc8261af91febe/bq997vcw.jpg\",\"width\":637}},\"2\":{\"type\":\"image\",\"mutability\":\"\",\"data\":{\"guid\":\"616D5F90341F11EE9D4302C0B41BC903\",\"height\":398,\"is_image\":true,\"is_video\":false,\"legend\":\"{\\\"blocks\\\":null,\\\"entityMap\\\":null}\",\"mime\":\"image/jpeg\",\"original_name\":\"DNaseI digestion.JPG\",\"placeholder\":\"https://content.protocols.io/public/4fcabc74c3c0f3855bba3ed7dc75c39f9eee97a697f90c3c05fc8261af91febe/braa7vcw.jpg\",\"source\":\"https://content.protocols.io/public/4fcabc74c3c0f3855bba3ed7dc75c39f9eee97a697f90c3c05fc8261af91febe/braa7vcw.jpg\",\"width\":636}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"d56e1\",\"text\":\"Please see SDS (Safety Data Sheet) for hazards and safety warnings.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"234p9\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Mix together 200 µL FB + 2 µL 100 millimolar (mM) CaCl 2 + 2 µL DNaseI (2U per ul) to form DNaseI flowcell digestion buffer",
+    "Add 200ul of DNaseI Digestion buffer to the flowcell through the sample port and close",
+    "Incubate for 20mins to 2hrs depending on sample, monitoring the Single Pore : Strand numbers reported in MinKNOW",
+    "Flush flowcell by adding 400ul of FB buffer through the Sample Port",
+    "Add 500ul of FB + Tether to the flowcell through the Sample Port",
+    "Close Sample Port and Incubate for 5 mins",
+    "Open Sample Port and remove any air. Open SpotOn port and prime by addition of a small volume of FB + Tether through the Sample Port.",
+    "Start MinKNOW and monitor Single Pore : Strand numbers",
+    "Open Sample Port and remove any air as usually done when first using a flowcell",
+    "Once strand pore count has dropped to desired level stop MinKNOW",
+    "Open Open Sample Port and remove any air",
+    "Add 75ul freshly prepared library (DNA + SQB + LLB (optional)) by spotting onto the SpotON port. Once library has enetered the flowcell close first the SpotON Port followed by the Sample Port.",
+    "Now ready to Start the sequencing run in MinKNOW"
+  ],
+  "authors": [
+    "John Tyson"
+  ],
+  "creator": "John Tyson",
+  "published_on": 1580336719,
+  "created_on": 1568740403,
+  "keywords": []
+}

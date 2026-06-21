@@ -1,0 +1,29 @@
+{
+  "id": 106311,
+  "title": "Image Capture and Neuropathological Quantification of post-mortem human brain tissue",
+  "uri": "image-capture-and-neuropathological-quantification-dj3f4qjn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ld86qnv5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"9rl5m\",\"text\":\"This protocol details the fluorescent image analysis pipeline using QuPath to analyse pathological inclusions within human post-mortem brain tissue.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"7ou06\",\"text\":\"The  protocol for labelling human tissue can be found here dx.doi.org/10.17504/protocols.io.n92ld8nxxv5b/v1.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ebk9e\",\"text\":\"This protocol can be modified to be applied for other combinations of markers and fluorophores. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"4qr0c\",\"text\":\"It is recommended that you review the SDS (Safety Data Sheets) for all materials prior to commencement. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"530mu\",\"text\":\"Software\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8},{\"style\":\"italic\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6jelj\",\"text\":\"QuPath (version 0.5.1). \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2ifg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Post-mortem human immunofluorescent sections were scanned using an Olympus VS200 slide scanner at 20x for Quantification. Cell count and area measurements were completed on digital images using QuPath (version 0.5.1). The QuPath quantification protocol followed the steps listed below.",
+    "For the midbrain, Substantia Nigra pars compacta (SNC) was divided into non-overlapping subregions: SNC dorsal tier (SNCD), SNC ventral tier (SNCV), SNC lateral tier (SNL), SNC medial tier (SNCM), using tyrosine hydroxylase (TH) positive cells as an anatomical landmark. For the cortex, the grey matter was divided into non-overlapping subregions: superficial grey matter (SGM) and deep grey matter (DGM), using HuD positive neurons as the guidelines. The white matter (WM) was categorized separately based on DAPI density and nuclear size.",
+    "The point tool was used to identify TH+ neurons if cells contain visible TH+ signal and/or neuromelanin. The point tool was used to identify aSyn+, AT8+, or p62+ signals based on cells recognised from step 1 Grid lines are then applied superimposed on the image to assist with cell counting and categorization using a counter.",
+    "Automated cell detection was used to recognize HuD+ cells. Parameters were optimized by comparing with manual counting until &lt; 10% variance was achieved. An object classifier was created to recognize HuD+ cells with/without aSyn+, AT8+, or p62+ signals. Parameters were optimized by comparing with manual counting until &lt; 10% variance was achieved. These object classifiers were then applied to the step 1 recognised HuD cells.",
+    "Automated particle detection was used to recognise aSyn+, AT8+, or p62+ particles. The minimal size of aSyn+, AT8+, or p62+ particles was set at 10mm 2 to avoid of false counting. Parameterswere optimized by comparing with manual counting until &lt; 10% variance was achieved. The same object classifiers from the previous step 2 of the “HuD+ cell with/without aSyn+/AT8+/p62+” were applied to the aSyn+ and AT8+particles according to the order below: a. aSyn + particle detection -&gt; AT8+ classifier and p62+ classifier applied sequentially b. AT8+ particle detection -&gt; aSyn + classifier and p62+ classifier applied sequentially",
+    "Automated cell detection was used to recognize nuclei with DAPI. Parameters were optimized by comparing with manual counting until &lt; 10% variance was achieved."
+  ],
+  "authors": [
+    "Felicia Suteja",
+    "Hongyun Li",
+    "YuHong Fu",
+    "Glenda Halliday"
+  ],
+  "creator": "courtney.wright Wright",
+  "published_on": 1724403467,
+  "created_on": 1724398305,
+  "keywords": []
+}

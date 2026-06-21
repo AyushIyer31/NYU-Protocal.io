@@ -1,0 +1,40 @@
+{
+  "id": 51088,
+  "title": "Installing Swarm of Pis ",
+  "uri": "installing-swarm-of-pis-bv5qn85w",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"f3r0f\",\"text\":\"This protocol guides you through the installation of a swarm of raspberry Pis\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"2t26i\",\"text\":\"Setup only 1 Rpi at a time to be able to identify the IP address\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"42m27\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Install Ubuntu: https://itsfoss.com/install-ubuntu-1404-dual-boot-mode-windows-8-81-uefi/ https://ubuntu.com/download/desktop/thank-you?version=20.04.2.0&amp;architecture=amd64 Mini PC LinuxCheatSheet[22].pdf",
+    "Download RPi clone : https://www.dropbox.com/sh/1amlryd6fecnxy6/AAC9ciEt40Nshn_uxyLiahRaa?dl=0 Download and install RPi Manager (works best on MacOS or Ubuntu): https://www.raspberrypi.org/software/",
+    "Run RPi Manager For Operating system : Select &#34;Use Custom .img&#34; at the bottom and select your RPi Clone int he dropbox folder For Storage : Install the SD drive in the SD drive reader and select the SD drive &#34;/boot&#34; Click &#34; Write &#34; and Accept the warning message Let it Flash! Repeat for every SD card, you can just select the new Storage after swapping SD Cards",
+    "Read the paper here: Order Parts: parts list.xlsx add power strips,",
+    "Put together RPi parts: Connect RPi to NoIR Camera using the 2 ft flat connector (Blue tab on the side of the black connector) Connect the PoE HAT to the RPi Connect the RPi to Ethernet cable Connect Ethernet cable to the Ethernet Switch Install the IR Lights on the top of the cages using the Med Associates screws and plug it to 12V adapter",
+    "Repeat for each Pi",
+    "Setup Parameters for the Ethernet Switch: https://github.com/alexcwsmith/PiRATeMC/tree/master/networking",
+    "Install Open SSH",
+    "Setup UCSD LAN and private LAN",
+    "Get the cameras IP list: rpicam@set1110Videos:~$ dhcp-lease list",
+    "Type in the browser (Chrome) the IP address of the Camera: 10.1.1.XX:8080 XX changes for each camera Select: Settings Vertical mirror: enable AWB mode: OFF Save Home",
+    "Build the camera holder",
+    "Setting up new RPi DO ONLY 1 AT A TIME TO IDENTIFY THE IP ADDRESS install SD card with no power in Rpi Power the Rpi (USB)",
+    "In the Linux Terminal Get the IP address: it will be the newest ip address listed: here 10.1.1.64 dhcp-lease-list",
+    "Take control of the RPi Type in the following code Select: yes when prompted to continue connecting Enter the password: raspberry ssh pi@10.1.1.64 then the three successive commands will be the following: and will be explained step by step below nano .bashrcnano ./recordVideo.shsudo raspi-config",
+    "Modify the RPI Hostname sudo raspi-config Change the Hostname to something like Set1110Box11",
+    "Add the Box # to the ./recordVideo/sh file PS: if you need first to reconnect with the pi use ssh, if not just use nano ssh pi@10.1.1.64nano ./recordVideo.sh original file Add the Box number to the file after every $1_ (example : Box11) and change the parameters: box# there are 5 places to put the Box# nanfter the $1_ ... two in the line that starts with &#39; raspivid &#39; (NOTE THERE IS 1 AFTER GREYWORLD YOU MAY BEED TO ENLARGE THE SCREEN, twice in the line that starts with MP4Box , once in the line that starts with sshpass and once in the line with rm -br 55 -w 800 -h 600 Type Ctrl+X to exit and Save the file Y Type Enter to rewrite the file",
+    "Modify the .bashrc file to change the directory where the files are saved nano .bashrc sudo reboot",
+    "Add the Pi to the Alias on the .bashrc file of the MiniPC start terminal nano .bashrc Add the latest RPi to the list on the line that starts with alias alias camconnect=&#39;cssh pi@10.1.1.51 pi@10.1.1.52 pi@10.1.1.53 pi@10.1.1.54 pi@10.1.1.55 pi@10.1.1.56 pi@10.1.1.57 pi@10.1.1.58 pi@10.1.1.59 pi@10.1.1.64 &#39; alias camconnect='cssh pi@10.1.1.51 pi@10.1.1.52 pi@10.1.1.53 pi@10.1.1.54 pi@10.1.1.55 pi@10.1.1.56 pi@10.1.1.57 pi@10.1.1.58 pi@10.1.1.59 pi@10.1.1.64' That&#39;s it you can move on to the next RPi!",
+    "Test the recording"
+  ],
+  "authors": [
+    "Olivier George"
+  ],
+  "creator": "Olivier George",
+  "published_on": 1740773944,
+  "created_on": 1624729075,
+  "keywords": []
+}

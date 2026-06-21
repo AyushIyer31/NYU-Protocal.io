@@ -1,0 +1,26 @@
+{
+  "id": 51040,
+  "title": "Economic magnetic bead purification of PCR products",
+  "uri": "economic-magnetic-bead-purification-of-pcr-product-bv38n8rw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bv38n8rw",
+  "description": "{\"blocks\":[{\"key\":\"7aqor\",\"text\":\"Magnetic bead-based purification is a cheap, easy, and parallelizable solution for purifying nucleic acids from PCR reactions. Compared to column-based methods, the process described herein typically results in higher yields with easier handling of multiple samples, such as in a 96-well format. This protocol describes the reagents and steps needed to reproduce results obtained from similar commercial kits, such as Ampure XP beads, at a fraction of the cost. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Magnetic bead-based purification is a cheap, easy, and parallelizable solution for purifying nucleic acids from PCR reactions. Compared to column-based methods, the process described herein typically results in higher yields with easier handling of multiple samples, such as in a 96-well format. This protocol describes the reagents and steps needed to reproduce results obtained from similar commercial kits, such as Ampure XP beads, at a fraction of the cost.",
+    "Carboxylated magnetic beads can be obtained from original equipment manufacturers, such as Mclab (cat. MBC-100 ) or Bangs Laboratories. The Ampure XP beads from Beckman are overpriced relative to these counterparts. Prepare SPRI buffer according to this recipe (DNA version). Prepare 80% EtOH using molecular biology grade ethanol and water 0.5 M EDTA pH 8.0 Magnetic racks suitable for your vessel size (eppendorf, PCR tubes, 96-well PCR plate) can be found cheaply on eBay (40-80 USD). Buffer EB (10mM Tris-Cl pH 8.5)",
+    "This protocol is based on the original papers from the Whitehead Institute Carboxylate bead-based PCR product purification: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC307455/ Carboxylate bead-based plasmid purification: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC308491/ US20060024701A1",
+    "Determine size selection strategy Determine the bead ratio necessary for your application based off the principle of size selection (see pg. 1-3 here ; or this post ). For PCR reactions in which the product of interest is the highest bp product, I routinely perform left-sided selection at a bead ratio of 0.5x. The remainder of the protocol assumes a 0.5x bead ratio and left-sided selection of a 100uL PCR reaction.",
+    "Prepare beads For a 100uL PCR reaction at a 0.5x bead ratio, we will use 200ug of prepared beads. This amount is likely more than enough since beads have a high binding capacity: Bring SPRI buffer and carboxylated magnetic beads to room temperature Beads from Mclab are supplied as a 50 g/L slurry. Vortex the beads well and transfer 4uL of beads to an eppendorf tube. Add 1mL of 0.5M EDTA and vortex well. Mixing by pipetting incurs bead loss and should be avoided. Snap spin in a mini centrifuge to collect liquid down, open the eppendorf tube, and place on magnet for 2-3 minutes or until the beads appear to have cleared from the bulk medium. Discard supernatant. Repeat the previous step two more times for a total of three EDTA washes. Remove beads from magnet, add 50uL of SPRI buffer and resuspend by vortexing. Your beads are now prepared and in a format comparable to the Ampure XP beads. For convenience, beads can be prepared ahead of time in batches and stored at 4C.",
+    "PCR product purification Add 50uL of prepared beads to 100uL PCR reaction in an eppendorf tube. Vortex, snap spin, and incubate for 5 minutes. Open the tube and place on magnet for 2-3 minutes or until solution is clear. Remove supernatant. Consider this the negative fraction and save it for troubleshooting. Without disturbing the bead pellet, add 1mL 80% EtOH to the tube and then discard it. Qiagen Buffer PE can also be used for this step. Repeat the previous step once. Let beads air dry for 5 minutes with lid open. Underdrying the beads may not affect your yield as much as overdrying them, so do not let beads sit for &gt;10 minutes. If the beads appear parched they are too dry. Add your desired elution volume of Buffer EB, i.e. 30-50uL. Incubate for 5 minutes. Put tube on magnet for 2-3 minutes and let beads clear. Collect supernatant into a new tube. If supernatant appears yellowish, there are residual beads in the medium. To remove them, place the tube again on the magnet for 5 minutes and carefully remove the supernatant containing your purified PCR product."
+  ],
+  "authors": [
+    "Zaki Molvi"
+  ],
+  "creator": "Zaki Molvi",
+  "published_on": 1624596905,
+  "created_on": 1624572755,
+  "keywords": []
+}

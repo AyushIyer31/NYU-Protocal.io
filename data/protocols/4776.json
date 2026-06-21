@@ -1,0 +1,23 @@
+{
+  "id": 4776,
+  "title": "mRNA approach for transient expression in dinoflagellates",
+  "uri": "mrna-approach-for-transient-expression-in-dinoflag-gwgbxbw",
+  "doi": "dx.doi.org/10.17504/protocols.io.gwgbxbw",
+  "description": "{\"blocks\":[{\"key\":\"8ahvv\",\"text\":\"!!! ~~~~~ IN DEVELOPMENT ~~~~~ !!!\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"c0bj\",\"text\":\"This approach uses in-vitro transcription to generate a dinoflagellate-type mRNA (i.e. capped with the dino-SL leader), which is introduced into cells using an RNA transformation reagent. Screening for expression of the protein encoded in the mRNA follows.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"fvt6e\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"eugis\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":[]},{\"key\":\"9a45d\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"imageblock\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"C294D761F6A74785864A94BADE98C2F6\",\"height\":null,\"is_video\":false,\"mime\":null,\"original_name\":\"mCherry Dino gene.png\",\"placeholder\":\"https://content.protocols.io/hk4dnpn.png\",\"source\":\"https://content.protocols.io/hk4dnpn.png\",\"width\":null}}}}",
+  "before_start": "{\"blocks\":[{\"key\":\"8nrgg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"8aoqt\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "A gene with the following structure is generated, either by subcloning or gene synthesis: 5’-SP6-dinoSL-UTR-ORF-UTR-T7-3&#39; SP6: promoter for SP6 RNA polymerase for in-vitro transcription (e.g. MEGA Script by Ambion) DinoSL: 22-bp spliced leader present in all dinoflagellate mRNAs : CCGTAGCCATTTTGGCTCAAG UTRs are from the O. marina HSP90 gene ORF: encodes the protein of interest. In our case we use mCherry with codon usage optimized for Oxyrrhis marina T7: promoter for T7 RNA polymerase: it can be used to generate an antisense RNA to be used as a control For a fairly short gene (e.g. ~1Kb) gene synthesis is (presumably) preferably to subcloning, especially if custom codon usage is desirable",
+    "1) Linearize vector using a restriction enzyme with a single site away from the insert 2) Perform in-vitro transcription (e.g. MEGA Script by Ambion) 3) Perform CAPping reaction (Vaccinia Capping System by NEB) 4) Perform polyadenylation (e.g. E. coli poly (A) polymerase by NEB)",
+    "Introduce the synthetic mRNA into cells (e.g. TransIT mRNA transfection system)"
+  ],
+  "authors": [
+    "Claudio Slamovits"
+  ],
+  "creator": "Claudio Slamovits",
+  "published_on": 1492391502,
+  "created_on": 1483633037,
+  "keywords": []
+}

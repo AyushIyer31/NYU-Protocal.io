@@ -1,0 +1,28 @@
+{
+  "id": 120012,
+  "title": "In Vitro Phosphatase Assay",
+  "uri": "in-vitro-phosphatase-assay-dzfk73kw",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvm9b95l3p/v1",
+  "description": "{\"blocks\":[{\"key\":\"4ql5t\",\"text\":\"This protocol details the in-vitro phosphatase assay.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"nspk\",\"text\":\"Lysis Buffer:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":13}],\"entityRanges\":[],\"data\":{}},{\"key\":\"57l9l\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3tn5g\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"da9ao\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"atc8d\",\"text\":\"1x phosphatase buffer:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":22}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5ng22\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eufpf\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"fkc4k\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ean4o\",\"text\":\"  \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"3esd8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"MUTABLE\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"1_0\":\"\",\"1_1\":\"\",\"2_0\":\"\",\"2_1\":\"\",\"3_0\":\"\",\"3_1\":\"\",\"4_0\":\"\",\"4_1\":\"\",\"5_0\":\"\"},\"colTitles\":[\"A\",\"B\"],\"colWidths\":[\"193\",\"198\"],\"data\":[[\"Tris- HCl, pH 7.4\",\"20 mM\"],[\"NaCl\",\"150 mM\"],[\"EDTA\",\"1 mM\"],[\"EGTA\",\"1 mM\"],[\"Triton X-100\",\"1%\"],[\"Protease-inhibitor cocktail, but no phosphatase inhibitors\",\"\"]],\"guid\":\"C3C99DB2A8D74E8E8DA3AF7B83E4D3B6\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{\"A_6\":[2,1]},\"printData\":[[\"Tris- HCl, pH 7.4\",\"20 mM\"],[\"NaCl\",\"150 mM\"],[\"EDTA\",\"1 mM\"],[\"EGTA\",\"1 mM\"],[\"Triton X-100\",\"1%\"],[\"Protease-inhibitor cocktail, but no phosphatase inhibitors\",\"\"]],\"rowHeights\":[23,23,23,23,23,23]}},\"1\":{\"type\":\"tables\",\"mutability\":\"MUTABLE\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"1_0\":\"\",\"1_1\":\"\",\"2_0\":\"\",\"2_1\":\"\",\"3_0\":\"\",\"3_1\":\"\"},\"colTitles\":[\"A\",\"B\"],\"colWidths\":[142,100],\"data\":[[\"Tris- HCl, pH 7.4\",\"50 mM\"],[\"NaCl\",\"100 mM\"],[\"DTT\",\"2 mM\"],[\"MnCl2\",\"1 mM\"]],\"guid\":\"5A911C9780FC47048F017CAE622E1B54\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":[],\"printData\":[[\"Tris- HCl, pH 7.4\",\"50 mM\"],[\"NaCl\",\"100 mM\"],[\"DTT\",\"2 mM\"],[\"MnCl2\",\"1 mM\"]],\"rowHeights\":[]}},\"2\":{\"type\":\"reagents\",\"mutability\":\"MUTABLE\",\"data\":{\"id\":219126,\"guid\":\"41C77BBA341F11EE9D4302C0B41BC903\",\"name\":\"Pierce\\u0026trade; Detergent Compatible Bradford Assay Kit\",\"mol_weight\":0,\"sku\":\"23246\",\"url\":\"https://www.thermofisher.com/order/catalog/product/23246\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":440,\"name\":\"Thermo Fisher\",\"link\":\"https://www.thermofisher.com\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/440.png\",\"placeholder\":\"/img/vendors/440.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "To verify the activity of our recombinantly purified λ phosphatase, collect HeLa cells by trypsinisation and wash the cell pellet with PBS once before cells were lysed in lysis buffer. Lysis buffer: %s %s",
+    "Lyse the cells for 00:20:00 On ice before cell lysates were cleared by centrifugation at 20000 x g, 4 °C, 10 minutes .",
+    "Determine the protein concentrations of the cleared protein lysates with the Pierce Detergent Compatible Bradford Assay Kit (23246, Thermo Fisher) and incubate the equal amounts with or without home-made λ phosphatase in 1x phosphatase buffer diluted from a 10x stock. 1x phosphatase buffer: %s %s",
+    "For this, protein samples were, where necessary, supplement with lysis buffer to a total volume of 45 µL and supplement with 5 µL of 10x phosphatase buffer.",
+    "The total amount of protein lysate depends on the abundance of the target protein you want to verify with western blotting. However, for us, this typically ranges between 50 µg - 500 µg in total.",
+    "Incubate the samples for 00:30:00 at 30 °C before reactions were terminated by the addition of protein loading dye and heat inactivation for 00:05:00 at 95 °C .",
+    "Analyse the samples by SDS-PAGE and western blotting.",
+    "Note, some detergents can inhibit the phosphatase reaction, in that case opening the cells with a 26G needle can serve as a substitute in following buffer (50 mM HEPES pH 7.4, 100 mM NaCl, 2 mM DTT)."
+  ],
+  "authors": [
+    "Elias Adriaenssens"
+  ],
+  "creator": "Elias Adriaenssens",
+  "published_on": 1742567877,
+  "created_on": 1739245213,
+  "keywords": []
+}

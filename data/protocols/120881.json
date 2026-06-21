@@ -1,0 +1,41 @@
+{
+  "id": 120881,
+  "title": "Genome-wide analysis of data generated on the Affymetrix 10K Xba 142 arrays for identification of regions with high probability to contain genes responsible for Micronodular (non-pigmented) Adrenocortical Hyperplasia",
+  "uri": "genome-wide-analysis-of-data-generated-on-the-affy-d2ar8ad6",
+  "doi": "dx.doi.org/10.1038/nprot.2006.135",
+  "description": "{\"blocks\":[{\"key\":\"99ikb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"q7tny\",\"text\":\"Genome wide genotyping was ran on Affymetrix 10K xba 142 arrays producing 10,000 plus genotypes for each sample. \\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"nwk7s\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4ihyx\",\"text\":\"\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"vsq5m\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"56mom\",\"text\":\"The samples themselves were derived from the adrenal tissue of affected individuals as well as from peripheral blood. There were 35 samples in total with 18 affected and 17 unaffected. Two samples existed for most cases with one from peripheral blood and the other directly from the tumor. When possible, blood samples were collected from unaffected parents and these served as the controls in the study. There is some ethnic diversity within the group, although most were Caucasian. The cases phenotype was a form of adrenal cancer called “Micronodular (non-pigmented) Adrenocortical Hyperplasia” (MAH) that occurs early in life.\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"mfhqv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"alxqi\",\"text\":\"\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4bsk3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"oysem\",\"text\":\"Exemplar Genotyping Analysis Suite was applied to perform various analyses on the supplied data. The objective was to reduce the 10,000+ SNP’s to a smaller subset of interesting candidates for further exploration.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Genetic Algorithm Module (GA Module) – This module implements an Artificial Intelligence approach to finding logical combinations of SNP’s for association based studies",
+    "Association Study Module (AS Module) – this module calculates many useful statistics like Chi Square, Yates, Fisher Exact, Odds Ratio, LD, D’, etc.",
+    "Chromosome Alteration module (CA Module) – this module performs LOH analysis on the dataset using user-specified controls as the reference set to identify possible deletions in the chromosome.",
+    "The difficulty with such a small sample size is the lack of statistical power. Nonetheless, we hoped that by performing multiple types of analysis on the data, we could reduce the problem space from ~10,000 SNP’s to &lt;50 SNP’s for consideration. Then, applying the biological knowledge to thus reduced set of data will further help to select genes-candidates for the studied disorder.",
+    "STEP 1",
+    "Exemplars AS Module are first utilized to provide extensive statistical analysis of the dataset including: Fishers Exact by genotype and by allele. Odds Ratio by genotype and by allele.",
+    "The AS module is also used for feature selection of the dataset prior to being input to the GA Module.",
+    "STEP 2",
+    "Exemplars GA Module is run against the dataset many times with various parameter settings. A brief overview follows: GA module is run against the entire input dataset and attempts to build models of the smallest size that can effectively predict outcomes while minimizing False Positives and maximizing True Positives. Different sized and type models attempt to improve results as necessary.",
+    "Various feature selection methods are employed to reduce the input parameter space, these will include:",
+    "Statistical Reduction (usually Fishers is used here) whereby each SNP has a p-value calculated and if their p-value does not fall below a certain threshold, they will be eliminated.",
+    "Minor allele frequency changes – the minor allele frequency is calculated for each SNP for cases and controls, if the variance is below a certain defined threshold, the SNP is eliminated from consideration.",
+    "Comprehensive model results are provided in these reports including: Model predictive results for each sample. Model statistical p-values when possible. Relevant Ontology’s for GA discovered SNP’s. Complete details of each discovered SNP including its id, position, chromosome, and related genes.",
+    "STEP 3",
+    "Exemplars CA Module is run against the dataset to detect possible deletions in the chromosomes by looking for Loss Of Heterozygosity. Each SNP is assigned a p-value.",
+    "Fishers Exact Analysis Statistics Discussion As stated earlier, the statistical power of this study is low. Nonetheless, once correction was applied to the statistics by genotype (generated by building 2 x 2 contingency tables and doing proper counts of genotypes) and statistics by allele (generated by building 2 x 2 contingency tables and doing proper counts of alleles), only 2 SNP’s fell below the significance threshold of p&lt;.05. To further expand the number of SNP’s to consider, we looked for SNP’s from proximate cytobands between the two analyses. As a reference point, the Affymetrix 10K platform that served as the basis for this study has 155 SNP’s in the region (roughly ~43 million base pairs).",
+    "Depends on the analysis required - between one week and one month; additional analysis may be required at later stages.",
+    "A genome-wide scan identifies mutations in the gene encoding phosphodiesterase 11A4 (PDE11A) in individuals with adrenocortical hyperplasia by Horvath, A. et al. published in Nature Genetics on 25 Apr, 2006 https://dx.doi.org/10.1038/ng1809"
+  ],
+  "authors": [
+    "Anelia Horvath",
+    "Sosipatros Boikos",
+    "Kevin Cramer",
+    "Constantine Stratakis"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1151570972,
+  "created_on": 1151570972,
+  "keywords": []
+}

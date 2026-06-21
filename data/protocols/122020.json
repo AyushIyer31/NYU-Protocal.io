@@ -1,0 +1,31 @@
+{
+  "id": 122020,
+  "title": "Finding set of \"core genes\" for Nematoda, Trematoda and Cestoda",
+  "uri": "finding-set-of-core-genes-for-nematoda-trematoda-a-d3ec8jaw",
+  "doi": "dx.doi.org/10.1038/protex.2018.043",
+  "description": "{\"blocks\":[{\"key\":\"4p4bo\",\"text\":\"Sets of core genes were defined for nematodes, trematodes and cestodes for use as training sets for gene prediction.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"q0toj\",\"text\":\"\\\"Core genes\\\" are defined as genes shared by all species in a taxonomic group. Using the protocol, sets of core genes can be identified for such a group. These can then be used as training sets for gene prediction. This method describes the construction of sets of Nematode Orthologous Groups (NOGs)1, Trematode Orthologous Groups (TROGs) and Cestode Orthologous Groups (CEOGs).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":298,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"fcpv6\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"73acv\",\"text\":\"1. an installation of HMMER (v2.3.2)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5vvuc\",\"text\":\"  2. prerequisites for OrthoMCL2 (e.g. BLAST, MySQL)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":31,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"wftp6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ygmke\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"jugi6\",\"text\":\"compute cluster for parallel processing of multiple steps in OrthoMCL.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "The full proteomes of twelve nematode species, four trematode species, one cestode and several eukaryotic outgroups are clustered using OrthoMCL 2 .",
+    "NOGs are defined as clusters containing at least one member from each of the twelve included nematode species.",
+    "TROGs are defined as clusters containing at least one member from each of the four included trematode species.",
+    "An HMM is built for each cluster using HMMER (v2.3.2) 3 which can be used for training gene prediction software.",
+    "The CEOGs were defined using a different set of cluster input since the OrthoMCL input for the steps above only include a single cestode:",
+    "The full proteomes of four cestode species and several eukaryotic outgroups were clustered using OrthoMCL.",
+    "CEOGs are the groups containing at least one member from each of the four included cestode species.",
+    "An HMM is built for each clustering using HMMER (v2.3.2) 3 which can be used for training gene prediction software.",
+    "Sets of HMM models for core genes of Nematoda, Trematoda and Cestoda which can be used for training gene prediction software.",
+    "none"
+  ],
+  "authors": [
+    "John Martin",
+    "Makedonka Mitreva"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1526558483,
+  "created_on": 1526558483,
+  "keywords": []
+}

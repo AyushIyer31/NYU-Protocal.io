@@ -1,0 +1,28 @@
+{
+  "id": 107101,
+  "title": "Using Skimmed milk as a low-cost alternative to IPTG in plasmid expression induction (LacZ Promoter) ",
+  "uri": "using-skimmed-milk-as-a-low-cost-alternative-to-ip-dkt54wq6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlk81z6l5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"5g3nf\",\"text\":\"This protocol provides a framework for using skimmed milk as an alternative to IPTG for inducing lacZ operon expression in bacteria. Adjustments may be necessary based on specific experimental conditions or bacterial strains used.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4pk5s\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"2b4p4\",\"text\":\"i used liquid skimmed milk because it was the only one available, but powdered skimmed milk could work just fine according to references.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"9jcg3\",\"text\":\"make sure to have skimmed milk without any fat, because it will make it harder to extract and purify your expressed protein.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"djmej\",\"text\":\"do not touch the skimmed milk after evaporating water in the microwave, it will be extremely hot.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"52jfe\",\"text\":\"Bacterial strain containing the lacZ operon (e.g., E. coli)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f06n8\",\"text\":\"LB (Luria-Bertani) broth\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8cgbk\",\"text\":\"Skimmed milk powder or liquid\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9cjk9\",\"text\":\"Antibiotics (e.g., ampicillin or kanamycin, as appropriate)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2rm22\",\"text\":\"Incubator\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1llcp\",\"text\":\"Shaking incubator\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"886f5\",\"text\":\"Centrifuge\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7os7t\",\"text\":\"Culture flasks\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c6uli\",\"text\":\"Sterile water\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "read the label for the skimmed milk it should contain a percentage of carbohydrates (sugars) it is usually 5% for each 100 ml. if you have powdered skimmed milk things are easier, where you can use 1.0% (w/v) of skimmed milk for the induction.",
+    "Preparation of Skimmed Milk Solution Dissolve skimmed milk powder in sterile water to create a 5% (w/v) solution. Sterilize the solution by autoclaving or filter sterilization.",
+    "Inoculation of Bacteria Inoculate a single colony of the bacteria containing the lacZ operon into 5 mL of 5 mL supplemented with the appropriate antibiotic. Incubate overnight at 37 °C with shaking ( -250 rpm, °C, ).",
+    "Harvesting Cells After the incubation period, centrifuge the culture at 4.000 rpm, °C, for 00:10:00 at 4 °C to pellet the cells. Discard the supernatant and resuspend the cell pellet in an appropriate buffer (e.g., PBS or lysis buffer) for further analysis or protein extraction.",
+    "Subculture 1. The next day, dilute the overnight culture 1:100 into fresh LB broth with antibiotics. 2. Incubate 03:00:00 at 37 °C with shaking until the OD600 reaches 0.4-0.6.",
+    "Induction with Skimmed Milk Once the culture reaches the desired OD600, add skimmed milk solution to a final concentration of 1% (w/v) if it is powdered, in case it is liquid, put 20 ml of skimmed milk in the microwave and evaporate the water until it gives a sludge of ~1ml, wait for it to cool down then add it to the culture it will give approximately 1% w/v of lactose. ( 00:05:00 ) Gently mix the culture to ensure even distribution.",
+    "Incubation Post-Induction Continue incubating the culture at 30-37°C with shaking for an additional 04:00:00 to 06:00:00 , depending on the desired expression level.",
+    "final result looked like this we used IPTG 0.1 M and skimmed milk 1% W/V to induce Lac Z operon to express GFP, and results came according to the image. comparing results of using IPTG in inducing GFP expression in LacZ plasmid, and skimmed milk culture of the same bacteria and expression. skimmed milk shows better glow visually under uv."
+  ],
+  "authors": [
+    "Joseph shenekji"
+  ],
+  "creator": "Joseph shenekji",
+  "published_on": 1725741210,
+  "created_on": 1725732574,
+  "keywords": []
+}

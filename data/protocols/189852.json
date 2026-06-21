@@ -1,0 +1,40 @@
+{
+  "id": 189852,
+  "title": "Simulation of MR-Guided Focused Ultrasound for Cervical Facet Joint Ablation Using MRI and CT-Based Anatomical Models",
+  "uri": "simulation-of-mr-guided-focused-ultrasound-for-cer-f5m4bq48x",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl8wxk6l2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"g1gs\",\"text\":\"This protocol outlines the methods for simulating MR-guided focused ultrasound (MRgFUS) treatments to cervical facet joints using high-resolution MRI and CT data. It includes imaging acquisition, segmentation, acoustic and thermal simulation, and safety analysis using two focused ultrasound transducer types. Tissue response to focused ultrasound was modeled and evaluated across multiple cervical levels and beam angles to assess feasibility and safety.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"2r190\",\"text\":\"Ensure IRB approval for retrospective use of clinical imaging data.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"fabpj\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fr58u\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"8atbg\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"MUTABLE\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"1_0\":\"\",\"1_1\":\"\",\"2_0\":\"\",\"2_1\":\"\",\"3_0\":\"\",\"3_1\":\"\",\"4_0\":\"\",\"4_1\":\"\"},\"colTitles\":[\"Equipment\",\"Specifications\"],\"colWidths\":[],\"data\":[[\"MRI Scanner\",\"3T (MAGNETOM Skyra/Vida) or 1.5T (MAGNETOM Aera), Siemens\"],[\"CT Scanner\",\"Clinical CT system with cervical spine protocol\"],[\"Segmentation Software\",\"Seg3D\"],[\"Simulation Tools\",\"HAS algorithm and finite difference solver for Pennes bioheat equation\"],[\"Tissue Property Database\",\"IT’IS Foundation Tissue Properties (acoustic and thermal)\"]],\"guid\":\"60D680E8DFD34D868232F711CEDCEEBF\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":[],\"printData\":[[\"MRI Scanner\",\"3T (MAGNETOM Skyra/Vida) or 1.5T (MAGNETOM Aera), Siemens\"],[\"CT Scanner\",\"Clinical CT system with cervical spine protocol\"],[\"Segmentation Software\",\"Seg3D\"],[\"Simulation Tools\",\"HAS algorithm and finite difference solver for Pennes bioheat equation\"],[\"Tissue Property Database\",\"IT’IS Foundation Tissue Properties (acoustic and thermal)\"]],\"rowHeights\":[]}}}}",
+  "steps": [
+    "We simulated treatment at all cervical levels bilaterally, assuming mechanical transducer motion between angles of 0–30° in the axial plane. Simulations investigated safety of targeting facet joints at 0°, 15°, and 30° using FUS.",
+    "Thermal effects were modeled using the Pennes bioheat equation with 100 W ultrasound power. Assumptions:- Boundary temperature = 37°C- Tissue perfusion effects modeled for blood vessels Pennes bioheat equation Thermaldose (CEM 43°C) calculated over 20 s sonication and 60 s cooling using: (R= 2 if T≥43°C; R = 4 if T&lt;43°C)",
+    "Ablation target: 60°C or &gt;240 CEM.",
+    "Transducer S11: 256-element, symmetric, 1 MHz, 11 cm focal length Transducer A10: 256-element, asymmetric, 1 MHz, 10 cm focal length",
+    "Free-field tests showed S11 produced 120.7% higher peak pressure (4.7 MPa) vs A10 (3.9 MPa). Simulations recorded:- Peak temp at target- Mean temp in 10 mm ROI- Temp at off-target sitesStatistical tests:- Normality: Anderson-Darling- Significance: Wilcoxon signed-rank (only ΔT &gt; 5°C tested)",
+    "We used the Hybrid-Angular Spectrum (HAS) method to simulate ultrasound propagation. Transducers were modeled using the Rayleigh-Sommerfeld integral. Tissue acoustic properties were from the IT’IS Foundation database.Each model underwent 60 simulations (5 cervical levels, 2 sides, 3 angles, 2 transducers). Output was 3D pressure and power deposition. Nonlinear effects were ignored (P &lt; 5 MPa).",
+    "Seg3D was used to segment MRI into 8 tissue types: water, CSF, vessels, fat, muscle, skin, bone, spinal cord. - Non-skin layers: thresholding → manual correction → isolation (BooleanRemove)- Skin layer: smoothed dilation/erosion on all-tissue mask + Boolean Remove",
+    "Facet joints from C2-3 to C6-7 were manually identified by a neuroradiologist on MR images. Off-target structures included spinal nerves, the spinal cord, and major arteries (vertebral, carotid).",
+    "We analyzed cervical spine CTs from 40 individuals for planning transducer reach.",
+    "We simulated ultrasound treatments in the necks of six individuals. Participants included four patients referred for general neck imaging and two healthy volunteers. Imaging was performed on either a 3T (MAGNETOM Skyra or Vida) or 1.5T (MAGNETOM Aera) Siemens scanner.",
+    "3T Imaging Parameters:- Gradient echo- TR = 6.68 ms- TE = 2.46 ms (in phase), 3.69 ms (out of phase)- Echo train length = 2- 1 average",
+    "1.5T Imaging Parameters:- Gradient echo- TR = 6.97 ms- TE = 2.39 ms (in phase), 4.47 ms (out of phase)- Echo train length = 2- 4 averages",
+    "Axial T1 Dixon sequences were used for visualizing fat and muscle. Zero-filling was applied to achieve 0.5 mm isotropic resolution. All imaging was IRB-approved.",
+    "Measurements included:- Depth from skin to each facet joint target (0-degree angle)- Distance between left and right targets",
+    "Code for simulations: GitHub"
+  ],
+  "authors": [
+    "Marta M. Iversen",
+    "Michelle Kline",
+    "Emily A. Smith",
+    "Allison Payne",
+    "Lubdha M. Shah",
+    "Viola Rieke"
+  ],
+  "creator": "Matthew Zabriskie",
+  "published_on": 1754584232,
+  "created_on": 1745864063,
+  "keywords": []
+}

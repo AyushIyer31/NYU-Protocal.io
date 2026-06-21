@@ -1,0 +1,34 @@
+{
+  "id": 95174,
+  "title": "Intermediate Filament Skeleton Labeling in WEBKNOSSOS",
+  "uri": "intermediate-filament-skeleton-labeling-in-webknos-c87ezzje",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzxzb2gx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"97tjt\",\"text\":\"Labeling of intermediate filaments in 4nm FIB-SEM data using the open-source platform WEBKNOSSOS. All navigation, segmentation, and data import documentation can be found on the official KNOSSOS documentation page: https://docs.webknossos.org/webknossos/\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":215,\"length\":39}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"6912A2EDCA9D11EEA5BF0A58A9FEAC02\",\"url\":\"https://docs.webknossos.org/webknossos\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "WEBKNOSSOS does not require software-specific file conversion and supports the following bio-imaging dataset file formats for import and streaming: WEBKNOSSOS-wrap (WKW) OME-Zarr / NGFF Neuroglancer precomputed N5 Image Stacks",
+    "In order to optimize skeleton continuity and accurate identification of intermediate filaments, navigate through each dataset window to find the orthogonal plane with the closest axis view of filaments. Intermediate filaments are ~10 nm in diameter and continue for at least 600 nm. Continuity and flexibility varies widely, but filaments will often maintain a consistent FIB-SEM staining contrast and move in bundles through centers of cells, sparsing out towards cell membranes. Intermediate filaments can change direction abruptly, but don&#39;t often bend below a 90° angle. Ribosomes are ~200% the diameter of intermediate filaments and not continuous. Ribosome and intermediate filament FIB-SEM staining contrast is often similar. Staining often overlaps, indicated by a sudden change in filament diameter when scrolling through the dataset. Orthogonal planes of FIB-SEM dataset containing intermediate filaments; the axis view of filaments is found in the XZ plane (circled in red), while other orthogonal views show lengthened view of filaments (circled in blue).",
+    "Skeleton segmentations are composed of trees. Each filament is considered a separate tree and has a unique tree ID. Intermediate filament trees do not branch, so new tree nodes must be added to a selected end node.",
+    "In the event of a skeleton segmentation error, removal of individual nodes from trees can aid in efficient tree correction, especially when a single tree ID includes two or more filaments. Similarly, merging capabilities allow for piecewise skeleton segmentation if needed.",
+    "If an incorrect node was placed, select the incorrect node with a left click, then select Del. The new active node will be the next consecutive node in the tree. If a node is deleted from the center of a tree, the tree will split into two unique IDs.",
+    "Download all segmented skeleton trees in NML format by selecting &#39;Menu&#39; → &#39;Download&#39;. Alternatively, download only specific tree IDs by selecting and deselecting tree IDs under the &#39;Skeleton&#39; tab of the right sidebar. From the &#39;More&#39; dropdown menu, select &#39;Download Visible Trees&#39; to export an NML file.",
+    "Open WEBKNOSSOS ( https://webknossos.org/ ). Create account, and select &#39;Datasets&#39; tab to add, remove, and view all imported datasets. To add a new dataset, select the &#39;+ Add Dataset&#39; button. https://webknossos.org/dashboard/datasets Specify Dataset Name and Target Folder if uploading from a local hard disk, or specify Dataset URL if streaming a dataset from the cloud or remote servers.",
+    "Once dataset is imported, under the Dataset dashboard, select &#39;View&#39; or &#39;+ New Annotation&#39; to view the dataset. Dataset and options within Dataset tab of Dashboard",
+    "Once the axis-facing plane is identified, expand the window using the window icon in the top right corner of each orthogonal view. Using the mouse wheel, or d/f (+ Shift for faster scrolling), navigate through the selected plane to identify patterns in filament &#39;movement&#39; and continuity. Visually track an identified filament to the edge of the dataset. Initiating skeleton trees on a dataset edge will increase segmentation efficiency.",
+    "Create a tree by first selecting &#39;c&#39;, which creates a new tree ID and color under the &#39;Skeleton&#39; tab of the right sidebar. To place the first node, hover the mouse cursor over the center of an intermediate filament axis point and left click while in Skeleton Mode (see below). Node and dataset settings can be modified in the left sidebar, and annotation info and settings can be modified in the right sidebar. The 3D Viewer provides real-time visualization of skeletons, color coded based on tree ID. &#39;Move Mode&#39; (far left icon) and &#39;Skeleton Mode&#39; (icon circled in blue) are used for click+drag movement across the dataset planes or node selection and adding or moving nodes, respectively.",
+    "After placing a node, scroll through the dataset until the tracked filament begins to subtly change trajectory. Hover over the center of the filament axis and left click. As nodes are placed, refer back to other plane views to verify if node placement is accurate to the filament, does not &#39;jump&#39; filaments, and continues or terminates. Nodes can be placed in any plane view from a selected end point during node placement.",
+    "At any point, a new tree ID and color can be created by selecting &#39;c&#39;. Select a different tree for node editing in the Skeleton tab of the right side bar. Use the Move Mode to select an end node in order to continue with tree segmentation. Toggle tree visibility (active or inactive) or select individual tree IDs from the Skeleton tab of the right side bar to visualize individual or multiple trees in the 3D viewer and plane views.",
+    "When two separate tree IDs need to be merged into a single filament, select the end node (in &#39;Move Mode&#39;) of one tree that is closest to the other tree end node to be merged. Right click on the other filament end node, and select &#39;Create Edge &amp; Merge with this Tree&#39; from the dropdown menu. The resulting single tree ID will take the ID of the last selected node. Tree ID 1 (orange) will be merged with tree ID 2 (brown), and become tree ID 1 (orange)"
+  ],
+  "authors": [
+    "Alyson Petruncio",
+    "CellMap Project Team"
+  ],
+  "creator": "Alyson Petruncio",
+  "published_on": 1747766779,
+  "created_on": 1707846842,
+  "keywords": []
+}

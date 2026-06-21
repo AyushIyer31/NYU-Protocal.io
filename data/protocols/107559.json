@@ -1,0 +1,40 @@
+{
+  "id": 107559,
+  "title": "Preparation of B cells for scRNAseq",
+  "uri": "preparation-of-b-cells-for-scrnaseq-dmaf42bn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ld8e1nv5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"9fua5\",\"text\":\"This protocol details activated B cell preparation and sample hashtagging for Chromium Single Cell  Gene Expression (10x Genomics).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"bakct\",\"text\":\"EasySep‱ Dead Cell Removal (Annexin V) Kit (STEMCell Technologies, Cat. # 17899)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":7,\"length\":1}],\"data\":{}},{\"key\":\"6a1ve\",\"text\":\"TotalSeq‱-C0262 anti-human Hashtag 12 Antibody (Biolegend, Cat. # 394683)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":8,\"length\":1}],\"data\":{}},{\"key\":\"1lv05\",\"text\":\"TotalSeq‱-C0263 anti-human Hashtag 13 Antibody (Biolegend, Cat. # 394683)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":8,\"length\":1}],\"data\":{}},{\"key\":\"ediap\",\"text\":\"TotalSeq‱-C0264 anti-human Hashtag 14 Antibody (Biolegend, Cat. # 394683)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":3,\"offset\":8,\"length\":1}],\"data\":{}},{\"key\":\"67lum\",\"text\":\"TotalSeq‱-C0265 anti-human Hashtag 15 Antibody (Biolegend, Cat. # 394683)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":4,\"offset\":8,\"length\":1}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"5467665E71F811EFA95D0A58A9FEAC02\",\"name\":\":tm:\"}},\"1\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"FF5CEC2D71F811EFB0880A58A9FEAC02\",\"name\":\":tm:\"}},\"2\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"FF5CEC2D71F811EFB0880A58A9FEAC02\",\"name\":\":tm:\"}},\"3\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"FF5CEC2D71F811EFB0880A58A9FEAC02\",\"name\":\":tm:\"}},\"4\":{\"type\":\"emoji\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"FF5CEC2D71F811EFB0880A58A9FEAC02\",\"name\":\":tm:\"}}}}",
+  "steps": [
+    "Pellet cells at 300xg for 10min",
+    "Resuspend in 100uL Dead Cell Removal Buffer and filter through 40uM cell strainer",
+    "Add 5uL of Annexin V Cocktail to sample",
+    "Add 5uL of Biotin Selection Cocktail to sample, mix and incubate at RT for 3min",
+    "Vortext RapidSpheres for 30 sec and add 10uL to each sample, flick to mix",
+    "Add 2.4mL of Dead Cell Removal buffer and mix again",
+    "Place tubes on magnet and incubate at RT for 10 min",
+    "Transfer supernatant to new 15mL tube",
+    "Aliquot",
+    "Resuspend samples in 100uL of wash buffer (PBS + 10% FBS)",
+    "Add 1uL of HTO antibodies",
+    "Incubate for 30 min on ice",
+    "Add 3.5mL of wash buffer to labeled cells, mix and pellet at 200xg for 10min at 4C",
+    "Remove supernatant with pipette, resuspend pellet with 3.5mL of wash buffer, and transfer to new tube",
+    "Pellet at 200xg for 10min at 4C",
+    "Remove supernatant with pipette and resuspend pellet with 3.5mL of wash buffer",
+    "Pellet at 200xg for 10min at 4C",
+    "Assuming 50% cell loss, resuspend pellet in wash buffer to obtain ~1,000 cells/uL",
+    "Count cells and adjust concentration, if needed",
+    "Mix hashtag samples at desired ratio and load 52,500 cells per well"
+  ],
+  "authors": [
+    "Nicholas Pease"
+  ],
+  "creator": "Nicholas Pease",
+  "published_on": 1726250554,
+  "created_on": 1726200778,
+  "keywords": []
+}

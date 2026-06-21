@@ -1,0 +1,31 @@
+{
+  "id": 52440,
+  "title": "Gradient PCR ",
+  "uri": "gradient-pcr-bxfypjpw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bxfypjpw",
+  "description": "{\"blocks\":[{\"key\":\"eoj1\",\"text\":\"This protocol can be used to confirm genes or DNA of interest from a template using PCR. Also to amplify required amount of genes to larger amounts.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "{\"blocks\":[{\"key\":\"brvdq\",\"text\":\"EtBr and associated items and consumables during gel processing should be handles with gloves on and things which don't classify under items for gel should not be touched with gloved hands.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Prepare the working stock solution of all the reagents required. If already prepared and stored, takeout from the refrigerator and thaw on ice.",
+    "Prepare the following mixes each of total 50 µL and 5 test samples were made for the 5 different annealing temperatures to be vaired: - A B C 1 Items negative control test sample (*5) 2 ultrapure water (from Milli-Q) 40 ul 39 ul 3 pfu Buffer (10X) 5 ul (1X) 5 ul (1X) 4 Forward primer (20uM) 1 ul (0.4uM) 1 ul (0.4uM) 5 Reverse primer (20uM) 1 ul (0.4uM) 1 ul (0.4uM) 6 dNTPs (2.5mM) 2 ul (0.1mM) 2 ul (0.1mM) 7 Pfu polymerase 1 ul 1 ul 8 Template (100ng/ul) 1 ul (100ng) 1 ul (100ng)",
+    "Perform PCR using a Thermo cycler with the following temperature settings (All temperatures are in degree Celcius).r In the thermo cycler gradientPCR option is kept and the following gradient is specified. Then the 5 test samples are labelled based on their temperature and kept in the correct column in the thermo cycler. A B 1 Temperature Time 2 95 5 min 3 95 30 secs 4 51, 53, 55, 57, 59 40 secs 5 72 2 min 6 72 5 min Set the 2nd, 3rd and 4th steps to repeat 30 times (or maximum till 35) The PCR product can be immediately run analyzed using gel electrophoresis or can be stored in -20 °C or lower to be analyzed later.",
+    "All items which interact with the gel and EtBr should be handled with gloves. Also ensure, the gloved hands are not used to touch anything other than gel materials. To prepare the 1% agarose gel, mix 0.5 g of agarose in 50 mL of 1X TAE buffer and heat well to form a clear solution. Based on requirement higher amounts of gel can be prepared. So, accordingly larger combs and higher amount of EtBr can be used.",
+    "Then the mix is allowed to cool till it is bearable to touch. Carefully add 2 µL of EtBr to the mix and swirl well.",
+    "Then into a set gel cast with the appropriate comb (which is decided by the number of wells and the size of the wells required), pour the mix without bubbles. If there is any bubble remove it with a tip soon after pouring",
+    "Once the gel solidifies, carefully take it out with a gloved hand and place in the buffer tank with enough buffer to cover the immersed gel and remove the comb without breaking the wells.",
+    "Mix approximately 10 µL samples with 1X loading dye and load into each gel. Load a 1kb ladder (or any suitable ladder) into the first lane. Run the gel at 100V",
+    "After the dye front crosses 75%of the gel length, stop the current.",
+    "Take the gel out (with gloved hands) by letting all the buffer out into the tank and then image the gel on UV. Compare the sample bands with the ladder to estimate the bands of interest",
+    "Check bands corresponding to samples from which temperature shows good intensity and is at the right size and choose that annealing temperature for further PCRs"
+  ],
+  "authors": [
+    "Ashwinuday"
+  ],
+  "creator": "Ashwinuday",
+  "published_on": 1629740279,
+  "created_on": 1629293525,
+  "keywords": []
+}

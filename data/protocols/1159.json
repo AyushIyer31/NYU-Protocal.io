@@ -1,0 +1,36 @@
+{
+  "id": 1159,
+  "title": "Using ImageJ to Measure Viral Dimensions in Micrographs",
+  "uri": "Using-ImageJ-to-Measure-Viral-Dimensions-in-Microg-ddf23m",
+  "doi": "dx.doi.org/10.17504/protocols.io.ddf23m",
+  "description": "{\"blocks\":[{\"key\":\"47hp4\",\"text\":\"Purpose: This protocol describes the use of ImageJ to measure dimensions of viruses in TEM micrographs, but can be applied to the measurement of anything in any image. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"f1srg\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9lqq1\",\"text\":\"The ImageJ program can be downloaded free (http://rsbweb.nih.gov/ij/) and it’s usage should be cited in publications using the reference listed on the website.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":43,\"length\":25}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"3A96F2A2FD83456CB9AA2B32CC552F63\",\"url\":\"http://rsbweb.nih.gov/ij/\"}}}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"b7ssq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"d0t3k\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"31qdf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Open the ImageJ program.",
+    "Open an image through ImageJ (File → Open).",
+    "Set the scale. Use the Magnification Tool to zoom in on the scale bar in your image. Left-click on the scale bar in your image a few times to zoom in. a",
+    "Select the Line Tool a",
+    "Draw a line along the entire length of your scale bar by left-clicking on one end of the bar, holding down the left-click, dragging the cursor to the other end of the bar, and releasing the left-click at the other end of the bar (to get a perfectly straight line, hold down the Shift key while you do this). a",
+    "Select Analyze → Set Scale a",
+    "In the box that appears, type in the &#34;Known Distance&#34; and &#34;Unit of Length&#34; labeled on your scale bar, then check the &#34;Global&#34; box, then click &#34;OK&#34; a Do not change the &#34;Distance in Pixels&#34; or the &#34;Pixel Aspect Ratio&#34;.",
+    "Every image you open while the ImageJ program is still running will now use this scale. - if you open an image with a different magnification, you will need to reset the scale - if you close ImageJ, you will need to reset the scale when you next open the program",
+    "Measure the dimensions of a virus (or whatever): To measure a straight line (such as capsid diameter), use the Line Tool a - to measure a curved line (such as the tail of a siphovirus), use the Freehand Line or Segmented Line (right-click the button to get these options)",
+    "Draw a line on the thing you want to measure in your image. - left-click at one end, drag the cursor to the other end, then release the left-click",
+    "Select Analyze → Measure (or Ctrl+M) a",
+    "A Results box will open with your data in it a",
+    "You can specify what information is displayed in the Results box by selecting Results → Set Measurements a",
+    "Another box will open giving you all of your options. If no boxes are checked, the program will only display the length and angle (probably what you want). You can also set the decimal places, etc. Click &#34;OK&#34; to close the box. a",
+    "Leave the Results box open and measure what you want on as many images as you want by following steps 3-5.",
+    "You may save the results by using File → Save As (or Ctrl+S) in the Results box. The file can then be opened in Excel. a"
+  ],
+  "authors": [
+    "Jennifer Brum"
+  ],
+  "creator": "Verve Team",
+  "published_on": 1453407953,
+  "created_on": 1436812566,
+  "keywords": []
+}

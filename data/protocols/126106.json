@@ -1,0 +1,39 @@
+{
+  "id": 126106,
+  "title": "Image capture with Raspberry Pi",
+  "uri": "image-capture-with-raspberry-pi-d7d29i8e",
+  "doi": "dx.doi.org/10.17504/protocols.io.261geeoywg47/v1",
+  "description": "{\"blocks\":[{\"key\":\"v00c\",\"text\":\"This protocol outlines the use of the Stevison lab's ImageCaptureApp software (available at: https://github.com/StevisonLab/ImageCaptureApp), running on a Raspberry Pi with an attached Pi camera to take pictures of narrow vials containing eggs. Although the protocol and software was developed for this purpose, it can be used to take pictures of any set of samples.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":93,\"length\":46}],\"data\":{}},{\"key\":\"b6q0l\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6efcf\",\"text\":\"This protocol was developed to be used alongside the following protocol:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2ra16\",\"text\":\"- Image processing and egg quantification in Fiji (dx.doi.org/10.17504/protocols.io.q26g75bo3lwz/v1)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"6888122E569D11F08DDF0A58A9FEAC02\",\"url\":\"https://github.com/StevisonLab/ImageCaptureApp\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"eh8hj\",\"text\":\"Raspberry Pi (Model 4B) set up for taking pictures (https://github.com/StevisonLab/ImageCaptureApp)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":52,\"length\":46}],\"data\":{}},{\"key\":\"8utn8\",\"text\":\"5mp camera (SKU: B0031, Arducam) 1/4” (OV5647)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9h2b0\",\"text\":\"1/2.5″ M12 Mount 16mm (SKU: , Arducam)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a6rtt\",\"text\":\"M12 lens with HFOV 10° on 1/4” RPi Camera (SKU: LN001, Arducam)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ffdiu\",\"text\":\"Vial holder (square block with vial-sized cylindrical cutout)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3u5au\",\"text\":\"2 lamps with 12.2W, 1100 lumens, daylight (5000K) bulbs (e.g., Model # BR30DMHO/950CA/2, Feit Electric)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dmr90\",\"text\":\"Tray of vials to be photographed\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1ibrn\",\"text\":\"Optional. Empty tray (for completed vials)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"6888122E569D11F08DDF0A58A9FEAC02\",\"url\":\"https://github.com/StevisonLab/ImageCaptureApp\"}}}}",
+  "steps": [
+    "Turn on and sign in to the Raspberry Pi",
+    "Run ImageCaptureApp Available at: https://github.com/StevisonLab/ImageCaptureApp",
+    "In a dark room, place lamps each one foot away from the ring stand on either side of it (left and right) with light bulbs aimed up",
+    "If not already in place, position camera 24 cm above table",
+    "Place vial holder in frame of image using camera preview",
+    "Create or load vial list",
+    "Select vial ID for first vial from list",
+    "For each vial to be imaged:",
+    "Validate destination file name matches current vial’s ID",
+    "Remove vial plug and place vial in holder under camera",
+    "Position vial in frame, making sure entire egg-laying surface can be seen in image preview",
+    "Adjust focus by turning lens",
+    "Click “Take picture” and wait for buttons to be reenabled",
+    "Back up images to desired location",
+    "Close all tabs",
+    "Close ImageCaptureApp and any other open windows",
+    "Sign out and shut down the Raspberry Pi"
+  ],
+  "authors": [
+    "Cassidy Schneider",
+    "Spencer Koury",
+    "Laurie Stevison"
+  ],
+  "creator": "Cassidy Schneider",
+  "published_on": 1755167235,
+  "created_on": 1743699698,
+  "keywords": []
+}

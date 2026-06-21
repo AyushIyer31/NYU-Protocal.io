@@ -1,0 +1,37 @@
+{
+  "id": 98708,
+  "title": "PCR and analysis",
+  "uri": "pcr-and-analysis-dcmu2u6w",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygxypwdl8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"cib29\",\"text\":\"This protocol details the PCR analysis.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"cfapv\",\"text\":\"Materials:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":10}],\"entityRanges\":[],\"data\":{}},{\"key\":\"810j4\",\"text\":\"SybrGreen PowerUP\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5q19m\",\"text\":\"Primers\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fhhim\",\"text\":\"cDNA\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"r1h7\",\"text\":\"384 well plates\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9b9au\",\"text\":\"RT-PCR machine\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Include at least two housekeeping control The following steps refers to a 384 well-plates, but volumes can easily be adapted to 96 well plates. Perform calculation while waiting for primers to defrost. Always add a few spare wells to ensure enough master mix is made as Sybr Green is very viscous and difficult to pipette precisely. Use a dedicated set of pipettes and try to be as clean as possible. Ensure primers efficiency is satisfactory. Include wells with no cDNA as amplification control. Run samples in triplicates. Include at least two housekeeping control",
+    "If first time, prepare 100 micromolar (µM) primer stock by diluting it with PCR-grade water. Prepare a working solution at 10 micromolar (µM) by diluting 1:10 the stock in PCR-grade water.",
+    "In each well of a 384 well-plate, 5 µL of samples + master mix have to be added, according to the following volumes: DNA: 2 µL MasterMix: 2.5 µL SyberGreen + 0.5 µL forward and reverse primers working stock Prepare, for each gene used, a master mix, by adding 2.5 µL /well of SYBR green and 0.5 µL /well of primer mix in a clean PCR-grade tube.",
+    "Dilute stock of cDNA. A 1:5 or 1:10 dilution is normally sufficient to detect most genes and to have enough cDNA for all the samples.",
+    "Pipette 2 µL cDNA in each well assigned to the same samples.",
+    "Pipette 3 µL mastermix in each well assigned to the same primer.",
+    "When all plate is completed, seal the plate and quickly centrifuge it to prevent bubble interference.",
+    "Put the plate in a thermal cycler designed for quantitative measurements. Conditions of the qPCR: (preamplification step) 95 °C for 00:05:00 ,(amplification step) 45 cycles of 95 °C for 00:00:10 , 60 °C for 00:00:10 and 72 °C for 00:00:20 . Finally, calculate a melting curve to confirm the presence of a single PCR product following these steps: 95 °C for 00:00:05 , 66 °C for 00:01:00 , and gradual increase in temperature up to 97 °C (fluorescence acquisition).",
+    "The following sections outlined analysis of PCR data using the ΔΔC t method.",
+    "For each sample and for each gene, calculate the average C t value of the technical triplicate,, checking that intra-replicate variation is acceptable.",
+    "For each sample, calculate the geometric mean of the C t value of the housekeeping genes (C t HKG )",
+    "For each sample and for each gene of interest, subtract the average C t HKG value (from step 11) from the average C t value calculated at step 10 to obtain the ΔC t GOI for each sample and for each gene of interest",
+    "For each gene of interest, average the ΔC t GOI for the control samples (untreated) across your experimental replicates to obtain the control ΔC t GOI Both arithmetic and geometric mean can be used, the latter is particularly appropriate when the ΔC t values across experimental replicates are quite dispersed. Normalising by averaging across experimental replicates allows to have an error bar also for the control group. If the normalization is performed intra-experiment, all control points will be at 1, without error bars and affecting statistical analysis.",
+    "For each gene of interest, calculate the ΔΔC t GOI by subtracting the control ΔC t GOI from the ΔC t GOI for each sample and for each experimental replicates",
+    "At this point, you should have, for each gene of interest and for each sample, n ΔΔC t GOI where n is the number of experimental replicates. Perform the appropriate statistical analysis at this step, has the pints will most likely be normally distributed. In the last step, the normality will be possibly lost.",
+    "In order to plot the result, use the Fold change for each gene of interest by using the following formula for each data point: FC=2^(-ΔΔC t GOI )"
+  ],
+  "authors": [
+    "Enrico Bagnoli",
+    "Miratul Muqit"
+  ],
+  "creator": "Francesca Tonelli",
+  "published_on": 1715621472,
+  "created_on": 1713869876,
+  "keywords": []
+}

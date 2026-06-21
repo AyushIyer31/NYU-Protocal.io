@@ -1,0 +1,42 @@
+{
+  "id": 70341,
+  "title": "Sample preparation for single molecule localisation microscopy and imaging.",
+  "uri": "sample-preparation-for-single-molecule-localisatio-cgxdtxi6",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4j77olo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"grfc\",\"text\":\"This protocol describes the sample preparation to perform SMLM on midbrain dopaminergic neurons using phalloidin and a DNA aptamer in a combination of STORM and DNA-PAINT. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3upem\",\"text\":\"It also describes the experimental set up on the microscopy with the image acquisition details.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "For single molecule localisation microscopy (SMLM), neurons were grown on glass coated ibidi chambers.",
+    "Once neurons reached the desired age, they were washed once in PBS",
+    "They are then fixed for 00:15:00 in 4% paraformaldehyde + 0.1% glutaraldehyde (both from Electron Microscopy Services) in PBS at room temperature.",
+    "The neurons were then reduced in 0.1% sodium borohydride (Sigma) in PBS for 00:07:00 at room temperature.",
+    "To label cells with the DNA-aptamer and phalloidin, after fixation and PBS washes, cells were permeabilised with 0.25% triton X-100 in PBS for 00:10:00 at room temperature",
+    "The cells were then blocked in blocking solution (0.1% triton X-100, 10% normal goat serum (Abcam), 10% salmon sperm DNA (Thermo Fisher Scientific)) in PBS for 02:00:00 at room temperature",
+    "The samples were then incubated with 100 nM of the DNA-aptamer made up in the blocking solution at 4 °C overnight. Aptamer binds to beta-sheet rich structures including protein aggregates. The sequence of the aptamer is: GCCTGTGGTGTTGGGGCGGGTGCGTTATACATCTA (ATD Bio).",
+    "After incubation, cells were washed 1x in PBS",
+    "They are then incubated with phalloidin-647 (1:400) (Thermo Fisher Scientific) made up in the blocking solution for 01:00:00 at room temperature.",
+    "Cells were then washed 1x in PBS and either imaged, or incubated with DAPI (1:10000) in PBS for 00:10:00 at room temperature followed by 2x PBS washes before imaging.",
+    "Cells were lysed mechanically in PBS before being centrifuged at 3600 x g, 4 °C, 5 minutes .",
+    "The supernatant was collected and the protein concentration was quantified using the BCA Protein Assay Kit (Thermo Fisher Scientific).",
+    "22 x 40 mm, 1 mm thick glass slides, were cleaned with an argon plasma for 01:00:00 before 22x22 gaskets (Bio-Rad) were affixed to the surface to create a well.",
+    "Cell lysate was diluted 1 in 10 with filtered PBS (0.02 μm) and added to the glass slides",
+    "100 nM DNA-aptamer was added to the glass slide and incubated with lysate for 00:10:00 . Aptamer sequence: GCCTGTGGTGTTGGGGCGGGTGCGTTACCACCACCACCACCACCA (ATD Bio)",
+    "Sample was then washed off with filtered PBS three times before imaging",
+    "SMLM was performed on a Nanoimager super-resolution microscope (Oxford Nanoimaging Ltd) equipped with an Olympus 1.4 NA 100x oil immersion super apochromatic objective.",
+    "To ensure efficient stochastic blinking for STORM (AF647-tagged phalloidin), the samples were incubated with a blinking induction buffer (B cubed, ONI).",
+    "Separately to this, AD-PAINT was also employed which relies on the addition of an imaging oligonucleotide strand to the buffer. 1 nM of the imaging strand was added to the B cubed buffer before imaging. sequence: CCAGATGTAT-CY3B",
+    "The laser illumination angle was set to 51 o for all imaging leading to total internal reflection fluorescence (TIRF).",
+    "AF647-tagged phalloidin was first imaged for 4000-8000 frames using the 640 nm laser (80% power). After this, 4000-5000 frames at 30% power for the 561 nm laser was used to image and super-resolve the aptamer. Both were recorded at a frame-rate of 50 ms.",
+    "For imaging aggregates in neuronal lysate using AD-PAINT, 2 nM of the imaging strand was added. Images were acquired on Oxford Nanoimager at 20 frames s -1, for 8000 frames (20% 635 nm laser power, TIRF). sequence: GGTGGT-ATTO 655"
+  ],
+  "authors": [
+    "gurvir.virdi"
+  ],
+  "creator": "gurvir.virdi",
+  "published_on": 1663762516,
+  "created_on": 1663760663,
+  "keywords": []
+}

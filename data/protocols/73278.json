@@ -1,0 +1,35 @@
+{
+  "id": 73278,
+  "title": "SH-SY5Y Transduced with HLA-A2 mCherry Lentivirus Sorting Protocol",
+  "uri": "sh-sy5y-transduced-with-hla-a2-mcherry-lentivirus-cjs6unhe",
+  "doi": "dx.doi.org/10.17504/protocols.io.261ge353dl47/v1",
+  "description": "{\"blocks\":[{\"key\":\"c1qvc\",\"text\":\"This is the cell sorting protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"a8td\",\"text\":\"Reagent Needed: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":16}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6akmg\",\"text\":\"DPBS no calcium not magnesium Cat.14190144 \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ei639\",\"text\":\"Trypsin-EDTA (0.25%) Cat. 25200056\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dac9i\",\"text\":\"Knockout SR (Serum Replacement for ESCs/iPSCs) Cat.10828010\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9gcgj\",\"text\":\"Sterile Corning Falcon Cell Strainer 70µm\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"be0s9\",\"text\":\"Falcon 5mL Round Polystyrene sorting tube with strainer snap cap Cat. 352235 \",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Aspirate the medium, wash with 2mL DPBS twice",
+    "Add 2mL Trypsin to the 60mm dishes and incubate for 2mins to lift the cells",
+    "Add 2ml complete medium to stop trypsinization, and pipette up and down to collect all cells",
+    "Transfer all cell suspension into a 15ml conical tube, spin down to get the cell pellet 200g for 4min",
+    "Resuspend each cell pellet in 1ml sorting medium (Add 2% (vol/vol) KnockOut serum replacement to 50 ml of DPBS. Can be stored at 4 °C for 6 weeks.) To make 50 mL add 1mL of KnockOut serum into 49mL DPBS",
+    "Prime the cell strainer with 2mL of sorting medium making sure to cover the entire mesh.",
+    "Discard the sorting medium in the 50mL tube",
+    "Apply each cell suspension to the center of a cell strainer (pushing through with pipette where necessary, and – with a new tip – pulling off strained cell suspension stuck to the bottom of filter).",
+    "After straining the cell suspension, add about 5µL of sorting medium to wash the strainer for any left-over cells.",
+    "Aliquot cell suspension into sorting tubes and put it on ice.",
+    "Add DAPI (diluted 1:10,000 to make final concentration at 0.1ug/ml) to the strained cell suspension. This helps to distinguish live from dead cells 0.1µL per 1mL",
+    "Take 2 culture tubes with 1 mL sushi expansion medium to catch the sorted cells Take 3ml extra sorting medium (in case they ask us to dilute the sample) put everything on ice to take to the FACS facility",
+    "Go to the FACS facility at 149, 5 th floor, and ring the bell to be let in.",
+    "(i) Use nozzle 1 (100um) (ii) mCherry detection (blue channel; ex: 587nm; em: 610) (iii) Just collect mCherry-positive cells; give them the sushi medium-containing tubes to collect cells (iv) Tell them you want to try to get &gt;200,000 cells per condition where possible but prioritize getting through as many samples as possible. (v) Can keep cold while sorting, or sort at RT (either is fine). (vi) Can let them know how inclusive/restrictive to be when making gates. Threshold parameters include: - sorting for singlets (cells on )\" target=\"_blank\" rel=\"noopener\">diagonal ); doublets usually indicate 2 cells stuck together - getting rid of particles that are likely debris. - selecting the mCherry intensity threshold"
+  ],
+  "authors": [
+    "Ali Albalakhi",
+    "Ning Xia"
+  ],
+  "creator": "Jackson Schumacher",
+  "published_on": 1669614526,
+  "created_on": 1669614263,
+  "keywords": []
+}

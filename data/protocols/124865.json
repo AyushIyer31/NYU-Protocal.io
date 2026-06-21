@@ -1,0 +1,30 @@
+{
+  "id": 124865,
+  "title": "iFLM-guided Cryo-FIB milling",
+  "uri": "iflm-guided-cryo-fib-milling-d56989h6",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4zey8vo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"2a7q7\",\"text\":\"Defective mitochondrial quality control in response to loss of mitochondrial membrane polarization is implicated in Parkinson’s disease by mutations in PINK1 and PRKN.  Application of in situ cryo-electron tomography (cryo-ET) made it possible to visualize the consequences of mitochondrial depolarization at higher resolution than heretofore attainable. Parkin-expressing U2OS cells were treated with the depolarizing agents oligomycin and antimycin A (OA), subjected to cryo-FIB milling, and mitochondrial structure was characterized by in situ cryo-ET. Phagophores were visualized in association with mitochondrial fragments. Bridge-like lipid transporter (BLTP) densities potentially corresponding to ATG2A were seen connected to mitophagic phagophores. Mitochondria in OA-treated cells were fragmented and devoid of matrix calcium phosphate crystals. The intermembrane gap of cristae was narrowed and the intermembrane volume reduced, and some fragments were devoid of cristae. A subpopulation of ATP synthases re-localized from cristae to the inner boundary membrane (IBM) apposed to the outer membrane (OMM). The structure of the dome-shaped prohibitin complex, a dodecamer of PHB1-PHB2 dimers, was determined in situ by sub-tomogram averaging in untreated and treated cells and found to exist in open and closed conformations, with the closed conformation is enriched by OA treatment. These findings provide a set of native snapshots of the manifold nano-structural consequences of mitochondrial depolarization and provide a baseline for future in situ dissection of Parkin-dependent mitophagy.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Notched base-clipped EM grids were loaded into an Aquilos 2 with integrated fluorescence (iFLM, ThermoFisher) with the notch facing upwards.",
+    "Grids were first screened using SEM to identify potential lamellae sites and assess general grid quality. Grids with 20-40 cells in the centers of grid squares were used for lamellae generation.",
+    "Cells were then screened iteratively using iFLM to target specific regions of clustering mCherry or BFP signal for lamellae site placement. Adjust laser power and exposure time as necessary. Z-stacks were taken at each site cover 5x5 grid squares per Z-stack. These images were mainly used to determine where mitochondria were clustered to in untreated or OA treated cells.",
+    "Grids were then sputter coated for 15 seconds using 30mA current and 10Pa pressure, and subsequently GIS coated for 1 minute.",
+    "Auto-TEM was then used to generate a lamellae of approximately 200 nm thickness at each site using the following step-wise protocol for lamellae generation:",
+    "0.3-0.5 nA of current was used to ablate cell material to 3 μm in thickness.",
+    "100 pA current thinned cells to 1 μm.",
+    "50 pA was used to thin cells to 500 nm.",
+    "30 pA was used to thin lamellae to their final 200 nm thickness.",
+    "Grids containing lamellae were immediately retrieved from the Aquilos and moved to liquid nitrogen for no longer than 3 days, or loaded directly into a krios with the notch perpendicular to the tilt axis for data collection."
+  ],
+  "authors": [
+    "kevin rose"
+  ],
+  "creator": "kevin rose",
+  "published_on": 1746695659,
+  "created_on": 1742770397,
+  "keywords": []
+}

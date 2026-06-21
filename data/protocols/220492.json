@@ -1,0 +1,31 @@
+{
+  "id": 220492,
+  "title": "Protocol for a Small-scale Algal Toxicity Assay for Testing the Acute Toxicity of Plastic Leachates",
+  "uri": "protocol-for-a-small-scale-algal-toxicity-assay-fo-g3jkbykkx",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbkjyygpk/v2",
+  "description": "{\"blocks\":[{\"key\":\"a2njp\",\"text\":\"This protocol uses glass culture tubes as opposed to a well plate to avoid potential plastic contamination. The assay runs for two weeks or longer if so desired. Instead of using cell counts, fluorescence is used as a proxy for growth rate, as it can be calculated into µ upon completion of the experiment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"6o3gv\",\"text\":\"-tube rack \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"blruu\",\"text\":\"-10mL glass culture tubes  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3vbe9\",\"text\":\"-glass serological pipettes  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cjohu\",\"text\":\"-micropipettes (P20, P200, P1000) and corresponding tips \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cebso\",\"text\":\"-fluorometer  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5llu6\",\"text\":\"-plant growth chamber or grow light in a room with a constant temperature \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6d4cj\",\"text\":\"-algal culture (of your choice; we used Scenedesmus dimorphus UTEX 1237 and Microcystis aeruginosa UTEX 2385) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"59g84\",\"text\":\"-algal growth media (we used Bristol's Modified Media) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1ddn4\",\"text\":\"-plastic leachate (made in algal growth media) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "We developed this protocol for our own plastic experiments that focus on plastic preproduction pellets. The pellets come small enough to be classified as microplastics (&lt;5mm) without altering them in any way. Cutting up post-consumer environmental plastics, consumer plastics, etc. to various sizes as needed for experimentation is acceptable and will work with the protocol. It is recommended to take the average metrics (mass, volume, density, etc.) of the plastic pieces prior to use. This protocol is also identical across plastic types (the 7 recycling categories used to distinguish between commonly used plastics).",
+    "-tube rack -10mL glass culture tubes -glass serological pipettes -micropipettes (P20, P200, P1000) and corresponding tips -fluorometer -plant growth chamber or grow light in a room with a constant temperature -algal culture -algal growth media -plastic leachate (made in algal growth media)",
+    "Have leachate pre-made in the freezer or start a fresh batch of leachate 72hrs before starting the assay. For a protocol on how to make plastic leachate, see: Protocol for Creating Plastic Leachates by Gillian Champoir",
+    "Assays are conducted in a series of 10 mL glass culture tubes, autoclave prior to use. Decide concentrations of leachates to be used. [EX: We decided on five concentrations of plastic leachate tested in triplicate: 0 mg/mL, 1 mg/mL, 0.1 mg/mL, 0.01 mg/mL, 0.001 mg/mL]",
+    "The culture of chosen algae or cyanobacteria should be started three days prior to using it for inoculation in the assay. It is important that the volume of the culture is large enough to be used for the assay without running out. [EX: we used Scenedesmus dimorphus UTEX 1237 cultured in Bristol&#39;s Modified Media (BMM) and Microcystis aeruginosa UTEX 2385 in 2N BG-11. Remember the leachate needs to be made in the same media that the culture requires.]",
+    "Total volume of each culture tube should be 5ml. The control tubes will be 4.75ml of culture media which is inoculated with 250 µL of culture, totaling 5ml.",
+    "Set up your tube rack prior to culturing. A standard autoclavable rack is 12x6. If you test in triplicate, you can set up 2 plastic types per rack, leaving gaps of 1 or 2 rows between each set of concentrations.",
+    "Total contents of each tube: 1 mg/ml tubes: 250 µL of culture + 4.75ml of leachate 0.1 mg/ml tubes: 250 µL of culture + 475 µL of leachate + 4.275ml of culture media 0.01 mg/ml tubes: 250 µL of culture + 47.5 µL of leachate + 4.702.5ml of culture media 0.001 mg/ml tubes: 250 µL of culture + 4.75 µL of leachate + 4.745.25ml of culture media 0 mg/ml (Control) tubes: 250 µL of culture + 4.75ml of culture media",
+    "Fluorescence at time 0 hrs. should be measured for all tubes using a fluorometer. Decide to take measurements as either raw fluorescence or direct concentration- remain consistent through the sampling period. [EX: we have a TD-700 fluorometer (Turner Designs) that only goes up to 1000rfu when measuring raw fluorescence, therefore we used direct concentration and calculated rfu from there.]",
+    "Samples are incubated together on a shaker table with agitation set to approximately 100RPM. In a Plant Growth Chamber, it is easy to set the temperature and light parameters to the optimal conditions for the species being used in your experiment. If you are incubating the samples outside of a chamber, ensure to take the temperature and light measurements of the room.",
+    "Fluorescence is then recorded every 24 hours for a period of two weeks, or until growth has plateaued, in an Excel spreadsheet."
+  ],
+  "authors": [
+    "Gillian Champoir"
+  ],
+  "creator": "Gillian Champoir",
+  "published_on": 1750265339,
+  "created_on": 1750259193,
+  "keywords": []
+}

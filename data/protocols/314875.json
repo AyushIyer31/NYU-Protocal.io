@@ -1,0 +1,29 @@
+{
+  "id": 314875,
+  "title": "A MODIFIED PROTOCOL FOR DETECTING SPATE-ENCODING GENES FROM SHORT READS AND A SPATEs DATABASE USING ARIBA",
+  "uri": "a-modified-protocol-for-detecting-spate-encoding-g-jxq3cpmyp",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn5oyqg5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"dv1da\",\"text\":\"Serine Protease Autotransporters of Enterobacteriaceae (SPATEs) are secreted effector proteins commonly used by pathogenic bacteria. SPATEs have 3 major domains and are highly homologous in structure, but differ in their functions. The homogeneity of the structure of SPATEs generally and within each domain may sometimes lead to spurious results when tools such as ARIBA and BLAST alone are used indiscriminately. This is particularly true in genomes containing multiple SPATE genes.  In addition, the accuracy of SPATE gene detection is also dependent on the quality and richness of the database used for querying SPATEs. We here provide a rich SPATE-only database and a refined Command Line protocol for detection of SPATE-encoding genes from short reads. We validated the results generated from our refined SPATEs protocol using hybrid assemblies (Illumina and ONT) and homology with SPATE reference proteins.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e8vov\",\"text\":\"[https://www.biorxiv.org/content/10.64898/2026.04.16.715897v1]\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":1,\"length\":60}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"D26613453A6511F1BF760A58A9FEAC02\",\"url\":\"https://www.biorxiv.org/content/10.64898/2026.04.16.715897v1\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Install ARIBA - https://github.com/sanger-pathogens/ariba",
+    "Download SPATEs database ( SPATEs_db.fa )",
+    "Use ariba prepareref command to prepare the SPATEs database (SPATEs_db.fa) for use with ARIBA using the following command: ariba prepareref --all_coding yes -f SPATEs_db.fa outdir ( https://github.com/sanger-pathogens/ariba/wiki/Task:-prepareref )",
+    "Use ariba run command ( https://github.com/sanger-pathogens/ariba/wiki/Task:-run ) to carry out “local assembly” of SPATE-encoding genes in your reads. Assuming your prepared SPATE database (outdir) is called SPATE_prepareref, use: ariba run SPATE_prepareref reads_1.fastq.gz reads_2.fastq.gz reads_outdir (uncompressed fastqs can also be used as input files)",
+    "Use ariba summary command to summerise your report files: ariba summary out in.report.1.tsv in.report.2.tsv in.report.n.tsv ( https://github.com/sanger-pathogens/ariba/wiki/Task:-summary )",
+    "Exclude hits reported as interrupted, partial or fragmented for SPATE-encoding genes from downstream analyses ( https://github.com/sanger-pathogens/ariba/wiki/The-assembled-column-from-ariba-summary ).",
+    "Where there is a discordance (partial vs complete/interrupted/fragmented; complete vs partial/fragmented/interrupted; interrupted vs complete/partial/fragmented or fragmented vs complete/partial/interrupted) in the calls made by two or three source databases, adjudge the call to be correct based on any complete assembly of a specific gene from any one database.",
+    "Codes for database source of SPATE-encoding genes in the SPATEs_db.fa: vf – Virulencefinder database vfdb – Virulencefactor database ncbi - NCBI"
+  ],
+  "authors": [
+    "Rotimi A. Dada",
+    "Iruka N. Okeke"
+  ],
+  "creator": "Rotimi A. Dada",
+  "published_on": 1776657448,
+  "created_on": 1776032844,
+  "keywords": []
+}

@@ -1,0 +1,33 @@
+{
+  "id": 40008,
+  "title": "GNPS Untargeted Metabolomics Workflow ",
+  "uri": "gnps-untargeted-metabolomics-workflow-bjbgkijw",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"btdug\",\"text\":\"GNPS is an open-sourced, web-based mass spectrometry ecosystem that is used for community-wide organization / sharing of raw, processed, or annotated fragmentation mass spectrometry data (MS/MS). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9eh10\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eom2b\",\"text\":\"GNPS aids in identification and discovery throughout the entire life cycle of data; from initial data acquisition/analysis to post publication. GNPS Website\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":144,\"length\":12}],\"data\":{}},{\"key\":\"391cu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d1bgu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3lb9n\",\"text\":\"This is a quickstart guide pulled directly from GNPS Website. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":48,\"length\":12}],\"data\":{}},{\"key\":\"ct0h3\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"54l7p\",\"text\":\"This version was intended as an easy to read step by step guide to: \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"43q7p\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6k054\",\"text\":\"1) Prepare data\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fthev\",\"text\":\"2) Create a GNPS account \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5a7ef\",\"text\":\"3) Upload to GNPS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8je25\",\"text\":\"4) Create a molecular network on GNPS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4av8i\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6k0a6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dstmk\",\"text\":\"This can be found at GNPS.ucsd.edu with more in-depth information. This has been reproduced for use as a workflow within the George Lab for those unfamiliar with GNPS.  More information and other useful tutorials can be found directly on the GNPS website and from Dorrestein publications listed below. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"9351B022D5FC11EAA90A0A58A9FEAC2A\",\"url\":\"https://gnps.ucsd.edu/ProteoSAFe/static/gnps-splash.jsp\"}},\"1\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"548A057ED5FB11EAA90A0A58A9FEAC2A\",\"url\":\"https://ccms-ucsd.github.io/GNPSDocumentation/quickstart\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Create a GNPS account at GNPS Signup",
+    "First convert specific vendor formats to open format using MSConvert locally. MSConvert Download msConvert is a command-line utility for converting between various mass spectrometry data formats, including from raw data from several commercial companies (with vendor libraries, Windows-only). For Windows users, there is also a GUI, msConvertGUI. For any difficulties converting the files - here is a FAQ posted by the Dorrestein lab: https://ccms-ucsd.github.io/GNPSDocumentation/fileconversion/",
+    "Upload converted files using an FTP client such as cyberduck or WinSCP (preffered). They do not like Filezilla as it has malware. Host name: ccms-ftp01.ucsd.edu username: (yourGNPS login) password:(yourGNPS password) Once files are uploaded they will be available for use within GNPS.",
+    "Navigate to the link below - it is the analysis webpage which contains the information for the study. Analysis",
+    "Select from the presets either small dataset ( 5 LC/MS files ) medium dataset ( 5-400 LC/MS files) large dataset ( 400+ LC/MS files).",
+    "Name your analysis under the &#34;title section&#34;",
+    "Select data input files ( that you uploaded in step 3) Within the Basic Options header; to input your spectrum files, select the input files tab next to the Spectrum files (required) field. A pop-up window with three tabs will appear; Select Input Files, Upload Files, Share Files. Proceed by selecting the files you want to analyze by clicking on the mass spectrometry file or an entire folder. Next click on the Spectrum Files G1 button to mark these files for analysis. You may select more files for analysis and put them in the separate groups (G1, G2, G3, G4, G5, G6) to reflect your experimental design. If you are performing an analysis with more than six groups, a metadata file may be used",
+    "For metadata creation see this link: Metadata FAQ",
+    "Once you are done selecting files to be analyzed, close the pop-up and hit submit.",
+    "To quickly glance at all the molecules in your data matching to the GNPS community knowledge of reference MS/MS spectra, click on &#34;View All Library Hits&#34;.",
+    "To visualize the molecular networks in the browser, click the &#34;View Spectral Families (In Browser Network Visualization)&#34;. This brings you to a list of all the individual networks (connected components) that are in your data. Click on the &#34;Visualize Network&#34; link to explore each network individually. Your selection can be guided by the identifications within each network if there is a specific molecule of interest.",
+    "For advanced visualization see this link: https://ccms-ucsd.github.io/GNPSDocumentation/networking/"
+  ],
+  "authors": [
+    "Sierra Simpson",
+    "Olivier George"
+  ],
+  "creator": "Sierra Simpson",
+  "published_on": 1610654062,
+  "created_on": 1596508454,
+  "keywords": []
+}

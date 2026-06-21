@@ -1,0 +1,26 @@
+{
+  "id": 44001,
+  "title": "Vivarium Population Spenser: Mortality protocol",
+  "uri": "vivarium-population-spenser-mortality-protocol-bn79mhr6",
+  "doi": "dx.doi.org/10.17504/protocols.io.bn79mhr6",
+  "description": "{\"blocks\":[{\"key\":\"7fige\",\"text\":\"Description of the steps followed by Vivarium Population Spenser library when running the Mortality module. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"662ob\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"8muvq\",\"text\":\"The rates used in the Mortality component are found here:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"ajhgr\",\"text\":\"https://github.com/alan-turing-institute/daedalus/blob/develop/persistent_data/Mortality2011_LEEDS1_2.csv\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":105}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"9610C9BE19E911EBB41B0A58A9FEAC2A\",\"url\":\"https://github.com/alan-turing-institute/daedalus/blob/develop/persistent_data/Mortality2011_LEEDS1_2.csv\"}}}}",
+  "steps": [
+    "Divide the annual mortality rates for a given local authority by the number of time steps existing in a year.",
+    "For each time step:",
+    "Select all individuals in the sample that appear as &#34;alive&#34; and have an associated gender.",
+    "For these individuals, get the mortality rate given their age, gender, ethnicity and location and turn it into a probability.",
+    "Using random sampling and the mortality probability of the individuals, choose which individuals die in that time step. Change their status from &#34;alive&#34; to &#34;dead&#34;."
+  ],
+  "authors": [
+    "Camila Rangel Smith",
+    "Kasra Hosseini"
+  ],
+  "creator": "Camila Rangel Smith",
+  "published_on": 1604060136,
+  "created_on": 1603977321,
+  "keywords": []
+}

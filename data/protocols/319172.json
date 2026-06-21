@@ -1,0 +1,31 @@
+{
+  "id": 319172,
+  "title": "Magnetic bead-based host depletion for metagenomics",
+  "uri": "magnetic-bead-based-host-depletion-for-metagenomic-j3xccqpix",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6onn5lqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"6m5l2\",\"text\":\"Reduce host DNA from metagenomic samples while retaining most of the bacterial DNA. Host cells are selectively lysed using 1.4 mm zirconium-silicate beads, releasing host DNA into the supernatant whilst bacterial cells remain intact. Magnetic beads are then used to capture the released host DNA; after pelleting the beads on a magnet, the supernatant is retained and taken forwards for bacterial DNA purification (user's choice of bacterial DNA purification protcol). \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e5ijb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"8tj3\",\"text\":\"Our host depletion protocol is fast, simple and reasonably cost-effective. It is most efficient for samples which are low-to-high host and medium-to-high bacteria (e.g. skin swabs, urine). For samples which are high host and very low bacterial biomass (e.g. joint fluid, CSF), try the original version of this protocol from Alcolea-Medina et al. 2024.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"etdsl\",\"text\":\"Collect your metagenomic sample and ensure it s suspended in at least 500 µl of solution. For example, if you have a swab, first vortex the swab in 500 µl of PBS. We haven't tried this protocol with solid sample types (e.g. tissue, faeces), but it would probably work by placing the solid sample in 500 µl of PBS and then proceeding to the first step.  Please let us know if you try this, and if it works...\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"9l3ps\",\"text\":\"This protocol was optimised for the bead-beating equipment we have in our lab (Qiagen's TissueLyser II). For different equipment, you will probably need to optimise the beating steps. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"b2rv\",\"text\":\"DNA LoBind 1.5 ml tubes (Eppendorf, catalogue number EP0030108418)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fl78b\",\"text\":\"PBS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9gk14\",\"text\":\"Ice\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"eoh7i\",\"text\":\"Lysing Matrix D 2 ml tubes (MP Biomedicals, catalogue number 116913100)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d134e\",\"text\":\"ProNex Beads from ProNex Size-Selective Purification System (Promega, catalogue number NG2001) \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2sgu3\",\"text\":\"Magnetic rack for 1.5 ml tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fj1p5\",\"text\":\"TissueLyser (or FastPrep, Precellys, etc.)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"80e5n\",\"text\":\"[OPTIONAL] Thermomixer (e.g. Eppendorf)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Add 750 µl ProNex beads and mix by pipetting up and down 10 times 750 µL ProNex Size-Selective Purification System Promega Catalog #NG2001",
+    "Incubate at room temperature for 10 minutes with OPTIONAL gentle 300 rpm shaking on a thermomixer Room temperature 00:10:00, minutes 300 rpm, °C, Thermomixer C (Eppendorf, 2231000667, https://www.pipette.com/2231000667-Promotion-Eppendorf-ThermoMixer-C-with-24x1-5-mL-SmartBlock-and-ThermoTop )",
+    "Place tube on a magnetic rack and pellet beads until supernatant is colourless (usually 1-2 minutes) 00:02:00, minutes Magnetic Stand (Magnetic Stand, Thermo Scientific, MR02, Any magnetic rack that fits your tubes will suffice., https://www.thermofisher.com/order/catalog/product/MR02 , https://s3.amazonaws.com/pr-journal/9e53sqe.jpeg )",
+    "Transfer the supernatant to a fresh 1.5 ml DNA LoBind tube DNA LoBind Tube 1.5 mL (Microcentrifuge tube, Eppendorf, 022431021, https://online-shop.eppendorf.us/US-en/Laboratory-Consumables-44512/Tubes-44515/DNA-LoBind-Tubes-PF-56252.html )",
+    "Transfer the supernatant (~500 µl) to a fresh 1.5 ml DNA LoBind tube 500 µL DNA LoBind Tube 1.5 mL (Microcentrifuge tube, Eppendorf, 022431021, https://online-shop.eppendorf.us/US-en/Laboratory-Consumables-44512/Tubes-44515/DNA-LoBind-Tubes-PF-56252.html )",
+    "Place the bead-beaten sample tube on ice for at least 1 minute On ice 00:01:00, minute",
+    "Bead-beat the sample at 30 Hz for 3 minutes to lyse host cells 00:03:00, minutes Room temperature Tissue Lyser II (Bead mill, Qiagen, 85300, https://www.qiagen.com/ca/products/discovery-and-translational-research/dna-rna-purification/instruments-equipment/tissuelyser-ii/#orderinginformation , https://s3.amazonaws.com/pr-journal/bkwje.jpeg )",
+    "Add 500 µl of your sample to a 2 ml Lysing Matrix D tube Sample 500 µL Lysing matrix D tubes MP Biomedicals Catalog #6913100",
+    "Proceed with metagenomic DNA purification protocol of your choice"
+  ],
+  "authors": [
+    "Rhod  Evans",
+    "Owen Glenn",
+    "Natalie Ring"
+  ],
+  "creator": "Natalie Ring",
+  "published_on": 1781523610,
+  "created_on": 1781517299,
+  "keywords": []
+}

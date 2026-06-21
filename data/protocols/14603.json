@@ -1,0 +1,26 @@
+{
+  "id": 14603,
+  "title": "Microbiome assay",
+  "uri": "microbiome-assay-shjeb4n",
+  "doi": "dx.doi.org/10.17504/protocols.io.shjeb4n",
+  "description": "{\"blocks\":[{\"key\":\"271gj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"euc7c\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"c1999\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"f8m35\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Extract total DNA from 6 sets of 4 guts of early third instar larvae using the NucleoSpin® Tissue XS DNA extraction kit (Machery-Nagel, Düren, Germany) following the manufacturer’s instructions.",
+    "Amplify the V4 region of the 16S rRNA gene by PCR in duplicate for each sample, using the 515 forward 5’-GTGCCAGCMGCCGCGGTAA-3’ and 806 reverse 3’-GGACTACHVGGGTWTCTAAT-5’ primer.",
+    "Pool duplicate PCR products and sequence using a MiSeq platform with 2 x 250 bp chemistry",
+    "Merge paired-end sequences into contigs, and cluster into Operational Taxonomic Units (OTUs) at 97% sequence similiarty using Mothur (http://www.mothur.org) and its standard operating procedure for MiSeq data, but with minor changes (here, singleton contigs were removed after the pre-clustering step).",
+    "Taxonomically classify OTUs using the Ribosomal Database Project taxonomy ( http://rdp.cme.msu.edu ) with 60% confidence threshold, and compare communities at a genus level.",
+    "Rarefy each sample to the same total number of sequences (n=41,859) to account for differenti sequencing depth, then convert to relative abundance for analysis."
+  ],
+  "authors": [
+    "Wen Aw"
+  ],
+  "creator": "Wen Aw",
+  "published_on": 1541606765,
+  "created_on": 1533813491,
+  "keywords": []
+}

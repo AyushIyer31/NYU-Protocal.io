@@ -1,0 +1,25 @@
+{
+  "id": 45007,
+  "title": "Creare  baseurl per harvesting di repository OAI con OpenRefine",
+  "uri": "creare-baseurl-per-harvesting-di-repository-oai-co-bp7pmrmn",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp7pmrmn",
+  "description": "{\"blocks\":[{\"key\":\"4isjg\",\"text\":\"Il protocollo descrive il metodo per creare le baseurl per l'harvesting di un repository OAI-PMH a partire da una lista di identificatori.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"fg633\",\"text\":\"Installare l'applicativo Openrefine\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"13f3q\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3rv0n\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"1u4q0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"software\",\"mutability\":\"\",\"data\":{\"id\":1167,\"guid\":\"49F8B797341F11EE9D4302C0B41BC903\",\"name\":\"OpenRefine\",\"version\":\"\",\"os_name\":\"\",\"os_version\":\"\",\"developer\":\"Freebase, then Google, now open source community\",\"repository\":\"https://github.com/OpenRefine/OpenRefine\",\"link\":\"https://openrefine.org/\",\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Aprire il progetto OpeRefine contenente la lista degli identificatori OAI predisposta per l&#39;harvesting. La lista può essere predisposta seguendo le indicazioni del protocollo collegato Come importare identificatori OAI-PMH in OpenRefine. Come importare identificatori OAI-PMH in OpenRefine by Andrea Marchitelli",
+    "Cliccare sulla colonna identifier presente nel progetto e scegliere l&#39;opzione Modifica colonna &gt; Aggiungi colonna basata su questa.",
+    "A questo punto confermando l&#39;operazione si otterrà una nuova colonna denominata baseurl_oai contenente le URL per il GetRecord di ogni articolo.",
+    "Nella finestra di dialogo con le impostazioni della nuova colonna inserire baseurl_oai come nome della colonna e un&#39;espressione GREL che concateni la baseurl_oai della rivista, il verb GetRecord e l&#39;identificatore OAI già presente nei file. Es. &#39;http://www.bibliotecheoggi.it/trends/oai?verb=GetRecord&amp;metadataPrefix=oai_dc&amp;identifier=&#39;+value Attenzione a mantenere gli apici (&#39;) all&#39;inizio e alla fine della stringa URL",
+    "Testare il risultato ottenuto cliccando su un paio di link e verificando che la pagina corrispondente si apra correttamente"
+  ],
+  "authors": [
+    "Andrea Marchitelli"
+  ],
+  "creator": "Andrea Marchitelli",
+  "published_on": 1606718725,
+  "created_on": 1606717342,
+  "keywords": []
+}

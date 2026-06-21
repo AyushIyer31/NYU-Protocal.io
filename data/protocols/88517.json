@@ -1,0 +1,43 @@
+{
+  "id": 88517,
+  "title": "Electrospray ionization analysis of eluted nucleotides",
+  "uri": "electrospray-ionization-analysis-of-eluted-nucleot-c2pdydi6",
+  "doi": "dx.doi.org/10.17504/protocols.io.3byl4qz6jvo5/v1",
+  "description": "{\"blocks\":[{\"key\":\"6d3aq\",\"text\":\"This protocol describes the denaturation of PI3KC3-C1, and subsequent analysis of eluted nucleotides by electrospray ionization mass spec. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"7bdja\",\"text\":\"Materials\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"50cs8\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"brpki\",\"text\":\"PI3KC3-C1(VPS15-TSF) and PI3KC3-C1(mCherry-ATG14|VPS15-TSF) protein samples\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b55ec\",\"text\":\"5 mL PD-10 column (Cytiva)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6ou0i\",\"text\":\"0.5 M NH4CH3CO2 buffer\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":8,\"length\":1},{\"style\":\"sub\",\"offset\":11,\"length\":1},{\"style\":\"sub\",\"offset\":14,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"51oct\",\"text\":\"Nanodrop spectrophotometer\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"90v02\",\"text\":\"Liquid chromatography (LC) system (Agilent 1200 series)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"46qop\",\"text\":\"LTQ-Orbitrap-XL mass spectrometer with ESI source (Thermo Fisher Scientific)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"innp\",\"text\":\"Ammonium acetate (≥98% purity)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9v32l\",\"text\":\"Methanol (Optima LC-MS grade, ≥99.9% purity)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cthb2\",\"text\":\"Purified water (resistivity of 18.2 MΩ·cm)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d4t25\",\"text\":\"Ultra C18 column (length: 150 mm, inner diameter: 2.1 mm, particle size: 3 µm)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5vko8\",\"text\":\"Pierce LTQ ESI positive ion calibration solution (Thermo Fisher Scientific)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"da7i0\",\"text\":\"Xcalibur software (version 2.0.7, Thermo Fisher Scientific)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Wash a 5 mL desalting (PD-10) column with 0.5 Molarity (M) NH 4 CH 3 CO 2 .",
+    "Load PI3KC3-C1(VPS15-TSF) and PI3KC3-C1(mCherry-ATG14|VPS15-TSF) protein samples onto a 5-mL PD-10 column.",
+    "Exchange the protein sample buffer by passing the protein through the column.",
+    "Heat the buffer-exchanged protein samples to 90 °C for 00:10:00 to denature the proteins.",
+    "After denaturation, centrifuge the samples at 21000 x g, , 15 minutes to separate out any precipitated protein.",
+    "Measure the A260 absorbance of the denatured samples using a Nanodrop spectrophotometer.",
+    "Connect the LC system (Agilent 1200 series) to the LTQ-Orbitrap-XL mass spectrometer equipped with an ESI source (Thermo Fisher Scientific).",
+    "Equilibrate the Ultra C18 column with the LC mobile phase solvents according to the manufacturer&#39;s instructions.",
+    "Prepare mobile phase solvents A and B: Solvent A : Water with 10 millimolar (mM) ammonium acetate. Solvent B : Methanol with 10 millimolar (mM) ammonium acetate.",
+    "Set up the LC system with the following gradient program:",
+    "Isocratic flow at 0.5% (volume/volume) B for 00:02:00 .",
+    "Linear gradient to 99.5% B over 00:01:00 .",
+    "Isocratic flow at 99.5% B for 00:04:00 .",
+    "Linear gradient to 0.5% B over 00:00:30 .",
+    "Isocratic flow at 0.5% B for 00:17:30 .",
+    "Maintain a flow rate of 150 µL /min and a column temperature of 40 °C .",
+    "Inject 20 µL of the sample into the LC system.",
+    "Perform external mass calibration in the positive ion mode using the Pierce LTQ ESI positive ion calibration solution.",
+    "Acquire full-scan, high-resolution mass spectra in the positive ion mode over the range of mass-to-charge ratio (m/z) = 300 to 1000 using the Orbitrap mass analyzer.",
+    "Set the mass resolution to 60,000 (at m/z = 400, FWHM).",
+    "Analyze the acquired data using Xcalibur software (version 2.0.7, Thermo Fisher Scientific) for peak identification and interpretation."
+  ],
+  "authors": [
+    "Annan SI Cook",
+    "Xuefeng Ren",
+    "Anthony T. Iavarone"
+  ],
+  "creator": "Annan SI Cook",
+  "published_on": 1696106673,
+  "created_on": 1695396365,
+  "keywords": []
+}

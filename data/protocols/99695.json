@@ -1,0 +1,27 @@
+{
+  "id": 99695,
+  "title": "Primer design protocol of an endogenous ribosomal gene, based on RNAseq sequencing of the liver of Astyanax lacustris (Teleostei: Characidae)",
+  "uri": "primer-design-protocol-of-an-endogenous-ribosomal-ddkp24vn",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2lyw7dmvx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"6p2c2\",\"text\":\"For gene expression studies, endogenous genes are necessary for analysis. Therefore, ribosomal protein L7 (rpl7) gene was chosen as endogenous gene and was designed according to the liver’s transcriptome of Astyanax lacustris. During the primer design, it was mainly considering the temperature close to 60ºC and the absence of dimers, establishing the following sequences: GGCCCAGCTGGTTGTGATCGCA (Forward, 5′–3′) and GCCTCCACCAGTTTGGCAAGAGC (Reverse, 5′–3′).\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":107,\"length\":4},{\"style\":\"italic\",\"offset\":207,\"length\":18}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "The livers of the Astyanax lacustris (was previously classified as Astyanax altiparanae , Lucena and Soares, 2016), used in this analysis come from an experiment already published and the entire experimental design is detailed in Muñoz-Peñuela et al ., (2021).",
+    "Three livers were used in this experiment, from two animals exposed to diclofenac and one animal exposed to a mixture of diclofenac and caffeine. Total RNA was obtained using the PureLink ‱ RNA Mini Kit (Thermofisher 12183018A). These samples were selected due to the better quality of the RNA integrity number values. The kit used to construct the libraries was the TruSeq Stranded mRNA (Illumina). After, cDNA libraries were performed on the NextSeq ‱ equipment (Illumina, Inc., USA) to obtain the sequencing. From the results of the transcripts generated, they were aligned with the genome of Astyanax mexicanus and due to their similarity, 5 transcripts of this ribosomal protein L7 ( rpl7 ) gene were identified.",
+    "A primer of ribosomal protein L7 ( rpl7 ) gene was designed according to the liver’s transcriptome of Astyanax lacustris , following the steps described below: 1) Once the sequences were obtained, all sequences related to the chosen gene were selected and aligned in the BioEdit, following the ensuing steps: Accessory application → ClustalW Multiple Alignment → Run → Click ok on all the options. 2) Parameters were determined to select nucleotides from the sequence that showed the most similarity between the transcripts to determine the primers. In this way, regions of the nucleotide sequence were chosen, ranging from 18 to 24 base pairs (bp), avoiding regions with many repeated nucleotides and preferably with three C or G among the last five bases of the primer. 3) Add the chosen sequence to an Oligonucleotide Properties Calculator (http://biotools.nubic.northwestern.edu/OligoCalc.html) and check the melting temperature and the potential of hairpin formation. 4) After defining the forward primer (in the 5&#39;-to-3&#39; direction), another region of the sequence was chosen, as reverse primer (in the 3&#39;-to-5&#39; direction), repeating the previous step, and considering the temperature close to 60ºC and the absence of dimers. 5) After choosing the second sequence, the complementary reverse of the sequence was obtained, with the support of OligoCalc, checking again if the melting temperature remains close to 60ºC and without dimers into the sequence.",
+    "Lucena, C.D., Soares, H.G., 2016. Review of species of the Astyanax bimaculatus “caudal peduncle spot” subgroup sensu Garutti &amp; Langeani (Characiformes, Characidae) from the rio La Plata and rio São Francisco drainages and coastal systems of southern Brazil and Uruguay. Zootaxa 4072 (1), 101–125. https://doi.org/10.11646/ zootaxa.4072.1.5.Muñoz-Peñuela, M., Nostro, F. L. L., Gomes, A.D., Tolussi, C. E., Branco, G. S., Pinheiro, J. P. S., Godoi, F. G. A., Moreira, R. G. (2021). Diclofenac and caffeine inhibit hepatic antioxidant enzymes in the freshwater fish Astyanax altiparanae (Teleostei: Characiformes). Comparative Biochemistry and Physiology Part C: Toxicology &amp; Pharmacology , 108910. DOI:10.1016/j.cbpc.2020.108910."
+  ],
+  "authors": [
+    "Jennifer Lima",
+    "Giovana Souza Branco",
+    "Aline Gomes",
+    "Renata Guimarães Moreira"
+  ],
+  "creator": "Jennifer Lima",
+  "published_on": 1716479516,
+  "created_on": 1715633393,
+  "keywords": []
+}

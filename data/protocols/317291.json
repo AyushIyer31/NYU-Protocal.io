@@ -1,0 +1,33 @@
+{
+  "id": 317291,
+  "title": "Hardware autofocus (Micro-Manager) IX85-ZDC",
+  "uri": "hardware-autofocus-micro-manager-ix85-zdc-jz4jcp8up",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"8ok6p\",\"text\":\"Hardware autofocus methods, such as ZDC (Z Drift Compensation), can be used to automatically correct focus drift caused by thermal drift and mechanical vibrations.  Independent of the imaging pathway, the ZDC tracks the position of the coverslip and compensates by adjusting the position of the objective. The desired focal plane can be selected by adjusting the ZDC offset.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cgni1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d69t7\",\"text\":\"Workflow Modes:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":15}],\"entityRanges\":[],\"data\":{}},{\"key\":\"arvf\",\"text\":\"Measure Offset - Measures the Z-offset between current focus position and ZDC focus. This will also update the position of the “ZDCVirtualOffset”.\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":14}],\"entityRanges\":[],\"data\":{}},{\"key\":\"41mnp\",\"text\":\"Find Focus with Offset - Finds focus and applies the measured offset (ZDCVirtualOffset).\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":22}],\"entityRanges\":[],\"data\":{}},{\"key\":\"aft96\",\"text\":\"Continuous Focus - Maintains continuous focus tracking through the ZDC offset lens.\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":16}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3go4e\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"a00qk\",\"text\":\"Offset Lens:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":12}],\"entityRanges\":[],\"data\":{}},{\"key\":\"15gb0\",\"text\":\"The ZDC offset lens can be controlled independently as a stage device, allowing fine adjustment of the ZDC focal plane. Record only the XYStage and OffsetLens positions in the position list when used in continuous mode\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":203,\"length\":11}],\"entityRanges\":[],\"data\":{}},{\"key\":\"dqau7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3fjh3\",\"text\":\"ZDC Virtual Offset:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":19}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fp2lv\",\"text\":\"This virtual Z-drive can be used to record the offset at various locations. Record the ZDCVirtualOffset mode using the MEASURE_OFFSET script, and make sure to record the position of the ZDCVirtualOffset and ZFocus as well as the XYStage in the position list.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"67jk4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"45fsa\",\"text\":\"Micro-Manager scripts have been written to facilitate ease-of-use of the ZDC. These can be accessed via buttons in a 'Quick Access Panel'. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Bring sample into focus",
+    "Press &#39;MEASURE_OFFSET&#39; button",
+    "Press &#39;CONTINUOUS&#39; button",
+    "Manually fine tune focus with the ZDC in Continuous-Focus mode",
+    "Using ZDC autofocus in single shot operation with a multi-dimensional acquisition",
+    "The system will measure the Z-offset between the current focus position and the ZDC focus. This will update the position of the IX85-ZDCVirtualOffset device.",
+    "If using Multiple Positions (XY), record the position of the IX85-ZDCVirtualOffset and IX85-Focus devices as well as the XYStage in the position list for each position. Screenshot of Micro-Manager windows",
+    "The script will set the ZDC limits based on current position and then maintain continuous focus tracking.",
+    "If using Multiple Positions (XY), only record the position of the IX85-OffsetLens and XYStage in the position list for each position. Note: including IX85-Focus while in Continuous-Focus mode will cause errors. Screenshot of Micro-Manager windows",
+    "Select Autofocus in the MDA window",
+    "Using ZDC autofocus in continuous focus operation with a multi-dimensional acquisition",
+    "Ensure that Autofocus in the MDA window is unchecked",
+    "Manual adjustment of the Near Limit and Far Limit in the Autofocus properties window may be required if travelling large distances. Screenshot of Micro-Manager Autofocus properties window"
+  ],
+  "authors": [
+    "Matt Renshaw"
+  ],
+  "creator": "Matt Renshaw",
+  "published_on": 1779207331,
+  "created_on": 1779118704,
+  "keywords": []
+}

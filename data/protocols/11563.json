@@ -1,0 +1,27 @@
+{
+  "id": 11563,
+  "title": "Introduction to protein annotation with Hidden Markov Models",
+  "uri": "introduction-to-protein-annotation-with-hidden-mar-pijdkcn",
+  "doi": "dx.doi.org/10.17504/protocols.io.pijdkcn",
+  "description": "{\"blocks\":[{\"key\":\"d8klh\",\"text\":\"Here is a general tutoral on how to begin annotating proteins with Hidden Markov Models. A small test set of HMMs is provided in the Git repo downloaded in the first step. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"6jphk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"etc4i\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"dn7vv\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Let&#39;s clone some data files from my Github repo to get started. git clone https://github.com/faylward/hmm_tutorial Now let&#39;s go inside the new folder: cd hmm_tutorial And let&#39;s see what&#39;s inside: ls -l You should see something like this: a",
+    "Now we have some genome files (.fna) but we need to get some proteins to begin annotating. To do this let&#39;s use Prodigal. # Prodigal will predict genes from chromosomes (or contigs), translate those genes into amino acids, and produce annotation summary files (such as &#34;gene feature format&#34;, or gff, files), depending on what options you use. prodigal -i med4_genome.fna -a med4.proteins.faa -d med4.genes.fna -f gff -o med4.prodigal.gff",
+    "Always good to check the files we just created to make sure we know what&#39;s inside. Let&#39;s use seqtk to take a quick look at what&#39;s inside the .faa files. seqtk comp med4.proteins.faa | head And how many proteins total were predicted? seqtk comp med4.proteins.faa | wc",
+    "# Now run the HMMER command. Note that the last two arguments are &#34;positional arguments&#34; since they do not have flags in front of them. The .hmm file and the query protein file must always be provided at the end, in that order. hmmsearch --tblout med4.hmmout -o med4.output cog_hmms.hmm med4.proteins.faa",
+    "# The main tabulated output we want is in med4.hmmout. Unfortunately the authors of HMMER made the output space-delimited, so it&#39;s a bit hard to look at or put in an Excel spreadsheet. # I made a small Python script that will parse through this output, pull out the best hit for each query protein, and put it in a tab-delimited output. python parse_hmmout.py med4.hmmout &gt; med4.hmmout.parsed",
+    "# Now you may notice some hits that have very low bit scores. This is because we did not use any quality cutoffs when we ran HMMER. Just like with BLAST, there is an e-value cutoff option that we can use. # For that we can use the following command:hmmsearch -E 1e-10 --tblout med4.hmmout -o med4.output cog_hmms.hmm med4.proteins.faa",
+    "# Now let&#39;s practice again with another genome and see what we get. A new genome is in the file N_maritimus.fna. This is an Archaea called Nitrosopumilis maritimus, an abundant ammonia-oxidizing microbe in the ocean. # Here is the overall workflow:prodigal -i N_maritimus.fna -a N_maritimus.faa -f gff -o N_maritimus.gffhmmsearch -E 1e-10 --tblout N_maritimus.hmmout -o N_maritimus.output cog_hmms.hmm N_maritimus.faapython parse_hmmout.py N_maritimus.hmmout &gt; N_maritimus.hmmout.parsed # what functional genes are present here that are not present in Prochlorococcus? Which genes are present in both?"
+  ],
+  "authors": [
+    "Frank O Aylward"
+  ],
+  "creator": "Frank O Aylward",
+  "published_on": 1523996689,
+  "created_on": 1523986276,
+  "keywords": []
+}

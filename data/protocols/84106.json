@@ -1,0 +1,24 @@
+{
+  "id": 84106,
+  "title": "Using Amira to manually segment cell bodies in C.Elegans ",
+  "uri": "using-amira-to-manually-segment-cell-bodies-in-c-e-cwdixa4e",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"97quk\",\"text\":\"This protocol describes the techniques used to annotate the cell bodies in C.Elegans. Please reference the Using Amira to manually segment organelles in vEM for machine learning protocol to find details of the annotation techniques and Amira software. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":107,\"length\":70}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"7568F22014FE11EE8DBF0A58A9FEAC02\",\"url\":\"http://dx.doi.org/10.17504/protocols.io.bp2l61rb5vqe/v2\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "This protocol describes the techniques used to annotate the cell bodies in C.Elegans using Amira annotations software. Please reference the Using Amira to manually segment organelles in vEM for machine learning protocol to find details of the annotation techniques and Amira software.",
+    "Filters can transform the raw image to enhance specific features or the overall appearance of the raw image. Various filters can be applied to the raw image in the Amira Project workroom under Project View. Right-click on the raw image tab, and under the drop-down menu, start typing filters to explore the different filters available. Based on the raw data given for this project, a Bilateral filter was chosen and applied to the raw image with a kernel size of 3 and similarity of 20 (Fig 2.1). Fig 2.1 The contrast and brightness of the raw image can be further adjusted from the Segmentation workroom. Under &#34;Display Control&#34; (Fig 2.2), drag the 2D sidebars left to right to make the changes. Fig 2.2 There is no set order in annotating the cell bodies. Still, annotating the big cells first is recommended to minimize the errors from interference with other cell bodies. For example, targeting cells marked with &#34;A&#34; in Figure 2.2 before &#34;B&#34; enables the annotator to visualize the cell boundaries more clearly. Fig 2.3 Use the &#34;Paint&#34; brush to annotate one cell body at a time (Fig 2.4). Refer to Section 3, Getting Started of Using Amira to manually segment organelles in vEM for machine learning , for more details. Fig 2.4 Set the &#34;Paint&#34; brush size to fit the thickness of the cell membrane (highlighted in blue, Fig 2.5). Make sure to follow the cell boundary as accurately as possible. Some cells may appear unclear, and their boundaries may appear hard to distinguish. Only annotate membranes that appear clearly on one plane, then rotate to the remaining two planes to &#34;build&#34; the cell boundary conservatively. Fig 2.5 Once the cell boundary annotation is completed, use the &#34;Pick &amp; Move&#34; tool to select the area within the cell. Assign the space inside the cell (left, Fig 2.6) to the same material as the cell membrane. If the selection overflows (right, Fig 2.6), it indicates a gap or a break in the annotation. Navigate through the frames from all planes to locate the gap, and use the &#34;Paint&#34; tool to fix it. Fig 2.6 Use &#34;Smooth labels &#34; from Segmentation to smooth the cell body (Fig 2.7). The smoothing size indicates the intensity of the smoothing. The bigger the size, the more intensive the smoothing effect is. Start with a smaller smoothing size, and increase the size by one if needed. The smoothing effect applies to all unlocked materials. To avoid over-smoothing unwanted materials, lock the materials that have already been smoothed. Materials can be locked from the Materials panel by clicking the lock icon. Fig 2.7 Create a new material to start annotating a different cell body. Repeat the steps above to annotate the cell boundary. All different materials should be separated by one-pixel minimum. Use the &#34;Expand-Subtract Method&#34; to ensure a separation between adjacent materials (Fig 2.8). Fig 2.8 Annotate all cell bodies within the volume. Once complete, merge all materials onto one material. Make sure different cell bodies are separated (Fig 2.9). Save the Amira project, and export the label field as 3D tif in the Project workroom. Fig 2.9"
+  ],
+  "authors": [
+    "Grace Park",
+    "Aubrey Weigel",
+    "Alyson Petruncio"
+  ],
+  "creator": "Grace Park",
+  "published_on": 1687880423,
+  "created_on": 1687880292,
+  "keywords": []
+}

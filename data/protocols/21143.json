@@ -1,0 +1,39 @@
+{
+  "id": 21143,
+  "title": "Gel Electrophoresis",
+  "uri": "gel-electrophoresis-yvxfw7n",
+  "doi": "dx.doi.org/10.17504/protocols.io.yvxfw7n",
+  "description": "{\"blocks\":[{\"key\":\"28dfv\",\"text\":\"How to prepare and run gel electrophoresis using agarose gel for the verification of nucleic acid amplification products.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"f1p5t\",\"text\":\"Gloves should be worn at all times.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"32ah7\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"9s7ts\",\"text\":\"Gel bottle will be hot from microwave, use a hot mitt and be cautious to not get hot gel on your skin.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7m3t7\",\"text\":\"Ethidium bromide may be a mutagen; skin contact should be avoided.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"afkmt\",\"text\":\"50x TAE Buffer\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"972ae\",\"text\":\"Agarose\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3g9oi\",\"text\":\"DNA ladder\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fof6s\",\"text\":\"Loading dye (optional)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"84hdf\",\"text\":\"Nucleic acid amplification solution (e.g. PCR or LAMP)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bai44\",\"text\":\"Ethidium bromide\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d4eo5\",\"text\":\"Deionized water\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "In a large glass bottle, add 750 mL DI water.",
+    "Add 15 mL 50x TAE buffer to the deionized water.",
+    "Cap the bottle and mix by swirling",
+    "Add the following amount of agarose powder to TAE buffer for different gel concentrations: %s %s Swirl solution lightly to mix agarose into buffer. Swirling too vigorously will introduce bubbles that will make casting difficult.",
+    "Pour 300 mL TAE buffer into microwavable glass bottle.",
+    "Microwave in 00:00:40 intervals until completely dissolved, swirling bottle between heating intervals.",
+    "Pour into gel mold with well insert. Add to black line (~ 100 mL )",
+    "Allow gel to set for approximately 00:20:00 .",
+    "Transfer gel boat with gel into electrophoresis chamber.",
+    "Add buffer to line marked on chamber, completely covering the gel.",
+    "Carefully load the wells with ladder (green) and amplification product solutions at volumes between 1 µL and 5 µL . Optionally, you can mix 1 µL loading dye with 4 µL amplification product solution in a separate microcentrifuge tube to make the loading process easier to visualize.",
+    "Put the lid on the chamber, turn on the power supply and press &#39;RUN&#39;. Run for 00:50:00 . The power supply does not turn off automatically, so set a timer and shut off after 00:50:00 . This time may change based on factors such as gel concentration and amplicon length.",
+    "Transfer the gel into the dying tray.",
+    "Check buffer level and add more if necessary.",
+    "Add 8 µL ethidium bromide to dying tray.",
+    "Turn on stage, and allow to stain for 00:20:00 .",
+    "Place gel in imaging machine.",
+    "Turn on the machine by the switch on left side of machine. Press &#39;Trans UV&#39;.",
+    "Take a picture with the camera."
+  ],
+  "authors": [
+    "Kenneth Schackart"
+  ],
+  "creator": "Kenneth Schackart",
+  "published_on": 1560278971,
+  "created_on": 1551889798,
+  "keywords": []
+}

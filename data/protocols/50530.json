@@ -1,0 +1,41 @@
+{
+  "id": 50530,
+  "title": "Deep cleaning COPAS",
+  "uri": "deep-cleaning-copas-bvkan4se",
+  "doi": "dx.doi.org/10.17504/protocols.io.bvkan4se",
+  "description": "{\"blocks\":[{\"key\":\"98r08\",\"text\":\"To prevent gradual build-up of slime-mould and other contaminants in the COPAS tubing (particularly in the tubing from the sheath), that cause blockages in the flow cell and also lead to erroneous Extinction/TOF readings, the COPAS machine should be ‘Deep Cleaned’ at leastonce per month(every 2 weeks if in regular use)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"nr0f\",\"text\":\"Deep cleaning will take 3 hours – hands-on time is around 1 hour with checks every 20 minutes in between\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"dsrjp\",\"text\":\"10 x 2L Sterile Water\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1uit5\",\"text\":\"1L Decon-90\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2o8dt\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Follow COPAS Protocol up to end of ‘Pre-sorting clean’ (steps 1-19): COPAS wormsorter v.2 by Bonnie Evans",
+    "Click ‘Refill Sample’ – this is to decrease the pressure in the system",
+    "Unscrew the sheath bottle lid, and disconnect the water sensor and the sheath tubing from the sheath bottle (press down on the silver catch)",
+    "Empty the contents of the sheath into the communal sink",
+    "Rinse sheath bottle with Sterile water",
+    "Fill up the sheath with at least 5L of 20% solution of DECON-90 detergent. For 5L: - 4L Sterile water (from 4th floor kitchen) - 1L DECON-90 (D901-04, 5L, product code: 10335650)",
+    "Ensure that the solution fills the sheath sufficiently above the sensor water level",
+    "Reattach the sheath tubing (consider using fresh tubing) and sensor, and screw back on the sheath bottle lid",
+    "Click ‘Done Refill’",
+    "Ensure ‘Sheath ON’",
+    "Click ‘Sample ON’, and solution from the sheath should now pass through the system (instead of from the sample cup)",
+    "Leave the sheath solution to pass through the system for at least an hour, checking every 20 minutes or so to ensure that the level of solution in the sheath does not fall below the sensor level. The rate depends on the sheath PSI. A higher sheath PSI (4-5) can help with cleaning the tubing, but is not recommended for extended periods of time (citation needed). The best method I found was to massage the tubing while sheath solution is flowing through to help dislodge contaminants.",
+    "Click ‘Refill Sample’ and disconnect the sheath tubing, sensor and lid like before",
+    "Dispose of the remaining solution in the sheath down the sink (while running water from the tap to dilute to solution further)",
+    "Rinse out the sheath thoroughly by swilling several (5-6) times with sterile water and disposing in the sink, until no detergent bubbles remain, then rinse several times more",
+    "Refill the sheath back up to at least 5L (half way) with sterile water",
+    "Reconnect the sheath tubing, sensor and lid",
+    "Repeat Steps 7 – 10 with water for an hour",
+    "After running water through the COPAS, ensure ‘Sheath OFF’",
+    "Repeat the Pre-sorting clean from the WormSorterProtocol.docx",
+    "Test run with flow check and Control Particles (see steps 22-29): COPAS wormsorter v.2 by Bonnie Evans"
+  ],
+  "authors": [
+    "Saul Moore"
+  ],
+  "creator": "Bonnie Evans",
+  "published_on": 1623071814,
+  "created_on": 1623071012,
+  "keywords": []
+}

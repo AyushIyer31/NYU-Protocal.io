@@ -1,0 +1,24 @@
+{
+  "id": 3981,
+  "title": "C_HW6 (GC)",
+  "uri": "c-hw6-gc-f5mbq46",
+  "doi": "dx.doi.org/10.17504/protocols.io.f5mbq46",
+  "description": "{\"blocks\":[{\"key\":\"6ulqh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"ea1ma\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"b9q0c\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"1i0ju\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Checkout or &#34;git pull&#34; the Metagenomics Book repo",
+    "Copy the &#34;problems/gc&#34; into your repo: $ cp -r metagenomics-book/problems/gc ~/abe487/problems",
+    "Write a Perl script that will parse a FASTA file. For each read, print the GC content and whether it is &#34;anthrax&#34; or &#34;burkholderia&#34; based on the whether the percent GC falls above or below a given threshold (default = 30%). Sample output $ ./gc.pl6 burk.fa0.52: burkholderia0.51: burkholderia0.50: burkholderia0.47: burkholderia0.51: burkholderia0.46: burkholderia0.50: burkholderia0.44: burkholderia0.49: burkholderia $ ./gc.pl6 --threshold=.5 burk.fa0.52: burkholderia0.51: burkholderia0.50: anthrax0.47: anthrax0.51: burkholderia0.46: anthrax0.50: anthrax0.44: anthrax0.49: anthrax",
+    "A passing test suite should look like this: $ make test./test.pl61..3ok 1 - Bad arg gives usageok 2 - Burkholderiaok 3 - Anthrax"
+  ],
+  "authors": [
+    "Ken Youens-Clark"
+  ],
+  "creator": "Ken Youens-Clark",
+  "published_on": 1476817829,
+  "created_on": 1476817579,
+  "keywords": []
+}

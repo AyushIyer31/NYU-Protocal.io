@@ -1,0 +1,38 @@
+{
+  "id": 224352,
+  "title": "Semi-Automated Analysis Pipeline for Synaptic Function Studies Using iATPSnFR2-miRFP670nano3 biosensors",
+  "uri": "semi-automated-analysis-pipeline-for-synaptic-func-g7b8bzirx",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl88j6rl2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"1rgbb\",\"text\":\"This protocol delineates the analysis of ATP dynamics within synaptic boutons, employing the last generation of the genetically engineered ATP biosensors, called iATPSnFR2, as detailed in a recent publication.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":197,\"length\":11}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"2A2611B8747F11F0814D0A58A9FEAC02\",\"url\":\"https://www.pnas.org/doi/10.1073/pnas.2314604121\"}}}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"65tfl\",\"text\":\"This protocol is intended to use two analysis programs: ImageJ (Fiji) and IGOR Pro (wavemetrics).\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":56,\"length\":13},{\"key\":1,\"offset\":74,\"length\":22}],\"data\":{}},{\"key\":\"48djf\",\"text\":\"Github scripts repository is here.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":2,\"offset\":29,\"length\":4}],\"data\":{}},{\"key\":\"fpnsb\",\"text\":\"Prior to implementing this protocol, users need to customize the provided code to align with their individual settings. \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"32i39\",\"text\":\"Maintain consistent file naming formatting across all experiments. \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ftd3q\",\"text\":\"A chimeric version of the iATPSnFR2 sensor fused to either the miRFP670nano3 protein or a suitably spectrally separated fluorescent protein, provides a ratiometric readout allowing comparisons of ATP across cellular regions.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":76,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"5i71c\",\"text\":\"To capture the ATP signal accurately, the protocol necessitates the use of two separate wavelength lasers —one for the iATPSnFR2 signal and another for the tag protein. This dual-laser approach corrects the signal over sensor expression, enabling precise comparisons between synaptic boutons and across neurons.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"94stf\",\"text\":\"Each “…600AP” file corresponds to a stack of 700 frames acquired at 2Hz with 0.1s frame exposure. Alternating between iATPSnFR2 and miRFP670nano3 channels between frames. Electrical stimulation (1 train of 600APs at 10Hz) was triggered at frame 60. \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"6E549B04747F11F0814D0A58A9FEAC02\",\"url\":\"https://fiji.sc\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"6E549B47747F11F0814D0A58A9FEAC02\",\"url\":\"https://www.wavemetrics.com\"}},\"2\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"7A9C5B86058B4C598DEFDB5E282BFF27\",\"url\":\"https://github.com/camilapulido/Pulido-et-al.-PNAS-2025\"}}}}",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Live-imaging acquisition is programed to alternate laser wavelength signals between consecutive camera frames, as depicted below:",
+    "The initial step towards simplifying information extraction involves reformatting the videos by splitting them into: miRFP670nano3 and iATPSnFR2 channels. This can be achieved effortlessly using the &#39;iATPSnFR2_Formatting&#39; code, with the user only needing to input pertinent information from the experiment settings.",
+    "Drag and drop into ImageJ a control image stack file (i.e Glucose 5 mM) from the miRFP670nano3 channel.",
+    "Utilize the &#39;Time Series Analyzer&#39; Plugin to choose ROIs into the far-red channel and blind to the ATPSnFR2 channel, corresponding to nerve terminals by their appearance as fluorescent puncta.",
+    "Having ROIs chosen, semiautomatically extract and save signal information from every frame, looping across all stack files for every condition (i.e. Glucose 5mM, Glucose 0mM, pharmacology, protein KD, etc.), by simply executing the &#39;iATPSnFR2_RawDataExtraction&#39; code.",
+    "The cleaned data outputs are saved in the desired path. Consisting of txt files with all ROI signals and txt files of the average signal of all ROIs per processed stack at every experimental condition and repetition.",
+    "Ensure to save the selected ROIs for future reference (last steps in the code).",
+    "Draw ROIS corresponding to the background of neurons and execute the &#39;iATPSnFR2_BGDataExtraction&#39; code to automatically get and save background data signal.",
+    "Open IGOR-PRO program.",
+    "Run the &#39;iATPSnFR2_LoadRaw()&#39; function with the corresponding variable inputs specific to your experiment to import the signal information from txt files containing the average signal of all ROIs, along with their corresponding background signals, organizing them into wave arrays for further analysis.",
+    "This routine automatically executes all analytical script steps to extract relevant information. The signal data processing steps are as follows:",
+    "Signal of each data point is background corrected by subtracting to each raw signal their corresponding background noise. As an output, raw signals are now F corrected signal.",
+    "For each time point, calculate the ratio of the iATPSnFR2 signal to the miRFP670nano3 signal, for every nerve terminal. This will yield the F ratio for all single nerve terminals.",
+    "The average value of the initial F ratio time points can be used as a reading of the basal ATP of single cells before the action potential trains.",
+    "The data-set baseline can be further normalized to 1, by dividing F ratio to the basal ATP value for each individual cell. This normalization allows to specifically analyze ATP kinetics during and after APs trains and it is unaffected by the individual cell baseline ATP.",
+    "Different ATP physiological parameters can be extracted from the cleaned and processed time trace datasets per individual neuron, such as: basal ATP, ATP consumption during electrical activity; and ATP synthesis and recovery after activity. These parameters can be compared across different perturbation in a single neuron (i.e. electrical activity, glucose concentration, pharmacology, protein KD, etc.)",
+    "All produced time trace datasets and subsequent quantifications can be plotted and visualized using IGOR-Pro graph and layout tools."
+  ],
+  "authors": [
+    "Camila Pulido",
+    "Tim Ryan"
+  ],
+  "creator": "Camila Pulido",
+  "published_on": 1755167043,
+  "created_on": 1754674291,
+  "keywords": []
+}

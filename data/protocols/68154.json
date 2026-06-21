@@ -1,0 +1,33 @@
+{
+  "id": 68154,
+  "title": "Phylogenomic analysis of Xanthomonas",
+  "uri": "phylogenomic-analysis-of-xanthomonas-ces2tege",
+  "doi": "dx.doi.org/10.17504/protocols.io.261geny57g47/v1",
+  "description": "{\"blocks\":[{\"key\":\"69ibp\",\"text\":\"This is a protocol for using PhaME to generate a phylogenomic tree from a set of Xanthomonas spp. genome sequences.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":81,\"length\":11}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Install PhaME software into a Conda environment called &#39;phame&#39;, following instructions on the software&#39;s GitHub page: PhaME https://github.com/LANL-Bioinformatics/PhaME The PhaME software is described in this paper: Standardized phylogenetic and molecular evolutionary analysis applied to species across the microbial tree of life.. Scientific reports.",
+    "Activate Phame Conda environment conda activate phame Ubuntu 22.04 LTS",
+    "Set-up the reference genome sequence data Create reference directory mkdir ref Ubuntu 22.04 LTS Enter the reference directory cd ref Ubuntu 22.04 LTS Make symbolic link to reference genome assembly ln -s ../genomes/X._campestris_pv._campestris_ATCC_33913_T.fasta . Ubuntu 22.04 LTS Change back to the root directory cd - Ubuntu 22.04 LTS",
+    "Set-up the working directory. Create working directory mkdir workdir Ubuntu 20.04 LTS cd workdir Ubuntu 22.04 LTS Make symbolic links to all the genome assemblies ln -s ../genomes/*.contig . Ubuntu 22.04 LTS Optionally, at this point, we can delete the symbolic links for any genomes that we want to exclude from the final analysis. It is also an option to add any genome assemblies as .contig files (inf FASTA format). Return to previous directory cd - Ubuntu 22.04 LTS",
+    "Ensure that NCBI Datasets command line tools are installed and executable (or a symbolic link to the executable) is in the current directory. NCBI Datasets command line tools NCBI",
+    "Download the genome assemblies that will be included in the analysis: xanthomonas_assm_accs.txt Download assemblies from NCBI ./datasets download genome accession --inputfile xanthomonas_assm_accs.txt --exclude-gff3 --exclude-protein --exclude-rna --exclude-genomic-cds --filename xanthomonas_genome_assemblies.zip Ubuntu 22.04 LTS You should receive a message something like: &#34;Downloading: xanthomonas_genome_assemblies.zip197MB done&#34; Unzip the assemblies download unzip xanthomonas_genome_assemblies.zip Ubuntu 22.04 LTS Make symbolic links to the downloaded assemblies ln -s ncbi_dataset/data/GCA_*/GCA_*.fna . Ubuntu 22.04 LTS List the symbolic links to assembly sequence files ls *.fna Ubuntu 22.04 LTS",
+    "Create a directory for downloaded genome sequence data: Create directory mkdir genomes Ubuntu 22.04",
+    "Enter the directory for downloaded genome sequence data: Enter directory cd genomes Ubuntu 22.04",
+    "Come back out of the directory for downloaded genome sequence data: Change to previous directory cd - Ubuntu LTS 22.04",
+    "Rename the symbolic links to more informative names. We will use the rename_files.pl script to effect this. rename_files.pl https://github.com/davidjstudholme/phylogenomics-Xanthomonas/blob/main/rename_files.pl genomes.list.all.txt perl rename_files.pl genomes.txt Ubuntu 22.04 LTS This should generate a set of .fasta files and .contig symbolic links with informative filenames.",
+    "Create file phame.ctl in current directory. phame.ctl",
+    "Execute PhaME: Execute PhaME phame ./phame.ctl Ubuntu 22.04 LTS This will generate output, including tree files, in directory: ./workdir/results/trees/",
+    "The tree file can now be visualised using any tree-viewing software, for example, iTOL. Interactive Tree Of Life (iTOL) v5: an online tool for phylogenetic tree display and annotation.. Nucleic acids research."
+  ],
+  "authors": [
+    "David J Studholme"
+  ],
+  "creator": "David J Studholme",
+  "published_on": 1659742792,
+  "created_on": 1659555837,
+  "keywords": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": 82535,
+  "title": "3. Post-Shearing 1x SMRTbell Bead Cleanup (Manual Version)",
+  "uri": "3-post-shearing-1x-smrtbell-bead-cleanup-manual-ve-cuufwwtn",
+  "doi": "dx.doi.org/10.17504/protocols.io.n92ldpomol5b/v1",
+  "description": "{\"blocks\":[{\"key\":\"67e8a\",\"text\":\"This protocol outlines the workflow for post-shearing DNA cleanup using the SMRTbell Cleanup beads included in PacBio's SMRTbell Prep Kit 3.0. It is recommended to use this protocol after \\\"Shearing of HMW Bacterial DNA Using the MP Biomedicals™ FastPrep-96™ High-throughput Bead Beating Grinder and Lysis System\\\".\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"8ut9t\",\"text\":\"Shear DNA samples using the procedure \\\"Shearing of HMW Bacterial DNA Using the MP Biomedicals™ FastPrep-96™ High-throughput Bead Beating Grinder and Lysis System\\\".\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":39,\"length\":122}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"B47D9A161A7C4354B01C17E7728B52E8\",\"url\":\"https://www.protocols.io/edit/2-shearing-of-hmw-bacterial-dna-using-the-mp-biome-ctm3wk8n\"}}}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"bg4in\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8},{\"style\":\"italic\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4mupb\",\"text\":\"from SMRTbell Prep Kit 3.0 (PacBio Cat#102-182-700)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":4}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fdthm\",\"text\":\"         Low TE buffer (Cat# 102-178-400)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b06fs\",\"text\":\"         SMRTbell cleanup beads (Cat# 102-158-300)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cnus9\",\"text\":\"80% Ethanol, Molecular Biology Grade (Thermo Fisher Scientific Cat# T08204K7 or equivalent)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":77,\"length\":13}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7n3id\",\"text\":\"Qubit 1x dsDNA High Sensitivity Kit (Thermo Fisher Scientific Cat# Q33231 or Q33230)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":74,\"length\":3}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fjg8j\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d0n4q\",\"text\":\"Supplies\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8},{\"style\":\"italic\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"8ktrm\",\"text\":\"PCR 0.2 mL 8-tube strips, (USA Scientific Cat# 1402-4700 or equivalent)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":57,\"length\":13}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7vq4k\",\"text\":\"Pipette Tips, Sterile, Filtered (P20, P200, P1000), any manufacturer\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":52,\"length\":16}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4qmhc\",\"text\":\"Wide-bore Pipette Tips, Sterile, Filtered (P200) (Mettler Toledo Cat# 30389241 or\\nequivalent)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":79,\"length\":13}],\"entityRanges\":[],\"data\":{}},{\"key\":\"3clvu\",\"text\":\"optional Reagent Reservoirs, (Thermo Fisher Scientific Cat# 13681504 or equivalent)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":9},{\"style\":\"italic\",\"offset\":69,\"length\":13}],\"entityRanges\":[],\"data\":{}},{\"key\":\"2m6ut\",\"text\":\"Qubit Assay Tubes or Qubit Flex Assay Tube Strips (Thermo Fisher Scientific Cat# Q32856 or Q33252)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":88,\"length\":2}],\"entityRanges\":[],\"data\":{}},{\"key\":\"596hp\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5q1nm\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9},{\"style\":\"italic\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"372cu\",\"text\":\"Micropipettes, single (P2, P200) and multichannel (P20, P200), any manufacturer\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":63,\"length\":16}],\"entityRanges\":[],\"data\":{}},{\"key\":\"bvs3q\",\"text\":\"Microcentrifuge (Benchmark Scientific Cat# C1012 or equivalent)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":49,\"length\":13}],\"entityRanges\":[],\"data\":{}},{\"key\":\"eo5iv\",\"text\":\"Vortex (Benchmark Scientific Cat# BV101-B or equivalent)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":42,\"length\":13}],\"entityRanges\":[],\"data\":{}},{\"key\":\"fb3b8\",\"text\":\"Magnetic separation rack compatible with 0.2 mL 8-tube strips, any manufacturer\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":63,\"length\":16}],\"entityRanges\":[],\"data\":{}},{\"key\":\"944b2\",\"text\":\"Qubit Fluorometer (4.0, 3.0, or 2.0) or Qubit Flex Fluorometer (Thermo Fisher Scientific Cat# Q33238 or Q33327)\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Add 1.0x v/v (volume over volume) of resuspended, room-temperature SMRTbell cleanup beads to each tube of sheared DNA.",
+    "Pipette-mix using wide-bore pipette tips until the beads are evenly distributed. Alternatively, the tubes may be gently flicked to mix.",
+    "Quick-spin the tube strip in a microcentrifuge to collect liquid.",
+    "Leave at room temperature for 00:10:00 to allow DNA to bind beads.",
+    "Place the tube strip in a magnetic separation rack until beads separate fully from the solution.",
+    "Slowly pipette off the cleared supernatant without disturbing the beads. Discard the supernatant.",
+    "Slowly dispense 200 µL , or enough to cover the beads, of freshly prepared 80% ethanol into each tube. Wait 00:00:30 , then pipette off the 80% ethanol and discard.",
+    "Repeat the previous step.",
+    "Remove residual 80% ethanol: Remove the tube strip from the magnetic separation rack. Quick-spin the tube strip in a microcentrifuge. Place the tube strip back in a magnetic separation rack until beads separate fully from the solution. Pipette off residual 80% ethanol and discard.",
+    "Remove the tube strip from the magnetic rack. Immediately add 48.5 µL of low TE buffer to each tube and resuspend the beads by pipetting 10 times or until evenly distributed. Use wide-bore pipette tips when mixing. Alternatively, the tubes may be gently flicked to mix.",
+    "Quick-spin the tube strip in a microcentrifuge to collect liquid.",
+    "Leave at Room temperature for 00:05:00 to elute DNA.",
+    "Place the tube strip in a magnetic separation rack until beads separate fully from the solution.",
+    "Slowly pipette off 47 µL cleared supernatant without disturbing the beads. Transfer supernatant to a new tube strip. Discard old tube strip with beads.",
+    "Recommended: Evaluate sample quality (concentration and size distribution)",
+    "Bring SMRTbell cleanup beads to Room temperature for at least 00:20:00 before proceeding",
+    "Resuspend SMRTbell cleanup beads by vortexing thoroughly",
+    "Take 1 µL from each sample tube and dilute with 9 µL elution buffer or water",
+    "Measure DNA concentration of the 1:10 dilution using the Qubit 1x dsDNA High Sensitivity kit",
+    "Measure DNA size distribution of the 1:10 dilution using the Agilent 165 kb Genomic DNA kit on Femto Pulse"
+  ],
+  "authors": [
+    "Jae Hee Jang",
+    "Ellie Meeks",
+    "Kathryn Judy",
+    "Maria Hoffmann"
+  ],
+  "creator": "Jae Hee Jang",
+  "published_on": 1780505727,
+  "created_on": 1685129458,
+  "keywords": []
+}

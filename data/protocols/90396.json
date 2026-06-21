@@ -1,0 +1,32 @@
+{
+  "id": 90396,
+  "title": "Rotarod Test",
+  "uri": "rotarod-test-c4h4yt8w",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l6xrjrlqe/v1",
+  "description": "{\"blocks\":[{\"key\":\"2fifc\",\"text\":\"The purpose of this protocol is to assess mice for coordinated movement. Mice who have degeneration within the basal ganglia pathway will display slower movement and fall off the moving rod sooner.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"202v3\",\"text\":\"For analysis:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c5p2o\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3ljql\",\"text\":\"      The numbers you will put into prism is the time it takes for the mouse to fall off the rotarod (latency to fall). This should be recorded in seconds. \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f56n0\",\"text\":\"      Since mice are measured for 5 days, you will graph data as a repeated measures to see the latency to fall over the course of 5 days. Your end graph should look like the one below:\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4vtas\",\"text\":\"      \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5xkpc\",\"text\":\" \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":{}},{\"key\":\"aiqgq\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8qpcu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d87lq\",\"text\":\" Your statistical test will depend on the number of groups you have. Please consult with a biostat person before publishing results.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2n8h\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"image\",\"mutability\":\"MUTABLE\",\"data\":{\"height\":293,\"id\":417943,\"is_video\":false,\"legend\":\"{\\\"blocks\\\":null,\\\"entityMap\\\":null}\",\"mime\":\"image/png\",\"original_name\":\"image.png\",\"placeholder\":\"https://protocols-files.s3.amazonaws.com/files/n2e2b9qjf.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\\u0026X-Amz-Credential=AKIAWFTFYUBUZ2U2JGOS%2F20260621%2Fus-east-1%2Fs3%2Faws4_request\\u0026X-Amz-Date=20260621T083645Z\\u0026X-Amz-Expires=604800\\u0026X-Amz-SignedHeaders=host\\u0026X-Amz-Signature=869d2ceed6673b769c4236e98d5272578ba6ba72f1446c15a20239c262e4ba37\",\"source\":\"https://protocols-files.s3.amazonaws.com/files/n2ezb9qjf.png?X-Amz-Algorithm=AWS4-HMAC-SHA256\\u0026X-Amz-Credential=AKIAWFTFYUBUZ2U2JGOS%2F20260621%2Fus-east-1%2Fs3%2Faws4_request\\u0026X-Amz-Date=20260621T083645Z\\u0026X-Amz-Expires=604800\\u0026X-Amz-SignedHeaders=host\\u0026X-Amz-Signature=da5a5de2600746cd08984d8d682e0bb5ac5e78bd591aa377f5cb6ef75626f818\",\"type\":1,\"width\":550}}}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Turn on rotarod and start up rotarod software.",
+    "Rename the file. I would recommend having a different file name every day you test. This will make analysis easier later.",
+    "Rename the subject names and reset the lanes (on the actual rotarod).",
+    "Set the speed to 4.0 to 40 RPM. - Over the course of 300 seconds the rotarod will accelerate from 4 to 40 RPM.",
+    "Click the “Reset” button on software and the rotarod will begin turning. Let the mice sit for 1 hour listening to the rotarod. They need to get used to the sound of the machine.",
+    "After the 1 hour, place the mice on the appropriate lane on the rod. Once all the mice are on the rod, click “On/Accel” button and the instrument will begin to accelerate.",
+    "The rod will begin to rotate. As the mice fall off the lane timer will stop. If a mouse hangs on the rod and rotates with the rod for one rotation stop that lane’s timer. If a mouse is still running on the rod after 180sec, stop the timer and record the time as “180”. I have noticed with my mice, that at 180 they are basically running, if the mouse has motor defects they will have fallen off by then.",
+    "When all the timers have been stopped, the software will automatically save on the computer in a txt file. Make sure to have a flash drive to save data on.",
+    "Place mice back in their home cage and start with the next cage.",
+    "Do three trials with 30 min break between trials.",
+    "Repeat all steps for 4 to 5 days. The mice will learn to stay on the rod over time, but if the mouse is suffering from motor defects they will struggle to stay on the rod.",
+    "From the txt file acceleration and latency to fall time will be recorded."
+  ],
+  "authors": [
+    "Jhodi Webster"
+  ],
+  "creator": "Jhodi Webster",
+  "published_on": 1756133745,
+  "created_on": 1699037330,
+  "keywords": []
+}

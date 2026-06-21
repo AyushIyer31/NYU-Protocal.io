@@ -1,0 +1,37 @@
+{
+  "id": 315416,
+  "title": "Confocal imaging and image processing with ImageJ",
+  "uri": "confocal-imaging-and-image-processing-with-imagej-jx9ycpr7x",
+  "doi": "dx.doi.org/10.17504/protocols.io.5qpvoe629l4o/v1",
+  "description": "{\"blocks\":[{\"key\":\"6dq76\",\"text\":\"This protocol describes confocal imaging using a confocal microscope and subsequent image processing with ImageJ, as well as data compilation. The workflow includes quantitative analysis of microglial cell count and morphology, Iba1 fluorescence intensity, and assessment of astrocyte area and GFAP intensity. It also includes analysis of tyrosine hydroxylase (TH) and dopamine transporter (DAT) expression.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"nd8uo\",\"text\":\"Olympus Fluoview FV1000 point-scanning confocal microscope\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f0a4j\",\"text\":\"ImageJ software\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"212rb\",\"text\":\"ImageJ Macro Language\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6te3c\",\"text\":\"https://github.com/Louis-EricTrudeau/Trudeau-lab/tree/main/Mukherjee-2026/Iba1\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":78}],\"data\":{}},{\"key\":\"d825r\",\"text\":\"https://github.com/Louis-EricTrudeau/Trudeau-lab/tree/main/Mukherjee-2026/TH%20DAT\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":82}],\"data\":{}},{\"key\":\"ap1l\",\"text\":\"Python programming language\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6puks\",\"text\":\"pandas library\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"399mf\",\"text\":\"numpy library\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4v40a\",\"text\":\"Statistical analysis and graphing software Prism.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"9522E3A943E811F19A3B0A58A9FEAC02\",\"url\":\"https://github.com/Louis-EricTrudeau/Trudeau-lab/tree/main/Mukherjee-2026/Iba1\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"17E8EB7443EB11F1BEA10A58A9FEAC02\",\"url\":\"https://github.com/Louis-EricTrudeau/Trudeau-lab/tree/main/Mukherjee-2026/TH%20DAT\"}}}}",
+  "steps": [
+    "The imaging is performed using an Olympus Fluoview FV1000 point-scanning confocal microscope. To minimize nonspecific bleed-through signal, images were acquired sequentially with laser excitation at specific wavelengths: 488 nm, 543 nm, and 633 nm.",
+    "All acquired images were processed using ImageJ software ( Schneider et al., 2023 )",
+    "A substantial amount of data was generated through the analysis of images using ImageJ macros. The resulting data was saved in individual CSV files, which contained the measurements extracted from the images. To facilitate further analysis and interpretation, these CSV files were processed and compiled using the Python programming language, specifically leveraging the capabilities of the pandas and numpy libraries. Thus, the individual CSV files containing the extracted image data were compiled into a unified dataset, enabling comprehensive analysis.",
+    "The data was then imported in the statistical analysis and graphing software Prism for further statistical analysis.",
+    "Image acquisition utilized a 60x (NA 1.42) objective to ensure optimal resolution.",
+    "Three specific coronal brain slices were selected for analysis. - The first slice was chosen when the corpus callosum from both hemispheres was nearly touching. - The second slice was selected when the anterior commissure formed a straight line. - The third slice included the hippocampus. Regions of interest within the dorsal and ventral striatum were defined for further analysis.",
+    "To facilitate image analysis, custom scripts written in ImageJ Macro Language were developed and cited in the below sections. These custom scripts enabled precise and efficient analysis of the acquired images.",
+    "For the reconstruction and analysis of microglia and astrocytes, z-stack images were captured at intervals of 2 microns, spanning a total thickness of 20 microns to account for slice shrinkage after mounting.",
+    "Microglia and astrocyte analysis:",
+    "The first step involved segmenting the images to identify cell bodies. This segmentation process was done using a homemade ImageJ macro, which was further modified to trace the arborization of microglia and astrocytes. ( https://github.com/Louis-EricTrudeau/Trudeau-lab/tree/main/Mukherjee-2026/Iba1 )",
+    "Parameters such as microglia density, soma area, soma fluorescence intensity, soma perimeter, soma circularity and the area and intensity of the arborization were quantified.",
+    "For astrocytes, complex arborization only permitted surface and fluorescence intensity analysis.",
+    "Tyrosine hydroxylase and dopamine transporter analysis:",
+    "Prior to quantification, image preprocessing techniques were applied to enhance the accuracy and reliability of the analysis. ( https://github.com/Louis-EricTrudeau/Trudeau-lab/tree/main/Mukherjee-2026/TH%20DAT ) Two commonly utilized preprocessing methods were employed: - convoluted background subtraction - rolling ball background subtraction",
+    "For tyrosine hydroxylase and dopamine transporter analysis, to capture the desired cellular depth, images were acquired at 15 micrometers below the surface of the slice.",
+    "The analysis of TH and DAT involved quantifying fluorescence intensity and surface occupied to provide insights into the expression levels and spatial distribution."
+  ],
+  "authors": [
+    "Alex Tchung",
+    "louis-eric.trudeau Trudeau"
+  ],
+  "creator": "Amandine Even",
+  "published_on": 1777487999,
+  "created_on": 1776731791,
+  "keywords": []
+}

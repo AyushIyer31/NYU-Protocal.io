@@ -1,0 +1,40 @@
+{
+  "id": 113704,
+  "title": "Perturb-seq protocol",
+  "uri": "perturb-seq-protocol-dtag6ibw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl8dje8g2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"bfod1\",\"text\":\"Perturb-seq protocol for ESC DE differentiation\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "We selected 860 peripheral genes with expression 2-fold greater at DE48h compared to ESC (not including DE core TFs).",
+    "10614 ATAC peaks (including promoters) at DE48h flanking 250 kb up/down stream of the 860 peripheral genes’ TSS were selected for further gRNA design.",
+    "Maximum 4 specific gRNAs were selected for each ATAC peak by using GuideScan282.",
+    "All gRNAs have 0MM=0, 1MM=0 and 2MM+3MM&lt;50.",
+    "We further added 66 gRNAs targeting validated core enhancers and promoters of EOMES, MIXL1, GATA6, SOX17, as well as 1,100 gRNAs targeting safe harbor loci 276 as positive and negative controls, respectively.",
+    "In total, 37929 gRNAs were selected as peripheral enhancer perturbation screen library.",
+    "1X peripheral enhancer lentiviral library were first generated as described above.",
+    "100ml of 1X lentiviral library were then transferred into Ultra-Clear Tubes (Beckman Coulter; NC9146666) for concentration under 25,000rcf at 4°C for 90min. Supernatant was gently removed after centrifugation.",
+    "2ml DPBS was used to resuspend virus to generate 50-fold concentrated peripheral enhancer lentiviral library.",
+    "We aimed for a ~100-fold coverage per gRNA for peripheral enhancer single cell perturb-seq screen.",
+    "1.2 million idCas9-KRAB SOX17eGFP/+ HUES8 hESCs were infected with 20μl of the 50-fold concentrated peripheral enhancer lentiviral library at an average MOI of 15 on Day 0 in 6-well plates (100K cells per well).",
+    "A total of 6 μg/ml protamine sulfate per plate was added during the first 24h of infection to improve the infection efficiency.",
+    "One day after infection (Day 1), cells were treated with 2 μg/ml doxycycline to induce dCas9-KRAB expression, which continues till the end of the screen at DE-48h.",
+    "Infected cells were selected with 1 μg/ml puromycin from Day 2-Day 4 and harvested on Day 5 for recovery passage.",
+    "2 days after recovery passage, 6 million cells were collected and seeded into 6-well plates for DE differentiation as described above.",
+    "48h after differentiation, cells were harvested for single cell perturb-seq experiments with targeted collection of 300K cells.",
+    "Single-cell 3′ RNA-seq libraries and gRNA feature barcode libraries were generated with 10x Genomics Chromium Single Cell 3′ Reagent Kit v.3.1 (Dual Index) with Feature Barcode technology for CRISPR Screening following the manufacturer’s guidelines.",
+    "The libraries were sequenced on NovaSeq 6000 platform following the manufacturer’s guidelines."
+  ],
+  "authors": [
+    "Renhe Luo",
+    "Michael Beer",
+    "Danwei Huangfu"
+  ],
+  "creator": "Michael Beer",
+  "published_on": 1733300145,
+  "created_on": 1733272718,
+  "keywords": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": 99517,
+  "title": "Sugar Beet Tissue Collection for Genome Assembly and Annotation with Long Read Sequencing",
+  "uri": "sugar-beet-tissue-collection-for-genome-assembly-a-dde523g6",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzbk92vx1/v2",
+  "description": "{\"blocks\":[{\"key\":\"40is7\",\"text\":\"This protocol outlines the various types of tissue collection needed to follow the USDA-ARS Dorn lab protocol for Beta vulgaris crop wild relative genome sequencing. The annotation pipeline is in another protocol, and can be found by searching the author profile.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":114,\"length\":14}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"fhcf4\",\"text\":\"It is best to plant out 20+ individuals of the line of interest, for all sequencing needed for this experiment. Be sure to keep the plants that you extract high molecular weight DNA from, as you can use that plant for the tissue collection for Omni-C later. It is best to have a highly homozygous population. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"247dm\",\"text\":\"The high molecular weight DNA protocol uses betamercaptoethanol. Complete this extraction in a fume hood and dispose of hazardous waste properly.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"7o8g6\",\"text\":\"See materials list in the kit for each specified extraction. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4b1v9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bs6ud\",\"text\":\"QIAGEN RNeasy Plant MiniKit\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3ts4h\",\"text\":\"PacBio Nanobind Kit\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"bbbvh\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Follow the protocol below as written to isolate plant nuclei from 1-5g of dark treated tissue. https://15a13b02-7dac-4315-baa5-b3ced1ea969d.filesusr.com/ugd/5518db_90f751986a4a4e7bbc8e648d467507d2.pdf?index=true",
+    "Check for quality and presence of necessary DNA size for sequencing (&gt;15kb) using a Pippin Pulse, running a 1% gel with Pre-set protocol example 3. Submit sample as specified by sequencing company of choice Pippin Pulse Manual with protocols: https://sagescience.com/wp-content/uploads/2021/06/Pippin-Pulse-User-Manual-460022-Rev-F-1.pdf",
+    "Place plant(s) of interest at 6 leaf stage or equivalent in a dark cabinet, drawer or room for 24-48 hours. Plants can be kept in the dark until tissue is fully etiolated or the consistency needed for successful extraction.",
+    "After 24-48 hours, harvest 1-5g young tissue into a 50ml falcon tube, removing the mid vein is optional. Place tube into -80C freezer overnight or flash freeze.",
+    "Repeat step 2 as necessary, until 1-5g of tissue has been collected. Additionally, you may choose to wait until the plant(s) of interest have more biomass. More than 5 grams of tissue may be needed, split over multiple reactions.",
+    "Determine plant treatments and which tissue types will be isolated for equimolar pooling of RNA. e.g. To maximize transcript expression in sugar beet, two to three seedlings, 4 leaf stage plants and post-vernalized plants were harvested. Root and shoot tissue for adult plants were separated, ground with liquid N, and RNA extraction was completed, keeping root and shoot tissue separated for downstream pooling.",
+    "Complete RNA extraction with the RNeasy Plant Mini Kit from Qiagen.",
+    "Quality check RNA using Agilent Tapestation or gel elecrophoresis 30S and 50S ribosome ratios. Determine approximate concentration with nanodrop.",
+    "Using sample submission data for sequencing company of choice and quality scores, determine how many individual RNA samples will be pooled into one tube for sequencing.",
+    "Uniformly dilute individual RNA samples such that the final concentration of the submission tube equals the amount required by the sequencing company. e.g. Adding 5 uL of 5 ng/uL RNA for 10 samples will yield 250 ng of RNA in 50 uL (12.5 ug).",
+    "Place plants back in greenhouse to accumulate additional biomass if needed later.",
+    "Place plant(s) of interest at 6 leaf stage or equivalent in a dark cabinet, drawer or room for 24-48 hours. Plants can be kept in the dark until tissue is fully etiolated or the consistency needed for successful extraction.",
+    "After 24-48 hours, harvest 5g young tissue into a 50ml falcon tube, removing the mid vein is optional. Place tube into -80C freezer overnight or flash freeze.",
+    "Submit tissue to sequencing company of choice."
+  ],
+  "authors": [
+    "Olivia Todd",
+    "kevin.dorn"
+  ],
+  "creator": "Olivia Todd",
+  "published_on": 1715275740,
+  "created_on": 1715275554,
+  "keywords": []
+}

@@ -1,0 +1,28 @@
+{
+  "id": 53963,
+  "title": "Uploading Data Files to Terra ",
+  "uri": "uploading-data-files-to-terra-byxjpxkn",
+  "doi": "dx.doi.org/10.17504/protocols.io.byxjpxkn",
+  "description": "{\"blocks\":[{\"key\":\"5f2qn\",\"text\":\"Uploading data to Terra.bio is an essential step in the protocol for analyzing locally stored genomic sequencing data. The Terra.bio uploads page allows users to easily organize their data files using an associated metadata file via a browser-based graphical user interface. This protocol explains the process to prepare the data files and the associated metadata file for upload, and provides the link to the Terra.bio uploads page.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Navigate to the Terra.bio uploads page .",
+    "Select an existing workspace or create the workspace where the data will be uploaded. If there are no workspaces created under the billing project associated with this account please reach out to support@theiagen.com and we will facilitate the creation of a workspace pre-loaded with workflows to perform the analyses needed to meet any variety of research objectives.",
+    "Select an existing collection or create the collection where the data will be uploaded.",
+    "Drag and drop files into the indicated region of the page (or use the file browser by selecting the plus button in the bottom right hand of the window). Then click &#39;NEXT&#39;",
+    "Using the sample names and file names of the the files that have been uploaded to Terra, create a spreadsheet of this &#34;metadata&#34; to upload to Terra as well. Cell A1 defines the root entity. This will be the name of the table where the data is stored in Terra. The root entity is defined using the &#34; entity: &#34; notation and must end with &#34; _id &#34;. The file names in the spreadsheet should match the file names of the files that were uploaded in the previous section. *NOTE: It is best practices to include the run_id of each sample in an addition column:",
+    "Save the file as a tab delimited text file:",
+    "Drag and drop the metadata file into the indicated region of the page (or use the file browser by selecting the plus button in the bottom right hand of the window).",
+    "Review the entries in the datatable and click &#39;CREATE TABLE&#39; to complete the upload process If you experience any issues during this process please reach out to our support email: support@terrapublichealth.zendesk.com If video is your preferred medium of support check out our youtube video on uploading paired end sequencing data to Terra.bio: https://youtu.be/DTU4rON0ycI"
+  ],
+  "authors": [
+    "Francis J Ambrosio"
+  ],
+  "creator": "Francis J Ambrosio",
+  "published_on": 1637613026,
+  "created_on": 1633965600,
+  "keywords": []
+}

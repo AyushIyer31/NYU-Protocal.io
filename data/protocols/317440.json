@@ -1,0 +1,33 @@
+{
+  "id": 317440,
+  "title": "Getting started: Imaging Channels and Filters (Micro-Manager) IX85-LTTL",
+  "uri": "getting-started-imaging-channels-and-filters-micro-jz88cp9zx",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"fsbbv\",\"text\":\"The IX85-LTTL microscopes are fitted with a Spectra X LED light engine (Lumencor) for fluorescence excitation, multi-pass dichroic mirrors in the microscope filter turret and emission filters in the filter wheel (Prior).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6p3qc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7e88d\",\"text\":\"Although most components are controlled via the software, the excitation filters inside the Spectra X are manual and should be checked to ensure you are using the optimal filters for your imaging.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "The SPECTRA X Light Engine has six independently controllable LEDs spanning the visible spectrum from 360–780 nm.",
+    "(blank labels)There are eight optical bandpass filters to select the optimal wavelengths to excite your fluorophores. Access to the user exchangeable excitation filters Position of each filter is labelled. Note: C and T filters share the same slot, and G and Y share a slot. Spaces are available on the right to store filters not in use(blank labels).",
+    "Filter exchange",
+    "Open hatch",
+    "Locate filter you want to use (e.g Y)",
+    "Remove filter from use position (e.g. G in the GY position)",
+    "Insert selected filter into the use position (e.g. Y into GY)",
+    "Insert unused filter into spare location (e.g. G into blank)",
+    "The excitation filters need to be selected to match with the dichroic mirror you are going to use in the imaging channel. LED label LED name Filter name Filter colour Bandpass Compatible dichroics 1 R Red R Red 635/22nm Pentaband 2 CT Cyan-Teal C Cyan 475/28nm Pentaband, Dualband 3 GY Green-Yellow G Green 555/28nm Pentaband 4 N near InfraRed N near InfraRed 730/40nm Pentaband 5 B Blue B Blue 438/29nm Tripleband 6 U UV-Violet U UV 377/54nm Pentaband 7 CT Cyan-Teal T Teal 511/16nm Tripleband 8 GY Green-Yellow Y Yellow 575/25nm Dualband, Tripleband Matching the LED, filter and dichroic mirrors available on the LTTL",
+    "The Imaging_channel group in Micro-Manager includes preset combinations of excitation LED, dichroic mirror and emission filter. Alternative combinations can be added (please see CALM for assistance).",
+    "Remember that it is best practice to image your channels with the same dichroic mirror during a multi-channel acquisition.",
+    "The available filters and default Imaging channels have been uploaded to FPBase, it is worthwhile looking at the optimal settings for your fluorescent proteins and dyes.",
+    "System on FPBase.org"
+  ],
+  "authors": [
+    "Matt Renshaw"
+  ],
+  "creator": "Matt Renshaw",
+  "published_on": 1779207331,
+  "created_on": 1779190164,
+  "keywords": []
+}

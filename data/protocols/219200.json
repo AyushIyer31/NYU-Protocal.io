@@ -1,0 +1,31 @@
+{
+  "id": 219200,
+  "title": "DEPTH",
+  "uri": "depth-g2a8byahx",
+  "doi": "dx.doi.org/10.17504/protocols.io.bp2l62xb1gqe/v2",
+  "description": "{\"blocks\":[{\"key\":\"dc2ht\",\"text\":\"Purpose \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"a000e\",\"text\":\"To acquire a spectrum while suppressing background signals via the depth composite pulse.  \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5fk3e\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5q4pf\",\"text\":\"Scope \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":5}],\"entityRanges\":[],\"data\":{}},{\"key\":\"9vaqr\",\"text\":\"This sequence is intended for direct polarization experiments on nuclei with significant background signals arising from probe materials, e.g., 1H, 19F, 13C, 29Si, 11B, among others. It will be most effective in spin-1/2 systems, and may have limited utilities for quadrupolar nuclei such as 11B. If the B1 field of the probe is not sufficiently homogeneous, this sequence can have an effect on the relative integrated intensities of the peaks in the spectrum. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":144,\"length\":1},{\"style\":\"sup\",\"offset\":148,\"length\":2},{\"style\":\"sup\",\"offset\":153,\"length\":2},{\"style\":\"sup\",\"offset\":158,\"length\":2},{\"style\":\"sup\",\"offset\":164,\"length\":2},{\"style\":\"sup\",\"offset\":292,\"length\":2},{\"style\":\"italic\",\"offset\":304,\"length\":1},{\"style\":\"sub\",\"offset\":305,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"5k18n\",\"text\":\"Depth pulses will typically result in reduced sensitivity as compared to a conventional Bloch decay experiment. The exact reduction will depend on the B1 homogeneity of the probe being used.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":151,\"length\":1},{\"style\":\"sub\",\"offset\":152,\"length\":1}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"a0cgv\",\"text\":\"The user should be familiar with optimizing 90° pulses, power limits, and the probe duty cycle.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cmi4f\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"pgc9\",\"text\":\"Expected amount of time SOP will use: 1 hour or less\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"fejdb\",\"text\":\"Definitions:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":12}],\"entityRanges\":[],\"data\":{}},{\"key\":\"4i578\",\"text\":\"B1: Applied magnetic field\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":1},{\"style\":\"sub\",\"offset\":1,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"a0i1c\",\"text\":\"T1: Spin-lattice relaxation time constant\",\"type\":\"ordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":1},{\"style\":\"sub\",\"offset\":1,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7g2to\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Set the 90° pulse length, p1 , and pulse power, plw1 , to previously optimized values.",
+    "Set the recycle delay, d1 , to either 1.3 × T 1 for optimal sensitivity or 5 × T 1­ for accurate relative quantitation.",
+    "If heteronuclear decoupling is required:",
+    "Set zgoptns to -Ddec.",
+    "Set the decoupling program, cpdprg2 , and pulse length, pcpd2 , to previously optimized values.",
+    "If presaturation is required:",
+    "Set zgoptns to -Dpresat.",
+    "Set the presaturation comb delay, d20 , to a previously optimized value. This value will depend on the system and nucleus under investigation. For 1 H, 1 ms may be reasonable.",
+    "Set the number of presaturation pulses, l20 , to a previously optimized value. A reasonable default value is 20.",
+    "Set the number of scans, ns , to a multiple of 16; this should be high enough to achieve adequate signal-to-noise ratio.",
+    "Acquire the spectrum."
+  ],
+  "authors": [
+    "Alexander L. Paterson"
+  ],
+  "creator": "NMRFAM Facility",
+  "published_on": 1753812083,
+  "created_on": 1748612192,
+  "keywords": []
+}

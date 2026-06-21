@@ -1,0 +1,32 @@
+{
+  "id": 3821,
+  "title": "MG_HW4: Co-assembly using Megahit",
+  "uri": "mg-hw4-co-assembly-using-megahit-fymbpu6",
+  "doi": "dx.doi.org/10.17504/protocols.io.fymbpu6",
+  "description": "{\"blocks\":[{\"key\":\"al6jt\",\"text\":\"This protocol describes the procedure for performing a co-assembly of short reads to obtain contigs using the Megahit assembler. This procedure is performed on a node at the UoA HPC due to memory considerations. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"7ubvo\",\"text\":\"UoA HPC: Using the Systems\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":26}],\"data\":[]},{\"key\":\"51qtj\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"1bs88\",\"text\":\"Megahit github\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":14}],\"data\":[]}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"0CEC0D4836454E5393356000B0FED92C\",\"url\":\"http://rc.arizona.edu/hpc-htc/using-systems\"}},\"1\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"C420D48565D545D2B4579E0F52E11FCA\",\"url\":\"https://github.com/voutcn/megahit\"}}}}",
+  "before_start": "{\"blocks\":[{\"key\":\"5tibc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"cg8p2\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Login to the HPC and move into Cluster(ICE). $ ssh hpc$ ice $ ssh hpc $ ice",
+    "Move into your bh_class directory. $ cd /rsgrps/bh_class/username Use YOUR username to go to YOUR directory",
+    "Assembly must be run on a node at UoAs HPC due to the high memory requirements of the job. Copy the below script into a new file called run-assembly.sh : don&#39;t forget to change the permissions so you can run this program: $ chmod 755 run-assembly.sh You can also increase the number of cpu-threads to 12, because you are running on a machine with 12 cores. -t 12 The below script assumes that your fasta files are located in /rsgrps/bh_class/username/fastq and have the .fasta file extension. If your files are located elsewhere change the FASTA_DIR variable as necessary. #!/bin/bash#PBS -W group_list=bh_class#PBS -q windfall#PBS -l select=1:ncpus=12:mem=23gb#PBS -l pvmem=22gb#PBS -l walltime=24:00:00#PBS -l cput=24:00:00#PBS -M netid@email.arizona.edu#PBS -m beaecho “my job_id is: ${PBS_JOBID}”FASTA_DIR='/rsgrps/bh_class/username/fastq'ASSEM_DIR='/rsgrps/bh_class/username/assembly/megahit-out'cd $FASTA_DIRFASTA=$(ls ./*.fasta | python -c 'import sys; print Make sure to replace netid and username. (username appears twice in this script)#PBS -l select=1:ncpus=12:mem=23gb is the memory allocations for the job. 1 node, 12 CPUs, and 23gb of RAM.FASTA=$(ls ./*.fasta) will find all files with the extension .fasta in your FASTA_DIR. and is piped into the python command to join then on commas. #!/bin/bash #PBS -W group_list=bh_class #PBS -q windfall #PBS -l select=1:ncpus=12:mem=23gb #PBS -l pvmem=22gb #PBS -l walltime=24:00:00 #PBS -l cput=24:00:00 #PBS -M netid@email.arizona.edu #PBS -m bea echo “my job_id is: ${PBS_JOBID}” FASTA_DIR=&#39;/rsgrps/bh_class/username/fastq&#39; ASSEM_DIR=&#39;/rsgrps/bh_class/username/assembly/megahit-out&#39; cd $FASTA_DIR FASTA=$(ls ./*.fasta | python -c &#39;import sys; print &#34;,&#34;.join([x.strip() for x in sys.stdin.readlines()])&#39;) cd $ASSEM_DIR megahit -r $FASTA --min-contig-len 1000 -t 12 -o $ASSEM_DIR Make sure to replace netid and username. (username appears twice in this script) #PBS -l select=1:ncpus=12:mem=23gb is the memory allocations for the job. 1 node, 12 CPUs, and 23gb of RAM. FASTA=$(ls ./*.fasta) will find all files with the extension .fasta in your FASTA_DIR. and is piped into the python command to join then on commas.",
+    "Submit run-assembly.sh using qsub: $ qsub -e std-err/ -o std-out/ run-assembly.sh Execute this command in your /rsgrps/bh_class/username/assembly directory which is the same place where the run-assembly.sh script should be-e and -o declare where to print stdout and stderr. $ qsub -e std-err/ -o std-out/ run-assembly.sh Execute this command in your /rsgrps/bh_class/username/assembly directory which is the same place where the run-assembly.sh script should be -e and -o declare where to print stdout and stderr.",
+    "Check the status of your job: $ qstat -u jamesthornton use your netid username",
+    "The status of the job will go from a &#39;Q&#39; to &#39;R&#39; when it is running. Once complete the list will be empty. You should receive email notifications once the job begins running and is complete.",
+    "Once the job is complete move into the assembly/megahit-out directory and check its contents. you should also move the shell script there for future reference: $ mv run-assembly.sh ./assembly $ cd /rsgrps/bh_class/username/assembly$ ls $ cd /rsgrps/bh_class/username/assembly $ ls",
+    "Rename the final.contigs.fa to contigs.fa : $ mv final.contigs.fa ./contigs.fa",
+    "Check the log file and report number of contigs, min/max length, and N50 in your google doc. Be sure to describe how you did the assembly. What program was used? $ tail log tail can be used since the information you need is at the bottom of the log file.",
+    "Create an assembly directory. $ mkdir assembly",
+    "Move into the assembly directory and create a std-out and std-err directory $ cd assembly$ mkdir std-err$ mkdir std-out $ cd assembly $ mkdir std-err $ mkdir std-out",
+    "Your assembly directory should look like this: a"
+  ],
+  "authors": [
+    "James Thornton"
+  ],
+  "creator": "James E Thornton Jr",
+  "published_on": 1475526960,
+  "created_on": 1475524699,
+  "keywords": []
+}

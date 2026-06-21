@@ -1,0 +1,33 @@
+{
+  "id": 118850,
+  "title": "Imaging and Quantification for ST",
+  "uri": "imaging-and-quantification-for-st-dyba7sie",
+  "doi": "dx.doi.org/10.17504/protocols.io.rm7vzk2k8vx1/v1",
+  "description": "{\"blocks\":[{\"key\":\"3ote9\",\"text\":\"Protocol for Imaging, Cropping and\\nQuantification in Striatum\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Images scanned with Olympus VS200 (mode: projection intensity accumulation)​",
+    "Sections viewed on OLYMPUS OlyVIA (3.4.1)​",
+    "Imagesare cropped for sections following the Bregma range (0.98mm – 0.74mm)",
+    "Channels are renamed based on their antibody(DAPI, TH, mCherry, αSyn)",
+    "Annotations are categorized in 4 quadrants foreach side of Striatum as DL, DM, VL, VM.",
+    "Quadrants are annotated surrounding TH+ cellsclusters and including the accumbens nucleus core landmark.",
+    "Two circular annotations of consistent size incortical region of each section are created for background intensity values.(Neg1 and Neg2)",
+    "Compute intensity feature was used with thefollowing parameters:",
+    "a. Channels: TH/mCherry/αSyn b. Preferred pixel size: 2µm c. Tile diameter for ROI: 25µm d. Area: X µm 2 (depending on the size of the annotation) e. Perimeter: X µm (depending on the size of the annotation) f. Mean intensity: 2.00 µm per pixel: (TH/ mCherry / αSyn)",
+    "‘Annotation measurement’ results of each image arethen exported to excel and arranged accordingly."
+  ],
+  "authors": [
+    "Tony Hsiao",
+    "Anahid Ansari Mahabadian",
+    "YuHong Fu",
+    "Glenda Halliday"
+  ],
+  "creator": "Tony Hsiao",
+  "published_on": 1737540200,
+  "created_on": 1737512544,
+  "keywords": []
+}

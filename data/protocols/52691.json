@@ -1,0 +1,39 @@
+{
+  "id": 52691,
+  "title": "A High-Throughput Assay for Quantifying Phenotypic Traits of Microalgae",
+  "uri": "a-high-throughput-assay-for-quantifying-phenotypic-bxptpmnn",
+  "doi": "dx.doi.org/10.17504/protocols.io.4r3l24j33g1y/v1",
+  "description": "{\"blocks\":[{\"key\":\"96p0u\",\"text\":\"This outlines a workflow for measuring 10 phenotypic traits of centric diatoms using a variety of methodologies. This method is described in:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6uk5q\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"560mu\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"nkho\",\"text\":\"Argyle, P. A., Hinners, J., Walworth, N. G., Collins, S., Levine, N. M., \\u0026 Doblin, M. A. (2021). A high-throughput assay for quantifying phenotypic traits of microalgae. Frontiers in microbiology, 12, 706235.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":170,\"length\":25},{\"style\":\"italic\",\"offset\":197,\"length\":2}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Experimental cultures are grown in 12-well tissue culture plates. Triplicate cultures per treatment are recommended. The initial cell concentration should be 2000 cells/mL, but may be altered depending on the anticipated growth. During developing, 400 µL of stock culture at a concentration of 11000 cells/mL was added to 4 mL of growth media in each well, resulting in a final volume of 4.4 mL at a concentration of 2000 cells/mL. The concentration of the initial stock culture was measured using flow cytometry as outlined in: Measuring growth rates of diatom cells in culture by Phoebe Argyle The stock was then diluted or concentrated using centrifugation 1000 x g, 20 °C, 5 minutes to achieve the final concentration of 11000 cells/mL. NB: The initial concentration of the cultures may be altered depending on anticipated growth, or the species of microalgae being used. Cultures should be randomised within growth plates. Analysis during method development showed negligible variance due to &#39;plate&#39; effects, however we recommend position plates randomly within growth incubators and changing their positions daily to minimize potential effects.",
+    "After inoculation, take an initial in vivo fluorescence measurement of each plate using a microplate reader as outlined in : Measuring growth rates of diatom cells in culture by Phoebe Argyle Return plates to their experimental incubators.",
+    "Once a culture has reached mid-exponential phase, trait measurements begin according to the workflow. Note not all culture wells will be ready to harvest on any one day, creating a staggered approach. The workflow of the Quantitative Phenotyping Assay (QPA) outlining the sequence of actions, measurements, and data outcomes. (from Argyle et al. 2021).",
+    "Taken an aliquot and fix for flow cytometry, according to the protocol: Flow cytometry trait measurements (size, granularity and chlorophyll-a) of diatoms by Phoebe Argyle",
+    "Seal plates with breathable seal. These can act in place of the plastic lids of desired. Breathe-Easy® sealing membrane (Plate seal, Breathe-Easy®, Z380059-1PAK, https://www.sigmaaldrich.com )",
+    "Each day, track the in vivo fluorescence at least one hour after the onset of the photoperiod. During development this would be at 9am, after &#39;lights on&#39; at 6am, following a 12:12 light cycle. Light settings may vary depending on the nature of the experiment being conducted.",
+    "Track the in vivo fluorescence over time, and note the growth phase of the cultures. Trait measurements are conducted during mid-exponential growth, so some discernment is required to estimate this stage. For example, in this experiment, the cultures shown in blue are in exponential growth between days 2 and 7, whereas the orange cultures have a short exponential phase between days 2 and 5. Once the experiment is harvested growth measures can no longer be taken, so if in doubt of the growth phase, an experiment of just the growth may be prudent to anticipate the best time to harvest for trait measurements. Growth of Thalassiosira spp. cultures as measured by in vivo fluorescence over time. The blue represent 3 biological replicates of T. rotula and the orange are three biological replicates of T. pseudonana , all grown at 30°C in f/2 media.",
+    "Initiate the Reactive oxygen species assay according to the protocol: Quantifying Reactive Oxygen Species in diatoms by Phoebe Argyle",
+    "Initiate the silicification assay according to the protocol: LINK TO PDMPO assay to insert after publication",
+    "Measure the photophysiological traits according to the protocol: Measuring photophysiological traits of diatoms from Rapid Light Curves using a Water-PAM by Phoebe Argyle Not that during this time, it may be necessary to return to the ROS assay and take the final measurement.",
+    "Conduct flow cytometry analysis of the fixed samples collected in the morning according to the protocol: Flow cytometry trait measurements (size, granularity and chlorophyll-a) of diatoms by Phoebe Argyle",
+    "Multivariate trait data can be analysed using Principal Component Analysis to generate a multivariate trait-scape, in which differences between strains or species, as well as relationships between traits, can be visualised. Figure 2A from Argyle et al. 2021. A trait-scape of Thalassiosira spp. strains grown in multi-well plates and assayed using the QPA. Shapes represent different growth plates, each point is a biological replicate.",
+    "Measure neutral lipids according to the protocol: Measuring neutral lipids in fixed diatom cells using BODIPY 505/515 by Phoebe Argyle",
+    "On the following day, when harvesting the next days&#39; cultures, take the aliquots from the previous days&#39; incubation and analyse via flow cytometry (according to the protocol). As this is done in plate-mode, these samples can be analysed while step 10 is completed."
+  ],
+  "authors": [
+    "Phoebe Argyle",
+    "Jana Hinners",
+    "Nathan G. Walworth",
+    "Sinéad ollins",
+    "Naomi M. Levine",
+    "Martina A. Doblin"
+  ],
+  "creator": "Phoebe Argyle",
+  "published_on": 1677308443,
+  "created_on": 1629852595,
+  "keywords": []
+}

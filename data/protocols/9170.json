@@ -1,0 +1,28 @@
+{
+  "id": 9170,
+  "title": "Gene Prediction & Filtering",
+  "uri": "gene-prediction-filtering-k7sczne",
+  "doi": "dx.doi.org/10.17504/protocols.io.k7sczne",
+  "description": "{\"blocks\":[{\"key\":\"d0ed6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"1m19a\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"7n5a0\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"7g3rb\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "/home/CAM/qlin/LF10_Genome_Annotation/BRAKER/t0 /home/CAM/qlin/LF10_Genome_Annotation/BRAKER/t1 /home/CAM/qlin/LF10_Genome_Annotation/BRAKER/t2",
+    "/home/CAM/qlin/scripts/geneFilter4gtf.pl /home/CAM/qlin/LF10_Genome_Annotation/BRAKER/t1/braker/lewisii/t2*",
+    "/home/CAM/qlin/LF10_Genome_Annotation/diamond/t2",
+    "/home/CAM/qlin/scripts/fetchSeq4fa2.pl /home/CAM/qlin/LF10_Genome_Annotation/diamond/t2/t2.match.txt /home/CAM/qlin/LF10_Genome_Annotation/diamond/t2/t2.match.aa /home/CAM/qlin/LF10_Genome_Annotation/diamond/t2/t2.unmatch.aa",
+    "/home/CAM/qlin/LF10_Genome_Annotation/hmm/t2*",
+    "/home/CAM/qlin/scripts/domtbloutFetch.pl /home/CAM/qlin/LF10_Genome_Annotation/hmm/t2.unmatch.aa",
+    "/home/CAM/qlin/LF10_Genome_Annotation/hmm/t2.unmatch.mono.aa /home/CAM/qlin/LF10_Genome_Annotation/hmm/t2.unmatch.multi.aa",
+    "/home/CAM/qlin/LF10_Genome_Annotation/diamond/t2_plants"
+  ],
+  "authors": [
+    "Qiaoshan Lin"
+  ],
+  "creator": "Qiaoshan Lin",
+  "published_on": 1512943548,
+  "created_on": 1512940629,
+  "keywords": []
+}

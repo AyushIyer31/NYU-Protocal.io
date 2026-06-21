@@ -1,0 +1,32 @@
+{
+  "id": 227597,
+  "title": "Blunt-End-Single-Tube (BEST): Adapter Hybridization",
+  "uri": "blunt-end-single-tube-best-adapter-hybridization-hahmb2b47",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlkym4wg5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"8ff9m\",\"text\":\"This protocol describes the process of the hybridization of P5 and P7 adapters for the Blunt-End-Single-Tube (BEST) library build protocol. Following this protocol produces the P5+P7 adapter complex for use in the BEST library build. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"90dt5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9rlh8\",\"text\":\"This protocol is based on: Carøe, C., Gopalakrishnan, S., Vinner, L., T. Mak, S. S., S. Sinding, M. H., Samaniego, J. A., Wales, N., Sicheritz-Pontén, T., \\u0026 P. Gilbert, M. T. (2018). Single-tube library preparation for degraded DNA. Methods in Ecology and Evolution, 9(2), 410-419. https://doi.org/10.1111/2041-210X.12871\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":233,\"length\":32},{\"style\":\"italic\",\"offset\":267,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"e4mhd\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"et1ta\",\"text\":\"Always cite the original paper when using this protocol, in addition to citing this protocols.io protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":7,\"length\":23}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"dag5d\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"fm3hl\",\"text\":\"UV-treat aliquots (ddH2O, etc.) for 10 minutes before use.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"26ium\",\"text\":\"Mix all the reagents well, before use.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2unft\",\"text\":\"Do not UV Eppendorf Tubes/PCR tubes\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ebdtn\",\"text\":\"Clean all surfaces with 5% bleach solution followed by 70% ethanol before and after use.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8p41e\",\"text\":\"Clean all equipment with 70% ethanol before and after use.\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"9eqml\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "P5 Adapter (in PCR tube) Reagent Volume 1 IS1 (500μM) 40 μL 2 IS3 (500μM) 40 μL 3 ddH2O 10 μL 4 Oligo hybridization buffer 10 μL 5 Total 100 μL",
+    "P7 Adapter (in a different PCR tube to P5) Reagent Volume 1 IS2 (500μM) 40 μL 2 IS3 (500μM) 40 μL 3 ddH2O 10 μL 4 Oligo hybridization buffer 10 μL 5 Total 100 μL",
+    "Vortex both tubes &amp; spin down. Make sure they are well mixed.",
+    "After cooldown, mix the two adapters in a 1.5 mL Eppendorf tube. This is your final stock tube, so label properly with name (e.g. BEST P5+P7 adapter mix), date, and concentration. This gives a P5+P7 solution of 200 μM .",
+    "Prepare the following reagents: Adapters (sequences in table below): IS1 (stock: 500μM) IS2 (stock: 500μM) IS3 (stock: 500μM) Other reagents: Molecular grade H20 Merck MilliporeSigma (Sigma-Aldrich) Catalog #W4502 5M NaCl Invitrogen - Thermo Fisher Catalog #AM9760G 1M Tris-HCl, pH 8.0 Invitrogen - Thermo Fisher Catalog #15568025 (identical to EB buffer Qiagen Catalog #19086 ) 0.5M EDTA Invitrogen Catalog #AM9260G TE Buffer, RNase Free Invitrogen Catalog #AM9858 Table 1 Adapter oligo sequences in 5&#39;-3&#39; direction. Sequences sourced from Carøe et al. (2018) Table S1. Oligo Sequence 1 IS1 5’OMedT*ACACTCTTTCCCTACACGACGCTCTTCCGATCT*A 2 IS2 5’OMedT*GTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT*A 3 IS3 AGATCGGAAGAGC[C3spacer] *=Phosphothioate linkage All oligos can be synthesized at Biomers, Germany, HPLC purified, shipped dry, and resuspended in 10 mM Tris-HCl.",
+    "Prepare the oligo hybridization buffer (10X) Reagent Volume Final Concentration 1 5M NaCl 50 μL 500 mM 2 1M Tris-HCl, pH 8.0 5 μL 10 mM 3 0.5M EDTA 1 μL 1 mM 4 ddH2O 444 μL / 5 Total 500 μL",
+    "Incubate in a thermal cycler with a heated lid (105°C) at 95°C for 10s, then ramp down to 12°C at a rate of 0.1°C per second (see table below). Temperature Time 1 95°C 10 sec 2 Ramp down to 12°C 0.1°C per sec 3 10°C Hold",
+    "Dilute with TE buffer to the desired working concentration, e.g., 20 μM, 10 μM, 5 μM, 3 μM, 2 μM. The working concentration depends on the input DNA amount, which will be specified in the BEST library build protocol."
+  ],
+  "authors": [
+    "Michael V. Westbury",
+    "Alba Rey-Iglesia",
+    "Deon de Jager",
+    "Vanssy Li",
+    "Eline D. Lorenzen"
+  ],
+  "creator": "Vanssy Li",
+  "published_on": 1759414689,
+  "created_on": 1758193778,
+  "keywords": []
+}

@@ -1,0 +1,41 @@
+{
+  "id": 115713,
+  "title": "Imaging and quantification",
+  "uri": "imaging-and-quantification-du896zz6",
+  "doi": "dx.doi.org/10.17504/protocols.io.yxmvm31mbl3p/v2",
+  "description": "{\"blocks\":[{\"key\":\"daufi\",\"text\":\"Imaging using Olympus VS200 scanner and quantification by Qupath ver 3.8\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Cropping and section selection",
+    "Images are cropped into groups following the Bregma sections (Bregma -2.69mm to -4.03mm):",
+    "a. Rostral",
+    "b. Intermediate",
+    "c. Caudal",
+    "Channel separation and Annotation",
+    "Channels are renamed based on their antibody (DAPI, TH, NeuN, mCherry, αSyn)",
+    "Annotations (categorized as SNC and VTA) is created surrounding TH+ cells clusters.",
+    "Cell detection",
+    "Cell detection is applied with the parameters as followed: a. Detection channel: DAPI/TH/NeuN/mCherry/αSyn(depending on what channel we would like to detect) b. Background radius: 8µm c. Median filter radius: 0µm d. Median filter radius: 0µm e. Sigma: 1.5 to 2 µm (depending on the size of the targeted stain) f. Minimum area: X µm 2 (depending on the size of the targeted stain) g. Maximum area: 1000 µm 2 (depending on the size of the targeted stain) h. Threshold: X (depending on the average targeted stain intensity on each detection)",
+    "Single Measurement Classifier Add class for the targeted channels of the classifier: a. TH+ b. TH- c. NeuN+ d. NeuN- e. mCherry+ f. mCherry- g. αSyn+ h. αSyn-",
+    "After the necessary detections are made, a new ‘Single measurement classifier’ is created with the parameters as followed: a. Object filler: Detections (all) b. Channel filter: TH/NeuN/mCherry/αSyn (depending on the targeted stain, but was not detected using ‘cell detection’) c. Measurement: Cell/Nucleus/Cytoplasm: DAPI/TH/NeuN/mCherry/αSyn mean (depending on where the targeted channel is concentrated) Threshold: X (depending on the average targeted stain intensity on each detection) d. Above Threshold: TH+/NeuN+/mCherry+/αSyn+ e. Below Threshold: TH-/NeuN-/mCherry-/αSyn-",
+    "The new classifier was saved after given a nameaccording to the detected channel and threshold.",
+    "Export measurement a. ‘Annotation measurement’ results of each image are then exported to excel and arranged accordingly.",
+    "DAPI count a. Apply ‘cell detection’ using the channel: DAPI",
+    "NeuN+ with TH+/TH- and αSyn+/αSyn- count a. Apply ‘cell detection’ using the channel: NeuN b. Apply ‘single measurement classifier’ using the channel: TH c. Apply ‘single measurement classifier’ using the channel: αSyn"
+  ],
+  "authors": [
+    "Tony Hsiao",
+    "Felicia Xaveria Suteja",
+    "Barkha Kishor Goswami",
+    "Anahid Ansari Mahabadian",
+    "YuHong Fu",
+    "Glenda Halliday"
+  ],
+  "creator": "Tony Hsiao",
+  "published_on": 1737538041,
+  "created_on": 1734389374,
+  "keywords": []
+}

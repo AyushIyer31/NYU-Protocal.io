@@ -1,0 +1,39 @@
+{
+  "id": 111533,
+  "title": "LC-MS/MS Analysis",
+  "uri": "lc-ms-ms-analysis-dq6m5zc6",
+  "doi": "dx.doi.org/10.17504/protocols.io.81wgbr1kylpk/v1",
+  "description": "{\"blocks\":[{\"key\":\"fua69\",\"text\":\"LRRK2 kinase inhibition reduces the intracellular response to haloperidol, we predicted that hyperactive mutant LRRK2 should mimic haloperidol-induced molecular alterations in WT mice. To test this hypothesis, we conducted unbiased proteomic characterization in the striatum, using mice expressing the G2019S (GS) mutation of LRRK2, which increases its kinase activity. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "For lysis, 200 µL of phase- transfer surfactant lysis buffer (PTS, containing 12 mM sodium deoxycholate, 12 mM sodium lauroyl sarcosinate, 10 mM TCEP, 40 mM CAA), supplemented with phosphatase inhibitor cocktail 3 (Millipore-Sigma) was added to each of the tissue samples, pulse-sonicated several times with a sonicator probe to lyse the tissues.",
+    "The samples were incubated for 10 min at 95°C, pulse-sonicated several times again with a sonicator probe, and incubated again for 5 min at 95°C.",
+    "The lysed samples were then centrifuged at 16,000 ×g for 10min to remove debris and the supernatant portions collected",
+    "The samples were diluted fivefold with 50 mM triethylammonium bicarbonate and BCA assay was carried out to calculate the protein concentration and all samples were normalized by protein amount.",
+    "250 ug of each sample was digested with Lys-C (Wako) at 1:100 (wt/wt) enzyme-to-protein ratio for 3 h at 37°C.",
+    "Trypsin was added to a final 1:50 (wt/wt) enzyme-to- protein ratio for overnight digestion at 37°C.",
+    "To remove the PTS surfactants from the samples, the samples were acidified with trifluoroacetic acid (TFA) to a final concentration of 1% TFA, and ethyl acetate solution was added at 1:1 ratio. The mixture was vortexed for 2 min and then centrifuged at 16,000 × g for 2 min to obtain aqueous and organic phases",
+    "The organic phase (top layer) was removed, and the aqueous phase was collected. This step was repeated once more.",
+    "The samples were dried in a vacuum centrifuge and desalted using Top-Tip C18 tips (Glygen) according to the manufacturer&#39;s instructions",
+    "The samples were dried completely in a vacuum centrifuge and used for phosphopeptide enrichment using PolyMAC Phosphopeptide Enrichment Kit (Tymora Analytical) according to the manufacturer&#39;s instructions.",
+    "The sample was dissolved in 10.5 μL of 0.05% trifluoroacetic acid with 3% (vol/vol) acetonitrile, and 10 μL of each sample was injected into an Ultimate 3000 nano UHPLC system (Thermo Fisher Scientific).",
+    "Peptides were captured on a 2-cm Acclaim PepMap trap column and separated on a 50-cm column packed with ReproSilSaphir 1.8 μm C18 beads (Dr. Maisch GmbH).",
+    "The mobile phase buffer consisted of 0.1% formic acid in ultrapure water (buffer A) with an eluting buffer of 0.1% formic acid in 80% (vol/vol) acetonitrile (buffer B) run with a linear 90-min gradient of 6–30% buffer B at aflow rate of 300 nL/min. The UHPLC was coupled online with a Q-Exactive HF-X mass spectrometer (Thermo Fisher Scientific).",
+    "The mass spectrometer was operated in the data-dependent mode, in which a full-scanMS (from m/z 375 to 1,500 with a resolution of 60,000) was followed by MS/MS of the 15 most intense ions (30,000 resolution; normalized collision energy - 28%; automatic gain control target (AGC) - 2E4, maximum injection time - 200 ms; 60 sec exclusion). The minimum precursor mass was set at 350 Da, with the lowest charge state of 2 and the highest of 6. The S/N threshold was set at 1.5 and the minimum peak count of 1. In this dataset, less than 9% of all phosphopeptides had 2 missed cleavages",
+    "The raw files were searched directly against the mouse database with no redundant entries, using Byonic (Protein Metrics) and Sequest search engines loaded into ProteomeDiscoverer 2.3 software(Thermo Fisher Scientific).",
+    "The data from the two search engines was combined together. The final data reported is the combination of both search engines, including the identifications reported by only one search engine.",
+    "MS1 precursor mass tolerance was set at 10 ppm, and MS2 tolerance was set at 20ppm. Search criteria included a static carbamidomethylation of cysteines (+57.0214 Da), and variable modifications of phosphorylation of S, T and Y residues (+79.996 Da), oxidation (+15.9949 Da) on methionine residues and acetylation (+42.011 Da) at N terminus of proteins.",
+    "Search was performed with full trypsin/Pdigestion and allowed a maximum of two missed cleavages on the peptides analyzed from the sequence database. The false-discovery rates of proteins and peptides were set at 0.01. All protein and peptide identifications were grouped and any redundant entries were removed. Only unique peptides and unique master proteins were reported"
+  ],
+  "authors": [
+    "Chuyu Chen",
+    "Loukia Parisiadou"
+  ],
+  "creator": "Chuyu Chen",
+  "published_on": 1730748816,
+  "created_on": 1730742870,
+  "keywords": []
+}

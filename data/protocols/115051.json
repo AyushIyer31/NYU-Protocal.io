@@ -1,0 +1,25 @@
+{
+  "id": 115051,
+  "title": "RetroClac: A Program for Harmonizing Reporting Paradigm in Diagnostic Accuracy Studies",
+  "uri": "retroclac-a-program-for-harmonizing-reporting-para-dukj6uun",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn961ql5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"6qlmp\",\"text\":\"Accurate diagnostic test performance assessment is critical in clinical and research settings, where\\na wide range of metrics, including accuracy, sensitivity (recall), specificity, f1 score, positive\\npredictive value (PPV), and negative predictive value (NPV), are used to evaluate test validity.\\nHowever, heterogeneous reporting of these metrics across studies poses challenges for direct\\ncomparison and meta-analysis. RetroCalc, a novel program, addresses this gap by reconstructing\\nessential confusion matrix values—true positives (TP), true negatives (TN), false positives (FP),\\nand false negatives (FN)—from minimal input pairs. RetroCalc enables accurate estimation of all\\nrelevant diagnostic metrics, even when only limited data is provided. This feature supports meta-analyses by harmonizing data inputs, facilitating more consistent and comprehensive reviews of\\ndiagnostic test accuracy studies. RetroCalc provides a valuable tool for enhancing the\\ninterpretability and comparability of diagnostic test outcomes, supporting a more unified and\\naccessible approach to diagnostic accuracy research.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"8qb1o\",\"text\":\"Cochrane Handbook for Systematic Reviews of Diagnostic Test Accuracy.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Prepare the total cohort sizes: •Positive cohort (P = TP + FN) •Negative cohort (N = TN + FP)",
+    "Identify one of the following pairs based on your data: Sensitivity (Sen) and Specificity (Spe) Sen and Positive Predictive Value (PPV) Sen and Negative Predictive Value (NPV) Sen and F1 Score (F1) Specificity (Spe) and Positive Predictive Value (PPV) Accuracy (Acc) and Sen Acc and Spe Spe and NPV Likelihood Ratios (LR+) and Spe",
+    "# clone the retrocalc into your own enviroment !git clone https://github.com/mdnx/RetroCalc.git %cd RetroCalc !pip install . # input the required metrics, remember not to use percentage (e.g. 45% incorrect, .45 correct) from retrocalc.retrocalc import get_user_inputs get_user_inputs()",
+    "1. Launch the program from the directory: 2. Provide the input metrics and cohort sizes when prompted. 4. Metric Validation &amp; Reconstruction 1. RetroCalc verifies the input metrics, avoiding division by zero or invalid values. 2. It computes TP, TN, FP, and FN using predefined pairwise formulas. 3. If the input pair is insufficient, the program suggests additional metrics for input. 5. Output and Visualization 1. RetroCalc displays the reconstructed confusion matrix and recalculated diagnostic metrics. 2. Visualize the matrix using the built-in plotting function for easier interpretation.",
+    "References • RetroCalc GitHub Repository: https://github.com/mdnx/RetroCalc • Cochrane Handbook for Systematic Reviews of Diagnostic Test Accuracy."
+  ],
+  "authors": [
+    "Mahdi Norouzi"
+  ],
+  "creator": "Mahdi Norouzi",
+  "published_on": 1734017195,
+  "created_on": 1733941892,
+  "keywords": []
+}

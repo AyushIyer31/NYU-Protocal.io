@@ -1,0 +1,40 @@
+{
+  "id": 83886,
+  "title": "Surgical procedures for simultaneous optogenetic manipulation in the SNc and acute fiber photometry in the dorsal striatum",
+  "uri": "surgical-procedures-for-simultaneous-optogenetic-m-cv6nw9de",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvwd6qdlmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"9029q\",\"text\":\"This protocol describes the three surgical procedures required for simultaneous optogenetic stimulation in the Substantia Nigra pars compacta (SNc) and acute fiber photometry in the dorsal striatum:\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":27,\"length\":1},{\"style\":\"bold\",\"offset\":67,\"length\":36},{\"style\":\"bold\",\"offset\":152,\"length\":22}],\"entityRanges\":[],\"data\":{}},{\"key\":\"aseqk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"6jaqk\",\"text\":\"1. Viral injection of a red-shifted channelrhodopsin, ChRmine, in the SNc, and a green dopamine sensor, GRAB-DA3m, in the dorsal striatum.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":3,\"length\":15}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1hthv\",\"text\":\"2. Fiber-optic cannula implantation into the SNc for optogenetic stimulation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":3,\"length\":32}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1997g\",\"text\":\"3. Craniotomy above the dorsal striatum for acute fiber photometry.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":3,\"length\":10}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Perform unilateral ChRmine and GRAB-DA3m njection following the previous viral injection protocol ( https://www.protocols.io/view/midbrain-viral-injections-for-striatal-fiber-photo-5qpvor8zxv4o/v1?step=10 step 1-37).",
+    "In short, Anesthetize the mouse with isoflurane (5% for induction, 1-2% for maintenance with oxygen flowing at 0.8 liter per minute) and administer analgesics (0.02ml slow-release Buprenorphine 1mg/kg, and 1ml 0.1% lidocaine, both administered s.c.)",
+    "Perform a 1mm circular craniotomy on either the left or the right SNc (coordinates from Bregma: AP -3.1, ML ±1.55) and another 1mm craniotomy above the ipsilateral striatum (coordinates from Bregma: AP +0.5mm, ML ±1.8mm).",
+    "Inject AAV-ChRmine(1E+12 vg/ml) in a glass micropipette connected to a syringe and a pressure meter in the SNc craniotomy site at the four following depths (DV -3.8mm, -4.1mm, -4.4mm, -4.7mm). Inject 0.1ul of AAV-ChRmine at each depth, and 0.4ul in total.",
+    "Inject GRAB-DA3m (2E+12 vg/ml) with the same method in the striatum craniotomy site at the three following depths (DV -1.8mm, -2.2mm, -2.6mm). Inject 0.1ul at each depth, and 0.3ul in total.",
+    "Immediately after the viral injection, implant a borosilicate mono fiber-optic cannula (diameter = 400um, length = 4mm, NA = 0.66; Doric) in the same craniotomy site as the SNc injection.",
+    "First, secure the cannula with a stereotaxic cannula holder (Doric) on the stereotaxic frame. Place a metal headplate on the skull before lowering the cannula.",
+    "Lower the cannula till it is just above the cortex, adjusting the orientation so that the fiber is centered on the craniotomy, and the implant not obstructing the striatum craniotomy. Zero the z-coordinates on the stereotaxis frame.",
+    "Slowly lower the fiber implant till the bottom of the implant is firmly touching the skull (or the z-coordinate at -3.6, whichever comes first). Adjust the headplate to be perpendicular to the skull.",
+    "Secure the headplate and the implant with metabond and let it completely dry before loosening the cannula holder and raising it with the stereotaxic frame.",
+    "Finally, with a glass micropipette dipped in betadine, navigate to the striatum craniotomy coordinates, and gently mark it on the metabond. Drill a small circular dent with a hand drill, and mark the site with a marker for future craniotomy.",
+    "Remove the mouse from the stereotaxic frame and monitor till it recovers from anesthesia.",
+    "Wait for one week before training and at least two weeks before experiments.",
+    "One day prior to the experiment, when the mouse is already trained, perform craniotomy surgery for the acute fiber photometry following the same procedure described in previous fiber photometry protocol ( https://www.protocols.io/view/acute-striatal-or-midbrain-fiber-photometry-in-hea-4r3l27yj4g1y/v1 , step 23-28)",
+    "In short, after anesthetizing and administering analgesics to the mouse, place it on the stereotaxis frame.",
+    "Locate the previously marked dent on the metabond, corresponding to the striatum craniotomy site. With a hand drill, enlarge the dent till it is ~2mm in diameter. Slowly create a 2mm craniotomy, and make sure the dura mater is removed so it does not break the acute optic fiber during recording.",
+    "Stop any bleeding with PBS. Dry the site carefully with kimwipe and pointed cotton applicators. Seal the site with KWIK-SIL (WPI) to prevent the brain from being exposed.",
+    "Remove the animal from the stereotaxic frame and monitor till recovered from anesthesia.",
+    "Wait at least 24 hours before recording.",
+    "Secure the mouse on the stereotaxic frame and remove the skin on top of the skull."
+  ],
+  "authors": [
+    "Qianzi Elena He"
+  ],
+  "creator": "Qianzi He",
+  "published_on": 1687454892,
+  "created_on": 1687452258,
+  "keywords": []
+}

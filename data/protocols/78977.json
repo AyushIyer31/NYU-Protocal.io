@@ -1,0 +1,34 @@
+{
+  "id": 78977,
+  "title": "Soluble and insoluble A-SYN fractionation",
+  "uri": "soluble-and-insoluble-a-syn-fractionation-crc9v2z6",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv5j515l1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"3a5ar\",\"text\":\"Soluble/insoluble alpha-synuclein fractionation is a technique used to separate different forms of the alpha-synuclein protein based on their solubility properties.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"6c4fu\",\"text\":\"Materials\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"blpi6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ahd8b\",\"text\":\"Extraction buffer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":17}],\"entityRanges\":[],\"data\":{}},{\"key\":\"citsr\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cb47g\",\"text\":\"      Triton X-100  1%    NaCl  150 mM    glycerol  10%    HEPES pH 7.4  25 mM    EDTA  1 mM    MgCl2  1.5 mM  \",\"type\":\"atomic\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":111}],\"data\":{}},{\"key\":\"as3mf\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"did9s\",\"text\":\"50 mM NaF\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8b2u0\",\"text\":\"2 mM NA3VO4\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":7,\"length\":1},{\"style\":\"sub\",\"offset\":10,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"20rcp\",\"text\":\"0.5 mM PMSF\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8alip\",\"text\":\"50 mM Tris\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"adcrr\",\"text\":\"cup horn probe sonicator (Qsonica – Q700)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"tables\",\"mutability\":\"MUTABLE\",\"data\":{\"cellsMeta\":{\"0_0\":\"\",\"0_1\":\"\",\"1_0\":\"\",\"1_1\":\"\",\"2_0\":\"\",\"2_1\":\"\",\"3_0\":\"\",\"3_1\":\"\",\"4_0\":\"\",\"4_1\":\"\",\"5_0\":\"\",\"5_1\":\"\"},\"colTitles\":[\"\",\"\"],\"colWidths\":[\"96\",\"64\"],\"data\":[[\"Triton X-100\",\"1%\"],[\"NaCl\",\"150 mM\"],[\"glycerol\",\"10%\"],[\"HEPES pH 7.4\",\"25 mM\"],[\"EDTA\",\"1 mM\"],[\"MgCl\\u003csub\\u003e2\\u003c/sub\\u003e\",\"1.5 mM\"]],\"guid\":\"8098DC15C4C911EDBC010A58A9FEAC02\",\"isJexcelDataFormat\":true,\"legend\":\"\",\"mergeCells\":{},\"printData\":[[\"Triton X-100\",\"1%\"],[\"NaCl\",\"150 mM\"],[\"glycerol\",\"10%\"],[\"HEPES pH 7.4\",\"25 mM\"],[\"EDTA\",\"1 mM\"],[\"MgCl\\u003csub\\u003e2\\u003c/sub\\u003e\",\"1.5 mM\"]],\"rowHeights\":[23,23,23,23,23,23]}}}}",
+  "steps": [
+    "Perform extraction and detection of Triton-soluble (T-sol) and Triton-insoluble (T-insol) alpha-synuclein as described in Stojkovska and Mazzulli 53 .",
+    "Lyse individual organoids in 1% Triton X-100 extraction buffer supplemented with 1X PIC, 50 millimolar (mM) NaF, 2 millimolar (mM) NA 3 VO 4 and 0.5 millimolar (mM) PMSF. Extraction buffer %s %s Triton X-100 1% NaCl 150 mM glycerol 10% HEPES pH 7.4 25 mM EDTA 1 mM MgCl2 1.5 mM",
+    "Homogenize samples with a pestle and incubate on a platform shaker in an ice-water slurry for 00:30:00 , followed by three freeze/thaw cycles and ultracentrifugation at 100000 x g, 4 °C, 30 minutes .",
+    "Collect the supernatant (Triton-X Soluble fraction).",
+    "Wash the remaining pellet in Triton X-100 extraction buffer followed by another ultracentrifugation at 100000 x g, , .",
+    "Resuspend the pellet in 2% SDS buffer containing 50 millimolar (mM) Tris, pH 7.4 and 1X PIC, boil it for 00:10:00 at 100 °C (Triton-X insoluble Fraction) and label the T-insol fraction.",
+    "Sonicate Tx-Insoluble samples for 00:10:00 at 30% power, 20C in a cup horn sonicator (Qsonica-Q700), and then boil them again for 00:10:00 at 100 °C .",
+    "Ultracentrifuge Tx-Insoluble samples at 100000 x g, 21 °C, 30 minutes .",
+    "Collect the supernatant (SDS-soluble fraction).",
+    "Detect protein concentrations using a BCA assay and load 30 µg of total protein for each condition."
+  ],
+  "authors": [
+    "michela.deleidi",
+    "Maria Jose Perez J.",
+    "Hariam Raji",
+    "Pascale Baden",
+    "Federico Bertoli"
+  ],
+  "creator": "Federico Bertoli",
+  "published_on": 1679910712,
+  "created_on": 1679059997,
+  "keywords": []
+}

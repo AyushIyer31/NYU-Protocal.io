@@ -1,0 +1,39 @@
+{
+  "id": 90156,
+  "title": "Zymo Protocol",
+  "uri": "zymo-protocol-c4akyscw",
+  "doi": "dx.doi.org/10.17504/protocols.io.kxygx3ooog8j/v1",
+  "description": "{\"blocks\":[{\"key\":\"aalbd\",\"text\":\" Zymo Automation\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Set up a master mix according to the table below:",
+    "For each reaction, add 14 μl of the master mix to the appropriate wells of a 96-well real-time PCR plate. A sample of the plate setup can be found on the next page and on the Plate Setup Guide.",
+    "Index Primer Addition: a. If using V3-V4 Index Primer Sets 1, 2, 3, or 4, pierce the foil and add 4 μl of the appropriate Index Primer V4R ZT7XX and Index Primer V3F ZT5XX combination to the proper wells of the PCR plate as indicated in the diagram below. b. If using V3-V4 Index Primer Set 5, add 2 μl of i7 index primer and 2 μl of i5 index primer from the appropriate tubes.",
+    "(Optional): If absolute quantification by real-time PCR is desired, add 2 μl of the serially diluted qPCR standard to the 6 wells highlighted above; S89-S94. Refer to Appendix A for more details.",
+    "Add 2 μl of your DNA samples to individual wells. Include a positive and negative control in the plate.",
+    "Apply an adhesive PCR plate seal. Mix the plate on a plate shaker and centrifuge in a plate spinner.",
+    "Place plate in a real-time thermocycler1 and run the program shown below:",
+    "Monitor and QC the library preparation when running the reaction on a real-time thermocycler. a. For example, a sample that is expected to amplify and shows little or no amplification may indicate an error in the reaction setup (See the Troubleshooting Guide). b. The negative control should not amplify before 35 cycles. Earlier amplification of negative control may indicate process contaminations. c. An example of qPCR amplification with controls is shown in Figure 5 below.",
+    "Once the samples have cooled to 4°C, stop the program. Centrifuge plate in a plate spinner to collect condensation in wells and place plate on ice. Proceed to step 10, or store plate at ≤-20°C for later use.",
+    "Add 50 μl of PCR Inactivation Solution into a new microcentrifuge tube. Pool equal volumes (5 μl1) of PCR products from each well of the plate from 1-Step PCR Section into the tube and mix well. Skip the wells of S89-S94 if they are used for qPCR standards. Proceed to Final Library Clean-up Section.",
+    "Equilibrate the Select-a-Size MagBead Buffer to room temperature (15-30°C). Add 30 μl of Select-a-Size MagBead. Concentrate to the 1 ml Select-a-Size MagBead Buffer. Resuspend the magnetic particles by vigorously shaking until homogenous.",
+    "Add Select-a-Size TM MagBeads to the pooled library from Step 10 at a ratio of 0.8x volume. For example, add 400 μl of Select-a-SizeTM MagBeads to 500 μl of the pooled library and PCR Inactivation Solution mixture.",
+    "Mix thoroughly by pipetting or vortexing until homogenous. Incubate for 5 minutes at room temperature.",
+    "Place the sample on a magnetic rack and incubate for 3-10 minutes at room temperature, or until the magnetic beads have fully separated from solution. Once the beads have cleared from solution, remove and discard the supernatant.",
+    "While the beads are still on the magnetic rack, add 1 ml of DNA Wash Buffer. Remove and discard the supernatant. Repeat this step.",
+    "While the beads are still on the magnetic rack, aspirate out any residual buffer with a 10 μl pipette tip. Remove tube from the magnetic rack and keep the cap open for 3 minutes at room temperature to dry the beads.",
+    "Add 10-100 μl1 of ZymoBIOMICS TM DNase/RNase Free Water to the beads and pipette mix thoroughly. Incubate at room temperature for 2 minutes.",
+    "Place the sample on a magnetic rack and incubate for 1 minute at RT, or until the magnetic beads have fully separated from eluate. Transfer supernatant to a clean microcentrifuge tube. Proceed to Section 4.",
+    "Use a fluorescence-based method (Qubit‱ dsDNA HS Assay Kit recommended) to quantify the final library. Using a final amplicon size of 606 bp, convert ng/μl to nM using the equation below. For example: 20 ng/μl DNA of the final library is equivalent to 50.0 nM. If preferred, a qPCR-based method for quantification such as the KAPA‱ Library Quantification kit may be used."
+  ],
+  "authors": [
+    "Emily Gailey"
+  ],
+  "creator": "Emily Gailey",
+  "published_on": 1698770135,
+  "created_on": 1698715122,
+  "keywords": []
+}

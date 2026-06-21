@@ -38,6 +38,9 @@ load_dotenv(Path(__file__).parent / "protocolsnerd-backend" / "variables.env", o
 
 API_BASE = "https://www.protocols.io/api/v3"
 RATE_LIMIT_DELAY = 0.65  # ~92 req/min, safely under the 100/min limit
+PAGE_SIZE = 50  # protocols per list request; small = reliable on flaky networks
+ORDER_FIELD = "activity"  # 'id' gives a STABLE order (no drift during long crawls)
+ORDER_DIR = "desc"
 
 # Comprehensive biology keyword list — covers all major protocol categories
 DEFAULT_KEYWORDS = [
@@ -558,8 +561,15 @@ BROWSER_UA = (
 )
 
 
-def _api_get(path: str, params: Dict[str, Any], token: str) -> Dict[str, Any]:
-    """Make a single authenticated GET request to the protocols.io API."""
+def _api_get(path: str, params: Dict[str, Any], token: str, retries: int = 5) -> Dict[str, Any]:
+    """
+    Make an authenticated GET request to the protocols.io API, retrying on
+    transient failures (timeouts, connection resets, 5xx). A single network
+    hiccup must NOT be mistaken for "no more results" during a long crawl.
+
+    Returns the parsed JSON, or {} only after all retries are exhausted (or on
+    a genuine 4xx, which won't be retried).
+    """
     url = f"{API_BASE}{path}?{urllib.parse.urlencode(params)}"
     req = urllib.request.Request(
         url,
@@ -569,17 +579,23 @@ def _api_get(path: str, params: Dict[str, Any], token: str) -> Dict[str, Any]:
             "User-Agent": BROWSER_UA,
         },
     )
-    try:
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            body = resp.read().decode("utf-8", errors="ignore")
-            return json.loads(body)
-    except urllib.error.HTTPError as e:
-        body = e.read().decode("utf-8", errors="ignore")
-        log.warning(f"HTTP {e.code} for {url}: {body[:200]}")
-        return {}
-    except Exception as e:
-        log.warning(f"Request failed for {url}: {e}")
-        return {}
+    for attempt in range(1, retries + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                body = resp.read().decode("utf-8", errors="ignore")
+                return json.loads(body)
+        except urllib.error.HTTPError as e:
+            body = e.read().decode("utf-8", errors="ignore")
+            # 4xx (except 429 rate-limit) are genuine — don't retry.
+            if 400 <= e.code < 500 and e.code != 429:
+                log.warning(f"HTTP {e.code} for {url}: {body[:200]}")
+                return {}
+            log.warning(f"HTTP {e.code} (attempt {attempt}/{retries}) for {url}: {body[:120]}")
+        except Exception as e:
+            log.warning(f"Request failed (attempt {attempt}/{retries}) for {url}: {e}")
+        if attempt < retries:
+            time.sleep(min(2 ** attempt, 30))  # exponential backoff, capped at 30s
+    return {}
 
 
 def _fetch_protocols_page(
@@ -587,31 +603,35 @@ def _fetch_protocols_page(
     page_id: int,
     page_size: int,
     token: str,
-) -> tuple[List[Dict], bool]:
+) -> tuple[List[Dict], bool, bool]:
     """
     Fetch one page of protocols for a keyword.
-    Returns (list_of_protocols, has_more_pages).
+    Returns (list_of_protocols, has_more_pages, ok).
+
+    `ok` is False when the request itself failed (e.g. all retries timed out),
+    which is distinct from a genuine empty page — so the caller can retry the
+    same page instead of assuming it reached the end of the results.
     """
     params = {
         "filter": "public",
         "key": keyword,
-        "order_field": "activity",
-        "order_dir": "desc",
+        "order_field": ORDER_FIELD,
+        "order_dir": ORDER_DIR,
         "page_id": page_id,
         "page_size": page_size,
     }
     data = _api_get("/protocols", params, token)
 
     if not data or data.get("status_code") not in (0, None):
-        log.warning(f"API error for keyword='{keyword}' page={page_id}: {data.get('status_message', 'unknown')}")
-        return [], False
+        log.warning(f"API error for keyword='{keyword}' page={page_id}: {data.get('status_message', 'request failed')}")
+        return [], False, False
 
     items = data.get("items", []) or []
     pagination = data.get("pagination", {}) or {}
     total_pages = pagination.get("total_pages", 1)
     has_more = page_id < total_pages
 
-    return items, has_more
+    return items, has_more, True
 
 
 def _strip_html(text: str) -> str:
@@ -732,7 +752,10 @@ def fetch_and_cache(
         except Exception:
             pass
 
-    page_size = min(50, max_per_keyword)
+    # protocols.io accepts up to page_size=200, but big pages are large downloads
+    # that time out on flaky networks. Smaller pages are far more reliable; the
+    # caller can tune this via PAGE_SIZE.
+    page_size = min(PAGE_SIZE, max_per_keyword)
     total_new = 0
 
     for keyword in keywords:
@@ -740,10 +763,23 @@ def fetch_and_cache(
         fetched_this_kw = 0
         page_id = 0  # protocols.io pagination is 0-indexed; page_id=0 is the
                      # first (most relevant) page. Starting at 1 skips it.
+        page_failures = 0  # consecutive failures on the CURRENT page
 
         while fetched_this_kw < max_per_keyword:
-            items, has_more = _fetch_protocols_page(keyword, page_id, page_size, token)
+            items, has_more, ok = _fetch_protocols_page(keyword, page_id, page_size, token)
             time.sleep(RATE_LIMIT_DELAY)
+
+            if not ok:
+                # Transient failure (not a real end-of-results). Retry the same
+                # page a few times before giving up on this keyword, so one
+                # flaky request doesn't truncate the whole enumeration.
+                page_failures += 1
+                if page_failures >= 6:
+                    log.warning(f"  giving up on '{keyword}' at page {page_id} after {page_failures} failures")
+                    break
+                time.sleep(min(2 ** page_failures, 30))
+                continue
+            page_failures = 0
 
             if not items:
                 break
@@ -801,6 +837,7 @@ def fetch_and_cache(
 
 
 def main():
+    global PAGE_SIZE, ORDER_FIELD, ORDER_DIR
     parser = argparse.ArgumentParser(description="Fetch protocols from protocols.io into local cache.")
     parser.add_argument(
         "--keywords",
@@ -827,7 +864,29 @@ def main():
              "The list endpoint omits step text anyway, so this matches the "
              "existing cached corpus while covering ~2x more protocols.",
     )
+    parser.add_argument(
+        "--page-size",
+        type=int,
+        default=PAGE_SIZE,
+        help=f"Protocols per list request, max 200 (default {PAGE_SIZE}). "
+             "Smaller is more reliable on flaky networks.",
+    )
+    parser.add_argument(
+        "--order-field",
+        default=ORDER_FIELD,
+        help="Sort field. Use 'id' for a stable, drift-free full enumeration.",
+    )
+    parser.add_argument(
+        "--order-dir",
+        default=ORDER_DIR,
+        choices=["asc", "desc"],
+        help="Sort direction (default desc; use asc with --order-field id).",
+    )
     args = parser.parse_args()
+
+    PAGE_SIZE = max(1, min(200, args.page_size))
+    ORDER_FIELD = args.order_field
+    ORDER_DIR = args.order_dir
 
     token = _get_token()
 

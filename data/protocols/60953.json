@@ -1,0 +1,28 @@
+{
+  "id": 60953,
+  "title": "Protocolo Tcg4",
+  "uri": "protocolo-tcg4-b7rzrm76",
+  "doi": "dx.doi.org/10.17504/protocols.io.8epv59nq5g1b/v1",
+  "description": "{\"blocks\":[{\"key\":\"b17cf\",\"text\":\"Protocolo para realizar PCR de Tcg4\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"d147r\",\"text\":\"Material                                                \\n*Micropipetas\\n*Puntas para PCR\\n*Tubos para PCR\\n*Gradilla\\n*Termociclador\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"2jaq4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dr3pc\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"augv6\",\"text\":\"Reactivos\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1pu15\",\"text\":\"*Agua libre de nucleasas\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2d44h\",\"text\":\"*DNA\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"72spt\",\"text\":\"*Buffer 10x plus Mg\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"co93r\",\"text\":\"*dNTPs\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2gtjf\",\"text\":\"*Primers\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"32jna\",\"text\":\"F1 5´TAA TAC GAC TCA TAG GGA3'\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":30}],\"entityRanges\":[],\"data\":{}},{\"key\":\"16dar\",\"text\":\"R4 5´TAG AAG GCA CAG TCG AGG CT3´\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":0,\"length\":33}],\"entityRanges\":[],\"data\":{}},{\"key\":\"7i7s\",\"text\":\"*Taq polimerasa\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "NOTA: Antes de comenzar es recomendable preparar la reacción sobre hielo. Todos los materiales deben estar estériles y limpios. Todo el procedimiento debe ser llevado a cabo dentro de la campana negra (previamente limpia con solución agua: cloro y esterilizada con UV durante 15 min)",
+    "Prepare los tubos que habrá de utilizar para su PCR en una gradilla. NOTA: Preferentemente NO etiquete la tapa del tubo ya que se puede borrar, mejor etiquete en los costados",
+    "Realice los cálculos de para preparar las reacciones necesarias (En este caso son 5 reacciones cada una con su control correspondiente, en total 10).",
+    "Agregue cada componente de la tabla 1 en orden descendente en un tubo y marque como MasterMix (no agregar ADN ni primers). NOTA: coloque la polimersa al final. Saque del congeador la enzima y regresela inmediatamente después. TABLA 1: Reactivos para PCR MasterMix %s %s ReactivosUna reacción 10 reacciones Agua libre de nucleasas40.75 μL 407.5 μLBuffer 10x plus Mg5 μL50 μLdNTPs1 μL10 μLTaq polimerasa.25 μL2.5 μL Se empelo el Kit PCR Reagent System %s %s Primers2.5μL (1.25 μL de c/u)ADN molde.5 μL",
+    "Coloque la cantidad correspondiente del MasterMixa cada uno de los tubos (47μL).",
+    "Posteriormente coloque en cada tubo los primers y el ADN ha utilizar (volumen total de cada tubo 50 μL) NOTA: A los controles negativos no coloque ADN, en su lugar agregue agua libre de nucleasas.",
+    "Coloque los tubos en el termociclador ya programado con las condiciones de la PCR (ver tablas abajo). Condiciones del Termociclador %s %s PasosTemperaturaTiempoDesnaturalización inicial94 OC3minDesnaturalización94 OC45sHibridación53 OC30sExtensión72 OC1 minIncubación final72 OC10min 4 OCinfinito30 ciclos",
+    "Al terminar su PCR analice su producto en electroforesis."
+  ],
+  "authors": [
+    "dgalvana"
+  ],
+  "creator": "dgalvana",
+  "published_on": 1650298712,
+  "created_on": 1650297022,
+  "keywords": []
+}

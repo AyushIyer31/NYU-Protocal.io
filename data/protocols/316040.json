@@ -1,0 +1,36 @@
+{
+  "id": 316040,
+  "title": "Synergy H1 microplate reader: florescence assay",
+  "uri": "synergy-h1-microplate-reader-florescence-assay-jyvgcpw3x",
+  "doi": "dx.doi.org/10.17504/protocols.io.5qpvoezd9l4o/v1",
+  "description": "{\"blocks\":[{\"key\":\"40on6\",\"text\":\"This is a high-scoring genetic circuit assembled from 11 Cello-format parts (promoters PA1, PA2, PB1, PB2, PH1, PP2 and repressor CDSs A1, B1, B2, H1, H2) into the pSB1C3 backbone. The design is enumerated from a 3,996-design GOLDBAR space analyzed in HW1 and corresponds to three_design_(3930), the highest-scoring design in the library (true score 3.462). Notably, this design excludes P2, S1, and PP1 — the three parts identified as most strongly negatively correlated with circuit performance under our re-analyzed Knox rule evaluation. Assembly proceeds through a 14-step DAMP Lab canvas workflow (primer rehydration → PCR amplification → cleanup → Modular Gibson Assembly → transformation into electrocompetent E. coli DH5α → colony screening → miniprep → TapeStation sizing → Illumina NextSeq 2000 sequence verification → glycerol stock → 96-well induction culture), followed by a fluorescence readout on a BioTek Synergy H1 plate reader (Ex 485 / Em 528 nm) — the latter constituting our HW2 protocols.io contribution since no equivalent operation currently exists in the canvas library.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"n9tdj\",\"text\":\"Promoters: PA1, PA2, PB1, PB2, PH1, PP2\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ix72c\",\"text\":\"CDS: A1, B1, B2, H1, H2\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"xvbww\",\"text\":\"Backbone: pSB1C3 (chloramphenicol)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Rehydrate Primers with IDTE Buffer; resuspend to 100 µM stock",
+    "PCR using Q5 polymerase, Q5 buffer, 50 µL reaction, 12 samples (including NTC), 30 cycles [98°C 10s / 60°C 30s / 72°C 30s/kb]",
+    "Perform Gel Electrophoresis with 1% agarose, 100 V, for 30 minutes",
+    "Clean Up &amp; Concentrate using QIAquick kit, elute 30 µL in kit-provided buffer (EB)",
+    "Modular Gibson Assembly with NEBuilder HiFi, 12 fragments (including pSB1C3 backbone), 50°C, 60 minutes, 20 µL",
+    "Transformation &amp; Plating using DH5α electrocompetent, 1.8 kV, 1 hour SOC recovery, plate on LB + cm 25 µg/mL",
+    "Colony PCR with 8 colonies + NTC, VR/VF2 primers, Taq, 25 cycles",
+    "Gel Electrophoresis with 1% agarose, 100 V, for 45 minutes",
+    "Overnight Inoculum: Pick 3 positives → 5 mL LB + cm, 37°C / 250 rpm / 16 hours",
+    "Miniprep using QIAprep Spin, elute 50 µL EB",
+    "TapeStation with Genomic DNA ScreenTape, dilute to 50 ng/µL, 1 µL load",
+    "Illumina NextSeq 2000 using Nextera XT, 2×150 paired-end, 100× coverage",
+    "Glycerol Stock with 25% glycerol, 1 mL aliquots, −80°C",
+    "Induction in 96-well black/clear, 200 µL LB + cm + inducer, induce at OD 0.3–0.5, 5 hours at 37°C; inducer: Arabinose 0.2% (w/v) or constitutive",
+    "Synergy H1 Fluorescence: Ex 485 nm / Em 528 nm, gain 75, kinetic 15 min × 5 hr, normalize F/OD600"
+  ],
+  "authors": [
+    "Alexander Ge",
+    "Donglin Liu"
+  ],
+  "creator": "Donglin Liu",
+  "published_on": 1777564633,
+  "created_on": 1777545386,
+  "keywords": []
+}

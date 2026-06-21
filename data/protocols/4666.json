@@ -1,0 +1,33 @@
+{
+  "id": 4666,
+  "title": "Radioactive Northern Blot",
+  "uri": "radioactive-northern-blot-gs2bwge",
+  "doi": "dx.doi.org/10.17504/protocols.io.gs2bwge",
+  "description": "{\"blocks\":[{\"key\":\"c2j5t\",\"text\":\"Protocol for Northern Blot using radioactive RNA probes.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"6ep7i\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"34n1v\",\"text\":\"Generate a PCR product with a T7 promoter for generating riboprobes. Make sure the riboprobe is antisense to the RNA of interest.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"esg3l\",\"text\":\"Always wear a lab coat, goggles and gloves when working with radioactive materials.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4sp49\",\"text\":\"Limit exposure to radioactive materials. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9uc3q\",\"text\":\"Measure all materials with a Geiger counter.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Separate RNA by PAGE: Denaturing RNA Urea-PAGE by Anna Behle",
+    "Measure the size of the gel. Cut a piece of nylon membrane, as well as 4-6 Whatman papers to the corresponding size. Incubate in 0.5xTBE.",
+    "On the BioRad TransBlot semi-dry blotting system, assemble blotting sandwhich: (-)Cathode 3 layers of Whatman paper Nylon membrane Gel 3 layers of Whatman paper (+)Anode Make sure to remove any air bubbles.",
+    "Blot at 2 mA/cm 2 for 45 minutes. 00:45:00",
+    "Crosslink transferred RNA with the membrane using UV-light. This can be done while documenting transfer.",
+    "While the probe is transcribed: Prehybridize membrane at 42 ˚C for 1 hour in hybridization buffer. 01:00:00",
+    "Blotting Buffer: 0.5x TBE (50 mM Tris-HCl, 50 mM boric acid, 1 mM EDTA 5x Ribomax buffer: 400 mM Hepes-KOH pH 7.5, 60 mM MgCl 2 , 10 mM spermidine, 200 mM DTT 20x Roti-Stock SSC buffer (Roth): 3 M NaCl, 300 mM sodium citrate, pH=7.0 Hybridization buffer: 50% (v/v) formamide, deionized, 7 % (w/v) SDS, 120 mM Na-Phosphate buffer, pH=7.2 (Na2HPO4, NaH2PO4, 250 mM NaCl) Washing buffer I: 2x SSC, 1 % (w/v) SDS Washing buffer II: 1x SSC, 0.5 % (w/v) SDS Washing buffer III: 0.5x SSC, 0.1 % (w/v) SDS",
+    "Radioactive in vitro transcription by Anna Behle",
+    "Add radioactive probe directly to the hybridization buffer. Make sure not to pipet onto membrane. Hybridize for 6 hours or over night. Use calculated annealing temperature or 62˚C.",
+    "Wash membrane: 10 min in Washing buffer I (42 °C) 5 min in Washing buffer II (42 °C) A few seconds in Washing buffer III (RT)",
+    "Wrap membrane in transparent plastic foil to prevent leakage of radioactive material. Place a phosphor plate/screen on top. Incubate depending on signal strength. 5S rRNA: 30 minutes Other RNA: An hour to over night",
+    "Detect signals using a phosphoimager (Fujifilm).",
+    "Prepare phosphor screen by illuminating for at least 30 minutes. This erases previously obtained signals."
+  ],
+  "authors": [
+    "Anna Behle"
+  ],
+  "creator": "Anna Behle",
+  "published_on": 1490272305,
+  "created_on": 1482024466,
+  "keywords": []
+}

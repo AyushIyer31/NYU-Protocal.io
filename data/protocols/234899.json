@@ -1,0 +1,38 @@
+{
+  "id": 234899,
+  "title": "Short and Medium Chain Fatty Acid measurements of fecal, cecal, and serum samples",
+  "uri": "short-and-medium-chain-fatty-acid-measurements-of-hhmtb346p",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvw4wo7lmk/v2",
+  "description": "{\"blocks\":[{\"key\":\"di2ca\",\"text\":\"This method details how to measure short and medium chain fatty acid content of fecal, cecal, and serum samples obtained from mice using HPLC and normalizing to soluble chemical oxygen demand. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"ev7an\",\"text\":\"This protocol requires prior approval by the users' Institutional Animal Care and Use Committee (IACUC) or equivalent ethics committee and training for animal sacrifice by cervical dislocation.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9kec6\",\"text\":\"\\n\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7i4v9\",\"text\":\"This protocol has been approved by the California Institute of Technology’s Institutional Animal Care\\nand Use Committee (IACUC).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"4espe\",\"text\":\"Eppendorf tubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fjl34\",\"text\":\"Serum gel microtubes\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"68jc1\",\"text\":\"VFA standard mix\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"4tgbr\",\"text\":\"HPLC\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"43tvn\",\"text\":\"COD kit\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1onbh\",\"text\":\"Spectrophotometer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dq50i\",\"text\":\"Reactor block\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Using a sterile eppendorf tube, collect a fresh fecal pellet from animal and flash freeze on dry ice.",
+    "Sacrifice animal via cervical dislocation (CO2 or anesthetic use may alter or cause degradation of volatile fatty acids).",
+    "For serum, collect blood via cardiac puncture or from trunk into microtubes containing serum gel (such as Z-gel, Sarstedt AG &amp; Co.) and place on ice for 30 minutes to allow clotting.",
+    "For cecal contents, dissect out cecum and squeeze contents out into sterile eppendorf tube. Flash freeze on dry ice.",
+    "Once 30 minutes have passed, centrifuge tubes with serum gel at 10,000xg for 5 minutes and collect resulting serum into a separate eppendorf tube. Flash freeze on dry ice.",
+    "For fecal and cecal samples, add deionized water to the samples at a ratio of 1 mL of water to 100 mg of sample.",
+    "For serum samples, in order to precipitate any proteins in the serum, add 2.5 mM H 2 SO 4 to samples at a 1:1 ratio.",
+    "Vortex serum samples briefly and place at 4°C for 20 minutes.",
+    "Vortex all samples at 3,200 rpm for 5 minutes",
+    "Centrifuge all samples at 13,000rpm for 15 minutes at 4°C.",
+    "Run samples on a machine, such as the Agilent 1260 Infinity II (Agilent, Santa Clara, California, USA) diode array detector, at 210nm with a Bio-Rad Aminex HPX-87H column (Cat. #: 1250095). Column temperature should be at 65°C, with a 5 mM H 2 SO 4 as a mobile phase at a flow rate of 0.6 mL/min run for 80 minutes.",
+    "Filter-sterilize all supernatants through a 0.22 μm syringe filter. Samples are now ready for HPLC analysis.",
+    "Measure sCOD (soluble chemical oxygen demand) using a HACH high-range (20 – 1500 mg COD/L) COD kit (Cat. #: 2565115). Normalizing all VFA measurements against the sCOD measured from the filtrate allows for accounting for differences in sample water content.",
+    "Add 100 μL of fecal or cecal sample filtrate, or 25 μL of serum sample filtrate to a HACH tube and adjust final volume to 2 mL with deionized water.",
+    "Digest samples on a reactor block, such as the HACH DRB200 Digital Reactor Block (Cat. #: LTV082.53.44001) according to the manufacturer’s recommendations.",
+    "Run a mixed standard, such as the 10 mM VFA mixed standard (Supelco Volatile Free Acid Mix, Cat. #: CRM46975) containing acetate, formate, butyrate, isobutyrate, valerate, isovalerate, propionate, caproate, isocaproate, and heptanoate, to generate a standard curve.",
+    "Measure sCOD using a spectrophotometer such as the HACH DR6000 spectrophotometer (Cat. #: LPV441.99.00012)."
+  ],
+  "authors": [
+    "Blake Dirks",
+    "Rosa Krajmalnik-Brown"
+  ],
+  "creator": "Anastasiya Moiseyenko",
+  "published_on": 1765911506,
+  "created_on": 1765567624,
+  "keywords": []
+}

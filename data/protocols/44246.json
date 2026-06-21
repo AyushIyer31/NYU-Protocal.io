@@ -1,0 +1,33 @@
+{
+  "id": 44246,
+  "title": "ID16A measurements on pollen samples ",
+  "uri": "id16a-measurements-on-pollen-samples-bpfwmjpe",
+  "doi": "dx.doi.org/10.17504/protocols.io.bpfwmjpe",
+  "description": "{\"blocks\":[{\"key\":\"doerr\",\"text\":\"X-ray Phase-contrast nano-tomography and X-ray fluorescence microscopy was performed on modern Pinaceae (pine) pollen at the ID16A nano-imaging beamline of the European Synchrotron (ESRF), in France.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"c20tg\",\"text\":\"Modern  Pinaceae  (pine)  pollen  was  collected  from  the  region  of  Grenoble  (France) 24 February 2018, registered at the Natural History Museum London here. Pollen grains were cleanly extracted from male cones under a microscope. No chemical pre-processing was done before this experiment.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":158,\"length\":4}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"\",\"data\":{\"guid\":\"E6B24A435AD311EB8E1A0A58A9FEAC2A\",\"url\":\"https://doi.org/10.5519/nahesy6w\"}}}}",
+  "steps": [
+    "Beamline: European Synchrotron Radiation Facility (ESRF) ID16A 185 m long nano-imaging beamline that provides nano-focused beams. Beam size between 30x30 nm to 400x400 um. Can perform X-ray phase-contrast nano-tomography and X-ray fluorescence microscopy (XRF) Hard X-ray photon energies available: 17.05 keV or 33.6 keV. Cryogenic sample preservation available. Reference: http://www.esrf.eu/cms/live/live/en/sites/www/home/UsersAndScience/Experiments/XNP/ID16A/over.html (last accessed on January 18th, 2020) Screenshot from the beamline ID16A ESRF webpage with beamline specs",
+    "See diagrams and descriptions of experimental setups for: X-ray phase-contrast nano-tomography at ID16A in: M. Hubert, A. Pacureanu, C. Guilloud, Y. Yang, J. C. da Silva, J. Laurencin, F. Lefebvre-Joud, P. Cloetens, Efficient correction of wavefront inhomogeneities in x-ray holographicnanotomography by random sample displacement. Appl Phys Lett 112, 203704 (2018). URL: https://pubs.acs.org/doi/abs/10.1021/acs.analchem.9b04096 X-ray fluorescence microscopy at ID16A in: C. Gramaccioni, Y. Yang, A. Pacureanu, N. Vigano, A. Procopio, P. Valenti, L. Rosa, F. Berlutti, S. Bohic, P. Cloetens, Cryo-nanoimaging of single human macrophage cells: 3D structural and chemical quantification. Anal Chem 92, 4814-4819 (2020). URL: https://aip.scitation.org/doi/full/10.1063/1.5026462",
+    "Detectors used: Imaging: high-resolution imaging detector lens-coupled to a FReLoN F_E230-84 (4096x4096 pixels, 1.5 um pixel size). Fluorescence: two six elements silicon drift diode detectors. Reference: http://www.esrf.eu/cms/live/live/en/sites/www/home/UsersAndScience/Experiments/XNP/ID16A/over.html (last accessed on January 18th, 2020) Screenshot from the beamline ID16A ESRF webpage with detector specs",
+    "Sample details can be found in the materials section. Pollen specimens were glued to a metallic Tungsten tip, cut from a 125 micrometer diameter wire, using commercially available gel Superglue. Eyelashes washed in ethanol and glued to toothpicks were used to manipulate the individual pollen grains. Multiple grains were glued to the top of each tip.",
+    "Data reconstructed using Octave custom code to obtain phase maps. Tomographic volumes computed using PyHST . Specific parameters can be found in the accompanying files for each reconstructed volume. Three-dimensional renderings obtained using ParaView software.",
+    "The foam cavity sizes in different regions of the reconstructed samples were determined using an adapted version of the post-processing algorithm form Schladitz et al. 2008 , originally used for open aluminium foams. Reference: K. Schladitz, C. Redenbach, T. Sych, M. Godehardt, Microstructural characterisation ofopen foams using 3d images. Berichte des Fraunhofer ITWM 148 (2008). The steps implemented in the FIJI/ImageJ software were the following: Select a volume of interest (substack) in the desired region (cappa or sacci). Straighten if necessary. Reslice in top-down direction (radially to the outer surface). Binarisation of the substack. Compute a distance transform watershed (gray color map). Binarisation of the result using an adjusted threshold. Inversion (needed or not, depending on ImageJ implementation). Watershed again. Use Particle Analysis module to automatically identify and measure the cavities. Set scale size (1 pixel to voxel size). Measure Particles: only cavities above 50 nm2 (basically excludes single pixel &#34;cavities&#34;), using the options &#34;exclude on edges&#34;, &#34;show summary&#34;, &#34;display&#34;. Compute histogram, average, standard deviation of resulting list of cavity sizes.",
+    "Density values can be retrieved from tomographic reconstructions, which provide: \\omega= - \\frac{2\\pi}{\\lambda}\\delta where \\lambda = 0.72727A^{\\circ} is the photon wavelength for an energy of 17.05 keV. Using Guinier approximation ( Z/A \\approx 1/2 ): \\delta = 1.310^{-6}\\rho[g/cm^3]\\lambda^2[ A^{\\circ}] and \\omega = -2\\pi*1.310^{4}\\rho[g/cm^3]\\lambda[ A^{\\circ}] Thus, the density is: \\rho[g/cm^3] = -\\frac{10^{-2}\\omega[cm^{-1}]}{1.3\\lambda[ A^{\\circ}]2\\pi} This value must be corrected by an offset. For this, we consider a region of known density in the reconstruction (air). Here, vacuoles within the pollen grain had the lowest density. By considering these to be filled with with air, the offset can be determined.",
+    "Experimental conditions: Cryogenic conditions: -160 degrees Celsius. High vacuum: 10^(-8) mbar. Cryogenic conditions were chosen to protect the sample from radiation damage.",
+    "Nano-tomography: Hard X-ray photon energy used: 17.05 keV. Voxel size: between 20 and 40 nm, depending on the scan and sample.",
+    "XRF: Excitation energy: 17.05 keV. Pixel size: 150 nm2. Dwell time: 50 ms. Spectra recorded with a silicon drift energy dispersive detector. Resulting data analysed with PyMCA .",
+    "Raw data available from the ESRF ICAT here: https://doi.esrf.fr/10.15151/ESRF-DC-339743082"
+  ],
+  "authors": [
+    "Alexandra Pacureanu",
+    "Ruxandra Cojocaru",
+    "Oonagh Mannix"
+  ],
+  "creator": "Ruxandra Cojocaru",
+  "published_on": 1657776892,
+  "created_on": 1604639368,
+  "keywords": []
+}

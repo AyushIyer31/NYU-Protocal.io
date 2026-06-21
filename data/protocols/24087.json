@@ -1,0 +1,39 @@
+{
+  "id": 24087,
+  "title": "HLA genotyping using SS-SBT methods",
+  "uri": "hla-genotyping-using-ss-sbt-methods-3rxgm7n",
+  "doi": "dx.doi.org/10.17504/protocols.io.3rxgm7n",
+  "description": "{\"blocks\":[{\"key\":\"dvo0b\",\"text\":\"Genomic DNA was obtained from the patients’ 2ml of whole blood using the QIAamp DNA Mini Kit for genomic DNA purification (Qiagen GmbH, Hilden, Germany), and 400 ng of purified genomic DNA was used for polymerase chain reaction (PCR) amplification. DNA was preserved in 4°C freezer. The basic cycling parameters were as follows: (i) first denaturation at 94°C for 2 min, followed by 30 cycles of denaturation at 98°C for 10 s and 60°C for 20 s and extension at 68°C for 5 min (HLA-A, HLA-B, and HLA-C); (ii) first denaturation at 94°C for 2 min, followed by 30 cycles of denaturation at 98°C for 10 s and annealing at 70°C for 5 min (HLA-DRB1and HLA-DPB1); and (iii) first denaturation at 94°C for 2 min, followed by 30 cycles of denaturation at 98°C for 10 s and annealing at 70°C for 9 min (HLA-DQB1). Long-range PCR reactions were performed using the thermal cycler Gene Amp PCR System 9700 (Life Technologies, Carlsbad, CA, USA). The PCR products obtained were purified with Agencourt AMPure XP (Beckman Coutler, CA, USA) and quantified by the Quant-iT Picogreen dsDNA Assay Kit (Thermo Fisher Scientific, MA, USA). Next, the PCR products were clonally amplified and barcoded using the Ion Plus Fragment Library Kit (Life Technologies), and the barcoded library was sequenced using the Ion Torrent Personal Genome Machine DNA sequencing system (Life Technologies). The NGS read data were analyzed by Sequence Alignment Based Assigning Software (SeaBass), and finally, the HLAalleles were determined.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":477,\"length\":5},{\"style\":\"italic\",\"offset\":484,\"length\":5},{\"style\":\"italic\",\"offset\":495,\"length\":5},{\"style\":\"italic\",\"offset\":634,\"length\":8},{\"style\":\"italic\",\"offset\":646,\"length\":8},{\"style\":\"italic\",\"offset\":793,\"length\":8},{\"style\":\"italic\",\"offset\":1476,\"length\":3}],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"uahg\",\"text\":\"Details of experimental proocedure are shown in the following paper: Shiina T, Suzuki S, Kuslki JK, Inoko H. Super high resolution for single molecule-sequence-based typing of classical HLA loci using Ion Torrent PGM. Methods Mol Biol 2018;1802:115-133.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"642t9\",\"text\":\"Ion Plus Fragment Library kit (Thermo Fisher Scientific)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"47tje\",\"text\":\"Ion PGM Hi-Q View Sequencing kit (Thermo Fisher Scientific)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"da0rr\",\"text\":\"Ion Chip kits, Ion 318, Chip v2 BC, Ion 316 Chip v2 BC or Ion 314 Chip v2 BC (Thermo Fisher Scientific)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "DNA extraction",
+    "Long-ranged PCR Super high resolution for single molecule-sequence-based typing of classical HLA loci using Ion Torrent PGM. Methods Mol Biol.",
+    "Sequencing Super high resolution for single molecule-sequence-based typing of classical HLA loci using Ion Torrent PGM. Mol Methods Biol.",
+    "Data analysis Super high resolution for single molecule-sequence-based typing of classical HLA loci using Ion Torrent PGM. Methods Mol Biol.",
+    "Construction of barcoded library Super high resolution for single molecule-sequencebased typing of classical HLA loci using Ion Torrent PGM. Methods Mol Biol.",
+    "Fisrts denature 94 °C 00:02:00",
+    "Denature 98 °C 00:00:10",
+    "Annealing (30 cycles) 60 °C, HLA-A, B,C 70 °C, HLA-DRB1 70 °C, HLA-DQB1 00:09:00, HLA-DQB1 00:02:00, HLA-A, B, C 00:05:00, HLA-DRB1",
+    "Output of NGS read data",
+    "Homology search using Blat",
+    "Selection of allele candidates",
+    "Mappng of reads and candidate allele sequence",
+    "Calculation of coverage",
+    "Final confirmation",
+    "Preparation of the Enriched Template-Positive Ion Sphere particles (ISPs) Super high resolution for single molecule-sequence-based typing of classical HLA loci using Ion Torrent PGM. Methods Mol Biol.",
+    "Extension (30cycles) 68 °C, HLA-A,B,C 00:05:00, HLA-A,B,C"
+  ],
+  "authors": [
+    "Ryosuke Tashiro",
+    "Hidetoshi Inoko",
+    "Kuniyasu Niizuma",
+    "Teiji Tominaga"
+  ],
+  "creator": "Ryosuke Tashiro",
+  "published_on": 1565885162,
+  "created_on": 1559701586,
+  "keywords": []
+}

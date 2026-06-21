@@ -1,0 +1,32 @@
+{
+  "id": 48492,
+  "title": "FCMPASS - Mac - Providing Read and Write Permission",
+  "uri": "fcmpass-mac-providing-read-and-write-permission-btkknkuw",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"62t6k\",\"text\":\"If you hear/receive error messages when opening FCMPASS or trying to create a database it likely due to you Mac not providing FCMPASS read and write permissions by default. This occurs most commonly on managed computers such as University/Government issued computers. This can be resolved with the following protocol.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Close FCMPASS before performing any of the following steps.",
+    "On the top menu bar click &#39;Go&#39;.",
+    "Hold down the &#39;Option&#39; key and &#39;Library&#39; will appear on the menu.",
+    "Click &#39;Library&#39;",
+    "In the finder window that pops up, click &#39;Application Support&#39; and scroll down to &#39;Mathworks&#39;.",
+    "Inside the &#39;Mathworks&#39; folder, click &#39;MATLAB&#39;.",
+    "Right click on the &#39;mcr_98&#39; folder and click &#39;Get Info&#39;",
+    "Unlock this folder by clicking on the padlock in the bottom right corner of the new window and enter your password. This will allow you to make changes to the folder.",
+    "Click on option to the right of your username and select &#39;Read &amp; Write&#39;.",
+    "Now click on the cog at the bottom and select &#39;Apply to enclosed items&#39;.",
+    "You have now given the FCMPASS software permission to read and write cytometer databases. If this does not resolve issues you are having with the software please contact Joshua Welsh (joshua.welsh@nih.gov)",
+    "Click on &#39;Finder&#39;"
+  ],
+  "authors": [
+    "Joshua A Welsh"
+  ],
+  "creator": "Joshua A Welsh",
+  "published_on": 1616556969,
+  "created_on": 1616555936,
+  "keywords": []
+}

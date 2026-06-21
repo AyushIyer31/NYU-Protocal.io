@@ -1,0 +1,26 @@
+{
+  "id": 7456,
+  "title": "Setting $PATH on UA HPC",
+  "uri": "setting-path-on-ua-hpc-jh8cj9w",
+  "doi": "dx.doi.org/10.17504/protocols.io.jh8cj9w",
+  "description": "{\"blocks\":[{\"key\":\"fh9l4\",\"text\":\"Set up your Unix PATH so you can find important tools on the HPC for the class.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"b7le5\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"78lu6\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"ackjn\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Open your &#34;.bashrc&#34; in a text editor (nano, vi, emacs): $ cd $HOME $ nano .bashrc",
+    "Add the following lines: export PATH=/rsgrps/bh_class/rakudobrew/bin:/rsgrps/bh_class/bin:$PATH export PYTHONPATH=/rsgrps/bh_class/lib/python",
+    "Source your .bashrc $ source .bashrc",
+    "Ensure that you environment has the new paths: $ echo $PATH $ echo $PYTHONLIB",
+    "Try executing the following: $ seqmagick -h $ perl6 --version $ python --version"
+  ],
+  "authors": [
+    "Bonnie L Hurwitz",
+    "Ken Youens-Clark"
+  ],
+  "creator": "Bonnie L Hurwitz",
+  "published_on": 1503418237,
+  "created_on": 1503418029,
+  "keywords": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": 79804,
+  "title": "Nanopore amplicon sequencing with DIY adapter",
+  "uri": "nanopore-amplicon-sequencing-with-diy-adapter-cr64v9gw",
+  "doi": "dx.doi.org/10.17504/protocols.io.5jyl8jow9g2w/v1",
+  "description": "{\"blocks\":[{\"key\":\"fm948\",\"text\":\"Nanopore amplicon sequencing with DIY adapter\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Use a primer with a HEAD to make amplicons, as in a regular procedure. Enzymes with or without proofreading can be used , and purification is not necessary.",
+    "Mix the following materials in order: (10 samples as an example) %s %s #MaterialQuantity1Sterile water7 ul2T4 Polynucleotide Kinase Reaction Buffer2 ul3T4 Polynucleotide Kinase1 ul4PCR product (x10 samples)10 ul",
+    "Order the following two primers: Adapter_top: TTTTTTTTCCTGTACTTCGTTCAGTTACGTATTGCT Adapter_bottom: GCAATACGTAACTGAACGAAGTACAGG Preferably, choose OPC or a higher level of purification method.",
+    "Dilute both primers to 100uM according to the manufacturer&#39;s instructions (TE buffer is recommended)",
+    "Mix both primers together in equal volumes. (Now it is 50 uM)",
+    "Incubate the mixture in a dry bath at 95°C for 2 minutes. Ideally, Adapter_top and Adapter_bottom would aneal to form a sticky end of double strand DNA",
+    "Allow the mixture to slowly cool to room temperature for one hour.",
+    "Make 1:10 dilution (5 uM) Store the mixture at 4°C or in a freezer for long-term storage. When necessary, divide the mixture into smaller portions to avoid repeated thawing.",
+    "Purify the PCR product and adjust the final concentration of the purified DNA to ~50 ng/ul.",
+    "Use a barcoding index for the second PCR. Note: 1. non-proofreading enzyme (Taq) must be used to add a A tail to the PCR product.",
+    "Incubate at 37°C for 30 minutes.",
+    "Heat inactivate by incubating at 65°C for 20 minutes",
+    "Purify the DNA and adjust the final concentration to ~50 ng/ul.",
+    "Mix the following materials in order: A B 1 5' Phosphorylated PCR product (50ng/ul) 10 ul 2 Sterile water 7 ul 3 10X T4 DNA Ligase Buffer (with 1 mM ATP) 2 ul 4 Adapter 0.1 ul 5 T4 ligase 1 ul (300U or 2.5U in Weiss Unit) Note: Some manufacturers&#39; buffers require additional ATP to be added to achieve a final reaction concentration of 0.1 mM.",
+    "Purify the DNA and adjust the final concentration to ~50 ng/ul.",
+    "Incubate at 16-20 °C for at least 01:00:00"
+  ],
+  "authors": [
+    "Jie Hao Ou",
+    "Yin-Tse Huang"
+  ],
+  "creator": "Jie Hao Ou",
+  "published_on": 1686137495,
+  "created_on": 1680247956,
+  "keywords": []
+}

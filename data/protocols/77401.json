@@ -1,0 +1,27 @@
+{
+  "id": 77401,
+  "title": "Phage infection and timed harvest of E. coli and B. subtilis cells ",
+  "uri": "phage-infection-and-timed-harvest-of-e-coli-and-b-cptzvnp6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlkw2d5l5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"dfo5e\",\"text\":\"This protocol outlines how to infect E. coli and B. subtilis with phage T4 and SPO1, respectively, and harvest cells at set time points.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":37,\"length\":7},{\"style\":\"italic\",\"offset\":49,\"length\":11}],\"entityRanges\":[],\"data\":{}},{\"key\":\"cq69e\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7k28c\",\"text\":\"Harvesting cells at different timepoints during infection allows you to evaluate when bacteriophage transcripts are most abundant in cells and maximize their enrichment for downstream analyses such as chemical analysis and RNA sequencing.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"6tlha\",\"text\":\"50 mL sterile Erlenmeyer flasks \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"b9sv\",\"text\":\"5 mL sterile and capped test tubes \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"3afsr\",\"text\":\"1.5 mL microcentrifuge tubes \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9ad3c\",\"text\":\"Bechtop centrifuge capable of cooling\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1i5d1\",\"text\":\"Shaking incubator \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8uj42\",\"text\":\"Shaking mixer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"86b3p\",\"text\":\"Liquid nitrogen and cryogenic container for safe handling \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"37d4n\",\"text\":\"Freezer at –70 °C or above\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Prepare 30 mL subcultures of E. coli and B. subtilis at 1:100 dilution (300 µL in 30 mL) and grow to a target OD 600 of 0.4 in a shaking incubator (180 rpm). For both E. coli and B. subtilis this is ~2 h at 37 °C. Supplement the subculture media (LB) with 1 mM CaCl 2 and 1 mM MgCl 2 .",
+    "Aliquot 500 µL of cell culture into several 1.5 mL microcentrifuge tubes and inoculate with 50 µL of phage at the correct dilution to reach your target MOI (see our protocol on MOI calculations, linked below). Calculating multiplicity of infection (MOI) by Arcadia Science",
+    "Pre-cool a bench-top centrifuge to 4 °C and at desired time points, harvest cells by centrifuging at 5000 × g for 3 min. For example, cells can be harvested at 5 min and 15 min in the hope of capturing both earlier and later infection stages. This timing will be highly phage-dependent!",
+    "Remove the supernatant from the pellet and immediately flash-freeze the pellets in liquid nitrogen. You must be speedy during this process to effectively halt phage infection. You can store bacterial pellets at –80 °C and use later for downstream applications such as RNA extraction.",
+    "Plate out phage and bacteria to calculate the actual MOI used in the experiment.",
+    "Here, we are infecting E. coli with T4 and and B. subtilis with SPO1. Be sure to simultaneously carry out a control experiment where you mock-infect 500 µL E. coli and B. subtilis cultures with 50 µL sterile SM buffer. Once inoculated, incubate the microcentrifuge tubes at 37 °C on a heated shaker block, shaking at 300 rpm."
+  ],
+  "authors": [
+    "Januka Athukoralage",
+    "Adair Borges"
+  ],
+  "creator": "Arcadia Science",
+  "published_on": 1678827421,
+  "created_on": 1677005190,
+  "keywords": []
+}

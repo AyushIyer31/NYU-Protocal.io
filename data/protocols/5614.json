@@ -1,0 +1,24 @@
+{
+  "id": 5614,
+  "title": "Molecular Dynamics (MD) Protocol",
+  "uri": "molecular-dynamics-md-protocol-hqnb5ve",
+  "doi": "dx.doi.org/10.17504/protocols.io.hqnb5ve",
+  "description": "{\"blocks\":[{\"key\":\"b04uk\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"9kkoi\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"cioov\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"f39a1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Solvation Model Explicit Periodic Boundary Cell Shape : Orthorhombic Minimum Distance From Boundary 7.0 Add Counterion: True Salt Concentration 0.145 Cation Type Sodium Anion Type Chloride Random Seed 314159",
+    "First Algorithm Steepest Descent Max Steps 20000 RMS Gradient 1.0 Second Algorithm Conjugate Gradient Max Steps 20000 RMS Gradient 0.1",
+    "Simulation Time (ps) 100 Time Step (fs) 2 Initial Temperature 50.0 Target Temperature 300.0 Adjust Velocity Frequency 50 Save Results Interval (ps) 20",
+    "Simulation Time (ps) 500 Time Step (fs) 2 Target Temperature 300.0 Adjust Velocity Frequency 50 Save Results Interval (ps) 20 Constant Pressure True PMass 1000.0 PGamma 25.0 Reference Pressure 1.0",
+    "Simulation Time (ps) 2000 Time Step (fs) 2 Target Temperature 300.0 Temperature Coupling Decay Time 5.0 Save Results Interval (ps) 20 Save Restart File True Type NPT TMass 1000.0",
+    "Nonbond List Radius 14.0 Nonbond Higher Cutoff Distance 12.0 Nonbond Lower Cutoff Distance 10.0 Electrostatics Automatic Kappa 0.34 Order 4 Dynamics Integrator Leapfrog Verlet Apply SHAKE Constraint True Random Number Seed 314159 314159 314159 314159"
+  ],
+  "authors": [],
+  "creator": "Eamonn Healy",
+  "published_on": 1494007627,
+  "created_on": 1492884319,
+  "keywords": []
+}

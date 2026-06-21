@@ -1,0 +1,28 @@
+{
+  "id": 109068,
+  "title": "Overview of MultiPathogen Detection Workflow",
+  "uri": "overview-of-multipathogen-detection-workflow-dnrk5d4w",
+  "doi": "dx.doi.org/10.17504/protocols.io.kqdg32jq7v25/v1",
+  "description": "{\"blocks\":[{\"key\":\"a99ep\",\"text\":\"This protocol offers a comprehensive overview of the sequential steps involved in the GEMS multipathogen detection workflow, spanning from sample concentration to sequencing. This multipathogen detection workflow targets detection of Hepatitis E, enteroviruses, Vibrio cholera, and Salmonella typhi from wastewater samples. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fbrh9\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Invert collected samples several times prior to decanting to ensure even mixing. Separate sample into appropriate volume per concentration method (PEG = 40 ml, Ceres = 35 ml), and follow the selected protocol: https://www.protocols.io/view/ceres-nanoparticles-concentration-and-extraction-u-n2bvjnpwxgk5/v1 https://www.protocols.io/view/polyethlyene-glycol-precipitation-for-wastewater-s-j8nlk8pzdl5r/v1",
+    "Following concentration with the chosen method, carry out extraction using MagMAX Wastewater Ultra Nucleic Acid Isolation Kit (protocol included in the above listed concentration protocols)",
+    "After extraction, carry out the Zymo OneStep PCR Inhibitor Removal protocol. https://www.protocols.io/view/zymo-onestep-pcr-inhibitor-removal-kit-5qpvokmrbl4o/v1",
+    "Three distinct PCRs will be conducted, so samples will be tested separately at this next stage. Depending on timeline for testing, it may be beneficial to separate samples into different aliquots at the step prior to avoid multiple freeze-thaws. Run EV/HEV, typhi, and cholera assays. https://www.protocols.io/view/hepatitis-e-and-enterovirus-multiplex-nested-rt-pc-rm7vzjd74lx1/v1 https://www.protocols.io/view/multiplex-nested-pcr-for-vibrio-cholera-36wgqnzbkgk5/v1 https://www.protocols.io/view/nested-pcr-amplification-of-salmonella-typhi-from-36wgqnw3ogk5/v1",
+    "Lastly, amplicon sequencing for all samples will be carried out using the Oxford Nanopore Rapid Barcoding Kit. https://www.protocols.io/view/rapid-barcoding-protocol-v14-n92ld8ew8v5b/v1"
+  ],
+  "authors": [
+    "Shannon Fitz",
+    "Alex Shaw",
+    "michael Owusu",
+    "Dilip Abraham"
+  ],
+  "creator": "Shannon Fitz",
+  "published_on": 1728941646,
+  "created_on": 1727965827,
+  "keywords": []
+}

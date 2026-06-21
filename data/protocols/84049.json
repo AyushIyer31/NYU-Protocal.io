@@ -1,0 +1,33 @@
+{
+  "id": 84049,
+  "title": "Automatic labeling tissue and cell of human skin",
+  "uri": "automatic-labeling-tissue-and-cell-of-human-skin-cwbrxam6",
+  "doi": "dx.doi.org/10.17504/protocols.io.j8nlko5z5v5r/v1",
+  "description": "{\"blocks\":[{\"key\":\"653ql\",\"text\":\"This is first upload from TMC - Johns Hopkins\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "After punch/excisional biopsy from a operating room (OR), place the skin tissue into a tissue container prefilled with buffered formalin for 12-24 hours at room temperature (RT)",
+    "Discard formalin, rinse with PBS, refill PBS, and leave the tissue in PBS for 1 minute",
+    "Put cassette with the tissue back into the tissue container filled with PBS",
+    "Dehydrate tissue by submerging cassettes into ethanol at increasing concentrations from 70% to 99%.",
+    "Take tissue out on a large Petri dish and measure the tissue size",
+    "Label a slotted cassette with a pencil with tissue ID and place the tissue in the cassette",
+    "Embed cassette paraffin at 60 deg C and store at room temperature",
+    "Section tissue and place on water bath to expand",
+    "Place expanded tissue section on a Superfrost Plus microscope slide",
+    "Scan unstained microscope slide at 40X magnification using Hamamatsu nanozoomer S210",
+    "Use openslide library in python along with pyvips library to load whole slide image file in proprietary format (ndpi) from Hamamatsu and save as ome.tiff along with metadata.",
+    "Load the ome.tiff image using bioformat library for MATLAB and generate tiles to input into a deep learning model to semantically segment 11 different skin tissue compartments."
+  ],
+  "authors": [
+    "Kyu Sang Han",
+    "Pei-Hsun Wu"
+  ],
+  "creator": "Kyu Sang Han",
+  "published_on": 1687968758,
+  "created_on": 1687803913,
+  "keywords": []
+}

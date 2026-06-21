@@ -1,0 +1,32 @@
+{
+  "id": 45272,
+  "title": "COVID 19 testing using ATR spectrometer and AI.",
+  "uri": "covid-19-testing-using-atr-spectrometer-and-ai-bqfymtpw",
+  "doi": "dx.doi.org/10.17504/protocols.io.bqfymtpw",
+  "description": "",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Sample collection 300 µL, Saliva Swab or NP Swab A sample of saliva swab or Naso-pharyngeal swab is collected using only swab with a synthetic tip. Swab is immediately inserted into sterile tubes containing 1ml of viral transport media the VTM used is the VTM-N of Citoswab",
+    "RNA extract 2500 rpm, 22 °C, shake the sample collected for two seconds we use extraction kits that are based on a magnetic beads method followed by washing steps then elution. We add 100 µL of the shaked sample to the preloaded Kit, while the remaining purification process is fully automated by the extractor in Viral Mode. The sample output is the RNA extract in a 50 µL elution amount. RNA extraction used kit are Genrui and Bioer kits.",
+    "Saliva direct extract we are studing the direct use of saliva swab, we desactivate the sample by heat and add lysis buffer and proteinaze K to liberate the genetic material , the output is of about 300 µL",
+    "22 °C 2500 rpm, Room temperature,",
+    "shake the extract sample the 50 µL RNA is shaked and we are studing to do the same for Saliva extract",
+    "with a micro pipette take 10 µL, of the shaked extract , place it on the ATR spectrometer crystal and launch the spectra measurement Spectrophotomètre infrarouge FT/IR 4600 Jasco (Spectrometer, Jasco, 702818)",
+    "Launch the machine learning sub routine for sample classification and save the results",
+    "clean the spectrometer surface with an Hydro-Alcoholic solution and dry it with paper towel for the next use.",
+    "Extract conservation for the conservation of the remaining extract we place it under -80 °C",
+    "If any change in the experiments conditions( ATR spectrometer, the VTM matrix, the RNA extraction kit) a new model calibration is needed based on the new reference data"
+  ],
+  "authors": [
+    "Driss LAHLOU KITANE",
+    "Salma LOUKMAN",
+    "Salma LOUKMAN"
+  ],
+  "creator": "Salma LOUKMAN",
+  "published_on": 1607137580,
+  "created_on": 1607136483,
+  "keywords": []
+}

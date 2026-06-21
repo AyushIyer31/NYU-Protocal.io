@@ -1,0 +1,39 @@
+{
+  "id": 96585,
+  "title": "DESEq2 for time series",
+  "uri": "deseq2-for-time-series-dajh2cj6",
+  "doi": "",
+  "description": "{\"blocks\":[{\"key\":\"5ct11\",\"text\":\"This is a differential analysis for a time series experiment using DESeq2.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "This protocol is heavily based off of the protocol provided by https://alexslemonade.github.io/refinebio-examples/03-rnaseq/differential-expression_rnaseq_01.html . Note that DESeq and any other differential analysis requires replicates.",
+    "Citation: “ashr” for LFC shrinkageStephens, M. (2016) False discovery rates: a newdeal. Biostatistics, 18:2. https://doi.org/10.1093/biostatistics/kxw041 if (!(&#34;DESeq2&#34; %in% installed.packages())) { # Install this package if it isn&#39;t installed yet BiocManager::install(&#34;DESeq2&#34;, update = FALSE) } if (!(&#34;apeglm&#34; %in% installed.packages())) { # Install this package if it isn&#39;t installed yet BiocManager::install(&#34;apeglm&#34;, update = FALSE) } if (!(&#34;ashr&#34; %in% installed.packages())) { # Install this package if it isn&#39;t installed yet BiocManager::install(&#34;ashr&#34;, update = FALSE) } # Attach the DESeq2 library library(DESeq2) # Attach the ggplot2 library for plotting library(ggplot2) # We will need this so we can use the pipe: %&gt;% library(magrittr) library(tidyverse) #set seed for DESeq2::plotCounts() for reproducibility set.seed(12345)",
+    "Gene Expression Data Matrix A csv file where rows are genes and columns are samples/time stamps # Replace with the path to your dataset file data_file &lt;- file.path(projPath, &#34;gsva_data.csv&#34;)",
+    "Metadata File A csv file with nrows(metadata) == ncols(datafile)three columns:-id: sample name, i.e the column names from thedata file -group (i.e time stamp or control group) -replicate # Replace with the path to your metadata file metadata_file &lt;- file.path(projPath, &#34;gsva_metadata.csv&#34;)",
+    "# Check if the gene expression matrix file is at the path stored in `data_file` file.exists(data_file) # Check if the metadata file is at the file path stored in `metadata_file` file.exists(metadata_file) You should see TRUE outputted twice",
+    "Read Data # Read in metadata CSV file metadata &lt;- readr::read_csv(metadata_file) # Read in data CSV file expression_df &lt;- readr::read_csv(data_file)",
+    "Set up data matrix # ensure unique row names for the next function expression_df &lt;- expression_df[!(duplicated(expression_df[[1]]) | duplicated(expression_df[[1]], fromLast=TRUE)),] expression_df &lt;-expression_df %&gt;% # store the gene IDs as row names so we have a numeric matrix to perform calculations on later tibble::column_to_rownames(&#34;Gene&#34;)",
+    "Set up metadata We are using the naive samples (&#34;0 hours&#34;) as a reference/control. metadata &lt;- metadata %&gt;% dplyr::mutate(time_stamp = dplyr::case_when( stringr::str_detect(group, &#34;naïve&#34;) ~ &#34;reference&#34;, stringr::str_detect(group, &#34;24&#34;) ~ &#34;24_hours&#34;, stringr::str_detect(group, &#34;48&#34;) ~ &#34;48_hours&#34;, stringr::str_detect(group, &#34;72&#34;) ~ &#34;72_hours&#34; ))",
+    "# Let&#39;s take a look at the original metadata column&#39;s info # and our new `mutation_status` column dplyr::select(metadata, group, time_stamp) # Print out a preview of `mutation_status` str(metadata$time_stamp)",
+    "# Make mutation_status a factor and set the levels appropriately metadata &lt;- metadata %&gt;% dplyr::mutate( # Here we define the values our factor variable can have and their order. time_stamp = factor(time_stamp, levels = c(&#34;reference&#34;, &#34;24_hours&#34;, &#34;48_hours&#34;, &#34;72_hours&#34;)) ) levels(metadata$time_stamp) You should see the following printed out: [1] &#34;reference&#34; &#34;24_hours&#34; &#34;48_hours&#34; &#34;72_hours&#34;",
+    "Create DESeq2 Object ddset &lt;- DESeqDataSetFromMatrix( # Here we supply non-normalized count data countData = gene_matrix, # Supply the `colData` with our metadata data frame colData = metadata, # Supply our experimental variable to `design` design = ~time_stamp )",
+    "Run DESeq2 deseq_object &lt;- DESeq(ddset)",
+    "# Define a minimum counts cutoff and filter the data to include # only rows (genes) that have total counts above the cutoff filtered_expression_df &lt;- expression_df %&gt;% dplyr::filter(rowSums(.) &gt;= 10) # round all expression counts gene_matrix &lt;- round(filtered_expression_df)",
+    "View Results deseq_results &lt;- results(deseq_object) resultsNames(deseq_object) [1] &#34;Intercept&#34; &#34;time_stamp_24_hours_vs_reference&#34; &#34;time_stamp_48_hours_vs_reference&#34;[4] &#34;time_stamp_72_hours_vs_reference&#34; head(deseq_results)",
+    "Normalize results by log fold change Here we are shrinking log fold change by ashr, for more information on ashr go to step 2 and view the citation. deseq_results &lt;- lfcShrink( deseq_object, # The original DESeq2 object after running DESeq() contrast=c(&#34;reference&#34;,&#34;24_hours&#34;,&#34;48_hours&#34;, &#34;72_hours&#34;), type = &#34;ashr&#34;, res = deseq_results # The original DESeq2 results table ) head(deseq_results)",
+    "Set up DESeq results for visualization Convert the results into a dataframe deseq_df &lt;- deseq_results %&gt;% # make into data.frame as.data.frame() %&gt;% # the gene names are row names -- let&#39;s make them a column for easy display tibble::rownames_to_column(&#34;Gene&#34;) %&gt;% # add a column for significance threshold results dplyr::mutate(threshold = padj &lt; 0.05) %&gt;% # sort by statistic -- the highest values will be genes with # higher expression in RPL10 mutated samples dplyr::arrange(dplyr::desc(log2FoldChange)) head(deseq_df)",
+    "Plot counts IL2RA was only chosen as an example, change to your gene of interest into the gene parameter. plotCounts(ddset, gene = &#34;IL2RA&#34;, intgroup = &#34;time_stamp&#34;)",
+    "Save DESeq2 results readr::write_tsv( deseq_df, file.path( projPath, &#34;SRP123625_diff_expr_results.tsv&#34; # Replace with a relevant output file name ) )",
+    "Set Project Path #replace with your directory projPath=&#34;/fh/fast/greenberg_p/user/kjhingan/DESeq2&#34;"
+  ],
+  "authors": [
+    "Karina Jhingan"
+  ],
+  "creator": "Karina Jhingan",
+  "published_on": 1710379875,
+  "created_on": 1710271584,
+  "keywords": []
+}

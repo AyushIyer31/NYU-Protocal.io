@@ -1,0 +1,26 @@
+{
+  "id": 81103,
+  "title": "Neuromelanin-positive Neuron Density in Substantia Nigra Image Analysis",
+  "uri": "neuromelanin-positive-neuron-density-in-substantia-ctfpwjmn",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn2kq6g5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"4lk19\",\"text\":\"The protocol covers the steps to measure neuromelanin-positive neuron density in substantia nigra using image analysis tools including NZConnect (Hamamatsu), a web-based whole-slide image (WSI) viewer, Cellpose and QuPath.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Manually annotate the substantia nigra on NZConnect (Hamamatsu), a web-based whole-slide image (WSI) viewer.",
+    "Download the annotations using a Python script, and then import into QuPath [1] using a Groovy script",
+    "Segment neuromelanin cells using Cellpose [ 2 , 3 ] via the QuPath Cellpose extension [ 4 ], followed by an object classifier to filter out non-specific detections.",
+    "Calculate neuromelanin-positive cell density by the number of neuromelanin-positive cells divided by the area of the region of interest (neuromelanin-positive cells per mm^2). References [1] Bankhead, P., Loughrey, M.B., Fernández, J.A. et al. QuPath: Open source software for digital pathology image analysis. Sci Rep 7, 16878 (2017). https://doi.org/10.1038/s41598-017-17204-5 [2] Stringer, C., Wang, T., Michaelos, M. et al. Cellpose: a generalist algorithm for cellular segmentation. Nat Methods 18, 100–106 (2021). https://doi.org/10.1038/s41592-020-01018-x [3] Pachitariu, M., Stringer, C. Cellpose 2.0: how to train your own model. Nat Methods 19, 1634–1641 (2022). https://doi.org/10.1038/s41592-022-01663-4 [4] BIO/Pqupath-extension-cellpose https://github.com/BIOP/qupath-extension-cellpose"
+  ],
+  "authors": [
+    "Hemanth Ramesh Nelvagal",
+    "Toby J Curless",
+    "Zane Jaunmuktane"
+  ],
+  "creator": "Hemanth Ramesh Nelvagal",
+  "published_on": 1701967348,
+  "created_on": 1682606498,
+  "keywords": []
+}

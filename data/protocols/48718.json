@@ -1,0 +1,29 @@
+{
+  "id": 48718,
+  "title": "Untargeted Top-down Proteomics by LC-MS/MS on Lumos",
+  "uri": "untargeted-top-down-proteomics-by-lc-ms-ms-on-lumo-bttnnnme",
+  "doi": "dx.doi.org/10.17504/protocols.io.bttnnnme",
+  "description": "{\"blocks\":[{\"key\":\"81g4d\",\"text\":\"Describes the LC-MS/MS data acquisition procedure for top-down proteomics samples using the Thermo Scientific Orbitrap Fusion Lumos Tribrid mass spectrometer\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"8qt0o\",\"text\":\"PLRP-S 5-μm particles 1,000-Å pore size (Agilent Technologies)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"8vubl\",\"text\":\"Water Optima LC/MS Grade (Fisher Scientific #W64)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"di7hr\",\"text\":\"Acetonitrile Optima LC/MS Grade (Fisher Scientific #A955-4)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9dk4k\",\"text\":\"Formic Acid LC/MS Grade (Thermo Scientific #28905)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"49gc2\",\"text\":\"15 μm SilicaTip PicoTip Emitter (New Object #FS360-50-15-N-20-C12)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"df93o\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"4mbnm\",\"text\":\"Buffer A: 94.8 % water, 5 % acetonitrile, 0.2 % formic acid\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"fq7eu\",\"text\":\"Buffer B: 4.8 % water, 95 % acetonitrile, 0.2 % formic acid\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Samples were analyzed on a Thermo Scientific Orbitrap Fusion Lumos Tribrid mass spectrometer in line with a Dionex Ultimate 3000 RSLCnano system",
+    "Samples ( 6 µL ) were injected via the autosampler and loaded onto a self-packed trap column (150 μm i.d. x 2 cm length packed with PLRP-S 5-μm particles 1,000-Å pore size) for 00:10:00 with 100% loading buffer (94.8% water:5% acetonitrile:0.2% formic acid)",
+    "Following a valve switch and initiation of the nanopump at 300 nL/min (buffer A: 94.8 % water, 5 % acetonitrile, 0.2 % formic acid; buffer B: 4.8 % water, 95 % acetonitrile, 0.2 % formic acid), proteins were separated on a self-packed analytical column (75 μm i.d. x 25 cm length packed with PLRP-S 5-μm particles 1,000-Å pore size) according to the following gradient for fractions 1-4: %s %s %BValve position 0 51_1010 51_2121562556795729575 590 5 For fraction 5 and later, nanopump used the following gradient: %s %s",
+    "Eluted proteins were ionized in positive ion mode nanoelectrospray ionization (nESI) using a pulled tip nanospray emitter (15-μm i.d. ×125 mm) packed with 1mm of PLRP-S 5-μm particles 1,000-Å pore size with a custom nano-source ( https://proteomicsresource.washington.edu/docs/protocols05/UWPR_NSI_Source.pdf ). A B 1 High-High 2 Spray voltage 1800 3 Sweep gas 0 4 Ion transfer tube temp 320 5 Application mode Intact Protein 6 Pressure mode Low Pressure 7 Advanced Peak Determination True 8 Default charge state 15 9 S-lens RF 30 10 Source fragmentation 15 eV Global MS parameters",
+    "Precursor (intact protein) spectra were acquired at 120k FTRP A B 1 High-High 2 Detector type Orbitrap 3 Resolving power 120000 4 m/z RP measured 200 m/z 5 Scan range 600-2000 6 Mass range Normal 7 AGC target 1000000 8 Normalized AGC target 250% 9 Max Injection Time 100 ms 10 Microscans 4 11 Data type Profile 12 Polarity Positive 13 Use wide quad isolation True Parameters for MS1 acquisition",
+    "The mass spectrometer was operated using a Top2 data-dependent acquisition mode. Precursor ions were filtered by intensity, charge state, and dynamic exclusion. A B 1 Intensity minimum 20000 2 Intensity maximum 1E20 3 Included charge states 6-60 4 Include undetermined charge states False 5 Dynamic exclusion after n times 1 6 Dynamic exclusion duration 60 s 7 Mass tolerance 1.5 m/z 8 Exclude isotopes True Precursor selection filters for DDA",
+    "Ions for fragmentations were isolated and fragmented via higher energy dissociation (HCD) A B 1 High-High 2 Detector type Orbitrap 3 Isolation mode Quadrupole 4 Resolving power 60000 5 m/z RP measured 200 m/z 6 Scan range 350-2000 7 AGC target 1000000 8 Normalized AGC target 2000% 9 Max injection time 400 ms 10 Microscans 4 11 Isolation window 3 m/z 12 Activation type HCD 13 Collision energy 27 14 Collision energy mode Fixed 15 Polarity Positive Parameters for MS2 acquisition"
+  ],
+  "authors": [
+    "Bryon Drown",
+    "Jeannie Camarillo",
+    "Neil Kelleher"
+  ],
+  "creator": "Kelleher KRG KRG Research Group",
+  "published_on": 1646085091,
+  "created_on": 1617137182,
+  "keywords": []
+}

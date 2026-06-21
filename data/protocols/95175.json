@@ -1,0 +1,35 @@
+{
+  "id": 95175,
+  "title": "Intermediate Filament Skeleton Labeling in KNOSSOS",
+  "uri": "intermediate-filament-skeleton-labeling-in-knossos-c87fzzjn",
+  "doi": "dx.doi.org/10.17504/protocols.io.14egn3d2yl5d/v1",
+  "description": "{\"blocks\":[{\"key\":\"1di7m\",\"text\":\"Labeling of intermediate filaments in 2nm FIB-SEM data using the software KNOSSOS. All navigation, segmentation, and data import documentation can be found on the official KNOSSOS documentation page: https://knossos.app/documentation\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[{\"key\":0,\"offset\":200,\"length\":33}],\"data\":{}}],\"entityMap\":{\"0\":{\"type\":\"link\",\"mutability\":\"MUTABLE\",\"data\":{\"guid\":\"54F66ADCCA9D11EEA5BF0A58A9FEAC02\",\"url\":\"https://knossos.app/documentation\"}}}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "FIB-SEM datasets must be converted into KNOSSOS-readable format before import. Python application knossos_cuber ( https://github.com/knossos-project/knossos_cuber ) standardizes image metadata for use in KNOSSOS.",
+    "In order to optimize skeleton continuity and accurate identification of intermediate filaments, navigate through each dataset window to find the orthogonal plane with the closest axis view of each filament. Intermediate filaments are ~10 nm in diameter and continue for at least 600 nm. Continuity and flexibility varies widely, but filaments will often maintain a consistent FIB-SEM staining contrast and move in bundles through centers of cells, sparsing out towards cell membranes. Ribosomes are ~200% the diameter of intermediate filaments and not continuous. Ribosome and intermediate filament FIB-SEM staining contrast is often similar. Staining often overlaps, indicated by a sudden change in filament diameter when scrolling through the dataset. Orthogonal planes of FIB-SEM dataset containing intermediate filaments; &#39;down-the-barrel&#39; view of filaments is found in the XY plane (circled in red), while other orthogonal views show lengthened view of filaments (circled in blue).",
+    "Skeleton segmentations are composed of trees. Each filament is considered a separate tree and has a unique tree ID. Intermediate filament trees do not branch, so new tree nodes must be added to a selected end node.",
+    "In the event of a skeleton segmentation error, removal of individual nodes from trees can aid in efficient tree correction, especially when a single tree ID includes two or more filaments. Similarly, merging capabilities allow for piecewise skeleton segmentation if needed.",
+    "Select the &#39;2. Tracing Advanced&#39; Work Mode before beginning segmentation to ensure multiple tree IDs can be generated. Create a tree by first selecting &#39;c&#39;, which creates a new tree ID and color under the &#39;Windows&#39; → &#39;Annotation&#39; window. To place the first node, hover the mouse cursor over the center of an intermediate filament axis point and right click. Node, navigation, and dataset settings can be modified under &#39;Preferences&#39; → &#39;Preferences&#39;. The 3D Viewer provides real-time visualization of skeletons, color coded based on tree ID.",
+    "To export skeleton segmentation NML files, select &#39;File&#39; → &#39;Export to nml...&#39;",
+    "Install Anaconda or Miniconda ( https://docs.anaconda.com/free/anaconda/install/ ). Once installed, open the Anaconda Prompt. Before installing knossos_cuber, create and activate a virtual environment. Install knossos_cuber in the activated virtual environment in order to avoid Python version conflicts. Ensure all knossos_cuber executables are on your PATH. Install knossos_cuber in Anaconda Virtual Environment conda config --add channels mdrawconda create -n knossos_cuber knossos_cuber Activate a Virtual Environment in Anaconda conda activate knossos_cuber Create a Virtual Environment in Anaconda conda create -n knossos_cuber",
+    "Run knossos_cuber with 3 arguments: format (-f) (supported formats: png, jpg, or tiff) source_dir (input image file path) target_dir (output directory)",
+    "Download KNOSSOS ( https://knossos.app/ ). After opening the KNOSSOS GUI, select File → Choose Dataset ... &#39;Choose Dataset ...&#39; Window Select ellipsis field, and select knossos_cuber output file to import FIB-SEM data into KNOSSOS.",
+    "Once the axis plane is identified, expand the window using the window icon in the top right corner of each orthogonal view. Using the mouse wheel, or d/f (+ Shift for faster scrolling), navigate through the selected plane to identify patterns in filament &#39;movement&#39; and continuity. Visually track an identified filament to the edge of the dataset. Initiating skeleton trees on a dataset edge will increase segmentation efficiency.",
+    "At any point, a new tree ID and color can be created by selecting &#39;c&#39;. Select a different tree for node editing under the &#39;Windows&#39; → &#39;Annotation&#39; window. Left click to select an end node in order to continue with tree segmentation.",
+    "After placing a node, scroll through the dataset until the tracked filament begins to subtly change trajectory. Hover over the center of the filament axis and right click. As nodes are placed, refer back to other plane views to verify if node placement is accurate to the filament, does not &#39;jump&#39; filaments, and continues or terminates. Nodes can be placed in any plane view from a selected end point during node placement.",
+    "If an incorrect node was placed, select the incorrect node then select Del. There will no longer be an active node. If a node is deleted from the center of a tree, the tree will split into two fragments of the same tree ID.",
+    "When two separate tree IDs need to be merged into a single filament, move adjacent end nodes of both tree IDs closer together. Under the Windows&#39; → &#39;Annotation&#39; window, right click on each tree ID to merge selected nodes to a different tree ID."
+  ],
+  "authors": [
+    "Alyson Petruncio",
+    "CellMap Project Team"
+  ],
+  "creator": "Alyson Petruncio",
+  "published_on": 1747766490,
+  "created_on": 1707847581,
+  "keywords": []
+}

@@ -1,0 +1,43 @@
+{
+  "id": 22827,
+  "title": "Cas9/sgRNA ribonucleoprotein nucleofection using Lonza 4D nucleofector with lower amount of RNP (final best version-tested)",
+  "uri": "cas9-sgrna-ribonucleoprotein-nucleofection-using-l-2ijgccn",
+  "doi": "dx.doi.org/10.17504/protocols.io.2ijgccn",
+  "description": "{\"blocks\":[{\"key\":\"drir1\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"7v5tj\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"ak5nh\",\"text\":\"Grow cells to 80-90% confluency. Maintain cells very healthy before transfection by changing media frequently. Plate enough cells for 200K cells per nucleofection reaction.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"39f9s\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"12ki5\",\"text\":\"Mg2+ is required for cleavage of DNA by Cas9. Avoid buffer containing high concentration of EDTA as it can chelate Mg2+. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"fd272\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"f0suf\",\"text\":\"Use SF cell line solution with added supplements as nucleofection solution for HEK293T cells. Don't leave cells in nucleofection solution for a long time as it might be toxic to the cells. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9uqir\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c5f38\",\"text\":\"Stock of Cas9 ~ 40uM or higher. gRNA stock ~ 200uM. HDRT ~ 2ug/ul or higher. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"1j0oe\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"uax0h\",\"text\":\"STEP MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"26oUn\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null},{\"key\":\"hKiYi\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":1,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":120148,\"guid\":\"419945DE341F11EE9D4302C0B41BC903\",\"name\":\"Amaxa SF Cell Line 4D-Nucleofector Kit S (96 RCT)\",\"mol_weight\":0,\"sku\":\"V4SC-2096\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":127,\"name\":\"Lonza\",\"link\":\"http://www.lonza.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}},\"1\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":119778,\"guid\":\"4198CE97341F11EE9D4302C0B41BC903\",\"name\":\"Lonza Nucleofector 4d\",\"mol_weight\":0,\"sku\":\"AAF-1002X\",\"url\":\"\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":127,\"name\":\"Lonza\",\"link\":\"http://www.lonza.com/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "-Trypsinize cells: Leave cells in trypsin (2 mL for a 10cm plate) at 37C for 3-5 minutes. Note: don&#39;t leave cells in trypsin for a long period of time. -Add in warm media to neutralize trypsin (8 mL for a 10cm plate). -Pellet cells at 500 x g for 5 mins.",
+    "Remove media containging trypsin and resuspend cells in an appropriate amount of warm DMEM (usually 7 mL DMEM for an 80-90% confluent 10cm plate).",
+    "-Count cells: Use the hemocytometer to count as it is more accurate and consistent in our experienece. -Add 20ul of trypan blue with 20ul of media containing cells. Mix well. NOTE: do not leave cells in trypan blue for more than 5 minutes as it is very toxic to the cells. -Add about 15uL of the cell:trypan blue mixture to the hemocytometer. Count 5 squares and average them out. -Record the cell concentration (cells/uL). In the meantime, put media containing cells in 37C.",
+    "Very slowly, add 50 pmol of Cas9 to PCR tubes previously prepared, containing 100 pmol of gRNA, forming 50pmol of RNP. -For example, if Cas9 is at 40 uM and gRNA stock at 200 uM, add 1.25 uL of 40 uM Cas9 to 0.5 uL of 200 uM gRNA.",
+    "For each nucleofection, pipette media containing 200k cells using a P200 or larger into a 1.5 mL tube.",
+    "Spin 500xg for 6 minutes at RT to pellet cells softly.",
+    "Prepare a 12-well plate containing 1 mL of media per well. Pre-warm at 37C.",
+    "Prepare and label wells on nucleofection cuvettes. To avoid cells staying in nucleofection solution for a long period of time in the subsequent steps, configure Lonza 4D ahead of time using the recommended cell-type program. Turn off the instrument and computer then turn them on again in the correct order. Use SF cell line program CM-130 for HEK293T cells. Amaxa SF Cell Line 4D-Nucleofector Kit S (96 RCT) Lonza Catalog #V4SC-2096 Lonza Nucleofector 4d Lonza Catalog #AAF-1002X",
+    "After centrifugation, cell pellets are soft so carefully remove PBS from cells.",
+    "Resuspend cells in 20 uL of nucleofector solution (SF cell line solution with added supplement for HEK293T) using a P200. These cuvette wells can take up to 25-26ul of total reaction mix. Calculate the total amount of cells+nucleofection buffer+cas9+gRNA+HDRT ahead of time. Nucleofection buffer can also be decreased to 18ul if needed.",
+    "Add the entire RNP+HDRT mix to the 20 µL resuspension and mix using a P200.",
+    "Add nucleofection mixes to the multiwell cuvette. Avoid bubbles. Cap.",
+    "Insert cuvette into nucleofector and zap using the configured program.",
+    "Add 80ul warm media into each cuvette well immediately. Allow cells to sit in nucleofection strips for 15 minutes at 37C post-nucleofection. This is supposed to increase viability of cells.",
+    "Pipette mixture out with a P200 into your pre-warmed 12-well plate.",
+    "Allow cells at least 48 hours to settle and recover before downstream analysis.",
+    "Resuspend RNA oligos (cr and tracr) in IDT duplex buffer to final concentrations of 200 uM.",
+    "Mix the two oligos in equimolar concentrations to a final duplex concentraition of 100 uM. For example, mixing 1.25 uL of 200 uM crRNA and 1.25 uL of 200 uM tracrRNA yields 2.5 uL of 100 uM guide duplex.",
+    "Heat at 95C for 5 minutes. Alowing slow cooling to RT by leaving tubes on block before proceeding.",
+    "Carefully remove media off of tubes. Add warm 1xPBS to wash cells and spin down again at 500xg for 6 minutes. This step is critical as trypsin and FBS commonly contain RNAses.",
+    "Incubate at 37C for 10-20 minutes to let RNP complexes form.",
+    "After 10-20 mins, add RNP complexes to the previously prepared PCR tubes containing HDRTs and allow to incubate together at room temperature for at least 30s, but 10 mins for max efficiency.",
+    "-Thaw Cas9, sgRNAs and HDR template on ice -Add 100pmole of sgRNA to PCR tubes. Usually, stock sgRNA is at 200uM, add 0.5uL. -For ssDNA HDRT, add 100pmole of 100uM single-stranded donor DNA (1ul) to different PCR tubes For dsDNA HDRT, 5ug of dsDNA repair template (concentration of 2ug/ul and above ideally so you only use about 2ul)"
+  ],
+  "authors": [
+    "Bao Thai"
+  ],
+  "creator": "Bao Thai",
+  "published_on": 1556672560,
+  "created_on": 1556669570,
+  "keywords": []
+}

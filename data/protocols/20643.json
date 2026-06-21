@@ -1,0 +1,39 @@
+{
+  "id": 20643,
+  "title": "Serial killer pore investigation: protocol for analyzing fatigue failure pores in additively manufactured Ti6Al4V",
+  "uri": "serial-killer-pore-investigation-protocol-for-anal-yebftan",
+  "doi": "dx.doi.org/10.17504/protocols.io.yebftan",
+  "description": "{\"blocks\":[{\"key\":\"i0p3\",\"text\":\"This protocol outlines the steps followed to determine a potential \\\"killer pore\\\" in the area of failure of DMLS Ti6Al4V specimen. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"avj66\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"86sbf\",\"text\":\"The methodology can be used more generally for positively identifying and quantifying small isolated pores in additively manufactured metals. In this case the focus was on analysis of a 4 mm region near the eventual fracture surface, to identify all pores in the vicinity of the \\\"killer pore\\\" - the one causing failure by fatigue tests. This protocol was developed for Ti6Al4V with 99.99% density (only small amount of porosity, very small pores only), tensile fatigue specimen round dogbone geometry with 5 mm gauge width.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"cg8tm\",\"text\":\"The samples are scanned before fatigue testing. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"7ql5e\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9iaer\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"e4kls\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"c83ac\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d3v13\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"erks7\",\"text\":\"Make sure to scan with the sample number facing up to know which side is up during analysis. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"cbtvr\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "",
+  "steps": [
+    "Wrap the sample inside a bubble wrap for support. Make sure the marked threaded grip is facing up.This is to know which side is up when analysing.",
+    "Load the sample on a foam (e.g. florist oasis).",
+    "The sample was scanned using the scanned using Phoenix V|Tome|X L240 (General Electric Sensing and Inspection Technologies Phoenix X-ray, Wunstorff, Germany) microCT system. %s %s",
+    "Reconstruction of the 3D data is done using General Electric Datos 2.2, using specifically beam hardening correction value of 8 - this reduces beam hardening artefacts significantly.",
+    "Analysis of 3D data is described here using Volume Graphics VGSTUDIO MAX 3.2 .",
+    "Register the sample - use simple registration to turn the sample upright in the software windows.",
+    "De-noising is done using the filters Adaptive Gauss with smoothing factor 0. 8, edge threshold=0.1, iteration=1 and create a new volume.",
+    "Perfom the poroity analysis using Probability 0 minimum voxel 8 Maximum voxel 400 Auto threshold deviation Deviation factor Select the edge distance calculation",
+    "Use the ellipse Region of interest to crop the sample excluding the area with the cone beam artefact.",
+    "Extract the region of interest to create new volume.",
+    "Define the material by using the automatic and advanced mode surface determination.",
+    "In the area of failure crop out 4 mm",
+    "Denoise using the non local mean filter using the smothing factor 2",
+    "Define the material by usinng surface determination. Use the automatic and advanced mode.",
+    "Sort by minimum edge distance to clearly define the potential crack intiating pores closest to the surface. 3D rotation video_1.wmv 3D rotation video_2.wmv",
+    "Save the defect analysis as csv file.",
+    "The data is saved including the filtered data set, as a image stack (tiff). These can be viewed manually without special software. The analyzed volume can be opened in free myVGL software."
+  ],
+  "authors": [
+    "Muofhe Tshibalanganda",
+    "Anton Du Plessis",
+    "Stephan Le Roux"
+  ],
+  "creator": "Muofhe Tshibalanganda",
+  "published_on": 1552375745,
+  "created_on": 1550735455,
+  "keywords": []
+}

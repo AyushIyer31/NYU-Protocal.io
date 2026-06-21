@@ -1,0 +1,33 @@
+{
+  "id": 74910,
+  "title": "iPad_Lidar_surface_roughness_processing",
+  "uri": "ipad-lidar-surface-roughness-processing-cmd6u29e",
+  "doi": "dx.doi.org/10.17504/protocols.io.6qpvr4pe3gmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"armtt\",\"text\":\"This protocol was used to process LIDAR data acquired over 3-m transects of forest floor, using an Apple iPad Pro 2022 app entitled 3D Scanner App in “LIDAR Advanced” mode set to the smallest possible maximum depth (30 cm) and resolution (5 mm), as documented in \\\"Soil Surface Roughness in Temperate Forest During SMAPVEX19-22\\\" by Walker et al. (2024).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Open CloudCompare.",
+    "Open textured output file:",
+    "Select the file in the DB Tree on the left. A bounding box will appear around the mesh.",
+    "Click the Cross Section icon in the toolbar.",
+    "Click the folder icon.",
+    "Navigate to a transect folder (e.g. MA404-1-EW_20_02_48 ) in Box &gt; SMAPVEX22_data &gt; MA_lidar_scans . Load from Box Drive, or download files to PC and load from there. There are 36 surface roughness transects, in folders named according to the site (e.g. MA404), plot (1-3), and orientation (NS or EW). Skip any BD folders.",
+    "Open &#34;textured_output.obj&#34;. The object will appear in the 3D view.",
+    "Set box thickness to length = 3.0, width = 0.01, and leave height unchanged. X,Y,Z labeling differs between files. Compare the handle colors with the axis labels in the lower right corner of the 3D view to determine which is which.",
+    "Click left-hand icon under &#34;Slices&#34; to export selection as new entities, then close the toolbox.",
+    "Uncheck the original &#34;textured_output&#34; file in the DB Tree to view the result.",
+    "Select the new object (&#34;textured_output.section&#34;) in the DB Tree, click the Save icon in the toolbar, and save in the original folder as &#34;textured_output_slice_3m_1cm.obj&#34;. File type should be OBJ.",
+    "Click the icon for &#34;Sample points on a mesh&#34; in the toolbar, enter 3000 for Points Number, and click OK.",
+    "Select the new object (&#34;textured_output.section.sampled&#34;) in the DB Tree, click the Save icon in the toolbar, and save in the original folder as type ASCII: MA###-*-??_textured_output_slice_3m_1cm_sampled_3K.txt ### is site number, e.g. 404 * is plot number, e.g. 1 ?? is transect orientation, e.g. EW (from folder name) Use default settings for ASCII file."
+  ],
+  "authors": [
+    "Alex White"
+  ],
+  "creator": "Alex White",
+  "published_on": 1718032122,
+  "created_on": 1673039331,
+  "keywords": []
+}

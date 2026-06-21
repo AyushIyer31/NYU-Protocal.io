@@ -1,0 +1,38 @@
+{
+  "id": 99962,
+  "title": "Transforming, inoculating and isolating purified GeneCopoeia ORF cDNA Clones in E. coli",
+  "uri": "transforming-inoculating-and-isolating-purified-ge-ddu226ye",
+  "doi": "dx.doi.org/10.17504/protocols.io.e6nvw1jm9lmk/v1",
+  "description": "{\"blocks\":[{\"key\":\"66qou\",\"text\":\"Transformation of e. coli\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"6gsa3\",\"text\":\"purified ORF cDNA plasmids (GeneCopoeia)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"8ofaj\",\"text\":\"10 Mm Tris pH 7.4\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"2ut6e\",\"text\":\"MAX Efficiency DH5α competent E. coli cells (Thermo Fisher Scientific, #18258012)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":30,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"6vdno\",\"text\":\"SOC Medium (Thermo Fisher Scientific, #15544034)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"d0a2o\",\"text\":\"Miller's LB Broth (Corning, #46-050-CM)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"aden8\",\"text\":\"14 mL falcon tube (Corning, #352059)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"9evi3\",\"text\":\"Carbenicillin, disodium salt (Invitrogen, #10177-012)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"dhvj9\",\"text\":\"QIAprep Spin Miniprep Kit (Qiagen, #27104)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"djb7b\",\"text\":\"NanoDrop Eight Spectrophotometer (ThermoFisher)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Purchase purified lyophilized ORF cDNA plasmids from GeneCopoeia.",
+    "Reconstitute the lyophilized plasmid stock in 10 mM Tris pH 7.5 to obtain a concentration of 1-10 ng per 5 μl. Store the remaining volume of purified plasmid at 4 °C for short term storage or -80 °C for long term storage.",
+    "Take 50 µL MAX Efficiency DH5α competent E. coli cells MAX Efficiency DH5α competent E. coli cells Thermo Fisher Scientific Catalog #18258012 out of -80 °C and thaw on ice (approximately 20-30 mins).",
+    "Add 5 µL of the diluted plasmid from Step 2 to the tube of thawed cells (1 volume of diluted plasmid per 50 μl tube of thawed cells). Carefully flick the tube(s) 4-5 times to mix. Do not vortex.",
+    "Place the mixture(s) on ice for 00:30:00",
+    "Heat shock the cells by placing them in a 42 °C water bath for 00:00:30",
+    "Place on ice for 00:05:00",
+    "Pipette 500 µL of room temperature SOC medium into each mixture.",
+    "Incubate at 37 °C for 01:00:00 in a shaking incubator 250 rpm, 37 °C, 1 hour",
+    "Mix the cells thoroughly by flicking the tube and inverting, then spread 50 µL onto a selection plate (separate plates for each reaction) and incubate overnight at 37 °C .",
+    "Add 5 mL of liquid LB per each bacterial culture you will pick from the plate(s) to a 14 mL falcon tube and add 100 µg/mL of carbenicillin.",
+    "Using a sterile pipette tip, select single colonies and drop the tips into their own tubes containing the LB + carbenicillin from Step 11 (1 pipette tip per falcon tube).",
+    "Place the falcon tube cap(s) back on loosely and incubate at 37 °C for 12-18 hours 18:00:00 in a shaking incubator.",
+    "After incubating, check for growth, which is indicated by a cloudy haze in the media.",
+    "For long term storage of the bacteria, create a glycerol stock for each tube and store in -80 °C To create a glycerol stock: Prepare glycerol: 1:1 v/v glycerol:ddH2O Pipette 500 µL of glycerol into a cryo vial Pipette 500 µL of overnight inoculation into the vial and pipette up and down to mix Note: My (JI) glycerol stocks are in a box in Vincent van Snow labeled &#34;Glycerol stocks JI&#34; written on pink tape. EX-U0617-M11 - ORF expression clone for TBK1 (NM_013254.3) -N-Flag-TBK1 EX-U0617-M06 - ORF expression clone for TBK1 (NM_013254.3) -N-HA-TBK1 EX-EGFP-M11 - control vector (with EGFP) for pReceiver-M11 -N-Flag-EGFP EX-EGFP-M06 - control vector (with EGFP) for pReceiver-M11 -N-HA-EGFP EX-U0617-M09 - ORF expression clone for TBK1 (NM_013254.4) -C-myc-TBK1 EX-U0617-M35-B - ORF expression clone for TBK1 (NM_013254.3) -C-Flag-TBK1 All of these are stored as glycerol stocks in the -80",
+    "Centrifuge the liquid LB Overnight culture at 4 °C at 2800 x g, 4 °C, 10 minutes",
+    "Purify the plasmid DNA using the QIAprep Spin Miniprep Kit Qiagen Catalog #27104",
+    "Quantify the plasmid DNA using the NanoDrop Eight Spectrophotometer (ThermoFisher). Protocol on Page 17. High quality DNA will have an A 260 /A 280 ratio of 1.7–2.0 (via Sigma )."
+  ],
+  "authors": [
+    "Jailyn Izu"
+  ],
+  "creator": "Jailyn Izu",
+  "published_on": 1749048473,
+  "created_on": 1715872596,
+  "keywords": []
+}

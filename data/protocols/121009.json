@@ -1,0 +1,36 @@
+{
+  "id": 121009,
+  "title": "Receptor internalization assay to probe for agonist binding to CXCR2",
+  "uri": "receptor-internalization-assay-to-probe-for-agonis-d2er8bd6",
+  "doi": "dx.doi.org/10.1038/nprot.2007.213",
+  "description": "{\"blocks\":[{\"key\":\"i2prf\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"1yu8x\",\"text\":\"Based on an observed apparent structural homology between the monomeric structure of the cytokine MIF and the CXCL8 dimer, we have tested whether MIF can directly interact with the cognate CXCL8 receptor CXCR2. Functional interaction between a ligand or agonist and its receptor can reliably be determined by studying internalization of the receptor, a process that follows binding of the ligand. Applying a receptor internalization assay in human epithelial kidney cells (HEK) or RAW 264.7 macrophages stably overexpressing CXCR2 and other biochemical interaction assays, we found that MIF in fact interacts with CXCR2, leading to a comparable internalization rate of CXCR2 as that induced by the cognate ligand CXCL8 (ref. 1).\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "{\"blocks\":[{\"key\":\"km540\",\"text\":\"Reagents\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":8}],\"entityRanges\":[],\"data\":{}},{\"key\":\"eeeip\",\"text\":\"Recombinant CXCL8 (PeproTech EC/CellConcept, Umkirch, Germany)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"sil44\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"nsyad\",\"text\":\"Anti-human CXCR2 antibody (MAB331, R\\u0026D systems)\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"tnug4\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"hjlas\",\"text\":\"HEK293 cells stably expressing CXCR2 (from Ben-Baruch Lab, Israel)2\\r\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":66,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"q7cpa\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"5guvl\",\"text\":\"RAW 264.7 cells stably expressing CXCR2 (from Bernhagen Lab, Germany)1\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sup\",\"offset\":69,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"8plud\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"cabau\",\"text\":\"Equipment\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"bold\",\"offset\":0,\"length\":9}],\"entityRanges\":[],\"data\":{}},{\"key\":\"nugus\",\"text\":\"For example: FACSCalibur System (BD Biosciences, Heidelberg)\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Cultivate the HEK293-CXCR2 cells (10 5 cells/well) in 12-well plate in 10%FCS/DMEM culture medium overnight.",
+    "Change the medium with DMEM containing 0.5% FCS.",
+    "Treat the cells with agonist, i.e. CXCL8 (0 – 100 nM) or rMIF (0 – 1 μM), for 45 min at 37 °C.",
+    "Remove the medium and wash the cells once with cold acidic glycine buffer (50 mM glycine, 150 mM NaCl, pH 2.7) and twice with cold PBS.",
+    "Stain the cells with mouse anti-human CXCR2 antibody (MAB331, R&amp;D Systems) or isotype control (IgG 2a) (both immunoglobulins were diluted 1:500 in PBS containing 1% FCS), for 45 min at 4 °C.",
+    "Wash three times with cold PBS.",
+    "Incubate the cells with FITC-conjugated anti-mouse antibody for 30 min at 4 °C.",
+    "Analyse the fluorescence intensity by FACS.",
+    "Calculate percent of receptor internalization from the relative fluorescence intensity as follows: (MFI[exp.] – MFI[0% control]) / (MFI[100%control] – MFI[0% control]) x 100 MFI: geometric mean fluorescence intensity; 100% control corresponds to CXCR2 expression on the cell surface of cells treated with 20 mM sodium phosphate buffer alone; 0% control refers to cells incubated with isotype IgG as control.",
+    "Overall: 2days Internalization assay including FACS analysis: 3-4 h",
+    "The acidic glycine buffer washing step is very important to avoid ‘false-positive’ effects due to blockade of non-internalized receptor by ligand.",
+    "See for example Bernhagen et al., Nat. Med . 2007 (ref. 1).",
+    "MIF is a noncognate ligand of CXC chemokine receptors in inflammatory and atherogenic cell recruitment by J Bernhagen, R Krohn, H Lue, JL Gregory, A Zernecke, RR Koenen, M Dewor, I Georgiev, A Schober, L Leng, T Kooistra, G Fingerle-Rowson, P Ghezzi, R Kleemann, S R McColl, R Bucala, MJ Hickey &amp; C Weber published in Nature Medicine on 28 Feb, 2007 https://dx.doi.org/10.1038/nm1567"
+  ],
+  "authors": [
+    "Hongqi Lue",
+    "Manfred Dewor",
+    "Juergen Bernhagen",
+    "Christian Weber"
+  ],
+  "creator": "Protocols Importer",
+  "published_on": 1176874712,
+  "created_on": 1176874712,
+  "keywords": []
+}

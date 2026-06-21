@@ -1,0 +1,30 @@
+{
+  "id": 116395,
+  "title": "Steered MD simulations of the inactive-active transition",
+  "uri": "steered-md-simulations-of-the-inactive-active-tran-dvwj67cn",
+  "doi": "dx.doi.org/10.17504/protocols.io.eq2ly68drgx9/v1",
+  "description": "{\"blocks\":[{\"key\":\"26ag\",\"text\":\"This protocol details steered molecular dynamics simulations of the transition from the inactive to the active PI3KC3-C1 complex bound to RAB1A on a lipid membrane. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "",
+  "warning": "",
+  "materials_text": "",
+  "steps": [
+    "Superimpose the cryo-EM structure of the inactive conformation onto a membrane-engaged active complex after relaxation.",
+    "Apply harmonic restraints (force constant: 100 kJ mol⁻¹) to increase the center-of-mass z-distance between residues S249 to K887 of VPS34 and the membrane lipids underneath.",
+    "Apply a pulling rate of 0.1 nm ns⁻¹ until the regions of interest are not clashing with the membrane.",
+    "Run simulation without any steering force for 117 ns to relax the membrane.",
+    "Apply a lateral force to increase the distance between the C-terminal region of VPS34 (residues S249 to K887) and the N-terminal region of VPS15 (residues G2 to K300) for 30 ns, with a force constant of 100 kJ mol -1.",
+    "Apply a pulling velocity of 0.1 nm ns -1 until the interface between VPS34 and VPS15 breaks.",
+    "Pull the center of mass of the myristate at the N-terminus of VPS15 along the z coordinate towards the membrane for 220 ns with a force constant of 100 kJ mol -1 .",
+    "Apply a negative rate of -0.1 nm ns⁻¹ until the myristate is inserted in the membrane and the catalytic domain of VPS34 reaches the membrane surface.",
+    "Allow the complex to relax for 160 ns upon removal of any steering force."
+  ],
+  "authors": [
+    "Ainara Claveras Cabezudo",
+    "Annan SI Cook"
+  ],
+  "creator": "Ainara Claveras Cabezudo",
+  "published_on": 1734977236,
+  "created_on": 1734622601,
+  "keywords": []
+}

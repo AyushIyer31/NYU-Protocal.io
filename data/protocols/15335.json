@@ -1,0 +1,34 @@
+{
+  "id": 15335,
+  "title": "Extracting plasmid DNA from Agrobacterium with the Bioline ISOLATE II Plasmid Mini Kit",
+  "uri": "extracting-plasmid-dna-from-agrobacterium-with-the-s8fehtn",
+  "doi": "dx.doi.org/10.17504/protocols.io.s8fehtn",
+  "description": "{\"blocks\":[{\"key\":\"5fp6h\",\"text\":\"To extract plasmid DNA from Agrobacterium, to confirm the correct plasmid has been taken-up, this protocol allows you to directly perform a mini-prep on transformed Agrobacterium, digest this DNA and visualize it on a gel. This is without the need of rescuing the plasmid in E. coli or genotyping with PCR. This protocol using the commercially available Bioline ISOLATE II Plasmid Mini Kit, designed for use with E. coli. The standard protocol this is modified from is available here: https://www.bioline.com/au/downloads/dl/file/id/1219/isolate_ii_plasmid_mini_kit_protocol.pdf\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"italic\",\"offset\":28,\"length\":13},{\"style\":\"italic\",\"offset\":165,\"length\":13},{\"style\":\"italic\",\"offset\":275,\"length\":7},{\"style\":\"italic\",\"offset\":413,\"length\":7}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"bdaij\",\"text\":\"\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"er285\",\"text\":\"Ensure RNase A has been added to Resuspension Buffer P1. Pre-warm the required amount of PW1 to 50-55 ºC before starting the extration. Ensure Ethanol has been added to PW2. \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"7dapn\",\"text\":\"Please check the MSDS information for the ISOLATE II Plasmid Mini Kit: https://www.bioline.com/au/downloads/dl/file/id/2807/isolate_ii_plasmid_mini_kit_msds.pdf\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"EnzFk\",\"text\":\"MATERIALS\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":null,\"data\":null},{\"key\":\"FfMfI\",\"text\":\" \",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":null,\"entityRanges\":[{\"key\":0,\"offset\":0,\"length\":1}],\"data\":null}],\"entityMap\":{\"0\":{\"type\":\"reagents\",\"mutability\":\"\",\"data\":{\"id\":128228,\"guid\":\"41A2E2F6341F11EE9D4302C0B41BC903\",\"name\":\"ISOLATE II Plasmid Mini Kit\",\"mol_weight\":0,\"sku\":\"BIO-52057\",\"url\":\"https://www.bioline.com/au/isolate-ii-plasmid-mini-kit.html#res\",\"cas_number\":\"\",\"rrid\":\"\",\"vendor\":{\"id\":121,\"name\":\"Bioline\",\"link\":\"http://www.bioline.com/us/\",\"is_requested\":false,\"image\":{\"source\":\"/img/vendors/placeholder.png\",\"placeholder\":\"/img/vendors/placeholder.png\"}},\"is_public\":true,\"can_edit\":false}}}}",
+  "steps": [
+    "Pellet 3 ml of a saturated Agrobacterium LB culture with appropriate antibiotics for 30s at 11,000 x g. Typical pellet after spinning down 3 ml of 24 hour grown Agrobacterium. I grew Agrobacterium in 5 ml of LB with appropriate antibiotics for 24 hours at 29 ºC. Spinning the 3 ml down can be done in two steps of 1.5 ml.",
+    "Add 250μl Resuspension Buffer P1 and resuspend cell pellet by pipetting up and down.",
+    "Centrifuge 10 min at max speed at room temperature. The max speed on the centrifuged I used was 20817 x g but faster is probably not a bad thing. The pellet is very glopy (snot-like) so a long, fast spin at this stage is vital to being able to get the supernatant. This is the very snot-like pellet. Ensure you do not disturb it when you take the supernatant.",
+    "Bind DNA Place ISOLATE II Plasmid Mini Spin Column in a 2ml Collection Tube. Pipette (do not decant) a maximum of 750µl (usually less) of clarified sample supernatant onto column. Centrifuge 1 min at 11,000 x g and discard flow-through.",
+    "Add 500µl Wash Buffer PW1 preheated to 50°C. Centrifuge 1 min at 11,000 x g. Discard flow-through and reuse Collection Tube. The use of PW1 is considered optional for some E. coli strains but is essential for extracting plasmid from Agrobacterium as it contains many nucleases, which PW1 is used to remove. I actually warmed it up to 55 ºC, but I am sure the manual&#39;s recommended 50 ºC will work just the same.",
+    "Centrifuge 2 min at 11,000 x g, to remove residual ethanol. Place ISOLATE II Plasmid Mini Spin Column in a 1.5ml microcentrifuge tube.",
+    "Add 30-50μl Elution Buffer P, nuclease-free water or TE buffer directly onto center of silica membrane. Incubate at room temperature for 1 min. 00:01:00, Elution incubation",
+    "Discard supernatant and remove as much liquid as possible.",
+    "Add 250µl Lysis Buffer P2. Mix gently by inverting tube 6-8 times. Incubate at room temperature for up to 5 min or until lysate appears clear. Note: Do not vortex to avoid shearing genomic DNA 00:05:00, Lysis",
+    "Add 300µl Neutralization Buffer P3. Mix thoroughly by inverting tube 6-8 times. Note: Do not vortex to avoid shearing genomic DNA",
+    "Add 600μl Wash Buffer PW2 (supplemented with ethanol). Centrifuge 1 min at 11,000 x g. Discard flow-through and reuse Collection Tube.",
+    "Centrifuge 1 min at 11,000 x g.",
+    "The DNA is now very dilute so it would be a good idea to use 20 µl in a typical restriction enzyme digest. This is usually much less than you would use from a prep from E. coli."
+  ],
+  "authors": [
+    "James P B Lloyd",
+    "Ryan Lister"
+  ],
+  "creator": "James P B Lloyd",
+  "published_on": 1536068101,
+  "created_on": 1536033872,
+  "keywords": []
+}

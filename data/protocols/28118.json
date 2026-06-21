@@ -1,0 +1,39 @@
+{
+  "id": 28118,
+  "title": "The EV71 neutralizing antibody test",
+  "uri": "the-ev71-neutralizing-antibody-test-7pwhmpe",
+  "doi": "dx.doi.org/10.17504/protocols.io.7pwhmpe",
+  "description": "{\"blocks\":[{\"key\":\"35d1k\",\"text\":\"This protocol describes the process for the neutralizing antibody test of EV71.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "guidelines": "{\"blocks\":[{\"key\":\"b8srj\",\"text\":\"The serum neutralizing antibody response is the major indicator of EV71 protective immunity. The neutralizing antibody test of EV71 followed the standard protocol of a neutralization test. Serum samples were heat-treated for 30 minutes at 56°C, serially diluted and mixed with 100 50% tissue culture-infective doses (TCID50) of the EV71 TW/2272/98 strain (GenBank accession number AF119795), and incubated for 2 hours at 37°C. Thereafter, rhabdomyosarcoma cells were added into each reaction well and incubated at 37℃ in 5% CO2 incubator. Each plate included a cell control, serum control, and virus back-titration. The cytopathic effect was monitored from 5 to 6days after incubation, and the serotiter was determined when the cytopathic effect was observed in one TCID50 of the virus back-titration. Seropositivity was defined as a serotiter ≥8.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":526,\"length\":1}],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "before_start": "{\"blocks\":[{\"key\":\"ekifs\",\"text\":\"Set water bath to 56℃\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9ptbk\",\"text\":\"Confirm that the RD cells are healthy\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"2boh4\",\"text\":\"EV71 needs to operate in BSL-2 lab\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"60egm\",\"text\":\"Serum or plasma\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9rrcm\",\"text\":\"96 well microtiterplate\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"2suli\",\"text\":\"1x PBS\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"amerc\",\"text\":\"DMEM with 2% FBS medium\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"3fput\",\"text\":\"Multichannel Pipette (8 or 12)\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"9ggij\",\"text\":\"1.5 ml eppendrof\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]},{\"key\":\"b7hml\",\"text\":\"EV71 TW/2272/98 strain (GenBank accession number AF119795)\",\"type\":\"align-justify\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":[]}],\"entityMap\":{}}",
+  "steps": [
+    "Inactivate serum (300 μl) at 56℃ for 30 min %s %s",
+    "Make 2 fold serial dilution of serum from 1:4 to 1:256 with 2% FBS DMEM %s %s a. Add 50 μl 2% FBS DMEM in well B to H b. ● means add 50μl serum sample c. After dilution, every well has 50μl sample d. ex. sample1-1 well H: serum control; sample 1-2 well H: cell control; 1-1 and 1-2 are duplicate",
+    "Prepare control wells including virus control, serum control and cell control. Virus control well：back titration from 100, 10, 1 to 1/10 100TCID 50 Serum control：add serum and cell only, no virus Cell control：add cell only, no serum and no virus",
+    "Add 50 μl of adjusted virus suspension (100TCID50EV71) onto the well A to well G of microtiterplate, shake reaction well slightly",
+    "Incubate above reaction wells at 37℃for 2 hours in 5% CO 2 incubator",
+    "Prepare RD cells suspension and adjust cell concentration to 1×10 5 /ml",
+    "Add 100μl of adjusted RD cell into each reaction well after 2 hours in step5",
+    "Incubate wells at 37℃in 5% CO 2 incubator for 5-6 days until virus control well reach 100TCID 50",
+    "Observe CPE in each well under reverse microscope after 5-6 days incubation",
+    "Check CPE in control wells Virus control well：100% CPE in 100TCID 50 and 10TCID 50 ; 50% CPE in 1TCID 50 , &lt; 10% CPE in 1/10TCID 50 Serum control well：no CPE Cell control well：no CPE",
+    "The NT titer was calculated as the reciprocal value of the last dilution of the antiserum that completely inhibited the CPE after incubation.",
+    "Seropositivity was defined as a reciprocal of the serotiter ≧ 8."
+  ],
+  "authors": [
+    "Jian-Te Lee",
+    "Ting-Yu Yen",
+    "Chun-Yi Lu",
+    "Ding-Ping Liu",
+    "Yi-Chuan Huang",
+    "Luan-Yin Chang",
+    "Li-Min Huang",
+    "Tzou-Yien Lin"
+  ],
+  "creator": "Ai Ling Cheng",
+  "published_on": 1571414768,
+  "created_on": 1569467144,
+  "keywords": []
+}

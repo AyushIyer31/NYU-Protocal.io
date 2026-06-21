@@ -1,0 +1,32 @@
+{
+  "id": 235615,
+  "title": "ATAC-seq  library preparation in cultured cells",
+  "uri": "atac-seq-library-preparation-in-cultured-cells-hib7b4arp",
+  "doi": "dx.doi.org/10.17504/protocols.io.n2bvj1rrnvk5/v1",
+  "description": "{\"blocks\":[{\"key\":\"vnuqt\",\"text\":\"This protocol describes assay for transposase-accessible chromatin using sequencing (ATAC-seq) in cultured cells, including nuclei preparation, transposition reaction, DNA purification, and library amplification.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "guidelines": "",
+  "before_start": "{\"blocks\":[{\"key\":\"lebbs\",\"text\":\"- Perform all steps on ice or at 4°C unless otherwise indicated.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"hfwhg\",\"text\":\"- Use freshly prepared buffers or thawed aliquots kept on ice.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"wfdf4\",\"text\":\"- Count viable cells accurately prior to starting the assay.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1oobm\",\"text\":\"- Pre-chill centrifuges and rotators.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"xo0fb\",\"text\":\"- Prepare transposition master mix immediately before use.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "warning": "{\"blocks\":[{\"key\":\"3rdyj\",\"text\":\"- Cell number and lysis conditions may require optimization depending on cell type.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"rc7os\",\"text\":\"- Over-lysis can reduce library complexity.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"ca5oc\",\"text\":\"- Accurate pipetting during transposition is critical for reproducibility.\",\"type\":\"unstyled\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "materials_text": "{\"blocks\":[{\"key\":\"m4fvw\",\"text\":\"ATAC-Resuspension buffer (ATAC-RSB)**: 10 mM Tris-HCl (pH 7.4), 10 mM NaCl, 3 mM MgCl2, supplemented with 0.1% NP-40, 0.1% Tween-20, 0.01% digitonin\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":85,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"im6l0\",\"text\":\"Transposition master mix**: 2x TD buffer (20 mM Tris-HCl, pH 7.6; 10 mM MgCl2; 20% dimethylformamide)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[{\"style\":\"sub\",\"offset\":76,\"length\":1}],\"entityRanges\":[],\"data\":{}},{\"key\":\"1vfob\",\"text\":\"Tn5 transposase (Illumina, 20034197), \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"chdr4\",\"text\":\"1% digitonin (Millipore, 300410), \",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"58tea\",\"text\":\"10% Tween-20 (Sigma/Roche cat# 11332465001)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"sb6hk\",\"text\":\"MinElute PCR purification kit (QIAGEN, 28004)\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}},{\"key\":\"1docz\",\"text\":\"1x NEBNext PCR Master Mix**\",\"type\":\"unordered-list-item\",\"depth\":0,\"inlineStyleRanges\":[],\"entityRanges\":[],\"data\":{}}],\"entityMap\":{}}",
+  "steps": [
+    "Collect 50,000 viable cells per sample.",
+    "Resuspend cells in 50 µL cold ATAC-Resuspension buffer (ATAC-RSB) containing: 10 mM Tris-HCl (pH 7.4) 10 mM NaCl 3 mM MgCl 2 Supplemented with: 0.1% NP-40 0.1% Tween-20 0.01% digitonin",
+    "Incubate cell suspension on ice for 3 min.",
+    "Wash the lysate with 1 mL of cold ATAC-RSB without NP-40 and digitonin.",
+    "Pellet nuclei by centrifugation at 500 xg and carefully remove supernatant.",
+    "Resuspend nuclei in 50 µL transposition master mix containing: 2x TD buffer (20 mM Tris-HCl, pH 7.6; 10 mM MgCl 2 ; 20% dimethylformamide) 2.5 µL Tn5 transposase (Illumina, 20034197) 16.5 µL PBS 0.5 µL 1% digitonin (Millipore, 300410) 0.5 µL 10% Tween-20",
+    "Incubate transposition reaction at 37°C for 30 min with 1,000 rpm mixing.",
+    "Purify transposed DNA fragments using the MinElute PCR purification kit (QIAGEN, 28004) according to the manufacturer’s instructions.",
+    "Elute purified DNA in 20 µL nuclease-free water or elution buffer.",
+    "Construct sequencing libraries using 1x NEBNext PCR Master Mix and custom primers as described by Buenrostro et al.",
+    "Amplify libraries according to standard ATAC-seq PCR conditions."
+  ],
+  "authors": [
+    "Xin Xu",
+    "Yujuan Wang"
+  ],
+  "creator": "Xin Xu",
+  "published_on": 1766722969,
+  "created_on": 1766372713,
+  "keywords": []
+}
