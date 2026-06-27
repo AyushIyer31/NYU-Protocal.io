@@ -24,14 +24,29 @@ from biology_intents import INTENT_FAMILIES, SUB_INTENTS
 from ollama_executions import (
     _get_ollama_model,
     _get_claude_model,
+    _get_openai_model,
+    _get_gemini_model,
     _retryable_ollama_call,
     active_provider,
     claude_available,
+    gemini_available,
 )
 
 load_dotenv(Path(__file__).parent / "variables.env", override=False)
 
 log = logging.getLogger(__name__)
+
+# Global provider override for the current request (set by main.py chat endpoint)
+_current_provider: Optional[str] = None
+
+def set_provider(provider: Optional[str]) -> None:
+    """Set the LLM provider for this request. Call before LLM operations."""
+    global _current_provider
+    _current_provider = provider
+
+def get_provider() -> Optional[str]:
+    """Get the current provider override."""
+    return _current_provider
 
 
 def _native_ollama_base_url() -> str:
@@ -45,13 +60,39 @@ def _native_ollama_base_url() -> str:
 
 
 def active_model() -> str:
-    return _get_claude_model() if active_provider() == "claude" else _get_ollama_model()
+    """Model id for the resolved provider (respects the per-request override)."""
+    prov = active_provider(override=get_provider())
+    if prov == "openai":
+        return _get_openai_model()
+    if prov == "claude":
+        return _get_claude_model()
+    if prov == "gemini":
+        return _get_gemini_model()
+    return _get_ollama_model()
 
 
-def is_available() -> bool:
+def current_llm_info() -> Dict[str, Any]:
+    """Provider, model id, and availability for the current request — surfaced in
+    the /chat response so the UI can show which model produced the results."""
+    prov = active_provider(override=get_provider())
+    return {
+        "provider": prov,
+        "model": active_model(),
+        "available": is_available(),
+    }
+
+
+def is_available(provider: Optional[str] = None) -> bool:
     """True when the active LLM provider is configured and reachable."""
-    if active_provider() == "claude":
+    from ollama_executions import openai_available
+    resolved_provider = provider or get_provider()
+    resolved = active_provider(override=resolved_provider)
+    if resolved == "openai":
+        return openai_available()
+    if resolved == "claude":
         return claude_available()
+    if resolved == "gemini":
+        return gemini_available()
     try:
         with urllib.request.urlopen(f"{_native_ollama_base_url()}/api/tags", timeout=1.5):
             return True
@@ -65,9 +106,11 @@ def _call(
     max_tokens: int = 512,
     response_format: Optional[Dict[str, str]] = None,
     temperature: float = 0.2,
+    provider: Optional[str] = None,
 ) -> str:
-    """Single local Ollama call. Returns empty string on failure."""
-    if not is_available():
+    """LLM call (Ollama/Claude/OpenAI). Returns empty string on failure."""
+    resolved_provider = provider or get_provider()
+    if not is_available(provider=resolved_provider):
         return ""
     raw = _retryable_ollama_call(
         messages=[
@@ -76,6 +119,7 @@ def _call(
         ],
         temperature=temperature,
         response_format=response_format,
+        provider=resolved_provider,
     )
     return (raw or "").strip()
 
@@ -133,6 +177,7 @@ def analyze_experiment_request(
     user_query: str,
     conversation_query: str = "",
     previous_profile: Optional[Dict[str, Any]] = None,
+    pending_field: Optional[str] = None,
     max_queries: int = 5,
 ) -> Dict[str, Any]:
     """
@@ -179,6 +224,7 @@ def analyze_experiment_request(
         },
         "missing_fields": [],
         "next_action": "ask_clarification|generate_search_queries|respond_chitchat",
+        "user_declined_to_answer": False,
         "clarifying_question": {
             "field": "field_name_or_null",
             "question": "short question or null",
@@ -198,6 +244,22 @@ def analyze_experiment_request(
             "- ask_clarification: use when a required search field is missing.\n"
             "- generate_search_queries: use when enough information exists to propose protocol-search queries.\n"
             "- respond_chitchat: use only for greetings or non-protocol conversation.\n\n"
+            "Answering a specific question:\n"
+            "- When 'pending_field' is set, the current_user_message is the ANSWER to that "
+            "specific field. Assign the answer to THAT field — do not place it in a different "
+            "field. E.g. if pending_field is 'readout_assay' and the user says 'phenotype', set "
+            "readout_assay='phenotype' (NOT organism). If the message clearly also specifies "
+            "other fields, you may fill those too, but the pending_field is the primary target.\n\n"
+            "Decline detection:\n"
+            "- Set user_declined_to_answer=true ONLY when the user's latest message is the "
+            "answer to your pending clarification AND it declines to specify (e.g. 'not sure', "
+            "'I don't know', 'no clue', 'no preference', 'you choose', 'whatever', 'doesn't "
+            "matter', 'skip it', 'either is fine'). For any concrete answer, set it false.\n\n"
+            "Field-value rules:\n"
+            "- PRESERVE conditional operators VERBATIM in field values. If the user writes "
+            "'rice or tomato', store the field as 'rice or tomato' (do NOT pick one or "
+            "generalize to 'plant'). Likewise keep 'X and Y', 'like X', 'similar to X', and "
+            "'such as X' exactly as written in the relevant field.\n\n"
             "Controlled intent rules:\n"
             "- Use exactly one allowed intent_family and one allowed sub_intent from the schema.\n"
             "- gene_modification means the user wants genes modified but did not specify the mechanism.\n"
@@ -228,6 +290,7 @@ def analyze_experiment_request(
                 "current_user_message": user_query,
                 "conversation_query": conversation_query,
                 "previous_experiment_profile": previous_profile or {},
+                "pending_field": pending_field or None,
             },
             ensure_ascii=False,
             indent=2,
@@ -473,6 +536,10 @@ def generate_natural_search_queries(
             "- Vary phrasing with natural synonyms (scientific organism names, 'simultaneous' for "
             "multiplex, 'western blot' for protein level, etc.).\n"
             "- Include the scientist's ORIGINAL request as one of the queries, essentially unchanged.\n"
+            "- PRESERVE conditional operators VERBATIM. If a field value contains 'or' "
+            "('rice or tomato'), 'and' ('rice and maize'), or 'like'/'similar to'/'such as' "
+            "('like tomato'), keep that exact phrasing in the queries — do NOT pick one side, "
+            "drop the operator, or rephrase it (e.g. write '...in rice or tomato...').\n"
             "- Use ONLY concepts present in the profile or the original request. NEVER invent "
             "organisms, tissues, genes, or techniques. In particular, never write 'in planta' "
             "unless the system is literally a plant.\n"

@@ -38,6 +38,7 @@ from claude_client import (
     is_available as llm_is_available,
     is_new_search_topic,
     generate_natural_search_queries,
+    current_llm_info,
 )
 from concept_expansion import (
     extract_concepts, expand_concepts, build_search_probes, generate_sentence_variants,
@@ -65,6 +66,9 @@ from experiment_profile import (
 )
 from biology_intents import controlled_intent_payload, normalize_sub_intent
 from field_ranking import closeness_rank
+from pubmed_client import search_pubmed, fetch_fulltext, extract_methods
+from blend_ranking import blend_results
+from query_operators import pubmed_terms, is_like, detect_operator
 
 logging.basicConfig(level=logging.INFO)
 
@@ -153,6 +157,15 @@ class ChatRequest(BaseModel):
     selected_search_query: Optional[str] = None
     search_all: bool = False
     candidate_search_queries: Optional[List[str]] = None
+    # True when this message answers a clarification the assistant just asked.
+    # New-topic detection is skipped for these so a short answer (e.g. "CRISPR")
+    # refines the current profile instead of being mistaken for a new search.
+    is_clarification_answer: bool = False
+    # LLM provider override: "claude", "openai", or "ollama"
+    provider: Optional[str] = None
+    # How many results to pull from EACH source (protocols.io + PubMed) before
+    # blending. UI-configurable; defaults to 5 per source.
+    results_per_provider: int = 5
 
 
 def run_live_expansion_search(query: str, top_k: int, profile: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
@@ -446,24 +459,72 @@ def _clarification_candidate_fields(field: str, question: str) -> List[str]:
     return _dedup_strings(fields)
 
 
+def _candidate_specificity(query: str, profile: Optional[Dict[str, Any]]) -> int:
+    """Count how many populated profile field-values appear in the query.
+
+    The vague original request ("find protocols that can allow ...") contains
+    few/no profile terms and scores low; profile-derived queries (CRISPR, tomato,
+    qPCR, ...) score high. Used to order candidates most-specific-first so the
+    UI default (candidate #1) carries the full accumulated intent.
+    """
+    if not profile:
+        return 0
+    low = query.lower()
+    skip = {"", "not specified", "none", "unknown", "not sure", "null"}
+    hits = 0
+    scalar_fields = (
+        "organism", "tissue_or_cell_type", "sample_type", "target",
+        "modification_type", "sub_intent", "experimental_method",
+        "delivery_method", "expression_type", "readout_assay", "readout",
+        "condition", "gene_or_construct",
+    )
+    seen_vals: set = set()
+    for f in scalar_fields:
+        v = str(profile.get(f) or "").strip().lower()
+        if v and v not in skip and v not in seen_vals and v in low:
+            seen_vals.add(v)
+            hits += 1
+    intent_specific = profile.get("intent_specific")
+    if isinstance(intent_specific, dict):
+        for v in intent_specific.values():
+            sv = str(v or "").strip().lower()
+            if sv and sv not in skip and sv not in seen_vals and sv in low:
+                seen_vals.add(sv)
+                hits += 1
+    return hits
+
+
 def _finalize_candidate_queries(
     queries: List[str],
     original_query: str,
+    profile: Optional[Dict[str, Any]] = None,
 ) -> List[str]:
     """Light validation for natural-language query suggestions, and guarantee the
     user's original request is one of the options. Unlike the field-complete
     `candidate_query_preserves_required_concepts`, this allows focused queries
     (each covering a subset of fields) — collective coverage is handled by the
-    generator's prompt."""
+    generator's prompt.
+
+    Candidates are ordered most-specific-first (by profile-field coverage) so the
+    UI default (candidate #1) carries the accumulated intent rather than the vague
+    original request. The original is still included, just lower in the list."""
     out = [
         " ".join(str(q).split())
         for q in (queries or [])
         if _is_valid_candidate_query(q)
     ]
+    # No generated queries (e.g. a transient LLM failure) — return [] so the
+    # caller falls through to the rule-based generator instead of presenting the
+    # vague original query as the sole, default-selected candidate.
+    if not out:
+        return []
     oq = " ".join(str(original_query or "").split())
     if oq and _is_valid_candidate_query(oq) and oq.lower() not in {x.lower() for x in out}:
         out.append(oq)
-    return _dedup_strings(out)[:5]
+    out = _dedup_strings(out)
+    # Stable sort by descending specificity (ties keep generator order).
+    out.sort(key=lambda q: _candidate_specificity(q, profile), reverse=True)
+    return out[:5]
 
 
 def _candidate_queries_from_plan(
@@ -529,6 +590,211 @@ def _profile_goal_summary(profile: Optional[Dict[str, Any]]) -> str:
     return ", ".join(dict.fromkeys(parts))
 
 
+_OPERATOR_EMPTY = {"", "not specified", "none", "unknown", "not sure", "null"}
+
+# Fast-path / offline fallback for decline detection. The LLM planner
+# (`user_declined_to_answer`) is the primary interpreter and handles arbitrary
+# phrasing ("no clue", "you decide", ...); this list just catches the obvious
+# cases instantly and keeps the feature working when the LLM is unavailable.
+# IMPORTANT: must NOT include empty-state markers ("not specified", "unknown",
+# "none", "n/a") — those represent unfilled fields, so matching them would
+# auto-skip every empty field (e.g. organism) and never ask.
+_NONANSWER_VALUES = {
+    "not sure", "unsure", "no idea", "idk", "i don't know", "i dont know",
+    "dont know", "don't know", "do not know", "no preference", "doesn't matter",
+    "does not matter", "doesnt matter", "whatever", "skip", "no opinion",
+    "not sure / flexible", "either / not sure",
+}
+# Profile fields we scrub/skip (scalars only; lists/dicts/intent_specific excluded).
+_SKIPPABLE_FIELDS = (
+    "organism", "modification_type", "sub_intent", "experimental_method",
+    "method", "target", "gene_or_construct", "delivery_method", "expression_type",
+    "readout", "readout_assay", "condition", "tissue_or_cell_type", "sample_type",
+    "timeline", "difficulty",
+)
+
+
+def _is_nonanswer(text: Any) -> bool:
+    t = " ".join(str(text or "").split()).strip().lower().rstrip(".!?")
+    return t in _NONANSWER_VALUES
+
+
+def _apply_nonanswer_skips(
+    new_profile: Dict[str, Any],
+    prior_profile: Optional[Dict[str, Any]],
+    user_text: str,
+    intent: Dict[str, Any],
+    llm_declined: bool = False,
+) -> None:
+    """Record skipped fields so 'not sure'-type answers don't block the flow.
+
+    Whether the user declined is decided by the LLM planner
+    (`user_declined_to_answer`, which handles arbitrary phrasing) OR a small
+    static list (fast path / fallback when the LLM is unavailable).
+
+    (1) If the user declined, infer the field that was being asked (the pending
+        clarification on the prior profile) and skip it.
+    (2) Scrub stray non-answer values that leaked into other fields (clean only).
+    Skips persist in profile['_skipped_fields'] (carried by the client), so
+    needs_clarification() won't re-ask them.
+    """
+    # Seed from BOTH the rebuilt profile and the carried-over one — the per-turn
+    # merge/validate/normalize rebuild drops '_skipped_fields', so without the
+    # prior profile a skipped field would get re-asked on the next turn.
+    skipped = set(new_profile.get("_skipped_fields") or [])
+    skipped |= set((prior_profile or {}).get("_skipped_fields") or [])
+
+    # (1) User declined the pending question -> skip the field that was just asked.
+    if llm_declined or _is_nonanswer(user_text):
+        try:
+            pending = next_clarification(prior_profile or new_profile, intent)
+        except Exception:
+            pending = None
+        if pending and pending.get("field"):
+            skipped.add(str(pending["field"]))
+
+    # (2) Clean stray non-answer values that leaked into fields (the LLM may
+    #     mis-assign the message, e.g. "I don't know" landing in organism). Null
+    #     them, but do NOT skip — only the pending field (step 1) is skipped, so a
+    #     non-answer in the wrong field doesn't wrongly suppress that question.
+    for field in _SKIPPABLE_FIELDS:
+        val = new_profile.get(field)
+        if isinstance(val, str) and _is_nonanswer(val):
+            new_profile[field] = None
+
+    if skipped:
+        new_profile["_skipped_fields"] = sorted(skipped)
+
+
+def _fix_clarification_misassignment(
+    new_profile: Dict[str, Any],
+    prior_profile: Optional[Dict[str, Any]],
+    user_text: str,
+    pending_field: Optional[str],
+) -> None:
+    """Deterministic safety net for clarification answers landing in the wrong
+    field (e.g. a 'readout' answer the LLM dropped into organism).
+
+    The user's answer belongs to `pending_field` (the question that was shown).
+    Remove the verbatim answer from any OTHER field where it newly appeared, and
+    ensure the pending field carries it if the LLM left it empty. Only exact
+    full-answer matches are moved, so multi-concept answers are left intact.
+    Caller gates this to concrete (non-declined) clarification answers.
+    """
+    if not pending_field:
+        return
+    ans = " ".join(str(user_text or "").split())
+    ans_low = ans.strip().lower()
+    if not ans_low:
+        return
+    prior = prior_profile or {}
+
+    # Remove the answer from non-pending fields where it newly appeared.
+    for field in _SKIPPABLE_FIELDS:
+        if field == pending_field:
+            continue
+        val = new_profile.get(field)
+        if (
+            isinstance(val, str)
+            and val.strip().lower() == ans_low
+            and str(prior.get(field) or "").strip().lower() != ans_low
+        ):
+            new_profile[field] = prior.get(field)
+
+    # Ensure the answered field carries the answer if the LLM left it empty.
+    cur = new_profile.get(pending_field)
+    cur_low = str(cur or "").strip().lower()
+    if not cur_low or cur_low in ("not specified", "none", "unknown", "null") or _is_nonanswer(cur):
+        new_profile[pending_field] = ans
+
+
+def _preserve_operator_fields(
+    new_profile: Dict[str, Any],
+    prior_profile: Optional[Dict[str, Any]],
+    user_text: str,
+) -> None:
+    """Keep AND/OR/LIKE operator values verbatim through profile normalization.
+
+    (1) If THIS turn's message is an operator phrase ("tomato or rice") and a
+        field got collapsed to one operand ("tomato"), restore the full phrase.
+    (2) Carry forward an operator value from the PRIOR profile when the rebuilt
+        field collapsed to one operand or went empty — unless the user genuinely
+        changed that field to an unrelated value.
+    Mutates new_profile in place.
+    """
+    if not isinstance(new_profile, dict):
+        return
+
+    # (1) Restore from the current user message.
+    op, operands, _ = detect_operator(user_text or "")
+    if op and operands:
+        opset = {o.strip().lower() for o in operands}
+        phrase = " ".join((user_text or "").split())
+        for field, val in list(new_profile.items()):
+            if isinstance(val, str) and val.strip().lower() in opset:
+                new_profile[field] = phrase
+
+    # (2) Carry forward prior-profile operator values that got collapsed/emptied.
+    for field, pval in (prior_profile or {}).items():
+        if not isinstance(pval, str):
+            continue
+        pop, poperands, _ = detect_operator(pval)
+        if not pop:
+            continue
+        nval = new_profile.get(field)
+        if not isinstance(nval, str):
+            continue
+        nlow = nval.strip().lower()
+        poperset = {o.strip().lower() for o in poperands}
+        if nlow in poperset or nlow in _OPERATOR_EMPTY or nlow == pval.strip().lower():
+            new_profile[field] = pval
+
+
+def _pubmed_core_query(profile: Optional[Dict[str, Any]], fallback: str) -> str:
+    """Build a trimmed core query for PubMed from the profile.
+
+    PubMed ANDs every term, so the full specific candidate (e.g. "CRISPR Cas
+    genome editing tomato whole plant stable transformation") returns ~1 hit.
+    The core concepts (technique + organism + a couple of key fields) — e.g.
+    "CRISPR genome editing tomato stable transformation" — return ~18. We collect
+    the most discriminating fields in priority order, de-dup at the TOKEN level
+    (so "CRISPR / genome editing" + "genome editing" collapse cleanly), and cap
+    the length so PubMed's AND stays satisfiable.
+    """
+    if not profile:
+        return fallback
+    skip = {"", "not specified", "none", "unknown", "not sure", "null"}
+    # Priority order: technique first, then target/organism, then delivery.
+    # Deliberately EXCLUDES over-constraining qualifiers (tissue/"whole plant",
+    # readout, condition, intent_specific extras like "editing tool: CRISPR/Cas").
+    ordered_fields = (
+        "modification_type", "sub_intent", "experimental_method",
+        "target", "gene_or_construct", "organism", "delivery_method",
+    )
+    # Each field renders to PubMed fragment(s): OR -> "(rice OR tomato)", AND ->
+    # both tokens, LIKE -> bare term, plain -> deduped tokens. Fragments are
+    # space-joined (PubMed ANDs them); a parenthesized OR group stays a real
+    # disjunction inside that AND.
+    terms: List[str] = []
+    seen: set = set()
+    for field in ordered_fields:
+        val = str(profile.get(field) or "").strip()
+        if not val or val.lower() in skip:
+            continue
+        for frag in pubmed_terms(val):
+            key = frag.lower()
+            if frag.startswith("("):  # OR group — keep verbatim, don't dedup tokens
+                terms.append(frag)
+                seen.update(frag.strip("()").lower().split())
+            elif key not in seen:
+                seen.add(key)
+                terms.append(frag)
+        if len(terms) >= 7:  # cap concepts so PubMed's AND stays satisfiable
+            break
+    query = " ".join(terms[:7]).strip()
+    return query if len(query.split()) >= 2 else fallback
+
+
 @app.post("/chat")
 async def chat(req: ChatRequest):
     """
@@ -542,6 +808,10 @@ async def chat(req: ChatRequest):
       5. Optionally generate a plain-English explanation via the local LLM.
       6. Return results with a feedback prompt.
     """
+    # Set the LLM provider for this request
+    from claude_client import set_provider
+    set_provider(req.provider)
+
     # Live mode searches protocols.io directly and does not need the local index;
     # only the legacy TF-IDF ("local") mode requires it.
     if req.search_mode == "local" and not PROTOCOL_INDEX:
@@ -569,9 +839,14 @@ async def chat(req: ChatRequest):
     # search action. Don't gate on selected_search_query / candidate_search_queries:
     # the frontend populates selected_search_query with the typed text on every
     # message, so gating on it would skip new-topic detection for normal input.
+    # A clarification answer is, by definition, refining the current search — it
+    # must never be treated as a new topic (otherwise a short answer like "CRISPR"
+    # wipes the accumulated profile). Skip detection for both search actions and
+    # clarification answers.
     _is_search_action = req.search_confirmed or req.search_all
+    _is_refinement = _is_search_action or req.is_clarification_answer
     _topic_goal = conversation_query or _profile_goal_summary(req.experiment_profile)
-    if req.experiment_profile and _topic_goal and not _is_search_action and llm_is_available():
+    if req.experiment_profile and _topic_goal and not _is_refinement and llm_is_available():
         if await loop.run_in_executor(executor, is_new_search_topic, _topic_goal, query):
             new_search = True
             req.experiment_profile = None
@@ -595,6 +870,16 @@ async def chat(req: ChatRequest):
         previous_profile=req.experiment_profile,
     )
     llm_plan: Dict[str, Any] = {}
+    # The field the user is answering (the question shown last turn). Passed to
+    # the planner so a clarification answer lands in the RIGHT field instead of
+    # being guessed (e.g. "phenotype" -> readout_assay, not organism).
+    pending_field = None
+    if req.is_clarification_answer and req.experiment_profile:
+        try:
+            _pending = next_clarification(req.experiment_profile, rule_intent)
+            pending_field = (_pending or {}).get("field")
+        except Exception:
+            pending_field = None
     if not req.search_confirmed and llm_is_available():
         llm_plan = await loop.run_in_executor(
             executor,
@@ -602,6 +887,7 @@ async def chat(req: ChatRequest):
                 user_query=query,
                 conversation_query=conversation_query,
                 previous_profile=req.experiment_profile,
+                pending_field=pending_field,
             ),
         )
 
@@ -627,6 +913,25 @@ async def chat(req: ChatRequest):
         experiment_intent,
         experiment_profile,
     )
+    # Rule-based safeguard: the LLM/normalizers sometimes collapse an operator
+    # value ("tomato or rice" -> "tomato"). Re-inject the verbatim operator phrase
+    # from the user's current message and carry forward operator values from the
+    # prior profile, so AND/OR/LIKE survive the clarification flow.
+    _preserve_operator_fields(experiment_profile, req.experiment_profile, query)
+    # Non-answer handling: if the user answered a clarification with "not sure" /
+    # "I don't know" / etc., skip that field (don't store it, don't re-ask) even
+    # when it's required, then carry the skip forward so the flow advances.
+    _declined = (bool(llm_plan.get("user_declined_to_answer")) if llm_plan else False) or _is_nonanswer(query)
+    _apply_nonanswer_skips(
+        experiment_profile, req.experiment_profile, query, experiment_intent,
+        llm_declined=_declined,
+    )
+    # Safety net: a concrete clarification answer must land in the field that was
+    # asked (pending_field), not be guessed into the wrong field by the LLM.
+    if req.is_clarification_answer and not _declined:
+        _fix_clarification_misassignment(
+            experiment_profile, req.experiment_profile, query, pending_field,
+        )
     structured_query = profile_to_search_query(experiment_profile, profile_source_query)
     conversation_query = conversation_query or query
 
@@ -725,7 +1030,7 @@ async def chat(req: ChatRequest):
                 conversation_query or query,
                 5,
             )
-            candidate_queries = _finalize_candidate_queries(nl_queries, conversation_query or query)
+            candidate_queries = _finalize_candidate_queries(nl_queries, conversation_query or query, experiment_profile)
         if not candidate_queries:
             candidate_queries = _candidate_queries_from_plan(
                 llm_plan,
@@ -799,8 +1104,14 @@ async def chat(req: ChatRequest):
     # Confirmed search. Either the live concept-expansion pipeline (default) or
     # the legacy local TF-IDF pipeline.
     # The user's natural-language request is used only for "like/such as"
-    # relaxation detection in the closeness ranker — not for retrieval.
-    like_query = " ".join(filter(None, [conversation_query, query])).strip()
+    # relaxation detection in the closeness ranker — not for retrieval. Also feed
+    # any LIKE-bearing profile field values (e.g. organism "like tomato") so the
+    # ranker's existing relaxation logic sees them without changing the ranker.
+    like_field_values = [
+        str(v) for v in (experiment_profile or {}).values()
+        if isinstance(v, str) and is_like(v)
+    ]
+    like_query = " ".join(filter(None, [conversation_query, query, *like_field_values])).strip()
     concepts: Dict[str, Any] = {}
     expansions: Dict[str, List[str]] = {}
     sentence_variants: List[str] = []
@@ -847,6 +1158,47 @@ async def chat(req: ChatRequest):
         expanded = local["expanded"]
         logging.info(f"Local confirmed search '{structured_query}' expanded into {len(expanded)} queries")
 
+    # Step 4.5: blend PubMed literature into the protocols.io results.
+    # Pull `results_per_provider` from each source, then interleave by a unified
+    # title>body relevance score (protocols.io internal order is preserved; see
+    # blend_ranking.py). PubMed is best-effort — any failure leaves the
+    # protocols.io results untouched.
+    per_provider = max(1, int(req.results_per_provider or 5))
+    for r in results:
+        r.setdefault("source", "protocols.io")
+    protocols_top = results[:per_provider]
+    # PubMed ANDs every term, so the long specific candidate starves it (1 hit).
+    # Build a trimmed CORE query from the profile (technique + organism + a couple
+    # of key fields) — protocols.io keeps the full specific query, PubMed gets the
+    # core concepts. Falls back to the specific query when the profile is thin.
+    pubmed_query = _pubmed_core_query(
+        experiment_profile,
+        search_queries[0] if search_queries else structured_query,
+    )
+    try:
+        pubmed_results = await loop.run_in_executor(
+            executor, search_pubmed, pubmed_query, per_provider
+        )
+    except Exception as e:
+        logging.warning(f"PubMed search failed ({e}); returning protocols.io-only.")
+        pubmed_results = []
+    results = blend_results(pubmed_query, protocols_top, pubmed_results)
+
+    # Fetch full text + extract the Methods section for the PubMed papers that
+    # actually surfaced (bounded by per_provider), in parallel.
+    surfaced_pubmed = [r for r in results if r.get("source") == "pubmed"]
+    if surfaced_pubmed:
+        def _attach_methods(paper: Dict[str, Any]) -> None:
+            try:
+                fulltext = fetch_fulltext(paper.get("pmid", ""), paper.get("doi", ""))
+                if fulltext:
+                    paper["methods"] = extract_methods(fulltext)
+            except Exception as e:
+                logging.debug(f"methods fetch failed for {paper.get('pmid')}: {e}")
+        await asyncio.gather(*[
+            loop.run_in_executor(executor, _attach_methods, p) for p in surfaced_pubmed
+        ])
+
     # Step 5: Optionally explain the top results using the local LLM.
     # Skip entirely when Ollama is unreachable — otherwise explain_matches would
     # spend ~15s on doomed retries and stall the request.
@@ -874,6 +1226,8 @@ async def chat(req: ChatRequest):
         "expansions": expansions,
         "sentence_variants": sentence_variants,
         "search_mode": req.search_mode,
+        "llm_provider": (_llm_info := current_llm_info())["provider"],
+        "llm_model": _llm_info["model"] if _llm_info["available"] else None,
         "feedback_prompt": "Were these results relevant? I can help narrow the search.",
         "feedback_options": [
             "Narrow by organism (e.g. plant, human, mouse)",

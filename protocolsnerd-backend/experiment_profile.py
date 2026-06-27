@@ -2060,6 +2060,11 @@ def needs_clarification(profile: Dict[str, Any], field: str, context: Optional[D
     """
     synced = _sync_intent_specific_fields(dict(profile or {}))
     canonical = _canonical_profile_field(field)
+    # User explicitly said "not sure" for this field — never re-ask it, even if
+    # it's required. The skip list is maintained by the chat endpoint.
+    skipped = synced.get("_skipped_fields") or []
+    if canonical in skipped or field in skipped:
+        return False
     value = _profile_value(synced, canonical)
 
     if _field_has_conflict(synced, canonical, context=context):

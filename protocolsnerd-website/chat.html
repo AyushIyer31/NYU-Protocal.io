@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>protocols.io Assistant</title>
+  <title>Protocols Assistant</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -545,7 +545,21 @@
 <body>
 
 <header>
-  <h1>protocols.io Assistant</h1>
+  <h1>Protocols Assistant</h1>
+  <select id="provider-select" style="padding: 6px 12px; border: 1px solid #d0d5e8; border-radius: 6px; font-size: 13px; cursor: pointer;">
+    <option value="claude" selected>Claude (Sonnet)</option>
+    <option value="openai">OpenAI (gpt-4o-mini)</option>
+    <option value="gemini">Gemini (Flash)</option>
+    <option value="ollama">Local (Ollama)</option>
+  </select>
+  <label style="font-size: 12px; color: #666; display: flex; align-items: center; gap: 5px;">
+    Per source
+    <select id="per-source-select" style="padding: 6px 10px; border: 1px solid #d0d5e8; border-radius: 6px; font-size: 13px; cursor: pointer;">
+      <option value="3">3</option>
+      <option value="5" selected>5</option>
+      <option value="10">10</option>
+    </select>
+  </label>
   <span class="badge" id="index-badge">Loading index...</span>
 </header>
 
@@ -600,6 +614,9 @@
   let pendingSearchConfirmed = false;
   let pendingSelectedSearchQuery = '';
   let pendingSearchAll = false;
+  // True after the assistant asks a clarification — the next message is its answer,
+  // so the backend should refine (not reset) the current experiment profile.
+  let awaitingClarificationAnswer = false;
 
   // -------------------------------------------------------------------------
   // Startup: health check and protocol count
@@ -711,6 +728,7 @@
     pendingSelectedSearchQuery = '';
     pendingSearchAll = false;
     skipClarification = false;
+    awaitingClarificationAnswer = false;
   }
 
   function renderExperimentProfile(profile, intent) {
@@ -906,6 +924,9 @@
     // Capture the flag for this request, then reset it
     const skipThisTime = skipClarification;
     skipClarification = false;
+    // If the assistant just asked a clarification, this message answers it.
+    const isClarificationAnswer = awaitingClarificationAnswer;
+    awaitingClarificationAnswer = false;
     const conversationForRequest = currentExperimentQuery || null;
     const searchConfirmed = pendingSearchConfirmed;
     const selectedSearchQuery = pendingSelectedSearchQuery || query;
@@ -930,6 +951,11 @@
     `);
 
     try {
+      const providerSelect = document.getElementById('provider-select');
+      const selectedProvider = providerSelect ? providerSelect.value : null;
+      const perSourceSelect = document.getElementById('per-source-select');
+      const resultsPerProvider = perSourceSelect ? parseInt(perSourceSelect.value, 10) : 5;
+
       const resp = await fetch(`${BACKEND}/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -945,6 +971,9 @@
           selected_search_query: selectedSearchQuery,
           search_all: searchAll,
           candidate_search_queries: candidateQueriesForRequest,
+          is_clarification_answer: isClarificationAnswer,
+          provider: selectedProvider || null,
+          results_per_provider: resultsPerProvider,
         }),
       });
 
@@ -983,6 +1012,9 @@
       // -- Clarification needed --
       if (data.intent === 'clarification') {
         latestCandidateQueries = [];
+        // The user's next message answers this clarification — flag it so the
+        // backend refines the profile instead of treating it as a new topic.
+        awaitingClarificationAnswer = true;
         appendMessage('assistant', `
           <div class="bubble">
             <div class="clarification-bubble">
@@ -1011,6 +1043,14 @@
       lastSearchQuery = data.search_query || query;
 
       let html = '<div class="bubble">';
+
+      // Which LLM produced these results (provider + model).
+      if (data.llm_model) {
+        html += `<div style="font-size:11px;color:#8a8f9c;margin-bottom:10px;">
+          🧠 Model: <strong style="color:#5e35b1;">${escapeHtml(data.llm_model)}</strong>
+          <span style="color:#aab;">(${escapeHtml(data.llm_provider || '')})</span>
+        </div>`;
+      }
 
       html += renderExperimentProfile(data.experiment_profile, data.experiment_intent);
 
@@ -1041,10 +1081,13 @@
 
       // Protocol result cards
       html += '<div class="results-grid" style="margin-top:12px;">';
-      const maxScore = data.results[0]?.profile_score || data.results[0]?.combined_score || data.results[0]?.score || 1;
+      // Blended lists mix protocols.io + PubMed — use the unified blend_score for a
+      // comparable bar across both sources, falling back to legacy scores.
+      const scoreOf = (r) => r.blend_score ?? r.profile_score ?? r.combined_score ?? r.score ?? 0;
+      const maxScore = Math.max(1e-6, ...data.results.map(scoreOf));
 
       data.results.forEach((r, i) => {
-        const displayScore = r.profile_score ?? r.combined_score ?? r.score ?? 0;
+        const displayScore = scoreOf(r);
         const scorePercent = Math.round((displayScore / maxScore) * 100);
         const authorsText = (r.authors || []).slice(0, 2).join(', ')
           + (r.authors && r.authors.length > 2 ? ' et al.' : '');
@@ -1064,10 +1107,15 @@
         const reqBadge = r.required_terms && r.required_terms.length
           ? `<span class="tag" style="background:#f3e5f5;color:#6a1b9a;">must: ${r.required_terms.join(' + ')}</span>`
           : '';
+        // Source badge: distinguish PubMed literature from protocols.io protocols.
+        const isPubmed = r.source === 'pubmed';
+        const sourceBadge = isPubmed
+          ? `<span class="tag" style="background:#e3f2fd;color:#1565c0;">PubMed</span>`
+          : `<span class="tag" style="background:#ede7f6;color:#5e35b1;">protocols.io</span>`;
 
         html += `
           <div class="protocol-card">
-            <div class="rank">Match #${i + 1}</div>
+            <div class="rank">Match #${i + 1} ${sourceBadge}</div>
             <div class="title">
               <a href="${escapeHtml(link)}" target="_blank" rel="noopener">${escapeHtml(r.title || 'Untitled Protocol')}</a>
             </div>
