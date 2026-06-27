@@ -1,5 +1,5 @@
 from fastapi import FastAPI, BackgroundTasks, HTTPException, UploadFile, Query, Form, File
-from fastapi.responses import Response
+from fastapi.responses import Response, RedirectResponse
 from starlette.responses import JSONResponse
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -1241,15 +1241,8 @@ async def chat(req: ChatRequest):
 
 @app.get("/")
 async def root():
-    return {
-        "message": "Local Ollama RAG backend is running.",
-        "routes": [
-            "/health",
-            "/chat",
-            "/sse",
-            "/process_local_rag_analysis",
-        ],
-    }
+    # Open the chat UI on the bare URL instead of showing API JSON.
+    return RedirectResponse(url="/chat.html")
 
 
 @app.get("/health")
