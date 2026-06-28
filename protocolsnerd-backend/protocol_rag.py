@@ -514,35 +514,34 @@ def _expand_query_with_llm(query: str) -> List[str]:
 
 def expand_query(query: str) -> List[str]:
     """
-    Generate up to 10 related search queries ordered strict → loose.
+    Generate 3 search query variants: Initial (original), Level 1 (full), Level 2 (stripped).
 
-    Combines two strategies:
-    1. Strict-to-loose ordering (original → stripped → pairs → individual terms)
-    2. Synonym/reagent expansion (same concept, different vocabulary)
+    Levels:
+    1. Initial: Original query as-is
+    2. Level 1: Full with all core terms
+    3. Level 2: Stripped query (stop words removed for tighter phrase match)
 
-    The original query is always first. Stricter queries come before looser ones
-    so the relevance filter and frequency bonus favour focused matches.
+    This keeps queries at strictness levels: full → stripped → pairs.
+    Returns 3 variants per query; for 5 candidate queries = 15 total probes.
     """
     # Start with strict-to-loose structural variants
     strict_queries = _generate_strict_to_loose_queries(query)
 
-    # Add synonym/reagent variants using local LLM or rule-based expansion
-    if llm_client.is_available():
-        expanded = _expand_query_with_llm(query)
-    else:
-        expanded = _expand_query_rule_based(query)
+    # Keep Initial (original), Level 1 (full), and Level 2 (stripped)
+    # Level 0/Initial: queries[0], Level 1: queries[1], Level 2: queries[2] if exists, else queries[1]
+    result = []
+    if len(strict_queries) > 0:
+        result.append(strict_queries[0])  # Initial/Level 1: original full query
+    if len(strict_queries) > 1:
+        result.append(strict_queries[1])  # Level 2: stripped (stop words removed)
+    if len(strict_queries) > 2:
+        result.append(strict_queries[2])  # Level 3: pairs of core terms
 
-    # Merge: strict queries first, then synonym variants (no duplicates)
-    seen: set = set()
-    merged: List[str] = []
-    for q in strict_queries + expanded:
-        if q not in seen:
-            seen.add(q)
-            merged.append(q)
-        if len(merged) >= 10:
-            break
+    # Ensure we always return at least 3 variants (fallback to repeating if needed)
+    while len(result) < 3 and len(result) > 0:
+        result.append(result[-1])  # Repeat last variant if we have fewer than 3
 
-    return merged
+    return result if result else [query]
 
 
 # ---------------------------------------------------------------------------

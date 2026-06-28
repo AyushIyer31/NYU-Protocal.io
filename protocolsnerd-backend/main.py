@@ -170,11 +170,11 @@ class ChatRequest(BaseModel):
 
 def run_live_expansion_search(query: str, top_k: int, profile: Optional[Dict[str, Any]] = None) -> Dict[str, Any]:
     """
-    Concept-expansion search against the live protocols.io API.
+    Live protocols.io search using 3 query variants per LLM query (Initial + Level 1 + Level 2).
+    For 5 LLM candidate queries: 5 × 3 variants = 15 total parallel probes.
 
-    extract concepts -> expand each with grounded synonyms (NCBI/Europe PMC,
-    Ollama/static fallback) -> fire short probes -> merge -> multi-signal re-rank.
-    Returns results plus the intermediate concepts/expansions/probes for display.
+    expand_query -> returns 3 variants per query -> multi_probe_search (parallel) -> merge -> re-rank.
+    Returns results plus intermediate variants and timing for display.
     """
     concepts = extract_concepts(query)
     expansions = expand_concepts(concepts, use_external=True)
