@@ -864,22 +864,24 @@ async def chat(req: ChatRequest):
 
     total_indexed = len(PROTOCOL_INDEX["protocols"]) if PROTOCOL_INDEX else 0
 
-    rule_intent = detect_experiment_intent(profile_source_query)
-    rule_profile = build_experiment_profile(
-        profile_source_query,
-        previous_profile=req.experiment_profile,
-    )
     llm_plan: Dict[str, Any] = {}
+    rule_intent = {}
+    rule_profile = {}
+
     # The field the user is answering (the question shown last turn). Passed to
     # the planner so a clarification answer lands in the RIGHT field instead of
     # being guessed (e.g. "phenotype" -> readout_assay, not organism).
     pending_field = None
     if req.is_clarification_answer and req.experiment_profile:
         try:
-            _pending = next_clarification(req.experiment_profile, rule_intent)
+            # Need rule_intent for next_clarification, so extract it first
+            temp_intent = detect_experiment_intent(profile_source_query)
+            _pending = next_clarification(req.experiment_profile, temp_intent)
             pending_field = (_pending or {}).get("field")
         except Exception:
             pending_field = None
+
+    # LLM-first approach: try LLM, fall back to rule-based on failure
     if not req.search_confirmed and llm_is_available():
         llm_plan = await loop.run_in_executor(
             executor,
@@ -891,13 +893,22 @@ async def chat(req: ChatRequest):
             ),
         )
 
-    experiment_intent = _normalize_intent(llm_plan, rule_intent, profile_source_query)
-    if has_active_experiment_context and experiment_intent.get("intent") == "chitchat":
+    # If LLM succeeded, use LLM results; otherwise fall back to rule-based
+    if llm_plan and llm_plan.get("intent_family"):
+        # LLM succeeded: use LLM results as primary
+        logging.debug(f"Using LLM profile extraction for query: {query[:60]}...")
+        experiment_intent = _normalize_intent(llm_plan, {}, profile_source_query)
+        experiment_profile = llm_plan.get("experiment_profile", {})
+    else:
+        # LLM failed or not available: use rule-based
+        logging.debug(f"Falling back to rule-based profile extraction for query: {query[:60]}...")
+        rule_intent = detect_experiment_intent(profile_source_query)
+        rule_profile = build_experiment_profile(
+            profile_source_query,
+            previous_profile=req.experiment_profile,
+        )
         experiment_intent = rule_intent
-    experiment_profile = merge_profiles(
-        llm_plan.get("experiment_profile") if llm_plan else None,
-        rule_profile,
-    )
+        experiment_profile = rule_profile
     experiment_intent, experiment_profile = validate_biology_profile(
         profile_source_query,
         experiment_intent,
