@@ -1195,6 +1195,10 @@ async def chat(req: ChatRequest):
         pubmed_results = []
     results = blend_results(pubmed_query, protocols_top, pubmed_results)
 
+    # Apply profile ranking to ALL results (protocols.io + PubMed) to add why_it_matches explanations.
+    if experiment_profile:
+        results = apply_profile_ranking(experiment_profile, results, top_k=len(results))
+
     # Fetch full text + extract the Methods section for the PubMed papers that
     # actually surfaced (bounded by per_provider), in parallel.
     surfaced_pubmed = [r for r in results if r.get("source") == "pubmed"]
