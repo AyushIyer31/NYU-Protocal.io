@@ -553,6 +553,13 @@
     <option value="ollama">Local (Ollama)</option>
   </select>
   <label style="font-size: 12px; color: #666; display: flex; align-items: center; gap: 5px;">
+    Search Mode
+    <select id="search-mode-select" style="padding: 6px 10px; border: 1px solid #d0d5e8; border-radius: 6px; font-size: 13px; cursor: pointer;">
+      <option value="local" selected>Local RAG (Fast)</option>
+      <option value="live">Live API (Comprehensive)</option>
+    </select>
+  </label>
+  <label style="font-size: 12px; color: #666; display: flex; align-items: center; gap: 5px;">
     Per source
     <select id="per-source-select" style="padding: 6px 10px; border: 1px solid #d0d5e8; border-radius: 6px; font-size: 13px; cursor: pointer;">
       <option value="3">3</option>
@@ -574,6 +581,9 @@
       <button onclick="useExample(this)">CRISPR gene editing in mammalian cells</button>
       <button onclick="useExample(this)">arabidopsis transformation protocol</button>
       <button onclick="useExample(this)">cell viability assay</button>
+      <button onclick="useExample(this)">Find protocols that can allow in-planta tests in which genes are modified.</button>
+      <button onclick="useExample(this)">Find protocols that allow more than one transcription factor to be modified at the same time for mice.</button>
+      <button onclick="useExample(this)">Find protocols that test for drought tolerance in Rice.</button>
     </div>
   </div>
 </div>
@@ -818,6 +828,9 @@
           </button>
         `;
         }).join('')}
+        <button class="quick-option-btn" style="background-color: #f0f0f0; color: #666;" onclick="sendQuickAnswer('not sure')">
+          Skip
+        </button>
       </div>
       <div class="quick-options-hint">Others: please specify in the search box</div>
     `;
@@ -953,6 +966,8 @@
     try {
       const providerSelect = document.getElementById('provider-select');
       const selectedProvider = providerSelect ? providerSelect.value : null;
+      const searchModeSelect = document.getElementById('search-mode-select');
+      const selectedSearchMode = searchModeSelect ? searchModeSelect.value : 'local';
       const perSourceSelect = document.getElementById('per-source-select');
       const resultsPerProvider = perSourceSelect ? parseInt(perSourceSelect.value, 10) : 5;
 
@@ -964,7 +979,7 @@
           top_k: 5,
           explain: true,
           skip_clarification: skipThisTime,
-          search_mode: 'local',
+          search_mode: selectedSearchMode,
           experiment_profile: experimentProfile,
           conversation_query: conversationForRequest,
           search_confirmed: searchConfirmed,

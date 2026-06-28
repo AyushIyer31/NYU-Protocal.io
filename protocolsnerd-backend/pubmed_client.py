@@ -130,6 +130,8 @@ def search_pubmed(query: str, retmax: int = 5) -> List[Dict[str, Any]]:
     title, abstract (as `description`), authors, doi, url, pmid, source.
     Returns [] on any failure (caller degrades to protocols.io-only).
     """
+    import time
+    t_start = time.time()
     query = _sanitize_for_pubmed(query or "")
     if not query:
         return []
@@ -141,6 +143,8 @@ def search_pubmed(query: str, retmax: int = 5) -> List[Dict[str, Any]]:
     data = _http_json(esearch)
     pmids = (((data or {}).get("esearchresult") or {}).get("idlist")) or []
     if not pmids:
+        t_end = time.time()
+        log.info(f"PubMed search (no results): {t_end - t_start:.2f}s")
         return []
 
     efetch = (
@@ -149,8 +153,14 @@ def search_pubmed(query: str, retmax: int = 5) -> List[Dict[str, Any]]:
     )
     xml = _http_text(efetch)
     if not xml:
+        t_end = time.time()
+        log.info(f"PubMed search (fetch failed): {t_end - t_start:.2f}s")
         return []
-    return _parse_pubmed_xml(xml)
+
+    results = _parse_pubmed_xml(xml)
+    t_end = time.time()
+    log.info(f"PubMed search: {len(results)} results in {t_end - t_start:.2f}s")
+    return results
 
 
 def _parse_pubmed_xml(xml: str) -> List[Dict[str, Any]]:
