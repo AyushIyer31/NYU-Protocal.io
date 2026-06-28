@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Protocols Assistant — Architecture, Design, &amp; LLM Usage Report</title>
+<style>
+  :root {
+    --indigo: #4361ee;
+    --purple: #6d28d9;
+    --ink: #15182b;
+    --muted: #5b6478;
+    --line: #e4e7ee;
+    --bg: #f4f6fc;
+    --card: #ffffff;
+    --pubmed: #1565c0;
+    --pio: #6d28d9;
+    --llm: #ec4899;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 0 22px 80px; }
+
+  /* ---------- hero ---------- */
+  header.hero {
+    background: linear-gradient(135deg, #3b4fd6 0%, #7c3aed 55%, #9333ea 100%);
+    color: #ffffff;
+    padding: 56px 22px 50px;
+  }
+  header.hero .inner { max-width: 1000px; margin: 0 auto; }
+  header.hero .eyebrow {
+    text-transform: uppercase; letter-spacing: 0.16em; font-size: 12px;
+    color: #e9e3ff; font-weight: 700;
+  }
+  header.hero h1 { font-size: 36px; font-weight: 800; margin: 10px 0 8px; color:#fff; line-height:1.15; }
+  header.hero p.sub { font-size: 16.5px; color: #f1edff; max-width: 760px; }
+  header.hero .meta { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 10px; align-items:center; }
+  header.hero .chip {
+    background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.32);
+    border-radius: 20px; padding: 6px 14px; font-size: 13px; font-weight: 600; color:#fff;
+  }
+  header.hero a.cta {
+    background: #ffffff; color: #6d28d9; border-radius: 20px; padding: 7px 18px;
+    font-size: 13.5px; font-weight: 800; text-decoration: none; border: none;
+  }
+  header.hero a.cta:hover { background: #f3eaff; }
+
+  /* ---------- sections ---------- */
+  section { margin-top: 44px; }
+  h2 {
+    font-size: 23px; font-weight: 800; color: var(--ink);
+    display: flex; align-items: center; gap: 10px; margin-bottom: 18px;
+  }
+  h2 .ic {
+    width: 34px; height: 34px; border-radius: 9px; display:inline-flex;
+    align-items:center; justify-content:center; font-size: 18px;
+    background: #ece8fe; color: var(--purple);
+  }
+  h2 .bar { flex: 1; height: 3px; background: linear-gradient(90deg, var(--purple), transparent); border-radius: 3px; }
+  h3 { font-size: 15.5px; font-weight: 800; color: var(--purple); margin: 14px 0 6px; }
+  p { margin-bottom: 12px; color: #2b3040; }
+  .lead { font-size: 16px; color:#272c3d; }
+  strong { color: var(--ink); }
+  code {
+    background: #eceffa; color: #3a3f60; border-radius: 5px;
+    padding: 1px 6px; font-size: 12.5px; font-family: "SF Mono", Menlo, monospace;
+  }
+  .muted { color: var(--muted); }
+
+  /* ---------- stat cards ---------- */
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(155px,1fr)); gap: 14px; }
+  .stat {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 18px 16px 15px; border-top: 4px solid var(--indigo);
+  }
+  .stat:nth-child(2){ border-top-color:#0ea5e9 } .stat:nth-child(3){ border-top-color:#10b981 }
+  .stat:nth-child(4){ border-top-color:#f59e0b } .stat:nth-child(5){ border-top-color:#ec4899 }
+  .stat:nth-child(6){ border-top-color:#8b5cf6 }
+  .stat .num { font-size: 27px; font-weight: 800; color: var(--ink); }
+  .stat .lbl { font-size: 12.5px; color: var(--muted); margin-top: 3px; }
+
+  /* ---------- horizontal flow ---------- */
+  .flow { display: flex; flex-wrap: wrap; align-items: stretch; gap: 6px; }
+  .fstep {
+    flex: 1 1 138px; min-width: 138px; border-radius: 14px; padding: 14px 13px; color: #ffffff;
+    display: flex; flex-direction: column; gap: 6px; box-shadow: 0 3px 10px rgba(30,30,60,0.10);
+  }
+  .fstep .badge {
+    width: 26px; height: 26px; border-radius: 50%; background: rgba(255,255,255,0.28);
+    color: #fff; font-weight: 800; font-size: 13px; display:flex; align-items:center; justify-content:center;
+  }
+  .fstep .lab { font-weight: 800; font-size: 13.5px; color:#fff; }
+  .fstep .dsc { font-size: 12px; color: rgba(255,255,255,0.92); line-height: 1.45; }
+  .farrow { display: flex; align-items: center; justify-content:center; color: #b8b0e8; font-size: 22px; font-weight: 800; padding: 0 2px; }
+  .c1{background:#4361ee} .c2{background:#0ea5e9} .c3{background:#8b5cf6}
+  .c4{background:#f59e0b} .c5{background:#10b981} .c6{background:#ec4899}
+
+  /* ---------- architecture layers ---------- */
+  .arch { display: grid; grid-template-columns: 1fr; gap: 12px; }
+  .layer { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 15px 18px; border-left: 5px solid var(--purple); }
+  .layer.a2{ border-left-color:#0ea5e9 } .layer.a3{ border-left-color:#10b981 }
+  .layer.a4{ border-left-color:#f59e0b } .layer.a5{ border-left-color:#ec4899 }
+  .layer .h { font-weight: 800; font-size: 12.5px; color: var(--ink); margin-bottom: 9px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .pills { display: flex; flex-wrap: wrap; gap: 8px; }
+  .pill { background: #eef1fb; border: 1px solid #dde2f2; border-radius: 9px; padding: 5px 11px; font-size: 12.5px; color: #39406a; font-weight: 600; }
+  .pill.api { background: #e3f2fd; border-color: #c4e2fb; color: var(--pubmed); }
+  .pill.llm { background: #fce7f3; border-color: #fbcfe8; color: #be185d; }
+
+  /* ---------- table ---------- */
+  table { width: 100%; border-collapse: collapse; background: var(--card);
+    border: 1px solid var(--line); border-radius: 14px; overflow: hidden; font-size: 13.5px; }
+  th, td { text-align: left; padding: 12px 15px; border-bottom: 1px solid var(--line); vertical-align: top; color:#2b3040; }
+  th { background: #efeefe; font-weight: 800; color: #2a2350; }
+  tr:last-child td { border-bottom: none; }
+
+  .tag { display:inline-block; border-radius: 8px; padding: 2px 9px; font-size: 11.5px; font-weight: 700; }
+  .tag.pubmed { background: #e3f2fd; color: var(--pubmed); }
+  .tag.pio { background: #ede7f6; color: var(--pio); }
+  .tag.llm { background: #fce7f3; color: var(--llm); }
+
+  .legend { display:flex; gap:14px; flex-wrap:wrap; margin: 6px 0 14px; }
+  .legend span { font-size:12.5px; color:#3a3f60; display:flex; align-items:center; gap:7px; font-weight:600; }
+  .dot { width:12px;height:12px;border-radius:4px;display:inline-block }
+
+  .note { border-left: 4px solid #f59e0b; background: #fff8ec; color: #6b4a05; border-radius: 0 12px 12px 0; padding: 13px 16px; font-size: 13.5px; margin: 12px 0; }
+  .callout { border-left: 4px solid #10b981; background: #effaf3; color: #14532d; border-radius: 0 12px 12px 0; padding: 13px 16px; font-size: 13.5px; margin: 12px 0; }
+  .highlight { border-left: 4px solid #ec4899; background: #fef2f7; color: #831843; border-radius: 0 12px 12px 0; padding: 13px 16px; font-size: 13.5px; margin: 12px 0; }
+
+  ul.clean { list-style: none; }
+  ul.clean li { padding: 5px 0 5px 22px; position: relative; font-size: 14px; color:#2b3040; }
+  ul.clean li::before { content: "▸"; color: var(--indigo); position: absolute; left: 4px; }
+
+  .formula {
+    background: #eef1fb; color: #2b3040; border-radius: 12px; padding: 16px 20px;
+    font-family: "SF Mono", Menlo, monospace; font-size: 14px; margin: 12px 0; overflow-x:auto;
+    border: 1px solid #d7dcf0;
+  }
+  .formula .k { color: #0a8f50; font-weight: 800; }
+  .formula .c { color: #7a82a0; }
+
+  .compact-table { font-size: 12.5px; }
+  .compact-table th, .compact-table td { padding: 8px 12px; }
+
+  footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; text-align: center; }
+  footer a { color: var(--purple); }
+  @media print {
+    header.hero, .fstep, .formula, .stat { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .flow { gap: 4px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="inner">
+    <div class="eyebrow">NYU · Protocols.io Project</div>
+    <h1>Protocols Assistant — Architecture, Design, &amp; LLM Usage</h1>
+    <p class="sub">A conversational research assistant powered by Claude/Ollama LLM for intent extraction and explanation, combined with rule-based ranking for deterministic, transparent protocol recommendations.</p>
+    <div class="meta">
+      <span class="chip">Branch: v4</span>
+      <span class="chip">Deployed on Google Cloud Run</span>
+      <span class="chip">June 2026</span>
+      <a class="cta" href="https://protocolsnerd-9518756006.us-central1.run.app/chat.html" target="_blank" rel="noopener">▶ Live demo</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- 1 -->
+  <section id="summary">
+    <h2><span class="ic">📋</span> 1 · Executive Summary <span class="bar"></span></h2>
+    <p class="lead">
+      A system that lets scientists describe an experiment in everyday language and receive the most relevant
+      step-by-step protocols, blended with supporting literature. Guided conversation extracts a
+      <strong>structured experiment profile</strong> (organism, technique, delivery method, readout, …), driving search across
+      <strong>22,670 protocols.io protocols</strong> and live <strong>PubMed</strong>. Results merged using
+      <strong>100% rule-based ranking</strong> (deterministic, transparent, cost-effective). LLM used strategically for 3 tasks only:
+      intent extraction, candidate query generation, and result explanation (optional). Deployed as single container on Google Cloud Run.
+    </p>
+  </section>
+
+  <!-- 2 -->
+  <section id="stats">
+    <h2><span class="ic">📊</span> 2 · Key Numbers <span class="bar"></span></h2>
+    <div class="stats">
+      <div class="stat"><div class="num">22,670</div><div class="lbl">protocols.io protocols indexed</div></div>
+      <div class="stat"><div class="num">20,213</div><div class="lbl">carry full step-by-step text (89%)</div></div>
+      <div class="stat"><div class="num">2</div><div class="lbl">sources blended per search</div></div>
+      <div class="stat"><div class="num">~396 MB</div><div class="lbl">prebuilt TF-IDF index</div></div>
+      <div class="stat"><div class="num">2-4+</div><div class="lbl">LLM calls before search (depends on clarifications)</div></div>
+      <div class="stat"><div class="num">100%</div><div class="lbl">rule-based ranking (no LLM)</div></div>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section id="architecture">
+    <h2><span class="ic">🏗️</span> 3 · High-Level Architecture <span class="bar"></span></h2>
+    <p>
+      Single container on Cloud Run serves both FastAPI backend and static chat UI from same origin — one URL, no CORS.
+      Protocol corpus and prebuilt TF-IDF index baked into image at build time, ready instantly at startup.
+    </p>
+    <div class="arch">
+      <div class="layer">
+        <div class="h">🖥️ Frontend</div>
+        <div class="pills">
+          <span class="pill">chat.html — UI</span>
+          <span class="pill">provider selector</span>
+          <span class="pill">result control</span>
+          <span class="pill">source badges</span>
+        </div>
+      </div>
+      <div class="layer a2">
+        <div class="h">⚙️ Backend — FastAPI (Python)</div>
+        <div class="pills">
+          <span class="pill">main.py — orchestration</span>
+          <span class="pill">protocol_rag.py — TF-IDF search</span>
+          <span class="pill">protocol_ranker.py — scoring</span>
+          <span class="pill">pubmed_client.py — PubMed</span>
+          <span class="pill">field_ranking.py — closeness</span>
+          <span class="pill llm">claude_client.py — LLM</span>
+        </div>
+      </div>
+      <div class="layer a3">
+        <div class="h">🗄️ Data</div>
+        <div class="pills">
+          <span class="pill">22,670 protocol JSON</span>
+          <span class="pill">TF-IDF index (.pkl)</span>
+        </div>
+      </div>
+      <div class="layer a4">
+        <div class="h">🌐 External</div>
+        <div class="pills">
+          <span class="pill api">protocols.io API</span>
+          <span class="pill api">NCBI E-utilities (PubMed)</span>
+          <span class="pill api">Europe PMC, Unpaywall</span>
+          <span class="pill llm">Claude or Ollama LLM</span>
+        </div>
+      </div>
+      <div class="layer a5">
+        <div class="h">☁️ Deployment</div>
+        <div class="pills">
+          <span class="pill">Google Cloud Run</span>
+          <span class="pill">Docker single image</span>
+          <span class="pill">2 GB RAM · 2 vCPU</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section id="flow">
+    <h2><span class="ic">🔄</span> 4 · Conversational Flow <span class="bar"></span></h2>
+    <p>
+      Extract intent through guided conversation, build query from structured profile. Deterministic search runs only when profile ready.
+    </p>
+    <div class="flow">
+      <div class="fstep c1">
+        <span class="badge">1</span>
+        <span class="lab">Request</span>
+        <span class="dsc">Plain-language experiment.</span>
+      </div>
+      <div class="farrow">→</div>
+      <div class="fstep c2">
+        <span class="badge">2</span>
+        <span class="lab">Profile</span>
+        <span class="dsc"><strong>LLM:</strong> extract intent + profile.</span>
+      </div>
+      <div class="farrow">→</div>
+      <div class="fstep c3">
+        <span class="badge">3</span>
+        <span class="lab">Clarify</span>
+        <span class="dsc">One field; AND/OR/LIKE.</span>
+      </div>
+      <div class="farrow">→</div>
+      <div class="fstep c4">
+        <span class="badge">4</span>
+        <span class="lab">Queries</span>
+        <span class="dsc"><strong>LLM:</strong> 5 candidates.</span>
+      </div>
+      <div class="farrow">→</div>
+      <div class="fstep c5">
+        <span class="badge">5</span>
+        <span class="lab">Blend</span>
+        <span class="dsc">protocols.io + PubMed.</span>
+      </div>
+      <div class="farrow">→</div>
+      <div class="fstep c6">
+        <span class="badge">6</span>
+        <span class="lab">Explain</span>
+        <span class="dsc"><strong>LLM (opt):</strong> rationale.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section id="llm-usage">
+    <h2><span class="ic">🤖</span> 5 · LLM Usage Strategy <span class="bar"></span></h2>
+    <p class="lead">
+      LLM is called sequentially through the conversation until search is confirmed. Ranking stays 100% rule-based for determinism and cost.
+    </p>
+
+    <h3>LLM Call Sequence (Timeline)</h3>
+    <table class="compact-table">
+      <thead>
+        <tr>
+          <th>Stage</th>
+          <th>Function</th>
+          <th>When</th>
+          <th>Latency</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="tag llm">A</span></td>
+          <td><code>analyze_experiment_request()</code></td>
+          <td>Initial query + each clarification answer (until profile complete)</td>
+          <td>~5s per call</td>
+        </tr>
+        <tr>
+          <td><span class="tag llm">B</span></td>
+          <td><code>generate_natural_search_queries()</code></td>
+          <td>After all clarifications done + profile complete</td>
+          <td>~5s</td>
+        </tr>
+        <tr>
+          <td><span class="tag llm">C</span></td>
+          <td><code>explain_matches()</code></td>
+          <td>After search results returned (if user requests explanation)</td>
+          <td>~0.5s</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Detailed Flow</h3>
+    <p><strong>1. Initial query:</strong> Call A runs once → extracts intent, builds profile, checks for clarifications needed</p>
+    <p><strong>2. Clarification loop:</strong> Call A runs again for EACH user answer → re-analyzes with updated context → checks if more clarifications needed</p>
+    <p><strong>3. When profile complete:</strong> Call B runs once → generates 5 candidate search queries</p>
+    <p><strong>4. User selects query:</strong> search_confirmed=true → LLM stops running → search executes (no LLM)</p>
+    <p><strong>5. After results:</strong> Call C runs if user requests explanation (optional)</p>
+
+    <h3>Total LLM Cost</h3>
+    <ul class="clean">
+      <li>0 clarifications: 2 calls (A + B) = ~10 seconds before search starts</li>
+      <li>2 clarifications: 4 calls (A×3 + B) = ~20 seconds before search starts</li>
+      <li>Then search runs (no LLM, parallel 15 variants)</li>
+    </ul>
+
+    <h3>What Does NOT Use LLM</h3>
+    <ul class="clean">
+      <li><strong>Query expansion:</strong> Rule-based (3 variants per query)</li>
+      <li><strong>Result ranking:</strong> 100% rule-based weighted signals</li>
+      <li><strong>Protocols.io/PubMed search:</strong> Direct API calls</li>
+      <li><strong>Local TF-IDF search:</strong> Statistical algorithm</li>
+      <li><strong>Result blending:</strong> Title-weighted merge</li>
+    </ul>
+
+    <div class="highlight">
+      <strong>Design:</strong> LLM-first for profile extraction (NLU strength). Rule-based for ranking (determinism, transparency, free). Search runs after profile is complete.
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section id="ranking-logic">
+    <h2><span class="ic">⚖️</span> 6 · Ranking Logic (Rule-Based) <span class="bar"></span></h2>
+    <p class="lead">
+      100% deterministic two-tier scoring using weighted signals. Same query always produces same ranking.
+    </p>
+
+    <h3>Tier 1: Query-Based (TF-IDF + Signals)</h3>
+    <div class="formula">
+      score = (title×0.25 + organism×0.20 + method×0.15 + desc×0.15 +
+      synonym×0.10 + freq_bonus×0.05 + coverage×0.10) × penalty
+    </div>
+    <p><span class="muted">Penalty = 0.1 if required molecule missing, else 1.0.</span></p>
+
+    <h3>Tier 2: Profile-Based Re-Ranking (if profile exists)</h3>
+    <div class="formula">
+      profile_score = base + (organism×2.4 + method×1.8 + expression×2.2 +
+      combined×3.2 + required_concept×2.8 + ...) × penalty
+    </div>
+
+    <div class="callout">
+      <strong>Why rule-based?</strong> Determinism (reproducible testing), transparency (explain exact score), speed (instant), cost (free).
+    </div>
+  </section>
+
+  <!-- 7 -->
+  <section id="search-flow">
+    <h2><span class="ic">🔍</span> 7 · Search &amp; Ranking Pipeline <span class="bar"></span></h2>
+
+    <h3>Query Variants (Rule-Based)</h3>
+    <p>Each query expanded into 3 variants: <strong>Initial</strong> (original), <strong>Level 1</strong> (full terms), <strong>Level 2</strong> (stripped).</p>
+    <p>Select 1 query = 3 variants. Select all 5 = 15 variants fired in parallel via <code>ThreadPoolExecutor(max_workers=8)</code>.</p>
+
+    <h3>Ranking Steps</h3>
+    <ol style="color: #2b3040; margin: 12px 0 12px 24px; font-size: 14px;">
+      <li><strong>Tier 1:</strong> Score by TF-IDF, organism, method, concept coverage, frequency.</li>
+      <li><strong>Tier 2:</strong> Re-score by profile field matches (if profile available).</li>
+      <li><strong>Filter:</strong> Remove severely off-target (penalty ≤ 0.4).</li>
+      <li><strong>Blend:</strong> Merge with PubMed using title-weighted ranking.</li>
+      <li><strong>Explain (opt):</strong> <strong>LLM Call #3</strong> generates explanation.</li>
+    </ol>
+  </section>
+
+  <!-- 8 -->
+  <section id="query-variants">
+    <h2><span class="ic">📤</span> 8 · Query Variant Strategy <span class="bar"></span></h2>
+
+    <table class="compact-table">
+      <thead>
+        <tr>
+          <th>Scenario</th>
+          <th>protocols.io</th>
+          <th>Local</th>
+          <th>PubMed</th>
+          <th>Latency</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Select 1</td>
+          <td>3 variants (parallel)</td>
+          <td>3 variants (TF-IDF)</td>
+          <td>1 core query</td>
+          <td>~2-3s</td>
+        </tr>
+        <tr>
+          <td>Search All (5)</td>
+          <td>15 variants (parallel)</td>
+          <td>15 variants (TF-IDF)</td>
+          <td>1 core query</td>
+          <td>~2-3s</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p><span class="muted">Parallelization keeps latency constant despite 5x more variants.</span></p>
+  </section>
+
+  <!-- 9 -->
+  <section id="summary-table">
+    <h2><span class="ic">📌</span> 9 · LLM vs Rule-Based Quick Reference <span class="bar"></span></h2>
+
+    <table class="compact-table">
+      <thead>
+        <tr>
+          <th>Task</th>
+          <th>Approach</th>
+          <th>LLM?</th>
+          <th>Why</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Extract experiment intent</td>
+          <td>analyze_experiment_request()</td>
+          <td>✓</td>
+          <td>NLU is LLM strength</td>
+        </tr>
+        <tr>
+          <td>Generate candidate queries</td>
+          <td>generate_natural_search_queries()</td>
+          <td>✓</td>
+          <td>Domain-aware generation</td>
+        </tr>
+        <tr>
+          <td>Expand query into variants</td>
+          <td>expand_query()</td>
+          <td>✗</td>
+          <td>Rule-based (fast, deterministic)</td>
+        </tr>
+        <tr>
+          <td>Score &amp; rank protocols</td>
+          <td>rank_protocols() + apply_profile_ranking()</td>
+          <td>✗</td>
+          <td>Determinism, transparency, cost</td>
+        </tr>
+        <tr>
+          <td>Blend sources</td>
+          <td>blend_results()</td>
+          <td>✗</td>
+          <td>Deterministic merge</td>
+        </tr>
+        <tr>
+          <td>Explain results</td>
+          <td>explain_matches()</td>
+          <td>✓</td>
+          <td>Natural language</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- 10 -->
+  <section id="performance">
+    <h2><span class="ic">⚡</span> 10 · Performance &amp; Cost <span class="bar"></span></h2>
+
+    <h3>Latency Breakdown (Search All)</h3>
+    <div class="formula">
+      Total ~2-3s = LLM intent (1-2s) + LLM queries (1-2s) + parallel_search (2-3s) + blend (&lt;0.1s)
+    </div>
+
+    <h3>Cost-Benefit</h3>
+    <ul class="clean">
+      <li><strong>LLM calls:</strong> 2-3 per search (Call #3 optional). Minimal API overhead.</li>
+      <li><strong>Rule-based ranking:</strong> Instant, free, repeatable (no model drift).</li>
+      <li><strong>Parallelization:</strong> 15 protocols.io queries in ~2-3s vs ~20-25s sequential.</li>
+      <li><strong>No hallucination:</strong> Ranking deterministic; LLM only for intent &amp; explanation.</li>
+    </ul>
+
+    <div class="callout">
+      <strong>Hybrid approach:</strong> Use LLM where it excels (NLU, NLG), keep ranking rule-based for reliability and cost.
+    </div>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <p>Generated June 2026 · Branch: v4 · <a href="https://github.com/anthropics/claude-code/issues">Report issues</a></p>
+  </footer>
+
+</div>
+
+</body>
+</html>
