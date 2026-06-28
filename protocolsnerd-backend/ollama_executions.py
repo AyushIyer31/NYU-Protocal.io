@@ -76,7 +76,7 @@ def active_provider(override: Optional[str] = None) -> str:
         return "ollama"
     if override:
         return _classify(override)
-    return _classify(os.getenv("LLM_PROVIDER", os.getenv("LLM", "ollama")).strip('"'))
+    return _classify(os.getenv("LLM_PROVIDER", os.getenv("LLM", "openai")).strip('"'))
 
 
 def _get_openai_model() -> str:
