@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Protocols Assistant — Architecture &amp; Design Report</title>
+<style>
+  :root {
+    --indigo: #4361ee;
+    --purple: #6d28d9;
+    --ink: #15182b;
+    --muted: #5b6478;
+    --line: #e4e7ee;
+    --bg: #f4f6fc;
+    --card: #ffffff;
+    --pubmed: #1565c0;
+    --pio: #6d28d9;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    line-height: 1.62;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 1000px; margin: 0 auto; padding: 0 22px 80px; }
+
+  /* ---------- hero ---------- */
+  header.hero {
+    background: linear-gradient(135deg, #3b4fd6 0%, #7c3aed 55%, #9333ea 100%);
+    color: #ffffff;
+    padding: 56px 22px 50px;
+  }
+  header.hero .inner { max-width: 1000px; margin: 0 auto; }
+  header.hero .eyebrow {
+    text-transform: uppercase; letter-spacing: 0.16em; font-size: 12px;
+    color: #e9e3ff; font-weight: 700;
+  }
+  header.hero h1 { font-size: 36px; font-weight: 800; margin: 10px 0 8px; color:#fff; line-height:1.15; }
+  header.hero p.sub { font-size: 16.5px; color: #f1edff; max-width: 760px; }
+  header.hero .meta { margin-top: 22px; display: flex; flex-wrap: wrap; gap: 10px; align-items:center; }
+  header.hero .chip {
+    background: rgba(255,255,255,0.18); border: 1px solid rgba(255,255,255,0.32);
+    border-radius: 20px; padding: 6px 14px; font-size: 13px; font-weight: 600; color:#fff;
+  }
+  header.hero a.cta {
+    background: #ffffff; color: #6d28d9; border-radius: 20px; padding: 7px 18px;
+    font-size: 13.5px; font-weight: 800; text-decoration: none; border: none;
+  }
+  header.hero a.cta:hover { background: #f3eaff; }
+
+  /* ---------- sections ---------- */
+  section { margin-top: 44px; }
+  h2 {
+    font-size: 23px; font-weight: 800; color: var(--ink);
+    display: flex; align-items: center; gap: 10px; margin-bottom: 18px;
+  }
+  h2 .ic {
+    width: 34px; height: 34px; border-radius: 9px; display:inline-flex;
+    align-items:center; justify-content:center; font-size: 18px;
+    background: #ece8fe; color: var(--purple);
+  }
+  h2 .bar { flex: 1; height: 3px; background: linear-gradient(90deg, var(--purple), transparent); border-radius: 3px; }
+  h3 { font-size: 15.5px; font-weight: 800; color: var(--purple); margin: 18px 0 6px; }
+  p { margin-bottom: 12px; color: #2b3040; }
+  .lead { font-size: 16px; color:#272c3d; }
+  strong { color: var(--ink); }
+  code {
+    background: #eceffa; color: #3a3f60; border-radius: 5px;
+    padding: 1px 6px; font-size: 12.5px; font-family: "SF Mono", Menlo, monospace;
+  }
+  .muted { color: var(--muted); }
+
+  /* ---------- stat cards ---------- */
+  .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(155px,1fr)); gap: 14px; }
+  .stat {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+    padding: 18px 16px 15px; border-top: 4px solid var(--indigo);
+  }
+  .stat:nth-child(2){ border-top-color:#0ea5e9 } .stat:nth-child(3){ border-top-color:#10b981 }
+  .stat:nth-child(4){ border-top-color:#f59e0b } .stat:nth-child(5){ border-top-color:#ec4899 }
+  .stat:nth-child(6){ border-top-color:#8b5cf6 }
+  .stat .num { font-size: 27px; font-weight: 800; color: var(--ink); }
+  .stat .lbl { font-size: 12.5px; color: var(--muted); margin-top: 3px; }
+
+  /* ---------- horizontal flow ---------- */
+  .flow { display: flex; flex-wrap: wrap; align-items: stretch; gap: 6px; }
+  .fstep {
+    flex: 1 1 138px; min-width: 138px; border-radius: 14px; padding: 14px 13px; color: #ffffff;
+    display: flex; flex-direction: column; gap: 6px; box-shadow: 0 3px 10px rgba(30,30,60,0.10);
+  }
+  .fstep .badge {
+    width: 26px; height: 26px; border-radius: 50%; background: rgba(255,255,255,0.28);
+    color: #fff; font-weight: 800; font-size: 13px; display:flex; align-items:center; justify-content:center;
+  }
+  .fstep .lab { font-weight: 800; font-size: 13.5px; color:#fff; }
+  .fstep .dsc { font-size: 12px; color: rgba(255,255,255,0.92); line-height: 1.45; }
+  .farrow { display: flex; align-items: center; justify-content:center; color: #b8b0e8; font-size: 22px; font-weight: 800; padding: 0 2px; }
+  .c1{background:#4361ee} .c2{background:#0ea5e9} .c3{background:#8b5cf6}
+  .c4{background:#f59e0b} .c5{background:#10b981} .c6{background:#ec4899}
+
+  /* ---------- architecture layers ---------- */
+  .arch { display: grid; grid-template-columns: 1fr; gap: 12px; }
+  .layer { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 15px 18px; border-left: 5px solid var(--purple); }
+  .layer.a2{ border-left-color:#0ea5e9 } .layer.a3{ border-left-color:#10b981 }
+  .layer.a4{ border-left-color:#f59e0b } .layer.a5{ border-left-color:#ec4899 }
+  .layer .h { font-weight: 800; font-size: 12.5px; color: var(--ink); margin-bottom: 9px; text-transform: uppercase; letter-spacing: 0.05em; }
+  .pills { display: flex; flex-wrap: wrap; gap: 8px; }
+  .pill { background: #eef1fb; border: 1px solid #dde2f2; border-radius: 9px; padding: 5px 11px; font-size: 12.5px; color: #39406a; font-weight: 600; }
+  .pill.api { background: #e3f2fd; border-color: #c4e2fb; color: var(--pubmed); }
+
+  /* ---------- table ---------- */
+  table { width: 100%; border-collapse: collapse; background: var(--card);
+    border: 1px solid var(--line); border-radius: 14px; overflow: hidden; font-size: 13.5px; }
+  th, td { text-align: left; padding: 12px 15px; border-bottom: 1px solid var(--line); vertical-align: top; color:#2b3040; }
+  th { background: #efeefe; font-weight: 800; color: #2a2350; }
+  tr:last-child td { border-bottom: none; }
+
+  .tag { display:inline-block; border-radius: 8px; padding: 2px 9px; font-size: 11.5px; font-weight: 700; }
+  .tag.pubmed { background: #e3f2fd; color: var(--pubmed); }
+  .tag.pio { background: #ede7f6; color: var(--pio); }
+
+  .legend { display:flex; gap:14px; flex-wrap:wrap; margin: 6px 0 14px; }
+  .legend span { font-size:12.5px; color:#3a3f60; display:flex; align-items:center; gap:7px; font-weight:600; }
+  .dot { width:12px;height:12px;border-radius:4px;display:inline-block }
+
+  .note { border-left: 4px solid #f59e0b; background: #fff8ec; color: #6b4a05; border-radius: 0 12px 12px 0; padding: 13px 16px; font-size: 13.5px; margin: 12px 0; }
+  .callout { border-left: 4px solid #10b981; background: #effaf3; color: #14532d; border-radius: 0 12px 12px 0; padding: 13px 16px; font-size: 13.5px; margin: 12px 0; }
+
+  ul.clean { list-style: none; }
+  ul.clean li { padding: 5px 0 5px 22px; position: relative; font-size: 14px; color:#2b3040; }
+  ul.clean li::before { content: "▸"; color: var(--indigo); position: absolute; left: 4px; }
+
+  .formula {
+    background: #eef1fb; color: #2b3040; border-radius: 12px; padding: 16px 20px;
+    font-family: "SF Mono", Menlo, monospace; font-size: 14px; margin: 12px 0; overflow-x:auto;
+    border: 1px solid #d7dcf0;
+  }
+  .formula .k { color: #0a8f50; font-weight: 800; }
+  .formula .c { color: #7a82a0; }
+
+  footer { margin-top: 56px; padding-top: 18px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px; text-align: center; }
+  footer a { color: var(--purple); }
+  @media print {
+    header.hero, .fstep, .formula, .stat { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    .flow { gap: 4px; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="inner">
+    <div class="eyebrow">NYU · Protocols.io Project</div>
+    <h1>Protocols Assistant — Architecture &amp; Design</h1>
+    <p class="sub">A conversational research assistant that turns a plain-language experiment description into a ranked, blended set of laboratory protocols and peer-reviewed literature.</p>
+    <div class="meta">
+      <span class="chip">Branch: v4</span>
+      <span class="chip">Deployed on Google Cloud Run</span>
+      <span class="chip">June 2026</span>
+      <a class="cta" href="https://protocolsnerd-9518756006.us-central1.run.app/chat.html" target="_blank" rel="noopener">▶ Live demo</a>
+    </div>
+  </div>
+</header>
+
+<div class="wrap">
+
+  <!-- 1 -->
+  <section id="summary">
+    <h2><span class="ic">📋</span> 1 · Executive Summary <span class="bar"></span></h2>
+    <p class="lead">
+      I built a system that lets a scientist describe an experiment in everyday language and receive the most relevant
+      step-by-step protocols, blended with supporting literature. A short guided conversation extracts a
+      <strong>structured experiment profile</strong> (organism, technique, delivery method, readout, …), which then
+      drives a search across <strong>two complementary sources</strong>: a local corpus of
+      <strong>22,670 protocols.io protocols</strong> and a live <strong>PubMed</strong> query. Results from both are
+      merged into one <strong>title-weighted, source-tagged</strong> ranked list. The entire application — backend,
+      conversational layer, and UI — runs as a single container on Google Cloud Run.
+    </p>
+  </section>
+
+  <!-- 2 -->
+  <section id="stats">
+    <h2><span class="ic">📊</span> 2 · Key Numbers <span class="bar"></span></h2>
+    <div class="stats">
+      <div class="stat"><div class="num">22,670</div><div class="lbl">protocols.io protocols indexed</div></div>
+      <div class="stat"><div class="num">20,213</div><div class="lbl">carry full step-by-step text (89%)</div></div>
+      <div class="stat"><div class="num">2</div><div class="lbl">sources blended per search</div></div>
+      <div class="stat"><div class="num">~396 MB</div><div class="lbl">prebuilt TF-IDF index</div></div>
+      <div class="stat"><div class="num">5 + 5</div><div class="lbl">default results per source</div></div>
+      <div class="stat"><div class="num">0.67 / 0.33</div><div class="lbl">title vs. body ranking weight</div></div>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section id="architecture">
+    <h2><span class="ic">🏗️</span> 3 · High-Level Architecture <span class="bar"></span></h2>
+    <p>
+      The system is deployed as a <strong>single container</strong> on Cloud Run that serves both the FastAPI backend
+      and the static chat UI from the same origin — one URL, no CORS or cross-service wiring. The protocol corpus and a
+      prebuilt search index are baked into the image at build time, so the service is ready the instant it starts.
+    </p>
+    <div class="arch">
+      <div class="layer">
+        <div class="h">🖥️ Frontend (served by the backend)</div>
+        <div class="pills">
+          <span class="pill">chat.html — chat UI</span>
+          <span class="pill">provider selector</span>
+          <span class="pill">per-source result control</span>
+          <span class="pill">source badges + model display</span>
+        </div>
+      </div>
+      <div class="layer a2">
+        <div class="h">⚙️ Backend — FastAPI (Python)</div>
+        <div class="pills">
+          <span class="pill">main.py — orchestration / chat</span>
+          <span class="pill">experiment_profile.py — clarifications</span>
+          <span class="pill">protocol_rag.py — TF-IDF search</span>
+          <span class="pill">field_ranking.py — closeness ranking</span>
+          <span class="pill">pubmed_client.py — PubMed retrieval</span>
+          <span class="pill">blend_ranking.py — title-weighted blend</span>
+          <span class="pill">query_operators.py — AND / OR / LIKE</span>
+          <span class="pill">claude_client.py — LLM planner</span>
+        </div>
+      </div>
+      <div class="layer a3">
+        <div class="h">🗄️ Data layer (in-image)</div>
+        <div class="pills">
+          <span class="pill">22,670 protocol JSON files</span>
+          <span class="pill">prebuilt TF-IDF index (.pkl)</span>
+        </div>
+      </div>
+      <div class="layer a4">
+        <div class="h">🌐 External services</div>
+        <div class="pills">
+          <span class="pill api">protocols.io API</span>
+          <span class="pill api">NCBI E-utilities (PubMed)</span>
+          <span class="pill api">Europe PMC</span>
+          <span class="pill api">Unpaywall</span>
+          <span class="pill api">LLM provider API</span>
+        </div>
+      </div>
+      <div class="layer a5">
+        <div class="h">☁️ Deployment</div>
+        <div class="pills">
+          <span class="pill">Google Cloud Run</span>
+          <span class="pill">Docker (single image)</span>
+          <span class="pill">2 GB RAM · 2 vCPU</span>
+          <span class="pill">secrets via env / Secret Manager</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 -->
+  <section id="flow">
+    <h2><span class="ic">🔄</span> 4 · Conversational Flow <span class="bar"></span></h2>
+    <p>
+      Rather than asking the scientist to write a perfect query, I extract intent through a short guided conversation,
+      then build the query from the structured profile. The deterministic search runs only once the profile is ready.
+    </p>
+    <div class="flow">
+      <div class="fstep c1">
+        <span class="badge">1</span>
+        <span class="lab">Request</span>
+        <span class="dsc">Plain-language experiment description.</span>
+      </div>
+      <div class="farrow">→</div>
+      <div class="fstep c2">
+        <span class="badge">2</span>
+        <span class="lab">Profile</span>
+        <span class="dsc">LLM planner extracts a structured experiment profile.</span>
+      </div>
+      <div class="farrow">→</div>
+      <div class="fstep c3">
+        <span class="badge">3</span>
+        <span class="lab">Clarify</span>
+        <span class="dsc">One field at a time; handles declines &amp; AND/OR/LIKE.</span>
+      </div>
+      <div class="farrow">→</div>
+      <div class="fstep c4">
+        <span class="badge">4</span>
+        <span class="lab">Queries</span>
+        <span class="dsc">Candidate searches, most-specific-first.</span>
+      </div>
+      <div class="farrow">→</div>
+      <div class="fstep c5">
+        <span class="badge">5</span>
+        <span class="lab">Blend</span>
+        <span class="dsc">protocols.io + PubMed merged &amp; ranked.</span>
+      </div>
+      <div class="farrow">→</div>
+      <div class="fstep c6">
+        <span class="badge">6</span>
+        <span class="lab">Explain</span>
+        <span class="dsc">Rationale, match notes, and model used.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 -->
+  <section id="sources">
+    <h2><span class="ic">🔌</span> 5 · Data Sources &amp; External APIs <span class="bar"></span></h2>
+    <table>
+      <tr><th>Service</th><th>Role</th><th>Notes</th></tr>
+      <tr><td><strong>protocols.io</strong></td><td>Primary protocol corpus (22,670 cached) + live API</td><td>Token-authenticated; the cached corpus powers the offline TF-IDF index.</td></tr>
+      <tr><td><strong>NCBI E-utilities</strong> (PubMed)</td><td>Live literature search (<code>esearch</code> + <code>efetch</code>)</td><td>API key raises the rate limit from 3 → 10 requests/sec.</td></tr>
+      <tr><td><strong>Europe PMC</strong></td><td>Open-access full-text (first fallback)</td><td>Used to extract the Methods section of surfaced papers.</td></tr>
+      <tr><td><strong>Unpaywall</strong></td><td>Open-access locator (final fallback)</td><td>Reached only when PMC / Europe PMC have no full text.</td></tr>
+      <tr><td><strong>LLM provider API</strong></td><td>Conversation layer only (planning, clarifications, explanations)</td><td>Switchable at runtime; the model used is shown in every result. <em>It never ranks results.</em></td></tr>
+    </table>
+    <div class="callout">
+      <strong>Graceful degradation:</strong> if PubMed or any external call fails, the search still returns the
+      protocols.io results — the literature layer is additive, never a single point of failure.
+    </div>
+  </section>
+
+  <!-- 6 -->
+  <section id="mcp">
+    <h2><span class="ic">🧩</span> 6 · On MCP (Model Context Protocol) <span class="bar"></span></h2>
+    <p>
+      I evaluated using a ready-made <strong>PubMed MCP server</strong> versus implementing PubMed access natively, and
+      chose <strong>native Python</strong>. The MCP server is a local Node process, whereas my pipeline is deterministic
+      (no agentic tool-loop) and the deployment is a single Python container — so MCP would have added a runtime and
+      indirection for no relevance gain. I kept its full-text fallback chain
+      (<code>PMC → Europe PMC → Unpaywall</code>) as a <strong>design reference</strong> rather than a dependency.
+    </p>
+  </section>
+
+  <!-- 7 -->
+  <section id="ranking">
+    <h2><span class="ic">🎯</span> 7 · Ranking &amp; Blending <span class="bar"></span></h2>
+    <p>
+      Two very different engines feed one ranked list. Each source is retrieved according to its own nature, but both are
+      scored on a single <strong>title-weighted axis</strong> so the blend is fair.
+    </p>
+    <div class="legend">
+      <span><span class="dot" style="background:#1565c0"></span> PubMed (literature)</span>
+      <span><span class="dot" style="background:#6d28d9"></span> protocols.io (protocols)</span>
+    </div>
+    <div class="formula">
+      <span class="c"># one comparable score across both sources</span><br>
+      score = <span class="k">0.67</span> · cosine(query, <strong>title</strong>) + <span class="k">0.33</span> · cosine(query, <strong>body</strong>)
+    </div>
+    <ul class="clean">
+      <li><strong>protocols.io:</strong> TF-IDF relevance (with a title boost) plus closeness tiers — organism (species&nbsp;&gt;&nbsp;family&nbsp;&gt;&nbsp;kingdom), method, and tissue match.</li>
+      <li><strong>PubMed:</strong> a trimmed <em>core-concept</em> query (so its boolean-AND search isn't over-constrained), with <code>OR</code> translated to a true disjunction.</li>
+      <li><strong>Blend:</strong> protocols.io keeps its own order; PubMed papers are <em>interleaved</em> by the unified score, and every result is <span class="tag pubmed">PubMed</span> / <span class="tag pio">protocols.io</span> tagged. Default 5 per source, configurable.</li>
+    </ul>
+    <div class="callout">
+      <strong>Key choice:</strong> ranking and blending are <strong>fully deterministic</strong> — the LLM shapes the
+      conversation and the query, but never ranks results, so output is reproducible and does not swing with model choice.
+    </div>
+  </section>
+
+  <!-- 8 -->
+  <section id="features">
+    <h2><span class="ic">✨</span> 8 · Feature Highlights <span class="bar"></span></h2>
+    <table>
+      <tr><th>Capability</th><th>What it does</th></tr>
+      <tr><td>Blended literature search</td><td>protocols.io protocols and PubMed papers in one ranked, source-tagged list.</td></tr>
+      <tr><td>Title-weighted ranking</td><td>One comparable 0.67/0.33 title-over-body score across both sources.</td></tr>
+      <tr><td>Conditional operators</td><td><code>AND</code> / <code>OR</code> / <code>LIKE</code> in any field, preserved verbatim and translated per engine.</td></tr>
+      <tr><td>Decline handling</td><td>"not sure" / "I don't know" skips a field — even a required one — and never re-asks it.</td></tr>
+      <tr><td>Correct field assignment</td><td>An answer lands in the field that was actually asked, not a guessed one.</td></tr>
+      <tr><td>Transparency</td><td>Per-result "why it matches" notes and the exact model that produced the response.</td></tr>
+      <tr><td>Cloud deployment</td><td>Single-container Google Cloud Run service; the bare URL opens the chat UI.</td></tr>
+    </table>
+  </section>
+
+  <footer>
+    Protocols Assistant — architecture &amp; design report · Branch <code>v4</code> · Generated June 2026<br>
+    Live: <a href="https://protocolsnerd-9518756006.us-central1.run.app/chat.html">protocolsnerd-9518756006.us-central1.run.app/chat.html</a>
+  </footer>
+
+</div>
+</body>
+</html>
