@@ -1,0 +1,16 @@
+[Unit]
+Description=Protocols.io Incremental Update Service
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=ubuntu
+WorkingDirectory=/home/ubuntu/NYU-Protocal.io
+ExecStart=/usr/bin/python3 deploy/incremental_update.py
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=protocols-update
+
+[Install]
+WantedBy=timers.target

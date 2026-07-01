@@ -1,0 +1,12 @@
+[Unit]
+Description=Run Protocols.io Update Every Sunday at 2 AM UTC
+Documentation=file:///home/ubuntu/NYU-Protocal.io/deploy/AWS_DEPLOYMENT.md
+
+[Timer]
+# Sunday, 2 AM UTC
+OnCalendar=Sun *-*-* 02:00:00
+Persistent=true
+Unit=protocols-update.service
+
+[Install]
+WantedBy=timers.target
